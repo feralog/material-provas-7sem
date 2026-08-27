@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Material para provas</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;450;500;600&display=swap" rel="stylesheet">
+<style>
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0}
+  body{background:#f5f3ef;color:#121a2b;font-family:'IBM Plex Sans',system-ui,sans-serif;font-size:14px;line-height:1.5;-webkit-font-smoothing:antialiased}
+  a{color:inherit;text-decoration:none}
+  .wrap{max-width:720px;margin:0 auto;padding:56px 16px 80px}
+  .eyebrow{font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:#2b57cc;margin-bottom:16px}
+  h1{font-family:'Newsreader',Georgia,serif;font-size:40px;line-height:1.08;font-weight:400;letter-spacing:-.025em;margin:0 0 16px}
+  .sub{font-size:15.5px;line-height:1.65;color:#5b6478;margin:0 0 30px;max-width:52ch}
+  .stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(108px,1fr));gap:1px;background:#e4e0d8;border:1px solid #e4e0d8;border-radius:14px;overflow:hidden;margin-bottom:32px}
+  .stats div{background:#faf9f6;padding:16px 14px}
+  .stats .v{font-family:'IBM Plex Mono',monospace;font-size:22px;font-weight:500;letter-spacing:-.03em}
+  .stats .l{font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:#8a8578;margin-top:3px}
+  .disc{margin-bottom:34px}
+  .disc h2{font-family:'Newsreader',Georgia,serif;font-size:25px;font-weight:500;letter-spacing:-.02em;margin:0 0 4px}
+  .disc .cnt{font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.09em;text-transform:uppercase;color:#8a8578;margin-bottom:14px}
+  .grid{display:flex;flex-direction:column;gap:10px}
+  .card{display:flex;align-items:center;gap:16px;background:#fff;border:1px solid #e4e0d8;border-radius:16px;padding:18px 20px;transition:border-color .16s ease,transform .14s ease;box-shadow:0 1px 2px rgba(18,26,43,.04)}
+  .card:hover{border-color:#121a2b;transform:translateY(-2px)}
+  .card .n{font-family:'IBM Plex Mono',monospace;font-size:12px;font-weight:600;color:#8a8578;min-width:24px}
+  .card .body{flex:1;min-width:0}
+  .card .t{font-family:'Newsreader',Georgia,serif;font-size:21px;font-weight:500;letter-spacing:-.015em;line-height:1.2}
+  .card .e{font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.06em;color:#8a8578;margin-top:4px}
+  .card .tags{display:flex;gap:6px;flex-shrink:0;flex-wrap:wrap;justify-content:flex-end}
+  .tag{font-family:'IBM Plex Mono',monospace;font-size:10.5px;color:#5b6478;background:#faf9f6;border:1px solid #e4e0d8;border-radius:99px;padding:4px 10px;white-space:nowrap}
+  .empty{border:1px dashed #ddd8ce;border-radius:14px;padding:38px;text-align:center;color:#8a8578}
+  .foot{margin-top:34px;padding-top:22px;border-top:1px solid #e4e0d8;font-family:'IBM Plex Mono',monospace;font-size:11px;color:#8a8578}
+  @media(max-width:560px){.card{flex-wrap:wrap}.card .tags{justify-content:flex-start;width:100%}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="eyebrow">Material para provas</div>
+  <h1>7º semestre</h1>
+  <p class="sub">Cada material abre com um seletor: fazer o quiz ou ler o resumo. Tudo offline, num arquivo só.</p>
+  <div class="stats"><div><div class="v">3</div><div class="l">Disciplinas</div></div><div><div class="v">15</div><div class="l">Materiais</div></div><div><div class="v">496</div><div class="l">Questões</div></div><div><div class="v">204</div><div class="l">Imagens</div></div></div>
+  <div class="disc">
+    <h2>Geriatria</h2>
+    <div class="cnt">3 materiais · 98 questões</div>
+    <div class="grid">
+      <a class="card" href="Quizzes/quiz_avaliacao_geriatrica_ampla.html"><span class="n">01</span><span class="body"><span class="t">Avaliação Geriátrica Ampla</span><br><span class="e">Geriatria · Avaliação Funcional</span></span><span class="tags"><span class="tag">34 questões</span><span class="tag">8 seções</span><span class="tag">19 imagens</span></span></a>
+      <a class="card" href="Quizzes/quiz_iatrogenia.html"><span class="n">02</span><span class="body"><span class="t">Iatrogenia</span><br><span class="e">Geriatria · Segurança do Paciente</span></span><span class="tags"><span class="tag">32 questões</span><span class="tag">7 seções</span><span class="tag">13 imagens</span></span></a>
+      <a class="card" href="Quizzes/quiz_polifarmacia.html"><span class="n">03</span><span class="body"><span class="t">Polifarmácia</span><br><span class="e">Geriatria · Farmacologia do Idoso</span></span><span class="tags"><span class="tag">32 questões</span><span class="tag">8 seções</span><span class="tag">14 imagens</span></span></a>
+    </div>
+  </div>
+  <div class="disc">
+    <h2>Ginecologia e Obstetrícia</h2>
+    <div class="cnt">4 materiais · 140 questões</div>
+    <div class="grid">
+      <a class="card" href="Quizzes/quiz_diferenciacao_sexual_e_malformacoes_uterinas.html"><span class="n">04</span><span class="body"><span class="t">Diferenciação Sexual e Malformações Uterinas</span><br><span class="e">Ginecologia · Embriologia e Malformações</span></span><span class="tags"><span class="tag">30 questões</span><span class="tag">9 seções</span><span class="tag">13 imagens</span></span></a>
+      <a class="card" href="Quizzes/quiz_hemorragias_da_primeira_metade_e_gestacao_ectopica.html"><span class="n">05</span><span class="body"><span class="t">Hemorragias da Primeira Metade e Gestação Ectópica</span><br><span class="e">Obstetrícia · Primeira Metade da Gestação</span></span><span class="tags"><span class="tag">53 questões</span><span class="tag">10 seções</span><span class="tag">14 imagens</span></span></a>
+      <a class="card" href="Quizzes/quiz_imagem_em_mama.html"><span class="n">06</span><span class="body"><span class="t">Imagem em Mama</span><br><span class="e">Ginecologia · Mastologia</span></span><span class="tags"><span class="tag">27 questões</span><span class="tag">8 seções</span><span class="tag">23 imagens</span></span></a>
+      <a class="card" href="Quizzes/quiz_infertilidade_conjugal.html"><span class="n">07</span><span class="body"><span class="t">Infertilidade Conjugal</span><br><span class="e">Ginecologia · Reprodução Humana</span></span><span class="tags"><span class="tag">30 questões</span><span class="tag">8 seções</span><span class="tag">10 imagens</span></span></a>
+    </div>
+  </div>
+  <div class="disc">
+    <h2>Pediatria</h2>
+    <div class="cnt">8 materiais · 258 questões</div>
+    <div class="grid">
+      <a class="card" href="Quizzes/quiz_diabetes_tipos_1_e_2.html"><span class="n">08</span><span class="body"><span class="t">Diabetes Tipos 1 e 2</span><br><span class="e">Pediatria · Endocrinologia</span></span><span class="tags"><span class="tag">34 questões</span><span class="tag">9 seções</span><span class="tag">14 imagens</span></span></a>
+      <a class="card" href="Quizzes/quiz_disturbios_alimentares.html"><span class="n">09</span><span class="body"><span class="t">Distúrbios Alimentares</span><br><span class="e">Pediatria · Hebiatria</span></span><span class="tags"><span class="tag">28 questões</span><span class="tag">8 seções</span><span class="tag">10 imagens</span></span></a>
+      <a class="card" href="Quizzes/quiz_disturbios_da_tireoide.html"><span class="n">10</span><span class="body"><span class="t">Distúrbios da Tireoide</span><br><span class="e">Pediatria · Endocrinologia</span></span><span class="tags"><span class="tag">31 questões</span><span class="tag">9 seções</span><span class="tag">13 imagens</span></span></a>
+      <a class="card" href="Quizzes/quiz_disturbios_do_eixo_e_puberdade.html"><span class="n">11</span><span class="body"><span class="t">Distúrbios do Eixo e Puberdade</span><br><span class="e">Pediatria · Endocrinologia</span></span><span class="tags"><span class="tag">30 questões</span><span class="tag">7 seções</span><span class="tag">15 imagens</span></span></a>
+      <a class="card" href="Quizzes/quiz_particularidades_da_adolescencia.html"><span class="n">12</span><span class="body"><span class="t">Particularidades da Adolescência</span><br><span class="e">Pediatria · Hebiatria</span></span><span class="tags"><span class="tag">30 questões</span><span class="tag">9 seções</span><span class="tag">12 imagens</span></span></a>
+      <a class="card" href="Quizzes/quiz_revisao_global_de_pediatria.html"><span class="n">13</span><span class="body"><span class="t">Revisão Global de Pediatria</span><br><span class="e">Pediatria · Revisão</span></span><span class="tags"><span class="tag">45 questões</span><span class="tag">12 seções</span><span class="tag">8 imagens</span></span></a>
+      <a class="card" href="Quizzes/quiz_saude_mental_na_adolescencia.html"><span class="n">14</span><span class="body"><span class="t">Saúde Mental na Adolescência</span><br><span class="e">Pediatria · Saúde Mental</span></span><span class="tags"><span class="tag">30 questões</span><span class="tag">8 seções</span><span class="tag">13 imagens</span></span></a>
+      <a class="card" href="Quizzes/quiz_sindrome_metabolica_e_obesidade.html"><span class="n">15</span><span class="body"><span class="t">Síndrome Metabólica e Obesidade</span><br><span class="e">Pediatria · Endocrinologia</span></span><span class="tags"><span class="tag">30 questões</span><span class="tag">8 seções</span><span class="tag">13 imagens</span></span></a>
+    </div>
+  </div>
+  <div class="foot">Cada arquivo tem quiz e resumo, escolhidos na tela inicial. Gerado por _scripts/atualizar_indice.py</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,607 @@
+{
+  "titulo": "Hemorragias da Primeira Metade e Gestação Ectópica",
+  "eyebrow": "Obstetrícia · Primeira Metade da Gestação",
+  "subtitulo": "Abortamento, gestação ectópica e doença trofoblástica na emergência obstétrica",
+  "intro": "Material completo sobre sangramento até a 20ª semana: formas clínicas do abortamento e conduta de cada uma, incompetência istmocervical, gestação ectópica (critérios de conduta expectante, metotrexato e cirurgia) e doença trofoblástica gestacional com seguimento do β-hCG.",
+  "questoes": [
+    {
+      "question": "Como o abortamento é clinicamente conceituado quanto ao limite de idade gestacional e peso fetal?",
+      "options": [
+        "Antes de 20 semanas ou com peso fetal inferior a 500 gramas",
+        "Antes de 24 semanas ou com peso fetal inferior a 800 gramas",
+        "Antes de 16 semanas ou com peso fetal inferior a 300 gramas",
+        "Antes de 28 semanas ou com peso fetal inferior a 1.000 gramas"
+      ],
+      "correctIndex": 0,
+      "explanation": "A aula define abortamento como a interrupção da gravidez antes das 20 semanas ou quando o peso fetal for inferior a 500 gramas. Cronologicamente é precoce até 12 semanas e tardio entre 12 e 20 semanas. Os abortamentos clinicamente reconhecidos têm incidência de 10% a 15% e, destes, 80% ocorrem antes das 12 semanas."
+    },
+    {
+      "question": "Qual é a causa mais frequente de abortamento no primeiro trimestre?",
+      "options": [
+        "Anomalias cromossômicas, responsáveis por 50% a 80% dos casos",
+        "Incompetência istmocervical, responsável por 30% a 50% dos casos",
+        "Síndrome antifosfolípide, responsável por 40% a 60% dos casos",
+        "Miomas submucosos uterinos, responsáveis por 20% a 40% dos casos"
+      ],
+      "correctIndex": 0,
+      "explanation": "As alterações cromossômicas e genéticas são as causas mais comuns de abortamento no primeiro trimestre, ocorrendo em 50% a 80% dos casos. Erros na meiose II explicam a maioria das trissomias e relacionam-se à idade materna avançada. A incompetência istmocervical, por sua vez, é causa de perda fetal tardia, no segundo trimestre."
+    },
+    {
+      "question": "Quais trissomias estão mais associadas ao abortamento, em ordem decrescente de frequência?",
+      "options": [
+        "Trissomia do cromossomo 16, seguida pela do 22 e pela do 21",
+        "Trissomia do cromossomo 21, seguida pela do 18 e pela do 13",
+        "Trissomia do cromossomo 13, seguida pela do 15 e pela do 14",
+        "Trissomia do cromossomo 22, seguida pela do 21 e pela do 16"
+      ],
+      "correctIndex": 0,
+      "explanation": "A aula lista as trissomias mais relacionadas ao abortamento em ordem decrescente: cromossomos 16, 22, 21, 15, 13, 2 e 14. A trissomia do 16 é a mais frequente entre os produtos de abortamento, ao contrário da trissomia do 21, que é a mais frequente entre os nascidos vivos."
+    },
+    {
+      "question": "Como se define o abortamento habitual (recorrente)?",
+      "options": [
+        "Dois ou mais abortamentos espontâneos consecutivos",
+        "Cinco ou mais abortamentos espontâneos consecutivos",
+        "Um único abortamento espontâneo antes de 12 semanas",
+        "Quatro ou mais abortamentos espontâneos alternados"
+      ],
+      "correctIndex": 0,
+      "explanation": "Define-se abortamento habitual como a ocorrência consecutiva de dois (ou três, conforme a referência) ou mais abortamentos espontâneos. O risco de recorrência sobe progressivamente: 20% após um aborto, 30% após dois consecutivos e mais de 40% após três ou mais."
+    },
+    {
+      "question": "Gestante de 9 semanas apresenta sangramento vaginal discreto e cólica leve. Colo impérvio ao toque, útero compatível com a idade gestacional e USTV com embrião vivo e BCF presente. Qual a conduta?",
+      "options": [
+        "Conduta expectante, com repouso relativo e reavaliação se piora",
+        "Esvaziamento uterino imediato por aspiração manual intrauterina",
+        "Curetagem uterina de urgência após dilatação com velas de Hegar",
+        "Misoprostol 800 mcg por via vaginal, repetido a cada doze horas"
+      ],
+      "correctIndex": 0,
+      "explanation": "O quadro é de ameaça de abortamento: sangramento com colo fechado e embrião vivo. Nenhuma medida é comprovadamente eficaz para mudar o prognóstico — indica-se repouso relativo, analgésicos antiespasmódicos, progesterona e abstinência sexual, mantendo vigilância. Metade das ameaças evolui para perda gestacional efetiva."
+    },
+    {
+      "question": "Qual achado diferencia o abortamento inevitável do abortamento em curso?",
+      "options": [
+        "No inevitável o colo está aberto e o conceito ainda está no útero",
+        "No inevitável o colo está fechado e o embrião já perdeu os BCF",
+        "No inevitável há febre alta e secreção vaginal purulenta e fétida",
+        "No inevitável o útero já está vazio e o sangramento regrediu logo"
+      ],
+      "correctIndex": 0,
+      "explanation": "No abortamento inevitável há sangramento moderado a acentuado com cólicas fortes e colo apagado e dilatado, mas o conceito ainda se encontra totalmente dentro da cavidade uterina. No abortamento em curso já existe processo ativo de expulsão do material ovular através do canal cervical."
+    },
+    {
+      "question": "Qual espessura endometrial à USTV separa o abortamento incompleto do abortamento completo?",
+      "options": [
+        "Acima de 15 mm com material heterogêneo indica aborto incompleto",
+        "Acima de 30 mm com material heterogêneo indica aborto incompleto",
+        "Abaixo de 8 mm com cavidade uterina limpa indica aborto incompleto",
+        "Acima de 25 mm com cavidade uterina limpa indica aborto completo"
+      ],
+      "correctIndex": 0,
+      "explanation": "O ponto de corte da aula é 15 mm: eco endometrial acima de 15 mm com material heterogêneo caracteriza abortamento incompleto e indica esvaziamento uterino. Abaixo de 15 mm, com cavidade limpa e regressão da dor e do sangramento, trata-se de abortamento completo, com conduta expectante e seguimento ambulatorial."
+    },
+    {
+      "question": "Segundo os critérios definitivos da SRU/ACOG, qual achado ultrassonográfico fecha o diagnóstico de gestação inviável?",
+      "options": [
+        "CCN maior ou igual a 7 mm sem atividade cardíaca fetal",
+        "CCN maior ou igual a 3 mm sem atividade cardíaca fetal",
+        "DMSG maior ou igual a 16 mm sem embrião visualizado",
+        "Vesícula vitelínica com diâmetro menor do que 3 mm"
+      ],
+      "correctIndex": 0,
+      "explanation": "Comprimento cabeça-nádega (CCN) maior ou igual a 7 mm sem batimentos cardíacos é critério definitivo de gestação inviável. CCN menor que 7 mm sem atividade cardíaca e saco gestacional entre 16 e 24 mm sem embrião são apenas critérios suspeitos, exigindo repetição do exame antes de indicar esvaziamento."
+    },
+    {
+      "question": "Qual diâmetro médio do saco gestacional sem embrião visualizado confirma, isoladamente, gestação inviável?",
+      "options": [
+        "DMSG maior ou igual a 25 mm sem embrião visualizado",
+        "DMSG maior ou igual a 12 mm sem embrião visualizado",
+        "DMSG maior ou igual a 40 mm sem embrião visualizado",
+        "DMSG maior ou igual a 18 mm sem embrião visualizado"
+      ],
+      "correctIndex": 0,
+      "explanation": "Diâmetro médio do saco gestacional (DMSG) igual ou superior a 25 mm sem embrião visualizado é critério diagnóstico definitivo de gestação inviável pela SRU/ACOG. Valores entre 16 e 24 mm sem embrião são apenas suspeitos. Vesícula vitelínica volumosa, acima de 7 mm, também é achado suspeito."
+    },
+    {
+      "question": "Qual esquema antibiótico é indicado no abortamento infectado, iniciado antes do esvaziamento uterino?",
+      "options": [
+        "Clindamicina associada a gentamicina por via endovenosa",
+        "Azitromicina associada a fluconazol por via endovenosa",
+        "Nitrofurantoína associada a cefalexina por via oral",
+        "Penicilina benzatina em dose única por via intramuscular"
+      ],
+      "correctIndex": 0,
+      "explanation": "O abortamento infectado é polimicrobiano (E. coli, estreptococos anaeróbios, Clostridium perfringens) e exige clindamicina + gentamicina IV ou ampicilina + gentamicina + metronidazol. A antibioticoterapia é iniciada primeiro e o esvaziamento uterino é feito em seguida, em caráter de urgência; pode ser necessária laparotomia."
+    },
+    {
+      "question": "Qual é o método de escolha para esvaziamento uterino em gestações de até 12 semanas?",
+      "options": [
+        "AMIU, por ser menos invasiva e ter menos complicações",
+        "Curetagem, por ser mais rápida e ter menos complicações",
+        "Histerotomia, por ser mais segura e causar menos sangramento",
+        "Ocitocina venosa, por ser mais simples e dispensar o bloco"
+      ],
+      "correctIndex": 0,
+      "explanation": "Em abortamentos de até 12 semanas a AMIU é a técnica de escolha, por ser menos invasiva e ter menor índice de complicações que a curetagem — menor taxa de perfuração uterina, menos dor e menor risco de sinéquias (síndrome de Asherman). Acima de 12 semanas indica-se curetagem, após a expulsão fetal."
+    },
+    {
+      "question": "Qual é o esquema de misoprostol recomendado no abortamento retido de primeiro trimestre?",
+      "options": [
+        "800 mcg por via vaginal, 2 a 3 doses, a cada 12 horas",
+        "400 mcg por via vaginal, em dose única, sem repetição",
+        "200 mcg por via vaginal, a cada 4 a 6 horas, até expulsão",
+        "600 mcg por via oral, em duas doses, a cada 24 horas"
+      ],
+      "correctIndex": 0,
+      "explanation": "Pela FIGO, no aborto retido de primeiro trimestre usam-se 2 a 3 doses de 800 mcg de misoprostol por via vaginal a cada 12 horas. A pegadinha é o abortamento incompleto, que recebe 400 mcg em dose única; já no segundo trimestre são 200 mcg vaginais a cada 4 a 6 horas, seguidos de tratamento cirúrgico."
+    },
+    {
+      "question": "Qual método de esvaziamento uterino é o de escolha nos casos de mola hidatiforme?",
+      "options": [
+        "Aspiração a vácuo, que acrescenta o sistema de sucção à AMIU",
+        "Curetagem uterina clássica, com cureta romba de grande calibre",
+        "Ocitocina endovenosa em altas doses antes de qualquer aspiração",
+        "Histerectomia total abdominal com preservação de ambos os anexos"
+      ],
+      "correctIndex": 0,
+      "explanation": "A aspiração a vácuo é semelhante à AMIU, apenas acrescentando o sistema a vácuo, e é o método de escolha nos casos de mola. Todo o material deve ser enviado para exame anatomopatológico. A curetagem convencional aumenta o risco de perfuração e de sinéquias em um útero amolecido e volumoso."
+    },
+    {
+      "question": "Qual é o quadro clínico típico da incompetência istmocervical?",
+      "options": [
+        "Dilatação cervical indolor, sem sangramento, com feto vivo e normal",
+        "Cólicas intensas com sangramento abundante e feto já sem batimentos",
+        "Febre alta com secreção purulenta e dor à mobilização do colo uterino",
+        "Sangramento escuro em borra de café com dor unilateral em fossa ilíaca"
+      ],
+      "correctIndex": 0,
+      "explanation": "A incompetência istmocervical cursa com dilatação cervical indolor até 4 a 6 cm, ausência de sangramento, protrusão das membranas ovulares na vagina, rotura de membranas e expulsão de feto morfologicamente normal e vivo. É causa de perda fetal tardia recorrente, e o diagnóstico costuma ser retrospectivo."
+    },
+    {
+      "question": "Qual achado comprova a incompetência istmocervical fora do período gestacional?",
+      "options": [
+        "Passagem da vela de Hegar de 8 mm pelo orifício interno do colo",
+        "Passagem da vela de Hegar de 3 mm pelo orifício interno do colo",
+        "Colo uterino medindo menos de 25 mm à ultrassonografia transvaginal",
+        "Orifício interno do colo fechado ao toque vaginal bimanual seriado"
+      ],
+      "correctIndex": 0,
+      "explanation": "Fora da gestação, a passagem da vela de Hegar de 8 mm pelo orifício interno comprova a incompetência istmocervical. A histerossalpingografia mostra largura do segmento istmocervical, na altura do orifício interno, superior a 8 mm. Colo menor que 25 mm à USTV é critério para cerclagem terapêutica, não diagnóstico de IIC."
+    },
+    {
+      "question": "Pela tabela de tipos de cerclagem, qual é o período indicado para a cerclagem eletiva?",
+      "options": [
+        "Entre 12 e 16 semanas, antes que ocorra a cervicodilatação",
+        "Entre 20 e 24 semanas, assim que o colo começa a se dilatar",
+        "Entre 24 e 28 semanas, após confirmar o encurtamento do colo",
+        "Entre 6 e 10 semanas, logo após a confirmação da gravidez"
+      ],
+      "correctIndex": 0,
+      "explanation": "A cerclagem eletiva é indicada por histórico de uma ou mais perdas fetais no segundo trimestre na ausência de trabalho de parto, e é feita antes da cervicodilatação, entre 12 e 16 semanas. As cerclagens terapêutica e de urgência não devem ultrapassar 24 semanas. A técnica mais utilizada é a de McDonald."
+    },
+    {
+      "question": "O que caracteriza a síndrome antifosfolípide como causa de abortamento habitual?",
+      "options": [
+        "Trombofilia autoimune presente em cerca de 20% desses casos",
+        "Trombofilia hereditária presente em cerca de 70% desses casos",
+        "Doença infecciosa crônica presente em cerca de 50% dos casos",
+        "Alteração cromossômica materna presente em 40% desses casos"
+      ],
+      "correctIndex": 0,
+      "explanation": "A SAF é uma trombofilia autoimune associada a tromboses e infartos placentários, prevalente em cerca de 20% das mulheres com abortamento habitual. Os autoanticorpos envolvidos são o anticoagulante lúpico, a anticardiolipina e o anti-beta-2-glicoproteína I."
+    },
+    {
+      "question": "Qual é o sítio mais frequente de implantação da gestação ectópica?",
+      "options": [
+        "Ampola tubária, responsável por 70% a 80% dos casos",
+        "Istmo tubário, responsável por 40% a 50% dos casos",
+        "Ovário, responsável por 20% a 30% dos casos totais",
+        "Cicatriz de cesárea, responsável por 15% dos casos"
+      ],
+      "correctIndex": 0,
+      "explanation": "A ampola tubária concentra 70% a 80% das gestações ectópicas, por ser o segmento de parede mais distensível. O istmo responde por 12%, as fímbrias por 5% e os sítios intersticial, ovariano, abdominal e em cicatriz de cesárea somam 5% a 8%. A ectópica ocorre em 1% a 2% de todas as gestações."
+    },
+    {
+      "question": "Por que a gestação ectópica ístmica costuma romper mais precocemente?",
+      "options": [
+        "O istmo tem menor calibre, rompendo entre 6 e 8 semanas",
+        "O istmo tem parede mais distensível, rompendo após 12 semanas",
+        "O istmo recebe menor aporte sanguíneo que os outros segmentos",
+        "O istmo favorece o abortamento tubário antes de qualquer rotura"
+      ],
+      "correctIndex": 0,
+      "explanation": "O istmo tem menor calibre e parede menos distensível que a ampola, o que leva à ruptura precoce, entre 6 e 8 semanas. A implantação nas fímbrias, ao contrário, tende a cursar com abortamento tubário espontâneo, e as formas intersticial/cornual cursam com hemorragia cataclísmica quando rompem."
+    },
+    {
+      "question": "Qual antecedente eleva em 7 a 10 vezes o risco de gestação ectópica?",
+      "options": [
+        "Gestação ectópica prévia",
+        "Tabagismo ativo atual",
+        "Endometriose pélvica",
+        "Uso atual de DIU de cobre"
+      ],
+      "correctIndex": 0,
+      "explanation": "A história de gravidez ectópica prévia é o fator de risco isolado mais importante, multiplicando o risco por 7 a 10 vezes. Doença inflamatória pélvica, cirurgia tubária prévia, tabagismo, endometriose, reprodução assistida e uso atual de DIU também são fatores de risco, mas de magnitude menor."
+    },
+    {
+      "question": "Quais elementos compõem a tríade clássica da gestação ectópica?",
+      "options": [
+        "Atraso menstrual, sangramento vaginal e dor abdominal",
+        "Febre alta, sangramento vaginal e dor abdominal difusa",
+        "Atraso menstrual, hiperêmese e altura uterina aumentada",
+        "Sangramento com vesículas, cólica e colo uterino aberto"
+      ],
+      "correctIndex": 0,
+      "explanation": "A tríade é amenorreia (ou irregularidade menstrual), sangramento vaginal e dor abdominal, mas está presente em apenas 50% das pacientes na apresentação inicial. O sangramento é escasso e escuro, em borra de café, por descamação do endométrio decidualizado; a dor é unilateral, em fossa ilíaca, de início súbito."
+    },
+    {
+      "question": "Paciente com suspeita de gestação ectópica apresenta abaulamento e dor intolerável ao toque no fundo de saco posterior. Esse achado corresponde a qual sinal?",
+      "options": [
+        "Sinal de Proust",
+        "Sinal de Cullen",
+        "Sinal de Laffont",
+        "Sinal de Blumberg"
+      ],
+      "correctIndex": 0,
+      "explanation": "O sinal de Proust, ou grito de Douglas, é o abaulamento doloroso do fundo de saco posterior pelo acúmulo de sangue. Cullen é a equimose periumbilical, Laffont é a dor irradiada para o ombro por irritação frênica e Blumberg é a dor à descompressão brusca abdominal."
+    },
+    {
+      "question": "Paciente com ectópica rota refere dor irradiada para o ombro direito. Como se explica esse achado?",
+      "options": [
+        "Sinal de Laffont, por irritação do nervo frênico",
+        "Sinal de Cullen, por sangue no tecido subcutâneo",
+        "Sinal de Proust, por sangue no fundo de saco",
+        "Sinal de Grey-Turner, por equimose nos flancos"
+      ],
+      "correctIndex": 0,
+      "explanation": "O sinal de Laffont é a dor no ombro por irradiação pelo nervo frênico, decorrente da irritação do diafragma pelo sangue do hemoperitônio. Cullen é a equimose periumbilical e Grey-Turner a equimose nos flancos, ambos indicando grande hemoperitônio."
+    },
+    {
+      "question": "No fluxograma de associação entre beta-hCG e ultrassonografia, qual valor com cavidade uterina vazia já firma o diagnóstico de gestação ectópica?",
+      "options": [
+        "Valor maior ou igual a 3.500 mUI/mL",
+        "Valor maior ou igual a 1.000 mUI/mL",
+        "Valor menor que 3.500 mUI/mL",
+        "Valor menor que 1.000 mUI/mL"
+      ],
+      "correctIndex": 0,
+      "explanation": "Pelo fluxograma, com útero vazio e ausência de massa anexial, beta-hCG maior ou igual a 3.500 mUI/mL fecha o diagnóstico de gestação ectópica. Abaixo de 3.500 repete-se o beta-hCG em 48 horas: subida acima de 50% sugere gravidez tópica; subida menor que 49% indica gravidez inviável tópica ou ectópica.",
+      "image": "pg19",
+      "imageCaption": "Fluxograma beta-hCG e ultrassonografia (MS 2022)"
+    },
+    {
+      "question": "Pelo fluxograma da gravidez de localização desconhecida, o que significa hCG entre 2.000 e 3.000 mUI/mL com útero vazio?",
+      "options": [
+        "Suspeita de gravidez ectópica",
+        "Diagnóstico de gravidez ectópica",
+        "Resultado inconclusivo do exame",
+        "Confirmação de gravidez tópica"
+      ],
+      "correctIndex": 0,
+      "explanation": "Na faixa intermediária de 2.000 a 3.000 mUI/mL com útero vazio, o fluxograma classifica como suspeita de gravidez ectópica. Abaixo de 2.000 mUI/mL o resultado é inconclusivo e exige repetição; acima de 3.000 mUI/mL considera-se o diagnóstico de gravidez ectópica estabelecido."
+    },
+    {
+      "question": "Qual é o comportamento esperado do beta-hCG quantitativo em uma gestação intrauterina viável?",
+      "options": [
+        "Duplicar a cada 48 a 72 horas, com alta mínima de 35% a 53%",
+        "Duplicar a cada 12 a 24 horas, com alta mínima de 80% a 90%",
+        "Manter-se estável nas 48 horas, com variação inferior a 10%",
+        "Cair progressivamente 15% a cada 48 horas até a 12ª semana"
+      ],
+      "correctIndex": 0,
+      "explanation": "Em gestações intrauterinas viáveis os níveis de beta-hCG duplicam a cada 48 a 72 horas, com aumento mínimo esperado de 35% a 53% em 48 horas. Subida em platô (menor que 35%) ou queda lenta sugere gestação inviável ou ectópica. Progesterona acima de 20 ng/mL indica viabilidade; abaixo de 5 ng/mL indica inviabilidade."
+    },
+    {
+      "question": "Qual achado ultrassonográfico é descrito como sinal do anel tubário na gestação ectópica?",
+      "options": [
+        "Massa anexial hiperecogênica com centro anecoico, separada do ovário",
+        "Massa uterina heterogênea com áreas císticas, em tempestade de neve",
+        "Massa anexial hipoecogênica homogênea, contígua ao corpo do ovário",
+        "Espessamento endometrial acima de 15 mm com material heterogêneo"
+      ],
+      "correctIndex": 0,
+      "explanation": "O tubal ring sign é uma massa anexial hiperecogênica com centro anecoico, isolada do ovário, presente em 68% a 80% dos casos. Ao Doppler colorido aparece o anel de fogo, com hipervascularização periférica e baixo índice de resistência. Líquido livre no fundo de saco sugere sangramento ou rotura tubária."
+    },
+    {
+      "question": "Pelo fluxograma de tratamento da gestação ectópica, quais critérios autorizam a conduta expectante?",
+      "options": [
+        "Massa menor que 3 cm e beta-hCG abaixo de 2.000 mUI/mL em queda",
+        "Massa menor que 5 cm e beta-hCG abaixo de 5.000 mUI/mL em queda",
+        "Massa menor que 3 cm e beta-hCG acima de 2.000 mUI/mL em ascensão",
+        "Massa menor que 4 cm e beta-hCG abaixo de 1.000 mUI/mL em ascensão"
+      ],
+      "correctIndex": 0,
+      "explanation": "A conduta expectante exige paciente estável, pouca dor ou sangramento, ausência de rotura, ausência de BCF, massa anexial menor que 3 cm (ou não detectável), beta-hCG abaixo de 2.000 mUI/mL e em queda, além de confiabilidade da gestante para o seguimento com beta-hCG semanal até negativar.",
+      "image": "pg24",
+      "imageCaption": "Fluxograma de conduta na gestação ectópica"
+    },
+    {
+      "question": "Quais critérios permitem tratar a gestação ectópica com metotrexato sistêmico?",
+      "options": [
+        "Íntegra até 3,5 cm, beta-hCG até 5.000 mUI/mL e sem BCF",
+        "Íntegra até 5,0 cm, beta-hCG até 10.000 mUI/mL e sem BCF",
+        "Rota até 3,5 cm, beta-hCG até 5.000 mUI/mL e com BCF",
+        "Íntegra até 2,0 cm, beta-hCG até 1.000 mUI/mL e com BCF"
+      ],
+      "correctIndex": 0,
+      "explanation": "O metotrexato exige ectópica íntegra de até 3,5 cm de maior diâmetro, estabilidade hemodinâmica, embrião sem BCF, beta-hCG menor ou igual a 5.000 mUI/mL, líquido livre restrito à pelve e normalidade do hemograma, da função renal e das enzimas hepáticas. A presença de BCF é contraindicação.",
+      "image": "pg21",
+      "imageCaption": "Critérios de conduta expectante, metotrexato e cirurgia"
+    },
+    {
+      "question": "No protocolo de dose única de metotrexato, o que se espera do beta-hCG entre o 4º e o 7º dia?",
+      "options": [
+        "Queda de pelo menos 15% do beta-hCG; se menor, aplicar 2ª dose",
+        "Queda de pelo menos 50% do beta-hCG; se menor, indicar cirurgia",
+        "Alta de pelo menos 15% do beta-hCG; se menor, aplicar 2ª dose",
+        "Queda de pelo menos 15% do beta-hCG; se menor, apenas observar"
+      ],
+      "correctIndex": 0,
+      "explanation": "Aplica-se metotrexato 50 mg/m² IM no dia 1 e dosa-se beta-hCG nos dias 4 e 7. Espera-se queda de pelo menos 15% entre o dia 4 e o dia 7; se a queda for inferior a 15%, aplica-se a segunda dose no dia 7. Após a resposta adequada, segue-se com beta-hCG semanal até negativar."
+    },
+    {
+      "question": "O que deve ser proibido à paciente durante o tratamento com metotrexato?",
+      "options": [
+        "Álcool, suplementos de ácido fólico e relações sexuais",
+        "Álcool, anti-inflamatórios simples e exposição solar",
+        "Ferro oral, laticínios e qualquer atividade física leve",
+        "Analgésicos comuns, cafeína e o uso de anticoncepcional"
+      ],
+      "correctIndex": 0,
+      "explanation": "Durante o tratamento ficam proibidos o consumo de álcool, a suplementação com ácido fólico (que antagoniza o efeito do metotrexato) e as relações sexuais. A paciente deve ser orientada sobre a dor de separação, dor abdominal leve nos dias 3 a 7, e deve evitar nova gestação por pelo menos 3 meses."
+    },
+    {
+      "question": "Qual é a via de acesso preferencial para o tratamento cirúrgico da ectópica em paciente hemodinamicamente estável?",
+      "options": [
+        "Laparoscopia, por menor internação e menos aderências",
+        "Laparotomia, por melhor exposição e menos sangramento",
+        "Histeroscopia, por ser via natural e não deixar cicatriz",
+        "Culdocentese, por ser rápida e drenar o hemoperitônio"
+      ],
+      "correctIndex": 0,
+      "explanation": "A laparoscopia é preferencial por menor tempo de internação, menor sangramento e menor formação de aderências pós-operatórias. A laparotomia fica reservada à paciente instável, com ectópica rota e hemoperitônio volumoso, situação em que a rapidez do acesso é prioridade."
+    },
+    {
+      "question": "Em qual situação a salpingostomia é preferível à salpingectomia na gestação ectópica tubária?",
+      "options": [
+        "Tuba contralateral alterada ou ausente e desejo de fertilidade",
+        "Tuba contralateral íntegra e ausência de desejo reprodutivo",
+        "Tuba acometida rota com sangramento arterial incontrolável",
+        "Instabilidade hemodinâmica com hemoperitônio volumoso agudo"
+      ],
+      "correctIndex": 0,
+      "explanation": "A salpingostomia, técnica conservadora com incisão linear na borda antimesentérica e aspiração do trofoblasto, é indicada quando a tuba contralateral está alterada ou ausente e há desejo explícito de fertilidade futura. Exige beta-hCG semanal pós-operatório pelo risco de trofoblasto persistente, de 5% a 10%."
+    },
+    {
+      "question": "Em gestação heterotópica (ectópica associada a gestação intrauterina viável), qual é a conduta?",
+      "options": [
+        "Indicação absoluta de tratamento cirúrgico da ectópica",
+        "Indicação absoluta de metotrexato sistêmico em dose única",
+        "Conduta expectante com beta-hCG seriado a cada 48 horas",
+        "Esvaziamento uterino imediato das duas gestações juntas"
+      ],
+      "correctIndex": 0,
+      "explanation": "A gravidez heterotópica é indicação absoluta de cirurgia, ao lado da instabilidade hemodinâmica ou ectópica rota com hemoperitônio volumoso e da falha ou contraindicação ao metotrexato. O metotrexato é proscrito porque destruiria também a gestação intrauterina viável."
+    },
+    {
+      "question": "Nas gestações ectópicas não tubárias (intersticial, cervical e em cicatriz de cesárea), qual opção terapêutica é indicada?",
+      "options": [
+        "Metotrexato local na dose de 1 mg/kg",
+        "Metotrexato sistêmico de 50 mg/m²",
+        "Salpingostomia laparoscópica eletiva",
+        "Conduta expectante com beta-hCG semanal"
+      ],
+      "correctIndex": 0,
+      "explanation": "O fluxograma da conduta na gravidez tubária traz explicitamente a recomendação de metotrexato local, 1 mg/kg, na gravidez não tubária — intersticial, cervical e em cicatriz de cesárea. Essas topografias respondem por rupturas gravíssimas com hemorragia cataclísmica e não são abordáveis por salpingostomia."
+    },
+    {
+      "question": "Qual conjunto de achados caracteriza a mola hidatiforme completa?",
+      "options": [
+        "Cariótipo 46,XX diploide, ausência de embrião e beta-hCG muito alto",
+        "Cariótipo 69,XXY triploide, presença de embrião e beta-hCG baixo",
+        "Cariótipo 45,X monossômico, ausência de embrião e beta-hCG baixo",
+        "Cariótipo 46,XY diploide, presença de embrião e beta-hCG normal"
+      ],
+      "correctIndex": 0,
+      "explanation": "A mola completa resulta da fecundação de um óvulo sem núcleo com duplicação do material genético paterno, gerando cariótipo diploide 46,XX (ou 46,XY) de origem inteiramente paterna, sem formação de embrião, com beta-hCG marcadamente elevado e hiperêmese/hipertireoidismo frequentes."
+    },
+    {
+      "question": "Como se origina a mola hidatiforme parcial?",
+      "options": [
+        "Dois espermatozoides fecundam um mesmo óvulo, gerando triploidia",
+        "Um espermatozoide fecunda óvulo sem núcleo e duplica seu material",
+        "Um óvulo com dois núcleos é fecundado por um único espermatozoide",
+        "Um erro na meiose II do oócito gera trissomia do cromossomo 16"
+      ],
+      "correctIndex": 0,
+      "explanation": "Na mola parcial há material genético paterno duplicado por fecundação do mesmo óvulo por dois espermatozoides, resultando em triploidia (69,XXX ou 69,XXY). Forma-se um embrião com malformações incompatíveis com a vida, que em geral não evolui além do primeiro trimestre, e o beta-hCG é apenas discretamente elevado."
+    },
+    {
+      "question": "Qual é o risco de progressão para neoplasia trofoblástica gestacional na mola completa e na mola parcial?",
+      "options": [
+        "Cerca de 20% na completa e 0,5% a 5% na parcial",
+        "Cerca de 50% na completa e 20% a 30% na parcial",
+        "Cerca de 5% na completa e 20% a 25% na parcial",
+        "Cerca de 1% na completa e menos de 1% na parcial"
+      ],
+      "correctIndex": 0,
+      "explanation": "A mola completa progride para NTG em cerca de 15% a 20% dos casos, enquanto a parcial evolui em apenas 0,5% a 5%. Essa diferença justifica o seguimento pós-molar mais longo e rigoroso da mola completa, com beta-hCG negativo mantido por mais de 6 meses."
+    },
+    {
+      "question": "Quais achados ultrassonográficos e laboratoriais devem levantar suspeita de mola hidatiforme?",
+      "options": [
+        "Massa heterogênea com áreas císticas e hCG acima de 200.000",
+        "Cavidade uterina vazia com massa anexial e hCG acima de 2.000",
+        "Endométrio menor que 15 mm com hCG em queda progressiva rápida",
+        "Saco gestacional com embrião vivo e hCG dentro da normalidade"
+      ],
+      "correctIndex": 0,
+      "explanation": "Suspeita-se de mola diante de massa ou material heterogêneo com áreas císticas anecoicas na cavidade uterina, padrão descrito como tempestade de neve ou favo de mel, com hCG acima de 200.000 mUI/mL. Somam-se sangramento de primeiro trimestre, altura uterina maior que a idade gestacional e sintomas gestacionais exacerbados.",
+      "image": "pg30",
+      "imageCaption": "Diagnóstico da mola hidatiforme: critérios e USG"
+    },
+    {
+      "question": "Acima de que nível de hCG costumam ser visualizados cistos tecaluteínicos nos ovários?",
+      "options": [
+        "Acima de 500.000 mUI/mL",
+        "Acima de 5.000 mUI/mL",
+        "Acima de 1.000 mUI/mL",
+        "Acima de 50.000 mUI/mL"
+      ],
+      "correctIndex": 0,
+      "explanation": "Os cistos tecaluteínicos, volumosos e multiloculados, resultam da hiperestimulação ovariana por níveis estratosféricos de hCG e costumam aparecer especialmente acima de 500.000 mUI/mL. São bilaterais e regridem espontaneamente após o esvaziamento uterino e a queda do hCG."
+    },
+    {
+      "question": "Por que não se deve deixar uma gestação molar chegar ao segundo trimestre?",
+      "options": [
+        "Aumentam hemorragia, pré-eclâmpsia e insuficiência respiratória",
+        "Aumentam prematuridade, oligoâmnio e restrição de crescimento",
+        "Aumentam diabetes gestacional, anemia e infecção urinária alta",
+        "Aumentam colestase, trombose venosa profunda e rotura uterina"
+      ],
+      "correctIndex": 0,
+      "explanation": "A partir do segundo trimestre crescem os riscos de hemorragia, pré-eclâmpsia, insuficiência respiratória (embolia pulmonar trofoblástica e edema agudo de pulmão), cistos tecaluteínicos e morte materna. Por isso toda gestante com sangramento de primeiro trimestre deve fazer USTV antes de conduta expectante em aborto retido."
+    },
+    {
+      "question": "Diante de altura uterina acima de 16 cm com cistos tecaluteínicos, o que deve ser acrescentado ao preparo pré-esvaziamento da mola?",
+      "options": [
+        "TSH e T4 livre, eletrocardiograma e reserva de hemácias",
+        "Apenas hemograma completo e tipagem sanguínea da paciente",
+        "Somente proteinúria em fita e dosagem de creatinina sérica",
+        "Cariótipo do casal e pesquisa de anticorpos antifosfolípides"
+      ],
+      "correctIndex": 0,
+      "explanation": "Com altura uterina maior que 16 cm e cistos tecaluteínicos, acrescentam-se TSH e T4 livre, eletrocardiograma e/ou ecocardiograma, proteinúria, AST/ALT, creatinina e reserva de duas unidades de hemácias. Havendo sinais de hipertireoidismo, prescreve-se propranolol 40 mg de 12 em 12 horas como profilaxia de crise tireotóxica."
+    },
+    {
+      "question": "Como deve ser o seguimento do beta-hCG após o esvaziamento uterino da mola hidatiforme?",
+      "options": [
+        "Semanal até três valores negativos e depois mensal por 6 meses",
+        "Mensal até dois valores negativos e depois anual por dois anos",
+        "Semanal até um valor negativo e depois nenhuma outra dosagem",
+        "Apenas uma dosagem 30 dias após o esvaziamento uterino feito"
+      ],
+      "correctIndex": 0,
+      "explanation": "O controle de cura pós-mola é feito com dosagem semanal de beta-hCG até três valores negativos consecutivos, seguida de dosagem mensal por 6 meses. Considera-se remissão quando o hCG cai abaixo de 5 mUI/mL; na mola total ele deve permanecer negativo por mais de 6 meses e na parcial por pelo menos 1 mês."
+    },
+    {
+      "question": "Além do beta-hCG seriado, o que é obrigatório no seguimento pós-molar?",
+      "options": [
+        "Contracepção rigorosa durante todo o período de seguimento",
+        "Repetir a curetagem uterina a cada quatro semanas seguidas",
+        "Quimioterapia profilática com metotrexato em dose única",
+        "Nova ultrassonografia transvaginal a cada quinze dias"
+      ],
+      "correctIndex": 0,
+      "explanation": "A anticoncepção rigorosa (ACO ou barreira) é obrigatória durante todo o seguimento e deve ser prescrita imediatamente, sem esperar cessar o sangramento. Uma nova gestação elevaria o beta-hCG e impediria a interpretação da curva de regressão, mascarando o diagnóstico de neoplasia trofoblástica pós-molar."
+    },
+    {
+      "question": "Quais critérios estabelecem o diagnóstico de neoplasia trofoblástica gestacional pós-molar?",
+      "options": [
+        "Quatro valores em platô em 3 semanas ou três em ascensão em 2",
+        "Dois valores em platô em 1 semana ou dois em ascensão em 1 mês",
+        "Seis valores em platô em 6 semanas ou cinco em ascensão em 3",
+        "Um único valor acima de 5 mUI/mL seis meses após o esvaziamento"
+      ],
+      "correctIndex": 0,
+      "explanation": "Os critérios são: quatro ou mais valores de hCG em platô por período superior a três semanas (dias 1, 7, 14 e 21); ou aumento em três medidas consecutivas por ao menos duas semanas (dias 1, 7 e 14); ou histologia de coriocarcinoma. Platô é variação menor que 10% e aumento é elevação de pelo menos 10%.",
+      "image": "pg37",
+      "imageCaption": "Critérios diagnósticos de NTG pós-molar"
+    },
+    {
+      "question": "No escore de risco da neoplasia trofoblástica gestacional, qual sítio de metástase recebe a pontuação máxima de 4?",
+      "options": [
+        "Metástase em cérebro ou fígado",
+        "Metástase apenas em pulmão",
+        "Metástase em baço ou rim",
+        "Metástase gastrintestinal"
+      ],
+      "correctIndex": 0,
+      "explanation": "No escore da OMS/FIGO, metástases em cérebro e fígado pontuam 4; gastrintestinal pontua 2; baço e rim pontuam 1; pulmão pontua 0. Outros itens do escore incluem idade, gestação anterior, intervalo desde a gestação antecedente, nível de hCG pré-tratamento, tamanho do maior tumor, número de metástases e falha prévia de quimioterapia.",
+      "image": "pg39",
+      "imageCaption": "Escore de risco da NTG (adaptado de FIGO)"
+    },
+    {
+      "question": "Como se define e como se trata a neoplasia trofoblástica gestacional de baixo risco?",
+      "options": [
+        "Escore até 6 e estádio I-III, tratada com monoquimioterapia",
+        "Escore até 6 e estádio IV, tratada com poliquimioterapia EMA-CO",
+        "Escore acima de 7 e estádio I-III, tratada com esquema EMA-CO",
+        "Escore acima de 9 e estádio IV, tratada com cirurgia radical"
+      ],
+      "correctIndex": 0,
+      "explanation": "NTG de baixo risco é pontuação igual ou menor que 6 com estádio FIGO I a III, tratada com monoquimioterapia (metotrexato ou actinomicina D). O alto risco é pontuação igual ou maior que 7 nos estádios I a III e todos os casos de estádio IV, tratados com poliquimioterapia EMA-CO. A cura ultrapassa 95%."
+    },
+    {
+      "question": "No estadiamento anatômico FIGO da NTG, a que corresponde o estádio III?",
+      "options": [
+        "Extensão para os pulmões, com ou sem envolvimento genital",
+        "Doença restrita ao corpo do útero, sem qualquer metástase",
+        "Extensão para pelve, vagina, anexos e ligamento largo",
+        "Metástases em fígado, cérebro e demais sítios à distância"
+      ],
+      "correctIndex": 0,
+      "explanation": "O estádio III da NTG é a extensão para os pulmões, com ou sem envolvimento genital. O estádio I é a doença restrita ao corpo do útero, o II é a extensão para pelve, vagina, anexos e ligamento largo, e o IV corresponde a todos os outros locais de metástase."
+    },
+    {
+      "question": "Gestante Rh negativa não sensibilizada, com Coombs indireto negativo, apresenta abortamento com 9 semanas. Qual a conduta imunoprofilática?",
+      "options": [
+        "Imunoglobulina anti-D 150 mcg IM, idealmente em até 72 horas",
+        "Imunoglobulina anti-D 300 mcg IM, idealmente em até 24 horas",
+        "Imunoglobulina anti-D 150 mcg EV, idealmente em até 15 dias",
+        "Nenhuma profilaxia, pois abaixo de 12 semanas não existe risco"
+      ],
+      "correctIndex": 0,
+      "explanation": "Até 12 semanas usa-se a minidose de 150 mcg (750 UI) por via intramuscular; acima de 12 semanas, a dose padrão de 300 mcg (1.500 UI). A administração deve ocorrer o mais precocemente possível, idealmente dentro de 72 horas do evento hemorrágico. A profilaxia vale para abortamento, ectópica e mola."
+    },
+    {
+      "question": "Segundo a tabela de apresentação clínica dos abortamentos, qual forma clínica cursa com febre?",
+      "options": [
+        "Abortamento infectado",
+        "Abortamento retido",
+        "Abortamento completo",
+        "Ameaça de abortamento"
+      ],
+      "correctIndex": 0,
+      "explanation": "A febre está presente apenas no abortamento infectado, que também cursa com sangramento de odor fétido, cólicas ou peritonite e útero amolecido e doloroso à palpação. Em todas as demais formas — ameaça, completo, retido, incompleto e inevitável — a febre está ausente.",
+      "image": "pg09",
+      "imageCaption": "Apresentação clínica das formas de abortamento"
+    },
+    {
+      "question": "Pela tabela de condutas, qual é o manejo do abortamento retido com menos de 12 semanas?",
+      "options": [
+        "Expectante por até 4 semanas e, após, misoprostol com AMIU",
+        "Esvaziamento imediato por curetagem, sem qualquer espera",
+        "Antibiótico endovenoso antes de qualquer esvaziamento uterino",
+        "Apenas seguimento ambulatorial, sem nenhum esvaziamento"
+      ],
+      "correctIndex": 0,
+      "explanation": "No abortamento retido com menos de 12 semanas admite-se conduta expectante por até 4 semanas e, depois, misoprostol seguido de AMIU. Acima de 12 semanas usa-se misoprostol e curetagem após a expulsão imediata do feto. Já o abortamento incompleto vai direto ao esvaziamento: AMIU se menos de 12 semanas e curetagem se mais.",
+      "image": "pg10",
+      "imageCaption": "Condutas nas formas clínicas de abortamento"
+    },
+    {
+      "question": "Paciente de 28 anos, DUM há 7 semanas, com dor em fossa ilíaca direita e sangramento escuro discreto. PA 110x70 mmHg, FC 88 bpm, sem Blumberg, colo fechado. Beta-hCG 2.800 mUI/mL e USTV com útero vazio, endométrio de 11 mm e imagem anular de 2,2 cm em anexo direito, sem BCF e sem líquido livre. Qual a conduta?",
+      "options": [
+        "Metotrexato 50 mg/m² intramuscular, com beta-hCG nos dias 4 e 7",
+        "Laparotomia de urgência com salpingectomia direita imediata",
+        "Conduta expectante isolada, com beta-hCG apenas nos dias 4 e 7",
+        "Curetagem uterina após dilatação, com envio para a patologia"
+      ],
+      "correctIndex": 0,
+      "explanation": "Trata-se de gestação ectópica tubária íntegra em paciente estável: massa de 2,2 cm (menor que 3,5 cm), beta-hCG de 2.800 mUI/mL (menor que 5.000), ausência de BCF e ausência de líquido livre — todos os critérios para metotrexato. A conduta expectante exigiria beta-hCG abaixo de 2.000 e em queda, o que não é o caso."
+    },
+    {
+      "question": "Paciente com sangramento de primeiro trimestre, dor abdominal e instabilidade hemodinâmica deve ser considerada portadora de qual diagnóstico até prova em contrário?",
+      "options": [
+        "Gestação ectópica rota até prova em contrário",
+        "Ameaça de abortamento até prova em contrário",
+        "Mola hidatiforme até prova em contrário",
+        "Abortamento completo até prova em contrário"
+      ],
+      "correctIndex": 0,
+      "explanation": "Essa é a regra de ouro da emergência obstétrica: a tríade sangramento de primeiro trimestre + dor abdominal + instabilidade hemodinâmica é gestação ectópica rota até prova em contrário, com encaminhamento imediato ao centro cirúrgico. A ectópica rota é a principal causa de morte materna no primeiro trimestre."
+    }
+  ]
+}

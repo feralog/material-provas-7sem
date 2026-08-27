@@ -1,0 +1,359 @@
+{
+  "titulo": "Imagem em Mama",
+  "eyebrow": "Ginecologia · Mastologia",
+  "subtitulo": "Ler mamografia e ultrassom com a linguagem do BI-RADS",
+  "intro": "Aula prática de interpretação de imagem mamária: métodos e suas indicações, incidências e posicionamento, descrição dos achados (nódulo, calcificações, distorção, assimetria) e as categorias BI-RADS com a conduta de cada uma.",
+  "questoes": [
+    {
+      "question": "O esquema divide as duas incidências básicas da mamografia em regiões numeradas. O que representam as regiões 3 e 4, marcadas na incidência da direita?",
+      "options": [
+        "Quadrantes laterais (3) e mediais (4) da mama",
+        "Quadrantes superiores (3) e inferiores (4) da mama",
+        "Terços anterior (3) e posterior (4) do parênquima",
+        "Prolongamento axilar (3) e região retroareolar (4)"
+      ],
+      "correctIndex": 0,
+      "explanation": "A incidência da direita é a crânio-caudal (CC), que divide a mama em metade lateral e metade medial. A médio-lateral oblíqua (MLO), à esquerda, é a que divide a mama em superior (1) e inferior (2). Por isso o laudo combina as duas incidências para localizar o achado num quadrante.",
+      "image": "s08i1",
+      "imageCaption": "MLO e CC com as regiões da mama numeradas"
+    },
+    {
+      "question": "O esquema compara a linha que vai da papila ao músculo peitoral na MLO com a medida equivalente na CC. Qual a diferença máxima aceitável entre as duas para considerar a CC bem posicionada?",
+      "options": [
+        "Até 1 cm de diferença entre as duas medidas",
+        "Até 5 cm de diferença entre as duas medidas",
+        "Até 1 mm de diferença entre as duas medidas",
+        "Até 3 cm de diferença entre as duas medidas"
+      ],
+      "correctIndex": 0,
+      "explanation": "A distância da papila ao vértice do peitoral na MLO comparada à distância da papila ao ponto mais posterior na CC não pode exceder 1 cm. Diferença maior indica que tecido posterior ficou fora do campo na crânio-caudal, exigindo reposicionamento.",
+      "image": "s07i1",
+      "imageCaption": "Comparação da linha papila-peitoral entre MLO e CC"
+    },
+    {
+      "question": "Mamografia de rastreamento em incidência MLO bilateral de mulher de 55 anos, mostrando apenas tecido fibroglandular e gordura em distribuição habitual, sem nódulos, calcificações ou distorções. Qual a categoria e a conduta?",
+      "options": [
+        "BI-RADS 1 — retorno de rotina conforme a idade",
+        "BI-RADS 0 — complementar com ampliação da lesão",
+        "BI-RADS 3 — controle precoce em seis meses",
+        "BI-RADS 2 — controle por imagem em seis meses"
+      ],
+      "correctIndex": 0,
+      "explanation": "Exame sem qualquer achado é categoria 1 (negativo), com risco de malignidade próximo de zero e conduta de rastreamento de rotina para a faixa etária. A categoria 2 também retorna à rotina, mas exige um achado benigno identificado, o que não ocorre aqui.",
+      "image": "s19i1",
+      "imageCaption": "MLO bilateral sem achados focais"
+    },
+    {
+      "question": "Nódulo mamográfico contendo calcificações grosseiras e coalescentes, com aspecto clássico 'em pipoca'. Qual o diagnóstico presumido e a categoria?",
+      "options": [
+        "Fibroadenoma calcificado — BI-RADS 2, rotina",
+        "Carcinoma com necrose — BI-RADS 5, biópsia",
+        "Esteatonecrose recente — BI-RADS 3, controle",
+        "Cisto oleoso calcificado — BI-RADS 0, complemento"
+      ],
+      "correctIndex": 0,
+      "explanation": "A calcificação grosseira coalescente 'em pipoca' dentro de um nódulo é o padrão de fibroadenoma em involução, um achado tipicamente benigno. Entra em BI-RADS 2, com risco próximo de zero e retorno ao rastreamento de rotina para a idade.",
+      "image": "s21i3",
+      "imageCaption": "Nódulo com calcificação grosseira em pipoca"
+    },
+    {
+      "question": "Mamografia mostrando calcificações tubulares dispostas em dois traços paralelos, acompanhando um trajeto tortuoso no parênquima. Como classificar esse achado?",
+      "options": [
+        "Calcificações vasculares — benignas, BI-RADS 2",
+        "Calcificações lineares finas — suspeitas, BI-RADS 4",
+        "Calcificações em bastonetes — benignas, BI-RADS 3",
+        "Calcificações pleomórficas — suspeitas, BI-RADS 5"
+      ],
+      "correctIndex": 0,
+      "explanation": "O par de linhas paralelas em 'trilho de trem' acompanhando um vaso tortuoso define calcificação vascular, listada entre as tipicamente benignas do BI-RADS. A conduta é rotina para a idade, sem necessidade de ampliação ou biópsia.",
+      "image": "s22i3",
+      "imageCaption": "Calcificações em trilho de trem ao longo de um vaso"
+    },
+    {
+      "question": "Mamografia com múltiplas calcificações arredondadas de centro lucente, com aspecto de casca de ovo, em paciente com trauma mamário prévio. Qual o achado e a conduta?",
+      "options": [
+        "Cistos oleosos de esteatonecrose — rotina para a idade",
+        "Calcificações amorfas agrupadas — biópsia percutânea",
+        "Microcalcificações pleomórficas — biópsia percutânea",
+        "Calcificações de leite de cálcio — perfil a noventa graus"
+      ],
+      "correctIndex": 0,
+      "explanation": "Calcificações anelares, de parede fina e centro radiotransparente, correspondem a cistos oleosos da esteatonecrose, típicos após trauma ou cirurgia. São tipicamente benignas (BI-RADS 2) e dispensam qualquer complementação ou biópsia.",
+      "image": "s23i3",
+      "imageCaption": "Calcificações anelares com centro lucente"
+    },
+    {
+      "question": "Mamografia de mama previamente operada mostrando depósitos de cálcio lineares que desenham o trajeto de um fio, com nós reconhecíveis. Qual a categoria?",
+      "options": [
+        "BI-RADS 2 — calcificação de sutura, típica benigna",
+        "BI-RADS 4 — calcificação linear fina ramificada suspeita",
+        "BI-RADS 0 — necessita ampliação para caracterização",
+        "BI-RADS 5 — calcificação segmentar de alta suspeição"
+      ],
+      "correctIndex": 0,
+      "explanation": "O reconhecimento do formato do fio e dos nós identifica a calcificação de sutura, achado tipicamente benigno em mama operada. É categoria 2, com retorno à rotina, e não deve ser confundida com calcificações lineares finas de carcinoma in situ.",
+      "image": "s24i1",
+      "imageCaption": "Cálcio depositado sobre fio de sutura, com nós"
+    },
+    {
+      "question": "Segundo o fluxograma de seguimento apresentado, um achado classificado como BI-RADS 3 que permanece estável ao longo dos 24 meses de controle deve ser:",
+      "options": [
+        "reclassificado como BI-RADS 2, com retorno à rotina",
+        "mantido como BI-RADS 3 por mais 24 meses de controle",
+        "reclassificado como BI-RADS 4, indicando core biopsy",
+        "reclassificado como BI-RADS 1, dispensando mamografia"
+      ],
+      "correctIndex": 0,
+      "explanation": "O esquema prevê controle aos 6 meses (mamografia do lado alterado), 12 e 24 meses (bilateral). Estabilidade nesses dois anos reclassifica a lesão como categoria 2, achado benigno, e a paciente volta ao rastreamento de rotina para a idade.",
+      "image": "s28i1",
+      "imageCaption": "Fluxograma de seguimento do BI-RADS 3"
+    },
+    {
+      "question": "Mamografias MLO e CC bilaterais mostrando maior volume de tecido fibroglandular na mama esquerda, ocupando mais de um quadrante, sem nódulo, distorção ou calcificações, e estável em relação ao exame anterior. Como descrever o achado?",
+      "options": [
+        "Assimetria global — benigna quando é estável",
+        "Assimetria focal — nova, com indicação de biópsia",
+        "Distorção arquitetural — com indicação de biópsia",
+        "Nódulo obscurecido — com indicação de ultrassom"
+      ],
+      "correctIndex": 0,
+      "explanation": "Assimetria que ocupa mais de um quadrante, sem margens convexas nem achado associado, é uma assimetria global. Estável na comparação com exames prévios, corresponde a variação da distribuição do tecido fibroglandular e é considerada benigna.",
+      "image": "s29i2",
+      "imageCaption": "Assimetria de mais de um quadrante na mama esquerda"
+    },
+    {
+      "question": "Comparação da mamografia atual (acima) com o exame prévio (abaixo) revela assimetria focal nova, que ocupa menos de um quadrante. Qual a categoria e a conduta?",
+      "options": [
+        "BI-RADS 4 — biópsia, pois o VPP é de cerca de 27%",
+        "BI-RADS 3 — controle semestral por dois anos seguidos",
+        "BI-RADS 2 — retorno ao rastreamento de rotina da idade",
+        "BI-RADS 0 — apenas repetir a mamografia em doze meses"
+      ],
+      "correctIndex": 0,
+      "explanation": "Assimetria focal em primeira mamografia, após complementação e ultrassom negativos, pode ser BI-RADS 3; porém, quando é nova ou está em crescimento, sobe para BI-RADS 4, com valor preditivo positivo em torno de 27%. Neste caso, tratava-se de carcinoma lobular invasivo.",
+      "image": "s30i2",
+      "imageCaption": "Assimetria focal nova comparada ao exame prévio"
+    },
+    {
+      "question": "Mamografia ampliada mostrando calcificações finas, irregulares, descontínuas e com ramificações, todas medindo menos de 0,5 mm. Qual a interpretação?",
+      "options": [
+        "Morfologia suspeita — típica de carcinoma ductal in situ",
+        "Morfologia benigna — típica de ectasia ductal com secreção",
+        "Morfologia benigna — típica de fibroadenoma em involução",
+        "Morfologia suspeita — típica de adenose esclerosante focal"
+      ],
+      "correctIndex": 0,
+      "explanation": "Calcificações lineares finas ramificadas moldam a luz de ductos preenchidos por células neoplásicas e necrose, sendo o padrão clássico de carcinoma ductal in situ. Diferem das calcificações em grandes bastonetes da ectasia ductal, que são grossas, maiores que 1 mm e benignas.",
+      "image": "s39i1",
+      "imageCaption": "Calcificações lineares finas ramificadas"
+    },
+    {
+      "question": "Detalhe de mamografia mostrando convergência radiada de linhas finas para um ponto central, sem nódulo identificável nesse ponto. Qual o nome do achado?",
+      "options": [
+        "Distorção arquitetural",
+        "Assimetria mamária focal",
+        "Calcificações amorfas",
+        "Nódulo microlobulado"
+      ],
+      "correctIndex": 0,
+      "explanation": "Espículas ou retificações do parênquima convergindo para um ponto, sem massa central visível, definem distorção arquitetural. Ela pode corresponder a adenose esclerosante ou cicatriz radiada, mas também a carcinoma ductal invasivo, e por isso indica investigação histológica.",
+      "image": "s40i1",
+      "imageCaption": "Convergência radiada sem massa central"
+    },
+    {
+      "question": "Ultrassonografia mostrando nódulo hipoecoico cujo maior eixo é perpendicular à pele, isto é, mais alto do que largo. Qual o descritor e o seu significado?",
+      "options": [
+        "Orientação não paralela — achado suspeito, BI-RADS 4",
+        "Orientação paralela — achado provavelmente benigno",
+        "Reforço acústico posterior — achado típico e benigno",
+        "Margem circunscrita — achado provavelmente benigno"
+      ],
+      "correctIndex": 0,
+      "explanation": "A lesão que cresce atravessando os planos teciduais fica mais alta do que larga, configurando orientação não paralela à pele. É um descritor suspeito do léxico ultrassonográfico e leva à categoria 4, com indicação de core biopsy. Neste caso, tratava-se de carcinoma ductal invasivo.",
+      "image": "s41i1",
+      "imageCaption": "Nódulo mais alto do que largo em dois planos"
+    },
+    {
+      "question": "Ultrassonografia axilar em paciente com câncer de mama recém-diagnosticado, mostrando linfonodo com cortical espessada, hilo gorduroso obliterado e margem indistinta. Qual a conduta?",
+      "options": [
+        "PAAF do linfonodo, classificado como categoria 4",
+        "Core biopsy do linfonodo, classificado como categoria 3",
+        "Controle ultrassonográfico em seis meses, categoria 3",
+        "Retorno ao rastreamento de rotina, categoria 2 no laudo"
+      ],
+      "correctIndex": 0,
+      "explanation": "Linfonodo axilar com perda do hilo gorduroso e cortical espessada é suspeito e recebe categoria 4, mesmo quando bilateral. A amostragem indicada em linfonodo axilar é a punção aspirativa por agulha fina, ao contrário das lesões da mama, em que se usa core biopsy ou mamotomia.",
+      "image": "s45i1",
+      "imageCaption": "Linfonodo axilar com hilo gorduroso obliterado"
+    },
+    {
+      "question": "Mamografia mostrando nódulo denso e espiculado em região retroareolar, acompanhado de retração da papila. Qual a categoria e a conduta?",
+      "options": [
+        "BI-RADS 5 — biópsia, mesmo se o ultrassom for pobre",
+        "BI-RADS 4A — seguimento semestral, se a paciente aceitar",
+        "BI-RADS 0 — compressão localizada antes de decidir a conduta",
+        "BI-RADS 3 — controle precoce por imagem em seis meses"
+      ],
+      "correctIndex": 0,
+      "explanation": "Nódulo espiculado somado a retração papilar é combinação altamente sugestiva de malignidade, com risco maior que 95%, ou seja, categoria 5. Quando a mamografia é BI-RADS 5, a biópsia está indicada independentemente do que mostre o ultrassom complementar.",
+      "image": "s47i2",
+      "imageCaption": "Nódulo espiculado retroareolar com retração papilar"
+    },
+    {
+      "question": "Ultrassonografia mostrando imagem anecoica, oval, circunscrita, de paredes finas, com reforço acústico posterior e sombras de borda. Qual a classificação?",
+      "options": [
+        "Cisto simples — BI-RADS 2, sem necessidade de punção",
+        "Cisto complicado — BI-RADS 3, controle em seis meses",
+        "Nódulo sólido hipoecoico — BI-RADS 4, com core biopsy",
+        "Cisto complexo — BI-RADS 4, punção associada a biópsia"
+      ],
+      "correctIndex": 0,
+      "explanation": "A tríade anecogenicidade, margens circunscritas com parede fina e reforço acústico posterior é diagnóstica de cisto simples. É achado benigno, categoria 2, que não requer punção nem seguimento diferenciado, apenas rotina para a idade.",
+      "image": "s25i1",
+      "imageCaption": "Imagem anecoica com reforço acústico posterior"
+    },
+    {
+      "question": "Mamografia de rastreamento em que o radiologista identifica uma imagem nodular e não consegue definir se é cisto ou nódulo sólido. Qual categoria e conduta se aplicam?",
+      "options": [
+        "BI-RADS 0 — prosseguir com ultrassonografia complementar",
+        "BI-RADS 3 — controle precoce por imagem em seis meses",
+        "BI-RADS 2 — retorno ao rastreamento de rotina da idade",
+        "BI-RADS 4 — indicar core biopsy da lesão identificada"
+      ],
+      "correctIndex": 0,
+      "explanation": "A categoria 0 significa exame inconclusivo e é usada justamente na mamografia de rastreamento que não pode ser laudada como 1 ou 2. A complementação depende do achado: ultrassonografia para nódulo, compressão localizada para assimetria e ampliação para calcificações.",
+      "image": null,
+      "imageCaption": null
+    },
+    {
+      "question": "Achado mamográfico classificado como BI-RADS 4B corresponde a qual faixa de risco de malignidade?",
+      "options": [
+        "Maior que 10% e menor ou igual a 50%",
+        "Maior que 2% e menor ou igual a 10%",
+        "Maior que 50% e menor ou igual a 95%",
+        "Maior que 95% de risco de malignidade"
+      ],
+      "correctIndex": 0,
+      "explanation": "A categoria 4 abrange risco maior que 2% e até 95%, subdividida em 4A (baixa suspeição, >2% a 10%), 4B (suspeição intermediária, >10% a 50%) e 4C (alta suspeição, >50% a 95%). Todas as subdivisões têm biópsia como conduta.",
+      "image": null,
+      "imageCaption": null
+    },
+    {
+      "question": "Paciente com carcinoma de mama já confirmado por biópsia, em controle de imagem durante quimioterapia neoadjuvante, cujo exame atual não mostra mais achados. Como classificar?",
+      "options": [
+        "BI-RADS 6, pois o tratamento definitivo não foi realizado",
+        "BI-RADS 1, pois o exame atual não mostra qualquer achado",
+        "BI-RADS 2, pois a resposta completa é achado benigno",
+        "BI-RADS 3, pois há necessidade de controle em seis meses"
+      ],
+      "correctIndex": 0,
+      "explanation": "Durante a neoadjuvância a paciente permanece categoria 6 mesmo sem achados de imagem, porque o tratamento definitivo ainda não foi realizado. Só depois de concluído o tratamento o exame volta a ser classificado pelas demais categorias, conforme os achados.",
+      "image": null,
+      "imageCaption": null
+    },
+    {
+      "question": "Por que a categoria 3 não deve ser atribuída diretamente em uma mamografia de rastreamento, sem complementação?",
+      "options": [
+        "Pode gerar seguimento desnecessário e atrasar diagnósticos",
+        "Porque a categoria 3 só existe na ultrassonografia mamária",
+        "Porque o risco da categoria 3 ultrapassa 10% de malignidade",
+        "Porque a conduta da categoria 3 já seria a biópsia percutânea"
+      ],
+      "correctIndex": 0,
+      "explanation": "Sem os complementos, o achado pode ser benigno e gerar controle desnecessário, ou ser maligno e ter o diagnóstico postergado por seis meses. O correto é atribuir categoria 0 e complementar: ampliação para calcificações, compressão localizada para assimetrias e ultrassom para nódulos.",
+      "image": null,
+      "imageCaption": null
+    },
+    {
+      "question": "Sobre a categoria 5, qual afirmação está correta?",
+      "options": [
+        "Exige combinação de achados: nenhum achado isolado chega a 95%",
+        "Basta um nódulo circunscrito de alta densidade na mamografia",
+        "Um único grupo de calcificações amorfas já define a categoria",
+        "Basta a distorção arquitetural isolada em uma das incidências"
+      ],
+      "correctIndex": 0,
+      "explanation": "Nenhum achado mamográfico isolado alcança risco maior ou igual a 95%; a categoria 5 nasce da combinação, como nódulo irregular espiculado, de alta densidade e com microcalcificações. A consequência prática é que qualquer resultado de biópsia diferente de câncer é considerado discordante.",
+      "image": null,
+      "imageCaption": null
+    },
+    {
+      "question": "Mulher com linfonodopatia axilar detectada na mamografia, sem causa conhecida e sem achado suspeito na mama. Qual a categoria e a conduta?",
+      "options": [
+        "Categoria 0 — ultrassom axilar e revisão dos dados clínicos",
+        "Categoria 2 — retorno ao rastreamento de rotina para a idade",
+        "Categoria 4 — punção aspirativa imediata do linfonodo axilar",
+        "Categoria 3 — controle da axila por imagem em seis meses"
+      ],
+      "correctIndex": 0,
+      "explanation": "Na ausência de causa conhecida, a linfonodopatia axilar é categoria 0, com complementação por ultrassonografia axilar e busca de informações clínicas. Se houver causa conhecida, mesmo maligna extramamária, entra em categoria 1 ou 2; se o ultrassom mostrar linfonodo suspeito, passa a categoria 4.",
+      "image": null,
+      "imageCaption": null
+    },
+    {
+      "question": "Qual é a principal vantagem da ultrassonografia como método complementar à mamografia?",
+      "options": [
+        "Distinguir lesões sólidas de císticas e avaliar mamas densas",
+        "Detectar microcalcificações agrupadas em fase muito inicial",
+        "Substituir a mamografia no rastreamento após os 50 anos",
+        "Avaliar a extensão tumoral com melhor acurácia que a ressonância"
+      ],
+      "correctIndex": 0,
+      "explanation": "A ultrassonografia não usa radiação, diferencia com precisão lesão sólida de cística e tem maior sensibilidade em mamas densas e em mulheres jovens; além disso, é o método preferido para guiar biópsias percutâneas. Ela não detecta microcalcificações, que continuam sendo domínio da mamografia.",
+      "image": null,
+      "imageCaption": null
+    },
+    {
+      "question": "Quais são as principais indicações da ressonância magnética de mamas com contraste?",
+      "options": [
+        "Rastreamento de alto risco e avaliação da extensão tumoral",
+        "Rastreamento populacional de todas as mulheres acima de 50 anos",
+        "Diferenciação inicial entre lesões sólidas e císticas palpáveis",
+        "Caracterização de microcalcificações agrupadas suspeitas na mama"
+      ],
+      "correctIndex": 0,
+      "explanation": "A ressonância usa campo magnético e contraste intravenoso e permite análise funcional do realce das lesões. Suas indicações principais são o rastreamento de mulheres de alto risco, a avaliação da extensão tumoral e casos selecionados, não o rastreamento populacional.",
+      "image": null,
+      "imageCaption": null
+    },
+    {
+      "question": "Nódulo classificado como BI-RADS 3 na mamografia apresenta, no controle de seis meses, crescimento de cerca de 30% e margens antes circunscritas agora indistintas. Qual a conduta?",
+      "options": [
+        "Reclassificar como BI-RADS 4 e indicar biópsia percutânea",
+        "Manter BI-RADS 3 e repetir a imagem em mais seis meses",
+        "Reclassificar como BI-RADS 2 e retornar à rotina para a idade",
+        "Reclassificar como BI-RADS 0 e apenas ampliar a área alterada"
+      ],
+      "correctIndex": 0,
+      "explanation": "A categoria 3 exige estabilidade: crescimento maior que 20% ou mudança das margens durante o seguimento é alteração significativa e leva à reclassificação em BI-RADS 4, com biópsia. Só a estabilidade por dois anos permite a reclassificação em categoria 2.",
+      "image": null,
+      "imageCaption": null
+    },
+    {
+      "question": "Mamografia mostrando calcificações amorfas distribuídas de forma difusa e bilateral, sem agrupamentos, comparáveis ao exame anterior. Qual a categoria?",
+      "options": [
+        "BI-RADS 2, pois a distribuição difusa e bilateral é benigna",
+        "BI-RADS 4, pois a morfologia amorfa é sempre suspeita",
+        "BI-RADS 0, pois toda calcificação amorfa exige ampliação",
+        "BI-RADS 5, pois calcificações amorfas indicam carcinoma"
+      ],
+      "correctIndex": 0,
+      "explanation": "Nas calcificações a distribuição pesa tanto quanto a morfologia: amorfas difusas e bilaterais são categoria 2. As mesmas amorfas passam a suspeição intermediária, categoria 4, quando são regionais novas ou em aumento, agrupadas, lineares ou segmentares.",
+      "image": null,
+      "imageCaption": null
+    },
+    {
+      "question": "Qual incidência mamográfica avalia melhor o quadrante superolateral e o prolongamento axilar da mama?",
+      "options": [
+        "Médio-lateral oblíqua, que divide a mama em superior e inferior",
+        "Crânio-caudal, que divide a mama em porção medial e lateral",
+        "Perfil a noventa graus, que dissocia imagens sobrepostas do tecido",
+        "Incidência de clivagem, que compara as duas mamas simultaneamente"
+      ],
+      "correctIndex": 0,
+      "explanation": "A médio-lateral oblíqua inclui o músculo peitoral e o prolongamento axilar, sendo a incidência que melhor avalia o quadrante superolateral, região onde se concentra a maioria dos carcinomas. A crânio-caudal cobre melhor os quadrantes mediais e a região retroareolar.",
+      "image": null,
+      "imageCaption": null
+    }
+  ]
+}

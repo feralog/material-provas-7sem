@@ -1,0 +1,352 @@
+{
+  "titulo": "Diferenciação Sexual e Malformações Uterinas",
+  "eyebrow": "Ginecologia · Embriologia e Malformações",
+  "subtitulo": "Da gônada bipotencial às anomalias müllerianas na prática clínica",
+  "intro": "Percorre a cascata genética e hormonal da determinação e diferenciação sexual, o destino dos ductos de Müller e de Wolff, a fisiogênese do útero e da vagina e a classificação ASRM/ESHRE das malformações uterinas, com diagnóstico por imagem, repercussão reprodutiva e casos clínicos.",
+  "questoes": [
+    {
+      "question": "Na determinação gonadal humana, em que semana de gestação a gônada bipotencial se diferencia em testículo e em que semana ela se diferencia em ovário?",
+      "options": [
+        "Testículo na 6ª semana; ovário na 8ª semana",
+        "Testículo na 8ª semana; ovário na 6ª semana",
+        "Testículo na 4ª semana; ovário na 6ª semana",
+        "Testículo na 10ª semana; ovário na 12ª semana"
+      ],
+      "correctIndex": 0,
+      "explanation": "A determinação gonadal é o conjunto de eventos iniciais que forma a gônada: o testículo aparece na 6ª semana e o ovário só na 8ª semana de gestação. A via testicular é, portanto, mais precoce, comandada por SRY e SOX9 sobre a gônada bipotencial. A diferenciação sexual propriamente dita, que define o fenótipo, completa-se por volta da 12ª semana."
+    },
+    {
+      "question": "Qual célula fetal secreta o hormônio antimülleriano (AMH/MIS) entre a 7ª e a 8ª semana, provocando a regressão apoptótica irreversível dos ductos de Müller?",
+      "options": [
+        "Célula de Sertoli testicular",
+        "Célula de Leydig testicular",
+        "Célula da granulosa ovariana",
+        "Célula da teca ovariana"
+      ],
+      "correctIndex": 0,
+      "explanation": "O AMH é produzido pelas células de Sertoli fetais, sob controle de SOX9 e SF1, entre a 7ª e a 8ª semana. Sua ação sobre o receptor AMH-R causa regressão apoptótica irreversível dos ductos paramesonéfricos no feto masculino. As células de Leydig produzem testosterona, e não AMH."
+    },
+    {
+      "question": "A manutenção e a diferenciação dos ductos de Wolff no feto masculino dependem diretamente de qual hormônio e de que modo ele age?",
+      "options": [
+        "Testosterona das células de Leydig, com ação ipsilateral",
+        "Testosterona das células de Sertoli, com ação sistêmica",
+        "Di-hidrotestosterona das suprarrenais, com ação difusa",
+        "Hormônio antimülleriano de Sertoli, com ação ipsilateral"
+      ],
+      "correctIndex": 0,
+      "explanation": "Os ductos mesonéfricos são hormônio-dependentes: precisam da testosterona secretada pelas células de Leydig fetais, que age de forma ipsilateral e parácrina sobre o receptor androgênico. Por isso, se um testículo falha, o ducto de Wolff daquele lado regride. O AMH, também testicular, faz o oposto: elimina os ductos de Müller."
+    },
+    {
+      "question": "A masculinização da genitália externa bipotencial (tubérculo genital, dobras urogenitais e intumescimentos labioescrotais) depende de qual mediador?",
+      "options": [
+        "DHT, gerada pela 5α-redutase tipo 2",
+        "AMH, gerado pelas células de Sertoli",
+        "Estradiol, gerado pela aromatase gonadal",
+        "Inibina, gerada pelas células da teca"
+      ],
+      "correctIndex": 0,
+      "explanation": "A genitália externa masculiniza-se sob ação da di-hidrotestosterona, potencializada localmente pela conversão da testosterona pela 5α-redutase tipo 2. Essa é a razão pela qual a deficiência dessa enzima cursa com genitália interna masculina (dependente de testosterona) e genitália externa feminina ou ambígua. O AMH atua apenas sobre os ductos de Müller."
+    },
+    {
+      "question": "Segundo a matriz de homologia embriológica apresentada na aula, quais estruturas femininas derivam dos ductos paramesonéfricos (de Müller)?",
+      "options": [
+        "Tubas uterinas, útero, cérvix e vagina superior",
+        "Ovários, tubas uterinas e terço inferior da vagina",
+        "Útero, grandes lábios e terço inferior da vagina",
+        "Cérvix, clitóris e pequenos lábios da vulva"
+      ],
+      "correctIndex": 0,
+      "explanation": "Os ductos de Müller originam as tubas uterinas, o corpo do útero, a cérvix e os dois terços superiores da vagina. O terço inferior da vagina não é mülleriano: vem do seio urogenital, pela placa vaginal. Os ovários derivam da gônada indiferenciada, e não dos ductos.",
+      "image": "pg16",
+      "imageCaption": "Matriz de homologia: origem embrionária e derivados masculinos e femininos"
+    },
+    {
+      "question": "Quais estruturas masculinas derivam dos ductos mesonéfricos (de Wolff)?",
+      "options": [
+        "Epidídimo, ducto deferente e vesícula seminal",
+        "Próstata, uretra peniana e glande do pênis",
+        "Escroto, próstata e apêndice testicular",
+        "Testículo, escroto e uretra esponjosa"
+      ],
+      "correctIndex": 0,
+      "explanation": "Os derivados wolffianos são o epidídimo, o ducto deferente, as vesículas seminais e os ductos ejaculatórios. A próstata e o terço inferior da uretra vêm do seio urogenital; escroto, glande e uretra peniana vêm da genitália externa bipotencial sob ação da DHT. O apêndice testicular é vestígio mülleriano, não wolffiano."
+    },
+    {
+      "question": "Na ausência de testosterona, os ductos de Wolff sofrem regressão fisiológica no feto feminino, mas podem deixar vestígios. Quais são esses vestígios?",
+      "options": [
+        "Ducto de Gartner e cistos epoóforos",
+        "Ducto de Gartner e cistos de Naboth",
+        "Cistos de Bartholin e hidátide de Morgagni",
+        "Cistos epoóforos e hidátide de Morgagni"
+      ],
+      "correctIndex": 0,
+      "explanation": "Sem testosterona, os ductos mesonéfricos regridem, restando o ducto de Gartner (na parede vaginal lateral) e os cistos epoóforos (no mesossalpinge). Cistos de Naboth são de retenção glandular cervical e não têm origem wolffiana. A hidátide de Morgagni é vestígio da extremidade cranial mülleriana."
+    },
+    {
+      "question": "Qual é a origem embriológica do terço inferior da vagina?",
+      "options": [
+        "Seio urogenital, pela placa vaginal",
+        "Ductos de Müller, pela fusão caudal",
+        "Ductos de Wolff, pela fusão medial",
+        "Cloaca posterior, pela membrana anal"
+      ],
+      "correctIndex": 0,
+      "explanation": "A vagina tem dupla origem: os dois terços superiores vêm do ducto uterovaginal mülleriano e o terço inferior deriva do seio urogenital, pela placa vaginal. Essa dupla origem explica por que o septo vaginal transverso se localiza tipicamente na junção entre os dois territórios. É também a razão de a MRKH poder cursar com vagina distal curta em fundo cego."
+    },
+    {
+      "question": "Na diferenciação da genitália externa, o tubérculo genital e as tumefações labioescrotais originam, no sexo feminino, respectivamente:",
+      "options": [
+        "Glande do clitóris e lábios maiores",
+        "Lábios menores e glande do clitóris",
+        "Lábios maiores e lábios menores",
+        "Glande do clitóris e lábios menores"
+      ],
+      "correctIndex": 0,
+      "explanation": "O tubérculo genital origina a glande do clitóris (homóloga da glande peniana) e as tumefações labioescrotais originam os lábios maiores (homólogos do escroto). As pregas urogenitais, que no homem fecham a uretra esponjosa, permanecem abertas na mulher e formam os lábios menores. Toda a diferenciação externa ocorre entre a 6ª e a 12ª semana.",
+      "image": "pg12",
+      "imageCaption": "Genitália externa: estágio indiferenciado na 6ª semana e destinos na 12ª semana"
+    },
+    {
+      "question": "Pegadinha clássica de prova: o desenvolvimento dos ductos de Müller no feto feminino depende de qual estímulo hormonal?",
+      "options": [
+        "De nenhum: ocorre passivamente sem AMH",
+        "Do estradiol ovariano fetal em alta dose",
+        "Da testosterona ovariana em baixa dose",
+        "Do AMH secretado pela granulosa fetal"
+      ],
+      "correctIndex": 0,
+      "explanation": "Os ductos paramesonéfricos têm desenvolvimento autônomo: na ausência de AMH eles se desenvolvem passivamente, sem precisar de estímulo hormonal ovariano. Por isso um feto com gônada ausente ou disgenética ainda assim forma útero e tubas. Quem é hormônio-dependente é o ducto de Wolff, que exige testosterona para não regredir."
+    },
+    {
+      "question": "Na etapa indiferenciada do embrião, o esquema da aula mostra que coexistem em ambos os sexos:",
+      "options": [
+        "Dois pares de ductos: mesonéfricos e paramesonéfricos",
+        "Apenas o par de ductos paramesonéfricos, de Müller",
+        "Apenas o par de ductos mesonéfricos, de Wolff",
+        "Um par de ductos e a gônada já diferenciada"
+      ],
+      "correctIndex": 0,
+      "explanation": "Na fase inicial existem dois pares paralelos de ductos genitais em todo embrião: o mesonéfrico (de Wolff) e o paramesonéfrico (de Müller), ao lado da gônada ainda bipotencial. A extremidade cefálica do ducto de Müller abre-se na cavidade celômica e as extremidades caudais fundem-se no ducto uterovaginal. O destino de cada par depende inteiramente da regulação hormonal subsequente.",
+      "image": "pg04",
+      "imageCaption": "Etapa indiferenciada e os dois destinos: masculino e feminino"
+    },
+    {
+      "question": "Na organogênese do trato genital feminino, a porção cranial não fundida dos ductos paramesonéfricos origina qual estrutura?",
+      "options": [
+        "As tubas uterinas, que permanecem abertas em funil",
+        "O corpo uterino, formado pela fusão na linha média",
+        "A cérvix uterina, derivada do ducto uterovaginal",
+        "A vagina inferior, derivada do seio urogenital"
+      ],
+      "correctIndex": 0,
+      "explanation": "A parte superior dos ductos paramesonéfricos não se funde e permanece aberta em forma de funil, transformando-se nas tubas uterinas. A fusão ocorre na porção caudal e progride no sentido cranial, formando o ducto uterovaginal, do qual derivam o útero e a vagina superior. A porção mais distal da vagina provém do seio urogenital.",
+      "image": "pg10",
+      "imageCaption": "Organogênese: porção cranial, porção caudal e contribuição do seio urogenital"
+    },
+    {
+      "question": "Durante a descida ovariana entre a 7ª e a 12ª semana, em que se transformam as porções cranial e caudal do gubernáculo?",
+      "options": [
+        "Ligamento ovariano e ligamento redondo do útero",
+        "Ligamento redondo do útero e ligamento ovariano",
+        "Ligamento largo e ligamento infundibulopélvico",
+        "Ligamento uterossacro e ligamento cardinal"
+      ],
+      "correctIndex": 0,
+      "explanation": "O gubernáculo é o cordão de fixação que traciona o ovário da parede abdominal dorsal até a pelve. Sua porção cranial torna-se o ligamento ovariano (útero-ovárico) e a porção caudal torna-se o ligamento redondo, que atravessa o canal inguinal até os grandes lábios. Esse trajeto explica por que endometriose e hérnias podem se manifestar no canal inguinal feminino.",
+      "image": "pg13",
+      "imageCaption": "Diferenciação externa e descida ovariana: o papel do gubernáculo"
+    },
+    {
+      "question": "Sobre a fisiogênese uterina, qual é a sequência correta das três fases e seus respectivos períodos gestacionais?",
+      "options": [
+        "Organogênese 6–9 sem., fusão medial 9–12 sem., reabsorção septal 12–20 sem.",
+        "Fusão medial 6–9 sem., organogênese 9–12 sem., reabsorção septal 12–20 sem.",
+        "Organogênese 4–6 sem., reabsorção septal 6–9 sem., fusão medial 9–12 sem.",
+        "Reabsorção septal 6–9 sem., organogênese 9–12 sem., fusão medial 12–20 sem."
+      ],
+      "correctIndex": 0,
+      "explanation": "A organogênese (6ª a 9ª semana) forma bilateralmente os ductos paramesonéfricos com progressão craniocaudal paralela ao sistema urinário; a fusão medial (9ª a 12ª semana) une os segmentos distais e médios no primórdio uterovaginal; a reabsorção septal (12ª a 20ª semana) desfaz o septo central. O bloqueio de cada fase gera um padrão distinto de anomalia. Essa cronologia é a espinha dorsal de toda a classificação."
+    },
+    {
+      "question": "A reabsorção do septo fibromuscular central que separa as duas cavidades fundidas do primórdio uterovaginal ocorre em qual sentido?",
+      "options": [
+        "De caudal para cranial",
+        "De cranial para caudal",
+        "De medial para lateral",
+        "De lateral para medial"
+      ],
+      "correctIndex": 0,
+      "explanation": "A reabsorção septal ocorre gradualmente de caudal para cranial, entre a 12ª e a 20ª semana. Como começa embaixo, a interrupção precoce deixa um septo que se estende até a cérvix (septado completo), e a interrupção tardia deixa apenas um septo fúndico (septado incompleto). O sentido caudocranial é o inverso do sentido da organogênese, que é craniocaudal."
+    },
+    {
+      "question": "Uma falha da fusão medial dos ductos de Müller resulta em qual grupo de anomalias uterinas?",
+      "options": [
+        "Útero didelfo e útero bicorno",
+        "Útero septado e útero arqueado",
+        "Útero unicorno e hemiútero",
+        "Agenesia uterina e hipoplasia"
+      ],
+      "correctIndex": 0,
+      "explanation": "A falha de fusão medial, total ou parcial, produz o útero didelfo e o útero bicorno, agrupados como classe U3 (bicorporeal) na ESHRE/ESGE. O útero septado vem de falha de reabsorção do septo (U2) e a agenesia, de falha de organogênese inicial (U5). Reconhecer o mecanismo embriológico é o atalho para acertar a classificação.",
+      "image": "pg19",
+      "imageCaption": "Classificação ASRM (MAC2021) versus ESHRE/ESGE por mecanismo embriológico"
+    },
+    {
+      "question": "Qual anomalia decorre da falha de reabsorção do septo e como ela é classificada pela ESHRE/ESGE?",
+      "options": [
+        "Útero septado — classe U2",
+        "Útero bicorno — classe U3",
+        "Hemiútero — classe U4",
+        "Útero aplásico — classe U5"
+      ],
+      "correctIndex": 0,
+      "explanation": "O útero septado, incompleto ou completo, resulta da falha de reabsorção do septo fibromuscular e corresponde à classe U2 da ESHRE/ESGE. O contorno fúndico externo é normal, o que o diferencia do bicorno (U3), no qual há entalhe externo por falha de fusão. Essa distinção é decisiva porque só o septado se beneficia de metroplastia histeroscópica."
+    },
+    {
+      "question": "A agenesia/hipoplasia mülleriana (síndrome de MRKH) corresponde a que classe da ESHRE/ESGE e a qual falha embriológica?",
+      "options": [
+        "Classe U5, por falha de organogênese inicial",
+        "Classe U4, por falha de fusão medial parcial",
+        "Classe U3, por falha de reabsorção do septo",
+        "Classe U2, por falha de desenvolvimento unilateral"
+      ],
+      "correctIndex": 0,
+      "explanation": "A agenesia mülleriana é classificada como U5 (aplastic) pela ESHRE/ESGE e como agenesia mülleriana (MRKH) pelo critério ASRM MAC2021. O mecanismo é a falha da organogênese inicial, ou seja, os ductos paramesonéfricos sequer se formam adequadamente entre a 6ª e a 9ª semana. As demais classes correspondem a falhas em etapas posteriores."
+    },
+    {
+      "question": "O útero unicorno, com ou sem corno rudimentar, resulta de qual mecanismo embriológico e recebe qual classe na ESHRE/ESGE?",
+      "options": [
+        "Falha de desenvolvimento unilateral — U4",
+        "Falha de fusão medial completa — U3",
+        "Falha de reabsorção do septo — U2",
+        "Falha de organogênese inicial — U5"
+      ],
+      "correctIndex": 0,
+      "explanation": "O útero unicorno decorre da falha de desenvolvimento de um dos ductos de Müller e é a classe U4 (hemi-uterus) da ESHRE/ESGE. Como a progressão dos ductos é paralela ao sistema urinário, é a anomalia com maior associação a agenesia renal ipsilateral. O corno rudimentar não comunicante e funcionante pode causar dismenorreia intensa e gestação ectópica cornual."
+    },
+    {
+      "question": "Segundo os dados de prevalência apresentados na aula, qual é a malformação uterina congênita mais frequente?",
+      "options": [
+        "Útero septado, com cerca de 35%",
+        "Útero bicorno, com cerca de 25%",
+        "Útero arqueado, com cerca de 18%",
+        "Útero didelfo, com cerca de 11%"
+      ],
+      "correctIndex": 0,
+      "explanation": "Na distribuição apresentada, o útero septado responde por cerca de 35% dos casos, seguido do bicorno (25%), do arqueado (18%), do didelfo (11%) e do grupo agenesia/unicorno (11%). Ou seja, a anomalia mais comum é justamente a de melhor resposta cirúrgica. Os dados seguem a revisão de Chan e colaboradores (Hum Reprod Update, 2011).",
+      "image": "pg21",
+      "imageCaption": "Prevalência relativa das malformações uterinas congênitas"
+    },
+    {
+      "question": "Qual malformação uterina apresenta o maior índice de perda gestacional recorrente e qual tratamento restaura os desfechos obstétricos?",
+      "options": [
+        "Útero septado — metroplastia histeroscópica",
+        "Útero bicorno — metroplastia de Strassman",
+        "Útero didelfo — ressecção do septo vaginal",
+        "Útero unicorno — cerclagem cervical eletiva"
+      ],
+      "correctIndex": 0,
+      "explanation": "O útero septado tem o maior índice de perda gestacional recorrente, com abortamentos de primeiro e de segundo trimestres, porque o septo é fibromuscular e mal vascularizado para a implantação. A ressecção histeroscópica do septo restaura os desfechos obstétricos. Nas demais anomalias, a conduta é habitualmente expectante e o benefício cirúrgico não é comparável."
+    },
+    {
+      "question": "Sobre a síndrome de MRKH, qual afirmativa está correta quanto ao cariótipo e à sua posição como causa de amenorreia?",
+      "options": [
+        "46,XX e segunda causa de amenorreia primária",
+        "46,XY e segunda causa de amenorreia primária",
+        "46,XX e primeira causa de amenorreia primária",
+        "45,X0 e primeira causa de amenorreia primária"
+      ],
+      "correctIndex": 0,
+      "explanation": "A MRKH é uma agenesia mülleriana em paciente 46,XX e representa a segunda causa mais comum de amenorreia primária, atrás da disgenesia gonadal. Como os ovários são funcionantes, os caracteres sexuais secundários desenvolvem-se normalmente, com telarca e pubarca preservadas. O eixo hormonal é normal: falta apenas o efetor uterovaginal."
+    },
+    {
+      "question": "O fenótipo tipo 2 da síndrome de MRKH (associação MURCS) inclui anomalias de quais sistemas?",
+      "options": [
+        "Renais, cervicotorácicas e cardíacas",
+        "Renais, hepáticas e pulmonares",
+        "Cardíacas, oculares e auditivas",
+        "Cervicotorácicas, ósseas e hepáticas"
+      ],
+      "correctIndex": 0,
+      "explanation": "O tipo 1 é a agenesia uterovaginal isolada; o tipo 2, também chamado MURCS, associa anomalias renais, cervicotorácicas (displasia tipo Klippel-Feil) e cardíacas. A investigação da MRKH exige, portanto, ultrassom de vias urinárias e avaliação de coluna cervical. A vizinhança embriológica entre crista urogenital e somitos cervicais explica a associação."
+    },
+    {
+      "question": "Qual é a primeira linha de manejo para a criação de neovagina na síndrome de MRKH?",
+      "options": [
+        "Dilatação não cirúrgica de Frank",
+        "Neovaginoplastia cirúrgica de McIndoe",
+        "Tração laparoscópica de Vecchietti",
+        "Colpoplastia com alça sigmoide"
+      ],
+      "correctIndex": 0,
+      "explanation": "A primeira linha é a neovagina não cirúrgica pelo método de dilatação de Frank, com dilatadores progressivos aplicados pela própria paciente. As técnicas cirúrgicas (McIndoe, Vecchietti, colpoplastia intestinal) ficam reservadas às falhas da dilatação, por acrescentarem morbidade. A adesão e o suporte psicológico são determinantes do sucesso."
+    },
+    {
+      "question": "Qual método é considerado padrão-ouro para o diagnóstico das malformações uterinas e qual é a sua principal vantagem?",
+      "options": [
+        "Ultrassom 3D: avalia contorno externo e cavidade",
+        "Histerossalpingografia: avalia só a cavidade",
+        "Tomografia pélvica: avalia o contorno externo",
+        "Histeroscopia: avalia a cavidade e o miométrio"
+      ],
+      "correctIndex": 0,
+      "explanation": "O ultrassom tridimensional é o padrão-ouro porque permite avaliar simultaneamente o contorno miometrial externo e a cavidade endometrial no plano coronal, com sensibilidade superior a 98% e sem invasividade. É exatamente essa visão coronal que separa o septado do bicorno. A histerossalpingografia mostra apenas o molde da cavidade e não distingue as duas entidades."
+    },
+    {
+      "question": "Em quais situações a ressonância magnética está particularmente indicada na investigação das anomalias müllerianas?",
+      "options": [
+        "Anomalias complexas, agenesia e obstruções vaginais",
+        "Rastreio inicial de toda paciente com infertilidade",
+        "Confirmação de rotina do útero arqueado assintomático",
+        "Avaliação de sangramento uterino anormal na menacme"
+      ],
+      "correctIndex": 0,
+      "explanation": "A ressonância é indicada nas anomalias complexas, na suspeita de agenesia e nas obstruções vaginais, caracterizando com precisão o contorno fúndico e a associação com malformações renais. Ela não é exame de rastreio: o método inicial é o ultrassom, incluindo o de vias urinárias. Histeroscopia e laparoscopia ficam para a dúvida residual ou para o tratamento cirúrgico definitivo."
+    },
+    {
+      "question": "Paciente de 15 anos com amenorreia primária, dor pélvica cíclica e massa palpável em abdome inferior. Qual a hipótese principal e a conduta inicial?",
+      "options": [
+        "Hímen imperfurado com hematocolpo; exame físico e USG pélvico",
+        "Síndrome de MRKH com agenesia vaginal; cariótipo e USG pélvico",
+        "Síndrome dos ovários policísticos; dosagens hormonais e USG pélvico",
+        "Insensibilidade androgênica completa; cariótipo e testosterona sérica"
+      ],
+      "correctIndex": 0,
+      "explanation": "A tríade amenorreia primária, dor pélvica cíclica e massa hipogástrica indica obstrução ao fluxo menstrual com hematocolpo, por hímen imperfurado ou septo vaginal transverso obstrutivo. A dor é cíclica justamente porque o endométrio é funcionante e o sangue não escoa. A conduta inicial é o exame físico pélvico, que já pode mostrar a membrana abaulada e azulada, complementado por ultrassom pélvico."
+    },
+    {
+      "question": "Adolescente 46,XY com genitália externa feminina, amenorreia primária, testículos inguinais e testosterona sérica normal ou elevada. Qual o diagnóstico mais provável?",
+      "options": [
+        "Insensibilidade completa aos andrógenos",
+        "Deficiência da 5α-redutase tipo 2",
+        "Disgenesia gonadal completa 46,XY",
+        "Hiperplasia adrenal congênita clássica"
+      ],
+      "correctIndex": 0,
+      "explanation": "A síndrome de insensibilidade androgênica é a causa mais comum de DDS 46,XY: há defeito de ação da testosterona no receptor androgênico, com testosterona normal ou alta e LH elevado. Como o AMH das células de Sertoli é normal, os derivados müllerianos estão ausentes e a vagina termina em fundo cego. Na deficiência de 5α-redutase há virilização importante na puberdade, o que não ocorre na forma completa da insensibilidade."
+    },
+    {
+      "question": "Qual é a causa mais frequente de ambiguidade genital e qual a sua participação entre os casos de hiperplasia adrenal congênita?",
+      "options": [
+        "Deficiência da 21-hidroxilase, em 95% dos casos",
+        "Deficiência da 11-hidroxilase, em 95% dos casos",
+        "Deficiência da 3β-HSD, em cerca de 60% dos casos",
+        "Deficiência da 17-hidroxilase, em 40% dos casos"
+      ],
+      "correctIndex": 0,
+      "explanation": "A deficiência da 21-hidroxilase é a causa mais frequente de ambiguidade genital e responde por 95% dos casos de hiperplasia adrenal congênita. O bloqueio enzimático reduz o cortisol, eleva o ACTH e desvia o substrato para a via androgênica, virilizando o feto 46,XX. O critério hormonal da forma clássica é 17OH-progesterona basal acima de 60 ng/mL."
+    },
+    {
+      "question": "Quais são os critérios hormonais para o diagnóstico da deficiência da 5α-redutase tipo 2?",
+      "options": [
+        "T/DHT > 26 basal e > 36 após estímulo com hCG",
+        "T/DHT > 10 basal e > 20 após estímulo com hCG",
+        "17OHP > 60 ng/mL basal e > 10 ng/mL após ACTH",
+        "LH > 22 UI/L basal e testosterona > 1000 ng/dL"
+      ],
+      "correctIndex": 0,
+      "explanation": "O diagnóstico apoia-se na relação testosterona/DHT, com razão maior que 26 em condição basal e maior que 36 após estímulo com hCG, conforme a casuística de Mendonça e colaboradores. O bloqueio da conversão periférica acumula testosterona e reduz a DHT. Os valores de 17OHP pertencem ao diagnóstico da hiperplasia adrenal congênita por deficiência da 21-hidroxilase."
+    }
+  ]
+}

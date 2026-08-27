@@ -1,0 +1,376 @@
+{
+  "titulo": "Polifarmácia",
+  "eyebrow": "Geriatria · Farmacologia do Idoso",
+  "subtitulo": "Quatro ou mais fármacos: onde o tratamento vira doença",
+  "intro": "Da definição da OMS às alterações farmacocinéticas e farmacodinâmicas do envelhecimento, passando por cascata iatrogênica, interações, Critérios de Beers, MAI e desprescrição. Inclui o caso clínico de Dona Esmeralda discutido em aula.",
+  "questoes": [
+    {
+      "question": "Segundo a definição da Organização Mundial da Saúde adotada na aula, o que caracteriza polifarmácia?",
+      "options": [
+        "Uso rotineiro e concomitante de quatro ou mais medicamentos, com ou sem prescrição",
+        "Uso rotineiro e concomitante de dez ou mais medicamentos, com ou sem prescrição",
+        "Uso rotineiro e concomitante de dois ou mais medicamentos, com ou sem prescrição",
+        "Uso rotineiro e concomitante de sete ou mais medicamentos, sob prescrição médica"
+      ],
+      "correctIndex": 0,
+      "explanation": "A OMS define polifarmácia como o uso rotineiro e concomitante de quatro ou mais medicamentos por um paciente, incluindo os isentos de prescrição. Fitoterápicos, suplementos e produtos de automedicação entram na conta, por isso o checklist da consulta deve perguntar por todos eles."
+    },
+    {
+      "question": "A aula cita que, em média, quantos medicamentos um idoso toma por dia e do que esse número depende?",
+      "options": [
+        "Cerca de 5 por dia; varia com faixa etária, comorbidades, país e ambiente",
+        "Cerca de 2 por dia; varia com faixa etária, comorbidades, país e ambiente",
+        "Cerca de 5 por dia; é valor fixo, independente do país e do ambiente",
+        "Cerca de 12 por dia; varia apenas com o número de comorbidades do idoso"
+      ],
+      "correctIndex": 0,
+      "explanation": "A média citada é de aproximadamente 5 medicamentos por dia (Moore KL et al., 2018), mas a aula insiste que depende de faixa etária, comorbidades, país e ambiente. Idosos institucionalizados em ILPI nos Estados Unidos chegam a mais de 8 fármacos diários."
+    },
+    {
+      "question": "Conforme os dados apresentados no slide, qual o risco estimado de interação medicamentosa em idosos que usam 5 medicamentos?",
+      "options": [
+        "58%, subindo para 82% quando o uso ultrapassa 6 medicamentos",
+        "13%, subindo para 58% quando o uso ultrapassa 6 medicamentos",
+        "25%, subindo para 40% quando o uso ultrapassa 6 medicamentos",
+        "58%, caindo para 30% quando o uso ultrapassa 6 medicamentos"
+      ],
+      "correctIndex": 0,
+      "explanation": "O slide (Engler SS et al., 2003) estima risco de interação medicamentosa de 13% com 2 fármacos, 58% com 5 fármacos e 82% quando o uso é superior a 6. O crescimento não é linear: cada fármaco acrescentado multiplica os pares possíveis de interação.",
+      "image": "pg19",
+      "imageCaption": "Interações entre medicamentos e risco por número de fármacos"
+    },
+    {
+      "question": "Idoso em uso de AINE desenvolve epigastralgia e recebe omeprazol; meses depois surge constipação e recebe laxante. Como se chama esse fenômeno?",
+      "options": [
+        "Cascata iatrogênica: o efeito adverso vira nova prescrição",
+        "Polifarmácia inadvertida: acúmulo por falta de revisão",
+        "Imprecisão diagnóstica: sintoma mascarado por fármacos",
+        "Reação adversa tipo B: resposta idiossincrásica ao fármaco"
+      ],
+      "correctIndex": 0,
+      "explanation": "Cascata iatrogênica é quando o efeito adverso do fármaco A é interpretado como nova doença e tratado com o fármaco B, expondo o paciente a novos riscos. A aula a classifica entre os fatores contribuintes ligados ao sistema de saúde, ao lado da falta de conciliação medicamentosa entre alta hospitalar e reconsulta ambulatorial."
+    },
+    {
+      "question": "Entre os fatores contribuintes para polifarmácia ligados ao próprio paciente, a aula destaca:",
+      "options": [
+        "Multimorbidade, automedicação e fragmentação do cuidado entre especialistas",
+        "Multimorbidade, cascata iatrogênica e falta de conciliação medicamentosa",
+        "Hepatopatia, doença renal crônica e institucionalização em ILPI há anos",
+        "Automedicação, prescrição eletrônica e uso de genéricos de baixo custo"
+      ],
+      "correctIndex": 0,
+      "explanation": "A aula separa os fatores em três blocos. No bloco do paciente estão multimorbidade, automedicação com medicamentos isentos de prescrição e fragmentação do cuidado, com consultas em vários especialistas sem abordagem integrada. Cascata iatrogênica e falta de conciliação pertencem ao bloco do sistema de saúde."
+    },
+    {
+      "question": "Quais condições a aula lista como vulnerabilidade pessoal que amplifica o risco da polifarmácia?",
+      "options": [
+        "Idade acima de 65 anos, doença renal crônica, hepatopatia e residir em ILPI",
+        "Idade acima de 40 anos, doença renal crônica, hepatopatia e residir em ILPI",
+        "Idade acima de 65 anos, obesidade, tabagismo e baixa escolaridade formal",
+        "Idade acima de 65 anos, automedicação, uso de fitoterápicos e de colírios"
+      ],
+      "correctIndex": 0,
+      "explanation": "O bloco de vulnerabilidade pessoal reúne idosos acima de 65 anos, com metabolismo alterado e maior suscetibilidade a interações, além de renais crônicos, hepatopatas e institucionalizados em ILPI. São condições que reduzem a margem de segurança de qualquer prescrição."
+    },
+    {
+      "question": "Como o envelhecimento e o uso crônico de IBP afetam a etapa de ABSORÇÃO dos fármacos?",
+      "options": [
+        "Cai a produção de HCl e o pH gástrico sobe, alterando a dissolução do fármaco",
+        "Sobe a produção de HCl e o pH gástrico cai, acelerando a dissolução do fármaco",
+        "Cai a produção de HCl, mas o pH gástrico e a dissolução seguem inalterados",
+        "Cai a produção de bile e o pH intestinal sobe, sem efeito sobre a dissolução"
+      ],
+      "correctIndex": 0,
+      "explanation": "A dissolução dos fármacos no trato gastrintestinal depende da produção de HCl pela mucosa gástrica, que decresce com a idade, e as enzimas intestinais precisam de pH ideal para manter a estrutura tridimensional. O omeprazol inibe a H+/K+-ATPase e suprime ainda mais a produção de HCl, alterando o pH intestinal."
+    },
+    {
+      "question": "Qual a consequência nutricional clássica do uso crônico de inibidor de bomba de prótons no idoso?",
+      "options": [
+        "Redução da absorção de vitamina B12, cálcio e magnésio",
+        "Redução da absorção de vitamina C, potássio e fósforo",
+        "Aumento da absorção de vitamina B12, cálcio e magnésio",
+        "Redução da absorção de vitamina K, sódio e zinco livre"
+      ],
+      "correctIndex": 0,
+      "explanation": "O uso crônico de IBP interfere na absorção de vitamina B12, cálcio e magnésio, somando-se à queda de absorção já própria do envelhecimento. Por isso indica-se reduzir dose e tempo de uso nessa faixa etária; o omeprazol figura nos Critérios de Beers como fármaco a usar com precaução."
+    },
+    {
+      "question": "A redução do fluxo sanguíneo esplâncnico do idoso altera a absorção oral de quais fármacos?",
+      "options": [
+        "Dos que sofrem primeira passagem hepática, como o propranolol",
+        "Dos que não sofrem primeira passagem hepática, como a digoxina",
+        "Dos que dependem de secreção tubular renal, como a furosemida",
+        "Dos que se ligam fortemente à albumina, como a ceftriaxona"
+      ],
+      "correctIndex": 0,
+      "explanation": "A queda do fluxo esplâncnico com o envelhecimento reduz o efeito de primeira passagem hepática, aumentando a biodisponibilidade de fármacos como o propranolol. O mesmo trecho registra queda de absorção de nutrientes lipossolúveis, as vitaminas A, D, E e K."
+    },
+    {
+      "question": "Como o aumento do tecido adiposo do idoso modifica o comportamento de fármacos lipossolúveis como benzodiazepínicos e propofol?",
+      "options": [
+        "Aumenta o volume de distribuição e prolonga a meia-vida do fármaco",
+        "Reduz o volume de distribuição e encurta a meia-vida do fármaco",
+        "Aumenta o volume de distribuição e encurta a meia-vida do fármaco",
+        "Não altera o volume de distribuição, só a fração livre plasmática"
+      ],
+      "correctIndex": 0,
+      "explanation": "O ganho relativo de gordura corporal amplia o volume de distribuição dos lipossolúveis, que se acumulam no tecido adiposo e têm a meia-vida prolongada. É um dos motivos pelos quais o benzodiazepínico age por mais tempo no idoso e figura entre os medicamentos a evitar."
+    },
+    {
+      "question": "A perda de massa muscular e de água corporal total do idoso afeta principalmente quais fármacos, e com que risco?",
+      "options": [
+        "Hidrossolúveis, como digoxina e atenolol, com risco de intoxicação",
+        "Lipossolúveis, como diazepam e propofol, com risco de intoxicação",
+        "Hidrossolúveis, como digoxina e atenolol, com risco de subdose",
+        "Lipossolúveis, como diazepam e propofol, com risco de subdose"
+      ],
+      "correctIndex": 0,
+      "explanation": "Fármacos hidrossolúveis, como atenolol e digoxina, distribuem-se na água corporal e na musculatura estriada esquelética. Com sarcopenia e desidratação fisiológica o volume de distribuição cai e a concentração sobe, aumentando a suscetibilidade à intoxicação digitálica."
+    },
+    {
+      "question": "A queda da concentração sérica de albumina no idoso repercute na farmacocinética de que modo?",
+      "options": [
+        "Aumenta a fração livre de fármacos como a fenitoína, elevando o risco de intoxicação",
+        "Reduz a fração livre de fármacos como a fenitoína, elevando o risco de falha terapêutica",
+        "Aumenta a fração ligada de fármacos como a fenitoína, reduzindo o risco de intoxicação",
+        "Não altera a fração livre, apenas a velocidade de excreção renal da fenitoína livre"
+      ],
+      "correctIndex": 0,
+      "explanation": "Com menos albumina circulante sobra mais fármaco livre, a fração farmacologicamente ativa, para os que se ligam intensamente a essa proteína: amiodarona, ceftriaxona, furosemida e fenitoína. Daí o risco de intoxicação mesmo com dose habitual e nível sérico total aparentemente adequado."
+    },
+    {
+      "question": "Ao prescrever a um idoso um fármaco reconhecidamente metabolizado e excretado pelo fígado, a recomendação do resumo é:",
+      "options": [
+        "Iniciar com dose 30 a 40% menor que a média do adulto de meia-idade",
+        "Iniciar com dose 30 a 40% maior que a média do adulto de meia-idade",
+        "Iniciar com a mesma dose média do adulto de meia-idade e monitorar",
+        "Iniciar com metade da dose e dobrar o intervalo entre as tomadas"
+      ],
+      "correctIndex": 0,
+      "explanation": "O princípio é start slow, go slow. O fluxo sanguíneo hepático cai progressivamente e o número de hepatócitos diminui, reduzindo a ação enzimática. Recomenda-se iniciar com dose 30 a 40% menor que a do adulto de meia-idade para fármacos de metabolização e excreção hepáticas.",
+      "image": "pg11",
+      "imageCaption": "As quatro etapas farmacocinéticas alteradas no idoso"
+    },
+    {
+      "question": "Qual a magnitude estimada da queda da taxa de filtração glomerular com o envelhecimento?",
+      "options": [
+        "Cerca de 6,3 mL/min/1,73 m² por década, com perda de 31,5% até os 70 anos",
+        "Cerca de 6,3 mL/min/1,73 m² por década, com perda de 10,5% até os 70 anos",
+        "Cerca de 2,1 mL/min/1,73 m² por década, com perda de 31,5% até os 70 anos",
+        "Cerca de 15 mL/min/1,73 m² por década, com perda de 60% até os 70 anos"
+      ],
+      "correctIndex": 0,
+      "explanation": "A TFG cai em média 6,3 mL/min/1,73 m² por década. Partindo de 100 mL/min/1,73 m² aos 20 anos, a perda chega a 31,5% aos 70 anos, cerca de um terço da função renal. Isso obriga ao cálculo periódico da TFG antes de dosar fármacos de excreção renal e potencialmente nefrotóxicos."
+    },
+    {
+      "question": "Idosa sarcopênica de 84 anos tem creatinina sérica de 0,9 mg/dL. Como interpretar esse resultado antes de calcular doses?",
+      "options": [
+        "Pode ser falsamente normal: a sarcopenia reduz a produção de creatinina",
+        "É confiável: a creatinina sérica independe da massa muscular do paciente",
+        "Pode ser falsamente elevada: a sarcopenia eleva a produção de creatinina",
+        "É confiável: acima de 80 anos a creatinina substitui o cálculo da TFG"
+      ],
+      "correctIndex": 0,
+      "explanation": "A associação entre perda de massa muscular, que reduz a produção de creatinina, e glomeruloesclerose, que reduz sua excreção, produz creatinina sérica falsamente normal no idoso. Usar esse valor bruto para dosar fármacos de excreção renal leva a superdosagem; o correto é calcular a TFG periodicamente."
+    },
+    {
+      "question": "O resumo propõe que um octogenário tenha metade dos receptores beta-adrenérgicos de um adulto jovem. Que conduta decorre disso ao iniciar um betabloqueador?",
+      "options": [
+        "Prescrever metade da dose habitual e observar a frequência cardíaca",
+        "Prescrever o dobro da dose habitual e observar a frequência cardíaca",
+        "Prescrever a dose habitual e observar apenas a pressão arterial média",
+        "Prescrever metade da dose habitual e dobrar a frequência das tomadas"
+      ],
+      "correctIndex": 0,
+      "explanation": "Com menos receptores disponíveis a mesma dose gera resposta desproporcional; trata-se de alteração farmacodinâmica, não farmacocinética. Inicia-se com metade da dose e monitora-se a FC: chegar à bradicardia significa que se atingiu o máximo da capacidade dos receptores beta-adrenérgicos de interagir com o fármaco."
+    },
+    {
+      "question": "Os Critérios de Beers, atualizados pela American Geriatrics Society em 2023, organizam-se em quantas listas e com que finalidade?",
+      "options": [
+        "Cinco listas de medicamentos potencialmente inapropriados para idosos",
+        "Cinco listas de medicamentos de primeira escolha para uso em idosos",
+        "Três listas de medicamentos potencialmente inapropriados para idosos",
+        "Oito listas de critérios para julgar a adequação de cada prescrição"
+      ],
+      "correctIndex": 0,
+      "explanation": "Os Critérios de Beers (AGS, 2023) listam medicamentos potencialmente inapropriados em cinco grupos: inapropriados em geral (amitriptilina); inapropriados diante de certas doenças (varfarina com AINE); os que exigem ajuste renal (vancomicina); os evitados em síndromes geriátricas (benzodiazepínicos); e os de uso com precaução (IBP). As oito perguntas de adequação pertencem ao MAI."
+    },
+    {
+      "question": "Segundo a tabela de Beers exibida no slide, quais classes reúnem os principais anticolinérgicos a evitar no idoso?",
+      "options": [
+        "Anti-histamínicos de 1ª geração, antiparkinsonianos e antiespasmódicos",
+        "Anti-histamínicos de 2ª geração, antiarrítmicos e broncodilatadores",
+        "Anti-histamínicos de 1ª geração, antiagregantes e anticoagulantes",
+        "Antipsicóticos atípicos, antiparkinsonianos e inibidores da bomba"
+      ],
+      "correctIndex": 0,
+      "explanation": "O slide agrupa difenidramina, doxilamina, hidroxizina e prometazina entre os anti-histamínicos de 1ª geração; benztropina e triexifenidil entre os antiparkinsonianos; atropina, diciclomina, hiosciamina e escopolamina entre os antiespasmódicos. A recomendação é evitar em idosos, pelo mnemônico louco, quente, vermelho, seco e cego, somado a não enxergar, não urinar, não salivar e não evacuar.",
+      "image": "pg27",
+      "imageCaption": "Beers 2023: anticolinérgicos potencialmente inapropriados"
+    },
+    {
+      "question": "Idoso em uso de diazepam ingere álcool. Qual o mecanismo e o desfecho esperados?",
+      "options": [
+        "Álcool inibe a CYP2C19, reduz o clearance e intensifica a sedação",
+        "Álcool induz a CYP2C19, aumenta o clearance e reduz a sedação",
+        "Álcool inibe a CYP2E1, reduz a absorção e encurta a meia-vida",
+        "Álcool induz a CYP3A4, reduz o nível sérico e abole a sedação"
+      ],
+      "correctIndex": 0,
+      "explanation": "O álcool inibe a metabolização hepática do diazepam pela CYP2C19, reduzindo o clareamento e elevando a concentração do fármaco no organismo. O resultado é sedação intensificada, sonolência excessiva, confusão, risco de depressão respiratória e de quedas ou acidentes."
+    },
+    {
+      "question": "Qual o efeito do uso CRÔNICO de álcool sobre a varfarina, e qual a consequência clínica?",
+      "options": [
+        "Induz a CYP2E1, acelera o metabolismo e eleva o risco de trombose",
+        "Inibe a CYP2E1, retarda o metabolismo e eleva o risco de trombose",
+        "Induz a CYP2E1, acelera o metabolismo e eleva o risco de hemorragia",
+        "Inibe a CYP2C19, retarda o metabolismo e reduz o risco de trombose"
+      ],
+      "correctIndex": 0,
+      "explanation": "O uso crônico de álcool induz enzimas hepáticas, sobretudo a CYP2E1, acelerando o metabolismo da varfarina; a concentração plasmática cai e a anticoagulação perde eficácia, elevando o risco de trombose e AVC. Atenção à pegadinha: no uso agudo o efeito pode ser inverso, com inibição do metabolismo."
+    },
+    {
+      "question": "De acordo com o slide sobre alimentos e bebidas que interferem em medicações, qual afirmação é correta?",
+      "options": [
+        "Frutas cítricas aumentam exageradamente a quantidade absorvida do fármaco",
+        "Frutas cítricas reduzem drasticamente a quantidade absorvida do fármaco",
+        "A cafeína aumenta a quantidade absorvida da maioria dos medicamentos",
+        "O alcaçuz interfere somente na absorção de anticoagulantes orais"
+      ],
+      "correctIndex": 0,
+      "explanation": "O slide indica que frutas cítricas aumentam exageradamente a absorção do fármaco, bebidas alcoólicas retardam ou aceleram o metabolismo, o alcaçuz interfere em diversos fármacos, alimentos ricos em tiramina interagem perigosamente com IMAO e antidepressivos, e a cafeína reduz a absorção de muitos medicamentos.",
+      "image": "pg21",
+      "imageCaption": "Alimentos e bebidas que interferem no efeito dos fármacos"
+    },
+    {
+      "question": "O infográfico de curiosidades relaciona classes de fármacos a perdas nutricionais. Qual par está correto?",
+      "options": [
+        "Antiácidos alteram a absorção de ferro, cálcio e vitamina B12",
+        "Antiácidos alteram a absorção de sódio, potássio e vitamina C",
+        "Antibióticos devem ser tomados junto com leite e derivados",
+        "Antiulcerosos aumentam a reserva de ferro e de vitamina B12"
+      ],
+      "correctIndex": 0,
+      "explanation": "O infográfico aponta que antiácidos alteram a absorção de ferro, cálcio e vitamina B12, e que antiulcerosos podem causar perda de nutrientes essenciais como vitamina B12 e ferro. Antibióticos devem ser evitados com leite e derivados, que impedem sua absorção.",
+      "image": "pg24",
+      "imageCaption": "Fármacos que alteram a absorção de nutrientes dos alimentos"
+    },
+    {
+      "question": "Segundo a tabela RAM: quando suspeitar?, qual característica define o efeito de REEXPOSIÇÃO ao medicamento suspeito?",
+      "options": [
+        "Reaparecimento do efeito nocivo quando o fármaco é reintroduzido",
+        "Melhora do efeito nocivo quando o fármaco suspeito é suspenso",
+        "Agravamento do efeito nocivo quando a dose é progressivamente elevada",
+        "Existência de outras explicações etiológicas, como doenças e fármacos"
+      ],
+      "correctIndex": 0,
+      "explanation": "Na tabela, o efeito de reexposição é o reaparecimento do efeito nocivo ao reintroduzir o fármaco. A melhora com a retirada é o efeito de retirada; a piora com o aumento da dose é a dose-dependência; e outras explicações etiológicas configuram o item causas alternativas.",
+      "image": "pg18",
+      "imageCaption": "Critérios para suspeitar de reação adversa a medicamento"
+    },
+    {
+      "question": "Idosa inicia oxibutinina e, duas semanas depois, apresenta confusão mental e incontinência funcional. Como a aula orienta interpretar esse quadro?",
+      "options": [
+        "Como possível RAM: no idoso ela se apresenta como síndrome geriátrica",
+        "Como doença nova: no idoso a RAM não se apresenta com sintomas assim",
+        "Como falha de adesão: no idoso o esquecimento explica esses sintomas",
+        "Como demência incipiente: a RAM raramente afeta a cognição do idoso"
+      ],
+      "correctIndex": 0,
+      "explanation": "Em geriatria muitas reações adversas se manifestam como síndromes geriátricas ou sintomas inespecíficos: confusão mental, incontinência urinária, fraqueza excessiva, alterações do sono, quedas e déficit cognitivo. A associação temporal com a introdução do fármaco é o principal gatilho de suspeita."
+    },
+    {
+      "question": "O Medication Appropriateness Index (MAI) julga cada medicamento prescrito a partir de quais domínios?",
+      "options": [
+        "Indicação, eficácia, dose, instruções, interações, duração, custo e redundância",
+        "Indicação, eficácia, dose, instruções, interações, duração, custo e via de uso",
+        "Indicação, adesão, dose, instruções, alergia, duração, custo e redundância",
+        "Indicação, eficácia, dose, receita, interações, marca, custo e redundância"
+      ],
+      "correctIndex": 0,
+      "explanation": "O MAI reúne oito critérios para julgar cada prescrição com foco em segurança, eficácia e necessidade: indicação correta, eficácia, dosagem apropriada, direções adequadas, interações, duração, custo e redundância. É a ferramenta citada na aula para avaliação frequente da lista de medicamentos."
+    },
+    {
+      "question": "No ciclo de desprescrição exibido no slide, em qual etapa se identificam os medicamentos a desprescrever e se prioriza a ordem de descontinuação?",
+      "options": [
+        "Act, depois de Review e Analyze e antes de Adjust e Monitor",
+        "Review, antes de Analyze e de Act e logo depois de Monitor",
+        "Monitor, depois de Adjust e antes de reiniciar em Review",
+        "Analyze, depois de Review e antes de Act e depois Adjust"
+      ],
+      "correctIndex": 0,
+      "explanation": "O ciclo é Review, Analyze, Act, Adjust e Monitor. Em Review levantam-se todas as medicações, o status do paciente e a história de RAM; em Analyze mapeiam-se polifarmácia, PIM, interações e RAM; em Act identificam-se os fármacos a desprescrever, definem-se metas e prioriza-se a ordem de descontinuação; Adjust incorpora crenças e preferências; Monitor acompanha resposta e retorno de sintomas.",
+      "image": "pg29",
+      "imageCaption": "Ciclo da desprescrição: Review, Analyze, Act, Adjust, Monitor"
+    },
+    {
+      "question": "Dona Esmeralda, 88 anos, usa losartana, anlodipino, hidroclorotiazida, paracetamol, amitriptilina, bromazepam e omeprazol. Há duas semanas está sonolenta e confusa e sofreu duas quedas; PA deitada 130/90 e em pé 120/70 mmHg, FC 55 bpm, marcha instável, MEEM 22/30 e exames laboratoriais normais. Qual a conduta inicial mais indicada?",
+      "options": [
+        "Revisar a lista de medicações, priorizando desprescrição e interações",
+        "Solicitar tomografia de crânio e interconsulta com a neurologia",
+        "Intensificar o anti-hipertensivo e iniciar suplementação de cálcio",
+        "Associar psicoestimulante diurno e antidepressivo mais potente"
+      ],
+      "correctIndex": 0,
+      "explanation": "O quadro é de iatrogenia medicamentosa: sonolência, confusão, hipotensão postural, bradicardia e quedas em paciente polimedicada com dois PIM, amitriptilina e bromazepam. A associação temporal e medicamentosa justifica a revisão minuciosa da lista com vistas à desprescrição como primeira linha, antes de exames de imagem ou de novos fármacos."
+    },
+    {
+      "question": "Ainda no caso de Dona Esmeralda, quais dos seus medicamentos são apontados como PIM segundo os Critérios de Beers?",
+      "options": [
+        "Amitriptilina e bromazepam, com omeprazol a usar com precaução",
+        "Losartana e anlodipino, com paracetamol a usar com precaução",
+        "Hidroclorotiazida e paracetamol, com losartana usada com cautela",
+        "Anlodipino e omeprazol, com bromazepam a usar apenas com cautela"
+      ],
+      "correctIndex": 0,
+      "explanation": "A amitriptilina é PIM pelos efeitos anticolinérgicos (confusão, sedação, tontura, agravamento da hipotensão postural) e o bromazepam é PIM pelo risco de sedação, confusão e quedas, potencializados quando associados. O omeprazol entra na lista de uso com precaução pelo risco do uso prolongado, como a redução da absorção de vitamina B12."
+    },
+    {
+      "question": "Segundo o slide Adaptações possíveis, por que o idoso costuma precisar de doses menores e de intervalos estendidos?",
+      "options": [
+        "A depuração renal e hepática reduzida amplia a exposição ao fármaco",
+        "A depuração renal e hepática aumentada reduz a exposição ao fármaco",
+        "A absorção intestinal acelerada eleva o pico plasmático do fármaco",
+        "A ligação proteica aumentada prolonga o efeito terapêutico do fármaco"
+      ],
+      "correctIndex": 0,
+      "explanation": "O slide aponta que a redução da depuração renal e hepática resulta em maior exposição aos medicamentos e maior risco de efeitos colaterais, justificando doses menores para alcançar os mesmos efeitos terapêuticos. O intervalo entre doses pode ser estendido para dar tempo de eliminação e evitar acúmulo em níveis tóxicos.",
+      "image": "pg34",
+      "imageCaption": "Adaptações de posologia: redução de dose e intervalo estendido"
+    },
+    {
+      "question": "Idoso de 82 anos com DM2 e TFG de 25 mL/min/1,73 m² está em uso de metformina. Qual a conduta e o motivo?",
+      "options": [
+        "Ajustar ou substituir o fármaco, pelo risco de acidose láctica",
+        "Manter a metformina e apenas apertar o controle glicêmico",
+        "Ajustar ou substituir o fármaco, pelo risco de hipoglicemia",
+        "Aumentar a dose do fármaco, pela menor absorção intestinal"
+      ],
+      "correctIndex": 0,
+      "explanation": "A metformina não deve ser usada com TFG abaixo de 30 mL/min/1,73 m² pelo risco de acidose láctica; é o exemplo citado tanto nos Critérios de Beers, no item de ajuste em doenças específicas, quanto na etapa Ajustar da desprescrição. A aula também lembra de evitar controle glicêmico rígido em idoso com alto risco de hipoglicemia."
+    },
+    {
+      "question": "Idoso de 89 anos em cuidados paliativos, com expectativa de vida inferior a dois anos, usa sinvastatina em prevenção primária. Qual a conduta apoiada pelo resumo?",
+      "options": [
+        "Suspender a estatina: o benefício não se realiza nesse horizonte",
+        "Manter a estatina: o benefício aparece já nas primeiras semanas",
+        "Dobrar a estatina: o risco cardiovascular cresce muito com a idade",
+        "Trocar a estatina por AAS: o benefício desse é bem mais imediato"
+      ],
+      "correctIndex": 0,
+      "explanation": "O resumo é explícito: com expectativa de vida menor que dois anos, em cuidados terminais ou paliativos, a estatina não é necessária porque o benefício preventivo não se materializa nesse horizonte. Pelo mesmo raciocínio não se faz mamografia com expectativa inferior a dez anos, nem rastreio por PSA."
+    },
+    {
+      "question": "Qual estratégia a aula recomenda para melhorar a adesão terapêutica do idoso polimedicado?",
+      "options": [
+        "Simplificar o esquema, com o menor número possível de doses diárias",
+        "Fracionar o esquema, com o maior número possível de doses diárias",
+        "Delegar integralmente o controle das doses ao cuidador familiar",
+        "Substituir a receita escrita por orientação exclusivamente verbal"
+      ],
+      "correctIndex": 0,
+      "explanation": "A complexidade do esquema e a necessidade de seguir múltiplas doses diárias produzem erros de administração e esquecimentos, comprometendo a eficácia. A aula orienta montar o melhor esquema possível com o menor número de doses por dia, explicar quais remédios podem ser tomados juntos e escrever a receita de forma clara para o idoso não se confundir."
+    }
+  ]
+}

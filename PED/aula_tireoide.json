@@ -1,0 +1,394 @@
+{
+  "titulo": "Distúrbios da Tireoide",
+  "eyebrow": "Pediatria · Endocrinologia",
+  "subtitulo": "Do eixo hipotálamo-hipófise-tireoide ao teste do pezinho e à doença de Graves",
+  "intro": "Material da Aula 4 de Pediatria: fisiologia do eixo HHT e da síntese de T3/T4, ações teciduais dos hormônios tireoideanos, hipotireoidismo congênito e adquirido, triagem neonatal, interpretação de TSH e T4 livre, doença de Graves e calcitonina. Inclui as doses de levotiroxina, metimazol, PTU e propranolol cobradas em prova.",
+  "questoes": [
+    {
+      "question": "Na fisiologia do eixo hipotálamo-hipófise-tireoide, qual é a sequência correta de estímulos?",
+      "options": [
+        "TRH hipotalâmico estimula o TSH hipofisário, que estimula T3 e T4",
+        "TSH hipotalâmico estimula o TRH hipofisário, que estimula T3 e T4",
+        "TRH hipofisário estimula o TSH hipotalâmico, que inibe T3 e T4",
+        "TSH hipofisário estimula o TRH tireoidiano, que estimula T3 e T4",
+        "TRH tireoidiano estimula o TSH hipotalâmico, que libera T3 e T4"
+      ],
+      "correctIndex": 0,
+      "explanation": "O hipotálamo secreta TRH, que estimula a adeno-hipófise a secretar TSH; o TSH estimula a tireoide a produzir T3 e T4. É uma cascata de cima para baixo, e T3/T4 retroalimentam negativamente hipófise e hipotálamo."
+    },
+    {
+      "question": "Sobre o controle do eixo tireoidiano, o que o feedback negativo exercido por T3 e T4 faz?",
+      "options": [
+        "Reduz a secreção de TRH pelo hipotálamo e de TSH pela hipófise",
+        "Aumenta a secreção de TRH pelo hipotálamo e de TSH pela hipófise",
+        "Reduz a secreção de TSH pela hipófise e aumenta a de TRH central",
+        "Eleva a captação de iodo pela tireoide e a síntese hepática de TBG",
+        "Reduz a conversão periférica de T4 em T3 pelas desiodases D1 e D2"
+      ],
+      "correctIndex": 0,
+      "explanation": "As frações livres de T3 e T4 inibem tanto o hipotálamo quanto a hipófise, fechando a alça de retroalimentação negativa. É esse mecanismo que explica o TSH alto no hipotireoidismo primário e o TSH suprimido na doença de Graves."
+    },
+    {
+      "question": "Quais células da tireoide produzem, respectivamente, T3/T4 e calcitonina?",
+      "options": [
+        "Células foliculares dos ácinos e células C parafoliculares",
+        "Células C parafoliculares e células foliculares dos ácinos",
+        "Células foliculares dos ácinos e células do colóide folicular",
+        "Células C parafoliculares e células endoteliais dos capilares",
+        "Células do colóide folicular e células C parafoliculares"
+      ],
+      "correctIndex": 0,
+      "explanation": "As células foliculares que revestem os ácinos sintetizam T3 e T4 e armazenam tireoglobulina iodada no colóide. As células C (parafoliculares), situadas entre os folículos, secretam calcitonina."
+    },
+    {
+      "question": "Observando o esquema de síntese hormonal, o iodeto entra na célula folicular por qual via?",
+      "options": [
+        "Simporte Na+/I− (NIS), que traz o iodeto do sangue para a célula",
+        "Pendrina, que traz o iodeto do sangue para dentro da célula",
+        "Tireoperoxidase, que traz o iodeto do colóide para a célula",
+        "Desiodase D2, que traz o iodeto do colóide de volta ao sangue",
+        "Endocitose de tireoglobulina, que traz o iodeto do colóide"
+      ],
+      "correctIndex": 0,
+      "explanation": "O simporte sódio-iodeto (NIS) capta ativamente o I− do sangue para dentro do tireócito e é estimulado pelo TSH. A pendrina atua depois, transportando o iodeto da célula para o colóide, onde a TPO faz oxidação e organificação.",
+      "image": "pg12",
+      "imageCaption": "Produção dos hormônios tireoideanos — etapas 1 a 6"
+    },
+    {
+      "question": "No acoplamento das iodotirosinas dentro do colóide, como se formam T3 e T4?",
+      "options": [
+        "T3 vem de MIT + DIT e T4 vem de DIT + DIT",
+        "T3 vem de DIT + DIT e T4 vem de MIT + DIT",
+        "T3 vem de MIT + MIT e T4 vem de MIT + DIT",
+        "T3 vem de DIT + DIT e T4 vem de MIT + MIT",
+        "T3 vem de MIT + MIT e T4 vem de DIT + DIT"
+      ],
+      "correctIndex": 0,
+      "explanation": "A tiroxina (T4) tem 2 tirosinas e 4 iodos, resultando do acoplamento DIT + DIT. A tri-iodotironina (T3) tem 2 tirosinas e 3 iodos, resultando de MIT + DIT. Guardar pelo número de iodos evita a troca."
+    },
+    {
+      "question": "Qual afirmação sobre a secreção tireoidiana e a conversão periférica está correta?",
+      "options": [
+        "T4 é o principal produto secretado e o T3 ativo vem da conversão",
+        "T3 é o principal produto secretado e o T4 ativo vem da conversão",
+        "T4 é o principal produto secretado e é a forma mais ativa nos tecidos",
+        "T3 é o principal produto secretado e é a forma menos ativa nos tecidos",
+        "T4 e T3 saem da glândula em doses iguais e têm a mesma potência"
+      ],
+      "correctIndex": 0,
+      "explanation": "A tireoide libera predominantemente T4 (liberação T4 > T3), mas o T3 é a forma biologicamente mais ativa, com 3 a 5 vezes mais atividade. A maior parte do T3 circulante vem da conversão periférica de T4 pelas desiodases D1 e D2."
+    },
+    {
+      "question": "Segundo a tabela de funções de T3 e T4, qual é o efeito sobre o metabolismo de lipídeos?",
+      "options": [
+        "Estímulo à lipólise, reduzindo colesterol e triglicérides circulantes",
+        "Estímulo à lipogênese, elevando colesterol e triglicérides circulantes",
+        "Bloqueio da lipólise, reduzindo colesterol e triglicérides circulantes",
+        "Estímulo à lipólise, elevando colesterol e triglicérides circulantes",
+        "Bloqueio da lipogênese, sem alterar colesterol e triglicérides séricos"
+      ],
+      "correctIndex": 0,
+      "explanation": "A tabela do slide traz: metabolismo de lipídeos aumenta por meio do estímulo à lipólise, reduzindo os níveis de colesterol e triglicérides circulantes. Por isso o hipotireoidismo cursa com dislipidemia e associação com aterosclerose.",
+      "image": "pg16",
+      "imageCaption": "Função de T3 e T4 nos sistemas do corpo humano"
+    },
+    {
+      "question": "Qual é a janela crítica em que o hormônio tireoidiano é indispensável ao cérebro?",
+      "options": [
+        "Do final da gestação até os 2 anos de idade",
+        "Do início da gestação até o 1º trimestre",
+        "Dos 2 aos 6 anos, na fase pré-escolar",
+        "Do nascimento até o final do 1º mês",
+        "Da puberdade até o fim da adolescência"
+      ],
+      "correctIndex": 0,
+      "explanation": "O hormônio tireoidiano é fundamental para o desenvolvimento cerebral do final da gestação até os 2 anos de idade, atuando na proliferação de axônios e dendritos, na formação de sinapses, na gliogênese e na mielinização."
+    },
+    {
+      "question": "Por que o diagnóstico precoce do hipotireoidismo congênito é imperativo?",
+      "options": [
+        "A lesão cerebral já instalada não é corrigida pela reposição hormonal",
+        "A reposição hormonal corrige a lesão cerebral em qualquer faixa etária",
+        "A lesão cerebral só aparece se o tratamento demorar mais de cinco anos",
+        "A reposição hormonal precoce evita o bócio, mas não o atraso motor",
+        "A lesão cerebral é revertida se a reposição começar antes dos dez anos"
+      ],
+      "correctIndex": 0,
+      "explanation": "O hipotireoidismo causa perda do desenvolvimento estrutural e da organização cerebral, e o tratamento de reposição não corrige a lesão já estabelecida. Daí a importância da triagem neonatal (teste do pezinho) para tratar antes do dano."
+    },
+    {
+      "question": "Qual achado NÃO faz parte do quadro clínico clássico do hipotireoidismo congênito?",
+      "options": [
+        "Taquicardia persistente com diarreia e perda de peso acelerada",
+        "Icterícia prolongada com letargia e dificuldade alimentar",
+        "Fontanela ampla com macroglossia e choro rouco e grave",
+        "Constipação intestinal com hipotermia e bradicardia",
+        "Hérnia umbilical com distensão abdominal e pele seca"
+      ],
+      "correctIndex": 0,
+      "explanation": "O hipotireoidismo congênito é hipometabólico: bradicardia, hipotermia, constipação e letargia. Taquicardia, diarreia e perda de peso são o oposto, típicos de tireotoxicose. Atenção: o recém-nascido pode ainda ser assintomático, o que justifica a triagem."
+    },
+    {
+      "question": "Recém-nascido com icterícia prolongada e fontanelas amplas. Qual a conduta correta?",
+      "options": [
+        "Solicitar TSH e T4 livre séricos já, sem aguardar o teste do pezinho",
+        "Aguardar o resultado do teste do pezinho antes de qualquer exame",
+        "Solicitar apenas anti-TPO e antitireoglobulina séricos de imediato",
+        "Iniciar levotiroxina empírica e reavaliar somente após seis meses",
+        "Repetir o teste do pezinho em 30 dias e apenas observar a evolução"
+      ],
+      "correctIndex": 0,
+      "explanation": "O teste do pezinho é exame de triagem, não de confirmação. Diante de sintomas clássicos de hipotireoidismo congênito não se perde tempo: pedem-se TSH e T4 livre séricos imediatamente, porque o atraso no tratamento custa desenvolvimento cerebral."
+    },
+    {
+      "question": "Qual é a causa mais comum de hipotireoidismo adquirido e qual o seu mecanismo?",
+      "options": [
+        "Tireoidite de Hashimoto, com destruição autoimune gradual da glândula",
+        "Tireoidite de Hashimoto, com bloqueio autoimune da hipófise anterior",
+        "Disgenesia tireoidiana, com destruição autoimune gradual da glândula",
+        "Doença de Graves, com destruição autoimune gradual da glândula",
+        "Deficiência de TRH, com atrofia lenta e progressiva da glândula"
+      ],
+      "correctIndex": 0,
+      "explanation": "A tireoidite linfocítica crônica (Hashimoto) é doença autoimune e a causa mais comum de hipotireoidismo adquirido. Autoanticorpos anti-tireoperoxidase e antitireoglobulina causam inflamação e destruição gradual da glândula. A disgenesia é a causa congênita."
+    },
+    {
+      "question": "Quais autoanticorpos correspondem, respectivamente, à tireoidite de Hashimoto e à doença de Graves?",
+      "options": [
+        "Anti-TPO e antitireoglobulina; TRAb, antirreceptor de TSH",
+        "TRAb, antirreceptor de TSH; anti-TPO e antitireoglobulina",
+        "Anti-TPO e antirreceptor de TSH; antitireoglobulina isolada",
+        "Antitireoglobulina e TRAb; anti-TPO e anticalcitonina",
+        "Anticalcitonina e anti-TPO; antitireoglobulina e TRAb"
+      ],
+      "correctIndex": 0,
+      "explanation": "O slide de ATENÇÃO é explícito: Hashimoto se investiga com antitireoglobulina e antiperoxidase (anti-TPO); Graves, com o TRAb (thyrotropin receptor antibody). Trocar os dois é o erro mais cobrado nessa aula."
+    },
+    {
+      "question": "No fluxograma diagnóstico, T4 livre normal com TSH elevado define qual quadro?",
+      "options": [
+        "Hipotireoidismo subclínico, com o TSH ainda compensando",
+        "Hipotireoidismo primário, com falência franca da glândula",
+        "Hipotireoidismo central, por deficiência de TSH ou de TRH",
+        "Paciente eutireoideo, sem qualquer disfunção tireoidiana",
+        "Hipertireoidismo primário, com TSH suprimido pelo feedback"
+      ],
+      "correctIndex": 0,
+      "explanation": "No fluxograma: T4L e TSH normais = eutireoideo; T4L normal com TSH alto = hipotireoidismo subclínico; T4L baixo ou normal com TSH aumentado = hipotireoidismo primário; T4L e TSH baixos ou normais = hipotireoidismo secundário ou terciário.",
+      "image": "pg30",
+      "imageCaption": "Fluxograma do diagnóstico laboratorial do hipotireoidismo"
+    },
+    {
+      "question": "Pelo mesmo fluxograma, T4 livre baixo acompanhado de TSH baixo ou normal indica o quê?",
+      "options": [
+        "Hipotireoidismo secundário ou terciário, de origem central",
+        "Hipotireoidismo primário, por falência da própria tireoide",
+        "Hipotireoidismo subclínico, ainda sem repercussão clínica",
+        "Paciente eutireoideo, com variação laboratorial transitória",
+        "Tireoidite de Hashimoto, em fase inicial de destruição"
+      ],
+      "correctIndex": 0,
+      "explanation": "Se a tireoide está hipofuncionante mas o TSH não sobe, o defeito está acima dela: deficiência de TSH (secundário, hipofisário) ou de TRH (terciário, hipotalâmico). É a forma rara de hipotireoidismo, dita central."
+    },
+    {
+      "question": "Qual é a dose e o modo de administração da levotiroxina no hipotireoidismo?",
+      "options": [
+        "10-15 mcg/kg/dia VO, 1x/dia, em jejum 30-60 min antes do café",
+        "10-15 mcg/kg/dia VO, 3x/dia, junto com o café da manhã",
+        "1-2 mcg/kg/dia VO, 1x/dia, em jejum 30-60 min antes do café",
+        "10-15 mg/kg/dia VO, 1x/dia, logo depois do café da manhã",
+        "100 mcg/kg/dia VO, 1x/dia, em jejum 30-60 min antes do café"
+      ],
+      "correctIndex": 0,
+      "explanation": "A reposição é feita com levotiroxina 10-15 mcg/kg/dia (ou 100 mcg/m²/dia), por via oral, uma vez ao dia, em jejum de 30 a 60 minutos antes do café. A absorção cai se o comprimido for tomado junto com alimentos."
+    },
+    {
+      "question": "Como se monitora a reposição com levotiroxina no hipotireoidismo primário?",
+      "options": [
+        "Dosando TSH e T4 livre, buscando normalizar níveis e clínica",
+        "Dosando apenas T3 total, buscando valores no limite superior",
+        "Dosando anti-TPO seriado, buscando negativar os anticorpos",
+        "Dosando apenas o TSH, buscando mantê-lo acima do valor normal",
+        "Dosando tireoglobulina, buscando reduzir o volume da glândula"
+      ],
+      "correctIndex": 0,
+      "explanation": "A monitorização é feita com TSH e T4 livre, tendo como alvo a normalização dos níveis somada à melhora clínica. Os anticorpos servem ao diagnóstico etiológico, não ao ajuste da dose no seguimento."
+    },
+    {
+      "question": "Na figura da doença de Graves, qual é o mecanismo fisiopatológico representado?",
+      "options": [
+        "Anticorpos estimulam o receptor de TSH e suprimem o TSH hipofisário",
+        "Anticorpos bloqueiam o receptor de TSH e elevam o TSH hipofisário",
+        "Anticorpos destroem a célula folicular e elevam o TSH hipofisário",
+        "A hipófise secreta TSH em excesso e estimula o receptor tireoidiano",
+        "O hipotálamo secreta TRH em excesso e suprime o TSH hipofisário"
+      ],
+      "correctIndex": 0,
+      "explanation": "Células B autoimunes produzem anticorpos estimulantes contra o receptor de TSH (TRAb), gerando estímulo permanente do receptor e produção contínua de hormônio tireoideano. O excesso de T3/T4 suprime o TSH pelo feedback negativo.",
+      "image": "pg33",
+      "imageCaption": "Eixo normal versus doença de Graves"
+    },
+    {
+      "question": "Quais são as drogas antitireoidianas e suas doses no tratamento do hipertireoidismo?",
+      "options": [
+        "Metimazol 0,5-1 mg/kg/dia ou propiltiouracil 5-10 mg/kg/dia",
+        "Metimazol 5-10 mg/kg/dia ou propiltiouracil 0,5-1 mg/kg/dia",
+        "Metimazol 10-15 mcg/kg/dia ou propiltiouracil 2 mg/kg/dia",
+        "Propranolol 0,5-1 mg/kg/dia ou levotiroxina 5-10 mg/kg/dia",
+        "Metimazol 2 mg/kg/dia ou propiltiouracil 10-15 mcg/kg/dia"
+      ],
+      "correctIndex": 0,
+      "explanation": "O slide de tratamento traz metimazol 0,5 a 1 mg/kg/dia ou propiltiouracil (PTU) 5 a 10 mg/kg/dia. Compõem ainda o arsenal terapêutico o betabloqueador propranolol, a iodoterapia e a cirurgia."
+    },
+    {
+      "question": "Qual é o papel do propranolol 2 mg/kg/dia no tratamento do hipertireoidismo?",
+      "options": [
+        "Antagonizar os efeitos beta-adrenérgicos da tireotoxicose",
+        "Bloquear a tireoperoxidase e a organificação do iodeto",
+        "Bloquear a captação de iodeto pelo transportador NIS",
+        "Repor o hormônio que falta após a tireoidectomia total",
+        "Estimular a excreção renal do excesso de T3 e T4 livres"
+      ],
+      "correctIndex": 0,
+      "explanation": "O propranolol é antagonista beta-adrenérgico usado a 2 mg/kg/dia para controlar taquicardia, tremor e agitação enquanto as tionamidas ainda não fizeram efeito. Não interfere na síntese hormonal."
+    },
+    {
+      "question": "Segundo o esquema dos sítios de ação, onde metimazol e PTU atuam na síntese hormonal?",
+      "options": [
+        "Inibem a TPO, bloqueando organificação e acoplamento",
+        "Inibem o NIS, bloqueando a captação de iodeto pela célula",
+        "Inibem a endocitose do colóide, bloqueando a liberação",
+        "Inibem a tireoglobulina, bloqueando o estoque no colóide",
+        "Inibem a pendrina, bloqueando a ida de iodeto ao colóide"
+      ],
+      "correctIndex": 0,
+      "explanation": "Metimazol e propiltiouracil inibem a tireoperoxidase (TPO), enzima responsável pela oxidação e organificação do iodeto e pelo acoplamento MIT/DIT. Sem TPO não se formam T3 nem T4 novos.",
+      "image": "pg37",
+      "imageCaption": "Etapas da síntese de T3/T4 e onde os tratamentos atuam"
+    },
+    {
+      "question": "Qual vantagem o PTU tem sobre o metimazol quanto ao seu mecanismo de ação?",
+      "options": [
+        "Reduz também a conversão periférica de T4 em T3, dose-dependente",
+        "Reduz também a captação de iodeto pelo NIS, de modo dose-dependente",
+        "Reduz também a secreção hipofisária de TSH, de modo dose-dependente",
+        "Eleva também a excreção renal de T4 e de T3, de modo dose-dependente",
+        "Bloqueia também o receptor beta-adrenérgico cardíaco na periferia"
+      ],
+      "correctIndex": 0,
+      "explanation": "Além de inibir a TPO como o metimazol, o PTU reduz a conversão periférica de T4 em T3 pelas desiodases, efeito dose-dependente. Isso o torna útil quando se quer queda rápida do T3 ativo."
+    },
+    {
+      "question": "O que ocorre quando se administra iodo em altas doses sobre a função tireoidiana?",
+      "options": [
+        "Efeito Wolff-Chaikoff, com bloqueio transitório da liberação",
+        "Efeito Wolff-Chaikoff, com aumento sustentado da liberação",
+        "Efeito Jod-Basedow, com bloqueio definitivo da organificação",
+        "Efeito Wolff-Chaikoff, com destruição autoimune do folículo",
+        "Efeito de escape, com aumento permanente da captação de iodo"
+      ],
+      "correctIndex": 0,
+      "explanation": "O iodo em alta dose produz o efeito Wolff-Chaikoff: inibição da própria organificação somada a bloqueio da liberação hormonal. O efeito é de curto prazo, o que restringe o iodo a situações agudas e não à manutenção."
+    },
+    {
+      "question": "Quais são as ações fisiológicas da calcitonina sobre o osso e sobre o rim?",
+      "options": [
+        "Inibe osteoclastos e reduz a reabsorção tubular de cálcio e fósforo",
+        "Ativa osteoclastos e aumenta a reabsorção tubular de cálcio e fósforo",
+        "Inibe osteoblastos e aumenta a reabsorção tubular de cálcio e fósforo",
+        "Ativa osteoclastos e reduz a reabsorção tubular de cálcio e fósforo",
+        "Inibe osteoclastos e eleva a reabsorção tubular de cálcio e fósforo"
+      ],
+      "correctIndex": 0,
+      "explanation": "A calcitonina inibe osteoclastos, diminuindo a reabsorção óssea e a liberação de cálcio, e reduz a reabsorção tubular renal de cálcio e fósforo, aumentando a excreção urinária. O resultado é queda rápida e modesta da calcemia."
+    },
+    {
+      "question": "Qual é o gatilho principal para a secreção de calcitonina pelas células C?",
+      "options": [
+        "Elevação do cálcio sérico, com resposta rápida e de curta duração",
+        "Queda do cálcio sérico, com resposta rápida e de curta duração",
+        "Elevação do TSH sérico, com resposta lenta e de longa duração",
+        "Queda do fósforo sérico, com resposta rápida e de longa duração",
+        "Elevação do T3 livre, com resposta lenta e de curta duração"
+      ],
+      "correctIndex": 0,
+      "explanation": "O gatilho principal é o aumento do cálcio sérico. A resposta é rápida e freia picos agudos de cálcio, mas tem curta duração — por isso a calcitonina não é o regulador dominante da calcemia, papel que cabe ao PTH."
+    },
+    {
+      "question": "Qual é a maior importância prática da calcitonina na clínica atual?",
+      "options": [
+        "Servir de biomarcador do carcinoma medular de tireoide",
+        "Ser o principal regulador da calcemia no organismo humano",
+        "Servir de biomarcador do carcinoma papilífero de tireoide",
+        "Ser o marcador de escolha para a tireoidite de Hashimoto",
+        "Ser o principal alvo terapêutico na doença de Graves"
+      ],
+      "correctIndex": 0,
+      "explanation": "Apesar das ações no osso e no rim, o efeito fisiológico da calcitonina sobre a calcemia é modesto. Na prática, sua maior importância é como biomarcador do carcinoma medular de tireoide (MTC), tumor das próprias células C."
+    },
+    {
+      "question": "Mulher de 29 anos com baixa estatura, mixedema, macroglossia e atraso global do desenvolvimento, nascida em local sem triagem neonatal. Qual o diagnóstico mais provável?",
+      "options": [
+        "Hipotireoidismo congênito não tratado, com cretinismo instalado",
+        "Hipotireoidismo adquirido por Hashimoto iniciado na adolescência",
+        "Nanismo hipofisário por deficiência isolada de GH desde a infância",
+        "Doença de Graves de longa evolução, com miopatia e emagrecimento",
+        "Hipotireoidismo central por deficiência de TSH de início recente"
+      ],
+      "correctIndex": 0,
+      "explanation": "A combinação de baixa estatura, infiltração cutânea com fácies cretinoide, macroglossia, cabelos quebradiços e atraso global do desenvolvimento neuropsicomotor, em quem não fez triagem neonatal, caracteriza hipotireoidismo congênito não tratado."
+    },
+    {
+      "question": "Qual diagnóstico diferencial do cretinismo cursa com proporções corporais harmônicas e sem retardo mental grave?",
+      "options": [
+        "Nanismo hipofisário, por deficiência do hormônio de crescimento",
+        "Síndrome de Down, por trissomia do cromossomo 21 no cariótipo",
+        "Síndrome de Wiedemann-Beckwith, que também cursa com macroglossia",
+        "Tireoidite de Hashimoto, por autoanticorpos anti-TPO circulantes",
+        "Doença de Graves neonatal, por passagem transplacentária de TRAb"
+      ],
+      "correctIndex": 0,
+      "explanation": "O nanismo hipofisário por deficiência de GH também dá baixa estatura, mas com proporções corporais mais harmônicas e sem o retardo mental grave do cretinismo. Down e Wiedemann-Beckwith entram no diferencial pela macroglossia e pelo atraso."
+    },
+    {
+      "question": "Ao iniciar levotiroxina aos 29 anos nessa paciente com cretinismo, o que se espera obter?",
+      "options": [
+        "Melhora do metabolismo, da pele e da constipação, sem ganho cognitivo",
+        "Melhora do metabolismo, da pele e da constipação, com ganho cognitivo",
+        "Reversão completa do atraso cognitivo em cerca de seis meses de uso",
+        "Nenhuma melhora clínica, já que a doença é congênita e irreversível",
+        "Ganho cognitivo progressivo, mas sem melhora metabólica ou cutânea"
+      ],
+      "correctIndex": 0,
+      "explanation": "O tratamento tardio não reverte o dano cerebral já estabelecido, mas melhora o metabolismo, a pele, a constipação e a disposição física. O médico deve comunicar a irreversibilidade sem retirar a esperança da família no cuidado reabilitador."
+    },
+    {
+      "question": "Na figura comparativa entre hipo e hipertireoidismo, quais sinais pertencem ao hipertireoidismo?",
+      "options": [
+        "Taquicardia, intolerância ao calor, perda de peso e tremor",
+        "Bradicardia, intolerância ao frio, ganho de peso e inchaço",
+        "Taquicardia, intolerância ao frio, ganho de peso e tremor",
+        "Bradicardia, intolerância ao calor, perda de peso e inchaço",
+        "Taquicardia, intolerância ao calor, ganho de peso e apatia"
+      ],
+      "correctIndex": 0,
+      "explanation": "O excesso hormonal acelera as funções orgânicas: taquicardia, intolerância ao calor, perda de peso, tremor, olhos protuberantes e bócio. A deficiência as torna mais lentas: bradicardia, intolerância ao frio, ganho de peso, inchaço e depressão.",
+      "image": "pg36",
+      "imageCaption": "Sinais e sintomas de hipo e de hipertireoidismo"
+    },
+    {
+      "question": "No esquema do eixo, o que acontece com T3 e T4 na circulação periférica?",
+      "options": [
+        "Circulam ligados à TBG, em equilíbrio com as frações livres fT3 e fT4",
+        "Circulam apenas livres, pois a TBG só age dentro do folículo tireoidiano",
+        "Circulam ligados à TBG, que impede totalmente a formação de fração livre",
+        "Circulam ligados à tireoglobulina, em equilíbrio com o TSH livre do plasma",
+        "Circulam ligados somente à albumina do plasma, sem participação da TBG"
+      ],
+      "correctIndex": 0,
+      "explanation": "T3 e T4 circulam majoritariamente ligados à TBG (thyroxine-binding globulin), em equilíbrio com as frações livres fT3 e fT4. Só a fração livre é biologicamente ativa e exerce o feedback negativo — por isso se dosa T4 livre, e não T4 total.",
+      "image": "pg09",
+      "imageCaption": "Eixo hipotálamo-hipófise-tireoide e transporte por TBG"
+    }
+  ]
+}

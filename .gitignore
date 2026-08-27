@@ -1,0 +1,25 @@
+# Acervos de imagem (base64) — 57 MB, regeneráveis com _scripts/extrair.py
+*/imagens_*.json
+
+# Material original das aulas — 78 MB, fica só na máquina
+*.pdf
+*.pptx
+*.ppt
+*.docx
+
+# Design de origem do template (export do Claude Design, não é usado pelo pipeline)
+_template/support.js
+_template/*.zip
+_template/*.dc.html
+_template/.thumbnail
+_template/uploads/
+
+# Nunca versionar credencial
+*.token
+.token
+*token*.txt
+
+# Lixo do sistema
+Thumbs.db
+desktop.ini
+.DS_Store

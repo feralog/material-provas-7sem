@@ -1,0 +1,348 @@
+{
+  "titulo": "Infertilidade Conjugal",
+  "eyebrow": "Ginecologia · Reprodução Humana",
+  "subtitulo": "Avaliação do casal infértil, do espermograma à alta complexidade",
+  "intro": "Definição, classificação e epidemiologia da infertilidade conjugal; investigação sistemática do homem e da mulher; espermograma pela OMS 2021, fatores ovulatório, tubário, peritoneal e uterino, reserva ovariana e o planejamento terapêutico de baixa e alta complexidade.",
+  "questoes": [
+    {
+      "question": "Segundo a OMS e a FEBRASGO, infertilidade conjugal é a ausência de gestação após quanto tempo de tentativa?",
+      "options": [
+        "Doze meses de relações regulares sem método contraceptivo",
+        "Seis meses de relações regulares sem método contraceptivo",
+        "Dezoito meses de relações regulares sem método contraceptivo",
+        "Vinte e quatro meses de relações regulares sem contracepção"
+      ],
+      "correctIndex": 0,
+      "explanation": "A definição da OMS/FEBRASGO exige ausência de gestação após 12 meses de relação sexual regular, bem distribuída ao longo do ciclo e sem uso de método contraceptivo. O prazo de 6 meses é exceção, reservada a mulheres com 35 anos ou mais e a casais com fator de risco identificado. Prazos de 18 ou 24 meses não são usados na definição."
+    },
+    {
+      "question": "Mulher de 37 anos, ciclos regulares, sem antecedentes, tenta engravidar há 7 meses sem contracepção. Qual a conduta?",
+      "options": [
+        "Iniciar já a investigação do casal, pois a idade é maior ou igual a 35 anos",
+        "Aguardar completar 12 meses de tentativa antes de iniciar a investigação",
+        "Aguardar completar 24 meses de tentativa antes de iniciar a investigação",
+        "Investigar somente o parceiro, já que a paciente tem ciclos regulares"
+      ],
+      "correctIndex": 0,
+      "explanation": "A regra dos 12 meses é antecipada para 6 meses quando a mulher tem 35 anos ou mais, ou quando há fator de risco identificado — justamente porque a queda de quantidade e qualidade oocitária acelera após os 35 anos. Com 37 anos e 7 meses de tentativa, a investigação já está indicada. Ela deve ser do casal, nunca de um parceiro isolado."
+    },
+    {
+      "question": "Casal que teve um aborto espontâneo há três anos e não engravidou novamente desde então deve ser classificado como:",
+      "options": [
+        "Infertilidade secundária, pois já houve uma gestação prévia do casal",
+        "Infertilidade primária, pois não houve nascido vivo prévio do casal",
+        "Infertilidade primária, pois o aborto não configura gestação obtida",
+        "Infertilidade secundária, pois a duração ultrapassa os doze meses"
+      ],
+      "correctIndex": 0,
+      "explanation": "A infertilidade é secundária quando o casal já obteve pelo menos uma gestação prévia — e gestações anteriores contam mesmo que não tenham resultado em filho vivo, como no aborto espontâneo. A infertilidade primária é a do casal que nunca conseguiu gestação. A duração da tentativa define o diagnóstico, não a classificação em primária ou secundária."
+    },
+    {
+      "question": "Qual a prevalência da infertilidade conjugal e a participação do fator masculino isolado?",
+      "options": [
+        "15 a 20% dos casais; fator masculino isolado em cerca de 30% dos casos",
+        "15 a 20% dos casais; fator masculino isolado em cerca de 10% dos casos",
+        "5 a 8% dos casais; fator masculino isolado em cerca de 30% dos casos",
+        "35 a 40% dos casais; fator masculino isolado em cerca de 50% dos casos"
+      ],
+      "correctIndex": 0,
+      "explanation": "A infertilidade conjugal atinge 15 a 20% da população em idade reprodutiva. A distribuição das causas é: fatores mistos 35%, fator masculino isolado 30%, fator feminino isolado 30% e idiopático 10%. Como fatores masculinos e femininos coexistem em boa parte dos casos, o casal é sempre avaliado como unidade funcional."
+    },
+    {
+      "question": "Sobre a espermatogênese e a maturação espermática, qual afirmativa está correta?",
+      "options": [
+        "Dura cerca de 74 dias, com maturação epididimária de 12 a 21 dias",
+        "Dura cerca de 28 dias, com maturação epididimária de 12 a 21 dias",
+        "Dura cerca de 74 dias, com maturação epididimária de 60 a 90 dias",
+        "Dura cerca de 120 dias, com maturação epididimária de 2 a 5 dias"
+      ],
+      "correctIndex": 0,
+      "explanation": "A espermatogênese ocorre nos túbulos seminíferos, é regulada por FSH e testosterona e dura aproximadamente 74 dias; a maturação no epidídimo leva mais 12 a 21 dias. Por isso qualquer agressão (febre, medicação, tóxico) dos últimos 3 meses repercute no espermograma atual — e por isso a anamnese cobre esse intervalo."
+    },
+    {
+      "question": "Qual é a causa tratável mais frequente de infertilidade masculina?",
+      "options": [
+        "Varicocele do plexo pampiniforme",
+        "Criptorquidia bilateral corrigida",
+        "Orquite pós-caxumba na infância",
+        "Uretrite por Chlamydia trachomatis"
+      ],
+      "correctIndex": 0,
+      "explanation": "A varicocele — dilatação varicosa das veias do plexo pampiniforme — é a causa tratável mais frequente de infertilidade masculina. A cadeia fisiopatológica é hipertensão venosa com refluxo renal/adrenal, hipoperfusão e hipóxia tecidual, estresse oxidativo com disfunção epitelial e, ao final, queda da qualidade espermática. A pesquisa é feita em repouso e com manobra de Valsalva."
+    },
+    {
+      "question": "A imagem mostra ingurgitamento escrotal evidente já em repouso, sem necessidade de manobras. O achado corresponde a:",
+      "options": [
+        "Varicocele grau III, com plexo pampiniforme visível em repouso",
+        "Varicocele grau II, com plexo pampiniforme palpável em repouso",
+        "Varicocele grau I, com plexo pampiniforme palpável à Valsalva",
+        "Hidrocele volumosa, com coleção líquida na túnica vaginal"
+      ],
+      "correctIndex": 0,
+      "explanation": "A classificação da varicocele pelo exame físico tem três graus: grau I, palpável apenas durante a manobra de Valsalva; grau II, palpável em repouso; grau III, visível em repouso, com ingurgitamento escrotal evidente, como na foto. A hidrocele daria aumento liso e translúcido, sem o aspecto de novelo de veias.",
+      "image": "s15i2",
+      "imageCaption": "Ingurgitamento escrotal visível em repouso"
+    },
+    {
+      "question": "Qual o período de abstinência sexual recomendado antes da coleta do espermograma?",
+      "options": [
+        "2 a 5 dias",
+        "1 a 2 dias",
+        "7 a 10 dias",
+        "12 a 15 dias"
+      ],
+      "correctIndex": 0,
+      "explanation": "O período ideal de abstinência é de 2 a 5 dias. Abstinência curta reduz volume e concentração; abstinência longa aumenta o número de formas imóveis e mortas. A coleta é por masturbação em frasco estéril, de preferência no próprio laboratório, com transporte em temperatura corporal e em menos de 1 hora."
+    },
+    {
+      "question": "Homem assintomático traz um espermograma isolado com oligozoospermia leve. Qual a conduta inicial correta?",
+      "options": [
+        "Repetir o exame e trabalhar com a média de duas amostras seminais",
+        "Indicar ICSI de imediato pela alteração seminal já documentada",
+        "Solicitar cariótipo e microdeleção do cromossomo Y neste momento",
+        "Iniciar reposição de testosterona para elevar a contagem espermática"
+      ],
+      "correctIndex": 0,
+      "explanation": "O espermograma tem ampla variação biológica: abstinência, local e modo de coleta, transporte, estado emocional e doenças dos últimos 3 meses alteram o resultado. Por isso se trabalha com a média de dois exames antes de rotular o paciente. Reposição de testosterona é armadilha clássica: suprime o eixo e piora a espermatogênese."
+    },
+    {
+      "question": "Quais são os valores de referência do espermograma pela OMS 2021?",
+      "options": [
+        "Volume 1,4 mL; concentração 16 milhões/mL; progressivos 30%; Kruger 4%",
+        "Volume 1,5 mL; concentração 15 milhões/mL; progressivos 32%; Kruger 14%",
+        "Volume 2,0 mL; concentração 20 milhões/mL; progressivos 50%; Kruger 30%",
+        "Volume 1,4 mL; concentração 39 milhões/mL; progressivos 42%; Kruger 4%"
+      ],
+      "correctIndex": 0,
+      "explanation": "Pela OMS 2021 os limites inferiores são: volume maior ou igual a 1,4 mL (abaixo, hipospermia), concentração maior ou igual a 16 x 10⁶/mL (abaixo, oligozoospermia), motilidade progressiva maior ou igual a 30% (abaixo, astenozoospermia) e morfologia de Kruger maior ou igual a 4% (abaixo, teratozoospermia). Concentração abaixo de 5 x 10⁶/mL é oligozoospermia grave e zero é azoospermia."
+    },
+    {
+      "question": "Espermograma: volume 2,0 mL, concentração 25 milhões/mL, motilidade progressiva 21% e morfologia de Kruger 2%. A classificação é:",
+      "options": [
+        "Astenozoospermia associada a teratozoospermia, sem oligozoospermia",
+        "Oligozoospermia associada a teratozoospermia, sem astenozoospermia",
+        "Astenozoospermia associada a hipospermia, sem teratozoospermia",
+        "Oligozoospermia associada a hipospermia, sem astenozoospermia"
+      ],
+      "correctIndex": 0,
+      "explanation": "O volume de 2,0 mL está acima de 1,4 mL e a concentração de 25 milhões/mL está acima de 16 milhões/mL — não há hipospermia nem oligozoospermia. A motilidade progressiva de 21% está abaixo dos 30% exigidos (astenozoospermia) e a morfologia de 2% está abaixo dos 4% de Kruger (teratozoospermia). Se a concentração também caísse, o quadro seria OAT."
+    },
+    {
+      "question": "Homem infértil com azoospermia, testículos de volume reduzido e FSH elevado. O diagnóstico mais provável é:",
+      "options": [
+        "Falência testicular primária, por lesão do epitélio germinativo",
+        "Hipogonadismo hipogonadotrófico, por falha hipotálamo-hipofisária",
+        "Azoospermia obstrutiva, por bloqueio da via excretora distal",
+        "Hiperprolactinemia tumoral, por queda da pulsatilidade do GnRH"
+      ],
+      "correctIndex": 0,
+      "explanation": "FSH elevado com volume testicular reduzido indica falência testicular primária: o epitélio germinativo não responde, e a hipófise, sem retroalimentação inibitória, eleva o FSH. No hipogonadismo hipogonadotrófico ocorre o oposto — FSH e LH baixos com testosterona baixa. Na azoospermia obstrutiva o FSH e o volume testicular costumam estar normais."
+    },
+    {
+      "question": "FSH e LH baixos acompanhados de testosterona baixa em homem infértil caracterizam:",
+      "options": [
+        "Hipogonadismo hipogonadotrófico, de origem central",
+        "Falência testicular primária, de origem gonadal",
+        "Azoospermia obstrutiva, de origem pós-testicular",
+        "Síndrome de Klinefelter, de origem cromossômica"
+      ],
+      "correctIndex": 0,
+      "explanation": "A avaliação hormonal masculina (FSH, LH, testosterona e prolactina) tem duas leituras clássicas: FSH alto com volume testicular reduzido aponta falência testicular primária; FSH e LH baixos com testosterona baixa apontam hipogonadismo hipogonadotrófico, de origem hipotálamo-hipofisária. Esta última é potencialmente tratável com reposição de gonadotrofinas."
+    },
+    {
+      "question": "Em qual situação está indicada a avaliação genética com cariótipo e pesquisa de microdeleção do cromossomo Y?",
+      "options": [
+        "Oligozoospermia grave, abaixo de 5 milhões/mL, ou azoospermia",
+        "Astenozoospermia isolada, abaixo de 30% de espermatozoides móveis",
+        "Teratozoospermia isolada, abaixo de 4% pelo critério de Kruger",
+        "Hipospermia isolada, abaixo de 1,4 mL, com libido preservada"
+      ],
+      "correctIndex": 0,
+      "explanation": "A avaliação genética é indicada na oligozoospermia grave (menos de 5 x 10⁶/mL) e na azoospermia. Investigam-se microdeleções das regiões AZFa, AZFb e AZFc — que definem prognóstico de recuperação espermática — e o cariótipo, sendo a síndrome de Klinefelter (47,XXY) a causa cromossômica mais frequente. Hipospermia isolada aponta antes para investigação de obstrução distal por imagem."
+    },
+    {
+      "question": "Qual a distribuição das causas de infertilidade feminina apresentada na aula?",
+      "options": [
+        "Ovulatório 35%, tubário 35%, endometriose 20% e idiopático 10%",
+        "Ovulatório 20%, tubário 35%, endometriose 35% e idiopático 10%",
+        "Ovulatório 50%, tubário 20%, endometriose 20% e idiopático 10%",
+        "Ovulatório 35%, tubário 10%, endometriose 45% e idiopático 10%"
+      ],
+      "correctIndex": 0,
+      "explanation": "Entre as causas femininas, fator ovulatório e fator tubário respondem por 35% cada, endometriose por 20% e idiopático por 10%. Esses fatores se sobrepõem com frequência na prática, o que exige investigação sistemática e sequencial, e não a busca de uma causa única."
+    },
+    {
+      "question": "Progesterona de 12 ng/mL colhida no 21º dia de um ciclo de 28 dias deve ser interpretada como:",
+      "options": [
+        "Ciclo ovulatório confirmado, pois o corte é de 10 ng/mL",
+        "Ciclo anovulatório definido, pois o corte é de 15 ng/mL",
+        "Insuficiência lútea provável, pois o corte é de 20 ng/mL",
+        "Resultado inconclusivo a repetir, pois o corte é de 25 ng/mL"
+      ],
+      "correctIndex": 0,
+      "explanation": "A progesterona de fase lútea é colhida no 21º dia de um ciclo de 28 dias, ou seja, cerca de 7 dias após a ovulação presumida. Valor acima de 10 ng/mL confirma ciclo ovulatório; abaixo de 3 ng/mL indica ciclo anovulatório; entre 3 e 10 ng/mL a ovulação é incerta ou há insuficiência lútea."
+    },
+    {
+      "question": "Progesterona de 6 ng/mL no 21º dia de um ciclo de 28 dias corresponde a qual interpretação?",
+      "options": [
+        "Ovulação incerta ou insuficiência lútea, faixa entre 3 e 10 ng/mL",
+        "Ciclo francamente anovulatório, faixa situada abaixo de 3 ng/mL",
+        "Ciclo ovulatório plenamente normal, faixa acima de 10 ng/mL",
+        "Ausência de valor diagnóstico, exigindo dosagem seriada de LH"
+      ],
+      "correctIndex": 0,
+      "explanation": "A faixa intermediária de 3 a 10 ng/mL é a pegadinha clássica: não confirma nem exclui ovulação, e sugere ovulação incerta ou insuficiência lútea. A conduta é complementar com ultrassonografia seriada, que mostra crescimento folicular, colapso do folículo e líquido livre no fundo de saco de Douglas após a ovulação."
+    },
+    {
+      "question": "Ultrassonografia seriada no 13º dia do ciclo, como a da imagem. Qual o diâmetro esperado do folículo dominante no período pré-ovulatório?",
+      "options": [
+        "18 a 24 mm",
+        "10 a 14 mm",
+        "26 a 32 mm",
+        "34 a 40 mm"
+      ],
+      "correctIndex": 0,
+      "explanation": "Na monitorização ultrassonográfica, o folículo dominante atinge 18 a 24 mm no período pré-ovulatório. A confirmação de que a ovulação ocorreu vem do colapso folicular com líquido livre no fundo de saco de Douglas. O mesmo exame avalia espessura e padrão endometrial.",
+      "image": "s27i6",
+      "imageCaption": "Folículo dominante ao ultrassom transvaginal"
+    },
+    {
+      "question": "Ovário com múltiplos folículos pequenos dispostos perifericamente, como na imagem, em paciente com oligomenorreia e hirsutismo. Como se fecha o diagnóstico de SOP?",
+      "options": [
+        "Critérios de Rotterdam, com pelo menos dois dos três achados presentes",
+        "Critérios de Rotterdam, com os três achados obrigatoriamente presentes",
+        "Critérios de Rotterdam, com apenas um dos três achados já suficiente",
+        "Critérios de Rotterdam, com dois dos quatro achados, incluindo obesidade"
+      ],
+      "correctIndex": 0,
+      "explanation": "A SOP é diagnóstico de exclusão pelos critérios de Rotterdam: bastam 2 de 3 entre irregularidade menstrual (oligo/amenorreia, menos de 8 ciclos por ano ou ciclos acima de 35 dias), hiperandrogenismo clínico ou laboratorial e morfologia policística ao ultrassom (12 ou mais folículos de 2 a 9 mm, ou volume ovariano acima de 10 cm³, em pelo menos um ovário). Atinge 6 a 10% das mulheres em idade reprodutiva.",
+      "image": "s28i1",
+      "imageCaption": "Ovário com múltiplos folículos periféricos"
+    },
+    {
+      "question": "A imagem mostra o exame de escolha para avaliar permeabilidade e função tubária. Qual é o exame e quando deve ser realizado?",
+      "options": [
+        "Histerossalpingografia, entre o 7º e o 10º dia do ciclo menstrual",
+        "Histerossonografia, entre o 20º e o 24º dia do ciclo menstrual",
+        "Videolaparoscopia, entre o 14º e o 16º dia do ciclo menstrual",
+        "Histeroscopia, entre o 24º e o 28º dia do ciclo menstrual"
+      ],
+      "correctIndex": 0,
+      "explanation": "A radiografia mostra contraste preenchendo a cavidade uterina e as tubas — é uma histerossalpingografia, exame de escolha para avaliar permeabilidade e função tubária. É feita preferencialmente na primeira fase do ciclo, entre o 7º e o 10º dia, quando não há sangramento nem risco de irradiar gestação inicial.",
+      "image": "s30i2",
+      "imageCaption": "Contraste preenchendo cavidade e tubas"
+    },
+    {
+      "question": "Paciente com doença inflamatória pélvica prévia apresenta ao ultrassom a coleção anecóica tubária alongada da imagem. O achado e sua repercussão são:",
+      "options": [
+        "Hidrossalpinge, sequela de DIP que piora os resultados da FIV",
+        "Endometrioma, sequela de endometriose que reduz a reserva ovariana",
+        "Cisto folicular, achado funcional sem qualquer impacto reprodutivo",
+        "Mioma subseroso, achado que distorce a anatomia tubária adjacente"
+      ],
+      "correctIndex": 0,
+      "explanation": "A coleção anecóica de trajeto tubário corresponde a hidrossalpinge, sequela clássica de salpingite por Chlamydia trachomatis e Neisseria gonorrhoeae ou de DIP recorrente. Além de impedir a fecundação in vivo, o líquido tubário é embriotóxico e reduz as taxas de sucesso da FIV, o que costuma indicar abordagem da tuba antes do ciclo.",
+      "image": "s30i1",
+      "imageCaption": "Coleção anecóica de trajeto tubário"
+    },
+    {
+      "question": "Quais são as indicações clássicas de fertilização in vitro (FIV)?",
+      "options": [
+        "Fator tubário, falha de IIU, endometriose grave e reserva diminuída",
+        "Fator cervical, muco hostil, ciclos irregulares e idade abaixo de 30",
+        "Fator ovulatório isolado, SOP recém-diagnosticada e ISCA muito leve",
+        "Hipospermia isolada, varicocele grau I e libido do casal preservada"
+      ],
+      "correctIndex": 0,
+      "explanation": "A FIV é técnica de alta complexidade — punção oocitária, fertilização extracorpórea e transferência embrionária — indicada em fator tubário, falha de inseminação intrauterina, endometriose grave e reserva ovariana diminuída. Fator cervical e fator ovulatório isolado começam por baixa complexidade: coito programado ou inseminação intrauterina."
+    },
+    {
+      "question": "Casal em que o homem tem oligo-asteno-teratozoospermia grave confirmada em dois exames. Qual a técnica de escolha?",
+      "options": [
+        "ICSI, com microinjeção de um espermatozoide dentro do oócito",
+        "FIV convencional, com fertilização espontânea do oócito em placa",
+        "IIU, com sêmen processado depositado na cavidade uterina",
+        "Coito programado, com monitorização ultrassonográfica do ciclo"
+      ],
+      "correctIndex": 0,
+      "explanation": "A injeção intracitoplasmática de espermatozoide (ICSI) tem como indicação principal o fator masculino grave, exatamente o quadro de oligo-asteno-teratozoospermia. Também é indicada após falha de fertilização em FIV convencional. Baixa complexidade (coito programado, IIU) não resolve fator masculino grave: a IIU serve ao fator masculino leve a moderado."
+    },
+    {
+      "question": "Qual a proporção de mulheres inférteis que apresentam endometriose?",
+      "options": [
+        "25 a 50%",
+        "5 a 15%",
+        "60 a 75%",
+        "80 a 95%"
+      ],
+      "correctIndex": 0,
+      "explanation": "A endometriose acomete 5 a 15% das mulheres em idade reprodutiva, está presente em 25 a 50% das mulheres inférteis e torna inférteis 30 a 50% de suas portadoras. Os mecanismos propostos incluem distorção anatômica com obstrução tubária, ambiente peritoneal hostil aos gametas, endometriomas que comprometem a reserva, receptividade endometrial alterada e falha do fimbriotransporte."
+    },
+    {
+      "question": "Quais alterações compõem o fator uterino de infertilidade?",
+      "options": [
+        "Mioma submucoso, pólipo endometrial e sinéquias uterinas",
+        "Estenose cervical, muco hostil e cervicite crônica de repetição",
+        "Hidrossalpinge, aderências pélvicas e endometrioma ovariano",
+        "Anovulação crônica, hiperprolactinemia e disgenesia gonadal"
+      ],
+      "correctIndex": 0,
+      "explanation": "O fator uterino reúne miomatose submucosa (ou intramural igual ou maior que 4 cm), pólipo endometrial, malformações müllerianas como septo e útero bicorno, e síndrome de Asherman (sinéquias). Estenose e muco hostil são fator cervical; hidrossalpinge e aderências são fator tubário/peritoneal; anovulação e hiperprolactinemia são fator ovulatório."
+    },
+    {
+      "question": "Qual é o melhor marcador disponível de reserva ovariana e seu ponto de corte para reserva diminuída?",
+      "options": [
+        "AMH, com valor abaixo de 1,0 ng/mL indicando reserva diminuída",
+        "Estradiol basal, com valor acima de 80 pg/mL indicando reserva baixa",
+        "LH basal, com valor acima de 10 UI/L indicando reserva diminuída",
+        "Progesterona lútea, abaixo de 3 ng/mL indicando reserva diminuída"
+      ],
+      "correctIndex": 0,
+      "explanation": "O hormônio antimülleriano é o melhor marcador disponível: é sintetizado pelas células da granulosa dos folículos pré-antrais e independe do dia do ciclo menstrual; valores abaixo de 1,0 ng/mL indicam reserva diminuída. FSH basal acima de 10 a 12 UI/L e contagem de folículos antrais abaixo de 7 também apontam baixa reserva."
+    },
+    {
+      "question": "Qual é o preditor isolado mais importante do prognóstico reprodutivo feminino?",
+      "options": [
+        "A idade da mulher, com queda acelerada a partir dos 35 anos",
+        "O hormônio antimülleriano, que independe do ciclo menstrual",
+        "A contagem de folículos antrais, feita entre o 2º e o 5º dia",
+        "O FSH basal, dosado entre o 3º e o 5º dia do ciclo menstrual"
+      ],
+      "correctIndex": 0,
+      "explanation": "Pegadinha frequente: o AMH é o melhor marcador laboratorial de reserva ovariana, mas o preditor isolado mais importante do prognóstico continua sendo a idade. A partir dos 35 anos há queda acelerada tanto na quantidade quanto na qualidade oocitária, com aumento significativo do risco de aneuploidia — o que nenhum marcador bioquímico corrige."
+    },
+    {
+      "question": "Na investigação feminina, em que situação a histerossalpingografia pode ser dispensada?",
+      "options": [
+        "Quando já existe indicação imediata de FIV ou ICSI por outra causa",
+        "Quando a paciente apresenta ciclos menstruais regulares e ovulatórios",
+        "Quando a ultrassonografia transvaginal basal não mostra alterações",
+        "Quando a paciente já obteve gestação no relacionamento atual"
+      ],
+      "correctIndex": 0,
+      "explanation": "O roteiro prático indica HSG em todas as pacientes, exceto quando já existe indicação imediata de FIV/ICSI por outra causa — nesse cenário o resultado não mudaria a conduta. Ciclos regulares, ultrassom normal ou gestação prévia não excluem obstrução tubária, que costuma ser assintomática após DIP ou infecção por clamídia."
+    },
+    {
+      "question": "Qual é a primeira etapa do planejamento terapêutico do casal infértil, antes de qualquer técnica de reprodução assistida?",
+      "options": [
+        "Retirar ou reverter as causas identificadas durante a investigação",
+        "Indicar inseminação intrauterina com estimulação ovariana controlada",
+        "Encaminhar diretamente para fertilização in vitro com ICSI do casal",
+        "Iniciar indução da ovulação com coito programado por seis ciclos"
+      ],
+      "correctIndex": 0,
+      "explanation": "A etapa 1 é sempre retirar ou reverter as causas identificadas: tratar IST, corrigir hipogonadismo, operar varicocele, corrigir cirurgicamente o fator tubário, promover perda de peso e suspender drogas e anabolizantes. Só depois se escolhe entre baixa complexidade (coito programado, IIU) e alta complexidade (FIV, ICSI)."
+    },
+    {
+      "question": "Quais são as indicações da inseminação intrauterina (IIU)?",
+      "options": [
+        "Fator cervical, fator masculino leve a moderado e infertilidade idiopática",
+        "Fator tubário bilateral, endometriose grave e infertilidade idiopática",
+        "Fator masculino grave, falha de FIV prévia e infertilidade idiopática",
+        "Reserva ovariana muito baixa, idade acima de 42 anos e endometrioma"
+      ],
+      "correctIndex": 0,
+      "explanation": "A IIU é técnica de baixa complexidade: o sêmen processado é depositado na cavidade uterina por cateter, em geral associada à estimulação ovariana controlada. Suas indicações são fator cervical, fator masculino leve a moderado e infertilidade sem causa aparente. Fator tubário bilateral e fator masculino grave exigem alta complexidade — FIV e ICSI, respectivamente."
+    }
+  ]
+}

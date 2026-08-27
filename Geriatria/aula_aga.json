@@ -1,0 +1,406 @@
+{
+  "titulo": "Avaliação Geriátrica Ampla",
+  "eyebrow": "Geriatria · Avaliação Funcional",
+  "subtitulo": "Instrumentos, pontos de corte e o diagnóstico funcional do idoso",
+  "intro": "Material da aula de AGA: princípios, síndromes geriátricas e os instrumentos de rastreio com pontuação e ponto de corte — Katz, Lawton, Pfeffer, MEEM, relógio, fluência verbal, GDS, PHQ-9, Cornell, NPI, MNA, SPPB e APGAR familiar. Fecha com o diagnóstico geriátrico-gerontológico e o plano de metas terapêuticas.",
+  "questoes": [
+    {
+      "question": "A AGA difere de um atendimento médico habitual sobretudo porque:",
+      "options": [
+        "Prioriza o estado funcional e a qualidade de vida do idoso",
+        "Prioriza o diagnóstico de doenças por exames de imagem",
+        "Prioriza a lista de medicamentos prescritos por especialistas",
+        "Prioriza o tempo de internação e o custo do tratamento"
+      ],
+      "correctIndex": 0,
+      "explanation": "A AGA prioriza estado funcional e qualidade de vida, usando testes, índices e escalas que facilitam a comunicação da equipe interdisciplinar e a comparação evolutiva. A idade cronológica não reflete o verdadeiro estado de envelhecimento, e a avaliação de saúde do idoso exige mais que a identificação de doenças. É usada preferencialmente em idosos frágeis e com multimorbidade."
+    },
+    {
+      "question": "Segundo o fluxograma das síndromes geriátricas de Moraes, a AUTONOMIA do idoso depende de quais dois sistemas funcionais?",
+      "options": [
+        "Autonomia depende de cognição e humor",
+        "Autonomia depende de mobilidade e visão",
+        "Autonomia depende de marcha e continência",
+        "Autonomia depende de audição e fala"
+      ],
+      "correctIndex": 0,
+      "explanation": "No esquema, autonomia (capacidade de decisão) deriva de cognição e humor, enquanto independência deriva de mobilidade e comunicação. Cognição desdobra-se em memória, função executiva, linguagem, função visoespacial, gnosia e praxia; humor, em motivação. Da falência desses sistemas surgem incapacidade cognitiva, instabilidade postural, imobilidade, incontinência e incapacidade comunicativa.",
+      "image": "pg03",
+      "imageCaption": "Síndromes geriátricas — Moraes EN et al., 2009"
+    },
+    {
+      "question": "Assinale o conjunto que reúne apenas grandes síndromes geriátricas:",
+      "options": [
+        "Iatrogenia, imobilidade e insuficiência familiar",
+        "Hipertensão, dislipidemia e osteoartrose",
+        "Anemia, hipotireoidismo e catarata senil",
+        "Diabetes, tabagismo e obesidade central"
+      ],
+      "correctIndex": 0,
+      "explanation": "As grandes síndromes geriátricas listadas na aula são insuficiência familiar, iatrogenia, incapacidade cognitiva, imobilidade, incontinência esfincteriana e incapacidade comunicativa. As demais opções trazem doenças crônicas e fatores de risco, que são comorbidades e não síndromes geriátricas."
+    },
+    {
+      "question": "Paciente com esclerose lateral amiotrófica avançada, tetraparético, mas com cognição intacta e capaz de decidir sobre seu tratamento. Qual a classificação correta?",
+      "options": [
+        "Autônomo, porém dependente para as atividades de vida diária",
+        "Independente, porém sem autonomia para decidir o tratamento",
+        "Autônomo e independente, pois a cognição está preservada",
+        "Dependente e sem autonomia, pela gravidade da doença motora"
+      ],
+      "correctIndex": 0,
+      "explanation": "Autonomia é a capacidade de decidir, ligada à cognição; independência é a capacidade de executar, ligada à parte física. O paciente com ELA mantém autonomia preservada, mas torna-se dependente para as ABVD. A dissociação entre os dois conceitos é justamente o ponto que a AGA obriga a separar na avaliação funcional."
+    },
+    {
+      "question": "Sobre a Escala de Katz mostrada no protocolo de avaliação funcional, é correto afirmar:",
+      "options": [
+        "Seis itens de autocuidado; 0 é independente e 6 dependente",
+        "Nove itens instrumentais; 9 dependente e 27 independente",
+        "Onze itens cognitivos; escores acima de 6 são alterados",
+        "Sete itens de mobilidade; 0 é dependente e 7 independente"
+      ],
+      "correctIndex": 0,
+      "explanation": "O Katz avalia seis ABVD: banho, vestir-se, uso do vaso sanitário, transferência, continência e alimentação. Cada item vale 0 (independente) ou 1 (dependente), e o escore vai de 0 a 6 — 0 indica independência total e 6 dependência total. As faixas intermediárias (3 a 4) caracterizam dependência parcial.",
+      "image": "pg08",
+      "imageCaption": "Escala de Katz — ABVD e grau de dependência"
+    },
+    {
+      "question": "Idosa de 80 anos entra e sai do chuveiro sozinha, mas a filha esfrega apenas suas costas. Como pontuar o item BANHO no Katz?",
+      "options": [
+        "Independente no banho, pois o auxílio é em só uma parte do corpo",
+        "Dependente no banho, pois recebe qualquer tipo de assistência",
+        "Dependente no banho, porque não entra sozinha no boxe do chuveiro",
+        "Independente no banho apenas se dispensar barras de apoio fixas"
+      ],
+      "correctIndex": 0,
+      "explanation": "O próprio instrumento define que receber auxílio para banhar uma parte específica do corpo, como a região dorsal ou uma extremidade, mantém a classificação de independente. Só é dependente quem recebe assistência em mais de uma parte do corpo. A mesma lógica vale para o item vestir: precisar de ajuda só para amarrar os sapatos ainda é independente."
+    },
+    {
+      "question": "Um idoso usa fralda descartável de forma regular por perdas urinárias frequentes. No Índice de Katz, o item CONTINÊNCIA é classificado como:",
+      "options": [
+        "Dependente: uso regular de fraldas é classificado como dependência",
+        "Independente: fraldas são apenas dispositivo de apoio permitido",
+        "Independente: só perdas fecais configuram dependência no Katz",
+        "Dependente somente se houver também perda do controle intestinal"
+      ],
+      "correctIndex": 0,
+      "explanation": "O Katz considera dependente qualquer controle externo — enemas, cateterização ou uso regular de fraldas — e também os 'acidentes' ocasionais de perda urinária ou fecal. Atenção à pegadinha: bengala, andador e barras de apoio NÃO tiram a independência, mas fralda e comadre/papagaio tiram."
+    },
+    {
+      "question": "Na Escala de Lawton para AIVD, como é feita a pontuação de cada um dos nove itens?",
+      "options": [
+        "1 se não consegue, 2 com ajuda parcial e 3 sem ajuda",
+        "0 se não consegue, 1 com ajuda parcial e 2 sem ajuda",
+        "3 se não consegue, 2 com ajuda parcial e 1 sem ajuda",
+        "1 se não consegue, 3 com ajuda parcial e 5 sem ajuda"
+      ],
+      "correctIndex": 0,
+      "explanation": "Cada item de Lawton admite três respostas: sem ajuda (3 pontos), com ajuda parcial (2 pontos) e não consegue (1 ponto). Como são nove itens, o escore vai de 9 a 27 pontos. Note a inversão em relação ao Katz: no Lawton, quanto MAIOR a pontuação, mais independente o idoso."
+    },
+    {
+      "question": "De acordo com a interpretação da Escala de Lawton-Brody exibida no protocolo, qual faixa indica independência?",
+      "options": [
+        "25 a 27 pontos indicam independência nas atividades instrumentais",
+        "9 a 12 pontos indicam independência nas atividades instrumentais",
+        "10 a 24 pontos indicam independência nas atividades instrumentais",
+        "25 a 27 pontos indicam dependência total nas atividades instrumentais"
+      ],
+      "correctIndex": 0,
+      "explanation": "O quadro traz explicitamente: 9 pontos = totalmente dependente; 10 a 24 = parcialmente dependente; 25 a 27 = independente. Os nove itens são telefone, compras, preparo de refeições, tarefas domésticas, pequenos reparos, lavar roupa, transporte, uso de medicamentos e manuseio de dinheiro.",
+      "image": "pg09",
+      "imageCaption": "Escala de Lawton-Brody — AIVD e faixas de escore"
+    },
+    {
+      "question": "Qual conjunto de tarefas corresponde às atividades INSTRUMENTAIS de vida diária?",
+      "options": [
+        "Usar telefone, tomar remédios e cuidar das finanças",
+        "Tomar banho, vestir-se e transferir-se da cama",
+        "Alimentar-se, ter continência e usar o vaso sanitário",
+        "Dirigir automóvel, pintar e tocar instrumento musical"
+      ],
+      "correctIndex": 0,
+      "explanation": "As AIVD indicam se o idoso consegue viver sozinho: telefone, transporte, compras, refeições, casa, reparos, roupa, medicamentos e finanças. Banho, vestir-se, transferência, continência e alimentação são ABVD (Katz). Dirigir, pintar e tocar instrumento são atividades AVANÇADAS (AAVD), não incluídas na avaliação funcional sistematizada."
+    },
+    {
+      "question": "Sobre o Índice de Pfeffer, exibido com seus onze itens e sua régua de pontuação, é correto afirmar:",
+      "options": [
+        "Quanto maior a pontuação, mais dependente; escores acima de 6 alertam",
+        "Quanto maior a pontuação, mais independente; abaixo de 6 já alerta",
+        "Cada item vale de 0 a 1 ponto e o escore total varia de 0 a 11",
+        "Avalia apenas atividades básicas e substitui integralmente o Katz"
+      ],
+      "correctIndex": 0,
+      "explanation": "No Pfeffer, cada item vale de 0 a 3 (sim é capaz = 0; com alguma dificuldade = 1; necessita de ajuda = 2; não é capaz = 3), de modo que quanto maior o escore, maior a dependência. Escores maiores que 6 devem chamar atenção e, se associados a outros testes cognitivos alterados, indicam avaliação neurológica mais aprofundada.",
+      "image": "pg10",
+      "imageCaption": "Índice de Pfeffer — itens e pontuação de 0 a 3"
+    },
+    {
+      "question": "Segundo os pontos de corte do MEEM de Brucki et al. (2003), reproduzidos no material, quais são os valores extremos por escolaridade?",
+      "options": [
+        "20 pontos para analfabetos e 29 para mais de 11 anos de estudo",
+        "29 pontos para analfabetos e 20 para mais de 11 anos de estudo",
+        "24 pontos para analfabetos e 26 para mais de 11 anos de estudo",
+        "20 pontos para analfabetos e 24 para mais de 11 anos de estudo"
+      ],
+      "correctIndex": 0,
+      "explanation": "Brucki (2003): 20 pontos para analfabetos; 25 para 1 a 4 anos de estudo; 26,5 para 5 a 8 anos; 28 para 9 a 11 anos; e 29 para mais de 11 anos de estudo. Ignorar a escolaridade é o erro clássico: um idoso com curso superior e 26 pontos está ABAIXO do corte, enquanto um analfabeto com 21 está acima.",
+      "image": "f2_pg11",
+      "imageCaption": "Pontos de corte do MEEM por escolaridade — Brucki et al., 2003"
+    },
+    {
+      "question": "Sobre a estrutura de pontuação do Mini Exame do Estado Mental, é correto afirmar que o total é de:",
+      "options": [
+        "30 pontos, sendo 10 de orientação e 9 de linguagem",
+        "30 pontos, sendo 15 de orientação e 5 de linguagem",
+        "27 pontos, sendo 10 de orientação e 6 de linguagem",
+        "35 pontos, sendo 12 de orientação e 9 de linguagem"
+      ],
+      "correctIndex": 0,
+      "explanation": "O MEEM soma 30 pontos: orientação temporal e espacial 10, registro de 3 palavras 3, atenção e cálculo 5, evocação (lembrança) 3 e linguagem 9. O diagnóstico de demência é clínico — o teste serve apenas para triagem e deve ser repetido a cada 6 meses no acompanhamento do tratamento."
+    },
+    {
+      "question": "No Teste do Desenho do Relógio pontuado em contorno, números, ponteiros e centro, qual resultado sugere declínio cognitivo?",
+      "options": [
+        "Pontuação menor que 11 em 15 sugere declínio cognitivo",
+        "Pontuação menor que 15 em 30 sugere declínio cognitivo",
+        "Pontuação maior que 11 em 15 sugere declínio cognitivo",
+        "Pontuação menor que 6 em 10 sugere declínio cognitivo"
+      ],
+      "correctIndex": 0,
+      "explanation": "O total do TDR é 15 pontos e pontuação menor que 11 sugere declínio. Solicita-se desenhar um relógio com todos os números e os ponteiros marcando 2h45. O teste avalia funções executivas, memória, habilidades visuoconstrutivas, abstração e compreensão verbal — os números precisam ser arábicos e em ordem correta."
+    },
+    {
+      "question": "Quais são os pontos de corte do teste de fluência verbal semântica (animais em 1 minuto)?",
+      "options": [
+        "9 animais para analfabetos e 13 para 8 anos ou mais de estudo",
+        "13 animais para analfabetos e 9 para 8 anos ou mais de estudo",
+        "9 animais para analfabetos e 20 para 8 anos ou mais de estudo",
+        "15 animais para analfabetos e 18 para 8 anos ou mais de estudo"
+      ],
+      "correctIndex": 0,
+      "explanation": "A fluência verbal avalia predominantemente linguagem e memória semântica, além da função executiva. Conta-se 1 ponto por animal citado em 1 minuto: o corte é 9 pontos para analfabetos e 13 pontos para quem tem 8 ou mais anos de escolaridade. O acompanhante deve ser avisado de que não pode ajudar."
+    },
+    {
+      "question": "Durante a fluência verbal, o idoso diz 'gato, gata, boi, vaca'. Quantos itens são computados?",
+      "options": [
+        "Gato e gata contam 1; boi e vaca contam 2",
+        "Gato e gata contam 2; boi e vaca contam 2",
+        "Gato e gata contam 1; boi e vaca contam 1",
+        "Gato e gata contam 2; boi e vaca contam 1"
+      ],
+      "correctIndex": 0,
+      "explanation": "A interpretação é a contagem do número de itens excluindo repetições e as oposições REGULARES de gênero: gato/gata computa apenas 1, mas boi/vaca computa 2 por serem palavras distintas. Total do exemplo: 3 itens. Citar muitas espécies do mesmo animal também é sinal que pode alertar para demência."
+    },
+    {
+      "question": "Na Escala de Depressão Geriátrica reduzida (GDS-15), reproduzida com seus 15 itens, qual é o ponto de corte?",
+      "options": [
+        "Total maior que 5 levanta suspeita de depressão",
+        "Total maior que 10 levanta suspeita de depressão",
+        "Total maior que 2 levanta suspeita de depressão",
+        "Total maior que 12 levanta suspeita de depressão"
+      ],
+      "correctIndex": 0,
+      "explanation": "A folha do instrumento traz literalmente 'Total > 5 = suspeita de depressão'. São 15 perguntas com resposta apenas sim ou não, e a GDS é a escala mais usada para rastreio de depressão no idoso. Deve ser aplicada sempre que houver suspeita de depressão na anamnese de humor.",
+      "image": "f2_pg13",
+      "imageCaption": "Escala de Depressão Geriátrica GDS-15 e ponto de corte"
+    },
+    {
+      "question": "Na aplicação da GDS-15, como se atribui 1 ponto a cada item?",
+      "options": [
+        "Pontua a resposta depressiva, que às vezes é o 'não'",
+        "Pontua sempre a resposta 'sim' em todos os quinze itens",
+        "Pontua sempre a resposta 'não' em todos os quinze itens",
+        "Pontua cada item de 0 a 3 conforme a intensidade do sintoma"
+      ],
+      "correctIndex": 0,
+      "explanation": "Conta-se a resposta depressiva, e nem sempre ela é o 'sim'. Em 'Está satisfeito com sua vida?' pontua o NÃO; em 'Sente que a vida está vazia?' pontua o SIM. Marca-se 1 quando a resposta for igual ao exemplo entre parênteses e 0 quando for diferente. O idoso deve ser avisado antes de que só pode responder sim ou não."
+    },
+    {
+      "question": "Sobre PHQ-9 e Escala de Cornell, os pontos de corte apresentados na aula são:",
+      "options": [
+        "PHQ-9 acima de 10 e Cornell acima de 12 sugerem depressão",
+        "PHQ-9 acima de 5 e Cornell acima de 30 sugerem depressão",
+        "PHQ-9 acima de 20 e Cornell acima de 6 sugerem depressão",
+        "PHQ-9 acima de 15 e Cornell acima de 18 sugerem depressão"
+      ],
+      "correctIndex": 0,
+      "explanation": "No PHQ-9 (escore até 30), mais de 10 pontos indica chance de depressão. Na Cornell (escore até 38), abaixo de 6 há ausência de sintomas significativos, acima de 10 depressão maior provável, acima de 12 é o corte clínico usual para depressão na demência e acima de 18 depressão maior definida."
+    },
+    {
+      "question": "Analisando o Inventário Neuropsiquiátrico (NPI) do protocolo, como cada sintoma é graduado?",
+      "options": [
+        "Intensidade de 1 a 3 e frequência de 1 a 4 para cada sintoma",
+        "Intensidade de 1 a 4 e frequência de 1 a 3 para cada sintoma",
+        "Intensidade de 0 a 5 e frequência de 0 a 5 para cada sintoma",
+        "Apenas presença ou ausência, sem graduar nenhum dos sintomas"
+      ],
+      "correctIndex": 0,
+      "explanation": "O NPI marca cada sintoma como não/sim e, se presente, gradua intensidade de 1 a 3 (leve, moderado, grave) e frequência de 1 a 4 (ocasional, comum, frequente, muito frequente). Avalia alucinação, delírio, apatia, disforia, agitação, ansiedade, desinibição, irritabilidade, comportamento motor aberrante, euforia, apetite e comportamento noturno.",
+      "image": "pg22",
+      "imageCaption": "Inventário Neuropsiquiátrico — intensidade e frequência"
+    },
+    {
+      "question": "Observando a Mini Avaliação Nutricional (MNA), o que caracteriza a seção de TRIAGEM?",
+      "options": [
+        "Triagem vai até 14 pontos e 8 a 11 indica risco de desnutrição",
+        "Triagem vai até 14 pontos e 8 a 11 indica estado nutricional normal",
+        "Triagem vai até 30 pontos e 8 a 11 indica risco de desnutrição",
+        "Triagem vai até 14 pontos e 12 a 14 indica risco de desnutrição"
+      ],
+      "correctIndex": 0,
+      "explanation": "A triagem tem 6 itens (A a F: ingesta, perda de peso, mobilidade, estresse/doença aguda, problemas neuropsicológicos e IMC), somando no máximo 14 pontos: 12 a 14 é normal, 8 a 11 é risco de desnutrição e 0 a 7 é desnutrido. Se o resultado for igual ou menor que 11, prossegue-se com as perguntas G a R da avaliação global.",
+      "image": "f2_pg12",
+      "imageCaption": "MNA — triagem, avaliação global e faixas de escore"
+    },
+    {
+      "question": "Considerando a pontuação TOTAL da MNA (máximo de 30 pontos), a classificação correta é:",
+      "options": [
+        "24 a 30 normal; 17 a 23,5 risco; abaixo de 17 desnutrido",
+        "12 a 14 normal; 8 a 11 risco; abaixo de 8 desnutrido",
+        "24 a 30 desnutrido; 17 a 23,5 risco; abaixo de 17 normal",
+        "27 a 30 normal; 20 a 26 risco; abaixo de 20 desnutrido"
+      ],
+      "correctIndex": 0,
+      "explanation": "A pontuação total soma triagem (14) e avaliação global (16), chegando a 30 pontos: de 24 a 30 estado nutricional normal, de 17 a 23,5 sob risco de desnutrição e menos de 17 desnutrido. A pegadinha é confundir essas faixas com as da triagem isolada (12-14 / 8-11 / 0-7)."
+    },
+    {
+      "question": "Qual medida antropométrica é descrita como a mais sensível e mais utilizada para avaliar massa muscular no idoso, e qual seu valor de normalidade?",
+      "options": [
+        "Circunferência da panturrilha, com valor normal de 31 cm ou mais",
+        "Circunferência abdominal, com valor normal de 88 cm ou menos",
+        "Circunferência do braço, com valor normal de 21 cm ou menos",
+        "Circunferência do punho, com valor normal de 16 cm ou mais"
+      ],
+      "correctIndex": 0,
+      "explanation": "A circunferência da panturrilha é a medida antropométrica mais sensível e usada para massa muscular em idosos, sendo normal quando maior ou igual a 31 cm — panturrilha pequena fala a favor de sarcopenia. Esse mesmo valor aparece no item R da MNA: PP menor que 31 vale 0 ponto e PP maior ou igual a 31 vale 1 ponto."
+    },
+    {
+      "question": "Qual perda ponderal não intencional é considerada clinicamente significativa e constitui critério da Síndrome de Fragilidade?",
+      "options": [
+        "Mais de 5% em seis meses ou mais de 10% em um ano",
+        "Mais de 10% em seis meses ou mais de 20% em um ano",
+        "Mais de 2% em seis meses ou mais de 5% em um ano",
+        "Mais de 5% em um mês ou mais de 10% em seis meses"
+      ],
+      "correctIndex": 0,
+      "explanation": "Diminuições não intencionais maiores que 5% em seis meses ou 10% em um ano devem ser investigadas e constituem critério da Síndrome de Fragilidade. Faz parte da senescência perder massa magra e ganhar gordura até os 50-60 anos; depois há tendência à redução ponderal às custas de ambas. O IMC considerado normal no idoso é de 22 a 27."
+    },
+    {
+      "question": "Por que, fisiologicamente, o idoso apresenta maior tendência a quedas mesmo sem doença específica?",
+      "options": [
+        "Projeção anterior do tronco, com base estreita e centro alto",
+        "Projeção posterior do tronco, com base larga e centro baixo",
+        "Aumento da base de sustentação, com centro de gravidade baixo",
+        "Retificação da coluna lombar, com centro de gravidade posterior"
+      ],
+      "correctIndex": 0,
+      "explanation": "A projeção anterior do tronco confere ao idoso o aspecto de pirâmide invertida: base estreita com centro de gravidade alto. Somam-se adaptações compensatórias mais lentas e muitas vezes ineficazes. O equilíbrio depende dos sistemas vestibular, neural, proprioceptivo, visual, auditivo e osteomuscular — daí a indicação de fisioterapia para treino de equilíbrio."
+    },
+    {
+      "question": "Homem de 82 anos caiu quatro vezes no último ano, uma delas batendo a cabeça. Qual a definição e a principal complicação a temer?",
+      "options": [
+        "Caidor crônico (mais de 3 quedas/ano), com risco de hematoma subdural",
+        "Caidor crônico (mais de 3 quedas/ano), com risco de embolia pulmonar",
+        "Instabilidade postural (1 queda/ano), com risco de hematoma subdural",
+        "Síndrome de imobilidade (2 quedas/ano), com risco de úlcera por pressão"
+      ],
+      "correctIndex": 0,
+      "explanation": "Síndrome do caidor crônico é definida por mais de 3 quedas em um ano, e o grande problema decorrente é o hematoma subdural pelo trauma craniano de repetição. É obrigatório investigar a causa (tropeço, tontura, taquicardia, precordialgia, turvação visual, perda de consciência, liberação esfincteriana) e solicitar imagem se bateu a cabeça."
+    },
+    {
+      "question": "Analisando a Short Physical Performance Battery (SPPB), quais são seus componentes e o escore máximo?",
+      "options": [
+        "Equilíbrio, velocidade de marcha e levantar da cadeira, até 12 pontos",
+        "Equilíbrio, força de preensão e sensibilidade tátil, até 12 pontos",
+        "Equilíbrio, velocidade de marcha e preensão palmar, até 20 pontos",
+        "Marcha, cognição e continência esfincteriana, até 15 pontos"
+      ],
+      "correctIndex": 0,
+      "explanation": "A SPPB tem três domínios de 0 a 4 pontos cada, totalizando 12: testes de equilíbrio, velocidade de marcha em 4 metros e teste de levantar da cadeira 5 vezes sem usar os braços. Escores de 0 a 3 indicam pior desempenho e alta mortalidade, 4 a 9 desempenho reduzido e 10 a 12 melhor desempenho com mortalidade muito baixa.",
+      "image": "pg25",
+      "imageCaption": "SPPB — equilíbrio, marcha de 4 m e levantar da cadeira"
+    },
+    {
+      "question": "Na seção MEDICAMENTOS do protocolo da AGA, além de fármaco, dose e tempo de uso, o que mais deve ser registrado para cada droga?",
+      "options": [
+        "Carga anticolinérgica, sedativa e risco de queda ou hiponatremia",
+        "Custo mensal, apresentação farmacêutica e cor do comprimido",
+        "Data de validade, nome do fabricante e local de compra",
+        "Somente a dose diária e o número total de comprimidos"
+      ],
+      "correctIndex": 0,
+      "explanation": "O protocolo pede que cada fármaco seja marcado quanto à carga anticolinérgica, antidopaminérgica e sedativa, e quanto aos riscos de hipotensão ortostática, quedas, hiponatremia e alargamento do QTc. É assim que a polifarmácia entra na AGA: não basta listar medicamentos, é preciso qualificar o risco iatrogênico de cada um.",
+      "image": "pg37",
+      "imageCaption": "Protocolo de medicamentos — carga e risco por fármaco"
+    },
+    {
+      "question": "Idosa de 78 anos com insônia terminal e duas quedas no último semestre. Qual a conduta inicial mais adequada?",
+      "options": [
+        "Investigar higiene do sono e evitar benzodiazepínico",
+        "Prescrever benzodiazepínico em dose baixa à noite",
+        "Prescrever amitriptilina para induzir sono e analgesia",
+        "Prescrever antipsicótico sedativo por tempo indeterminado"
+      ],
+      "correctIndex": 0,
+      "explanation": "O benzodiazepínico tem efeito sedativo e aumenta o risco de queda, não sendo indicado para tratar insônia no idoso. A amitriptilina é anticolinérgica — bloqueia a acetilcolina, inibe o parassimpático e piora cognição e boca seca. Antes de qualquer droga, caracterize a insônia (inicial ou terminal), cheque higiene do sono e investigue apneia se há pausas respiratórias."
+    },
+    {
+      "question": "Segundo o APGAR da Família apresentado nos fatores contextuais, qual faixa indica disfunção familiar severa?",
+      "options": [
+        "0 a 4 pontos indica disfunção familiar severa",
+        "0 a 4 pontos indica boa funcionalidade familiar",
+        "7 a 10 pontos indica disfunção familiar severa",
+        "5 a 6 pontos indica disfunção familiar severa"
+      ],
+      "correctIndex": 0,
+      "explanation": "O APGAR familiar avalia cinco dimensões (Adaptação, Partnership, Growth, Affection e Resolve), com 2, 1 ou 0 pontos para 'quase sempre', 'algumas vezes' e 'quase nunca', totalizando 10. A interpretação é: 7 a 10 boa funcionalidade familiar, 5 a 6 disfunção moderada e 0 a 4 disfunção severa. Quanto maior, melhor a funcionalidade familiar.",
+      "image": "pg39",
+      "imageCaption": "APGAR da Família — dimensões e interpretação"
+    },
+    {
+      "question": "Observando a Escala Clínica de Fragilidade em português, como se organizam seus níveis?",
+      "options": [
+        "Nível 1 muito ativo até nível 9 doente terminal",
+        "Nível 1 doente terminal até nível 9 muito ativo",
+        "Nível 1 muito ativo até nível 5 doente terminal",
+        "Nível 0 muito ativo até nível 10 doente terminal"
+      ],
+      "correctIndex": 0,
+      "explanation": "A escala vai de 1 (muito ativo) a 9 (doente terminal), passando por ativo, regular, vulnerável, levemente frágil, moderadamente frágil, gravemente frágil e muito gravemente frágil. A aula lembra que a maioria dos idosos avaliados fica no nível 3 (regular), e que 'ativo' é, por exemplo, quem só faz atividade física nas férias.",
+      "image": "pg44",
+      "imageCaption": "Escala Clínica de Fragilidade — níveis 1 a 9"
+    },
+    {
+      "question": "No plano de metas terapêuticas da AGA, o que constitui a PRIORIDADE 1?",
+      "options": [
+        "Reduzir o declínio funcional e confortar paciente e família",
+        "Curar as doenças de base com intervenções farmacológicas",
+        "Prevenir fatores de risco cardiovascular a longo prazo",
+        "Solicitar exames complementares para todos os sistemas"
+      ],
+      "correctIndex": 0,
+      "explanation": "O protocolo hierarquiza: Prioridade 1 são intervenções capazes de reduzir o declínio funcional somadas às que confortam paciente e família; Prioridade 2 são intervenções curativas ou capazes de modificar a história natural das doenças; Prioridade 3 são intervenções preventivas dirigidas a fatores de risco. Prevenção vem por último, não primeiro."
+    },
+    {
+      "question": "Qual das situações abaixo corresponde a um DECLÍNIO ESPERADO do envelhecimento, e não a um sinal de alerta para demência?",
+      "options": [
+        "Perder a capacidade de fazer várias tarefas ao mesmo tempo",
+        "Deixar a panela no fogo e se perder em rua já conhecida",
+        "Não reconhecer o rosto dos filhos que moram na mesma casa",
+        "Perder totalmente a capacidade de cuidar do próprio dinheiro"
+      ],
+      "correctIndex": 0,
+      "explanation": "É normal para a idade perder a capacidade de multitarefas — por isso se orienta focar uma atividade por vez e criar rotinas com lugar fixo para cada objeto. Já esquecer panela no fogo, perder-se em local conhecido, não reconhecer familiares ou perder o manejo do dinheiro são sinais de alerta que exigem busca ativa de memória e rastreio cognitivo."
+    },
+    {
+      "question": "Ex-professor de matemática, 12 anos de estudo, marca 28 pontos no MEEM mas relata que não consegue mais conferir o troco. Qual a interpretação correta?",
+      "options": [
+        "Valorizar o sinal de alerta, pois o desempenho caiu para o perfil dele",
+        "Descartar demência, pois a pontuação total ficou dentro do corte",
+        "Repetir o teste em cinco anos, pois a queixa é isolada e leve",
+        "Encaminhar direto para internação em unidade de geriatria"
+      ],
+      "correctIndex": 0,
+      "explanation": "A aula é explícita: a pontuação sozinha não quer dizer nada, é preciso avaliar as queixas e a profissão do paciente — um professor de matemática que não consegue mais fazer conta é sinal de alerta. Além disso, com mais de 11 anos de estudo o corte de Brucki é 29, então 28 já está abaixo. Repita o MEEM a cada 6 meses e complemente com outros testes."
+    }
+  ]
+}

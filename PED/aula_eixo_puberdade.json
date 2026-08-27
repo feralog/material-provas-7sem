@@ -1,0 +1,354 @@
+{
+  "titulo": "Distúrbios do Eixo e Puberdade",
+  "eyebrow": "Pediatria · Endocrinologia",
+  "subtitulo": "Do eixo hipotálamo-hipófise-gonadal à puberdade precoce e ao atraso puberal",
+  "intro": "Material construído sobre a Aula 5 de Pediatria: fisiologia do eixo hipotálamo-hipófise-gonadal, cronologia normal da puberdade e estadiamento de Tanner, seguidos do diagnóstico e do tratamento da puberdade precoce (central e periférica) e do atraso puberal. O caso clínico de M.E.S., 6 anos e 4 meses, atravessa todo o conteúdo.",
+  "questoes": [
+    {
+      "question": "Como a aula define puberdade precoce no sexo feminino?",
+      "options": [
+        "Caracteres sexuais secundários antes dos 8 anos",
+        "Caracteres sexuais secundários antes dos 6 anos",
+        "Caracteres sexuais secundários antes dos 10 anos",
+        "Caracteres sexuais secundários antes dos 12 anos"
+      ],
+      "correctIndex": 0,
+      "explanation": "Puberdade precoce é o aparecimento de caracteres sexuais secundários antes dos 8 anos nas meninas e antes dos 9 anos nos meninos. Esse é o limite inferior da faixa normal de início puberal feminina (8 a 13 anos pela SBP). Telarca aos 10 ou 12 anos é plenamente normal."
+    },
+    {
+      "question": "Qual é o primeiro sinal puberal esperado na menina?",
+      "options": [
+        "Telarca: broto mamário do estágio M2",
+        "Pubarca: pelos pubianos do estágio P2",
+        "Menarca: primeira menstruação da vida",
+        "Adrenarca: odor axilar e acne na face"
+      ],
+      "correctIndex": 0,
+      "explanation": "Na menina, o primeiro sinal puberal é a telarca, ou seja, o broto mamário que define o estágio M2 de Tanner, entre 8 e 13 anos. A pubarca depende da adrenarca e pode ocorrer de forma dissociada da gonadarca. A menarca é evento tardio, geralmente em M4."
+    },
+    {
+      "question": "Qual achado marca o início da puberdade no menino?",
+      "options": [
+        "Aumento do volume testicular acima de 4 mL",
+        "Aparecimento de pelos pubianos escuros",
+        "Aumento do comprimento do pênis (G3)",
+        "Alteração do timbre da voz com acne"
+      ],
+      "correctIndex": 0,
+      "explanation": "No menino a puberdade começa pela gonadarca: aumento do volume testicular acima de 4 mL, o que corresponde ao estágio G2 de Tanner, entre 9 e 14 anos. O crescimento do pênis (G3) e a mudança da voz são eventos posteriores. Pelos pubianos podem refletir apenas adrenarca."
+    },
+    {
+      "question": "Segundo a Sociedade Brasileira de Pediatria, qual é a faixa etária normal de início da puberdade nas meninas?",
+      "options": [
+        "Entre 8 e 13 anos nas meninas (SBP)",
+        "Entre 6 e 11 anos nas meninas (SBP)",
+        "Entre 9 e 14 anos nas meninas (SBP)",
+        "Entre 10 e 15 anos nas meninas (SBP)"
+      ],
+      "correctIndex": 0,
+      "explanation": "A SBP considera normal o início entre 8 e 13 anos nas meninas e entre 9 e 14 anos nos meninos; a SBEM amplia para 8 a 14 e 10 a 15 anos, respectivamente. As faixas de 9 a 14 e de 10 a 15 anos são as referências masculinas, não femininas."
+    },
+    {
+      "question": "Na imagem dos estágios de Tanner femininos, qual descrição corresponde ao estágio M3?",
+      "options": [
+        "Aumento de mama e aréola sem separação de contornos",
+        "Nódulo sob a aréola, que fica elevada e alargada",
+        "Projeção da aréola formando uma segunda elevação",
+        "Aréola recua ao contorno da mama, papila projetada"
+      ],
+      "correctIndex": 0,
+      "explanation": "M3 é o crescimento adicional de mama e aréola sem que haja separação dos contornos entre elas. O nódulo subareolar inicial define M2, o duplo contorno define M4 e o recuo da aréola com papila isolada define M5. A paciente do caso tinha M3P2 aos 6 anos e 4 meses.",
+      "image": "pg19",
+      "imageCaption": "Estágios de Tanner — sexo feminino (M1 a M5)"
+    },
+    {
+      "question": "Segundo a imagem dos estágios de Tanner masculinos, o que caracteriza o estágio G2?",
+      "options": [
+        "Aumento testicular e escroto fino e avermelhado",
+        "Aumento do comprimento do pênis, testículos maiores",
+        "Aumento do diâmetro do pênis, com glande maior",
+        "Genitália já com tamanho e formato adultos"
+      ],
+      "correctIndex": 0,
+      "explanation": "G2 é o aumento de volume do escroto e dos testículos, com pele escrotal mais fina, avermelhada e texturizada. O alongamento do pênis é G3, o aumento de diâmetro com desenvolvimento da glande é G4 e a genitália adulta é G5. G2 corresponde a volume testicular acima de 4 mL.",
+      "image": "pg20",
+      "imageCaption": "Estágios de Tanner — sexo masculino (G1 a G5)"
+    },
+    {
+      "question": "Em que momento da sequência puberal feminina costuma ocorrer a menarca?",
+      "options": [
+        "Em M4, cerca de 2 anos após a telarca",
+        "Em M2, junto com o broto mamário",
+        "Em M5, cerca de 4 anos após a telarca",
+        "Em M3, antes do estirão de crescimento"
+      ],
+      "correctIndex": 0,
+      "explanation": "A menarca ocorre em geral no estágio M4, aproximadamente 2 anos após a telarca, e o desenvolvimento se completa 2 a 4 anos depois dela. Ela vem após o pico de velocidade de crescimento, e não antes. Em M2 a menina ainda está no início do processo."
+    },
+    {
+      "question": "Em qual fase do estadiamento genital ocorre o pico de velocidade de crescimento no menino?",
+      "options": [
+        "Durante os estágios G3 e G4 de Tanner",
+        "Durante os estágios G1 e G2 de Tanner",
+        "Logo após atingir o estágio G5 completo",
+        "Antes do aumento testicular inicial"
+      ],
+      "correctIndex": 0,
+      "explanation": "No menino o estirão puberal ocorre durante G3-G4, portanto mais tarde dentro da sequência do que nas meninas. O desenvolvimento completo se dá 3 a 4 anos após o início. Em G1-G2 o menino ainda cresce em ritmo pré-puberal."
+    },
+    {
+      "question": "Qual evento neuroendócrino deflagra o início da puberdade no eixo central?",
+      "options": [
+        "Queda da sensibilidade do gonadostato ao feedback",
+        "Aumento da sensibilidade do gonadostato ao estradiol",
+        "Secreção contínua e não pulsátil de GnRH noturno",
+        "Perda completa da resposta hipofisária ao GnRH"
+      ],
+      "correctIndex": 0,
+      "explanation": "A aula lista como eventos da puberdade a diminuição da sensibilidade do gonadostato, a gonadarca e a adrenarca. Com o gonadostato menos sensível ao feedback negativo dos esteroides, o GnRH volta a ser liberado em pulsos e reativa o eixo. A secreção de GnRH puberal é pulsátil, nunca contínua."
+    },
+    {
+      "question": "Observando o esquema da glândula adrenal, qual camada é responsável pelos androgênios da adrenarca?",
+      "options": [
+        "Zona reticular, que produz DHEA e androstenediona",
+        "Zona glomerulosa, que produz DHEA e aldosterona",
+        "Zona fasciculada, que produz cortisol e DHEAS",
+        "Medula adrenal, que produz catecolaminas e DHEA"
+      ],
+      "correctIndex": 0,
+      "explanation": "A adrenarca depende da zona reticular do córtex adrenal, que produz DHEA e androstenediona a partir do colesterol, via pregnenolona e 17-alfa-OH-pregnenolona. A glomerulosa produz mineralocorticoides, a fasciculada produz cortisol e a medula produz catecolaminas.",
+      "image": "pg12",
+      "imageCaption": "Camadas do córtex adrenal e via de esteroidogênese"
+    },
+    {
+      "question": "Menina de 6 anos e 4 meses com M3P2, velocidade de crescimento de 9,5 cm/ano e estatura em escore Z +2,32. Qual o prognóstico estatural sem tratamento?",
+      "options": [
+        "Estatura final baixa, abaixo do alvo genético",
+        "Estatura final alta, acima do alvo genético",
+        "Estatura final dentro do alvo genético previsto",
+        "Estatura final normal, com menarca tardia"
+      ],
+      "correctIndex": 0,
+      "explanation": "A combinação de M3P2, velocidade de crescimento de 9,5 cm/ano (referência 5-6 cm/ano) e escore Z +2,32 indica maturação esquelética acelerada. A criança é alta hoje, mas as epífises se fecham precocemente e o crescimento para antes da hora, resultando em estatura final muito abaixo do alvo parental."
+    },
+    {
+      "question": "No caso da aula, LH basal 0,8 UI/L, FSH 3,5 UI/L, estradiol 25 pg/mL e volume uterino de 4,5 cm³ indicam qual diagnóstico?",
+      "options": [
+        "Puberdade precoce central, GnRH-dependente",
+        "Puberdade precoce periférica, GnRH-independente",
+        "Telarca precoce isolada, variante do normal",
+        "Adrenarca precoce isolada, sem risco estatural"
+      ],
+      "correctIndex": 0,
+      "explanation": "LH basal detectável (0,8 UI/L, com referência pré-púbere abaixo de 0,1) junto de FSH e estradiol elevados mostra que as gonadotrofinas comandam o quadro, ou seja, o eixo foi ativado. O útero de 4,5 cm³ com eco endometrial (normal pré-púbere menor que 1,8 cm³) confirma a impregnação estrogênica. Na forma periférica o LH estaria suprimido."
+    },
+    {
+      "question": "Qual valor de LH basal, em ensaio ultrassensível, sugere ativação puberal do eixo hipotálamo-hipófise-gonadal?",
+      "options": [
+        "LH basal igual ou acima de 0,3–0,7 UI/L",
+        "LH basal sempre abaixo de 0,1 UI/L",
+        "LH basal suprimido com FSH elevado",
+        "LH basal indetectável após estímulo"
+      ],
+      "correctIndex": 0,
+      "explanation": "Os algoritmos da aula trazem que valores de LH basal iguais ou superiores a 0,3–0,7 UI/L, em ensaio ultrassensível, sugerem ativação puberal do eixo. Valores abaixo de 0,1 UI/L caracterizam a faixa pré-púbere. LH suprimido com esteroides sexuais elevados aponta para causa periférica."
+    },
+    {
+      "question": "A radiografia de mão e punho mostrou idade óssea de 9 anos para idade cronológica de 6 anos e 4 meses. O que isso significa?",
+      "options": [
+        "Maturação esquelética avançada, com fusão epifisária precoce",
+        "Maturação esquelética atrasada, típica do atraso constitucional",
+        "Maturação esquelética normal para a idade cronológica atual",
+        "Maturação esquelética atrasada, sugestiva de hipotireoidismo"
+      ],
+      "correctIndex": 0,
+      "explanation": "A idade óssea pelo método de Greulich-Pyle está quase 3 anos à frente da idade cronológica, refletindo o efeito dos esteroides sexuais sobre a cartilagem de crescimento. Esse avanço antecipa a fusão das epífises e compromete a estatura final. Idade óssea atrasada seria o padrão do RCCP e do hipotireoidismo."
+    },
+    {
+      "question": "Menina de 6 anos com puberdade precoce central confirmada e ressonância de sela túrcica normal. Como classificar o quadro?",
+      "options": [
+        "PPC idiopática, a forma mais comum em meninas",
+        "PPC orgânica, por hamartoma do hipotálamo",
+        "PPP por cisto ovariano funcionante autônomo",
+        "PPP da síndrome de McCune-Albright clássica"
+      ],
+      "correctIndex": 0,
+      "explanation": "Confirmada a ativação do eixo e afastada lesão do SNC pela ressonância normal, o diagnóstico é de puberdade precoce central idiopática, a apresentação mais frequente nas meninas. As formas orgânicas (hamartoma, tumor, radiação, trauma) mostrariam alteração na imagem. As opções periféricas cursam com LH suprimido."
+    },
+    {
+      "question": "Por que a puberdade precoce central em meninos exige investigação mais agressiva?",
+      "options": [
+        "Porque causas orgânicas do SNC são mais frequentes",
+        "Porque a forma idiopática é a mais frequente neles",
+        "Porque a idade óssea costuma ficar atrasada neles",
+        "Porque o LH basal permanece suprimido nos meninos"
+      ],
+      "correctIndex": 0,
+      "explanation": "A aula destaca que a PPC idiopática é comum em meninas, mas que em meninos deve-se pensar mais em causas secundárias, sobretudo lesões do sistema nervoso central. Por isso a ressonância de encéfalo tem peso ainda maior nesse grupo. A idade óssea está avançada em qualquer puberdade precoce."
+    },
+    {
+      "question": "Conforme a tabela de comparação da aula, quais são causas orgânicas de puberdade precoce central?",
+      "options": [
+        "Hamartomas, tumores, radiação ou trauma do SNC",
+        "Cistos ovarianos, tumores de suprarrenal e HAC",
+        "Telarca precoce isolada e adrenarca precoce",
+        "Síndrome de McCune-Albright e testotoxicose"
+      ],
+      "correctIndex": 0,
+      "explanation": "As causas orgânicas de PPC listadas são hamartomas, tumores, radiação e trauma do sistema nervoso central, todas capazes de ativar prematuramente o eixo. Cistos ovarianos, tumores adrenais e McCune-Albright são causas periféricas, independentes de GnRH. Telarca e adrenarca precoces isoladas são variantes do normal.",
+      "image": "pg29",
+      "imageCaption": "Puberdade precoce central versus periférica — resumo"
+    },
+    {
+      "question": "Qual conjunto reúne apenas causas de puberdade precoce periférica?",
+      "options": [
+        "Cistos ovarianos, tumor adrenal, McCune-Albright",
+        "Hamartoma hipotalâmico, trauma e radioterapia",
+        "Ativação idiopática do eixo hipotálamo-hipófise",
+        "Atraso constitucional e síndrome de Kallmann"
+      ],
+      "correctIndex": 0,
+      "explanation": "A puberdade precoce periférica é independente de GnRH e decorre de produção autônoma de esteroides: cistos ovarianos, tumores de suprarrenal e síndrome de McCune-Albright. Hamartoma, trauma e radiação ativam o eixo e produzem forma central. Kallmann e RCCP causam atraso puberal, não precocidade."
+    },
+    {
+      "question": "Segundo o algoritmo, sinais puberais precoces com LH basal suprimido e DHEAS elevado apontam para qual origem?",
+      "options": [
+        "Origem adrenal, como HAC ou tumor adrenal",
+        "Origem gonadal, como cisto ou tumor de ovário",
+        "Origem central, com indicação de RM de encéfalo",
+        "Variante normal, sem necessidade de exames"
+      ],
+      "correctIndex": 0,
+      "explanation": "Com LH baixo ou suprimido o quadro é GnRH-independente; o próximo passo é ver qual esteroide está elevado. Elevação de DHEAS e androgênios aponta para origem adrenal, como hiperplasia adrenal congênita ou tumor adrenal. Estradiol ou testosterona elevados com LH suprimido apontariam para origem gonadal.",
+      "image": "pg31",
+      "imageCaption": "Algoritmo: central versus periférica, gonadal ou adrenal"
+    },
+    {
+      "question": "Qual é o tratamento padrão-ouro da puberdade precoce central e seu mecanismo de ação?",
+      "options": [
+        "Análogo de GnRH de depósito, por dessensibilização",
+        "Análogo de GnRH em pulsos, por estímulo hipofisário",
+        "Inibidor de aromatase oral, por bloqueio periférico",
+        "Antiandrogênio contínuo, por bloqueio do receptor"
+      ],
+      "correctIndex": 0,
+      "explanation": "O padrão-ouro é o análogo de GnRH de depósito, como leuprorrelina 3,75 mg IM a cada 28 dias. Administrado de forma contínua, ele dessensibiliza e promove down-regulation dos receptores hipofisários de GnRH, reduzindo LH, FSH e a produção gonadal de esteroides. É o efeito oposto ao do GnRH fisiológico, liberado em pulsos."
+    },
+    {
+      "question": "Como se monitora a resposta ao análogo de GnRH na puberdade precoce central?",
+      "options": [
+        "LH após 3 meses de tratamento e idade óssea anual",
+        "LH após 12 meses de tratamento e idade óssea mensal",
+        "Estradiol semanal e radiografia de punho semestral",
+        "FSH diário e ultrassom pélvico a cada 28 dias"
+      ],
+      "correctIndex": 0,
+      "explanation": "O monitoramento proposto é a dosagem de LH após 3 meses de tratamento e a idade óssea anual, para confirmar a desaceleração da maturação esquelética. Os objetivos são parar a progressão dos caracteres, normalizar a velocidade de crescimento e evitar a fusão precoce das epífises."
+    },
+    {
+      "question": "Quando não é possível tratar a causa da puberdade precoce periférica, quais fármacos controlam o quadro?",
+      "options": [
+        "Cetoconazol, espironolactona, letrozol e tamoxifeno",
+        "Leuprorrelina, triptorrelina e goserrelina de depósito",
+        "Levotiroxina, prednisona e hormônio de crescimento",
+        "Testosterona, estrogênio conjugado e progesterona"
+      ],
+      "correctIndex": 0,
+      "explanation": "Na PPP o tratamento é da causa, muitas vezes cirúrgico nos tumores; sem isso, usam-se drogas que bloqueiam a síntese ou a ação dos esteroides sexuais. A aula cita cetoconazol (inibidor da esteroidogênese), espironolactona e acetato de ciproterona (antiandrogênicos), letrozol e anastrozol (inibidores da aromatase) e tamoxifeno (inibidor do receptor de estrogênio). Análogos de GnRH não funcionam porque o quadro é GnRH-independente."
+    },
+    {
+      "question": "Menina de 3 anos com broto mamário isolado, velocidade de crescimento normal e idade óssea compatível. Qual a conduta?",
+      "options": [
+        "Acompanhamento clínico: telarca precoce isolada",
+        "Análogo de GnRH imediato por 2 anos, no mínimo",
+        "RM de encéfalo e biópsia de mama de urgência",
+        "Cetoconazol oral até regressão do broto mamário"
+      ],
+      "correctIndex": 0,
+      "explanation": "Telarca precoce isolada e adrenarca precoce isolada são variantes do normal, sem aceleração da velocidade de crescimento nem avanço da idade óssea. A conduta é acompanhamento clínico com reavaliação da progressão. Tratamento com análogo de GnRH só se justifica quando há puberdade precoce central progressiva."
+    },
+    {
+      "question": "Como se define atraso puberal no sexo masculino?",
+      "options": [
+        "Ausência de aumento testicular > 4 mL aos 14 anos",
+        "Ausência de aumento testicular > 4 mL aos 12 anos",
+        "Ausência de pelos pubianos P2 aos 13 anos de idade",
+        "Ausência de pico de crescimento aos 16 anos de idade"
+      ],
+      "correctIndex": 0,
+      "explanation": "Atraso puberal no menino é a ausência de aumento testicular acima de 4 mL aos 14 anos; na menina, é a ausência de desenvolvimento mamário aos 13 anos. Aos 12 anos o menino ainda está dentro da faixa normal de início (9 a 14 anos). Pelos pubianos dependem da adrenarca e não definem o marco."
+    },
+    {
+      "question": "Além da idade de início, qual característica do ritmo puberal exige investigação?",
+      "options": [
+        "Mais de 3,5 a 5 anos até a menarca ou volume adulto",
+        "Mais de 1 a 2 anos até a menarca ou volume adulto",
+        "Menos de 2 anos entre a telarca e o estirão final",
+        "Mais de 6 meses entre dois estágios de Tanner"
+      ],
+      "correctIndex": 0,
+      "explanation": "A aula alerta que o ritmo de progressão merece atenção: período de desenvolvimento superior a 3,5–5,0 anos até a menarca ou até o volume testicular adulto (20-25 mL) requer investigação. Uma puberdade que se arrasta pode indicar hipogonadismo parcial, mesmo tendo começado na idade certa."
+    },
+    {
+      "question": "Menina de 14 anos sem telarca, com baixa estatura, LH e FSH elevados e cariótipo 45,X. Qual o diagnóstico pelo fluxograma?",
+      "options": [
+        "Síndrome de Turner, com falência gonadal primária",
+        "Síndrome de Klinefelter, com alta estatura",
+        "Síndrome de Kallmann, com anosmia associada",
+        "Atraso constitucional do crescimento e puberdade"
+      ],
+      "correctIndex": 0,
+      "explanation": "Gonadotrofinas elevadas indicam hipogonadismo hipergonadotrófico, isto é, falha da gônada com perda do feedback negativo; o passo seguinte é o cariótipo. O cariótipo 45,X com baixa estatura define síndrome de Turner. Klinefelter é 47,XXY com alta estatura, e Kallmann cursa com LH e FSH baixos.",
+      "image": "pg39",
+      "imageCaption": "Fluxograma de avaliação diagnóstica do atraso puberal"
+    },
+    {
+      "question": "Adolescente com atraso puberal, LH e FSH baixos e anosmia. Qual é o diagnóstico mais provável?",
+      "options": [
+        "Síndrome de Kallmann, por ausência do bulbo olfatório",
+        "Síndrome de Turner, por disgenesia gonadal completa",
+        "Pan-hipopituitarismo, por deficiência de GH e TSH",
+        "Atraso constitucional, com idade óssea atrasada"
+      ],
+      "correctIndex": 0,
+      "explanation": "Hipogonadismo hipogonadotrófico associado a alteração do olfato caracteriza a síndrome de Kallmann, cuja ressonância mostra ausência do bulbo olfativo. Com olfato normal, o quadro seria de deficiência isolada de gonadotrofinas. Turner cursa com gonadotrofinas elevadas."
+    },
+    {
+      "question": "Adolescente com baixa estatura para a idade cronológica, idade óssea atrasada e estatura normal para a idade óssea. Qual a conduta?",
+      "options": [
+        "Observação clínica, pois o RCCP dispensa tratamento",
+        "Reposição de GH imediata para ganhar estatura final",
+        "Análogo de GnRH mensal para frear a idade óssea",
+        "Testosterona de depósito por tempo indeterminado"
+      ],
+      "correctIndex": 0,
+      "explanation": "Esse é o padrão do retardo constitucional do crescimento e da puberdade (RCCP), em que normalmente não é necessário nenhum tratamento. O enfoque é acompanhar a velocidade de crescimento e assegurar bom prognóstico de estatura final. Esteroides sexuais ficam reservados aos hipogonadismos hipo ou hipergonadotróficos."
+    },
+    {
+      "question": "No fluxograma de etiologias do hipogonadismo, LH e FSH elevados com cariótipo 47,XXY correspondem a qual síndrome?",
+      "options": [
+        "Síndrome de Klinefelter, que cursa com alta estatura",
+        "Síndrome de Turner, que cursa com baixa estatura",
+        "Síndrome de Kallmann, que cursa com anosmia",
+        "Síndrome de Prader-Willi, que cursa com obesidade"
+      ],
+      "correctIndex": 0,
+      "explanation": "No braço hipergonadotrófico, o cariótipo separa 47,XXY (Klinefelter, alta estatura) de 45,X (Turner, baixa estatura). Quando o cariótipo é normal, pensa-se em anorquia, lesão gonadal por quimio ou radioterapia e erros da síntese de testosterona. Kallmann e Prader-Willi ficam no braço hipogonadotrófico.",
+      "image": "pg37",
+      "imageCaption": "Etiologias do hipogonadismo hipo e hipergonadotrófico"
+    },
+    {
+      "question": "Observando os gráficos de evolução da puberdade, quando ocorre o pico de velocidade de crescimento em cada sexo?",
+      "options": [
+        "Nas meninas, cerca de dois anos antes dos meninos",
+        "Nos meninos, cerca de dois anos antes das meninas",
+        "Em ambos os sexos exatamente na mesma idade",
+        "Nas meninas, logo após a menarca ocorrer"
+      ],
+      "correctIndex": 0,
+      "explanation": "Nos gráficos, o pico de velocidade de crescimento das meninas ocorre por volta dos 11-12 anos e o dos meninos por volta dos 13-14 anos, uma diferença de cerca de dois anos. Nas meninas o estirão antecede a menarca, que ocorre já na fase de desaceleração. Nos meninos o pico coincide com G3-G4.",
+      "image": "pg21",
+      "imageCaption": "Escala de Tanner e cronologia dos eventos puberais"
+    }
+  ]
+}

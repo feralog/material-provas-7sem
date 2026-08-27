@@ -1,0 +1,352 @@
+{
+  "titulo": "Saúde Mental na Adolescência",
+  "eyebrow": "Pediatria · Saúde Mental",
+  "subtitulo": "Do rastreio HEEADSSS ao manejo da violência autoprovocada",
+  "intro": "Trinta questões sobre as principais doenças mentais e comportamentais da adolescência: avaliação psiquiátrica e fatores de risco, transtorno de ajustamento, transtornos de humor e de ansiedade, psicose, abuso de substâncias, uso problemático de internet e violência autoprovocada.",
+  "questoes": [
+    {
+      "question": "Segundo a OMS, saúde mental é o estado de bem-estar em que o indivíduo percebe suas habilidades e consegue lidar com os estresses normais da vida. Esse estado corresponde a um equilíbrio dinâmico entre quais componentes essenciais?",
+      "options": [
+        "Bem-estar psicológico, bem-estar emocional e bem-estar social do indivíduo",
+        "Bem-estar físico, ausência de doença e adequada inserção no mercado formal",
+        "Bem-estar espiritual, estabilidade financeira e desempenho escolar regular",
+        "Bem-estar cognitivo, integridade neurológica e ausência de uso de drogas"
+      ],
+      "correctIndex": 0,
+      "explanation": "A definição da OMS usada na aula descreve a saúde mental como um estado de equilíbrio dinâmico entre três componentes essenciais: bem-estar psicológico, emocional e social. Não se trata de ausência de doença nem de desempenho produtivo, e sim de equilíbrio entre essas três dimensões."
+    },
+    {
+      "question": "Na consulta do adolescente com queixas emocionais e comportamentais, qual princípio orienta a leitura dos sintomas relatados pelo paciente e pelos cuidadores?",
+      "options": [
+        "Os sintomas devem ser lidos dentro do contexto histórico, familiar e social",
+        "Os sintomas devem ser lidos isoladamente, sem influência do meio familiar",
+        "Os sintomas devem ser lidos apenas pelo relato dos pais ou responsáveis",
+        "Os sintomas devem ser lidos somente após exames laboratoriais completos"
+      ],
+      "correctIndex": 0,
+      "explanation": "A aula é explícita: os sintomas não podem ser considerados isoladamente, mas no contexto histórico, familiar e social. A consulta deve identificar sofrimento psíquico, situações de risco e aspectos subjetivos, ouvindo tanto o paciente quanto a família."
+    },
+    {
+      "question": "A tabela do instrumento HEEADSSS mostrada associa cada letra da sigla a indagações sugeridas. Qual domínio é investigado pelo segundo 'E' da versão HEEADSSS?",
+      "options": [
+        "Eating disorders — dieta, satisfação com o corpo, peso e altura",
+        "Employment — carteira assinada, horário e interferência nos estudos",
+        "Environment — quem mora na casa, clima do ambiente e brigas",
+        "Exercise — prática de esportes, frequência semanal e lazer ativo"
+      ],
+      "correctIndex": 0,
+      "explanation": "Na tabela, o primeiro E reúne Education/Employment (sabe ler e escrever, trabalha, carteira assinada) e o segundo E, acrescentado na versão HEEADSSS, corresponde a Eating disorders: já fez dieta, gosta do seu corpo, está contente com peso e altura. Emprego e ambiente domiciliar já estão cobertos por E e H.",
+      "image": "pg11",
+      "imageCaption": "Ferramenta HEEADSSS — sigla e indagações sugeridas"
+    },
+    {
+      "question": "No quadro de fatores de risco para transtornos mentais da SBP exibido, o item 'criminalidade paterna' aparece em qual dos blocos?",
+      "options": [
+        "No bloco de fatores da família, junto a violência doméstica",
+        "No bloco de fatores do meio social, junto a comunidades violentas",
+        "No bloco de fatores da criança, junto a temperamento difícil",
+        "No bloco de fatores do meio social, junto a más condições de moradia"
+      ],
+      "correctIndex": 0,
+      "explanation": "O quadro divide os fatores de risco em três blocos: criança/adolescente, família e meio social. 'Criminalidade paterna' está no bloco família, ao lado de conflitos familiares graves, disciplina precária, violência doméstica, pais com transtornos mentais e separação dos pais.",
+      "image": "pg09",
+      "imageCaption": "Fatores de risco para transtornos mentais — SBP"
+    },
+    {
+      "question": "Quais fatores de proteção e resiliência para a saúde mental de crianças e adolescentes são descritos pela SBP?",
+      "options": [
+        "Temperamento fácil, inteligência e vínculo seguro com ao menos um adulto",
+        "Temperamento difícil, inteligência limítrofe e disciplina rígida em casa",
+        "Temperamento fácil, família numerosa e supervisão escolar permanente",
+        "Temperamento retraído, isolamento protetor e rotina domiciliar rígida"
+      ],
+      "correctIndex": 0,
+      "explanation": "Os fatores de proteção são divididos em pessoais (temperamento fácil, inteligência), familiares (relações afetivas seguras com pelo menos um adulto e boas relações familiares) e sociais (pertencimento a grupos e instituições com apoio social e comunitário). Família numerosa e temperamento difícil são fatores de risco, não de proteção."
+    },
+    {
+      "question": "Sobre o diagnóstico dos transtornos mentais na infância e na adolescência, qual afirmação está correta?",
+      "options": [
+        "É fundamentalmente clínico; testes e checklists são complementares",
+        "É fundamentalmente laboratorial; a anamnese apenas confirma o achado",
+        "Depende de neuroimagem funcional para a maioria dos transtornos",
+        "Exige testes psicológicos padronizados antes de qualquer anamnese"
+      ],
+      "correctIndex": 0,
+      "explanation": "O diagnóstico psiquiátrico é fundamentalmente clínico, apoiado na anamnese e no exame clínico/psíquico. Exames laboratoriais, testes psicológicos, entrevistas e checklists têm papel apenas complementar. O diagnóstico busca um padrão persistente nas esferas emocional e relacional."
+    },
+    {
+      "question": "Quais são os prazos que caracterizam o transtorno de ajustamento/adaptação?",
+      "options": [
+        "Sintomas em até 3 meses do estressor e remissão em até 6 meses do seu término",
+        "Sintomas em até 6 meses do estressor e remissão em até 12 meses do seu término",
+        "Sintomas em até 1 mês do estressor e remissão em até 3 meses do seu término",
+        "Sintomas em até 2 semanas do estressor e remissão em até 2 meses do término"
+      ],
+      "correctIndex": 0,
+      "explanation": "Os sintomas surgem nos primeiros 3 meses do advento estressor e há remissão completa em até 6 meses do término da situação desencadeante. Se o agente estressor persistir, o quadro pode evoluir para a forma crônica."
+    },
+    {
+      "question": "Adolescente de 14 anos, sem antecedentes psiquiátricos, iniciou há 2 meses humor deprimido misturado a ansiedade e queda do rendimento escolar, logo após a separação dos pais, com prejuízo familiar e escolar desproporcional ao estressor. Qual a hipótese mais provável?",
+      "options": [
+        "Transtorno de ajustamento com perturbação mista de emoções",
+        "Transtorno depressivo maior com sintomas psicóticos associados",
+        "Transtorno de estresse pós-traumático de apresentação tardia",
+        "Transtorno bipolar tipo II em fase depressiva do primeiro ciclo"
+      ],
+      "correctIndex": 0,
+      "explanation": "O transtorno de ajustamento é uma reação mal adaptativa a um ou múltiplos estressores psicossociais, como o divórcio dos pais, com sintomas emocionais e comportamentais desproporcionais ao estressor e prejuízo pessoal, familiar e escolar. O início dentro de 3 meses do estressor completa o quadro."
+    },
+    {
+      "question": "Quais achados são descritos como próprios dos casos graves de transtorno depressivo no adolescente?",
+      "options": [
+        "Alucinações auditivas e ideação suicida",
+        "Fuga de ideias e comportamento imprudente",
+        "Compulsões de verificação e contagem",
+        "Embotamento afetivo e evitação de gatilhos"
+      ],
+      "correctIndex": 0,
+      "explanation": "Nos casos graves de depressão a aula cita alucinações auditivas e ideação suicida. Fuga de ideias e imprudência pertencem à mania; compulsões de verificação, ao TOC; embotamento e evitação, ao TEPT."
+    },
+    {
+      "question": "Como se diferenciam o transtorno bipolar tipo I e o tipo II na descrição apresentada?",
+      "options": [
+        "No tipo I predomina o estado maníaco; no tipo II, o estado depressivo",
+        "No tipo I predomina o estado depressivo; no tipo II, o maníaco",
+        "No tipo I há apenas hipomania; no tipo II há mania com psicose",
+        "No tipo I não há depressão; no tipo II não há elevação do humor"
+      ],
+      "correctIndex": 0,
+      "explanation": "No tipo I predomina o estado maníaco, com um ou mais episódios de mania — euforia, irritabilidade, aumento de energia, grandiosidade, fuga de ideias e condutas imprudentes nas esferas sexual e financeira. No tipo II predomina o estado depressivo, com um episódio hipomaníaco e um ou mais episódios depressivos."
+    },
+    {
+      "question": "No quadro de sintomas maníacos ou hipomaníacos exibido, qual manifestação é apontada como capaz de motivar erroneamente o diagnóstico de TDAH grave com má resposta ao tratamento?",
+      "options": [
+        "A desatenção extrema que acompanha a elevação do humor",
+        "A hipersexualidade sem qualquer violência sexual associada",
+        "A pressão para falar com pensamento marcadamente acelerado",
+        "A irritabilidade extrema, grave e persistente do humor"
+      ],
+      "correctIndex": 0,
+      "explanation": "O slide lista, entre os sintomas maníacos/hipomaníacos, a desatenção extrema — e acrescenta entre parênteses que ela motiva o diagnóstico de TDAH grave com má resposta ao tratamento. É a pegadinha clássica: adolescente rotulado como TDAH refratário pode ter transtorno bipolar.",
+      "image": "pg20",
+      "imageCaption": "Sintomas maníacos ou hipomaníacos no adolescente"
+    },
+    {
+      "question": "Quais genes são citados como relacionados ao aumento do risco de transtornos depressivos?",
+      "options": [
+        "MAOA, da monoaminoxidase, e 5-HTT, transportador de serotonina",
+        "COMT, da catecol-O-metiltransferase, e DRD4, receptor de dopamina",
+        "BDNF, do fator neurotrófico, e GABRA1, do receptor de GABA",
+        "APOE, da apolipoproteína E, e TPH2, da triptofano-hidroxilase"
+      ],
+      "correctIndex": 0,
+      "explanation": "A aula cita dois genes ligados ao risco aumentado de transtornos depressivos: o MAOA, responsável pelo funcionamento da monoaminoxidase, e o 5-HTT, transportador de serotonina. A etiologia, porém, é multifatorial, somando fatores ambientais e endócrinos — baixos níveis de T4, por exemplo, produzem manifestações clínicas de depressão."
+    },
+    {
+      "question": "Qual é a conduta farmacológica descrita para os transtornos de humor no adolescente?",
+      "options": [
+        "ISRS nos quadros depressivos graves e carbonato de lítio no bipolar",
+        "Benzodiazepínicos nos quadros depressivos graves e ISRS no bipolar",
+        "Antipsicóticos nos quadros depressivos leves e lítio na fobia social",
+        "Lítio nos quadros depressivos leves e ISRS isolado no bipolar"
+      ],
+      "correctIndex": 0,
+      "explanation": "Nos casos leves a moderados de depressão indicam-se psicoterapia, psicoeducação e orientação familiar. Nos casos graves associam-se psicofármacos, os ISRS. No transtorno bipolar usa-se carbonato de lítio, associado ou não a antidepressivos e neurolépticos."
+    },
+    {
+      "question": "Em que situação a eletroconvulsoterapia (ECT) é considerada no adolescente com transtorno de humor?",
+      "options": [
+        "Nos quadros depressivos graves e refratários, com sedação em hospital",
+        "Nos quadros depressivos leves, em regime ambulatorial e sem sedação",
+        "Nos quadros de ansiedade generalizada refratária aos ISRS, em casa",
+        "Nos primeiros episódios maníacos, antes de iniciar o carbonato de lítio"
+      ],
+      "correctIndex": 0,
+      "explanation": "A ECT com sedação, em ambiente hospitalar, deve ser considerada nos casos depressivos graves e refratários. Nesses mesmos quadros graves também podem ser necessárias a associação de ISRS e a internação hospitalar para garantir a segurança do paciente."
+    },
+    {
+      "question": "Qual é a distinção conceitual entre medo e ansiedade apresentada na aula?",
+      "options": [
+        "O medo surge diante de perigo real e iminente; a ansiedade, de ameaça futura",
+        "O medo surge diante de ameaça imaginada; a ansiedade, de perigo real presente",
+        "O medo é sempre patológico; a ansiedade é sempre adaptativa e transitória",
+        "O medo depende de gatilho social; a ansiedade independe de qualquer gatilho"
+      ],
+      "correctIndex": 0,
+      "explanation": "O medo surge diante de um perigo real e iminente, enquanto a ansiedade é um estado de apreensão negativa em relação a uma possível ameaça futura ou imaginada. Ambos integram o estado desagradável de tensão, apreensão ou medo que define os transtornos de ansiedade."
+    },
+    {
+      "question": "Adolescente refere episódios súbitos e inesperados de palpitações, sensação de sufocação, tremores, dor no peito, tontura e medo de morrer, que se repetem. Qual o diagnóstico mais provável?",
+      "options": [
+        "Transtorno do pânico, por ataques recorrentes e inesperados",
+        "Ansiedade generalizada, por preocupação persistente com o futuro",
+        "Fobia social, por medo intenso do julgamento em exposições",
+        "Estresse pós-traumático, por revivência recorrente do trauma"
+      ],
+      "correctIndex": 0,
+      "explanation": "O transtorno do pânico é definido por ataques de pânico recorrentes e inesperados, de ansiedade extrema, com palpitações, sensação de sufocação, tremores, dor no peito, tontura e medo de morrer — exatamente o quadro descrito. A ansiedade generalizada cursa com preocupação incontrolável e persistente sobre o futuro, não com crises súbitas."
+    },
+    {
+      "question": "Como o transtorno de estresse pós-traumático (TEPT) é caracterizado na aula?",
+      "options": [
+        "Resposta tardia a trauma catastrófico, revivido de forma recorrente",
+        "Resposta imediata a estressor cotidiano, resolvida em poucos dias",
+        "Resposta antecipatória a ameaça futura, sem evento traumático prévio",
+        "Resposta a pensamentos intrusivos neutralizados por atos repetitivos"
+      ],
+      "correctIndex": 0,
+      "explanation": "O TEPT é uma resposta tardia a uma situação traumática catastrófica — acidente, desastre, violência, abuso — em que, semanas ou meses depois, o evento é revivido de forma recorrente. Acompanha-se de embotamento, isolamento e evitação de situações que lembrem o trauma."
+    },
+    {
+      "question": "Qual é o tratamento indicado para o transtorno obsessivo-compulsivo (TOC) no adolescente?",
+      "options": [
+        "Psicoterapia cognitivo-comportamental e, se duradouro, ISRS",
+        "Psicoterapia de apoio isolada, sem indicação de psicofármacos",
+        "Antipsicótico em monoterapia desde o primeiro atendimento",
+        "Benzodiazepínico contínuo associado a carbonato de lítio"
+      ],
+      "correctIndex": 0,
+      "explanation": "No TOC indica-se psicoterapia cognitiva comportamental; nos casos com grande desconforto e duradouros, acrescenta-se tratamento medicamentoso com ISRS. O quadro é definido por obsessões — pensamentos intrusivos que causam ansiedade — e compulsões de ordenação, simetria, lavagem, repetição, verificação e contagem."
+    },
+    {
+      "question": "Qual é o escalonamento terapêutico descrito para os quadros de ansiedade no adolescente?",
+      "options": [
+        "Leve com psicoterapia; moderado a grave com ISRS; mais grave com benzodiazepínico",
+        "Leve com ISRS; moderado a grave com benzodiazepínico; mais grave com lítio",
+        "Leve com benzodiazepínico; moderado com antipsicótico; mais grave com ECT",
+        "Leve com internação breve; moderado com ISRS; mais grave com psicoterapia"
+      ],
+      "correctIndex": 0,
+      "explanation": "Na ansiedade leve indica-se psicoterapia individual e familiar. Na moderada a grave, acompanhamento psiquiátrico com avaliação de ISRS — fluoxetina, sertralina, escitalopram. Nos casos mais graves associam-se benzodiazepínicos."
+    },
+    {
+      "question": "Na psicose da adolescência, quais manifestações compõem os chamados sintomas 'negativos'?",
+      "options": [
+        "Retraimento social, empobrecimento afetivo e queda da fluência verbal",
+        "Alucinações auditivas, delírios de perseguição e agitação psicomotora",
+        "Euforia, grandiosidade e aceleração acentuada do curso do pensamento",
+        "Obsessões intrusivas, compulsões de simetria e verificação repetida"
+      ],
+      "correctIndex": 0,
+      "explanation": "Os sintomas 'negativos' da psicose são retraimento social, comprometimento da fluência verbal, empobrecimento afetivo e desorganização do pensamento. Os sintomas 'positivos' correspondem ao excesso: alucinações e delírios."
+    },
+    {
+      "question": "Quais são citados como fatores PRECIPITANTES de psicose na adolescência?",
+      "options": [
+        "Uso de substâncias, estresse psicológico, trauma e doença física grave",
+        "História familiar de psicose em parente de primeiro grau e desnutrição",
+        "Baixo peso ao nascer, hipóxia perinatal e uso materno de álcool",
+        "Temperamento fácil, inteligência preservada e boa rede de apoio"
+      ],
+      "correctIndex": 0,
+      "explanation": "A aula separa fatores de risco de fatores precipitantes. São precipitantes o uso de substâncias ilícitas ou medicamentos, o estresse psicológico, experiências traumáticas e a doença física grave. História familiar positiva de primeiro grau, violência e desnutrição intrauterina são fatores de risco."
+    },
+    {
+      "question": "Sobre o consumo de substâncias psicoativas na adolescência, qual afirmação está correta?",
+      "options": [
+        "O álcool é a substância mais consumida e a cannabis, a terceira mais usada",
+        "A cannabis é a mais consumida e o álcool aparece em terceiro lugar",
+        "Os inalantes são os mais consumidos e o álcool, o segundo colocado",
+        "Os estimulantes lideram o consumo e a cannabis vem em segundo lugar"
+      ],
+      "correctIndex": 0,
+      "explanation": "O álcool é a substância mais consumida no mundo e a primeira entre os jovens; a cannabis é a terceira mais utilizada, principalmente sob a forma de fumo. Vale lembrar que mesmo o uso esporádico e menos intenso de cannabis pode ter efeito deletério."
+    },
+    {
+      "question": "Quais sinais indicam transtorno por uso de nicotina (tabagismo ou cigarro eletrônico) no adolescente?",
+      "options": [
+        "Fumar nos primeiros 30 minutos ao despertar e acordar à noite para fumar",
+        "Fumar apenas em festas e reuniões sociais com amigos aos fins de semana",
+        "Fumar somente após as refeições principais e nunca ao despertar do sono",
+        "Fumar menos de cinco cigarros por semana e apenas na companhia de outros"
+      ],
+      "correctIndex": 0,
+      "explanation": "São sinais de transtorno por uso de nicotina: fumar nos primeiros 30 minutos ao despertar, fumar diariamente e de forma progressiva, e acordar à noite para fumar. O uso predispõe a sentimentos de solidão, dificuldade nas interações sociais e problemas de sono."
+    },
+    {
+      "question": "No slide sobre substâncias psicoativas mostrado, quais consequências são atribuídas especificamente aos INALANTES?",
+      "options": [
+        "Cefaleia, náuseas, alucinações, danos neurológicos e morte súbita",
+        "Náuseas, vômitos, ideação paranoide, taquicardia e hipertensão",
+        "Despersonalização, alterações da percepção, euforia e depressão",
+        "Dependência com lesões cerebrais e aumento da autoconfiança"
+      ],
+      "correctIndex": 0,
+      "explanation": "Os inalantes — cola, tintas, solventes, lança-perfume — produzem na inalação euforia, bem-estar, acessos de riso e sensação de estar voando, com consequências de cefaleia, náuseas, alucinações, danos neurológicos, taquicardia e morte súbita. Náuseas com ideação paranoide e hipertensão são sintomas de abuso de estimulantes; despersonalização é dos alucinógenos.",
+      "image": "pg38",
+      "imageCaption": "Cannabis, estimulantes, alucinógenos e inalantes"
+    },
+    {
+      "question": "Segundo o slide sobre uso problemático de internet (UPI) exibido, o que define esse transtorno?",
+      "options": [
+        "Absorção excessiva em atividades on-line com comprometimento das áreas da vida",
+        "Qualquer uso diário de telas por adolescentes acima de duas horas seguidas",
+        "Uso de jogos eletrônicos competitivos com premiação financeira em dinheiro",
+        "Presença de sintomas de abstinência física após a retirada do aparelho"
+      ],
+      "correctIndex": 0,
+      "explanation": "O UPI caracteriza-se pela absorção excessiva em atividades on-line que provoca comprometimento nas áreas social, acadêmica e de relacionamentos interpessoais. Não é definido por um número de horas: o critério é o prejuízo funcional, acompanhado de irritabilidade e agitação quando o acesso é impedido.",
+      "image": "pg42",
+      "imageCaption": "Uso problemático de internet e transtorno de jogo pela internet"
+    },
+    {
+      "question": "No quadro comparativo apresentado, qual característica distingue a autoagressão não suicida da tentativa de suicídio?",
+      "options": [
+        "Na autoagressão não há intenção de se matar; na tentativa, há",
+        "Na autoagressão há intenção de se matar; na tentativa, não há",
+        "Na autoagressão a repetição é rara; na tentativa, é bem frequente",
+        "Na autoagressão o método é sempre letal; na tentativa, nunca é"
+      ],
+      "correctIndex": 0,
+      "explanation": "O quadro opõe as duas condições: na autoagressão não suicida não há intenção de se matar, o gatilho é raiva aguda, desconforto ou desespero, as ações são destrutivas não fatais e a repetição é comum. Na tentativa de suicídio há intenção de dar fim à própria vida, com desesperança crônica e métodos de maior risco de morte.",
+      "image": "pg47",
+      "imageCaption": "Autoagressão não suicida versus tentativa de suicídio"
+    },
+    {
+      "question": "Qual é a regra de notificação para os casos de autoagressão e tentativa de suicídio no Brasil?",
+      "options": [
+        "Notificação compulsória ao SINAN em até 24 horas, pela Lei 13.819/2019",
+        "Notificação compulsória ao SINAN em até 7 dias, pela Lei 13.819/2019",
+        "Notificação facultativa ao conselho tutelar, apenas se houver óbito",
+        "Notificação compulsória ao SINAN somente nos casos com internação"
+      ],
+      "correctIndex": 0,
+      "explanation": "A autoagressão e a tentativa de suicídio são de notificação compulsória em até 24 horas ao SINAN — Sistema de Informação de Agravos de Notificação —, conforme a Lei nº 13.819/2019. A notificação independe de internação ou de desfecho fatal."
+    },
+    {
+      "question": "Na tabela sobre sigilo no atendimento ao adolescente exibida, qual situação está listada como indicação de QUEBRA do sigilo?",
+      "options": [
+        "Uso escalonado de álcool e outras drogas com sinais de dependência",
+        "Experimentação de psicoativos sem quaisquer sinais de dependência",
+        "Prescrição de contraceptivo a adolescente com maturidade para adesão",
+        "Conflitos com a identidade de gênero e dúvidas de orientação sexual"
+      ],
+      "correctIndex": 0,
+      "explanation": "A coluna de quebra do sigilo inclui o uso escalonado (cada vez maior) de álcool e outras drogas com sinais de dependência química, além de violência, autoagressão e ideação suicida, gravidez ou abortamento, sorologia positiva para HIV e não adesão que ponha alguém em risco. A mera experimentação de psicoativos, sem sinais de dependência, mantém o sigilo.",
+      "image": "pg50",
+      "imageCaption": "Quando quebrar e quando manter o sigilo"
+    },
+    {
+      "question": "Qual medida preventiva é destacada no manejo do adolescente com ideação suicida?",
+      "options": [
+        "Restringir o acesso a meios letais e a conteúdos de influência negativa",
+        "Manter o adolescente sozinho até que o pensamento de morte desapareça",
+        "Evitar perguntar sobre planejamento para não induzir o ato suicida",
+        "Adiar o tratamento das condições psiquiátricas até a estabilização"
+      ],
+      "correctIndex": 0,
+      "explanation": "As medidas preventivas incluem restrição de acesso a meios letais e vigilância sobre conteúdos de influência negativa em redes sociais. Perguntar sobre a persistência da ideação e sobre o planejamento é conduta recomendada, não contraindicada, e ferramentas como o CVV e o programa Pode Falar devem ser oferecidas."
+    },
+    {
+      "question": "Sobre a etiologia da ideação suicida e das tentativas de suicídio, qual afirmação está correta?",
+      "options": [
+        "É multifatorial e nem todos os casos têm doença psiquiátrica associada",
+        "É sempre secundária a um transtorno psiquiátrico previamente instalado",
+        "Depende exclusivamente de fatores genéticos e neurobiológicos herdados",
+        "Tentativas anteriores não modificam o risco de novas tentativas futuras"
+      ],
+      "correctIndex": 0,
+      "explanation": "O slide destaca em vermelho que NEM TODOS TÊM DOENÇA PSIQUIÁTRICA: a etiologia é uma interação complexa e multifatorial de fatores biológicos, psicológicos e sociais. Tentativas anteriores são justamente o fator de risco isolado destacado, e otimismo, vínculos familiares e espiritualidade figuram entre os fatores positivos."
+    }
+  ]
+}

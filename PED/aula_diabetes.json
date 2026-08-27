@@ -1,0 +1,388 @@
+{
+  "titulo": "Diabetes Tipos 1 e 2",
+  "eyebrow": "Pediatria · Endocrinologia",
+  "subtitulo": "Confirmar a hiperglicemia, avaliar a gravidade e definir o tipo",
+  "intro": "Da criança com poliúria à adolescente com acantose: critérios diagnósticos, exclusão de cetoacidose, estágios e autoimunidade do DM1, insulinoterapia e metas, hipoglicemia, rastreamento e tratamento do DM2 juvenil.",
+  "questoes": [
+    {
+      "question": "Menino de 11 anos com poliúria, polidipsia e perda de 3 kg em três semanas chega com glicemia plasmática casual de 318 mg/dL. Qual critério confirma o diagnóstico de diabetes já nessa primeira medida?",
+      "options": [
+        "Glicemia casual ≥ 200 mg/dL associada a sintomas clássicos",
+        "Glicemia casual ≥ 140 mg/dL associada a sintomas clássicos",
+        "Glicemia de jejum ≥ 100 mg/dL em duas dosagens distintas",
+        "Glicemia de 2 horas no TOTG ≥ 140 mg/dL em duas amostras"
+      ],
+      "correctIndex": 0,
+      "explanation": "Na presença de sintomas inequívocos de hiperglicemia (as clássicas polis) ou de crise hiperglicêmica, uma glicemia plasmática ao acaso ≥ 200 mg/dL estabelece o diagnóstico, sem necessidade de confirmação em segunda amostra. Sem sintomas inequívocos, um resultado isolado precisa ser confirmado."
+    },
+    {
+      "question": "Qual é o ponto de corte da glicemia plasmática de jejum que estabelece o diagnóstico de diabetes mellitus?",
+      "options": ["≥ 126 mg/dL", "≥ 100 mg/dL", "≥ 140 mg/dL", "≥ 200 mg/dL"],
+      "correctIndex": 0,
+      "explanation": "Glicemia de jejum de no mínimo 8 horas ≥ 126 mg/dL é critério diagnóstico de diabetes. Valores entre 100 e 125 mg/dL caracterizam glicemia de jejum alterada (pré-diabetes) e abaixo de 100 mg/dL, normoglicemia. O corte de 200 mg/dL vale para a glicemia ao acaso e para a 2ª hora do TOTG."
+    },
+    {
+      "question": "Quais valores caracterizam pré-diabetes (risco aumentado para DM) no quadro de critérios diagnósticos apresentado?",
+      "options": [
+        "Jejum ≥ 100 e < 126 mg/dL; HbA1c ≥ 5,7 e < 6,5%",
+        "Jejum ≥ 110 e < 126 mg/dL; HbA1c ≥ 6,0 e < 6,5%",
+        "Jejum ≥ 126 e < 140 mg/dL; HbA1c ≥ 6,5 e < 7,0%",
+        "Jejum ≥ 90 e < 100 mg/dL; HbA1c ≥ 5,0 e < 5,7%"
+      ],
+      "correctIndex": 0,
+      "explanation": "O pré-diabetes é definido por glicemia de jejum ≥ 100 e < 126 mg/dL, glicemia de 2 h no TOTG ≥ 140 e < 200 mg/dL ou HbA1c ≥ 5,7 e < 6,5%. A positividade de qualquer um desses parâmetros já confirma o pré-diabetes."
+    },
+    {
+      "question": "Observando o quadro de critérios diagnósticos do material, quais valores definem normoglicemia?",
+      "options": [
+        "Jejum < 100 mg/dL, TOTG 2 h < 140 mg/dL e HbA1c < 5,7%",
+        "Jejum < 126 mg/dL, TOTG 2 h < 200 mg/dL e HbA1c < 6,5%",
+        "Jejum < 110 mg/dL, TOTG 2 h < 160 mg/dL e HbA1c < 6,0%",
+        "Jejum < 90 mg/dL, TOTG 2 h < 120 mg/dL e HbA1c < 5,0%"
+      ],
+      "correctIndex": 0,
+      "explanation": "O Quadro 1 define normoglicemia como jejum < 100 mg/dL, glicemia de 2 h no TOTG com 75 g < 140 mg/dL e HbA1c < 5,7%. Uma observação do próprio quadro lembra que a OMS emprega 110 mg/dL como corte de normalidade da glicose em jejum.",
+      "image": "pg02",
+      "imageCaption": "Quadro 1 — critérios diagnósticos para o diabetes melito"
+    },
+    {
+      "question": "Nesse mesmo menino de 11 anos, o laboratório mostra pH venoso 7,37, bicarbonato 23 mEq/L, ânion gap 12 mEq/L, β-hidroxibutirato 0,4 mmol/L e cetonúria negativa. Como interpretar o quadro?",
+      "options": [
+        "Diabetes mellitus sem cetoacidose, pois não há acidose nem cetonemia",
+        "Cetoacidose diabética leve, pois a glicemia está acima de 250 mg/dL",
+        "Cetoacidose diabética grave, pois o ânion gap está muito alargado",
+        "Estado hiperglicêmico hiperosmolar, pois há glicosúria de 4 cruzes"
+      ],
+      "correctIndex": 0,
+      "explanation": "A ausência de acidose (pH 7,37, bicarbonato 23 mEq/L), de cetonemia significativa (β-OHB 0,4 mmol/L, abaixo de 0,6) e de alargamento do ânion gap (12 mEq/L) exclui cetoacidose neste momento. A hiperglicemia isolada, mesmo intensa e com HbA1c de 10,8%, não define CAD: o diagnóstico é diabetes mellitus sem cetoacidose."
+    },
+    {
+      "question": "Qual faixa de β-hidroxibutirato sanguíneo é considerada cetonemia importante, sugestiva de cetoacidose diabética quando avaliada junto de pH e bicarbonato?",
+      "options": ["≥ 3,0 mmol/L", "≥ 0,6 mmol/L", "≥ 1,5 mmol/L", "≥ 0,3 mmol/L"],
+      "correctIndex": 0,
+      "explanation": "A escala usada na aula é: < 0,6 mmol/L normal; 0,6–1,5 cetonemia leve; 1,5–2,9 cetonemia moderada, com maior risco de progressão; e ≥ 3,0 mmol/L cetonemia importante, que sugere CAD e deve ser interpretada em conjunto com pH, bicarbonato e quadro clínico."
+    },
+    {
+      "question": "Adolescente com DM1 e vômitos apresenta β-hidroxibutirato capilar de 2,0 mmol/L. A que categoria esse valor corresponde?",
+      "options": [
+        "Cetonemia moderada, com maior risco de progressão",
+        "Cetonemia leve, sem necessidade de reavaliação",
+        "Ausência de cetose, dentro da faixa de normalidade",
+        "Cetonemia importante, já diagnóstica de acidose"
+      ],
+      "correctIndex": 0,
+      "explanation": "Valores de 1,5 a 2,9 mmol/L indicam cetonemia moderada e sinalizam maior risco de progressão para cetoacidose, exigindo reavaliação frequente, hidratação e ajuste de insulina. Cetonemia importante começa em 3,0 mmol/L e, ainda assim, só configura CAD quando somada a acidose."
+    },
+    {
+      "question": "No esquema de fisiopatologia dos corpos cetônicos, qual evento inicia a cascata que termina em cetoacidose diabética?",
+      "options": [
+        "Deficiência de insulina com aumento dos hormônios contrarreguladores",
+        "Excesso de insulina com redução dos hormônios contrarreguladores",
+        "Bloqueio da lipólise no tecido adiposo por ação do glucagon alto",
+        "Captação hepática aumentada de corpos cetônicos pelo ciclo de Krebs"
+      ],
+      "correctIndex": 0,
+      "explanation": "A sequência começa na deficiência de insulina com elevação de glucagon e demais contrarreguladores, que aumenta a lipólise e os ácidos graxos livres. No fígado, a beta-oxidação eleva o acetil-CoA, o oxaloacetato é desviado para gliconeogênese e o excesso de acetil-CoA é canalizado para a cetogênese, gerando acetoacetato, β-hidroxibutirato e acetona.",
+      "image": "s18i1",
+      "imageCaption": "Fisiopatologia da produção de corpos cetônicos no diabetes mellitus"
+    },
+    {
+      "question": "Quais achados laboratoriais são apontados como típicos da cetoacidose diabética no handout da aula?",
+      "options": [
+        "Glicemia acima de 250 mg/dL e pH plasmático abaixo de 7,3",
+        "Glicemia acima de 140 mg/dL e pH plasmático abaixo de 7,4",
+        "Glicemia acima de 600 mg/dL e pH plasmático acima de 7,3",
+        "Glicemia acima de 180 mg/dL e pH plasmático abaixo de 7,1"
+      ],
+      "correctIndex": 0,
+      "explanation": "Na CAD a glicemia costuma estar acima de 250 mg/dL e o pH plasmático abaixo de 7,3. O tratamento envolve hidratação parenteral, insulinoterapia geralmente endovenosa e correção dos distúrbios hidroeletrolíticos, com atenção à reposição de potássio."
+    },
+    {
+      "question": "Criança com diabetes recém-diagnosticado deve ser encaminhada imediatamente a um serviço de emergência diante de qual achado?",
+      "options": [
+        "Vômitos persistentes, respiração profunda e sonolência",
+        "Glicosúria de 4 cruzes com cetonúria negativa",
+        "Poliúria e polidipsia isoladas, com bom estado geral",
+        "HbA1c de 10,8% com glicemia capilar de 300 mg/dL"
+      ],
+      "correctIndex": 0,
+      "explanation": "São sinais de alarme: vômitos persistentes ou dor abdominal, respiração profunda ou rápida, desidratação ou incapacidade de ingerir líquidos, sonolência, confusão ou rebaixamento da consciência e cetonemia elevada ou em ascensão. HbA1c alta e glicosúria intensa, isoladamente, não indicam emergência."
+    },
+    {
+      "question": "Confirmado o diagnóstico de DM1 em criança sem sinais de descompensação, qual é a conduta recomendada no mesmo dia?",
+      "options": [
+        "Encaminhar à equipe pediátrica e iniciar insulina e educação",
+        "Aguardar o resultado dos autoanticorpos para iniciar insulina",
+        "Iniciar metformina e reavaliar a glicemia em quatro semanas",
+        "Prescrever dieta e atividade física e reavaliar em três meses"
+      ],
+      "correctIndex": 0,
+      "explanation": "O encaminhamento à equipe pediátrica especializada deve ocorrer no mesmo dia, com início de insulinoterapia e educação em diabetes, solicitação dos autoanticorpos pancreáticos, orientação de monitorização de glicemia e cetonas e rastreio de tireoidite e doença celíaca. Peptídeo C e anticorpos não devem atrasar a insulina."
+    },
+    {
+      "question": "Segundo o fluxograma de início e ajuste da insulinoterapia com múltiplas doses diárias no DM1, como iniciar a insulina?",
+      "options": [
+        "0,4–0,5 U/kg/dia, cerca de 50% basal e 50% prandial",
+        "0,1–0,2 U/kg/dia, cerca de 70% basal e 30% prandial",
+        "1,0–1,5 U/kg/dia, cerca de 30% basal e 70% prandial",
+        "0,4–0,5 U/kg/dia, exclusivamente como insulina basal"
+      ],
+      "correctIndex": 0,
+      "explanation": "O fluxograma orienta iniciar com 0,4–0,5 U/kg/dia, divididas em aproximadamente 50% basal e 50% prandial, ajustando conforme HbA1c, CGM e/ou glicemias capilares. A escolha do tipo de insulina e da via considera o grau de deficiência insulínica, a apresentação inicial (inclusive CAD) e o contexto socioeconômico.",
+      "image": "s16i1",
+      "imageCaption": "Início e ajuste da insulinoterapia com múltiplas doses diárias no DM1"
+    },
+    {
+      "question": "Adolescente com DM1 em esquema basal-bolus mantém hiperglicemia de jejum apesar de glicemias pós-prandiais adequadas. O que o fluxograma orienta?",
+      "options": [
+        "Revisar o padrão glicêmico noturno e ajustar a insulina basal",
+        "Revisar o momento da aplicação e ajustar a insulina prandial",
+        "Suspender a insulina basal e manter apenas bolus de correção",
+        "Trocar o esquema por metformina associada a dieta hipocalórica"
+      ],
+      "correctIndex": 0,
+      "explanation": "Diante de hiperglicemia de jejum, o fluxograma manda revisar o padrão glicêmico noturno, preferencialmente com CGM, e ajustar a insulina basal se necessário. Já a hiperglicemia pós-prandial exige revisar o momento da aplicação e o ajuste da insulina prandial em relação à refeição.",
+      "image": "s16i1",
+      "imageCaption": "Ramos de ajuste conforme o horário da hiperglicemia"
+    },
+    {
+      "question": "De acordo com o quadro de dose total diária de insulina nas diferentes fases do DM1, qual é a faixa esperada para um adolescente púbere?",
+      "options": [
+        "De 1,0 a 2,0 U/kg/dia",
+        "De 0,1 a 0,3 U/kg/dia",
+        "De 0,3 a 0,5 U/kg/dia",
+        "De 0,5 a 0,7 U/kg/dia"
+      ],
+      "correctIndex": 0,
+      "explanation": "O Quadro 2 traz: fase de remissão parcial abaixo de 0,3 a 0,5 U/kg/dia; ao diagnóstico ou logo após CAD 0,5–1 U/kg/dia; crianças pré-púberes 0,7–1 U/kg/dia; púberes 1–2 U/kg/dia; dias doentes ou estresse emocional 1,2–1,5 U/kg/dia. A resistência insulínica da puberdade justifica a dose mais alta.",
+      "image": "pg03",
+      "imageCaption": "Quadro 2 — dose total diária de insulina por fase do DM1"
+    },
+    {
+      "question": "Cerca de 80% das crianças apresentam queda transitória da necessidade de insulina dias a semanas após o início do tratamento. Como se chama essa fase e qual a dose típica?",
+      "options": [
+        "Remissão parcial ou lua de mel, com menos de 0,5 U/kg/dia",
+        "Fenômeno do alvorecer, com mais de 1,5 U/kg/dia de insulina",
+        "Efeito Somogyi, com cerca de 1,0 U/kg/dia de insulina ao dia",
+        "Resistência puberal, com mais de 2,0 U/kg/dia de insulina"
+      ],
+      "correctIndex": 0,
+      "explanation": "É a fase de remissão parcial, ou lua de mel, ou estágio 3 precoce: inicia-se dias a semanas após o início da insulinoterapia, decorre da recuperação funcional das células beta remanescentes e pode durar meses ou anos, com dose total abaixo de 0,3–0,5 U/kg/dia. Preservá-la pode reduzir complicações vasculares e hipoglicemias graves."
+    },
+    {
+      "question": "Quais são as metas de glicemia de jejum e pré-prandial e as metas ao deitar em crianças e adolescentes com DM1, segundo o handout?",
+      "options": [
+        "90–130 mg/dL no jejum e 90–150 mg/dL ao deitar",
+        "70–100 mg/dL no jejum e 70–120 mg/dL ao deitar",
+        "100–180 mg/dL no jejum e 140–200 mg/dL ao deitar",
+        "120–160 mg/dL no jejum e 150–200 mg/dL ao deitar"
+      ],
+      "correctIndex": 0,
+      "explanation": "As metas propostas são glicemias de jejum e pré-prandiais entre 90 e 130 mg/dL e, ao deitar e na madrugada, entre 90 e 150 mg/dL, faixa mais alta à noite justamente para reduzir o risco de hipoglicemia no sono. A HbA1c deve ficar abaixo de 7% em quem não tem risco elevado de hipoglicemia."
+    },
+    {
+      "question": "Quais são as metas de monitorização apresentadas para o seguimento do DM1 na infância e adolescência?",
+      "options": [
+        "HbA1c < 7%, tempo no alvo > 70% e tempo < 70 mg/dL abaixo de 4%",
+        "HbA1c < 8%, tempo no alvo > 50% e tempo < 70 mg/dL abaixo de 10%",
+        "HbA1c < 6%, tempo no alvo > 90% e tempo < 70 mg/dL abaixo de 1%",
+        "HbA1c < 9%, tempo no alvo > 40% e tempo < 70 mg/dL abaixo de 15%"
+      ],
+      "correctIndex": 0,
+      "explanation": "A meta de HbA1c é individualizada, mas em geral < 7%; o tempo no alvo (70–180 mg/dL) deve ser maior que 70% e o tempo abaixo de 70 mg/dL, menor que 4%. Os sistemas de monitorização contínua ampliaram o uso de métricas além da HbA1c."
+    },
+    {
+      "question": "Criança de 9 anos com DM1 apresenta glicemia capilar de 48 mg/dL sem qualquer sintoma. Como classificar esse episódio?",
+      "options": [
+        "Hipoglicemia nível 2, situação de risco que exige atenção imediata",
+        "Hipoglicemia nível 1, sem necessidade de correção imediata",
+        "Hipoglicemia nível 3, por definição grave e com perda cognitiva",
+        "Glicemia normal, pois o limiar de hipoglicemia é de 40 mg/dL"
+      ],
+      "correctIndex": 0,
+      "explanation": "Hipoglicemia é definida por glicemia menor ou igual a 70 mg/dL. Nível 1 é de 54 a 70 mg/dL; nível 2 é abaixo de 54 mg/dL, com ou sem sintomas, e configura situação de risco que exige atenção imediata; nível 3 é a hipoglicemia grave, com perda da capacidade cognitiva e necessidade de assistência de terceiros."
+    },
+    {
+      "question": "Escolar de 8 anos com DM1 apresenta hipoglicemia leve, está consciente e consegue ingerir alimentos. Qual a conduta imediata?",
+      "options": [
+        "Oferecer 7 a 10 g de carboidrato de absorção rápida por via oral",
+        "Oferecer 30 a 40 g de carboidrato de absorção lenta por via oral",
+        "Aplicar glucagon 1 mg por via intramuscular imediatamente",
+        "Aplicar glicose hipertônica por via endovenosa imediatamente"
+      ],
+      "correctIndex": 0,
+      "explanation": "Em hipoglicemia leve, oferece-se carboidrato de absorção rápida na dose de cerca de 0,3 g/kg (15 g no adulto). Na prática: 3–5 g para pré-escolares, 7–10 g para escolares e 10–15 g para adolescentes. Exemplos de 15 g são 200 mL de suco de laranja, 150 mL de refrigerante comum ou uma colher de sopa de açúcar."
+    },
+    {
+      "question": "Criança de 20 kg com DM1 apresenta hipoglicemia grave com convulsão em casa, sem condições de ingestão oral. Qual a dose de glucagon?",
+      "options": [
+        "0,5 mg por via intramuscular ou subcutânea",
+        "1,0 mg por via intramuscular ou subcutânea",
+        "0,1 mg por via intramuscular ou subcutânea",
+        "2,0 mg por via intramuscular ou subcutânea"
+      ],
+      "correctIndex": 0,
+      "explanation": "No ambiente domiciliar, a hipoglicemia grave sem capacidade de alimentação oral é tratada com glucagon (frasco de 1 mg/mL) por via IM ou SC: 1 mg para crianças com mais de 25 kg e 0,5 mg para crianças com menos de 25 kg. A prescrição de glucagon deve ser feita já nas considerações iniciais da insulinoterapia."
+    },
+    {
+      "question": "Segundo o esquema dos estágios do diabetes tipo 1, o que define o estágio 2?",
+      "options": [
+        "Múltiplos autoanticorpos com disglicemia, ainda sem sintomas",
+        "Múltiplos autoanticorpos com normoglicemia e sem sintomas",
+        "Múltiplos autoanticorpos com hiperglicemia e com sintomas",
+        "Autoanticorpos negativos com disglicemia e sem sintomas"
+      ],
+      "correctIndex": 0,
+      "explanation": "O estágio 1 tem dois ou mais autoanticorpos contra ilhota com normoglicemia; o estágio 2 mantém a autoimunidade, mas já com disglicemia pré-diabética (glicemia de jejum alterada e/ou tolerância diminuída no TOTG) e ainda sem sintomas; o estágio 3 é o DM1 clássico, sintomático e com necessidade de insulina exógena.",
+      "image": "s11i1",
+      "imageCaption": "Autoimunidade e fisiologia da insulina nos estágios do DM1"
+    },
+    {
+      "question": "Qual autoanticorpo do painel de classificação do DM1 é considerado mais informativo quando dosado antes do início da insulinoterapia?",
+      "options": [
+        "O anticorpo anti-insulina",
+        "O anticorpo anti-GAD 65",
+        "O anticorpo anti-IA2",
+        "O anticorpo anti-ZnT8"
+      ],
+      "correctIndex": 0,
+      "explanation": "O anti-insulina perde valor depois de iniciada a reposição, porque a insulina exógena induz anticorpos; por isso é mais informativo antes da insulinoterapia. O painel inclui ainda anti-GAD, anti-IA2 e anti-ZnT8, este último aumentando a sensibilidade do conjunto. Autoanticorpos negativos não excluem completamente DM1."
+    },
+    {
+      "question": "O que o peptídeo C informa e qual sua relação com a secreção de insulina?",
+      "options": [
+        "É secretado em quantidade equimolar e mede a reserva de células beta",
+        "É secretado apenas em jejum e mede a resistência periférica à insulina",
+        "É produzido no fígado e mede a taxa de gliconeogênese hepática",
+        "É um autoanticorpo de ilhota e mede a atividade autoimune residual"
+      ],
+      "correctIndex": 0,
+      "explanation": "Insulina e peptídeo C são liberados em quantidades equimolares na clivagem da proinsulina, de modo que o peptídeo C funciona como marcador da produção endógena de insulina e da reserva funcional das células beta. Deve ser interpretado junto da glicemia e do momento clínico, e nunca atrasar o início da insulina."
+    },
+    {
+      "question": "No esquema da progressão autoimune do DM1, qual sequência de eventos leva à formação de autoanticorpos específicos da ilhota?",
+      "options": [
+        "Processamento anormal da proinsulina, HLA I, CD8 e apoptose beta",
+        "Resistência periférica à insulina, hiperinsulinemia e lipotoxicidade",
+        "Deposição de amiloide na ilhota, fibrose e atrofia beta progressiva",
+        "Glicotoxicidade crônica, estresse oxidativo e apoptose de hepatócitos"
+      ],
+      "correctIndex": 0,
+      "explanation": "O processamento defeituoso da proinsulina aumenta sua secreção e a expressão de HLA classe I, permitindo a ligação de linfócitos T CD8 e a liberação de perforina e granzima, com apoptose da célula beta. Os autoantígenos liberados na circulação periférica recrutam a imunidade inata e adaptativa e geram os autoanticorpos, com queda da produção de insulina.",
+      "image": "s10i1",
+      "imageCaption": "Progressão da perda autoimune de células beta no DM1"
+    },
+    {
+      "question": "Quando iniciar o rastreamento de DM2 em crianças e adolescentes, segundo a recomendação da SBD apresentada?",
+      "options": [
+        "Aos 10 anos ou no início da puberdade, com sobrepeso e um fator de risco",
+        "Aos 5 anos de idade, independentemente do peso e de fatores associados",
+        "Somente após os 18 anos, na presença de obesidade e acantose nigricans",
+        "Ao nascimento, em todos os filhos de mães com diabetes gestacional"
+      ],
+      "correctIndex": 0,
+      "explanation": "O rastreamento começa a partir dos 10 anos ou após o início da puberdade, em quem tem sobrepeso ou obesidade somados a pelo menos um fator de risco: DM2 ou diabetes gestacional materno, história familiar de DM2 em 1º ou 2º grau, acantose nigricans, hipertensão, dislipidemia ou SOP. Repete-se conforme o risco."
+    },
+    {
+      "question": "Adolescente de 13 anos, com obesidade e acantose, apresenta HbA1c 9,2%, glicemia 286 mg/dL, pH 7,36 e β-hidroxibutirato 0,5 mmol/L. Qual a melhor conduta inicial?",
+      "options": [
+        "Metformina associada a insulina basal",
+        "Metformina isolada, sem insulinização",
+        "Apenas mudança do estilo de vida",
+        "Insulina venosa em protocolo de CAD"
+      ],
+      "correctIndex": 0,
+      "explanation": "Com HbA1c ≥ 8,5% e sem cetose ou acidose, a recomendação da ISPAD é metformina associada a insulina basal, em geral 0,25–0,5 U/kg. Mudança de estilo de vida isolada é insuficiente; metformina isolada cabe quando a HbA1c é menor que 8,5% em paciente estável; e não há CAD, já que pH e β-OHB estão normais."
+    },
+    {
+      "question": "Adolescente com DM2 confirmado, HbA1c de 7,4%, clinicamente estável, sem cetose e sem acidose. Qual o tratamento inicial recomendado?",
+      "options": [
+        "Mudança do estilo de vida associada a metformina",
+        "Mudança do estilo de vida associada a insulina basal",
+        "Insulina basal isolada, sem terapia oral associada",
+        "Inibidor de SGLT2 isolado, sem terapia oral associada"
+      ],
+      "correctIndex": 0,
+      "explanation": "Com HbA1c menor que 8,5% e sem cetose ou acidose, o tratamento é mudança do estilo de vida associada a metformina, primeira linha no paciente estável, titulada progressivamente por causa dos efeitos gastrointestinais. Agonista de GLP-1 e/ou inibidor de SGLT2 entram quando a meta não é atingida, conforme aprovação e acesso."
+    },
+    {
+      "question": "O que diferencia a avaliação inicial do DM2 juvenil em relação à do DM1 recém-diagnosticado?",
+      "options": [
+        "Rastrear já ao diagnóstico complicações e comorbidades cardiometabólicas",
+        "Rastrear já ao diagnóstico apenas doença celíaca e tireoidite autoimune",
+        "Adiar toda avaliação de comorbidades para cinco anos após o diagnóstico",
+        "Dispensar avaliação de retina, rim e lipídios na faixa etária pediátrica"
+      ],
+      "correctIndex": 0,
+      "explanation": "Diferentemente do DM1, no DM2 juvenil várias complicações e comorbidades já devem ser avaliadas no momento do diagnóstico: pressão arterial, perfil lipídico, transaminases e esteatose hepática, albuminúria e função renal, retinopatia, apneia obstrutiva do sono, SOP e saúde mental. O DM2 juvenil é doença multissistêmica desde o início."
+    },
+    {
+      "question": "Adolescente com obesidade e acantose nigricans abre o quadro com cetoacidose diabética. Qual afirmativa está correta sobre a classificação?",
+      "options": [
+        "A obesidade não exclui DM1 e a cetose não exclui DM2",
+        "A obesidade exclui DM1 e confirma o diagnóstico de DM2",
+        "A cetose exclui DM2 e confirma o diagnóstico de DM1",
+        "A acantose exclui DM1 e dispensa a dosagem de anticorpos"
+      ],
+      "correctIndex": 0,
+      "explanation": "O fenótipo ajuda, mas não define o tipo: obesidade não exclui DM1 e autoanticorpos positivos podem ocorrer em jovens com fenótipo de DM2; a cetose e mesmo a CAD podem ocorrer no DM2. A classificação pode permanecer provisória no diagnóstico, mas o tratamento da descompensação não deve esperar."
+    },
+    {
+      "question": "Como o material orienta o rastreamento de doença celíaca na criança e no adolescente com DM1?",
+      "options": [
+        "Ao diagnóstico e a cada 2 anos, até o quinto ano de doença",
+        "Ao diagnóstico e a cada 5 anos, por toda a vida do paciente",
+        "Somente na vigência de sintomas gastrointestinais evidentes",
+        "A partir dos 10 anos, junto do rastreamento de retinopatia"
+      ],
+      "correctIndex": 0,
+      "explanation": "Todas as crianças e adolescentes com DM1 devem ser rastreados ao diagnóstico e a cada 2 anos até o 5º ano de diabetes, ou antes disso se houver sintomas gastrointestinais ou extraintestinais, baixo ganho de peso, hipoglicemias inexplicáveis ou controle metabólico ruim. Dosam-se antitransglutaminase ou antiendomísio IgA em pessoas sem deficiência de IgA."
+    },
+    {
+      "question": "Segundo o quadro de recomendações de triagem para complicações vasculares no DM1, quando iniciar o rastreio de nefropatia e retinopatia?",
+      "options": [
+        "Aos 11 anos, com 2 a 5 anos de duração do diabetes",
+        "Aos 5 anos de idade, com 1 ano de duração do diabetes",
+        "Aos 18 anos, com 10 anos de duração do diabetes",
+        "Ao diagnóstico, independentemente da duração da doença"
+      ],
+      "correctIndex": 0,
+      "explanation": "O Quadro 6 define início da triagem aos 11 anos, com 2 a 5 anos de diabetes, para nefropatia (relação albumina/creatinina em amostra única de urina), retinopatia (fotografia de retina ou oftalmoscopia midriática), neuropatia e doença macrovascular (perfil lipídico a cada 2 anos e pressão arterial anual).",
+      "image": "pg05",
+      "imageCaption": "Quadro 6 — triagem e fatores de risco para complicações vasculares"
+    },
+    {
+      "question": "Durante um episódio de doença aguda intercorrente ou estresse emocional, como se comporta a necessidade diária de insulina no DM1?",
+      "options": [
+        "Aumenta, chegando a 1,2–1,5 U/kg/dia",
+        "Reduz, caindo para 0,3–0,5 U/kg/dia",
+        "Permanece estável em 0,7–1,0 U/kg/dia",
+        "Deve ser suspensa até a melhora clínica"
+      ],
+      "correctIndex": 0,
+      "explanation": "Nos dias doentes ou de estresse emocional, os hormônios contrarreguladores elevam a necessidade de insulina para 1,2–1,5 U/kg/dia. Suspender a insulina nesse contexto é erro grave e precipita cetoacidose: interrupção da injeção diária, infecções e traumas são fatores clássicos de descompensação."
+    },
+    {
+      "question": "Qual é o efeito das incretinas GLP-1 e GIP sobre o controle glicêmico?",
+      "options": [
+        "Aumentam a insulina pós-prandial e inibem a secreção de glucagon",
+        "Reduzem a insulina pós-prandial e estimulam a produção de glucagon",
+        "Aceleram o esvaziamento gástrico e aumentam o apetite central",
+        "Bloqueiam a reabsorção renal de glicose e aumentam a glicosúria"
+      ],
+      "correctIndex": 0,
+      "explanation": "GLP-1 e GIP aumentam a secreção de insulina após as refeições, inibem o glucagon (reduzindo a produção hepática de glicose), retardam o esvaziamento gástrico e agem no cérebro diminuindo o apetite. No DM2 há alteração das incretinas, com aumento da produção hepática de glicose e falência progressiva das células beta."
+    },
+    {
+      "question": "Menina de 7 anos, previamente continente à noite, volta a urinar na cama e emagrece apesar de comer muito. O que esse conjunto sugere?",
+      "options": [
+        "Enurese secundária por poliúria osmótica, típica do DM1",
+        "Enurese primária por imaturidade vesical, sem causa orgânica",
+        "Perda de peso por hipertireoidismo, sem relação com a glicemia",
+        "Polidipsia primária psicogênica, com glicemia sempre normal"
+      ],
+      "correctIndex": 0,
+      "explanation": "As quatro manifestações clássicas do DM1 são poliúria, polidipsia, polifagia e perda de peso, as polis. A poliúria pode se manifestar como enurese noturna secundária em criança que já tinha controle vesical, e a perda ponderal pode aparecer como emagrecimento inexplicável ou ganho de peso insuficiente em criança com polifagia."
+    }
+  ]
+}

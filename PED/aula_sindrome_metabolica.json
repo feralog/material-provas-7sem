@@ -1,0 +1,354 @@
+{
+  "titulo": "Síndrome Metabólica e Obesidade",
+  "eyebrow": "Pediatria · Endocrinologia",
+  "subtitulo": "Do percentil de IMC aos critérios da IDF na criança obesa",
+  "intro": "Material da Aula 6 de Pediatria: classificação da obesidade por IMC e percentil, aferição e interpretação da pressão arterial na infância, critérios diagnósticos de síndrome metabólica da IDF, fisiopatologia da resistência insulínica, rastreio de comorbidades e conduta. Inclui os dados brasileiros do SISVAN e do ERICA.",
+  "questoes": [
+    {
+      "question": "Segundo a definição adotada na aula, obesidade em pacientes pediátricos corresponde a qual ponto de corte antropométrico?",
+      "options": [
+        "IMC ≥ percentil 95 para a mesma idade e sexo",
+        "IMC ≥ percentil 85 para a mesma idade e sexo",
+        "IMC ≥ percentil 90 para a mesma idade e sexo",
+        "IMC ≥ percentil 97 para a mesma idade e sexo"
+      ],
+      "correctIndex": 0,
+      "explanation": "A obesidade pediátrica é definida como IMC ≥ percentil 95 para crianças e adolescentes da mesma idade e sexo, com base nos gráficos padronizados de crescimento do CDC. O percentil 85 marca o sobrepeso, não a obesidade. O IMC é usado porque é indicador validado de adiposidade e se correlaciona com risco cardiovascular e metabólico."
+    },
+    {
+      "question": "Pelos critérios da International Diabetes Federation (2007), o diagnóstico de síndrome metabólica na criança exige qual combinação?",
+      "options": [
+        "Cintura ≥ P90 mais dois ou mais critérios, a partir dos 10 anos",
+        "Cintura ≥ P75 mais dois ou mais critérios, a partir dos 6 anos",
+        "Cintura ≥ P90 mais três ou mais critérios, a partir dos 6 anos",
+        "Cintura ≥ P95 mais um ou mais critério, a partir dos 12 anos"
+      ],
+      "correctIndex": 0,
+      "explanation": "A IDF tornou a obesidade central condição obrigatória: sem circunferência de cintura ≥ percentil 90 (curva de Fernández et al.) não há diagnóstico. A ela somam-se dois ou mais dos quatro critérios: HDL-c baixo, pressão arterial elevada, triglicerídeos elevados e glicose elevada. A faixa de aplicação começa aos 10 anos.",
+      "image": "pg02",
+      "imageCaption": "Tabela da IDF para diagnóstico de síndrome metabólica por faixa etária"
+    },
+    {
+      "question": "Menino de 8 anos, cintura no percentil 95, triglicerídeos 180 mg/dL e HDL 35 mg/dL. Qual a conduta diagnóstica correta pela IDF?",
+      "options": [
+        "Não rotular síndrome metabólica; sinalizar risco e acompanhar de perto",
+        "Rotular síndrome metabólica, pois preenche três critérios de risco",
+        "Rotular síndrome metabólica apenas se a glicemia de jejum estiver alta",
+        "Aguardar os 6 anos completos para então aplicar os critérios da IDF"
+      ],
+      "correctIndex": 0,
+      "explanation": "Esta é a pegadinha clássica: na faixa de 6 a menos de 10 anos a IDF não define pontos de corte para disglicemia, dislipidemia e hipertensão, e a síndrome metabólica NÃO pode ser diagnosticada. Registra-se apenas a obesidade central (cintura ≥ P90) e faz-se acompanhamento dos fatores de risco. O diagnóstico só passa a ser possível a partir dos 10 anos."
+    },
+    {
+      "question": "Em adolescentes com 16 anos ou mais, os pontos de corte de circunferência da cintura da IDF (critérios de adulto) são:",
+      "options": [
+        "≥ 90 cm no sexo masculino e ≥ 80 cm no sexo feminino",
+        "≥ 80 cm no sexo masculino e ≥ 90 cm no sexo feminino",
+        "≥ 94 cm no sexo masculino e ≥ 88 cm no sexo feminino",
+        "≥ 102 cm no sexo masculino e ≥ 88 cm no sexo feminino"
+      ],
+      "correctIndex": 0,
+      "explanation": "A partir dos 16 anos abandonam-se os percentis e aplicam-se os critérios de adulto da IDF: cintura ≥ 90 cm em homens e ≥ 80 cm em mulheres. Os valores de 94/80 e 102/88 pertencem a outras diretrizes (europeias e NCEP/ATP III), não à IDF adotada pela Sociedade Brasileira de Pediatria."
+    },
+    {
+      "question": "Ainda pelos critérios da IDF, qual o ponto de corte de HDL-c em adolescente do sexo feminino com 16 anos ou mais?",
+      "options": [
+        "< 50 mg/dL",
+        "< 40 mg/dL",
+        "< 35 mg/dL",
+        "< 60 mg/dL"
+      ],
+      "correctIndex": 0,
+      "explanation": "Abaixo dos 16 anos o corte é único: HDL-c < 40 mg/dL para ambos os sexos. A partir dos 16 anos aplica-se o critério de adulto, que passa a ser sexo-específico: < 40 mg/dL no masculino e < 50 mg/dL no feminino. Confundir os dois é erro frequente de prova."
+    },
+    {
+      "question": "Nos critérios da IDF para a faixa de 10 a menos de 16 anos, o ponto de corte de triglicerídeos é:",
+      "options": [
+        "≥ 150 mg/dL",
+        "≥ 100 mg/dL",
+        "≥ 200 mg/dL",
+        "≥ 130 mg/dL"
+      ],
+      "correctIndex": 0,
+      "explanation": "O corte é triglicerídeos ≥ 150 mg/dL, equivalente a 1,7 mmol/L nas tabelas internacionais. Valores de 100 e 130 mg/dL correspondem a metas lipídicas de rastreio, não ao critério de síndrome metabólica. A definição de de Ferranti (2006) usa corte mais baixo, mas exige três componentes e não torna a cintura obrigatória."
+    },
+    {
+      "question": "Nos mesmos critérios da IDF para 10 a menos de 16 anos, considera-se pressão arterial elevada a partir de qual valor?",
+      "options": [
+        "130/85 mmHg",
+        "120/80 mmHg",
+        "140/90 mmHg",
+        "135/80 mmHg"
+      ],
+      "correctIndex": 0,
+      "explanation": "O componente hipertensão da IDF é pressão arterial ≥ 130/85 mmHg, ou seja, sistólica acima de 130 ou diastólica acima de 85. Atenção: este é o critério da síndrome metabólica, e não a classificação de hipertensão pediátrica, que para maiores de 13 anos define estágio 1 já a partir de 130/80 mmHg."
+    },
+    {
+      "question": "Ainda pelos critérios da IDF, a glicemia de jejum é considerada alterada para fins de síndrome metabólica a partir de:",
+      "options": [
+        "100 mg/dL, ou diabetes tipo 2 já conhecido",
+        "126 mg/dL, ou diabetes tipo 2 já conhecido",
+        "110 mg/dL, ou diabetes tipo 2 já conhecido",
+        "140 mg/dL, ou diabetes tipo 2 já conhecido"
+      ],
+      "correctIndex": 0,
+      "explanation": "O critério é glicemia de jejum acima de 100 mg/dL (5,6 mmol/L) ou diabetes tipo 2 previamente diagnosticado. O valor de 126 mg/dL é o corte diagnóstico de diabetes, não o da síndrome metabólica: usar 126 aqui subdiagnostica o componente disglicêmico."
+    },
+    {
+      "question": "A circunferência da cintura deve ser aferida em qual ponto anatômico?",
+      "options": [
+        "Ponto médio entre a última costela fixa e a crista ilíaca",
+        "Ponto médio entre o apêndice xifoide e a crista ilíaca",
+        "Na cicatriz umbilical, com o abdome em expiração forçada",
+        "Na maior circunferência do abdome, logo acima do púbis"
+      ],
+      "correctIndex": 0,
+      "explanation": "A fita métrica é posicionada no ponto médio entre a curvatura inferior da última costela fixa e a curvatura superior da crista ilíaca. O adolescente fica em pé, braços ao longo do corpo, pés unidos, abdome relaxado e respirando normalmente, sem murchar nem estufar a barriga."
+    },
+    {
+      "question": "Como deve ser realizada a aferição da pressão arterial na criança, segundo a técnica padronizada?",
+      "options": [
+        "Braço direito, sentado, após 5 minutos de repouso, braço na altura do coração",
+        "Braço esquerdo, deitado, após 1 minuto de repouso, braço abaixo do coração",
+        "Braço direito, em pé, sem repouso prévio, braço acima da altura do coração",
+        "Braço esquerdo, sentado, após 15 minutos, braço apoiado sobre o abdome"
+      ],
+      "correctIndex": 0,
+      "explanation": "Usa-se dispositivo auscultatório manual ou oscilométrico validado, sempre no braço direito, com a criança sentada, costas apoiadas, pés planos no chão e o braço na altura do coração, após pelo menos 5 minutos de repouso. Medir com o braço abaixo do nível do coração superestima os valores.",
+      "image": "s13i1",
+      "imageCaption": "Posicionamento correto da criança para aferição da PA"
+    },
+    {
+      "question": "Quais as dimensões corretas da câmara interna do manguito para aferição de pressão arterial na criança?",
+      "options": [
+        "Largura de 40% e comprimento de 80 a 100% da circunferência do braço",
+        "Largura de 80% e comprimento de 40 a 50% da circunferência do braço",
+        "Largura de 20% e comprimento de 60 a 70% da circunferência do braço",
+        "Largura de 50% e comprimento de 100 a 120% da circunferência do braço"
+      ],
+      "correctIndex": 0,
+      "explanation": "A largura da câmara deve cobrir 40% da circunferência do ponto médio do braço e o comprimento deve envolver 80 a 100% dessa circunferência. Crianças com obesidade frequentemente precisam de manguitos maiores, inclusive tamanhos de adulto grande ou de coxa, pela maior circunferência braquial."
+    },
+    {
+      "question": "O uso de manguito menor que o adequado em uma criança com obesidade produz qual efeito sobre a medida?",
+      "options": [
+        "Superestimativa da pressão arterial aferida",
+        "Subestimativa da pressão arterial aferida",
+        "Medida fidedigna da pressão arterial aferida",
+        "Elevação isolada da pressão arterial diastólica"
+      ],
+      "correctIndex": 0,
+      "explanation": "Manguito pequeno demais superestima a pressão arterial e gera falso diagnóstico de hipertensão; manguito grande demais subestima a medida. Como a criança obesa tem circunferência braquial aumentada, esse é o erro mais comum na prática e uma pegadinha frequente de prova."
+    },
+    {
+      "question": "Adolescente de 14 anos apresenta PA de 143/88 mmHg, confirmada em duas aferições com manguito adequado. Como se classifica?",
+      "options": [
+        "Hipertensão estágio 2",
+        "Hipertensão estágio 1",
+        "Pressão arterial elevada",
+        "Pressão arterial normal"
+      ],
+      "correctIndex": 0,
+      "explanation": "Para crianças com 13 anos ou mais valem valores fixos de adulto: normal abaixo de 120/80; PA elevada de 120/<80 a 129/<80; estágio 1 de 130/80 a 139/89; estágio 2 a partir de 140/90 mmHg. Com 143/88 a sistólica já ultrapassa 140 e classifica como estágio 2, mesmo com a diastólica abaixo de 90.",
+      "image": "pg01",
+      "imageCaption": "Categorias de PA e estágios de hipertensão por faixa etária"
+    },
+    {
+      "question": "Em criança de 8 anos, uma PA situada entre o percentil 90 e o percentil 95 para sexo, idade e altura é classificada como:",
+      "options": [
+        "Pressão arterial elevada",
+        "Pressão arterial normal",
+        "Hipertensão estágio 1",
+        "Hipertensão estágio 2"
+      ],
+      "correctIndex": 0,
+      "explanation": "Para a faixa de 1 a menos de 13 anos usam-se tabelas de percentil por sexo, idade e altura: normal é abaixo do P90; PA elevada vai do P90 até menos que o P95 (ou de 120/80 até o P95, o que for menor); estágio 1 vai do P95 até P95 mais 12 mmHg; estágio 2 é acima de P95 mais 12 mmHg. Não se aplicam valores de adulto nessa faixa."
+    },
+    {
+      "question": "No esquema de patogênese da síndrome metabólica, o tecido adiposo visceral e os macrófagos ativados liberam quais adipocitocinas agressoras?",
+      "options": [
+        "TNF-alfa, IL-6, IL-1beta e proteína C reativa",
+        "Adiponectina, IL-10 e interferon-gama elevados",
+        "GLP-1, IRS-1 e proteína C reativa elevados",
+        "Insulina, glucagon e adiponectina elevados"
+      ],
+      "correctIndex": 0,
+      "explanation": "O acúmulo de tecido adiposo abdominal recruta macrófagos que liberam citocinas pró-inflamatórias: TNF-alfa, IL-6 e IL-1beta, com elevação da proteína C reativa. Esse estado inflamatório crônico de baixo grau é o elo entre obesidade central e resistência à insulina, dislipidemia e hipertensão.",
+      "image": "s12i1",
+      "imageCaption": "Patogênese da síndrome metabólica em crianças e adolescentes"
+    },
+    {
+      "question": "Sobre as adipocitocinas defensoras na obesidade abdominal, o padrão descrito no esquema da aula é:",
+      "options": [
+        "Adiponectina reduzida, com resistina aumentada",
+        "Adiponectina aumentada, com resistina reduzida",
+        "Adiponectina reduzida, com lectina também reduzida",
+        "Quimerina reduzida, com adiponectina aumentada"
+      ],
+      "correctIndex": 0,
+      "explanation": "No esquema, lectina, quimerina e resistina aparecem aumentadas, enquanto a adiponectina, a adipocina protetora, sensibilizadora de insulina e anti-inflamatória, está reduzida. É justamente a queda da adiponectina que caracteriza a disfunção das defesas do tecido adiposo na obesidade central."
+    },
+    {
+      "question": "A ativação do tecido adiposo aumenta a enzima conversora de angiotensina e a produção de angiotensina II, o que leva a:",
+      "options": [
+        "Estresse oxidativo, expressão de LOX-1 e disfunção endotelial",
+        "Vasodilatação sustentada e queda da pressão arterial média",
+        "Aumento da captação muscular de glicose e queda da glicemia",
+        "Redução do estresse oxidativo e proteção do endotélio vascular"
+      ],
+      "correctIndex": 0,
+      "explanation": "A angiotensina II gerada pela ECA do tecido adiposo eleva as espécies reativas de oxigênio, ativa o sistema renina-angiotensina-aldosterona e induz a expressão do receptor LOX-1, o receptor de LDL oxidada do tipo lectina, causando disfunção endotelial. Esse é o braço fisiopatológico que liga a obesidade central à hipertensão arterial."
+    },
+    {
+      "question": "Quais polimorfismos genéticos aparecem no esquema da aula como fatores de suscetibilidade para obesidade abdominal?",
+      "options": [
+        "FTO, CETP e TCF7L2",
+        "MC4R, LEP e POMC",
+        "PCSK1, LEPR e BBS1",
+        "APOE, PPARG e SREBP"
+      ],
+      "correctIndex": 0,
+      "explanation": "O esquema cita polimorfismos em FTO, CETP e TCF7L2 como base da suscetibilidade genética à obesidade abdominal e à síndrome metabólica. Genes como MC4R, LEP, LEPR, POMC e PCSK1 relacionam-se à obesidade monogênica de início precoce, entidade distinta que deve ser suspeitada abaixo dos 5 anos com apetite insaciável."
+    },
+    {
+      "question": "No esquema de patogênese, por qual mecanismo os distúrbios do sono contribuem para a síndrome metabólica?",
+      "options": [
+        "Elevam o cortisol, reduzindo GLP-1 e IRS-1",
+        "Elevam o GLP-1, reduzindo cortisol e IRS-1",
+        "Reduzem o cortisol, elevando GLP-1 e IRS-1",
+        "Elevam o IRS-1, reduzindo cortisol e GLP-1"
+      ],
+      "correctIndex": 0,
+      "explanation": "O distúrbio do sono aparece ligado ao aumento do cortisol, com consequente queda do GLP-1, a incretina que aumenta saciedade e secreção de insulina, e do IRS-1, o substrato do receptor de insulina. A redução do IRS-1 compromete a sinalização pós-receptor e é mecanismo direto de resistência à insulina."
+    },
+    {
+      "question": "Adolescente obeso apresenta o achado dermatológico mostrado na imagem, em região cervical. Ele indica principalmente:",
+      "options": [
+        "Resistência à insulina",
+        "Hipercortisolismo endógeno",
+        "Hipotireoidismo primário",
+        "Deficiência de vitamina B12"
+      ],
+      "correctIndex": 0,
+      "explanation": "Trata-se de acantose nigricans: placas hiperpigmentadas, aveludadas e espessadas em pescoço, axilas e dobras. É marcador clínico de hiperinsulinemia e resistência à insulina, e sua presença no exame físico do obeso pediátrico reforça a indicação de rastreio de disglicemia. Hirsutismo e acne grave completam o exame da pele.",
+      "image": "s19i1",
+      "imageCaption": "Acantose nigricans em região cervical posterior"
+    },
+    {
+      "question": "Por que o rastreio de disglicemia no obeso pediátrico solicita hemoglobina glicada, glicemia de jejum e teste oral de tolerância à glicose em conjunto?",
+      "options": [
+        "O TTOG é mais sensível e pode alterar com glicemia de jejum normal",
+        "A glicemia de jejum é o teste mais sensível e dispensa os demais",
+        "A HbA1c isolada já é suficiente para descartar disglicemia no obeso",
+        "O TTOG é menos sensível, servindo apenas para confirmar diabetes"
+      ],
+      "correctIndex": 0,
+      "explanation": "O teste oral de tolerância à glicose é o mais sensível e pode revelar intolerância mesmo com glicemia de jejum e hemoglobina glicada normais. Por isso, quando a suspeita clínica é alta, pedem-se os três exames. O rastreio laboratorial é feito sempre na suspeita, independentemente da idade, se houver fator de risco ou alimentação inadequada."
+    },
+    {
+      "question": "Na tabela de avaliação laboratorial do adolescente com sobrepeso ou obesidade, o critério de pré-diabetes é hemoglobina glicada:",
+      "options": [
+        "Entre 5,7 e 6,5%",
+        "Entre 4,5 e 5,6%",
+        "Entre 6,5 e 7,5%",
+        "Entre 7,0 e 8,0%"
+      ],
+      "correctIndex": 0,
+      "explanation": "A tabela define pré-diabetes como hemoglobina glicada entre 5,7 e 6,5%. Na mesma avaliação, a doença hepática gordurosa é rastreada por enzimas hepáticas, sendo a TGO a que mais se altera, sobretudo quando há esteatose, e a apneia obstrutiva do sono exige polissonografia para confirmação."
+    },
+    {
+      "question": "Quando se deve suspeitar de obesidade monogênica na avaliação inicial da criança obesa?",
+      "options": [
+        "Início antes dos 5 anos, com apetite insaciável",
+        "Início após os 10 anos, com apetite insaciável",
+        "Início antes dos 5 anos, com apetite preservado",
+        "Início na puberdade, com ganho de peso acelerado"
+      ],
+      "correctIndex": 0,
+      "explanation": "A obesidade monogênica deve ser descartada quando o quadro começa antes dos 5 anos de idade e cursa com apetite insaciável (hiperfagia). Na mesma história médica investigam-se lesão de sistema nervoso central, tumores hipotalâmicos e medicações como corticoides e antipsicóticos, que apontam para causas secundárias."
+    },
+    {
+      "question": "Entre as complicações da obesidade apresentadas no esquema da aula, encontram-se:",
+      "options": [
+        "Apneia do sono, DRGE, doença renal e infertilidade",
+        "Apneia do sono, DRGE, anemia falciforme e surdez",
+        "Artralgias, doença celíaca, catarata e convulsões",
+        "Esclerose múltipla, DRGE, cirrose biliar e asma"
+      ],
+      "correctIndex": 0,
+      "explanation": "O esquema lista risco aumentado de AVC, infarto agudo do miocárdio, depressão, apneia do sono, doença do refluxo gastroesofágico, rash cutâneo, doença renal, infertilidade, artralgias, fraqueza muscular e óssea, diabetes tipo 2, problemas de vesícula, câncer e doença hepática. A apneia do sono merece destaque por elevar o risco cardiovascular e prejudicar a secreção de GH durante o sono.",
+      "image": "s05i1",
+      "imageCaption": "Complicações sistêmicas da obesidade"
+    },
+    {
+      "question": "Quais são as recomendações de comportamento sedentário e atividade física para o adolescente com obesidade?",
+      "options": [
+        "Até 2 horas de tela por dia e 60 minutos de atividade moderada a vigorosa",
+        "Até 4 horas de tela por dia e 30 minutos de atividade moderada a vigorosa",
+        "Até 1 hora de tela por dia e 90 minutos de atividade moderada a vigorosa",
+        "Até 3 horas de tela por dia e 20 minutos de atividade moderada a vigorosa"
+      ],
+      "correctIndex": 0,
+      "explanation": "Recomendam-se no máximo 2 horas diárias de tela fora da escola e do trabalho, e 60 minutos por dia de atividade física de intensidade moderada a vigorosa. Somam-se as medidas nutricionais: eliminar bebidas adoçadas e sucos, reduzir ultraprocessados, fazer refeições regulares e evitar beliscar."
+    },
+    {
+      "question": "O consenso da Academia Americana de Pediatria define qual intensidade mínima de tratamento comportamental para a obesidade?",
+      "options": [
+        "26 horas ou mais de consulta em 3 meses",
+        "12 horas ou mais de consulta em 3 meses",
+        "26 horas ou mais de consulta em 12 meses",
+        "6 horas ou mais de consulta em 3 meses"
+      ],
+      "correctIndex": 0,
+      "explanation": "A AAP destaca a urgência de tratar a obesidade e recomenda pelo menos 26 horas de consulta em 3 meses dedicadas a mudanças de comportamento de saúde e estilo de vida, considerando medicamentos antiobesidade como adjuvantes quando indicado. É intensidade muito maior do que a prática habitual de consultas isoladas."
+    },
+    {
+      "question": "Na obesidade classe 3, a cirurgia bariátrica pode ser considerada em adolescentes com 13 anos ou mais quando o quadro é:",
+      "options": [
+        "IMC ≥ 40 ou 140% do P95, com ou sem comorbidade associada",
+        "IMC ≥ 35 ou 120% do P95, com ou sem comorbidade associada",
+        "IMC ≥ 30 ou 100% do P95, com ou sem comorbidade associada",
+        "IMC ≥ 45 ou 160% do P95, com ou sem comorbidade associada"
+      ],
+      "correctIndex": 0,
+      "explanation": "Na classe 3 (IMC ≥ 40 ou 140% do percentil 95 para idade e sexo) a indicação independe de comorbidade. Já na classe 2 (IMC ≥ 35 ou 120% do P95) exige-se comorbidade clinicamente significativa. Em ambos os casos é preciso afastar transtorno alimentar e encaminhar a centro com equipe multidisciplinar e seguimento de longo prazo."
+    },
+    {
+      "question": "Na tabela de medicamentos antiobesidade aprovados, liraglutida e semaglutida pertencem a qual classe farmacológica?",
+      "options": [
+        "Agonistas do receptor de GLP-1",
+        "Inibidores da lipase intestinal",
+        "Agonistas do receptor de melanocortina",
+        "Análogos de anfetamina anorexígenos"
+      ],
+      "correctIndex": 0,
+      "explanation": "Ambas são agonistas do receptor de GLP-1, liberadas a partir dos 12 anos, e agem por retardo do esvaziamento gástrico, aumento da saciedade e redução do apetite. Carregam alerta de tarja preta para tumores de células C da tireoide e são contraindicadas na história pessoal ou familiar de carcinoma medular de tireoide. Orlistate é o inibidor de lipase e setmelanotida o agonista de melanocortina.",
+      "image": "s32i1",
+      "imageCaption": "Medicamentos antiobesidade aprovados para adolescentes"
+    },
+    {
+      "question": "No estudo ERICA, a prevalência de síndrome metabólica entre adolescentes brasileiros foi de:",
+      "options": [
+        "2,6% no Brasil, sendo maior no interior do Sul",
+        "8,6% no Brasil, sendo maior no interior do Sul",
+        "2,6% no Brasil, sendo maior no interior do Norte",
+        "0,9% no Brasil, sendo maior no interior do Nordeste"
+      ],
+      "correctIndex": 0,
+      "explanation": "O ERICA encontrou prevalência nacional de 2,6%, com o maior valor no interior da região Sul (4,1%) e o menor em Macapá (0,9%). Por rede de ensino, foi 2,8% nas escolas públicas contra 1,9% nas privadas. A prevalência geral fica entre 2,6% e 4,0%, mas sobe drasticamente entre os adolescentes com obesidade.",
+      "image": "s30i1",
+      "imageCaption": "Prevalência de síndrome metabólica por capital e interior no ERICA"
+    },
+    {
+      "question": "Menino de 14 anos: IMC 41,9 kg/m² (140% do P95), cintura 109 cm acima do P90, PA 143/88 mmHg repetida, triglicerídeos 320 mg/dL, HDL 35 mg/dL, glicemia de jejum alterada e ultrassom com esteatose hepática. A conclusão é:",
+      "options": [
+        "Síndrome metabólica com obesidade grave classe 3",
+        "Síndrome metabólica com obesidade classe 1 leve",
+        "Obesidade classe 3 isolada, sem síndrome metabólica",
+        "Hipertensão primária isolada, com obesidade classe 2"
+      ],
+      "correctIndex": 0,
+      "explanation": "O paciente preenche a cintura obrigatória (acima do P90) e quatro componentes adicionais: triglicerídeos altos, HDL baixo, pressão arterial elevada e glicemia alterada, quando bastariam dois. O IMC em 140% do percentil 95 caracteriza obesidade grave classe 3, o que por si só já autoriza discutir cirurgia bariátrica aos 13 anos ou mais, independentemente de comorbidade."
+    }
+  ]
+}

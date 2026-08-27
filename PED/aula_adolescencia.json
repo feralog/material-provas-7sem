@@ -1,0 +1,380 @@
+{
+  "titulo": "Particularidades da Adolescência",
+  "eyebrow": "Pediatria · Hebiatria",
+  "subtitulo": "Cérebro em obra, corpo em transformação e consulta que exige sigilo",
+  "intro": "Material sobre as particularidades neurológicas, biológicas, psicológicas e sociais da adolescência, a entrevista HEADSSS e a ética do atendimento. Estruturado em torno dos dois casos da aula: Júlia (15 anos, sem doença de base) e Gustavo (16 anos, com doença renal crônica).",
+  "questoes": [
+    {
+      "question": "Segundo a Organização Mundial da Saúde, a adolescência corresponde a qual faixa etária?",
+      "options": [
+        "Dos 10 aos 19 anos de idade",
+        "Dos 12 aos 18 anos de idade",
+        "Dos 15 aos 24 anos de idade",
+        "Dos 10 aos 24 anos de idade",
+        "Dos 13 aos 21 anos de idade"
+      ],
+      "correctIndex": 0,
+      "explanation": "A OMS define a adolescência como a segunda década da vida, dos 10 aos 19 anos, período de transição entre a infância e a vida adulta. A faixa de 15 a 24 anos corresponde ao conceito de juventude, e o intervalo de 10 a 24 anos é usado para o conjunto 'adolescentes e jovens'. É nessa transição que se concentram simultaneamente vulnerabilidades e oportunidades de intervenção."
+    },
+    {
+      "question": "Até que idade, em média, se completa a maturação do córtex pré-frontal?",
+      "options": [
+        "Por volta dos 25 anos de idade",
+        "Por volta dos 18 anos de idade",
+        "Por volta dos 21 anos de idade",
+        "Por volta dos 30 anos de idade",
+        "Por volta dos 16 anos de idade"
+      ],
+      "correctIndex": 0,
+      "explanation": "A aula é explícita: a maturação do córtex pré-frontal só se completa por volta dos 25 anos. Isso significa que durante toda a adolescência — e além dela — o substrato do planejamento e do controle de impulsos ainda está em construção. A maioridade legal aos 18 anos não coincide com a maturidade neurobiológica."
+    },
+    {
+      "question": "Quais funções dependem diretamente do córtex pré-frontal, ainda imaturo no adolescente?",
+      "options": [
+        "Planejamento, julgamento e controle de impulsos",
+        "Busca de recompensa, de prazer e de novidades",
+        "Regulação da fome, da sede e da temperatura",
+        "Memória declarativa, olfato e medo condicionado",
+        "Coordenação motora fina, marcha e equilíbrio"
+      ],
+      "correctIndex": 0,
+      "explanation": "O córtex pré-frontal responde por planejamento, julgamento, controle de impulsos e tomada de decisão. A busca por recompensa, prazer e novidade é atribuição do sistema límbico dopaminérgico, que na adolescência predomina sobre o pré-frontal. Fome, sede e temperatura são hipotalâmicas; marcha e equilíbrio, cerebelares."
+    },
+    {
+      "question": "Qual estrutura predomina funcionalmente sobre o córtex pré-frontal durante a adolescência?",
+      "options": [
+        "O sistema límbico, com circuitaria dopaminérgica",
+        "O cerebelo, com circuitaria predominante glutamatérgica",
+        "O hipocampo, com circuitaria predominante colinérgica",
+        "O tálamo dorsal, com circuitaria predominante gabaérgica",
+        "A medula espinhal, com circuitaria serotoninérgica"
+      ],
+      "correctIndex": 0,
+      "explanation": "O descompasso central da adolescência é a maturação precoce do sistema límbico dopaminérgico frente ao amadurecimento tardio do córtex pré-frontal. Esse predomínio límbico explica a busca por recompensa e novidade, a maior sensibilidade à pressão de pares, a labilidade emocional e a reatividade ao estresse."
+    },
+    {
+      "question": "Qual ganho cognitivo típico da adolescência acompanha o predomínio límbico descrito na aula?",
+      "options": [
+        "Avanço do pensamento abstrato e hipotético-dedutivo",
+        "Consolidação do pensamento sensório-motor precoce",
+        "Aquisição do pensamento pré-operatório simbólico",
+        "Estabilização do raciocínio concreto e literal",
+        "Regressão do raciocínio lógico para o intuitivo"
+      ],
+      "correctIndex": 0,
+      "explanation": "A aula lista, ao lado do predomínio límbico, o avanço do pensamento abstrato e do raciocínio hipotético-dedutivo. O adolescente já consegue formular hipóteses e antecipar consequências no plano teórico, o que não se traduz automaticamente em decisão prudente sob carga emocional ou pressão de pares."
+    },
+    {
+      "question": "Júlia entende perfeitamente as orientações médicas, mas segue tomando decisões impulsivas. Como interpretar isso?",
+      "options": [
+        "Compreensão preservada com autorregulação ainda imatura",
+        "Incapacidade civil que exige decisão exclusiva dos pais",
+        "Déficit cognitivo que indica avaliação neuropsicológica",
+        "Recusa deliberada de tratamento por oposição à equipe",
+        "Falha de comunicação médica que exige nova explicação"
+      ],
+      "correctIndex": 0,
+      "explanation": "Entender não é o mesmo que conseguir regular o comportamento. O adolescente compreende a informação (córtex pré-frontal já capaz de raciocínio abstrato), mas a execução sob carga emocional depende do controle inibitório ainda imaturo. Isso não configura incapacidade de decisão nem incapacidade médica — configura necessidade de decisão compartilhada e gradual."
+    },
+    {
+      "question": "No caso de Júlia, qual estadiamento puberal de Tanner foi registrado no exame físico?",
+      "options": [
+        "Mama M4 e pelos pubianos P4",
+        "Mama M2 e pelos pubianos P2",
+        "Mama M3 e pelos pubianos P2",
+        "Mama M5 e pelos pubianos P5",
+        "Mama M1 e pelos pubianos P1"
+      ],
+      "correctIndex": 0,
+      "explanation": "O exame físico de Júlia registrou Tanner M4/P4, compatível com uma adolescente de 15 anos que teve menarca aos 11. O estágio M4 corresponde à projeção da aréola e da papila formando montículo secundário; M5 é a mama adulta. O estadiamento confirma progressão puberal adequada, afastando atraso puberal como explicação para o quadro."
+    },
+    {
+      "question": "O que o exame físico de Júlia mostrou, além da palidez cutâneo-mucosa discreta?",
+      "options": [
+        "IMC no percentil 45, com queda de dois canais em um ano",
+        "IMC no percentil 45, com ganho de dois canais em um ano",
+        "IMC no percentil 85, com queda de um canal em um ano",
+        "IMC no percentil 10, com queda de três canais em um ano",
+        "IMC no percentil 50, estável ao longo dos últimos anos"
+      ],
+      "correctIndex": 0,
+      "explanation": "O slide registra IMC no percentil 45 com queda de dois canais em um ano e palidez cutâneo-mucosa discreta. O percentil isolado parece normal, mas a mudança de canal é o dado de alarme: sinaliza perda ponderal relativa e obriga a investigar alimentação irregular, transtorno alimentar e anemia.",
+      "image": "pg13",
+      "imageCaption": "Exame físico de Júlia: IMC percentil 45 com queda de dois canais e palidez"
+    },
+    {
+      "question": "Adolescente com menorragia há seis meses, fadiga, tonturas e palidez discreta. Qual a hipótese principal?",
+      "options": [
+        "Anemia ferropriva secundária a sangramento menstrual",
+        "Anemia falciforme com crise vaso-oclusiva de repetição",
+        "Talassemia maior com hemólise crônica descompensada",
+        "Anemia aplásica com pancitopenia de instalação aguda",
+        "Esferocitose hereditária com icterícia intermitente"
+      ],
+      "correctIndex": 0,
+      "explanation": "A combinação de menorragia, fadiga, tontura e palidez em adolescente do sexo feminino aponta para anemia ferropriva por perda menstrual — a causa mais comum nessa faixa. A aula lista explicitamente o risco de anemia entre as vulnerabilidades clínicas do desenvolvimento biológico. Hemoglobinopatias e aplasia teriam curso e achados distintos."
+    },
+    {
+      "question": "A ativação de qual eixo comanda as mudanças hormonais da puberdade?",
+      "options": [
+        "Eixo hipotálamo-hipófise-gonadal",
+        "Eixo hipotálamo-hipófise-adrenal",
+        "Eixo hipotálamo-hipófise-tireoide",
+        "Eixo renina-angiotensina-aldosterona",
+        "Eixo GH-IGF-1 de ação hepática"
+      ],
+      "correctIndex": 0,
+      "explanation": "A puberdade começa com a reativação do eixo hipotálamo-hipófise-gonadal, com repercussão metabólica, somática e emocional. Os demais eixos participam do crescimento e do metabolismo, mas não são o gatilho da maturação sexual. A adrenarca é evento paralelo e independente da gonadarca."
+    },
+    {
+      "question": "Segundo o slide de desenvolvimento hormonal, o que caracteriza o componente 'Crescimento'?",
+      "options": [
+        "Pico de velocidade de crescimento e ganho de massa óssea",
+        "Pico de velocidade de crescimento e perda de massa óssea",
+        "Queda da velocidade de crescimento e ganho de massa magra",
+        "Velocidade de crescimento estável e ganho de massa gorda",
+        "Parada do crescimento linear e ganho de massa muscular"
+      ],
+      "correctIndex": 0,
+      "explanation": "O slide define o crescimento puberal por dois marcos: o pico de velocidade de crescimento e o ganho de massa óssea e muscular. A adolescência concentra boa parte do pico de massa óssea da vida, o que torna cálcio, vitamina D e atividade física questões clínicas relevantes nessa fase.",
+      "image": "pg14",
+      "imageCaption": "Eixo hormonal, crescimento, maturação sexual e vulnerabilidades clínicas"
+    },
+    {
+      "question": "Em escuta sigilosa, Júlia revelou relação sexual com namorado de 17 anos e ainda relatou:",
+      "options": [
+        "Uso inconsistente de preservativo e medo de engravidar",
+        "Uso consistente de preservativo e desejo de engravidar",
+        "Uso de contracepção hormonal e recusa do preservativo",
+        "Uso de contracepção de emergência repetido no último ano",
+        "Uso de dispositivo intrauterino e ausência total de dúvidas"
+      ],
+      "correctIndex": 0,
+      "explanation": "Júlia relatou uso inconsistente de preservativo, medo de engravidar e vergonha de procurar ajuda, além de dúvidas sobre orientação sexual. O uso inconsistente é o achado de maior peso clínico: expõe simultaneamente a infecções sexualmente transmissíveis e à gravidez não planejada, e deve ser a prioridade do aconselhamento."
+    },
+    {
+      "question": "Júlia relatou uma situação em que se sentiu pressionada a ter relação sexual. Isso configura:",
+      "options": [
+        "Coerção sexual, uma vulnerabilidade a ser rastreada",
+        "Iniciação sexual normal, sem necessidade de rastreio",
+        "Comportamento exploratório esperado para essa idade",
+        "Disfunção sexual primária, de manejo especializado",
+        "Conflito de valores familiares, sem repercussão clínica"
+      ],
+      "correctIndex": 0,
+      "explanation": "A aula lista abuso e coerção sexual entre as vulnerabilidades do desenvolvimento sexual, ao lado de ISTs e gravidez não planejada. Relato de pressão para ter relação exige rastreio ativo de violência sexual, avaliação do risco e acionamento da rede de proteção quando indicado — nunca normalização."
+    },
+    {
+      "question": "Júlia pede que os pais não saibam do início da vida sexual. Qual a conduta correta?",
+      "options": [
+        "Manter o sigilo, salvo situação de risco iminente",
+        "Informar os pais, pois ela ainda é menor de idade",
+        "Informar os pais apenas se houver gravidez confirmada",
+        "Manter o sigilo em qualquer circunstância, sem exceção",
+        "Registrar em prontuário e comunicar ao conselho tutelar"
+      ],
+      "correctIndex": 0,
+      "explanation": "Sigilo e confidencialidade são princípios éticos do atendimento ao adolescente, garantidos pelo direito à privacidade e amparados pelo ECA. A exceção é a situação de risco iminente — para si ou para terceiros —, quando a quebra do sigilo é justificada e deve ser comunicada ao próprio adolescente antes de ser feita."
+    },
+    {
+      "question": "Qual princípio orienta a participação do adolescente nas decisões sobre a própria saúde?",
+      "options": [
+        "Autonomia progressiva, amparada pelo ECA",
+        "Autonomia plena somente após os 18 anos",
+        "Decisão exclusiva dos pais até os 16 anos",
+        "Consentimento restrito ao médico assistente",
+        "Autonomia condicionada à capacidade civil plena"
+      ],
+      "correctIndex": 0,
+      "explanation": "A aula defende a autonomia progressiva: o adolescente deve participar das decisões em saúde de forma crescente, respeitados o sigilo, o direito à privacidade e o Estatuto da Criança e do Adolescente. O aconselhamento é individual e familiar, sem infantilizar nem abandonar o adolescente à própria sorte."
+    },
+    {
+      "question": "Júlia refere cortes superficiais em antebraço e nega ideação suicida atual. Qual a conduta?",
+      "options": [
+        "Avaliar saúde mental e manter vigilância do risco",
+        "Tranquilizar a família, pois não existe risco algum",
+        "Encaminhar diretamente para internação psiquiátrica",
+        "Prescrever antidepressivo e reavaliar em um ano",
+        "Atribuir o quadro à busca de atenção entre os pares"
+      ],
+      "correctIndex": 0,
+      "explanation": "Automutilação é fator de risco reconhecido para suicídio, mesmo sem ideação declarada no momento. A conduta esperada é avaliação de saúde mental, plano de segurança e reavaliação seriada, com envolvimento familiar gradual. Banalizar como 'busca de atenção' ou saltar direto para internação são erros opostos e igualmente graves."
+    },
+    {
+      "question": "Quais eixos a aula reúne no desenvolvimento psicossocial e identitário do adolescente?",
+      "options": [
+        "Busca identitária, individuação, moral e ética e autoimagem",
+        "Busca de sensações, dependência, culpa e imagem corporal",
+        "Memória de trabalho, atenção, linguagem e praxia motora",
+        "Vínculo materno, apego seguro, temperamento e humor basal",
+        "Autoeficácia, resiliência, espiritualidade e escolha vocacional"
+      ],
+      "correctIndex": 0,
+      "explanation": "O slide organiza o desenvolvimento psicossocial em seis eixos: busca identitária, autoimagem, individuação, pertencimento, moral e ética, e influência digital. São justamente esses eixos que ficam expostos nas redes sociais, onde a comparação constante alimenta a insatisfação corporal relatada por Júlia."
+    },
+    {
+      "question": "Quais riscos comuns a aula associa ao desenvolvimento psicossocial da adolescência?",
+      "options": [
+        "Transtornos de humor, automutilação e risco de suicídio",
+        "Transtornos de linguagem, tiques motores e enurese noturna",
+        "Transtorno do espectro autista e deficiência intelectual leve",
+        "Transtornos de aprendizagem e dislexia de desenvolvimento",
+        "Transtornos primários do sono e parassonias da infância"
+      ],
+      "correctIndex": 0,
+      "explanation": "Os riscos comuns listados são transtornos de humor e ansiedade, automutilação e risco de suicídio, transtornos de imagem corporal e comportamentos de risco. As demais condições têm apresentação típica na infância ou seguem trajetória de neurodesenvolvimento, não sendo o foco de risco desta fase."
+    },
+    {
+      "question": "No slide de estilo de vida de Júlia, quantas horas ela dorme e em que horário?",
+      "options": [
+        "6 horas por dia, das 00:00 às 06:00",
+        "8 horas por dia, das 23:00 às 07:00",
+        "5 horas por dia, das 01:00 às 06:00",
+        "7 horas por dia, das 00:00 às 07:00",
+        "4 horas por dia, das 02:00 às 06:00"
+      ],
+      "correctIndex": 0,
+      "explanation": "O slide registra sono de 6 horas por dia, das 00:00 às 06:00 — abaixo das 8 a 10 horas recomendadas para a faixa etária e com horário deslocado para a madrugada. Essa privação de sono se soma ao atraso fisiológico do ritmo circadiano e ajuda a explicar a queda do rendimento escolar.",
+      "image": "pg23",
+      "imageCaption": "Estilo de vida de Júlia: alimentação, atividade física, telas e sono"
+    },
+    {
+      "question": "Ainda no estilo de vida de Júlia, qual o tempo diário de telas e o nível de atividade física?",
+      "options": [
+        "Mais de 6 a 8h de telas e atividade física mínima",
+        "Mais de 2 a 3h de telas e atividade física mínima",
+        "Mais de 6 a 8h de telas e atividade física regular",
+        "Cerca de 1 a 2h de telas e atividade física intensa",
+        "Mais de 10 a 12h de telas e atividade física ausente"
+      ],
+      "correctIndex": 0,
+      "explanation": "O slide registra uso de telas acima de 6 a 8 horas por dia e atividade física mínima, ao lado de alimentação irregular com refeições puladas e ultraprocessados frequentes. Esse conjunto é o alvo prático das orientações de autocuidado e de construção de hábitos saudáveis para a vida adulta."
+    },
+    {
+      "question": "Dormir tarde na adolescência é melhor explicado por qual mecanismo?",
+      "options": [
+        "Atraso fisiológico do ritmo circadiano",
+        "Falta de disciplina e de limites familiares",
+        "Insônia primária de início na idade adulta",
+        "Apneia obstrutiva do sono ainda não tratada",
+        "Efeito estimulante do consumo de cafeína"
+      ],
+      "correctIndex": 0,
+      "explanation": "A aula responde diretamente a essa pegadinha: o adolescente dorme tarde por atraso fisiológico do ritmo circadiano, uma característica biológica da fase, e não por indisciplina. Reconhecer isso muda a abordagem — em vez de culpabilizar, orienta-se higiene do sono, redução de telas noturnas e negociação realista de horários."
+    },
+    {
+      "question": "No acrônimo HEADSSS, os dois 'S' finais correspondem a quais domínios?",
+      "options": [
+        "Suicide, que cobre humor, e Safety, que cobre violência",
+        "Sexuality, que cobre relações, e Safety, que cobre violência",
+        "Sleep, que cobre o sono, e Safety, que cobre a violência",
+        "School, que cobre a escola, e Suicide, que cobre a ideação",
+        "Substances, que cobre drogas, e Sexuality, que cobre relações"
+      ],
+      "correctIndex": 0,
+      "explanation": "O acrônimo é Home, Education, Activities, Drugs, Sexuality, Suicide e Safety. Os dois S finais são Suicide — humor, ansiedade, automutilação e ideação suicida — e Safety — violência, acidentes, direção, uso de armas e abuso. Sexuality é o S que antecede os dois últimos.",
+      "image": "pg28",
+      "imageCaption": "HEADSSS aplicado ao caso de Júlia, domínio por domínio"
+    },
+    {
+      "question": "A aula destaca que a entrevista HEADSSS deve ser conduzida de que maneira?",
+      "options": [
+        "Como conversa guiada, e não como checklist rígido",
+        "Como checklist rígido, aplicado na ordem das letras",
+        "Como questionário autoaplicável entregue ao paciente",
+        "Como entrevista feita sempre junto com os cuidadores",
+        "Como triagem breve delegada à equipe de enfermagem"
+      ],
+      "correctIndex": 0,
+      "explanation": "O slide repete o alerta em destaque: 'Não é checklist! É conversa guiada.' O HEADSSS organiza os domínios a explorar, mas a coleta depende de vínculo, privacidade e escuta qualificada. Aplicado como formulário, perde justamente o que ele existe para captar: o que o adolescente só diz quando se sente seguro."
+    },
+    {
+      "question": "No caso de Júlia, o que o domínio 'Suicide' do HEADSSS revelou?",
+      "options": [
+        "Automutilação, sem ideação suicida atual",
+        "Ideação suicida ativa, com plano definido",
+        "Tentativa prévia de suicídio ainda na infância",
+        "Ausência de qualquer sofrimento emocional",
+        "Alucinações auditivas de comando recentes"
+      ],
+      "correctIndex": 0,
+      "explanation": "No HEADSSS de Júlia, o domínio Suicide registrou automutilação; ela nega ideação suicida atual. Os demais domínios mostraram pouca escuta em casa, queda de rendimento, atividades restritas ao meio digital, experimentação ocasional de álcool, início da vida sexual com dúvidas e situações de risco emocional."
+    },
+    {
+      "question": "Gustavo, 16 anos, tem doença renal crônica estágio 3 decorrente de qual mecanismo?",
+      "options": [
+        "Cicatrizes pielonefríticas por infecções urinárias de repetição",
+        "Glomerulonefrite difusa aguda pós-estreptocócica na infância",
+        "Doença renal policística autossômica dominante de herança familiar",
+        "Nefropatia diabética de longa data com controle glicêmico ruim",
+        "Síndrome nefrótica córtico-resistente refratária a imunossupressão"
+      ],
+      "correctIndex": 0,
+      "explanation": "A história de Gustavo é de infecções urinárias de repetição na infância que evoluíram com cicatrizes pielonefríticas e comprometimento da função renal, chegando a DRC estágio 3. Ele faz seguimento com nefrologia pediátrica, em tratamento conservador, com medicações diárias para controle pressórico e preservação da função renal."
+    },
+    {
+      "question": "Gustavo abandonou as medicações e recusa as consultas. Qual leitura psicossocial melhor explica isso?",
+      "options": [
+        "Não adesão intencional como forma de retomar controle",
+        "Esquecimento por déficit importante de memória de trabalho",
+        "Falta de acesso à medicação em razão do custo elevado",
+        "Efeito adverso grave nunca relatado ao nefrologista",
+        "Desconhecimento do diagnóstico e do próprio prognóstico"
+      ],
+      "correctIndex": 0,
+      "explanation": "A aula nomeia esse fenômeno: não adesão intencional como forma de retomar controle — 'se eu não tomo, pelo menos eu mando em algo'. Em doença crônica na adolescência, a perda de autonomia (tudo decidido por adulto ou pelo sistema) e o microcontrole familiar transformam a medicação no único território disponível para exercer vontade própria."
+    },
+    {
+      "question": "O que a HEADSSS tende a revelar no adolescente com doença crônica 'desiludido'?",
+      "options": [
+        "Fadiga de tratamento, baixa autoeficácia e conflito familiar",
+        "Ganho de autonomia, alta autoeficácia e boa adesão ao plano",
+        "Ansiedade de desempenho escolar e traços de perfeccionismo",
+        "Uso pesado de substâncias e conduta francamente antissocial",
+        "Negação do diagnóstico e busca ativa por outros especialistas"
+      ],
+      "correctIndex": 0,
+      "explanation": "No caso de Gustavo, a HEADSSS revela fadiga de tratamento ('não aguento mais'), perda de autonomia, baixa autoeficácia, conflito familiar por cobrança, impacto escolar e social, possível depressão ou uso de substâncias como escape e não adesão intencional. O ambiente é descrito como controlador — a 'polícia do rim'.",
+      "image": "pg42",
+      "imageCaption": "O que a HEADSSS revela no adolescente de 16 anos com DRC estágio 3"
+    },
+    {
+      "question": "Qual conduta a aula propõe para o adolescente com DRC e conflito familiar sobre autonomia?",
+      "options": [
+        "Reunião breve com o cuidador para combinar papéis",
+        "Consulta apenas com os pais para reforçar a cobrança",
+        "Suspender o seguimento até que ele aceite o tratamento",
+        "Internação hospitalar para ajuste do esquema de remédios",
+        "Transferência imediata para o serviço de adultos"
+      ],
+      "correctIndex": 0,
+      "explanation": "A conduta proposta é uma reunião breve 'adolescente + cuidador' para combinar papéis (o que é dele e o que é do adulto), reduzir o microcontrole e criar metas pequenas. A isso se somam carta para a escola, 'prescrição social' com uma atividade escolhida por ele e um plano de adesão pactuado no 'mínimo viável'.",
+      "image": "pg44",
+      "imageCaption": "Ações propostas: combinar papéis, carta à escola, prescrição social e adesão"
+    },
+    {
+      "question": "Qual a abordagem recomendada sobre uso de álcool e drogas nesse adolescente?",
+      "options": [
+        "Não punitiva, com redução de danos",
+        "Punitiva, com contrato de abstinência",
+        "Comunicação imediata ao conselho tutelar",
+        "Encaminhamento compulsório para internação",
+        "Omissão do tema até a maioridade legal"
+      ],
+      "correctIndex": 0,
+      "explanation": "A aula propõe abordagem não punitiva — 'muitos usam para lidar com estresse; quero entender' —, redução de danos e envolvimento da saúde mental quando necessário. A postura punitiva rompe o vínculo e faz o adolescente omitir o uso, exatamente o oposto do que a consulta precisa alcançar."
+    },
+    {
+      "question": "Qual o desfecho realista esperado no caso de Júlia, ao fim da discussão?",
+      "options": [
+        "Sofrimento emocional, sem organicidade grave",
+        "Organicidade grave, com sofrimento emocional",
+        "Doença tireoidiana grave, de manejo cirúrgico",
+        "Transtorno psicótico de início na adolescência",
+        "Leucemia aguda revelada pelo rastreio inicial"
+      ],
+      "correctIndex": 0,
+      "explanation": "O desfecho realista de Júlia é sofrimento emocional sem organicidade grave — o contraste proposital com Gustavo, que tem doença orgânica grave. A conduta esperada é a mesma em estrutura: escuta qualificada, orientação preventiva (higiene do sono, saúde sexual), avaliação de saúde mental, envolvimento familiar gradual e atuação multiprofissional."
+    }
+  ]
+}

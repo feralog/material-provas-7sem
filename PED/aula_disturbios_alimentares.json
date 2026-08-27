@@ -1,0 +1,328 @@
+{
+  "titulo": "Distúrbios Alimentares",
+  "eyebrow": "Pediatria · Hebiatria",
+  "subtitulo": "Anorexia, bulimia e compulsão alimentar na adolescência",
+  "intro": "Material sobre transtornos alimentares na adolescência: fatores de risco, critérios e graus de gravidade do DSM-5, complicações clínicas da purgação, ferramentas de rastreio (EAT-26 e BITE) e o tratamento multidisciplinar, incluindo realimentação.",
+  "questoes": [
+    {
+      "question": "Na dimensão fisiológica da alimentação discutida na aula, qual estrutura funciona como centro da saciedade e quais mediadores a modulam?",
+      "options": [
+        "Hipotálamo é o centro da saciedade, modulado por insulina, leptina e grelina",
+        "Cerebelo é o centro da saciedade, modulado por cortisol, gastrina e secretina",
+        "Bulbo é o centro da saciedade, modulado por glucagon, motilina e gastrina",
+        "Tálamo é o centro da saciedade, modulado por prolactina, GH e vasopressina"
+      ],
+      "correctIndex": 0,
+      "explanation": "A aula descreve a dimensão fisiológica e nutritiva do comer com o hipotálamo como centro da saciedade, em conjunto com o sistema límbico, sob ação de insulina, leptina e grelina. A alimentação tem ainda as dimensões social/cultural (regras, rituais e tabus) e afetiva/relacional (prazer, celebrações, vínculo)."
+    },
+    {
+      "question": "Na organização dos transtornos alimentares por fenótipo clínico, quais quadros compõem o grupo dos RESTRITIVOS?",
+      "options": [
+        "Anorexia nervosa e transtorno alimentar restritivo/evitativo",
+        "Bulimia nervosa e transtorno de compulsão alimentar periódica",
+        "Transtorno de compulsão alimentar e pica na adolescência",
+        "Ruminação e anorexia nervosa subtipo compulsão/purgação"
+      ],
+      "correctIndex": 0,
+      "explanation": "O fenótipo clínico ajuda a organizar risco e encaminhamento. Restritivos: anorexia nervosa e transtorno alimentar restritivo/evitativo. Compulsão/purgação: bulimia nervosa e anorexia nervosa subtipo compulsão/purgação. Há ainda o transtorno de comer compulsivo e a alimentação atípica (pica e ruminação)."
+    },
+    {
+      "question": "Qual dos itens abaixo foi citado como fator de risco para o desenvolvimento de transtorno alimentar na adolescência?",
+      "options": [
+        "Histórico de obesidade ou de diabetes na própria adolescente",
+        "Nascimento pré-termo com baixo peso ao nascer registrado",
+        "Aleitamento materno exclusivo prolongado até os seis meses",
+        "Prática de esporte coletivo recreativo na escola pública"
+      ],
+      "correctIndex": 0,
+      "explanation": "A lista de fatores de risco da aula inclui comorbidades psiquiátricas, ambiente familiar conflituoso, bullying, histórico de abuso, histórico de obesidade ou diabetes, transtornos mentais parentais, pressão de pares e mídias sociais. Prematuridade e aleitamento não foram citados como fatores de risco."
+    },
+    {
+      "question": "Qual ponto de corte antropométrico foi destacado na aula para a anorexia nervosa?",
+      "options": [
+        "IMC abaixo de 18,5 kg/m² ou abaixo do percentil 5 para a idade",
+        "IMC abaixo de 16,0 kg/m² ou abaixo do percentil 3 para a idade",
+        "IMC abaixo de 20,0 kg/m² ou abaixo do percentil 10 para a idade",
+        "IMC abaixo de 17,5 kg/m² ou abaixo do percentil 15 para a idade"
+      ],
+      "correctIndex": 0,
+      "explanation": "O slide de anorexia nervosa destaca em quadro o corte IMC < 18,5 kg/m² ou < percentil 5. Na adolescência o percentil/escore-z é mais adequado que o valor absoluto, porque o IMC varia com idade e sexo. O valor de 16 kg/m² não é o corte diagnóstico, e sim faixa de gravidade moderada."
+    },
+    {
+      "question": "O que caracteriza o subtipo compulsivo-purgativo da anorexia nervosa, diferenciando-o do subtipo restritivo?",
+      "options": [
+        "Comportamentos ativos de perda calórica: vômitos, laxantes e diuréticos",
+        "Restrição alimentar isolada, sem qualquer método de perda calórica",
+        "Compulsão alimentar sem culpa e sem qualquer restrição de calorias",
+        "Aversão a texturas alimentares sem preocupação com a forma corporal"
+      ],
+      "correctIndex": 0,
+      "explanation": "No subtipo compulsivo-purgativo, além de evitar alimentos calóricos, o paciente adota comportamentos ativos de perda de calorias: vômitos autoinduzidos, exercício excessivo, laxantes, diuréticos e enemas. No subtipo restritivo há apenas restrição alimentar, podendo ou não haver sintomas obsessivo-compulsivos."
+    },
+    {
+      "question": "Sobre a epidemiologia e a etiologia da anorexia nervosa, qual afirmação está de acordo com a aula?",
+      "options": [
+        "0,4% das jovens, com etiologia multifatorial e início na adolescência",
+        "1,5% das jovens, com etiologia genética pura e início na infância",
+        "4,0% das jovens, com etiologia infecciosa e início na vida adulta",
+        "0,04% das jovens, com etiologia endócrina e início na pré-escola"
+      ],
+      "correctIndex": 0,
+      "explanation": "A prevalência citada é de 0,4% das jovens, com início em adolescentes e adultos jovens. A etiologia é multifatorial: fatores constitucionais, parentes de 1º grau acometidos, dinâmica familiar (rigidez, repressão, perfeccionismo, alto valor à aparência), valores culturais e profissões ligadas à aparência (modelos, atrizes, bailarinas)."
+    },
+    {
+      "question": "JMS, 13 anos, feminino. Pais referem tristeza e queda do rendimento escolar há 3 meses, iniciados após o divórcio. Estatura escore-z 0 e IMC escore-z 0; exame físico sem alterações e exame psíquico com humor levemente deprimido, sem ideação suicida. Qual a hipótese mais provável?",
+      "options": [
+        "Quadro depressivo reativo, sem critérios para transtorno alimentar",
+        "Transtorno de compulsão alimentar em grau de gravidade leve",
+        "Anorexia nervosa em fase inicial, ainda com peso preservado",
+        "Bulimia nervosa com peso dentro da faixa normal esperada"
+      ],
+      "correctIndex": 0,
+      "explanation": "O caso não traz restrição alimentar, distorção de autoimagem, compulsão nem purgação; o estado nutricional está normal (IMC escore-z 0) e o exame físico não mostra erosão dentária, carotenemia ou sinal de Russell. Os sintomas afetivos surgiram após um estressor familiar identificável, configurando quadro depressivo reativo, e não transtorno alimentar."
+    },
+    {
+      "question": "Pela tabela de indicadores de gravidade da anorexia nervosa (DSM-5) mostrada na imagem, qual combinação corresponde ao grau GRAVE?",
+      "options": [
+        "IMC 15-15,99 kg/m², escore-z -3 ou menos e perda de peso maior que 20%",
+        "IMC 16-16,99 kg/m², escore-z -2 até -2,9 e perda de peso maior que 15%",
+        "IMC maior ou igual a 17 kg/m², escore-z -1 até -1,9 e perda maior que 10%",
+        "IMC 14-14,99 kg/m², escore-z -4 ou menos e perda de peso maior que 30%"
+      ],
+      "correctIndex": 0,
+      "explanation": "Na tabela, o grau grave corresponde a IMC médio abaixo de 70%, IMC de 15 a 15,99 kg/m², escore-z de IMC/idade de -3 ou menos e perda maior que 20% do peso corporal em 6 meses. Os valores de IMC ≥ 17 definem grau leve e 16-16,99 definem moderado; não existe faixa de -4 na tabela.",
+      "image": "pg09",
+      "imageCaption": "Indicadores de gravidade da anorexia nervosa (DSM-5, 2013)"
+    },
+    {
+      "question": "Qual é o formato de tratamento indicado para a anorexia nervosa segundo a aula?",
+      "options": [
+        "Multimodal: psicoterapia, terapia familiar, ISRS e apoio nutricional",
+        "Monoterapia com antipsicótico atípico em dose plena por seis meses",
+        "Isolado: apenas dieta hipercalórica prescrita pelo nutricionista",
+        "Exclusivo: internação psiquiátrica compulsória em todos os casos"
+      ],
+      "correctIndex": 0,
+      "explanation": "O tratamento é multimodal e combina psicoterapia, terapia familiar, medicações (ISRS) e acompanhamento nutricional. Nenhuma dessas frentes isoladamente resolve o quadro, e a internação fica reservada às situações de risco de morte, sobretudo desnutrição grave."
+    },
+    {
+      "question": "Qual é a principal indicação de internação hospitalar na anorexia nervosa apontada na aula?",
+      "options": [
+        "Risco de morte por desnutrição grave com comprometimento clínico",
+        "Escore-z de IMC entre -1 e -1,9 com bom estado geral preservado",
+        "Presença de qualquer distorção da autoimagem na primeira consulta",
+        "Recusa isolada em aceitar acompanhamento com o nutricionista"
+      ],
+      "correctIndex": 0,
+      "explanation": "A internação está indicada nos casos de risco de morte, especialmente por desnutrição grave. Escore-z entre -1 e -1,9 corresponde a gravidade leve, e distorção de autoimagem é achado nuclear do diagnóstico, presente em praticamente todos os casos, portanto não define por si a necessidade de internação."
+    },
+    {
+      "question": "Quais são os dados epidemiológicos da bulimia nervosa apresentados na aula?",
+      "options": [
+        "Cerca de 90% em mulheres, prevalência de 1 a 1,5% das jovens",
+        "Cerca de 50% em mulheres, prevalência de 5 a 10% das jovens",
+        "Cerca de 90% em homens, prevalência de 0,1 a 0,4% das jovens",
+        "Cerca de 70% em mulheres, prevalência de 3 a 4,5% das jovens"
+      ],
+      "correctIndex": 0,
+      "explanation": "A bulimia ocorre em 90% dos casos em mulheres (proporção de 10 mulheres para 1 homem), com prevalência de 1 a 1,5% das mulheres jovens e início no fim da adolescência ou começo da vida adulta. Note que essa prevalência é maior que a da anorexia nervosa, de 0,4%."
+    },
+    {
+      "question": "Como se comporta tipicamente o peso corporal na bulimia nervosa?",
+      "options": [
+        "Peso na faixa normal ou levemente acima ou abaixo do esperado",
+        "Peso sempre muito abaixo, com IMC menor que 15 kg/m² na maioria",
+        "Peso invariavelmente elevado, com obesidade grau II ou maior",
+        "Peso oscilante com IMC obrigatoriamente abaixo do percentil 5"
+      ],
+      "correctIndex": 0,
+      "explanation": "Diferentemente da anorexia nervosa, na bulimia o peso costuma estar dentro da faixa normal, ou apenas levemente acima ou abaixo dela. Esse é um ponto clássico de prova: o peso normal não exclui bulimia e explica por que o diagnóstico costuma passar despercebido por anos."
+    },
+    {
+      "question": "Adolescente com bulimia nervosa induz vômitos há meses, várias vezes ao dia. Qual conjunto de alterações metabólicas é o esperado?",
+      "options": [
+        "Alcalose metabólica com hipocalemia, hiponatremia e hipocloremia",
+        "Acidose metabólica com hipercalemia, hipernatremia e hipercloremia",
+        "Alcalose respiratória com hipocalcemia e hiperfosfatemia marcantes",
+        "Acidose respiratória com retenção de bicarbonato e hipernatremia"
+      ],
+      "correctIndex": 0,
+      "explanation": "A perda de suco gástrico pelos vômitos repetidos leva à perda de hidrogênio e cloro, gerando alcalose metabólica hipoclorêmica, acompanhada de desidratação, hipocalemia e hiponatremia. A hipocalemia é a alteração de maior risco imediato, por arritmias, e justifica o eletrocardiograma na avaliação."
+    },
+    {
+      "question": "Na bulimia nervosa, o abuso crônico de laxantes leva preferencialmente a qual distúrbio ácido-base?",
+      "options": [
+        "Acidose metabólica, ao contrário da alcalose gerada pelos vômitos",
+        "Alcalose metabólica, do mesmo modo que ocorre com os vômitos",
+        "Acidose respiratória, por depressão do centro respiratório bulbar",
+        "Alcalose respiratória, por hiperventilação compensatória crônica"
+      ],
+      "correctIndex": 0,
+      "explanation": "A aula separa explicitamente os dois mecanismos: laxantes causam acidose metabólica, por perda de bicarbonato nas fezes, enquanto os vômitos causam alcalose metabólica, por perda de ácido gástrico. Ambos cursam com desidratação, hipocalemia, hiponatremia e hipocloremia."
+    },
+    {
+      "question": "Qual conjunto de complicações da bulimia nervosa foi listado na aula?",
+      "options": [
+        "Mallory-Weiss, leucopenia com linfocitose e lesão renal pré-renal",
+        "Mallory-Weiss, leucocitose com neutrofilia e lesão renal pós-renal",
+        "Acalasia, plaquetopenia autoimune e nefrite intersticial crônica",
+        "Varizes de esôfago, policitemia e glomerulonefrite pós-infecciosa"
+      ],
+      "correctIndex": 0,
+      "explanation": "As consequências citadas incluem fadiga e dores musculares, faringite, sialorreia e cáries, distúrbios hidroeletrolíticos, refluxo gastroesofágico e síndrome de Mallory-Weiss, leucopenia com linfocitose e lesão renal aguda pré-renal (por desidratação). Esofagite e ruptura esofágica completam o quadro de complicações."
+    },
+    {
+      "question": "Quais achados do exame físico apontam para comportamento purgativo repetido por vômitos?",
+      "options": [
+        "Erosão do esmalte dentário, hiperemia de orofaringe e sialorreia",
+        "Hipertrofia gengival, palidez de mucosas e macroglossia evidente",
+        "Língua geográfica, queilite angular e gengivorragia espontânea",
+        "Aftas recorrentes, halitose cetônica e hipoplasia do esmalte"
+      ],
+      "correctIndex": 0,
+      "explanation": "O contato repetido do ácido gástrico com a cavidade oral produz erosão do esmalte dentário, hiperemia de orofaringe, faringite, cáries e sialorreia com aumento de parótidas. Perda de cabelo, unhas fracas, pele amarelada por carotenemia e perda de peso completam o exame físico dos transtornos alimentares."
+    },
+    {
+      "question": "A imagem mostra calosidades e escoriações no dorso da mão e nas articulações interfalangeanas. Que achado é esse e o que ele indica?",
+      "options": [
+        "Sinal de Russell, indicando indução repetida de vômitos",
+        "Sinal de Trousseau, indicando hipocalcemia por desnutrição",
+        "Sinal de Chvostek, indicando hipomagnesemia por laxantes",
+        "Sinal de Frank, indicando dislipidemia por jejum prolongado"
+      ],
+      "correctIndex": 0,
+      "explanation": "O sinal de Russell é o achado clássico de pacientes com comportamento purgativo: calosidades, escoriações ou cicatrizes no dorso da mão, em geral sobre as interfalangeanas do indicador e do médio, causadas pelo trauma repetido dos dentes ao induzir o vômito.",
+      "image": "pg16",
+      "imageCaption": "Achados do exame físico: erosão dentária e sinal de Russell"
+    },
+    {
+      "question": "Segundo o slide das ferramentas de investigação, qual é a conduta diante de um EAT-26 com 20 pontos ou mais?",
+      "options": [
+        "Encaminhar para profissional habilitado, pois é teste de triagem",
+        "Confirmar o diagnóstico de bulimia e iniciar ISRS imediatamente",
+        "Repetir o teste em seis meses, pois o valor está na normalidade",
+        "Solicitar internação hospitalar imediata por risco de morte alto"
+      ],
+      "correctIndex": 0,
+      "explanation": "O EAT (Eating Attitudes Test) considera três critérios: respostas do EAT-26, respostas às questões comportamentais sobre sintomas alimentares e perda de peso, e o IMC. Tem boa especificidade e sensibilidade moderada, e é instrumento de triagem: com 20 pontos ou mais, encaminha-se para profissional habilitado, sem fechar diagnóstico.",
+      "image": "pg15",
+      "imageCaption": "Ferramentas de investigação: EAT e BITE"
+    },
+    {
+      "question": "Na escala de sintomas do Teste de Investigação Bulímica de Edimburgo (BITE), o que significa pontuação entre 10 e 19 pontos?",
+      "options": [
+        "Padrão alimentar não usual, que requer avaliação clínica detalhada",
+        "Padrão alimentar perturbado, com grande possibilidade de bulimia",
+        "Padrão alimentar normal, que dispensa qualquer avaliação adicional",
+        "Padrão alimentar de risco extremo, que indica internação imediata"
+      ],
+      "correctIndex": 0,
+      "explanation": "A escala de sintomas do BITE tem 30 pontos, em perguntas de sim ou não: acima de 20 pontos indica padrão alimentar perturbado com grande possibilidade de bulimia; de 10 a 19 pontos indica padrão não usual, que requer avaliação clínica mais detalhada; abaixo de 10 pontos está dentro da normalidade."
+    },
+    {
+      "question": "Pela tabela de indicadores de gravidade da bulimia nervosa mostrada, uma média de 9 episódios compensatórios inapropriados por semana corresponde a qual grau?",
+      "options": [
+        "Grave, faixa que compreende de 8 a 13 episódios por semana",
+        "Moderada, faixa que compreende de 4 a 7 episódios por semana",
+        "Extrema, faixa que compreende 14 ou mais episódios por semana",
+        "Leve, faixa que compreende de 1 a 3 episódios por semana"
+      ],
+      "correctIndex": 0,
+      "explanation": "A gravidade da bulimia é graduada pela média de episódios de comportamento compensatório inapropriado por semana: leve 1 a 3, moderada 4 a 7, grave 8 a 13 e extrema 14 ou mais. Nove episódios semanais caem, portanto, na faixa grave. A mesma graduação por episódios semanais vale para o transtorno de compulsão alimentar.",
+      "image": "pg13",
+      "imageCaption": "Indicadores de gravidade da bulimia nervosa (DSM-5, 2013)"
+    },
+    {
+      "question": "Quais situações indicam hospitalização na bulimia nervosa segundo a aula?",
+      "options": [
+        "Complicações orgânicas instaladas ou tentativa de suicídio",
+        "Qualquer episódio de compulsão alimentar seguido de vômito",
+        "Recusa em aderir à terapia cognitivo comportamental proposta",
+        "Presença de sinal de Russell no exame físico de rotina"
+      ],
+      "correctIndex": 0,
+      "explanation": "O tratamento da bulimia é multimodal e ambulatorial (psicoterapia, terapia familiar, ISRS e nutricionista); a hospitalização fica reservada às complicações orgânicas ou à tentativa de suicídio. Impulsividade e agressividade são traços que aumentam o risco de suicídio nesses pacientes e exigem vigilância ativa."
+    },
+    {
+      "question": "Qual conjunto de exames complementares foi indicado para dimensionar o comprometimento orgânico nos transtornos alimentares?",
+      "options": [
+        "Hemograma, eletrólitos, eletroforese de proteínas e eletrocardiograma",
+        "Hemograma, amilase, endoscopia digestiva alta e colonoscopia total",
+        "Sorologias virais, mielograma e tomografia de crânio com contraste",
+        "Cariótipo, teste do suor e biópsia de intestino delgado por via oral"
+      ],
+      "correctIndex": 0,
+      "explanation": "A propedêutica listada inclui hemograma, eletrólitos, eletroforese de proteínas, perfil lipídico, glicemia de jejum e transaminases, vitaminas B12 e D, painel hormonal (TSH, FSH, LH, DHEA, GH, IGF-1) e eletrocardiograma/ecocardiograma. O eletrocardiograma é essencial pelo risco de arritmia associado à hipocalemia."
+    },
+    {
+      "question": "Pelo quadro de realimentação apresentado, qual é a prescrição calórica inicial na desnutrição grave (IMC abaixo de 70%)?",
+      "options": [
+        "1000-1200 Kcal/dia, com aumento de cerca de 200 Kcal a cada 2 dias",
+        "1400-1800 Kcal/dia, com aumento de cerca de 400 Kcal a cada 1 dia",
+        "2000-2400 Kcal/dia, com aumento de cerca de 500 Kcal a cada 2 dias",
+        "800-1000 Kcal/dia, com aumento de cerca de 100 Kcal a cada 3 dias"
+      ],
+      "correctIndex": 0,
+      "explanation": "No quadro da Academy for Eating Disorders, a desnutrição grave (IMC < 70%) recebe 1000-1200 Kcal/dia, ou 20-25 Kcal/kg/dia, com incrementos de cerca de 200 Kcal a cada 2 dias, mirando ganho de 1 kg por semana. Nas desnutrições leve e moderada, o aporte inicial é maior: 1400-1800 Kcal/dia com incremento diário de 400 Kcal e meta de 1 a 2 kg por semana.",
+      "image": "pg20",
+      "imageCaption": "Calorias na realimentação conforme o grau de desnutrição"
+    },
+    {
+      "question": "Menino de 6 anos com TEA aceita pouquíssimos alimentos por aversão a texturas, não ganha peso e nunca demonstrou preocupação com peso ou forma corporal. Qual o diagnóstico mais provável?",
+      "options": [
+        "Transtorno alimentar restritivo/evitativo, de início na primeira infância",
+        "Anorexia nervosa tipo restritivo, com distorção grave da autoimagem",
+        "Transtorno de compulsão alimentar, com perda do controle ao comer",
+        "Bulimia nervosa, com uso de métodos compensatórios inapropriados"
+      ],
+      "correctIndex": 0,
+      "explanation": "O transtorno alimentar restritivo/evitativo cursa com aversão a alimentos ou sensibilidade a texturas SEM preocupação com peso ou forma corporal, com início na primeira infância (até 3 anos), podendo persistir até a vida adulta. Leva a aporte inadequado em quantidade e variedade, com perda de peso ou falha em ganhar peso, e associa-se a TEA, TDAH e transtorno de jogos eletrônicos."
+    },
+    {
+      "question": "Qual característica diferencia o transtorno de compulsão alimentar da bulimia nervosa?",
+      "options": [
+        "Ausência de comportamento purgativo após os episódios de compulsão",
+        "Ausência de sofrimento e de culpa depois dos episódios de compulsão",
+        "Ausência de perda do controle durante os episódios de compulsão",
+        "Ausência de episódios de hiperfagia ao longo de vários meses"
+      ],
+      "correctIndex": 0,
+      "explanation": "Os dois quadros compartilham os episódios de hiperfagia (binge eating), a sensação subjetiva de perda de controle e o sofrimento com culpa. O que separa é o comportamento compensatório: na bulimia há purgação (vômitos, laxantes, diuréticos, jejum, exercício); no transtorno de compulsão alimentar, não há."
+    },
+    {
+      "question": "Pelo slide do transtorno de compulsão alimentar, qual é a frequência e a duração mínimas exigidas dos episódios de hiperfagia?",
+      "options": [
+        "Pelo menos uma vez por semana, por vários meses seguidos",
+        "Pelo menos três vezes por semana, por seis meses seguidos",
+        "Pelo menos duas vezes por semana, por três meses seguidos",
+        "Pelo menos uma vez por mês, por doze meses seguidos"
+      ],
+      "correctIndex": 0,
+      "explanation": "O critério apresentado é de episódios frequentes e recorrentes de comer compulsivo pelo menos uma vez por semana, por vários meses. Acompanham perda subjetiva do controle na fase de compulsão, sofrimento intenso com culpa e repulsa, e ausência de purgação depois do episódio.",
+      "image": "pg22",
+      "imageCaption": "Transtorno de compulsão alimentar: critérios e gravidade"
+    },
+    {
+      "question": "MVS, 13 anos, IMC escore-z +2,5, joga no celular 8 horas por dia; após restrição do tempo de tela apresenta agitação, mau humor, agressividade e aumento do consumo alimentar. Qual associação diagnóstica melhor explica o quadro?",
+      "options": [
+        "Transtorno de compulsão alimentar associado ao transtorno de jogos eletrônicos",
+        "Bulimia nervosa associada ao transtorno de déficit de atenção e hiperatividade",
+        "Anorexia nervosa restritiva associada ao transtorno obsessivo-compulsivo grave",
+        "Transtorno restritivo/evitativo associado a episódio depressivo maior recorrente"
+      ],
+      "correctIndex": 0,
+      "explanation": "O adolescente tem sobrepeso/obesidade (IMC escore-z +2,5) e come em excesso como resposta emocional à abstinência de tela, sem qualquer comportamento purgativo descrito, o que aponta para transtorno de compulsão alimentar. O uso problemático de jogos eletrônicos aparece na aula como condição associada aos transtornos alimentares e explica a irritabilidade e a agressividade à restrição."
+    },
+    {
+      "question": "Qual é a abordagem de primeira linha para o transtorno de compulsão alimentar segundo a aula?",
+      "options": [
+        "Psicoterapia ambulatorial, com TCC e terapia baseada na família",
+        "Internação hospitalar precoce para estabilização metabólica",
+        "Cirurgia bariátrica precoce associada a dieta muito restritiva",
+        "Uso isolado de inibidor de apetite em dose máxima por um ano"
+      ],
+      "correctIndex": 0,
+      "explanation": "No transtorno de compulsão alimentar o acompanhamento é multidisciplinar e em geral ambulatorial, e a psicoterapia costuma resolver o quadro: terapia cognitivo comportamental e terapia baseada na família. Soma-se a nutrição comportamental, com refeições estruturadas, redução do jejum prolongado e diário alimentar/emocional, além do tratamento das comorbidades."
+    }
+  ]
+}

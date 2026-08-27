@@ -1,0 +1,511 @@
+{
+  "titulo": "Revisão Global de Pediatria",
+  "eyebrow": "Pediatria · Revisão",
+  "subtitulo": "Adolescência, saúde mental e transtornos alimentares em revisão",
+  "intro": "Revisão pré-prova do resumo global: particularidades da adolescência e anamnese com HEADSSS, saúde mental (ajustamento, humor, ansiedade, psicose), abuso de substâncias e telas, violência autoprovocada e suicídio, e o bloco completo de transtornos alimentares.",
+  "questoes": [
+    {
+      "question": "Segundo a OMS, qual faixa etária define a adolescência e como ela se distingue da puberdade?",
+      "options": [
+        "10 a 19 anos; a adolescência é psicossocial e a puberdade é o processo físico",
+        "12 a 18 anos; a adolescência é o processo físico e a puberdade é psicossocial",
+        "10 a 24 anos; adolescência e puberdade são termos clinicamente equivalentes",
+        "13 a 19 anos; a puberdade sucede a adolescência e termina com a menarca"
+      ],
+      "correctIndex": 0,
+      "explanation": "A OMS define adolescência dos 10 aos 19 anos. Ela não se confunde com a puberdade, que é apenas a parte física: a adolescência carrega os aspectos psicológico, cultural e social da transição para a vida adulta."
+    },
+    {
+      "question": "Do ponto de vista neurobiológico, por que o adolescente apresenta maior comportamento de risco?",
+      "options": [
+        "Predomínio do sistema límbico dopaminérgico sobre córtex pré-frontal imaturo até os 25 anos",
+        "Predomínio do córtex pré-frontal maduro sobre um sistema límbico ainda pouco desenvolvido",
+        "Atrofia do sistema límbico com hiperativação precoce do córtex pré-frontal aos 15 anos",
+        "Maturação simultânea de límbico e córtex pré-frontal, ambos completos no fim da puberdade"
+      ],
+      "correctIndex": 0,
+      "explanation": "Na adolescência predomina o sistema límbico dopaminérgico, que busca prazer imediato, enquanto o córtex pré-frontal só completa a maturação por volta dos 25 anos. É esse córtex que responde por planejamento, julgamento, controle de impulsos e tomada de decisões."
+    },
+    {
+      "question": "Júlia, 15 anos, tem menarca aos 11, ciclos irregulares com menorragia nos últimos 6 meses, fadiga frequente, tonturas e palidez cutâneo-mucosa discreta. Qual a principal hipótese diagnóstica?",
+      "options": [
+        "Anemia ferropriva secundária ao sangramento menstrual abundante",
+        "Anemia hemolítica autoimune desencadeada pelo estirão puberal",
+        "Hipotireoidismo congênito de manifestação tardia na adolescência",
+        "Púrpura trombocitopênica idiopática com sangramento uterino"
+      ],
+      "correctIndex": 0,
+      "explanation": "A tríade fadiga, tontura e palidez em adolescente com menorragia aponta para anemia ferropriva por perda menstrual. Os diagnósticos diferenciais de fadiga listados no material são transtorno alimentar (checar diário alimentar) e distúrbio do sono, e a menorragia justifica encaminhamento à ginecologia."
+    },
+    {
+      "question": "Observando a tabela do HEADSSS apresentada, o que representa a segunda letra 'E' do mnemônico?",
+      "options": [
+        "Distúrbios alimentares: já fez dieta, contentamento com peso e altura",
+        "Emprego formal: carteira assinada, carga horária e turno de trabalho",
+        "Exercício físico: prática esportiva, frequência semanal e lazer",
+        "Escolaridade: alfabetização, ano escolar e desempenho nas provas"
+      ],
+      "correctIndex": 0,
+      "explanation": "Na tabela, o primeiro E é Education/Employment e o segundo E é Eating Disorders, com as indagações \"Já fez dieta? Gosta de seu corpo? Está contente com seu peso e altura?\". Atividades e lazer ficam sob A (Activities), e não sob E."
+    },
+    {
+      "question": "Em quais situações o sigilo do adolescente deve ser quebrado, com comunicação aos pais ou ao conselho tutelar?",
+      "options": [
+        "Risco de vida, diagnóstico de HIV, gestação e abuso sexual",
+        "Uso ocasional de álcool, tabagismo e faltas escolares",
+        "Início da vida sexual, uso de preservativo e namoro",
+        "Conflito com os pais, queda de notas e isolamento social"
+      ],
+      "correctIndex": 0,
+      "explanation": "A autonomia progressiva garante confidencialidade como regra, mas o sigilo é quebrado em risco de vida, HIV, gestação e abuso sexual. Comportamentos de risco sem ameaça imediata são trabalhados com escuta qualificada, orientação e envolvimento familiar gradual."
+    },
+    {
+      "question": "Quantas horas de sono são necessárias ao adolescente em fase de crescimento?",
+      "options": [
+        "8 a 10 horas por noite, sendo a privação fator de risco para depressão",
+        "5 a 6 horas por noite, sendo o excesso fator de risco para depressão",
+        "12 a 14 horas por noite, com necessidade de cochilo diurno regular",
+        "6 a 7 horas por noite, mesma necessidade estimada para o adulto jovem"
+      ],
+      "correctIndex": 0,
+      "explanation": "O material indica 8 a 10 horas de sono para o adolescente em crescimento. Há atraso fisiológico do ritmo circadiano (dorme e acorda mais tarde), e o sono inadequado é explicitamente citado como fator de risco para depressão."
+    },
+    {
+      "question": "Segundo o quadro de exposição a telas apresentado, qual é a recomendação para a faixa de 2 a 5 anos?",
+      "options": [
+        "Limitar a no máximo 1 hora por dia, sempre com supervisão de adultos",
+        "Limitar a no máximo 3 horas por dia, sempre com supervisão de adultos",
+        "Evitar completamente a exposição às telas, sem exceção nessa faixa",
+        "Liberar até 2 horas por dia de jogos de videogame sem supervisão"
+      ],
+      "correctIndex": 0,
+      "explanation": "O quadro escalona: 0 a 2 anos evitar telas sem necessidade; 2 a 5 anos no máximo 1 hora por dia com supervisão; 6 a 10 anos 1 a 2 horas com supervisão; 11 a 18 anos 2 a 3 horas por dia incluindo videogame."
+    },
+    {
+      "question": "A definição de saúde mental da OMS descreve equilíbrio dinâmico entre quais componentes?",
+      "options": [
+        "Bem-estar psicológico, emocional e social",
+        "Bem-estar físico, espiritual e financeiro",
+        "Bem-estar cognitivo, motor e sensorial",
+        "Bem-estar familiar, escolar e religioso"
+      ],
+      "correctIndex": 0,
+      "explanation": "Para a OMS, saúde mental é o estado de bem-estar em que o indivíduo percebe suas habilidades e lida com os estresses normais da vida, num equilíbrio dinâmico entre bem-estar psicológico, emocional e social."
+    },
+    {
+      "question": "Qual o papel dos exames laboratoriais no diagnóstico psiquiátrico da criança e do adolescente?",
+      "options": [
+        "São complementares: hipotireoidismo mimetiza depressão e hipertireoidismo, mania",
+        "São definidores: o diagnóstico exige dosagem hormonal e neuroimagem funcional",
+        "São dispensáveis: nenhuma doença endócrina produz sintomas psiquiátricos",
+        "São de triagem: apenas hemograma e glicemia alteram a conduta psiquiátrica"
+      ],
+      "correctIndex": 0,
+      "explanation": "O diagnóstico psiquiátrico é clínico, feito por anamnese e exame do estado mental. Os exames são complementares e servem para excluir organicidade: o hipotireoidismo pode dar sintomas semelhantes à depressão e o hipertireoidismo, sintomas de mania."
+    },
+    {
+      "question": "Qual a evolução temporal esperada no transtorno de ajustamento/adaptação?",
+      "options": [
+        "Sintomas nos 3 primeiros meses do estressor e remissão até 6 meses do término",
+        "Sintomas após 12 meses do estressor e remissão espontânea em até 24 meses",
+        "Sintomas apenas no dia do estressor e remissão obrigatória em até 30 dias",
+        "Sintomas nos 3 primeiros anos do estressor sem previsão de remissão clínica"
+      ],
+      "correctIndex": 0,
+      "explanation": "É uma reação mal adaptativa e desproporcional a estressores psicossociais: os sintomas surgem nos 3 primeiros meses do evento e devem remitir em até 6 meses do término da situação desencadeante. Persistência além de 6 meses é sinal de alarme, e o quadro é agudo e intenso, com risco aumentado de tentativa de suicídio."
+    },
+    {
+      "question": "O que diferencia a depressão das reações normais de luto?",
+      "options": [
+        "O luto pode durar até 2 anos e não cursa com inibição psicomotora nem culpa",
+        "O luto dura no máximo 30 dias e sempre cursa com inibição psicomotora grave",
+        "A depressão dura menos de 6 meses e nunca apresenta sentimento de culpa",
+        "A depressão exige evento desencadeante identificável, o luto dispensa isso"
+      ],
+      "correctIndex": 0,
+      "explanation": "Sentimentos depressivos são resposta normal ao estresse e só viram psicopatologia quando se prolongam ou são desproporcionais ao evento. O luto pode durar até 2 anos e, em geral, não manifesta inibição psicomotora nem sentimento de culpa inapropriada."
+    },
+    {
+      "question": "Como a depressão pode se apresentar de forma mascarada no adolescente?",
+      "options": [
+        "Agitação psicomotora, ataques de raiva, hostilidade e dor crônica",
+        "Euforia sustentada, hipersexualidade e redução da necessidade de sono",
+        "Alucinações auditivas isoladas com pensamento totalmente organizado",
+        "Ganho súbito de rendimento escolar com hiperfoco em uma única tarefa"
+      ],
+      "correctIndex": 0,
+      "explanation": "Na adolescência a depressão pode ser mascarada por agitação psicomotora, ataques de raiva, comportamentos delinquentes, hostilidade, autoagressão, exposição a risco, uso de drogas, queixas de dor crônica, obesidade e letargia. Euforia e hipersexualidade apontam para episódio maníaco/hipomaníaco."
+    },
+    {
+      "question": "Qual alteração do eixo hipotálamo-hipófise-suprarrenal está associada à depressão?",
+      "options": [
+        "Hipersecreção de ACTH com aumento do cortisol em cerca de metade dos casos",
+        "Hipossecreção de ACTH com queda do cortisol em cerca de metade dos casos",
+        "Hipersecreção de TSH com aumento de T4 livre na maioria dos pacientes",
+        "Bloqueio total da produção de cortisol pelo córtex adrenal desde o início"
+      ],
+      "correctIndex": 0,
+      "explanation": "A depressão associa-se à hipersecreção de ACTH pela hipófise, com aumento do cortisol pelo córtex adrenal; o eixo hipotálamo-hipófise-suprarrenal está hiperativo em cerca de metade dos pacientes. Baixos níveis de T4, e não T4 elevado, geram manifestações depressivas."
+    },
+    {
+      "question": "No quadro sobre sintomas e diagnóstico da depressão apresentado, fadiga constante, retardo psicomotor, alterações do apetite ou do peso e insônia compõem qual conjunto de indicadores?",
+      "options": [
+        "Indicadores vegetativos ou motores",
+        "Indicadores emocionais e afetivos",
+        "Indicadores cognitivos e de juízo",
+        "Indicadores motivacionais e sociais"
+      ],
+      "correctIndex": 0,
+      "explanation": "O quadro organiza os sintomas depressivos em quatro conjuntos: emocionais (tristeza, isolamento, choro, anedonia), cognitivos (distração, decisão prejudicada, pessimismo), motivacionais (indiferença, desinteresse, baixo rendimento escolar) e vegetativos ou motores (fadiga, retardo psicomotor, apetite/peso, insônia, perda da libido)."
+    },
+    {
+      "question": "Qual a diferença entre o transtorno bipolar tipo I e o tipo II?",
+      "options": [
+        "No tipo I predominam episódios maníacos; no tipo II, hipomania e depressão",
+        "No tipo I predominam episódios depressivos; no tipo II, mania psicótica",
+        "No tipo I há apenas hipomania; no tipo II há mania com sintomas psicóticos",
+        "No tipo I não há depressão; no tipo II não há qualquer elevação do humor"
+      ],
+      "correctIndex": 0,
+      "explanation": "No tipo I predomina o estado maníaco, com um ou mais episódios de mania (aumento de energia, fuga de ideias). No tipo II predomina o estado depressivo: transtorno de humor recorrente com um episódio hipomaníaco e um ou mais episódios depressivos."
+    },
+    {
+      "question": "Qual é o fármaco estabilizador de humor de escolha no transtorno bipolar?",
+      "options": [
+        "Carbonato de lítio, associado ou não a antidepressivos e neurolépticos",
+        "Fluoxetina isolada, associada ou não a benzodiazepínicos em dose alta",
+        "Metilfenidato isolado, associado ou não a antipsicóticos de depósito",
+        "Ketamina intranasal, associada ou não a anticonvulsivantes clássicos"
+      ],
+      "correctIndex": 0,
+      "explanation": "O tratamento do bipolar tem como base o carbonato de lítio como estabilizador de humor, associado ou não a antidepressivos e neurolépticos quando há pensamento psicótico. Infusões de ketamina são citadas como recurso de clínica especializada, não como primeira linha."
+    },
+    {
+      "question": "Por que o primeiro mês de uso de um ISRS é o de maior risco de tentativa de suicídio?",
+      "options": [
+        "O fármaco devolve energia antes de aliviar a ideação e o humor deprimido",
+        "O fármaco eleva a ideação suicida diretamente por efeito serotoninérgico",
+        "O fármaco provoca virada maníaca obrigatória nas primeiras quatro semanas",
+        "O fármaco reduz a energia e impede a busca por ajuda nas primeiras semanas"
+      ],
+      "correctIndex": 0,
+      "explanation": "O paciente deprimido tem ideação, mas falta energia para agir. Com o antidepressivo a energia retorna antes da melhora do humor e da ideação, e é nesse primeiro mês que o risco de tentativa é maior. Por isso se orienta iniciar dose baixa, avisar um familiar e encaminhar ao psiquiatra."
+    },
+    {
+      "question": "Qual critério temporal caracteriza o transtorno de ansiedade generalizada?",
+      "options": [
+        "Preocupações excessivas na maioria dos dias por pelo menos 6 meses",
+        "Preocupações excessivas na maioria dos dias por pelo menos 2 semanas",
+        "Preocupações excessivas em todos os dias por pelo menos 24 meses",
+        "Preocupações excessivas em alguns dias por pelo menos 30 dias seguidos"
+      ],
+      "correctIndex": 0,
+      "explanation": "Na ansiedade generalizada há expectativa apreensiva com diversos eventos ou atividades, ocorrendo na maioria dos dias por pelo menos 6 meses. Os transtornos de ansiedade em geral duram 6 meses ou mais, podendo ter duração mais curta em crianças."
+    },
+    {
+      "question": "Qual transtorno de ansiedade é apontado como o mais comum na adolescência?",
+      "options": [
+        "Fobia social, com medo intenso de exposição e de julgamento social",
+        "Transtorno de pânico, com ataques recorrentes e medo de morrer",
+        "Transtorno obsessivo-compulsivo, com rituais de lavagem e contagem",
+        "Estresse pós-traumático, com revivência de um evento catastrófico"
+      ],
+      "correctIndex": 0,
+      "explanation": "A fobia social é a mais comum na adolescência: medo intenso da exposição e do julgamento social (falar em público, apresentar trabalhos), com comprometimento adaptativo. Já o transtorno de ansiedade de separação é o mais frequente na infância."
+    },
+    {
+      "question": "Qual é a característica central do transtorno de estresse pós-traumático?",
+      "options": [
+        "Revivência recorrente de evento traumático semanas ou meses depois",
+        "Ataques inesperados de ansiedade extrema sem gatilho identificável",
+        "Pensamentos intrusivos aliviados por rituais repetidos de checagem",
+        "Preocupação difusa com o futuro sem qualquer evento desencadeante"
+      ],
+      "correctIndex": 0,
+      "explanation": "O TEPT é uma resposta tardia a situação traumática catastrófica (acidente, desastre, violência, abuso): semanas ou meses depois o evento é revivido de forma recorrente, com embotamento, isolamento e evitação de tudo que lembre o trauma. Rituais de alívio caracterizam o TOC."
+    },
+    {
+      "question": "Qual a conduta indicada para um quadro de ansiedade moderado a grave no adolescente?",
+      "options": [
+        "Acompanhamento psiquiátrico para avaliar a introdução de um ISRS",
+        "Apenas psicoterapia individual e familiar, sem encaminhamento",
+        "Benzodiazepínico em monoterapia contínua por no mínimo um ano",
+        "Internação hospitalar imediata com estabilizador de humor"
+      ],
+      "correctIndex": 0,
+      "explanation": "O escalonamento é: quadro leve com psicoterapia individual e familiar; moderado a grave com acompanhamento psiquiátrico para avaliar ISRS; casos mais graves podem associar benzodiazepínico. Na fobia social soma-se atuação conjunta com a escola."
+    },
+    {
+      "question": "O que caracteriza os sintomas negativos da psicose?",
+      "options": [
+        "Retraimento social, empobrecimento afetivo e queda da fluência verbal",
+        "Alucinações auditivas, delírios de perseguição e agitação psicomotora",
+        "Elevação do humor, hipersexualidade e redução da necessidade de sono",
+        "Compulsões de verificação, contagem, simetria e lavagem das mãos"
+      ],
+      "correctIndex": 0,
+      "explanation": "Na psicose os sintomas positivos são o excesso — alucinações e delírios — e os negativos são a falta: retraimento social, comprometimento da fluência verbal, empobrecimento afetivo e desorganização do pensamento."
+    },
+    {
+      "question": "Quais são fatores de risco descritos para psicose na adolescência?",
+      "options": [
+        "História familiar de 1º grau, violência e desnutrição intrauterina",
+        "História familiar de 2º grau, obesidade e prematuridade tardia",
+        "Aleitamento materno prolongado, baixa estatura e anemia leve",
+        "Sedentarismo, dislipidemia e exposição solar reduzida na infância"
+      ],
+      "correctIndex": 0,
+      "explanation": "São fatores de risco a história familiar positiva para psicose, principalmente de 1º grau, violência, desnutrição intrauterina e uso de substâncias ilícitas na gestação. Fatores precipitantes incluem substâncias ilícitas, estresse psicológico, trauma e doença física grave."
+    },
+    {
+      "question": "Qual substância psicoativa é a mais consumida entre os adolescentes?",
+      "options": [
+        "Álcool, frequentemente associado a energéticos, maconha e inalantes",
+        "Cocaína, frequentemente associada a energéticos e benzodiazepínicos",
+        "Maconha, sendo a primeira em prevalência e a mais precoce de todas",
+        "Inalantes, sobretudo cola e solventes, seguidos de perto pelo LSD"
+      ],
+      "correctIndex": 0,
+      "explanation": "O álcool é a substância mais consumida por jovens, com frequente associação a energéticos, maconha, inalantes, cocaína e ansiolíticos. Quanto mais precoce a exposição ao álcool, maior o risco de dependência."
+    },
+    {
+      "question": "Qual a posição da cannabis no consumo entre adolescentes e seu principal efeito descrito?",
+      "options": [
+        "Terceira mais utilizada; piora a cognição do cérebro em desenvolvimento",
+        "Primeira mais utilizada; melhora a cognição do cérebro em formação",
+        "Segunda mais utilizada; não produz efeito algum em uso esporádico",
+        "Quarta mais utilizada; causa morte súbita já na primeira exposição"
+      ],
+      "correctIndex": 0,
+      "explanation": "A maconha é a terceira substância mais utilizada, principalmente na forma de fumo. Mesmo o uso esporádico e menos intenso pode ter efeito deletério: o cérebro exposto na adolescência tem piora da cognição."
+    },
+    {
+      "question": "Quais sinais indicam transtorno por uso de nicotina no adolescente?",
+      "options": [
+        "Fumar nos primeiros 30 minutos após despertar e acordar à noite para fumar",
+        "Fumar apenas em festas de fim de semana e nunca durante a semana letiva",
+        "Fumar somente na companhia de amigos e recusar cigarro quando sozinho",
+        "Fumar depois das refeições principais e reduzir o consumo durante as férias"
+      ],
+      "correctIndex": 0,
+      "explanation": "São sinais de transtorno fumar nos primeiros 30 minutos ao despertar, fumar diariamente e de forma progressiva e acordar à noite para fumar. O uso predispõe a solidão, dificuldades de interação social e problemas de sono, e costuma ser usado para aliviar depressão e ansiedade."
+    },
+    {
+      "question": "Quais comportamentos são indicativos de dependência de substâncias no adolescente?",
+      "options": [
+        "Consumo não social, dificuldade de parar e uso apesar de consequências",
+        "Consumo social ocasional, com interrupção fácil e sem prejuízo escolar",
+        "Experimentação única em festa, seguida de recusa nas ocasiões seguintes",
+        "Uso restrito a fins de semana com bom desempenho escolar e familiar"
+      ],
+      "correctIndex": 0,
+      "explanation": "Indicam dependência o consumo não social (beber sozinho), a dificuldade de parar mesmo em estado de embriaguez, o comportamento agressivo aos questionamentos e a persistência do uso apesar das consequências familiares, sociais e escolares. Misturar substâncias e negação são sinais de alerta."
+    },
+    {
+      "question": "Por que o questionário de dependência de álcool pode ser aplicado ao uso problemático de internet?",
+      "options": [
+        "Ambos ativam a mesma via cerebral de recompensa, e 2 critérios positivos já bastam",
+        "Ambos compartilham o mesmo metabolismo hepático, e 5 critérios positivos bastam",
+        "Ambos produzem abstinência física idêntica, sem necessidade de critérios formais",
+        "Ambos têm o mesmo CID e dispensam qualquer instrumento de rastreio específico"
+      ],
+      "correctIndex": 0,
+      "explanation": "O material explica que o questionário desenvolvido para álcool serve a outros abusos porque a área cerebral ativada é a mesma, a de recompensa, e que 2 ou mais critérios positivos já configuram dependência. Internet e jogo produzem os mesmos sintomas de dependência: irritabilidade, ansiedade e taquicardia."
+    },
+    {
+      "question": "O que distingue a autolesão sem ideação suicida (ALNS) da tentativa de suicídio?",
+      "options": [
+        "Na autolesão não há intenção de morte; é alívio da dor psíquica pela física",
+        "Na autolesão há intenção de morte, porém com método de baixa letalidade",
+        "Na tentativa de suicídio não há intenção de morte, apenas pedido de ajuda",
+        "Na tentativa de suicídio o método é sempre superficial e pouco visível"
+      ],
+      "correctIndex": 0,
+      "explanation": "A autoagressão é comportamento propositado de autolesão sem intenção de morte, que atenua a angústia descarregando a tensão e aliviando a dor psíquica pela dor física. A tentativa de suicídio usa um meio que o paciente acredita ser letal, com intenção de tirar a própria vida."
+    },
+    {
+      "question": "Ao examinar um adolescente com suspeita de autolesão, quais áreas devem ser inspecionadas?",
+      "options": [
+        "Antebraços e coxas, além de glúteos, axilas, ombros e dorso escondidos",
+        "Apenas as mãos e o dorso dos dedos, onde há calosidades por vômito",
+        "Somente o couro cabeludo e a face, onde as lesões são mais visíveis",
+        "Exclusivamente as pernas e os pés, onde as cicatrizes são extensas"
+      ],
+      "correctIndex": 0,
+      "explanation": "As lesões costumam ser múltiplas, no mesmo local e em área visível ou acessível, como antebraços e frente das coxas. No exame físico devem também ser observadas partes escondidas pelas roupas: glúteos, axilas, ombros e dorso."
+    },
+    {
+      "question": "Qual o prazo de notificação compulsória para autoagressão e tentativa de suicídio?",
+      "options": [
+        "Até 24 horas, sendo a notificação compulsória obrigatória em ambos os casos",
+        "Até 7 dias, sendo a notificação compulsória apenas na tentativa de suicídio",
+        "Até 30 dias, sendo a notificação exigida somente em menores de 12 anos",
+        "Sem prazo definido, sendo a notificação facultativa ao médico assistente"
+      ],
+      "correctIndex": 0,
+      "explanation": "Tanto a autoagressão quanto a tentativa de suicídio são de notificação compulsória em até 24 horas. Além disso, tentativas de suicídio não devem ser interpretadas como forma de chamar atenção."
+    },
+    {
+      "question": "Em que faixa etária o suicídio é mais frequente entre adolescentes?",
+      "options": [
+        "Entre 15 e 19 anos, sendo raro antes da puberdade",
+        "Entre 10 e 12 anos, sendo raro após a puberdade",
+        "Entre 6 e 9 anos, com pico no início da escola",
+        "Entre 12 e 14 anos, sendo raro após os 15 anos"
+      ],
+      "correctIndex": 0,
+      "explanation": "O suicídio é raro em crianças antes da puberdade e ocorre sobretudo entre 15 e 19 anos e na idade adulta. A tentativa prévia e as ideias suicidas são os fatores de risco mais importantes e devem ser sempre investigados em intoxicações e acidentes."
+    },
+    {
+      "question": "No Quadro 3 sobre fatores de risco ou predisponentes às práticas autolesivas apresentado, qual item aparece sob a categoria 'Família'?",
+      "options": [
+        "Separação conflituosa dos pais ou abandono afetivo pelo pai e/ou pela mãe",
+        "Informações sobre autolesão pela mídia no mundo digital entre os jovens",
+        "Transtorno de personalidade limítrofe e transtornos alimentares graves",
+        "Doença grave ou cirurgias na infância e estresse emocional precoce"
+      ],
+      "correctIndex": 0,
+      "explanation": "O quadro separa características pessoais, transtornos psiquiátricos, problemas relacionados à infância, social e família. Sob família estão separação conflituosa ou abandono afetivo, desvalorização e rejeição, violência familiar, dependência de álcool ou drogas, relação disfuncional e depressão de um dos pais ou de ambos.",
+      "image": "pg10",
+      "imageCaption": "Quadro 3 — fatores predisponentes às práticas autolesivas"
+    },
+    {
+      "question": "Segundo o fenótipo clínico dos transtornos alimentares, quais quadros compõem o grupo dos 'restritivos'?",
+      "options": [
+        "Anorexia nervosa e transtorno alimentar restritivo/evitativo (ARFID)",
+        "Bulimia nervosa e transtorno de compulsão alimentar periódica",
+        "Pica e transtorno de ruminação da infância e da adolescência",
+        "Anorexia nervosa subtipo compulsão e bulimia nervosa purgativa"
+      ],
+      "correctIndex": 0,
+      "explanation": "O fenótipo clínico organiza risco e encaminhamento em quatro grupos: restritivos (anorexia nervosa e ARFID), transtorno de comer compulsivo, compulsão/purgação (bulimia e anorexia subtipo compulsão) e alimentação atípica da infância (pica e ruminação)."
+    },
+    {
+      "question": "Qual o critério de índice de massa corporal para o diagnóstico de anorexia nervosa?",
+      "options": [
+        "Abaixo de 18,5 em adultos ou abaixo do percentil 5 em adolescentes",
+        "Abaixo de 25 em adultos ou abaixo do percentil 50 em adolescentes",
+        "Abaixo de 16 em adultos ou abaixo do percentil 25 em adolescentes",
+        "Abaixo de 20 em adultos ou abaixo do percentil 10 em adolescentes"
+      ],
+      "correctIndex": 0,
+      "explanation": "Para o diagnóstico o IMC deve ser menor que 18,5 em adultos ou abaixo do quinto percentil em crianças e adolescentes, e a perda de peso não pode ser explicada por outra doença. A anorexia inicia-se em geral na adolescência, com 95% dos casos no sexo feminino e sintomas precoces entre 12 e 14 anos."
+    },
+    {
+      "question": "No Quadro 2 de gravidade da anorexia nervosa apresentado, qual faixa de IMC corresponde à forma moderada?",
+      "options": [
+        "16 a 16,99 kg/m², com 70 a 79% da média de IMC",
+        "17 kg/m² ou mais, com 80 a 90% da média de IMC",
+        "15 a 15,99 kg/m², com menos de 70% da média",
+        "14 a 14,99 kg/m², com 60 a 69% da média de IMC"
+      ],
+      "correctIndex": 0,
+      "explanation": "O quadro classifica: leve com IMC ≥ 17 kg/m² e 80-90% da média; moderada com 16-16,99 kg/m² e 70-79% da média; grave com 15-15,99 kg/m² e menos de 70% da média. Também usa escore-z de IMC/idade e o percentual de perda de peso.",
+      "image": "pg13",
+      "imageCaption": "Critérios do DSM-5 e Quadro 2 de gravidade da anorexia nervosa"
+    },
+    {
+      "question": "Quais achados de exame físico são esperados na anorexia nervosa com desnutrição?",
+      "options": [
+        "Bradicardia, hipotensão postural, amenorreia, osteopenia e queda de cabelo",
+        "Taquicardia, hipertensão sustentada, menorragia e osteoartrite precoce",
+        "Sinal de Russell, erosão do esmalte dentário e hiperemia de orofaringe",
+        "Obesidade central, acantose nigricans, estrias violáceas e hirsutismo"
+      ],
+      "correctIndex": 0,
+      "explanation": "No exame físico da anorexia há perda de cabelo e pilificação, alterações cardiovasculares (bradicardia, hipotensão postural), amenorreia, osteopenia com risco de fraturas, supressão medular (anemia ferropriva ou pancitopenia) e alterações do trato digestivo. Sinal de Russell e erosão dentária são marcas do comportamento purgativo."
+    },
+    {
+      "question": "No Quadro 6 de indicações de internação apresentado, qual parâmetro indica internar um paciente com anorexia nervosa?",
+      "options": [
+        "IMC abaixo de 75% da média para idade e sexo, com bradicardia menor que 50 bpm",
+        "IMC abaixo de 90% da média para idade e sexo, com bradicardia menor que 70 bpm",
+        "Perda de 5% do peso corporal em um mês, com frequência cardíaca acima de 100 bpm",
+        "Compulsão alimentar ou purgação incontroláveis, sem qualquer outro critério clínico"
+      ],
+      "correctIndex": 0,
+      "explanation": "O quadro lista para a anorexia: menos de 75% da média de IMC para idade e sexo, desidratação, distúrbios eletrolíticos, instabilidade com bradicardia (<50 bpm acordado ou <45 dormindo), hipotensão 90/45 mmHg, hipotermia <35,6 °C, alterações no ECG com QTc prolongado, interrupção do crescimento e recusa aguda de ingestão. Compulsão ou purgação incontroláveis figuram na coluna da bulimia.",
+      "image": "pg16",
+      "imageCaption": "Quadro 5 de realimentação e Quadro 6 de indicações de internação"
+    },
+    {
+      "question": "Qual é a característica bioquímica mais marcante da síndrome de realimentação?",
+      "options": [
+        "Hipofosfatemia, podendo cursar com hipocalemia e hipomagnesemia",
+        "Hipercalemia, podendo cursar com hipernatremia e alcalose grave",
+        "Hiperfosfatemia, podendo cursar com hipercalcemia e hipoglicemia",
+        "Hipernatremia isolada, sem outros distúrbios hidroeletrolíticos"
+      ],
+      "correctIndex": 0,
+      "explanation": "A hipofosfatemia é a característica bioquímica mais marcante da síndrome de realimentação. O quadro é complexo e pode incluir desequilíbrio de sódio, alterações do metabolismo de glicose, proteína e gordura, deficiência de tiamina, hipocalemia, hipomagnesemia e acidose metabólica, com risco de arritmias e falência cardíaca."
+    },
+    {
+      "question": "O que diferencia a bulimia nervosa da anorexia nervosa quanto ao peso corporal?",
+      "options": [
+        "Na bulimia o peso costuma ser normal ou pouco alterado, sem desnutrição",
+        "Na bulimia o peso é sempre muito baixo, com desnutrição grave associada",
+        "Na bulimia há amenorreia hipotalâmica e IMC abaixo do percentil 5 sempre",
+        "Na bulimia não há episódios de compulsão, apenas restrição progressiva"
+      ],
+      "correctIndex": 0,
+      "explanation": "Na bulimia há falta de controle da alimentação, o que impede a desnutrição: o paciente costuma estar dentro do peso, um pouco acima ou abaixo. Ocorre em 90% dos casos em mulheres e surge no fim da adolescência ou início da vida adulta, entre 18 e 25 anos."
+    },
+    {
+      "question": "No Quadro 3 de gravidade da bulimia nervosa apresentado, o que define a forma extrema?",
+      "options": [
+        "Média de 14 ou mais episódios compensatórios inapropriados por semana",
+        "Média de 8 a 13 episódios compensatórios inapropriados por semana",
+        "Média de 4 a 7 episódios compensatórios inapropriados por semana",
+        "Média de 1 a 3 episódios compensatórios inapropriados por semana"
+      ],
+      "correctIndex": 0,
+      "explanation": "A gravidade da bulimia é classificada pela frequência semanal dos comportamentos compensatórios inapropriados: leve 1 a 3, moderada 4 a 7, grave 8 a 13 e extrema 14 ou mais por semana. Quanto maior a gravidade, maior o risco de suicídio por impulsividade e agressividade.",
+      "image": "pg14",
+      "imageCaption": "Critérios do DSM-5 e Quadro 3 de gravidade da bulimia nervosa"
+    },
+    {
+      "question": "Quais distúrbios ácido-base podem resultar do comportamento purgativo na bulimia nervosa?",
+      "options": [
+        "Alcalose metabólica pelos vômitos e acidose metabólica pelos laxantes",
+        "Acidose metabólica pelos vômitos e alcalose metabólica pelos laxantes",
+        "Alcalose respiratória pelos vômitos e acidose respiratória pelo jejum",
+        "Acidose láctica pelo exercício e alcalose respiratória pelo diurético"
+      ],
+      "correctIndex": 0,
+      "explanation": "A perda de ácido gástrico pelos vômitos leva à alcalose metabólica, enquanto a diarreia induzida pelo abuso de laxantes causa acidose metabólica. O comportamento purgativo também produz hipocalemia, hiponatremia, hipocloremia e lesão pré-renal aguda por desidratação."
+    },
+    {
+      "question": "O que diferencia o transtorno de compulsão alimentar da bulimia nervosa?",
+      "options": [
+        "No TCA não há comportamentos compensatórios, com sobrepeso ou obesidade",
+        "No TCA há comportamentos compensatórios diários, com peso muito baixo",
+        "No TCA não existe culpa nem sofrimento após os episódios de compulsão",
+        "No TCA os episódios ocorrem no máximo uma vez ao ano, sem prejuízo"
+      ],
+      "correctIndex": 0,
+      "explanation": "No transtorno de compulsão alimentar os episódios de hiperfagia ocorrem pelo menos uma vez por semana por vários meses, com culpa, sofrimento intenso e repulsa, mas nada é feito para evitar o ganho de peso. Por isso esses pacientes costumam apresentar sobrepeso e obesidade."
+    },
+    {
+      "question": "O que caracteriza o transtorno alimentar restritivo/evitativo (ARFID)?",
+      "options": [
+        "Aversão a alimentos ou texturas, sem preocupação com peso ou forma corporal",
+        "Restrição alimentar motivada por medo intenso de engordar e por distorção",
+        "Ingestão persistente de substâncias não alimentares por mais de um mês",
+        "Regurgitação intencional do alimento, remastigado ou cuspido em seguida"
+      ],
+      "correctIndex": 0,
+      "explanation": "No ARFID há aversão a alimentos específicos ou a grupos alimentares e sensibilidade a texturas, com seletividade alimentar, mas sem preocupação com peso ou forma corporal. Inicia-se na primeira infância (até 3 anos), pode persistir na vida adulta e associa-se a TEA, TDAH e transtorno de jogos eletrônicos."
+    },
+    {
+      "question": "Qual o critério temporal e a definição do transtorno de pica?",
+      "options": [
+        "Ingestão de substâncias não alimentares por período mínimo de um mês",
+        "Ingestão de substâncias não alimentares por período mínimo de um ano",
+        "Recusa de grupos alimentares inteiros por período mínimo de um mês",
+        "Regurgitação de alimento já ingerido por período mínimo de seis meses"
+      ],
+      "correctIndex": 0,
+      "explanation": "A pica é a ingestão persistente e regular de substâncias não alimentares (argila, terra, reboco, giz, gesso, plástico, metal, papel) por período mínimo de um mês. É mais frequente em crianças pequenas, gestantes, lactantes e pessoas com deficiência intelectual, autismo ou esquizofrenia."
+    }
+  ]
+}

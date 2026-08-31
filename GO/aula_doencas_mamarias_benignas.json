@@ -1,0 +1,350 @@
+{
+  "titulo": "Doenças Mamárias Benignas",
+  "eyebrow": "Ginecologia e Obstetrícia · Mastologia",
+  "subtitulo": "Dos cistos aos filoides: reconhecer, investigar e conduzir",
+  "intro": "Aula sobre as afecções benignas da mama: classificação (alterações funcionais, tumores benignos, processos inflamatórios e alterações congênitas), características clínicas de cada entidade, propedêutica por imagem e citologia, e o manejo de cada situação — sempre com o desafio de diferenciar do câncer de mama.",
+  "questoes": [
+    {
+      "question": "Na classificação didática das afecções benignas da mama, o grupo das alterações funcionais benignas (AFBM) inclui:",
+      "options": [
+        "Dor cíclica, nodularidade difusa e mastalgia",
+        "Polimastia, politelia e mamilo invertido congênito",
+        "Fibroadenoma, tumor filoides e papiloma intraductal",
+        "Mastite puerperal, abscesso e mastite periductal"
+      ],
+      "correctIndex": 0,
+      "explanation": "As AFBM são a expressão funcional da mama à variação hormonal e englobam dor cíclica, nodularidade difusa e mastalgia. Polimastia/politelia são alterações congênitas; fibroadenoma e papiloma são tumores benignos; mastite e abscesso são alterações inflamatórias."
+    },
+    {
+      "question": "Em relação à mastalgia, a conduta inicialmente correta é:",
+      "options": [
+        "Fazer o diagnóstico clínico e pedir exames só se houver achado no exame físico",
+        "Solicitar mamografia de rastreamento e ultrassom para todas as pacientes",
+        "Indicar punção aspirativa por agulha fina diante de qualquer quadro de dor",
+        "Encaminhar a excisão cirúrgica ampla mesmo sem nódulo palpável identificado"
+      ],
+      "correctIndex": 0,
+      "explanation": "A mastalgia é diagnóstico clínico; exames complementares só são pedidos quando há achado ao exame físico. Dor isolada, sem nódulo ou outro sinal, raramente representa câncer e não justifica biópsia nem cirurgia de imediato."
+    },
+    {
+      "question": "Qual é a característica clínica típica do fibroadenoma?",
+      "options": [
+        "Nódulo móvel, bem delimitado, não aderido, indolor e de crescimento lento",
+        "Massa fixa, aderida aos planos profundos e de crescimento rápido",
+        "Nódulo doloroso com retração da papila e descarga sanguinolenta",
+        "Endurecimento difuso com edema e eritema da pele adjacente"
+      ],
+      "correctIndex": 0,
+      "explanation": "O fibroadenoma é único ou múltiplo, bem delimitado, móvel, não aderido, às vezes lobulado, de crescimento lento, consistência fibroelástica e habitualmente indolor. Fixação, retração papilar, espiculação e eritema apontam para outras hipóteses, como carcinoma ou processo inflamatório."
+    },
+    {
+      "question": "O fibroadenoma é um tumor benigno cuja incidência é maior:",
+      "options": [
+        "Em mulheres com menos de 35 anos de idade",
+        "Em mulheres na pós-menopausa e em idosas",
+        "Exclusivamente em adolescentes pré-púberes",
+        "Em homens adultos acima dos 50 anos de idade"
+      ],
+      "correctIndex": 0,
+      "explanation": "O fibroadenoma predomina em mulheres jovens, com incidência maior abaixo dos 35 anos. Existem formas raras (juvenil, gigante, complexa e extramamária), mas a doença é essencialmente do período reprodutivo, não da pós-menopausa nem do homem."
+    },
+    {
+      "question": "Sobre a dor no fibroadenoma, é correto afirmar que:",
+      "options": [
+        "Costuma ser indolor, mas pode doer na gravidez e na lactação",
+        "É sempre doloroso, com piora progressiva ao longo dos anos",
+        "A dor é o sinal mais precoce de transformação maligna do nódulo",
+        "Aparece apenas quando o nódulo está fixo à musculatura peitoral"
+      ],
+      "correctIndex": 0,
+      "explanation": "O fibroadenoma é indolor, exceto durante a gravidez e a lactação, quando o estímulo hormonal pode torná-lo doloroso. Dor não é marcador de malignidade desse tumor, e fixação aos planos profundos não é uma característica dele."
+    },
+    {
+      "question": "Na mamografia, a calcificação grosseira 'em pipoca' dentro de um nódulo é característica de:",
+      "options": [
+        "Fibroadenoma em involução, achado tipicamente benigno",
+        "Carcinoma ductal in situ com necrose central calcificada",
+        "Tumor filoides de alto grau com áreas de hemorragia",
+        "Cisto oleoso da esteatonecrose pós-traumática da mama"
+      ],
+      "correctIndex": 0,
+      "explanation": "A calcificação grosseira e coalescente 'em pipoca' é o padrão clássico de fibroadenoma em involução, um achado benigno. As calcificações do carcinoma ductal in situ são finas, lineares e ramificadas; o cisto oleoso cursa com calcificação anelar, de parede fina.",
+      "image": "pg20",
+      "imageCaption": "Mamografia com calcificação em pipoca no fibroadenoma"
+    },
+    {
+      "question": "Ao ultrassom, o fibroadenoma típico se apresenta como nódulo:",
+      "options": [
+        "Sólido, hipoecoico, bem delimitado e de contornos regulares",
+        "Cístico, anecoico, com reforço acústico posterior intenso",
+        "Sólido, espiculado, com sombra acústica e margens irregulares",
+        "Misto, com áreas císticas internas e paredes grosseiramente espessadas"
+      ],
+      "correctIndex": 0,
+      "explanation": "O fibroadenoma é sólido, hipoecoico, bem delimitado e de contornos regulares. O cisto anecoico com reforço posterior é o cisto simples; margens espiculadas e sombra acústica são achados suspeitos, mais compatíveis com carcinoma.",
+      "image": "pg19",
+      "imageCaption": "Ultrassom mostrando nódulo sólido bem delimitado"
+    },
+    {
+      "question": "Na propedêutica do fibroadenoma, a punção aspirativa por agulha fina (PAAF):",
+      "options": [
+        "Mostra histologia característica que confirma a natureza benigna",
+        "É contraindicada por risco de disseminação tumoral pela agulha",
+        "Sempre traz material purulento compatível com abscesso mamário",
+        "Substitui a biópsia cirúrgica no diagnóstico de todas as lesões"
+      ],
+      "correctIndex": 0,
+      "explanation": "A PAAF do fibroadenoma mostra histologia característica (células epiteliais e estromais em padrão típico), ajudando a confirmar a natureza benigna. Ela não é contraindicada no fibroadenoma e não é o material purulento de abscesso."
+    },
+    {
+      "question": "No fibroadenoma simples, o tratamento preconizado é:",
+      "options": [
+        "Seguimento clínico ou excisão, com cirurgia se complexo ou suspeito",
+        "Excisão cirúrgica ampla com margem de um a dois centímetros",
+        "Antibioticoterapia prolongada associada à drenagem do nódulo",
+        "Radioterapia adjuvante seguida de hormonioterapia de bloqueio"
+      ],
+      "correctIndex": 0,
+      "explanation": "O fibroadenoma simples pode ser acompanhado ou submetido a excisão; nas formas complexas ou suspeitas, a cirurgia está indicada. A excisão ampla com margem de 1 a 2 cm é o tratamento do tumor filoides, não do fibroadenoma."
+    },
+    {
+      "question": "São consideradas formas raras de fibroadenoma:",
+      "options": [
+        "As variantes juvenil, gigante, complexa e extramamária",
+        "As variantes sólida, cística, calcificada e dolorosa",
+        "As variantes única, múltipla, móvel e lobulada",
+        "As variantes dolorosa, fixa, aderida e espiculada"
+      ],
+      "correctIndex": 0,
+      "explanation": "As formas raras do fibroadenoma são a juvenil, a gigante, a complexa e a extramamária. As demais opções descrevem características clínicas comuns do tumor (único/múltiplo, móvel, lobulado), não formas raras."
+    },
+    {
+      "question": "O tumor filoides (phyllodes) é um tumor benigno que se destaca por:",
+      "options": [
+        "Crescimento exponencial rápido, indolor e com possível variante maligna",
+        "Crescimento lento, doloroso e com regressão espontânea frequente",
+        "Crescimento rápido, doloroso e sempre de natureza benigna",
+        "Crescimento lento, indolor e sem risco de recidiva local"
+      ],
+      "correctIndex": 0,
+      "explanation": "O tumor filoides tem crescimento exponencial rápido, é indolor, pode apresentar variante maligna e recidiva local com frequência. Diferencia-se assim do fibroadenoma, que cresce lentamente e é tipicamente indolor."
+    },
+    {
+      "question": "O tumor filoides origina-se:",
+      "options": [
+        "No tecido conjuntivo extraductal da mama",
+        "No epitélio dos ductos mamários terminais",
+        "Nas células mioepiteliais dos lóbulos",
+        "Na pele e na papila da região areolar"
+      ],
+      "correctIndex": 0,
+      "explanation": "O tumor filoides é de origem extraductal, desenvolvendo-se no tecido conjuntivo (estroma) da mama. Os ductos e lóbulos estão envolvidos no fibroadenoma e no papiloma, não na gênese do filoides."
+    },
+    {
+      "question": "Sobre o comportamento do tumor filoides, é correto afirmar que:",
+      "options": [
+        "Apresenta recidivas locais frequentes mesmo após a ressecção",
+        "Nunca recidiva após a excisão cirúrgica completa da lesão",
+        "Metastatiza precocemente para linfonodos axilares em todos os casos",
+        "Regride espontaneamente sem necessidade de qualquer tratamento"
+      ],
+      "correctIndex": 0,
+      "explanation": "O tumor filoides tem recidivas locais frequentes, o que justifica a excisão ampla. A maioria é benigna e não metastatiza de rotina; a regressão espontânea não ocorre e a lesão não deve ser apenas observada."
+    },
+    {
+      "question": "O tratamento cirúrgico do tumor filoides deve ser:",
+      "options": [
+        "Excisão ampla com margem de um a dois centímetros",
+        "Enucleação simples, sem margem de segurança tecidual",
+        "Ressecção apenas do ducto que apresenta secreção papilar",
+        "Drenagem percutânea seguida de antibiótico de amplo espectro"
+      ],
+      "correctIndex": 0,
+      "explanation": "O tumor filoides exige excisão ampla com margem de 1 a 2 cm por causa da alta taxa de recidiva local. A ressecção ductal é a conduta do papiloma intraductal, e a drenagem, do abscesso."
+    },
+    {
+      "question": "Nos exames de imagem, o tumor filoides geralmente apresenta:",
+      "options": [
+        "Achados mamográficos e ultrassonográficos inespecíficos",
+        "Microcalcificações agrupadas altamente sugestivas de malignidade",
+        "Cistos simples com reforço acústico posterior característico",
+        "Calcificações em pipoca dentro do nódulo sólido bem delimitado"
+      ],
+      "correctIndex": 0,
+      "explanation": "Na mamografia e no ultrassom, o tumor filoides costuma ter achados inespecíficos, o que dificulta o diagnóstico por imagem. A calcificação em pipoca é do fibroadenoma, e microcalcificações agrupadas apontam para carcinoma."
+    },
+    {
+      "question": "Sobre a punção por agulha grossa (core biopsy) no tumor filoides:",
+      "options": [
+        "Pode dar diagnóstico diferencial com carcinoma pela celularidade",
+        "É contraindicada por sempre causar sangramento local importante",
+        "Confirma o diagnóstico de certeza em todos os casos benignos",
+        "Substitui a análise histológica definitiva da peça cirúrgica"
+      ],
+      "correctIndex": 0,
+      "explanation": "A core biopsy do tumor filoides pode trazer diagnóstico diferencial com carcinoma, pela hipercelularidade estromal. Por isso, lesões suspeitas exigem avaliação histológica completa, e a peça cirúrgica ainda é importante para o diagnóstico definitivo."
+    },
+    {
+      "question": "A imagem mostra uma massa mamária volumosa, indolor e de crescimento rápido. O diagnóstico mais provável é:",
+      "options": [
+        "Tumor filoides (phyllodes) com possível variante maligna",
+        "Fibroadenoma simples em mulher jovem com menos de 35 anos",
+        "Cisto simples com conteúdo anecoico e paredes finas",
+        "Mastite puerperal com eritema difuso da pele da mama"
+      ],
+      "correctIndex": 0,
+      "explanation": "Massa volumosa, indolor e de crescimento exponencial rápido é a apresentação típica do tumor filoides. O fibroadenoma cresce lentamente, o cisto simples não forma massa palpável desse porte e a mastite cursa com eritema e dor.",
+      "image": "pg24",
+      "imageCaption": "Apresentação clínica de tumor filoides"
+    },
+    {
+      "question": "Na mamografia, o tumor filoides costuma aparecer como:",
+      "options": [
+        "Grande massa de contornos bem delimitados e achados inespecíficos",
+        "Nódulo espiculado com retração da papila e microcalcificações",
+        "Grupo de calcificações lineares finas ramificadas suspeitas",
+        "Assimetria global do tecido fibroglandular sem massa identificável"
+      ],
+      "correctIndex": 0,
+      "explanation": "O tumor filoides aparece como massa grande, de contornos bem delimitados e aspecto inespecífico. Espiculação, retração papilar e microcalcificações lineares finas são achados de malignidade, não do filoides.",
+      "image": "pg25",
+      "imageCaption": "Mamografia do tumor filoides"
+    },
+    {
+      "question": "A manifestação clínica típica do papiloma intraductal é:",
+      "options": [
+        "Secreção papilar serossanguinolenta pelo mamilo",
+        "Nódulo sólido móvel e indolor em mulher jovem",
+        "Dor cíclica associada à nodularidade difusa bilateral",
+        "Eritema, calor e edema difuso da pele da mama"
+      ],
+      "correctIndex": 0,
+      "explanation": "O papiloma intraductal se manifesta por secreção papilar serossanguinolenta, geralmente uniductal. Nódulo móvel indolor é típico do fibroadenoma; dor cíclica e eritema difuso correspondem a AFBM e mastite, respectivamente."
+    },
+    {
+      "question": "O tratamento do papiloma intraductal benigno consiste em:",
+      "options": [
+        "Ressecção cirúrgica do ducto mamário acometido",
+        "Acompanhamento clínico sem nenhuma intervenção",
+        "Antibioticoterapia de amplo espectro por quatorze dias",
+        "Radioterapia externa da região retroareolar da mama"
+      ],
+      "correctIndex": 0,
+      "explanation": "O papiloma intraductal benigno é tratado com excisão do ducto que drena a secreção. Observação apenas é a conduta da descarga fisiológica; antibiótico trata processos infecciosos, não o papiloma."
+    },
+    {
+      "question": "Define-se descarga papilar como:",
+      "options": [
+        "Secreção espontânea do mamilo, uni ou bilateral, uni ou multiductal",
+        "Sangramento traumático do mamilo após amamentação prolongada",
+        "Secreção que só aparece mediante expressão forçada da mama",
+        "Perda involuntária de leite fora do período de amamentação"
+      ],
+      "correctIndex": 0,
+      "explanation": "Descarga papilar é a secreção espontânea do mamilo, unilateral ou bilateral, uniductal ou multiductal. O que define é o caráter espontâneo, e não apenas a expressão forçada ou o contexto de amamentação."
+    },
+    {
+      "question": "Na descarga papilar fisiológica, a conduta adequada é:",
+      "options": [
+        "Acompanhamento clínico, sem necessidade de cirurgia",
+        "Excisão imediata do ducto que drena a secreção",
+        "Mastectomia total da mama acometida de imediato",
+        "Antibioticoterapia empírica para todas as pacientes"
+      ],
+      "correctIndex": 0,
+      "explanation": "A descarga fisiológica é tratada com acompanhamento. A excisão do ducto está reservada para o papiloma benigno, e a investigação completa com cirurgia, para os casos de suspeita de malignidade."
+    },
+    {
+      "question": "A imagem mostra secreção papilar espontânea. Qual sinal clínico impõe investigação completa?",
+      "options": [
+        "Secreção sanguinolenta unilateral e espontânea pelo mamilo",
+        "Descarga bilateral leitosa em mulher em idade fértil",
+        "Secreção esverdeada multiductal em ambas as mamas",
+        "Descarga que aparece apenas com a expressão do mamilo"
+      ],
+      "correctIndex": 0,
+      "explanation": "Secreção sanguinolenta, unilateral e espontânea é sinal de alerta que impõe investigação completa (imagem e eventual cirurgia). Descarga leitosa bilateral fisiológica e secreção esverdeada multiductal são, em geral, benignas.",
+      "image": "pg31",
+      "imageCaption": "Secreção espontânea pelo mamilo"
+    },
+    {
+      "question": "Fazem parte das alterações inflamatórias benignas da mama:",
+      "options": [
+        "Mastite puerperal, abscesso e mastite periductal",
+        "Polimastia, politelia e mamilo invertido congênito",
+        "Fibroadenoma, tumor filoides e papiloma intraductal",
+        "Dor cíclica, nodularidade difusa e mastalgia cíclica"
+      ],
+      "correctIndex": 0,
+      "explanation": "As alterações inflamatórias benignas são a mastite puerperal, o abscesso e a mastite periductal. Polimastia e politelia são congênitas; fibroadenoma e papiloma são tumores; dor cíclica e mastalgia são alterações funcionais."
+    },
+    {
+      "question": "A imagem mostra mama com eritema, calor e edema. O manejo da mastite e do abscesso inclui:",
+      "options": [
+        "Antibioticoterapia e drenagem cirúrgica quando houver abscesso",
+        "Somente observação clínica com retorno em seis meses",
+        "Excisão ampla da glândula com margem de um a dois centímetros",
+        "Ressecção do ducto responsável pela secreção papilar"
+      ],
+      "correctIndex": 0,
+      "explanation": "A mastite é tratada com antibiótico e, na presença de abscesso, com drenagem cirúrgica. Observação apenas não resolve infecção; excisão ampla é do tumor filoides e ressecção ductal, do papiloma.",
+      "image": "pg38",
+      "imageCaption": "Mastite com eritema e edema da mama"
+    },
+    {
+      "question": "São exemplos de alterações congênitas da mama:",
+      "options": [
+        "Polimastia, politelia e mamilo invertido",
+        "Fibroadenoma, lipoma e hamartoma benigno",
+        "Mastite puerperal, abscesso e mastite periductal",
+        "Dor cíclica, nodularidade difusa e mastalgia"
+      ],
+      "correctIndex": 0,
+      "explanation": "As alterações congênitas da mama incluem polimastia (mamas supranumerárias), politelia (papilas supranumerárias) e mamilo invertido. As demais opções descrevem tumores benignos, processos inflamatórios e alterações funcionais."
+    },
+    {
+      "question": "Na investigação por imagem da mama, a escolha do método segue a regra:",
+      "options": [
+        "Ultrassom em mulheres abaixo de 40 anos e mamografia a partir de 40",
+        "Mamografia em mulheres jovens e ultrassom a partir dos 40 anos",
+        "Ressonância como primeiro exame para todas as mulheres sintomáticas",
+        "Ultrassom apenas para mulheres acima de 50 anos assintomáticas"
+      ],
+      "correctIndex": 0,
+      "explanation": "A propedêutica por imagem prefere o ultrassom em mulheres com menos de 40 anos (mamas mais densas, sem radiação) e a mamografia a partir dos 40 anos. A ressonância fica reservada para casos especiais."
+    },
+    {
+      "question": "O diagnóstico das afecções benignas da mama depende fundamentalmente de:",
+      "options": [
+        "Clínica, exame físico, imagem e biópsia associados",
+        "Somente dos achados de mamografia e de ultrassom",
+        "Apenas do exame histopatológico da peça cirúrgica retirada",
+        "Exclusivamente da palpação feita pelo médico assistente"
+      ],
+      "correctIndex": 0,
+      "explanation": "Nenhum método isolado é suficiente: o diagnóstico combina história clínica (idade, sintomas, ciclo menstrual), exame físico (inspeção e palpação), imagem (USG, mamografia, RM) e, quando indicado, citologia/histologia (PAAF, core biopsy)."
+    },
+    {
+      "question": "Sobre a dor mamária isolada, é correto afirmar que:",
+      "options": [
+        "A dor mamária isolada raramente é câncer",
+        "É o principal sintoma de neoplasia mamária",
+        "Indica sempre a necessidade de biópsia imediata",
+        "Exige mastectomia profilática de forma rotineira"
+      ],
+      "correctIndex": 0,
+      "explanation": "Dor isolada, sem nódulo ou outro achado, raramente é câncer. O carcinoma de mama costuma ser indolor; por isso a dor isolada é tratada clinicamente e não indica biópsia nem cirurgia de imediato."
+    },
+    {
+      "question": "Sobre os 'pontos de atenção' da avaliação das afecções benignas, qual é a conduta correta?",
+      "options": [
+        "Investigar todo nódulo novo em mulheres de 35 anos ou mais",
+        "Acompanhar qualquer nódulo novo em mulheres de 35 anos ou mais",
+        "Tratar com antibiótico todo nódulo novo em mulheres de 35 anos ou mais",
+        "Dispensar investigação quando o nódulo novo for totalmente indolor"
+      ],
+      "correctIndex": 0,
+      "explanation": "Todo nódulo novo em mulheres com 35 anos ou mais deve ser investigado, pois a probabilidade de malignidade aumenta com a idade. Acompanhar sem exames, tratar como infecção ou dispensar a investigação pela ausência de dor são condutas inadequadas."
+    }
+  ]
+}

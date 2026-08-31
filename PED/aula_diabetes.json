@@ -30,7 +30,7 @@
         "Jejum ≥ 90 e < 100 mg/dL; HbA1c ≥ 5,0 e < 5,7%"
       ],
       "correctIndex": 0,
-      "explanation": "O pré-diabetes é definido por glicemia de jejum ≥ 100 e < 126 mg/dL, glicemia de 2 h no TOTG ≥ 140 e < 200 mg/dL ou HbA1c ≥ 5,7 e < 6,5%. A positividade de qualquer um desses parâmetros já confirma o pré-diabetes."
+      "explanation": "O pré-diabetes é definido por glicemia de jejum ≥ 100 e < 126 mg/dL, glicemia de 2 h no TOTG ≥ 140 e < 200 mg/dL ou HbA1c ≥ 5,7 e < 6,5%. A positividade de qualquer um desses parâmetros já confirma o pré-diabetes. O risco é contínuo e progressivo, tornando-se mais elevado nos limites superiores da faixa."
     },
     {
       "question": "Observando o quadro de critérios diagnósticos do material, quais valores definem normoglicemia?",
@@ -128,12 +128,10 @@
         "0,4–0,5 U/kg/dia, exclusivamente como insulina basal"
       ],
       "correctIndex": 0,
-      "explanation": "O fluxograma orienta iniciar com 0,4–0,5 U/kg/dia, divididas em aproximadamente 50% basal e 50% prandial, ajustando conforme HbA1c, CGM e/ou glicemias capilares. A escolha do tipo de insulina e da via considera o grau de deficiência insulínica, a apresentação inicial (inclusive CAD) e o contexto socioeconômico.",
-      "image": "s16i1",
-      "imageCaption": "Início e ajuste da insulinoterapia com múltiplas doses diárias no DM1"
+      "explanation": "O fluxograma orienta iniciar com 0,4–0,5 U/kg/dia, divididas em aproximadamente 50% basal e 50% prandial, ajustando conforme HbA1c, CGM e/ou glicemias capilares. A escolha do tipo de insulina e da via considera o grau de deficiência insulínica, a apresentação inicial (inclusive CAD) e o contexto socioeconômico."
     },
     {
-      "question": "Adolescente com DM1 em esquema basal-bolus mantém hiperglicemia de jejum apesar de glicemias pós-prandiais adequadas. O que o fluxograma orienta?",
+      "question": "Adolescente com DM1 em esquema basal-bolus mantém hiperglicemia de jejum apesar de glicemias pós-prandiais adequadas. O que orienta o ajuste da insulinoterapia?",
       "options": [
         "Revisar o padrão glicêmico noturno e ajustar a insulina basal",
         "Revisar o momento da aplicação e ajustar a insulina prandial",
@@ -141,9 +139,7 @@
         "Trocar o esquema por metformina associada a dieta hipocalórica"
       ],
       "correctIndex": 0,
-      "explanation": "Diante de hiperglicemia de jejum, o fluxograma manda revisar o padrão glicêmico noturno, preferencialmente com CGM, e ajustar a insulina basal se necessário. Já a hiperglicemia pós-prandial exige revisar o momento da aplicação e o ajuste da insulina prandial em relação à refeição.",
-      "image": "s16i1",
-      "imageCaption": "Ramos de ajuste conforme o horário da hiperglicemia"
+      "explanation": "Diante de hiperglicemia de jejum, revisa-se o padrão glicêmico noturno, preferencialmente com CGM, e ajusta-se a insulina basal se necessário. Já a hiperglicemia pós-prandial exige revisar o momento da aplicação e o ajuste da insulina prandial em relação à refeição."
     },
     {
       "question": "De acordo com o quadro de dose total diária de insulina nas diferentes fases do DM1, qual é a faixa esperada para um adolescente púbere?",
@@ -235,7 +231,7 @@
       "correctIndex": 0,
       "explanation": "O estágio 1 tem dois ou mais autoanticorpos contra ilhota com normoglicemia; o estágio 2 mantém a autoimunidade, mas já com disglicemia pré-diabética (glicemia de jejum alterada e/ou tolerância diminuída no TOTG) e ainda sem sintomas; o estágio 3 é o DM1 clássico, sintomático e com necessidade de insulina exógena.",
       "image": "s11i1",
-      "imageCaption": "Autoimunidade e fisiologia da insulina nos estágios do DM1"
+      "imageCaption": "Estágios do diabetes tipo 1"
     },
     {
       "question": "Qual autoanticorpo do painel de classificação do DM1 é considerado mais informativo quando dosado antes do início da insulinoterapia?",
@@ -257,7 +253,9 @@
         "É um autoanticorpo de ilhota e mede a atividade autoimune residual"
       ],
       "correctIndex": 0,
-      "explanation": "Insulina e peptídeo C são liberados em quantidades equimolares na clivagem da proinsulina, de modo que o peptídeo C funciona como marcador da produção endógena de insulina e da reserva funcional das células beta. Deve ser interpretado junto da glicemia e do momento clínico, e nunca atrasar o início da insulina."
+      "explanation": "Insulina e peptídeo C são liberados em quantidades equimolares na clivagem da proinsulina, de modo que o peptídeo C funciona como marcador da produção endógena de insulina e da reserva funcional das células beta. Deve ser interpretado junto da glicemia e do momento clínico, e nunca atrasar o início da insulina.",
+      "image": "s09i1",
+      "imageCaption": "Fisiologia da secreção de insulina e do peptídeo C"
     },
     {
       "question": "No esquema da progressão autoimune do DM1, qual sequência de eventos leva à formação de autoanticorpos específicos da ilhota?",
@@ -383,6 +381,127 @@
       ],
       "correctIndex": 0,
       "explanation": "As quatro manifestações clássicas do DM1 são poliúria, polidipsia, polifagia e perda de peso, as polis. A poliúria pode se manifestar como enurese noturna secundária em criança que já tinha controle vesical, e a perda ponderal pode aparecer como emagrecimento inexplicável ou ganho de peso insuficiente em criança com polifagia."
+    },
+    {
+      "question": "Cerca de 70 a 90% das crianças com DM1 apresentam autoanticorpos contra antígenos da célula beta. Como se classifica esse grupo?",
+      "options": [
+        "DM tipo 1A, a forma autoimune do diabetes",
+        "DM tipo 1B, a forma idiopática sem autoimunidade",
+        "DM tipo 2, por resistência periférica à insulina",
+        "DM monogênico, por mutação no gene da insulina"
+      ],
+      "correctIndex": 0,
+      "explanation": "Na maioria dos casos (70–90%), o DM1 associa-se a autoanticorpos contra antígenos da célula beta e recebe a classificação de DM tipo 1A; no grupo menor, sem evidência de autoimunidade e com causa desconhecida, a denominação é DM tipo 1B. O diabetes autoimune de início adulto e evolução lenta é o LADA. DM monogênico e DM2 são entidades com fisiopatogenia própria."
+    },
+    {
+      "question": "A partir de que perda de massa de células beta os sintomas clássicos do DM1 costumam surgir?",
+      "options": [
+        "Após a destruição de cerca de 85 a 95% das células beta",
+        "Após a destruição de cerca de 20 a 30% das células beta",
+        "Assim que o primeiro autoanticorpo se torna detectável",
+        "Quando a glicemia de jejum ultrapassa 110 mg/dL"
+      ],
+      "correctIndex": 0,
+      "explanation": "O processo autoimune destrói gradualmente as células beta, mas os sintomas só aparecem após a perda de massa crítica, entre 85 e 95% das células. Antes disso, o paciente permanece assintomático, embora os autoanticorpos e as alterações metabólicas já estejam presentes. Isso explica por que o DM1 pré-sintomático pode ser detectado anos antes do diagnóstico clínico."
+    },
+    {
+      "question": "No estágio 1 do DM1 (dois ou mais autoanticorpos e glicemia normal), qual é a chance de progressão para doença sintomática em 5 a 10 anos nos parentes de primeiro grau?",
+      "options": [
+        "70% nos parentes de primeiro grau",
+        "44% nos parentes de primeiro grau",
+        "25% nos parentes de primeiro grau",
+        "10% nos parentes de primeiro grau"
+      ],
+      "correctIndex": 0,
+      "explanation": "No estágio 1, crianças triadas ao nascimento pelo risco genético têm chance de 44% de doença sintomática em 5–10 anos, enquanto parentes de primeiro grau têm 70%; ambos se aproximam de 100% ao longo da vida. No estágio 2, o risco de doença sintomática em 5 anos sobe para aproximadamente 75%. O estágio 3 é o DM1 sintomático."
+    },
+    {
+      "question": "Qual foi a principal conclusão do estudo DCCT (Diabetes Control and Complications Trial) sobre o tratamento do DM1?",
+      "options": [
+        "Tratamento intensivo reduz complicações microvasculares",
+        "Tratamento convencional previne hipoglicemias graves",
+        "Dieta hipoglicídica dispensa insulina nos primeiros anos",
+        "Metformina é superior à insulina no controle glicêmico"
+      ],
+      "correctIndex": 0,
+      "explanation": "O DCCT, publicado em 1993, comparou o tratamento insulínico intensivo (múltiplas doses de dois tipos de insulina ou bomba) ao convencional e demonstrou superioridade do esquema intensivo na prevenção das complicações crônicas microvasculares. Foi a base das recomendações atuais de controle glicêmico rigoroso desde o diagnóstico."
+    },
+    {
+      "question": "Quais complicações crônicas do diabetes são classificadas como microvasculares?",
+      "options": [
+        "Nefropatia, retinopatia e neuropatia",
+        "Doença cardíaca, AVC e doença periférica",
+        "Tireoidite, doença celíaca e adrenal",
+        "Nefropatia, coronariopatia e gastroparesia"
+      ],
+      "correctIndex": 0,
+      "explanation": "As complicações microvasculares são nefropatia, retinopatia e neuropatia (periférica e autonômica). As macrovasculares incluem doença cardíaca, acidente vascular cerebral e doença vascular periférica, que elevam em 2 a 4 vezes o risco de aterosclerose. A hiperglicemia crônica tem papel preponderante na lesão endotelial."
+    },
+    {
+      "question": "Em qual situação o diagnóstico de diabetes deve se basear exclusivamente nos critérios glicêmicos, e não na HbA1c?",
+      "options": [
+        "Na presença de anemia hemolítica ou carência de ferro",
+        "Na presença de obesidade e acantose nigricans",
+        "No paciente em uso de insulina de ação rápida",
+        "No rastreamento de DM2 em adolescentes assintomáticos"
+      ],
+      "correctIndex": 0,
+      "explanation": "Situações de hemólise, carência de ferro ou vida média diminuída das hemácias alteram a HbA1c e podem falsear o diagnóstico. Nessas condições, o diagnóstico deve basear-se exclusivamente no critério glicêmico (glicemia de jejum, TOTG ou glicemia ao acaso). A HbA1c também sofre interferência de hemoglobinopatias, uremia, hipertrigliceridemia e esplenectomia."
+    },
+    {
+      "question": "No DM2 juvenil em uso de metformina, como se orienta a titulação da dose?",
+      "options": [
+        "Iniciar 500 a 1.000 mg/dia com ajuste semanal",
+        "Iniciar 2.000 mg/dia em dose única, sem titulação",
+        "Iniciar 250 mg/dia e manter fixa por seis meses",
+        "Iniciar 850 mg três vezes ao dia desde o primeiro dia"
+      ],
+      "correctIndex": 0,
+      "explanation": "A metformina inicia-se em 500 a 1.000 mg/dia por 7 a 15 dias, com ajuste semanal por 3 a 4 semanas, conforme tolerância, até o máximo de 1 g duas vezes ao dia ou 850 mg três vezes ao dia. A titulação progressiva reduz os efeitos gastrointestinais, principal limitação da droga."
+    },
+    {
+      "question": "Adolescente com DM2 recém-diagnosticado apresenta cetonemia importante. Como iniciar o tratamento?",
+      "options": [
+        "Insulina até correção, com transição para metformina",
+        "Metformina isolada, pois evita o ganho de peso",
+        "Apenas mudança de estilo de vida, sem fármacos",
+        "Inibidor de SGLT2 para reduzir a glicosúria"
+      ],
+      "correctIndex": 0,
+      "explanation": "Em pacientes com cetose ou cetoacidose, o tratamento inicial é com insulina, subcutânea ou endovenosa, até a correção metabólica; a metformina é iniciada depois, com transição gradual e segura entre 2 e 6 semanas. Em paciente estável e sem cetose (HbA1c < 8,5%), a metformina é a primeira linha."
+    },
+    {
+      "question": "Qual é o pico de incidência do diabetes melito tipo 1 na infância e na adolescência?",
+      "options": [
+        "Puberdade, entre 10 e 14 anos",
+        "Nos primeiros dois anos de vida",
+        "No adulto jovem, após os 18 anos",
+        "Na fase escolar, de forma constante"
+      ],
+      "correctIndex": 0,
+      "explanation": "A incidência do DM1 aumenta a partir do nascimento e atinge o pico na puberdade, entre 10 e 14 anos, declinando depois até estabilizar no adulto jovem, entre 15 e 29 anos. Estudos recentes observam aumento também em menores de 5 anos. Cerca de 25% dos casos são diagnosticados na vida adulta (LADA)."
+    },
+    {
+      "question": "Qual condição confere maior risco de hipoglicemia grave na criança com DM1?",
+      "options": [
+        "Idade menor de 6 anos e diabetes de longa duração",
+        "Adolescência com sobrepeso e dislipidemia",
+        "Fase de remissão parcial com dose baixa de insulina",
+        "Uso de análogo de insulina de ação ultrarrápida"
+      ],
+      "correctIndex": 0,
+      "explanation": "São fatores de risco para hipoglicemia: crianças menores de 6 anos, diabetes de longa duração, barreiras de acesso a insumos e ambiente familiar desfavorável. Somam-se comorbidades como doença celíaca, insuficiência adrenal, hipotireoidismo e insuficiência renal, além de exercício, álcool e gastroenterites. A hipoglicemia é a complicação aguda mais comum do tratamento."
+    },
+    {
+      "question": "Como se faz a avaliação da função tireoidiana na criança com DM1?",
+      "options": [
+        "TSH e antitireoperoxidase ao diagnóstico e a cada 1 a 2 anos",
+        "Apenas TSH, quando houver sintomas de hipotireoidismo",
+        "Ultrassonografia de tireoide anualmente a partir dos 10 anos",
+        "Anticorpo antitireoglobulina em dose única ao diagnóstico"
+      ],
+      "correctIndex": 0,
+      "explanation": "A tireoidite de Hashimoto é a tireoidopatia mais prevalente na criança, e o hipotireoidismo ocorre em 4 a 15% das crianças com DM1, aumentando com a idade, sobretudo na puberdade. A avaliação inclui TSH e anticorpo antitireoperoxidase ao diagnóstico e a cada 1 a 2 anos, ou diante de sintomas. A doença celíaca também merece rastreio sistemático."
     }
   ]
 }

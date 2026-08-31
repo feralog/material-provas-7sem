@@ -54,6 +54,18 @@ O HEADSSS (na versão ampliada, HEEADSSS) é um **método indireto** para avalia
 
 ---
 
+## Epidemiologia: o tamanho do problema
+
+Os números ajudam a dimensionar por que a saúde mental do adolescente é prioridade de prova e de consulta. Os **transtornos de ansiedade** estão entre as condições psiquiátricas mais prevalentes na infância e na adolescência: afetam cerca de **15% dos jovens nos EUA**, com prevalência ao longo da vida estimada entre 15% e 20%, e estudo do Departamento de Psiquiatria da FMUSP aponta que aproximadamente **10% de todas as crianças e adolescentes** têm ou terão algum tipo de ansiedade. Predominam no **sexo feminino, na proporção de cerca de 2:1**, e frequentemente são subdiagnosticados e não tratados. Entre os quadros, o **transtorno de ansiedade de separação** é um dos mais frequentes da infância, com prevalência estimada de 2,8% a 8%.
+
+A **depressão** é a **terceira doença mais comum no mundo** e, nos países de renda alta, a principal causa de incapacidade. Estima-se que cerca de **25% da população mundial** venha a sofrer de depressão e que **pelo menos metade dos episódios tenha início na adolescência** — a prevalência, baixa na infância, aumenta substancialmente após a puberdade. A depressão pode levar ao suicídio, que é a **segunda principal causa de morte entre 15 e 29 anos**, matando quase 800 mil pessoas por ano no mundo.
+
+No Brasil, o panorama da violência autoprovocada mostra a **ideação suicida como a manifestação mais prevalente (17,1%)**, seguida da estruturação de planos (4,8%) e das tentativas (2,8%). As **tentativas são mais significativas entre mulheres e jovens**, sendo a **intoxicação por medicamentos o método mais utilizado**; as maiores taxas de suicídio registradas concentram-se nas regiões **Sul e Centro-Oeste**.
+
+> Dados de prevalência e gravidade não são enfeite: respondem a perguntas diretas de prova sobre ansiedade na infância, depressão na adolescência e o peso do suicídio como causa de morte no jovem.
+
+---
+
 ## Transtorno de ajustamento e transtornos de humor
 
 ### Transtorno de ajustamento/adaptação
@@ -72,6 +84,10 @@ Humor é o estado emocional que determina as respostas afetivas conforme as expe
 
 A característica mais comum é a **tristeza intensa e persistente**. Somam-se anedonia, abandono de atividades, queda no rendimento escolar, problemas de relacionamento, alterações do sono e do apetite e dificuldade em manter a rotina de autocuidado, num pano de fundo de pessimismo, desinteresse, desesperança e autodepreciação. Não é raro o uso de álcool e drogas como tentativa de automedicação. Ao exame físico: semblante triste, descaso com a aparência e lentificação psicomotora. **Nos casos graves: alucinações auditivas e ideação suicida.**
 
+Na adolescência a depressão costuma ser **mascarada** por agitação psicomotora, ataques de raiva, comportamentos delinquentes, hostilidade, autoagressão, exposição constante a situações de risco, uso de drogas, queixas proeminentes de dor crônica, obesidade e letargia — por isso o diagnóstico passa despercebido com frequência. Os sintomas organizam-se em quatro conjuntos: indicadores *emocionais* (tristeza, isolamento, apatia, crises de choro, perda do prazer, desvalia e culpa), *cognitivos* (distração, pessimismo, indecisão, superestimação das perdas, falta de esperança), *motivacionais* (indiferença a desafios, desinteresse, perda de afeição, baixo rendimento) e *vegetativos ou motores* (fadiga constante, retardo psicomotor, alterações de apetite e peso, insônia, perda da libido).
+
+Dois diagnósticos diferenciais merecem destaque. O **luto** pode durar até 2 anos e em geral não traz inibição psicomotora nem culpa inapropriada — raramente induz, sozinho, a um episódio depressivo maior. E o **transtorno depressivo persistente (distimia)** exige humor deprimido na maioria dos dias por pelo menos **1 ano em crianças e adolescentes** (2 anos no adulto). Para conter o excesso de diagnóstico de transtorno bipolar em crianças, o DSM-5 criou o **transtorno disruptivo da desregulação do humor**: irritabilidade persistente com explosões de raiva desproporcionais, com início antes dos 10 anos, classificado entre os transtornos depressivos.
+
 #### Transtorno bipolar
 
 Episódios maníacos, hipomaníacos ou mistos que se alternam com sintomas depressivos e períodos de humor normal. Na crise, o paciente fica expansivo ou irritável — e o que o separa das flutuações normais é a **intensidade e a duração**, com comprometimento do cotidiano e das relações familiares, sociais e educacionais.
@@ -87,6 +103,8 @@ Quanto aos subtipos: no **tipo I predomina o estado maníaco** (um ou mais epis�
 #### Etiologia e tratamento
 
 A etiologia é a interação de fatores genéticos, neurobiológicos, familiares e ambientais. Dois genes são citados: `MAOA` (funcionamento da monoaminoxidase) e `5-HTT` (transportador de serotonina). Somam-se vulnerabilidade socioeconômica, violência familiar, negligência e estresse agudo ou crônico. Fator endócrino a lembrar: **baixos níveis de T4 produzem manifestações clínicas de depressão**.
+
+Em neuroimagem funcional, a depressão associa-se a **diminuição da atividade do córtex pré-frontal ventral até o joelho do corpo caloso**, com redução de cerca de 45% do volume de substância cinzenta dessa região — área com conexões extensas com a amígdala, o hipotálamo e o núcleo accumbens. O **eixo hipotálamo-hipófise-suprarrenal está hiperativo em cerca de metade dos pacientes**, com hipersecreção de ACTH e cortisol. Quimicamente, há **diminuição da captação de serotonina**, de modo que o sistema nervoso funciona com menos neurotransmissores do que precisaria.
 
 O tratamento **não farmacológico** apoia-se em psicoterapia, rede de apoio (família, escola, profissionais de saúde), **redução de estressores como medida fundamental**, informação aos profissionais do processo de aprendizagem para adaptações escolares e acompanhamento psiquiátrico nos casos graves ou persistentes.
 
@@ -116,7 +134,7 @@ A etiologia reúne fatores genéticos e exposição frequente a estressores exte
 
 ### Tratamento
 
-- **Ansiedade leve:** psicoterapia individual e familiar.
+- **Ansiedade leve:** suporte familiar e emocional com **terapia cognitivo-comportamental (TCC)**, evitando-se medicamentos.
 - **Ansiedade moderada a grave:** acompanhamento psiquiátrico e avaliação de **ISRS** — fluoxetina, sertralina, escitalopram.
 - **Ansiedade mais grave:** associação com benzodiazepínicos.
 - **Fobia social:** atuação conjunta com a escola para criação de estratégias.
@@ -184,11 +202,17 @@ A violência autoprovocada abrange a ideação suicida, a autoagressão, a tenta
 | Autolesão recorrente é comum | Repetição menos frequente que nas autolesões sem intenção suicida |
 | Há consciência de que o ato pode causar lesões importantes, mas sem risco à vida | Comportamento potencialmente autolesivo com o desejo de morrer como resultado |
 
+As **lesões da autolesão** costumam ser múltiplas, em uma mesma sessão e em áreas visíveis e acessíveis — antebraços e frente das coxas —, mas o exame deve incluir partes escondidas pela roupa (glúteos, axilas, ombros e dorso). A prática é, em geral, **solitária (80%)**.
+
+O **local e os meios do suicídio consumado** também são cobrados: o **lar é o cenário mais frequente (51%)**, seguido dos hospitais (26%), e o **enforcamento lidera em ambos os sexos** (58% dos homens, 49% das mulheres). A seriedade de uma tentativa é medida pelo planejamento (deixar mensagem indica ato planejado), pelas medidas tomadas para impedir a descoberta, pelo método usado e pelo estado mental no momento do ato.
+
 ### Etiologia
 
 Interação complexa e multifatorial de fatores biológicos, psicológicos e sociais: aspectos psicológicos (desesperança, pensamento negativo, impulsividade, agressividade, pouca habilidade na resolução de problemas), fatores sociais (violência e distúrbios de organização familiar), condições psiquiátricas (transtornos de humor — por exemplo, quadros depressivos com doença crônica —, transtornos de ansiedade, transtornos disruptivos e abuso de substâncias) e, como fator de risco isolado destacado, **tentativas anteriores**. São fatores positivos otimismo, habilidade na resolução de problemas, vínculos familiares positivos, relações sociais de qualidade, participação em projetos coletivos e espiritualidade/religiosidade.
 
 > **NEM TODOS TÊM DOENÇA PSIQUIÁTRICA.** A ausência de um diagnóstico psiquiátrico formal não afasta o risco de suicídio.
+
+Depois de um suicídio, há **aumento do risco de novos suicídios na comunidade**, especialmente entre amigos e colegas de turma — a escola deve mobilizar profissionais de saúde mental e lançar mão de recursos como kits pós-suicídio. E um alerta que orienta o acolhimento: **tentativas de suicídio não são uma maneira de chamar a atenção**; envolvem ambivalência quanto ao desejo de morrer e podem ser um pedido de ajuda.
 
 ### Manejo
 
@@ -215,5 +239,7 @@ O sigilo é regra no atendimento ao adolescente, mas há situações em que deve
 | Sorologia positiva para HIV (comunicar familiares e parceria sexual) | IST, afastada violência sexual e desde que haja maturidade para adesão ao tratamento |
 | Não adesão a tratamentos, deixando o adolescente ou terceiros em risco | — |
 | Diagnóstico de doenças graves, quadros depressivos e outros transtornos do campo mental | — |
+
+Apesar da alta prevalência, **apenas cerca de dois terços dos adolescentes com ansiedade ou depressão procuram e acessam algum tipo de ajuda profissional**, e uma minoria chega a um especialista em saúde mental. O tratamento precoce na infância reduz o sofrimento e funciona como prevenção secundária de transtornos mentais na vida adulta, especialmente de depressão e abuso de álcool e outras substâncias.
 
 > A saúde mental faz parte da atenção integral à criança e ao adolescente: promover cuidado integral significa prevenção, promoção, orientação, direcionamento e assistência — não apenas tratar o transtorno já instalado.

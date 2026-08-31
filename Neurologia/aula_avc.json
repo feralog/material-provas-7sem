@@ -1,0 +1,338 @@
+{
+  "titulo": "AVC Isquêmico e Hemorrágico",
+  "eyebrow": "Neurologia · Doença Cerebrovascular",
+  "subtitulo": "Do icto transitório ao icto completo: classificação, diagnóstico e tratamento",
+  "intro": "Material completo de doença encefalovascular (DEV): conceitos e classificações, fases de evolução do icto transitório à sequela, síndromes topográficas das hemorragias intraparenquimatosa e subaracnóidea, protocolo de abordagem, exames subsidiários, tratamento por fase, epidemiologia e a classificação etiológica do AVC isquêmico (TOAST, CCS e ASCO).",
+  "questoes": [
+    {
+      "question": "Por que o termo 'derrame', usado com pacientes e familiares, é considerado inadequado como sinônimo de AVC?",
+      "options": [
+        "Porque sugere extravasamento e exclui cerca de 80% dos casos, que são isquêmicos",
+        "Porque sugere sangramento e exclui cerca de 80% dos casos, que são hemorrágicos",
+        "Porque sugere extravasamento e exclui cerca de 80% dos casos, que são hemorrágicos",
+        "Porque sugere coagulação e exclui cerca de 50% dos casos, que são isquêmicos"
+      ],
+      "correctIndex": 0,
+      "explanation": "Derrame significa extravasamento, sendo aplicável apenas às hemorragias. Usado como sinônimo de AVC, excluiria cerca de 80% dos casos de doença encefalovascular, que são de natureza isquêmica. Os termos mais adequados são isquemia, infarto, trombose, embolia, hemorragia ou hematoma."
+    },
+    {
+      "question": "Segundo o capítulo, por que a designação 'acidente vascular cerebral' (AVC) é considerada imprecisa?",
+      "options": [
+        "Porque 'cérebro' não inclui tronco encefálico nem cerebelo, excluindo cerca de 20% dos casos",
+        "Porque 'cérebro' não inclui o córtex nem os gânglios da base, excluindo cerca de 20% dos casos",
+        "Porque 'cérebro' não inclui tronco encefálico nem cerebelo, excluindo cerca de 80% dos casos",
+        "Porque 'cérebro' não inclui o córtex nem o tálamo, excluindo cerca de 80% dos casos"
+      ],
+      "correctIndex": 0,
+      "explanation": "'Cérebro' designa apenas uma das partes do encéfalo, sem incluir o tronco encefálico nem o cerebelo. Usar o termo AVC excluiria cerca de 20% dos casos que comprometem tronco e/ou cerebelo; por isso o capítulo prefere a designação 'doença encefalovascular' (DEV)."
+    },
+    {
+      "question": "Na classificação etiopatogênica da DEV, quais são os subtipos do grupo isquêmico?",
+      "options": [
+        "Trombose ou embolia artério-arterial, embolia cardiogênica e etiologia indeterminada",
+        "Trombose ou embolia artério-arterial, embolia cardiogênica e hemorragia meníngea",
+        "Embolia cardiogênica, hemorragia subaracnóidea e etiologia indeterminada",
+        "Trombose ou embolia artério-arterial, hemorragia meníngea e etiologia indeterminada"
+      ],
+      "correctIndex": 0,
+      "explanation": "Na classificação etiopatogênica (Tabela 8.1), o grupo isquêmico da DEV compreende trombose ou embolia artério-arterial, embolia cardiogênica e etiologia indeterminada. O grupo hemorrágico divide-se em intraparenquimatosa (HIP) e subaracnóidea (HM)."
+    },
+    {
+      "question": "Como é definido o icto transitório (IT)?",
+      "options": [
+        "Déficit neurológico de causa vascular com duração menor do que 24 horas",
+        "Déficit neurológico de causa vascular com duração menor do que 6 horas",
+        "Déficit neurológico de causa vascular com duração menor do que 48 horas",
+        "Déficit neurológico de causa vascular com duração menor do que 72 horas"
+      ],
+      "correctIndex": 0,
+      "explanation": "O IT é um déficit neurológico de causa vascular com duração menor do que 24 horas. O capítulo prefere IT a AIT porque, em algumas ocasiões, a natureza da lesão pode ser hemorrágica. A maioria dos pacientes recupera-se em menos de uma hora."
+    },
+    {
+      "question": "Em quanto tempo a maioria dos pacientes com IT se recupera, e qual a duração média na circulação carotídea?",
+      "options": [
+        "Em menos de 1 hora; média de 14 minutos na circulação carotídea",
+        "Em menos de 3 horas; média de 30 minutos na circulação carotídea",
+        "Em menos de 1 hora; média de 8 minutos na circulação carotídea",
+        "Em menos de 6 horas; média de 45 minutos na circulação carotídea"
+      ],
+      "correctIndex": 0,
+      "explanation": "Estudos recentes demonstram que a maioria dos pacientes com AIT recupera-se em menos de uma hora. A duração média é de 14 minutos para a circulação carotídea e de oito minutos para a vertebrobasilar."
+    },
+    {
+      "question": "Qual situação confere maior risco de evoluir para icto completo?",
+      "options": [
+        "IT com duração menor que 5 minutos, comparado ao pequeno icto prolongado",
+        "IT com duração maior que 1 hora, comparado ao pequeno icto curto",
+        "PI com duração menor que 5 minutos, comparado ao IT prolongado",
+        "PI com duração acima de 3 semanas, comparado ao IT curto"
+      ],
+      "correctIndex": 0,
+      "explanation": "Pacientes que apresentaram IT, especialmente quando a duração foi de menos de cinco minutos, têm risco maior de desenvolver icto completo do que os que tiveram pequeno icto, sobretudo aqueles com sintomatologia acima de três semanas."
+    },
+    {
+      "question": "Por que o termo RIND (déficit neurológico isquêmico reversível) deve ser visto com restrições?",
+      "options": [
+        "Porque a hemorragia também pode causar pequeno icto com recuperação completa",
+        "Porque a isquemia raramente se associa a recuperação completa do déficit",
+        "Porque a hemorragia raramente se associa a déficit neurológico reversível",
+        "Porque o termo refere-se apenas a déficits de duração superior a 24 horas"
+      ],
+      "correctIndex": 0,
+      "explanation": "O RIND restringe a causa à isquemia, mas é evidente que a hemorragia também pode causar pequeno icto com recuperação funcional completa. Por isso o capítulo prefere manter a conceituação fundamentalmente clínica de pequeno icto (PI)."
+    },
+    {
+      "question": "Como é conceituado o icto completo (IC)?",
+      "options": [
+        "Disfunção vascular com sintomatologia por mais de 24 horas e alguma sequela",
+        "Disfunção vascular com sintomatologia por mais de 48 horas e alguma sequela",
+        "Disfunção vascular com sintomatologia por mais de 6 horas e alguma sequela",
+        "Disfunção vascular com sintomatologia por mais de 24 horas, sem sequela"
+      ],
+      "correctIndex": 0,
+      "explanation": "O icto completo é uma disfunção encefálica de causa vascular cuja sintomatologia persiste por período superior a 24 horas e em cuja recuperação existe algum grau de sequela. O IC pode ser isquêmico (DEVI) ou hemorrágico (DEVH)."
+    },
+    {
+      "question": "Quais são a causa mais frequente de DEVI trombótico e a de DEVI por embolia cardiogênica?",
+      "options": [
+        "Arteriosclerose/hipertensão e estenose mitral com fibrilação atrial",
+        "Arterite temporal e prótese valvar com fibrilação atrial",
+        "Arteriosclerose/hipertensão e mixoma atrial com flutter",
+        "Endocardite bacteriana e estenose mitral com fibrilação atrial"
+      ],
+      "correctIndex": 0,
+      "explanation": "No DEVI trombótico, os fatores subjacentes mais frequentes são a arteriosclerose e a hipertensão arterial sistêmica. A causa potencialmente mais frequente de DEVI por embolia cardiogênica é a estenose mitral com fibrilação atrial, embora os êmbolos possam originar-se também de placas ulceradas."
+    },
+    {
+      "question": "Em pacientes jovens com DEVI, quais causas devem ser especialmente lembradas?",
+      "options": [
+        "Anticoncepcionais orais, arterites, alcoolismo e trombose traumática da carótida",
+        "Hipertensão arterial, diabete, dislipidemia e tabagismo crônico",
+        "Angiopatia amiloide, lues, alcoolismo e trombose traumática da carótida",
+        "Anticoncepcionais orais, aneurisma micótico, alcoolismo e endocardite"
+      ],
+      "correctIndex": 0,
+      "explanation": "Em pacientes jovens, as causas não ateroscleróticas devem ser lembradas: desordens cardíacas, arterites, anticoncepcionais orais, alcoolismo, drogas ilícitas e trombose traumática da carótida. A trombose traumática pode ser imediata ou tardia, horas ou dias após o trauma."
+    },
+    {
+      "question": "Qual é a causa mais frequente de hemorragia intraparenquimatosa (HIP)?",
+      "options": [
+        "Hipertensão arterial, por ruptura dos microaneurismas de Charcot-Bouchard",
+        "Aneurismas congênitos, por ruptura na base do polígono de Willis",
+        "Malformações arteriovenosas, por fenômenos de roubo sanguíneo",
+        "Angiopatia amiloide cerebral, por depósito de proteína nas artérias"
+      ],
+      "correctIndex": 0,
+      "explanation": "A causa mais frequente de HIP é a hipertensão arterial sistêmica, pela ruptura dos microaneurismas de Charcot-Bouchard, que se formam em decorrência da hipertensão. Outras causas, menos frequentes, são aneurismas e malformações arteriovenosas congênitas, aneurismas micóticos, tumores, anticoagulantes e discrasias sanguíneas."
+    },
+    {
+      "question": "Onde ocorrem aproximadamente três quartos das hemorragias intraparenquimatosas hipertensivas?",
+      "options": [
+        "Nos gânglios da base, com predomínio do putâmen",
+        "Na região subcortical dos lobos temporais",
+        "Nos lobos cerebelares, com predomínio do verme",
+        "Na ponte, junto ao assoalho do quarto ventrículo"
+      ],
+      "correctIndex": 0,
+      "explanation": "Cerca de três quartos das HIPs hipertensivas ocorrem nos gânglios da base, sendo o putâmen responsável por metade dos casos (1/2). A quarta parte restante distribui-se entre a região subcortical dos lobos (com predomínio temporal), o cerebelo e o tronco, onde a ponte é a região mais atingida."
+    },
+    {
+      "question": "Quais sinais são característicos da hemorragia intraparenquimatosa putaminal?",
+      "options": [
+        "Hemiparesia contralateral, desvio ocular ipsilateral e decorticação/descerebração",
+        "Hemiparesia ipsilateral, desvio ocular contralateral e pupilas puntiformes",
+        "Hemiparesia contralateral, desvio ocular para baixo e pupilas mióticas",
+        "Ataxia apendicular, paralisia facial periférica e paralisia de olhar conjugado"
+      ],
+      "correctIndex": 0,
+      "explanation": "A HIP putaminal cursa com moderada depressão do estado de consciência, hemiparesia completa contralateral e desvio ocular horizontal ipsilateral. A estimulação dolorosa do hemicorpo parético provoca reação com hipertonia flexora (decorticação) ou extensora (descerebração)."
+    },
+    {
+      "question": "Qual tríade clínica é característica da hemorragia intraparenquimatosa talâmica?",
+      "options": [
+        "Olhar desviado para baixo, pupilas mióticas e descerebração",
+        "Olhar desviado para o lado, pupilas puntiformes e decorticação",
+        "Olhar conjugado lateral, miose e oftalmoplegia extrínseca",
+        "Olhar desviado para baixo, midríase e descerebração bilateral"
+      ],
+      "correctIndex": 0,
+      "explanation": "A HIP talâmica caracteriza-se por depressão moderada/acentuada da consciência, reação em descerebração contra ou bilateralmente, desvio ocular para baixo e pupilas mióticas. É um padrão distinto do da HIP putaminal."
+    },
+    {
+      "question": "Quais achados acompanham a hemorragia intraparenquimatosa pontina?",
+      "options": [
+        "Miose puntiforme bilateral, oftalmoplegia extrínseca bilateral e descerebração",
+        "Miose unilateral, hemiparesia contralateral e desvio ocular para baixo",
+        "Midríase bilateral, paralisia facial periférica e ataxia apendicular",
+        "Pupilas mióticas, desvio ocular conjugado lateral e decorticação"
+      ],
+      "correctIndex": 0,
+      "explanation": "A HIP pontina acompanha-se de acentuada depressão da consciência, descerebração bilateral, miose puntiforme bilateral e oftalmoplegia extrínseca também bilateral. A ponte é a região do tronco onde ocorre a maioria dos casos."
+    },
+    {
+      "question": "Qual tríade clínica sugere hemorragia cerebelar?",
+      "options": [
+        "Ataxia apendicular, paralisia facial periférica e paralisia de olhar conjugado",
+        "Ataxia de marcha, paralisia facial periférica e desvio ocular conjugado",
+        "Cefaleia súbita, hemianopsia contralateral e desvio ocular para baixo",
+        "Hemiparesia completa, desvio ocular ipsilateral e postura de descerebração"
+      ],
+      "correctIndex": 0,
+      "explanation": "A hemorragia cerebelar pode acarretar a tríade de Ott: ataxia cerebelar apendicular, paralisia facial periférica e paralisia de olhar conjugado lateral. Os três sinais são ipsilaterais à hemorragia."
+    },
+    {
+      "question": "Qual quadro clínico é altamente sugestivo de hemorragia intraparenquimatosa occipital?",
+      "options": [
+        "Cefaleia súbita órbito-frontal associada a hemianopsia contralateral",
+        "Cefaleia súbita occipital associada a hemianopsia ipsilateral",
+        "Cefaleia súbita frontal associada a paralisia facial periférica",
+        "Cefaleia súbita temporal associada a hemiparesia contralateral"
+      ],
+      "correctIndex": 0,
+      "explanation": "Entre as HIPs da região subcortical dos lobos, apenas a occipital proporciona quadro altamente sugestivo: cefaleia súbita na região órbito-frontal associada a hemianopsia contralateral. Os demais padrões não são específicos."
+    },
+    {
+      "question": "Quais são, em ordem, as causas mais frequentes de hemorragia subaracnóidea (HM)?",
+      "options": [
+        "Ruptura de aneurisma congênito e, em segundo lugar, malformação arteriovenosa",
+        "Ruptura de aneurisma micótico e, em segundo lugar, hipertensão arterial",
+        "Ruptura de malformação arteriovenosa e, em segundo lugar, aneurisma congênito",
+        "Ruptura de aneurisma congênito e, em segundo lugar, hipertensão arterial"
+      ],
+      "correctIndex": 0,
+      "explanation": "A causa mais frequente de HM é a ruptura de aneurisma congênito; a segunda é a malformação arteriovenosa congênita. Com exceção da hipertensão arterial, as outras causas apontadas para a HIP eventualmente podem ocasionar HM."
+    },
+    {
+      "question": "Uma HM acompanhada de paralisia completa do III nervo craniano sugere aneurisma em qual local?",
+      "options": [
+        "Emergência da artéria comunicante posterior da carótida",
+        "Bifurcação da artéria cerebral média, de ambos os lados",
+        "Topo da artéria basilar, próximo à bifurcação proximal",
+        "Segmento intracavernoso da carótida interna"
+      ],
+      "correctIndex": 0,
+      "explanation": "Os aneurismas congênitos predominam na base do polígono de Willis, com destaque para a emergência da artéria comunicante posterior da carótida. Uma HM acompanhada de paralisia completa do III nervo sugere fortemente essa topografia. No segmento intracavernoso, o aneurisma compromete os nervos III, IV, VI e o primeiro ramo do V."
+    },
+    {
+      "question": "Qual dado de anamnese torna o diagnóstico de hemorragia subaracnóidea facilmente identificável?",
+      "options": [
+        "Instalação abrupta e não traumática de cefaleia",
+        "Instalação gradual de cefaleia com déficit focal",
+        "Instalação abrupta de cefaleia após esforço físico",
+        "Instalação gradual de cefaleia com vômitos"
+      ],
+      "correctIndex": 0,
+      "explanation": "O diagnóstico de HM é facilmente identificado quando a anamnese caracteriza a instalação abrupta, não traumática, de cefaleia. É o clássico quadro de cefaleia em trovoada, sem relação obrigatória com esforço físico."
+    },
+    {
+      "question": "A piora de um icto em evolução com sintomatologia escalonada é decorrente de qual mecanismo?",
+      "options": [
+        "Trombose retrógrada, com aumento progressivo da área de infarto",
+        "Trombose progressiva, com oclusão da artéria carótida interna",
+        "Hemorragia intraparenquimatosa com crescimento do hematoma",
+        "Edema cerebral crescente ao redor de um infarto extenso"
+      ],
+      "correctIndex": 0,
+      "explanation": "A trombose retrógrada é um dos mecanismos de aumento da área de infarto e provoca sintomatologia crescente de maneira escalonada, muito sugestiva desse mecanismo. Já a trombose progressiva, a hemorragia intraparenquimatosa e o edema cerebral crescente costumam cursar com piora contínua."
+    },
+    {
+      "question": "Segundo o protocolo, acima de qual nível de pressão arterial se inicia o tratamento anti-hipertensivo?",
+      "options": [
+        "200/120 mmHg, pois a correção precoce piora a perfusão cerebral",
+        "160/100 mmHg, pois a correção precoce evita o ressangramento",
+        "140/90 mmHg, pois a correção precoce reduz o risco de edema",
+        "220/120 mmHg, pois a correção precoce evita a herniação"
+      ],
+      "correctIndex": 0,
+      "explanation": "O protocolo preconiza não medicar a hipertensão arterial a menos que os níveis estejam acima de 200/120 mmHg. A redução agressiva da pressão na fase aguda pode comprometer a perfusão cerebral do tecido em risco."
+    },
+    {
+      "question": "No icto completo hemorrágico, qual conduta o protocolo preconiza?",
+      "options": [
+        "Hidantalizar (1 g EV) e administrar dexametasona 4 mg de 4/4 horas",
+        "Administrar AAS 200 mg VO ao dia e hidantalizar (1 g EV)",
+        "Heparinizar (HBPM) e administrar dexametasona 4 mg de 4/4 horas",
+        "Administrar AAS 200 mg VO ao dia e nimodipina 30 mg de 8/8 horas"
+      ],
+      "correctIndex": 0,
+      "explanation": "No icto completo hemorrágico, o protocolo preconiza hidantalizar (1 g EV) e administrar dexametasona 4 mg EV de 4/4 horas. No icto completo isquêmico, a conduta é AAS 200 mg VO ao dia. Nos ictos em evolução, heparinizar se isquêmico e considerar cirurgia de urgência se hemorrágico."
+    },
+    {
+      "question": "Em relação à topografia da lesão, o que indicam uma hemiparesia completa e uma hemiparesia alterna?",
+      "options": [
+        "Hemiparesia completa indica lesão supratentorial; hemiparesia alterna, infratentorial",
+        "Hemiparesia completa indica lesão infratentorial; hemiparesia alterna, supratentorial",
+        "Hemiparesia completa indica lesão capsular; hemiparesia alterna, cortical",
+        "Hemiparesia completa indica lesão cortical; hemiparesia alterna, capsular"
+      ],
+      "correctIndex": 0,
+      "explanation": "Uma hemiparesia completa, envolvendo membro superior, inferior e território facial do mesmo lado, na maioria das vezes implica lesão supratentorial. Já as hemiparesias alternas, com membros de um lado e território craniano do outro, indicam lesão infratentorial."
+    },
+    {
+      "question": "Como se diferenciam as hemiparesias capsulares das corticais?",
+      "options": [
+        "Capsulares são proporcionadas; corticais, desproporcionadas",
+        "Capsulares são desproporcionadas; corticais, proporcionadas",
+        "Capsulares poupam a face; corticais poupam o membro",
+        "Capsulares são flácidas; corticais, espásticas"
+      ],
+      "correctIndex": 0,
+      "explanation": "As hemiparesias capsulares costumam ser mais intensas e proporcionadas, com igual intensidade de déficit nos membros e na hemiface. As corticais tendem a ser desproporcionadas e, mesmo com déficits motores discretos, pode haver comprometimento do estado de consciência."
+    },
+    {
+      "question": "Segundo o diagnóstico clínico diferencial entre DEVI e DEVH, qual achado fala a favor de isquemia?",
+      "options": [
+        "Idade acima de 55 anos, com déficit neurológico ao despertar",
+        "Sexo masculino, com cefaleia e vômitos desde o início",
+        "Coma desde o início, com pressão arterial acima de 220/120",
+        "Apresentação inicial com cefaleia e vômitos intensos"
+      ],
+      "correctIndex": 0,
+      "explanation": "Na Tabela 8.3, falam a favor de isquemia a idade acima de 55 anos, história de angina, DEV ou diabetes, déficit ao despertar e apresentação com déficit focal. Falam a favor de hemorragia o sexo masculino, cefaleia e/ou vômitos, coma desde o início e pressão arterial inicial acima de 220/120 mmHg."
+    },
+    {
+      "question": "Em relação ao diagnóstico de hemorragia subaracnóidea, o que é correto afirmar?",
+      "options": [
+        "A TC pode falhar, e o LCR identifica sangue já a partir de 1% de hematócrito",
+        "A TC é infalível, e o LCR só identifica sangue acima de 16% de hematócrito",
+        "A TC identifica sangue com 1% de hematócrito e o LCR é dispensável",
+        "A TC e o LCR só identificam sangue acima de 16% de hematócrito"
+      ],
+      "correctIndex": 0,
+      "explanation": "Na HM pura, a TC pode falhar: ela identifica sangue no LCR apenas quando o hematócrito é igual ou superior a 16%. O exame do LCR é muito mais elucidativo, pois a olho nu já se identifica sangue a partir de 1% de hematócrito."
+    },
+    {
+      "question": "Segundo a regra mnemônica dos 80/20, qual proporção está correta?",
+      "options": [
+        "80% das DEVs são isquêmicas e 80% são ictos completos",
+        "80% das DEVs são hemorrágicas e 80% são ictos em evolução",
+        "80% das DEVs são supratentoriais e 80% são embolias cardiogênicas",
+        "80% das DEVs são infratentoriais e 80% são tromboses venosas"
+      ],
+      "correctIndex": 0,
+      "explanation": "A regra dos 80/20 resume as proporções da DEV: 80% supratentorial, 80% isquêmica, 80% no território carotídeo, 80% por trombose ou embolia artério-arterial, 80% das hemorragias intraparenquimatosas, 80% destas nos gânglios da base e 80% de ictos completos. Apenas 20% são ictos em evolução."
+    },
+    {
+      "question": "Quais são os cinco subtipos de AVC isquêmico da classificação TOAST?",
+      "options": [
+        "Grandes artérias, pequenas artérias, cardioembólico, causas raras e indeterminado",
+        "Aterotrombótico, lacunar, cardioembólico, dissecção e criptogênico",
+        "Grandes artérias, pequenas artérias, cardioembólico, infeccioso e indeterminado",
+        "Aterotrombótico, lacunar, cardioembólico, vasculítico e criptogênico"
+      ],
+      "correctIndex": 0,
+      "explanation": "A classificação TOAST (1993) define cinco subtipos: aterosclerótico de grandes artérias, doença de pequenas artérias (lacunar), cardioembólico, causas pouco frequentes e indeterminado. É a classificação mais usada desde então e se relaciona com recorrência precoce e tardia e mortalidade."
+    },
+    {
+      "question": "Quais características definem o AVC isquêmico lacunar?",
+      "options": [
+        "Lesão pequena (< 15 mm) nas perfurantes, com hipertensão como fator principal",
+        "Lesão cortical extensa na circulação anterior, com fibrilação atrial",
+        "Lesão pequena na cortical, com origem criptogênica e sem fator de risco",
+        "Lesão em território basilar, com dissecção arterial e em paciente jovem"
+      ],
+      "correctIndex": 0,
+      "explanation": "O infarto lacunar compromete pequenas artérias perfurantes, com lesão menor que 15 mm, mais comumente na cápsula interna, tálamo e ponte, sem comprometimento cortical. A hipertensão arterial é o principal fator de risco. As síndromes típicas são motoras ou sensitivas puras, hemiparesia/hemiataxia e disartria com mão atrapalhada (clumsy-hand)."
+    }
+  ]
+}

@@ -126,7 +126,7 @@
         "Hérnia umbilical com distensão abdominal e pele seca"
       ],
       "correctIndex": 0,
-      "explanation": "O hipotireoidismo congênito é hipometabólico: bradicardia, hipotermia, constipação e letargia. Taquicardia, diarreia e perda de peso são o oposto, típicos de tireotoxicose. Atenção: o recém-nascido pode ainda ser assintomático, o que justifica a triagem."
+      "explanation": "O hipotireoidismo congênito é hipometabólico: bradicardia, hipotermia, constipação, letargia, icterícia prolongada, hérnia umbilical, macroglossia e fontanelas amplas. Taquicardia, diarreia e perda de peso são o oposto, típicos de tireotoxicose. O recém-nascido pode ainda ser assintomático, o que justifica a triagem. O Tratado acrescenta que malformações congênitas são mais prevalentes no HC, sobretudo cardíacas (3-11%) e renais."
     },
     {
       "question": "Recém-nascido com icterícia prolongada e fontanelas amplas. Qual a conduta correta?",
@@ -138,7 +138,7 @@
         "Repetir o teste do pezinho em 30 dias e apenas observar a evolução"
       ],
       "correctIndex": 0,
-      "explanation": "O teste do pezinho é exame de triagem, não de confirmação. Diante de sintomas clássicos de hipotireoidismo congênito não se perde tempo: pedem-se TSH e T4 livre séricos imediatamente, porque o atraso no tratamento custa desenvolvimento cerebral."
+      "explanation": "O teste do pezinho é exame de triagem, não de confirmação. Diante de sintomas clássicos não se perde tempo: pedem-se TSH e T4 livre séricos imediatamente. O Tratado reforça o ponto: o TSH em papel-filtro não detecta o hipotireoidismo congênito central e existe falso-negativo por elevação tardia do TSH, de modo que a suspeita clínica obriga a dosagem sérica mesmo com triagem neonatal normal."
     },
     {
       "question": "Qual é a causa mais comum de hipotireoidismo adquirido e qual o seu mecanismo?",
@@ -150,7 +150,7 @@
         "Deficiência de TRH, com atrofia lenta e progressiva da glândula"
       ],
       "correctIndex": 0,
-      "explanation": "A tireoidite linfocítica crônica (Hashimoto) é doença autoimune e a causa mais comum de hipotireoidismo adquirido. Autoanticorpos anti-tireoperoxidase e antitireoglobulina causam inflamação e destruição gradual da glândula. A disgenesia é a causa congênita."
+      "explanation": "A tireoidite linfocítica crônica (Hashimoto) é doença autoimune e a causa mais comum de hipotireoidismo adquirido em regiões sem deficiência de iodo. Anticorpos anti-TPO e antitireoglobulina causam inflamação e destruição gradual da glândula. É mais frequente em meninas e com história familiar de doença tireoidiana, e mais comum junto de diabetes tipo 1, vitiligo, doença celíaca e das síndromes de Down, Turner e Noonan — nesses grupos a função tireoidiana deve ser reavaliada periodicamente."
     },
     {
       "question": "Quais autoanticorpos correspondem, respectivamente, à tireoidite de Hashimoto e à doença de Graves?",
@@ -174,7 +174,7 @@
         "Hipertireoidismo primário, com TSH suprimido pelo feedback"
       ],
       "correctIndex": 0,
-      "explanation": "No fluxograma: T4L e TSH normais = eutireoideo; T4L normal com TSH alto = hipotireoidismo subclínico; T4L baixo ou normal com TSH aumentado = hipotireoidismo primário; T4L e TSH baixos ou normais = hipotireoidismo secundário ou terciário.",
+      "explanation": "No fluxograma: T4L e TSH normais = eutireoideo; T4L normal com TSH alto = hipotireoidismo subclínico; T4L baixo ou normal com TSH aumentado = hipotireoidismo primário; T4L baixo com TSH baixo ou normal = hipotireoidismo central. O Tratado subdivide o subclínico em grau 1 (TSH acima da referência e < 10 mU/L) e grau 2 (TSH maior ou igual a 10 mU/L); na criança ele costuma resolver sozinho, e a obesidade aumenta sua prevalência por elevação de TSH mediada pela leptina, reversível com a perda de peso.",
       "image": "pg30",
       "imageCaption": "Fluxograma do diagnóstico laboratorial do hipotireoidismo"
     },
@@ -188,19 +188,19 @@
         "Tireoidite de Hashimoto, em fase inicial de destruição"
       ],
       "correctIndex": 0,
-      "explanation": "Se a tireoide está hipofuncionante mas o TSH não sobe, o defeito está acima dela: deficiência de TSH (secundário, hipofisário) ou de TRH (terciário, hipotalâmico). É a forma rara de hipotireoidismo, dita central."
+      "explanation": "Se a tireoide está hipofuncionante mas o TSH não sobe, o defeito está acima dela: deficiência de TSH (secundário, hipofisário) ou de TRH (terciário, hipotalâmico). O Tratado pede ressonância da região hipotálamo-hipofisária nesses casos e lembra do diferencial laboratorial: T4 total baixo com T4 livre e TSH normais indica deficiência de TBG, não hipotireoidismo. O hipotireoidismo central quase sempre vem acompanhado de outras deficiências hipofisárias."
     },
     {
-      "question": "Qual é a dose e o modo de administração da levotiroxina no hipotireoidismo?",
+      "question": "Qual é a dose inicial de levotiroxina no hipotireoidismo congênito do recém-nascido?",
       "options": [
-        "10-15 mcg/kg/dia VO, 1x/dia, em jejum 30-60 min antes do café",
-        "10-15 mcg/kg/dia VO, 3x/dia, junto com o café da manhã",
-        "1-2 mcg/kg/dia VO, 1x/dia, em jejum 30-60 min antes do café",
-        "10-15 mg/kg/dia VO, 1x/dia, logo depois do café da manhã",
-        "100 mcg/kg/dia VO, 1x/dia, em jejum 30-60 min antes do café"
+        "10-15 mcg/kg/dia por via oral, uma vez ao dia",
+        "1,7 mcg/kg/dia por via oral, uma vez ao dia",
+        "10-15 mg/kg/dia por via oral, uma vez ao dia",
+        "100 mcg/kg/dia por via oral, uma vez ao dia",
+        "2-4 mcg/kg/dia por via oral, duas vezes ao dia"
       ],
       "correctIndex": 0,
-      "explanation": "A reposição é feita com levotiroxina 10-15 mcg/kg/dia (ou 100 mcg/m²/dia), por via oral, uma vez ao dia, em jejum de 30 a 60 minutos antes do café. A absorção cai se o comprimido for tomado junto com alimentos."
+      "explanation": "A dose inicial no hipotireoidismo congênito é de 10-15 mcg/kg/dia por via oral, 1 vez ao dia, iniciada de preferência nos primeiros 10 dias de vida; havendo cardiopatia congênita com risco de insuficiência cardíaca, reduz-se a dose pela metade. O medicamento não deve ser manipulado nem, preferencialmente, ser genérico. Divergência: o slide generaliza 10-15 mcg/kg/dia para todo hipotireoidismo e exige jejum de 30-60 minutos, enquanto o Tratado reserva essa dose para 0-3 meses e permite dar o comprimido junto com o alimento em lactentes e crianças, evitando soja e fibra, sempre no mesmo horário e da mesma forma."
     },
     {
       "question": "Como se monitora a reposição com levotiroxina no hipotireoidismo primário?",
@@ -212,7 +212,7 @@
         "Dosando tireoglobulina, buscando reduzir o volume da glândula"
       ],
       "correctIndex": 0,
-      "explanation": "A monitorização é feita com TSH e T4 livre, tendo como alvo a normalização dos níveis somada à melhora clínica. Os anticorpos servem ao diagnóstico etiológico, não ao ajuste da dose no seguimento."
+      "explanation": "A monitorização é feita com TSH e T4 livre, com alvo na normalização somada à melhora clínica; no hipotireoidismo primário o TSH é o parâmetro sensível e deve ficar dentro da faixa de referência. O Tratado detalha o calendário: no hipotireoidismo congênito, controle 1-2 semanas após o início e a cada 2 semanas até normalizar o TSH; a cada mudança de dose, novo exame em 4-6 semanas; a coleta deve ser feita antes da dose diária ou ao menos 4 horas depois. Na disormonogênese mantém-se o TSH na metade inferior da referência."
     },
     {
       "question": "Na figura da doença de Graves, qual é o mecanismo fisiopatológico representado?",
@@ -224,24 +224,24 @@
         "O hipotálamo secreta TRH em excesso e suprime o TSH hipofisário"
       ],
       "correctIndex": 0,
-      "explanation": "Células B autoimunes produzem anticorpos estimulantes contra o receptor de TSH (TRAb), gerando estímulo permanente do receptor e produção contínua de hormônio tireoideano. O excesso de T3/T4 suprime o TSH pelo feedback negativo.",
+      "explanation": "Células B autoimunes produzem anticorpos estimulantes contra o receptor de TSH (TRAb), gerando estímulo permanente do receptor e produção contínua de hormônio tireoideano; o excesso de T3/T4 suprime o TSH pelo feedback negativo. O Tratado define a doença de Graves pela tríade bócio difuso, exoftalmia e hipertireoidismo, com incidência de 1-6,5/100.000, pico na adolescência e predomínio feminino — na criança as alterações oculares são mais brandas e a exoftalmia verdadeira é rara.",
       "image": "pg33",
       "imageCaption": "Eixo normal versus doença de Graves"
     },
     {
-      "question": "Quais são as drogas antitireoidianas e suas doses no tratamento do hipertireoidismo?",
+      "question": "Qual é a droga de escolha e a dose no tratamento da doença de Graves em crianças?",
       "options": [
-        "Metimazol 0,5-1 mg/kg/dia ou propiltiouracil 5-10 mg/kg/dia",
-        "Metimazol 5-10 mg/kg/dia ou propiltiouracil 0,5-1 mg/kg/dia",
-        "Metimazol 10-15 mcg/kg/dia ou propiltiouracil 2 mg/kg/dia",
-        "Propranolol 0,5-1 mg/kg/dia ou levotiroxina 5-10 mg/kg/dia",
-        "Metimazol 2 mg/kg/dia ou propiltiouracil 10-15 mcg/kg/dia"
+        "Metimazol 0,2-0,8 mg/kg/dia, no máximo 30 mg/dia",
+        "Metimazol 5-10 mg/kg/dia, no máximo 300 mg/dia",
+        "Propiltiouracil 5-10 mg/kg/dia, no máximo 30 mg/dia",
+        "Propiltiouracil 0,2-0,8 mg/kg/dia, no máximo 30 mg/dia",
+        "Propranolol 0,2-0,8 mg/kg/dia, no máximo 30 mg/dia"
       ],
       "correctIndex": 0,
-      "explanation": "O slide de tratamento traz metimazol 0,5 a 1 mg/kg/dia ou propiltiouracil (PTU) 5 a 10 mg/kg/dia. Compõem ainda o arsenal terapêutico o betabloqueador propranolol, a iodoterapia e a cirurgia."
+      "explanation": "O metimazol é a droga de escolha, 0,2-0,8 mg/kg/dia, máximo de 30 mg/dia, em 1-2 tomadas, preferindo-se doses menores no início; os efeitos colaterais são dose-dependentes e ocorrem sobretudo nos 3 primeiros meses. O propiltiouracil é contraindicado em crianças pelo elevado risco de hepatotoxicidade. Divergência importante: o slide traz metimazol 0,5 a 1 mg/kg/dia e oferece o PTU 5-10 mg/kg/dia como alternativa — no Tratado, 0,5-1 mg/kg/dia é a dose do hipertireoidismo neonatal e o PTU está proscrito na pediatria."
     },
     {
-      "question": "Qual é o papel do propranolol 2 mg/kg/dia no tratamento do hipertireoidismo?",
+      "question": "Qual é o papel do propranolol no tratamento do hipertireoidismo?",
       "options": [
         "Antagonizar os efeitos beta-adrenérgicos da tireotoxicose",
         "Bloquear a tireoperoxidase e a organificação do iodeto",
@@ -250,7 +250,7 @@
         "Estimular a excreção renal do excesso de T3 e T4 livres"
       ],
       "correctIndex": 0,
-      "explanation": "O propranolol é antagonista beta-adrenérgico usado a 2 mg/kg/dia para controlar taquicardia, tremor e agitação enquanto as tionamidas ainda não fizeram efeito. Não interfere na síntese hormonal."
+      "explanation": "O propranolol é antagonista beta-adrenérgico usado para controlar taquicardia, tremor e agitação enquanto as tionamidas ainda não fizeram efeito; não interfere na síntese hormonal. O Tratado traz 1-2 mg/kg/dia em 2-3 doses, ou atenolol 1-2 mg/kg/dia em dose única, reservados aos quadros mais graves e sobretudo com frequência cardíaca acima de 100 bpm, contraindicados em asma e insuficiência cardíaca. O slide cita a dose fixa de 2 mg/kg/dia, que no livro corresponde ao hipertireoidismo neonatal."
     },
     {
       "question": "Segundo o esquema dos sítios de ação, onde metimazol e PTU atuam na síntese hormonal?",
@@ -267,7 +267,7 @@
       "imageCaption": "Etapas da síntese de T3/T4 e onde os tratamentos atuam"
     },
     {
-      "question": "Qual vantagem o PTU tem sobre o metimazol quanto ao seu mecanismo de ação?",
+      "question": "Qual efeito farmacológico o propiltiouracil tem além de inibir a tireoperoxidase?",
       "options": [
         "Reduz também a conversão periférica de T4 em T3, dose-dependente",
         "Reduz também a captação de iodeto pelo NIS, de modo dose-dependente",
@@ -276,7 +276,7 @@
         "Bloqueia também o receptor beta-adrenérgico cardíaco na periferia"
       ],
       "correctIndex": 0,
-      "explanation": "Além de inibir a TPO como o metimazol, o PTU reduz a conversão periférica de T4 em T3 pelas desiodases, efeito dose-dependente. Isso o torna útil quando se quer queda rápida do T3 ativo."
+      "explanation": "Além de inibir a TPO como o metimazol, o PTU reduz a conversão periférica de T4 em T3 pelas desiodases, efeito dose-dependente. Atenção à divergência: apesar dessa ação, o Tratado contraindica o propiltiouracil em crianças pelo elevado risco de hepatotoxicidade, deixando o metimazol como droga de escolha. O slide ainda intitula o quadro como drogas que diminuem a conversão periférica, mas o metimazol não tem esse efeito."
     },
     {
       "question": "O que ocorre quando se administra iodo em altas doses sobre a função tireoidiana?",
@@ -324,7 +324,7 @@
         "Ser o principal alvo terapêutico na doença de Graves"
       ],
       "correctIndex": 0,
-      "explanation": "Apesar das ações no osso e no rim, o efeito fisiológico da calcitonina sobre a calcemia é modesto. Na prática, sua maior importância é como biomarcador do carcinoma medular de tireoide (MTC), tumor das próprias células C."
+      "explanation": "Apesar das ações no osso e no rim, o efeito fisiológico da calcitonina sobre a calcemia é modesto e de curta duração. Na prática, sua maior importância é como biomarcador do carcinoma medular de tireoide, tumor das próprias células C. O Tratado indica dosá-la quando há história familiar ou características de NEM 2, ou quando a citologia da punção é suspeita para carcinoma medular."
     },
     {
       "question": "Mulher de 29 anos com baixa estatura, mixedema, macroglossia e atraso global do desenvolvimento, nascida em local sem triagem neonatal. Qual o diagnóstico mais provável?",
@@ -389,6 +389,234 @@
       "explanation": "T3 e T4 circulam majoritariamente ligados à TBG (thyroxine-binding globulin), em equilíbrio com as frações livres fT3 e fT4. Só a fração livre é biologicamente ativa e exerce o feedback negativo — por isso se dosa T4 livre, e não T4 total.",
       "image": "pg09",
       "imageCaption": "Eixo hipotálamo-hipófise-tireoide e transporte por TBG"
+    },
+    {
+      "question": "Como é feita a triagem neonatal do hipotireoidismo congênito no Brasil?",
+      "options": [
+        "Dosagem de TSH em papel-filtro entre o 3º e o 5º dia de vida",
+        "Dosagem de TSH em papel-filtro nas primeiras 24 horas de vida",
+        "Dosagem de TSH em papel-filtro entre o 10º e o 15º dia de vida",
+        "Dosagem de T3 total em papel-filtro entre o 3º e o 5º dia de vida",
+        "Dosagem de anti-TPO em papel-filtro entre o 3º e o 5º dia de vida"
+      ],
+      "correctIndex": 0,
+      "explanation": "A rotina obrigatória no Brasil é a dosagem de TSH em amostra de sangue em papel-filtro colhida entre o terceiro (a partir de 48 horas de vida) e o quinto dia, depois da queda do pico fisiológico de TSH. Colher cedo demais gera falso-positivo por esse pico. Quando há recursos, recomenda-se acrescentar T4 total ou livre para rastrear também o hipotireoidismo congênito central, que o TSH isolado não detecta."
+    },
+    {
+      "question": "Pelos valores do PNTN, qual resultado de TSH na triagem é sugestivo de hipotireoidismo?",
+      "options": [
+        "TSH acima de 20 mU/L, com encaminhamento médico urgente",
+        "TSH entre 10 e 20 mU/L, com encaminhamento médico urgente",
+        "TSH entre 5 e 10 mU/L, com encaminhamento médico urgente",
+        "TSH acima de 5 mU/L, com encaminhamento médico urgente",
+        "TSH abaixo de 10 mU/L, com encaminhamento médico urgente"
+      ],
+      "correctIndex": 0,
+      "explanation": "Pelo Programa Nacional de Triagem Neonatal, TSH < 10 mU/L é normal, 10-20 mU/L é limítrofe (convocar para nova amostra em papel-filtro) e > 20 mU/L é sugestivo de hipotireoidismo, exigindo encaminhamento urgente para TSH e T4 livre séricos. Vários centros brasileiros já adotam corte mais baixo, para pegar casos leves: < 5 normal, 5-10 limítrofe e > 10 sugestivo."
+    },
+    {
+      "question": "Triagem neonatal com TSH de 55 mU/L. Qual a conduta correta?",
+      "options": [
+        "Iniciar levotiroxina assim que os exames séricos forem coletados",
+        "Aguardar o resultado dos exames séricos para iniciar o tratamento",
+        "Repetir a amostra em papel-filtro antes de coletar os exames séricos",
+        "Solicitar cintilografia de tireoide antes de iniciar o tratamento",
+        "Reavaliar em quatro semanas, quando o TSH neonatal já terá caído"
+      ],
+      "correctIndex": 0,
+      "explanation": "Com TSH acima de 40 mU/L na triagem, a probabilidade de hipotireoidismo congênito é altíssima e o tratamento deve ser iniciado logo após a coleta dos exames séricos, sem esperar o resultado — e mesmo antes da coleta, se ela não puder ser feita prontamente. O tratamento deve começar preferencialmente nos primeiros 10 dias de vida, porque o prognóstico intelectual depende disso."
+    },
+    {
+      "question": "Qual é a principal causa de hipotireoidismo congênito e sua frequência relativa?",
+      "options": [
+        "Disgenesia tireoidiana, respondendo por cerca de 65% dos casos",
+        "Disormonogênese, respondendo por cerca de 65% dos casos",
+        "Tireoidite de Hashimoto, respondendo por cerca de 65% dos casos",
+        "Deficiência materna de iodo, respondendo por cerca de 65% dos casos",
+        "Defeito hipotálamo-hipofisário, respondendo por 65% dos casos"
+      ],
+      "correctIndex": 0,
+      "explanation": "A disgenesia tireoidiana responde por 65% dos casos e é um defeito do desenvolvimento da glândula, manifestando-se como ectopia, atireose ou hipoplasia, em geral esporádico. Os 35% restantes têm glândula tópica, às vezes aumentada, com produção insuficiente por defeito genético (disormonogênese) ou fator externo. A incidência global do hipotireoidismo congênito é de 1 para cada 2 mil a 4 mil recém-nascidos."
+    },
+    {
+      "question": "Recém-nascido com síndrome de Down e triagem neonatal normal. Qual a conduta?",
+      "options": [
+        "Colher segunda amostra de TSH ao final do período neonatal",
+        "Dispensar novo controle, uma vez que a triagem foi normal",
+        "Iniciar levotiroxina profilática ainda no período neonatal",
+        "Repetir a triagem apenas se surgirem sintomas da doença",
+        "Solicitar cintilografia ao final do período neonatal"
+      ],
+      "correctIndex": 0,
+      "explanation": "Na síndrome de Down a incidência de hipotireoidismo congênito é 14 a 21 vezes maior, e por isso se recomenda uma segunda amostra ao final do período neonatal. A mesma lógica vale para os demais grupos de risco de falso-negativo: prematuros, baixo peso ao nascer e recém-nascidos doentes (segundo teste com 2-4 semanas, possivelmente seriado), gemelares do mesmo sexo (2-4 semanas) e expostos a excesso de iodo (repetir até 1 mês após a exposição)."
+    },
+    {
+      "question": "Adolescente de 14 anos inicia levotiroxina por tireoidite de Hashimoto. Qual a dose?",
+      "options": [
+        "2-4 mcg/kg/dia, por via oral, uma vez ao dia",
+        "6-10 mcg/kg/dia, por via oral, uma vez ao dia",
+        "10-15 mcg/kg/dia, por via oral, uma vez ao dia",
+        "20-30 mcg/kg/dia, por via oral, uma vez ao dia",
+        "0,2-0,8 mg/kg/dia, por via oral, uma vez ao dia"
+      ],
+      "correctIndex": 0,
+      "explanation": "A dose de levotiroxina cai à medida que a criança cresce: 10-15 mcg/kg/dia de 0-3 meses, 6-10 de 3-12 meses, 4-6 de 1-3 anos, 3-5 de 3-10 anos, 2-4 de 10-16 anos e 1,7 mcg/kg/dia acima de 16 anos. Divergência: o slide traz 10-15 mcg/kg/dia como dose única para o hipotireoidismo em geral, número que no Tratado só se aplica ao lactente de até 3 meses."
+    },
+    {
+      "question": "O que precede obrigatoriamente o início da levotiroxina no hipotireoidismo central?",
+      "options": [
+        "Avaliar a função adrenal e repor glicocorticoide se houver deficiência",
+        "Avaliar a função renal e repor bicarbonato se houver acidose tubular",
+        "Avaliar a função hepática e repor vitamina K se houver coagulopatia",
+        "Avaliar a função gonadal e repor testosterona se houver hipogonadismo",
+        "Avaliar a função cardíaca e repor digoxina se houver disfunção"
+      ],
+      "correctIndex": 0,
+      "explanation": "O hipotireoidismo central costuma vir acompanhado de outras deficiências hipofisárias, entre elas a insuficiência adrenal central. Iniciar levotiroxina antes de repor o glicocorticoide acelera o metabolismo do cortisol residual e pode desencadear crise adrenal aguda. Se a avaliação adrenal não for possível, usa-se glicocorticoide preventivamente. No seguimento do hipotireoidismo central o alvo é o T4 livre na metade superior da referência, não o TSH."
+    },
+    {
+      "question": "O que é a hashitoxicose, na evolução da tireoidite de Hashimoto?",
+      "options": [
+        "Fase inicial de tireotoxicose pela liberação dos hormônios estocados",
+        "Fase final de tireotoxicose pela produção autônoma de novo hormônio",
+        "Fase inicial de hipotireoidismo pela destruição rápida dos folículos",
+        "Fase inicial de tireotoxicose pelo estímulo do TRAb sobre o receptor",
+        "Fase final de hipotireoidismo pela fibrose completa da glândula"
+      ],
+      "correctIndex": 0,
+      "explanation": "Na hashitoxicose, a destruição inflamatória da glândula libera de uma só vez os hormônios já estocados no colóide, produzindo uma fase transitória de tireotoxicose antes da evolução para o hipotireoidismo. Não há hiperfunção: a glândula não está produzindo mais hormônio, está vazando o que tinha. Isso a separa da doença de Graves, em que o TRAb estimula continuamente o receptor de TSH."
+    },
+    {
+      "question": "Qual é o padrão laboratorial da síndrome do eutireoidiano doente?",
+      "options": [
+        "T3 reduzido com T3 reverso aumentado, sem indicação de levotiroxina",
+        "T3 aumentado com T3 reverso reduzido, com indicação de levotiroxina",
+        "T3 reduzido com T3 reverso reduzido, com indicação de levotiroxina",
+        "TSH aumentado com T4 livre normal, com indicação de levotiroxina",
+        "T4 livre aumentado com TSH suprimido, com indicação de metimazol"
+      ],
+      "correctIndex": 0,
+      "explanation": "Na síndrome do eutireoidiano doente, que acompanha doenças agudas e crônicas graves, há queda do T3 com aumento do T3 reverso; nos casos mais graves caem também o T4 livre e o TSH. Isso parece ser um mecanismo de proteção contra o catabolismo intenso, e não há evidência de benefício com levotiroxina — reconhecer o padrão evita tratar um doente grave por causa de um exame alterado."
+    },
+    {
+      "question": "Filho de mãe com Graves: qual achado indica alto risco de hipertireoidismo neonatal?",
+      "options": [
+        "TRAb no sangue do cordão umbilical maior ou igual a 5 IU/L",
+        "TRAb no sangue do cordão umbilical menor que 0,5 IU/L",
+        "TSH no sangue do cordão umbilical maior que 20 mU/L",
+        "Anti-TPO no sangue do cordão umbilical acima de 5 IU/L",
+        "T4 livre no cordão umbilical abaixo da referência"
+      ],
+      "correctIndex": 0,
+      "explanation": "O hipertireoidismo neonatal autoimune vem da passagem transplacentária do TRAb e ocorre em 1-10% dos filhos de mães com doença de Graves. Recomenda-se dosar TRAb no cordão umbilical, com alto risco se maior ou igual a 5 IU/L, e monitorar TSH e T4 livre com 3-5 dias e de novo com 10-14 dias. TSH menor que 0,9 mU/L entre 3 e 7 dias de vida indica hipertireoidismo neonatal, e o seguimento vai até 2-3 meses."
+    },
+    {
+      "question": "Qual é o tratamento do hipertireoidismo neonatal autoimune?",
+      "options": [
+        "Metimazol 0,5-1 mg/kg/dia e propranolol 2 mg/kg/dia por 2 semanas",
+        "Metimazol 5-10 mg/kg/dia e propranolol 20 mg/kg/dia por 2 semanas",
+        "Metimazol 0,5-1 mg/kg/dia e prednisona 2 mg/kg/dia por 2 semanas",
+        "Levotiroxina 0,5-1 mg/kg/dia e propranolol 2 mg/kg/dia por 2 semanas",
+        "Propiltiouracil 0,5-1 mg/kg/dia e atenolol 2 mg/kg/dia por 2 semanas"
+      ],
+      "correctIndex": 0,
+      "explanation": "Trata-se com metimazol 0,5-1 mg/kg/dia divididos em 2-3 tomadas, reduzindo a dose quando o T4 livre normalizar, e propranolol 2 mg/kg/dia em 2 tomadas por 2 semanas. O controle laboratorial é semanal até estabilizar e depois quinzenal, e o tratamento pode ser suspenso quando o TRAb não for mais detectável, em geral em 1-3 meses. O aleitamento materno pode ser mantido mesmo com a mãe em uso de antitireoidiano."
+    },
+    {
+      "question": "Qual é a restrição etária do tratamento definitivo com radioiodo na doença de Graves?",
+      "options": [
+        "Deve ser evitado em crianças menores de 5 anos de idade",
+        "Deve ser evitado em crianças menores de 12 anos de idade",
+        "Deve ser evitado em crianças menores de 2 anos de idade",
+        "Deve ser evitado apenas em adolescentes do sexo feminino",
+        "Deve ser evitado somente se houver bócio muito volumoso"
+      ],
+      "correctIndex": 0,
+      "explanation": "A radioiodoterapia deve ser evitada abaixo dos 5 anos; nessa faixa, quando o tratamento definitivo é necessário, prefere-se a tireoidectomia, também indicada para bócios muito volumosos, nodulares ou compressivos, sempre com cirurgião experiente. O tratamento definitivo entra em cena diante de efeitos adversos graves das drogas antitireoidianas, persistência ou recorrência do hipertireoidismo, ou má adesão — e quase sempre resulta em hipotireoidismo."
+    },
+    {
+      "question": "Qual é o risco de malignidade de um nódulo tireoidiano em crianças e adolescentes?",
+      "options": [
+        "20 a 25%, cerca de 2 a 3 vezes maior que no adulto",
+        "20 a 25%, cerca de 2 a 3 vezes menor que no adulto",
+        "1 a 2%, cerca de 2 a 3 vezes menor que no adulto",
+        "5 a 10%, praticamente o mesmo risco que no adulto",
+        "50 a 60%, cerca de 5 a 6 vezes maior que no adulto"
+      ],
+      "correctIndex": 0,
+      "explanation": "O risco de malignidade de um nódulo tireoidiano na criança é de 20-25%, 2 a 3 vezes maior que no adulto, ainda que o prognóstico costume ser bom. A prevalência de nódulos sólidos é de 1-2%, e nódulos puramente císticos têm risco de malignidade menor que 1% — a predominância cística acima de 50% é a característica ultrassonográfica mais confiável de baixo risco. Radiação prévia e predisposição genética são os principais fatores de risco."
+    },
+    {
+      "question": "Sobre o carcinoma medular de tireoide na criança, qual afirmação está correta?",
+      "options": [
+        "É hereditário em mais de 95% dos casos, por mutação do gene RET",
+        "É esporádico em mais de 95% dos casos, por mutação do gene RET",
+        "É hereditário em menos de 10% dos casos, por mutação do gene RET",
+        "É hereditário em mais de 95% dos casos, por mutação do gene BRAF",
+        "É esporádico em mais de 95% dos casos, sem qualquer base genética"
+      ],
+      "correctIndex": 0,
+      "explanation": "O carcinoma medular pediátrico é hereditário em mais de 95% dos casos, por mutação do gene RET, associado à NEM 2A (com feocromocitoma e hiperparatireoidismo), à NEM 2B (com feocromocitoma, neuromas mucosos, ganglioneuromas intestinais e hábito marfanoide) ou ao carcinoma medular familiar. É agressivo e a maior causa de morte nesses pacientes, por isso os filhos de portadores devem pesquisar a mutação e, se positiva, fazer tireoidectomia total profilática precoce — já no primeiro ano de vida na NEM 2B."
+    },
+    {
+      "question": "Recém-nascido com icterícia prolongada e falência de crescimento, associadas a micropênis, criptorquidia e hipoglicemia. Qual é o diagnóstico mais provável?",
+      "options": [
+        "Hipotireoidismo congênito central por pan-hipopituitarismo",
+        "Hipotireoidismo congênito primário por disgenesia tireoidiana",
+        "Hipotireoidismo congênito transitório por excesso de iodo",
+        "Hipotireoidismo adquirido por tireoidite de Hashimoto",
+        "Hipertireoidismo neonatal por passagem de TRAb materno"
+      ],
+      "correctIndex": 0,
+      "explanation": "Micropênis, criptorquidia e hipoglicemia são pistas de deficiência de hormônios hipofisários, colocando o hipotireoidismo congênito central dentro de um pan-hipopituitarismo. Na forma central a glândula é estruturalmente normal e o defeito está na hipófise (TSH) ou no hipotálamo (TRH) — por isso a triagem neonatal por TSH em papel-filtro não a detecta. Icterícia prolongada e falência de crescimento inexplicada completam o quadro, e a investigação deve buscar as demais deficiências hipofisárias."
+    },
+    {
+      "question": "TSH suprimido com níveis normais de T4 livre e de T3. Qual é o diagnóstico?",
+      "options": [
+        "Hipertireoidismo subclínico da tireoide",
+        "Hipertireoidismo primário da glândula",
+        "Hipotireoidismo central da tireoide",
+        "Síndrome do eutireoidiano doente",
+        "Doença de Graves em tireotoxicose"
+      ],
+      "correctIndex": 0,
+      "explanation": "O hipertireoidismo subclínico é definido por TSH suprimido com T4 livre e T3 normais — o espelho do hipotireoidismo subclínico no polo oposto. No hipertireoidismo primário franco (doença de Graves), T4 livre e T3 estão elevados; no leve, o T4 livre pode estar normal e apenas o T3 elevado, razão pela qual o T3 deve ser dosado junto. Na síndrome do eutireoidiano doente há queda do T3 com aumento do T3 reverso, e não tireotoxicose."
+    },
+    {
+      "question": "A punção aspirativa de um nódulo tireoidiano é classificada como Bethesda VI (maligno). Qual é a conduta?",
+      "options": [
+        "Tireoidectomia total imediata",
+        "US anual de acompanhamento",
+        "Nova punção em 3 a 6 meses",
+        "Lobectomia diagnóstica do nódulo",
+        "Observação clínica apenas"
+      ],
+      "correctIndex": 0,
+      "explanation": "Na categoria Bethesda VI (maligno) a conduta é a tireoidectomia total. O espectro do sistema: I (amostra insatisfatória) → repetir a punção em 3-6 meses; II (benigno) → US anual; III e IV (indeterminado) → repetir a PAAF, análise molecular ou lobectomia diagnóstica; V e VI → tireoidectomia total. A PAAF é indicada para qualquer nódulo com características suspeitas à US e para nódulo sólido ou parcialmente cístico a partir de 1 cm."
+    },
+    {
+      "question": "Na ultrassonografia de tireoide, qual característica do nódulo é mais sugestiva de malignidade?",
+      "options": [
+        "Hipoecogenicidade, margens irregulares, calcificações",
+        "Predomínio cístico acima de 50% do nódulo",
+        "Ecogenicidade aumentada e forma arredondada",
+        "Presença de hilo central preservado no linfonodo",
+        "Nódulo pequeno, homogêneo e sem fluxo ao Doppler"
+      ],
+      "correctIndex": 0,
+      "explanation": "Falam a favor de malignidade: nódulo sólido ou predominantemente sólido (> 75%), hipoecogênico, mais alto que largo, com fluxo aumentado ao Doppler, calcificações, margens irregulares e extensão extratireoidiana; linfonodo arredondado, sem hilo, com focos ecogênicos e fluxo periférico. A característica isolada mais confiável de baixo risco é o predomínio cístico acima de 50%. Hilo preservado e padrão homogêneo sem fluxo ao Doppler são marcadores de benignidade."
+    },
+    {
+      "question": "Sobre o carcinoma papilífero de tireoide na infância, qual afirmação está correta?",
+      "options": [
+        "Representa mais de 90% dos casos e pode metastatizar aos pulmões",
+        "É o menos frequente e dissemina por via hematogênica aos ossos",
+        "É hereditário por mutação do gene RET em quase todos os casos",
+        "Só ocorre após radioterapia prévia da região cervical",
+        "Tem prognóstico pior que o carcinoma medular na infância"
+      ],
+      "correctIndex": 0,
+      "explanation": "O carcinoma papilífero responde por mais de 90% dos carcinomas tireoidianos na criança, deriva das células foliculares e tem a exposição à radiação como principal fator de risco. Ao diagnóstico, a maioria das crianças já tem metástases para linfonodos cervicais, e metástases pulmonares ocorrem em até 25% dos casos — ainda assim o prognóstico costuma ser ótimo. O carcinoma folicular, bem menos frequente, dissemina por via hematogênica para pulmões e ossos, enquanto o medular é o que se associa ao gene RET."
     }
   ]
 }

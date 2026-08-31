@@ -1,6 +1,12 @@
 ## O que é a adolescência
 
-A adolescência é a **transição entre a infância e a vida adulta**. Para a Organização Mundial da Saúde, ela ocupa a segunda década da vida: **dos 10 aos 19 anos**. Não confunda com os recortes vizinhos, que caem em prova — *juventude* corresponde a 15 a 24 anos, e o conjunto "adolescentes e jovens" costuma ser tratado como 10 a 24 anos nas políticas públicas.
+A adolescência é a **transição entre a infância e a vida adulta**. Para a Organização Mundial da Saúde, ela ocupa a segunda década da vida: **dos 10 aos 19 anos**. Não confunda com os recortes vizinhos, que caem em prova — *juventude* corresponde a 15 a 24 anos, e o conjunto "adolescentes e jovens" costuma ser tratado como 10 a 24 anos nas políticas públicas. No Brasil, o Ministério da Saúde, pela **Portaria nº 980/GM de 1989**, demarcou a adolescência entre os **10 anos completos e os 20 anos incompletos** e criou o **PROSAD**, o primeiro programa governamental de atenção à saúde do adolescente, voltado a quem tem entre 10 e 19 anos.
+
+O recorte jurídico é outro. O **Estatuto da Criança e do Adolescente (Lei 8.069/90)**, que regulamenta o artigo 227 da Constituição, define no art. 2º: **criança** é quem tem até **12 anos incompletos**; **adolescente** é quem tem entre **12 e 18 anos incompletos** — aplicando-se excepcionalmente o Estatuto, nos casos expressos em lei, a quem tem entre 18 e 21 anos. Segundo o IBGE, em 2022, os adolescentes de 10 a 19 anos eram cerca de 16% da população brasileira.
+
+> Três faixas, três referências: **OMS 10–19 anos**, **MS 10–20 incompletos** (Portaria 980/89, PROSAD) e **ECA 12–18 incompletos**. Memorize cada uma com o nome da fonte — é o tipo de pegadinha que separa provas.
+
+Também é clínico distinguir dois termos que costumam ser usados como sinônimos. A **puberdade** refere-se às **mudanças físicas e à maturação sexual**, com variações individuais, mas **universais** — um processo que dura de **2 a 5 anos**. A **adolescência** é a **passagem da vida infantil para a adulta**, fundada na psicologia, na sociologia e em questões sócio-histórico-culturais, variando conforme época, classe social e cultura. Foi no livro do psicólogo **Stanley Hall** que o termo "adolescência" apareceu pela primeira vez, e só no século XX a saúde da segunda década passou a ser vista como objeto de atenção.
 
 O que define clinicamente essa fase não é apenas o intervalo etário, mas a coexistência de **vulnerabilidades e oportunidades**. O mesmo cérebro plástico que expõe o adolescente a comportamentos de risco é o que responde melhor a intervenções preventivas. Por isso a consulta do adolescente não é uma consulta pediátrica encolhida nem uma consulta de adulto antecipada: é um formato próprio, com regras próprias de sigilo, de escuta e de tomada de decisão.
 
@@ -109,6 +115,8 @@ O HEADSSS é a ferramenta de entrevista psicossocial estruturada do adolescente.
 
 > **Não é checklist — é conversa guiada.** Aplicado como formulário, o HEADSSS perde exatamente aquilo que existe para captar: o que o adolescente só diz quando se sente seguro. O instrumento organiza os domínios; o vínculo é que produz a informação.
 
+No capítulo, o mnemônico aparece na forma **HEEADSSS**, criado por **Henry S. Berman em 1971**: o segundo E lembra **Education/Employment** (escola e trabalho) e o terceiro, **Eating disorders** (alimentação e imagem corporal). A ideia é a mesma — a cada letra, perguntas abertas que aproximam o profissional e reduzem o estresse da consulta.
+
 ---
 
 ## Direitos, ética e autonomia progressiva
@@ -121,11 +129,54 @@ A pergunta que abre este bloco é direta: *o adolescente pode decidir sozinho so
 - Vale o **Estatuto da Criança e do Adolescente (ECA)**;
 - O aconselhamento é **individual e familiar**, não um ou outro.
 
-Aplicando ao caso: quando Júlia pede que os pais não saibam do início da vida sexual, o sigilo **deve ser mantido**. A quebra só se justifica diante de risco iminente para ela ou para terceiros — e, quando necessária, deve ser comunicada ao próprio adolescente antes de ser feita. Note que a prioridade clínica da consulta não é a revelação aos pais, e sim o **uso inconsistente de preservativo**: aconselhamento contraceptivo, prevenção de IST e rastreio de coerção sexual.
+No plano ético-legal, três pontos fixam a conduta. **Primeiro**, adolescentes a partir dos **12 anos** podem ser atendidos sem a presença dos pais, com sigilo, confidencialidade e execução dos procedimentos necessários, desde que capazes de avaliar o próprio problema e de conduzir-se por meios próprios — a confidencialidade é direito reconhecido no **art. 74 do Código de Ética Médica**, e o sigilo também é protegido pelo Código Penal (art. 154). **Segundo**, a quebra do sigilo, quando necessária, deve ser feita **com o conhecimento do adolescente**, expondo os motivos e registrando-os em prontuário. **Terceiro**, diante de qualquer modalidade de **violência sexual** relatada, evidenciada ou constatada, a **notificação ao Conselho Tutelar e/ou autoridade competente é obrigatória** (arts. 13 e 245 do ECA).
+
+### O que justifica a quebra do sigilo
+
+| Situação | Conduta |
+| --- | --- |
+| Violência (emocional, maus-tratos, sexual, bullying) | Quebra do sigilo + notificação quando houver violência sexual |
+| Uso escalonado de álcool/drogas, sinais de dependência | Quebra do sigilo e envolvimento de tratamento |
+| Autoagressão, ideação suicida ou de fuga, tendência homicida | Quebra do sigilo + avaliação de saúde mental |
+| Gravidez (com ou sem intenção de interromper), abortamento | Quebra do sigilo e proteção da adolescente |
+| Sorologia HIV positiva | Informar familiares **e parceiros sexuais** |
+| Não adesão a tratamento com risco ao paciente/terceiros, doença grave, depressão | Quebra do sigilo e suporte |
+
+O que **não** justifica quebra é a vida sexual consentida sem risco identificado — esse é justamente o conteúdo que o sigilo protege. E há um recorte específico: a **contracepção** pode e deve ser indicada para adolescentes, respeitando os **critérios de elegibilidade da OMS**, inclusive para **menores de 14 anos** (Lei do Planejamento Familiar, 9.263/96), preservando o sigilo — a única exceção são os métodos **invasivos (DIU ou implante)**, que exigem consentimento dos responsáveis.
+
+> Febrasgo, Sogia-BR e SBP reforçam a preocupação com a iniciação sexual precoce: em meninas **menores de 14 anos**, a gravidez está mais frequentemente associada à **violência sexual**. Em relação sexual consentida em relacionamento afetivo nessa faixa, avalie sempre o contexto.
 
 ![Estratégias de abordagem: decisão gradual e compartilhada](img:pg33)
 
+Aplicando ao caso: quando Júlia pede que os pais não saibam do início da vida sexual, o sigilo **deve ser mantido**. A quebra só se justifica diante de risco iminente para ela ou para terceiros — e, quando necessária, deve ser comunicada ao próprio adolescente antes de ser feita. Note que a prioridade clínica da consulta não é a revelação aos pais, e sim o **uso inconsistente de preservativo**: aconselhamento contraceptivo, prevenção de IST e rastreio de coerção sexual.
+
 As estratégias práticas formam um conjunto: **abordagem objetiva, comunicação clara, postura empática e decisão compartilhada** — sempre com **tomada de decisão gradual**. O desafio é equilibrar proteção e respeito à autonomia **sem infantilizar nem abandonar**.
+
+---
+
+## A consulta do adolescente: roteiro semiológico
+
+A consulta do adolescente segue a estrutura clássica (anamnese, exame físico e exames complementares quando indicados), mas com formato próprio. A recomendação é organizá-la em **três tempos**, o que varia conforme o serviço:
+
+1. **Adolescente com a família** — colhem-se os dados que o responsável conhece melhor: antecedentes pessoais, fisiológicos e patológicos, familiares, queixas e história da moléstia atual, na ótica da família.
+2. **Adolescente sozinho com o médico** — completa-se a anamnese com questões pessoais e sigilosas, faz-se o exame físico (que pode ou não ser presenciado por auxiliar ou familiar), elaboram-se as hipóteses diagnósticas e o plano terapêutico, e **acorda-se com o adolescente o que será contado aos pais**.
+3. **Retorno dos pais ou responsáveis** — esclarecem-se diagnóstico e tratamento, **guardando sigilo** do que foi revelado em particular, desde que não represente risco para o jovem ou terceiros.
+
+No início, pergunte como o adolescente gostaria de ser chamado e se prefere começar a consulta sozinho ou acompanhado. O **motivo da consulta** deve ser perguntado ao jovem e ao familiar — muitas vezes são diferentes. Valorize sempre as queixas, mesmo as que parecem pouco graves no primeiro momento. O profissional deve ser **amistoso, cordial, empático e de confiança absoluta**, mas sem confundir papéis: a relação é profissional, não de amizade entre pares — não é correto usar a linguagem do adolescente como tentativa de aproximação.
+
+### A anamnese
+
+A anamnese levanta, além dos dados usuais: os **marcos do desenvolvimento familiar** (estatura dos pais e irmãos, desenvolvimento pubertário materno e paterno, idade da menarca da mãe e avós); o **dia a dia** — uso e tempo de telas, atividade física regular, lazer; os **relacionamentos** com pares e familiares; **uso de drogas** lícitas e ilícitas e o convívio com usuários; **trabalho** (desde quando, se registrado, horas por dia, interferência nos estudos — o ECA, nos arts. 60 a 69, **proíbe o trabalho a menores de 14 anos, salvo como aprendiz**); **hábitos alimentares e sono**; **escolaridade** (alfabetização, repetências, evasão); **vacinação**; **uso de medicamentos**; a **opinião do adolescente sobre si** (temperamento, imagem corporal, autoestima, projeto de vida); e as **condições socioeconômicas** da família.
+
+### O exame físico
+
+O exame físico segue os protocolos do exame do adulto, completo e detalhado: **dados antropométricos, cintura abdominal, IMC e pressão arterial**, lançados nas **curvas da OMS**, além da avaliação dos **marcos puberais de Tanner**. Deve ocorrer em ambiente com privacidade — biombos, lençóis e tom de voz mais baixo —, e o adolescente decide se quer ser examinado na presença do acompanhante ou de outros profissionais. Não é preciso despir-se por completo: o exame é **craniocaudal** e pode ser feito por partes, mantendo vestimentas. Não precisa ocorrer na primeira consulta, salvo situações de risco.
+
+Pontos de atenção dirigida: **pele** (acne, tatuagens, piercings e lesões compatíveis com autoagressão ou violência), **tireoide** (tamanho, consistência, nódulos), **coluna** — vários desvios se iniciam nessa fase, e o **teste de Adams**, com flexão da coluna, reconhece clinicamente a escoliose — e a genitália. No **menino**: a **ginecomastia puberal** é frequente, benigna e transitória (início 10–12 anos, pico 13–14, geralmente Tanner 3 de pelos pubianos e volume testicular de 8–10 mL, regressão em 6–24 meses); avaliar fimose, criptorquidia, hipospadia, varicocele, hidrocele, torção e hérnia inguinal. Na **menina**: mamas, genitais externos e leucorreia, com exame ginecológico e Papanicolau apenas se houver indicação e capacitação. Ao final, esclarecer sobre **preservativo** (masculino e feminino) e métodos contraceptivos, enfatizando a **dupla proteção** — preservativo associado a outro método — para prevenção de gravidez e IST/Aids.
+
+> Os intervalos de acompanhamento do crescimento e do desenvolvimento puberal seguem a fase: **na puberdade a cada 3 meses, na aceleração a cada 4 meses e, após a menarca e a espermarca/semenarca, uma vez ao ano**. A **Caderneta de Saúde do Adolescente** é um excelente instrumento para esse acompanhamento integral.
+
+As queixas mais comuns no ambulatório são baixa estatura, puberdade precoce ou antecipada, ginecomastia, excesso de peso e síndrome metabólica, transtornos alimentares (anorexia, bulimia, vigorexia), cefaleia, dores recorrentes, distúrbios menstruais, acne e desvios de coluna — além das dificuldades escolares e dos conflitos familiares, que podem sinalizar violência ou transtornos mentais. Para maior resolutividade, o atendimento deve ser **multi e interdisciplinar** (pediatra, assistente social, enfermagem, nutrição, psicologia e psiquiatria da infância e adolescência).
 
 ---
 
@@ -158,12 +209,10 @@ Os pontos que a ferramenta ajuda a revelar em doença crônica são recorrentes:
 - **Rastreio estruturado** de humor, sono, apetite, interesse e culpa, com plano de segurança se houver risco e encaminhamento a psicologia ou psiquiatria.
 - **Plano simples de adesão** com identificação de barreiras reais (efeitos colaterais? custo? rotina? falta de sentido?) e pactuação do **"mínimo viável"**.
 
----
-
-## Mensagem final
+### Mensagem final
 
 A adolescência é uma fase de transição **complexa, multifatorial e não linear**, marcada ao mesmo tempo por **grande plasticidade e grande vulnerabilidade**. O atendimento deve ser **integral, sigiloso, empático e progressivamente centrado no adolescente**.
 
-Três perguntas norteadoras fecham a discussão: o que diferencia o adolescente da criança; por que o risco é mais frequente nessa fase; e qual o papel da família. As respostas convergem para o mesmo ponto — o descompasso entre um sistema de recompensa maduro e um controle inibitório em construção, num contexto social que exige decisões cada vez mais autônomas.
+Três perguntas norteadoras fecham a discussão: o que diferencia o adolescente da criança; por que o risco é mais frequente nessa fase; e qual o papel da família. As respostas convergem para o mesmo ponto — o descompasso entre um sistema de recompensa maduro e um controle inibitório em construção, num contexto social que exige decisões cada vez mais autônomas. Adolescentes são sujeitos de direitos em desenvolvimento, que precisam ser estimulados a expressar opiniões e a se responsabilizar por seus atos — e a **caderneta de saúde do adolescente** é o instrumento que acompanha esse processo.
 
 *Referências: Manual de Orientação — Saúde do Adolescente e documentos do Departamento Científico de Adolescência da Sociedade Brasileira de Pediatria (SBP); Diretrizes Nacionais para a Atenção Integral à Saúde de Adolescentes e Jovens, Cadernos de Atenção Básica — Saúde do Adolescente e Proteger e Cuidar da Saúde de Adolescentes na Atenção Primária, do Ministério da Saúde.*

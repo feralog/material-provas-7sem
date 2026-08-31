@@ -7,6 +7,11 @@
 *.ppt
 *.docx
 
+# Trechos de livro copiados como referência (Tratado de Pediatria, Tratado de
+# Ginecologia, etc.). Obra protegida — usar localmente, nunca publicar.
+Capítulos*/
+*/Capítulos*/
+
 # Design de origem do template (export do Claude Design, não é usado pelo pipeline)
 _template/support.js
 _template/*.zip
@@ -19,7 +24,21 @@ _template/uploads/
 .token
 *token*.txt
 
+# Lixo acidental nas pastas de material (não faz parte do pipeline)
+*.exe
+*.log
+
+# Referências locais (livros, transcrições de aula) — nunca publicar
+Neurologia/Ignorar/
+Psiquiatria/Aula 1 - Exame psiquico - transcricao.md
+Psiquiatria/Aula 3 - TOC e TEPT.md
+
+# conteudo_* que embute páginas de capítulo de livro (Tratado de Ginecologia)
+GO/conteudo_doencas_mamarias.md
+
 # Lixo do sistema
 Thumbs.db
 desktop.ini
 .DS_Store
+__pycache__/
+*.pyc

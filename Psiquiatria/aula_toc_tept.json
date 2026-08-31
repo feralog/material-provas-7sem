@@ -1,0 +1,338 @@
+{
+  "titulo": "TOC e TEPT",
+  "eyebrow": "Psiquiatria · Psicopatologia",
+  "subtitulo": "Da intrusão egodistônica à persistência da reação de estresse",
+  "intro": "Trinta questões sobre o transtorno obsessivo-compulsivo e o transtorno do estresse pós-traumático: obsessões e compulsões, neurobiologia do circuito do medo, critérios do DSM-5, tratamento por gravidade e a conduta de emergência no pronto-socorro.",
+  "questoes": [
+    {
+      "question": "Segundo a aula, qual é a diferença conceitual entre transtorno e doença?",
+      "options": [
+        "Doença: causa e efeito conhecidos e bem determinados; transtorno: resultante de múltiplos fatores biopsicossociais combinados",
+        "Doença: causa e efeito conhecidos e bem determinados; transtorno: resultante de um único fator genético dominante",
+        "Doença: resultante de múltiplos fatores combinados; transtorno: causa e efeito conhecidos e bem determinados",
+        "Doença: definida pela ausência de sinais objetivos; transtorno: definido por sinais e sintomas claros"
+      ],
+      "correctIndex": 0,
+      "explanation": "Doença implica relações de causa e efeito conhecidas e bem determinadas, como na doença de Alzheimer. Os transtornos mentais, em contraste, são a resultante de múltiplos fatores psicológicos, biológicos e sociais combinados e associados — por isso se fala em transtorno obsessivo-compulsivo, e não em doença obsessiva-compulsiva."
+    },
+    {
+      "question": "Quais características definem o pensamento obsessivo descrito na aula?",
+      "options": [
+        "É intrusivo, repetitivo, indesejado, egodistônico e associado a grande ansiedade",
+        "É elaborado ativamente, voluntário, prazeroso, egossintônico e associado a relaxamento",
+        "É intrusivo, repetitivo, indesejado, egossintônico e associado a apatia e anedonia",
+        "É elaborado ativamente, voluntário, repulsivo, egodistônico e associado a irritabilidade"
+      ],
+      "correctIndex": 0,
+      "explanation": "A obsessão é uma ideia ou imagem que se impõe à consciência de modo persistente e incontrolável, com origem espontânea e caráter intrusivo — não é um pensamento que o indivíduo elabora ativamente. Ela é repetitiva, indesejada, egodistônica (absurda ou repulsiva para o próprio indivíduo) e associada a grande ansiedade, como no episódio da dúvida sobre ter desligado o fogão."
+    },
+    {
+      "question": "O que significa o caráter egodistônico de uma obsessão?",
+      "options": [
+        "A ideia agride o sistema de valores do indivíduo e é percebida por ele como absurda ou repulsiva",
+        "A ideia é plenamente aceita pelo indivíduo e integrada ao seu sistema de valores",
+        "A ideia é percebida como absurda, mas é considerada agradável e desejada pelo indivíduo",
+        "A ideia é aceita pelo ego e incorporada como parte da própria identidade do indivíduo"
+      ],
+      "correctIndex": 0,
+      "explanation": "Egodistonia significa uma dissonância em relação ao ego: a ideia agride o sistema de valores do próprio paciente, que a percebe como absurda ou repulsiva. No exemplo da aula, a imagem recorrente de Jesus Cristo nu invadia um paciente de família católica, gerando enorme culpa e um ritual compensatório de rezar para neutralizar o pensamento."
+    },
+    {
+      "question": "Segundo a definição de atos e rituais compulsivos, qual característica está correta?",
+      "options": [
+        "Há desconforto subjetivo, luta interna contra a vontade e alívio apenas temporário",
+        "Há prazer duradouro ao realizar o ato e ausência de tentativa de resistir ou adiar",
+        "Há desconforto subjetivo, mas o ato é realizado sem qualquer luta interna",
+        "Há alívio definitivo ao realizar o ato, sem retorno do desconforto posterior"
+      ],
+      "correctIndex": 0,
+      "explanation": "O ato compulsivo é vivenciado com desconforto subjetivo, é egodistônico e acompanhado de tentativa de resistir ou adiar. Existe luta entre a compulsão e a vontade — o que não ocorre no ato impulsivo — e o alívio ao realizar o ato é temporário, logo substituído pelo retorno do desconforto e pela urgência de repeti-lo."
+    },
+    {
+      "question": "Como o ato compulsivo se diferencia do ato impulsivo na progressão descrita em aula?",
+      "options": [
+        "O compulsivo tenta resistir e adiar o ato, com deliberação enfraquecida; o impulsivo age direto após a intenção",
+        "O compulsivo age direto após a intenção; o impulsivo delibera longamente antes de agir",
+        "O compulsivo segue as quatro etapas íntegras; o impulsivo tenta resistir e adiar o ato",
+        "O compulsivo age sem intenção prévia; o impulsivo resiste ao ato com deliberação preservada"
+      ],
+      "correctIndex": 0,
+      "explanation": "O ato volitivo segue intenção, deliberação, decisão e execução; o impulsivo passa direto da intenção para a execução, sem deliberar. O compulsivo tem progressão semelhante à do volitivo, mas com enfraquecimento da deliberação: sente que não consegue resistir, adia e luta, até ceder para obter alívio temporário."
+    },
+    {
+      "question": "Qual exemplo ilustra uma relação forte (semântica) entre obsessão e compulsão?",
+      "options": [
+        "Obsessão de contaminação ao tocar maçanetas e compulsão de lavar as mãos repetidamente",
+        "Obsessão de contaminação e compulsão de contar todas as faixas de pedestres do trajeto",
+        "Obsessão de ter atropelado alguém e compulsão de refazer o trajeto de carro para verificar",
+        "Obsessão por imagens religiosas repulsivas e compulsão mental de pensar na palavra desculpa"
+      ],
+      "correctIndex": 0,
+      "explanation": "Na relação forte, o ato compulsivo surge como tentativa direta de neutralizar a obsessão: a contaminação das mãos leva a lavá-las repetidamente, às vezes com lesões graves na pele. Refazer o trajeto para verificar se atropelou alguém e a compulsão mental de pensar em 'desculpa' são exemplos de relação fraca ou indireta, que inclui compulsões cognitivas."
+    },
+    {
+      "question": "O que ocorre no circuito córtico-estriado-tálamo-cortical (CETC) no modelo neurobiológico do TOC?",
+      "options": [
+        "Hiperatividade das regiões subcorticais com enfraquecimento da inibição cortical",
+        "Hipoatividade das regiões subcorticais com exacerbação da inibição cortical",
+        "Ativação normal das regiões subcorticais com ausência de filtragem cortical",
+        "Hiperatividade das regiões corticais com enfraquecimento da ativação subcortical"
+      ],
+      "correctIndex": 0,
+      "explanation": "O circuito CETC funciona em alça: as regiões subcorticais (tálamo e estriado) têm ativação espontânea e inconsciente, enquanto as corticais são conscientes e fazem a inibição e filtragem dessas ativações. No TOC há hiperatividade subcortical com enfraquecimento dos sistemas de inibição cortical, gerando os pensamentos intrusivos e obsessivos circulares."
+    },
+    {
+      "question": "Quais vias neurais estão principalmente disfuncionais na etiologia genética do TOC?",
+      "options": [
+        "Vias serotoninérgicas, glutamatérgicas e dopaminérgicas, em um transtorno poligênico",
+        "Vias colinérgicas, gabaérgicas e serotoninérgicas, em um transtorno monogênico",
+        "Vias noradrenérgicas, glutamatérgicas e colinérgicas, em um transtorno poligênico",
+        "Vias dopaminérgicas, serotoninérgicas e gabaérgicas, em um transtorno monogênico"
+      ],
+      "correctIndex": 0,
+      "explanation": "O TOC tem herdabilidade bastante alta e é poligênico — não há um gene único responsável. As disfunções envolvem principalmente as vias serotoninérgicas, glutamatérgicas e dopaminérgicas, o que é importante para orientar o tratamento farmacológico."
+    },
+    {
+      "question": "Qual é a sequência do reforço em cadeia descrita pela psicologia no TOC?",
+      "options": [
+        "Obsessão, ansiedade, evitação ou compulsão, alívio transitório e repetição do ciclo",
+        "Ansiedade, obsessão, compulsão, alívio definitivo e término do ciclo",
+        "Compulsão, ansiedade, obsessão, alívio transitório e repetição do ciclo",
+        "Obsessão, compulsão, ansiedade, alívio definitivo e término do ciclo"
+      ],
+      "correctIndex": 0,
+      "explanation": "A psicologia descreve o reforço em cadeia: a obsessão gera emoção desconfortável ou ansiedade, que leva à evitação ou à compulsão; o alívio é transitório, e o ciclo se repete. É esse mecanismo que mantém o transtorno e que a TCC com exposição e prevenção de respostas procura quebrar."
+    },
+    {
+      "question": "Qual é a vivência do paciente na fusão pensamento-ação?",
+      "options": [
+        "Pensar em algo equivale a fazer, ou aumenta a chance real de o evento acontecer",
+        "Agir equivale a pensar, e isso reduz a chance real de o evento acontecer",
+        "Pensar em algo elimina qualquer possibilidade de o evento acontecer",
+        "Falar sobre o pensamento diminui a chance real de o evento acontecer"
+      ],
+      "correctIndex": 0,
+      "explanation": "Na fusão pensamento-ação, pensar é vivenciado como fazer ou como aumento da probabilidade real do evento. O exemplo da aula é o pai que, invadido pela obsessão de machucar o bebê recém-nascido, passa a se ver como risco real de violência e evita ficar sozinho com o filho."
+    },
+    {
+      "question": "Sobre a epidemiologia do TOC, qual afirmação está correta?",
+      "options": [
+        "Prevalência de cerca de 3% e início antes dos 14 anos em mais da metade dos casos",
+        "Prevalência de cerca de 7% e início antes dos 14 anos em mais da metade dos casos",
+        "Prevalência de cerca de 3% e início predominante após os 30 anos de idade",
+        "Prevalência de cerca de 1% e início antes dos 14 anos em menos de um quinto dos casos"
+      ],
+      "correctIndex": 0,
+      "explanation": "O TOC acomete cerca de 3% da população geral, com distribuição simétrica entre homens e mulheres (1:1) e início comum na adolescência: mais de 50% dos casos começam antes dos 14 anos. É altamente incapacitante, como na paciente que perdia empregos por se atrasar contando as faixas de pedestres do trajeto."
+    },
+    {
+      "question": "Sobre os critérios diagnósticos do DSM-5 para o TOC, qual afirmação está correta?",
+      "options": [
+        "Basta obsessões ou compulsões que consumam ao menos 1 hora por dia, sem tempo mínimo de evolução",
+        "Exige obsessões e compulsões juntas, consumindo 6 horas por dia, com 6 meses de evolução",
+        "Exige apenas compulsões, consumindo 30 minutos por dia, com 3 meses de evolução",
+        "Exige apenas obsessões, consumindo 2 horas por dia, com 12 meses de evolução"
+      ],
+      "correctIndex": 0,
+      "explanation": "Para o DSM-5, basta a presença de obsessões e/ou compulsões — apenas uma delas já basta, embora geralmente ocorram juntas. Não há critério de tempo mínimo de evolução, mas os rituais devem consumir pelo menos 1 hora por dia ou causar sofrimento e prejuízo clinicamente significativos, sem origem em substâncias ou outro transtorno."
+    },
+    {
+      "question": "Um paciente arranca repetidamente os próprios cabelos. Qual é o diagnóstico mais apropriado segundo a hierarquia diagnóstica da aula?",
+      "options": [
+        "Tricotilomania, e não TOC, por ser comportamento compulsivo de transtorno delimitado",
+        "TOC, por se tratar de um comportamento compulsivo clássico do transtorno",
+        "Transtorno de escoriação, por envolver arrancar fios de cabelo repetidamente",
+        "Transtorno da compulsão alimentar, por envolver comportamento compulsivo repetitivo"
+      ],
+      "correctIndex": 0,
+      "explanation": "Quando o comportamento compulsivo específico se encaixa em outro transtorno delimitado, o diagnóstico é esse outro transtorno: arrancar cabelos é tricotilomania, beliscar a pele é transtorno de escoriação (skin picking) e comer compulsivamente é o transtorno da compulsão alimentar. O TOC só é diagnosticado se a compulsão não pertencer a essas síndromes."
+    },
+    {
+      "question": "Como a escala Y-BOCS classifica a gravidade do TOC?",
+      "options": [
+        "Pontuação de 0 a 23 indica quadros leves a moderados e, a partir de 24, quadros graves",
+        "Pontuação de 0 a 16 indica quadros leves a moderados e, a partir de 17, quadros graves",
+        "Pontuação de 0 a 30 indica quadros leves a moderados e, a partir de 31, quadros graves",
+        "Pontuação de 0 a 24 indica quadros leves a moderados e, a partir de 25, quadros graves"
+      ],
+      "correctIndex": 0,
+      "explanation": "A Yale-Brown Obsessive Compulsive Scale tem 10 perguntas pontuadas de 0 a 4, com total de 0 a 40. Pontuações de 0 a 23 indicam intensidade leve a moderada; a partir de 24, o quadro é grave e exige farmacoterapia associada à psicoterapia."
+    },
+    {
+      "question": "Quais são as peculiaridades do tratamento farmacológico do TOC com ISRS?",
+      "options": [
+        "Doses altas, resposta avaliada em até 12 semanas e potencialização com antipsicótico na resposta parcial",
+        "Doses baixas, resposta avaliada em 4 a 6 semanas e potencialização com benzodiazepínico",
+        "Doses altas, resposta avaliada em 4 a 6 semanas e potencialização com betabloqueador",
+        "Doses padrão, resposta avaliada em até 12 semanas e potencialização com estabilizador"
+      ],
+      "correctIndex": 0,
+      "explanation": "O TOC responde bem a ISRS, mas com três peculiaridades: doses máximas toleradas (sertralina 200 mg, fluvoxamina 300 mg, paroxetina 60 mg); tempo de resposta longo, de até 12 semanas, contra 4 a 6 semanas na depressão e ansiedade; e, na resposta parcial, potencialização com antipsicótico em dose baixa — se necessário, troca-se por venlafaxina ou clomipramina."
+    },
+    {
+      "question": "O que caracteriza o transtorno do estresse pós-traumático em relação à reação de estresse?",
+      "options": [
+        "A persistência da reação de estresse muito além do esperado, mesmo sem o estímulo traumático",
+        "A ausência de qualquer reação de estresse diante de eventos traumáticos graves",
+        "A intensidade da reação aguda apenas durante a ocorrência do evento traumático",
+        "A persistência da reação de estresse somente na presença contínua do estímulo traumático"
+      ],
+      "correctIndex": 0,
+      "explanation": "É natural que uma pessoa submetida a um trauma grave apresente resposta de estresse — ela é adaptativa. No TEPT, o problema é a persistência dessa reação por muito mais tempo que o esperado, mesmo na completa ausência do estímulo ou evento traumático."
+    },
+    {
+      "question": "No circuito do medo descrito em aula, qual estrutura funciona como centro processador do medo?",
+      "options": [
+        "A amígdala, que recebe as informações sensoriais enviadas pelo hipotálamo",
+        "O hipocampo, que recebe as informações sensoriais enviadas pelo hipotálamo",
+        "O córtex órbito-frontal, que recebe as informações sensoriais enviadas pelo hipotálamo",
+        "O córtex cingulado anterior, que recebe as informações sensoriais enviadas pelo hipotálamo"
+      ],
+      "correctIndex": 0,
+      "explanation": "O hipotálamo recebe as aferências sensoriais do corpo e as envia à amígdala, o centro processador do medo. A amígdala se conecta ao locus coeruleus (noradrenérgico) para a resposta simpática, ativa o eixo HPA para a liberação de cortisol e interage com o hipocampo na consolidação e contextualização das memórias."
+    },
+    {
+      "question": "Qual é o papel do córtex órbito-frontal e do córtex cingulado anterior na resposta ao medo?",
+      "options": [
+        "Analisar cognitivamente as informações do ambiente para avaliar se há perigo real",
+        "Disparar o sistema nervoso simpático com aumento da frequência cardíaca",
+        "Liberar cortisol e glicose na corrente sanguínea para a reação de luta ou fuga",
+        "Consolidar e contextualizar memórias baseadas em experiências prévias"
+      ],
+      "correctIndex": 0,
+      "explanation": "COF e CCA fazem a análise cognitiva das informações do ambiente, avaliando se há perigo real — por exemplo, que uma sala de aula é segura e uma rua escura à noite é de risco. Disparar o simpático cabe à amígdala via locus coeruleus, liberar cortisol é função do eixo HPA e contextualizar memórias é papel do hipocampo."
+    },
+    {
+      "question": "O que ocorre com o circuito do medo na fisiopatologia do TEPT?",
+      "options": [
+        "Hiperatividade noradrenérgica persistente, hipercortisolemia e disfunção gabaérgica e glutamatérgica do hipocampo",
+        "Hipoatividade noradrenérgica persistente, hipocortisolemia e disfunção gabaérgica e glutamatérgica do hipocampo",
+        "Hiperatividade noradrenérgica persistente, hipercortisolemia e exacerbação da função gabaérgica hipocampal",
+        "Hipoatividade noradrenérgica persistente, hipercortisolemia e ausência de disfunção no hipocampo"
+      ],
+      "correctIndex": 0,
+      "explanation": "No TEPT, há hiperatividade noradrenérgica persistente e ativação crônica do eixo HPA, gerando hipercortisolemia. A disfunção gabaérgica e glutamatérgica no hipocampo prejudica a consolidação e a contextualização da memória do trauma — por isso o evento é vivido como se ocorresse no presente."
+    },
+    {
+      "question": "Por que o paciente com TEPT vivencia o trauma como se estivesse acontecendo no presente?",
+      "options": [
+        "O hipocampo falha em catalogar a experiência como evento do passado, impedindo a contextualização",
+        "O hipocampo intensifica a catalogação do evento, antecipando a experiência no presente",
+        "A amígdala falha em processar o medo, bloqueando a formação da memória do trauma",
+        "O locus coeruleus ativa o eixo HPA, impedindo a consolidação de qualquer memória"
+      ],
+      "correctIndex": 0,
+      "explanation": "Como o hipocampo falha em catalogar a experiência como evento do passado, o trauma não se integra à biografia do paciente e se atualiza constantemente na consciência, na forma de revivescências. O indivíduo não consegue situar o evento no tempo — ele continua sendo vivido como presente."
+    },
+    {
+      "question": "Sobre a epidemiologia do TEPT no Brasil, qual afirmação está correta?",
+      "options": [
+        "86% da população já foi exposta a traumas e cerca de 7% tem TEPT, mais comum em mulheres",
+        "86% da população já foi exposta a traumas e cerca de 3% tem TEPT, mais comum em mulheres",
+        "40% da população já foi exposta a traumas e cerca de 7% tem TEPT, mais comum em homens",
+        "86% da população já foi exposta a traumas e cerca de 7% tem TEPT, mais comum em homens"
+      ],
+      "correctIndex": 0,
+      "explanation": "No Brasil, a prevalência de exposição a eventos traumáticos ao longo da vida é de 86%, sendo 60% decorrente de violência urbana. Das pessoas expostas, 10 a 20% desenvolvem sintomatologia de TEPT, gerando prevalência de cerca de 7% na população geral — mais que o dobro do TOC —, com maior frequência em mulheres."
+    },
+    {
+      "question": "Qual dos seguintes é um fator de risco pré-traumático para TEPT?",
+      "options": [
+        "Experiências adversas na infância, que alteram de forma persistente o eixo HPA",
+        "Perdas significativas decorrentes do evento, como a morte de familiares no acidente",
+        "Estratégias de enfrentamento inadequadas adotadas após o evento traumático",
+        "Avaliação negativa e sentimento de culpa sobre o próprio trauma vivido"
+      ],
+      "correctIndex": 0,
+      "explanation": "Os fatores pré-traumáticos incluem genética, psicopatologia prévia, baixo nível socioeconômico, experiências adversas na infância — que alteram o eixo HPA de forma persistente, predispondo à hipercortisolemia — e o padrão de apego. Perdas, enfrentamento inadequado e culpa são fatores pós-traumáticos."
+    },
+    {
+      "question": "Segundo a teoria do apego de Bowlby, qual padrão aumenta drasticamente o risco de transtornos e TEPT na vida adulta?",
+      "options": [
+        "O apego inseguro ou desorganizado, com pais ausentes ou fonte da própria agressão",
+        "O apego seguro, com pais que estimulam a exploração e servem de porto seguro",
+        "O apego inseguro ou desorganizado, com pais superprotetores e sempre presentes",
+        "O apego seguro, com pais que restringem a exploração e a curiosidade da criança"
+      ],
+      "correctIndex": 0,
+      "explanation": "No apego seguro, os pais estimulam a exploração e servem de porto seguro. No apego inseguro ou desorganizado, os pais são ausentes ou a própria fonte de agressão — a figura que deveria cuidar é a que agride —, gerando desorganização na modulação do estresse e risco drasticamente maior de transtornos psiquiátricos e TEPT na vida adulta."
+    },
+    {
+      "question": "Segundo o Critério A do DSM-5, quais formas de exposição ao trauma habilitam o diagnóstico de TEPT?",
+      "options": [
+        "Exposição direta, presenciar o evento, saber de familiar ou exposição repetida a detalhes aversivos",
+        "Apenas a experiência direta do evento traumático, sem outras formas de exposição",
+        "Apenas presenciar o evento ocorrendo com outras pessoas, sem experiência direta",
+        "Apenas saber do evento em familiar, sem exposição repetida a detalhes aversivos"
+      ],
+      "correctIndex": 0,
+      "explanation": "O Critério A exige exposição à morte real ou ameaça, lesão grave ou violência sexual por quatro vias: experiência direta; presenciar o evento ocorrendo com outros; saber que ocorreu com familiar ou amigo próximo; ou exposição repetida a detalhes aversivos, como em profissionais de resgate."
+    },
+    {
+      "question": "Qual das seguintes manifestações pertence à dimensão de intrusão (revivescência) do TEPT?",
+      "options": [
+        "Flashbacks, em que o indivíduo age como se o evento ocorresse no presente",
+        "Hipervigilância constante e resposta de sobressalto exagerada",
+        "Esforço persistente para evitar locais e conversas associados ao trauma",
+        "Irritabilidade, surtos de raiva e comportamento agressivo frequentes"
+      ],
+      "correctIndex": 0,
+      "explanation": "A intrusão inclui lembranças intrusivas e angustiantes, pesadelos repetitivos e flashbacks — reações dissociativas em que o indivíduo sente ou age como se o evento estivesse ocorrendo no presente, como o protagonista do Sniper Americano que ataca o cachorro da família após um flashback de guerra. Evitação e hiperreatividade são as outras dimensões da tríade."
+    },
+    {
+      "question": "A paciente cuja irmã morreu atropelada por um ônibus passou a evitar sair de casa e a entrar em pânico ao ver qualquer ônibus. Esse quadro exemplifica qual dimensão do TEPT?",
+      "options": [
+        "Evitação, com esforço persistente para evitar estímulos associados ao trauma",
+        "Intrusão, com revivescências do evento na forma de flashbacks",
+        "Hiperreatividade, com sobressalto exagerado diante de estímulos externos",
+        "Intrusão, com sonhos e pesadelos desagradáveis de forma repetitiva"
+      ],
+      "correctIndex": 0,
+      "explanation": "A evitação é o esforço persistente para evitar lembranças, pensamentos, sentimentos ou estímulos externos — pessoas, locais, conversas — associados ao trauma. A paciente evita sair de casa e qualquer ônibus, que é o estímulo ligado à morte da irmã. Flashbacks, pesadelos e sobressalto pertencem às outras dimensões."
+    },
+    {
+      "question": "Qual é o tempo mínimo de sintomas para o diagnóstico de TEPT segundo o DSM-5?",
+      "options": [
+        "1 mês; sintomas no primeiro mês pós-trauma configuram reação aguda ao estresse",
+        "6 meses; sintomas no primeiro mês pós-trauma configuram reação aguda ao estresse",
+        "1 mês; sintomas no primeiro mês pós-trauma já configuram o diagnóstico de TEPT",
+        "1 ano; sintomas no primeiro mês pós-trauma configuram reação aguda ao estresse"
+      ],
+      "correctIndex": 0,
+      "explanation": "Os sintomas de TEPT devem durar pelo menos 1 mês. Se ocorrem apenas no primeiro mês após o trauma, o diagnóstico é de reação aguda ao estresse — não de TEPT."
+    },
+    {
+      "question": "Quando se aplica o especificador de início tardio do TEPT?",
+      "options": [
+        "Quando os sintomas se manifestam 6 meses ou mais após o evento traumático",
+        "Quando os sintomas se manifestam 1 mês ou mais após o evento traumático",
+        "Quando os sintomas se manifestam 1 semana ou mais após o evento traumático",
+        "Quando os sintomas se manifestam 3 meses ou mais após o evento traumático"
+      ],
+      "correctIndex": 0,
+      "explanation": "O especificador de início tardio é usado quando os sintomas aparecem apenas 6 meses ou mais após o evento traumático. Há ainda a amnésia dissociativa: pacientes que bloqueiam e esquecem o trauma, que, não degradado nem integrado à biografia, mantém risco altíssimo de emergir como TEPT posteriormente."
+    },
+    {
+      "question": "Qual é a regra de ouro do pronto-socorro ao atender vítimas recentes de violência?",
+      "options": [
+        "Não prescrever benzodiazepínicos, pois eles aumentam o risco de TEPT a longo prazo",
+        "Prescrever benzodiazepínicos, pois eles reduzem o risco de TEPT a longo prazo",
+        "Não prescrever benzodiazepínicos, pois eles aumentam o risco de reação aguda",
+        "Prescrever benzodiazepínicos, pois eles consolidam a memória do trauma"
+      ],
+      "correctIndex": 0,
+      "explanation": "Benzodiazepínicos como diazepam e clonazepam reduzem a capacidade do cérebro de processar e consolidar a memória do trauma, impedindo a degradação natural do estresse e aumentando significativamente o risco de TEPT a longo prazo. Se houver necessidade de sedação, a alternativa é a quetiapina em dose baixa."
+    },
+    {
+      "question": "Sobre o curso clínico do TEPT, qual afirmação está correta?",
+      "options": [
+        "Sem tratamento, a resolução espontânea leva em média 64 meses; com tratamento, 36 meses",
+        "Sem tratamento, a resolução espontânea leva em média 36 meses; com tratamento, 64 meses",
+        "Sem tratamento, a resolução espontânea leva em média 64 meses; com tratamento, 12 meses",
+        "Sem tratamento, a resolução espontânea leva em média 12 meses; com tratamento, 64 meses"
+      ],
+      "correctIndex": 0,
+      "explanation": "O tratamento adequado é altamente eficaz e encurta substancialmente a duração do transtorno: sem tratamento, a resolução espontânea dos sintomas leva em média 64 meses; com tratamento, cai para 36 meses. Diferente do TOC, o TEPT tem cura."
+    }
+  ]
+}

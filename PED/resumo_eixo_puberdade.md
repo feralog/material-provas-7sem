@@ -1,12 +1,16 @@
 ## O eixo hipotálamo-hipófise-gonadal
 
-Tudo o que acontece na puberdade — e tudo o que dá errado nela — começa em um circuito de três andares. No hipotálamo, neurônios secretam **GnRH** de forma **pulsátil**; a hipófise anterior responde liberando as gonadotrofinas **LH e FSH**; e as gônadas, estimuladas por elas, produzem os esteroides sexuais (**estrógeno e progesterona** no ovário, **androgênios** no testículo) além das células germinativas. O mesmo hipotálamo comanda, em paralelo, outras vias: CRH → ACTH → córtex adrenal → cortisol; TRH → TSH → tireoide; GHRH → GH → fígado → IGFs; e dopamina inibindo a prolactina. Guardar esse mapa inteiro ajuda porque atraso puberal com redução da velocidade de crescimento obriga a avaliar GH, TSH e ACTH junto das gonadotrofinas.
+Tudo o que acontece na puberdade — e tudo o que dá errado nela — começa em um circuito de três andares. No hipotálamo, neurônios secretam **GnRH** de forma **pulsátil**; a hipófise anterior responde liberando as gonadotrofinas **LH e FSH**; e as gônadas, estimuladas por elas, produzem os esteroides sexuais (**estradiol** no ovário, **testosterona** no testículo) além das células germinativas. O mesmo hipotálamo comanda, em paralelo, outras vias: CRH → ACTH → córtex adrenal → cortisol; TRH → TSH → tireoide; GHRH → GH → fígado → IGFs; e dopamina inibindo a prolactina. Guardar esse mapa inteiro ajuda porque atraso puberal com redução da velocidade de crescimento obriga a avaliar GH, TSH e ACTH junto das gonadotrofinas.
 
 ![Eixo hipotálamo-hipófise-órgãos alvo: os hormônios hipotalâmicos, as trofinas hipofisárias e os alvos endócrinos](img:pg10)
+
+O disparo da secreção de GnRH não é aleatório. Fatores **excitatórios** (kisspeptina, glutamato e glicina), **inibitórios** (GABA, opioides e neuropeptídeo Y) e **permissivos** (leptina) regulam os pulsos, com participação da comunicação entre neurônios e células gliais. Duas proteínas entraram na lista recentemente como freios do eixo: **MKRN3** e **DLK1** — quando perdem a função, o freio solta e a puberdade vem cedo, por isso as mutações causam puberdade precoce central familial.
 
 A adrenal entra na história por outra porta. O córtex adrenal tem três zonas: a **glomerulosa** (mineralocorticoides, aldosterona), a **fasciculada** (glicocorticoides, cortisol) e a **reticular** (androgênios) — a medula, mais interna, produz catecolaminas e nada tem a ver com a puberdade. É a maturação da **zona reticular** que produz a **adrenarca**, seguindo a cascata `colesterol → pregnenolona → 17-alfa-OH-pregnenolona → DHEA → androstenediona → testosterona → estrona/estradiol`. Clinicamente, a adrenarca aparece como odor axilar, acne e pelos pubianos e axilares.
 
 > **Não confunda gonadarca com adrenarca.** Gonadarca é a ativação do eixo hipotálamo-hipófise-gonadal (telarca na menina, aumento testicular no menino). Adrenarca é a maturação independente da zona reticular adrenal (pelos, odor, acne). Elas costumam andar juntas, mas podem se dissociar — e essa dissociação é a base das variantes do normal.
+
+A vida hormonal começa antes da puberdade. A hipófise fetal já secreta LH e FSH, com predomínio de FSH, e nos primeiros meses de vida essa secreção persiste, sustentando testosterona nos meninos e estradiol nas meninas — a chamada **minipuberdade**. Depois disso, as concentrações caem e se mantêm muito baixas durante toda a infância, até a reativação puberal do eixo. Por isso, em crianças abaixo dos 2 anos, os valores de gonadotrofinas devem ser interpretados com cautela.
 
 ---
 
@@ -58,11 +62,11 @@ O estadiamento de Tanner (SMR, *Sexual Maturity Rating*) descreve mamas (M) na m
 
 ## Cronologia e sequência dos eventos
 
-A ordem dos eventos é tão cobrada quanto os estágios em si. Na menina: **telarca (M2) → pubarca → estirão → menarca (geralmente em M4, cerca de 2 anos após a telarca) → conclusão 2 a 4 anos após a menarca**. No menino: **aumento testicular (G2) → pubarca → estirão (durante G3-G4) → conclusão 3 a 4 anos após o início**.
+A ordem dos eventos é tão cobrada quanto os estágios em si. Na menina: **telarca (M2) → pubarca → estirão → menarca (geralmente em M4, cerca de 2 anos após a telarca) → conclusão 2 a 4 anos após a menarca**. No menino: **aumento testicular (G2) → pubarca → estirão (durante G3-G4) → conclusão 3 a 4 anos após o início**. No sexo masculino, a primeira ejaculação costuma ocorrer quando o volume testicular passa de 12 cm³, já no Tanner 3.
 
 ![Escala de Tanner e cronologia dos eventos puberais nos dois sexos](img:pg21)
 
-Duas leituras do gráfico valem ouro na prova. Primeiro, o **pico de velocidade de crescimento das meninas ocorre cerca de dois anos antes do dos meninos** (por volta dos 11-12 anos contra 13-14 anos). Segundo, nas meninas o estirão **precede** a menarca — quando a menina menstrua, já está na fase de desaceleração, com uma reserva de crescimento pequena.
+Duas leituras do gráfico valem ouro na prova. Primeiro, o **pico de velocidade de crescimento das meninas ocorre cerca de dois anos antes do dos meninos** (por volta dos 11-12 anos contra 13-14 anos). Segundo, nas meninas o estirão **precede** a menarca — quando a menina menstrua, já está na fase de desaceleração, com uma reserva de crescimento pequena. Nos meninos o estirão é mais tardio e numericamente maior, começando na metade do período puberal (G3-G4).
 
 São três os critérios que disparam investigação: **desenvolvimento precoce**, **desenvolvimento tardio** e **progressão atípica**. Esse terceiro é o mais esquecido: uma puberdade que começou na idade certa mas se arrasta por **mais de 3,5 a 5,0 anos** até a menarca ou até o volume testicular adulto (20-25 mL) também precisa ser investigada.
 
@@ -76,6 +80,8 @@ O caso da aula é o modelo. **M.E.S., feminina, 6 anos e 4 meses**, com broto ma
 
 Os exames complementares confirmaram o raciocínio: idade óssea (Greulich-Pyle, **radiografia de mão e punho**) de **9 anos** para idade cronológica de 6 anos e 4 meses; **LH basal 0,8 UI/L** (pré-púbere < 0,1); **FSH 3,5 UI/L** (< 2,0); **estradiol 25 pg/mL** (< 10); **útero de 4,5 cm³ com eco endometrial** (pré-púbere < 1,8 cm³); e **RNM de sela túrcica normal**. Diagnóstico: **puberdade precoce central idiopática**.
 
+A definição é de prova: puberdade precoce é o aparecimento de caracteres sexuais secundários **antes dos 8 anos na menina e antes dos 9 no menino**; menarca antes dos 9 anos também é critério. O desenvolvimento pode ser **central (PPC, gonadotrofina-dependente)**, por ativação prematura do eixo, ou **periférico (PPP, gonadotrofina-independente)**, por produção autônoma de esteroides gonadais, adrenais ou exógenos.
+
 | Condição | Características |
 | --- | --- |
 | PPC idiopática | GnRH-dependente, por ativação prematura do eixo. Comum em meninas |
@@ -85,47 +91,77 @@ Os exames complementares confirmaram o raciocínio: idade óssea (Greulich-Pyle,
 
 ![Comparação entre puberdade precoce central e periférica](img:pg29)
 
-> Em **meninas**, a PPC idiopática é a regra. Em **meninos**, a estatística se inverte: pense primeiro em causa orgânica do SNC e valorize ainda mais a ressonância de encéfalo.
+> Em **meninas**, a PPC idiopática é a regra. Em **meninos**, a estatística se inverte: cerca de 60% têm lesão do sistema nervoso central, então pense primeiro em causa orgânica e valorize ainda mais a ressonância de encéfalo.
+
+Dentre as causas orgânicas, merecem destaque o **hamartoma hipotalâmico** — malformação congênita benigna que pode se manifestar com **epilepsia gelástica** (crises com riso imotivado) e, às vezes, logo após o nascimento — e o **glioma de vias ópticas** da neurofibromatose tipo 1. O exame de pele ajuda no diferencial: manchas café-com-leite de **bordos regulares** apontam neurofibromatose (PPC); bordos **irregulares e segmentares** apontam **McCune-Albright** (PPP).
 
 ---
 
-## O algoritmo diagnóstico da puberdade precoce
+## As variantes benignas do desenvolvimento precoce
+
+Nem todo broto mamário ou pelo pubiano precoce é doença. Há três condições chamadas de desenvolvimento prematuro benigno, com critérios diagnósticos próprios e, na maioria dos casos, tratamento nenhum — apenas seguimento.
+
+**Telarca precoce** é o tecido mamário (uni ou bilateral) sem outros sinais puberais em meninas abaixo de 8 anos. É comum entre 6 meses e 2 anos e rara após os 4 anos. O exame mostra desenvolvimento mamário assimétrico, sem papila, que raramente passa de M3; não há pelos, odor, nem aceleração da velocidade de crescimento, e a idade óssea é compatível com a cronológica. Pode haver cistos foliculares na ultrassonografia, FSH discretamente elevado e estradiol indetectável. Só **5%** evoluem para puberdade precoce — daí a conduta ser acompanhamento a cada 3 a 6 meses, sem exames hormonais de rotina.
+
+**Adrenarca precoce** é o início da secreção androgênica adrenal antes dos 8 anos (meninas) ou 9 (meninos). É mais comum no sexo feminino (10:1), na etnia negra, em nascidos **PIG**, obesos e crianças com função anormal do SNC. Aparecem pelos e odor, sem virilização (sem acne grave, hipertrofia de clitóris, pênis estimulado ou hirsutismo). A velocidade de crescimento pode passar do percentil 50 com **avanço discreto da idade óssea, nunca acima de 2 anos**, sempre proporcional à idade estatural. Na investigação, 17-OH-progesterona elevada ou duvidosa pede teste de estímulo com ACTH para afastar defeito de síntese adrenal; DHEA-S elevado pede teste de supressão com dexametasona para afastar tumor adrenal. Não se trata, apenas se acompanha — com atenção às PIG que ganham peso, pela associação tardia com resistência à insulina e síndrome dos ovários policísticos.
+
+**Antecipação constitucional do crescimento e da puberdade (ACCP)** é a menina com mamas entre **6,5 e 8 anos**, com progressão rápida porém no limite do normal. A idade óssea é avançada, mas compatível com a idade estatural — por isso **não há perda estatural**, ou ela é mínima. É variação da normalidade, sem tratamento, exceto quando o impacto emocional justifica intervenção. Alguns a veem como uma forma lentamente progressiva de PPC.
+
+> **O que diferencia benigno de preocupante:** na telarca e na adrenarca precoces, a idade óssea caminha com a idade estatural e não há sinais de virilização nem de estrogenização além do sinal isolado. Velocidade de crescimento acelerada, idade óssea muito avançada e sinais virilizantes empurram o diagnóstico para puberdade precoce de verdade.
+
+---
+
+## O algoritmo diagnóstico e o tratamento da puberdade precoce
 
 Diante de sinais puberais antes dos 8 anos (meninas) ou dos 9 anos (meninos), a avaliação clínica pergunta: há telarca? Qual o volume testicular (> 4 mL)? Qual a velocidade de progressão? O exame que separa as duas grandes vias é o **LH basal**, em ensaio ultrassensível.
 
-1. **LH basal ≥ 0,3–0,7 UI/L**, ou resposta puberal ao teste de estímulo com GnRH: eixo ativado, quadro **GnRH-dependente** → **puberdade precoce central** → solicitar **RM de encéfalo**.
-2. **LH baixo ou suprimido**: quadro **GnRH-independente** → dosar os esteroides sexuais. Se **estradiol ou testosterona** estiverem elevados, a origem é **gonadal** (cisto de ovário, tumor); se **DHEAS e androgênios** estiverem elevados, a origem é **adrenal** (hiperplasia adrenal congênita, tumor adrenal).
+1. **LH basal ≥ 0,3–0,7 UI/L**, ou resposta puberal ao teste de estímulo com GnRH: eixo ativado, quadro **GnRH-dependente** → **puberdade precoce central** → solicitar **RM de encéfalo**. O Tratado considera púbere LH acima de 0,2 UI/L em método ultrassensível; abaixo disso, com clínica consistente, parte-se para o teste de estímulo.
+2. **LH baixo ou suprimido**: quadro **GnRH-independente** → dosar os esteroides sexuais. Se **estradiol ou testosterona** estiverem elevados, a origem é **gonadal** (cisto de ovário, tumor); se **DHEAS e androgênios** estiverem elevados, a origem é **adrenal** (hiperplasia adrenal congênita tardia, tumor adrenal).
 
 ![Algoritmo diagnóstico: central versus periférica, gonadal ou adrenal](img:pg31)
 
-O tratamento da **PPC** tem padrão-ouro definido: **análogos de depósito do GnRH**, como a **leuprorrelina 3,75 mg IM a cada 28 dias**. O mecanismo é contraintuitivo e cai em prova: por ser administrado de forma **contínua** — e não em pulsos, como o GnRH fisiológico —, o análogo provoca **dessensibilização e down-regulation** dos receptores hipofisários de GnRH, derrubando LH e FSH e, com eles, a produção gonadal de estradiol ou testosterona. Os objetivos são parar a progressão dos caracteres, normalizar a velocidade de crescimento e evitar a fusão precoce das epífises, preservando a estatura final. O monitoramento é feito com **LH após 3 meses** de tratamento e **idade óssea anual**.
+Na forma adrenal, o **teste de supressão com dexametasona** fecha o diagnóstico: no tumor adrenal os androgênios não suprimem; na hiperplasia adrenal congênita tardia, suprimem. O DHEA-S é o bom marcador tumoral. Tumores adrenais são raros na infância (0,2%), mais comuns até o 2º ano de vida e com incidência até 15 vezes maior no Paraná pela mutação **TP53**.
 
-Na **PPP**, o tratamento depende da causa e pode ser medicamentoso ou cirúrgico, sobretudo nos tumores. Quando não há tratamento etiológico possível, bloqueia-se a síntese ou a ação dos esteroides sexuais: **cetoconazol** (inibidor da esteroidogênese), **espironolactona** e **acetato de ciproterona** (antiandrogênicos), **letrozol** e **anastrozol** (inibidores da aromatase) e **tamoxifeno** (inibidor do receptor de estrogênio). Análogo de GnRH não resolve PPP, porque o quadro é independente de GnRH.
+A **ultrassonografia pélvica** documenta a ação estrogênica: útero pré-púbere é tubular, com razão fundo-cérvice menor que 1 e endométrio invisível; na puberdade o corpo alarga-se, toma forma de pera e o endométrio aparece. **Ovários acima de 2 mL e útero acima de 3,5-4 cm** são consistentes com puberdade em curso. A **ressonância de sela túrcica** é recomendada em **todos os meninos** com PPC e nas **meninas abaixo de 6 anos**; entre 6 e 8 anos, sem sinais neurológicos, a indicação é controversa. No Ministério da Saúde, a **relação LH/FSH maior que 1** reforça o diagnóstico de PPC.
+
+O tratamento da **PPC** tem padrão-ouro definido: **análogos de depósito do GnRH**, como a **leuprorrelina 3,75 mg IM a cada 28 dias**. O mecanismo é contraintuitivo e cai em prova: por ser administrado de forma **contínua** — e não em pulsos, como o GnRH fisiológico —, o análogo provoca **dessensibilização e down-regulation** dos receptores hipofisários de GnRH, derrubando LH e FSH e, com eles, a produção gonadal de estradiol ou testosterona. As formulações **trimestrais** são hoje a primeira opção, e já existem apresentações semestrais com eficácia comprovada. Os objetivos são parar a progressão dos caracteres, normalizar a velocidade de crescimento e evitar a fusão precoce das epífises, preservando a estatura final. O monitoramento é feito com **LH após 3 meses** de tratamento e **idade óssea anual**.
+
+Na **PPP**, o tratamento depende da causa e pode ser medicamentoso ou cirúrgico, sobretudo nos tumores. Quando não há tratamento etiológico possível, bloqueia-se a síntese ou a ação dos esteroides sexuais: **cetoconazol** (inibidor da esteroidogênese), **espironolactona** e **acetato de ciproterona** (antiandrogênicos), **letrozol** e **anastrozol** (inibidores da aromatase) e **tamoxifeno** (inibidor do receptor de estrogênio). Análogo de GnRH não resolve PPP, porque o quadro é independente de GnRH. Lembre-se ainda das causas específicas de PPP: **McCune-Albright** (ativação gonadal autônoma), **testotoxicose** (limitada ao sexo masculino), tumores secretores de **hCG** — que só causam precocidade em meninos, por mimetizar o LH — e o **hipotireoidismo primário** (síndrome de Van Wyk-Grumbach).
 
 ---
 
-## Atraso puberal
+## Atraso puberal: definição e classificação
 
-Atraso puberal é a puberdade que não ocorre **até os 13 anos na menina** (ausência de desenvolvimento mamário) ou **até os 14 anos no menino** (ausência de aumento testicular ≥ 4 mL). O primeiro exame é o par **LH e FSH**, que divide o problema em dois mundos.
+Atraso puberal é a puberdade que não ocorre **até os 13 anos na menina** (ausência de desenvolvimento mamário) ou **até os 14 anos no menino** (ausência de aumento testicular ≥ 4 mL). O ritmo de progressão também conta: desenvolvimento que se arrasta por mais de 3,5 a 5 anos desde os primeiros sinais merece investigação. Pelos pubianos e axilares isolados não bastam — podem ser só adrenarca, de fonte suprarrenal.
 
 ![Fluxograma de avaliação diagnóstica do atraso puberal](img:pg39)
 
-#### LH e FSH elevados — hipogonadismo hipergonadotrófico
+O atraso puberal atinge cerca de 3% das crianças. As causas se distribuem assim: **retardo constitucional do crescimento e da puberdade (RCCP, 53%)**, **hipogonadismo hipogonadotrófico funcional (19%)**, **hipogonadismo hipergonadotrófico (13%)**, **hipogonadismo hipogonadotrófico permanente (12%)** e 3% não classificados.
 
-A gônada falhou e o feedback negativo se perdeu. Pede-se **cariótipo**: **47,XXY** é **síndrome de Klinefelter** (alta estatura); **45,X** é **síndrome de Turner** (baixa estatura); cariótipo normal (46,XY ou 46,XX) aponta **falência gonadal primária** — anorquia, lesão gonadal por quimioterapia ou radioterapia, erros da síntese de testosterona.
+O **RCCP** é a causa mais frequente, mais comum em meninos, e pode ser encarado como variação da normalidade: a reativação do eixo simplesmente atrasa, com história familiar em 50 a 75% dos casos. Por definição é diagnóstico de exclusão. A criança reduz a velocidade de crescimento nos primeiros anos, fica abaixo do alvo genético, mas depois cresce em paralelo à curva — a idade óssea é atrasada e proporcional à idade estatural. Ao final do crescimento, atinge estatura normal para o alvo familiar. O teste do GnRH não responde e os hormônios ficam pré-puberais.
 
-#### LH e FSH baixos — hipogonadismo hipogonadotrófico
+O **hipogonadismo hipogonadotrófico funcional** vem de doenças crônicas, desnutrição (anorexia nervosa), hipotireoidismo, doença inflamatória intestinal, insuficiência renal e treinamento físico intenso. Nesses casos o eixo é normal e a puberdade instala-se sozinha quando o fator causal é corrigido.
 
-Aqui o padrão de crescimento orienta a investigação:
+---
+
+## Hipogonadismo: diagnóstico diferencial e tratamento
+
+Diante do atraso puberal, o primeiro exame é o par **LH e FSH**, que divide o problema em dois mundos.
+
+**LH e FSH elevados — hipogonadismo hipergonadotrófico.** A gônada falhou e o feedback negativo se perdeu. Pede-se **cariótipo**: **47,XXY** é **síndrome de Klinefelter** (alta estatura, testículos pequenos e endurecidos, ginecomastia, 1:1.000 meninos); **45,X** é **síndrome de Turner** (baixa estatura, pescoço alado, cúbito valgo, linfedema ao nascimento, 1:2.000 meninas); cariótipo normal (46,XY ou 46,XX) aponta **falência gonadal primária** — anorquia, lesão por quimioterapia/radioterapia, orquite pós-caxumba, torção. No teste do GnRH, o hipergonadotrófico é o único com **hiper-resposta de LH, acima do FSH**.
+
+**LH e FSH baixos — hipogonadismo hipogonadotrófico.** Aqui o padrão de crescimento orienta a investigação:
 
 - **Baixa estatura para a idade cronológica, idade óssea atrasada e estatura normal para a idade óssea** → **atraso constitucional do crescimento e puberdade (RCCP)**.
-- **Redução da velocidade de crescimento** → avaliar **GH, TSH e ACTH** (pan-hipopituitarismo) e fazer **RNM** em busca de massa ou tumor do SNC, como o craniofaringioma.
+- **Redução da velocidade de crescimento** → avaliar **GH, TSH e ACTH** (pan-hipopituitarismo) e fazer **RNM** em busca de massa ou tumor do SNC, como o **craniofaringioma** — o tumor hipotalâmico-hipofisário mais associado ao atraso puberal.
 - **Estatura normal, sem estirão** → testar o **olfato**: alterado sugere **ausência do bulbo olfativo** e **síndrome de Kallmann**; normal sugere **deficiência isolada de gonadotrofinas**.
-
-Antes de rotular o eixo como doente, é obrigatório afastar causas funcionais: **desnutrição, doença crônica, hipotireoidismo e anorexia nervosa**. A obesidade sindrômica aponta para **Prader-Willi** ou **Laurence-Moon-Biedl**.
 
 ![Principais etiologias no hipogonadismo hipo e hipergonadotrófico](img:pg37)
 
-O tratamento depende da patologia de base. No **RCCP normalmente não é necessário nenhum tratamento**: o foco é acompanhar a velocidade de crescimento e assegurar bom prognóstico de amadurecimento e de estatura final. Nos **hipogonadismos hipo ou hipergonadotróficos**, faz-se indução da puberdade e manutenção dos caracteres sexuais secundários com esteroides sexuais — **estrógeno** no sexo feminino e **testosterona** no masculino.
+A **síndrome de Kallmann** é a forma mais comum de deficiência isolada de gonadotrofinas: falha na migração dos neurônios de GnRH do placódio olfatório, com hipoplasia dos bulbos olfatórios, anosmia e mutação do gene **KAL1**. Pode vir com criptorquidia, micropênis, surdez neurossensorial e malformação renal. Antes de rotular o eixo como doente, é obrigatório afastar causas funcionais: **desnutrição, doença crônica, hipotireoidismo e anorexia nervosa**. Obesidade sindrômica aponta para **Prader-Willi** ou **Laurence-Moon-Biedl**.
+
+Para distinguir RCCP de hipogonadismo hipogonadotrófico permanente, o Tratado oferece números úteis: **LH basal < 0,3 UI/L, LH < 5,3 UI/L quatro horas após triptorrelina ou inibina B < 111 pg/mL** têm 100% de sensibilidade para hipogonadismo, mas **apenas o LH pós-triptorrelina < 5,3** alcançou 100% de especificidade; a combinação de LH e inibina B basais deu 100% de sensibilidade e 98% de especificidade.
+
+O tratamento depende da patologia de base. No **RCCP normalmente não é necessário nenhum tratamento**: o foco é acompanhar a velocidade de crescimento e dar suporte psicológico, assegurando o bom prognóstico de amadurecimento e estatura final. Quando a condição emocional exigir, usam-se doses baixas de esteroide sexual por **6 meses** — estrógeno após os 13 anos na menina, testosterona de depósito após os 14 no menino. Nos **hipogonadismos hipo ou hipergonadotróficos permanentes**, faz-se indução da puberdade e manutenção dos caracteres com esteroides sexuais — **estrógeno** no sexo feminino e **testosterona** no masculino — aumentando progressivamente até a dose de manutenção do adulto, sempre acompanhando sinais puberais, velocidade de crescimento, idade óssea, massa óssea e volume uterino (nas meninas).
 
 > **Resumo do que reforçar:** o eixo hipotálamo-hipófise-gonadal, a sequência esperada dos eventos puberais, o estadiamento de Tanner e, para puberdade precoce e atraso puberal, os quatro blocos de sempre — tipos, etiologia, história clínica, diagnóstico e tratamento.

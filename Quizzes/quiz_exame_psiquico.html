@@ -1,0 +1,814 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Exame Psíquico</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;450;500;600&display=swap" rel="stylesheet">
+<style>
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0}
+  body{background:#f5f3ef;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+  button{font:inherit;color:inherit;font-family:'IBM Plex Sans',system-ui,sans-serif}
+  a{color:#2b57cc;text-decoration:none}
+  a:hover{color:#1e3f9c;text-decoration:underline}
+  @keyframes qFade{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+  @keyframes qDrawer{from{opacity:0;transform:translateY(-4px)}to{opacity:1;transform:none}}
+
+  /* hovers — no canvas eram style-hover, aqui viram CSS de verdade */
+  .h-dark:hover{background:#2b57cc!important;transform:translateY(-1px)}
+  .h-darkflat:hover{background:#2b57cc!important}
+  .h-line:hover{border-color:#121a2b!important}
+  .h-ink:hover{color:#121a2b!important}
+  .h-opt:not(.locked):hover{border-color:var(--hbd)!important;transform:translateY(-1px)}
+  .h-card:hover{border-color:#121a2b!important;transform:translateY(-2px)}
+
+  /* tipografia do resumo */
+  .rsm{font-size:16.5px;line-height:1.72;color:#2a3141;max-width:64ch}
+  .rsm h2{font-family:'Newsreader',Georgia,serif;font-size:27px;font-weight:500;letter-spacing:-.02em;line-height:1.2;margin:42px 0 14px;padding-top:20px;border-top:1px solid #e4e0d8;text-wrap:pretty}
+  .rsm h2:first-child{margin-top:0;padding-top:0;border-top:0}
+  .rsm h3{font-family:'Newsreader',Georgia,serif;font-size:20px;font-weight:600;letter-spacing:-.01em;margin:28px 0 10px;text-wrap:pretty}
+  .rsm h4{font-family:'IBM Plex Mono',monospace;font-size:11px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:#2b57cc;margin:24px 0 8px}
+  .rsm p{margin:0 0 15px;text-wrap:pretty}
+  .rsm ul,.rsm ol{margin:0 0 15px;padding-left:22px}
+  .rsm li{margin-bottom:7px;text-wrap:pretty}
+  .rsm li>ul,.rsm li>ol{margin:7px 0 0}
+  .rsm strong{font-weight:600;color:#121a2b}
+  .rsm em{font-style:italic}
+  .rsm code{font-family:'IBM Plex Mono',monospace;font-size:.88em;background:#efece5;border:1px solid #e4e0d8;border-radius:5px;padding:1px 5px}
+  .rsm hr{border:0;border-top:1px solid #e4e0d8;margin:32px 0}
+  .rsm blockquote{margin:0 0 18px;padding:15px 18px;background:#f7f6f2;border-left:2.5px solid #2b57cc;border-radius:0 12px 12px 0;font-size:15px;line-height:1.65;color:#39404f}
+  .rsm blockquote p:last-child{margin-bottom:0}
+  .rsm .tbl{overflow-x:auto;margin:0 0 20px;border:1px solid #e4e0d8;border-radius:12px;background:#fff}
+  .rsm table{border-collapse:collapse;width:100%;font-size:14px;line-height:1.5}
+  .rsm th{text-align:left;font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.09em;text-transform:uppercase;color:#8a8578;font-weight:600;padding:11px 14px;background:#faf9f6;border-bottom:1px solid #e4e0d8;white-space:nowrap}
+  .rsm td{padding:11px 14px;border-bottom:1px solid #efece5;vertical-align:top;text-wrap:pretty}
+  .rsm tr:last-child td{border-bottom:0}
+  .rsm .key{background:#f2f6fb;border:1px solid #d6e2f4;border-radius:12px;padding:16px 18px;margin:0 0 18px}
+  .rsm .key>*:last-child{margin-bottom:0}
+
+  /* figuras — no resumo e na questao */
+  .fig{margin:0 0 20px;background:#fff;border:1px solid #e4e0d8;border-radius:14px;overflow:hidden}
+  .fig img{display:block;width:100%;height:auto;cursor:zoom-in}
+  .fig figcaption{font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.06em;color:#8a8578;padding:9px 13px;border-top:1px solid #efece5;background:#faf9f6;text-wrap:pretty}
+  .qfig{margin:0 0 20px}
+
+  /* lightbox */
+  #lb{position:fixed;inset:0;z-index:90;background:rgba(18,26,43,.86);display:none;align-items:center;justify-content:center;padding:24px;cursor:zoom-out}
+  #lb.on{display:flex;animation:qFade .16s ease}
+  #lb img{max-width:100%;max-height:100%;border-radius:10px;box-shadow:0 24px 60px rgba(0,0,0,.5)}
+
+  @media(max-width:560px){
+    .rsm{font-size:16px}
+    .rsm h2{font-size:24px}
+    .home-grid{grid-template-columns:1fr!important}
+  }
+</style>
+</head>
+<body>
+
+<div style="min-height:100vh;background:#f5f3ef;color:#121a2b;font-family:'IBM Plex Sans',system-ui,sans-serif">
+  <header style="position:sticky;top:0;z-index:30;background:rgba(245,243,239,.94);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid #e4e0d8">
+    <div style="max-width:720px;margin:0 auto;padding:12px 16px 10px" id="hdr"></div>
+  </header>
+  <main style="max-width:720px;margin:0 auto;padding:0 16px 80px" id="stage"></main>
+</div>
+<div id="lb"><img alt=""></div>
+
+<script type="text/html" id="resumoSrc"><h2>O exame psíquico: ferramenta diagnóstica e linguagem entre médicos</h2>
+<p>O exame psíquico é a grande <strong>ferramenta propedêutica diagnóstica da psiquiatria</strong> — e não é exclusividade do psiquiatra. O professor abre a aula com o argumento epidemiológico: o Brasil tem em média <strong>quase sete psiquiatras para cada 100.000 habitantes</strong>, cerca de <strong>75% concentrados no Sul e no Sudeste</strong>, enquanto a prevalência de <strong>depressão ao longo da vida gira em torno de 15%</strong>. Com essa conta, quadros <strong>leves de ansiedade e depressão são da atenção primária</strong>: o médico generalista precisa saber reconhecê-los e conduzi-los — e isso exige um bom exame psíquico. Além disso, toda especialidade atende pacientes psiquiátricos, e o exame psíquico funciona como <strong>linguagem de comunicação entre médicos</strong>: no hospital, o professor decide sobre um pedido de vaga lendo o exame psíquico feito por outro médico — no caso, uma paciente descrita com <em>humor hipertímico, pensamento acelerado, logorreia, delírio de grandeza, persecutório e religioso, sem auto ou heteroagressividade e com insight prejudicado</em>.</p>
+<blockquote><p><strong>Ponto-chave.</strong> Para Fuchs, a descrição psicopatológica <strong>converte a experiência do paciente em categorias de sintomas e sinais específicos definidos em terceira pessoa</strong>, promovendo informação objetiva compartilhada para diagnóstico, tratamento e pesquisa. Não se escreve o exame psíquico em primeira pessoa.</p></blockquote>
+<p>Outra premissa da aula: o funcionamento psíquico é <strong>uno</strong> — o examinador observa tudo ao mesmo tempo, não "agora o humor, depois o pensamento". A fragmentação em conceitos (consciência, atenção, sensopercepção, pensamento, afeto...) é uma construção teórica, criada para <strong>melhor descrever e compreender</strong> esse funcionamento. As alterações psicopatológicas também não são específicas de um transtorno: o diagnóstico psiquiátrico é uma <strong>somatória de alterações</strong> que pesam mais para um ou outro diagnóstico — não existe sinal patognomônico.</p>
+<h2>Apresentação e primeiras impressões</h2>
+<p>O exame psíquico começa <strong>antes da entrevista formal</strong>, pelas primeiras impressões tecidas nos primeiros minutos de contato, ainda na recepção. São os <strong>dados não verbais</strong>: maneira de se vestir e se portar, expressão facial, postura, expressão corpórea, uso de maquiagem, inflexão do discurso, aspecto geral, cuidados vestimentares, <strong>higiene e autocuidado</strong>, atitude frente ao examinador e <strong>colaboração</strong> com a avaliação. O paciente fornece dados sobre si <strong>ainda que não diga nada</strong> — como a paciente bipolar que a família reconhece estar entrando em episódio de mania psicótica porque muda as roupas (cores mais vivas, mais chamativas) e o padrão de maquiagem (mais exagerado). O parâmetro é a <strong>mudança em relação à própria paciente</strong>, não em relação a um grupo ou cultura.</p>
+<p>As posturas observáveis durante a entrevista incluem pacientes arrogantes, manipuladores, evasivos, esquivos, confusos e deprimidos. A primeira linha do exame habitualmente registra: <em>"apresentação habitual com manutenção do autocuidado e postura colaborativa com a entrevista"</em> — ou, quando alterada, <em>prejuízo do autocuidado</em>, <em>apresentação atípica</em> ou <em>atitude negativista</em> em relação à entrevista.</p>
+<h2>Nível de consciência</h2>
+<p>A consciência é a <strong>segunda descrição</strong> do exame psíquico e <strong>determina todo o restante</strong>: se o paciente está em coma — como o do leito 9, intubado e sedado com midazolam e fentanil após intoxicação exógena —, não é possível extrair pensamento, humor ou volição, e o exame fica reduzido a uma linha. O mesmo vale na enfermaria psiquiátrica: o paciente agitado contido quimicamente (Haldol com fenergan ou midazolam intramuscular) fica sonolento, e toda a avaliação seguinte fica prejudicada. Para fins psicopatológicos, a consciência é a <strong>capacidade de entrar em contato com a realidade circundante e reconhecer os objetos externos e internos</strong> — o sono é uma <strong>redução fisiológica</strong> da consciência. Ela é o <strong>grau de clareza do sensório</strong>.</p>
+<p>A consciência tem dois aspectos:</p>
+<div class="tbl"><table><thead><tr><th>Aspecto</th><th>O que é</th><th>Exemplo de avaliação</th></tr></thead><tbody><tr><td><strong>Quantitativo</strong></td><td>Variação <strong>vertical</strong> da percepção dos estímulos, da vigília ao coma</td><td><strong>Escala de Coma de Glasgow</strong></td></tr><tr><td><strong>Qualitativo</strong></td><td><strong>Integração e organização</strong> das informações percebidas em um dado</td><td>Quadros <strong>dissociativos</strong></td></tr></tbody></table></div>
+<h3>As alterações quantitativas, da vigília ao coma</h3>
+<ul><li><strong>Vigília</strong> — pleno funcionamento da consciência, resposta espontânea; o indivíduo percebe e integra o mundo.</li><li><strong>Obnubilação</strong> — <em>parece</em> acordado, mas tem <strong>dificuldade de integrar as informações</strong>; fica confuso, com alterações da orientação.</li><li><strong>Torpor</strong> — estado basal de sonolência que se interrompe com <strong>estímulo ambiental mais vigoroso</strong> (chamar o nome do paciente: "José, José!").</li><li><strong>Sopor</strong> — sonolência que só se interrompe com <strong>estímulo mais vigoroso e aplicado diretamente</strong> sobre o paciente (sacudi-lo), que abre os olhos mas <strong>tende a voltar ao estado basal</strong>.</li><li><strong>Coma</strong> — <strong>abolição da consciência</strong>; o indivíduo não percebe o mundo e <strong>não responde nem ao estímulo doloroso</strong> aplicado sobre ele.</li></ul>
+<h3>Alterações qualitativas: os quadros dissociativos</h3>
+<p>Na dissociação, o indivíduo <strong>percebe o mundo, mas não integra as informações</strong> para utilizá-las. O caso da aula: a paciente em luto que, após ver a transferência dos ossos do marido no cemitério, lia as placas mas não conseguia usá-las para se direcionar para casa — andou a esmo por São Paulo, entrando e saindo do metrô, até recobrar o funcionamento qualitativo horas depois. Não era sonolência nem falta de percepção: era <strong>desintegração das informações</strong> sob intenso estressor psíquico — uma alteração <strong>qualitativa</strong> da consciência.</p>
+<blockquote><p><strong>Pegadinha.</strong> Obnubilação é quantitativa (clareza reduzida, confusão ao integrar). Dissociação é qualitativa (clareza preservada, integração quebrada). Se a questão descrever um paciente que percebe mas não "usa" o que percebe, pense em dissociação — não em sonolência.</p></blockquote>
+<h2>Orientação</h2>
+<p>A orientação é a <strong>capacidade de se situar em relação a si mesmo e ao mundo</strong>. Quando há alterações quantitativas ou qualitativas da consciência, uma das primeiras expressões é a <strong>desorientação</strong>. Ela se divide em:</p>
+<ul><li><strong>Orientação autopsíquica</strong> — em relação à própria biografia: quem é você, quantos anos tem, é casado, tem filhos, trabalha, de onde veio.</li><li><strong>Orientação alopsíquica</strong> — em relação ao meio, ao <strong>tempo e ao espaço</strong>: que dia é hoje, em que ano estamos, que local, bairro e cidade é esse.</li></ul>
+<p>A linha do exame: <em>"vígil, orientado auto e alopsiquicamente"</em> — ou, quando alterado, <em>"sonolento, desorientado no tempo e no espaço"</em> ou <em>"desorientado autopsiquicamente"</em>.</p>
+<h2>Senso percepção</h2>
+<p>O mundo é percebido pelos órgãos dos sentidos, que captam os sinais e os transmitem ao sistema nervoso central. Duas operações se distinguem: a <strong>sensação</strong>, ato original e cru de interação entre o estímulo e a célula sensível que o capta (ativação dos receptores), e a <strong>percepção</strong>, que ocorre quando a sensação chega à consciência <strong>acrescida de significado</strong>. Todas as alterações de senso percepção se dão nesse binômio indivíduo–estímulo.</p>
+<div class="tbl"><table><thead><tr><th>Alteração</th><th>Relação com o estímulo</th><th>Exemplo da aula</th></tr></thead><tbody><tr><td><strong>Hiperestesia</strong></td><td>Estímulo <strong>ampliado</strong>, mais intenso ou mais duradouro</td><td>Cores mais vívidas e sons mais nítidos após <strong>Ayahuasca ou cogumelos</strong></td></tr><tr><td><strong>Ilusão</strong></td><td>Estímulo <strong>existe</strong>, mas é percebido <strong>distorcido</strong></td><td>Etilista confunde o <strong>equipo do soro com uma serpente</strong>; ouvir o próprio nome a partir de sons inespecíficos</td></tr><tr><td><strong>Alucinação</strong></td><td>Percepção <strong>sem o estímulo sensorial respectivo</strong></td><td>Ouvir uma voz que manda se matar, "como ouço a sua"</td></tr></tbody></table></div>
+<p>A alucinação é a percepção de um objeto <strong>sem que este esteja presente</strong> — como se o feixe de luz que incide sobre o indivíduo simplesmente não existisse. Os tipos na aula: <strong>auditivas</strong> (as <strong>mais comuns na psiquiatria</strong> — ouvir vozes), <strong>visuais</strong> (menos frequentes na psiquiatria, <strong>mais relacionadas a quadros orgânicos</strong>), <strong>táteis</strong> (Síndrome de Ekbom: múltiplos insetos caminhando sobre o corpo) e <strong>olfativas</strong> (a paciente deprimida que sentia cheiro de podre sem estímulo no ambiente). As ilusões também podem ser visuais (móveis, roupas e objetos vistos como pessoas, monstros ou animais) e auditivas (chamamentos a partir de sons inespecíficos).</p>
+<h2>Atenção e memória</h2>
+<p>O mundo nos estimula o tempo inteiro, e <strong>a atenção é quem hierarquiza os estímulos</strong>: como um farol, ela direciona a consciência para determinados pontos, para que sejam percebidos com maior clareza e definição. A atenção é <strong>flutuante</strong> com o tempo — depende do <strong>valor dos estímulos para o indivíduo</strong> (quem fará psiquiatria presta mais atenção nesta aula) e de <strong>fatores energéticos</strong> (o cansaço desgasta a atenção ao longo do dia). Formas descritas: <strong>voluntária</strong> (dirigida a um estímulo de propósito) e <strong>involuntária ou espontânea</strong> (automática, não refletida — perceber o barulho do ar-condicionado); e ainda a <strong>atenção concentrada</strong> (selecionar um estímulo), a <strong>sustentada</strong> (mantê-la por um intervalo de tempo) e a <strong>dividida</strong> (perceber dois estímulos ao mesmo tempo, como a mulher ao telefone e o homem batendo a cabeça na pilastra do vídeo). O <strong>TDAH</strong> é a alteração <strong>primária</strong> da atenção, mas depressão e ansiedade também a comprometem. Na consulta, a atenção é inferida pelo comportamento diante da entrevista: o paciente permanece nela, entende as perguntas, segue conectado.</p>
+<p>A <strong>memória é descrita indiretamente</strong> no exame psíquico: pela capacidade de <strong>narrar e organizar a própria história</strong>, infere-se a capacidade de registrar, manter e evocar fatos. A avaliação formal exigiria aplicar um teste; por isso a linha habitual é <em>"sem sinais indiretos de alterações mnemônicas"</em> ou <em>"alterações da memória"</em>.</p>
+<h2>Afetividade e humor</h2>
+<p>A afetividade é o <strong>sistema de valoração das experiências</strong> — é por ela que o mundo se torna agradável ou desagradável: experiências de <strong>valência positiva</strong> (que gostaríamos que se perpetuassem) e de <strong>valência negativa</strong> (que gostaríamos que se encerrassem). Alegria, tristeza, raiva, ciúmes e vergonha são afetos. No exame psíquico descrevem-se <strong>humor e afeto</strong>; emoção e sentimento não são descritos.</p>
+<blockquote><p><strong>Pegadinha clássica — humor × afeto.</strong> O <strong>humor</strong> é o <strong>estado emocional basal que penetra toda a experiência psíquica</strong>: a tela de fundo, a lente afetiva entre o indivíduo e sua percepção do mundo (os "óculos melancólicos" que tornam o mundo triste), também definido como a <strong>média dos afetos</strong>. O <strong>afeto</strong> é o <strong>componente emocional vinculado a uma ideia</strong>: a tristeza que acompanha a notícia da morte do cachorro de 16 anos. Se a alternativa inverter os dois, está errada.</p></blockquote>
+<p>Os tipos de humor: <strong>eutímico</strong> (não polarizado, não distorce a percepção do real), <strong>hipotímico</strong> (depressivo, reduz todas as experiências), <strong>hipertímico</strong> (euforia e expansão, amplia as experiências — tema da aula de transtorno bipolar), <strong>ansioso/disfórico</strong> (na iminência da briga, irritado, altamente sensível) e <strong>pueril</strong> (afetividade infantilizada, principalmente nas deficiências intelectuais).</p>
+<p>As propriedades do afeto: a <strong>incongruência afetiva</strong> é o desacordo entre a ideia e o valor emocional atribuído a ela (falar da morte do cachorro sorrindo de orelha a orelha); a <strong>modulação</strong> é a mudança do afeto de acordo com o conteúdo expresso; o <strong>tônus afetivo</strong> é o tamanho do afeto — aumentado, distorce o pensamento, como na <strong>mania</strong>, em que o afeto grande deforma o círculo do pensamento; e a <strong>ressonância</strong> é o impacto da expressão afetiva do paciente sobre o <strong>aparelho psíquico do examinador</strong> ("esse afeto ressoa em mim").</p>
+<h2>Pensamento: forma, curso e conteúdo</h2>
+<p>O pensamento é <strong>a estrela do exame psíquico</strong>, avaliado em três instâncias:</p>
+<ul><li><strong>Forma</strong> — como os conceitos se organizam. No pensamento linear normal, o conceito 1 se correlaciona ao 2, que se correlaciona ao 3, dirigindo-se ao objetivo da pergunta (o pai que explica que dorme mal porque o filho recém-nascido chora de madrugada). A <strong>sopa de palavras</strong> é a alteração grave: plena fragmentação do discurso, componentes sem agregação, sem construção de frase ("carro azul, fita amarela, céu azul, sol amarelo").</li><li><strong>Curso</strong> — a velocidade: a <strong>quantidade de ideias em uma unidade de tempo</strong>. Muitas ideias no mesmo tempo = curso <strong>acelerado</strong>; poucas ideias = curso <strong>lentificado</strong>. A mesma resposta sobre o sono pode sair acelerada (muitas ideias por unidade de tempo) ou lentificada (ideias espaçadas, com pausas).</li><li><strong>Conteúdo</strong> — os <strong>juízos</strong>: a maneira de afirmar a relação com o mundo, discernir a verdade do erro. O erro é a percepção distorcida por uma <strong>premissa falsa</strong> (achar que os alunos no celular não prestam atenção, quando anotavam a aula). Conteúdos patológicos: melancólico na depressão, de urgência e preocupação na ansiedade, <strong>concreto e empobrecido na deficiência intelectual</strong> (perda da capacidade de abstração — o paciente não interpreta o ditado "água mole em pedra dura").</li></ul>
+<h3>Pensamento de morte, ideação suicida e delírio</h3>
+<p>O <strong>pensamento de morte</strong> é passivo: "morrer seria melhor do que estar vivo", rezar para que Deus leve. A <strong>ideação suicida</strong> é a progressão desse desejo passivo para um <strong>componente ativo</strong>, em que o indivíduo deseja se matar — e, por sua importância, é descrita <strong>à parte</strong> no exame psíquico: <em>"com ideação suicida"</em> ou <em>"sem ideação suicida"</em>.</p>
+<p>O <strong>delírio</strong> é uma alteração do <strong>conteúdo</strong> do pensamento, com conteúdo não real — "uma alucinação no campo do pensamento" — e frequentemente se associa a alucinações (ouvir a voz + acreditar que o vizinho vigia com câmera). Suas três características:</p>
+<ol><li><strong>Conteúdo impossível, irreal</strong>.</li><li><strong>Refratário à argumentação lógica</strong> — convicção extraordinária; "o delírio sempre dá um passo ao lado" para se manter (o paciente do verme na cabeça: a ressonância "não veria o verme" porque ele seria de um material não captável pelo exame).</li><li><strong>Ideia assistêmica/associal</strong> — não compartilhada, individualizada; retira o indivíduo do coletivo de juízo de realidade.</li></ol>
+<p>Outras formas de pensamento: <strong>tangencial</strong> (parece que vai responder, mas não responde ao que foi perguntado), <strong>prolixo</strong> (inclui detalhes dispensáveis, mas <strong>chega ao alvo</strong>) e <strong>arborizado</strong> (desprende-se totalmente da temática central — como o paciente do vídeo inicial, que sai de "o que você faz aqui?" para ervilhas e a princesa; típico da <strong>mania</strong>).</p>
+<h2>Pragmatismo, volição e psicomotricidade</h2>
+<p>O <strong>pragmatismo</strong> é a capacidade de manter as <strong>atividades básicas da vida prática</strong> — frequentemente é o guia para determinar se há prejuízo. Na depressão, há <strong>redução</strong> do pragmatismo (deixa de fazer o que fazia); na mania, o <strong>aumento</strong> do funcionamento também é patológico (pegar um monte de plantões de uma vez).</p>
+<p>A <strong>volição</strong> distingue três atos: o <strong>ato intencional (volitivo)</strong>, elaborado em etapas — intenção → deliberação → decisão → execução (querer ir embora da aula, pensar no professor, decidir ficar); o <strong>ato impulsivo</strong>, ação <strong>sem deliberação</strong>, com a deliberação vindo depois do ato ("levantei, xinguei e saí; não devia ter feito isso"); e a <strong>compulsão</strong>, que tem certa formulação, mas um <strong>avanço irrefreável</strong>: o indivíduo perde o poder de deliberação e, <strong>uma vez iniciado o comportamento, não consegue interrompê-lo</strong> — vai até o esgotamento (o uso compulsivo de cocaína: "vou pegar só um pino" e usa vinte).</p>
+<blockquote><p><strong>Ponto-chave.</strong> Na <strong>impulsividade</strong> há incapacidade de <strong>não iniciar</strong> o comportamento; na <strong>compulsão</strong>, incapacidade de <strong>interromper</strong> o comportamento uma vez iniciado.</p></blockquote>
+<p>A <strong>psicomotricidade</strong> é a maneira pela qual o indivíduo <strong>executa a sua vontade</strong>: pode estar <strong>diminuída</strong> (deprimido acamado) ou <strong>aumentada</strong> (mania, agitação psicomotora). A aula cita ainda <strong>flexibilidade cérea</strong> e <strong>lentificação motora</strong> como alterações psicomotoras.</p></script>
+<script>
+/* ─────────────────────────────────────────────────────────────────────────────
+   CONTRATO DE DADOS — para adaptar a outro tema, troque apenas QUIZ e o resumo.
+   Cada item: { question, options[2..6], correctIndex, explanation }
+   ──────────────────────────────────────────────────────────────────────────── */
+var TITLE      = "Exame Psíquico";
+var EYEBROW    = "Psiquiatria · Semiologia";
+var DISCIPLINA = "Psiquiatria";   // pasta de origem (PED, GO...) — usada pelo índice
+var SUBTITLE = "Do encontro ao pensamento: descrever o psiquismo em linguagem compartilhada";
+var INTRO    = "O exame psíquico como ferramenta diagnóstica e linguagem de comunicação entre médicos: apresentação, consciência, orientação, sensopercepção, atenção, memória, afetividade, pensamento, volição e suas principais alterações psicopatológicas.";
+
+var QUIZ = [
+  {
+    "question": "No pedido de vaga para o hospital psiquiátrico, o que o exame psíquico descrito pelo médico permitiu ao professor entender?",
+    "options": [
+      "O fenômeno observado na paciente, funcionando como linguagem de comunicação entre médicos",
+      "O fenômeno observado na paciente, substituindo a entrevista psiquiátrica com a paciente",
+      "O diagnóstico da paciente, dispensando o exame físico descrito no mesmo pedido",
+      "O diagnóstico da paciente, servindo apenas como registro burocrático do pedido"
+    ],
+    "correctIndex": 0,
+    "explanation": "O exame psíquico é uma linguagem de comunicação entre médicos: a descrição de humor hipertímico, pensamento acelerado, logorreia e delírio de grandeza, persecutório e religioso, sem auto ou heteroagressividade e com insight prejudicado, permitiu ao professor imaginar o fenômeno observado e autorizar a transferência. Além de ferramenta diagnóstica, ele reporta a observação de forma objetiva e compartilhada entre especialidades."
+  },
+  {
+    "question": "Por que o professor afirma que todo médico generalista precisa saber fazer um bom exame psíquico?",
+    "options": [
+      "Pela alta prevalência de depressão e ansiedade leves, que cabem à atenção primária",
+      "Pela baixa prevalência de depressão, que compete apenas ao psiquiatra",
+      "Pelo excesso de psiquiatras, que atendem toda a demanda do país inteiro",
+      "Pela necessidade de substituir a entrevista psiquiátrica pelo exame físico"
+    ],
+    "correctIndex": 0,
+    "explanation": "O Brasil tem em média quase sete psiquiatras para cada 100.000 habitantes, 75% concentrados no Sul e Sudeste, enquanto a prevalência de depressão ao longo da vida gira em torno de 15%. Quadros leves de ansiedade e depressão devem ser tratados e conduzidos por médicos generalistas na atenção primária — e o diagnóstico deles exige um bom exame psíquico."
+  },
+  {
+    "question": "Segundo a aula, por onde começa o exame psíquico?",
+    "options": [
+      "Pelos dados não verbais e primeiras impressões sobre o paciente",
+      "Pela história detalhada dos sintomas relatados pelo paciente",
+      "Pelo histórico de internações psiquiátricas prévias do paciente",
+      "Pelos resultados de exames complementares e de neuroimagem"
+    ],
+    "correctIndex": 0,
+    "explanation": "O exame psíquico começa pelas primeiras impressões, já nos primeiros minutos de contato, com base nos dados não verbais: como o paciente se veste, se porta, sua expressão facial, postura, higiene, autocuidado e atitude frente ao examinador. O paciente fornece dados sobre si mesmo ainda que não diga nada."
+  },
+  {
+    "question": "Por que a família percebe que a paciente com transtorno bipolar está entrando em episódio de mania psicótica?",
+    "options": [
+      "Porque mudam suas roupas e seu padrão de maquiagem, com cores mais chamativas",
+      "Porque ela passa a dormir mais e a se alimentar excessivamente",
+      "Porque ela reduz a fala e evita o contato visual com a família",
+      "Porque ela abandona a higiene pessoal e o autocuidado habitual"
+    ],
+    "correctIndex": 0,
+    "explanation": "A mudança na apresentação é um sinal de alteração psicopatológica: a paciente passa a usar roupas mais chamativas, cores mais vivas e maquiagem mais exagerada, diferente do padrão habitual dela. A aula enfatiza que o parâmetro é a mudança em relação à própria paciente, e não em relação a um grupo ou cultura."
+  },
+  {
+    "question": "Por que o nível de consciência é descrito logo no início do exame psíquico?",
+    "options": [
+      "Porque ele determina e pode comprometer todo o restante da descrição",
+      "Porque ele é o único parâmetro objetivo e mensurável do exame",
+      "Porque sua avaliação dispensa o exame das demais funções psíquicas",
+      "Porque ele só é avaliado quando o paciente está em estado de coma"
+    ],
+    "correctIndex": 0,
+    "explanation": "De um paciente em coma — como o do leito 9, intubado e sedado com midazolam e fentanil após intoxicação exógena — não é possível extrair pensamento, humor ou volição; o exame fica reduzido a uma linha. Da mesma forma, o paciente contido quimicamente (Haldol com fenergan ou midazolam IM) fica sonolento, e todo o restante da avaliação é prejudicado."
+  },
+  {
+    "question": "Como a aula define a consciência para fins psicopatológicos?",
+    "options": [
+      "Capacidade de entrar em contato com a realidade e reconhecer seus objetos",
+      "Capacidade de recordar fatos da própria biografia e do ambiente",
+      "Capacidade de hierarquizar estímulos e dirigir a atenção a eles",
+      "Capacidade de executar vontades por meio da psicomotricidade"
+    ],
+    "correctIndex": 0,
+    "explanation": "A consciência é a capacidade de entrar em contato com a realidade circundante, perceber e reconhecer os objetos externos e internos — por isso o sono é uma redução fisiológica da consciência. Ela tem aspecto quantitativo (variação vertical da percepção, da vigília ao coma) e qualitativo (integração e organização das informações em um dado para o indivíduo)."
+  },
+  {
+    "question": "A Escala de Coma de Glasgow avalia qual aspecto da consciência?",
+    "options": [
+      "O aspecto quantitativo, da vigília até o coma",
+      "O aspecto qualitativo, da dissociação até a integração",
+      "O aspecto volitivo, do impulso até a deliberação",
+      "O aspecto afetivo, do humor eutímico ao disfórico"
+    ],
+    "correctIndex": 0,
+    "explanation": "A quantidade de consciência é a variação vertical de percepção dos estímulos, entre a vigília e o coma, que a Escala de Coma de Glasgow quantifica. A qualidade da consciência — integração das informações — não é captada pela escala e é objeto das alterações qualitativas, como os quadros dissociativos."
+  },
+  {
+    "question": "Qual a diferença entre torpor e sopor descrita na aula?",
+    "options": [
+      "O estímulo necessário para interromper a sonolência, mais vigoroso no sopor",
+      "A resposta ao estímulo doloroso, presente apenas no estado de torpor",
+      "A manutenção da vigília plena, preservada apenas no estado de torpor",
+      "A integridade da orientação, que se preserva apenas no estado de sopor"
+    ],
+    "correctIndex": 0,
+    "explanation": "Torpor e sopor têm estado basal de sonolência; a diferença é o estímulo para interrompê-la. No torpor basta um estímulo ambiental mais vigoroso, como chamar o nome do paciente; no sopor o estímulo precisa ser mais vigoroso e aplicado diretamente sobre ele (por exemplo, sacudi-lo), e ele tende a voltar ao estado basal de sonolência."
+  },
+  {
+    "question": "Como a aula descreve o estado de coma?",
+    "options": [
+      "Abolição da consciência, sem resposta mesmo ao estímulo doloroso",
+      "Redução leve da consciência, com confusão ao integrar informações",
+      "Sonolência basal que desperta com estímulo ambiental vigoroso",
+      "Estreitamento da consciência, com percepção distorcida do mundo"
+    ],
+    "correctIndex": 0,
+    "explanation": "O coma é a abolição da consciência, a mais bruta redução do nível de consciência: o indivíduo não percebe o mundo ao redor e não responde sequer a um estímulo doloroso aplicado sobre ele. Já a confusão ao integrar informações é a obnubilação, e a sonolência basal é própria do torpor e do sopor."
+  },
+  {
+    "question": "O caso da paciente que, após ver a transferência dos ossos do marido no cemitério, andou a esmo por São Paulo ilustra qual alteração?",
+    "options": [
+      "Quadro dissociativo, alteração qualitativa da consciência",
+      "Obnubilação, alteração quantitativa da consciência",
+      "Delírio, alteração do conteúdo do pensamento",
+      "Ilusão, alteração qualitativa da senso percepção"
+    ],
+    "correctIndex": 0,
+    "explanation": "A paciente lia as placas (percebia o mundo), mas não conseguia integrar essas informações para se direcionar para casa — não era sonolência nem falta de percepção. Quando existe essa desintegração das informações, temos os quadros dissociativos, que são alterações qualitativas da consciência, aqui desencadeados por um intenso estressor psíquico."
+  },
+  {
+    "question": "Qual pergunta avalia a orientação autopsíquica do paciente?",
+    "options": [
+      "Quem é você e quantos anos você tem agora?",
+      "Que dia é hoje e em que ano nós estamos?",
+      "Que local é esse e em que bairro você está?",
+      "Que horas são e há quanto tempo você está aqui?"
+    ],
+    "correctIndex": 0,
+    "explanation": "A orientação autopsíquica diz respeito à biografia: quem é você, quantos anos tem, é casado, tem filhos, trabalha, de onde veio. A orientação alopsíquica diz respeito ao meio, ao tempo e ao espaço: que dia é hoje, em que ano estamos, que local, bairro e cidade é esse. Alterações quantitativas ou qualitativas da consciência costumam se expressar como desorientação."
+  },
+  {
+    "question": "Como a aula diferencia sensação de percepção?",
+    "options": [
+      "Sensação é o ato cru estímulo-receptor; percepção acrescenta significado",
+      "Sensação integra estímulos; percepção capta o estímulo pelo receptor",
+      "Sensação é sempre auditiva; percepção é sempre do tipo visual",
+      "Sensação ocorre no SNC; percepção ocorre nos órgãos dos sentidos"
+    ],
+    "correctIndex": 0,
+    "explanation": "A sensação é o ato original, a interação mais crua entre um estímulo e a célula sensível que o capta, ativando os receptores dos órgãos dos sentidos. A percepção ocorre quando essa sensação chega à consciência acrescida de um significado — não apenas vejo vocês, mas construo um sentido sobre o que vejo."
+  },
+  {
+    "question": "O que é a hiperestesia, exemplificada na aula pela experiência com Ayahuasca?",
+    "options": [
+      "Estímulo percebido de forma ampliada, mais intenso ou mais duradouro",
+      "Percepção de estímulo sem correspondente real no ambiente",
+      "Percepção distorcida de um estímulo que existe no ambiente",
+      "Ausência de percepção dos estímulos do ambiente ao redor"
+    ],
+    "correctIndex": 0,
+    "explanation": "Na hiperestesia o estímulo é sustentado por mais tempo ou percebido de maneira ampliada em relação ao que realmente é: cores mais vívidas, sons mais nítidos e volumosos. Pode ocorrer por uso de substâncias, principalmente cogumelos e Ayahuasca, que ampliam a percepção dos estímulos."
+  },
+  {
+    "question": "Qual a definição de alucinação apresentada na aula?",
+    "options": [
+      "Percepção de um objeto sem o estímulo sensorial respectivo",
+      "Percepção distorcida de um estímulo real do ambiente",
+      "Ampliação da intensidade de um estímulo real existente",
+      "Crença irreal refratária à argumentação lógica"
+    ],
+    "correctIndex": 0,
+    "explanation": "A alucinação é a percepção de um objeto sem que este esteja presente, sem o estímulo sensorial respectivo — como o paciente que ouve uma voz que o manda se matar, percebendo-a com a mesma realidade com que percebe a voz do examinador. A percepção distorcida de um estímulo real é a ilusão, e a crença irreal refratária à lógica é o delírio."
+  },
+  {
+    "question": "O paciente etilista que confunde o equipo do soro com uma serpente apresenta qual fenômeno?",
+    "options": [
+      "Ilusão, pois há um estímulo real percebido de forma distorcida",
+      "Alucinação, pois percebe algo sem estímulo correspondente",
+      "Hiperestesia, pois percebe o estímulo com intensidade ampliada",
+      "Delírio, pois apresenta crença irreal refratária à lógica"
+    ],
+    "correctIndex": 0,
+    "explanation": "Na ilusão existe um estímulo real — o equipo do soro — mas ele é percebido de forma distorcida, como uma serpente, o que agita o paciente no pronto-socorro. Diferente da alucinação, em que o estímulo não existe. Ilusões visuais surgem de móveis, roupas e objetos; ilusões auditivas fazem o paciente ouvir o próprio nome a partir de sons inespecíficos."
+  },
+  {
+    "question": "Qual tipo de alucinação é o mais comum na psiquiatria?",
+    "options": [
+      "Auditiva, como ouvir vozes",
+      "Visual, como ver pessoas",
+      "Tátil, como insetos no corpo",
+      "Olfativa, como cheiro de podre"
+    ],
+    "correctIndex": 0,
+    "explanation": "As alucinações auditivas são as mais comuns na psiquiatria — o paciente clássico ouve vozes, como a voz masculina que mandava o paciente se matar. As visuais são menos frequentes na psiquiatria e mais relacionadas a quadros orgânicos; as táteis e olfativas também existem, e todos os órgãos dos sentidos são passíveis de alucinação."
+  },
+  {
+    "question": "A Síndrome de Ekbom é um exemplo de qual alteração de senso percepção?",
+    "options": [
+      "Alucinação tátil, com sensação de insetos sobre o corpo",
+      "Alucinação visual, com visão de pessoas e monstros",
+      "Ilusão auditiva, com sons transformados em chamamentos",
+      "Hiperestesia, com estímulos percebidos em amplitude maior"
+    ],
+    "correctIndex": 0,
+    "explanation": "Na Síndrome de Ekbom o paciente passa a acreditar que há múltiplos insetos caminhando sobre o seu corpo — uma alucinação tátil. A aula também cita a alucinação olfativa da paciente deprimida que sentia cheiro de podre sem estímulo correspondente no ambiente."
+  },
+  {
+    "question": "Qual é a função da atenção, segundo a metáfora do farol usada na aula?",
+    "options": [
+      "Hierarquizar os estímulos do ambiente, dirigindo a consciência a eles",
+      "Registrar e evocar as informações já percebidas pela consciência",
+      "Atribuir significado afetivo às percepções do ambiente",
+      "Manter o nível de vigília independente dos estímulos externos"
+    ],
+    "correctIndex": 0,
+    "explanation": "A atenção direciona a consciência — como um farol — para determinados estímulos, hierarquizando-os para que sejam percebidos com maior clareza e definição. Ela é flutuante com o tempo e depende do valor dos estímulos para o indivíduo e de fatores energéticos, como o cansaço; o TDAH é a alteração primária da atenção, mas depressão e ansiedade também a afetam."
+  },
+  {
+    "question": "Como a memória é descrita no exame psíquico, segundo a aula?",
+    "options": [
+      "De forma indireta, pela capacidade de narrar e organizar a própria história",
+      "De forma direta, aplicando testes formais de registro e evocação",
+      "Apenas quando o paciente relata queixas espontâneas de esquecimento",
+      "Por meio da neuroimagem e de testes neuropsicológicos formais"
+    ],
+    "correctIndex": 0,
+    "explanation": "No exame psíquico a memória é descrita indiretamente: pela capacidade de narrar e organizar a própria história, infere-se a capacidade de registrar, manter e evocar fatos já ocorridos. A avaliação formal exigiria aplicar um teste sobre o indivíduo; por isso a linha habitual é 'sem sinais indiretos de alterações mnemônicas'."
+  },
+  {
+    "question": "Como a aula define a afetividade?",
+    "options": [
+      "Sistema de valoração das experiências entre agradáveis e desagradáveis",
+      "Capacidade de perceber os estímulos do mundo sensível ao redor",
+      "Capacidade de hierarquizar estímulos para compreendê-los com clareza",
+      "Sistema de integração das informações do ambiente em um dado"
+    ],
+    "correctIndex": 0,
+    "explanation": "A afetividade é o sistema de valoração das experiências: por meio dela vemos o mundo como agradável ou desagradável — experiências de valência positiva (que gostaríamos que se perpetuassem) e de valência negativa (que gostaríamos que se encerrassem). Alegria, tristeza, raiva, ciúmes e vergonha são afetos, valorações da experiência."
+  },
+  {
+    "question": "Qual a diferença entre humor e afeto, destacada na aula como pergunta clássica de prova?",
+    "options": [
+      "Humor é o estado basal que permeia a experiência; afeto é o componente ligado a uma ideia",
+      "Humor é a expressão momentânea; afeto é o estado que permeia toda a experiência",
+      "Humor e afeto são termos sinônimos usados para o mesmo fenômeno no exame",
+      "Humor é sempre patológico; afeto é sempre preservado no exame psíquico"
+    ],
+    "correctIndex": 0,
+    "explanation": "O humor é a tela de fundo ou a lente afetiva que se sobrepõe entre o indivíduo e sua percepção do mundo — o estado emocional basal que penetra toda a experiência, também definido como a média dos afetos. O afeto é o pincel: o componente emocional vinculado a uma ideia, como a tristeza que acompanha a notícia da morte do cachorro. No exame psíquico descrevemos humor e afeto; emoção e sentimento não são descritos."
+  },
+  {
+    "question": "Qual tipo de humor é descrito como não polarizado, sem distorcer a percepção do real?",
+    "options": [
+      "Eutímico: humor não polarizado",
+      "Hipotímico: humor depressivo",
+      "Hipertímico: euforia e expansão",
+      "Pueril: afetividade infantilizada"
+    ],
+    "correctIndex": 0,
+    "explanation": "O humor eutímico é o não polarizado, aquele que não produz distorções entre o real e a percepção. O hipotímico é o humor depressivo, que reduz todas as experiências; o hipertímico é a euforia e a expansão, ampliação de todas as experiências; o pueril é a afetividade infantilizada, vista principalmente nas deficiências intelectuais."
+  },
+  {
+    "question": "Quando o paciente fala da morte do cachorro de 16 anos sorrindo de orelha a orelha, como se descreve o afeto?",
+    "options": [
+      "Incongruente, com desacordo entre a ideia e a expressão emocional",
+      "Modulado, com mudança do afeto conforme o conteúdo da ideia",
+      "Aumentado, com expressão desproporcional ao conteúdo",
+      "Ressonante, com impacto do afeto sobre o examinador"
+    ],
+    "correctIndex": 0,
+    "explanation": "Existe incongruência afetiva quando não há congruência entre a ideia, seu conteúdo e o valor emocional atribuído a ela — como falar da morte do cachorro sorrindo. Modulação é mudar o afeto de acordo com o conteúdo expresso; tônus é o tamanho do afeto; e ressonância é o impacto da expressão afetiva sobre o aparelho psíquico do examinador."
+  },
+  {
+    "question": "Na representação da aula, o afeto grande demais que distorce o círculo do pensamento ilustra qual conceito?",
+    "options": [
+      "Tônus afetivo aumentado, como no quadro de mania",
+      "Incongruência afetiva, com desacordo entre ideia e expressão",
+      "Ressonância aumentada, com impacto sobre o examinador",
+      "Modulação preservada, com afeto acompanhando o conteúdo"
+    ],
+    "correctIndex": 0,
+    "explanation": "O tamanho do afeto é o que a aula chama de tônus afetivo. Quando o afeto cresce a ponto de distorcer o círculo do pensamento, temos o tônus afetivo aumentado — a aula exemplifica com a mania: um afeto muito grande distorcendo o pensamento do paciente. Na figura seguinte, sorrir ao falar da própria tristeza ilustra a incongruência."
+  },
+  {
+    "question": "Quais são as três grandes instâncias avaliadas no pensamento?",
+    "options": [
+      "Forma, curso e conteúdo",
+      "Sensação, percepção e memória",
+      "Vigília, atenção e juízo",
+      "Intenção, deliberação e ação"
+    ],
+    "correctIndex": 0,
+    "explanation": "O pensamento — chamado de estrela do exame psíquico — é avaliado em três instâncias: a forma (a maneira como os conceitos se organizam), o curso (a velocidade com que as ideias são apresentadas em uma unidade de tempo) e o conteúdo (os juízos, a afirmação da relação do indivíduo com o mundo)."
+  },
+  {
+    "question": "O discurso 'carro azul, fita amarela, céu azul, sol amarelo' é exemplo de qual alteração?",
+    "options": [
+      "Sopa de palavras, alteração grave da forma do pensamento",
+      "Pensamento prolixo, com detalhes dispensáveis no discurso",
+      "Pensamento tangencial, sem responder ao que foi perguntado",
+      "Pensamento arborizado, desprendendo-se totalmente do alvo"
+    ],
+    "correctIndex": 0,
+    "explanation": "Na sopa de palavras existe plena fragmentação do discurso: componentes que não estão agregados entre si, sem construção de frase — uma alteração grave da forma do pensamento. O pensamento linear normal encadeia conceitos correlacionados em direção ao objetivo da pergunta, como o paciente que explica por que tem dormido mal."
+  },
+  {
+    "question": "O que determina o curso do pensamento estar acelerado ou lentificado?",
+    "options": [
+      "A quantidade de ideias produzidas em uma unidade de tempo",
+      "A coerência entre as ideias encadeadas no discurso",
+      "O grau de abstração dos conceitos utilizados no raciocínio",
+      "A capacidade de dirigir as ideias ao objetivo da pergunta"
+    ],
+    "correctIndex": 0,
+    "explanation": "O curso diz respeito à velocidade: quanto mais ideias em uma unidade de tempo, mais apressado é o curso (acelerado); quanto menos ideias, mais vagaroso (lentificado) — o exemplo da aula compara a mesma resposta sobre o sono contada depressa ou com pausas. A organização dos conceitos é a forma do pensamento."
+  },
+  {
+    "question": "Qual a diferença entre pensamento de morte e ideação suicida?",
+    "options": [
+      "Pensamento de morte é passivo; a ideação suicida agrega o desejo ativo de se matar",
+      "Pensamento de morte envolve plano; a ideação suicida é apenas desejo passivo",
+      "Pensamento de morte é sempre psicótico; a ideação suicida é sempre reativa",
+      "Pensamento de morte ocorre na depressão; a ideação suicida, na mania"
+    ],
+    "correctIndex": 0,
+    "explanation": "Pensamento de morte é passivo — 'morrer seria melhor do que estar vivo', rezar para que Deus leve. A ideação suicida é a progressão desse desejo passivo para um componente ativo, em que o indivíduo deseja se matar. Por sua importância, a ideação suicida é descrita à parte no exame psíquico: 'com ideação suicida' ou 'sem ideação suicida'."
+  },
+  {
+    "question": "Quais são as características do delírio apresentadas na aula?",
+    "options": [
+      "Conteúdo irreal, refratário à lógica e não compartilhado",
+      "Conteúdo irreal, corrigível pela lógica e compartilhado",
+      "Conteúdo possível, refratário à lógica e individualizado",
+      "Conteúdo possível, corrigível pela argumentação e individualizado"
+    ],
+    "correctIndex": 0,
+    "explanation": "O delírio é alteração do conteúdo do pensamento com conteúdo não real (1), refratário à argumentação lógica — o paciente tem convicção extraordinária, e 'o delírio sempre dá um passo ao lado' para se manter (2) — e é uma ideia assistêmica, não compartilhada, que retira o indivíduo do coletivo de juízo de realidade (3). Frequentemente se associa a alucinações."
+  },
+  {
+    "question": "Qual a diferença entre impulsividade e compulsão, apresentada na aula?",
+    "options": [
+      "Na impulsividade há falha em não iniciar; na compulsão, falha em interromper o ato",
+      "Na impulsividade há falha em interromper; na compulsão, falha em iniciar o ato",
+      "Na impulsividade há deliberação; na compulsão, execução imediata sem intenção",
+      "Na impulsividade há esgotamento; na compulsão, arrependimento após o ato"
+    ],
+    "correctIndex": 0,
+    "explanation": "O ato impulsivo é a ação sem deliberação, com a deliberação vindo depois do ato — 'levantei, xinguei e saí; não devia ter feito isso'. Na compulsão há certa formulação do comportamento, mas um avanço irrefreável: uma vez iniciado, o indivíduo perde a capacidade de interrompê-lo e vai até o esgotamento. A psicomotricidade é a maneira pela qual o indivíduo executa a vontade."
+  }
+];
+
+var LETTERS = ['A','B','C','D','E','F'];
+var SHUFFLE = true, LOCK = true;
+
+var S = { view:'home', started:false, finished:false, i:0, order:[], answers:[], open:{}, filter:'all', warn:false };
+
+function esc(s){ return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
+function pad(n){ return String(n).padStart(2,'0'); }
+
+function build(){
+  var qs = QUIZ.map(function(q,id){ return { question:q.question, options:q.options.slice(), correctIndex:q.correctIndex, explanation:q.explanation, image:q.image, imageCaption:q.imageCaption, id:id }; });
+  if (!SHUFFLE) return qs;
+  for (var i=qs.length-1;i>0;i--){ var j=Math.floor(Math.random()*(i+1)); var t=qs[i]; qs[i]=qs[j]; qs[j]=t; }
+  return qs.map(function(q){
+    var correct = q.options[q.correctIndex], o = q.options.slice();
+    for (var i=o.length-1;i>0;i--){ var j=Math.floor(Math.random()*(i+1)); var t=o[i]; o[i]=o[j]; o[j]=t; }
+    q.options = o; q.correctIndex = o.indexOf(correct); return q;
+  });
+}
+
+/* ── ações ─────────────────────────────────────────────────────────────────── */
+var A = {
+  home:      function(){ S.view='home'; S.started=false; S.finished=false; up(0); },
+  resumo:    function(){ S.view='resumo'; up(0); },
+  start:     function(){ var o=build(); S.view='quiz'; S.started=true; S.finished=false; S.i=0; S.order=o;
+                         S.answers=new Array(o.length).fill(null); S.open={}; S.filter='all'; S.warn=false; up(0); },
+  restart:   function(){ A.start(); },
+  go:        function(n){ if(n<0||n>S.order.length-1) return; S.i=n; S.warn=false; render(); },
+  jump:      function(n){ if(S.finished){ S.finished=false; S.i=n; S.warn=false; } else { if(n<0||n>S.order.length-1) return; S.i=n; S.warn=false; } up(0,'smooth'); },
+  pick:      function(n){ if(LOCK && S.answers[S.i]!==null) return; S.answers[S.i]=n; render(); },
+  prev:      function(){ A.go(S.i-1); },
+  next:      function(){ if(S.i<S.order.length-1) A.go(S.i+1); else A.finish(); },
+  finish:    function(){ var b=S.answers.filter(function(a){return a===null}).length;
+                         if(b>0 && !S.warn){ S.warn=true; render(); return; } S.finished=true; S.warn=false; up(0); },
+  force:     function(){ S.finished=true; S.warn=false; up(0); },
+  gotoBlank: function(){ var n=S.answers.findIndex(function(a){return a===null}); if(n>=0) A.go(n); },
+  back:      function(){ S.finished=false; S.warn=false; up(0); },
+  filter:    function(k){ S.filter=k; render(); },
+  toggle:    function(n){ S.open[n]=!S.open[n]; render(); },
+  toggleAll: function(){ var r=reviewList(), all=r.length>0 && r.every(function(x){return S.open[x.idx]});
+                         S.open={}; if(!all) r.forEach(function(x){ S.open[x.idx]=true; }); render(); }
+};
+function up(top, beh){ render(); window.scrollTo({ top: top||0, behavior: beh||'auto' }); }
+
+/* ── header ────────────────────────────────────────────────────────────────── */
+function renderHeader(){
+  var mono = "font-family:'IBM Plex Mono',monospace";
+  var left =
+    '<div style="min-width:0">' +
+      '<div style="'+mono+';font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:#8a8578">'+esc(EYEBROW)+'</div>' +
+      '<h1 style="margin:1px 0 0;font-family:\'Newsreader\',Georgia,serif;font-size:20px;font-weight:500;letter-spacing:-.01em;line-height:1.15">'+esc(TITLE)+'</h1>' +
+    '</div>';
+
+  var right = '';
+  if (S.view === 'quiz' && S.started) {
+    var hit = counts().hit;
+    right = '<div style="display:flex;align-items:center;gap:6px;flex-shrink:0">' +
+              '<span style="'+mono+';font-size:15px;font-weight:600;letter-spacing:-.02em">'+hit+'</span>' +
+              '<span style="'+mono+';font-size:11px;color:#8a8578">/ '+S.order.length+'</span>' +
+            '</div>';
+  } else if (S.view !== 'home') {
+    right = '<button type="button" data-act="home" class="h-line" style="flex-shrink:0;background:none;border:1px solid #ddd8ce;border-radius:9px;padding:7px 13px;'+mono+';font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:#5b6478;cursor:pointer;transition:border-color .15s ease">← Início</button>';
+  }
+
+  var html = '<div style="display:flex;align-items:baseline;justify-content:space-between;gap:12px;margin-bottom:'+(S.view==='quiz'&&S.started?'10px':'2px')+'">'+left+right+'</div>';
+
+  if (S.view === 'quiz' && S.started) {
+    var c = counts();
+    var rail = S.order.map(function(q,n){
+      var a = S.answers[n], cur = n===S.i && !S.finished, bg = '#d3cec4';
+      if (a!==null) bg = (a===q.correctIndex) ? '#2e7d55' : '#c04437';
+      if (cur && a===null) bg = '#121a2b';
+      var st = a===null ? 'em branco' : (a===q.correctIndex ? 'correta' : 'incorreta');
+      return '<button type="button" data-act="jump" data-n="'+n+'" title="Questão '+(n+1)+' — '+st+'" aria-label="Questão '+(n+1)+' — '+st+'" style="flex:1 1 0;min-width:0;background:none;border:0;padding:13px 0;margin:0;cursor:pointer;display:flex;align-items:center;justify-content:center">' +
+             '<span style="display:block;width:100%;border-radius:99px;transition:height .18s ease,background .18s ease,box-shadow .18s ease;height:'+(cur?'17px':'9px')+';background:'+bg+';box-shadow:'+(cur?'0 0 0 3px rgba(18,26,43,.13)':'none')+'"></span></button>';
+    }).join('');
+    html += '<div><div style="display:flex;align-items:center;gap:3px">'+rail+'</div>' +
+            '<div style="display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:-2px">' +
+              '<div style="'+mono+';font-size:11px;letter-spacing:.04em;color:#5b6478">Questão '+pad(S.i+1)+' / '+S.order.length+'</div>' +
+              '<div style="display:flex;align-items:center;gap:12px;'+mono+';font-size:10.5px;color:#8a8578">' +
+                dot('#2e7d55',c.hit)+dot('#c04437',c.miss)+dot('#d3cec4',c.blank) +
+              '</div></div></div>';
+  }
+  document.getElementById('hdr').innerHTML = html;
+}
+function dot(color,n){ return '<span style="display:flex;align-items:center;gap:5px"><span style="width:7px;height:7px;border-radius:99px;background:'+color+';display:block"></span>'+n+'</span>'; }
+
+function counts(){
+  var hit=0, miss=0, blank=0;
+  S.answers.forEach(function(a,n){
+    if (a===null) blank++;
+    else if (S.order[n] && a===S.order[n].correctIndex) hit++;
+    else miss++;
+  });
+  return { hit:hit, miss:miss, blank:blank, total:S.order.length };
+}
+
+/* ── tela inicial ──────────────────────────────────────────────────────────── */
+function renderHome(){
+  var mono = "font-family:'IBM Plex Mono',monospace";
+  var secoes = (document.getElementById('resumoSrc').textContent.match(/<h2/g)||[]).length;
+  var cell = function(v,l){
+    return '<div style="background:#faf9f6;padding:16px 14px">' +
+      '<div style="'+mono+';font-size:22px;font-weight:500;letter-spacing:-.03em">'+v+'</div>' +
+      '<div style="'+mono+';font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:#8a8578;margin-top:3px">'+l+'</div></div>';
+  };
+  var card = function(act,tag,titulo,desc,cta){
+    return '<button type="button" data-act="'+act+'" class="h-card" style="display:flex;flex-direction:column;align-items:flex-start;gap:0;text-align:left;background:#fff;border:1px solid #e4e0d8;border-radius:18px;padding:24px 22px;cursor:pointer;transition:border-color .16s ease,transform .14s ease;box-shadow:0 1px 2px rgba(18,26,43,.04),0 12px 28px -20px rgba(18,26,43,.18)">' +
+      '<div style="'+mono+';font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:#2b57cc;margin-bottom:12px">'+tag+'</div>' +
+      '<div style="font-family:\'Newsreader\',Georgia,serif;font-size:26px;font-weight:500;letter-spacing:-.02em;line-height:1.15;margin-bottom:8px">'+titulo+'</div>' +
+      '<div style="font-size:14px;line-height:1.6;color:#5b6478;margin-bottom:18px;text-wrap:pretty">'+desc+'</div>' +
+      '<div style="'+mono+';font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:#121a2b">'+cta+'</div></button>';
+  };
+
+  document.getElementById('stage').innerHTML =
+    '<section style="padding:56px 0 0;animation:qFade .3s ease">' +
+      '<div style="'+mono+';font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:#2b57cc;margin-bottom:16px">Material de revisão</div>' +
+      '<h2 style="font-family:\'Newsreader\',Georgia,serif;font-size:40px;line-height:1.08;font-weight:400;letter-spacing:-.025em;margin:0 0 18px;text-wrap:pretty">'+esc(SUBTITLE)+'</h2>' +
+      '<p style="font-size:15.5px;line-height:1.65;color:#5b6478;margin:0 0 30px;max-width:52ch;text-wrap:pretty">'+esc(INTRO)+'</p>' +
+      '<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(108px,1fr));gap:1px;background:#e4e0d8;border:1px solid #e4e0d8;border-radius:14px;overflow:hidden;margin-bottom:32px">' +
+        cell(QUIZ.length,'Questões') + cell(secoes,'Seções') + cell('~'+Math.round(QUIZ.length*0.75),'Minutos') +
+      '</div>' +
+      '<div class="home-grid" style="display:grid;grid-template-columns:1fr 1fr;gap:12px">' +
+        card('start','Praticar','Quiz', QUIZ.length+' questões de múltipla escolha, com explicação assim que você responde e gabarito comentado no fim.','Começar →') +
+        card('resumo','Estudar','Resumo','O conteúdo da aula em texto corrido, organizado em '+secoes+' seções para leitura antes da prova.','Ler →') +
+      '</div>' +
+      '<div style="margin-top:26px;display:flex;flex-wrap:wrap;gap:8px 18px;'+mono+';font-size:11px;color:#8a8578">' +
+        '<span>← →&nbsp; navegar</span><span>1–'+maxOpts()+'&nbsp; responder</span><span>Enter&nbsp; avançar</span></div>' +
+    '</section>';
+}
+function maxOpts(){ return QUIZ.reduce(function(m,q){ return Math.max(m,q.options.length); },0); }
+
+/* ── resumo ────────────────────────────────────────────────────────────────── */
+function renderResumo(){
+  document.getElementById('stage').innerHTML =
+    '<section style="padding:34px 0 0;animation:qFade .3s ease">' +
+      '<div style="font-family:\'IBM Plex Mono\',monospace;font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:#2b57cc;margin-bottom:14px">Resumo</div>' +
+      '<div class="rsm">' + document.getElementById('resumoSrc').textContent + '</div>' +
+      '<div style="display:flex;flex-wrap:wrap;gap:9px;margin-top:38px;padding-top:24px;border-top:1px solid #e4e0d8">' +
+        '<button type="button" data-act="start" class="h-darkflat" style="background:#121a2b;color:#f5f3ef;border:0;border-radius:11px;padding:13px 24px;font-size:14px;font-weight:500;cursor:pointer;transition:background .16s ease">Fazer o quiz →</button>' +
+        '<button type="button" data-act="home" class="h-line" style="background:none;border:1px solid #ddd8ce;border-radius:11px;padding:13px 22px;font-size:14px;cursor:pointer;transition:border-color .15s ease">Voltar ao início</button>' +
+      '</div></section>';
+}
+
+/* imagem da questao — data URI ja resolvida pelo montar_quiz.py */
+function figura(q, cls){
+  if (!q.image) return '';
+  return '<figure class="fig'+(cls?' '+cls:'')+'"><img src="'+q.image+'" alt="'+esc(q.imageCaption||'Imagem da questão')+'">' +
+         (q.imageCaption ? '<figcaption>'+esc(q.imageCaption)+'</figcaption>' : '') + '</figure>';
+}
+
+/* ── questão ───────────────────────────────────────────────────────────────── */
+function renderQuestion(){
+  var mono = "font-family:'IBM Plex Mono',monospace";
+  var q = S.order[S.i], ans = S.answers[S.i], reveal = ans !== null;
+
+  var status = 'Não respondida', sColor = '#8a8578';
+  if (reveal) { var ok = ans===q.correctIndex; status = ok?'Você acertou':'Você errou'; sColor = ok?'#2e7d55':'#c04437'; }
+
+  var opts = q.options.map(function(text,n){
+    var isC = n===q.correctIndex, isMine = n===ans;
+    var bd='#e4e0d8', bg='#fff', fg='#121a2b', bBg='#f2efe9', bFg='#8a8578', mark='', mColor='', op='1', hbd='#2b57cc';
+    if (reveal) {
+      op = (isC||isMine) ? '1' : '.62';
+      if (isC)               { bd='#8fc7a7'; bg='#eef7f1'; fg='#1f5c3e'; bBg='#2e7d55'; bFg='#fff'; mark='✓'; mColor='#2e7d55'; }
+      if (isMine && !isC)    { bd='#e0a49a'; bg='#fdf0ee'; fg='#8f2f25'; bBg='#c04437'; bFg='#fff'; mark='✕'; mColor='#c04437'; }
+    } else if (isMine)       { bd='#121a2b'; bg='#f7f6f2'; bBg='#121a2b'; bFg='#f5f3ef'; }
+    var locked = reveal && LOCK;
+    return '<button type="button" data-act="pick" data-n="'+n+'" class="h-opt'+(locked?' locked':'')+'" style="--hbd:'+hbd+';display:flex;gap:13px;align-items:flex-start;width:100%;text-align:left;padding:14px 15px;border-radius:13px;font-size:15px;line-height:1.5;transition:border-color .15s ease,background .15s ease,transform .12s ease;border:1.5px solid '+bd+';background:'+bg+';color:'+fg+';cursor:'+(locked?'default':'pointer')+';opacity:'+op+'">' +
+      '<span style="flex-shrink:0;width:24px;height:24px;border-radius:7px;display:flex;align-items:center;justify-content:center;'+mono+';font-size:11.5px;font-weight:600;margin-top:1px;background:'+bBg+';color:'+bFg+'">'+LETTERS[n]+'</span>' +
+      '<span style="flex:1;min-width:0;text-wrap:pretty">'+esc(text)+'</span>' +
+      (mark ? '<span style="flex-shrink:0;'+mono+';font-size:14px;font-weight:600;margin-top:1px;color:'+mColor+'">'+mark+'</span>' : '') +
+      '</button>';
+  }).join('');
+
+  var expl = reveal ? '<div style="margin-top:20px;padding:16px 18px;background:#f7f6f2;border-left:2.5px solid #2b57cc;border-radius:0 12px 12px 0;animation:qFade .26s ease">' +
+      '<div style="'+mono+';font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:#2b57cc;margin-bottom:8px">Por quê</div>' +
+      '<p style="margin:0;font-size:14.5px;line-height:1.68;color:#39404f;text-wrap:pretty">'+esc(q.explanation)+'</p></div>' : '';
+
+  var blank = counts().blank;
+  var warn = S.warn ? '<div style="margin-top:14px;padding:15px 17px;background:#fdf7e9;border:1px solid #e8d5a3;border-radius:14px;animation:qFade .22s ease">' +
+      '<p style="margin:0 0 12px;font-size:14px;line-height:1.55;color:#6b5620">'+blank+(blank===1?' questão ainda está em branco.':' questões ainda estão em branco.')+' Você pode voltar nelas ou finalizar assim mesmo.</p>' +
+      '<div style="display:flex;flex-wrap:wrap;gap:8px">' +
+        '<button type="button" data-act="gotoBlank" style="background:#121a2b;color:#f5f3ef;border:0;border-radius:9px;padding:9px 16px;font-size:13px;font-weight:500;cursor:pointer">Ir para a 1ª em branco</button>' +
+        '<button type="button" data-act="force" style="background:none;color:#6b5620;border:1px solid #e8d5a3;border-radius:9px;padding:9px 16px;font-size:13px;cursor:pointer">Finalizar assim mesmo</button>' +
+      '</div></div>' : '';
+
+  var last = S.i === S.order.length-1;
+  var early = !last && (S.order.length - blank) > 0;
+
+  document.getElementById('stage').innerHTML =
+    '<section style="padding:26px 0 0">' +
+      '<article style="background:#fff;border:1px solid #e4e0d8;border-radius:18px;padding:26px 22px 24px;box-shadow:0 1px 2px rgba(18,26,43,.04),0 12px 28px -18px rgba(18,26,43,.18)">' +
+        '<div style="display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:14px">' +
+          '<div style="'+mono+';font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:#2b57cc">Questão '+pad(S.i+1)+'</div>' +
+          '<div style="'+mono+';font-size:10.5px;letter-spacing:.06em;color:'+sColor+'">'+status+'</div>' +
+        '</div>' +
+        '<h2 style="font-family:\'Newsreader\',Georgia,serif;font-size:22px;line-height:1.42;font-weight:400;letter-spacing:-.012em;margin:0 0 22px;text-wrap:pretty">'+esc(q.question)+'</h2>' +
+        figura(q, 'qfig') +
+        '<div style="display:flex;flex-direction:column;gap:9px">'+opts+'</div>' + expl +
+      '</article>' + warn +
+      '<div style="display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:18px">' +
+        '<button type="button" data-act="prev" class="h-line" style="background:none;border:1px solid #ddd8ce;border-radius:11px;padding:12px 18px;font-size:14px;cursor:pointer;transition:border-color .15s ease,color .15s ease;color:'+(S.i===0?'#c4bfb4':'#121a2b')+';pointer-events:'+(S.i===0?'none':'auto')+'">← Anterior</button>' +
+        '<div style="display:flex;align-items:center;gap:8px">' +
+          (early ? '<button type="button" data-act="finish" class="h-ink" style="background:none;border:0;padding:12px 6px;'+mono+';font-size:11.5px;letter-spacing:.06em;text-transform:uppercase;color:#8a8578;cursor:pointer;text-decoration:underline;text-underline-offset:3px">Finalizar</button>' : '') +
+          '<button type="button" data-act="next" class="h-darkflat" style="background:#121a2b;color:#f5f3ef;border:0;border-radius:11px;padding:12px 22px;font-size:14px;font-weight:500;cursor:pointer;transition:background .16s ease">'+(last?'Finalizar':'Próxima →')+'</button>' +
+        '</div></div></section>';
+}
+
+/* ── resultado + gabarito comentado ────────────────────────────────────────── */
+function reviewList(){
+  return S.order.map(function(q,n){
+    var a = S.answers[n], ok = a!==null && a===q.correctIndex;
+    return { idx:n, ok:ok, blank:a===null, q:q, a:a };
+  }).filter(function(r){
+    return S.filter==='all' || (S.filter==='wrong'&&!r.ok&&!r.blank) || (S.filter==='right'&&r.ok) || (S.filter==='blank'&&r.blank);
+  });
+}
+
+function renderResult(){
+  var mono = "font-family:'IBM Plex Mono',monospace";
+  var c = counts(), pct = c.total ? Math.round(c.hit/c.total*100) : 0;
+
+  var title='Precisa revisar', msg='Releia o material com atenção e refaça o quiz — as explicações abaixo cobrem cada erro.';
+  if (pct>=90)      { title='Domínio sólido';   msg='Desempenho excelente. Confira as explicações das que escaparam e siga em frente.'; }
+  else if (pct>=70) { title='Bom desempenho';   msg='Base consistente. Revise os pontos errados abaixo para fechar as lacunas.'; }
+  else if (pct>=50) { title='Meio do caminho';  msg='Você acertou o essencial, mas há lacunas. Comece pelo filtro de erradas.'; }
+
+  var stat = function(v,l,color){
+    return '<div style="background:#faf9f6;padding:14px 10px">' +
+      '<div style="'+mono+';font-size:19px;font-weight:500;color:'+color+'">'+v+'</div>' +
+      '<div style="'+mono+';font-size:9.5px;letter-spacing:.09em;text-transform:uppercase;color:#8a8578;margin-top:2px">'+l+'</div></div>';
+  };
+
+  var fdefs = [['all','Todas',c.total],['wrong','Erradas',c.miss],['right','Certas',c.hit],['blank','Em branco',c.blank]];
+  var filters = fdefs.map(function(f){
+    var on = S.filter===f[0];
+    return '<button type="button" data-act="filter" data-k="'+f[0]+'" class="h-line" style="border-radius:99px;padding:8px 14px;font-size:13px;cursor:pointer;transition:all .15s ease;border:1px solid '+(on?'#121a2b':'#ddd8ce')+';background:'+(on?'#121a2b':'transparent')+';color:'+(on?'#f5f3ef':'#5b6478')+'">'+f[1]+' '+f[2]+'</button>';
+  }).join('');
+
+  var list = reviewList();
+  var allOpen = list.length>0 && list.every(function(r){ return S.open[r.idx]; });
+
+  var cards = list.map(function(r){
+    var numBg='#f0ede7', numFg='#8a8578';
+    if (!r.blank) { if (r.ok) { numBg='#e3f0e8'; numFg='#1f5c3e'; } else { numBg='#fbe6e2'; numFg='#8f2f25'; } }
+    var open = !!S.open[r.idx];
+    var body = '';
+    if (open) {
+      var opts = r.q.options.map(function(text,n){
+        var isC = n===r.q.correctIndex, isMine = n===r.a;
+        var bd='#eeebe4', bg='#fbfaf8', fg='#5b6478', bBg='#f0ede7', bFg='#8a8578', tag='', tBg='', tFg='';
+        if (isC)            { bd='#bcdcc9'; bg='#eef7f1'; fg='#1f5c3e'; bBg='#2e7d55'; bFg='#fff'; tag='Correta'; tBg='#d9ede1'; tFg='#1f5c3e'; }
+        if (isMine && !isC) { bd='#eec4bd'; bg='#fdf0ee'; fg='#8f2f25'; bBg='#c04437'; bFg='#fff'; tag='Sua resposta'; tBg='#f7ddd8'; tFg='#8f2f25'; }
+        if (isMine && isC)  { tag='Sua resposta ✓'; }
+        return '<div style="display:flex;gap:11px;align-items:flex-start;padding:11px 13px;border-radius:11px;font-size:14px;line-height:1.5;border:1px solid '+bd+';background:'+bg+';color:'+fg+'">' +
+          '<span style="flex-shrink:0;width:21px;height:21px;border-radius:6px;display:flex;align-items:center;justify-content:center;'+mono+';font-size:10.5px;font-weight:600;background:'+bBg+';color:'+bFg+'">'+LETTERS[n]+'</span>' +
+          '<span style="flex:1;min-width:0;text-wrap:pretty">'+esc(text)+'</span>' +
+          (tag ? '<span style="flex-shrink:0;'+mono+';font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;padding:3px 7px;border-radius:6px;margin-top:1px;background:'+tBg+';color:'+tFg+'">'+tag+'</span>' : '') +
+          '</div>';
+      }).join('');
+      body = '<div style="padding:2px 15px 18px;animation:qDrawer .2s ease">' +
+        '<div style="height:1px;background:#eeebe4;margin:0 0 16px"></div>' +
+        '<p style="font-family:\'Newsreader\',Georgia,serif;font-size:18px;line-height:1.5;margin:0 0 16px;text-wrap:pretty">'+esc(r.q.question)+'</p>' +
+        figura(r.q) +
+        '<div style="display:flex;flex-direction:column;gap:7px">'+opts+'</div>' +
+        '<div style="margin-top:16px;padding:14px 16px;background:#f7f6f2;border-left:2.5px solid #2b57cc;border-radius:0 11px 11px 0">' +
+          '<div style="'+mono+';font-size:9.5px;letter-spacing:.16em;text-transform:uppercase;color:#2b57cc;margin-bottom:7px">Por quê</div>' +
+          '<p style="margin:0;font-size:14px;line-height:1.65;color:#39404f;text-wrap:pretty">'+esc(r.q.explanation)+'</p></div>' +
+        '<button type="button" data-act="jump" data-n="'+r.idx+'" style="margin-top:14px;background:none;border:0;padding:0;'+mono+';font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:#2b57cc;cursor:pointer;text-decoration:underline;text-underline-offset:3px">Abrir no quiz →</button></div>';
+    }
+    return '<div style="background:#fff;border:1px solid '+(open?'#c9c3b6':'#e4e0d8')+';border-radius:14px;overflow:hidden;transition:border-color .15s ease">' +
+      '<button type="button" data-act="toggle" data-n="'+r.idx+'" style="display:flex;align-items:center;gap:12px;width:100%;text-align:left;background:none;border:0;padding:14px 15px;cursor:pointer">' +
+        '<span style="flex-shrink:0;width:28px;height:28px;border-radius:8px;display:flex;align-items:center;justify-content:center;'+mono+';font-size:12px;font-weight:600;background:'+numBg+';color:'+numFg+'">'+pad(r.idx+1)+'</span>' +
+        '<span style="flex:1;min-width:0;font-size:14px;line-height:1.45;color:#39404f;overflow:hidden;text-overflow:ellipsis;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical">'+esc(r.q.question)+'</span>' +
+        '<span style="flex-shrink:0;'+mono+';font-size:16px;color:#8a8578;width:16px;text-align:center">'+(open?'−':'+')+'</span>' +
+      '</button>' + body + '</div>';
+  }).join('');
+
+  document.getElementById('stage').innerHTML =
+    '<section style="padding:34px 0 0;animation:qFade .3s ease">' +
+      '<div style="'+mono+';font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:#2b57cc;margin-bottom:14px">Resultado</div>' +
+      '<h2 style="font-family:\'Newsreader\',Georgia,serif;font-size:36px;line-height:1.12;font-weight:400;letter-spacing:-.025em;margin:0 0 8px">'+title+'</h2>' +
+      '<p style="font-size:15px;line-height:1.6;color:#5b6478;margin:0 0 24px;max-width:48ch;text-wrap:pretty">'+msg+'</p>' +
+      '<div style="height:8px;border-radius:99px;background:#e4e0d8;overflow:hidden;margin-bottom:10px">' +
+        '<div style="height:100%;border-radius:99px;background:#121a2b;transition:width .7s cubic-bezier(.22,1,.36,1);width:'+pct+'%"></div></div>' +
+      '<div style="display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:#e4e0d8;border:1px solid #e4e0d8;border-radius:14px;overflow:hidden;margin-bottom:34px">' +
+        stat(c.hit,'Certas','#2e7d55')+stat(c.miss,'Erradas','#c04437')+stat(c.blank,'Branco','#8a8578')+stat(pct+'%','Aproveit.','#2b57cc') +
+      '</div>' +
+      '<div style="display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-bottom:14px">' +
+        '<h3 style="font-family:\'Newsreader\',Georgia,serif;font-size:22px;font-weight:500;letter-spacing:-.015em;margin:0">Gabarito comentado</h3>' +
+        '<button type="button" data-act="toggleAll" class="h-ink" style="background:none;border:0;padding:6px 0;'+mono+';font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:#5b6478;cursor:pointer;text-decoration:underline;text-underline-offset:3px">'+(allOpen?'Recolher tudo':'Expandir tudo')+'</button>' +
+      '</div>' +
+      '<div style="display:flex;gap:7px;flex-wrap:wrap;margin-bottom:16px">'+filters+'</div>' +
+      '<div style="display:flex;flex-direction:column;gap:8px">'+cards+'</div>' +
+      (list.length===0 ? '<div style="padding:38px 16px;text-align:center;color:#8a8578;font-size:14px;border:1px dashed #ddd8ce;border-radius:14px">Nenhuma questão neste filtro.</div>' : '') +
+      '<div style="display:flex;flex-wrap:wrap;gap:9px;margin-top:28px;padding-top:24px;border-top:1px solid #e4e0d8">' +
+        '<button type="button" data-act="restart" class="h-darkflat" style="background:#121a2b;color:#f5f3ef;border:0;border-radius:11px;padding:13px 24px;font-size:14px;font-weight:500;cursor:pointer;transition:background .16s ease">Refazer o quiz</button>' +
+        '<button type="button" data-act="back" class="h-line" style="background:none;border:1px solid #ddd8ce;border-radius:11px;padding:13px 22px;font-size:14px;cursor:pointer;transition:border-color .15s ease">Voltar às questões</button>' +
+        '<button type="button" data-act="resumo" class="h-line" style="background:none;border:1px solid #ddd8ce;border-radius:11px;padding:13px 22px;font-size:14px;cursor:pointer;transition:border-color .15s ease">Ler o resumo</button>' +
+      '</div></section>';
+}
+
+/* ── render + eventos ──────────────────────────────────────────────────────── */
+function render(){
+  renderHeader();
+  if (S.view === 'home')        renderHome();
+  else if (S.view === 'resumo') renderResumo();
+  else if (S.finished)          renderResult();
+  else                          renderQuestion();
+}
+
+/* lightbox: clique em qualquer figura amplia */
+document.addEventListener('click', function(e){
+  var lb = document.getElementById('lb');
+  if (e.target.closest('#lb')) { lb.className = ''; return; }
+  var img = e.target.closest('.fig img');
+  if (img) { lb.firstElementChild.src = img.src; lb.className = 'on'; }
+});
+window.addEventListener('keydown', function(e){
+  if (e.key === 'Escape') document.getElementById('lb').className = '';
+});
+
+document.addEventListener('click', function(e){
+  var b = e.target.closest('[data-act]'); if (!b) return;
+  var act = b.getAttribute('data-act'), n = parseInt(b.getAttribute('data-n'),10), k = b.getAttribute('data-k');
+  if (act==='pick'||act==='jump'||act==='toggle') A[act](n);
+  else if (act==='filter') A.filter(k);
+  else if (A[act]) A[act]();
+});
+
+window.addEventListener('keydown', function(e){
+  if (S.view!=='quiz' || !S.started || S.finished) return;
+  if (e.metaKey||e.ctrlKey||e.altKey) return;
+  if (e.key==='ArrowRight')     { e.preventDefault(); A.go(S.i+1); }
+  else if (e.key==='ArrowLeft') { e.preventDefault(); A.go(S.i-1); }
+  else if (e.key==='Enter')     { e.preventDefault(); A.next(); }
+  else if (/^[1-6]$/.test(e.key)) {
+    var n = parseInt(e.key,10)-1;
+    if (n < S.order[S.i].options.length) A.pick(n);
+  }
+});
+
+render();
+</script>
+</body>
+</html>

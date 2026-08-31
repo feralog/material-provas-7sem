@@ -1,0 +1,815 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TOC e TEPT</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;450;500;600&display=swap" rel="stylesheet">
+<style>
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0}
+  body{background:#f5f3ef;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+  button{font:inherit;color:inherit;font-family:'IBM Plex Sans',system-ui,sans-serif}
+  a{color:#2b57cc;text-decoration:none}
+  a:hover{color:#1e3f9c;text-decoration:underline}
+  @keyframes qFade{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+  @keyframes qDrawer{from{opacity:0;transform:translateY(-4px)}to{opacity:1;transform:none}}
+
+  /* hovers — no canvas eram style-hover, aqui viram CSS de verdade */
+  .h-dark:hover{background:#2b57cc!important;transform:translateY(-1px)}
+  .h-darkflat:hover{background:#2b57cc!important}
+  .h-line:hover{border-color:#121a2b!important}
+  .h-ink:hover{color:#121a2b!important}
+  .h-opt:not(.locked):hover{border-color:var(--hbd)!important;transform:translateY(-1px)}
+  .h-card:hover{border-color:#121a2b!important;transform:translateY(-2px)}
+
+  /* tipografia do resumo */
+  .rsm{font-size:16.5px;line-height:1.72;color:#2a3141;max-width:64ch}
+  .rsm h2{font-family:'Newsreader',Georgia,serif;font-size:27px;font-weight:500;letter-spacing:-.02em;line-height:1.2;margin:42px 0 14px;padding-top:20px;border-top:1px solid #e4e0d8;text-wrap:pretty}
+  .rsm h2:first-child{margin-top:0;padding-top:0;border-top:0}
+  .rsm h3{font-family:'Newsreader',Georgia,serif;font-size:20px;font-weight:600;letter-spacing:-.01em;margin:28px 0 10px;text-wrap:pretty}
+  .rsm h4{font-family:'IBM Plex Mono',monospace;font-size:11px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:#2b57cc;margin:24px 0 8px}
+  .rsm p{margin:0 0 15px;text-wrap:pretty}
+  .rsm ul,.rsm ol{margin:0 0 15px;padding-left:22px}
+  .rsm li{margin-bottom:7px;text-wrap:pretty}
+  .rsm li>ul,.rsm li>ol{margin:7px 0 0}
+  .rsm strong{font-weight:600;color:#121a2b}
+  .rsm em{font-style:italic}
+  .rsm code{font-family:'IBM Plex Mono',monospace;font-size:.88em;background:#efece5;border:1px solid #e4e0d8;border-radius:5px;padding:1px 5px}
+  .rsm hr{border:0;border-top:1px solid #e4e0d8;margin:32px 0}
+  .rsm blockquote{margin:0 0 18px;padding:15px 18px;background:#f7f6f2;border-left:2.5px solid #2b57cc;border-radius:0 12px 12px 0;font-size:15px;line-height:1.65;color:#39404f}
+  .rsm blockquote p:last-child{margin-bottom:0}
+  .rsm .tbl{overflow-x:auto;margin:0 0 20px;border:1px solid #e4e0d8;border-radius:12px;background:#fff}
+  .rsm table{border-collapse:collapse;width:100%;font-size:14px;line-height:1.5}
+  .rsm th{text-align:left;font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.09em;text-transform:uppercase;color:#8a8578;font-weight:600;padding:11px 14px;background:#faf9f6;border-bottom:1px solid #e4e0d8;white-space:nowrap}
+  .rsm td{padding:11px 14px;border-bottom:1px solid #efece5;vertical-align:top;text-wrap:pretty}
+  .rsm tr:last-child td{border-bottom:0}
+  .rsm .key{background:#f2f6fb;border:1px solid #d6e2f4;border-radius:12px;padding:16px 18px;margin:0 0 18px}
+  .rsm .key>*:last-child{margin-bottom:0}
+
+  /* figuras — no resumo e na questao */
+  .fig{margin:0 0 20px;background:#fff;border:1px solid #e4e0d8;border-radius:14px;overflow:hidden}
+  .fig img{display:block;width:100%;height:auto;cursor:zoom-in}
+  .fig figcaption{font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.06em;color:#8a8578;padding:9px 13px;border-top:1px solid #efece5;background:#faf9f6;text-wrap:pretty}
+  .qfig{margin:0 0 20px}
+
+  /* lightbox */
+  #lb{position:fixed;inset:0;z-index:90;background:rgba(18,26,43,.86);display:none;align-items:center;justify-content:center;padding:24px;cursor:zoom-out}
+  #lb.on{display:flex;animation:qFade .16s ease}
+  #lb img{max-width:100%;max-height:100%;border-radius:10px;box-shadow:0 24px 60px rgba(0,0,0,.5)}
+
+  @media(max-width:560px){
+    .rsm{font-size:16px}
+    .rsm h2{font-size:24px}
+    .home-grid{grid-template-columns:1fr!important}
+  }
+</style>
+</head>
+<body>
+
+<div style="min-height:100vh;background:#f5f3ef;color:#121a2b;font-family:'IBM Plex Sans',system-ui,sans-serif">
+  <header style="position:sticky;top:0;z-index:30;background:rgba(245,243,239,.94);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid #e4e0d8">
+    <div style="max-width:720px;margin:0 auto;padding:12px 16px 10px" id="hdr"></div>
+  </header>
+  <main style="max-width:720px;margin:0 auto;padding:0 16px 80px" id="stage"></main>
+</div>
+<div id="lb"><img alt=""></div>
+
+<script type="text/html" id="resumoSrc"><h2>Transtorno ou doença?</h2>
+<p>A psiquiatria trata, na maior parte dos casos, de <em>transtornos</em>, e não de <em>doenças</em>. Doença é o conceito reservado para fenômenos com <strong>causa e efeito conhecidos e bem determinados</strong> — o exemplo da aula é a doença de Alzheimer, em que há um mecanismo definido. Já o transtorno é a <strong>resultante de múltiplos fatores psicológicos, biológicos e sociais combinados e associados</strong>; nenhuma causa única responde pelo quadro. É por isso que se fala em transtorno obsessivo-compulsivo, e não em doença obsessiva-compulsiva.</p>
+<p>A obsessão é definida como uma <strong>ideia ou representação (imagem) que se impõe à consciência de modo persistente e incontrolável</strong>, apesar de ter conteúdo absurdo ou repulsivo para o indivíduo. Essa imposição gera uma luta constante: as ideias voltam de forma recorrente à consciência e o indivíduo se esforça para bani-las, produzindo um estado de angústia permanente. Três pontos da definição merecem destaque: é uma forma de pensamento (ou imagem); é um pensamento que <strong>invade</strong> — não é elaborado ativamente, como em "agora vou pensar nisso"; e seu conteúdo é percebido como absurdo ou repulsivo, o que se chama de <strong>egodistonia</strong> — uma dissonância em relação ao ego, que agride o sistema de valores do próprio paciente.</p>
+<blockquote><p><strong>Ponto-chave — obsessão:</strong> os pensamentos obsessivos são intrusivos, repetitivos, indesejados, egodistônicos e associados a grande ansiedade. A origem é espontânea e circular: o pensamento invade a consciência, como no episódio do professor que, dirigindo para o plantão, foi tomado pela dúvida sobre ter desligado o fogão.</p></blockquote>
+<p>O exemplo clínico da aula: um paciente criado em família católica tradicional passa a ser invadido pela imagem recorrente de Jesus Cristo nu — repetitiva, circular e profundamente egodistônica, com enorme culpa — e desenvolve, para compensar, o ritual de rezar determinado número de vezes para neutralizar o pensamento. Os conteúdos típicos das obsessões incluem religião, agressão, simetria, verificação, acumulação, cenas de sexo e contaminação (como a ideia constante de estar contaminado após tocar uma maçaneta).</p>
+<h2>Obsessões e compulsões</h2>
+<p>Diante da obsessão, a reação natural é ignorar, suprimir ou neutralizar o pensamento — o que falha, porque a origem é espontânea e circular. A estratégia mais adotada é neutralizar por meio de outros pensamentos ou ações: são as <strong>compulsões</strong>. Os atos e rituais compulsivos têm cinco características: (1) vivência frequente de desconforto subjetivo; (2) caráter egodistônico — experimentado como indesejável e contrário aos valores do paciente; (3) tentativa de resistir ou ao menos adiar o ato; (4) luta entre a compulsão e a vontade, o que não ocorre no ato impulsivo; e (5) alívio temporário ao realizar o ato, logo substituído pelo retorno do desconforto e pela urgência de repeti-lo.</p>
+<p>A aula distingue três tipos de ato pela progressão:</p>
+<div class="tbl"><table><thead><tr><th>Ato</th><th>Progressão</th></tr></thead><tbody><tr><td>Volitivo</td><td>Intenção → deliberação → decisão → execução</td></tr><tr><td>Impulsivo</td><td>Intenção → execução, <strong>sem deliberação</strong></td></tr><tr><td>Compulsivo</td><td>Como o volitivo, mas com <strong>enfraquecimento da deliberação</strong> — resiste e adia, até ceder para obter alívio temporário</td></tr></tbody></table></div>
+<p>A relação entre obsessão e compulsão pode ser forte ou fraca. Na <strong>relação forte (semântica)</strong>, o ato surge como tentativa direta de neutralizar a obsessão: a obsessão de mãos sujas leva à compulsão de lavá-las repetidamente, às vezes com lesões graves na pele. Na <strong>relação fraca ou indireta</strong>, a ligação é menos direta: a obsessão de ter atropelado alguém no caminho leva a voltar de carro e refazer todo o trajeto para verificar; obsessões por imagens sexuais ou religiosas repulsivas podem levar a compulsões <strong>mentais ou cognitivas</strong> — pensar na palavra "desculpa" para compensar —, sem nenhum comportamento físico visível.</p>
+<h2>Etiologia e neurobiologia do TOC</h2>
+<p>O TOC resulta da associação de múltiplas variáveis:</p>
+<ul><li><strong>Fatores genéticos:</strong> herdabilidade alta, transtorno <strong>poligênico</strong> (sem gene único), com disfunções principalmente nas vias <strong>serotoninérgicas, glutamatérgicas e dopaminérgicas</strong> — importante para orientar o tratamento.</li><li><strong>Fatores ambientais e perinatais:</strong> tabagismo materno na gravidez, número de estressores perinatais (relação dose-dependente: quanto mais estressores, maior o risco) e exposição a experiências traumáticas ao longo da vida.</li><li><strong>Modelo neurobiológico:</strong> o circuito <strong>córtico-estriado-tálamo-cortical (CETC)</strong> funciona em alça. As regiões subcorticais (tálamo e estriado) têm ativação espontânea e inconsciente; as corticais são conscientes e fazem a inibição e filtragem dessas ativações. No TOC há <strong>hiperatividade subcortical</strong> com <strong>enfraquecimento da inibição cortical</strong> — uma região subcortical funcionando em excesso sem filtragem adequada gera os pensamentos intrusivos e obsessivos circulares.</li></ul>
+<p>A psicologia descreve o <strong>reforço em cadeia</strong> que mantém o transtorno: obsessão → emoção desconfortável ou ansiedade → evitação ou compulsão → alívio transitório → repetição do ciclo. Dois traços cognitivos aumentam a suscetibilidade: a <strong>fusão pensamento-ação</strong> (thought-action fusion), em que pensar é vivenciado como fazer ou como aumento da chance real do evento — como o pai que, invadido pela obsessão de machucar o bebê recém-nascido, passa a evitar ficar sozinho com o filho por se considerar um risco real; e a <strong>intolerância à incerteza</strong>, como o amigo do professor que ligava sem parar para o pai médico que viajava: se o pai não atendia, a dúvida se convertia na certeza de que o acidente havia ocorrido.</p>
+<h2>Diagnóstico do TOC</h2>
+<p><strong>Epidemiologia:</strong> prevalência de cerca de <strong>3%</strong> da população geral; distribuição <strong>simétrica entre homens e mulheres (1:1)</strong>; início comum na adolescência, com <strong>mais de 50% dos casos iniciando antes dos 14 anos</strong>. É um transtorno altamente incapacitante — a paciente do ambulatório perdia empregos por se atrasar contando todas as faixas de pedestres que atravessava no trajeto.</p>
+<p><strong>Critérios do DSM-5:</strong></p>
+<ol><li>Presença de <strong>obsessões e/ou compulsões</strong> — geralmente ocorrem juntas, mas a presença de apenas uma é suficiente para o diagnóstico.</li><li><strong>Não há critério de tempo mínimo de evolução</strong> (como 6 meses), mas os rituais devem <strong>consumir pelo menos 1 hora por dia</strong> ou causar sofrimento e prejuízo clinicamente significativos.</li><li>Os sintomas não se devem a efeitos fisiológicos de substâncias (critério de exclusão padrão).</li><li>As manifestações não decorrem de outro transtorno mental.</li></ol>
+<blockquote><p><strong>Pegadinha — hierarquia diagnóstica:</strong> obsessões que ocorrem <em>apenas</em> durante episódio de mania indicam transtorno bipolar, não TOC. Se sintomas de TOC ocorrem fora das crises, são comorbidades.</p></blockquote>
+<p>O diagnóstico diferencial exige checar se o comportamento compulsivo não pertence a outro transtorno delimitado: arrancar cabelos repetidamente é <strong>tricotilomania</strong>; beliscar a pele é <strong>transtorno de escoriação (skin picking)</strong>; episódios de comer compulsivo são <strong>transtorno da compulsão alimentar (TCA)</strong>. O TOC só é diagnosticado se a compulsão não estiver relacionada a essas síndromes. Crítica da aula ao DSM: ele cria múltiplos diagnósticos específicos em cima de uma psicopatologia que na verdade é única — a compulsão.</p>
+<h2>Tratamento do TOC</h2>
+<p>O tratamento depende da gravidade, medida pela <strong>Y-BOCS (Yale-Brown Obsessive Compulsive Scale)</strong>: 10 perguntas pontuadas de 0 a 4, com total de 0 a 40.</p>
+<div class="tbl"><table><thead><tr><th>Y-BOCS</th><th>Gravidade</th><th>Tratamento</th></tr></thead><tbody><tr><td>0 a 23</td><td>Leve a moderado</td><td><strong>Exclusivamente psicoterapia</strong> (TCC com exposição e prevenção de respostas — ERP)</td></tr><tr><td>A partir de 24</td><td>Grave</td><td><strong>Farmacoterapia + psicoterapia</strong>, obrigatoriamente associadas</td></tr></tbody></table></div>
+<p>A psicoterapia de escolha é a <strong>TCC com ERP</strong>. O objetivo não é extinguir o pensamento obsessivo — pensamentos têm origem espontânea —, mas gerar a capacidade de <strong>refletir sobre o pensamento considerando os dados da realidade</strong>, quebrando a fusão pensamento-ação. O experimento clínico: o paciente com medo obsessivo de machucar um familiar com objeto pontiagudo segura, na sessão, a foto do familiar e o objeto, evocando o pensamento automático ("se sinto medo, sou um risco"), e o terapeuta o estimula a avaliar a realidade desse pensamento, promovendo a dessensibilização e reduzindo a carga afetiva.</p>
+<p>A farmacoterapia usa <strong>ISRS</strong> com três peculiaridades:</p>
+<div class="tbl"><table><thead><tr><th>Peculiaridade</th><th>Detalhe</th></tr></thead><tbody><tr><td>Doses altas</td><td>Máximas toleradas: sertralina 200 mg, fluvoxamina 300 mg, paroxetina 60 mg; progressão rápida, chegando à dose máxima em até 4 semanas</td></tr><tr><td>Resposta lenta</td><td>No TOC, esperar <strong>até 12 semanas</strong> para avaliar (na depressão e ansiedade, 4 a 6 semanas)</td></tr><tr><td>Resposta parcial</td><td>Potencializar com <strong>antipsicótico em dose baixa</strong>; se insatisfatório, trocar o antidepressivo (venlafaxina ou <strong>clomipramina</strong> — altamente eficaz, mas com perfil de efeitos colaterais mais difícil)</td></tr></tbody></table></div>
+<p>O TOC é crônico, com curso oscilante entre exacerbação e remissão; apenas <strong>10 a 20%</strong> dos pacientes ficam completamente livres de sintomas ao longo da vida. Manter o tratamento em remissão por <strong>pelo menos 1 ano</strong> antes de individualizar a decisão de reduzir ou manter — pacientes costumam ter medo de suspender a medicação pelo sofrimento dos sintomas.</p>
+<h2>Estresse e o circuito do medo</h2>
+<p>Estresse é a <strong>resposta adaptativa do organismo às demandas impostas pelo ambiente</strong>: diante do perigo, a vivência é processada, inserida em contexto, gerando planejamento de ações e consolidação de memórias e imagens da situação de risco, com intensa resposta fisiológica autonômica (taquicardia, sudorese, tremores). No TEPT, o problema não é a reação aguda — natural em quem passou por um trauma grave —, e sim a <strong>persistência da reação de estresse</strong> por muito mais tempo que o esperado, mesmo na completa ausência do estímulo.</p>
+<p>O circuito do medo é integrado:</p>
+<ol><li><strong>Hipotálamo</strong> recebe as aferências sensoriais do corpo e as envia à <strong>amígdala</strong>, o centro processador do medo.</li><li><strong>Córtex órbito-frontal (COF)</strong> e <strong>córtex cingulado anterior (CCA)</strong> analisam cognitivamente as informações do ambiente para avaliar se há perigo real — uma sala de aula é segura, uma rua escura à noite é de risco.</li><li>A amígdala se conecta ao <strong>locus coeruleus</strong> (neurônios noradrenérgicos), disparando o <strong>sistema nervoso simpático</strong> — aumento da frequência cardíaca e da pressão arterial.</li><li>A amígdala ativa o <strong>eixo HPA (hipotálamo-hipófise-suprarrenal)</strong>, com liberação maciça de <strong>cortisol</strong> e glicose para a reação de luta ou fuga.</li><li>A amígdala interage com o <strong>hipocampo</strong>, responsável pela formação, consolidação e contextualização das memórias baseadas em experiências prévias.</li></ol>
+<p>No TEPT, o circuito está gravemente distorcido: <strong>hiperatividade noradrenérgica persistente</strong>, ativação crônica do eixo HPA com <strong>hipercortisolemia</strong> e <strong>disfunção gabaérgica e glutamatérgica no hipocampo</strong>, que prejudica a consolidação e a contextualização da memória do trauma.</p>
+<blockquote><p><strong>Ponto-chave — a vivência do trauma:</strong> como o hipocampo falha em catalogar a experiência como evento do passado, o trauma é vivido como se estivesse acontecendo no presente o tempo todo. Ele não se integra à biografia do paciente e se atualiza constantemente na consciência, na forma de revivescências.</p></blockquote>
+<h2>Epidemiologia e fatores de risco do TEPT</h2>
+<p>No Brasil, a prevalência de exposição a eventos traumáticos ao longo da vida é de <strong>86%</strong>, sendo <strong>60% decorrente de violência urbana</strong>. Das pessoas expostas, <strong>10 a 20% desenvolvem a sintomatologia de TEPT</strong>, gerando prevalência de cerca de <strong>7% na população geral</strong> — mais que o dobro do TOC. No Brasil, o TEPT é mais prevalente em <strong>mulheres</strong> (forte correlação com violência interpessoal e sexual); dados internacionais podem apontar o sexo masculino por exposição à guerra. Grupos mais vulneráveis: jovens, minorias identitárias, moradores de áreas de conflito e agentes de segurança pública.</p>
+<p>Os fatores de risco se classificam em três grupos:</p>
+<ul><li><strong>Pré-traumáticos:</strong> genética; psicopatologia prévia; baixo nível socioeconômico; <strong>experiências adversas na infância</strong> — crianças expostas à violência têm alteração persistente do eixo HPA, predispondo à hipercortisolemia e ao TEPT na vida adulta (epigenética); <strong>padrão de apego</strong>.</li><li><strong>Traumáticos:</strong> natureza do evento — traumas sexuais e abusos na infância têm altíssima taxa de conversão para TEPT; gravidade física — traumatismo cranioencefálico (TCE) e desfiguração corporal.</li><li><strong>Pós-traumáticos:</strong> perdas significativas decorrentes do evento (morte de familiares no mesmo acidente); estratégias de enfrentamento inadequadas; avaliação negativa e sentimento de culpa sobre o próprio trauma.</li></ul>
+<p>Pela <strong>teoria do apego de John Bowlby</strong>, o apego seguro — pais que estimulam a exploração e servem de porto seguro — protege. O <strong>apego inseguro ou desorganizado</strong> — pais ausentes ou a própria fonte de agressão, em que a figura que deveria cuidar é a que agride — gera desorganização na modulação do estresse e aumenta drasticamente o risco de transtornos psiquiátricos e TEPT na vida adulta.</p>
+<h2>Diagnóstico e tratamento do TEPT</h2>
+<p>O <strong>Critério A (exposição)</strong> do DSM-5 exige exposição à morte real ou ameaça de morte, lesão grave ou violência sexual por: experiência direta; presenciar o evento ocorrendo com outros; saber que ocorreu com familiar ou amigo próximo; ou exposição repetida a detalhes aversivos (profissionais de resgate).</p>
+<p>A tríade clássica de sintomas:</p>
+<div class="tbl"><table><thead><tr><th>Dimensão</th><th>Manifestações</th></tr></thead><tbody><tr><td><strong>Intrusão (revivescência)</strong></td><td>Lembranças intrusivas e angustiantes; pesadelos repetitivos; <strong>flashbacks</strong> — reações dissociativas em que o indivíduo sente ou age como se o evento ocorresse no presente (o protagonista do Sniper Americano ataca o cachorro da família após um flashback de guerra)</td></tr><tr><td><strong>Evitação</strong></td><td>Esforço persistente para evitar lembranças, pensamentos, sentimentos ou estímulos externos associados ao trauma — a paciente que, após a irmã morrer atropelada por um ônibus, evita sair de casa e entra em pânico ao ver qualquer ônibus</td></tr><tr><td><strong>Hiperreatividade</strong></td><td>Irritabilidade, surtos de raiva, comportamento agressivo, hipervigilância constante, resposta de sobressalto exagerada, problemas de concentração e insônia</td></tr></tbody></table></div>
+<p><strong>Critério temporal e especificadores:</strong> os sintomas devem durar <strong>pelo menos 1 mês</strong>; no primeiro mês pós-trauma, o diagnóstico é de <strong>reação aguda ao estresse</strong>, não TEPT. O <strong>início tardio</strong> é especificado quando os sintomas aparecem apenas <strong>6 meses ou mais</strong> após o evento. Alguns pacientes bloqueiam e esquecem o evento traumático — <strong>amnésia dissociativa</strong>, mecanismo de defesa: o trauma não degradado nem integrado à biografia mantém risco altíssimo de emergir como TEPT posteriormente.</p>
+<blockquote><p><strong>Pegadinha — regra de ouro do pronto-socorro:</strong> <strong>não prescrever benzodiazepínicos</strong> (diazepam, clonazepam) para vítimas agudamente traumatizadas. Eles reduzem a capacidade do cérebro de processar e consolidar a memória do trauma, impedem a degradação natural do estresse e <strong>aumentam o risco de TEPT a longo prazo</strong>. Se o paciente precisar de sedação, usar alternativas como <strong>quetiapina</strong> em dose baixa.</p></blockquote>
+<p><strong>Tratamento:</strong> para as sociedades médicas, o padrão-ouro é a <strong>psicoterapia</strong>. A <strong>terapia de exposição</strong> dessensibiliza o paciente, ajudando-o a narrar o evento e integrar a memória à biografia — com alta taxa de abandono, porque reviver o trauma é doloroso; muitos acham mais fácil escrever do que falar sobre o trauma. O <strong>EMDR</strong> (dessensibilização e reprocessamento por movimentos oculares) tem forte evidência: pautado na teoria de que é no sono REM que consolidamos memórias, o terapeuta faz o paciente narrar o trauma com <strong>estimulações bilaterais dos olhos</strong>, recalibrando a carga afetiva da memória. A farmacoterapia tem menos evidência, mas é utilizada: ISRS (<strong>sertralina, citalopram, venlafaxina</strong>); para insônia grave associada, <strong>mirtazapina</strong> ou antipsicóticos atípicos em baixas doses. Em estudo: alfa-agonistas (doxazosina, prazosina) para pesadelos e reatividade autonômica, e beta-bloqueadores (propranolol) como tentativa preventiva na emergência — ambos com dados conflitantes e sem recomendação formal de uso rotineiro.</p>
+<p><strong>Curso clínico:</strong> sem tratamento, a resolução espontânea dos sintomas leva em média <strong>64 meses</strong>; com tratamento adequado, <strong>36 meses</strong>. Diferente do TOC, <strong>o TEPT tem cura</strong>.</p></script>
+<script>
+/* ─────────────────────────────────────────────────────────────────────────────
+   CONTRATO DE DADOS — para adaptar a outro tema, troque apenas QUIZ e o resumo.
+   Cada item: { question, options[2..6], correctIndex, explanation }
+   ──────────────────────────────────────────────────────────────────────────── */
+var TITLE      = "TOC e TEPT";
+var EYEBROW    = "Psiquiatria · Psicopatologia";
+var DISCIPLINA = "Psiquiatria";   // pasta de origem (PED, GO...) — usada pelo índice
+var SUBTITLE = "Da intrusão egodistônica à persistência da reação de estresse";
+var INTRO    = "Trinta questões sobre o transtorno obsessivo-compulsivo e o transtorno do estresse pós-traumático: obsessões e compulsões, neurobiologia do circuito do medo, critérios do DSM-5, tratamento por gravidade e a conduta de emergência no pronto-socorro.";
+
+var QUIZ = [
+  {
+    "question": "Segundo a aula, qual é a diferença conceitual entre transtorno e doença?",
+    "options": [
+      "Doença: causa e efeito conhecidos e bem determinados; transtorno: resultante de múltiplos fatores biopsicossociais combinados",
+      "Doença: causa e efeito conhecidos e bem determinados; transtorno: resultante de um único fator genético dominante",
+      "Doença: resultante de múltiplos fatores combinados; transtorno: causa e efeito conhecidos e bem determinados",
+      "Doença: definida pela ausência de sinais objetivos; transtorno: definido por sinais e sintomas claros"
+    ],
+    "correctIndex": 0,
+    "explanation": "Doença implica relações de causa e efeito conhecidas e bem determinadas, como na doença de Alzheimer. Os transtornos mentais, em contraste, são a resultante de múltiplos fatores psicológicos, biológicos e sociais combinados e associados — por isso se fala em transtorno obsessivo-compulsivo, e não em doença obsessiva-compulsiva."
+  },
+  {
+    "question": "Quais características definem o pensamento obsessivo descrito na aula?",
+    "options": [
+      "É intrusivo, repetitivo, indesejado, egodistônico e associado a grande ansiedade",
+      "É elaborado ativamente, voluntário, prazeroso, egossintônico e associado a relaxamento",
+      "É intrusivo, repetitivo, indesejado, egossintônico e associado a apatia e anedonia",
+      "É elaborado ativamente, voluntário, repulsivo, egodistônico e associado a irritabilidade"
+    ],
+    "correctIndex": 0,
+    "explanation": "A obsessão é uma ideia ou imagem que se impõe à consciência de modo persistente e incontrolável, com origem espontânea e caráter intrusivo — não é um pensamento que o indivíduo elabora ativamente. Ela é repetitiva, indesejada, egodistônica (absurda ou repulsiva para o próprio indivíduo) e associada a grande ansiedade, como no episódio da dúvida sobre ter desligado o fogão."
+  },
+  {
+    "question": "O que significa o caráter egodistônico de uma obsessão?",
+    "options": [
+      "A ideia agride o sistema de valores do indivíduo e é percebida por ele como absurda ou repulsiva",
+      "A ideia é plenamente aceita pelo indivíduo e integrada ao seu sistema de valores",
+      "A ideia é percebida como absurda, mas é considerada agradável e desejada pelo indivíduo",
+      "A ideia é aceita pelo ego e incorporada como parte da própria identidade do indivíduo"
+    ],
+    "correctIndex": 0,
+    "explanation": "Egodistonia significa uma dissonância em relação ao ego: a ideia agride o sistema de valores do próprio paciente, que a percebe como absurda ou repulsiva. No exemplo da aula, a imagem recorrente de Jesus Cristo nu invadia um paciente de família católica, gerando enorme culpa e um ritual compensatório de rezar para neutralizar o pensamento."
+  },
+  {
+    "question": "Segundo a definição de atos e rituais compulsivos, qual característica está correta?",
+    "options": [
+      "Há desconforto subjetivo, luta interna contra a vontade e alívio apenas temporário",
+      "Há prazer duradouro ao realizar o ato e ausência de tentativa de resistir ou adiar",
+      "Há desconforto subjetivo, mas o ato é realizado sem qualquer luta interna",
+      "Há alívio definitivo ao realizar o ato, sem retorno do desconforto posterior"
+    ],
+    "correctIndex": 0,
+    "explanation": "O ato compulsivo é vivenciado com desconforto subjetivo, é egodistônico e acompanhado de tentativa de resistir ou adiar. Existe luta entre a compulsão e a vontade — o que não ocorre no ato impulsivo — e o alívio ao realizar o ato é temporário, logo substituído pelo retorno do desconforto e pela urgência de repeti-lo."
+  },
+  {
+    "question": "Como o ato compulsivo se diferencia do ato impulsivo na progressão descrita em aula?",
+    "options": [
+      "O compulsivo tenta resistir e adiar o ato, com deliberação enfraquecida; o impulsivo age direto após a intenção",
+      "O compulsivo age direto após a intenção; o impulsivo delibera longamente antes de agir",
+      "O compulsivo segue as quatro etapas íntegras; o impulsivo tenta resistir e adiar o ato",
+      "O compulsivo age sem intenção prévia; o impulsivo resiste ao ato com deliberação preservada"
+    ],
+    "correctIndex": 0,
+    "explanation": "O ato volitivo segue intenção, deliberação, decisão e execução; o impulsivo passa direto da intenção para a execução, sem deliberar. O compulsivo tem progressão semelhante à do volitivo, mas com enfraquecimento da deliberação: sente que não consegue resistir, adia e luta, até ceder para obter alívio temporário."
+  },
+  {
+    "question": "Qual exemplo ilustra uma relação forte (semântica) entre obsessão e compulsão?",
+    "options": [
+      "Obsessão de contaminação ao tocar maçanetas e compulsão de lavar as mãos repetidamente",
+      "Obsessão de contaminação e compulsão de contar todas as faixas de pedestres do trajeto",
+      "Obsessão de ter atropelado alguém e compulsão de refazer o trajeto de carro para verificar",
+      "Obsessão por imagens religiosas repulsivas e compulsão mental de pensar na palavra desculpa"
+    ],
+    "correctIndex": 0,
+    "explanation": "Na relação forte, o ato compulsivo surge como tentativa direta de neutralizar a obsessão: a contaminação das mãos leva a lavá-las repetidamente, às vezes com lesões graves na pele. Refazer o trajeto para verificar se atropelou alguém e a compulsão mental de pensar em 'desculpa' são exemplos de relação fraca ou indireta, que inclui compulsões cognitivas."
+  },
+  {
+    "question": "O que ocorre no circuito córtico-estriado-tálamo-cortical (CETC) no modelo neurobiológico do TOC?",
+    "options": [
+      "Hiperatividade das regiões subcorticais com enfraquecimento da inibição cortical",
+      "Hipoatividade das regiões subcorticais com exacerbação da inibição cortical",
+      "Ativação normal das regiões subcorticais com ausência de filtragem cortical",
+      "Hiperatividade das regiões corticais com enfraquecimento da ativação subcortical"
+    ],
+    "correctIndex": 0,
+    "explanation": "O circuito CETC funciona em alça: as regiões subcorticais (tálamo e estriado) têm ativação espontânea e inconsciente, enquanto as corticais são conscientes e fazem a inibição e filtragem dessas ativações. No TOC há hiperatividade subcortical com enfraquecimento dos sistemas de inibição cortical, gerando os pensamentos intrusivos e obsessivos circulares."
+  },
+  {
+    "question": "Quais vias neurais estão principalmente disfuncionais na etiologia genética do TOC?",
+    "options": [
+      "Vias serotoninérgicas, glutamatérgicas e dopaminérgicas, em um transtorno poligênico",
+      "Vias colinérgicas, gabaérgicas e serotoninérgicas, em um transtorno monogênico",
+      "Vias noradrenérgicas, glutamatérgicas e colinérgicas, em um transtorno poligênico",
+      "Vias dopaminérgicas, serotoninérgicas e gabaérgicas, em um transtorno monogênico"
+    ],
+    "correctIndex": 0,
+    "explanation": "O TOC tem herdabilidade bastante alta e é poligênico — não há um gene único responsável. As disfunções envolvem principalmente as vias serotoninérgicas, glutamatérgicas e dopaminérgicas, o que é importante para orientar o tratamento farmacológico."
+  },
+  {
+    "question": "Qual é a sequência do reforço em cadeia descrita pela psicologia no TOC?",
+    "options": [
+      "Obsessão, ansiedade, evitação ou compulsão, alívio transitório e repetição do ciclo",
+      "Ansiedade, obsessão, compulsão, alívio definitivo e término do ciclo",
+      "Compulsão, ansiedade, obsessão, alívio transitório e repetição do ciclo",
+      "Obsessão, compulsão, ansiedade, alívio definitivo e término do ciclo"
+    ],
+    "correctIndex": 0,
+    "explanation": "A psicologia descreve o reforço em cadeia: a obsessão gera emoção desconfortável ou ansiedade, que leva à evitação ou à compulsão; o alívio é transitório, e o ciclo se repete. É esse mecanismo que mantém o transtorno e que a TCC com exposição e prevenção de respostas procura quebrar."
+  },
+  {
+    "question": "Qual é a vivência do paciente na fusão pensamento-ação?",
+    "options": [
+      "Pensar em algo equivale a fazer, ou aumenta a chance real de o evento acontecer",
+      "Agir equivale a pensar, e isso reduz a chance real de o evento acontecer",
+      "Pensar em algo elimina qualquer possibilidade de o evento acontecer",
+      "Falar sobre o pensamento diminui a chance real de o evento acontecer"
+    ],
+    "correctIndex": 0,
+    "explanation": "Na fusão pensamento-ação, pensar é vivenciado como fazer ou como aumento da probabilidade real do evento. O exemplo da aula é o pai que, invadido pela obsessão de machucar o bebê recém-nascido, passa a se ver como risco real de violência e evita ficar sozinho com o filho."
+  },
+  {
+    "question": "Sobre a epidemiologia do TOC, qual afirmação está correta?",
+    "options": [
+      "Prevalência de cerca de 3% e início antes dos 14 anos em mais da metade dos casos",
+      "Prevalência de cerca de 7% e início antes dos 14 anos em mais da metade dos casos",
+      "Prevalência de cerca de 3% e início predominante após os 30 anos de idade",
+      "Prevalência de cerca de 1% e início antes dos 14 anos em menos de um quinto dos casos"
+    ],
+    "correctIndex": 0,
+    "explanation": "O TOC acomete cerca de 3% da população geral, com distribuição simétrica entre homens e mulheres (1:1) e início comum na adolescência: mais de 50% dos casos começam antes dos 14 anos. É altamente incapacitante, como na paciente que perdia empregos por se atrasar contando as faixas de pedestres do trajeto."
+  },
+  {
+    "question": "Sobre os critérios diagnósticos do DSM-5 para o TOC, qual afirmação está correta?",
+    "options": [
+      "Basta obsessões ou compulsões que consumam ao menos 1 hora por dia, sem tempo mínimo de evolução",
+      "Exige obsessões e compulsões juntas, consumindo 6 horas por dia, com 6 meses de evolução",
+      "Exige apenas compulsões, consumindo 30 minutos por dia, com 3 meses de evolução",
+      "Exige apenas obsessões, consumindo 2 horas por dia, com 12 meses de evolução"
+    ],
+    "correctIndex": 0,
+    "explanation": "Para o DSM-5, basta a presença de obsessões e/ou compulsões — apenas uma delas já basta, embora geralmente ocorram juntas. Não há critério de tempo mínimo de evolução, mas os rituais devem consumir pelo menos 1 hora por dia ou causar sofrimento e prejuízo clinicamente significativos, sem origem em substâncias ou outro transtorno."
+  },
+  {
+    "question": "Um paciente arranca repetidamente os próprios cabelos. Qual é o diagnóstico mais apropriado segundo a hierarquia diagnóstica da aula?",
+    "options": [
+      "Tricotilomania, e não TOC, por ser comportamento compulsivo de transtorno delimitado",
+      "TOC, por se tratar de um comportamento compulsivo clássico do transtorno",
+      "Transtorno de escoriação, por envolver arrancar fios de cabelo repetidamente",
+      "Transtorno da compulsão alimentar, por envolver comportamento compulsivo repetitivo"
+    ],
+    "correctIndex": 0,
+    "explanation": "Quando o comportamento compulsivo específico se encaixa em outro transtorno delimitado, o diagnóstico é esse outro transtorno: arrancar cabelos é tricotilomania, beliscar a pele é transtorno de escoriação (skin picking) e comer compulsivamente é o transtorno da compulsão alimentar. O TOC só é diagnosticado se a compulsão não pertencer a essas síndromes."
+  },
+  {
+    "question": "Como a escala Y-BOCS classifica a gravidade do TOC?",
+    "options": [
+      "Pontuação de 0 a 23 indica quadros leves a moderados e, a partir de 24, quadros graves",
+      "Pontuação de 0 a 16 indica quadros leves a moderados e, a partir de 17, quadros graves",
+      "Pontuação de 0 a 30 indica quadros leves a moderados e, a partir de 31, quadros graves",
+      "Pontuação de 0 a 24 indica quadros leves a moderados e, a partir de 25, quadros graves"
+    ],
+    "correctIndex": 0,
+    "explanation": "A Yale-Brown Obsessive Compulsive Scale tem 10 perguntas pontuadas de 0 a 4, com total de 0 a 40. Pontuações de 0 a 23 indicam intensidade leve a moderada; a partir de 24, o quadro é grave e exige farmacoterapia associada à psicoterapia."
+  },
+  {
+    "question": "Quais são as peculiaridades do tratamento farmacológico do TOC com ISRS?",
+    "options": [
+      "Doses altas, resposta avaliada em até 12 semanas e potencialização com antipsicótico na resposta parcial",
+      "Doses baixas, resposta avaliada em 4 a 6 semanas e potencialização com benzodiazepínico",
+      "Doses altas, resposta avaliada em 4 a 6 semanas e potencialização com betabloqueador",
+      "Doses padrão, resposta avaliada em até 12 semanas e potencialização com estabilizador"
+    ],
+    "correctIndex": 0,
+    "explanation": "O TOC responde bem a ISRS, mas com três peculiaridades: doses máximas toleradas (sertralina 200 mg, fluvoxamina 300 mg, paroxetina 60 mg); tempo de resposta longo, de até 12 semanas, contra 4 a 6 semanas na depressão e ansiedade; e, na resposta parcial, potencialização com antipsicótico em dose baixa — se necessário, troca-se por venlafaxina ou clomipramina."
+  },
+  {
+    "question": "O que caracteriza o transtorno do estresse pós-traumático em relação à reação de estresse?",
+    "options": [
+      "A persistência da reação de estresse muito além do esperado, mesmo sem o estímulo traumático",
+      "A ausência de qualquer reação de estresse diante de eventos traumáticos graves",
+      "A intensidade da reação aguda apenas durante a ocorrência do evento traumático",
+      "A persistência da reação de estresse somente na presença contínua do estímulo traumático"
+    ],
+    "correctIndex": 0,
+    "explanation": "É natural que uma pessoa submetida a um trauma grave apresente resposta de estresse — ela é adaptativa. No TEPT, o problema é a persistência dessa reação por muito mais tempo que o esperado, mesmo na completa ausência do estímulo ou evento traumático."
+  },
+  {
+    "question": "No circuito do medo descrito em aula, qual estrutura funciona como centro processador do medo?",
+    "options": [
+      "A amígdala, que recebe as informações sensoriais enviadas pelo hipotálamo",
+      "O hipocampo, que recebe as informações sensoriais enviadas pelo hipotálamo",
+      "O córtex órbito-frontal, que recebe as informações sensoriais enviadas pelo hipotálamo",
+      "O córtex cingulado anterior, que recebe as informações sensoriais enviadas pelo hipotálamo"
+    ],
+    "correctIndex": 0,
+    "explanation": "O hipotálamo recebe as aferências sensoriais do corpo e as envia à amígdala, o centro processador do medo. A amígdala se conecta ao locus coeruleus (noradrenérgico) para a resposta simpática, ativa o eixo HPA para a liberação de cortisol e interage com o hipocampo na consolidação e contextualização das memórias."
+  },
+  {
+    "question": "Qual é o papel do córtex órbito-frontal e do córtex cingulado anterior na resposta ao medo?",
+    "options": [
+      "Analisar cognitivamente as informações do ambiente para avaliar se há perigo real",
+      "Disparar o sistema nervoso simpático com aumento da frequência cardíaca",
+      "Liberar cortisol e glicose na corrente sanguínea para a reação de luta ou fuga",
+      "Consolidar e contextualizar memórias baseadas em experiências prévias"
+    ],
+    "correctIndex": 0,
+    "explanation": "COF e CCA fazem a análise cognitiva das informações do ambiente, avaliando se há perigo real — por exemplo, que uma sala de aula é segura e uma rua escura à noite é de risco. Disparar o simpático cabe à amígdala via locus coeruleus, liberar cortisol é função do eixo HPA e contextualizar memórias é papel do hipocampo."
+  },
+  {
+    "question": "O que ocorre com o circuito do medo na fisiopatologia do TEPT?",
+    "options": [
+      "Hiperatividade noradrenérgica persistente, hipercortisolemia e disfunção gabaérgica e glutamatérgica do hipocampo",
+      "Hipoatividade noradrenérgica persistente, hipocortisolemia e disfunção gabaérgica e glutamatérgica do hipocampo",
+      "Hiperatividade noradrenérgica persistente, hipercortisolemia e exacerbação da função gabaérgica hipocampal",
+      "Hipoatividade noradrenérgica persistente, hipercortisolemia e ausência de disfunção no hipocampo"
+    ],
+    "correctIndex": 0,
+    "explanation": "No TEPT, há hiperatividade noradrenérgica persistente e ativação crônica do eixo HPA, gerando hipercortisolemia. A disfunção gabaérgica e glutamatérgica no hipocampo prejudica a consolidação e a contextualização da memória do trauma — por isso o evento é vivido como se ocorresse no presente."
+  },
+  {
+    "question": "Por que o paciente com TEPT vivencia o trauma como se estivesse acontecendo no presente?",
+    "options": [
+      "O hipocampo falha em catalogar a experiência como evento do passado, impedindo a contextualização",
+      "O hipocampo intensifica a catalogação do evento, antecipando a experiência no presente",
+      "A amígdala falha em processar o medo, bloqueando a formação da memória do trauma",
+      "O locus coeruleus ativa o eixo HPA, impedindo a consolidação de qualquer memória"
+    ],
+    "correctIndex": 0,
+    "explanation": "Como o hipocampo falha em catalogar a experiência como evento do passado, o trauma não se integra à biografia do paciente e se atualiza constantemente na consciência, na forma de revivescências. O indivíduo não consegue situar o evento no tempo — ele continua sendo vivido como presente."
+  },
+  {
+    "question": "Sobre a epidemiologia do TEPT no Brasil, qual afirmação está correta?",
+    "options": [
+      "86% da população já foi exposta a traumas e cerca de 7% tem TEPT, mais comum em mulheres",
+      "86% da população já foi exposta a traumas e cerca de 3% tem TEPT, mais comum em mulheres",
+      "40% da população já foi exposta a traumas e cerca de 7% tem TEPT, mais comum em homens",
+      "86% da população já foi exposta a traumas e cerca de 7% tem TEPT, mais comum em homens"
+    ],
+    "correctIndex": 0,
+    "explanation": "No Brasil, a prevalência de exposição a eventos traumáticos ao longo da vida é de 86%, sendo 60% decorrente de violência urbana. Das pessoas expostas, 10 a 20% desenvolvem sintomatologia de TEPT, gerando prevalência de cerca de 7% na população geral — mais que o dobro do TOC —, com maior frequência em mulheres."
+  },
+  {
+    "question": "Qual dos seguintes é um fator de risco pré-traumático para TEPT?",
+    "options": [
+      "Experiências adversas na infância, que alteram de forma persistente o eixo HPA",
+      "Perdas significativas decorrentes do evento, como a morte de familiares no acidente",
+      "Estratégias de enfrentamento inadequadas adotadas após o evento traumático",
+      "Avaliação negativa e sentimento de culpa sobre o próprio trauma vivido"
+    ],
+    "correctIndex": 0,
+    "explanation": "Os fatores pré-traumáticos incluem genética, psicopatologia prévia, baixo nível socioeconômico, experiências adversas na infância — que alteram o eixo HPA de forma persistente, predispondo à hipercortisolemia — e o padrão de apego. Perdas, enfrentamento inadequado e culpa são fatores pós-traumáticos."
+  },
+  {
+    "question": "Segundo a teoria do apego de Bowlby, qual padrão aumenta drasticamente o risco de transtornos e TEPT na vida adulta?",
+    "options": [
+      "O apego inseguro ou desorganizado, com pais ausentes ou fonte da própria agressão",
+      "O apego seguro, com pais que estimulam a exploração e servem de porto seguro",
+      "O apego inseguro ou desorganizado, com pais superprotetores e sempre presentes",
+      "O apego seguro, com pais que restringem a exploração e a curiosidade da criança"
+    ],
+    "correctIndex": 0,
+    "explanation": "No apego seguro, os pais estimulam a exploração e servem de porto seguro. No apego inseguro ou desorganizado, os pais são ausentes ou a própria fonte de agressão — a figura que deveria cuidar é a que agride —, gerando desorganização na modulação do estresse e risco drasticamente maior de transtornos psiquiátricos e TEPT na vida adulta."
+  },
+  {
+    "question": "Segundo o Critério A do DSM-5, quais formas de exposição ao trauma habilitam o diagnóstico de TEPT?",
+    "options": [
+      "Exposição direta, presenciar o evento, saber de familiar ou exposição repetida a detalhes aversivos",
+      "Apenas a experiência direta do evento traumático, sem outras formas de exposição",
+      "Apenas presenciar o evento ocorrendo com outras pessoas, sem experiência direta",
+      "Apenas saber do evento em familiar, sem exposição repetida a detalhes aversivos"
+    ],
+    "correctIndex": 0,
+    "explanation": "O Critério A exige exposição à morte real ou ameaça, lesão grave ou violência sexual por quatro vias: experiência direta; presenciar o evento ocorrendo com outros; saber que ocorreu com familiar ou amigo próximo; ou exposição repetida a detalhes aversivos, como em profissionais de resgate."
+  },
+  {
+    "question": "Qual das seguintes manifestações pertence à dimensão de intrusão (revivescência) do TEPT?",
+    "options": [
+      "Flashbacks, em que o indivíduo age como se o evento ocorresse no presente",
+      "Hipervigilância constante e resposta de sobressalto exagerada",
+      "Esforço persistente para evitar locais e conversas associados ao trauma",
+      "Irritabilidade, surtos de raiva e comportamento agressivo frequentes"
+    ],
+    "correctIndex": 0,
+    "explanation": "A intrusão inclui lembranças intrusivas e angustiantes, pesadelos repetitivos e flashbacks — reações dissociativas em que o indivíduo sente ou age como se o evento estivesse ocorrendo no presente, como o protagonista do Sniper Americano que ataca o cachorro da família após um flashback de guerra. Evitação e hiperreatividade são as outras dimensões da tríade."
+  },
+  {
+    "question": "A paciente cuja irmã morreu atropelada por um ônibus passou a evitar sair de casa e a entrar em pânico ao ver qualquer ônibus. Esse quadro exemplifica qual dimensão do TEPT?",
+    "options": [
+      "Evitação, com esforço persistente para evitar estímulos associados ao trauma",
+      "Intrusão, com revivescências do evento na forma de flashbacks",
+      "Hiperreatividade, com sobressalto exagerado diante de estímulos externos",
+      "Intrusão, com sonhos e pesadelos desagradáveis de forma repetitiva"
+    ],
+    "correctIndex": 0,
+    "explanation": "A evitação é o esforço persistente para evitar lembranças, pensamentos, sentimentos ou estímulos externos — pessoas, locais, conversas — associados ao trauma. A paciente evita sair de casa e qualquer ônibus, que é o estímulo ligado à morte da irmã. Flashbacks, pesadelos e sobressalto pertencem às outras dimensões."
+  },
+  {
+    "question": "Qual é o tempo mínimo de sintomas para o diagnóstico de TEPT segundo o DSM-5?",
+    "options": [
+      "1 mês; sintomas no primeiro mês pós-trauma configuram reação aguda ao estresse",
+      "6 meses; sintomas no primeiro mês pós-trauma configuram reação aguda ao estresse",
+      "1 mês; sintomas no primeiro mês pós-trauma já configuram o diagnóstico de TEPT",
+      "1 ano; sintomas no primeiro mês pós-trauma configuram reação aguda ao estresse"
+    ],
+    "correctIndex": 0,
+    "explanation": "Os sintomas de TEPT devem durar pelo menos 1 mês. Se ocorrem apenas no primeiro mês após o trauma, o diagnóstico é de reação aguda ao estresse — não de TEPT."
+  },
+  {
+    "question": "Quando se aplica o especificador de início tardio do TEPT?",
+    "options": [
+      "Quando os sintomas se manifestam 6 meses ou mais após o evento traumático",
+      "Quando os sintomas se manifestam 1 mês ou mais após o evento traumático",
+      "Quando os sintomas se manifestam 1 semana ou mais após o evento traumático",
+      "Quando os sintomas se manifestam 3 meses ou mais após o evento traumático"
+    ],
+    "correctIndex": 0,
+    "explanation": "O especificador de início tardio é usado quando os sintomas aparecem apenas 6 meses ou mais após o evento traumático. Há ainda a amnésia dissociativa: pacientes que bloqueiam e esquecem o trauma, que, não degradado nem integrado à biografia, mantém risco altíssimo de emergir como TEPT posteriormente."
+  },
+  {
+    "question": "Qual é a regra de ouro do pronto-socorro ao atender vítimas recentes de violência?",
+    "options": [
+      "Não prescrever benzodiazepínicos, pois eles aumentam o risco de TEPT a longo prazo",
+      "Prescrever benzodiazepínicos, pois eles reduzem o risco de TEPT a longo prazo",
+      "Não prescrever benzodiazepínicos, pois eles aumentam o risco de reação aguda",
+      "Prescrever benzodiazepínicos, pois eles consolidam a memória do trauma"
+    ],
+    "correctIndex": 0,
+    "explanation": "Benzodiazepínicos como diazepam e clonazepam reduzem a capacidade do cérebro de processar e consolidar a memória do trauma, impedindo a degradação natural do estresse e aumentando significativamente o risco de TEPT a longo prazo. Se houver necessidade de sedação, a alternativa é a quetiapina em dose baixa."
+  },
+  {
+    "question": "Sobre o curso clínico do TEPT, qual afirmação está correta?",
+    "options": [
+      "Sem tratamento, a resolução espontânea leva em média 64 meses; com tratamento, 36 meses",
+      "Sem tratamento, a resolução espontânea leva em média 36 meses; com tratamento, 64 meses",
+      "Sem tratamento, a resolução espontânea leva em média 64 meses; com tratamento, 12 meses",
+      "Sem tratamento, a resolução espontânea leva em média 12 meses; com tratamento, 64 meses"
+    ],
+    "correctIndex": 0,
+    "explanation": "O tratamento adequado é altamente eficaz e encurta substancialmente a duração do transtorno: sem tratamento, a resolução espontânea dos sintomas leva em média 64 meses; com tratamento, cai para 36 meses. Diferente do TOC, o TEPT tem cura."
+  }
+];
+
+var LETTERS = ['A','B','C','D','E','F'];
+var SHUFFLE = true, LOCK = true;
+
+var S = { view:'home', started:false, finished:false, i:0, order:[], answers:[], open:{}, filter:'all', warn:false };
+
+function esc(s){ return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
+function pad(n){ return String(n).padStart(2,'0'); }
+
+function build(){
+  var qs = QUIZ.map(function(q,id){ return { question:q.question, options:q.options.slice(), correctIndex:q.correctIndex, explanation:q.explanation, image:q.image, imageCaption:q.imageCaption, id:id }; });
+  if (!SHUFFLE) return qs;
+  for (var i=qs.length-1;i>0;i--){ var j=Math.floor(Math.random()*(i+1)); var t=qs[i]; qs[i]=qs[j]; qs[j]=t; }
+  return qs.map(function(q){
+    var correct = q.options[q.correctIndex], o = q.options.slice();
+    for (var i=o.length-1;i>0;i--){ var j=Math.floor(Math.random()*(i+1)); var t=o[i]; o[i]=o[j]; o[j]=t; }
+    q.options = o; q.correctIndex = o.indexOf(correct); return q;
+  });
+}
+
+/* ── ações ─────────────────────────────────────────────────────────────────── */
+var A = {
+  home:      function(){ S.view='home'; S.started=false; S.finished=false; up(0); },
+  resumo:    function(){ S.view='resumo'; up(0); },
+  start:     function(){ var o=build(); S.view='quiz'; S.started=true; S.finished=false; S.i=0; S.order=o;
+                         S.answers=new Array(o.length).fill(null); S.open={}; S.filter='all'; S.warn=false; up(0); },
+  restart:   function(){ A.start(); },
+  go:        function(n){ if(n<0||n>S.order.length-1) return; S.i=n; S.warn=false; render(); },
+  jump:      function(n){ if(S.finished){ S.finished=false; S.i=n; S.warn=false; } else { if(n<0||n>S.order.length-1) return; S.i=n; S.warn=false; } up(0,'smooth'); },
+  pick:      function(n){ if(LOCK && S.answers[S.i]!==null) return; S.answers[S.i]=n; render(); },
+  prev:      function(){ A.go(S.i-1); },
+  next:      function(){ if(S.i<S.order.length-1) A.go(S.i+1); else A.finish(); },
+  finish:    function(){ var b=S.answers.filter(function(a){return a===null}).length;
+                         if(b>0 && !S.warn){ S.warn=true; render(); return; } S.finished=true; S.warn=false; up(0); },
+  force:     function(){ S.finished=true; S.warn=false; up(0); },
+  gotoBlank: function(){ var n=S.answers.findIndex(function(a){return a===null}); if(n>=0) A.go(n); },
+  back:      function(){ S.finished=false; S.warn=false; up(0); },
+  filter:    function(k){ S.filter=k; render(); },
+  toggle:    function(n){ S.open[n]=!S.open[n]; render(); },
+  toggleAll: function(){ var r=reviewList(), all=r.length>0 && r.every(function(x){return S.open[x.idx]});
+                         S.open={}; if(!all) r.forEach(function(x){ S.open[x.idx]=true; }); render(); }
+};
+function up(top, beh){ render(); window.scrollTo({ top: top||0, behavior: beh||'auto' }); }
+
+/* ── header ────────────────────────────────────────────────────────────────── */
+function renderHeader(){
+  var mono = "font-family:'IBM Plex Mono',monospace";
+  var left =
+    '<div style="min-width:0">' +
+      '<div style="'+mono+';font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:#8a8578">'+esc(EYEBROW)+'</div>' +
+      '<h1 style="margin:1px 0 0;font-family:\'Newsreader\',Georgia,serif;font-size:20px;font-weight:500;letter-spacing:-.01em;line-height:1.15">'+esc(TITLE)+'</h1>' +
+    '</div>';
+
+  var right = '';
+  if (S.view === 'quiz' && S.started) {
+    var hit = counts().hit;
+    right = '<div style="display:flex;align-items:center;gap:6px;flex-shrink:0">' +
+              '<span style="'+mono+';font-size:15px;font-weight:600;letter-spacing:-.02em">'+hit+'</span>' +
+              '<span style="'+mono+';font-size:11px;color:#8a8578">/ '+S.order.length+'</span>' +
+            '</div>';
+  } else if (S.view !== 'home') {
+    right = '<button type="button" data-act="home" class="h-line" style="flex-shrink:0;background:none;border:1px solid #ddd8ce;border-radius:9px;padding:7px 13px;'+mono+';font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:#5b6478;cursor:pointer;transition:border-color .15s ease">← Início</button>';
+  }
+
+  var html = '<div style="display:flex;align-items:baseline;justify-content:space-between;gap:12px;margin-bottom:'+(S.view==='quiz'&&S.started?'10px':'2px')+'">'+left+right+'</div>';
+
+  if (S.view === 'quiz' && S.started) {
+    var c = counts();
+    var rail = S.order.map(function(q,n){
+      var a = S.answers[n], cur = n===S.i && !S.finished, bg = '#d3cec4';
+      if (a!==null) bg = (a===q.correctIndex) ? '#2e7d55' : '#c04437';
+      if (cur && a===null) bg = '#121a2b';
+      var st = a===null ? 'em branco' : (a===q.correctIndex ? 'correta' : 'incorreta');
+      return '<button type="button" data-act="jump" data-n="'+n+'" title="Questão '+(n+1)+' — '+st+'" aria-label="Questão '+(n+1)+' — '+st+'" style="flex:1 1 0;min-width:0;background:none;border:0;padding:13px 0;margin:0;cursor:pointer;display:flex;align-items:center;justify-content:center">' +
+             '<span style="display:block;width:100%;border-radius:99px;transition:height .18s ease,background .18s ease,box-shadow .18s ease;height:'+(cur?'17px':'9px')+';background:'+bg+';box-shadow:'+(cur?'0 0 0 3px rgba(18,26,43,.13)':'none')+'"></span></button>';
+    }).join('');
+    html += '<div><div style="display:flex;align-items:center;gap:3px">'+rail+'</div>' +
+            '<div style="display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:-2px">' +
+              '<div style="'+mono+';font-size:11px;letter-spacing:.04em;color:#5b6478">Questão '+pad(S.i+1)+' / '+S.order.length+'</div>' +
+              '<div style="display:flex;align-items:center;gap:12px;'+mono+';font-size:10.5px;color:#8a8578">' +
+                dot('#2e7d55',c.hit)+dot('#c04437',c.miss)+dot('#d3cec4',c.blank) +
+              '</div></div></div>';
+  }
+  document.getElementById('hdr').innerHTML = html;
+}
+function dot(color,n){ return '<span style="display:flex;align-items:center;gap:5px"><span style="width:7px;height:7px;border-radius:99px;background:'+color+';display:block"></span>'+n+'</span>'; }
+
+function counts(){
+  var hit=0, miss=0, blank=0;
+  S.answers.forEach(function(a,n){
+    if (a===null) blank++;
+    else if (S.order[n] && a===S.order[n].correctIndex) hit++;
+    else miss++;
+  });
+  return { hit:hit, miss:miss, blank:blank, total:S.order.length };
+}
+
+/* ── tela inicial ──────────────────────────────────────────────────────────── */
+function renderHome(){
+  var mono = "font-family:'IBM Plex Mono',monospace";
+  var secoes = (document.getElementById('resumoSrc').textContent.match(/<h2/g)||[]).length;
+  var cell = function(v,l){
+    return '<div style="background:#faf9f6;padding:16px 14px">' +
+      '<div style="'+mono+';font-size:22px;font-weight:500;letter-spacing:-.03em">'+v+'</div>' +
+      '<div style="'+mono+';font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:#8a8578;margin-top:3px">'+l+'</div></div>';
+  };
+  var card = function(act,tag,titulo,desc,cta){
+    return '<button type="button" data-act="'+act+'" class="h-card" style="display:flex;flex-direction:column;align-items:flex-start;gap:0;text-align:left;background:#fff;border:1px solid #e4e0d8;border-radius:18px;padding:24px 22px;cursor:pointer;transition:border-color .16s ease,transform .14s ease;box-shadow:0 1px 2px rgba(18,26,43,.04),0 12px 28px -20px rgba(18,26,43,.18)">' +
+      '<div style="'+mono+';font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:#2b57cc;margin-bottom:12px">'+tag+'</div>' +
+      '<div style="font-family:\'Newsreader\',Georgia,serif;font-size:26px;font-weight:500;letter-spacing:-.02em;line-height:1.15;margin-bottom:8px">'+titulo+'</div>' +
+      '<div style="font-size:14px;line-height:1.6;color:#5b6478;margin-bottom:18px;text-wrap:pretty">'+desc+'</div>' +
+      '<div style="'+mono+';font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:#121a2b">'+cta+'</div></button>';
+  };
+
+  document.getElementById('stage').innerHTML =
+    '<section style="padding:56px 0 0;animation:qFade .3s ease">' +
+      '<div style="'+mono+';font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:#2b57cc;margin-bottom:16px">Material de revisão</div>' +
+      '<h2 style="font-family:\'Newsreader\',Georgia,serif;font-size:40px;line-height:1.08;font-weight:400;letter-spacing:-.025em;margin:0 0 18px;text-wrap:pretty">'+esc(SUBTITLE)+'</h2>' +
+      '<p style="font-size:15.5px;line-height:1.65;color:#5b6478;margin:0 0 30px;max-width:52ch;text-wrap:pretty">'+esc(INTRO)+'</p>' +
+      '<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(108px,1fr));gap:1px;background:#e4e0d8;border:1px solid #e4e0d8;border-radius:14px;overflow:hidden;margin-bottom:32px">' +
+        cell(QUIZ.length,'Questões') + cell(secoes,'Seções') + cell('~'+Math.round(QUIZ.length*0.75),'Minutos') +
+      '</div>' +
+      '<div class="home-grid" style="display:grid;grid-template-columns:1fr 1fr;gap:12px">' +
+        card('start','Praticar','Quiz', QUIZ.length+' questões de múltipla escolha, com explicação assim que você responde e gabarito comentado no fim.','Começar →') +
+        card('resumo','Estudar','Resumo','O conteúdo da aula em texto corrido, organizado em '+secoes+' seções para leitura antes da prova.','Ler →') +
+      '</div>' +
+      '<div style="margin-top:26px;display:flex;flex-wrap:wrap;gap:8px 18px;'+mono+';font-size:11px;color:#8a8578">' +
+        '<span>← →&nbsp; navegar</span><span>1–'+maxOpts()+'&nbsp; responder</span><span>Enter&nbsp; avançar</span></div>' +
+    '</section>';
+}
+function maxOpts(){ return QUIZ.reduce(function(m,q){ return Math.max(m,q.options.length); },0); }
+
+/* ── resumo ────────────────────────────────────────────────────────────────── */
+function renderResumo(){
+  document.getElementById('stage').innerHTML =
+    '<section style="padding:34px 0 0;animation:qFade .3s ease">' +
+      '<div style="font-family:\'IBM Plex Mono\',monospace;font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:#2b57cc;margin-bottom:14px">Resumo</div>' +
+      '<div class="rsm">' + document.getElementById('resumoSrc').textContent + '</div>' +
+      '<div style="display:flex;flex-wrap:wrap;gap:9px;margin-top:38px;padding-top:24px;border-top:1px solid #e4e0d8">' +
+        '<button type="button" data-act="start" class="h-darkflat" style="background:#121a2b;color:#f5f3ef;border:0;border-radius:11px;padding:13px 24px;font-size:14px;font-weight:500;cursor:pointer;transition:background .16s ease">Fazer o quiz →</button>' +
+        '<button type="button" data-act="home" class="h-line" style="background:none;border:1px solid #ddd8ce;border-radius:11px;padding:13px 22px;font-size:14px;cursor:pointer;transition:border-color .15s ease">Voltar ao início</button>' +
+      '</div></section>';
+}
+
+/* imagem da questao — data URI ja resolvida pelo montar_quiz.py */
+function figura(q, cls){
+  if (!q.image) return '';
+  return '<figure class="fig'+(cls?' '+cls:'')+'"><img src="'+q.image+'" alt="'+esc(q.imageCaption||'Imagem da questão')+'">' +
+         (q.imageCaption ? '<figcaption>'+esc(q.imageCaption)+'</figcaption>' : '') + '</figure>';
+}
+
+/* ── questão ───────────────────────────────────────────────────────────────── */
+function renderQuestion(){
+  var mono = "font-family:'IBM Plex Mono',monospace";
+  var q = S.order[S.i], ans = S.answers[S.i], reveal = ans !== null;
+
+  var status = 'Não respondida', sColor = '#8a8578';
+  if (reveal) { var ok = ans===q.correctIndex; status = ok?'Você acertou':'Você errou'; sColor = ok?'#2e7d55':'#c04437'; }
+
+  var opts = q.options.map(function(text,n){
+    var isC = n===q.correctIndex, isMine = n===ans;
+    var bd='#e4e0d8', bg='#fff', fg='#121a2b', bBg='#f2efe9', bFg='#8a8578', mark='', mColor='', op='1', hbd='#2b57cc';
+    if (reveal) {
+      op = (isC||isMine) ? '1' : '.62';
+      if (isC)               { bd='#8fc7a7'; bg='#eef7f1'; fg='#1f5c3e'; bBg='#2e7d55'; bFg='#fff'; mark='✓'; mColor='#2e7d55'; }
+      if (isMine && !isC)    { bd='#e0a49a'; bg='#fdf0ee'; fg='#8f2f25'; bBg='#c04437'; bFg='#fff'; mark='✕'; mColor='#c04437'; }
+    } else if (isMine)       { bd='#121a2b'; bg='#f7f6f2'; bBg='#121a2b'; bFg='#f5f3ef'; }
+    var locked = reveal && LOCK;
+    return '<button type="button" data-act="pick" data-n="'+n+'" class="h-opt'+(locked?' locked':'')+'" style="--hbd:'+hbd+';display:flex;gap:13px;align-items:flex-start;width:100%;text-align:left;padding:14px 15px;border-radius:13px;font-size:15px;line-height:1.5;transition:border-color .15s ease,background .15s ease,transform .12s ease;border:1.5px solid '+bd+';background:'+bg+';color:'+fg+';cursor:'+(locked?'default':'pointer')+';opacity:'+op+'">' +
+      '<span style="flex-shrink:0;width:24px;height:24px;border-radius:7px;display:flex;align-items:center;justify-content:center;'+mono+';font-size:11.5px;font-weight:600;margin-top:1px;background:'+bBg+';color:'+bFg+'">'+LETTERS[n]+'</span>' +
+      '<span style="flex:1;min-width:0;text-wrap:pretty">'+esc(text)+'</span>' +
+      (mark ? '<span style="flex-shrink:0;'+mono+';font-size:14px;font-weight:600;margin-top:1px;color:'+mColor+'">'+mark+'</span>' : '') +
+      '</button>';
+  }).join('');
+
+  var expl = reveal ? '<div style="margin-top:20px;padding:16px 18px;background:#f7f6f2;border-left:2.5px solid #2b57cc;border-radius:0 12px 12px 0;animation:qFade .26s ease">' +
+      '<div style="'+mono+';font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:#2b57cc;margin-bottom:8px">Por quê</div>' +
+      '<p style="margin:0;font-size:14.5px;line-height:1.68;color:#39404f;text-wrap:pretty">'+esc(q.explanation)+'</p></div>' : '';
+
+  var blank = counts().blank;
+  var warn = S.warn ? '<div style="margin-top:14px;padding:15px 17px;background:#fdf7e9;border:1px solid #e8d5a3;border-radius:14px;animation:qFade .22s ease">' +
+      '<p style="margin:0 0 12px;font-size:14px;line-height:1.55;color:#6b5620">'+blank+(blank===1?' questão ainda está em branco.':' questões ainda estão em branco.')+' Você pode voltar nelas ou finalizar assim mesmo.</p>' +
+      '<div style="display:flex;flex-wrap:wrap;gap:8px">' +
+        '<button type="button" data-act="gotoBlank" style="background:#121a2b;color:#f5f3ef;border:0;border-radius:9px;padding:9px 16px;font-size:13px;font-weight:500;cursor:pointer">Ir para a 1ª em branco</button>' +
+        '<button type="button" data-act="force" style="background:none;color:#6b5620;border:1px solid #e8d5a3;border-radius:9px;padding:9px 16px;font-size:13px;cursor:pointer">Finalizar assim mesmo</button>' +
+      '</div></div>' : '';
+
+  var last = S.i === S.order.length-1;
+  var early = !last && (S.order.length - blank) > 0;
+
+  document.getElementById('stage').innerHTML =
+    '<section style="padding:26px 0 0">' +
+      '<article style="background:#fff;border:1px solid #e4e0d8;border-radius:18px;padding:26px 22px 24px;box-shadow:0 1px 2px rgba(18,26,43,.04),0 12px 28px -18px rgba(18,26,43,.18)">' +
+        '<div style="display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:14px">' +
+          '<div style="'+mono+';font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:#2b57cc">Questão '+pad(S.i+1)+'</div>' +
+          '<div style="'+mono+';font-size:10.5px;letter-spacing:.06em;color:'+sColor+'">'+status+'</div>' +
+        '</div>' +
+        '<h2 style="font-family:\'Newsreader\',Georgia,serif;font-size:22px;line-height:1.42;font-weight:400;letter-spacing:-.012em;margin:0 0 22px;text-wrap:pretty">'+esc(q.question)+'</h2>' +
+        figura(q, 'qfig') +
+        '<div style="display:flex;flex-direction:column;gap:9px">'+opts+'</div>' + expl +
+      '</article>' + warn +
+      '<div style="display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:18px">' +
+        '<button type="button" data-act="prev" class="h-line" style="background:none;border:1px solid #ddd8ce;border-radius:11px;padding:12px 18px;font-size:14px;cursor:pointer;transition:border-color .15s ease,color .15s ease;color:'+(S.i===0?'#c4bfb4':'#121a2b')+';pointer-events:'+(S.i===0?'none':'auto')+'">← Anterior</button>' +
+        '<div style="display:flex;align-items:center;gap:8px">' +
+          (early ? '<button type="button" data-act="finish" class="h-ink" style="background:none;border:0;padding:12px 6px;'+mono+';font-size:11.5px;letter-spacing:.06em;text-transform:uppercase;color:#8a8578;cursor:pointer;text-decoration:underline;text-underline-offset:3px">Finalizar</button>' : '') +
+          '<button type="button" data-act="next" class="h-darkflat" style="background:#121a2b;color:#f5f3ef;border:0;border-radius:11px;padding:12px 22px;font-size:14px;font-weight:500;cursor:pointer;transition:background .16s ease">'+(last?'Finalizar':'Próxima →')+'</button>' +
+        '</div></div></section>';
+}
+
+/* ── resultado + gabarito comentado ────────────────────────────────────────── */
+function reviewList(){
+  return S.order.map(function(q,n){
+    var a = S.answers[n], ok = a!==null && a===q.correctIndex;
+    return { idx:n, ok:ok, blank:a===null, q:q, a:a };
+  }).filter(function(r){
+    return S.filter==='all' || (S.filter==='wrong'&&!r.ok&&!r.blank) || (S.filter==='right'&&r.ok) || (S.filter==='blank'&&r.blank);
+  });
+}
+
+function renderResult(){
+  var mono = "font-family:'IBM Plex Mono',monospace";
+  var c = counts(), pct = c.total ? Math.round(c.hit/c.total*100) : 0;
+
+  var title='Precisa revisar', msg='Releia o material com atenção e refaça o quiz — as explicações abaixo cobrem cada erro.';
+  if (pct>=90)      { title='Domínio sólido';   msg='Desempenho excelente. Confira as explicações das que escaparam e siga em frente.'; }
+  else if (pct>=70) { title='Bom desempenho';   msg='Base consistente. Revise os pontos errados abaixo para fechar as lacunas.'; }
+  else if (pct>=50) { title='Meio do caminho';  msg='Você acertou o essencial, mas há lacunas. Comece pelo filtro de erradas.'; }
+
+  var stat = function(v,l,color){
+    return '<div style="background:#faf9f6;padding:14px 10px">' +
+      '<div style="'+mono+';font-size:19px;font-weight:500;color:'+color+'">'+v+'</div>' +
+      '<div style="'+mono+';font-size:9.5px;letter-spacing:.09em;text-transform:uppercase;color:#8a8578;margin-top:2px">'+l+'</div></div>';
+  };
+
+  var fdefs = [['all','Todas',c.total],['wrong','Erradas',c.miss],['right','Certas',c.hit],['blank','Em branco',c.blank]];
+  var filters = fdefs.map(function(f){
+    var on = S.filter===f[0];
+    return '<button type="button" data-act="filter" data-k="'+f[0]+'" class="h-line" style="border-radius:99px;padding:8px 14px;font-size:13px;cursor:pointer;transition:all .15s ease;border:1px solid '+(on?'#121a2b':'#ddd8ce')+';background:'+(on?'#121a2b':'transparent')+';color:'+(on?'#f5f3ef':'#5b6478')+'">'+f[1]+' '+f[2]+'</button>';
+  }).join('');
+
+  var list = reviewList();
+  var allOpen = list.length>0 && list.every(function(r){ return S.open[r.idx]; });
+
+  var cards = list.map(function(r){
+    var numBg='#f0ede7', numFg='#8a8578';
+    if (!r.blank) { if (r.ok) { numBg='#e3f0e8'; numFg='#1f5c3e'; } else { numBg='#fbe6e2'; numFg='#8f2f25'; } }
+    var open = !!S.open[r.idx];
+    var body = '';
+    if (open) {
+      var opts = r.q.options.map(function(text,n){
+        var isC = n===r.q.correctIndex, isMine = n===r.a;
+        var bd='#eeebe4', bg='#fbfaf8', fg='#5b6478', bBg='#f0ede7', bFg='#8a8578', tag='', tBg='', tFg='';
+        if (isC)            { bd='#bcdcc9'; bg='#eef7f1'; fg='#1f5c3e'; bBg='#2e7d55'; bFg='#fff'; tag='Correta'; tBg='#d9ede1'; tFg='#1f5c3e'; }
+        if (isMine && !isC) { bd='#eec4bd'; bg='#fdf0ee'; fg='#8f2f25'; bBg='#c04437'; bFg='#fff'; tag='Sua resposta'; tBg='#f7ddd8'; tFg='#8f2f25'; }
+        if (isMine && isC)  { tag='Sua resposta ✓'; }
+        return '<div style="display:flex;gap:11px;align-items:flex-start;padding:11px 13px;border-radius:11px;font-size:14px;line-height:1.5;border:1px solid '+bd+';background:'+bg+';color:'+fg+'">' +
+          '<span style="flex-shrink:0;width:21px;height:21px;border-radius:6px;display:flex;align-items:center;justify-content:center;'+mono+';font-size:10.5px;font-weight:600;background:'+bBg+';color:'+bFg+'">'+LETTERS[n]+'</span>' +
+          '<span style="flex:1;min-width:0;text-wrap:pretty">'+esc(text)+'</span>' +
+          (tag ? '<span style="flex-shrink:0;'+mono+';font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;padding:3px 7px;border-radius:6px;margin-top:1px;background:'+tBg+';color:'+tFg+'">'+tag+'</span>' : '') +
+          '</div>';
+      }).join('');
+      body = '<div style="padding:2px 15px 18px;animation:qDrawer .2s ease">' +
+        '<div style="height:1px;background:#eeebe4;margin:0 0 16px"></div>' +
+        '<p style="font-family:\'Newsreader\',Georgia,serif;font-size:18px;line-height:1.5;margin:0 0 16px;text-wrap:pretty">'+esc(r.q.question)+'</p>' +
+        figura(r.q) +
+        '<div style="display:flex;flex-direction:column;gap:7px">'+opts+'</div>' +
+        '<div style="margin-top:16px;padding:14px 16px;background:#f7f6f2;border-left:2.5px solid #2b57cc;border-radius:0 11px 11px 0">' +
+          '<div style="'+mono+';font-size:9.5px;letter-spacing:.16em;text-transform:uppercase;color:#2b57cc;margin-bottom:7px">Por quê</div>' +
+          '<p style="margin:0;font-size:14px;line-height:1.65;color:#39404f;text-wrap:pretty">'+esc(r.q.explanation)+'</p></div>' +
+        '<button type="button" data-act="jump" data-n="'+r.idx+'" style="margin-top:14px;background:none;border:0;padding:0;'+mono+';font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:#2b57cc;cursor:pointer;text-decoration:underline;text-underline-offset:3px">Abrir no quiz →</button></div>';
+    }
+    return '<div style="background:#fff;border:1px solid '+(open?'#c9c3b6':'#e4e0d8')+';border-radius:14px;overflow:hidden;transition:border-color .15s ease">' +
+      '<button type="button" data-act="toggle" data-n="'+r.idx+'" style="display:flex;align-items:center;gap:12px;width:100%;text-align:left;background:none;border:0;padding:14px 15px;cursor:pointer">' +
+        '<span style="flex-shrink:0;width:28px;height:28px;border-radius:8px;display:flex;align-items:center;justify-content:center;'+mono+';font-size:12px;font-weight:600;background:'+numBg+';color:'+numFg+'">'+pad(r.idx+1)+'</span>' +
+        '<span style="flex:1;min-width:0;font-size:14px;line-height:1.45;color:#39404f;overflow:hidden;text-overflow:ellipsis;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical">'+esc(r.q.question)+'</span>' +
+        '<span style="flex-shrink:0;'+mono+';font-size:16px;color:#8a8578;width:16px;text-align:center">'+(open?'−':'+')+'</span>' +
+      '</button>' + body + '</div>';
+  }).join('');
+
+  document.getElementById('stage').innerHTML =
+    '<section style="padding:34px 0 0;animation:qFade .3s ease">' +
+      '<div style="'+mono+';font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:#2b57cc;margin-bottom:14px">Resultado</div>' +
+      '<h2 style="font-family:\'Newsreader\',Georgia,serif;font-size:36px;line-height:1.12;font-weight:400;letter-spacing:-.025em;margin:0 0 8px">'+title+'</h2>' +
+      '<p style="font-size:15px;line-height:1.6;color:#5b6478;margin:0 0 24px;max-width:48ch;text-wrap:pretty">'+msg+'</p>' +
+      '<div style="height:8px;border-radius:99px;background:#e4e0d8;overflow:hidden;margin-bottom:10px">' +
+        '<div style="height:100%;border-radius:99px;background:#121a2b;transition:width .7s cubic-bezier(.22,1,.36,1);width:'+pct+'%"></div></div>' +
+      '<div style="display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:#e4e0d8;border:1px solid #e4e0d8;border-radius:14px;overflow:hidden;margin-bottom:34px">' +
+        stat(c.hit,'Certas','#2e7d55')+stat(c.miss,'Erradas','#c04437')+stat(c.blank,'Branco','#8a8578')+stat(pct+'%','Aproveit.','#2b57cc') +
+      '</div>' +
+      '<div style="display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-bottom:14px">' +
+        '<h3 style="font-family:\'Newsreader\',Georgia,serif;font-size:22px;font-weight:500;letter-spacing:-.015em;margin:0">Gabarito comentado</h3>' +
+        '<button type="button" data-act="toggleAll" class="h-ink" style="background:none;border:0;padding:6px 0;'+mono+';font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:#5b6478;cursor:pointer;text-decoration:underline;text-underline-offset:3px">'+(allOpen?'Recolher tudo':'Expandir tudo')+'</button>' +
+      '</div>' +
+      '<div style="display:flex;gap:7px;flex-wrap:wrap;margin-bottom:16px">'+filters+'</div>' +
+      '<div style="display:flex;flex-direction:column;gap:8px">'+cards+'</div>' +
+      (list.length===0 ? '<div style="padding:38px 16px;text-align:center;color:#8a8578;font-size:14px;border:1px dashed #ddd8ce;border-radius:14px">Nenhuma questão neste filtro.</div>' : '') +
+      '<div style="display:flex;flex-wrap:wrap;gap:9px;margin-top:28px;padding-top:24px;border-top:1px solid #e4e0d8">' +
+        '<button type="button" data-act="restart" class="h-darkflat" style="background:#121a2b;color:#f5f3ef;border:0;border-radius:11px;padding:13px 24px;font-size:14px;font-weight:500;cursor:pointer;transition:background .16s ease">Refazer o quiz</button>' +
+        '<button type="button" data-act="back" class="h-line" style="background:none;border:1px solid #ddd8ce;border-radius:11px;padding:13px 22px;font-size:14px;cursor:pointer;transition:border-color .15s ease">Voltar às questões</button>' +
+        '<button type="button" data-act="resumo" class="h-line" style="background:none;border:1px solid #ddd8ce;border-radius:11px;padding:13px 22px;font-size:14px;cursor:pointer;transition:border-color .15s ease">Ler o resumo</button>' +
+      '</div></section>';
+}
+
+/* ── render + eventos ──────────────────────────────────────────────────────── */
+function render(){
+  renderHeader();
+  if (S.view === 'home')        renderHome();
+  else if (S.view === 'resumo') renderResumo();
+  else if (S.finished)          renderResult();
+  else                          renderQuestion();
+}
+
+/* lightbox: clique em qualquer figura amplia */
+document.addEventListener('click', function(e){
+  var lb = document.getElementById('lb');
+  if (e.target.closest('#lb')) { lb.className = ''; return; }
+  var img = e.target.closest('.fig img');
+  if (img) { lb.firstElementChild.src = img.src; lb.className = 'on'; }
+});
+window.addEventListener('keydown', function(e){
+  if (e.key === 'Escape') document.getElementById('lb').className = '';
+});
+
+document.addEventListener('click', function(e){
+  var b = e.target.closest('[data-act]'); if (!b) return;
+  var act = b.getAttribute('data-act'), n = parseInt(b.getAttribute('data-n'),10), k = b.getAttribute('data-k');
+  if (act==='pick'||act==='jump'||act==='toggle') A[act](n);
+  else if (act==='filter') A.filter(k);
+  else if (A[act]) A[act]();
+});
+
+window.addEventListener('keydown', function(e){
+  if (S.view!=='quiz' || !S.started || S.finished) return;
+  if (e.metaKey||e.ctrlKey||e.altKey) return;
+  if (e.key==='ArrowRight')     { e.preventDefault(); A.go(S.i+1); }
+  else if (e.key==='ArrowLeft') { e.preventDefault(); A.go(S.i-1); }
+  else if (e.key==='Enter')     { e.preventDefault(); A.next(); }
+  else if (/^[1-6]$/.test(e.key)) {
+    var n = parseInt(e.key,10)-1;
+    if (n < S.order[S.i].options.length) A.pick(n);
+  }
+});
+
+render();
+</script>
+</body>
+</html>

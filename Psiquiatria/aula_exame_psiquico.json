@@ -1,0 +1,338 @@
+{
+  "titulo": "Exame Psíquico",
+  "eyebrow": "Psiquiatria · Semiologia",
+  "subtitulo": "Do encontro ao pensamento: descrever o psiquismo em linguagem compartilhada",
+  "intro": "O exame psíquico como ferramenta diagnóstica e linguagem de comunicação entre médicos: apresentação, consciência, orientação, sensopercepção, atenção, memória, afetividade, pensamento, volição e suas principais alterações psicopatológicas.",
+  "questoes": [
+    {
+      "question": "No pedido de vaga para o hospital psiquiátrico, o que o exame psíquico descrito pelo médico permitiu ao professor entender?",
+      "options": [
+        "O fenômeno observado na paciente, funcionando como linguagem de comunicação entre médicos",
+        "O fenômeno observado na paciente, substituindo a entrevista psiquiátrica com a paciente",
+        "O diagnóstico da paciente, dispensando o exame físico descrito no mesmo pedido",
+        "O diagnóstico da paciente, servindo apenas como registro burocrático do pedido"
+      ],
+      "correctIndex": 0,
+      "explanation": "O exame psíquico é uma linguagem de comunicação entre médicos: a descrição de humor hipertímico, pensamento acelerado, logorreia e delírio de grandeza, persecutório e religioso, sem auto ou heteroagressividade e com insight prejudicado, permitiu ao professor imaginar o fenômeno observado e autorizar a transferência. Além de ferramenta diagnóstica, ele reporta a observação de forma objetiva e compartilhada entre especialidades."
+    },
+    {
+      "question": "Por que o professor afirma que todo médico generalista precisa saber fazer um bom exame psíquico?",
+      "options": [
+        "Pela alta prevalência de depressão e ansiedade leves, que cabem à atenção primária",
+        "Pela baixa prevalência de depressão, que compete apenas ao psiquiatra",
+        "Pelo excesso de psiquiatras, que atendem toda a demanda do país inteiro",
+        "Pela necessidade de substituir a entrevista psiquiátrica pelo exame físico"
+      ],
+      "correctIndex": 0,
+      "explanation": "O Brasil tem em média quase sete psiquiatras para cada 100.000 habitantes, 75% concentrados no Sul e Sudeste, enquanto a prevalência de depressão ao longo da vida gira em torno de 15%. Quadros leves de ansiedade e depressão devem ser tratados e conduzidos por médicos generalistas na atenção primária — e o diagnóstico deles exige um bom exame psíquico."
+    },
+    {
+      "question": "Segundo a aula, por onde começa o exame psíquico?",
+      "options": [
+        "Pelos dados não verbais e primeiras impressões sobre o paciente",
+        "Pela história detalhada dos sintomas relatados pelo paciente",
+        "Pelo histórico de internações psiquiátricas prévias do paciente",
+        "Pelos resultados de exames complementares e de neuroimagem"
+      ],
+      "correctIndex": 0,
+      "explanation": "O exame psíquico começa pelas primeiras impressões, já nos primeiros minutos de contato, com base nos dados não verbais: como o paciente se veste, se porta, sua expressão facial, postura, higiene, autocuidado e atitude frente ao examinador. O paciente fornece dados sobre si mesmo ainda que não diga nada."
+    },
+    {
+      "question": "Por que a família percebe que a paciente com transtorno bipolar está entrando em episódio de mania psicótica?",
+      "options": [
+        "Porque mudam suas roupas e seu padrão de maquiagem, com cores mais chamativas",
+        "Porque ela passa a dormir mais e a se alimentar excessivamente",
+        "Porque ela reduz a fala e evita o contato visual com a família",
+        "Porque ela abandona a higiene pessoal e o autocuidado habitual"
+      ],
+      "correctIndex": 0,
+      "explanation": "A mudança na apresentação é um sinal de alteração psicopatológica: a paciente passa a usar roupas mais chamativas, cores mais vivas e maquiagem mais exagerada, diferente do padrão habitual dela. A aula enfatiza que o parâmetro é a mudança em relação à própria paciente, e não em relação a um grupo ou cultura."
+    },
+    {
+      "question": "Por que o nível de consciência é descrito logo no início do exame psíquico?",
+      "options": [
+        "Porque ele determina e pode comprometer todo o restante da descrição",
+        "Porque ele é o único parâmetro objetivo e mensurável do exame",
+        "Porque sua avaliação dispensa o exame das demais funções psíquicas",
+        "Porque ele só é avaliado quando o paciente está em estado de coma"
+      ],
+      "correctIndex": 0,
+      "explanation": "De um paciente em coma — como o do leito 9, intubado e sedado com midazolam e fentanil após intoxicação exógena — não é possível extrair pensamento, humor ou volição; o exame fica reduzido a uma linha. Da mesma forma, o paciente contido quimicamente (Haldol com fenergan ou midazolam IM) fica sonolento, e todo o restante da avaliação é prejudicado."
+    },
+    {
+      "question": "Como a aula define a consciência para fins psicopatológicos?",
+      "options": [
+        "Capacidade de entrar em contato com a realidade e reconhecer seus objetos",
+        "Capacidade de recordar fatos da própria biografia e do ambiente",
+        "Capacidade de hierarquizar estímulos e dirigir a atenção a eles",
+        "Capacidade de executar vontades por meio da psicomotricidade"
+      ],
+      "correctIndex": 0,
+      "explanation": "A consciência é a capacidade de entrar em contato com a realidade circundante, perceber e reconhecer os objetos externos e internos — por isso o sono é uma redução fisiológica da consciência. Ela tem aspecto quantitativo (variação vertical da percepção, da vigília ao coma) e qualitativo (integração e organização das informações em um dado para o indivíduo)."
+    },
+    {
+      "question": "A Escala de Coma de Glasgow avalia qual aspecto da consciência?",
+      "options": [
+        "O aspecto quantitativo, da vigília até o coma",
+        "O aspecto qualitativo, da dissociação até a integração",
+        "O aspecto volitivo, do impulso até a deliberação",
+        "O aspecto afetivo, do humor eutímico ao disfórico"
+      ],
+      "correctIndex": 0,
+      "explanation": "A quantidade de consciência é a variação vertical de percepção dos estímulos, entre a vigília e o coma, que a Escala de Coma de Glasgow quantifica. A qualidade da consciência — integração das informações — não é captada pela escala e é objeto das alterações qualitativas, como os quadros dissociativos."
+    },
+    {
+      "question": "Qual a diferença entre torpor e sopor descrita na aula?",
+      "options": [
+        "O estímulo necessário para interromper a sonolência, mais vigoroso no sopor",
+        "A resposta ao estímulo doloroso, presente apenas no estado de torpor",
+        "A manutenção da vigília plena, preservada apenas no estado de torpor",
+        "A integridade da orientação, que se preserva apenas no estado de sopor"
+      ],
+      "correctIndex": 0,
+      "explanation": "Torpor e sopor têm estado basal de sonolência; a diferença é o estímulo para interrompê-la. No torpor basta um estímulo ambiental mais vigoroso, como chamar o nome do paciente; no sopor o estímulo precisa ser mais vigoroso e aplicado diretamente sobre ele (por exemplo, sacudi-lo), e ele tende a voltar ao estado basal de sonolência."
+    },
+    {
+      "question": "Como a aula descreve o estado de coma?",
+      "options": [
+        "Abolição da consciência, sem resposta mesmo ao estímulo doloroso",
+        "Redução leve da consciência, com confusão ao integrar informações",
+        "Sonolência basal que desperta com estímulo ambiental vigoroso",
+        "Estreitamento da consciência, com percepção distorcida do mundo"
+      ],
+      "correctIndex": 0,
+      "explanation": "O coma é a abolição da consciência, a mais bruta redução do nível de consciência: o indivíduo não percebe o mundo ao redor e não responde sequer a um estímulo doloroso aplicado sobre ele. Já a confusão ao integrar informações é a obnubilação, e a sonolência basal é própria do torpor e do sopor."
+    },
+    {
+      "question": "O caso da paciente que, após ver a transferência dos ossos do marido no cemitério, andou a esmo por São Paulo ilustra qual alteração?",
+      "options": [
+        "Quadro dissociativo, alteração qualitativa da consciência",
+        "Obnubilação, alteração quantitativa da consciência",
+        "Delírio, alteração do conteúdo do pensamento",
+        "Ilusão, alteração qualitativa da senso percepção"
+      ],
+      "correctIndex": 0,
+      "explanation": "A paciente lia as placas (percebia o mundo), mas não conseguia integrar essas informações para se direcionar para casa — não era sonolência nem falta de percepção. Quando existe essa desintegração das informações, temos os quadros dissociativos, que são alterações qualitativas da consciência, aqui desencadeados por um intenso estressor psíquico."
+    },
+    {
+      "question": "Qual pergunta avalia a orientação autopsíquica do paciente?",
+      "options": [
+        "Quem é você e quantos anos você tem agora?",
+        "Que dia é hoje e em que ano nós estamos?",
+        "Que local é esse e em que bairro você está?",
+        "Que horas são e há quanto tempo você está aqui?"
+      ],
+      "correctIndex": 0,
+      "explanation": "A orientação autopsíquica diz respeito à biografia: quem é você, quantos anos tem, é casado, tem filhos, trabalha, de onde veio. A orientação alopsíquica diz respeito ao meio, ao tempo e ao espaço: que dia é hoje, em que ano estamos, que local, bairro e cidade é esse. Alterações quantitativas ou qualitativas da consciência costumam se expressar como desorientação."
+    },
+    {
+      "question": "Como a aula diferencia sensação de percepção?",
+      "options": [
+        "Sensação é o ato cru estímulo-receptor; percepção acrescenta significado",
+        "Sensação integra estímulos; percepção capta o estímulo pelo receptor",
+        "Sensação é sempre auditiva; percepção é sempre do tipo visual",
+        "Sensação ocorre no SNC; percepção ocorre nos órgãos dos sentidos"
+      ],
+      "correctIndex": 0,
+      "explanation": "A sensação é o ato original, a interação mais crua entre um estímulo e a célula sensível que o capta, ativando os receptores dos órgãos dos sentidos. A percepção ocorre quando essa sensação chega à consciência acrescida de um significado — não apenas vejo vocês, mas construo um sentido sobre o que vejo."
+    },
+    {
+      "question": "O que é a hiperestesia, exemplificada na aula pela experiência com Ayahuasca?",
+      "options": [
+        "Estímulo percebido de forma ampliada, mais intenso ou mais duradouro",
+        "Percepção de estímulo sem correspondente real no ambiente",
+        "Percepção distorcida de um estímulo que existe no ambiente",
+        "Ausência de percepção dos estímulos do ambiente ao redor"
+      ],
+      "correctIndex": 0,
+      "explanation": "Na hiperestesia o estímulo é sustentado por mais tempo ou percebido de maneira ampliada em relação ao que realmente é: cores mais vívidas, sons mais nítidos e volumosos. Pode ocorrer por uso de substâncias, principalmente cogumelos e Ayahuasca, que ampliam a percepção dos estímulos."
+    },
+    {
+      "question": "Qual a definição de alucinação apresentada na aula?",
+      "options": [
+        "Percepção de um objeto sem o estímulo sensorial respectivo",
+        "Percepção distorcida de um estímulo real do ambiente",
+        "Ampliação da intensidade de um estímulo real existente",
+        "Crença irreal refratária à argumentação lógica"
+      ],
+      "correctIndex": 0,
+      "explanation": "A alucinação é a percepção de um objeto sem que este esteja presente, sem o estímulo sensorial respectivo — como o paciente que ouve uma voz que o manda se matar, percebendo-a com a mesma realidade com que percebe a voz do examinador. A percepção distorcida de um estímulo real é a ilusão, e a crença irreal refratária à lógica é o delírio."
+    },
+    {
+      "question": "O paciente etilista que confunde o equipo do soro com uma serpente apresenta qual fenômeno?",
+      "options": [
+        "Ilusão, pois há um estímulo real percebido de forma distorcida",
+        "Alucinação, pois percebe algo sem estímulo correspondente",
+        "Hiperestesia, pois percebe o estímulo com intensidade ampliada",
+        "Delírio, pois apresenta crença irreal refratária à lógica"
+      ],
+      "correctIndex": 0,
+      "explanation": "Na ilusão existe um estímulo real — o equipo do soro — mas ele é percebido de forma distorcida, como uma serpente, o que agita o paciente no pronto-socorro. Diferente da alucinação, em que o estímulo não existe. Ilusões visuais surgem de móveis, roupas e objetos; ilusões auditivas fazem o paciente ouvir o próprio nome a partir de sons inespecíficos."
+    },
+    {
+      "question": "Qual tipo de alucinação é o mais comum na psiquiatria?",
+      "options": [
+        "Auditiva, como ouvir vozes",
+        "Visual, como ver pessoas",
+        "Tátil, como insetos no corpo",
+        "Olfativa, como cheiro de podre"
+      ],
+      "correctIndex": 0,
+      "explanation": "As alucinações auditivas são as mais comuns na psiquiatria — o paciente clássico ouve vozes, como a voz masculina que mandava o paciente se matar. As visuais são menos frequentes na psiquiatria e mais relacionadas a quadros orgânicos; as táteis e olfativas também existem, e todos os órgãos dos sentidos são passíveis de alucinação."
+    },
+    {
+      "question": "A Síndrome de Ekbom é um exemplo de qual alteração de senso percepção?",
+      "options": [
+        "Alucinação tátil, com sensação de insetos sobre o corpo",
+        "Alucinação visual, com visão de pessoas e monstros",
+        "Ilusão auditiva, com sons transformados em chamamentos",
+        "Hiperestesia, com estímulos percebidos em amplitude maior"
+      ],
+      "correctIndex": 0,
+      "explanation": "Na Síndrome de Ekbom o paciente passa a acreditar que há múltiplos insetos caminhando sobre o seu corpo — uma alucinação tátil. A aula também cita a alucinação olfativa da paciente deprimida que sentia cheiro de podre sem estímulo correspondente no ambiente."
+    },
+    {
+      "question": "Qual é a função da atenção, segundo a metáfora do farol usada na aula?",
+      "options": [
+        "Hierarquizar os estímulos do ambiente, dirigindo a consciência a eles",
+        "Registrar e evocar as informações já percebidas pela consciência",
+        "Atribuir significado afetivo às percepções do ambiente",
+        "Manter o nível de vigília independente dos estímulos externos"
+      ],
+      "correctIndex": 0,
+      "explanation": "A atenção direciona a consciência — como um farol — para determinados estímulos, hierarquizando-os para que sejam percebidos com maior clareza e definição. Ela é flutuante com o tempo e depende do valor dos estímulos para o indivíduo e de fatores energéticos, como o cansaço; o TDAH é a alteração primária da atenção, mas depressão e ansiedade também a afetam."
+    },
+    {
+      "question": "Como a memória é descrita no exame psíquico, segundo a aula?",
+      "options": [
+        "De forma indireta, pela capacidade de narrar e organizar a própria história",
+        "De forma direta, aplicando testes formais de registro e evocação",
+        "Apenas quando o paciente relata queixas espontâneas de esquecimento",
+        "Por meio da neuroimagem e de testes neuropsicológicos formais"
+      ],
+      "correctIndex": 0,
+      "explanation": "No exame psíquico a memória é descrita indiretamente: pela capacidade de narrar e organizar a própria história, infere-se a capacidade de registrar, manter e evocar fatos já ocorridos. A avaliação formal exigiria aplicar um teste sobre o indivíduo; por isso a linha habitual é 'sem sinais indiretos de alterações mnemônicas'."
+    },
+    {
+      "question": "Como a aula define a afetividade?",
+      "options": [
+        "Sistema de valoração das experiências entre agradáveis e desagradáveis",
+        "Capacidade de perceber os estímulos do mundo sensível ao redor",
+        "Capacidade de hierarquizar estímulos para compreendê-los com clareza",
+        "Sistema de integração das informações do ambiente em um dado"
+      ],
+      "correctIndex": 0,
+      "explanation": "A afetividade é o sistema de valoração das experiências: por meio dela vemos o mundo como agradável ou desagradável — experiências de valência positiva (que gostaríamos que se perpetuassem) e de valência negativa (que gostaríamos que se encerrassem). Alegria, tristeza, raiva, ciúmes e vergonha são afetos, valorações da experiência."
+    },
+    {
+      "question": "Qual a diferença entre humor e afeto, destacada na aula como pergunta clássica de prova?",
+      "options": [
+        "Humor é o estado basal que permeia a experiência; afeto é o componente ligado a uma ideia",
+        "Humor é a expressão momentânea; afeto é o estado que permeia toda a experiência",
+        "Humor e afeto são termos sinônimos usados para o mesmo fenômeno no exame",
+        "Humor é sempre patológico; afeto é sempre preservado no exame psíquico"
+      ],
+      "correctIndex": 0,
+      "explanation": "O humor é a tela de fundo ou a lente afetiva que se sobrepõe entre o indivíduo e sua percepção do mundo — o estado emocional basal que penetra toda a experiência, também definido como a média dos afetos. O afeto é o pincel: o componente emocional vinculado a uma ideia, como a tristeza que acompanha a notícia da morte do cachorro. No exame psíquico descrevemos humor e afeto; emoção e sentimento não são descritos."
+    },
+    {
+      "question": "Qual tipo de humor é descrito como não polarizado, sem distorcer a percepção do real?",
+      "options": [
+        "Eutímico: humor não polarizado",
+        "Hipotímico: humor depressivo",
+        "Hipertímico: euforia e expansão",
+        "Pueril: afetividade infantilizada"
+      ],
+      "correctIndex": 0,
+      "explanation": "O humor eutímico é o não polarizado, aquele que não produz distorções entre o real e a percepção. O hipotímico é o humor depressivo, que reduz todas as experiências; o hipertímico é a euforia e a expansão, ampliação de todas as experiências; o pueril é a afetividade infantilizada, vista principalmente nas deficiências intelectuais."
+    },
+    {
+      "question": "Quando o paciente fala da morte do cachorro de 16 anos sorrindo de orelha a orelha, como se descreve o afeto?",
+      "options": [
+        "Incongruente, com desacordo entre a ideia e a expressão emocional",
+        "Modulado, com mudança do afeto conforme o conteúdo da ideia",
+        "Aumentado, com expressão desproporcional ao conteúdo",
+        "Ressonante, com impacto do afeto sobre o examinador"
+      ],
+      "correctIndex": 0,
+      "explanation": "Existe incongruência afetiva quando não há congruência entre a ideia, seu conteúdo e o valor emocional atribuído a ela — como falar da morte do cachorro sorrindo. Modulação é mudar o afeto de acordo com o conteúdo expresso; tônus é o tamanho do afeto; e ressonância é o impacto da expressão afetiva sobre o aparelho psíquico do examinador."
+    },
+    {
+      "question": "Na representação da aula, o afeto grande demais que distorce o círculo do pensamento ilustra qual conceito?",
+      "options": [
+        "Tônus afetivo aumentado, como no quadro de mania",
+        "Incongruência afetiva, com desacordo entre ideia e expressão",
+        "Ressonância aumentada, com impacto sobre o examinador",
+        "Modulação preservada, com afeto acompanhando o conteúdo"
+      ],
+      "correctIndex": 0,
+      "explanation": "O tamanho do afeto é o que a aula chama de tônus afetivo. Quando o afeto cresce a ponto de distorcer o círculo do pensamento, temos o tônus afetivo aumentado — a aula exemplifica com a mania: um afeto muito grande distorcendo o pensamento do paciente. Na figura seguinte, sorrir ao falar da própria tristeza ilustra a incongruência."
+    },
+    {
+      "question": "Quais são as três grandes instâncias avaliadas no pensamento?",
+      "options": [
+        "Forma, curso e conteúdo",
+        "Sensação, percepção e memória",
+        "Vigília, atenção e juízo",
+        "Intenção, deliberação e ação"
+      ],
+      "correctIndex": 0,
+      "explanation": "O pensamento — chamado de estrela do exame psíquico — é avaliado em três instâncias: a forma (a maneira como os conceitos se organizam), o curso (a velocidade com que as ideias são apresentadas em uma unidade de tempo) e o conteúdo (os juízos, a afirmação da relação do indivíduo com o mundo)."
+    },
+    {
+      "question": "O discurso 'carro azul, fita amarela, céu azul, sol amarelo' é exemplo de qual alteração?",
+      "options": [
+        "Sopa de palavras, alteração grave da forma do pensamento",
+        "Pensamento prolixo, com detalhes dispensáveis no discurso",
+        "Pensamento tangencial, sem responder ao que foi perguntado",
+        "Pensamento arborizado, desprendendo-se totalmente do alvo"
+      ],
+      "correctIndex": 0,
+      "explanation": "Na sopa de palavras existe plena fragmentação do discurso: componentes que não estão agregados entre si, sem construção de frase — uma alteração grave da forma do pensamento. O pensamento linear normal encadeia conceitos correlacionados em direção ao objetivo da pergunta, como o paciente que explica por que tem dormido mal."
+    },
+    {
+      "question": "O que determina o curso do pensamento estar acelerado ou lentificado?",
+      "options": [
+        "A quantidade de ideias produzidas em uma unidade de tempo",
+        "A coerência entre as ideias encadeadas no discurso",
+        "O grau de abstração dos conceitos utilizados no raciocínio",
+        "A capacidade de dirigir as ideias ao objetivo da pergunta"
+      ],
+      "correctIndex": 0,
+      "explanation": "O curso diz respeito à velocidade: quanto mais ideias em uma unidade de tempo, mais apressado é o curso (acelerado); quanto menos ideias, mais vagaroso (lentificado) — o exemplo da aula compara a mesma resposta sobre o sono contada depressa ou com pausas. A organização dos conceitos é a forma do pensamento."
+    },
+    {
+      "question": "Qual a diferença entre pensamento de morte e ideação suicida?",
+      "options": [
+        "Pensamento de morte é passivo; a ideação suicida agrega o desejo ativo de se matar",
+        "Pensamento de morte envolve plano; a ideação suicida é apenas desejo passivo",
+        "Pensamento de morte é sempre psicótico; a ideação suicida é sempre reativa",
+        "Pensamento de morte ocorre na depressão; a ideação suicida, na mania"
+      ],
+      "correctIndex": 0,
+      "explanation": "Pensamento de morte é passivo — 'morrer seria melhor do que estar vivo', rezar para que Deus leve. A ideação suicida é a progressão desse desejo passivo para um componente ativo, em que o indivíduo deseja se matar. Por sua importância, a ideação suicida é descrita à parte no exame psíquico: 'com ideação suicida' ou 'sem ideação suicida'."
+    },
+    {
+      "question": "Quais são as características do delírio apresentadas na aula?",
+      "options": [
+        "Conteúdo irreal, refratário à lógica e não compartilhado",
+        "Conteúdo irreal, corrigível pela lógica e compartilhado",
+        "Conteúdo possível, refratário à lógica e individualizado",
+        "Conteúdo possível, corrigível pela argumentação e individualizado"
+      ],
+      "correctIndex": 0,
+      "explanation": "O delírio é alteração do conteúdo do pensamento com conteúdo não real (1), refratário à argumentação lógica — o paciente tem convicção extraordinária, e 'o delírio sempre dá um passo ao lado' para se manter (2) — e é uma ideia assistêmica, não compartilhada, que retira o indivíduo do coletivo de juízo de realidade (3). Frequentemente se associa a alucinações."
+    },
+    {
+      "question": "Qual a diferença entre impulsividade e compulsão, apresentada na aula?",
+      "options": [
+        "Na impulsividade há falha em não iniciar; na compulsão, falha em interromper o ato",
+        "Na impulsividade há falha em interromper; na compulsão, falha em iniciar o ato",
+        "Na impulsividade há deliberação; na compulsão, execução imediata sem intenção",
+        "Na impulsividade há esgotamento; na compulsão, arrependimento após o ato"
+      ],
+      "correctIndex": 0,
+      "explanation": "O ato impulsivo é a ação sem deliberação, com a deliberação vindo depois do ato — 'levantei, xinguei e saí; não devia ter feito isso'. Na compulsão há certa formulação do comportamento, mas um avanço irrefreável: uma vez iniciado, o indivíduo perde a capacidade de interrompê-lo e vai até o esgotamento. A psicomotricidade é a maneira pela qual o indivíduo executa a vontade."
+    }
+  ]
+}

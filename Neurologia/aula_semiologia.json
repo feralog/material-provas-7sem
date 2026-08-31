@@ -1,0 +1,428 @@
+{
+  "titulo": "Semiologia Neurológica",
+  "eyebrow": "Neurologia · Propedêutica",
+  "subtitulo": "O exame neurológico passo a passo, dos reflexos aos nervos cranianos",
+  "intro": "Material que une o capítulo de Nitrini sobre o exame neurológico ao capítulo de Maranhão-Filho e Martins da Silva: anamnese, equilíbrio e marcha, motricidade, tônus, coordenação, reflexos, sensibilidade, nervos cranianos e sinais de irritação meníngea.",
+  "questoes": [
+    {
+      "question": "Na pesquisa do equilíbrio estático pela posição de Romberg, o sinal de Romberg caracteriza-se por:",
+      "options": [
+        "Agravamento da instabilidade com o fechamento dos olhos",
+        "Melhora da instabilidade ao se fechar os olhos",
+        "Queda para o mesmo lado, com os olhos abertos",
+        "Ausência de oscilação em qualquer condição de prova",
+        "Desvio lento de ambos os braços para o mesmo lado"
+      ],
+      "correctIndex": 0,
+      "explanation": "O sinal de Romberg caracteriza-se pelo agravamento da instabilidade quando o paciente fecha os olhos, típico das lesões do cordão posterior e, em menor grau, das vestibulopatias. Quando o sinal é consistentemente positivo para um dos lados e após breve latência, sugere disfunção vestibular homolateral; a queda imediata para qualquer lado, sem latência, sugere disfunção cordonal posterior. O paciente cerebelar costuma ter dificuldade já com os pés juntos, e ela não aumenta com o fechamento dos olhos.",
+      "image": null,
+      "imageCaption": null
+    },
+    {
+      "question": "A marcha em tesoura (bipiramidal), em que os joelhos tendem a cruzar a linha média a cada passo, é típica de:",
+      "options": [
+        "Lesão medular ou cerebral bilateral",
+        "Lesão unilateral do trato corticoespinhal",
+        "Lesão cerebelar com ataxia apendicular",
+        "Neuropatia periférica com déficit distal",
+        "Lesão dos núcleos da base (parkinsonismo)"
+      ],
+      "correctIndex": 0,
+      "explanation": "A marcha bipiramidal (em tesoura) é encontrada nas paraparesias espásticas, como na infecção pelo HTLV-1 e na diplegia de Little, podendo ocorrer também na mielopatia secundária à espondilose cervical; o grande envolvimento dos adutores da coxa faz os joelhos cruzarem a linha média a cada passo. A marcha ceifante (hemiplégica), com circundução do membro parético e dificuldade de dobrar o joelho, decorre de lesão unilateral do trato corticoespinhal.",
+      "image": null,
+      "imageCaption": null
+    },
+    {
+      "question": "A hipertonia rígida (plástica), caracterizada pelo sinal da roda dentada ou do cano de chumbo, indica lesão:",
+      "options": [
+        "Do sistema extrapiramidal",
+        "Da via piramidal unilateral",
+        "Do hemisfério cerebelar",
+        "Do cordão posterior da medula",
+        "Do neurônio motor inferior"
+      ],
+      "correctIndex": 0,
+      "explanation": "A hipertonia rígida (plástica) oferece resistência constante em toda a amplitude do movimento, sem relação com a velocidade, e se expressa pelo sinal da roda dentada ou do cano de chumbo, indicando lesão do sistema extrapiramidal. A hipertonia espástica (elástica), com sinal do canivete e exaltação dos reflexos, decorre de lesão piramidal; a hipotonia aparece nas lesões cerebelares, nas polineuropatias e na fase flácida das lesões piramidais agudas.",
+      "image": null,
+      "imageCaption": null
+    },
+    {
+      "question": "Nas provas de coordenação dedo-nariz e calcanhar-joelho, realizadas com olhos abertos e fechados, a dismetria que aumenta com o fechamento dos olhos sugere:",
+      "options": [
+        "Comprometimento das vias cordonais posteriores",
+        "Comprometimento cerebelar hemisférico",
+        "Comprometimento do sistema vestibular",
+        "Comprometimento piramidal (neurônio motor)",
+        "Comprometimento do lobo frontal (apraxia)"
+      ],
+      "correctIndex": 0,
+      "explanation": "Na prova dedo-nariz, o paciente com disfunção cordonal posterior apresenta defeito variável para atingir o alvo, decompondo o movimento, e a dismetria aumenta quando se suprime o controle visual. O paciente cerebelar ultrapassa o objetivo, com hipermetria que não se acentua com o fechamento dos olhos; por isso a prova é realizada com olhos abertos e depois fechados, em velocidade lenta e rápida.",
+      "image": null,
+      "imageCaption": null
+    },
+    {
+      "question": "Na síndrome de Brown-Séquard, produzida pela hemissecção da medula espinal, espera-se encontrar:",
+      "options": [
+        "Termoanalgesia de um dimídio e perda da propriocepção do outro",
+        "Perda dolorosa bilateral com propriocepção preservada",
+        "Anestesia simétrica e distal em padrão de meia e luva",
+        "Dissociação táctil-dolorosa com térmica preservada",
+        "Nível sensitivo de todas as modalidades abaixo da lesão"
+      ],
+      "correctIndex": 0,
+      "explanation": "Na hemissecção medular (síndrome de Brown-Séquard), há termoanalgesia de um dimídio — pela interrupção das fibras espinotalâmicas já cruzadas — e perda da propriocepção do outro, sendo o lado da lesão o da alteração proprioceptiva. O padrão em meia e luva sugere polineuropatia; a dissociação táctil-dolorosa, siringomielia (metade anterior da medula); e o nível sensitivo com todas as modalidades, transecção medular.",
+      "image": null,
+      "imageCaption": null
+    },
+    {
+      "question": "Na paralisia do nervo oculomotor (III), o olho afetado apresenta:",
+      "options": [
+        "Ptose, midríase fotoplégica e desvio lateral e para baixo",
+        "Esotropia por perda da ação do músculo reto lateral",
+        "Dificuldade de olhar para baixo com o olho aduzido",
+        "Midríase sem ptose, com desvio para cima do olho",
+        "Anisocoria leve com reflexos pupilares preservados"
+      ],
+      "correctIndex": 0,
+      "explanation": "Na paralisia do oculomotor (III), além da midríase fotoplégica, há ptose e desvio do olho lateral e discretamente para baixo, restando as ações não opositoras dos retos lateral e superior. A esotropia caracteriza a paralisia do abducente (VI), e a dificuldade de olhar para baixo com o olho aduzido, a do troclear (IV), que compromete o oblíquo superior.",
+      "image": null,
+      "imageCaption": null
+    },
+    {
+      "question": "As fibras da raiz espinhal do nervo acessório (XI), exclusivamente motoras, destinam-se ao controle de:",
+      "options": [
+        "Trapézio e esternocleidomastóideo",
+        "Língua e musculatura da mímica facial",
+        "Palato e cordas vocais (nervo vago)",
+        "Músculos da mastigação (nervo trigêmeo)",
+        "Músculos extrínsecos dos globos oculares"
+      ],
+      "correctIndex": 0,
+      "explanation": "A raiz espinhal do acessório (XI) é exclusivamente motora e destina-se ao controle dos esternocleidomastóideos e trapézios; o nervo penetra o forame jugular junto com o vago e o glossofaríngeo. O esternocleidomastóideo roda a cabeça para o lado oposto quando contrai unilateralmente, e a paralisia do trapézio posiciona o ombro para frente e para baixo; palato e cordas vocais dependem do vago (X), e a mímica, do facial (VII).",
+      "image": null,
+      "imageCaption": null
+    },
+    {
+      "question": "A avaliação neurológica é norteada por duas questões principais. Além de saber se há sintomas e sinais de lesão neurológica, a segunda questão refere-se à:",
+      "options": [
+        "Topografia da lesão",
+        "Etiologia da lesão",
+        "Cronologia da lesão",
+        "Prognóstico da lesão",
+        "Resposta ao tratamento"
+      ],
+      "correctIndex": 0,
+      "explanation": "A avaliação neurológica é norteada por duas questões: se há sintomas e sinais de lesão neurológica e qual é a topografia da lesão. Quando os sinais são evidentes (hemiplegia, hipoestesia, diplopia, disartria), a procura da topografia lesional passa a determinar os rumos da avaliação, pela pesquisa dos sinais associados ao sinal principal.",
+      "image": null,
+      "imageCaption": null
+    },
+    {
+      "question": "No Miniexame do Estado Mental, resultados iguais ou inferiores a 24 pontos indicam:",
+      "options": [
+        "Redução da capacidade mental",
+        "Normalidade do estado mental",
+        "Diagnóstico de demência avançada",
+        "Resultado difícil de interpretar",
+        "Presença de agnosia visual"
+      ],
+      "correctIndex": 0,
+      "explanation": "Resultados iguais ou inferiores a 24 pontos indicam redução da capacidade mental; pontuações iguais ou superiores a 28 sugerem ausência de alterações do estado mental. Escores intermediários (25 a 27) são de interpretação mais difícil, e baixa escolaridade e idade avançada interferem bastante nos resultados.",
+      "image": null,
+      "imageCaption": null
+    },
+    {
+      "question": "Na versão brasileira do Miniexame do Estado Mental, adotada pela baixa escolaridade da população, utiliza-se:",
+      "options": [
+        "Apenas o cálculo (100-7) sucessivos",
+        "O cálculo e a soletração da palavra 'mundo'",
+        "Apenas a soletração invertida de 'mundo'",
+        "Somente a orientação e a linguagem",
+        "Apenas a retenção dos três objetos"
+      ],
+      "correctIndex": 0,
+      "explanation": "Na versão brasileira do MMSE, devido à baixa escolaridade da população, utiliza-se apenas o cálculo (100-7 sucessivos), com escore máximo de 30; eventualmente usam-se os dois testes, com máximo de 35 (cálculo mais soletração). No teste original, a soletração invertida da palavra 'mundo' é pedida apenas quando o paciente não consegue calcular, valendo o melhor desempenho.",
+      "image": null,
+      "imageCaption": null
+    },
+    {
+      "question": "Na manobra dos braços estendidos para a frente com os olhos fechados, o desvio lento de ambos os membros superiores para o mesmo lado sugere:",
+      "options": [
+        "Síndrome vestibular periférica",
+        "Síndrome cerebelar hemisférica",
+        "Síndrome piramidal espástica",
+        "Lesão cordonal posterior",
+        "Neuropatia periférica difusa"
+      ],
+      "correctIndex": 0,
+      "explanation": "Nas síndromes vestibulares ocorre desvio lento de ambos os membros superiores para o mesmo lado. Na síndrome cerebelar unilateral, apenas o membro superior ipsilateral à lesão cerebelar desvia-se para o lado afetado.",
+      "image": null,
+      "imageCaption": null
+    },
+    {
+      "question": "A marcha atáxica sensitiva (talonante), com estrita dependência da visão e base alargada, é característica de lesão de:",
+      "options": [
+        "Cordão posterior, como na tabes",
+        "Hemisfério cerebelar (alcoolismo)",
+        "Nervo fibular, como na paralisia",
+        "Núcleos da base, como no Parkinson",
+        "Lobo frontal, como na apraxia da marcha"
+      ],
+      "correctIndex": 0,
+      "explanation": "A marcha atáxica sensitiva (talonante) é característica de lesões do cordão posterior — avitaminose B12, tabes dorsalis — e de neuropatias periféricas com perda das fibras mielínicas grossas e da propriocepção. O paciente depende da visão: com os olhos fechados ou em baixa luminosidade a marcha é tipicamente impossível, com base alargada, elevação exagerada dos pés e golpeamento do chão com o calcanhar.",
+      "image": null,
+      "imageCaption": null
+    },
+    {
+      "question": "A marcha escarvante, em que o paciente tende a roçar a ponta do pé no chão e inclina o corpo para o lado oposto ao dar o passo, geralmente resulta de lesão de:",
+      "options": [
+        "Nervo fibular ou ciático, ou da raiz L5",
+        "Nervo tibial ou femoral, ou da raiz L2",
+        "Nervo obturador ou radial, ou da raiz C6",
+        "Nervo ulnar ou mediano, ou da raiz C8",
+        "Nervo musculocutâneo ou radial, ou da raiz C7"
+      ],
+      "correctIndex": 0,
+      "explanation": "A marcha escarvante decorre do déficit de flexão dorsal do pé e dos artelhos, obrigando o paciente a elevar exageradamente a perna e a coxa para não tropeçar. Geralmente resulta de lesão dos nervos fibular ou ciático ou da raiz L5; andar sobre os calcanhares é impossível para esses pacientes.",
+      "image": null,
+      "imageCaption": null
+    },
+    {
+      "question": "A manobra de Mingazzini, realizada em decúbito dorsal com as coxas semifletidas em ângulo reto com o tronco, as pernas na horizontal e os pés na vertical, serve para:",
+      "options": [
+        "Detectar déficits de força em membros inferiores",
+        "Avaliar a sensibilidade superficial dos membros",
+        "Pesquisar a coordenação cerebelar apendicular",
+        "Medir a amplitude de movimento das articulações",
+        "Verificar a integridade dos reflexos profundos"
+      ],
+      "correctIndex": 0,
+      "explanation": "A manobra de Mingazzini é a mais útil das manobras deficitárias para os membros inferiores: normalmente a posição é mantida por dois minutos ou mais. Em condições patológicas, observam-se oscilações ou quedas progressivas do pé, da perna ou da coxa, caracterizando déficits distais, proximais ou globais, e a manobra permite comparar ambos os membros e acompanhar a evolução em exames sucessivos.",
+      "image": null,
+      "imageCaption": null
+    },
+    {
+      "question": "O clono que persiste por tempo prolongado (clono inesgotável) tem grande valor diagnóstico para:",
+      "options": [
+        "Síndrome piramidal espástica",
+        "Síndrome cerebelar aguda",
+        "Síndrome vestibular periférica",
+        "Lesão cordonal posterior",
+        "Neuropatia periférica difusa"
+      ],
+      "correctIndex": 0,
+      "explanation": "O clono inesgotável — contrações rítmicas que persistem enquanto se mantém o estiramento muscular — tem grande valor para o diagnóstico de síndrome piramidal. O clono de rótula e o de pé são pesquisados com deslocamento brusco e manutenção da posição estirada; pacientes podem relatar clonos espontâneos ao pisar no pedal do freio ou apoiar o pé em algum anteparo.",
+      "image": null,
+      "imageCaption": null
+    },
+    {
+      "question": "O sinal de Babinski, que consiste na flexão dorsal (extensão) do hálux, é mais facilmente obtido quando se estimula a parte:",
+      "options": [
+        "Lateral da planta do pé",
+        "Medial da planta do pé",
+        "Central da planta do pé",
+        "Lateral do dorso do pé",
+        "Medial do dorso do pé"
+      ],
+      "correctIndex": 0,
+      "explanation": "O sinal de Babinski, flexão dorsal (ou extensão) do hálux, é mais facilmente obtido quando se estimula a parte lateral da planta do pé. A resposta normal — reflexo cutaneoplantar em flexão — é mais nítida quando o estímulo é aplicado no lado medial da planta.",
+      "image": null,
+      "imageCaption": null
+    },
+    {
+      "question": "Os reflexos cutâneo-abdominais superior, médio e inferior são integrados, respectivamente, nos segmentos:",
+      "options": [
+        "T6-T9, T9-T11 e T11-T12",
+        "T4-T6, T6-T8 e T8-T10",
+        "T8-T10, T10-T12 e T12-L1",
+        "T6-T8, T8-T10 e T10-T12",
+        "L2-L4, L4-L5 e L5-S2"
+      ],
+      "correctIndex": 0,
+      "explanation": "Os reflexos cutâneo-abdominais superior, médio e inferior são integrados, respectivamente, em T6 a T9, T9 a T11 e T11 a T12. Esses reflexos são abolidos na síndrome piramidal; como a pesquisa é dificultada por obesidade, cicatriz cirúrgica e flacidez, tem maior valor o encontro de assimetrias.",
+      "image": null,
+      "imageCaption": null
+    },
+    {
+      "question": "A resposta normal ao estímulo da planta do pé (reflexo cutaneoplantar), após o primeiro ano de vida, consiste em:",
+      "options": [
+        "Flexão plantar do hálux e dos artelhos",
+        "Flexão dorsal do hálux e dos artelhos",
+        "Abertura em leque dos artelhos",
+        "Extensão dos artelhos e inversão do pé",
+        "Abdução dos artelhos e pronação do pé"
+      ],
+      "correctIndex": 0,
+      "explanation": "A excitação da planta do pé, no sentido póstero-anterior, provoca flexão plantar do hálux e dos artelhos — a resposta em flexão é normal após o primeiro ano de vida. A flexão dorsal do hálux (Babinski), com eventual abertura em leque dos demais dedos, é a resposta patológica indicativa de lesão da via piramidal.",
+      "image": null,
+      "imageCaption": null
+    },
+    {
+      "question": "O sinal de Lasègue, caracterizado por dor lombar irradiada para a face posterior do membro inferior quando este é elevado passivamente, sugere comprometimento de:",
+      "options": [
+        "Raízes lombossacras do nervo ciático",
+        "Raízes cervicais do nervo mediano",
+        "Nervos cranianos IX, X e XI (jugular)",
+        "Plexo braquial em sua porção distal",
+        "Colunas anteriores da medula espinal"
+      ],
+      "correctIndex": 0,
+      "explanation": "O sinal de Lasègue ocorre quando há irritação radicular: dor lombar irradiada à face posterior do membro inferior elevado passivamente, com o examinador impedindo a flexão do joelho. Sugere comprometimento das raízes lombossacras que participam da formação do nervo ciático; a elevação do membro com o joelho fletido não deve causar dor.",
+      "image": null,
+      "imageCaption": null
+    },
+    {
+      "question": "Na síndrome de irritação meníngea, o sinal de Kernig caracteriza-se por:",
+      "options": [
+        "Impossibilidade de estender as pernas com as coxas fletidas a 90°",
+        "Impossibilidade de fletir passivamente o pescoço contra o tórax",
+        "Dor lombar irradiada ao elevar o membro inferior estendido",
+        "Flexão de coxas e joelhos ao fletir passivamente o pescoço",
+        "Flexão dorsal do hálux com abertura em leque dos artelhos"
+      ],
+      "correctIndex": 0,
+      "explanation": "O sinal de Kernig consiste na impossibilidade de extensão passiva das pernas quando o paciente está em decúbito dorsal e as coxas são semifletidas, formando ângulo de 90° com o tronco; a tentativa causa dor e reação de defesa. Rigidez de nuca, sinal de Brudzinski (flexão de coxas e joelhos ao fletir o pescoço) e Kernig integram a síndrome de irritação meníngea.",
+      "image": null,
+      "imageCaption": null
+    },
+    {
+      "question": "As causas neurológicas mais comuns de anosmia são:",
+      "options": [
+        "Trauma de crânio e tumores da base do crânio",
+        "Rinite alérgica e sinusite crônica bilateral",
+        "Hipoglicemia e crises convulsivas recorrentes",
+        "Uso crônico de drogas vasoconstritoras nasais",
+        "Exposição prolongada a ambientes frios e úmidos"
+      ],
+      "correctIndex": 0,
+      "explanation": "As causas neurológicas mais comuns de anosmia são as sequelas de trauma de crânio — em que as fibras dos nervos olfatórios são seccionadas ao cruzar a lâmina crivosa do etmóide — e os tumores da base do crânio, principalmente os meningeomas. Rinite e sinusite são causas condutivas (obstrutivas), não neurológicas; atividade epiléptica no uncus do hipocampo acarreta cacosmia.",
+      "image": null,
+      "imageCaption": null
+    },
+    {
+      "question": "O exame do fundo de olho deve fazer parte de toda avaliação neurológica. No exame habitual:",
+      "options": [
+        "Não é necessária a dilatação das pupilas",
+        "Exige dilatação farmacológica das pupilas",
+        "Deve-se sempre usar a grade de Amsler no exame",
+        "Avalia-se apenas a acuidade visual de longe",
+        "Dispensa a avaliação das artérias e veias retinianas"
+      ],
+      "correctIndex": 0,
+      "explanation": "O exame do fundo de olho deve fazer parte de toda avaliação neurológica e, no exame habitual, não há necessidade de dilatar as pupilas. Avaliam-se as papilas ópticas (edema ou atrofia), a retina (hemorragias, exsudatos, alterações da pigmentação) e as artérias e veias, na busca de sinais de hipertensão e diabetes, entre outras doenças.",
+      "image": null,
+      "imageCaption": null
+    },
+    {
+      "question": "Visão 20/40, na notação da tabela de Snellen, significa que o paciente:",
+      "options": [
+        "Vê a 20 pés o que um indivíduo normal vê a 40 pés",
+        "Perdeu 50% da visão normal em relação ao padrão",
+        "Vê a 40 pés o que um indivíduo normal vê a 20 pés",
+        "Consegue ler a 20 pés a linha discriminada como 20",
+        "Necessita de óculos para qualquer atividade visual"
+      ],
+      "correctIndex": 0,
+      "explanation": "Visão 20/40 significa que o paciente consegue ver à distância de 20 pés o que um indivíduo normal vê a 40 pés. A notação não é percentagem da visão normal (20/20), e 20/40 não representa perda de 50% da acuidade; a acuidade é medida com a tabela de Snellen a cerca de seis metros, cada olho separadamente, com e sem óculos.",
+      "image": null,
+      "imageCaption": null
+    },
+    {
+      "question": "A avaliação grosseira do campo visual pode ser feita pelo método de confrontação, no qual:",
+      "options": [
+        "Examinador e paciente ficam frente a frente e comparam os campos",
+        "O paciente lê um cartaz padronizado a seis metros de distância",
+        "Observam-se as pupilas à luz com o paciente olhando para longe",
+        "Pesquisa-se o reflexo corneopalpebral com mecha de algodão",
+        "Mede-se a acuidade com os cartões de Jaeger ou Rosenbaum"
+      ],
+      "correctIndex": 0,
+      "explanation": "No método de confrontação, examinador e paciente ficam frente a frente, à distância de 60 cm a 1 m, com os olhos opostos ocluídos, e o examinador move lentamente o indicador da periferia em direção ao centro, comparando os campos visuais. Cada olho é testado isoladamente nos quatro quadrantes; pacientes confusos podem ser avaliados pela reação de piscamento à ameaça.",
+      "image": null,
+      "imageCaption": null
+    },
+    {
+      "question": "O reflexo corneopalpebral tem via aferente no trigêmeo e via eferente no facial. Na paralisia facial periférica unilateral:",
+      "options": [
+        "O olho parético não se fecha, qualquer que seja a córnea estimulada",
+        "Não há resposta ao se estimular a córnea do lado afetado",
+        "Ambas as pálpebras se ocluem ao se estimular o outro globo ocular",
+        "A resposta é abolida somente ao estimular a córnea do lado são",
+        "O reflexo permanece normal nos dois olhos, sem alterações"
+      ],
+      "correctIndex": 0,
+      "explanation": "Na paralisia facial periférica unilateral, o olho do lado parético não se fecha qualquer que seja a córnea estimulada, pois a eferência (nervo facial) está lesada. Na lesão unilateral do trigêmeo, não há resposta ao se estimular a córnea do lado afetado, mas ao se estimular o outro globo ocular ambas as pálpebras se ocluem.",
+      "image": null,
+      "imageCaption": null
+    },
+    {
+      "question": "O comprometimento supranuclear (central) do nervo facial atinge:",
+      "options": [
+        "Apenas a metade inferior da hemiface contralateral",
+        "Toda a hemiface do lado ipsilateral à lesão",
+        "A metade superior da hemiface contralateral",
+        "Toda a hemiface contralateral, incluindo a fronte",
+        "A metade inferior da hemiface ipsilateral à lesão"
+      ],
+      "correctIndex": 0,
+      "explanation": "A porção ventral do núcleo do facial (metade inferior da face) recebe inervação cortical contralateral, enquanto a porção dorsal (metade superior) recebe contribuições de ambos os hemisférios. Por isso o comprometimento supranuclear poupa a fronte e atinge apenas a metade inferior da hemiface contralateral, enquanto o comprometimento periférico compromete toda a hemiface ipsilateral.",
+      "image": null,
+      "imageCaption": null
+    },
+    {
+      "question": "Nistagmo presente já na mirada central, que não varia de direção com a mirada, é suprimido pela fixação visual e vem acompanhado de vertigem intensa e paroxística, sugerindo comprometimento:",
+      "options": [
+        "Periférico (vestibular)",
+        "Central (tronco ou cerebelo)",
+        "Do hemisfério cerebelar",
+        "Cortical (lobo parietal)",
+        "Do nervo óptico (II par)"
+      ],
+      "correctIndex": 0,
+      "explanation": "Nistagmo presente já na mirada central, que não muda de direção em função da mirada, suprimido pela fixação visual e acompanhado de vertigens intensas e paroxísticas, sugere comprometimento periférico (vestibular). Quando se torna visível apenas nas posições excêntricas, muda de direção com a mirada e vem acompanhado de sinais de tronco ou cerebelo, sugere comprometimento central.",
+      "image": null,
+      "imageCaption": null
+    },
+    {
+      "question": "Na surdez de condução, causada por lesões dos ouvidos externo ou médio:",
+      "options": [
+        "A condução aérea é comprometida e a óssea não é afetada",
+        "A condução aérea e a óssea são igualmente comprometidas",
+        "O teste de Weber lateraliza para o lado são (normal)",
+        "O paciente percebe melhor a condução aérea que a óssea",
+        "A audiometria não é necessária para o estudo da perda"
+      ],
+      "correctIndex": 0,
+      "explanation": "Na surdez de condução (ouvidos externo ou médio), a condução aérea é comprometida enquanto a óssea não é afetada; na surdez de percepção (cóclea, nervo auditivo ou vias), ambas são afetadas. O teste de Weber lateraliza para o lado comprometido na surdez de condução e para o lado normal na neurossensorial; Rinne negativo com Schwabach normal sugere surdez de condução.",
+      "image": null,
+      "imageCaption": null
+    },
+    {
+      "question": "Na prova calórica, o estímulo com água fria no conduto auditivo externo promove nistagmo cujo componente rápido bate:",
+      "options": [
+        "Para o lado oposto ao ouvido que foi estimulado",
+        "Para o lado do ouvido estimulado (mesmo lado)",
+        "Para cima, com desvio tônico dos olhos para baixo",
+        "Para baixo, com desvio tônico dos olhos para cima",
+        "Alternadamente, para ambos os lados do corpo"
+      ],
+      "correctIndex": 0,
+      "explanation": "O estímulo com água fria promove desvio tônico dos olhos para o lado estimulado, seguido de nistagmo horizontal cujo componente rápido bate para o lado oposto. Com água quente, o desvio tônico é para o lado oposto e o nistagmo, para o lado estimulado — o mnemônico COWS (Cold Opposite, Warm Same) resume a regra.",
+      "image": null,
+      "imageCaption": null
+    },
+    {
+      "question": "Lesões dos nervos glossofaríngeo e vago, principalmente do vago, causam disfagia alta em que é comum:",
+      "options": [
+        "Refluxo nasal de alimentos e disfonia por corda vocal paralisada",
+        "O desvio da língua para o lado afetado ao ser exteriorizada",
+        "A midríase fotoplégica com ptose palpebral homolateral",
+        "A paralisia do trapézio com queda do ombro do lado afetado",
+        "A perda da gustação dos dois terços anteriores da língua"
+      ],
+      "correctIndex": 0,
+      "explanation": "Lesões dos glossofaríngeo e vago, principalmente do vago, causam disfagia alta, em que é comum o refluxo nasal de alimentos, além de disfonia por paralisia de corda vocal. O glossofaríngeo compromete a gustação do terço posterior da língua; a língua que desvia para o lado afetado ao ser protraída indica lesão do hipoglosso (XII), e a midríase fotoplégica é típica do oculomotor (III).",
+      "image": null,
+      "imageCaption": null
+    }
+  ]
+}

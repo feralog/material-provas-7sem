@@ -112,7 +112,7 @@
         "Esferocitose hereditária com icterícia intermitente"
       ],
       "correctIndex": 0,
-      "explanation": "A combinação de menorragia, fadiga, tontura e palidez em adolescente do sexo feminino aponta para anemia ferropriva por perda menstrual — a causa mais comum nessa faixa. A aula lista explicitamente o risco de anemia entre as vulnerabilidades clínicas do desenvolvimento biológico. Hemoglobinopatias e aplasia teriam curso e achados distintos."
+      "explanation": "A combinação de menorragia, fadiga, tontura e palidez em adolescente do sexo feminino aponta para anemia ferropriva por perda menstrual — a causa mais comum nessa faixa. O capítulo lista o risco de anemia entre as vulnerabilidades clínicas do desenvolvimento biológico, ao lado dos distúrbios menstruais. Hemoglobinopatias e aplasia teriam curso e achados distintos."
     },
     {
       "question": "A ativação de qual eixo comanda as mudanças hormonais da puberdade?",
@@ -174,7 +174,7 @@
         "Registrar em prontuário e comunicar ao conselho tutelar"
       ],
       "correctIndex": 0,
-      "explanation": "Sigilo e confidencialidade são princípios éticos do atendimento ao adolescente, garantidos pelo direito à privacidade e amparados pelo ECA. A exceção é a situação de risco iminente — para si ou para terceiros —, quando a quebra do sigilo é justificada e deve ser comunicada ao próprio adolescente antes de ser feita."
+      "explanation": "Sigilo e confidencialidade são princípios éticos do atendimento ao adolescente, garantidos pelo direito à privacidade — a confidencialidade é reconhecida no art. 74 do Código de Ética Médica, e o sigilo também é protegido pelo Código Penal (art. 154). A exceção é a situação de risco iminente — para si ou para terceiros —, quando a quebra do sigilo é justificada, deve ser comunicada ao próprio adolescente antes de ser feita e registrada em prontuário."
     },
     {
       "question": "Qual princípio orienta a participação do adolescente nas decisões sobre a própria saúde?",
@@ -198,7 +198,7 @@
         "Atribuir o quadro à busca de atenção entre os pares"
       ],
       "correctIndex": 0,
-      "explanation": "Automutilação é fator de risco reconhecido para suicídio, mesmo sem ideação declarada no momento. A conduta esperada é avaliação de saúde mental, plano de segurança e reavaliação seriada, com envolvimento familiar gradual. Banalizar como 'busca de atenção' ou saltar direto para internação são erros opostos e igualmente graves."
+      "explanation": "Automutilação é fator de risco reconhecido para suicídio, mesmo sem ideação declarada no momento — o capítulo inclui a autoagressão entre as situações que podem justificar a quebra do sigilo. A conduta esperada é avaliação de saúde mental, plano de segurança e reavaliação seriada, com envolvimento familiar gradual. Banalizar como 'busca de atenção' ou saltar direto para internação são erros opostos e igualmente graves."
     },
     {
       "question": "Quais eixos a aula reúne no desenvolvimento psicossocial e identitário do adolescente?",
@@ -375,6 +375,174 @@
       ],
       "correctIndex": 0,
       "explanation": "O desfecho realista de Júlia é sofrimento emocional sem organicidade grave — o contraste proposital com Gustavo, que tem doença orgânica grave. A conduta esperada é a mesma em estrutura: escuta qualificada, orientação preventiva (higiene do sono, saúde sexual), avaliação de saúde mental, envolvimento familiar gradual e atuação multiprofissional."
+    },
+    {
+      "question": "Segundo o Estatuto da Criança e do Adolescente (Lei 8.069/90), é considerado adolescente:",
+      "options": [
+        "Quem tem entre 12 e 18 anos incompletos",
+        "Quem tem entre 10 e 19 anos de idade",
+        "Quem tem entre 10 e 20 anos incompletos",
+        "Quem tem entre 15 e 24 anos de idade",
+        "Quem tem entre 12 e 21 anos incompletos"
+      ],
+      "correctIndex": 0,
+      "explanation": "O ECA (art. 2º) define criança como a pessoa com até 12 anos de idade incompletos e adolescente como aquela entre 12 e 18 anos incompletos, aplicando-se excepcionalmente às pessoas entre 18 e 21 anos apenas nos casos expressos em lei. A faixa de 10 a 19 anos é o recorte da OMS e do Ministério da Saúde, e 15 a 24 anos corresponde ao conceito de juventude."
+    },
+    {
+      "question": "Qual a distinção correta entre puberdade e adolescência?",
+      "options": [
+        "Mudanças físicas universais (puberdade) versus passagem psicossocial variável (adolescência)",
+        "Processo psicossocial (puberdade) versus mudanças físicas da maturação sexual (adolescência)",
+        "Transformações apenas biológicas e hormonais na puberdade e também na adolescência",
+        "Fenômeno biológico universal (adolescência) e sociocultural variável (puberdade)",
+        "Segunda década inteira (puberdade) e estirão de crescimento isolado (adolescência)"
+      ],
+      "correctIndex": 0,
+      "explanation": "A puberdade refere-se às mudanças físicas e à maturação sexual, com variações individuais, porém únicas e universais, um processo que dura de 2 a 5 anos. A adolescência é a passagem da vida infantil para a adulta, baseada na psicologia, na sociologia e em questões sócio-histórico-culturais, que variam com época, classe social e cultura. Confundir os dois termos é erro clássico de prova."
+    },
+    {
+      "question": "O PROSAD, primeiro programa governamental brasileiro de atenção à saúde do adolescente, foi criado por qual ato normativo?",
+      "options": [
+        "Portaria do Ministério da Saúde nº 980, de 1989",
+        "Lei nº 8.069, o Estatuto da Criança e do Adolescente",
+        "A Lei nº 9.263/96, do Planejamento Familiar",
+        "Portaria do Ministério da Saúde nº 1.324, de 2016",
+        "Constituição Federal de 1988, em seu artigo 227"
+      ],
+      "correctIndex": 0,
+      "explanation": "A Portaria do Ministério da Saúde nº 980/GM, de 1989, instituiu o PROSAD, primeiro programa criado para intervir na prevenção de doenças e na promoção da saúde de todos os adolescentes de 10 a 19 anos. O ECA (Lei 8.069/90) regulamenta o artigo 227 da Constituição, e a Lei 9.263/96 dispõe sobre o planejamento familiar."
+    },
+    {
+      "question": "A partir de que idade o adolescente pode ser atendido sem a presença dos pais ou responsáveis, com garantia de sigilo?",
+      "options": [
+        "Dos 12 anos em diante, se capaz de avaliar o problema e conduzir-se",
+        "Somente a partir dos 16 anos, com maturidade presumida pela idade",
+        "Dos 14 anos em diante, independentemente da capacidade de avaliar o caso",
+        "Apenas após os 18 anos, quando há capacidade civil plena",
+        "Já aos 10 anos, por marcar o início da segunda década de vida"
+      ],
+      "correctIndex": 0,
+      "explanation": "Adolescentes a partir de 12 anos podem ser atendidos sem a presença dos pais ou responsáveis, sendo-lhes garantidos sigilo, confidencialidade e a execução dos procedimentos diagnósticos e terapêuticos necessários, desde que sejam capazes de avaliar seu problema e de conduzir-se por meios próprios. A privacidade é um direito independente da idade e do sexo, e a confidencialidade é reconhecida no art. 74 do Código de Ética Médica."
+    },
+    {
+      "question": "Qual situação NÃO está entre aquelas que, segundo o capítulo, podem justificar a quebra do sigilo?",
+      "options": [
+        "Início de vida sexual consentida, sem risco identificado",
+        "Escalonamento no uso de álcool e de outras drogas",
+        "Presença de autoagressão ou de ideação suicida",
+        "Sorologia positiva para o HIV no adolescente",
+        "Doença grave associada a um quadro depressivo"
+      ],
+      "correctIndex": 0,
+      "explanation": "Podem justificar a quebra do sigilo: qualquer modalidade de violência, uso escalonado de álcool e outras drogas, sinais de dependência química, autoagressão, ideação suicida ou de fuga, tendência homicida, gravidez, abortamento, sorologia HIV positiva, não adesão a tratamento com risco e doenças graves com quadro depressivo. A vida sexual consentida, sem risco identificado, é justamente o conteúdo protegido pelo sigilo — não o justifica."
+    },
+    {
+      "question": "Sobre a contracepção na adolescência, segundo a Lei do Planejamento Familiar (9.263/96):",
+      "options": [
+        "Indicada com critérios da OMS; invasivos exigem consentimento dos pais",
+        "Proibida para menores de 14 anos, mesmo com critérios da OMS",
+        "Indicada sem critérios de elegibilidade, por escolha exclusiva da jovem",
+        "Sempre com consentimento dos pais, mesmo sem método invasivo",
+        "Permitida somente após os 18 anos, com capacidade civil plena"
+      ],
+      "correctIndex": 0,
+      "explanation": "A contracepção pode e deve ser indicada para adolescentes, respeitando-se os critérios de elegibilidade médica da OMS, inclusive para menores de 14 anos (Lei do Planejamento Familiar, 9.263/96). O sigilo é preservado, desde que o método não seja invasivo — dispositivo intrauterino (DIU) ou implante —, quando é necessário o consentimento dos pais e/ou responsáveis."
+    },
+    {
+      "question": "Ao tomar ciência de qualquer modalidade de violência sexual contra adolescente, o profissional deve:",
+      "options": [
+        "Notificar o Conselho Tutelar ou outra autoridade competente",
+        "Manter sigilo absoluto, respeitando a vontade do adolescente",
+        "Apenas orientar a família a procurar a delegacia local",
+        "Registrar em prontuário e não comunicar a ninguém",
+        "Comunicar somente se o adolescente for menor de 14 anos"
+      ],
+      "correctIndex": 0,
+      "explanation": "A notificação ao Conselho Tutelar da localidade de moradia do adolescente e/ou outra autoridade competente (Delegacia de Proteção da Criança e do Adolescente ou Ministério Público) é obrigatória, conforme os arts. 13 e 245 do Estatuto da Criança e do Adolescente. O sigilo protege o adolescente, mas não se sobrepõe ao dever de proteção diante de violência."
+    },
+    {
+      "question": "Sobre a iniciação sexual precoce em meninas menores de 14 anos, Febrasgo, Sogia-BR e SBP destacam que:",
+      "options": [
+        "A gravidez nessa faixa associa-se mais frequentemente à violência sexual",
+        "A gravidez nessa faixa etária é rara e quase sempre desejada",
+        "A iniciação precoce não traz consequências clínicas relevantes",
+        "A contracepção deve ser iniciada somente após os 14 anos",
+        "O atendimento deve ocorrer sempre com a família presente"
+      ],
+      "correctIndex": 0,
+      "explanation": "As sociedades reafirmam sua preocupação com as consequências da iniciação sexual precoce, especialmente em meninas menores de 14 anos, em quem a gravidez está mais frequentemente associada à violência sexual. No atendimento de menores de 14 anos com atividade sexual consentida em relacionamento afetivo, é aconselhável avaliar o contexto no qual a relação está inserida."
+    },
+    {
+      "question": "Como o capítulo recomenda organizar a consulta do adolescente em três tempos?",
+      "options": [
+        "1º com a família, 2º só com o adolescente, 3º retorno dos pais para esclarecimentos",
+        "1º só com o adolescente, 2º com a família, 3º com a equipe multidisciplinar",
+        "1º com a família, 2º exame físico, 3º só com o adolescente para exames",
+        "1º com os pais, 2º com os professores, 3º com o adolescente sozinho",
+        "1º com o adolescente, 2º com a família, 3º para definição de encaminhamentos"
+      ],
+      "correctIndex": 0,
+      "explanation": "Recomenda-se o atendimento em três tempos: primeiro com o adolescente junto à família, colhendo antecedentes e a história sob a ótica do responsável; depois apenas com o adolescente, completando a anamnese com questões pessoais e sigilosas e realizando o exame físico; e, por fim, com o retorno dos pais para esclarecer diagnóstico e tratamento, guardando sigilo do que não expõe o jovem a risco."
+    },
+    {
+      "question": "Qual teste simples permite reconhecer clinicamente a escoliose no exame físico do adolescente?",
+      "options": [
+        "Teste de Adams, com flexão anterior da coluna",
+        "Teste de Trendelenburg, com apoio em um membro",
+        "Sinal de Lasègue, com o membro inferior elevado",
+        "Manobra de Barlow, com abdução dos quadris",
+        "Sinal de Ortolani, com adução e pressão"
+      ],
+      "correctIndex": 0,
+      "explanation": "Vários desvios do crescimento se iniciam nessa fase (escoliose, lordose e outros), e o exame do sistema esquelético deve incluir avaliação estática e dinâmica. O teste de Adams, com a flexão da coluna, é uma maneira simples de reconhecer clinicamente a escoliose. As demais manobras pertencem à propedêutica de outras articulações."
+    },
+    {
+      "question": "Sobre a ginecomastia puberal no menino, é correto afirmar que:",
+      "options": [
+        "Frequente, benigna e transitória, regride em 6-24 meses",
+        "Rara, sempre patológica e de indicação cirúrgica precoce",
+        "Exclusiva de meninos obesos, sem relação com a puberdade",
+        "Sinal de tumor testicular, exigindo orquiectomia imediata",
+        "Própria de adultos, sem vínculo com o desenvolvimento puberal"
+      ],
+      "correctIndex": 0,
+      "explanation": "A ginecomastia puberal é um evento frequente durante o desenvolvimento sexual do menino, benigno e transitório, podendo ser fisicamente desconfortável e psicologicamente angustiante. Inicia-se entre 10-12 anos, com pico entre 13-14 anos, coincidindo com o pico de velocidade de crescimento (habitualmente Tanner 3 de pelos pubianos e volume testicular de 8-10 mL), e regride em 6-24 meses. Deve-se pesquisar uso de medicamentos ou drogas, galactorreia e doenças crônicas."
+    },
+    {
+      "question": "Na orientação ao adolescente, o que significa 'dupla proteção'?",
+      "options": [
+        "Preservativo associado a outro método contraceptivo",
+        "Uso simultâneo de preservativo masculino e feminino",
+        "Vacinação contra HPV e hepatite B, somente",
+        "Uso de contracepção hormonal e espermicida juntos",
+        "Prevenção de gravidez e de acidentes de trânsito"
+      ],
+      "correctIndex": 0,
+      "explanation": "Após o exame físico, o capítulo orienta esclarecer sobre o uso de preservativo (masculino e feminino) e de métodos contraceptivos para a prevenção de gravidez e de IST/Aids, enfatizando a dupla proteção — o uso do preservativo associado a outro método contraceptivo."
+    },
+    {
+      "question": "Os intervalos de acompanhamento do crescimento e do desenvolvimento puberal devem ser:",
+      "options": [
+        "3 meses na puberdade, 4 na aceleração e anual após menarca/espermarca",
+        "Consultas anuais fixas, independente da fase do desenvolvimento puberal",
+        "Seis meses na puberdade e consultas mensais após a menarca",
+        "4 meses na puberdade, 3 na aceleração e anual após a menarca",
+        "2 meses na puberdade, 6 na aceleração e semestral após a menarca"
+      ],
+      "correctIndex": 0,
+      "explanation": "Os intervalos seguem a fase do desenvolvimento puberal: na puberdade, a cada 3 meses; na aceleração, a cada 4 meses; e na desaceleração, após a menarca e a espermarca/semenarca, uma vez ao ano. Essa periodicidade acompanha o estirão e a progressão dos estágios de Tanner no momento em que mais mudam."
+    },
+    {
+      "question": "Conforme o ECA, o trabalho é proibido para menores de quantos anos, salvo na condição de aprendiz?",
+      "options": [
+        "Menores de 14 anos",
+        "Menores de 12 anos",
+        "Menores de 16 anos",
+        "Menores de 18 anos",
+        "Menores de 10 anos"
+      ],
+      "correctIndex": 0,
+      "explanation": "O ECA, nos seus arts. 60 a 69, proíbe o trabalho a menores de 14 anos, salvo na condição de aprendiz. Na anamnese do adolescente, deve-se perguntar sobre o trabalho: desde quando, se é com carteira assinada, quantas horas por dia, se interfere nos estudos e o que ele faz com a remuneração."
     }
   ]
 }

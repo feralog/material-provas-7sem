@@ -47,7 +47,15 @@ A apresentação inicial é enganosa. Tudo começa com o desejo de ser mais "sau
 
 #### Epidemiologia e etiologia
 
-Início em adolescentes e adultos jovens, com **prevalência de 0,4% das jovens**. A etiologia é **multifatorial**: fatores constitucionais, parentes de 1º grau acometidos, fatores familiares (rigidez, repressão, perfeccionismo, alto valor atribuído à aparência física), valores culturais de hipervalorização do corpo e imposição de padrões de beleza, além de profissões ligadas à aparência (modelos, atrizes, bailarinas).
+Início em adolescentes e adultos jovens, com **prevalência de 0,4% das jovens** — o Tratado registra números maiores (0,6% em estudos americanos, 0,5% na faixa de 15-19 anos, 1% na segunda década e até 4,2% em estudo finlandês com critérios do DSM-5), com prevalência no sexo masculino cerca de 10 vezes menor. A etiologia é **multifatorial**: fatores constitucionais, parentes de 1º grau acometidos, fatores familiares (rigidez, repressão, perfeccionismo, alto valor atribuído à aparência física), valores culturais de hipervalorização do corpo e imposição de padrões de beleza, além de profissões ligadas à aparência (modelos, atrizes, bailarinas).
+
+#### Critérios diagnósticos (DSM-5)
+
+O DSM-5 fixa três critérios essenciais: **restrição da ingestão calórica** levando a peso corporal significativamente baixo no contexto de idade, gênero e trajetória de desenvolvimento; **medo intenso de ganhar peso** ou comportamento persistente que interfere no ganho de peso, mesmo com peso muito baixo; e **perturbação da vivência do peso e da forma corporal**, com influência indevida na autoavaliação ou ausência de reconhecimento da gravidade do baixo peso.
+
+O DSM-IV exigia **amenorreia por três ou mais ciclos** para o diagnóstico; esse critério foi **removido no DSM-5**, contemplando adolescentes que adoecem antes da menarca e também os meninos.
+
+> Para adolescentes, o IMC deve ser confrontado com as curvas de IMC por idade e sexo: abaixo do percentil 5 já se caracteriza baixo peso, mas o dado decisivo é a **evolução dentro do canal de crescimento** — a paciente pode estar 15% abaixo do peso ideal sem nunca ter perdido peso, apenas por não ganhar o suficiente durante o estirão.
 
 #### Indicadores de gravidade (DSM-5)
 
@@ -62,6 +70,17 @@ Início em adolescentes e adultos jovens, com **prevalência de 0,4% das jovens*
 
 O **tratamento é multimodal**: psicoterapia, terapia familiar, medicações (ISRS) e acompanhamento nutricional. Em casos de **risco de morte por desnutrição grave**, indica-se internação.
 
+#### Complicações da anorexia por sistema
+
+- **Cardiovascular:** bradicardia, hipotensão ortostática, prolongamento do intervalo QT e falência cardíaca; **prolapso da valva mitral** presente em cerca de **30%** dos casos, contra 2,5-6% na população geral.
+- **Endócrino:** LH e FSH baixos, **amenorreia secundária**, deficiência estrogênica e infertilidade, por acometimento do eixo hipotálamo-hipófise-ovariano; **GH elevado com IGF-1 reduzido** — estado de resistência ao GH da desnutrição; TSH e T4 normais ou baixos.
+- **Ósseo:** aumento da reabsorção com falha de formação; em adultas jovens, **90% com osteopenia e 40% com osteoporose**, com risco de fratura **4 a 7 vezes** maior.
+- **Neurológico:** atrofia cerebral à neuroimagem (redução das substâncias cinzenta e branca, aumento dos ventrículos), **reversível com a renutrição**.
+
+Com a recuperação do peso, os ciclos menstruais costumam voltar ao padrão prévio, mas **10 a 20% das pacientes seguem com alteração menstrual**, por exercício físico intenso e estresse persistentes. Em bailarinas, ginastas e fisiculturistas, investigar a **tríade da atleta** — transtorno alimentar, osteoporose e amenorreia.
+
+> Os transtornos alimentares têm a **mais alta taxa de mortalidade entre todos os transtornos mentais**, por complicações da inanição (arritmias, falência cardíaca, convulsões, pancreatite) e por suicídio — e talvez **menos de 20%** dos pacientes procurem cuidado espontaneamente.
+
 ---
 
 ## Bulimia nervosa
@@ -74,6 +93,12 @@ Quadro definido por **episódios frequentes e recorrentes de ingestão rápida e
 - **Etiologia:** parentes próximos acometidos e valores culturais de hipervalorização do corpo
 
 > **O peso costuma estar dentro da faixa normal**, ou apenas levemente acima ou abaixo dela. Essa é a diferença clínica mais cobrada em relação à anorexia: peso normal *não* afasta bulimia, e é exatamente por isso que o diagnóstico costuma demorar anos.
+
+#### Critérios diagnósticos (DSM-5)
+
+O diagnóstico exige **episódios recorrentes de compulsão alimentar** — ingestão, em um período determinado (por exemplo, dentro de 2 horas), de quantidade claramente maior do que a maioria comeria, com sensação de **perda de controle** — seguidos de **comportamentos compensatórios inapropriados** (vômitos autoinduzidos, laxantes, diuréticos, jejum, exercício em excesso), com frequência **mínima de 1 vez por semana durante 3 meses** e autoavaliação indevidamente influenciada pelo peso e pela forma corporal. No DSM-IV eram exigidas 2 vezes por semana nos últimos 3 meses; a flexibilização favoreceu o diagnóstico precoce.
+
+Ao exame físico, além das erosões dentárias, procurar o **aumento bilateral das glândulas salivares, sobretudo das parótidas**, pelo contato crônico com o ácido gástrico. A comorbidade psiquiátrica é a regra: em estudo com bulímicas americanas, **79% tinham ao menos um transtorno psiquiátrico e 49% tinham três ou mais**.
 
 #### Consequências e complicações
 
@@ -120,6 +145,14 @@ O EAT tem **boa especificidade e sensibilidade moderada**, e é **teste de triag
 
 Servem para **dimensionar o comprometimento orgânico**: hemograma, eletrólitos, eletroforese de proteínas, perfil lipídico, glicemia de jejum e transaminases hepáticas, vitamina B12 e vitamina D, painel hormonal (TSH, FSH, LH, DHEA, GH, IGF-1) e **eletrocardiograma/ecocardiograma**.
 
+#### O que investigar na anamnese e no laboratório
+
+A anamnese deve cobrir o hábito alimentar na infância e atual, rendimento escolar (não esquecer a possibilidade de **bullying** relacionado ao corpo), sono, sensação de fraqueza e tontura, histórico de perdas e ganhos ponderais, **identidade de gênero** e comportamento afetivo-sexual, além da saúde mental na família nuclear.
+
+O painel laboratorial inicial recomendado é hemograma, **eletrólitos com cálcio, magnésio e fósforo**, função hepática, ureia e creatinina, função tireoidiana e urina tipo I. Nas pacientes **amenorreicas**, acrescentar **beta-HCG** (afastar gravidez), FSH, LH e prolactina; com **amenorreia acima de 6 meses**, solicitar **densitometria óssea**. Nos pacientes com excesso de peso, incluir perfil lipídico, insulina e glicemia de jejum.
+
+> O laboratório pode vir **inteiramente normal** em quem tem transtorno alimentar ativo — e falsamente tranquilizar. O exame normal nunca afasta, sozinho, a doença.
+
 ---
 
 ## Tratamento, suporte nutricional e realimentação
@@ -144,6 +177,10 @@ A **resistência ou recusa ao tratamento** é parte do quadro, não um acidente 
 
 > Quanto **mais grave** a desnutrição, **menor** o aporte inicial e **mais lento** o incremento. Parece contraintuitivo, mas é a lógica de evitar a síndrome de realimentação: o paciente mais magro é o que menos tolera calorias de partida.
 
+#### Critérios de internação
+
+A maioria dos casos responde ao ambulatório, mas a internação está indicada diante de: **IMC ≤ 75% do esperado** para idade e sexo (IMC do paciente ÷ IMC do percentil 50 × 100); desidratação com distúrbio eletrolítico (hipocalemia, hiponatremia, hipofosfatemia); alterações cardíacas (**QT prolongado**, bradicardia grave com FC < 50 bpm de dia e < 45 bpm à noite, hipotensão 90/45 mmHg, aumento ortostático do pulso > 20 bpm ou queda da PA > 20 mmHg sistólica ou > 10 mmHg diastólica); **hipotermia abaixo de 35,6 °C**; parada do crescimento ou do desenvolvimento puberal; recusa aguda de alimentos; compulsão ou purgação incontrolável; complicações agudas da desnutrição (síncope, convulsões, insuficiência cardíaca, pancreatite); e condição psiquiátrica grave (depressão grave, ideação suicida, TOC) ou clínica que impeça o ambulatório, como diabete melito tipo 1.
+
 ---
 
 ## Transtorno alimentar restritivo/evitativo e transtorno de compulsão alimentar
@@ -163,6 +200,22 @@ Aversão a determinados alimentos ou sensibilidade a texturas, **SEM preocupaç�
 > A pergunta que separa bulimia de transtorno de compulsão alimentar é uma só: **houve purgação depois?** Hiperfagia, perda de controle e culpa existem nos dois. Só a bulimia tem o comportamento compensatório.
 
 O tratamento é multidisciplinar e **geralmente ambulatorial**. Aposta-se na **nutrição comportamental** — regularizar o padrão alimentar com refeições estruturadas, reduzir jejum prolongado e gatilhos de compulsão, trabalhar o "comer com regularidade" e monitorizar episódios com diário alimentar/emocional — além do tratamento das comorbidades. A **psicoterapia em geral resolve**: TCC e terapia baseada na família.
+
+---
+
+## Outro transtorno alimentar especificado (OSFED)
+
+O diagnóstico de OSFED (antes chamado de ED-NOS) é usado quando o quadro é **significativo**, com padrões aberrantes de ingestão e de manejo de peso, mas **não preenche os critérios completos** de anorexia, bulimia, transtorno de compulsão alimentar, transtorno alimentar restritivo/evitativo ou transtorno de ruminação. A categoria não é benigna: um grande contingente de pacientes ambulatoriais com transtorno alimentar se enquadra nela, com comorbidades, comprometimento psicossocial e **risco de óbito**.
+
+| Subtipo | O que falta em relação ao diagnóstico principal |
+| --- | --- |
+| **Anorexia nervosa atípica** | Todos os critérios de anorexia, mas o peso permanece dentro ou acima da faixa normal — com as mesmas complicações cardíacas da forma típica |
+| **Bulimia de baixa frequência / duração limitada** | Compulsão e compensatórios em média **menos de 1 vez por semana e/ou por menos de 3 meses** |
+| **Compulsão alimentar de baixa frequência / duração limitada** | Hiperfagia em média menos de 1 vez por semana e/ou por menos de 3 meses |
+| **Transtorno de purgação** | Purgação recorrente (vômitos, laxantes, diuréticos) **sem episódios de compulsão** |
+| **Síndrome do comer noturno** | Ingestão recorrente ao despertar do sono noturno ou após a refeição noturna, **com consciência e recordação** da ingesta, com sofrimento significativo |
+
+> Dois divisores de prova: entre a síndrome do comer noturno e as parassonias, a **recordação da ingesta**; entre o transtorno de purgação e a bulimia, a **ausência de compulsão**. Os quadros de OSFED ocorrem em **5 a 10% das mulheres entre 15 e 30 anos** e merecem o mesmo cuidado de um transtorno alimentar completo.
 
 ---
 

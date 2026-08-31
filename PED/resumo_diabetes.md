@@ -40,6 +40,8 @@ Qualquer um dos quatro critérios abaixo confirma diabetes. **Sem sintomas inequ
 
 *A OMS emprega 110 mg/dL como valor de corte de normalidade da glicose em jejum. A SBD 2026 também incorpora o TTGO de 1 hora ao documento diagnóstico; para a pediatria mantêm-se os critérios universais acima.*
 
+A HbA1c reflete a hiperglicemia crônica das últimas semanas, **não exige jejum** e varia menos em estresse e doenças intercorrentes — vantagens sobre a glicemia de jejum. Mas é alterada por tudo o que muda a vida média da hemácia ou interfere no ensaio: **anemia hemolítica, carência de ferro, hemoglobinopatias, uremia, hipertrigliceridemia, esplenectomia** e ingestão de vitamina C. Nesses casos, o diagnóstico deve apoiar-se **exclusivamente nos critérios glicêmicos**.
+
 ![Quadro 1 — critérios diagnósticos para o diabetes melito, com o fluxo clínico + laboratorial e o rastreamento em parentes de primeiro grau](img:pg02)
 
 #### Hipóteses diferenciais diante de poliúria e polidipsia na criança
@@ -58,11 +60,11 @@ Qualquer um dos quatro critérios abaixo confirma diabetes. **Sem sintomas inequ
 
 ## Fisiopatologia do DM1 e os estágios da doença
 
-O DM1 é doença inflamatória crônica, autoimune, de **herança poligênica** (com papel maior dos genes HLA) em indivíduos geneticamente predispostos. Fatores ambientais implicados: exposições fetais precoces, infecções virais intraútero ou pós-natais, introdução precoce de componentes do leite de vaca e outros fatores nutricionais.
+O DM1 é doença inflamatória crônica, autoimune, de **herança poligênica** (com papel maior dos genes HLA) em indivíduos geneticamente predispostos. Fatores ambientais implicados: exposições fetais precoces, infecções virais intraútero ou pós-natais, introdução precoce de componentes do leite de vaca e outros fatores nutricionais. Em **70 a 90%** dos casos há autoanticorpos contra antígenos da célula beta — o chamado **DM tipo 1A**; no grupo restante, sem evidência de autoimunidade e de causa desconhecida, usa-se **DM tipo 1B**. A incidência cresce a partir do nascimento, com **pico na puberdade (10–14 anos)**, aumento recente em menores de 5 anos e declínio até estabilizar no adulto jovem; cerca de 25% dos diagnósticos ocorrem na vida adulta, sob o rótulo de **LADA**. A suscetibilidade genética concentra-se na região do **HLA de classe II** no cromossomo 6, com os haplótipos **DR3-DQ2** e **DR4-DQ8** conferindo maior risco e o **DQ6**, proteção; contribuem ainda os genes *INS*, *PTPN22*, *IL2RA* e *CTLA4*.
 
 Na fisiologia normal, as células beta secretam insulina continuamente, com aumento após a ingestão alimentar; **insulina e peptídeo C são secretados em quantidades equimolares** a partir da clivagem da proinsulina — daí o peptídeo C servir de marcador da produção endógena e da reserva funcional das células beta.
 
-No DM1, o processamento defeituoso da proinsulina promove maior secreção de proinsulina, aumento da expressão de **HLA classe I**, ligação de linfócitos **T CD8**, liberação de perforina e granzima e **apoptose da célula beta**. Os autoantígenos liberados na circulação periférica recrutam a imunidade inata e adaptativa e resultam na formação dos autoanticorpos específicos da ilhota.
+No DM1, o processamento defeituoso da proinsulina promove maior secreção de proinsulina, aumento da expressão de **HLA classe I**, ligação de linfócitos **T CD8**, liberação de perforina e granzima e **apoptose da célula beta**. Os autoantígenos liberados na circulação periférica recrutam a imunidade inata e adaptativa e resultam na formação dos autoanticorpos específicos da ilhota. O processo costuma evoluir em silêncio: alterações metabólicas (queda da resposta do peptídeo C ao TOTG, instabilidade glicêmica, aceleração do crescimento linear) antecedem os sintomas em anos, e a doença clínica só aparece depois da destruição de **85 a 95% das células beta**. A destruição é mediada por linfócitos T CD4+ e CD8+, além de linfócitos B e macrófagos, caracterizando a **insulite**; os anticorpos **anti-insulina (IAA)** costumam ser os primeiros marcadores, seguidos por **GADA**, **IA-2A** e **anti-ZnT8**.
 
 ### Estágios do DM1
 
@@ -126,6 +128,10 @@ O menino de 11 anos da aula: glicemia 318 mg/dL, HbA1c 10,8%, glicosúria 4+, **
 - Fatores precipitantes: **interrupção da injeção diária de insulina**, infecções, traumas; erros ou excessos dietéticos e estresse emocional facilitam.
 - Clínica: náuseas e vômitos, dor abdominal difusa, poliúria e polidipsia, perda de peso, desidratação, fraqueza, **hálito cetônico**, taquicardia, **respiração de Kussmaul**, letargia e coma.
 - Tratamento: hidratação parenteral, insulinoterapia (geralmente endovenosa) e correção dos distúrbios hidroeletrolíticos, com atenção à **reposição de potássio**.
+
+#### Hiperglicemia sem acidose: quando se preocupar
+
+A hiperglicemia pré-prandial costuma ter correção prevista na receita (bolo de correção pelo fator de sensibilidade); a pós-prandial e a da madrugada também se corrigem com insulina rápida ou ultrarrápida, com base no alvo glicêmico. Diante de **hiperglicemia grave e sustentada (> 300 mg/dL)**, orientam-se repouso, hidratação oral e doses mais frequentes de insulina, usando a **cetonemia capilar ou a cetonúria** como ferramenta para estimar o risco de progressão para CAD. O déficit de insulina pode ser relativo ou absoluto — a omissão de doses é exemplo clássico do segundo.
 
 #### Sinais de alarme — emergência imediata
 
@@ -199,6 +205,8 @@ Usa **somente** análogo de ação rápida ou ultrarrápida, cumprindo função 
 
 A faixa mais alta à noite existe para reduzir o risco de hipoglicemia no sono. Os sistemas de monitorização contínua ampliaram o uso de métricas além da HbA1c.
 
+As complicações crônicas dividem-se em **microvasculares** (nefropatia, retinopatia, neuropatia) e **macrovasculares** (doença cardíaca, AVC, doença vascular periférica). O **DCCT (1993)** mostrou que o tratamento intensivo reduz de forma inequívoca o risco de complicações microvasculares — a base do esquema basal-bolus atual. A hiperglicemia crônica é o motor da lesão endotelial, e o risco cresce com a duração do diabetes e a puberdade; indivíduos com DM têm risco **2 a 4 vezes maior** de aterosclerose, e a hipertensão tem impacto cardiovascular ainda maior no diabético.
+
 #### Acompanhamento longitudinal no DM1
 
 - Crescimento, puberdade e **locais de aplicação**.
@@ -257,6 +265,8 @@ Fontes práticas de carboidrato rápido: 1 colher de sopa de açúcar (15 g), 1 
 
 Ocorre principalmente **acima dos 10 anos**, associado a etnias de maior risco (negros, asiáticos, hispânicos, indígenas), sexo feminino, antecedente familiar positivo e obesidade. O fator desencadeante mais importante é a **obesidade visceral**, que promove estado pró-inflamatório e intensifica a resistência insulínica, com progressão da intolerância à glicose ao DM2 pleno. Caracteriza-se por **resistência hepática à insulina**, com alterações das incretinas, aumento da produção hepática de glicose e falência progressiva das células beta. Irmãos jovens com DM2 conferem risco **4 vezes maior** de intolerância à glicose.
 
+O DM2 juvenil costuma ser assintomático ou oligossintomático e, no jovem, a evolução da resistência insulínica à falência da célula beta tende a ser **mais rápida que no adulto**. Estudo com quase 40 mil adolescentes brasileiros (12–17 anos) encontrou síndrome metabólica em **2,6%**, dos quais apenas cerca de **20%** tinham glicemia elevada — por isso o rastreamento não pode depender de sintomas.
+
 *Incretinas — GLP-1 e GIP aumentam a secreção de insulina pós-prandial, inibem o glucagon (reduzindo a produção hepática de glicose), retardam o esvaziamento gástrico e reduzem o apetite no SNC.*
 
 ### Quadro clínico
@@ -289,6 +299,8 @@ O TOTG é o teste de escolha na suspeita clínica, mesmo em criança assintomát
 - **Metformina** — primeira linha no paciente estável; efeitos gastrointestinais, titular progressivamente.
 - **Insulina** — hiperglicemia importante, cetose ou descompensação; pode ser reduzida ou retirada após estabilização, se HbA1c < 7%.
 - **Agonista de GLP-1** e/ou **inibidor de SGLT2** — quando a meta não é atingida (a ISPAD sugere considerá-los se HbA1c < 6,5% não for alcançada), conforme aprovação regulatória por idade, acesso e perfil clínico. Orientar hidratação e suspensão do SGLT2 em doença aguda.
+
+A metformina inicia-se com **500 a 1.000 mg/dia por 7–15 dias**, com ajuste semanal por 3–4 semanas até o máximo de **1 g duas vezes ao dia** ou **850 mg três vezes ao dia**. Em quem abre com cetose ou CAD, o tratamento começa com **insulina até a correção metabólica**, e a transição para metformina costuma ser feita com segurança entre **2 e 6 semanas**. Se a meta de HbA1c < 7% não for atingida em 4 semanas de monoterapia, adiciona-se **insulina basal**; se o alvo ainda não for alcançado, entra a **insulina prandial**.
 
 ### Comorbidades já ao diagnóstico
 

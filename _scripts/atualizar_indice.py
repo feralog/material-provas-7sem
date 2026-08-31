@@ -6,8 +6,9 @@ atualizar_indice.py — varre Quizzes/*.html e (re)gera o index.html da raiz.
 Uso:
     python _scripts/atualizar_indice.py
 
-Le titulo, eyebrow, nº de questoes, nº de secoes do resumo e nº de imagens de
-cada HTML gerado. Rodar sempre depois de montar_quiz.py.
+Le titulo, eyebrow, nº de questoes, nº de secoes do resumo e nº de imagens NAS
+QUESTOES de cada HTML gerado (as figuras do resumo não entram na contagem).
+Rodar sempre depois de montar_quiz.py.
 """
 
 import html as H
@@ -23,6 +24,8 @@ NOMES = {
     "PED": "Pediatria",
     "GO": "Ginecologia e Obstetrícia",
     "Geriatria": "Geriatria",
+    "Neurologia": "Neurologia",
+    "Psiquiatria": "Psiquiatria",
     "SAI": "Saúde do Adulto e do Idoso",
     "CIR": "Cirurgia",
     "MFC": "Medicina de Família e Comunidade",
@@ -46,7 +49,7 @@ def ler_meta(p: Path):
         "disciplina": NOMES.get(sigla, sigla if sigla != "?" else "Sem disciplina"),
         "q": len(re.findall(r'^\s*"question":', src, re.M)),
         "sec": corpo.count("<h2>"),
-        "img": len(re.findall(r'data:image/jpeg;base64,', src)),
+        "img": len(re.findall(r'"image": "data:image/jpeg;base64,', src)),
         "mb": p.stat().st_size / 1024 / 1024,
     }
 

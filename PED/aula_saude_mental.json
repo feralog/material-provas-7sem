@@ -2,7 +2,7 @@
   "titulo": "Saúde Mental na Adolescência",
   "eyebrow": "Pediatria · Saúde Mental",
   "subtitulo": "Do rastreio HEEADSSS ao manejo da violência autoprovocada",
-  "intro": "Trinta questões sobre as principais doenças mentais e comportamentais da adolescência: avaliação psiquiátrica e fatores de risco, transtorno de ajustamento, transtornos de humor e de ansiedade, psicose, abuso de substâncias, uso problemático de internet e violência autoprovocada.",
+  "intro": "Quarenta e cinco questões sobre as principais doenças mentais e comportamentais da adolescência: epidemiologia, avaliação psiquiátrica e fatores de risco, transtorno de ajustamento, transtornos de humor e de ansiedade, psicose, abuso de substâncias, uso problemático de internet e violência autoprovocada.",
   "questoes": [
     {
       "question": "Segundo a OMS, saúde mental é o estado de bem-estar em que o indivíduo percebe suas habilidades e consegue lidar com os estresses normais da vida. Esse estado corresponde a um equilíbrio dinâmico entre quais componentes essenciais?",
@@ -347,6 +347,173 @@
       ],
       "correctIndex": 0,
       "explanation": "O slide destaca em vermelho que NEM TODOS TÊM DOENÇA PSIQUIÁTRICA: a etiologia é uma interação complexa e multifatorial de fatores biológicos, psicológicos e sociais. Tentativas anteriores são justamente o fator de risco isolado destacado, e otimismo, vínculos familiares e espiritualidade figuram entre os fatores positivos."
+    },
+    {
+      "question": "Sobre a epidemiologia dos transtornos de ansiedade em crianças e adolescentes, qual afirmativa está correta?",
+      "options": [
+        "Afetam cerca de 15% dos jovens nos EUA e estão entre as mais prevalentes",
+        "São raras na infância e acometem menos de 2% dos adolescentes",
+        "Predominam no sexo masculino, na proporção de dois para cada menina",
+        "Têm início restrito à vida adulta, raramente se manifestando na escola"
+      ],
+      "correctIndex": 0,
+      "explanation": "Os transtornos de ansiedade estão entre as condições psiquiátricas mais prevalentes em crianças e adolescentes, afetando cerca de 15% dos jovens nos EUA, com estimativas de prevalência ao longo da vida entre 15% e 20%. Predominam no sexo feminino, em proporção próxima de 2:1, e frequentemente são subdiagnosticados e não tratados."
+    },
+    {
+      "question": "Sobre a epidemiologia dos transtornos depressivos, qual afirmativa está correta?",
+      "options": [
+        "Metade dos episódios depressivos tem início na adolescência",
+        "A depressão é rara e ocupa o último lugar entre as doenças do mundo",
+        "A prevalência cai na adolescência e volta a subir apenas na velhice",
+        "Os episódios depressivos começam exclusivamente na vida adulta"
+      ],
+      "correctIndex": 0,
+      "explanation": "A depressão é a terceira doença mais comum no mundo e, nos países de renda alta, a principal causa de incapacidade. Cerca de 25% da população mundial terá depressão, e pelo menos metade dos episódios tem início na adolescência — por isso a prevalência sobe substancialmente nessa fase."
+    },
+    {
+      "question": "Sobre o suicídio entre adolescentes e jovens, qual afirmativa é correta?",
+      "options": [
+        "É a segunda principal causa de morte entre 15 e 29 anos no mundo",
+        "É a principal causa de morte na pré-puberdade em ambos os sexos",
+        "As maiores taxas brasileiras estão nas regiões Norte e Nordeste",
+        "Ocorre com mais frequência na escola do que no domicílio"
+      ],
+      "correctIndex": 0,
+      "explanation": "O suicídio é a segunda principal causa de morte entre 15 e 29 anos no mundo, atrás apenas das causas externas acidentais, e mata quase 800 mil pessoas por ano. É raro na pré-puberdade, tem as maiores taxas brasileiras nas regiões Sul e Centro-Oeste e ocorre com mais frequência no lar."
+    },
+    {
+      "question": "Na adolescência, a depressão pode ser mascarada por sintomas que lembram outros quadros. Qual está entre eles?",
+      "options": [
+        "Ataques de raiva, hostilidade e queixas proeminentes de dor crônica",
+        "Fobia específica, mutismo seletivo e ansiedade de separação",
+        "Alucinações auditivas, delírios e desorganização do pensamento",
+        "Compulsões de lavagem, verificação e contagem repetitiva"
+      ],
+      "correctIndex": 0,
+      "explanation": "Na adolescência a depressão é frequentemente mascarada por agitação psicomotora, ataques de raiva, comportamentos delinquentes, hostilidade, autoagressão, exposição constante a situações de risco, uso de drogas, queixas de dor crônica, obesidade e letargia. Esse quadro costuma atrasar o diagnóstico, pois irritabilidade e oscilação de humor predominam sobre a tristeza clássica."
+    },
+    {
+      "question": "Qual é a duração mínima do humor deprimido para diagnosticar distimia no adolescente?",
+      "options": [
+        "Um ano, período menor que os dois anos do adulto",
+        "Seis meses, como no episódio depressivo maior",
+        "Três meses, com pelo menos dois sintomas somáticos",
+        "Dois anos, exigência idêntica à do adulto"
+      ],
+      "correctIndex": 0,
+      "explanation": "O transtorno depressivo persistente, ou distimia, exige humor deprimido na maioria dos dias por pelo menos um ano em crianças e adolescentes — critério mais curto que os dois anos exigidos no adulto. Em jovens o humor pode ser irritável, com apetite alterado, baixa energia, baixa autoestima e pensamentos de morte."
+    },
+    {
+      "question": "Como a depressão maior se diferencia das reações de luto no adolescente?",
+      "options": [
+        "O luto pode durar até dois anos e não traz culpa inapropriada",
+        "O luto sempre evolui para um episódio depressivo maior",
+        "A depressão não traz inibição psicomotora nem sentimento de culpa",
+        "O luto cursa com inibição psicomotora e culpa inapropriada"
+      ],
+      "correctIndex": 0,
+      "explanation": "O luto pode durar até dois anos e, em geral, não manifesta inibição psicomotora nem sentimento de culpa inapropriada, ao contrário da depressão maior. Por isso o luto costuma provocar sofrimento, mas raramente induz, sozinho, a um episódio depressivo maior."
+    },
+    {
+      "question": "No Brasil, sobre a violência autoprovocada na adolescência, qual afirmativa é correta?",
+      "options": [
+        "A ideação suicida é a mais prevalente, seguida dos planos e das tentativas",
+        "As tentativas predominam entre homens adultos, por arma de fogo",
+        "As maiores taxas de suicídio se concentram nas regiões Norte e Nordeste",
+        "A intoxicação por medicamentos é método raro nas tentativas femininas"
+      ],
+      "correctIndex": 0,
+      "explanation": "No Brasil a ideação suicida é a manifestação mais prevalente (17,1%), seguida da estruturação de planos (4,8%) e das tentativas (2,8%). As tentativas são mais significativas entre mulheres e jovens, e a intoxicação por medicamentos é o método mais utilizado; as maiores taxas de suicídio ficam nas regiões Sul e Centro-Oeste."
+    },
+    {
+      "question": "Sobre o local e os meios do suicídio consumado, qual afirmativa está correta?",
+      "options": [
+        "O domicílio é o cenário mais frequente, e o enforcamento lidera em ambos os sexos",
+        "Os hospitais são o cenário mais frequente, com predomínio da arma de fogo",
+        "As vias públicas predominam, com precipitação de altura nas mulheres",
+        "A intoxicação por pesticidas é o meio mais comum em homens e mulheres"
+      ],
+      "correctIndex": 0,
+      "explanation": "O lar é o cenário mais frequente do suicídio consumado (51%), seguido pelos hospitais (26%). O enforcamento é o principal meio tanto entre homens (58%) quanto entre mulheres (49%), vindo em seguida a arma de fogo no sexo masculino e fumaça/fogo e precipitação no feminino."
+    },
+    {
+      "question": "Sobre a autoagressão (autolesão) na adolescência, qual afirmativa é correta?",
+      "options": [
+        "É praticada em geral solitariamente e prediz comportamento suicida futuro",
+        "Sempre vem acompanhada de ideação suicida clara e planejada",
+        "É um comportamento benigno, sem relação com tentativas futuras",
+        "Ocorre predominantemente em grupos, como ritual coletivo de afirmação"
+      ],
+      "correctIndex": 0,
+      "explanation": "A autolesão é uma atitude consciente de se autoferir, em geral praticada solitariamente (80%), por sofrimento psíquico. Não deve ser menosprezada: é considerada fator preditivo de comportamento suicida, pois costuma coexistir com depressão, ansiedade, dependência química, TEPT e transtornos alimentares."
+    },
+    {
+      "question": "Na prevenção do suicídio, qual fator deve ser sempre investigado por ser o mais importante?",
+      "options": [
+        "Tentativa prévia de suicídio ou presença de ideias suicidas",
+        "Baixo rendimento escolar sem qualquer queixa emocional",
+        "História de alergias alimentares na primeira infância",
+        "Falta de atividade física regular e hábito de leitura"
+      ],
+      "correctIndex": 0,
+      "explanation": "A tentativa prévia de suicídio e as ideias suicidas são os fatores de risco mais importantes. Por isso, diante de intoxicações e acidentes, especialmente com histórico de repetição ou de suicídio na família, deve-se sempre investigar essa possibilidade."
+    },
+    {
+      "question": "O DSM-5 criou o transtorno disruptivo da desregulação do humor para classificar crianças que apresentam:",
+      "options": [
+        "Irritabilidade persistente e explosões de raiva desproporcionais",
+        "Fobia escolar e recusa persistente em dormir longe dos pais",
+        "Rituais de lavagem e verificação repetidos ao longo do dia",
+        "Delírios e alucinações auditivas com desorganização do pensamento"
+      ],
+      "correctIndex": 0,
+      "explanation": "O transtorno disruptivo da desregulação do humor foi acrescentado pelo DSM-5 aos transtornos depressivos, para crianças até 12 anos, com o objetivo de evitar o diagnóstico e o tratamento excessivos de transtorno bipolar. Caracteriza-se por irritabilidade persistente e explosões de raiva desproporcionais à situação."
+    },
+    {
+      "question": "Na depressão, qual alteração neuroquímica é descrita?",
+      "options": [
+        "Redução da captação de serotonina, com menos neurotransmissores ativos",
+        "Aumento da produção de serotonina e endorfina nas sinapses",
+        "Hiperatividade do córtex pré-frontal ventral no momento da crise",
+        "Redução do cortisol e inibição do eixo hipotálamo-hipófise-suprarrenal"
+      ],
+      "correctIndex": 0,
+      "explanation": "Na depressão ocorre diminuição na quantidade de serotonina e endorfina: a enzima e a bomba de recaptação continuam funcionando, mas há redução na captação de serotonina, deixando o sistema com menos neurotransmissores. Nos estudos de imagem, o córtex pré-frontal ventral mostra atividade diminuída, e o eixo hipotálamo-hipófise-suprarrenal encontra-se hiperativo em cerca de metade dos pacientes."
+    },
+    {
+      "question": "No quadro do slide sobre os transtornos de ansiedade, qual manifestação pertence ao grupo das FÍSICAS?",
+      "options": [
+        "Palpitações, aperto no peito, tremores e formigamento",
+        "Preocupação extrema, insegurança e baixa autoestima",
+        "Hipervigilância, medo de se manifestar em público",
+        "Sofrimento por antecipação e dificuldade de concentração"
+      ],
+      "correctIndex": 0,
+      "explanation": "As manifestações físicas da ansiedade incluem problemas de sono e apetite, tensão muscular, palpitações, falta de ar, aperto no peito, sudorese, vertigem, tremores, onicofagia, queda de cabelo, náuseas, diarreia, cefaleia, dores mal localizadas e formigamento. Preocupação extrema, insegurança, hipervigilância e sofrimento por antecipação são manifestações psicológicas.",
+      "image": "pg26",
+      "imageCaption": "Manifestações psicológicas e físicas da ansiedade"
+    },
+    {
+      "question": "Após o suicídio de um adolescente, qual orientação é correta para a comunidade escolar?",
+      "options": [
+        "Há risco aumentado de novos suicídios entre amigos e colegas de turma",
+        "O risco se restringe à família nuclear e não alcança os colegas",
+        "As reações familiares são previsíveis e dispensam apoio profissional",
+        "A escola deve evitar toda menção ao ocorrido para não sugerir o ato"
+      ],
+      "correctIndex": 0,
+      "explanation": "Depois de um suicídio há aumento do risco de novos suicídios na comunidade, especialmente entre amigos e colegas de turma. A escola deve mobilizar profissionais de saúde mental para informação e consulta, e recursos como kits para escolas ajudam instituições e comunidades no enfrentamento."
+    },
+    {
+      "question": "Sobre as tentativas de suicídio no adolescente, qual afirmativa é correta?",
+      "options": [
+        "Não são uma forma de chamar atenção e costumam envolver ambivalência",
+        "São sempre planejadas, com intenção inequívoca de morrer",
+        "Representam apenas um pedido de ajuda, sem risco real de morte",
+        "Só devem ser levadas a sério quando há mensagem escrita de despedida"
+      ],
+      "correctIndex": 0,
+      "explanation": "Tentativas de suicídio não são uma maneira de chamar a atenção: frequentemente envolvem ambivalência quanto ao desejo de morte e podem ser um pedido de ajuda. A gravidade de uma tentativa é avaliada pelo planejamento, pelas medidas para impedir a descoberta, pelo método usado e pelo estado mental no momento do ato."
     }
   ]
 }

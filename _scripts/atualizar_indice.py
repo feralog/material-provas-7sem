@@ -26,6 +26,8 @@ NOMES = {
     "Geriatria": "Geriatria",
     "Neurologia": "Neurologia",
     "Psiquiatria": "Psiquiatria",
+    "Otorrino": "Otorrinolaringologia",
+    "OFTALMO": "Oftalmologia",
     "SAI": "Saúde do Adulto e do Idoso",
     "CIR": "Cirurgia",
     "MFC": "Medicina de Família e Comunidade",

@@ -5,7 +5,7 @@
   "intro": "Conceito e tipos de iatrogenia, prevenção quaternária, casos reais noticiados, checklists de segurança (5 certos, cirurgia segura, SBAR, alta e polifarmácia) e o caso clínico do idoso com hipertrigliceridemia medicamentosa.",
   "questoes": [
     {
-      "question": "Segundo o conceito de iatrogenia adotado na aula (CRM-PR), o que caracteriza o fenômeno?",
+      "question": "Pelo conceito de iatrogenia do CRM-PR, o que caracteriza o fenômeno?",
       "options": [
         "Dano ao paciente decorrente de intervenção médica, certa ou errada, justificada ou não",
         "Dano ao paciente decorrente de intervenção médica apenas quando houve erro técnico",
@@ -42,7 +42,7 @@
       "imageCaption": "Os gigantes da geriatria incluem a iatrogenia"
     },
     {
-      "question": "Qual é a estimativa da OMS sobre mortalidade por erro médico apresentada na aula?",
+      "question": "Qual é a estimativa da OMS sobre mortalidade por erro médico?",
       "options": [
         "1 em cada 300 pacientes morre em consequência de erros médicos",
         "1 em cada 30 pacientes morre em consequência de erros médicos",
@@ -50,10 +50,10 @@
         "1 em cada 30.000 pacientes morre por consequência de erros médicos"
       ],
       "correctIndex": 0,
-      "explanation": "A OMS estima 1 morte por erro médico a cada 300 pacientes — a aula compara: pegar um avião é 33 mil vezes mais seguro do que ser internado. Nos EUA são 251 mil mortes por ano, o equivalente a dois Boeings 747 caindo por dia, ficando atrás apenas de infarto e câncer. No Brasil, cerca de 54 mil mortes em 19 milhões de atendimentos."
+      "explanation": "A OMS estima 1 morte por erro médico a cada 300 pacientes — para efeito de comparação, pegar um avião é 33 mil vezes mais seguro do que ser internado. Nos EUA são 251 mil mortes por ano, o equivalente a dois Boeings 747 caindo por dia, ficando atrás apenas de infarto e câncer. No Brasil, cerca de 54 mil mortes em 19 milhões de atendimentos."
     },
     {
-      "question": "A aula organiza a iatrogenia em quatro grandes tipos. Quais são eles?",
+      "question": "A iatrogenia é classicamente organizada em quatro grandes tipos. Quais são eles?",
       "options": [
         "Medicação, procedimento invasivo, falha de comunicação e diagnóstica",
         "Medicação, procedimento invasivo, falha de comunicação e cirúrgica",
@@ -61,7 +61,7 @@
         "Medicação, procedimento invasivo, nutricional e infecção hospitalar"
       ],
       "correctIndex": 0,
-      "explanation": "Os quatro tipos apresentados no slide são: iatrogenia por medicação, por procedimento invasivo, por falha no processo de comunicação e diagnóstica. As categorias se sobrepõem — por isso o slide as desenha como círculos que se cruzam. Infecção hospitalar e imobilismo são consequências que atravessam essas categorias, não tipos autônomos."
+      "explanation": "Os quatro tipos são: iatrogenia por medicação, por procedimento invasivo, por falha no processo de comunicação e diagnóstica. As categorias se sobrepõem — por isso costumam ser representadas como círculos que se cruzam. Infecção hospitalar e imobilismo são consequências que atravessam essas categorias, não tipos autônomos."
     },
     {
       "question": "No quadrante P4 da imagem, paciente e médico enfrentam medos ligados à possibilidade de doença que não se confirma. Qual o risco central desse cenário?",
@@ -77,7 +77,7 @@
       "imageCaption": "Matriz dos níveis de prevenção: P1 a P4"
     },
     {
-      "question": "Como a aula define iatrogenia por medicação?",
+      "question": "Como se define iatrogenia por medicação?",
       "options": [
         "Qualquer dano causado pelo medicamento, tenha havido ou não erro profissional",
         "Apenas o dano causado por erro de dose, de via ou de medicamento prescrito",
@@ -85,10 +85,10 @@
         "Apenas o dano causado por medicamento usado fora da bula ou sem registro"
       ],
       "correctIndex": 0,
-      "explanation": "A definição é ampla: qualquer dano, complicação ou efeito indesejável causado ao paciente pelo uso de medicamentos, independentemente de ter havido erro profissional. Erros de dose, de via e de medicamento estão incluídos, mas também reações adversas de prescrições corretas. A recomendação da aula é dupla checagem em todo o processo — médico, farmacêutico e enfermeiro."
+      "explanation": "A definição é ampla: qualquer dano, complicação ou efeito indesejável causado ao paciente pelo uso de medicamentos, independentemente de ter havido erro profissional. Erros de dose, de via e de medicamento estão incluídos, mas também reações adversas de prescrições corretas. A recomendação é dupla checagem em todo o processo — médico, farmacêutico e enfermeiro."
     },
     {
-      "question": "No caso de Porto Alegre citado na aula, o que levou três profissionais a responderem por homicídio culposo?",
+      "question": "Um paciente atendido em um hospital de Porto Alegre ficou quatro anos em estado vegetativo e morreu; três profissionais responderam por homicídio culposo. O que causou o dano?",
       "options": [
         "Dose de propafenona dez vezes maior que a indicada, com dano neurológico",
         "Dose de propafenona dez vezes menor que a indicada, com arritmia fatal",
@@ -110,7 +110,7 @@
       "explanation": "A professora usa exatamente este exemplo: cefaleia depois da coleta de líquor, ou após raquianestesia, não é erro médico, mas é iatrogenia. O mesmo vale para infecção e hemorragia pós-biópsia, trombose e lesão vascular no cateterismo e infecção de cateter venoso central — complicações previsíveis do procedimento, que exigem consentimento informado e monitorização."
     },
     {
-      "question": "A radiografia do slide mostra pneumotórax à esquerda após passagem de marca-passo em portador de DPOC. Como se classifica esse dano?",
+      "question": "Uma radiografia mostra pneumotórax à esquerda após passagem de marca-passo em portador de DPOC. Como se classifica esse dano?",
       "options": [
         "Iatrogenia por procedimento invasivo, complicação prevista da punção",
         "Iatrogenia diagnóstica, por interpretação equivocada da imagem prévia",
@@ -118,12 +118,12 @@
         "Iatrogenia por comunicação, por falha na passagem de plantão da equipe"
       ],
       "correctIndex": 0,
-      "explanation": "O pneumotórax é risco conhecido da punção venosa profunda para colocação de marca-passo, e o risco cresce no portador de DPOC. É iatrogenia por procedimento invasivo mesmo com técnica correta. No mesmo slide aparece a infecção de acesso venoso central, outro exemplo de dano relacionado à assistência ligado a dispositivo.",
+      "explanation": "O pneumotórax é risco conhecido da punção venosa profunda para colocação de marca-passo, e o risco cresce no portador de DPOC. É iatrogenia por procedimento invasivo mesmo com técnica correta. A infecção de acesso venoso central é outro exemplo de dano relacionado à assistência ligado a dispositivo.",
       "image": "pg16",
       "imageCaption": "Pneumotórax à esquerda após passagem de marca-passo"
     },
     {
-      "question": "O que a aula destaca sobre a iatrogenia por falha no processo de comunicação?",
+      "question": "O que caracteriza a iatrogenia por falha no processo de comunicação?",
       "options": [
         "É uma das causas mais comuns e mais evitáveis de erros médicos",
         "É a causa mais rara, porém a de maior letalidade imediata",
@@ -131,7 +131,7 @@
         "É restrita à relação entre o médico e o paciente idoso"
       ],
       "correctIndex": 0,
-      "explanation": "A falha de comunicação ocorre quando informações cruciais não são transmitidas, recebidas ou interpretadas corretamente entre a equipe ou entre profissional e paciente. É uma das causas mais comuns e, segundo o resumo, a mais evitável de todas — o que justifica investir em checklists, SBAR e dupla checagem em vez de confiar na memória individual."
+      "explanation": "A falha de comunicação ocorre quando informações cruciais não são transmitidas, recebidas ou interpretadas corretamente entre a equipe ou entre profissional e paciente. É uma das causas mais comuns e a mais evitável de todas — o que justifica investir em checklists, SBAR e dupla checagem em vez de confiar na memória individual."
     },
     {
       "question": "No caso da criança levada à UPA com pneumonia, qual falha assistencial é alegada na ação judicial?",
@@ -145,7 +145,7 @@
       "explanation": "No caso de Kaya, a ceftriaxona foi prescrita por sete dias consecutivos mas administrada apenas nos dias 12 e 13 de abril; a alta foi dada no dia 15 sem que ninguém percebesse a ausência das doses. É iatrogenia por omissão dentro da comunicação: a prescrição 'desaparece' e nada garante a checagem. O antídoto é escrever e checar o antibiótico todo dia, contando os dias já administrados."
     },
     {
-      "question": "Diante de uma receita ilegível, qual a conduta correta do farmacêutico segundo a aula?",
+      "question": "Diante de uma receita ilegível, qual a conduta correta do farmacêutico?",
       "options": [
         "Não dispensar e entrar em contato com o médico pelo telefone da receita",
         "Dispensar a apresentação mais usual do medicamento e orientar o paciente",
@@ -153,10 +153,10 @@
         "Consultar colegas em grupos de mensagens até decifrar a letra do médico"
       ],
       "correctIndex": 0,
-      "explanation": "Toda receita traz o telefone do prescritor; se não consegue ler, o farmacêutico não deve dispensar, e sim contatar o médico. A aula cita a reportagem sobre farmacêuticos que recorrem a grupos de WhatsApp para decifrar letra médica — solução informal que apenas transfere o risco. Quem administra, inclusive pais e cuidadores, também pode ler errado e responder pelo dano."
+      "explanation": "Toda receita traz o telefone do prescritor; se não consegue ler, o farmacêutico não deve dispensar, e sim contatar o médico. Há relatos de farmacêuticos que recorrem a grupos de WhatsApp para decifrar letra médica — solução informal que apenas transfere o risco. Quem administra, inclusive pais e cuidadores, também pode ler errado e responder pelo dano."
     },
     {
-      "question": "O que a aula chama de 'iatrogenia do silêncio'?",
+      "question": "O que se chama de 'iatrogenia do silêncio'?",
       "options": [
         "Má escuta: o médico não acolhe queixa importante trazida pelo paciente",
         "Má notícia: o médico omite o diagnóstico grave a pedido da família",
@@ -164,7 +164,7 @@
         "Má-fé: o médico esconde deliberadamente um erro já cometido"
       ],
       "correctIndex": 0,
-      "explanation": "A iatrogenia do silêncio é a má escuta — o médico que não ouve o paciente direito e não aborda uma queixa importante. Ela aparece no slide ao lado de outras falhas na comunicação médico-paciente: o termo de consentimento genérico, assinado sem explicação, e o uso de jargões técnicos incompreensíveis. São todas formas de dano produzido pela palavra (ou pela sua ausência)."
+      "explanation": "A iatrogenia do silêncio é a má escuta — o médico que não ouve o paciente direito e não aborda uma queixa importante. Ela figura ao lado de outras falhas na comunicação médico-paciente: o termo de consentimento genérico, assinado sem explicação, e o uso de jargões técnicos incompreensíveis. São todas formas de dano produzido pela palavra (ou pela sua ausência)."
     },
     {
       "question": "Idoso recebe alta em uso de omeprazol iniciado apenas como profilaxia de estresse na internação e segue tomando por dois anos porque ninguém revisou. Como classificar?",
@@ -186,7 +186,7 @@
         "Exame corretamente indicado, porém realizado com técnica inadequada de coleta"
       ],
       "correctIndex": 0,
-      "explanation": "O falso-positivo gera ansiedade extrema e encadeia exames mais invasivos e desnecessários; o falso-negativo faz o oposto, retardando o tratamento — como o atraso no diagnóstico de câncer porque um exame anterior foi negativo. A aula acrescenta um exemplo de erro por exame físico mal feito: paralisia facial periférica (de Bell) confundida com AVC."
+      "explanation": "O falso-positivo gera ansiedade extrema e encadeia exames mais invasivos e desnecessários; o falso-negativo faz o oposto, retardando o tratamento — como o atraso no diagnóstico de câncer porque um exame anterior foi negativo. Outro exemplo, agora de erro por exame físico mal feito: paralisia facial periférica (de Bell) confundida com AVC."
     },
     {
       "question": "Por que os idosos exigem doses iniciais menores e ajuste de intervalo entre as tomadas?",
@@ -283,7 +283,7 @@
       "explanation": "Lorazepam (benzodiazepínico), prometazina (anti-histamínico de 1ª geração, anticolinérgico) e olanzapina somam sedação, risco de quedas e prejuízo cognitivo — a tríade descrita no checklist de polifarmácia. Antes de rotular demência ou depressão, é obrigatório retirar a hipótese iatrogênica: o GDS era 3/15, e as duas quedas com sonolência diurna apontam para a medicação."
     },
     {
-      "question": "No gabarito do caso clínico, como a professora classifica a iatrogenia identificada?",
+      "question": "Homem de 61 anos com transtorno esquizoafetivo em uso de olanzapina e valproato desenvolve hipertrigliceridemia grave, recebe fenofibrato em dose triplicada com atorvastatina, evolui com transaminases elevadas e sofre quedas em uso de lorazepam e prometazina. Como classificar a iatrogenia?",
       "options": [
         "Relacionada a medicação: reação adversa, interação e drogas inapropriadas",
         "Relacionada a diagnóstico: falso-positivo do perfil lipídico inicial colhido",
@@ -291,10 +291,10 @@
         "Relacionada a procedimento: dano provocado pelas coletas repetidas de sangue"
       ],
       "correctIndex": 0,
-      "explanation": "O gabarito é explícito: iatrogenia relacionada a medicação, englobando reação adversa a medicamento, interação medicamentosa e medicamentos inapropriados para idosos. O caso reúne as três dimensões — a hipertrigliceridemia induzida pelos psicotrópicos, a associação fibrato-estatina em dose excessiva e o uso de benzodiazepínico e anti-histamínico num paciente com quedas."
+      "explanation": "Trata-se de iatrogenia relacionada a medicação, englobando reação adversa a medicamento, interação medicamentosa e medicamentos inapropriados para idosos. O caso reúne as três dimensões — a hipertrigliceridemia induzida pelos psicotrópicos, a associação fibrato-estatina em dose excessiva e o uso de benzodiazepínico e anti-histamínico num paciente com quedas."
     },
     {
-      "question": "Na resposta do gabarito, o que a interna coloca no 'R' do SBAR ao acionar o psiquiatra de sobreaviso?",
+      "question": "Uma interna aciona o psiquiatra de sobreaviso pelo SBAR por causa de idoso de 61 anos em polifarmácia sedativa com rebaixamento do nível de consciência. O que entra no 'R'?",
       "options": [
         "Pergunta se deve tentar flumazenil antes de encaminhar para tomografia",
         "Informa que a escala de coma de Glasgow do paciente resultou em dez",
@@ -302,7 +302,7 @@
         "Diz que é interna da emergência e atendeu idoso com rebaixamento agudo"
       ],
       "correctIndex": 0,
-      "explanation": "No gabarito, o R é: 'O senhor acha prudente tentarmos administrar flumazenil antes de encaminharmos para a TC de crânio?'. As demais alternativas correspondem a outras letras — Glasgow 10 e exame sem déficits motores é o A (avaliação), o histórico de esquizofrenia e polifarmácia sedativa é o B, e a apresentação da interna com o motivo do contato é o S."
+      "explanation": "O R é a recomendação, formulada como pergunta: 'O senhor acha prudente tentarmos administrar flumazenil antes de encaminharmos para a TC de crânio?'. As demais alternativas correspondem a outras letras — Glasgow 10 e exame sem déficits motores é o A (avaliação), o histórico de esquizofrenia e polifarmácia sedativa é o B, e a apresentação da interna com o motivo do contato é o S."
     },
     {
       "question": "Segundo o checklist de polifarmácia, qual grupo é potencialmente inapropriado no idoso pelo risco de sedação, quedas e confusão?",
@@ -327,7 +327,7 @@
       "explanation": "Na UTI o paciente acumula dispositivos que podem deixar de ser necessários: a sonda vesical mantida sem indicação traz risco de infecção urinária e delirium, e o cateter central pode ser retirado quando o paciente já está hidratado e aceita acesso periférico. O mesmo checklist manda conferir diariamente tromboprofilaxia, profilaxia de úlcera de estresse e a indicação de prono na hipoxemia grave."
     },
     {
-      "question": "Qual item pertence ao checklist de alta apresentado na aula?",
+      "question": "Qual item pertence ao checklist de alta hospitalar?",
       "options": [
         "Validar resultados de exames ainda pendentes antes de liberar o paciente",
         "Suspender toda a medicação de uso crônico até a consulta de retorno",
@@ -349,7 +349,7 @@
       "explanation": "A decisão do paciente é sempre levada em consideração; se ele não aceitar o tratamento, registra-se em prontuário que todos os riscos e benefícios foram explicados e que paciente e família não aceitaram. Esse é o desdobramento prático do consentimento informado, que existe para empoderar o paciente na tomada de decisão — não para transferir responsabilidade por meio de assinatura."
     },
     {
-      "question": "A aula afirma que 'erro médico' não consta entre as causas possíveis no atestado de óbito. Qual a consequência apontada?",
+      "question": "O 'erro médico' não consta entre as causas possíveis no atestado de óbito. Qual a consequência disso?",
       "options": [
         "Sem registro não há investigação, e o mesmo erro volta a acontecer",
         "Sem registro o hospital fica isento de responder judicialmente ao caso",
@@ -357,10 +357,10 @@
         "Sem registro o conselho profissional não pode abrir sindicância interna"
       ],
       "correctIndex": 0,
-      "explanation": "Não existe CID de erro médico e ele não é lançado no atestado de óbito, o que dificulta muito a identificação e o dimensionamento do problema — sem dado não há investigação, e a falha se repete. A resposta proposta pela aula é cultural: educação médica continuada sobre erros, para aprender com eles em vez de escondê-los."
+      "explanation": "Não existe CID de erro médico e ele não é lançado no atestado de óbito, o que dificulta muito a identificação e o dimensionamento do problema — sem dado não há investigação, e a falha se repete. A resposta proposta é cultural: educação médica continuada sobre erros, para aprender com eles em vez de escondê-los."
     },
     {
-      "question": "Qual postura institucional a aula defende para a equipe diante do erro assistencial?",
+      "question": "Qual postura institucional se recomenda à equipe diante do erro assistencial?",
       "options": [
         "Educação continuada, aprendendo com os erros em vez de escondê-los",
         "Punição do profissional envolvido, para desestimular novas ocorrências",
@@ -368,7 +368,7 @@
         "Afastamento imediato de quem errou, até a conclusão do processo interno"
       ],
       "correctIndex": 0,
-      "explanation": "O slide de comunicação em equipe formula a pergunta central da cultura de segurança: como aprender com os erros em vez de escondê-los. A resposta passa por educação médica contínua sobre erros e por ambiente que permita notificar sem medo — o oposto da lógica punitiva, que apenas empurra o evento adverso para a invisibilidade e impede a correção do processo."
+      "explanation": "A pergunta central da cultura de segurança é como aprender com os erros em vez de escondê-los. A resposta passa por educação médica contínua sobre erros e por ambiente que permita notificar sem medo — o oposto da lógica punitiva, que apenas empurra o evento adverso para a invisibilidade e impede a correção do processo."
     }
   ]
 }

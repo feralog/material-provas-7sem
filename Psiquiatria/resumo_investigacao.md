@@ -1,12 +1,12 @@
 ## Normalidade: diferença de grau, nunca de natureza
 
-A aula começa pela pergunta que antecede qualquer diagnóstico: o que separa uma vivência comum de um sintoma psiquiátrico? A resposta está em **três critérios**, sempre avaliados juntos. O primeiro é a **intensidade** — quanto o sintoma prejudica o dia a dia; o slide orienta pedir que o paciente quantifique, por exemplo com uma nota de 0 a 10. O segundo é a **quantidade** — a frequência com que o sintoma se repete, pois uma vez na vida é diferente de todos os dias. O terceiro é o **tempo de permanência** — por quanto tempo o sintoma persiste: minutos e se acalma, ou fica fixado por horas e dias. A regra de ouro é que a diferença entre o normal e o patológico é sempre de **grau** (intensidade, quantidade, tempo), **nunca de natureza**.
+Antes de qualquer diagnóstico vem a pergunta: o que separa uma vivência comum de um sintoma psiquiátrico? A resposta está em **três critérios**, sempre avaliados juntos. O primeiro é a **intensidade** — quanto o sintoma prejudica o dia a dia; recomenda-se pedir que o paciente quantifique, por exemplo com uma nota de 0 a 10. O segundo é a **quantidade** — a frequência com que o sintoma se repete, pois uma vez na vida é diferente de todos os dias. O terceiro é o **tempo de permanência** — por quanto tempo o sintoma persiste: minutos e se acalma, ou fica fixado por horas e dias. A regra de ouro é que a diferença entre o normal e o patológico é sempre de **grau** (intensidade, quantidade, tempo), **nunca de natureza**.
 
 ![Os três critérios de normalidade](img:pg03)
 
 > Pegadinha: "Ser normal é ter tudo e não ter nada." Todos temos os sintomas — por pouco tempo, com pouca intensidade e sem grande prejuízo. A normalidade não é a ausência de sintomas.
 
-O slide dos exemplos fixa a ideia com três pares de vivências que diferem em grau, não em natureza:
+Três pares de exemplos fixam a ideia — vivências que diferem em grau, não em natureza:
 
 | Vivência normal | Versão patológica |
 | --- | --- |
@@ -20,7 +20,7 @@ A consulta psiquiátrica é definida como uma **troca constante, peculiar, de id
 
 ![Linha do tempo do caso clínico](img:pg06)
 
-O caso clínico da aula mostra o medo bloqueando a escuta: um paciente que começou a beber na roça com o pai na infância, viu o pai assassinado aos 15 anos, sofreu agressão grave com traumatismo cranioencefálico aos 16 e, aos 18, matou a facadas o assassino do pai. Hoje vive em São Paulo, trabalha como pedreiro e parou de beber há 12 anos. O residente travou de medo diante do relato sem expressão emocional ("Eu fiz o que tinha que fazer"). A conduta correta: analisar o **contexto cultural de violência** e investigar os **pontos positivos** — por que mudou de estado, escolheu ser pedreiro e parou de beber. Quando o médico não se dá conta de atender, o caminho é encaminhar.
+Um caso clínico exemplar mostra o medo bloqueando a escuta: um paciente que começou a beber na roça com o pai na infância, viu o pai assassinado aos 15 anos, sofreu agressão grave com traumatismo cranioencefálico aos 16 e, aos 18, matou a facadas o assassino do pai. Hoje vive em São Paulo, trabalha como pedreiro e parou de beber há 12 anos. O residente travou de medo diante do relato sem expressão emocional ("Eu fiz o que tinha que fazer"). A conduta correta: analisar o **contexto cultural de violência** e investigar os **pontos positivos** — por que mudou de estado, escolheu ser pedreiro e parou de beber. Quando o médico não se dá conta de atender, o caminho é encaminhar.
 
 ## Os limites da atuação médica
 
@@ -53,13 +53,13 @@ A psiquiatria exige tempo: **30 minutos, no mínimo, por consulta** — o que pe
 
 Dois sistemas de classificação, funções complementares. A **CID** — Classificação Internacional de Doenças, da OMS — é a classificação oficial, obrigatória para laudos, receitas e guias burocráticas no sistema de saúde. O **DSM** — Manual Diagnóstico e Estatístico de Transtornos Mentais, da APA — é extremamente detalhado, padrão-ouro para pesquisas, ensaios clínicos e para estruturar o tempo e a intensidade dos critérios diagnósticos.
 
-![CID e DSM no slide das classificações](img:pg14)
+![CID e DSM: as duas classificações diagnósticas](img:pg14)
 
 A investigação clínica também abrange os **fatores desencadeantes** — eventos estressores que iniciam o quadro, como o luto, muitas vezes não reconhecido pelo paciente — e os **fatores de manutenção** — condições que perpetuam o adoecimento, como um ambiente de trabalho abusivo, que exigem intervenções além do medicamento.
 
 ## Risco, exames complementares e a anamnese
 
-A **avaliação de risco** determina o nível de cuidado: internação, CAPS ou ambulatório. O slide compara dois casos. Caso 1: jovem de 15 anos que, após término de namoro, ingere 10 comprimidos de Cibalena e é levada ao pronto-socorro pela família estruturada — risco menor, por haver rede de apoio, método de menor letalidade e primeira tentativa. Caso 2: homem de 35 anos, isolado, morando sozinho em outro estado, na segunda tentativa de suicídio com 30 comprimidos de Rivotril — risco imensamente maior, pela letalidade do método, pela reiteração da tentativa e pela ausência total de rede de apoio. A farmacologia é apenas uma fração do tratamento, que deve ser compartilhado com psicoterapia e manejo dos fatores psicossociais.
+A **avaliação de risco** determina o nível de cuidado: internação, CAPS ou ambulatório. Dois casos ilustram a comparação. Caso 1: jovem de 15 anos que, após término de namoro, ingere 10 comprimidos de Cibalena e é levada ao pronto-socorro pela família estruturada — risco menor, por haver rede de apoio, método de menor letalidade e primeira tentativa. Caso 2: homem de 35 anos, isolado, morando sozinho em outro estado, na segunda tentativa de suicídio com 30 comprimidos de Rivotril — risco imensamente maior, pela letalidade do método, pela reiteração da tentativa e pela ausência total de rede de apoio. A farmacologia é apenas uma fração do tratamento, que deve ser compartilhado com psicoterapia e manejo dos fatores psicossociais.
 
 Por que a psiquiatria não tem exame de imagem diagnóstico de rotina? Porque lida com neuroquímica intercelular e conexões sinápticas, em nível microscópico, dentro da caixa craniana fechada. A **ressonância magnética funcional** é recurso de pesquisa científica — mapeia áreas ativas sob estímulos, e padrões de grupo (como hipocampo reduzido em deprimidos) não servem de diagnóstico individual. Os exames de imagem e laboratoriais são pedidos para **excluir causas orgânicas secundárias** (tumores, distúrbios metabólicos) e para avaliar populações específicas: idosos com demência, crianças com suspeita de autismo e etilistas graves.
 
@@ -82,4 +82,4 @@ O adoecimento não tem uma causa única — cerca de **50% do risco** de desenvo
 
 ![Escalas e instrumentos de avaliação](img:pg19)
 
-Os seis pontos-chave da aula: normal x patológico é diferença de intensidade, quantidade e tempo — nunca de natureza; a ressonância emocional do médico é um instrumento clínico valioso; cada papel profissional tem limites — o resultado final depende do paciente; a entrevista exige tempo, escuta ativa e assertividade respeitosa; o diagnóstico nasce da anamnese, não de exames de imagem; e o adoecimento é sempre uma conspiração de fatores — genética, ambiente e história de vida.
+Os seis pontos-chave: normal x patológico é diferença de intensidade, quantidade e tempo — nunca de natureza; a ressonância emocional do médico é um instrumento clínico valioso; cada papel profissional tem limites — o resultado final depende do paciente; a entrevista exige tempo, escuta ativa e assertividade respeitosa; o diagnóstico nasce da anamnese, não de exames de imagem; e o adoecimento é sempre uma conspiração de fatores — genética, ambiente e história de vida.

@@ -2,7 +2,7 @@
   "titulo": "Particularidades da Adolescência",
   "eyebrow": "Pediatria · Hebiatria",
   "subtitulo": "Cérebro em obra, corpo em transformação e consulta que exige sigilo",
-  "intro": "Material sobre as particularidades neurológicas, biológicas, psicológicas e sociais da adolescência, a entrevista HEADSSS e a ética do atendimento. Estruturado em torno dos dois casos da aula: Júlia (15 anos, sem doença de base) e Gustavo (16 anos, com doença renal crônica).",
+  "intro": "Material sobre as particularidades neurológicas, biológicas, psicológicas e sociais da adolescência, a entrevista HEADSSS e a ética do atendimento. Estruturado em torno de dois casos clínicos: Júlia (15 anos, sem doença de base) e Gustavo (16 anos, com doença renal crônica).",
   "questoes": [
     {
       "question": "Segundo a Organização Mundial da Saúde, a adolescência corresponde a qual faixa etária?",
@@ -26,7 +26,7 @@
         "Por volta dos 16 anos de idade"
       ],
       "correctIndex": 0,
-      "explanation": "A aula é explícita: a maturação do córtex pré-frontal só se completa por volta dos 25 anos. Isso significa que durante toda a adolescência — e além dela — o substrato do planejamento e do controle de impulsos ainda está em construção. A maioridade legal aos 18 anos não coincide com a maturidade neurobiológica."
+      "explanation": "A maturação do córtex pré-frontal só se completa por volta dos 25 anos. Isso significa que durante toda a adolescência — e além dela — o substrato do planejamento e do controle de impulsos ainda está em construção. A maioridade legal aos 18 anos não coincide com a maturidade neurobiológica."
     },
     {
       "question": "Quais funções dependem diretamente do córtex pré-frontal, ainda imaturo no adolescente?",
@@ -53,7 +53,7 @@
       "explanation": "O descompasso central da adolescência é a maturação precoce do sistema límbico dopaminérgico frente ao amadurecimento tardio do córtex pré-frontal. Esse predomínio límbico explica a busca por recompensa e novidade, a maior sensibilidade à pressão de pares, a labilidade emocional e a reatividade ao estresse."
     },
     {
-      "question": "Qual ganho cognitivo típico da adolescência acompanha o predomínio límbico descrito na aula?",
+      "question": "Qual ganho cognitivo típico da adolescência acompanha o predomínio límbico?",
       "options": [
         "Avanço do pensamento abstrato e hipotético-dedutivo",
         "Consolidação do pensamento sensório-motor precoce",
@@ -62,7 +62,7 @@
         "Regressão do raciocínio lógico para o intuitivo"
       ],
       "correctIndex": 0,
-      "explanation": "A aula lista, ao lado do predomínio límbico, o avanço do pensamento abstrato e do raciocínio hipotético-dedutivo. O adolescente já consegue formular hipóteses e antecipar consequências no plano teórico, o que não se traduz automaticamente em decisão prudente sob carga emocional ou pressão de pares."
+      "explanation": "Ao lado do predomínio límbico, surge o avanço do pensamento abstrato e do raciocínio hipotético-dedutivo. O adolescente já consegue formular hipóteses e antecipar consequências no plano teórico, o que não se traduz automaticamente em decisão prudente sob carga emocional ou pressão de pares."
     },
     {
       "question": "Júlia entende perfeitamente as orientações médicas, mas segue tomando decisões impulsivas. Como interpretar isso?",
@@ -98,7 +98,7 @@
         "IMC no percentil 50, estável ao longo dos últimos anos"
       ],
       "correctIndex": 0,
-      "explanation": "O slide registra IMC no percentil 45 com queda de dois canais em um ano e palidez cutâneo-mucosa discreta. O percentil isolado parece normal, mas a mudança de canal é o dado de alarme: sinaliza perda ponderal relativa e obriga a investigar alimentação irregular, transtorno alimentar e anemia.",
+      "explanation": "O exame físico registra IMC no percentil 45 com queda de dois canais em um ano e palidez cutâneo-mucosa discreta. O percentil isolado parece normal, mas a mudança de canal é o dado de alarme: sinaliza perda ponderal relativa e obriga a investigar alimentação irregular, transtorno alimentar e anemia.",
       "image": "pg13",
       "imageCaption": "Exame físico de Júlia: IMC percentil 45 com queda de dois canais e palidez"
     },
@@ -127,7 +127,7 @@
       "explanation": "A puberdade começa com a reativação do eixo hipotálamo-hipófise-gonadal, com repercussão metabólica, somática e emocional. Os demais eixos participam do crescimento e do metabolismo, mas não são o gatilho da maturação sexual. A adrenarca é evento paralelo e independente da gonadarca."
     },
     {
-      "question": "Segundo o slide de desenvolvimento hormonal, o que caracteriza o componente 'Crescimento'?",
+      "question": "No desenvolvimento hormonal da puberdade, o que caracteriza o componente 'Crescimento'?",
       "options": [
         "Pico de velocidade de crescimento e ganho de massa óssea",
         "Pico de velocidade de crescimento e perda de massa óssea",
@@ -136,7 +136,7 @@
         "Parada do crescimento linear e ganho de massa muscular"
       ],
       "correctIndex": 0,
-      "explanation": "O slide define o crescimento puberal por dois marcos: o pico de velocidade de crescimento e o ganho de massa óssea e muscular. A adolescência concentra boa parte do pico de massa óssea da vida, o que torna cálcio, vitamina D e atividade física questões clínicas relevantes nessa fase.",
+      "explanation": "O crescimento puberal se define por dois marcos: o pico de velocidade de crescimento e o ganho de massa óssea e muscular. A adolescência concentra boa parte do pico de massa óssea da vida, o que torna cálcio, vitamina D e atividade física questões clínicas relevantes nessa fase.",
       "image": "pg14",
       "imageCaption": "Eixo hormonal, crescimento, maturação sexual e vulnerabilidades clínicas"
     },
@@ -162,7 +162,7 @@
         "Conflito de valores familiares, sem repercussão clínica"
       ],
       "correctIndex": 0,
-      "explanation": "A aula lista abuso e coerção sexual entre as vulnerabilidades do desenvolvimento sexual, ao lado de ISTs e gravidez não planejada. Relato de pressão para ter relação exige rastreio ativo de violência sexual, avaliação do risco e acionamento da rede de proteção quando indicado — nunca normalização."
+      "explanation": "Abuso e coerção sexual estão entre as vulnerabilidades do desenvolvimento sexual, ao lado de ISTs e gravidez não planejada. Relato de pressão para ter relação exige rastreio ativo de violência sexual, avaliação do risco e acionamento da rede de proteção quando indicado — nunca normalização."
     },
     {
       "question": "Júlia pede que os pais não saibam do início da vida sexual. Qual a conduta correta?",
@@ -186,7 +186,7 @@
         "Autonomia condicionada à capacidade civil plena"
       ],
       "correctIndex": 0,
-      "explanation": "A aula defende a autonomia progressiva: o adolescente deve participar das decisões em saúde de forma crescente, respeitados o sigilo, o direito à privacidade e o Estatuto da Criança e do Adolescente. O aconselhamento é individual e familiar, sem infantilizar nem abandonar o adolescente à própria sorte."
+      "explanation": "O princípio que orienta o atendimento é a autonomia progressiva: o adolescente deve participar das decisões em saúde de forma crescente, respeitados o sigilo, o direito à privacidade e o Estatuto da Criança e do Adolescente. O aconselhamento é individual e familiar, sem infantilizar nem abandonar o adolescente à própria sorte."
     },
     {
       "question": "Júlia refere cortes superficiais em antebraço e nega ideação suicida atual. Qual a conduta?",
@@ -201,7 +201,7 @@
       "explanation": "Automutilação é fator de risco reconhecido para suicídio, mesmo sem ideação declarada no momento — o capítulo inclui a autoagressão entre as situações que podem justificar a quebra do sigilo. A conduta esperada é avaliação de saúde mental, plano de segurança e reavaliação seriada, com envolvimento familiar gradual. Banalizar como 'busca de atenção' ou saltar direto para internação são erros opostos e igualmente graves."
     },
     {
-      "question": "Quais eixos a aula reúne no desenvolvimento psicossocial e identitário do adolescente?",
+      "question": "Quais eixos compõem o desenvolvimento psicossocial e identitário do adolescente?",
       "options": [
         "Busca identitária, individuação, moral e ética e autoimagem",
         "Busca de sensações, dependência, culpa e imagem corporal",
@@ -210,10 +210,10 @@
         "Autoeficácia, resiliência, espiritualidade e escolha vocacional"
       ],
       "correctIndex": 0,
-      "explanation": "O slide organiza o desenvolvimento psicossocial em seis eixos: busca identitária, autoimagem, individuação, pertencimento, moral e ética, e influência digital. São justamente esses eixos que ficam expostos nas redes sociais, onde a comparação constante alimenta a insatisfação corporal relatada por Júlia."
+      "explanation": "O desenvolvimento psicossocial se organiza em seis eixos: busca identitária, autoimagem, individuação, pertencimento, moral e ética, e influência digital. São justamente esses eixos que ficam expostos nas redes sociais, onde a comparação constante alimenta a insatisfação corporal relatada por Júlia."
     },
     {
-      "question": "Quais riscos comuns a aula associa ao desenvolvimento psicossocial da adolescência?",
+      "question": "Quais riscos comuns se associam ao desenvolvimento psicossocial da adolescência?",
       "options": [
         "Transtornos de humor, automutilação e risco de suicídio",
         "Transtornos de linguagem, tiques motores e enurese noturna",
@@ -225,7 +225,7 @@
       "explanation": "Os riscos comuns listados são transtornos de humor e ansiedade, automutilação e risco de suicídio, transtornos de imagem corporal e comportamentos de risco. As demais condições têm apresentação típica na infância ou seguem trajetória de neurodesenvolvimento, não sendo o foco de risco desta fase."
     },
     {
-      "question": "No slide de estilo de vida de Júlia, quantas horas ela dorme e em que horário?",
+      "question": "No estilo de vida de Júlia, quantas horas ela dorme e em que horário?",
       "options": [
         "6 horas por dia, das 00:00 às 06:00",
         "8 horas por dia, das 23:00 às 07:00",
@@ -234,7 +234,7 @@
         "4 horas por dia, das 02:00 às 06:00"
       ],
       "correctIndex": 0,
-      "explanation": "O slide registra sono de 6 horas por dia, das 00:00 às 06:00 — abaixo das 8 a 10 horas recomendadas para a faixa etária e com horário deslocado para a madrugada. Essa privação de sono se soma ao atraso fisiológico do ritmo circadiano e ajuda a explicar a queda do rendimento escolar.",
+      "explanation": "Júlia dorme 6 horas por dia, das 00:00 às 06:00 — abaixo das 8 a 10 horas recomendadas para a faixa etária e com horário deslocado para a madrugada. Essa privação de sono se soma ao atraso fisiológico do ritmo circadiano e ajuda a explicar a queda do rendimento escolar.",
       "image": "pg23",
       "imageCaption": "Estilo de vida de Júlia: alimentação, atividade física, telas e sono"
     },
@@ -248,7 +248,7 @@
         "Mais de 10 a 12h de telas e atividade física ausente"
       ],
       "correctIndex": 0,
-      "explanation": "O slide registra uso de telas acima de 6 a 8 horas por dia e atividade física mínima, ao lado de alimentação irregular com refeições puladas e ultraprocessados frequentes. Esse conjunto é o alvo prático das orientações de autocuidado e de construção de hábitos saudáveis para a vida adulta."
+      "explanation": "O registro mostra uso de telas acima de 6 a 8 horas por dia e atividade física mínima, ao lado de alimentação irregular com refeições puladas e ultraprocessados frequentes. Esse conjunto é o alvo prático das orientações de autocuidado e de construção de hábitos saudáveis para a vida adulta."
     },
     {
       "question": "Dormir tarde na adolescência é melhor explicado por qual mecanismo?",
@@ -260,7 +260,7 @@
         "Efeito estimulante do consumo de cafeína"
       ],
       "correctIndex": 0,
-      "explanation": "A aula responde diretamente a essa pegadinha: o adolescente dorme tarde por atraso fisiológico do ritmo circadiano, uma característica biológica da fase, e não por indisciplina. Reconhecer isso muda a abordagem — em vez de culpabilizar, orienta-se higiene do sono, redução de telas noturnas e negociação realista de horários."
+      "explanation": "A pegadinha se resolve pela fisiologia: o adolescente dorme tarde por atraso fisiológico do ritmo circadiano, uma característica biológica da fase, e não por indisciplina. Reconhecer isso muda a abordagem — em vez de culpabilizar, orienta-se higiene do sono, redução de telas noturnas e negociação realista de horários."
     },
     {
       "question": "No acrônimo HEADSSS, os dois 'S' finais correspondem a quais domínios?",
@@ -277,7 +277,7 @@
       "imageCaption": "HEADSSS aplicado ao caso de Júlia, domínio por domínio"
     },
     {
-      "question": "A aula destaca que a entrevista HEADSSS deve ser conduzida de que maneira?",
+      "question": "A entrevista HEADSSS deve ser conduzida de que maneira?",
       "options": [
         "Como conversa guiada, e não como checklist rígido",
         "Como checklist rígido, aplicado na ordem das letras",
@@ -286,7 +286,7 @@
         "Como triagem breve delegada à equipe de enfermagem"
       ],
       "correctIndex": 0,
-      "explanation": "O slide repete o alerta em destaque: 'Não é checklist! É conversa guiada.' O HEADSSS organiza os domínios a explorar, mas a coleta depende de vínculo, privacidade e escuta qualificada. Aplicado como formulário, perde justamente o que ele existe para captar: o que o adolescente só diz quando se sente seguro."
+      "explanation": "O alerta é explícito: 'Não é checklist! É conversa guiada.' O HEADSSS organiza os domínios a explorar, mas a coleta depende de vínculo, privacidade e escuta qualificada. Aplicado como formulário, perde justamente o que ele existe para captar: o que o adolescente só diz quando se sente seguro."
     },
     {
       "question": "No caso de Júlia, o que o domínio 'Suicide' do HEADSSS revelou?",
@@ -322,7 +322,7 @@
         "Desconhecimento do diagnóstico e do próprio prognóstico"
       ],
       "correctIndex": 0,
-      "explanation": "A aula nomeia esse fenômeno: não adesão intencional como forma de retomar controle — 'se eu não tomo, pelo menos eu mando em algo'. Em doença crônica na adolescência, a perda de autonomia (tudo decidido por adulto ou pelo sistema) e o microcontrole familiar transformam a medicação no único território disponível para exercer vontade própria."
+      "explanation": "Esse fenômeno tem nome: não adesão intencional como forma de retomar controle — 'se eu não tomo, pelo menos eu mando em algo'. Em doença crônica na adolescência, a perda de autonomia (tudo decidido por adulto ou pelo sistema) e o microcontrole familiar transformam a medicação no único território disponível para exercer vontade própria."
     },
     {
       "question": "O que a HEADSSS tende a revelar no adolescente com doença crônica 'desiludido'?",
@@ -339,7 +339,7 @@
       "imageCaption": "O que a HEADSSS revela no adolescente de 16 anos com DRC estágio 3"
     },
     {
-      "question": "Qual conduta a aula propõe para o adolescente com DRC e conflito familiar sobre autonomia?",
+      "question": "Qual conduta é indicada para o adolescente com DRC e conflito familiar sobre autonomia?",
       "options": [
         "Reunião breve com o cuidador para combinar papéis",
         "Consulta apenas com os pais para reforçar a cobrança",
@@ -362,7 +362,7 @@
         "Omissão do tema até a maioridade legal"
       ],
       "correctIndex": 0,
-      "explanation": "A aula propõe abordagem não punitiva — 'muitos usam para lidar com estresse; quero entender' —, redução de danos e envolvimento da saúde mental quando necessário. A postura punitiva rompe o vínculo e faz o adolescente omitir o uso, exatamente o oposto do que a consulta precisa alcançar."
+      "explanation": "A abordagem recomendada é não punitiva — 'muitos usam para lidar com estresse; quero entender' —, redução de danos e envolvimento da saúde mental quando necessário. A postura punitiva rompe o vínculo e faz o adolescente omitir o uso, exatamente o oposto do que a consulta precisa alcançar."
     },
     {
       "question": "Qual o desfecho realista esperado no caso de Júlia, ao fim da discussão?",

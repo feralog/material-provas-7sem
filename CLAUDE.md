@@ -200,6 +200,12 @@ Regras — **25 a 30 questões** por aula (35 a 45 se for material de revisão a
 - Distratores clinicamente plausíveis. Alternativa absurda transforma 5 opções em 2.
 - Mesmo estilo sintático no grupo — nunca frase completa misturada com fragmento.
 - `explanation` nunca vazio (o build recusa).
+- **Independente da aula** — quem estuda pelo quiz não assistiu à aula. Nada de
+  "segundo a aula", "no slide", "no gabarito", "o professor destaca", "no material".
+  Traga o dado para dentro do enunciado: *"A iatrogenia é classificada em quatro
+  tipos"*, não *"A aula organiza a iatrogenia em quatro tipos"*. Vale para enunciado,
+  alternativa e explicação — o build bloqueia (`validar_independencia`). Se a questão
+  só existe como "o que a aula disse", sem valor clínico próprio, remova.
 
 Imagens nas questões (`image` + `imageCaption`, opcionais):
 - **4 a 8 questões** com imagem, só onde a imagem **é o objeto da pergunta**: fluxograma,
@@ -256,7 +262,8 @@ PYTHONIOENCODING=utf-8 "$PY" _scripts/montar_quiz.py \
 (quase sempre, porque o título é limpo e o nome do arquivo original não). Na dúvida, passe.
 
 O script **valida e aborta** se houver: alternativas fora de 4–6, `correctIndex ≠ 0`,
-alternativas duplicadas, enunciado ou explicação vazios, resumo sem nenhuma seção `##`,
+alternativas duplicadas, enunciado ou explicação vazios, **referência à aula**
+("segundo a aula", "no slide", "no gabarito"), resumo sem nenhuma seção `##`,
 chave de imagem inexistente, placeholder não substituído. Desequilíbrio de comprimento
 sai como *aviso* que também bloqueia — liberável com `--forcar`, mas o certo é corrigir.
 

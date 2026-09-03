@@ -12,12 +12,14 @@ Quiz e resumo de cada aula, num arquivo HTML só, que abre offline no navegador.
 |---|---|---|
 | Pediatria | 8 | 356 |
 | Ginecologia e Obstetrícia | 5 | 170 |
+| Oftalmologia | 5 | 152 |
+| Otorrinolaringologia | 4 | 127 |
 | Geriatria | 3 | 98 |
-| Neurologia | 2 | 60 |
 | Psiquiatria | 3 | 89 |
-| **Total** | **21** | **773** |
+| Neurologia | 2 | 60 |
+| **Total** | **30** | **1052** |
 
-Mais 182 seções de resumo e 124 imagens nas questões.
+Mais 261 seções de resumo e 194 imagens nas questões.
 
 Cada material abre com um seletor: **fazer o quiz** ou **ler o resumo**.
 

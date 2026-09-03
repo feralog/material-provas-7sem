@@ -55,7 +55,7 @@ Duas consequências merecem destaque clínico. A primeira: como os hormônios ti
 
 ## 4. Classificação dos distúrbios da tireoide
 
-O quadro de classificação se repete várias vezes ao longo da aula porque é o esqueleto de todo o raciocínio diagnóstico.
+O quadro de classificação é o esqueleto de todo o raciocínio diagnóstico e reaparece em cada etapa da investigação.
 
 #### Hipofunção
 - **Hipotireoidismo primário** — falência da própria glândula; é a forma **mais comum**.
@@ -85,7 +85,7 @@ O recém-nascido pode estar **assintomático** — este é o dado mais important
 
 A presença de **micropênis, criptorquidia, hipoglicemia, icterícia prolongada e falência de crescimento inexplicada** sugere a **forma central**, em geral dentro de um **pan-hipopituitarismo** — nesses casos a glândula é estruturalmente normal e a triagem por TSH em papel-filtro não detecta o defeito.
 
-Não tratado, o quadro evolui para o **cretinismo**: baixa estatura, infiltração cutânea (mixedema) com fácies cretinoide, cabelos quebradiços e queda de cabelo, edema de mãos e pés e atraso global do desenvolvimento neuropsicomotor — o retrato da paciente de 29 anos do caso clínico da aula.
+Não tratado, o quadro evolui para o **cretinismo**: baixa estatura, infiltração cutânea (mixedema) com fácies cretinoide, cabelos quebradiços e queda de cabelo, edema de mãos e pés e atraso global do desenvolvimento neuropsicomotor — o retrato da paciente de 29 anos do caso clínico.
 
 #### Triagem neonatal
 
@@ -164,7 +164,7 @@ Diante de suspeita de hipotireoidismo, dosam-se sempre **TSH e T4 livre** juntos
 | 10-16 anos | 2-4 |
 | > 16 anos | 1,7 |
 
-O slide generaliza **10-15 mcg/kg/dia**, número que na prática vale para o lactente de até 3 meses (no HC, a dose inicial do recém-nascido). Em lactentes e crianças a levotiroxina **pode ser administrada junto com os alimentos**, evitando **soja e fibra vegetal**; nos adolescentes, tradicionalmente em jejum de 30-60 minutos. Ferro e cálcio devem ser afastados do horário da dose.
+É comum ver a generalização de **10-15 mcg/kg/dia**, número que na prática vale para o lactente de até 3 meses (no HC, a dose inicial do recém-nascido). Em lactentes e crianças a levotiroxina **pode ser administrada junto com os alimentos**, evitando **soja e fibra vegetal**; nos adolescentes, tradicionalmente em jejum de 30-60 minutos. Ferro e cálcio devem ser afastados do horário da dose.
 
 - **Monitorização**: TSH e T4 livre, com alvo na normalização somada à melhora clínica. No **hipotireoidismo primário**, o TSH é o parâmetro sensível e deve ficar na faixa de referência. Anticorpos servem ao diagnóstico etiológico, não ao ajuste da dose.
 - **Controles**: 4-6 semanas após o início e após cada mudança de dose; estabilizado, a cada 6 meses ou menos, conforme a idade. No **central**, o controle é pelo **T4 livre na metade superior** da referência, e a levotiroxina só começa com a função adrenal avaliada (glicocorticoide antes, se preciso).

@@ -13,7 +13,7 @@
         "Bem-estar cognitivo, integridade neurológica e ausência de uso de drogas"
       ],
       "correctIndex": 0,
-      "explanation": "A definição da OMS usada na aula descreve a saúde mental como um estado de equilíbrio dinâmico entre três componentes essenciais: bem-estar psicológico, emocional e social. Não se trata de ausência de doença nem de desempenho produtivo, e sim de equilíbrio entre essas três dimensões."
+      "explanation": "A OMS descreve a saúde mental como um estado de equilíbrio dinâmico entre três componentes essenciais: bem-estar psicológico, emocional e social. Não se trata de ausência de doença nem de desempenho produtivo, e sim de equilíbrio entre essas três dimensões."
     },
     {
       "question": "Na consulta do adolescente com queixas emocionais e comportamentais, qual princípio orienta a leitura dos sintomas relatados pelo paciente e pelos cuidadores?",
@@ -24,7 +24,7 @@
         "Os sintomas devem ser lidos somente após exames laboratoriais completos"
       ],
       "correctIndex": 0,
-      "explanation": "A aula é explícita: os sintomas não podem ser considerados isoladamente, mas no contexto histórico, familiar e social. A consulta deve identificar sofrimento psíquico, situações de risco e aspectos subjetivos, ouvindo tanto o paciente quanto a família."
+      "explanation": "Os sintomas não podem ser considerados isoladamente, e sim dentro do contexto histórico, familiar e social. A consulta deve identificar sofrimento psíquico, situações de risco e aspectos subjetivos, ouvindo tanto o paciente quanto a família."
     },
     {
       "question": "A tabela do instrumento HEEADSSS mostrada associa cada letra da sigla a indagações sugeridas. Qual domínio é investigado pelo segundo 'E' da versão HEEADSSS?",
@@ -105,7 +105,7 @@
         "Embotamento afetivo e evitação de gatilhos"
       ],
       "correctIndex": 0,
-      "explanation": "Nos casos graves de depressão a aula cita alucinações auditivas e ideação suicida. Fuga de ideias e imprudência pertencem à mania; compulsões de verificação, ao TOC; embotamento e evitação, ao TEPT."
+      "explanation": "Nos casos graves de depressão surgem alucinações auditivas e ideação suicida. Fuga de ideias e imprudência pertencem à mania; compulsões de verificação, ao TOC; embotamento e evitação, ao TEPT."
     },
     {
       "question": "Como se diferenciam o transtorno bipolar tipo I e o tipo II na descrição apresentada?",
@@ -119,7 +119,7 @@
       "explanation": "No tipo I predomina o estado maníaco, com um ou mais episódios de mania — euforia, irritabilidade, aumento de energia, grandiosidade, fuga de ideias e condutas imprudentes nas esferas sexual e financeira. No tipo II predomina o estado depressivo, com um episódio hipomaníaco e um ou mais episódios depressivos."
     },
     {
-      "question": "No quadro de sintomas maníacos ou hipomaníacos exibido, qual manifestação é apontada como capaz de motivar erroneamente o diagnóstico de TDAH grave com má resposta ao tratamento?",
+      "question": "Entre os sintomas maníacos ou hipomaníacos do adolescente, qual manifestação pode motivar erroneamente o diagnóstico de TDAH grave com má resposta ao tratamento?",
       "options": [
         "A desatenção extrema que acompanha a elevação do humor",
         "A hipersexualidade sem qualquer violência sexual associada",
@@ -127,7 +127,7 @@
         "A irritabilidade extrema, grave e persistente do humor"
       ],
       "correctIndex": 0,
-      "explanation": "O slide lista, entre os sintomas maníacos/hipomaníacos, a desatenção extrema — e acrescenta entre parênteses que ela motiva o diagnóstico de TDAH grave com má resposta ao tratamento. É a pegadinha clássica: adolescente rotulado como TDAH refratário pode ter transtorno bipolar.",
+      "explanation": "Entre os sintomas maníacos/hipomaníacos figura a desatenção extrema, justamente a que motiva o diagnóstico equivocado de TDAH grave com má resposta ao tratamento. É a pegadinha clássica: adolescente rotulado como TDAH refratário pode ter transtorno bipolar.",
       "image": "pg20",
       "imageCaption": "Sintomas maníacos ou hipomaníacos no adolescente"
     },
@@ -140,7 +140,7 @@
         "APOE, da apolipoproteína E, e TPH2, da triptofano-hidroxilase"
       ],
       "correctIndex": 0,
-      "explanation": "A aula cita dois genes ligados ao risco aumentado de transtornos depressivos: o MAOA, responsável pelo funcionamento da monoaminoxidase, e o 5-HTT, transportador de serotonina. A etiologia, porém, é multifatorial, somando fatores ambientais e endócrinos — baixos níveis de T4, por exemplo, produzem manifestações clínicas de depressão."
+      "explanation": "Dois genes estão ligados ao risco aumentado de transtornos depressivos: o MAOA, responsável pelo funcionamento da monoaminoxidase, e o 5-HTT, transportador de serotonina. A etiologia, porém, é multifatorial, somando fatores ambientais e endócrinos — baixos níveis de T4, por exemplo, produzem manifestações clínicas de depressão."
     },
     {
       "question": "Qual é a conduta farmacológica descrita para os transtornos de humor no adolescente?",
@@ -165,7 +165,7 @@
       "explanation": "A ECT com sedação, em ambiente hospitalar, deve ser considerada nos casos depressivos graves e refratários. Nesses mesmos quadros graves também podem ser necessárias a associação de ISRS e a internação hospitalar para garantir a segurança do paciente."
     },
     {
-      "question": "Qual é a distinção conceitual entre medo e ansiedade apresentada na aula?",
+      "question": "Qual é a distinção conceitual entre medo e ansiedade?",
       "options": [
         "O medo surge diante de perigo real e iminente; a ansiedade, de ameaça futura",
         "O medo surge diante de ameaça imaginada; a ansiedade, de perigo real presente",
@@ -187,7 +187,7 @@
       "explanation": "O transtorno do pânico é definido por ataques de pânico recorrentes e inesperados, de ansiedade extrema, com palpitações, sensação de sufocação, tremores, dor no peito, tontura e medo de morrer — exatamente o quadro descrito. A ansiedade generalizada cursa com preocupação incontrolável e persistente sobre o futuro, não com crises súbitas."
     },
     {
-      "question": "Como o transtorno de estresse pós-traumático (TEPT) é caracterizado na aula?",
+      "question": "Como se caracteriza o transtorno de estresse pós-traumático (TEPT)?",
       "options": [
         "Resposta tardia a trauma catastrófico, revivido de forma recorrente",
         "Resposta imediata a estressor cotidiano, resolvida em poucos dias",
@@ -239,7 +239,7 @@
         "Temperamento fácil, inteligência preservada e boa rede de apoio"
       ],
       "correctIndex": 0,
-      "explanation": "A aula separa fatores de risco de fatores precipitantes. São precipitantes o uso de substâncias ilícitas ou medicamentos, o estresse psicológico, experiências traumáticas e a doença física grave. História familiar positiva de primeiro grau, violência e desnutrição intrauterina são fatores de risco."
+      "explanation": "Fatores de risco e fatores precipitantes de psicose são grupos distintos. São precipitantes o uso de substâncias ilícitas ou medicamentos, o estresse psicológico, experiências traumáticas e a doença física grave. História familiar positiva de primeiro grau, violência e desnutrição intrauterina são fatores de risco."
     },
     {
       "question": "Sobre o consumo de substâncias psicoativas na adolescência, qual afirmação está correta?",
@@ -264,7 +264,7 @@
       "explanation": "São sinais de transtorno por uso de nicotina: fumar nos primeiros 30 minutos ao despertar, fumar diariamente e de forma progressiva, e acordar à noite para fumar. O uso predispõe a sentimentos de solidão, dificuldade nas interações sociais e problemas de sono."
     },
     {
-      "question": "No slide sobre substâncias psicoativas mostrado, quais consequências são atribuídas especificamente aos INALANTES?",
+      "question": "Entre as substâncias psicoativas usadas na adolescência, quais consequências são atribuídas especificamente aos INALANTES?",
       "options": [
         "Cefaleia, náuseas, alucinações, danos neurológicos e morte súbita",
         "Náuseas, vômitos, ideação paranoide, taquicardia e hipertensão",
@@ -277,7 +277,7 @@
       "imageCaption": "Cannabis, estimulantes, alucinógenos e inalantes"
     },
     {
-      "question": "Segundo o slide sobre uso problemático de internet (UPI) exibido, o que define esse transtorno?",
+      "question": "O que define o uso problemático de internet (UPI)?",
       "options": [
         "Absorção excessiva em atividades on-line com comprometimento das áreas da vida",
         "Qualquer uso diário de telas por adolescentes acima de duas horas seguidas",
@@ -346,7 +346,7 @@
         "Tentativas anteriores não modificam o risco de novas tentativas futuras"
       ],
       "correctIndex": 0,
-      "explanation": "O slide destaca em vermelho que NEM TODOS TÊM DOENÇA PSIQUIÁTRICA: a etiologia é uma interação complexa e multifatorial de fatores biológicos, psicológicos e sociais. Tentativas anteriores são justamente o fator de risco isolado destacado, e otimismo, vínculos familiares e espiritualidade figuram entre os fatores positivos."
+      "explanation": "Nem todos os que apresentam ideação ou tentativa de suicídio têm doença psiquiátrica: a etiologia é uma interação complexa e multifatorial de fatores biológicos, psicológicos e sociais. Tentativas anteriores são justamente o fator de risco isolado destacado, e otimismo, vínculos familiares e espiritualidade figuram entre os fatores positivos."
     },
     {
       "question": "Sobre a epidemiologia dos transtornos de ansiedade em crianças e adolescentes, qual afirmativa está correta?",
@@ -481,7 +481,7 @@
       "explanation": "Na depressão ocorre diminuição na quantidade de serotonina e endorfina: a enzima e a bomba de recaptação continuam funcionando, mas há redução na captação de serotonina, deixando o sistema com menos neurotransmissores. Nos estudos de imagem, o córtex pré-frontal ventral mostra atividade diminuída, e o eixo hipotálamo-hipófise-suprarrenal encontra-se hiperativo em cerca de metade dos pacientes."
     },
     {
-      "question": "No quadro do slide sobre os transtornos de ansiedade, qual manifestação pertence ao grupo das FÍSICAS?",
+      "question": "Entre as manifestações dos transtornos de ansiedade, qual pertence ao grupo das FÍSICAS?",
       "options": [
         "Palpitações, aperto no peito, tremores e formigamento",
         "Preocupação extrema, insegurança e baixa autoestima",

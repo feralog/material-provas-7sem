@@ -1,0 +1,398 @@
+{
+  "titulo": "Introdução à Audiologia",
+  "eyebrow": "Otorrinolaringologia · Audiologia",
+  "subtitulo": "Do som ao audiograma: interpretar a avaliação auditiva",
+  "intro": "Física do som e decibéis, audiometria tonal (tipo, grau e configuração), audiometria vocal, imitanciometria com as curvas timpanométricas e reflexo estapediano, além de PEATE, emissões otoacústicas, eletrococleografia e triagem auditiva neonatal.",
+  "questoes": [
+    {
+      "question": "Do ponto de vista físico, o som é definido como:",
+      "options": [
+        "energia mecânica que se propaga em ondas de pressão",
+        "energia elétrica que se propaga em ondas contínuas",
+        "energia térmica que se propaga em meio compressível",
+        "energia luminosa que se propaga em ondas senoidais"
+      ],
+      "correctIndex": 0,
+      "explanation": "O som nasce da aplicação de uma força sobre uma fonte sonora, que passa a vibrar e transmite essa vibração ao meio. A propagação ocorre como ondas longitudinais de compressão e rarefação, que geram variações de pressão. Por isso exige um meio compressível ou elástico, como ar ou água, e não existe no vácuo."
+    },
+    {
+      "question": "A faixa média de frequências audíveis em adultos jovens e a região de maior sensibilidade auditiva são, respectivamente:",
+      "options": [
+        "20 a 20.000 Hz, com maior sensibilidade entre 2.000 e 5.000 Hz",
+        "20 a 20.000 Hz, com maior sensibilidade entre 125 e 500 Hz",
+        "125 a 8.000 Hz, com maior sensibilidade entre 6.000 e 8.000 Hz",
+        "125 a 8.000 Hz, com maior sensibilidade entre 250 e 1.000 Hz"
+      ],
+      "correctIndex": 0,
+      "explanation": "A audição humana abrange aproximadamente 20 a 20.000 Hz, com perda progressiva das frequências altas ao longo da vida. A sensibilidade máxima concentra-se entre 2.000 e 5.000 Hz, faixa em que se situam os formantes que dão inteligibilidade à fala. A faixa de 125 a 8.000 Hz é a testada no audiograma, e não o limite da audição."
+    },
+    {
+      "question": "A unidade empregada para registrar os limiares no audiograma é:",
+      "options": [
+        "dB NA, referida ao limiar médio de audição normal",
+        "dB NPS, referida à pressão fixa de 20 micropascal",
+        "dB NS, referida ao limiar individual do paciente",
+        "Bel, referido à razão entre duas potências sonoras"
+      ],
+      "correctIndex": 0,
+      "explanation": "O decibel nível de audição (dB NA ou dB HL) toma como zero o limiar médio de indivíduos normo-ouvintes em cada frequência, o que permite ler o audiograma diretamente como desvio da normalidade. O dB NPS usa referência física fixa de 20 µPa, e o dB NS expressa quanto o estímulo está acima do limiar daquele paciente."
+    },
+    {
+      "question": "A pesquisa por via óssea diferencia-se da via aérea porque o estímulo:",
+      "options": [
+        "atinge a cóclea sem passar pela orelha externa e média",
+        "atinge a cóclea após percorrer todo o conduto auditivo",
+        "estimula apenas as células ciliadas internas da cóclea",
+        "avalia somente a mobilidade do sistema tímpano-ossicular"
+      ],
+      "correctIndex": 0,
+      "explanation": "O vibrador ósseo, posicionado na mastoide ou na fronte, faz o crânio vibrar e movimenta diretamente os líquidos cocleares, contornando orelha externa e média. Por isso a via óssea traduz a reserva coclear, enquanto a via aérea depende de todo o trajeto condutivo. A comparação entre as duas é o que define o tipo da perda."
+    },
+    {
+      "question": "O limiar auditivo tonal corresponde à menor intensidade detectada em:",
+      "options": [
+        "pelo menos 50% das apresentações do estímulo",
+        "pelo menos 25% das apresentações do estímulo",
+        "100% das apresentações do estímulo testado",
+        "pelo menos 75% das apresentações do estímulo"
+      ],
+      "correctIndex": 0,
+      "explanation": "A definição de limiar liminar exige resposta em pelo menos metade das apresentações naquela frequência, critério que equilibra sensibilidade e reprodutibilidade. Abaixo desse valor a resposta é considerada acaso; exigir 100% superestimaria o limiar e pioraria falsamente o audiograma."
+    },
+    {
+      "question": "No registro de via aérea sem mascaramento, os símbolos da orelha direita e da orelha esquerda são, respectivamente:",
+      "options": [
+        "círculo em vermelho e xis em azul",
+        "xis em vermelho e círculo em azul",
+        "triângulo vermelho e quadrado azul",
+        "colchete vermelho e colchete azul"
+      ],
+      "correctIndex": 0,
+      "explanation": "A convenção fixa vermelho para a orelha direita e azul para a esquerda. Sem mascaramento, a via aérea usa círculo à direita e xis à esquerda; com mascaramento passa a triângulo e quadrado. Os colchetes pertencem à via óssea mascarada por mastoide.",
+      "image": "pg22",
+      "imageCaption": "Símbolos audiométricos para registro dos limiares"
+    },
+    {
+      "question": "A atenuação interaural aproximada do fone supra-aural e da via óssea corresponde a:",
+      "options": [
+        "cerca de 40 dB no fone supra-aural e cerca de 0 dB na via óssea",
+        "cerca de 0 dB no fone supra-aural e cerca de 40 dB na via óssea",
+        "cerca de 60 dB no fone supra-aural e cerca de 40 dB na via óssea",
+        "cerca de 10 dB no fone supra-aural e cerca de 10 dB na via óssea"
+      ],
+      "correctIndex": 0,
+      "explanation": "Atenuação interaural é a perda de intensidade que o som sofre ao atravessar o crânio até a cóclea oposta. No fone supra-aural gira em torno de 40 dB, e no fone de inserção sobe para 60 dB ou mais. Na via óssea é praticamente nula, motivo pelo qual o mascaramento é quase sempre necessário nessa via."
+    },
+    {
+      "question": "Um tom apresentado a 90 dB por fone supra-aural alcança a cóclea contralateral com intensidade aproximada de:",
+      "options": [
+        "50 dB, após atenuação interaural de 40 dB",
+        "90 dB, sem qualquer atenuação interaural",
+        "30 dB, após atenuação interaural de 60 dB",
+        "70 dB, após atenuação interaural de 20 dB"
+      ],
+      "correctIndex": 0,
+      "explanation": "Com atenuação interaural de 40 dB para fone supra-aural, um estímulo de 90 dB chega à cóclea oposta com cerca de 50 dB por condução translabiríntica. Se a orelha não testada ouvir melhor que isso, ela responde no lugar da orelha em teste e produz a curva-sombra, o que obriga ao mascaramento.",
+      "image": "pg25",
+      "imageCaption": "Condução translabiríntica e atenuação interaural"
+    },
+    {
+      "question": "O mascaramento da orelha não testada está indicado quando:",
+      "options": [
+        "há gap aéreo-ósseo ou grande diferença entre as orelhas",
+        "há simetria completa entre os limiares das duas orelhas",
+        "o paciente apresenta limiares normais em todas as frequências",
+        "a curva timpanométrica é do tipo A nas duas orelhas"
+      ],
+      "correctIndex": 0,
+      "explanation": "Mascara-se quando existe risco de escuta cruzada: diferença entre as vias aéreas igual ou maior que a atenuação interaural, ou presença de gap aéreo-ósseo. O ruído mantém a orelha melhor ocupada e garante que o limiar registrado pertença de fato à orelha em teste, evitando a curva-sombra."
+    },
+    {
+      "question": "A perda auditiva condutiva é definida por:",
+      "options": [
+        "via óssea até 15 dB, via aérea acima de 25 dB e gap ≥ 15 dB",
+        "via óssea acima de 15 dB, via aérea acima de 25 dB e gap ≤ 10 dB",
+        "via óssea acima de 15 dB, via aérea acima de 25 dB e gap > 10 dB",
+        "via óssea acima de 25 dB, via aérea até 25 dB e gap ausente"
+      ],
+      "correctIndex": 0,
+      "explanation": "Na perda condutiva a cóclea está preservada, de modo que a via óssea permanece em 15 dB NA ou menos, enquanto a via aérea ultrapassa 25 dB NA. A distância entre as duas, o gap aéreo-ósseo, é de pelo menos 15 dB e localiza o problema na orelha externa ou média.",
+      "image": "pg29",
+      "imageCaption": "Critérios audiométricos para o tipo de perda auditiva"
+    },
+    {
+      "question": "Limiares de via óssea acima de 15 dB e de via aérea acima de 25 dB, com gap de até 10 dB, caracterizam perda:",
+      "options": [
+        "neurossensorial, com comprometimento coclear",
+        "condutiva, com comprometimento de orelha média",
+        "mista, com dois componentes associados",
+        "unilateral, com apenas uma orelha afetada"
+      ],
+      "correctIndex": 0,
+      "explanation": "Quando as duas vias caem juntas e praticamente se sobrepõem, o gap é desprezível e o defeito está na cóclea ou na via neural. O som chega normalmente até a orelha interna, mas não é transduzido de forma adequada. Esse é o padrão da presbiacusia, da perda induzida por ruído e da ototoxicidade."
+    },
+    {
+      "question": "A perda auditiva mista caracteriza-se por:",
+      "options": [
+        "via óssea e via aérea rebaixadas, com gap maior que 10 dB",
+        "via óssea normal e via aérea rebaixada, com gap de 15 dB",
+        "via óssea e via aérea rebaixadas, com gap de até 10 dB",
+        "via óssea rebaixada e via aérea normal, sem gap presente"
+      ],
+      "correctIndex": 0,
+      "explanation": "Na perda mista somam-se um componente coclear e um condutivo: a via óssea já está acima de 15 dB NA, mostrando dano na orelha interna, e a via aérea cai ainda mais, abrindo gap superior a 10 dB. Otosclerose avançada e otite média crônica de longa data são exemplos típicos."
+    },
+    {
+      "question": "O grau da perda auditiva é obtido pela média dos limiares de:",
+      "options": [
+        "via aérea em 500, 1.000, 2.000 e 4.000 Hz",
+        "via óssea em 500, 1.000, 2.000 e 4.000 Hz",
+        "via aérea em 125, 250, 500 e 1.000 Hz",
+        "via aérea em 500, 1.000 e 2.000 Hz apenas"
+      ],
+      "correctIndex": 0,
+      "explanation": "O grau responde a pergunta \"quanto se perdeu\" e usa a média quadritonal da via aérea em 500 Hz, 1 kHz, 2 kHz e 4 kHz, faixa que concentra a energia da fala. A via óssea entra no cálculo do tipo, não do grau. A média tritonal, sem 4 kHz, é usada para conferir o limiar de reconhecimento de fala.",
+      "image": "pg35",
+      "imageCaption": "Classificação do grau da perda auditiva (OMS, 2021)"
+    },
+    {
+      "question": "Média quadritonal de via aérea de 45 dB corresponde a perda auditiva de grau:",
+      "options": [
+        "moderado — média de 35 a menos de 50 dB",
+        "leve — média de 20 a menos de 35 dB",
+        "moderadamente severo — média de 50 a 65 dB",
+        "severo — média de 65 a menos de 80 dB"
+      ],
+      "correctIndex": 0,
+      "explanation": "A faixa de 35 a menos de 50 dB define o grau moderado, no qual há dificuldade para ouvir o que é falado e clara dificuldade de participar de conversas em ambiente ruidoso. Uma média de 45 dB fica dentro dessa faixa e costuma já indicar avaliação para amplificação."
+    },
+    {
+      "question": "Média quadritonal de via aérea de 85 dB classifica a perda auditiva como de grau:",
+      "options": [
+        "profundo — média de 80 a menos de 95 dB",
+        "severo — média de 65 a menos de 80 dB",
+        "completo — média igual ou maior que 95 dB",
+        "moderadamente severo — média de 50 a 65 dB"
+      ],
+      "correctIndex": 0,
+      "explanation": "A faixa de 80 a menos de 95 dB corresponde ao grau profundo, em que há dificuldade extrema mesmo para voz em forte intensidade. Acima de 95 dB a classificação passa a perda completa ou surdez, situação em que a fala não pode ser ouvida por via acústica convencional."
+    },
+    {
+      "question": "A configuração audiométrica descendente acentuada corresponde a:",
+      "options": [
+        "piora de 15 a 20 dB por oitava rumo às frequências altas",
+        "piora de 5 a 10 dB por oitava rumo às frequências altas",
+        "melhora de 5 dB ou mais por oitava rumo às altas",
+        "variação de até 5 dB por oitava entre as frequências"
+      ],
+      "correctIndex": 0,
+      "explanation": "A configuração descreve o desenho da curva ao longo das frequências. A queda de 15 a 20 dB por oitava em direção aos agudos define a descendente acentuada; de 5 a 10 dB por oitava a descendente leve; e queda igual ou maior que 25 dB por oitava a descendente em rampa. Variação de até 5 dB por oitava é curva horizontal."
+    },
+    {
+      "question": "O limiar de reconhecimento de fala (SRT) corresponde à menor intensidade em que o paciente:",
+      "options": [
+        "reconhece corretamente 50% das trissílabas apresentadas",
+        "reconhece corretamente 50% dos monossílabos apresentados",
+        "detecta a presença da fala, sem precisar reconhecê-la",
+        "repete corretamente 100% das trissílabas apresentadas"
+      ],
+      "correctIndex": 0,
+      "explanation": "O SRT usa palavras trissílabas, mais redundantes e portanto mais fáceis de reconhecer, e adota o critério de 50% de acerto. Detectar a fala sem compreendê-la define o limiar de detecção de voz, e a lista de monossílabos em nível supraliminar corresponde ao índice percentual de reconhecimento."
+    },
+    {
+      "question": "Espera-se que o SRT guarde com a média tritonal da via aérea uma diferença de:",
+      "options": [
+        "até 5 a 10 dB, servindo como checagem da audiometria tonal",
+        "até 30 a 40 dB, servindo como checagem da audiometria tonal",
+        "no mínimo 20 dB, indicando componente retrococlear associado",
+        "exatamente 0 dB, sendo obrigatória a coincidência dos valores"
+      ],
+      "correctIndex": 0,
+      "explanation": "A média tritonal de 500 Hz, 1 kHz e 2 kHz deve aproximar-se do SRT dentro de 5 a 10 dB, e essa concordância valida a audiometria tonal. SRT muito melhor que a média sugere limiares tonais superestimados, como na simulação; SRT muito pior aponta dificuldade de reconhecimento de origem retrococlear."
+    },
+    {
+      "question": "O índice percentual de reconhecimento de fala (IPRF) é pesquisado com:",
+      "options": [
+        "25 monossílabos, de 30 a 40 dB acima do SRT",
+        "25 trissílabos, de 30 a 40 dB acima do SRT",
+        "25 monossílabos, exatamente no nível do SRT",
+        "25 monossílabos, de 30 a 40 dB abaixo do SRT"
+      ],
+      "correctIndex": 0,
+      "explanation": "O IPRF responde quanto da fala o paciente reconhece quando ela já está confortavelmente audível. Por isso emprega lista de 25 monossílabos, sem redundância de contexto, apresentada em nível supraliminar de 30 a 40 dB acima do SRT. O resultado é expresso em porcentagem de acertos."
+    },
+    {
+      "question": "IPRF de 40% obtido a 95 dB, em orelha com perda neurossensorial severa, indica:",
+      "options": [
+        "reconhecimento de fala reduzido, típico de lesão coclear",
+        "reconhecimento de fala preservado, típico de perda condutiva",
+        "reconhecimento de fala normal, sem repercussão funcional",
+        "limiares tonais superestimados, sugerindo simulação"
+      ],
+      "correctIndex": 0,
+      "explanation": "Na lesão coclear a distorção do sinal persiste mesmo com o som amplificado, e o índice cai proporcionalmente à gravidade da perda. Quedas graves ou desproporcionais ao grau tonal levantam suspeita retrococlear e justificam PEATE. Na perda condutiva pura, ao contrário, basta aumentar a intensidade para o índice normalizar.",
+      "image": "pg52",
+      "imageCaption": "Perda neurossensorial severa com IPRF de 40%"
+    },
+    {
+      "question": "Na perda auditiva puramente condutiva, o IPRF tende a ser:",
+      "options": [
+        "normal, pois a cóclea está preservada",
+        "muito reduzido, por lesão retrococlear",
+        "levemente reduzido, por lesão coclear",
+        "ausente, por falha do nervo auditivo"
+      ],
+      "correctIndex": 0,
+      "explanation": "A perda condutiva atenua o sinal, mas não o distorce: uma vez vencida a barreira de intensidade, a cóclea íntegra transduz a fala normalmente e o índice se aproxima de 100%. Redução leve aponta lesão coclear leve a moderada, e queda acentuada e desproporcional sugere comprometimento retrococlear."
+    },
+    {
+      "question": "A imitanciometria é um exame objetivo que avalia:",
+      "options": [
+        "mobilidade do sistema tímpano-ossicular e reflexo estapediano",
+        "função das células ciliadas externas e do nervo coclear",
+        "sincronia neural da via auditiva até o tronco encefálico",
+        "limiares tonais por via aérea e por via óssea combinadas"
+      ],
+      "correctIndex": 0,
+      "explanation": "A imitanciometria reúne timpanometria e pesquisa de reflexos acústicos, e não depende da resposta voluntária do paciente. A timpanometria mede a complacência da membrana timpânica e estima a pressão da orelha média, identificando disfunção tubária, otite média, perfuração e otosclerose."
+    },
+    {
+      "question": "A curva timpanométrica tipo A apresenta:",
+      "options": [
+        "pico entre 0 e -100 daPa, com volume de 0,30 a 1,65 ml",
+        "pico abaixo de -100 daPa, com volume bastante variável",
+        "traçado plano, sem qualquer ponto de máxima mobilidade",
+        "pico em 0 daPa, com volume sempre acima de 2,00 ml"
+      ],
+      "correctIndex": 0,
+      "explanation": "A curva A traduz mobilidade normal do sistema tímpano-ossicular, com pico de admitância entre 0 e -100 daPa e volume de 0,30 a 1,65 ml. O pico ocorre quando a pressão no meato se iguala à da orelha média, condição de máxima transmissão sonora.",
+      "image": "pg57",
+      "imageCaption": "Curvas timpanométricas A, As, Ad, B e C"
+    },
+    {
+      "question": "Pico próximo de 0 daPa com complacência reduzida caracteriza a curva:",
+      "options": [
+        "As/Ar, compatível com otosclerose ou timpanoesclerose",
+        "Ad, compatível com desarticulação da cadeia ossicular",
+        "B, compatível com efusão na cavidade da orelha média",
+        "C, compatível com disfunção da tuba auditiva instalada"
+      ],
+      "correctIndex": 0,
+      "explanation": "A pressão continua normal, mas o sistema está rígido e se movimenta pouco, gerando pico baixo. Esse padrão aparece na otosclerose inicial, na timpanoesclerose e na fixação ossicular. A regra prática é direta: sistema rígido movimenta pouco e produz curva baixa."
+    },
+    {
+      "question": "A curva Ad, com complacência aumentada, sugere:",
+      "options": [
+        "desarticulação ossicular ou membrana timpânica flácida",
+        "fixação ossicular ou rigidez do sistema tímpano-ossicular",
+        "efusão na orelha média ou perfuração timpânica ampla",
+        "retração timpânica por pressão negativa persistente"
+      ],
+      "correctIndex": 0,
+      "explanation": "Na curva Ad o pico permanece em torno de 0 daPa, porém muito alto, indicando hipermobilidade. As causas clássicas são desarticulação da cadeia ossicular, membrana atrófica ou flácida e cicatriz fina após perfuração. Sistema frouxo movimenta demais e produz curva alta."
+    },
+    {
+      "question": "Traçado plano, sem pico de complacência, corresponde à curva:",
+      "options": [
+        "tipo B, com membrana timpânica sem mobilidade adequada",
+        "tipo C, com membrana timpânica retraída por pressão negativa",
+        "tipo Ad, com membrana timpânica excessivamente móvel",
+        "tipo As, com membrana timpânica de mobilidade reduzida"
+      ],
+      "correctIndex": 0,
+      "explanation": "A curva B não exibe ponto de máxima mobilidade porque a membrana praticamente não responde à variação de pressão no meato. É o achado da otite média com efusão quando o volume equivalente é normal, e da perfuração timpânica quando o volume registrado é muito elevado."
+    },
+    {
+      "question": "Pico timpanométrico deslocado para pressões inferiores a -100 daPa indica:",
+      "options": [
+        "curva tipo C, associada a disfunção da tuba auditiva",
+        "curva tipo A, associada a orelha média inteiramente normal",
+        "curva tipo B, associada a efusão na cavidade timpânica",
+        "curva tipo Ad, associada a hipermobilidade timpânica"
+      ],
+      "correctIndex": 0,
+      "explanation": "Pressão negativa acentuada na orelha média desloca o pico para a esquerda do traçado e configura a curva C. Traduz tímpano retraído por disfunção tubária, fase inicial ou de resolução de otite média e quadros inflamatórios recentes de vias aéreas superiores."
+    },
+    {
+      "question": "No arco do reflexo acústico estapediano, as vias aferente e eferente são, respectivamente:",
+      "options": [
+        "nervo vestibulococlear (VIII) e nervo facial (VII)",
+        "nervo facial (VII) e nervo vestibulococlear (VIII)",
+        "nervo trigêmeo (V) e nervo vestibulococlear (VIII)",
+        "nervo vestibulococlear (VIII) e nervo trigêmeo (V)"
+      ],
+      "correctIndex": 0,
+      "explanation": "O estímulo intenso, cerca de 70 a 100 dB acima do limiar, entra pelo VIII par até os núcleos cocleares e o complexo olivar superior, e a resposta sai pelo VII par até o músculo estapédio. Como as projeções no tronco são cruzadas, estimular uma orelha contrai os dois estapédios."
+    },
+    {
+      "question": "As emissões otoacústicas avaliam principalmente:",
+      "options": [
+        "a função das células ciliadas externas da cóclea",
+        "a função das células ciliadas internas da cóclea",
+        "a integridade do nervo auditivo e do tronco encefálico",
+        "a pressão e a mobilidade da orelha média avaliadas"
+      ],
+      "correctIndex": 0,
+      "explanation": "As emissões são sons de baixa intensidade captados no meato acústico externo e produzidos pela contratilidade ativa das células ciliadas externas. Sua ausência pode significar lesão coclear, mas também bloqueio de orelha externa ou média, já que o estímulo precisa entrar e a emissão precisa retornar até a sonda."
+    },
+    {
+      "question": "Resultado de falha (refer) na triagem auditiva neonatal significa que:",
+      "options": [
+        "há necessidade de reteste e investigação audiológica",
+        "há diagnóstico confirmado de perda auditiva no bebê",
+        "não há qualquer alteração e a alta pode ser dada",
+        "a criança deve ser encaminhada direto para implante"
+      ],
+      "correctIndex": 0,
+      "explanation": "A triagem neonatal usa emissões otoacústicas e, em recém-nascidos de risco, o PEATE automático, e apenas separa quem passa de quem precisa seguir investigando. Falha não equivale a diagnóstico: vérnix, efusão residual e agitação produzem resultados falso-positivos, e o diagnóstico exige avaliação audiológica completa."
+    },
+    {
+      "question": "O potencial evocado auditivo de tronco encefálico (PEATE) é um exame que:",
+      "options": [
+        "avalia a sincronia neural da via auditiva até o tronco",
+        "avalia a mobilidade do sistema tímpano-ossicular apenas",
+        "depende da atenção e da colaboração ativa do paciente",
+        "mede a complacência da membrana timpânica sob pressão"
+      ],
+      "correctIndex": 0,
+      "explanation": "O PEATE registra por eletrodos de superfície potenciais de curta latência gerados após clicks ou tone burst, com ondas I, III e V como referência. É objetivo e independe da atenção, o que permite estimar limiares eletrofisiológicos e detectar lesões retrococleares. Considera-se confiável apenas quando duas ou mais gravações reproduzem ondas semelhantes."
+    },
+    {
+      "question": "A eletrococleografia tem como principal indicação clínica:",
+      "options": [
+        "investigação de hidropsia endolinfática na doença de Ménière",
+        "investigação de schwannoma vestibular no ângulo pontocerebelar",
+        "triagem auditiva de recém-nascidos em alojamento conjunto",
+        "avaliação da pressão da orelha média na otite com efusão"
+      ],
+      "correctIndex": 0,
+      "explanation": "O exame registra o microfonismo coclear das células ciliadas externas, o potencial de somação das internas e o potencial de ação do início do nervo auditivo. O aumento da relação SP/AP é o marcador de hidropsia endolinfática, achado que apoia o diagnóstico de doença de Ménière."
+    },
+    {
+      "question": "Orelha direita com limiares de via aérea em torno de 55 dB e de via óssea em torno de 10 dB configura perda:",
+      "options": [
+        "condutiva, pelo gap aéreo-ósseo amplo com via óssea normal",
+        "neurossensorial, pelo rebaixamento igual das duas vias",
+        "mista, pelo rebaixamento das duas vias com gap residual",
+        "simulada, pela incompatibilidade entre as duas vias"
+      ],
+      "correctIndex": 0,
+      "explanation": "A via óssea preservada em torno de 10 dB indica cóclea íntegra, e a via aérea em 55 dB abre gap de cerca de 40 dB, muito acima dos 15 dB exigidos para o diagnóstico. Com média quadritonal de 52 dB, o grau é moderadamente severo. O IPRF nesse padrão costuma permanecer próximo de 100%.",
+      "image": "pg27",
+      "imageCaption": "Audiograma com gap aéreo-ósseo amplo à direita"
+    },
+    {
+      "question": "Orelha direita com média quadritonal de 48 dB, curva em queda para os agudos e vias aérea e óssea sobrepostas caracteriza perda:",
+      "options": [
+        "neurossensorial de grau moderado, descendente acentuada",
+        "condutiva de grau moderado, com configuração em U",
+        "mista de grau severo, com configuração horizontal",
+        "neurossensorial de grau severo, descendente leve"
+      ],
+      "correctIndex": 0,
+      "explanation": "A ausência de gap significativo entre as vias aponta origem coclear, e a média de 48 dB situa-se na faixa de 35 a menos de 50 dB, correspondente ao grau moderado. A queda progressiva de cerca de 15 a 20 dB por oitava em direção aos agudos define a configuração descendente acentuada.",
+      "image": "pg82",
+      "imageCaption": "Perda neurossensorial moderada de configuração descendente"
+    }
+  ]
+}

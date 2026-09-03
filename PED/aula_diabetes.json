@@ -17,7 +17,12 @@
     },
     {
       "question": "Qual é o ponto de corte da glicemia plasmática de jejum que estabelece o diagnóstico de diabetes mellitus?",
-      "options": ["≥ 126 mg/dL", "≥ 100 mg/dL", "≥ 140 mg/dL", "≥ 200 mg/dL"],
+      "options": [
+        "≥ 126 mg/dL",
+        "≥ 100 mg/dL",
+        "≥ 140 mg/dL",
+        "≥ 200 mg/dL"
+      ],
       "correctIndex": 0,
       "explanation": "Glicemia de jejum de no mínimo 8 horas ≥ 126 mg/dL é critério diagnóstico de diabetes. Valores entre 100 e 125 mg/dL caracterizam glicemia de jejum alterada (pré-diabetes) e abaixo de 100 mg/dL, normoglicemia. O corte de 200 mg/dL vale para a glicemia ao acaso e para a 2ª hora do TOTG."
     },
@@ -58,9 +63,14 @@
     },
     {
       "question": "Qual faixa de β-hidroxibutirato sanguíneo é considerada cetonemia importante, sugestiva de cetoacidose diabética quando avaliada junto de pH e bicarbonato?",
-      "options": ["≥ 3,0 mmol/L", "≥ 0,6 mmol/L", "≥ 1,5 mmol/L", "≥ 0,3 mmol/L"],
+      "options": [
+        "≥ 3,0 mmol/L",
+        "≥ 0,6 mmol/L",
+        "≥ 1,5 mmol/L",
+        "≥ 0,3 mmol/L"
+      ],
       "correctIndex": 0,
-      "explanation": "A escala usada na aula é: < 0,6 mmol/L normal; 0,6–1,5 cetonemia leve; 1,5–2,9 cetonemia moderada, com maior risco de progressão; e ≥ 3,0 mmol/L cetonemia importante, que sugere CAD e deve ser interpretada em conjunto com pH, bicarbonato e quadro clínico."
+      "explanation": "A escala de β-hidroxibutirato sanguíneo é: < 0,6 mmol/L normal; 0,6–1,5 cetonemia leve; 1,5–2,9 cetonemia moderada, com maior risco de progressão; e ≥ 3,0 mmol/L cetonemia importante, que sugere CAD e deve ser interpretada em conjunto com pH, bicarbonato e quadro clínico."
     },
     {
       "question": "Adolescente com DM1 e vômitos apresenta β-hidroxibutirato capilar de 2,0 mmol/L. A que categoria esse valor corresponde?",
@@ -87,7 +97,7 @@
       "imageCaption": "Fisiopatologia da produção de corpos cetônicos no diabetes mellitus"
     },
     {
-      "question": "Quais achados laboratoriais são apontados como típicos da cetoacidose diabética no handout da aula?",
+      "question": "Quais achados laboratoriais são típicos da cetoacidose diabética?",
       "options": [
         "Glicemia acima de 250 mg/dL e pH plasmático abaixo de 7,3",
         "Glicemia acima de 140 mg/dL e pH plasmático abaixo de 7,4",

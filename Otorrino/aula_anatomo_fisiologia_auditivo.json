@@ -1,0 +1,354 @@
+{
+  "titulo": "Anátomo-Fisiologia do Sistema Auditivo",
+  "eyebrow": "Otorrinolaringologia · Anatomia e Fisiologia",
+  "subtitulo": "Do pavilhão ao córtex temporal: como o som vira impulso nervoso",
+  "intro": "Anatomia das orelhas externa, média e interna, condução aérea e óssea do som, fisiologia coclear (rampas, onda viajante, tonotopia), transdução mecanoelétrica no órgão de Corti e o trajeto da via auditiva central.",
+  "questoes": [
+    {
+      "question": "O lóbulo é a única porção do pavilhão auricular que não possui esqueleto cartilaginoso. Qual é a sua composição?",
+      "options": [
+        "Tecido adiposo, tecido fibroso e pele, sem cartilagem",
+        "Cartilagem elástica fina revestida apenas por pele",
+        "Cartilagem hialina envolvida por pericôndrio espesso",
+        "Osso compacto delgado recoberto por periósteo e pele"
+      ],
+      "correctIndex": 0,
+      "explanation": "O arcabouço do pavilhão é de cartilagem elástica revestida por pele, e é ela que desenha hélice, anti-hélice, trago, anti-trago e concha. O lóbulo foge dessa regra: contém apenas tecido adiposo, tecido fibroso e pele, o que explica sua mobilidade e o fato de ser o local escolhido para perfurações."
+    },
+    {
+      "question": "O formato assimétrico e irregular do pavilhão auricular é determinante para qual função auditiva?",
+      "options": [
+        "Localizar a direção de origem da fonte sonora",
+        "Amplificar seletivamente as baixas frequências",
+        "Equalizar a pressão entre orelha média e faringe",
+        "Converter a vibração mecânica em sinal elétrico"
+      ],
+      "correctIndex": 0,
+      "explanation": "As reentrâncias assimétricas do pavilhão filtram o som de modo diferente conforme ele venha de cima, de baixo, da frente ou de trás, e é essa diferença que permite ao cérebro inferir a direção da fonte. A segunda função do pavilhão é servir de funil coletor, concentrando as ondas da concha para o meato acústico externo."
+    },
+    {
+      "question": "O conduto auditivo externo tem trajeto sinuoso, em forma de S. Qual é a principal vantagem funcional dessa tortuosidade?",
+      "options": [
+        "Proteger a membrana timpânica de agressões externas",
+        "Ampliar a superfície de absorção das ondas sonoras",
+        "Drenar o muco produzido pela mucosa da orelha média",
+        "Aumentar a rigidez da cadeia ossicular na condução"
+      ],
+      "correctIndex": 0,
+      "explanation": "O canal tortuoso funciona como barreira mecânica: corpos estranhos e agentes externos esbarram nas curvas antes de alcançar a membrana timpânica. Some-se a isso o cerume, produzido por glândulas da pele do próprio conduto, que constitui a primeira barreira química de proteção. Por causa dessa curvatura é que se traciona o pavilhão para retificar o canal na otoscopia."
+    },
+    {
+      "question": "O epitélio que reveste a camada externa da membrana timpânica tem a propriedade singular de migração lateral. Qual é a consequência funcional disso?",
+      "options": [
+        "Autolimpeza, com expulsão de queratina e detritos",
+        "Regeneração contínua da camada mucosa mais interna",
+        "Aderência firme do cabo do martelo à parte tensa",
+        "Manutenção da pressão negativa dentro da caixa"
+      ],
+      "correctIndex": 0,
+      "explanation": "As células do epitélio estratificado que cobre a face externa da membrana timpânica migram lateralmente, empurrando queratina descamada e detritos em direção à saída do conduto. É um mecanismo de autolimpeza que dispensa qualquer manobra de higiene interna do canal. Essa região é ainda muito sensível à dor, inervada pelo auriculotemporal e pelo ramo auricular do vago."
+    },
+    {
+      "question": "Qual é a sequência correta de transmissão da vibração pela cadeia ossicular?",
+      "options": [
+        "Martelo, bigorna e estribo, até a janela oval",
+        "Estribo, bigorna e martelo, até a janela oval",
+        "Bigorna, martelo e estribo, até a janela redonda",
+        "Martelo, estribo e bigorna, até a janela redonda"
+      ],
+      "correctIndex": 0,
+      "explanation": "Os três ossículos ficam suspensos por ligamentos na caixa timpânica e articulados entre si. A membrana timpânica move o martelo, que move a bigorna, que move o estribo; a platina do estribo se encaixa na janela oval e transfere a energia para a perilinfa da orelha interna."
+    },
+    {
+      "question": "Observando a cavidade da orelha média, qual ossículo está acoplado diretamente à membrana timpânica, conferindo-lhe o formato cônico?",
+      "options": [
+        "O martelo, cujo cabo está imerso na membrana",
+        "O estribo, cuja platina se apoia na membrana",
+        "A bigorna, cujo ramo longo cruza a membrana",
+        "O estapédio, cujo tendão tensiona a membrana"
+      ],
+      "correctIndex": 0,
+      "explanation": "O cabo do martelo está inserido na camada fibroelástica intermediária da membrana timpânica e traciona seu centro para dentro, dando ao tímpano a forma de cone com o umbo no ápice. Essa geometria não é detalhe estético: melhora a captação e a transferência da vibração para a cadeia ossicular.",
+      "image": "pg04",
+      "imageCaption": "Cavidade da orelha média com a cadeia ossicular"
+    },
+    {
+      "question": "O estribo, menor osso do corpo humano, transmite a vibração para a orelha interna apoiando sua platina:",
+      "options": [
+        "na janela oval, também chamada janela do vestíbulo",
+        "na janela redonda, também chamada janela coclear",
+        "no helicotrema, no ápice ósseo do canal coclear",
+        "no modíolo, eixo ósseo central em torno da cóclea"
+      ],
+      "correctIndex": 0,
+      "explanation": "A platina do estribo se encaixa na janela oval, ou janela do vestíbulo, que separa a caixa timpânica da rampa vestibular. Cada movimento de pistão da platina gera uma onda de pressão na perilinfa. A janela redonda é a outra abertura entre orelha média e interna, mas nela não se apoia ossículo algum."
+    },
+    {
+      "question": "Diante de sons de forte intensidade, os músculos estapédio e tensor do tímpano se contraem com que finalidade?",
+      "options": [
+        "Enrijecer a cadeia ossicular e proteger a orelha interna",
+        "Aumentar a excursão ossicular e amplificar sons fracos",
+        "Abrir a tuba auditiva e equalizar a pressão timpânica",
+        "Drenar a secreção mucosa acumulada na caixa timpânica"
+      ],
+      "correctIndex": 0,
+      "explanation": "A contração reflexa desses dois músculos aumenta a rigidez do sistema tímpano-ossicular e reduz a quantidade de energia transmitida à cóclea. É um mecanismo de proteção contra vibrações excessivas, que atenua o risco de lesão das células ciliadas diante de ruído intenso."
+    },
+    {
+      "question": "A tuba auditiva estabelece comunicação entre a orelha média e qual estrutura?",
+      "options": [
+        "A rinofaringe, equilibrando a pressão da caixa",
+        "O conduto auditivo externo, drenando o cerume",
+        "As células da mastoide, arejando o osso temporal",
+        "A fossa craniana média, drenando líquor timpânico"
+      ],
+      "correctIndex": 0,
+      "explanation": "A tuba auditiva liga a caixa timpânica à nasofaringe posterior, com a porção cranial óssea e a porção caudal cartilaginosa revestida por mucosa. Ela permite equalizar a pressão dos dois lados da membrana timpânica: bocejar, deglutir ou fazer a manobra de Valsalva abre a tuba e alivia a sensação de ouvido tampado."
+    },
+    {
+      "question": "O labirinto divide-se funcionalmente em um segmento anterior e um posterior. O que compõe o segmento posterior e a que sentido ele serve?",
+      "options": [
+        "O vestíbulo e os canais semicirculares, do equilíbrio",
+        "A cóclea e o órgão de Corti, da audição tonal",
+        "O modíolo e o gânglio espiral, da via aferente",
+        "A janela oval e a janela redonda, da condução"
+      ],
+      "correctIndex": 0,
+      "explanation": "O labirinto é uma estrutura ósteo-membranosa escavada no osso temporal e preenchida por líquido, com o labirinto ósseo envolvendo o membranoso. Anteriormente fica a cóclea, responsável pela audição; posteriormente ficam o vestíbulo (utrículo e sáculo) e os três canais semicirculares, responsáveis pelo equilíbrio.",
+      "image": "pg05",
+      "imageCaption": "Labirinto ósseo e membranoso: segmentos anterior e posterior"
+    },
+    {
+      "question": "Ao se enrolar em torno do modíolo, o canal coclear humano descreve:",
+      "options": [
+        "2,5 voltas, com espiras basal, intermédia e apical",
+        "1,5 volta, com espiras basal, média e terminal",
+        "3,5 voltas, com espiras inicial, média e apical",
+        "4,5 voltas, com espiras basal, média e distal"
+      ],
+      "correctIndex": 0,
+      "explanation": "O nome cóclea vem do grego kokhlia, caracol, e descreve bem a forma: um canal ósseo que dá cerca de duas voltas e meia em torno do modíolo, o eixo ósseo central. Essas voltas são descritas como espira basal, espira intermédia e espira apical, e cada uma responde preferencialmente a uma faixa de frequência."
+    },
+    {
+      "question": "O ducto coclear é delimitado superiormente pela membrana de Reissner. Qual estrutura o delimita inferiormente?",
+      "options": [
+        "A membrana basilar, onde repousa o órgão de Corti",
+        "A membrana tectorial, onde se fixam os estereocílios",
+        "A membrana da janela redonda, que alivia a pressão",
+        "A lâmina espiral óssea, que sustenta a estria vascular"
+      ],
+      "correctIndex": 0,
+      "explanation": "O ducto coclear, ou rampa média, é um compartimento triangular fechado por três paredes: a membrana de Reissner acima, a membrana basilar abaixo e a estria vascular lateralmente. Sobre a membrana basilar repousa o órgão de Corti, com as células ciliadas que efetivamente transduzem o som.",
+      "image": "pg08",
+      "imageCaption": "Corte da cóclea: rampas e membranas de Reissner e basilar"
+    },
+    {
+      "question": "Sobre a distribuição dos líquidos nos compartimentos cocleares, é correto afirmar que:",
+      "options": [
+        "as rampas vestibular e timpânica contêm perilinfa",
+        "o ducto coclear e a rampa timpânica contêm perilinfa",
+        "as três rampas cocleares contêm o mesmo líquido",
+        "o ducto coclear contém perilinfa rica em potássio"
+      ],
+      "correctIndex": 0,
+      "explanation": "A rampa vestibular, que começa na janela oval, e a rampa timpânica, que termina na janela redonda, são preenchidas por perilinfa. Entre elas, o ducto coclear contém endolinfa, rica em potássio, e constitui um compartimento fechado que não se mistura com a perilinfa. Essa separação iônica é o que sustenta o potencial endococlear."
+    },
+    {
+      "question": "O helicotrema, no ápice da cóclea, corresponde ao ponto em que:",
+      "options": [
+        "a rampa vestibular se comunica com a timpânica",
+        "o ducto coclear se comunica com a rampa timpânica",
+        "o estribo se apoia sobre a janela do vestíbulo",
+        "o nervo coclear penetra no meato acústico interno"
+      ],
+      "correctIndex": 0,
+      "explanation": "No ápice da cóclea, o ducto coclear termina e as duas rampas perilinfáticas se tornam contínuas através do helicotrema. O ducto coclear, ao contrário, permanece isolado do começo ao fim, mantendo a endolinfa em um compartimento próprio. É por essa comunicação apical que a perilinfa pode circular entre as rampas."
+    },
+    {
+      "question": "Cerca de 99,9% da energia sonora seria refletida na passagem do ar para o líquido da orelha interna. Como esse problema é compensado?",
+      "options": [
+        "A orelha média concentra a força do tímpano na janela oval",
+        "A orelha externa reflete o som de volta ao meato acústico",
+        "A cóclea recruta a condução óssea sempre que há reflexão",
+        "A janela redonda devolve a energia perdida à rampa média"
+      ],
+      "correctIndex": 0,
+      "explanation": "A membrana timpânica tem área muito maior que a platina do estribo, e a cadeia ossicular funciona ainda como alavanca. O resultado é um ganho de pressão que compensa a enorme perda por reflexão na interface ar-líquido. Essa é a função de adaptação de impedância da orelha média, sem a qual a energia não se originaria de forma eficaz no meio líquido."
+    },
+    {
+      "question": "Na condução óssea, de que maneira o estímulo sonoro alcança a cóclea?",
+      "options": [
+        "Pela vibração dos ossos do crânio, sem a orelha média",
+        "Pela vibração da membrana timpânica e do martelo",
+        "Pela coluna de ar contida no conduto auditivo externo",
+        "Pela tuba auditiva a partir da mucosa da rinofaringe"
+      ],
+      "correctIndex": 0,
+      "explanation": "Na via óssea, vibrações mecânicas do crânio chegam diretamente às estruturas e aos líquidos da orelha interna, contornando o pavilhão, o conduto e a cadeia ossicular. Daí em diante o percurso é o mesmo da via aérea: membrana basilar, órgão de Corti, células ciliadas, nervo coclear. Comparar as duas vias é o fundamento da audiometria e das provas com diapasão."
+    },
+    {
+      "question": "Na base da cóclea, próxima à janela oval, a membrana basilar é mais estreita e mais rígida. Essa região responde melhor a quais sons?",
+      "options": [
+        "Sons agudos, de alta frequência",
+        "Sons graves, de baixa frequência",
+        "Sons de baixa intensidade apenas",
+        "Sons de intensidade muito elevada"
+      ],
+      "correctIndex": 0,
+      "explanation": "A membrana basilar muda de largura e de rigidez ao longo da cóclea: estreita e rígida na base, larga e flexível no ápice. Por isso a base responde às altas frequências e o ápice às baixas, princípio da tonotopia coclear, que se mantém organizado ao longo de toda a via até o córtex auditivo.",
+      "image": "pg11",
+      "imageCaption": "Tonotopia: altas frequências na base e baixas no ápice"
+    },
+    {
+      "question": "A teoria da onda viajante, de Von Békésy, estabelece que a deformação da membrana basilar:",
+      "options": [
+        "atinge amplitude máxima em ponto ligado à frequência",
+        "tem amplitude igual em toda a extensão da membrana",
+        "ocorre apenas no helicotrema, no ápice da cóclea",
+        "depende da intensidade e não da frequência do som"
+      ],
+      "correctIndex": 0,
+      "explanation": "A onda percorre a membrana basilar da base em direção ao ápice, mas o pico de deslocamento acontece em um ponto específico determinado pela frequência do estímulo. É esse pico localizado que codifica a altura tonal. Uma consequência prática é o entalhe em 4000 Hz do trauma acústico, que reflete lesão preferencial da região basal."
+    },
+    {
+      "question": "O órgão de Corti apoia-se sobre a membrana basilar. Que líquido o banha e por qual motivo?",
+      "options": [
+        "Endolinfa, por estar dentro do ducto coclear",
+        "Perilinfa, por estar dentro da rampa timpânica",
+        "Perilinfa, por estar dentro da rampa vestibular",
+        "Líquor, por comunicação com o meato acústico"
+      ],
+      "correctIndex": 0,
+      "explanation": "O órgão de Corti fica no interior do ducto coclear, a rampa média, e portanto está imerso em endolinfa. Essa localização é essencial: a alta concentração de potássio da endolinfa e o potencial endococlear positivo são a força eletroquímica que move o íon para dentro da célula ciliada quando os canais se abrem.",
+      "image": "pg09",
+      "imageCaption": "Órgão de Corti sobre a membrana basilar, no ducto coclear"
+    },
+    {
+      "question": "Qual afirmativa traduz corretamente a divisão de trabalho entre células ciliadas internas e externas?",
+      "options": [
+        "As internas transmitem o som e as externas amplificam",
+        "As externas transmitem o som e as internas o filtram",
+        "As internas produzem endolinfa e as externas perilinfa",
+        "As externas geram o potencial e as internas o conduzem"
+      ],
+      "correctIndex": 0,
+      "explanation": "As células ciliadas internas são as verdadeiras receptoras sensoriais: transformam o estímulo mecânico em potencial receptor e liberam neurotransmissor sobre as fibras aferentes. As externas atuam como amplificador coclear, aumentando a sensibilidade e a seletividade de frequência. Daí os apelidos de microfones para as internas e amplificadores para as externas."
+    },
+    {
+      "question": "A eletromotilidade das células ciliadas externas, que lhes permite mudar de comprimento ao despolarizar, depende de qual proteína?",
+      "options": [
+        "Prestina, que altera o comprimento da célula",
+        "Conexina, que forma junções comunicantes",
+        "Miosina, que contrai os estereocílios apicais",
+        "Otoferlina, que ancora os tip links do feixe"
+      ],
+      "correctIndex": 0,
+      "explanation": "A prestina é a proteína motora da membrana lateral das células ciliadas externas: em resposta à variação de voltagem, ela encurta ou alonga a célula em escala de microssegundos. Esse movimento amplifica localmente o deslocamento da membrana basilar e refina a discriminação de frequências, mecanismo conhecido como amplificador coclear."
+    },
+    {
+      "question": "Ao se inclinarem em direção ao estereocílio mais alto, as células ciliadas abrem canais mecanossensíveis que permitem:",
+      "options": [
+        "entrada de potássio e despolarização da célula",
+        "saída de potássio e hiperpolarização da célula",
+        "entrada de cloreto e hiperpolarização da célula",
+        "saída de sódio e repolarização rápida da célula"
+      ],
+      "correctIndex": 0,
+      "explanation": "A inclinação em direção ao cílio maior traciona os tip links e abre os canais de transdução no ápice do estereocílio. Como a endolinfa é rica em potássio e o potencial endococlear é positivo, o íon flui para dentro e despolariza a célula. Se a deflexão for no sentido oposto, os canais se fecham e a célula hiperpolariza, o que permite acompanhar cada ciclo da onda sonora.",
+      "image": "pg10",
+      "imageCaption": "Transdução mecanoelétrica: potássio, cálcio e liberação de neurotransmissor"
+    },
+    {
+      "question": "A endolinfa, rica em potássio e mantenedora do potencial endococlear positivo, é produzida por qual estrutura?",
+      "options": [
+        "Pela estria vascular, na parede lateral do ducto",
+        "Pelo plexo coróide, a partir do líquor ventricular",
+        "Pela membrana da janela redonda, por ultrafiltração",
+        "Pelas células de suporte do órgão de Corti espiral"
+      ],
+      "correctIndex": 0,
+      "explanation": "A estria vascular é o epitélio altamente vascularizado da parede lateral do ducto coclear. Ela secreta a endolinfa e bombeia potássio de forma ativa, sustentando o potencial endococlear de cerca de +80 mV. Esse gradiente é a bateria que impulsiona a corrente de transdução das células ciliadas."
+    },
+    {
+      "question": "Na célula ciliada interna, a despolarização abre canais de cálcio voltagem-dependentes. Qual é o efeito imediato do influxo de Ca²⁺?",
+      "options": [
+        "Liberação de glutamato na fenda sináptica",
+        "Recaptação de glutamato pela célula ciliada",
+        "Abertura dos tip links do feixe de estereocílios",
+        "Produção de endolinfa pela estria vascular"
+      ],
+      "correctIndex": 0,
+      "explanation": "O cálcio que entra pela região basal da célula promove a fusão das vesículas sinápticas com a membrana e a exocitose de glutamato. O neurotransmissor ativa as terminações aferentes do gânglio espiral e desencadeia o potencial de ação que seguirá pelo nervo coclear. Aqui se completa a conversão de energia mecânica em sinal elétrico."
+    },
+    {
+      "question": "O neurônio auditivo primário é bipolar e representa o primeiro neurônio da via. Onde se localiza o seu corpo celular?",
+      "options": [
+        "No gânglio espiral, dentro da cóclea",
+        "No núcleo coclear ventral, no tronco",
+        "No colículo inferior, no mesencéfalo",
+        "No órgão de Corti, sobre a basilar"
+      ],
+      "correctIndex": 0,
+      "explanation": "O corpo celular do neurônio auditivo primário fica no gânglio espiral, alojado no modíolo. Seu prolongamento periférico vai às células ciliadas do órgão de Corti e seu axônio central forma o nervo coclear, que se une ao ramo vestibular para constituir o VIII par craniano.",
+      "image": "pg14",
+      "imageCaption": "Neurônio auditivo primário e fibras aferentes tipo I e tipo II"
+    },
+    {
+      "question": "As fibras aferentes do tipo I, mielinizadas e correspondentes a 90% a 95% do total, fazem sinapse com quais células?",
+      "options": [
+        "As células ciliadas internas, principais receptoras",
+        "As células ciliadas externas, ditas amplificadoras",
+        "As células de suporte que revestem o túnel de Corti",
+        "As células da estria vascular, na parede lateral"
+      ],
+      "correctIndex": 0,
+      "explanation": "A esmagadora maioria das fibras aferentes é do tipo I e inerva as células ciliadas internas, que codificam frequência, intensidade e temporalidade do som. As fibras tipo II, finas e pouco mielinizadas, correspondem a apenas 5% a 10% e contatam as células ciliadas externas, cuja função é amplificar e refinar a resposta coclear."
+    },
+    {
+      "question": "A via auditiva central tem seu início e sua primeira sinapse em qual estação?",
+      "options": [
+        "Nos núcleos cocleares dorsal e ventral, no tronco",
+        "No complexo olivar superior, na porção da ponte",
+        "No colículo inferior, no teto do mesencéfalo",
+        "No corpo geniculado medial, no tálamo dorsal"
+      ],
+      "correctIndex": 0,
+      "explanation": "As fibras do nervo coclear terminam nos núcleos cocleares dorsal e ventral do tronco encefálico, e é ali que começa a via auditiva central. A partir desse ponto as projeções tornam-se bilaterais, seguindo por complexo olivar superior, lemnisco lateral, colículo inferior e corpo geniculado medial até o córtex.",
+      "image": "pg15",
+      "imageCaption": "Estações da via auditiva central, do tronco encefálico ao córtex"
+    },
+    {
+      "question": "Por que uma lesão unilateral da via auditiva acima dos núcleos cocleares raramente causa surdez completa de uma orelha?",
+      "options": [
+        "A partir dali as projeções passam a ser bilaterais",
+        "O córtex auditivo é capaz de regenerar suas fibras",
+        "A cóclea contralateral assume a tonotopia perdida",
+        "A condução óssea substitui a via aérea lesada"
+      ],
+      "correctIndex": 0,
+      "explanation": "Depois dos núcleos cocleares a informação de cada orelha é distribuída para os dois lados do tronco encefálico, de modo que nenhum hemisfério depende exclusivamente de uma via. Por isso lesões centrais unilaterais tendem a comprometer localização e processamento do som, e não a acuidade de uma orelha isolada."
+    },
+    {
+      "question": "Em que estação da via auditiva ocorre a comparação entre os sinais das duas orelhas, base da localização espacial do som?",
+      "options": [
+        "No complexo olivar superior",
+        "No gânglio espiral da cóclea",
+        "No corpo geniculado medial",
+        "No giro temporal transverso"
+      ],
+      "correctIndex": 0,
+      "explanation": "O complexo olivar superior é a primeira estação que recebe aferências das duas orelhas e compara diferenças de tempo e de intensidade interaurais. Essa comparação é o substrato neural da localização espacial da fonte sonora, função que o pavilhão já começa a servir na periferia."
+    },
+    {
+      "question": "Onde se localiza o córtex auditivo primário, destino final da via auditiva ascendente?",
+      "options": [
+        "No lobo temporal, no giro de Heschl",
+        "No lobo occipital, na área calcarina",
+        "No lobo parietal, no giro pós-central",
+        "No lobo frontal, no giro pré-central"
+      ],
+      "correctIndex": 0,
+      "explanation": "Após o corpo geniculado medial do tálamo, as radiações auditivas levam a informação ao córtex auditivo primário, situado no giro temporal transverso, ou giro de Heschl, na face superior do lobo temporal. A organização tonotópica iniciada na membrana basilar se mantém até esse nível cortical."
+    }
+  ]
+}

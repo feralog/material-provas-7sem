@@ -1,6 +1,6 @@
 ## Conceito: o dano que nasce do cuidado
 
-O termo vem do grego — **iatro** (médico) + **geno** (que produz) + **ia** (doença): literalmente, *doença produzida pelo médico*. A definição adotada na aula, retirada do CRM-PR, é:
+O termo vem do grego — **iatro** (médico) + **geno** (que produz) + **ia** (doença): literalmente, *doença produzida pelo médico*. A definição do CRM-PR é:
 
 > **Iatrogenia** é a afecção decorrente da intervenção (diagnóstica ou terapêutica) do médico e/ou dos seus auxiliares, **certa ou errada, justificada ou não**, resultando em consequências prejudiciais à saúde do paciente.
 
@@ -23,7 +23,7 @@ A iatrogenia é uma das grandes síndromes geriátricas, ao lado de **instabilid
 | Fonte | Dado |
 | --- | --- |
 | OMS | **1 em cada 300 pacientes** morre em consequência de erro médico |
-| Comparação da aula | Pegar um avião é **33 mil vezes mais seguro** do que ser internado |
+| Comparação | Pegar um avião é **33 mil vezes mais seguro** do que ser internado |
 | EUA | **251 mil mortes/ano** — equivalente a 2 Boeings 747 caindo por dia |
 | EUA (ranking) | 3ª causa de morte: só perde para **infarto e câncer** |
 | Brasil | **54 mil mortes** por erro médico em 19 milhões de atendimentos |
@@ -35,7 +35,7 @@ A iatrogenia é uma das grandes síndromes geriátricas, ao lado de **instabilid
 3. **Por falha no processo de comunicação** — a mais comum e a **mais evitável**.
 4. **Diagnóstica** — exames desnecessários, falso-positivo e falso-negativo.
 
-Os quatro círculos se sobrepõem no slide de propósito: um mesmo caso costuma reunir duas ou três categorias.
+Os quatro círculos se sobrepõem de propósito: um mesmo caso costuma reunir duas ou três categorias.
 
 ### Níveis de prevenção e a prevenção quaternária
 
@@ -102,7 +102,7 @@ A falha de comunicação ocorre quando informações cruciais não são transmit
 
 ### Iatrogenia diagnóstica
 
-- **Falso-positivo:** diagnóstico incorreto que gera ansiedade extrema e encadeia exames mais invasivos e desnecessários. Exemplo da aula: **paralisia facial periférica (de Bell) confundida com AVC** por exame físico mal feito.
+- **Falso-positivo:** diagnóstico incorreto que gera ansiedade extrema e encadeia exames mais invasivos e desnecessários. Exemplo: **paralisia facial periférica (de Bell) confundida com AVC** por exame físico mal feito.
 - **Falso-negativo:** falha em detectar a doença, com retardo do tratamento e piora do quadro — como o atraso no diagnóstico de câncer porque um exame anterior foi negativo.
 
 ---
@@ -184,7 +184,7 @@ Checar sempre **como** o paciente toma — não o que está escrito na receita. 
 
 Antes de rotular demência ou depressão, é obrigatório retirar a hipótese iatrogênica: **lorazepam + prometazina + olanzapina** somam carga sedativa e anticolinérgica suficiente para explicar quedas, sonolência e queda de desempenho cognitivo.
 
-#### Gabarito da professora
+#### Como classificar e comunicar o caso
 
 - **Tipo de iatrogenia:** relacionada a **medicação** — reação adversa a medicamento, interação medicamentosa e drogas inapropriadas para idosos.
 - **SBAR** para acionar o psiquiatra, se o paciente chegasse à emergência com rebaixamento do nível de consciência:
@@ -199,11 +199,11 @@ Antes de rotular demência ou depressão, é obrigatório retirar a hipótese ia
 
 ### Por que o erro não aparece nas estatísticas
 
-**Não existe CID de erro médico** e ele não é registrado no atestado de óbito — sem dado não há investigação, e sem investigação o mesmo erro se repete. Entre os fatores apontados como causa estão formação deficiente, falta de estrutura, criação desenfreada de cursos de medicina, falta de fiscalização e más condições de trabalho. Mas a aula relativiza: **nos EUA os médicos são bem formados e bem remunerados e as taxas de erro seguem altíssimas**. O que pesa é o **mau uso das ferramentas da medicina** — hospitais e laboratórios sobrecarregados, custos crescentes, aumento do número de procedimentos (muitos desnecessários, sobretudo estéticos) e hiperespecialização que deixa de saber tratar o básico.
+**Não existe CID de erro médico** e ele não é registrado no atestado de óbito — sem dado não há investigação, e sem investigação o mesmo erro se repete. Entre os fatores apontados como causa estão formação deficiente, falta de estrutura, criação desenfreada de cursos de medicina, falta de fiscalização e más condições de trabalho. Mas há um contraponto: **nos EUA os médicos são bem formados e bem remunerados e as taxas de erro seguem altíssimas**. O que pesa é o **mau uso das ferramentas da medicina** — hospitais e laboratórios sobrecarregados, custos crescentes, aumento do número de procedimentos (muitos desnecessários, sobretudo estéticos) e hiperespecialização que deixa de saber tratar o básico.
 
 ### Cultura de segurança
 
-> Como aprender com os erros em vez de escondê-los? A resposta da aula é **educação médica continuada sobre erros** e um ambiente que permita registrar e discutir o evento. A lógica punitiva empurra o dano para a invisibilidade e impede corrigir o processo.
+> Como aprender com os erros em vez de escondê-los? A resposta é **educação médica continuada sobre erros** e um ambiente que permita registrar e discutir o evento. A lógica punitiva empurra o dano para a invisibilidade e impede corrigir o processo.
 
 ### Os três pilares da conclusão
 

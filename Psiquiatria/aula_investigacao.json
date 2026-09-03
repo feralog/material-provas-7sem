@@ -2,10 +2,10 @@
   "titulo": "Investigação e Avaliação Psiquiátrica",
   "eyebrow": "Psiquiatria · Avaliação Diagnóstica",
   "subtitulo": "Normalidade, entrevista clínica, ressonância emocional e diagnóstico",
-  "intro": "Da relação médico-paciente aos critérios de normalidade, da entrevista e da anamnese à avaliação de risco e ao modelo biopsicossocial — esta aula mostra como se investiga e se avalia o paciente psiquiátrico.",
+  "intro": "Da relação médico-paciente aos critérios de normalidade, da entrevista e da anamnese à avaliação de risco e ao modelo biopsicossocial — como se investiga e se avalia o paciente psiquiátrico.",
   "questoes": [
     {
-      "question": "Como a aula define a consulta psiquiátrica em relação à troca entre médico e paciente?",
+      "question": "Na consulta psiquiátrica, a relação entre médico e paciente se caracteriza por:",
       "options": [
         "Troca constante de ida e volta entre médico e paciente",
         "Via de mão única, do médico para o paciente",
@@ -13,7 +13,7 @@
         "Procedimento objetivo, sem envolvimento emocional"
       ],
       "correctIndex": 0,
-      "explanation": "A aula insiste que a consulta psiquiátrica é peculiar pela ressonância mútua: o tempo inteiro há uma troca de ida e volta entre médico e paciente, da qual não se pode esquecer. O símbolo do slide (MÉDICO ⇄ PACIENTE) foi usado justamente para lembrar essa relação constante."
+      "explanation": "A consulta psiquiátrica é peculiar pela ressonância mútua: o tempo inteiro há uma troca de ida e volta entre médico e paciente, da qual não se pode esquecer. Não é um interrogatório unidirecional nem um levantamento apenas de dados biológicos — o que o paciente desperta no médico faz parte do exame."
     },
     {
       "question": "Quais são os três critérios que separam uma vivência comum de um sintoma psiquiátrico?",
@@ -24,10 +24,10 @@
         "Duração, custo e apoio social do paciente"
       ],
       "correctIndex": 0,
-      "explanation": "Os três critérios do slide são intensidade (quanto o sintoma prejudica o dia a dia), quantidade (com que frequência se repete) e tempo de permanência (por quanto tempo persiste). A diferença entre normal e patológico é sempre de grau, nunca de natureza."
+      "explanation": "Os três critérios são intensidade (quanto o sintoma prejudica o dia a dia), quantidade (com que frequência se repete) e tempo de permanência (por quanto tempo persiste). A diferença entre normal e patológico é sempre de grau, nunca de natureza."
     },
     {
-      "question": "Como se avalia o critério intensidade, segundo a aula?",
+      "question": "Como se avalia o critério intensidade de um sintoma psiquiátrico?",
       "options": [
         "Quantificando o prejuízo no dia a dia, com nota de 0 a 10",
         "Contando quantas vezes o sintoma se repete em uma semana",
@@ -35,10 +35,10 @@
         "Comparando o sintoma com o de outros familiares doentes"
       ],
       "correctIndex": 0,
-      "explanation": "Pelo critério intensidade, o médico pede que o paciente quantifique o quanto o sintoma prejudica seu dia a dia, por exemplo com uma nota de 0 a 10. Contar repetições mede a quantidade e medir horas mede o tempo de permanência — os outros dois critérios do slide."
+      "explanation": "Pelo critério intensidade, o médico pede que o paciente quantifique o quanto o sintoma prejudica seu dia a dia, por exemplo com uma nota de 0 a 10. Contar repetições mede a quantidade e medir horas mede o tempo de permanência — os outros dois critérios de normalidade."
     },
     {
-      "question": "No mesmo slide dos exemplos, qual é a contrapartida patológica de imaginar um acidente e logo esquecer?",
+      "question": "Ver um trânsito, imaginar um acidente, visualizar e esquecer é uma vivência normal. Qual é a contrapartida patológica?",
       "options": [
         "Fixação em programas policiais temendo pelos filhos",
         "Ouvir vozes de forma persistente e recorrente",
@@ -46,7 +46,7 @@
         "Visualizar um acidente imaginado e logo esquecer"
       ],
       "correctIndex": 0,
-      "explanation": "O slide apresenta a ansiedade catastrófica como fixação: assistir o dia todo a programas policiais temendo pelos filhos, em vez de visualizar um acidente e esquecê-lo. Ouvir vozes persistentes é o exemplo patológico da psicose e o medo de não ser aceito é o da paranoia."
+      "explanation": "A contrapartida patológica é a ansiedade catastrófica como fixação: assistir o dia todo a programas policiais temendo pelos filhos, em vez de visualizar um acidente e esquecê-lo. Ouvir vozes persistentes é o exemplo patológico da psicose e o medo de não ser aceito é o da paranoia."
     },
     {
       "question": "Na ressonância emocional da consulta, sentir tristeza diante do paciente indica:",
@@ -57,7 +57,7 @@
         "Manifestação de luto não elaborado pelo médico"
       ],
       "correctIndex": 0,
-      "explanation": "Na tabela de ressonância emocional do slide, tristeza aponta para provável quadro depressivo. Medo sinaliza risco de comportamento antissocial ou psicopatia, e a agitação alheia indica um estado emocional contagioso, que se espalha pela sala de espera."
+      "explanation": "Na ressonância emocional, tristeza aponta para provável quadro depressivo. Medo sinaliza risco de comportamento antissocial ou psicopatia, e a agitação alheia indica um estado emocional contagioso, que se espalha pela sala de espera."
     },
     {
       "question": "O que significa o jargão 'não ressoou', usado pelos residentes?",
@@ -90,7 +90,7 @@
         "Solicitar cateterismo cardíaco pela suspeita de infarto"
       ],
       "correctIndex": 0,
-      "explanation": "Diante do pânico com sensação de infarto, o slide recomenda eletrocardiograma, tranquilizar e encaminhar para psicologia/psiquiatria. Da mesma forma, o paciente psicótico na UBS deve ser acolhido, receber exames básicos e ser encaminhado ao especialista — é o reconhecimento dos limites do papel médico."
+      "explanation": "Diante do pânico com sensação de infarto, a conduta é eletrocardiograma, tranquilizar e encaminhar para psicologia/psiquiatria. Da mesma forma, o paciente psicótico na UBS deve ser acolhido, receber exames básicos e ser encaminhado ao especialista — é o reconhecimento dos limites do papel médico."
     },
     {
       "question": "Diante da pergunta 'Doutora, qual é o sentido da vida?', o psiquiatra deve:",
@@ -101,7 +101,7 @@
         "Ignorar a pergunta e prosseguir com a entrevista"
       ],
       "correctIndex": 0,
-      "explanation": "A resposta do slide é 'eu sou psiquiatra, não sou guru — vamos focar no tratamento do seu transtorno bipolar'. O resultado final depende das escolhas do paciente sobre o que ele aceita mudar, e isso está além do poder médico."
+      "explanation": "A resposta adequada é 'eu sou psiquiatra, não sou guru — vamos focar no tratamento do seu transtorno bipolar'. O resultado final depende das escolhas do paciente sobre o que ele aceita mudar, e isso está além do poder médico."
     },
     {
       "question": "Diante de um paciente agitado, reestabelecer dados de realidade significa:",
@@ -115,7 +115,7 @@
       "explanation": "Reestabelecer dados de realidade é reafirmar fatos simples e seguros — 'isto é um hospital, ninguém vai te fazer mal' — o que acalma o paciente agitado. A conduta faz parte dos limites da atuação médica diante de quem está fora do contato com a realidade."
     },
     {
-      "question": "Qual exemplo da aula ilustra a rigidez mental?",
+      "question": "Qual exemplo ilustra a rigidez mental?",
       "options": [
         "Beber sempre, seja morte, nascimento ou jogo do time",
         "Ficar preso à descrição física do próprio sintoma",
@@ -123,10 +123,10 @@
         "Adaptar-se com soluções criativas às frustrações"
       ],
       "correctIndex": 0,
-      "explanation": "O exemplo do slide é o paciente que bebe diante de qualquer estímulo: morreu o pai, bebe; nasceu o filho, bebe; o time ganhou ou perdeu, bebe. A rigidez mental repete sempre os mesmos caminhos neuronais — uma única resposta rígida para qualquer estímulo da vida."
+      "explanation": "O exemplo típico é o paciente que bebe diante de qualquer estímulo: morreu o pai, bebe; nasceu o filho, bebe; o time ganhou ou perdeu, bebe. A rigidez mental repete sempre os mesmos caminhos neuronais — uma única resposta rígida para qualquer estímulo da vida."
     },
     {
-      "question": "São exemplos de sintomas periféricos da ansiedade, segundo o slide:",
+      "question": "São exemplos de sintomas periféricos da ansiedade:",
       "options": [
         "Insônia, cansaço, tensão, irritabilidade e alterações alimentares",
         "Medo e preocupação constante, presentes o tempo todo",
@@ -134,10 +134,10 @@
         "Fuga de ideias, grandiosidade e pouca necessidade de sono"
       ],
       "correctIndex": 0,
-      "explanation": "Os sintomas periféricos listados no slide são insônia, cansaço, tensão, irritabilidade, dificuldade de concentração e alterações alimentares. O sintoma nuclear da ansiedade é o medo e a preocupação constante; alucinações e grandiosidade pertencem a outros quadros."
+      "explanation": "Os sintomas periféricos da ansiedade são insônia, cansaço, tensão, irritabilidade, dificuldade de concentração e alterações alimentares. O sintoma nuclear da ansiedade é o medo e a preocupação constante; alucinações e grandiosidade pertencem a outros quadros."
     },
     {
-      "question": "Sobre a ansiedade, a aula conclui que ela:",
+      "question": "Sobre a ansiedade, é correto afirmar que ela:",
       "options": [
         "É necessária para nos mover, como o estudante que estuda",
         "É sempre patológica e deve ser eliminada com medicação",
@@ -145,10 +145,10 @@
         "Precisa de metas abusivas para gerar produtividade"
       ],
       "correctIndex": 0,
-      "explanation": "A aula conclui que a ansiedade é necessária para nos mover: sem ansiedade, o estudante não estuda e o cachorro não corre. Ela só se torna patológica quando passa do limite, com prejuízo e fixação — as metas abusivas dos bancos são citadas como geradoras de adoecimento."
+      "explanation": "A ansiedade é necessária para nos mover: sem ansiedade, o estudante não estuda e o cachorro não corre. Ela só se torna patológica quando passa do limite, com prejuízo e fixação — metas abusivas, como as impostas por bancos, geram adoecimento grave."
     },
     {
-      "question": "Sobre a psiquiatria na década de 1980, o slide afirma que:",
+      "question": "Sobre a psiquiatria na década de 1980, é correto afirmar que:",
       "options": [
         "Pacientes ficavam confinados em asilos isolados e dopados",
         "Equipes de interconsulta cobriam os prontos-socorros",
@@ -159,7 +159,7 @@
       "explanation": "Na década de 1980, os pacientes ficavam confinados em asilos e hospitais psiquiátricos isolados, dopados com medicações antigas. A reforma psiquiátrica integrou a especialidade aos hospitais gerais e, hoje, equipes de interconsulta e psiquiatras de retaguarda cobrem o pronto-socorro."
     },
     {
-      "question": "Por que o consultório deve ter duas portas, segundo o slide?",
+      "question": "Por que se recomenda que o consultório psiquiátrico tenha duas portas?",
       "options": [
         "Uma para o paciente e outra para os funcionários",
         "Para entrada de dois acompanhantes ao mesmo tempo",
@@ -167,7 +167,7 @@
         "Por exigência dos convênios de saúde suplementar"
       ],
       "correctIndex": 0,
-      "explanation": "O slide recomenda acesso físico com duas portas, de preferência: uma para o paciente e outra para os funcionários. Completa a segurança o posicionamento — o médico nunca fica acuado no canto, com acesso fácil e desimpedido à porta de saída."
+      "explanation": "Recomenda-se acesso físico com duas portas, de preferência: uma para o paciente e outra para os funcionários. Completa a segurança o posicionamento — o médico nunca fica acuado no canto, com acesso fácil e desimpedido à porta de saída."
     },
     {
       "question": "Diante de um paciente fechado ou hostil, o entrevistador deve:",
@@ -178,7 +178,7 @@
         "Adiar a entrevista para uma próxima consulta"
       ],
       "correctIndex": 0,
-      "explanation": "Para o paciente fechado ou hostil, o slide indica postura ativa, com técnicas para estabelecer a aliança terapêutica. A postura passiva — anotar para investigar depois — é a indicada para o paciente comunicativo. A postura rígida e autoritária destrói a aliança."
+      "explanation": "Para o paciente fechado ou hostil, indica-se postura ativa, com técnicas para estabelecer a aliança terapêutica. A postura passiva — anotar para investigar depois — é a indicada para o paciente comunicativo. A postura rígida e autoritária destrói a aliança."
     },
     {
       "question": "Diante do relato 'não durmo há uma semana', o médico deve:",
@@ -192,7 +192,7 @@
       "explanation": "Uma semana sem dormir é biologicamente incompatível com a vida — o papel do médico é esmiuçar o sintoma: a que horas deita, quanto tempo leva para dormir, quantas vezes acorda e o que faz ao acordar. Assim se corrigem as distorções de percepção do paciente sobre o próprio sintoma."
     },
     {
-      "question": "Sobre a neutralidade do entrevistador, a aula afirma que:",
+      "question": "Sobre a neutralidade do entrevistador em psiquiatria, é correto afirmar que:",
       "options": [
         "Valores pessoais e julgamentos não devem interferir",
         "O médico deve impor autoridade para conduzir",
@@ -203,7 +203,7 @@
       "explanation": "A neutralidade exige que valores pessoais não interfiram na consulta; julgamentos e conselhos pessoais são inadequados. A postura rígida e autoritária — 'o médico aqui sou eu' — destrói a aliança terapêutica."
     },
     {
-      "question": "Qual o tempo mínimo de consulta psiquiátrica defendido na aula?",
+      "question": "Qual o tempo mínimo recomendado para uma consulta psiquiátrica?",
       "options": [
         "30 minutos, no mínimo, por consulta psiquiátrica",
         "12 minutos, conforme a pressão dos convênios",
@@ -211,7 +211,7 @@
         "15 minutos, com foco no sintoma principal"
       ],
       "correctIndex": 0,
-      "explanation": "A aula defende 30 minutos, no mínimo, por consulta psiquiátrica — tempo que permite o acolhimento e o desabafo e estrutura o raciocínio clínico. Os 12 minutos aparecem como a pressão de convênios e do sistema de saúde por consultas rápidas."
+      "explanation": "Recomendam-se 30 minutos, no mínimo, por consulta psiquiátrica — tempo que permite o acolhimento e o desabafo e estrutura o raciocínio clínico. Os 12 minutos representam a pressão de convênios e do sistema de saúde por consultas rápidas."
     },
     {
       "question": "Por que não há exame de imagem com diagnóstico psiquiátrico na rotina clínica?",
@@ -255,10 +255,10 @@
         "Ser normal depende de nunca ter vivido um trauma"
       ],
       "correctIndex": 0,
-      "explanation": "A frase resume o conceito de normalidade da aula: todos apresentamos sintomas, mas por pouco tempo, com pouca intensidade e sem grande prejuízo. A normalidade não é a ausência de sintomas — é tê-los em grau leve, conforme os três critérios de intensidade, quantidade e tempo de permanência."
+      "explanation": "A frase resume o conceito de normalidade: todos apresentamos sintomas, mas por pouco tempo, com pouca intensidade e sem grande prejuízo. A normalidade não é a ausência de sintomas — é tê-los em grau leve, conforme os três critérios de intensidade, quantidade e tempo de permanência."
     },
     {
-      "question": "No slide dos exemplos, sair de uma aula chateado achando que 'ninguém gosta de você' é normal quando o estado passa. Qual é a versão patológica apresentada?",
+      "question": "Sair de uma reunião chateado achando que 'ninguém gosta de você' e se acalmar após o banho e o jantar é normal. Qual é a versão patológica dessa vivência?",
       "options": [
         "Paranoia: o estado se mantém o tempo todo",
         "Psicose: ouvir vozes persistentes o tempo todo",
@@ -266,7 +266,7 @@
         "Depressão: tristeza persistente na maior parte do dia"
       ],
       "correctIndex": 0,
-      "explanation": "No slide, sair de uma aula chateado e se acalmar após o banho e o jantar é normal; a versão patológica é a paranoia, em que o estado se mantém o tempo todo. Os pares de exemplos ilustram a diferença de grau, não de natureza."
+      "explanation": "Sair chateado e se acalmar após o banho e o jantar é normal; a versão patológica é a paranoia, em que o estado se mantém o tempo todo. Os pares de exemplos ilustram a diferença de grau, não de natureza."
     },
     {
       "question": "Na ressonância emocional da consulta, sentir medo diante do paciente aponta para:",
@@ -277,10 +277,10 @@
         "Estado maníaco em fase aguda do transtorno"
       ],
       "correctIndex": 0,
-      "explanation": "Na tabela de ressonância emocional do slide, medo aponta para risco de comportamento antissocial ou psicopatia. Tristeza sinaliza provável quadro depressivo, e a agitação é um estado emocional contagioso — cada reação do entrevistador orienta a hipótese diagnóstica."
+      "explanation": "Na ressonância emocional, medo aponta para risco de comportamento antissocial ou psicopatia. Tristeza sinaliza provável quadro depressivo, e a agitação é um estado emocional contagioso — cada reação do entrevistador orienta a hipótese diagnóstica."
     },
     {
-      "question": "No slide das classificações diagnósticas, o DSM é descrito como:",
+      "question": "Entre as classificações diagnósticas em psiquiatria, o DSM é descrito como:",
       "options": [
         "Padrão-ouro para pesquisas e ensaios clínicos",
         "Classificação oficial, obrigatória para laudos e receitas",
@@ -288,10 +288,10 @@
         "Entrevista estruturada para diagnóstico em pesquisa"
       ],
       "correctIndex": 0,
-      "explanation": "O DSM, da APA, é descrito como extremamente detalhado e padrão-ouro para pesquisas e ensaios clínicos, estruturando o tempo e a intensidade dos critérios. A classificação oficial, obrigatória para laudos e receitas, é a CID, da OMS — os dois sistemas têm funções complementares."
+      "explanation": "O DSM, da APA, é extremamente detalhado e padrão-ouro para pesquisas e ensaios clínicos, estruturando o tempo e a intensidade dos critérios. A classificação oficial, obrigatória para laudos e receitas, é a CID, da OMS — os dois sistemas têm funções complementares."
     },
     {
-      "question": "Um exemplo de fator desencadeante do quadro psiquiátrico citado na aula é:",
+      "question": "Um exemplo de fator desencadeante do quadro psiquiátrico é:",
       "options": [
         "O luto, muitas vezes não reconhecido pelo paciente",
         "O ambiente de trabalho abusivo que perpetua o quadro",
@@ -299,7 +299,7 @@
         "O uso prolongado de substâncias desde a adolescência"
       ],
       "correctIndex": 0,
-      "explanation": "Os fatores desencadeantes são eventos estressores que iniciam o quadro — e o luto é o exemplo do slide, muitas vezes não reconhecido pelo paciente. Já o ambiente de trabalho abusivo é citado como fator de manutenção, que perpetua o adoecimento e exige intervenções além do medicamento."
+      "explanation": "Os fatores desencadeantes são eventos estressores que iniciam o quadro — e o luto é o exemplo típico, muitas vezes não reconhecido pelo paciente. Já o ambiente de trabalho abusivo é um fator de manutenção, que perpetua o adoecimento e exige intervenções além do medicamento."
     },
     {
       "question": "A avaliação neuropsicológica é indicada para avaliar:",
@@ -313,7 +313,7 @@
       "explanation": "A avaliação neuropsicológica avalia funções cognitivas puras: memória, atenção, planejamento e funções executivas. Os testes psicológicos avaliam traços de personalidade, funcionamento psíquico e dinâmica emocional — instrumentos diferentes, com objetivos diferentes."
     },
     {
-      "question": "No slide das escalas e instrumentos de avaliação, o MADRS é indicado para:",
+      "question": "Entre as escalas de avaliação em psiquiatria, o MADRS é indicado para:",
       "options": [
         "Avaliar depressão refratária e transtorno bipolar",
         "Avaliar sintomas positivos e negativos na esquizofrenia",
@@ -321,7 +321,7 @@
         "Aplicar entrevista clínica estruturada para o DSM"
       ],
       "correctIndex": 0,
-      "explanation": "No slide das escalas, o MADRS avalia depressão refratária e transtorno bipolar. O Hamilton é para depressão e ansiedade, o PANSS para sintomas positivos e negativos na esquizofrenia, e a SCID é a entrevista clínica estruturada para o DSM, usada em pesquisa."
+      "explanation": "O MADRS avalia depressão refratária e transtorno bipolar. O Hamilton é para depressão e ansiedade, o PANSS para sintomas positivos e negativos na esquizofrenia, e a SCID é a entrevista clínica estruturada para o DSM, usada em pesquisa."
     }
   ]
 }

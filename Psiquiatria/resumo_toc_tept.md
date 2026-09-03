@@ -1,18 +1,18 @@
 ## Transtorno ou doença?
 
-A psiquiatria trata, na maior parte dos casos, de *transtornos*, e não de *doenças*. Doença é o conceito reservado para fenômenos com **causa e efeito conhecidos e bem determinados** — o exemplo da aula é a doença de Alzheimer, em que há um mecanismo definido. Já o transtorno é a **resultante de múltiplos fatores psicológicos, biológicos e sociais combinados e associados**; nenhuma causa única responde pelo quadro. É por isso que se fala em transtorno obsessivo-compulsivo, e não em doença obsessiva-compulsiva.
+A psiquiatria trata, na maior parte dos casos, de *transtornos*, e não de *doenças*. Doença é o conceito reservado para fenômenos com **causa e efeito conhecidos e bem determinados** — o exemplo clássico é a doença de Alzheimer, em que há um mecanismo definido. Já o transtorno é a **resultante de múltiplos fatores psicológicos, biológicos e sociais combinados e associados**; nenhuma causa única responde pelo quadro. É por isso que se fala em transtorno obsessivo-compulsivo, e não em doença obsessiva-compulsiva.
 
 A obsessão é definida como uma **ideia ou representação (imagem) que se impõe à consciência de modo persistente e incontrolável**, apesar de ter conteúdo absurdo ou repulsivo para o indivíduo. Essa imposição gera uma luta constante: as ideias voltam de forma recorrente à consciência e o indivíduo se esforça para bani-las, produzindo um estado de angústia permanente. Três pontos da definição merecem destaque: é uma forma de pensamento (ou imagem); é um pensamento que **invade** — não é elaborado ativamente, como em "agora vou pensar nisso"; e seu conteúdo é percebido como absurdo ou repulsivo, o que se chama de **egodistonia** — uma dissonância em relação ao ego, que agride o sistema de valores do próprio paciente.
 
 > **Ponto-chave — obsessão:** os pensamentos obsessivos são intrusivos, repetitivos, indesejados, egodistônicos e associados a grande ansiedade. A origem é espontânea e circular: o pensamento invade a consciência, como no episódio do professor que, dirigindo para o plantão, foi tomado pela dúvida sobre ter desligado o fogão.
 
-O exemplo clínico da aula: um paciente criado em família católica tradicional passa a ser invadido pela imagem recorrente de Jesus Cristo nu — repetitiva, circular e profundamente egodistônica, com enorme culpa — e desenvolve, para compensar, o ritual de rezar determinado número de vezes para neutralizar o pensamento. Os conteúdos típicos das obsessões incluem religião, agressão, simetria, verificação, acumulação, cenas de sexo e contaminação (como a ideia constante de estar contaminado após tocar uma maçaneta).
+Um exemplo clínico: um paciente criado em família católica tradicional passa a ser invadido pela imagem recorrente de Jesus Cristo nu — repetitiva, circular e profundamente egodistônica, com enorme culpa — e desenvolve, para compensar, o ritual de rezar determinado número de vezes para neutralizar o pensamento. Os conteúdos típicos das obsessões incluem religião, agressão, simetria, verificação, acumulação, cenas de sexo e contaminação (como a ideia constante de estar contaminado após tocar uma maçaneta).
 
 ## Obsessões e compulsões
 
 Diante da obsessão, a reação natural é ignorar, suprimir ou neutralizar o pensamento — o que falha, porque a origem é espontânea e circular. A estratégia mais adotada é neutralizar por meio de outros pensamentos ou ações: são as **compulsões**. Os atos e rituais compulsivos têm cinco características: (1) vivência frequente de desconforto subjetivo; (2) caráter egodistônico — experimentado como indesejável e contrário aos valores do paciente; (3) tentativa de resistir ou ao menos adiar o ato; (4) luta entre a compulsão e a vontade, o que não ocorre no ato impulsivo; e (5) alívio temporário ao realizar o ato, logo substituído pelo retorno do desconforto e pela urgência de repeti-lo.
 
-A aula distingue três tipos de ato pela progressão:
+Distinguem-se três tipos de ato pela progressão:
 
 | Ato | Progressão |
 | --- | --- |
@@ -45,7 +45,7 @@ A psicologia descreve o **reforço em cadeia** que mantém o transtorno: obsess�
 
 > **Pegadinha — hierarquia diagnóstica:** obsessões que ocorrem *apenas* durante episódio de mania indicam transtorno bipolar, não TOC. Se sintomas de TOC ocorrem fora das crises, são comorbidades.
 
-O diagnóstico diferencial exige checar se o comportamento compulsivo não pertence a outro transtorno delimitado: arrancar cabelos repetidamente é **tricotilomania**; beliscar a pele é **transtorno de escoriação (skin picking)**; episódios de comer compulsivo são **transtorno da compulsão alimentar (TCA)**. O TOC só é diagnosticado se a compulsão não estiver relacionada a essas síndromes. Crítica da aula ao DSM: ele cria múltiplos diagnósticos específicos em cima de uma psicopatologia que na verdade é única — a compulsão.
+O diagnóstico diferencial exige checar se o comportamento compulsivo não pertence a outro transtorno delimitado: arrancar cabelos repetidamente é **tricotilomania**; beliscar a pele é **transtorno de escoriação (skin picking)**; episódios de comer compulsivo são **transtorno da compulsão alimentar (TCA)**. O TOC só é diagnosticado se a compulsão não estiver relacionada a essas síndromes. Uma crítica frequente ao DSM: ele cria múltiplos diagnósticos específicos em cima de uma psicopatologia que na verdade é única — a compulsão.
 
 ## Tratamento do TOC
 

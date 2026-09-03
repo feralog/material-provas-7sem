@@ -5,7 +5,7 @@
   "intro": "Trinta questões sobre o transtorno obsessivo-compulsivo e o transtorno do estresse pós-traumático: obsessões e compulsões, neurobiologia do circuito do medo, critérios do DSM-5, tratamento por gravidade e a conduta de emergência no pronto-socorro.",
   "questoes": [
     {
-      "question": "Segundo a aula, qual é a diferença conceitual entre transtorno e doença?",
+      "question": "Qual é a diferença conceitual entre transtorno e doença?",
       "options": [
         "Doença: causa e efeito conhecidos e bem determinados; transtorno: resultante de múltiplos fatores biopsicossociais combinados",
         "Doença: causa e efeito conhecidos e bem determinados; transtorno: resultante de um único fator genético dominante",
@@ -16,7 +16,7 @@
       "explanation": "Doença implica relações de causa e efeito conhecidas e bem determinadas, como na doença de Alzheimer. Os transtornos mentais, em contraste, são a resultante de múltiplos fatores psicológicos, biológicos e sociais combinados e associados — por isso se fala em transtorno obsessivo-compulsivo, e não em doença obsessiva-compulsiva."
     },
     {
-      "question": "Quais características definem o pensamento obsessivo descrito na aula?",
+      "question": "Quais características definem o pensamento obsessivo?",
       "options": [
         "É intrusivo, repetitivo, indesejado, egodistônico e associado a grande ansiedade",
         "É elaborado ativamente, voluntário, prazeroso, egossintônico e associado a relaxamento",
@@ -35,7 +35,7 @@
         "A ideia é aceita pelo ego e incorporada como parte da própria identidade do indivíduo"
       ],
       "correctIndex": 0,
-      "explanation": "Egodistonia significa uma dissonância em relação ao ego: a ideia agride o sistema de valores do próprio paciente, que a percebe como absurda ou repulsiva. No exemplo da aula, a imagem recorrente de Jesus Cristo nu invadia um paciente de família católica, gerando enorme culpa e um ritual compensatório de rezar para neutralizar o pensamento."
+      "explanation": "Egodistonia significa uma dissonância em relação ao ego: a ideia agride o sistema de valores do próprio paciente, que a percebe como absurda ou repulsiva. Um exemplo típico é a imagem recorrente de Jesus Cristo nu invadindo um paciente de família católica, gerando enorme culpa e um ritual compensatório de rezar para neutralizar o pensamento."
     },
     {
       "question": "Segundo a definição de atos e rituais compulsivos, qual característica está correta?",
@@ -112,7 +112,7 @@
         "Falar sobre o pensamento diminui a chance real de o evento acontecer"
       ],
       "correctIndex": 0,
-      "explanation": "Na fusão pensamento-ação, pensar é vivenciado como fazer ou como aumento da probabilidade real do evento. O exemplo da aula é o pai que, invadido pela obsessão de machucar o bebê recém-nascido, passa a se ver como risco real de violência e evita ficar sozinho com o filho."
+      "explanation": "Na fusão pensamento-ação, pensar é vivenciado como fazer ou como aumento da probabilidade real do evento. Um exemplo típico é o pai que, invadido pela obsessão de machucar o bebê recém-nascido, passa a se ver como risco real de violência e evita ficar sozinho com o filho."
     },
     {
       "question": "Sobre a epidemiologia do TOC, qual afirmação está correta?",
@@ -137,7 +137,7 @@
       "explanation": "Para o DSM-5, basta a presença de obsessões e/ou compulsões — apenas uma delas já basta, embora geralmente ocorram juntas. Não há critério de tempo mínimo de evolução, mas os rituais devem consumir pelo menos 1 hora por dia ou causar sofrimento e prejuízo clinicamente significativos, sem origem em substâncias ou outro transtorno."
     },
     {
-      "question": "Um paciente arranca repetidamente os próprios cabelos. Qual é o diagnóstico mais apropriado segundo a hierarquia diagnóstica da aula?",
+      "question": "Um paciente arranca repetidamente os próprios cabelos. Qual é o diagnóstico mais apropriado pela hierarquia diagnóstica?",
       "options": [
         "Tricotilomania, e não TOC, por ser comportamento compulsivo de transtorno delimitado",
         "TOC, por se tratar de um comportamento compulsivo clássico do transtorno",

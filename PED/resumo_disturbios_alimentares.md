@@ -1,6 +1,6 @@
 ## Alimentar-se é mais do que nutrir-se
 
-Antes de falar em doença, a aula abre lembrando que o ato de comer opera em três dimensões simultâneas, e que o transtorno alimentar nasce justamente do desarranjo entre elas.
+Antes de falar em doença, vale lembrar que o ato de comer opera em três dimensões simultâneas, e que o transtorno alimentar nasce justamente do desarranjo entre elas.
 
 A **dimensão fisiológica e nutritiva** reúne os aspectos metabólicos, endócrinos, neuroquímicos e neuronais e as necessidades nutricionais próprias de cada fase. O centro da saciedade é o **hipotálamo**, articulado ao sistema límbico, sob modulação de **insulina, leptina e grelina**. A **dimensão social e cultural** aparece nas regras, rituais e tabus alimentares de cada grupo. A **dimensão afetiva e relacional** é a do prazer e da satisfação, das cerimônias religiosas, das comemorações e da construção de vínculos sociais.
 
@@ -10,7 +10,7 @@ Na adolescência as três se tensionam ao mesmo tempo: o corpo muda rápido, o g
 
 ## Como classificar: fenótipo clínico e fatores de risco
 
-A aula organiza os transtornos alimentares por **fenótipo clínico**, porque essa leitura ajuda a estimar risco clínico e a decidir o encaminhamento — mais do que memorizar nomes soltos.
+Os transtornos alimentares se organizam por **fenótipo clínico**, porque essa leitura ajuda a estimar risco clínico e a decidir o encaminhamento — mais do que memorizar nomes soltos.
 
 | Fenótipo | Quadros incluídos |
 | --- | --- |
@@ -219,7 +219,7 @@ O diagnóstico de OSFED (antes chamado de ED-NOS) é usado quando o quadro é **
 
 ---
 
-## Os casos da aula e o que eles ensinam
+## Dois casos clínicos e o que eles ensinam
 
 #### Caso 1 — JMS, 13 anos, feminino
 
@@ -231,6 +231,6 @@ O caso serve como **controle negativo**: não há restrição, compulsão, purga
 
 Há 8 meses passou a usar o celular cerca de **8 horas por dia** (jogos), com alterações do sono e queda do rendimento escolar. Após os pais restringirem o tempo de tela para 4 h/dia, surgiram **agitação, mau humor, agressividade e aumento do consumo de alimentos** quando não consegue acessar o celular. Ao exame: **estatura escore-z +1 e IMC escore-z +2,5**, exame físico sem alterações, Tanner G2P2; exame psíquico com fala acelerada, ficando agitado e irritado ao ser solicitado a desligar o celular, humor eutímico, sem ideação suicida.
 
-Aqui a leitura é a oposta: **comer em excesso como resposta emocional, sem purgação**, num adolescente com obesidade e uso problemático de jogos eletrônicos — exatamente a associação que a aula descreve entre telas e transtornos alimentares.
+Aqui a leitura é a oposta: **comer em excesso como resposta emocional, sem purgação**, num adolescente com obesidade e uso problemático de jogos eletrônicos — exatamente a associação descrita entre telas e transtornos alimentares.
 
 > Fechando o raciocínio de prova: **peso baixo com distorção da autoimagem** → anorexia; **peso normal com purgação** → bulimia; **peso alto com hiperfagia e sem purgação** → transtorno de compulsão alimentar; **seletividade por textura sem qualquer preocupação corporal** → TARE.

@@ -74,7 +74,7 @@ São três os critérios que disparam investigação: **desenvolvimento precoce*
 
 ## Puberdade precoce: reconhecer e classificar
 
-O caso da aula é o modelo. **M.E.S., feminina, 6 anos e 4 meses**, com broto mamário bilateral e odor axilar há 6 meses, além de aceleração do crescimento ("perdeu roupas rapidamente"). Na anamnese, é obrigatório perguntar por **exposição a desreguladores endócrinos** (cremes com estrogênio, excesso de soja) e por sinais de **hipertensão intracraniana** (cefaleia, vômitos, alterações visuais, hemiparesia, sonolência). Ao exame: estatura em escore Z **+2,32**, **velocidade de crescimento de 9,5 cm/ano** (referência 5-6 cm/ano), acne, odor axilar, **M3P2**.
+Um caso típico serve de modelo. **M.E.S., feminina, 6 anos e 4 meses**, com broto mamário bilateral e odor axilar há 6 meses, além de aceleração do crescimento ("perdeu roupas rapidamente"). Na anamnese, é obrigatório perguntar por **exposição a desreguladores endócrinos** (cremes com estrogênio, excesso de soja) e por sinais de **hipertensão intracraniana** (cefaleia, vômitos, alterações visuais, hemiparesia, sonolência). Ao exame: estatura em escore Z **+2,32**, **velocidade de crescimento de 9,5 cm/ano** (referência 5-6 cm/ano), acne, odor axilar, **M3P2**.
 
 > **A pegadinha do "alto hoje".** M3P2 + velocidade acelerada + escore Z acima de +2 não é boa notícia: indica maturação esquelética avançada. As epífises se fecham cedo, o crescimento para prematuramente e a **estatura final fica muito abaixo do alvo parental**. A criança é alta na consulta e será um adulto baixo.
 

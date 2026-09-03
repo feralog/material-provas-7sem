@@ -1,0 +1,354 @@
+{
+  "titulo": "Anatomia e Fisiologia Ocular I",
+  "eyebrow": "Oftalmologia · Órbita e Musculatura",
+  "subtitulo": "Da óptica do olho às paredes ósseas e aos seis músculos",
+  "intro": "Fisiologia óptica do globo, ossos e paredes da órbita, ápice orbitário e seu conteúdo, fratura de assoalho blow-out e os seis músculos extraoculares — origem, ação, inervação e irrigação.",
+  "questoes": [
+    {
+      "question": "No olho esquemático de Gullstrand, a luz atravessa quatro meios refringentes antes de chegar à retina. Qual é a ordem correta desses meios, da frente para trás?",
+      "options": [
+        "Córnea, humor aquoso, cristalino e vítreo",
+        "Córnea, cristalino, humor aquoso e vítreo",
+        "Humor aquoso, córnea, vítreo e cristalino",
+        "Cristalino, córnea, vítreo e humor aquoso"
+      ],
+      "correctIndex": 0,
+      "explanation": "O olho esquemático de Gullstrand modela as propriedades ópticas do olho humano a partir de quatro meios refringentes em série: córnea, humor aquoso, cristalino e corpo vítreo. A luz atinge primeiro a córnea, atravessa o humor aquoso da câmara anterior, é refratada pelo cristalino e percorre o vítreo até a retina."
+    },
+    {
+      "question": "A córnea é o principal elemento refrativo do olho humano. Aproximadamente quantas dioptrias ela contribui para o poder refrativo total?",
+      "options": [
+        "Cerca de 40 dioptrias",
+        "Cerca de 19 dioptrias",
+        "Cerca de 10 dioptrias",
+        "Cerca de 60 dioptrias"
+      ],
+      "correctIndex": 0,
+      "explanation": "A córnea, junto com o humor aquoso que forma a face posterior dessa primeira lente espessa, contribui com cerca de 40 dioptrias. O cristalino, segunda lente do sistema, acrescenta cerca de 19 dioptrias — mas é ele, e não a córnea, que tem poder variável pela acomodação."
+    },
+    {
+      "question": "Qual é o diâmetro anteroposterior aproximado do bulbo ocular de um adulto emetrope?",
+      "options": [
+        "Cerca de 24 mm",
+        "Cerca de 12 mm",
+        "Cerca de 30 mm",
+        "Cerca de 18 mm"
+      ],
+      "correctIndex": 0,
+      "explanation": "O bulbo ocular adulto mede em média 24,2 mm no eixo anteroposterior. Esse valor é a referência da emetropia: olhos mais longos tendem à miopia axial e olhos mais curtos, à hipermetropia axial."
+    },
+    {
+      "question": "Sobre a capacidade da órbita adulta e a fração desse volume ocupada pelo globo ocular, qual afirmação está correta?",
+      "options": [
+        "Cerca de 30 mL, com o globo ocupando 20%",
+        "Cerca de 10 mL, com o globo ocupando 20%",
+        "Cerca de 30 mL, com o globo ocupando 80%",
+        "Cerca de 60 mL, com o globo ocupando 50%"
+      ],
+      "correctIndex": 0,
+      "explanation": "A órbita adulta tem volume aproximado de 30 mL e o globo ocupa apenas cerca de 20% desse espaço. Os 80% restantes são gordura orbitária, músculos, vasos e nervos — reserva que explica por que processos expansivos retrobulbares só causam proptose depois de certo volume."
+    },
+    {
+      "question": "Sete ossos participam da formação da órbita. Qual dos ossos abaixo NÃO é um deles?",
+      "options": [
+        "Osso temporal",
+        "Osso palatino",
+        "Osso lacrimal",
+        "Osso zigomático"
+      ],
+      "correctIndex": 0,
+      "explanation": "A órbita é formada por frontal, esfenoide, etmoide, lacrimal, palatino, zigomático e maxilar. O osso temporal não participa de nenhuma de suas paredes — fica lateral e posterior à órbita, contribuindo para a fossa temporal e para a base do crânio."
+    },
+    {
+      "question": "Na figura da órbita óssea, a parede medial é a mais fina de toda a cavidade. Que osso forma a maior parte dessa parede?",
+      "options": [
+        "Etmoide, pela lâmina papirácea",
+        "Maxilar, pelo assoalho orbitário",
+        "Zigomático, na parede lateral",
+        "Frontal, no teto da órbita"
+      ],
+      "correctIndex": 0,
+      "explanation": "A parede medial é formada em sua maior parte pela lâmina orbital do etmoide, chamada lâmina papirácea justamente por ter espessura de papel. Essa fragilidade explica tanto a fratura medial com enfisema orbitário ao assoar o nariz quanto a propagação de sinusite etmoidal para a órbita.",
+      "image": "f2_s11i1",
+      "imageCaption": "Anatomia óssea da órbita em vista anterior"
+    },
+    {
+      "question": "O esquema mostra as duas órbitas em vista superior, com as paredes mediais paralelas e cada parede lateral formando 45° com o plano sagital. Que ângulo as duas paredes laterais formam entre si?",
+      "options": [
+        "Um ângulo de 90 graus",
+        "Um ângulo de 45 graus",
+        "Um ângulo de 23 graus",
+        "Um ângulo de 60 graus"
+      ],
+      "correctIndex": 0,
+      "explanation": "Como cada parede lateral se afasta 45° do plano sagital, as duas paredes laterais formam 90° entre si. As paredes mediais, ao contrário, são praticamente paralelas — é essa geometria divergente que faz os eixos orbitários apontarem para fora.",
+      "image": "f2_s07i1",
+      "imageCaption": "Eixos orbitário e visual em vista superior"
+    },
+    {
+      "question": "Na posição primária do olhar, o eixo visual não coincide com o eixo orbitário. Qual é o ângulo aproximado entre eles?",
+      "options": [
+        "Cerca de 23 graus",
+        "Cerca de 45 graus",
+        "Cerca de 90 graus",
+        "Cerca de 10 graus"
+      ],
+      "correctIndex": 0,
+      "explanation": "O eixo orbitário aponta para fora e para frente, enquanto o eixo visual segue reto para o objeto fixado; entre eles há cerca de 23°. Essa divergência é o que dá aos músculos retos superior e inferior ações secundárias de torção e adução, além da elevação e depressão principais."
+    },
+    {
+      "question": "A órbita é vizinha de vários seios paranasais. Qual alternativa descreve corretamente essas relações anatômicas?",
+      "options": [
+        "Acima o seio frontal e abaixo o seio maxilar",
+        "Acima o seio maxilar e abaixo o seio frontal",
+        "Acima o seio etmoidal e abaixo o esfenoidal",
+        "Acima o seio esfenoidal e abaixo o frontal"
+      ],
+      "correctIndex": 0,
+      "explanation": "O teto da órbita separa-a do seio frontal e da fossa craniana anterior; o assoalho a separa do seio maxilar; medialmente estão as células etmoidais e, mais posteriormente, o seio esfenoidal. Essa vizinhança explica a facilidade com que sinusites se complicam em celulite orbitária."
+    },
+    {
+      "question": "Um trauma com objeto rombo maior que a rima orbitária, como bola ou punho, eleva bruscamente a pressão intraorbitária e rompe o assoalho poupando o rebordo. Como se chama o achado radiológico do conteúdo orbitário herniado para o seio subjacente?",
+      "options": [
+        "Sinal da gota pendente",
+        "Sinal da linha branca",
+        "Sinal do halo escuro",
+        "Sinal do anel duplo"
+      ],
+      "correctIndex": 0,
+      "explanation": "É o sinal da gota pendente: na tomografia coronal, gordura e periórbita herniadas pelo traço de fratura formam uma opacidade pendurada no teto do seio maxilar. É o achado clássico da fratura blow-out do assoalho orbitário."
+    },
+    {
+      "question": "Na fratura blow-out do assoalho da órbita, o encarceramento do músculo reto inferior no traço de fratura produz tipicamente:",
+      "options": [
+        "Diplopia que piora ao olhar para cima",
+        "Diplopia que piora ao olhar de lado",
+        "Midríase fixa e perda do reflexo direto",
+        "Ptose palpebral com pupila poupada"
+      ],
+      "correctIndex": 0,
+      "explanation": "Preso na fenda óssea, o reto inferior não permite que o olho suba: a limitação da elevação gera diplopia vertical máxima na supraversão. Enoftalmia e hipoestesia na área do nervo infraorbitário completam o quadro clássico."
+    },
+    {
+      "question": "A tomografia coronal é o exame de escolha na suspeita de fratura do assoalho orbitário. Para qual cavidade o conteúdo orbitário se hernia quando esse assoalho se rompe?",
+      "options": [
+        "Seio maxilar",
+        "Seio frontal",
+        "Seio esfenoidal",
+        "Célula etmoidal"
+      ],
+      "correctIndex": 0,
+      "explanation": "O assoalho da órbita é o teto do seio maxilar, como mostra o corte coronal. Rompido o assoalho, gordura orbitária e eventualmente o reto inferior descem para dentro do seio maxilar — a herniação que produz o sinal da gota pendente.",
+      "image": "f2_s09i1",
+      "imageCaption": "Tomografia coronal das órbitas e seios paranasais"
+    },
+    {
+      "question": "Que estruturas atravessam o canal óptico, no ápice da órbita?",
+      "options": [
+        "Nervo óptico e artéria oftálmica",
+        "Nervo óptico e veia oftálmica superior",
+        "Nervo oculomotor e artéria lacrimal",
+        "Nervo abducente e artéria etmoidal"
+      ],
+      "correctIndex": 0,
+      "explanation": "O canal óptico, escavado na asa menor do esfenoide, dá passagem ao nervo óptico (II par) acompanhado da artéria oftálmica, primeiro ramo intracraniano da carótida interna. As veias oftálmicas, ao contrário, saem pela fissura orbital superior."
+    },
+    {
+      "question": "Pela fissura orbital superior, também chamada fenda esfenoidal, passam:",
+      "options": [
+        "III, IV, V e VI pares e veias oftálmicas",
+        "Apenas o III par e a artéria oftálmica",
+        "II e III pares e a veia oftálmica média",
+        "Apenas o IV e o VI par, sem veias"
+      ],
+      "correctIndex": 0,
+      "explanation": "A fissura orbital superior transmite os nervos oculomotor (III), troclear (IV), o ramo oftálmico do trigêmeo (V1) e o abducente (VI), além da raiz simpática do gânglio ciliar e das veias oftálmicas. Sua lesão global produz a síndrome da fissura orbital superior, com oftalmoplegia e hipoestesia da hemifronte."
+    },
+    {
+      "question": "A figura mostra o ápice orbitário de frente, com o anel tendíneo comum e os nervos ao seu redor. Qual desses nervos passa POR FORA do anel, ao lado dos nervos frontal e lacrimal?",
+      "options": [
+        "Troclear (IV par)",
+        "Abducente (VI par)",
+        "Nasociliar (de V1)",
+        "Oculomotor (III par)"
+      ],
+      "correctIndex": 0,
+      "explanation": "Frontal, lacrimal e troclear entram na órbita pela porção lateral e superior da fissura orbital superior, fora do anel de Zinn. Dentro do anel passam os dois ramos do oculomotor, o nasociliar e o abducente, além do nervo óptico pelo canal óptico.",
+      "image": "f2_s12i1",
+      "imageCaption": "Ápice orbitário e anel tendíneo comum (anel de Zinn)"
+    },
+    {
+      "question": "A figura identifica as aberturas ósseas do ápice orbitário e as origens musculares. O anel tendíneo comum, ou anel de Zinn, dá origem a:",
+      "options": [
+        "Os quatro músculos retos",
+        "Os dois músculos oblíquos",
+        "Somente os retos horizontais",
+        "O orbicular e o levantador"
+      ],
+      "correctIndex": 0,
+      "explanation": "Os quatro retos — superior, inferior, medial e lateral — nascem do anel tendíneo comum, que circunda o canal óptico e parte da fissura orbital superior. O oblíquo superior e o levantador da pálpebra originam-se logo acima e fora do anel, e o oblíquo inferior nem sequer nasce no ápice.",
+      "image": "s05i1",
+      "imageCaption": "Aberturas do ápice orbitário e origens musculares"
+    },
+    {
+      "question": "Todos os músculos extraoculares se originam no ápice da órbita, com uma exceção que nasce na porção anteromedial do assoalho, junto ao maxilar. Qual é esse músculo?",
+      "options": [
+        "M. oblíquo inferior",
+        "M. oblíquo superior",
+        "M. reto superior",
+        "M. reto lateral"
+      ],
+      "correctIndex": 0,
+      "explanation": "O oblíquo inferior é o único músculo extraocular que não se origina no ápice orbitário: ele nasce na parte anteromedial do assoalho da órbita, no maxilar, lateralmente à fossa do saco lacrimal, e corre para trás e para fora até a esclera temporal posterior.",
+      "image": "s06i1",
+      "imageCaption": "Origens dos músculos extraoculares na órbita"
+    },
+    {
+      "question": "Qual a ação principal e a inervação do músculo reto lateral?",
+      "options": [
+        "Abdução, pelo VI par craniano",
+        "Adução, pelo VI par craniano",
+        "Abdução, pelo III par craniano",
+        "Adução, pelo III par craniano"
+      ],
+      "correctIndex": 0,
+      "explanation": "O reto lateral abduz o olho, isto é, gira a córnea para o lado temporal, e é o único músculo inervado pelo nervo abducente (VI par). Por isso a paralisia do VI par cursa com esotropia e limitação isolada da abdução."
+    },
+    {
+      "question": "Qual a ação principal e a inervação do músculo reto medial?",
+      "options": [
+        "Adução, pelo ramo inferior do III",
+        "Adução, pelo ramo superior do III",
+        "Abdução, pelo ramo inferior do III",
+        "Adução, pelo IV par craniano"
+      ],
+      "correctIndex": 0,
+      "explanation": "O reto medial aduz o olho e recebe fibras do ramo inferior do nervo oculomotor, o mesmo ramo que inerva o reto inferior e o oblíquo inferior. É o músculo extraocular mais potente e o principal responsável pela convergência."
+    },
+    {
+      "question": "Qual a ação principal e a inervação do músculo reto superior?",
+      "options": [
+        "Elevação, pelo ramo superior do III",
+        "Elevação, pelo ramo inferior do III",
+        "Depressão, pelo ramo superior do III",
+        "Elevação, pelo IV par craniano"
+      ],
+      "correctIndex": 0,
+      "explanation": "O reto superior eleva o olho e é inervado pelo ramo superior do oculomotor, que também supre o levantador da pálpebra superior. Como seu plano de ação forma 23° com o eixo visual, ele ainda intorce e aduz secundariamente."
+    },
+    {
+      "question": "O tendão do músculo oblíquo superior faz uma volta na tróclea, na porção superomedial da órbita, antes de se inserir na esclera. Qual sua ação principal e sua inervação?",
+      "options": [
+        "Intorção, pelo IV par craniano",
+        "Extorção, pelo IV par craniano",
+        "Intorção, pelo III par craniano",
+        "Extorção, pelo III par craniano"
+      ],
+      "correctIndex": 0,
+      "explanation": "O oblíquo superior intorce o olho, rodando o polo superior da córnea para dentro, e secundariamente deprime e abduz. É o único músculo inervado pelo nervo troclear (IV par), que ainda tem a particularidade de ser o único par craniano de emergência dorsal."
+    },
+    {
+      "question": "Qual a ação principal e a inervação do músculo oblíquo inferior?",
+      "options": [
+        "Extorção, pelo ramo inferior do III",
+        "Intorção, pelo ramo inferior do III",
+        "Extorção, pelo ramo superior do III",
+        "Extorção, pelo IV par craniano"
+      ],
+      "correctIndex": 0,
+      "explanation": "O oblíquo inferior extorce o olho e, secundariamente, eleva e abduz. Sua inervação vem do ramo inferior do oculomotor, que caminha por baixo do globo — daí esse ramo suprir reto inferior, reto medial e oblíquo inferior."
+    },
+    {
+      "question": "Quais estruturas são inervadas pelo ramo SUPERIOR do nervo oculomotor?",
+      "options": [
+        "Reto superior e levantador da pálpebra",
+        "Reto inferior e oblíquo inferior",
+        "Reto medial e oblíquo superior",
+        "Reto lateral e músculo orbicular"
+      ],
+      "correctIndex": 0,
+      "explanation": "O ramo superior do III par inerva apenas dois músculos: o reto superior e o levantador da pálpebra superior. O ramo inferior supre reto inferior, reto medial e oblíquo inferior, além de levar as fibras parassimpáticas ao gânglio ciliar."
+    },
+    {
+      "question": "A figura mostra que o plano dos músculos retos verticais forma cerca de 23° com o eixo óptico do olho em posição primária. Qual é a consequência funcional dessa angulação?",
+      "options": [
+        "O reto superior eleva e também intorce",
+        "O reto superior eleva e também extorce",
+        "O reto superior apenas eleva o olho",
+        "O reto superior deprime e intorce"
+      ],
+      "correctIndex": 0,
+      "explanation": "Como a linha de tração dos retos verticais é oblíqua em relação ao eixo visual, o reto superior soma à elevação uma intorção e uma adução secundárias, e o reto inferior soma à depressão extorção e adução. Quando o olho é abduzido 23°, a linha de tração se alinha ao eixo visual e a ação passa a ser puramente vertical.",
+      "image": "f2_s15i1",
+      "imageCaption": "Plano muscular dos retos formando 23° com o eixo óptico"
+    },
+    {
+      "question": "Paciente apresenta diplopia horizontal que piora ao olhar para a direita, com limitação da abdução do olho direito e esotropia em posição primária. Qual nervo está acometido?",
+      "options": [
+        "VI par (abducente) direito",
+        "IV par (troclear) direito",
+        "III par (oculomotor) direito",
+        "VII par (facial) direito"
+      ],
+      "correctIndex": 0,
+      "explanation": "A limitação isolada da abdução aponta para o reto lateral, único músculo suprido pelo nervo abducente. Sem a abdução, o reto medial não encontra oposição e o olho desvia para dentro, gerando esotropia e diplopia horizontal que piora no campo de ação do músculo parético."
+    },
+    {
+      "question": "Paciente chega com ptose completa à esquerda; ao se elevar a pálpebra, o olho está desviado para baixo e para fora, com pupila midriática. Qual nervo está lesado?",
+      "options": [
+        "III par craniano (oculomotor)",
+        "IV par craniano (troclear)",
+        "VI par craniano (abducente)",
+        "VII par craniano (facial)"
+      ],
+      "correctIndex": 0,
+      "explanation": "A paralisia completa do oculomotor abole o levantador da pálpebra, os retos superior, medial e inferior e o oblíquo inferior — restam apenas o reto lateral e o oblíquo superior, que puxam o olho para baixo e para fora. O acometimento pupilar sugere compressão externa, como aneurisma de comunicante posterior."
+    },
+    {
+      "question": "As artérias ciliares anteriores chegam ao segmento anterior acompanhando os músculos retos. Como elas se distribuem entre esses músculos?",
+      "options": [
+        "Duas nos retos, exceto uma no lateral",
+        "Duas nos retos, exceto uma no medial",
+        "Uma em cada um dos quatro retos",
+        "Duas em cada um dos quatro retos"
+      ],
+      "correctIndex": 0,
+      "explanation": "Os retos superior, inferior e medial levam duas artérias ciliares anteriores cada; o reto lateral leva apenas uma. Como todas derivam da artéria oftálmica, ramo da carótida interna, a desinserção simultânea de três retos numa mesma cirurgia arrisca isquemia do segmento anterior."
+    },
+    {
+      "question": "As veias vorticosas, em número de quatro a seis e visíveis como estruturas violáceas próximas aos oblíquos, drenam o sangue uveal para:",
+      "options": [
+        "Veias oftálmicas e seio cavernoso",
+        "Veia central da retina e jugular",
+        "Veias etmoidais e seio frontal",
+        "Plexo pterigóideo e seio sagital"
+      ],
+      "correctIndex": 0,
+      "explanation": "As vorticosas recolhem o sangue de coroide, corpo ciliar e íris e desembocam nas veias oftálmicas superior e inferior, que drenam para o seio cavernoso. Como esse sistema é desprovido de válvulas, infecções da face e da órbita podem ascender e causar trombose de seio cavernoso."
+    },
+    {
+      "question": "Qual é a inervação do músculo orbicular e do músculo levantador da pálpebra superior, respectivamente?",
+      "options": [
+        "Nervo facial e nervo oculomotor",
+        "Nervo oculomotor e nervo facial",
+        "Nervo facial e nervo trigêmeo",
+        "Nervo trigêmeo e nervo facial"
+      ],
+      "correctIndex": 0,
+      "explanation": "O orbicular fecha as pálpebras e é inervado pelo nervo facial (VII par); o levantador da pálpebra superior abre a fenda e recebe o ramo superior do oculomotor (III par). Por isso a paralisia facial cursa com lagoftalmo, e a do III par, com ptose."
+    },
+    {
+      "question": "A figura identifica os músculos extraoculares em vista lateral do globo. Que par de músculos se insere atrás do equador do olho, o que lhes confere ação predominantemente torcional?",
+      "options": [
+        "Os oblíquos superior e inferior",
+        "Os retos medial e lateral",
+        "Os retos superior e inferior",
+        "Os retos lateral e inferior"
+      ],
+      "correctIndex": 0,
+      "explanation": "Os oblíquos se inserem na metade posterior e temporal da esclera, atrás do equador, e por isso rodam o globo em torno do eixo anteroposterior: o superior intorce, o inferior extorce. Os quatro retos se inserem à frente do equador e agem como elevadores, depressores, adutores e abdutores.",
+      "image": "f2_s14i1",
+      "imageCaption": "Os seis músculos extraoculares em vista lateral"
+    }
+  ]
+}

@@ -27,6 +27,8 @@ _template/uploads/
 # Lixo acidental nas pastas de material (não faz parte do pipeline)
 *.exe
 *.log
+*.doc
+*.zip
 
 # Referências locais (livros, transcrições de aula) — nunca publicar
 Neurologia/Ignorar/
@@ -35,6 +37,9 @@ Psiquiatria/Aula 3 - TOC e TEPT.md
 
 # conteudo_* que embute páginas de capítulo de livro (Tratado de Ginecologia)
 GO/conteudo_doencas_mamarias.md
+
+# Caderno de anotacoes de colega (trabalho de terceiro, com nome) — so referencia local
+Otorrino/conteudo_anotacoes_otorrino.md
 
 # Lixo do sistema
 Thumbs.db

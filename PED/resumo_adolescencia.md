@@ -10,11 +10,11 @@ Também é clínico distinguir dois termos que costumam ser usados como sinônim
 
 O que define clinicamente essa fase não é apenas o intervalo etário, mas a coexistência de **vulnerabilidades e oportunidades**. O mesmo cérebro plástico que expõe o adolescente a comportamentos de risco é o que responde melhor a intervenções preventivas. Por isso a consulta do adolescente não é uma consulta pediátrica encolhida nem uma consulta de adulto antecipada: é um formato próprio, com regras próprias de sigilo, de escuta e de tomada de decisão.
 
-A aula organiza as particularidades em quatro blocos que se retroalimentam: **biológicas** (puberdade, estirão de crescimento, maturação sexual, desenvolvimento cerebral), **neurológicas** (córtex pré-frontal imaturo, predomínio límbico, impulsividade), **psicológicas** (construção da identidade, oscilações de humor, pertencimento) e **sociais** (autonomia progressiva, grupo de pares, redes sociais). Dos comportamentos de risco, três são destacados: **álcool e drogas, sexualidade e percepção reduzida de risco**.
+As particularidades se organizam em quatro blocos que se retroalimentam: **biológicas** (puberdade, estirão de crescimento, maturação sexual, desenvolvimento cerebral), **neurológicas** (córtex pré-frontal imaturo, predomínio límbico, impulsividade), **psicológicas** (construção da identidade, oscilações de humor, pertencimento) e **sociais** (autonomia progressiva, grupo de pares, redes sociais). Dos comportamentos de risco, três são destacados: **álcool e drogas, sexualidade e percepção reduzida de risco**.
 
 ![As quatro dimensões das particularidades da adolescência](img:pg04)
 
-> O objetivo da aula não é decorar listas: é reconhecer que o comportamento "difícil" do adolescente tem substrato biológico, psicológico e social — e que a abordagem deve ser ética, segura, centrada nele e estimuladora do protagonismo.
+> O objetivo não é decorar listas: é reconhecer que o comportamento "difícil" do adolescente tem substrato biológico, psicológico e social — e que a abordagem deve ser ética, segura, centrada nele e estimuladora do protagonismo.
 
 ---
 
@@ -77,7 +77,7 @@ Em momento de **escuta sigilosa**, Júlia relatou relação sexual com namorado 
 
 ![Os seis eixos do desenvolvimento psicossocial e os riscos comuns](img:pg21)
 
-No plano psicossocial e identitário, a aula organiza seis eixos: **busca identitária, autoimagem, individuação, pertencimento, moral e ética, e influência digital**. Os **riscos comuns** são transtornos de humor e ansiedade, automutilação e risco de suicídio, transtornos de imagem corporal e comportamentos de risco.
+No plano psicossocial e identitário, são seis os eixos: **busca identitária, autoimagem, individuação, pertencimento, moral e ética, e influência digital**. Os **riscos comuns** são transtornos de humor e ansiedade, automutilação e risco de suicídio, transtornos de imagem corporal e comportamentos de risco.
 
 Júlia relata insatisfação intensa com o corpo, comparações constantes em redes sociais, sensação de "não ser boa o suficiente", **episódios de automutilação superficial** (cortes em antebraço), medo de decepcionar os pais, e **nega ideação suicida atual**.
 
@@ -121,7 +121,7 @@ No capítulo, o mnemônico aparece na forma **HEEADSSS**, criado por **Henry S. 
 
 ## Direitos, ética e autonomia progressiva
 
-A pergunta que abre este bloco é direta: *o adolescente pode decidir sozinho sobre sua saúde?* A resposta da aula é a **autonomia progressiva**. Os princípios são cinco:
+A pergunta que abre este bloco é direta: *o adolescente pode decidir sozinho sobre sua saúde?* A resposta é a **autonomia progressiva**. Os princípios são cinco:
 
 - O adolescente **deve participar** das decisões em saúde;
 - **Sigilo e confidencialidade** são princípio ético do atendimento;
@@ -182,7 +182,7 @@ As queixas mais comuns no ambulatório são baixa estatura, puberdade precoce ou
 
 ## Os dois casos: adolescer com e sem doença crônica
 
-A aula constrói deliberadamente um contraste entre dois adolescentes.
+Vale contrastar deliberadamente dois adolescentes.
 
 ### Júlia — 15 anos, sem doença de base
 

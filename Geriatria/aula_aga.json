@@ -2,7 +2,7 @@
   "titulo": "Avaliação Geriátrica Ampla",
   "eyebrow": "Geriatria · Avaliação Funcional",
   "subtitulo": "Instrumentos, pontos de corte e o diagnóstico funcional do idoso",
-  "intro": "Material da aula de AGA: princípios, síndromes geriátricas e os instrumentos de rastreio com pontuação e ponto de corte — Katz, Lawton, Pfeffer, MEEM, relógio, fluência verbal, GDS, PHQ-9, Cornell, NPI, MNA, SPPB e APGAR familiar. Fecha com o diagnóstico geriátrico-gerontológico e o plano de metas terapêuticas.",
+  "intro": "Princípios da Avaliação Geriátrica Ampla, síndromes geriátricas e os instrumentos de rastreio com pontuação e ponto de corte — Katz, Lawton, Pfeffer, MEEM, relógio, fluência verbal, GDS, PHQ-9, Cornell, NPI, MNA, SPPB e APGAR familiar. Fecha com o diagnóstico geriátrico-gerontológico e o plano de metas terapêuticas.",
   "questoes": [
     {
       "question": "A AGA difere de um atendimento médico habitual sobretudo porque:",
@@ -37,7 +37,7 @@
         "Diabetes, tabagismo e obesidade central"
       ],
       "correctIndex": 0,
-      "explanation": "As grandes síndromes geriátricas listadas na aula são insuficiência familiar, iatrogenia, incapacidade cognitiva, imobilidade, incontinência esfincteriana e incapacidade comunicativa. As demais opções trazem doenças crônicas e fatores de risco, que são comorbidades e não síndromes geriátricas."
+      "explanation": "As grandes síndromes geriátricas são insuficiência familiar, iatrogenia, incapacidade cognitiva, imobilidade, incontinência esfincteriana e incapacidade comunicativa. As demais opções trazem doenças crônicas e fatores de risco, que são comorbidades e não síndromes geriátricas."
     },
     {
       "question": "Paciente com esclerose lateral amiotrófica avançada, tetraparético, mas com cognição intacta e capaz de decidir sobre seu tratamento. Qual a classificação correta?",
@@ -134,7 +134,7 @@
       "imageCaption": "Índice de Pfeffer — itens e pontuação de 0 a 3"
     },
     {
-      "question": "Segundo os pontos de corte do MEEM de Brucki et al. (2003), reproduzidos no material, quais são os valores extremos por escolaridade?",
+      "question": "Segundo os pontos de corte do MEEM de Brucki et al. (2003), quais são os valores extremos por escolaridade?",
       "options": [
         "20 pontos para analfabetos e 29 para mais de 11 anos de estudo",
         "29 pontos para analfabetos e 20 para mais de 11 anos de estudo",
@@ -215,7 +215,7 @@
       "explanation": "Conta-se a resposta depressiva, e nem sempre ela é o 'sim'. Em 'Está satisfeito com sua vida?' pontua o NÃO; em 'Sente que a vida está vazia?' pontua o SIM. Marca-se 1 quando a resposta for igual ao exemplo entre parênteses e 0 quando for diferente. O idoso deve ser avisado antes de que só pode responder sim ou não."
     },
     {
-      "question": "Sobre PHQ-9 e Escala de Cornell, os pontos de corte apresentados na aula são:",
+      "question": "Sobre PHQ-9 e Escala de Cornell, os pontos de corte usuais são:",
       "options": [
         "PHQ-9 acima de 10 e Cornell acima de 12 sugerem depressão",
         "PHQ-9 acima de 5 e Cornell acima de 30 sugerem depressão",
@@ -365,7 +365,7 @@
         "Nível 0 muito ativo até nível 10 doente terminal"
       ],
       "correctIndex": 0,
-      "explanation": "A escala vai de 1 (muito ativo) a 9 (doente terminal), passando por ativo, regular, vulnerável, levemente frágil, moderadamente frágil, gravemente frágil e muito gravemente frágil. A aula lembra que a maioria dos idosos avaliados fica no nível 3 (regular), e que 'ativo' é, por exemplo, quem só faz atividade física nas férias.",
+      "explanation": "A escala vai de 1 (muito ativo) a 9 (doente terminal), passando por ativo, regular, vulnerável, levemente frágil, moderadamente frágil, gravemente frágil e muito gravemente frágil. Vale lembrar que a maioria dos idosos avaliados fica no nível 3 (regular), e que 'ativo' é, por exemplo, quem só faz atividade física nas férias.",
       "image": "pg44",
       "imageCaption": "Escala Clínica de Fragilidade — níveis 1 a 9"
     },
@@ -400,7 +400,7 @@
         "Encaminhar direto para internação em unidade de geriatria"
       ],
       "correctIndex": 0,
-      "explanation": "A aula é explícita: a pontuação sozinha não quer dizer nada, é preciso avaliar as queixas e a profissão do paciente — um professor de matemática que não consegue mais fazer conta é sinal de alerta. Além disso, com mais de 11 anos de estudo o corte de Brucki é 29, então 28 já está abaixo. Repita o MEEM a cada 6 meses e complemente com outros testes."
+      "explanation": "A pontuação isolada não quer dizer nada, é preciso avaliar as queixas e a profissão do paciente — um professor de matemática que não consegue mais fazer conta é sinal de alerta. Além disso, com mais de 11 anos de estudo o corte de Brucki é 29, então 28 já está abaixo. Repita o MEEM a cada 6 meses e complemente com outros testes."
     }
   ]
 }

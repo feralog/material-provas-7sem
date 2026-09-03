@@ -1,0 +1,374 @@
+{
+  "titulo": "Diagnóstico Diferencial do Olho Vermelho",
+  "eyebrow": "Oftalmologia · Urgências",
+  "subtitulo": "Separar a conjuntivite banal da urgência que ameaça a visão",
+  "intro": "Causas traumáticas e não traumáticas de olho vermelho, o diagnóstico diferencial das conjuntivites viral, bacteriana e alérgica, a oftalmia neonatal e sua profilaxia, e os sinais de alarme que exigem encaminhamento imediato.",
+  "questoes": [
+    {
+      "question": "Quais agentes respondem pela maioria dos casos de conjuntivite bacteriana aguda, quadro benigno e autolimitado em cerca de 14 dias?",
+      "options": [
+        "Staphylococcus aureus e Streptococcus pneumoniae",
+        "Neisseria gonorrhoeae e Neisseria meningitidis",
+        "Haemophilus influenzae e Escherichia coli",
+        "Chlamydia trachomatis e Moraxella lacunata"
+      ],
+      "correctIndex": 0,
+      "explanation": "A forma aguda é a mais comum e tem curso benigno, resolvendo-se em torno de duas semanas mesmo sem tratamento. Staphylococcus aureus e Streptococcus pneumoniae são os agentes habituais. As neissérias produzem a forma hiperaguda, e Haemophilus e E. coli, a subaguda."
+    },
+    {
+      "question": "Uma conjuntivite de instalação hiperaguda, com secreção purulenta muito abundante, deve levantar suspeita de qual agente?",
+      "options": [
+        "Neisseria gonorrhoeae",
+        "Haemophilus influenzae",
+        "Streptococcus pyogenes",
+        "Staphylococcus aureus"
+      ],
+      "correctIndex": 0,
+      "explanation": "A conjuntivite hiperaguda é causada por Neisseria gonorrhoeae ou Neisseria meningitidis. O gonococo é capaz de invadir epitélio corneano íntegro, o que torna o quadro uma emergência pelo risco de perfuração. Os demais agentes citados produzem quadros agudos ou subagudos, de evolução mais lenta."
+    },
+    {
+      "question": "A conjuntivite bacteriana de curso crônico costuma ser secundária a que condição?",
+      "options": [
+        "Doença palpebral ou obstrução do ducto nasolacrimal",
+        "Uso prolongado de colírio anti-histamínico tópico",
+        "Exposição ocupacional repetida à luz ultravioleta",
+        "Deficiência congênita de imunoglobulina A secretora"
+      ],
+      "correctIndex": 0,
+      "explanation": "A cronificação depende de um fator que perpetua a carga bacteriana na superfície ocular. Blefarite e outras doenças da margem palpebral funcionam como reservatório, e a obstrução do ducto nasolacrimal impede a drenagem da lágrima. Sem corrigir a causa de base, o colírio antibiótico apenas adia a recidiva."
+    },
+    {
+      "question": "O olho fotografado apresenta hiperemia associada a secreção espessa, amarelada e abundante, acumulada nos cílios. Qual é o diagnóstico mais provável?",
+      "options": [
+        "Conjuntivite bacteriana aguda",
+        "Conjuntivite alérgica sazonal",
+        "Conjuntivite viral epidêmica",
+        "Episclerite nodular aguda"
+      ],
+      "correctIndex": 0,
+      "explanation": "Secreção purulenta franca e abundante é o marcador da etiologia bacteriana, que costuma vir com edema palpebral e pálpebras coladas ao acordar. Na conjuntivite viral predomina lacrimejamento aquoso, e na alérgica, prurido com secreção viscosa escassa. A episclerite não produz secreção alguma.",
+      "image": "s05i1",
+      "imageCaption": "Olho vermelho com secreção espessa acumulada nos cílios"
+    },
+    {
+      "question": "O raspado conjuntival corado por Gram e por Giemsa na conjuntivite bacteriana mostra predomínio de qual célula?",
+      "options": [
+        "Neutrófilos polimorfonucleares",
+        "Linfócitos e células mononucleares",
+        "Eosinófilos e mastócitos ativados",
+        "Células gigantes multinucleadas"
+      ],
+      "correctIndex": 0,
+      "explanation": "A resposta bacteriana da conjuntiva é neutrofílica, e o raspado mostra polimorfonucleares em abundância. Predomínio de mononucleares aponta para etiologia viral, e eosinófilos, para alérgica. A cultura com antibiograma complementa a investigação nos casos graves ou recidivantes."
+    },
+    {
+      "question": "A conjuntivite neonatal é considerada urgência oftalmológica e resulta principalmente de qual mecanismo?",
+      "options": [
+        "Contaminação na passagem pelo canal de parto",
+        "Disseminação hematogênica transplacentária",
+        "Refluxo de líquido amniótico contaminado",
+        "Obstrução congênita do ducto nasolacrimal"
+      ],
+      "correctIndex": 0,
+      "explanation": "O recém-nascido se contamina com a flora do canal de parto, e mais raramente no período pós-parto imediato. Por isso a colonização genital materna define o risco. A obstrução do ducto nasolacrimal causa epífora e conjuntivite de repetição, mas não é a via de contaminação neonatal."
+    },
+    {
+      "question": "O recém-nascido da imagem apresenta edema palpebral acentuado e secreção purulenta bilateral. Qual é a conduta prioritária?",
+      "options": [
+        "Tratar como oftalmia neonatal, em urgência",
+        "Observar, pois o quadro é autolimitado",
+        "Prescrever apenas lubrificante e reavaliar",
+        "Aguardar cultura antes de qualquer conduta"
+      ],
+      "correctIndex": 0,
+      "explanation": "Edema palpebral tenso com secreção purulenta abundante no recém-nascido caracteriza oftalmia neonatal, quadro de urgência pelo risco de úlcera de córnea, perfuração e cegueira. O tratamento é iniciado imediatamente, sem esperar o resultado da cultura. A coleta de material é feita, mas não atrasa a terapia.",
+      "image": "s11i1",
+      "imageCaption": "Recém-nascido com edema palpebral e secreção purulenta bilateral"
+    },
+    {
+      "question": "A conjuntivite neonatal gonocócica tem qual período de incubação e qual risco principal?",
+      "options": [
+        "2 a 3 dias, com lesão de córnea e cegueira",
+        "5 a 12 dias, com pneumonia arrastada",
+        "14 a 21 dias, com catarata congênita",
+        "1 a 2 horas, com celulite orbitária"
+      ],
+      "correctIndex": 0,
+      "explanation": "O gonococo se manifesta precocemente, entre o segundo e o terceiro dia de vida, com secreção purulenta intensa. A gravidade vem da capacidade de ulcerar e perfurar a córnea, levando à cegueira. A incubação mais longa, de 5 a 12 dias, e o risco de pneumonia caracterizam a infecção por clamídia."
+    },
+    {
+      "question": "Qual é o tratamento da conjuntivite neonatal gonocócica?",
+      "options": [
+        "Ceftriaxona 125 mg, intramuscular, dose única",
+        "Eritromicina oral por quatorze dias seguidos",
+        "Aciclovir intravenoso durante a internação",
+        "Colírio de nitrato de prata a 1%, dose única"
+      ],
+      "correctIndex": 0,
+      "explanation": "O tratamento é sistêmico, com ceftriaxona 125 mg por via intramuscular em dose única, acompanhado de lavagem ocular frequente. O colírio isolado não erradica a infecção. A eritromicina oral prolongada trata a clamídia, e o aciclovir sistêmico, a infecção herpética."
+    },
+    {
+      "question": "A conjuntivite neonatal por Chlamydia trachomatis caracteriza-se por qual conjunto de dados?",
+      "options": [
+        "Incubação de 5 a 12 dias e risco de pneumonia",
+        "Incubação de 2 a 3 dias e risco de cegueira",
+        "Incubação de 2 a 3 dias e risco de encefalite",
+        "Incubação de 24 horas e risco de endoftalmite"
+      ],
+      "correctIndex": 0,
+      "explanation": "A clamídia tem incubação mais longa, entre 5 e 12 dias, e o quadro ocular pode se arrastar por meses. O risco sistêmico característico é a pneumonia do lactente, o que justifica o tratamento por via oral com eritromicina 50 mg/kg/dia divididos em três tomadas, por 14 dias."
+    },
+    {
+      "question": "A conjuntivite neonatal por herpes simples exige qual conduta, dado o risco de disseminação sistêmica?",
+      "options": [
+        "Internação para antiviral sistêmico com aciclovir",
+        "Colírio antibiótico tópico em regime ambulatorial",
+        "Ceftriaxona intramuscular em dose única no berçário",
+        "Observação clínica, pois o quadro é autolimitado"
+      ],
+      "correctIndex": 0,
+      "explanation": "O herpes neonatal cursa com vesículas na pele e pode disseminar para o sistema nervoso central e vísceras, com alta letalidade. Por isso a conduta é internar e tratar com aciclovir sistêmico, não apenas tópico. A incubação é curta, de 2 a 3 dias, semelhante à do gonococo."
+    },
+    {
+      "question": "Em que consiste a profilaxia de Credê no recém-nascido?",
+      "options": [
+        "Nitrato de prata 1% na primeira hora de vida",
+        "Ceftriaxona intramuscular na primeira semana",
+        "Eritromicina oral nas primeiras 24 horas",
+        "Lavagem ocular com soro fisiológico morno"
+      ],
+      "correctIndex": 0,
+      "explanation": "A técnica consiste em instilar colírio de nitrato de prata a 1% em cada olho dentro da primeira hora de nascimento. O objetivo é prevenir a oftalmia gonocócica. A concentração original, descrita em 1880, era de 2% e foi depois reduzida para 1%."
+    },
+    {
+      "question": "A profilaxia de Credê deve ser aplicada em quais recém-nascidos?",
+      "options": [
+        "Em todos, no parto normal e no cesáreo",
+        "Apenas nos nascidos de parto normal",
+        "Apenas nos nascidos por via cesariana",
+        "Apenas nos filhos de mãe com corrimento"
+      ],
+      "correctIndex": 0,
+      "explanation": "A indicação é universal e independe da via de parto, valendo tanto para o parto normal quanto para a cesariana. A contaminação pode ocorrer também no período pós-parto, e a colonização materna é frequentemente assintomática. No Brasil o método foi tornado obrigatório pelo Decreto nº 9.713/1977."
+    },
+    {
+      "question": "Como o íon prata previne a oftalmia gonocócica?",
+      "options": [
+        "Precipita proteínas do microrganismo e barra a córnea",
+        "Bloqueia a síntese proteica ribossomal da bactéria",
+        "Rompe a parede celular por ação enzimática direta",
+        "Estimula a produção local de imunoglobulina A"
+      ],
+      "correctIndex": 0,
+      "explanation": "O íon prata combina-se com as proteínas dos microrganismos e as precipita, impedindo que a bactéria penetre na córnea. É uma ação físico-química, não antibiótica. O mesmo mecanismo, atuando sobre proteínas do hospedeiro, explica a conjuntivite química por albumina de prata que às vezes se segue à instilação."
+    },
+    {
+      "question": "Quais agentes são considerados opções mais eficazes que o nitrato de prata na profilaxia da conjuntivite neonatal?",
+      "options": [
+        "Iodopovidona 2,5%, eritromicina 0,5% e tetraciclina 1%",
+        "Cloranfenicol 0,5%, gentamicina 0,3% e neomicina 1%",
+        "Ciprofloxacino 0,3%, tobramicina 0,3% e rifamicina 1%",
+        "Ácido bórico 3%, permanganato 1% e clorexidina 2%"
+      ],
+      "correctIndex": 0,
+      "explanation": "Os colírios de iodopovidona a 2,5%, de eritromicina a 0,5% e de tetraciclina a 1% cobrem melhor o espectro da conjuntivite neonatal do que o nitrato de prata. A iodopovidona é ativa também contra Chlamydia trachomatis, fungos, HIV e herpes-vírus, e não provoca a conjuntivite química da prata."
+    },
+    {
+      "question": "A tríade de febre, dor de garganta e conjuntivite, com linfonodo pré-auricular palpável, corresponde a qual quadro?",
+      "options": [
+        "Febre faringoconjuntival por adenovírus",
+        "Conjuntivite hiperaguda gonocócica",
+        "Ceratoconjuntivite vernal da puberdade",
+        "Blefaroconjuntivite por varicela"
+      ],
+      "correctIndex": 0,
+      "explanation": "A febre faringoconjuntival é causada por adenovírus e reúne febre, faringite e conjuntivite, com adenomegalia pré-auricular. O curso é autolimitado, em torno de dez dias, e o tratamento se restringe a colírios lubrificantes. A linfadenopatia pré-auricular é achado típico das conjuntivites virais."
+    },
+    {
+      "question": "Que achado diferencia a ceratoconjuntivite epidêmica, quadro que dura de 3 a 4 semanas?",
+      "options": [
+        "Opacidades subepiteliais e pseudomembranas",
+        "Úlceras dendríticas e vesículas palpebrais",
+        "Papilas gigantes e nódulos limbares brancos",
+        "Nódulos palpebrais umbilicados e indolores"
+      ],
+      "correctIndex": 0,
+      "explanation": "A ceratoconjuntivite epidêmica, também adenoviral, é a forma mais arrastada e mais sintomática: cursa com dor, fotofobia, quemose, hemorragia conjuntival, pseudomembranas e opacidades subepiteliais que podem baixar a visão por meses. O tratamento é sintomático, com lubrificantes."
+    },
+    {
+      "question": "A córnea corada por fluoresceína mostra a lesão ramificada da imagem. Qual conduta é formalmente contraindicada nesse quadro?",
+      "options": [
+        "Colírio de corticosteroide",
+        "Antiviral tópico e sistêmico",
+        "Colírio lubrificante suave",
+        "Curativo oclusivo simples"
+      ],
+      "correctIndex": 0,
+      "explanation": "A úlcera epitelial dendrítica é a marca da ceratoconjuntivite por herpes simples. O corticoide tópico é contraindicado porque favorece a replicação viral e a progressão para úlcera geográfica, com risco de perfuração. O tratamento se faz com antiviral tópico e sistêmico.",
+      "image": "s16i2",
+      "imageCaption": "Córnea corada por fluoresceína, com lesão epitelial ramificada"
+    },
+    {
+      "question": "A blefaroconjuntivite por varicela-zóster distribui as lesões cutâneas segundo qual território?",
+      "options": [
+        "Dermátomo do ramo oftálmico do trigêmeo",
+        "Dermátomo do ramo maxilar do trigêmeo",
+        "Território motor do nervo facial",
+        "Trajeto do nervo óptico intraorbitário"
+      ],
+      "correctIndex": 0,
+      "explanation": "O acometimento ocular ocorre quando o vírus reativa no ramo oftálmico do trigêmeo, e as lesões respeitam a linha média seguindo esse dermátomo. Há linfonodo pré-auricular, e a cicatrização das lesões palpebrais pode deixar entrópio. O tratamento é aciclovir por via oral, em alta dose."
+    },
+    {
+      "question": "A conjuntivite da febre do feno associa-se a qual condição e responde a qual tratamento?",
+      "options": [
+        "Rinite alérgica; anti-histamínico tópico e oral",
+        "Dermatite atópica; ciclosporina tópica a 2%",
+        "Lente de contato; troca da lente por óculos",
+        "Rosácea cutânea; corticoide sistêmico curto"
+      ],
+      "correctIndex": 0,
+      "explanation": "A febre do feno corresponde à rinite alérgica, e a conjuntivite que a acompanha cursa com prurido, lacrimejamento, vermelhidão, quemose e secreção viscosa. O tratamento é feito com anti-histamínico em colírio e por via oral. A associação com dermatite atópica define a ceratoconjuntivite atópica."
+    },
+    {
+      "question": "Os pontos brancos elevados sobre o limbo, indicados na imagem, correspondem a qual achado?",
+      "options": [
+        "Nódulos de Trantas",
+        "Papilas gigantes",
+        "Folículos limbares",
+        "Manchas de Bitot"
+      ],
+      "correctIndex": 0,
+      "explanation": "Os nódulos de Trantas são acúmulos de eosinófilos degenerados no limbo e caracterizam a ceratoconjuntivite vernal. O quadro começa na puberdade, dura de 5 a 10 anos e cursa também com papilas gigantes na pálpebra superior e úlcera de córnea em escudo. Casos graves usam ciclosporina a 2% ou tacrolimus a 0,03%.",
+      "image": "s24i1",
+      "imageCaption": "Limbo com nódulos brancos elevados"
+    },
+    {
+      "question": "A ceratoconjuntivite papilar gigante ocorre tipicamente em qual contexto?",
+      "options": [
+        "Uso de lente de contato ou prótese plástica",
+        "Contato com secreção de criança com febre",
+        "Exposição solar intensa e crônica ao vento",
+        "Trauma perfurante prévio no mesmo olho"
+      ],
+      "correctIndex": 0,
+      "explanation": "É uma reação ao corpo estranho crônico apoiado na conjuntiva tarsal, com sintomas semelhantes aos da conjuntivite vernal. O tratamento passa por suspender a lente de contato ou trocar a prótese de plástico por uma de vidro. Sem remover o estímulo, o quadro recidiva."
+    },
+    {
+      "question": "Que achado é mais marcante na conjuntivite viral do que nas demais formas?",
+      "options": [
+        "Lacrimejamento e linfadenopatia",
+        "Secreção francamente purulenta",
+        "Prurido ocular incoercível",
+        "Dor intensa e pupila miótica"
+      ],
+      "correctIndex": 0,
+      "explanation": "No confronto entre as três conjuntivites, o lacrimejamento e a linfadenopatia pré-auricular são intensos na viral e discretos ou ausentes nas outras. A secreção abundante é o marcador da bacteriana, e o prurido, o da alérgica. Dor intensa com miose desloca o raciocínio para uveíte, e não para conjuntivite."
+    },
+    {
+      "question": "O quadro clínico da episclerite caracteriza-se por qual combinação?",
+      "options": [
+        "Hiperemia com leve desconforto, sem secreção",
+        "Hiperemia com dor intensa e visão turva",
+        "Hiperemia com secreção purulenta abundante",
+        "Hiperemia com pupila fixa e pressão alta"
+      ],
+      "correctIndex": 0,
+      "explanation": "A episclerite é uma inflamação localizada da episclera, mais comum em mulheres jovens da terceira à quarta década, unilateral em cerca de dois terços dos casos. A congestão pode ser nodular, setorial ou difusa, sem secreção, e o desconforto é leve. Resolve-se sozinha em uma a duas semanas."
+    },
+    {
+      "question": "O que distingue clinicamente a esclerite da episclerite?",
+      "options": [
+        "A dor intensa e o afinamento escleral",
+        "A secreção purulenta e a quemose",
+        "O prurido e as papilas gigantes",
+        "A pupila dilatada e a pressão alta"
+      ],
+      "correctIndex": 0,
+      "explanation": "A esclerite dói muito, ao contrário do desconforto leve da episclerite, e o exame mostra congestão episcleral profunda com afinamento da esclera. Acomete mulheres na quinta ou sexta década, é bilateral em cerca de um terço dos casos e a ultrassonografia demonstra espessamento escleral. O tratamento exige anti-inflamatório e corticoide sistêmicos."
+    },
+    {
+      "question": "O olho da imagem mostra sangue vermelho vivo sob a conjuntiva, com córnea clara e pupila normal. O diagnóstico é:",
+      "options": [
+        "Hiposfagma, ou hemorragia subconjuntival",
+        "Hipópio, ou pus na câmara anterior",
+        "Hifema, ou sangue na câmara anterior",
+        "Quemose, ou edema da conjuntiva bulbar"
+      ],
+      "correctIndex": 0,
+      "explanation": "O hiposfagma é sangue livre no espaço subconjuntival, de aspecto vermelho vivo e limites nítidos, sem dor nem perda visual. As causas habituais são trauma, esforço físico e uso de anticoagulantes. A conduta é lágrima artificial e avaliação da coagulação quando o quadro é recorrente.",
+      "image": "s29i2",
+      "imageCaption": "Sangue vermelho vivo sob a conjuntiva, com córnea clara"
+    },
+    {
+      "question": "A lesão fibrovascular triangular que avança do canto do olho sobre a córnea, vista na imagem, chama-se:",
+      "options": [
+        "Pterígio",
+        "Pinguécula",
+        "Ceratocone",
+        "Simbléfaro"
+      ],
+      "correctIndex": 0,
+      "explanation": "O pterígio é uma invasão fibrovascular triangular que cruza o limbo e avança sobre a córnea, ligada à exposição ultravioleta e a fatores genéticos. A pinguécula é a lesão amarelada correspondente que não ultrapassa o limbo. O tratamento vai de lágrima artificial à remoção cirúrgica quando há avanço sobre o eixo visual.",
+      "image": "s30i4",
+      "imageCaption": "Lesão triangular avançando do canto sobre a córnea"
+    },
+    {
+      "question": "A inflamação da íris, do corpo ciliar e da coroide recebe, respectivamente, quais nomes?",
+      "options": [
+        "Uveíte anterior, intermediária e coroidite",
+        "Uveíte posterior, anterior e intermediária",
+        "Coroidite, uveíte anterior e intermediária",
+        "Uveíte intermediária, coroidite e anterior"
+      ],
+      "correctIndex": 0,
+      "explanation": "A classificação das uveítes é anatômica: a inflamação da íris é a uveíte anterior, a do corpo ciliar é a intermediária e a da coroide é a coroidite ou coriorretinite. Quando todos os compartimentos estão envolvidos, fala-se em panuveíte. A localização orienta tanto a investigação etiológica quanto o tratamento."
+    },
+    {
+      "question": "O nível esbranquiçado depositado no fundo da câmara anterior, visível na imagem, corresponde a:",
+      "options": [
+        "Hipópio, acúmulo de pus na câmara",
+        "Hifema, acúmulo de sangue na câmara",
+        "Catarata madura vista pela pupila",
+        "Precipitado cerático sobre a córnea"
+      ],
+      "correctIndex": 0,
+      "explanation": "O hipópio é o acúmulo de material purulento com nível horizontal na parte inferior da câmara anterior, sinal de reação inflamatória intensa na uveíte anterior. O hifema tem o mesmo formato, mas é sangue. Precipitados ceráticos são depósitos celulares aderidos ao endotélio corneano, sem formar nível.",
+      "image": "s34i1",
+      "imageCaption": "Nível esbranquiçado no fundo da câmara anterior"
+    },
+    {
+      "question": "Qual padrão de hiperemia sugere uveíte anterior em vez de conjuntivite?",
+      "options": [
+        "Injeção pericorneana, mais intensa no limbo",
+        "Injeção difusa, mais intensa nos fórnices",
+        "Hiperemia setorial nodular e deslocável",
+        "Sangue vermelho vivo sob a conjuntiva"
+      ],
+      "correctIndex": 0,
+      "explanation": "A hiperemia ciliar ou pericorneana concentra-se em coroa ao redor do limbo e traduz o envolvimento dos vasos ciliares profundos, típico de uveíte, ceratite e glaucoma agudo. A conjuntivite dá injeção difusa que se acentua em direção aos fórnices. O padrão da hiperemia é o primeiro filtro entre olho vermelho banal e urgência."
+    },
+    {
+      "question": "Que conjunto de achados aponta para glaucoma agudo diante de um olho vermelho e doloroso?",
+      "options": [
+        "Córnea embaçada, visão turva e pressão elevada",
+        "Córnea clara, visão normal e pressão normal",
+        "Secreção abundante, visão normal e pouca dor",
+        "Prurido intenso, quemose e pressão normal"
+      ],
+      "correctIndex": 0,
+      "explanation": "No glaucoma agudo a pressão intraocular sobe abruptamente, o edema deixa a córnea embaciada e a visão fica acentuadamente turva, com dor aguda. A pupila fica moderadamente dilatada e fixa, sem resposta à luz, e não há secreção. É a única das grandes causas de olho vermelho que cursa com pressão elevada."
+    },
+    {
+      "question": "Que conjunto de achados obriga a encaminhar com urgência um paciente com olho vermelho?",
+      "options": [
+        "Dor intensa, baixa de visão e opacidade da córnea",
+        "Prurido, secreção aquosa e sensação de areia",
+        "Lacrimejamento, fotofobia leve e olho colado",
+        "Ardor matinal, crostas nos cílios e coceira"
+      ],
+      "correctIndex": 0,
+      "explanation": "Dor intensa, queda da acuidade visual e perda da transparência corneana indicam acometimento além da conjuntiva. Somam-se a esses sinais de alarme a hiperemia ciliar e a alteração pupilar, seja miose com pupila irregular na uveíte, seja midríase média fixa no glaucoma agudo. Nenhum desses achados pertence à conjuntivite simples."
+    }
+  ]
+}

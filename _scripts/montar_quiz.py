@@ -53,6 +53,40 @@ SAIDA_DIR = RAIZ / "Quizzes"
 LIMITE_RAZAO = 1.30
 MIN_ALT, MAX_ALT = 4, 6
 
+# O quiz tem que valer por si: quem estuda por ele nao assistiu a aula. Estas sao
+# referencias que apontam para FORA do material ("segundo a aula", "no slide",
+# "no gabarito"). Sao padroes REFERENCIAIS, nao palavras soltas — "ex-professor
+# de matematica" numa vinheta clinica passa, e deve passar.
+DEPENDE_DA_AULA = re.compile(r"""(
+   \b(?:n?[oa]s?|pel[ao]s?|d[ao]s?)\s+aulas?\b
+ | \baulas?\s+(?:afirma|define|destaca|organiza|classifica|apresenta|mostra|traz
+                |cita|adota|defende|recomenda|prop|ensina|abord|enfatiza)
+ | \bnest[ae]\s+aulas?\b
+ | \bslides?\b
+ | \bgabarito\b
+ | \bconforme\s+(?:a\s+)?aula\b
+ | \bsegundo\s+a\s+aula\b
+ | \bn[oa]\s+material\b
+ | \bapresentad[oa]s?\s+n[ao]\s+aula\b
+ | \bvist[oa]\s+em\s+aula\b
+ | \bda\s+apresenta\w+\b
+ | \bo\s+professor\s+(?:afirma|destaca|define|explica|cita|ensina|aponta)
+)""", re.I | re.X)
+
+
+def validar_independencia(questoes):
+    """Acusa questao que so faz sentido para quem assistiu a aula."""
+    erros = []
+    for i, q in enumerate(questoes, 1):
+        campos = [("enunciado", q.get("question") or ""),
+                  ("explicacao", q.get("explanation") or "")]
+        campos += [(f"alt {j}", a) for j, a in enumerate(q.get("options") or [])]
+        for nome, txt in campos:
+            m = DEPENDE_DA_AULA.search(txt)
+            if m:
+                erros.append(f'Q{i}: {nome} depende da aula -> "{m.group(0).strip()}"')
+    return erros
+
 
 def snake(s: str) -> str:
     s = unicodedata.normalize("NFKD", s).encode("ascii", "ignore").decode()
@@ -114,12 +148,21 @@ def main():
         sys.exit("ERRO: 'questoes' deve ser uma lista com pelo menos 5 itens")
 
     erros, avisos = validar(questoes)
+    dep = validar_independencia(questoes)
+    erros += dep
     for a in avisos:
         print("  ! " + a)
     if erros:
         print("\nERROS (bloqueiam a geração):")
         for e in erros:
             print("  X " + e)
+        if dep:
+            print("")
+            print("  O quiz precisa se sustentar sozinho: quem estuda por")
+            print("  ele nao assistiu a aula. Reescreva trazendo o conteudo")
+            print("  para dentro do enunciado, ou remova a questao.")
+            print("  assistiu a aula. Reescreva trazendo o conteudo para dentro do")
+            print("  enunciado, ou remova a questao.")
         sys.exit(1)
     if avisos and not args.forcar:
         print(f"\n{len(avisos)} aviso(s) de equalização. Ajuste as alternativas "

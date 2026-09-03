@@ -1,0 +1,204 @@
+{
+  "titulo": "Anatomia e Fisiologia Ocular II",
+  "eyebrow": "Oftalmologia · Bulbo Ocular e Fisiologia",
+  "subtitulo": "As três túnicas, a córnea transparente e a pressão intraocular",
+  "intro": "Material sobre a organização do bulbo ocular em túnicas, as propriedades da esclera e da córnea, o filme lacrimal, e a produção, a drenagem e a regulação da pressão do humor aquoso.",
+  "questoes": [
+    {
+      "question": "Quais estruturas compõem a túnica externa (fibrosa) do bulbo ocular?",
+      "options": ["Córnea e esclera", "Íris e corpo ciliar", "Coróide e retina", "Cristalino e vítreo"],
+      "correctIndex": 0,
+      "explanation": "A túnica externa, ou fibrosa, é formada pela córnea anteriormente e pela esclera nos cinco sextos posteriores. Íris, corpo ciliar e coróide formam a túnica média (úvea), e a retina constitui a túnica interna ou nervosa. Cristalino e vítreo são conteúdos internos, não túnicas."
+    },
+    {
+      "question": "O trato uveal, que forma a túnica média do bulbo ocular, é composto por:",
+      "options": ["íris, corpo ciliar e coróide", "íris, cristalino e retina", "córnea, esclera e limbo", "retina, vítreo e coróide"],
+      "correctIndex": 0,
+      "explanation": "A úvea reúne as três estruturas vascularizadas intermediárias: íris à frente, corpo ciliar na transição e coróide atrás. É a camada responsável pela nutrição do bulbo, pela produção do humor aquoso e pela acomodação. A retina é a túnica interna e a esclera, a externa.",
+      "image": "s02i1",
+      "imageCaption": "Corte sagital do bulbo ocular com as três túnicas"
+    },
+    {
+      "question": "Qual é a espessura média da córnea na sua porção central?",
+      "options": ["Cerca de 550 micras", "Cerca de 250 micras", "Cerca de 900 micras", "Cerca de 1500 micras"],
+      "correctIndex": 0,
+      "explanation": "A espessura corneana central gira em torno de 550 micras, dado que serve de referência para a paquimetria e para o cálculo corrigido da pressão intraocular. Valores muito abaixo desse padrão sugerem ectasia, e valores muito acima sugerem edema."
+    },
+    {
+      "question": "A esclera é mais fina em que local, chegando a cerca de 0,3 mm?",
+      "options": ["Na inserção dos músculos retos", "No limbo esclerocorneano", "Na lâmina crivosa posterior", "Na região equatorial do bulbo"],
+      "correctIndex": 0,
+      "explanation": "A esclera tem cerca de 0,6 mm de espessura, mas afina para aproximadamente 0,3 mm sob a inserção dos músculos retos. Esse é o ponto de maior risco de perfuração em traumas e em cirurgias de estrabismo ou de retina."
+    },
+    {
+      "question": "A esclera é constituída majoritariamente por:",
+      "options": ["colágeno, cerca de 75% da sua composição", "fibras elásticas, cerca de 75% do total", "glicosaminoglicanos, cerca de 70% do total", "queratina, cerca de 60% da sua composição"],
+      "correctIndex": 0,
+      "explanation": "Cerca de 75% da esclera é colágeno; os 25% restantes correspondem a fibras elásticas e glicosaminoglicanos, como o ácido hialurônico e o sulfato de condroitina. O arranjo irregular dessas fibras torna a esclera opaca e branca, ao contrário da córnea."
+    },
+    {
+      "question": "Que camada fina e elástica, situada sobre a esclera, contém os vasos que a nutrem?",
+      "options": ["A episclera, logo abaixo da conjuntiva", "A cápsula de Tenon, mais profunda", "A lâmina crivosa, no polo posterior", "A membrana de Bruch, sob a retina"],
+      "correctIndex": 0,
+      "explanation": "A episclera é um tecido fino e elástico, ricamente vascularizado, que recobre a esclera e é responsável por nutri-la, já que a própria esclera é avascular. A congestão dos vasos episclerais é o que se observa na episclerite e na esclerite."
+    },
+    {
+      "question": "A coloração azulada difusa da esclera, como mostra a imagem, sugere qual condição?",
+      "options": ["Osteogênese imperfeita, com esclera fina", "Hemorragia subconjuntival difusa e antiga", "Nevus de Ota, com pigmento na esclera", "Pterígio nasal em fase inflamatória"],
+      "correctIndex": 0,
+      "explanation": "A esclera azul resulta do afinamento do colágeno escleral, que deixa transparecer a coloração da úvea subjacente, e é achado clássico da osteogênese imperfeita. A tonalidade é difusa e homogênea, diferente das manchas focais acinzentadas da melanocitose ocular.",
+      "image": "s05i3",
+      "imageCaption": "Esclera de coloração azulada difusa"
+    },
+    {
+      "question": "O nevus de Ota caracteriza-se por:",
+      "options": ["hiperpigmentação azul-acinzentada da esclera e da pele", "afinamento progressivo da esclera com exposição uveal", "coloração azulada difusa por esclera muito delgada", "acúmulo de lipídios no estroma corneano periférico"],
+      "correctIndex": 0,
+      "explanation": "O nevus de Ota, ou melanocitose oculodérmica, é uma proliferação de melanócitos que pigmenta a episclera e a pele periocular em tom azul-acinzentado, geralmente unilateral. Exige seguimento por aumentar o risco de melanoma uveal e de glaucoma ipsilateral."
+    },
+    {
+      "question": "A córnea é avascular. De onde provém o seu suprimento de nutrientes?",
+      "options": ["Vasos do limbo, humor aquoso e lágrima", "Artéria central da retina e coróide", "Vasos episclerais e artérias ciliares", "Humor vítreo e capilares da conjuntiva"],
+      "correctIndex": 0,
+      "explanation": "Sem vasos próprios, a córnea recebe nutrientes por difusão a partir de três fontes: a arcada vascular do limbo, o humor aquoso que banha sua face posterior e o filme lacrimal, que também fornece oxigênio atmosférico. A ausência de vasos é condição da sua transparência.",
+      "image": "s06i2",
+      "imageCaption": "Limbo, na transição entre córnea e esclera"
+    },
+    {
+      "question": "A sensibilidade da córnea é mediada por qual nervo craniano?",
+      "options": ["Nervo trigêmeo, o quinto par", "Nervo facial, o sétimo par", "Nervo óptico, o segundo par", "Nervo abducente, o sexto par"],
+      "correctIndex": 0,
+      "explanation": "A inervação sensitiva da córnea vem do ramo oftálmico do trigêmeo (V), o que a torna um dos tecidos mais inervados do corpo. Essa densidade explica a dor intensa das erosões e a base do reflexo corneopalpebral, cuja via eferente é o facial."
+    },
+    {
+      "question": "Os três fatores responsáveis pela transparência da córnea são:",
+      "options": ["estrutura uniforme, ausência de vasos e turgescência", "estrutura uniforme, inervação densa e vascularização", "espessura elevada, ausência de vasos e pigmentação", "hidratação máxima, riqueza de vasos e inervação"],
+      "correctIndex": 0,
+      "explanation": "A transparência corneana depende do arranjo regular e uniforme das fibras de colágeno estromal, da ausência total de vasos sanguíneos e da turgescência, isto é, da manutenção de um estado de desidratação relativa. A falha de qualquer um dos três leva à opacificação."
+    },
+    {
+      "question": "A turgescência (desidratação relativa) da córnea depende principalmente de:",
+      "options": ["bomba de bicarbonato do endotélio e barreiras epiteliais", "produção contínua de muco pelas células caliciformes", "drenagem do humor aquoso pela malha trabecular", "irrigação abundante pelos vasos do limbo corneano"],
+      "correctIndex": 0,
+      "explanation": "O endotélio mantém a córnea desidratada por meio de uma bomba dependente de bicarbonato, que retira água do estroma de volta para o humor aquoso. Somam-se a isso as barreiras do epitélio e do próprio endotélio, que limitam a entrada de líquido."
+    },
+    {
+      "question": "Entre as camadas da córnea mostradas na imagem, qual está em contato direto com o humor aquoso?",
+      "options": ["O endotélio, camada mais posterior", "O epitélio, camada mais anterior", "O estroma, camada intermediária", "A camada de Bowman, sob o epitélio"],
+      "correctIndex": 0,
+      "explanation": "O endotélio é a monocamada mais posterior da córnea e banha-se diretamente no humor aquoso da câmara anterior. É essa posição que lhe permite bombear água do estroma para o humor aquoso e manter a deturgescência.",
+      "image": "s07i1",
+      "imageCaption": "As cinco camadas da córnea, do epitélio ao endotélio"
+    },
+    {
+      "question": "Qual é a sequência das camadas da córnea, da superfície para a profundidade?",
+      "options": ["Epitélio, Bowman, estroma, Descemet e endotélio", "Epitélio, estroma, Bowman, endotélio e Descemet", "Endotélio, Descemet, estroma, Bowman e epitélio", "Bowman, epitélio, estroma, endotélio e Descemet"],
+      "correctIndex": 0,
+      "explanation": "A ordem anteroposterior é epitélio, camada de Bowman, estroma, membrana de Descemet e endotélio. O estroma responde por cerca de 90% da espessura, e a Descemet é a membrana basal do endotélio, cuja ruptura leva a edema corneano."
+    },
+    {
+      "question": "O aspecto difusamente esbranquiçado e opaco da córnea na imagem decorre de:",
+      "options": ["falência endotelial, com edema e perda da desidratação", "neovascularização extensa a partir do limbo corneano", "depósito de ferro no epitélio corneano central", "cicatriz estromal antiga de origem traumática"],
+      "correctIndex": 0,
+      "explanation": "Quando a bomba endotelial falha, o estroma embebe-se de água, as fibras de colágeno perdem o arranjo regular e a córnea fica difusamente opaca. Esse é o mecanismo do edema corneano, que pode surgir após cirurgia intraocular, trauma ou distrofia endotelial.",
+      "image": "s08i4",
+      "imageCaption": "Córnea difusamente opacificada"
+    },
+    {
+      "question": "A lesão puntiforme com halo enferrujado sobre a córnea corresponde a:",
+      "options": ["corpo estranho metálico impactado no epitélio", "úlcera infecciosa em estágio inicial de evolução", "depósito lipídico do arco senil corneano", "pigmento de nevus na periferia da córnea"],
+      "correctIndex": 0,
+      "explanation": "Fragmentos metálicos que se impactam na córnea oxidam em poucas horas e formam um anel de ferrugem ao redor da lesão. A remoção do corpo estranho e do anel é necessária, pois o depósito mantém a inflamação e retarda a reepitelização.",
+      "image": "s08i2",
+      "imageCaption": "Lesão corneana com anel de ferrugem"
+    },
+    {
+      "question": "Qual musculatura da íris é controlada pelo sistema parassimpático?",
+      "options": ["O esfíncter da pupila, que produz miose", "O dilatador da pupila, que produz midríase", "O orbicular do olho, que fecha a fenda", "O reto lateral, que abduz o bulbo ocular"],
+      "correctIndex": 0,
+      "explanation": "O músculo esfíncter da pupila é parassimpático e sua contração produz miose, tanto no reflexo fotomotor quanto na acomodação para perto. O músculo dilatador tem inervação simpática e produz midríase, de modo que os dois sistemas atuam de forma antagônica."
+    },
+    {
+      "question": "Que estrutura assinalada na imagem é responsável pela produção do humor aquoso?",
+      "options": ["Os processos ciliares do corpo ciliar", "O epitélio pigmentado posterior da íris", "A malha trabecular do ângulo camerular", "O endotélio da face posterior da córnea"],
+      "correctIndex": 0,
+      "explanation": "O humor aquoso é secretado pelos processos ciliares do corpo ciliar e lançado na câmara posterior, de onde passa pela pupila até a câmara anterior. A malha trabecular participa da drenagem, e não da produção do fluido.",
+      "image": "s14i1",
+      "imageCaption": "Corpo ciliar, processos ciliares e câmaras do olho"
+    },
+    {
+      "question": "A coróide é formada por:",
+      "options": ["três camadas de vasos: grandes, médios e pequenos", "duas camadas de músculo liso circular e radial", "um epitélio cúbico secretor de humor aquoso", "fibras colágenas densas sem qualquer vaso"],
+      "correctIndex": 0,
+      "explanation": "A coróide organiza-se em três estratos vasculares: vasos de grande calibre externamente, de médio calibre no meio e a coriocapilar internamente. Essa rede nutre as camadas externas da retina, incluindo os fotorreceptores."
+    },
+    {
+      "question": "Qual é o ritmo aproximado de produção do humor aquoso?",
+      "options": ["2,0 microlitros por minuto", "2,0 mililitros por minuto", "20 microlitros por minuto", "0,2 microlitros por minuto"],
+      "correctIndex": 0,
+      "explanation": "O corpo ciliar produz cerca de 2,0 microlitros de humor aquoso por minuto, taxa que renova todo o volume da câmara anterior em aproximadamente uma hora e meia. Os hipotensores oculares que reduzem a produção atuam justamente sobre esse ritmo."
+    },
+    {
+      "question": "A maior parte do humor aquoso é formada por qual mecanismo?",
+      "options": ["Secreção ativa, responsável por cerca de 80%", "Ultrafiltração, responsável por cerca de 80%", "Difusão simples, responsável por quase 100%", "Transporte passivo, responsável por cerca de 60%"],
+      "correctIndex": 0,
+      "explanation": "Aproximadamente 80% do humor aquoso resulta de secreção ativa pelo epitélio ciliar, processo dependente da anidrase carbônica e da bomba de sódio e potássio. Os 20% restantes vêm de ultrafiltração e difusão passiva, que dependem do gradiente de pressão."
+    },
+    {
+      "question": "São funções atribuídas ao humor aquoso:",
+      "options": ["óptica, filtrante, trófica e tensional", "óptica, motora, sensitiva e secretora", "protetora, motora, trófica e elástica", "filtrante, imune, contrátil e óssea"],
+      "correctIndex": 0,
+      "explanation": "O humor aquoso é um meio transparente que participa do sistema óptico, filtra e remove metabólitos, nutre estruturas avasculares como córnea e cristalino e mantém a pressão intraocular. Contém 99% de água, além de glicose, oxigênio, aminoácidos e ácido ascórbico."
+    },
+    {
+      "question": "Pelo trajeto assinalado na imagem, a drenagem do humor aquoso segue de:",
+      "options": ["malha trabecular para o canal de Schlemm e veias episclerais", "canal de Schlemm para os processos ciliares e câmara posterior", "veias episclerais para a malha trabecular e a pupila", "câmara anterior para o corpo vítreo e o nervo óptico"],
+      "correctIndex": 0,
+      "explanation": "Do ângulo da câmara anterior, o humor aquoso atravessa a malha trabecular, alcança o canal de Schlemm e segue por canais coletores até as veias episclerais e aquosas. Essa é a via convencional, responsável pela maior parte do escoamento.",
+      "image": "s16i1",
+      "imageCaption": "Trajeto do humor aquoso até o canal de Schlemm"
+    },
+    {
+      "question": "Além do trabeculado, qual é a outra via de escoamento do humor aquoso?",
+      "options": ["A via úveo-escleral, acessória ao trabeculado", "A via retro-orbitária, pelo nervo óptico", "A via hialóidea, através do corpo vítreo", "A via lacrimal, pelos pontos lacrimais"],
+      "correctIndex": 0,
+      "explanation": "A via úveo-escleral é a rota não convencional: o fluido atravessa a raiz da íris e os espaços do músculo ciliar até o espaço supracoroideo. Ela é independente da pressão e é a via estimulada pelos análogos de prostaglandina."
+    },
+    {
+      "question": "Qual é a faixa considerada normal para a pressão intraocular?",
+      "options": ["De 10 a 21,5 mmHg", "De 2,5 a 8,0 mmHg", "De 30 a 45 mmHg", "De 60 a 80 mmHg"],
+      "correctIndex": 0,
+      "explanation": "A pressão intraocular normal situa-se entre 10 e 21,5 mmHg. Valores acima dessa faixa configuram hipertensão ocular e exigem investigação de glaucoma, enquanto valores muito baixos sugerem hipotonia por fístula ou por falência do corpo ciliar."
+    },
+    {
+      "question": "A pressão intraocular resulta do equilíbrio entre:",
+      "options": ["produção e drenagem, somada à pressão venosa", "espessura corneana e curvatura do cristalino", "volume vítreo e comprimento axial do bulbo", "tônus dos músculos retos e da pálpebra"],
+      "correctIndex": 0,
+      "explanation": "A pressão intraocular é diretamente proporcional à produção de humor aquoso e inversamente proporcional à soma da facilidade de excreção com a pressão venosa episcleral. Qualquer obstrução ao escoamento eleva a pressão mesmo com produção normal."
+    },
+    {
+      "question": "O aumento sustentado da pressão intraocular lesa preferencialmente:",
+      "options": ["o nervo óptico, com perda de campo visual", "o epitélio corneano, com erosões repetidas", "o cristalino, com opacificação nuclear", "a glândula lacrimal, com olho seco grave"],
+      "correctIndex": 0,
+      "explanation": "A pressão elevada compromete as fibras ganglionares na cabeça do nervo óptico, produzindo escavação progressiva do disco e perda característica de campo visual. Esse é o dano estrutural que define o glaucoma e que costuma ser irreversível."
+    },
+    {
+      "question": "Qual a ordem das camadas do filme lacrimal, da superfície para a córnea?",
+      "options": ["Lipídica, aquosa e mucínica", "Aquosa, lipídica e mucínica", "Mucínica, lipídica e aquosa", "Lipídica, mucínica e aquosa"],
+      "correctIndex": 0,
+      "explanation": "A camada mais externa é a lipídica, seguida da aquosa, espessa e intermediária, e da mucínica, que fica em contato com o epitélio corneano. A falha de qualquer uma delas desestabiliza o filme e causa olho seco."
+    },
+    {
+      "question": "Que glândulas produzem a camada lipídica do filme lacrimal?",
+      "options": ["As glândulas de Meibômio e de Zeiss", "As glândulas de Krause e de Wolfring", "As células caliciformes da conjuntiva", "As glândulas de Moll, sudoríparas"],
+      "correctIndex": 0,
+      "explanation": "Meibômio e Zeiss são glândulas sebáceas da margem palpebral que secretam os lipídios responsáveis por estabilizar a película lacrimal e reduzir sua evaporação. Krause e Wolfring são lacrimais acessórias, e Moll é sudorípara modificada."
+    },
+    {
+      "question": "A mucina do filme lacrimal é produzida por:",
+      "options": ["células caliciformes da conjuntiva", "glândulas de Meibômio, situadas no tarso", "glândulas de Moll, da margem palpebral", "glândulas de Krause, nos fórnices"],
+      "correctIndex": 0,
+      "explanation": "As células caliciformes do epitélio conjuntival secretam mucina, que reduz a tensão superficial e permite que a lágrima adira ao epitélio corneano hidrofóbico. Sem essa camada, o filme se rompe rapidamente e surgem áreas de dessecamento."
+    }
+  ]
+}

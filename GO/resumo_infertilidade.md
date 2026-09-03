@@ -2,7 +2,7 @@
 
 Infertilidade conjugal é a **ausência de gestação após 12 meses** de relação sexual regular, bem distribuída ao longo do ciclo, sem uso de método contraceptivo — definição da OMS e da FEBRASGO. O prazo não é rígido: em mulheres com **idade igual ou superior a 35 anos**, ou diante de fator de risco já identificado (IST prévia, cirurgia pélvica, quimioterapia, ciclos irregulares), a investigação começa **após 6 meses**.
 
-O princípio que organiza toda a aula é que o **casal é uma unidade funcional**. Ambos os parceiros são investigados desde o início, porque fatores masculinos e femininos coexistem com frequência, e o tratamento é definido pelo perfil do casal como um todo — não pelo indivíduo isolado.
+O princípio que organiza toda a investigação é que o **casal é uma unidade funcional**. Ambos os parceiros são investigados desde o início, porque fatores masculinos e femininos coexistem com frequência, e o tratamento é definido pelo perfil do casal como um todo — não pelo indivíduo isolado.
 
 ### Classificação
 

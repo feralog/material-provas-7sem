@@ -2,7 +2,7 @@
 
 Segundo a **Organização Mundial da Saúde**, polifarmácia é o **uso rotineiro e concomitante de quatro ou mais medicamentos** — com ou sem prescrição médica — por um mesmo paciente. A ressalva "com ou sem prescrição" é o que costuma ser cobrado: fitoterápicos, suplementos, colírios e produtos de automedicação contam para o número. Um idoso que toma losartana, hidroclorotiazida, ômega-3 comprado na farmácia e omeprazol "para proteger o estômago" já é, por definição, polimedicado.
 
-Quando se pergunta quantos medicamentos um idoso toma por dia, a resposta honesta é **depende** — de faixa etária, comorbidades, país e ambiente. Os números de referência da aula:
+Quando se pergunta quantos medicamentos um idoso toma por dia, a resposta honesta é **depende** — de faixa etária, comorbidades, país e ambiente. Os números de referência:
 
 - **Média de 5 medicamentos por dia** entre idosos da comunidade (Moore KL et al., *PLoS One*, 2018).
 - **Mais de 8 medicamentos por dia** entre institucionalizados em ILPI nos Estados Unidos.

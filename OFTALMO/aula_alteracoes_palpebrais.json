@@ -1,0 +1,354 @@
+{
+  "titulo": "Alterações Palpebrais",
+  "eyebrow": "Oftalmologia · Pálpebras",
+  "subtitulo": "Malposições, inflamações e tumores da pálpebra, do mecanismo à conduta",
+  "intro": "Anatomia funcional da pálpebra e as alterações que caem em prova: entrópio e ectrópio (involucionais, cicatriciais e congênitos), epicanto, dermatocálase, as ptoses por mecanismo, hordéolo, calázio, blefarite e os tumores palpebrais benignos e malignos.",
+  "questoes": [
+    {
+      "question": "O fechamento palpebral depende da contração do músculo orbicular das pálpebras. Qual nervo craniano o inerva?",
+      "options": [
+        "Nervo facial (VII par craniano)",
+        "Nervo oculomotor (III par craniano)",
+        "Nervo trigêmeo (V par craniano)",
+        "Nervo troclear (IV par craniano)"
+      ],
+      "correctIndex": 0,
+      "explanation": "O orbicular é músculo da mímica facial e recebe inervação do nervo facial (VII par). É por isso que a paralisia facial periférica cursa com lagoftalmo, incapacidade de ocluir a fenda e ceratite de exposição. O III par inerva o levantador da pálpebra superior, e não o orbicular."
+    },
+    {
+      "question": "A elevação voluntária da pálpebra superior depende do músculo levantador da pálpebra. Qual nervo o inerva?",
+      "options": [
+        "Nervo oculomotor (III par craniano)",
+        "Nervo facial (VII par craniano)",
+        "Nervo abducente (VI par craniano)",
+        "Nervo trigêmeo (V par craniano)"
+      ],
+      "correctIndex": 0,
+      "explanation": "O levantador da pálpebra superior é inervado pelo ramo superior do nervo oculomotor (III par). Uma paralisia completa do III par produz ptose acentuada associada a estrabismo divergente e midríase. O orbicular, seu antagonista, é do VII par."
+    },
+    {
+      "question": "A figura identifica as glândulas da margem palpebral. Qual associação entre glândula e tipo de secreção está correta?",
+      "options": [
+        "Meibômio e Zeiss são sebáceas; Moll é sudorípara",
+        "Meibômio e Moll são sebáceas; Zeiss é sudorípara",
+        "Zeiss e Moll são sebáceas; Meibômio é sudorípara",
+        "Meibômio e Zeiss são sudoríparas; Moll é sebácea"
+      ],
+      "correctIndex": 0,
+      "explanation": "As glândulas de Meibômio, situadas dentro do tarso, e as de Zeiss, anexas ao folículo do cílio, são sebáceas e produzem a camada lipídica do filme lacrimal. As de Moll são sudoríparas apócrinas e desembocam junto ao folículo piloso. Essa distinção explica por que o calázio, obstrução da Meibômio, é lipogranulomatoso.",
+      "image": "s04i2",
+      "imageCaption": "Corte sagital da margem palpebral com as glândulas de Meibômio, Zeiss e Moll"
+    },
+    {
+      "question": "A pálpebra é dividida cirurgicamente em lamela anterior e lamela posterior. O que compõe a lamela posterior?",
+      "options": [
+        "Tarso e conjuntiva tarsal",
+        "Pele e músculo orbicular",
+        "Septo orbitário e gordura",
+        "Cílios e glândulas de Moll"
+      ],
+      "correctIndex": 0,
+      "explanation": "A lamela posterior é formada pelo tarso, esqueleto fibroso da pálpebra, e pela conjuntiva tarsal que o reveste. A lamela anterior corresponde à pele e ao músculo orbicular. A divisão é prática: a contratura da lamela anterior everte a margem (ectrópio) e a da posterior a inverte (entrópio)."
+    },
+    {
+      "question": "Além do levantador, um segundo retrator eleva a pálpebra superior em cerca de 2 mm. Qual é ele e qual sua inervação?",
+      "options": [
+        "Músculo de Müller, de inervação simpática",
+        "Músculo de Riolan, de inervação simpática",
+        "Músculo de Müller, de inervação facial",
+        "Músculo de Horner, de inervação motora"
+      ],
+      "correctIndex": 0,
+      "explanation": "O músculo tarsal superior de Müller é liso, insere-se na borda superior do tarso e responde à inervação simpática. A perda desse tônus explica a ptose discreta, de 1 a 2 mm, da síndrome de Horner, bem diferente da ptose acentuada da lesão do III par."
+    },
+    {
+      "question": "O entrópio é uma malposição da margem palpebral. Como ele se define?",
+      "options": [
+        "Inversão da margem palpebral em direção ao globo",
+        "Eversão da margem palpebral para fora do globo",
+        "Queda da margem palpebral sobre o eixo visual",
+        "Crescimento aberrante dos cílios sem malposição"
+      ],
+      "correctIndex": 0,
+      "explanation": "No entrópio a margem palpebral roda para dentro e os cílios passam a atritar a córnea e a conjuntiva. Daí a sensação de corpo estranho, o lacrimejamento e o risco de ceratite e úlcera de córnea. A eversão para fora é o ectrópio, e a queda da pálpebra sobre o eixo visual é a ptose."
+    },
+    {
+      "question": "Homem de 78 anos com sensação de corpo estranho e lacrimejamento apresenta o achado da figura. Qual mecanismo explica o quadro?",
+      "options": [
+        "Frouxidão dos retratores da pálpebra inferior",
+        "Contratura cicatricial da lamela anterior",
+        "Fibrose da conjuntiva tarsal após tracoma",
+        "Paralisia do músculo orbicular pelo VII par"
+      ],
+      "correctIndex": 0,
+      "explanation": "É o entrópio involucional, o mais comum no idoso e típico da pálpebra inferior. Três fatores se somam: frouxidão ou desinserção dos retratores inferiores, encurvamento da borda do tarso e cavalgamento do orbicular pré-septal sobre o pré-tarsal, que empurra a margem para dentro. A conjuntiva tarsal permanece íntegra, sem cicatriz.",
+      "image": "s09i1",
+      "imageCaption": "Margem palpebral inferior invertida com cílios em contato com a córnea"
+    },
+    {
+      "question": "A eversão da pálpebra superior de um paciente com cílios voltados para a córnea revela o achado da figura. Qual é o diagnóstico?",
+      "options": [
+        "Entrópio cicatricial por fibrose tarsoconjuntival",
+        "Entrópio involucional por frouxidão dos retratores",
+        "Ectrópio cicatricial por retração da pele",
+        "Entrópio congênito por epiblefaro palpebral"
+      ],
+      "correctIndex": 0,
+      "explanation": "As estrias esbranquiçadas na conjuntiva tarsal são cicatrizes que encurtam e curvam a lamela posterior, invertendo a margem: é o entrópio cicatricial. A causa clássica é o tracoma, mas penfigoide ocular, síndrome de Stevens-Johnson, queimadura química e trauma produzem o mesmo mecanismo. Acomete tipicamente a pálpebra superior, ao contrário do involucional.",
+      "image": "s10i1",
+      "imageCaption": "Conjuntiva tarsal superior evertida com cicatrizes lineares esbranquiçadas"
+    },
+    {
+      "question": "O tracoma é a principal causa infecciosa de entrópio cicatricial no mundo. Qual é o agente etiológico?",
+      "options": [
+        "Chlamydia trachomatis",
+        "Staphylococcus aureus",
+        "Haemophilus influenzae",
+        "Moraxella lacunata"
+      ],
+      "correctIndex": 0,
+      "explanation": "O tracoma é causado por Chlamydia trachomatis, sorotipos A a C, e evolui em surtos repetidos de conjuntivite folicular. A inflamação crônica cicatriza a conjuntiva tarsal, inverte a margem e produz a triquíase tracomatosa, definida quando ao menos um cílio atrita o globo. O atrito continuado opacifica a córnea e leva à cegueira evitável."
+    },
+    {
+      "question": "Lactente apresenta cílios inferiores encostando na córnea, mas a borda do tarso mantém posição normal. Qual é o diagnóstico?",
+      "options": [
+        "Epiblefaro, prega cutânea que verticaliza os cílios",
+        "Triquíase adquirida por cicatriz da margem",
+        "Distiquíase, fileira extra de cílios no orifício",
+        "Entrópio cicatricial por conjuntivite neonatal"
+      ],
+      "correctIndex": 0,
+      "explanation": "No epiblefaro uma prega horizontal de pele e orbicular cavalga a margem e empurra os cílios contra o globo, sem que o tarso esteja invertido. É mais frequente em crianças de ascendência asiática e costuma regredir espontaneamente com o crescimento facial. Só se opera quando há ceratopatia persistente."
+    },
+    {
+      "question": "Idoso com lacrimejamento crônico e ardor apresenta o achado da figura. Qual é a alteração palpebral?",
+      "options": [
+        "Ectrópio, com eversão da margem palpebral",
+        "Entrópio, com inversão da margem palpebral",
+        "Ptose, com queda da pálpebra superior",
+        "Dermatocálase, com excesso de pele"
+      ],
+      "correctIndex": 0,
+      "explanation": "A margem inferior está evertida, expondo a conjuntiva tarsal hiperemiada e queratinizada: é o ectrópio. O lacrimejamento vem da eversão do ponto lacrimal, que deixa de captar a lágrima, e a exposição crônica leva a ceratinização da conjuntiva e ceratite inferior.",
+      "image": "s14i1",
+      "imageCaption": "Pálpebra inferior evertida com exposição da conjuntiva tarsal"
+    },
+    {
+      "question": "Qual é o mecanismo predominante do ectrópio involucional?",
+      "options": [
+        "Frouxidão horizontal do tarso e dos tendões cantais",
+        "Contratura vertical da pele da lamela anterior",
+        "Hipertrofia do músculo orbicular pré-tarsal",
+        "Encurtamento da conjuntiva tarsal por fibrose"
+      ],
+      "correctIndex": 0,
+      "explanation": "Com a idade, o tarso e os tendões cantais medial e lateral perdem tensão e a pálpebra alonga-se horizontalmente, afastando-se do globo. O teste de distração e o de retorno da pálpebra confirmam a frouxidão. A correção é o encurtamento horizontal da pálpebra, e não o enxerto de pele."
+    },
+    {
+      "question": "Paciente desenvolve ectrópio após queimadura facial, com retração da pele infrapalpebral. Qual é a conduta cirúrgica adequada?",
+      "options": [
+        "Enxerto de pele para alongar a lamela anterior",
+        "Encurtamento horizontal da margem palpebral",
+        "Reinserção dos retratores da pálpebra inferior",
+        "Enxerto de mucosa oral na lamela posterior"
+      ],
+      "correctIndex": 0,
+      "explanation": "O ectrópio cicatricial resulta da contratura da lamela anterior por queimadura, trauma, cirurgia prévia ou dermatoses crônicas, que traciona a margem para fora. O tratamento é liberar a cicatriz e repor tecido com enxerto de pele. Encurtar horizontalmente resolve o involucional, mas não corrige o cicatricial."
+    },
+    {
+      "question": "Criança levada por suspeita de estrabismo convergente tem reflexos corneanos centrados e pregas cutâneas verticais nos cantos mediais. Qual é o achado?",
+      "options": [
+        "Epicanto, causando pseudoestrabismo",
+        "Ptose congênita unilateral discreta",
+        "Entrópio congênito bilateral leve",
+        "Blefarofimose com telecanto largo"
+      ],
+      "correctIndex": 0,
+      "explanation": "O epicanto é uma prega cutânea vertical que cobre o canto medial e a esclera nasal, dando a impressão de olhos convergentes. Como os reflexos de Hirschberg estão centrados e o cover test é normal, trata-se de pseudoestrabismo. A prega tende a diminuir com o desenvolvimento do dorso nasal."
+    },
+    {
+      "question": "Mulher de 55 anos queixa-se de peso nas pálpebras superiores e apresenta o achado da figura. Qual é o diagnóstico?",
+      "options": [
+        "Dermatocálase, excesso de pele senil",
+        "Blefarocálase, edema recorrente juvenil",
+        "Ptose aponeurótica da margem superior",
+        "Edema palpebral por hipotireoidismo"
+      ],
+      "correctIndex": 0,
+      "explanation": "A dermatocálase é o excesso de pele palpebral do envelhecimento, muitas vezes com herniação da gordura orbitária, que pode cobrir os cílios e restringir o campo visual superior. A blefarocálase é entidade distinta: crises repetidas de edema palpebral em jovens que acabam por atrofiar e afinar a pele. Em ambas a margem palpebral permanece em posição normal.",
+      "image": "s17i2",
+      "imageCaption": "Excesso de pele redundante nas pálpebras superiores"
+    },
+    {
+      "question": "Como se afere objetivamente a altura de uma ptose palpebral no exame?",
+      "options": [
+        "Pela distância margem-reflexo pupilar superior",
+        "Pela medida da fenda palpebral horizontal",
+        "Pela altura do sulco palpebral em olhar baixo",
+        "Pela excursão do músculo orbicular no piscar"
+      ],
+      "correctIndex": 0,
+      "explanation": "A distância entre o reflexo corneano central e a margem palpebral superior, normalmente de 4 a 5 mm, quantifica a ptose e permite comparar os dois olhos. Complementa-se com a excursão do levantador, que mede a função do músculo do olhar inferior ao superior e orienta a escolha da técnica cirúrgica."
+    },
+    {
+      "question": "Idoso com ptose bilateral, sulco palpebral superior alto e boa função do músculo levantador. Qual é a causa mais provável?",
+      "options": [
+        "Desinserção da aponeurose do levantador",
+        "Distrofia congênita do músculo levantador",
+        "Bloqueio neuromuscular da junção sináptica",
+        "Compressão mecânica por tumor palpebral"
+      ],
+      "correctIndex": 0,
+      "explanation": "É a ptose aponeurótica ou senil, em que a aponeurose do levantador se desinsere ou se afina, mas o músculo continua funcionante. O sinal característico é o sulco palpebral deslocado para cima com excursão do levantador preservada. O tratamento é reinserir ou reforçar a aponeurose."
+    },
+    {
+      "question": "Ptose que piora ao fim do dia e se acentua após manter o olhar para cima por três minutos sugere qual diagnóstico?",
+      "options": [
+        "Miastenia gravis, ptose miogênica fatigável",
+        "Síndrome de Horner, ptose neurogênica leve",
+        "Ptose aponeurótica involucional do idoso",
+        "Paralisia congênita do músculo levantador"
+      ],
+      "correctIndex": 0,
+      "explanation": "A fatigabilidade é a marca da miastenia gravis: o bloqueio dos receptores de acetilcolina na placa motora faz a ptose variar ao longo do dia e piorar com o esforço sustentado do olhar para cima. Podem acompanhar diplopia variável e o sinal de Cogan, o salto da pálpebra ao retornar do olhar inferior. As demais causas dão ptose estável."
+    },
+    {
+      "question": "Recém-nascido tem ptose unilateral acentuada com má função do levantador. Qual é a principal complicação a evitar?",
+      "options": [
+        "Ambliopia por privação do eixo visual",
+        "Ceratite de exposição por lagoftalmo",
+        "Glaucoma congênito por compressão",
+        "Astigmatismo irregular por triquíase"
+      ],
+      "correctIndex": 0,
+      "explanation": "A ptose congênita decorre de distrofia do levantador, substituído por tecido fibroadiposo e com excursão reduzida. Quando a margem cobre a pupila, priva a retina de estímulo e causa ambliopia, motivo para operar precocemente. Ptoses parciais podem induzir astigmatismo por compressão do globo, e não por triquíase."
+    },
+    {
+      "question": "Ptose discreta acompanhada de miose, enoftalmo e anidrose facial ipsilateral caracteriza qual síndrome?",
+      "options": [
+        "Síndrome de Horner, por lesão simpática",
+        "Síndrome de Marcus Gunn, por sincinesia",
+        "Paralisia do III par, por lesão motora",
+        "Síndrome de Duane, por inervação anômala"
+      ],
+      "correctIndex": 0,
+      "explanation": "A interrupção da via oculossimpática produz a tétrade ptose, miose, enoftalmo aparente e anidrose facial. A ptose é pequena, de 1 a 2 mm, porque decorre da perda do músculo de Müller e não do levantador. Na forma congênita soma-se heterocromia de íris, com o lado afetado mais claro."
+    },
+    {
+      "question": "Lactente cuja pálpebra ptosada se eleva durante a sucção e a mastigação. Qual é o diagnóstico?",
+      "options": [
+        "Sincinesia mandibulopalpebral de Marcus Gunn",
+        "Sincinesia do orbicular na síndrome de Bell",
+        "Ptose congênita simples do músculo levantador",
+        "Regeneração aberrante do terceiro par craniano"
+      ],
+      "correctIndex": 0,
+      "explanation": "Na síndrome de Marcus Gunn há conexão anômala entre o ramo motor do trigêmeo, destinado ao pterigoideo, e o núcleo do levantador da pálpebra. O resultado é a elevação involuntária da pálpebra ptosada ao mamar, mastigar ou movimentar a mandíbula. É a forma sincinética clássica de ptose neurogênica congênita."
+    },
+    {
+      "question": "Lactente apresenta a lesão da figura ocluindo parcialmente o eixo visual. Qual a conduta e a evolução natural esperada?",
+      "options": [
+        "Corticoide intralesional; involui até os 7 anos",
+        "Exérese ampla imediata; não involui com a idade",
+        "Observação isolada; involui após a puberdade",
+        "Radioterapia local; involui em poucos meses"
+      ],
+      "correctIndex": 0,
+      "explanation": "O hemangioma capilar surge ao nascimento ou logo depois, cresce nos primeiros meses e involui espontaneamente até cerca dos 7 anos. Quando ocupa o eixo visual ou induz astigmatismo, tratá-lo é obrigatório para prevenir ambliopia: injeção intralesional de corticoide e interferon são opções descritas. É a causa clássica de ptose mecânica na infância.",
+      "image": "s25i1",
+      "imageCaption": "Massa arroxeada da pálpebra superior em lactente"
+    },
+    {
+      "question": "Qual é o agente etiológico mais frequente do hordéolo?",
+      "options": [
+        "Staphylococcus aureus",
+        "Chlamydia trachomatis",
+        "Streptococcus pyogenes",
+        "Pseudomonas aeruginosa"
+      ],
+      "correctIndex": 0,
+      "explanation": "O hordéolo é a infecção aguda das glândulas palpebrais, quase sempre por Staphylococcus aureus, e cursa com dor, hiperemia e edema localizados. O hordéolo externo acomete Zeiss ou Moll e aponta para a pele; o interno acomete a glândula de Meibômio e drena pela conjuntiva."
+    },
+    {
+      "question": "Qual é o tratamento inicial do hordéolo e quando se indica incisão e drenagem?",
+      "options": [
+        "Compressas mornas; drenar se não melhorar em 48 h",
+        "Compressas frias; drenar se não melhorar em 7 dias",
+        "Corticoide intralesional; drenar após 30 dias",
+        "Antibiótico sistêmico; drenar de imediato"
+      ],
+      "correctIndex": 0,
+      "explanation": "O tratamento começa com compressas mornas de 3 a 4 vezes ao dia, por 10 a 15 minutos, associadas a pomada ou colírio de antibiótico com corticoide. Sem melhora em 48 horas, indica-se incisão e drenagem. O antibiótico sistêmico fica reservado para quando há evolução para celulite."
+    },
+    {
+      "question": "O calázio difere do hordéolo pela sua natureza. Qual afirmação o caracteriza corretamente?",
+      "options": [
+        "Granuloma lipídico crônico e habitualmente indolor",
+        "Infecção bacteriana aguda e habitualmente dolorosa",
+        "Reação alérgica aguda com prurido e lacrimejamento",
+        "Retenção de suor da glândula de Moll, translúcida"
+      ],
+      "correctIndex": 0,
+      "explanation": "O calázio é a inflamação lipogranulomatosa crônica que se segue à obstrução de uma glândula de Meibômio, formando nódulo firme e indolor no tarso. Lesões grandes comprimem o globo e induzem astigmatismo, com queixa de visão borrada. O hordéolo, ao contrário, é agudo, infeccioso e doloroso."
+    },
+    {
+      "question": "Calázio que recidiva sempre no mesmo local da pálpebra exige qual conduta?",
+      "options": [
+        "Exérese com exame anatomopatológico da peça",
+        "Nova drenagem sem envio de material a exame",
+        "Antibiótico sistêmico por quatro semanas",
+        "Corticoide intralesional em doses repetidas"
+      ],
+      "correctIndex": 0,
+      "explanation": "A recidiva no mesmo sítio levanta a suspeita de carcinoma de glândula sebácea, que se disfarça de processo inflamatório crônico. Por isso a lesão recorrente deve ser excisada e enviada para exame anatomopatológico. O calázio comum é tratado por excisão cirúrgica ou corticoide intralesional."
+    },
+    {
+      "question": "Paciente com ardor, prurido e o achado da figura na base dos cílios. Qual é o diagnóstico e a base do tratamento?",
+      "options": [
+        "Blefarite; higiene das margens com xampu neutro",
+        "Hordéolo; incisão e drenagem da glândula",
+        "Calázio; corticoide injetado na lesão",
+        "Triquíase; epilação dos cílios invertidos"
+      ],
+      "correctIndex": 0,
+      "explanation": "Crostas e escamas aderidas à base dos cílios, com irritação, ardor e prurido crônicos, definem a blefarite. A base do tratamento é a higiene diária das margens palpebrais com xampu neutro, complementada por antibiótico tópico em colírio ou pomada e corticoide tópico nas crises. Nos casos refratários usa-se doxiciclina 100 mg duas vezes ao dia ou eritromicina 250 mg três vezes ao dia.",
+      "image": "s28i3",
+      "imageCaption": "Escamas e crostas aderidas à base dos cílios"
+    },
+    {
+      "question": "Criança com múltiplas pápulas umbilicadas na pele palpebral. Qual é o agente e o tratamento indicado?",
+      "options": [
+        "Poxvírus; curetagem, cauterização ou excisão",
+        "Papilomavírus; aplicação tópica de ácido",
+        "Herpes simples; aciclovir sistêmico oral",
+        "Estafilococo; antibiótico tópico em pomada"
+      ],
+      "correctIndex": 0,
+      "explanation": "O molusco contagioso é causado por um poxvírus e produz pápulas múltiplas, pequenas e umbilicadas no centro. Na margem palpebral pode desencadear conjuntivite folicular crônica pela liberação de partículas virais no saco conjuntival. O tratamento é a remoção das lesões por curetagem, cauterização ou excisão."
+    },
+    {
+      "question": "Idosa de pele clara apresenta a lesão da figura na pálpebra inferior, ulcerada e com perda de cílios. Qual o diagnóstico mais provável e o tratamento?",
+      "options": [
+        "Carcinoma basocelular; exérese com margem ampla",
+        "Carcinoma espinocelular; radioterapia exclusiva",
+        "Calázio infectado; corticoide intralesional",
+        "Hordéolo externo; compressas mornas e pomada"
+      ],
+      "correctIndex": 0,
+      "explanation": "O carcinoma basocelular responde por cerca de 95% dos tumores malignos palpebrais, predomina em pacientes de pele clara e tem sítio preferencial na pálpebra inferior e no canto medial. Ulceração central com bordas peroladas e madarose, a perda de cílios sobre a lesão, são sinais de alerta. O tratamento é a exérese com margem de segurança e biópsia de congelação das margens.",
+      "image": "s48i1",
+      "imageCaption": "Lesão ulcerada da margem palpebral inferior com perda de cílios"
+    },
+    {
+      "question": "Lesão palpebral de crescimento lento, confundida com calázio de repetição no mesmo local. O que deve ser suspeitado?",
+      "options": [
+        "Carcinoma de glândula sebácea, com risco de metástase",
+        "Hemangioma capilar, com involução espontânea lenta",
+        "Nevo melanocítico, que raramente sofre malignização",
+        "Papiloma escamoso, de comportamento sempre benigno"
+      ],
+      "correctIndex": 0,
+      "explanation": "O carcinoma de glândula sebácea cresce lentamente e se confunde com processos inflamatórios crônicos, sobretudo o calázio recidivante e a blefarite unilateral persistente. É agressivo e pode metastatizar para gânglios linfáticos regionais ou à distância. O tratamento é a exérese com margens e biópsia do linfonodo sentinela."
+    }
+  ]
+}

@@ -1,0 +1,354 @@
+{
+  "titulo": "Otoscopia",
+  "eyebrow": "Otorrinolaringologia · Propedêutica",
+  "subtitulo": "Do preparo do espéculo à leitura da membrana timpânica",
+  "intro": "Técnica passo a passo do exame otoscópico, anatomia do conduto e da membrana timpânica, as principais alterações timpânicas e o manejo de cerume e corpos estranhos, incluindo a lavagem e suas contraindicações.",
+  "questoes": [
+    {
+      "question": "Os espéculos auriculares reutilizáveis, antes de serem acoplados ao otoscópio, devem ser higienizados com:",
+      "options": [
+        "álcool a 70% aplicado com gaze ou algodão",
+        "água corrente aquecida e secagem com gaze",
+        "solução de iodo diluída em soro fisiológico",
+        "éter sulfúrico aplicado com haste flexível"
+      ],
+      "correctIndex": 0,
+      "explanation": "A antissepsia do espéculo reutilizável é feita com álcool 70%, com gaze ou algodão, entre um paciente e outro. O ambiente do exame deve ser bem iluminado e tranquilo, e o otoscópio precisa ter bateria carregada e espéculos de vários comprimentos e diâmetros disponíveis."
+    },
+    {
+      "question": "A linha amarela da imagem marca o alinhamento usado para posicionar a cabeça do paciente antes da otoscopia. Ela une o canto do olho ao:",
+      "options": [
+        "início da hélice do pavilhão auricular",
+        "ápice do trago do pavilhão auricular",
+        "bordo do lóbulo do pavilhão auricular",
+        "centro da concha do pavilhão auricular"
+      ],
+      "correctIndex": 0,
+      "explanation": "O crânio é posicionado com o início da hélice no mesmo nível do canto do olho, formando uma linha horizontal, e com leve inclinação para o lado oposto ao que será examinado. O paciente permanece sentado ereto e é orientado de que se trata de exame rápido e indolor.",
+      "image": "pg04",
+      "imageCaption": "Alinhamento da cabeça para a otoscopia"
+    },
+    {
+      "question": "Na inspeção externa, um pavilhão auricular avermelhado com pequenas vesículas agrupadas e crostas sugere:",
+      "options": [
+        "síndrome de Ramsay Hunt",
+        "pericondrite do pavilhão",
+        "mastoidite aguda supurada",
+        "queloide pós-perfuração"
+      ],
+      "correctIndex": 0,
+      "explanation": "Vesículas agrupadas sobre base eritematosa no pavilhão e no conduto, evoluindo para crostas, são a marca do herpes-zóster ótico, ou síndrome de Ramsay Hunt. O quadro costuma acompanhar-se de otalgia intensa e de paralisia facial periférica do mesmo lado."
+    },
+    {
+      "question": "Hiperemia que acomete os dois terços superiores do pavilhão auricular, área cartilaginosa, e poupa o lóbulo caracteriza:",
+      "options": [
+        "pericondrite do pavilhão auricular",
+        "erisipela do pavilhão auricular",
+        "otite externa difusa bacteriana",
+        "dermatite seborreica auricular"
+      ],
+      "correctIndex": 0,
+      "explanation": "A pericondrite compromete o pericôndrio e por isso respeita o lóbulo, que não tem cartilagem, ficando restrita aos dois terços superiores do pavilhão. Costuma seguir-se a traumas, a piercings na cartilagem ou à drenagem de otohematoma."
+    },
+    {
+      "question": "Comparado ao otoscópio de LED do tipo caneta, o otoscópio de fibra óptica tem como vantagem:",
+      "options": [
+        "campo visual livre, sem a lâmpada na ponta",
+        "maior aumento óptico da imagem da membrana",
+        "espéculo de diâmetro único para todo o exame",
+        "registro fotográfico automático do conduto"
+      ],
+      "correctIndex": 0,
+      "explanation": "No otoscópio de fibra óptica a luz parte do início do cabo e é conduzida até a extremidade, deixando o campo de visão inteiramente desobstruído. No modelo de LED tipo caneta a lâmpada fica na ponta e ocupa parte do campo, prejudicando a visualização."
+    },
+    {
+      "question": "A escolha do espéculo auricular para o exame segue o critério de:",
+      "options": [
+        "diâmetro o mais próximo possível do meato acústico",
+        "diâmetro sempre menor que a metade do meato acústico",
+        "comprimento suficiente para tocar a membrana timpânica",
+        "diâmetro padronizado para todos os pacientes adultos"
+      ],
+      "correctIndex": 0,
+      "explanation": "O espéculo deve ter diâmetro o mais semelhante possível ao do meato acústico externo do paciente: muito estreito reduz o campo visual, muito largo não entra e machuca. Por isso o otoscópio é acompanhado de espéculos de vários comprimentos e diâmetros."
+    },
+    {
+      "question": "No adulto, antes de introduzir o espéculo no meato acústico, o pavilhão auricular é tracionado:",
+      "options": [
+        "para cima e para trás",
+        "para baixo e para trás",
+        "para cima e para frente",
+        "para baixo e para frente"
+      ],
+      "correctIndex": 0,
+      "explanation": "No adulto a tração é feita para cima e para trás. Esse movimento alinha a porção cartilaginosa móvel do conduto com a porção óssea fixa e abre caminho para o espéculo até a membrana timpânica."
+    },
+    {
+      "question": "A tração do pavilhão auricular durante a otoscopia tem como finalidade:",
+      "options": [
+        "retificar o conduto auditivo externo, que é tortuoso",
+        "reduzir a sensibilidade dolorosa do conduto ósseo",
+        "aumentar o diâmetro do meato acústico interno",
+        "afastar o cerume aderido à parede do conduto"
+      ],
+      "correctIndex": 0,
+      "explanation": "O conduto auditivo externo é tortuoso: a porção distal, cartilaginosa, é móvel, e a proximal, óssea, é fixa; essa conformação protege a membrana timpânica de traumas. Tracionar o pavilhão retifica o trajeto e permite ver as porções mais internas e a membrana."
+    },
+    {
+      "question": "Em lactentes e crianças pequenas, a tração do pavilhão auricular para a otoscopia é feita:",
+      "options": [
+        "para baixo e para trás",
+        "para cima e para trás",
+        "para cima e para frente",
+        "para baixo e para frente"
+      ],
+      "correctIndex": 0,
+      "explanation": "Na criança pequena o conduto auditivo externo é mais curto, mais horizontalizado e angulado para baixo, de modo que a retificação se obtém puxando o pavilhão para baixo e para trás. O sentido para cima e para trás vale para o adulto."
+    },
+    {
+      "question": "Na imagem, o otoscópio é segurado como uma caneta e o dorso da mão do examinador fica apoiado na face do paciente. Esse apoio serve para:",
+      "options": [
+        "evitar trauma se o paciente fizer movimento brusco",
+        "manter o espéculo perpendicular à membrana timpânica",
+        "reduzir o tremor fisiológico do punho do examinador",
+        "permitir maior profundidade de inserção do espéculo"
+      ],
+      "correctIndex": 0,
+      "explanation": "Com o dorso da mão encostado na face, a mão e o otoscópio acompanham qualquer movimento súbito da cabeça, de modo que o espéculo não é empurrado contra o conduto. É a proteção contra o reflexo de susto do paciente no momento da introdução.",
+      "image": "pg06",
+      "imageCaption": "Inserção e manipulação do otoscópio"
+    },
+    {
+      "question": "A introdução do espéculo no conduto auditivo externo deve ser lenta e limitada a cerca de:",
+      "options": [
+        "0,5 cm de profundidade",
+        "1,5 cm de profundidade",
+        "2,5 cm de profundidade",
+        "3,5 cm de profundidade"
+      ],
+      "correctIndex": 0,
+      "explanation": "Cerca de meio centímetro basta para vencer o meato e obter a visão do conduto e da membrana. Avançar mais atinge a porção óssea, muito sensível, e arrisca escoriar a parede ou tocar a membrana timpânica."
+    },
+    {
+      "question": "Sobre o cerume encontrado no conduto auditivo externo, é correto afirmar que:",
+      "options": [
+        "impermeabiliza o conduto e é eliminado espontaneamente",
+        "indica infecção quando presente em qualquer quantidade",
+        "deve ser removido em toda otoscopia de rotina do adulto",
+        "forma-se na porção óssea profunda do conduto auditivo"
+      ],
+      "correctIndex": 0,
+      "explanation": "O cerume é a primeira barreira protetora do conduto: impermeabiliza a pele, tem ação antimicrobiana e migra para fora por autoeliminação. Só se remove quando está em excesso a ponto de impedir a visualização da membrana timpânica."
+    },
+    {
+      "question": "Diante de otorragia, encostar papel absorvente na secreção e observar um halo claro ao redor da mancha de sangue indica:",
+      "options": [
+        "presença de líquor associado ao sangramento",
+        "presença de pus associado ao sangramento",
+        "sangramento originado apenas do pavilhão",
+        "sangramento de origem exclusivamente venosa"
+      ],
+      "correctIndex": 0,
+      "explanation": "É o sinal do halo: o líquor difunde-se mais rápido que o sangue no papel absorvente e forma um anel claro em volta da mancha central. Sangue puro deixa mancha homogênea. Otorreia de líquor aponta fratura de base de crânio e exige avaliação imediata."
+    },
+    {
+      "question": "A imagem mostra corpos estranhos do conduto auditivo externo. O exemplo que caracteriza um corpo estranho animado é:",
+      "options": [
+        "o inseto alojado junto à membrana timpânica",
+        "o fragmento de algodão retido no conduto",
+        "o conjunto de grânulos claros no conduto",
+        "a formação óssea que estreita o conduto"
+      ],
+      "correctIndex": 0,
+      "explanation": "Corpos estranhos animados são seres vivos, tipicamente insetos; os inanimados incluem algodão, areia, contas, ponta de lápis e outros objetos. A distinção importa porque a conduta muda: o corpo animado precisa ser imobilizado antes de qualquer tentativa de retirada.",
+      "image": "pg08",
+      "imageCaption": "Corpos estranhos do conduto auditivo externo"
+    },
+    {
+      "question": "Diante de um inseto vivo alojado no conduto auditivo externo, a conduta inicial recomendada é:",
+      "options": [
+        "instilar substância oleosa para imobilizar o inseto",
+        "instilar solução alcoólica para anestesiar o inseto",
+        "irrigar com jato forte de água fria para expulsá-lo",
+        "aspirar o conduto com sonda rígida sob visão direta"
+      ],
+      "correctIndex": 0,
+      "explanation": "Vaselina líquida, óleo medicinal ou mesmo óleo de cozinha imobilizam o inseto pela viscosidade e o matam, interrompendo o movimento que lesa o conduto. Só depois se faz a retirada, com o especialista avaliando a lesão da parede e da membrana."
+    },
+    {
+      "question": "O uso de pinça como primeira escolha para retirar corpo estranho do conduto auditivo externo é desaconselhado porque:",
+      "options": [
+        "tende a empurrar o objeto para porções mais profundas",
+        "provoca sangramento da membrana timpânica em regra",
+        "exige anestesia geral mesmo em pacientes adultos",
+        "não permite a retirada de objetos de superfície lisa"
+      ],
+      "correctIndex": 0,
+      "explanation": "A pinça fecha sobre o objeto e, num conduto estreito, costuma deslizar e empurrá-lo para dentro, aproximando-o da membrana timpânica. Deve ser usada com moderação e apenas em materiais que possam ser apreendidos, como espuma ou pedaço de pano."
+    },
+    {
+      "question": "A lavagem do conduto está contraindicada quando o corpo estranho é um grão vegetal, como o feijão, porque:",
+      "options": [
+        "o grão incha com a água e obstrui ainda mais",
+        "o grão se dissolve e irrita a pele do conduto",
+        "o grão adere ao cerume e endurece rapidamente",
+        "o grão flutua e desloca-se para a orelha média"
+      ],
+      "correctIndex": 0,
+      "explanation": "Grãos absorvem água e aumentam de volume, passando a preencher boa parte do conduto e tornando a retirada muito mais difícil. A conduta correta é remover com gancho, passando por cima do grão e tracionando-o para fora, por quem domine a anatomia."
+    },
+    {
+      "question": "Havendo suspeita de perfuração da membrana timpânica, a lavagem do conduto é contraindicada e a alternativa passa a ser:",
+      "options": [
+        "aspiração da secreção ou do corpo estranho",
+        "irrigação com jato de baixa pressão e água fria",
+        "instilação de gotas oleosas por sete dias",
+        "remoção com pinça sem visualização direta"
+      ],
+      "correctIndex": 0,
+      "explanation": "Com a membrana rota, o líquido da lavagem alcança a orelha média e amplia o risco de contaminação. Nesses casos a secreção e o corpo estranho são retirados por aspiração, sob visão direta, sem introduzir líquido no conduto."
+    },
+    {
+      "question": "Na lavagem do conduto auditivo externo, a solução utilizada deve estar morna porque:",
+      "options": [
+        "temperaturas extremas provocam tontura no paciente",
+        "a água fria endurece o tampão de cerume no conduto",
+        "a água quente dilata o conduto e facilita a saída",
+        "a temperatura morna reduz o sangramento da pele"
+      ],
+      "correctIndex": 0,
+      "explanation": "Líquido muito frio ou muito quente estimula o labirinto por correntes de convecção na endolinfa e desencadeia vertigem e nistagmo, o mesmo princípio da prova calórica. Por isso usa-se soro fisiológico ou água filtrada mornos."
+    },
+    {
+      "question": "Durante a lavagem do conduto auditivo externo, o jato de soro deve ser direcionado:",
+      "options": [
+        "para cima e para trás, passando por cima do cerume",
+        "para o centro do conduto, direto contra o cerume",
+        "para baixo e para frente, contra a parede inferior",
+        "para o meato acústico, em jatos curtos e rápidos"
+      ],
+      "correctIndex": 0,
+      "explanation": "O jato passa por cima do tampão ou do corpo estranho, alcança a membrana e retorna pelo conduto; é esse refluxo que arrasta o material para fora. Dirigir o jato reto contra o objeto o empurra para dentro e pode perfurar a membrana."
+    },
+    {
+      "question": "A imagem mostra o material preparado para a lavagem do conduto auditivo externo. O dispositivo acoplado à seringa de 20 mL é:",
+      "options": [
+        "um escalpe com o equipo cortado",
+        "uma sonda de aspiração flexível",
+        "um cateter uretral de fino calibre",
+        "uma cânula metálica de otologia"
+      ],
+      "correctIndex": 0,
+      "explanation": "Usa-se um escalpe do qual se despreza a agulha, deixando cerca de três centímetros de equipo acoplados à seringa de 20 mL. O corte deve ser perpendicular: um corte angulado deixa ponta cortante capaz de escoriar o conduto.",
+      "image": "pg18",
+      "imageCaption": "Material e técnica da lavagem do conduto"
+    },
+    {
+      "question": "À otoscopia, a membrana timpânica normal apresenta-se:",
+      "options": [
+        "fina, semitransparente e de cor cinza-perolada",
+        "espessa, opaca e de cor branco-nacarada",
+        "fina, hiperemiada e de cor rósea intensa",
+        "espessa, brilhante e de cor amarelo-âmbar"
+      ],
+      "correctIndex": 0,
+      "explanation": "A membrana normal é fina, semitransparente e cinza-perolada, e pela transparência às vezes se identificam estruturas da orelha média. A presença de cone de luz bem formado reforça a impressão de membrana e orelha média saudáveis."
+    },
+    {
+      "question": "Na imagem, as linhas que dividem a membrana timpânica em quatro quadrantes têm como referência:",
+      "options": [
+        "o cabo do martelo e o umbo",
+        "o ânulo e a parte flácida",
+        "o cone de luz e o ânulo",
+        "o trago e a parte tensa"
+      ],
+      "correctIndex": 0,
+      "explanation": "O eixo do cabo do martelo e uma linha perpendicular que passa pelo umbo dividem a membrana em quadrantes ântero-superior, ântero-inferior, póstero-superior e póstero-inferior. Descrever o achado por quadrante é o padrão do registro otoscópico.",
+      "image": "pg10",
+      "imageCaption": "Membrana timpânica normal e seus quadrantes"
+    },
+    {
+      "question": "O umbo, identificado à otoscopia, corresponde:",
+      "options": [
+        "ao ponto mais profundo da membrana, na ponta do martelo",
+        "à borda fibrosa que circunda a membrana timpânica",
+        "ao reflexo luminoso do quadrante ântero-inferior",
+        "à saliência do processo lateral do martelo curto"
+      ],
+      "correctIndex": 0,
+      "explanation": "O umbo é a extremidade distal do cabo do martelo e o ponto mais retraído da membrana, o vértice da sua concavidade. A borda fibrosa que separa a membrana do conduto é o ânulo, e o reflexo luminoso é o cone de luz."
+    },
+    {
+      "question": "O cone de luz visto na otoscopia é o reflexo da luz na concavidade da membrana e, quando bem formado, sugere:",
+      "options": [
+        "membrana e orelha média provavelmente saudáveis",
+        "acúmulo de secreção purulenta na orelha média",
+        "perfuração pequena na porção ântero-inferior",
+        "retração da membrana por disfunção tubária"
+      ],
+      "correctIndex": 0,
+      "explanation": "O triângulo luminoso depende da forma cônica preservada da membrana e da sua transparência, de modo que sua presença bem definida indica, na maioria das vezes, membrana e orelha média normais. Ele se apaga ou se deforma no abaulamento e na retração."
+    },
+    {
+      "question": "Em uma otoscopia, o cabo do martelo e o cone de luz apontam para a frente do crânio do paciente. A membrana examinada é a:",
+      "options": [
+        "esquerda, pois ambos apontam anteriormente",
+        "direita, pois ambos apontam anteriormente",
+        "esquerda, pois ambos apontam posteriormente",
+        "direita, pois ambos apontam posteriormente"
+      ],
+      "correctIndex": 0,
+      "explanation": "O eixo superior do cabo do martelo e o cone de luz apontam sempre para a face anterior do crânio. Localizando para que lado do campo eles apontam, deduz-se onde está o nariz do paciente e, com isso, a lateralidade: apontando para a frente, é a orelha esquerda."
+    },
+    {
+      "question": "A imagem inferior mostra uma membrana timpânica abaulada, hiperemiada e com conteúdo purulento por transparência. O quadro típico é:",
+      "options": [
+        "otite média aguda supurada",
+        "otite média secretora crônica",
+        "otite externa difusa aguda",
+        "timpanosclerose pós-infecciosa"
+      ],
+      "correctIndex": 0,
+      "explanation": "O abaulamento resulta da pressão do pus acumulado na orelha média, que empurra a membrana para o conduto, com hipervascularização e perda do cone de luz. É o aspecto clássico da otite média aguda supurada, que cursa com otalgia intensa e febre.",
+      "image": "pg11",
+      "imageCaption": "Perfurações (acima) e abaulamento (abaixo)"
+    },
+    {
+      "question": "A imagem superior mostra uma membrana timpânica retraída sobre as estruturas da orelha média. Essa retração decorre de:",
+      "options": [
+        "pressão negativa na orelha média por disfunção tubária",
+        "aumento da pressão na orelha média por secreção aguda",
+        "espessamento cicatricial da membrana após perfuração",
+        "acúmulo de queratina na parte flácida da membrana"
+      ],
+      "correctIndex": 0,
+      "explanation": "Quando a tuba auditiva não ventila a orelha média, o ar é reabsorvido e a pressão negativa resultante puxa a membrana para dentro, produzindo retração e, nos casos avançados, atelectasia. É comum a associação com secreção na orelha média, a otite média secretora.",
+      "image": "pg12",
+      "imageCaption": "Retração e nível líquido na membrana timpânica"
+    },
+    {
+      "question": "As placas esbranquiçadas vistas sobre a membrana timpânica na imagem correspondem a:",
+      "options": [
+        "depósitos de cálcio, cicatriz de infecção prévia",
+        "colônias de fungos aderidas à camada externa",
+        "bolhas de ar retidas atrás da parte tensa",
+        "tecido de granulação de perfuração recente"
+      ],
+      "correctIndex": 0,
+      "explanation": "A timpanosclerose é a deposição de cálcio na membrana após processos inflamatórios ou infecciosos de repetição, funcionando como uma cicatriz. As placas são brancas, opacas e de contorno irregular, e sinalizam otite média prévia.",
+      "image": "pg13",
+      "imageCaption": "Placas de timpanosclerose e tubo de ventilação"
+    },
+    {
+      "question": "Concluída a otoscopia, a finalização adequada do procedimento inclui:",
+      "options": [
+        "retirar o otoscópio suavemente e registrar o exame",
+        "retirar o otoscópio girando-o e reutilizar o espéculo",
+        "lavar o conduto com soro morno antes de encerrar",
+        "manter as luvas para a higienização do otoscópio"
+      ],
+      "correctIndex": 0,
+      "explanation": "O otoscópio é retirado devagar, sem movimentos bruscos, as luvas são desprezadas e o achado é descrito no prontuário. A descrição deve registrar o conduto e a membrana de cada lado, incluindo cor, transparência, cone de luz e eventuais alterações."
+    }
+  ]
+}

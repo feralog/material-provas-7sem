@@ -2,10 +2,10 @@
   "titulo": "Síndrome Metabólica e Obesidade",
   "eyebrow": "Pediatria · Endocrinologia",
   "subtitulo": "Do percentil de IMC aos critérios da IDF na criança obesa",
-  "intro": "Material da Aula 6 de Pediatria: classificação da obesidade por IMC e percentil, aferição e interpretação da pressão arterial na infância, critérios diagnósticos de síndrome metabólica da IDF, fisiopatologia da resistência insulínica, rastreio de comorbidades e conduta. Inclui os dados brasileiros do SISVAN e do ERICA.",
+  "intro": "Obesidade e síndrome metabólica na infância e adolescência: classificação da obesidade por IMC e percentil, aferição e interpretação da pressão arterial na infância, critérios diagnósticos de síndrome metabólica da IDF, fisiopatologia da resistência insulínica, rastreio de comorbidades e conduta. Inclui os dados brasileiros do SISVAN e do ERICA.",
   "questoes": [
     {
-      "question": "Segundo a definição adotada na aula, obesidade em pacientes pediátricos corresponde a qual ponto de corte antropométrico?",
+      "question": "Em crianças e adolescentes, obesidade corresponde a qual ponto de corte antropométrico?",
       "options": [
         "IMC ≥ percentil 95 para a mesma idade e sexo",
         "IMC ≥ percentil 85 para a mesma idade e sexo",
@@ -178,7 +178,7 @@
       "imageCaption": "Patogênese da síndrome metabólica em crianças e adolescentes"
     },
     {
-      "question": "Sobre as adipocitocinas defensoras na obesidade abdominal, o padrão descrito no esquema da aula é:",
+      "question": "Na obesidade abdominal, qual é o padrão das adipocitocinas defensoras?",
       "options": [
         "Adiponectina reduzida, com resistina aumentada",
         "Adiponectina aumentada, com resistina reduzida",
@@ -186,7 +186,7 @@
         "Quimerina reduzida, com adiponectina aumentada"
       ],
       "correctIndex": 0,
-      "explanation": "No esquema, lectina, quimerina e resistina aparecem aumentadas, enquanto a adiponectina, a adipocina protetora, sensibilizadora de insulina e anti-inflamatória, está reduzida. É justamente a queda da adiponectina que caracteriza a disfunção das defesas do tecido adiposo na obesidade central."
+      "explanation": "Na obesidade abdominal, lectina, quimerina e resistina estão aumentadas, enquanto a adiponectina, a adipocina protetora, sensibilizadora de insulina e anti-inflamatória, está reduzida. É justamente a queda da adiponectina que caracteriza a disfunção das defesas do tecido adiposo na obesidade central."
     },
     {
       "question": "A ativação do tecido adiposo aumenta a enzima conversora de angiotensina e a produção de angiotensina II, o que leva a:",
@@ -200,7 +200,7 @@
       "explanation": "A angiotensina II gerada pela ECA do tecido adiposo eleva as espécies reativas de oxigênio, ativa o sistema renina-angiotensina-aldosterona e induz a expressão do receptor LOX-1, o receptor de LDL oxidada do tipo lectina, causando disfunção endotelial. Esse é o braço fisiopatológico que liga a obesidade central à hipertensão arterial."
     },
     {
-      "question": "Quais polimorfismos genéticos aparecem no esquema da aula como fatores de suscetibilidade para obesidade abdominal?",
+      "question": "Quais polimorfismos genéticos conferem suscetibilidade à obesidade abdominal e à síndrome metabólica?",
       "options": [
         "FTO, CETP e TCF7L2",
         "MC4R, LEP e POMC",
@@ -208,7 +208,7 @@
         "APOE, PPARG e SREBP"
       ],
       "correctIndex": 0,
-      "explanation": "O esquema cita polimorfismos em FTO, CETP e TCF7L2 como base da suscetibilidade genética à obesidade abdominal e à síndrome metabólica. Genes como MC4R, LEP, LEPR, POMC e PCSK1 relacionam-se à obesidade monogênica de início precoce, entidade distinta que deve ser suspeitada abaixo dos 5 anos com apetite insaciável."
+      "explanation": "Polimorfismos em FTO, CETP e TCF7L2 formam a base da suscetibilidade genética à obesidade abdominal e à síndrome metabólica. Genes como MC4R, LEP, LEPR, POMC e PCSK1 relacionam-se à obesidade monogênica de início precoce, entidade distinta que deve ser suspeitada abaixo dos 5 anos com apetite insaciável."
     },
     {
       "question": "No esquema de patogênese, por qual mecanismo os distúrbios do sono contribuem para a síndrome metabólica?",
@@ -268,7 +268,7 @@
       "explanation": "A obesidade monogênica deve ser descartada quando o quadro começa antes dos 5 anos de idade e cursa com apetite insaciável (hiperfagia). Na mesma história médica investigam-se lesão de sistema nervoso central, tumores hipotalâmicos e medicações como corticoides e antipsicóticos, que apontam para causas secundárias."
     },
     {
-      "question": "Entre as complicações da obesidade apresentadas no esquema da aula, encontram-se:",
+      "question": "Entre as complicações sistêmicas descritas na obesidade, encontram-se:",
       "options": [
         "Apneia do sono, DRGE, doença renal e infertilidade",
         "Apneia do sono, DRGE, anemia falciforme e surdez",
@@ -276,7 +276,7 @@
         "Esclerose múltipla, DRGE, cirrose biliar e asma"
       ],
       "correctIndex": 0,
-      "explanation": "O esquema lista risco aumentado de AVC, infarto agudo do miocárdio, depressão, apneia do sono, doença do refluxo gastroesofágico, rash cutâneo, doença renal, infertilidade, artralgias, fraqueza muscular e óssea, diabetes tipo 2, problemas de vesícula, câncer e doença hepática. A apneia do sono merece destaque por elevar o risco cardiovascular e prejudicar a secreção de GH durante o sono.",
+      "explanation": "A obesidade aumenta o risco de AVC, infarto agudo do miocárdio, depressão, apneia do sono, doença do refluxo gastroesofágico, rash cutâneo, doença renal, infertilidade, artralgias, fraqueza muscular e óssea, diabetes tipo 2, problemas de vesícula, câncer e doença hepática. A apneia do sono merece destaque por elevar o risco cardiovascular e prejudicar a secreção de GH durante o sono.",
       "image": "s05i1",
       "imageCaption": "Complicações sistêmicas da obesidade"
     },

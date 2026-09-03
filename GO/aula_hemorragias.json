@@ -13,7 +13,7 @@
         "Antes de 28 semanas ou com peso fetal inferior a 1.000 gramas"
       ],
       "correctIndex": 0,
-      "explanation": "A aula define abortamento como a interrupção da gravidez antes das 20 semanas ou quando o peso fetal for inferior a 500 gramas. Cronologicamente é precoce até 12 semanas e tardio entre 12 e 20 semanas. Os abortamentos clinicamente reconhecidos têm incidência de 10% a 15% e, destes, 80% ocorrem antes das 12 semanas."
+      "explanation": "Abortamento é definido como a interrupção da gravidez antes das 20 semanas ou quando o peso fetal for inferior a 500 gramas. Cronologicamente é precoce até 12 semanas e tardio entre 12 e 20 semanas. Os abortamentos clinicamente reconhecidos têm incidência de 10% a 15% e, destes, 80% ocorrem antes das 12 semanas."
     },
     {
       "question": "Qual é a causa mais frequente de abortamento no primeiro trimestre?",
@@ -35,7 +35,7 @@
         "Trissomia do cromossomo 22, seguida pela do 21 e pela do 16"
       ],
       "correctIndex": 0,
-      "explanation": "A aula lista as trissomias mais relacionadas ao abortamento em ordem decrescente: cromossomos 16, 22, 21, 15, 13, 2 e 14. A trissomia do 16 é a mais frequente entre os produtos de abortamento, ao contrário da trissomia do 21, que é a mais frequente entre os nascidos vivos."
+      "explanation": "As trissomias mais relacionadas ao abortamento, em ordem decrescente de frequência, envolvem os cromossomos 16, 22, 21, 15, 13, 2 e 14. A trissomia do 16 é a mais frequente entre os produtos de abortamento, ao contrário da trissomia do 21, que é a mais frequente entre os nascidos vivos."
     },
     {
       "question": "Como se define o abortamento habitual (recorrente)?",
@@ -79,7 +79,7 @@
         "Acima de 25 mm com cavidade uterina limpa indica aborto completo"
       ],
       "correctIndex": 0,
-      "explanation": "O ponto de corte da aula é 15 mm: eco endometrial acima de 15 mm com material heterogêneo caracteriza abortamento incompleto e indica esvaziamento uterino. Abaixo de 15 mm, com cavidade limpa e regressão da dor e do sangramento, trata-se de abortamento completo, com conduta expectante e seguimento ambulatorial."
+      "explanation": "O ponto de corte é 15 mm: eco endometrial acima de 15 mm com material heterogêneo caracteriza abortamento incompleto e indica esvaziamento uterino. Abaixo de 15 mm, com cavidade limpa e regressão da dor e do sangramento, trata-se de abortamento completo, com conduta expectante e seguimento ambulatorial."
     },
     {
       "question": "Segundo os critérios definitivos da SRU/ACOG, qual achado ultrassonográfico fecha o diagnóstico de gestação inviável?",

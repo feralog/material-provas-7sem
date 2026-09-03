@@ -2,7 +2,7 @@
   "titulo": "Distúrbios da Tireoide",
   "eyebrow": "Pediatria · Endocrinologia",
   "subtitulo": "Do eixo hipotálamo-hipófise-tireoide ao teste do pezinho e à doença de Graves",
-  "intro": "Material da Aula 4 de Pediatria: fisiologia do eixo HHT e da síntese de T3/T4, ações teciduais dos hormônios tireoideanos, hipotireoidismo congênito e adquirido, triagem neonatal, interpretação de TSH e T4 livre, doença de Graves e calcitonina. Inclui as doses de levotiroxina, metimazol, PTU e propranolol cobradas em prova.",
+  "intro": "Distúrbios tireoidianos na infância e adolescência: fisiologia do eixo HHT e da síntese de T3/T4, ações teciduais dos hormônios tireoideanos, hipotireoidismo congênito e adquirido, triagem neonatal, interpretação de TSH e T4 livre, doença de Graves e calcitonina. Inclui as doses de levotiroxina, metimazol, PTU e propranolol cobradas em prova.",
   "questoes": [
     {
       "question": "Na fisiologia do eixo hipotálamo-hipófise-tireoide, qual é a sequência correta de estímulos?",
@@ -88,7 +88,7 @@
         "Bloqueio da lipogênese, sem alterar colesterol e triglicérides séricos"
       ],
       "correctIndex": 0,
-      "explanation": "A tabela do slide traz: metabolismo de lipídeos aumenta por meio do estímulo à lipólise, reduzindo os níveis de colesterol e triglicérides circulantes. Por isso o hipotireoidismo cursa com dislipidemia e associação com aterosclerose.",
+      "explanation": "O metabolismo de lipídeos aumenta por meio do estímulo à lipólise, reduzindo os níveis de colesterol e triglicérides circulantes. Por isso o hipotireoidismo cursa com dislipidemia e associação com aterosclerose.",
       "image": "pg16",
       "imageCaption": "Função de T3 e T4 nos sistemas do corpo humano"
     },
@@ -162,7 +162,7 @@
         "Anticalcitonina e anti-TPO; antitireoglobulina e TRAb"
       ],
       "correctIndex": 0,
-      "explanation": "O slide de ATENÇÃO é explícito: Hashimoto se investiga com antitireoglobulina e antiperoxidase (anti-TPO); Graves, com o TRAb (thyrotropin receptor antibody). Trocar os dois é o erro mais cobrado nessa aula."
+      "explanation": "ATENÇÃO: Hashimoto se investiga com antitireoglobulina e antiperoxidase (anti-TPO); Graves, com o TRAb (thyrotropin receptor antibody). Trocar os dois é o erro mais cobrado no tema."
     },
     {
       "question": "No fluxograma diagnóstico, T4 livre normal com TSH elevado define qual quadro?",
@@ -200,7 +200,7 @@
         "2-4 mcg/kg/dia por via oral, duas vezes ao dia"
       ],
       "correctIndex": 0,
-      "explanation": "A dose inicial no hipotireoidismo congênito é de 10-15 mcg/kg/dia por via oral, 1 vez ao dia, iniciada de preferência nos primeiros 10 dias de vida; havendo cardiopatia congênita com risco de insuficiência cardíaca, reduz-se a dose pela metade. O medicamento não deve ser manipulado nem, preferencialmente, ser genérico. Divergência: o slide generaliza 10-15 mcg/kg/dia para todo hipotireoidismo e exige jejum de 30-60 minutos, enquanto o Tratado reserva essa dose para 0-3 meses e permite dar o comprimido junto com o alimento em lactentes e crianças, evitando soja e fibra, sempre no mesmo horário e da mesma forma."
+      "explanation": "A dose inicial no hipotireoidismo congênito é de 10-15 mcg/kg/dia por via oral, 1 vez ao dia, iniciada de preferência nos primeiros 10 dias de vida; havendo cardiopatia congênita com risco de insuficiência cardíaca, reduz-se a dose pela metade. O medicamento não deve ser manipulado nem, preferencialmente, ser genérico. Divergência: é comum ver a generalização de 10-15 mcg/kg/dia para todo hipotireoidismo com exigência de jejum de 30-60 minutos, enquanto o Tratado reserva essa dose para 0-3 meses e permite dar o comprimido junto com o alimento em lactentes e crianças, evitando soja e fibra, sempre no mesmo horário e da mesma forma."
     },
     {
       "question": "Como se monitora a reposição com levotiroxina no hipotireoidismo primário?",
@@ -238,7 +238,7 @@
         "Propranolol 0,2-0,8 mg/kg/dia, no máximo 30 mg/dia"
       ],
       "correctIndex": 0,
-      "explanation": "O metimazol é a droga de escolha, 0,2-0,8 mg/kg/dia, máximo de 30 mg/dia, em 1-2 tomadas, preferindo-se doses menores no início; os efeitos colaterais são dose-dependentes e ocorrem sobretudo nos 3 primeiros meses. O propiltiouracil é contraindicado em crianças pelo elevado risco de hepatotoxicidade. Divergência importante: o slide traz metimazol 0,5 a 1 mg/kg/dia e oferece o PTU 5-10 mg/kg/dia como alternativa — no Tratado, 0,5-1 mg/kg/dia é a dose do hipertireoidismo neonatal e o PTU está proscrito na pediatria."
+      "explanation": "O metimazol é a droga de escolha, 0,2-0,8 mg/kg/dia, máximo de 30 mg/dia, em 1-2 tomadas, preferindo-se doses menores no início; os efeitos colaterais são dose-dependentes e ocorrem sobretudo nos 3 primeiros meses. O propiltiouracil é contraindicado em crianças pelo elevado risco de hepatotoxicidade. Divergência importante: referências mais antigas trazem metimazol 0,5 a 1 mg/kg/dia e oferecem o PTU 5-10 mg/kg/dia como alternativa — no Tratado, 0,5-1 mg/kg/dia é a dose do hipertireoidismo neonatal e o PTU está proscrito na pediatria."
     },
     {
       "question": "Qual é o papel do propranolol no tratamento do hipertireoidismo?",
@@ -250,7 +250,7 @@
         "Estimular a excreção renal do excesso de T3 e T4 livres"
       ],
       "correctIndex": 0,
-      "explanation": "O propranolol é antagonista beta-adrenérgico usado para controlar taquicardia, tremor e agitação enquanto as tionamidas ainda não fizeram efeito; não interfere na síntese hormonal. O Tratado traz 1-2 mg/kg/dia em 2-3 doses, ou atenolol 1-2 mg/kg/dia em dose única, reservados aos quadros mais graves e sobretudo com frequência cardíaca acima de 100 bpm, contraindicados em asma e insuficiência cardíaca. O slide cita a dose fixa de 2 mg/kg/dia, que no livro corresponde ao hipertireoidismo neonatal."
+      "explanation": "O propranolol é antagonista beta-adrenérgico usado para controlar taquicardia, tremor e agitação enquanto as tionamidas ainda não fizeram efeito; não interfere na síntese hormonal. O Tratado traz 1-2 mg/kg/dia em 2-3 doses, ou atenolol 1-2 mg/kg/dia em dose única, reservados aos quadros mais graves e sobretudo com frequência cardíaca acima de 100 bpm, contraindicados em asma e insuficiência cardíaca. A dose fixa de 2 mg/kg/dia, também bastante citada, no livro corresponde ao hipertireoidismo neonatal."
     },
     {
       "question": "Segundo o esquema dos sítios de ação, onde metimazol e PTU atuam na síntese hormonal?",
@@ -276,7 +276,7 @@
         "Bloqueia também o receptor beta-adrenérgico cardíaco na periferia"
       ],
       "correctIndex": 0,
-      "explanation": "Além de inibir a TPO como o metimazol, o PTU reduz a conversão periférica de T4 em T3 pelas desiodases, efeito dose-dependente. Atenção à divergência: apesar dessa ação, o Tratado contraindica o propiltiouracil em crianças pelo elevado risco de hepatotoxicidade, deixando o metimazol como droga de escolha. O slide ainda intitula o quadro como drogas que diminuem a conversão periférica, mas o metimazol não tem esse efeito."
+      "explanation": "Além de inibir a TPO como o metimazol, o PTU reduz a conversão periférica de T4 em T3 pelas desiodases, efeito dose-dependente. Atenção à divergência: apesar dessa ação, o Tratado contraindica o propiltiouracil em crianças pelo elevado risco de hepatotoxicidade, deixando o metimazol como droga de escolha. Cuidado com o rótulo drogas que diminuem a conversão periférica aplicado às duas tionamidas: o metimazol não tem esse efeito."
     },
     {
       "question": "O que ocorre quando se administra iodo em altas doses sobre a função tireoidiana?",
@@ -460,7 +460,7 @@
         "0,2-0,8 mg/kg/dia, por via oral, uma vez ao dia"
       ],
       "correctIndex": 0,
-      "explanation": "A dose de levotiroxina cai à medida que a criança cresce: 10-15 mcg/kg/dia de 0-3 meses, 6-10 de 3-12 meses, 4-6 de 1-3 anos, 3-5 de 3-10 anos, 2-4 de 10-16 anos e 1,7 mcg/kg/dia acima de 16 anos. Divergência: o slide traz 10-15 mcg/kg/dia como dose única para o hipotireoidismo em geral, número que no Tratado só se aplica ao lactente de até 3 meses."
+      "explanation": "A dose de levotiroxina cai à medida que a criança cresce: 10-15 mcg/kg/dia de 0-3 meses, 6-10 de 3-12 meses, 4-6 de 1-3 anos, 3-5 de 3-10 anos, 2-4 de 10-16 anos e 1,7 mcg/kg/dia acima de 16 anos. Divergência: é comum ver 10-15 mcg/kg/dia citada como dose única para o hipotireoidismo em geral, número que no Tratado só se aplica ao lactente de até 3 meses."
     },
     {
       "question": "O que precede obrigatoriamente o início da levotiroxina no hipotireoidismo central?",

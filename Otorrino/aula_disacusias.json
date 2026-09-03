@@ -1,0 +1,387 @@
+{
+  "titulo": "Disacusias",
+  "eyebrow": "Otorrinolaringologia · Perdas Auditivas",
+  "subtitulo": "Da droga ototóxica ao implante coclear, causa a causa",
+  "intro": "Percorre ototoxicidade, otospongiose/otosclerose, perda induzida por ruído, trauma acústico, disacusias congênitas, surdez súbita e presbiacusia — com os achados de audiometria, imitanciometria e imagem que fecham cada diagnóstico.",
+  "questoes": [
+    {
+      "question": "Qual achado audiométrico define a perda auditiva atribuível a um agente ototóxico?",
+      "options": [
+        "Perda neurossensorial acima de 25 dB em uma ou mais frequências de 250 a 8000 Hz",
+        "Perda condutiva acima de 40 dB restrita às frequências de 500 a 2000 Hz",
+        "Perda mista acima de 15 dB limitada às frequências abaixo de 500 Hz",
+        "Perda neurossensorial acima de 60 dB isolada na frequência de 8000 Hz"
+      ],
+      "correctIndex": 0,
+      "explanation": "O marco de ototoxicidade é a queda neurossensorial superior a 25 dB em pelo menos uma frequência dentro da faixa testada de 250 a 8000 Hz. Como as células ciliadas externas da base da cóclea são as mais vulneráveis, as altas frequências costumam cair primeiro."
+    },
+    {
+      "question": "Paciente em uso de aminoglicosídeo evolui com vertigem e desequilíbrio, com pouca queixa auditiva. Qual droga é a mais associada a esse padrão?",
+      "options": [
+        "Gentamicina, aminoglicosídeo de toxicidade sobretudo vestibular",
+        "Amicacina, aminoglicosídeo de toxicidade sobretudo coclear",
+        "Eritromicina, macrolídeo de ototoxicidade em geral reversível",
+        "Furosemida, diurético de alça com ototoxicidade transitória"
+      ],
+      "correctIndex": 0,
+      "explanation": "A gentamicina concentra seu dano na mácula sacular e utricular, produzindo labirintopatia periférica com tontura e desequilíbrio. A amicacina, ao contrário, é mais cocleotóxica e cursa predominantemente com perda auditiva."
+    },
+    {
+      "question": "Qual antineoplásico é classicamente apontado como altamente ototóxico?",
+      "options": [
+        "Cisplatina, com risco elevado sobretudo em pacientes pediátricos",
+        "Ciclofosfamida, com risco elevado sobretudo em idosos frágeis",
+        "Metotrexato, com risco elevado sobretudo em uso intratecal",
+        "Vincristina, com risco elevado sobretudo em altas doses"
+      ],
+      "correctIndex": 0,
+      "explanation": "A cisplatina provoca lesão coclear cumulativa e em geral irreversível, com impacto grande em oncologia pediátrica. O tiossulfato de sódio é a estratégia otoprotetora com eficácia comprovada nesse cenário."
+    },
+    {
+      "question": "Qual mecanismo intracelular explica a lesão das células ciliadas pelos aminoglicosídeos?",
+      "options": [
+        "Disfunção mitocondrial com queda do magnésio e estresse oxidativo",
+        "Ativação de canais de sódio com edema osmótico das células de sustentação",
+        "Depósito de amiloide na membrana basilar com rigidez da rampa timpânica",
+        "Bloqueio da liberação de acetilcolina na sinapse do nervo coclear"
+      ],
+      "correctIndex": 0,
+      "explanation": "A droga entra na célula ciliada pelos canais de mecanotransdução, interfere nos canais de cálcio e potássio e reduz o magnésio mitocondrial. O aumento do cálcio intracelular gera radicais livres, que lesam membranas, proteínas e DNA e disparam apoptose."
+    },
+    {
+      "question": "A predisposição individual à ototoxicidade por aminoglicosídeos segue qual padrão de herança?",
+      "options": [
+        "Mitocondrial, transmitida pela linhagem materna",
+        "Autossômica dominante, com penetrância completa",
+        "Autossômica recessiva, com consanguinidade frequente",
+        "Ligada ao X, com predomínio em homens afetados"
+      ],
+      "correctIndex": 0,
+      "explanation": "Mutações no DNA mitocondrial aumentam a suscetibilidade das células ciliadas ao dano por aminoglicosídeos, e a transmissão é materna. Isso explica por que doses habituais lesam alguns pacientes e poupam outros."
+    },
+    {
+      "question": "Qual substância atua na otoproteção como quelante de íons metálicos?",
+      "options": [
+        "D-penicilamina, quelante que limita a geração de radicais livres",
+        "Vitamina C, antioxidante que neutraliza radicais já formados",
+        "Memantina, neuroprotetor usado também na doença de Alzheimer",
+        "Ginkgo biloba, fitoterápico com efeito vasodilatador coclear"
+      ],
+      "correctIndex": 0,
+      "explanation": "Quelantes como a D-penicilamina se ligam a ferro e chumbo e reduzem a participação desses metais na formação de espécies reativas de oxigênio. As demais opções são otoprotetoras, mas por antioxidação, neuroproteção e vasodilatação, não por quelação."
+    },
+    {
+      "question": "O que caracteriza a otosclerose do ponto de vista do tecido ósseo?",
+      "options": [
+        "Osteodistrofia focal da cápsula labiríntica com osso denso virando esponjoso",
+        "Osteíte difusa do osso temporal com destruição da mastoide aerada",
+        "Osteoma benigno do conduto auditivo externo com obstrução gradual",
+        "Osteogênese imperfeita com fraturas repetidas da cadeia ossicular"
+      ],
+      "correctIndex": 0,
+      "explanation": "Trata-se de doença focal primária da cápsula labiríntica em que o osso endocondral denso é substituído por osso esponjoso, alternando reabsorção e neoformação. A região da platina do estribo junto à janela oval é a primeira acometida."
+    },
+    {
+      "question": "Qual perfil epidemiológico corresponde à otosclerose?",
+      "options": [
+        "Mulher caucasiana, com sintomas iniciando entre 20 e 30 anos",
+        "Homem negro, com sintomas iniciando entre 50 e 60 anos",
+        "Mulher asiática, com sintomas iniciando após os 70 anos",
+        "Homem caucasiano, com sintomas iniciando na primeira infância"
+      ],
+      "correctIndex": 0,
+      "explanation": "A doença predomina em caucasianos e em mulheres, com herança autossômica dominante de penetrância e expressão variáveis. Os sintomas começam entre a terceira e a quarta décadas, e o acometimento é bilateral em 70 a 85% dos casos."
+    },
+    {
+      "question": "Qual dado da anamnese reforça a hipótese de otosclerose?",
+      "options": [
+        "Piora da audição durante a gestação e com contraceptivo oral",
+        "Melhora da audição durante quadros de infecção das vias aéreas",
+        "Início abrupto da perda auditiva após exposição a explosão",
+        "Perda auditiva flutuante associada a crises de vertigem intensa"
+      ],
+      "correctIndex": 0,
+      "explanation": "As oscilações hormonais aceleram a remodelação óssea do foco otosclerótico, de modo que gestação e anticoncepcionais pioram a perda. História familiar em mãe e avó é outro achado de forte valor sugestivo."
+    },
+    {
+      "question": "A imagem traz cortes histológicos da cápsula ótica na otosclerose. O que define a fase espongiótica inicial?",
+      "options": [
+        "Reabsorção osteoclástica, hipercelularidade e espaços perivasculares amplos",
+        "Remineralização, queda da celularidade e obliteração dos vasos",
+        "Deposição de amiloide, fibrose densa e ausência de osteoclastos",
+        "Necrose caseosa com granulomas e infiltrado de células gigantes"
+      ],
+      "correctIndex": 0,
+      "explanation": "Na fase ativa há reabsorção osteoclástica, aumento dos espaços perivasculares, hipercelularidade e osso imaturo muito vascularizado. A fase tardia esclerótica inverte esse quadro, com queda da celularidade, obliteração vascular e osso denso remineralizado.",
+      "image": "pg16",
+      "imageCaption": "Cortes histológicos da cápsula ótica com focos otoscleróticos"
+    },
+    {
+      "question": "Qual é o achado típico da audiometria tonal na otosclerose?",
+      "options": [
+        "Disacusia condutiva, com via óssea preservada e via aérea rebaixada",
+        "Disacusia neurossensorial, com queda simétrica nas altas frequências",
+        "Disacusia mista, com entalhe isolado na frequência de 4000 Hz",
+        "Audição normal, com apenas alargamento do gap aéreo-ósseo"
+      ],
+      "correctIndex": 0,
+      "explanation": "A fixação do estribo trava a transmissão pela via aérea e preserva a via óssea, gerando gap aéreo-ósseo. Casos avançados podem virar mistos e a forma puramente neurossensorial é rara; a audiometria vocal mantém boa discriminação."
+    },
+    {
+      "question": "O timpanograma da direita pertence a um paciente com otosclerose. Que curva ele representa?",
+      "options": [
+        "Curva tipo Ar, rebaixada, com ausência dos reflexos estapedianos",
+        "Curva tipo B, plana, com pico deslocado para pressões negativas",
+        "Curva tipo C, com pico em pressão negativa e reflexos presentes",
+        "Curva tipo Ad, ampla, com reflexos estapedianos hiperativos"
+      ],
+      "correctIndex": 0,
+      "explanation": "A rigidez da cadeia ossicular reduz a complacência e rebaixa o pico do timpanograma, configurando a curva tipo Ar. O estribo fixo também impede a contração efetiva do músculo estapédio, e os reflexos ficam ausentes.",
+      "image": "pg21",
+      "imageCaption": "Timpanogramas: curva normal tipo A e curva tipo Ar"
+    },
+    {
+      "question": "Qual exame de imagem é de eleição na investigação da otosclerose?",
+      "options": [
+        "Tomografia de alta resolução, que mostra focos hipodensos na janela oval",
+        "Ressonância magnética, que mostra focos hipodensos na janela oval",
+        "Radiografia de mastoides, que mostra velamento das células aéreas",
+        "Ultrassonografia cervical, que mostra espessamento da platina"
+      ],
+      "correctIndex": 0,
+      "explanation": "A tomografia de alta resolução detecta focos otospongióticos na região da janela oval em 80 a 90% dos casos confirmados na cirurgia, além de espessamento da platina e focos obliterativos das janelas. A ressonância tem baixo rendimento porque avalia melhor partes moles."
+    },
+    {
+      "question": "Qual procedimento é hoje preferido no tratamento cirúrgico da otosclerose?",
+      "options": [
+        "Estapedotomia, com pistão em orifício feito na platina do estribo",
+        "Estapedectomia, com retirada completa do estribo e prótese",
+        "Timpanoplastia, com enxerto de fáscia sobre a membrana timpânica",
+        "Mastoidectomia radical, com exteriorização da cavidade mastóidea"
+      ],
+      "correctIndex": 0,
+      "explanation": "A estapedotomia preserva a platina e insere um pistão preso à bigorna, restaurando quase totalmente a audição com menor risco de perfuração. A estapedectomia caiu em desuso pela alta taxa de fístula perilinfática.",
+      "image": "pg24",
+      "imageCaption": "Cirurgia do estribo: estapedectomia e estapedotomia"
+    },
+    {
+      "question": "Qual classe de medicamento é usada para frear a progressão da otosclerose?",
+      "options": [
+        "Bifosfonatos, que inibem a atividade osteoclástica do foco",
+        "Corticosteroides, que reduzem o edema da orelha média",
+        "Antibióticos, que combatem a infecção da cápsula ótica",
+        "Diuréticos de alça, que reduzem a pressão endolinfática"
+      ],
+      "correctIndex": 0,
+      "explanation": "Alendronato e risedronato bloqueiam a reabsorção osteoclástica e estabilizam o foco otospongiótico. O fluoreto de sódio foi a opção histórica, e o AASI cobre quem recusa ou não pode operar."
+    },
+    {
+      "question": "Alguns pacientes com otosclerose referem ouvir melhor a fala em ambiente ruidoso. Como se explica esse fenômeno?",
+      "options": [
+        "O interlocutor eleva a voz no ruído e a fala se destaca do fundo",
+        "O ruído mascara o zumbido e melhora o limiar de via óssea",
+        "O ruído relaxa o músculo estapédio e libera a cadeia ossicular",
+        "O ruído aumenta a pressão da orelha média e mobiliza o estribo"
+      ],
+      "correctIndex": 0,
+      "explanation": "É a paracusia de Willis: como o ruído de fundo já é atenuado pela perda condutiva, e o interlocutor fala mais alto, a voz ganha destaque relativo. O fenômeno é bastante sugestivo de disacusia condutiva."
+    },
+    {
+      "question": "O que diferencia o trauma acústico da perda auditiva induzida por ruído?",
+      "options": [
+        "O trauma decorre de som único e abrupto, com dano imediato",
+        "O trauma decorre de exposição diária por meses ou anos",
+        "O trauma poupa a orelha interna e lesa apenas o tímpano",
+        "O trauma produz perda condutiva reversível em poucos dias"
+      ],
+      "correctIndex": 0,
+      "explanation": "Bombas, explosões e rojões produzem lesão física instantânea, com perda súbita, zumbido e desconforto auricular. Conforme a intensidade, podem ser lesados a membrana timpânica, a cadeia ossicular e o órgão de Corti."
+    },
+    {
+      "question": "O audiograma exibido corresponde à curva típica de qual condição?",
+      "options": [
+        "Perda induzida por ruído, com entalhe acústico em 4000 Hz",
+        "Presbiacusia, com rampa descendente contínua até 8000 Hz",
+        "Otosclerose, com gap aéreo-ósseo nas baixas frequências",
+        "Surdez súbita, com queda plana em todas as frequências"
+      ],
+      "correctIndex": 0,
+      "explanation": "O entalhe ou gota acústica em torno de 4000 Hz, com recuperação parcial em 8000 Hz, é a assinatura da perda por ruído. A perda é neurossensorial, lenta, progressiva e em geral bilateral e simétrica.",
+      "image": "pg29",
+      "imageCaption": "Audiograma com entalhe acústico em 4 kHz"
+    },
+    {
+      "question": "A escala relaciona intensidade sonora e tolerância diária. Qual é o limite de exposição sem proteção?",
+      "options": [
+        "85 dB por 8 horas, com o tempo caindo conforme a intensidade sobe",
+        "60 dB por 8 horas, com o tempo caindo conforme a intensidade sobe",
+        "85 dB por 12 horas, sem variação conforme a intensidade sobe",
+        "110 dB por 2 horas, sem variação conforme a intensidade sobe"
+      ],
+      "correctIndex": 0,
+      "explanation": "Acima de 85 dB começa a lesão mecânica das células ciliadas, e o teto de segurança é de 8 horas diárias nesse nível. Quanto maior a intensidade, menor o tempo tolerado: a cerca de 110 dB a margem cai para quinze minutos.",
+      "image": "pg28",
+      "imageCaption": "Escala de intensidade sonora e tolerância diária"
+    },
+    {
+      "question": "O que caracteriza a mudança temporária de limiar (TTS) após exposição a ruído?",
+      "options": [
+        "Queda auditiva que se recupera com repouso acústico",
+        "Queda auditiva definitiva que progride mesmo sem ruído",
+        "Queda auditiva condutiva causada por rolha de cerume",
+        "Queda auditiva súbita que exige corticoide em 48 horas"
+      ],
+      "correctIndex": 0,
+      "explanation": "O TTS é a queda transitória do limiar após shows e ambientes ruidosos, revertida com afastamento do ruído. Já o PTS corresponde à perda permanente, que deixa de progredir quando o estímulo cessa, mas não regride."
+    },
+    {
+      "question": "Qual é a sequência de medidas para prevenir a perda auditiva por ruído?",
+      "options": [
+        "Não se expor, depois afastar-se da fonte e, por fim, usar EPI",
+        "Usar EPI, depois afastar-se da fonte e, por fim, não se expor",
+        "Usar AASI, depois reduzir a jornada e, por fim, trocar de função",
+        "Fazer audiometrias, depois usar EPI e, por fim, afastar-se"
+      ],
+      "correctIndex": 0,
+      "explanation": "A hierarquia começa por eliminar a exposição, passa por afastar o trabalhador da fonte e só então recorre ao equipamento de proteção individual. Uma vez instalada, a perda é irreversível e resta a reabilitação com AASI."
+    },
+    {
+      "question": "Qual é a distribuição etiológica das disacusias congênitas?",
+      "options": [
+        "46% genéticas, 29% ambientais e 26% de causa desconhecida",
+        "80% genéticas, 15% ambientais e 5% de causa desconhecida",
+        "10% genéticas, 70% ambientais e 20% de causa desconhecida",
+        "25% genéticas, 25% ambientais e 50% de causa desconhecida"
+      ],
+      "correctIndex": 0,
+      "explanation": "As causas genéticas respondem por cerca de 46%, os fatores ambientais por 29% e o restante fica sem explicação definida. A incidência gira em torno de 1 a 3 casos por mil nascimentos, e 80% das perdas permanentes da infância já estão presentes ao nascer."
+    },
+    {
+      "question": "A mutação do gene GJB2 causa disacusia por qual mecanismo?",
+      "options": [
+        "Falha da conexina 26, que faz a reciclagem do potássio coclear",
+        "Falha da miosina, que sustenta os estereocílios das células",
+        "Falha da otoferlina, que libera vesículas na sinapse coclear",
+        "Falha do colágeno IV, que estrutura a membrana basilar"
+      ],
+      "correctIndex": 0,
+      "explanation": "A conexina 26 forma junções comunicantes que devolvem o potássio à endolinfa; sem ela, o íon se acumula na célula e desorganiza a despolarização. É a causa mais comum de disacusia genética não sindrômica, de herança autossômica recessiva."
+    },
+    {
+      "question": "A disacusia acomete cerca de 56% dos pacientes com qual síndrome genética?",
+      "options": [
+        "Síndrome de Down, trissomia do cromossomo 21",
+        "Síndrome de Turner, com cariótipo 45,X",
+        "Síndrome de Klinefelter, cariótipo 47,XXY",
+        "Síndrome de Patau, trissomia do cromossomo 13"
+      ],
+      "correctIndex": 0,
+      "explanation": "Na síndrome de Down a perda auditiva chega a 56%, muitas vezes condutiva e passível de correção cirúrgica. A síndrome de Turner gira em torno de 50% e a de Klinefelter, de 27%; toda criança com malformação cervicocraniana exige investigação auditiva."
+    },
+    {
+      "question": "Qual é a principal causa infecciosa de disacusia congênita?",
+      "options": [
+        "Citomegalovírus, diagnosticado no recém-nascido por PCR",
+        "Rubéola, diagnosticada no recém-nascido por sorologia IgM",
+        "Toxoplasmose, diagnosticada no recém-nascido por PCR",
+        "Sífilis, diagnosticada no recém-nascido por teste treponêmico"
+      ],
+      "correctIndex": 0,
+      "explanation": "Cerca de 1% dos nascidos vivos carrega infecção congênita por citomegalovírus, a principal causa infecciosa de perda auditiva ao nascimento. Na mãe usa-se sorologia, com IgG indicando contato prévio e IgM infecção recente, e o ganciclovir reduz a progressão das sequelas."
+    },
+    {
+      "question": "Qual conduta reduz o risco de disacusia na sífilis congênita?",
+      "options": [
+        "Tratar a gestante até pelo menos 30 dias antes do parto",
+        "Tratar o recém-nascido durante o primeiro ano de vida",
+        "Vacinar a gestante no primeiro trimestre da gestação",
+        "Iniciar ganciclovir logo após o nascimento da criança"
+      ],
+      "correctIndex": 0,
+      "explanation": "O tratamento materno concluído com pelo menos trinta dias de antecedência ao parto é o que mais reduz o risco de sequela auditiva. As manifestações da sífilis congênita podem ser tardias, surgindo como perda neurossensorial aos cinco, dez ou doze anos."
+    },
+    {
+      "question": "Quais exames avaliam a audição de crianças pequenas que não colaboram?",
+      "options": [
+        "Emissões otoacústicas e potencial evocado auditivo de tronco",
+        "Audiometria tonal e audiometria vocal com fones de inserção",
+        "Imitanciometria isolada e pesquisa de reflexo estapediano",
+        "Tomografia de ossos temporais e ressonância de orelha interna"
+      ],
+      "correctIndex": 0,
+      "explanation": "As emissões otoacústicas medem a função das células ciliadas cocleares e o PEATE avalia a transmissão nas vias após a cóclea, ambos sem depender da colaboração. A partir dos dois anos entra a audiometria comportamental, complementada por esses exames quando necessário."
+    },
+    {
+      "question": "Qual é o princípio de funcionamento do implante coclear mostrado na figura?",
+      "options": [
+        "Estimular diretamente os neurônios do gânglio espiral por eletrodos",
+        "Amplificar o som e conduzi-lo ao tímpano por um molde no conduto",
+        "Vibrar a mastoide e transmitir o som por via óssea ao labirinto",
+        "Transmitir a voz do interlocutor por rádio até o aparelho do aluno"
+      ],
+      "correctIndex": 0,
+      "explanation": "O implante substitui a transdução das células ciliadas: a unidade externa capta e digitaliza o som e a interna, implantada cirurgicamente, leva um feixe de eletrodos à cóclea pela janela redonda. É indicado nas perdas profundas e exige reabilitação fonoaudiológica prolongada.",
+      "image": "pg40",
+      "imageCaption": "Implante coclear: unidade interna e unidade externa"
+    },
+    {
+      "question": "Quais critérios definem a surdez súbita?",
+      "options": [
+        "Perda neurossensorial de 30 dB em três ou mais frequências",
+        "Perda condutiva de 30 dB em três ou mais frequências",
+        "Perda neurossensorial de 10 dB em duas ou mais frequências",
+        "Perda mista de 60 dB em todas as frequências testadas"
+      ],
+      "correctIndex": 0,
+      "explanation": "Define-se por queda neurossensorial de pelo menos 30 dB em três ou mais frequências, em geral unilateral e de instalação abrupta. É urgência otorrinolaringológica: a intervenção nas primeiras 48 horas decide o prognóstico, e a etiologia permanece desconhecida, com hipóteses viral, vascular e autoimune."
+    },
+    {
+      "question": "No teste de Weber com diapasão, para onde lateraliza o som em uma perda neurossensorial unilateral?",
+      "options": [
+        "Para a orelha sadia, pois o som foge da orelha comprometida",
+        "Para a orelha doente, pois o som se concentra do lado pior",
+        "Para as duas orelhas igualmente, sem lateralização alguma",
+        "Para a orelha doente, apenas se houver rolha de cerume"
+      ],
+      "correctIndex": 0,
+      "explanation": "Na perda neurossensorial o som lateraliza para o lado melhor, enquanto na condutiva ele lateraliza para o lado acometido. O teste é o recurso de beira de leito quando a audiometria não está disponível na janela crítica.",
+      "image": "pg41",
+      "imageCaption": "Teste de Weber com diapasão na linha média"
+    },
+    {
+      "question": "Qual é a conduta inicial diante de suspeita de surdez súbita?",
+      "options": [
+        "Audiometria urgente e corticoide sistêmico em doses decrescentes",
+        "Audiometria eletiva em trinta dias e observação sem medicação",
+        "Antibiótico oral por dez dias e retorno após o fim do curso",
+        "Lavagem do conduto e miringotomia para drenar a orelha média"
+      ],
+      "correctIndex": 0,
+      "explanation": "O esquema clássico combina prednisona em doses decrescentes de 60, 40 e 20 mg com pentoxifilina 400 mg de 8 em 8 horas, além de audiometrias seriadas de controle. Na dúvida, e sem exame disponível, trata-se, porque o atraso custa audição irreversível."
+    },
+    {
+      "question": "Qual queixa é típica do paciente com presbiacusia?",
+      "options": [
+        "Ouve os sons, mas não entende as palavras da conversa",
+        "Não ouve som algum, mesmo em volume muito elevado",
+        "Ouve apenas de um lado, com zumbido pulsátil intenso",
+        "Ouve melhor à noite, com plenitude auricular pela manhã"
+      ],
+      "correctIndex": 0,
+      "explanation": "A degeneração das células ciliadas começa pelos agudos e alcança a faixa de 2000 a 4000 Hz, onde reside a inteligibilidade da fala. Daí a queixa de ouvir sem compreender, muitas vezes trazida primeiro pela família."
+    },
+    {
+      "question": "O audiograma exibe qual padrão, compatível com presbiacusia?",
+      "options": [
+        "Rampa descendente neurossensorial, pior nas altas frequências",
+        "Entalhe isolado em 4000 Hz com recuperação nos 8000 Hz",
+        "Curva plana com gap aéreo-ósseo em todas as frequências",
+        "Rampa ascendente com perda maior nas baixas frequências"
+      ],
+      "correctIndex": 0,
+      "explanation": "A curva desce progressivamente das frequências graves para as agudas, de forma bilateral e simétrica, porque as células da base da cóclea degeneram primeiro. A timpanometria permanece tipo A, já que a orelha média está íntegra.",
+      "image": "pg45",
+      "imageCaption": "Audiogramas com rampa descendente bilateral"
+    }
+  ]
+}

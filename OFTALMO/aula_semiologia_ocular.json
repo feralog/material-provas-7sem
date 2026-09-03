@@ -1,0 +1,352 @@
+{
+  "titulo": "Semiologia Ocular",
+  "eyebrow": "Oftalmologia · Propedêutica",
+  "subtitulo": "Da queixa ao fundo de olho: o roteiro da consulta oftalmológica",
+  "intro": "Anamnese e antecedentes, exame externo, medida e notação da acuidade visual para longe e para perto, buraco estenopeico, reflexos pupilares, biomicroscopia, refração, tonometria, motilidade ocular e fundoscopia.",
+  "questoes": [
+    {
+      "question": "A anamnese oftalmológica começa pela queixa e sua duração. Qual item é colhido logo em seguida, antes dos antecedentes?",
+      "options": [
+        "História pregressa da moléstia atual",
+        "Medida da acuidade visual de longe",
+        "Exame externo das pálpebras e cílios",
+        "Fundoscopia sob midríase medicamentosa"
+      ],
+      "correctIndex": 0,
+      "explanation": "A sequência é queixa e duração (QD), história pregressa da moléstia atual (HPMA) e só então os antecedentes oculares, pessoais e familiares. Acuidade visual, exame externo e fundoscopia já pertencem ao exame oftalmológico básico, que vem depois da anamnese completa."
+    },
+    {
+      "question": "Paciente refere baixa de visão instalada em poucas horas, sem trauma prévio. Qual diagnóstico é o mais compatível com esse padrão agudo?",
+      "options": [
+        "Descolamento de retina",
+        "Catarata senil incipiente",
+        "Ametropia não corrigida",
+        "Presbiopia não compensada"
+      ],
+      "correctIndex": 0,
+      "explanation": "A baixa visual aguda tem como causas típicas o descolamento de retina e as oclusões vasculares, sobretudo a oclusão venosa. Catarata, ametropia e presbiopia produzem perda visual lenta e progressiva, medida em meses ou anos."
+    },
+    {
+      "question": "Homem de 68 anos relata embaçamento que piora lentamente há anos, sem dor e sem hiperemia. Qual causa explica melhor esse padrão progressivo?",
+      "options": [
+        "Opacificação progressiva do cristalino",
+        "Oclusão da veia central da retina",
+        "Úlcera de córnea de origem bacteriana",
+        "Descolamento de retina regmatogênico"
+      ],
+      "correctIndex": 0,
+      "explanation": "A catarata, ou seja, a opacificação do cristalino, é protótipo de baixa visual progressiva, ao lado das ametropias não corrigidas. Oclusão venosa e descolamento de retina cursam com perda súbita, e a úlcera de córnea vem acompanhada de dor e olho vermelho."
+    },
+    {
+      "question": "Na divisão dos sintomas oculares entre agudos e crônicos, qual condição se enquadra tipicamente no grupo crônico?",
+      "options": [
+        "Síndrome do olho seco",
+        "Úlcera corneana aguda",
+        "Conjuntivite bacteriana",
+        "Corpo estranho corneano"
+      ],
+      "correctIndex": 0,
+      "explanation": "Olho seco e alergia ocular produzem sintomas arrastados, com flutuação ao longo de meses. Conjuntivite, úlcera de córnea e corpo estranho geram quadro agudo, de início definido e sintomas intensos em poucos dias."
+    },
+    {
+      "question": "Ao colher os antecedentes oculares, além de óculos, lentes de contato e cirurgias prévias, qual informação deve ser ativamente perguntada?",
+      "options": [
+        "Uso atual ou prévio de colírios",
+        "Idade da menarca e da menopausa",
+        "Calendário vacinal da infância",
+        "Consumo semanal de bebida alcoólica"
+      ],
+      "correctIndex": 0,
+      "explanation": "Os antecedentes oculares reúnem uso de óculos ou lentes de contato, cirurgias oculares, doenças oculares prévias e uso de colírios. O uso crônico de colírio, sobretudo corticoide, pode explicar hipertensão ocular e catarata, e passa despercebido se não for perguntado."
+    },
+    {
+      "question": "Qual conjunto de doenças torna obrigatória a pergunta sobre antecedentes FAMILIARES na consulta oftalmológica?",
+      "options": [
+        "Glaucoma, ceratocone e estrabismo",
+        "Hordéolo, calázio e blefarite",
+        "Conjuntivite, pterígio e triquíase",
+        "Olho seco, entrópio e ectrópio"
+      ],
+      "correctIndex": 0,
+      "explanation": "Glaucoma, ceratocone, altas ametropias, estrabismo e degenerações maculares têm componente hereditário reconhecido e mudam a conduta de rastreamento. As demais condições listadas são adquiridas, ligadas a idade, exposição ambiental ou infecção."
+    },
+    {
+      "question": "Entre os antecedentes pessoais sistêmicos com maior repercussão ocular, quais devem ser sempre registrados?",
+      "options": [
+        "Diabetes, hipertensão e doenças reumáticas",
+        "Amigdalectomia, apendicectomia e hérnias",
+        "Varicela, caxumba e sarampo na infância",
+        "Fraturas prévias e cirurgias ortopédicas"
+      ],
+      "correctIndex": 0,
+      "explanation": "Diabetes e hipertensão produzem retinopatia, e as doenças reumáticas cursam com uveíte e esclerite. Somam-se a elas alergias, alterações hormonais, em especial a tireoidiana, e doenças neurológicas, todas com tradução direta no exame ocular."
+    },
+    {
+      "question": "O exame externo é a primeira etapa do exame oftalmológico básico. O que ele permite identificar sem nenhum aparelho?",
+      "options": [
+        "Hordéolo, pterígio e entrópio",
+        "Escavação do disco óptico",
+        "Espessura central da córnea",
+        "Pressão intraocular em mmHg"
+      ],
+      "correctIndex": 0,
+      "explanation": "O exame externo avalia pálpebras, cílios, conjuntiva e superfície ocular à inspeção simples, revelando hordéolo, pterígio, entrópio e conjuntivite. Escavação do disco exige fundoscopia, espessura corneana exige paquimetria e a pressão intraocular exige tonometria."
+    },
+    {
+      "question": "Na imagem, um tecido fibrovascular triangular avança da conjuntiva bulbar em direção à córnea. Qual é o achado do exame externo?",
+      "options": [
+        "Pterígio nasal invadindo a córnea",
+        "Hordéolo na margem palpebral",
+        "Entrópio da pálpebra inferior",
+        "Hemorragia subconjuntival difusa"
+      ],
+      "correctIndex": 0,
+      "explanation": "O pterígio é uma proliferação fibrovascular da conjuntiva, quase sempre nasal, que cresce sobre a córnea e pode induzir astigmatismo. O hordéolo é um nódulo inflamatório da margem palpebral, o entrópio é a inversão da borda da pálpebra e a hemorragia subconjuntival é uma mancha vermelha homogênea, sem relevo.",
+      "image": "s05i1",
+      "imageCaption": "Achado de superfície ocular ao exame externo"
+    },
+    {
+      "question": "Qual valor de acuidade visual para longe corresponde ao normal, tanto na notação de Snellen quanto na decimal?",
+      "options": [
+        "20/20, equivalente a 1,0",
+        "20/40, equivalente a 0,5",
+        "20/60, equivalente a 0,3",
+        "20/200, equivalente a 0,1"
+      ],
+      "correctIndex": 0,
+      "explanation": "A acuidade visual normal para longe é 20/20, que na notação decimal corresponde a 1,0. O numerador indica a distância de teste em pés e o denominador a distância na qual um olho normal enxergaria aquela mesma linha."
+    },
+    {
+      "question": "Na tabela mostrada, o paciente só lê corretamente a segunda linha a partir do topo. Como se registra essa acuidade visual?",
+      "options": [
+        "20/200, ou 0,1 na notação decimal",
+        "20/400, ou 0,05 na notação decimal",
+        "20/100, ou 0,2 na notação decimal",
+        "20/20, ou 1,0 na notação decimal"
+      ],
+      "correctIndex": 0,
+      "explanation": "A primeira linha da tabela, com o E isolado, corresponde a 20/400; a segunda linha, com duas letras, corresponde a 20/200, ou 0,1 na notação decimal. Esse é o patamar habitualmente adotado como limite de cegueira legal no melhor olho com correção.",
+      "image": "s08i2",
+      "imageCaption": "Tabela de Snellen com o valor de cada linha"
+    },
+    {
+      "question": "Quando o paciente não identifica nem o maior optótipo da tabela, qual é a sequência decrescente correta de registro da acuidade?",
+      "options": [
+        "Conta dedos, movimentos de mão, percepção luminosa",
+        "Movimentos de mão, conta dedos, percepção luminosa",
+        "Percepção luminosa, conta dedos, movimentos de mão",
+        "Conta dedos, percepção luminosa, movimentos de mão"
+      ],
+      "correctIndex": 0,
+      "explanation": "Abaixo do menor valor da tabela testa-se, em ordem, conta dedos a uma distância anotada em metros, percepção de movimentos de mão, percepção luminosa e, por fim, ausência de percepção luminosa. Contar dedos exige mais resolução do que perceber o deslocamento da mão, que por sua vez exige mais do que apenas perceber luz."
+    },
+    {
+      "question": "Qual anotação indica que o olho examinado não distingue sequer a presença de luz projetada sobre ele?",
+      "options": [
+        "SPL, sem percepção luminosa",
+        "PL, com percepção luminosa",
+        "MM, percepção de movimento",
+        "CD, contagem de dedos a 1 m"
+      ],
+      "correctIndex": 0,
+      "explanation": "SPL significa sem percepção luminosa e representa o degrau final da escala, equivalente à amaurose daquele olho. PL indica que a luz ainda é percebida, e MM e CD correspondem a níveis funcionais superiores."
+    },
+    {
+      "question": "Nas anotações de acuidade visual, o que diferencia o registro sc do registro cc?",
+      "options": [
+        "Medida sem correção óptica e com correção",
+        "Medida para longe e medida para perto",
+        "Medida monocular e medida binocular",
+        "Medida com colírio e sem cicloplegia"
+      ],
+      "correctIndex": 0,
+      "explanation": "A sigla sc indica acuidade medida sem correção e cc indica acuidade com a correção óptica em uso. Registrar as duas é o que permite saber quanto da baixa visual é refracional e quanto persiste apesar dos óculos."
+    },
+    {
+      "question": "A tabela de leitura para perto reproduzida na figura gradua o tamanho dos caracteres. Qual valor representa o desempenho normal?",
+      "options": [
+        "J1, o menor tipo da tabela",
+        "J6, o maior tipo da tabela",
+        "J3, o tipo intermediário",
+        "J4, logo abaixo do meio"
+      ],
+      "correctIndex": 0,
+      "explanation": "A escala de Jaeger vai de J1 a J6 e o normal é J1, o menor corpo de letra, lido a cerca de 33 a 40 centímetros. Valores maiores, como J3 ou J6, indicam dificuldade para perto, típica da presbiopia não corrigida.",
+      "image": "s10i1",
+      "imageCaption": "Tabela de Jaeger para medida da visão de perto"
+    },
+    {
+      "question": "Um paciente com acuidade de 20/80 passa a enxergar 20/25 ao olhar através do buraco estenopeico. O que esse resultado indica?",
+      "options": [
+        "Baixa visual de causa refracional",
+        "Opacidade densa do cristalino",
+        "Lesão do nervo óptico à direita",
+        "Descolamento de retina em curso"
+      ],
+      "correctIndex": 0,
+      "explanation": "Melhora expressiva da acuidade com o buraco estenopeico aponta erro refracional não corrigido, que pode ser resolvido com lentes. Quando a acuidade não melhora, a causa é orgânica, como catarata densa, doença macular ou neuropatia óptica."
+    },
+    {
+      "question": "Por que o buraco estenopeico melhora a visão de olhos amétropes?",
+      "options": [
+        "Reduz o círculo de difusão na retina",
+        "Aumenta o poder dióptrico da córnea",
+        "Relaxa a acomodação do músculo ciliar",
+        "Amplia a iluminação que chega à mácula"
+      ],
+      "correctIndex": 0,
+      "explanation": "O orifício de cerca de um milímetro deixa passar apenas os raios paraxiais, o que diminui o diâmetro do círculo de difusão formado na retina e aumenta a profundidade de foco. O recurso não altera a curvatura corneana nem a acomodação, e na prática reduz a quantidade de luz que chega ao olho."
+    },
+    {
+      "question": "Na figura, uma placa com listras verticais é apresentada à criança para observar se ela dirige o olhar ao lado listrado. Qual teste é esse?",
+      "options": [
+        "Cartões de acuidade de Teller",
+        "Teste de Ishihara para cores",
+        "Teste de Hirschberg para desvio",
+        "Teste de Titmus para estereopsia"
+      ],
+      "correctIndex": 0,
+      "explanation": "Os cartões de Teller medem acuidade em crianças pré-verbais pelo olhar preferencial: a criança olha espontaneamente para o campo com listras em vez do campo homogêneo. Também servem para não alfabetizados o E direcional e os optótipos isolados, como a mão angular.",
+      "image": "s07i2",
+      "imageCaption": "Recursos de medida da acuidade em não alfabetizados"
+    },
+    {
+      "question": "Entre os exames especializados da córnea, o que a paquimetria mede, em contraste com a topografia?",
+      "options": [
+        "A espessura corneana, em micra",
+        "A curvatura corneana, em dioptrias",
+        "A densidade de células endoteliais",
+        "O diâmetro horizontal da córnea"
+      ],
+      "correctIndex": 0,
+      "explanation": "A paquimetria quantifica a espessura da córnea e é decisiva na interpretação da tonometria e na indicação de cirurgia refrativa. A topografia mapeia a curvatura, útil em astigmatismo e ceratocone, e a contagem de células endoteliais cabe à microscopia especular."
+    },
+    {
+      "question": "A biomicroscopia com lâmpada de fenda é a etapa que examina detalhadamente quais estruturas?",
+      "options": [
+        "Pálpebras, conjuntiva, córnea e cristalino",
+        "Mácula, papila óptica e vasos retinianos",
+        "Músculos extraoculares e nervos cranianos",
+        "Órbita óssea, seios paranasais e ápice"
+      ],
+      "correctIndex": 0,
+      "explanation": "A lâmpada de fenda examina o segmento anterior com iluminação em fenda e magnificação: pálpebras, conjuntiva, córnea, câmara anterior, íris, pupila e cristalino. É por ela que se descrevem as úlceras de córnea herpéticas e bacterianas e o grau de catarata."
+    },
+    {
+      "question": "Qual instrumento permite a medida OBJETIVA do erro refracional, sem depender da resposta do paciente?",
+      "options": [
+        "Retinoscópio, usado na esquiascopia",
+        "Refrator de Greens, com discos de lentes",
+        "Caixa de prova com armação de ensaio",
+        "Régua de refração com lentes soltas"
+      ],
+      "correctIndex": 0,
+      "explanation": "O retinoscópio, empregado na esquiascopia, mede o erro refracional pela observação do reflexo retiniano, sem exigir resposta do paciente, assim como o autorrefrator. Refrator de Greens, caixa de prova e régua de refração são recursos da refração subjetiva, que depende da comparação relatada pelo paciente."
+    },
+    {
+      "question": "A imagem mostra dois semicírculos fluorescentes vistos sob luz azul de cobalto durante a medida da pressão ocular. Qual exame está sendo realizado?",
+      "options": [
+        "Tonometria de aplanação de Goldmann",
+        "Gonioscopia do ângulo camerular",
+        "Microscopia especular do endotélio",
+        "Biomicroscopia ultrassônica anterior"
+      ],
+      "correctIndex": 0,
+      "explanation": "Na tonometria de aplanação instila-se anestésico e fluoresceína e observam-se, sob luz azul de cobalto, duas miras semicirculares que devem ter as bordas internas justapostas. É o método de referência para medir a pressão intraocular, acoplado à lâmpada de fenda.",
+      "image": "s16i1",
+      "imageCaption": "Miras observadas durante a medida da pressão intraocular"
+    },
+    {
+      "question": "Qual tonômetro é portátil e permite medir a pressão intraocular em paciente acamado ou em criança sob sedação?",
+      "options": [
+        "Tonômetro de Perkins, de mão",
+        "Tonômetro de Goldmann fixo",
+        "Autotonômetro de sopro de mesa",
+        "Paquímetro óptico acoplado"
+      ],
+      "correctIndex": 0,
+      "explanation": "Perkins, Tonopen e Icare são tonômetros portáteis, usados quando o paciente não pode sentar-se à lâmpada de fenda. O tonômetro de Goldmann e o autotonômetro de sopro são de mesa, e o paquímetro nem sequer mede pressão, e sim espessura corneana."
+    },
+    {
+      "question": "A figura mostra o reflexo luminoso corneano progressivamente descentrado em um dos olhos, com valores anotados em graus. Qual teste é esse?",
+      "options": [
+        "Hirschberg, que estima o desvio",
+        "Cover test alternado com oclusor",
+        "Titmus, que mede a estereopsia",
+        "Ishihara, que avalia as cores"
+      ],
+      "correctIndex": 0,
+      "explanation": "No teste de Hirschberg ilumina-se o paciente de frente e compara-se a posição do reflexo corneano nos dois olhos; quanto mais descentrado, maior o ângulo de desvio. É a triagem mais simples de estrabismo e não exige colaboração fina do paciente.",
+      "image": "s19i1",
+      "imageCaption": "Reflexo corneano em graus crescentes de desvio"
+    },
+    {
+      "question": "Qual manobra distingue um desvio ocular manifesto de um desvio latente, ocluindo e desocluindo cada olho?",
+      "options": [
+        "Cover test simples e alternado",
+        "Teste de estereopsia de Titmus",
+        "Teste de visão de cores colorido",
+        "Medida da acuidade com estenopeico"
+      ],
+      "correctIndex": 0,
+      "explanation": "O cover test simples revela a tropia, o desvio manifesto, pelo movimento de refixação do olho descoberto; o cover alternado quebra a fusão e desmascara a foria, o desvio latente. A quantificação do ângulo se faz associando prismas à manobra, no prisma e cover, ou pelo teste de Krimsky."
+    },
+    {
+      "question": "Na figura, o examinador usa capacete binocular e lente condensadora à distância do paciente. Qual vantagem esse método oferece?",
+      "options": [
+        "Visão de toda a retina, até a periferia",
+        "Aumento de quinze vezes da imagem",
+        "Dispensa a dilatação pupilar prévia",
+        "Mede a espessura da retina em micra"
+      ],
+      "correctIndex": 0,
+      "explanation": "A oftalmoscopia binocular indireta, base do mapeamento de retina, oferece grande área examinada por vez, boa estereopsia e alcance até a periferia retiniana, ao custo de pouco aumento e menos detalhes. É o método indicado quando se suspeita de roturas ou de descolamento periférico.",
+      "image": "s22i2",
+      "imageCaption": "Oftalmoscopia binocular indireta com lente condensadora"
+    },
+    {
+      "question": "A oftalmoscopia direta oferece aumento de cerca de quinze vezes. Qual é a sua principal limitação?",
+      "options": [
+        "Não permite examinar a periferia retiniana",
+        "Não permite avaliar a papila do óptico",
+        "Exige dilatação pupilar farmacológica",
+        "Depende de lente asférica de 20 dioptrias"
+      ],
+      "correctIndex": 0,
+      "explanation": "A fundoscopia direta examina pequena área por vez, dá pouca noção de profundidade e não alcança a periferia da retina, embora mostre bem o polo posterior e a papila. A lente asférica de 20 dioptrias pertence ao método indireto, e não ao direto."
+    },
+    {
+      "question": "Homem de 48 anos, visão de longe 20/20 sem correção, J3 para perto, corrigido a J1 com adição de +1,75 DE em ambos os olhos. Qual é o diagnóstico?",
+      "options": [
+        "Presbiopia em ambos os olhos",
+        "Miopia em ambos os olhos",
+        "Catarata nuclear bilateral",
+        "Glaucoma crônico bilateral"
+      ],
+      "correctIndex": 0,
+      "explanation": "Visão de longe plena e visão de perto deficiente, corrigida apenas com adição esférica positiva, definem presbiopia, esperada a partir da quarta década. A miopia comprometeria a visão de longe, e catarata e glaucoma apareceriam na biomicroscopia e na fundoscopia, aqui normais."
+    },
+    {
+      "question": "Ao iluminar apenas o olho direito, a pupila esquerda também se contrai. Como se chama essa resposta?",
+      "options": [
+        "Reflexo fotomotor consensual",
+        "Reflexo fotomotor direto",
+        "Reflexo de convergência",
+        "Reflexo corneopalpebral"
+      ],
+      "correctIndex": 0,
+      "explanation": "A constrição da pupila contralateral à luz é o reflexo fotomotor consensual, explicado pela decussação parcial das fibras pupilares no quiasma e nos núcleos pré-tectais. O fotomotor direto é a contração da pupila do próprio olho iluminado."
+    },
+    {
+      "question": "O defeito pupilar aferente relativo, pesquisado com a lanterna oscilante, aponta lesão em qual sítio?",
+      "options": [
+        "Nervo óptico ou retina extensa",
+        "Músculo dilatador da íris",
+        "Córnea central e cristalino",
+        "Terceiro nervo craniano direito"
+      ],
+      "correctIndex": 0,
+      "explanation": "No defeito pupilar aferente relativo a pupila do olho doente dilata quando a luz passa do olho sadio para ele, denunciando via aferente comprometida por neuropatia óptica ou lesão retiniana extensa. Opacidades de meios, como a catarata, não produzem esse sinal, e a lesão do terceiro nervo afeta a via eferente, com pupila fixa e midriática."
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "intro": "Da definição da OMS às alterações farmacocinéticas e farmacodinâmicas do envelhecimento, passando por cascata iatrogênica, interações, Critérios de Beers, MAI e desprescrição. Inclui o caso clínico de Dona Esmeralda discutido em aula.",
   "questoes": [
     {
-      "question": "Segundo a definição da Organização Mundial da Saúde adotada na aula, o que caracteriza polifarmácia?",
+      "question": "Pela definição da Organização Mundial da Saúde, o que caracteriza polifarmácia?",
       "options": [
         "Uso rotineiro e concomitante de quatro ou mais medicamentos, com ou sem prescrição",
         "Uso rotineiro e concomitante de dez ou mais medicamentos, com ou sem prescrição",
@@ -16,7 +16,7 @@
       "explanation": "A OMS define polifarmácia como o uso rotineiro e concomitante de quatro ou mais medicamentos por um paciente, incluindo os isentos de prescrição. Fitoterápicos, suplementos e produtos de automedicação entram na conta, por isso o checklist da consulta deve perguntar por todos eles."
     },
     {
-      "question": "A aula cita que, em média, quantos medicamentos um idoso toma por dia e do que esse número depende?",
+      "question": "Em média, quantos medicamentos um idoso toma por dia e do que esse número depende?",
       "options": [
         "Cerca de 5 por dia; varia com faixa etária, comorbidades, país e ambiente",
         "Cerca de 2 por dia; varia com faixa etária, comorbidades, país e ambiente",
@@ -24,10 +24,10 @@
         "Cerca de 12 por dia; varia apenas com o número de comorbidades do idoso"
       ],
       "correctIndex": 0,
-      "explanation": "A média citada é de aproximadamente 5 medicamentos por dia (Moore KL et al., 2018), mas a aula insiste que depende de faixa etária, comorbidades, país e ambiente. Idosos institucionalizados em ILPI nos Estados Unidos chegam a mais de 8 fármacos diários."
+      "explanation": "A média citada é de aproximadamente 5 medicamentos por dia (Moore KL et al., 2018), mas esse número depende de faixa etária, comorbidades, país e ambiente. Idosos institucionalizados em ILPI nos Estados Unidos chegam a mais de 8 fármacos diários."
     },
     {
-      "question": "Conforme os dados apresentados no slide, qual o risco estimado de interação medicamentosa em idosos que usam 5 medicamentos?",
+      "question": "Qual o risco estimado de interação medicamentosa em idosos que usam 5 medicamentos?",
       "options": [
         "58%, subindo para 82% quando o uso ultrapassa 6 medicamentos",
         "13%, subindo para 58% quando o uso ultrapassa 6 medicamentos",
@@ -35,7 +35,7 @@
         "58%, caindo para 30% quando o uso ultrapassa 6 medicamentos"
       ],
       "correctIndex": 0,
-      "explanation": "O slide (Engler SS et al., 2003) estima risco de interação medicamentosa de 13% com 2 fármacos, 58% com 5 fármacos e 82% quando o uso é superior a 6. O crescimento não é linear: cada fármaco acrescentado multiplica os pares possíveis de interação.",
+      "explanation": "Engler SS et al. (2003) estimam risco de interação medicamentosa de 13% com 2 fármacos, 58% com 5 fármacos e 82% quando o uso é superior a 6. O crescimento não é linear: cada fármaco acrescentado multiplica os pares possíveis de interação.",
       "image": "pg19",
       "imageCaption": "Interações entre medicamentos e risco por número de fármacos"
     },
@@ -48,10 +48,10 @@
         "Reação adversa tipo B: resposta idiossincrásica ao fármaco"
       ],
       "correctIndex": 0,
-      "explanation": "Cascata iatrogênica é quando o efeito adverso do fármaco A é interpretado como nova doença e tratado com o fármaco B, expondo o paciente a novos riscos. A aula a classifica entre os fatores contribuintes ligados ao sistema de saúde, ao lado da falta de conciliação medicamentosa entre alta hospitalar e reconsulta ambulatorial."
+      "explanation": "Cascata iatrogênica é quando o efeito adverso do fármaco A é interpretado como nova doença e tratado com o fármaco B, expondo o paciente a novos riscos. Ela se classifica entre os fatores contribuintes ligados ao sistema de saúde, ao lado da falta de conciliação medicamentosa entre alta hospitalar e reconsulta ambulatorial."
     },
     {
-      "question": "Entre os fatores contribuintes para polifarmácia ligados ao próprio paciente, a aula destaca:",
+      "question": "Entre os fatores contribuintes para polifarmácia ligados ao próprio paciente, destacam-se:",
       "options": [
         "Multimorbidade, automedicação e fragmentação do cuidado entre especialistas",
         "Multimorbidade, cascata iatrogênica e falta de conciliação medicamentosa",
@@ -59,10 +59,10 @@
         "Automedicação, prescrição eletrônica e uso de genéricos de baixo custo"
       ],
       "correctIndex": 0,
-      "explanation": "A aula separa os fatores em três blocos. No bloco do paciente estão multimorbidade, automedicação com medicamentos isentos de prescrição e fragmentação do cuidado, com consultas em vários especialistas sem abordagem integrada. Cascata iatrogênica e falta de conciliação pertencem ao bloco do sistema de saúde."
+      "explanation": "Os fatores contribuintes se dividem em três blocos. No bloco do paciente estão multimorbidade, automedicação com medicamentos isentos de prescrição e fragmentação do cuidado, com consultas em vários especialistas sem abordagem integrada. Cascata iatrogênica e falta de conciliação pertencem ao bloco do sistema de saúde."
     },
     {
-      "question": "Quais condições a aula lista como vulnerabilidade pessoal que amplifica o risco da polifarmácia?",
+      "question": "Quais condições constituem vulnerabilidade pessoal que amplifica o risco da polifarmácia?",
       "options": [
         "Idade acima de 65 anos, doença renal crônica, hepatopatia e residir em ILPI",
         "Idade acima de 40 anos, doença renal crônica, hepatopatia e residir em ILPI",
@@ -196,7 +196,7 @@
       "explanation": "Os Critérios de Beers (AGS, 2023) listam medicamentos potencialmente inapropriados em cinco grupos: inapropriados em geral (amitriptilina); inapropriados diante de certas doenças (varfarina com AINE); os que exigem ajuste renal (vancomicina); os evitados em síndromes geriátricas (benzodiazepínicos); e os de uso com precaução (IBP). As oito perguntas de adequação pertencem ao MAI."
     },
     {
-      "question": "Segundo a tabela de Beers exibida no slide, quais classes reúnem os principais anticolinérgicos a evitar no idoso?",
+      "question": "Segundo os Critérios de Beers, quais classes reúnem os principais anticolinérgicos a evitar no idoso?",
       "options": [
         "Anti-histamínicos de 1ª geração, antiparkinsonianos e antiespasmódicos",
         "Anti-histamínicos de 2ª geração, antiarrítmicos e broncodilatadores",
@@ -204,7 +204,7 @@
         "Antipsicóticos atípicos, antiparkinsonianos e inibidores da bomba"
       ],
       "correctIndex": 0,
-      "explanation": "O slide agrupa difenidramina, doxilamina, hidroxizina e prometazina entre os anti-histamínicos de 1ª geração; benztropina e triexifenidil entre os antiparkinsonianos; atropina, diciclomina, hiosciamina e escopolamina entre os antiespasmódicos. A recomendação é evitar em idosos, pelo mnemônico louco, quente, vermelho, seco e cego, somado a não enxergar, não urinar, não salivar e não evacuar.",
+      "explanation": "Os critérios agrupam difenidramina, doxilamina, hidroxizina e prometazina entre os anti-histamínicos de 1ª geração; benztropina e triexifenidil entre os antiparkinsonianos; atropina, diciclomina, hiosciamina e escopolamina entre os antiespasmódicos. A recomendação é evitar em idosos, pelo mnemônico louco, quente, vermelho, seco e cego, somado a não enxergar, não urinar, não salivar e não evacuar.",
       "image": "pg27",
       "imageCaption": "Beers 2023: anticolinérgicos potencialmente inapropriados"
     },
@@ -231,7 +231,7 @@
       "explanation": "O uso crônico de álcool induz enzimas hepáticas, sobretudo a CYP2E1, acelerando o metabolismo da varfarina; a concentração plasmática cai e a anticoagulação perde eficácia, elevando o risco de trombose e AVC. Atenção à pegadinha: no uso agudo o efeito pode ser inverso, com inibição do metabolismo."
     },
     {
-      "question": "De acordo com o slide sobre alimentos e bebidas que interferem em medicações, qual afirmação é correta?",
+      "question": "Sobre alimentos e bebidas que interferem no efeito das medicações, qual afirmação é correta?",
       "options": [
         "Frutas cítricas aumentam exageradamente a quantidade absorvida do fármaco",
         "Frutas cítricas reduzem drasticamente a quantidade absorvida do fármaco",
@@ -239,7 +239,7 @@
         "O alcaçuz interfere somente na absorção de anticoagulantes orais"
       ],
       "correctIndex": 0,
-      "explanation": "O slide indica que frutas cítricas aumentam exageradamente a absorção do fármaco, bebidas alcoólicas retardam ou aceleram o metabolismo, o alcaçuz interfere em diversos fármacos, alimentos ricos em tiramina interagem perigosamente com IMAO e antidepressivos, e a cafeína reduz a absorção de muitos medicamentos.",
+      "explanation": "Frutas cítricas aumentam exageradamente a absorção do fármaco, bebidas alcoólicas retardam ou aceleram o metabolismo, o alcaçuz interfere em diversos fármacos, alimentos ricos em tiramina interagem perigosamente com IMAO e antidepressivos, e a cafeína reduz a absorção de muitos medicamentos.",
       "image": "pg21",
       "imageCaption": "Alimentos e bebidas que interferem no efeito dos fármacos"
     },
@@ -270,7 +270,7 @@
       "imageCaption": "Critérios para suspeitar de reação adversa a medicamento"
     },
     {
-      "question": "Idosa inicia oxibutinina e, duas semanas depois, apresenta confusão mental e incontinência funcional. Como a aula orienta interpretar esse quadro?",
+      "question": "Idosa inicia oxibutinina e, duas semanas depois, apresenta confusão mental e incontinência funcional. Como interpretar esse quadro?",
       "options": [
         "Como possível RAM: no idoso ela se apresenta como síndrome geriátrica",
         "Como doença nova: no idoso a RAM não se apresenta com sintomas assim",
@@ -289,10 +289,10 @@
         "Indicação, eficácia, dose, receita, interações, marca, custo e redundância"
       ],
       "correctIndex": 0,
-      "explanation": "O MAI reúne oito critérios para julgar cada prescrição com foco em segurança, eficácia e necessidade: indicação correta, eficácia, dosagem apropriada, direções adequadas, interações, duração, custo e redundância. É a ferramenta citada na aula para avaliação frequente da lista de medicamentos."
+      "explanation": "O MAI reúne oito critérios para julgar cada prescrição com foco em segurança, eficácia e necessidade: indicação correta, eficácia, dosagem apropriada, direções adequadas, interações, duração, custo e redundância. É a ferramenta usada para avaliação frequente da lista de medicamentos."
     },
     {
-      "question": "No ciclo de desprescrição exibido no slide, em qual etapa se identificam os medicamentos a desprescrever e se prioriza a ordem de descontinuação?",
+      "question": "No ciclo de desprescrição, em qual etapa se identificam os medicamentos a desprescrever e se prioriza a ordem de descontinuação?",
       "options": [
         "Act, depois de Review e Analyze e antes de Adjust e Monitor",
         "Review, antes de Analyze e de Act e logo depois de Monitor",
@@ -327,7 +327,7 @@
       "explanation": "A amitriptilina é PIM pelos efeitos anticolinérgicos (confusão, sedação, tontura, agravamento da hipotensão postural) e o bromazepam é PIM pelo risco de sedação, confusão e quedas, potencializados quando associados. O omeprazol entra na lista de uso com precaução pelo risco do uso prolongado, como a redução da absorção de vitamina B12."
     },
     {
-      "question": "Segundo o slide Adaptações possíveis, por que o idoso costuma precisar de doses menores e de intervalos estendidos?",
+      "question": "Por que o idoso costuma precisar de doses menores e de intervalos entre doses estendidos?",
       "options": [
         "A depuração renal e hepática reduzida amplia a exposição ao fármaco",
         "A depuração renal e hepática aumentada reduz a exposição ao fármaco",
@@ -335,7 +335,7 @@
         "A ligação proteica aumentada prolonga o efeito terapêutico do fármaco"
       ],
       "correctIndex": 0,
-      "explanation": "O slide aponta que a redução da depuração renal e hepática resulta em maior exposição aos medicamentos e maior risco de efeitos colaterais, justificando doses menores para alcançar os mesmos efeitos terapêuticos. O intervalo entre doses pode ser estendido para dar tempo de eliminação e evitar acúmulo em níveis tóxicos.",
+      "explanation": "A redução da depuração renal e hepática resulta em maior exposição aos medicamentos e maior risco de efeitos colaterais, justificando doses menores para alcançar os mesmos efeitos terapêuticos. O intervalo entre doses pode ser estendido para dar tempo de eliminação e evitar acúmulo em níveis tóxicos.",
       "image": "pg34",
       "imageCaption": "Adaptações de posologia: redução de dose e intervalo estendido"
     },
@@ -348,7 +348,7 @@
         "Aumentar a dose do fármaco, pela menor absorção intestinal"
       ],
       "correctIndex": 0,
-      "explanation": "A metformina não deve ser usada com TFG abaixo de 30 mL/min/1,73 m² pelo risco de acidose láctica; é o exemplo citado tanto nos Critérios de Beers, no item de ajuste em doenças específicas, quanto na etapa Ajustar da desprescrição. A aula também lembra de evitar controle glicêmico rígido em idoso com alto risco de hipoglicemia."
+      "explanation": "A metformina não deve ser usada com TFG abaixo de 30 mL/min/1,73 m² pelo risco de acidose láctica; é o exemplo citado tanto nos Critérios de Beers, no item de ajuste em doenças específicas, quanto na etapa Ajustar da desprescrição. Também se recomenda evitar controle glicêmico rígido em idoso com alto risco de hipoglicemia."
     },
     {
       "question": "Idoso de 89 anos em cuidados paliativos, com expectativa de vida inferior a dois anos, usa sinvastatina em prevenção primária. Qual a conduta apoiada pelo resumo?",
@@ -362,7 +362,7 @@
       "explanation": "O resumo é explícito: com expectativa de vida menor que dois anos, em cuidados terminais ou paliativos, a estatina não é necessária porque o benefício preventivo não se materializa nesse horizonte. Pelo mesmo raciocínio não se faz mamografia com expectativa inferior a dez anos, nem rastreio por PSA."
     },
     {
-      "question": "Qual estratégia a aula recomenda para melhorar a adesão terapêutica do idoso polimedicado?",
+      "question": "Qual estratégia melhora a adesão terapêutica do idoso polimedicado?",
       "options": [
         "Simplificar o esquema, com o menor número possível de doses diárias",
         "Fracionar o esquema, com o maior número possível de doses diárias",
@@ -370,7 +370,7 @@
         "Substituir a receita escrita por orientação exclusivamente verbal"
       ],
       "correctIndex": 0,
-      "explanation": "A complexidade do esquema e a necessidade de seguir múltiplas doses diárias produzem erros de administração e esquecimentos, comprometendo a eficácia. A aula orienta montar o melhor esquema possível com o menor número de doses por dia, explicar quais remédios podem ser tomados juntos e escrever a receita de forma clara para o idoso não se confundir."
+      "explanation": "A complexidade do esquema e a necessidade de seguir múltiplas doses diárias produzem erros de administração e esquecimentos, comprometendo a eficácia. O correto é montar o melhor esquema possível com o menor número de doses por dia, explicar quais remédios podem ser tomados juntos e escrever a receita de forma clara para o idoso não se confundir."
     }
   ]
 }

@@ -163,7 +163,7 @@ Na **GDS-15** o paciente responde apenas *sim* ou *não* — avise-o antes. Marc
 
 > **Pegadinha:** conta-se a **resposta depressiva**, que nem sempre é o "sim". Em *"Está satisfeito com sua vida?"* pontua o **não**; em *"Sente que a vida está vazia?"* pontua o **sim**.
 
-![Escala de Depressão Geriátrica GDS-15 com gabarito de pontuação e corte](img:f2_pg13)
+![Escala de Depressão Geriátrica GDS-15 com pontuação e ponto de corte](img:f2_pg13)
 
 A **Escala de Cornell** é a escolhida quando o paciente **já tem demência** e há suspeita de depressão associada — as duas condições são fatores de risco uma para a outra e podem se parecer (apatia pode ser demência ou depressão).
 

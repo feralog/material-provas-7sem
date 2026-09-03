@@ -62,7 +62,7 @@ O tratamento clássico é a **cerclagem uterina**, sutura circular no nível do 
 
 ## Formas clínicas do abortamento
 
-A forma clínica se define por três variáveis — **orifício do colo, volume uterino e ultrassonografia** — e é ela que determina a conduta. A tabela da aula é o mapa completo:
+A forma clínica se define por três variáveis — **orifício do colo, volume uterino e ultrassonografia** — e é ela que determina a conduta. A tabela abaixo é o mapa completo:
 
 ![Apresentação clínica das seis formas de abortamento — sangramento, dor, febre, útero, orifício do colo e USG](img:pg09)
 
@@ -215,12 +215,12 @@ O tratamento se decide por três eixos — **estado da tuba, estado hemodinâmic
 Reservada aos casos de regressão espontânea do trofoblasto, com **todos** os critérios presentes:
 
 - Paciente **assintomática** (pouca dor ou sangramento) e **hemodinamicamente estável**.
-- **β-hCG < 2.000 mUI/mL e em queda** (algumas referências da aula usam < 1.000–1.500 mUI/mL).
+- **β-hCG < 2.000 mUI/mL e em queda** (algumas referências usam < 1.000–1.500 mUI/mL).
 - **Massa ectópica ou anexial < 3 cm** ou não detectável.
 - **Ausência de BCF** e **nenhuma evidência de rotura tubária**.
 - **Confiabilidade da gestante para seguimento**, com acesso rápido a serviço de emergência.
 
-O seguimento é feito com **β-hCG semanal até negativar** (dosagens sequenciais nos dias 1, 4 e 7 no protocolo apresentado nos slides). Se os títulos não caírem como esperado, migra-se para tratamento clínico ou cirúrgico.
+O seguimento é feito com **β-hCG semanal até negativar** (dosagens sequenciais nos dias 1, 4 e 7 no protocolo padronizado). Se os títulos não caírem como esperado, migra-se para tratamento clínico ou cirúrgico.
 
 ### Metotrexato
 
@@ -237,7 +237,7 @@ O **metotrexato (MTX)** é antagonista do ácido fólico e inibe a síntese de D
 | Laboratório | Hemograma, função renal e enzimas hepáticas normais |
 | Desejo reprodutivo | Presente |
 
-**Protocolo de dose única (o mais usado):** **MTX 50 mg/m² IM no dia 1** (a versão em PDF da aula admite **50–75 mg/m²**), com dosagem de **β-hCG nos dias 4 e 7**. Espera-se **queda ≥ 15% entre o D4 e o D7**; se a queda for **< 15%**, aplica-se a **2ª dose de MTX**. Depois, β-hCG semanal até negativar (< 5 mUI/mL).
+**Protocolo de dose única (o mais usado):** **MTX 50 mg/m² IM no dia 1** (algumas referências admitem **50–75 mg/m²**), com dosagem de **β-hCG nos dias 4 e 7**. Espera-se **queda ≥ 15% entre o D4 e o D7**; se a queda for **< 15%**, aplica-se a **2ª dose de MTX**. Depois, β-hCG semanal até negativar (< 5 mUI/mL).
 
 Orientações e proibições durante o tratamento:
 
@@ -285,7 +285,7 @@ Exames pré-operatórios obrigatórios: **hCG quantitativo** (colhido **antes** 
 
 Diante de **altura uterina > 16 cm associada a cistos tecaluteínicos** ou de sinais de hipertireoidismo, acrescentar **propranolol 40 mg de 12/12 h** como **profilaxia de crise tireotóxica**.
 
-O tratamento é o **esvaziamento da cavidade uterina**, tendo a **aspiração a vácuo / AMIU (até cânula 8)** como método de escolha. A versão em PDF da aula cita ainda misoprostol e ocitocina entre os recursos de esvaziamento; a versão em PPTX **contraindica formalmente misoprostol e ocitocina antes do esvaziamento**, pelo risco de **embolização trofoblástica pulmonar** — na prova, prefira o método aspirativo. **Todo o material deve ser enviado para exame anatomopatológico.**
+O tratamento é o **esvaziamento da cavidade uterina**, tendo a **aspiração a vácuo / AMIU (até cânula 8)** como método de escolha. Parte das referências cita misoprostol e ocitocina entre os recursos de esvaziamento, mas a orientação mais atual **contraindica formalmente misoprostol e ocitocina antes do esvaziamento**, pelo risco de **embolização trofoblástica pulmonar** — na prova, prefira o método aspirativo. **Todo o material deve ser enviado para exame anatomopatológico.**
 
 ---
 
@@ -359,7 +359,7 @@ A finalidade é prevenir a **isoimunização Rh** e a **doença hemolítica do r
 | **Gestação ectópica** | Fechado | **Escuro**, escasso / dor em fossa ilíaca | **Útero vazio** + massa anexial / **anel tubário** |
 | **Mola hidatiforme** | Fechado ou aberto | Abundante / sintomas exacerbados | **"Tempestade de neve"** / favo de mel |
 
-### Aplicação: o caso da aula
+### Aplicação: caso clínico comentado
 
 Paciente de 28 anos, G2P1A0, DUM há 7 semanas, com dor súbita em fossa ilíaca direita e sangramento vaginal escuro discreto. PA 110×70 mmHg, FC 88 bpm, abdome doloroso à palpação profunda **sem Blumberg**, colo posterior e fechado, dor discreta à mobilização. **β-hCG 2.800 mUI/mL**; USTV com **cavidade uterina vazia**, endométrio de 11 mm, **imagem anular hiperecogênica de 2,2 cm** em anexo direito, **sem BCF** e **sem líquido livre**.
 

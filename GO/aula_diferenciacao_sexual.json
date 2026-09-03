@@ -49,7 +49,7 @@
       "explanation": "A genitália externa masculiniza-se sob ação da di-hidrotestosterona, potencializada localmente pela conversão da testosterona pela 5α-redutase tipo 2. Essa é a razão pela qual a deficiência dessa enzima cursa com genitália interna masculina (dependente de testosterona) e genitália externa feminina ou ambígua. O AMH atua apenas sobre os ductos de Müller."
     },
     {
-      "question": "Segundo a matriz de homologia embriológica apresentada na aula, quais estruturas femininas derivam dos ductos paramesonéfricos (de Müller)?",
+      "question": "Quais estruturas femininas derivam dos ductos paramesonéfricos (de Müller)?",
       "options": [
         "Tubas uterinas, útero, cérvix e vagina superior",
         "Ovários, tubas uterinas e terço inferior da vagina",
@@ -119,7 +119,7 @@
       "explanation": "Os ductos paramesonéfricos têm desenvolvimento autônomo: na ausência de AMH eles se desenvolvem passivamente, sem precisar de estímulo hormonal ovariano. Por isso um feto com gônada ausente ou disgenética ainda assim forma útero e tubas. Quem é hormônio-dependente é o ducto de Wolff, que exige testosterona para não regredir."
     },
     {
-      "question": "Na etapa indiferenciada do embrião, o esquema da aula mostra que coexistem em ambos os sexos:",
+      "question": "Na etapa indiferenciada do embrião, coexistem em ambos os sexos:",
       "options": [
         "Dois pares de ductos: mesonéfricos e paramesonéfricos",
         "Apenas o par de ductos paramesonéfricos, de Müller",
@@ -226,7 +226,7 @@
       "explanation": "O útero unicorno decorre da falha de desenvolvimento de um dos ductos de Müller e é a classe U4 (hemi-uterus) da ESHRE/ESGE. Como a progressão dos ductos é paralela ao sistema urinário, é a anomalia com maior associação a agenesia renal ipsilateral. O corno rudimentar não comunicante e funcionante pode causar dismenorreia intensa e gestação ectópica cornual."
     },
     {
-      "question": "Segundo os dados de prevalência apresentados na aula, qual é a malformação uterina congênita mais frequente?",
+      "question": "Qual é a malformação uterina congênita mais frequente?",
       "options": [
         "Útero septado, com cerca de 35%",
         "Útero bicorno, com cerca de 25%",
@@ -234,7 +234,7 @@
         "Útero didelfo, com cerca de 11%"
       ],
       "correctIndex": 0,
-      "explanation": "Na distribuição apresentada, o útero septado responde por cerca de 35% dos casos, seguido do bicorno (25%), do arqueado (18%), do didelfo (11%) e do grupo agenesia/unicorno (11%). Ou seja, a anomalia mais comum é justamente a de melhor resposta cirúrgica. Os dados seguem a revisão de Chan e colaboradores (Hum Reprod Update, 2011).",
+      "explanation": "O útero septado responde por cerca de 35% dos casos, seguido do bicorno (25%), do arqueado (18%), do didelfo (11%) e do grupo agenesia/unicorno (11%). Ou seja, a anomalia mais comum é justamente a de melhor resposta cirúrgica. Os dados seguem a revisão de Chan e colaboradores (Hum Reprod Update, 2011).",
       "image": "pg21",
       "imageCaption": "Prevalência relativa das malformações uterinas congênitas"
     },

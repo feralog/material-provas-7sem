@@ -2,7 +2,7 @@
 
 O diabetes melito é uma doença metabólica de etiologia múltipla, caracterizada por **hiperglicemia crônica** resultante de distúrbios do metabolismo de carboidratos, proteínas e gorduras, consequentes à secreção insuficiente e/ou ausente de insulina ou a defeitos de sua ação nos tecidos-alvo (hepático, muscular e adiposo). É, em síntese, o resultado de uma **deficiência absoluta ou relativa de insulina** — de produção ou de ação. Vários processos patogênicos coexistem com frequência no mesmo paciente, da resistência à ação da insulina à destruição autoimune das células beta.
 
-A aula parte de dois pacientes que abrem com a mesma alteração e trilham raciocínios distintos:
+Este material parte de dois pacientes que abrem com a mesma alteração e trilham raciocínios distintos:
 
 | | Caso 1 | Caso 2 |
 | --- | --- | --- |
@@ -117,7 +117,7 @@ O β-OHB é o **principal corpo cetônico circulante na CAD** — produzido no f
 
 #### O caso que **exclui** CAD
 
-O menino de 11 anos da aula: glicemia 318 mg/dL, HbA1c 10,8%, glicosúria 4+, **mas** pH venoso 7,37, bicarbonato 23 mEq/L, pCO₂ 40 mmHg, ânion gap 12 mEq/L, β-OHB 0,4 mmol/L e cetonúria negativa. Ureia 26, creatinina 0,62, Na 136, K 4,2, Cl 101.
+O menino de 11 anos do caso clínico: glicemia 318 mg/dL, HbA1c 10,8%, glicosúria 4+, **mas** pH venoso 7,37, bicarbonato 23 mEq/L, pCO₂ 40 mmHg, ânion gap 12 mEq/L, β-OHB 0,4 mmol/L e cetonúria negativa. Ureia 26, creatinina 0,62, Na 136, K 4,2, Cl 101.
 
 > **Ponto-chave.** Sintomas clássicos + glicemia casual ≥ 200 mg/dL confirmam diabetes. Mas a **ausência de acidose, de cetonemia significativa e de alargamento do ânion gap exclui CAD** — o diagnóstico é *diabetes mellitus sem cetoacidose*. Hiperglicemia intensa e HbA1c alta, isoladamente, não fazem cetoacidose.
 
@@ -308,7 +308,7 @@ A metformina inicia-se com **500 a 1.000 mg/dia por 7–15 dias**, com ajuste se
 
 Avaliar: pressão arterial (confirmar e classificar por percentil), lipídios (dislipidemia aterogênica), fígado (TGO/TGP e esteatose), rim (albuminúria e função renal), olhos (retinopatia), sono (apneia obstrutiva), reprodução (SOP e planejamento reprodutivo) e saúde mental (depressão, estigma, transtornos alimentares).
 
-*No caso 2 da aula: glicemia de jejum 154 mg/dL, HbA1c 7,8%, pH 7,38, β-OHB 0,3 mmol/L, anti-GAD/IA2/ZnT8 negativos, triglicérides 228 mg/dL, HDL-c 34 mg/dL, ALT 58 U/L, relação albumina/creatinina 18 mg/g, TSH 2,3 — provável DM2 com dislipidemia e suspeita de doença hepática esteatótica.*
+*No caso 2: glicemia de jejum 154 mg/dL, HbA1c 7,8%, pH 7,38, β-OHB 0,3 mmol/L, anti-GAD/IA2/ZnT8 negativos, triglicérides 228 mg/dL, HDL-c 34 mg/dL, ALT 58 U/L, relação albumina/creatinina 18 mg/g, TSH 2,3 — provável DM2 com dislipidemia e suspeita de doença hepática esteatótica.*
 
 ---
 

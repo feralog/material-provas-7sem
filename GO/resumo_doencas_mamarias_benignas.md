@@ -2,7 +2,7 @@
 
 As afecções benignas da mama são um grupo heterogêneo e muito comum na prática. O desafio central é diferenciá-las do **câncer de mama**, e por isso o diagnóstico se apoia sempre na combinação de **história clínica, exame físico, imagem e, quando necessário, biópsia**. Nenhum método isolado fecha o diagnóstico.
 
-A aula organiza essas afecções em quatro grandes grupos:
+Essas afecções organizam-se em quatro grandes grupos:
 
 | Grupo | Exemplos principais |
 | --- | --- |

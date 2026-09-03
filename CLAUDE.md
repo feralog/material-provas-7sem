@@ -62,6 +62,7 @@ Material para provas/
 │   ├── montar_quiz.py            ← aula.json + resumo.md → HTML final
 │   ├── testar_quiz.js            ← roda o HTML gerado num DOM falso e checa invariantes
 │   ├── testar_chat.js            ← checa o tutor local (e que ele some sem a chave)
+│   ├── testar_nav.js             ← checa voltar ao índice, sair e retomar sem perder nada
 │   └── atualizar_indice.py       ← regenera index.html
 ├── Quizzes/
 │   └── quiz_[tema].html          ← abrir e estudar
@@ -279,6 +280,7 @@ Saída: `Quizzes/quiz_[titulo_snake].html`, tipicamente 1–3 MB com as imagens 
 ```bash
 node _scripts/testar_quiz.js Quizzes/*.html      # fluxo do quiz, resumo, gabarito
 node _scripts/testar_chat.js Quizzes/quiz_disacusias.html   # o tutor local
+node _scripts/testar_nav.js  Quizzes/quiz_disacusias.html --file   # voltar/sair/retomar
 ```
 
 Roda o quiz num DOM falso e checa: sintaxe do JS, seletor na tela inicial, seções e
@@ -353,6 +355,12 @@ Trocar a chave = editar `deepseek_key.js`. Não precisa regerar nada.
 ## O que o HTML final entrega
 
 Tela inicial com **seletor: Quiz ou Resumo**.
+
+A barra do topo traz sempre **← Materiais**, que volta para o índice — `index_local.html`
+quando o arquivo foi aberto por duplo clique (`file://`), `index.html` quando veio da web.
+Durante o quiz há também **Sair**, que devolve à tela inicial **sem perder as respostas**:
+a tela inicial passa a oferecer *Retomar* (mesma questão, mesma ordem, mesmas respostas) e,
+como saída explícita, *recomeçar do zero*.
 
 **Quiz** — navegação livre (não é linear): trilha clicável no topo com uma marca por
 questão (verde/vermelho/cinza), setas ← →, teclas 1–6 para responder, Enter para avançar,

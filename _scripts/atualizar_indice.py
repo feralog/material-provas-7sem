@@ -13,11 +13,14 @@ Rodar sempre depois de montar_quiz.py.
 
 import html as H
 import re
+import sys
 from pathlib import Path
 
 RAIZ = Path(__file__).resolve().parent.parent
 QUIZZES = RAIZ / "Quizzes"
 INDEX = RAIZ / "index.html"
+INDEX_LOCAL = RAIZ / "index_local.html"
+CHAVE = RAIZ / "deepseek_key.js"
 
 
 NOMES = {
@@ -91,6 +94,10 @@ PAGINA = """<!DOCTYPE html>
   .card .tags{display:flex;gap:6px;flex-shrink:0;flex-wrap:wrap;justify-content:flex-end}
   .tag{font-family:'IBM Plex Mono',monospace;font-size:10.5px;color:#5b6478;background:#faf9f6;border:1px solid #e4e0d8;border-radius:99px;padding:4px 10px;white-space:nowrap}
   .empty{border:1px dashed #ddd8ce;border-radius:14px;padding:38px;text-align:center;color:#8a8578}
+  .tutor{display:flex;gap:10px;align-items:flex-start;background:#eef2fd;border:1px solid #c9d6f7;border-radius:13px;padding:13px 15px;margin:-14px 0 30px}
+  .tutor b{font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:#2b57cc;font-weight:600}
+  .tutor p{margin:4px 0 0;font-size:13px;line-height:1.55;color:#39404f}
+  .tutor code{font-family:'IBM Plex Mono',monospace;font-size:11.5px;background:#fff;border:1px solid #c9d6f7;border-radius:5px;padding:1px 5px}
   .foot{margin-top:34px;padding-top:22px;border-top:1px solid #e4e0d8;font-family:'IBM Plex Mono',monospace;font-size:11px;color:#8a8578}
   @media(max-width:560px){.card{flex-wrap:wrap}.card .tags{justify-content:flex-start;width:100%}}
 </style>
@@ -100,6 +107,7 @@ PAGINA = """<!DOCTYPE html>
   <div class="eyebrow">Material para provas</div>
   <h1>7º semestre</h1>
   <p class="sub">__SUB__</p>
+__TUTOR__
   <div class="stats">__STATS__</div>
 __CARDS__
   <div class="foot">Cada arquivo tem quiz e resumo, escolhidos na tela inicial. Gerado por _scripts/atualizar_indice.py</div>
@@ -110,6 +118,7 @@ __CARDS__
 
 
 def main():
+    local = "--local" in sys.argv
     QUIZZES.mkdir(exist_ok=True)
     metas = [ler_meta(p) for p in sorted(QUIZZES.glob("quiz_*.html"))]
 
@@ -152,10 +161,17 @@ def main():
         stats = ""
         sub = "Nenhum material gerado ainda."
 
-    INDEX.write_text(
-        PAGINA.replace("__CARDS__", cards).replace("__SUB__", sub).replace("__STATS__", stats),
+    if local:
+        alvo = INDEX_LOCAL
+        tutor = '  <div class="tutor"><div><b>Versao local</b><p>Errou uma questao? Abaixo da explicacao aparece um chat para perguntar ao DeepSeek. A chave fica em <code>deepseek_key.js</code>, que nao vai para o repositorio — por isso o tutor nao existe na versao publicada.</p></div></div>' if CHAVE.exists() else '  <div class="tutor"><div><b>Versao local — tutor desligado</b><p>Crie <code>deepseek_key.js</code> na raiz definindo <code>window.DEEPSEEK_KEY</code> para ativar o chat.</p></div></div>'
+    else:
+        alvo, tutor = INDEX, ""
+
+    alvo.write_text(
+        PAGINA.replace("__CARDS__", cards).replace("__SUB__", sub)
+              .replace("__STATS__", stats).replace("__TUTOR__", tutor),
         encoding="utf-8")
-    print(f"OK  {len(metas)} material(is) -> {INDEX}")
+    print(f"OK  {len(metas)} material(is) -> {alvo}")
     for m in sorted(metas, key=lambda x: (x["disciplina"], x["titulo"])):
         print(f"    [{m['sigla']:>3}] {m['titulo']}: {m['q']} questões, {m['sec']} seções, "
               f"{m['img']} imagens, {m['mb']:.1f} MB")

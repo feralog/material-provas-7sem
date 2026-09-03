@@ -47,7 +47,9 @@ Prontos: [listar Quizzes/*.html, ou "nenhum ainda"]
 ```
 Material para provas/
 ├── CLAUDE.md
-├── index.html                    ← índice (gerado)
+├── index.html                    ← índice online   (gerado, versionado)
+├── index_local.html              ← índice local    (gerado, NÃO versionado)
+├── deepseek_key.js               ← chave do tutor  (NÃO versionado)
 ├── _template/
 │   ├── quiz.html                 ← template real, vanilla JS, standalone
 │   ├── Quiz Interativo.dc.html   ← design de origem (Claude Design) — REFERÊNCIA
@@ -59,6 +61,7 @@ Material para provas/
 │   ├── md2html.py                ← markdown do resumo → HTML
 │   ├── montar_quiz.py            ← aula.json + resumo.md → HTML final
 │   ├── testar_quiz.js            ← roda o HTML gerado num DOM falso e checa invariantes
+│   ├── testar_chat.js            ← checa o tutor local (e que ele some sem a chave)
 │   └── atualizar_indice.py       ← regenera index.html
 ├── Quizzes/
 │   └── quiz_[tema].html          ← abrir e estudar
@@ -274,7 +277,8 @@ Saída: `Quizzes/quiz_[titulo_snake].html`, tipicamente 1–3 MB com as imagens 
 ## ETAPA 4 — Testar o HTML gerado
 
 ```bash
-node _scripts/testar_quiz.js Quizzes/*.html
+node _scripts/testar_quiz.js Quizzes/*.html      # fluxo do quiz, resumo, gabarito
+node _scripts/testar_chat.js Quizzes/quiz_disacusias.html   # o tutor local
 ```
 
 Roda o quiz num DOM falso e checa: sintaxe do JS, seletor na tela inicial, seções e
@@ -285,15 +289,57 @@ os quatro filtros do gabarito, imagem sobrevivendo ao embaralhamento e gabarito
 **Rode sempre.** Foi assim que apareceu o bug do embaralhamento descartando o campo
 `image` — visualmente o quiz parecia certo, só as figuras sumiam.
 
+O `testar_chat.js` checa o que mais importa no tutor: **sem a chave o chat não é
+renderizado** (é isso que mantém a versão publicada limpa), com a chave ele só aparece
+quando a questão foi errada, o payload leva o contexto certo da questão, o streaming
+remonta a resposta e o histórico sobrevive à navegação.
+
 ---
 
-## ETAPA 5 — Atualizar o índice
+## ETAPA 5 — Atualizar os índices
+
+São **dois**, e os dois saem do mesmo script:
 
 ```bash
-PYTHONIOENCODING=utf-8 "$PY" _scripts/atualizar_indice.py
+PYTHONIOENCODING=utf-8 "$PY" _scripts/atualizar_indice.py            # index.html       (online)
+PYTHONIOENCODING=utf-8 "$PY" _scripts/atualizar_indice.py --local    # index_local.html (máquina)
 ```
 
-Sempre por último.
+Sempre por último. `index_local.html` é ignorado pelo git — é o arquivo que se abre
+por duplo clique em casa; `index.html` é o que vai para o GitHub Pages.
+
+---
+
+## O tutor DeepSeek — só na máquina, nunca no site
+
+Errou a questão? Abaixo da explicação aparece um chat para perguntar a um modelo.
+Ele manda o enunciado, as alternativas, a correta, o que você marcou e a explicação
+que já existe — então a resposta vem em cima da sua dúvida, não do zero.
+
+**A chave nunca entra no HTML.** O quiz carrega `<script src="../deepseek_key.js">`,
+um arquivo que existe só localmente e está no `.gitignore`:
+
+```js
+window.DEEPSEEK_KEY = "sk-...";
+```
+
+Online esse arquivo dá 404, `dsOn()` vira `false` e o chat simplesmente não é
+renderizado. **Um único conjunto de HTMLs serve aos dois mundos** — não há build
+duplicado nem risco de publicar a chave por engano.
+
+| | Local | Publicado |
+|---|---|---|
+| `deepseek_key.js` | existe (ignorado pelo git) | 404 |
+| Chat ao errar | aparece | não existe |
+| Arquivos de quiz | **os mesmos** | **os mesmos** |
+
+Detalhes: modelo `deepseek-v4-flash`, endpoint `https://api.deepseek.com/chat/completions`,
+resposta em streaming (a API devolve CORS com `access-control-allow-origin` refletido,
+então funciona até de `file://`). O histórico vive em `S.chat[idDaQuestão]` e sobrevive
+ao re-render do stage — dá para sair da questão e voltar sem perder a conversa. O
+atalho de teclado `1`–`6` é ignorado enquanto o foco está no campo de texto.
+
+Trocar a chave = editar `deepseek_key.js`. Não precisa regerar nada.
 
 ---
 

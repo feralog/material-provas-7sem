@@ -23,6 +23,8 @@ _template/uploads/
 *.token
 .token
 *token*.txt
+deepseek_key.js
+index_local.html
 
 # Lixo acidental nas pastas de material (não faz parte do pipeline)
 *.exe

@@ -312,9 +312,16 @@ por duplo clique em casa; `index.html` é o que vai para o GitHub Pages.
 
 ## O tutor DeepSeek — só na máquina, nunca no site
 
-Errou a questão? Abaixo da explicação aparece um chat para perguntar a um modelo.
-Ele manda o enunciado, as alternativas, a correta, o que você marcou e a explicação
-que já existe — então a resposta vem em cima da sua dúvida, não do zero.
+Respondeu a questão? Abaixo da explicação aparece um chat para perguntar a um modelo —
+tanto no erro quanto no acerto (acertar chutando também rende dúvida). Ele manda o
+enunciado, as alternativas, a correta, o que você marcou e a explicação que já existe,
+então a resposta vem em cima da sua dúvida, não do zero. O contexto entra **uma vez**,
+na abertura da conversa: nas mensagens seguintes você escreve só a pergunta e o modelo
+continua enxergando a questão. Trocar de questão abre um chat novo, sem memória do anterior.
+
+O tom se adapta: no erro a chamada é *"Ainda com dúvida?"* e o system prompt diz que o
+estudante errou; no acerto é *"Quer ir mais fundo?"* e diz que ele acertou mas ficou com
+dúvida — evita que o modelo explique como se ele tivesse errado.
 
 **A chave nunca entra no HTML.** O quiz carrega `<script src="../deepseek_key.js">`,
 um arquivo que existe só localmente e está no `.gitignore`:

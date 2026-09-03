@@ -64,6 +64,8 @@ const stage = (els) => els['stage'].innerHTML;
   ctx.A.pick(errada);
   ok(!/id="ds"/.test(stage(els)), 'sem chave, o chat apareceu (vazaria na versao online)');
   ok(/Por quê/.test(stage(els)), 'a explicacao sumiu');
+  ctx.A.go(3);
+  ok(!/id="ds"/.test(stage(els)), 'questao ainda nao respondida nao deveria ter chat');
   console.log('  ok  sem chave -> nenhum chat (versao publicada limpa)');
 }
 
@@ -73,14 +75,16 @@ const stage = (els) => els['stage'].innerHTML;
   ctx.A.start();
   let q = ctx.S.order[0];
   ctx.A.pick(q.correctIndex);
-  ok(!/id="ds"/.test(stage(els)), 'acertou mas o chat apareceu');
-  console.log('  ok  com chave + acerto -> sem chat');
+  ok(/id="ds"/.test(stage(els)), 'acertou e o chat nao apareceu');
+  ok(/Quer ir mais fundo\?/.test(stage(els)), 'no acerto a chamada do chat deveria ser a de aprofundar');
+  console.log('  ok  com chave + acerto -> chat presente, com tom de aprofundar');
 
   ctx.A.go(1);
   q = ctx.S.order[1];
   const errada = q.correctIndex === 0 ? 1 : 0;
   ctx.A.pick(errada);
   ok(/id="ds"/.test(stage(els)), 'errou e o chat nao apareceu');
+  ok(/Ainda com dúvida\?/.test(stage(els)), 'no erro a chamada do chat deveria ser a de duvida');
   ok(/id="dsIn"/.test(stage(els)), 'chat sem campo de digitacao');
   ok(/data-act="dsSend"/.test(stage(els)), 'chat sem botao de enviar');
   console.log('  ok  com chave + erro  -> chat com input e botao');

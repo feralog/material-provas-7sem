@@ -772,7 +772,7 @@ function renderQuestion(){
         '<h2 style="font-family:\'Newsreader\',Georgia,serif;font-size:22px;line-height:1.42;font-weight:400;letter-spacing:-.012em;margin:0 0 22px;text-wrap:pretty">'+esc(q.question)+'</h2>' +
         figura(q, 'qfig') +
         '<div style="display:flex;flex-direction:column;gap:9px">'+opts+'</div>' + expl +
-        (reveal && ans!==q.correctIndex ? chatBox(q) : '') +
+        (reveal ? chatBox(q, ans===q.correctIndex) : '') +
       '</article>' + warn +
       '<div style="display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:18px">' +
         '<button type="button" data-act="prev" class="h-line" style="background:none;border:1px solid #ddd8ce;border-radius:11px;padding:12px 18px;font-size:14px;cursor:pointer;transition:border-color .15s ease,color .15s ease;color:'+(S.i===0?'#c4bfb4':'#121a2b')+';pointer-events:'+(S.i===0?'none':'auto')+'">← Anterior</button>' +
@@ -903,21 +903,23 @@ function msgHTML(m){
     'text-wrap:pretty">' + esc(m.content) + '</div></div>';
 }
 
-function chatBox(q){
+function chatBox(q, acertou){
   if (!dsOn()) return '';
+  var chamada = acertou ? 'Quer ir mais fundo?' : 'Ainda com dúvida?';
+  var dica = acertou ? 'Por que as outras estão erradas?' : 'Por que a que eu marquei está errada?';
   var hist = (S.chat[q.id] || []).map(msgHTML).join('');
   return '<div id="ds" data-qid="' + q.id + '" style="margin-top:14px;border:1px solid #e4e0d8;' +
       'border-radius:14px;background:#fff;overflow:hidden;animation:qFade .26s ease">' +
       '<div style="display:flex;align-items:center;gap:8px;padding:11px 15px;' +
         'border-bottom:1px solid #f0ede6;background:#faf9f6">' +
         '<span style="' + DS_MONO + ';font-size:10px;letter-spacing:.16em;text-transform:uppercase;' +
-        'color:#2b57cc">Ainda com dúvida?</span>' +
+        'color:#2b57cc">' + chamada + '</span>' +
         '<span style="font-size:12px;color:#8a8578">pergunte ao DeepSeek</span></div>' +
       '<div id="dsLog" style="max-height:280px;overflow-y:auto;padding:' + (hist ? '12px 15px' : '0') + '">' +
         hist + '</div>' +
       '<div style="display:flex;gap:8px;padding:11px 12px;border-top:1px solid #f0ede6">' +
         '<input id="dsIn" type="text" autocomplete="off" ' +
-          'placeholder="Por que a que eu marquei está errada?" ' +
+          'placeholder="' + dica + '" ' +
           'style="flex:1;min-width:0;border:1px solid #e4e0d8;border-radius:10px;padding:10px 12px;' +
           'font-size:13.5px;' + DS_SANS + ';color:#121a2b;background:#fff;outline:none">' +
         '<button type="button" data-act="dsSend" class="h-darkflat" style="flex-shrink:0;' +
@@ -959,9 +961,12 @@ A.dsSend = function(){
   log.scrollTop = log.scrollHeight;
   box.setAttribute('data-busy', '1');
 
+  var acertou = (ans === q.correctIndex);
+  var situacao = acertou
+    ? 'Voce e um tutor de medicina. O estudante do 7o semestre ACERTOU esta questao, mas ficou com uma duvida. '
+    : 'Voce e um tutor de medicina. O estudante do 7o semestre ERROU esta questao. ';
   var msgs = [
-    { role:'system', content:
-      'Voce e um tutor de medicina ajudando um estudante do 7o semestre que errou uma questao. ' +
+    { role:'system', content: situacao +
       'Responda em portugues do Brasil, direto ao ponto, no maximo 150 palavras. ' +
       'Traga o dado concreto (valor, criterio, mecanismo) em vez de generalidade. ' +
       'Nao repita a explicacao que ele ja tem; foque na duvida que ele trouxe.' },

@@ -10,16 +10,16 @@ Quiz e resumo de cada aula, num arquivo HTML só, que abre offline no navegador.
 
 | Disciplina | Materiais | Questões |
 |---|---|---|
-| Pediatria | 8 | 356 |
-| Ginecologia e Obstetrícia | 5 | 170 |
+| Pediatria | 9 | 389 |
+| Ginecologia e Obstetrícia | 6 | 208 |
 | Oftalmologia | 5 | 152 |
 | Otorrinolaringologia | 4 | 127 |
 | Geriatria | 3 | 98 |
 | Psiquiatria | 3 | 89 |
 | Neurologia | 2 | 60 |
-| **Total** | **30** | **1052** |
+| **Total** | **32** | **1123** |
 
-Mais 261 seções de resumo e 194 imagens nas questões.
+Mais 278 seções de resumo e 201 imagens nas questões.
 
 Cada material abre com um seletor: **fazer o quiz** ou **ler o resumo**.
 

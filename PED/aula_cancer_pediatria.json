@@ -1,0 +1,371 @@
+{
+  "titulo": "Câncer em Pediatria",
+  "eyebrow": "Pediatria · Oncologia",
+  "subtitulo": "Como suspeitar, quando investigar e o que não fazer",
+  "intro": "Sinais de alerta do câncer infantojuvenil, indicações de mielograma, particularidades da leucemia linfoide aguda, dos tumores do sistema nervoso central e dos linfomas, e as principais emergências oncológicas.",
+  "questoes": [
+    {
+      "question": "Na criança, as neoplasias malignas originam-se predominantemente de qual grupo celular, em contraste com o que ocorre no adulto?",
+      "options": [
+        "Células do sistema hematopoiético e dos tecidos de sustentação",
+        "Células dos epitélios que recobrem os diferentes órgãos",
+        "Células endoteliais dos grandes vasos e do sistema linfático",
+        "Células da glia madura e dos epitélios glandulares exócrinos"
+      ],
+      "correctIndex": 0,
+      "explanation": "O câncer infantil difere do câncer do adulto pelo tipo de célula progenitora envolvida e pelos mecanismos de transformação maligna. Na criança predominam as neoplasias do sistema sanguíneo e dos tecidos de sustentação; no adulto, os carcinomas de origem epitelial. É por isso que carcinomas são raros na infância e leucemias e sarcomas são comuns."
+    },
+    {
+      "question": "Qual é a posição do câncer infantojuvenil entre as causas de morte em crianças e adolescentes de 1 a 19 anos no Brasil?",
+      "options": [
+        "É a principal causa de morte por doença nessa faixa etária",
+        "É a segunda causa de morte por doença, atrás das infecções",
+        "É a terceira causa de morte por doença, atrás das cardiopatias",
+        "É causa pouco relevante de morte por doença nessa faixa etária"
+      ],
+      "correctIndex": 0,
+      "explanation": "No Brasil, o câncer é a principal causa de morte por doença entre 1 e 19 anos, superado apenas pelas causas externas. Isso justifica o alto nível de suspeição exigido do pediatra, já que o prognóstico depende diretamente do diagnóstico precoce."
+    },
+    {
+      "question": "Quais são os três grupos de neoplasias mais frequentes na faixa etária pediátrica?",
+      "options": [
+        "Leucemias, tumores do sistema nervoso central e linfomas",
+        "Linfomas, carcinomas de tireoide e tumores ósseos malignos",
+        "Tumores do sistema nervoso central, sarcomas e carcinomas",
+        "Neuroblastomas, tumor de Wilms e retinoblastomas bilaterais"
+      ],
+      "correctIndex": 0,
+      "explanation": "As leucemias ocupam o primeiro lugar, com cerca de 28% dos casos, seguidas pelos tumores do sistema nervoso central, com cerca de 20% no Brasil, e pelos linfomas, com cerca de 14%. Há variação mundial nessa distribuição, ligada a fatores demográficos e socioeconômicos."
+    },
+    {
+      "question": "Por que o diagnóstico de câncer na infância costuma ser tardio?",
+      "options": [
+        "Os sinais iniciais são semelhantes aos de doenças benignas comuns",
+        "As neoplasias infantis crescem muito lentamente até a fase final",
+        "Os exames de imagem são pouco disponíveis na rede básica de saúde",
+        "Os pais raramente procuram atendimento pediátrico ambulatorial"
+      ],
+      "correctIndex": 0,
+      "explanation": "O câncer é uma doença mimetizante: febre, palidez, dor óssea, adenomegalia e vômitos são queixas cotidianas do consultório pediátrico. Por isso o diagnóstico depende menos de exames sofisticados e mais de um alto nível de suspeição diante de sintomas persistentes ou desproporcionais."
+    },
+    {
+      "question": "O aumento indolor de volume testicular em uma criança deve levantar suspeita de quais neoplasias?",
+      "options": [
+        "Leucemias e tumores de células germinativas",
+        "Sarcomas de partes moles e histiocitoses",
+        "Tumores do sistema nervoso central e gliomas",
+        "Neuroblastomas e tumores ósseos malignos"
+      ],
+      "correctIndex": 0,
+      "explanation": "O testículo é sítio santuário de infiltração leucêmica e também sede de tumores de células germinativas. Aumento de volume testicular indolor e progressivo, sem sinais inflamatórios, exige investigação e não deve ser tratado empiricamente como orquiepididimite."
+    },
+    {
+      "question": "Uma dor de dente rebelde ao tratamento odontológico convencional deve fazer pensar em quais neoplasias?",
+      "options": [
+        "Linfomas e rabdomiossarcoma",
+        "Leucemias e retinoblastoma",
+        "Neuroblastoma e nefroblastoma",
+        "Osteossarcoma e meduloblastoma"
+      ],
+      "correctIndex": 0,
+      "explanation": "Dor dentária que não responde ao tratamento pode ser a expressão de infiltração de mandíbula ou maxila por linfoma, sendo o linfoma de Burkitt clássico nessa região, ou por rabdomiossarcoma de cabeça e pescoço. A persistência da queixa apesar do tratamento adequado é o sinal de alarme."
+    },
+    {
+      "question": "Cefaleia matinal persistente e progressiva, acompanhada de desaceleração do crescimento e aumento do perímetro cefálico, aponta para quais diagnósticos?",
+      "options": [
+        "Tumor do sistema nervoso central e histiocitose de Langerhans",
+        "Leucemia linfoide aguda e púrpura trombocitopênica imune",
+        "Linfoma não Hodgkin com acometimento medular extenso",
+        "Neuroblastoma abdominal com metástases hepáticas difusas"
+      ],
+      "correctIndex": 0,
+      "explanation": "Cefaleia que predomina pela manhã, é progressiva e se associa a alterações neurológicas, mudança comportamental, desaceleração do crescimento, diabetes insipidus ou aumento do perímetro cefálico sugere tumor do sistema nervoso central. A histiocitose de células de Langerhans entra no diferencial, sobretudo quando há diabetes insipidus."
+    },
+    {
+      "question": "Que característica da dor óssea ou articular na criança mais fortemente sugere doença neoplásica?",
+      "options": [
+        "Ser persistente e despertar a criança durante a noite",
+        "Ser vespertina e melhorar com repouso e elevação",
+        "Ser migratória e acompanhar quadros virais recentes",
+        "Ser desencadeada apenas por esforço físico intenso"
+      ],
+      "correctIndex": 0,
+      "explanation": "Dor óssea persistente, que desperta a criança à noite e pode vir acompanhada de edema, massa ou limitação funcional, sugere leucemias, tumores ósseos malignos e neuroblastoma. Ela contrasta com a dor de crescimento, que é vespertina, bilateral, cede com massagem e nunca acorda a criança."
+    },
+    {
+      "question": "Quais alterações do hemograma tornam mandatória a coleta de medula óssea?",
+      "options": [
+        "Blastos ou alterações leucoeritroblásticas no sangue periférico",
+        "Anemia microcítica isolada com resposta ao ferro em 30 dias",
+        "Leucocitose com desvio à esquerda durante quadro febril agudo",
+        "Plaquetose reativa persistente após infecção viral resolvida"
+      ],
+      "correctIndex": 0,
+      "explanation": "A presença de blastos ou de reação leucoeritroblástica no sangue periférico é indicação mandatória de mielograma. Também indicam a punção a diminuição significativa e inexplicada de uma ou mais séries e a associação com linfonodomegalia ou hepatoesplenomegalia sem causa definida."
+    },
+    {
+      "question": "Além de blastos no sangue periférico, qual achado torna mandatória a investigação de medula óssea?",
+      "options": [
+        "Citopenia inexplicada associada a massa mediastinal anterior",
+        "Neutrofilia transitória associada a amigdalite bacteriana",
+        "Eosinofilia leve associada a dermatite atópica extensa",
+        "Linfocitose discreta associada a exantema viral benigno"
+      ],
+      "correctIndex": 0,
+      "explanation": "Massa mediastinal anterior somada a alteração inexplicada do hemograma é combinação de alto risco para leucemia de células T e linfoma linfoblástico. Leucocitose, leucopenia com neutropenia ou pancitopenia podem refletir infiltração medular por leucemias, linfomas e neuroblastoma."
+    },
+    {
+      "question": "Entre as leucemias da infância e da adolescência, qual é a participação da leucemia linfoide aguda?",
+      "options": [
+        "De 75 a 80% dos casos, sendo o subtipo mais comum",
+        "De 40 a 45% dos casos, sendo o subtipo mais comum",
+        "De 15 a 20% dos casos, atrás da forma mieloide aguda",
+        "De 2 a 5% dos casos, atrás da forma mieloide crônica"
+      ],
+      "correctIndex": 0,
+      "explanation": "A leucemia linfoide aguda responde por 75 a 80% das leucemias pediátricas, seguida pela mieloide aguda, com 15 a 20%. A mieloide crônica é incomum na infância, variando de 2 a 5%. Estima-se cerca de 1.776 casos novos de leucemia linfoide aguda por ano no Brasil."
+    },
+    {
+      "question": "Qual é a faixa etária de maior incidência da leucemia linfoide aguda?",
+      "options": [
+        "Entre o segundo e o quinto ano de vida, rara no recém-nascido",
+        "Entre o primeiro e o sexto mês de vida, rara após os cinco anos",
+        "Entre os dez e os quinze anos, rara antes da idade escolar",
+        "Entre os quinze e os dezenove anos, rara antes da puberdade"
+      ],
+      "correctIndex": 0,
+      "explanation": "O pico de incidência da leucemia linfoide aguda vai do segundo ao quinto ano de vida, sendo rara no recém-nascido, com discreto predomínio masculino, na proporção de 1,2 para 1. Diagnóstico abaixo de 1 ano ou acima de 10 anos é justamente o que caracteriza mau prognóstico."
+    },
+    {
+      "question": "Qual é o primeiro exame laboratorial que costuma levantar a hipótese de leucemia, e o que se espera encontrar nele?",
+      "options": [
+        "Hemograma com leucocitose e blastos, anemia e plaquetopenia",
+        "Mielograma com hipercelularidade e ausência de megacariócitos",
+        "Ultrassom de abdome com hepatoesplenomegalia e adenomegalias",
+        "Desidrogenase láctica muito elevada com ácido úrico normal"
+      ],
+      "correctIndex": 0,
+      "explanation": "O hemograma é o exame de porta de entrada. No quadro típico aparecem leucocitose importante, acima de 50.000/mL, com blastos, além de anemia e plaquetopenia, traduzindo a falência das três séries por ocupação medular. O mielograma vem depois, para confirmar o diagnóstico."
+    },
+    {
+      "question": "Qual armadilha é frequente na leitura do hemograma automatizado de uma criança com suspeita de leucemia?",
+      "options": [
+        "Linfócitos atípicos serem contados como blastos pelo aparelho",
+        "Plaquetas gigantes serem contadas como hemácias pelo aparelho",
+        "Reticulócitos serem contados como neutrófilos pelo aparelho",
+        "Eosinófilos serem contados como monócitos pelo aparelho"
+      ],
+      "correctIndex": 0,
+      "explanation": "Contadores automatizados confundem linfócitos atípicos de infecções virais com blastos, gerando alarme falso. Por isso todo achado de blastos deve ser confirmado por revisão da lâmina em microscopia antes de qualquer decisão terapêutica."
+    },
+    {
+      "question": "Hiperleucocitose acima de 50.000/mL ao diagnóstico de leucemia implica principalmente qual risco imediato?",
+      "options": [
+        "Alto risco de síndrome de lise tumoral",
+        "Alto risco de anemia hemolítica aguda",
+        "Alto risco de trombocitose paradoxal",
+        "Alto risco de hipocalcemia por má absorção"
+      ],
+      "correctIndex": 0,
+      "explanation": "Grande massa de blastos circulantes significa grande massa celular a ser destruída, e a hiperleucocitose acima de 50.000/mL é fator clássico de risco para síndrome de lise tumoral. Acima de 100.000/mm³ soma-se o risco de leucostase, com falência respiratória e hemorragia intracraniana."
+    },
+    {
+      "question": "Menino de 7 anos chega ao pronto-socorro com manchas arroxeadas pelo corpo, após quadro gripal há 10 dias. Está em bom estado geral, afebril, sem visceromegalias ou linfonodomegalias, com equimoses e petéquias em tronco e membros. O hemograma mostra Hb 10,2 g/dL, leucócitos 12.220/mL com diferencial normal e plaquetas 12.000/mL confirmadas em lâmina. Qual é a hipótese mais provável?",
+      "options": [
+        "Púrpura trombocitopênica imunológica pós-viral",
+        "Leucemia linfoide aguda de início muito recente",
+        "Anemia hemolítica autoimune por anticorpo frio",
+        "Hemofilia A com sangramento cutâneo extenso"
+      ],
+      "correctIndex": 0,
+      "explanation": "Plaquetopenia grave e isolada, criança em bom estado geral, quadro viral prévio, ausência de visceromegalia e de adenomegalia, com série branca de diferencial normal, compõem o quadro clássico da púrpura trombocitopênica imunológica. Na leucemia esperaríamos comprometimento de outras séries, blastos, organomegalia ou dor óssea."
+    },
+    {
+      "question": "No mesmo menino de 7 anos, com plaquetas de 12.000/mL, petéquias e equimoses, sem sangramento ativo de mucosas e sem visceromegalias, qual é a conduta inicial mais adequada?",
+      "options": [
+        "Imunoglobulina intravenosa 1 g/kg e novo hemograma em 24 horas",
+        "Pulsoterapia com metilprednisolona 30 mg/kg por três dias",
+        "Transfusão emergencial de pool de plaquetas em dose plena",
+        "Coleta de liquor e início imediato de quimioterapia de indução"
+      ],
+      "correctIndex": 0,
+      "explanation": "Quando a hipótese de púrpura trombocitopênica imunológica é forte, a escolha é a imunoglobulina intravenosa, que eleva rapidamente as plaquetas sem mascarar uma leucemia. Corticoide sistêmico é proscrito enquanto houver dúvida diagnóstica, e a transfusão de plaquetas não está indicada sem sangramento grave."
+    },
+    {
+      "question": "Por que se deve evitar corticoide sistêmico diante de uma plaquetopenia ainda sem diagnóstico definido?",
+      "options": [
+        "Ele pode mascarar e tratar parcialmente uma leucemia não diagnosticada",
+        "Ele eleva a contagem de plaquetas e impede a resposta à imunoglobulina",
+        "Ele provoca aplasia medular transitória em boa parte das crianças",
+        "Ele aumenta o risco de síndrome de lise tumoral antes do tratamento"
+      ],
+      "correctIndex": 0,
+      "explanation": "O corticoide é droga ativa contra linfoblastos: administrado antes do diagnóstico, reduz os blastos, distorce o mielograma e atrasa a definição do subtipo e do risco, comprometendo o tratamento correto. Diante de citopenia sem diagnóstico, corticoide sistêmico não deve ser prescrito."
+    },
+    {
+      "question": "Diante de dúvida entre leucemia e outra causa de citopenia, qual é a conduta mais segura?",
+      "options": [
+        "Colher medula óssea antes de iniciar qualquer tratamento",
+        "Iniciar corticoide e reavaliar o hemograma em uma semana",
+        "Transfundir plaquetas e adiar a investigação medular",
+        "Solicitar apenas sorologias virais e repetir o hemograma"
+      ],
+      "correctIndex": 0,
+      "explanation": "A regra de ouro é colher medula antes de qualquer tratamento sempre que houver dúvida diagnóstica. Bicitopenia com valores muito baixos, sobretudo com comprometimento da série vermelha, é indicação de mielograma para confirmar ou descartar leucemia."
+    },
+    {
+      "question": "Pré-escolar de 4 anos apresenta febre há 3 semanas, palidez, dor óssea que impede a deambulação, petéquias, adenomegalia cervical e hepatoesplenomegalia a 4 cm dos rebordos. Hemograma: Hb 7,2 g/dL, plaquetas 35.000/mm³ e leucócitos 65.000/mm³ com 40% de blastos. Sobre a estratificação de risco, é correto afirmar que:",
+      "options": [
+        "A hiperleucocitose acima de 50.000/mm³ já o classifica como alto risco",
+        "A idade de 4 anos já o classifica como de alto risco por si mesma",
+        "A dor óssea intensa já indica infiltração do sistema nervoso central",
+        "O imunofenótipo T é o esperado e traz prognóstico mais favorável"
+      ],
+      "correctIndex": 0,
+      "explanation": "Leucometria acima de 50.000/mm³ ao diagnóstico é critério clássico de alto risco na leucemia linfoide aguda, independentemente da idade. A faixa de 1 a 9 anos é de bom prognóstico, a dor óssea reflete infiltração medular e não do sistema nervoso, e o imunofenótipo B é o mais comum e tem melhor prognóstico que o T."
+    },
+    {
+      "question": "Criança de 6 anos tem dor em membros inferiores há 4 semanas, de predomínio noturno, que a desperta do sono, com febre baixa e sem resposta a anti-inflamatórios. Exames: Hb 10,5 g/dL, leucócitos 3.200/mm³ com neutropenia, plaquetas 110.000/mm³, VHS 85 mm/h e LDH 950 U/L, sem blastos no sangue periférico. Qual é o próximo passo?",
+      "options": [
+        "Aspirado de medula óssea para descartar doença onco-hematológica",
+        "Corticoide sistêmico empírico para artrite idiopática juvenil",
+        "Cintilografia óssea para confirmar osteomielite multifocal",
+        "Antibiótico de amplo espectro para febre de origem obscura"
+      ],
+      "correctIndex": 0,
+      "explanation": "Dor óssea noturna, bicitopenia com neutropenia, velocidade de hemossedimentação muito alta e LDH elevada compõem quadro de altíssima suspeição para leucemia, mesmo sem blastos circulantes, já que a doença pode estar restrita à medula. O mielograma é o próximo passo, e o corticoide empírico seria erro grave nesse cenário."
+    },
+    {
+      "question": "Qual é a posição dos tumores do sistema nervoso central entre as neoplasias da infância?",
+      "options": [
+        "São as neoplasias sólidas mais frequentes, cerca de 20% no Brasil",
+        "São as neoplasias sólidas mais raras, cerca de 2% dos casos no Brasil",
+        "São a quarta neoplasia em frequência, cerca de 5% dos casos no Brasil",
+        "São as neoplasias mais frequentes de todas, cerca de 45% no Brasil"
+      ],
+      "correctIndex": 0,
+      "explanation": "Os tumores do sistema nervoso central são as neoplasias sólidas mais frequentes abaixo dos 19 anos, com incidência em torno de 20% das neoplasias infantis no Brasil, atrás apenas das leucemias. São também a maior causa de óbito por câncer entre 0 e 14 anos."
+    },
+    {
+      "question": "Como se distribuem os tumores do sistema nervoso central conforme a idade e a localização?",
+      "options": [
+        "Infratentoriais predominam dos 2 aos 10 anos de idade",
+        "Infratentoriais predominam apenas depois dos 15 anos",
+        "Supratentoriais predominam somente dos 2 aos 10 anos",
+        "Supratentoriais são excepcionais em qualquer idade"
+      ],
+      "correctIndex": 0,
+      "explanation": "Os tumores de fossa posterior, ou infratentoriais, predominam entre 2 e 10 anos, enquanto os supratentoriais são mais frequentes nos dois primeiros anos de vida e na adolescência. A fossa posterior é a localização mais comum no conjunto da faixa pediátrica."
+    },
+    {
+      "question": "Bradicardia, hipertensão arterial com pulso largo e respiração irregular em criança operada de tumor cerebral configuram qual quadro?",
+      "options": [
+        "Tríade de Cushing, sinal tardio de hipertensão intracraniana",
+        "Tríade de Beck, sinal de tamponamento cardíaco instalado",
+        "Tríade de Whipple, sinal de hipoglicemia sintomática grave",
+        "Tríade de Virchow, sinal de trombose venosa em instalação"
+      ],
+      "correctIndex": 0,
+      "explanation": "A tríade de Cushing, formada por hipertensão com alargamento da pressão de pulso, bradicardia e respiração irregular, é manifestação tardia de hipertensão intracraniana e anuncia herniação iminente. Exige medidas imediatas de redução da pressão intracraniana, não observação."
+    },
+    {
+      "question": "Menina de 9 anos apresenta queda de percentil de estatura, poliúria e polidipsia intensas e hemianopsia bitemporal. A tomografia de crânio mostra lesão suprasselar cístico-sólida com calcificações. Quais são o diagnóstico e a complicação endócrina mais prováveis?",
+      "options": [
+        "Craniofaringioma com diabetes insipidus central",
+        "Adenoma hipofisário com puberdade precoce central",
+        "Germinoma com secreção inapropriada de vasopressina",
+        "Glioma de vias ópticas com hipotireoidismo primário"
+      ],
+      "correctIndex": 0,
+      "explanation": "Lesão suprasselar cístico-sólida com calcificações, déficit de crescimento e compressão do quiasma óptico com hemianopsia bitemporal é a apresentação típica do craniofaringioma. A proximidade com o pedúnculo hipotalâmico compromete a secreção de vasopressina, causando diabetes insipidus e risco de desidratação grave."
+    },
+    {
+      "question": "Qual comportamento clínico distingue o linfoma de Hodgkin do linfoma não Hodgkin?",
+      "options": [
+        "Crescimento lento e disseminação por via linfática",
+        "Crescimento rápido e invasão precoce de medula e SNC",
+        "Crescimento lento e restrição exclusiva ao mediastino",
+        "Crescimento rápido e disseminação só por contiguidade"
+      ],
+      "correctIndex": 0,
+      "explanation": "O linfoma de Hodgkin cresce lentamente e se dissemina de forma ordenada por cadeias linfáticas. O não Hodgkin tem crescimento rápido, grande capacidade de disseminação e pode comprometer medula óssea e sistema nervoso central, o que muda radicalmente a urgência do manejo."
+    },
+    {
+      "question": "Como é, tipicamente, a linfonodomegalia de apresentação do linfoma de Hodgkin?",
+      "options": [
+        "Cervical lateral, indolor, firme e sem sinais flogísticos",
+        "Cervical anterior, dolorosa, flutuante e com hiperemia",
+        "Inguinal isolada, dolorosa, quente e de crescimento rápido",
+        "Occipital bilateral, móvel, fugaz e de regressão espontânea"
+      ],
+      "correctIndex": 0,
+      "explanation": "A apresentação mais comum é linfonodomegalia cervical lateral, indolor, de crescimento lento, com consistência firme e borrachoide e sem sinais flogísticos. As regiões supraclavicular, mediastinal, axilar e inguinal também podem ser o sítio inicial."
+    },
+    {
+      "question": "Adolescente de 15 anos apresenta massa supraclavicular indolor há 2 meses, tosse seca, edema de face e pescoço e dispneia que piora ao deitar. Qual é a hipótese e a medida inicial adequada?",
+      "options": [
+        "Veia cava superior comprimida por linfoma; elevar a cabeceira",
+        "Pneumonia lobar com derrame parapneumônico; iniciar antibiótico",
+        "Crise asmática desencadeada por alérgeno; iniciar broncodilatador",
+        "Angioedema por alergia alimentar aguda; aplicar adrenalina logo"
+      ],
+      "correctIndex": 0,
+      "explanation": "Adenomegalia supraclavicular indolor com massa mediastinal e edema de face e pescoço que piora em decúbito caracteriza síndrome da veia cava superior, complicação frequente de linfomas, que têm envolvimento mediastinal em dois terços dos casos. Elevar a cabeceira reduz a pressão hidrostática enquanto se define o tratamento."
+    },
+    {
+      "question": "Quais são as alterações laboratoriais que caracterizam a síndrome de lise tumoral?",
+      "options": [
+        "Hiperuricemia, hipercalemia, hiperfosfatemia e hipocalcemia",
+        "Hipouricemia, hipocalemia, hipofosfatemia e hipercalcemia",
+        "Hiperuricemia, hipocalemia, hipofosfatemia e hipercalcemia",
+        "Hipouricemia, hipercalemia, hiperfosfatemia e hipercalcemia"
+      ],
+      "correctIndex": 0,
+      "explanation": "A destruição maciça de células tumorais libera ácidos nucleicos, potássio e fósforo, gerando hiperuricemia, com risco de falência renal por cristais, hipercalemia, com arritmia e morte súbita, e hiperfosfatemia, que precipita o cálcio e provoca hipocalcemia secundária, com tetania e convulsões."
+    },
+    {
+      "question": "Quais medidas compõem a abordagem imediata da síndrome de lise tumoral?",
+      "options": [
+        "Hidratação intravenosa vigorosa, alopurinol e rasburicase",
+        "Restrição hídrica, diurético de alça e reposição de potássio",
+        "Reposição de fósforo, cálcio oral e corticoide em dose alta",
+        "Suspensão da hidratação, bicarbonato oral e alta precoce"
+      ],
+      "correctIndex": 0,
+      "explanation": "O pilar é a hidratação intravenosa agressiva, que mantém o fluxo urinário e evita a precipitação de cristais. O alopurinol atua na profilaxia e a rasburicase reduz o ácido úrico já formado; nos casos refratários há indicação de diálise. Repor potássio ou restringir volume agravaria o quadro."
+    },
+    {
+      "question": "Como se define febre neutropênica na criança em tratamento oncológico?",
+      "options": [
+        "Temperatura de 38,5 °C isolada ou 38 °C por 1 hora, com neutrófilos abaixo de 500",
+        "Temperatura de 37,5 °C isolada ou 37 °C por 6 horas, com neutrófilos abaixo de 1.500",
+        "Temperatura de 39,5 °C isolada ou 39 °C por 3 horas, com neutrófilos abaixo de 100",
+        "Temperatura de 38,5 °C isolada ou 38 °C por 1 hora, com plaquetas abaixo de 50.000"
+      ],
+      "correctIndex": 0,
+      "explanation": "Define-se por temperatura isolada de 38,5 °C ou temperatura de 38 °C sustentada por uma hora, associada a contagem absoluta de neutrófilos abaixo de 500 células/mm³. É emergência infecciosa, porque sem neutrófilos a infecção pode não mostrar eritema nem pus."
+    },
+    {
+      "question": "Qual é a conduta imediata diante de febre neutropênica?",
+      "options": [
+        "Culturas e antibiótico intravenoso de amplo espectro na primeira hora",
+        "Antitérmico isolado e reavaliação ambulatorial em 24 a 48 horas",
+        "Aguardar o resultado das culturas antes de qualquer antibiótico",
+        "Fator estimulador de colônias isolado, sem cobertura antibiótica"
+      ],
+      "correctIndex": 0,
+      "explanation": "Vale o conceito de hora dourada: hemograma completo, duas hemoculturas e painel metabólico, seguidos imediatamente de antibiótico intravenoso de amplo espectro, como cefepima ou piperacilina-tazobactam, antes mesmo dos resultados das culturas. Esperar o exame custa vidas."
+    },
+    {
+      "question": "Diante de dor nas costas em criança com câncer, qual hipótese deve ser assumida até prova em contrário, e como se confirma?",
+      "options": [
+        "Compressão maligna da medula, confirmada por ressonância magnética",
+        "Contratura muscular paravertebral, confirmada por radiografia simples",
+        "Infecção urinária alta com dor lombar, confirmada por urocultura",
+        "Cólica renal por cristais de urato, confirmada por ultrassom renal"
+      ],
+      "correctIndex": 0,
+      "explanation": "Dor nas costas é o sinal precoce da compressão maligna da medula espinhal, presente em cerca de 90% dos casos, antecedendo a fraqueza motora e a disfunção esfincteriana. A ressonância magnética é o padrão-ouro, com sensibilidade em torno de 93%, e o corticoide deve ser iniciado de imediato para preservar a marcha."
+    }
+  ]
+}

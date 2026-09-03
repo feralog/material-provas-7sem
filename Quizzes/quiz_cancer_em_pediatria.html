@@ -1,0 +1,888 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Câncer em Pediatria</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;450;500;600&display=swap" rel="stylesheet">
+<style>
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0}
+  body{background:#f5f3ef;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+  button{font:inherit;color:inherit;font-family:'IBM Plex Sans',system-ui,sans-serif}
+  a{color:#2b57cc;text-decoration:none}
+  a:hover{color:#1e3f9c;text-decoration:underline}
+  @keyframes qFade{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+  @keyframes qDrawer{from{opacity:0;transform:translateY(-4px)}to{opacity:1;transform:none}}
+
+  /* hovers — no canvas eram style-hover, aqui viram CSS de verdade */
+  .h-dark:hover{background:#2b57cc!important;transform:translateY(-1px)}
+  .h-darkflat:hover{background:#2b57cc!important}
+  .h-line:hover{border-color:#121a2b!important}
+  .h-ink:hover{color:#121a2b!important}
+  .h-opt:not(.locked):hover{border-color:var(--hbd)!important;transform:translateY(-1px)}
+  .h-card:hover{border-color:#121a2b!important;transform:translateY(-2px)}
+
+  /* tipografia do resumo */
+  .rsm{font-size:16.5px;line-height:1.72;color:#2a3141;max-width:64ch}
+  .rsm h2{font-family:'Newsreader',Georgia,serif;font-size:27px;font-weight:500;letter-spacing:-.02em;line-height:1.2;margin:42px 0 14px;padding-top:20px;border-top:1px solid #e4e0d8;text-wrap:pretty}
+  .rsm h2:first-child{margin-top:0;padding-top:0;border-top:0}
+  .rsm h3{font-family:'Newsreader',Georgia,serif;font-size:20px;font-weight:600;letter-spacing:-.01em;margin:28px 0 10px;text-wrap:pretty}
+  .rsm h4{font-family:'IBM Plex Mono',monospace;font-size:11px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:#2b57cc;margin:24px 0 8px}
+  .rsm p{margin:0 0 15px;text-wrap:pretty}
+  .rsm ul,.rsm ol{margin:0 0 15px;padding-left:22px}
+  .rsm li{margin-bottom:7px;text-wrap:pretty}
+  .rsm li>ul,.rsm li>ol{margin:7px 0 0}
+  .rsm strong{font-weight:600;color:#121a2b}
+  .rsm em{font-style:italic}
+  .rsm code{font-family:'IBM Plex Mono',monospace;font-size:.88em;background:#efece5;border:1px solid #e4e0d8;border-radius:5px;padding:1px 5px}
+  .rsm hr{border:0;border-top:1px solid #e4e0d8;margin:32px 0}
+  .rsm blockquote{margin:0 0 18px;padding:15px 18px;background:#f7f6f2;border-left:2.5px solid #2b57cc;border-radius:0 12px 12px 0;font-size:15px;line-height:1.65;color:#39404f}
+  .rsm blockquote p:last-child{margin-bottom:0}
+  .rsm .tbl{overflow-x:auto;margin:0 0 20px;border:1px solid #e4e0d8;border-radius:12px;background:#fff}
+  .rsm table{border-collapse:collapse;width:100%;font-size:14px;line-height:1.5}
+  .rsm th{text-align:left;font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.09em;text-transform:uppercase;color:#8a8578;font-weight:600;padding:11px 14px;background:#faf9f6;border-bottom:1px solid #e4e0d8;white-space:nowrap}
+  .rsm td{padding:11px 14px;border-bottom:1px solid #efece5;vertical-align:top;text-wrap:pretty}
+  .rsm tr:last-child td{border-bottom:0}
+  .rsm .key{background:#f2f6fb;border:1px solid #d6e2f4;border-radius:12px;padding:16px 18px;margin:0 0 18px}
+  .rsm .key>*:last-child{margin-bottom:0}
+
+  /* figuras — no resumo e na questao */
+  .fig{margin:0 0 20px;background:#fff;border:1px solid #e4e0d8;border-radius:14px;overflow:hidden}
+  .fig img{display:block;width:100%;height:auto;cursor:zoom-in}
+  .fig figcaption{font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.06em;color:#8a8578;padding:9px 13px;border-top:1px solid #efece5;background:#faf9f6;text-wrap:pretty}
+  .qfig{margin:0 0 20px}
+
+  /* lightbox */
+  #lb{position:fixed;inset:0;z-index:90;background:rgba(18,26,43,.86);display:none;align-items:center;justify-content:center;padding:24px;cursor:zoom-out}
+  #lb.on{display:flex;animation:qFade .16s ease}
+  #lb img{max-width:100%;max-height:100%;border-radius:10px;box-shadow:0 24px 60px rgba(0,0,0,.5)}
+
+  @media(max-width:560px){
+    .rsm{font-size:16px}
+    .rsm h2{font-size:24px}
+    .home-grid{grid-template-columns:1fr!important}
+  }
+</style>
+</head>
+<body>
+
+<div style="min-height:100vh;background:#f5f3ef;color:#121a2b;font-family:'IBM Plex Sans',system-ui,sans-serif">
+  <header style="position:sticky;top:0;z-index:30;background:rgba(245,243,239,.94);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid #e4e0d8">
+    <div style="max-width:720px;margin:0 auto;padding:12px 16px 10px" id="hdr"></div>
+  </header>
+  <main style="max-width:720px;margin:0 auto;padding:0 16px 80px" id="stage"></main>
+</div>
+<div id="lb"><img alt=""></div>
+
+<script type="text/html" id="resumoSrc"><h2>1. Por que o câncer da criança não é o câncer do adulto</h2>
+<p>O câncer infantojuvenil difere do câncer do adulto em dois pontos fundamentais: o <strong>tipo de célula progenitora envolvida</strong> e os <strong>mecanismos de transformação maligna</strong>. Na criança, as neoplasias nascem sobretudo das células do sistema sanguíneo e dos tecidos de sustentação, de origem mesenquimal. No adulto, elas nascem das células dos epitélios que recobrem os diferentes órgãos. Daí a consequência prática mais importante: carcinomas são raros na infância, enquanto leucemias, tumores embrionários e sarcomas são a regra.</p>
+<p>Essa diferença de biologia carrega uma diferença de estratégia. No adulto, boa parte do cuidado oncológico é prevenção primária — tabagismo, álcool, exposição solar, rastreamento de lesões precursoras. Na criança, praticamente não há fator de risco modificável a atacar, e a prevenção primária quase não se aplica.</p>
+<div class="tbl"><table><thead><tr><th>Nível de prevenção</th><th>O que significa no câncer infantojuvenil</th></tr></thead><tbody><tr><td>Primária</td><td>Raramente possível: não há exposição modificável relevante a evitar</td></tr><tr><td><strong>Secundária</strong></td><td><strong>Diagnóstico precoce — é aqui que o pediatra atua e muda o prognóstico</strong></td></tr><tr><td>Terciária</td><td>Prevenção de sequelas e investimento em reabilitação</td></tr><tr><td>Quaternária</td><td>Evitar as consequências do intervencionismo médico excessivo</td></tr></tbody></table></div>
+<blockquote><p>O câncer é a <strong>principal causa de morte por doença</strong> entre 1 e 19 anos no Brasil, superado apenas pelas causas externas. O sucesso do tratamento depende do diagnóstico precoce e de a terapêutica ser feita em centro de referência, por equipe multiprofissional.</p></blockquote>
+<hr>
+<h2>2. Epidemiologia: o que é frequente e onde se morre</h2>
+<p>Os cânceres pediátricos mais frequentes, nesta ordem, são as <strong>leucemias</strong> (cerca de 28% dos casos), os <strong>tumores do sistema nervoso central</strong> (cerca de 20% no Brasil) e os <strong>linfomas</strong> (cerca de 14%). Há considerável variação mundial nessa distribuição, geralmente ligada a fatores demográficos e socioeconômicos da região analisada.</p>
+<p>A estimativa do Instituto Nacional de Câncer para cada ano do triênio 2023–2025 é de <strong>7.930 casos novos</strong> de câncer infantojuvenil no Brasil. Como as leucemias respondem por cerca de 28% do total e a leucemia linfoide aguda por cerca de 80% das leucemias, chega-se a aproximadamente <strong>1.776 casos novos de leucemia linfoide aguda por ano</strong>.</p>
+<p>A grande iniquidade não está no tumor, e sim no acesso:</p>
+<div class="tbl"><table><thead><tr><th>Contexto</th><th>Sobrevida das crianças com câncer</th></tr></thead><tbody><tr><td>Países de renda alta</td><td>Cerca de <strong>80%</strong> sobrevivem</td></tr><tr><td>Alguns países de renda baixa e média</td><td>Cerca de <strong>20%</strong> sobrevivem</td></tr></tbody></table></div>
+<p>A iniciativa global da Organização Mundial da Saúde elegeu <strong>seis cânceres traçadores</strong> — leucemia linfoblástica aguda, linfoma de Burkitt, linfoma de Hodgkin, retinoblastoma, tumor de Wilms e glioma de baixo grau. Juntos, eles representam <strong>50 a 60% de todos os cânceres da infância</strong>, são prevalentes em todos os países e altamente curáveis com terapias já comprovadas. Trabalhar bem esses seis diagnósticos é, sozinho, uma política de saúde.</p>
+<hr>
+<h2>3. Quando pensar em câncer: sinais de alerta e indicação de mielograma</h2>
+<p>A história clínica, ancorada na queixa principal, e o exame físico são os passos iniciais do diagnóstico. História familiar, doenças genéticas e doenças constitucionais ajudam a compor a suspeita. O problema é que, na maioria das vezes, os sinais e sintomas do câncer infantil são <strong>iguais aos de doenças benignas comuns da infância</strong>: o câncer é uma doença mimetizante. Por isso o diagnóstico precoce depende muito menos de tecnologia e muito mais de nível de suspeição.</p>
+<h4>Sinais e sintomas e as neoplasias mais associadas</h4>
+<div class="tbl"><table><thead><tr><th>Sinal ou sintoma</th><th>No que pensar</th></tr></thead><tbody><tr><td>Aumento de volume em partes moles (história de trauma é comum, mas não é causa)</td><td>Sarcomas, leucemias</td></tr><tr><td>Aumento de volume de testículo</td><td>Leucemias, tumores de células germinativas</td></tr><tr><td>Cefaleia matinal, persistente e/ou progressiva, com alterações neurológicas, mudança comportamental, desaceleração do crescimento, aumento do perímetro cefálico ou diabetes insipidus</td><td>Tumor de sistema nervoso central, histiocitose de células de Langerhans</td></tr><tr><td>Dor abdominal, massa abdominal</td><td>Tumores sólidos (diferenciar de hepatoesplenomegalia)</td></tr><tr><td>"Dor de dente" rebelde ao tratamento</td><td>Linfomas, rabdomiossarcoma</td></tr><tr><td>Dor nas costas, que piora na posição supina, com ou sem sinais de compressão medular</td><td>Linfomas, neuroblastoma, tumor neuroectodérmico primitivo, rabdomiossarcoma, leucemias</td></tr><tr><td>Dor óssea ou articular, especialmente se persistente e se desperta a criança à noite, com ou sem edema, massa ou limitação funcional</td><td>Leucemias, tumores ósseos malignos, neuroblastoma</td></tr><tr><td>Equimoses, petéquias e outros sangramentos</td><td>Envolvimento medular por leucemias, linfomas, neuroblastoma</td></tr></tbody></table></div>
+<blockquote><p><strong>Pegadinha clássica:</strong> a história de trauma antes de uma massa em partes moles é comum, mas <strong>não tem relação de causa e efeito</strong>. O trauma apenas chamou atenção para a lesão que já existia. Atribuir a massa ao trauma é o erro que atrasa o diagnóstico.</p></blockquote>
+<blockquote><p><strong>Dor de crescimento × dor neoplásica.</strong> A dor de crescimento é vespertina, bilateral, cede com massagem e <strong>nunca acorda a criança</strong>. Dor que desperta do sono, que não responde a anti-inflamatórios e que persiste por semanas é dor até prova em contrário maligna.</p></blockquote>
+<hr>
+<h3>Quando a coleta de medula óssea é mandatória</h3>
+<p>Alterações do hemograma como leucocitose ou leucopenia — sobretudo com neutropenia — ou ainda pancitopenia podem refletir infiltração de medula óssea por neoplasias, em geral leucemias, linfomas, neuroblastoma e, mais raramente, retinoblastoma.</p>
+<h4>Indicações mandatórias de mielograma</h4>
+<div class="tbl"><table><thead><tr><th>Achado</th><th>Por que obriga a punção</th></tr></thead><tbody><tr><td>Diminuição significativa e inexplicada de um ou mais tipos de células no hemograma</td><td>Sugere ocupação ou falência medular</td></tr><tr><td>Blastos ou alterações leucoeritroblásticas no sangue periférico</td><td>Células imaturas circulantes indicam infiltração medular</td></tr><tr><td>Citopenia associada a linfonodomegalia ou hepatoesplenomegalia inexplicada</td><td>Doença linfoproliferativa com invasão medular</td></tr><tr><td>Citopenia associada a massa mediastinal anterior</td><td>Alto risco de leucemia de células T e linfoma linfoblástico</td></tr></tbody></table></div>
+<blockquote><p>Massa mediastinal anterior é uma associação que muda a urgência do caso: além do risco oncológico, há risco de obstrução de via aérea e de síndrome da veia cava superior, que se agravam com o decúbito e com a sedação.</p></blockquote>
+<hr>
+<h2>4. Leucemia linfoide aguda: epidemiologia, clínica e hemograma</h2>
+<h3>Distribuição das leucemias</h3>
+<div class="tbl"><table><thead><tr><th>Tipo</th><th>Frequência na infância e adolescência</th></tr></thead><tbody><tr><td>Leucemia linfoide aguda</td><td>75 a 80%</td></tr><tr><td>Leucemia mieloide aguda</td><td>15 a 20%</td></tr><tr><td>Leucemia mieloide crônica</td><td>2 a 5% (incomum)</td></tr></tbody></table></div>
+<p>A faixa etária de maior incidência da leucemia linfoide aguda vai do <strong>2.º ao 5.º ano de vida</strong>, sendo rara no recém-nascido, com discreto predomínio no sexo masculino (1,2 : 1).</p>
+<h3>Principais sinais de alerta da leucemia linfoide aguda</h3>
+<ul><li><strong>Falência medular da série vermelha — anemia</strong>, em geral normocítica e normocrômica: palidez, astenia, taquicardia</li><li><strong>Falência medular das plaquetas — plaquetopenia</strong>: sangramentos, púrpuras, equimoses e petéquias</li><li><strong>Falência medular da série branca — febre</strong>, com infecção provável ou confirmada</li><li><strong>Dor óssea</strong>, geralmente em membros inferiores, bem localizada, em qualquer horário, podendo ter forte intensidade</li><li><strong>Hepatomegalia ou hepatoesplenomegalia</strong></li><li><strong>Sintomas constitucionais gerais</strong>: emagrecimento, inapetência, sudorese</li></ul>
+<h3>O hemograma</h3>
+<p>O <strong>hemograma é o primeiro exame</strong> que costuma levantar a hipótese. Na criança de apresentação típica, espera-se encontrar:</p>
+<ul><li><strong>Leucocitose importante (acima de 50.000/mL) COM blastos</strong></li><li><strong>Anemia</strong></li><li><strong>Plaquetopenia</strong></li></ul>
+<blockquote><p><strong>Muito cuidado com três situações:</strong> (1) crianças com <strong>bicitopenia</strong>, em que a doença ainda não se expressou por completo; (2) hemogramas de aparelhos automatizados, em que <strong>linfócitos atípicos são confundidos com blastos</strong> — sempre revisar a lâmina; (3) <strong>hiperleucocitose acima de 50.000/mL</strong>, que traz alto risco de síndrome de lise tumoral, e acima de 100.000/mm³ acrescenta o risco de leucostase.</p></blockquote>
+<hr>
+<h2>5. Dicas de ouro diante da suspeita de leucemia</h2>
+<ul><li>Na presença de <strong>bicitopenia com envolvimento da série vermelha</strong>, considerar mielograma para confirmar ou descartar leucemia, desde que os valores estejam muito baixos.</li><li>Na dúvida, <strong>SEMPRE colher medula antes de qualquer tratamento</strong>.</li><li><strong>NUNCA prescrever corticoide sistêmico</strong> se houver dúvida diagnóstica.</li><li>Se a hipótese de púrpura trombocitopênica imunológica for muito forte, <strong>SEMPRE preferir a imunoglobulina</strong>.</li></ul>
+<blockquote><p>Por que a proibição do corticoide? Ele é droga ativa contra linfoblastos. Dado antes do diagnóstico, reduz os blastos, distorce o mielograma e atrasa a definição do subtipo e do grupo de risco — comprometendo todo o tratamento que virá depois.</p></blockquote>
+<h3>Púrpura trombocitopênica imunológica × leucemia linfoide aguda</h3>
+<div class="tbl"><table><thead><tr><th>Elemento</th><th>Púrpura trombocitopênica imunológica</th><th>Leucemia linfoide aguda</th></tr></thead><tbody><tr><td>Estado geral</td><td>Bom, criança ativa</td><td>Comprometido, febre, astenia</td></tr><tr><td>Antecedente</td><td>Quadro viral 1 a 3 semanas antes</td><td>Sintomas arrastados por semanas</td></tr><tr><td>Séries do hemograma</td><td>Plaquetopenia <strong>isolada</strong></td><td>Duas ou três séries acometidas</td></tr><tr><td>Diferencial da série branca</td><td>Normal, sem blastos</td><td>Blastos ou neutropenia</td></tr><tr><td>Visceromegalia / adenomegalia</td><td>Ausentes</td><td>Frequentes</td></tr><tr><td>Dor óssea</td><td>Ausente</td><td>Comum, noturna</td></tr><tr><td>Conduta inicial</td><td>Imunoglobulina intravenosa 1 g/kg e novo hemograma em 24 h</td><td>Mielograma antes de qualquer tratamento</td></tr></tbody></table></div>
+<p>Transfusão de plaquetas <strong>não</strong> é conduta de rotina na púrpura trombocitopênica imunológica: as plaquetas transfundidas são destruídas com a mesma rapidez, e a indicação se restringe ao sangramento grave com risco de vida.</p>
+<hr>
+<h2>6. Tumores do sistema nervoso central</h2>
+<p>São as <strong>neoplasias sólidas mais frequentes</strong> em crianças e adolescentes abaixo de 19 anos, com incidência em torno de <strong>20% das neoplasias infantis no Brasil</strong>, e representam a maior causa de óbito por câncer entre 0 e 14 anos. A classificação em vigor é a da Organização Mundial da Saúde, que avalia origem histológica, grau de malignidade e características moleculares.</p>
+<div class="tbl"><table><thead><tr><th>Idade</th><th>Incidência relativa dos tumores de sistema nervoso central</th></tr></thead><tbody><tr><td>Menos de 1 ano</td><td>5,8%</td></tr><tr><td>1 a 4 anos</td><td>26,1%</td></tr><tr><td>5 a 9 anos</td><td>26,7%</td></tr><tr><td>10 a 14 anos</td><td>22,7%</td></tr><tr><td>15 a 19 anos</td><td>18,7%</td></tr></tbody></table></div>
+<p>Quanto à localização, a <strong>fossa posterior é o sítio mais frequente</strong> no conjunto da faixa pediátrica. Nos dois primeiros anos de vida e na adolescência predominam os <strong>supratentoriais</strong>; entre <strong>2 e 10 anos</strong> predominam os <strong>infratentoriais</strong>. Exposição a radiação ionizante e distúrbios genéticos são fatores predisponentes descritos.</p>
+<h3>Manifestações clínicas</h3>
+<p>Na grande maioria dos casos os sintomas são secundários ao <strong>aumento da pressão intracraniana</strong> provocado pelo tumor: cefaleia, vômitos, irritabilidade, alteração do nível de consciência. A clínica varia com a idade, a localização e a biologia do tumor. <strong>Lactentes com fontanela aberta</strong> conseguem expandir o conteúdo craniano e apresentam quadro diferente — aumento do perímetro cefálico, irritabilidade e atraso do desenvolvimento no lugar da cefaleia clássica.</p>
+<p>O <strong>craniofaringioma</strong>, pela proximidade com o pedúnculo hipotalâmico, cursa com ausência de secreção de hormônio antidiurético — <strong>diabetes insipidus</strong> — e desidratação grave. Sua apresentação clássica reúne déficit de crescimento, poliúria e polidipsia, hemianopsia bitemporal por compressão do quiasma óptico e lesão suprasselar cístico-sólida com calcificações na tomografia.</p>
+<blockquote><p><strong>Tríade de Cushing</strong> — hipertensão arterial com alargamento da pressão de pulso, <strong>bradicardia</strong> e <strong>respiração irregular</strong>. É sinal <strong>tardio</strong> de hipertensão intracraniana e anuncia herniação iminente. Exige medida imediata, nunca observação.</p></blockquote>
+<blockquote><p>A separação entre tumor "benigno" e "maligno" no sistema nervoso central é válida do ponto de vista histológico, mas enganosa na prática: <strong>um tumor benigno em localização inoperável é infinitamente pior</strong> do que um tumor maligno ressecável.</p></blockquote>
+<hr>
+<h2>7. Linfomas</h2>
+<p>Os linfomas são a <strong>terceira neoplasia mais frequente</strong> na faixa pediátrica, atrás das leucemias e dos tumores do sistema nervoso central, e respondem por cerca de <strong>14%</strong> das doenças malignas da infância. A incidência aumenta com a idade, o que os torna especialmente relevantes no adolescente.</p>
+<div class="tbl"><table><thead><tr><th></th><th>Linfoma de Hodgkin</th><th>Linfoma não Hodgkin</th></tr></thead><tbody><tr><td>Velocidade de crescimento</td><td>Lento</td><td>Rápido</td></tr><tr><td>Disseminação</td><td>Por via linfática, ordenada</td><td>Ampla, com grande capacidade de invasão</td></tr><tr><td>Sítios críticos</td><td>Cadeias linfáticas contíguas</td><td>Pode comprometer medula óssea e sistema nervoso central</td></tr><tr><td>Urgência do manejo</td><td>Menor</td><td>Alta, inclusive risco de lise tumoral</td></tr></tbody></table></div>
+<h3>Quadro clínico</h3>
+<p>A apresentação mais comum é a <strong>linfonodomegalia cervical lateral, indolor, de crescimento lento</strong>, de consistência firme e "borrachoide", <strong>sem sinais flogísticos</strong>. As regiões supraclavicular, mediastinal, axilar e inguinal também podem ser o sítio inicial, e a velocidade de crescimento varia de semanas a meses.</p>
+<p><strong>Dois terços dos pacientes têm envolvimento mediastinal à apresentação</strong>, o que pode causar tosse seca ou outros sintomas de compressão traqueal ou brônquica. Podem ocorrer sintomas sistêmicos — febre, sudorese noturna e emagrecimento —, relacionados às citocinas produzidas pelas células neoplásicas.</p>
+<blockquote><p>Linfonodo <strong>supraclavicular</strong> é sempre suspeito, em qualquer idade. O mesmo vale para linfonodo maior que 2,5 cm, endurecido, aderido a planos profundos, que cresce progressivamente ou que persiste por mais de 4 a 6 semanas sem explicação.</p></blockquote>
+<hr>
+<h2>8. Emergências oncológicas: os sete pilares</h2>
+<div class="tbl"><table><thead><tr><th>Grupo</th><th>Emergências</th></tr></thead><tbody><tr><td>Metabólicas</td><td>Síndrome da lise tumoral, hipercalcemia, hipoglicemia, hiponatremia</td></tr><tr><td>Hematológicas</td><td>Síndrome de hiperviscosidade, leucostase</td></tr><tr><td>Infecciosas</td><td>Febre neutropênica</td></tr><tr><td>Neurológicas</td><td>Hipertensão intracraniana, compressão medular, convulsões</td></tr><tr><td>Cardiovasculares</td><td>Derrame pericárdico com tamponamento, síndrome da veia cava superior</td></tr><tr><td>Respiratórias</td><td>Obstrução maligna das vias aéreas</td></tr><tr><td>Ligadas à quimioterapia</td><td>Extravasamento, reações anafiláticas</td></tr></tbody></table></div>
+<h3>Síndrome da lise tumoral</h3>
+<p>A destruição maciça de células — espontânea ou, mais comumente, após o início da quimioterapia em linfomas e leucemias agudas — libera na circulação o conteúdo intracelular. A cascata resultante é a <strong>tríade tóxica</strong>:</p>
+<ul><li><strong>Liberação de ácidos nucleicos → hiperuricemia</strong>, com formação de cristais e falência renal</li><li><strong>Liberação de potássio → hipercalemia</strong>, com arritmia e morte súbita</li><li><strong>Liberação de fósforo → hiperfosfatemia</strong>, que precipita o cálcio e induz <strong>hipocalcemia secundária</strong>, com tetania e convulsões</li></ul>
+<h4>Critérios de Cairo-Bishop</h4>
+<div class="tbl"><table><thead><tr><th>Lise tumoral <strong>laboratorial</strong> (exige ≥ 2 alterações)</th><th>Valor</th></tr></thead><tbody><tr><td>Ácido úrico</td><td>≥ 8 mg/dL (ou aumento de 25%)</td></tr><tr><td>Potássio</td><td>≥ 6 mEq/L (ou aumento de 25%)</td></tr><tr><td>Fósforo</td><td>≥ 4,5 mg/dL em adultos (ou aumento de 25%)</td></tr><tr><td>Cálcio</td><td>≤ 7 mg/dL (ou queda de 25%)</td></tr></tbody></table></div>
+<p>A <strong>lise tumoral clínica</strong> é definida pela lise laboratorial somada a pelo menos um critério clínico: creatinina ≥ 1,5 vez o limite superior da normalidade, arritmia ou morte súbita, ou convulsões.</p>
+<blockquote><p><strong>Intervenção imediata:</strong> hidratação intravenosa agressiva, alopurinol na profilaxia, rasburicase para reduzir o ácido úrico já formado e diálise nos casos refratários. Restringir volume ou repor potássio nesse cenário é erro grave.</p></blockquote>
+<h3>Febre neutropênica</h3>
+<div class="tbl"><table><thead><tr><th>Elemento</th><th>Definição</th></tr></thead><tbody><tr><td>Temperatura</td><td>≥ 38,5 °C em medida única, <strong>ou</strong> ≥ 38,0 °C sustentada por 1 hora</td></tr><tr><td>Contagem celular</td><td>Neutrófilos absolutos &lt; 500 células/mm³</td></tr></tbody></table></div>
+<blockquote><p><strong>O perigo oculto:</strong> sem neutrófilos, não há como montar a resposta inflamatória. Infecções de pele, tecidos moles e pulmões podem cursar <strong>sem eritema, sem pus e sem infiltrado visível</strong>. A ausência dos sinais clássicos não afasta a infecção — em neutropênico, ela a torna mais perigosa.</p></blockquote>
+<p><strong>Protocolo da hora dourada:</strong> hemograma completo, <strong>duas hemoculturas</strong> e painel metabólico, seguidos imediatamente de <strong>antibiótico intravenoso de amplo espectro</strong> — cefepima ou piperacilina-tazobactam, por exemplo — <strong>antes mesmo do resultado das culturas</strong>.</p>
+<h3>Emergências cardiovasculares e respiratórias</h3>
+<ul><li><strong>Derrame pericárdico com tamponamento</strong> — a pressão intrapericárdica supera a pressão diastólica e colapsa o ventrículo direito. Diagnóstico pela <strong>tríade de Beck</strong> (hipotensão, turgência jugular e bulhas abafadas), com silhueta em "garrafa de água" na radiografia. Conduta: <strong>pericardiocentese guiada por ultrassom</strong>.</li><li><strong>Síndrome da veia cava superior</strong> — obstrução do retorno venoso do crânio e dos membros superiores, tipicamente por tumores mediastinais e linfomas. Cursa com edema de face e de braços, tosse e dispneia <strong>que piora na posição supina</strong>. Conduta inicial: <strong>elevar a cabeceira</strong>, reduzindo a pressão hidrostática; depois, glicocorticoides, quimioterapia ou stent intravascular.</li><li><strong>Obstrução maligna das vias aéreas</strong> — massa mediastinal anterior comprimindo traqueia e brônquios; cuidado redobrado com sedação e decúbito dorsal.</li></ul>
+<h3>Emergências hematológicas e neurológicas</h3>
+<div class="tbl"><table><thead><tr><th>Emergência</th><th>Mecanismo</th><th>Conduta</th></tr></thead><tbody><tr><td>Leucostase</td><td>Acúmulo de blastos bloqueando os microvasos, com leucócitos &gt; 100.000/mm³; cursa com falência respiratória e hemorragia intracraniana</td><td>Leucaférese imediata e quimioterapia de indução rápida</td></tr><tr><td>Síndrome de hiperviscosidade</td><td>Excesso de proteínas séricas, com viscosidade relativa &gt; 4 cP; tríade de alterações visuais, déficits neurológicos e sangramento mucoso</td><td>Plasmaférese urgente; <strong>evitar transfusão de sangue</strong>, que agrava a viscosidade</td></tr><tr><td>Hipertensão intracraniana</td><td>Metástases com edema peritumoral e quebra da barreira hematoencefálica</td><td>Glicocorticoides, manitol, hiperventilação</td></tr><tr><td>Compressão maligna da medula espinhal</td><td>Massa comprimindo o canal medular</td><td>Ressonância magnética (padrão-ouro, sensibilidade de 93%), corticoide imediato, radioterapia ou cirurgia descompressiva</td></tr></tbody></table></div>
+<blockquote><p>Na compressão medular maligna, a <strong>dor nas costas está presente em cerca de 90% dos casos</strong> e antecede a fraqueza motora e a disfunção esfincteriana, que são tardias. Esperar o déficit motor para pedir a ressonância é esperar demais: o corticoide precoce é o que preserva a marcha.</p></blockquote>
+<hr>
+<h2>9. Do sintoma ao sistema: raciocínio de plantão</h2>
+<div class="tbl"><table><thead><tr><th>Sintoma de entrada</th><th>Suspeitar de</th></tr></thead><tbody><tr><td>Alteração do estado mental</td><td>Hipoglicemia, hipercalcemia, síndrome de hiperviscosidade, hipertensão intracraniana</td></tr><tr><td>Dispneia ou falta de ar</td><td>Tamponamento cardíaco, leucostase, síndrome da veia cava superior, obstrução de vias aéreas</td></tr><tr><td>Dor nas costas</td><td><strong>Compressão maligna da medula espinhal</strong> — assumir como emergência neurológica até prova em contrário</td></tr><tr><td>Oligúria ou falência renal</td><td>Síndrome da lise tumoral, por depósito de cristais de ácido úrico</td></tr></tbody></table></div>
+<h3>Efeitos adversos do tratamento que chegam ao pronto-socorro</h3>
+<ul><li><strong>Toxicidade da radioterapia</strong> — dermatite grave, esofagite, cistite e complicações cardiovasculares; exige monitoramento multidisciplinar e ajuste de dose.</li><li><strong>Complicações gastrointestinais</strong> — dor abdominal, vômitos e desidratação, com risco de infecção por <em>Clostridioides difficile</em> e de reativação de citomegalovírus ou hepatite latente sob imunossupressão.</li><li><strong>Efeitos imunomediados</strong> — inibidores de checkpoint e vacinas podem desencadear respostas autoimunes atípicas, de artrite inespecífica a pneumonite e pancreatite com risco de vida.</li></ul>
+<blockquote><p>Fecha o raciocínio o princípio que organiza todo o tema: o câncer infantil raramente pode ser prevenido, mas quase sempre pode ser <strong>suspeitado a tempo</strong>. Sintoma que persiste, que desperta a criança à noite, que não responde ao tratamento habitual ou que vem com citopenia inexplicada merece hemograma, exame físico completo e, se necessário, medula — antes de qualquer corticoide.</p></blockquote></script>
+<script>
+/* ─────────────────────────────────────────────────────────────────────────────
+   CONTRATO DE DADOS — para adaptar a outro tema, troque apenas QUIZ e o resumo.
+   Cada item: { question, options[2..6], correctIndex, explanation }
+   ──────────────────────────────────────────────────────────────────────────── */
+var TITLE      = "Câncer em Pediatria";
+var EYEBROW    = "Pediatria · Oncologia";
+var DISCIPLINA = "PED";   // pasta de origem (PED, GO...) — usada pelo índice
+var SUBTITLE = "Como suspeitar, quando investigar e o que não fazer";
+var INTRO    = "Sinais de alerta do câncer infantojuvenil, indicações de mielograma, particularidades da leucemia linfoide aguda, dos tumores do sistema nervoso central e dos linfomas, e as principais emergências oncológicas.";
+
+var QUIZ = [
+  {
+    "question": "Na criança, as neoplasias malignas originam-se predominantemente de qual grupo celular, em contraste com o que ocorre no adulto?",
+    "options": [
+      "Células do sistema hematopoiético e dos tecidos de sustentação",
+      "Células dos epitélios que recobrem os diferentes órgãos",
+      "Células endoteliais dos grandes vasos e do sistema linfático",
+      "Células da glia madura e dos epitélios glandulares exócrinos"
+    ],
+    "correctIndex": 0,
+    "explanation": "O câncer infantil difere do câncer do adulto pelo tipo de célula progenitora envolvida e pelos mecanismos de transformação maligna. Na criança predominam as neoplasias do sistema sanguíneo e dos tecidos de sustentação; no adulto, os carcinomas de origem epitelial. É por isso que carcinomas são raros na infância e leucemias e sarcomas são comuns."
+  },
+  {
+    "question": "Qual é a posição do câncer infantojuvenil entre as causas de morte em crianças e adolescentes de 1 a 19 anos no Brasil?",
+    "options": [
+      "É a principal causa de morte por doença nessa faixa etária",
+      "É a segunda causa de morte por doença, atrás das infecções",
+      "É a terceira causa de morte por doença, atrás das cardiopatias",
+      "É causa pouco relevante de morte por doença nessa faixa etária"
+    ],
+    "correctIndex": 0,
+    "explanation": "No Brasil, o câncer é a principal causa de morte por doença entre 1 e 19 anos, superado apenas pelas causas externas. Isso justifica o alto nível de suspeição exigido do pediatra, já que o prognóstico depende diretamente do diagnóstico precoce."
+  },
+  {
+    "question": "Quais são os três grupos de neoplasias mais frequentes na faixa etária pediátrica?",
+    "options": [
+      "Leucemias, tumores do sistema nervoso central e linfomas",
+      "Linfomas, carcinomas de tireoide e tumores ósseos malignos",
+      "Tumores do sistema nervoso central, sarcomas e carcinomas",
+      "Neuroblastomas, tumor de Wilms e retinoblastomas bilaterais"
+    ],
+    "correctIndex": 0,
+    "explanation": "As leucemias ocupam o primeiro lugar, com cerca de 28% dos casos, seguidas pelos tumores do sistema nervoso central, com cerca de 20% no Brasil, e pelos linfomas, com cerca de 14%. Há variação mundial nessa distribuição, ligada a fatores demográficos e socioeconômicos."
+  },
+  {
+    "question": "Por que o diagnóstico de câncer na infância costuma ser tardio?",
+    "options": [
+      "Os sinais iniciais são semelhantes aos de doenças benignas comuns",
+      "As neoplasias infantis crescem muito lentamente até a fase final",
+      "Os exames de imagem são pouco disponíveis na rede básica de saúde",
+      "Os pais raramente procuram atendimento pediátrico ambulatorial"
+    ],
+    "correctIndex": 0,
+    "explanation": "O câncer é uma doença mimetizante: febre, palidez, dor óssea, adenomegalia e vômitos são queixas cotidianas do consultório pediátrico. Por isso o diagnóstico depende menos de exames sofisticados e mais de um alto nível de suspeição diante de sintomas persistentes ou desproporcionais."
+  },
+  {
+    "question": "O aumento indolor de volume testicular em uma criança deve levantar suspeita de quais neoplasias?",
+    "options": [
+      "Leucemias e tumores de células germinativas",
+      "Sarcomas de partes moles e histiocitoses",
+      "Tumores do sistema nervoso central e gliomas",
+      "Neuroblastomas e tumores ósseos malignos"
+    ],
+    "correctIndex": 0,
+    "explanation": "O testículo é sítio santuário de infiltração leucêmica e também sede de tumores de células germinativas. Aumento de volume testicular indolor e progressivo, sem sinais inflamatórios, exige investigação e não deve ser tratado empiricamente como orquiepididimite."
+  },
+  {
+    "question": "Uma dor de dente rebelde ao tratamento odontológico convencional deve fazer pensar em quais neoplasias?",
+    "options": [
+      "Linfomas e rabdomiossarcoma",
+      "Leucemias e retinoblastoma",
+      "Neuroblastoma e nefroblastoma",
+      "Osteossarcoma e meduloblastoma"
+    ],
+    "correctIndex": 0,
+    "explanation": "Dor dentária que não responde ao tratamento pode ser a expressão de infiltração de mandíbula ou maxila por linfoma, sendo o linfoma de Burkitt clássico nessa região, ou por rabdomiossarcoma de cabeça e pescoço. A persistência da queixa apesar do tratamento adequado é o sinal de alarme."
+  },
+  {
+    "question": "Cefaleia matinal persistente e progressiva, acompanhada de desaceleração do crescimento e aumento do perímetro cefálico, aponta para quais diagnósticos?",
+    "options": [
+      "Tumor do sistema nervoso central e histiocitose de Langerhans",
+      "Leucemia linfoide aguda e púrpura trombocitopênica imune",
+      "Linfoma não Hodgkin com acometimento medular extenso",
+      "Neuroblastoma abdominal com metástases hepáticas difusas"
+    ],
+    "correctIndex": 0,
+    "explanation": "Cefaleia que predomina pela manhã, é progressiva e se associa a alterações neurológicas, mudança comportamental, desaceleração do crescimento, diabetes insipidus ou aumento do perímetro cefálico sugere tumor do sistema nervoso central. A histiocitose de células de Langerhans entra no diferencial, sobretudo quando há diabetes insipidus."
+  },
+  {
+    "question": "Que característica da dor óssea ou articular na criança mais fortemente sugere doença neoplásica?",
+    "options": [
+      "Ser persistente e despertar a criança durante a noite",
+      "Ser vespertina e melhorar com repouso e elevação",
+      "Ser migratória e acompanhar quadros virais recentes",
+      "Ser desencadeada apenas por esforço físico intenso"
+    ],
+    "correctIndex": 0,
+    "explanation": "Dor óssea persistente, que desperta a criança à noite e pode vir acompanhada de edema, massa ou limitação funcional, sugere leucemias, tumores ósseos malignos e neuroblastoma. Ela contrasta com a dor de crescimento, que é vespertina, bilateral, cede com massagem e nunca acorda a criança."
+  },
+  {
+    "question": "Quais alterações do hemograma tornam mandatória a coleta de medula óssea?",
+    "options": [
+      "Blastos ou alterações leucoeritroblásticas no sangue periférico",
+      "Anemia microcítica isolada com resposta ao ferro em 30 dias",
+      "Leucocitose com desvio à esquerda durante quadro febril agudo",
+      "Plaquetose reativa persistente após infecção viral resolvida"
+    ],
+    "correctIndex": 0,
+    "explanation": "A presença de blastos ou de reação leucoeritroblástica no sangue periférico é indicação mandatória de mielograma. Também indicam a punção a diminuição significativa e inexplicada de uma ou mais séries e a associação com linfonodomegalia ou hepatoesplenomegalia sem causa definida."
+  },
+  {
+    "question": "Além de blastos no sangue periférico, qual achado torna mandatória a investigação de medula óssea?",
+    "options": [
+      "Citopenia inexplicada associada a massa mediastinal anterior",
+      "Neutrofilia transitória associada a amigdalite bacteriana",
+      "Eosinofilia leve associada a dermatite atópica extensa",
+      "Linfocitose discreta associada a exantema viral benigno"
+    ],
+    "correctIndex": 0,
+    "explanation": "Massa mediastinal anterior somada a alteração inexplicada do hemograma é combinação de alto risco para leucemia de células T e linfoma linfoblástico. Leucocitose, leucopenia com neutropenia ou pancitopenia podem refletir infiltração medular por leucemias, linfomas e neuroblastoma."
+  },
+  {
+    "question": "Entre as leucemias da infância e da adolescência, qual é a participação da leucemia linfoide aguda?",
+    "options": [
+      "De 75 a 80% dos casos, sendo o subtipo mais comum",
+      "De 40 a 45% dos casos, sendo o subtipo mais comum",
+      "De 15 a 20% dos casos, atrás da forma mieloide aguda",
+      "De 2 a 5% dos casos, atrás da forma mieloide crônica"
+    ],
+    "correctIndex": 0,
+    "explanation": "A leucemia linfoide aguda responde por 75 a 80% das leucemias pediátricas, seguida pela mieloide aguda, com 15 a 20%. A mieloide crônica é incomum na infância, variando de 2 a 5%. Estima-se cerca de 1.776 casos novos de leucemia linfoide aguda por ano no Brasil."
+  },
+  {
+    "question": "Qual é a faixa etária de maior incidência da leucemia linfoide aguda?",
+    "options": [
+      "Entre o segundo e o quinto ano de vida, rara no recém-nascido",
+      "Entre o primeiro e o sexto mês de vida, rara após os cinco anos",
+      "Entre os dez e os quinze anos, rara antes da idade escolar",
+      "Entre os quinze e os dezenove anos, rara antes da puberdade"
+    ],
+    "correctIndex": 0,
+    "explanation": "O pico de incidência da leucemia linfoide aguda vai do segundo ao quinto ano de vida, sendo rara no recém-nascido, com discreto predomínio masculino, na proporção de 1,2 para 1. Diagnóstico abaixo de 1 ano ou acima de 10 anos é justamente o que caracteriza mau prognóstico."
+  },
+  {
+    "question": "Qual é o primeiro exame laboratorial que costuma levantar a hipótese de leucemia, e o que se espera encontrar nele?",
+    "options": [
+      "Hemograma com leucocitose e blastos, anemia e plaquetopenia",
+      "Mielograma com hipercelularidade e ausência de megacariócitos",
+      "Ultrassom de abdome com hepatoesplenomegalia e adenomegalias",
+      "Desidrogenase láctica muito elevada com ácido úrico normal"
+    ],
+    "correctIndex": 0,
+    "explanation": "O hemograma é o exame de porta de entrada. No quadro típico aparecem leucocitose importante, acima de 50.000/mL, com blastos, além de anemia e plaquetopenia, traduzindo a falência das três séries por ocupação medular. O mielograma vem depois, para confirmar o diagnóstico."
+  },
+  {
+    "question": "Qual armadilha é frequente na leitura do hemograma automatizado de uma criança com suspeita de leucemia?",
+    "options": [
+      "Linfócitos atípicos serem contados como blastos pelo aparelho",
+      "Plaquetas gigantes serem contadas como hemácias pelo aparelho",
+      "Reticulócitos serem contados como neutrófilos pelo aparelho",
+      "Eosinófilos serem contados como monócitos pelo aparelho"
+    ],
+    "correctIndex": 0,
+    "explanation": "Contadores automatizados confundem linfócitos atípicos de infecções virais com blastos, gerando alarme falso. Por isso todo achado de blastos deve ser confirmado por revisão da lâmina em microscopia antes de qualquer decisão terapêutica."
+  },
+  {
+    "question": "Hiperleucocitose acima de 50.000/mL ao diagnóstico de leucemia implica principalmente qual risco imediato?",
+    "options": [
+      "Alto risco de síndrome de lise tumoral",
+      "Alto risco de anemia hemolítica aguda",
+      "Alto risco de trombocitose paradoxal",
+      "Alto risco de hipocalcemia por má absorção"
+    ],
+    "correctIndex": 0,
+    "explanation": "Grande massa de blastos circulantes significa grande massa celular a ser destruída, e a hiperleucocitose acima de 50.000/mL é fator clássico de risco para síndrome de lise tumoral. Acima de 100.000/mm³ soma-se o risco de leucostase, com falência respiratória e hemorragia intracraniana."
+  },
+  {
+    "question": "Menino de 7 anos chega ao pronto-socorro com manchas arroxeadas pelo corpo, após quadro gripal há 10 dias. Está em bom estado geral, afebril, sem visceromegalias ou linfonodomegalias, com equimoses e petéquias em tronco e membros. O hemograma mostra Hb 10,2 g/dL, leucócitos 12.220/mL com diferencial normal e plaquetas 12.000/mL confirmadas em lâmina. Qual é a hipótese mais provável?",
+    "options": [
+      "Púrpura trombocitopênica imunológica pós-viral",
+      "Leucemia linfoide aguda de início muito recente",
+      "Anemia hemolítica autoimune por anticorpo frio",
+      "Hemofilia A com sangramento cutâneo extenso"
+    ],
+    "correctIndex": 0,
+    "explanation": "Plaquetopenia grave e isolada, criança em bom estado geral, quadro viral prévio, ausência de visceromegalia e de adenomegalia, com série branca de diferencial normal, compõem o quadro clássico da púrpura trombocitopênica imunológica. Na leucemia esperaríamos comprometimento de outras séries, blastos, organomegalia ou dor óssea."
+  },
+  {
+    "question": "No mesmo menino de 7 anos, com plaquetas de 12.000/mL, petéquias e equimoses, sem sangramento ativo de mucosas e sem visceromegalias, qual é a conduta inicial mais adequada?",
+    "options": [
+      "Imunoglobulina intravenosa 1 g/kg e novo hemograma em 24 horas",
+      "Pulsoterapia com metilprednisolona 30 mg/kg por três dias",
+      "Transfusão emergencial de pool de plaquetas em dose plena",
+      "Coleta de liquor e início imediato de quimioterapia de indução"
+    ],
+    "correctIndex": 0,
+    "explanation": "Quando a hipótese de púrpura trombocitopênica imunológica é forte, a escolha é a imunoglobulina intravenosa, que eleva rapidamente as plaquetas sem mascarar uma leucemia. Corticoide sistêmico é proscrito enquanto houver dúvida diagnóstica, e a transfusão de plaquetas não está indicada sem sangramento grave."
+  },
+  {
+    "question": "Por que se deve evitar corticoide sistêmico diante de uma plaquetopenia ainda sem diagnóstico definido?",
+    "options": [
+      "Ele pode mascarar e tratar parcialmente uma leucemia não diagnosticada",
+      "Ele eleva a contagem de plaquetas e impede a resposta à imunoglobulina",
+      "Ele provoca aplasia medular transitória em boa parte das crianças",
+      "Ele aumenta o risco de síndrome de lise tumoral antes do tratamento"
+    ],
+    "correctIndex": 0,
+    "explanation": "O corticoide é droga ativa contra linfoblastos: administrado antes do diagnóstico, reduz os blastos, distorce o mielograma e atrasa a definição do subtipo e do risco, comprometendo o tratamento correto. Diante de citopenia sem diagnóstico, corticoide sistêmico não deve ser prescrito."
+  },
+  {
+    "question": "Diante de dúvida entre leucemia e outra causa de citopenia, qual é a conduta mais segura?",
+    "options": [
+      "Colher medula óssea antes de iniciar qualquer tratamento",
+      "Iniciar corticoide e reavaliar o hemograma em uma semana",
+      "Transfundir plaquetas e adiar a investigação medular",
+      "Solicitar apenas sorologias virais e repetir o hemograma"
+    ],
+    "correctIndex": 0,
+    "explanation": "A regra de ouro é colher medula antes de qualquer tratamento sempre que houver dúvida diagnóstica. Bicitopenia com valores muito baixos, sobretudo com comprometimento da série vermelha, é indicação de mielograma para confirmar ou descartar leucemia."
+  },
+  {
+    "question": "Pré-escolar de 4 anos apresenta febre há 3 semanas, palidez, dor óssea que impede a deambulação, petéquias, adenomegalia cervical e hepatoesplenomegalia a 4 cm dos rebordos. Hemograma: Hb 7,2 g/dL, plaquetas 35.000/mm³ e leucócitos 65.000/mm³ com 40% de blastos. Sobre a estratificação de risco, é correto afirmar que:",
+    "options": [
+      "A hiperleucocitose acima de 50.000/mm³ já o classifica como alto risco",
+      "A idade de 4 anos já o classifica como de alto risco por si mesma",
+      "A dor óssea intensa já indica infiltração do sistema nervoso central",
+      "O imunofenótipo T é o esperado e traz prognóstico mais favorável"
+    ],
+    "correctIndex": 0,
+    "explanation": "Leucometria acima de 50.000/mm³ ao diagnóstico é critério clássico de alto risco na leucemia linfoide aguda, independentemente da idade. A faixa de 1 a 9 anos é de bom prognóstico, a dor óssea reflete infiltração medular e não do sistema nervoso, e o imunofenótipo B é o mais comum e tem melhor prognóstico que o T."
+  },
+  {
+    "question": "Criança de 6 anos tem dor em membros inferiores há 4 semanas, de predomínio noturno, que a desperta do sono, com febre baixa e sem resposta a anti-inflamatórios. Exames: Hb 10,5 g/dL, leucócitos 3.200/mm³ com neutropenia, plaquetas 110.000/mm³, VHS 85 mm/h e LDH 950 U/L, sem blastos no sangue periférico. Qual é o próximo passo?",
+    "options": [
+      "Aspirado de medula óssea para descartar doença onco-hematológica",
+      "Corticoide sistêmico empírico para artrite idiopática juvenil",
+      "Cintilografia óssea para confirmar osteomielite multifocal",
+      "Antibiótico de amplo espectro para febre de origem obscura"
+    ],
+    "correctIndex": 0,
+    "explanation": "Dor óssea noturna, bicitopenia com neutropenia, velocidade de hemossedimentação muito alta e LDH elevada compõem quadro de altíssima suspeição para leucemia, mesmo sem blastos circulantes, já que a doença pode estar restrita à medula. O mielograma é o próximo passo, e o corticoide empírico seria erro grave nesse cenário."
+  },
+  {
+    "question": "Qual é a posição dos tumores do sistema nervoso central entre as neoplasias da infância?",
+    "options": [
+      "São as neoplasias sólidas mais frequentes, cerca de 20% no Brasil",
+      "São as neoplasias sólidas mais raras, cerca de 2% dos casos no Brasil",
+      "São a quarta neoplasia em frequência, cerca de 5% dos casos no Brasil",
+      "São as neoplasias mais frequentes de todas, cerca de 45% no Brasil"
+    ],
+    "correctIndex": 0,
+    "explanation": "Os tumores do sistema nervoso central são as neoplasias sólidas mais frequentes abaixo dos 19 anos, com incidência em torno de 20% das neoplasias infantis no Brasil, atrás apenas das leucemias. São também a maior causa de óbito por câncer entre 0 e 14 anos."
+  },
+  {
+    "question": "Como se distribuem os tumores do sistema nervoso central conforme a idade e a localização?",
+    "options": [
+      "Infratentoriais predominam dos 2 aos 10 anos de idade",
+      "Infratentoriais predominam apenas depois dos 15 anos",
+      "Supratentoriais predominam somente dos 2 aos 10 anos",
+      "Supratentoriais são excepcionais em qualquer idade"
+    ],
+    "correctIndex": 0,
+    "explanation": "Os tumores de fossa posterior, ou infratentoriais, predominam entre 2 e 10 anos, enquanto os supratentoriais são mais frequentes nos dois primeiros anos de vida e na adolescência. A fossa posterior é a localização mais comum no conjunto da faixa pediátrica."
+  },
+  {
+    "question": "Bradicardia, hipertensão arterial com pulso largo e respiração irregular em criança operada de tumor cerebral configuram qual quadro?",
+    "options": [
+      "Tríade de Cushing, sinal tardio de hipertensão intracraniana",
+      "Tríade de Beck, sinal de tamponamento cardíaco instalado",
+      "Tríade de Whipple, sinal de hipoglicemia sintomática grave",
+      "Tríade de Virchow, sinal de trombose venosa em instalação"
+    ],
+    "correctIndex": 0,
+    "explanation": "A tríade de Cushing, formada por hipertensão com alargamento da pressão de pulso, bradicardia e respiração irregular, é manifestação tardia de hipertensão intracraniana e anuncia herniação iminente. Exige medidas imediatas de redução da pressão intracraniana, não observação."
+  },
+  {
+    "question": "Menina de 9 anos apresenta queda de percentil de estatura, poliúria e polidipsia intensas e hemianopsia bitemporal. A tomografia de crânio mostra lesão suprasselar cístico-sólida com calcificações. Quais são o diagnóstico e a complicação endócrina mais prováveis?",
+    "options": [
+      "Craniofaringioma com diabetes insipidus central",
+      "Adenoma hipofisário com puberdade precoce central",
+      "Germinoma com secreção inapropriada de vasopressina",
+      "Glioma de vias ópticas com hipotireoidismo primário"
+    ],
+    "correctIndex": 0,
+    "explanation": "Lesão suprasselar cístico-sólida com calcificações, déficit de crescimento e compressão do quiasma óptico com hemianopsia bitemporal é a apresentação típica do craniofaringioma. A proximidade com o pedúnculo hipotalâmico compromete a secreção de vasopressina, causando diabetes insipidus e risco de desidratação grave."
+  },
+  {
+    "question": "Qual comportamento clínico distingue o linfoma de Hodgkin do linfoma não Hodgkin?",
+    "options": [
+      "Crescimento lento e disseminação por via linfática",
+      "Crescimento rápido e invasão precoce de medula e SNC",
+      "Crescimento lento e restrição exclusiva ao mediastino",
+      "Crescimento rápido e disseminação só por contiguidade"
+    ],
+    "correctIndex": 0,
+    "explanation": "O linfoma de Hodgkin cresce lentamente e se dissemina de forma ordenada por cadeias linfáticas. O não Hodgkin tem crescimento rápido, grande capacidade de disseminação e pode comprometer medula óssea e sistema nervoso central, o que muda radicalmente a urgência do manejo."
+  },
+  {
+    "question": "Como é, tipicamente, a linfonodomegalia de apresentação do linfoma de Hodgkin?",
+    "options": [
+      "Cervical lateral, indolor, firme e sem sinais flogísticos",
+      "Cervical anterior, dolorosa, flutuante e com hiperemia",
+      "Inguinal isolada, dolorosa, quente e de crescimento rápido",
+      "Occipital bilateral, móvel, fugaz e de regressão espontânea"
+    ],
+    "correctIndex": 0,
+    "explanation": "A apresentação mais comum é linfonodomegalia cervical lateral, indolor, de crescimento lento, com consistência firme e borrachoide e sem sinais flogísticos. As regiões supraclavicular, mediastinal, axilar e inguinal também podem ser o sítio inicial."
+  },
+  {
+    "question": "Adolescente de 15 anos apresenta massa supraclavicular indolor há 2 meses, tosse seca, edema de face e pescoço e dispneia que piora ao deitar. Qual é a hipótese e a medida inicial adequada?",
+    "options": [
+      "Veia cava superior comprimida por linfoma; elevar a cabeceira",
+      "Pneumonia lobar com derrame parapneumônico; iniciar antibiótico",
+      "Crise asmática desencadeada por alérgeno; iniciar broncodilatador",
+      "Angioedema por alergia alimentar aguda; aplicar adrenalina logo"
+    ],
+    "correctIndex": 0,
+    "explanation": "Adenomegalia supraclavicular indolor com massa mediastinal e edema de face e pescoço que piora em decúbito caracteriza síndrome da veia cava superior, complicação frequente de linfomas, que têm envolvimento mediastinal em dois terços dos casos. Elevar a cabeceira reduz a pressão hidrostática enquanto se define o tratamento."
+  },
+  {
+    "question": "Quais são as alterações laboratoriais que caracterizam a síndrome de lise tumoral?",
+    "options": [
+      "Hiperuricemia, hipercalemia, hiperfosfatemia e hipocalcemia",
+      "Hipouricemia, hipocalemia, hipofosfatemia e hipercalcemia",
+      "Hiperuricemia, hipocalemia, hipofosfatemia e hipercalcemia",
+      "Hipouricemia, hipercalemia, hiperfosfatemia e hipercalcemia"
+    ],
+    "correctIndex": 0,
+    "explanation": "A destruição maciça de células tumorais libera ácidos nucleicos, potássio e fósforo, gerando hiperuricemia, com risco de falência renal por cristais, hipercalemia, com arritmia e morte súbita, e hiperfosfatemia, que precipita o cálcio e provoca hipocalcemia secundária, com tetania e convulsões."
+  },
+  {
+    "question": "Quais medidas compõem a abordagem imediata da síndrome de lise tumoral?",
+    "options": [
+      "Hidratação intravenosa vigorosa, alopurinol e rasburicase",
+      "Restrição hídrica, diurético de alça e reposição de potássio",
+      "Reposição de fósforo, cálcio oral e corticoide em dose alta",
+      "Suspensão da hidratação, bicarbonato oral e alta precoce"
+    ],
+    "correctIndex": 0,
+    "explanation": "O pilar é a hidratação intravenosa agressiva, que mantém o fluxo urinário e evita a precipitação de cristais. O alopurinol atua na profilaxia e a rasburicase reduz o ácido úrico já formado; nos casos refratários há indicação de diálise. Repor potássio ou restringir volume agravaria o quadro."
+  },
+  {
+    "question": "Como se define febre neutropênica na criança em tratamento oncológico?",
+    "options": [
+      "Temperatura de 38,5 °C isolada ou 38 °C por 1 hora, com neutrófilos abaixo de 500",
+      "Temperatura de 37,5 °C isolada ou 37 °C por 6 horas, com neutrófilos abaixo de 1.500",
+      "Temperatura de 39,5 °C isolada ou 39 °C por 3 horas, com neutrófilos abaixo de 100",
+      "Temperatura de 38,5 °C isolada ou 38 °C por 1 hora, com plaquetas abaixo de 50.000"
+    ],
+    "correctIndex": 0,
+    "explanation": "Define-se por temperatura isolada de 38,5 °C ou temperatura de 38 °C sustentada por uma hora, associada a contagem absoluta de neutrófilos abaixo de 500 células/mm³. É emergência infecciosa, porque sem neutrófilos a infecção pode não mostrar eritema nem pus."
+  },
+  {
+    "question": "Qual é a conduta imediata diante de febre neutropênica?",
+    "options": [
+      "Culturas e antibiótico intravenoso de amplo espectro na primeira hora",
+      "Antitérmico isolado e reavaliação ambulatorial em 24 a 48 horas",
+      "Aguardar o resultado das culturas antes de qualquer antibiótico",
+      "Fator estimulador de colônias isolado, sem cobertura antibiótica"
+    ],
+    "correctIndex": 0,
+    "explanation": "Vale o conceito de hora dourada: hemograma completo, duas hemoculturas e painel metabólico, seguidos imediatamente de antibiótico intravenoso de amplo espectro, como cefepima ou piperacilina-tazobactam, antes mesmo dos resultados das culturas. Esperar o exame custa vidas."
+  },
+  {
+    "question": "Diante de dor nas costas em criança com câncer, qual hipótese deve ser assumida até prova em contrário, e como se confirma?",
+    "options": [
+      "Compressão maligna da medula, confirmada por ressonância magnética",
+      "Contratura muscular paravertebral, confirmada por radiografia simples",
+      "Infecção urinária alta com dor lombar, confirmada por urocultura",
+      "Cólica renal por cristais de urato, confirmada por ultrassom renal"
+    ],
+    "correctIndex": 0,
+    "explanation": "Dor nas costas é o sinal precoce da compressão maligna da medula espinhal, presente em cerca de 90% dos casos, antecedendo a fraqueza motora e a disfunção esfincteriana. A ressonância magnética é o padrão-ouro, com sensibilidade em torno de 93%, e o corticoide deve ser iniciado de imediato para preservar a marcha."
+  }
+];
+
+var LETTERS = ['A','B','C','D','E','F'];
+var SHUFFLE = true, LOCK = true;
+
+var S = { view:'home', started:false, finished:false, i:0, order:[], answers:[], open:{}, filter:'all', warn:false };
+
+function esc(s){ return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
+function pad(n){ return String(n).padStart(2,'0'); }
+
+function build(){
+  var qs = QUIZ.map(function(q,id){ return { question:q.question, options:q.options.slice(), correctIndex:q.correctIndex, explanation:q.explanation, image:q.image, imageCaption:q.imageCaption, id:id }; });
+  if (!SHUFFLE) return qs;
+  for (var i=qs.length-1;i>0;i--){ var j=Math.floor(Math.random()*(i+1)); var t=qs[i]; qs[i]=qs[j]; qs[j]=t; }
+  return qs.map(function(q){
+    var correct = q.options[q.correctIndex], o = q.options.slice();
+    for (var i=o.length-1;i>0;i--){ var j=Math.floor(Math.random()*(i+1)); var t=o[i]; o[i]=o[j]; o[j]=t; }
+    q.options = o; q.correctIndex = o.indexOf(correct); return q;
+  });
+}
+
+/* ── ações ─────────────────────────────────────────────────────────────────── */
+var A = {
+  home:      function(){ S.view='home'; S.started=false; S.finished=false; up(0); },
+  resumo:    function(){ S.view='resumo'; up(0); },
+  start:     function(){ var o=build(); S.view='quiz'; S.started=true; S.finished=false; S.i=0; S.order=o;
+                         S.answers=new Array(o.length).fill(null); S.open={}; S.filter='all'; S.warn=false; up(0); },
+  restart:   function(){ A.start(); },
+  go:        function(n){ if(n<0||n>S.order.length-1) return; S.i=n; S.warn=false; render(); },
+  jump:      function(n){ if(S.finished){ S.finished=false; S.i=n; S.warn=false; } else { if(n<0||n>S.order.length-1) return; S.i=n; S.warn=false; } up(0,'smooth'); },
+  pick:      function(n){ if(LOCK && S.answers[S.i]!==null) return; S.answers[S.i]=n; render(); },
+  prev:      function(){ A.go(S.i-1); },
+  next:      function(){ if(S.i<S.order.length-1) A.go(S.i+1); else A.finish(); },
+  finish:    function(){ var b=S.answers.filter(function(a){return a===null}).length;
+                         if(b>0 && !S.warn){ S.warn=true; render(); return; } S.finished=true; S.warn=false; up(0); },
+  force:     function(){ S.finished=true; S.warn=false; up(0); },
+  gotoBlank: function(){ var n=S.answers.findIndex(function(a){return a===null}); if(n>=0) A.go(n); },
+  back:      function(){ S.finished=false; S.warn=false; up(0); },
+  filter:    function(k){ S.filter=k; render(); },
+  toggle:    function(n){ S.open[n]=!S.open[n]; render(); },
+  toggleAll: function(){ var r=reviewList(), all=r.length>0 && r.every(function(x){return S.open[x.idx]});
+                         S.open={}; if(!all) r.forEach(function(x){ S.open[x.idx]=true; }); render(); }
+};
+function up(top, beh){ render(); window.scrollTo({ top: top||0, behavior: beh||'auto' }); }
+
+/* ── header ────────────────────────────────────────────────────────────────── */
+function renderHeader(){
+  var mono = "font-family:'IBM Plex Mono',monospace";
+  var left =
+    '<div style="min-width:0">' +
+      '<div style="'+mono+';font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:#8a8578">'+esc(EYEBROW)+'</div>' +
+      '<h1 style="margin:1px 0 0;font-family:\'Newsreader\',Georgia,serif;font-size:20px;font-weight:500;letter-spacing:-.01em;line-height:1.15">'+esc(TITLE)+'</h1>' +
+    '</div>';
+
+  var right = '';
+  if (S.view === 'quiz' && S.started) {
+    var hit = counts().hit;
+    right = '<div style="display:flex;align-items:center;gap:6px;flex-shrink:0">' +
+              '<span style="'+mono+';font-size:15px;font-weight:600;letter-spacing:-.02em">'+hit+'</span>' +
+              '<span style="'+mono+';font-size:11px;color:#8a8578">/ '+S.order.length+'</span>' +
+            '</div>';
+  } else if (S.view !== 'home') {
+    right = '<button type="button" data-act="home" class="h-line" style="flex-shrink:0;background:none;border:1px solid #ddd8ce;border-radius:9px;padding:7px 13px;'+mono+';font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:#5b6478;cursor:pointer;transition:border-color .15s ease">← Início</button>';
+  }
+
+  var html = '<div style="display:flex;align-items:baseline;justify-content:space-between;gap:12px;margin-bottom:'+(S.view==='quiz'&&S.started?'10px':'2px')+'">'+left+right+'</div>';
+
+  if (S.view === 'quiz' && S.started) {
+    var c = counts();
+    var rail = S.order.map(function(q,n){
+      var a = S.answers[n], cur = n===S.i && !S.finished, bg = '#d3cec4';
+      if (a!==null) bg = (a===q.correctIndex) ? '#2e7d55' : '#c04437';
+      if (cur && a===null) bg = '#121a2b';
+      var st = a===null ? 'em branco' : (a===q.correctIndex ? 'correta' : 'incorreta');
+      return '<button type="button" data-act="jump" data-n="'+n+'" title="Questão '+(n+1)+' — '+st+'" aria-label="Questão '+(n+1)+' — '+st+'" style="flex:1 1 0;min-width:0;background:none;border:0;padding:13px 0;margin:0;cursor:pointer;display:flex;align-items:center;justify-content:center">' +
+             '<span style="display:block;width:100%;border-radius:99px;transition:height .18s ease,background .18s ease,box-shadow .18s ease;height:'+(cur?'17px':'9px')+';background:'+bg+';box-shadow:'+(cur?'0 0 0 3px rgba(18,26,43,.13)':'none')+'"></span></button>';
+    }).join('');
+    html += '<div><div style="display:flex;align-items:center;gap:3px">'+rail+'</div>' +
+            '<div style="display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:-2px">' +
+              '<div style="'+mono+';font-size:11px;letter-spacing:.04em;color:#5b6478">Questão '+pad(S.i+1)+' / '+S.order.length+'</div>' +
+              '<div style="display:flex;align-items:center;gap:12px;'+mono+';font-size:10.5px;color:#8a8578">' +
+                dot('#2e7d55',c.hit)+dot('#c04437',c.miss)+dot('#d3cec4',c.blank) +
+              '</div></div></div>';
+  }
+  document.getElementById('hdr').innerHTML = html;
+}
+function dot(color,n){ return '<span style="display:flex;align-items:center;gap:5px"><span style="width:7px;height:7px;border-radius:99px;background:'+color+';display:block"></span>'+n+'</span>'; }
+
+function counts(){
+  var hit=0, miss=0, blank=0;
+  S.answers.forEach(function(a,n){
+    if (a===null) blank++;
+    else if (S.order[n] && a===S.order[n].correctIndex) hit++;
+    else miss++;
+  });
+  return { hit:hit, miss:miss, blank:blank, total:S.order.length };
+}
+
+/* ── tela inicial ──────────────────────────────────────────────────────────── */
+function renderHome(){
+  var mono = "font-family:'IBM Plex Mono',monospace";
+  var secoes = (document.getElementById('resumoSrc').textContent.match(/<h2/g)||[]).length;
+  var cell = function(v,l){
+    return '<div style="background:#faf9f6;padding:16px 14px">' +
+      '<div style="'+mono+';font-size:22px;font-weight:500;letter-spacing:-.03em">'+v+'</div>' +
+      '<div style="'+mono+';font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:#8a8578;margin-top:3px">'+l+'</div></div>';
+  };
+  var card = function(act,tag,titulo,desc,cta){
+    return '<button type="button" data-act="'+act+'" class="h-card" style="display:flex;flex-direction:column;align-items:flex-start;gap:0;text-align:left;background:#fff;border:1px solid #e4e0d8;border-radius:18px;padding:24px 22px;cursor:pointer;transition:border-color .16s ease,transform .14s ease;box-shadow:0 1px 2px rgba(18,26,43,.04),0 12px 28px -20px rgba(18,26,43,.18)">' +
+      '<div style="'+mono+';font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:#2b57cc;margin-bottom:12px">'+tag+'</div>' +
+      '<div style="font-family:\'Newsreader\',Georgia,serif;font-size:26px;font-weight:500;letter-spacing:-.02em;line-height:1.15;margin-bottom:8px">'+titulo+'</div>' +
+      '<div style="font-size:14px;line-height:1.6;color:#5b6478;margin-bottom:18px;text-wrap:pretty">'+desc+'</div>' +
+      '<div style="'+mono+';font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:#121a2b">'+cta+'</div></button>';
+  };
+
+  document.getElementById('stage').innerHTML =
+    '<section style="padding:56px 0 0;animation:qFade .3s ease">' +
+      '<div style="'+mono+';font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:#2b57cc;margin-bottom:16px">Material de revisão</div>' +
+      '<h2 style="font-family:\'Newsreader\',Georgia,serif;font-size:40px;line-height:1.08;font-weight:400;letter-spacing:-.025em;margin:0 0 18px;text-wrap:pretty">'+esc(SUBTITLE)+'</h2>' +
+      '<p style="font-size:15.5px;line-height:1.65;color:#5b6478;margin:0 0 30px;max-width:52ch;text-wrap:pretty">'+esc(INTRO)+'</p>' +
+      '<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(108px,1fr));gap:1px;background:#e4e0d8;border:1px solid #e4e0d8;border-radius:14px;overflow:hidden;margin-bottom:32px">' +
+        cell(QUIZ.length,'Questões') + cell(secoes,'Seções') + cell('~'+Math.round(QUIZ.length*0.75),'Minutos') +
+      '</div>' +
+      '<div class="home-grid" style="display:grid;grid-template-columns:1fr 1fr;gap:12px">' +
+        card('start','Praticar','Quiz', QUIZ.length+' questões de múltipla escolha, com explicação assim que você responde e gabarito comentado no fim.','Começar →') +
+        card('resumo','Estudar','Resumo','O conteúdo da aula em texto corrido, organizado em '+secoes+' seções para leitura antes da prova.','Ler →') +
+      '</div>' +
+      '<div style="margin-top:26px;display:flex;flex-wrap:wrap;gap:8px 18px;'+mono+';font-size:11px;color:#8a8578">' +
+        '<span>← →&nbsp; navegar</span><span>1–'+maxOpts()+'&nbsp; responder</span><span>Enter&nbsp; avançar</span></div>' +
+    '</section>';
+}
+function maxOpts(){ return QUIZ.reduce(function(m,q){ return Math.max(m,q.options.length); },0); }
+
+/* ── resumo ────────────────────────────────────────────────────────────────── */
+function renderResumo(){
+  document.getElementById('stage').innerHTML =
+    '<section style="padding:34px 0 0;animation:qFade .3s ease">' +
+      '<div style="font-family:\'IBM Plex Mono\',monospace;font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:#2b57cc;margin-bottom:14px">Resumo</div>' +
+      '<div class="rsm">' + document.getElementById('resumoSrc').textContent + '</div>' +
+      '<div style="display:flex;flex-wrap:wrap;gap:9px;margin-top:38px;padding-top:24px;border-top:1px solid #e4e0d8">' +
+        '<button type="button" data-act="start" class="h-darkflat" style="background:#121a2b;color:#f5f3ef;border:0;border-radius:11px;padding:13px 24px;font-size:14px;font-weight:500;cursor:pointer;transition:background .16s ease">Fazer o quiz →</button>' +
+        '<button type="button" data-act="home" class="h-line" style="background:none;border:1px solid #ddd8ce;border-radius:11px;padding:13px 22px;font-size:14px;cursor:pointer;transition:border-color .15s ease">Voltar ao início</button>' +
+      '</div></section>';
+}
+
+/* imagem da questao — data URI ja resolvida pelo montar_quiz.py */
+function figura(q, cls){
+  if (!q.image) return '';
+  return '<figure class="fig'+(cls?' '+cls:'')+'"><img src="'+q.image+'" alt="'+esc(q.imageCaption||'Imagem da questão')+'">' +
+         (q.imageCaption ? '<figcaption>'+esc(q.imageCaption)+'</figcaption>' : '') + '</figure>';
+}
+
+/* ── questão ───────────────────────────────────────────────────────────────── */
+function renderQuestion(){
+  var mono = "font-family:'IBM Plex Mono',monospace";
+  var q = S.order[S.i], ans = S.answers[S.i], reveal = ans !== null;
+
+  var status = 'Não respondida', sColor = '#8a8578';
+  if (reveal) { var ok = ans===q.correctIndex; status = ok?'Você acertou':'Você errou'; sColor = ok?'#2e7d55':'#c04437'; }
+
+  var opts = q.options.map(function(text,n){
+    var isC = n===q.correctIndex, isMine = n===ans;
+    var bd='#e4e0d8', bg='#fff', fg='#121a2b', bBg='#f2efe9', bFg='#8a8578', mark='', mColor='', op='1', hbd='#2b57cc';
+    if (reveal) {
+      op = (isC||isMine) ? '1' : '.62';
+      if (isC)               { bd='#8fc7a7'; bg='#eef7f1'; fg='#1f5c3e'; bBg='#2e7d55'; bFg='#fff'; mark='✓'; mColor='#2e7d55'; }
+      if (isMine && !isC)    { bd='#e0a49a'; bg='#fdf0ee'; fg='#8f2f25'; bBg='#c04437'; bFg='#fff'; mark='✕'; mColor='#c04437'; }
+    } else if (isMine)       { bd='#121a2b'; bg='#f7f6f2'; bBg='#121a2b'; bFg='#f5f3ef'; }
+    var locked = reveal && LOCK;
+    return '<button type="button" data-act="pick" data-n="'+n+'" class="h-opt'+(locked?' locked':'')+'" style="--hbd:'+hbd+';display:flex;gap:13px;align-items:flex-start;width:100%;text-align:left;padding:14px 15px;border-radius:13px;font-size:15px;line-height:1.5;transition:border-color .15s ease,background .15s ease,transform .12s ease;border:1.5px solid '+bd+';background:'+bg+';color:'+fg+';cursor:'+(locked?'default':'pointer')+';opacity:'+op+'">' +
+      '<span style="flex-shrink:0;width:24px;height:24px;border-radius:7px;display:flex;align-items:center;justify-content:center;'+mono+';font-size:11.5px;font-weight:600;margin-top:1px;background:'+bBg+';color:'+bFg+'">'+LETTERS[n]+'</span>' +
+      '<span style="flex:1;min-width:0;text-wrap:pretty">'+esc(text)+'</span>' +
+      (mark ? '<span style="flex-shrink:0;'+mono+';font-size:14px;font-weight:600;margin-top:1px;color:'+mColor+'">'+mark+'</span>' : '') +
+      '</button>';
+  }).join('');
+
+  var expl = reveal ? '<div style="margin-top:20px;padding:16px 18px;background:#f7f6f2;border-left:2.5px solid #2b57cc;border-radius:0 12px 12px 0;animation:qFade .26s ease">' +
+      '<div style="'+mono+';font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:#2b57cc;margin-bottom:8px">Por quê</div>' +
+      '<p style="margin:0;font-size:14.5px;line-height:1.68;color:#39404f;text-wrap:pretty">'+esc(q.explanation)+'</p></div>' : '';
+
+  var blank = counts().blank;
+  var warn = S.warn ? '<div style="margin-top:14px;padding:15px 17px;background:#fdf7e9;border:1px solid #e8d5a3;border-radius:14px;animation:qFade .22s ease">' +
+      '<p style="margin:0 0 12px;font-size:14px;line-height:1.55;color:#6b5620">'+blank+(blank===1?' questão ainda está em branco.':' questões ainda estão em branco.')+' Você pode voltar nelas ou finalizar assim mesmo.</p>' +
+      '<div style="display:flex;flex-wrap:wrap;gap:8px">' +
+        '<button type="button" data-act="gotoBlank" style="background:#121a2b;color:#f5f3ef;border:0;border-radius:9px;padding:9px 16px;font-size:13px;font-weight:500;cursor:pointer">Ir para a 1ª em branco</button>' +
+        '<button type="button" data-act="force" style="background:none;color:#6b5620;border:1px solid #e8d5a3;border-radius:9px;padding:9px 16px;font-size:13px;cursor:pointer">Finalizar assim mesmo</button>' +
+      '</div></div>' : '';
+
+  var last = S.i === S.order.length-1;
+  var early = !last && (S.order.length - blank) > 0;
+
+  document.getElementById('stage').innerHTML =
+    '<section style="padding:26px 0 0">' +
+      '<article style="background:#fff;border:1px solid #e4e0d8;border-radius:18px;padding:26px 22px 24px;box-shadow:0 1px 2px rgba(18,26,43,.04),0 12px 28px -18px rgba(18,26,43,.18)">' +
+        '<div style="display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:14px">' +
+          '<div style="'+mono+';font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:#2b57cc">Questão '+pad(S.i+1)+'</div>' +
+          '<div style="'+mono+';font-size:10.5px;letter-spacing:.06em;color:'+sColor+'">'+status+'</div>' +
+        '</div>' +
+        '<h2 style="font-family:\'Newsreader\',Georgia,serif;font-size:22px;line-height:1.42;font-weight:400;letter-spacing:-.012em;margin:0 0 22px;text-wrap:pretty">'+esc(q.question)+'</h2>' +
+        figura(q, 'qfig') +
+        '<div style="display:flex;flex-direction:column;gap:9px">'+opts+'</div>' + expl +
+      '</article>' + warn +
+      '<div style="display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:18px">' +
+        '<button type="button" data-act="prev" class="h-line" style="background:none;border:1px solid #ddd8ce;border-radius:11px;padding:12px 18px;font-size:14px;cursor:pointer;transition:border-color .15s ease,color .15s ease;color:'+(S.i===0?'#c4bfb4':'#121a2b')+';pointer-events:'+(S.i===0?'none':'auto')+'">← Anterior</button>' +
+        '<div style="display:flex;align-items:center;gap:8px">' +
+          (early ? '<button type="button" data-act="finish" class="h-ink" style="background:none;border:0;padding:12px 6px;'+mono+';font-size:11.5px;letter-spacing:.06em;text-transform:uppercase;color:#8a8578;cursor:pointer;text-decoration:underline;text-underline-offset:3px">Finalizar</button>' : '') +
+          '<button type="button" data-act="next" class="h-darkflat" style="background:#121a2b;color:#f5f3ef;border:0;border-radius:11px;padding:12px 22px;font-size:14px;font-weight:500;cursor:pointer;transition:background .16s ease">'+(last?'Finalizar':'Próxima →')+'</button>' +
+        '</div></div></section>';
+}
+
+/* ── resultado + gabarito comentado ────────────────────────────────────────── */
+function reviewList(){
+  return S.order.map(function(q,n){
+    var a = S.answers[n], ok = a!==null && a===q.correctIndex;
+    return { idx:n, ok:ok, blank:a===null, q:q, a:a };
+  }).filter(function(r){
+    return S.filter==='all' || (S.filter==='wrong'&&!r.ok&&!r.blank) || (S.filter==='right'&&r.ok) || (S.filter==='blank'&&r.blank);
+  });
+}
+
+function renderResult(){
+  var mono = "font-family:'IBM Plex Mono',monospace";
+  var c = counts(), pct = c.total ? Math.round(c.hit/c.total*100) : 0;
+
+  var title='Precisa revisar', msg='Releia o material com atenção e refaça o quiz — as explicações abaixo cobrem cada erro.';
+  if (pct>=90)      { title='Domínio sólido';   msg='Desempenho excelente. Confira as explicações das que escaparam e siga em frente.'; }
+  else if (pct>=70) { title='Bom desempenho';   msg='Base consistente. Revise os pontos errados abaixo para fechar as lacunas.'; }
+  else if (pct>=50) { title='Meio do caminho';  msg='Você acertou o essencial, mas há lacunas. Comece pelo filtro de erradas.'; }
+
+  var stat = function(v,l,color){
+    return '<div style="background:#faf9f6;padding:14px 10px">' +
+      '<div style="'+mono+';font-size:19px;font-weight:500;color:'+color+'">'+v+'</div>' +
+      '<div style="'+mono+';font-size:9.5px;letter-spacing:.09em;text-transform:uppercase;color:#8a8578;margin-top:2px">'+l+'</div></div>';
+  };
+
+  var fdefs = [['all','Todas',c.total],['wrong','Erradas',c.miss],['right','Certas',c.hit],['blank','Em branco',c.blank]];
+  var filters = fdefs.map(function(f){
+    var on = S.filter===f[0];
+    return '<button type="button" data-act="filter" data-k="'+f[0]+'" class="h-line" style="border-radius:99px;padding:8px 14px;font-size:13px;cursor:pointer;transition:all .15s ease;border:1px solid '+(on?'#121a2b':'#ddd8ce')+';background:'+(on?'#121a2b':'transparent')+';color:'+(on?'#f5f3ef':'#5b6478')+'">'+f[1]+' '+f[2]+'</button>';
+  }).join('');
+
+  var list = reviewList();
+  var allOpen = list.length>0 && list.every(function(r){ return S.open[r.idx]; });
+
+  var cards = list.map(function(r){
+    var numBg='#f0ede7', numFg='#8a8578';
+    if (!r.blank) { if (r.ok) { numBg='#e3f0e8'; numFg='#1f5c3e'; } else { numBg='#fbe6e2'; numFg='#8f2f25'; } }
+    var open = !!S.open[r.idx];
+    var body = '';
+    if (open) {
+      var opts = r.q.options.map(function(text,n){
+        var isC = n===r.q.correctIndex, isMine = n===r.a;
+        var bd='#eeebe4', bg='#fbfaf8', fg='#5b6478', bBg='#f0ede7', bFg='#8a8578', tag='', tBg='', tFg='';
+        if (isC)            { bd='#bcdcc9'; bg='#eef7f1'; fg='#1f5c3e'; bBg='#2e7d55'; bFg='#fff'; tag='Correta'; tBg='#d9ede1'; tFg='#1f5c3e'; }
+        if (isMine && !isC) { bd='#eec4bd'; bg='#fdf0ee'; fg='#8f2f25'; bBg='#c04437'; bFg='#fff'; tag='Sua resposta'; tBg='#f7ddd8'; tFg='#8f2f25'; }
+        if (isMine && isC)  { tag='Sua resposta ✓'; }
+        return '<div style="display:flex;gap:11px;align-items:flex-start;padding:11px 13px;border-radius:11px;font-size:14px;line-height:1.5;border:1px solid '+bd+';background:'+bg+';color:'+fg+'">' +
+          '<span style="flex-shrink:0;width:21px;height:21px;border-radius:6px;display:flex;align-items:center;justify-content:center;'+mono+';font-size:10.5px;font-weight:600;background:'+bBg+';color:'+bFg+'">'+LETTERS[n]+'</span>' +
+          '<span style="flex:1;min-width:0;text-wrap:pretty">'+esc(text)+'</span>' +
+          (tag ? '<span style="flex-shrink:0;'+mono+';font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;padding:3px 7px;border-radius:6px;margin-top:1px;background:'+tBg+';color:'+tFg+'">'+tag+'</span>' : '') +
+          '</div>';
+      }).join('');
+      body = '<div style="padding:2px 15px 18px;animation:qDrawer .2s ease">' +
+        '<div style="height:1px;background:#eeebe4;margin:0 0 16px"></div>' +
+        '<p style="font-family:\'Newsreader\',Georgia,serif;font-size:18px;line-height:1.5;margin:0 0 16px;text-wrap:pretty">'+esc(r.q.question)+'</p>' +
+        figura(r.q) +
+        '<div style="display:flex;flex-direction:column;gap:7px">'+opts+'</div>' +
+        '<div style="margin-top:16px;padding:14px 16px;background:#f7f6f2;border-left:2.5px solid #2b57cc;border-radius:0 11px 11px 0">' +
+          '<div style="'+mono+';font-size:9.5px;letter-spacing:.16em;text-transform:uppercase;color:#2b57cc;margin-bottom:7px">Por quê</div>' +
+          '<p style="margin:0;font-size:14px;line-height:1.65;color:#39404f;text-wrap:pretty">'+esc(r.q.explanation)+'</p></div>' +
+        '<button type="button" data-act="jump" data-n="'+r.idx+'" style="margin-top:14px;background:none;border:0;padding:0;'+mono+';font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:#2b57cc;cursor:pointer;text-decoration:underline;text-underline-offset:3px">Abrir no quiz →</button></div>';
+    }
+    return '<div style="background:#fff;border:1px solid '+(open?'#c9c3b6':'#e4e0d8')+';border-radius:14px;overflow:hidden;transition:border-color .15s ease">' +
+      '<button type="button" data-act="toggle" data-n="'+r.idx+'" style="display:flex;align-items:center;gap:12px;width:100%;text-align:left;background:none;border:0;padding:14px 15px;cursor:pointer">' +
+        '<span style="flex-shrink:0;width:28px;height:28px;border-radius:8px;display:flex;align-items:center;justify-content:center;'+mono+';font-size:12px;font-weight:600;background:'+numBg+';color:'+numFg+'">'+pad(r.idx+1)+'</span>' +
+        '<span style="flex:1;min-width:0;font-size:14px;line-height:1.45;color:#39404f;overflow:hidden;text-overflow:ellipsis;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical">'+esc(r.q.question)+'</span>' +
+        '<span style="flex-shrink:0;'+mono+';font-size:16px;color:#8a8578;width:16px;text-align:center">'+(open?'−':'+')+'</span>' +
+      '</button>' + body + '</div>';
+  }).join('');
+
+  document.getElementById('stage').innerHTML =
+    '<section style="padding:34px 0 0;animation:qFade .3s ease">' +
+      '<div style="'+mono+';font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:#2b57cc;margin-bottom:14px">Resultado</div>' +
+      '<h2 style="font-family:\'Newsreader\',Georgia,serif;font-size:36px;line-height:1.12;font-weight:400;letter-spacing:-.025em;margin:0 0 8px">'+title+'</h2>' +
+      '<p style="font-size:15px;line-height:1.6;color:#5b6478;margin:0 0 24px;max-width:48ch;text-wrap:pretty">'+msg+'</p>' +
+      '<div style="height:8px;border-radius:99px;background:#e4e0d8;overflow:hidden;margin-bottom:10px">' +
+        '<div style="height:100%;border-radius:99px;background:#121a2b;transition:width .7s cubic-bezier(.22,1,.36,1);width:'+pct+'%"></div></div>' +
+      '<div style="display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:#e4e0d8;border:1px solid #e4e0d8;border-radius:14px;overflow:hidden;margin-bottom:34px">' +
+        stat(c.hit,'Certas','#2e7d55')+stat(c.miss,'Erradas','#c04437')+stat(c.blank,'Branco','#8a8578')+stat(pct+'%','Aproveit.','#2b57cc') +
+      '</div>' +
+      '<div style="display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-bottom:14px">' +
+        '<h3 style="font-family:\'Newsreader\',Georgia,serif;font-size:22px;font-weight:500;letter-spacing:-.015em;margin:0">Gabarito comentado</h3>' +
+        '<button type="button" data-act="toggleAll" class="h-ink" style="background:none;border:0;padding:6px 0;'+mono+';font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:#5b6478;cursor:pointer;text-decoration:underline;text-underline-offset:3px">'+(allOpen?'Recolher tudo':'Expandir tudo')+'</button>' +
+      '</div>' +
+      '<div style="display:flex;gap:7px;flex-wrap:wrap;margin-bottom:16px">'+filters+'</div>' +
+      '<div style="display:flex;flex-direction:column;gap:8px">'+cards+'</div>' +
+      (list.length===0 ? '<div style="padding:38px 16px;text-align:center;color:#8a8578;font-size:14px;border:1px dashed #ddd8ce;border-radius:14px">Nenhuma questão neste filtro.</div>' : '') +
+      '<div style="display:flex;flex-wrap:wrap;gap:9px;margin-top:28px;padding-top:24px;border-top:1px solid #e4e0d8">' +
+        '<button type="button" data-act="restart" class="h-darkflat" style="background:#121a2b;color:#f5f3ef;border:0;border-radius:11px;padding:13px 24px;font-size:14px;font-weight:500;cursor:pointer;transition:background .16s ease">Refazer o quiz</button>' +
+        '<button type="button" data-act="back" class="h-line" style="background:none;border:1px solid #ddd8ce;border-radius:11px;padding:13px 22px;font-size:14px;cursor:pointer;transition:border-color .15s ease">Voltar às questões</button>' +
+        '<button type="button" data-act="resumo" class="h-line" style="background:none;border:1px solid #ddd8ce;border-radius:11px;padding:13px 22px;font-size:14px;cursor:pointer;transition:border-color .15s ease">Ler o resumo</button>' +
+      '</div></section>';
+}
+
+/* ── render + eventos ──────────────────────────────────────────────────────── */
+function render(){
+  renderHeader();
+  if (S.view === 'home')        renderHome();
+  else if (S.view === 'resumo') renderResumo();
+  else if (S.finished)          renderResult();
+  else                          renderQuestion();
+}
+
+/* lightbox: clique em qualquer figura amplia */
+document.addEventListener('click', function(e){
+  var lb = document.getElementById('lb');
+  if (e.target.closest('#lb')) { lb.className = ''; return; }
+  var img = e.target.closest('.fig img');
+  if (img) { lb.firstElementChild.src = img.src; lb.className = 'on'; }
+});
+window.addEventListener('keydown', function(e){
+  if (e.key === 'Escape') document.getElementById('lb').className = '';
+});
+
+document.addEventListener('click', function(e){
+  var b = e.target.closest('[data-act]'); if (!b) return;
+  var act = b.getAttribute('data-act'), n = parseInt(b.getAttribute('data-n'),10), k = b.getAttribute('data-k');
+  if (act==='pick'||act==='jump'||act==='toggle') A[act](n);
+  else if (act==='filter') A.filter(k);
+  else if (A[act]) A[act]();
+});
+
+window.addEventListener('keydown', function(e){
+  if (S.view!=='quiz' || !S.started || S.finished) return;
+  if (e.metaKey||e.ctrlKey||e.altKey) return;
+  if (e.key==='ArrowRight')     { e.preventDefault(); A.go(S.i+1); }
+  else if (e.key==='ArrowLeft') { e.preventDefault(); A.go(S.i-1); }
+  else if (e.key==='Enter')     { e.preventDefault(); A.next(); }
+  else if (/^[1-6]$/.test(e.key)) {
+    var n = parseInt(e.key,10)-1;
+    if (n < S.order[S.i].options.length) A.pick(n);
+  }
+});
+
+render();
+</script>
+</body>
+</html>

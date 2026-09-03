@@ -1,0 +1,440 @@
+{
+  "titulo": "Distopia Genital",
+  "eyebrow": "Ginecologia e Obstetrícia · Uroginecologia",
+  "subtitulo": "Prolapso dos órgãos pélvicos: suporte, compartimentos, POP-Q e tratamento",
+  "intro": "Material sobre distopia genital: definição e epidemiologia, fatores de risco, anatomia do suporte pélvico e níveis de sustentação, prolapsos por compartimento, rotura perineal, quantificação pelo POP-Q e Baden-Walker, e as opções conservadoras e cirúrgicas de tratamento.",
+  "questoes": [
+    {
+      "question": "O que caracteriza a distopia genital?",
+      "options": [
+        "Deslocamento caudal das vísceras pélvicas em direção ao hiato genital",
+        "Deslocamento cranial das vísceras pélvicas em direção ao abdome",
+        "Retroversão uterina fixa por aderências do fundo de saco posterior",
+        "Dilatação anormal do canal cervical com exteriorização do endométrio"
+      ],
+      "correctIndex": 0,
+      "explanation": "A distopia genital é o deslocamento das vísceras no sentido caudal, em direção ao hiato genital. Decorre do desequilíbrio entre as forças que mantêm os órgãos pélvicos em posição e aquelas que tendem a impeli-los para fora da pelve. Envolve o descenso da parede vaginal anterior e/ou posterior, do ápice (colo/útero) ou da cúpula vaginal após histerectomia."
+    },
+    {
+      "question": "A cistocele corresponde ao prolapso de qual estrutura?",
+      "options": [
+        "Parede vaginal anterior, com descida da bexiga",
+        "Parede vaginal posterior, com descida do reto",
+        "Ápice vaginal, com descida da cúpula vaginal",
+        "Fundo de saco, com descida de alças intestinais"
+      ],
+      "correctIndex": 0,
+      "explanation": "A cistocele é o prolapso do compartimento anterior: a parede vaginal anterior desce arrastando a bexiga. É o defeito mais frequente, porque a parede vaginal anterior é a mais comumente acometida no prolapso de órgãos pélvicos."
+    },
+    {
+      "question": "Mulher de 68 anos refere sensação de bola na vagina e dificuldade para evacuar. Ao exame há abaulamento da parede vaginal posterior. Qual o diagnóstico?",
+      "options": [
+        "Retocele, por defeito do compartimento posterior",
+        "Cistocele, por defeito do compartimento anterior",
+        "Enterocele, por defeito do compartimento apical",
+        "Uretrocele, por defeito do compartimento distal"
+      ],
+      "correctIndex": 0,
+      "explanation": "A retocele é o prolapso da parede vaginal posterior, com protrusão do reto. O quadro típico reúne sensação de vagina larga, sensação de bola na vagina, dificuldade evacuatória, constipação crônica e peso ou pressão na vagina e no períneo."
+    },
+    {
+      "question": "Quais prolapsos pertencem ao compartimento apical?",
+      "options": [
+        "Prolapso uterino, de cúpula vaginal e enterocele",
+        "Cistocele, uretrocele e defeito paravaginal",
+        "Retocele, rotura perineal e defeito distal",
+        "Cistocele central, retocele e defeito lateral"
+      ],
+      "correctIndex": 0,
+      "explanation": "Pensando por compartimentos: o apical reúne o prolapso uterino, o prolapso de cúpula vaginal (pós-histerectomia) e a enterocele. O anterior corresponde à cistocele, o posterior à retocele, e o distal à insuficiência do corpo perineal associada à retocele."
+    },
+    {
+      "question": "Qual a faixa etária de pico de incidência do prolapso de órgãos pélvicos?",
+      "options": [
+        "Entre 70 e 79 anos",
+        "Entre 30 e 39 anos",
+        "Entre 40 e 49 anos",
+        "Entre 50 e 59 anos"
+      ],
+      "correctIndex": 0,
+      "explanation": "O pico de incidência do prolapso de órgãos pélvicos ocorre entre 70 e 79 anos, e a condição afeta cerca de 50% das mulheres idosas. Cerca de 25% das mulheres norte-americanas apresentam alguma desordem do assoalho pélvico, incluindo prolapso, incontinência urinária ou fecal."
+    },
+    {
+      "question": "Qual parede vaginal é mais frequentemente acometida no prolapso de órgãos pélvicos?",
+      "options": [
+        "A parede vaginal anterior",
+        "A parede vaginal posterior",
+        "O ápice vaginal isolado",
+        "O terço distal posterior"
+      ],
+      "correctIndex": 0,
+      "explanation": "A parede vaginal anterior é a mais frequentemente afetada, o que explica a alta prevalência da cistocele. O estádio 2 é o de maior frequência, e nos Estados Unidos são realizadas cerca de 400.000 cirurgias por ano para correção de prolapso."
+    },
+    {
+      "question": "Qual fator de risco para prolapso genital está diretamente ligado ao trauma obstétrico?",
+      "options": [
+        "Parto vaginal, sobretudo com uso de fórceps",
+        "Cesárea eletiva antes do trabalho de parto",
+        "Amamentação prolongada por mais de um ano",
+        "Uso de contraceptivo hormonal combinado"
+      ],
+      "correctIndex": 0,
+      "explanation": "O parto vaginal é o fator de risco mais associado ao prolapso, e o parto instrumentado com fórceps agrava o risco. O trauma do parto produz lesão muscular direta, lesão fascial e compressão ou estiramento nervoso, comprometendo tanto a sustentação quanto a inervação do assoalho pélvico. Multiparidade, idade acima de 60 anos e cirurgia prévia para prolapso completam o quadro."
+    },
+    {
+      "question": "Quais doenças hereditárias do tecido conjuntivo aumentam o risco de prolapso genital?",
+      "options": [
+        "Síndromes de Ehlers-Danlos e de Marfan",
+        "Síndromes de Turner e de Kallmann",
+        "Síndromes de Sheehan e de Asherman",
+        "Síndromes de Rokitansky e de Morris"
+      ],
+      "correctIndex": 0,
+      "explanation": "Desordens do colágeno e da elastina, como a síndrome de Ehlers-Danlos, a hipermobilidade articular e a síndrome de Marfan, predispõem ao prolapso por fragilidade do tecido conjuntivo endopélvico. Menopausa com hipoestrogenismo, história familiar e etnia também compõem o perfil de risco."
+    },
+    {
+      "question": "Quais condições elevam a pressão intra-abdominal e favorecem o prolapso genital?",
+      "options": [
+        "Obesidade, obstipação e tosse crônica",
+        "Anemia, hipotireoidismo e astenia",
+        "Hipotensão, bradicardia e síncope",
+        "Osteoporose, artralgia e escoliose"
+      ],
+      "correctIndex": 0,
+      "explanation": "Obesidade, obstipação intestinal e tosse crônica (DPOC) aumentam de forma sustentada a pressão intra-abdominal, sobrecarregando o assoalho pélvico. Recém-nascido de peso elevado em parto anterior atua pelo mesmo mecanismo de sobrecarga somado ao trauma do parto."
+    },
+    {
+      "question": "Na analogia dos dois pilares do suporte pélvico, o que corresponde aos cabos que trabalham sob tensão?",
+      "options": [
+        "As fáscias e os ligamentos pélvicos",
+        "A musculatura do assoalho pélvico",
+        "Os ossos e as articulações da pelve",
+        "A mucosa e a submucosa vaginal"
+      ],
+      "correctIndex": 0,
+      "explanation": "Fáscias e ligamentos funcionam como cabos sob tensão (suspensão), enquanto a musculatura ativa do assoalho pélvico funciona como pilares de apoio (sustentação). Quando os cabos falham, a carga recai sobre os pilares musculares, e a falha combinada dos dois sistemas produz o prolapso.",
+      "image": "s22i1",
+      "imageCaption": "Suspensão e sustentação como cabos e pilares"
+    },
+    {
+      "question": "Quais músculos compõem o músculo elevador do ânus?",
+      "options": [
+        "Pubococcígeo e ileococcígeo",
+        "Bulboesponjoso e isquiocavernoso",
+        "Transverso profundo e piriforme",
+        "Obturador interno e psoas maior"
+      ],
+      "correctIndex": 0,
+      "explanation": "O elevador do ânus é formado pelos feixes pubococcígeo e ileococcígeo e, com o músculo coccígeo e o arco tendíneo da pelve, constitui o aparelho de sustentação do assoalho pélvico. Esses músculos mantêm o hiato genital fechado e geram forças de elevação que impedem a descida dos órgãos pélvicos."
+    },
+    {
+      "question": "Quais estruturas fazem parte da fáscia endopélvica?",
+      "options": [
+        "Paracolpo, septo retovaginal e anel pericervical",
+        "Ligamento redondo, largo e infundibulopélvico",
+        "Membrana obturadora, psoas e ilíaco interno",
+        "Corpo perineal, hímen e bulbo vestibular"
+      ],
+      "correctIndex": 0,
+      "explanation": "A fáscia endopélvica inclui os paramétrios (ligamentos pubovesicouterinos, transversos e uterossacros), o paracolpo, o septo retovaginal, a fáscia vesicovaginal e o anel pericervical. Trata-se de lâminas de tecido conjuntivo fibroso entre as vísceras, as paredes musculares e o assoalho da pelve."
+    },
+    {
+      "question": "Quais estruturas prolapsam quando há falha do nível I de suporte vaginal?",
+      "options": [
+        "Útero, cúpula vaginal e alças intestinais",
+        "Paredes vaginais anterior e posterior",
+        "Corpo perineal e esfíncter anal externo",
+        "Uretra distal e ligamentos periuretrais"
+      ],
+      "correctIndex": 0,
+      "explanation": "O nível I é o suporte apical, sustentado pelos ligamentos uterossacros e cardinais. Sua falha permite o prolapso uterino, o prolapso de cúpula vaginal e a enterocele, com herniação de alças intestinais pelo fundo de saco."
+    },
+    {
+      "question": "A falha do nível II de suporte vaginal produz quais prolapsos?",
+      "options": [
+        "Cistocele e retocele, das paredes vaginais",
+        "Prolapso uterino e de cúpula vaginal",
+        "Enterocele e prolapso do fundo de saco",
+        "Rotura perineal e hipermobilidade uretral"
+      ],
+      "correctIndex": 0,
+      "explanation": "O nível II corresponde ao suporte lateral das paredes vaginais, ancorado no arco tendíneo da fáscia pélvica. Sua falha gera prolapso das paredes vaginais anterior e posterior, ou seja, cistocele e retocele."
+    },
+    {
+      "question": "Quais estruturas são acometidas na falha do nível III de suporte vaginal?",
+      "options": [
+        "Corpo perineal e fáscia periuretral",
+        "Ligamentos uterossacros e cardinais",
+        "Cúpula vaginal e fundo de saco",
+        "Arco tendíneo e músculo coccígeo"
+      ],
+      "correctIndex": 0,
+      "explanation": "O nível III é o suporte distal, correspondente à fusão da vagina com o corpo perineal, a uretra e o períneo. Sua falha produz insuficiência do corpo perineal e hipermobilidade uretral, por comprometimento dos ligamentos e das fáscias periuretrais."
+    },
+    {
+      "question": "Qual lesão anatômica origina a cistocele?",
+      "options": [
+        "Ruptura ou desinserção da fáscia vesicovaginal",
+        "Ruptura do septo retovaginal e do corpo perineal",
+        "Alongamento dos ligamentos uterossacros",
+        "Herniação do peritônio do fundo de saco"
+      ],
+      "correctIndex": 0,
+      "explanation": "A cistocele decorre da lesão da fáscia vesicovaginal, seja por ruptura da própria fáscia (defeito central), seja por destacamento do arco tendíneo da pelve (defeito lateral ou paravaginal). Essa distinção define a técnica cirúrgica de correção."
+    },
+    {
+      "question": "A protrusão exteriorizada pelo intróito mostrada na figura envolve a parede vaginal anterior. A que prolapso ela corresponde?",
+      "options": [
+        "Cistocele — descida da bexiga",
+        "Retocele — descida do reto",
+        "Enterocele — descida de alças",
+        "Histerocele — descida do útero"
+      ],
+      "correctIndex": 0,
+      "explanation": "O abaulamento da parede vaginal anterior exteriorizando-se pelo intróito caracteriza a cistocele, com descida da bexiga. O prolapso da parede posterior seria retocele, e a herniação de alças pelo fundo de saco de Douglas, enterocele.",
+      "image": "s82i1",
+      "imageCaption": "Prolapso da parede vaginal anterior"
+    },
+    {
+      "question": "Qual a principal limitação da colporrafia anterior clássica?",
+      "options": [
+        "Não corrige o defeito lateral paravaginal",
+        "Não corrige o defeito central da fáscia",
+        "Não permite ressecção da mucosa vaginal",
+        "Não pode ser realizada por via vaginal"
+      ],
+      "correctIndex": 0,
+      "explanation": "A colporrafia anterior consiste na plicatura medial da fáscia vesicovaginal com ressecção do excesso de mucosa vaginal, tratando portanto o defeito central. Não corrige o defeito lateral (paravaginal) e traz risco de dispareunia, fibrose e dor no pós-operatório."
+    },
+    {
+      "question": "Como se corrige o defeito lateral (paravaginal) da cistocele por via vaginal?",
+      "options": [
+        "Fixação da fáscia ao arco tendíneo da pelve",
+        "Plicatura medial da fáscia vesicovaginal",
+        "Fixação do útero ao ligamento sacroespinhoso",
+        "Sutura em bolsa do fundo de saco de Douglas"
+      ],
+      "correctIndex": 0,
+      "explanation": "No defeito lateral houve destacamento da fáscia do arco tendíneo da pelve; a correção reancora a fáscia nesse arco, por via vaginal ou abdominal. A plicatura medial trata apenas o defeito central e não resolve o descolamento lateral."
+    },
+    {
+      "question": "Por que a enterocele é considerada uma hérnia verdadeira?",
+      "options": [
+        "Há herniação do fundo de saco de Douglas",
+        "Há herniação da bexiga pela parede anterior",
+        "Há herniação do reto pelo septo retovaginal",
+        "Há herniação do útero pelo hiato genital"
+      ],
+      "correctIndex": 0,
+      "explanation": "A enterocele é hérnia verdadeira porque há herniação do fundo de saco de Douglas, com saco peritoneal contendo alças intestinais. Os demais prolapsos correspondem a falhas de suporte das paredes vaginais, sem saco herniário peritoneal."
+    },
+    {
+      "question": "Quais procedimentos aumentam o risco de enterocele?",
+      "options": [
+        "Histerectomia e cirurgia de Burch",
+        "Colporrafia posterior e perineoplastia",
+        "Traquelectomia e conização do colo",
+        "Colpocleise e miorrafia dos elevadores"
+      ],
+      "correctIndex": 0,
+      "explanation": "A histerectomia e a cirurgia de Burch são fatores de risco para enterocele porque anteriorizam o eixo vaginal, expondo o fundo de saco de Douglas à pressão abdominal. A prevenção se faz por procedimentos de obliteração do fundo de saco no mesmo ato cirúrgico."
+    },
+    {
+      "question": "A culdoplastia de McCall, usada na prevenção da enterocele, consiste em:",
+      "options": [
+        "Aproximar os ligamentos uterossacros englobando o peritônio",
+        "Realizar suturas longitudinais sobre o peritônio pélvico",
+        "Fixar a cúpula vaginal ao ligamento sacroespinhoso direito",
+        "Suturar em bolsa concêntrica o fundo de saco posterior"
+      ],
+      "correctIndex": 0,
+      "explanation": "A culdoplastia de McCall aproxima os ligamentos uterossacros englobando o peritônio, obliterando o fundo de saco. As suturas longitudinais no peritônio correspondem à técnica de Halban, e as suturas concêntricas em bolsa, ao procedimento de Moschcowitz."
+    },
+    {
+      "question": "Qual procedimento para correção do defeito apical é realizado por via abdominal?",
+      "options": [
+        "Colpossacrofixação (promontofixação)",
+        "Fixação no ligamento sacroespinhoso",
+        "Culdoplastia de McCall pela vagina",
+        "Colpocleise de Le Fort pela vagina"
+      ],
+      "correctIndex": 0,
+      "explanation": "A colpossacrofixação, ou promontofixação, é a correção apical por via abdominal, fixando a cúpula vaginal ao promontório sacral. A fixação no ligamento sacroespinhoso e a culdoplastia são realizadas por via vaginal."
+    },
+    {
+      "question": "Qual a taxa aproximada de recidiva na correção cirúrgica do defeito apical?",
+      "options": [
+        "Acima de 30% dos casos",
+        "Abaixo de 1% dos casos",
+        "Cerca de 5% dos casos",
+        "Cerca de 10% dos casos"
+      ],
+      "correctIndex": 0,
+      "explanation": "A recidiva do defeito apical ultrapassa 30% dos casos. Contribuem a idade avançada das pacientes, as comorbidades clínicas, os ligamentos fracos ou inadequados para fixação, o tecido conjuntivo de má qualidade e a associação frequente com cistocele e retocele."
+    },
+    {
+      "question": "Quais os resultados esperados da colporrafia posterior clássica?",
+      "options": [
+        "Insucesso de 25% e dispareunia de 12% a 27%",
+        "Insucesso de 70% e dispareunia de 50% a 60%",
+        "Insucesso de 2% e dispareunia de 1% a 3%",
+        "Insucesso de 45% e dispareunia acima de 80%"
+      ],
+      "correctIndex": 0,
+      "explanation": "A colporrafia posterior apresenta insucesso em torno de 25% e dispareunia pós-operatória em 12% a 27% das pacientes, com melhora dos distúrbios evacuatórios em cerca de 75%. O estreitamento do intróito sem suporte adequado da parede posterior é uma de suas complicações."
+    },
+    {
+      "question": "Na rotura perineal obstétrica, qual estrutura está lesada no grau III?",
+      "options": [
+        "O esfíncter externo do ânus",
+        "A mucosa retal e o reto",
+        "A pele e a mucosa vaginal",
+        "O músculo bulboesponjoso"
+      ],
+      "correctIndex": 0,
+      "explanation": "A rotura perineal de grau III envolve lesão do esfíncter externo do ânus. Graus menores atingem pele, mucosa vaginal e musculatura perineal sem comprometer o esfíncter; a extensão à mucosa retal caracteriza o grau IV, com risco de incontinência anal.",
+      "image": "s52i1",
+      "imageCaption": "Rotura perineal com lesão esfincteriana"
+    },
+    {
+      "question": "O que representa o ponto Aa no sistema POP-Q?",
+      "options": [
+        "Parede anterior, 3 cm proximal ao meato uretral",
+        "Parede posterior, 3 cm proximal ao anel himenal",
+        "Ponto mais distal de toda a parede vaginal anterior",
+        "Extremidade mais distal do colo ou da cúpula vaginal"
+      ],
+      "correctIndex": 0,
+      "explanation": "O ponto Aa fica na parede vaginal anterior, 3 cm proximal ao meato uretral externo, correspondendo aproximadamente à junção uretrovesical, e varia de -3 a +3 cm. O ponto mais distal da parede anterior é o Ba, que na ausência de prolapso está em -3 cm."
+    },
+    {
+      "question": "Como são registrados os pontos do POP-Q em relação ao plano do hímen?",
+      "options": [
+        "Negativos acima e positivos abaixo do hímen",
+        "Positivos acima e negativos abaixo do hímen",
+        "Sempre positivos, medidos a partir do meato",
+        "Sempre negativos, medidos a partir do ânus"
+      ],
+      "correctIndex": 0,
+      "explanation": "O hímen é o ponto fixo de referência, definido como zero. Os pontos proximais (acima do hímen) recebem valores negativos e os distais (abaixo do hímen) valores positivos, o que permite quantificar objetivamente o grau de descenso."
+    },
+    {
+      "question": "O que representam os pontos C e D no sistema POP-Q?",
+      "options": [
+        "Extremidade da cérvix e fundo de saco posterior",
+        "Meato uretral externo e junção uretrovesical",
+        "Hiato genital e comprimento vaginal total",
+        "Corpo perineal e margem do orifício anal"
+      ],
+      "correctIndex": 0,
+      "explanation": "O ponto C é a extremidade mais distal da cérvix, ou o fundo de saco vaginal após histerectomia total; o ponto D corresponde ao fórnix posterior (fundo de saco de Douglas), onde os ligamentos uterossacros se inserem na cérvix. O ponto D é omitido na ausência de colo uterino."
+    },
+    {
+      "question": "Quais os valores médios do hiato genital e do comprimento vaginal total?",
+      "options": [
+        "Hiato de 4 a 5 cm e comprimento de 8 a 10 cm",
+        "Hiato de 8 a 10 cm e comprimento de 4 a 5 cm",
+        "Hiato de 1 a 2 cm e comprimento de 15 a 18 cm",
+        "Hiato de 6 a 7 cm e comprimento de 20 a 22 cm"
+      ],
+      "correctIndex": 0,
+      "explanation": "O hiato genital (distância entre o meato uretral e a fúrcula vaginal) mede em média 4 a 5 cm, assim como o corpo perineal (da fúrcula ao ânus). O comprimento vaginal total situa-se entre 8 e 10 cm."
+    },
+    {
+      "question": "Na grade de nove células usada para registrar o POP-Q, qual medida ocupa a célula central?",
+      "options": [
+        "O corpo perineal (CP)",
+        "O hiato genital (HG)",
+        "O comprimento total (CVT)",
+        "O ponto cervical (C)"
+      ],
+      "correctIndex": 0,
+      "explanation": "A grade tem na primeira linha Aa, Ba e C; na linha do meio o hiato genital, o corpo perineal e o comprimento vaginal total; e na última linha Ap, Bp e D. A célula central é ocupada pelo corpo perineal.",
+      "image": "s75i1",
+      "imageCaption": "Grade de registro das medidas do POP-Q"
+    },
+    {
+      "question": "No sistema de Baden-Walker, o que caracteriza o grau 2 de prolapso?",
+      "options": [
+        "Maior prolapso no nível da carúncula himenal",
+        "Maior prolapso acima da carúncula himenal",
+        "Maior prolapso ultrapassando o hímen, parcial",
+        "Eversão completa da vagina para fora do hímen"
+      ],
+      "correctIndex": 0,
+      "explanation": "No sistema de Baden-Walker, o grau 0 não tem prolapso, o grau 1 mantém o ponto de maior prolapso acima da carúncula himenal, o grau 2 o coloca no mesmo plano da carúncula, o grau 3 ultrapassa o hímen de forma parcial e o grau 4 corresponde à eversão completa.",
+      "image": "s62i1",
+      "imageCaption": "Baden-Walker e POP-Q comparados ao anel himenal"
+    },
+    {
+      "question": "O que define o estádio 4 do prolapso de órgãos pélvicos?",
+      "options": [
+        "Eversão completa, com exteriorização total",
+        "Ausência de qualquer descida dos órgãos",
+        "Descida até 1 cm acima do anel himenal",
+        "Descida até o plano médio da vagina"
+      ],
+      "correctIndex": 0,
+      "explanation": "O estádio 4 corresponde à eversão completa, com exteriorização total do órgão prolapsado para fora do hímen. Os estádios intermediários acompanham a posição da borda do prolapso em relação ao anel himenal, e o estádio 0 indica ausência de prolapso.",
+      "image": "s80i1",
+      "imageCaption": "Estadiamento do prolapso uterino, de 0 a IV"
+    },
+    {
+      "question": "Como se define o alongamento hipertrófico do colo uterino?",
+      "options": [
+        "Histerometria cervical acima de 5 cm",
+        "Histerometria cervical abaixo de 2 cm",
+        "Hiato genital acima de 8 cm ao esforço",
+        "Comprimento vaginal total abaixo de 6 cm"
+      ],
+      "correctIndex": 0,
+      "explanation": "O alongamento hipertrófico do colo é definido por histerometria do canal cervical acima de 5 cm, ou por diferença entre os pontos C e D maior que 4 cm no POP-Q. O tratamento é a traquelectomia, com amputação do colo, em prolapsos de grau I ou II."
+    },
+    {
+      "question": "Quais medidas compõem o tratamento conservador do prolapso genital?",
+      "options": [
+        "Exercícios de Kegel, cones vaginais e pessários",
+        "Histerectomia vaginal e cirurgia reparadora",
+        "Promontofixação e fixação sacroespinhosa",
+        "Colporrafia anterior e posterior com telas"
+      ],
+      "correctIndex": 0,
+      "explanation": "O tratamento conservador reúne fisioterapia do assoalho pélvico com exercícios de Kegel, cones vaginais e biofeedback, além dos pessários, que atuam por sustentação, suporte ou preenchimento. As demais alternativas descrevem condutas cirúrgicas."
+    },
+    {
+      "question": "Para qual perfil de paciente a colpocleise de Le Fort é a opção indicada?",
+      "options": [
+        "Idosa sem atividade sexual e com alto risco",
+        "Jovem com desejo de gestação em curto prazo",
+        "Adulta com vida sexual ativa e nulípara",
+        "Gestante no terceiro trimestre com prolapso"
+      ],
+      "correctIndex": 0,
+      "explanation": "A colpocleise de Le Fort é uma cirurgia obliterativa que fecha o canal vaginal, indicada para pacientes idosas sem atividade sexual e com risco cirúrgico elevado. Quando há desejo de preservar o útero, opta-se por cirurgia de Manchester ou histeropexia."
+    },
+    {
+      "question": "Qual a recomendação atual sobre o uso de telas na correção do prolapso genital?",
+      "options": [
+        "Reservado principalmente para casos de recidiva",
+        "Indicado como primeira escolha em todos os casos",
+        "Contraindicado de forma absoluta em qualquer caso",
+        "Recomendado apenas em pacientes nulíparas jovens"
+      ],
+      "correctIndex": 0,
+      "explanation": "O uso de telas permanece controverso na literatura e entre as sociedades internacionais, sendo reservado na maioria das situações para casos de recidiva. A escolha da cirurgia leva em conta ainda o desejo de histeropreservação e a manutenção da atividade sexual."
+    },
+    {
+      "question": "Qual ligamento pélvico é o principal responsável pela suspensão apical do útero?",
+      "options": [
+        "O ligamento uterossacro",
+        "O ligamento redondo",
+        "O ligamento suspensor",
+        "O ligamento inguinal"
+      ],
+      "correctIndex": 0,
+      "explanation": "Os ligamentos uterossacros, junto aos ligamentos cardinais (transversos), formam o suporte apical do útero e da cúpula vaginal, o nível I de sustentação. O ligamento redondo mantém a anteroversão uterina, mas não sustenta o ápice contra a pressão abdominal.",
+      "image": "s19i1",
+      "imageCaption": "Ligamentos uterinos em visão superior"
+    }
+  ]
+}

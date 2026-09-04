@@ -63,6 +63,7 @@ Material para provas/
 │   ├── testar_quiz.js            ← roda o HTML gerado num DOM falso e checa invariantes
 │   ├── testar_chat.js            ← checa o tutor local (e que ele some sem a chave)
 │   ├── testar_nav.js             ← checa voltar ao índice, sair e retomar sem perder nada
+│   ├── testar_markdown.js        ← checa o markdown do chat (e que HTML do modelo não vira tag)
 │   └── atualizar_indice.py       ← regenera index.html
 ├── Quizzes/
 │   └── quiz_[tema].html          ← abrir e estudar
@@ -281,6 +282,7 @@ Saída: `Quizzes/quiz_[titulo_snake].html`, tipicamente 1–3 MB com as imagens 
 node _scripts/testar_quiz.js Quizzes/*.html      # fluxo do quiz, resumo, gabarito
 node _scripts/testar_chat.js Quizzes/quiz_disacusias.html   # o tutor local
 node _scripts/testar_nav.js  Quizzes/quiz_disacusias.html --file   # voltar/sair/retomar
+node _scripts/testar_markdown.js Quizzes/quiz_disacusias.html      # markdown do chat
 ```
 
 Roda o quiz num DOM falso e checa: sintaxe do JS, seletor na tela inicial, seções e
@@ -324,6 +326,12 @@ continua enxergando a questão. Trocar de questão abre um chat novo, sem memór
 O tom se adapta: no erro a chamada é *"Ainda com dúvida?"* e o system prompt diz que o
 estudante errou; no acerto é *"Quer ir mais fundo?"* e diz que ele acertou mas ficou com
 dúvida — evita que o modelo explique como se ele tivesse errado.
+
+A resposta vem em markdown e é **renderizada** (`mdChat`): negrito, itálico, `código`,
+listas, títulos, citação, divisor, bloco de código e tabela. A ordem é o que dá segurança —
+`esc()` escapa **tudo** primeiro e só depois a formatação é aplicada, então nenhuma tag
+vinda do modelo vira HTML de verdade. Só a mensagem do modelo é renderizada; a sua e as
+de erro continuam texto puro.
 
 **A chave nunca entra no HTML.** O quiz carrega `<script src="../deepseek_key.js">`,
 um arquivo que existe só localmente e está no `.gitignore`:

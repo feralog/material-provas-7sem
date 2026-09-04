@@ -139,8 +139,11 @@ const stage = (els) => els['stage'].innerHTML;
   console.log('  ok  envio -> payload com modelo, streaming, contexto da questao e pergunta');
 
   setTimeout(() => {
-    const texto = mkEl('dsTxt').textContent;
-    ok(texto === 'Porque a curva e plana.', 'a resposta em streaming nao foi montada: ' + JSON.stringify(texto));
+    // agora a bolha recebe markdown renderizado, entao a checagem e no innerHTML
+    const saida = mkEl('dsTxt').innerHTML;
+    ok(saida.indexOf('Porque a curva e plana.') > -1,
+       'a resposta em streaming nao foi montada: ' + JSON.stringify(saida));
+    ok(saida.indexOf('<p') > -1, 'a resposta nao passou pelo renderizador de markdown');
     const hist = ctx.S.chat[q.id];
     ok(hist.length === 2 && hist[1].role === 'assistant', 'historico nao guardou a resposta');
     console.log('  ok  streaming -> resposta montada e guardada em S.chat');

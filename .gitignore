@@ -25,6 +25,10 @@ _template/uploads/
 *token*.txt
 deepseek_key.js
 index_local.html
+NexoHub Auditorias/chave_deepseek.txt
+
+# Saida do exportador: regeravel, e o content_seed.json e grande
+NexoHub Pubs/saida/
 
 # Lixo acidental nas pastas de material (não faz parte do pipeline)
 *.exe

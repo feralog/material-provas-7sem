@@ -240,7 +240,116 @@ A **lise tumoral clínica** é definida pela lise laboratorial somada a pelo men
 
 ---
 
-## 9. Do sintoma ao sistema: raciocínio de plantão
+## 9. O grande diferencial: a criança pálida, com púrpura, febre ou artrite
+
+A leucemia linfoide aguda quase nunca chega ao consultório com o rótulo pronto. Ela chega como uma criança pálida, ou com manchas roxas, ou com dor articular, ou com febre arrastada — e cada uma dessas portas de entrada tem seu próprio conjunto de diagnósticos benignos concorrentes. Saber o que separa cada um deles é o que decide entre pedir um hemograma hoje ou marcar retorno em duas semanas.
+
+### O que cada mimetizador faz com o hemograma
+
+| Diagnóstico | Séries acometidas | Organomegalia / adenomegalia | Pista que decide |
+| --- | --- | --- | --- |
+| **Leucemia linfoide aguda** | Duas ou três, com blastos | Frequentes | Citopenia de mais de uma série, dor óssea noturna, blastos |
+| Púrpura trombocitopênica imunológica | Só plaquetas | Ausentes | Plaquetopenia **isolada**, criança em bom estado geral |
+| **Vasculite por IgA** | **Nenhuma — hemograma normal** | Ausentes | Púrpura **palpável** em nádegas e pernas, dor abdominal, artralgia |
+| **Mononucleose infecciosa** | Nenhuma citopenia relevante; linfocitose | Adenomegalia e esplenomegalia presentes | Faringite, linfócitos **atípicos** reativos, séries vermelha e plaquetária preservadas |
+| **Anemia aplásica** | Todas as três, com reticulócitos baixos | **Ausentes** | Pancitopenia com medula **hipocelular** e sem blastos |
+| **Artrite idiopática juvenil** | Anemia de doença crônica; **plaquetas altas** | Possíveis | Trombocitose e leucocitose, não citopenia |
+
+> **A pergunta que mais rende:** *quantas séries estão comprometidas, e há organomegalia?* Plaquetopenia isolada com criança bem aponta para púrpura imunológica. Pancitopenia **sem** fígado, baço ou linfonodo aumentados aponta para aplasia medular. Citopenia de duas ou três séries **com** hepatoesplenomegalia, adenomegalia ou dor óssea aponta para leucemia.
+
+#### Púrpura palpável × púrpura plana
+
+Púrpura **palpável** é vasculite: há inflamação da parede do vaso, a lesão se eleva e se sente com o dedo, e as plaquetas estão **normais**. Púrpura **plana**, com petéquias e equimoses, é falha da hemostasia primária: plaquetas baixas, seja por destruição periférica, seja por falência medular. Passar o dedo sobre a lesão é um gesto de exame físico que separa dois grupos inteiros de diagnósticos.
+
+#### Linfócito atípico não é blasto
+
+O linfócito atípico da mononucleose é uma célula **madura e reativa**: grande, com citoplasma abundante e basofílico, que se molda às hemácias vizinhas. O blasto é uma célula **imatura**, de cromatina frouxa, nucléolo evidente e citoplasma escasso. Contadores automatizados não distinguem os dois de forma confiável — todo achado de blasto exige revisão da lâmina ao microscópio antes de qualquer decisão.
+
+#### A artrite que é leucemia
+
+Artrite idiopática juvenil sistêmica cursa com **leucocitose e trombocitose**, porque as plaquetas são reagentes de fase aguda. Quando a criança com artrite febril chega com **leucopenia e plaquetopenia**, a fisiopatologia é outra: há algo ocupando a medula. Nesse cenário, o corticoide — que seria o tratamento óbvio da artrite — é justamente a droga proibida, porque destrói linfoblastos e inviabiliza o mielograma.
+
+### A regra da conduta inicial
+
+Diante de criança com palidez, febre e sangramento cutâneo, o primeiro exame é sempre o **hemograma completo com contagem de plaquetas**: barato, rápido, disponível na atenção básica e capaz de redirecionar toda a investigação em poucas horas. Sorologias, provas hepáticas e imagem abdominal respondem a perguntas secundárias e não devem preceder o hemograma.
+
+> **Equimoses e maus-tratos.** Manchas em faces internas de braços e coxas e em áreas não expostas ao trauma habitual são sinal de alerta legítimo para violência. Mas quando vêm acompanhadas de **palidez, febre e hepatomegalia**, a prioridade é hematológica: pede-se o hemograma primeiro e a suspeita de maus-tratos permanece em aberto, não substituída.
+
+---
+
+## 10. Massa abdominal e aumento testicular: dois diferenciais que caem em prova
+
+### Massa abdominal palpável na criança
+
+| | Tumor de Wilms (nefroblastoma) | Neuroblastoma |
+| --- | --- | --- |
+| Origem | Rim | Cadeia simpática ou suprarrenal |
+| Linha média | **Não costuma cruzar** | **Cruza** com frequência |
+| Superfície | Lisa, delimitada | Irregular, endurecida |
+| Achados associados | **Hematúria, hipertensão arterial** | Opsoclonia-mioclonia, nódulos subcutâneos, diarreia secretora, equimose periorbitária |
+| Marcador | Não há marcador urinário útil | **Catecolaminas urinárias** (ácido vanilmandélico e homovanílico) |
+| Idade típica | 2 a 5 anos | Abaixo de 2 anos na maioria |
+
+Massa abdominal em criança também pode ser **linfoma não Hodgkin**, sobretudo o de Burkitt, com massa retroperitoneal ou de íleo terminal, e nesse caso o quadro costuma trazer sintomas B, linfonodomegalias periféricas e desidrogenase láctica muito elevada. O primeiro passo diante de aumento do volume abdominal é sempre **diferenciar massa de hepatoesplenomegalia** ao exame físico.
+
+> A palpação abdominal de uma massa suspeita deve ser **delicada e repetida o mínimo necessário**. Manipulação vigorosa de um tumor de Wilms pode romper a cápsula e alterar o estadiamento, e de um neuroblastoma pode desencadear liberação de catecolaminas.
+
+### Aumento de volume escrotal no menino e no adolescente
+
+| Hipótese | O que a diferencia |
+| --- | --- |
+| **Infiltração leucêmica** | Testículo é **sítio santuário**; aumento indolor **acompanhado de sinais sistêmicos** — febre, palidez, astenia, adenomegalia |
+| **Tumor de células germinativas** | Massa endurecida, indolor, progressiva, **sem** sinais sistêmicos; marcadores tumorais alterados |
+| Torção testicular | Dor **súbita e intensa**, reflexo cremastérico abolido — emergência cirúrgica |
+| Orquiepididimite | Dor, calor, hiperemia, febre, melhora com elevação escrotal |
+| Hidrocele | Indolor, **transiluminação positiva**, sem massa sólida |
+
+O ponto que o raciocínio de prova cobra é a **hierarquia dos exames**. Diante de aumento testicular indolor **isolado**, a ultrassonografia de bolsa escrotal é o exame de imagem inicial. Mas quando o achado testicular vem dentro de um quadro sistêmico — febre, astenia, palidez, linfonodomegalia generalizada, inclusive **epitroclear** —, o exame que mais direciona é o **hemograma**: ele custa pouco, sai em uma hora e pode revelar citopenias e blastos que reclassificam todo o caso como doença onco-hematológica.
+
+#### Marcadores dos tumores de células germinativas
+
+| Marcador | Significado |
+| --- | --- |
+| **Alfafetoproteína** | Elevada nos tumores com componente de **saco vitelínico**; meia-vida de 5 a 7 dias |
+| **Fração beta da gonadotrofina coriônica** | Elevada no **coriocarcinoma** e em parte dos seminomas; meia-vida de 24 a 36 horas |
+| Desidrogenase láctica | Inespecífica; reflete **massa tumoral** e turnover celular |
+
+Os marcadores devem ser colhidos **antes da orquiectomia**, para servirem de linha de base: a curva de queda pós-operatória avalia a resposta, e a reascensão detecta recidiva antes da imagem.
+
+---
+
+## 11. Linfoma de Burkitt e o manejo antecipado da lise tumoral
+
+O linfoma de Burkitt é o tumor humano de **crescimento mais rápido**, com tempo de duplicação em torno de **24 horas** e a maior fração de células em proliferação entre todas as neoplasias. Isso define tanto a apresentação quanto o risco.
+
+- **Forma endêmica** — africana, associada ao vírus Epstein-Barr, com acometimento característico de **mandíbula e maxila**: é a "dor de dente" que não responde ao tratamento odontológico.
+- **Forma esporádica** — a mais comum fora da África, com **massa abdominal ou retroperitoneal volumosa**, dor abdominal, sintomas B e desidrogenase láctica muito elevada.
+
+> Massa grande + crescimento explosivo + altíssima quimiossensibilidade = **o cenário de maior risco de síndrome de lise tumoral em toda a pediatria**. Aqui a lise pode ser **espontânea**, antes de qualquer droga: ácido úrico alto e creatinina alterada já na admissão são a assinatura desse quadro.
+
+### Alopurinol × rasburicase: quando cada um
+
+| | Alopurinol | Rasburicase |
+| --- | --- | --- |
+| Mecanismo | Inibe a **xantina oxidase** | **Urato-oxidase**: degrada o ácido úrico em alantoína |
+| Age sobre | Só o ácido úrico **ainda não formado** | O ácido úrico **já circulante** |
+| Início do efeito | Dias | **Horas** |
+| Indicação | Risco baixo a intermediário, uricemia normal | **Uricemia já elevada**, massa volumosa, LDH muito alta, disfunção renal |
+| Contraindicação | Poucas | **Deficiência de glicose-6-fosfato desidrogenase** — risco de hemólise e metemoglobinemia |
+
+### A sequência do manejo antes da quimioterapia
+
+1. **Hidratação venosa vigorosa**, mantendo débito urinário alto — é a medida que mais protege o rim, porque impede a precipitação de cristais.
+2. **Rasburicase** quando a uricemia já está elevada ou o risco é alto; alopurinol nos casos de risco menor.
+3. **Monitorização laboratorial seriada** — potássio, fósforo, cálcio, ácido úrico e creatinina de 6 em 6 ou de 12 em 12 horas.
+4. **Adiar a quimioterapia** por algumas horas, até a estabilização metabólica. O tumor cresce rápido, mas o risco de parada por hipercalemia e de falência renal por cristais é imediato.
+5. **Diálise** apenas nos casos refratários — não é medida de primeira linha diante de hiperuricemia isolada.
+
+> O erro clássico da questão é escolher entre "tratar já" e "dialisar já". Nenhum dos dois: a resposta é **estabilizar metabolicamente primeiro**, com hidratação e rasburicase, e só então iniciar o antineoplásico. Restringir volume ou usar diurético como medida inicial agrava a precipitação de cristais e é erro grave.
+
+---
+
+## 12. Do sintoma ao sistema: raciocínio de plantão
 
 | Sintoma de entrada | Suspeitar de |
 | --- | --- |

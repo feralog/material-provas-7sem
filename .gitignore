@@ -31,11 +31,18 @@ NexoHub Auditorias/chave_deepseek.txt
 NexoHub Pubs/saida/
 NexoHub Auditorias/extraido/
 
+# Backup do banco de producao do Nexo Hub — conteudo integral, nunca publicar
+NexoHub Auditorias/backup/
+
 # Lixo acidental nas pastas de material (não faz parte do pipeline)
 *.exe
 *.log
 *.doc
 *.zip
+
+# Prova do professor fotografada — trabalho dele, repositorio publico
+PED/ONCO/*.jpeg
+PED/ONCO/*.jpg
 
 # Referências locais (livros, transcrições de aula) — nunca publicar
 Neurologia/Ignorar/

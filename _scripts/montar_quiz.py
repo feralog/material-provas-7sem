@@ -66,7 +66,7 @@ DEPENDE_DA_AULA = re.compile(r"""(
  | \bgabarito\b
  | \bconforme\s+(?:a\s+)?aula\b
  | \bsegundo\s+a\s+aula\b
- | \bn[oa]\s+material\b
+ | \bn[oa]\s+material\b(?!\s+(?:gen[ée]tico|heredit[áa]rio|biol[óo]gico))
  | \bapresentad[oa]s?\s+n[ao]\s+aula\b
  | \bvist[oa]\s+em\s+aula\b
  | \bda\s+apresenta\w+\b

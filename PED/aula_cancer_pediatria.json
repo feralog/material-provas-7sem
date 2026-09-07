@@ -2,7 +2,7 @@
   "titulo": "Câncer em Pediatria",
   "eyebrow": "Pediatria · Oncologia",
   "subtitulo": "Como suspeitar, quando investigar e o que não fazer",
-  "intro": "Sinais de alerta do câncer infantojuvenil, indicações de mielograma, particularidades da leucemia linfoide aguda, dos tumores do sistema nervoso central e dos linfomas, e as principais emergências oncológicas.",
+  "intro": "Sinais de alerta do câncer infantojuvenil, indicações de mielograma, particularidades da leucemia linfoide aguda e seus diagnósticos diferenciais, tumores do sistema nervoso central, linfomas, massa abdominal e testicular, e as principais emergências oncológicas.",
   "questoes": [
     {
       "question": "Na criança, as neoplasias malignas originam-se predominantemente de qual grupo celular, em contraste com o que ocorre no adulto?",
@@ -366,6 +366,138 @@
       ],
       "correctIndex": 0,
       "explanation": "Dor nas costas é o sinal precoce da compressão maligna da medula espinhal, presente em cerca de 90% dos casos, antecedendo a fraqueza motora e a disfunção esfincteriana. A ressonância magnética é o padrão-ouro, com sensibilidade em torno de 93%, e o corticoide deve ser iniciado de imediato para preservar a marcha."
+    },
+    {
+      "question": "Adolescente de 13 anos tem febre há 12 dias, dor de garganta, adenomegalia cervical volumosa e baço palpável a 3 cm do rebordo. Hemograma: Hb 12,8 g/dL, leucócitos 16.000/mm³ com 60% de linfócitos e linfócitos atípicos presentes, plaquetas 190.000/mm³. Qual é a hipótese mais provável?",
+      "options": [
+        "Mononucleose infecciosa por vírus Epstein-Barr",
+        "Leucemia linfoide aguda de imunofenótipo B",
+        "Linfoma não Hodgkin com invasão medular",
+        "Anemia aplásica adquirida pós-infecciosa"
+      ],
+      "correctIndex": 0,
+      "explanation": "Febre prolongada, faringite, adenomegalia e esplenomegalia com hemograma sem anemia e sem plaquetopenia, apenas linfocitose com linfócitos atípicos, definem a mononucleose infecciosa. Na leucemia esperam-se pelo menos duas séries comprometidas, além de blastos verdadeiros. O linfócito atípico reativo é grande, tem citoplasma abundante e se molda às hemácias vizinhas, e é justamente o que os contadores automatizados confundem com blasto."
+    },
+    {
+      "question": "Menina de 8 anos tem palidez progressiva, petéquias e três episódios de febre em dois meses, sem adenomegalia, sem visceromegalia e sem dor óssea. Hemograma: Hb 6,9 g/dL, reticulócitos 0,2%, leucócitos 1.900/mm³ com 300 neutrófilos e plaquetas 18.000/mm³, sem blastos. O mielograma mostra medula hipocelular. Qual é o diagnóstico?",
+      "options": [
+        "Anemia aplásica, com medula vazia e sem infiltração",
+        "Leucemia linfoide aguda em fase inicial da doença",
+        "Púrpura trombocitopênica imunológica pós-viral",
+        "Síndrome hemofagocítica secundária a infecção"
+      ],
+      "correctIndex": 0,
+      "explanation": "Pancitopenia com reticulocitopenia, ausência de visceromegalia e de adenomegalia e medula hipocelular sem blastos caracterizam a aplasia medular. A leucemia cursa com medula hipercelular ocupada por blastos e costuma trazer hepatoesplenomegalia, adenomegalia ou dor óssea. A ausência de organomegalia é a pista clínica que mais separa a aplasia da leucemia à beira do leito."
+    },
+    {
+      "question": "Criança de 3 anos tem febre e artrite de joelhos há um mês, com palidez, petéquias, discreta adenomegalia cervical e hepatoesplenomegalia. Os exames mostram anemia, leucopenia, trombocitopenia e velocidade de hemossedimentação elevada. Qual achado torna a artrite idiopática juvenil improvável?",
+      "options": [
+        "A presença de citopenia nas três séries do hemograma",
+        "A localização da artrite nos joelhos e a idade dela",
+        "A elevação da velocidade de hemossedimentação e febre",
+        "A duração de um mês dos sintomas articulares e febre"
+      ],
+      "correctIndex": 0,
+      "explanation": "A artrite idiopática juvenil cursa tipicamente com anemia de doença crônica, leucocitose e trombocitose, porque as plaquetas são reagentes de fase aguda. Leucopenia e plaquetopenia associadas a artrite febril apontam para ocupação medular e obrigam a investigar leucemia antes de qualquer corticoide. A artrite pode ser a manifestação de abertura da leucemia linfoide aguda."
+    },
+    {
+      "question": "Menino de 5 anos apresenta lesões purpúricas palpáveis e simétricas em nádegas e membros inferiores, dor abdominal em cólica e artralgia de tornozelos. O hemograma e a contagem de plaquetas são normais. Qual é a hipótese mais provável?",
+      "options": [
+        "Vasculite por IgA, antiga púrpura de Henoch-Schönlein",
+        "Púrpura trombocitopênica imunológica pós-infecciosa",
+        "Leucemia linfoide aguda com infiltração cutânea",
+        "Meningococcemia em fase inicial de instalação"
+      ],
+      "correctIndex": 0,
+      "explanation": "Púrpura palpável distribuída em nádegas e membros inferiores, com dor abdominal e artralgia e plaquetas normais, é vasculite por IgA. O caráter palpável e a plaquetometria normal a separam das púrpuras por plaquetopenia: na púrpura imunológica e na leucemia as lesões são planas e as plaquetas estão baixas. Nesse cenário o hemograma normal afasta a falência medular."
+    },
+    {
+      "question": "Adolescente de 14 anos tem aumento indolor do volume testicular direito, sem sinais flogísticos, associado a febre, astenia, tosse, palidez leve e linfonodos cervicais, inguinais e epitrocleares. Qual é o exame inicial mais adequado para direcionar a investigação?",
+      "options": [
+        "Hemograma completo com revisão de lâmina",
+        "Ultrassonografia de bolsa escrotal",
+        "Dosagem de alfafetoproteína sérica",
+        "Dosagem de desidrogenase láctica"
+      ],
+      "correctIndex": 0,
+      "explanation": "O achado testicular está inserido num quadro sistêmico — febre, astenia, palidez e linfonodomegalia generalizada, inclusive epitroclear —, que aponta para doença onco-hematológica com o testículo como sítio de infiltração. O hemograma é barato, imediato e capaz de revelar citopenias e blastos, redirecionando toda a investigação. Imagem e marcadores tumorais vêm depois, orientados pelo que o hemograma mostrar."
+    },
+    {
+      "question": "Na investigação de um tumor testicular de células germinativas, quais marcadores séricos são classicamente dosados antes de qualquer tratamento?",
+      "options": [
+        "Alfafetoproteína e fração beta da gonadotrofina coriônica",
+        "Catecolaminas urinárias e enolase neurônio-específica",
+        "Antígeno carcinoembrionário e cromogranina A sérica",
+        "Ferritina sérica e fosfatase alcalina óssea isolada"
+      ],
+      "correctIndex": 0,
+      "explanation": "Os tumores de células germinativas produzem alfafetoproteína, sobretudo quando há componente de saco vitelínico, e fração beta da gonadotrofina coriônica humana, sobretudo no coriocarcinoma. Os dois devem ser colhidos antes da orquiectomia, porque servem de linha de base para avaliar resposta e detectar recidiva pela curva de queda. Catecolaminas urinárias pertencem à investigação do neuroblastoma."
+    },
+    {
+      "question": "Diante de uma criança de 3 anos com pancitopenia, febre e blastos linfoides na medula óssea, qual diagnóstico pode ser descartado apenas pela faixa etária?",
+      "options": [
+        "Leucemia linfoide crônica, praticamente inexistente na infância",
+        "Leucemia linfoide aguda, incomum antes dos cinco anos de idade",
+        "Leucemia mieloide aguda, restrita ao período neonatal precoce",
+        "Leucemia mieloide crônica, exclusiva de adolescentes e adultos"
+      ],
+      "correctIndex": 0,
+      "explanation": "A leucemia linfoide crônica é doença do adulto de idade avançada e não figura entre os diagnósticos pediátricos. Na infância, a linfoide aguda responde por 75 a 80% das leucemias, com pico justamente entre o segundo e o quinto ano de vida; a mieloide aguda responde por 15 a 20% e ocorre em qualquer idade; a mieloide crônica é incomum, com 2 a 5%, mas existe."
+    },
+    {
+      "question": "Menino de 3 anos e 6 meses, previamente hígido, tem febre de até 38 °C e cansaço há cinco dias, e surgiram equimoses e petéquias nas faces interna e externa de braços e pernas. Está prostrado, pálido, com fígado a 3 cm do rebordo costal. Qual é a conduta mais adequada?",
+      "options": [
+        "Solicitar hemograma completo com contagem de plaquetas",
+        "Solicitar sorologias virais e provas de função hepática",
+        "Solicitar ultrassonografia de abdome e sangue oculto fecal",
+        "Encaminhar ao serviço social por suspeita de maus-tratos"
+      ],
+      "correctIndex": 0,
+      "explanation": "Palidez, febre, hepatomegalia e sangramento cutâneo em criança previamente hígida compõem o quadro de falência medular e exigem hemograma imediato, exame barato, rápido e disponível na atenção básica. Equimoses em faces internas dos membros e em áreas não expostas levantam a hipótese de maus-tratos, mas a palidez e a hepatomegalia deslocam a prioridade para a investigação hematológica. Sorologias e imagem não respondem à pergunta central."
+    },
+    {
+      "question": "Qual característica biológica do linfoma de Burkitt explica seu altíssimo risco de síndrome de lise tumoral?",
+      "options": [
+        "É o tumor de crescimento mais rápido, com duplicação em torno de 24 horas",
+        "É um tumor de crescimento lento e de alta resistência à quimioterapia",
+        "É um tumor que se origina na medula óssea e a substitui por fibrose",
+        "É um tumor que secreta ácido úrico de maneira autônoma e contínua"
+      ],
+      "correctIndex": 0,
+      "explanation": "O linfoma de Burkitt tem a maior fração de células em proliferação entre as neoplasias humanas, com tempo de duplicação em torno de 24 horas, e por isso chega com massas volumosas e desidrogenase láctica muito elevada. Massa grande e altamente quimiossensível significa destruição celular maciça já nas primeiras horas de tratamento, que é exatamente o substrato da lise tumoral. Massas abdominais ou retroperitoneais e o acometimento de mandíbula são típicos."
+    },
+    {
+      "question": "Qual conjunto de achados favorece o tumor de Wilms em vez do neuroblastoma diante de massa abdominal palpável em pré-escolar?",
+      "options": [
+        "Massa lisa que não cruza a linha média, com hematúria e hipertensão",
+        "Massa irregular que cruza a linha média, com opsoclonia e mioclonia",
+        "Massa dolorosa que cruza a linha média, com nódulos subcutâneos",
+        "Massa móvel que cruza a linha média, com diarreia secretora grave"
+      ],
+      "correctIndex": 0,
+      "explanation": "O tumor de Wilms nasce do rim, é liso e delimitado, tipicamente não ultrapassa a linha média e cursa com hematúria e hipertensão pela origem renal. O neuroblastoma nasce da cadeia simpática ou da suprarrenal, é irregular, cruza a linha média e pode trazer opsoclonia-mioclonia, nódulos subcutâneos e diarreia secretora. Em ambos, a palpação abdominal deve ser delicada e repetida o mínimo necessário."
+    },
+    {
+      "question": "Em que situação a rasburicase é preferida ao alopurinol na prevenção e no tratamento da síndrome de lise tumoral?",
+      "options": [
+        "Quando o ácido úrico já está elevado ou a massa tumoral é volumosa",
+        "Quando o ácido úrico está normal e a massa tumoral é muito pequena",
+        "Quando há hipocalemia e a função renal se mantém inteiramente normal",
+        "Quando o paciente tem deficiência conhecida de glicose-6-fosfato"
+      ],
+      "correctIndex": 0,
+      "explanation": "O alopurinol bloqueia a xantina oxidase e apenas impede a formação de novo ácido úrico, sem nenhum efeito sobre o que já circula. A rasburicase é uma urato-oxidase que degrada o ácido úrico existente e derruba os níveis em horas, sendo a escolha quando a uricemia já está alta ou o risco é alto por massa volumosa, desidrogenase láctica elevada ou disfunção renal. Ela é contraindicada na deficiência de glicose-6-fosfato desidrogenase, pelo risco de hemólise."
+    },
+    {
+      "question": "Criança de 7 anos com linfoma de Burkitt e massa retroperitoneal volumosa chega com ácido úrico de 9,8 mg/dL e creatinina de 1,2 mg/dL. Qual é a conduta antes de iniciar a quimioterapia?",
+      "options": [
+        "Hidratar por via venosa, aplicar rasburicase e aguardar a estabilização",
+        "Iniciar a quimioterapia de imediato, porque o atraso piora a sobrevida",
+        "Indicar diálise peritoneal de urgência antes de qualquer outra medida",
+        "Restringir o volume e prescrever diurético de alça em dose crescente"
+      ],
+      "correctIndex": 0,
+      "explanation": "O paciente já tem lise tumoral em curso antes de qualquer droga, com hiperuricemia e creatinina alterada, e a quimioterapia multiplicaria a destruição celular sobre um rim já em sofrimento. A conduta é hidratação venosa vigorosa, rasburicase e monitorização laboratorial seriada de potássio, fósforo, cálcio, ácido úrico e função renal, adiando o antineoplásico até a estabilização metabólica. A diálise fica reservada aos casos refratários."
     }
   ]
 }

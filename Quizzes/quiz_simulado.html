@@ -1,0 +1,1020 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Simulado</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;450;500;600&display=swap" rel="stylesheet">
+<style>
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0}
+  body{background:#f5f3ef;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+  button{font:inherit;color:inherit;font-family:'IBM Plex Sans',system-ui,sans-serif}
+  a{color:#2b57cc;text-decoration:none}
+  a:hover{color:#1e3f9c;text-decoration:underline}
+  @keyframes qFade{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+  @keyframes qDrawer{from{opacity:0;transform:translateY(-4px)}to{opacity:1;transform:none}}
+
+  /* hovers — no canvas eram style-hover, aqui viram CSS de verdade */
+  .h-dark:hover{background:#2b57cc!important;transform:translateY(-1px)}
+  .h-darkflat:hover{background:#2b57cc!important}
+  .h-line:hover{border-color:#121a2b!important}
+  .h-ink:hover{color:#121a2b!important}
+  .h-opt:not(.locked):hover{border-color:var(--hbd)!important;transform:translateY(-1px)}
+  .h-card:hover{border-color:#121a2b!important;transform:translateY(-2px)}
+
+  /* tipografia do resumo */
+  .rsm{font-size:16.5px;line-height:1.72;color:#2a3141;max-width:64ch}
+  .rsm h2{font-family:'Newsreader',Georgia,serif;font-size:27px;font-weight:500;letter-spacing:-.02em;line-height:1.2;margin:42px 0 14px;padding-top:20px;border-top:1px solid #e4e0d8;text-wrap:pretty}
+  .rsm h2:first-child{margin-top:0;padding-top:0;border-top:0}
+  .rsm h3{font-family:'Newsreader',Georgia,serif;font-size:20px;font-weight:600;letter-spacing:-.01em;margin:28px 0 10px;text-wrap:pretty}
+  .rsm h4{font-family:'IBM Plex Mono',monospace;font-size:11px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:#2b57cc;margin:24px 0 8px}
+  .rsm p{margin:0 0 15px;text-wrap:pretty}
+  .rsm ul,.rsm ol{margin:0 0 15px;padding-left:22px}
+  .rsm li{margin-bottom:7px;text-wrap:pretty}
+  .rsm li>ul,.rsm li>ol{margin:7px 0 0}
+  .rsm strong{font-weight:600;color:#121a2b}
+  .rsm em{font-style:italic}
+  .rsm code{font-family:'IBM Plex Mono',monospace;font-size:.88em;background:#efece5;border:1px solid #e4e0d8;border-radius:5px;padding:1px 5px}
+  .rsm hr{border:0;border-top:1px solid #e4e0d8;margin:32px 0}
+  .rsm blockquote{margin:0 0 18px;padding:15px 18px;background:#f7f6f2;border-left:2.5px solid #2b57cc;border-radius:0 12px 12px 0;font-size:15px;line-height:1.65;color:#39404f}
+  .rsm blockquote p:last-child{margin-bottom:0}
+  .rsm .tbl{overflow-x:auto;margin:0 0 20px;border:1px solid #e4e0d8;border-radius:12px;background:#fff}
+  .rsm table{border-collapse:collapse;width:100%;font-size:14px;line-height:1.5}
+  .rsm th{text-align:left;font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.09em;text-transform:uppercase;color:#8a8578;font-weight:600;padding:11px 14px;background:#faf9f6;border-bottom:1px solid #e4e0d8;white-space:nowrap}
+  .rsm td{padding:11px 14px;border-bottom:1px solid #efece5;vertical-align:top;text-wrap:pretty}
+  .rsm tr:last-child td{border-bottom:0}
+  .rsm .key{background:#f2f6fb;border:1px solid #d6e2f4;border-radius:12px;padding:16px 18px;margin:0 0 18px}
+  .rsm .key>*:last-child{margin-bottom:0}
+
+  /* figuras — no resumo e na questao */
+  .fig{margin:0 0 20px;background:#fff;border:1px solid #e4e0d8;border-radius:14px;overflow:hidden}
+  .fig img{display:block;width:100%;height:auto;cursor:zoom-in}
+  .fig figcaption{font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.06em;color:#8a8578;padding:9px 13px;border-top:1px solid #efece5;background:#faf9f6;text-wrap:pretty}
+  .qfig{margin:0 0 20px}
+
+  /* lightbox */
+  #lb{position:fixed;inset:0;z-index:90;background:rgba(18,26,43,.86);display:none;align-items:center;justify-content:center;padding:24px;cursor:zoom-out}
+  #lb.on{display:flex;animation:qFade .16s ease}
+  #lb img{max-width:100%;max-height:100%;border-radius:10px;box-shadow:0 24px 60px rgba(0,0,0,.5)}
+
+  @media(max-width:560px){
+    .rsm{font-size:16px}
+    .rsm h2{font-size:24px}
+    .home-grid{grid-template-columns:1fr!important}
+  }
+</style>
+</head>
+<body>
+
+<div style="min-height:100vh;background:#f5f3ef;color:#121a2b;font-family:'IBM Plex Sans',system-ui,sans-serif">
+  <header style="position:sticky;top:0;z-index:30;background:rgba(245,243,239,.94);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid #e4e0d8">
+    <div style="max-width:720px;margin:0 auto;padding:12px 16px 10px" id="hdr"></div>
+  </header>
+  <main style="max-width:720px;margin:0 auto;padding:0 16px 80px" id="stage"></main>
+</div>
+<div id="lb"><img alt=""></div>
+
+<script type="text/html" id="resumoSrc"><h2>Revisão dos temas do simulado</h2>
+<p>Este simulado não gira em torno de um assunto só. Ele mistura quatro blocos que se repetem em prova: a <strong>consulta do adolescente</strong> (7 questões), a <strong>oncologia pediátrica</strong> (6), a <strong>endocrinologia e a neonatologia da tireoide</strong> (5) e o <strong>ECA aplicado à prática</strong> (2). O que segue reconstrói o raciocínio de cada bloco, para que as respostas parem de depender de memória e passem a depender de critério.</p>
+<hr>
+<h2>A consulta do adolescente: privacidade, sigilo e autonomia</h2>
+<p>O adolescente é sujeito de direitos, não um apêndice do responsável. Três garantias sustentam o atendimento e caem juntas em prova: <strong>privacidade</strong> (ser atendido sozinho, ainda que parte da consulta seja com a família), <strong>confidencialidade</strong> (o que foi dito não é repassado sem necessidade) e <strong>consentimento informado</strong> (participar da decisão sobre o próprio corpo).</p>
+<p>A consequência prática mais cobrada é que <strong>não é obrigatório o consentimento dos pais para todo atendimento</strong>. Adolescente com capacidade de discernimento pode ser atendido desacompanhado, receber orientação sobre sexualidade, iniciar contraceptivo, ser testado para IST e tratado. Exigir acompanhante nesses casos não protege ninguém: cria barreira de acesso justamente em quem já está exposto.</p>
+<p>O modelo de consulta é dialógico. Escuta ativa, linguagem sem julgamento, exame físico explicado antes de ser feito e decisões pactuadas produzem adesão; a transmissão unidirecional de recomendações produz abandono. Quando o adolescente resiste ao exame físico, isso costuma ser dado clínico — vergonha corporal, violência, automutilação escondida sob manga comprida.</p>
+<blockquote><p><strong>Pegadinha recorrente:</strong> a alternativa que diz "a confidencialidade deve ser sempre garantida, sem exceções" é sempre falsa. Assim como é falsa a que exige autorização dos pais para qualquer atendimento. As duas erram pelo absoluto.</p></blockquote>
+<hr>
+<h2>Quando o sigilo se rompe — e quando não se rompe</h2>
+<p>O sigilo é a regra; a quebra é exceção justificada, restrita ao mínimo necessário e, sempre que possível, <strong>comunicada antes ao adolescente</strong>, de preferência com ele presente no momento em que a família é informada.</p>
+<div class="tbl"><table><thead><tr><th>Situação</th><th>Sigilo</th><th>Por quê</th></tr></thead><tbody><tr><td>Autoagressão, ideação ou tentativa de suicídio</td><td><strong>Quebra</strong></td><td>Risco atual à própria vida</td></tr><tr><td>Não adesão ao tratamento de tuberculose</td><td><strong>Quebra</strong></td><td>Doença transmissível de notificação compulsória; risco à coletividade e seleção de resistência</td></tr><tr><td>Suspeita ou confirmação de violência e abuso sexual</td><td><strong>Quebra</strong></td><td>Proteção obrigatória; notificação e Conselho Tutelar (art. 13 do ECA)</td></tr><tr><td>Incapacidade de discernir a própria condição</td><td><strong>Quebra</strong></td><td>Falta o pressuposto da autonomia</td></tr><tr><td>Suspeita de gravidez</td><td>Mantém</td><td>Não há risco iminente; acolher e apoiar a comunicação à família</td></tr><tr><td>Uso experimental de droga ilícita</td><td>Mantém</td><td>Episódio isolado não é risco de vida nem crime a ser denunciado pelo médico</td></tr><tr><td>Pedido de sorologia para HIV por ansiedade</td><td>Mantém</td><td>Testar e aconselhar é cuidado, não motivo de denúncia</td></tr><tr><td>Início de método contraceptivo</td><td>Mantém</td><td>Direito reprodutivo do adolescente</td></tr></tbody></table></div>
+<p>Quando a quebra é necessária, a forma importa tanto quanto a decisão: informa-se <strong>na própria consulta</strong>, com o adolescente presente, apenas o que for indispensável para acionar a proteção, e já se encaminha (saúde mental, rede de proteção, serviço especializado). Combinar que "o próprio adolescente conversará com a família depois" é insuficiente diante de risco de vida — deixa o desfecho sem retaguarda.</p>
+<blockquote><p>Uso experimental de maconha em asmático não muda a regra. Orienta-se sobre o efeito irritativo da fumaça e o risco de broncoespasmo, reforça-se o corticoide inalatório e trata-se a tosse — mantendo o sigilo, que é o que garante o próximo retorno.</p></blockquote>
+<hr>
+<h2>ECA na prática: vacinação, negligência e Conselho Tutelar</h2>
+<p>Dois artigos resolvem a maioria das questões:</p>
+<ul><li><strong>Art. 13</strong> — casos suspeitos <strong>ou</strong> confirmados de maus-tratos devem ser comunicados ao Conselho Tutelar, sem prejuízo de outras providências legais. Suspeita basta; não cabe ao profissional investigar antes de comunicar.</li><li><strong>Art. 14, § 1º</strong> — é <strong>obrigatória</strong> a vacinação das crianças nos casos recomendados pelas autoridades sanitárias. Recusa vacinal, portanto, não é escolha legítima dos pais: é negligência.</li></ul>
+<p><strong>Negligência é violência.</strong> Ela aparece nas provas disfarçada de decisão familiar: recusa de vacina, abandono de tratamento, evasão hospitalar com criança grave, falta a consultas de doença crônica. Evadir do hospital com um lactente em oxigenioterapia por saturação de 85% é privação de cuidado essencial — registra-se o ocorrido em prontuário, com horário e circunstâncias, e comunica-se o Conselho Tutelar.</p>
+<blockquote><p>A alternativa "sensibilizar a família e, só em risco iminente, acionar o Conselho Tutelar" parece equilibrada e por isso atrai. Quando a família já decidiu suspender o esquema e há crianças menores de 5 anos em atraso, o risco não é hipotético: coqueluche, sarampo e doença meningocócica não esperam a próxima visita.</p></blockquote>
+<h3>Diante de suspeita de violência física</h3>
+<ol><li>Conversar <strong>a sós</strong> com a vítima, antes do exame físico — a presença de familiares inibe o relato e pode reproduzir a coação.</li><li>Examinar por completo e <strong>descrever as lesões</strong> (tipo, localização, coloração, estágio de evolução), porque essa descrição vira documento.</li><li>Notificar (ficha de notificação compulsória) e comunicar o Conselho Tutelar.</li><li>Nunca acarear o suspeito nem confrontá-lo no serviço: expõe a vítima a retaliação e não é papel do médico.</li></ol>
+<hr>
+<h2>Gravidez na adolescência</h2>
+<p>Os fatores de risco não são só informativos. Pesam o desenvolvimento psíquico ainda em curso (impulsividade, dificuldade de antecipar consequências), fatores culturais e familiares, violência sexual, evasão escolar prévia e baixa oferta de contracepção. <strong>Acesso à internet não substitui educação sexual qualificada</strong> — o volume de informação aumentou e a desinformação, também.</p>
+<p>Dois marcadores biológicos definem gestação de maior risco:</p>
+<ul><li>idade <strong>menor que 16 anos</strong>;</li><li><strong>intervalo pós-menarca menor que 2 anos</strong>, quando o eixo hipotálamo-hipófise-ovário e a pelve ainda estão imaturos.</li></ul>
+<p>O risco é materno e fetal — nunca só fetal. Do lado materno: anemia, pré-eclâmpsia, parto prematuro, desproporção cefalopélvica, depressão pós-parto, abandono escolar e repetição da gestação na adolescência. Do lado fetal: prematuridade, baixo peso e maior mortalidade perinatal.</p>
+<hr>
+<h2>Sinais de alerta do câncer na infância</h2>
+<p>O câncer pediátrico é raro, mas a leucemia linfoide aguda responde por cerca de um quarto de todos os casos e tem pico entre <strong>2 e 5 anos</strong>. A apresentação é banal na superfície — febre, palidez, "dor de crescimento" — e o que denuncia é a <strong>combinação</strong>:</p>
+<ul><li>febre prolongada ou recorrente sem foco;</li><li><strong>dor óssea que acorda à noite</strong> ou faz a criança parar de andar (dor de crescimento não acorda, não é matinal e não incapacita);</li><li>palidez progressiva, adinamia, sopro sistólico funcional;</li><li>equimoses e petéquias em <strong>áreas não expostas a trauma</strong>, sangramento gengival, epistaxe;</li><li>linfonodomegalia generalizada, hepatoesplenomegalia;</li><li>massa abdominal, aumento de volume testicular indolor, cefaleia matinal com vômitos, leucocoria.</li></ul>
+<p>O laboratório fecha o raciocínio: <strong>citopenia em mais de uma série</strong> com organomegalia. O primeiro exame é sempre o <strong>hemograma completo com contagem de plaquetas</strong> — barato, rápido, disponível na atenção básica e capaz de mostrar blastos. Confirmação é por mielograma (≥ 25% de blastos), mas isso já é do serviço especializado.</p>
+<h3>Diagnóstico diferencial das citopenias com púrpura</h3>
+<div class="tbl"><table><thead><tr><th>Hipótese</th><th>Anemia</th><th>Leucócitos</th><th>Plaquetas</th><th>Organomegalia</th><th>Chave</th></tr></thead><tbody><tr><td>Leucemia linfoide aguda</td><td>sim</td><td>variáveis, com predomínio linfocitário ou blastos</td><td>baixas</td><td>hepatoesplenomegalia e adenomegalia</td><td>citopenia em várias séries + dor óssea noturna</td></tr><tr><td>Anemia aplásica</td><td>sim</td><td>baixos</td><td>baixas</td><td><strong>ausente</strong></td><td>pancitopenia sem visceromegalia e sem dor óssea</td></tr><tr><td>Púrpura trombocitopênica imunológica</td><td>não</td><td>normais</td><td>muito baixas</td><td>ausente</td><td>criança bem, só plaquetas caídas, após virose</td></tr><tr><td>Vasculite por IgA</td><td>não</td><td>normais</td><td><strong>normais</strong></td><td>ausente</td><td>púrpura palpável em membros inferiores e nádegas, dor abdominal, artrite</td></tr><tr><td>Artrite idiopática juvenil sistêmica</td><td>discreta</td><td><strong>altos</strong></td><td><strong>altas</strong></td><td>hepatoesplenomegalia possível</td><td>leucocitose e trombocitose, não citopenia</td></tr></tbody></table></div>
+<blockquote><p>Reticulócitos baixos (por exemplo 0,4%) diante de anemia significam medula que <strong>não</strong> está respondendo — aponta para ocupação ou falência medular, não para hemólise ou perda.</p></blockquote>
+<p>Massa testicular indolor com febre, astenia e adenomegalias em várias cadeias, inclusive epitroclear, não é orquiepididimite: é doença linfoproliferativa até prova em contrário, e o exame que direciona é o hemograma. Ultrassonografia, alfafetoproteína e DHL entram depois, para caracterizar a massa e estadiar.</p>
+<hr>
+<h2>Massas abdominais da infância e emergências oncológicas</h2>
+<p>Massa abdominal em criança é sinal de alarme. A idade e o comportamento da massa quase fecham o diagnóstico:</p>
+<div class="tbl"><table><thead><tr><th>Tumor</th><th>Idade típica</th><th>Massa</th><th>Achados que distinguem</th></tr></thead><tbody><tr><td>Neuroblastoma</td><td>&lt; 2 anos</td><td>irregular, <strong>cruza a linha média</strong>, fixa</td><td>criança em mau estado geral, dor óssea, opsoclonia, equimose periorbital, catecolaminas urinárias elevadas</td></tr><tr><td>Tumor de Wilms (nefroblastoma)</td><td>2 a 5 anos</td><td>lisa, <strong>não cruza a linha média</strong></td><td>criança em bom estado geral, hipertensão, hematúria, associação com anomalias geniturinárias</td></tr><tr><td>Hepatoblastoma</td><td>&lt; 3 anos</td><td>hepatomegalia dura em lobo direito</td><td>alfafetoproteína muito elevada</td></tr><tr><td>Linfoma de Burkitt</td><td>escolar</td><td>massa retroperitoneal ou ileocecal de crescimento explosivo</td><td>febre, sudorese noturna, perda de peso, DHL muito alta</td></tr><tr><td>Hidronefrose / rim multicístico</td><td>qualquer</td><td>massa lisa em flanco</td><td>sem sinais sistêmicos, sem perda de peso</td></tr></tbody></table></div>
+<h3>Síndrome de lise tumoral</h3>
+<p>É a emergência oncológica que mais cai. Ocorre quando uma grande massa de células com alta taxa de proliferação se rompe e despeja conteúdo intracelular na circulação — espontaneamente ou logo após a primeira dose de quimioterapia. O quarteto laboratorial é <strong>hiperuricemia, hipercalemia, hiperfosfatemia e hipocalcemia</strong>, com injúria renal aguda por precipitação de urato e de fosfato de cálcio nos túbulos.</p>
+<p>Alto risco: linfoma de Burkitt, leucemias com hiperleucocitose, massas volumosas, <strong>DHL muito elevada</strong>, ácido úrico alto e creatinina já alterada antes de tratar.</p>
+<p>Manejo antes da quimioterapia:</p>
+<ul><li><strong>Hiper-hidratação venosa</strong> (cerca de 2,5 a 3 L/m²/dia), sem potássio e sem cálcio na solução, mantendo diurese abundante;</li><li><strong>Rasburicase</strong> no alto risco — é uma urato-oxidase que <strong>degrada o ácido úrico já formado</strong>, derrubando-o em horas;</li><li><strong>Alopurinol</strong> apenas no risco intermediário: inibe a xantina-oxidase e impede a formação de urato <strong>novo</strong>, mas não elimina o que já está circulando;</li><li>laboratório seriado (potássio, fósforo, cálcio, ácido úrico, creatinina) a cada 6 a 8 horas;</li><li><strong>adiar a quimioterapia</strong> até a estabilização metabólica; diálise é resgate, não profilaxia.</li></ul>
+<blockquote><p>A alternativa "iniciar a quimioterapia imediatamente porque o atraso piora o prognóstico" explora um medo real, mas inverte a prioridade: algumas horas de estabilização não mudam o prognóstico oncológico, e a lise não controlada mata.</p></blockquote>
+<hr>
+<h2>Tireoide: da triagem neonatal ao adolescente</h2>
+<h3>Hipotireoidismo congênito e teste do pezinho</h3>
+<p>É a principal causa evitável de deficiência intelectual, e o recém-nascido é <strong>assintomático</strong> nas primeiras semanas — daí a triagem. Quando há sinais, são inespecíficos: <strong>icterícia prolongada por bilirrubina indireta</strong>, hipotonia, choro rouco, constipação, hérnia umbilical, abdome globoso, fontanela posterior ampla, macroglossia, dificuldade de sucção.</p>
+<p>O mecanismo da icterícia é direto: o déficit hormonal reduz a atividade da glicuroniltransferase hepática e lentifica o trânsito intestinal, aumentando a circulação êntero-hepática da bilirrubina. Por isso icterícia indireta persistindo além da primeira semana <strong>sem incompatibilidade sanguínea</strong> — mãe e recém-nascido do mesmo tipo, Coombs negativo — obriga a pensar em tireoide antes de pensar em obstrução biliar, que daria bilirrubina <strong>direta</strong>, colúria e acolia fecal.</p>
+<p>Conduta pelo valor de TSH em papel-filtro (coleta ideal entre o 3º e o 5º dia de vida):</p>
+<div class="tbl"><table><thead><tr><th>TSH na triagem</th><th>Conduta</th></tr></thead><tbody><tr><td>Abaixo do corte (em geral &lt; 10 mUI/L)</td><td>Normal, seguimento habitual</td></tr><tr><td>Discretamente alterado, próximo ao corte</td><td>Repetir a amostra em papel-filtro</td></tr><tr><td><strong>Francamente alterado (&gt; 20 mUI/L)</strong></td><td>Convocação imediata e <strong>dosagem sérica de TSH e T4 livre</strong>; iniciar levotiroxina assim que confirmado</td></tr></tbody></table></div>
+<blockquote><p>A janela terapêutica é o dado que decide a questão: o tratamento deve começar entre <strong>14 e 21 dias de vida</strong>, no máximo dentro do primeiro mês. Repetir o teste do pezinho em 30 dias ou "observar por 3 meses" queima exatamente essa janela.</p></blockquote>
+<p>Seguimento: a criança que iniciou levotiroxina precocemente <strong>sem etiologia definida</strong> — tireoide tópica e de tamanho normal na ultrassonografia — pode ter tido hipotireoidismo transitório, mas a reposição é mantida durante toda a fase de maturação do sistema nervoso central, até cerca de <strong>2 a 3 anos</strong>. Só então se faz a reavaliação, com suspensão programada e nova dosagem de TSH e T4 livre. Sob tratamento, a cintilografia é pouco informativa, porque o TSH suprimido reduz a captação.</p>
+<h3>Hipo e hipertireoidismo no adolescente</h3>
+<p><strong>Hipotireoidismo primário</strong> — TSH alto com T4 livre baixo. Fadiga, ganho de peso, constipação, pele seca, intolerância ao frio, bradicardia, irregularidade menstrual, queda de velocidade de crescimento e <strong>fase de relaxamento lentificada</strong> nos reflexos profundos. A causa mais comum em área suficiente em iodo é a <strong>tireoidite de Hashimoto</strong>, e quem define a etiologia é o <strong>anti-TPO</strong>, positivo em 90 a 95% dos casos — não a ultrassonografia, que só mostra heterogeneidade inespecífica, nem a cintilografia, que não tem papel aqui.</p>
+<p><strong>Hipertireoidismo</strong> — TSH suprimido com T4 livre elevado. Palpitações, taquicardia, perda de peso com apetite aumentado, intolerância ao calor, tremor fino, irritabilidade. A causa esmagadoramente mais comum na adolescência é a <strong>doença de Graves</strong>, e o sinal que a identifica é a tríade <strong>bócio difuso + exoftalmia + tireotoxicose</strong>: os anticorpos antirreceptor de TSH estimulam toda a glândula e agridem o tecido retro-orbitário.</p>
+<div class="tbl"><table><thead><tr><th>Diagnóstico</th><th>TSH</th><th>T4 livre</th><th>Glândula</th><th>Olhos</th></tr></thead><tbody><tr><td>Doença de Graves</td><td>suprimido</td><td>alto</td><td>bócio <strong>difuso</strong></td><td>exoftalmia</td></tr><tr><td>Hashimoto (fase inicial, transitória)</td><td>suprimido</td><td>alto</td><td>bócio firme, irregular</td><td>normais</td></tr><tr><td>Adenoma tóxico</td><td>suprimido</td><td>alto</td><td><strong>nódulo único</strong></td><td>normais</td></tr><tr><td>Carcinoma papilífero</td><td>normal</td><td>normal</td><td>nódulo, adenopatia cervical</td><td>normais</td></tr><tr><td>Hashimoto estabelecido</td><td>alto</td><td>baixo</td><td>bócio ou atrofia</td><td>normais</td></tr></tbody></table></div>
+<hr>
+<h2>O que mais caiu — mapa rápido</h2>
+<ul><li><strong>Sigilo do adolescente:</strong> regra, com exceções fechadas — risco de vida, doença transmissível sem adesão, violência, ausência de discernimento. Toda alternativa com "sempre" ou "nunca" tende a ser falsa.</li><li><strong>Atendimento desacompanhado e contracepção:</strong> direito do adolescente, sem autorização de responsável.</li><li><strong>ECA:</strong> art. 13 (comunicar suspeita de maus-tratos) e art. 14, § 1º (vacinação obrigatória). Negligência é violência.</li><li><strong>Leucemia linfoide aguda:</strong> cinco das seis questões de oncologia partiram dela — febre, dor óssea noturna, palidez, púrpura e citopenias com organomegalia. Primeiro exame: hemograma com plaquetas.</li><li><strong>Lise tumoral:</strong> hidratação vigorosa + rasburicase + laboratório seriado, adiando a quimioterapia. Alopurinol não desfaz o urato já formado.</li><li><strong>Triagem neonatal:</strong> TSH &gt; 20 mUI/L no papel-filtro é dosagem sérica imediata, não repetição do teste.</li><li><strong>Tireoide:</strong> anti-TPO define a etiologia do hipotireoidismo; exoftalmia com bócio difuso define Graves.</li></ul></script>
+<!-- Tutor local: define window.DEEPSEEK_KEY. O arquivo NAO vai para o repositorio,
+     entao online ele da 404 e o chat simplesmente nao aparece. -->
+<script src="../deepseek_key.js"></script>
+<script>
+/* ─────────────────────────────────────────────────────────────────────────────
+   CONTRATO DE DADOS — para adaptar a outro tema, troque apenas QUIZ e o resumo.
+   Cada item: { question, options[2..6], correctIndex, explanation }
+   ──────────────────────────────────────────────────────────────────────────── */
+var TITLE      = "Simulado";
+var EYEBROW    = "Pediatria · Questões Norteadoras";
+var DISCIPLINA = "PED";   // pasta de origem (PED, GO...) — usada pelo índice
+var SUBTITLE = "As questões do simulado, com o gabarito do professor";
+var INTRO    = "As 20 questões do simulado aplicado pelo professor, transcritas na íntegra, com o gabarito oficial e explicação de cada resposta. Cobre consulta do adolescente, ECA, oncologia pediátrica, tireoide e triagem neonatal.";
+
+var QUIZ = [
+  {
+    "question": "Na consulta do adolescente, é essencial que o profissional de saúde adote uma abordagem que respeite princípios éticos e legais, promovendo um ambiente de acolhimento e confiança. Sobre essa abordagem, assinale a alternativa CORRETA:",
+    "options": [
+      "A consulta do adolescente deve reconhecer sua individualidade e diversidade, promovendo um ambiente seguro para escuta ativa e construção de vínculo terapêutico.",
+      "A confidencialidade na consulta do adolescente deve ser sempre garantida, sem exceções, independentemente do conteúdo discutido.",
+      "O consentimento dos pais é obrigatório para qualquer atendimento ao adolescente, independentemente da situação clínica apresentada.",
+      "O modelo ideal de consulta baseia-se na transmissão unidirecional de informações pelo médico, minimizando a participação ativa do adolescente na tomada de decisões."
+    ],
+    "correctIndex": 0,
+    "explanation": "A consulta do adolescente parte do reconhecimento de que ele é sujeito de direitos, com individualidade e diversidade próprias, e por isso exige escuta ativa, privacidade e construção de vínculo. A confidencialidade é a regra, mas não é absoluta: cede diante de risco de vida ou risco a terceiros, abuso sexual e não adesão a tratamento de doença transmissível. O consentimento dos pais também não é obrigatório em todo atendimento, já que o adolescente com discernimento pode ser atendido sozinho, e a comunicação unidirecional impede exatamente a corresponsabilização que sustenta a adesão."
+  },
+  {
+    "question": "Adolescente, sexo feminino, 15 anos de idade, é levada à consulta de rotina por sua mãe. Reluta para permitir o exame físico. Ao conversar, sem a presença materna, relata que tem se cortado com gilete nos antebraços, mas seus pais não têm conhecimento do fato, pois tem usado mangas compridas para cobrir os ferimentos. Refere término de namoro com um rapaz de 16 anos de idade, com quem teve iniciação sexual, de forma voluntária. Relata fazer uso de contraceptivos e deseja saber se deve continuar. Tem obtido notas medianas na escola. Define-se viciada em internet e jogos eletrônicos, passando mais de 6 horas por dia em uso de telas. Informa que tem poucos amigos. Ao exame físico: em bom estado geral, lúcida, orientada; comunica-se pouco na presença da mãe; demonstra tristeza; fala sobre namoro terminado, hipervalorizando a situação com conteúdo negativo. Demonstra sofrimento, autocrítica e baixa autoestima. Apresenta várias lesões cicatriciais em antebraços, as quais justificam ser decorrentes de tentativa de se \"machucar\". Sem outros achados anormais. Indique a conduta médica adequada, definida pelas normativas éticas nessa situação, com relação à mãe e à confidencialidade da consulta, no que diz respeito aos indícios de autoagressão:",
+    "options": [
+      "A mãe deve ser informada no momento da consulta, com a presença da paciente, pois há risco à vida da adolescente por indícios claros de autoagressão.",
+      "Caso a paciente escolha uma pessoa adulta para interlocução essa deve ser, necessariamente, seu responsável legal.",
+      "Pode ser pactuado que a própria adolescente converse com a mãe, pois esta deve ser informada, já que há risco com a autoagressão.",
+      "A mãe não deve ser informada, pois afetaria a autonomia da paciente, sendo o sigilo um direito do paciente adolescente."
+    ],
+    "correctIndex": 0,
+    "explanation": "Autoagressão repetida com objeto cortante, em adolescente com humor deprimido, autocrítica negativa e baixa autoestima, configura risco à própria vida — a hipótese em que a quebra do sigilo deixa de ser opcional. A comunicação deve ser feita ainda na consulta e com a adolescente presente, restrita ao necessário para acionar a proteção, preservando o vínculo e permitindo encaminhamento imediato à saúde mental. Delegar a conversa à própria adolescente, mesmo pactuada, é a alternativa mais tentadora, mas deixa o risco sem retaguarda e não garante que a família seja informada em tempo útil."
+  },
+  {
+    "question": "O adolescente tem direito à privacidade; à preservação de sigilo, à confidencialidade e ao consentimento informado em suas consultas médicas. Em qual das situações a seguir o médico está autorizado a quebrar o sigilo médico?",
+    "options": [
+      "Ausência de adesão ao tratamento de tuberculose.",
+      "Na suspeita de gravidez.",
+      "Na experimentação de drogas ilícitas.",
+      "Ao solicitar sorologia para HIV para se tranquilizar."
+    ],
+    "correctIndex": 0,
+    "explanation": "A não adesão ao tratamento da tuberculose é a situação clássica de quebra do sigilo: doença de transmissão respiratória, de notificação compulsória, em que o abandono expõe o próprio adolescente e a coletividade e ainda seleciona bacilos resistentes. Suspeita de gravidez, experimentação de drogas ilícitas e pedido de sorologia para HIV exigem acolhimento e orientação, mas não configuram risco iminente de vida nem dano a terceiros, então o sigilo se mantém."
+  },
+  {
+    "question": "Adolescente, 16 anos de idade, é levada à UPA pela mãe, por ter sido agredida fisicamente há, aproximadamente, 3 horas. O relato é de que o padrasto a espancou ao chegar, alcoolizado, em casa. O médico observa que a menor está tensa e retraída, limitando-se a responder com a cabeça às suas perguntas, enquanto a genitora relata o quadro que encontrou em casa. Identifique a atitude mais adequada do médico ao proceder à anamnese.",
+    "options": [
+      "Solicitar à mãe que lhe permita uma conversa só com a menor, antes do exame físico.",
+      "Solicitar a presença do padrasto durante a anamnese e acareá-lo para obter a verdade.",
+      "Solicitar que a menor faça o relato detalhado e examiná-la na presença da genitora.",
+      "Solicitar a presença de uma testemunha durante anamnese e o exame físico."
+    ],
+    "correctIndex": 0,
+    "explanation": "Suspeita de violência intrafamiliar exige entrevista reservada com a vítima antes do exame físico: a adolescente está tensa e retraída, e a presença de familiares pode inibir o relato ou reproduzir a coação. Depois da escuta a sós vêm o exame físico com descrição detalhada das lesões, a notificação compulsória e a comunicação ao Conselho Tutelar, prevista no art. 13 do ECA. Acarear o suposto agressor não é função do médico, expõe a adolescente a retaliação e contamina a apuração."
+  },
+  {
+    "question": "Ao longo do ano, a Sociedade Brasileira de Pediatria (SBP) lança diversas campanhas, sendo uma delas a Semana Nacional de Prevenção da Gravidez na Adolescência. Diversos são os fatores que contribuem para a gestação na adolescência. Analise as afirmativas abaixo. I. Com o acesso à internet, a falta de informação sobre sexualidade, direitos sexuais e reprodutivos deixou de ser um dos fatores para a ocorrência de gravidez na adolescência. II. Questões inerentes ao desenvolvimento psíquico do adolescente e fatores culturais também estão presentes. III. A gravidez na adolescência é considerada problema de saúde infantil por expor apenas o feto a riscos. IV. Adolescente menor de 16 anos ou com intervalo pós menarca menor que 2 anos são fatores que aumentam os riscos da gestação na adolescência. Estão corretas as afirmativas:",
+    "options": [
+      "II e IV apenas.",
+      "II e III apenas.",
+      "I apenas.",
+      "I, II, III e IV.",
+      "I, II e III apenas."
+    ],
+    "correctIndex": 0,
+    "explanation": "As afirmativas II e IV estão corretas: a impulsividade e o pensamento ainda concreto próprios do desenvolvimento psíquico do adolescente, somados a fatores culturais e sociais, pesam tanto quanto a informação, e idade abaixo de 16 anos ou intervalo pós-menarca menor que 2 anos marcam imaturidade do eixo reprodutivo e da pelve, aumentando prematuridade, baixo peso e desfechos hipertensivos. A I é falsa porque acesso à internet não equivale a informação qualificada sobre direitos sexuais e reprodutivos. A III é falsa porque o risco não é só fetal: a mãe adolescente tem mais anemia, pré-eclâmpsia, parto prematuro, evasão escolar e repetição da gestação."
+  },
+  {
+    "question": "Adolescente de 15 anos chega desacompanhada para consulta ginecológica de primeira vez. Solicita início de método contraceptivo por ter iniciado vida sexual há 5 meses. A conduta que deve ser adotada de forma mais segura e correta é:",
+    "options": [
+      "Proceder à consulta normalmente e orientá-la quanto aos métodos contraceptivos possíveis, iniciando o mais seguro para seu caso.",
+      "Proceder normalmente à consulta, mas só iniciar método contraceptivo se houver autorização de um responsável.",
+      "Realizar a consulta, mas orientar que, no retorno, a mesma esteja acompanhada do responsável.",
+      "Reagendar a consulta, solicitando que a paciente retorne com um responsável."
+    ],
+    "correctIndex": 0,
+    "explanation": "O adolescente tem direito ao atendimento desacompanhado e à prescrição de contraceptivo sem autorização de responsável, desde que tenha discernimento sobre a conduta — exigir acompanhante cria barreira de acesso justamente em quem já iniciou vida sexual há 5 meses. A conduta correta é conduzir a consulta, orientar sobre os métodos disponíveis e iniciar o mais adequado ao caso, sempre com dupla proteção pelo preservativo por causa das ISTs. Reagendar ou adiar o método apenas transfere para as próximas semanas o risco de gravidez não planejada."
+  },
+  {
+    "question": "Lactente com 18 meses está hospitalizado por crise de sibilância, em uso de nebulizações com salbutamol, hidratação intravenosa e oxigenioterapia (saturação em ar ambiente = 85%). Pais demonstram descontentamento com as medidas que estão sendo aplicadas e durante a noite conseguem evadir com a criança do hospital. Sobre esta situação analise as assertivas abaixo e a relação entre elas. I – O registro do ocorrido no prontuário do paciente e a comunicação à autoridade competente (conselho tutelar) deve ser realizado. PORQUE II – A evasão por iniciativa dos pais pode ser considerada um ato de violência por parte do responsável. A respeito destas asserções, assinale a opção correta.",
+    "options": [
+      "As asserções I e II são proposições verdadeiras, e a II é uma justificativa da I.",
+      "As asserções I e II são proposições verdadeiras, mas a II não é uma justificativa da I.",
+      "A asserção I é uma proposição verdadeira, e a II é uma proposição falsa.",
+      "A asserção I é uma proposição falsa, e a II é uma proposição verdadeira.",
+      "As asserções I e II são proposições falsas."
+    ],
+    "correctIndex": 0,
+    "explanation": "As duas asserções são verdadeiras e a segunda justifica a primeira. Retirar do hospital, durante a noite, um lactente em oxigenioterapia por saturação de 85% em ar ambiente priva a criança de cuidado essencial e configura negligência, que é uma forma de violência praticada pelo responsável. É exatamente por isso que o registro circunstanciado em prontuário e a comunicação ao Conselho Tutelar são obrigatórios: o art. 13 do ECA determina a comunicação de casos suspeitos ou confirmados de maus-tratos."
+  },
+  {
+    "question": "Adolescente, sexo feminino, 15 anos de idade, veio à Unidade Básica de Saúde (UBS) acompanhada de uma prima para consulta de rotina. Ela entra na consulta sozinha para atendimento. Tem antecedente de asma e faz uso de corticoide inalatório em baixa dose associado a beta-2 de longa ação de forma contínua (formoterol 6 mcg + budesonida 200 mcg de 12 em 12 horas). Ela refere preocupação com tosse iniciada há uma semana, sem coriza ou febre. Ao questionar possíveis desencadeantes para a tosse, ela conta que tudo começou após fumar um cigarro de maconha na casa de um amigo há uma semana. Diz que foi uma única vez e que não pretende repetir, justamente por causa dessa tosse. Ela só demonstra preocupação com a reação dos pais se soubessem do evento e pede que essas informações não sejam compartilhadas com eles. Do ponto de vista ético, qual deve ser a conduta neste caso?",
+    "options": [
+      "Garantir o atendimento e o sigilo, orientando os males dessa prática e prescrevendo medicação pertinente ao tratamento da tosse.",
+      "Quebrar o sigilo e comunicar os pais sobre o uso de drogas, pois essa atitude comprometeu o controle de doença crônica (asma).",
+      "Fazer o atendimento médico normalmente e, após liberação do paciente, fazer relatório ao Conselho Tutelar, por se tratar de crime (drogas ilícitas).",
+      "Solicitar a convocação dos pais e aguardar o comparecimento deles antes de prosseguir com o atendimento."
+    ],
+    "correctIndex": 0,
+    "explanation": "O episódio único de uso de maconha, sem sinais de dependência, sem risco de vida e sem envolvimento de terceiros, não autoriza a quebra do sigilo — romper a confiança nesse ponto é o que faz o adolescente deixar de procurar o serviço de saúde. A conduta é atender, garantir o sigilo, orientar sobre o efeito irritativo da fumaça nas vias aéreas e o risco de broncoespasmo em quem tem asma, reforçar a adesão ao corticoide inalatório e tratar a tosse. Comunicar os pais alegando descontrole da asma é a alternativa mais tentadora, mas um episódio isolado não configura o risco iminente que a quebra exige."
+  },
+  {
+    "question": "Ao realizar visita domiciliar a uma família, a equipe da saúde da família (eSF) identifica atraso vacinal nas três crianças residentes na casa, todas menores de 5 anos de idade. Os pais informaram que optaram por suspender o esquema de vacinação dos seus filhos, pois questionam os benefícios de vacinas. De acordo com o Estatuto da Criança e do Adolescente, a eSF, nesse caso, deve-se:",
+    "options": [
+      "Acionar o Conselho Tutelar de forma imediata e proceder à vacinação nessa mesma visita, uma vez que a imunização das crianças é obrigatória nos casos recomendados pelas autoridades sanitárias.",
+      "Acatar a decisão dos pais que possuem o pátrio poder, respeitando as convicções da família frente à questão da necessidade da imunização cada vez mais controversa.",
+      "Sensibilizar a família por meio de estratégias de convencimento sobre benefícios da vacinação e, em situações especiais, como em risco iminente de adoecimento, acionar o Conselho Tutelar.",
+      "Realizar a vacinação das crianças nessa mesma visita, contrariando a opinião dos pais, pois, do ponto de vista da proteção à criança, negar-lhes a vacinação pode ser considerado negligência."
+    ],
+    "correctIndex": 0,
+    "explanation": "O art. 14, § 1º, do ECA torna obrigatória a vacinação das crianças nos casos recomendados pelas autoridades sanitárias, de modo que a recusa vacinal deliberada não está no campo de escolha dos pais: é negligência. Com três crianças menores de 5 anos já em atraso e decisão familiar de suspender o esquema, cabe imunizar na própria visita e comunicar o Conselho Tutelar de imediato, com base no art. 13. Apenas sensibilizar a família e reservar o Conselho Tutelar para o risco iminente soa razoável, mas mantém por tempo indeterminado o grupo mais vulnerável a coqueluche, sarampo e meningite sem proteção."
+  },
+  {
+    "question": "Escolar de 6 anos chega a unidade básica de saúde, acompanhado por seus pais, que relatam que no último mês a criança iniciou quadro de adinamia, fadiga, dores em membros inferiores e nas articulações dos joelhos, acompanhado de alguns episódios de febre não aferida. Referem ainda o surgimento de manchas arroxeadas no corpo, sendo essas indolores em relação com trauma. Exame físico: palidez cutâneo mucosa ++/4+, linfonodomegalias em região cervical bilateralmente, baço palpável a 6,5cm do rebordo costal esquerdo, fígado palpável a 3,5cm do rebordo costal direito, equimoses difusas em membros inferiores e dorso. Procuraram atendimento há cerca de quatro dias atrás na UPA, onde foram solicitados alguns exames laboratoriais: hematimetria: 2.800.000/ mm3, hematócrito: 21,5%; hemoglobina: 7,8g/dL, leucócitos: 8.000/mm3 (linfócitos 88%, segmentados 12%), contagem de plaquetas 76. 000/mm3. Com base no caso clínico a principal hipótese diagnóstica é:",
+    "options": [
+      "Leucemia linfoide aguda.",
+      "Aplasia medular.",
+      "Artrite reumatoide.",
+      "Mononucleose infecciosa."
+    ],
+    "correctIndex": 0,
+    "explanation": "O conjunto febre, dor óssea e articular, palidez, equimoses espontâneas, linfonodomegalia cervical e hepatoesplenomegalia volumosa (baço a 6,5 cm) com anemia (Hb 7,8 g/dL), plaquetopenia (76.000/mm³) e leucócitos normais às custas de 88% de linfócitos traduz substituição da medula por blastos — o padrão da leucemia linfoide aguda, o câncer mais comum da infância. A aplasia medular cursa com citopenias, mas não produz visceromegalia nem adenomegalia. Artrite reumatoide e mononucleose não explicam anemia grave com plaquetopenia e infiltração de múltiplos órgãos."
+  },
+  {
+    "question": "Adolescente de 14 anos, em consulta de urgência, apresenta aumento de volume testicular à direita, indolor, sem sinais flogísticos, associado a febre, astenia, tosse esporádica. Em exame físico: palidez cutâneo-mucosa leve, afebril ao toque, presença de linfonodos em região de cadeia inguinal epitroclear, cervical bilaterais < 1,5 cm. Para início de investigação, o exame mais adequado de direcionamento para elucidação do caso é:",
+    "options": [
+      "Hemograma.",
+      "USG de bolsa escrotal.",
+      "Alfafetoproteína.",
+      "Desidrogenase lática."
+    ],
+    "correctIndex": 0,
+    "explanation": "Massa testicular indolor acompanhada de febre, astenia, tosse, palidez e adenomegalias em várias cadeias, inclusive epitroclear, aponta para doença linfoproliferativa com acometimento testicular, e não para tumor germinativo isolado. O hemograma é o exame inicial de direcionamento porque é barato, imediato e revela citopenias, leucocitose ou blastos circulantes que confirmam o comprometimento medular e mudam a urgência da conduta. A ultrassonografia de bolsa escrotal caracteriza a massa, mas não explica o quadro sistêmico; alfafetoproteína e desidrogenase láctica são marcadores complementares, úteis depois de definida a linha de investigação."
+  },
+  {
+    "question": "Criança de 3 anos é internada para investigação de um quadro caracterizado por febre, fadiga, anorexia e dor em joelhos, iniciado há um mês. O exame físico mostra criança pálida, com sopro sistólico ++/6 audível em todo o precórdio, petéquias e púrpuras em membros inferiores, além de discretas linfadenopatia cervical e hepatoesplenomegalia. O exame osteoarticular revela artrite em joelhos. Os exames laboratoriais apresentam anemia, leucopenia, trombocitopenia e aumento da velocidade de hemossedimentação. A principal hipótese diagnóstica nesse caso é:",
+    "options": [
+      "Leucemia linfoide aguda.",
+      "Púrpura trombocitopênica imunológica.",
+      "Artrite idiopática juvenil.",
+      "Vasculite por IgA."
+    ],
+    "correctIndex": 0,
+    "explanation": "Febre prolongada, dor em joelhos, palidez com sopro sistólico funcional, petéquias e púrpuras, adenomegalia e hepatoesplenomegalia associadas a pancitopenia (anemia, leucopenia e trombocitopenia) com VHS elevada compõem o quadro clássico de leucemia linfoide aguda em pré-escolar. A artrite idiopática juvenil pode cursar com febre e artrite, mas costuma dar leucocitose e trombocitose, não pancitopenia. A púrpura trombocitopênica imunológica reduz apenas as plaquetas, e a vasculite por IgA cursa com púrpura palpável em membros inferiores, sem anemia, leucopenia ou visceromegalia."
+  },
+  {
+    "question": "Menino de 3 anos e 6 meses, previamente hígido, foi trazido, pela mãe à UBS por febre de até 38°C e cansaço acima do habitual, quadro iniciado há cerca de 5 dias. Na noite anterior, relatou ter percebido manchas roxas em pernas e braços. Ao exame físico, a criança encontrava-se um pouco prostrada, com palidez cutaneomucosa, equimoses e petéquias nas faces interna e externa dos membros superiores e inferiores. O fígado era palpável 3 cm abaixo do rebordo costal direito. Demais aspectos do exame não revelaram particularidades. Considerando a principal hipótese diagnóstica, qual a conduta mais adequada?",
+    "options": [
+      "Solicitar hemograma, leucograma e contagem de plaquetas.",
+      "Solicitar sorologias para hepatite, enzimas hepáticas e perfil de coagulação.",
+      "Solicitar ultrassonografia abdominal e pesquisa de sangue oculto nas fezes.",
+      "Encaminhar o caso para a assistente social por suspeita de maus tratos."
+    ],
+    "correctIndex": 0,
+    "explanation": "Criança de 3 anos com febre, palidez, prostração, equimoses e petéquias em áreas não expostas a trauma e hepatomegalia de 3 cm tem como principal hipótese uma leucemia aguda, e o primeiro exame é o hemograma completo com contagem de plaquetas, que mostra as citopenias e eventuais blastos e define o encaminhamento imediato à oncologia pediátrica. É exame rápido, barato e disponível na atenção básica. Investigar hepatite ou sangramento digestivo ignora a citopenia como eixo do quadro, e atribuir as equimoses a maus-tratos antes de excluir causa hematológica atrasa um diagnóstico de janela terapêutica curta."
+  },
+  {
+    "question": "Pré-escolar, três anos, é atendido no ambulatório de pediatria geral com queixas de febre e dor nas pernas. A febre tem sido intermitente, tendo chegado a 38,6°C nos últimos cinco dias e a dor nas pernas o tem acordado à noite. As vacinas estão atualizadas e o paciente não tem comorbidades. Mãe relata que recentemente surgiram algumas manchas arroxeadas nos braços e pernas, porém, relaciona a trauma associado a atividades. Refere infecção viral prévia há aproximadamente três semanas, com resolução espontânea. Sinais vitais: Tax. 38,2°C, FC 120 batimentos/minuto, FR 24 irpm, PA 100 x 60 mmHg e saturação de oxigênio de 15 100% em ar ambiente. Adenomegalia cervical inexpressiva. Ausculta cardíaca e pulmonar sem alterações. Abdome sem hepatoesplenomegalia. Presença de equimoses discretamente dolorosas em áreas expostas e não expostas. Exame neurológico sem alterações. Exames laboratoriais: 1.500 leucócitos/mm³ (5% de eosinófilos, 5% neutrófilos, 85% linfócitos, 5% monócitos); hemoglobina 8,5 g/dl, hematócrito 24%, reticulócitos 0,4%, plaquetas 75.000/mm³. O diagnóstico mais provável para esse paciente é de:",
+    "options": [
+      "Leucemia linfoide aguda.",
+      "Anemia aplásica.",
+      "Leucemia linfoide crônica.",
+      "Leucemia mieloide aguda."
+    ],
+    "correctIndex": 0,
+    "explanation": "A leucemia linfoide aguda tem pico entre 2 e 5 anos e se apresenta exatamente assim: febre, dor óssea que desperta à noite, equimoses em áreas não expostas e citopenias — leucócitos 1.500/mm³ com 85% de linfócitos, Hb 8,5 g/dL com reticulócitos 0,4% (anemia hipoproliferativa) e plaquetas 75.000/mm³. A leucemia linfoide crônica praticamente não ocorre na infância, e a mieloide aguda responde por cerca de 15 a 20% das leucemias pediátricas, sendo bem menos provável nessa faixa. A anemia aplásica também dá pancitopenia, mas não causa dor óssea noturna nem predomínio linfocitário, porque não há clone proliferando dentro da medula."
+  },
+  {
+    "question": "Adolescente de 16 anos apresenta quadro de fadiga, ganho de peso, constipação e irregularidade menstrual há 6 meses. Ao exame: pele seca, bradicardia (FC 54 bpm) e reflexos tendinosos profundos com fase de relaxamento lentificada. TSH = 28 mUI/L (VR: 0,4-4,0) e T4 livre = 0,4 ng/dL (VR: 0,8- 1,8). Além da reposição de levotiroxina, qual exame é mais importante para definir a etiologia?",
+    "options": [
+      "Anticorpos anti-TPO.",
+      "USG de tireoide.",
+      "Cintilografia de tireoide.",
+      "T3, T4 livre e T4 total."
+    ],
+    "correctIndex": 0,
+    "explanation": "O quadro é de hipotireoidismo primário franco (TSH 28 mUI/L com T4 livre 0,4 ng/dL), e a causa mais frequente em adolescentes de áreas suficientes em iodo é a tireoidite de Hashimoto — por isso o exame que define a etiologia é a pesquisa de anticorpos antitireoperoxidase, positivos em cerca de 90 a 95% dos casos. A ultrassonografia pode mostrar glândula heterogênea, achado inespecífico que não confirma autoimunidade. A cintilografia não tem papel na investigação do hipotireoidismo, e repetir T3 e T4 total apenas redimensiona a gravidade já documentada."
+  },
+  {
+    "question": "Uma adolescente de 15 anos de idade procura atendimento por palpitações, intolerância ao calor, perda de 5 kg nos últimos 2 meses, apesar de apetite aumentado. Ao exame físico: frequência cardíaca de 116bpm, tremor fino de extremidades, bócio difuso e exoftalmia discreta. Os exames laboratoriais mostram TSH suprimido e T4 livre elevado. Nesse caso, o diagnóstico MAIS provável é de:",
+    "options": [
+      "Doença de Graves.",
+      "Fase inicial da tireoidite de Hashimoto.",
+      "Adenoma tóxico de tireoide.",
+      "Carcinoma papilífero de tireoide."
+    ],
+    "correctIndex": 0,
+    "explanation": "Tireotoxicose com TSH suprimido e T4 livre elevado, bócio difuso e exoftalmia em adolescente é doença de Graves: os anticorpos antirreceptor de TSH estimulam a glândula de forma difusa e, ao reagirem com o tecido retro-orbitário, produzem a orbitopatia, que não ocorre nas outras causas. Perda de 5 kg com apetite aumentado, frequência cardíaca de 116 bpm, tremor fino e intolerância ao calor completam o quadro hipermetabólico. O adenoma tóxico se apresenta como nódulo único sem oftalmopatia; a fase inicial da tireoidite de Hashimoto pode dar tireotoxicose transitória, também sem exoftalmia; e o carcinoma papilífero cursa com função tireoidiana normal."
+  },
+  {
+    "question": "Durante a consulta de puericultura, a mãe de um recém-nascido (RN) a termo, de 18 dias de vida, refere que o filho está em aleitamento materno exclusivo, com boa sucção ao seio, e não apresenta queixas. O RN apresenta bom ganho de peso e exame físico normal para idade. O médico verifica os resultados do teste do pezinho e observa o valor de TSH > 20 mUI/L. Segundo as orientações do Ministério da Saúde, a conduta correta neste caso é:",
+    "options": [
+      "Dosagem sérica de TSH e T4 livre imediatamente.",
+      "Observação clínica nos próximos 3 meses para detecção de sintomas.",
+      "Repetir o teste do pezinho em 30 dias.",
+      "Repetir o teste do pezinho imediatamente."
+    ],
+    "correctIndex": 0,
+    "explanation": "TSH acima de 20 mUI/L na triagem neonatal é valor muito alto — o ponto de corte usual em papel-filtro fica em torno de 10 mUI/L —, o que caracteriza resultado francamente alterado e dispensa nova amostra em papel: a criança deve ser convocada de imediato para dosagem sérica de TSH e T4 livre, com início de levotiroxina assim que confirmado. A pressa tem razão concreta: iniciar a reposição até os 14 a 21 dias de vida, e no máximo dentro do primeiro mês, é o que preserva o desenvolvimento neurológico, e o recém-nascido com hipotireoidismo congênito costuma ser assintomático nas primeiras semanas, como este de 18 dias com exame físico normal. Observar por 3 meses ou repetir o teste do pezinho em 30 dias desperdiçaria justamente essa janela. Registre-se que, no formulário original do simulado, esta questão ficou sem alternativa assinalada como correta, então há divergência possível quanto à resposta oficial."
+  },
+  {
+    "question": "Menino, 1 ano de idade, iniciou tratamento para hipotireoidismo congênito com 15 dias de vida, sem elucidação etiológica. Apresenta bom crescimento e ganho de peso, além de desenvolvimento neuropsicomotor normal, com dosagens de TSH e hormônios tireoidianos normais e boa aderência ao tratamento. Ultrassonografia de tireoide: glândula tópica de dimensões normais. Segundo o Manual Técnico da Triagem Neonatal Biológica do Ministério da Saúde (2016), qual é a conduta recomendada?",
+    "options": [
+      "Manter reposição hormonal até dois anos de idade.",
+      "Realizar cintilografia de tireoide para complementar a investigação etiológica.",
+      "Suspender a reposição hormonal e monitorar crescimento e desenvolvimento.",
+      "Reduzir a dose da reposição hormonal em 50% e repetir USG de tireoide em 30 dias."
+    ],
+    "correctIndex": 0,
+    "explanation": "A criança iniciou levotiroxina aos 15 dias de vida sem etiologia definida e tem ultrassonografia com glândula tópica de dimensões normais, o que deixa aberta a possibilidade de hipotireoidismo transitório — mas a reposição não pode ser interrompida durante o período de maturação do sistema nervoso central, que depende de hormônio tireoidiano nos primeiros anos de vida. Mantém-se a levotiroxina, com crescimento, desenvolvimento e dosagens normais, até por volta dos dois a três anos, quando então se faz a reavaliação com suspensão programada e nova dosagem de TSH e T4 livre. Suspender ou reduzir a dose agora arrisca dano cognitivo irreversível, e a cintilografia sob tratamento é pouco informativa, porque o TSH suprimido reduz a captação."
+  },
+  {
+    "question": "RNT, sem intercorrências ao nascimento, encontra-se no 10.º dia de vida, estável em ar ambiente e apresentando icterícia por aumento de bilirrubina indireta. Ao exame físico, além da icterícia, apresentava abdome globoso sem visceromegalias palpáveis e sem outras alterações ao exame físico. Mãe com tipagem sanguínea \"O positiva\" e RN \"O\" positivo também. A que doença a icterícia poderia estar associada?",
+    "options": [
+      "Hipotireoidismo congênito.",
+      "Hepatite aguda.",
+      "Obstrução de vias biliares.",
+      "Hipoatividade da medula óssea."
+    ],
+    "correctIndex": 0,
+    "explanation": "Icterícia por bilirrubina indireta que persiste no 10º dia de vida, sem incompatibilidade sanguínea (mãe O positivo e recém-nascido O positivo, o que afasta doença hemolítica ABO e Rh) e com abdome globoso, é sinal precoce de hipotireoidismo congênito: a deficiência hormonal reduz a atividade da glicuroniltransferase hepática e lentifica o trânsito intestinal, aumentando a circulação êntero-hepática da bilirrubina. Distensão abdominal, hérnia umbilical, hipotonia, constipação e fontanela posterior ampla acompanham o quadro. Obstrução de vias biliares e hepatite aguda cursariam com predomínio de bilirrubina direta, colúria e acolia fecal, o que não é o caso."
+  },
+  {
+    "question": "Menino de 7 anos, previamente hígido, é levado ao pronto-socorro com história de 3 semanas de febre vespertina, sudorese noturna, perda de peso de aproximadamente 3 kg e aumento progressivo do volume abdominal. Ao exame físico: palidez cutâneo-mucosa, linfonodomegalias cervicais e axilares de 2 a 3 cm, móveis e indolores, e abdome distendido, com massa palpável em flanco direito.\nExames laboratoriais na admissão:\nHemoglobina: 9,2 g/dL Leucócitos: 12.400/mm³ Plaquetas: 118.000/mm³ LDH: 2.800 U/L Ácido úrico: 9,8 mg/dL Creatinina: 1,2 mg/dL Potássio: 4,9 mEq/L Fósforo: 4,4 mg/dL Cálcio: 9,1 mg/dL\nA tomografia de abdome evidencia massa retroperitoneal volumosa, e a biópsia confirma linfoma de Burkitt.\nEm relação ao manejo inicial desse paciente, antes do início da quimioterapia, qual é a conduta mais adequada?",
+    "options": [
+      "Realizar hidratação venosa vigorosa associada à rasburicase, com monitorização laboratorial seriada, adiando a quimioterapia até a estabilização metabólica.",
+      "Iniciar a quimioterapia imediatamente, pois o atraso favorece a progressão tumoral e piora o prognóstico.",
+      "Instituir hidratação venosa e alopurinol, com início da quimioterapia em até 24 horas.",
+      "Indicar diálise peritoneal de urgência, antes de qualquer outra medida, devido à hiperuricemia."
+    ],
+    "correctIndex": 0,
+    "explanation": "O paciente reúne todos os fatores de altíssimo risco para síndrome de lise tumoral: linfoma de Burkitt, de altíssima taxa proliferativa, massa retroperitoneal volumosa, LDH 2.800 U/L, ácido úrico 9,8 mg/dL e creatinina já alterada em 1,2 mg/dL. A conduta é hiper-hidratação venosa, rasburicase — urato-oxidase que degrada o ácido úrico já circulante, ao contrário do alopurinol, que só bloqueia a formação de urato novo — e controle laboratorial seriado de potássio, fósforo, cálcio, ácido úrico e creatinina, adiando a quimioterapia até a estabilização metabólica. Iniciar a quimioterapia de imediato precipitaria lise maciça com hipercalemia, hiperfosfatemia e injúria renal aguda; a diálise é recurso de resgate, não medida inicial."
+  }
+];
+
+var LETTERS = ['A','B','C','D','E','F'];
+var SHUFFLE = true, LOCK = true;
+
+var S = { view:'home', started:false, finished:false, i:0, order:[], answers:[], open:{}, filter:'all', warn:false, chat:{} };
+
+function esc(s){ return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
+function pad(n){ return String(n).padStart(2,'0'); }
+
+function build(){
+  var qs = QUIZ.map(function(q,id){ return { question:q.question, options:q.options.slice(), correctIndex:q.correctIndex, explanation:q.explanation, image:q.image, imageCaption:q.imageCaption, id:id }; });
+  if (!SHUFFLE) return qs;
+  for (var i=qs.length-1;i>0;i--){ var j=Math.floor(Math.random()*(i+1)); var t=qs[i]; qs[i]=qs[j]; qs[j]=t; }
+  return qs.map(function(q){
+    var correct = q.options[q.correctIndex], o = q.options.slice();
+    for (var i=o.length-1;i>0;i--){ var j=Math.floor(Math.random()*(i+1)); var t=o[i]; o[i]=o[j]; o[j]=t; }
+    q.options = o; q.correctIndex = o.indexOf(correct); return q;
+  });
+}
+
+/* ── ações ─────────────────────────────────────────────────────────────────── */
+var A = {
+  home:      function(){ S.view='home'; S.started=false; S.finished=false; up(0); },
+  resumo:    function(){ S.view='resumo'; up(0); },
+  start:     function(){ var o=build(); S.view='quiz'; S.started=true; S.finished=false; S.i=0; S.order=o;
+                         S.answers=new Array(o.length).fill(null); S.open={}; S.filter='all'; S.warn=false; up(0); },
+  restart:   function(){ A.start(); },
+  sair:      function(){ S.view='home'; S.started=false; up(0); },   // guarda as respostas
+  retomar:   function(){ S.view='quiz'; S.started=true; S.finished=false; S.warn=false; up(0); },
+  go:        function(n){ if(n<0||n>S.order.length-1) return; S.i=n; S.warn=false; render(); },
+  jump:      function(n){ if(S.finished){ S.finished=false; S.i=n; S.warn=false; } else { if(n<0||n>S.order.length-1) return; S.i=n; S.warn=false; } up(0,'smooth'); },
+  pick:      function(n){ if(LOCK && S.answers[S.i]!==null) return; S.answers[S.i]=n; render(); },
+  prev:      function(){ A.go(S.i-1); },
+  next:      function(){ if(S.i<S.order.length-1) A.go(S.i+1); else A.finish(); },
+  finish:    function(){ var b=S.answers.filter(function(a){return a===null}).length;
+                         if(b>0 && !S.warn){ S.warn=true; render(); return; } S.finished=true; S.warn=false; up(0); },
+  force:     function(){ S.finished=true; S.warn=false; up(0); },
+  gotoBlank: function(){ var n=S.answers.findIndex(function(a){return a===null}); if(n>=0) A.go(n); },
+  back:      function(){ S.finished=false; S.warn=false; up(0); },
+  filter:    function(k){ S.filter=k; render(); },
+  toggle:    function(n){ S.open[n]=!S.open[n]; render(); },
+  toggleAll: function(){ var r=reviewList(), all=r.length>0 && r.every(function(x){return S.open[x.idx]});
+                         S.open={}; if(!all) r.forEach(function(x){ S.open[x.idx]=true; }); render(); }
+};
+function up(top, beh){ render(); window.scrollTo({ top: top||0, behavior: beh||'auto' }); }
+
+/* Aberto por duplo clique (file://) volta para o indice local; servido pela web,
+   volta para o publicado. Os dois listam os mesmos materiais. */
+function idxHref(){
+  var local = (typeof location !== 'undefined' && location.protocol === 'file:');
+  return local ? '../index_local.html' : '../index.html';
+}
+function emAndamento(){
+  return S.order.length > 0 && !S.finished &&
+         S.answers.some(function(a){ return a !== null; });
+}
+
+/* ── header ────────────────────────────────────────────────────────────────── */
+function renderHeader(){
+  var mono = "font-family:'IBM Plex Mono',monospace";
+  var left =
+    '<div style="min-width:0">' +
+      '<div style="display:flex;align-items:center;gap:8px;'+mono+';font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:#8a8578">' +
+        '<a href="'+idxHref()+'" class="h-ink" style="color:#2b57cc;text-decoration:none;white-space:nowrap">\u2190 Materiais</a>' +
+        '<span style="color:#d3cec4">/</span>' +
+        '<span style="overflow:hidden;text-overflow:ellipsis;white-space:nowrap">'+esc(EYEBROW)+'</span>' +
+      '</div>' +
+      '<h1 style="margin:1px 0 0;font-family:\'Newsreader\',Georgia,serif;font-size:20px;font-weight:500;letter-spacing:-.01em;line-height:1.15">'+esc(TITLE)+'</h1>' +
+    '</div>';
+
+  var right = '';
+  if (S.view === 'quiz' && S.started) {
+    var hit = counts().hit;
+    right = '<div style="display:flex;align-items:center;gap:10px;flex-shrink:0">' +
+              '<button type="button" data-act="sair" class="h-line" style="background:none;border:1px solid #ddd8ce;border-radius:9px;padding:6px 11px;'+mono+';font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;color:#5b6478;cursor:pointer;transition:border-color .15s ease">Sair</button>' +
+              '<div style="display:flex;align-items:center;gap:6px">' +
+                '<span style="'+mono+';font-size:15px;font-weight:600;letter-spacing:-.02em">'+hit+'</span>' +
+                '<span style="'+mono+';font-size:11px;color:#8a8578">/ '+S.order.length+'</span>' +
+              '</div></div>';
+  } else if (S.view !== 'home') {
+    right = '<button type="button" data-act="home" class="h-line" style="flex-shrink:0;background:none;border:1px solid #ddd8ce;border-radius:9px;padding:7px 13px;'+mono+';font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:#5b6478;cursor:pointer;transition:border-color .15s ease">← Início</button>';
+  }
+
+  var html = '<div style="display:flex;align-items:baseline;justify-content:space-between;gap:12px;margin-bottom:'+(S.view==='quiz'&&S.started?'10px':'2px')+'">'+left+right+'</div>';
+
+  if (S.view === 'quiz' && S.started) {
+    var c = counts();
+    var rail = S.order.map(function(q,n){
+      var a = S.answers[n], cur = n===S.i && !S.finished, bg = '#d3cec4';
+      if (a!==null) bg = (a===q.correctIndex) ? '#2e7d55' : '#c04437';
+      if (cur && a===null) bg = '#121a2b';
+      var st = a===null ? 'em branco' : (a===q.correctIndex ? 'correta' : 'incorreta');
+      return '<button type="button" data-act="jump" data-n="'+n+'" title="Questão '+(n+1)+' — '+st+'" aria-label="Questão '+(n+1)+' — '+st+'" style="flex:1 1 0;min-width:0;background:none;border:0;padding:13px 0;margin:0;cursor:pointer;display:flex;align-items:center;justify-content:center">' +
+             '<span style="display:block;width:100%;border-radius:99px;transition:height .18s ease,background .18s ease,box-shadow .18s ease;height:'+(cur?'17px':'9px')+';background:'+bg+';box-shadow:'+(cur?'0 0 0 3px rgba(18,26,43,.13)':'none')+'"></span></button>';
+    }).join('');
+    html += '<div><div style="display:flex;align-items:center;gap:3px">'+rail+'</div>' +
+            '<div style="display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:-2px">' +
+              '<div style="'+mono+';font-size:11px;letter-spacing:.04em;color:#5b6478">Questão '+pad(S.i+1)+' / '+S.order.length+'</div>' +
+              '<div style="display:flex;align-items:center;gap:12px;'+mono+';font-size:10.5px;color:#8a8578">' +
+                dot('#2e7d55',c.hit)+dot('#c04437',c.miss)+dot('#d3cec4',c.blank) +
+              '</div></div></div>';
+  }
+  document.getElementById('hdr').innerHTML = html;
+}
+function dot(color,n){ return '<span style="display:flex;align-items:center;gap:5px"><span style="width:7px;height:7px;border-radius:99px;background:'+color+';display:block"></span>'+n+'</span>'; }
+
+function counts(){
+  var hit=0, miss=0, blank=0;
+  S.answers.forEach(function(a,n){
+    if (a===null) blank++;
+    else if (S.order[n] && a===S.order[n].correctIndex) hit++;
+    else miss++;
+  });
+  return { hit:hit, miss:miss, blank:blank, total:S.order.length };
+}
+
+/* ── tela inicial ──────────────────────────────────────────────────────────── */
+function renderHome(){
+  var mono = "font-family:'IBM Plex Mono',monospace";
+  var secoes = (document.getElementById('resumoSrc').textContent.match(/<h2/g)||[]).length;
+  var cell = function(v,l){
+    return '<div style="background:#faf9f6;padding:16px 14px">' +
+      '<div style="'+mono+';font-size:22px;font-weight:500;letter-spacing:-.03em">'+v+'</div>' +
+      '<div style="'+mono+';font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:#8a8578;margin-top:3px">'+l+'</div></div>';
+  };
+  var card = function(act,tag,titulo,desc,cta){
+    return '<button type="button" data-act="'+act+'" class="h-card" style="display:flex;flex-direction:column;align-items:flex-start;gap:0;text-align:left;background:#fff;border:1px solid #e4e0d8;border-radius:18px;padding:24px 22px;cursor:pointer;transition:border-color .16s ease,transform .14s ease;box-shadow:0 1px 2px rgba(18,26,43,.04),0 12px 28px -20px rgba(18,26,43,.18)">' +
+      '<div style="'+mono+';font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:#2b57cc;margin-bottom:12px">'+tag+'</div>' +
+      '<div style="font-family:\'Newsreader\',Georgia,serif;font-size:26px;font-weight:500;letter-spacing:-.02em;line-height:1.15;margin-bottom:8px">'+titulo+'</div>' +
+      '<div style="font-size:14px;line-height:1.6;color:#5b6478;margin-bottom:18px;text-wrap:pretty">'+desc+'</div>' +
+      '<div style="'+mono+';font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:#121a2b">'+cta+'</div></button>';
+  };
+
+  document.getElementById('stage').innerHTML =
+    '<section style="padding:56px 0 0;animation:qFade .3s ease">' +
+      '<div style="'+mono+';font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:#2b57cc;margin-bottom:16px">Material de revisão</div>' +
+      '<h2 style="font-family:\'Newsreader\',Georgia,serif;font-size:40px;line-height:1.08;font-weight:400;letter-spacing:-.025em;margin:0 0 18px;text-wrap:pretty">'+esc(SUBTITLE)+'</h2>' +
+      '<p style="font-size:15.5px;line-height:1.65;color:#5b6478;margin:0 0 30px;max-width:52ch;text-wrap:pretty">'+esc(INTRO)+'</p>' +
+      '<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(108px,1fr));gap:1px;background:#e4e0d8;border:1px solid #e4e0d8;border-radius:14px;overflow:hidden;margin-bottom:32px">' +
+        cell(QUIZ.length,'Questões') + cell(secoes,'Seções') + cell('~'+Math.round(QUIZ.length*0.75),'Minutos') +
+      '</div>' +
+      '<div class="home-grid" style="display:grid;grid-template-columns:1fr 1fr;gap:12px">' +
+        (emAndamento()
+          ? card('retomar','Em andamento','Quiz',
+                 'Você parou na questão '+pad(S.i+1)+' de '+S.order.length+', com '+
+                 (S.order.length-counts().blank)+' respondida'+((S.order.length-counts().blank)===1?'':'s')+
+                 '. Suas respostas continuam guardadas.','Retomar →')
+          : card('start','Praticar','Quiz', QUIZ.length+' questões de múltipla escolha, com explicação assim que você responde e gabarito comentado no fim.','Começar →')) +
+        card('resumo','Estudar','Resumo','O conteúdo da aula em texto corrido, organizado em '+secoes+' seções para leitura antes da prova.','Ler →') +
+      '</div>' +
+      '<div style="margin-top:26px;display:flex;flex-wrap:wrap;align-items:center;gap:8px 18px;'+mono+';font-size:11px;color:#8a8578">' +
+        '<span>← →&nbsp; navegar</span><span>1–'+maxOpts()+'&nbsp; responder</span><span>Enter&nbsp; avançar</span>' +
+        (emAndamento() ? '<button type="button" data-act="start" class="h-ink" style="background:none;border:0;padding:0;'+mono+';font-size:11px;color:#8a8578;cursor:pointer;text-decoration:underline;text-underline-offset:3px">recomeçar do zero</button>' : '') +
+        '</div>' +
+    '</section>';
+}
+function maxOpts(){ return QUIZ.reduce(function(m,q){ return Math.max(m,q.options.length); },0); }
+
+/* ── resumo ────────────────────────────────────────────────────────────────── */
+function renderResumo(){
+  document.getElementById('stage').innerHTML =
+    '<section style="padding:34px 0 0;animation:qFade .3s ease">' +
+      '<div style="font-family:\'IBM Plex Mono\',monospace;font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:#2b57cc;margin-bottom:14px">Resumo</div>' +
+      '<div class="rsm">' + document.getElementById('resumoSrc').textContent + '</div>' +
+      '<div style="display:flex;flex-wrap:wrap;gap:9px;margin-top:38px;padding-top:24px;border-top:1px solid #e4e0d8">' +
+        '<button type="button" data-act="start" class="h-darkflat" style="background:#121a2b;color:#f5f3ef;border:0;border-radius:11px;padding:13px 24px;font-size:14px;font-weight:500;cursor:pointer;transition:background .16s ease">Fazer o quiz →</button>' +
+        '<button type="button" data-act="home" class="h-line" style="background:none;border:1px solid #ddd8ce;border-radius:11px;padding:13px 22px;font-size:14px;cursor:pointer;transition:border-color .15s ease">Voltar ao início</button>' +
+      '</div></section>';
+}
+
+/* imagem da questao — data URI ja resolvida pelo montar_quiz.py */
+function figura(q, cls){
+  if (!q.image) return '';
+  return '<figure class="fig'+(cls?' '+cls:'')+'"><img src="'+q.image+'" alt="'+esc(q.imageCaption||'Imagem da questão')+'">' +
+         (q.imageCaption ? '<figcaption>'+esc(q.imageCaption)+'</figcaption>' : '') + '</figure>';
+}
+
+/* ── questão ───────────────────────────────────────────────────────────────── */
+function renderQuestion(){
+  var mono = "font-family:'IBM Plex Mono',monospace";
+  var q = S.order[S.i], ans = S.answers[S.i], reveal = ans !== null;
+
+  var status = 'Não respondida', sColor = '#8a8578';
+  if (reveal) { var ok = ans===q.correctIndex; status = ok?'Você acertou':'Você errou'; sColor = ok?'#2e7d55':'#c04437'; }
+
+  var opts = q.options.map(function(text,n){
+    var isC = n===q.correctIndex, isMine = n===ans;
+    var bd='#e4e0d8', bg='#fff', fg='#121a2b', bBg='#f2efe9', bFg='#8a8578', mark='', mColor='', op='1', hbd='#2b57cc';
+    if (reveal) {
+      op = (isC||isMine) ? '1' : '.62';
+      if (isC)               { bd='#8fc7a7'; bg='#eef7f1'; fg='#1f5c3e'; bBg='#2e7d55'; bFg='#fff'; mark='✓'; mColor='#2e7d55'; }
+      if (isMine && !isC)    { bd='#e0a49a'; bg='#fdf0ee'; fg='#8f2f25'; bBg='#c04437'; bFg='#fff'; mark='✕'; mColor='#c04437'; }
+    } else if (isMine)       { bd='#121a2b'; bg='#f7f6f2'; bBg='#121a2b'; bFg='#f5f3ef'; }
+    var locked = reveal && LOCK;
+    return '<button type="button" data-act="pick" data-n="'+n+'" class="h-opt'+(locked?' locked':'')+'" style="--hbd:'+hbd+';display:flex;gap:13px;align-items:flex-start;width:100%;text-align:left;padding:14px 15px;border-radius:13px;font-size:15px;line-height:1.5;transition:border-color .15s ease,background .15s ease,transform .12s ease;border:1.5px solid '+bd+';background:'+bg+';color:'+fg+';cursor:'+(locked?'default':'pointer')+';opacity:'+op+'">' +
+      '<span style="flex-shrink:0;width:24px;height:24px;border-radius:7px;display:flex;align-items:center;justify-content:center;'+mono+';font-size:11.5px;font-weight:600;margin-top:1px;background:'+bBg+';color:'+bFg+'">'+LETTERS[n]+'</span>' +
+      '<span style="flex:1;min-width:0;text-wrap:pretty">'+esc(text)+'</span>' +
+      (mark ? '<span style="flex-shrink:0;'+mono+';font-size:14px;font-weight:600;margin-top:1px;color:'+mColor+'">'+mark+'</span>' : '') +
+      '</button>';
+  }).join('');
+
+  var expl = reveal ? '<div style="margin-top:20px;padding:16px 18px;background:#f7f6f2;border-left:2.5px solid #2b57cc;border-radius:0 12px 12px 0;animation:qFade .26s ease">' +
+      '<div style="'+mono+';font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:#2b57cc;margin-bottom:8px">Por quê</div>' +
+      '<p style="margin:0;font-size:14.5px;line-height:1.68;color:#39404f;text-wrap:pretty">'+esc(q.explanation)+'</p></div>' : '';
+
+  var blank = counts().blank;
+  var warn = S.warn ? '<div style="margin-top:14px;padding:15px 17px;background:#fdf7e9;border:1px solid #e8d5a3;border-radius:14px;animation:qFade .22s ease">' +
+      '<p style="margin:0 0 12px;font-size:14px;line-height:1.55;color:#6b5620">'+blank+(blank===1?' questão ainda está em branco.':' questões ainda estão em branco.')+' Você pode voltar nelas ou finalizar assim mesmo.</p>' +
+      '<div style="display:flex;flex-wrap:wrap;gap:8px">' +
+        '<button type="button" data-act="gotoBlank" style="background:#121a2b;color:#f5f3ef;border:0;border-radius:9px;padding:9px 16px;font-size:13px;font-weight:500;cursor:pointer">Ir para a 1ª em branco</button>' +
+        '<button type="button" data-act="force" style="background:none;color:#6b5620;border:1px solid #e8d5a3;border-radius:9px;padding:9px 16px;font-size:13px;cursor:pointer">Finalizar assim mesmo</button>' +
+      '</div></div>' : '';
+
+  var last = S.i === S.order.length-1;
+  var early = !last && (S.order.length - blank) > 0;
+
+  document.getElementById('stage').innerHTML =
+    '<section style="padding:26px 0 0">' +
+      '<article style="background:#fff;border:1px solid #e4e0d8;border-radius:18px;padding:26px 22px 24px;box-shadow:0 1px 2px rgba(18,26,43,.04),0 12px 28px -18px rgba(18,26,43,.18)">' +
+        '<div style="display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:14px">' +
+          '<div style="'+mono+';font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:#2b57cc">Questão '+pad(S.i+1)+'</div>' +
+          '<div style="'+mono+';font-size:10.5px;letter-spacing:.06em;color:'+sColor+'">'+status+'</div>' +
+        '</div>' +
+        '<h2 style="font-family:\'Newsreader\',Georgia,serif;font-size:22px;line-height:1.42;font-weight:400;letter-spacing:-.012em;margin:0 0 22px;text-wrap:pretty">'+esc(q.question)+'</h2>' +
+        figura(q, 'qfig') +
+        '<div style="display:flex;flex-direction:column;gap:9px">'+opts+'</div>' + expl +
+        (reveal ? chatBox(q, ans===q.correctIndex) : '') +
+      '</article>' + warn +
+      '<div style="display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:18px">' +
+        '<button type="button" data-act="prev" class="h-line" style="background:none;border:1px solid #ddd8ce;border-radius:11px;padding:12px 18px;font-size:14px;cursor:pointer;transition:border-color .15s ease,color .15s ease;color:'+(S.i===0?'#c4bfb4':'#121a2b')+';pointer-events:'+(S.i===0?'none':'auto')+'">← Anterior</button>' +
+        '<div style="display:flex;align-items:center;gap:8px">' +
+          (early ? '<button type="button" data-act="finish" class="h-ink" style="background:none;border:0;padding:12px 6px;'+mono+';font-size:11.5px;letter-spacing:.06em;text-transform:uppercase;color:#8a8578;cursor:pointer;text-decoration:underline;text-underline-offset:3px">Finalizar</button>' : '') +
+          '<button type="button" data-act="next" class="h-darkflat" style="background:#121a2b;color:#f5f3ef;border:0;border-radius:11px;padding:12px 22px;font-size:14px;font-weight:500;cursor:pointer;transition:background .16s ease">'+(last?'Finalizar':'Próxima →')+'</button>' +
+        '</div></div></section>';
+}
+
+/* ── resultado + gabarito comentado ────────────────────────────────────────── */
+function reviewList(){
+  return S.order.map(function(q,n){
+    var a = S.answers[n], ok = a!==null && a===q.correctIndex;
+    return { idx:n, ok:ok, blank:a===null, q:q, a:a };
+  }).filter(function(r){
+    return S.filter==='all' || (S.filter==='wrong'&&!r.ok&&!r.blank) || (S.filter==='right'&&r.ok) || (S.filter==='blank'&&r.blank);
+  });
+}
+
+function renderResult(){
+  var mono = "font-family:'IBM Plex Mono',monospace";
+  var c = counts(), pct = c.total ? Math.round(c.hit/c.total*100) : 0;
+
+  var title='Precisa revisar', msg='Releia o material com atenção e refaça o quiz — as explicações abaixo cobrem cada erro.';
+  if (pct>=90)      { title='Domínio sólido';   msg='Desempenho excelente. Confira as explicações das que escaparam e siga em frente.'; }
+  else if (pct>=70) { title='Bom desempenho';   msg='Base consistente. Revise os pontos errados abaixo para fechar as lacunas.'; }
+  else if (pct>=50) { title='Meio do caminho';  msg='Você acertou o essencial, mas há lacunas. Comece pelo filtro de erradas.'; }
+
+  var stat = function(v,l,color){
+    return '<div style="background:#faf9f6;padding:14px 10px">' +
+      '<div style="'+mono+';font-size:19px;font-weight:500;color:'+color+'">'+v+'</div>' +
+      '<div style="'+mono+';font-size:9.5px;letter-spacing:.09em;text-transform:uppercase;color:#8a8578;margin-top:2px">'+l+'</div></div>';
+  };
+
+  var fdefs = [['all','Todas',c.total],['wrong','Erradas',c.miss],['right','Certas',c.hit],['blank','Em branco',c.blank]];
+  var filters = fdefs.map(function(f){
+    var on = S.filter===f[0];
+    return '<button type="button" data-act="filter" data-k="'+f[0]+'" class="h-line" style="border-radius:99px;padding:8px 14px;font-size:13px;cursor:pointer;transition:all .15s ease;border:1px solid '+(on?'#121a2b':'#ddd8ce')+';background:'+(on?'#121a2b':'transparent')+';color:'+(on?'#f5f3ef':'#5b6478')+'">'+f[1]+' '+f[2]+'</button>';
+  }).join('');
+
+  var list = reviewList();
+  var allOpen = list.length>0 && list.every(function(r){ return S.open[r.idx]; });
+
+  var cards = list.map(function(r){
+    var numBg='#f0ede7', numFg='#8a8578';
+    if (!r.blank) { if (r.ok) { numBg='#e3f0e8'; numFg='#1f5c3e'; } else { numBg='#fbe6e2'; numFg='#8f2f25'; } }
+    var open = !!S.open[r.idx];
+    var body = '';
+    if (open) {
+      var opts = r.q.options.map(function(text,n){
+        var isC = n===r.q.correctIndex, isMine = n===r.a;
+        var bd='#eeebe4', bg='#fbfaf8', fg='#5b6478', bBg='#f0ede7', bFg='#8a8578', tag='', tBg='', tFg='';
+        if (isC)            { bd='#bcdcc9'; bg='#eef7f1'; fg='#1f5c3e'; bBg='#2e7d55'; bFg='#fff'; tag='Correta'; tBg='#d9ede1'; tFg='#1f5c3e'; }
+        if (isMine && !isC) { bd='#eec4bd'; bg='#fdf0ee'; fg='#8f2f25'; bBg='#c04437'; bFg='#fff'; tag='Sua resposta'; tBg='#f7ddd8'; tFg='#8f2f25'; }
+        if (isMine && isC)  { tag='Sua resposta ✓'; }
+        return '<div style="display:flex;gap:11px;align-items:flex-start;padding:11px 13px;border-radius:11px;font-size:14px;line-height:1.5;border:1px solid '+bd+';background:'+bg+';color:'+fg+'">' +
+          '<span style="flex-shrink:0;width:21px;height:21px;border-radius:6px;display:flex;align-items:center;justify-content:center;'+mono+';font-size:10.5px;font-weight:600;background:'+bBg+';color:'+bFg+'">'+LETTERS[n]+'</span>' +
+          '<span style="flex:1;min-width:0;text-wrap:pretty">'+esc(text)+'</span>' +
+          (tag ? '<span style="flex-shrink:0;'+mono+';font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;padding:3px 7px;border-radius:6px;margin-top:1px;background:'+tBg+';color:'+tFg+'">'+tag+'</span>' : '') +
+          '</div>';
+      }).join('');
+      body = '<div style="padding:2px 15px 18px;animation:qDrawer .2s ease">' +
+        '<div style="height:1px;background:#eeebe4;margin:0 0 16px"></div>' +
+        '<p style="font-family:\'Newsreader\',Georgia,serif;font-size:18px;line-height:1.5;margin:0 0 16px;text-wrap:pretty">'+esc(r.q.question)+'</p>' +
+        figura(r.q) +
+        '<div style="display:flex;flex-direction:column;gap:7px">'+opts+'</div>' +
+        '<div style="margin-top:16px;padding:14px 16px;background:#f7f6f2;border-left:2.5px solid #2b57cc;border-radius:0 11px 11px 0">' +
+          '<div style="'+mono+';font-size:9.5px;letter-spacing:.16em;text-transform:uppercase;color:#2b57cc;margin-bottom:7px">Por quê</div>' +
+          '<p style="margin:0;font-size:14px;line-height:1.65;color:#39404f;text-wrap:pretty">'+esc(r.q.explanation)+'</p></div>' +
+        '<button type="button" data-act="jump" data-n="'+r.idx+'" style="margin-top:14px;background:none;border:0;padding:0;'+mono+';font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:#2b57cc;cursor:pointer;text-decoration:underline;text-underline-offset:3px">Abrir no quiz →</button></div>';
+    }
+    return '<div style="background:#fff;border:1px solid '+(open?'#c9c3b6':'#e4e0d8')+';border-radius:14px;overflow:hidden;transition:border-color .15s ease">' +
+      '<button type="button" data-act="toggle" data-n="'+r.idx+'" style="display:flex;align-items:center;gap:12px;width:100%;text-align:left;background:none;border:0;padding:14px 15px;cursor:pointer">' +
+        '<span style="flex-shrink:0;width:28px;height:28px;border-radius:8px;display:flex;align-items:center;justify-content:center;'+mono+';font-size:12px;font-weight:600;background:'+numBg+';color:'+numFg+'">'+pad(r.idx+1)+'</span>' +
+        '<span style="flex:1;min-width:0;font-size:14px;line-height:1.45;color:#39404f;overflow:hidden;text-overflow:ellipsis;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical">'+esc(r.q.question)+'</span>' +
+        '<span style="flex-shrink:0;'+mono+';font-size:16px;color:#8a8578;width:16px;text-align:center">'+(open?'−':'+')+'</span>' +
+      '</button>' + body + '</div>';
+  }).join('');
+
+  document.getElementById('stage').innerHTML =
+    '<section style="padding:34px 0 0;animation:qFade .3s ease">' +
+      '<div style="'+mono+';font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:#2b57cc;margin-bottom:14px">Resultado</div>' +
+      '<h2 style="font-family:\'Newsreader\',Georgia,serif;font-size:36px;line-height:1.12;font-weight:400;letter-spacing:-.025em;margin:0 0 8px">'+title+'</h2>' +
+      '<p style="font-size:15px;line-height:1.6;color:#5b6478;margin:0 0 24px;max-width:48ch;text-wrap:pretty">'+msg+'</p>' +
+      '<div style="height:8px;border-radius:99px;background:#e4e0d8;overflow:hidden;margin-bottom:10px">' +
+        '<div style="height:100%;border-radius:99px;background:#121a2b;transition:width .7s cubic-bezier(.22,1,.36,1);width:'+pct+'%"></div></div>' +
+      '<div style="display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:#e4e0d8;border:1px solid #e4e0d8;border-radius:14px;overflow:hidden;margin-bottom:34px">' +
+        stat(c.hit,'Certas','#2e7d55')+stat(c.miss,'Erradas','#c04437')+stat(c.blank,'Branco','#8a8578')+stat(pct+'%','Aproveit.','#2b57cc') +
+      '</div>' +
+      '<div style="display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-bottom:14px">' +
+        '<h3 style="font-family:\'Newsreader\',Georgia,serif;font-size:22px;font-weight:500;letter-spacing:-.015em;margin:0">Gabarito comentado</h3>' +
+        '<button type="button" data-act="toggleAll" class="h-ink" style="background:none;border:0;padding:6px 0;'+mono+';font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:#5b6478;cursor:pointer;text-decoration:underline;text-underline-offset:3px">'+(allOpen?'Recolher tudo':'Expandir tudo')+'</button>' +
+      '</div>' +
+      '<div style="display:flex;gap:7px;flex-wrap:wrap;margin-bottom:16px">'+filters+'</div>' +
+      '<div style="display:flex;flex-direction:column;gap:8px">'+cards+'</div>' +
+      (list.length===0 ? '<div style="padding:38px 16px;text-align:center;color:#8a8578;font-size:14px;border:1px dashed #ddd8ce;border-radius:14px">Nenhuma questão neste filtro.</div>' : '') +
+      '<div style="display:flex;flex-wrap:wrap;gap:9px;margin-top:28px;padding-top:24px;border-top:1px solid #e4e0d8">' +
+        '<button type="button" data-act="restart" class="h-darkflat" style="background:#121a2b;color:#f5f3ef;border:0;border-radius:11px;padding:13px 24px;font-size:14px;font-weight:500;cursor:pointer;transition:background .16s ease">Refazer o quiz</button>' +
+        '<button type="button" data-act="back" class="h-line" style="background:none;border:1px solid #ddd8ce;border-radius:11px;padding:13px 22px;font-size:14px;cursor:pointer;transition:border-color .15s ease">Voltar às questões</button>' +
+        '<button type="button" data-act="resumo" class="h-line" style="background:none;border:1px solid #ddd8ce;border-radius:11px;padding:13px 22px;font-size:14px;cursor:pointer;transition:border-color .15s ease">Ler o resumo</button>' +
+      '</div></section>';
+}
+
+/* ── render + eventos ──────────────────────────────────────────────────────── */
+
+/* ─── Tutor DeepSeek — só local, só quando a questão foi errada ──────────────
+   A chave vem de ../deepseek_key.js, que não existe na versão publicada: online
+   o arquivo dá 404, dsOn() vira false e o chat simplesmente não é renderizado.
+   O histórico fica em S.chat[idDaQuestao] e sobrevive ao re-render do stage. */
+var DS_MODEL = 'deepseek-v4-flash';
+var DS_URL   = 'https://api.deepseek.com/chat/completions';
+var NLJS     = String.fromCharCode(10);
+var DS_MONO  = "font-family:'IBM Plex Mono',monospace";
+var DS_SANS  = "font-family:'IBM Plex Sans',system-ui,sans-serif";
+
+function dsOn(){ return typeof window.DEEPSEEK_KEY === 'string' && window.DEEPSEEK_KEY.length > 10; }
+
+
+/* ─── markdown do chat ───────────────────────────────────────────────────────
+   O modelo responde em markdown (**negrito**, listas, `codigo`, tabelas). O texto
+   vem de fora, entao a ordem importa: ESCAPA TUDO primeiro com esc() e so depois
+   aplica formatacao — assim nenhuma tag vinda da resposta vira HTML de verdade.
+   Como esc() ja trocou > por &gt;, a citacao casa com &gt; e nao com >.
+   Trechos de codigo saem de cena por um marcador NUL, que nao pode existir
+   no texto escapado, e voltam no fim — assim ` ` protege o que esta dentro. */
+function mdIn(t){
+  var Z = String.fromCharCode(0), codes = [];
+  t = t.replace(/`([^`]+)`/g, function(_, c){
+    codes.push(c);
+    return Z + 'c' + (codes.length - 1) + Z;
+  });
+  t = t.replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>');
+  t = t.replace(/__([^_]+)__/g, '<strong>$1</strong>');
+  t = t.replace(/(^|[\s(])\*([^*\n]+)\*/g, '$1<em>$2</em>');
+  t = t.replace(/(^|[\s(])_([^_\n]+)_/g, '$1<em>$2</em>');
+  t = t.replace(/\[([^\]]+)\]\((https?:\/\/[^)\s]+)\)/g,
+    '<a href="$2" target="_blank" rel="noopener" style="color:#2b57cc">$1</a>');
+  return t.replace(new RegExp(Z + 'c([0-9]+)' + Z, 'g'), function(_, i){
+    return '<code style="' + DS_MONO + ';font-size:12px;background:#f2efe9;' +
+           'border-radius:4px;padding:1px 5px">' + codes[i] + '</code>';
+  });
+}
+
+function mdChat(txt){
+  var Z = String.fromCharCode(0);
+  var t = esc(String(txt == null ? '' : txt));
+  var blocos = [];
+  t = t.replace(/```[a-zA-Z]*\n?([\s\S]*?)```/g, function(_, c){
+    blocos.push(c.replace(/\n+$/, ''));
+    return Z + 'b' + (blocos.length - 1) + Z;
+  });
+
+  var linhas = t.split('\n'), out = [], lista = null, par = [];
+  function fechaLista(){ if (lista) { out.push('</' + lista + '>'); lista = null; } }
+  function fechaPar(){
+    if (par.length) { out.push('<p style="margin:0 0 9px">' + mdIn(par.join(' ')) + '</p>'); par = []; }
+  }
+  function fecha(){ fechaPar(); fechaLista(); }
+
+  for (var i = 0; i < linhas.length; i++){
+    var l = linhas[i], t2 = l.trim();
+    if (!t2) { fecha(); continue; }
+
+    var bl = t2.match(new RegExp('^' + Z + 'b([0-9]+)' + Z + '$'));
+    if (bl) {
+      fecha();
+      out.push('<pre style="margin:0 0 9px;padding:9px 11px;background:#f7f6f2;border-radius:9px;' +
+               'overflow-x:auto;' + DS_MONO + ';font-size:12px;line-height:1.5">' + blocos[bl[1]] + '</pre>');
+      continue;
+    }
+
+    // tabela: linha com | ... | seguida da separadora | --- | --- |
+    if (t2.charAt(0) === '|' && i + 1 < linhas.length && /^\|[\s:|-]+\|$/.test(linhas[i+1].trim())) {
+      fecha();
+      var celulas = function(linha){
+        return linha.trim().replace(/^\||\|$/g, '').split('|').map(function(c){ return mdIn(c.trim()); });
+      };
+      var cab = celulas(t2), corpo = [];
+      i += 2;
+      while (i < linhas.length && linhas[i].trim().charAt(0) === '|') { corpo.push(celulas(linhas[i].trim())); i++; }
+      i--;
+      var cel = 'padding:5px 9px;border-bottom:1px solid #eae6de;text-align:left;vertical-align:top';
+      out.push('<div style="overflow-x:auto;margin:0 0 9px">' +
+        '<table style="border-collapse:collapse;font-size:12.5px;width:100%">' +
+        '<thead><tr>' + cab.map(function(c){ return '<th style="' + cel + ';font-weight:600">' + c + '</th>'; }).join('') + '</tr></thead>' +
+        '<tbody>' + corpo.map(function(r){
+          return '<tr>' + r.map(function(c){ return '<td style="' + cel + '">' + c + '</td>'; }).join('') + '</tr>';
+        }).join('') + '</tbody></table></div>');
+      continue;
+    }
+
+    var h = t2.match(/^#{1,6}\s+(.*)$/);
+    if (h) {
+      fecha();
+      out.push('<div style="font-weight:600;color:#121a2b;margin:11px 0 5px">' + mdIn(h[1]) + '</div>');
+      continue;
+    }
+
+    if (/^(---+|\*\*\*+)$/.test(t2)) {
+      fecha();
+      out.push('<hr style="border:0;border-top:1px solid #eae6de;margin:11px 0">');
+      continue;
+    }
+
+    var cit = t2.match(/^&gt;\s?(.*)$/);
+    if (cit) {
+      fecha();
+      out.push('<div style="margin:0 0 9px;padding:7px 11px;border-left:2.5px solid #c9d6f7;' +
+               'background:#f7f9fe;border-radius:0 7px 7px 0">' + mdIn(cit[1]) + '</div>');
+      continue;
+    }
+
+    var mUl = t2.match(/^[-*•]\s+(.*)$/);
+    var mOl = t2.match(/^\d+[.)]\s+(.*)$/);
+    if (mUl || mOl) {
+      var tipo = mUl ? 'ul' : 'ol';
+      fechaPar();
+      if (lista !== tipo) {
+        fechaLista();
+        out.push('<' + tipo + ' style="margin:0 0 9px;padding-left:19px">');
+        lista = tipo;
+      }
+      out.push('<li style="margin:3px 0">' + mdIn((mUl || mOl)[1]) + '</li>');
+      continue;
+    }
+
+    fechaLista();
+    par.push(t2);
+  }
+  fecha();
+  return out.join('');
+}
+
+function msgHTML(m){
+  if (m.role === 'user')
+    return '<div style="margin:0 0 10px;text-align:right">' +
+      '<span style="display:inline-block;max-width:88%;text-align:left;background:#f2efe9;' +
+      'border-radius:12px 12px 3px 12px;padding:9px 12px;font-size:13.5px;line-height:1.6;' +
+      'color:#39404f;text-wrap:pretty">' + esc(m.content) + '</span></div>';
+  return '<div style="margin:0 0 12px">' +
+    '<div style="' + DS_MONO + ';font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;' +
+    'color:#2b57cc;margin-bottom:4px">DeepSeek</div>' +
+    '<div style="font-size:13.5px;line-height:1.65;color:#39404f;text-wrap:pretty">' +
+    mdChat(m.content) + '</div></div>';
+}
+
+function chatBox(q, acertou){
+  if (!dsOn()) return '';
+  var chamada = acertou ? 'Quer ir mais fundo?' : 'Ainda com dúvida?';
+  var dica = acertou ? 'Por que as outras estão erradas?' : 'Por que a que eu marquei está errada?';
+  var hist = (S.chat[q.id] || []).map(msgHTML).join('');
+  return '<div id="ds" data-qid="' + q.id + '" style="margin-top:14px;border:1px solid #e4e0d8;' +
+      'border-radius:14px;background:#fff;overflow:hidden;animation:qFade .26s ease">' +
+      '<div style="display:flex;align-items:center;gap:8px;padding:11px 15px;' +
+        'border-bottom:1px solid #f0ede6;background:#faf9f6">' +
+        '<span style="' + DS_MONO + ';font-size:10px;letter-spacing:.16em;text-transform:uppercase;' +
+        'color:#2b57cc">' + chamada + '</span>' +
+        '<span style="font-size:12px;color:#8a8578">pergunte ao DeepSeek</span></div>' +
+      '<div id="dsLog" style="max-height:280px;overflow-y:auto;padding:' + (hist ? '12px 15px' : '0') + '">' +
+        hist + '</div>' +
+      '<div style="display:flex;gap:8px;padding:11px 12px;border-top:1px solid #f0ede6">' +
+        '<input id="dsIn" type="text" autocomplete="off" ' +
+          'placeholder="' + dica + '" ' +
+          'style="flex:1;min-width:0;border:1px solid #e4e0d8;border-radius:10px;padding:10px 12px;' +
+          'font-size:13.5px;' + DS_SANS + ';color:#121a2b;background:#fff;outline:none">' +
+        '<button type="button" data-act="dsSend" class="h-darkflat" style="flex-shrink:0;' +
+          'background:#121a2b;color:#f5f3ef;border:0;border-radius:10px;padding:10px 16px;' +
+          'font-size:13px;font-weight:500;cursor:pointer;transition:background .16s ease">Enviar</button>' +
+      '</div></div>';
+}
+
+function dsContexto(q, ans){
+  var alts = q.options.map(function(o, n){ return LETTERS[n] + ') ' + o; }).join(NLJS);
+  return 'Questao: ' + q.question + NLJS + alts + NLJS +
+    'Resposta correta: ' + LETTERS[q.correctIndex] + ') ' + q.options[q.correctIndex] + NLJS +
+    'O estudante marcou: ' + (ans === null ? 'nada' : LETTERS[ans] + ') ' + q.options[ans]) + NLJS +
+    'Explicacao que ele ja tem: ' + q.explanation;
+}
+
+A.dsSend = function(){
+  var box = document.getElementById('ds');
+  if (!box || !dsOn() || box.getAttribute('data-busy')) return;
+  var input = document.getElementById('dsIn'), log = document.getElementById('dsLog');
+  var texto = (input.value || '').trim();
+  if (!texto) return;
+
+  var qid = parseInt(box.getAttribute('data-qid'), 10), q = null, ans = null;
+  for (var i = 0; i < S.order.length; i++)
+    if (S.order[i].id === qid) { q = S.order[i]; ans = S.answers[i]; }
+  if (!q) return;
+
+  S.chat[qid] = S.chat[qid] || [];
+  S.chat[qid].push({ role:'user', content:texto });
+  input.value = '';
+  log.style.padding = '12px 15px';
+  log.insertAdjacentHTML('beforeend', msgHTML({ role:'user', content:texto }));
+  log.insertAdjacentHTML('beforeend',
+    '<div><div style="' + DS_MONO + ';font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;' +
+    'color:#2b57cc;margin-bottom:4px">DeepSeek</div>' +
+    '<div id="dsTxt" style="font-size:13.5px;line-height:1.65;color:#8a8578;' +
+    'text-wrap:pretty">pensando…</div></div>');
+  log.scrollTop = log.scrollHeight;
+  box.setAttribute('data-busy', '1');
+
+  var acertou = (ans === q.correctIndex);
+  var situacao = acertou
+    ? 'Voce e um tutor de medicina. O estudante do 7o semestre ACERTOU esta questao, mas ficou com uma duvida. '
+    : 'Voce e um tutor de medicina. O estudante do 7o semestre ERROU esta questao. ';
+  var msgs = [
+    { role:'system', content: situacao +
+      'Responda em portugues do Brasil, direto ao ponto, no maximo 150 palavras. ' +
+      'Traga o dado concreto (valor, criterio, mecanismo) em vez de generalidade. ' +
+      'Nao repita a explicacao que ele ja tem; foque na duvida que ele trouxe.' },
+    { role:'user', content: dsContexto(q, ans) }
+  ];
+  var h = S.chat[qid];
+  for (var j = 0; j < h.length; j++) msgs.push({ role:h[j].role, content:h[j].content });
+
+  dsStream(msgs, function(txt, fim, erro){
+    var el = document.getElementById('dsTxt');
+    if (!el) { box.removeAttribute('data-busy'); return; }
+    if (erro) { el.style.color = '#c04437'; el.textContent = erro; box.removeAttribute('data-busy'); return; }
+    el.style.color = '#39404f';
+    el.innerHTML = mdChat(txt);
+    var lg = document.getElementById('dsLog'); if (lg) lg.scrollTop = lg.scrollHeight;
+    if (fim) { el.removeAttribute('id'); S.chat[qid].push({ role:'assistant', content:txt }); box.removeAttribute('data-busy'); }
+  });
+};
+
+function dsStream(messages, cb){
+  var acc = '';
+  fetch(DS_URL, {
+    method: 'POST',
+    headers: { 'Content-Type':'application/json', 'Authorization':'Bearer ' + window.DEEPSEEK_KEY },
+    body: JSON.stringify({ model:DS_MODEL, messages:messages, stream:true, max_tokens:1200, temperature:0.3 })
+  }).then(function(r){
+    if (!r.ok) return r.text().then(function(t){
+      throw new Error(
+        r.status === 401 ? 'Chave recusada (401). Confira o deepseek_key.js.' :
+        r.status === 402 ? 'Sem saldo na conta DeepSeek (402).' :
+        r.status === 429 ? 'Limite de uso atingido (429). Tente daqui a pouco.' :
+        'Erro ' + r.status + ': ' + String(t).slice(0, 120));
+    });
+    var reader = r.body.getReader(), dec = new TextDecoder(), buf = '';
+    (function pump(){
+      return reader.read().then(function(res){
+        if (res.done) { cb(acc || '(resposta vazia)', true); return; }
+        buf += dec.decode(res.value, { stream:true });
+        var linhas = buf.split(NLJS);
+        buf = linhas.pop();
+        for (var i = 0; i < linhas.length; i++){
+          var l = linhas[i].trim();
+          if (l.indexOf('data:') !== 0) continue;
+          var carga = l.slice(5).trim();
+          if (carga === '[DONE]') continue;
+          try {
+            var d = JSON.parse(carga).choices[0].delta;
+            if (d && d.content) { acc += d.content; cb(acc, false); }
+          } catch (_){}
+        }
+        return pump();
+      });
+    })();
+  }).catch(function(e){
+    cb('', true, 'Nao consegui falar com o DeepSeek: ' + (e && e.message ? e.message : e));
+  });
+}
+
+function render(){
+  renderHeader();
+  if (S.view === 'home')        renderHome();
+  else if (S.view === 'resumo') renderResumo();
+  else if (S.finished)          renderResult();
+  else                          renderQuestion();
+}
+
+/* lightbox: clique em qualquer figura amplia */
+document.addEventListener('click', function(e){
+  var lb = document.getElementById('lb');
+  if (e.target.closest('#lb')) { lb.className = ''; return; }
+  var img = e.target.closest('.fig img');
+  if (img) { lb.firstElementChild.src = img.src; lb.className = 'on'; }
+});
+window.addEventListener('keydown', function(e){
+  if (e.key === 'Escape') document.getElementById('lb').className = '';
+});
+
+document.addEventListener('click', function(e){
+  var b = e.target.closest('[data-act]'); if (!b) return;
+  var act = b.getAttribute('data-act'), n = parseInt(b.getAttribute('data-n'),10), k = b.getAttribute('data-k');
+  if (act==='pick'||act==='jump'||act==='toggle') A[act](n);
+  else if (act==='filter') A.filter(k);
+  else if (A[act]) A[act]();
+});
+
+window.addEventListener('keydown', function(e){
+  if (S.view!=='quiz' || !S.started || S.finished) return;
+  var t = e.target, tag = t && t.tagName;
+  if (tag==='INPUT' || tag==='TEXTAREA' || (t && t.isContentEditable)) return;
+  if (e.metaKey||e.ctrlKey||e.altKey) return;
+  if (e.key==='ArrowRight')     { e.preventDefault(); A.go(S.i+1); }
+  else if (e.key==='ArrowLeft') { e.preventDefault(); A.go(S.i-1); }
+  else if (e.key==='Enter')     { e.preventDefault(); A.next(); }
+  else if (/^[1-6]$/.test(e.key)) {
+    var n = parseInt(e.key,10)-1;
+    if (n < S.order[S.i].options.length) A.pick(n);
+  }
+});
+
+render();
+</script>
+</body>
+</html>

@@ -207,11 +207,13 @@ def main():
 
         if a.separado:
             for t, corpo in aulas:
-                slug = re.sub(r"[^a-z0-9]+", "_", t.lower()).strip("_")
+                # o nome do arquivo e o que o leitor (e o NotebookLM) mostra como
+                # fonte: mantem acento e maiuscula, tira so o que o Windows proibe
+                slug = re.sub(r'[\/:*?"<>|]', "-", t).strip()
                 doc = f'<div class="aula" style="page-break-before:auto">' \
                       f'<p class="rotulo">{H.escape(disc)}</p>' \
                       f'<h1 class="titulo">{H.escape(t)}</h1>{corpo}</div>'
-                dest = saida / nome / f"resumo_{slug}.pdf"
+                dest = saida / nome / f"{slug}.pdf"
                 if gerar_pdf(PAGINA.format(titulo=H.escape(t), css=CSS, corpo=doc), dest):
                     print(f"   OK  {dest.relative_to(RAIZ) if RAIZ in dest.parents else dest}"
                           f"  ({dest.stat().st_size/1024/1024:.1f} MB, {paginas(dest)} pgs)")

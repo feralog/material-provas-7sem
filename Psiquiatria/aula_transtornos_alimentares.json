@@ -1,0 +1,348 @@
+{
+  "titulo": "Transtornos Alimentares",
+  "eyebrow": "Psiquiatria · Transtornos Alimentares",
+  "subtitulo": "Anorexia, bulimia e compulsão alimentar: do critério à complicação",
+  "intro": "Critérios diagnósticos e diagnóstico diferencial entre anorexia nervosa, bulimia nervosa e transtorno de compulsão alimentar periódica, com as complicações clínicas das purgações e da inanição, a síndrome de realimentação, o tratamento farmacológico de cada quadro e os determinantes socioculturais da era digital.",
+  "questoes": [
+    {
+      "question": "Mulher de 21 anos apresenta IMC 16,5 kg/m², frequência cardíaca de 52 bpm, amenorreia há oito meses e lanugo no dorso. Mantém restrição alimentar rígida, esconde a comida da família e refere-se a si mesma como gorda ao olhar-se no espelho. Qual é o diagnóstico?",
+      "options": [
+        "Anorexia nervosa, subtipo restritivo",
+        "Bulimia nervosa, subtipo purgativo",
+        "Transtorno de compulsão alimentar",
+        "Transtorno alimentar restritivo evitativo"
+      ],
+      "correctIndex": 0,
+      "explanation": "O tripé é baixo peso (IMC abaixo de 18,5 kg/m², aqui 16,5), medo mórbido de engordar com distorção da imagem corporal e restrição calórica deliberada. Bradicardia, amenorreia por supressão do eixo gonadotrófico e lanugo são consequências fisiológicas da inanição, não critérios independentes. Não há compulsão nem purgação descritas, o que define o subtipo restritivo."
+    },
+    {
+      "question": "Adolescente de 17 anos com IMC 15,8 kg/m² relata episódios de ingestão descontrolada seguidos de vômito autoinduzido duas vezes por semana, há seis meses. Qual diagnóstico se impõe?",
+      "options": [
+        "Anorexia nervosa do subtipo purgativo, pelo baixo peso",
+        "Bulimia nervosa, pela presença de purgação recorrente",
+        "Transtorno de compulsão alimentar, pela perda de controle",
+        "Transtorno alimentar restritivo evitativo, pela restrição"
+      ],
+      "correctIndex": 0,
+      "explanation": "O divisor entre anorexia purgativa e bulimia nervosa é o peso, não a purgação. Quem purga mas mantém IMC abaixo de 18,5 kg/m² tem anorexia nervosa do subtipo purgativo; a bulimia cursa com peso normal ou levemente aumentado. Reconhecer isso muda o prognóstico, porque o risco de morte por inanição e a necessidade de renutrição monitorada pertencem ao quadro anoréxico."
+    },
+    {
+      "question": "Mulher de 34 anos com IMC 31 kg/m² relata episódios de ingestão de grandes quantidades de comida com perda de controle, duas vezes por semana há um ano, seguidos de culpa e repulsa. Nega vômitos, laxantes, diuréticos ou exercício compensatório. Qual é o diagnóstico?",
+      "options": [
+        "Transtorno de compulsão alimentar periódica",
+        "Bulimia nervosa de baixa frequência semanal",
+        "Transtorno alimentar restritivo evitativo",
+        "Anorexia nervosa atípica com peso elevado"
+      ],
+      "correctIndex": 0,
+      "explanation": "O divisor entre bulimia nervosa e transtorno de compulsão alimentar periódica é o comportamento compensatório: a compulsão existe nos dois, mas na bulimia ela é seguida de purgação ou de exercício extenuante. Sem compensação, o quadro é compulsão alimentar periódica, que evolui para sobrepeso ou obesidade e para complicações metabólicas como diabetes tipo 2 e hipertensão."
+    },
+    {
+      "question": "Adolescente de 15 anos com anorexia nervosa grave é internada com IMC 13 kg/m² e recebe dieta hipercalórica plena já no primeiro dia. Em 48 horas evolui com insuficiência cardíaca, edema pulmonar e crise convulsiva. Qual alteração laboratorial explica o quadro?",
+      "options": [
+        "Hipofosfatemia grave",
+        "Hipercalcemia grave",
+        "Hipernatremia grave",
+        "Hipercalemia grave"
+      ],
+      "correctIndex": 0,
+      "explanation": "É a síndrome de realimentação, a complicação que mais mata na renutrição da anorexia nervosa. A hipofosfatemia severa compromete a produção de ATP e o 2,3-DPG, causando falência cardíaca aguda, edema pulmonar, convulsões e morte. Potássio e magnésio também caem, mas o fosfato é o marcador central e deve ser dosado diariamente."
+    },
+    {
+      "question": "Qual é o mecanismo fisiopatológico central da síndrome de realimentação?",
+      "options": [
+        "Pico de insulina que desloca fosfato e potássio para o intracelular",
+        "Queda de insulina que desloca fosfato e potássio para o extracelular",
+        "Perda renal maciça de fosfato e potássio por diurese osmótica",
+        "Hemólise aguda que libera fosfato e potássio na circulação"
+      ],
+      "correctIndex": 0,
+      "explanation": "No paciente em inanição as reservas corporais de fosfato, potássio e magnésio já estão depletadas, embora a dosagem sérica possa estar normal. A oferta abrupta de glicose dispara um pico de insulina que empurra esses íons para dentro da célula junto com a glicose, desabando a concentração plasmática. O resultado é hipofosfatemia severa em poucas horas."
+    },
+    {
+      "question": "Na internação de um paciente em inanição por anorexia nervosa, qual conduta previne a complicação mais letal da renutrição?",
+      "options": [
+        "Iniciar aporte calórico baixo e progredir lentamente, dosando eletrólitos",
+        "Iniciar aporte calórico pleno e progredir rapidamente, dosando eletrólitos",
+        "Iniciar dieta enteral hipercalórica noturna, sem restrição de volume",
+        "Iniciar soro glicosado a 10% em bolus, seguido de dieta livre por sonda"
+      ],
+      "correctIndex": 0,
+      "explanation": "A regra é começar baixo e subir devagar, com monitorização diária de fosfato, potássio e magnésio e reposição antes que a queda se torne sintomática. A tiamina deve ser administrada antes da carga de glicose. Pressa na oferta calórica é o erro iatrogênico que precipita a síndrome de realimentação."
+    },
+    {
+      "question": "Mulher de 25 anos com bulimia nervosa e vômitos autoinduzidos diários apresenta fraqueza muscular, câimbras e extrassístoles ventriculares. Qual é o padrão laboratorial esperado?",
+      "options": [
+        "Hipocalemia com alcalose metabólica",
+        "Hipercalemia com acidose metabólica",
+        "Hipocalemia com acidose metabólica",
+        "Hipernatremia com alcalose respiratória"
+      ],
+      "correctIndex": 0,
+      "explanation": "O vômito de repetição elimina ácido clorídrico e gera alcalose metabólica hipoclorêmica; a alcalose e o hiperaldosteronismo secundário à desidratação aumentam a excreção renal de potássio, produzindo hipocalemia. Essa dupla explica a fraqueza muscular e as arritmias. O abuso isolado de laxantes, por outro lado, tende a causar acidose metabólica por perda de bicarbonato nas fezes."
+    },
+    {
+      "question": "Paciente que purga diariamente chega ao pronto-socorro com edema de membros inferiores e potássio sérico de 2,8 mEq/L. Qual o efeito esperado de prescrever um diurético de alça para tratar o edema?",
+      "options": [
+        "Precipitar arritmia e parada cardíaca por agravar a hipocalemia",
+        "Corrigir o edema e normalizar o potássio por reduzir a volemia",
+        "Reduzir a compulsão alimentar por diminuir a retenção hídrica",
+        "Proteger o miocárdio por diminuir a sobrecarga de volume atrial"
+      ],
+      "correctIndex": 0,
+      "explanation": "O edema desses pacientes é de rebote, por hiperaldosteronismo secundário à desidratação crônica das purgações, e regride com reidratação cuidadosa e suspensão da purgação. O diurético aumenta ainda mais a caliurese sobre um potássio já em 2,8 mEq/L, e a hipocalemia grave é causa direta de arritmia ventricular e parada cardíaca."
+    },
+    {
+      "question": "A figura mostra o dorso das mãos e a arcada dentária de uma paciente de 22 anos com peso normal. Esses dois achados em conjunto decorrem diretamente de:",
+      "options": [
+        "Vômito autoinduzido repetido de forma mecânica",
+        "Desnutrição proteico-calórica de longa duração",
+        "Uso crônico de laxantes estimulantes por via oral",
+        "Exercício físico extenuante e dieta hiperproteica"
+      ],
+      "correctIndex": 0,
+      "explanation": "As calosidades e escoriações no dorso da mão são o sinal de Russell, produzido pelo atrito dos incisivos contra a mão durante a indução mecânica do vômito. O desgaste do esmalte resulta da exposição repetida dos dentes ao ácido do suco gástrico. Em paciente com IMC normal, esse par de achados aponta para bulimia nervosa e costuma ser a primeira pista objetiva do diagnóstico.",
+      "image": "s33i1",
+      "imageCaption": "Dorso da mão e arcada dentária em purgação recorrente"
+    },
+    {
+      "question": "A amenorreia observada na anorexia nervosa decorre de:",
+      "options": [
+        "Hipogonadismo hipogonadotrófico por supressão do eixo gonadotrófico",
+        "Hipogonadismo hipergonadotrófico por falência ovariana primária",
+        "Hiperprolactinemia por compressão do infundíbulo hipotalâmico",
+        "Resistência ovariana ao estímulo do hormônio luteinizante"
+      ],
+      "correctIndex": 0,
+      "explanation": "A privação energética reduz a pulsatilidade do hormônio liberador de gonadotrofinas, derrubando LH e FSH e, em consequência, o estradiol. É um hipogonadismo central e funcional, que tende a reverter com a recuperação ponderal. O hipoestrogenismo prolongado cursa com perda de massa óssea e risco de osteoporose precoce."
+    },
+    {
+      "question": "Além das complicações diretas da inanição, quais são as principais causas de morte na anorexia nervosa?",
+      "options": [
+        "Suicídio, ao lado do desequilíbrio hidroeletrolítico",
+        "Neoplasia gástrica, ao lado da hemorragia digestiva",
+        "Infecção oportunista, ao lado da falência hepática",
+        "Tromboembolismo pulmonar, ao lado da pancreatite"
+      ],
+      "correctIndex": 0,
+      "explanation": "A anorexia nervosa tem uma das maiores taxas de mortalidade entre os transtornos psiquiátricos, e o óbito vem das complicações da inanição, do suicídio, do desequilíbrio hidroeletrolítico e da desidratação. O risco cresce com o tempo de duração da doença, com a presença de compulsão e purgação e com as comorbidades psiquiátricas associadas."
+    },
+    {
+      "question": "No tratamento da anorexia nervosa, a olanzapina em dose baixa é utilizada porque:",
+      "options": [
+        "Reduz a rigidez obsessiva e favorece o ganho ponderal",
+        "Eleva o limiar convulsivo e favorece a perda ponderal",
+        "Bloqueia a compulsão alimentar e estabiliza o potássio",
+        "Corrige a amenorreia e restaura o ciclo menstrual normal"
+      ],
+      "correctIndex": 0,
+      "explanation": "A olanzapina atua sobre a rigidez cognitiva e a ideação obsessiva estruturada em torno do peso, e o ganho ponderal, habitualmente um efeito adverso indesejado, torna-se aqui terapêutico. Os inibidores seletivos da recaptação de serotonina são a primeira escolha para os sintomas obsessivos e as comorbidades ansioso-depressivas. Nenhum fármaco substitui a renutrição."
+    },
+    {
+      "question": "Qual fármaco tem o maior nível de evidência para o tratamento da bulimia nervosa, empregado em doses de até 60 mg por dia?",
+      "options": [
+        "Fluoxetina, um inibidor da recaptação de serotonina",
+        "Bupropiona, um inibidor da recaptação de dopamina",
+        "Lisdexanfetamina, um pró-fármaco estimulante",
+        "Topiramato, um anticonvulsivante modulador"
+      ],
+      "correctIndex": 0,
+      "explanation": "A fluoxetina é o antidepressivo com aprovação formal para bulimia nervosa e exige doses mais altas do que as usadas na depressão, tipicamente 60 mg ao dia, para reduzir a frequência dos episódios de compulsão e de purgação. O tratamento farmacológico é combinado à terapia cognitivo-comportamental, que sustenta o resultado a longo prazo."
+    },
+    {
+      "question": "Por que a bupropiona é formalmente contraindicada na bulimia nervosa e na anorexia nervosa?",
+      "options": [
+        "Reduz o limiar convulsivo em pacientes que purgam ou estão desnutridos",
+        "Eleva o limiar convulsivo e mascara as crises em pacientes desnutridos",
+        "Provoca ganho ponderal acentuado e piora a distorção da imagem corporal",
+        "Agrava a hipocalemia por estimular diretamente a secreção de aldosterona"
+      ],
+      "correctIndex": 0,
+      "explanation": "A bupropiona reduz o limiar convulsivo, e em pacientes com distúrbio hidroeletrolítico por purgação ou com desnutrição grave esse efeito se amplifica, causando convulsões de difícil controle. O erro iatrogênico clássico é escolhê-la justamente por não provocar ganho de peso, atributo atraente para quem tem medo mórbido de engordar."
+    },
+    {
+      "question": "Qual é o único fármaco aprovado especificamente para o transtorno de compulsão alimentar periódica?",
+      "options": [
+        "A lisdexanfetamina, que reduz a impulsividade alimentar",
+        "A fluoxetina, que reduz a impulsividade alimentar",
+        "A olanzapina, que reduz a impulsividade alimentar",
+        "A bupropiona, que reduz a impulsividade alimentar"
+      ],
+      "correctIndex": 0,
+      "explanation": "A lisdexanfetamina age sobre a via dopaminérgica e reduz a impulsividade que sustenta o episódio de compulsão, com o horário da tomada ajustado para cobrir o período de maior vulnerabilidade, em geral o fim da tarde e a noite. O topiramato é a alternativa disponível. O uso indiscriminado de anfetamínicos sem terapia cognitivo-comportamental leva a dependência e insônia grave."
+    },
+    {
+      "question": "Por que o uso de inibidores seletivos da recaptação de serotonina é desaconselhado no transtorno de compulsão alimentar puro?",
+      "options": [
+        "Aumentam a busca por carboidratos sem controlar a compulsão",
+        "Reduzem o limiar convulsivo e precipitam crises em obesos",
+        "Provocam hipocalemia grave quando associados a purgação",
+        "Anulam o efeito do topiramato sobre o controle do impulso"
+      ],
+      "correctIndex": 0,
+      "explanation": "Diferentemente da anorexia e da bulimia nervosas, em que os inibidores seletivos da recaptação de serotonina têm papel definido, no transtorno de compulsão alimentar puro eles tendem a aumentar o apetite por carboidratos e doces sem atuar sobre a perda de controle. O alvo terapêutico aqui é a impulsividade, e não o humor isoladamente."
+    },
+    {
+      "question": "Por que prescrever uma dieta muito restritiva a um paciente com transtorno de compulsão alimentar é iatrogênico?",
+      "options": [
+        "A privação alimentar intensifica o ciclo restrição-compulsão",
+        "A privação alimentar reduz a absorção intestinal de fosfato",
+        "A perda ponderal rápida precipita síndrome de realimentação",
+        "O déficit calórico anula o efeito da terapia cognitiva breve"
+      ],
+      "correctIndex": 0,
+      "explanation": "Focar apenas na perda de peso, e não no controle do impulso, aumenta a privação e desencadeia episódios de compulsão ainda mais intensos, o chamado efeito rebote. O tratamento correto combina controle da impulsividade, terapia cognitivo-comportamental e acompanhamento nutricional sem regime de fome."
+    },
+    {
+      "question": "Qual a frequência mínima de episódios de compulsão acompanhados de comportamento compensatório exigida para o diagnóstico de bulimia nervosa?",
+      "options": [
+        "Uma vez por semana por pelo menos um mês",
+        "Uma vez por mês por pelo menos um ano",
+        "Três vezes por semana por pelo menos seis meses",
+        "Duas vezes ao dia por pelo menos duas semanas"
+      ],
+      "correctIndex": 0,
+      "explanation": "O episódio de compulsão é um período delimitado com perda subjetiva de controle sobre a alimentação, e na bulimia é seguido de comportamento compensatório inadequado como vômito autoinduzido, laxantes, enemas ou exercício extenuante. Exige-se ainda autoavaliação fortemente influenciada pelo peso e pela forma corporal, com sofrimento marcante ou prejuízo funcional."
+    },
+    {
+      "question": "Quais são as complicações agudas mais temidas da bulimia nervosa com vômitos de repetição?",
+      "options": [
+        "Ruptura esofágica, broncoaspiração e arritmia cardíaca",
+        "Obstrução intestinal, ascite e encefalopatia hepática",
+        "Pancreatite aguda, colelitíase e insuficiência renal",
+        "Úlcera de decúbito, osteomielite e sepse de partes moles"
+      ],
+      "correctIndex": 0,
+      "explanation": "O esforço repetido do vômito pode causar laceração da junção esofagogástrica com hematêmese e, em casos extremos, ruptura esofágica transmural. A broncoaspiração é risco imediato durante o episódio, e a hipocalemia sustenta as arritmias. Estimular alimentação normal sem tratar a motilidade gastrointestinal pode ainda provocar dilatação gástrica aguda."
+    },
+    {
+      "question": "Por que o diagnóstico de bulimia nervosa costuma ser tardio?",
+      "options": [
+        "O índice de massa corporal permanece dentro da normalidade",
+        "O índice de massa corporal cai abaixo de 16 kg/m² rapidamente",
+        "Os episódios de compulsão ocorrem em público, sem qualquer sigilo",
+        "As alterações eletrolíticas só aparecem após dez anos de doença"
+      ],
+      "correctIndex": 0,
+      "explanation": "Sem emagrecimento visível, o quadro passa despercebido por familiares e clínicos, e os episódios são ocultados por vergonha. Deve-se manter alta suspeição em pacientes que fazem dietas repetidas ou usam medicamentos para emagrecer, procurando sinal de Russell, erosão dentária, hipertrofia de parótidas e hipocalemia inexplicada."
+    },
+    {
+      "question": "Em qual transtorno alimentar a proporção entre mulheres e homens é mais próxima da igualdade?",
+      "options": [
+        "Transtorno de compulsão alimentar, cerca de 3 para 2",
+        "Anorexia nervosa, cerca de 10 mulheres para 1 homem",
+        "Bulimia nervosa, cerca de 9 mulheres para 1 homem",
+        "Anorexia atípica, cerca de 8 mulheres para 1 homem"
+      ],
+      "correctIndex": 0,
+      "explanation": "A anorexia nervosa tem proporção em torno de 10 para 1 e a bulimia de 8 a 9 para 1, enquanto o transtorno de compulsão alimentar chega a 3 mulheres para 2 homens, sendo o mais equilibrado entre os sexos. Homens com compulsão costumam apresentar obesidade e doença metabólica associadas e demoram mais a procurar ajuda psiquiátrica."
+    },
+    {
+      "question": "Entre 2000 e 2018, o que ocorreu com a prevalência global de transtornos alimentares na população jovem?",
+      "options": [
+        "Mais que dobrou, passando de 3,4% para 7,8%",
+        "Manteve-se estável, em torno de 3,4% ao ano",
+        "Caiu pela metade, passando de 7,8% para 3,4%",
+        "Quadruplicou, passando de 1,9% para 7,8%"
+      ],
+      "correctIndex": 0,
+      "explanation": "A prevalência saltou de 3,4% para 7,8% em dezoito anos. Entre 2020 e 2022 houve novo salto, com aumento de até 15% na incidência de casos novos em adolescentes no primeiro ano da pandemia e internações por anorexia nervosa dobrando em algumas regiões, impulsionadas pelo isolamento, pela perda de rotina e pela maior exposição às redes sociais."
+    },
+    {
+      "question": "O gráfico apresenta a distribuição da idade de início da doença em pacientes com transtorno alimentar. Qual faixa etária concentra o maior número de casos?",
+      "options": [
+        "16 a 20 anos, com 43% dos casos",
+        "11 a 15 anos, com 33% dos casos",
+        "Após os 20 anos, com 14% dos casos",
+        "10 anos ou menos, com 10% dos casos"
+      ],
+      "correctIndex": 0,
+      "explanation": "A adolescência tardia concentra 43% dos casos e a faixa de 11 a 15 anos outros 33%, de modo que a maioria absoluta se inicia antes dos 21 anos. Isso justifica o rastreamento em adolescentes. Nos últimos anos observa-se deslocamento para idades ainda menores, com diagnósticos crescentes entre 9 e 12 anos e quadros de manejo mais difícil.",
+      "image": "s27i1",
+      "imageCaption": "Idade de início e duração da doença"
+    },
+    {
+      "question": "O gráfico mostra a prevalência de comorbidades e comportamentos alimentares em candidatos à cirurgia bariátrica. Qual é a condição mais prevalente nessa população?",
+      "options": [
+        "Depressão com alta pontuação, em 77% dos casos",
+        "Ansiedade com alta pontuação, em 65% dos casos",
+        "Comportamento alimentar compulsivo, em 28,8%",
+        "Hipertensão arterial sistêmica, em 24,8%"
+      ],
+      "correctIndex": 0,
+      "explanation": "Sintomas depressivos de alta pontuação aparecem em 77% e ansiosos em 65%, superando com folga as comorbidades metabólicas como hipertensão, com 24,8%, e diabetes, com 19,3%. Comportamento alimentar compulsivo é descrito em 28,8% e comer emocional em 22,1%. O dado sustenta a avaliação psiquiátrica obrigatória antes da cirurgia.",
+      "image": "s15i1",
+      "imageCaption": "Comorbidades em candidatos à cirurgia bariátrica"
+    },
+    {
+      "question": "O esquema compara os três principais transtornos alimentares. Qual característica pertence exclusivamente à coluna do transtorno de compulsão alimentar?",
+      "options": [
+        "Compulsão alimentar sem métodos compensatórios",
+        "Compulsão alimentar com vômito autoinduzido",
+        "Restrição severa com medo mórbido de engordar",
+        "Amenorreia associada a bradicardia e a lanugo"
+      ],
+      "correctIndex": 0,
+      "explanation": "A coluna da anorexia reúne IMC abaixo de 18,5 kg/m², distorção de imagem, restrição severa, bradicardia, lanugo e amenorreia. A da bulimia mostra compulsão recorrente seguida de métodos compensatórios, com sinal de Russell, erosão dentária, parotidite e hipocalemia com arritmia. Só na compulsão alimentar periódica há compulsão sem purgação, evoluindo para complicações da obesidade.",
+      "image": "s23i1",
+      "imageCaption": "Quadro comparativo dos transtornos alimentares"
+    },
+    {
+      "question": "O esquema relaciona a alteração do ciclo sono-vigília ao risco de obesidade e de diabetes tipo 2. Qual é o padrão hormonal representado?",
+      "options": [
+        "Queda da leptina e elevação da grelina",
+        "Elevação da leptina e queda da grelina",
+        "Queda simultânea da leptina e da grelina",
+        "Elevação simultânea da leptina e da insulina"
+      ],
+      "correctIndex": 0,
+      "explanation": "A leptina, produzida no tecido adiposo, sinaliza saciedade e cai com a privação de sono; a grelina, produzida no trato gastrointestinal, estimula a fome e sobe. Soma-se a disbiose da microbiota intestinal, e o conjunto eleva o risco de obesidade, diabetes tipo 2 e doença cardiovascular. A exposição noturna à luz azul suprime a melatonina e alimenta esse ciclo.",
+      "image": "s20i1",
+      "imageCaption": "Sono, eixo grelina-leptina e risco metabólico"
+    },
+    {
+      "question": "Criança de 6 anos com transtorno do espectro autista ingere terra e giz de forma persistente há oito meses. O hemograma revela anemia microcítica e hipocrômica. Qual é o diagnóstico?",
+      "options": [
+        "Pica, frequentemente associada à anemia ferropriva",
+        "Ruminação, frequentemente associada à anemia ferropriva",
+        "Transtorno alimentar restritivo evitativo da infância",
+        "Anorexia nervosa de início muito precoce na infância"
+      ],
+      "correctIndex": 0,
+      "explanation": "A pica é a ingestão persistente de substâncias não nutritivas como terra, giz, tinta, tijolo ou sabão, inapropriada para o estágio de desenvolvimento. Associa-se com frequência a deficiências nutricionais, sobretudo anemia ferropriva, e ao transtorno do espectro autista. Não há preocupação com peso ou forma corporal."
+    },
+    {
+      "question": "O que distingue o transtorno alimentar restritivo evitativo da anorexia nervosa?",
+      "options": [
+        "A ausência de preocupação com o peso e a forma corporal",
+        "A presença de preocupação com o peso e a forma corporal",
+        "A ausência de perda ponderal e de carência nutricional",
+        "A presença de compulsão seguida de purgação repetida"
+      ],
+      "correctIndex": 0,
+      "explanation": "No transtorno alimentar restritivo evitativo a esquiva alimentar é sensorial, ligada a textura, cor, odor ou temperatura, ou ao medo de engasgar, e não ao medo de engordar. É prevalente na infância e fortemente associado ao autismo. Pode haver perda de peso e deficiências nutricionais, mas a imagem corporal está preservada."
+    },
+    {
+      "question": "Homem de 24 anos, frequentador diário de academia, mantém dieta hiperproteica rígida, usa suplementos em excesso e percebe-se pequeno e frágil apesar de musculatura evidentemente hipertrofiada. Qual é o quadro?",
+      "options": [
+        "Dismorfia muscular, também chamada de vigorexia",
+        "Ortorexia nervosa, com foco na pureza alimentar",
+        "Anorexia nervosa do subtipo restritivo do adulto",
+        "Transtorno alimentar restritivo evitativo do adulto"
+      ],
+      "correctIndex": 0,
+      "explanation": "A vigorexia é a preocupação obsessiva com a insuficiência da própria musculatura, acompanhada de treino extenuante e dieta rígida, e é considerada o equivalente masculino da busca pelo corpo ideal, com foco na hipertrofia em vez da magreza. A ortorexia, por contraste, gira em torno da pureza e do caráter saudável do alimento, e não do volume muscular."
+    },
+    {
+      "question": "Uma paciente com insatisfação corporal passa a buscar conteúdos sobre dieta e jejum nas redes sociais e, semanas depois, seu feed exibe apenas corpos extremamente magros. Qual é o efeito clínico esperado dessa exposição algorítmica?",
+      "options": [
+        "Falsa percepção de normalidade estatística do corpo padrão",
+        "Exposição apenas intermitente e periódica ao padrão de beleza",
+        "Redução progressiva do engajamento com conteúdo mais extremo",
+        "Aumento da crítica da paciente sobre o próprio estado clínico"
+      ],
+      "correctIndex": 0,
+      "explanation": "O algoritmo interpreta a busca como preferência e entrega conteúdo progressivamente mais extremo, criando uma câmara de eco em que a paciente deixa de ver corpos diversos. Ela passa a crer que o padrão é a norma e que seu corpo está errado, e a restrição patológica é reinterpretada como disciplina. Por isso a higiene digital entra formalmente no plano terapêutico."
+    }
+  ]
+}

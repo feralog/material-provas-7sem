@@ -1,0 +1,352 @@
+{
+  "titulo": "Parkinsonismo",
+  "eyebrow": "Neurologia · Distúrbios do Movimento",
+  "subtitulo": "A síndrome hipocinética: do circuito dos gânglios da base à levodopa",
+  "intro": "Fisiopatologia das vias direta e indireta, tétrade clínica, diagnóstico diferencial entre doença de Parkinson, parkinsonismo secundário e parkinsonismo-plus, e o arsenal terapêutico completo, da levodopa à estimulação cerebral profunda.",
+  "questoes": [
+    {
+      "question": "Os distúrbios do movimento ligados a disfunções dos gânglios da base dividem-se classicamente em dois grandes grupos. O parkinsonismo pertence ao grupo:",
+      "options": [
+        "Das síndromes hipocinéticas",
+        "Das síndromes hipercinéticas",
+        "Das síndromes atáxicas puras",
+        "Das síndromes mioclônicas"
+      ],
+      "correctIndex": 0,
+      "explanation": "A divisão clássica opõe as síndromes hipocinéticas, representadas pelo parkinsonismo, às hipercinéticas, que reúnem coreia, balismo, distonia e atetose. O parkinsonismo é definido justamente por pobreza e lentidão dos movimentos voluntários na ausência de paresia ou paralisia."
+    },
+    {
+      "question": "Na figura, as projeções que partem do complexo pálido interno/substância negra pars reticulata em direção ao tálamo estão representadas com que neurotransmissor e que efeito?",
+      "options": [
+        "GABA, com ação inibitória sobre o tálamo",
+        "Glutamato, com ação excitatória no tálamo",
+        "Dopamina, com ação moduladora no tálamo",
+        "Acetilcolina, com ação excitatória talâmica"
+      ],
+      "correctIndex": 0,
+      "explanation": "A via de saída dos gânglios da base, formada pelo pálido interno e pela substância negra pars reticulata, projeta-se sobre os núcleos talâmicos ventral lateral e ventral anterior por sinapses gabaérgicas inibitórias, desenhadas em traço interrompido. A alça tálamo-cortical seguinte é excitatória e usa glutamato.",
+      "image": "pg03",
+      "imageCaption": "Circuitaria dos gânglios da base e seus neurotransmissores"
+    },
+    {
+      "question": "A dopamina liberada pela substância negra pars compacta atua de modo oposto sobre as duas vias estriatopalidais. Qual associação está correta?",
+      "options": [
+        "Receptores D2 inibem a via indireta; D1 excitam a direta",
+        "Receptores D1 inibem a via indireta; D2 excitam a direta",
+        "Receptores D2 excitam ambas as vias, direta e indireta",
+        "Receptores D1 inibem ambas as vias, direta e indireta"
+      ],
+      "correctIndex": 0,
+      "explanation": "Atuando sobre receptores D2, a dopamina inibe os neurônios estriatais que se projetam para o pálido externo, primeira estação da via indireta. Sobre receptores D1, excita os neurônios estriatais da via direta, que se destinam ao complexo pálido interno/substância negra pars reticulata."
+    },
+    {
+      "question": "As projeções que partem do núcleo subtalâmico de Luys em direção ao complexo pálido interno/substância negra pars reticulata são:",
+      "options": [
+        "Glutamatérgicas e excitatórias",
+        "Gabaérgicas e inibitórias",
+        "Dopaminérgicas e moduladoras",
+        "Colinérgicas e excitatórias"
+      ],
+      "correctIndex": 0,
+      "explanation": "O núcleo subtalâmico recebe do pálido externo aferências gabaérgicas inibitórias e devolve projeções glutamatérgicas excitatórias à via de saída do sistema. É esse elo excitatório que fica hiperativo no parkinsonismo e que torna o núcleo subtalâmico um alvo cirúrgico atraente."
+    },
+    {
+      "question": "A figura reproduz o modelo funcional das síndromes hipocinéticas. Nesse modelo, qual é a consequência final da falência da alça dopaminérgica nigroestriatal sobre o tálamo?",
+      "options": [
+        "Inibição talâmica excessiva, com menos estímulo cortical",
+        "Desinibição talâmica, com excesso de estímulo cortical",
+        "Bloqueio da via tálamo-cortical por perda de glutamato",
+        "Redução da inibição exercida pelo núcleo subtalâmico"
+      ],
+      "correctIndex": 0,
+      "explanation": "A perda dopaminérgica desinibe a via indireta e reduz a atividade da via direta, de modo que o núcleo subtalâmico passa a excitar em excesso o pálido interno/substância negra pars reticulata. Esse complexo, hiperativo, inibe demais o tálamo, reduz a estimulação tálamo-cortical e produz a pobreza de iniciativa motora.",
+      "image": "pg04",
+      "imageCaption": "Modelo funcional das síndromes hipocinéticas"
+    },
+    {
+      "question": "Homem de 64 anos nota tremor na mão direita que aparece com o braço largado sobre a coxa, some quando ele leva o copo à boca e piora quando faz cálculo mental. Que característica mais sustenta tremor parkinsoniano em vez de tremor essencial?",
+      "options": [
+        "Desaparecer com o movimento voluntário do segmento",
+        "Aparecer só com o braço mantido estendido à frente",
+        "Melhorar de forma acentuada com uma dose de álcool",
+        "Acometer precocemente o segmento cefálico e a voz"
+      ],
+      "correctIndex": 0,
+      "explanation": "O tremor parkinsoniano é de repouso: exacerba-se na marcha, no esforço mental e na tensão emocional, mas diminui com a movimentação voluntária do segmento e desaparece no sono. O tremor essencial é postural ou de ação, responde muito bem ao álcool e acomete com frequência a cabeça e os músculos fonatórios."
+    },
+    {
+      "question": "A frequência do tremor de repouso característico da síndrome parkinsoniana situa-se tipicamente em qual faixa?",
+      "options": [
+        "Quatro a seis ciclos por segundo",
+        "Dois a quatro ciclos por segundo",
+        "Oito a doze ciclos por segundo",
+        "Doze a quinze ciclos por segundo"
+      ],
+      "correctIndex": 0,
+      "explanation": "O tremor parkinsoniano oscila entre quatro e seis ciclos por segundo e costuma envolver as mãos com alternância entre pronação e supinação. Frequências de dois a quatro hertz sugerem tremor cerebelar ou de tronco encefálico, e de oito a doze hertz apontam para tremor fisiológico de amplitude patológica."
+    },
+    {
+      "question": "Ao mobilizar passivamente o cotovelo de um parkinsoniano, o examinador encontra resistência uniforme por toda a excursão, sem intervalo livre inicial e sem tendência de retorno do segmento. Esse achado caracteriza:",
+      "options": [
+        "Hipertonia plástica, típica da síndrome parkinsoniana",
+        "Hipertonia elástica, típica da lesão do trato piramidal",
+        "Paratonia oposicionista, típica das demências avançadas",
+        "Distonia de ação, típica das lesões focais do putâmen"
+      ],
+      "correctIndex": 0,
+      "explanation": "A rigidez parkinsoniana é uma hipertonia plástica: a resistência é uniforme em toda a amplitude, sem o intervalo livre inicial nem o caráter crescente da hipertonia elástica, e o segmento não tende a voltar à posição de origem. Quando a resistência é intermitente, configura-se o fenômeno da roda denteada."
+    },
+    {
+      "question": "Paciente com doença de Parkinson há oito anos relata que, ao chegar a uma porta ou a uma faixa pintada no chão, os pés parecem grudar e ele não consegue iniciar o passo. Esse fenômeno é denominado:",
+      "options": [
+        "Acinesia súbita, ou congelamento",
+        "Festinação, com marcha acelerada",
+        "Cinesia paradoxal por emoção",
+        "Acatisia por uso de neuroléptico"
+      ],
+      "correctIndex": 0,
+      "explanation": "A acinesia súbita, ou congelamento, é a perda abrupta da capacidade de iniciar ou sustentar uma atividade motora específica, mantendo-se as demais inalteradas. Manifesta-se sobretudo na marcha, pode ser desencadeada por obstáculo real ou apenas visual, e é incomum nos primeiros anos de evolução."
+    },
+    {
+      "question": "Estabelecido o diagnóstico sindrômico de parkinsonismo, a classificação etiológica clássica separa os casos em três grupos básicos:",
+      "options": [
+        "Idiopático, secundário e parkinsonismo-plus",
+        "Idiopático, vascular e medicamentoso",
+        "Cortical, subcortical e de tronco encefálico",
+        "Congênito, adquirido e degenerativo tardio"
+      ],
+      "correctIndex": 0,
+      "explanation": "O parkinsonismo idiopático ou primário corresponde à doença de Parkinson; o secundário reúne causas identificáveis, como drogas, intoxicações, infecções e doença vascular cerebral; e o parkinsonismo-plus abrange degenerações em que a síndrome parkinsoniana se soma a sinais autonômicos, cerebelares, piramidais ou oculomotores."
+    },
+    {
+      "question": "A relação de causas de parkinsonismo secundário exibida na imagem inclui, entre as intoxicações exógenas, um agente que reproduz experimentalmente a doença. Qual é ele?",
+      "options": [
+        "A metil-fenil-tetrahidroperidina (MPTP)",
+        "O tetracloreto de carbono industrial",
+        "O brometo de metila usado em lavoura",
+        "A metil-etil-cetona dos solventes"
+      ],
+      "correctIndex": 0,
+      "explanation": "O MPTP figura entre as intoxicações exógenas capazes de produzir parkinsonismo, ao lado de manganês, monóxido de carbono, dissulfeto de carbono, metanol, organofosforados e herbicidas. Foi com o parkinsonismo experimental induzido por MPTP que se demonstrou o efeito protetor de inibidores da monoamino-oxidase B em modelos animais.",
+      "image": "pg08",
+      "imageCaption": "Causas de parkinsonismo secundário e de parkinsonismo-plus"
+    },
+    {
+      "question": "Mulher de 70 anos usa há dois anos um bloqueador de canais de cálcio prescrito para labirintopatia e desenvolve bradicinesia e rigidez simétricas. O fármaco mais provavelmente responsável é:",
+      "options": [
+        "Flunarizina",
+        "Nimodipino",
+        "Anlodipino",
+        "Verapamil"
+      ],
+      "correctIndex": 0,
+      "explanation": "Cinarizina e flunarizina, bloqueadores de canais de cálcio muito usados como antivertiginosos, estão entre as causas mais frequentes de parkinsonismo secundário a drogas, ao lado dos neurolépticos. O quadro tende a ser simétrico e regride com a retirada do fármaco, o que faz da anamnese medicamentosa passo obrigatório."
+    },
+    {
+      "question": "Entre os antieméticos, qual é classicamente apontado como causa de parkinsonismo por bloqueio de receptores dopaminérgicos?",
+      "options": [
+        "Metoclopramida",
+        "Ondansetrona",
+        "Dimenidrinato",
+        "Escopolamina"
+      ],
+      "correctIndex": 0,
+      "explanation": "A metoclopramida é antagonista dopaminérgico e figura entre as drogas capazes de induzir parkinsonismo, junto com neurolépticos fenotiazínicos, butirofenonas, tioxantenos, reserpina e tetrabenazina. A ondansetrona age em receptores serotoninérgicos e o dimenidrinato é anti-histamínico, sem esse efeito."
+    },
+    {
+      "question": "O termo parkinsonismo-plus designa quadros em que a síndrome parkinsoniana, em geral expressa apenas por acinesia e rigidez, associa-se a:",
+      "options": [
+        "Sinais autonômicos, cerebelares, piramidais ou oculomotores",
+        "Crises epilépticas focais e alterações eletrencefalográficas",
+        "Neuropatia periférica sensitiva e arreflexia generalizada",
+        "Movimentos coreicos amplos e hipotonia dos quatro membros"
+      ],
+      "correctIndex": 0,
+      "explanation": "No parkinsonismo-plus a síndrome parkinsoniana costuma ser rígido-acinética, sem tremor, e vem acompanhada de distúrbios autonômicos, cerebelares, piramidais, de neurônio motor inferior ou da motricidade ocular extrínseca. As principais causas são a atrofia de múltiplos sistemas, a paralisia supranuclear progressiva, a degeneração córtico-basal e a demência dos corpos de Lewy."
+    },
+    {
+      "question": "Homem de 66 anos apresenta parkinsonismo rígido-acinético simétrico, sem tremor, com quedas para trás desde o primeiro ano e limitação do olhar vertical. A hipótese mais provável é:",
+      "options": [
+        "Paralisia supranuclear progressiva",
+        "Doença de Parkinson idiopática",
+        "Parkinsonismo vascular subcortical",
+        "Demência dos corpos de Lewy"
+      ],
+      "correctIndex": 0,
+      "explanation": "A combinação de parkinsonismo simétrico sem tremor, instabilidade postural precoce e comprometimento da motricidade ocular extrínseca caracteriza a paralisia supranuclear progressiva, uma das formas de parkinsonismo-plus. Na doença de Parkinson o início é tipicamente assimétrico, com tremor de repouso e quedas tardias."
+    },
+    {
+      "question": "Um quadro rígido-acinético unilateral pode simular hemiparesia por lesão do trato corticospinal. Que conjunto de achados afasta a lesão piramidal?",
+      "options": [
+        "Ausência de hipertonia elástica, hiper-reflexia e Babinski",
+        "Presença de hipertonia elástica, clônus e hiper-reflexia",
+        "Ausência de tremor de repouso e de fenômeno da roda denteada",
+        "Presença de dismetria, disdiadococinesia e nistagmo evocado"
+      ],
+      "correctIndex": 0,
+      "explanation": "Quando o quadro rígido-acinético é unilateral, a dificuldade motora pode ser confundida com hemiparesia. A ausência das demais anormalidades da síndrome piramidal — hipertonia elástica, hiper-reflexia, sinal de Babinski e abolição do reflexo cutâneo-abdominal — permite a diferenciação."
+    },
+    {
+      "question": "A imagem organiza o tratamento sintomático da doença de Parkinson em dois eixos farmacológicos. Qual é o segundo eixo, ao lado das drogas que aumentam a atividade dopaminérgica?",
+      "options": [
+        "A redução da atividade colinérgica, com anticolinérgicos",
+        "A redução da atividade glutamatérgica, com antagonistas",
+        "O aumento da atividade gabaérgica, com benzodiazepínicos",
+        "A redução da atividade serotoninérgica, com antagonistas"
+      ],
+      "correctIndex": 0,
+      "explanation": "A anormalidade bioquímica de maior relevância no estriado parkinsoniano é o desequilíbrio entre atividade dopaminérgica e colinérgica. Por isso o arsenal se divide em drogas que aumentam a atividade dopaminérgica — levodopa, agonistas, inibidores da degradação e amantadina — e anticolinérgicos como o biperideno e o triexifenidil.",
+      "image": "pg09",
+      "imageCaption": "As duas famílias de drogas do tratamento sintomático"
+    },
+    {
+      "question": "A associação da levodopa à carbidopa ou à benserazida tem qual finalidade principal?",
+      "options": [
+        "Inibir a dopadescarboxilase periférica e reduzir a dose",
+        "Inibir a COMT central e prolongar o efeito de cada dose",
+        "Bloquear a MAO-B e frear a degradação da dopamina",
+        "Aumentar a absorção intestinal do aminoácido neutro"
+      ],
+      "correctIndex": 0,
+      "explanation": "A conversão periférica da levodopa em dopamina causa náuseas, vômitos, anorexia, hipotensão postural e arritmia cardíaca, e obriga a doses de 3 a 4 gramas por dia. Inibidores periféricos da dopadescarboxilase, como carbidopa e benserazida, controlam esses efeitos e permitem reduzir a dose para cerca de 1 grama diário."
+    },
+    {
+      "question": "Estima-se que, dois a cinco anos após o início do tratamento com levodopa, a proporção de pacientes que desenvolve flutuações do desempenho motor seja de cerca de:",
+      "options": [
+        "50%",
+        "10%",
+        "25%",
+        "80%"
+      ],
+      "correctIndex": 0,
+      "explanation": "Metade dos pacientes desenvolve flutuações motoras entre dois e cinco anos de levodopaterapia. Além disso, perda de eficácia da ordem de 30% a 40% da resposta inicial ocorre em 60% dos pacientes com mais de três anos de uso, o que explica a estratégia de postergar a droga em pacientes jovens."
+    },
+    {
+      "question": "A imagem relaciona as complicações motoras da levodopaterapia. A distonia de fim de dose aparece ali como manifestação de qual delas?",
+      "options": [
+        "Da redução da duração de efeito, o wearing-off",
+        "Da discinesia de pico de efeito da dose",
+        "Do bloqueio motor conhecido como freezing",
+        "Das flutuações erráticas e imprevisíveis"
+      ],
+      "correctIndex": 0,
+      "explanation": "A redução da duração de efeito, ou wearing-off, engloba a acinesia noturna, a acinesia matinal e a distonia de fim de dose — todas expressões do esgotamento do efeito antes da dose seguinte. As discinesias de pico e bifásica, o bloqueio e as flutuações erráticas constituem categorias distintas.",
+      "image": "pg10",
+      "imageCaption": "Complicações motoras da levodopaterapia e seu manejo"
+    },
+    {
+      "question": "Parkinsoniano idoso em uso de levodopa passa a apresentar alucinações visuais e delírios. Qual é a primeira medida recomendada?",
+      "options": [
+        "Retirar as demais drogas antiparkinsonianas associadas",
+        "Suspender de imediato e por completo a levodopa",
+        "Introduzir haloperidol em dose baixa ao deitar",
+        "Associar um inibidor da colinesterase de ação central"
+      ],
+      "correctIndex": 0,
+      "explanation": "Diante de alucinações e delírios, retiram-se primeiro as outras drogas antiparkinsonianas associadas e só depois se reduz progressivamente a levodopa. Se a redução piorar o parkinsonismo de modo inaceitável, mantém-se a dose mínima e introduz-se um neuroléptico de baixa afinidade por receptores estriatais, como clozapina ou quetiapina."
+    },
+    {
+      "question": "Comparados à levodopa, os agonistas dopaminérgicos oferecem qual vantagem farmacológica?",
+      "options": [
+        "Independem de conversão enzimática nos neurônios nigrais",
+        "Têm eficácia sintomática nitidamente superior à levodopa",
+        "Provocam menos efeitos colaterais de ordem psiquiátrica",
+        "Custam menos e são mais bem tolerados por idosos frágeis"
+      ],
+      "correctIndex": 0,
+      "explanation": "Os agonistas estimulam diretamente os receptores estriatais e por isso não dependem dos sistemas enzimáticos dos neurônios nigrais em degeneração. Somam-se a isso meia-vida mais longa, ausência de competição por transporte e menor incidência de complicações motoras. Em contrapartida têm menor eficácia, pior tolerância, mais efeitos psiquiátricos e custo alto."
+    },
+    {
+      "question": "Um efeito colateral peculiar do pramipexol, capaz de interferir de forma perigosa nas atividades diárias, é:",
+      "options": [
+        "Episódios súbitos de sonolência durante o dia",
+        "Fibrose pleural e retroperitoneal progressiva",
+        "Eritromelalgia dolorosa das extremidades",
+        "Vasoespasmo digital com palidez recorrente"
+      ],
+      "correctIndex": 0,
+      "explanation": "O pramipexol é um derivado benzotiazólico não ergolíneo, com alta afinidade por receptores D2 e D3, e tem como efeito colateral próprio episódios súbitos de sonolência diurna. Fibrose pleural e retroperitoneal, eritromelalgia e vasoespasmo são efeitos característicos dos agonistas derivados do ergot, ausentes com ele."
+    },
+    {
+      "question": "Os anticolinérgicos agem restabelecendo o equilíbrio entre acetilcolina e dopamina no estriado. Quais manifestações parkinsonianas respondem melhor a eles?",
+      "options": [
+        "O tremor e a rigidez, com pouca mudança da acinesia",
+        "A acinesia e a marcha, com pouca mudança do tremor",
+        "A instabilidade postural e as quedas de repetição",
+        "Os distúrbios autonômicos e a hipotensão postural"
+      ],
+      "correctIndex": 0,
+      "explanation": "Tremor e rigidez são os componentes que melhor respondem aos anticolinérgicos, enquanto a acinesia pouco se modifica. Biperideno e triexifenidil são os mais usados, em doses de 2 a 20 mg diários, e devem ser evitados em idosos e demenciados pelo risco de quadro confusional e alucinações."
+    },
+    {
+      "question": "Além dos efeitos anticolinérgicos, a amantadina pode provocar dois achados bastante característicos na pele e nos membros inferiores:",
+      "options": [
+        "Livedo reticularis e edema de membros inferiores",
+        "Púrpura palpável e úlceras maleolares crônicas",
+        "Eritema nodoso e linfedema de membros inferiores",
+        "Vitiligo segmentar e onicólise das unhas dos pés"
+      ],
+      "correctIndex": 0,
+      "explanation": "A amantadina, antiviral com efeito antiparkinsoniano descoberto casualmente, bloqueia a recaptação de dopamina e tem também ação anticolinérgica e bloqueadora de receptores NMDA. Livedo reticularis e edema de membros inferiores somam-se aos efeitos anticolinérgicos. Costuma perder eficácia após seis meses a um ano de uso."
+    },
+    {
+      "question": "A selegilina, avaliada como possível agente neuroprotetor na doença de Parkinson, exerce sua ação farmacológica como:",
+      "options": [
+        "Inibidor seletivo da monoamino-oxidase tipo B",
+        "Inibidor seletivo da catecol-O-metiltransferase",
+        "Agonista direto dos receptores dopaminérgicos",
+        "Bloqueador da recaptação estriatal de dopamina"
+      ],
+      "correctIndex": 0,
+      "explanation": "A selegilina é inibidor seletivo da monoamino-oxidase B e foi a droga mais estudada quanto a um possível efeito neuroprotetor, em ensaios como o DATATOP e o SINDEPAR. A principal crítica a esses estudos é a impossibilidade de excluir a interferência de seu próprio efeito sintomático sobre os resultados."
+    },
+    {
+      "question": "A figura assinala com raios os alvos empregados no tratamento cirúrgico da doença de Parkinson. Que estruturas são essas?",
+      "options": [
+        "Tálamo, pálido interno e núcleo subtalâmico",
+        "Striatum, pálido externo e núcleo caudado",
+        "Substância negra, tálamo e núcleo caudado",
+        "Pálido externo, putâmen e colículo superior"
+      ],
+      "correctIndex": 0,
+      "explanation": "Os alvos cirúrgicos são o tálamo, o pálido interno e o núcleo subtalâmico de Luys. Os procedimentos ablativos dirigem-se ao tálamo e ao pálido interno; a estimulação cerebral profunda pode ser feita também no núcleo subtalâmico, hoje considerada por muitos autores o procedimento mais eficaz.",
+      "image": "pg15",
+      "imageCaption": "Alvos cirúrgicos no circuito dos gânglios da base"
+    },
+    {
+      "question": "A talamotomia estereotáxica dirigida ao núcleo intermédio ventral é o procedimento mais eficiente para controlar qual manifestação parkinsoniana?",
+      "options": [
+        "O tremor, com alívio em torno de 90% dos casos",
+        "A acinesia, com alívio em torno de 90% dos casos",
+        "A rigidez, com alívio em torno de 90% dos casos",
+        "As quedas, com alívio em torno de 90% dos casos"
+      ],
+      "correctIndex": 0,
+      "explanation": "O alvo da talamotomia é o núcleo intermédio ventral do tálamo, e a eficácia sobre o tremor gira em torno de 90%, com manutenção do efeito em longo prazo. Os melhores candidatos são pacientes com predomínio de tremor sem resposta farmacológica. O procedimento bilateral não é indicado, pois provoca disartria intensa em até 25% dos casos."
+    },
+    {
+      "question": "O algoritmo mostrado na imagem posiciona a levodopa em que momento do tratamento da doença de Parkinson?",
+      "options": [
+        "Na etapa final, associada a ICOMT e/ou agonista",
+        "Na etapa inicial, isolada e já em dose plena",
+        "Antes dos agonistas, logo após a amantadina",
+        "Apenas quando a cirurgia estiver contraindicada"
+      ],
+      "correctIndex": 0,
+      "explanation": "O algoritmo parte de amantadina, selegilina ou anticolinérgico, passa aos agonistas dopaminérgicos e só então chega à levodopa combinada a inibidor da COMT e/ou agonista. Essa postergação é válida sobretudo para pacientes jovens com parkinsonismo leve; acima dos 70 anos a levodopa costuma ser a primeira opção.",
+      "image": "pg17",
+      "imageCaption": "Algoritmo de tratamento da doença de Parkinson"
+    },
+    {
+      "question": "Mulher de 55 anos tem tremor bilateral das mãos que surge ao segurar a xícara, melhora nitidamente após uma dose de bebida alcoólica e ocorre também no pai. O tratamento de primeira escolha é:",
+      "options": [
+        "Propranolol ou primidona",
+        "Levodopa ou pramipexol",
+        "Biperideno ou amantadina",
+        "Clonazepam ou valproato"
+      ],
+      "correctIndex": 0,
+      "explanation": "O quadro é de tremor essencial: tremor de ação, postural, com história familiar positiva e resposta característica ao álcool, herdado de forma autossômica dominante. O tratamento é feito com betabloqueadores adrenérgicos, como o propranolol, ou com primidona. Drogas dopaminérgicas e anticolinérgicas destinam-se ao tremor parkinsoniano."
+    }
+  ]
+}

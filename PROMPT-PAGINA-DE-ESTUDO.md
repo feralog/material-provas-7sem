@@ -22,8 +22,9 @@ Tela inicial com **seletor: Quiz ou Resumo**.
 - **Quiz** — navegação livre, trilha clicável no topo (verde/vermelho/cinza), setas ← →,
   teclas `1`–`6` para responder, `Enter` para avançar, explicação imediata ao responder,
   aviso antes de finalizar com questões em branco, e ao fim um **gabarito comentado**
-  filtrável (todas / erradas / certas / em branco). As alternativas são embaralhadas a
-  cada partida, e o gabarito acompanha o embaralhamento.
+  filtrável (todas / erradas / certas / em branco). A cada partida a página embaralha
+  **a ordem das questões e as alternativas de cada uma**, e o gabarito acompanha — então
+  a mesma página nunca é decorada por posição.
 - **Resumo** — texto corrido com tipografia serifada, tabelas, callouts e figuras.
 - Clique em qualquer figura amplia (Esc fecha). Dá para sair do quiz e retomar depois sem
   perder as respostas.
@@ -98,16 +99,26 @@ Substitua o marcador por um array JSON válido, nada mais:
 **Regras que não se negociam:**
 
 1. **25 a 30 questões** (35 a 45 se for revisão ampla de vários assuntos).
-2. A correta é **sempre `options[0]`**, com `"correctIndex": 0`. A página embaralha
-   sozinha na hora de exibir — se você espalhar a correta, o gabarito quebra.
+2. **A correta é sempre `options[0]`**, com `"correctIndex": 0` — em todas as questões,
+   sem exceção. Você não distribui a resposta entre as posições: ao abrir a página, o
+   JavaScript embaralha **a ordem das questões e as alternativas de cada questão**, e
+   recalcula o gabarito (`correctIndex = novaPosicaoDaCorreta`). Se você já espalhar a
+   correta no JSON, não melhora nada e ainda dificulta a revisão — e se errar o índice,
+   o gabarito fica errado em silêncio.
 3. **4 ou 5 alternativas**, o mesmo número em todas as questões.
 4. **Equalização de comprimento:** dentro de uma questão, a alternativa mais longa não
    pode passar de **130% do comprimento da mais curta**. Alternativa visivelmente maior
    entrega a resposta. Se a correta precisar de qualificação, mande a justificativa para o
    `explanation`; se um distrator ficou curto demais, espelhe a estrutura da correta com
    valores errados.
-5. **Distratores plausíveis.** Alternativa absurda transforma 5 opções em 2. Use o erro
-   real: o conceito vizinho, o valor de corte errado, a conduta de segunda linha.
+5. **Escreva a correta primeiro e construa os distratores em cima dela.** É por isso
+   que a correta ocupa a posição 0: ela é o ponto de partida da questão, não uma das
+   cinco opções sorteadas. Fixe a resposta certa, e só então derive cada distrator
+   alterando **um** elemento dela — o valor de corte, o mecanismo, o autor, o momento da
+   conduta. Distratores assim são plausíveis por construção e ficam naturalmente com o
+   mesmo comprimento e a mesma sintaxe da correta, que é o que as regras 4 e 6 exigem.
+   Alternativa absurda transforma 5 opções em 2: use o erro real que o aluno comete —
+   o conceito vizinho, o valor errado, a conduta de segunda linha.
 6. **Mesmo estilo sintático** dentro da questão — nunca frase completa misturada com
    fragmento, nem uma alternativa começando com maiúscula e outra não.
 7. **`explanation` nunca vazio**, e nunca só "porque sim": traga o dado (o número, o

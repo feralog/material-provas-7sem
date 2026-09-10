@@ -1,0 +1,442 @@
+{
+  "titulo": "Emergências Oncológicas em Pediatria",
+  "eyebrow": "Pediatria · Oncologia",
+  "subtitulo": "Reconhecer, estabilizar e agir antes do diagnóstico histológico",
+  "intro": "Complicações que ameaçam a vida da criança com câncer: síndrome de veia cava superior/mediastinal, síndrome de lise tumoral, hiperleucocitose, compressão medular, neutropenia febril e as emergências metabólicas, cardiovasculares e gastrintestinais do tratamento. Foco em critérios numéricos, doses pediátricas e nas armadilhas que separam a conduta certa da errada.",
+  "questoes": [
+    {
+      "question": "Menino de 12 anos apresenta tosse seca há três semanas, edema facial mais intenso pela manhã, pletora e dispneia que piora quando deita. A radiografia de tórax mostra alargamento do mediastino superior. Qual é a hipótese diagnóstica?",
+      "options": [
+        "Síndrome da veia cava superior por massa do mediastino anterior",
+        "Pneumonia lobar complicada por derrame pleural loculado extenso",
+        "Crise de asma grave de início tardio na segunda década de vida",
+        "Insuficiência cardíaca aguda secundária a miocardite viral grave"
+      ],
+      "correctIndex": 0,
+      "explanation": "Edema facial, pletora, edema cervical e de tórax superior e ortopneia compõem o quadro de obstrução ao retorno venoso pela veia cava superior. Em criança, a causa quase sempre é compressão extrínseca por massa do mediastino anterior, e o alargamento mediastinal na radiografia fecha o raciocínio. Quando há também compressão traqueal, o quadro é chamado de síndrome mediastinal superior."
+    },
+    {
+      "question": "Qual grupo de tumores responde pela maior parte dos casos de compressão da veia cava superior em crianças e adolescentes?",
+      "options": [
+        "Linfomas de Hodgkin e não Hodgkin do mediastino anterior",
+        "Tumores de células germinativas do mediastino anterior",
+        "Neuroblastomas originados no mediastino posterior alto",
+        "Sarcomas de partes moles da parede torácica anterior"
+      ],
+      "correctIndex": 0,
+      "explanation": "As massas do mediastino anterior são as que mais comprimem a veia cava superior, e entre elas predominam os linfomas de Hodgkin e não Hodgkin. Tumores de células germinativas vêm em menor frequência, e as leucemias podem causar o quadro secundariamente à infiltração de linfonodos mediastinais com derrames serosos. Neuroblastoma ocupa o mediastino posterior e tipicamente causa compressão medular, não de veia cava."
+    },
+    {
+      "question": "Por que a obstrução da via aérea é mais precoce e mais grave na criança com massa mediastinal do que no adulto?",
+      "options": [
+        "A traqueia e o brônquio-fonte infantis são mais maleáveis e colapsáveis",
+        "A veia cava superior infantil tem parede espessa e pressão intraluminal alta",
+        "O mediastino infantil é mais rígido e restringe o crescimento do tumor",
+        "Os linfonodos mediastinais da criança são escassos e pouco reativos"
+      ],
+      "correctIndex": 0,
+      "explanation": "Na criança, a traqueia e o brônquio-fonte têm cartilagem mais maleável e cedem à compressão extrínseca com muito menos pressão do que no adulto. Some-se a isso que a veia cava superior infantil tem paredes finas, baixa pressão intraluminal e é cercada por linfonodos que se hipertrofiam com a neoplasia. Por isso os sinais de compressão vascular e de via aérea costumam aparecer juntos."
+    },
+    {
+      "question": "Adolescente com massa mediastinal anterior volumosa é colocada em decúbito dorsal para o exame e evolui com estridor e queda da saturação. Qual é a conduta imediata?",
+      "options": [
+        "Devolver a criança à posição sentada e ofertar oxigênio suplementar",
+        "Sedar e proceder à intubação orotraqueal eletiva em decúbito dorsal",
+        "Manter o decúbito dorsal e iniciar ventilação não invasiva com máscara",
+        "Puncionar a massa mediastinal às cegas para descompressão imediata"
+      ],
+      "correctIndex": 0,
+      "explanation": "Em massa mediastinal anterior a via aérea pode estar tão reduzida que a simples mudança para decúbito dorsal ou a flexão do tronco precipita obstrução total e parada cardiorrespiratória. A manobra que salva é devolver o paciente à posição sentada ou semissentada, em que o peso da massa deixa de comprimir a traqueia, e ofertar oxigênio. Sedar ou intubar nesse momento pode tornar a ventilação impossível."
+    },
+    {
+      "question": "Qual achado permite considerar sedação ou anestesia geral relativamente seguras em criança com massa mediastinal anterior?",
+      "options": [
+        "Área traqueal e pico de fluxo expiratório acima de 50% do previsto",
+        "Ausência de derrame pleural na radiografia de tórax em incidência PA",
+        "Saturação periférica de oxigênio acima de 94% em ar ambiente, deitada",
+        "Massa com diâmetro menor que um terço do diâmetro torácico total"
+      ],
+      "correctIndex": 0,
+      "explanation": "A tomografia fornece a área traqueal transversal, que comparada ao padrão esperado para idade e sexo indica a margem de segurança; e o pico de fluxo expiratório é medido à beira do leito, com aparelho portátil, nas posições sentada e supina. Criança que mantém mais de 50% do valor previsto nesses dois parâmetros pode ser submetida a sedação ou anestesia com risco aceitável. Abaixo disso a anestesia geral deve ser evitada."
+    },
+    {
+      "question": "Adolescente com síndrome mediastinal superior e forte suspeita de linfoma. Por que iniciar corticoide antes de obter material para biópsia pode prejudicar o paciente?",
+      "options": [
+        "Pode lisar o tumor e impedir a classificação histológica adequada",
+        "Pode aumentar a massa por efeito rebote e piorar a compressão traqueal",
+        "Pode mascarar a febre e retardar o diagnóstico de infecção associada",
+        "Pode causar hipertensão arterial grave e contraindicar toda anestesia"
+      ],
+      "correctIndex": 0,
+      "explanation": "Nos linfomas não Hodgkin, poucos dias de corticoide já podem destruir tecido suficiente para inviabilizar a classificação histológica, e sem a classificação o paciente pode não receber o esquema quimioterápico correto, com prejuízo de prognóstico. Além disso, o corticoide desencadeia síndrome de lise tumoral e não deve ser iniciado onde não houver equipe familiarizada com o manejo dessa síndrome. Em risco de morte iminente, porém, o tratamento pode preceder a biópsia."
+    },
+    {
+      "question": "A radiografia de tórax abaixo é de uma criança com edema facial, pletora e dispneia progressiva. Qual estrutura está comprometida pelo achado?",
+      "options": [
+        "A veia cava superior, comprimida pela massa do mediastino anterior",
+        "A aorta descendente, deslocada por massa do mediastino posterior",
+        "O esôfago torácico, estenosado por linfonodos do mediastino médio",
+        "O diafragma direito, elevado por paralisia do nervo frênico ipsilateral"
+      ],
+      "correctIndex": 0,
+      "explanation": "A radiografia mostra opacidade que ocupa o mediastino e desloca as estruturas vizinhas, padrão típico de massa mediastinal anterior. Associada ao edema facial e à pletora, o achado indica compressão extrínseca da veia cava superior. A radiografia simples é o primeiro exame porque é rápido, não exige mudança de decúbito prolongada e já informa tamanho da massa e presença de derrame pleural.",
+      "image": "s43i2",
+      "imageCaption": "Radiografia de tórax em PA: massa mediastinal comprimindo a veia cava superior"
+    },
+    {
+      "question": "O achado de exame físico mostrado na imagem, em paciente com massa mediastinal, corresponde a que mecanismo?",
+      "options": [
+        "Circulação colateral por obstrução do retorno venoso da veia cava superior",
+        "Circulação colateral por hipertensão portal com recanalização umbilical",
+        "Telangiectasias cutâneas por radiodermite após irradiação torácica prévia",
+        "Linfangite superficial por infecção do túnel de cateter venoso central"
+      ],
+      "correctIndex": 0,
+      "explanation": "A rede venosa dilatada e tortuosa em pescoço e tórax superior é circulação colateral: com a veia cava superior obstruída, o sangue procura vias alternativas para retornar ao coração. É sinal de obstrução instalada e de certa cronicidade, e vem acompanhada de edema facial e cervical, pletora e sufusão conjuntival. Na hipertensão portal a colateral se distribui pelo abdome, não pelo tórax superior.",
+      "image": "s43i1",
+      "imageCaption": "Circulação colateral em pescoço e tórax superior na obstrução da veia cava superior"
+    },
+    {
+      "question": "Adolescente com massa mediastinal anterior tem pico de fluxo expiratório de 30% do previsto, o que torna proibitivo qualquer procedimento sob sedação. Qual exame pode fechar o diagnóstico sem procedimento invasivo?",
+      "options": [
+        "Dosagem sérica de alfafetoproteína e beta-hCG somada ao hemograma",
+        "Tomografia de tórax com contraste iodado e reconstrução multiplanar",
+        "Biópsia por agulha fina da massa guiada por tomografia sob sedação",
+        "Mediastinoscopia com biópsia excisional sob anestesia geral breve"
+      ],
+      "correctIndex": 0,
+      "explanation": "A comprovação diagnóstica deve ser a mais rápida e a menos invasiva possível. Um hemograma com blastos identifica a leucemia, e alfafetoproteína ou beta-hCG elevados identificam o tumor de células germinativas, ambos sem sedação. A tomografia é útil para avaliar o risco anestésico, mas não dá o diagnóstico histológico; se nada disso resolver, a punção com agulha e anestesia local, por mãos experientes, vem antes de procedimento sob anestesia geral."
+    },
+    {
+      "question": "Menina de 11 anos tem o primeiro episódio de sibilância e tosse seca da vida, há duas semanas, sem história de atopia, com piora ao deitar. Qual é a principal preocupação?",
+      "options": [
+        "Massa do mediastino anterior comprimindo traqueia e brônquio-fonte",
+        "Asma de início tardio desencadeada por infecção viral respiratória",
+        "Corpo estranho brônquico aspirado e ainda não diagnosticado antes",
+        "Refluxo gastroesofágico com broncoaspiração crônica de repetição"
+      ],
+      "correctIndex": 0,
+      "explanation": "Criança com massa mediastinal anterior costuma se apresentar com tosse, febre e sibilância, o que faz o quadro ser confundido com infecção respiratória ou asma. O primeiro episódio de sibilância em criança maior, sobretudo a partir do final da primeira década, e ainda mais se piora em decúbito, exige alto índice de suspeição e uma radiografia de tórax antes de rotular como asma."
+    },
+    {
+      "question": "A imagem resume a cascata metabólica da síndrome de lise tumoral. Qual é a tríade laboratorial clássica dessa síndrome?",
+      "options": [
+        "Hiperuricemia, hiperfosfatemia e hipercalemia",
+        "Hipouricemia, hipofosfatemia e hipocalemia",
+        "Hiperuricemia, hipofosfatemia e hipernatremia",
+        "Hipercalcemia, hiperfosfatemia e hipocalemia"
+      ],
+      "correctIndex": 0,
+      "explanation": "A destruição maciça de células tumorais lança na circulação ácidos nucleicos, potássio e fosfato, gerando hiperuricemia, hipercalemia e hiperfosfatemia. A hipocalcemia é secundária, resultado da precipitação de fosfato de cálcio, e é a quarta alteração que completa o quadro. O potássio elevado é o que mata mais rápido, por arritmia e parada cardíaca.",
+      "image": "s38i1",
+      "imageCaption": "Cascata metabólica da síndrome de lise tumoral"
+    },
+    {
+      "question": "Qual mecanismo explica a hipocalcemia observada na síndrome de lise tumoral?",
+      "options": [
+        "Precipitação de fosfato de cálcio quando o produto cálcio-fósforo passa de 60",
+        "Consumo de cálcio pelos blastos leucêmicos em proliferação clonal acelerada",
+        "Perda urinária de cálcio provocada pela poliúria da hidratação intravenosa",
+        "Queda do paratormônio induzida pela acidose metabólica que acompanha a lise"
+      ],
+      "correctIndex": 0,
+      "explanation": "Os linfoblastos têm concentração de fosfato cerca de quatro vezes maior que a dos linfócitos normais, e a acidose metabólica desloca ainda mais fosfato para o extracelular. Quando o produto entre cálcio e fósforo ultrapassa 60, o fosfato de cálcio precipita na microcirculação e nos túbulos renais, derrubando o cálcio sérico e agravando a lesão renal aguda. A hipocalcemia, portanto, é consequência da hiperfosfatemia."
+    },
+    {
+      "question": "Em que intervalo de tempo costumam aparecer as manifestações da síndrome de lise tumoral?",
+      "options": [
+        "Entre 12 e 72 horas após o início da terapia citotóxica",
+        "Entre 7 e 14 dias após o início da terapia citotóxica",
+        "Apenas após o segundo ciclo da terapia citotóxica",
+        "Somente na fase de aplasia medular pós-quimioterapia"
+      ],
+      "correctIndex": 0,
+      "explanation": "A janela clássica é de 12 a 72 horas do início da quimioterapia, e é nela que a monitorização precisa ser mais intensa. Em doença muito volumosa e de alta taxa de proliferação, porém, a síndrome pode se instalar espontaneamente antes de qualquer tratamento, sobretudo se o suporte não foi feito ao diagnóstico. Por isso paciente de alto risco é reavaliado 4 horas após a primeira dose e depois 4 a 6 vezes ao dia."
+    },
+    {
+      "question": "A tabela apresenta os critérios de Cairo-Bishop. O que define a síndrome de lise tumoral laboratorial?",
+      "options": [
+        "Duas ou mais alterações entre ácido úrico, potássio, fósforo e cálcio",
+        "Uma alteração metabólica isolada acompanhada de elevação da creatinina",
+        "Três alterações metabólicas acompanhadas de arritmia ou de convulsão",
+        "Qualquer alteração metabólica com débito urinário abaixo do esperado"
+      ],
+      "correctIndex": 0,
+      "explanation": "A forma laboratorial exige pelo menos duas das quatro alterações — ácido úrico igual ou acima de 8 mg/dL, potássio igual ou acima de 6 mEq/L, fósforo elevado e cálcio igual ou abaixo de 7 mg/dL — ou variação de 25% em relação ao basal, na janela de 3 dias antes a 7 dias depois da quimioterapia. Creatinina, arritmia e convulsão pertencem à definição clínica, que é o degrau seguinte.",
+      "image": "s39i1",
+      "imageCaption": "Critérios de Cairo-Bishop: lise tumoral laboratorial e clínica"
+    },
+    {
+      "question": "O que transforma uma síndrome de lise tumoral laboratorial em síndrome de lise tumoral clínica?",
+      "options": [
+        "Creatinina 1,5 vez acima do limite, arritmia, convulsão ou morte súbita",
+        "Necessidade de hemodiálise ou de hidratação acima de 3 litros por metro quadrado",
+        "Ácido úrico acima de 12 mg/dL ou potássio acima de 7,5 mEq/L no soro",
+        "Aparecimento simultâneo da tríade de hiperuricemia, fósforo e potássio altos"
+      ],
+      "correctIndex": 0,
+      "explanation": "A forma clínica é a laboratorial somada a pelo menos uma repercussão de órgão: creatinina igual ou acima de 1,5 vez o limite superior da normalidade, arritmia cardíaca ou morte súbita, ou crise convulsiva. Essa distinção importa porque a lesão renal aguda na lise tumoral é preditor independente de mortalidade em curto e em longo prazo. Contagens laboratoriais mais altas, isoladamente, não mudam a categoria."
+    },
+    {
+      "question": "Qual valor de fósforo sérico caracteriza a síndrome de lise tumoral laboratorial em crianças?",
+      "options": [
+        "6,5 mg/dL ou mais, acima do corte de 4,5 mg/dL usado em adultos",
+        "4,5 mg/dL ou mais, o mesmo corte que se aplica também aos adultos",
+        "2,5 mg/dL ou mais, abaixo do corte de 4,5 mg/dL usado em adultos",
+        "8,0 mg/dL ou mais, acima do corte de 6,5 mg/dL usado em adultos"
+      ],
+      "correctIndex": 0,
+      "explanation": "O corte de fósforo é a única variável de Cairo-Bishop com valor diferente entre as faixas etárias: 6,5 mg/dL na criança contra 4,5 mg/dL no adulto, porque a fosfatemia fisiológica da criança em crescimento já é mais alta. Usar o corte de adulto em pediatria superestima o diagnóstico. Ácido úrico, potássio e cálcio mantêm os mesmos valores nas duas faixas."
+    },
+    {
+      "question": "Quais neoplasias pediátricas carregam o maior risco de síndrome de lise tumoral?",
+      "options": [
+        "Linfoma de Burkitt e linfoma linfoblástico em estádio III ou IV",
+        "Leucemia mieloide crônica e síndrome mielodisplásica de baixo grau",
+        "Tumor de Wilms unilateral e hepatoblastoma sem metástase a distância",
+        "Retinoblastoma intraocular e craniofaringioma sem invasão do seio"
+      ],
+      "correctIndex": 0,
+      "explanation": "O risco cresce com a taxa de proliferação, o volume tumoral e a sensibilidade à quimioterapia, e o linfoma de Burkitt e o linfoma linfoblástico avançados reúnem os três. Também entram no alto risco a leucemia linfoide aguda com leucometria igual ou acima de 100.000/mm3 e a desidrogenase láctica duas vezes acima do limite. Curiosamente, a síndrome é rara na leucemia mieloide aguda e na crônica, mesmo com leucometria alta."
+    },
+    {
+      "question": "Qual é a medida isolada mais importante na prevenção da síndrome de lise tumoral?",
+      "options": [
+        "Hidratação intravenosa de cerca de 3 L/m2/dia, sem potássio nem cálcio",
+        "Alcalinização urinária com bicarbonato de sódio até pH acima de 7,5",
+        "Restrição hídrica associada a furosemida para poupar a função renal",
+        "Reposição precoce de cálcio e de fósforo para evitar tetania e arritmia"
+      ],
+      "correctIndex": 0,
+      "explanation": "A hidratação é o fator isolado mais importante: aumenta o fluxo urinário e a taxa de filtração glomerular, diluindo ácido úrico e fosfato antes que precipitem. O volume alvo gira em torno de 3 L/m2/dia, e potássio, cálcio e fósforo não são adicionados ao soro, exceto em deficiência sintomática. A meta é diurese acima de 80 a 100 mL/m2/hora com densidade urinária até 1.010."
+    },
+    {
+      "question": "Qual condição contraindica formalmente o uso da urato-oxidase recombinante (rasburicase)?",
+      "options": [
+        "Deficiência de glicose-6-fosfato desidrogenase, pelo risco de hemólise",
+        "Insuficiência renal aguda oligúrica, pelo risco de acúmulo do fármaco",
+        "Hiperuricemia acima de 12 mg/dL, pelo risco de lise excessivamente rápida",
+        "Uso concomitante de alopurinol, pela competição pela xantina-oxidase"
+      ],
+      "correctIndex": 0,
+      "explanation": "A urato-oxidase converte ácido úrico em alantoína gerando peróxido de hidrogênio, que o eritrócito sem glicose-6-fosfato desidrogenase não consegue neutralizar, provocando hemólise aguda e metemoglobinemia. A dose usual é de 0,1 a 0,2 mg/kg/dia por via intravenosa. Justamente na insuficiência renal ela é mais útil, e não contraindicada, porque não depende de excreção renal para agir."
+    },
+    {
+      "question": "Por que a alcalinização urinária de rotina deixou de ser recomendada na profilaxia da síndrome de lise tumoral?",
+      "options": [
+        "Com pH acima de 7,5 precipitam xantina e fosfato de cálcio nos rins",
+        "Com pH acima de 7,5 o ácido úrico se torna insolúvel e obstrui os túbulos",
+        "O bicarbonato de sódio agrava a hipercalemia por desvio transcelular",
+        "O bicarbonato de sódio aumenta a excreção renal de cálcio e causa tetania"
+      ],
+      "correctIndex": 0,
+      "explanation": "A alcalinização aumenta a solubilidade do ácido úrico, mas não há evidência clara de benefício e a alcalinização excessiva é nociva: acima de pH 7,5 formam-se cálculos de xantina e hipoxantina, e com pH igual ou acima de 8 o fosfato de cálcio cristaliza nos rins. O que sustenta a profilaxia hoje é hidratação vigorosa somada a alopurinol ou urato-oxidase, com monitorização metabólica e acidobásica constante."
+    },
+    {
+      "question": "Criança em quimioterapia para linfoma de Burkitt tem cálcio total de 6,8 mg/dL e fósforo de 9,5 mg/dL, sem tetania, sem convulsão e sem alteração no eletrocardiograma. Qual é a conduta?",
+      "options": [
+        "Não repor cálcio e priorizar a redução do fósforo sérico",
+        "Repor gluconato de cálcio intravenoso em bolus imediato",
+        "Repor cálcio por via oral e manter o fósforo sem tratamento",
+        "Repor cálcio e fósforo juntos para normalizar a relação"
+      ],
+      "correctIndex": 0,
+      "explanation": "A hipocalcemia da lise tumoral é consequência da hiperfosfatemia, e repor cálcio com fósforo alto aumenta o produto cálcio-fósforo e favorece a precipitação de fosfato de cálcio nos rins e na microcirculação. Só se repõe cálcio na hipocalcemia sintomática, com tetania, convulsão ou arritmia. Enquanto isso a conduta é hidratar, usar quelante de fósforo e monitorar de perto."
+    },
+    {
+      "question": "A partir de que contagem leucocitária se define hiperleucocitose no sangue periférico?",
+      "options": [
+        "Acima de 100.000/mm3, embora a repercussão clínica dependa do tipo de leucemia",
+        "Acima de 50.000/mm3, embora a repercussão clínica dependa do tipo de leucemia",
+        "Acima de 300.000/mm3, e a repercussão clínica independe do tipo de leucemia",
+        "Acima de 20.000/mm3, e a repercussão clínica independe do tipo de leucemia"
+      ],
+      "correctIndex": 0,
+      "explanation": "Hiperleucocitose é definida por leucócitos acima de 100.000/mm3, mas o limiar de repercussão clínica varia com a linhagem: acima de 200.000/mm3 na leucemia mieloide aguda e acima de 300.000/mm3 na leucemia linfoide aguda e na mieloide crônica. Ocasionalmente há leucostase sintomática com contagem abaixo de 100.000/mm3, quando citocinas e toxinas do dano endotelial ativam os blastos."
+    },
+    {
+      "question": "A figura contrasta dois mecanismos de hiperviscosidade. Qual descreve especificamente a leucostase?",
+      "options": [
+        "Blastos acumulados obstruem a microcirculação pulmonar e a cerebral",
+        "Paraproteínas em excesso elevam a viscosidade do plasma acima de 4 cP",
+        "Hemácias falciformes rígidas ocluem os capilares em situação de hipóxia",
+        "Plaquetas ativadas formam trombos brancos nas arteríolas pulmonares"
+      ],
+      "correctIndex": 0,
+      "explanation": "Na leucostase o problema é celular: o excesso de blastos aumenta a viscosidade sanguínea e, somado às interações de adesão entre blasto e endotélio lesado, obstrui a microcirculação. Clinicamente isso se traduz em insuficiência respiratória por infiltrado pulmonar e em hemorragia ou trombose no sistema nervoso central. A síndrome de hiperviscosidade por paraproteínas é doença de adulto e se trata com plasmaférese.",
+      "image": "s41i1",
+      "imageCaption": "Leucostase por blastos e síndrome de hiperviscosidade por paraproteínas"
+    },
+    {
+      "question": "Criança com leucemia mieloide aguda tem 300.000 leucócitos/mm3, hemoglobina de 6,8 g/dL, plaquetas de 15.000/mm3 e está hemodinamicamente estável. Qual conduta transfusional está correta?",
+      "options": [
+        "Transfundir plaquetas e adiar as hemácias enquanto ela estiver estável",
+        "Transfundir hemácias e adiar as plaquetas enquanto ela estiver estável",
+        "Transfundir hemácias e plaquetas juntas antes de iniciar a quimioterapia",
+        "Adiar plaquetas e hemácias até a leucometria cair com a hidratação venosa"
+      ],
+      "correctIndex": 0,
+      "explanation": "Concentrado de plaquetas é indicado profilaticamente com contagem abaixo de 20.000/mm3 para prevenir hemorragia cerebral, complicação que mata nesses pacientes. Já o concentrado de hemácias deve ser evitado enquanto o paciente estiver hemodinamicamente estável, porque aumenta o hematócrito e, com ele, a viscosidade sanguínea, agravando a leucostase. O risco de hemorragia intracraniana é maior logo após a queda importante da leucometria."
+    },
+    {
+      "question": "Adolescente com leucemia mieloide aguda e hiperleucocitose assintomática não pode iniciar quimioterapia de indução imediatamente. Qual é a alternativa para citorredução?",
+      "options": [
+        "Hidroxiureia oral, 50 a 100 mg/kg/dia, até leucometria abaixo de 50.000",
+        "Hidroxiureia oral, 10 a 20 mg/kg/dia, até leucometria abaixo de 50.000",
+        "Prednisona oral, 40 a 60 mg/m2/dia, até leucometria abaixo de 50.000",
+        "Metotrexato oral, 20 mg/m2 por semana, até leucometria abaixo de 50.000"
+      ],
+      "correctIndex": 0,
+      "explanation": "A hidroxiureia, na dose de 50 a 100 mg/kg/dia por via oral, reduz a leucometria em 50 a 80% em 24 a 48 horas e é mantida até que a contagem fique abaixo de 50.000/mm3. Seu uso fica reservado à hiperleucocitose assintomática de leucemia mieloide quando a indução imediata não é possível. A quimioterapia sistêmica continua sendo a abordagem mais efetiva, iniciada assim que a função renal e o metabolismo forem corrigidos."
+    },
+    {
+      "question": "A imagem resume os critérios de neutropenia febril. Como se define esse diagnóstico em criança que recebeu quimioterapia?",
+      "options": [
+        "Temperatura de 38,5 °C, ou 38 °C por uma hora, com neutrófilos abaixo de 500",
+        "Temperatura de 37,8 °C, ou 37,5 °C por uma hora, com neutrófilos abaixo de 500",
+        "Temperatura de 38,5 °C, ou 38 °C por uma hora, com leucócitos abaixo de 4.000",
+        "Temperatura de 39,5 °C, ou 39 °C por duas horas, com neutrófilos abaixo de 100"
+      ],
+      "correctIndex": 0,
+      "explanation": "O diagnóstico combina um critério térmico, aferição única de 38,5 °C ou temperatura de 38 °C mantida por uma hora, com um critério celular, contagem absoluta de neutrófilos abaixo de 500/mm3. Também conta como neutropenia clinicamente relevante a contagem abaixo de 1.000/mm3 com previsão de queda nas próximas 48 horas. O que importa é a contagem de neutrófilos, e não a de leucócitos totais.",
+      "image": "s46i1",
+      "imageCaption": "Critérios diagnósticos e conduta inicial na neutropenia febril"
+    },
+    {
+      "question": "Qual é a antibioticoterapia empírica inicial recomendada para neutropenia febril de alto risco?",
+      "options": [
+        "Monoterapia com betalactâmico antipseudomonas por via intravenosa",
+        "Associação de vancomicina com amicacina por via intravenosa desde já",
+        "Amoxicilina com clavulanato por via oral enquanto se aguardam culturas",
+        "Aguardar o resultado da hemocultura antes de qualquer antibiótico venoso"
+      ],
+      "correctIndex": 0,
+      "explanation": "A recomendação é monoterapia com betalactâmico antipseudomonas, cefalosporina de quarta geração ou carbapenêmico, sempre por via intravenosa e imediatamente, antes de qualquer resultado de cultura, porque a infecção no imunocomprometido progride em horas. O acréscimo de um segundo agente antigram-negativo ou de glicopeptídeo fica reservado ao paciente instável, à suspeita de germe resistente ou a serviços com alta taxa de resistência."
+    },
+    {
+      "question": "Criança neutropênica em quimioterapia chega afebril, mas com hipotermia, hipotensão arterial e confusão mental. Qual é a conduta?",
+      "options": [
+        "Tratar empiricamente como infecção grave, mesmo sem febre aferida",
+        "Aguardar a febre surgir para colher culturas e iniciar o antibiótico",
+        "Repetir o hemograma em seis horas antes de qualquer antibiótico",
+        "Iniciar antifúngico empírico isolado por suspeita de fungemia oculta"
+      ],
+      "correctIndex": 0,
+      "explanation": "Em vez de febre, o neutropênico pode manifestar a sepse como hipotermia, hipotensão ou confusão mental, e qualquer sinal de deterioração clínica obriga a tratar empiricamente, independentemente da temperatura aferida. A ausência de neutrófilos também apaga os sinais inflamatórios locais: dor ou eritema discretos já são suspeitos, e o pus só aparece quando a contagem se recupera. Infecção é a maior causa de letalidade nesses pacientes."
+    },
+    {
+      "question": "Qual procedimento deve ser evitado em criança neutropênica febril que apresenta constipação intestinal?",
+      "options": [
+        "Supositório ou clister, pelo risco de translocação bacteriana entérica",
+        "Coleta de hemocultura periférica, pelo risco de bacteriemia iatrogênica",
+        "Aferição de temperatura axilar, pelo risco de lesão de pele e infecção",
+        "Uso de laxante osmótico por via oral, pelo risco de desidratação grave"
+      ],
+      "correctIndex": 0,
+      "explanation": "Supositórios e clisteres traumatizam a mucosa retal, já fragilizada pela quimioterapia, e abrem porta para translocação bacteriana entérica e choque séptico, motivo pelo qual estão proscritos no neutropênico. O toque retal segue a mesma lógica. A hemocultura, ao contrário, deve ser colhida imediatamente, de cada lúmen do cateter, e não retarda o início do antibiótico empírico."
+    },
+    {
+      "question": "Qual é o sintoma inicial mais frequente da compressão medular em criança com câncer?",
+      "options": [
+        "Dor nas costas, que em crianças pequenas pode ser referida no abdome",
+        "Retenção urinária, que em crianças pequenas costuma preceder a dor",
+        "Paraparesia flácida, que em crianças pequenas costuma preceder a dor",
+        "Perda de sensibilidade, que em crianças pequenas costuma preceder a dor"
+      ],
+      "correctIndex": 0,
+      "explanation": "A dor é o sintoma mais comum, geralmente lombar ou torácica, presente na grande maioria dos casos e frequentemente anterior a qualquer déficit. Em crianças pequenas ela pode ser referida como dor abdominal, o que atrasa o diagnóstico; dor abdominal somada a dor em membros inferiores sugere lesão paravertebral. Em lactentes e pré-escolares, regressão de marcos motores ou recusa em deambular podem ser a primeira manifestação."
+    },
+    {
+      "question": "Criança de 5 anos com massa paravertebral conhecida evolui com dor lombar progressiva e recusa em andar. Qual é a sequência correta de conduta?",
+      "options": [
+        "Dexametasona imediata e ressonância magnética da coluna em seguida",
+        "Ressonância magnética eletiva e dexametasona apenas se houver déficit",
+        "Radiografia simples isolada e observação clínica por 48 a 72 horas",
+        "Cirurgia descompressiva imediata antes de qualquer exame de imagem"
+      ],
+      "correctIndex": 0,
+      "explanation": "Na suspeita de compressão medular o corticoide é iniciado imediatamente, porque reduz o edema do cordão e preserva função enquanto o tratamento definitivo é planejado: dexametasona intravenosa, ataque de 1 a 2 mg/kg, seguida de manutenção a cada 6 horas. A imagem vem logo depois, e a ressonância magnética é o exame de escolha. O atraso custa perda motora e esfincteriana definitiva.",
+      "image": "s45i1",
+      "imageCaption": "Emergências neurológicas: hipertensão intracraniana e compressão medular"
+    },
+    {
+      "question": "Que grupo de tumores responde pela maioria dos casos de compressão medular na criança?",
+      "options": [
+        "Extradurais paravertebrais, como sarcomas e neuroblastoma",
+        "Intradurais extramedulares, como metástases de meduloblastoma",
+        "Intramedulares primários, como o astrocitoma do cordão espinhal",
+        "Sarcomas mieloides intradurais, secundários à leucemia mieloide"
+      ],
+      "correctIndex": 0,
+      "explanation": "Cerca de 71% dos casos são de tumores extradurais, tipicamente um tumor paravertebral que se estende pelo forame intervertebral, com destaque para sarcomas e neuroblastoma. Os intradurais são minoria e em geral correspondem a metástases de meduloblastoma; astrocitoma intramedular e sarcoma mieloide são causas raras. A compressão medular ocorre em 3 a 5% dos pacientes pediátricos oncológicos."
+    },
+    {
+      "question": "Criança com tumor de fossa posterior apresenta hipertensão arterial com pressão de pulso alargada, bradicardia e respiração irregular. O que esse conjunto indica?",
+      "options": [
+        "Resposta de Cushing, sinal tardio de hipertensão intracraniana grave",
+        "Reflexo vagal benigno, comum durante a analgesia com opioide venoso",
+        "Choque neurogênico por lesão medular alta, com perda do tônus simpático",
+        "Crise adrenérgica por feocromocitoma associado ao tumor de sistema nervoso"
+      ],
+      "correctIndex": 0,
+      "explanation": "A tríade de hipertensão com pulso largo, bradicardia e respiração irregular é a resposta de Cushing, marcador tardio de hipertensão intracraniana e sinal de herniação iminente. A conduta imediata inclui elevar a cabeceira, corticoide para reduzir o edema peritumoral, manitol ou salina hipertônica e avaliação neurocirúrgica de urgência para derivação. Esperar a tríade para agir é esperar demais."
+    },
+    {
+      "question": "Adolescente com linfoma mediastinal evolui com hipotensão arterial, turgência jugular e bulhas cardíacas abafadas. Qual é o diagnóstico e a conduta?",
+      "options": [
+        "Tamponamento cardíaco; pericardiocentese guiada por ultrassonografia",
+        "Tamponamento cardíaco; expansão volêmica isolada e observação clínica",
+        "Pneumotórax hipertensivo; drenagem torácica no quinto espaço intercostal",
+        "Choque séptico refratário; noradrenalina em infusão contínua e culturas"
+      ],
+      "correctIndex": 0,
+      "explanation": "Hipotensão, turgência jugular e bulhas abafadas formam a tríade de Beck, e no paciente com tumor mediastinal indicam derrame pericárdico com tamponamento: a pressão intrapericárdica supera a diastólica e colapsa o ventrículo direito. A radiografia mostra silhueta em moringa e o ecocardiograma confirma. O tratamento é a drenagem, com pericardiocentese guiada por ultrassonografia; volume é apenas medida de ponte.",
+      "image": "s42i1",
+      "imageCaption": "Tamponamento cardíaco e síndrome da veia cava superior"
+    },
+    {
+      "question": "No sétimo dia após a quimioterapia, criança neutropênica febril apresenta dor em fossa ilíaca direita, distensão abdominal e diarreia. O que deve ser investigado primeiro?",
+      "options": [
+        "Tiflite, com tomografia mostrando espessamento da parede do ceco",
+        "Apendicite aguda, com ultrassonografia mostrando apêndice espessado",
+        "Invaginação intestinal, com ultrassonografia mostrando o sinal do alvo",
+        "Abscesso de psoas, com tomografia mostrando coleção retroperitoneal"
+      ],
+      "correctIndex": 0,
+      "explanation": "A tiflite, ou enterocolite neutropênica, é a principal hipótese para dor em fossa ilíaca direita no neutropênico, e a tomografia mostra espessamento da parede cecal, tipicamente acima de 4 mm. O tratamento é conservador: repouso intestinal, hidratação, antibiótico de amplo espectro com cobertura para anaeróbios e suporte transfusional. A cirurgia fica reservada a perfuração, hemorragia incontrolável ou deterioração apesar do tratamento clínico."
+    },
+    {
+      "question": "Criança com leucemia promielocítica aguda apresenta sangramento gengival, equimoses, alargamento de tempo de protrombina e queda do fibrinogênio. Qual é a conduta específica?",
+      "options": [
+        "Iniciar ATRA precocemente e repor fibrinogênio e plaquetas",
+        "Iniciar heparina em dose plena e suspender a reposição de plaquetas",
+        "Iniciar ácido tranexâmico isolado e adiar toda a quimioterapia",
+        "Iniciar plasmaférese e transfundir concentrado de hemácias"
+      ],
+      "correctIndex": 0,
+      "explanation": "A leucemia promielocítica aguda cursa com coagulação intravascular disseminada e hiperfibrinólise, e a hemorragia é a principal causa de morte precoce. O ácido transretinoico (ATRA) deve ser iniciado à simples suspeita, antes mesmo da confirmação genética, porque diferencia os promielócitos e interrompe a coagulopatia. Em paralelo, repõe-se fibrinogênio, com crioprecipitado ou plasma, e mantêm-se plaquetas em alvo elevado."
+    },
+    {
+      "question": "Menino em uso de ciclofosfamida em alta dose desenvolve hematúria macroscópica e disúria intensa. Qual é a causa e a medida preventiva?",
+      "options": [
+        "Cistite hemorrágica pela acroleína, prevenida com mesna e hidratação",
+        "Cistite hemorrágica por adenovírus, prevenida com cidofovir e hidratação",
+        "Nefrite intersticial pelo fármaco, prevenida com corticoide e hidratação",
+        "Necrose de papila renal pela droga, prevenida com alcalinização urinária"
+      ],
+      "correctIndex": 0,
+      "explanation": "A ciclofosfamida e a ifosfamida geram acroleína, metabólito que se concentra na urina e agride o urotélio, causando cistite hemorrágica. A prevenção é hiper-hidratação com diurese abundante e mesna, que se liga à acroleína e a inativa na luz vesical. A ifosfamida ainda pode causar tubulopatia proximal e encefalopatia, revertida com azul de metileno."
+    },
+    {
+      "question": "Qual toxicidade limita a dose cumulativa das antraciclinas em oncologia pediátrica?",
+      "options": [
+        "Cardiotoxicidade, com disfunção sistólica do ventrículo esquerdo",
+        "Nefrotoxicidade, com perda tubular de magnésio e queda da filtração",
+        "Ototoxicidade, com perda auditiva neurossensorial em altas frequências",
+        "Neurotoxicidade, com neuropatia periférica e íleo paralítico associado"
+      ],
+      "correctIndex": 0,
+      "explanation": "As antraciclinas, como doxorrubicina e daunorrubicina, causam cardiomiopatia dose-dependente que pode se manifestar anos depois do tratamento, exigindo controle da dose cumulativa e ecocardiograma seriado no seguimento. Nefrotoxicidade com perda de magnésio e ototoxicidade são típicas da cisplatina, e a neuropatia periférica com íleo paralítico é da vincristina."
+    }
+  ]
+}

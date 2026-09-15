@@ -1,0 +1,399 @@
+{
+  "titulo": "Análise Crítica de Artigos Científicos",
+  "eyebrow": "Práticas · Medicina Baseada em Evidências",
+  "subtitulo": "PICO, GRADE e a pirâmide de evidências num caso real",
+  "intro": "Como avaliar o delineamento, o risco de viés e a força da evidência de um artigo, da classificação de Oxford ao sistema GRADE. A segunda parte aplica esse raciocínio a um caso real de obesidade e esteatose hepática, analisando criticamente os estudos SURMOUNT-5, STEP 5, ESSENCE e uma coorte de prontuários eletrônicos sobre semaglutida e tirzepatida.",
+  "questoes": [
+    {
+      "question": "Uma pergunta clínica é formulada como: 'em gestantes com diabetes gestacional, o uso de metformina comparado à insulina reduz a incidência de macrossomia fetal?' Nessa estrutura, o componente 'gestantes com diabetes gestacional' corresponde a qual elemento do PICO?",
+      "options": [
+        "P, o paciente ou problema clínico estudado",
+        "I, a intervenção testada no estudo",
+        "C, o grupo de comparação utilizado",
+        "O, o outcome ou desfecho avaliado"
+      ],
+      "correctIndex": 0,
+      "explanation": "No PICO, o P identifica a população ou o problema clínico de interesse — aqui, gestantes com diabetes gestacional. A intervenção (metformina) e a comparação (insulina) definem o que está sendo testado, e o outcome (macrossomia fetal) é o desfecho medido."
+    },
+    {
+      "question": "Um estudo testa uma nova droga anti-hipertensiva contra placebo, alocando os pacientes aleatoriamente entre os grupos e mantendo tanto pacientes quanto avaliadores sem saber qual tratamento foi recebido. Esse delineamento é classificado como:",
+      "options": [
+        "ensaio clínico randomizado (ECR), padrão-ouro para eficácia",
+        "estudo de coorte, ideal para avaliar a incidência da doença",
+        "estudo caso-controle, eficiente para doenças raras ou de longa latência",
+        "estudo transversal, rápido e de baixo custo para medir a prevalência"
+      ],
+      "correctIndex": 0,
+      "explanation": "Randomização, grupo controle e cegamento são as três características que definem um ensaio clínico randomizado (ECR), considerado o padrão-ouro para estabelecer causalidade e eficácia de uma intervenção, como no clássico exemplo de testar uma nova droga contra placebo."
+    },
+    {
+      "question": "Um grupo de tabagistas e outro de não tabagistas são acompanhados ao longo de vários anos para comparar a incidência de câncer de pulmão entre eles. Esse delineamento, que parte da exposição em direção ao desfecho, é chamado de:",
+      "options": [
+        "estudo de coorte, ótimo para avaliar incidência e história natural de doenças",
+        "estudo caso-controle, que parte do desfecho em busca da exposição prévia",
+        "ensaio clínico randomizado, padrão-ouro para causalidade e eficácia",
+        "estudo transversal, que mede a prevalência em um único momento"
+      ],
+      "correctIndex": 0,
+      "explanation": "O estudo de coorte observa uma exposição (tabagismo) e acompanha os participantes prospectiva ou retrospectivamente até o desfecho (câncer), sendo especialmente útil para medir incidência e a história natural de uma doença."
+    },
+    {
+      "question": "Uma pesquisa parte de pacientes que já tiveram infarto agudo do miocárdio e de pacientes sem esse desfecho, buscando retrospectivamente o uso prévio de anti-inflamatórios não esteroidais em ambos os grupos. Esse delineamento é chamado de:",
+      "options": [
+        "caso-controle, eficiente para doenças raras ou com longo período de latência",
+        "coorte, ótimo para avaliar incidência e história natural de doenças",
+        "transversal, rápido e de baixo custo para medir a prevalência",
+        "série de casos, fundamental para identificar efeitos colaterais raros"
+      ],
+      "correctIndex": 0,
+      "explanation": "O estudo caso-controle parte do desfecho já ocorrido (infarto) e busca retrospectivamente a exposição prévia (uso de AINE), sendo eficiente justamente para doenças raras ou com longo período de latência entre exposição e desfecho."
+    },
+    {
+      "question": "Uma pesquisa mede, em uma única visita, a prevalência de osteoporose em mulheres acima de 60 anos, sem acompanhar as participantes ao longo do tempo. Esse delineamento é chamado de:",
+      "options": [
+        "estudo transversal, rápido, de baixo custo e excelente para medir prevalência",
+        "estudo de coorte, prospectivo ou retrospectivo, que mede incidência",
+        "ensaio clínico randomizado, com grupo controle e cegamento dos participantes",
+        "revisão sistemática, que integra múltiplos estudos com métodos reprodutíveis"
+      ],
+      "correctIndex": 0,
+      "explanation": "Por capturar uma 'foto única' da população em um único momento, sem seguimento, o estudo transversal é rápido, de baixo custo e particularmente adequado para medir a prevalência de uma condição, como a osteoporose no exemplo."
+    },
+    {
+      "question": "Um relato descreve dez pacientes com lúpus eritematoso sistêmico que desenvolveram miocardite, sem qualquer grupo de comparação. Esse tipo de delineamento é fundamental para:",
+      "options": [
+        "identificar novas doenças ou efeitos colaterais raros, mesmo sem grupo controle",
+        "estabelecer causalidade entre exposição e desfecho com alto rigor estatístico",
+        "estimar a incidência de uma doença em uma população acompanhada no tempo",
+        "avaliar a prevalência de uma condição em um único momento transversal"
+      ],
+      "correctIndex": 0,
+      "explanation": "A série de casos descreve uma sequência de pacientes com uma apresentação clínica em comum, sem grupo de comparação. Por isso não estabelece causalidade, mas é fundamental para levantar a suspeita de novas doenças ou efeitos colaterais raros, como a associação entre lúpus e miocardite."
+    },
+    {
+      "question": "O que diferencia fundamentalmente um estudo de intervenção de um estudo observacional?",
+      "options": [
+        "no estudo de intervenção, o pesquisador controla ativamente a exposição estudada",
+        "no estudo observacional, o pesquisador aloca aleatoriamente os participantes",
+        "no estudo de intervenção, os resultados nunca podem ser generalizados",
+        "no estudo observacional, sempre há cegamento de pacientes e avaliadores"
+      ],
+      "correctIndex": 0,
+      "explanation": "Nos estudos de intervenção (como o ECR), o pesquisador controla ativamente a exposição ou o tratamento recebido, o que permite avaliar causa-efeito. Nos observacionais (coorte, caso-controle, transversal, série de casos), o pesquisador apenas observa a realidade, sem interferir no curso dos eventos — por isso são mais úteis para descrever fenômenos e gerar hipóteses."
+    },
+    {
+      "question": "A principal limitação atribuída aos estudos observacionais (coorte, caso-controle, transversal) é:",
+      "options": [
+        "maior suscetibilidade a vieses de confundimento por fatores externos não controlados",
+        "impossibilidade ética de acompanhar qualquer grupo de pacientes ao longo do tempo",
+        "incapacidade quase total de gerar qualquer hipótese para pesquisas futuras",
+        "exigência obrigatória de randomização, o que encarece e atrasa o estudo"
+      ],
+      "correctIndex": 0,
+      "explanation": "Como o pesquisador não controla a exposição nem aloca aleatoriamente os grupos, estudos observacionais são mais suscetíveis a vieses de confundimento — fatores externos, não medidos, que podem distorcer a associação observada entre exposição e desfecho."
+    },
+    {
+      "question": "Em um ensaio clínico de superioridade, pesquisadores envolvidos no recrutamento conseguem prever para qual grupo o próximo paciente será alocado, porque a lista de randomização segue um padrão previsível (por exemplo, por dia da semana). Essa falha metodológica é chamada de:",
+      "options": [
+        "ausência de sigilo da alocação, que permite prever o grupo antes da inclusão do paciente",
+        "ausência de mascaramento, que revela o grupo a pacientes e avaliadores após a alocação",
+        "seguimento incompleto, quando pacientes randomizados são perdidos durante o acompanhamento",
+        "relato seletivo de desfechos, quando resultados desfavoráveis não são publicados"
+      ],
+      "correctIndex": 0,
+      "explanation": "A ausência de sigilo da alocação (allocation concealment) ocorre quando quem recruta o paciente consegue antecipar o grupo a que ele será alocado antes mesmo de incluí-lo, por uma randomização previsível — isso permite selecionar, consciente ou inconscientemente, quem entra em cada braço do estudo, distorcendo a comparação.",
+      "image": "pg09",
+      "imageCaption": "Quadro 6 — limitações metodológicas de ensaios clínicos randomizados de superioridade"
+    },
+    {
+      "question": "Ainda sobre limitações de ensaios clínicos randomizados: pacientes, cuidadores, coletores de dados e avaliadores de desfecho sabem qual tratamento cada paciente recebeu. Essa limitação corresponde a:",
+      "options": [
+        "ausência de mascaramento (cegamento), que pode enviesar a avaliação dos desfechos",
+        "ausência de sigilo da alocação, que permite prever o próximo grupo alocado",
+        "seguimento incompleto, com perda de pacientes sem análise por intenção de tratar",
+        "outras limitações, como interrupção precoce do estudo por benefício"
+      ],
+      "correctIndex": 0,
+      "explanation": "A ausência de mascaramento (cegamento) acontece quando participantes, cuidadores, coletores de dados ou avaliadores sabem qual tratamento foi administrado. Esse conhecimento pode influenciar tanto o comportamento do paciente quanto a interpretação subjetiva do desfecho pelo avaliador.",
+      "image": "pg09",
+      "imageCaption": "Quadro 6 — limitações metodológicas de ensaios clínicos randomizados de superioridade"
+    },
+    {
+      "question": "O sistema GRADE (Grading of Recommendations, Assessment, Development and Evaluation), utilizado por organizações como OMS, Cochrane e UpToDate, tem como principal finalidade:",
+      "options": [
+        "padronizar a classificação da qualidade da evidência e a força das recomendações",
+        "randomizar pacientes entre grupos de intervenção e placebo em ensaios clínicos",
+        "calcular o tamanho amostral necessário para um estudo de coorte",
+        "definir os critérios éticos mínimos exigidos para aprovar uma pesquisa"
+      ],
+      "correctIndex": 0,
+      "explanation": "O GRADE é um sistema padronizado que classifica a qualidade da evidência científica e a força das recomendações clínicas, com foco em transparência: ele mostra explicitamente como os avaliadores chegaram à recomendação final, o que o torna referência para diretrizes de saúde no mundo todo."
+    },
+    {
+      "question": "Um ensaio clínico randomizado que não descreve o método de randomização utilizado tem maior risco de viés em qual domínio do GRADE?",
+      "options": [
+        "risco de viés, que avalia se o estudo foi desenhado para minimizar erros sistemáticos",
+        "consistência dos resultados, que verifica a semelhança entre diferentes estudos",
+        "precisão, que avalia o tamanho da amostra e o intervalo de confiança",
+        "evidência direta, que determina se a população é diretamente aplicável"
+      ],
+      "correctIndex": 0,
+      "explanation": "O domínio risco de viés avalia se o estudo foi desenhado para minimizar erros sistemáticos; uma randomização mal descrita ou ausente é um exemplo clássico de falha que aumenta esse risco e pode levar ao rebaixamento da qualidade da evidência."
+    },
+    {
+      "question": "Um estudo relata um intervalo de confiança de 95% estreito para o efeito do tratamento observado. Esse achado favorece qual domínio do GRADE?",
+      "options": [
+        "precisão, pois um intervalo de confiança estreito indica maior exatidão da estimativa",
+        "risco de viés, pois elimina qualquer possibilidade de erro sistemático",
+        "evidência direta, pois garante que o desfecho avaliado é clinicamente relevante",
+        "consistência, pois comprova que vários estudos chegaram ao mesmo resultado"
+      ],
+      "correctIndex": 0,
+      "explanation": "A precisão avalia o tamanho da amostra e a largura do intervalo de confiança (IC): um IC 95% estreito indica que a estimativa do efeito é mais exata, aumentando a confiança no tamanho real do benefício ou do risco observado."
+    },
+    {
+      "question": "Um ensaio clínico realizado exclusivamente em adolescentes tem seus resultados aplicados para orientar o tratamento de pacientes adultos. Essa situação representa uma limitação em qual domínio do GRADE?",
+      "options": [
+        "evidência direta, pois a população estudada difere da população-alvo da recomendação",
+        "risco de viés, pois a ausência de randomização compromete o desenho do estudo",
+        "precisão, pois o intervalo de confiança do efeito provavelmente é muito amplo",
+        "viés de publicação, pois estudos com resultados negativos podem ter sido omitidos"
+      ],
+      "correctIndex": 0,
+      "explanation": "A evidência direta determina se a população, a intervenção e o desfecho do estudo são diretamente aplicáveis à pergunta clínica de interesse. Extrapolar um estudo feito em adolescentes para adultos gera evidência indireta, o que reduz a confiança na recomendação."
+    },
+    {
+      "question": "Uma revisão inclui apenas estudos patrocinados pela indústria farmacêutica que relatam resultados positivos, sem apresentar dados de segurança de estudos com resultados desfavoráveis. Esse padrão sugere alto risco em qual domínio do GRADE?",
+      "options": [
+        "viés de publicação, pois sugere omissão de estudos com resultados negativos",
+        "consistência dos resultados, pois todos os estudos incluídos concordam entre si",
+        "precisão, pois a amostra combinada dos estudos costuma ser muito grande",
+        "evidência direta, pois a população dos estudos é idêntica à da prática clínica"
+      ],
+      "correctIndex": 0,
+      "explanation": "O viés de publicação investiga se houve busca ampla por estudos e se há omissão de resultados negativos. Incluir apenas estudos patrocinados com resultados positivos, sem dados de segurança desfavoráveis, é um sinal de alto risco nesse domínio."
+    },
+    {
+      "question": "Uma metanálise de ensaios clínicos randomizados apresenta baixo risco de viés, alta consistência entre os estudos e intervalo de confiança estreito. Diante desse cenário, a classificação final da qualidade da evidência tende a ser:",
+      "options": [
+        "alta, pois reflete resultados muito confiáveis e consistentes entre si",
+        "moderada, sugerindo que os achados podem mudar com novos estudos",
+        "baixa, indicando grande incerteza sobre o efeito real observado",
+        "muito baixa, refletindo resultados considerados altamente incertos"
+      ],
+      "correctIndex": 0,
+      "explanation": "Quando um corpo de evidências (aqui, uma metanálise de ECRs) apresenta baixo risco de viés, boa consistência e boa precisão, a classificação final tende a ser alta — o nível que indica que os resultados são muito confiáveis e dificilmente mudarão com novos estudos."
+    },
+    {
+      "question": "Um pesquisador precisa avaliar separadamente a qualidade metodológica de uma revisão sistemática publicada sobre determinado tratamento. A ferramenta mais adequada para essa finalidade é:",
+      "options": [
+        "o AMSTAR-2, que avalia a qualidade metodológica de revisões sistemáticas",
+        "o GRADE, que avalia a qualidade geral da evidência clínica em geral",
+        "o RoB 2, que mede o risco de viés especificamente em ensaios randomizados",
+        "a classificação de Oxford, que descreve o delineamento do estudo primário"
+      ],
+      "correctIndex": 0,
+      "explanation": "Embora as três ferramentas avaliem qualidade metodológica, cada uma tem um alvo específico: o AMSTAR-2 avalia revisões sistemáticas, o GRADE avalia a qualidade geral da evidência clínica de forma mais ampla, e o RoB 2 mede risco de viés dentro de ensaios clínicos randomizados individuais."
+    },
+    {
+      "question": "Observe a pirâmide de evidências científicas: no topo, acima até dos ensaios clínicos randomizados, estão localizadas as:",
+      "options": [
+        "revisões sistemáticas e metanálises, que integram múltiplos estudos",
+        "opiniões de especialistas, sem avaliação crítica formal dos dados",
+        "séries de casos e relatos de caso, sem grupo de comparação formal",
+        "estudos de coorte, prospectivos ou retrospectivos, na base intermediária"
+      ],
+      "correctIndex": 0,
+      "explanation": "A pirâmide de evidências organiza os delineamentos conforme sua capacidade de gerar evidência livre de viés. No topo estão as revisões sistemáticas e metanálises, pois integram e sintetizam múltiplos estudos primários com métodos reprodutíveis, oferecendo o maior nível de evidência para a tomada de decisão.",
+      "image": "pg17",
+      "imageCaption": "Pirâmide de evidências científicas"
+    },
+    {
+      "question": "Semaglutida e tirzepatida são incretino-miméticos usados para perda de peso, mas diferem no mecanismo receptor-alvo. Qual das afirmações a seguir descreve corretamente essa diferença?",
+      "options": [
+        "a semaglutida age apenas no receptor GLP-1, enquanto a tirzepatida é agonista duplo dos receptores GIP e GLP-1",
+        "a semaglutida é agonista duplo dos receptores GIP e GLP-1, enquanto a tirzepatida age apenas no receptor GLP-1",
+        "ambas agem exclusivamente no receptor GIP, sem qualquer efeito sobre o receptor GLP-1",
+        "ambas bloqueiam o receptor GLP-1, reduzindo diretamente a secreção endógena de insulina"
+      ],
+      "correctIndex": 0,
+      "explanation": "A semaglutida é um agonista do receptor GLP-1 de ação prolongada, reduzindo apetite e retardando o esvaziamento gástrico. A tirzepatida é um agonista duplo, atuando também no receptor GIP; essa ação combinada, inclusive sobre receptores de GIP nos adipócitos, é a hipótese para sua maior eficácia na redução de peso."
+    },
+    {
+      "question": "O SURMOUNT-5 foi um ensaio clínico de fase 3b, randomizado, comparando diretamente (head-to-head) tirzepatida e semaglutida, no qual pacientes e investigadores sabiam qual medicação estava sendo administrada. Esse desenho é classificado como:",
+      "options": [
+        "ensaio clínico randomizado aberto (open-label), sem cegamento de pacientes ou investigadores",
+        "ensaio clínico randomizado duplo-cego, com mascaramento completo de pacientes e investigadores",
+        "estudo de coorte retrospectivo, baseado exclusivamente em dados de prontuários eletrônicos",
+        "estudo caso-controle, comparando pacientes com e sem resposta ao tratamento"
+      ],
+      "correctIndex": 0,
+      "explanation": "Por ser randomizado mas sem mascaramento — pacientes e investigadores sabiam qual medicação estava sendo usada —, o SURMOUNT-5 é classificado como ensaio clínico randomizado aberto (open-label), o que é uma limitação frente ao padrão duplo-cego, embora os resultados sejam consistentes com estudos cegados anteriores."
+    },
+    {
+      "question": "No SURMOUNT-5, adultos com obesidade ou sobrepeso e pelo menos uma complicação relacionada ao peso, mas sem diabetes tipo 2, foram randomizados para tirzepatida ou semaglutida em doses máximas toleradas, e a redução percentual de peso corporal foi comparada em 72 semanas. Esses quatro elementos correspondem, respectivamente, a:",
+      "options": [
+        "P: adultos obesos sem diabetes tipo 2; I: tirzepatida; C: semaglutida; O: redução percentual de peso em 72 semanas",
+        "P: pacientes com diabetes tipo 2 descompensada; I: semaglutida; C: placebo; O: controle glicêmico em 52 semanas",
+        "P: adultos com esteatose hepática isolada; I: dieta hipocalórica; C: exercício físico; O: redução da fibrose hepática",
+        "P: adultos obesos com comorbidades; I: cirurgia bariátrica; C: tratamento clínico; O: mortalidade em cinco anos"
+      ],
+      "correctIndex": 0,
+      "explanation": "No PICO do SURMOUNT-5, o P é o adulto com obesidade ou sobrepeso sem diabetes tipo 2, a intervenção é a tirzepatida, a comparação é a semaglutida (estudo head-to-head) e o outcome principal é a redução percentual de peso corporal ao final de 72 semanas de tratamento."
+    },
+    {
+      "question": "No SURMOUNT-5, 19,7% dos participantes com tirzepatida e 6,9% com semaglutida atingiram redução de pelo menos 30% do peso corporal em 72 semanas. Sobre esse desfecho, é correto afirmar que:",
+      "options": [
+        "tratava-se de um desfecho exploratório (secundário adicional), não do objetivo primário do estudo",
+        "tratava-se do desfecho primário, definido antes do início do recrutamento dos participantes",
+        "tratava-se de um desfecho avaliado apenas por biópsia hepática lida de forma centralizada",
+        "tratava-se de um desfecho medido exclusivamente por questionário de qualidade de vida"
+      ],
+      "correctIndex": 0,
+      "explanation": "A meta de perda de peso de pelo menos 30% foi um desfecho secundário adicional (exploratório), não o objetivo primário do estudo — isso significa que o SURMOUNT-5 não foi desenhado especificamente para provar esse ponto isolado com o mesmo rigor estatístico do desfecho principal (redução percentual média de peso)."
+    },
+    {
+      "question": "O SURMOUNT-5 foi financiado pela Eli Lilly, fabricante da tirzepatida, que participou do desenho, monitoramento e análise dos dados, além de ser um estudo aberto (open-label). Essa combinação de fatores levanta suspeita de:",
+      "options": [
+        "viés de patrocínio somado à ausência de cegamento, que pode influenciar expectativas dos envolvidos",
+        "viés de seleção, pois os próprios participantes escolheram livremente qual medicação usar",
+        "viés de aferição, decorrente do uso de instrumentos de medida ainda não validados",
+        "viés de confusão, tipicamente restrito a estudos observacionais retrospectivos"
+      ],
+      "correctIndex": 0,
+      "explanation": "O financiamento pela fabricante do medicamento testado, com participação no desenho e na análise dos dados, caracteriza viés de patrocínio; somado ao desenho aberto (sem cegamento), há maior chance de as expectativas de pacientes e investigadores influenciarem o resultado observado."
+    },
+    {
+      "question": "Considerando que o SURMOUNT-5 é um ensaio clínico randomizado, mas com desenho aberto e financiamento da fabricante do medicamento testado, sua classificação de qualidade da evidência tende a ser rebaixada de:",
+      "options": [
+        "alta para moderada, por causa do desenho aberto e do financiamento da indústria",
+        "moderada para alta, por causa do grande tamanho da amostra utilizada no estudo",
+        "baixa para muito baixa, por não haver nenhuma randomização entre os grupos",
+        "muito baixa para baixa, por ausência completa de qualquer grupo comparador"
+      ],
+      "correctIndex": 0,
+      "explanation": "Como ensaio clínico randomizado, o SURMOUNT-5 começa no topo da pirâmide, com qualidade alta. Porém, o desenho aberto (sem cegamento) e o financiamento pela fabricante sugerem um rebaixamento cauteloso para moderada."
+    },
+    {
+      "question": "Um estudo de coorte com dados de prontuários eletrônicos comparou tirzepatida e semaglutida em contexto de mundo real, usando emparelhamento por escore de propensão (1:1) para tornar os grupos comparáveis em idade, sexo, raça e comorbidades, incluindo pacientes com e sem diabetes tipo 2. Esse delineamento é classificado como:",
+      "options": [
+        "estudo observacional de coorte, com controle estatístico de fatores de confusão por pareamento",
+        "ensaio clínico randomizado de fase 3, com alocação aleatória e cegamento entre os grupos",
+        "estudo caso-controle, que parte do desfecho já ocorrido em busca de exposição prévia",
+        "série de casos, descrevendo pacientes isolados sem qualquer grupo de comparação"
+      ],
+      "correctIndex": 0,
+      "explanation": "Por observar a exposição a cada medicação sem alocação aleatória, esse é um estudo observacional de coorte; o emparelhamento por escore de propensão é uma técnica estatística para reduzir fatores de confusão, aproximando esse desenho da comparabilidade de um ensaio randomizado e elevando a confiança na evidência, apesar de começar em nível mais baixo que um ECR."
+    },
+    {
+      "question": "O STEP 5 foi um ensaio clínico de fase 3, randomizado, duplo-cego e controlado por placebo, com dois anos de acompanhamento, avaliando semaglutida para perda de peso. Esse desenho é considerado:",
+      "options": [
+        "robusto, pois combina randomização, duplo cegamento e placebo em acompanhamento longo",
+        "frágil, pois estudos duplo-cegos não permitem avaliar desfechos objetivos como o peso",
+        "inadequado, pois ensaios clínicos de fase 3 não podem ultrapassar doze meses de duração",
+        "observacional, pois não houve qualquer alocação aleatória entre os grupos de tratamento"
+      ],
+      "correctIndex": 0,
+      "explanation": "A combinação de randomização, duplo cegamento, controle por placebo e dois anos de seguimento torna o STEP 5 um desenho robusto: o duplo cegamento reduz viés de expectativa e o longo acompanhamento permite avaliar a manutenção do efeito ao longo do tempo."
+    },
+    {
+      "question": "No STEP 5, a redução de peso com semaglutida (aproximadamente 15,2%) estabilizou-se por volta da semana 60 e foi mantida até a semana 104. Considerando que o próprio programa STEP relata reganho de peso após a suspensão da medicação em outros de seus ensaios, a conclusão mais correta é que:",
+      "options": [
+        "a perda de peso é duradoura apenas enquanto o tratamento é mantido continuamente",
+        "a perda de peso se mantém indefinidamente, mesmo após a suspensão completa da medicação",
+        "a perda de peso é revertida já nas primeiras quatro semanas de tratamento contínuo",
+        "a duração do tratamento não influencia em nada a manutenção do peso perdido"
+      ],
+      "correctIndex": 0,
+      "explanation": "O STEP 5 mostra que a perda de peso se sustenta enquanto a semaglutida é continuada, com mínimo reganho até 104 semanas. Mas como a obesidade é uma doença crônica e recidivante, e outros ensaios do programa STEP mostraram reganho após a suspensão do medicamento, a durabilidade demonstrada depende da continuidade do tratamento."
+    },
+    {
+      "question": "O STEP 5 foi financiado pela Novo Nordisk, fabricante da semaglutida, que participou do desenho e da análise dos dados; ainda assim, o estudo foi duplo-cego, com randomização central automatizada. Essa combinação representa:",
+      "options": [
+        "viés de patrocínio presente, mas parcialmente mitigado pelo duplo cegamento e pela randomização central",
+        "ausência completa de qualquer viés, já que o duplo cegamento elimina o viés de patrocínio",
+        "viés de seleção grave, pois os próprios pacientes escolheram seu grupo de tratamento",
+        "viés de publicação, pois resultados negativos do estudo nunca chegaram a ser divulgados"
+      ],
+      "correctIndex": 0,
+      "explanation": "O envolvimento da patrocinadora no desenho, na condução e na análise caracteriza viés de patrocínio. O duplo cegamento e a randomização central automatizada são medidas de mitigação, mas não eliminam completamente esse risco — por isso ele deve ser considerado na leitura crítica dos resultados."
+    },
+    {
+      "question": "Como ensaio clínico randomizado, o STEP 5 parte de um nível alto de evidência, mas apresenta forte envolvimento da patrocinadora em todas as etapas de análise e baixa diversidade racial da amostra (apenas 7% de participantes não brancos). Isso pode levar a uma classificação final de:",
+      "options": [
+        "alto para moderado, por causa do envolvimento do patrocinador e da baixa diversidade da amostra",
+        "baixo para muito baixo, por não haver nenhum grupo controle no desenho do estudo",
+        "moderado para alto, por causa do grande número de participantes que abandonaram o estudo",
+        "muito baixo para baixo, por ausência total de cegamento entre os grupos de tratamento"
+      ],
+      "correctIndex": 0,
+      "explanation": "Como ECR duplo-cego e controlado por placebo, o STEP 5 começa em nível alto de evidência. O forte envolvimento da patrocinadora em todas as etapas e a baixa diversidade racial da amostra são motivos que podem levar a um rebaixamento cauteloso para moderado em avaliações mais rigorosas."
+    },
+    {
+      "question": "O ESSENCE foi um ensaio clínico de fase 3, multicêntrico, randomizado, duplo-cego e controlado por placebo, com biópsias hepáticas lidas de forma centralizada, incluindo apenas adultos com esteato-hepatite associada à disfunção metabólica (MASH) e fibrose em estágios 2 ou 3. Esse desenho é considerado adequado porque:",
+      "options": [
+        "usa o padrão-ouro (biópsia) e foca em pacientes com maior risco de progressão para cirrose",
+        "dispensa a biópsia hepática, substituindo-a por exames de imagem menos invasivos",
+        "inclui apenas pacientes com esteatose leve, sem qualquer grau de fibrose associada",
+        "compara exclusivamente tirzepatida contra semaglutida em doses máximas toleradas"
+      ],
+      "correctIndex": 0,
+      "explanation": "A biópsia hepática com leitura centralizada por especialistas independentes é o padrão-ouro para avaliar esteato-hepatite e fibrose. Focar em pacientes com fibrose em estágios 2 ou 3 é adequado porque esse grupo tem maior risco de progressão para cirrose e mortalidade, sendo o que mais se beneficiaria de um tratamento eficaz."
+    },
+    {
+      "question": "No ESSENCE, 62,9% dos pacientes tratados com semaglutida tiveram resolução da esteato-hepatite sem piora da fibrose, contra 34,3% no grupo placebo, com leitura das biópsias feita por patologistas independentes e cegados quanto ao tratamento recebido. Essa leitura cegada tem como objetivo principal:",
+      "options": [
+        "reduzir o viés de aferição, evitando que o avaliador saiba qual tratamento o paciente recebeu",
+        "aumentar artificialmente a taxa de resposta observada no grupo tratado com semaglutida",
+        "eliminar por completo a necessidade de um grupo placebo para efeito de comparação",
+        "substituir a necessidade de randomizar os participantes incluídos no estudo"
+      ],
+      "correctIndex": 0,
+      "explanation": "Cegar o patologista que lê a biópsia reduz o viés de aferição: se ele soubesse qual paciente recebeu semaglutida ou placebo, poderia interpretar achados histológicos limítrofes de forma tendenciosa, favorecendo (consciente ou inconscientemente) o grupo tratado."
+    },
+    {
+      "question": "Um paciente pergunta se a tirzepatida também trata a esteato-hepatite, com base nos resultados do ESSENCE. A resposta correta é que:",
+      "options": [
+        "não é possível responder, pois o ESSENCE testou apenas semaglutida contra placebo, sem incluir tirzepatida",
+        "sim, pois o ESSENCE comparou diretamente tirzepatida e semaglutida no tratamento da esteato-hepatite",
+        "sim, pois todo agonista do receptor GLP-1 tem eficácia comprovada e idêntica sobre a fibrose hepática",
+        "não, pois o ESSENCE demonstrou que nenhuma das duas medicações trata a esteato-hepatite"
+      ],
+      "correctIndex": 0,
+      "explanation": "O ESSENCE comparou apenas semaglutida 2,4 mg contra placebo; a tirzepatida nunca foi testada nesse estudo. Por isso, os dados do ESSENCE não permitem nenhuma conclusão sobre o efeito da tirzepatida na esteato-hepatite, mesmo que ambas as drogas compartilhem mecanismos relacionados a incretinas."
+    },
+    {
+      "question": "O paciente do caso é um homem branco sem diabetes. Sobre a extrapolação dos estudos STEP 5 e SURMOUNT-5 para esse perfil, é correto afirmar que:",
+      "options": [
+        "a raça é bem representada nos dois estudos, mas o STEP 5 teve poucos homens (22,4%) para concluir sobre esse subgrupo",
+        "nenhum dos dois estudos incluiu participantes brancos, o que compromete totalmente a extrapolação",
+        "o SURMOUNT-5 foi conduzido exclusivamente em mulheres, o que inviabiliza qualquer extrapolação para homens",
+        "ambos os estudos tiveram menos de 10% de participantes brancos, limitando bastante a extrapolação"
+      ],
+      "correctIndex": 0,
+      "explanation": "Participantes brancos foram maioria em ambos os estudos (93,1% no STEP 5 e 76,1% no SURMOUNT-5), favorecendo a extrapolação racial. Já a extrapolação por sexo é mais limitada: o STEP 5 teve apenas 22,4% de homens, proporção que os próprios autores consideram insuficiente para conclusões definitivas nesse subgrupo."
+    },
+    {
+      "question": "O paciente pesa 92 kg e deseja perder 30 kg, o equivalente a cerca de 32,6% do peso corporal. Comparando essa meta às taxas observadas no SURMOUNT-5, essa meta é:",
+      "options": [
+        "ambiciosa, compatível apenas com o subgrupo de aproximadamente 19,7% que atingiu 30% de perda com tirzepatida",
+        "modesta, pois a maioria dos participantes tratados com semaglutida ultrapassou 32% de perda de peso",
+        "impossível, pois nenhum participante de qualquer grupo atingiu 30% de redução do peso corporal",
+        "irrelevante, pois o estudo não avaliou a porcentagem de peso corporal perdido pelos participantes"
+      ],
+      "correctIndex": 0,
+      "explanation": "Perder 30 kg a partir de 92 kg equivale a cerca de 32,6% do peso corporal, uma meta mais exigente do que os 30% avaliados no SURMOUNT-5. Mesmo com tirzepatida, apenas 19,7% dos participantes (quase 1 em cada 5) atingiram 30% de perda; com semaglutida, essa proporção caiu para 6,9%."
+    },
+    {
+      "question": "O paciente tem esteatose hepática grau 1, sem fibrose, enquanto o ESSENCE incluiu apenas pacientes com esteato-hepatite (MASH) e fibrose em estágios 2 ou 3. Isso significa que os resultados do ESSENCE sobre o fígado:",
+      "options": [
+        "não se extrapolam diretamente, pois o paciente está em um estágio bem mais inicial da doença hepática",
+        "se extrapolam integralmente, pois qualquer grau de esteatose responde de forma idêntica à semaglutida",
+        "confirmam que o paciente já tem fibrose hepática avançada, semelhante à amostra do estudo",
+        "provam que a semaglutida é ineficaz para qualquer paciente com esteatose hepática leve"
+      ],
+      "correctIndex": 0,
+      "explanation": "O ESSENCE estudou pacientes com MASH e fibrose moderada a avançada (estágios 2 ou 3), um estágio de doença hepática muito mais grave do que a esteatose grau 1 sem fibrose do paciente. Um estudo bem desenhado para essa população mais grave não garante que seus resultados se apliquem diretamente a um estágio inicial e distinto da doença."
+    }
+  ]
+}

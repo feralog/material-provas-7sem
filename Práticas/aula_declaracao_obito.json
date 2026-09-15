@@ -1,0 +1,350 @@
+{
+  "titulo": "Declaração de Óbito",
+  "eyebrow": "Práticas · Documentação Médico-Legal",
+  "subtitulo": "Da causa básica ao encaminhamento correto: preenchendo a DO sem erros",
+  "intro": "Este material cobre o preenchimento correto da Declaração de Óbito: base legal, quem deve emitir em cada cenário, e a diferença entre causa básica e causa imediata na estrutura das Partes I e II. Fecha com a classificação da morte em natural, violenta ou suspeita e seis casos clínicos para praticar a cadeia causal.",
+  "questoes": [
+    {
+      "question": "A Resolução CFM nº 1.779/2005 classifica a emissão da Declaração de Óbito como qual tipo de ato?",
+      "options": [
+        "Ato médico, com responsabilidade ética e jurídica de quem assina",
+        "Ato administrativo, que pode ser delegado a qualquer funcionário do cartório",
+        "Ato médico, mas isento de responsabilidade jurídica sobre os dados",
+        "Ato exclusivo do Instituto Médico Legal, mesmo em mortes naturais"
+      ],
+      "correctIndex": 0,
+      "explanation": "A Resolução CFM nº 1.779/2005 define a emissão da DO como ato médico, atribuindo ao profissional que assina a responsabilidade ética e jurídica pelas informações registradas em todos os campos do documento, o que exige revisão do documento antes da assinatura."
+    },
+    {
+      "question": "A Declaração de Óbito é o documento-base de qual sistema de informação em saúde do Ministério da Saúde?",
+      "options": [
+        "Sistema de Informação sobre Mortalidade (SIM)",
+        "Sistema de Informação sobre Nascidos Vivos (SINASC)",
+        "Sistema de Notificação de Agravos (SINAN)",
+        "Sistema de Informações Hospitalares do SUS (SIH)"
+      ],
+      "correctIndex": 0,
+      "explanation": "A DO alimenta o Sistema de Informação sobre Mortalidade (SIM), a base oficial do Ministério da Saúde para estatísticas de mortalidade e planejamento de políticas públicas de saúde. O SINASC, o SINAN e o SIH cobrem, respectivamente, nascimentos, agravos notificáveis e internações — sistemas distintos e não alimentados pela DO."
+    },
+    {
+      "question": "Antes de assinar a Declaração de Óbito, qual conduta é obrigatória por parte do médico responsável?",
+      "options": [
+        "Revisar todos os campos preenchidos, já que a responsabilidade pelas informações é dele",
+        "Delegar a revisão ao auxiliar administrativo, já que a responsabilidade recai sobre o cartório",
+        "Assinar diretamente, pois a revisão de campos é atribuição exclusiva do SVO",
+        "Revisar apenas o campo de identificação, já que as causas são de responsabilidade do CID"
+      ],
+      "correctIndex": 0,
+      "explanation": "O médico tem responsabilidade ética e jurídica pelo preenchimento, pela assinatura e por todas as informações registradas na DO, por isso deve revisar o documento inteiro antes de assiná-lo. Essa responsabilidade não pode ser transferida a terceiros nem ao cartório."
+    },
+    {
+      "question": "Como o médico deve confirmar os dados de identificação do falecido antes de preencher a Declaração de Óbito?",
+      "options": [
+        "Com base em um documento oficial com foto da pessoa falecida",
+        "Com base na informação verbal fornecida pelos familiares presentes",
+        "Com base no prontuário eletrônico, mesmo sem documento com foto",
+        "Com base no boletim de ocorrência, quando o óbito ocorre em via pública"
+      ],
+      "correctIndex": 0,
+      "explanation": "Os dados de identificação devem ser preenchidos com base em um documento com foto da pessoa falecida, o que reduz o risco de erro de identidade no registro civil e nas estatísticas de mortalidade. Relato verbal, prontuário sem foto ou boletim de ocorrência não substituem essa exigência."
+    },
+    {
+      "question": "Ao registrar as causas da morte na Declaração de Óbito, qual é a conduta correta quanto ao número de diagnósticos por linha e ao intervalo de tempo?",
+      "options": [
+        "Anotar apenas um diagnóstico por linha, com o tempo aproximado entre o início da doença e a morte",
+        "Anotar todos os diagnósticos relevantes na mesma linha, sem necessidade de indicar o tempo",
+        "Anotar apenas um diagnóstico por linha, mas sem necessidade de indicar o tempo decorrido",
+        "Anotar até três diagnósticos por linha, desde que o CID de cada um seja informado"
+      ],
+      "correctIndex": 0,
+      "explanation": "Cada linha da DO deve trazer apenas um diagnóstico, acompanhado do tempo aproximado entre o início daquela doença e a morte, o que permite reconstruir a evolução clínica. O CID não é preenchido pelo médico, o que torna esse critério inválido como regra de preenchimento."
+    },
+    {
+      "question": "Qual das condutas abaixo é uma prática proibida no preenchimento da Declaração de Óbito?",
+      "options": [
+        "Assinar a DO em branco, deixando campos para preenchimento posterior por terceiros",
+        "Assinar a DO apenas após preencher pessoalmente todos os campos de causas da morte",
+        "Recusar-se a assinar a DO quando não houve exame pessoal do corpo",
+        "Cobrar uma taxa simbólica apenas quando a família solicita segunda via"
+      ],
+      "correctIndex": 0,
+      "explanation": "Assinar a DO em branco é expressamente proibido, pois permite que campos essenciais sejam preenchidos por quem não tem a responsabilidade e o conhecimento clínico exigidos. As demais condutas listadas são, na verdade, corretas ou aceitáveis dentro das normas de preenchimento."
+    },
+    {
+      "question": "Por que o médico não deve preencher a Declaração de Óbito sem examinar pessoalmente o corpo?",
+      "options": [
+        "Porque a constatação da morte é ato médico que exige exame pessoal antes de atestar o óbito",
+        "Porque a lei exige apenas a assinatura de duas testemunhas leigas no lugar do exame médico",
+        "Porque o exame pessoal só é obrigatório nos óbitos classificados como violentos",
+        "Porque o exame pessoal pode ser substituído por relato de enfermagem sobre o óbito"
+      ],
+      "correctIndex": 0,
+      "explanation": "A constatação da morte é ato médico e exige que o profissional examine pessoalmente o corpo antes de atestar o óbito, independentemente do tipo de morte. Testemunhas leigas ou relato de terceiros, como a enfermagem, não substituem esse exame direto."
+    },
+    {
+      "question": "Quais termos NÃO devem ser usados como causa da morte na Declaração de Óbito, por serem considerados vagos?",
+      "options": [
+        "Parada cardiorrespiratória, parada cardíaca ou falência múltipla de órgãos",
+        "Insuficiência respiratória aguda, choque séptico ou hemorragia digestiva",
+        "Pneumonia, infarto agudo do miocárdio ou acidente vascular cerebral",
+        "Câncer gástrico avançado, cirrose hepática ou tuberculose pulmonar avançada"
+      ],
+      "correctIndex": 0,
+      "explanation": "Parada cardiorrespiratória, parada cardíaca e falência múltipla de órgãos descrevem apenas o mecanismo final e comum a quase toda morte, sem indicar a doença que a causou, por isso são consideradas termos vagos. As demais opções são diagnósticos específicos, aceitáveis quando corretamente sequenciados."
+    },
+    {
+      "question": "Uma criança nasce viva e morre poucos minutos depois do parto. Em que condição a emissão da Declaração de Óbito é obrigatória?",
+      "options": [
+        "Sempre, mesmo com gestação curta, baixo peso ao nascer ou poucos minutos de vida",
+        "Somente se a gestação teve duração igual ou superior a vinte semanas completas",
+        "Somente se o peso ao nascer foi igual ou superior a quinhentos gramas exatos",
+        "Somente se a criança permaneceu viva por mais de uma hora após o parto"
+      ],
+      "correctIndex": 0,
+      "explanation": "Quando a criança nasce viva e morre logo após o nascimento, a DO é obrigatória independentemente da duração da gestação, do peso do recém-nascido e do tempo que permaneceu viva — os critérios de idade gestacional, peso e estatura só se aplicam ao óbito fetal, e não ao nascido vivo."
+    },
+    {
+      "question": "Um óbito é classificado como óbito fetal com necessidade de Declaração de Óbito quando a gestação atinge qual critério mínimo?",
+      "options": [
+        "Duração igual ou superior a 20 semanas, ou peso igual ou superior a 500 gramas, ou estatura igual ou superior a 25 centímetros",
+        "Duração igual ou superior a 22 semanas, ou peso igual ou superior a 500 gramas, ou estatura igual ou superior a 25 centímetros",
+        "Duração igual ou superior a 20 semanas, ou peso igual ou superior a 1000 gramas, ou estatura igual ou superior a 35 centímetros",
+        "Duração igual ou superior a 20 semanas, ou peso igual ou superior a 500 gramas, ou estatura igual ou superior a 30 centímetros"
+      ],
+      "correctIndex": 0,
+      "explanation": "A DO deve ser emitida no óbito fetal quando a gestação teve duração igual ou superior a 20 semanas, ou o feto pesou igual ou superior a 500 gramas, ou mediu igual ou superior a 25 centímetros — basta um desses três critérios ser atingido, não é necessário que todos estejam presentes."
+    },
+    {
+      "question": "Em quais duas situações a Declaração de Óbito NÃO deve ser emitida?",
+      "options": [
+        "Óbito fetal abaixo dos critérios mínimos de idade gestacional, peso e estatura, e peças anatômicas amputadas",
+        "Óbito fetal acima dos critérios mínimos de idade gestacional, peso e estatura, e recém-nascidos vivos",
+        "Óbito fetal abaixo dos critérios mínimos de idade gestacional, peso e estatura, e mortes violentas",
+        "Óbito fetal abaixo dos critérios mínimos de idade gestacional, peso e estatura, e óbitos hospitalares"
+      ],
+      "correctIndex": 0,
+      "explanation": "A DO não é emitida quando o óbito fetal ocorre com gestação de menos de 20 semanas, feto com menos de 500 gramas ou menos de 25 centímetros, e também não é emitida para peças anatômicas amputadas, que não configuram óbito de pessoa."
+    },
+    {
+      "question": "Em um óbito por morte natural, quando o falecido NÃO dispunha de assistência médica regular, a quem cabe a emissão da Declaração de Óbito?",
+      "options": [
+        "Ao médico do SVO, ou ao médico do serviço público de saúde mais próximo do local",
+        "Exclusivamente ao médico assistente que acompanhava o paciente antes do óbito",
+        "Exclusivamente ao médico legista do Instituto Médico Legal da região vizinha",
+        "Ao médico de plantão do hospital mais próximo, mesmo quando o SVO está disponível"
+      ],
+      "correctIndex": 0,
+      "explanation": "Sem assistência médica prévia, a DO cabe ao médico do SVO ou ao médico do serviço público de saúde mais próximo do local do evento; na ausência de ambos, qualquer médico da localidade pode preenchê-la — nunca o IML, reservado às mortes não-naturais.",
+      "image": "s10i1",
+      "imageCaption": "Quem emite a DO — morte natural, com e sem assistência médica"
+    },
+    {
+      "question": "Em um óbito por morte natural, quando o falecido tinha assistência médica regular antes de morrer, quem pode emitir a Declaração de Óbito?",
+      "options": [
+        "O médico assistente ou, na falta dele, um substituto, plantonista ou da instituição",
+        "Apenas o médico do SVO, mesmo havendo médico assistente disponível para o caso",
+        "Apenas o médico legista, já que toda morte natural exige perícia oficial",
+        "Apenas o médico do Programa de Saúde da Família, mesmo com médico assistente hospitalar"
+      ],
+      "correctIndex": 0,
+      "explanation": "Havendo assistência médica, a emissão cabe ao médico assistente ou, na sua falta, a um substituto, plantonista ou ao médico designado pela instituição que prestava a assistência — hospitalar, ambulatorial, domiciliar ou de programas como o de Saúde da Família, conforme o vínculo do caso.",
+      "image": "s10i1",
+      "imageCaption": "Quem emite a DO — morte natural, com e sem assistência médica"
+    },
+    {
+      "question": "Em uma morte não-natural (por causa externa) ocorrida em localidade que dispõe de IML, quem deve preencher a Declaração de Óbito?",
+      "options": [
+        "O médico legista, ou quem tenha acompanhado o tempo entre o evento e a morte",
+        "O médico assistente que acompanhava o paciente antes do evento violento",
+        "Qualquer médico da localidade investido pela autoridade judicial como perito",
+        "O médico do SVO, já que toda causa externa deve ser encaminhada a esse serviço"
+      ],
+      "correctIndex": 0,
+      "explanation": "Havendo IML na localidade, a DO cabe ao médico legista, ou a qualquer médico que tenha sido o elo entre o evento violento e a morte propriamente dita. A investidura como perito ad hoc e o encaminhamento ao SVO se aplicam a outras situações, não a essa.",
+      "image": "s11i1",
+      "imageCaption": "Quem emite a DO — morte não-natural, com e sem IML"
+    },
+    {
+      "question": "Em uma morte não-natural (por causa externa) ocorrida em localidade SEM IML, quem pode preencher a Declaração de Óbito?",
+      "options": [
+        "Qualquer médico local, investido pela autoridade judicial ou policial como perito",
+        "Apenas o médico legista da comarca mais próxima, mesmo estando à distância",
+        "O médico assistente, dispensada a investidura pela autoridade judicial ou policial",
+        "O médico do SVO, investido pela autoridade sanitária como perito eventual"
+      ],
+      "correctIndex": 0,
+      "explanation": "Na ausência de IML, qualquer médico da localidade pode preencher a DO, desde que investido pela autoridade judicial ou policial na função de perito legista eventual (ad hoc) — a investidura é o que legitima o ato, não bastando ser apenas o médico assistente do caso.",
+      "image": "s11i1",
+      "imageCaption": "Quem emite a DO — morte não-natural, com e sem IML"
+    },
+    {
+      "question": "Como se define a causa básica da morte, para fins de preenchimento da Declaração de Óbito?",
+      "options": [
+        "A doença ou condição inicial responsável pela cadeia de eventos que culminou no óbito",
+        "A doença ou condição mais recente, ocorrida próximo ao momento da morte",
+        "A complicação final que determinou diretamente a parada dos sinais vitais",
+        "Qualquer condição registrada na Parte II, mesmo sem relação causal direta com a morte"
+      ],
+      "correctIndex": 0,
+      "explanation": "A causa básica é a doença ou condição que deu início à cadeia de eventos que terminou no óbito, e deve estar na raiz de toda a sequência registrada na Parte I. Não se confunde com a causa imediata, que é a afecção mais recente, nem com condições da Parte II, que não integram essa cadeia."
+    },
+    {
+      "question": "Como se define a causa imediata da morte na Declaração de Óbito?",
+      "options": [
+        "A doença, lesão ou complicação mais recente, desencadeada pela causa básica",
+        "A doença ou condição inicial que desencadeou toda a cadeia até o óbito",
+        "Qualquer condição contribuinte que não tenha relação causal direta com a morte",
+        "O diagnóstico definitivo confirmado exclusivamente por necropsia oficial"
+      ],
+      "correctIndex": 0,
+      "explanation": "A causa imediata é a afecção mais recente da cadeia causal, desencadeada pela causa básica e ocorrida próximo ao momento da morte — é o que se registra na linha a da Parte I, enquanto a causa básica, mais antiga, fecha a sequência nas linhas seguintes."
+    },
+    {
+      "question": "Na Parte I da Declaração de Óbito, como as causas da morte devem ser distribuídas entre as linhas?",
+      "options": [
+        "Linha a traz a causa terminal ou imediata; b, c, d trazem antecedentes, até a básica",
+        "Linha a traz a causa básica, e b, c, d trazem as causas terminais em ordem decrescente",
+        "Todas as linhas devem trazer a mesma causa básica, repetida para reforçar o diagnóstico",
+        "Linha a traz a causa imediata, e b, c, d trazem condições contribuintes sem relação causal"
+      ],
+      "correctIndex": 0,
+      "explanation": "A linha a da Parte I registra a causa terminal ou imediata da morte, e as linhas b, c e d registram as causas antecedentes em ordem cronológica inversa, de modo que a última linha preenchida traga a causa básica — a doença que deu início a toda a cadeia.",
+      "image": "s22i1",
+      "imageCaption": "Modelo de preenchimento — Partes I e II da DO"
+    },
+    {
+      "question": "O que deve ser registrado na Parte II da Declaração de Óbito?",
+      "options": [
+        "Outras condições que contribuíram para a morte, sem relação causal direta com a Parte I",
+        "A causa básica da morte, quando ela não couber nas quatro linhas da Parte I",
+        "A causa imediata da morte, repetida para confirmar a linha a da Parte I",
+        "Apenas condições psiquiátricas prévias, quando relevantes para o óbito ocorrido"
+      ],
+      "correctIndex": 0,
+      "explanation": "A Parte II reúne condições que contribuíram para o óbito, mas sem fazer parte da cadeia causal direta descrita na Parte I — por exemplo, uma hipertensão arterial crônica em um paciente cuja morte decorreu de um câncer, e não da hipertensão em si."
+    },
+    {
+      "question": "No bloco de identificação do médico da Declaração de Óbito, quais são as opções de vínculo do profissional com o óbito atestado?",
+      "options": [
+        "Assistente, substituto, médico do IML, do SVO ou outro vínculo",
+        "Assistente, plantonista, enfermeiro responsável ou perito judicial",
+        "Assistente, substituto, delegado de polícia ou perito judicial",
+        "Médico do IML, do SVO, do cartório ou da vigilância epidemiológica"
+      ],
+      "correctIndex": 0,
+      "explanation": "O bloco de identificação do médico na DO registra se o óbito foi atestado por médico assistente, substituto, do IML, do SVO ou outro vínculo, além do nome, CRM, meio de contato, data e assinatura — informação essencial para rastrear a responsabilidade pelo atestado.",
+      "image": "s38i2",
+      "imageCaption": "Bloco VI — identificação do médico na DO"
+    },
+    {
+      "question": "Qual das situações abaixo representa um erro comum no preenchimento da Declaração de Óbito?",
+      "options": [
+        "Preencher a sequência de causas fora da ordem lógica de evolução da doença",
+        "Preencher a sequência de causas respeitando a ordem lógica de evolução da doença",
+        "Registrar o tempo aproximado entre o início da doença e a morte em cada linha",
+        "Utilizar terminologia médica padronizada nos campos de causa da morte"
+      ],
+      "correctIndex": 0,
+      "explanation": "Preencher as causas fora da ordem lógica de evolução da doença é um dos erros mais comuns na DO, ao lado do uso de termos vagos, da omissão de informações e da falta de registro do tempo entre doença e morte. As demais alternativas descrevem condutas corretas, não erros."
+    },
+    {
+      "question": "Quais critérios caracterizam uma morte natural para fins de preenchimento da Declaração de Óbito?",
+      "options": [
+        "Doença crônica conhecida e acompanhada, sem suspeita de crime, intoxicação ou evento externo",
+        "Doença aguda não diagnosticada, com suspeita de intoxicação por substância desconhecida",
+        "Evento traumático sem testemunhas, mas sem sinais de violência no corpo",
+        "Doença crônica conhecida, porém com suspeita de crime associado ao óbito"
+      ],
+      "correctIndex": 0,
+      "explanation": "A morte natural pressupõe doença crônica conhecida e acompanhada clinicamente, sem qualquer suspeita de crime, intoxicação ou evento externo associado, sendo de responsabilidade do médico assistente. A presença de suspeita de crime ou de intoxicação afasta essa classificação, ainda que a doença de base seja conhecida."
+    },
+    {
+      "question": "Diante de um óbito por causa externa (acidente, homicídio ou suicídio), qual é a conduta obrigatória quanto ao preenchimento da Declaração de Óbito?",
+      "options": [
+        "Encaminhar o corpo ao IML para necropsia obrigatória, vedada ao médico assistente",
+        "Encaminhar o corpo ao SVO para necropsia obrigatória, dispensada a perícia do IML",
+        "Permitir que o médico assistente preencha a DO, dispensando a necropsia oficial",
+        "Encaminhar o corpo ao IML apenas se a família da vítima solicitar formalmente"
+      ],
+      "correctIndex": 0,
+      "explanation": "Toda morte violenta, por causas externas como acidentes, homicídios ou suicídios, exige encaminhamento obrigatório ao IML para necropsia, e a DO não pode ser preenchida pelo médico assistente, independentemente de solicitação da família."
+    },
+    {
+      "question": "Diante de um óbito cuja causa é desconhecida ou sem histórico clínico compatível, qual é o encaminhamento correto?",
+      "options": [
+        "Encaminhar o corpo ao Serviço de Verificação de Óbitos (SVO) para investigação médico-legal",
+        "Encaminhar o corpo ao Instituto Médico Legal (IML), como em toda morte suspeita",
+        "Permitir que o médico assistente estime a causa básica sem investigação adicional",
+        "Emitir a DO com causa ignorada, sem necessidade de encaminhamento a serviço especializado"
+      ],
+      "correctIndex": 0,
+      "explanation": "Quando a causa da morte é desconhecida ou não há histórico clínico compatível com o quadro apresentado, o encaminhamento correto é ao SVO, e não ao IML, reservado às mortes por causa externa. A investigação médico-legal é necessária antes de qualquer conclusão sobre a causa."
+    },
+    {
+      "question": "Homem, 72 anos, operado há 10 meses de câncer gástrico confirmado por histopatológico, evolui com metástases pulmonares e piora progressiva; uma semana antes da morte, apresenta quadro broncopneumônico. É hipertenso há 10 anos e, 3 meses antes do óbito, teve um acidente vascular cerebral com hemiplegia residual. Qual é a sequência correta de causas na Parte I da Declaração de Óbito?",
+      "options": [
+        "Causa imediata: broncopneumonia; intermediária: metástase pulmonar; causa básica: câncer gástrico",
+        "Causa imediata: câncer gástrico; intermediária: metástase pulmonar; causa básica: broncopneumonia",
+        "Causa imediata: broncopneumonia; intermediária: acidente vascular cerebral; causa básica: hipertensão arterial",
+        "Causa imediata: broncopneumonia; intermediária: metástase pulmonar; causa básica: hipertensão arterial"
+      ],
+      "correctIndex": 0,
+      "explanation": "A broncopneumonia foi o evento terminal (linha a), decorrente da metástase pulmonar (linha b), que por sua vez decorreu do câncer gástrico operado dez meses antes — a causa básica, por ter iniciado toda a cadeia. A hipertensão e a sequela de AVC não fazem parte dessa cadeia e vão para a Parte II, como condições contribuintes."
+    },
+    {
+      "question": "Mulher, 50 anos, com câncer de mama e metástases ganglionares confirmadas por cirurgia e biópsia, evolui meses depois com hepatomegalia nodular, ascite e icterícia; dois dias antes do óbito, entra em coma por encefalopatia hepática comprovada clínica e laboratorialmente. Qual é a causa básica a ser registrada na Declaração de Óbito?",
+      "options": [
+        "Câncer de mama, doença que iniciou a cadeia que levou à encefalopatia hepática",
+        "Encefalopatia hepática, por ser a manifestação mais próxima do momento da morte",
+        "Ascite, por ser a manifestação clínica mais evidente antes da morte da paciente",
+        "Icterícia, por ser o primeiro sinal objetivo de disfunção hepática observado"
+      ],
+      "correctIndex": 0,
+      "explanation": "A causa básica é o câncer de mama, doença que originou as metástases hepáticas responsáveis pela hepatomegalia nodular, ascite e icterícia, culminando na encefalopatia hepática — a causa imediata, por ser a afecção mais próxima da morte. Ascite e icterícia são elos da cadeia, não o ponto de partida dela."
+    },
+    {
+      "question": "Mulher, 30 anos, procedente de zona endêmica de esquistossomose, é internada com hematêmese e diagnóstico clínico, confirmado por biópsia hepática, de ruptura de varizes esofágicas por hipertensão portal secundária a fibrose hepática esquistossomótica. Submetida a esplenectomia, evolui para óbito em choque irreversível. Qual é a sequência causal correta, da causa básica à causa imediata?",
+      "options": [
+        "Esquistossomose hepatoesplênica, causando hipertensão portal, que causou ruptura de varizes, que causou choque",
+        "Choque hemorrágico, causando ruptura de varizes, que causou hipertensão portal, que causou esquistossomose",
+        "Esquistossomose hepatoesplênica, causando ruptura de varizes, que causou hipertensão portal, que causou choque",
+        "Hipertensão portal, causando esquistossomose hepatoesplênica, que causou ruptura de varizes, que causou choque"
+      ],
+      "correctIndex": 0,
+      "explanation": "A causa básica é a esquistossomose hepatoesplênica, que gerou fibrose hepática e hipertensão portal; esta levou à formação de varizes esofágicas, cuja ruptura causou o choque hemorrágico irreversível, a causa imediata da morte. A ordem reflete a evolução cronológica, do evento mais antigo ao mais recente."
+    },
+    {
+      "question": "Homem, 78 anos, tabagista, com DPOC grave em oxigenoterapia domiciliar há um ano, é internado com tosse e dispneia intensas há 3 dias e recebe diagnóstico confirmado de COVID-19; evolui com insuficiência respiratória aguda, necessidade de ventilação mecânica e óbito. Como devem ser classificadas a causa básica e a DPOC prévia na Declaração de Óbito?",
+      "options": [
+        "A causa básica é a COVID-19, e a DPOC entra na Parte II como condição contribuinte, não como elo causal",
+        "A causa básica é a DPOC, e a COVID-19 entra na Parte II como condição contribuinte",
+        "A causa básica é a insuficiência respiratória aguda, e a DPOC entra na Parte II como condição contribuinte",
+        "A causa básica é a COVID-19, e a DPOC entra na linha b da Parte I, como causa intermediária"
+      ],
+      "correctIndex": 0,
+      "explanation": "A COVID-19 desencadeou a cadeia que terminou em insuficiência respiratória aguda (causa imediata), por isso é a causa básica, mesmo havendo DPOC prévia. A DPOC agrava o quadro, mas não iniciou a cadeia de eventos que levou à morte nesse episódio, por isso entra na Parte II, e não como elo da Parte I."
+    },
+    {
+      "question": "Homem, 44 anos, pedreiro, sofre queda acidental de andaime a partir do 12º andar, chega ao hospital em coma e evolui rapidamente para parada cardiorrespiratória, sem retorno após 20 minutos de manobras de reanimação. Como esse óbito deve ser classificado e encaminhado para fins de Declaração de Óbito?",
+      "options": [
+        "Morte violenta, causa externa acidental, com IML obrigatório e DO vedada ao assistente",
+        "Morte natural, já que a parada cardiorrespiratória foi constatada em ambiente hospitalar",
+        "Morte suspeita, com encaminhamento ao SVO para investigação da causa desconhecida",
+        "Morte violenta, mas com DO que pode ser preenchida pelo médico assistente que reanimou"
+      ],
+      "correctIndex": 0,
+      "explanation": "A queda de andaime é causa externa acidental, o que classifica o óbito como morte violenta (não-natural). Esses casos exigem necropsia no IML, e a Declaração de Óbito não pode ser preenchida pelo médico assistente, mesmo que ele tenha conduzido a reanimação."
+    },
+    {
+      "question": "Paciente idoso, com constipação crônica e perda de peso sem diagnóstico formal, evolui em casa com dor abdominal, febre intermitente, rebaixamento do nível de consciência e sinais de choque séptico, falecendo no domicílio sem avaliação médica nos momentos finais. Como esse óbito deve ser classificado e encaminhado?",
+      "options": [
+        "Morte suspeita, por ausência de diagnóstico compatível, com encaminhamento ao SVO",
+        "Morte natural, já que não há nenhum sinal de violência ou intoxicação relatado",
+        "Morte violenta, por ter ocorrido fora do ambiente hospitalar e sem assistência médica",
+        "Morte suspeita, mas com encaminhamento obrigatório ao IML por falta de diagnóstico"
+      ],
+      "correctIndex": 0,
+      "explanation": "Sem diagnóstico formal e sem acompanhamento médico regular compatível com o quadro final, o óbito não pode ser atestado como natural por um médico assistente nem se enquadra como causa externa — a classificação correta é morte suspeita, com investigação obrigatória pelo SVO, e não pelo IML, reservado às causas externas."
+    }
+  ]
+}

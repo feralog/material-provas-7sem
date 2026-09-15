@@ -1,0 +1,449 @@
+{
+  "titulo": "Prescrição Médica",
+  "eyebrow": "Práticas · Receituário e Segurança do Paciente",
+  "subtitulo": "Receituário correto, interações perigosas e prescrição eletrônica na prática.",
+  "intro": "Este material cobre os tipos de receituário e suas regras formais, a prescrição eletrônica de controlados exigida pela nova regulamentação da Anvisa, e as principais interações medicamentosas e medicações de risco da prática clínica, com ênfase em pacientes idosos e vinhetas de casos reais de erro de prescrição.",
+  "questoes": [
+    {
+      "question": "Um paciente com dor oncológica recebe prescrição de morfina para uso contínuo. Qual receituário deve ser utilizado e qual é sua validade máxima?",
+      "options": [
+        "Notificação amarela (lista A), válida 30 dias em todo o território nacional.",
+        "Notificação azul (lista B), válida 60 dias somente no estado emitente.",
+        "Receita de controle especial, válida 10 dias, no máximo 3 substâncias.",
+        "Receita simples branca, válida 30 dias, sem retenção pela farmácia."
+      ],
+      "correctIndex": 0,
+      "explanation": "A morfina é entorpecente da lista A; a notificação amarela vale 30 dias em todo o território nacional e permite no máximo 5 ampolas quando a forma for injetável, ficando retida na farmácia no ato da dispensação."
+    },
+    {
+      "question": "Qual receituário é exigido para prescrever clonazepam, alprazolam ou zolpidem, substâncias psicotrópicas que causam dependência?",
+      "options": [
+        "Notificação azul (lista B), com a via azul retida na farmácia.",
+        "Notificação amarela (lista A), com via única retida na farmácia.",
+        "Receita de controle especial, sem numeração controlada pela vigilância.",
+        "Receita simples branca, sem qualquer retenção de via pela farmácia."
+      ],
+      "correctIndex": 0,
+      "explanation": "Clonazepam, alprazolam e zolpidem são psicotrópicos da lista B; a notificação azul tem numeração controlada, com uma via retida na farmácia e outra entregue ao paciente."
+    },
+    {
+      "question": "Um antibiótico oral é prescrito para tratar uma infecção urinária. Que tipo de receituário a legislação brasileira exige para dispensação de antimicrobianos?",
+      "options": [
+        "Receita de controle especial ou comum, duas vias, validade de 10 dias.",
+        "Notificação amarela, via única, validade de 30 dias no país.",
+        "Notificação azul, retida na farmácia, validade de 60 dias no estado.",
+        "Receita simples branca, via única, sem retenção pela farmácia."
+      ],
+      "correctIndex": 0,
+      "explanation": "A RDC 44/2010 da Anvisa exige receita em duas vias para antimicrobianos, com retenção de uma via pela farmácia e validade de 10 dias a partir da emissão."
+    },
+    {
+      "question": "Um dermatologista prescreve isotretinoína oral para acne grave em uma mulher em idade fértil. Além da notificação de receita especial (lista C2), o que deve obrigatoriamente acompanhar essa prescrição?",
+      "options": [
+        "Termo de consentimento de risco, assinado por médico e paciente, sobre teratogenicidade.",
+        "Autorização prévia da vigilância sanitária, renovada a cada dispensação mensal.",
+        "Exame de função hepática anexado, sem necessidade de termo de consentimento.",
+        "Declaração assinada só pelo farmacêutico, sem termo assinado pela paciente."
+      ],
+      "correctIndex": 0,
+      "explanation": "Retinoides sistêmicos como isotretinoína e tretinoína têm risco teratogênico grave; a notificação C2 deve vir acompanhada do termo de consentimento de risco, informando a proibição de gravidez durante o uso."
+    },
+    {
+      "question": "Um anticonvulsivante de uso crônico é prescrito em receita de controle especial. A imagem mostra a tabela de orientações para dispensação de medicamentos sujeitos a controle especial. Segundo essa tabela, qual é a quantidade máxima de tratamento permitida por receita para anticonvulsivantes e antiparkinsonianos, sem necessidade de justificativa adicional?",
+      "options": [
+        "Quantidade correspondente a 6 meses (180 dias) de tratamento.",
+        "Quantidade correspondente a 30 dias de tratamento, renovável mensalmente.",
+        "Quantidade correspondente a 60 dias de tratamento, igual à regra geral.",
+        "Quantidade correspondente a 90 dias de tratamento, com CID obrigatório."
+      ],
+      "correctIndex": 0,
+      "explanation": "Para antiparkinsonianos e anticonvulsivantes, a receita de controle especial pode conter quantidade equivalente a 6 meses (180 dias) de tratamento, período maior que a regra geral de 60 dias para outros medicamentos da lista C1.",
+      "image": "s14i1",
+      "imageCaption": "Tabela de dispensação de medicamentos sujeitos a controle especial"
+    },
+    {
+      "question": "Um médico percebe, ao reler uma receita já assinada, que escreveu a dose errada de um medicamento. Qual é a conduta correta diante desse erro?",
+      "options": [
+        "Emitir nova receita sem rasuras, pois emendas comprometem a autenticidade.",
+        "Riscar o valor errado e escrever o certo ao lado, sem nova assinatura.",
+        "Cobrir o erro com corretivo líquido e reimprimir só essa linha.",
+        "Manter a receita original e orientar o paciente apenas verbalmente."
+      ],
+      "correctIndex": 0,
+      "explanation": "Rasuras e emendas comprometem a verificação da autenticidade da receita e podem impedir sua dispensação; diante de erro, a conduta correta é emitir nova receita."
+    },
+    {
+      "question": "Um médico prescreve um medicamento de referência e não deseja que o farmacêutico o substitua por um genérico equivalente. O que ele deve fazer na receita?",
+      "options": [
+        "Registrar na receita a frase 'não autorizo a substituição'.",
+        "Nada precisa ser feito, pois a substituição é sempre proibida.",
+        "Solicitar verbalmente ao farmacêutico, sem registro escrito na receita.",
+        "Assinar um termo separado, entregue à vigilância sanitária antes da venda."
+      ],
+      "correctIndex": 0,
+      "explanation": "Não há disposição legal sobre a redação exata; basta que o médico externe por escrito, na própria receita, sua vontade de não autorizar a substituição. No silêncio, a troca é permitida."
+    },
+    {
+      "question": "Um médico costuma usar carimbo desgastado, no qual o número de inscrição no CRM está parcialmente apagado e ilegível. Do ponto de vista ético, essa prática equivale a quê?",
+      "options": [
+        "Letra ilegível, configurando infração ao Código de Ética Médica.",
+        "Prática aceitável, desde que o nome do paciente esteja legível.",
+        "Falha estética, sem qualquer repercussão ética, desde que assinada.",
+        "Situação corrigível pelo farmacêutico, que completa o CRM na dispensação."
+      ],
+      "correctIndex": 0,
+      "explanation": "Um carimbo desgastado que torna o nome ou o número de CRM ilegíveis equivale, por interpretação extensiva, à letra ilegível vedada pelo Código de Ética Médica."
+    },
+    {
+      "question": "A imagem mostra o modelo de notificação de receita com campos numerados de 1 a 10. Qual número identifica o campo destinado ao preenchimento pela farmácia ou drogaria no momento da dispensação?",
+      "options": [
+        "Número 6",
+        "Número 4",
+        "Número 7",
+        "Número 9"
+      ],
+      "correctIndex": 0,
+      "explanation": "O campo 6 corresponde ao preenchimento pela farmácia/drogaria (nome do vendedor e data), enquanto o campo 4 é o preenchimento do prescritor com os dados do paciente e o campo 7 registra a posologia.",
+      "image": "pg30",
+      "imageCaption": "Modelo de notificação de receita com legenda numerada"
+    },
+    {
+      "question": "A imagem mostra uma receita simples preenchida para Ciprofloxacino 500mg, com orientação de tomar 1 comprimido a cada 12 horas por 7 dias. Qual é a subinscrição correta dessa receita, ou seja, a quantidade total do medicamento a ser fornecida?",
+      "options": [
+        "14 comprimidos, suficientes para 7 dias na posologia de 12/12h.",
+        "7 comprimidos, suficientes para 7 dias numa única tomada diária.",
+        "21 comprimidos, suficientes para 7 dias a cada 8 horas.",
+        "28 comprimidos, suficientes para 14 dias a cada 12 horas."
+      ],
+      "correctIndex": 0,
+      "explanation": "Um comprimido a cada 12 horas equivale a 2 comprimidos por dia; em 7 dias, a subinscrição correta é 14 comprimidos, informação registrada ao lado do nome do fármaco na receita.",
+      "image": "s09i1",
+      "imageCaption": "Receita simples preenchida"
+    },
+    {
+      "question": "A imagem mostra o quadro comparativo das listas de substâncias sujeitas a controle especial. Segundo esse quadro, qual é a diferença entre as listas B1 e B2 quanto ao período máximo de tratamento coberto por uma notificação de receita?",
+      "options": [
+        "Lista B1 permite até 60 dias de tratamento; B2 permite até 30 dias.",
+        "Lista B1 permite até 30 dias de tratamento; B2 permite até 60 dias.",
+        "As listas B1 e B2 permitem exatamente os mesmos 30 dias de tratamento.",
+        "Lista B1 não tem limite de dias; B2 é limitada a 15 dias."
+      ],
+      "correctIndex": 0,
+      "explanation": "Segundo o quadro comparativo, a lista B1 (psicotrópicos) permite quantidade correspondente a até 60 dias de tratamento por notificação, enquanto a B2 (psicotrópicos anorexígenos) é limitada a 30 dias, ambas com validade de 30 dias.",
+      "image": "pg41",
+      "imageCaption": "Quadro comparativo das listas de substâncias controladas"
+    },
+    {
+      "question": "Uma nova resolução da Anvisa, publicada em dezembro de 2025, passou a permitir a emissão de receitas amarelas e azuis por sistemas eletrônicos integrados. A qual sistema essas plataformas devem estar conectadas?",
+      "options": [
+        "Sistema Nacional de Controle de Receituários.",
+        "Sistema Nacional de Vigilância Farmacêutica Digital.",
+        "Cadastro Nacional de Prescrições Eletrônicas do MS.",
+        "Registro Nacional Integrado de Medicamentos Controlados."
+      ],
+      "correctIndex": 0,
+      "explanation": "A RDC publicada em 11/12/2025 possibilita a emissão eletrônica de receitas de controlados por plataformas integradas ao Sistema Nacional de Controle de Receituários, com número nacional único por prescrição."
+    },
+    {
+      "question": "Um paciente fotografa sua receita de controle especial em papel e envia a imagem para a farmácia pelo celular, pedindo que seja aceita como prescrição eletrônica. Essa conduta é válida perante a regulamentação de receituário eletrônico de controlados?",
+      "options": [
+        "Não, exige sistema integrado oficial ao controle sanitário nacional.",
+        "Sim, qualquer imagem legível da receita equivale ao documento eletrônico.",
+        "Sim, desde que o farmacêutico digite os dados manualmente no sistema.",
+        "Não, mas só porque falta o carimbo do médico na foto enviada."
+      ],
+      "correctIndex": 0,
+      "explanation": "A prescrição eletrônica válida exige emissão em plataforma integrada ao Sistema Nacional de Controle de Receituários; uma simples fotografia de receita em papel não substitui esse sistema oficial."
+    },
+    {
+      "question": "Mesmo diante da obrigatoriedade de prescrição eletrônica para medicamentos de controle especial, a quem permanece a responsabilidade clínica pela indicação, dose, duração e acompanhamento do tratamento?",
+      "options": [
+        "Ao médico prescritor, de forma integral, independentemente do meio usado.",
+        "Ao sistema eletrônico certificado, que assume a responsabilidade técnica.",
+        "À farmácia dispensadora, que responde solidariamente após a digitalização.",
+        "Ao desenvolvedor da plataforma, responsável por validar cada prescrição."
+      ],
+      "correctIndex": 0,
+      "explanation": "A digitalização da receita não transfere a responsabilidade clínica: o médico permanece integralmente responsável pela indicação, dose, duração e acompanhamento terapêutico, mesmo em sistemas eletrônicos."
+    },
+    {
+      "question": "Antes da nova regulamentação de prescrição eletrônica, quais eram os principais problemas do sistema brasileiro de controle de receituários de medicamentos controlados?",
+      "options": [
+        "Falsificação de receitas, reutilização indevida e baixa rastreabilidade.",
+        "Excesso de burocracia, reduzindo a adesão dos pacientes ao tratamento.",
+        "Falta de padronização das cores dos receituários entre os estados.",
+        "Ausência de regulamentação estadual para dispensação de genéricos."
+      ],
+      "correctIndex": 0,
+      "explanation": "O sistema anterior, baseado em papel, favorecia falsificação de receitas, reutilização indevida e baixa rastreabilidade nacional, problemas que motivaram a digitalização do controle de receituários."
+    },
+    {
+      "question": "Qual alternativa resume corretamente o funcionamento do novo Sistema Nacional de Controle de Receituários para medicamentos sujeitos a controle especial?",
+      "options": [
+        "Número nacional único, dispensação eletrônica, sem reutilização.",
+        "Numeração própria de cada farmácia, sem integração com número nacional único.",
+        "Registro da dispensação continua em papel, só a emissão é eletrônica.",
+        "Reutilização de receitas continua possível, se registrada manualmente."
+      ],
+      "correctIndex": 0,
+      "explanation": "O novo modelo atribui número nacional único a cada prescrição, com registro eletrônico da dispensação em tempo real, o que praticamente elimina a reutilização de receitas."
+    },
+    {
+      "question": "Um paciente em uso de sinvastatina para dislipidemia inicia ciprofibrato para hipertrigliceridemia grave. Qual é o risco dessa associação e a conduta recomendada?",
+      "options": [
+        "Risco de rabdomiólise; evitar a associação, preferir fenofibrato.",
+        "Risco de hipoglicemia grave; evitar a associação, preferir glimepirida.",
+        "Redução do efeito hipolipemiante; manter e aumentar a dose de estatina.",
+        "Nenhum risco relevante; associar livremente em qualquer dose."
+      ],
+      "correctIndex": 0,
+      "explanation": "Ciprofibrato associado a estatinas aumenta significativamente o risco de miopatia e rabdomiólise; quando a associação com fibrato for necessária, o fenofibrato é preferível por apresentar menor risco dessa interação."
+    },
+    {
+      "question": "Uma paciente em uso crônico de varfarina para fibrilação atrial inicia diclofenaco para dor lombar aguda. Qual é o principal risco dessa associação e a conduta recomendada?",
+      "options": [
+        "Risco de sangramento GI; evitar associação, usar IBP e monitorar INR.",
+        "Redução do efeito anticoagulante; aumentar de imediato a dose de varfarina.",
+        "Risco de hipoglicemia grave; monitorar a glicemia capilar com frequência.",
+        "Sem relevância clínica; nenhum ajuste ou monitorização é necessário."
+      ],
+      "correctIndex": 0,
+      "explanation": "AINEs como o diclofenaco aumentam o risco de sangramento gastrointestinal em pacientes anticoagulados com varfarina; a associação deve ser evitada, com proteção gástrica e monitorização do INR quando inevitável."
+    },
+    {
+      "question": "Um paciente em uso de losartana para hipertensão e espironolactona para insuficiência cardíaca apresenta, em exame de rotina, potássio sérico de 6,2 mEq/L. Qual é o mecanismo da interação entre esses dois fármacos?",
+      "options": [
+        "Redução da excreção renal de potássio; risco de hipercalemia grave.",
+        "Aumento da excreção renal de losartana; reduz o efeito anti-hipertensivo.",
+        "Potencialização do efeito diurético; leva a hipocalemia, não hipercalemia.",
+        "Competição pela via hepática; sem efeito sobre o potássio sérico."
+      ],
+      "correctIndex": 0,
+      "explanation": "IECA ou BRA associados a espironolactona reduzem a excreção renal de potássio por ação convergente no sistema renina-angiotensina-aldosterona, exigindo monitorização de potássio e função renal."
+    },
+    {
+      "question": "Um paciente em uso de varfarina para tromboembolismo venoso é prescrito amiodarona para controle de arritmia. Qual é o efeito esperado da associação sobre a anticoagulação?",
+      "options": [
+        "Inibição do metabolismo da varfarina; aumenta o INR, reduzir a dose.",
+        "Aceleração do metabolismo da varfarina; reduz o INR, aumentar a dose.",
+        "Sem interferência farmacocinética; dispensa ajuste de dose ou monitorização.",
+        "Risco de hipoglicemia grave; sem impacto relevante sobre o INR."
+      ],
+      "correctIndex": 0,
+      "explanation": "A amiodarona inibe enzimas hepáticas envolvidas na metabolização da varfarina, elevando o INR e o risco de sangramento; a dose de varfarina deve ser reduzida e o INR monitorado com maior frequência."
+    },
+    {
+      "question": "Um paciente em uso de alopurinol para gota é prescrito azatioprina após transplante renal. Qual é o risco dessa associação e o ajuste de dose recomendado?",
+      "options": [
+        "Mielotoxicidade grave; reduzir a azatioprina para cerca de 25% da dose.",
+        "Nefrotoxicidade aditiva; suspender o alopurinol durante todo o uso.",
+        "Redução do efeito imunossupressor; aumentar a dose de azatioprina.",
+        "Hepatotoxicidade isolada; sem repercussão sobre a contagem de células."
+      ],
+      "correctIndex": 0,
+      "explanation": "O alopurinol inibe a xantina oxidase, enzima que degrada metabólitos ativos da azatioprina, aumentando o risco de mielotoxicidade grave; recomenda-se reduzir a azatioprina para cerca de 25% da dose usual."
+    },
+    {
+      "question": "Um paciente diabético em uso de metformina necessita realizar tomografia com contraste iodado. Qual é a conduta correta em relação à metformina nesse contexto?",
+      "options": [
+        "Risco de acidose láctica; suspender 48h antes e depois do contraste.",
+        "Sem restrição necessária; o contraste não interfere no metabolismo.",
+        "Dobrar a dose no dia do exame; compensa a redução renal transitória.",
+        "Trocar por insulina 24h antes; sem necessidade de suspensão prolongada."
+      ],
+      "correctIndex": 0,
+      "explanation": "O contraste iodado pode causar nefropatia por contraste, reduzindo a depuração renal da metformina e aumentando o risco de acidose láctica; recomenda-se suspender o fármaco 48 horas antes e depois do exame."
+    },
+    {
+      "question": "Um paciente em uso de tramadol para dor crônica inicia fluoxetina para tratamento de depressão. Qual é o risco mais grave dessa associação?",
+      "options": [
+        "Síndrome serotoninérgica; efeito combinado dos dois fármacos serotoninérgicos.",
+        "Depressão respiratória isolada; sem relação com o sistema serotoninérgico.",
+        "Hipoglicemia grave; potencialização do efeito da fluoxetina sobre a insulina.",
+        "Nefrotoxicidade aguda; acúmulo do metabólito ativo do tramadol."
+      ],
+      "correctIndex": 0,
+      "explanation": "O tramadol tem atividade serotoninérgica; associado a um ISRS como a fluoxetina, aumenta o risco de síndrome serotoninérgica, devendo a combinação ser evitada ou cuidadosamente monitorada."
+    },
+    {
+      "question": "Uma mulher em uso crônico de sinvastatina inicia claritromicina para uma infecção respiratória. Qual é a conduta recomendada durante o uso do antibiótico?",
+      "options": [
+        "Risco de miopatia e rabdomiólise; suspender a estatina durante o antibiótico.",
+        "Sem interferência; macrolídeos não alteram o metabolismo das estatinas.",
+        "Redução do efeito antibiótico; dobrar a dose de claritromicina.",
+        "Trocar por outro macrolídeo da mesma classe; sem ajuste na estatina."
+      ],
+      "correctIndex": 0,
+      "explanation": "A claritromicina inibe o CYP3A4, aumentando significativamente os níveis séricos de sinvastatina e o risco de miopatia/rabdomiólise; a conduta é suspender a estatina durante o tratamento antibiótico."
+    },
+    {
+      "question": "Um idoso de 76 anos com doença de Parkinson apresenta náuseas recorrentes e é prescrito metoclopramida como antiemético. Qual é o risco dessa prescrição e qual seria uma alternativa mais segura?",
+      "options": [
+        "Bloqueio dopaminérgico central; piora a rigidez, preferir domperidona.",
+        "Potencialização da levodopa; melhora o controle motor do parkinsonismo.",
+        "Hipoglicemia grave; a insulina seria a alternativa mais segura.",
+        "Nenhuma interação relevante com a fisiopatologia da doença de Parkinson."
+      ],
+      "correctIndex": 0,
+      "explanation": "A metoclopramida é antagonista dopaminérgico central e pode agravar sintomas motores em parkinsonianos; a domperidona (que atravessa pouco a barreira hematoencefálica) ou a quetiapina em baixa dose são alternativas mais seguras."
+    },
+    {
+      "question": "Uma idosa em uso crônico de amitriptilina para dor neuropática apresenta boca seca, confusão mental leve e retenção urinária. Qual classe de risco em idosos explica esses efeitos, e qual seria uma alternativa mais segura?",
+      "options": [
+        "Efeito anticolinérgico do tricíclico; nortriptilina é mais segura.",
+        "Efeito anticolinérgico do ISRS; um tricíclico seria mais seguro.",
+        "Efeito hipoglicemiante do tricíclico; a metformina seria mais segura.",
+        "Efeito sedativo do AINE; paracetamol seria mais seguro."
+      ],
+      "correctIndex": 0,
+      "explanation": "A amitriptilina tem forte efeito anticolinérgico, causando boca seca, confusão e retenção urinária em idosos; ISRS como a sertralina ou tricíclicos de perfil mais leve como a nortriptilina são preferíveis nessa população."
+    },
+    {
+      "question": "Um idoso em uso de glibenclamida para diabetes tipo 2 é encontrado em rebaixamento do nível de consciência, com glicemia capilar de 38 mg/dL. Após a correção emergencial, qual conduta é recomendada em relação ao antidiabético?",
+      "options": [
+        "Suspender a glibenclamida; substituir por agente de menor risco hipoglicêmico.",
+        "Manter a mesma dose; orientar alimentação em intervalos mais curtos.",
+        "Reduzir a dose pela metade; manter como primeira escolha em idosos.",
+        "Trocar por insulina ultrarrápida em dose fixa, sem monitorização adicional."
+      ],
+      "correctIndex": 0,
+      "explanation": "A glibenclamida é sulfonilureia de meia-vida longa, associada a hipoglicemia prolongada e grave em idosos, sobretudo com função renal reduzida; deve ser substituída por agente de menor risco hipoglicêmico."
+    },
+    {
+      "question": "Um idoso com insuficiência cardíaca com fração de ejeção reduzida, em uso de furosemida, enalapril e carvedilol, inicia ibuprofeno por conta própria para dor articular e evolui com edema e ganho de peso em poucos dias. Qual é o mecanismo mais provável dessa descompensação?",
+      "options": [
+        "Retenção hidrossalina; reduz a eficácia de IECA e diuréticos, piora a IC.",
+        "Potencializa o efeito diurético da furosemida; leva à desidratação.",
+        "Interação exclusiva com o carvedilol; sem efeito sobre a volemia.",
+        "Aumento do apetite induzido pelo ibuprofeno; sem relação com edema."
+      ],
+      "correctIndex": 0,
+      "explanation": "Os AINEs favorecem retenção hidrossalina e reduzem a eficácia de IECA e diuréticos, sendo um dos grupos de maior risco de interação droga-doença em pacientes com insuficiência cardíaca, podendo precipitar descompensação."
+    },
+    {
+      "question": "João Bezerra, 50 anos, procura atendimento com tosse produtiva há 5 dias e febre baixa, nega comorbidades, alergias ou uso de medicações. Ao exame: PA 130/80 mmHg, FC 88 bpm, FR 18 irpm, SatO2 96%, estertores finos em base pulmonar direita, CURB-65 igual a 0. Qual é a conduta prescritiva mais apropriada?",
+      "options": [
+        "Amoxicilina 500mg VO 8/8h por 7 dias, em receita simples.",
+        "Internação para antibiótico intravenoso, exigida em toda pneumonia.",
+        "Apenas antitérmico e observação, sem antibiótico algum.",
+        "Ciprofloxacino 500mg 12/12h por 14 dias, primeira escolha universal."
+      ],
+      "correctIndex": 0,
+      "explanation": "Com CURB-65 igual a zero, o paciente tem baixo risco de mortalidade e pode ser tratado ambulatorialmente; amoxicilina é antibiótico de primeira linha para pneumonia comunitária sem critérios de internação, em receita simples."
+    },
+    {
+      "question": "Marlene Costa, 80 anos, usa diclofenaco 50mg VO 2x/dia há 6 meses para dor crônica em joelhos e quadris, relata azia frequente e dois episódios de melena leve no último ano, e está em uso de losartana 50mg 2x/dia e sertralina 50mg pela manhã. Qual é a conduta prescritiva mais adequada diante da suspeita de doença ulcerosa péptica associada ao AINE?",
+      "options": [
+        "Suspender o diclofenaco, iniciar IBP, trocar por paracetamol.",
+        "Manter o diclofenaco, apenas associar um IBP ao esquema.",
+        "Suspender a losartana, apontada como causa da melena.",
+        "Suspender a sertralina, trocando-a por diclofenaco em dose menor."
+      ],
+      "correctIndex": 0,
+      "explanation": "A melena e a azia sugerem doença ulcerosa péptica relacionada ao AINE crônico; a conduta é suspender o diclofenaco, iniciar IBP e trocar a analgesia por paracetamol, preservando os medicamentos sem relação com o sangramento."
+    },
+    {
+      "question": "Ricardo Nogueira, 68 anos, tem câncer de pulmão metastático com dor oncológica de difícil controle, em uso de metadona 5mg VO a cada 12 horas há duas semanas com dipirona 1g a cada 6 horas, boa analgesia mas constipação intensa. A imagem mostra o modelo de notificação de receita exigido para renovar a metadona. Qual receituário corresponde a esse modelo e qual conduta deve ser adotada para a constipação?",
+      "options": [
+        "Notificação amarela; associar laxante em receita branca comum.",
+        "Notificação azul; suspender a metadona e usar só dipirona.",
+        "Receita de controle especial; reduzir a metadona pela metade antes.",
+        "Receita simples branca; aguardar resolução espontânea, sem laxante."
+      ],
+      "correctIndex": 0,
+      "explanation": "A metadona é entorpecente da lista A e exige notificação amarela; a constipação por opioide é previsível e deve ser tratada com laxante (ex.: lactulose) em receita branca comum, mantendo o opioide para controle da dor.",
+      "image": "s44i1",
+      "imageCaption": "Modelo de notificação de receita amarela"
+    },
+    {
+      "question": "Fernanda Alencar, 50 anos, tem síndrome do pânico há 10 anos e usa alprazolam 0,5mg VO 1x/dia com desvenlafaxina 50mg 1x/dia, comparecendo para renovação, sentindo-se bem e em psicoterapia semanal. A imagem mostra o modelo de notificação de receita necessário para renovar o alprazolam. Qual é esse receituário e por quanto tempo ele é válido?",
+      "options": [
+        "Notificação azul, válida 30 dias, via retida na farmácia.",
+        "Notificação amarela, válida 60 dias, sem retenção de via.",
+        "Receita de controle especial, válida 90 dias, com CID obrigatório.",
+        "Receita simples branca, válida 10 dias, sem numeração controlada."
+      ],
+      "correctIndex": 0,
+      "explanation": "O alprazolam é psicotrópico da lista B; a notificação azul tem validade de 30 dias, com via azul retida na farmácia e via branca entregue à paciente, enquanto a desvenlafaxina é prescrita em receita comum separada.",
+      "image": "s46i1",
+      "imageCaption": "Modelo de notificação de receita azul"
+    },
+    {
+      "question": "Cláudio Galeno, 78 anos, tem diabetes tipo 2, hipertensão e dislipidemia, e sua receita atual inclui metformina 850mg 2x/dia, sinvastatina 40mg à noite, anlodipino 5mg 1x/dia e diclofenaco 50mg 2x/dia há 2 meses para dor articular. Na renovação da receita, qual ajuste é prioritário para reduzir o risco de eventos adversos?",
+      "options": [
+        "Suspender o diclofenaco; limitar a sinvastatina a 20mg/dia.",
+        "Suspender a metformina; substituí-la por diclofenaco em dose plena.",
+        "Aumentar a sinvastatina para 80mg/dia; compensa a interação.",
+        "Suspender o anlodipino; manter diclofenaco e sinvastatina sem ajuste."
+      ],
+      "correctIndex": 0,
+      "explanation": "O uso prolongado de AINE em idoso com comorbidades cardiovasculares e renais deve ser reconsiderado; além disso, a associação anlodipino-sinvastatina exige limitar a estatina a 20mg/dia pelo risco de miopatia por inibição do CYP3A4."
+    },
+    {
+      "question": "Osvaldo Ramires, 74 anos, é internado por insuficiência cardíaca descompensada, já em uso domiciliar de enalapril 20mg/dia. Durante a internação, inicia-se losartana 50mg 2x/dia para otimização terapêutica, e a alta mantém as duas prescrições simultaneamente. Qual é o risco dessa prescrição e a conduta corretiva?",
+      "options": [
+        "Duplicação do bloqueio do SRAA; suspender um agente, checar potássio e função renal.",
+        "Hipocalemia por efeito diurético aditivo; repor potássio imediatamente.",
+        "Nenhum risco relevante; os dois fármacos atuam em vias distintas.",
+        "Risco de hipoglicemia grave; suspender ambos e iniciar insulina basal."
+      ],
+      "correctIndex": 0,
+      "explanation": "Enalapril (IECA) e losartana (BRA) bloqueiam o mesmo eixo renina-angiotensina-aldosterona; usados simultaneamente, aumentam o risco de hipercalemia e lesão renal aguda, devendo um dos dois ser suspenso, com monitorização laboratorial."
+    },
+    {
+      "question": "Beatriz Andrade, 45 anos, usa levotiroxina 50mcg/dia em casa e é internada para cirurgia eletiva. Na prescrição de alta, a levotiroxina é transcrita como 150mcg/dia por erro de digitação. Qual é o risco desse erro e a conduta corretiva?",
+      "options": [
+        "Erro de dose dez vezes maior; risco de tireotoxicose, corrigir a prescrição.",
+        "Erro sem relevância clínica; pequenas variações não alteram o quadro.",
+        "Risco de hipotireoidismo grave; aumentar ainda mais a dose na alta.",
+        "Risco de hipoglicemia grave; monitorização glicêmica intensiva por 24h."
+      ],
+      "correctIndex": 0,
+      "explanation": "A transcrição de 150mcg no lugar de 50mcg representa erro de dose dez vezes maior, com risco de tireotoxicose; a prevenção exige conferência da dose de alta contra a lista de medicamentos em uso antes da internação."
+    },
+    {
+      "question": "Iraci Souza, 82 anos, usa diazepam 10mg à noite há 6 anos para insônia, sofreu duas quedas no último mês, uma com fratura de punho, e apresenta confusão matinal, em uso concomitante de sinvastatina, losartana e AAS. Qual conduta de desprescrição é recomendada para o benzodiazepínico?",
+      "options": [
+        "Reduzir 10-25% da dose a cada 1-2 semanas, sem trocar de hipnótico.",
+        "Suspender abruptamente na mesma consulta; o risco de queda é maior.",
+        "Trocar por outro benzodiazepínico de meia-vida curta, dose equivalente.",
+        "Manter a dose atual; associar apenas cálcio e vitamina D."
+      ],
+      "correctIndex": 0,
+      "explanation": "Diazepam crônico em idosos aumenta o risco de quedas, delirium e fraturas; o desmame deve ser gradual (redução de 10-25% da dose a cada 1-2 semanas), sem trocar por outro sedativo-hipnótico, evitando convulsão e efeito rebote."
+    },
+    {
+      "question": "Zulmira Prado, 88 anos, institucionalizada, está em uso de haloperidol 5mg à noite há 8 meses para agitação, sem diagnóstico de esquizofrenia, transtorno bipolar ou indicação paliativa, apresentando rigidez, sonolência diurna e disfagia leve. Qual é a avaliação crítica dessa prescrição e a conduta recomendada?",
+      "options": [
+        "Antipsicótico inapropriado; desprescrever e investigar causas reversíveis.",
+        "Uso plenamente indicado; apenas aumentar a dose de haloperidol.",
+        "Rigidez e sonolência são efeitos esperados e benéficos do tratamento.",
+        "Trocar por benzodiazepínico em dose equivalente, sem investigar a causa."
+      ],
+      "correctIndex": 0,
+      "explanation": "Os critérios de Beers consideram antipsicóticos potencialmente inapropriados em idosos com sintomas comportamentais sem diagnóstico psiquiátrico claro, pelo maior risco de AVC e mortalidade; a conduta é buscar causas reversíveis de agitação e tentar desprescrição gradual."
+    },
+    {
+      "question": "Antônia Ferraz, 81 anos, independente para atividades básicas, procura atendimento com disúria, polaciúria e urgência miccional há 2 dias, afebril, sem dor lombar ou alteração do estado mental, com urina I mostrando piúria e nitrito positivo, sem sinais de sepse. Qual receituário é exigido para o antimicrobiano escolhido, e qual é a primeira escolha terapêutica recomendada?",
+      "options": [
+        "Controle especial em duas vias; nitrofurantoína como primeira escolha.",
+        "Notificação amarela em via única; ciprofloxacino como primeira escolha.",
+        "Receita simples branca; qualquer antibiótico oral sem restrição de classe.",
+        "Notificação azul retida na farmácia; cefalosporina intravenosa de amplo espectro."
+      ],
+      "correctIndex": 0,
+      "explanation": "Antimicrobianos exigem receita de controle especial em duas vias no Brasil; para cistite não complicada em idosa sem sinais de infecção urinária alta, as diretrizes atuais recomendam nitrofurantoína como primeira escolha, evitando fluoroquinolonas pelo maior risco de tendinopatia e efeitos neuropsiquiátricos nessa faixa etária."
+    },
+    {
+      "question": "Norberto Aguiar, 78 anos, tem histórico de infarto agudo do miocárdio há 3 anos e hipertensão controlada com besilato de anlodipino 5mg/dia. Em consulta de rotina, apresenta LDL-colesterol de 145 mg/dL. Qual é a conduta prescritiva mais adequada para o manejo lipídico, considerando a interação medicamentosa envolvida?",
+      "options": [
+        "Estatina em dose máxima tolerada; limitar sinvastatina a 20mg/dia.",
+        "Não iniciar estatina; a idade avançada contraindica a prevenção secundária.",
+        "Sinvastatina 80mg/dia associada ao anlodipino, sem limitar a dose.",
+        "Suspender o anlodipino antes de iniciar qualquer estatina."
+      ],
+      "correctIndex": 0,
+      "explanation": "Em prevenção secundária após evento coronariano, a terapia com estatina de intensidade máxima tolerada deve ser mantida independentemente da idade; como o anlodipino inibe o CYP3A4 e aumenta a exposição à sinvastatina, essa não deve ultrapassar 20mg/dia quando associada."
+    }
+  ]
+}

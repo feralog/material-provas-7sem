@@ -34,6 +34,7 @@ NOMES = {
     "SAI": "Saúde do Adulto e do Idoso",
     "CIR": "Cirurgia",
     "MFC": "Medicina de Família e Comunidade",
+    "Práticas": "Práticas Profissionais",
 }
 
 

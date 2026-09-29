@@ -1,0 +1,418 @@
+{
+  "titulo": "Otites",
+  "eyebrow": "Otorrinolaringologia · Orelha Média",
+  "subtitulo": "Da orelha externa ao colesteatoma: diagnóstico e conduta",
+  "intro": "Otite externa e suas formas graves, otite média aguda com os critérios de antibiótico versus observação, otite média com efusão e a indicação de tubo de ventilação, otite média crônica, tipos de perfuração timpânica, colesteatoma e as complicações intratemporais e intracranianas.",
+  "questoes": [
+    {
+      "question": "A otite externa aguda tem como mecanismo inicial:",
+      "options": [
+        "Rompimento da barreira protetora da pele do meato acústico externo",
+        "Disfunção da tuba auditiva com pressão negativa na orelha média",
+        "Erosão óssea causada por acúmulo de queratina na região do ático",
+        "Calcificação da membrana timpânica após infecções de repetição"
+      ],
+      "correctIndex": 0,
+      "explanation": "A pele do meato acústico externo funciona como barreira mecânica e química. Quando essa barreira se rompe — por água retida, trauma de cotonete ou coçadura — as bactérias colonizam e infectam a derme. Daí a concentração de casos no verão, após banho de piscina ou mar."
+    },
+    {
+      "question": "O agente bacteriano mais associado à otite externa é:",
+      "options": [
+        "Pseudomonas aeruginosa",
+        "Streptococcus pneumoniae",
+        "Haemophilus influenzae",
+        "Moraxella catarrhalis"
+      ],
+      "correctIndex": 0,
+      "explanation": "Pseudomonas aeruginosa domina a bacteriologia da orelha externa, seguida de Proteus mirabilis, estafilococos e outros bacilos gram-negativos. É também o agente da forma maligna. Streptococcus pneumoniae e Haemophilus influenzae são germes de orelha média, não de conduto."
+    },
+    {
+      "question": "Adulto com otalgia que piora à palpação do trago, prurido e otorreia, uma semana após frequentar piscina. O diagnóstico mais provável é:",
+      "options": [
+        "Otite externa aguda",
+        "Otite média aguda",
+        "Otite média serosa",
+        "Pericondrite auricular"
+      ],
+      "correctIndex": 0,
+      "explanation": "A dor desencadeada pela palpação do trago ou pela tração do pavilhão é o sinal semiológico que localiza a infecção no meato acústico externo, e não na orelha média. Prurido, otorreia e contato prévio com água completam o quadro, cuja incidência sobe no verão."
+    },
+    {
+      "question": "O tratamento da otite externa aguda não complicada baseia-se em:",
+      "options": [
+        "Limpeza do conduto, antibiótico tópico e analgesia",
+        "Amoxicilina por via oral durante dez a quatorze dias",
+        "Antibiótico endovenoso com debridamento cirúrgico",
+        "Corticoide sistêmico em dose alta por sete dias"
+      ],
+      "correctIndex": 0,
+      "explanation": "A via tópica entrega concentração muito alta no local da infecção e evita exposição sistêmica; o antibiótico oral fica reservado a situações raras. A limpeza e a microaspiração removem debris que bloqueariam a medicação, e tratamentos caseiros devem ser desencorajados."
+    },
+    {
+      "question": "A otite externa maligna acomete de forma característica:",
+      "options": [
+        "Diabéticos e imunodeprimidos",
+        "Lactentes de seis a onze meses",
+        "Nadadores jovens e saudáveis",
+        "Idosos com rolha de cerume"
+      ],
+      "correctIndex": 0,
+      "explanation": "A forma maligna é uma otite externa aguda que evolui de maneira desfavorável em terreno de imunidade comprometida, sobretudo no diabético. O agente é Pseudomonas aeruginosa, com comportamento agressivo e invasão para além da pele do conduto."
+    },
+    {
+      "question": "Na otite externa maligna, a tomografia confirma o diagnóstico ao demonstrar:",
+      "options": [
+        "Osteomielite da base do crânio, com mortalidade de 20 a 25%",
+        "Velamento das células da mastoide, com resolução espontânea",
+        "Erosão da cadeia ossicular, com perda condutiva de grau leve",
+        "Coleção no ático timpânico, tratada com antibiótico tópico"
+      ],
+      "correctIndex": 0,
+      "explanation": "A infecção ultrapassa a pele e atinge o osso, configurando osteomielite da base do crânio. Isso explica a otalgia desproporcional, a otorreia purulenta, a obstrução do meato e o risco de paralisia de pares cranianos. É emergência: antibiótico endovenoso, debridamento e cuidados intensivos, com mortalidade de 20 a 25%."
+    },
+    {
+      "question": "No oto-hematoma o sangue se coleta entre pericôndrio e cartilagem, e a drenagem é obrigatória para evitar:",
+      "options": [
+        "Pericondrite, com deformidade definitiva do pavilhão",
+        "Perfuração timpânica marginal, com otorreia recorrente",
+        "Paralisia facial periférica por compressão do nervo",
+        "Estenose cicatricial do meato acústico externo"
+      ],
+      "correctIndex": 0,
+      "explanation": "O derrame entre pericôndrio e cartilagem separa a cartilagem de sua fonte de nutrição e funciona como meio de cultura. Sem drenagem, curativo compressivo e antibiótico sistêmico, evolui para pericondrite e deformidade permanente — lesão frequente em lutadores."
+    },
+    {
+      "question": "A síndrome de Ramsay Hunt define-se pela tríade de:",
+      "options": [
+        "Vesículas no pavilhão, otalgia e paralisia facial periférica",
+        "Otorreia fétida, vertigem e paralisia facial periférica",
+        "Vesículas no pavilhão, febre alta e disacusia condutiva",
+        "Otalgia, abaulamento timpânico e paralisia facial central"
+      ],
+      "correctIndex": 0,
+      "explanation": "A reativação do vírus varicela-zóster no gânglio geniculado do nervo facial produz lesões vesiculares no pavilhão auricular, otalgia em queimação e paralisia facial periférica. O tratamento associa antiviral 3 g/dia por 7 dias, prednisolona 60 mg/dia por 7 dias e proteção ocular contra ceratite de exposição."
+    },
+    {
+      "question": "A otite média aguda é rara no adulto porque, com o crescimento, a tuba auditiva:",
+      "options": [
+        "Fica mais longa e mais inclinada, com 38 mm e 45 graus",
+        "Fica mais curta e mais horizontal, com 18 mm e 10 graus",
+        "Perde a porção cartilaginosa e torna-se inteiramente óssea",
+        "Passa a permanecer aberta, dispensando a deglutição"
+      ],
+      "correctIndex": 0,
+      "explanation": "Na criança a tuba mede 18 a 20 mm e forma apenas 10 graus com a horizontal, o que facilita o refluxo de secreção da nasofaringe para a orelha média. No adulto alcança 38 mm e 45 graus, e a gravidade passa a favorecer a drenagem — daí a raridade do quadro nessa faixa."
+    },
+    {
+      "question": "Entre as bactérias causadoras de otite média aguda, a mais frequente é:",
+      "options": [
+        "Streptococcus pneumoniae",
+        "Pseudomonas aeruginosa",
+        "Staphylococcus aureus",
+        "Klebsiella pneumoniae"
+      ],
+      "correctIndex": 0,
+      "explanation": "A maioria dos episódios de otite média aguda é viral, mas entre os bacterianos Streptococcus pneumoniae é o principal agente, seguido de Haemophilus influenzae e Streptococcus pyogenes. Pseudomonas é germe de orelha externa e não figura entre os agentes habituais de orelha média."
+    },
+    {
+      "question": "A otite média aguda é descrita como a principal complicação de:",
+      "options": [
+        "Resfriado comum, com maior incidência no inverno",
+        "Amigdalite bacteriana, com maior incidência no verão",
+        "Rinite alérgica sazonal, com pico na primavera",
+        "Refluxo gastroesofágico, sem sazonalidade definida"
+      ],
+      "correctIndex": 0,
+      "explanation": "A infecção viral de vias aéreas superiores gera edema e disfunção da tuba auditiva, pressão negativa na orelha média, acúmulo de secreção e colonização bacteriana. Por isso a curva de incidência acompanha a dos resfriados, com pico no inverno."
+    },
+    {
+      "question": "A otoscopia a seguir mostra o achado de maior peso no diagnóstico de otite média aguda. Qual é ele?",
+      "options": [
+        "Abaulamento da membrana timpânica, com hiperemia",
+        "Retração da membrana timpânica, com nível líquido",
+        "Perfuração marginal, com descamação perlácea",
+        "Placas calcificadas esbranquiçadas na pars tensa"
+      ],
+      "correctIndex": 0,
+      "explanation": "O abaulamento traduz coleção sob pressão na orelha média e é o principal achado diagnóstico. Acompanha-se de hiperemia, perda do brilho, alteração da transparência e aumento da trama vascular. Retração com nível líquido, sem dor, aponta para efusão e não para infecção aguda.",
+      "image": "pg29",
+      "imageCaption": "Otoscopias na otite média aguda, com membrana timpânica normal à direita"
+    },
+    {
+      "question": "Lactente de 4 meses com otite média aguda unilateral, sem otorreia. A conduta indicada é:",
+      "options": [
+        "Antibiótico via oral, obrigatório abaixo de 6 meses",
+        "Observação por 48 a 72 horas, com analgesia apenas",
+        "Miringotomia com tubo de ventilação já na consulta",
+        "Antibiótico tópico com ciprofloxacina por dez dias"
+      ],
+      "correctIndex": 0,
+      "explanation": "Abaixo de 6 meses todo diagnóstico de otite média aguda recebe antibiótico via oral, independentemente de lateralidade ou de sinais de gravidade, pela imaturidade imune e pelo risco de complicação. A primeira escolha é a amoxicilina."
+    },
+    {
+      "question": "Criança de 14 meses com otite média aguda bilateral, sem otorreia nem sinais de gravidade. A conduta é:",
+      "options": [
+        "Antibiótico via oral, porque o quadro é bilateral",
+        "Observação por 48 a 72 horas, com reavaliação",
+        "Antibiótico via oral só se a febre passar de 39 °C",
+        "Corticoide oral por cinco dias, com reavaliação"
+      ],
+      "correctIndex": 0,
+      "explanation": "Entre 6 e 23 meses a lateralidade decide: o quadro bilateral recebe antibiótico, enquanto o unilateral sem otorreia e sem sinais graves pode ser observado por 48 a 72 horas. A partir dos 2 anos a observação passa a valer para uni ou bilateral."
+    },
+    {
+      "question": "Criança de 4 anos com otite média aguda e otorreia purulenta. A conduta correta é:",
+      "options": [
+        "Antibiótico via oral, indicado sempre que há otorreia",
+        "Observação por 48 a 72 horas, já que tem mais de 2 anos",
+        "Antibiótico via oral apenas se o quadro for bilateral",
+        "Apenas analgesia, pois a otorreia alivia a otalgia"
+      ],
+      "correctIndex": 0,
+      "explanation": "A otorreia significa perfuração espontânea sob pressão e conta como sinal de gravidade: mesmo acima dos 2 anos ela anula a conduta expectante e obriga antibiótico via oral. A dor de fato melhora com a drenagem, mas isso não substitui o tratamento."
+    },
+    {
+      "question": "Prefere-se amoxicilina com clavulanato à amoxicilina isolada quando há:",
+      "options": [
+        "Conjuntivite purulenta associada ao quadro otológico",
+        "Febre acima de 38 graus nas primeiras 24 horas de dor",
+        "Acometimento bilateral em criança maior de dois anos",
+        "Otorreia mucoide após perfuração espontânea do tímpano"
+      ],
+      "correctIndex": 0,
+      "explanation": "A associação cobre germes produtores de betalactamase e está indicada em três situações: uso de amoxicilina nos últimos 30 dias, conjuntivite purulenta associada — que sugere Haemophilus influenzae — e otite média aguda recorrente sem resposta prévia à amoxicilina."
+    },
+    {
+      "question": "São sinais de gravidade que contraindicam a conduta expectante na otite média aguda:",
+      "options": [
+        "Otalgia intensa ou acima de 48 horas, febre ≥ 39 °C e toxemia",
+        "Prurido no conduto, descamação da pele e meato obliterado",
+        "Otorreia fétida, hipoacusia flutuante e vertigem rotatória",
+        "Plenitude auricular, déficit de atenção e atraso de fala"
+      ],
+      "correctIndex": 0,
+      "explanation": "Contam como sinais de gravidade a otalgia intensa ou com mais de 48 horas de duração, a febre igual ou superior a 39 °C, a otorreia e a toxemia. Sua presença retira a criança do grupo elegível para observação de 48 a 72 horas e obriga antibiótico."
+    },
+    {
+      "question": "Otite média aguda recorrente é definida por:",
+      "options": [
+        "Três episódios em 6 meses ou quatro em 12 meses",
+        "Dois episódios em 6 meses ou três em 12 meses",
+        "Quatro episódios em 6 meses ou seis em 12 meses",
+        "Efusão mantida por mais de três meses após o quadro"
+      ],
+      "correctIndex": 0,
+      "explanation": "A contagem é de 3 ou mais episódios em 6 meses, ou 4 ou mais em 12 meses. O manejo é controlar fatores de risco — creche, tabagismo passivo, chupeta, hiperplasia de adenoide — e considerar estimulantes da imunidade local."
+    },
+    {
+      "question": "O que distingue a otite média com efusão da otite média aguda?",
+      "options": [
+        "Há líquido na orelha média sem febre, otalgia ou otorreia",
+        "Há abaulamento timpânico com hiperemia e dor intensa",
+        "Há perfuração da membrana timpânica com otorreia fétida",
+        "Há erosão ossicular com disacusia neurossensorial grave"
+      ],
+      "correctIndex": 0,
+      "explanation": "Na efusão existe secreção visível à otoscopia, mas faltam os sinais de infecção aguda: sem febre, sem dor e sem otorreia. O mecanismo é disfunção ou obstrução crônica da tuba auditiva, e a queixa dominante é auditiva — é causa frequente de disacusia na infância."
+    },
+    {
+      "question": "Entre as condições que mais predispõem à otite média com efusão estão:",
+      "options": [
+        "Fissura palatina, síndrome de Down e hiperplasia de adenoide",
+        "Otosclerose, doença de Ménière e neurinoma do acústico",
+        "Rinite atrófica, desvio de septo e pólipo antrocoanal",
+        "Asma controlada, dermatite atópica e alergia alimentar"
+      ],
+      "correctIndex": 0,
+      "explanation": "Alterações craniofaciais que comprometem a geometria e a musculatura tubária — fissura palatina, síndrome de Down, Pierre Robin, Treacher Collins — e a hiperplasia de adenoide obstruem ou desorganizam a tuba auditiva. Cerca de 90% das crianças têm ao menos um episódio até o 4º ano de vida."
+    },
+    {
+      "question": "Classifica-se como crônica a otite média com efusão quando o derrame persiste por:",
+      "options": [
+        "Três meses ou mais",
+        "Três semanas ou mais",
+        "Seis semanas ou mais",
+        "Doze meses ou mais"
+      ],
+      "correctIndex": 0,
+      "explanation": "A efusão é aguda abaixo de 3 semanas, subaguda entre 3 semanas e 3 meses, e crônica a partir de 3 meses. Esse marco de 3 meses é o que dispara a avaliação auditiva formal e abre a discussão sobre miringotomia com tubo de ventilação."
+    },
+    {
+      "question": "O par de exames a seguir corresponde ao achado audiológico típico da otite média com efusão:",
+      "options": [
+        "Disacusia condutiva com timpanograma tipo B",
+        "Disacusia neurossensorial com timpanograma tipo A",
+        "Disacusia mista com timpanograma tipo C raso",
+        "Audição normal com reflexos estapedianos presentes"
+      ],
+      "correctIndex": 0,
+      "explanation": "A secreção na caixa dificulta a transmissão do som do meio aéreo para o meio líquido: a via óssea permanece normal e a via aérea cai, formando o gap aéreo-ósseo da disacusia condutiva. A curva plana do timpanograma tipo B confirma orelha média preenchida e imóvel.",
+      "image": "pg37",
+      "imageCaption": "Audiometria tonal e timpanometria na otite média com efusão"
+    },
+    {
+      "question": "A conduta inicial diante de otite média com efusão recém-diagnosticada é:",
+      "options": [
+        "Observar a efusão por três meses, pela resolução espontânea",
+        "Prescrever antibiótico e corticoide orais na primeira consulta",
+        "Indicar tubo de ventilação já na primeira avaliação otológica",
+        "Usar anti-histamínico e descongestionante nasal continuamente"
+      ],
+      "correctIndex": 0,
+      "explanation": "A taxa de resolução espontânea é alta, o que sustenta o watchful waiting por 3 meses, com autoinflação tubária em crianças colaborativas e avaliação auditiva conforme o quadro clínico. Antibiótico, corticoide, anti-histamínico e descongestionante não têm uso de rotina."
+    },
+    {
+      "question": "Indica-se tratamento cirúrgico na otite média com efusão quando há:",
+      "options": [
+        "Efusão bilateral por três meses ou mais, com perda auditiva",
+        "Primeiro episódio de efusão unilateral, sem queixa auditiva",
+        "Efusão de três semanas acompanhada de otalgia e febre alta",
+        "Otorreia fétida com descamação perlácea no ático timpânico"
+      ],
+      "correctIndex": 0,
+      "explanation": "A partir de 3 meses de efusão entram na indicação cirúrgica a perda auditiva com efusão bilateral, os sintomas atribuíveis à efusão (dificuldade escolar, desconforto otológico, queda de qualidade de vida), a retração ou atelectasia da membrana e a otite recorrente com efusão entre os episódios."
+    },
+    {
+      "question": "O procedimento ilustrado a seguir é o tratamento de escolha da efusão persistente. Trata-se de:",
+      "options": [
+        "Miringotomia com colocação de tubo de ventilação",
+        "Timpanoplastia com enxerto sobre a perfuração",
+        "Mastoidectomia com cavidade aberta e meatoplastia",
+        "Adenoidectomia isolada por via transoral"
+      ],
+      "correctIndex": 0,
+      "explanation": "A incisão na membrana drena a efusão e o tubo mantém a orelha média aerada enquanto a tuba não recupera a função. A avaliação audiológica pré-operatória é obrigatória, e a adenoidectomia é somada quando há hiperplasia adenoideana com obstrução tubária.",
+      "image": "pg40",
+      "imageCaption": "Miringotomia e inserção do tubo de ventilação"
+    },
+    {
+      "question": "O esquema a seguir classifica as perfurações da membrana timpânica em três tipos, que são:",
+      "options": [
+        "Central, marginal e atical",
+        "Central, anterior e inferior",
+        "Radial, marginal e concêntrica",
+        "Atical, subtotal e puntiforme"
+      ],
+      "correctIndex": 0,
+      "explanation": "A perfuração central respeita o ânulo fibroso em toda a circunferência; a marginal alcança o ânulo; a atical situa-se na pars flácida, porção superior da membrana. A distinção não é acadêmica: define o risco de migração epitelial e de colesteatoma.",
+      "image": "pg42",
+      "imageCaption": "Perfurações central, marginal e atical da membrana timpânica"
+    },
+    {
+      "question": "Nas otoscopias a seguir, quais perfurações exigem vigilância pelo risco de colesteatoma?",
+      "options": [
+        "A marginal e a atical, por contato do epitélio com o ânulo",
+        "A central ampla, por expor maior área da caixa timpânica",
+        "A central puntiforme, por dificultar a drenagem de secreção",
+        "Todas igualmente, pois o risco depende só do tamanho"
+      ],
+      "correctIndex": 0,
+      "explanation": "Quando a perfuração alcança o ânulo (marginal) ou se instala na pars flácida (atical), o epitélio escamoso do conduto migra para dentro da orelha média e passa a acumular queratina — é a forma migratória de colesteatoma, a mais comum. A perfuração central seca tem prognóstico bem mais benigno.",
+      "image": "pg43",
+      "imageCaption": "Otoscopias de perfurações central, marginal e atical"
+    },
+    {
+      "question": "São causas de otite média crônica simples com perfuração timpânica:",
+      "options": [
+        "Trauma por cotonete, barotrauma e infecção não cicatrizada",
+        "Otosclerose, presbiacusia e exposição a ruído ocupacional",
+        "Rolha de cerume, corpo estranho e dermatite seborreica",
+        "Doença de Ménière, labirintite e neurinoma do acústico"
+      ],
+      "correctIndex": 0,
+      "explanation": "A perfuração crônica resulta de trauma direto (cotonete, agressão), de barotrauma no mergulho, de infecção de orelha média que não cicatrizou ou de disfunção tubária mantida. A audição cai de forma condutiva, tanto mais quanto maior o acometimento da membrana."
+    },
+    {
+      "question": "Nas otorreias da otite média crônica simples, o antibiótico tópico de escolha é:",
+      "options": [
+        "Ciprofloxacina, com orientação de evitar entrada de água",
+        "Neomicina, com lavagem do conduto com água morna",
+        "Amoxicilina, com corticoide tópico associado por dez dias",
+        "Gentamicina, com tampão oclusivo de uso permanente"
+      ],
+      "correctIndex": 0,
+      "explanation": "A ciprofloxacina tópica cobre bem os germes envolvidos e não é ototóxica, o que importa diante de uma membrana aberta. A prevenção pesa tanto quanto a droga: não manipular a orelha e impedir a entrada de água, gatilho habitual das otorreias, ao lado das infecções de vias aéreas."
+    },
+    {
+      "question": "A cirurgia destinada a fechar uma perfuração timpânica crônica é a:",
+      "options": [
+        "Timpanoplastia, com enxerto no local da perfuração",
+        "Miringotomia, com tubo de ventilação transtimpânico",
+        "Mastoidectomia, com exenteração das células aéreas",
+        "Estapedotomia, com prótese sobre a platina do estribo"
+      ],
+      "correctIndex": 0,
+      "explanation": "A timpanoplastia coloca um enxerto sobre a perfuração e, quando necessário, reconstrói a cadeia ossicular. A audiometria pré-operatória documenta o gap condutivo a ser corrigido, e a tomografia avalia o comprometimento da orelha média antes da cirurgia."
+    },
+    {
+      "question": "Define-se otite média crônica supurativa pela supuração persistente por mais de:",
+      "options": [
+        "Seis semanas",
+        "Três semanas",
+        "Três meses",
+        "Seis meses"
+      ],
+      "correctIndex": 0,
+      "explanation": "O limite é de 6 semanas de supuração contínua, acompanhada de alteração patológica da caixa timpânica com hiperatividade secretora da mucosa. A dor é incomum, porque não há pressão retida. O tratamento cirúrgico é a timpanoplastia com mastoidectomia de cavidade fechada."
+    },
+    {
+      "question": "O colesteatoma da orelha média é formado por:",
+      "options": [
+        "Epitélio escamoso estratificado com acúmulo de queratina",
+        "Tecido de granulação vascular sobre a mucosa inflamada",
+        "Placas de cálcio depositadas na camada média da membrana",
+        "Muco espesso retido por disfunção crônica da tuba auditiva"
+      ],
+      "correctIndex": 0,
+      "explanation": "É um saco de epitélio escamoso estratificado que segue a arquitetura da caixa timpânica, do ático e da mastoide, acumulando queratina. A massa infecta, o epitélio se degrada e provoca erosão óssea, mudando a arquitetura da orelha média — comportamento destrutivo, ainda que não seja neoplasia."
+    },
+    {
+      "question": "Paciente com otorreia amarelada, espessa e muito fétida; a otoscopia a seguir mostra o achado típico. O diagnóstico é:",
+      "options": [
+        "Otite média crônica colesteatomatosa",
+        "Otite média com efusão tipo glue ear",
+        "Otite externa crônica descamativa",
+        "Timpanosclerose com neotímpano"
+      ],
+      "correctIndex": 0,
+      "explanation": "Descamação perlácea, material queratínico e retração da pars flácida, com perfuração ampla ou póstero-marginal supurando, compõem o quadro. A otorreia é indolor e muito fétida, e a hipoacusia não guarda proporção com o tamanho da lesão. Tontura indica erosão do labirinto.",
+      "image": "pg55",
+      "imageCaption": "Otoscopia no colesteatoma: retração atical e descamação perlácea"
+    },
+    {
+      "question": "O tratamento da otite média crônica colesteatomatosa é:",
+      "options": [
+        "Mastoidectomia, com retirada de todo o tecido doente",
+        "Antibiótico tópico prolongado, sem indicação cirúrgica",
+        "Miringotomia com tubo de ventilação bilateral",
+        "Corticoide sistêmico com autoinflação tubária diária"
+      ],
+      "correctIndex": 0,
+      "explanation": "Nenhum antibiótico remove a matriz de queratina: só a cirurgia resolve. A mastoidectomia retira toda a porção óssea acometida, e o objetivo primário é uma orelha seca e livre de doença — a recuperação funcional da audição é meta secundária."
+    },
+    {
+      "question": "Entre as complicações das otites médias, é classificada como intracraniana a:",
+      "options": [
+        "Tromboflebite do seio sigmoide",
+        "Fístula labiríntica ativa",
+        "Paralisia facial periférica",
+        "Abscesso mastóideo agudo"
+      ],
+      "correctIndex": 0,
+      "explanation": "As complicações intratemporais permanecem no osso temporal: mastoidite, abscessos mastóideos, labirintite, fístula labiríntica, fístula retroauricular e paralisia facial. As intracranianas atravessam para dentro do crânio: meningite, tromboflebite do seio sigmoide e abscessos cerebral, subdural e cerebelar."
+    },
+    {
+      "question": "A criança a seguir tem o pavilhão auricular deslocado para frente e para fora, com apagamento do sulco retroauricular. O diagnóstico é:",
+      "options": [
+        "Mastoidite aguda",
+        "Pericondrite aguda",
+        "Oto-hematoma agudo",
+        "Parotidite aguda"
+      ],
+      "correctIndex": 0,
+      "explanation": "Edema, eritema e empastamento retroauriculares empurram o pavilhão para frente e para fora — o sinal clássico da mastoidite, a complicação intratemporal mais lembrada das otites médias. Exige antibiótico endovenoso e avaliação cirúrgica imediata.",
+      "image": "pg58",
+      "imageCaption": "Mastoidite: deslocamento anterior do pavilhão auricular"
+    }
+  ]
+}

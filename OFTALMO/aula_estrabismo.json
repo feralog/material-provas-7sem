@@ -1,0 +1,376 @@
+{
+  "titulo": "Estrabismo",
+  "eyebrow": "Oftalmologia · Motilidade Ocular",
+  "subtitulo": "Do reflexo corneano ao músculo operado, desvio por desvio",
+  "intro": "Propedêutica do alinhamento ocular (Hirschberg, ângulo kappa, cover-test e Krimsky), as formas clínicas de esotropia e exotropia, os desvios paralíticos de III, IV e VI nervos e as técnicas cirúrgicas básicas — com a ambliopia como fio condutor de toda a urgência pediátrica.",
+  "questoes": [
+    {
+      "question": "O estrabismo é definido como qualquer desvio do alinhamento ocular. Quais são as três formas de apresentação desse desvio?",
+      "options": [
+        "Constante, intermitente ou latente",
+        "Constante, cicatricial ou refrativo",
+        "Vertical, cicatricial ou lacrimal",
+        "Intermitente, refrativo ou lacrimal"
+      ],
+      "correctIndex": 0,
+      "explanation": "O desvio pode ser constante (presente o tempo todo), intermitente (aparece em momentos de fadiga, doença ou desatenção) ou latente (só se manifesta quando a fusão é quebrada por uma manobra dissociante, como a oclusão). Essa tríade organiza toda a propedêutica do alinhamento ocular."
+    },
+    {
+      "question": "Um desvio ocular que permanece controlado pela fusão no dia a dia e só se manifesta quando um dos olhos é ocluído recebe qual denominação?",
+      "options": [
+        "Heteroforia",
+        "Heterotropia",
+        "Ortotropia",
+        "Ciclotropia"
+      ],
+      "correctIndex": 0,
+      "explanation": "Foria é o desvio latente: a fusão binocular mantém os olhos alinhados e o desvio só aparece quando essa fusão é dissociada pela oclusão. Tropia é o desvio manifesto, visível sem qualquer manobra. Ortotropia e ortoforia designam o alinhamento normal."
+    },
+    {
+      "question": "Qual instrumento é utilizado no teste de Hirschberg e o que exatamente se observa nele?",
+      "options": [
+        "Uma lanterna, observando o reflexo luminoso sobre as córneas",
+        "Um oclusor, observando o movimento de refixação dos olhos",
+        "Um prisma, observando a neutralização do olho desviado",
+        "Um sinoptóforo, observando o grau de fusão das imagens"
+      ],
+      "correctIndex": 0,
+      "explanation": "O Hirschberg usa apenas uma lanterna projetada de frente para o paciente: compara-se a posição do reflexo luminoso sobre cada córnea. Reflexos simétricos e centrados sugerem alinhamento; reflexo descentrado em um dos olhos indica desvio. É o teste mais rápido e não exige cooperação."
+    },
+    {
+      "question": "O ângulo kappa, avaliado junto com o reflexo corneano, corresponde ao ângulo formado entre quais eixos do olho?",
+      "options": [
+        "O eixo anatômico e o eixo visual real do olho",
+        "O eixo anatômico e o plano da íris do olho",
+        "O eixo visual real e o eixo da fenda palpebral",
+        "O eixo visual real e o plano do limbo corneano"
+      ],
+      "correctIndex": 0,
+      "explanation": "O ângulo kappa é o ângulo entre o eixo anatômico do globo e o eixo visual real, que passa pela fóvea. Como a fóvea costuma estar levemente temporal ao polo posterior, um pequeno kappa positivo é fisiológico. Quando é acentuado, desloca o reflexo corneano e simula um desvio que não existe."
+    },
+    {
+      "question": "Na avaliação do reflexo corneano com lanterna, o reflexo aparece deslocado medialmente (nasalmente) em ambos os olhos, e o cover-test não mostra movimento algum. Como se interpreta esse achado?",
+      "options": [
+        "Ângulo kappa positivo, com os olhos realmente alinhados",
+        "Ângulo kappa negativo, com os olhos realmente alinhados",
+        "Esotropia bilateral, com os olhos realmente desalinhados",
+        "Hipertropia bilateral, com os olhos realmente desviados"
+      ],
+      "correctIndex": 0,
+      "explanation": "Reflexo deslocado medialmente define o ângulo kappa positivo; deslocado lateralmente, o kappa negativo. Como o cover-test não revela movimento de refixação, não há desvio verdadeiro: o kappa positivo acentuado simula uma exotropia (pseudoexotropia). A distinção depende justamente da associação entre reflexo e cover-test.",
+      "image": "s06i1",
+      "imageCaption": "Reflexo corneano no olhar de frente: normal e com ângulo kappa positivo"
+    },
+    {
+      "question": "Lactente trazido por 'olhos tortos'; há epicanto amplo e base nasal larga, os reflexos corneanos estão centrados e o cover-test não mostra movimento. Qual a conduta?",
+      "options": [
+        "Tranquilizar os pais, pois trata-se de pseudoestrabismo",
+        "Indicar cirurgia precoce dos músculos retos mediais",
+        "Prescrever oclusão total alternada por seis meses",
+        "Iniciar correção óptica com lentes esferopositivas"
+      ],
+      "correctIndex": 0,
+      "explanation": "O epicanto amplo cobre a esclera nasal e cria a ilusão de convergência — é a pseudoesotropia, armadilha clássica do primeiro ano de vida. Reflexos corneanos centrados e simétricos somados a um cover-test sem movimento afastam desvio verdadeiro. Nenhum tratamento é necessário, apenas acompanhamento."
+    },
+    {
+      "question": "Durante o cover-test, ao cobrir um dos olhos o olho contralateral executa um movimento de refixação. O que esse achado demonstra?",
+      "options": [
+        "Existe uma tropia, ou seja, um desvio manifesto",
+        "Existe uma foria, ou seja, um desvio latente puro",
+        "Existe fusão normal, com alinhamento preservado",
+        "Existe ambliopia profunda do olho que foi coberto"
+      ],
+      "correctIndex": 0,
+      "explanation": "Se o olho descoberto precisa se mover para assumir a fixação, é porque ele não estava fixando antes: havia um desvio manifesto, uma tropia. O sentido do movimento revela o tipo — o olho que vem de fora para dentro estava em exotropia; o que vem de dentro para fora estava em esotropia."
+    },
+    {
+      "question": "Qual manobra permite medir o desvio total do paciente, somando a parcela manifesta àquela que a fusão habitualmente controla?",
+      "options": [
+        "O cover-test alternado, que impede a refusão dos olhos",
+        "O cover-uncover simples, que preserva a refusão binocular",
+        "O teste de Hirschberg feito com a lanterna a um metro",
+        "A observação desarmada do paciente em posição de repouso"
+      ],
+      "correctIndex": 0,
+      "explanation": "No cover alternado o oclusor passa de um olho ao outro sem permitir que os dois vejam juntos, impedindo a refusão. Com isso se soma a tropia à foria e se obtém o desvio máximo. O cover-uncover, ao devolver a visão binocular a cada etapa, mede apenas a parcela manifesta."
+    },
+    {
+      "question": "Em uma criança pequena que não coopera com a oclusão, qual método quantifica o desvio usando prismas sobre o reflexo luminoso?",
+      "options": [
+        "Krimsky, com prismas até simetrizar os reflexos corneanos",
+        "Bielschowsky, com inclinação da cabeça para cada um dos ombros",
+        "Sinoptóforo, com apresentação separada de duas imagens distintas",
+        "Retinoscopia, com fenda luminosa e réguas de lentes esféricas"
+      ],
+      "correctIndex": 0,
+      "explanation": "No Krimsky interpõem-se prismas de potência crescente até que os reflexos corneanos fiquem simétricos nas duas córneas; a potência necessária corresponde ao desvio. Como dispensa a fixação sustentada e a oclusão, é o método de escolha em bebês e crianças que não colaboram com o cover-test."
+    },
+    {
+      "question": "A esotropia congênita, por definição, é o desvio convergente que se instala em qual período da vida?",
+      "options": [
+        "Nos primeiros meses de vida, geralmente até os 6 meses",
+        "Entre o primeiro e o terceiro ano de vida da criança",
+        "Depois dos seis anos, junto com a alfabetização escolar",
+        "Na adolescência, acompanhando o estirão de crescimento"
+      ],
+      "correctIndex": 0,
+      "explanation": "A esotropia congênita surge nos primeiros meses de vida, em geral até os 6 meses. Antes de firmar o diagnóstico é preciso diferenciá-la da incoordenação transitória dos movimentos oculares por imaturidade nervosa, comum nas primeiras semanas e que se resolve espontaneamente."
+    },
+    {
+      "question": "Criança com desvio convergente iniciado antes dos 4 meses, ângulo acima de 35 dioptrias prismáticas, fixação em adução com torcicolo, limitação bilateral da abdução e nistagmo sacádico. Qual o quadro?",
+      "options": [
+        "Síndrome de Ciancia",
+        "Síndrome de Gradenigo",
+        "Síndrome de Duane",
+        "Síndrome de Brown"
+      ],
+      "correctIndex": 0,
+      "explanation": "A síndrome de Ciancia é a forma de esotropia congênita de surgimento muito precoce, com ângulo grande (acima de 35 dioptrias prismáticas), limitação bilateral da abdução e nistagmo sacádico. A criança fixa em adução e gira a cabeça para o lado do olho fixador, o que gera o torcicolo característico.",
+      "image": "s18i1",
+      "imageCaption": "A mesma criança fixando com um olho e depois com o outro, sempre em adução"
+    },
+    {
+      "question": "Qual é a sequência correta de tratamento na esotropia congênita de grande ângulo?",
+      "options": [
+        "Tratar a ambliopia com oclusão e alinhar cirurgicamente cedo",
+        "Tratar a ambliopia com oclusão e adiar a cirurgia até os 8 anos",
+        "Prescrever óculos hipermetrópicos e dispensar qualquer cirurgia",
+        "Aplicar toxina botulínica isolada e dispensar a oclusão ocular"
+      ],
+      "correctIndex": 0,
+      "explanation": "Primeiro se trata a ambliopia, com oclusão total alternada para igualar a visão dos dois olhos; só depois se opera. O alinhamento cirúrgico precoce é o objetivo porque a chance de desenvolver alguma binocularidade depende de o desvio ser corrigido enquanto o sistema visual ainda é plástico."
+    },
+    {
+      "question": "Qual perfil clínico caracteriza a esotropia essencial?",
+      "options": [
+        "Surge entre 1 e 3 anos, costuma ser alternante e cursa com ambliopia",
+        "Surge antes dos 4 meses, é sempre unilateral e nunca cursa com ambliopia",
+        "Surge depois dos 12 anos, é sempre alternante e cursa com diplopia fixa",
+        "Surge já ao nascimento, é sempre unilateral e cursa com nistagmo fixo"
+      ],
+      "correctIndex": 0,
+      "explanation": "A esotropia essencial aparece entre 1 e 3 anos, podendo se estender até os 6 ou 7 anos. O início pode ser súbito, frequentemente após um episódio de estresse ou doença, ou insidioso e progressivo. Costuma ser alternante, embora possa haver olho preferido, e a ambliopia é comum e de grau variável."
+    },
+    {
+      "question": "Qual é o mecanismo fisiopatológico da esotropia acomodativa?",
+      "options": [
+        "O esforço acomodativo para focalizar desencadeia a convergência",
+        "A fraqueza do músculo reto lateral impede a abdução completa",
+        "A fibrose congênita do músculo reto medial fixa o olho em adução",
+        "A perda da estereopsia central desorganiza a fusão binocular fina"
+      ],
+      "correctIndex": 0,
+      "explanation": "Acomodação e convergência são reflexos acoplados. Na criança hipermetrope não corrigida, o esforço acomodativo necessário para focalizar arrasta consigo convergência excessiva e produz o desvio. O quadro costuma surgir entre 2 e 4 anos, é variável — anotado como E(T) — e pode cursar com diplopia inicial."
+    },
+    {
+      "question": "Qual é o tratamento inicial da esotropia acomodativa?",
+      "options": [
+        "Óculos, com a correção óptica total",
+        "Cirurgia dos músculos retos mediais",
+        "Oclusão total alternada por 6 meses",
+        "Toxina botulínica no reto medial"
+      ],
+      "correctIndex": 0,
+      "explanation": "O tratamento é óptico: corrigida a hipermetropia com óculos, cessa o esforço acomodativo excessivo e o desvio desaparece. A resposta aos óculos é o próprio teste diagnóstico. A cirurgia fica reservada para a forma parcialmente acomodativa, e apenas sobre o desvio residual que persiste com a correção em uso.",
+      "image": "s24i1",
+      "imageCaption": "A mesma criança sem e com a correção óptica"
+    },
+    {
+      "question": "Na esotropia parcialmente acomodativa, qual parcela do desvio é abordada cirurgicamente?",
+      "options": [
+        "Apenas o desvio residual que persiste com os óculos",
+        "Todo o desvio medido sem a correção óptica em uso",
+        "Apenas o desvio latente revelado no cover alternado",
+        "Todo o desvio somado ao componente vertical medido"
+      ],
+      "correctIndex": 0,
+      "explanation": "Na forma parcialmente acomodativa a lente resolve uma parte do desvio e sobra um ângulo residual. A cirurgia opera exatamente esse resíduo — operar o desvio total levaria a hipercorreção assim que o paciente voltasse a usar os óculos, transformando a esotropia em exotropia consecutiva."
+    },
+    {
+      "question": "Criança de 6 anos fecha um olho sempre que sai ao sol forte; o desvio divergente só é notado quando ela está cansada ou distraída. Qual o diagnóstico?",
+      "options": [
+        "Exotropia intermitente",
+        "Exotropia consecutiva",
+        "Exotropia manifesta",
+        "Esotropia acomodativa"
+      ],
+      "correctIndex": 0,
+      "explanation": "Fechar um olho sob luz intensa é o sinal clássico da exotropia intermitente: a luz solar quebra a fusão e o paciente suprime o olho desviado. Não há correspondência com o erro refracional e a ambliopia é rara, porque a binocularidade se mantém na maior parte do tempo. A oclusão é útil só até cerca dos 5 anos; depois, cirurgia."
+    },
+    {
+      "question": "Qual achado caracteriza a exotropia manifesta e a diferencia da forma intermitente?",
+      "options": [
+        "Ausência de estereopsia e maior associação com alteração neurológica",
+        "Presença de estereopsia e forte correspondência com o erro refracional",
+        "Ausência de ambliopia e resolução espontânea na puberdade do paciente",
+        "Presença de diplopia constante e melhora completa com uso de prismas"
+      ],
+      "correctIndex": 0,
+      "explanation": "Na exotropia manifesta o desvio é permanente, a estereopsia não existe e a associação com alterações neurológicas é maior. Pode ser congênita ou adquirida, primária ou secundária, e tem pouca relação com a refração. Na forma intermitente, ao contrário, a binocularidade é preservada nos períodos de alinhamento."
+    },
+    {
+      "question": "Paciente operado de esotropia há dois meses evolui com desvio divergente. Como esse desvio é classificado e quais suas causas mais prováveis?",
+      "options": [
+        "Exotropia consecutiva precoce, por cirurgia exagerada ou músculo escorregado",
+        "Exotropia intermitente primária, por fadiga da fusão e insuficiência de convergência",
+        "Exotropia manifesta congênita, por alteração neurológica de base ainda não investigada",
+        "Esotropia residual tardia, por contratura progressiva do músculo reto medial operado"
+      ],
+      "correctIndex": 0,
+      "explanation": "Exotropia consecutiva é a que surge após a correção de uma esotropia. Quando precoce, as causas são cirurgia exagerada ou falha técnica com músculo escorregado (slipped muscle). A forma tardia decorre de cirurgia exagerada somada a fatores de risco do próprio paciente. Existe ainda a forma espontânea, sem cirurgia prévia."
+    },
+    {
+      "question": "A fotografia mostra o alinhamento ocular em posição primária do olhar. Como esse desvio é classificado?",
+      "options": [
+        "Exotropia, pelo desvio do olho para fora",
+        "Esotropia, pelo desvio do olho para dentro",
+        "Hipertropia, pelo desvio do olho para cima",
+        "Hipotropia, pelo desvio do olho para baixo"
+      ],
+      "correctIndex": 0,
+      "explanation": "O olho acometido está rodado temporalmente, com ampla exposição de esclera do lado nasal e o reflexo corneano deslocado para dentro: é um desvio divergente manifesto, ou exotropia. O prefixo indica o sentido (eso para dentro, exo para fora, hiper para cima, hipo para baixo) e o sufixo, se o desvio é manifesto ou latente.",
+      "image": "s30i1",
+      "imageCaption": "Alinhamento ocular em posição primária do olhar"
+    },
+    {
+      "question": "A paralisia do VI nervo craniano compromete qual músculo e produz qual desvio em posição primária do olhar?",
+      "options": [
+        "Reto lateral, com esotropia e limitação da abdução",
+        "Reto medial, com exotropia e limitação da adução",
+        "Oblíquo superior, com hipertropia e torção do olho",
+        "Reto superior, com hipotropia e queda da pálpebra"
+      ],
+      "correctIndex": 0,
+      "explanation": "O VI nervo inerva exclusivamente o reto lateral; sua paralisia abole a abdução e deixa o reto medial sem oposição, gerando esotropia em posição primária entre 30 e 35 dioptrias prismáticas. É o estrabismo paralítico mais frequente e o desvio pode aumentar com o tempo pela contratura do reto medial."
+    },
+    {
+      "question": "De qual estrutura do tronco encefálico emerge o nervo que inerva o músculo reto lateral?",
+      "options": [
+        "Da ponte, pelo nervo abducente",
+        "Do mesencéfalo, pelo nervo troclear",
+        "Do bulbo, pelo nervo hipoglosso",
+        "Do tálamo, pelo nervo oculomotor"
+      ],
+      "correctIndex": 0,
+      "explanation": "O nervo abducente (VI) emerge da ponte, percorre um longo trajeto intracraniano, atravessa a fissura orbitária superior e inerva o reto lateral. Esse trajeto longo o torna especialmente vulnerável à hipertensão intracraniana, a traumatismos e a processos inflamatórios da base do crânio.",
+      "image": "s33i1",
+      "imageCaption": "Trajeto do nervo abducente até o músculo reto lateral"
+    },
+    {
+      "question": "Criança com otite média complicada por mastoidite desenvolve esotropia aguda com limitação de abdução e dor facial. Qual a síndrome?",
+      "options": [
+        "Síndrome de Gradenigo, com acometimento do V e do VI nervos",
+        "Síndrome de Ciancia, com acometimento bilateral do VI nervo",
+        "Síndrome de Horner, com acometimento da inervação simpática",
+        "Síndrome de Tolosa-Hunt, com acometimento isolado do III nervo"
+      ],
+      "correctIndex": 0,
+      "explanation": "Na síndrome de Gradenigo a infecção otomastóidea se estende ao ápice petroso e acomete o V e o VI nervos, produzindo dor facial trigeminal associada a paralisia do reto lateral. É uma das causas infecciosas clássicas de paralisia do VI e exige tratamento da infecção de base, não apenas do estrabismo."
+    },
+    {
+      "question": "Homem de 58 anos, diabético, com diplopia horizontal de início súbito, apresenta o quadro mostrado. Qual a conduta inicial mais apropriada?",
+      "options": [
+        "Observar a evolução e ocluir para aliviar a diplopia",
+        "Indicar cirurgia dos retos horizontais imediatamente",
+        "Prescrever óculos com correção óptica total para perto",
+        "Iniciar oclusão total alternada por no mínimo seis meses"
+      ],
+      "correctIndex": 0,
+      "explanation": "Paralisia do VI nervo em diabético costuma ser microvascular e regredir espontaneamente em semanas a poucos meses. A conduta inicial é observar, usar oclusão de alívio para a diplopia e prevenir a contratura do reto medial. A cirurgia só é considerada após no mínimo 6 meses de estabilidade, com reavaliações a cada 15 dias. Toda paralisia adquirida exige avaliação clínica e neurológica.",
+      "image": "s36i1",
+      "imageCaption": "Olhar de frente, para a direita e para a esquerda"
+    },
+    {
+      "question": "Na paralisia do VI nervo, a toxina botulínica é aplicada em qual músculo e com qual objetivo principal?",
+      "options": [
+        "No reto medial, para evitar a sua contratura",
+        "No reto lateral, para reforçar a sua abdução",
+        "No oblíquo inferior, para corrigir a torção",
+        "No levantador, para ampliar a fenda palpebral"
+      ],
+      "correctIndex": 0,
+      "explanation": "Sem a oposição do reto lateral paralisado, o reto medial tende a encurtar e contraturar, o que aumenta o desvio e piora o prognóstico cirúrgico. A toxina paralisa temporariamente o reto medial e impede essa contratura. As desvantagens são a blefaroptose e o desvio vertical por difusão da toxina."
+    },
+    {
+      "question": "Na paralisia completa do III nervo craniano, quais músculos extraoculares permanecem funcionantes?",
+      "options": [
+        "O reto lateral e o oblíquo superior",
+        "O reto medial e o oblíquo inferior",
+        "O reto superior e o reto inferior",
+        "O oblíquo inferior e o reto lateral"
+      ],
+      "correctIndex": 0,
+      "explanation": "O III nervo inerva os retos medial, superior e inferior, o oblíquo inferior, o levantador da pálpebra e a via parassimpática pupilar. Sobram apenas o reto lateral, do VI, e o oblíquo superior, do IV. Por isso o olho fica desviado para fora, com exotropia acentuada, e sem movimentos verticais."
+    },
+    {
+      "question": "Qual conjunto de achados é esperado na paralisia completa do III nervo craniano?",
+      "options": [
+        "Exotropia, blefaroptose, midríase e paralisia da acomodação",
+        "Esotropia, blefaroptose, miose e espasmo forte da acomodação",
+        "Exotropia, retração palpebral, miose e acomodação preservada",
+        "Esotropia, retração palpebral, midríase e acomodação normal"
+      ],
+      "correctIndex": 0,
+      "explanation": "A paralisia completa do III cursa com exotropia acentuada, ausência de movimentos verticais, hipotropia discreta, intorção, blefaroptose, midríase e paralisia da acomodação — tem o pior prognóstico entre os desvios paralíticos. Pode haver regressão parcial em até 6 meses. Midríase associada obriga a afastar aneurisma comprimindo o nervo."
+    },
+    {
+      "question": "A imagem documenta o exame da motilidade ocular. Qual manobra corresponde às duas fotografias da última linha, com a cabeça inclinada para cada ombro?",
+      "options": [
+        "Manobra de Bielschowsky, que avalia paralisia do IV nervo",
+        "Manobra de Hirschberg, que avalia o reflexo corneano central",
+        "Manobra de Krimsky, que quantifica o desvio com uso de prismas",
+        "Manobra de Bruckner, que compara o reflexo vermelho das pupilas"
+      ],
+      "correctIndex": 0,
+      "explanation": "A manobra de Bielschowsky inclina a cabeça para cada ombro e observa o desvio vertical: na paralisia do oblíquo superior, a hipertropia do olho acometido aumenta quando a cabeça é inclinada para o mesmo lado. É o exame decisivo na paralisia do IV nervo, feito depois de percorrer as posições diagnósticas do olhar.",
+      "image": "s44i1",
+      "imageCaption": "Posições diagnósticas do olhar e inclinações da cabeça"
+    },
+    {
+      "question": "Por que o paciente com paralisia do IV nervo adota uma posição compensadora de cabeça?",
+      "options": [
+        "Para manter a fusão e assim evitar a diplopia vertical",
+        "Para ampliar o campo visual periférico do olho acometido",
+        "Para reduzir a fotofobia gerada pela torção do globo ocular",
+        "Para compensar a ptose palpebral que acompanha o quadro"
+      ],
+      "correctIndex": 0,
+      "explanation": "O torcicolo é uma estratégia de fusão: inclinando a cabeça o paciente encontra a posição em que o desvio vertical é menor e as duas imagens voltam a se sobrepor. Por isso a visão binocular normal se traduz em torcicolo. O tratamento é essencialmente cirúrgico e tem três metas: corrigir o desvio, corrigir o torcicolo e eliminar a diplopia."
+    },
+    {
+      "question": "A figura mostra uma técnica de cirurgia muscular. Em que consiste o procedimento representado e qual o seu efeito?",
+      "options": [
+        "Retrocesso: o músculo é reinserido atrás da inserção original, e isso o enfraquece",
+        "Ressecção: um segmento do músculo é removido antes da sutura, e isso o enfraquece",
+        "Transposição: o músculo é deslocado lateralmente na esclera, e isso anula a sua ação",
+        "Pregueamento: o ventre muscular é dobrado sobre si mesmo, e isso reduz a sua força"
+      ],
+      "correctIndex": 0,
+      "explanation": "No retrocesso o músculo é desinserido e suturado posteriormente à inserção original, medindo-se a distância com compasso. Encurtar o braço de alavanca reduz a força do músculo, ou seja, o retrocesso é uma cirurgia de enfraquecimento. A ressecção, ao encurtar o músculo, faz o oposto: fortalece a sua ação.",
+      "image": "s46i1",
+      "imageCaption": "Etapas da reinserção do músculo reto"
+    },
+    {
+      "question": "Por que o estrabismo na criança pequena exige diagnóstico e tratamento precoces?",
+      "options": [
+        "Porque a supressão do olho desviado leva à ambliopia",
+        "Porque o desvio evolui para descolamento seroso da retina",
+        "Porque a córnea do olho desviado sofre opacificação difusa",
+        "Porque a pressão intraocular sobe muito no olho desviado"
+      ],
+      "correctIndex": 0,
+      "explanation": "Para evitar a diplopia, o cérebro imaturo suprime a imagem do olho desviado; sem estímulo, esse olho não desenvolve acuidade normal e se instala a ambliopia. Como o período de plasticidade visual é limitado aos primeiros anos, cada mês de atraso reduz a chance de recuperação, o que torna o estrabismo infantil uma urgência funcional."
+    },
+    {
+      "question": "Qual é o princípio do tratamento da ambliopia associada ao estrabismo?",
+      "options": [
+        "Ocluir o olho de melhor visão, forçando o uso do olho amblíope",
+        "Ocluir o olho amblíope, poupando assim o olho de melhor visão",
+        "Ocluir os dois olhos de forma alternada em dias fixos da semana",
+        "Instilar colírio cicloplégico nos dois olhos para relaxar a fusão"
+      ],
+      "correctIndex": 0,
+      "explanation": "A ambliopia se trata forçando o uso do olho pior: oclui-se o olho dominante para que a via visual do olho amblíope seja estimulada. Antes disso é obrigatório corrigir o erro refracional. Quando a criança alterna a fixação espontaneamente, como na esotropia congênita de grande ângulo, usa-se oclusão total alternada."
+    }
+  ]
+}

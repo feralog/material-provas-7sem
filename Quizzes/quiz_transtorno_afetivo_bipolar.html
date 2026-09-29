@@ -1,0 +1,1177 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Transtorno Afetivo Bipolar</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;450;500;600&display=swap" rel="stylesheet">
+<style>
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0}
+  body{background:#f5f3ef;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+  button{font:inherit;color:inherit;font-family:'IBM Plex Sans',system-ui,sans-serif}
+  a{color:#2b57cc;text-decoration:none}
+  a:hover{color:#1e3f9c;text-decoration:underline}
+  @keyframes qFade{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+  @keyframes qDrawer{from{opacity:0;transform:translateY(-4px)}to{opacity:1;transform:none}}
+
+  /* hovers — no canvas eram style-hover, aqui viram CSS de verdade */
+  .h-dark:hover{background:#2b57cc!important;transform:translateY(-1px)}
+  .h-darkflat:hover{background:#2b57cc!important}
+  .h-line:hover{border-color:#121a2b!important}
+  .h-ink:hover{color:#121a2b!important}
+  .h-opt:not(.locked):hover{border-color:var(--hbd)!important;transform:translateY(-1px)}
+  .h-card:hover{border-color:#121a2b!important;transform:translateY(-2px)}
+
+  /* tipografia do resumo */
+  .rsm{font-size:16.5px;line-height:1.72;color:#2a3141;max-width:64ch}
+  .rsm h2{font-family:'Newsreader',Georgia,serif;font-size:27px;font-weight:500;letter-spacing:-.02em;line-height:1.2;margin:42px 0 14px;padding-top:20px;border-top:1px solid #e4e0d8;text-wrap:pretty}
+  .rsm h2:first-child{margin-top:0;padding-top:0;border-top:0}
+  .rsm h3{font-family:'Newsreader',Georgia,serif;font-size:20px;font-weight:600;letter-spacing:-.01em;margin:28px 0 10px;text-wrap:pretty}
+  .rsm h4{font-family:'IBM Plex Mono',monospace;font-size:11px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:#2b57cc;margin:24px 0 8px}
+  .rsm p{margin:0 0 15px;text-wrap:pretty}
+  .rsm ul,.rsm ol{margin:0 0 15px;padding-left:22px}
+  .rsm li{margin-bottom:7px;text-wrap:pretty}
+  .rsm li>ul,.rsm li>ol{margin:7px 0 0}
+  .rsm strong{font-weight:600;color:#121a2b}
+  .rsm em{font-style:italic}
+  .rsm code{font-family:'IBM Plex Mono',monospace;font-size:.88em;background:#efece5;border:1px solid #e4e0d8;border-radius:5px;padding:1px 5px}
+  .rsm hr{border:0;border-top:1px solid #e4e0d8;margin:32px 0}
+  .rsm blockquote{margin:0 0 18px;padding:15px 18px;background:#f7f6f2;border-left:2.5px solid #2b57cc;border-radius:0 12px 12px 0;font-size:15px;line-height:1.65;color:#39404f}
+  .rsm blockquote p:last-child{margin-bottom:0}
+  .rsm .tbl{overflow-x:auto;margin:0 0 20px;border:1px solid #e4e0d8;border-radius:12px;background:#fff}
+  .rsm table{border-collapse:collapse;width:100%;font-size:14px;line-height:1.5}
+  .rsm th{text-align:left;font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.09em;text-transform:uppercase;color:#8a8578;font-weight:600;padding:11px 14px;background:#faf9f6;border-bottom:1px solid #e4e0d8;white-space:nowrap}
+  .rsm td{padding:11px 14px;border-bottom:1px solid #efece5;vertical-align:top;text-wrap:pretty}
+  .rsm tr:last-child td{border-bottom:0}
+  .rsm .key{background:#f2f6fb;border:1px solid #d6e2f4;border-radius:12px;padding:16px 18px;margin:0 0 18px}
+  .rsm .key>*:last-child{margin-bottom:0}
+
+  /* figuras — no resumo e na questao */
+  .fig{margin:0 0 20px;background:#fff;border:1px solid #e4e0d8;border-radius:14px;overflow:hidden}
+  .fig img{display:block;width:100%;height:auto;cursor:zoom-in}
+  .fig figcaption{font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.06em;color:#8a8578;padding:9px 13px;border-top:1px solid #efece5;background:#faf9f6;text-wrap:pretty}
+  .qfig{margin:0 0 20px}
+
+  /* lightbox */
+  #lb{position:fixed;inset:0;z-index:90;background:rgba(18,26,43,.86);display:none;align-items:center;justify-content:center;padding:24px;cursor:zoom-out}
+  #lb.on{display:flex;animation:qFade .16s ease}
+  #lb img{max-width:100%;max-height:100%;border-radius:10px;box-shadow:0 24px 60px rgba(0,0,0,.5)}
+
+  @media(max-width:560px){
+    .rsm{font-size:16px}
+    .rsm h2{font-size:24px}
+    .home-grid{grid-template-columns:1fr!important}
+  }
+</style>
+</head>
+<body>
+
+<div style="min-height:100vh;background:#f5f3ef;color:#121a2b;font-family:'IBM Plex Sans',system-ui,sans-serif">
+  <header style="position:sticky;top:0;z-index:30;background:rgba(245,243,239,.94);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid #e4e0d8">
+    <div style="max-width:720px;margin:0 auto;padding:12px 16px 10px" id="hdr"></div>
+  </header>
+  <main style="max-width:720px;margin:0 auto;padding:0 16px 80px" id="stage"></main>
+</div>
+<div id="lb"><img alt=""></div>
+
+<script type="text/html" id="resumoSrc"><h2>Panorama: carga da doença, epidemiologia e o atraso diagnóstico</h2>
+<p>O transtorno bipolar (TB) é um transtorno mental crônico do humor, caracterizado pela alternância entre episódios de elevação do humor — mania ou hipomania — e episódios depressivos. Está entre as <strong>dez principais causas de incapacidade</strong> no mundo e entre as principais causas de anos de vida ajustados por incapacidade em adultos jovens, faixa etária em que o quadro costuma se instalar.</p>
+<p>O peso do transtorno se mede sobretudo pela mortalidade. Pessoas com TB têm risco de morte por suicídio <strong>20 a 30 vezes maior</strong> que o da população geral, e o transtorno pode responder por até <strong>um quarto de todos os suicídios</strong>. A expectativa de vida é reduzida em cerca de <strong>nove anos</strong>, e a explicação não é apenas o suicídio: há aumento da mortalidade por <strong>doenças cardiovasculares</strong>, ligado à alta prevalência de síndrome metabólica nessa população. É por isso que peso, pressão arterial, glicemia e perfil lipídico entram no seguimento de rotina, e não como extras.</p>
+<h4>Números de prevalência</h4>
+<ul><li><strong>Mundo:</strong> 2,4% ao longo da vida — 0,6% tipo I, 0,4% tipo II e 1,4% de quadro subsindrômico.</li><li><strong>Brasil:</strong> 2,1% ao longo da vida — 0,9% tipo I e 0,2% tipo II.</li><li>O quadro <strong>subsindrômico é mais prevalente que qualquer um dos dois subtipos completos</strong>.</li></ul>
+<p>O início é precoce: <strong>mais de 70% dos pacientes</strong> têm o primeiro episódio de humor <strong>antes dos 25 anos</strong>. Em coorte de pacientes com até cinco anos de doença, 69% iniciaram antes dos 23 anos, 22% entre 24 e 37 anos e apenas 9% depois dos 38 anos.</p>
+<blockquote><p><strong>Pegadinha de prova — o atraso diagnóstico.</strong> Há um intervalo médio de <strong>dez anos</strong> entre os primeiros sintomas e o diagnóstico formal, e apenas <strong>20%</strong> dos pacientes que buscam tratamento durante um episódio depressivo bipolar recebem o diagnóstico correto no primeiro ano. O erro típico é rotular o quadro como depressão unipolar — e tratar com antidepressivo em monoterapia. A demora no diagnóstico associa-se a pior prognóstico, mais refratariedade e mais prejuízo cognitivo.</p></blockquote>
+<p>Outro dado que explica esse erro: em seguimento prospectivo, os pacientes passam <strong>cerca de metade do tempo sintomáticos</strong> (46,6% no tipo I e 55,8% no tipo II), e os sintomas depressivos predominam largamente sobre os de mania ou hipomania — razão de <strong>3:1 no tipo I</strong> e de <strong>37:1 no tipo II</strong>. O paciente bipolar chega ao consultório deprimido, não eufórico.</p>
+<hr>
+<h2>Os episódios de humor: mania, hipomania e depressão</h2>
+<p>Todo o diagnóstico do TB se apoia na identificação correta do tipo de episódio de elevação do humor. <strong>Duração e prejuízo funcional são o divisor</strong>, e é exatamente aí que a prova costuma cobrar.</p>
+<div class="tbl"><table><thead><tr><th></th><th>Mania</th><th>Hipomania</th><th>Episódio depressivo</th></tr></thead><tbody><tr><td><strong>Duração mínima</strong></td><td>7 dias (ou qualquer duração, se houver internação)</td><td>4 dias consecutivos</td><td>2 semanas</td></tr><tr><td><strong>Humor</strong></td><td>elevado, expansivo ou irritável, persistente</td><td>elevado, expansivo ou irritável, persistente</td><td>deprimido e/ou anedonia</td></tr><tr><td><strong>Prejuízo funcional</strong></td><td><strong>marcante</strong> — social, ocupacional ou familiar</td><td><strong>ausente ou leve</strong>; a mudança é notada por terceiros</td><td>variável, em geral presente</td></tr><tr><td><strong>Internação</strong></td><td>pode ser necessária; se ocorrer, define mania</td><td><strong>exclui</strong> hipomania</td><td>pode ocorrer</td></tr><tr><td><strong>Sintomas psicóticos</strong></td><td>presentes em <strong>cerca de 50%</strong> dos casos</td><td><strong>excluem</strong> hipomania</td><td>podem ocorrer</td></tr><tr><td><strong>Define qual subtipo</strong></td><td>tipo I</td><td>tipo II (com episódio depressivo)</td><td>nenhum, isoladamente</td></tr></tbody></table></div>
+<p>Os sintomas centrais da elevação do humor são os mesmos nas duas formas: redução da necessidade de sono (dorme pouco e não se sente cansado), aumento da fala e pressão para falar, fuga de ideias e pensamento acelerado, grandiosidade ou autoestima inflada, distratibilidade, aumento da atividade dirigida a objetivos ou agitação psicomotora, e envolvimento em atividades de risco — gastos excessivos, indiscrições sexuais, investimentos impulsivos.</p>
+<blockquote><p><strong>O divisor prático.</strong> Não é a intensidade da euforia que separa mania de hipomania: é a <strong>duração (7 versus 4 dias)</strong> e, sobretudo, a <strong>repercussão funcional</strong>. Internação, psicose ou prejuízo funcional marcante convertem o episódio em mania — e, portanto, o paciente em tipo I — mesmo que o quadro tenha durado só três dias.</p></blockquote>
+<h4>Especificadores que mudam a conduta</h4>
+<ul><li><strong>Com características mistas:</strong> sintomas do polo oposto presentes ao mesmo tempo. Marcador de <strong>gravidade e de risco de suicídio</strong> — a avaliação de comportamentos de risco deve buscar especificamente características mistas, agitação psicomotora e heteroagressividade. Na depressão bipolar com características mistas, a <strong>lurasidona</strong> é a escolha; antidepressivos "puros" como sertralina e venlafaxina ficam <strong>contraindicados</strong>.</li><li><strong>Ciclagem rápida:</strong> quatro ou mais episódios de humor em doze meses. Está presente em <strong>cerca de um terço dos casos de tipo I</strong> e associa-se a trauma infantil, a pior resposta ao tratamento e a maior refratariedade.</li></ul>
+<hr>
+<h2>Os subtipos: tipo I, tipo II e transtorno ciclotímico</h2>
+<div class="tbl"><table><thead><tr><th>Subtipo</th><th>Exige ao longo da vida</th><th>Observação</th></tr></thead><tbody><tr><td><strong>Tipo I</strong></td><td>pelo menos <strong>um episódio maníaco</strong></td><td>o episódio depressivo pode ter ocorrido ou não — não é exigido</td></tr><tr><td><strong>Tipo II</strong></td><td>pelo menos <strong>um episódio hipomaníaco E um episódio depressivo</strong></td><td>a presença de qualquer episódio maníaco reclassifica para tipo I</td></tr><tr><td><strong>Ciclotimia</strong></td><td><strong>2 anos</strong> (1 ano em crianças e adolescentes) de períodos com sintomas hipomaníacos e depressivos</td><td>esses períodos <strong>nunca</strong> fecham critérios completos de mania, hipomania ou depressão maior</td></tr></tbody></table></div>
+<blockquote><p><strong>Tipo I × tipo II — a confusão mais comum.</strong> O tipo I <strong>não</strong> exige depressão: um único episódio maníaco basta. O tipo II <strong>exige as duas coisas</strong> — hipomania mais depressão. E o tipo II não é uma "forma leve": os pacientes passam mais tempo sintomáticos (55,8% contra 46,6%), com predomínio depressivo de 37:1, e carregam mais comorbidades. O que muda entre eles é a gravidade do polo maníaco, não a gravidade da doença.</p></blockquote>
+<hr>
+<h2>Diagnóstico diferencial</h2>
+<h3>Transtorno depressivo maior (depressão unipolar)</h3>
+<p>É o diferencial mais importante e o erro mais frequente, porque o paciente bipolar procura atendimento em fase depressiva.</p>
+<div class="tbl"><table><thead><tr><th></th><th>Aponta para <strong>bipolaridade</strong></th><th>Aponta para <strong>unipolaridade</strong></th></tr></thead><tbody><tr><td><strong>Sintomatologia</strong></td><td>hipersonia; hiperfagia ou ganho de peso; retardo ou agitação psicomotora; sintomas psicóticos; culpa patológica; labilidade do humor; irritabilidade; pensamento acelerado</td><td>insônia inicial ou sono reduzido; perda de apetite ou de peso; nível de atividade normal; queixas somáticas</td></tr><tr><td><strong>Curso da doença</strong></td><td>primeiro episódio depressivo <strong>antes dos 25 anos</strong>; múltiplos episódios</td><td>primeiro episódio depressivo <strong>depois dos 25 anos</strong>; episódio atual de longa duração</td></tr><tr><td><strong>História familiar</strong></td><td><strong>positiva</strong> para bipolaridade</td><td><strong>negativa</strong> para bipolaridade</td></tr></tbody></table></div>
+<p>Em resumo: depressão <strong>atípica</strong> (dorme muito, come muito), <strong>precoce</strong>, <strong>recorrente</strong>, com <strong>psicose</strong> ou <strong>história familiar positiva</strong> deve acender o alerta de bipolaridade antes de qualquer prescrição de antidepressivo.</p>
+<h3>Transtorno de déficit de atenção/hiperatividade</h3>
+<div class="tbl"><table><thead><tr><th>Sintoma</th><th>Mania</th><th>TDAH</th></tr></thead><tbody><tr><td><strong>Elação</strong></td><td>episódica, prolongada e inapropriada</td><td>se presente, <strong>não é episódica</strong></td></tr><tr><td><strong>Irritabilidade</strong></td><td>episódica e prolongada</td><td>pode ser sintoma relacionado</td></tr><tr><td><strong>Sono</strong></td><td><strong>necessidade de sono reduzida</strong></td><td>insônia</td></tr><tr><td><strong>Grandiosidade</strong></td><td>aumento não característico de confiança ou autoimportância</td><td>não é sintoma ou característica comum</td></tr><tr><td><strong>Hiperatividade e distratibilidade</strong></td><td>episódicas</td><td>fazem parte dos critérios diagnósticos, mas <strong>não são episódicas</strong></td></tr></tbody></table></div>
+<p>A chave é a palavra <strong>episódico</strong>: no TDAH os sintomas são um traço estável desde a infância; na mania, uma mudança nítida em relação ao funcionamento habitual.</p>
+<h3>Outros diferenciais</h3>
+<ul><li><strong>Transtorno da personalidade borderline:</strong> labilidade do humor e impulsividade são comuns às duas condições. Para o TB, os sintomas devem representar um <strong>episódio distinto</strong>, com aumento notável em relação ao comportamento habitual. Regra de ouro: <strong>não se firma diagnóstico de transtorno da personalidade durante um episódio de humor não tratado.</strong></li><li><strong>Transtorno por uso de substâncias:</strong> o diagnóstico primário de TB deve ser estabelecido com base nos sintomas que <strong>persistem depois</strong> que as substâncias não estão mais sendo usadas.</li><li><strong>Transtorno de ansiedade generalizada:</strong> ruminações ansiosas podem ser confundidas com pensamento acelerado, e a tentativa de aliviar a ansiedade pode parecer impulsividade. Novamente, a <strong>natureza episódica</strong> resolve.</li><li><strong>Outros:</strong> TEPT, transtorno de pânico e quadros com irritabilidade acentuada.</li></ul>
+<hr>
+<h2>Comorbidades, fatores de risco e curso longitudinal</h2>
+<h3>Comorbidades</h3>
+<ul><li><strong>Tipo I:</strong> transtornos de ansiedade em cerca de <strong>três quartos</strong> dos pacientes. Transtorno por uso de substâncias em <strong>mais da metade</strong>; mais da metade tem transtorno por uso de álcool, e a associação álcool mais TB confere <strong>grande risco de tentativa de suicídio</strong>. Síndrome metabólica e enxaqueca são mais comuns que na população geral.</li><li><strong>Tipo II:</strong> cerca de <strong>60%</strong> têm três ou mais transtornos comórbidos; <strong>75%</strong> têm transtorno de ansiedade; <strong>37%</strong>, transtorno por uso de substâncias; <strong>15%</strong> têm algum transtorno alimentar ao longo da vida, sendo a compulsão alimentar mais comum que bulimia e anorexia. Em crianças e adolescentes, a ansiedade costuma <strong>preceder</strong> o quadro bipolar.</li></ul>
+<h3>Fatores de risco genéticos</h3>
+<p>A história familiar é o fator de risco mais consistente: risco em média <strong>dez vezes maior</strong> entre parentes adultos de pessoas com TB tipo I e II, com magnitude crescente conforme o grau de parentesco. A herdabilidade genética estimada é de <strong>58%</strong>, e a concordância entre <strong>gêmeos monozigóticos</strong>, de <strong>40 a 80%</strong>. Estudos de associação genômica ampla apontaram genes como <strong>CACNA1C</strong> (subunidade alfa do canal de cálcio tipo L), <strong>NCAN</strong> (neurocan) e <strong>ODZ4</strong> (teneurinas); cerca de 38% da variância fenotípica viria do efeito cumulativo de muitos alelos comuns de pequeno efeito. Há <strong>sobreposição de suscetibilidade genética entre bipolaridade e esquizofrenia</strong>.</p>
+<h3>Fatores de risco ambientais</h3>
+<ul><li><strong>Trauma precoce:</strong> relatado <strong>2,63 vezes</strong> mais que por indivíduos saudáveis. Quem sofreu trauma infantil tem primeiro episódio mais precoce, mais ciclagem rápida e quadro mais grave. Abuso sexual e emocional afetam memória visual e verbal, fluência verbal e flexibilidade cognitiva.</li><li><strong>Fatores pré e perinatais:</strong> parto cesáreo, infecção materna na gestação, tabagismo materno e idade paterna elevada. Circunferência craniana menor que 32 cm aumenta em <strong>5,4 vezes</strong> a chance de TB na vida adulta.</li><li><strong>Substâncias:</strong> transtorno por uso de álcool multiplica por <strong>4,1</strong> a chance de TB; qualquer droga ilícita, por <strong>5</strong>. O uso de cocaína é preditor de <strong>conversão de depressão unipolar para TB</strong> (razão de chance 3,41).</li></ul>
+<h3>Curso longitudinal e neuroprogressão</h3>
+<p>O modelo desenvolvimental de Duffy descreve quatro estágios antes do diagnóstico formal: (1) ansiedade, problemas de sono, dificuldades de aprendizagem e TDAH; (2) sintomas depressivos inespecíficos — apatia, anedonia, distimia, ciclotimia; (3) depressão maior com episódio único, já com declínio funcional perceptível; (4) o quadro característico, com episódios maníacos e/ou hipomaníacos.</p>
+<p>Depois do diagnóstico, o modelo de <strong>estadiamento/neuroprogressão</strong> descreve três estágios clínicos:</p>
+<ol><li>risco aumentado por história familiar e sintomas subsindrômicos preditivos de conversão;</li><li>poucos episódios, com funcionamento normal nos períodos interepisódicos;</li><li>episódios recorrentes, com <strong>declínio no funcionamento e na cognição</strong>.</li></ol>
+<blockquote><p><strong>Por que importa tratar cedo.</strong> Cada novo episódio aumenta o risco de novos episódios, a gravidade dos sintomas, a duração dos quadros agudos e a refratariedade — e reduz o limiar para recorrer. O número de episódios associa-se a prejuízo funcional e cognitivo e a maior risco de demência a longo prazo. Esse curso progressivo, porém, <strong>não é universal</strong>: um subgrupo mantém desempenho cognitivo semelhante ao de indivíduos saudáveis, e o que distingue os subgrupos são anos de estudo, número de hospitalizações e idade.</p></blockquote>
+<hr>
+<h2>Princípios gerais do tratamento e avaliação inicial</h2>
+<p>O tratamento farmacológico é organizado por <strong>fase da doença</strong> — depressão, mania ou manutenção — e por <strong>nível de evidência</strong> (níveis 1 a 4, do mais forte ao mais fraco). A primeira decisão clínica é identificar em que fase o paciente está; só depois se escolhe o fármaco.</p>
+<h4>Exames complementares na primeira avaliação</h4>
+<ul><li>Hemograma completo com plaquetas; enzimas hepáticas; bilirrubinas; tempo de protrombina e de tromboplastina parcial ativada.</li><li>Glicemia de jejum e hemoglobina glicada; colesterol total, HDL e LDL; triglicerídeos.</li><li>Eletrólitos e cálcio; urinálise; <strong>creatinina sérica com estimativa da taxa de filtração glomerular</strong>; <strong>TSH</strong>.</li><li>Peso, altura com cálculo do IMC e pressão arterial.</li><li>Eletrocardiograma se acima de 40 anos ou por indicação clínica; toxicológico de urina se houver suspeita de uso de substâncias; teste de gravidez em mulheres em idade reprodutiva; prolactina se em uso de fármaco com esse efeito adverso.</li><li><strong>Nível sérico</strong> de lítio, ácido valproico/valproato e carbamazepina.</li></ul>
+<h4>O roteiro antes de prescrever</h4>
+<ul><li><strong>Avaliar:</strong> comportamentos de risco (risco de suicídio, com atenção a características mistas, agitação psicomotora e heteroagressividade); grau de insight; capacidade de aderir ao tratamento; suporte psicossocial.</li><li><strong>Revisar status de medicação:</strong> níveis séricos e adesão.</li><li><strong>Revisar sintomas secundários:</strong> medicamentos em uso, comorbidades psiquiátricas, uso de substâncias e outras condições médicas.</li></ul>
+<blockquote><p><strong>Na mania, a conduta extra é decisiva: antidepressivos e estimulantes devem ser descontinuados.</strong> Na depressão, o roteiro acrescenta avaliar uso de nicotina, cafeína e álcool, e reintroduzir medicação se a recaída depressiva coincidir com descontinuação recente.</p></blockquote>
+<p>Em todas as fases, o algoritmo é o mesmo: princípios gerais → <strong>iniciar ou otimizar</strong> o tratamento de primeira linha → <strong>adicionar ou trocar</strong> por outro de primeira linha → segunda linha → terceira linha.</p>
+<hr>
+<h2>Tratamento das fases agudas: depressão e mania</h2>
+<h3>Depressão bipolar tipo I</h3>
+<div class="tbl"><table><thead><tr><th>Linha</th><th>Opções</th><th>Observações</th></tr></thead><tbody><tr><td><strong>Primeira</strong></td><td>quetiapina (N1); lurasidona + Li/AVP (N1); lítio (N2); lamotrigina (N2); lurasidona (N2)</td><td>quetiapina e lítio com tolerabilidade moderada; cautela com AVP em mulheres férteis</td></tr><tr><td><strong>Segunda</strong></td><td>cariprazina (N1); <strong>ISRS/bupropiona (N1)</strong>; AVP (N2); olanzapina + fluoxetina (N2); ECT (N4)</td><td><strong>ISRS e bupropiona carregam risco de virada maníaca</strong>; olanzapina + fluoxetina tem efeitos colaterais de alto impacto</td></tr><tr><td><strong>Terceira</strong></td><td>carbamazepina, modafinil, rTMS, EPA, cetamina EV, levotiroxina, pramipexol, olanzapina, IRSN/iMAO</td><td>em grande parte adjuvantes, com evidência fraca</td></tr></tbody></table></div>
+<blockquote><p><strong>A virada maníaca.</strong> Antidepressivo <strong>em monoterapia</strong> não é conduta aceitável no transtorno bipolar: ISRS e bupropiona só aparecem como segunda linha e sempre associados a um estabilizador, justamente pelo risco de virada. Diante de <strong>ciclagem rápida</strong>, a recomendação é ainda mais dura — <strong>excluir antidepressivos do esquema</strong>. Esse é o motivo pelo qual diagnosticar bipolaridade antes de tratar a depressão muda o desfecho.</p></blockquote>
+<p><strong>Características clínicas que orientam a escolha:</strong> resposta rápida → quetiapina, lurasidona, olanzapina + fluoxetina, cariprazina ou ECT; cognição depressiva → lamotrigina ou lurasidona; ansiedade → quetiapina, lurasidona ou olanzapina + fluoxetina; <strong>características mistas → lurasidona</strong>; melancolia → ECT; depressão anérgica → tranilcipromina + lítio; sintomas psicóticos → antipsicótico atípico associado ou ECT; casos refratários → associar <strong>clozapina</strong>.</p>
+<p><strong>Depressão no tipo II:</strong> a <strong>quetiapina é a única opção de primeira linha</strong> (N1). Na segunda linha entram lítio, lamotrigina, bupropiona adjuvante, ECT e — apenas na depressão "pura", sem características mistas — sertralina e venlafaxina.</p>
+<h3>Episódio maníaco</h3>
+<div class="tbl"><table><thead><tr><th>Linha</th><th>Opções</th></tr></thead><tbody><tr><td><strong>Primeira — monoterapia</strong></td><td><strong>lítio, quetiapina, ácido valproico (AVP), asenapina, aripiprazol, paliperidona, risperidona, cariprazina</strong> — todos N1</td></tr><tr><td><strong>Primeira — combinação</strong></td><td>quetiapina + Li/AVP; risperidona + Li/AVP (N1); aripiprazol + Li/AVP; asenapina + Li/AVP (N2)</td></tr><tr><td><strong>Segunda</strong></td><td>olanzapina, carbamazepina, ziprasidona, haloperidol (N1); olanzapina + Li/AVP (N1); lítio + AVP, ECT (N3)</td></tr><tr><td><strong>Terceira</strong></td><td>clorpromazina, clonazepam, tamoxifeno, haloperidol + Li/AVP (N2); carbamazepina/oxcarbazepina + Li/AVP, rTMS (N3); <strong>clozapina (N4)</strong></td></tr></tbody></table></div>
+<p>Note o que <strong>não</strong> está na primeira linha: lamotrigina (é de manutenção, não trata mania), clonazepam, clorpromazina e clozapina. E antidepressivo nenhum.</p>
+<p><strong>Características clínicas que orientam a escolha:</strong> ansiedade → AVP, quetiapina, olanzapina ou carbamazepina; <strong>características mistas → AVP ou antipsicótico atípico</strong>; <strong>sintomas psicóticos (presentes em 50% dos pacientes em mania) → associar antipsicótico atípico</strong>; <strong>ciclagem rápida (presente em 1/3 dos casos de tipo I) → tratar hipotireoidismo, excluir antidepressivos, tratar uso de substâncias e, se necessário, combinar fármacos</strong>; casos refratários → associar clozapina.</p>
+<div class="tbl"><table><thead><tr><th>Lítio</th><th>Ácido valproico</th><th>Carbamazepina</th></tr></thead><tbody><tr><td><strong>mania clássica</strong> (eufórica)</td><td>mania <strong>clássica, disfórica ou com humor predominantemente irritado</strong></td><td><strong>história familiar negativa</strong> de TB em parentes de primeiro grau</td></tr><tr><td><strong>poucos episódios</strong> de humor</td><td><strong>múltiplos episódios</strong> de humor</td><td>quadro <strong>esquizoafetivo</strong> com delírios incongruentes com o humor</td></tr><tr><td><strong>história familiar positiva</strong></td><td>comorbidade com ansiedade ou uso de substâncias; <strong>traumatismo cranioencefálico</strong></td><td>comorbidade com ansiedade ou uso de substâncias; traumatismo cranioencefálico</td></tr></tbody></table></div>
+<blockquote><p><strong>Hipomania.</strong> Não há esquema próprio: a experiência clínica indica que os <strong>tratamentos da mania são eficazes para os quadros de hipomania</strong>. O que muda é a urgência e, com frequência, a possibilidade de manejo ambulatorial.</p></blockquote>
+<hr>
+<h2>Manutenção, casos refratários e psicoeducação</h2>
+<h3>Fase de manutenção</h3>
+<p>A escolha do fármaco de manutenção leva em conta a resposta a medicamentos usados antes, a <strong>polaridade predominante</strong> dos episódios agudos e as comorbidades com substâncias e ansiedade. Regra prática: se o paciente respondeu bem, na fase aguda, a um fármaco que também é de primeira linha na manutenção, <strong>mantém-se esse fármaco</strong>.</p>
+<div class="tbl"><table><thead><tr><th>Fármaco</th><th>Perfil clínico que o favorece</th></tr></thead><tbody><tr><td><strong>Lítio</strong></td><td>apresentação clínica <strong>típica</strong>; <strong>história familiar</strong> de bipolaridade; <strong>sem</strong> comorbidade com uso de substâncias ou ansiedade</td></tr><tr><td><strong>Quetiapina</strong></td><td>episódios com <strong>características mistas</strong></td></tr><tr><td><strong>Lamotrigina</strong></td><td><strong>polaridade depressiva predominante</strong></td></tr><tr><td><strong>Carbamazepina</strong></td><td>doença <strong>atípica</strong>; transtorno bipolar <strong>tipo II</strong>; transtorno <strong>esquizoafetivo</strong></td></tr></tbody></table></div>
+<p>Primeira linha na manutenção: lítio, quetiapina, AVP e <strong>lamotrigina</strong> (todos N1), asenapina, aripiprazol (inclusive de administração mensal) e as combinações quetiapina + Li/AVP e aripiprazol + Li/AVP. Segunda linha: olanzapina, risperidona de depósito, carbamazepina, paliperidona e combinações com lurasidona ou ziprasidona. <strong>Manutenção no tipo II:</strong> quetiapina (N1), lítio e lamotrigina (N2) na primeira linha; venlafaxina na segunda; carbamazepina, AVP, escitalopram, fluoxetina e risperidona na terceira.</p>
+<h4>Monitorização do lítio</h4>
+<p>O lítio tem <strong>janela terapêutica estreita</strong> (litemia de referência em torno de 0,6 a 1,2 mEq/L) e toxicidade renal e tireoidiana. O seguimento exige, portanto:</p>
+<ul><li><strong>litemia</strong> periódica e sempre que houver mudança de dose, desidratação, uso de diurético, AINE ou IECA;</li><li><strong>creatinina sérica com estimativa da taxa de filtração glomerular</strong>;</li><li><strong>TSH</strong>, pelo risco de hipotireoidismo induzido — que, aliás, é uma das causas reversíveis de ciclagem rápida.</li></ul>
+<blockquote><p><strong>Não confunda as monitorizações.</strong> Litemia, creatinina e TSH são do <strong>lítio</strong>. <strong>Hemograma seriado</strong> é da <strong>clozapina</strong> (risco de agranulocitose). <strong>Cautela em mulheres em idade fértil</strong> é a marca do <strong>ácido valproico</strong> e da <strong>carbamazepina</strong>. Nível sérico de rotina existe para lítio, valproato e carbamazepina — não para antipsicóticos atípicos nem para antidepressivos.</p></blockquote>
+<h3>Casos refratários</h3>
+<p>A <strong>clozapina</strong> é uma das poucas opções farmacológicas efetivas na <strong>mania resistente ao tratamento</strong>. Apesar da escassez de ensaios randomizados, revisões sistemáticas mostram: melhora dos sintomas de humor e psicóticos; redução do número e da duração das hospitalizações; redução do número de psicotrópicos em uso; menos atendimentos hospitalares por autolesão e overdose; redução da ideação suicida e do comportamento agressivo; e melhora do funcionamento social. As limitações desses estudos são amostras pequenas, heterogeneidade, definições inconsistentes de resistência, controle e randomização insuficientes e seguimento curto.</p>
+<h3>Psicoeducação</h3>
+<p>Revisão sistemática de <strong>40 ensaios randomizados</strong>, com 4.507 indivíduos e familiares e seguimento médio de 15 meses, avaliou psicoeducação individual, em grupo, familiar e on-line. <strong>Setenta por cento dos estudos (28/40) focaram as modalidades em grupo ou familiar</strong> — e foram elas que concentraram os resultados positivos.</p>
+<ul><li><strong>Em grupo:</strong> redução de recorrência, menos hospitalizações e de menor duração, maior tempo até a recaída, melhor adesão, <strong>níveis séricos de lítio mais adequados</strong> e redução do estigma.</li><li><strong>Familiar:</strong> além da redução de recorrência e de hospitalizações, melhora da trajetória clínica, do bem-estar e <strong>diminuição da sobrecarga dos cuidadores</strong>.</li><li><strong>Individual e on-line:</strong> poucos estudos, achados inconsistentes ou sem eficácia demonstrável.</li></ul>
+<blockquote><p><strong>Fechando o raciocínio.</strong> O TB é crônico e de curso heterogêneo, e o maior erro clínico não é escolher o fármaco errado — é <strong>não reconhecer a bipolaridade em um paciente deprimido</strong> e tratá-lo com antidepressivo isolado. Reconhecido o transtorno, o tratamento se organiza por fase, com estabilizador de humor como espinha dorsal, e a psicoeducação familiar ou em grupo como adjuvante associado a melhor prognóstico.</p></blockquote></script>
+<!-- Tutor local: define window.DEEPSEEK_KEY. O arquivo NAO vai para o repositorio,
+     entao online ele da 404 e o chat simplesmente nao aparece. -->
+<script src="../deepseek_key.js"></script>
+<script>
+/* ─────────────────────────────────────────────────────────────────────────────
+   CONTRATO DE DADOS — para adaptar a outro tema, troque apenas QUIZ e o resumo.
+   Cada item: { question, options[2..6], correctIndex, explanation }
+   ──────────────────────────────────────────────────────────────────────────── */
+var TITLE      = "Transtorno Afetivo Bipolar";
+var EYEBROW    = "Psiquiatria · Transtornos do Humor";
+var DISCIPLINA = "Psiquiatria";   // pasta de origem (PED, GO...) — usada pelo índice
+var SUBTITLE = "Mania, hipomania, tipo I e tipo II, e o tratamento por fases";
+var INTRO    = "Diagnóstico e diferenciação dos episódios de humor, os subtipos do transtorno bipolar, o diagnóstico diferencial com depressão unipolar, TDAH e personalidade borderline, os fatores de risco, o curso longitudinal e o tratamento farmacológico das fases depressiva, maníaca e de manutenção.";
+
+var QUIZ = [
+  {
+    "question": "Homem de 24 anos, há nove dias dorme duas horas por noite, fala sem parar, gastou a poupança da família e foi levado ao pronto-socorro após tumulto na rua, sendo internado. Como se classifica esse episódio?",
+    "options": [
+      "Episódio maníaco, pela duração de uma semana e pela necessidade de internação",
+      "Episódio hipomaníaco, pela elação do humor sem qualquer sintoma psicótico",
+      "Episódio misto, pela agitação psicomotora associada à insônia persistente",
+      "Episódio depressivo com características mistas, pela irritabilidade marcada",
+      "Ciclagem rápida, pela alternância do humor ao longo dos últimos nove dias"
+    ],
+    "correctIndex": 0,
+    "explanation": "A mania exige humor elevado ou irritável com duração mínima de uma semana, ou de qualquer duração se houver necessidade de internação, acompanhada de prejuízo funcional marcante. A hipomania dura no mínimo quatro dias, é perceptível a terceiros, mas não cursa com prejuízo funcional acentuado, internação ou psicose. Um único episódio maníaco ao longo da vida já define o transtorno bipolar tipo I."
+  },
+  {
+    "question": "Mulher de 30 anos passa cinco dias mais falante, expansiva, dormindo quatro horas e rendendo mais no trabalho; os colegas notaram a mudança, não houve prejuízo funcional nem internação. Ela já teve um episódio depressivo maior aos 26 anos. Qual o diagnóstico?",
+    "options": [
+      "Transtorno bipolar tipo II, definido por um episódio hipomaníaco e um depressivo",
+      "Transtorno bipolar tipo I, definido por um episódio maníaco e um episódio depressivo",
+      "Transtorno ciclotímico, definido por dois anos de oscilações subsindrômicas do humor",
+      "Transtorno depressivo maior recorrente, definido por episódios depressivos repetidos",
+      "Transtorno da personalidade borderline, definido por labilidade do humor persistente"
+    ],
+    "correctIndex": 0,
+    "explanation": "O transtorno bipolar tipo II é confirmado quando há, ao longo da vida, pelo menos um episódio hipomaníaco e um episódio depressivo. O quadro descrito preenche hipomania: duração de quatro dias ou mais, alteração observável por terceiros, sem prejuízo funcional acentuado, psicose ou internação. A ausência de mania exclui o tipo I."
+  },
+  {
+    "question": "O diagnóstico de transtorno bipolar tipo I, considerando toda a vida do paciente, exige:",
+    "options": [
+      "pelo menos um episódio maníaco, acompanhado ou não de episódio depressivo",
+      "pelo menos um episódio hipomaníaco, acompanhado de um episódio depressivo",
+      "pelo menos dois episódios maníacos, acompanhados de um episódio depressivo",
+      "pelo menos um episódio depressivo, acompanhado de sintomas subsindrômicos",
+      "pelo menos dois anos de sintomas hipomaníacos e depressivos alternados"
+    ],
+    "correctIndex": 0,
+    "explanation": "O transtorno bipolar tipo I é caracterizado pela presença de pelo menos um episódio maníaco ao longo da vida, que pode ou não ter sido acompanhado de episódio depressivo. Não é necessário nenhum episódio depressivo para fechar o diagnóstico. A exigência de um episódio hipomaníaco somado a um depressivo corresponde ao tipo II."
+  },
+  {
+    "question": "Para o diagnóstico de transtorno ciclotímico em um adulto, o critério temporal mínimo é de:",
+    "options": [
+      "dois anos de sintomas hipomaníacos e depressivos que nunca fecham critérios",
+      "um ano de sintomas hipomaníacos e depressivos que nunca fecham critérios",
+      "seis meses de sintomas hipomaníacos e depressivos que nunca fecham critérios",
+      "quatro anos de sintomas hipomaníacos e depressivos que nunca fecham critérios",
+      "dois anos de sintomas hipomaníacos alternados com episódios depressivos maiores"
+    ],
+    "correctIndex": 0,
+    "explanation": "A ciclotimia é definida por cronicidade e oscilações do humor: por pelo menos dois anos em adultos, e um ano em crianças e adolescentes, o paciente apresenta vários períodos de sintomas hipomaníacos e depressivos. O ponto essencial é que esses períodos nunca atendem a todos os critérios de mania, hipomania ou depressão maior. Se um episódio completo ocorrer, o diagnóstico passa a ser de transtorno bipolar."
+  },
+  {
+    "question": "No tratamento da depressão do transtorno bipolar tipo I, os inibidores seletivos da recaptação de serotonina e a bupropiona figuram apenas como opção de segunda linha e carregam qual ressalva específica?",
+    "options": [
+      "risco de virada maníaca, o que desaconselha o uso sem estabilizador associado",
+      "risco de agranulocitose, o que exige hemograma seriado durante o tratamento",
+      "risco de hipotireoidismo, o que exige dosagem de TSH a cada três meses",
+      "risco de teratogenicidade, o que contraindica o uso em mulheres férteis",
+      "risco de síndrome metabólica, o que exige controle de peso e de glicemia"
+    ],
+    "correctIndex": 0,
+    "explanation": "A ressalva registrada para os ISRS e a bupropiona na depressão bipolar é o risco de virada maníaca, motivo pelo qual antidepressivo em monoterapia não é conduta aceitável no transtorno bipolar. A cautela em mulheres férteis é a observação atrelada ao ácido valproico, e os efeitos colaterais de alto impacto, à combinação olanzapina com fluoxetina. Diante de ciclagem rápida, a recomendação é justamente excluir antidepressivos do esquema."
+  },
+  {
+    "question": "Ao iniciar o tratamento de um episódio maníaco agudo, a revisão do status de medicação inclui qual conduta específica sobre os psicotrópicos que o paciente já vem usando?",
+    "options": [
+      "descontinuar antidepressivos e estimulantes que estejam em uso",
+      "manter antidepressivos e estimulantes, reduzindo a dose à metade",
+      "substituir o antidepressivo por outro de meia-vida mais curta",
+      "descontinuar os estabilizadores de humor de introdução recente",
+      "aumentar a dose do antidepressivo para conter a agitação"
+    ],
+    "correctIndex": 0,
+    "explanation": "Na avaliação inicial da mania, além de checar níveis séricos e adesão, antidepressivos e estimulantes devem ser descontinuados, porque sustentam ou agravam a virada. Os estabilizadores de humor são mantidos e otimizados, não retirados. Também se avalia risco de suicídio, características mistas, agitação psicomotora, heteroagressividade, grau de insight e suporte psicossocial."
+  },
+  {
+    "question": "Paciente com transtorno bipolar tipo I apresenta ciclagem rápida. Qual roteiro de conduta é o recomendado antes de escalonar o esquema farmacológico?",
+    "options": [
+      "tratar hipotireoidismo, excluir antidepressivos e tratar uso de substâncias",
+      "associar antidepressivo tricíclico, elevar o lítio e tratar hipertireoidismo",
+      "suspender o estabilizador de humor e iniciar benzodiazepínico em dose alta",
+      "iniciar eletroconvulsoterapia antes de qualquer ajuste no esquema em uso",
+      "associar clozapina de imediato e retirar todos os antipsicóticos atípicos"
+    ],
+    "correctIndex": 0,
+    "explanation": "Diante de ciclagem rápida, a sequência recomendada é tratar hipotireoidismo se presente, excluir a presença de medicamentos antidepressivos, tratar o uso de substâncias e, se necessário, partir para combinações de fármacos como quetiapina, lítio, ácido valproico ou olanzapina. Antidepressivos pioram a ciclagem, e retirar o estabilizador é o oposto da conduta. A clozapina fica reservada para casos refratários."
+  },
+  {
+    "question": "A ciclagem rápida está presente em qual fração dos casos de transtorno bipolar tipo I?",
+    "options": [
+      "cerca de um terço",
+      "cerca de um décimo",
+      "cerca de dois terços",
+      "cerca de um vigésimo",
+      "praticamente todos"
+    ],
+    "correctIndex": 0,
+    "explanation": "A ciclagem rápida é observada em cerca de um terço dos casos de transtorno bipolar tipo I, o que a torna um achado frequente e não uma raridade. É definida pela ocorrência de quatro ou mais episódios de humor em doze meses. Seu reconhecimento muda a conduta, porque obriga a excluir antidepressivos, hipotireoidismo e uso de substâncias."
+  },
+  {
+    "question": "Sintomas psicóticos ocorrem em qual proporção dos pacientes em episódio maníaco?",
+    "options": [
+      "cerca de metade dos pacientes",
+      "cerca de um décimo dos pacientes",
+      "cerca de um quarto dos pacientes",
+      "cerca de um vigésimo dos casos",
+      "a quase totalidade dos pacientes"
+    ],
+    "correctIndex": 0,
+    "explanation": "Sintomas psicóticos estão presentes em cerca de 50% dos pacientes em mania, e a conduta indicada é associar um antipsicótico atípico ao estabilizador. A presença de psicose durante episódio de humor não afasta o diagnóstico de transtorno bipolar nem impõe, por si só, o diagnóstico de esquizofrenia. Na depressão bipolar com sintomas psicóticos as opções são antipsicótico atípico associado ou eletroconvulsoterapia."
+  },
+  {
+    "question": "Homem de 35 anos em episódio maníaco disfórico, com humor predominantemente irritado, múltiplos episódios de humor prévios e antecedente de traumatismo cranioencefálico. Entre lítio e ácido valproico, o perfil aponta para:",
+    "options": [
+      "ácido valproico, por mania disfórica, múltiplos episódios e trauma craniano",
+      "lítio, por mania clássica eufórica, poucos episódios e história familiar",
+      "lítio, por primeiro episódio de humor e ausência total de comorbidades",
+      "carbamazepina, por delírios incongruentes e história familiar negativa",
+      "lamotrigina, por polaridade depressiva predominante ao longo do curso"
+    ],
+    "correctIndex": 0,
+    "explanation": "O ácido valproico é preferido na mania disfórica ou com humor predominantemente irritado, em pacientes com múltiplos episódios de humor, comorbidade com ansiedade ou uso de substâncias e histórico de traumatismo cranioencefálico. O lítio é a escolha na mania clássica, com poucos episódios e história familiar de bipolaridade. A carbamazepina se destaca na história familiar negativa e no quadro esquizoafetivo com delírios incongruentes com o humor."
+  },
+  {
+    "question": "A carbamazepina é a escolha preferencial no episódio maníaco quando o paciente apresenta:",
+    "options": [
+      "história familiar negativa de bipolaridade em parentes de primeiro grau",
+      "história familiar positiva de bipolaridade em parentes de primeiro grau",
+      "mania clássica eufórica com poucos episódios de humor ao longo da vida",
+      "polaridade depressiva predominante ao longo do curso longitudinal",
+      "apresentação clínica típica sem nenhuma comorbidade psiquiátrica"
+    ],
+    "correctIndex": 0,
+    "explanation": "A carbamazepina se destaca quando a história familiar de transtorno bipolar em parentes de primeiro grau é negativa, no quadro esquizoafetivo com delírios incongruentes com o humor e diante de comorbidade com ansiedade, uso de substâncias ou traumatismo cranioencefálico. História familiar positiva e mania clássica com poucos episódios apontam para o lítio. Polaridade depressiva predominante é característica que favorece a lamotrigina na manutenção."
+  },
+  {
+    "question": "Quais fármacos figuram como opção de primeira linha em monoterapia para o episódio maníaco agudo?",
+    "options": [
+      "lítio ou ácido valproico",
+      "lamotrigina ou bupropiona",
+      "clozapina ou clonazepam",
+      "fluoxetina ou sertralina",
+      "gabapentina ou topiramato"
+    ],
+    "correctIndex": 0,
+    "explanation": "A primeira linha em monoterapia para a mania reúne lítio, quetiapina, ácido valproico, asenapina, aripiprazol, paliperidona, risperidona e cariprazina, todos com nível 1 de evidência. Clozapina e clonazepam aparecem apenas na terceira linha, e antidepressivos não tratam mania. A lamotrigina não tem eficácia antimaníaca estabelecida, embora seja primeira linha na manutenção."
+  },
+  {
+    "question": "No tratamento do episódio depressivo de pacientes com transtorno bipolar tipo II, qual é a única recomendação de primeira linha?",
+    "options": [
+      "quetiapina em monoterapia",
+      "lamotrigina em monoterapia",
+      "venlafaxina em monoterapia",
+      "carbamazepina em monoterapia",
+      "escitalopram em monoterapia"
+    ],
+    "correctIndex": 0,
+    "explanation": "Para a depressão do transtorno bipolar tipo II, a quetiapina é a única indicação de primeira linha, com nível 1 de evidência. Lítio, lamotrigina, bupropiona adjuvante, eletroconvulsoterapia, sertralina e venlafaxina ficam na segunda linha, sendo que sertralina e venlafaxina são reservadas à depressão pura, sem características mistas. Carbamazepina e escitalopram aparecem apenas na terceira linha, e na fase de manutenção."
+  },
+  {
+    "question": "Paciente com transtorno bipolar cujos episódios agudos são, ao longo dos anos, predominantemente depressivos. Na escolha do fármaco de manutenção, esse perfil aponta para:",
+    "options": [
+      "lamotrigina como estabilizador",
+      "carbamazepina como estabilizador",
+      "risperidona como estabilizador",
+      "clorpromazina como estabilizador",
+      "oxcarbazepina como estabilizador"
+    ],
+    "correctIndex": 0,
+    "explanation": "A lamotrigina é a escolha de manutenção quando a polaridade predominante dos episódios é depressiva, e tem nível 1 de evidência nessa fase. Ela protege mais do polo depressivo do que do maníaco, e por isso não é opção para tratar mania aguda. A carbamazepina fica reservada à doença atípica, ao transtorno bipolar tipo II e ao transtorno esquizoafetivo."
+  },
+  {
+    "question": "Na fase de manutenção do transtorno bipolar, a escolha do fármaco leva em conta o perfil clínico. Qual associação está correta?",
+    "options": [
+      "lítio para apresentação típica com história familiar de bipolaridade",
+      "lítio para doença atípica com comorbidade por uso de substâncias",
+      "lamotrigina para episódios agudos com características mistas",
+      "quetiapina para polaridade depressiva claramente predominante",
+      "carbamazepina para apresentação típica sem nenhuma comorbidade"
+    ],
+    "correctIndex": 0,
+    "explanation": "O lítio é o fármaco de manutenção indicado na apresentação clínica típica, com história familiar de bipolaridade e sem comorbidade com uso de substâncias ou ansiedade. A quetiapina é favorecida quando os episódios cursam com características mistas, e a lamotrigina quando a polaridade depressiva predomina. A carbamazepina é reservada à doença atípica, ao tipo II e ao transtorno esquizoafetivo."
+  },
+  {
+    "question": "Na primeira avaliação de um paciente com transtorno bipolar, além do hemograma, das enzimas hepáticas e do perfil lipídico e glicêmico, a rotina laboratorial inclui especificamente:",
+    "options": [
+      "TSH, creatinina sérica com filtração glomerular estimada e urinálise",
+      "cortisol salivar, gasometria arterial e proteína C-reativa quantitativa",
+      "eletroencefalograma de rotina, punção lombar e sorologia para sífilis",
+      "ressonância magnética de crânio e tomografia por emissão de pósitrons",
+      "vitamina B12, ácido fólico e pesquisa de anticorpos antinucleares"
+    ],
+    "correctIndex": 0,
+    "explanation": "A avaliação inicial pede hemograma com plaquetas, enzimas hepáticas, glicemia de jejum e hemoglobina glicada, perfil lipídico, triglicerídeos, eletrólitos e cálcio, bilirrubinas, coagulograma, urinálise, creatinina com estimativa da taxa de filtração glomerular e TSH. Função renal e tireoidiana importam porque o lítio afeta ambas. Eletrocardiograma entra acima dos 40 anos ou por indicação clínica, e teste de gravidez em mulheres em idade reprodutiva."
+  },
+  {
+    "question": "Paciente de 42 anos em uso crônico de lítio, estável. Qual conjunto de exames deve compor o acompanhamento laboratorial de rotina?",
+    "options": [
+      "litemia, creatinina com filtração glomerular estimada e TSH",
+      "litemia, hemograma semanal e dosagem de prolactina sérica",
+      "litemia, enzimas hepáticas semanais e amilase pancreática",
+      "litemia, eletroencefalograma anual e dosagem de cortisol",
+      "litemia, sorologias virais e dosagem de vitamina B12 sérica"
+    ],
+    "correctIndex": 0,
+    "explanation": "O lítio tem janela terapêutica estreita e toxicidade renal e tireoidiana, de modo que o seguimento exige litemia, creatinina com estimativa da taxa de filtração glomerular e TSH. Hemograma semanal é a exigência da clozapina, pelo risco de agranulocitose. A dosagem de prolactina só se justifica quando há uso de fármacos com esse efeito colateral."
+  },
+  {
+    "question": "Qual é o atraso médio entre o aparecimento dos primeiros sintomas do transtorno bipolar e o diagnóstico formal?",
+    "options": [
+      "cerca de dez anos",
+      "cerca de dois anos",
+      "cerca de seis meses",
+      "cerca de vinte anos",
+      "cerca de trinta anos"
+    ],
+    "correctIndex": 0,
+    "explanation": "Há um atraso médio de dez anos entre os primeiros sintomas e o diagnóstico formal de transtorno bipolar. Esse intervalo é clinicamente relevante porque a demora no diagnóstico correto está associada a pior prognóstico, maior refratariedade e mais prejuízo cognitivo e social. A alta taxa de erro diagnóstico inicial, sobretudo a rotulagem como depressão unipolar, é o principal motor desse atraso."
+  },
+  {
+    "question": "Comparadas à população geral, as pessoas com transtorno bipolar apresentam risco de morte por suicídio aumentado em:",
+    "options": [
+      "20 a 30 vezes",
+      "2 a 3 vezes",
+      "5 a 6 vezes",
+      "80 a 90 vezes",
+      "10 a 12 vezes"
+    ],
+    "correctIndex": 0,
+    "explanation": "O risco de morte por suicídio é 20 a 30 vezes maior entre pessoas com transtorno bipolar do que na população geral, e o transtorno pode responder por até um quarto de todos os suicídios. Esse risco é ainda mais alto quando há comorbidade com transtorno por uso de álcool. É por isso que a avaliação de comportamentos de risco abre o roteiro de conduta tanto na depressão quanto na mania."
+  },
+  {
+    "question": "A expectativa de vida no transtorno bipolar é reduzida em cerca de nove anos. Essa redução decorre principalmente de:",
+    "options": [
+      "suicídio e aumento da mortalidade por doenças cardiovasculares",
+      "suicídio e aumento da mortalidade por neoplasias hematológicas",
+      "suicídio e aumento da mortalidade por doenças infecciosas agudas",
+      "efeitos adversos do lítio sobre a função renal e sobre a tireoide",
+      "acidentes de trânsito durante os episódios maníacos com psicose"
+    ],
+    "correctIndex": 0,
+    "explanation": "A queda de nove anos na expectativa de vida decorre não só do suicídio, mas também do aumento da taxa de mortalidade relacionada a doenças cardiovasculares. Síndrome metabólica é mais comum nessa população do que na população geral, o que reforça a necessidade de acompanhar peso, pressão arterial, glicemia e perfil lipídico. Por isso o rastreio metabólico integra a avaliação inicial e o seguimento."
+  },
+  {
+    "question": "Em seguimento prospectivo de longo prazo, a predominância de sintomas depressivos sobre os de mania ou hipomania foi de:",
+    "options": [
+      "3:1 no tipo I e 37:1 no tipo II",
+      "37:1 no tipo I e 3:1 no tipo II",
+      "1:3 no tipo I e 1:37 no tipo II",
+      "1:1 no tipo I e 2:1 no tipo II",
+      "5:1 no tipo I e 10:1 no tipo II"
+    ],
+    "correctIndex": 0,
+    "explanation": "A razão entre sintomas depressivos e sintomas de mania ou hipomania foi de 3:1 no tipo I e de 37:1 no tipo II, e os pacientes permaneceram sintomáticos durante cerca de metade do tempo de seguimento, 46,6% no tipo I e 55,8% no tipo II. A depressão é, portanto, o polo que domina o curso, sobretudo no tipo II. Isso explica por que o transtorno é tão frequentemente confundido com depressão unipolar."
+  },
+  {
+    "question": "Qual conjunto de características clínicas aponta para bipolaridade, e não para depressão unipolar, em um paciente em episódio depressivo?",
+    "options": [
+      "hipersonia, hiperfagia, primeiro episódio antes dos 25 anos e psicose",
+      "insônia inicial, perda de apetite e primeiro episódio após os 25 anos",
+      "queixas somáticas, nível de atividade normal e episódio atual longo",
+      "humor deprimido persistente, anedonia e história familiar negativa",
+      "fadiga, lentificação leve, episódio único e boa resposta a um ISRS"
+    ],
+    "correctIndex": 0,
+    "explanation": "Apontam para bipolaridade: hipersonia, hiperfagia ou ganho de peso, retardo ou agitação psicomotora, sintomas psicóticos, culpa patológica, labilidade do humor, irritabilidade e pensamento acelerado. No curso, primeiro episódio depressivo antes dos 25 anos, múltiplos episódios e história familiar positiva. A unipolaridade cursa com insônia inicial, perda de apetite, atividade normal, queixas somáticas, início após os 25 anos e episódio atual de longa duração."
+  },
+  {
+    "question": "Na distinção entre sintomas maníacos e transtorno de déficit de atenção/hiperatividade, qual achado aponta para mania?",
+    "options": [
+      "necessidade de sono reduzida com elação episódica e prolongada",
+      "insônia inicial com hiperatividade presente desde a infância",
+      "distratibilidade contínua, sem variação ao longo dos últimos anos",
+      "irritabilidade constante desde os primeiros anos escolares",
+      "impulsividade estável com dificuldade persistente de organização"
+    ],
+    "correctIndex": 0,
+    "explanation": "Na mania a elação é episódica, prolongada e inapropriada, há necessidade de sono reduzida e a grandiosidade traz aumento não característico de confiança ou autoimportância. No TDAH a elação, quando presente, não é episódica; o sono cursa com insônia, e a grandiosidade não é sintoma comum. Hiperatividade e distratibilidade fazem parte dos critérios de TDAH, mas nele não são episódicas, e é justamente a natureza episódica que marca a bipolaridade."
+  },
+  {
+    "question": "Qual princípio orienta a diferenciação entre transtorno bipolar e transtorno da personalidade borderline?",
+    "options": [
+      "no bipolar os sintomas formam episódio distinto do comportamento habitual",
+      "no bipolar a impulsividade é contínua desde a adolescência inicial",
+      "no borderline os sintomas formam episódios nitidamente delimitados",
+      "no borderline a labilidade do humor é achado absolutamente raro",
+      "no bipolar a labilidade do humor nunca aparece em nenhum momento"
+    ],
+    "correctIndex": 0,
+    "explanation": "Labilidade do humor e impulsividade são comuns às duas condições, e o que define bipolaridade é que os sintomas representem um episódio distinto, com aumento notável em relação ao comportamento habitual do indivíduo. No borderline o padrão é contínuo e ligado a gatilhos interpessoais. Regra prática de peso: não se deve firmar diagnóstico de transtorno da personalidade durante um episódio de humor não tratado."
+  },
+  {
+    "question": "Em paciente com uso ativo de substâncias e sintomas de humor, o diagnóstico primário de transtorno bipolar deve apoiar-se em:",
+    "options": [
+      "sintomas que persistem depois que as substâncias deixam de ser usadas",
+      "sintomas que surgem apenas durante a intoxicação aguda pela substância",
+      "sintomas que aparecem somente nas primeiras horas de abstinência aguda",
+      "resposta imediata ao lítio ainda durante o período de uso da substância",
+      "história familiar positiva, seja qual for o padrão temporal dos sintomas"
+    ],
+    "correctIndex": 0,
+    "explanation": "O diagnóstico primário de transtorno bipolar deve ser estabelecido com base nos sintomas que persistem depois que as substâncias não estão mais sendo usadas. Sintomas restritos à intoxicação ou à abstinência configuram transtorno do humor induzido por substância. Isso é decisivo na prática, já que transtorno por uso de substâncias ocorre em mais da metade dos pacientes com tipo I e em 37% dos com tipo II."
+  },
+  {
+    "question": "No transtorno bipolar tipo II, a distribuição aproximada das comorbidades mentais ao longo da vida é de:",
+    "options": [
+      "75% com ansiedade, 37% com uso de substâncias e 15% com transtorno alimentar",
+      "15% com ansiedade, 75% com uso de substâncias e 37% com transtorno alimentar",
+      "37% com ansiedade, 15% com uso de substâncias e 75% com transtorno alimentar",
+      "25% com ansiedade, 10% com uso de substâncias e 50% com transtorno alimentar",
+      "95% com ansiedade, 80% com uso de substâncias e 60% com transtorno alimentar"
+    ],
+    "correctIndex": 0,
+    "explanation": "No tipo II, cerca de 60% dos pacientes têm três ou mais transtornos mentais comórbidos, 75% têm transtorno de ansiedade e 37% têm transtorno por uso de substâncias. Cerca de 15% apresentam pelo menos um transtorno alimentar ao longo da vida, sendo a compulsão alimentar mais comum que bulimia e anorexia. Em crianças e adolescentes o transtorno de ansiedade costuma preceder o quadro bipolar."
+  },
+  {
+    "question": "Sobre o componente genético do transtorno bipolar, qual afirmação está correta?",
+    "options": [
+      "herdabilidade de 58% e concordância de 40 a 80% entre gêmeos monozigóticos",
+      "herdabilidade de 10% e concordância de 5 a 15% entre gêmeos monozigóticos",
+      "herdabilidade de 58% e concordância de 40 a 80% apenas entre dizigóticos",
+      "herdabilidade de 95% e concordância de 95 a 99% entre gêmeos monozigóticos",
+      "herdabilidade de 30% e concordância de 20 a 25% entre irmãos não gêmeos"
+    ],
+    "correctIndex": 0,
+    "explanation": "A herdabilidade genética estimada é de 58%, com concordância de 40 a 80% entre gêmeos monozigóticos, e o risco é em média dez vezes maior entre parentes adultos de pessoas com o transtorno. Estudos de associação genômica ampla identificaram genes como CACNA1C, do canal de cálcio do tipo L, NCAN e ODZ4. Há sobreposição de suscetibilidade genética entre bipolaridade e esquizofrenia."
+  },
+  {
+    "question": "Homem de 38 anos com transtorno bipolar tipo I mantém mania apesar de esquemas adequados com lítio, ácido valproico e dois antipsicóticos atípicos. Qual é a opção farmacológica com evidência nessa situação?",
+    "options": [
+      "associar clozapina ao esquema em uso",
+      "associar lamotrigina ao esquema em uso",
+      "associar bupropiona ao esquema em uso",
+      "associar gabapentina ao esquema em uso",
+      "associar escitalopram ao esquema em uso"
+    ],
+    "correctIndex": 0,
+    "explanation": "A clozapina é uma das poucas opções farmacológicas efetivas na mania resistente ao tratamento. Revisões sistemáticas mostram melhora dos sintomas de humor e psicóticos, redução do número e da duração das hospitalizações, redução do número de psicotrópicos, menos ideação suicida e comportamento agressivo e melhora do funcionamento social. As limitações são amostras pequenas, definições inconsistentes de resistência e seguimento curto."
+  },
+  {
+    "question": "Qual modalidade de psicoeducação concentrou as evidências de redução de recorrência e de hospitalizações no transtorno bipolar?",
+    "options": [
+      "psicoeducação em grupo e familiar",
+      "psicoeducação individual e on-line",
+      "psicoeducação individual e domiciliar",
+      "psicoeducação on-line e por telefone",
+      "psicoeducação por telefone e escrita"
+    ],
+    "correctIndex": 0,
+    "explanation": "Revisão de 40 ensaios randomizados com 4.507 participantes mostrou que 70% dos estudos focaram psicoeducação em grupo ou familiar, e foram essas as modalidades com resultados consistentes. A psicoeducação em grupo reduziu recorrência e hospitalizações, aumentou o tempo até a recaída, melhorou a adesão e os níveis séricos de lítio e reduziu o estigma. As modalidades individual e on-line tiveram achados inconsistentes."
+  },
+  {
+    "question": "No modelo de estadiamento e neuroprogressão do transtorno bipolar, o terceiro estágio clínico caracteriza-se por:",
+    "options": [
+      "episódios recorrentes com declínio no funcionamento e na cognição",
+      "poucos episódios com funcionamento normal entre um episódio e outro",
+      "risco aumentado por história familiar e sintomas subsindrômicos",
+      "sintomas de ansiedade, problemas de sono e dificuldade de aprendizagem",
+      "episódio depressivo único ainda sem qualquer repercussão funcional"
+    ],
+    "correctIndex": 0,
+    "explanation": "O modelo de estadiamento descreve três estágios: risco aumentado por história familiar e sintomas subsindrômicos preditivos; poucos episódios com funcionamento normal nos períodos interepisódicos; e episódios recorrentes com declínio no funcionamento e na cognição. Maior número de episódios associa-se a maior risco de novos episódios, maior gravidade, episódios mais longos e mais refratariedade. Esse curso progressivo, porém, não ocorre em todos os pacientes."
+  }
+];
+
+var LETTERS = ['A','B','C','D','E','F'];
+var SHUFFLE = true, LOCK = true;
+
+var S = { view:'home', started:false, finished:false, i:0, order:[], answers:[], open:{}, filter:'all', warn:false, chat:{} };
+
+function esc(s){ return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
+function pad(n){ return String(n).padStart(2,'0'); }
+
+function build(){
+  var qs = QUIZ.map(function(q,id){ return { question:q.question, options:q.options.slice(), correctIndex:q.correctIndex, explanation:q.explanation, image:q.image, imageCaption:q.imageCaption, id:id }; });
+  if (!SHUFFLE) return qs;
+  for (var i=qs.length-1;i>0;i--){ var j=Math.floor(Math.random()*(i+1)); var t=qs[i]; qs[i]=qs[j]; qs[j]=t; }
+  return qs.map(function(q){
+    var correct = q.options[q.correctIndex], o = q.options.slice();
+    for (var i=o.length-1;i>0;i--){ var j=Math.floor(Math.random()*(i+1)); var t=o[i]; o[i]=o[j]; o[j]=t; }
+    q.options = o; q.correctIndex = o.indexOf(correct); return q;
+  });
+}
+
+/* ── ações ─────────────────────────────────────────────────────────────────── */
+var A = {
+  home:      function(){ S.view='home'; S.started=false; S.finished=false; up(0); },
+  resumo:    function(){ S.view='resumo'; up(0); },
+  start:     function(){ var o=build(); S.view='quiz'; S.started=true; S.finished=false; S.i=0; S.order=o;
+                         S.answers=new Array(o.length).fill(null); S.open={}; S.filter='all'; S.warn=false; up(0); },
+  restart:   function(){ A.start(); },
+  sair:      function(){ S.view='home'; S.started=false; up(0); },   // guarda as respostas
+  retomar:   function(){ S.view='quiz'; S.started=true; S.finished=false; S.warn=false; up(0); },
+  go:        function(n){ if(n<0||n>S.order.length-1) return; S.i=n; S.warn=false; render(); },
+  jump:      function(n){ if(S.finished){ S.finished=false; S.i=n; S.warn=false; } else { if(n<0||n>S.order.length-1) return; S.i=n; S.warn=false; } up(0,'smooth'); },
+  pick:      function(n){ if(LOCK && S.answers[S.i]!==null) return; S.answers[S.i]=n; render(); },
+  prev:      function(){ A.go(S.i-1); },
+  next:      function(){ if(S.i<S.order.length-1) A.go(S.i+1); else A.finish(); },
+  finish:    function(){ var b=S.answers.filter(function(a){return a===null}).length;
+                         if(b>0 && !S.warn){ S.warn=true; render(); return; } S.finished=true; S.warn=false; up(0); },
+  force:     function(){ S.finished=true; S.warn=false; up(0); },
+  gotoBlank: function(){ var n=S.answers.findIndex(function(a){return a===null}); if(n>=0) A.go(n); },
+  back:      function(){ S.finished=false; S.warn=false; up(0); },
+  filter:    function(k){ S.filter=k; render(); },
+  toggle:    function(n){ S.open[n]=!S.open[n]; render(); },
+  toggleAll: function(){ var r=reviewList(), all=r.length>0 && r.every(function(x){return S.open[x.idx]});
+                         S.open={}; if(!all) r.forEach(function(x){ S.open[x.idx]=true; }); render(); }
+};
+function up(top, beh){ render(); window.scrollTo({ top: top||0, behavior: beh||'auto' }); }
+
+/* Aberto por duplo clique (file://) volta para o indice local; servido pela web,
+   volta para o publicado. Os dois listam os mesmos materiais. */
+function idxHref(){
+  var local = (typeof location !== 'undefined' && location.protocol === 'file:');
+  return local ? '../index_local.html' : '../index.html';
+}
+function emAndamento(){
+  return S.order.length > 0 && !S.finished &&
+         S.answers.some(function(a){ return a !== null; });
+}
+
+/* ── header ────────────────────────────────────────────────────────────────── */
+function renderHeader(){
+  var mono = "font-family:'IBM Plex Mono',monospace";
+  var left =
+    '<div style="min-width:0">' +
+      '<div style="display:flex;align-items:center;gap:8px;'+mono+';font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:#8a8578">' +
+        '<a href="'+idxHref()+'" class="h-ink" style="color:#2b57cc;text-decoration:none;white-space:nowrap">\u2190 Materiais</a>' +
+        '<span style="color:#d3cec4">/</span>' +
+        '<span style="overflow:hidden;text-overflow:ellipsis;white-space:nowrap">'+esc(EYEBROW)+'</span>' +
+      '</div>' +
+      '<h1 style="margin:1px 0 0;font-family:\'Newsreader\',Georgia,serif;font-size:20px;font-weight:500;letter-spacing:-.01em;line-height:1.15">'+esc(TITLE)+'</h1>' +
+    '</div>';
+
+  var right = '';
+  if (S.view === 'quiz' && S.started) {
+    var hit = counts().hit;
+    right = '<div style="display:flex;align-items:center;gap:10px;flex-shrink:0">' +
+              '<button type="button" data-act="sair" class="h-line" style="background:none;border:1px solid #ddd8ce;border-radius:9px;padding:6px 11px;'+mono+';font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;color:#5b6478;cursor:pointer;transition:border-color .15s ease">Sair</button>' +
+              '<div style="display:flex;align-items:center;gap:6px">' +
+                '<span style="'+mono+';font-size:15px;font-weight:600;letter-spacing:-.02em">'+hit+'</span>' +
+                '<span style="'+mono+';font-size:11px;color:#8a8578">/ '+S.order.length+'</span>' +
+              '</div></div>';
+  } else if (S.view !== 'home') {
+    right = '<button type="button" data-act="home" class="h-line" style="flex-shrink:0;background:none;border:1px solid #ddd8ce;border-radius:9px;padding:7px 13px;'+mono+';font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:#5b6478;cursor:pointer;transition:border-color .15s ease">← Início</button>';
+  }
+
+  var html = '<div style="display:flex;align-items:baseline;justify-content:space-between;gap:12px;margin-bottom:'+(S.view==='quiz'&&S.started?'10px':'2px')+'">'+left+right+'</div>';
+
+  if (S.view === 'quiz' && S.started) {
+    var c = counts();
+    var rail = S.order.map(function(q,n){
+      var a = S.answers[n], cur = n===S.i && !S.finished, bg = '#d3cec4';
+      if (a!==null) bg = (a===q.correctIndex) ? '#2e7d55' : '#c04437';
+      if (cur && a===null) bg = '#121a2b';
+      var st = a===null ? 'em branco' : (a===q.correctIndex ? 'correta' : 'incorreta');
+      return '<button type="button" data-act="jump" data-n="'+n+'" title="Questão '+(n+1)+' — '+st+'" aria-label="Questão '+(n+1)+' — '+st+'" style="flex:1 1 0;min-width:0;background:none;border:0;padding:13px 0;margin:0;cursor:pointer;display:flex;align-items:center;justify-content:center">' +
+             '<span style="display:block;width:100%;border-radius:99px;transition:height .18s ease,background .18s ease,box-shadow .18s ease;height:'+(cur?'17px':'9px')+';background:'+bg+';box-shadow:'+(cur?'0 0 0 3px rgba(18,26,43,.13)':'none')+'"></span></button>';
+    }).join('');
+    html += '<div><div style="display:flex;align-items:center;gap:3px">'+rail+'</div>' +
+            '<div style="display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:-2px">' +
+              '<div style="'+mono+';font-size:11px;letter-spacing:.04em;color:#5b6478">Questão '+pad(S.i+1)+' / '+S.order.length+'</div>' +
+              '<div style="display:flex;align-items:center;gap:12px;'+mono+';font-size:10.5px;color:#8a8578">' +
+                dot('#2e7d55',c.hit)+dot('#c04437',c.miss)+dot('#d3cec4',c.blank) +
+              '</div></div></div>';
+  }
+  document.getElementById('hdr').innerHTML = html;
+}
+function dot(color,n){ return '<span style="display:flex;align-items:center;gap:5px"><span style="width:7px;height:7px;border-radius:99px;background:'+color+';display:block"></span>'+n+'</span>'; }
+
+function counts(){
+  var hit=0, miss=0, blank=0;
+  S.answers.forEach(function(a,n){
+    if (a===null) blank++;
+    else if (S.order[n] && a===S.order[n].correctIndex) hit++;
+    else miss++;
+  });
+  return { hit:hit, miss:miss, blank:blank, total:S.order.length };
+}
+
+/* ── tela inicial ──────────────────────────────────────────────────────────── */
+function renderHome(){
+  var mono = "font-family:'IBM Plex Mono',monospace";
+  var secoes = (document.getElementById('resumoSrc').textContent.match(/<h2/g)||[]).length;
+  var cell = function(v,l){
+    return '<div style="background:#faf9f6;padding:16px 14px">' +
+      '<div style="'+mono+';font-size:22px;font-weight:500;letter-spacing:-.03em">'+v+'</div>' +
+      '<div style="'+mono+';font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:#8a8578;margin-top:3px">'+l+'</div></div>';
+  };
+  var card = function(act,tag,titulo,desc,cta){
+    return '<button type="button" data-act="'+act+'" class="h-card" style="display:flex;flex-direction:column;align-items:flex-start;gap:0;text-align:left;background:#fff;border:1px solid #e4e0d8;border-radius:18px;padding:24px 22px;cursor:pointer;transition:border-color .16s ease,transform .14s ease;box-shadow:0 1px 2px rgba(18,26,43,.04),0 12px 28px -20px rgba(18,26,43,.18)">' +
+      '<div style="'+mono+';font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:#2b57cc;margin-bottom:12px">'+tag+'</div>' +
+      '<div style="font-family:\'Newsreader\',Georgia,serif;font-size:26px;font-weight:500;letter-spacing:-.02em;line-height:1.15;margin-bottom:8px">'+titulo+'</div>' +
+      '<div style="font-size:14px;line-height:1.6;color:#5b6478;margin-bottom:18px;text-wrap:pretty">'+desc+'</div>' +
+      '<div style="'+mono+';font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:#121a2b">'+cta+'</div></button>';
+  };
+
+  document.getElementById('stage').innerHTML =
+    '<section style="padding:56px 0 0;animation:qFade .3s ease">' +
+      '<div style="'+mono+';font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:#2b57cc;margin-bottom:16px">Material de revisão</div>' +
+      '<h2 style="font-family:\'Newsreader\',Georgia,serif;font-size:40px;line-height:1.08;font-weight:400;letter-spacing:-.025em;margin:0 0 18px;text-wrap:pretty">'+esc(SUBTITLE)+'</h2>' +
+      '<p style="font-size:15.5px;line-height:1.65;color:#5b6478;margin:0 0 30px;max-width:52ch;text-wrap:pretty">'+esc(INTRO)+'</p>' +
+      '<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(108px,1fr));gap:1px;background:#e4e0d8;border:1px solid #e4e0d8;border-radius:14px;overflow:hidden;margin-bottom:32px">' +
+        cell(QUIZ.length,'Questões') + cell(secoes,'Seções') + cell('~'+Math.round(QUIZ.length*0.75),'Minutos') +
+      '</div>' +
+      '<div class="home-grid" style="display:grid;grid-template-columns:1fr 1fr;gap:12px">' +
+        (emAndamento()
+          ? card('retomar','Em andamento','Quiz',
+                 'Você parou na questão '+pad(S.i+1)+' de '+S.order.length+', com '+
+                 (S.order.length-counts().blank)+' respondida'+((S.order.length-counts().blank)===1?'':'s')+
+                 '. Suas respostas continuam guardadas.','Retomar →')
+          : card('start','Praticar','Quiz', QUIZ.length+' questões de múltipla escolha, com explicação assim que você responde e gabarito comentado no fim.','Começar →')) +
+        card('resumo','Estudar','Resumo','O conteúdo da aula em texto corrido, organizado em '+secoes+' seções para leitura antes da prova.','Ler →') +
+      '</div>' +
+      '<div style="margin-top:26px;display:flex;flex-wrap:wrap;align-items:center;gap:8px 18px;'+mono+';font-size:11px;color:#8a8578">' +
+        '<span>← →&nbsp; navegar</span><span>1–'+maxOpts()+'&nbsp; responder</span><span>Enter&nbsp; avançar</span>' +
+        (emAndamento() ? '<button type="button" data-act="start" class="h-ink" style="background:none;border:0;padding:0;'+mono+';font-size:11px;color:#8a8578;cursor:pointer;text-decoration:underline;text-underline-offset:3px">recomeçar do zero</button>' : '') +
+        '</div>' +
+    '</section>';
+}
+function maxOpts(){ return QUIZ.reduce(function(m,q){ return Math.max(m,q.options.length); },0); }
+
+/* ── resumo ────────────────────────────────────────────────────────────────── */
+function renderResumo(){
+  document.getElementById('stage').innerHTML =
+    '<section style="padding:34px 0 0;animation:qFade .3s ease">' +
+      '<div style="font-family:\'IBM Plex Mono\',monospace;font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:#2b57cc;margin-bottom:14px">Resumo</div>' +
+      '<div class="rsm">' + document.getElementById('resumoSrc').textContent + '</div>' +
+      '<div style="display:flex;flex-wrap:wrap;gap:9px;margin-top:38px;padding-top:24px;border-top:1px solid #e4e0d8">' +
+        '<button type="button" data-act="start" class="h-darkflat" style="background:#121a2b;color:#f5f3ef;border:0;border-radius:11px;padding:13px 24px;font-size:14px;font-weight:500;cursor:pointer;transition:background .16s ease">Fazer o quiz →</button>' +
+        '<button type="button" data-act="home" class="h-line" style="background:none;border:1px solid #ddd8ce;border-radius:11px;padding:13px 22px;font-size:14px;cursor:pointer;transition:border-color .15s ease">Voltar ao início</button>' +
+      '</div></section>';
+}
+
+/* imagem da questao — data URI ja resolvida pelo montar_quiz.py */
+function figura(q, cls){
+  if (!q.image) return '';
+  return '<figure class="fig'+(cls?' '+cls:'')+'"><img src="'+q.image+'" alt="'+esc(q.imageCaption||'Imagem da questão')+'">' +
+         (q.imageCaption ? '<figcaption>'+esc(q.imageCaption)+'</figcaption>' : '') + '</figure>';
+}
+
+/* ── questão ───────────────────────────────────────────────────────────────── */
+function renderQuestion(){
+  var mono = "font-family:'IBM Plex Mono',monospace";
+  var q = S.order[S.i], ans = S.answers[S.i], reveal = ans !== null;
+
+  var status = 'Não respondida', sColor = '#8a8578';
+  if (reveal) { var ok = ans===q.correctIndex; status = ok?'Você acertou':'Você errou'; sColor = ok?'#2e7d55':'#c04437'; }
+
+  var opts = q.options.map(function(text,n){
+    var isC = n===q.correctIndex, isMine = n===ans;
+    var bd='#e4e0d8', bg='#fff', fg='#121a2b', bBg='#f2efe9', bFg='#8a8578', mark='', mColor='', op='1', hbd='#2b57cc';
+    if (reveal) {
+      op = (isC||isMine) ? '1' : '.62';
+      if (isC)               { bd='#8fc7a7'; bg='#eef7f1'; fg='#1f5c3e'; bBg='#2e7d55'; bFg='#fff'; mark='✓'; mColor='#2e7d55'; }
+      if (isMine && !isC)    { bd='#e0a49a'; bg='#fdf0ee'; fg='#8f2f25'; bBg='#c04437'; bFg='#fff'; mark='✕'; mColor='#c04437'; }
+    } else if (isMine)       { bd='#121a2b'; bg='#f7f6f2'; bBg='#121a2b'; bFg='#f5f3ef'; }
+    var locked = reveal && LOCK;
+    return '<button type="button" data-act="pick" data-n="'+n+'" class="h-opt'+(locked?' locked':'')+'" style="--hbd:'+hbd+';display:flex;gap:13px;align-items:flex-start;width:100%;text-align:left;padding:14px 15px;border-radius:13px;font-size:15px;line-height:1.5;transition:border-color .15s ease,background .15s ease,transform .12s ease;border:1.5px solid '+bd+';background:'+bg+';color:'+fg+';cursor:'+(locked?'default':'pointer')+';opacity:'+op+'">' +
+      '<span style="flex-shrink:0;width:24px;height:24px;border-radius:7px;display:flex;align-items:center;justify-content:center;'+mono+';font-size:11.5px;font-weight:600;margin-top:1px;background:'+bBg+';color:'+bFg+'">'+LETTERS[n]+'</span>' +
+      '<span style="flex:1;min-width:0;text-wrap:pretty">'+esc(text)+'</span>' +
+      (mark ? '<span style="flex-shrink:0;'+mono+';font-size:14px;font-weight:600;margin-top:1px;color:'+mColor+'">'+mark+'</span>' : '') +
+      '</button>';
+  }).join('');
+
+  var expl = reveal ? '<div style="margin-top:20px;padding:16px 18px;background:#f7f6f2;border-left:2.5px solid #2b57cc;border-radius:0 12px 12px 0;animation:qFade .26s ease">' +
+      '<div style="'+mono+';font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:#2b57cc;margin-bottom:8px">Por quê</div>' +
+      '<p style="margin:0;font-size:14.5px;line-height:1.68;color:#39404f;text-wrap:pretty">'+esc(q.explanation)+'</p></div>' : '';
+
+  var blank = counts().blank;
+  var warn = S.warn ? '<div style="margin-top:14px;padding:15px 17px;background:#fdf7e9;border:1px solid #e8d5a3;border-radius:14px;animation:qFade .22s ease">' +
+      '<p style="margin:0 0 12px;font-size:14px;line-height:1.55;color:#6b5620">'+blank+(blank===1?' questão ainda está em branco.':' questões ainda estão em branco.')+' Você pode voltar nelas ou finalizar assim mesmo.</p>' +
+      '<div style="display:flex;flex-wrap:wrap;gap:8px">' +
+        '<button type="button" data-act="gotoBlank" style="background:#121a2b;color:#f5f3ef;border:0;border-radius:9px;padding:9px 16px;font-size:13px;font-weight:500;cursor:pointer">Ir para a 1ª em branco</button>' +
+        '<button type="button" data-act="force" style="background:none;color:#6b5620;border:1px solid #e8d5a3;border-radius:9px;padding:9px 16px;font-size:13px;cursor:pointer">Finalizar assim mesmo</button>' +
+      '</div></div>' : '';
+
+  var last = S.i === S.order.length-1;
+  var early = !last && (S.order.length - blank) > 0;
+
+  document.getElementById('stage').innerHTML =
+    '<section style="padding:26px 0 0">' +
+      '<article style="background:#fff;border:1px solid #e4e0d8;border-radius:18px;padding:26px 22px 24px;box-shadow:0 1px 2px rgba(18,26,43,.04),0 12px 28px -18px rgba(18,26,43,.18)">' +
+        '<div style="display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:14px">' +
+          '<div style="'+mono+';font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:#2b57cc">Questão '+pad(S.i+1)+'</div>' +
+          '<div style="'+mono+';font-size:10.5px;letter-spacing:.06em;color:'+sColor+'">'+status+'</div>' +
+        '</div>' +
+        '<h2 style="font-family:\'Newsreader\',Georgia,serif;font-size:22px;line-height:1.42;font-weight:400;letter-spacing:-.012em;margin:0 0 22px;text-wrap:pretty">'+esc(q.question)+'</h2>' +
+        figura(q, 'qfig') +
+        '<div style="display:flex;flex-direction:column;gap:9px">'+opts+'</div>' + expl +
+        (reveal ? chatBox(q, ans===q.correctIndex) : '') +
+      '</article>' + warn +
+      '<div style="display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:18px">' +
+        '<button type="button" data-act="prev" class="h-line" style="background:none;border:1px solid #ddd8ce;border-radius:11px;padding:12px 18px;font-size:14px;cursor:pointer;transition:border-color .15s ease,color .15s ease;color:'+(S.i===0?'#c4bfb4':'#121a2b')+';pointer-events:'+(S.i===0?'none':'auto')+'">← Anterior</button>' +
+        '<div style="display:flex;align-items:center;gap:8px">' +
+          (early ? '<button type="button" data-act="finish" class="h-ink" style="background:none;border:0;padding:12px 6px;'+mono+';font-size:11.5px;letter-spacing:.06em;text-transform:uppercase;color:#8a8578;cursor:pointer;text-decoration:underline;text-underline-offset:3px">Finalizar</button>' : '') +
+          '<button type="button" data-act="next" class="h-darkflat" style="background:#121a2b;color:#f5f3ef;border:0;border-radius:11px;padding:12px 22px;font-size:14px;font-weight:500;cursor:pointer;transition:background .16s ease">'+(last?'Finalizar':'Próxima →')+'</button>' +
+        '</div></div></section>';
+}
+
+/* ── resultado + gabarito comentado ────────────────────────────────────────── */
+function reviewList(){
+  return S.order.map(function(q,n){
+    var a = S.answers[n], ok = a!==null && a===q.correctIndex;
+    return { idx:n, ok:ok, blank:a===null, q:q, a:a };
+  }).filter(function(r){
+    return S.filter==='all' || (S.filter==='wrong'&&!r.ok&&!r.blank) || (S.filter==='right'&&r.ok) || (S.filter==='blank'&&r.blank);
+  });
+}
+
+function renderResult(){
+  var mono = "font-family:'IBM Plex Mono',monospace";
+  var c = counts(), pct = c.total ? Math.round(c.hit/c.total*100) : 0;
+
+  var title='Precisa revisar', msg='Releia o material com atenção e refaça o quiz — as explicações abaixo cobrem cada erro.';
+  if (pct>=90)      { title='Domínio sólido';   msg='Desempenho excelente. Confira as explicações das que escaparam e siga em frente.'; }
+  else if (pct>=70) { title='Bom desempenho';   msg='Base consistente. Revise os pontos errados abaixo para fechar as lacunas.'; }
+  else if (pct>=50) { title='Meio do caminho';  msg='Você acertou o essencial, mas há lacunas. Comece pelo filtro de erradas.'; }
+
+  var stat = function(v,l,color){
+    return '<div style="background:#faf9f6;padding:14px 10px">' +
+      '<div style="'+mono+';font-size:19px;font-weight:500;color:'+color+'">'+v+'</div>' +
+      '<div style="'+mono+';font-size:9.5px;letter-spacing:.09em;text-transform:uppercase;color:#8a8578;margin-top:2px">'+l+'</div></div>';
+  };
+
+  var fdefs = [['all','Todas',c.total],['wrong','Erradas',c.miss],['right','Certas',c.hit],['blank','Em branco',c.blank]];
+  var filters = fdefs.map(function(f){
+    var on = S.filter===f[0];
+    return '<button type="button" data-act="filter" data-k="'+f[0]+'" class="h-line" style="border-radius:99px;padding:8px 14px;font-size:13px;cursor:pointer;transition:all .15s ease;border:1px solid '+(on?'#121a2b':'#ddd8ce')+';background:'+(on?'#121a2b':'transparent')+';color:'+(on?'#f5f3ef':'#5b6478')+'">'+f[1]+' '+f[2]+'</button>';
+  }).join('');
+
+  var list = reviewList();
+  var allOpen = list.length>0 && list.every(function(r){ return S.open[r.idx]; });
+
+  var cards = list.map(function(r){
+    var numBg='#f0ede7', numFg='#8a8578';
+    if (!r.blank) { if (r.ok) { numBg='#e3f0e8'; numFg='#1f5c3e'; } else { numBg='#fbe6e2'; numFg='#8f2f25'; } }
+    var open = !!S.open[r.idx];
+    var body = '';
+    if (open) {
+      var opts = r.q.options.map(function(text,n){
+        var isC = n===r.q.correctIndex, isMine = n===r.a;
+        var bd='#eeebe4', bg='#fbfaf8', fg='#5b6478', bBg='#f0ede7', bFg='#8a8578', tag='', tBg='', tFg='';
+        if (isC)            { bd='#bcdcc9'; bg='#eef7f1'; fg='#1f5c3e'; bBg='#2e7d55'; bFg='#fff'; tag='Correta'; tBg='#d9ede1'; tFg='#1f5c3e'; }
+        if (isMine && !isC) { bd='#eec4bd'; bg='#fdf0ee'; fg='#8f2f25'; bBg='#c04437'; bFg='#fff'; tag='Sua resposta'; tBg='#f7ddd8'; tFg='#8f2f25'; }
+        if (isMine && isC)  { tag='Sua resposta ✓'; }
+        return '<div style="display:flex;gap:11px;align-items:flex-start;padding:11px 13px;border-radius:11px;font-size:14px;line-height:1.5;border:1px solid '+bd+';background:'+bg+';color:'+fg+'">' +
+          '<span style="flex-shrink:0;width:21px;height:21px;border-radius:6px;display:flex;align-items:center;justify-content:center;'+mono+';font-size:10.5px;font-weight:600;background:'+bBg+';color:'+bFg+'">'+LETTERS[n]+'</span>' +
+          '<span style="flex:1;min-width:0;text-wrap:pretty">'+esc(text)+'</span>' +
+          (tag ? '<span style="flex-shrink:0;'+mono+';font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;padding:3px 7px;border-radius:6px;margin-top:1px;background:'+tBg+';color:'+tFg+'">'+tag+'</span>' : '') +
+          '</div>';
+      }).join('');
+      body = '<div style="padding:2px 15px 18px;animation:qDrawer .2s ease">' +
+        '<div style="height:1px;background:#eeebe4;margin:0 0 16px"></div>' +
+        '<p style="font-family:\'Newsreader\',Georgia,serif;font-size:18px;line-height:1.5;margin:0 0 16px;text-wrap:pretty">'+esc(r.q.question)+'</p>' +
+        figura(r.q) +
+        '<div style="display:flex;flex-direction:column;gap:7px">'+opts+'</div>' +
+        '<div style="margin-top:16px;padding:14px 16px;background:#f7f6f2;border-left:2.5px solid #2b57cc;border-radius:0 11px 11px 0">' +
+          '<div style="'+mono+';font-size:9.5px;letter-spacing:.16em;text-transform:uppercase;color:#2b57cc;margin-bottom:7px">Por quê</div>' +
+          '<p style="margin:0;font-size:14px;line-height:1.65;color:#39404f;text-wrap:pretty">'+esc(r.q.explanation)+'</p></div>' +
+        '<button type="button" data-act="jump" data-n="'+r.idx+'" style="margin-top:14px;background:none;border:0;padding:0;'+mono+';font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:#2b57cc;cursor:pointer;text-decoration:underline;text-underline-offset:3px">Abrir no quiz →</button></div>';
+    }
+    return '<div style="background:#fff;border:1px solid '+(open?'#c9c3b6':'#e4e0d8')+';border-radius:14px;overflow:hidden;transition:border-color .15s ease">' +
+      '<button type="button" data-act="toggle" data-n="'+r.idx+'" style="display:flex;align-items:center;gap:12px;width:100%;text-align:left;background:none;border:0;padding:14px 15px;cursor:pointer">' +
+        '<span style="flex-shrink:0;width:28px;height:28px;border-radius:8px;display:flex;align-items:center;justify-content:center;'+mono+';font-size:12px;font-weight:600;background:'+numBg+';color:'+numFg+'">'+pad(r.idx+1)+'</span>' +
+        '<span style="flex:1;min-width:0;font-size:14px;line-height:1.45;color:#39404f;overflow:hidden;text-overflow:ellipsis;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical">'+esc(r.q.question)+'</span>' +
+        '<span style="flex-shrink:0;'+mono+';font-size:16px;color:#8a8578;width:16px;text-align:center">'+(open?'−':'+')+'</span>' +
+      '</button>' + body + '</div>';
+  }).join('');
+
+  document.getElementById('stage').innerHTML =
+    '<section style="padding:34px 0 0;animation:qFade .3s ease">' +
+      '<div style="'+mono+';font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:#2b57cc;margin-bottom:14px">Resultado</div>' +
+      '<h2 style="font-family:\'Newsreader\',Georgia,serif;font-size:36px;line-height:1.12;font-weight:400;letter-spacing:-.025em;margin:0 0 8px">'+title+'</h2>' +
+      '<p style="font-size:15px;line-height:1.6;color:#5b6478;margin:0 0 24px;max-width:48ch;text-wrap:pretty">'+msg+'</p>' +
+      '<div style="height:8px;border-radius:99px;background:#e4e0d8;overflow:hidden;margin-bottom:10px">' +
+        '<div style="height:100%;border-radius:99px;background:#121a2b;transition:width .7s cubic-bezier(.22,1,.36,1);width:'+pct+'%"></div></div>' +
+      '<div style="display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:#e4e0d8;border:1px solid #e4e0d8;border-radius:14px;overflow:hidden;margin-bottom:34px">' +
+        stat(c.hit,'Certas','#2e7d55')+stat(c.miss,'Erradas','#c04437')+stat(c.blank,'Branco','#8a8578')+stat(pct+'%','Aproveit.','#2b57cc') +
+      '</div>' +
+      '<div style="display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-bottom:14px">' +
+        '<h3 style="font-family:\'Newsreader\',Georgia,serif;font-size:22px;font-weight:500;letter-spacing:-.015em;margin:0">Gabarito comentado</h3>' +
+        '<button type="button" data-act="toggleAll" class="h-ink" style="background:none;border:0;padding:6px 0;'+mono+';font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:#5b6478;cursor:pointer;text-decoration:underline;text-underline-offset:3px">'+(allOpen?'Recolher tudo':'Expandir tudo')+'</button>' +
+      '</div>' +
+      '<div style="display:flex;gap:7px;flex-wrap:wrap;margin-bottom:16px">'+filters+'</div>' +
+      '<div style="display:flex;flex-direction:column;gap:8px">'+cards+'</div>' +
+      (list.length===0 ? '<div style="padding:38px 16px;text-align:center;color:#8a8578;font-size:14px;border:1px dashed #ddd8ce;border-radius:14px">Nenhuma questão neste filtro.</div>' : '') +
+      '<div style="display:flex;flex-wrap:wrap;gap:9px;margin-top:28px;padding-top:24px;border-top:1px solid #e4e0d8">' +
+        '<button type="button" data-act="restart" class="h-darkflat" style="background:#121a2b;color:#f5f3ef;border:0;border-radius:11px;padding:13px 24px;font-size:14px;font-weight:500;cursor:pointer;transition:background .16s ease">Refazer o quiz</button>' +
+        '<button type="button" data-act="back" class="h-line" style="background:none;border:1px solid #ddd8ce;border-radius:11px;padding:13px 22px;font-size:14px;cursor:pointer;transition:border-color .15s ease">Voltar às questões</button>' +
+        '<button type="button" data-act="resumo" class="h-line" style="background:none;border:1px solid #ddd8ce;border-radius:11px;padding:13px 22px;font-size:14px;cursor:pointer;transition:border-color .15s ease">Ler o resumo</button>' +
+      '</div></section>';
+}
+
+/* ── render + eventos ──────────────────────────────────────────────────────── */
+
+/* ─── Tutor DeepSeek — só local, só quando a questão foi errada ──────────────
+   A chave vem de ../deepseek_key.js, que não existe na versão publicada: online
+   o arquivo dá 404, dsOn() vira false e o chat simplesmente não é renderizado.
+   O histórico fica em S.chat[idDaQuestao] e sobrevive ao re-render do stage. */
+var DS_MODEL = 'deepseek-v4-flash';
+var DS_URL   = 'https://api.deepseek.com/chat/completions';
+var NLJS     = String.fromCharCode(10);
+var DS_MONO  = "font-family:'IBM Plex Mono',monospace";
+var DS_SANS  = "font-family:'IBM Plex Sans',system-ui,sans-serif";
+
+function dsOn(){ return typeof window.DEEPSEEK_KEY === 'string' && window.DEEPSEEK_KEY.length > 10; }
+
+
+/* ─── markdown do chat ───────────────────────────────────────────────────────
+   O modelo responde em markdown (**negrito**, listas, `codigo`, tabelas). O texto
+   vem de fora, entao a ordem importa: ESCAPA TUDO primeiro com esc() e so depois
+   aplica formatacao — assim nenhuma tag vinda da resposta vira HTML de verdade.
+   Como esc() ja trocou > por &gt;, a citacao casa com &gt; e nao com >.
+   Trechos de codigo saem de cena por um marcador NUL, que nao pode existir
+   no texto escapado, e voltam no fim — assim ` ` protege o que esta dentro. */
+function mdIn(t){
+  var Z = String.fromCharCode(0), codes = [];
+  t = t.replace(/`([^`]+)`/g, function(_, c){
+    codes.push(c);
+    return Z + 'c' + (codes.length - 1) + Z;
+  });
+  t = t.replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>');
+  t = t.replace(/__([^_]+)__/g, '<strong>$1</strong>');
+  t = t.replace(/(^|[\s(])\*([^*\n]+)\*/g, '$1<em>$2</em>');
+  t = t.replace(/(^|[\s(])_([^_\n]+)_/g, '$1<em>$2</em>');
+  t = t.replace(/\[([^\]]+)\]\((https?:\/\/[^)\s]+)\)/g,
+    '<a href="$2" target="_blank" rel="noopener" style="color:#2b57cc">$1</a>');
+  return t.replace(new RegExp(Z + 'c([0-9]+)' + Z, 'g'), function(_, i){
+    return '<code style="' + DS_MONO + ';font-size:12px;background:#f2efe9;' +
+           'border-radius:4px;padding:1px 5px">' + codes[i] + '</code>';
+  });
+}
+
+function mdChat(txt){
+  var Z = String.fromCharCode(0);
+  var t = esc(String(txt == null ? '' : txt));
+  var blocos = [];
+  t = t.replace(/```[a-zA-Z]*\n?([\s\S]*?)```/g, function(_, c){
+    blocos.push(c.replace(/\n+$/, ''));
+    return Z + 'b' + (blocos.length - 1) + Z;
+  });
+
+  var linhas = t.split('\n'), out = [], lista = null, par = [];
+  function fechaLista(){ if (lista) { out.push('</' + lista + '>'); lista = null; } }
+  function fechaPar(){
+    if (par.length) { out.push('<p style="margin:0 0 9px">' + mdIn(par.join(' ')) + '</p>'); par = []; }
+  }
+  function fecha(){ fechaPar(); fechaLista(); }
+
+  for (var i = 0; i < linhas.length; i++){
+    var l = linhas[i], t2 = l.trim();
+    if (!t2) { fecha(); continue; }
+
+    var bl = t2.match(new RegExp('^' + Z + 'b([0-9]+)' + Z + '$'));
+    if (bl) {
+      fecha();
+      out.push('<pre style="margin:0 0 9px;padding:9px 11px;background:#f7f6f2;border-radius:9px;' +
+               'overflow-x:auto;' + DS_MONO + ';font-size:12px;line-height:1.5">' + blocos[bl[1]] + '</pre>');
+      continue;
+    }
+
+    // tabela: linha com | ... | seguida da separadora | --- | --- |
+    if (t2.charAt(0) === '|' && i + 1 < linhas.length && /^\|[\s:|-]+\|$/.test(linhas[i+1].trim())) {
+      fecha();
+      var celulas = function(linha){
+        return linha.trim().replace(/^\||\|$/g, '').split('|').map(function(c){ return mdIn(c.trim()); });
+      };
+      var cab = celulas(t2), corpo = [];
+      i += 2;
+      while (i < linhas.length && linhas[i].trim().charAt(0) === '|') { corpo.push(celulas(linhas[i].trim())); i++; }
+      i--;
+      var cel = 'padding:5px 9px;border-bottom:1px solid #eae6de;text-align:left;vertical-align:top';
+      out.push('<div style="overflow-x:auto;margin:0 0 9px">' +
+        '<table style="border-collapse:collapse;font-size:12.5px;width:100%">' +
+        '<thead><tr>' + cab.map(function(c){ return '<th style="' + cel + ';font-weight:600">' + c + '</th>'; }).join('') + '</tr></thead>' +
+        '<tbody>' + corpo.map(function(r){
+          return '<tr>' + r.map(function(c){ return '<td style="' + cel + '">' + c + '</td>'; }).join('') + '</tr>';
+        }).join('') + '</tbody></table></div>');
+      continue;
+    }
+
+    var h = t2.match(/^#{1,6}\s+(.*)$/);
+    if (h) {
+      fecha();
+      out.push('<div style="font-weight:600;color:#121a2b;margin:11px 0 5px">' + mdIn(h[1]) + '</div>');
+      continue;
+    }
+
+    if (/^(---+|\*\*\*+)$/.test(t2)) {
+      fecha();
+      out.push('<hr style="border:0;border-top:1px solid #eae6de;margin:11px 0">');
+      continue;
+    }
+
+    var cit = t2.match(/^&gt;\s?(.*)$/);
+    if (cit) {
+      fecha();
+      out.push('<div style="margin:0 0 9px;padding:7px 11px;border-left:2.5px solid #c9d6f7;' +
+               'background:#f7f9fe;border-radius:0 7px 7px 0">' + mdIn(cit[1]) + '</div>');
+      continue;
+    }
+
+    var mUl = t2.match(/^[-*•]\s+(.*)$/);
+    var mOl = t2.match(/^\d+[.)]\s+(.*)$/);
+    if (mUl || mOl) {
+      var tipo = mUl ? 'ul' : 'ol';
+      fechaPar();
+      if (lista !== tipo) {
+        fechaLista();
+        out.push('<' + tipo + ' style="margin:0 0 9px;padding-left:19px">');
+        lista = tipo;
+      }
+      out.push('<li style="margin:3px 0">' + mdIn((mUl || mOl)[1]) + '</li>');
+      continue;
+    }
+
+    fechaLista();
+    par.push(t2);
+  }
+  fecha();
+  return out.join('');
+}
+
+function msgHTML(m){
+  if (m.role === 'user')
+    return '<div style="margin:0 0 10px;text-align:right">' +
+      '<span style="display:inline-block;max-width:88%;text-align:left;background:#f2efe9;' +
+      'border-radius:12px 12px 3px 12px;padding:9px 12px;font-size:13.5px;line-height:1.6;' +
+      'color:#39404f;text-wrap:pretty">' + esc(m.content) + '</span></div>';
+  return '<div style="margin:0 0 12px">' +
+    '<div style="' + DS_MONO + ';font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;' +
+    'color:#2b57cc;margin-bottom:4px">DeepSeek</div>' +
+    '<div style="font-size:13.5px;line-height:1.65;color:#39404f;text-wrap:pretty">' +
+    mdChat(m.content) + '</div></div>';
+}
+
+function chatBox(q, acertou){
+  if (!dsOn()) return '';
+  var chamada = acertou ? 'Quer ir mais fundo?' : 'Ainda com dúvida?';
+  var dica = acertou ? 'Por que as outras estão erradas?' : 'Por que a que eu marquei está errada?';
+  var hist = (S.chat[q.id] || []).map(msgHTML).join('');
+  return '<div id="ds" data-qid="' + q.id + '" style="margin-top:14px;border:1px solid #e4e0d8;' +
+      'border-radius:14px;background:#fff;overflow:hidden;animation:qFade .26s ease">' +
+      '<div style="display:flex;align-items:center;gap:8px;padding:11px 15px;' +
+        'border-bottom:1px solid #f0ede6;background:#faf9f6">' +
+        '<span style="' + DS_MONO + ';font-size:10px;letter-spacing:.16em;text-transform:uppercase;' +
+        'color:#2b57cc">' + chamada + '</span>' +
+        '<span style="font-size:12px;color:#8a8578">pergunte ao DeepSeek</span></div>' +
+      '<div id="dsLog" style="max-height:280px;overflow-y:auto;padding:' + (hist ? '12px 15px' : '0') + '">' +
+        hist + '</div>' +
+      '<div style="display:flex;gap:8px;padding:11px 12px;border-top:1px solid #f0ede6">' +
+        '<input id="dsIn" type="text" autocomplete="off" ' +
+          'placeholder="' + dica + '" ' +
+          'style="flex:1;min-width:0;border:1px solid #e4e0d8;border-radius:10px;padding:10px 12px;' +
+          'font-size:13.5px;' + DS_SANS + ';color:#121a2b;background:#fff;outline:none">' +
+        '<button type="button" data-act="dsSend" class="h-darkflat" style="flex-shrink:0;' +
+          'background:#121a2b;color:#f5f3ef;border:0;border-radius:10px;padding:10px 16px;' +
+          'font-size:13px;font-weight:500;cursor:pointer;transition:background .16s ease">Enviar</button>' +
+      '</div></div>';
+}
+
+function dsContexto(q, ans){
+  var alts = q.options.map(function(o, n){ return LETTERS[n] + ') ' + o; }).join(NLJS);
+  return 'Questao: ' + q.question + NLJS + alts + NLJS +
+    'Resposta correta: ' + LETTERS[q.correctIndex] + ') ' + q.options[q.correctIndex] + NLJS +
+    'O estudante marcou: ' + (ans === null ? 'nada' : LETTERS[ans] + ') ' + q.options[ans]) + NLJS +
+    'Explicacao que ele ja tem: ' + q.explanation;
+}
+
+A.dsSend = function(){
+  var box = document.getElementById('ds');
+  if (!box || !dsOn() || box.getAttribute('data-busy')) return;
+  var input = document.getElementById('dsIn'), log = document.getElementById('dsLog');
+  var texto = (input.value || '').trim();
+  if (!texto) return;
+
+  var qid = parseInt(box.getAttribute('data-qid'), 10), q = null, ans = null;
+  for (var i = 0; i < S.order.length; i++)
+    if (S.order[i].id === qid) { q = S.order[i]; ans = S.answers[i]; }
+  if (!q) return;
+
+  S.chat[qid] = S.chat[qid] || [];
+  S.chat[qid].push({ role:'user', content:texto });
+  input.value = '';
+  log.style.padding = '12px 15px';
+  log.insertAdjacentHTML('beforeend', msgHTML({ role:'user', content:texto }));
+  log.insertAdjacentHTML('beforeend',
+    '<div><div style="' + DS_MONO + ';font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;' +
+    'color:#2b57cc;margin-bottom:4px">DeepSeek</div>' +
+    '<div id="dsTxt" style="font-size:13.5px;line-height:1.65;color:#8a8578;' +
+    'text-wrap:pretty">pensando…</div></div>');
+  log.scrollTop = log.scrollHeight;
+  box.setAttribute('data-busy', '1');
+
+  var acertou = (ans === q.correctIndex);
+  var situacao = acertou
+    ? 'Voce e um tutor de medicina. O estudante do 7o semestre ACERTOU esta questao, mas ficou com uma duvida. '
+    : 'Voce e um tutor de medicina. O estudante do 7o semestre ERROU esta questao. ';
+  var msgs = [
+    { role:'system', content: situacao +
+      'Responda em portugues do Brasil, direto ao ponto, no maximo 150 palavras. ' +
+      'Traga o dado concreto (valor, criterio, mecanismo) em vez de generalidade. ' +
+      'Nao repita a explicacao que ele ja tem; foque na duvida que ele trouxe.' },
+    { role:'user', content: dsContexto(q, ans) }
+  ];
+  var h = S.chat[qid];
+  for (var j = 0; j < h.length; j++) msgs.push({ role:h[j].role, content:h[j].content });
+
+  dsStream(msgs, function(txt, fim, erro){
+    var el = document.getElementById('dsTxt');
+    if (!el) { box.removeAttribute('data-busy'); return; }
+    if (erro) { el.style.color = '#c04437'; el.textContent = erro; box.removeAttribute('data-busy'); return; }
+    el.style.color = '#39404f';
+    el.innerHTML = mdChat(txt);
+    var lg = document.getElementById('dsLog'); if (lg) lg.scrollTop = lg.scrollHeight;
+    if (fim) { el.removeAttribute('id'); S.chat[qid].push({ role:'assistant', content:txt }); box.removeAttribute('data-busy'); }
+  });
+};
+
+function dsStream(messages, cb){
+  var acc = '';
+  fetch(DS_URL, {
+    method: 'POST',
+    headers: { 'Content-Type':'application/json', 'Authorization':'Bearer ' + window.DEEPSEEK_KEY },
+    body: JSON.stringify({ model:DS_MODEL, messages:messages, stream:true, max_tokens:1200, temperature:0.3 })
+  }).then(function(r){
+    if (!r.ok) return r.text().then(function(t){
+      throw new Error(
+        r.status === 401 ? 'Chave recusada (401). Confira o deepseek_key.js.' :
+        r.status === 402 ? 'Sem saldo na conta DeepSeek (402).' :
+        r.status === 429 ? 'Limite de uso atingido (429). Tente daqui a pouco.' :
+        'Erro ' + r.status + ': ' + String(t).slice(0, 120));
+    });
+    var reader = r.body.getReader(), dec = new TextDecoder(), buf = '';
+    (function pump(){
+      return reader.read().then(function(res){
+        if (res.done) { cb(acc || '(resposta vazia)', true); return; }
+        buf += dec.decode(res.value, { stream:true });
+        var linhas = buf.split(NLJS);
+        buf = linhas.pop();
+        for (var i = 0; i < linhas.length; i++){
+          var l = linhas[i].trim();
+          if (l.indexOf('data:') !== 0) continue;
+          var carga = l.slice(5).trim();
+          if (carga === '[DONE]') continue;
+          try {
+            var d = JSON.parse(carga).choices[0].delta;
+            if (d && d.content) { acc += d.content; cb(acc, false); }
+          } catch (_){}
+        }
+        return pump();
+      });
+    })();
+  }).catch(function(e){
+    cb('', true, 'Nao consegui falar com o DeepSeek: ' + (e && e.message ? e.message : e));
+  });
+}
+
+function render(){
+  renderHeader();
+  if (S.view === 'home')        renderHome();
+  else if (S.view === 'resumo') renderResumo();
+  else if (S.finished)          renderResult();
+  else                          renderQuestion();
+}
+
+/* lightbox: clique em qualquer figura amplia */
+document.addEventListener('click', function(e){
+  var lb = document.getElementById('lb');
+  if (e.target.closest('#lb')) { lb.className = ''; return; }
+  var img = e.target.closest('.fig img');
+  if (img) { lb.firstElementChild.src = img.src; lb.className = 'on'; }
+});
+window.addEventListener('keydown', function(e){
+  if (e.key === 'Escape') document.getElementById('lb').className = '';
+});
+
+document.addEventListener('click', function(e){
+  var b = e.target.closest('[data-act]'); if (!b) return;
+  var act = b.getAttribute('data-act'), n = parseInt(b.getAttribute('data-n'),10), k = b.getAttribute('data-k');
+  if (act==='pick'||act==='jump'||act==='toggle') A[act](n);
+  else if (act==='filter') A.filter(k);
+  else if (A[act]) A[act]();
+});
+
+window.addEventListener('keydown', function(e){
+  if (S.view!=='quiz' || !S.started || S.finished) return;
+  var t = e.target, tag = t && t.tagName;
+  if (tag==='INPUT' || tag==='TEXTAREA' || (t && t.isContentEditable)) return;
+  if (e.metaKey||e.ctrlKey||e.altKey) return;
+  if (e.key==='ArrowRight')     { e.preventDefault(); A.go(S.i+1); }
+  else if (e.key==='ArrowLeft') { e.preventDefault(); A.go(S.i-1); }
+  else if (e.key==='Enter')     { e.preventDefault(); A.next(); }
+  else if (/^[1-6]$/.test(e.key)) {
+    var n = parseInt(e.key,10)-1;
+    if (n < S.order[S.i].options.length) A.pick(n);
+  }
+});
+
+render();
+</script>
+</body>
+</html>

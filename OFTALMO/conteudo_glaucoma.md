@@ -1,0 +1,540 @@
+---
+source: D:\Arquivos\Documentos\Faculdade\OSEC\7sem\Material para provas\OFTALMO\_glaucoma_p1.pptx
+files_processed: ['_glaucoma_p1.pptx', '_glaucoma_p2.pptx']
+date_extracted: 2026-09-28
+subject: Glaucoma
+imagens: 53 (chaves pgNN — ver imagens_[tema].json)
+---
+
+# Glaucoma
+
+## glaucoma_p1  ·  PPTX
+
+### Slide 1
+
+GLAUCOMA
+
+- CHEFE DA DISCIPLINA DE OFTALMOLOGIA: PROF. DR. PEDRO D. SERRACARBASSA
+- PROFESSORES: PROFA. Dra ANTONIETA MINELLO
+- aminello@prof.unisa.br
+
+### Slide 2
+
+GLAUCOMA
+
+- => NEUROPATIA ÓPTICA CRÔNICA
+- AUMENTO DA ESCAVAÇÃO DO NERVO ÓPTICO
+- ALTERAÇÃO DE CAMPO VISUAL
+- AUMENTO DA PRESSÃO INTRA OCULAR
+
+<!-- IMG:s02i1 -->
+
+<!-- IMG:s02i2 -->
+
+### Slide 3
+
+ENTENDENDO A ESCAVAÇÃO DO NERVO OPTICO E SEU AUMENTO
+
+<!-- IMG:s02i1 -->
+
+### Slide 4
+
+RELEMBRANDO
+
+CAMADAS DA RETINA
+
+<!-- IMG:s04i1 -->
+
+<!-- IMG:s04i2 -->
+
+<!-- IMG:s04i2 -->
+
+### Slide 5
+
+GLAUCOMA
+
+- FISIOPATOLOGIA
+- APOPTOSE DE CELS GANGLIONARES
+- => AFINAMENTO DA CAMADA NUCLEAR INTERNA E DA CAMADA DE FIBRAS NERVOSAS DA RETINA E PERDA DE AXONIOS DO N. ÓPTICO
+- CAMADA NUCLEAR INTERNA Contém os corpos celulares das células bipolares, horizontais e amácrinas
+
+<!-- IMG:s05i1 -->
+
+### Slide 6
+
+ESCAVAÇÃO DO NERVO ÓPTICO
+
+<!-- IMG:s06i1 -->
+
+<!-- IMG:s06i1 -->
+
+### Slide 7
+
+NERVO ÓPTICO
+
+ESCAVAÇÃO FISIOLOGICA : 0,1 A 0,5
+
+<!-- IMG:s07i1 -->
+
+<!-- IMG:s02i1 -->
+
+### Slide 8
+
+RELAÇAO ESCAVAÇÃO/DISCO OPTICO
+
+<!-- IMG:s08i1 -->
+
+### Slide 9
+
+OCT DE NERVO OPTICO
+
+<!-- IMG:s09i1 -->
+
+### Slide 10
+
+- ENTENDENDO
+- O
+- CAMPO VISUAL
+- E
+- SUAS ALTERAÇÕES
+
+<!-- IMG:s02i2 -->
+
+### Slide 11
+
+CAMPO VISUAL
+
+<!-- IMG:s11i1 -->
+
+<!-- IMG:s11i2 -->
+
+### Slide 12
+
+DEFEITOS GLAUCOMATOSOS DE CAMPO VISUAL
+
+<!-- IMG:s12i1 -->
+
+### Slide 13
+
+DEFEITOS GLAUCOMATOSOS DE CAMPO VISUAL
+
+<!-- IMG:s13i1 -->
+
+### Slide 14
+
+- DEFEITO DE CAMPO VISUAL:
+- ESCOTOMA ARQUEADO
+
+<!-- IMG:s14i1 -->
+
+### Slide 15
+
+- DEFEITO DE CAMPO VISUAL:
+- CAMPO TUBULAR
+
+<!-- IMG:s15i1 -->
+
+### Slide 16
+
+- ENTENDENDO
+- A
+- PRESSÃO INTRAOCULAR
+- (PIO)
+
+<!-- IMG:s16i1 -->
+
+### Slide 17
+
+HUMOR AQUOSO e PRESSÃO INTRA-OCULAR (PIO)
+
+RELEMBRANDO
+
+Segmento anterior
+
+Segmento posterior
+
+ - PIO Normal: 10 a 21,5 mmHg
+
+<!-- IMG:s17i1 -->
+
+<!-- IMG:s17i2 -->
+
+### Slide 18
+
+- GLAUCOMA ABSOLUTO: RESULTADO FINAL DE QUALQUER GLAUCOMA SEM CONTROLE
+- => OLHO CEGO E DOLOROSO
+
+### Slide 19
+
+- GLAUCOMA ABSOLUTO: RESULTADO FINAL DE QUALQUER GLAUCOMA SEM CONTROLE
+- => OLHO CEGO E DOLOROSO
+
+### Slide 20
+
+Ângulo aberto da câmara anterior
+
+Linha de Schwalbe
+
+Trabeculado
+
+Esporão Escleral
+
+Processos Irianos (Raiz da Iris)
+
+<!-- IMG:s20i1 -->
+
+### Slide 21
+
+Ângulo fechado da câmara anterior
+
+<!-- IMG:s21i1 -->
+
+<!-- IMG:s21i2 -->
+
+<!-- IMG:s21i3 -->
+
+### Slide 22
+
+- GLAUCOMA ABSOLUTO: RESULTADO FINAL DE QUALQUER GLAUCOMA SEM CONTROLE
+- => OLHO CEGO E DOLOROSO
+
+### Slide 23
+
+GLAUCOMA PRIMÁRIO DE ÂNGULO ABERTO
+
+- TIPO MAIS COMUM DE GLAUCOMA
+- FATOR DE RISCO: HEREDITARIEDADE E ETNIA
+- NEGROS SÃO 4X MAIS PROPENSOS
+- PROCESSO DEGENERATIVO DA MALHA TRABECULAR
+
+PIO
+
+DEPÓSITO DE MATERIAL EXTRACELULAR NO CANAL DE SCHLEMM
+
+DEPÓSITO DE MATERIAL EXTRACELULAR NA MALHA TRABECULAR
+
+REDUÇÃO DA DRENAGEM DO HUMOR AQUOSO
+
+### Slide 24
+
+GLAUCOMA PRIMÁRIO DE ÂNGULO ABERTO
+
+<!-- IMG:s24i1 -->
+
+<!-- IMG:s24i2 -->
+
+<!-- IMG:s24i3 -->
+
+### Slide 25
+
+GLAUCOMA PRIMÁRIO DE ÂNGULO ABERTO
+
+- EXISTE GLAUCOMA COM PRESSÃO INTRA OCULAR NORMAL ???
+- SIM!!!
+
+### Slide 26
+
+GLAUCOMA PRIMÁRIO DE ÂNGULO ABERTO
+
+- GLAUCOMA DE PRESSÃO NORMAL
+- ANORMALIDADES VASCULARES OU MECÂNICAS NA CABEÇA DO N. OPTICO
+- 60% : PERDA PROGRESSIVA DE CAMPO VISUAL
+
+<!-- IMG:s26i1 -->
+
+### Slide 27
+
+- HIPERTENSÃO OCULAR
+- AUMENTO DE PIO SEM ALT DE CAMPO VISUAL E ESCAVAÇÃO DO N.O.
+- RISCO PARA DESENVOLVER GLAUCOMA
+
+### Slide 28
+
+_(slide sem texto — o conteúdo está na imagem)_
+
+<!-- IMG:s28i1 -->
+
+### Slide 29
+
+GLAUCOMA PRIMÁRIO DE ÂNGULO ABERTO
+
+- TRATAMENTO
+- => OBJETIVO REDUZIR A PIO E EVITAR PROGRESSÃO DA PERDA DE VISÃO
+- CLINICO OU CIRÚRGICO OU LASER
+- REDUZIR A PRODUÇÃO DO HUMOR AQUOSO
+- AUMENTAR A DRENAGEM DO HUMOR AQUOSO
+
+### Slide 30
+
+TRATAMENTO FARMACOLÓGICO DO GLAUCOMA
+
+| CLASSE DE MEDICAÇAO | EFEITO | DROGA | NOME COMECIAL | CONTRA INDICAÇAO | EFEITO COLATERAL |
+| --- | --- | --- | --- | --- | --- |
+| BETA BLOQUEADOR | REDUZ H.A. | MALEATO DE TIMOLOL 0,5% | TIMOPTOL | DPOC, ASMA | DEPRESSÃO, FADIGA, CONFUSÃO MENTAL |
+| | | BETAXOLOL 0,5% | BETOPTIC S | | |
+| | | LEVOBUNOLOL | BETAGAN | | |
+| ALFA AGONISTA | REDUZ H.A. E AUMENTO DO EFLUXO | TARTARATO DE BRIMONIDINA 0,2% | ALPHAGAN | | REAÇÃO ALÉRGICA |
+| INIBIDORES DA ANIDRASE CARBONICA | REDUZ H.A | DORZOLAMIDA | TRUSOPT | | SABOR AMARGO, ALERGIA |
+| | | BRINZOLAMIDA | AZOPT | | |
+| PROSTAGLANDINAS | AUMENTA FLUXO UVEOESCLERAL E H.A. | BIMATROPROSTA 0,003% | LUMIGAN | | HIPEREMIA CONJUNTIVAL, HIPERPIGMENTAÇAO PELE, CRESCIMENTO DE CÍLIOS, ESCURECIMENTO DE IRIS |
+| | | TRAVOPROSTA 0,004% | TRAVATAN | | |
+| | | LATANOPROSTA 0,005% | XALATAN | | |
+
+### Slide 31
+
+TRABECULECTOMIA COM MITOMICINA C
+
+### Slide 32
+
+TRABECULOPLASTIA A LASER DE ARGÔNIO
+
+### Slide 33
+
+PERDA VISUAL NO GLAUCOMA
+
+MFPEREZ@PROF.UNISA.BR
+
+---
+
+## glaucoma_p2  ·  PPTX
+
+### Slide 1
+
+GLAUCOMA II
+
+- CHEFE DA DISCIPLINA DE OFTALMOLOGIA: PROF. DR. PEDRO D. SERRACARBASSA
+- PROFESSORES: Profa. Dra. Antonieta Minello
+- aminello@prof.unisa.br
+
+### Slide 2
+
+- GLAUCOMA ABSOLUTO: RESULTADO FINAL DE QUALQUER GLAUCOMA SEM CONTROLE
+- => OLHO CEGO E DOLOROSO
+
+### Slide 3
+
+Ângulo aberto da câmara anterior
+
+Linha de Schwalbe
+
+Trabeculado
+
+Esporão Escleral
+
+Processos Irianos (Raiz da Iris)
+
+<!-- IMG:f2_s03i1 -->
+
+### Slide 4
+
+Ângulo fechado da câmara anterior
+
+<!-- IMG:f2_s04i1 -->
+
+<!-- IMG:f2_s04i2 -->
+
+<!-- IMG:f2_s04i3 -->
+
+### Slide 5
+
+GLAUCOMA PRIMARIO DE ÂNGULO FECHADO
+
+- AUMENTO DA PIO POR OBSTRUÇÃO DO ÂNGULO PELA IRIS
+- PODE SER AGUDO OU CRÔNICO
+
+<!-- IMG:f2_s05i1 -->
+
+### Slide 6
+
+GLAUCOMA AGUDO DE ÂNGULO FECHADO
+
+- QUADRO CLINICO:
+ - DOR INTENSA
+ - HIPEREMIA OCULAR
+ - EMBAÇAMENTO VISUAL
+ - VISÃO DE HALOS COLORIDOS
+ - NÁUSEAS E VÔMITOS
+
+EMERGENCIA MÉDICA
+
+<!-- IMG:f2_s06i1 -->
+
+<!-- IMG:f2_s06i2 -->
+
+### Slide 7
+
+GLAUCOMA AGUDO DE ÂNGULO FECHADO
+
+- FATORES DESENCADEANTES:
+ - ALTA HIPERMETROPIA
+ - CATARATA INTUMESCENTE
+ - UVEITE COM SECLUSÃO PUPILAR
+ - DILATAÇÃO PUPILAR EXPONTÂNEA OU MEDICAMENTOSA
+ - (ANTICOLINÉRGICA OU SIMPATICOMIMÉTICA)
+ - ATROPINA
+ - ANTIDEPRESSIVOS
+ - BRONCODILATADORES
+ - DESCONGESTIONANTES NASAIS
+ - TOCOLITICOS
+ - TOPIRAMATO
+
+<!-- IMG:f2_s07i1 -->
+
+### Slide 8
+
+GLAUCOMA CRÔNICO DE ÂNGULO FECHADO
+
+- AUMENTO DA PIO POR OBSTRUÇÃO DO ÂNGULO PELA IRIS
+- PREDISPOSIÇÃO ANATÔMICA
+- PODE CURSAR COM CRISES DE GLAUCOMA AGUDO
+
+GONIOSINÉQUIAS
+
+<!-- IMG:f2_s08i1 -->
+
+<!-- IMG:f2_s08i2 -->
+
+### Slide 9
+
+GLAUCOMA PRIMARIO DE ÂNGULO FECHADO
+
+- TRATAMENTO
+- => OBJETIVO REDUZIR A PIO E EVITAR PROGRESSÃO DA PERDA DE VISÃO
+- GLAUCOMA AGUDO : TRATAMENTO DE EMERGÊNCIA
+- INTERROMPER A CRISE O MAIS RAPIDO POSSÍVEL
+
+### Slide 10
+
+GLAUCOMA AGUDO: TRATAMENTO CLINICO
+
+### Slide 11
+
+IRIDOTOMIA COM YAG LASER
+
+<!-- IMG:f2_s11i1 -->
+
+<!-- IMG:f2_s11i2 -->
+
+### Slide 12
+
+- GLAUCOMA ABSOLUTO: RESULTADO FINAL DE QUALQUER GLAUCOMA SEM CONTROLE
+- => OLHO CEGO E DOLOROSO
+
+### Slide 13
+
+GLAUCOMA SECUNDÁRIO
+
+- GLAUCOMA NEOVASCULAR
+- (neovascularização da íris =rubeose )
+ - é causada por isquemia retiniana disseminada
+ - retinopatia diabética avançada
+ - oclusão isquêmica da veia central da retina
+
+<!-- IMG:f2_s13i1 -->
+
+<!-- IMG:f2_s13i2 -->
+
+### Slide 14
+
+GLAUCOMA SECUNDÁRIO
+
+- GLAUCOMA POR ESTEROIDES
+- (corticoides tópicos, perioculares e intra oculares)
+- simula o glaucoma primário de ângulo aberto
+- A interrupção da medicação elimina os efeitos
+ - Caso o tratamento com esteroides tópicos seja absoluta mente necessário = tratamento clínico do glaucoma
+
+<!-- IMG:f2_s14i1 -->
+
+### Slide 15
+
+- GLAUCOMA ABSOLUTO: RESULTADO FINAL DE QUALQUER GLAUCOMA SEM CONTROLE
+- => OLHO CEGO E DOLOROSO
+
+### Slide 16
+
+GLAUCOMA CONGÊNITO PRIMÁRIO
+
+- => MANIFESTAÇÃO:
+- DO NASCIMENTO (50%) AO PRIMEIRO ANO DE VIDA
+
+- EPIFORA
+- FOTOFOBIA
+- EDEMA DE CÓRNEA
+- AUMENTO DA PIO
+- AUMENTO DA ESCAVAÇÃO
+- BUFTALMO
+
+<!-- IMG:f2_s16i1 -->
+
+### Slide 17
+
+GLAUCOMA CONGÊNITO PRIMÁRIO
+
+<!-- IMG:f2_s17i1 -->
+
+<!-- IMG:f2_s17i2 -->
+
+### Slide 18
+
+GLAUCOMA CONGÊNITO PRIMÁRIO
+
+<!-- IMG:f2_s18i1 -->
+
+### Slide 19
+
+GLAUCOMA CONGÊNITO
+
+- No final da gestação = > reabsorção do tecido mesodérmico (ligamento pectíneo) que preenche a região do angulo da câmara-anterior
+
+### Slide 20
+
+GONIOTOMIA
+
+### Slide 21
+
+TRABECULOTOMIA
+
+### Slide 22
+
+GLAUCOMA CONGÊNITO SECUNDÁRIO
+
+- ASSOCIADO A ANORMALIDADES OCULARES
+- Síndrome de Axenfeld-Rieger
+- Síndrome de Peters
+- Aniridia
+
+<!-- IMG:f2_s22i1 -->
+
+<!-- IMG:f2_s22i2 -->
+
+<!-- IMG:f2_s22i3 -->
+
+### Slide 23
+
+EXAME DA CRIANÇA
+
+- Tonometria
+- Fundoscopia
+- ( quantificar escavação da papila)
+- Gonioscopia
+- ( avaliar ângulo da câmara anterior )
+- Paquimetria Corneana
+- ( avaliar edema de córnea )
+- Biometria
+- ( acompanhar o crescimento ocular )
+
+### Slide 24
+
+GLAUCOMA ABSOLUTO
+
+- RESULTADO FINAL DE QUALQUER GLAUCOMA SEM CONTROLE
+- OLHO CEGO E DOLOROSO = EVISCERAÇÃO
+
+<!-- IMG:f2_s24i1 -->
+
+<!-- IMG:f2_s24i2 -->
+
+<!-- IMG:f2_s24i3 -->
+
+<!-- IMG:f2_s24i4 -->

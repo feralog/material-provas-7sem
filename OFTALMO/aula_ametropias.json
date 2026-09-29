@@ -1,0 +1,376 @@
+{
+  "titulo": "Ametropias",
+  "eyebrow": "Oftalmologia · Refração",
+  "subtitulo": "Onde o foco cai, que lente corrige e o que o paciente sente",
+  "intro": "Óptica do olho, acomodação e os quatro erros de refração — miopia, hipermetropia, astigmatismo e presbiopia. Cobre o trajeto dos raios, a lente corretora de cada ametropia, a leitura da receita em dioptrias e os fatores sistêmicos que alteram a refração.",
+  "questoes": [
+    {
+      "question": "Em um olho emétrope, o que acontece com os raios de luz paralelos que entram no globo ocular?",
+      "options": [
+        "São focalizados exatamente sobre a retina, sem uso da acomodação",
+        "São focalizados à frente da retina, sem uso da acomodação",
+        "São focalizados atrás da retina, exigindo esforço acomodativo",
+        "São focalizados sobre a retina, exigindo esforço acomodativo"
+      ],
+      "correctIndex": 0,
+      "explanation": "Emetropia é a condição em que os raios paralelos vindos do infinito convergem exatamente no plano da retina com o olho em repouso, sem recorrer à acomodação. Quando isso não ocorre, o olho é amétrope. Foco antes da retina caracteriza miopia; depois dela, hipermetropia."
+    },
+    {
+      "question": "Qual definição corresponde ao termo ametropia?",
+      "options": [
+        "Os raios de luz paralelos não chegam focalizados sobre a retina",
+        "Os raios de luz paralelos chegam focalizados sobre a retina",
+        "Os dois olhos têm erros de refração de valores diferentes",
+        "A perda da acomodação acompanha o envelhecimento do olho"
+      ],
+      "correctIndex": 0,
+      "explanation": "Ametropia é o termo genérico para qualquer erro refracional em que a luz paralela não forma foco na retina — abrange miopia, hipermetropia e astigmatismo. A condição oposta é a emetropia. Graus diferentes entre os dois olhos recebem o nome de anisometropia."
+    },
+    {
+      "question": "Um paciente apresenta -1,00 DE no olho direito e +2,00 DE no olho esquerdo. Como se chama essa situação?",
+      "options": [
+        "Anisometropia, erro refracional diferente entre os olhos",
+        "Astigmatismo misto, dois focos em um mesmo olho",
+        "Anisocoria, diferença de diâmetro entre as pupilas",
+        "Astenopia, desconforto visual por esforço ocular"
+      ],
+      "correctIndex": 0,
+      "explanation": "Anisometropia é a diferença de erro refracional entre os dois olhos — aqui, um olho míope e o outro hipermetrope. Diferenças grandes produzem imagens de tamanhos distintos em cada retina e, na infância, risco de ambliopia. O achado não define o tipo de ametropia, apenas a assimetria entre os olhos."
+    },
+    {
+      "question": "Durante a acomodação para enxergar de perto, o que ocorre no segmento anterior do olho?",
+      "options": [
+        "O músculo ciliar contrai, a zônula relaxa e o cristalino encurva mais",
+        "O músculo ciliar relaxa, a zônula tensiona e o cristalino encurva mais",
+        "O músculo ciliar contrai, a zônula tensiona e a córnea encurva mais",
+        "O músculo ciliar relaxa, a zônula relaxa e a córnea se achata mais"
+      ],
+      "correctIndex": 0,
+      "explanation": "A acomodação é o processo pelo qual o olho aumenta seu poder refrativo para focalizar objetos próximos. A contração do músculo ciliar afrouxa as fibras zonulares e o cristalino, liberado da tração, assume forma mais esférica e ganha dioptrias. A córnea não participa, pois sua curvatura é fixa."
+    },
+    {
+      "question": "No sistema óptico do olho humano, qual estrutura concentra o maior poder dióptrico?",
+      "options": [
+        "A córnea, com cerca de 40 dioptrias",
+        "O cristalino, com cerca de 19 dioptrias",
+        "O corpo vítreo, com cerca de 40 dioptrias",
+        "A retina, com cerca de 19 dioptrias"
+      ],
+      "correctIndex": 0,
+      "explanation": "A córnea, com o humor aquoso que a acompanha, responde por aproximadamente 40 dioptrias e é o principal elemento refrativo do olho. O cristalino contribui com cerca de 19 dioptrias e tem índice de refração variável, o que permite a acomodação. O vítreo praticamente não refrata, apenas influencia a magnificação da imagem."
+    },
+    {
+      "question": "A figura compara o trajeto dos raios em dois olhos. No olho míope, representado no esquema inferior, onde se forma o foco da imagem?",
+      "options": [
+        "Antes da retina, dentro da cavidade vítrea",
+        "Exatamente sobre a superfície da retina",
+        "Atrás da retina, em um plano virtual",
+        "Sobre a retina, após esforço acomodativo"
+      ],
+      "correctIndex": 0,
+      "explanation": "Na miopia o sistema óptico é excessivamente convergente para o comprimento do olho, e os raios paralelos cruzam-se antes de alcançar a retina. O resultado é visão borrada para longe, com visão de perto preservada. A acomodação não ajuda, porque só aumentaria ainda mais o poder refrativo.",
+      "image": "s03i1",
+      "imageCaption": "Trajeto dos raios no olho normal e no olho míope"
+    },
+    {
+      "question": "Qual mecanismo caracteriza a miopia axial?",
+      "options": [
+        "Diâmetro anteroposterior do bulbo ocular aumentado",
+        "Diâmetro anteroposterior do bulbo ocular reduzido",
+        "Aumento do índice de refração dos meios refringentes",
+        "Redução do índice de refração dos meios refringentes"
+      ],
+      "correctIndex": 0,
+      "explanation": "A miopia axial decorre do alongamento anteroposterior do globo — o chamado olho comprido — que afasta a retina do plano focal. Já a miopia de índice resulta de alteração do índice de refração dos meios refringentes, como na esclerose do cristalino. Ambas deslocam o foco para antes da retina."
+    },
+    {
+      "question": "Que tipo de lente esférica corrige a miopia?",
+      "options": [
+        "Lente divergente, de valor dióptrico negativo",
+        "Lente convergente, de valor dióptrico positivo",
+        "Lente cilíndrica, de valor dióptrico variável",
+        "Lente prismática, de desvio dióptrico lateral"
+      ],
+      "correctIndex": 0,
+      "explanation": "A miopia tem excesso de convergência, de modo que se corrige com lente divergente, bicôncava, prescrita com sinal negativo. Ela reduz a vergência do feixe e desloca o foco para trás, até o plano da retina. Uma lente convergente positiva agravaria o quadro."
+    },
+    {
+      "question": "No esquema do olho hipermetrope, qual é a posição do ponto de foco dos raios paralelos?",
+      "options": [
+        "Em um plano situado atrás da retina",
+        "Em um plano situado à frente da retina",
+        "Exatamente no plano da retina, em repouso",
+        "No plano da córnea, antes do cristalino"
+      ],
+      "correctIndex": 0,
+      "explanation": "Na hipermetropia o poder refrativo é insuficiente para o comprimento do olho: os raios ainda não convergiram quando atingem a retina, e o foco cairia num plano virtual posterior a ela. Por isso o esquema mostra o prolongamento tracejado dos raios além do globo. A acomodação pode trazer esse foco até a retina, às custas de esforço.",
+      "image": "s03i2",
+      "imageCaption": "Trajeto dos raios no olho hipermetrope"
+    },
+    {
+      "question": "O que define a hipermetropia axial?",
+      "options": [
+        "Diâmetro anteroposterior do bulbo ocular reduzido",
+        "Diâmetro anteroposterior do bulbo ocular aumentado",
+        "Curvatura corneana desigual entre os meridianos",
+        "Perda progressiva da amplitude de acomodação"
+      ],
+      "correctIndex": 0,
+      "explanation": "A hipermetropia axial vem do encurtamento anteroposterior do globo — o olho curto — em que a retina fica antes do plano focal. A forma de índice decorre de alteração do índice de refração das estruturas do sistema óptico. Curvatura corneana desigual define astigmatismo, e perda de acomodação define presbiopia."
+    },
+    {
+      "question": "Um paciente apresenta +3,00 DE na refração dinâmica e +5,00 DE após cicloplegia. Qual é o valor da hipermetropia latente?",
+      "options": [
+        "+2,00 dioptrias esféricas",
+        "+3,00 dioptrias esféricas",
+        "+5,00 dioptrias esféricas",
+        "+8,00 dioptrias esféricas"
+      ],
+      "correctIndex": 0,
+      "explanation": "A hipermetropia manifesta é a medida sem cicloplegia, aqui +3,00, e a total é a revelada após paralisar a acomodação, aqui +5,00. A latente é a diferença entre as duas, ou seja, a parcela que o músculo ciliar vinha compensando: +2,00 dioptrias. Em jovens essa parcela oculta pode ser grande, o que justifica refratar sob cicloplegia."
+    },
+    {
+      "question": "Qual é a finalidade de instilar ciclopentolato ou tropicamida antes de medir a refração?",
+      "options": [
+        "Paralisar a acomodação e revelar a hipermetropia latente",
+        "Paralisar a acomodação e reduzir a hipermetropia total",
+        "Estimular a acomodação e revelar a hipermetropia total",
+        "Contrair a pupila e aumentar a nitidez da retinoscopia"
+      ],
+      "correctIndex": 0,
+      "explanation": "Ciclopentolato e tropicamida são cicloplégicos: bloqueiam o músculo ciliar e suspendem a acomodação. Sem esse tônus aparece a parcela latente da hipermetropia, e a refração medida passa a ser a total. Em crianças e jovens hipermetropes a refração sob cicloplegia é indispensável, sob pena de subestimar o grau."
+    },
+    {
+      "question": "Que conjunto de sintomas caracteriza a astenopia?",
+      "options": [
+        "Cansaço visual, peso ocular, dor nos olhos e cefaleia",
+        "Perda súbita de visão, dor intensa e olho vermelho",
+        "Moscas volantes, flashes luminosos e sombra fixa",
+        "Secreção purulenta, fotofobia e edema palpebral"
+      ],
+      "correctIndex": 0,
+      "explanation": "Astenopia é o quadro de fadiga visual: cansaço, sensação de peso, desconforto, dor ocular e cefaleia, tipicamente após uso prolongado da visão de perto. Piora com fadiga, álcool e alguns medicamentos. É queixa frequente do hipermetrope não corrigido, que mantém acomodação sustentada para compensar o grau."
+    },
+    {
+      "question": "Que lente esférica corrige a hipermetropia?",
+      "options": [
+        "Convergente, de sinal positivo, que adianta o foco",
+        "Divergente, de sinal negativo, que adianta o foco",
+        "Convergente, de sinal negativo, que atrasa o foco",
+        "Cilíndrica, de eixo variável, que alonga o foco"
+      ],
+      "correctIndex": 0,
+      "explanation": "A hipermetropia precisa de poder refrativo adicional, fornecido por lente convergente, biconvexa, prescrita com sinal positivo. Ela traz para o plano retiniano o foco que cairia atrás da retina. Com isso o paciente deixa de depender da acomodação e a astenopia costuma ceder."
+    },
+    {
+      "question": "O que é a presbiopia e em que faixa etária costuma começar?",
+      "options": [
+        "Perda fisiológica da acomodação, iniciada por volta dos 40 anos",
+        "Perda fisiológica da acomodação, iniciada por volta dos 20 anos",
+        "Aumento do diâmetro do globo ocular, iniciado aos 40 anos",
+        "Opacificação progressiva do cristalino, iniciada aos 40 anos"
+      ],
+      "correctIndex": 0,
+      "explanation": "A presbiopia é a perda progressiva da capacidade de acomodação que acompanha o envelhecimento do cristalino. Manifesta-se por volta dos 40 anos e progride até cerca dos 60, quando a amplitude acomodativa se esgota. Não é um erro do comprimento do olho, e sim a falência do mecanismo de foco para perto."
+    },
+    {
+      "question": "A figura mostra um paciente afastando o texto do rosto para conseguir ler. Que alteração esse comportamento denuncia?",
+      "options": [
+        "Presbiopia, com perda da acomodação para perto",
+        "Miopia axial, com perda da nitidez para longe",
+        "Astigmatismo irregular, com distorção da imagem",
+        "Anisometropia, com graus distintos entre os olhos"
+      ],
+      "correctIndex": 0,
+      "explanation": "Afastar o material de leitura é a manobra clássica do présbita: ao aumentar a distância do objeto, reduz-se a demanda acomodativa exigida, compensando a perda de amplitude. É o chamado sinal do braço curto. A visão de longe permanece boa quando não há outro erro refracional associado.",
+      "image": "s14i2",
+      "imageCaption": "Afastamento do texto na presbiopia"
+    },
+    {
+      "question": "Que tipo de lente corrige a presbiopia na visão de perto?",
+      "options": [
+        "Lentes convergentes positivas, prescritas como adição",
+        "Lentes divergentes negativas, prescritas como adição",
+        "Lentes cilíndricas negativas, prescritas com eixo fixo",
+        "Lentes prismáticas de base nasal, prescritas aos pares"
+      ],
+      "correctIndex": 0,
+      "explanation": "Como o cristalino perdeu a capacidade de aumentar seu próprio poder refrativo, a presbiopia é corrigida por lentes convergentes positivas, que substituem a acomodação perdida. Esse valor é prescrito como adição, somado ao grau de longe. Ele cresce com a idade, acompanhando a queda da amplitude acomodativa."
+    },
+    {
+      "question": "Presbiopia e hipermetropia prejudicam a visão de perto, mas por motivos distintos. Qual afirmação separa corretamente as duas?",
+      "options": [
+        "A presbiopia é falha da acomodação; a hipermetropia, do comprimento axial",
+        "A presbiopia é falha do comprimento axial; a hipermetropia, da acomodação",
+        "A presbiopia surge na infância; a hipermetropia, depois dos 40 anos de idade",
+        "A presbiopia exige lente negativa; a hipermetropia, lente negativa mais forte"
+      ],
+      "correctIndex": 0,
+      "explanation": "Na hipermetropia o olho é opticamente insuficiente, em geral curto demais, e o defeito existe desde sempre, mascarado pela acomodação enquanto ela funciona. Na presbiopia o olho pode ser opticamente normal: o que falha é o mecanismo de acomodação, que se esgota com a idade. As duas usam lentes positivas, mas a presbiopia só na visão de perto."
+    },
+    {
+      "question": "A figura contrasta um olho normal com um olho astigmata. Qual é a origem óptica da distorção da imagem no astigmatismo?",
+      "options": [
+        "Curvaturas diferentes entre os meridianos da córnea",
+        "Curvatura corneana uniforme em todos os meridianos",
+        "Aumento do diâmetro anteroposterior do globo ocular",
+        "Redução da amplitude de acomodação do cristalino"
+      ],
+      "correctIndex": 0,
+      "explanation": "No astigmatismo a córnea não é esférica: um meridiano refrata mais que o outro, de modo que não existe um ponto focal único, e sim duas linhas focais. A imagem chega à retina alongada e distorcida, como a letra borrada da figura. Por isso a correção exige lente cilíndrica, que atua sobre um único meridiano.",
+      "image": "s16i1",
+      "imageCaption": "Olho normal e olho astigmata"
+    },
+    {
+      "question": "No esquema dos tipos de astigmatismo, o que define o astigmatismo misto?",
+      "options": [
+        "Uma linha focal antes da retina e a outra atrás dela",
+        "As duas linhas focais situadas antes da retina",
+        "As duas linhas focais situadas atrás da retina",
+        "Uma linha focal sobre a retina e a outra atrás"
+      ],
+      "correctIndex": 0,
+      "explanation": "No astigmatismo misto um meridiano é míope e o outro hipermetrope: uma linha focal fica à frente da retina e a outra atrás dela. Quando as duas caem antes da retina o astigmatismo é miópico composto, e quando as duas caem atrás é hipermetrópico composto. Nas formas simples, uma das linhas repousa exatamente sobre a retina.",
+      "image": "s17i2",
+      "imageCaption": "Classificação óptica dos tipos de astigmatismo"
+    },
+    {
+      "question": "O que caracteriza o astigmatismo miópico simples?",
+      "options": [
+        "Uma linha focal na retina e a outra à frente dela",
+        "Uma linha focal na retina e a outra atrás dela",
+        "As duas linhas focais situadas à frente da retina",
+        "As duas linhas focais situadas atrás da retina"
+      ],
+      "correctIndex": 0,
+      "explanation": "No astigmatismo simples um dos meridianos é emétrope, com sua linha focal exatamente sobre a retina. Se a outra linha cai à frente, o astigmatismo é miópico simples; se cai atrás, é hipermetrópico simples. Quando nenhum meridiano foca na retina, o astigmatismo passa a ser composto ou misto."
+    },
+    {
+      "question": "No astigmatismo a favor da regra, como se comporta a curvatura da córnea?",
+      "options": [
+        "A curva vertical é mais acentuada que a horizontal",
+        "A curva horizontal é mais acentuada que a vertical",
+        "As duas curvas principais têm a mesma acentuação",
+        "A curva vertical é a única presente na superfície"
+      ],
+      "correctIndex": 0,
+      "explanation": "No astigmatismo a favor da regra o meridiano vertical é o mais curvo, e o eixo negativo fica em torno de 180 graus. É o padrão mais comum em pessoas jovens. Quando o meridiano horizontal passa a ser o mais curvo, com eixo negativo próximo de 90 graus, o astigmatismo é contra a regra, típico do envelhecimento."
+    },
+    {
+      "question": "Em que posição fica o eixo negativo no astigmatismo contra a regra?",
+      "options": [
+        "Próximo de 90 graus, com meridiano horizontal mais curvo",
+        "Próximo de 180 graus, com meridiano vertical mais curvo",
+        "Próximo de 45 graus, com os dois meridianos iguais",
+        "Próximo de 90 graus, com meridiano vertical mais curvo"
+      ],
+      "correctIndex": 0,
+      "explanation": "No astigmatismo contra a regra o eixo negativo se situa próximo de 90 graus, porque o meridiano mais curvo é o horizontal. O padrão oposto, a favor da regra, tem eixo negativo perto de 180 graus e meridiano vertical mais curvo. Eixos intermediários, afastados dos dois, configuram astigmatismo oblíquo."
+    },
+    {
+      "question": "Que tipo de lente corrige o astigmatismo regular?",
+      "options": [
+        "Lente cilíndrica, que atua sobre um meridiano",
+        "Lente esférica, que atua em todos os meridianos",
+        "Lente prismática, que desvia o feixe lateralmente",
+        "Lente esférica positiva, que atua como adição"
+      ],
+      "correctIndex": 0,
+      "explanation": "O astigmatismo exige lente cilíndrica, que altera o poder dióptrico apenas em um meridiano e deixa o perpendicular inalterado, reunindo as duas linhas focais em um único ponto. Por isso a receita precisa indicar o eixo em graus, além do valor cilíndrico. Lentes esféricas atuam igualmente em todos os meridianos e não corrigem a assimetria."
+    },
+    {
+      "question": "Na receita mostrada, o olho direito recebe -1,00 DE e o esquerdo +2,00 DE. O que essa combinação indica?",
+      "options": [
+        "Olho direito míope e olho esquerdo hipermetrope",
+        "Olho direito hipermetrope e olho esquerdo míope",
+        "Ambos os olhos míopes, com graus bem diferentes",
+        "Ambos os olhos hipermetropes, com graus iguais"
+      ],
+      "correctIndex": 0,
+      "explanation": "Na notação da receita, dioptrias esféricas negativas correspondem à miopia e positivas à hipermetropia. Aqui o olho direito é míope de -1,00 e o esquerdo hipermetrope de +2,00, o que configura uma anisometropia. A coluna DC, com -0,50 no eixo de 180 graus, acrescenta o componente cilíndrico do astigmatismo no olho direito.",
+      "image": "s24i1",
+      "imageCaption": "Receita de lentes corretoras com DE, DC e eixo"
+    },
+    {
+      "question": "Em uma receita de óculos, o que representa a coluna da adição?",
+      "options": [
+        "O valor positivo somado ao grau de longe para ver de perto",
+        "O valor negativo somado ao grau de longe para ver de perto",
+        "O valor cilíndrico somado ao eixo para corrigir distorção",
+        "O valor esférico subtraído do grau de perto para ver longe"
+      ],
+      "correctIndex": 0,
+      "explanation": "A adição é o poder convergente extra prescrito para a visão de perto, sempre positivo, e substitui a acomodação perdida na presbiopia. Ela se soma ao grau de longe de cada olho. As colunas DE e DC trazem, respectivamente, as dioptrias esféricas e as cilíndricas, e o eixo indica o meridiano em que o cilindro atua."
+    },
+    {
+      "question": "Qual instrumento é usado na esquiascopia, o exame objetivo da refração?",
+      "options": [
+        "O retinoscópio, que projeta luz e analisa o reflexo",
+        "O tonômetro, que projeta luz e mede a pressão ocular",
+        "O ceratoscópio, que analisa a curvatura da córnea",
+        "O oftalmoscópio, que examina apenas o fundo de olho"
+      ],
+      "correctIndex": 0,
+      "explanation": "Na esquiascopia, ou retinoscopia, projeta-se com o retinoscópio uma faixa de luz na pupila e observa-se o movimento do reflexo retiniano enquanto lentes são interpostas. É um método objetivo, pois não depende da resposta do paciente, o que o torna útil em crianças e pacientes pouco cooperativos. O autorrefrator cumpre função semelhante de forma automatizada."
+    },
+    {
+      "question": "Quais são as três formas de corrigir os erros de refração?",
+      "options": [
+        "Óculos, lentes de contato e cirurgia refrativa",
+        "Óculos, colírio cicloplégico e cirurgia refrativa",
+        "Óculos, lentes de contato e oclusão do olho bom",
+        "Óculos, tampão ocular e reposição de vitamina A"
+      ],
+      "correctIndex": 0,
+      "explanation": "Os erros refracionais são corrigidos por óculos, lentes de contato ou cirurgia refrativa a laser, como o PRK e o LASIK. Colírios cicloplégicos servem ao diagnóstico, não à correção. Oclusão e tampão são recursos do tratamento da ambliopia, e a vitamina A não altera o poder refrativo do olho."
+    },
+    {
+      "question": "Na figura, a lente que corrige o olho cujo foco se forma antes da retina tem que formato?",
+      "options": [
+        "Bicôncava, mais fina no centro que nas bordas",
+        "Biconvexa, mais espessa no centro que nas bordas",
+        "Cilíndrica, com curvatura em um só meridiano",
+        "Prismática, com desvio lateral de todo o feixe"
+      ],
+      "correctIndex": 0,
+      "explanation": "Foco antes da retina é miopia, corrigida por lente divergente bicôncava, mais delgada no centro e mais espessa nas bordas, que reduz a convergência do feixe e leva o foco até a retina. O painel da hipermetropia da mesma figura mostra a lente biconvexa, e o do astigmatismo, uma lente de curvatura cilíndrica.",
+      "image": "s20i1",
+      "imageCaption": "As três ametropias e suas lentes corretoras"
+    },
+    {
+      "question": "A figura compara lentes bifocais e progressivas. Qual é a diferença entre os dois desenhos?",
+      "options": [
+        "A progressiva acrescenta uma zona intermediária de foco",
+        "A progressiva elimina a zona de perto da lente bifocal",
+        "A bifocal acrescenta uma zona intermediária de foco",
+        "A bifocal corrige apenas a visão de longe do paciente"
+      ],
+      "correctIndex": 0,
+      "explanation": "A lente bifocal tem dois campos nítidos separados por uma linha visível: longe em cima e perto embaixo. A progressiva, ou multifocal, distribui a adição gradualmente e cria uma faixa intermediária, útil para distâncias como a do computador. As duas são alternativas para o présbita que também precisa de correção de longe.",
+      "image": "s27i2",
+      "imageCaption": "Zonas de foco nas lentes bifocais e progressivas"
+    },
+    {
+      "question": "Que alteração do cristalino a síndrome de Weill-Marchesani provoca?",
+      "options": [
+        "Microesferofacia, cristalino pequeno e muito esférico",
+        "Microesferofacia, cristalino grande e muito achatado",
+        "Luxação superior do cristalino, sem mudar seu formato",
+        "Opacificação nuclear precoce, sem mudar seu formato"
+      ],
+      "correctIndex": 0,
+      "explanation": "Na síndrome de Weill-Marchesani o cristalino é pequeno e excessivamente esférico — a microesferofacia — o que eleva muito seu poder refrativo e produz miopia lenticular alta. A síndrome de Marfan cursa com luxação do cristalino, e a homocistinúria também desloca o cristalino. Todas alteram a refração por deformação ou deslocamento dessa lente."
+    },
+    {
+      "question": "Como a hiperglicemia aguda costuma alterar a refração de um paciente diabético?",
+      "options": [
+        "Induz desvio miópico transitório por edema do cristalino",
+        "Induz desvio hipermetrópico definitivo por edema corneano",
+        "Induz astigmatismo irregular permanente por edema macular",
+        "Induz perda acomodativa irreversível por edema retiniano"
+      ],
+      "correctIndex": 0,
+      "explanation": "A hiperglicemia eleva a glicose no humor aquoso, o cristalino absorve água e aumenta seu poder refrativo, deslocando o foco para antes da retina — um desvio miópico transitório. Ao normalizar a glicemia a refração retorna, por isso não se prescrevem óculos definitivos durante a descompensação. Doenças metabólicas, gestação e alguns medicamentos alteram a refração da mesma forma reversível."
+    }
+  ]
+}

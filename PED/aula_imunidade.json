@@ -1,0 +1,372 @@
+{
+  "titulo": "Imunidade",
+  "eyebrow": "Pediatria · Imunologia",
+  "subtitulo": "Da barreira epitelial à tolerância: como a defesa se organiza",
+  "intro": "Conceitos essenciais de imunologia aplicados à pediatria: imunidade inata e adaptativa, células e moléculas efetoras, sistema complemento, linfócitos T e B, tolerância central e periférica, e as particularidades da defesa do recém-nascido e do lactente.",
+  "questoes": [
+    {
+      "question": "Uma criança apresenta um corte contaminado e, em poucas horas, a área fica quente e dolorida. Qual característica define a resposta imune inata responsável por esse quadro?",
+      "options": [
+        "Atua em minutos a horas e reconhece padrões moleculares gerais",
+        "Atua em minutos a horas e depende de rearranjo gênico prévio",
+        "Leva vários dias e reconhece padrões moleculares gerais",
+        "Leva vários dias e gera memória imunológica duradoura"
+      ],
+      "correctIndex": 0,
+      "explanation": "A imunidade inata age em minutos a horas porque seus receptores de reconhecimento de padrões já estão prontos e identificam estruturas compartilhadas por classes inteiras de micro-organismos, sem especificidade para um antígeno único. Rearranjo gênico do receptor e memória de longa duração são atributos da imunidade adaptativa, que leva dias para se organizar."
+    },
+    {
+      "question": "O lipopolissacarídeo da parede das bactérias Gram-negativas dispara inflamação ao ser reconhecido pela imunidade inata. Como essa molécula é classificada?",
+      "options": [
+        "PAMP, padrão molecular associado a patógeno",
+        "DAMP, padrão molecular associado a dano tecidual",
+        "PRR, receptor celular de reconhecimento de padrão",
+        "MAC, complexo de ataque à membrana do alvo"
+      ],
+      "correctIndex": 0,
+      "explanation": "PAMPs são estruturas moleculares próprias de micro-organismos, como o lipopolissacarídeo de Gram-negativas, o peptideoglicano de Gram-positivas e o RNA viral. Quem os detecta são os PRRs, que são receptores e não padrões. DAMPs, por sua vez, são sinais liberados por células lesadas do próprio hospedeiro."
+    },
+    {
+      "question": "Após um traumatismo fechado, células necróticas liberam ATP extracelular, ácido úrico e DNA, o que deflagra inflamação sem qualquer infecção. Essas moléculas correspondem a que categoria?",
+      "options": [
+        "DAMPs, sinais de lesão liberados por células do hospedeiro",
+        "PAMPs, estruturas exclusivas de micro-organismos invasores",
+        "PRRs, receptores de superfície dos fagócitos teciduais",
+        "Opsoninas, moléculas que revestem o alvo da fagocitose"
+      ],
+      "correctIndex": 0,
+      "explanation": "DAMPs são padrões moleculares associados a dano: ATP extracelular, ácido úrico e DNA liberados por células mortas ou lesadas. Eles ativam os mesmos PRRs acionados pelos PAMPs, o que explica a inflamação estéril observada após trauma, isquemia ou necrose tumoral, sem nenhum micro-organismo envolvido."
+    },
+    {
+      "question": "Lágrima, acidez gástrica e temperatura corporal atuam antes que qualquer leucócito seja recrutado. A que componente da imunidade inata pertencem?",
+      "options": [
+        "Barreiras físico-químicas, a primeira linha de contenção",
+        "Fagócitos profissionais, a segunda linha de contenção",
+        "Proteínas do complemento, amplificadoras da resposta",
+        "Linfócitos de memória, resposta rápida à reexposição"
+      ],
+      "correctIndex": 0,
+      "explanation": "A imunidade inata começa nas barreiras: epitélios da pele e das mucosas, além de barreiras químicas como a lisozima da lágrima, o pH gástrico e a temperatura corporal. Só quando essa contenção falha entram os fagócitos, o complemento e as citocinas. Linfócitos de memória pertencem à imunidade adaptativa.",
+      "image": "s07i1",
+      "imageCaption": "Componentes da imunidade inata e seu tempo de resposta"
+    },
+    {
+      "question": "Qual célula chega em maior número nas primeiras horas de um foco inflamatório agudo e tem a fagocitose como função predominante?",
+      "options": [
+        "Neutrófilo, fagócito de resposta imediata",
+        "Plasmócito, célula secretora de anticorpos",
+        "Linfócito T CD8+, efetor da citotoxicidade",
+        "Célula dendrítica, apresentadora de antígeno"
+      ],
+      "correctIndex": 0,
+      "explanation": "O neutrófilo é o primeiro leucócito recrutado ao tecido inflamado e atua basicamente fagocitando e destruindo o agente. Plasmócitos e linfócitos T pertencem à resposta adaptativa e levam dias para entrar em cena; a célula dendrítica é inata, mas sua função principal é apresentar antígeno, não a fagocitose em massa."
+    },
+    {
+      "question": "Além de fagocitar o agente agressor, qual é o papel do macrófago tecidual no início de uma infecção?",
+      "options": [
+        "Coordena a inflamação liberando citocinas no tecido",
+        "Produz anticorpos específicos contra o agente agressor",
+        "Rearranja genes do receptor para ganhar especificidade",
+        "Sofre seleção negativa no timo antes de migrar ao foco"
+      ],
+      "correctIndex": 0,
+      "explanation": "O macrófago fagocita e, ao mesmo tempo, secreta citocinas que recrutam e ativam outras células, comandando a inflamação local. A produção de anticorpos cabe ao plasmócito, o rearranjo gênico do receptor ocorre em linfócitos B e T, e a seleção negativa no timo é etapa exclusiva dos timócitos."
+    },
+    {
+      "question": "As células natural killer eliminam alvos sem necessidade de apresentação prévia de antígeno. Contra que tipo de alvo sua ação é mais característica?",
+      "options": [
+        "Células infectadas por vírus e células tumorais",
+        "Bactérias extracelulares encapsuladas e fungos",
+        "Parasitas helmínticos alojados no tecido subcutâneo",
+        "Toxinas bacterianas circulantes já neutralizadas"
+      ],
+      "correctIndex": 0,
+      "explanation": "A célula NK é o braço citotóxico da imunidade inata: mata células infectadas por vírus e células transformadas, reconhecendo a perda ou a alteração do MHC de classe I na superfície do alvo. Bactérias extracelulares são alvo de fagócitos e complemento, e helmintos são combatidos por eosinófilos e resposta Th2."
+    },
+    {
+      "question": "Qual célula captura antígenos no tecido, migra para os órgãos linfoides e fornece aos linfócitos T virgens o sinal que os ativa?",
+      "options": [
+        "Célula dendrítica, a principal apresentadora de antígeno",
+        "Célula natural killer, efetora antiviral imediata",
+        "Neutrófilo, primeiro fagócito a migrar para o tecido",
+        "Plasmócito, produtor final das imunoglobulinas"
+      ],
+      "correctIndex": 0,
+      "explanation": "A célula dendrítica é a ponte entre a imunidade inata e a adaptativa: captura o antígeno no tecido, processa e migra ao linfonodo, onde apresenta peptídeos no MHC e oferece a coestimulação necessária para ativar o linfócito T virgem. O contexto inflamatório dessa apresentação determina o perfil da resposta adaptativa."
+    },
+    {
+      "question": "Na inflamação aguda, a vasodilatação e o aumento da permeabilidade vascular servem a que finalidade, e qual é o preço dessa resposta?",
+      "options": [
+        "Trazem células e proteínas ao foco, podendo lesar o tecido vizinho",
+        "Trazem células e proteínas ao foco, sem qualquer risco tecidual",
+        "Retêm os leucócitos no vaso, poupando o tecido inflamado",
+        "Reduzem o fluxo local, limitando a chegada de fagócitos"
+      ],
+      "correctIndex": 0,
+      "explanation": "A vasodilatação aumenta o aporte sanguíneo e o aumento da permeabilidade permite a saída de leucócitos e de proteínas plasmáticas para o tecido. Neutrófilos e macrófagos eliminam o agente, mas as enzimas e os mediadores que liberam também lesam estruturas vizinhas, origem do dano imunomediado."
+    },
+    {
+      "question": "Na cascata do complemento, qual é a função principal do fragmento C3b depositado sobre a superfície de uma bactéria?",
+      "options": [
+        "Opsonizar o alvo e facilitar sua fagocitose",
+        "Formar o poro do complexo de ataque à membrana",
+        "Atrair neutrófilos como potente fator quimiotático",
+        "Degranular mastócitos e liberar histamina local"
+      ],
+      "correctIndex": 0,
+      "explanation": "C3b é a principal opsonina do complemento: recobre o micro-organismo e é reconhecido por receptores específicos do fagócito, aumentando muito a eficiência da fagocitose. O poro lítico é formado pelo complexo C5b-9, e a quimiotaxia e a degranulação são atribuídas às anafilatoxinas C3a e C5a."
+    },
+    {
+      "question": "O complexo de ataque à membrana, produto terminal da cascata do complemento, atua sobre o alvo de que modo?",
+      "options": [
+        "Forma um poro na membrana e provoca lise celular",
+        "Reveste a membrana e favorece a opsonização",
+        "Recruta neutrófilos por gradiente quimiotático",
+        "Bloqueia a adesão do agente ao epitélio da mucosa"
+      ],
+      "correctIndex": 0,
+      "explanation": "O MAC resulta da polimerização de C5b a C9 e perfura a membrana do alvo, levando à lise osmótica, mecanismo especialmente relevante contra Neisseria. A opsonização cabe ao C3b, a quimiotaxia às anafilatoxinas C3a e C5a, e o bloqueio da adesão às mucosas é função da IgA secretora."
+    },
+    {
+      "question": "Na primeira exposição a um antígeno, o que distingue a resposta adaptativa da resposta inata?",
+      "options": [
+        "Leva dias, é específica para o antígeno e deixa memória",
+        "Leva dias, é inespecífica e não deixa qualquer memória",
+        "Age em minutos, é específica e deixa memória duradoura",
+        "Age em minutos, é inespecífica e não deixa memória"
+      ],
+      "correctIndex": 0,
+      "explanation": "A imunidade adaptativa depende da seleção e da expansão de clones de linfócitos que reconhecem um antígeno específico, o que consome dias na primeira exposição. Em compensação, é específica e deixa células de memória, base da resposta secundária rápida e da proteção conferida pelas vacinas."
+    },
+    {
+      "question": "Após ser ativado pelo antígeno, em que tipos celulares o linfócito B se diferencia?",
+      "options": [
+        "Plasmócitos secretores de anticorpo e células de memória",
+        "Linfócitos T citotóxicos e linfócitos T reguladores",
+        "Células natural killer e macrófagos teciduais ativados",
+        "Células dendríticas maduras e mastócitos sensibilizados"
+      ],
+      "correctIndex": 0,
+      "explanation": "O linfócito B ativado origina duas linhagens: plasmócitos, que secretam grandes quantidades de anticorpo, e células B de memória, responsáveis pela resposta secundária rápida. Linfócitos T, NK, macrófagos e dendríticas derivam de precursores distintos e não são produto da ativação do linfócito B."
+    },
+    {
+      "question": "Um anticorpo que se liga a uma bactéria protege o hospedeiro por três vias principais. Quais são elas?",
+      "options": [
+        "Neutralização, opsonização e ativação do complemento",
+        "Neutralização, fagocitose direta e seleção negativa",
+        "Citotoxicidade direta, apoptose e edição de receptor",
+        "Quimiotaxia, vasodilatação e degranulação de mastócito"
+      ],
+      "correctIndex": 0,
+      "explanation": "O anticorpo neutraliza micro-organismos e toxinas impedindo sua ligação às células, opsoniza o alvo para reconhecimento pelo receptor Fc do fagócito e ativa a via clássica do complemento, gerando opsonização por C3b e lise pelo MAC. Ele ainda permite a citotoxicidade mediada por células natural killer.",
+      "image": "s10i1",
+      "imageCaption": "Funções efetoras dos anticorpos e do sistema complemento"
+    },
+    {
+      "question": "O linfócito T CD8+ citotóxico só reconhece o antígeno quando apresentado por qual molécula?",
+      "options": [
+        "MHC de classe I, expresso em quase toda célula nucleada",
+        "MHC de classe II, restrito a células apresentadoras",
+        "Receptor Fc, expresso na superfície dos fagócitos",
+        "Receptor de complemento CR1, expresso em hemácias"
+      ],
+      "correctIndex": 0,
+      "explanation": "O CD8 é o correceptor do MHC de classe I, presente em praticamente todas as células nucleadas, o que permite ao linfócito citotóxico vigiar qualquer célula infectada por vírus ou transformada. Já o MHC de classe II, reconhecido pelo CD4, fica restrito a dendríticas, macrófagos e linfócitos B."
+    },
+    {
+      "question": "Qual é a função central do linfócito T auxiliar CD4+ dentro da resposta imune?",
+      "options": [
+        "Coordenar a resposta por citocinas e auxiliar o linfócito B",
+        "Destruir por citotoxicidade as células infectadas por vírus",
+        "Fagocitar o agente e apresentá-lo no linfonodo regional",
+        "Formar poros na membrana do alvo junto ao complemento"
+      ],
+      "correctIndex": 0,
+      "explanation": "O CD4+ não mata diretamente: libera citocinas que orientam macrófagos, linfócitos B e outras populações, funcionando como coordenador da resposta. É dele que vem o auxílio necessário para que o linfócito B troque a classe do anticorpo e produza resposta de alta afinidade."
+    },
+    {
+      "question": "Qual subpopulação de linfócito T CD4+ ativa macrófagos para destruir bactérias que se replicam dentro da célula?",
+      "options": [
+        "Th1, que age sobretudo por interferon-gama",
+        "Th2, que auxilia a produção de anticorpos",
+        "Th17, que defende as barreiras epiteliais",
+        "Treg, que freia e encerra a resposta imune"
+      ],
+      "correctIndex": 0,
+      "explanation": "O perfil Th1 secreta interferon-gama, que ativa o macrófago e potencializa sua capacidade de matar micro-organismos intracelulares, como micobactérias. Th2 favorece anticorpos e resposta contra helmintos, Th17 protege barreiras contra fungos e bactérias extracelulares, e Treg suprime a resposta."
+    },
+    {
+      "question": "Na defesa contra helmintos e nas reações alérgicas, qual subpopulação de linfócito T CD4+ predomina?",
+      "options": [
+        "Th2, que estimula a produção de anticorpos",
+        "Th1, que ativa macrófagos por interferon-gama",
+        "Th17, que protege as barreiras epiteliais",
+        "Treg, que suprime a ativação dos efetores"
+      ],
+      "correctIndex": 0,
+      "explanation": "O perfil Th2 secreta IL-4, IL-5 e IL-13, estimula a troca de classe para IgE, recruta eosinófilos e sustenta tanto a defesa antiparasitária quanto as doenças alérgicas. Th1 é o eixo antimicrobiano intracelular, Th17 protege mucosas e pele, e Treg controla a intensidade da resposta."
+    },
+    {
+      "question": "A célula T reguladora expressa CD25 em altíssimo nível. Que consequência isso traz para os linfócitos T efetores ao redor?",
+      "options": [
+        "Ficam sem IL-2 disponível e morrem por privação",
+        "Recebem excesso de IL-2 e proliferam sem controle",
+        "Perdem a expressão de MHC e deixam de ser vistos",
+        "Trocam a classe do anticorpo que estavam produzindo"
+      ],
+      "correctIndex": 0,
+      "explanation": "CD25 é a cadeia alfa do receptor de IL-2 e tem afinidade muito alta por essa citocina. A Treg funciona como um sequestrador de combustível: consome a IL-2 do microambiente e deixa os linfócitos T efetores sem o fator de crescimento de que dependem, levando-os à apoptose por privação de citocina.",
+      "image": "s20i1",
+      "imageCaption": "Rede de supressão exercida pela célula T reguladora"
+    },
+    {
+      "question": "O CTLA-4 liga-se com avidez muito maior às moléculas coestimuladoras da célula apresentadora. Qual é o efeito sobre o linfócito T autorreativo?",
+      "options": [
+        "Fica sem o segundo sinal e entra em anergia",
+        "Recebe sinal reforçado e prolifera intensamente",
+        "Sofre lise imediata pelo complexo de ataque",
+        "Migra de volta ao timo para nova seleção"
+      ],
+      "correctIndex": 0,
+      "explanation": "A ativação plena do linfócito T exige dois sinais: o reconhecimento do antígeno pelo receptor de células T e a coestimulação. O CTLA-4 compete pelas moléculas coestimuladoras com afinidade muito maior que o receptor ativador, bloqueia o segundo sinal e deixa a célula em anergia, um estado de inatividade funcional."
+    },
+    {
+      "question": "Durante o desenvolvimento no timo, o timócito cujo receptor reconhece um autoantígeno com alta afinidade tem que destino?",
+      "options": [
+        "É eliminado por apoptose na seleção negativa",
+        "É preservado e amadurece na seleção positiva",
+        "É exportado à periferia como célula anérgica",
+        "É convertido em linfócito B na medula óssea"
+      ],
+      "correctIndex": 0,
+      "explanation": "No córtex tímico ocorre a seleção positiva, que preserva os timócitos capazes de reconhecer o MHC próprio. Na junção córtico-medular, células dendríticas e macrófagos apresentam autoantígenos e os clones de alta afinidade são deletados por apoptose, a seleção negativa, núcleo da tolerância central.",
+      "image": "s19i1",
+      "imageCaption": "Seleção positiva e negativa dos timócitos no timo"
+    },
+    {
+      "question": "A quebra dos mecanismos de tolerância imunológica leva a que consequência clínica?",
+      "options": [
+        "Resposta dirigida contra antígenos do próprio organismo",
+        "Ausência completa de resposta a qualquer antígeno",
+        "Predomínio permanente da inata sobre a adaptativa",
+        "Perda seletiva da capacidade de formar memória"
+      ],
+      "correctIndex": 0,
+      "explanation": "A tolerância existe para que o sistema responda ao não-próprio e ignore os autoantígenos. Quando a tolerância central ou a periférica falham, clones autorreativos escapam e passam a atacar tecidos do hospedeiro, o que fundamenta as doenças autoimunes e boa parte das doenças imunomediadas."
+    },
+    {
+      "question": "Um linfócito B imaturo na medula óssea reconhece um autoantígeno com alta afinidade. Que mecanismo pode resgatá-lo da apoptose?",
+      "options": [
+        "Edição do receptor, com novo rearranjo da cadeia leve",
+        "Seleção positiva pelo epitélio cortical do timo",
+        "Troca de classe da imunoglobulina para IgG",
+        "Supressão por célula T reguladora via IL-10"
+      ],
+      "correctIndex": 0,
+      "explanation": "Diferente do timócito, o linfócito B autorreativo tem uma segunda chance: pode reorganizar os genes da cadeia leve e produzir um receptor com outra especificidade, mecanismo chamado edição de receptor. Se a edição falhar, a célula é deletada por apoptose ou segue anérgica na periferia.",
+      "image": "s19i2",
+      "imageCaption": "Mecanismos de tolerância central por linhagem celular"
+    },
+    {
+      "question": "Um linfócito T autorreativo que escapou do timo encontra o autoantígeno sem receber coestimulação adequada. Qual é o desfecho esperado?",
+      "options": [
+        "Anergia, com inativação funcional da célula",
+        "Expansão clonal, com ganho de função efetora",
+        "Seleção positiva, com maturação para CD8+",
+        "Troca de classe, com produção de anticorpo"
+      ],
+      "correctIndex": 0,
+      "explanation": "A tolerância periférica atua sobre os clones que escaparam da seleção tímica. O reconhecimento do antígeno sem o segundo sinal leva à anergia; o estímulo persistente leva à deleção por apoptose; e as células T reguladoras suprimem os autorreativos por IL-10, TGF-beta e consumo de IL-2."
+    },
+    {
+      "question": "Antígenos polissacarídicos puros, como os da cápsula do pneumococo, ativam o linfócito B sem auxílio do linfócito T. Que consequência prática isso traz?",
+      "options": [
+        "Resposta de curta duração e sem boa memória",
+        "Resposta duradoura com forte memória imune",
+        "Resposta restrita aos linfócitos T citotóxicos",
+        "Resposta dependente de apresentação por MHC I"
+      ],
+      "correctIndex": 0,
+      "explanation": "A resposta timo-independente gera sobretudo IgM, tem pouca troca de classe e forma memória fraca, porque falta o auxílio do CD4+ no centro germinativo. É por isso que formulações polissacarídicas puras protegem mal os lactentes e foram substituídas pelas vacinas conjugadas a proteína.",
+      "image": "s16i1",
+      "imageCaption": "Desenvolvimento e ativação dos linfócitos B e T"
+    },
+    {
+      "question": "Comparada à resposta primária, como se comporta a resposta imune secundária ao mesmo antígeno?",
+      "options": [
+        "Mais rápida, mais intensa e com predomínio de IgG",
+        "Mais lenta, mais intensa e com predomínio de IgM",
+        "Mais rápida, menos intensa e com predomínio de IgM",
+        "Idêntica em latência, intensidade e classe de anticorpo"
+      ],
+      "correctIndex": 0,
+      "explanation": "Os linfócitos de memória gerados na primeira exposição respondem em poucos dias, com títulos muito maiores e anticorpos de maior afinidade, predominantemente IgG após a troca de classe. Esse é o princípio das doses de reforço do calendário vacinal e também da gravidade da anafilaxia na reexposição."
+    },
+    {
+      "question": "Qual imunoglobulina atravessa a placenta e sustenta a proteção do recém-nascido nos primeiros meses de vida?",
+      "options": [
+        "IgG, transferida sobretudo no terceiro trimestre",
+        "IgM, transferida sobretudo no primeiro trimestre",
+        "IgA, transferida de forma contínua pelo cordão",
+        "IgE, transferida junto às demais imunoglobulinas"
+      ],
+      "correctIndex": 0,
+      "explanation": "Apenas a IgG atravessa a placenta, por transporte ativo mediado pelo receptor FcRn, e a maior parte da transferência ocorre no terceiro trimestre. Por isso o prematuro nasce com menos anticorpos maternos e fica mais exposto a infecções nos primeiros meses de vida."
+    },
+    {
+      "question": "Um recém-nascido apresenta IgM específica elevada para toxoplasma no sangue periférico. Qual é a interpretação correta?",
+      "options": [
+        "Produção pelo próprio feto, sugerindo infecção congênita",
+        "Passagem de anticorpo materno através da placenta",
+        "Absorção de imunoglobulina presente no leite materno",
+        "Reação cruzada sem qualquer valor diagnóstico neste caso"
+      ],
+      "correctIndex": 0,
+      "explanation": "A IgM é pentamérica e não atravessa a placenta, de modo que sua presença no sangue do recém-nascido indica síntese pelo próprio feto em resposta a um antígeno encontrado ainda no útero. É esse raciocínio que dá valor diagnóstico à IgM específica nas infecções congênitas."
+    },
+    {
+      "question": "Qual imunoglobulina predomina no colostro e no leite materno e protege as mucosas do lactente?",
+      "options": [
+        "IgA secretora, que atua na superfície das mucosas",
+        "IgG monomérica, que atua no compartimento sérico",
+        "IgM pentamérica, que ativa fortemente o complemento",
+        "IgE, que se fixa a mastócitos e medeia a alergia"
+      ],
+      "correctIndex": 0,
+      "explanation": "A IgA secretora é dimérica e resiste às enzimas do trato digestivo graças ao componente secretor, impedindo a aderência de micro-organismos ao epitélio intestinal e respiratório. Ela não é absorvida para a circulação: sua proteção é local, o que explica a menor incidência de diarreia no lactente amamentado."
+    },
+    {
+      "question": "Uma criança suscetível recebe imunoglobulina humana após contato domiciliar com sarampo. Que tipo de proteção esse procedimento confere?",
+      "options": [
+        "Imunidade passiva, imediata e de curta duração",
+        "Imunidade ativa, imediata e de longa duração",
+        "Imunidade passiva, tardia e de longa duração",
+        "Imunidade ativa, tardia e de curta duração"
+      ],
+      "correctIndex": 0,
+      "explanation": "Na imunidade passiva o indivíduo recebe anticorpos prontos, o que protege de imediato mas se esgota com o catabolismo das imunoglobulinas, em semanas a poucos meses, e não deixa memória. A imunidade ativa, obtida por infecção ou vacina, demora a se estabelecer mas gera memória duradoura."
+    },
+    {
+      "question": "Entre o terceiro e o sexto mês de vida o lactente costuma atingir o menor nível sérico de IgG. Qual é a explicação?",
+      "options": [
+        "A IgG materna decai antes de a síntese própria se firmar",
+        "A IgG materna só começa a ser transferida nesse período",
+        "A IgA do leite materno inibe a síntese de IgG própria",
+        "O timo ainda não iniciou a produção de linfócitos T"
+      ],
+      "correctIndex": 0,
+      "explanation": "A IgG materna tem meia-vida de cerca de três semanas e vai desaparecendo, enquanto a produção própria de IgG ainda é incipiente. O resultado é o nadir fisiológico de imunoglobulinas entre três e seis meses, período de maior vulnerabilidade a infecções por germes encapsulados."
+    },
+    {
+      "question": "Por que vacinas polissacarídicas conjugadas a uma proteína carreadora protegem lactentes que não respondem às formulações polissacarídicas puras?",
+      "options": [
+        "A proteína recruta auxílio do CD4+ e gera memória",
+        "A proteína torna a resposta timo-independente",
+        "A proteína reduz a dose de antígeno necessária",
+        "A proteína adia a resposta para depois dos 2 anos"
+      ],
+      "correctIndex": 0,
+      "explanation": "Conjugar o polissacarídeo a uma proteína carreadora transforma um antígeno timo-independente em timo-dependente: o linfócito B apresenta peptídeos da proteína no MHC de classe II, obtém auxílio do CD4+, troca de classe para IgG e forma memória. É o que viabiliza a imunização contra pneumococo, meningococo e Haemophilus antes dos 2 anos."
+    }
+  ]
+}

@@ -1,0 +1,354 @@
+{
+  "titulo": "Ambliopia",
+  "eyebrow": "Oftalmologia · Desenvolvimento Visual",
+  "subtitulo": "Quando o olho é normal mas o córtex não aprendeu a ver",
+  "intro": "Da fisiologia da visão binocular ao período crítico: as cinco causas de ambliopia, como diferenciá-las, os graus medidos em linhas de optotipos e o tratamento na ordem certa — correção óptica, oclusão, penalização.",
+  "questoes": [
+    {
+      "question": "A ambliopia é definida como redução da acuidade visual de um olho em qual contexto?",
+      "options": [
+        "Ausência de doença orgânica detectável naquele olho",
+        "Presença de opacidade corneana densa naquele olho",
+        "Atrofia do nervo óptico documentada naquele olho",
+        "Descolamento de retina periférico naquele olho"
+      ],
+      "correctIndex": 0,
+      "explanation": "A ambliopia é a queda da acuidade visual de um olho sem alteração estrutural do globo ocular que a justifique. O defeito é cortical, não ocular: o olho capta, mas o córtex não processa. Por isso é classificada como fenômeno de inibição monocular."
+    },
+    {
+      "question": "Até que idade a ambliopia é considerada, em regra, reversível com tratamento?",
+      "options": [
+        "Até os 7 anos de idade",
+        "Até os 2 anos de idade",
+        "Até os 14 anos de idade",
+        "Até os 21 anos de idade"
+      ],
+      "correctIndex": 0,
+      "explanation": "A janela de reversibilidade acompanha a plasticidade do córtex visual e se fecha por volta dos 7 anos, com alguma margem até os 9 anos. Depois disso a perda tende a ser definitiva, o que faz do diagnóstico precoce o ponto decisivo da conduta."
+    },
+    {
+      "question": "Que estrutura sofre atrofia quando um olho é privado de imagem nítida durante o período crítico?",
+      "options": [
+        "As colunas de dominância ocular do córtex estriado",
+        "As camadas de fotorreceptores da retina periférica",
+        "As fibras mielinizadas do quiasma óptico central",
+        "Os núcleos dos nervos oculomotores no mesencéfalo"
+      ],
+      "correctIndex": 0,
+      "explanation": "O período crítico começa logo após o nascimento, quando as colunas de dominância ocular do córtex estriado ainda são vulneráveis à privação visual e se atrofiam se o olho não recebe imagem nítida. É por isso que a lesão é cortical e o globo ocular permanece normal."
+    },
+    {
+      "question": "A via óptica é constituída por três neurônios. Que estações ela percorre da retina ao destino final?",
+      "options": [
+        "Células ganglionares da retina, corpo geniculado lateral e córtex visual",
+        "Fotorreceptores da retina, colículo superior e córtex temporal medial",
+        "Células bipolares da retina, núcleo pulvinar e córtex parietal posterior",
+        "Células amácrinas da retina, núcleo pré-tectal e córtex frontal medial"
+      ],
+      "correctIndex": 0,
+      "explanation": "Os três neurônios da via óptica são a célula ganglionar da retina, o neurônio do corpo geniculado lateral e o neurônio do córtex visual. A ambliopia se instala no terceiro elo, cortical, e não na retina nem no nervo óptico.",
+      "image": "s03i1",
+      "imageCaption": "Via óptica: retina, corpo geniculado lateral e córtex"
+    },
+    {
+      "question": "Como se chama o mecanismo pelo qual um objeto é percebido como único pelos dois olhos?",
+      "options": [
+        "Fusão, por estimular áreas retinianas correspondentes",
+        "Vergência, por alinhar os eixos visuais no infinito",
+        "Fixação, por manter o objeto projetado sobre a fóvea",
+        "Seguimento, por acompanhar o objeto que se desloca"
+      ],
+      "correctIndex": 0,
+      "explanation": "A fusão torna única a percepção de um objeto que estimula áreas retinianas correspondentes dos dois olhos. Quando o alinhamento se perde, as imagens caem em áreas não correspondentes e surgem diplopia e confusão de imagens."
+    },
+    {
+      "question": "A estereopsia exige três requisitos para se desenvolver. Qual deles falta primeiro na ambliopia?",
+      "options": [
+        "Boa visão em ambos os olhos",
+        "Pupilas isocóricas e reagentes",
+        "Campo visual periférico íntegro",
+        "Pressão intraocular simétrica"
+      ],
+      "correctIndex": 0,
+      "explanation": "A estereopsia é adquirida nos primeiros anos de vida e depende de boa visão em ambos os olhos, de fusão de duas imagens ligeiramente dissimilares e de coordenação precisa dos olhos em todas as direções do olhar. O olho amblíope quebra o primeiro requisito e a percepção de profundidade se perde."
+    },
+    {
+      "question": "Supressão e ambliopia são os dois fenômenos de inibição que evitam diplopia. Como se distinguem?",
+      "options": [
+        "A supressão é binocular e a ambliopia é monocular",
+        "A supressão é monocular e a ambliopia é binocular",
+        "Ambas são binoculares e ocorrem só no estrabismo",
+        "Ambas são monoculares e ocorrem só na anisometropia"
+      ],
+      "correctIndex": 0,
+      "explanation": "O cérebro usa supressão e ambliopia para evitar diplopia e confusão de imagens. A supressão é binocular e ativa, dependendo de os dois olhos estarem abertos; a ambliopia é monocular e persiste mesmo quando o outro olho é ocluído."
+    },
+    {
+      "question": "Quais são as cinco categorias causais clássicas da ambliopia?",
+      "options": [
+        "Privação, estrabismo, anisometropia, orgânica e por nistagmo",
+        "Glaucoma, uveíte, ceratocone, retinopatia e por nistagmo",
+        "Privação, glaucoma, ceratocone, orgânica e por catarata",
+        "Estrabismo, uveíte, anisometropia, miopia e por glaucoma"
+      ],
+      "correctIndex": 0,
+      "explanation": "As causas se agrupam em privação (anopsia), estrabismo, anisometropia, orgânica e secundária a nistagmo. Todas partilham o mesmo mecanismo final: impedem a formação de uma imagem nítida sobre a retina durante o período crítico."
+    },
+    {
+      "question": "Lactente com a pupila esbranquiçada em um dos olhos, como na imagem, desenvolve ambliopia por qual mecanismo?",
+      "options": [
+        "Privação: o meio opaco impede a imagem de chegar à retina",
+        "Estrabismo: o desvio joga a imagem fora da fóvea do olho",
+        "Anisometropia: a diferença de grau desfoca só um dos olhos",
+        "Nistagmo: a oscilação impede a fixação estável do objeto"
+      ],
+      "correctIndex": 0,
+      "explanation": "A catarata congênita é o protótipo da ambliopia por privação, ou anopsia: a opacidade dos meios bloqueia a formação da imagem retiniana. Por atuar cedo e de forma completa, é a forma mais grave e a que exige desobstrução mais urgente do eixo visual.",
+      "image": "s11i2",
+      "imageCaption": "Pupila esbranquiçada em um dos olhos do lactente"
+    },
+    {
+      "question": "A ptose palpebral que recobre a pupila na infância, como na imagem, causa ambliopia porque:",
+      "options": [
+        "Oclui o eixo visual e priva a retina de imagem formada",
+        "Comprime o globo e eleva a pressão intraocular do olho",
+        "Desalinha os eixos visuais e produz desvio convergente",
+        "Altera a curvatura do cristalino e desfoca a imagem"
+      ],
+      "correctIndex": 0,
+      "explanation": "A blefaroptose entra no grupo das ambliopias por privação quando a pálpebra cobre a pupila, funcionando como um oclusor permanente. O olho é estruturalmente normal, mas nunca recebe imagem, e as colunas corticais correspondentes se atrofiam.",
+      "image": "s12i1",
+      "imageCaption": "Ptose palpebral unilateral sobre o eixo visual"
+    },
+    {
+      "question": "Na criança com desvio ocular manifesto, como na imagem, qual é o mecanismo da ambliopia do olho desviado?",
+      "options": [
+        "A imagem do olho desviado é suprimida para evitar diplopia",
+        "A musculatura do olho desviado atrofia por falta de uso",
+        "A retina do olho desviado sofre isquemia pela tração",
+        "O nervo óptico do olho desviado desmieliniza com o tempo"
+      ],
+      "correctIndex": 0,
+      "explanation": "No estrabismo as imagens caem em pontos retinianos não correspondentes e o cérebro suprime a do olho desviado para não ver dobrado. A supressão crônica evolui para ambliopia, que persiste mesmo quando o olho fixador é ocluído.",
+      "image": "s13i2",
+      "imageCaption": "Desvio ocular na infância"
+    },
+    {
+      "question": "Anisometropia, causa frequente de ambliopia, é definida como:",
+      "options": [
+        "Diferença de grau refracional entre os dois olhos",
+        "Diferença de diâmetro pupilar entre os dois olhos",
+        "Diferença de pressão intraocular entre os dois olhos",
+        "Diferença de tamanho da imagem entre os dois olhos"
+      ],
+      "correctIndex": 0,
+      "explanation": "Anisometropia é a diferença de grau entre os dois olhos. O olho mais amétrope forma imagem cronicamente desfocada na retina e o córtex passa a privilegiar o olho de melhor foco, o que produz ambliopia mesmo sem desvio visível."
+    },
+    {
+      "question": "Por que a ambliopia anisometrópica costuma ser descoberta tardiamente?",
+      "options": [
+        "O olho é externamente normal e a criança não se queixa",
+        "A criança relata diplopia apenas em ambientes escuros",
+        "O desvio ocular aparece só quando a criança está febril",
+        "A queixa surge cedo, mas o fundo de olho é inconclusivo"
+      ],
+      "correctIndex": 0,
+      "explanation": "Sem desvio, sem opacidade e sem sintomas, o olho anisometrópico parece normal a quem olha de fora, e a criança enxerga bem usando o olho melhor. O diagnóstico depende de medir a acuidade visual de cada olho separadamente."
+    },
+    {
+      "question": "Que perfil de perda visual caracteriza a ambliopia tabaco-álcool ou nutricional?",
+      "options": [
+        "Perda bilateral da visão central, abaixo de 20/200",
+        "Perda unilateral da visão central, abaixo de 20/200",
+        "Perda bilateral do campo visual periférico inferior",
+        "Perda unilateral súbita com dor à movimentação ocular"
+      ],
+      "correctIndex": 0,
+      "explanation": "A forma tóxico-nutricional atinge os dois olhos e derruba a visão central para menos de 20/200. Está ligada a hábitos alimentares precários, consumo de álcool e tabagismo, e não à privação de imagem no período crítico da infância."
+    },
+    {
+      "question": "Que defeito de campo visual é típico da ambliopia tabaco-álcool?",
+      "options": [
+        "Escotoma cecocentral, da fixação até a mancha cega",
+        "Escotoma arqueado, saindo da mancha cega e curvando",
+        "Hemianopsia bitemporal, poupando a área de fixação",
+        "Constrição concêntrica, poupando a área de fixação"
+      ],
+      "correctIndex": 0,
+      "explanation": "O escotoma cecocentral une a área de fixação à mancha cega e é a marca campimétrica da forma tóxico-nutricional. Explica a queda acentuada da visão central com preservação relativa da periferia do campo."
+    },
+    {
+      "question": "Qual é o tratamento da ambliopia tóxico-nutricional?",
+      "options": [
+        "Dieta com suplementos de tiamina, ácido fólico e vitamina B12",
+        "Oclusão alternada dos olhos e reabilitação visual precoce",
+        "Corticoide sistêmico em pulsos e plasmaférese de resgate",
+        "Atropina tópica diária e troca da correção óptica usada"
+      ],
+      "correctIndex": 0,
+      "explanation": "A conduta é nutricional: corrigir os hábitos e repor tiamina, ácido fólico e vitamina B12 por dieta com suplementação. Oclusão e penalização, que resolvem a ambliopia do período crítico, não têm papel nesta forma adquirida do adulto."
+    },
+    {
+      "question": "Que condições precisam ser afastadas antes de firmar o diagnóstico de ambliopia tóxico-nutricional?",
+      "options": [
+        "Intoxicação por metanol e neuropatia óptica por fármacos",
+        "Ceratocone avançado e distrofia corneana bilateral",
+        "Glaucoma agudo de ângulo fechado e uveíte anterior",
+        "Descolamento de retina e retinopatia diabética grave"
+      ],
+      "correctIndex": 0,
+      "explanation": "O diagnóstico é de exclusão. Neuropatia óptica por fármacos, intoxicação por metanol, anemia perniciosa e neurite retrobulbar produzem quadro semelhante de perda central bilateral e precisam ser afastados antes de assumir a causa tóxico-nutricional."
+    },
+    {
+      "question": "Que diferença de acuidade visual entre os olhos caracteriza a ambliopia, como se mede na imagem?",
+      "options": [
+        "Diferença maior que duas linhas na tabela de optotipos",
+        "Diferença maior que meia linha na tabela de optotipos",
+        "Diferença maior que seis linhas na tabela de optotipos",
+        "Qualquer diferença de foco entre os dois olhos medidos"
+      ],
+      "correctIndex": 0,
+      "explanation": "A definição operacional exige diferença maior que duas linhas de optotipos entre os olhos, medida com cada olho separadamente e com a melhor correção óptica. Abaixo desse limiar, a assimetria não é rotulada como ambliopia.",
+      "image": "s18i1",
+      "imageCaption": "Medida monocular da acuidade visual com optotipos"
+    },
+    {
+      "question": "A ambliopia leve corresponde a que diferença de linhas de visão entre os olhos?",
+      "options": [
+        "De duas a três linhas de diferença entre os olhos",
+        "De quatro a cinco linhas de diferença entre os olhos",
+        "De seis a sete linhas de diferença entre os olhos",
+        "De uma a duas linhas de diferença entre os olhos"
+      ],
+      "correctIndex": 0,
+      "explanation": "A graduação usa linhas de optotipos: leve é de duas a três linhas, moderada de quatro a cinco e grave acima de cinco. A classificação orienta a intensidade e a duração da oclusão a ser prescrita."
+    },
+    {
+      "question": "Ambliopia grave é definida por diferença de quantas linhas de visão?",
+      "options": [
+        "Mais de cinco linhas entre os dois olhos",
+        "Mais de duas linhas entre os dois olhos",
+        "Mais de três linhas entre os dois olhos",
+        "Mais de dez linhas entre os dois olhos"
+      ],
+      "correctIndex": 0,
+      "explanation": "Diferença maior que cinco linhas define a forma grave; de quatro a cinco, a moderada; de duas a três, a leve. Quanto maior a diferença inicial, mais prolongado tende a ser o tratamento e menor a chance de igualar os dois olhos."
+    },
+    {
+      "question": "Qual é o primeiro passo do tratamento da ambliopia, antes de qualquer oclusão?",
+      "options": [
+        "Refração cuidadosa e prescrição da correção óptica",
+        "Oclusão total do olho de melhor acuidade visual",
+        "Penalização do olho bom com atropina a cada dia",
+        "Levodopa oral associada a exercícios ortópticos"
+      ],
+      "correctIndex": 0,
+      "explanation": "Corrigir o erro refracional vem primeiro, porque parte dos casos melhora apenas com óculos: a imagem volta a se formar com nitidez sobre a retina. Ocluir antes de corrigir a refração desperdiça tempo do período crítico e é o erro clássico de conduta."
+    },
+    {
+      "question": "Quais modalidades compõem o arsenal terapêutico clássico da ambliopia?",
+      "options": [
+        "Correção óptica, oclusão, penalização e levodopa",
+        "Correção óptica, cirurgia muscular, laser e levodopa",
+        "Colírio hipotensor, oclusão, penalização e cirurgia",
+        "Correção óptica, corticoide tópico, laser e oclusão"
+      ],
+      "correctIndex": 0,
+      "explanation": "O tratamento combina refração cuidadosa, oclusão do olho dominante, penalização com cicloplégico ou atropina e, como recurso farmacológico, levodopa. A cirurgia corrige o desvio do estrabismo, mas não trata por si a ambliopia já instalada."
+    },
+    {
+      "question": "Ao prescrever a oclusão mostrada na imagem, que conjunto de fatores define o regime escolhido?",
+      "options": [
+        "Idade da criança, grau da ambliopia e causa de base",
+        "Cor da íris, sexo da criança e história familiar",
+        "Peso da criança, estação do ano e tipo de escola",
+        "Pressão intraocular, curvatura corneana e diâmetro"
+      ],
+      "correctIndex": 0,
+      "explanation": "O regime depende da idade da criança, do grau da ambliopia e do tipo causal, e ainda da escolha entre oclusão total ou parcial e entre alternada ou monocular. A retirada é sempre gradual, para não perder a acuidade conquistada.",
+      "image": "s20i1",
+      "imageCaption": "Oclusão adesiva sobre o olho de melhor visão"
+    },
+    {
+      "question": "Por que a oclusão do olho dominante exige acompanhamento e retirada gradual?",
+      "options": [
+        "O olho ocluído pode perder acuidade se ficar tapado demais",
+        "O adesivo provoca ceratite de exposição em poucos dias",
+        "A pele periocular desenvolve glaucoma por compressão",
+        "A oclusão prolongada encurta o músculo reto medial"
+      ],
+      "correctIndex": 0,
+      "explanation": "Ocluir sem controle pode inverter o problema e derrubar a visão do olho antes dominante, sobretudo em crianças pequenas, cujo córtex é mais plástico. Por isso a oclusão pode ser alternada e a retirada é feita de modo gradual, com reavaliações."
+    },
+    {
+      "question": "Como a penalização com o colírio da imagem, aplicado no olho de melhor visão, favorece o olho amblíope?",
+      "options": [
+        "Borra a imagem do olho bom e força o uso do outro",
+        "Contrai a pupila do olho bom e reduz sua luz total",
+        "Corrige o desvio do olho bom e restaura a fusão",
+        "Eleva a acuidade do olho bom e treina a fixação"
+      ],
+      "correctIndex": 0,
+      "explanation": "A atropina é cicloplégica: paralisa a acomodação e desfoca o olho bom, sobretudo para perto, invertendo a preferência de fixação. É a alternativa útil quando o adesivo não é tolerado ou a adesão à oclusão é ruim.",
+      "image": "s19i3",
+      "imageCaption": "Atropina 1%: penalização do olho dominante"
+    },
+    {
+      "question": "Que fármaco figura como recurso farmacológico no tratamento da ambliopia?",
+      "options": [
+        "Levodopa, em uso sistêmico",
+        "Timolol, em uso sistêmico",
+        "Aciclovir, em uso sistêmico",
+        "Prednisona, em uso sistêmico"
+      ],
+      "correctIndex": 0,
+      "explanation": "A levodopa é o recurso farmacológico listado ao lado da correção óptica, da oclusão e da penalização. Tem papel adjuvante: nenhum fármaco substitui a formação de imagem nítida e o estímulo forçado do olho amblíope."
+    },
+    {
+      "question": "Os reflexos optomotores são movimentos oculares induzidos por excitação retiniana. Para que servem?",
+      "options": [
+        "Manter as imagens projetadas sobre as duas fóveas",
+        "Reduzir a entrada de luz nas duas retinas periféricas",
+        "Acomodar o cristalino para os objetos mais próximos",
+        "Drenar o humor aquoso pelo ângulo das duas câmaras"
+      ],
+      "correctIndex": 0,
+      "explanation": "Os reflexos optomotores existem para manter as imagens sobre as duas fóveas. Fixação, fusão, seguimento e vergências compõem esse repertório motor, e é dele que depende a manutenção da visão binocular."
+    },
+    {
+      "question": "Por que o nistagmo pode levar à ambliopia, em geral bilateral?",
+      "options": [
+        "A oscilação impede a fixação foveal estável das imagens",
+        "A oscilação desloca o cristalino e altera o grau do olho",
+        "A oscilação comprime o nervo óptico contra o canal ósseo",
+        "A oscilação reduz o fluxo da artéria central da retina"
+      ],
+      "correctIndex": 0,
+      "explanation": "No nistagmo os olhos oscilam e a imagem não se estabiliza sobre a fóvea, de modo que o córtex nunca recebe estímulo nítido e constante. O resultado é ambliopia habitualmente bilateral, diferente das formas unilaterais por estrabismo ou anisometropia."
+    },
+    {
+      "question": "O que justifica medir a acuidade visual de cada olho separadamente na triagem da criança?",
+      "options": [
+        "O olho bom compensa e mascara a perda do olho amblíope",
+        "A medida binocular superestima o grau de miopia axial",
+        "A visão de perto só pode ser avaliada com um olho tapado",
+        "A criança só colabora quando os dois olhos são testados"
+      ],
+      "correctIndex": 0,
+      "explanation": "Testados juntos, os olhos entregam a acuidade do melhor deles e a ambliopia passa despercebida, já que a criança não se queixa. Como a janela de tratamento se fecha por volta dos 7 anos, a triagem monocular precoce é o que garante tratar enquanto há reversibilidade."
+    },
+    {
+      "question": "Qual recurso permite ocluir o olho dominante sem colar adesivo sobre a pele, como na imagem?",
+      "options": [
+        "Oclusor acoplado à lente da armação dos óculos",
+        "Lente de contato colorida com pupila central opaca",
+        "Prisma de Fresnel colado na face interna da lente",
+        "Filtro amarelo montado sobre a lente do olho ruim"
+      ],
+      "correctIndex": 0,
+      "explanation": "Há oclusores que se encaixam na lente ou na armação e dispensam o adesivo sobre a pele, úteis quando há irritação cutânea ou recusa da criança. O ponto crítico é a vedação: se a criança espia pela borda, a oclusão perde o efeito terapêutico.",
+      "image": "s22i3",
+      "imageCaption": "Oclusor acoplado à lente dos óculos"
+    }
+  ]
+}

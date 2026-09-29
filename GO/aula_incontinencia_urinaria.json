@@ -1,0 +1,416 @@
+{
+  "titulo": "Incontinência Urinária",
+  "eyebrow": "Ginecologia e Obstetrícia · Uroginecologia",
+  "subtitulo": "Do mecanismo da continência ao sling e à bexiga hiperativa",
+  "intro": "Diferenciação clínica entre incontinência de esforço, de urgência, mista e por transbordamento. Cobre a neurofisiologia da micção, a avaliação (diário miccional, teste do absorvente, urodinâmica), o tratamento conservador, os fármacos da bexiga hiperativa e as técnicas cirúrgicas da incontinência de esforço.",
+  "questoes": [
+    {
+      "question": "De acordo com a definição da International Continence Society, incontinência urinária é:",
+      "options": [
+        "qualquer perda involuntária de urina referida pela paciente",
+        "perda involuntária de urina apenas durante o esforço físico",
+        "perda de urina acompanhada obrigatoriamente de urgência",
+        "perda de urina com resíduo pós-miccional acima de 100 mL"
+      ],
+      "correctIndex": 0,
+      "explanation": "A definição é deliberadamente ampla: queixa de qualquer perda involuntária de urina, sem exigir esforço, urgência ou medida de resíduo. O tipo e o mecanismo são determinados depois, pela caracterização clínica da perda. Trata-se de condição que compromete de forma significativa a qualidade de vida."
+    },
+    {
+      "question": "A incontinência urinária de esforço decorre de perda de urina relacionada a:",
+      "options": [
+        "hipermobilidade uretral ou deficiência esfincteriana intrínseca",
+        "contrações involuntárias do detrusor durante o enchimento vesical",
+        "hipoatividade do detrusor com retenção urinária crônica associada",
+        "inibição cortical deficiente sobre o reflexo miccional na ponte"
+      ],
+      "correctIndex": 0,
+      "explanation": "A perda ocorre com esforço físico (pular, correr, tossir) porque o mecanismo de fechamento uretral falha: ou a uretra é hipermóvel, por defeito do suporte, ou o esfíncter é intrinsecamente deficiente. Contração involuntária do detrusor caracteriza a incontinência de urgência, não a de esforço."
+    },
+    {
+      "question": "Mulher de 52 anos, três partos vaginais, perde urina ao tossir, correr e levantar peso, sem desejo miccional prévio à perda. O diagnóstico mais provável é:",
+      "options": [
+        "incontinência de esforço, por falha do suporte uretral",
+        "incontinência de urgência, por hiperatividade detrusora",
+        "incontinência por transbordamento, com retenção crônica",
+        "incontinência funcional, por limitação da mobilidade"
+      ],
+      "correctIndex": 0,
+      "explanation": "A perda sincronizada ao aumento da pressão abdominal, sem urgência precedente, define a incontinência de esforço. Multiparidade e partos vaginais reforçam a hipótese: o parto vaginal lesa mucosa vaginal, músculos, fáscia endopélvica e ligamentos que sustentam a uretra."
+    },
+    {
+      "question": "Mulher de 60 anos refere desejo súbito e incontrolável de urinar, oito micções diárias e duas noctúrias, com urocultura negativa. O quadro caracteriza:",
+      "options": [
+        "síndrome da bexiga hiperativa, com urgência miccional",
+        "incontinência de esforço por defeito de suporte uretral",
+        "infecção urinária baixa de repetição ainda não tratada",
+        "bexiga neurogênica por lesão medular completa prévia"
+      ],
+      "correctIndex": 0,
+      "explanation": "A urgência miccional não fisiológica é o sintoma que define a síndrome, habitualmente acompanhada de aumento da frequência e de noctúria. O diagnóstico exige ausência de fatores infecciosos, metabólicos ou locais — daí a urocultura negativa ser parte da definição."
+    },
+    {
+      "question": "Mulher de 65 anos perde urina ao espirrar e também quando não consegue chegar ao banheiro após urgência súbita. A conduta correta é:",
+      "options": [
+        "tratar primeiro o componente predominante da queixa",
+        "indicar sling de uretra média como primeira medida",
+        "prescrever antimuscarínico e dispensar a avaliação",
+        "encaminhar para derivação urinária definitiva logo"
+      ],
+      "correctIndex": 0,
+      "explanation": "O quadro é de incontinência mista, combinação de esforço e urgência, mais comum em idosas. A regra prática é tratar o componente que mais incomoda a paciente, e a investigação urodinâmica é frequentemente necessária para caracterizar os dois componentes antes de qualquer cirurgia."
+    },
+    {
+      "question": "Mulher diabética de 70 anos apresenta perda urinária contínua em gotas, esforço para iniciar a micção e resíduo pós-miccional de 350 mL. O quadro corresponde a:",
+      "options": [
+        "incontinência por transbordamento, com bexiga hipoativa",
+        "incontinência de esforço, com hipermobilidade uretral",
+        "incontinência de urgência, com detrusor hiperativo",
+        "incontinência mista, com dois componentes somados"
+      ],
+      "correctIndex": 0,
+      "explanation": "Resíduo pós-miccional elevado, jato hesitante e gotejamento contínuo indicam esvaziamento incompleto, por hipoatividade detrusora (neuropatia diabética) ou obstrução. É exatamente por isso que a medida do resíduo, preferencialmente por ultrassonografia, integra a avaliação básica: antes de tratar como urgência, é preciso excluir retenção."
+    },
+    {
+      "question": "A contração do detrusor que produz a micção é mediada por:",
+      "options": [
+        "nervo pélvico parassimpático, por receptores muscarínicos",
+        "nervo hipogástrico simpático, por receptores beta-3 do detrusor",
+        "nervo pudendo somático, por placa motora da musculatura estriada",
+        "nervo ilioinguinal sensitivo, por fibras aferentes do urotélio"
+      ],
+      "correctIndex": 0,
+      "explanation": "O esvaziamento é parassimpático: o nervo pélvico, com origem em S2–S4, ativa receptores muscarínicos M2 e M3 do detrusor e promove sua contração, acompanhada do relaxamento do esfíncter uretral interno. O centro pontino coordena esse reflexo e o córtex pode inibi-lo ou iniciá-lo voluntariamente."
+    },
+    {
+      "question": "Durante a fase de armazenamento vesical, a ativação simpática promove:",
+      "options": [
+        "relaxamento do detrusor e contração do colo vesical",
+        "contração do detrusor e relaxamento do colo vesical",
+        "relaxamento do detrusor e abertura do colo vesical",
+        "contração do detrusor e fechamento do colo vesical"
+      ],
+      "correctIndex": 0,
+      "explanation": "Pelo nervo hipogástrico, os receptores beta-adrenérgicos relaxam o detrusor (acomodando volume a baixa pressão) e os alfa-adrenérgicos contraem o colo vesical. Some-se o esfíncter estriado contraído pelo pudendo: a pressão uretral supera a vesical e há continência."
+    },
+    {
+      "question": "O esfíncter uretral estriado e a musculatura do assoalho pélvico são inervados pelo:",
+      "options": [
+        "nervo pudendo, somático, com origem em S2 a S4",
+        "nervo pélvico, parassimpático, originado em S2 a S4",
+        "nervo hipogástrico, simpático, da cadeia toracolombar",
+        "nervo obturador, motor, do plexo lombar superior"
+      ],
+      "correctIndex": 0,
+      "explanation": "A inervação é somática, pelo nervo pudendo, cujos corpos celulares formam o núcleo de Onuf, na medula sacral. Esse núcleo é justamente o alvo da duloxetina, que ali aumenta serotonina e noradrenalina e reforça o tônus do esfíncter estriado."
+    },
+    {
+      "question": "Durante a fase de enchimento vesical, o comportamento esperado do trato urinário inferior é:",
+      "options": [
+        "detrusor relaxado com esfíncter uretral contraído",
+        "detrusor contraído com esfíncter uretral relaxado",
+        "detrusor contraído com esfíncter uretral contraído",
+        "detrusor relaxado com esfíncter uretral relaxado"
+      ],
+      "correctIndex": 0,
+      "explanation": "O enchimento ocorre a baixa pressão graças à complacência: o detrusor permanece relaxado enquanto o esfíncter uretral e o assoalho pélvico se mantêm contraídos. Só na micção o padrão se inverte — detrusor contrai e esfíncter relaxa, de forma coordenada.",
+      "image": "pg05",
+      "imageCaption": "Ciclo da função vesical normal"
+    },
+    {
+      "question": "A teoria da rede (hammock theory) explica a continência afirmando que:",
+      "options": [
+        "a uretra é comprimida contra uma camada de suporte",
+        "o colo vesical precisa ficar em posição intra-abdominal",
+        "a coaptação da mucosa uretral faz o efeito de selagem",
+        "um eixo de forças traciona a uretra anteriormente"
+      ],
+      "correctIndex": 0,
+      "explanation": "Proposta em 1994, descreve a uretra repousando sobre uma camada de suporte que funciona como rede e serve de anteparo para a compressão uretral durante o esforço. As demais alternativas correspondem a outras teorias: equalização da pressão intra-abdominal (1967), deficiência esfincteriana intrínseca (1976) e teoria integral (1990)."
+    },
+    {
+      "question": "Entre os principais fatores de risco para incontinência urinária de esforço estão:",
+      "options": [
+        "número de gestações, parto vaginal e envelhecimento",
+        "uso de anticoncepcional, tabagismo e sedentarismo",
+        "menarca precoce, nuliparidade e baixo peso corporal",
+        "cesariana eletiva, amamentação e idade abaixo de 30"
+      ],
+      "correctIndex": 0,
+      "explanation": "Cada gestação aumenta o risco; o parto vaginal lesa as estruturas de suporte do assoalho pélvico e da uretra (mucosa vaginal, músculos, fáscia endopélvica e ligamentos); e o envelhecimento altera as fibras musculares e o colágeno. Obesidade e menopausa somam-se como fatores agravantes."
+    },
+    {
+      "question": "Na reprodução da perda urinária ao exame físico da incontinência de esforço, o correto é examinar a paciente:",
+      "options": [
+        "com a bexiga cheia, pedindo tosse ou manobra de Valsalva",
+        "com a bexiga vazia, após esvaziamento espontâneo prévio",
+        "somente em posição ginecológica, mantida sempre deitada",
+        "apenas durante o estudo urodinâmico, em sala de exame"
+      ],
+      "correctIndex": 0,
+      "explanation": "O objetivo é reproduzir e caracterizar a perda, o que exige bexiga confortavelmente cheia e manobras de esforço. O exame deve ser feito em posição ginecológica e também em ortostatismo, situação em que a perda muitas vezes só então se evidencia."
+    },
+    {
+      "question": "Em paciente com prolapso genital acentuado, a redução do prolapso durante o exame físico serve para:",
+      "options": [
+        "revelar incontinência urinária oculta pelo prolapso",
+        "medir a mobilidade uretral com precisão bem maior",
+        "estimar o resíduo pós-miccional sem usar sondagem",
+        "graduar a força da musculatura do assoalho pélvico"
+      ],
+      "correctIndex": 0,
+      "explanation": "O prolapso acentuado angula e comprime a uretra, mascarando a perda urinária. Ao reduzi-lo e repetir as manobras de esforço, identifica-se a incontinência oculta — informação decisiva, porque a correção isolada do prolapso pode transformar uma paciente continente em incontinente."
+    },
+    {
+      "question": "No teste do absorvente (pad test), caracteriza perda involuntária de urina:",
+      "options": [
+        "diferença de peso do absorvente maior que 1 grama",
+        "diferença de peso do absorvente maior que 10 gramas",
+        "qualquer aumento de peso do absorvente em uma hora",
+        "diferença de peso do absorvente maior que 50 gramas"
+      ],
+      "correctIndex": 0,
+      "explanation": "O absorvente é pesado antes, colocado junto ao meato uretral externo e pesado de novo após período determinado. Ganho superior a 1 grama caracteriza perda involuntária. O teste quantifica a perda de forma objetiva, complementando a impressão subjetiva da paciente."
+    },
+    {
+      "question": "Na avaliação inicial de toda paciente com queixa de perda urinária, são considerados indispensáveis:",
+      "options": [
+        "urina tipo I e urocultura, para afastar infecção urinária",
+        "estudo urodinâmico e uretrocistoscopia sempre na abertura",
+        "citologia urinária e tomografia computadorizada da pelve",
+        "ressonância do assoalho pélvico e cintilografia renal"
+      ],
+      "correctIndex": 0,
+      "explanation": "Infecção urinária causa urgência e perda e precisa ser afastada antes de qualquer rótulo diagnóstico. Compõem ainda a avaliação básica a medida do resíduo pós-miccional, preferencialmente por ultrassonografia, e os questionários de qualidade de vida, método de escolha para avaliar severidade e impacto dos sintomas."
+    },
+    {
+      "question": "O estudo urodinâmico na investigação da perda urinária está indicado quando:",
+      "options": [
+        "há perda aos esforços associada ou se planeja cirurgia",
+        "a paciente refere urgência miccional pela primeira vez",
+        "o diagnóstico clínico de perda aos esforços é evidente",
+        "a paciente iniciou tratamento comportamental há um mês"
+      ],
+      "correctIndex": 0,
+      "explanation": "A urodinâmica não faz parte da avaliação inicial, sobretudo quando o tratamento planejado é clínico. Suas indicações são queixa associada de perda aos esforços, planejamento de cirurgia para incontinência ou prolapso, bexiga hiperativa neurogênica e refratariedade ao tratamento convencional."
+    },
+    {
+      "question": "A avaliação da mobilidade uretral é solicitada principalmente quando se cogita indicar:",
+      "options": [
+        "injeção periuretral de agente de preenchimento",
+        "colocação de sling de uretra média por via TOT",
+        "treinamento vesical com diário miccional seriado",
+        "aplicação intradetrusora de toxina botulínica"
+      ],
+      "correctIndex": 0,
+      "explanation": "Os agentes de preenchimento têm melhor resultado nos casos de uretra fixa, por isso a mobilidade precisa ser conhecida antes da indicação. A medida pode ser feita pelo teste do cotonete (Q-tip test) ou, preferencialmente, por ultrassonografia, já que o cotonete tem baixa sensibilidade e especificidade."
+    },
+    {
+      "question": "O tratamento de primeira linha da incontinência urinária de esforço é:",
+      "options": [
+        "fisioterapia do assoalho pélvico, com exercícios perineais",
+        "sling de uretra média por via retropúbica ou transobturatória",
+        "duloxetina oral na dose de 80 mg ao dia por doze semanas",
+        "injeção periuretral de agente de preenchimento uretral"
+      ],
+      "correctIndex": 0,
+      "explanation": "O tratamento conservador abre a sequência terapêutica, com taxas de sucesso de 30% a 80%. Além dos exercícios perineais, compõem o arsenal o biofeedback, a eletroestimulação (cura de 30% a 50% e melhora de 60% a 90%) e os cones vaginais, de 20 a 100 gramas, com sucesso de 60% a 78%."
+    },
+    {
+      "question": "São contraindicações absolutas ao uso de oxibutinina na bexiga hiperativa:",
+      "options": [
+        "glaucoma de ângulo fechado, retenção urinária e obstrução intestinal",
+        "hipertensão não controlada, síndrome do QT longo e arritmia cardíaca",
+        "insuficiência hepática leve, constipação intestinal e queixa de boca seca",
+        "miastenia já tratada, sonolência diurna e alteração do nível de consciência"
+      ],
+      "correctIndex": 0,
+      "explanation": "O bloqueio muscarínico agrava o glaucoma de ângulo fechado, a retenção urinária e a obstrução intestinal, que por isso são contraindicações absolutas. Hipertensão não controlada e QT longo restringem a mirabegrona, agonista beta-3, e não os antimuscarínicos."
+    },
+    {
+      "question": "O oxalato de duloxetina melhora a incontinência urinária de esforço porque:",
+      "options": [
+        "aumenta serotonina e noradrenalina no núcleo de Onuf",
+        "bloqueia receptores muscarínicos M2 e M3 do detrusor",
+        "ativa receptores beta-3 adrenérgicos da parede vesical",
+        "reduz a produção urinária por ação no túbulo coletor"
+      ],
+      "correctIndex": 0,
+      "explanation": "É um inibidor da recaptação de serotonina e noradrenalina que age no núcleo de Onuf, conjunto de neurônios sacrais que comanda os músculos estriados do assoalho pélvico. O resultado é aumento da pressão de resistência uretral, da pressão máxima de fechamento e da espessura do esfíncter estriado; 80 mg/dia por 12 semanas reduzem 50% a 60% dos episódios de perda."
+    },
+    {
+      "question": "Atualmente, a técnica cirúrgica com as melhores e maiores evidências no tratamento da incontinência de esforço é:",
+      "options": [
+        "o sling de uretra média, sem tensão sob a uretra",
+        "a colpofixação retropúbica de Marshall-Marchetti",
+        "a injeção periuretral de partículas de silicone",
+        "a ampliação vesical com segmento de íleo ou cólon"
+      ],
+      "correctIndex": 0,
+      "explanation": "Os slings de uretra média superaram as colpofixações retropúbicas (Burch e Marshall-Marchetti-Krantz) como padrão cirúrgico. Os agentes de preenchimento são reservados a casos selecionados de defeito esfincteriano, e a ampliação vesical pertence ao tratamento de exceção da bexiga hiperativa."
+    },
+    {
+      "question": "Comparado ao sling retropúbico, o sling por via transobturatória apresenta:",
+      "options": [
+        "menor risco de trauma visceral e de hematoma no Retzius",
+        "maior risco de perfuração vesical e de lesão epigástrica",
+        "maior incidência de disúria por compressão da uretra",
+        "menor taxa de cura, entre 40% e 60% dos casos tratados"
+      ],
+      "correctIndex": 0,
+      "explanation": "A passagem transobturatória evita o espaço retropúbico, reduzindo trauma visceral e vasculonervoso e hematoma no espaço de Retzius, além de causar menos disúria por comprimir menos a uretra. As taxas de cura são de 81% a 100%, contra 74% a 95% da via retropúbica."
+    },
+    {
+      "question": "O mini-sling, ou sling de incisão única, caracteriza-se por:",
+      "options": [
+        "incisão vaginal única, sem orifícios cutâneos de saída",
+        "duas incisões inguinais além da incisão vaginal única",
+        "faixa mais larga, com maior volume de material sintético",
+        "fixação do colo vesical ao ligamento de Cooper pélvico"
+      ],
+      "correctIndex": 0,
+      "explanation": "A incisão é única, de cerca de 1,5 cm na parede vaginal anterior logo abaixo da uretra média, e as extremidades da fita têm âncoras fixadas nos músculos obturadores ou em membranas da pelve. Usa menos material sintético e encurta o trajeto cego, com o objetivo de reduzir infecções e traumas viscerais."
+    },
+    {
+      "question": "A injeção periuretral de agentes de preenchimento é indicada sobretudo diante de:",
+      "options": [
+        "defeito esfincteriano intrínseco com uretra sem mobilidade",
+        "hipermobilidade uretral com esfíncter íntegro e competente",
+        "hiperatividade detrusora refratária ao antimuscarínico oral",
+        "bexiga de baixa capacidade com complacência muito reduzida"
+      ],
+      "correctIndex": 0,
+      "explanation": "É método minimamente invasivo para incontinência de esforço por defeito esfincteriano intrínseco sem mobilidade uretral, e também para falha cirúrgica prévia ou comorbidades que inviabilizam a cirurgia. A eficácia é atribuída à expansão das paredes uretrais, que melhora a coaptação; no Brasil há colágeno bovino, gordura autóloga, carbono pirolítico e polidimetilsiloxano."
+    },
+    {
+      "question": "Na comparação entre os tipos de incontinência urinária, a forma mista:",
+      "options": [
+        "combina perda ao esforço e perda por urgência miccional",
+        "combina perda ao esforço e retenção urinária crônica",
+        "define perda contínua por fístula vesicovaginal prévia",
+        "define perda apenas noturna, sem qualquer sintoma diurno"
+      ],
+      "correctIndex": 0,
+      "explanation": "A forma mista soma o componente de esforço, ligado à hipermobilidade uretral ou à insuficiência esfincteriana, ao componente de urgência, ligado à hiperatividade detrusora. É mais comum em idosas e costuma exigir diagnóstico urodinâmico para definir qual componente predomina.",
+      "image": "pg10",
+      "imageCaption": "Tipos de incontinência urinária"
+    },
+    {
+      "question": "A síndrome da bexiga hiperativa é definida pela presença de:",
+      "options": [
+        "urgência miccional, na ausência de infecção ou causa local",
+        "perda urinária ao esforço, na ausência de urgência associada",
+        "resíduo pós-miccional elevado, com jato urinário muito fraco",
+        "hiperatividade do detrusor documentada em cistometria prévia"
+      ],
+      "correctIndex": 0,
+      "explanation": "A urgência miccional não fisiológica é o sintoma que define a síndrome, usualmente com aumento da frequência e noctúria, e exige ausência de fatores infecciosos, metabólicos ou locais. A urgeincontinência está presente em cerca de um terço a metade das pacientes, e o diagnóstico é clínico — a cistometria não é obrigatória."
+    },
+    {
+      "question": "Entre os fenótipos fisiopatológicos descritos para a síndrome da bexiga hiperativa está:",
+      "options": [
+        "a síndrome metabólica, ao lado do hipoestrogenismo",
+        "a hipermobilidade uretral, ao lado da paridade alta",
+        "o defeito esfincteriano, ao lado da uretra fixa curta",
+        "a fístula vesicovaginal, ao lado do divertículo uretral"
+      ],
+      "correctIndex": 0,
+      "explanation": "Os fenótipos fisiopatológicos reconhecidos incluem síndrome metabólica, transtornos afetivos, hipoestrogenismo, microbiota urinária, distúrbios gastrintestinais e disfunções do sistema nervoso autônomo. Pela demonstração urodinâmica descrevem-se as formas miogênica, uroteliogênica, uretrogênica, supraespinhal e uroteliomiogênica. Hipermobilidade uretral e defeito esfincteriano pertencem à incontinência de esforço.",
+      "image": "pg25",
+      "imageCaption": "Fenótipos da bexiga hiperativa"
+    },
+    {
+      "question": "O diário miccional na avaliação da bexiga hiperativa serve para:",
+      "options": [
+        "registrar volume urinado, ingesta e intensidade dos sintomas",
+        "medir a pressão do detrusor durante o enchimento vesical",
+        "quantificar a perda urinária pelo peso do absorvente usado",
+        "avaliar a mobilidade do colo vesical durante o esforço físico"
+      ],
+      "correctIndex": 0,
+      "explanation": "O diário identifica o tipo e a quantidade de líquido ingerido, o volume urinado e a intensidade dos sintomas, sendo auxiliar importante tanto no diagnóstico quanto na avaliação da resposta ao tratamento. Pressão detrusora é medida pela urodinâmica e perda por peso, pelo teste do absorvente."
+    },
+    {
+      "question": "A hiperatividade terminal do detrusor, na cistometria, caracteriza-se por:",
+      "options": [
+        "contração única não inibida na capacidade cistométrica máxima",
+        "contrações repetidas de amplitude crescente durante o enchimento",
+        "ausência de contrações involuntárias ao longo de toda a cistometria",
+        "elevação sustentada da pressão uretral durante o esvaziamento vesical"
+      ],
+      "correctIndex": 0,
+      "explanation": "Na forma terminal ocorre uma única contração não inibida, justamente quando a bexiga atinge a capacidade cistométrica máxima. Já a hiperatividade fásica traz contrações não inibidas de amplitude crescente conforme o volume aumenta, e é o achado mais comum da hiperatividade vesical idiopática.",
+      "image": "pg29",
+      "imageCaption": "Estudo urodinâmico e tipos de hiperatividade detrusora"
+    },
+    {
+      "question": "A segunda linha de tratamento da síndrome da bexiga hiperativa corresponde a:",
+      "options": [
+        "antimuscarínicos ou agonista beta-3 adrenérgico",
+        "treinamento vesical e mudanças comportamentais",
+        "toxina botulínica intradetrusora e neuromodulação",
+        "cistoplastia de aumento e derivação urinária externa"
+      ],
+      "correctIndex": 0,
+      "explanation": "A sequência é progressiva: primeira linha conservadora (comportamental e fisioterápica), segunda linha farmacológica com antimuscarínicos ou agonistas beta-3, terceira linha minimamente invasiva (toxina onabotulínica A, neuromodulação sacral e estimulação do nervo tibial) e quarta linha cirúrgica, reservada a casos refratários."
+    },
+    {
+      "question": "O treinamento vesical, no manejo conservador da bexiga hiperativa, consiste em:",
+      "options": [
+        "micção programada com aumento progressivo do intervalo",
+        "micção a cada hora para manter a bexiga sempre vazia",
+        "restrição total de líquidos ao longo de todo o período",
+        "contração do assoalho pélvico com auxílio de biofeedback"
+      ],
+      "correctIndex": 0,
+      "explanation": "O objetivo é readquirir o controle sobre o reflexo da micção por micções programadas cujo intervalo é ampliado aos poucos. Urinar preventivamente a cada hora tem efeito oposto, pois reduz a capacidade funcional da bexiga e perpetua a urgência.",
+      "image": "pg32",
+      "imageCaption": "Tratamento conservador da síndrome da bexiga hiperativa"
+    },
+    {
+      "question": "Entre as medidas comportamentais para a bexiga hiperativa, recomenda-se:",
+      "options": [
+        "reduzir cerca de 25% da ingesta hídrica e evitar cafeína",
+        "aumentar a ingesta hídrica para diluir a urina noturna",
+        "urinar a cada hora para não acumular volume na bexiga",
+        "suspender toda a ingesta de líquidos depois do almoço"
+      ],
+      "correctIndex": 0,
+      "explanation": "A redução de aproximadamente 25% na ingesta hídrica melhora de forma significativa frequência, urgência e noctúria. Recomenda-se ainda evitar cafeína, frutas cítricas, vinagre e bebidas alcoólicas, que exacerbam os sintomas, além de perda de peso e cessação do tabagismo."
+    },
+    {
+      "question": "O uso crônico de anticolinérgicos em pacientes acima de 65 anos tem sido associado a:",
+      "options": [
+        "maior risco de desenvolvimento de demência, incluindo Alzheimer",
+        "maior risco de hipertensão arterial e de taquicardia sinusal",
+        "maior risco de fratura de quadril por hipotensão postural",
+        "maior risco de trombose venosa profunda em membros inferiores"
+      ],
+      "correctIndex": 0,
+      "explanation": "Estudos recentes ligam o uso crônico de anticolinérgicos em idosos a maior risco de certos tipos de demência, incluindo a doença de Alzheimer. Como a eficácia entre os antimuscarínicos é semelhante, a escolha é norteada pela incidência e severidade dos efeitos colaterais, e nessa faixa etária o balanço pesa contra o uso prolongado."
+    },
+    {
+      "question": "Paciente com bexiga hiperativa e hipertensão arterial não controlada. O fármaco que está contraindicado é a:",
+      "options": [
+        "mirabegrona, contraindicada na hipertensão não controlada",
+        "solifenacina, contraindicada na hipertensão não controlada",
+        "oxibutinina, contraindicada na hipertensão não controlada",
+        "tolterodina, contraindicada na hipertensão não controlada"
+      ],
+      "correctIndex": 0,
+      "explanation": "A mirabegrona, agonista beta-3 adrenérgico em comprimidos de 50 mg ao dia, tem hipertensão e taquicardia entre seus efeitos adversos e hipertensão não controlada como contraindicação absoluta. Os antimuscarínicos não compartilham essa restrição: suas contraindicações típicas são glaucoma de ângulo fechado, retenção urinária e obstrução intestinal.",
+      "image": "pg36",
+      "imageCaption": "Terapia farmacológica para bexiga hiperativa"
+    },
+    {
+      "question": "A toxina onabotulínica A aplicada no detrusor tem efeito que:",
+      "options": [
+        "começa em torno de sete dias e dura de seis a nove meses",
+        "começa em torno de seis horas e dura de dois a três meses",
+        "começa em torno de trinta dias e dura por tempo definitivo",
+        "começa em torno de três meses e dura de um a dois anos"
+      ],
+      "correctIndex": 0,
+      "explanation": "O início do efeito ocorre cerca de sete dias após a injeção, com pico por volta de trinta dias, e a duração média é de seis a nove meses, o que obriga a repetir as aplicações. O procedimento é ambulatorial, com anestesia local e cistoscópio, e reduz episódios de urgência em 70% a 75% e de urgeincontinência em 42% a 87%."
+    }
+  ]
+}

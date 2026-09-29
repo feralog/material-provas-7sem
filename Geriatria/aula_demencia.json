@@ -1,0 +1,427 @@
+{
+  "titulo": "Demência",
+  "eyebrow": "Geriatria · Síndromes Demenciais",
+  "subtitulo": "Do declínio subjetivo ao estadiamento e ao manejo no idoso",
+  "intro": "Continuum do declínio cognitivo, rastreio com correção por escolaridade, avaliação funcional pelas escalas de Katz e Lawton, diferencial entre demência, delirium e depressão, causas reversíveis e manejo farmacológico e não farmacológico.",
+  "questoes": [
+    {
+      "question": "Idosa de 70 anos, professora aposentada, queixa-se há um ano de que sua memória piorou; a avaliação neuropsicológica formal é normal e ela mantém integralmente suas atividades diárias. A classificação do quadro é:",
+      "options": [
+        "declínio cognitivo subjetivo",
+        "comprometimento cognitivo leve",
+        "demência em estágio inicial",
+        "delirium hipoativo prolongado"
+      ],
+      "correctIndex": 0,
+      "explanation": "No declínio cognitivo subjetivo há autopercepção de piora persistente da cognição, mas o desempenho em testes neuropsicológicos padrão permanece normal e a funcionalidade está intacta. Muitas causas não são neurodegenerativas — depressão, ansiedade, apneia do sono, medicamentos —, mas o quadro eleva o risco de progressão para comprometimento cognitivo leve e demência e pode ser a primeira manifestação da doença de Alzheimer pré-clínica."
+    },
+    {
+      "question": "Homem de 74 anos tem déficit objetivo de memória episódica em testes formais, porém continua administrando sozinho as próprias finanças e medicações. O elemento que impede o diagnóstico de demência é:",
+      "options": [
+        "preservação da independência funcional",
+        "ausência de alucinações visuais no caso",
+        "normalidade da tomografia de crânio",
+        "curso de instalação lentamente insidioso"
+      ],
+      "correctIndex": 0,
+      "explanation": "A funcionalidade é o critério-chave que separa comprometimento cognitivo leve de demência. No comprometimento cognitivo leve existe déficit objetivo em testes, mas a autonomia nas atividades de vida diária é mantida, com no máximo mínima assistência em tarefas complexas. Quando o declínio passa a interferir significativamente nas atividades diárias, o quadro passa a ser demência."
+    },
+    {
+      "question": "Para caracterizar uma síndrome demencial, o número mínimo de domínios cognitivos comprometidos e a repercussão exigida são:",
+      "options": [
+        "dois domínios, com prejuízo da funcionalidade",
+        "um domínio, com prejuízo da funcionalidade",
+        "dois domínios, com testes de rastreio normais",
+        "três domínios, com autonomia ainda preservada"
+      ],
+      "correctIndex": 0,
+      "explanation": "A síndrome demencial exige comprometimento de pelo menos dois domínios cognitivos — memória, funções executivas, habilidades visuoespaciais, linguagem ou personalidade e comportamento — que interfira significativamente nas atividades de vida diária, com prejuízo em relação ao nível prévio. Déficit em domínio único sem perda funcional caracteriza comprometimento cognitivo leve."
+    },
+    {
+      "question": "O diagnóstico de demência só pode ser firmado depois de afastadas duas condições capazes de explicar por si o declínio cognitivo. São elas:",
+      "options": [
+        "delirium e transtorno psiquiátrico maior",
+        "delirium e deficiência de vitamina B12",
+        "depressão maior e hipotireoidismo clínico",
+        "acidente vascular e apneia obstrutiva"
+      ],
+      "correctIndex": 0,
+      "explanation": "A definição de demência exige que o declínio cognitivo ou comportamental não seja explicado por delirium nem por transtorno psiquiátrico maior. Ambos cursam com alteração cognitiva potencialmente reversível e mimetizam a síndrome demencial, de modo que sua exclusão é passo obrigatório antes de rotular o idoso como demente."
+    },
+    {
+      "question": "Idoso internado por pneumonia apresenta em 48 horas confusão de início abrupto, que flutua ao longo do dia, com desatenção marcante e sonolência alternando com agitação. A hipótese principal é:",
+      "options": [
+        "delirium, pelo início agudo e curso flutuante",
+        "demência, pelo declínio cognitivo progressivo",
+        "depressão, pela lentificação psicomotora típica",
+        "psicose tardia, pelo conteúdo delirante agudo"
+      ],
+      "correctIndex": 0,
+      "explanation": "O delirium instala-se em horas a dias, tem curso flutuante ao longo do dia, cursa com desatenção como sintoma cardinal e altera o nível de consciência. A demência tem início insidioso, curso lentamente progressivo e mantém atenção e consciência preservadas nas fases iniciais. Reconhecer o delirium é obrigatório porque ele é reversível e costuma ter causa clínica identificável."
+    },
+    {
+      "question": "Na diferenciação entre demência e depressão no idoso, o padrão que aponta para depressão é:",
+      "options": [
+        "queixa de memória desproporcional ao déficit",
+        "anosognosia com minimização das perdas",
+        "piora insidiosa ao longo de vários anos",
+        "flutuação do nível de consciência no dia"
+      ],
+      "correctIndex": 0,
+      "explanation": "Na depressão o paciente se queixa intensamente da memória, tem desempenho melhor do que a queixa sugere e responde com frequência que não sabe. Na demência predomina a anosognosia: quem traz a queixa é o informante, e o paciente minimiza ou nega as dificuldades. Flutuação do nível de consciência no mesmo dia aponta para delirium, não para nenhuma das duas."
+    },
+    {
+      "question": "A entrevista com um informante é considerada prioridade inegociável na avaliação de suspeita de demência porque:",
+      "options": [
+        "a anosognosia faz o paciente subestimar as perdas",
+        "o informante substitui os testes de rastreio",
+        "a legislação exige acompanhante no atendimento",
+        "o paciente costuma exagerar suas dificuldades"
+      ],
+      "correctIndex": 0,
+      "explanation": "A anosognosia — a incapacidade de perceber o próprio déficit — é comum nas demências, e o paciente subestima ou nega as dificuldades. O relato de quem convive diariamente com ele é a única forma de dimensionar as mudanças reais. A entrevista com o informante deve ser feita, ao menos em parte, separadamente do paciente, para que ele se sinta à vontade para relatar tudo."
+    },
+    {
+      "question": "Um instrumento de avaliação funcional pontua seis itens: alimentação, vestuário, higiene pessoal, controle esfincteriano, mobilidade e uso do banheiro. Trata-se da escala de:",
+      "options": [
+        "Katz, das atividades básicas de vida diária",
+        "Lawton, das atividades instrumentais de vida",
+        "Fazekas, da carga de lesão da substância branca",
+        "Scheltens, da atrofia mesial do lobo temporal"
+      ],
+      "correctIndex": 0,
+      "explanation": "A escala de Katz mede as seis atividades básicas de vida diária: alimentação, vestuário, higiene pessoal, controle esfincteriano, mobilidade e uso do banheiro. Pontuação de 1 a 5 indica dependência parcial e 6 indica dependência total. São funções que se perdem em fases avançadas da demência, e a sua queda marca a transição para a dependência global.",
+      "image": "pg19",
+      "imageCaption": "Escalas de Lawton e de Katz na avaliação funcional"
+    },
+    {
+      "question": "Na escala de Lawton, que avalia nove atividades instrumentais pontuadas de 1 a 3 cada, os escores entre 10 e 24 e o escore 9 indicam, respectivamente:",
+      "options": [
+        "dependência parcial e dependência total",
+        "dependência total e dependência parcial",
+        "independência plena e dependência parcial",
+        "dependência parcial e independência plena"
+      ],
+      "correctIndex": 0,
+      "explanation": "A escala de Lawton avalia nove atividades instrumentais: usar o telefone, ir a locais distantes, fazer compras, preparar refeições, arrumar a casa, fazer pequenos reparos, lavar e passar roupa, tomar os remédios na dose e horário corretos e cuidar das finanças. Escore entre 10 e 24 indica dependência parcial e escore 9 indica dependência total."
+    },
+    {
+      "question": "Na evolução da demência, a ordem habitual de perda das atividades de vida diária é:",
+      "options": [
+        "instrumentais primeiro e básicas depois",
+        "básicas primeiro e instrumentais depois",
+        "básicas e instrumentais simultaneamente",
+        "apenas as básicas, ao longo de toda evolução"
+      ],
+      "correctIndex": 0,
+      "explanation": "As atividades instrumentais — manter compromissos, usar o telefone, preparar refeições, viajar sozinho, administrar as finanças — dependem de funções executivas e se perdem primeiro, ainda com pontuação relativamente alta no rastreio cognitivo. As básicas, como vestir-se, higiene pessoal, andar e comer, caem em fases avançadas, e comer é a última função a se perder.",
+      "image": "pg41",
+      "imageCaption": "Perda progressiva das AVDs conforme cai a pontuação do MEEM"
+    },
+    {
+      "question": "A principal limitação do Mini Exame do Estado Mental como teste de rastreio cognitivo é:",
+      "options": [
+        "baixa sensibilidade para comprometimento leve",
+        "tempo de aplicação superior a quarenta minutos",
+        "ausência de itens que avaliem a orientação",
+        "impossibilidade de estadiar a gravidade"
+      ],
+      "correctIndex": 0,
+      "explanation": "O Mini Exame do Estado Mental é rápido, leva de 5 a 7 minutos, avalia orientação, registro e evocação, atenção e cálculo, linguagem, comando e habilidades construtivas, e permite estadiamento. Suas limitações são a baixa sensibilidade para comprometimento cognitivo leve e para as fases iniciais de demência, além da forte influência da escolaridade sobre o resultado."
+    },
+    {
+      "question": "A perda anual média de pontos no Mini Exame do Estado Mental em pacientes com doença de Alzheimer é de:",
+      "options": [
+        "2 a 3 pontos por ano",
+        "6 a 8 pontos por ano",
+        "menos de 1 ponto por ano",
+        "10 a 12 pontos por ano"
+      ],
+      "correctIndex": 0,
+      "explanation": "Pacientes com doença de Alzheimer perdem em média 2 a 3 pontos por ano no Mini Exame do Estado Mental, o que torna o teste útil não apenas para rastreio, mas para acompanhar a velocidade de progressão. Uma queda muito mais rápida deve levantar suspeita de outra etiologia ou de fator agravante, como delirium sobreposto ou fármaco anticolinérgico."
+    },
+    {
+      "question": "Comparado ao Mini Exame do Estado Mental, o Montreal Cognitive Assessment tem como principal vantagem:",
+      "options": [
+        "maior sensibilidade para comprometimento leve",
+        "independência total do nível de escolaridade",
+        "tempo de aplicação inferior a dois minutos",
+        "dispensa de avaliação das funções executivas"
+      ],
+      "correctIndex": 0,
+      "explanation": "O Montreal Cognitive Assessment cobre mais domínios, com ênfase em funções executivas pelo teste de trilhas e pelo relógio, habilidades visuoconstrutivas pela cópia do cubo, memória de cinco palavras, atenção, linguagem com fluência fonêmica e abstração. É mais sensível para comprometimento cognitivo leve e demência leve, mas continua fortemente influenciado pela escolaridade."
+    },
+    {
+      "question": "Para o diagnóstico de demência pelo Montreal Cognitive Assessment, os pontos de corte em uma pessoa analfabeta e em outra com doze anos de estudo são, respectivamente:",
+      "options": [
+        "≤ 8 e ≤ 21",
+        "≤ 21 e ≤ 8",
+        "≤ 15 e ≤ 26",
+        "≤ 11 e ≤ 17"
+      ],
+      "correctIndex": 0,
+      "explanation": "Os pontos de corte do Montreal Cognitive Assessment para demência são estratificados por escolaridade: analfabetos ≤ 8; 1 a 4 anos de estudo ≤ 15; 5 a 8 anos ≤ 16; 9 a 11 anos ≤ 19; e 12 anos ou mais ≤ 21. Aplicar um corte único produz falso-positivo no idoso de baixa escolaridade e falso-negativo no de alta escolaridade."
+    },
+    {
+      "question": "Pelo Montreal Cognitive Assessment, o ponto de corte para comprometimento cognitivo leve em uma pessoa analfabeta é:",
+      "options": [
+        "≤ 11 pontos",
+        "≤ 8 pontos",
+        "≤ 17 pontos",
+        "≤ 21 pontos"
+      ],
+      "correctIndex": 0,
+      "explanation": "Para comprometimento cognitivo leve os cortes do Montreal Cognitive Assessment são: analfabetos ≤ 11; 1 a 4 anos de estudo ≤ 17; 5 a 8 anos ≤ 19; 9 a 11 anos ≤ 19; e 12 anos ou mais ≤ 21. O corte de rastreio de comprometimento leve é mais alto que o de demência na mesma faixa de escolaridade, porque busca captar déficits mais sutis."
+    },
+    {
+      "question": "Instrumento desenvolvido no Brasil, formado por teste de memória com dez figuras, fluência verbal semântica de animais e desenho do relógio, indicado sobretudo em pacientes de baixa escolaridade:",
+      "options": [
+        "a Bateria Breve de Rastreio Cognitivo",
+        "o Mini Exame do Estado Mental clássico",
+        "o Montreal Cognitive Assessment básico",
+        "a escala Clinical Dementia Rating"
+      ],
+      "correctIndex": 0,
+      "explanation": "A Bateria Breve de Rastreio Cognitivo reúne teste de memória com dez figuras, fluência verbal semântica de animais e teste do desenho do relógio. Foi construída no Brasil, adequada ao nosso nível educacional, e tem boa acurácia para detectar transtorno de memória episódica em pacientes de baixa escolaridade. Sua limitação é ser pouco conhecida entre os profissionais."
+    },
+    {
+      "question": "Paciente tem perda moderada de memória mais acentuada para eventos recentes, é incapaz de funcionar de forma independente fora de casa e necessita de incentivo para o cuidado pessoal. O estadiamento correspondente é:",
+      "options": [
+        "CDR 1, ou seja, demência leve",
+        "CDR 0,5, demência questionável",
+        "CDR 2, ou seja, demência moderada",
+        "CDR 3, ou seja, demência grave"
+      ],
+      "correctIndex": 0,
+      "explanation": "No Clinical Dementia Rating, o estágio 1 corresponde à demência leve: perda moderada de memória com interferência nas atividades diárias, dificuldade moderada com datas e orientação espacial, incapacidade de funcionar independentemente fora do domicílio e necessidade de incentivo para o autocuidado. A escala avalia memória, orientação, julgamento, assuntos comunitários, atividades domésticas e cuidado pessoal.",
+      "image": "pg27",
+      "imageCaption": "Estadiamento pelo Clinical Dementia Rating"
+    },
+    {
+      "question": "Na escala FAST, a perda da capacidade de andar sem assistência corresponde ao:",
+      "options": [
+        "estágio 7c, já na fase mais grave",
+        "estágio 6a, ainda na fase moderada",
+        "estágio 5, na fase intermediária",
+        "estágio 6d, ainda na fase moderada"
+      ],
+      "correctIndex": 0,
+      "explanation": "A escala FAST detalha a perda funcional progressiva: 6a exige auxílio para vestir-se, 6b para o banho, 6d marca a incontinência urinária e 6e a fecal. No estágio 7 a fala se restringe a poucas palavras em 7a e 7b, segue-se a perda de andar sem assistência em 7c, de sentar-se sem auxílio em 7d, de sorrir em 7e e de manter a cabeça ereta em 7f.",
+      "image": "pg28",
+      "imageCaption": "Estadiamento funcional pela escala FAST"
+    },
+    {
+      "question": "A distribuição aproximada das demências conforme a etiologia é:",
+      "options": [
+        "Alzheimer 60-70%, vascular 10-20%, Lewy 5%",
+        "Alzheimer 30-40%, vascular 40-50%, Lewy 5%",
+        "Alzheimer 60-70%, vascular 1%, Lewy 10-20%",
+        "Alzheimer 10-20%, vascular 60-70%, Lewy 1%"
+      ],
+      "correctIndex": 0,
+      "explanation": "A doença de Alzheimer responde por 60 a 70% dos casos de demência, seguida pela demência vascular com 10 a 20%, pela demência com corpos de Lewy com cerca de 5% e pela demência frontotemporal com cerca de 1%. Essa hierarquia define a probabilidade pré-teste diante de um idoso com declínio cognitivo e orienta a investigação."
+    },
+    {
+      "question": "A prevalência de demência sobe acentuadamente com a idade. Depois dos 90 anos ela alcança aproximadamente:",
+      "options": [
+        "43% dos indivíduos",
+        "21% dos indivíduos",
+        "9% dos indivíduos",
+        "3% dos indivíduos"
+      ],
+      "correctIndex": 0,
+      "explanation": "A prevalência de demência é fortemente dependente da idade: cerca de 3% entre 65 e 69 anos, 9% entre 75 e 79 anos, 21% a partir dos 85 anos e 43% depois dos 90 anos. No Brasil estima-se 1,76 milhão de pessoas com alguma forma de demência, a maioria ainda sem diagnóstico formal."
+    },
+    {
+      "question": "A investigação laboratorial mínima de uma síndrome demencial, voltada às causas potencialmente reversíveis, inclui:",
+      "options": [
+        "TSH, vitamina B12, cálcio e VDRL",
+        "ferritina, ácido úrico e amilase",
+        "troponina, CK total e lactato",
+        "PSA, colesterol e ácido fólico"
+      ],
+      "correctIndex": 0,
+      "explanation": "A avaliação padrão busca causas tratáveis: hemograma completo, ureia e creatinina, TSH e T4 livre, função hepática, vitamina B12, cálcio, VDRL e sorologia para HIV em pacientes jovens, somados a tomografia ou ressonância de crânio. Hipotireoidismo, deficiência de B12 e neurossífilis são exemplos de quadros em que o tratamento pode reverter ou estabilizar o declínio."
+    },
+    {
+      "question": "Entre as causas de demência classificadas como não neurodegenerativas, portanto secundárias e potencialmente tratáveis, está:",
+      "options": [
+        "a hidrocefalia de pressão normal",
+        "a demência com corpos de Lewy",
+        "a demência frontotemporal variante",
+        "a demência da doença de Parkinson"
+      ],
+      "correctIndex": 0,
+      "explanation": "As demências não neurodegenerativas abrangem a vascular, as infecciosas como neurossífilis e HIV, as metabólicas como deficiência de vitamina B12 e hipotireoidismo, a hidrocefalia de pressão normal e a toxicidade medicamentosa. Alzheimer, frontotemporal, corpos de Lewy e demência da doença de Parkinson são neurodegenerativas primárias."
+    },
+    {
+      "question": "Na revisão da medicação de um idoso com declínio cognitivo, as classes que mais frequentemente causam ou agravam o quadro são:",
+      "options": [
+        "anticolinérgicos e sedativos",
+        "estatinas e anti-hipertensivos",
+        "inibidores de bomba e laxantes",
+        "antiagregantes e broncodilatadores"
+      ],
+      "correctIndex": 0,
+      "explanation": "Anticolinérgicos e sedativos comprometem atenção e memória e podem produzir um quadro que mimetiza ou agrava a demência, razão pela qual a revisão de fármacos é etapa obrigatória. Somam-se os déficits sensoriais não corrigidos, o delirium e comorbidades sistêmicas como hipotireoidismo, deficiência de B12, sífilis, HIV, uremia, hiperamonemia e apneia obstrutiva do sono."
+    },
+    {
+      "question": "No escore de atrofia mesial temporal, ou escala de Scheltens, o valor considerado anormal em um paciente de 80 anos é:",
+      "options": [
+        "escore igual ou maior que 3",
+        "escore igual ou maior que 2",
+        "escore igual ou maior que 1",
+        "qualquer escore acima de zero"
+      ],
+      "correctIndex": 0,
+      "explanation": "O escore de atrofia mesial temporal é interpretado conforme a idade: em pacientes com menos de 75 anos um escore igual ou maior que 2 já é anormal, enquanto em pacientes com 75 anos ou mais exige-se escore igual ou maior que 3. A leitura sistematizada da neuroimagem soma ainda a leucoaraiose pelo escore de Fazekas e a atrofia parietal."
+    },
+    {
+      "question": "A dose diária inicial e a dose terapêutica da donepezila no tratamento da doença de Alzheimer são, respectivamente:",
+      "options": [
+        "5 mg e 10 mg",
+        "10 mg e 20 mg",
+        "8 mg e 16 mg",
+        "3 mg e 9 mg"
+      ],
+      "correctIndex": 0,
+      "explanation": "A donepezila inicia com 5 mg por dia e a dose terapêutica é 10 mg. A galantamina inicia com 8 mg e chega a 16 mg, com passo opcional de 24 mg; a rivastigmina oral inicia com 3 mg e vai a 9 mg, com passo opcional de 12 mg. O adesivo de rivastigmina segue a sequência Patch 5, 10 e 15, equivalentes a 9, 18 e 27 mg."
+    },
+    {
+      "question": "Os eventos adversos mais frequentes dos inibidores da acetilcolinesterase são:",
+      "options": [
+        "náusea, vômito, diarreia e perda de peso",
+        "constipação, retenção urinária e boca seca",
+        "hipertensão, taquicardia e tremor de repouso",
+        "ganho de peso, sonolência e edema de membros"
+      ],
+      "correctIndex": 0,
+      "explanation": "Por aumentarem a disponibilidade de acetilcolina, os inibidores da acetilcolinesterase produzem efeitos colinérgicos: náusea, vômito, diarreia, perda de apetite e perda de peso, além de vertigem, cefaleia e astenia. Constipação, retenção urinária e boca seca são efeitos anticolinérgicos, ou seja, exatamente o oposto do mecanismo dessas drogas."
+    },
+    {
+      "question": "Pelo protocolo do Ministério da Saúde para tratamento da doença de Alzheimer, um dos critérios de inclusão é o estadiamento correspondente a:",
+      "options": [
+        "CDR igual a 1 ou a 2",
+        "CDR igual a 0,5 ou a 1",
+        "CDR igual a 2 ou a 3",
+        "CDR igual a 3 somente"
+      ],
+      "correctIndex": 0,
+      "explanation": "O protocolo exige síndrome demencial com déficit em duas ou mais áreas da cognição, piora progressiva da memória e de outra função, início entre 40 e 90 anos, exclusão de doenças sistêmicas, tomografia ou ressonância de crânio e estadiamento CDR 1 ou 2. O MEEM deve ficar entre 8 e 21 para quem tem até quatro anos de escolaridade e entre 12 e 24 para quem tem quatro anos ou mais.",
+      "image": "pg48",
+      "imageCaption": "Fluxograma de tratamento do protocolo do Ministério da Saúde"
+    },
+    {
+      "question": "Pelo protocolo do Ministério da Saúde, o tratamento inicial da doença de Alzheimer com anticolinesterásico deve ser mantido antes da primeira reavaliação por:",
+      "options": [
+        "3 a 4 meses",
+        "1 a 2 semanas",
+        "12 a 18 meses",
+        "24 a 36 meses"
+      ],
+      "correctIndex": 0,
+      "explanation": "O tratamento é iniciado com donepezila, galantamina ou rivastigmina e mantido por 3 a 4 meses, quando se reavaliam o MEEM e o CDR. Havendo melhora ou estabilização, o tratamento segue com reavaliações a cada 6 meses; sem resposta, ele é suspenso. Em caso de intolerância pode-se trocar por outro representante, mas a falha terapêutica não justifica a troca."
+    },
+    {
+      "question": "Idoso com parkinsonismo, flutuação cognitiva e alucinações visuais recebeu haloperidol por agitação e evoluiu com rigidez grave. O erro decorre do fato de que:",
+      "options": [
+        "corpos de Lewy têm hipersensibilidade a neurolépticos",
+        "corpos de Lewy respondem mal a anticolinesterásicos",
+        "corpos de Lewy exigem dose dobrada de neuroléptico",
+        "corpos de Lewy contraindicam qualquer antidepressivo"
+      ],
+      "correctIndex": 0,
+      "explanation": "A demência com corpos de Lewy cursa com hipersensibilidade a neurolépticos, e a exposição pode desencadear piora grave do parkinsonismo e até síndrome neuroléptica maligna. A rivastigmina é o único anticolinesterásico aprovado nessa demência, e a memantina tem efeito incerto sobre a cognição, com possível benefício sobre os sintomas comportamentais."
+    },
+    {
+      "question": "Alucinações visuais bem formadas, flutuação da atenção, parkinsonismo e transtorno comportamental do sono REM caracterizam:",
+      "options": [
+        "a demência com corpos de Lewy",
+        "a demência frontotemporal",
+        "a demência vascular subcortical",
+        "a doença de Alzheimer amnésica"
+      ],
+      "correctIndex": 0,
+      "explanation": "Alucinações visuais, flutuação da atenção e da cognição, rigidez com incoordenação motora e transtorno comportamental do sono REM compõem o quadro clássico da demência com corpos de Lewy. Delírios, sonolência diurna e sintomas disautonômicos como hipotensão postural completam o perfil. O PET com fluordesoxiglicose mostra hipometabolismo occipital, ao contrário do padrão temporoparietal do Alzheimer."
+    },
+    {
+      "question": "No tratamento da demência frontotemporal, a conduta correta quanto aos inibidores da acetilcolinesterase é:",
+      "options": [
+        "não usá-los, pois podem piorar o quadro",
+        "usá-los como primeira linha de escolha",
+        "usá-los apenas associados à memantina",
+        "usá-los em dose dobrada desde o início"
+      ],
+      "correctIndex": 0,
+      "explanation": "Não há tratamento aprovado para a demência frontotemporal. Inibidores da acetilcolinesterase e memantina não são eficazes e podem piorar o quadro comportamental, de modo que a abordagem é sintomática e não farmacológica. A doença cursa com alteração de comportamento, dificuldade de planejar, tremores, desequilíbrio e dificuldade de se expressar ou compreender a fala."
+    },
+    {
+      "question": "O comprometimento cognitivo vascular é descrito como um espectro. A etapa intermediária, entre o cérebro em risco e a demência vascular, caracteriza-se por:",
+      "options": [
+        "testes alterados com independência mantida",
+        "testes normais com dependência instalada",
+        "testes alterados com dependência instalada",
+        "testes normais com independência mantida"
+      ],
+      "correctIndex": 0,
+      "explanation": "O espectro do comprometimento cognitivo vascular vai do cérebro em risco, com apenas fatores de risco e microangiopatia, ao comprometimento cognitivo vascular sem demência, em que os testes já estão alterados mas o paciente permanece independente, e finalmente à demência vascular, com testes alterados e perda de autonomia. Os fatores de risco são baixa escolaridade, obesidade, diabetes, hipertensão, álcool e inatividade física."
+    },
+    {
+      "question": "Entre os sintomas comportamentais da demência, o grupo que costuma NÃO responder ao tratamento farmacológico é:",
+      "options": [
+        "perambulação, perseveração e desconfiança",
+        "sintomas depressivos, ansiedade e insônia",
+        "alucinações e ilusões persistentes",
+        "agressão verbal e agressão física"
+      ],
+      "correctIndex": 0,
+      "explanation": "Respondem razoavelmente à medicação os sintomas depressivos, a ansiedade, a alteração do sono, os sintomas psicóticos persistentes, a agressão verbal e física e o comportamento sexual inapropriado. Perambulação, perseveração, atividades repetitivas irritantes, esconder ou armazenar objetos, desconfiança e resistência em aceitar ajuda respondem mal e exigem manejo ambiental e orientação do cuidador."
+    },
+    {
+      "question": "A proporção de cuidadores de pessoas com demência que desenvolvem depressão chega a:",
+      "options": [
+        "50% dos cuidadores",
+        "10% dos cuidadores",
+        "80% dos cuidadores",
+        "5% dos cuidadores"
+      ],
+      "correctIndex": 0,
+      "explanation": "Até 50% dos cuidadores desenvolvem depressão e quase 60% relatam alterações de saúde física ou distúrbios psicológicos como resultado direto do cuidado. Somam-se a ausência de férias e de fins de semana, o isolamento e o abandono de outras relações e atividades. O cuidador é, por isso, parte do plano terapêutico, e não apenas um informante."
+    },
+    {
+      "question": "A fração da prevalência de demência atribuída a fatores de risco potencialmente modificáveis é de:",
+      "options": [
+        "cerca de 40%",
+        "cerca de 60%",
+        "cerca de 10%",
+        "cerca de 90%"
+      ],
+      "correctIndex": 0,
+      "explanation": "Cerca de 40% da prevalência de demência é atribuída a fatores de risco potencialmente modificáveis, e os 60% restantes permanecem de risco desconhecido. Os de maior peso são a perda auditiva não tratada, com 8%, e a baixa escolaridade, com 7%, seguidos por tabagismo com 5%, depressão e isolamento social com 4% cada.",
+      "image": "pg60",
+      "imageCaption": "Fatores de risco modificáveis para demência ao longo da vida"
+    },
+    {
+      "question": "O fator de risco modificável com maior peso isolado sobre a prevalência de demência, atuando na meia-idade, é:",
+      "options": [
+        "a perda auditiva não tratada",
+        "a poluição atmosférica crônica",
+        "o consumo excessivo de álcool",
+        "o diabetes de longa duração"
+      ],
+      "correctIndex": 0,
+      "explanation": "A perda auditiva não tratada na faixa dos 45 aos 65 anos responde por cerca de 8% da fração populacional atribuível, o maior peso isolado entre os fatores modificáveis. A baixa escolaridade no início da vida vem em seguida, com 7%. Isso transforma a triagem auditiva e a adaptação de aparelhos em intervenção de prevenção cognitiva, não apenas sensorial."
+    },
+    {
+      "question": "Os anticorpos monoclonais antiamiloide aprovados para doença de Alzheimer têm indicação restrita a pacientes com:",
+      "options": [
+        "comprometimento cognitivo leve ou demência leve",
+        "demência moderada com CDR igual a dois",
+        "demência grave em estágio final de doença",
+        "declínio cognitivo subjetivo sem déficit"
+      ],
+      "correctIndex": 0,
+      "explanation": "Lecanemabe e donanemabe são indicados apenas na fase inicial, ou seja, comprometimento cognitivo leve ou demência leve, e exigem confirmação de amiloide por PET, líquor ou biomarcador plasmático. O donanemabe pode retardar o declínio cognitivo em até 35%. O monitoramento central é o das ARIA, anormalidades de imagem relacionadas à amiloide, com edema ou micro-hemorragias, que exigem ressonância basal obrigatória."
+    }
+  ]
+}

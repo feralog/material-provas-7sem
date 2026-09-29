@@ -1,0 +1,361 @@
+{
+  "titulo": "Delirium",
+  "eyebrow": "Geriatria · Síndromes Geriátricas",
+  "subtitulo": "Confusão aguda no idoso: reconhecer, investigar a causa e prevenir",
+  "intro": "Definição e critérios, formas hiperativa e hipoativa, fatores predisponentes e precipitantes, instrumentos de detecção (RASS, CAM, CAM-ICU), diferencial com demência e depressão, investigação da causa de base, prevenção multicomponente e manejo.",
+  "questoes": [
+    {
+      "question": "Qual tríade define o delirium e o separa das demais alterações cognitivas do idoso?",
+      "options": [
+        "Início agudo, curso flutuante e déficit de atenção",
+        "Início insidioso, curso progressivo e afasia precoce",
+        "Início agudo, curso crônico e alucinações fixas",
+        "Início lento, curso estável e humor deprimido"
+      ],
+      "correctIndex": 0,
+      "explanation": "Delirium é um distúrbio agudo e flutuante da atenção e da consciência, com alteração adicional da cognição, instalado em horas a poucos dias. O curso flutuante ao longo do dia e a desatenção são os dois achados que mais o distinguem dos quadros crônicos."
+    },
+    {
+      "question": "Qual é a forma clínica mais frequente de delirium no idoso hospitalizado?",
+      "options": [
+        "Hipoativa, com letargia e retardo psicomotor",
+        "Hiperativa, com agitação e hipervigilância",
+        "Hiperativa, com combatividade e delírio",
+        "Mista, com alternância rápida de humor"
+      ],
+      "correctIndex": 0,
+      "explanation": "A forma hipoativa responde por cerca de 80% dos casos e se apresenta com letargia, estupor e retardo psicomotor. Por não incomodar a equipe, é a que mais passa despercebida — o paciente quieto e sonolento é interpretado como cansado, deprimido ou 'bem comportado'."
+    },
+    {
+      "question": "Entre os fenótipos do delirium, qual é a distribuição aproximada entre as formas hipoativa e hiperativa?",
+      "options": [
+        "Cerca de 80% hipoativo e 20% hiperativo",
+        "Cerca de 80% hiperativo e 20% hipoativo",
+        "Cerca de 50% hipoativo e 50% hiperativo",
+        "Cerca de 20% hipoativo e 30% hiperativo"
+      ],
+      "correctIndex": 0,
+      "explanation": "Cerca de 80% dos episódios são hipoativos e apenas 20% hiperativos. A imagem mental do delirium como paciente agitado e combativo é, portanto, a minoria dos casos — e é justamente essa expectativa invertida que explica o subdiagnóstico.",
+      "image": "pg07",
+      "imageCaption": "Fenótipos do delirium e proporção entre eles"
+    },
+    {
+      "question": "Em que proporção dos casos o delirium deixa de ser diagnosticado na prática clínica?",
+      "options": [
+        "Em 37 a 67% dos episódios ele passa despercebido",
+        "Em 5 a 10% dos episódios ele passa despercebido",
+        "Em 15 a 20% dos episódios ele passa despercebido",
+        "Em 80 a 95% dos episódios ele passa despercebido"
+      ],
+      "correctIndex": 0,
+      "explanation": "O delirium não é reconhecido em 37 a 67% dos casos. O predomínio da forma hipoativa e a ausência de rastreio sistemático explicam essa cifra: sem aplicar um instrumento estruturado, a equipe só percebe o paciente que grita ou tenta sair da cama."
+    },
+    {
+      "question": "Qual o impacto do delirium sobre a mortalidade do idoso hospitalizado?",
+      "options": [
+        "Mortalidade hospitalar de 22 a 76% e de 35 a 40% em um ano",
+        "Mortalidade hospitalar de 2 a 6% e de 5 a 10% em um ano",
+        "Mortalidade hospitalar de 10 a 15% e de 20% em um ano",
+        "Mortalidade hospitalar inalterada e de 5% em um ano"
+      ],
+      "correctIndex": 0,
+      "explanation": "A mortalidade hospitalar em pacientes com delirium varia de 22 a 76%, e 35 a 40% morrem no primeiro ano após o episódio. Além do óbito, o quadro prolonga a internação, aumenta a morbidade e deixa prejuízo funcional e cognitivo residual."
+    },
+    {
+      "question": "Qual alteração constitui o núcleo obrigatório do diagnóstico de delirium?",
+      "options": [
+        "Perturbação da atenção e da consciência",
+        "Perturbação da memória episódica recente",
+        "Perturbação da linguagem e da nomeação",
+        "Perturbação do humor e do apetite"
+      ],
+      "correctIndex": 0,
+      "explanation": "O primeiro critério diagnóstico exige perturbação da atenção — capacidade reduzida para direcionar, focalizar, manter e mudar o foco — associada à perturbação da consciência, com menor orientação para o ambiente. Sem desatenção, não há delirium."
+    },
+    {
+      "question": "Qual achado separa melhor delirium de demência à beira do leito?",
+      "options": [
+        "A atenção, nitidamente diminuída apenas no delirium",
+        "A memória, nitidamente preservada apenas no delirium",
+        "A orientação, nitidamente alterada apenas na demência",
+        "A linguagem, nitidamente incoerente apenas na demência"
+      ],
+      "correctIndex": 0,
+      "explanation": "A atenção está diminuída no delirium e tende a permanecer normal na demência não complicada, sobretudo nas fases iniciais. Junto com o nível de consciência — alterado no delirium e normal na demência —, é o par de achados que decide o diagnóstico na cabeceira.",
+      "image": "pg23",
+      "imageCaption": "Diagnóstico diferencial: delirium, demência, psicose e depressão"
+    },
+    {
+      "question": "Como se comporta o curso clínico de delirium, demência e depressão, respectivamente?",
+      "options": [
+        "Flutuante no delirium, progressivo na demência, crônico na depressão",
+        "Progressivo no delirium, flutuante na demência, agudo na depressão",
+        "Estável no delirium, flutuante na demência, crônico na depressão",
+        "Flutuante no delirium, estável na demência, agudo na depressão"
+      ],
+      "correctIndex": 0,
+      "explanation": "O delirium tem curso flutuante em horas; a demência, curso progressivo ao longo de meses a anos; a depressão, curso crônico com episódios, instalado em semanas a meses. O padrão temporal, mais do que o conteúdo do exame mental, é o que separa os três."
+    },
+    {
+      "question": "O nível de consciência está caracteristicamente alterado em qual desses quadros?",
+      "options": [
+        "No delirium; na demência e na depressão costuma estar normal",
+        "Na demência; no delirium e na depressão costuma estar normal",
+        "Na depressão; no delirium e na demência costuma estar normal",
+        "Nos três, de modo praticamente indistinguível entre si"
+      ],
+      "correctIndex": 0,
+      "explanation": "A consciência está alterada no delirium e permanece normal na demência, na psicose e na depressão. Encontrar um idoso rebaixado, sonolento ou hipervigilante obriga a pensar delirium antes de atribuir o quadro a demência de base ou a tristeza pela internação."
+    },
+    {
+      "question": "Como se relacionam a vulnerabilidade prévia do paciente e o gatilho que desencadeia o delirium?",
+      "options": [
+        "Quanto maior a vulnerabilidade, menor o gatilho necessário",
+        "Quanto maior a vulnerabilidade, maior o gatilho necessário",
+        "A vulnerabilidade prévia não altera o limiar do gatilho",
+        "Apenas gatilhos graves desencadeiam o quadro em idosos"
+      ],
+      "correctIndex": 0,
+      "explanation": "A gênese é multifatorial e resulta da interação entre fatores predisponentes e precipitantes. Um idoso robusto só faz delirium diante de uma agressão intensa, como sepse ou grande cirurgia; um idoso com demência e déficit sensorial pode fazê-lo por uma constipação ou por uma dose de anti-histamínico."
+    },
+    {
+      "question": "Qual condição prévia é o fator predisponente mais importante para delirium?",
+      "options": [
+        "Demência, sobretudo quando ainda não diagnosticada",
+        "Hipertensão arterial, mesmo quando bem controlada",
+        "Osteoartrose, sobretudo de joelho e de quadril",
+        "Dislipidemia, sobretudo em uso de estatina"
+      ],
+      "correctIndex": 0,
+      "explanation": "A demência é o principal fator predisponente, ao lado de idade avançada, doenças psiquiátricas e comorbidades como insuficiência cardíaca, insuficiência renal, diabetes, apneia do sono e fibrilação atrial. Delirium e demência coexistem com frequência e um agrava o prognóstico do outro."
+    },
+    {
+      "question": "Qual classe de fármacos mais se associa à precipitação de delirium no idoso?",
+      "options": [
+        "Anticolinérgicos, como a amitriptilina e a ranitidina",
+        "Betabloqueadores, como o metoprolol e o atenolol",
+        "Estatinas, como a atorvastatina e a sinvastatina",
+        "Antiagregantes, como o AAS e o clopidogrel"
+      ],
+      "correctIndex": 0,
+      "explanation": "A carga anticolinérgica é o mecanismo farmacológico central: antidepressivos tricíclicos como a amitriptilina e antagonistas H2 como a ranitidina reduzem a transmissão colinérgica, exatamente a via ligada a estimulação, atenção e memória. Rever a prescrição é parte do diagnóstico."
+    },
+    {
+      "question": "Qual desequilíbrio de neurotransmissores constitui o eixo central da fisiopatologia do delirium?",
+      "options": [
+        "Déficit de acetilcolina com excesso de dopamina",
+        "Excesso de acetilcolina com déficit de dopamina",
+        "Déficit de serotonina com excesso de melatonina",
+        "Excesso de GABA com déficit de noradrenalina"
+      ],
+      "correctIndex": 0,
+      "explanation": "A deficiência colinérgica central compromete estimulação, atenção, memória e movimento rápido dos olhos, enquanto o excesso de dopamina — sinalizado pela elevação do ácido homovanílico no líquor e no plasma — se associa à forma hiperativa. Os dois braços explicam por que anticolinérgicos precipitam o quadro."
+    },
+    {
+      "question": "Qual é o primeiro passo na avaliação estruturada de delirium no paciente grave?",
+      "options": [
+        "Medir o nível de sedação e agitação pela escala RASS",
+        "Aplicar o Mini-Exame do Estado Mental à beira do leito",
+        "Aplicar a Escala de Depressão Geriátrica em versão curta",
+        "Solicitar tomografia de crânio antes de qualquer teste"
+      ],
+      "correctIndex": 0,
+      "explanation": "A avaliação começa pela graduação do nível de consciência com a Richmond Agitation Sedation Scale, que vai de -5 (sedação muito profunda) a +4 (combativo). Só com RASS entre -3 e +4 faz sentido prosseguir para a testagem do delirium propriamente dita.",
+      "image": "pg26",
+      "imageCaption": "Escala RASS, de -5 a +4"
+    },
+    {
+      "question": "Diante de um paciente com RASS de -4 ou -5, qual é a conduta na triagem de delirium?",
+      "options": [
+        "Interromper a avaliação e reavaliar o paciente depois",
+        "Prosseguir direto para o teste formal de desatenção",
+        "Considerar o delirium hipoativo já como confirmado",
+        "Administrar antipsicótico antes de nova reavaliação"
+      ],
+      "correctIndex": 0,
+      "explanation": "RASS de -4 ou -5 indica sedação profunda ou muito profunda: o paciente não responde à voz e não há como testar atenção ou pensamento. A orientação é parar e reavaliar depois, quando o nível de consciência permitir. Só com RASS de -3 a +4 a triagem segue adiante."
+    },
+    {
+      "question": "Qual combinação de achados fecha o diagnóstico pelo Confusion Assessment Method?",
+      "options": [
+        "Início agudo e desatenção, mais desorganização ou torpor",
+        "Início agudo e desatenção, ambos somados a torpor",
+        "Desatenção e desorganização, sem exigir início agudo",
+        "Início agudo e torpor, sem exigir a presença de desatenção"
+      ],
+      "correctIndex": 0,
+      "explanation": "O algoritmo exige mudança aguda do estado mental com curso flutuante E desatenção, associadas a pensamento desorganizado OU alteração do nível de consciência. Os dois primeiros são obrigatórios; os dois últimos são alternativos entre si.",
+      "image": "pg27",
+      "imageCaption": "Algoritmo do CAM-ICU: delirium = 1 + 2 + 3 ou 4"
+    },
+    {
+      "question": "Diante de idoso internado com confusão aguda, qual instrumento é o adequado para confirmar delirium?",
+      "options": [
+        "O CAM, construído para detectar delirium",
+        "O MEEM, construído para rastrear demência",
+        "A GDS, construída para rastrear depressão",
+        "O IQCODE, construído para medir declínio"
+      ],
+      "correctIndex": 0,
+      "explanation": "O Confusion Assessment Method foi desenhado e validado para detectar delirium. O Mini-Exame do Estado Mental mede desempenho cognitivo global e não distingue delirium de demência; a Escala de Depressão Geriátrica rastreia humor e não se aplica a quem está desatento."
+    },
+    {
+      "question": "O mnemônico DELIRIUM+ organiza o quê na abordagem do idoso confuso?",
+      "options": [
+        "As causas a investigar e as condutas não farmacológicas",
+        "Os critérios diagnósticos exigidos para fechar o quadro",
+        "Os estágios de progressão do declínio cognitivo crônico",
+        "As doses dos antipsicóticos usados na agitação aguda"
+      ],
+      "correctIndex": 0,
+      "explanation": "O mnemônico cobre Dor, Eletrólitos, Local/ambiente, Infecções, Retenção urinária ou fecal, Intercorrência clínica, Uso de próteses e Medicamentos; o sinal de mais acrescenta Mobilidade, Acompanhante, Invasões e Sono/substâncias psicotrópicas, que são as condutas preventivas.",
+      "image": "pg30",
+      "imageCaption": "Mnemônico DELIRIUM+"
+    },
+    {
+      "question": "Entre as causas rastreadas rotineiramente no idoso confuso, qual é frequentemente esquecida e de correção imediata?",
+      "options": [
+        "Retenção urinária ou fecal, resolvida à beira do leito",
+        "Hipotireoidismo subclínico, resolvido com levotiroxina",
+        "Estenose de carótida, resolvida com endarterectomia",
+        "Anemia ferropriva leve, resolvida com ferro por via oral"
+      ],
+      "correctIndex": 0,
+      "explanation": "Retenção urinária, fecaloma e dor não controlada são precipitantes banais, resolvidos em minutos e habitualmente não procurados. Junto com a revisão de medicamentos, são o que mais rapidamente reverte um episódio em paciente vulnerável."
+    },
+    {
+      "question": "Qual conjunto de exames compõe a investigação inicial da causa do delirium?",
+      "options": [
+        "Hemograma, eletrólitos, função renal, urina e radiografia",
+        "Eletroencefalograma, líquor e ressonância magnética de crânio",
+        "Punção lombar, biópsia cerebral e tomografia por emissão",
+        "Apenas tomografia de crânio, que fecha a maioria dos casos"
+      ],
+      "correctIndex": 0,
+      "explanation": "A investigação racional parte do barato e frequente: hemograma (anemia, infecção), eletrólitos e função renal (desidratação, acidose), urina tipo 1 e urocultura, glicemia, gasometria, eletrocardiograma e radiografia de tórax. Líquor, eletroencefalograma e neuroimagem entram apenas se houver indicação específica."
+    },
+    {
+      "question": "Quando a tomografia de crânio se justifica na investigação do delirium?",
+      "options": [
+        "Diante de sinal localizatório, trauma ou causa não identificada",
+        "Em todos os casos, como primeiro exame da investigação",
+        "Apenas quando o paciente apresenta agitação psicomotora",
+        "Somente após setenta e duas horas de confusão persistente"
+      ],
+      "correctIndex": 0,
+      "explanation": "A neuroimagem é dirigida a sinais localizatórios, história de queda ou trauma e casos sem causa identificada após a investigação inicial. Pedi-la de rotina desloca a atenção das causas realmente frequentes — infecção, fármaco, distúrbio metabólico, dor e retenção."
+    },
+    {
+      "question": "Qual raciocínio deve guiar a conduta diante de um idoso com delirium confirmado?",
+      "options": [
+        "Tratar a causa de base, pois o delirium é manifestação dela",
+        "Tratar apenas o sintoma, pois a causa raramente é encontrada",
+        "Aguardar resolução espontânea, que ocorre em até vinte e quatro horas",
+        "Iniciar anticolinesterásico, que encurta a duração do episódio"
+      ],
+      "correctIndex": 0,
+      "explanation": "Delirium é síndrome, não diagnóstico final: sinaliza uma doença aguda subjacente, seja ela infecção, distúrbio metabólico, insuficiência de órgão, evento neurológico ou iatrogenia medicamentosa. Sedar o paciente sem procurar o gatilho mascara a piora clínica."
+    },
+    {
+      "question": "Qual é a primeira linha de manejo do idoso com delirium?",
+      "options": [
+        "Medidas não farmacológicas, ambientais e de reorientação",
+        "Antipsicótico em dose baixa, por via oral ou endovenosa",
+        "Contenção física no leito, para prevenir quedas e fugas",
+        "Benzodiazepínico noturno, para restaurar o ciclo do sono"
+      ],
+      "correctIndex": 0,
+      "explanation": "Intervenção comportamental, presença de familiares, quarto calmo e privativo, próteses auditivas e visuais, esquemas de orientação, estabilidade de ambiente e equipe e estímulo à mobilidade precedem qualquer fármaco. O tratamento medicamentoso fica reservado a risco imediato à segurança."
+    },
+    {
+      "question": "Por que a restrição física deve ser evitada no idoso com delirium?",
+      "options": [
+        "Ela agrava a agitação, o imobilismo e o risco de lesão",
+        "Ela reduz a agitação, mas exige sedação concomitante",
+        "Ela impede a aplicação dos instrumentos de rastreamento",
+        "Ela mascara sinais de infecção e atrasa o exame físico"
+      ],
+      "correctIndex": 0,
+      "explanation": "Conter fisicamente aumenta a agitação e o medo, favorece imobilismo, úlcera por pressão, trombose e broncoaspiração, e produz lesões diretas pela luta contra a faixa. Evitar a restrição é item explícito do tratamento não farmacológico."
+    },
+    {
+      "question": "Qual fármaco é reservado ao delirium hiperativo com risco imediato à segurança?",
+      "options": [
+        "Haloperidol em dose baixa, pelo menor tempo possível",
+        "Amitriptilina ao deitar, para regular o ciclo do sono",
+        "Difenidramina à noite, para induzir sono mais profundo",
+        "Diazepam de horário, para manter o paciente tranquilo"
+      ],
+      "correctIndex": 0,
+      "explanation": "Quando o comportamento ameaça o próprio paciente ou a equipe, o antipsicótico — classicamente o haloperidol — é usado na menor dose e pelo menor tempo. Amitriptilina e difenidramina são anticolinérgicos e pioram o quadro; benzodiazepínico de horário agrava a confusão."
+    },
+    {
+      "question": "Em qual situação o benzodiazepínico é a escolha correta no tratamento do delirium?",
+      "options": [
+        "Na abstinência de álcool ou de sedativos",
+        "Na agitação de qualquer causa no idoso",
+        "Na encefalopatia hepática descompensada",
+        "No delirium hipoativo com muita sonolência"
+      ],
+      "correctIndex": 0,
+      "explanation": "A abstinência de álcool e de sedativos cursa com redução da atividade gabaérgica e responde a benzodiazepínico, que nesse contexto trata a causa. Fora dela, a droga precipita ou prolonga o delirium e deve ser evitada, inclusive como indutor de sono."
+    },
+    {
+      "question": "O que caracteriza a cascata iatrogênica no manejo do delirium?",
+      "options": [
+        "Um fármaco gera efeito adverso tratado com outro fármaco",
+        "Um fármaco perde efeito e exige aumento progressivo da dose",
+        "Um fármaco interage com alimento e tem absorção reduzida",
+        "Um fármaco é suspenso de forma abrupta e causa rebote"
+      ],
+      "correctIndex": 0,
+      "explanation": "O anticolinérgico precipita a confusão, a confusão motiva o antipsicótico, o antipsicótico produz parkinsonismo e queda, a queda gera fratura e nova internação. Reconhecer a cascata é o que permite interromper prescrições em vez de acrescentar mais uma."
+    },
+    {
+      "question": "Quais estratégias compõem a prevenção multicomponente do delirium no idoso?",
+      "options": [
+        "Mobilização precoce, hidratação, sono e revisão de fármacos",
+        "Sedação noturna, repouso no leito e restrição de líquidos",
+        "Isolamento no quarto, visitas restritas e jejum prolongado",
+        "Contenção preventiva, sonda vesical de rotina e dieta zero"
+      ],
+      "correctIndex": 0,
+      "explanation": "O pacote preventivo reúne estimulação cognitiva e reorientação, garantia de audição e visão, mobilização precoce com atividade pelo menos três vezes ao dia, revisão e retirada de fármacos dispensáveis, hidratação adequada e proteção do descanso noturno.",
+      "image": "pg33",
+      "imageCaption": "As seis estratégias de prevenção do delirium"
+    },
+    {
+      "question": "Idosa de 76 anos internada por fratura de fêmur passa a maior parte do tempo dormindo, não interage com a equipe, não se alimenta e está confusa. Qual a hipótese principal?",
+      "options": [
+        "Delirium hipoativo, precipitado pela fratura e pela internação",
+        "Depressão maior, precipitada pela perda súbita de autonomia",
+        "Demência de Alzheimer, até então nunca diagnosticada",
+        "Acidente vascular cerebral de circulação posterior"
+      ],
+      "correctIndex": 0,
+      "explanation": "Sonolência, apatia, recusa alimentar e confusão instaladas de forma aguda em paciente com fratura, dor, imobilidade e analgesia configuram delirium hipoativo. É exatamente o quadro confundido com depressão ou rotulado como paciente 'quietinha', retardando a busca da causa."
+    },
+    {
+      "question": "Uma idosa com escore máximo no Mini-Exame do Estado Mental há quinze dias chega sonolenta e confusa. O que esse dado prévio indica?",
+      "options": [
+        "Cognição prévia preservada, o que reforça delirium",
+        "Cognição prévia preservada, o que reforça demência",
+        "Cognição prévia comprometida, o que reforça delirium",
+        "Cognição prévia comprometida, o que exclui delirium"
+      ],
+      "correctIndex": 0,
+      "explanation": "Documentar a função cognitiva pré-mórbida é decisivo: desempenho normal quinze dias antes torna a demência implausível como explicação da confusão atual e aponta mudança aguda a partir de um basal íntegro, que é o próprio critério temporal do delirium."
+    },
+    {
+      "question": "Por que a anamnese com familiar ou cuidador é indispensável na suspeita de delirium?",
+      "options": [
+        "Só ela estabelece o estado basal e o momento da mudança",
+        "Só ela permite aplicar os testes formais de atenção",
+        "Só ela substitui a necessidade de exames laboratoriais",
+        "Só ela define a gravidade da agitação psicomotora atual"
+      ],
+      "correctIndex": 0,
+      "explanation": "O paciente desatento não fornece história confiável. O informante estabelece a cognição e a funcionalidade prévias, o momento exato da mudança, as medicações de uso contínuo e alterações recentes, o consumo de álcool e a história psiquiátrica — dados que sustentam os critérios diagnósticos."
+    }
+  ]
+}

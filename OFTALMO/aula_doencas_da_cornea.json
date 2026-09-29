@@ -1,0 +1,398 @@
+{
+  "titulo": "Doenças da Córnea",
+  "eyebrow": "Oftalmologia · Córnea",
+  "subtitulo": "Da úlcera infecciosa ao ceratocone e às distrofias",
+  "intro": "Transparência corneana e o papel do endotélio, úlcera de córnea e o diferencial entre bactéria, fungo, herpes e Acanthamoeba, complicações que ameaçam a visão, ceratocone com seus sinais e tratamentos, e as distrofias hereditárias.",
+  "questoes": [
+    {
+      "question": "Qual característica estrutural contribui diretamente para a transparência da córnea?",
+      "options": [
+        "A ausência completa de vasos sanguíneos",
+        "A rede densa de capilares estromais",
+        "A pigmentação uniforme do estroma",
+        "A camada contínua de melanócitos"
+      ],
+      "correctIndex": 0,
+      "explanation": "A transparência corneana depende de três pilares: estrutura uniforme das lamelas de colágeno, ausência de vascularização e turgescência controlada (semi-desidratação). Qualquer neovascularização do estroma opacifica a córnea. Pigmento e melanócitos não existem na córnea normal."
+    },
+    {
+      "question": "O estado de semi-desidratação que mantém a córnea transparente depende principalmente de qual mecanismo?",
+      "options": [
+        "Bomba de bicarbonato do endotélio",
+        "Bomba de cálcio do epitélio anterior",
+        "Drenagem venosa do limbo esclerocorneano",
+        "Filtração passiva pelo filme lacrimal"
+      ],
+      "correctIndex": 0,
+      "explanation": "O endotélio retira água do estroma por uma bomba ativa acoplada ao transporte de bicarbonato, mantendo a córnea relativamente desidratada. Epitélio e endotélio também funcionam como barreiras, mas é a bomba endotelial que faz o trabalho ativo. Quando ela falha, o estroma embebe e a córnea fica edemaciada e opaca."
+    },
+    {
+      "question": "Por que uma lesão do endotélio corneano é considerada mais grave que uma lesão do epitélio?",
+      "options": [
+        "o endotélio comanda a desidratação da córnea",
+        "o endotélio se regenera mais rápido que o epitélio",
+        "o epitélio sustenta a curvatura anterior da córnea",
+        "o epitélio contém as terminações nervosas dolorosas"
+      ],
+      "correctIndex": 0,
+      "explanation": "O endotélio é a camada crítica para o mecanismo de desidratação e praticamente não se regenera: as células remanescentes apenas se espraiam para cobrir a falha. O epitélio, ao contrário, reepiteliza em 24 a 72 horas a partir das células-tronco limbares. Por isso o dano endotelial leva a edema crônico e perda visual permanente."
+    },
+    {
+      "question": "Que conjunto de sintomas acompanha tipicamente uma lesão aguda do epitélio corneano?",
+      "options": [
+        "Dor intensa, fotofobia e lacrimejamento",
+        "Prurido intenso, secreção e visão normal",
+        "Perda visual indolor e campo visual reduzido",
+        "Halos coloridos, náusea e pupila fixa"
+      ],
+      "correctIndex": 0,
+      "explanation": "A córnea é o tecido mais inervado do corpo; a perda do epitélio expõe terminações nervosas livres e gera dor intensa com sensação de corpo estranho. A fotofobia vem da contração dolorosa da íris ao estímulo luminoso, e completam o quadro lacrimejamento, embaçamento visual e hiperemia conjuntival."
+    },
+    {
+      "question": "A imagem mostra um nível esbranquiçado no fundo da câmara anterior de um olho com úlcera de córnea. Esse achado corresponde a:",
+      "options": [
+        "Hipópio, pus estéril na câmara anterior",
+        "Hifema, sangue na câmara anterior",
+        "Leucoma, cicatriz branca do estroma",
+        "Pterígio, crescimento fibrovascular"
+      ],
+      "correctIndex": 0,
+      "explanation": "O hipópio é o acúmulo de leucócitos que se deposita por gravidade no fundo da câmara anterior, formando um nível horizontal. Na úlcera infecciosa ele geralmente é estéril, reflexo da intensa reação inflamatória, e indica gravidade. Hifema é sangue, e leucoma é cicatriz do próprio estroma, não coleção.",
+      "image": "s11i1",
+      "imageCaption": "Úlcera de córnea com nível na câmara anterior"
+    },
+    {
+      "question": "Que conjunto de achados caracteriza a úlcera de córnea infecciosa ao exame?",
+      "options": [
+        "Infiltrado corneano com defeito epitelial e hiperemia",
+        "Córnea transparente com pupila em midríase fixa",
+        "Opacidade do cristalino com reflexo vermelho ausente",
+        "Edema palpebral com secreção purulenta e visão normal"
+      ],
+      "correctIndex": 0,
+      "explanation": "A úlcera reúne infiltração corneana (área esbranquiçada de células inflamatórias no estroma), defeito epitelial que cora com fluoresceína e hiperemia conjuntival intensa. Nos casos graves soma-se hipópio. Córnea transparente ou visão preservada afastam o diagnóstico."
+    },
+    {
+      "question": "A imagem mostra, sob fluoresceína e luz azul, uma lesão epitelial ramificada em forma de galho. Esse padrão indica ceratite por:",
+      "options": [
+        "Vírus herpes simples, com úlcera dendrítica",
+        "Pseudomonas aeruginosa, com úlcera rápida",
+        "Fusarium solani, com lesões satélites",
+        "Acanthamoeba, com infiltrado em anel"
+      ],
+      "correctIndex": 0,
+      "explanation": "A úlcera dendrítica, ramificada e com bulbos terminais que coram com fluoresceína, é a assinatura da ceratite herpética epitelial. Costuma ser unilateral e recorrente, com hipoestesia corneana na área acometida. Nenhum outro agente produz esse desenho linear ramificado.",
+      "image": "s13i1",
+      "imageCaption": "Lesão epitelial corada por fluoresceína"
+    },
+    {
+      "question": "Por que o corticoide tópico isolado é contraindicado na ceratite herpética epitelial?",
+      "options": [
+        "Favorece a replicação viral e aprofunda a úlcera",
+        "Eleva a pressão intraocular em todos os pacientes",
+        "Impede a absorção do colírio antibiótico associado",
+        "Provoca opacificação imediata do cristalino"
+      ],
+      "correctIndex": 0,
+      "explanation": "O corticoide suprime a resposta imune local, permitindo replicação viral livre: a úlcera dendrítica alarga-se, torna-se geográfica e pode evoluir para afinamento e perfuração. Essa é a armadilha clássica do olho vermelho doloroso tratado às cegas com colírio combinado. O corticoide só entra, com cobertura antiviral, na doença estromal imune, sob indicação do oftalmologista."
+    },
+    {
+      "question": "Qual é o tratamento de escolha da ceratite herpética epitelial?",
+      "options": [
+        "Antiviral tópico, como pomada de aciclovir",
+        "Antifúngico tópico, como colírio de natamicina",
+        "Antibiótico tópico, como colírio de tobramicina",
+        "Corticoide tópico, como colírio de prednisolona"
+      ],
+      "correctIndex": 0,
+      "explanation": "A ceratite herpética epitelial é tratada com antiviral tópico, classicamente pomada de aciclovir cinco vezes ao dia, podendo-se associar antiviral oral. O desbridamento do epitélio infectado acelera a cicatrização. Antibiótico e antifúngico não têm ação sobre o vírus."
+    },
+    {
+      "question": "Trauma ocular com galho de árvore ou material vegetal aponta para úlcera de córnea por qual agente?",
+      "options": [
+        "Fungo filamentoso, como Fusarium",
+        "Vírus herpes simples tipo 1",
+        "Acanthamoeba da água de torneira",
+        "Clamídia de transmissão sexual"
+      ],
+      "correctIndex": 0,
+      "explanation": "Trauma com vegetal é o fator de risco clássico da ceratite fúngica filamentosa, por Fusarium ou Aspergillus, sobretudo em trabalhadores rurais. A evolução é mais arrastada que a bacteriana e a resposta ao antibiótico é nula. Herpes recorre sem trauma, e Acanthamoeba se liga a lente de contato e água contaminada."
+    },
+    {
+      "question": "Que aspecto da úlcera de córnea sugere etiologia fúngica em vez de bacteriana?",
+      "options": [
+        "Infiltrado com bordas plumosas e lesões satélites",
+        "Infiltrado único com bordas nítidas e hipópio denso",
+        "Defeito epitelial ramificado com bulbos terminais",
+        "Infiltrado em anel com dor desproporcional ao exame"
+      ],
+      "correctIndex": 0,
+      "explanation": "A úlcera fúngica tem bordas mal definidas, aspecto plumoso ou penugento, e ilhas discretas de infiltrado ao redor da lesão principal, as chamadas lesões satélites. A bacteriana costuma ser única, de bordas mais nítidas e progressão rápida. O infiltrado em anel aponta Acanthamoeba, e o dendrito aponta herpes."
+    },
+    {
+      "question": "Usuário de lente de contato gelatinosa que dorme com a lente tem risco aumentado de úlcera por qual germe?",
+      "options": [
+        "Pseudomonas aeruginosa",
+        "Staphylococcus epidermidis",
+        "Streptococcus pneumoniae",
+        "Haemophilus influenzae"
+      ],
+      "correctIndex": 0,
+      "explanation": "Pseudomonas aeruginosa coloniza estojos e soluções de lente de contato e produz proteases que digerem o estroma. A úlcera é de progressão rápida, com secreção densa e risco de perfuração em poucos dias, exigindo antibiótico tópico horário. Dormir com a lente multiplica o risco por hipóxia epitelial."
+    },
+    {
+      "question": "Dor desproporcional ao exame e infiltrado em anel em quem lava a lente de contato com água de torneira sugerem:",
+      "options": [
+        "Ceratite por Acanthamoeba",
+        "Ceratite por adenovírus",
+        "Ceratite por clamídia",
+        "Ceratite por Candida"
+      ],
+      "correctIndex": 0,
+      "explanation": "Acanthamoeba é um protozoário de água doce e de torneira que invade a córnea de usuários de lente de contato, sobretudo os que lavam lente ou estojo com água. A marca clínica é a dor intensa, desproporcional aos achados, por perineurite radial, evoluindo para infiltrado anular. O diagnóstico costuma ser tardio porque o quadro imita herpes."
+    },
+    {
+      "question": "Diante de úlcera de córnea com infiltrado central extenso e hipópio, qual é a conduta inicial?",
+      "options": [
+        "Raspado para cultura e antibiótico tópico horário",
+        "Oclusão do olho e reavaliação em uma semana",
+        "Colírio lubrificante e observação ambulatorial",
+        "Corticoide tópico horário e antibiótico oral"
+      ],
+      "correctIndex": 0,
+      "explanation": "Úlcera central, extensa ou com hipópio é urgência: colhe-se raspado para bacterioscopia e cultura antes de iniciar antibiótico tópico fortificado em regime horário, inclusive noturno. A oclusão é proscrita porque cria câmara úmida favorável ao germe. O seguimento é diário até estabilizar."
+    },
+    {
+      "question": "Qual conjunto representa as complicações e sequelas possíveis de uma úlcera de córnea?",
+      "options": [
+        "Leucoma, perfuração corneana e endoftalmite",
+        "Catarata congênita, afaquia e ambliopia",
+        "Retinose pigmentar, nictalopia e miopia",
+        "Ptose palpebral, diplopia e estrabismo"
+      ],
+      "correctIndex": 0,
+      "explanation": "A úlcera pode cicatrizar deixando leucoma com baixa visão ou cegueira, afinar até perfurar, e a perfuração abre porta para endoftalmite, que costuma custar o olho. É por essa cadeia de eventos que a úlcera central é tratada como emergência."
+    },
+    {
+      "question": "A imagem mostra opacidade branca densa ocupando o estroma corneano após infecção resolvida. Essa sequela chama-se:",
+      "options": [
+        "Leucoma, cicatriz estromal que reduz a visão",
+        "Hipópio, coleção de pus na câmara anterior",
+        "Gerontoxo, depósito lipídico periférico",
+        "Ceratocone, ectasia com afinamento central"
+      ],
+      "correctIndex": 0,
+      "explanation": "O leucoma é a cicatriz branca que substitui o estroma destruído, com fibras de colágeno desorganizadas que espalham a luz. Quando é central, bloqueia o eixo visual e a recuperação depende de transplante de córnea. Diferente do hipópio, é tecido permanente, não coleção de células.",
+      "image": "s16i1",
+      "imageCaption": "Opacidade corneana residual"
+    },
+    {
+      "question": "A imagem mostra vesículas e crostas na fronte e pálpebra de um só lado do rosto, respeitando a linha média. O quadro é:",
+      "options": [
+        "Herpes zoster oftálmico, do ramo V1 do trigêmeo",
+        "Herpes simples primário, de acometimento bilateral",
+        "Celulite orbitária bacteriana, de origem sinusal",
+        "Dermatite de contato, por colírio em uso crônico"
+      ],
+      "correctIndex": 0,
+      "explanation": "A erupção vesicular unilateral que para na linha média segue o dermátomo da divisão oftálmica do trigêmeo e define o herpes zoster oftálmico. Lesão na ponta do nariz, o sinal de Hutchinson, indica acometimento do ramo nasociliar e maior risco de doença ocular, com ceratite e uveíte. O tratamento é antiviral sistêmico precoce.",
+      "image": "s13i2",
+      "imageCaption": "Erupção cutânea unilateral periocular"
+    },
+    {
+      "question": "Quais causas explicam uma ceratite epitelial difusa, sem úlcera única definida?",
+      "options": [
+        "Olho seco, adenovírus, clamídia e conservantes",
+        "Catarata, glaucoma, miopia alta e presbiopia",
+        "Retinopatia diabética, oclusão venosa e drusas",
+        "Ptose, entrópio cicatricial e blefaroespasmo"
+      ],
+      "correctIndex": 0,
+      "explanation": "A ceratite epitelial difusa aparece no olho seco, inclusive na síndrome de Sjögren, na infecção por adenovírus e clamídia, e na toxicidade pelos conservantes de colírios antivirais e antibióticos usados por tempo prolongado. Cora em pontilhado com fluoresceína, em vez de formar lesão única. As demais alternativas envolvem cristalino, retina ou pálpebra."
+    },
+    {
+      "question": "Qual exame confirma a presença de defeito epitelial na córnea?",
+      "options": [
+        "Coloração com fluoresceína sob luz azul de cobalto",
+        "Tonometria de aplanação sob anestésico tópico",
+        "Campimetria computadorizada de 30 graus centrais",
+        "Retinografia colorida sob midríase farmacológica"
+      ],
+      "correctIndex": 0,
+      "explanation": "A fluoresceína não penetra o epitélio íntegro, mas se difunde pelo estroma exposto e fluoresce em verde sob luz azul de cobalto, desenhando a área desepitelizada. É o exame que revela tanto o pontilhado da ceratite difusa quanto o dendrito herpético. Os demais exames avaliam pressão, campo visual e retina."
+    },
+    {
+      "question": "Trabalhador que esmerilhou metal sem óculos apresenta dor e ponto escuro aderido à córnea. A conduta correta é:",
+      "options": [
+        "Remover o corpo estranho e iniciar antibiótico tópico",
+        "Ocluir o olho e aguardar a expulsão espontânea",
+        "Prescrever anestésico tópico de uso domiciliar",
+        "Instilar corticoide tópico e reavaliar em um mês"
+      ],
+      "correctIndex": 0,
+      "explanation": "O corpo estranho metálico deve ser removido sob lâmpada de fenda, junto com o halo de ferrugem, seguido de antibiótico tópico profilático até a reepitelização. Anestésico tópico de uso domiciliar é proscrito: retarda a cicatrização e mascara a piora, podendo levar a ceratopatia tóxica. Corticoide isolado favorece infecção."
+    },
+    {
+      "question": "O esquema compara o olho normal ao olho cuja córnea protrui em forma de cone. Esse quadro corresponde a:",
+      "options": [
+        "Ceratocone, ectasia bilateral e progressiva",
+        "Catarata nuclear, opacidade do cristalino",
+        "Pterígio nasal, invasão fibrovascular",
+        "Distrofia de Fuchs, edema do idoso"
+      ],
+      "correctIndex": 0,
+      "explanation": "O ceratocone é uma doença degenerativa, bilateral e assimétrica, em que a córnea afina e assume formato cônico, tipicamente iniciando na adolescência e progredindo até a terceira ou quarta década. A protrusão gera astigmatismo irregular que os óculos não corrigem bem. É ectasia, não opacidade nem inflamação.",
+      "image": "f2_s04i1",
+      "imageCaption": "Córnea normal comparada à córnea ectásica"
+    },
+    {
+      "question": "Que erro refracional é característico da evolução do ceratocone?",
+      "options": [
+        "Astigmatismo miópico irregular e progressivo",
+        "Hipermetropia estável desde a primeira infância",
+        "Presbiopia precoce com visão de longe normal",
+        "Anisometropia súbita por catarata unilateral"
+      ],
+      "correctIndex": 0,
+      "explanation": "O afinamento e a protrusão aumentam a curvatura corneana, produzindo miopia com astigmatismo irregular que muda de eixo e de grau a cada consulta. O paciente troca de óculos com frequência e nunca alcança visão plena. À retinoscopia aparece o reflexo em tesoura, com as faixas luminosas se cruzando."
+    },
+    {
+      "question": "Que condições se associam com maior frequência ao ceratocone?",
+      "options": [
+        "Síndrome de Down, dermatite atópica e alergia ocular",
+        "Hipertensão arterial, tabagismo e dislipidemia",
+        "Diabetes tipo 2, obesidade e apneia obstrutiva",
+        "Artrite reumatoide, psoríase e lúpus discoide"
+      ],
+      "correctIndex": 0,
+      "explanation": "Ceratocone tem associação estabelecida com síndrome de Down, dermatite atópica, alergia ocular e retinose pigmentar. O denominador comum nos quadros alérgicos é o ato de coçar os olhos, que atua como trauma mecânico repetido sobre o estroma. Orientar a parar de coçar faz parte do tratamento."
+    },
+    {
+      "question": "As estrias de Vogt, observadas na córnea do ceratocone, correspondem a:",
+      "options": [
+        "Pregas finas da membrana de Descemet",
+        "Depósitos de ferro no epitélio basal",
+        "Vasos neoformados do estroma anterior",
+        "Dobras da conjuntiva bulbar superior"
+      ],
+      "correctIndex": 0,
+      "explanation": "As estrias de Vogt são pregas verticais finas da membrana de Descemet, no estroma profundo, que desaparecem quando se comprime levemente o globo. Indicam ectasia já estabelecida. Não confundir com o anel de Fleischer, que é depósito de ferro no epitélio."
+    },
+    {
+      "question": "O anel de Fleischer, visto na base do cone no ceratocone, é formado por:",
+      "options": [
+        "Depósito de ferro no epitélio corneano",
+        "Depósito de cobre na membrana de Descemet",
+        "Depósito de lipídio no estroma periférico",
+        "Depósito de cálcio na membrana de Bowman"
+      ],
+      "correctIndex": 0,
+      "explanation": "O anel de Fleischer é um depósito de hemossiderina no epitélio basal contornando a base do cone, mais visível com filtro azul de cobalto, com cor amarelo-acastanhada. Depósito de cobre na Descemet é o anel de Kayser-Fleischer da doença de Wilson, e lipídio periférico é o halo senil."
+    },
+    {
+      "question": "A imagem mostra a pálpebra inferior deformada em V quando o paciente olha para baixo. Esse sinal é:",
+      "options": [
+        "Sinal de Munson, do ceratocone avançado",
+        "Sinal de Hutchinson, do herpes zoster",
+        "Sinal de Seidel, da perfuração corneana",
+        "Sinal de Vogt, da distrofia endotelial"
+      ],
+      "correctIndex": 0,
+      "explanation": "No ceratocone avançado o ápice do cone empurra a pálpebra inferior no olhar para baixo, criando uma deformidade angular em V conhecida como sinal de Munson. É achado tardio, de inspeção simples, que dispensa aparelho. O sinal de Seidel é o vazamento de aquoso corado por fluoresceína.",
+      "image": "f2_s03i2",
+      "imageCaption": "Pálpebra inferior no olhar para baixo"
+    },
+    {
+      "question": "A imagem mostra edema central intenso da córnea em paciente com ceratocone e baixa visual súbita. O mecanismo é:",
+      "options": [
+        "Ruptura da membrana de Descemet",
+        "Descolamento da retina temporal",
+        "Obstrução da artéria central",
+        "Ruptura da cápsula do cristalino"
+      ],
+      "correctIndex": 0,
+      "explanation": "A hidropsia corneana é complicação do ceratocone avançado: a Descemet se rompe e o humor aquoso invade o estroma, causando edema central e baixa visual súbita, com dor e fotofobia. O quadro regride em semanas a meses à medida que o endotélio recobre a falha, mas deixa como sequela uma cicatriz, o leucoma.",
+      "image": "f2_s08i1",
+      "imageCaption": "Edema central agudo da córnea"
+    },
+    {
+      "question": "Qual é o objetivo do crosslinking corneano no ceratocone?",
+      "options": [
+        "Fortalecer a córnea ligando as fibras de colágeno",
+        "Substituir o estroma por tecido de doador humano",
+        "Remover o epitélio para corrigir a miopia residual",
+        "Reduzir a pressão intraocular drenando o aquoso"
+      ],
+      "correctIndex": 0,
+      "explanation": "O crosslinking usa riboflavina e luz ultravioleta A para induzir radicais livres que criam pontes entre as fibras de colágeno do estroma, enrijecendo a córnea. O objetivo é travar a progressão da ectasia, não melhorar a visão já perdida. Por isso é indicado o mais cedo possível, assim que se documenta progressão."
+    },
+    {
+      "question": "Quando o transplante de córnea se torna a opção no ceratocone?",
+      "options": [
+        "Com cicatriz central e intolerância à lente",
+        "Com astigmatismo leve corrigível por óculos",
+        "Com topografia normal e visão preservada",
+        "Com pressão intraocular acima de 21 mmHg"
+      ],
+      "correctIndex": 0,
+      "explanation": "O transplante é reservado ao ceratocone avançado com opacidade central, geralmente sequela de hidropsia, ou quando o paciente não tolera mais a lente de contato rígida. Antes disso a escada terapêutica passa por óculos, lente rígida gás-permeável, crosslinking e anel intraestromal. A córnea avascular favorece a sobrevida do enxerto."
+    },
+    {
+      "question": "Que características definem as distrofias corneanas?",
+      "options": [
+        "Hereditárias, bilaterais e de causa desconhecida",
+        "Adquiridas, unilaterais e de origem infecciosa",
+        "Traumáticas, unilaterais e sempre progressivas",
+        "Tóxicas, bilaterais e reversíveis com suspensão"
+      ],
+      "correctIndex": 0,
+      "explanation": "Distrofias corneanas são alterações hereditárias, bilaterais e em geral simétricas, de causa primária desconhecida, que podem ser estacionárias ou progressivas e cursar ou não com baixa visual. Classificam-se pela camada acometida em epiteliais, estromais e endoteliais. Serem bilaterais é o que as separa das lesões adquiridas."
+    },
+    {
+      "question": "A imagem mostra depósitos epiteliais dourados dispostos em redemoinho a partir do centro da córnea. O achado sugere uso de:",
+      "options": [
+        "Amiodarona ou cloroquina por tempo prolongado",
+        "Timolol ou brimonidina por tempo prolongado",
+        "Prednisolona ou dexametasona em uso tópico",
+        "Tobramicina ou moxifloxacino em uso tópico"
+      ],
+      "correctIndex": 0,
+      "explanation": "O padrão em redemoinho, chamado córnea verticilata ou distrofia vorticosa, resulta do acúmulo de fármacos catiônicos anfifílicos no epitélio, sendo amiodarona e cloroquina os exemplos clássicos. É bilateral, quase sempre assintomático e reversível com a suspensão, não obrigando a parar a medicação. Também aparece na doença de Fabry.",
+      "image": "f2_s18i1",
+      "imageCaption": "Padrão epitelial em redemoinho"
+    },
+    {
+      "question": "Quais entidades pertencem ao grupo das distrofias estromais?",
+      "options": [
+        "Distrofia granular, macular e lattice",
+        "Distrofia de Meesmann, Cogan e vorticosa",
+        "Distrofia de Fuchs e polimorfa posterior",
+        "Ceratocone, ceratoglobo e degeneração marginal"
+      ],
+      "correctIndex": 0,
+      "explanation": "As distrofias estromais clássicas são a granular, com depósitos hialinos em migalha, a macular, com depósitos de mucopolissacarídeo que atingem a periferia e causam mais baixa visual, e a lattice, com depósitos amiloides em linhas ramificadas. Meesmann, Cogan e vorticosa são epiteliais; Fuchs e polimorfa posterior são endoteliais."
+    },
+    {
+      "question": "A distrofia endotelial de Fuchs compromete a visão principalmente por qual mecanismo?",
+      "options": [
+        "Edema da córnea por falência da bomba endotelial",
+        "Opacidade do cristalino por esclerose nuclear",
+        "Afinamento do estroma com protrusão em cone",
+        "Neovascularização do estroma por hipóxia"
+      ],
+      "correctIndex": 0,
+      "explanation": "Na distrofia de Fuchs as células endoteliais degeneram progressivamente e surgem guttata na Descemet; quando a densidade cai abaixo do limiar crítico, a bomba falha e o estroma embebe. A visão fica pior ao acordar, por acúmulo noturno de líquido, e melhora ao longo do dia com a evaporação. Nos casos avançados o tratamento é o transplante endotelial."
+    },
+    {
+      "question": "O halo senil, também chamado gerontoxo, corresponde a:",
+      "options": [
+        "Anel lipídico periférico separado do limbo",
+        "Anel de ferro na base do cone corneano",
+        "Anel de cobre na periferia da Descemet",
+        "Anel de cálcio na fenda interpalpebral"
+      ],
+      "correctIndex": 0,
+      "explanation": "O halo senil é um anel esbranquiçado de depósito lipídico na periferia do estroma, separado do limbo por uma zona clara, o intervalo lúcido. No idoso é achado benigno, sem efeito sobre a visão. Quando aparece antes dos 40 anos, obriga a investigar dislipidemia."
+    }
+  ]
+}

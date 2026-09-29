@@ -1,0 +1,1332 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Saúde Sexual do Adolescente</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;450;500;600&display=swap" rel="stylesheet">
+<style>
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0}
+  body{background:#f5f3ef;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+  button{font:inherit;color:inherit;font-family:'IBM Plex Sans',system-ui,sans-serif}
+  a{color:#2b57cc;text-decoration:none}
+  a:hover{color:#1e3f9c;text-decoration:underline}
+  @keyframes qFade{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+  @keyframes qDrawer{from{opacity:0;transform:translateY(-4px)}to{opacity:1;transform:none}}
+
+  /* hovers — no canvas eram style-hover, aqui viram CSS de verdade */
+  .h-dark:hover{background:#2b57cc!important;transform:translateY(-1px)}
+  .h-darkflat:hover{background:#2b57cc!important}
+  .h-line:hover{border-color:#121a2b!important}
+  .h-ink:hover{color:#121a2b!important}
+  .h-opt:not(.locked):hover{border-color:var(--hbd)!important;transform:translateY(-1px)}
+  .h-card:hover{border-color:#121a2b!important;transform:translateY(-2px)}
+
+  /* tipografia do resumo */
+  .rsm{font-size:16.5px;line-height:1.72;color:#2a3141;max-width:64ch}
+  .rsm h2{font-family:'Newsreader',Georgia,serif;font-size:27px;font-weight:500;letter-spacing:-.02em;line-height:1.2;margin:42px 0 14px;padding-top:20px;border-top:1px solid #e4e0d8;text-wrap:pretty}
+  .rsm h2:first-child{margin-top:0;padding-top:0;border-top:0}
+  .rsm h3{font-family:'Newsreader',Georgia,serif;font-size:20px;font-weight:600;letter-spacing:-.01em;margin:28px 0 10px;text-wrap:pretty}
+  .rsm h4{font-family:'IBM Plex Mono',monospace;font-size:11px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:#2b57cc;margin:24px 0 8px}
+  .rsm p{margin:0 0 15px;text-wrap:pretty}
+  .rsm ul,.rsm ol{margin:0 0 15px;padding-left:22px}
+  .rsm li{margin-bottom:7px;text-wrap:pretty}
+  .rsm li>ul,.rsm li>ol{margin:7px 0 0}
+  .rsm strong{font-weight:600;color:#121a2b}
+  .rsm em{font-style:italic}
+  .rsm code{font-family:'IBM Plex Mono',monospace;font-size:.88em;background:#efece5;border:1px solid #e4e0d8;border-radius:5px;padding:1px 5px}
+  .rsm hr{border:0;border-top:1px solid #e4e0d8;margin:32px 0}
+  .rsm blockquote{margin:0 0 18px;padding:15px 18px;background:#f7f6f2;border-left:2.5px solid #2b57cc;border-radius:0 12px 12px 0;font-size:15px;line-height:1.65;color:#39404f}
+  .rsm blockquote p:last-child{margin-bottom:0}
+  .rsm .tbl{overflow-x:auto;margin:0 0 20px;border:1px solid #e4e0d8;border-radius:12px;background:#fff}
+  .rsm table{border-collapse:collapse;width:100%;font-size:14px;line-height:1.5}
+  .rsm th{text-align:left;font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.09em;text-transform:uppercase;color:#8a8578;font-weight:600;padding:11px 14px;background:#faf9f6;border-bottom:1px solid #e4e0d8;white-space:nowrap}
+  .rsm td{padding:11px 14px;border-bottom:1px solid #efece5;vertical-align:top;text-wrap:pretty}
+  .rsm tr:last-child td{border-bottom:0}
+  .rsm .key{background:#f2f6fb;border:1px solid #d6e2f4;border-radius:12px;padding:16px 18px;margin:0 0 18px}
+  .rsm .key>*:last-child{margin-bottom:0}
+
+  /* figuras — no resumo e na questao */
+  .fig{margin:0 0 20px;background:#fff;border:1px solid #e4e0d8;border-radius:14px;overflow:hidden}
+  .fig img{display:block;width:100%;height:auto;cursor:zoom-in}
+  .fig figcaption{font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.06em;color:#8a8578;padding:9px 13px;border-top:1px solid #efece5;background:#faf9f6;text-wrap:pretty}
+  .qfig{margin:0 0 20px}
+
+  /* lightbox */
+  #lb{position:fixed;inset:0;z-index:90;background:rgba(18,26,43,.86);display:none;align-items:center;justify-content:center;padding:24px;cursor:zoom-out}
+  #lb.on{display:flex;animation:qFade .16s ease}
+  #lb img{max-width:100%;max-height:100%;border-radius:10px;box-shadow:0 24px 60px rgba(0,0,0,.5)}
+
+  @media(max-width:560px){
+    .rsm{font-size:16px}
+    .rsm h2{font-size:24px}
+    .home-grid{grid-template-columns:1fr!important}
+  }
+</style>
+</head>
+<body>
+
+<div style="min-height:100vh;background:#f5f3ef;color:#121a2b;font-family:'IBM Plex Sans',system-ui,sans-serif">
+  <header style="position:sticky;top:0;z-index:30;background:rgba(245,243,239,.94);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid #e4e0d8">
+    <div style="max-width:720px;margin:0 auto;padding:12px 16px 10px" id="hdr"></div>
+  </header>
+  <main style="max-width:720px;margin:0 auto;padding:0 16px 80px" id="stage"></main>
+</div>
+<div id="lb"><img alt=""></div>
+
+<script type="text/html" id="resumoSrc"><h2>A consulta do adolescente: vínculo, privacidade e sigilo</h2>
+<h3>Os três pilares</h3>
+<p>Antes de qualquer conduta sobre infecção sexualmente transmissível, contracepção ou gestação, o que muda no atendimento do adolescente é a <strong>forma</strong> de atender. A consulta se apoia em três pilares que não são etapas sucessivas, e sim condições simultâneas: <strong>vínculo</strong>, <strong>privacidade</strong> e <strong>segurança</strong>.</p>
+<p><strong>Vínculo</strong> é acolher sem julgamento. O adolescente chega testando se aquele profissional vai reagir com susto, sermão ou desaprovação ao que ele tem para contar. Uma frase que retira o peso pessoal da pergunta abre a conversa: <em>"vou fazer perguntas que faço para todo mundo"</em>. A pergunta universal não acusa ninguém e, por isso mesmo, é a única que costuma ser respondida com franqueza.</p>
+<p><strong>Privacidade</strong> é garantir um tempo de consulta a sós. Não é esconder nada da família: é criar o espaço em que vida sexual, uso de álcool e outras drogas, humor e violência podem ser ditos. Sem esse tempo, a consulta se reduz à queixa de entrada — corrimento, atraso menstrual, dor — e todo o resto fica invisível.</p>
+<p><strong>Segurança</strong> é rastrear ativamente risco e violência, mesmo quando nada foi mencionado. É o pilar que transforma a consulta em porta de entrada para a rede de proteção.</p>
+<blockquote><p>Sem os três pilares, o atendimento até prescreve certo, mas erra o essencial: não fica sabendo o que realmente adoece aquele adolescente. Humor, substâncias e violência raramente aparecem como queixa espontânea.</p></blockquote>
+<h3>Confidencialidade: o que fica entre nós e o que não pode ficar</h3>
+<p>A confidencialidade é oferecida de forma <strong>explícita e com os limites nomeados logo no início da consulta</strong>, nunca depois que a revelação já aconteceu. A formulação padrão é direta: <em>"o que você me contar fica entre nós, exceto se eu achar que você está em risco de se machucar ou de alguém te machucar; se isso acontecer, eu te explico cada passo"</em>.</p>
+<p>Prometer segredo absoluto é o erro mais caro dessa consulta. Se depois surgir risco de vida ou violência, será preciso acionar proteção — e a promessa rompida destrói justamente o vínculo que permitiu a revelação.</p>
+<h4>Quando o sigilo se mantém e quando se rompe</h4>
+<div class="tbl"><table><thead><tr><th>Situação</th><th>Manter ou quebrar</th><th>A quem comunicar</th></tr></thead><tbody><tr><td>Vida sexual ativa, pedido de contracepção</td><td>Manter</td><td>Ninguém; estimular diálogo familiar sem impor</td></tr><tr><td>IST diagnosticada e tratada</td><td>Manter</td><td>Parcerias sexuais, com apoio do serviço; vigilância nos agravos de notificação</td></tr><tr><td>Uso de álcool ou drogas sem risco imediato</td><td>Manter</td><td>Ninguém; seguir com plano de redução de danos</td></tr><tr><td>Suspeita ou confirmação de violência ou abuso</td><td>Quebrar</td><td>Conselho Tutelar e notificação compulsória à vigilância</td></tr><tr><td>Ideação suicida ou autoagressão</td><td>Quebrar</td><td>Responsável legal e serviço de saúde mental, com o adolescente informado</td></tr><tr><td>Risco grave imediato à vida</td><td>Quebrar</td><td>Responsável legal e rede de urgência, sem atrasar a conduta clínica</td></tr><tr><td>Necessidade de internação hospitalar</td><td>Sigilo mantido, autorização necessária</td><td>Responsável legal, apenas para autorizar a internação</td></tr></tbody></table></div>
+<blockquote><p>Quebra de sigilo é medida de proteção, não punição. Ela se aplica a risco de vida e a violência — nunca ao fato de o adolescente ter vida sexual, pedir método contraceptivo ou ter tido uma IST. Comunicar a família por esses motivos é violar o sigilo, não protegê-lo. E, quando a quebra for necessária, o adolescente é avisado antes e acompanhado em cada passo.</p></blockquote>
+<h4>O que o adolescente decide sozinho</h4>
+<p>O adolescente com discernimento sobre a própria saúde e compreensão do autocuidado tem direito a:</p>
+<ul><li>realizar <strong>consulta desacompanhado</strong>, se essa for a escolha dele;</li><li>realizar <strong>procedimentos não invasivos</strong> desacompanhado, incluindo coleta de exames laboratoriais;</li><li>receber <strong>informação sobre qualquer aspecto da sexualidade e da saúde reprodutiva</strong>;</li><li><strong>escolher método contraceptivo</strong> adequado, orientado por profissional de saúde, inclusive pelo pediatra;</li><li>realizar <strong>testes rápidos de gravidez, HIV e sífilis</strong>, com acolhimento e aconselhamento antes e depois do resultado.</li></ul>
+<p>O limite está na <strong>internação hospitalar</strong>, que exige autorização do pai, da mãe ou do responsável legal. Essa exigência, porém, <strong>não impede nenhuma conduta de emergência</strong>: nenhum trâmite burocrático pode atrasar o atendimento de quem corre risco de vida.</p>
+<p>Na prática, isso resolve a cena mais comum do ambulatório. A adolescente que chega sozinha pedindo contracepção e pedindo que os pais não saibam deve ser avaliada e receber o método — mantendo o sigilo e estimulando o diálogo familiar como algo desejável, jamais como condição para atender.</p>
+<hr>
+<h2>A anamnese estruturada: HEADSSS e os 5 Ps</h2>
+<p>Dois roteiros curtos evitam que a consulta trave ou se reduza à queixa.</p>
+<h4>HEADSSS — visão integral</h4>
+<div class="tbl"><table><thead><tr><th>Letra</th><th>Domínio</th><th>O que explorar</th></tr></thead><tbody><tr><td>H</td><td>Home</td><td>Com quem mora, apoio, conflitos, segurança em casa</td></tr><tr><td>E</td><td>Education / Employment</td><td>Escola, rendimento, evasão, trabalho</td></tr><tr><td>A</td><td>Activities</td><td>Rotina, lazer, pares, tempo de tela</td></tr><tr><td>D</td><td>Drugs</td><td>Álcool, tabaco, maconha, outras substâncias</td></tr><tr><td>S</td><td>Sexuality</td><td>Orientação, práticas, proteção, parcerias</td></tr><tr><td>S</td><td>Suicide / Depression</td><td>Humor, desesperança, ideação, autoagressão</td></tr><tr><td>S</td><td>Safety</td><td>Violência, internet, armas, segurança no relacionamento</td></tr></tbody></table></div>
+<p>A função do HEADSSS é impedir que a consulta vire só corrimento ou gravidez e deixe de fora humor, drogas e segurança — que costumam pesar mais no prognóstico do que a queixa de entrada.</p>
+<h4>Os 5 Ps — história sexual</h4>
+<ul><li><strong>Partners</strong> — com quem você se relaciona? Com homens, mulheres ou ambos?</li><li><strong>Practices</strong> — que tipo de contato sexual? Vaginal, anal, oral?</li><li><strong>Protection</strong> — usa preservativo em quais situações? Usa algum método contraceptivo?</li><li><strong>Past</strong> — já teve alguma IST? Já fez testes? Quando?</li><li><strong>Pregnancy plans</strong> — tem preocupação com gravidez? Deseja engravidar agora?</li></ul>
+<p>Os 5 Ps reduzem o improviso: em vez de decidir na hora o que perguntar, o profissional segue um roteiro que cobre risco, proteção e intenção reprodutiva em poucos minutos. Um microscript funciona bem como abertura: <em>"você tem vida sexual? Se sim, com homens, mulheres ou ambos? Usa camisinha em quais situações?"</em>.</p>
+<hr>
+<h2>IST na adolescência: prevenção combinada e fluxo de atendimento</h2>
+<h3>Carga global e o argumento da testagem</h3>
+<p>As estimativas da Organização Mundial da Saúde para 2020 somam cerca de <strong>374 milhões de novas infecções por ano</strong> apenas por quatro IST curáveis:</p>
+<div class="tbl"><table><thead><tr><th>IST curável</th><th>Novas infecções em 2020</th></tr></thead><tbody><tr><td>Tricomoníase</td><td>156 milhões</td></tr><tr><td>Clamídia</td><td>129 milhões</td></tr><tr><td>Gonorreia</td><td>82 milhões</td></tr><tr><td>Sífilis</td><td>7,1 milhões</td></tr></tbody></table></div>
+<p>O número importa menos que a sua natureza: <strong>boa parte dessas infecções é silenciosa</strong>, sobretudo clamídia e gonorreia em adolescentes. Testar apenas quem se queixa deixa passar a maioria dos casos, mantém a cadeia de transmissão e permite que a infecção suba para o trato genital superior antes de qualquer sintoma. É esse dado que sustenta testagem de rotina conforme risco, e não conforme queixa.</p>
+<h3>Prevenção combinada</h3>
+<p>Prevenção combinada é somar medidas pequenas, e não escolher a melhor delas:</p>
+<ul><li><strong>preservativo</strong>, com técnica de uso efetivamente ensinada e não apenas mencionada;</li><li><strong>testagem</strong> para HIV, sífilis e outras IST conforme risco, explicando janela imunológica e retorno;</li><li><strong>vacinação</strong> contra HPV e hepatite B, com checagem do cartão a cada oportunidade;</li><li><strong>PrEP ou PEP</strong>, quando indicadas;</li><li><strong>tratamento</strong> adequado, com retorno combinado;</li><li><strong>abordagem das parcerias</strong>, incluindo notificação e tratamento — sem isso, a reinfecção é questão de tempo.</li></ul>
+<p>Fazer três desses itens por consulta já muda o desfecho. O item mais esquecido na prática costuma ser justamente o parceiro.</p>
+<h3>O fluxo do ambulatório em cinco passos</h3>
+<ol><li><strong>Acolher com privacidade</strong> — explicar confidencialidade e seus limites.</li><li><strong>História sexual curta</strong> — os 5 Ps: risco, proteção, parcerias, gravidez.</li><li><strong>Exame e testes essenciais</strong> — incluindo <strong>teste de gravidez sempre que aplicável</strong>.</li><li><strong>Tratar e orientar</strong> — evitar o erro clássico de só pedir exames e mandar embora.</li><li><strong>Prevenção combinada e retorno</strong> — preservativo, vacina, parceria, reavaliação.</li></ol>
+<h4>Erros comuns na queixa de IST</h4>
+<ul><li>Pedir exames sem orientar prevenção nem combinar retorno.</li><li>Não testar gravidez por constrangimento em perguntar.</li><li>Não abordar as parcerias, mantendo o ciclo de reinfecção.</li><li>Ignorar sinais de coerção ou violência no relato.</li></ul>
+<h4>No pronto atendimento o raciocínio é outro</h4>
+<p>No ambulatório se pensa em prevenção e seguimento; no pronto atendimento, em <strong>risco imediato e janela de intervenção</strong>. São três decisões rápidas:</p>
+<ol><li>Há instabilidade ou sinal de alarme? (dor pélvica intensa, febre, sangramento, síncope)</li><li>Há janela aberta para profilaxia de HIV, de outras IST ou de gravidez?</li><li>É preciso acionar o fluxo de proteção?</li></ol>
+<p>Quanto mais cedo, melhor para qualquer profilaxia. Documentar com objetividade e agendar seguimento fecham o atendimento.</p>
+<hr>
+<h2>Doença inflamatória pélvica</h2>
+<p>A doença inflamatória pélvica é a <strong>infecção do trato genital superior</strong> — útero, trompas e, por vezes, ovários e peritônio — causada em geral por agentes de transmissão sexual que ascendem do colo uterino. <em>Chlamydia trachomatis</em> e <em>Neisseria gonorrhoeae</em> são os principais, mas o quadro costuma ser <strong>polimicrobiano</strong>, o que justifica cobertura antibiótica ampla.</p>
+<h4>Quando suspeitar</h4>
+<ul><li>Dor pélvica ou abdominal baixa</li><li>Corrimento vaginal anormal</li><li>Dispareunia</li><li>Sangramento irregular</li><li>Febre — <strong>nem sempre presente</strong></li><li><strong>Dor à mobilização do colo uterino</strong> ao exame ginecológico, o sinal mais característico</li></ul>
+<blockquote><p>Exigir febre para considerar o diagnóstico faz perder casos. A combinação de dor pélvica, corrimento e dor à mobilização do colo já basta para tratar.</p></blockquote>
+<h4>Conduta</h4>
+<p>Com clínica compatível, <strong>o tratamento começa empiricamente, sem aguardar exames</strong>, seguindo o protocolo local. Em paralelo: testar HIV, sífilis, clamídia e gonococo conforme risco, orientar e tratar as parcerias, reforçar prevenção e avaliar necessidade de internação.</p>
+<p>São <strong>sinais de gravidade que indicam internação</strong>: dor intensa, febre alta, vômitos que impedem a via oral, gestação concomitante e abscesso tubo-ovariano.</p>
+<h4>Por que a pressa importa</h4>
+<p>As complicações tardias são definitivas e recaem sobre alguém com décadas de vida reprodutiva pela frente: <strong>infertilidade por lesão tubária</strong>, <strong>gravidez ectópica</strong> e <strong>dor pélvica crônica</strong>. O atraso terapêutico nessa doença não custa dias de sintoma, custa desfecho reprodutivo.</p>
+<hr>
+<h2>Profilaxias para o HIV: PrEP e PEP</h2>
+<p>A distinção é simples e cai em prova justamente por ser confundida: <strong>PrEP protege quem tem risco continuado; PEP socorre quem teve uma exposição pontual</strong>.</p>
+<div class="tbl"><table><thead><tr><th></th><th>PrEP — pré-exposição</th><th>PEP — pós-exposição</th></tr></thead><tbody><tr><td>Quem</td><td>Risco sexual continuado</td><td>Exposição de risco já ocorrida</td></tr><tr><td>Indicações</td><td>Relações sem preservativo frequentes, parceria com HIV sem supressão viral documentada, múltiplas parcerias, IST recente, uso de drogas injetáveis com compartilhamento</td><td>Violência sexual, relação sem preservativo com parceria HIV positiva sem supressão ou de status desconhecido, acidente ocupacional com material biológico</td></tr><tr><td>Quando iniciar</td><td>Antes da exposição, em uso regular</td><td>O quanto antes, idealmente <strong>até 72 horas</strong></td></tr><tr><td>Duração</td><td>Enquanto durar o risco</td><td><strong>28 dias</strong> de esquema completo</td></tr><tr><td>Antes de iniciar</td><td><strong>Testar HIV</strong>, avaliar função renal, rastrear outras IST</td><td><strong>Testar HIV</strong> e avaliar a exposição</td></tr><tr><td>Seguimento</td><td>Testagem periódica de HIV e IST</td><td>Testagem seriada após o esquema</td></tr></tbody></table></div>
+<p>Testar HIV antes de iniciar a PrEP é obrigatório: começar a profilaxia em alguém já infectado equivale a expor o vírus a um esquema incompleto e selecionar resistência. A avaliação de função renal se justifica pelo perfil do tenofovir, e o rastreio de outras IST tem duplo papel — sinaliza risco e identifica infecção que precisa de tratamento próprio.</p>
+<blockquote><p>A PrEP protege <strong>apenas contra o HIV</strong>. Ela não previne sífilis, gonorreia, clamídia ou HPV. Preservativo e testagem periódica continuam parte obrigatória do pacote de cuidado de quem está em profilaxia.</p></blockquote>
+<p>Na PEP, a eficácia é <strong>tempo-dependente</strong>: cai a cada hora de atraso e o limite prático é de 72 horas. Relação com preservativo íntegro ou com parceria de carga viral indetectável não configura indicação.</p>
+<h4>Vacinação</h4>
+<p>O calendário nacional oferece a vacina <strong>HPV quadrivalente em dose única para meninas e meninos de 9 a 14 anos</strong>, com melhor resposta imune quando aplicada antes do início da vida sexual. Imunossuprimidos, pessoas vivendo com HIV e vítimas de violência sexual seguem esquema de três doses. A hepatite B compõe o mesmo bloco de checagem do cartão vacinal.</p>
+<hr>
+<h2>Contracepção na adolescência</h2>
+<p>A lógica da escolha na adolescência difere da do adulto em um ponto: a <strong>falha de uso típico</strong> pesa mais do que a falha do método. Métodos que dependem de lembrar todo dia, ou de agir corretamente a cada relação, falham muito mais nessa faixa etária — daí a preferência pelos métodos de longa duração, os LARC.</p>
+<div class="tbl"><table><thead><tr><th>Método</th><th>Mecanismo</th><th>Vantagem na adolescência</th><th>Ressalva</th></tr></thead><tbody><tr><td>Implante subdérmico de etonogestrel</td><td>Inibe a ovulação e espessa o muco</td><td>Alta eficácia independente da adesão diária; dura anos</td><td>Sangramento irregular é comum e motiva abandono se não for avisado antes</td></tr><tr><td>DIU de cobre</td><td>Ação espermicida e inflamatória local, sem hormônio</td><td>Longa duração, sem hormônio, serve também como contracepção de emergência</td><td>Pode aumentar fluxo e cólica menstrual</td></tr><tr><td>SIU de levonorgestrel</td><td>Espessa o muco e atrofia o endométrio</td><td>Alta eficácia e redução do fluxo menstrual</td><td>Amenorreia frequente, que assusta quem não foi orientada</td></tr><tr><td>Pílula combinada</td><td>Inibe a ovulação</td><td>Controle de ciclo, acne e dismenorreia</td><td>Depende de tomada diária; contraindicada em enxaqueca com aura e em outros riscos vasculares</td></tr><tr><td>Injetável trimestral de medroxiprogesterona</td><td>Inibe a ovulação</td><td>Não exige lembrar todo dia; discreto</td><td><strong>Reduz a densidade mineral óssea durante o uso</strong>, justamente no período de aquisição do pico de massa óssea</td></tr><tr><td>Preservativo</td><td>Barreira física</td><td>Único método que também previne IST</td><td>Falha de uso típico alta se usado isoladamente para evitar gravidez</td></tr></tbody></table></div>
+<p>Nuliparidade e idade <strong>não contraindicam</strong> o dispositivo intrauterino — essa é a crença antiga que mais afasta adolescentes do método mais eficaz disponível para elas. Quanto ao injetável trimestral, a perda óssea é em boa parte reversível após a suspensão, mas o método fica como alternativa quando existem outros de eficácia semelhante.</p>
+<blockquote><p><strong>Dupla proteção</strong>: associar o preservativo a um método contraceptivo eficaz. Nenhum método hormonal ou intrauterino protege contra infecções, e o preservativo isolado tem falha alta para prevenir gravidez. Somar os dois é a única forma de cobrir os dois desfechos, e é a orientação padrão para quem está iniciando a vida sexual.</p></blockquote>
+<h3>Contracepção de emergência</h3>
+<p>O <strong>levonorgestrel</strong> é usado em <strong>dose única de 1,5 mg</strong>, o quanto antes, com alguma eficácia mantida <strong>até 5 dias (120 horas)</strong> da relação. O efeito é tempo-dependente e cai a cada dia de atraso. O mecanismo principal é <strong>retardar ou inibir a ovulação</strong>.</p>
+<p>A consequência desse mecanismo precisa ser dita com clareza: a contracepção de emergência <strong>não interrompe uma gestação já estabelecida</strong> nem lhe causa dano. Deixar isso explícito evita que o medo de estar cometendo um aborto atrase o uso, justamente quando cada hora conta.</p>
+<p>A opção <strong>mais eficaz</strong> de contracepção de emergência é a <strong>inserção do DIU de cobre em até 5 dias</strong>, com taxa de falha bem inferior à do levonorgestrel e com a vantagem de já deixar a adolescente com um método de longa duração instalado.</p>
+<hr>
+<h2>Violência sexual: acolher, proteger e não revitimizar</h2>
+<p>O objetivo do atendimento em saúde é <strong>segurança e cuidado — não investigação</strong>. A apuração dos fatos cabe a outros órgãos, e confundir os papéis é o que produz revitimização.</p>
+<h3>Sinais de alerta</h3>
+<ul><li>Queixas vagas e recorrentes sem causa definida: dor abdominal, cefaleia, sintomas gastrointestinais</li><li>Lesões inexplicadas</li><li>IST de repetição ou gestação</li><li>Mudança abrupta de humor e queda no rendimento escolar</li><li>Parceria muito mais velha ou com sinais de coerção</li></ul>
+<h3>O primeiro minuto da revelação</h3>
+<p>Três frases dão conta do essencial, e a terceira é a que mais se erra:</p>
+<ul><li><em>"Obrigado por me contar."</em></li><li><em>"Eu acredito em você, e você não tem culpa."</em></li><li><em>"Eu não posso prometer segredo absoluto: se houver risco, eu vou acionar ajuda e te explico cada passo."</em></li></ul>
+<p>Em seguida, duas perguntas de triagem definem a conduta: <strong>"isso aconteceu hoje, ontem ou há mais tempo?"</strong> — porque a janela decide as profilaxias — e <strong>"você está seguro para voltar para casa hoje?"</strong> — porque a segurança imediata decide o destino.</p>
+<h4>Perguntas seguras</h4>
+<ul><li>"Alguém já te tocou de um jeito que te deixou desconfortável?"</li><li>"Você se sente seguro no seu relacionamento e em casa?"</li><li>"Você já foi forçado a fazer algo sexual?"</li><li>"Eu pergunto isso para todo mundo: alguém te pressionou ou te obrigou a ter relação?"</li></ul>
+<h4>O que evitar</h4>
+<ul><li>Entrevistas detalhadas e repetidas, do tipo <em>"conte tudo de novo"</em> — revitimizam e contaminam o relato.</li><li>Perguntas que culpabilizam, como <em>"por que você não reagiu?"</em>.</li><li>Duvidar do relato.</li><li>Prometer sigilo absoluto — promessa impossível de cumprir nesse cenário.</li><li>Chamar o suposto agressor ou a família para a sala antes de avaliar segurança.</li></ul>
+<h3>O tempo decide a conduta</h3>
+<div class="tbl"><table><thead><tr><th>Intervalo desde a exposição</th><th>Prioridades</th></tr></thead><tbody><tr><td>0 a 72 horas</td><td>Acolhimento e segurança; coleta de evidências quando aplicável; <strong>profilaxia pós-exposição ao HIV</strong>; profilaxias das demais IST conforme protocolo; <strong>contracepção de emergência</strong> quando indicada</td></tr><tr><td>72 horas a 7 dias</td><td>Testagem inicial e programação do seguimento; tratamento sintomático; apoio psicossocial; contracepção de emergência ainda possível até o quinto dia</td></tr><tr><td>Mais de 7 dias</td><td>Rastreamento de IST e de gestação; cuidado em saúde mental; articulação da rede; plano de segurança</td></tr></tbody></table></div>
+<p>Reconhecer a janela perdida também é conduta: passados sete dias, prescrever profilaxia pós-exposição não traz benefício, e o eixo do cuidado passa a ser rastrear, tratar e proteger.</p>
+<blockquote><p>O atendimento em saúde <strong>nunca</strong> pode ser condicionado a boletim de ocorrência, a exame de corpo de delito ou à autorização da família. Assistência primeiro; os trâmites correm em paralelo.</p></blockquote>
+<h3>Dever legal</h3>
+<p>Suspeita ou confirmação de violência contra criança ou adolescente é de <strong>comunicação obrigatória ao Conselho Tutelar</strong> e de <strong>notificação compulsória e imediata à vigilância epidemiológica</strong>, independentemente de registro policial e de autorização da família. Não é escolha do profissional nem depende do consentimento da adolescente — é dever legal, e a adolescente deve ser informada de que isso será feito e de por quê.</p>
+<hr>
+<h2>Gestação na adolescência</h2>
+<p>As estimativas para 2019 apontam cerca de <strong>21 milhões de gestações e 12 milhões de nascimentos por ano</strong> entre adolescentes de 15 a 19 anos em países de baixa e média renda. O número não descreve um problema de culpa individual: descreve desigualdade de acesso, de educação e de proteção.</p>
+<h3>A primeira consulta, em quatro eixos</h3>
+<p><strong>1. Confirmar e datar</strong> — teste de gravidez, idade gestacional sempre que possível, sintomas e sinais de risco, história obstétrica e comorbidades.</p>
+<p><strong>2. Avaliar vulnerabilidades</strong> — apoio familiar e escolar, <strong>violência e coerção</strong>, uso de substâncias, saúde mental.</p>
+<p><strong>3. Cuidado clínico essencial</strong> — rastreamento de IST conforme risco, revisão vacinal, avaliação de anemia e nutrição, plano de pré-natal com retornos definidos.</p>
+<p><strong>4. Planejar o depois</strong> — <strong>contracepção pós-parto eficaz decidida ainda no pré-natal</strong>, prevenção de recorrência e manutenção do vínculo com a atenção primária.</p>
+<p>O quarto eixo costuma ser tratado como detalhe e não é. Uma segunda gestação em curto intervalo agrava evasão escolar, vulnerabilidade social e risco obstétrico; combinar o método antes da alta é prevenção secundária e evita perder a adolescente no seguimento.</p>
+<h3>No pronto atendimento: triagem, não pré-natal</h3>
+<p>Queixas frequentes: sangramento vaginal, dor abdominal ou pélvica, vômitos intensos, cefaleia, edema, visão turva, desmaio.</p>
+<p>As três primeiras ações são sinais vitais e avaliação de estabilidade, confirmação da gestação em caso de dúvida e priorização da avaliação obstétrica diante de sinal de alarme.</p>
+<div class="tbl"><table><thead><tr><th>Sinal de alarme</th><th>Hipótese a afastar</th></tr></thead><tbody><tr><td>Dor intensa e unilateral</td><td><strong>Gravidez ectópica</strong>, pelo risco de rotura e choque em curto prazo</td></tr><tr><td>Instabilidade hemodinâmica, síncope, sangramento importante</td><td>Rotura de ectópica, abortamento, outras causas de hemorragia</td></tr><tr><td>Cefaleia persistente, edema, visão turva, pressão arterial elevada</td><td><strong>Doença hipertensiva da gestação</strong></td></tr><tr><td>Vômitos incoercíveis</td><td>Hiperêmese com desidratação e distúrbio hidroeletrolítico</td></tr><tr><td>Relato ou indício de coerção</td><td>Violência sexual, com acionamento do fluxo de proteção</td></tr></tbody></table></div>
+<h3>Coerção e diferença de idade</h3>
+<p>Parceria bem mais velha é sinal de alerta e merece rastreio ativo. A abordagem correta é a <strong>pergunta universal, feita a sós e sem acusar ninguém</strong>: <em>"eu pergunto isso para todo mundo — alguém te pressionou ou te obrigou a ter relação?"</em>. Perguntar a todos com a mesma frase retira o peso pessoal e abre espaço para a resposta; interrogar diante do parceiro ou anunciar à família que houve crime antes de conversar com a adolescente fecha a porta e a coloca em risco.</p>
+<hr>
+<h2>Síntese para a prova</h2>
+<ul><li>Os três pilares são <strong>vínculo, privacidade e segurança</strong> — e a privacidade não é esconder da família, é criar espaço para falar.</li><li>O sigilo é oferecido <strong>com os limites nomeados no início</strong>: risco grave imediato, suspeita de violência e ideação suicida ou autoagressão.</li><li>Consulta e procedimentos não invasivos podem ser feitos com o adolescente <strong>desacompanhado</strong>; a <strong>internação</strong> exige autorização do responsável, o que <strong>não impede conduta de emergência</strong>.</li><li><strong>HEADSSS</strong> para a visão integral; <strong>5 Ps</strong> para a história sexual.</li><li>Prevenção combinada: preservativo, testagem, vacina, PrEP ou PEP, tratamento e parcerias.</li><li><strong>DIP</strong>: tratar empiricamente com clínica compatível; dor à mobilização do colo é o sinal-chave; sequelas são infertilidade tubária, ectópica e dor pélvica crônica.</li><li><strong>PEP</strong> até 72 horas, por 28 dias; <strong>PrEP</strong> para risco continuado, com teste de HIV obrigatório antes.</li><li><strong>Levonorgestrel 1,5 mg</strong> em dose única, até 5 dias, quanto antes melhor; <strong>DIU de cobre</strong> é a contracepção de emergência mais eficaz.</li><li>Violência sexual: acolher em três frases, não prometer segredo absoluto, respeitar a janela de tempo e <strong>comunicar Conselho Tutelar e vigilância</strong>.</li><li>Gestação: confirmar e datar, rastrear vulnerabilidades, cuidar clinicamente e <strong>definir contracepção pós-parto ainda no pré-natal</strong>.</li></ul>
+<p>A mensagem final é que <strong>técnica, vínculo e segurança andam juntos</strong>: os esquemas terapêuticos mudam conforme a diretriz local e o ano, mas o processo bem feito permanece.</p></script>
+<!-- Tutor local: define window.DEEPSEEK_KEY. O arquivo NAO vai para o repositorio,
+     entao online ele da 404 e o chat simplesmente nao aparece. -->
+<script src="../deepseek_key.js"></script>
+<script>
+/* ─────────────────────────────────────────────────────────────────────────────
+   CONTRATO DE DADOS — para adaptar a outro tema, troque apenas QUIZ e o resumo.
+   Cada item: { question, options[2..6], correctIndex, explanation }
+   ──────────────────────────────────────────────────────────────────────────── */
+var TITLE      = "Saúde Sexual do Adolescente";
+var EYEBROW    = "Pediatria · Adolescência";
+var DISCIPLINA = "PED";   // pasta de origem (PED, GO...) — usada pelo índice
+var SUBTITLE = "Confidencialidade, IST, contracepção, violência sexual e gestação";
+var INTRO    = "Como conduzir a consulta de saúde sexual do adolescente: o direito ao atendimento a sós e os limites do sigilo, a anamnese sexual estruturada, prevenção combinada e manejo das IST, PrEP e PEP, contracepção incluindo a de emergência, a conduta na violência sexual e a primeira consulta da gestação na adolescência.";
+
+var QUIZ = [
+  {
+    "question": "Quais são os três pilares que estruturam a consulta do adolescente?",
+    "options": [
+      "Vínculo sem julgamento, privacidade na consulta e avaliação de segurança",
+      "Exame físico completo, consentimento dos pais e registro detalhado",
+      "Triagem laboratorial ampla, orientação dietética e retorno precoce",
+      "Anamnese restrita à queixa, encaminhamento rápido e alta no mesmo dia"
+    ],
+    "correctIndex": 0,
+    "explanation": "A consulta se apoia em vínculo (acolher sem julgar), privacidade (garantir um tempo a sós) e segurança (rastrear risco e violência). Sem esses três, temas como vida sexual, uso de drogas e humor não chegam a ser ditos, e o atendimento fica restrito à queixa de entrada."
+  },
+  {
+    "question": "Como se explica corretamente a confidencialidade ao adolescente no início da consulta?",
+    "options": [
+      "O que você contar fica entre nós, exceto se houver risco de alguém se machucar",
+      "Tudo o que você contar ficará em segredo absoluto, sem nenhuma exceção prevista",
+      "Só converso em particular depois que seu responsável autorizar isso por escrito",
+      "Preciso repassar aos seus pais tudo o que for dito, porque você é menor de idade"
+    ],
+    "correctIndex": 0,
+    "explanation": "O sigilo é oferecido de forma explícita e com os limites nomeados logo no começo, não depois que a revelação acontece. Prometer segredo absoluto é um erro: se surgir risco de vida ou violência será preciso acionar proteção, e a promessa rompida destrói o vínculo."
+  },
+  {
+    "question": "Em quais situações o sigilo do adolescente deve ser quebrado?",
+    "options": [
+      "Risco grave imediato, suspeita de violência e ideação suicida ou autoagressão",
+      "Uso irregular de preservativo, múltiplos parceiros e histórico de IST tratada",
+      "Início da vida sexual antes dos 16 anos e pedido de contracepção hormonal",
+      "Diagnóstico de IST curável, gravidez planejada e recusa do exame ginecológico"
+    ],
+    "correctIndex": 0,
+    "explanation": "As exceções ao sigilo são situações de segurança: risco grave imediato, suspeita de violência ou abuso e ideação suicida ou autoagressão. Vida sexual ativa, pedido de contracepção e IST não são motivo de quebra — informar a família por esses motivos é violar o sigilo, não protegê-lo."
+  },
+  {
+    "question": "Adolescente de 15 anos vem sozinha pedir um método contraceptivo e pede que os pais não saibam. Qual é a conduta?",
+    "options": [
+      "Avaliar e prescrever o método, mantendo o sigilo e estimulando o diálogo familiar",
+      "Condicionar a prescrição à presença de um responsável legal na próxima consulta",
+      "Comunicar os pais antes de prescrever, já que a paciente ainda é menor de idade",
+      "Adiar a conduta e encaminhar ao serviço social para autorização do responsável"
+    ],
+    "correctIndex": 0,
+    "explanation": "O adolescente com discernimento sobre o próprio autocuidado tem direito de receber informação sobre sexualidade e saúde reprodutiva e de escolher método contraceptivo, sem depender de autorização dos pais. Estimular o diálogo familiar é desejável, mas não pode virar condição para atender."
+  },
+  {
+    "question": "Qual é o limite da autonomia do adolescente quando a conduta indicada passa a ser a internação hospitalar?",
+    "options": [
+      "A internação exige autorização do responsável, o que não impede conduta de emergência",
+      "A internação pode ser decidida só pelo adolescente, qualquer que seja a gravidade do caso",
+      "A internação exige autorização judicial sempre que o adolescente chegar desacompanhado",
+      "A internação só ocorre depois que o responsável assinar, mesmo com risco iminente de morte"
+    ],
+    "correctIndex": 0,
+    "explanation": "Consulta e procedimentos não invasivos, como a coleta de exames laboratoriais, podem ser feitos com o adolescente desacompanhado. A internação, de impacto maior, requer autorização do responsável legal — mas nenhuma exigência burocrática pode atrasar uma conduta de emergência."
+  },
+  {
+    "question": "Adolescente desacompanhado pode realizar testes rápidos de gravidez, HIV e sífilis no serviço de saúde?",
+    "options": [
+      "Sim, com direito a acolhimento e aconselhamento antes e depois do resultado",
+      "Não, a coleta depende da assinatura do responsável em termo específico",
+      "Sim, mas o resultado precisa ser entregue diretamente ao responsável legal",
+      "Não, esses testes só podem ser feitos a partir dos 18 anos completos"
+    ],
+    "correctIndex": 0,
+    "explanation": "O acesso a testes rápidos de gravidez, HIV e sífilis é um direito do adolescente, com acolhimento e aconselhamento pré e pós-teste. Exigir responsável ou entregar o resultado a terceiros afasta justamente quem mais precisa testar e adia o diagnóstico."
+  },
+  {
+    "question": "O acrônimo HEADSSS organiza a entrevista integral do adolescente. Que domínios ele cobre?",
+    "options": [
+      "Casa, escola, atividades, drogas, sexualidade, humor e segurança",
+      "Coração, pulmão, abdome, pele, neurológico, ossos e visão geral",
+      "Cefaleia, edema, dispneia, dor, sangramento, febre e vômitos",
+      "Alergias, cirurgias, medicações, vacinas, hábitos e antecedentes"
+    ],
+    "correctIndex": 0,
+    "explanation": "HEADSSS cobre home, education/employment, activities, drugs, sexuality, suicide/depression e safety. A função é impedir que a consulta se reduza a corrimento ou gravidez e deixe de fora humor, uso de substâncias e violência, que costumam ser o que mais pesa no prognóstico."
+  },
+  {
+    "question": "Os \"5 Ps\" estruturam a história sexual. Que perguntas eles representam?",
+    "options": [
+      "Parceiros, práticas, proteção, passado de IST e planos de gravidez",
+      "Peso, pressão, puberdade, pele e padrão de sono do adolescente",
+      "Pais, pares, prova escolar, projetos e perspectiva de trabalho",
+      "Pré-natal, parto, puerpério, prematuridade e peso ao nascimento"
+    ],
+    "correctIndex": 0,
+    "explanation": "Os 5 Ps são partners, practices, protection, past (IST prévias e testes) e pregnancy plans. Eles reduzem o improviso: em vez de decidir na hora o que perguntar, o profissional segue um roteiro curto que cobre risco, proteção e intenção reprodutiva."
+  },
+  {
+    "question": "O que compõe a prevenção combinada das IST na adolescência?",
+    "options": [
+      "Preservativo, testagem, vacinação, PrEP ou PEP, tratamento e cuidado das parcerias",
+      "Antibiótico profilático mensal, abstinência programada e exames de imagem seriados",
+      "Rastreio universal com cultura, isolamento do parceiro e notificação à autoridade policial",
+      "Dieta, suplemento vitamínico, atividade física regular e higiene íntima orientada"
+    ],
+    "correctIndex": 0,
+    "explanation": "Prevenção combinada é somar medidas pequenas: preservativo com técnica ensinada, testagem para HIV e sífilis, vacinas de HPV e hepatite B, profilaxias pré e pós-exposição quando indicadas, tratamento e abordagem das parcerias. Fazer três itens por consulta já muda o desfecho."
+  },
+  {
+    "question": "Por que a testagem para IST não pode ficar condicionada à presença de sintomas?",
+    "options": [
+      "Muitas infecções são assintomáticas, e esperar a queixa atrasa diagnóstico e transmissão",
+      "Os sintomas quase sempre aparecem cedo, mas os testes só ficam positivos muito depois",
+      "A testagem sem sintoma tem custo proibitivo e por isso é reservada a grupos de risco",
+      "O exame só se justifica quando há mais de três parceiros declarados no último ano"
+    ],
+    "correctIndex": 0,
+    "explanation": "Boa parte das IST é silenciosa, sobretudo clamídia e gonorreia em adolescentes. Testar apenas quem se queixa deixa passar a maioria dos casos, mantém a cadeia de transmissão e permite que a infecção evolua para doença inflamatória pélvica antes de qualquer sintoma."
+  },
+  {
+    "question": "Segundo estimativas da Organização Mundial da Saúde para 2020, qual das IST curáveis teve o maior número de novas infecções?",
+    "options": [
+      "Tricomoníase, com aproximadamente 156 milhões de novos casos",
+      "Sífilis, com aproximadamente 190 milhões de novos casos",
+      "Gonorreia, com aproximadamente 230 milhões de novos casos",
+      "Clamídia, com aproximadamente 300 milhões de novos casos"
+    ],
+    "correctIndex": 0,
+    "explanation": "As estimativas de 2020 somam cerca de 374 milhões de novas infecções por quatro IST curáveis: 156 milhões de tricomoníase, 129 milhões de clamídia, 82 milhões de gonorreia e 7,1 milhões de sífilis. O volume alto e majoritariamente silencioso é o que sustenta a testagem de rotina."
+  },
+  {
+    "question": "Adolescente de 16 anos chega ao ambulatório com ardor ao urinar e corrimento, após relação sem preservativo. O que não pode faltar na conduta mínima?",
+    "options": [
+      "Teste de gravidez, testagem para IST, orientação de prevenção e retorno combinado",
+      "Repouso sexual por trinta dias, coleta de urocultura e reavaliação apenas se piorar",
+      "Ultrassonografia pélvica imediata, hemograma completo e encaminhamento ao especialista",
+      "Antibiótico de amplo espectro isolado, sem exames, com alta e orientação por escrito"
+    ],
+    "correctIndex": 0,
+    "explanation": "O checklist é mais de processo do que de antibiótico: explicar o sigilo, testar gravidez quando aplicável, rastrear IST conforme risco, avaliar dor pélvica e febre pensando em doença inflamatória pélvica, orientar preservativo e combinar retorno com abordagem das parcerias."
+  },
+  {
+    "question": "Quais são os erros mais comuns no atendimento de uma queixa de IST na adolescência?",
+    "options": [
+      "Pedir exames sem orientar prevenção, não testar gravidez e ignorar as parcerias",
+      "Explicar o sigilo antes da anamnese, testar sífilis e agendar retorno em uma semana",
+      "Perguntar sobre uso de preservativo, oferecer vacina e revisar o cartão vacinal",
+      "Examinar o paciente a sós, registrar a queixa em prontuário e tratar sindromicamente"
+    ],
+    "correctIndex": 0,
+    "explanation": "As falhas típicas são solicitar exames e mandar embora sem orientação nem retorno, deixar de pedir teste de gravidez por constrangimento em perguntar, não abordar parceiros — o que mantém a reinfecção — e passar por cima de sinais de coerção ou violência."
+  },
+  {
+    "question": "O que caracteriza a doença inflamatória pélvica?",
+    "options": [
+      "Infecção do trato genital superior, com clamídia e gonococo como agentes principais",
+      "Infecção restrita à vulva e à vagina, causada sobretudo por fungos e lactobacilos",
+      "Inflamação da bexiga por bactérias entéricas, com disúria e urgência miccional",
+      "Infecção do trato genital inferior por vírus, com úlceras dolorosas recorrentes"
+    ],
+    "correctIndex": 0,
+    "explanation": "A doença inflamatória pélvica é infecção do útero, das trompas e às vezes de ovários e peritônio, por agentes que ascendem do colo. Chlamydia trachomatis e Neisseria gonorrhoeae são os principais, mas o quadro costuma ser polimicrobiano, o que orienta a cobertura ampla."
+  },
+  {
+    "question": "Qual achado de exame físico mais reforça a suspeita de doença inflamatória pélvica?",
+    "options": [
+      "Dor à mobilização do colo uterino ao toque, somada a dor pélvica e corrimento",
+      "Dor localizada em fossa ilíaca direita com descompressão brusca dolorosa e febre",
+      "Massa anexial palpável e indolor, de crescimento lento, sem qualquer corrimento",
+      "Lesão ulcerada única em grande lábio, indolor, com adenopatia inguinal fibroelástica"
+    ],
+    "correctIndex": 0,
+    "explanation": "Dor à mobilização do colo é o sinal clássico, junto de dor pélvica baixa, corrimento anormal, dispareunia e sangramento irregular. A febre pode estar ausente, de modo que exigir temperatura elevada para considerar o diagnóstico faz perder casos e atrasa o tratamento."
+  },
+  {
+    "question": "Diante de quadro clínico compatível com doença inflamatória pélvica, qual é a conduta correta?",
+    "options": [
+      "Iniciar o tratamento precocemente, sem aguardar os exames, e rastrear outras IST",
+      "Aguardar cultura e antibiograma antes de qualquer antibiótico, para não induzir resistência",
+      "Prescrever analgésico e reavaliar em duas semanas, tratando somente se houver febre",
+      "Encaminhar ao ginecologista sem medicar, mantendo a paciente em observação domiciliar"
+    ],
+    "correctIndex": 0,
+    "explanation": "Com clínica compatível, o tratamento começa empiricamente, porque esperar exames aumenta o risco de sequela tubária. Ao mesmo tempo se testa HIV, sífilis, clamídia e gonococo conforme risco, orienta-se a parceria e se avalia a necessidade de internação."
+  },
+  {
+    "question": "Quais complicações tardias justificam tratar precocemente a doença inflamatória pélvica?",
+    "options": [
+      "Infertilidade por lesão tubária, gravidez ectópica e dor pélvica crônica",
+      "Insuficiência renal crônica, hipertensão secundária e litíase de repetição",
+      "Estenose uretral, incontinência urinária de esforço e bexiga neurogênica",
+      "Endometriose profunda, síndrome dos ovários policísticos e amenorreia"
+    ],
+    "correctIndex": 0,
+    "explanation": "A cicatrização das trompas após a infecção leva a infertilidade tubária, aumenta o risco de gravidez ectópica e deixa dor pélvica crônica. São sequelas definitivas em uma paciente com décadas de vida reprodutiva pela frente, o que torna o atraso terapêutico especialmente caro."
+  },
+  {
+    "question": "Quais sinais de gravidade indicam internação em adolescente com doença inflamatória pélvica?",
+    "options": [
+      "Dor intensa, febre alta, vômitos, gravidez ou abscesso tubo-ovariano",
+      "Corrimento amarelado, dispareunia leve e sangramento intermenstrual",
+      "Disúria isolada, dor lombar discreta e história de parceiro recente",
+      "Atraso menstrual de poucos dias, náusea matinal e mastalgia cíclica"
+    ],
+    "correctIndex": 0,
+    "explanation": "Dor intensa, febre alta, vômitos que impedem o tratamento por via oral, gestação concomitante e abscesso tubo-ovariano indicam internação para terapia parenteral e vigilância. Os demais quadros podem ser conduzidos em regime ambulatorial com retorno próximo."
+  },
+  {
+    "question": "No pronto atendimento, o raciocínio diante de uma queixa sexual muda em relação ao ambulatório. Quais são as três decisões rápidas?",
+    "options": [
+      "Há instabilidade ou sinal de alarme, há janela para profilaxia e é preciso acionar proteção",
+      "Há indicação de internação, há leito disponível na unidade e o responsável já foi avisado",
+      "Há queixa ginecológica, há necessidade de exame pélvico e há como agendar ultrassonografia",
+      "Há febre no momento do atendimento, há alteração laboratorial e há indicação de antibiótico"
+    ],
+    "correctIndex": 0,
+    "explanation": "No pronto atendimento o foco é risco imediato e janela de intervenção: procurar sinais de alarme, verificar se ainda cabe profilaxia para HIV, IST ou gravidez e decidir se o fluxo de proteção precisa ser acionado. Prevenção de longo prazo e seguimento ficam para o ambulatório."
+  },
+  {
+    "question": "Quem tem indicação de profilaxia pré-exposição para o HIV?",
+    "options": [
+      "Pessoas com risco continuado, como relações sem preservativo e parceria com HIV não suprimido",
+      "Pessoas com exposição única de risco ocorrida nas últimas setenta e duas horas de vida sexual",
+      "Pessoas já diagnosticadas com HIV que ainda não iniciaram o tratamento antirretroviral regular",
+      "Pessoas com qualquer atividade sexual, de forma universal, a partir da primeira relação sexual"
+    ],
+    "correctIndex": 0,
+    "explanation": "A profilaxia pré-exposição atende risco continuado: relações sem preservativo frequentes, parceria vivendo com HIV sem supressão viral documentada, múltiplas parcerias, IST recente e uso de drogas injetáveis com compartilhamento. Exposição pontual recente é caso de profilaxia pós-exposição."
+  },
+  {
+    "question": "Que cuidados precedem o início da profilaxia pré-exposição para o HIV?",
+    "options": [
+      "Testar HIV antes de iniciar, avaliar função renal e rastrear outras IST",
+      "Testar HIV apenas trinta dias depois, avaliar glicemia e rastrear anemia",
+      "Solicitar carga viral da parceria, avaliar função hepática e dosar vitamina D",
+      "Realizar ultrassonografia renal, avaliar densidade óssea e dosar testosterona"
+    ],
+    "correctIndex": 0,
+    "explanation": "Iniciar a profilaxia em alguém já infectado expõe a esquema incompleto e seleciona resistência, por isso a testagem prévia é obrigatória. Também se avalia função renal, pelo perfil do tenofovir, e se rastreiam outras IST, que sinalizam risco e precisam de tratamento próprio."
+  },
+  {
+    "question": "Por que a profilaxia pré-exposição não substitui o preservativo?",
+    "options": [
+      "Ela protege apenas contra o HIV e não previne as demais infecções sexualmente transmissíveis",
+      "Ela perde totalmente o efeito protetor sempre que houver mais de uma parceria sexual no mês",
+      "Ela só alcança proteção adequada após seis meses ininterruptos de uso diário da medicação",
+      "Ela protege contra bactérias sexualmente transmissíveis, mas não previne infecções virais"
+    ],
+    "correctIndex": 0,
+    "explanation": "O uso regular mantém níveis do fármaco capazes de bloquear a replicação do HIV, mas nada faz contra sífilis, gonorreia, clamídia ou HPV. Por isso preservativo e testagem periódica continuam parte do pacote de cuidado de quem está em profilaxia pré-exposição."
+  },
+  {
+    "question": "Qual é a janela de tempo e a duração da profilaxia pós-exposição para o HIV?",
+    "options": [
+      "Iniciar o quanto antes, idealmente em até 72 horas, mantendo o esquema por 28 dias",
+      "Iniciar em até 7 dias após a exposição, mantendo o esquema por 10 dias consecutivos",
+      "Iniciar somente após o resultado do teste da parceria, mantendo o esquema por 14 dias",
+      "Iniciar em até 2 horas após a exposição, em dose única, com reavaliação em 30 dias"
+    ],
+    "correctIndex": 0,
+    "explanation": "A profilaxia pós-exposição usa antirretrovirais depois de uma exposição de risco para reduzir a chance de infecção, e a eficácia cai quanto mais tarde se começa: o limite é 72 horas, quanto antes melhor. O esquema dura 28 dias e exige seguimento com testagem."
+  },
+  {
+    "question": "Quais situações indicam profilaxia pós-exposição para o HIV?",
+    "options": [
+      "Violência sexual, relação sem preservativo com status desconhecido e acidente ocupacional",
+      "Relação com preservativo íntegro, parceria com carga viral indetectável e exame de rotina",
+      "Diagnóstico recente de sífilis primária, corrimento uretral e dor pélvica de início súbito",
+      "Início da vida sexual, troca recente de parceria e pedido espontâneo do próprio paciente"
+    ],
+    "correctIndex": 0,
+    "explanation": "A indicação é exposição de risco pontual: violência sexual, relação sem preservativo com parceria HIV positiva sem supressão viral ou de status desconhecido e acidente com material biológico. Relação protegida ou parceria com carga viral indetectável não configuram indicação."
+  },
+  {
+    "question": "Qual é o esquema de vacinação contra o HPV oferecido na rotina para adolescentes no Brasil?",
+    "options": [
+      "Dose única da vacina quadrivalente dos 9 aos 14 anos, para meninas e meninos",
+      "Duas doses da vacina quadrivalente dos 9 aos 14 anos, somente para as meninas",
+      "Três doses da vacina quadrivalente a partir dos 15 anos, para meninas e meninos",
+      "Dose única da vacina quadrivalente a partir dos 18 anos, somente para as meninas"
+    ],
+    "correctIndex": 0,
+    "explanation": "O calendário nacional adota dose única da vacina quadrivalente para meninas e meninos de 9 a 14 anos, com melhor resposta imune quando aplicada antes do início da vida sexual. Imunossuprimidos, pessoas vivendo com HIV e vítimas de violência sexual seguem esquema de três doses."
+  },
+  {
+    "question": "Por que métodos contraceptivos de longa duração são considerados primeira linha na adolescência?",
+    "options": [
+      "Têm alta eficácia independente da adesão diária e podem ser usados por nulíparas",
+      "Têm eficácia semelhante à pílula, mas custam menos e dispensam qualquer avaliação",
+      "Protegem simultaneamente contra gravidez e contra infecções sexualmente transmissíveis",
+      "Só devem ser indicados após o primeiro parto, pelo risco de infertilidade em nulíparas"
+    ],
+    "correctIndex": 0,
+    "explanation": "Implante subdérmico, dispositivo intrauterino de cobre e sistema intrauterino com levonorgestrel não dependem do uso correto a cada dia ou a cada relação, o que explica as menores taxas de falha nessa faixa etária. Nuliparidade e idade não contraindicam o dispositivo intrauterino."
+  },
+  {
+    "question": "Qual é o esquema e o prazo da contracepção de emergência com levonorgestrel?",
+    "options": [
+      "1,5 mg em dose única, até 5 dias após a relação, com eficácia maior quanto mais precoce",
+      "1,5 mg por dia durante 5 dias seguidos, começando no quinto dia após a relação sexual",
+      "0,75 mg em dose única, exclusivamente nas primeiras 6 horas após a relação sexual",
+      "3 mg em dose única, a partir do quinto dia, repetindo a dose após 12 horas do início"
+    ],
+    "correctIndex": 0,
+    "explanation": "O levonorgestrel é usado em dose única de 1,5 mg e mantém alguma eficácia até 120 horas, mas o efeito é tempo-dependente e cai a cada dia de atraso — por isso a orientação é tomar o quanto antes. Ele age retardando ou inibindo a ovulação."
+  },
+  {
+    "question": "Uma adolescente pergunta se a contracepção de emergência interrompe uma gestação já existente. Qual resposta é correta?",
+    "options": [
+      "Não interrompe: ela age adiando ou inibindo a ovulação e não age sobre gravidez já instalada",
+      "Interrompe sim, porque impede a implantação do embrião já formado na cavidade uterina",
+      "Interrompe apenas quando usada depois do terceiro dia, quando já houve a fecundação",
+      "Não interrompe porque não tem efeito hormonal algum, funcionando como um placebo ativo"
+    ],
+    "correctIndex": 0,
+    "explanation": "O mecanismo principal é retardar ou bloquear a ovulação, de modo que, se a gestação já está estabelecida, o método não a interrompe nem lhe causa dano. Deixar isso claro evita que o medo de estar cometendo um aborto atrase o uso, justo quando cada hora conta."
+  },
+  {
+    "question": "Qual método de contracepção de emergência tem a maior eficácia quando usado em até 5 dias da relação?",
+    "options": [
+      "O dispositivo intrauterino de cobre, que ainda permanece como contracepção de longo prazo",
+      "O contraceptivo oral combinado em dose dobrada, mantido por sete dias após a exposição",
+      "O acetato de medroxiprogesterona injetável, aplicado o mais próximo possível da relação",
+      "O implante subdérmico de etonogestrel, inserido nas primeiras horas após a relação sexual"
+    ],
+    "correctIndex": 0,
+    "explanation": "A inserção do dispositivo intrauterino de cobre em até cinco dias é a contracepção de emergência mais eficaz, com taxa de falha bem inferior à do levonorgestrel, e tem a vantagem de já deixar a adolescente com um método de longa duração instalado."
+  },
+  {
+    "question": "O que significa a dupla proteção na orientação contraceptiva do adolescente?",
+    "options": [
+      "Associar o preservativo a um método contraceptivo eficaz, cobrindo IST e gravidez",
+      "Associar dois métodos hormonais diferentes, para compensar eventuais falhas de adesão",
+      "Associar o preservativo à contracepção de emergência de uso mensal programado",
+      "Associar a tabelinha ao coito interrompido, reservando o preservativo ao período fértil"
+    ],
+    "correctIndex": 0,
+    "explanation": "Nenhum método hormonal ou intrauterino protege contra infecções, e o preservativo isolado tem falha de uso típico alta para prevenir gravidez. Somar os dois cobre os dois desfechos, e é a orientação padrão para quem está iniciando a vida sexual."
+  },
+  {
+    "question": "Qual ressalva específica da adolescência limita o uso prolongado do injetável trimestral de medroxiprogesterona?",
+    "options": [
+      "A perda de massa óssea durante o período de aquisição do pico de densidade mineral",
+      "A elevação sustentada da pressão arterial, que costuma persistir após a suspensão",
+      "A redução comprovada da estatura final, por fechamento precoce das cartilagens",
+      "A perda auditiva neurossensorial progressiva, proporcional ao tempo total de uso"
+    ],
+    "correctIndex": 0,
+    "explanation": "A adolescência é o período de aquisição do pico de massa óssea, e o injetável trimestral reduz a densidade mineral enquanto é usado. A perda é em boa parte reversível após a suspensão, mas o método fica como alternativa quando outros de eficácia semelhante estão disponíveis."
+  },
+  {
+    "question": "Uma adolescente chega ao pronto atendimento e revela que um adulto a tocou, pedindo segredo. Qual é a resposta correta no primeiro minuto?",
+    "options": [
+      "Agradecer pela confiança, afirmar que acredita nela e explicar que não pode prometer segredo",
+      "Pedir que ela conte todos os detalhes agora, para que o relato fique registrado com precisão",
+      "Prometer que nada será dito a ninguém, para garantir que ela se sinta segura e continue falando",
+      "Chamar imediatamente o responsável para a sala, de modo que ela repita o relato diante dele"
+    ],
+    "correctIndex": 0,
+    "explanation": "As frases de acolhimento são agradecer por contar, dizer que acredita e que ela não tem culpa, e nomear o limite do sigilo: havendo risco, a rede de proteção será acionada e cada passo explicado. Prometer segredo absoluto é exatamente o que não se deve fazer."
+  },
+  {
+    "question": "Que condutas devem ser evitadas diante da revelação de violência sexual por um adolescente?",
+    "options": [
+      "Repetir entrevistas detalhadas, duvidar do relato e prometer sigilo absoluto",
+      "Registrar o relato com objetividade, acolher a fala e acionar a rede de proteção",
+      "Perguntar o dia e a hora da exposição, avaliar segurança e checar a janela de profilaxia",
+      "Atender a sós, oferecer testagem e explicar cada passo antes de acionar a proteção"
+    ],
+    "correctIndex": 0,
+    "explanation": "Entrevistas repetidas e detalhadas revitimizam, perguntas do tipo por que você não reagiu culpabilizam, e o sigilo absoluto é uma promessa impossível de cumprir. O objetivo do atendimento é segurança e cuidado, não investigação, que cabe a outros órgãos."
+  },
+  {
+    "question": "Adolescente chega ao pronto atendimento 24 horas após violência sexual. Quais são as prioridades desse momento?",
+    "options": [
+      "Acolhimento e segurança, profilaxias conforme protocolo e contracepção de emergência",
+      "Apenas registro objetivo do relato e agendamento de consulta ambulatorial em duas semanas",
+      "Coleta de material para exame de corpo de delito como condição para qualquer atendimento",
+      "Rastreamento de infecções sexualmente transmissíveis com sorologias repetidas em 3 meses"
+    ],
+    "correctIndex": 0,
+    "explanation": "Dentro de 72 horas ainda há janela para a profilaxia pós-exposição ao HIV, para as profilaxias de outras IST e para a contracepção de emergência, além da coleta de evidências quando aplicável. O atendimento em saúde não pode ser condicionado a boletim de ocorrência."
+  },
+  {
+    "question": "Adolescente relata violência sexual ocorrida há duas semanas. O que se prioriza nesse intervalo?",
+    "options": [
+      "Rastreamento de IST e gestação, cuidado em saúde mental e plano de segurança",
+      "Profilaxia pós-exposição ao HIV, ainda eficaz nesse intervalo, e contracepção de emergência",
+      "Apenas observação clínica, com reavaliação somente se surgirem sintomas genitais",
+      "Coleta imediata de evidências forenses, que permanecem válidas por até trinta dias"
+    ],
+    "correctIndex": 0,
+    "explanation": "Passados sete dias, a janela das profilaxias já se fechou e o eixo do cuidado passa a ser rastrear infecções e gravidez, cuidar da saúde mental, articular a rede e construir plano de segurança. Reconhecer a janela perdida evita prescrever profilaxia sem benefício."
+  },
+  {
+    "question": "Quais achados na consulta devem levantar suspeita de violência ou coerção sexual em um adolescente?",
+    "options": [
+      "Queixas vagas recorrentes, IST de repetição, queda escolar e parceria bem mais velha",
+      "Ganho de peso progressivo, acne inflamatória, cefaleia tensional e cansaço matinal",
+      "Menarca precoce, mamas assimétricas, estirão puberal tardio e hirsutismo discreto",
+      "Uso correto de preservativo, retorno espontâneo à consulta e pedido de testagem"
+    ],
+    "correctIndex": 0,
+    "explanation": "Dor abdominal e cefaleia recorrentes sem causa definida, lesões inexplicadas, infecções sexualmente transmissíveis repetidas, gestação, mudança abrupta de humor com queda no rendimento escolar e parceria muito mais velha ou com sinais de coerção são os alertas clássicos."
+  },
+  {
+    "question": "Confirmada a suspeita de violência sexual contra adolescente de 14 anos, o que o profissional de saúde é obrigado a fazer?",
+    "options": [
+      "Comunicar o Conselho Tutelar e notificar o caso à vigilância, além de prestar assistência",
+      "Aguardar que a família registre boletim de ocorrência antes de qualquer comunicação externa",
+      "Comunicar apenas se a adolescente autorizar expressamente, respeitando o sigilo da consulta",
+      "Encaminhar a um serviço de referência sem qualquer comunicação, para não expor a paciente"
+    ],
+    "correctIndex": 0,
+    "explanation": "Suspeita ou confirmação de violência contra criança e adolescente é de comunicação obrigatória ao Conselho Tutelar e de notificação compulsória imediata à vigilância epidemiológica, independentemente de boletim de ocorrência ou de autorização da família. É dever legal, não escolha."
+  },
+  {
+    "question": "Na primeira consulta de uma adolescente com gestação confirmada, quais eixos precisam ser cobertos?",
+    "options": [
+      "Confirmar e datar, avaliar vulnerabilidades, cuidado clínico essencial e planejar o depois",
+      "Confirmar e datar, prescrever sulfato ferroso e agendar retorno apenas no terceiro trimestre",
+      "Solicitar ultrassonografia seriada, avaliar cariótipo fetal e encaminhar ao pré-natal de risco",
+      "Comunicar os responsáveis, acionar o serviço social e adiar a conduta clínica ao pré-natal"
+    ],
+    "correctIndex": 0,
+    "explanation": "A primeira consulta confirma e data a gestação, rastreia vulnerabilidades como violência, apoio familiar, uso de substâncias e saúde mental, garante rastreio de IST, vacinação e nutrição, e já planeja pré-natal, contracepção pós-parto e vínculo com a atenção primária."
+  },
+  {
+    "question": "Adolescente grávida chega ao pronto atendimento com dor abdominal intensa e unilateral. Qual hipótese precisa ser afastada com prioridade?",
+    "options": [
+      "Gravidez ectópica, pelo risco de rotura e instabilidade hemodinâmica em curto prazo",
+      "Hiperêmese gravídica, pelo risco de desidratação e distúrbio hidroeletrolítico grave",
+      "Pré-eclâmpsia precoce, pelo risco de crise convulsiva e de descolamento placentário",
+      "Infecção urinária alta, pelo risco de trabalho de parto prematuro e de sepse materna"
+    ],
+    "correctIndex": 0,
+    "explanation": "Dor intensa e unilateral em gestante aponta para gravidez ectópica, que pode romper e evoluir com choque em pouco tempo. Instabilidade hemodinâmica, síncope e sangramento importante compõem o mesmo grupo de sinais que exigem avaliação obstétrica imediata."
+  },
+  {
+    "question": "Quais sinais em gestante adolescente no pronto atendimento configuram alerta neurológico e vascular?",
+    "options": [
+      "Cefaleia persistente, edema, visão turva e pressão arterial elevada na aferição",
+      "Náusea matinal, pirose após as refeições, sonolência diurna e lombalgia leve",
+      "Cólica discreta no baixo ventre, corrimento claro e aumento da frequência urinária",
+      "Mastalgia bilateral, escurecimento da aréola, tontura postural e apetite aumentado"
+    ],
+    "correctIndex": 0,
+    "explanation": "Cefaleia persistente, edema, alterações visuais e pressão elevada sugerem doença hipertensiva da gestação e exigem avaliação obstétrica rápida. No pronto atendimento o objetivo não é fazer pré-natal, e sim triar emergências e acionar proteção quando necessário."
+  },
+  {
+    "question": "Qual é a magnitude estimada da gestação na adolescência em países de baixa e média renda?",
+    "options": [
+      "Cerca de 21 milhões de gestações por ano entre adolescentes de 15 a 19 anos",
+      "Cerca de 2 milhões de gestações por ano entre adolescentes de 15 a 19 anos",
+      "Cerca de 90 milhões de gestações por ano entre adolescentes de 15 a 19 anos",
+      "Cerca de 200 milhões de gestações por ano entre adolescentes de 15 a 19 anos"
+    ],
+    "correctIndex": 0,
+    "explanation": "As estimativas para 2019 apontam cerca de 21 milhões de gestações e 12 milhões de nascimentos por ano em adolescentes de 15 a 19 anos nesses países. O número mostra desigualdade de acesso, educação e proteção, e não um problema de culpa individual."
+  },
+  {
+    "question": "Por que a contracepção pós-parto precisa ser definida ainda durante o pré-natal da adolescente?",
+    "options": [
+      "Porque a recorrência precoce da gestação é frequente e piora os desfechos de mãe e filho",
+      "Porque a amamentação exclusiva impede totalmente qualquer método hormonal no puerpério",
+      "Porque a ovulação só retorna após um ano, o que dá tempo de decidir com calma depois",
+      "Porque a escolha do método precisa de autorização judicial quando a mãe é menor de idade"
+    ],
+    "correctIndex": 0,
+    "explanation": "Uma segunda gestação em curto intervalo agrava evasão escolar, vulnerabilidade social e risco obstétrico. Combinar o método eficaz antes da alta, mantendo o vínculo com a atenção primária, é prevenção secundária e evita perder a adolescente no seguimento."
+  },
+  {
+    "question": "Adolescente de 15 anos com gestação confirmada relata namorado de 19 anos. Como abordar o tema da coerção?",
+    "options": [
+      "Perguntar de forma universal se alguém a pressionou ou obrigou, sem acusar ninguém",
+      "Evitar o assunto, já que a diferença de idade entre os dois é pequena e comum na idade",
+      "Informar imediatamente à família que houve crime, antes de conversar com a adolescente",
+      "Questionar diretamente se o namorado a forçou, na presença dele, para observar a reação"
+    ],
+    "correctIndex": 0,
+    "explanation": "Perguntar a todo mundo, com a mesma frase, tira o peso pessoal da pergunta e abre espaço para a resposta. Parceria bem mais velha é sinal de alerta para coerção e merece rastreio ativo, feito a sós e sem transformar a consulta em interrogatório."
+  },
+  {
+    "question": "Qual é a mensagem central da abordagem da saúde sexual na adolescência?",
+    "options": [
+      "Técnica, vínculo e segurança juntos: os esquemas mudam, o processo bem feito permanece",
+      "Prescrição correta acima de tudo: acertar o antibiótico resolve a maior parte dos casos",
+      "Encaminhamento precoce ao especialista: o generalista deve evitar conduzir esses temas",
+      "Envolvimento imediato da família: nenhuma decisão deve ser tomada sem os responsáveis"
+    ],
+    "correctIndex": 0,
+    "explanation": "Os esquemas terapêuticos mudam conforme a diretriz local e o ano, mas o processo se mantém: privacidade e história sexual estruturada, testagem e prevenção combinada, acolhimento e janela nas situações de violência, e cuidado clínico somado à rede na gestação."
+  }
+];
+
+var LETTERS = ['A','B','C','D','E','F'];
+var SHUFFLE = true, LOCK = true;
+
+var S = { view:'home', started:false, finished:false, i:0, order:[], answers:[], open:{}, filter:'all', warn:false, chat:{} };
+
+function esc(s){ return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
+function pad(n){ return String(n).padStart(2,'0'); }
+
+function build(){
+  var qs = QUIZ.map(function(q,id){ return { question:q.question, options:q.options.slice(), correctIndex:q.correctIndex, explanation:q.explanation, image:q.image, imageCaption:q.imageCaption, id:id }; });
+  if (!SHUFFLE) return qs;
+  for (var i=qs.length-1;i>0;i--){ var j=Math.floor(Math.random()*(i+1)); var t=qs[i]; qs[i]=qs[j]; qs[j]=t; }
+  return qs.map(function(q){
+    var correct = q.options[q.correctIndex], o = q.options.slice();
+    for (var i=o.length-1;i>0;i--){ var j=Math.floor(Math.random()*(i+1)); var t=o[i]; o[i]=o[j]; o[j]=t; }
+    q.options = o; q.correctIndex = o.indexOf(correct); return q;
+  });
+}
+
+/* ── ações ─────────────────────────────────────────────────────────────────── */
+var A = {
+  home:      function(){ S.view='home'; S.started=false; S.finished=false; up(0); },
+  resumo:    function(){ S.view='resumo'; up(0); },
+  start:     function(){ var o=build(); S.view='quiz'; S.started=true; S.finished=false; S.i=0; S.order=o;
+                         S.answers=new Array(o.length).fill(null); S.open={}; S.filter='all'; S.warn=false; up(0); },
+  restart:   function(){ A.start(); },
+  sair:      function(){ S.view='home'; S.started=false; up(0); },   // guarda as respostas
+  retomar:   function(){ S.view='quiz'; S.started=true; S.finished=false; S.warn=false; up(0); },
+  go:        function(n){ if(n<0||n>S.order.length-1) return; S.i=n; S.warn=false; render(); },
+  jump:      function(n){ if(S.finished){ S.finished=false; S.i=n; S.warn=false; } else { if(n<0||n>S.order.length-1) return; S.i=n; S.warn=false; } up(0,'smooth'); },
+  pick:      function(n){ if(LOCK && S.answers[S.i]!==null) return; S.answers[S.i]=n; render(); },
+  prev:      function(){ A.go(S.i-1); },
+  next:      function(){ if(S.i<S.order.length-1) A.go(S.i+1); else A.finish(); },
+  finish:    function(){ var b=S.answers.filter(function(a){return a===null}).length;
+                         if(b>0 && !S.warn){ S.warn=true; render(); return; } S.finished=true; S.warn=false; up(0); },
+  force:     function(){ S.finished=true; S.warn=false; up(0); },
+  gotoBlank: function(){ var n=S.answers.findIndex(function(a){return a===null}); if(n>=0) A.go(n); },
+  back:      function(){ S.finished=false; S.warn=false; up(0); },
+  filter:    function(k){ S.filter=k; render(); },
+  toggle:    function(n){ S.open[n]=!S.open[n]; render(); },
+  toggleAll: function(){ var r=reviewList(), all=r.length>0 && r.every(function(x){return S.open[x.idx]});
+                         S.open={}; if(!all) r.forEach(function(x){ S.open[x.idx]=true; }); render(); }
+};
+function up(top, beh){ render(); window.scrollTo({ top: top||0, behavior: beh||'auto' }); }
+
+/* Aberto por duplo clique (file://) volta para o indice local; servido pela web,
+   volta para o publicado. Os dois listam os mesmos materiais. */
+function idxHref(){
+  var local = (typeof location !== 'undefined' && location.protocol === 'file:');
+  return local ? '../index_local.html' : '../index.html';
+}
+function emAndamento(){
+  return S.order.length > 0 && !S.finished &&
+         S.answers.some(function(a){ return a !== null; });
+}
+
+/* ── header ────────────────────────────────────────────────────────────────── */
+function renderHeader(){
+  var mono = "font-family:'IBM Plex Mono',monospace";
+  var left =
+    '<div style="min-width:0">' +
+      '<div style="display:flex;align-items:center;gap:8px;'+mono+';font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:#8a8578">' +
+        '<a href="'+idxHref()+'" class="h-ink" style="color:#2b57cc;text-decoration:none;white-space:nowrap">\u2190 Materiais</a>' +
+        '<span style="color:#d3cec4">/</span>' +
+        '<span style="overflow:hidden;text-overflow:ellipsis;white-space:nowrap">'+esc(EYEBROW)+'</span>' +
+      '</div>' +
+      '<h1 style="margin:1px 0 0;font-family:\'Newsreader\',Georgia,serif;font-size:20px;font-weight:500;letter-spacing:-.01em;line-height:1.15">'+esc(TITLE)+'</h1>' +
+    '</div>';
+
+  var right = '';
+  if (S.view === 'quiz' && S.started) {
+    var hit = counts().hit;
+    right = '<div style="display:flex;align-items:center;gap:10px;flex-shrink:0">' +
+              '<button type="button" data-act="sair" class="h-line" style="background:none;border:1px solid #ddd8ce;border-radius:9px;padding:6px 11px;'+mono+';font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;color:#5b6478;cursor:pointer;transition:border-color .15s ease">Sair</button>' +
+              '<div style="display:flex;align-items:center;gap:6px">' +
+                '<span style="'+mono+';font-size:15px;font-weight:600;letter-spacing:-.02em">'+hit+'</span>' +
+                '<span style="'+mono+';font-size:11px;color:#8a8578">/ '+S.order.length+'</span>' +
+              '</div></div>';
+  } else if (S.view !== 'home') {
+    right = '<button type="button" data-act="home" class="h-line" style="flex-shrink:0;background:none;border:1px solid #ddd8ce;border-radius:9px;padding:7px 13px;'+mono+';font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:#5b6478;cursor:pointer;transition:border-color .15s ease">← Início</button>';
+  }
+
+  var html = '<div style="display:flex;align-items:baseline;justify-content:space-between;gap:12px;margin-bottom:'+(S.view==='quiz'&&S.started?'10px':'2px')+'">'+left+right+'</div>';
+
+  if (S.view === 'quiz' && S.started) {
+    var c = counts();
+    var rail = S.order.map(function(q,n){
+      var a = S.answers[n], cur = n===S.i && !S.finished, bg = '#d3cec4';
+      if (a!==null) bg = (a===q.correctIndex) ? '#2e7d55' : '#c04437';
+      if (cur && a===null) bg = '#121a2b';
+      var st = a===null ? 'em branco' : (a===q.correctIndex ? 'correta' : 'incorreta');
+      return '<button type="button" data-act="jump" data-n="'+n+'" title="Questão '+(n+1)+' — '+st+'" aria-label="Questão '+(n+1)+' — '+st+'" style="flex:1 1 0;min-width:0;background:none;border:0;padding:13px 0;margin:0;cursor:pointer;display:flex;align-items:center;justify-content:center">' +
+             '<span style="display:block;width:100%;border-radius:99px;transition:height .18s ease,background .18s ease,box-shadow .18s ease;height:'+(cur?'17px':'9px')+';background:'+bg+';box-shadow:'+(cur?'0 0 0 3px rgba(18,26,43,.13)':'none')+'"></span></button>';
+    }).join('');
+    html += '<div><div style="display:flex;align-items:center;gap:3px">'+rail+'</div>' +
+            '<div style="display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:-2px">' +
+              '<div style="'+mono+';font-size:11px;letter-spacing:.04em;color:#5b6478">Questão '+pad(S.i+1)+' / '+S.order.length+'</div>' +
+              '<div style="display:flex;align-items:center;gap:12px;'+mono+';font-size:10.5px;color:#8a8578">' +
+                dot('#2e7d55',c.hit)+dot('#c04437',c.miss)+dot('#d3cec4',c.blank) +
+              '</div></div></div>';
+  }
+  document.getElementById('hdr').innerHTML = html;
+}
+function dot(color,n){ return '<span style="display:flex;align-items:center;gap:5px"><span style="width:7px;height:7px;border-radius:99px;background:'+color+';display:block"></span>'+n+'</span>'; }
+
+function counts(){
+  var hit=0, miss=0, blank=0;
+  S.answers.forEach(function(a,n){
+    if (a===null) blank++;
+    else if (S.order[n] && a===S.order[n].correctIndex) hit++;
+    else miss++;
+  });
+  return { hit:hit, miss:miss, blank:blank, total:S.order.length };
+}
+
+/* ── tela inicial ──────────────────────────────────────────────────────────── */
+function renderHome(){
+  var mono = "font-family:'IBM Plex Mono',monospace";
+  var secoes = (document.getElementById('resumoSrc').textContent.match(/<h2/g)||[]).length;
+  var cell = function(v,l){
+    return '<div style="background:#faf9f6;padding:16px 14px">' +
+      '<div style="'+mono+';font-size:22px;font-weight:500;letter-spacing:-.03em">'+v+'</div>' +
+      '<div style="'+mono+';font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:#8a8578;margin-top:3px">'+l+'</div></div>';
+  };
+  var card = function(act,tag,titulo,desc,cta){
+    return '<button type="button" data-act="'+act+'" class="h-card" style="display:flex;flex-direction:column;align-items:flex-start;gap:0;text-align:left;background:#fff;border:1px solid #e4e0d8;border-radius:18px;padding:24px 22px;cursor:pointer;transition:border-color .16s ease,transform .14s ease;box-shadow:0 1px 2px rgba(18,26,43,.04),0 12px 28px -20px rgba(18,26,43,.18)">' +
+      '<div style="'+mono+';font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:#2b57cc;margin-bottom:12px">'+tag+'</div>' +
+      '<div style="font-family:\'Newsreader\',Georgia,serif;font-size:26px;font-weight:500;letter-spacing:-.02em;line-height:1.15;margin-bottom:8px">'+titulo+'</div>' +
+      '<div style="font-size:14px;line-height:1.6;color:#5b6478;margin-bottom:18px;text-wrap:pretty">'+desc+'</div>' +
+      '<div style="'+mono+';font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:#121a2b">'+cta+'</div></button>';
+  };
+
+  document.getElementById('stage').innerHTML =
+    '<section style="padding:56px 0 0;animation:qFade .3s ease">' +
+      '<div style="'+mono+';font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:#2b57cc;margin-bottom:16px">Material de revisão</div>' +
+      '<h2 style="font-family:\'Newsreader\',Georgia,serif;font-size:40px;line-height:1.08;font-weight:400;letter-spacing:-.025em;margin:0 0 18px;text-wrap:pretty">'+esc(SUBTITLE)+'</h2>' +
+      '<p style="font-size:15.5px;line-height:1.65;color:#5b6478;margin:0 0 30px;max-width:52ch;text-wrap:pretty">'+esc(INTRO)+'</p>' +
+      '<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(108px,1fr));gap:1px;background:#e4e0d8;border:1px solid #e4e0d8;border-radius:14px;overflow:hidden;margin-bottom:32px">' +
+        cell(QUIZ.length,'Questões') + cell(secoes,'Seções') + cell('~'+Math.round(QUIZ.length*0.75),'Minutos') +
+      '</div>' +
+      '<div class="home-grid" style="display:grid;grid-template-columns:1fr 1fr;gap:12px">' +
+        (emAndamento()
+          ? card('retomar','Em andamento','Quiz',
+                 'Você parou na questão '+pad(S.i+1)+' de '+S.order.length+', com '+
+                 (S.order.length-counts().blank)+' respondida'+((S.order.length-counts().blank)===1?'':'s')+
+                 '. Suas respostas continuam guardadas.','Retomar →')
+          : card('start','Praticar','Quiz', QUIZ.length+' questões de múltipla escolha, com explicação assim que você responde e gabarito comentado no fim.','Começar →')) +
+        card('resumo','Estudar','Resumo','O conteúdo da aula em texto corrido, organizado em '+secoes+' seções para leitura antes da prova.','Ler →') +
+      '</div>' +
+      '<div style="margin-top:26px;display:flex;flex-wrap:wrap;align-items:center;gap:8px 18px;'+mono+';font-size:11px;color:#8a8578">' +
+        '<span>← →&nbsp; navegar</span><span>1–'+maxOpts()+'&nbsp; responder</span><span>Enter&nbsp; avançar</span>' +
+        (emAndamento() ? '<button type="button" data-act="start" class="h-ink" style="background:none;border:0;padding:0;'+mono+';font-size:11px;color:#8a8578;cursor:pointer;text-decoration:underline;text-underline-offset:3px">recomeçar do zero</button>' : '') +
+        '</div>' +
+    '</section>';
+}
+function maxOpts(){ return QUIZ.reduce(function(m,q){ return Math.max(m,q.options.length); },0); }
+
+/* ── resumo ────────────────────────────────────────────────────────────────── */
+function renderResumo(){
+  document.getElementById('stage').innerHTML =
+    '<section style="padding:34px 0 0;animation:qFade .3s ease">' +
+      '<div style="font-family:\'IBM Plex Mono\',monospace;font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:#2b57cc;margin-bottom:14px">Resumo</div>' +
+      '<div class="rsm">' + document.getElementById('resumoSrc').textContent + '</div>' +
+      '<div style="display:flex;flex-wrap:wrap;gap:9px;margin-top:38px;padding-top:24px;border-top:1px solid #e4e0d8">' +
+        '<button type="button" data-act="start" class="h-darkflat" style="background:#121a2b;color:#f5f3ef;border:0;border-radius:11px;padding:13px 24px;font-size:14px;font-weight:500;cursor:pointer;transition:background .16s ease">Fazer o quiz →</button>' +
+        '<button type="button" data-act="home" class="h-line" style="background:none;border:1px solid #ddd8ce;border-radius:11px;padding:13px 22px;font-size:14px;cursor:pointer;transition:border-color .15s ease">Voltar ao início</button>' +
+      '</div></section>';
+}
+
+/* imagem da questao — data URI ja resolvida pelo montar_quiz.py */
+function figura(q, cls){
+  if (!q.image) return '';
+  return '<figure class="fig'+(cls?' '+cls:'')+'"><img src="'+q.image+'" alt="'+esc(q.imageCaption||'Imagem da questão')+'">' +
+         (q.imageCaption ? '<figcaption>'+esc(q.imageCaption)+'</figcaption>' : '') + '</figure>';
+}
+
+/* ── questão ───────────────────────────────────────────────────────────────── */
+function renderQuestion(){
+  var mono = "font-family:'IBM Plex Mono',monospace";
+  var q = S.order[S.i], ans = S.answers[S.i], reveal = ans !== null;
+
+  var status = 'Não respondida', sColor = '#8a8578';
+  if (reveal) { var ok = ans===q.correctIndex; status = ok?'Você acertou':'Você errou'; sColor = ok?'#2e7d55':'#c04437'; }
+
+  var opts = q.options.map(function(text,n){
+    var isC = n===q.correctIndex, isMine = n===ans;
+    var bd='#e4e0d8', bg='#fff', fg='#121a2b', bBg='#f2efe9', bFg='#8a8578', mark='', mColor='', op='1', hbd='#2b57cc';
+    if (reveal) {
+      op = (isC||isMine) ? '1' : '.62';
+      if (isC)               { bd='#8fc7a7'; bg='#eef7f1'; fg='#1f5c3e'; bBg='#2e7d55'; bFg='#fff'; mark='✓'; mColor='#2e7d55'; }
+      if (isMine && !isC)    { bd='#e0a49a'; bg='#fdf0ee'; fg='#8f2f25'; bBg='#c04437'; bFg='#fff'; mark='✕'; mColor='#c04437'; }
+    } else if (isMine)       { bd='#121a2b'; bg='#f7f6f2'; bBg='#121a2b'; bFg='#f5f3ef'; }
+    var locked = reveal && LOCK;
+    return '<button type="button" data-act="pick" data-n="'+n+'" class="h-opt'+(locked?' locked':'')+'" style="--hbd:'+hbd+';display:flex;gap:13px;align-items:flex-start;width:100%;text-align:left;padding:14px 15px;border-radius:13px;font-size:15px;line-height:1.5;transition:border-color .15s ease,background .15s ease,transform .12s ease;border:1.5px solid '+bd+';background:'+bg+';color:'+fg+';cursor:'+(locked?'default':'pointer')+';opacity:'+op+'">' +
+      '<span style="flex-shrink:0;width:24px;height:24px;border-radius:7px;display:flex;align-items:center;justify-content:center;'+mono+';font-size:11.5px;font-weight:600;margin-top:1px;background:'+bBg+';color:'+bFg+'">'+LETTERS[n]+'</span>' +
+      '<span style="flex:1;min-width:0;text-wrap:pretty">'+esc(text)+'</span>' +
+      (mark ? '<span style="flex-shrink:0;'+mono+';font-size:14px;font-weight:600;margin-top:1px;color:'+mColor+'">'+mark+'</span>' : '') +
+      '</button>';
+  }).join('');
+
+  var expl = reveal ? '<div style="margin-top:20px;padding:16px 18px;background:#f7f6f2;border-left:2.5px solid #2b57cc;border-radius:0 12px 12px 0;animation:qFade .26s ease">' +
+      '<div style="'+mono+';font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:#2b57cc;margin-bottom:8px">Por quê</div>' +
+      '<p style="margin:0;font-size:14.5px;line-height:1.68;color:#39404f;text-wrap:pretty">'+esc(q.explanation)+'</p></div>' : '';
+
+  var blank = counts().blank;
+  var warn = S.warn ? '<div style="margin-top:14px;padding:15px 17px;background:#fdf7e9;border:1px solid #e8d5a3;border-radius:14px;animation:qFade .22s ease">' +
+      '<p style="margin:0 0 12px;font-size:14px;line-height:1.55;color:#6b5620">'+blank+(blank===1?' questão ainda está em branco.':' questões ainda estão em branco.')+' Você pode voltar nelas ou finalizar assim mesmo.</p>' +
+      '<div style="display:flex;flex-wrap:wrap;gap:8px">' +
+        '<button type="button" data-act="gotoBlank" style="background:#121a2b;color:#f5f3ef;border:0;border-radius:9px;padding:9px 16px;font-size:13px;font-weight:500;cursor:pointer">Ir para a 1ª em branco</button>' +
+        '<button type="button" data-act="force" style="background:none;color:#6b5620;border:1px solid #e8d5a3;border-radius:9px;padding:9px 16px;font-size:13px;cursor:pointer">Finalizar assim mesmo</button>' +
+      '</div></div>' : '';
+
+  var last = S.i === S.order.length-1;
+  var early = !last && (S.order.length - blank) > 0;
+
+  document.getElementById('stage').innerHTML =
+    '<section style="padding:26px 0 0">' +
+      '<article style="background:#fff;border:1px solid #e4e0d8;border-radius:18px;padding:26px 22px 24px;box-shadow:0 1px 2px rgba(18,26,43,.04),0 12px 28px -18px rgba(18,26,43,.18)">' +
+        '<div style="display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:14px">' +
+          '<div style="'+mono+';font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:#2b57cc">Questão '+pad(S.i+1)+'</div>' +
+          '<div style="'+mono+';font-size:10.5px;letter-spacing:.06em;color:'+sColor+'">'+status+'</div>' +
+        '</div>' +
+        '<h2 style="font-family:\'Newsreader\',Georgia,serif;font-size:22px;line-height:1.42;font-weight:400;letter-spacing:-.012em;margin:0 0 22px;text-wrap:pretty">'+esc(q.question)+'</h2>' +
+        figura(q, 'qfig') +
+        '<div style="display:flex;flex-direction:column;gap:9px">'+opts+'</div>' + expl +
+        (reveal ? chatBox(q, ans===q.correctIndex) : '') +
+      '</article>' + warn +
+      '<div style="display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:18px">' +
+        '<button type="button" data-act="prev" class="h-line" style="background:none;border:1px solid #ddd8ce;border-radius:11px;padding:12px 18px;font-size:14px;cursor:pointer;transition:border-color .15s ease,color .15s ease;color:'+(S.i===0?'#c4bfb4':'#121a2b')+';pointer-events:'+(S.i===0?'none':'auto')+'">← Anterior</button>' +
+        '<div style="display:flex;align-items:center;gap:8px">' +
+          (early ? '<button type="button" data-act="finish" class="h-ink" style="background:none;border:0;padding:12px 6px;'+mono+';font-size:11.5px;letter-spacing:.06em;text-transform:uppercase;color:#8a8578;cursor:pointer;text-decoration:underline;text-underline-offset:3px">Finalizar</button>' : '') +
+          '<button type="button" data-act="next" class="h-darkflat" style="background:#121a2b;color:#f5f3ef;border:0;border-radius:11px;padding:12px 22px;font-size:14px;font-weight:500;cursor:pointer;transition:background .16s ease">'+(last?'Finalizar':'Próxima →')+'</button>' +
+        '</div></div></section>';
+}
+
+/* ── resultado + gabarito comentado ────────────────────────────────────────── */
+function reviewList(){
+  return S.order.map(function(q,n){
+    var a = S.answers[n], ok = a!==null && a===q.correctIndex;
+    return { idx:n, ok:ok, blank:a===null, q:q, a:a };
+  }).filter(function(r){
+    return S.filter==='all' || (S.filter==='wrong'&&!r.ok&&!r.blank) || (S.filter==='right'&&r.ok) || (S.filter==='blank'&&r.blank);
+  });
+}
+
+function renderResult(){
+  var mono = "font-family:'IBM Plex Mono',monospace";
+  var c = counts(), pct = c.total ? Math.round(c.hit/c.total*100) : 0;
+
+  var title='Precisa revisar', msg='Releia o material com atenção e refaça o quiz — as explicações abaixo cobrem cada erro.';
+  if (pct>=90)      { title='Domínio sólido';   msg='Desempenho excelente. Confira as explicações das que escaparam e siga em frente.'; }
+  else if (pct>=70) { title='Bom desempenho';   msg='Base consistente. Revise os pontos errados abaixo para fechar as lacunas.'; }
+  else if (pct>=50) { title='Meio do caminho';  msg='Você acertou o essencial, mas há lacunas. Comece pelo filtro de erradas.'; }
+
+  var stat = function(v,l,color){
+    return '<div style="background:#faf9f6;padding:14px 10px">' +
+      '<div style="'+mono+';font-size:19px;font-weight:500;color:'+color+'">'+v+'</div>' +
+      '<div style="'+mono+';font-size:9.5px;letter-spacing:.09em;text-transform:uppercase;color:#8a8578;margin-top:2px">'+l+'</div></div>';
+  };
+
+  var fdefs = [['all','Todas',c.total],['wrong','Erradas',c.miss],['right','Certas',c.hit],['blank','Em branco',c.blank]];
+  var filters = fdefs.map(function(f){
+    var on = S.filter===f[0];
+    return '<button type="button" data-act="filter" data-k="'+f[0]+'" class="h-line" style="border-radius:99px;padding:8px 14px;font-size:13px;cursor:pointer;transition:all .15s ease;border:1px solid '+(on?'#121a2b':'#ddd8ce')+';background:'+(on?'#121a2b':'transparent')+';color:'+(on?'#f5f3ef':'#5b6478')+'">'+f[1]+' '+f[2]+'</button>';
+  }).join('');
+
+  var list = reviewList();
+  var allOpen = list.length>0 && list.every(function(r){ return S.open[r.idx]; });
+
+  var cards = list.map(function(r){
+    var numBg='#f0ede7', numFg='#8a8578';
+    if (!r.blank) { if (r.ok) { numBg='#e3f0e8'; numFg='#1f5c3e'; } else { numBg='#fbe6e2'; numFg='#8f2f25'; } }
+    var open = !!S.open[r.idx];
+    var body = '';
+    if (open) {
+      var opts = r.q.options.map(function(text,n){
+        var isC = n===r.q.correctIndex, isMine = n===r.a;
+        var bd='#eeebe4', bg='#fbfaf8', fg='#5b6478', bBg='#f0ede7', bFg='#8a8578', tag='', tBg='', tFg='';
+        if (isC)            { bd='#bcdcc9'; bg='#eef7f1'; fg='#1f5c3e'; bBg='#2e7d55'; bFg='#fff'; tag='Correta'; tBg='#d9ede1'; tFg='#1f5c3e'; }
+        if (isMine && !isC) { bd='#eec4bd'; bg='#fdf0ee'; fg='#8f2f25'; bBg='#c04437'; bFg='#fff'; tag='Sua resposta'; tBg='#f7ddd8'; tFg='#8f2f25'; }
+        if (isMine && isC)  { tag='Sua resposta ✓'; }
+        return '<div style="display:flex;gap:11px;align-items:flex-start;padding:11px 13px;border-radius:11px;font-size:14px;line-height:1.5;border:1px solid '+bd+';background:'+bg+';color:'+fg+'">' +
+          '<span style="flex-shrink:0;width:21px;height:21px;border-radius:6px;display:flex;align-items:center;justify-content:center;'+mono+';font-size:10.5px;font-weight:600;background:'+bBg+';color:'+bFg+'">'+LETTERS[n]+'</span>' +
+          '<span style="flex:1;min-width:0;text-wrap:pretty">'+esc(text)+'</span>' +
+          (tag ? '<span style="flex-shrink:0;'+mono+';font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;padding:3px 7px;border-radius:6px;margin-top:1px;background:'+tBg+';color:'+tFg+'">'+tag+'</span>' : '') +
+          '</div>';
+      }).join('');
+      body = '<div style="padding:2px 15px 18px;animation:qDrawer .2s ease">' +
+        '<div style="height:1px;background:#eeebe4;margin:0 0 16px"></div>' +
+        '<p style="font-family:\'Newsreader\',Georgia,serif;font-size:18px;line-height:1.5;margin:0 0 16px;text-wrap:pretty">'+esc(r.q.question)+'</p>' +
+        figura(r.q) +
+        '<div style="display:flex;flex-direction:column;gap:7px">'+opts+'</div>' +
+        '<div style="margin-top:16px;padding:14px 16px;background:#f7f6f2;border-left:2.5px solid #2b57cc;border-radius:0 11px 11px 0">' +
+          '<div style="'+mono+';font-size:9.5px;letter-spacing:.16em;text-transform:uppercase;color:#2b57cc;margin-bottom:7px">Por quê</div>' +
+          '<p style="margin:0;font-size:14px;line-height:1.65;color:#39404f;text-wrap:pretty">'+esc(r.q.explanation)+'</p></div>' +
+        '<button type="button" data-act="jump" data-n="'+r.idx+'" style="margin-top:14px;background:none;border:0;padding:0;'+mono+';font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:#2b57cc;cursor:pointer;text-decoration:underline;text-underline-offset:3px">Abrir no quiz →</button></div>';
+    }
+    return '<div style="background:#fff;border:1px solid '+(open?'#c9c3b6':'#e4e0d8')+';border-radius:14px;overflow:hidden;transition:border-color .15s ease">' +
+      '<button type="button" data-act="toggle" data-n="'+r.idx+'" style="display:flex;align-items:center;gap:12px;width:100%;text-align:left;background:none;border:0;padding:14px 15px;cursor:pointer">' +
+        '<span style="flex-shrink:0;width:28px;height:28px;border-radius:8px;display:flex;align-items:center;justify-content:center;'+mono+';font-size:12px;font-weight:600;background:'+numBg+';color:'+numFg+'">'+pad(r.idx+1)+'</span>' +
+        '<span style="flex:1;min-width:0;font-size:14px;line-height:1.45;color:#39404f;overflow:hidden;text-overflow:ellipsis;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical">'+esc(r.q.question)+'</span>' +
+        '<span style="flex-shrink:0;'+mono+';font-size:16px;color:#8a8578;width:16px;text-align:center">'+(open?'−':'+')+'</span>' +
+      '</button>' + body + '</div>';
+  }).join('');
+
+  document.getElementById('stage').innerHTML =
+    '<section style="padding:34px 0 0;animation:qFade .3s ease">' +
+      '<div style="'+mono+';font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:#2b57cc;margin-bottom:14px">Resultado</div>' +
+      '<h2 style="font-family:\'Newsreader\',Georgia,serif;font-size:36px;line-height:1.12;font-weight:400;letter-spacing:-.025em;margin:0 0 8px">'+title+'</h2>' +
+      '<p style="font-size:15px;line-height:1.6;color:#5b6478;margin:0 0 24px;max-width:48ch;text-wrap:pretty">'+msg+'</p>' +
+      '<div style="height:8px;border-radius:99px;background:#e4e0d8;overflow:hidden;margin-bottom:10px">' +
+        '<div style="height:100%;border-radius:99px;background:#121a2b;transition:width .7s cubic-bezier(.22,1,.36,1);width:'+pct+'%"></div></div>' +
+      '<div style="display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:#e4e0d8;border:1px solid #e4e0d8;border-radius:14px;overflow:hidden;margin-bottom:34px">' +
+        stat(c.hit,'Certas','#2e7d55')+stat(c.miss,'Erradas','#c04437')+stat(c.blank,'Branco','#8a8578')+stat(pct+'%','Aproveit.','#2b57cc') +
+      '</div>' +
+      '<div style="display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-bottom:14px">' +
+        '<h3 style="font-family:\'Newsreader\',Georgia,serif;font-size:22px;font-weight:500;letter-spacing:-.015em;margin:0">Gabarito comentado</h3>' +
+        '<button type="button" data-act="toggleAll" class="h-ink" style="background:none;border:0;padding:6px 0;'+mono+';font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:#5b6478;cursor:pointer;text-decoration:underline;text-underline-offset:3px">'+(allOpen?'Recolher tudo':'Expandir tudo')+'</button>' +
+      '</div>' +
+      '<div style="display:flex;gap:7px;flex-wrap:wrap;margin-bottom:16px">'+filters+'</div>' +
+      '<div style="display:flex;flex-direction:column;gap:8px">'+cards+'</div>' +
+      (list.length===0 ? '<div style="padding:38px 16px;text-align:center;color:#8a8578;font-size:14px;border:1px dashed #ddd8ce;border-radius:14px">Nenhuma questão neste filtro.</div>' : '') +
+      '<div style="display:flex;flex-wrap:wrap;gap:9px;margin-top:28px;padding-top:24px;border-top:1px solid #e4e0d8">' +
+        '<button type="button" data-act="restart" class="h-darkflat" style="background:#121a2b;color:#f5f3ef;border:0;border-radius:11px;padding:13px 24px;font-size:14px;font-weight:500;cursor:pointer;transition:background .16s ease">Refazer o quiz</button>' +
+        '<button type="button" data-act="back" class="h-line" style="background:none;border:1px solid #ddd8ce;border-radius:11px;padding:13px 22px;font-size:14px;cursor:pointer;transition:border-color .15s ease">Voltar às questões</button>' +
+        '<button type="button" data-act="resumo" class="h-line" style="background:none;border:1px solid #ddd8ce;border-radius:11px;padding:13px 22px;font-size:14px;cursor:pointer;transition:border-color .15s ease">Ler o resumo</button>' +
+      '</div></section>';
+}
+
+/* ── render + eventos ──────────────────────────────────────────────────────── */
+
+/* ─── Tutor DeepSeek — só local, só quando a questão foi errada ──────────────
+   A chave vem de ../deepseek_key.js, que não existe na versão publicada: online
+   o arquivo dá 404, dsOn() vira false e o chat simplesmente não é renderizado.
+   O histórico fica em S.chat[idDaQuestao] e sobrevive ao re-render do stage. */
+var DS_MODEL = 'deepseek-v4-flash';
+var DS_URL   = 'https://api.deepseek.com/chat/completions';
+var NLJS     = String.fromCharCode(10);
+var DS_MONO  = "font-family:'IBM Plex Mono',monospace";
+var DS_SANS  = "font-family:'IBM Plex Sans',system-ui,sans-serif";
+
+function dsOn(){ return typeof window.DEEPSEEK_KEY === 'string' && window.DEEPSEEK_KEY.length > 10; }
+
+
+/* ─── markdown do chat ───────────────────────────────────────────────────────
+   O modelo responde em markdown (**negrito**, listas, `codigo`, tabelas). O texto
+   vem de fora, entao a ordem importa: ESCAPA TUDO primeiro com esc() e so depois
+   aplica formatacao — assim nenhuma tag vinda da resposta vira HTML de verdade.
+   Como esc() ja trocou > por &gt;, a citacao casa com &gt; e nao com >.
+   Trechos de codigo saem de cena por um marcador NUL, que nao pode existir
+   no texto escapado, e voltam no fim — assim ` ` protege o que esta dentro. */
+function mdIn(t){
+  var Z = String.fromCharCode(0), codes = [];
+  t = t.replace(/`([^`]+)`/g, function(_, c){
+    codes.push(c);
+    return Z + 'c' + (codes.length - 1) + Z;
+  });
+  t = t.replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>');
+  t = t.replace(/__([^_]+)__/g, '<strong>$1</strong>');
+  t = t.replace(/(^|[\s(])\*([^*\n]+)\*/g, '$1<em>$2</em>');
+  t = t.replace(/(^|[\s(])_([^_\n]+)_/g, '$1<em>$2</em>');
+  t = t.replace(/\[([^\]]+)\]\((https?:\/\/[^)\s]+)\)/g,
+    '<a href="$2" target="_blank" rel="noopener" style="color:#2b57cc">$1</a>');
+  return t.replace(new RegExp(Z + 'c([0-9]+)' + Z, 'g'), function(_, i){
+    return '<code style="' + DS_MONO + ';font-size:12px;background:#f2efe9;' +
+           'border-radius:4px;padding:1px 5px">' + codes[i] + '</code>';
+  });
+}
+
+function mdChat(txt){
+  var Z = String.fromCharCode(0);
+  var t = esc(String(txt == null ? '' : txt));
+  var blocos = [];
+  t = t.replace(/```[a-zA-Z]*\n?([\s\S]*?)```/g, function(_, c){
+    blocos.push(c.replace(/\n+$/, ''));
+    return Z + 'b' + (blocos.length - 1) + Z;
+  });
+
+  var linhas = t.split('\n'), out = [], lista = null, par = [];
+  function fechaLista(){ if (lista) { out.push('</' + lista + '>'); lista = null; } }
+  function fechaPar(){
+    if (par.length) { out.push('<p style="margin:0 0 9px">' + mdIn(par.join(' ')) + '</p>'); par = []; }
+  }
+  function fecha(){ fechaPar(); fechaLista(); }
+
+  for (var i = 0; i < linhas.length; i++){
+    var l = linhas[i], t2 = l.trim();
+    if (!t2) { fecha(); continue; }
+
+    var bl = t2.match(new RegExp('^' + Z + 'b([0-9]+)' + Z + '$'));
+    if (bl) {
+      fecha();
+      out.push('<pre style="margin:0 0 9px;padding:9px 11px;background:#f7f6f2;border-radius:9px;' +
+               'overflow-x:auto;' + DS_MONO + ';font-size:12px;line-height:1.5">' + blocos[bl[1]] + '</pre>');
+      continue;
+    }
+
+    // tabela: linha com | ... | seguida da separadora | --- | --- |
+    if (t2.charAt(0) === '|' && i + 1 < linhas.length && /^\|[\s:|-]+\|$/.test(linhas[i+1].trim())) {
+      fecha();
+      var celulas = function(linha){
+        return linha.trim().replace(/^\||\|$/g, '').split('|').map(function(c){ return mdIn(c.trim()); });
+      };
+      var cab = celulas(t2), corpo = [];
+      i += 2;
+      while (i < linhas.length && linhas[i].trim().charAt(0) === '|') { corpo.push(celulas(linhas[i].trim())); i++; }
+      i--;
+      var cel = 'padding:5px 9px;border-bottom:1px solid #eae6de;text-align:left;vertical-align:top';
+      out.push('<div style="overflow-x:auto;margin:0 0 9px">' +
+        '<table style="border-collapse:collapse;font-size:12.5px;width:100%">' +
+        '<thead><tr>' + cab.map(function(c){ return '<th style="' + cel + ';font-weight:600">' + c + '</th>'; }).join('') + '</tr></thead>' +
+        '<tbody>' + corpo.map(function(r){
+          return '<tr>' + r.map(function(c){ return '<td style="' + cel + '">' + c + '</td>'; }).join('') + '</tr>';
+        }).join('') + '</tbody></table></div>');
+      continue;
+    }
+
+    var h = t2.match(/^#{1,6}\s+(.*)$/);
+    if (h) {
+      fecha();
+      out.push('<div style="font-weight:600;color:#121a2b;margin:11px 0 5px">' + mdIn(h[1]) + '</div>');
+      continue;
+    }
+
+    if (/^(---+|\*\*\*+)$/.test(t2)) {
+      fecha();
+      out.push('<hr style="border:0;border-top:1px solid #eae6de;margin:11px 0">');
+      continue;
+    }
+
+    var cit = t2.match(/^&gt;\s?(.*)$/);
+    if (cit) {
+      fecha();
+      out.push('<div style="margin:0 0 9px;padding:7px 11px;border-left:2.5px solid #c9d6f7;' +
+               'background:#f7f9fe;border-radius:0 7px 7px 0">' + mdIn(cit[1]) + '</div>');
+      continue;
+    }
+
+    var mUl = t2.match(/^[-*•]\s+(.*)$/);
+    var mOl = t2.match(/^\d+[.)]\s+(.*)$/);
+    if (mUl || mOl) {
+      var tipo = mUl ? 'ul' : 'ol';
+      fechaPar();
+      if (lista !== tipo) {
+        fechaLista();
+        out.push('<' + tipo + ' style="margin:0 0 9px;padding-left:19px">');
+        lista = tipo;
+      }
+      out.push('<li style="margin:3px 0">' + mdIn((mUl || mOl)[1]) + '</li>');
+      continue;
+    }
+
+    fechaLista();
+    par.push(t2);
+  }
+  fecha();
+  return out.join('');
+}
+
+function msgHTML(m){
+  if (m.role === 'user')
+    return '<div style="margin:0 0 10px;text-align:right">' +
+      '<span style="display:inline-block;max-width:88%;text-align:left;background:#f2efe9;' +
+      'border-radius:12px 12px 3px 12px;padding:9px 12px;font-size:13.5px;line-height:1.6;' +
+      'color:#39404f;text-wrap:pretty">' + esc(m.content) + '</span></div>';
+  return '<div style="margin:0 0 12px">' +
+    '<div style="' + DS_MONO + ';font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;' +
+    'color:#2b57cc;margin-bottom:4px">DeepSeek</div>' +
+    '<div style="font-size:13.5px;line-height:1.65;color:#39404f;text-wrap:pretty">' +
+    mdChat(m.content) + '</div></div>';
+}
+
+function chatBox(q, acertou){
+  if (!dsOn()) return '';
+  var chamada = acertou ? 'Quer ir mais fundo?' : 'Ainda com dúvida?';
+  var dica = acertou ? 'Por que as outras estão erradas?' : 'Por que a que eu marquei está errada?';
+  var hist = (S.chat[q.id] || []).map(msgHTML).join('');
+  return '<div id="ds" data-qid="' + q.id + '" style="margin-top:14px;border:1px solid #e4e0d8;' +
+      'border-radius:14px;background:#fff;overflow:hidden;animation:qFade .26s ease">' +
+      '<div style="display:flex;align-items:center;gap:8px;padding:11px 15px;' +
+        'border-bottom:1px solid #f0ede6;background:#faf9f6">' +
+        '<span style="' + DS_MONO + ';font-size:10px;letter-spacing:.16em;text-transform:uppercase;' +
+        'color:#2b57cc">' + chamada + '</span>' +
+        '<span style="font-size:12px;color:#8a8578">pergunte ao DeepSeek</span></div>' +
+      '<div id="dsLog" style="max-height:280px;overflow-y:auto;padding:' + (hist ? '12px 15px' : '0') + '">' +
+        hist + '</div>' +
+      '<div style="display:flex;gap:8px;padding:11px 12px;border-top:1px solid #f0ede6">' +
+        '<input id="dsIn" type="text" autocomplete="off" ' +
+          'placeholder="' + dica + '" ' +
+          'style="flex:1;min-width:0;border:1px solid #e4e0d8;border-radius:10px;padding:10px 12px;' +
+          'font-size:13.5px;' + DS_SANS + ';color:#121a2b;background:#fff;outline:none">' +
+        '<button type="button" data-act="dsSend" class="h-darkflat" style="flex-shrink:0;' +
+          'background:#121a2b;color:#f5f3ef;border:0;border-radius:10px;padding:10px 16px;' +
+          'font-size:13px;font-weight:500;cursor:pointer;transition:background .16s ease">Enviar</button>' +
+      '</div></div>';
+}
+
+function dsContexto(q, ans){
+  var alts = q.options.map(function(o, n){ return LETTERS[n] + ') ' + o; }).join(NLJS);
+  return 'Questao: ' + q.question + NLJS + alts + NLJS +
+    'Resposta correta: ' + LETTERS[q.correctIndex] + ') ' + q.options[q.correctIndex] + NLJS +
+    'O estudante marcou: ' + (ans === null ? 'nada' : LETTERS[ans] + ') ' + q.options[ans]) + NLJS +
+    'Explicacao que ele ja tem: ' + q.explanation;
+}
+
+A.dsSend = function(){
+  var box = document.getElementById('ds');
+  if (!box || !dsOn() || box.getAttribute('data-busy')) return;
+  var input = document.getElementById('dsIn'), log = document.getElementById('dsLog');
+  var texto = (input.value || '').trim();
+  if (!texto) return;
+
+  var qid = parseInt(box.getAttribute('data-qid'), 10), q = null, ans = null;
+  for (var i = 0; i < S.order.length; i++)
+    if (S.order[i].id === qid) { q = S.order[i]; ans = S.answers[i]; }
+  if (!q) return;
+
+  S.chat[qid] = S.chat[qid] || [];
+  S.chat[qid].push({ role:'user', content:texto });
+  input.value = '';
+  log.style.padding = '12px 15px';
+  log.insertAdjacentHTML('beforeend', msgHTML({ role:'user', content:texto }));
+  log.insertAdjacentHTML('beforeend',
+    '<div><div style="' + DS_MONO + ';font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;' +
+    'color:#2b57cc;margin-bottom:4px">DeepSeek</div>' +
+    '<div id="dsTxt" style="font-size:13.5px;line-height:1.65;color:#8a8578;' +
+    'text-wrap:pretty">pensando…</div></div>');
+  log.scrollTop = log.scrollHeight;
+  box.setAttribute('data-busy', '1');
+
+  var acertou = (ans === q.correctIndex);
+  var situacao = acertou
+    ? 'Voce e um tutor de medicina. O estudante do 7o semestre ACERTOU esta questao, mas ficou com uma duvida. '
+    : 'Voce e um tutor de medicina. O estudante do 7o semestre ERROU esta questao. ';
+  var msgs = [
+    { role:'system', content: situacao +
+      'Responda em portugues do Brasil, direto ao ponto, no maximo 150 palavras. ' +
+      'Traga o dado concreto (valor, criterio, mecanismo) em vez de generalidade. ' +
+      'Nao repita a explicacao que ele ja tem; foque na duvida que ele trouxe.' },
+    { role:'user', content: dsContexto(q, ans) }
+  ];
+  var h = S.chat[qid];
+  for (var j = 0; j < h.length; j++) msgs.push({ role:h[j].role, content:h[j].content });
+
+  dsStream(msgs, function(txt, fim, erro){
+    var el = document.getElementById('dsTxt');
+    if (!el) { box.removeAttribute('data-busy'); return; }
+    if (erro) { el.style.color = '#c04437'; el.textContent = erro; box.removeAttribute('data-busy'); return; }
+    el.style.color = '#39404f';
+    el.innerHTML = mdChat(txt);
+    var lg = document.getElementById('dsLog'); if (lg) lg.scrollTop = lg.scrollHeight;
+    if (fim) { el.removeAttribute('id'); S.chat[qid].push({ role:'assistant', content:txt }); box.removeAttribute('data-busy'); }
+  });
+};
+
+function dsStream(messages, cb){
+  var acc = '';
+  fetch(DS_URL, {
+    method: 'POST',
+    headers: { 'Content-Type':'application/json', 'Authorization':'Bearer ' + window.DEEPSEEK_KEY },
+    body: JSON.stringify({ model:DS_MODEL, messages:messages, stream:true, max_tokens:1200, temperature:0.3 })
+  }).then(function(r){
+    if (!r.ok) return r.text().then(function(t){
+      throw new Error(
+        r.status === 401 ? 'Chave recusada (401). Confira o deepseek_key.js.' :
+        r.status === 402 ? 'Sem saldo na conta DeepSeek (402).' :
+        r.status === 429 ? 'Limite de uso atingido (429). Tente daqui a pouco.' :
+        'Erro ' + r.status + ': ' + String(t).slice(0, 120));
+    });
+    var reader = r.body.getReader(), dec = new TextDecoder(), buf = '';
+    (function pump(){
+      return reader.read().then(function(res){
+        if (res.done) { cb(acc || '(resposta vazia)', true); return; }
+        buf += dec.decode(res.value, { stream:true });
+        var linhas = buf.split(NLJS);
+        buf = linhas.pop();
+        for (var i = 0; i < linhas.length; i++){
+          var l = linhas[i].trim();
+          if (l.indexOf('data:') !== 0) continue;
+          var carga = l.slice(5).trim();
+          if (carga === '[DONE]') continue;
+          try {
+            var d = JSON.parse(carga).choices[0].delta;
+            if (d && d.content) { acc += d.content; cb(acc, false); }
+          } catch (_){}
+        }
+        return pump();
+      });
+    })();
+  }).catch(function(e){
+    cb('', true, 'Nao consegui falar com o DeepSeek: ' + (e && e.message ? e.message : e));
+  });
+}
+
+function render(){
+  renderHeader();
+  if (S.view === 'home')        renderHome();
+  else if (S.view === 'resumo') renderResumo();
+  else if (S.finished)          renderResult();
+  else                          renderQuestion();
+}
+
+/* lightbox: clique em qualquer figura amplia */
+document.addEventListener('click', function(e){
+  var lb = document.getElementById('lb');
+  if (e.target.closest('#lb')) { lb.className = ''; return; }
+  var img = e.target.closest('.fig img');
+  if (img) { lb.firstElementChild.src = img.src; lb.className = 'on'; }
+});
+window.addEventListener('keydown', function(e){
+  if (e.key === 'Escape') document.getElementById('lb').className = '';
+});
+
+document.addEventListener('click', function(e){
+  var b = e.target.closest('[data-act]'); if (!b) return;
+  var act = b.getAttribute('data-act'), n = parseInt(b.getAttribute('data-n'),10), k = b.getAttribute('data-k');
+  if (act==='pick'||act==='jump'||act==='toggle') A[act](n);
+  else if (act==='filter') A.filter(k);
+  else if (A[act]) A[act]();
+});
+
+window.addEventListener('keydown', function(e){
+  if (S.view!=='quiz' || !S.started || S.finished) return;
+  var t = e.target, tag = t && t.tagName;
+  if (tag==='INPUT' || tag==='TEXTAREA' || (t && t.isContentEditable)) return;
+  if (e.metaKey||e.ctrlKey||e.altKey) return;
+  if (e.key==='ArrowRight')     { e.preventDefault(); A.go(S.i+1); }
+  else if (e.key==='ArrowLeft') { e.preventDefault(); A.go(S.i-1); }
+  else if (e.key==='Enter')     { e.preventDefault(); A.next(); }
+  else if (/^[1-6]$/.test(e.key)) {
+    var n = parseInt(e.key,10)-1;
+    if (n < S.order[S.i].options.length) A.pick(n);
+  }
+});
+
+render();
+</script>
+</body>
+</html>

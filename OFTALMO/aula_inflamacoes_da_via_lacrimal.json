@@ -1,0 +1,328 @@
+{
+  "titulo": "Inflamações da Via Lacrimal",
+  "eyebrow": "Oftalmologia · Via Lacrimal",
+  "subtitulo": "Dacrioadenite, dacriocistite, canaliculite e as obstruções da drenagem",
+  "intro": "Anatomia e bomba lacrimal, glândula lacrimal e alacrimia, os três quadros inflamatórios da via lacrimal e as obstruções congênita e adquirida, com a conduta de cada uma.",
+  "questoes": [
+    {
+      "question": "Após banhar a superfície ocular, a lágrima é drenada para a cavidade nasal seguindo qual sequência anatômica?",
+      "options": [
+        "Ponto lacrimal → canalículo → saco lacrimal → ducto nasolacrimal",
+        "Ponto lacrimal → saco lacrimal → canalículo → ducto nasolacrimal",
+        "Canalículo → ponto lacrimal → ducto nasolacrimal → saco lacrimal",
+        "Saco lacrimal → canalículo → ponto lacrimal → ducto nasolacrimal"
+      ],
+      "correctIndex": 0,
+      "explanation": "A lágrima entra pelos pontos lacrimais superior e inferior, percorre os canalículos superior e inferior, que confluem no canalículo comum, alcança o saco lacrimal e desce pelo ducto nasolacrimal até desembocar no nariz, sob o corneto inferior. Qualquer bloqueio nesse trajeto produz epífora, e é a estase no saco lacrimal que abre caminho para a dacriocistite.",
+      "image": "s02i1",
+      "imageCaption": "Trajeto de drenagem da via lacrimal"
+    },
+    {
+      "question": "Qual mecanismo impulsiona ativamente a lágrima dos pontos lacrimais em direção ao saco lacrimal?",
+      "options": [
+        "O piscar, que comprime os canalículos e aspira a lágrima para o saco",
+        "A gravidade, que escoa a lágrima da fenda até o ducto nasolacrimal",
+        "A secreção contínua da glândula, que empurra a lágrima para o saco",
+        "A contração do músculo elevador, que tensiona a pálpebra superior"
+      ],
+      "correctIndex": 0,
+      "explanation": "A drenagem lacrimal não é passiva: a cada piscada a porção pré-tarsal do orbicular comprime os canalículos e desloca a lágrima, enquanto a porção pré-saccal traciona a parede do saco lacrimal e gera pressão negativa que o preenche. É a chamada bomba lacrimal, e sua falência causa epífora mesmo com a via anatomicamente pérvia."
+    },
+    {
+      "question": "Ao everter a pálpebra superior, qual estrutura da glândula lacrimal pode ser inspecionada diretamente?",
+      "options": [
+        "A porção palpebral, o menor dos dois lobos da glândula",
+        "A porção orbital, o maior dos dois lobos da glândula",
+        "O saco lacrimal, alojado na fossa do osso lacrimal",
+        "As glândulas acessórias do fórnice conjuntival inferior"
+      ],
+      "correctIndex": 0,
+      "explanation": "A glândula lacrimal tem dois lobos: o orbital, maior, alojado na fossa lacrimal do osso frontal, e o palpebral, menor, que se projeta sob a conjuntiva do fórnice superior. Só o lobo palpebral fica visível quando se everte a pálpebra superior, no seu terço lateral — manobra que permite flagrar aumento glandular na dacrioadenite.",
+      "image": "s05i1",
+      "imageCaption": "Porções orbital e palpebral da glândula lacrimal"
+    },
+    {
+      "question": "A glândula lacrimal principal recebe sua inervação por meio de qual nervo?",
+      "options": [
+        "O nervo lacrimal",
+        "O nervo frontal",
+        "O nervo nasociliar",
+        "O nervo troclear"
+      ],
+      "correctIndex": 0,
+      "explanation": "A glândula lacrimal é inervada pelo nervo lacrimal, que carrega até ela as fibras secretomotoras parassimpáticas além da sensibilidade da região. Lesões ao longo dessa via, e não da glândula em si, explicam quadros de olho seco neurogênico com glândula estruturalmente normal."
+    },
+    {
+      "question": "A ressecção de um neuroma do acústico pode cursar com alacrimia ipsilateral por qual motivo?",
+      "options": [
+        "A abordagem do ângulo pontocerebelar compromete a inervação da glândula",
+        "A abordagem do ângulo pontocerebelar obstrui o ducto nasolacrimal",
+        "A abordagem do ângulo pontocerebelar destrói os pontos lacrimais",
+        "A abordagem do ângulo pontocerebelar inflama o saco lacrimal"
+      ],
+      "correctIndex": 0,
+      "explanation": "O neuroma do acústico e a cirurgia do ângulo pontocerebelar interrompem a via secretomotora que chega à glândula lacrimal, produzindo alacrimia do lado operado. O paciente não tem lágrima para drenar — o problema é de secreção, não de escoamento, e por isso não há epífora nem risco de dacriocistite."
+    },
+    {
+      "question": "Criança com dor, edema e hiperemia no terço lateral da pálpebra superior, que assume contorno em S. Qual o diagnóstico mais provável?",
+      "options": [
+        "Dacrioadenite aguda",
+        "Dacriocistite aguda",
+        "Canaliculite crônica",
+        "Celulite pré-septal"
+      ],
+      "correctIndex": 0,
+      "explanation": "A dacrioadenite é a inflamação da glândula lacrimal, entidade rara, e se manifesta com dor, edema e hiperemia concentrados no terço lateral da pálpebra superior, exatamente onde a glândula se aloja. O contorno palpebral em S itálico é o sinal que fecha o raciocínio topográfico.",
+      "image": "s07i1",
+      "imageCaption": "Edema do terço lateral da pálpebra superior"
+    },
+    {
+      "question": "O contorno palpebral em S observado na dacrioadenite decorre de qual mecanismo?",
+      "options": [
+        "Aumento da glândula lacrimal, que deprime a pálpebra na porção lateral",
+        "Aumento do saco lacrimal, que deprime a pálpebra na porção medial",
+        "Retração do músculo de Müller, que eleva a pálpebra na porção medial",
+        "Fibrose do tendão cantal lateral, que eleva a pálpebra na porção lateral"
+      ],
+      "correctIndex": 0,
+      "explanation": "A glândula inflamada e aumentada empurra para baixo a metade lateral da pálpebra superior, enquanto a metade medial mantém a altura normal. O resultado é uma ptose assimétrica cuja margem desenha um S itálico, achado quase exclusivo do acometimento da glândula lacrimal."
+    },
+    {
+      "question": "Quais agentes estão classicamente associados à dacrioadenite de instalação aguda?",
+      "options": [
+        "Caxumba, vírus Epstein-Barr, sarampo e gonorreia",
+        "Linfoma, leucemia, tuberculose e infiltração linfocítica",
+        "Actinomyces israelii, Candida albicans e Aspergillus",
+        "Haemophilus influenzae, Streptococcus e Candida"
+      ],
+      "correctIndex": 0,
+      "explanation": "A dacrioadenite aguda costuma ser complicação de infecções sistêmicas: caxumba, vírus Epstein-Barr, sarampo, gripe e gonorreia. Por isso a anamnese de quadro infeccioso recente vale tanto quanto o exame ocular, e o tratamento é antibiótico sistêmico quando a etiologia é bacteriana."
+    },
+    {
+      "question": "Dacrioadenite de curso arrastado, pouco dolorosa, deve levantar suspeita de qual grupo de causas?",
+      "options": [
+        "Infiltração linfocítica benigna, linfoma, leucemia e tuberculose",
+        "Caxumba, sarampo, vírus Epstein-Barr e quadro gripal",
+        "Obstrução do ducto nasolacrimal com refluxo de secreção",
+        "Dacriólitos por Actinomyces com estenose do canalículo"
+      ],
+      "correctIndex": 0,
+      "explanation": "A dacrioadenite crônica é complicação de processos infiltrativos e granulomatosos: infiltração linfocítica benigna, linfoma, leucemia e tuberculose. O curso arrastado e a pobreza de sinais inflamatórios agudos obrigam a investigar doença sistêmica, e não apenas tratar como infecção."
+    },
+    {
+      "question": "Qual é o tratamento da dacrioadenite aguda de origem bacteriana?",
+      "options": [
+        "Antibiótico sistêmico",
+        "Antibiótico tópico apenas",
+        "Sondagem da via lacrimal",
+        "Dacriocistorrinostomia"
+      ],
+      "correctIndex": 0,
+      "explanation": "O tratamento é antibiótico sistêmico, porque a glândula lacrimal fica em posição profunda, sob a conjuntiva do fórnice superior e dentro da órbita, onde o colírio não alcança concentração terapêutica. Sondagem e dacriocistorrinostomia tratam obstrução da via de drenagem, situação anatomicamente distinta."
+    },
+    {
+      "question": "A dacriocistite é consequência direta de qual alteração da via lacrimal?",
+      "options": [
+        "Obstrução do ducto nasolacrimal, com estase no saco lacrimal",
+        "Obstrução do canalículo, com estase no ponto lacrimal",
+        "Hipossecreção da glândula lacrimal, com filme instável",
+        "Falha da bomba lacrimal, com refluxo para a glândula"
+      ],
+      "correctIndex": 0,
+      "explanation": "A dacriocistite é sempre secundária à obstrução do ducto nasolacrimal: a lágrima represada no saco vira meio de cultura e o saco infecta. Essa dependência explica dois fatos — o quadro é tipicamente unilateral, e tratar só o episódio infeccioso sem desobstruir a via garante recidiva."
+    },
+    {
+      "question": "Criança com edema doloroso e hiperemia no canto medial, logo abaixo do tendão cantal medial. Qual o quadro?",
+      "options": [
+        "Dacriocistite aguda",
+        "Dacrioadenite aguda",
+        "Canaliculite aguda",
+        "Celulite orbitária"
+      ],
+      "correctIndex": 0,
+      "explanation": "O saco lacrimal ocupa a fossa lacrimal no canto medial, abaixo do tendão cantal medial — é exatamente aí que o abaulamento doloroso da dacriocistite aguda aparece. A ausência de proptose, dor à movimentação e limitação da motilidade afasta celulite orbitária, que é a complicação temida desse quadro na criança.",
+      "image": "s08i1",
+      "imageCaption": "Edema e hiperemia do canto medial"
+    },
+    {
+      "question": "O que distingue, ao exame físico, o edema da dacrioadenite do edema da dacriocistite?",
+      "options": [
+        "A dacrioadenite acomete o terço lateral superior; a dacriocistite, o canto medial",
+        "A dacrioadenite acomete o canto medial; a dacriocistite, o terço lateral superior",
+        "A dacrioadenite acomete o canto lateral inferior; a dacriocistite, o terço medial",
+        "A dacrioadenite acomete toda a pálpebra superior; a dacriocistite, a inferior"
+      ],
+      "correctIndex": 0,
+      "explanation": "A topografia do edema resolve o diagnóstico: a glândula lacrimal fica superolateral, então a dacrioadenite inflama o terço lateral da pálpebra superior e desenha o S itálico; o saco lacrimal fica inferomedial, então a dacriocistite abaula o canto medial, abaixo do tendão cantal medial. São dois pontos opostos da órbita anterior."
+    },
+    {
+      "question": "Qual agente está mais associado à dacriocistite aguda da criança, com risco de celulite orbitária?",
+      "options": [
+        "Haemophilus influenzae",
+        "Staphylococcus aureus",
+        "Streptococcus pneumoniae",
+        "Actinomyces israelii"
+      ],
+      "correctIndex": 0,
+      "explanation": "Na criança o agente mais temido da dacriocistite aguda é o Haemophilus influenzae, cuja virulência explica o risco de progressão para celulite orbitária. Por isso a dacriocistite aguda do lactente é urgência: exige antibioticoterapia sistêmica imediata e vigilância de proptose e restrição da motilidade."
+    },
+    {
+      "question": "No adulto, quais agentes predominam na dacriocistite aguda e na crônica, respectivamente?",
+      "options": [
+        "Staphylococcus aureus na aguda; Streptococcus pneumoniae na crônica",
+        "Streptococcus pneumoniae na aguda; Staphylococcus aureus na crônica",
+        "Haemophilus influenzae na aguda; Actinomyces israelii na crônica",
+        "Actinomyces israelii na aguda; Candida albicans na crônica"
+      ],
+      "correctIndex": 0,
+      "explanation": "No adulto, a dacriocistite aguda é em geral por Staphylococcus aureus, e a crônica por Streptococcus pneumoniae ou por Candida. A inversão desses agentes é o distrator clássico: o estafilococo pertence ao quadro agudo e ruidoso, o pneumococo e a candida ao quadro arrastado com secreção persistente."
+    },
+    {
+      "question": "Qual conjunto de achados caracteriza a dacriocistite crônica, e não a aguda?",
+      "options": [
+        "Abaulamento indolor, lacrimejamento e saída de pus à compressão",
+        "Abaulamento doloroso, hiperemia intensa e edema do canto medial",
+        "Dor à movimentação ocular, proptose e limitação da adução",
+        "Prurido, secreção mucoide bilateral e hiperemia conjuntival"
+      ],
+      "correctIndex": 0,
+      "explanation": "A forma crônica se apresenta como abaulamento indolor do canto medial, com lacrimejamento constante e saída de pus pelo ponto lacrimal quando se comprime o saco. A forma aguda, ao contrário, é dolorosa, hiperemiada e com edema evidente — a dor é o divisor entre as duas."
+    },
+    {
+      "question": "Qual é a conduta na dacriocistite do adulto com obstrução já estabelecida da via lacrimal?",
+      "options": [
+        "Antibiótico e, depois, cirurgia da via lacrimal",
+        "Antibiótico tópico isolado, sem cirurgia",
+        "Massagem hidrostática e observação clínica",
+        "Corticoide sistêmico e compressa morna"
+      ],
+      "correctIndex": 0,
+      "explanation": "O antibiótico resolve o episódio infeccioso, mas a obstrução do ducto nasolacrimal permanece e realimenta o ciclo de estase e infecção. Por isso o tratamento definitivo é cirúrgico, com reconstrução da drenagem, feito depois de controlada a fase aguda."
+    },
+    {
+      "question": "Paciente com lacrimejamento, secreção e concreções esbranquiçadas que extravasam do ponto lacrimal inferior edemaciado. Qual o diagnóstico?",
+      "options": [
+        "Canaliculite crônica",
+        "Dacriocistite crônica",
+        "Dacrioadenite crônica",
+        "Conjuntivite crônica"
+      ],
+      "correctIndex": 0,
+      "explanation": "As concreções esbranquiçadas que saem à compressão do ponto lacrimal são dacriólitos, achado característico da canaliculite. O quadro é uma infecção crônica e unilateral do canalículo, com lacrimejamento e secreção persistentes, e a presença dos dacriólitos é o que a separa da dacriocistite.",
+      "image": "s10i1",
+      "imageCaption": "Ponto lacrimal inferior edemaciado, com secreção"
+    },
+    {
+      "question": "Qual agente é classicamente responsável pela canaliculite com formação de dacriólitos?",
+      "options": [
+        "Actinomyces israelii",
+        "Haemophilus influenzae",
+        "Staphylococcus aureus",
+        "Moraxella lacunata"
+      ],
+      "correctIndex": 0,
+      "explanation": "O Actinomyces israelii é o agente clássico da canaliculite, e seus filamentos agregados formam os dacriólitos que ocupam a luz do canalículo. Candida albicans e Aspergillus também causam o quadro, o que reforça o caráter crônico e indolente dessa infecção."
+    },
+    {
+      "question": "Qual é o tratamento da canaliculite?",
+      "options": [
+        "Remoção dos dacriólitos e antibiótico tópico",
+        "Antibiótico sistêmico e observação do canalículo",
+        "Sondagem da via lacrimal e massagem do saco",
+        "Dacriocistorrinostomia com tubo de silicone"
+      ],
+      "correctIndex": 0,
+      "explanation": "O tratamento tem dois tempos indissociáveis: retirar mecanicamente os dacriólitos, que funcionam como reservatório do agente, e cobrir com antibiótico tópico. Prescrever antibiótico sem esvaziar o canalículo mantém a infecção e leva à recidiva."
+    },
+    {
+      "question": "Qual é a consequência esperada de uma canaliculite não tratada?",
+      "options": [
+        "Estenose do canalículo lacrimal",
+        "Atrofia da glândula lacrimal",
+        "Perfuração do saco lacrimal",
+        "Ectrópio da pálpebra inferior"
+      ],
+      "correctIndex": 0,
+      "explanation": "A inflamação crônica mantida no canalículo cicatriza e o estenosa, convertendo um quadro infeccioso tratável em obstrução alta definitiva da via lacrimal. Uma vez instalada a estenose canalicular, a correção deixa de ser clínica e passa a exigir cirurgia com desvio da drenagem."
+    },
+    {
+      "question": "Na obstrução congênita da via lacrimal, em que ponto está a falha de canalização?",
+      "options": [
+        "Na válvula de Hasner, no fim do ducto nasolacrimal",
+        "Na válvula de Rosenmüller, na entrada do saco",
+        "No ponto lacrimal inferior, na margem da pálpebra",
+        "No canalículo comum, antes do saco lacrimal"
+      ],
+      "correctIndex": 0,
+      "explanation": "A obstrução congênita ocorre na válvula de Hasner, extremidade distal do ducto nasolacrimal, onde a membrana que separa a via do meato nasal inferior não se abriu ao nascimento. Por ser uma membrana, e não uma malformação óssea, boa parte dos casos se resolve espontaneamente.",
+      "image": "s11i1",
+      "imageCaption": "Trajeto da via lacrimal até a válvula de Hasner"
+    },
+    {
+      "question": "Qual é o quadro clínico típico da obstrução congênita da via lacrimal?",
+      "options": [
+        "Epífora, secreção e crostas nos cílios, em geral unilateral",
+        "Hiperemia intensa, dor e fotofobia, em geral bilateral",
+        "Olho seco, ardor e piscar frequente, em geral bilateral",
+        "Proptose, restrição do olhar e dor, em geral unilateral"
+      ],
+      "correctIndex": 0,
+      "explanation": "O lactente apresenta epífora persistente desde as primeiras semanas, com secreção e crostas aderidas aos cílios, sobretudo ao acordar, e olho branco e calmo. A ausência de hiperemia conjuntival importante e de fotofobia é o que afasta conjuntivite e glaucoma congênito."
+    },
+    {
+      "question": "Qual é a conduta inicial no lactente com obstrução congênita da via lacrimal?",
+      "options": [
+        "Massagem hidrostática de Crigler sobre o saco lacrimal",
+        "Sondagem da via lacrimal sob anestesia geral imediata",
+        "Dacriocistorrinostomia via endonasal no primeiro mês",
+        "Antibiótico sistêmico contínuo até a resolução total"
+      ],
+      "correctIndex": 0,
+      "explanation": "A conduta inicial é conservadora: a massagem hidrostática de Crigler comprime o saco lacrimal e gera uma coluna de pressão que tende a romper a membrana da válvula de Hasner. A sondagem da via lacrimal fica reservada para os casos que não resolvem com a massagem, já que a resolução espontânea é frequente."
+    },
+    {
+      "question": "Qual conjunto de queixas sugere obstrução adquirida da via lacrimal no adulto?",
+      "options": [
+        "Epífora, refluxo de secreção pelo ponto e dacriocistite de repetição",
+        "Epífora, fotofobia intensa e episódios de dacrioadenite de repetição",
+        "Olho seco, ardor ao piscar e episódios de conjuntivite de repetição",
+        "Dor ocular, diplopia e episódios de celulite orbitária de repetição"
+      ],
+      "correctIndex": 0,
+      "explanation": "A tríade é epífora, refluxo de secreção pelo ponto lacrimal à compressão do saco e episódios repetidos de dacriocistite. A recorrência é o dado que denuncia a obstrução de base: enquanto a via não for reconstruída cirurgicamente, o ciclo de estase e infecção se repete."
+    },
+    {
+      "question": "Qual exame define o nível da obstrução da via lacrimal, separando obstrução alta de baixa?",
+      "options": [
+        "Dacriocistografia",
+        "Teste de Schirmer",
+        "Ecografia ocular",
+        "Biomicroscopia"
+      ],
+      "correctIndex": 0,
+      "explanation": "A dacriocistografia injeta contraste pelo ponto lacrimal e mostra radiologicamente até onde ele progride: se para antes do saco, a obstrução é alta, canalicular; se o saco enche e o contraste não desce ao nariz, é baixa. Essa distinção não é acadêmica — ela define qual das duas cirurgias será feita."
+    },
+    {
+      "question": "Qual cirurgia está indicada na obstrução baixa da via lacrimal, com canalículos pérvios?",
+      "options": [
+        "Dacriocistorrinostomia, anastomose do saco lacrimal com o nariz",
+        "Conjuntivodacriocistorrinostomia, com tubo de Jones de vidro",
+        "Sondagem da via lacrimal seguida de massagem do saco",
+        "Ressecção da glândula lacrimal palpebral por via anterior"
+      ],
+      "correctIndex": 0,
+      "explanation": "Na obstrução baixa os canalículos e o saco lacrimal estão íntegros, e o bloqueio está no ducto nasolacrimal: basta criar uma comunicação direta entre o saco e a cavidade nasal, a dacriocistorrinostomia, feita por via cutânea ou endonasal. Reaproveitar o saco é o que diferencia essa cirurgia da usada na obstrução alta."
+    },
+    {
+      "question": "Qual procedimento está indicado quando a obstrução é alta, ao nível dos canalículos?",
+      "options": [
+        "Conjuntivodacriocistorrinostomia com tubo de Jones",
+        "Dacriocistorrinostomia convencional por via cutânea",
+        "Sondagem da via lacrimal com massagem de Crigler",
+        "Drenagem externa do saco lacrimal com antibiótico"
+      ],
+      "correctIndex": 0,
+      "explanation": "Com os canalículos obstruídos não há como aproveitar o segmento inicial da via, então a drenagem é refeita a partir do saco conjuntival: implanta-se um tubo de Jones que leva a lágrima direto do canto medial ao nariz. A dacriocistorrinostomia isolada falharia, porque a lágrima sequer chegaria ao saco lacrimal."
+    }
+  ]
+}

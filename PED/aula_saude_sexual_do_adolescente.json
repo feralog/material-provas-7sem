@@ -1,0 +1,492 @@
+{
+  "titulo": "Saúde Sexual do Adolescente",
+  "eyebrow": "Pediatria · Adolescência",
+  "subtitulo": "Confidencialidade, IST, contracepção, violência sexual e gestação",
+  "intro": "Como conduzir a consulta de saúde sexual do adolescente: o direito ao atendimento a sós e os limites do sigilo, a anamnese sexual estruturada, prevenção combinada e manejo das IST, PrEP e PEP, contracepção incluindo a de emergência, a conduta na violência sexual e a primeira consulta da gestação na adolescência.",
+  "questoes": [
+    {
+      "question": "Quais são os três pilares que estruturam a consulta do adolescente?",
+      "options": [
+        "Vínculo sem julgamento, privacidade na consulta e avaliação de segurança",
+        "Exame físico completo, consentimento dos pais e registro detalhado",
+        "Triagem laboratorial ampla, orientação dietética e retorno precoce",
+        "Anamnese restrita à queixa, encaminhamento rápido e alta no mesmo dia"
+      ],
+      "correctIndex": 0,
+      "explanation": "A consulta se apoia em vínculo (acolher sem julgar), privacidade (garantir um tempo a sós) e segurança (rastrear risco e violência). Sem esses três, temas como vida sexual, uso de drogas e humor não chegam a ser ditos, e o atendimento fica restrito à queixa de entrada."
+    },
+    {
+      "question": "Como se explica corretamente a confidencialidade ao adolescente no início da consulta?",
+      "options": [
+        "O que você contar fica entre nós, exceto se houver risco de alguém se machucar",
+        "Tudo o que você contar ficará em segredo absoluto, sem nenhuma exceção prevista",
+        "Só converso em particular depois que seu responsável autorizar isso por escrito",
+        "Preciso repassar aos seus pais tudo o que for dito, porque você é menor de idade"
+      ],
+      "correctIndex": 0,
+      "explanation": "O sigilo é oferecido de forma explícita e com os limites nomeados logo no começo, não depois que a revelação acontece. Prometer segredo absoluto é um erro: se surgir risco de vida ou violência será preciso acionar proteção, e a promessa rompida destrói o vínculo."
+    },
+    {
+      "question": "Em quais situações o sigilo do adolescente deve ser quebrado?",
+      "options": [
+        "Risco grave imediato, suspeita de violência e ideação suicida ou autoagressão",
+        "Uso irregular de preservativo, múltiplos parceiros e histórico de IST tratada",
+        "Início da vida sexual antes dos 16 anos e pedido de contracepção hormonal",
+        "Diagnóstico de IST curável, gravidez planejada e recusa do exame ginecológico"
+      ],
+      "correctIndex": 0,
+      "explanation": "As exceções ao sigilo são situações de segurança: risco grave imediato, suspeita de violência ou abuso e ideação suicida ou autoagressão. Vida sexual ativa, pedido de contracepção e IST não são motivo de quebra — informar a família por esses motivos é violar o sigilo, não protegê-lo."
+    },
+    {
+      "question": "Adolescente de 15 anos vem sozinha pedir um método contraceptivo e pede que os pais não saibam. Qual é a conduta?",
+      "options": [
+        "Avaliar e prescrever o método, mantendo o sigilo e estimulando o diálogo familiar",
+        "Condicionar a prescrição à presença de um responsável legal na próxima consulta",
+        "Comunicar os pais antes de prescrever, já que a paciente ainda é menor de idade",
+        "Adiar a conduta e encaminhar ao serviço social para autorização do responsável"
+      ],
+      "correctIndex": 0,
+      "explanation": "O adolescente com discernimento sobre o próprio autocuidado tem direito de receber informação sobre sexualidade e saúde reprodutiva e de escolher método contraceptivo, sem depender de autorização dos pais. Estimular o diálogo familiar é desejável, mas não pode virar condição para atender."
+    },
+    {
+      "question": "Qual é o limite da autonomia do adolescente quando a conduta indicada passa a ser a internação hospitalar?",
+      "options": [
+        "A internação exige autorização do responsável, o que não impede conduta de emergência",
+        "A internação pode ser decidida só pelo adolescente, qualquer que seja a gravidade do caso",
+        "A internação exige autorização judicial sempre que o adolescente chegar desacompanhado",
+        "A internação só ocorre depois que o responsável assinar, mesmo com risco iminente de morte"
+      ],
+      "correctIndex": 0,
+      "explanation": "Consulta e procedimentos não invasivos, como a coleta de exames laboratoriais, podem ser feitos com o adolescente desacompanhado. A internação, de impacto maior, requer autorização do responsável legal — mas nenhuma exigência burocrática pode atrasar uma conduta de emergência."
+    },
+    {
+      "question": "Adolescente desacompanhado pode realizar testes rápidos de gravidez, HIV e sífilis no serviço de saúde?",
+      "options": [
+        "Sim, com direito a acolhimento e aconselhamento antes e depois do resultado",
+        "Não, a coleta depende da assinatura do responsável em termo específico",
+        "Sim, mas o resultado precisa ser entregue diretamente ao responsável legal",
+        "Não, esses testes só podem ser feitos a partir dos 18 anos completos"
+      ],
+      "correctIndex": 0,
+      "explanation": "O acesso a testes rápidos de gravidez, HIV e sífilis é um direito do adolescente, com acolhimento e aconselhamento pré e pós-teste. Exigir responsável ou entregar o resultado a terceiros afasta justamente quem mais precisa testar e adia o diagnóstico."
+    },
+    {
+      "question": "O acrônimo HEADSSS organiza a entrevista integral do adolescente. Que domínios ele cobre?",
+      "options": [
+        "Casa, escola, atividades, drogas, sexualidade, humor e segurança",
+        "Coração, pulmão, abdome, pele, neurológico, ossos e visão geral",
+        "Cefaleia, edema, dispneia, dor, sangramento, febre e vômitos",
+        "Alergias, cirurgias, medicações, vacinas, hábitos e antecedentes"
+      ],
+      "correctIndex": 0,
+      "explanation": "HEADSSS cobre home, education/employment, activities, drugs, sexuality, suicide/depression e safety. A função é impedir que a consulta se reduza a corrimento ou gravidez e deixe de fora humor, uso de substâncias e violência, que costumam ser o que mais pesa no prognóstico."
+    },
+    {
+      "question": "Os \"5 Ps\" estruturam a história sexual. Que perguntas eles representam?",
+      "options": [
+        "Parceiros, práticas, proteção, passado de IST e planos de gravidez",
+        "Peso, pressão, puberdade, pele e padrão de sono do adolescente",
+        "Pais, pares, prova escolar, projetos e perspectiva de trabalho",
+        "Pré-natal, parto, puerpério, prematuridade e peso ao nascimento"
+      ],
+      "correctIndex": 0,
+      "explanation": "Os 5 Ps são partners, practices, protection, past (IST prévias e testes) e pregnancy plans. Eles reduzem o improviso: em vez de decidir na hora o que perguntar, o profissional segue um roteiro curto que cobre risco, proteção e intenção reprodutiva."
+    },
+    {
+      "question": "O que compõe a prevenção combinada das IST na adolescência?",
+      "options": [
+        "Preservativo, testagem, vacinação, PrEP ou PEP, tratamento e cuidado das parcerias",
+        "Antibiótico profilático mensal, abstinência programada e exames de imagem seriados",
+        "Rastreio universal com cultura, isolamento do parceiro e notificação à autoridade policial",
+        "Dieta, suplemento vitamínico, atividade física regular e higiene íntima orientada"
+      ],
+      "correctIndex": 0,
+      "explanation": "Prevenção combinada é somar medidas pequenas: preservativo com técnica ensinada, testagem para HIV e sífilis, vacinas de HPV e hepatite B, profilaxias pré e pós-exposição quando indicadas, tratamento e abordagem das parcerias. Fazer três itens por consulta já muda o desfecho."
+    },
+    {
+      "question": "Por que a testagem para IST não pode ficar condicionada à presença de sintomas?",
+      "options": [
+        "Muitas infecções são assintomáticas, e esperar a queixa atrasa diagnóstico e transmissão",
+        "Os sintomas quase sempre aparecem cedo, mas os testes só ficam positivos muito depois",
+        "A testagem sem sintoma tem custo proibitivo e por isso é reservada a grupos de risco",
+        "O exame só se justifica quando há mais de três parceiros declarados no último ano"
+      ],
+      "correctIndex": 0,
+      "explanation": "Boa parte das IST é silenciosa, sobretudo clamídia e gonorreia em adolescentes. Testar apenas quem se queixa deixa passar a maioria dos casos, mantém a cadeia de transmissão e permite que a infecção evolua para doença inflamatória pélvica antes de qualquer sintoma."
+    },
+    {
+      "question": "Segundo estimativas da Organização Mundial da Saúde para 2020, qual das IST curáveis teve o maior número de novas infecções?",
+      "options": [
+        "Tricomoníase, com aproximadamente 156 milhões de novos casos",
+        "Sífilis, com aproximadamente 190 milhões de novos casos",
+        "Gonorreia, com aproximadamente 230 milhões de novos casos",
+        "Clamídia, com aproximadamente 300 milhões de novos casos"
+      ],
+      "correctIndex": 0,
+      "explanation": "As estimativas de 2020 somam cerca de 374 milhões de novas infecções por quatro IST curáveis: 156 milhões de tricomoníase, 129 milhões de clamídia, 82 milhões de gonorreia e 7,1 milhões de sífilis. O volume alto e majoritariamente silencioso é o que sustenta a testagem de rotina."
+    },
+    {
+      "question": "Adolescente de 16 anos chega ao ambulatório com ardor ao urinar e corrimento, após relação sem preservativo. O que não pode faltar na conduta mínima?",
+      "options": [
+        "Teste de gravidez, testagem para IST, orientação de prevenção e retorno combinado",
+        "Repouso sexual por trinta dias, coleta de urocultura e reavaliação apenas se piorar",
+        "Ultrassonografia pélvica imediata, hemograma completo e encaminhamento ao especialista",
+        "Antibiótico de amplo espectro isolado, sem exames, com alta e orientação por escrito"
+      ],
+      "correctIndex": 0,
+      "explanation": "O checklist é mais de processo do que de antibiótico: explicar o sigilo, testar gravidez quando aplicável, rastrear IST conforme risco, avaliar dor pélvica e febre pensando em doença inflamatória pélvica, orientar preservativo e combinar retorno com abordagem das parcerias."
+    },
+    {
+      "question": "Quais são os erros mais comuns no atendimento de uma queixa de IST na adolescência?",
+      "options": [
+        "Pedir exames sem orientar prevenção, não testar gravidez e ignorar as parcerias",
+        "Explicar o sigilo antes da anamnese, testar sífilis e agendar retorno em uma semana",
+        "Perguntar sobre uso de preservativo, oferecer vacina e revisar o cartão vacinal",
+        "Examinar o paciente a sós, registrar a queixa em prontuário e tratar sindromicamente"
+      ],
+      "correctIndex": 0,
+      "explanation": "As falhas típicas são solicitar exames e mandar embora sem orientação nem retorno, deixar de pedir teste de gravidez por constrangimento em perguntar, não abordar parceiros — o que mantém a reinfecção — e passar por cima de sinais de coerção ou violência."
+    },
+    {
+      "question": "O que caracteriza a doença inflamatória pélvica?",
+      "options": [
+        "Infecção do trato genital superior, com clamídia e gonococo como agentes principais",
+        "Infecção restrita à vulva e à vagina, causada sobretudo por fungos e lactobacilos",
+        "Inflamação da bexiga por bactérias entéricas, com disúria e urgência miccional",
+        "Infecção do trato genital inferior por vírus, com úlceras dolorosas recorrentes"
+      ],
+      "correctIndex": 0,
+      "explanation": "A doença inflamatória pélvica é infecção do útero, das trompas e às vezes de ovários e peritônio, por agentes que ascendem do colo. Chlamydia trachomatis e Neisseria gonorrhoeae são os principais, mas o quadro costuma ser polimicrobiano, o que orienta a cobertura ampla."
+    },
+    {
+      "question": "Qual achado de exame físico mais reforça a suspeita de doença inflamatória pélvica?",
+      "options": [
+        "Dor à mobilização do colo uterino ao toque, somada a dor pélvica e corrimento",
+        "Dor localizada em fossa ilíaca direita com descompressão brusca dolorosa e febre",
+        "Massa anexial palpável e indolor, de crescimento lento, sem qualquer corrimento",
+        "Lesão ulcerada única em grande lábio, indolor, com adenopatia inguinal fibroelástica"
+      ],
+      "correctIndex": 0,
+      "explanation": "Dor à mobilização do colo é o sinal clássico, junto de dor pélvica baixa, corrimento anormal, dispareunia e sangramento irregular. A febre pode estar ausente, de modo que exigir temperatura elevada para considerar o diagnóstico faz perder casos e atrasa o tratamento."
+    },
+    {
+      "question": "Diante de quadro clínico compatível com doença inflamatória pélvica, qual é a conduta correta?",
+      "options": [
+        "Iniciar o tratamento precocemente, sem aguardar os exames, e rastrear outras IST",
+        "Aguardar cultura e antibiograma antes de qualquer antibiótico, para não induzir resistência",
+        "Prescrever analgésico e reavaliar em duas semanas, tratando somente se houver febre",
+        "Encaminhar ao ginecologista sem medicar, mantendo a paciente em observação domiciliar"
+      ],
+      "correctIndex": 0,
+      "explanation": "Com clínica compatível, o tratamento começa empiricamente, porque esperar exames aumenta o risco de sequela tubária. Ao mesmo tempo se testa HIV, sífilis, clamídia e gonococo conforme risco, orienta-se a parceria e se avalia a necessidade de internação."
+    },
+    {
+      "question": "Quais complicações tardias justificam tratar precocemente a doença inflamatória pélvica?",
+      "options": [
+        "Infertilidade por lesão tubária, gravidez ectópica e dor pélvica crônica",
+        "Insuficiência renal crônica, hipertensão secundária e litíase de repetição",
+        "Estenose uretral, incontinência urinária de esforço e bexiga neurogênica",
+        "Endometriose profunda, síndrome dos ovários policísticos e amenorreia"
+      ],
+      "correctIndex": 0,
+      "explanation": "A cicatrização das trompas após a infecção leva a infertilidade tubária, aumenta o risco de gravidez ectópica e deixa dor pélvica crônica. São sequelas definitivas em uma paciente com décadas de vida reprodutiva pela frente, o que torna o atraso terapêutico especialmente caro."
+    },
+    {
+      "question": "Quais sinais de gravidade indicam internação em adolescente com doença inflamatória pélvica?",
+      "options": [
+        "Dor intensa, febre alta, vômitos, gravidez ou abscesso tubo-ovariano",
+        "Corrimento amarelado, dispareunia leve e sangramento intermenstrual",
+        "Disúria isolada, dor lombar discreta e história de parceiro recente",
+        "Atraso menstrual de poucos dias, náusea matinal e mastalgia cíclica"
+      ],
+      "correctIndex": 0,
+      "explanation": "Dor intensa, febre alta, vômitos que impedem o tratamento por via oral, gestação concomitante e abscesso tubo-ovariano indicam internação para terapia parenteral e vigilância. Os demais quadros podem ser conduzidos em regime ambulatorial com retorno próximo."
+    },
+    {
+      "question": "No pronto atendimento, o raciocínio diante de uma queixa sexual muda em relação ao ambulatório. Quais são as três decisões rápidas?",
+      "options": [
+        "Há instabilidade ou sinal de alarme, há janela para profilaxia e é preciso acionar proteção",
+        "Há indicação de internação, há leito disponível na unidade e o responsável já foi avisado",
+        "Há queixa ginecológica, há necessidade de exame pélvico e há como agendar ultrassonografia",
+        "Há febre no momento do atendimento, há alteração laboratorial e há indicação de antibiótico"
+      ],
+      "correctIndex": 0,
+      "explanation": "No pronto atendimento o foco é risco imediato e janela de intervenção: procurar sinais de alarme, verificar se ainda cabe profilaxia para HIV, IST ou gravidez e decidir se o fluxo de proteção precisa ser acionado. Prevenção de longo prazo e seguimento ficam para o ambulatório."
+    },
+    {
+      "question": "Quem tem indicação de profilaxia pré-exposição para o HIV?",
+      "options": [
+        "Pessoas com risco continuado, como relações sem preservativo e parceria com HIV não suprimido",
+        "Pessoas com exposição única de risco ocorrida nas últimas setenta e duas horas de vida sexual",
+        "Pessoas já diagnosticadas com HIV que ainda não iniciaram o tratamento antirretroviral regular",
+        "Pessoas com qualquer atividade sexual, de forma universal, a partir da primeira relação sexual"
+      ],
+      "correctIndex": 0,
+      "explanation": "A profilaxia pré-exposição atende risco continuado: relações sem preservativo frequentes, parceria vivendo com HIV sem supressão viral documentada, múltiplas parcerias, IST recente e uso de drogas injetáveis com compartilhamento. Exposição pontual recente é caso de profilaxia pós-exposição."
+    },
+    {
+      "question": "Que cuidados precedem o início da profilaxia pré-exposição para o HIV?",
+      "options": [
+        "Testar HIV antes de iniciar, avaliar função renal e rastrear outras IST",
+        "Testar HIV apenas trinta dias depois, avaliar glicemia e rastrear anemia",
+        "Solicitar carga viral da parceria, avaliar função hepática e dosar vitamina D",
+        "Realizar ultrassonografia renal, avaliar densidade óssea e dosar testosterona"
+      ],
+      "correctIndex": 0,
+      "explanation": "Iniciar a profilaxia em alguém já infectado expõe a esquema incompleto e seleciona resistência, por isso a testagem prévia é obrigatória. Também se avalia função renal, pelo perfil do tenofovir, e se rastreiam outras IST, que sinalizam risco e precisam de tratamento próprio."
+    },
+    {
+      "question": "Por que a profilaxia pré-exposição não substitui o preservativo?",
+      "options": [
+        "Ela protege apenas contra o HIV e não previne as demais infecções sexualmente transmissíveis",
+        "Ela perde totalmente o efeito protetor sempre que houver mais de uma parceria sexual no mês",
+        "Ela só alcança proteção adequada após seis meses ininterruptos de uso diário da medicação",
+        "Ela protege contra bactérias sexualmente transmissíveis, mas não previne infecções virais"
+      ],
+      "correctIndex": 0,
+      "explanation": "O uso regular mantém níveis do fármaco capazes de bloquear a replicação do HIV, mas nada faz contra sífilis, gonorreia, clamídia ou HPV. Por isso preservativo e testagem periódica continuam parte do pacote de cuidado de quem está em profilaxia pré-exposição."
+    },
+    {
+      "question": "Qual é a janela de tempo e a duração da profilaxia pós-exposição para o HIV?",
+      "options": [
+        "Iniciar o quanto antes, idealmente em até 72 horas, mantendo o esquema por 28 dias",
+        "Iniciar em até 7 dias após a exposição, mantendo o esquema por 10 dias consecutivos",
+        "Iniciar somente após o resultado do teste da parceria, mantendo o esquema por 14 dias",
+        "Iniciar em até 2 horas após a exposição, em dose única, com reavaliação em 30 dias"
+      ],
+      "correctIndex": 0,
+      "explanation": "A profilaxia pós-exposição usa antirretrovirais depois de uma exposição de risco para reduzir a chance de infecção, e a eficácia cai quanto mais tarde se começa: o limite é 72 horas, quanto antes melhor. O esquema dura 28 dias e exige seguimento com testagem."
+    },
+    {
+      "question": "Quais situações indicam profilaxia pós-exposição para o HIV?",
+      "options": [
+        "Violência sexual, relação sem preservativo com status desconhecido e acidente ocupacional",
+        "Relação com preservativo íntegro, parceria com carga viral indetectável e exame de rotina",
+        "Diagnóstico recente de sífilis primária, corrimento uretral e dor pélvica de início súbito",
+        "Início da vida sexual, troca recente de parceria e pedido espontâneo do próprio paciente"
+      ],
+      "correctIndex": 0,
+      "explanation": "A indicação é exposição de risco pontual: violência sexual, relação sem preservativo com parceria HIV positiva sem supressão viral ou de status desconhecido e acidente com material biológico. Relação protegida ou parceria com carga viral indetectável não configuram indicação."
+    },
+    {
+      "question": "Qual é o esquema de vacinação contra o HPV oferecido na rotina para adolescentes no Brasil?",
+      "options": [
+        "Dose única da vacina quadrivalente dos 9 aos 14 anos, para meninas e meninos",
+        "Duas doses da vacina quadrivalente dos 9 aos 14 anos, somente para as meninas",
+        "Três doses da vacina quadrivalente a partir dos 15 anos, para meninas e meninos",
+        "Dose única da vacina quadrivalente a partir dos 18 anos, somente para as meninas"
+      ],
+      "correctIndex": 0,
+      "explanation": "O calendário nacional adota dose única da vacina quadrivalente para meninas e meninos de 9 a 14 anos, com melhor resposta imune quando aplicada antes do início da vida sexual. Imunossuprimidos, pessoas vivendo com HIV e vítimas de violência sexual seguem esquema de três doses."
+    },
+    {
+      "question": "Por que métodos contraceptivos de longa duração são considerados primeira linha na adolescência?",
+      "options": [
+        "Têm alta eficácia independente da adesão diária e podem ser usados por nulíparas",
+        "Têm eficácia semelhante à pílula, mas custam menos e dispensam qualquer avaliação",
+        "Protegem simultaneamente contra gravidez e contra infecções sexualmente transmissíveis",
+        "Só devem ser indicados após o primeiro parto, pelo risco de infertilidade em nulíparas"
+      ],
+      "correctIndex": 0,
+      "explanation": "Implante subdérmico, dispositivo intrauterino de cobre e sistema intrauterino com levonorgestrel não dependem do uso correto a cada dia ou a cada relação, o que explica as menores taxas de falha nessa faixa etária. Nuliparidade e idade não contraindicam o dispositivo intrauterino."
+    },
+    {
+      "question": "Qual é o esquema e o prazo da contracepção de emergência com levonorgestrel?",
+      "options": [
+        "1,5 mg em dose única, até 5 dias após a relação, com eficácia maior quanto mais precoce",
+        "1,5 mg por dia durante 5 dias seguidos, começando no quinto dia após a relação sexual",
+        "0,75 mg em dose única, exclusivamente nas primeiras 6 horas após a relação sexual",
+        "3 mg em dose única, a partir do quinto dia, repetindo a dose após 12 horas do início"
+      ],
+      "correctIndex": 0,
+      "explanation": "O levonorgestrel é usado em dose única de 1,5 mg e mantém alguma eficácia até 120 horas, mas o efeito é tempo-dependente e cai a cada dia de atraso — por isso a orientação é tomar o quanto antes. Ele age retardando ou inibindo a ovulação."
+    },
+    {
+      "question": "Uma adolescente pergunta se a contracepção de emergência interrompe uma gestação já existente. Qual resposta é correta?",
+      "options": [
+        "Não interrompe: ela age adiando ou inibindo a ovulação e não age sobre gravidez já instalada",
+        "Interrompe sim, porque impede a implantação do embrião já formado na cavidade uterina",
+        "Interrompe apenas quando usada depois do terceiro dia, quando já houve a fecundação",
+        "Não interrompe porque não tem efeito hormonal algum, funcionando como um placebo ativo"
+      ],
+      "correctIndex": 0,
+      "explanation": "O mecanismo principal é retardar ou bloquear a ovulação, de modo que, se a gestação já está estabelecida, o método não a interrompe nem lhe causa dano. Deixar isso claro evita que o medo de estar cometendo um aborto atrase o uso, justo quando cada hora conta."
+    },
+    {
+      "question": "Qual método de contracepção de emergência tem a maior eficácia quando usado em até 5 dias da relação?",
+      "options": [
+        "O dispositivo intrauterino de cobre, que ainda permanece como contracepção de longo prazo",
+        "O contraceptivo oral combinado em dose dobrada, mantido por sete dias após a exposição",
+        "O acetato de medroxiprogesterona injetável, aplicado o mais próximo possível da relação",
+        "O implante subdérmico de etonogestrel, inserido nas primeiras horas após a relação sexual"
+      ],
+      "correctIndex": 0,
+      "explanation": "A inserção do dispositivo intrauterino de cobre em até cinco dias é a contracepção de emergência mais eficaz, com taxa de falha bem inferior à do levonorgestrel, e tem a vantagem de já deixar a adolescente com um método de longa duração instalado."
+    },
+    {
+      "question": "O que significa a dupla proteção na orientação contraceptiva do adolescente?",
+      "options": [
+        "Associar o preservativo a um método contraceptivo eficaz, cobrindo IST e gravidez",
+        "Associar dois métodos hormonais diferentes, para compensar eventuais falhas de adesão",
+        "Associar o preservativo à contracepção de emergência de uso mensal programado",
+        "Associar a tabelinha ao coito interrompido, reservando o preservativo ao período fértil"
+      ],
+      "correctIndex": 0,
+      "explanation": "Nenhum método hormonal ou intrauterino protege contra infecções, e o preservativo isolado tem falha de uso típico alta para prevenir gravidez. Somar os dois cobre os dois desfechos, e é a orientação padrão para quem está iniciando a vida sexual."
+    },
+    {
+      "question": "Qual ressalva específica da adolescência limita o uso prolongado do injetável trimestral de medroxiprogesterona?",
+      "options": [
+        "A perda de massa óssea durante o período de aquisição do pico de densidade mineral",
+        "A elevação sustentada da pressão arterial, que costuma persistir após a suspensão",
+        "A redução comprovada da estatura final, por fechamento precoce das cartilagens",
+        "A perda auditiva neurossensorial progressiva, proporcional ao tempo total de uso"
+      ],
+      "correctIndex": 0,
+      "explanation": "A adolescência é o período de aquisição do pico de massa óssea, e o injetável trimestral reduz a densidade mineral enquanto é usado. A perda é em boa parte reversível após a suspensão, mas o método fica como alternativa quando outros de eficácia semelhante estão disponíveis."
+    },
+    {
+      "question": "Uma adolescente chega ao pronto atendimento e revela que um adulto a tocou, pedindo segredo. Qual é a resposta correta no primeiro minuto?",
+      "options": [
+        "Agradecer pela confiança, afirmar que acredita nela e explicar que não pode prometer segredo",
+        "Pedir que ela conte todos os detalhes agora, para que o relato fique registrado com precisão",
+        "Prometer que nada será dito a ninguém, para garantir que ela se sinta segura e continue falando",
+        "Chamar imediatamente o responsável para a sala, de modo que ela repita o relato diante dele"
+      ],
+      "correctIndex": 0,
+      "explanation": "As frases de acolhimento são agradecer por contar, dizer que acredita e que ela não tem culpa, e nomear o limite do sigilo: havendo risco, a rede de proteção será acionada e cada passo explicado. Prometer segredo absoluto é exatamente o que não se deve fazer."
+    },
+    {
+      "question": "Que condutas devem ser evitadas diante da revelação de violência sexual por um adolescente?",
+      "options": [
+        "Repetir entrevistas detalhadas, duvidar do relato e prometer sigilo absoluto",
+        "Registrar o relato com objetividade, acolher a fala e acionar a rede de proteção",
+        "Perguntar o dia e a hora da exposição, avaliar segurança e checar a janela de profilaxia",
+        "Atender a sós, oferecer testagem e explicar cada passo antes de acionar a proteção"
+      ],
+      "correctIndex": 0,
+      "explanation": "Entrevistas repetidas e detalhadas revitimizam, perguntas do tipo por que você não reagiu culpabilizam, e o sigilo absoluto é uma promessa impossível de cumprir. O objetivo do atendimento é segurança e cuidado, não investigação, que cabe a outros órgãos."
+    },
+    {
+      "question": "Adolescente chega ao pronto atendimento 24 horas após violência sexual. Quais são as prioridades desse momento?",
+      "options": [
+        "Acolhimento e segurança, profilaxias conforme protocolo e contracepção de emergência",
+        "Apenas registro objetivo do relato e agendamento de consulta ambulatorial em duas semanas",
+        "Coleta de material para exame de corpo de delito como condição para qualquer atendimento",
+        "Rastreamento de infecções sexualmente transmissíveis com sorologias repetidas em 3 meses"
+      ],
+      "correctIndex": 0,
+      "explanation": "Dentro de 72 horas ainda há janela para a profilaxia pós-exposição ao HIV, para as profilaxias de outras IST e para a contracepção de emergência, além da coleta de evidências quando aplicável. O atendimento em saúde não pode ser condicionado a boletim de ocorrência."
+    },
+    {
+      "question": "Adolescente relata violência sexual ocorrida há duas semanas. O que se prioriza nesse intervalo?",
+      "options": [
+        "Rastreamento de IST e gestação, cuidado em saúde mental e plano de segurança",
+        "Profilaxia pós-exposição ao HIV, ainda eficaz nesse intervalo, e contracepção de emergência",
+        "Apenas observação clínica, com reavaliação somente se surgirem sintomas genitais",
+        "Coleta imediata de evidências forenses, que permanecem válidas por até trinta dias"
+      ],
+      "correctIndex": 0,
+      "explanation": "Passados sete dias, a janela das profilaxias já se fechou e o eixo do cuidado passa a ser rastrear infecções e gravidez, cuidar da saúde mental, articular a rede e construir plano de segurança. Reconhecer a janela perdida evita prescrever profilaxia sem benefício."
+    },
+    {
+      "question": "Quais achados na consulta devem levantar suspeita de violência ou coerção sexual em um adolescente?",
+      "options": [
+        "Queixas vagas recorrentes, IST de repetição, queda escolar e parceria bem mais velha",
+        "Ganho de peso progressivo, acne inflamatória, cefaleia tensional e cansaço matinal",
+        "Menarca precoce, mamas assimétricas, estirão puberal tardio e hirsutismo discreto",
+        "Uso correto de preservativo, retorno espontâneo à consulta e pedido de testagem"
+      ],
+      "correctIndex": 0,
+      "explanation": "Dor abdominal e cefaleia recorrentes sem causa definida, lesões inexplicadas, infecções sexualmente transmissíveis repetidas, gestação, mudança abrupta de humor com queda no rendimento escolar e parceria muito mais velha ou com sinais de coerção são os alertas clássicos."
+    },
+    {
+      "question": "Confirmada a suspeita de violência sexual contra adolescente de 14 anos, o que o profissional de saúde é obrigado a fazer?",
+      "options": [
+        "Comunicar o Conselho Tutelar e notificar o caso à vigilância, além de prestar assistência",
+        "Aguardar que a família registre boletim de ocorrência antes de qualquer comunicação externa",
+        "Comunicar apenas se a adolescente autorizar expressamente, respeitando o sigilo da consulta",
+        "Encaminhar a um serviço de referência sem qualquer comunicação, para não expor a paciente"
+      ],
+      "correctIndex": 0,
+      "explanation": "Suspeita ou confirmação de violência contra criança e adolescente é de comunicação obrigatória ao Conselho Tutelar e de notificação compulsória imediata à vigilância epidemiológica, independentemente de boletim de ocorrência ou de autorização da família. É dever legal, não escolha."
+    },
+    {
+      "question": "Na primeira consulta de uma adolescente com gestação confirmada, quais eixos precisam ser cobertos?",
+      "options": [
+        "Confirmar e datar, avaliar vulnerabilidades, cuidado clínico essencial e planejar o depois",
+        "Confirmar e datar, prescrever sulfato ferroso e agendar retorno apenas no terceiro trimestre",
+        "Solicitar ultrassonografia seriada, avaliar cariótipo fetal e encaminhar ao pré-natal de risco",
+        "Comunicar os responsáveis, acionar o serviço social e adiar a conduta clínica ao pré-natal"
+      ],
+      "correctIndex": 0,
+      "explanation": "A primeira consulta confirma e data a gestação, rastreia vulnerabilidades como violência, apoio familiar, uso de substâncias e saúde mental, garante rastreio de IST, vacinação e nutrição, e já planeja pré-natal, contracepção pós-parto e vínculo com a atenção primária."
+    },
+    {
+      "question": "Adolescente grávida chega ao pronto atendimento com dor abdominal intensa e unilateral. Qual hipótese precisa ser afastada com prioridade?",
+      "options": [
+        "Gravidez ectópica, pelo risco de rotura e instabilidade hemodinâmica em curto prazo",
+        "Hiperêmese gravídica, pelo risco de desidratação e distúrbio hidroeletrolítico grave",
+        "Pré-eclâmpsia precoce, pelo risco de crise convulsiva e de descolamento placentário",
+        "Infecção urinária alta, pelo risco de trabalho de parto prematuro e de sepse materna"
+      ],
+      "correctIndex": 0,
+      "explanation": "Dor intensa e unilateral em gestante aponta para gravidez ectópica, que pode romper e evoluir com choque em pouco tempo. Instabilidade hemodinâmica, síncope e sangramento importante compõem o mesmo grupo de sinais que exigem avaliação obstétrica imediata."
+    },
+    {
+      "question": "Quais sinais em gestante adolescente no pronto atendimento configuram alerta neurológico e vascular?",
+      "options": [
+        "Cefaleia persistente, edema, visão turva e pressão arterial elevada na aferição",
+        "Náusea matinal, pirose após as refeições, sonolência diurna e lombalgia leve",
+        "Cólica discreta no baixo ventre, corrimento claro e aumento da frequência urinária",
+        "Mastalgia bilateral, escurecimento da aréola, tontura postural e apetite aumentado"
+      ],
+      "correctIndex": 0,
+      "explanation": "Cefaleia persistente, edema, alterações visuais e pressão elevada sugerem doença hipertensiva da gestação e exigem avaliação obstétrica rápida. No pronto atendimento o objetivo não é fazer pré-natal, e sim triar emergências e acionar proteção quando necessário."
+    },
+    {
+      "question": "Qual é a magnitude estimada da gestação na adolescência em países de baixa e média renda?",
+      "options": [
+        "Cerca de 21 milhões de gestações por ano entre adolescentes de 15 a 19 anos",
+        "Cerca de 2 milhões de gestações por ano entre adolescentes de 15 a 19 anos",
+        "Cerca de 90 milhões de gestações por ano entre adolescentes de 15 a 19 anos",
+        "Cerca de 200 milhões de gestações por ano entre adolescentes de 15 a 19 anos"
+      ],
+      "correctIndex": 0,
+      "explanation": "As estimativas para 2019 apontam cerca de 21 milhões de gestações e 12 milhões de nascimentos por ano em adolescentes de 15 a 19 anos nesses países. O número mostra desigualdade de acesso, educação e proteção, e não um problema de culpa individual."
+    },
+    {
+      "question": "Por que a contracepção pós-parto precisa ser definida ainda durante o pré-natal da adolescente?",
+      "options": [
+        "Porque a recorrência precoce da gestação é frequente e piora os desfechos de mãe e filho",
+        "Porque a amamentação exclusiva impede totalmente qualquer método hormonal no puerpério",
+        "Porque a ovulação só retorna após um ano, o que dá tempo de decidir com calma depois",
+        "Porque a escolha do método precisa de autorização judicial quando a mãe é menor de idade"
+      ],
+      "correctIndex": 0,
+      "explanation": "Uma segunda gestação em curto intervalo agrava evasão escolar, vulnerabilidade social e risco obstétrico. Combinar o método eficaz antes da alta, mantendo o vínculo com a atenção primária, é prevenção secundária e evita perder a adolescente no seguimento."
+    },
+    {
+      "question": "Adolescente de 15 anos com gestação confirmada relata namorado de 19 anos. Como abordar o tema da coerção?",
+      "options": [
+        "Perguntar de forma universal se alguém a pressionou ou obrigou, sem acusar ninguém",
+        "Evitar o assunto, já que a diferença de idade entre os dois é pequena e comum na idade",
+        "Informar imediatamente à família que houve crime, antes de conversar com a adolescente",
+        "Questionar diretamente se o namorado a forçou, na presença dele, para observar a reação"
+      ],
+      "correctIndex": 0,
+      "explanation": "Perguntar a todo mundo, com a mesma frase, tira o peso pessoal da pergunta e abre espaço para a resposta. Parceria bem mais velha é sinal de alerta para coerção e merece rastreio ativo, feito a sós e sem transformar a consulta em interrogatório."
+    },
+    {
+      "question": "Qual é a mensagem central da abordagem da saúde sexual na adolescência?",
+      "options": [
+        "Técnica, vínculo e segurança juntos: os esquemas mudam, o processo bem feito permanece",
+        "Prescrição correta acima de tudo: acertar o antibiótico resolve a maior parte dos casos",
+        "Encaminhamento precoce ao especialista: o generalista deve evitar conduzir esses temas",
+        "Envolvimento imediato da família: nenhuma decisão deve ser tomada sem os responsáveis"
+      ],
+      "correctIndex": 0,
+      "explanation": "Os esquemas terapêuticos mudam conforme a diretriz local e o ano, mas o processo se mantém: privacidade e história sexual estruturada, testagem e prevenção combinada, acolhimento e janela nas situações de violência, e cuidado clínico somado à rede na gestação."
+    }
+  ]
+}

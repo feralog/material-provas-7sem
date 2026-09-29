@@ -1,0 +1,452 @@
+{
+  "titulo": "Diabetes Mellitus Gestacional",
+  "eyebrow": "Ginecologia e Obstetrícia · Gestação de Alto Risco",
+  "subtitulo": "Rastrear, diagnosticar e tratar a hiperglicemia da gravidez",
+  "intro": "Do rastreamento universal na primeira consulta ao teste de tolerância com 75 g, das metas glicêmicas e da insulinização às complicações fetais, ao momento do parto e à reclassificação da puérpera.",
+  "questoes": [
+    {
+      "question": "Na primeira consulta de pré-natal, uma gestante de 10 semanas apresenta glicemia de jejum de 108 mg/dL. Qual faixa de glicemia de jejum, nesse momento, já estabelece o diagnóstico de diabetes mellitus gestacional sem necessidade de sobrecarga?",
+      "options": [
+        "Entre 92 e 125 mg/dL",
+        "Entre 85 e 91 mg/dL",
+        "Entre 100 e 139 mg/dL",
+        "Entre 126 e 199 mg/dL",
+        "Entre 140 e 199 mg/dL"
+      ],
+      "correctIndex": 0,
+      "explanation": "No rastreamento universal da primeira consulta, glicemia de jejum entre 92 e 125 mg/dL fecha o diagnóstico de diabetes gestacional e dispensa o teste de tolerância. Abaixo de 92 mg/dL a gestante segue para o TOTG de 75 g entre 24 e 28 semanas. A partir de 126 mg/dL o quadro deixa de ser gestacional e passa a ser diabetes franco."
+    },
+    {
+      "question": "Gestante de 8 semanas chega ao pré-natal com glicemia de jejum de 138 mg/dL e hemoglobina glicada de 6,8%. Qual é a classificação correta desse quadro?",
+      "options": [
+        "Diabetes mellitus diagnosticado na gestação",
+        "Diabetes mellitus gestacional de baixo risco",
+        "Tolerância à glicose diminuída da gravidez",
+        "Glicemia de jejum alterada, sem diabetes",
+        "Rastreamento normal, repetir com 24 semanas"
+      ],
+      "correctIndex": 0,
+      "explanation": "Glicemia de jejum igual ou acima de 126 mg/dL, hemoglobina glicada igual ou acima de 6,5% ou glicemia casual igual ou acima de 200 mg/dL com sintomas caracterizam diabetes franco, e não diabetes gestacional. A distinção muda o prognóstico: esse grupo tem risco de malformação, exige rastreio de vasculopatia e mantém a doença após o parto."
+    },
+    {
+      "question": "O teste oral de tolerância à glicose com 75 g é indicado para toda gestante que não recebeu diagnóstico no início da gravidez. Em que idade gestacional ele deve ser realizado?",
+      "options": [
+        "Entre 24 e 28 semanas",
+        "Entre 11 e 13 semanas",
+        "Entre 16 e 20 semanas",
+        "Entre 20 e 24 semanas",
+        "Entre 30 e 34 semanas"
+      ],
+      "correctIndex": 0,
+      "explanation": "A janela de 24 a 28 semanas coincide com o pico dos hormônios contra-insulínicos placentários, quando a resistência à insulina se manifesta plenamente. O teste dosa a glicemia em jejum, na primeira e na segunda hora após a ingestão de 75 g de glicose."
+    },
+    {
+      "question": "No teste oral de tolerância à glicose com 75 g realizado entre 24 e 28 semanas, qual é o valor de corte da glicemia de jejum que caracteriza diabetes gestacional?",
+      "options": [
+        "92 mg/dL",
+        "85 mg/dL",
+        "95 mg/dL",
+        "100 mg/dL",
+        "126 mg/dL"
+      ],
+      "correctIndex": 0,
+      "explanation": "O corte de jejum no TOTG de 75 g é 92 mg/dL, valor derivado do estudo HAPO e adotado pelo IADPSG em 2010. O valor de 95 mg/dL pertence aos critérios de Carpenter e Coustan, usados na sobrecarga de 100 g, e 126 mg/dL já define diabetes franco."
+    },
+    {
+      "question": "Qual é o valor de corte da glicemia de primeira hora no teste oral de tolerância à glicose com 75 g para o diagnóstico de diabetes gestacional?",
+      "options": [
+        "180 mg/dL",
+        "140 mg/dL",
+        "153 mg/dL",
+        "155 mg/dL",
+        "200 mg/dL"
+      ],
+      "correctIndex": 0,
+      "explanation": "A primeira hora tem corte de 180 mg/dL. O valor de 153 mg/dL corresponde à segunda hora, e uma segunda hora igual ou acima de 200 mg/dL já indica diabetes franco, não gestacional. Não existe corte definido para a primeira hora que diagnostique diabetes franco."
+    },
+    {
+      "question": "Qual é o valor de corte da glicemia de segunda hora no teste oral de tolerância à glicose com 75 g para o diagnóstico de diabetes gestacional?",
+      "options": [
+        "153 mg/dL",
+        "140 mg/dL",
+        "120 mg/dL",
+        "180 mg/dL",
+        "199 mg/dL"
+      ],
+      "correctIndex": 0,
+      "explanation": "A segunda hora tem corte de 153 mg/dL, e valores entre 153 e 199 mg/dL definem diabetes gestacional. A partir de 200 mg/dL o diagnóstico passa a ser diabetes franco. O corte de 140 mg/dL pertencia ao critério da Organização Mundial da Saúde de 1999, abandonado em 2013."
+    },
+    {
+      "question": "Quantos valores alterados são necessários no teste oral de tolerância à glicose com 75 g para firmar o diagnóstico de diabetes gestacional?",
+      "options": [
+        "Um valor alterado já é suficiente",
+        "São necessários dois valores alterados",
+        "São necessários três valores alterados",
+        "Apenas o valor de jejum tem validade",
+        "Apenas o valor de duas horas vale"
+      ],
+      "correctIndex": 0,
+      "explanation": "Basta um único valor igual ou acima do corte — jejum 92, primeira hora 180 ou segunda hora 153 mg/dL — para diagnosticar diabetes gestacional. A exigência de dois valores alterados pertencia aos critérios antigos com sobrecarga de 100 g, de O'Sullivan e Mahan e do National Diabetes Data Group."
+    },
+    {
+      "question": "Gestante de 26 semanas realiza teste de tolerância com 75 g: jejum 96 mg/dL, primeira hora 165 mg/dL e segunda hora 210 mg/dL. Qual é o diagnóstico?",
+      "options": [
+        "Diabetes mellitus, pelo valor de 2 horas",
+        "Diabetes gestacional, pelo valor de jejum",
+        "Diabetes gestacional, pela primeira hora",
+        "Tolerância diminuída, sem critério de DM",
+        "Exame normal, sem necessidade de repetir"
+      ],
+      "correctIndex": 0,
+      "explanation": "Glicemia de segunda hora igual ou acima de 200 mg/dL no TOTG de 75 g caracteriza diabetes mellitus, e não diabetes gestacional, mesmo com o jejum na faixa de 92 a 125 mg/dL. Um jejum igual ou acima de 126 mg/dL tem o mesmo peso. Essa paciente é conduzida como diabética franca e precisa ser reclassificada após o parto."
+    },
+    {
+      "question": "Gestante inicia o pré-natal com 32 semanas, sem nenhum exame prévio. Qual é a conduta de rastreamento de hiperglicemia?",
+      "options": [
+        "TOTG com 75 g de glicose imediatamente",
+        "TOTG com 75 g de glicose com 36 semanas",
+        "Apenas glicemia de jejum, sem sobrecarga",
+        "Apenas hemoglobina glicada trimestral",
+        "Glicemia pós-prandial de 2 horas apenas"
+      ],
+      "correctIndex": 0,
+      "explanation": "Quando o pré-natal começa depois de 28 semanas, a janela ideal de 24 a 28 semanas já passou e o teste de tolerância com 75 g deve ser feito imediatamente. Adiar o exame para perto do termo reduz o tempo útil de tratamento e a chance de evitar macrossomia e suas complicações."
+    },
+    {
+      "question": "Gestante de 12 semanas tem glicemia de jejum de 84 mg/dL na primeira consulta. Qual é o próximo passo do rastreamento de hiperglicemia?",
+      "options": [
+        "TOTG de 75 g entre 24 e 28 semanas",
+        "TOTG de 75 g entre 16 e 20 semanas",
+        "TOTG de 75 g entre 32 e 36 semanas",
+        "Nova glicemia de jejum com 20 semanas",
+        "Nenhum outro exame de rastreamento"
+      ],
+      "correctIndex": 0,
+      "image": "pg27",
+      "imageCaption": "Fluxograma de rastreamento da hiperglicemia na gestação",
+      "explanation": "Glicemia de jejum abaixo de 92 mg/dL antes de 20 semanas afasta o diagnóstico naquele momento, mas não encerra o rastreamento: a resistência insulínica só se instala plenamente no segundo trimestre. A gestante segue para o teste de tolerância com 75 g entre 24 e 28 semanas."
+    },
+    {
+      "question": "Na classificação prognóstica de Priscila White, como é designada a gestante cujo diabetes surgiu na gravidez e é controlado apenas com dieta e exercício?",
+      "options": [
+        "Classe A1",
+        "Classe A2",
+        "Classe B",
+        "Classe C",
+        "Classe D"
+      ],
+      "correctIndex": 0,
+      "image": "pg19",
+      "imageCaption": "Classificação prognóstica e evolutiva de Priscila White",
+      "explanation": "A classe A1 reúne o diabetes de início gestacional, sem vasculopatia e com tratamento não farmacológico; a A2 é a mesma situação, porém já em uso de medicação. As classes de B a T descrevem diabetes prévio, graduado por idade de início, tempo de doença e órgão-alvo comprometido."
+    },
+    {
+      "question": "Quais são os alvos de glicemia capilar recomendados para a gestante com diabetes em tratamento?",
+      "options": [
+        "Jejum < 95, 1 hora < 140 e 2 horas < 120",
+        "Jejum < 90, 1 hora < 130 e 2 horas < 110",
+        "Jejum < 95, 1 hora < 120 e 2 horas < 140",
+        "Jejum < 100, 1 hora < 140 e 2 horas < 120",
+        "Jejum < 105, 1 hora < 155 e 2 horas < 130"
+      ],
+      "correctIndex": 0,
+      "image": "pg46",
+      "imageCaption": "Metas para o controle glicêmico na gestação",
+      "explanation": "Os alvos em mg/dL são jejum abaixo de 95, uma hora pós-prandial abaixo de 140 e duas horas pós-prandial abaixo de 120. A meta de duas horas é mais baixa que a de uma hora porque a curva já deveria estar em queda. Em usuárias de insulina com hipoglicemias frequentes esses valores podem ser individualizados."
+    },
+    {
+      "question": "Na automonitorização com glicosímetro durante a gestação, quais são as faixas-alvo de glicemia capilar antes das refeições e uma hora após?",
+      "options": [
+        "70 a 95 e 90 a 140 mg/dL",
+        "70 a 90 e 90 a 120 mg/dL",
+        "80 a 110 e 100 a 160 mg/dL",
+        "60 a 100 e 120 a 180 mg/dL",
+        "90 a 130 e 140 a 200 mg/dL"
+      ],
+      "correctIndex": 0,
+      "explanation": "As metas práticas de automonitorização são 70 a 95 mg/dL antes das refeições e 90 a 140 mg/dL uma hora depois. O piso de 70 mg/dL existe para que o tratamento não troque hiperglicemia por hipoglicemia materna, que também compromete o feto."
+    },
+    {
+      "question": "Quando o feto já é grande para a idade gestacional ou há polidrâmnio, qual meta de glicemia capilar de uma hora pós-prandial deve ser adotada?",
+      "options": [
+        "90 a 130 mg/dL",
+        "90 a 140 mg/dL",
+        "70 a 120 mg/dL",
+        "100 a 150 mg/dL",
+        "80 a 160 mg/dL"
+      ],
+      "correctIndex": 0,
+      "explanation": "Diante de feto grande para a idade gestacional ou polidrâmnio, o alvo pós-prandial de uma hora aperta de 90-140 para 90-130 mg/dL, enquanto o pré-prandial permanece em 70-95 mg/dL. Os dois achados indicam que a hiperinsulinemia fetal segue ativa apesar de um controle aparentemente adequado."
+    },
+    {
+      "question": "Com que frequência a glicemia capilar deve ser aferida pela gestante com diabetes em acompanhamento ambulatorial?",
+      "options": [
+        "Quatro a oito vezes ao dia",
+        "Uma a duas vezes ao dia",
+        "Duas a três vezes ao dia",
+        "Dez a doze vezes ao dia",
+        "Uma vez a cada dois dias"
+      ],
+      "correctIndex": 0,
+      "explanation": "São recomendadas quatro a oito aferições diárias, distribuídas entre pré-prandiais e pós-prandiais de uma hora, para que cada refeição seja avaliada. Um número menor de medidas deixa escapar picos pós-prandiais, justamente os que mais se relacionam com macrossomia."
+    },
+    {
+      "question": "Qual é a primeira linha de tratamento do diabetes gestacional e qual proporção de gestantes atinge as metas apenas com ela?",
+      "options": [
+        "Terapia nutricional, que resolve 80 a 90%",
+        "Insulinoterapia plena, que resolve 80 a 90%",
+        "Metformina oral, que resolve 80 a 90%",
+        "Glibenclamida oral, que resolve 80 a 90%",
+        "Internação hospitalar, que resolve 80 a 90%"
+      ],
+      "correctIndex": 0,
+      "explanation": "A terapia nutricional associada a exercício controla 80 a 90% dos casos de diabetes gestacional e é sempre a intervenção inicial. Apenas a minoria que não alcança as metas depois de cerca de duas semanas de dieta adequada precisa de tratamento farmacológico."
+    },
+    {
+      "question": "Em que situação está indicado iniciar insulina na gestante com diabetes gestacional?",
+      "options": [
+        "Quando a dieta não atinge as metas",
+        "Logo que o diagnóstico é confirmado",
+        "Somente se houver macrossomia fetal",
+        "Apenas depois de 36 semanas de gestação",
+        "Somente quando a gestante for obesa"
+      ],
+      "correctIndex": 0,
+      "explanation": "A insulina entra quando a terapia nutricional não mantém as glicemias dentro dos alvos, e também em quem já tinha diabetes tipo 1 ou tipo 2 antes da gestação. Não é iniciada de rotina ao diagnóstico, porque a maioria responde à dieta. Feto grande para a idade gestacional e polidrâmnio reforçam a indicação, mas não são pré-requisito."
+    },
+    {
+      "question": "Na prescrição dietética do diabetes gestacional, qual proporção do valor calórico total deve vir dos carboidratos?",
+      "options": [
+        "40 a 55% do valor calórico total",
+        "20 a 30% do valor calórico total",
+        "30 a 40% do valor calórico total",
+        "15 a 20% do valor calórico total",
+        "60 a 70% do valor calórico total"
+      ],
+      "correctIndex": 0,
+      "explanation": "A distribuição recomendada é de 40 a 55% de carboidratos, 30 a 40% de lipídios e 15 a 20% de proteínas, com o valor calórico estratificado pelo índice de massa corporal. Restringir carboidrato abaixo dessa faixa favorece cetose de jejum, igualmente prejudicial ao feto."
+    },
+    {
+      "question": "Quantas refeições diárias são recomendadas na terapia nutricional do diabetes gestacional e quanto de carboidrato deve conter a ceia noturna?",
+      "options": [
+        "Seis refeições e ceia com 25 g",
+        "Seis refeições e ceia com 50 g",
+        "Três refeições e ceia com 25 g",
+        "Seis refeições e ceia com 10 g",
+        "Quatro refeições e ceia com 5 g"
+      ],
+      "correctIndex": 0,
+      "explanation": "São seis refeições ao dia, em intervalos de cerca de três horas, com ceia noturna contendo aproximadamente 25 g de carboidrato. A ceia existe para encurtar o jejum noturno e evitar a cetose de madrugada, que se traduz em glicemia de jejum instável na manhã seguinte."
+    },
+    {
+      "question": "Qual modalidade de exercício deve ser evitada pela gestante com diabetes?",
+      "options": [
+        "Isometria de grandes grupos musculares",
+        "Caminhada em ritmo leve a moderado",
+        "Hidroginástica em piscina aquecida",
+        "Ciclismo em bicicleta estacionária",
+        "Exercício de resistência supervisionado"
+      ],
+      "correctIndex": 0,
+      "explanation": "Devem ser evitados esportes de contato, atividades com risco de queda, isometria de grandes grupos musculares e decúbito horizontal depois do primeiro trimestre. Caminhada, natação, hidroginástica, bicicleta estacionária e exercício resistido orientado são liberados e reduzem a glicemia de jejum, a pós-prandial e a necessidade de insulina."
+    },
+    {
+      "question": "Quais hormônios produzidos pela placenta explicam o aumento da resistência periférica à insulina na segunda metade da gestação?",
+      "options": [
+        "Lactogênio placentário e cortisol",
+        "Insulina e peptídeo C placentários",
+        "Progesterona e relaxina ovarianas",
+        "Ocitocina e prolactina hipofisárias",
+        "Aldosterona e renina placentárias"
+      ],
+      "correctIndex": 0,
+      "explanation": "O lactogênio placentário, o hormônio do crescimento placentário e o cortisol são contra-insulínicos e crescem junto com a massa placentária, o que explica a resistência insulínica máxima entre 24 e 28 semanas. O pâncreas materno compensa aumentando a secreção; quando não consegue, aparece o diabetes gestacional."
+    },
+    {
+      "question": "Qual mecanismo explica o polidrâmnio na gestação complicada por diabetes?",
+      "options": [
+        "Hiperglicemia fetal causando poliúria",
+        "Hipoglicemia fetal reduzindo a diurese",
+        "Hipoplasia renal fetal por malformação",
+        "Deglutição fetal aumentada de líquido",
+        "Redução do fluxo placentário materno"
+      ],
+      "correctIndex": 0,
+      "explanation": "A glicose materna atravessa a placenta por difusão facilitada e gera hiperglicemia fetal, que funciona como diurese osmótica: o feto urina mais e o líquido amniótico aumenta. O polidrâmnio distende o útero e favorece rotura prematura de membranas e prematuridade."
+    },
+    {
+      "question": "Por que o recém-nascido de mãe com diabetes mal controlado apresenta hipoglicemia nas primeiras horas de vida?",
+      "options": [
+        "Hiperinsulinemia fetal persiste ao nascer",
+        "Hipoinsulinemia fetal persiste ao nascer",
+        "Falta de glicogênio hepático na mãe",
+        "Imaturidade do eixo hipofisário fetal",
+        "Queda dos hormônios tireoidianos fetais"
+      ],
+      "correctIndex": 0,
+      "explanation": "A hiperglicemia materna estimula cronicamente o pâncreas fetal, que passa a produzir insulina em excesso. Com o clampeamento do cordão a oferta de glicose cessa de súbito, mas a hiperinsulinemia persiste por horas e produz hipoglicemia neonatal. Por isso o recém-nascido precisa de glicemia capilar seriada."
+    },
+    {
+      "question": "Qual é o período crítico de mau controle glicêmico responsável pelas malformações fetais associadas ao diabetes?",
+      "options": [
+        "Entre a sexta e a oitava semana de gestação",
+        "Entre a décima e a décima segunda semana",
+        "Entre a décima quarta e a décima sexta",
+        "Entre a vigésima e a vigésima quarta",
+        "Entre a trigésima e a trigésima quarta"
+      ],
+      "correctIndex": 0,
+      "explanation": "A organogênese ocorre entre a sexta e a oitava semana, e é a hiperglicemia desse período que triplica a incidência de malformações em relação à população geral. Como o diabetes gestacional costuma se manifestar depois, esse risco é típico do diabetes prévio, o que reforça a importância do controle pré-concepcional."
+    },
+    {
+      "question": "Qual malformação é classicamente considerada marcadora da embriopatia diabética?",
+      "options": [
+        "Síndrome de regressão caudal",
+        "Estenose hipertrófica de piloro",
+        "Hérnia diafragmática congênita",
+        "Atresia de esôfago com fístula",
+        "Agenesia renal bilateral isolada"
+      ],
+      "correctIndex": 0,
+      "explanation": "A síndrome de regressão caudal, com agenesia sacrococcígea, quadris pequenos e membros em posição de perna de rã, é rara na população geral e fortemente associada ao diabetes materno. Também são frequentes os defeitos de fechamento do tubo neural, como a anencefalia, e cardiopatias, como a transposição das grandes artérias."
+    },
+    {
+      "question": "Quais são os valores normais do índice de líquido amniótico e do maior bolsão vertical na avaliação ultrassonográfica?",
+      "options": [
+        "ILA de 8 a 18 cm e bolsão de 2 a 8 cm",
+        "ILA de 5 a 25 cm e bolsão de 2 a 8 cm",
+        "ILA de 8 a 18 cm e bolsão de 1 a 4 cm",
+        "ILA de 2 a 8 cm e bolsão de 8 a 18 cm",
+        "ILA de 10 a 20 cm e bolsão de 3 a 9 cm"
+      ],
+      "correctIndex": 0,
+      "explanation": "O índice de líquido amniótico normal vai de 8 a 18 cm e o maior bolsão vertical, de 2 a 8 cm. Em gestação gemelar apenas o maior bolsão vertical é válido, porque o cálculo por quadrantes perde sentido com duas bolsas. Valores acima do limite caracterizam polidrâmnio, achado que obriga a apertar as metas glicêmicas."
+    },
+    {
+      "question": "Qual é a dose inicial de insulina recomendada para a gestante com diabetes, em qualquer idade gestacional?",
+      "options": [
+        "0,5 UI/kg/dia",
+        "0,2 UI/kg/dia",
+        "0,3 UI/kg/dia",
+        "1,0 UI/kg/dia",
+        "1,5 UI/kg/dia"
+      ],
+      "correctIndex": 0,
+      "explanation": "A dose inicial é de 0,5 UI/kg/dia, calculada sobre o peso atual e válida para qualquer idade gestacional. Os ajustes devem ser feitos no mínimo a cada 15 dias até a 30ª semana e semanalmente depois disso, porque a resistência insulínica continua crescendo até perto do termo."
+    },
+    {
+      "question": "Qual insulina tem início de ação em 5 a 15 minutos, pico entre 0,5 e 2 horas e duração de 3 a 5 horas?",
+      "options": [
+        "Insulina asparte",
+        "Insulina regular",
+        "Insulina NPH humana",
+        "Insulina detemir",
+        "Insulina glargina"
+      ],
+      "correctIndex": 0,
+      "image": "pg50",
+      "imageCaption": "Tipos de insulina: início, pico e duração de ação",
+      "explanation": "Asparte e lispro são análogos ultrarrápidos, aplicados no início da refeição ou até 15 minutos antes. A regular, humana e de ação rápida, começa a agir em 0,5 a 1 hora e exige aplicação 30 a 40 minutos antes de comer; a NPH é intermediária, com pico em 4 a 10 horas e duração de 10 a 18 horas."
+    },
+    {
+      "question": "Quando a dose total de insulina NPH é dividida em três aplicações diárias, qual é a distribuição recomendada?",
+      "options": [
+        "1/2 de manhã, 1/4 antes do almoço, 1/4 ao deitar",
+        "1/3 de manhã, 1/3 antes do almoço, 1/3 ao deitar",
+        "1/4 de manhã, 1/4 antes do almoço, 1/2 ao deitar",
+        "1/4 de manhã, 1/2 antes do almoço, 1/4 ao deitar",
+        "1/2 de manhã, 1/2 antes do almoço, sem dose noturna"
+      ],
+      "correctIndex": 0,
+      "explanation": "Partindo de 0,5 UI/kg/dia, a NPH é distribuída em metade pela manhã, um quarto antes do almoço e um quarto ao deitar. A dose maior matinal acompanha o pico de hormônios contra-insulínicos do início do dia, e a dose ao deitar cobre a produção hepática de glicose da madrugada."
+    },
+    {
+      "question": "Qual é a situação regulatória da metformina no tratamento do diabetes mellitus gestacional no Brasil?",
+      "options": [
+        "Categoria B pelo FDA, sem aval da Anvisa",
+        "Categoria D pelo FDA, sem aval da Anvisa",
+        "Categoria B pelo FDA, aprovada pela Anvisa",
+        "Categoria X pelo FDA, proibida na gestação",
+        "Categoria A pelo FDA, aprovada pela Anvisa"
+      ],
+      "correctIndex": 0,
+      "explanation": "A metformina é categoria B na classificação norte-americana, mas a Anvisa não aprova seu uso para diabetes gestacional, de modo que a prescrição é off-label no país. O ensaio MiG, com 751 gestantes, não mostrou aumento de malformações, sepse neonatal, óbito fetal ou pré-eclâmpsia, e a droga atravessa livremente a placenta."
+    },
+    {
+      "question": "Gestante com diabetes gestacional e bom controle glicêmico obtido apenas com dieta e exercício. Em que idade gestacional o parto deve ser programado?",
+      "options": [
+        "Entre 39 e 40 semanas e 6 dias",
+        "Entre 39 e 39 semanas e 6 dias",
+        "Entre 38 e 38 semanas e 6 dias",
+        "Entre 37 e 38 semanas e 6 dias",
+        "Entre 41 e 42 semanas e 6 dias"
+      ],
+      "correctIndex": 0,
+      "image": "pg59",
+      "imageCaption": "Momento do parto no diabetes mellitus gestacional",
+      "explanation": "Com bom controle e tratamento apenas não farmacológico, a gestação pode seguir até 40 semanas e 6 dias. Quando o bom controle depende de medicação, a janela se estreita para 39 a 39 semanas e 6 dias. A via de parto continua definida por indicação obstétrica, não pelo diabetes em si."
+    },
+    {
+      "question": "Gestante com diabetes gestacional e controle glicêmico ruim, mesmo em uso de insulina. Qual é o momento recomendado para o parto?",
+      "options": [
+        "Entre 37 e 38 semanas",
+        "Entre 39 e 40 semanas",
+        "Entre 34 e 35 semanas",
+        "Entre 40 e 41 semanas",
+        "Entre 41 e 42 semanas"
+      ],
+      "correctIndex": 0,
+      "explanation": "Controle glicêmico ruim antecipa o parto para 37 a 38 semanas, independentemente de o tratamento ser farmacológico ou não, porque o risco de óbito fetal e de macrossomia cresce no fim da gestação. No diabetes prévio ou diagnosticado na gestação com controle ruim, considera-se o parto antes de 37 semanas."
+    },
+    {
+      "question": "Durante a fase ativa do trabalho de parto de gestante em uso de insulina, qual é a conduta com a dose e qual a meta glicêmica?",
+      "options": [
+        "1/3 a 1/2 da dose e alvo de 70 a 120 mg/dL",
+        "Dose plena habitual e alvo de 70 a 120 mg/dL",
+        "Suspender a insulina e alvo de 70 a 95 mg/dL",
+        "Dobrar a dose e alvo de 100 a 180 mg/dL",
+        "1/3 a 1/2 da dose e alvo de 140 a 200 mg/dL"
+      ],
+      "correctIndex": 0,
+      "explanation": "Na fase ativa mantém-se o desjejum habitual, aplica-se um terço a metade da dose de insulina e mede-se a glicemia capilar a cada 4 horas, com alvo de 70 a 120 mg/dL. Na cesárea, a paciente fica em jejum com soro glicosado a 5% a 50 mL/h e controle capilar a cada 1 a 2 horas no diabetes prévio."
+    },
+    {
+      "question": "Qual exame deve ser feito na puérpera que teve diabetes gestacional, e em que momento?",
+      "options": [
+        "TOTG de 75 g de seis a doze semanas após o parto",
+        "TOTG de 75 g na primeira semana após o parto",
+        "Hemoglobina glicada na alta da maternidade",
+        "TOTG de 100 g de seis a doze meses após o parto",
+        "Glicemia capilar diária durante seis semanas"
+      ],
+      "correctIndex": 0,
+      "image": "pg29",
+      "imageCaption": "Reclassificação glicêmica da puérpera",
+      "explanation": "A reclassificação é feita com teste de tolerância de 75 g entre seis e doze semanas do parto, dosando jejum e segunda hora. A hemoglobina glicada não serve nesse período porque a renovação eritrocitária da gestação e a perda sanguínea do parto produzem redução falsa do resultado."
+    },
+    {
+      "question": "Puérpera com diabetes gestacional prévio faz teste de tolerância com 75 g na oitava semana: jejum 110 mg/dL e segunda hora 130 mg/dL. Como se classifica esse resultado?",
+      "options": [
+        "Glicemia de jejum alterada",
+        "Intolerância oral à glicose",
+        "Diabetes mellitus franco",
+        "Tolerância normal à glicose",
+        "Resistência insulínica pura"
+      ],
+      "correctIndex": 0,
+      "explanation": "Jejum entre 100 e 125 mg/dL com segunda hora abaixo de 140 mg/dL define glicemia de jejum alterada. A intolerância à glicose exigiria segunda hora entre 140 e 199 mg/dL, e o diabetes exigiria jejum igual ou acima de 126 ou segunda hora igual ou acima de 200 mg/dL. Resultado normal seria jejum abaixo de 100 com segunda hora abaixo de 140 mg/dL."
+    },
+    {
+      "question": "Qual é o risco de diabetes tipo 2 em 20 anos após um diabetes gestacional e o quanto a mudança de estilo de vida o reduz?",
+      "options": [
+        "50 a 60%, reduzido em 35% pelo estilo de vida",
+        "50 a 60%, reduzido em 5% pelo estilo de vida",
+        "10 a 20%, reduzido em 35% pelo estilo de vida",
+        "5 a 10%, reduzido em 70% pelo estilo de vida",
+        "80 a 90%, reduzido em 15% pelo estilo de vida"
+      ],
+      "correctIndex": 0,
+      "explanation": "Quem teve diabetes gestacional tem risco de 50 a 60% de desenvolver diabetes tipo 2 em 20 anos, cerca de dez vezes o de quem não teve. Modificação de estilo de vida com manutenção de peso reduz em 35% a progressão em 10 anos, e a metformina, em 40%. O seguimento mínimo é de três anos com glicemia de jejum ou hemoglobina glicada."
+    }
+  ]
+}

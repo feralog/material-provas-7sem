@@ -1,0 +1,398 @@
+{
+  "titulo": "Glaucoma",
+  "eyebrow": "Oftalmologia · Glaucoma",
+  "subtitulo": "A neuropatia óptica que rouba o campo visual em silêncio",
+  "intro": "Glaucoma do começo ao fim: escavação do disco, campo visual e pressão intraocular; ângulo aberto contra ângulo fechado; a crise aguda e sua conduta; colírios, laser e cirurgia; formas secundárias e o glaucoma congênito.",
+  "questoes": [
+    {
+      "question": "O glaucoma corresponde a qual tipo de acometimento do nervo óptico?",
+      "options": [
+        "Neuropatia óptica crônica com escavação progressiva do disco",
+        "Neurite óptica aguda com edema do disco e dor à movimentação",
+        "Degeneração macular com perda da visão central progressiva",
+        "Retinopatia isquêmica com neovasos na periferia da retina"
+      ],
+      "correctIndex": 0,
+      "explanation": "O glaucoma é uma neuropatia óptica crônica que reúne aumento da escavação do disco, alteração do campo visual e, na maioria dos casos, elevação da pressão intraocular. A perda axonal é progressiva e irreversível, o que torna o diagnóstico precoce decisivo."
+    },
+    {
+      "question": "Qual evento celular está na base da perda visual do glaucoma?",
+      "options": [
+        "Apoptose das células ganglionares e perda de axônios do nervo",
+        "Apoptose dos fotorreceptores cones da região macular central",
+        "Necrose do epitélio pigmentar da retina na área peripapilar",
+        "Edema das células de Müller com espessamento da retina toda"
+      ],
+      "correctIndex": 0,
+      "explanation": "A apoptose das células ganglionares afina a camada de fibras nervosas da retina e a camada nuclear interna, com perda de axônios no nervo óptico. É essa perda axonal que aprofunda a escavação do disco e recorta o campo visual."
+    },
+    {
+      "question": "Qual relação escavação/disco é considerada fisiológica?",
+      "options": [
+        "Entre 0,1 e 0,5, sem assimetria entre os dois olhos",
+        "Entre 0,6 e 0,8, sem assimetria entre os dois olhos",
+        "Entre 0,5 e 0,9, desde que haja assimetria entre eles",
+        "Entre 0,8 e 1,0, sem assimetria entre os dois olhos"
+      ],
+      "correctIndex": 0,
+      "explanation": "A escavação fisiológica do nervo óptico vai de 0,1 a 0,5. Valores acima de 0,5, ou assimetria maior que 0,2 entre os olhos, tornam o disco suspeito e exigem campo visual e análise da camada de fibras nervosas."
+    },
+    {
+      "question": "Qual é a faixa de referência da pressão intraocular?",
+      "options": [
+        "Entre 10 e 21,5 mmHg",
+        "Entre 22 e 30,5 mmHg",
+        "Entre 30 e 45,5 mmHg",
+        "Entre 2 e 9,5 mmHg"
+      ],
+      "correctIndex": 0,
+      "explanation": "A pressão intraocular normal fica entre 10 e 21,5 mmHg. Valores acima dessa faixa caracterizam hipertensão ocular, fator de risco para glaucoma, mas a doença só se configura quando há dano no disco óptico ou no campo visual."
+    },
+    {
+      "question": "Paciente com PIO de 26 mmHg, disco óptico e campo visual normais. Qual é o diagnóstico?",
+      "options": [
+        "Hipertensão ocular, que é fator de risco para glaucoma",
+        "Glaucoma primário de ângulo aberto já bem instalado",
+        "Glaucoma de pressão normal em fase bastante inicial",
+        "Crise aguda de glaucoma primário de ângulo fechado"
+      ],
+      "correctIndex": 0,
+      "explanation": "Hipertensão ocular é o aumento da pressão intraocular sem alteração do campo visual e sem aumento da escavação do nervo óptico. Não é glaucoma, mas é fator de risco reconhecido para desenvolvê-lo e impõe acompanhamento periódico."
+    },
+    {
+      "question": "Existe glaucoma com pressão intraocular normal? Qual mecanismo o explica?",
+      "options": [
+        "Sim; anormalidades vasculares ou mecânicas na cabeça do nervo",
+        "Não; sem pressão elevada não há dano glaucomatoso do nervo",
+        "Sim; produção exagerada de humor aquoso pelo corpo ciliar",
+        "Não; a escavação aumentada sempre decorre de pressão alta"
+      ],
+      "correctIndex": 0,
+      "explanation": "O glaucoma de pressão normal cursa com PIO dentro da faixa de referência e é atribuído a anormalidades vasculares ou mecânicas na cabeça do nervo óptico. Cerca de 60% desses pacientes apresentam perda progressiva de campo visual."
+    },
+    {
+      "question": "Qual é o tipo mais comum de glaucoma e o perfil de maior risco?",
+      "options": [
+        "Ângulo aberto; hereditariedade e etnia, com 4x mais risco em negros",
+        "Ângulo fechado; hipermetropia alta e câmara anterior rasa em idosos",
+        "Congênito; prematuridade e baixo peso ao nascer, sobretudo em meninos",
+        "Neovascular; retinopatia diabética avançada de muito longa evolução"
+      ],
+      "correctIndex": 0,
+      "explanation": "O glaucoma primário de ângulo aberto é o tipo mais comum. Os fatores de risco não modificáveis são hereditariedade e etnia: indivíduos negros têm cerca de quatro vezes mais propensão a desenvolvê-lo."
+    },
+    {
+      "question": "Qual alteração eleva a pressão no glaucoma primário de ângulo aberto?",
+      "options": [
+        "Depósito de material extracelular na malha trabecular e no Schlemm",
+        "Aposição da raiz da íris ao trabeculado, fechando o seio camerular",
+        "Produção aumentada de humor aquoso pelos processos do corpo ciliar",
+        "Membrana fibrovascular recobrindo o ângulo a partir de neovasos"
+      ],
+      "correctIndex": 0,
+      "explanation": "No glaucoma primário de ângulo aberto o ângulo permanece anatomicamente aberto; o problema é um processo degenerativo com depósito de material extracelular na malha trabecular e no canal de Schlemm. A drenagem do humor aquoso cai e a pressão sobe."
+    },
+    {
+      "question": "Na imagem do ângulo da câmara anterior, qual estrutura marca o limite anterior do trabeculado?",
+      "options": [
+        "A linha de Schwalbe, término da membrana de Descemet",
+        "O esporão escleral, logo atrás da faixa do corpo ciliar",
+        "Os processos irianos, na raiz da própria íris periférica",
+        "A faixa ciliar, visível entre a íris e o esporão escleral"
+      ],
+      "correctIndex": 0,
+      "explanation": "Da córnea para a íris, a gonioscopia identifica linha de Schwalbe, trabeculado, esporão escleral, faixa ciliar e processos irianos. A linha de Schwalbe é o fim da membrana de Descemet e delimita o trabeculado à frente; reconhecer todos esses pontos é o que define o ângulo como aberto.",
+      "image": "s20i1",
+      "imageCaption": "Ângulo aberto da câmara anterior e suas referências"
+    },
+    {
+      "question": "Os defeitos de campo visual dessa figura são típicos de qual doença, e qual deles abre o quadro?",
+      "options": [
+        "Glaucoma; degrau nasal junto ao meridiano horizontal",
+        "Neurite óptica; escotoma central denso sobre a fixação",
+        "Tumor de hipófise; hemianopsia bitemporal bem nítida",
+        "Catarata cortical; perda difusa por todo o campo visual"
+      ],
+      "correctIndex": 0,
+      "explanation": "Os defeitos glaucomatosos começam na periferia — degrau nasal e escotoma paracentral — e evoluem para escotoma arqueado, campo tubular com crescente temporal poupado e, por fim, perda total. A visão central só cai no estágio final, o que explica o diagnóstico tardio.",
+      "image": "s13i1",
+      "imageCaption": "Sequência de defeitos glaucomatosos de campo visual"
+    },
+    {
+      "question": "O que caracteriza o campo tubular do glaucoma avançado?",
+      "options": [
+        "Ilha central de visão preservada, com perda de todo o resto",
+        "Ilha temporal de visão, com perda de todo o campo nasal",
+        "Escotoma central denso, com a periferia inteiramente normal",
+        "Perda apenas da metade superior do campo visual de um olho"
+      ],
+      "correctIndex": 0,
+      "explanation": "No estágio tubular resta apenas uma pequena ilha central de visão, com frequência acompanhada de um crescente temporal poupado. A acuidade visual medida na tabela pode continuar normal, embora o paciente já não consiga se locomover sozinho."
+    },
+    {
+      "question": "O exame mostra escavação de 0,53 num olho e 0,75 no outro, com fibras nervosas de 73 e 61 µm. Como interpretar?",
+      "options": [
+        "Assimetria e afinamento das fibras, achados suspeitos de glaucoma",
+        "Assimetria fisiológica e esperada, sem qualquer valor diagnóstico",
+        "Padrão normal, pois a escavação só preocupa acima de 0,9 no disco",
+        "Padrão de neurite óptica, com nítido espessamento das fibras"
+      ],
+      "correctIndex": 0,
+      "explanation": "Escavação acima de 0,5 e assimetria maior que 0,2 entre os olhos tornam o disco suspeito. Somada ao afinamento da camada de fibras nervosas peripapilar que o OCT quantifica, essa combinação sustenta o dano glaucomatoso e indica seguimento com campo visual.",
+      "image": "s09i1",
+      "imageCaption": "OCT de nervo óptico comparando os dois olhos"
+    },
+    {
+      "question": "No fluxograma diagnóstico, o que define um disco óptico suspeito?",
+      "options": [
+        "Escavação acima de 0,5 e assimetria acima de 0,2",
+        "Escavação acima de 0,9 e assimetria acima de 0,7",
+        "Escavação acima de 0,2 e assimetria acima de 0,1",
+        "Escavação acima de 0,7 e assimetria acima de 0,5"
+      ],
+      "correctIndex": 0,
+      "explanation": "Disco suspeito é o que tem escavação acima de 0,5 e assimetria acima de 0,2 entre os olhos. A partir dele o raciocínio segue por pressão intraocular, campo visual e camada de fibras nervosas; disco já com dano típico fecha o diagnóstico sem esses passos.",
+      "image": "s28i1",
+      "imageCaption": "Fluxograma diagnóstico do glaucoma"
+    },
+    {
+      "question": "Como se obtém a relação escavação/disco mostrada na figura?",
+      "options": [
+        "Dividindo o diâmetro da escavação pelo diâmetro do disco",
+        "Dividindo o diâmetro do disco pelo diâmetro da escavação",
+        "Dividindo a área do anel neural pela área total do disco",
+        "Dividindo o diâmetro do disco pelo diâmetro da mácula"
+      ],
+      "correctIndex": 0,
+      "explanation": "A relação escavação/disco é a razão entre o diâmetro da escavação e o diâmetro do disco óptico. Na figura, um disco tomado como 1,0 tem escavação que ocupa 0,4 dele, portanto relação de 0,4 — ainda dentro da faixa fisiológica.",
+      "image": "s08i1",
+      "imageCaption": "Como avaliar a relação escavação/disco"
+    },
+    {
+      "question": "Qual é o alvo terapêutico do glaucoma primário de ângulo aberto?",
+      "options": [
+        "Reduzir a pressão intraocular para frear a perda de visão",
+        "Reduzir a inflamação intraocular com corticoide tópico",
+        "Melhorar a perfusão do disco com vasodilatador sistêmico",
+        "Repor as fibras nervosas perdidas com neuroprotetor oral"
+      ],
+      "correctIndex": 0,
+      "explanation": "Todo o tratamento se resume a baixar a pressão intraocular e evitar a progressão da perda visual, por colírio, laser ou cirurgia. As duas estratégias farmacológicas possíveis são reduzir a produção de humor aquoso ou aumentar a sua drenagem."
+    },
+    {
+      "question": "Qual colírio antiglaucomatoso é contraindicado em asma e DPOC?",
+      "options": [
+        "Maleato de timolol, betabloqueador que reduz o humor aquoso",
+        "Tartarato de brimonidina, alfa-agonista que reduz o aquoso",
+        "Dorzolamida, inibidora da anidrase carbônica de uso tópico",
+        "Latanoprosta, prostaglandina que aumenta o fluxo de saída"
+      ],
+      "correctIndex": 0,
+      "explanation": "O maleato de timolol a 0,5% é betabloqueador e pode desencadear broncoespasmo em asmáticos e portadores de DPOC. Mesmo por via tópica produz efeitos sistêmicos como depressão, fadiga e confusão mental, o que pesa no idoso."
+    },
+    {
+      "question": "Quais efeitos adversos locais são típicos das prostaglandinas tópicas?",
+      "options": [
+        "Hiperemia, crescimento de cílios e escurecimento da íris",
+        "Bradicardia, broncoespasmo e piora de fadiga já existente",
+        "Sabor amargo persistente e alergia da pele periocular",
+        "Midríase fixa, visão de halos e dor ocular muito intensa"
+      ],
+      "correctIndex": 0,
+      "explanation": "Latanoprosta, travoprosta e bimatoprosta aumentam o fluxo uveoescleral e baixam bem a pressão, mas causam hiperemia conjuntival, crescimento dos cílios, hiperpigmentação da pele palpebral e escurecimento da íris, este último irreversível."
+    },
+    {
+      "question": "Qual classe reduz a produção de humor aquoso e ainda aumenta seu efluxo?",
+      "options": [
+        "Alfa-agonistas, como o tartarato de brimonidina a 0,2%",
+        "Betabloqueadores, como o maleato de timolol a 0,5%",
+        "Prostaglandinas, como a latanoprosta a 0,005% tópica",
+        "Inibidores da anidrase carbônica, como a dorzolamida"
+      ],
+      "correctIndex": 0,
+      "explanation": "A brimonidina tem ação dupla: diminui a formação de humor aquoso e aumenta o seu efluxo. Seu efeito colateral mais comum é reação alérgica ocular. Betabloqueadores e inibidores da anidrase carbônica agem apenas sobre a produção."
+    },
+    {
+      "question": "Quando o colírio não controla a pressão no glaucoma de ângulo aberto, o que se indica?",
+      "options": [
+        "Trabeculoplastia a laser de argônio ou trabeculectomia",
+        "Iridotomia periférica com YAG laser no olho acometido",
+        "Facectomia com implante de lente intraocular tórica",
+        "Vitrectomia posterior com injeção de antiangiogênico"
+      ],
+      "correctIndex": 0,
+      "explanation": "Falhando o tratamento clínico, restam a trabeculoplastia a laser de argônio, que melhora a drenagem pela malha trabecular, e a trabeculectomia, em geral com mitomicina C para evitar cicatrização da fístula. A iridotomia é conduta do ângulo fechado."
+    },
+    {
+      "question": "Na figura, qual mecanismo eleva a pressão intraocular?",
+      "options": [
+        "A raiz da íris aposta ao trabeculado, bloqueando a drenagem",
+        "A degeneração do trabeculado, com o ângulo ainda bem aberto",
+        "A membrana de neovasos recobrindo todo o seio camerular",
+        "A produção exagerada de aquoso pelos processos ciliares"
+      ],
+      "correctIndex": 0,
+      "explanation": "No glaucoma primário de ângulo fechado o bloqueio pupilar abaúla a íris para frente e sua raiz se apõe ao trabeculado, impedindo a saída do humor aquoso. O fechamento pode ser agudo, com crise, ou crônico e silencioso.",
+      "image": "f2_s05i1",
+      "imageCaption": "Bloqueio pupilar e aposição da íris ao ângulo"
+    },
+    {
+      "question": "Olho vermelho, dor intensa, halos coloridos, náuseas e vômitos. Qual é a hipótese?",
+      "options": [
+        "Crise aguda de glaucoma de ângulo fechado, uma emergência",
+        "Conjuntivite bacteriana aguda, com secreção purulenta",
+        "Glaucoma primário de ângulo aberto em fase avançada",
+        "Hemorragia vítrea espontânea em paciente diabético"
+      ],
+      "correctIndex": 0,
+      "explanation": "A crise aguda de ângulo fechado reúne dor ocular intensa, hiperemia, embaçamento visual, halos coloridos ao redor das luzes e sintomas vagais como náusea e vômito. É emergência médica: a pressão precisa cair nas primeiras horas."
+    },
+    {
+      "question": "Qual achado a fotografia de lâmpada de fenda demonstra?",
+      "options": [
+        "Câmara anterior rasa, com a íris quase encostada na córnea",
+        "Câmara anterior profunda, com a íris distante da córnea",
+        "Hifema ocupando a metade inferior da câmara anterior",
+        "Catarata branca intumescente vista logo atrás da pupila"
+      ],
+      "correctIndex": 0,
+      "explanation": "O corte óptico mostra a íris praticamente encostada na face posterior da córnea: câmara anterior rasa. Esse é o olho anatomicamente predisposto ao fechamento do ângulo, achado que justifica gonioscopia e, muitas vezes, iridotomia preventiva.",
+      "image": "f2_s06i1",
+      "imageCaption": "Corte de lâmpada de fenda da câmara anterior"
+    },
+    {
+      "question": "Qual erro refrativo predispõe à crise aguda de glaucoma de ângulo fechado?",
+      "options": [
+        "Hipermetropia alta, que acompanha olho curto e ângulo estreito",
+        "Miopia alta, que acompanha olho longo e ângulo bastante amplo",
+        "Astigmatismo irregular, por ceratocone já em fase avançada",
+        "Presbiopia precoce, por perda de acomodação do cristalino"
+      ],
+      "correctIndex": 0,
+      "explanation": "Olhos hipermetropes são curtos, com câmara anterior rasa e ângulo estreito, o que os torna propensos ao fechamento. Catarata intumescente, uveíte com seclusão pupilar e midríase espontânea ou medicamentosa completam a lista de desencadeantes."
+    },
+    {
+      "question": "Qual grupo de medicamentos pode precipitar uma crise de ângulo fechado?",
+      "options": [
+        "Anticolinérgicos e simpaticomiméticos, que dilatam a pupila",
+        "Colinérgicos e parassimpaticomiméticos, que contraem a pupila",
+        "Betabloqueadores tópicos, que reduzem o humor aquoso do olho",
+        "Antibióticos tópicos, que alteram a superfície ocular exposta"
+      ],
+      "correctIndex": 0,
+      "explanation": "Qualquer droga que dilate a pupila pode fechar um ângulo já estreito: atropina, antidepressivos, broncodilatadores, descongestionantes nasais, tocolíticos e topiramato estão entre as citadas. A midríase espessa a raiz da íris e a encosta no trabeculado."
+    },
+    {
+      "question": "Depois de revertida a crise aguda de ângulo fechado, qual conduta cabe no olho contralateral?",
+      "options": [
+        "Iridotomia profilática, pela mesma predisposição anatômica",
+        "Apenas observação anual, pois o risco é só do olho acometido",
+        "Colírio de prostaglandina em uso contínuo e permanente",
+        "Trabeculectomia imediata, antes que aquele ângulo se feche"
+      ],
+      "correctIndex": 0,
+      "explanation": "A predisposição anatômica é bilateral, de modo que o olho contralateral deve ser avaliado e, na maioria das vezes, submetido a iridotomia profilática. No olho acometido a iridotomia com YAG laser vem logo após o tratamento clínico abrir a crise."
+    },
+    {
+      "question": "Como a iridotomia a laser resolve o fechamento angular?",
+      "options": [
+        "Abre orifício na íris ligando a câmara posterior à anterior",
+        "Abre fístula da câmara anterior para o espaço subconjuntival",
+        "Queima a malha trabecular, ampliando a drenagem do aquoso",
+        "Retira o cristalino, aprofundando a câmara anterior do olho"
+      ],
+      "correctIndex": 0,
+      "explanation": "A iridotomia perfura a periferia da íris e cria passagem direta entre a câmara posterior e a anterior. Isso rompe o bloqueio pupilar, a íris se aplana e o ângulo reabre. O disparo é feito em pseudocripta periférica, de preferência superior."
+    },
+    {
+      "question": "Qual achado gonioscópico marca o glaucoma crônico de ângulo fechado?",
+      "options": [
+        "Sinéquias anteriores periféricas colando a íris ao trabeculado",
+        "Neovasos finos cruzando o esporão escleral e o trabeculado",
+        "Recessão angular com alargamento da faixa do corpo ciliar",
+        "Trabeculado amplamente visível nos quatro quadrantes do olho"
+      ],
+      "correctIndex": 0,
+      "explanation": "As goniosinéquias, ou sinéquias anteriores periféricas, são aderências permanentes entre a raiz da íris e o trabeculado, resultado de aposições repetidas. Elas fecham o ângulo de modo irreversível, e o quadro pode cursar com crises agudas sobrepostas."
+    },
+    {
+      "question": "O que provoca a rubeose de íris que leva ao glaucoma neovascular?",
+      "options": [
+        "Isquemia retiniana disseminada, como na retinopatia diabética",
+        "Inflamação crônica da úvea anterior, como na uveíte grave",
+        "Uso prolongado de corticoide tópico em doses muito altas",
+        "Trauma contuso com recessão do ângulo da câmara anterior"
+      ],
+      "correctIndex": 0,
+      "explanation": "A neovascularização da íris nasce da isquemia retiniana disseminada: retinopatia diabética avançada e oclusão isquêmica da veia central da retina são as causas clássicas. Os neovasos invadem o ângulo, formam membrana fibrovascular e o fecham."
+    },
+    {
+      "question": "Qual glaucoma secundário imita o primário de ângulo aberto e regride ao suspender a causa?",
+      "options": [
+        "Glaucoma por esteroides tópicos, perioculares ou intraoculares",
+        "Glaucoma neovascular, por isquemia retiniana já disseminada",
+        "Glaucoma congênito, por falha de reabsorção do mesoderma",
+        "Glaucoma facolítico, por catarata hipermadura extravasada"
+      ],
+      "correctIndex": 0,
+      "explanation": "Corticoides tópicos, perioculares e intraoculares elevam a pressão nos respondedores, com quadro idêntico ao do glaucoma primário de ângulo aberto. Interromper a droga elimina o efeito; se o esteroide for indispensável, trata-se o glaucoma clinicamente."
+    },
+    {
+      "question": "Lactente com epífora, fotofobia e córneas embaçadas e aumentadas. Qual é a hipótese?",
+      "options": [
+        "Glaucoma congênito primário, já com buftalmo bilateral",
+        "Obstrução congênita da via lacrimal, com dacriocistite",
+        "Conjuntivite neonatal por clamídia, com quemose bilateral",
+        "Catarata congênita bilateral, com leucocoria bem evidente"
+      ],
+      "correctIndex": 0,
+      "explanation": "Epífora, fotofobia e edema de córnea, somados ao aumento do globo — o buftalmo —, à pressão elevada e à escavação aumentada, compõem o glaucoma congênito primário. Metade dos casos se manifesta ao nascimento e o restante até o primeiro ano de vida.",
+      "image": "f2_s16i1",
+      "imageCaption": "Lactente com aumento bilateral das córneas"
+    },
+    {
+      "question": "Qual falha embriológica explica o glaucoma congênito primário?",
+      "options": [
+        "Reabsorção incompleta do tecido mesodérmico que preenche o ângulo",
+        "Persistência do vítreo primário hiperplásico na câmara posterior",
+        "Fechamento incompleto da fissura óptica embrionária do globo",
+        "Migração anômala da crista neural para a retina mais externa"
+      ],
+      "correctIndex": 0,
+      "explanation": "No fim da gestação, o tecido mesodérmico que preenche o ângulo da câmara anterior — o ligamento pectíneo — deve ser reabsorvido. Quando isso não se completa, a drenagem do humor aquoso já nasce comprometida e a pressão sobe."
+    },
+    {
+      "question": "Qual procedimento cirúrgico é indicado no glaucoma congênito primário?",
+      "options": [
+        "Goniotomia ou trabeculotomia, abrindo a via de drenagem",
+        "Iridotomia a laser, rompendo o bloqueio pupilar do olho",
+        "Trabeculoplastia a laser de argônio sobre o trabeculado",
+        "Facectomia precoce com implante de lente intraocular"
+      ],
+      "correctIndex": 0,
+      "explanation": "O glaucoma congênito é cirúrgico: a goniotomia incisa internamente a malha trabecular sob visão gonioscópica, e a trabeculotomia abre o canal de Schlemm por via externa. O colírio serve apenas como ponte até o procedimento."
+    },
+    {
+      "question": "Quais síndromes cursam com glaucoma congênito secundário?",
+      "options": [
+        "Axenfeld-Rieger, Peters e aniridia, com anomalias oculares",
+        "Marfan, Down e homocistinúria, com ectopia do cristalino",
+        "Sturge-Weber, Wilson e Behçet, com uveíte bem recorrente",
+        "Usher, Alport e Stickler, com degeneração ampla da retina"
+      ],
+      "correctIndex": 0,
+      "explanation": "O glaucoma congênito secundário aparece associado a anormalidades oculares estruturais: síndrome de Axenfeld-Rieger, síndrome de Peters e aniridia. O exame costuma revelar corectopia, sinéquias anteriores e opacidade corneana."
+    },
+    {
+      "question": "O que caracteriza o glaucoma absoluto?",
+      "options": [
+        "Olho cego e doloroso, desfecho de qualquer glaucoma sem controle",
+        "Olho cego e indolor, com a pressão intraocular já normalizada",
+        "Olho doloroso mas com visão útil, revertido só por colírio tópico",
+        "Olho cego e doloroso, desfecho exclusivo do glaucoma neovascular"
+      ],
+      "correctIndex": 0,
+      "explanation": "Glaucoma absoluto é o estágio final de qualquer glaucoma não controlado: o olho fica cego e doloroso. Sem visão a recuperar, o tratamento passa a mirar a dor, e a evisceração com implante e prótese externa é uma das saídas."
+    }
+  ]
+}

@@ -1,0 +1,354 @@
+{
+  "titulo": "Catarata",
+  "eyebrow": "Oftalmologia · Cristalino",
+  "subtitulo": "Do reflexo vermelho do recém-nascido à facoemulsificação",
+  "intro": "Opacidade do cristalino em todas as suas formas: os três tipos relacionados à idade e o que cada um faz com a visão, as causas secundárias (corticoide, diabetes, trauma, uveíte), a catarata congênita e a urgência do reflexo vermelho, e a cirurgia com implante de lente intraocular e suas complicações.",
+  "questoes": [
+    {
+      "question": "Como se define catarata?",
+      "options": [
+        "Qualquer opacidade do cristalino, congênita ou adquirida",
+        "Qualquer opacidade da córnea, congênita ou adquirida",
+        "Qualquer opacidade do vítreo, congênita ou adquirida",
+        "Qualquer opacidade da retina, congênita ou adquirida"
+      ],
+      "correctIndex": 0,
+      "explanation": "Catarata é qualquer perda de transparência do cristalino, independentemente do grau, da localização ou da causa. Pode estar presente ao nascimento ou ser adquirida ao longo da vida. Opacidade de córnea é leucoma, e opacidade de vítreo é vitreíte ou hemorragia vítrea."
+    },
+    {
+      "question": "Qual é a prevalência aproximada de catarata na faixa etária em que ela se torna um problema de saúde pública?",
+      "options": [
+        "Cerca de 50% das pessoas entre 65 e 74 anos têm catarata",
+        "Cerca de 50% das pessoas entre 25 e 34 anos têm catarata",
+        "Cerca de 50% das pessoas entre 35 e 44 anos têm catarata",
+        "Cerca de 50% das pessoas entre 15 e 24 anos têm catarata"
+      ],
+      "correctIndex": 0,
+      "explanation": "Metade da população entre 65 e 74 anos já apresenta algum grau de opacidade do cristalino. O envelhecimento é, isoladamente, a principal causa de catarata, e a prevalência continua subindo depois dos 75 anos. Por isso a cirurgia de catarata é o procedimento oftalmológico mais realizado no mundo."
+    },
+    {
+      "question": "A biomicroscopia de um paciente de 72 anos com queda progressiva da visão para longe mostra o núcleo central do cristalino endurecido e de coloração âmbar-amarelada, enquanto a periferia permanece relativamente clara. Que forma de catarata relacionada à idade esse aspecto define?",
+      "options": [
+        "Catarata nuclear (esclerose nuclear)",
+        "Catarata cortical (raios corticais)",
+        "Catarata subcapsular posterior",
+        "Catarata subcapsular anterior"
+      ],
+      "correctIndex": 0,
+      "explanation": "A esclerose nuclear é o endurecimento e o amarelecimento progressivos do núcleo do cristalino, visíveis à lâmpada de fenda como um núcleo âmbar ou brunescente. É a forma mais comum de catarata relacionada à idade e compromete predominantemente a visão de longe. A cortical aparece como cunhas brancas periféricas e a subcapsular posterior como placa granular no polo posterior.",
+      "image": "s07i1",
+      "imageCaption": "Corte óptico à lâmpada de fenda: núcleo âmbar"
+    },
+    {
+      "question": "O endurecimento do núcleo do cristalino aumenta seu índice de refração. Para que lado a refração do olho é deslocada?",
+      "options": [
+        "Para a miopia, melhorando temporariamente a visão de perto",
+        "Para a hipermetropia, piorando ainda mais a visão de perto",
+        "Para o astigmatismo irregular, distorcendo a visão de perto",
+        "Para a emetropia, dispensando a correção da visão de perto"
+      ],
+      "correctIndex": 0,
+      "explanation": "O núcleo esclerosado refrata mais, o que torna o olho mais míope. O idoso percebe isso como uma \"segunda visão\": volta a ler sem óculos enquanto a visão de longe piora. É um sinal de alerta de esclerose nuclear em progressão, não de melhora real."
+    },
+    {
+      "question": "A retroiluminação do cristalino deste paciente mostra opacidades brancas em cunha, dispostas da periferia para o centro como os raios de uma roda. Que forma de catarata esse padrão caracteriza?",
+      "options": [
+        "Cortical, com opacidades em cunha radiais",
+        "Nuclear, com endurecimento central âmbar",
+        "Subcapsular posterior, em placa granular",
+        "Capsular anterior, em placa fibrótica"
+      ],
+      "correctIndex": 0,
+      "explanation": "A catarata cortical começa na periferia do córtex e avança radialmente em cunhas, o que dá o aspecto de raios de roda de carroça. Enquanto poupa o eixo visual, causa mais ofuscamento do que queda de acuidade. Quando as cunhas confluem e branqueiam todo o córtex, a catarata se torna madura.",
+      "image": "s09i1",
+      "imageCaption": "Opacidades corticais radiais em cunha"
+    },
+    {
+      "question": "Uma opacidade granular situada logo à frente da cápsula posterior, bem no eixo visual, produz qual padrão de sintomas?",
+      "options": [
+        "Ofuscamento intenso à luz e piora da visão de perto",
+        "Ofuscamento intenso à luz e ganho da visão de perto",
+        "Ausência de ofuscamento e piora da visão de longe",
+        "Ausência de ofuscamento e ganho da visão de longe"
+      ],
+      "correctIndex": 0,
+      "explanation": "A opacidade subcapsular posterior fica no ponto nodal do olho, então qualquer situação que contraia a pupila a torna mais sintomática: sol forte, faróis à noite e leitura. O paciente queixa-se de ofuscamento desproporcional e de dificuldade para ler, mesmo com acuidade de longe ainda razoável. O ganho de visão de perto é o que ocorre na esclerose nuclear, não aqui."
+    },
+    {
+      "question": "O uso prolongado de corticoide, por via sistêmica, inalatória ou tópica ocular, induz preferencialmente qual forma de catarata?",
+      "options": [
+        "Subcapsular posterior",
+        "Nuclear esclerótica",
+        "Cortical periférica",
+        "Capsular anterior"
+      ],
+      "correctIndex": 0,
+      "explanation": "O corticoide é a causa medicamentosa clássica de catarata e produz tipicamente a opacidade subcapsular posterior. O risco depende de dose e tempo de uso, e a opacidade pode surgir em pacientes jovens, fora da faixa etária habitual. É a mesma forma associada ao diabetes e à uveíte crônica."
+    },
+    {
+      "question": "Além dos corticoides, qual classe de anti-hipertensivos é apontada como capaz de estimular a formação de depósitos no cristalino?",
+      "options": [
+        "Betabloqueadores, como propranolol e carvedilol",
+        "Broncodilatadores, como salbutamol e formoterol",
+        "Antiagregantes, como clopidogrel e ticagrelor",
+        "Anticoagulantes, como varfarina e rivaroxabana"
+      ],
+      "correctIndex": 0,
+      "explanation": "Entre os fármacos ligados à catarata medicamentosa estão os betabloqueadores propranolol e carvedilol, que favorecem depósitos no cristalino. A lista inclui ainda corticoides, antibióticos como eritromicina e sulfa, isotretinoína e alguns antidepressivos inibidores de recaptação de serotonina. O efeito é dependente do tempo de uso."
+    },
+    {
+      "question": "A isotretinoína, usada na acne grave, é associada a risco de alteração do cristalino principalmente por qual mecanismo?",
+      "options": [
+        "Aumento da sensibilidade à luz, com toxicidade ocular",
+        "Aumento da pressão intraocular, com dano ao nervo óptico",
+        "Redução do filme lacrimal, com ulceração da córnea",
+        "Depósito de pigmento na retina, com perda de campo"
+      ],
+      "correctIndex": 0,
+      "explanation": "A isotretinoína provoca irritação ocular e aumento da sensibilidade à luz, e essa fototoxicidade é o mecanismo apontado para as alterações do cristalino. O medicamento também causa olho seco e blefaroconjuntivite, mas a catarata é atribuída à toxicidade luminosa. Não há relação com aumento de pressão intraocular."
+    },
+    {
+      "question": "Qual conjunto de queixas visuais caracteriza a catarata em evolução?",
+      "options": [
+        "Baixa visão, embaçamento e visão amarelada",
+        "Dor ocular, olho vermelho e halos coloridos",
+        "Perda de campo nasal, dor e olho vermelho",
+        "Diplopia binocular, ptose e dor ao movimento"
+      ],
+      "correctIndex": 0,
+      "explanation": "A catarata é indolor e progressiva: baixa visão, embaçamento e alteração das cores, que ficam amareladas pela filtragem da luz azul no núcleo esclerosado. Olho vermelho e dor apontam para inflamação ou glaucoma agudo, não para catarata. Diplopia binocular com ptose sugere causa neuromuscular."
+    },
+    {
+      "question": "Qual é o tratamento definitivo da catarata que já compromete a função visual do paciente?",
+      "options": [
+        "Cirurgia, com extração do cristalino e implante de lente",
+        "Colírio midriático, usado de forma contínua e crônica",
+        "Óculos de alto grau, trocados a cada seis meses",
+        "Colírio anti-inflamatório, em ciclos de quatro semanas"
+      ],
+      "correctIndex": 0,
+      "explanation": "Não existe tratamento clínico que reverta a opacidade do cristalino: o tratamento é cirúrgico, com extração do cristalino e implante de lente intraocular. Óculos só ajudam enquanto a opacidade é discreta e, na esclerose nuclear, a troca frequente de grau é sinal de progressão. A indicação cirúrgica depende do impacto funcional na vida do paciente."
+    },
+    {
+      "question": "O exame reproduzido nesta impressão mede a curvatura corneana (K1 e K2) e o comprimento axial do olho e aplica fórmulas como a de Holladay. Qual é a sua finalidade antes da cirurgia de catarata?",
+      "options": [
+        "Calcular o grau da lente intraocular que substitui o cristalino",
+        "Medir a espessura da camada de fibras nervosas da retina",
+        "Avaliar a contagem de células endoteliais da córnea central",
+        "Mapear o campo visual central e periférico antes da cirurgia"
+      ],
+      "correctIndex": 0,
+      "explanation": "A biometria combina ceratometria e comprimento axial em fórmulas de cálculo para definir a dioptria da lente intraocular que substituirá o cristalino. Um erro de medida aqui se traduz em ametropia residual depois da cirurgia. A medida pode ser feita por ultrassom de contato ou de imersão, sendo a de imersão menos sujeita a compressão da córnea.",
+      "image": "s12i1",
+      "imageCaption": "Biometria ultrassônica: ceratometria, comprimento axial e cálculo da LIO"
+    },
+    {
+      "question": "Na facoemulsificação, uma ponteira introduzida por incisão pequena atua sobre o cristalino opaco. Como o cristalino é removido nessa técnica?",
+      "options": [
+        "Fragmenta o núcleo por ultrassom e o aspira pela incisão",
+        "Expressa o núcleo inteiro por uma incisão ampla no limbo",
+        "Retira o cristalino com a cápsula por criossonda no limbo",
+        "Dissolve o núcleo com enzima injetada na câmara anterior"
+      ],
+      "correctIndex": 0,
+      "explanation": "A ponteira de facoemulsificação vibra em frequência ultrassônica, fragmenta o núcleo dentro do saco capsular e aspira os fragmentos pela mesma via. A incisão de poucos milímetros permite implantar uma lente dobrável e dispensa sutura na maioria dos casos. A expressão do núcleo inteiro por incisão ampla define a facectomia extracapsular."
+    },
+    {
+      "question": "O que distingue a facectomia extracapsular da facoemulsificação?",
+      "options": [
+        "Incisão ampla, com saída do núcleo inteiro e sem ultrassom",
+        "Incisão pequena, com o núcleo fragmentado por ultrassom",
+        "Incisão pequena, sem abertura da cápsula anterior do saco",
+        "Incisão ampla, com retirada de toda a cápsula do cristalino"
+      ],
+      "correctIndex": 0,
+      "explanation": "Na facectomia extracapsular o núcleo sai inteiro por uma incisão ampla, sem ultrassom, e a cápsula posterior é preservada para receber a lente intraocular. Ela ainda é usada em cataratas muito duras ou maduras, em que a facoemulsificação exigiria energia excessiva. A retirada de todo o saco capsular caracteriza a técnica intracapsular, hoje abandonada."
+    },
+    {
+      "question": "A lente intraocular mostrada tem anéis concêntricos gravados na face óptica. Qual é a finalidade desse desenho?",
+      "options": [
+        "Dividir a luz em mais de um foco, para longe e para perto",
+        "Bloquear a luz azul que chega à mácula, reduzindo o dano",
+        "Corrigir o astigmatismo por meio de um eixo mais curvo",
+        "Filtrar a radiação ultravioleta que atinge o vítreo"
+      ],
+      "correctIndex": 0,
+      "explanation": "Os anéis concêntricos difrativos repartem a luz incidente em dois ou mais focos, dando visão de longe e de perto sem óculos, já que o olho operado perde a acomodação. O preço é a perda de contraste e a presença de halos noturnos. As hápticas laterais, em C, apoiam a lente dentro do saco capsular.",
+      "image": "s13i2",
+      "imageCaption": "Lente intraocular multifocal com anéis difrativos"
+    },
+    {
+      "question": "Durante a facoemulsificação, a ruptura da cápsula posterior pode provocar qual complicação intraoperatória grave?",
+      "options": [
+        "Queda de fragmentos do cristalino para a cavidade vítrea",
+        "Queda de fragmentos do cristalino para o saco lacrimal",
+        "Obstrução do canal nasolacrimal por material do cristalino",
+        "Deslocamento da córnea para dentro da câmara posterior"
+      ],
+      "correctIndex": 0,
+      "explanation": "Com a cápsula posterior rota, o núcleo ou seus fragmentos podem \"mergulhar\" na cavidade vítrea, fora do alcance da ponteira de faco. O material retido desencadeia inflamação intensa e aumento de pressão intraocular, e a remoção exige vitrectomia posterior. É uma das complicações mais temidas da cirurgia."
+    },
+    {
+      "question": "Qual complicação da cirurgia de catarata consiste em sangramento coroideo maciço que empurra o conteúdo intraocular para fora pela incisão?",
+      "options": [
+        "Hemorragia expulsiva",
+        "Ceratopatia bolhosa",
+        "Descentração da LIO",
+        "Hifema persistente"
+      ],
+      "correctIndex": 0,
+      "explanation": "A hemorragia expulsiva é a ruptura de vasos coroideos com o olho aberto, e a pressão do sangramento expulsa vítreo e retina pela incisão. É a complicação mais catastrófica da cirurgia intraocular e o prognóstico visual costuma ser péssimo. O risco é maior em incisões amplas, o que favorece a facoemulsificação sobre a técnica extracapsular."
+    },
+    {
+      "question": "Dor ocular intensa, hipópio e queda abrupta da visão três dias depois da extração do cristalino indicam qual complicação?",
+      "options": [
+        "Endoftalmite pós-operatória",
+        "Ceratopatia bolhosa tardia",
+        "Descentralização tardia da LIO",
+        "Hifema pós-operatório tardio"
+      ],
+      "correctIndex": 0,
+      "explanation": "A infecção intraocular após a cirurgia se apresenta nos primeiros dias com dor, piora visual rápida e pus na câmara anterior (hipópio). É emergência: exige coleta de material e antibiótico intravítreo imediato. Descentração da lente e ceratopatia bolhosa não cursam com hipópio nem com esse curso agudo."
+    },
+    {
+      "question": "A ceratopatia bolhosa após cirurgia de catarata resulta de lesão de qual estrutura?",
+      "options": [
+        "Endotélio da córnea, que perde a capacidade de desidratá-la",
+        "Epitélio da conjuntiva, que perde a produção de mucina",
+        "Epitélio do corpo ciliar, que produz o humor aquoso",
+        "Trabeculado, que faz a drenagem do humor aquoso do olho"
+      ],
+      "correctIndex": 0,
+      "explanation": "O endotélio corneano bombeia água para fora do estroma e mantém a córnea transparente; suas células não se regeneram. Trauma cirúrgico, energia de ultrassom excessiva ou contato com instrumentos reduzem essa população celular, e a córnea edemacia formando bolhas epiteliais dolorosas. O tratamento definitivo é o transplante endotelial."
+    },
+    {
+      "question": "Por que a catarata congênita densa causa perda visual permanente se não for tratada a tempo?",
+      "options": [
+        "Impede o estímulo visual e gera ambliopia por privação",
+        "Desloca a retina e gera descolamento regmatogênico",
+        "Eleva a pressão ocular e gera atrofia do nervo óptico",
+        "Reduz a lágrima e gera opacidade cicatricial da córnea"
+      ],
+      "correctIndex": 0,
+      "explanation": "O desenvolvimento das vias visuais depende de imagem nítida na retina nos primeiros meses de vida. Uma opacidade densa bloqueia esse estímulo e produz ambliopia por privação, que é a forma mais grave e de pior prognóstico. Depois de encerrado o período crítico, remover a catarata não recupera a visão perdida."
+    },
+    {
+      "question": "O reflexo pupilar deste lactente aparece esbranquiçado em um dos olhos, em vez do vermelho-alaranjado habitual. Que conduta esse achado exige?",
+      "options": [
+        "Encaminhamento oftalmológico imediato para investigação",
+        "Reavaliação eletiva do reflexo aos dois anos de idade",
+        "Observação clínica, pois é comum até o sexto mês de vida",
+        "Colírio lubrificante e reavaliação em quatro a seis semanas"
+      ],
+      "correctIndex": 0,
+      "explanation": "O reflexo vermelho traduz a passagem da luz por meios transparentes até a retina; quando fica branco (leucocoria), há obstáculo no trajeto. É o achado que faz a triagem de catarata congênita ainda na maternidade e nas consultas de puericultura. O encaminhamento é imediato, porque tanto a ambliopia quanto um eventual tumor dependem do tempo.",
+      "image": "s19i1",
+      "imageCaption": "Leucocoria: reflexo pupilar esbranquiçado em um dos olhos"
+    },
+    {
+      "question": "Diante de leucocoria em uma criança, qual diagnóstico precisa ser afastado com urgência por ameaçar a vida?",
+      "options": [
+        "Retinoblastoma, tumor maligno da retina",
+        "Catarata congênita, opacidade do cristalino",
+        "Coloboma de íris, falha de fechamento",
+        "Glaucoma congênito, com aumento do olho"
+      ],
+      "correctIndex": 0,
+      "explanation": "Leucocoria não é sinônimo de catarata: o retinoblastoma é o principal diagnóstico diferencial e, por ser tumor maligno com potencial de metástase, define a urgência da avaliação. O exame de fundo de olho sob dilatação, e se necessário a ultrassonografia, separam as duas condições. Catarata congênita ameaça a visão; retinoblastoma ameaça a vida."
+    },
+    {
+      "question": "Esta criança apresenta opacidade branca na pupila de apenas um dos olhos. Por que a catarata congênita unilateral densa é operada com mais urgência que a bilateral?",
+      "options": [
+        "A competição entre os olhos aprofunda a ambliopia",
+        "A pressão intraocular sobe mais rápido no olho opaco",
+        "O olho opaco cresce mais que o outro e se desalinha",
+        "A cápsula fica mais aderida e dificulta a cirurgia"
+      ],
+      "correctIndex": 0,
+      "explanation": "Na catarata unilateral o olho sadio fornece imagem nítida e domina o córtex visual, suprimindo o olho opaco: a ambliopia se instala mais rápido e mais profunda do que quando ambos os olhos estão igualmente privados. Por isso a indicação é de cirurgia de urgência, seguida de correção óptica e oclusão do olho bom. Na forma bilateral o prazo é um pouco maior, mas ainda curto.",
+      "image": "s20i1",
+      "imageCaption": "Catarata congênita unilateral: leucocoria em um único olho"
+    },
+    {
+      "question": "Quais características da opacidade orientam a indicação cirúrgica na catarata congênita?",
+      "options": [
+        "Tamanho, localização e densidade da opacidade",
+        "Cor, temperatura e consistência da opacidade",
+        "Simetria, cor e mobilidade da opacidade",
+        "Tamanho, cor e velocidade de reabsorção"
+      ],
+      "correctIndex": 0,
+      "explanation": "Opacidades pequenas, periféricas e pouco densas podem ser acompanhadas, porque não bloqueiam o eixo visual. Já uma opacidade central, ampla e densa impede a formação de imagem e indica cirurgia precoce. Tamanho, localização e densidade são, portanto, os três parâmetros que decidem operar ou observar."
+    },
+    {
+      "question": "A galactosemia clássica, no recém-nascido alimentado com leite, produz catarata acompanhada de qual conjunto de achados?",
+      "options": [
+        "Icterícia, hepatomegalia e lesão renal e cerebral",
+        "Hipertensão, cardiomegalia e lesão pulmonar difusa",
+        "Anemia, esplenomegalia e lesão de medula óssea",
+        "Hipotireoidismo, bócio e lesão da tireoide difusa"
+      ],
+      "correctIndex": 0,
+      "explanation": "Na galactosemia o açúcar do leite não é metabolizado e se acumula, danificando fígado, rins, cérebro e cristalino. O quadro reúne icterícia, hepatomegalia, lesão renal e comprometimento neurológico, com catarata precoce. A retirada da galactose da dieta pode reverter a opacidade inicial do cristalino."
+    },
+    {
+      "question": "Qual infecção congênita cursa com catarata associada a surdez neurossensorial e cardiopatia?",
+      "options": [
+        "Rubéola congênita",
+        "Malária congênita",
+        "Hepatite congênita",
+        "Sífilis congênita"
+      ],
+      "correctIndex": 0,
+      "explanation": "A infecção materna pelo vírus da rubéola no primeiro trimestre produz a tríade clássica de catarata, surdez neurossensorial e cardiopatia, geralmente persistência do canal arterial. É uma das causas evitáveis de catarata congênita e por isso a vacinação pré-concepcional é determinante. A sífilis congênita cursa com ceratite intersticial, não com catarata típica."
+    },
+    {
+      "question": "Um jovem sofreu trauma ocular contuso e, semanas depois, surge no cristalino uma opacidade branca em forma de estrela, ocupando o eixo visual. Qual é o diagnóstico?",
+      "options": [
+        "Catarata traumática",
+        "Catarata congênita",
+        "Catarata diabética",
+        "Catarata pós-uveíte"
+      ],
+      "correctIndex": 0,
+      "explanation": "O trauma contuso transmite a onda de energia ao cristalino e lesa as fibras subcapsulares, produzindo a opacidade em roseta ou estrela característica. Ela pode surgir dias a meses depois do trauma e costuma ser unilateral, num paciente jovem. O trauma perfurante é a outra forma de catarata traumática, com mecanismo diferente.",
+      "image": "s21i1",
+      "imageCaption": "Catarata traumática: opacidade em roseta no eixo visual"
+    },
+    {
+      "question": "Por que o diabetes mal controlado acelera a formação de catarata?",
+      "options": [
+        "O sorbitol acumulado no cristalino causa edema das fibras",
+        "O colesterol acumulado no cristalino causa depósito lipídico",
+        "O ácido úrico acumulado no cristalino causa microcristais",
+        "O ferro acumulado no cristalino causa depósito ferruginoso"
+      ],
+      "correctIndex": 0,
+      "explanation": "A hiperglicemia desvia a glicose para a via da aldose redutase, e o sorbitol formado não atravessa a membrana das fibras do cristalino. A retenção osmótica de água causa edema, ruptura das fibras e opacificação. O resultado é catarata mais precoce e de progressão mais rápida, tipicamente subcapsular posterior."
+    },
+    {
+      "question": "A sequência cirúrgica mostra uma pupila presa por aderências à cápsula anterior, que precisou ser corada com azul de tripano para permitir a capsulorrexe. Qual condição prévia explica esse quadro?",
+      "options": [
+        "Uveíte crônica, com sinéquias posteriores",
+        "Glaucoma agudo, com edema de córnea",
+        "Ceratite viral, com úlcera dendrítica",
+        "Retinopatia diabética, com hemorragia"
+      ],
+      "correctIndex": 0,
+      "explanation": "A inflamação repetida da úvea anterior cola a borda pupilar à cápsula anterior do cristalino, formando sinéquias posteriores que impedem a dilatação. A cirurgia exige liberar as aderências e corar a cápsula, porque o reflexo vermelho está prejudicado. Além da catarata, a uveíte crônica aumenta o risco de glaucoma secundário e de inflamação pós-operatória.",
+      "image": "s22i1",
+      "imageCaption": "Catarata pós-uveíte: pupila com sinéquias, capsulorrexe corada e implante da LIO"
+    },
+    {
+      "question": "Meses após uma facoemulsificação bem-sucedida, a visão volta a embaçar por opacificação da cápsula posterior. Qual é o tratamento?",
+      "options": [
+        "Capsulotomia com laser YAG, feita em consultório",
+        "Troca da lente intraocular, em centro cirúrgico",
+        "Colírio de corticoide, por oito semanas seguidas",
+        "Transplante lamelar de córnea, em centro cirúrgico"
+      ],
+      "correctIndex": 0,
+      "explanation": "Células epiteliais remanescentes proliferam sobre a cápsula posterior preservada e a tornam opaca, o que é chamado de catarata secundária. O laser YAG abre uma janela central na cápsula em poucos minutos, em regime ambulatorial, e a visão retorna de imediato. Não é recidiva da catarata, já que o cristalino foi removido."
+    }
+  ]
+}

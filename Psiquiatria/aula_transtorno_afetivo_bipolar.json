@@ -1,0 +1,368 @@
+{
+  "titulo": "Transtorno Afetivo Bipolar",
+  "eyebrow": "Psiquiatria · Transtornos do Humor",
+  "subtitulo": "Mania, hipomania, tipo I e tipo II, e o tratamento por fases",
+  "intro": "Diagnóstico e diferenciação dos episódios de humor, os subtipos do transtorno bipolar, o diagnóstico diferencial com depressão unipolar, TDAH e personalidade borderline, os fatores de risco, o curso longitudinal e o tratamento farmacológico das fases depressiva, maníaca e de manutenção.",
+  "questoes": [
+    {
+      "question": "Homem de 24 anos, há nove dias dorme duas horas por noite, fala sem parar, gastou a poupança da família e foi levado ao pronto-socorro após tumulto na rua, sendo internado. Como se classifica esse episódio?",
+      "options": [
+        "Episódio maníaco, pela duração de uma semana e pela necessidade de internação",
+        "Episódio hipomaníaco, pela elação do humor sem qualquer sintoma psicótico",
+        "Episódio misto, pela agitação psicomotora associada à insônia persistente",
+        "Episódio depressivo com características mistas, pela irritabilidade marcada",
+        "Ciclagem rápida, pela alternância do humor ao longo dos últimos nove dias"
+      ],
+      "correctIndex": 0,
+      "explanation": "A mania exige humor elevado ou irritável com duração mínima de uma semana, ou de qualquer duração se houver necessidade de internação, acompanhada de prejuízo funcional marcante. A hipomania dura no mínimo quatro dias, é perceptível a terceiros, mas não cursa com prejuízo funcional acentuado, internação ou psicose. Um único episódio maníaco ao longo da vida já define o transtorno bipolar tipo I."
+    },
+    {
+      "question": "Mulher de 30 anos passa cinco dias mais falante, expansiva, dormindo quatro horas e rendendo mais no trabalho; os colegas notaram a mudança, não houve prejuízo funcional nem internação. Ela já teve um episódio depressivo maior aos 26 anos. Qual o diagnóstico?",
+      "options": [
+        "Transtorno bipolar tipo II, definido por um episódio hipomaníaco e um depressivo",
+        "Transtorno bipolar tipo I, definido por um episódio maníaco e um episódio depressivo",
+        "Transtorno ciclotímico, definido por dois anos de oscilações subsindrômicas do humor",
+        "Transtorno depressivo maior recorrente, definido por episódios depressivos repetidos",
+        "Transtorno da personalidade borderline, definido por labilidade do humor persistente"
+      ],
+      "correctIndex": 0,
+      "explanation": "O transtorno bipolar tipo II é confirmado quando há, ao longo da vida, pelo menos um episódio hipomaníaco e um episódio depressivo. O quadro descrito preenche hipomania: duração de quatro dias ou mais, alteração observável por terceiros, sem prejuízo funcional acentuado, psicose ou internação. A ausência de mania exclui o tipo I."
+    },
+    {
+      "question": "O diagnóstico de transtorno bipolar tipo I, considerando toda a vida do paciente, exige:",
+      "options": [
+        "pelo menos um episódio maníaco, acompanhado ou não de episódio depressivo",
+        "pelo menos um episódio hipomaníaco, acompanhado de um episódio depressivo",
+        "pelo menos dois episódios maníacos, acompanhados de um episódio depressivo",
+        "pelo menos um episódio depressivo, acompanhado de sintomas subsindrômicos",
+        "pelo menos dois anos de sintomas hipomaníacos e depressivos alternados"
+      ],
+      "correctIndex": 0,
+      "explanation": "O transtorno bipolar tipo I é caracterizado pela presença de pelo menos um episódio maníaco ao longo da vida, que pode ou não ter sido acompanhado de episódio depressivo. Não é necessário nenhum episódio depressivo para fechar o diagnóstico. A exigência de um episódio hipomaníaco somado a um depressivo corresponde ao tipo II."
+    },
+    {
+      "question": "Para o diagnóstico de transtorno ciclotímico em um adulto, o critério temporal mínimo é de:",
+      "options": [
+        "dois anos de sintomas hipomaníacos e depressivos que nunca fecham critérios",
+        "um ano de sintomas hipomaníacos e depressivos que nunca fecham critérios",
+        "seis meses de sintomas hipomaníacos e depressivos que nunca fecham critérios",
+        "quatro anos de sintomas hipomaníacos e depressivos que nunca fecham critérios",
+        "dois anos de sintomas hipomaníacos alternados com episódios depressivos maiores"
+      ],
+      "correctIndex": 0,
+      "explanation": "A ciclotimia é definida por cronicidade e oscilações do humor: por pelo menos dois anos em adultos, e um ano em crianças e adolescentes, o paciente apresenta vários períodos de sintomas hipomaníacos e depressivos. O ponto essencial é que esses períodos nunca atendem a todos os critérios de mania, hipomania ou depressão maior. Se um episódio completo ocorrer, o diagnóstico passa a ser de transtorno bipolar."
+    },
+    {
+      "question": "No tratamento da depressão do transtorno bipolar tipo I, os inibidores seletivos da recaptação de serotonina e a bupropiona figuram apenas como opção de segunda linha e carregam qual ressalva específica?",
+      "options": [
+        "risco de virada maníaca, o que desaconselha o uso sem estabilizador associado",
+        "risco de agranulocitose, o que exige hemograma seriado durante o tratamento",
+        "risco de hipotireoidismo, o que exige dosagem de TSH a cada três meses",
+        "risco de teratogenicidade, o que contraindica o uso em mulheres férteis",
+        "risco de síndrome metabólica, o que exige controle de peso e de glicemia"
+      ],
+      "correctIndex": 0,
+      "explanation": "A ressalva registrada para os ISRS e a bupropiona na depressão bipolar é o risco de virada maníaca, motivo pelo qual antidepressivo em monoterapia não é conduta aceitável no transtorno bipolar. A cautela em mulheres férteis é a observação atrelada ao ácido valproico, e os efeitos colaterais de alto impacto, à combinação olanzapina com fluoxetina. Diante de ciclagem rápida, a recomendação é justamente excluir antidepressivos do esquema."
+    },
+    {
+      "question": "Ao iniciar o tratamento de um episódio maníaco agudo, a revisão do status de medicação inclui qual conduta específica sobre os psicotrópicos que o paciente já vem usando?",
+      "options": [
+        "descontinuar antidepressivos e estimulantes que estejam em uso",
+        "manter antidepressivos e estimulantes, reduzindo a dose à metade",
+        "substituir o antidepressivo por outro de meia-vida mais curta",
+        "descontinuar os estabilizadores de humor de introdução recente",
+        "aumentar a dose do antidepressivo para conter a agitação"
+      ],
+      "correctIndex": 0,
+      "explanation": "Na avaliação inicial da mania, além de checar níveis séricos e adesão, antidepressivos e estimulantes devem ser descontinuados, porque sustentam ou agravam a virada. Os estabilizadores de humor são mantidos e otimizados, não retirados. Também se avalia risco de suicídio, características mistas, agitação psicomotora, heteroagressividade, grau de insight e suporte psicossocial."
+    },
+    {
+      "question": "Paciente com transtorno bipolar tipo I apresenta ciclagem rápida. Qual roteiro de conduta é o recomendado antes de escalonar o esquema farmacológico?",
+      "options": [
+        "tratar hipotireoidismo, excluir antidepressivos e tratar uso de substâncias",
+        "associar antidepressivo tricíclico, elevar o lítio e tratar hipertireoidismo",
+        "suspender o estabilizador de humor e iniciar benzodiazepínico em dose alta",
+        "iniciar eletroconvulsoterapia antes de qualquer ajuste no esquema em uso",
+        "associar clozapina de imediato e retirar todos os antipsicóticos atípicos"
+      ],
+      "correctIndex": 0,
+      "explanation": "Diante de ciclagem rápida, a sequência recomendada é tratar hipotireoidismo se presente, excluir a presença de medicamentos antidepressivos, tratar o uso de substâncias e, se necessário, partir para combinações de fármacos como quetiapina, lítio, ácido valproico ou olanzapina. Antidepressivos pioram a ciclagem, e retirar o estabilizador é o oposto da conduta. A clozapina fica reservada para casos refratários."
+    },
+    {
+      "question": "A ciclagem rápida está presente em qual fração dos casos de transtorno bipolar tipo I?",
+      "options": [
+        "cerca de um terço",
+        "cerca de um décimo",
+        "cerca de dois terços",
+        "cerca de um vigésimo",
+        "praticamente todos"
+      ],
+      "correctIndex": 0,
+      "explanation": "A ciclagem rápida é observada em cerca de um terço dos casos de transtorno bipolar tipo I, o que a torna um achado frequente e não uma raridade. É definida pela ocorrência de quatro ou mais episódios de humor em doze meses. Seu reconhecimento muda a conduta, porque obriga a excluir antidepressivos, hipotireoidismo e uso de substâncias."
+    },
+    {
+      "question": "Sintomas psicóticos ocorrem em qual proporção dos pacientes em episódio maníaco?",
+      "options": [
+        "cerca de metade dos pacientes",
+        "cerca de um décimo dos pacientes",
+        "cerca de um quarto dos pacientes",
+        "cerca de um vigésimo dos casos",
+        "a quase totalidade dos pacientes"
+      ],
+      "correctIndex": 0,
+      "explanation": "Sintomas psicóticos estão presentes em cerca de 50% dos pacientes em mania, e a conduta indicada é associar um antipsicótico atípico ao estabilizador. A presença de psicose durante episódio de humor não afasta o diagnóstico de transtorno bipolar nem impõe, por si só, o diagnóstico de esquizofrenia. Na depressão bipolar com sintomas psicóticos as opções são antipsicótico atípico associado ou eletroconvulsoterapia."
+    },
+    {
+      "question": "Homem de 35 anos em episódio maníaco disfórico, com humor predominantemente irritado, múltiplos episódios de humor prévios e antecedente de traumatismo cranioencefálico. Entre lítio e ácido valproico, o perfil aponta para:",
+      "options": [
+        "ácido valproico, por mania disfórica, múltiplos episódios e trauma craniano",
+        "lítio, por mania clássica eufórica, poucos episódios e história familiar",
+        "lítio, por primeiro episódio de humor e ausência total de comorbidades",
+        "carbamazepina, por delírios incongruentes e história familiar negativa",
+        "lamotrigina, por polaridade depressiva predominante ao longo do curso"
+      ],
+      "correctIndex": 0,
+      "explanation": "O ácido valproico é preferido na mania disfórica ou com humor predominantemente irritado, em pacientes com múltiplos episódios de humor, comorbidade com ansiedade ou uso de substâncias e histórico de traumatismo cranioencefálico. O lítio é a escolha na mania clássica, com poucos episódios e história familiar de bipolaridade. A carbamazepina se destaca na história familiar negativa e no quadro esquizoafetivo com delírios incongruentes com o humor."
+    },
+    {
+      "question": "A carbamazepina é a escolha preferencial no episódio maníaco quando o paciente apresenta:",
+      "options": [
+        "história familiar negativa de bipolaridade em parentes de primeiro grau",
+        "história familiar positiva de bipolaridade em parentes de primeiro grau",
+        "mania clássica eufórica com poucos episódios de humor ao longo da vida",
+        "polaridade depressiva predominante ao longo do curso longitudinal",
+        "apresentação clínica típica sem nenhuma comorbidade psiquiátrica"
+      ],
+      "correctIndex": 0,
+      "explanation": "A carbamazepina se destaca quando a história familiar de transtorno bipolar em parentes de primeiro grau é negativa, no quadro esquizoafetivo com delírios incongruentes com o humor e diante de comorbidade com ansiedade, uso de substâncias ou traumatismo cranioencefálico. História familiar positiva e mania clássica com poucos episódios apontam para o lítio. Polaridade depressiva predominante é característica que favorece a lamotrigina na manutenção."
+    },
+    {
+      "question": "Quais fármacos figuram como opção de primeira linha em monoterapia para o episódio maníaco agudo?",
+      "options": [
+        "lítio ou ácido valproico",
+        "lamotrigina ou bupropiona",
+        "clozapina ou clonazepam",
+        "fluoxetina ou sertralina",
+        "gabapentina ou topiramato"
+      ],
+      "correctIndex": 0,
+      "explanation": "A primeira linha em monoterapia para a mania reúne lítio, quetiapina, ácido valproico, asenapina, aripiprazol, paliperidona, risperidona e cariprazina, todos com nível 1 de evidência. Clozapina e clonazepam aparecem apenas na terceira linha, e antidepressivos não tratam mania. A lamotrigina não tem eficácia antimaníaca estabelecida, embora seja primeira linha na manutenção."
+    },
+    {
+      "question": "No tratamento do episódio depressivo de pacientes com transtorno bipolar tipo II, qual é a única recomendação de primeira linha?",
+      "options": [
+        "quetiapina em monoterapia",
+        "lamotrigina em monoterapia",
+        "venlafaxina em monoterapia",
+        "carbamazepina em monoterapia",
+        "escitalopram em monoterapia"
+      ],
+      "correctIndex": 0,
+      "explanation": "Para a depressão do transtorno bipolar tipo II, a quetiapina é a única indicação de primeira linha, com nível 1 de evidência. Lítio, lamotrigina, bupropiona adjuvante, eletroconvulsoterapia, sertralina e venlafaxina ficam na segunda linha, sendo que sertralina e venlafaxina são reservadas à depressão pura, sem características mistas. Carbamazepina e escitalopram aparecem apenas na terceira linha, e na fase de manutenção."
+    },
+    {
+      "question": "Paciente com transtorno bipolar cujos episódios agudos são, ao longo dos anos, predominantemente depressivos. Na escolha do fármaco de manutenção, esse perfil aponta para:",
+      "options": [
+        "lamotrigina como estabilizador",
+        "carbamazepina como estabilizador",
+        "risperidona como estabilizador",
+        "clorpromazina como estabilizador",
+        "oxcarbazepina como estabilizador"
+      ],
+      "correctIndex": 0,
+      "explanation": "A lamotrigina é a escolha de manutenção quando a polaridade predominante dos episódios é depressiva, e tem nível 1 de evidência nessa fase. Ela protege mais do polo depressivo do que do maníaco, e por isso não é opção para tratar mania aguda. A carbamazepina fica reservada à doença atípica, ao transtorno bipolar tipo II e ao transtorno esquizoafetivo."
+    },
+    {
+      "question": "Na fase de manutenção do transtorno bipolar, a escolha do fármaco leva em conta o perfil clínico. Qual associação está correta?",
+      "options": [
+        "lítio para apresentação típica com história familiar de bipolaridade",
+        "lítio para doença atípica com comorbidade por uso de substâncias",
+        "lamotrigina para episódios agudos com características mistas",
+        "quetiapina para polaridade depressiva claramente predominante",
+        "carbamazepina para apresentação típica sem nenhuma comorbidade"
+      ],
+      "correctIndex": 0,
+      "explanation": "O lítio é o fármaco de manutenção indicado na apresentação clínica típica, com história familiar de bipolaridade e sem comorbidade com uso de substâncias ou ansiedade. A quetiapina é favorecida quando os episódios cursam com características mistas, e a lamotrigina quando a polaridade depressiva predomina. A carbamazepina é reservada à doença atípica, ao tipo II e ao transtorno esquizoafetivo."
+    },
+    {
+      "question": "Na primeira avaliação de um paciente com transtorno bipolar, além do hemograma, das enzimas hepáticas e do perfil lipídico e glicêmico, a rotina laboratorial inclui especificamente:",
+      "options": [
+        "TSH, creatinina sérica com filtração glomerular estimada e urinálise",
+        "cortisol salivar, gasometria arterial e proteína C-reativa quantitativa",
+        "eletroencefalograma de rotina, punção lombar e sorologia para sífilis",
+        "ressonância magnética de crânio e tomografia por emissão de pósitrons",
+        "vitamina B12, ácido fólico e pesquisa de anticorpos antinucleares"
+      ],
+      "correctIndex": 0,
+      "explanation": "A avaliação inicial pede hemograma com plaquetas, enzimas hepáticas, glicemia de jejum e hemoglobina glicada, perfil lipídico, triglicerídeos, eletrólitos e cálcio, bilirrubinas, coagulograma, urinálise, creatinina com estimativa da taxa de filtração glomerular e TSH. Função renal e tireoidiana importam porque o lítio afeta ambas. Eletrocardiograma entra acima dos 40 anos ou por indicação clínica, e teste de gravidez em mulheres em idade reprodutiva."
+    },
+    {
+      "question": "Paciente de 42 anos em uso crônico de lítio, estável. Qual conjunto de exames deve compor o acompanhamento laboratorial de rotina?",
+      "options": [
+        "litemia, creatinina com filtração glomerular estimada e TSH",
+        "litemia, hemograma semanal e dosagem de prolactina sérica",
+        "litemia, enzimas hepáticas semanais e amilase pancreática",
+        "litemia, eletroencefalograma anual e dosagem de cortisol",
+        "litemia, sorologias virais e dosagem de vitamina B12 sérica"
+      ],
+      "correctIndex": 0,
+      "explanation": "O lítio tem janela terapêutica estreita e toxicidade renal e tireoidiana, de modo que o seguimento exige litemia, creatinina com estimativa da taxa de filtração glomerular e TSH. Hemograma semanal é a exigência da clozapina, pelo risco de agranulocitose. A dosagem de prolactina só se justifica quando há uso de fármacos com esse efeito colateral."
+    },
+    {
+      "question": "Qual é o atraso médio entre o aparecimento dos primeiros sintomas do transtorno bipolar e o diagnóstico formal?",
+      "options": [
+        "cerca de dez anos",
+        "cerca de dois anos",
+        "cerca de seis meses",
+        "cerca de vinte anos",
+        "cerca de trinta anos"
+      ],
+      "correctIndex": 0,
+      "explanation": "Há um atraso médio de dez anos entre os primeiros sintomas e o diagnóstico formal de transtorno bipolar. Esse intervalo é clinicamente relevante porque a demora no diagnóstico correto está associada a pior prognóstico, maior refratariedade e mais prejuízo cognitivo e social. A alta taxa de erro diagnóstico inicial, sobretudo a rotulagem como depressão unipolar, é o principal motor desse atraso."
+    },
+    {
+      "question": "Comparadas à população geral, as pessoas com transtorno bipolar apresentam risco de morte por suicídio aumentado em:",
+      "options": [
+        "20 a 30 vezes",
+        "2 a 3 vezes",
+        "5 a 6 vezes",
+        "80 a 90 vezes",
+        "10 a 12 vezes"
+      ],
+      "correctIndex": 0,
+      "explanation": "O risco de morte por suicídio é 20 a 30 vezes maior entre pessoas com transtorno bipolar do que na população geral, e o transtorno pode responder por até um quarto de todos os suicídios. Esse risco é ainda mais alto quando há comorbidade com transtorno por uso de álcool. É por isso que a avaliação de comportamentos de risco abre o roteiro de conduta tanto na depressão quanto na mania."
+    },
+    {
+      "question": "A expectativa de vida no transtorno bipolar é reduzida em cerca de nove anos. Essa redução decorre principalmente de:",
+      "options": [
+        "suicídio e aumento da mortalidade por doenças cardiovasculares",
+        "suicídio e aumento da mortalidade por neoplasias hematológicas",
+        "suicídio e aumento da mortalidade por doenças infecciosas agudas",
+        "efeitos adversos do lítio sobre a função renal e sobre a tireoide",
+        "acidentes de trânsito durante os episódios maníacos com psicose"
+      ],
+      "correctIndex": 0,
+      "explanation": "A queda de nove anos na expectativa de vida decorre não só do suicídio, mas também do aumento da taxa de mortalidade relacionada a doenças cardiovasculares. Síndrome metabólica é mais comum nessa população do que na população geral, o que reforça a necessidade de acompanhar peso, pressão arterial, glicemia e perfil lipídico. Por isso o rastreio metabólico integra a avaliação inicial e o seguimento."
+    },
+    {
+      "question": "Em seguimento prospectivo de longo prazo, a predominância de sintomas depressivos sobre os de mania ou hipomania foi de:",
+      "options": [
+        "3:1 no tipo I e 37:1 no tipo II",
+        "37:1 no tipo I e 3:1 no tipo II",
+        "1:3 no tipo I e 1:37 no tipo II",
+        "1:1 no tipo I e 2:1 no tipo II",
+        "5:1 no tipo I e 10:1 no tipo II"
+      ],
+      "correctIndex": 0,
+      "explanation": "A razão entre sintomas depressivos e sintomas de mania ou hipomania foi de 3:1 no tipo I e de 37:1 no tipo II, e os pacientes permaneceram sintomáticos durante cerca de metade do tempo de seguimento, 46,6% no tipo I e 55,8% no tipo II. A depressão é, portanto, o polo que domina o curso, sobretudo no tipo II. Isso explica por que o transtorno é tão frequentemente confundido com depressão unipolar."
+    },
+    {
+      "question": "Qual conjunto de características clínicas aponta para bipolaridade, e não para depressão unipolar, em um paciente em episódio depressivo?",
+      "options": [
+        "hipersonia, hiperfagia, primeiro episódio antes dos 25 anos e psicose",
+        "insônia inicial, perda de apetite e primeiro episódio após os 25 anos",
+        "queixas somáticas, nível de atividade normal e episódio atual longo",
+        "humor deprimido persistente, anedonia e história familiar negativa",
+        "fadiga, lentificação leve, episódio único e boa resposta a um ISRS"
+      ],
+      "correctIndex": 0,
+      "explanation": "Apontam para bipolaridade: hipersonia, hiperfagia ou ganho de peso, retardo ou agitação psicomotora, sintomas psicóticos, culpa patológica, labilidade do humor, irritabilidade e pensamento acelerado. No curso, primeiro episódio depressivo antes dos 25 anos, múltiplos episódios e história familiar positiva. A unipolaridade cursa com insônia inicial, perda de apetite, atividade normal, queixas somáticas, início após os 25 anos e episódio atual de longa duração."
+    },
+    {
+      "question": "Na distinção entre sintomas maníacos e transtorno de déficit de atenção/hiperatividade, qual achado aponta para mania?",
+      "options": [
+        "necessidade de sono reduzida com elação episódica e prolongada",
+        "insônia inicial com hiperatividade presente desde a infância",
+        "distratibilidade contínua, sem variação ao longo dos últimos anos",
+        "irritabilidade constante desde os primeiros anos escolares",
+        "impulsividade estável com dificuldade persistente de organização"
+      ],
+      "correctIndex": 0,
+      "explanation": "Na mania a elação é episódica, prolongada e inapropriada, há necessidade de sono reduzida e a grandiosidade traz aumento não característico de confiança ou autoimportância. No TDAH a elação, quando presente, não é episódica; o sono cursa com insônia, e a grandiosidade não é sintoma comum. Hiperatividade e distratibilidade fazem parte dos critérios de TDAH, mas nele não são episódicas, e é justamente a natureza episódica que marca a bipolaridade."
+    },
+    {
+      "question": "Qual princípio orienta a diferenciação entre transtorno bipolar e transtorno da personalidade borderline?",
+      "options": [
+        "no bipolar os sintomas formam episódio distinto do comportamento habitual",
+        "no bipolar a impulsividade é contínua desde a adolescência inicial",
+        "no borderline os sintomas formam episódios nitidamente delimitados",
+        "no borderline a labilidade do humor é achado absolutamente raro",
+        "no bipolar a labilidade do humor nunca aparece em nenhum momento"
+      ],
+      "correctIndex": 0,
+      "explanation": "Labilidade do humor e impulsividade são comuns às duas condições, e o que define bipolaridade é que os sintomas representem um episódio distinto, com aumento notável em relação ao comportamento habitual do indivíduo. No borderline o padrão é contínuo e ligado a gatilhos interpessoais. Regra prática de peso: não se deve firmar diagnóstico de transtorno da personalidade durante um episódio de humor não tratado."
+    },
+    {
+      "question": "Em paciente com uso ativo de substâncias e sintomas de humor, o diagnóstico primário de transtorno bipolar deve apoiar-se em:",
+      "options": [
+        "sintomas que persistem depois que as substâncias deixam de ser usadas",
+        "sintomas que surgem apenas durante a intoxicação aguda pela substância",
+        "sintomas que aparecem somente nas primeiras horas de abstinência aguda",
+        "resposta imediata ao lítio ainda durante o período de uso da substância",
+        "história familiar positiva, seja qual for o padrão temporal dos sintomas"
+      ],
+      "correctIndex": 0,
+      "explanation": "O diagnóstico primário de transtorno bipolar deve ser estabelecido com base nos sintomas que persistem depois que as substâncias não estão mais sendo usadas. Sintomas restritos à intoxicação ou à abstinência configuram transtorno do humor induzido por substância. Isso é decisivo na prática, já que transtorno por uso de substâncias ocorre em mais da metade dos pacientes com tipo I e em 37% dos com tipo II."
+    },
+    {
+      "question": "No transtorno bipolar tipo II, a distribuição aproximada das comorbidades mentais ao longo da vida é de:",
+      "options": [
+        "75% com ansiedade, 37% com uso de substâncias e 15% com transtorno alimentar",
+        "15% com ansiedade, 75% com uso de substâncias e 37% com transtorno alimentar",
+        "37% com ansiedade, 15% com uso de substâncias e 75% com transtorno alimentar",
+        "25% com ansiedade, 10% com uso de substâncias e 50% com transtorno alimentar",
+        "95% com ansiedade, 80% com uso de substâncias e 60% com transtorno alimentar"
+      ],
+      "correctIndex": 0,
+      "explanation": "No tipo II, cerca de 60% dos pacientes têm três ou mais transtornos mentais comórbidos, 75% têm transtorno de ansiedade e 37% têm transtorno por uso de substâncias. Cerca de 15% apresentam pelo menos um transtorno alimentar ao longo da vida, sendo a compulsão alimentar mais comum que bulimia e anorexia. Em crianças e adolescentes o transtorno de ansiedade costuma preceder o quadro bipolar."
+    },
+    {
+      "question": "Sobre o componente genético do transtorno bipolar, qual afirmação está correta?",
+      "options": [
+        "herdabilidade de 58% e concordância de 40 a 80% entre gêmeos monozigóticos",
+        "herdabilidade de 10% e concordância de 5 a 15% entre gêmeos monozigóticos",
+        "herdabilidade de 58% e concordância de 40 a 80% apenas entre dizigóticos",
+        "herdabilidade de 95% e concordância de 95 a 99% entre gêmeos monozigóticos",
+        "herdabilidade de 30% e concordância de 20 a 25% entre irmãos não gêmeos"
+      ],
+      "correctIndex": 0,
+      "explanation": "A herdabilidade genética estimada é de 58%, com concordância de 40 a 80% entre gêmeos monozigóticos, e o risco é em média dez vezes maior entre parentes adultos de pessoas com o transtorno. Estudos de associação genômica ampla identificaram genes como CACNA1C, do canal de cálcio do tipo L, NCAN e ODZ4. Há sobreposição de suscetibilidade genética entre bipolaridade e esquizofrenia."
+    },
+    {
+      "question": "Homem de 38 anos com transtorno bipolar tipo I mantém mania apesar de esquemas adequados com lítio, ácido valproico e dois antipsicóticos atípicos. Qual é a opção farmacológica com evidência nessa situação?",
+      "options": [
+        "associar clozapina ao esquema em uso",
+        "associar lamotrigina ao esquema em uso",
+        "associar bupropiona ao esquema em uso",
+        "associar gabapentina ao esquema em uso",
+        "associar escitalopram ao esquema em uso"
+      ],
+      "correctIndex": 0,
+      "explanation": "A clozapina é uma das poucas opções farmacológicas efetivas na mania resistente ao tratamento. Revisões sistemáticas mostram melhora dos sintomas de humor e psicóticos, redução do número e da duração das hospitalizações, redução do número de psicotrópicos, menos ideação suicida e comportamento agressivo e melhora do funcionamento social. As limitações são amostras pequenas, definições inconsistentes de resistência e seguimento curto."
+    },
+    {
+      "question": "Qual modalidade de psicoeducação concentrou as evidências de redução de recorrência e de hospitalizações no transtorno bipolar?",
+      "options": [
+        "psicoeducação em grupo e familiar",
+        "psicoeducação individual e on-line",
+        "psicoeducação individual e domiciliar",
+        "psicoeducação on-line e por telefone",
+        "psicoeducação por telefone e escrita"
+      ],
+      "correctIndex": 0,
+      "explanation": "Revisão de 40 ensaios randomizados com 4.507 participantes mostrou que 70% dos estudos focaram psicoeducação em grupo ou familiar, e foram essas as modalidades com resultados consistentes. A psicoeducação em grupo reduziu recorrência e hospitalizações, aumentou o tempo até a recaída, melhorou a adesão e os níveis séricos de lítio e reduziu o estigma. As modalidades individual e on-line tiveram achados inconsistentes."
+    },
+    {
+      "question": "No modelo de estadiamento e neuroprogressão do transtorno bipolar, o terceiro estágio clínico caracteriza-se por:",
+      "options": [
+        "episódios recorrentes com declínio no funcionamento e na cognição",
+        "poucos episódios com funcionamento normal entre um episódio e outro",
+        "risco aumentado por história familiar e sintomas subsindrômicos",
+        "sintomas de ansiedade, problemas de sono e dificuldade de aprendizagem",
+        "episódio depressivo único ainda sem qualquer repercussão funcional"
+      ],
+      "correctIndex": 0,
+      "explanation": "O modelo de estadiamento descreve três estágios: risco aumentado por história familiar e sintomas subsindrômicos preditivos; poucos episódios com funcionamento normal nos períodos interepisódicos; e episódios recorrentes com declínio no funcionamento e na cognição. Maior número de episódios associa-se a maior risco de novos episódios, maior gravidade, episódios mais longos e mais refratariedade. Esse curso progressivo, porém, não ocorre em todos os pacientes."
+    }
+  ]
+}

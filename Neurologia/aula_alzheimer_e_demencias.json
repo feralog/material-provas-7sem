@@ -1,0 +1,434 @@
+{
+  "titulo": "Alzheimer e Demências",
+  "eyebrow": "Neurologia · Demências",
+  "subtitulo": "Do critério sindrômico ao tratamento das principais demências",
+  "intro": "Critérios diagnósticos de demência e seus diferenciais, doença de Alzheimer, demências vascular, com corpos de Lewy e frontotemporal, causas potencialmente reversíveis e tratamento farmacológico.",
+  "questoes": [
+    {
+      "question": "Qual conjunto de achados fecha o diagnóstico sindrômico de demência?",
+      "options": [
+        "Declínio de memória e de outra função cognitiva, com prejuízo funcional e consciência preservada",
+        "Declínio isolado da memória, com prejuízo funcional e consciência preservada",
+        "Declínio de memória e de outra função cognitiva, sem qualquer prejuízo das atividades diárias",
+        "Declínio cognitivo agudo e flutuante, com rebaixamento do nível de consciência"
+      ],
+      "correctIndex": 0,
+      "explanation": "Demência é declínio cognitivo persistente em relação a um nível prévio, que compromete a memória e pelo menos outra função (linguagem, praxias, gnosias, orientação espacial, abstração ou funções executivas) e interfere nas atividades sociais ou profissionais. O declínio exclusivo da memória não basta para o diagnóstico sindrômico, assim como o déficit cognitivo sem repercussão funcional. Alteração do nível de consciência aponta para síndrome confusional aguda, não para demência."
+    },
+    {
+      "question": "Homem de 78 anos, internado por pneumonia, desenvolve em 48 horas desorientação, desatenção intensa e alternância entre sonolência e agitação, com piora ao anoitecer. A hipótese mais provável é:",
+      "options": [
+        "delirium, pois há flutuação e rebaixamento do nível de consciência",
+        "doença de Alzheimer inicial, de instalação lenta e insidiosa",
+        "demência vascular por infarto em território estratégico",
+        "pseudodemência depressiva com queixa subjetiva de memória"
+      ],
+      "correctIndex": 0,
+      "explanation": "O que separa delirium de demência é o nível de consciência: na síndrome confusional aguda ele está comprometido e flutua, e a instalação é de horas a dias, em geral desencadeada por doença sistêmica ou fármaco. Na demência o declínio é persistente e ocorre com o nível de consciência preservado. Muitas etiologias toxicometabólicas produzem justamente esse quadro agudo, incompatível com o diagnóstico de demência."
+    },
+    {
+      "question": "No Miniexame do Estado Mental, a nota de corte precisa ser ajustada à escolaridade. Para um indivíduo analfabeto, o ponto de corte usualmente adotado é:",
+      "options": [
+        "18 pontos, subindo para 21 com um a três anos de escolaridade",
+        "21 pontos, subindo para 24 com um a três anos de escolaridade",
+        "24 pontos, subindo para 26 com um a três anos de escolaridade",
+        "26 pontos, subindo para 28 com um a três anos de escolaridade"
+      ],
+      "correctIndex": 0,
+      "explanation": "O escore do Miniexame varia de zero a 30 pontos e é fortemente influenciado pela escolaridade, o que obriga a notas de corte diferenciadas: 18 para analfabetos, 21 para um a três anos de estudo, 24 para quatro a sete anos e 26 para oito anos ou mais. Aplicar um corte único produz falso-positivo no analfabeto e falso-negativo no indivíduo de alta escolaridade. Escores maiores indicam melhor desempenho."
+    },
+    {
+      "question": "O Questionário de Atividades Funcionais de Pfeffer difere do Miniexame do Estado Mental porque nele:",
+      "options": [
+        "escores maiores indicam pior desempenho e não sofrem influência da escolaridade",
+        "escores maiores indicam melhor desempenho e não sofrem influência da escolaridade",
+        "escores maiores indicam pior desempenho e dependem fortemente da escolaridade",
+        "escores menores indicam pior desempenho e dependem fortemente da escolaridade"
+      ],
+      "correctIndex": 0,
+      "explanation": "O Pfeffer avalia o desempenho funcional, sobretudo nas atividades instrumentais da vida diária, que são as primeiras a se perder nas demências. Varia de zero a 30 pontos, mas, ao contrário do Miniexame, escores maiores significam pior desempenho, e a nota de corte é de cinco pontos. É um teste breve e não influenciado pela escolaridade."
+    },
+    {
+      "question": "A prevalência de demência dobra aproximadamente a cada cinco anos a partir dos 65 anos. Em inquérito populacional brasileiro, a prevalência na faixa de 80 a 84 anos foi de:",
+      "options": [
+        "17,0%, contra 6,7% na faixa de 75 a 79 anos",
+        "10,5%, contra 5,6% na faixa de 75 a 79 anos",
+        "20,8%, contra 6,7% na faixa de 75 a 79 anos",
+        "37,8%, contra 3,4% na faixa de 75 a 79 anos"
+      ],
+      "correctIndex": 0,
+      "explanation": "No estudo de Catanduva a prevalência foi de 1,3% entre 65 e 69 anos, 3,4% entre 70 e 74, 6,7% entre 75 e 79, 17,0% entre 80 e 84 e 37,8% a partir dos 85 anos, com média global de 7,1%. O padrão de duplicação a cada cinco anos se repete em metanálises internacionais. Prevalência dessa magnitude torna a demência um problema de todo médico que atende idosos, não apenas do especialista.",
+      "image": "pg02",
+      "imageCaption": "Prevalência de demência por faixa etária"
+    },
+    {
+      "question": "A rotina laboratorial obrigatória na investigação etiológica de um paciente com demência inclui:",
+      "options": [
+        "hemograma, função renal, enzimas hepáticas, TSH, vitamina B12 e sorologia para sífilis",
+        "hemograma, função renal, enzimas hepáticas, TSH, vitamina B12 e eletroencefalograma",
+        "hemograma, função renal, enzimas hepáticas, TSH, vitamina B12 e biópsia cerebral",
+        "hemograma, função renal, enzimas hepáticas, TSH, vitamina B12 e arteriografia cerebral"
+      ],
+      "correctIndex": 0,
+      "explanation": "A rotina obrigatória reúne hemograma completo, ureia e creatinina, proteínas totais e frações, enzimas hepáticas, T4 livre e TSH, glicemia, vitamina B12, cálcio sérico, sorologia para sífilis e sorologia para HIV nos pacientes com menos de 60 anos. O objetivo é flagrar as causas toxicometabólicas e infecciosas, que estão entre as poucas potencialmente reversíveis. Eletroencefalograma, arteriografia e biópsia são exames dirigidos a suspeitas específicas."
+    },
+    {
+      "question": "O exame do líquido cefalorraquidiano está formalmente indicado na investigação da demência quando:",
+      "options": [
+        "o paciente tem menos de 65 anos ou o curso da doença é atípico e rápido",
+        "o paciente tem mais de 80 anos e o curso da doença é lento e insidioso",
+        "a tomografia mostra atrofia cortical difusa compatível com a idade",
+        "há história familiar de demência em parente de primeiro grau"
+      ],
+      "correctIndex": 0,
+      "explanation": "O líquor está indicado na suspeita de doença infecciosa do sistema nervoso central, nos pacientes com menos de 65 anos, nas formas atípicas de demência (curso rápido, por exemplo) e na hidrocefalia comunicante. A eletroforese de proteínas é o achado que mais frequentemente levanta a suspeita de processo infeccioso. Atrofia cortical compatível com a idade e história familiar isolada não justificam a punção."
+    },
+    {
+      "question": "No fluxograma de classificação das demências, a doença de Parkinson é agrupada entre as:",
+      "options": [
+        "demências primárias em que a demência pode ser a manifestação principal",
+        "demências primárias em que a demência é a manifestação clínica principal",
+        "demências secundárias a doença cerebrovascular, tumores e infecções",
+        "demências sem comprometimento estrutural, de causa toxicometabólica"
+      ],
+      "correctIndex": 0,
+      "explanation": "As demências se dividem primeiro em com e sem comprometimento estrutural do sistema nervoso central; entre as estruturais, separam-se as secundárias (doença cerebrovascular, tumores, infecções, hidrocefalia) das primárias. Dentro das primárias, doença de Parkinson, doença de Huntington e paralisia supranuclear progressiva são aquelas em que a demência pode ser a manifestação principal, mas o quadro é dominado por sinais motores. Alzheimer, demência frontotemporal e demência com corpos de Lewy ficam no grupo em que a demência é a manifestação principal.",
+      "image": "pg04",
+      "imageCaption": "Fluxograma de classificação das demências"
+    },
+    {
+      "question": "Idoso com humor deprimido queixa-se muito da memória, responde \"não sei\" às perguntas do teste e superestima os próprios déficits, que são leves ao exame objetivo. A conduta inicial recomendada é:",
+      "options": [
+        "tratar a depressão antes de firmar o diagnóstico de demência",
+        "iniciar anticolinesterásico e reavaliar a cognição em seis meses",
+        "firmar o diagnóstico de demência degenerativa e orientar a família",
+        "indicar biópsia cerebral para esclarecer a etiologia do declínio"
+      ],
+      "correctIndex": 0,
+      "explanation": "A depressão do idoso pode produzir déficit cognitivo reversível, a pseudodemência depressiva, e ainda pode ser a manifestação inaugural de uma demência degenerativa. Por isso, diante de depressão com declínio cognitivo leve a moderado, trata-se primeiro a depressão, com inibidores seletivos da recaptação de serotonina, e só depois se firma o diagnóstico sindrômico. O déficit de atenção do deprimido compromete o desempenho em vários testes neuropsicológicos."
+    },
+    {
+      "question": "Paciente com anomia e redução da fluência verbal isoladas há três anos, sem outras perdas cognitivas e com vida diária preservada, exceto nas tarefas que dependem da fala. O caso não preenche critérios de demência porque:",
+      "options": [
+        "apenas uma função cognitiva está comprometida e a vida diária está preservada",
+        "o quadro evolui há menos de cinco anos, tempo mínimo exigido no diagnóstico",
+        "a linguagem não é considerada uma das funções cognitivas avaliadas",
+        "não há atrofia detectável nas regiões peri-sylvianas do hemisfério esquerdo"
+      ],
+      "correctIndex": 0,
+      "explanation": "Trata-se de afasia progressiva primária, degeneração focal das regiões peri-sylvianas esquerdas que cursa com comprometimento relativamente isolado da linguagem por pelo menos dois anos. Como há déficit de uma só função cognitiva e as atividades de vida diária estão preservadas, o diagnóstico sindrômico de demência não se sustenta. O mesmo raciocínio vale para qualquer declínio objetivo sem repercussão funcional."
+    },
+    {
+      "question": "A doença de Alzheimer responde por mais de 50% dos casos de demência. Nos casos esporádicos de início senil, o principal fator de risco genético identificado é:",
+      "options": [
+        "a presença de um ou dois alelos e4 do gene da apolipoproteína E",
+        "a herança autossômica dominante, responsável pelos casos senis",
+        "a expansão de trinucleotídeos herdada com padrão dominante",
+        "a presença de dois alelos e2 do gene da apolipoproteína E"
+      ],
+      "correctIndex": 0,
+      "explanation": "Na maioria das vezes a doença de Alzheimer é esporádica; nesses casos, de início na faixa senil, o polimorfismo da apolipoproteína E com um ou dois alelos e4 é fator de risco reconhecido. Os casos familiares com transmissão autossômica dominante são minoria e incidem em indivíduos mais jovens, habitualmente antes dos 55 anos. Expansão de trinucleotídeos é o mecanismo da doença de Huntington."
+    },
+    {
+      "question": "Os emaranhados neurofibrilares encontrados na doença de Alzheimer são:",
+      "options": [
+        "lesões intraneuronais formadas por proteína tau hiperfosforilada",
+        "lesões extracelulares formadas por acúmulo de proteína amilóide",
+        "vacuolizações corticais que dão aspecto esponjoso ao tecido",
+        "inclusões de corpos de Lewy no tronco e no córtex cerebral"
+      ],
+      "correctIndex": 0,
+      "explanation": "A tau é constituinte normal dos microtúbulos do citoesqueleto neuronal; ao sofrer hiperfosforilação, acumula-se dentro do neurônio e forma os emaranhados neurofibrilares. As placas senis, a outra lesão característica, são extracelulares e feitas de amilóide cercada por terminações nervosas degeneradas e restos gliais. A vacuolização cortical com aspecto esponjoso é típica das encefalopatias priônicas."
+    },
+    {
+      "question": "O quadro clínico da doença de Alzheimer tipicamente se inicia com:",
+      "options": [
+        "distúrbio insidioso da memória para fatos recentes e desorientação",
+        "alteração precoce do comportamento social, com apatia e desinibição",
+        "distúrbio de marcha progressivo seguido de incontinência urinária",
+        "alucinações visuais recorrentes com flutuação diária da cognição"
+      ],
+      "correctIndex": 0,
+      "explanation": "O início é insidioso, com amnésia anterógrada para fatos recentes e desorientação têmporo-espacial; depois surgem falhas de raciocínio lógico e planejamento, anomia, disfunção vísuo-espacial e desinteresse pelas atividades habituais. Alteração comportamental como primeira manifestação sugere demência frontotemporal; marcha e incontinência precoces sugerem hidrocefalia a pressão normal; alucinações visuais com flutuação apontam para corpos de Lewy."
+    },
+    {
+      "question": "Na doença de Alzheimer, as alterações de equilíbrio, marcha e força muscular:",
+      "options": [
+        "estão ausentes até a fase final, quando o paciente fica restrito ao leito",
+        "aparecem já na fase inicial e orientam o diagnóstico diferencial",
+        "acompanham a doença desde o início, sob a forma de parkinsonismo",
+        "surgem junto com mioclonias nos primeiros meses de evolução"
+      ],
+      "correctIndex": 0,
+      "explanation": "O acometimento quase exclusivo da cognição e do comportamento reflete a distribuição do processo patológico, que atinge a formação hipocampal e as áreas corticais associativas e poupa as áreas corticais primárias. Sinais motores precoces devem fazer pensar em outra etiologia. Só no período final, com o paciente acamado, surgem as alterações de marcha e força."
+    },
+    {
+      "question": "Comparada à forma senil, a doença de Alzheimer de início pré-senil costuma apresentar:",
+      "options": [
+        "predomínio de distúrbios de linguagem e de reconhecimento visual",
+        "predomínio de agitação e de sintomas psicóticos persecutórios",
+        "predomínio de distúrbio de marcha e de incontinência urinária",
+        "predomínio de flutuação cognitiva com sensibilidade a neurolépticos"
+      ],
+      "correctIndex": 0,
+      "explanation": "Na faixa pré-senil predominam os distúrbios de linguagem e de reconhecimento visual, e a evolução costuma ser mais rápida. Agitação e sintomas psicóticos, como idéias delirantes persecutórias e alucinações, são mais comuns nos doentes mais idosos. Flutuação cognitiva com hipersensibilidade a neurolépticos caracteriza a demência com corpos de Lewy."
+    },
+    {
+      "question": "A sobrevida habitual na doença de Alzheimer, contada a partir do início dos sintomas, é de:",
+      "options": [
+        "sete a 15 anos, podendo haver platôs de estabilidade relativa",
+        "um a dois anos, com deterioração rapidamente progressiva",
+        "20 a 30 anos, com declínio muito lento e pouco perceptível",
+        "três a cinco anos, sempre com evolução em degraus sucessivos"
+      ],
+      "correctIndex": 0,
+      "explanation": "A morte costuma ocorrer sete a 15 anos após o início dos sintomas, embora haja evolução mais rápida, sobretudo nos casos pré-senis, e também platôs de estabilidade relativa por alguns anos. Demência que mata em menos de um ano sugere doença de Creutzfeldt-Jakob. Deterioração em degraus é o padrão da demência vascular."
+    },
+    {
+      "question": "O diagnóstico da doença de Alzheimer em vida baseia-se em:",
+      "options": [
+        "quadro clínico compatível e exclusão de outras causas, com acurácia de cerca de 85%",
+        "biópsia cerebral, único exame capaz de confirmar o diagnóstico com segurança",
+        "dosagem sérica de proteína tau, exame específico e amplamente disponível",
+        "tomografia de crânio mostrando dilatação ventricular desproporcional"
+      ],
+      "correctIndex": 0,
+      "explanation": "Não há exame específico: o diagnóstico é clínico, por quadro compatível somado à exclusão de outras causas pelos exames laboratoriais e de neuroimagem, e alcança acurácia de cerca de 85% quando o perfil é característico. O acompanhamento, ao comprovar o caráter progressivo, aumenta essa acurácia. Volumetria hipocampal por ressonância e dosagem de tau e amilóide no líquor são marcadores promissores, ainda não definitivos."
+    },
+    {
+      "question": "A neuroimagem estrutural na doença de Alzheimer costuma revelar:",
+      "options": [
+        "atrofia cortical de predomínio posterior e da formação hipocampal",
+        "atrofia dos lobos frontais e da porção anterior dos lobos temporais",
+        "múltiplos infartos lacunares nos núcleos da base e substância branca",
+        "dilatação ventricular desproporcional ao grau de atrofia cerebral"
+      ],
+      "correctIndex": 0,
+      "explanation": "A ressonância mostra atrofia cortical de predomínio posterior e atrofia hipocampal intensa, com dilatação dos cornos temporais dos ventrículos laterais. Atrofia frontal e temporal anterior aponta para demência frontotemporal; infartos lacunares múltiplos, para demência vascular; ventriculomegalia desproporcional à atrofia, para hidrocefalia a pressão normal."
+    },
+    {
+      "question": "Mulher de 74 anos com cognição que flutua de um dia para outro, alucinações visuais bem formadas e rigidez simétrica com bradicinesia. Ao receber haloperidol, piorou muito a rigidez. O diagnóstico mais provável é:",
+      "options": [
+        "demência com inclusão dos corpos de Lewy",
+        "demência frontotemporal variante frontal",
+        "demência vascular por múltiplos infartos",
+        "doença de Alzheimer de início tardio"
+      ],
+      "correctIndex": 0,
+      "explanation": "A tríade de flutuação dos déficits cognitivos, parkinsonismo rígido-acinético de distribuição simétrica e alucinações visuais define a demência com corpos de Lewy. A flutuação pode chegar a verdadeiros quadros de delirium. A sensibilidade exagerada aos efeitos extrapiramidais dos neurolépticos é característica e obriga a usá-los com muita cautela."
+    },
+    {
+      "question": "Homem de 58 anos apresenta há dois anos mudança do comportamento social, com apatia, desinibição e redução do senso moral, memória relativamente preservada e disfunção executiva marcante. O diagnóstico mais provável é:",
+      "options": [
+        "demência frontotemporal, por degeneração dos lobos frontais",
+        "doença de Alzheimer pré-senil, com atrofia cortical posterior",
+        "demência vascular subcortical, por infartos lacunares extensos",
+        "hidrocefalia a pressão normal, com ventrículos muito dilatados"
+      ],
+      "correctIndex": 0,
+      "explanation": "As demências frontotemporais ocorrem habitualmente na faixa pré-senil, muitas vezes com história familiar, e se anunciam por apatia, alteração da afetividade e do comportamento social, com redução do senso moral e desinibição, decorrentes do predomínio frontal da atrofia. A avaliação neuropsicológica mostra comprometimento predominante das funções executivas com relativa preservação da memória, o oposto do perfil inicial do Alzheimer. A neuroimagem revela atrofia frontal e temporal anterior."
+    },
+    {
+      "question": "Paciente com anomia progressiva, perda do significado das palavras e dificuldade de reconhecer objetos e rostos conhecidos; a neuroimagem mostra atrofia temporal bilateral, maior à esquerda. Trata-se de:",
+      "options": [
+        "demência semântica, forma focal de degeneração temporal",
+        "afasia progressiva primária, de topografia peri-sylviana",
+        "demência da doença do neurônio motor, com fasciculações",
+        "paralisia supranuclear progressiva, de predomínio frontal"
+      ],
+      "correctIndex": 0,
+      "explanation": "Na demência semântica o processo degenerativo afeta principalmente os lobos temporais, sobretudo à esquerda, produzindo déficit de memória semântica: anomia com perda progressiva do significado das palavras, falha no reconhecimento visual de objetos e seres vivos e redução da fluência verbal. Com a evolução, a doença se estende aos lobos frontais e surgem as alterações de comportamento. Na doença do neurônio motor há atrofia muscular e fasciculações, inclusive da língua."
+    },
+    {
+      "question": "O quadro clínico clássico da demência vascular caracteriza-se por:",
+      "options": [
+        "início abrupto ligado a evento vascular, com deterioração em degraus",
+        "início insidioso e declínio contínuo e lentamente progressivo da memória",
+        "início pré-senil com alteração do comportamento e desinibição precoce",
+        "início subagudo com mioclonias e evolução fatal em menos de um ano"
+      ],
+      "correctIndex": 0,
+      "explanation": "A demência vascular é a segunda mais frequente e costuma começar de forma abrupta, ligada a um acidente vascular cerebral ou ataque isquêmico transitório, com curso flutuante ou deterioração em degraus, podendo haver estabilidade ou até melhora entre os eventos. Sinais neurológicos focais como hemiparesia, ataxia, hemianopsia, afasia e heminegligência reforçam o diagnóstico. A escala de Hachinski auxilia a diferenciação."
+    },
+    {
+      "question": "Em hipertensos, a demência vascular pode assumir curso insidioso e progressivo, sem episódios agudos evidentes, porque:",
+      "options": [
+        "decorre de infartos lacunares na substância branca e nos núcleos da base",
+        "decorre de hemorragia subaracnóidea de repetição, pouco sintomática",
+        "decorre de lesão única em território estratégico, como o giro angular",
+        "decorre de angiopatia amilóide com hemorragias lobares recorrentes"
+      ],
+      "correctIndex": 0,
+      "explanation": "No hipertenso predomina a doença de pequenos vasos, com infartos lacunares acometendo a substância branca periventricular e os núcleos da base; cada lacuna é pouco sintomática, de modo que o declínio parece contínuo e os episódios agudos não aparecem na anamnese. A ressonância magnética é superior à tomografia justamente por detalhar a substância branca. A demência vascular também pode resultar de múltiplos infartos, lesão estratégica única, doença de Binswanger, angiopatia amilóide ou hemorragias."
+    },
+    {
+      "question": "Na paralisia supranuclear progressiva, o achado que sustenta o diagnóstico ao lado do comprometimento executivo é:",
+      "options": [
+        "a alteração da motricidade ocular extrínseca",
+        "a presença de movimentos coréicos generalizados",
+        "a ocorrência de alucinações visuais recorrentes",
+        "a atrofia muscular com fasciculações da língua"
+      ],
+      "correctIndex": 0,
+      "explanation": "Na paralisia supranuclear progressiva a demência é ainda mais frequente do que na doença de Parkinson e se caracteriza por comprometimento intenso das funções executivas associado à alteração da motricidade ocular extrínseca. Nesse grupo de demências com manifestações motoras, o exame neurológico é a principal ferramenta diagnóstica: coréia aponta para Huntington, tremor e bradicinesia para Parkinson, síndrome cerebelar para as ataxias espinocerebelares."
+    },
+    {
+      "question": "A doença de Huntington caracteriza-se pela associação de:",
+      "options": [
+        "síndrome coréica e demência do tipo frontal, com herança dominante",
+        "síndrome rígido-acinética e demência flutuante, de início senil",
+        "ataxia cerebelar e síndrome piramidal, com herança recessiva",
+        "distúrbio de marcha e incontinência urinária, de início precoce"
+      ],
+      "correctIndex": 0,
+      "explanation": "A doença de Huntington é hereditária, de transmissão autossômica dominante, ocorre mais comumente na faixa pré-senil e associa síndrome coréica a demência do tipo frontal. A associação de síndrome piramidal com ataxia cerebelar caracteriza as ataxias espinocerebelares, que também podem cursar com demência. Marcha e incontinência precoces sugerem hidrocefalia a pressão normal."
+    },
+    {
+      "question": "Idoso com distúrbio de marcha progressivo que precedeu em meses o declínio cognitivo e a incontinência urinária; a neuroimagem mostra dilatação ventricular desproporcional à atrofia. A conduta capaz de reverter o quadro é:",
+      "options": [
+        "derivação ventricular do líquido cefalorraquidiano",
+        "anticolinesterásico em dose plena e vitamina E",
+        "antiagregante plaquetário e controle pressórico",
+        "corticoterapia associada a hormônio tireoidiano"
+      ],
+      "correctIndex": 0,
+      "explanation": "A hidrocefalia a pressão normal reúne distúrbio progressivo da marcha, demência e incontinência urinária, e o dado clínico decisivo é que a marcha precede os demais em praticamente todos os casos, sem que déficit motor, ataxia ou oligocinesia a expliquem. Alzheimer avançado, doença cerebrovascular e doença de Parkinson também produzem a tríade, mas com a marcha comprometida tardiamente. O tratamento é a derivação ventricular, que pode fazer desaparecer os sintomas."
+    },
+    {
+      "question": "Demência rapidamente progressiva com mioclonias, sinais piramidais e cerebelares, atividade periódica de alta frequência ao eletroencefalograma e óbito em menos de um ano sugere:",
+      "options": [
+        "doença de Creutzfeldt-Jakob, encefalopatia espongiforme priônica",
+        "encefalite límbica paraneoplásica por carcinoma de pequenas células",
+        "complexo demencial associado ao vírus da imunodeficiência humana",
+        "demência associada à doença do neurônio motor, com fasciculações"
+      ],
+      "correctIndex": 0,
+      "explanation": "A doença de Creutzfeldt-Jakob é rara, com cerca de um caso por milhão de habitantes ao ano, e resulta da ação patogênica de uma proteína anormal, o prion, que produz vacuolização cortical com aspecto esponjoso. Clinicamente instala-se demência rapidamente progressiva com mioclonias e sinais piramidais, extrapiramidais e cerebelares; o eletroencefalograma pode mostrar atividade periódica de alta frequência, sugestiva mas não patognomônica. É inexoravelmente fatal, em geral em menos de um ano."
+    },
+    {
+      "question": "Paciente muito idoso com demência de instalação relativamente recente e sem sinais focais evidentes. Um diagnóstico que não pode ser esquecido, por ser tratável, é:",
+      "options": [
+        "hematoma subdural bilateral, frequentemente confundido com degeneração",
+        "demência semântica, com perda progressiva do significado das palavras",
+        "afasia progressiva primária, com anomia isolada por mais de dois anos",
+        "doença de Alzheimer de início tardio, com atrofia hipocampal marcante"
+      ],
+      "correctIndex": 0,
+      "explanation": "No hematoma subdural unilateral predominam manifestações focais, sugerindo processo expansivo ou acidente vascular; nas formas bilaterais a demência pode ser a manifestação predominante, e não é raro que esses pacientes sejam rotulados como portadores de demência degenerativa. O tratamento pode ser clínico ou cirúrgico, conforme o caráter expansivo avaliado pela evolução e pela neuroimagem. É um dos diagnósticos que justifica investigar em vez de assumir postura niilista."
+    },
+    {
+      "question": "Entre as causas de síndrome demencial reversível, a mais frequente é:",
+      "options": [
+        "o uso de fármacos que agem sobre o sistema nervoso central",
+        "a deficiência de vitamina B12 em pacientes gastrectomizados",
+        "o hipotireoidismo não tratado em mulheres acima de 70 anos",
+        "a neurossífilis em pacientes com antecedente de doença venérea"
+      ],
+      "correctIndex": 0,
+      "explanation": "Hipnóticos, ansiolíticos, antidepressivos, antipsicóticos e anticonvulsivantes são a causa mais frequente de síndrome demencial reversível; anticolinérgicos, digitálicos, quinidina, alfametildopa, antagonistas H2, antiinflamatórios, corticosteróides, algumas quinolonas, antineoplásicos e ciclosporina também produzem ou agravam declínio cognitivo. O paciente costuma omitir esses medicamentos na anamnese, o que obriga a perguntar de forma específica sobre cada um. Cerca de 10% das demências são reversíveis com tratamento específico."
+    },
+    {
+      "question": "Qual condição NÃO figura entre as principais causas de demência potencialmente reversível?",
+      "options": [
+        "Doença de Creutzfeldt-Jakob, de evolução inexoravelmente fatal",
+        "Hidrocefalia a pressão normal, tratável por derivação ventricular",
+        "Hematoma subdural bilateral, de tratamento clínico ou cirúrgico",
+        "Doenças inflamatórias e auto-imunes, como o lúpus eritematoso"
+      ],
+      "correctIndex": 0,
+      "explanation": "As principais causas potencialmente reversíveis são depressão, doenças vasculares cerebrais, doenças metabólicas e carenciais, doenças infecciosas, neoplasias, hidrocefalias, hematoma subdural e doenças inflamatórias e auto-imunes. A doença de Creutzfeldt-Jakob, embora infecciosa por prion, não entra nesse grupo: é inexoravelmente fatal, em geral em menos de um ano. Reconhecê-la importa sobretudo para diferenciá-la de demências rapidamente progressivas que têm tratamento.",
+      "image": "pg09",
+      "imageCaption": "Principais causas de demência potencialmente reversível"
+    },
+    {
+      "question": "O tratamento sintomático hoje disponível para a doença de Alzheimer baseia-se em:",
+      "options": [
+        "inibir a acetilcolinesterase, enzima que degrada a acetilcolina na fenda",
+        "bloquear a recaptação de serotonina nas sinapses corticais e límbicas",
+        "repor dopamina nos núcleos da base, revertendo o déficit motor",
+        "remover as placas senis com anticorpos dirigidos contra a amilóide"
+      ],
+      "correctIndex": 0,
+      "explanation": "Não existe tratamento específico nem preventivo: o disponível é sintomático e se apóia na inibição da acetilcolinesterase, enzima que destrói a acetilcolina na fenda sináptica. A estratégia nasceu da observação de redução importante de acetilcolina em núcleos subcorticais como o núcleo basal de Meynert e em sinapses corticais, déficit colinérgico responsabilizado por parte das alterações cognitivas e comportamentais. Os efeitos aparecem sobre cognição, comportamento e atividades de vida diária, mas só em parcela dos pacientes."
+    },
+    {
+      "question": "Entre os anticolinesterásicos disponíveis, aquele administrado em dose única diária é o:",
+      "options": [
+        "donepezil, na dose de 5 a 10 mg por dia",
+        "rivastigmina, na dose de 6 a 12 mg por dia",
+        "galantamina, na dose de 16 a 24 mg por dia",
+        "tacrina, na dose de 80 a 160 mg por dia"
+      ],
+      "correctIndex": 0,
+      "explanation": "O donepezil é usado em dose única diária de 5 a 10 mg; rivastigmina (6 a 12 mg/dia) e galantamina (16 a 24 mg/dia) são administradas em duas tomadas, e a tacrina exigia quatro. A comodidade posológica pesa na escolha, já que não há diferença de eficácia demonstrada entre essas drogas. Efeitos gastrintestinais são comuns a todas; insônia é mais associada ao donepezil e anorexia à rivastigmina.",
+      "image": "pg07",
+      "imageCaption": "Características principais das drogas anticolinesterásicas"
+    },
+    {
+      "question": "A tacrina, primeira droga anticolinesterásica comercializada, praticamente deixou de ser utilizada por causa de:",
+      "options": [
+        "hepatotoxicidade, com elevação das transaminases",
+        "insônia intensa e refratária ao ajuste da posologia",
+        "anorexia grave, com perda de peso acentuada e precoce",
+        "bradicardia sintomática com necessidade de marcapasso"
+      ],
+      "correctIndex": 0,
+      "explanation": "A tacrina foi abandonada na prática por toxicidade hepática, com elevação das transaminases, somada aos efeitos gastrintestinais e à posologia em quatro tomadas diárias. As demais anticolinesterásicas compartilham os efeitos gastrintestinais, mas não a hepatotoxicidade. Tacrina e donepezil induzem o citocromo P450 de forma mais marcante, o que importa nas interações medicamentosas."
+    },
+    {
+      "question": "Não havendo diferença demonstrada de eficácia entre donepezil, rivastigmina e galantamina, a escolha entre eles deve se basear em:",
+      "options": [
+        "posologia, perfil de efeitos colaterais e interação com outras drogas",
+        "idade do paciente e tempo de evolução da síndrome demencial",
+        "escore obtido no Miniexame do Estado Mental na primeira consulta",
+        "presença do alelo e4 da apolipoproteína E em exame genético"
+      ],
+      "correctIndex": 0,
+      "explanation": "Como as três drogas têm eficácia semelhante, a decisão se apóia em posologia, perfil de efeitos colaterais e potencial de interação medicamentosa. Não foram identificados fatores que prevejam melhor resposta ao tratamento colinérgico, e a ausência de resposta a um dos medicamentos não exclui a possibilidade de melhora com outro. A recomendação é prescrevê-los na demência de intensidade leve a moderada, embora também melhorem sintomas em casos graves."
+    },
+    {
+      "question": "Há evidência de que o uso de vitamina E em altas doses na doença de Alzheimer:",
+      "options": [
+        "retarda a progressão do quadro, na dose de 2.000 UI por dia",
+        "reverte o déficit cognitivo já instalado em poucas semanas",
+        "substitui com vantagem os inibidores da acetilcolinesterase",
+        "previne o aparecimento da doença em indivíduos assintomáticos"
+      ],
+      "correctIndex": 0,
+      "explanation": "A vitamina E em altas doses, 2.000 UI por dia divididas em duas tomadas, retarda a progressão do quadro demencial e pode ser prescrita em associação com a droga anticolinesterásica. Não reverte déficits já instalados nem substitui o anticolinesterásico. Nenhum tratamento disponível previne a doença em assintomáticos."
+    },
+    {
+      "question": "No tratamento dos transtornos de humor, comportamento e sintomas psicóticos da demência, deve-se dar preferência a:",
+      "options": [
+        "antidepressivos com pouca ação anticolinérgica e neurolépticos atípicos",
+        "antidepressivos tricíclicos em dose plena e neurolépticos típicos",
+        "benzodiazepínicos de meia-vida longa e anticonvulsivantes sedativos",
+        "anticolinérgicos para controle da agitação e hipnóticos à noite"
+      ],
+      "correctIndex": 0,
+      "explanation": "Depressão, agressividade e sintomatologia psicótica podem exigir tratamento farmacológico, preferindo-se antidepressivos com menor ação anticolinérgica, como os inibidores seletivos da recaptação de serotonina, e neurolépticos atípicos, de menor ação extrapiramidal. Fármacos anticolinérgicos, hipnóticos e sedativos agravam o declínio cognitivo e estão entre as causas de demência reversível. O acompanhamento multiprofissional e o suporte ao cuidador reduzem a necessidade de neurolépticos e a institucionalização."
+    },
+    {
+      "question": "Na demência com corpos de Lewy, o tratamento exige cautela especial porque:",
+      "options": [
+        "há sensibilidade exagerada aos efeitos extrapiramidais dos neurolépticos",
+        "os inibidores da acetilcolinesterase agravam as alucinações visuais",
+        "o déficit colinérgico é discreto e não justifica tratamento específico",
+        "a levodopa é contraindicada por precipitar crises convulsivas"
+      ],
+      "correctIndex": 0,
+      "explanation": "Os pacientes com demência por corpos de Lewy têm sensibilidade exagerada aos efeitos extrapiramidais dos neurolépticos, que por isso devem ser usados com muita cautela, ainda que haja alucinações visuais. Em contrapartida, a resposta aos inibidores da acetilcolinesterase tem se mostrado eficaz, justamente pelo acentuado déficit colinérgico dessa doença."
+    },
+    {
+      "question": "A medida de maior impacto no tratamento da demência vascular é:",
+      "options": [
+        "o controle dos fatores de risco e a prevenção de novos infartos",
+        "a derivação ventricular quando há dilatação dos ventrículos",
+        "a reposição de vitamina B12 em todos os pacientes idosos",
+        "a suspensão imediata de todo antiagregante plaquetário"
+      ],
+      "correctIndex": 0,
+      "explanation": "Por ser secundária a acometimento cerebrovascular, a demência vascular é a forma passível de prevenção primária e secundária: controlar hipertensão arterial, diabete, dislipidemia, tabagismo e doença cardíaca, usar antiagregantes plaquetários e tratar vasculites pode bloquear a progressão e até produzir melhora apreciável. Há evidências de que os inibidores da acetilcolinesterase também sejam eficazes no tratamento sintomático. O diagnóstico precoce da doença cerebrovascular amplia essa janela de prevenção."
+    }
+  ]
+}

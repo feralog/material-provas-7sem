@@ -1,0 +1,396 @@
+{
+  "titulo": "Zumbido e Tontura",
+  "eyebrow": "Otorrinolaringologia · Neuro-otologia",
+  "subtitulo": "Neuroplasticidade como eixo do zumbido e das síndromes vestibulares",
+  "intro": "Do mecanismo coclear do zumbido ao modelo de Jastreboff e à habituação, e depois a anátomo-fisiologia vestibular com as principais causas de tontura: doença de Ménière, cinetose, VPPB, neurite vestibular e labirintites.",
+  "questoes": [
+    {
+      "question": "A neuroplasticidade é a propriedade que sustenta boa parte do raciocínio sobre zumbido e reabilitação vestibular. Como ela se define?",
+      "options": [
+        "Capacidade do sistema nervoso de se modificar e se reorganizar ao longo da vida",
+        "Capacidade do sistema nervoso de repor neurônios perdidos por nova mitose",
+        "Capacidade do sistema nervoso de manter suas sinapses fixas após a infância",
+        "Capacidade do sistema nervoso de isolar a lesão sem recrutar outras vias"
+      ],
+      "correctIndex": 0,
+      "explanation": "A neuroplasticidade é a capacidade do sistema nervoso de se modificar e se reorganizar ao longo de toda a vida, formando novas sinapses e fortalecendo ou enfraquecendo as já existentes. Ela aparece tanto como reação adaptativa a uma injúria quanto como resposta a uma necessidade, como aprender uma língua estrangeira. Não envolve reposição de neurônios por mitose no sistema nervoso humano."
+    },
+    {
+      "question": "Peixes e anfíbios regeneram células ciliadas por toda a vida. O que acontece na cóclea humana?",
+      "options": [
+        "As células ciliadas vão sendo perdidas ao longo da vida, sem regeneração",
+        "As células ciliadas se regeneram por mitose após cada nova agressão",
+        "As células ciliadas se renovam apenas durante o período crítico pós-natal",
+        "As células ciliadas só se perdem quando há exposição a ruído intenso"
+      ],
+      "correctIndex": 0,
+      "explanation": "Em humanos as células ciliadas são perdidas por toda a vida e não se regeneram. A diferença entre as espécies é marcante: peixes e anfíbios recuperam essas células por mitose ou por diferenciação celular durante toda a vida, enquanto os mamíferos não. É por isso que a perda auditiva sensorioneural é, na prática, irreversível."
+    },
+    {
+      "question": "Um bebê recebe diagnóstico de surdez profunda bilateral aos seis meses de idade. Que conduta aproveita o período crítico do desenvolvimento?",
+      "options": [
+        "Indicar implante coclear precoce, para estimular as vias em mielinização",
+        "Adiar o implante coclear até o término da mielinização das vias",
+        "Aguardar o surgimento da fala antes de estimular as vias auditivas",
+        "Indicar amplificação sonora apenas ao ingressar na idade escolar"
+      ],
+      "correctIndex": 0,
+      "explanation": "O período crítico do desenvolvimento é a janela em que os neurônios ativos estão em processo de mielinização e o estímulo determina o quanto a via se organiza. Privar a via auditiva de estímulo nessa fase custa caro, e por isso o implante coclear em bebês surdos é indicado o mais cedo possível. Agressões ocorridas nessa janela, como uma meningite, exigem atenção redobrada."
+    },
+    {
+      "question": "O que caracteriza o zumbido (tinnitus) do ponto de vista conceitual?",
+      "options": [
+        "Percepção de som na ausência de qualquer fonte sonora externa",
+        "Percepção distorcida de um som produzido por fonte externa real",
+        "Percepção dolorosa de sons ambientais de intensidade normal",
+        "Redução da percepção sonora com preservação da condução óssea"
+      ],
+      "correctIndex": 0,
+      "explanation": "Tinnitus vem do latim tinnire e designa a percepção de som sem que exista fonte sonora externa gerando esse som. É um fenômeno de percepção, não um ruído mensurável no ambiente. A percepção distorcida de sons externos é distorção auditiva, e a dor diante de sons de intensidade normal é hiperacusia."
+    },
+    {
+      "question": "Por que todo paciente que relata zumbido precisa ser investigado?",
+      "options": [
+        "Porque o zumbido é sintoma de mais de 300 afecções distintas",
+        "Porque o zumbido é doença primária da cóclea de causa única",
+        "Porque o zumbido evolui obrigatoriamente para surdez profunda",
+        "Porque o zumbido é doença benigna que dispensa audiometria"
+      ],
+      "correctIndex": 0,
+      "explanation": "O zumbido é sintoma, não doença, e mais de 300 afecções distintas podem produzi-lo. Essa é a razão de a investigação ser obrigatória: tratar o zumbido sem procurar a causa de base é mexer apenas na ponta do problema. Na maioria das pessoas ele é intermitente e não incomoda, mas quando incomoda precisa ser rastreado."
+    },
+    {
+      "question": "Qual é a proporção de pacientes com zumbido que apresenta também perda auditiva?",
+      "options": [
+        "Cerca de 93%, o que torna a avaliação audiológica obrigatória",
+        "Cerca de 22%, o que torna a avaliação audiológica dispensável",
+        "Cerca de 50%, o que deixa a avaliação audiológica facultativa",
+        "Cerca de 15%, o que torna a avaliação audiológica pouco útil"
+      ],
+      "correctIndex": 0,
+      "explanation": "Noventa e três por cento dos pacientes com zumbido têm disacusia associada, o que torna a avaliação audiológica parte obrigatória da investigação. Essa associação tão alta não é coincidência: a própria gênese do zumbido envolve lesão de células ciliadas. Na população geral a prevalência vai de 6 a 17% nos Estados Unidos e chegou a 22% em levantamento feito em São Paulo em 2015."
+    },
+    {
+      "question": "Homem de 55 anos com zumbido contínuo e audiometria normal. Que grupos de causas ainda devem ser rastreados?",
+      "options": [
+        "Metabólicas, cardiovasculares, neurológicas, odontológicas e psicológicas",
+        "Apenas as metabólicas, pois os demais grupos não produzem zumbido",
+        "Apenas as psicológicas, pois a audiometria normal exclui causa orgânica",
+        "Apenas as neurológicas, pois os outros grupos só produzem vertigem"
+      ],
+      "correctIndex": 0,
+      "explanation": "A etiopatogenia do zumbido se organiza em grupos: sistema auditivo, cardiovascular, metabólico, neurológico, farmacológico, odontológico e psicológico. Uma audiometria normal afasta parte das causas auditivas, mas não encerra a investigação. Diabetes, dislipidemia, disfunção tireoidiana, hipertensão, anemia, disfunção de ATM e ansiedade seguem no diferencial."
+    },
+    {
+      "question": "Que condições do próprio sistema auditivo figuram entre as causas clássicas de zumbido?",
+      "options": [
+        "Presbiacusia, perda induzida por ruído, ototóxicos e trauma acústico",
+        "Presbiacusia, otosclerose, rinite alérgica e trauma cervical agudo",
+        "Rolha de cerume, perda induzida por ruído, enxaqueca e bruxismo",
+        "Presbiacusia, perda induzida por ruído, hérnia de disco e gota"
+      ],
+      "correctIndex": 0,
+      "explanation": "Dentro do próprio sistema auditivo, as causas clássicas de zumbido são a presbiacusia, a perda auditiva induzida por ruído, as drogas ototóxicas e o trauma acústico. Todas compartilham o mesmo denominador: lesão de células ciliadas. Rinite alérgica, hérnia de disco e gota não pertencem a esse grupo."
+    },
+    {
+      "question": "Paciente com zumbido, dor pré-auricular e estalido ao mastigar. Que grupo etiológico explica melhor o quadro?",
+      "options": [
+        "Odontológico, por disfunção da articulação temporomandibular",
+        "Neurológico, por compressão do nervo trigêmeo no seu trajeto",
+        "Cardiovascular, por turbulência no fluxo da artéria carótida",
+        "Farmacológico, por uso prolongado de anti-inflamatório oral"
+      ],
+      "correctIndex": 0,
+      "explanation": "A disfunção da articulação temporomandibular e os distúrbios da mastigação compõem o grupo odontológico das causas de zumbido. Zumbido somado a dor pré-auricular e estalido à mastigação aponta diretamente para a ATM. Reconhecer esse grupo evita a investigação interminável de uma orelha que não tem doença."
+    },
+    {
+      "question": "Que mecanismos respondem pela geração do zumbido na cóclea e nas vias a ela ligadas?",
+      "options": [
+        "Recrutamento trigeminal, recrutamento límbico e desproporção CCI/CCE",
+        "Recrutamento trigeminal, recrutamento coclear e hidropsia endolinfática",
+        "Recrutamento vestibular, recrutamento límbico e fibrose da membrana",
+        "Recrutamento trigeminal, inibição límbica e proporção fixa CCI/CCE"
+      ],
+      "correctIndex": 0,
+      "explanation": "Três mecanismos são descritos para a geração do zumbido: recrutamento trigeminal, recrutamento límbico e desproporção entre células ciliadas internas (CCI) e externas (CCE). A desproporção CCI/CCE é o mecanismo coclear propriamente dito; os recrutamentos explicam por que o sintoma ganha carga emocional e se mantém em evidência. A hidropsia endolinfática é o mecanismo da doença de Ménière, não da geração do zumbido.",
+      "image": "pg21",
+      "imageCaption": "Mecanismos de geração do zumbido e as células ciliadas internas e externas"
+    },
+    {
+      "question": "Qual é a relação funcional entre células ciliadas externas e internas numa cóclea íntegra?",
+      "options": [
+        "As externas são mais sensíveis e exercem inibição sobre as internas",
+        "As internas são mais sensíveis e exercem inibição sobre as externas",
+        "As externas são menos sensíveis e exercem excitação sobre as internas",
+        "As internas e as externas têm sensibilidade e ação exatamente iguais"
+      ],
+      "correctIndex": 0,
+      "explanation": "Três fatos sustentam o raciocínio: as células ciliadas externas são mais sensíveis que as internas, as células da base da cóclea são mais sensíveis que as do ápice, e as externas exercem ação inibitória sobre as internas. Essa inibição é a peça central do mecanismo: perdê-la libera as internas e abre caminho para o zumbido."
+    },
+    {
+      "question": "Uma agressão coclear que destrói proporções semelhantes de CCE e CCI produz que quadro?",
+      "options": [
+        "Disacusia sem zumbido, detectável na audiometria se a lesão passa de 30%",
+        "Zumbido sem disacusia, detectável na audiometria se a lesão passa de 30%",
+        "Disacusia com zumbido intenso desde que a lesão ultrapasse 10% das células",
+        "Zumbido isolado, sem nenhuma alteração detectável na audiometria tonal"
+      ],
+      "correctIndex": 0,
+      "explanation": "Quando a lesão atinge CCE e CCI em proporções semelhantes, a inibição das externas sobre as internas permanece equilibrada e o resultado é disacusia sem zumbido. A perda auditiva só se torna detectável na audiometria quando a lesão ultrapassa cerca de 30% das células. Abaixo disso há dano celular sem tradução audiométrica.",
+      "image": "pg24",
+      "imageCaption": "Lesão proporcional de CCE e CCI: disacusia sem zumbido"
+    },
+    {
+      "question": "Que sequência explica o aparecimento do zumbido quando a lesão coclear é desproporcional?",
+      "options": [
+        "Perda da inibição das CCE sobre as CCI, glutamato e hiperexcitabilidade",
+        "Perda da inibição das CCI sobre as CCE, glutamato e hipoexcitabilidade",
+        "Ganho de inibição das CCE sobre as CCI, GABA e queda do disparo basal",
+        "Perda total das CCI com CCE intactas, acetilcolina e bloqueio sináptico"
+      ],
+      "correctIndex": 0,
+      "explanation": "Quando as CCE são lesadas de forma desproporcional em relação às CCI, perde-se a ação inibitória que as externas exerciam sobre as internas. As CCI liberam glutamato, tornam-se hiperexcitáveis e passam a disparar sem estímulo sonoro: é o zumbido. O estresse agrava o processo porque as endorfinas liberadas potencializam a ação do glutamato na cóclea, somando-se à citotoxicidade, ao trauma acústico e ao suprimento vascular deficitário.",
+      "image": "pg25",
+      "imageCaption": "Lesão não proporcional: perda da inibição, glutamato e zumbido"
+    },
+    {
+      "question": "Que combinação de achados sugere recrutamento límbico num paciente com zumbido?",
+      "options": [
+        "Graves preservados e zumbido intenso, inclusive durante o dia",
+        "Graves rebaixados e zumbido intenso, apenas ao final da noite",
+        "Agudos preservados e zumbido discreto, apenas durante o dia",
+        "Graves preservados e zumbido ausente ao acordar pela manhã"
+      ],
+      "correctIndex": 0,
+      "explanation": "A regra prática é direta: audição de graves preservada somada a zumbido intenso, inclusive durante o dia, é muito sugestiva de recrutamento límbico. Isso importa porque desloca o alvo do tratamento da cóclea para o circuito emocional que mantém o sintoma em evidência. Sem o sistema límbico envolvido, o zumbido tende a se diluir no ruído ambiente do dia."
+    },
+    {
+      "question": "Que etapas o modelo neurofisiológico de Jastreboff encadeia para explicar o zumbido?",
+      "options": [
+        "Geração coclear, detecção subcortical, percepção cortical e incômodo",
+        "Geração cortical, detecção coclear, percepção límbica e incômodo",
+        "Geração coclear, detecção cortical, percepção límbica e habituação",
+        "Geração vestibular, detecção talâmica, percepção motora e incômodo"
+      ],
+      "correctIndex": 0,
+      "explanation": "O modelo separa geração (cóclea), detecção (subcortical) e percepção (córtex auditivo) e, em paralelo, as associações emocionais do sistema límbico e o incômodo mediado pelo sistema nervoso autônomo. O sinal pode continuar sendo gerado, mas se as alças límbica e autonômica deixam de ser recrutadas o paciente para de sofrer. Esse é o alvo terapêutico: usar a plasticidade para que o zumbido deixe de incomodar.",
+      "image": "pg27",
+      "imageCaption": "Modelo neurofisiológico de Jastreboff"
+    },
+    {
+      "question": "Por que o aparelho de amplificação sonora individual integra o tratamento do zumbido?",
+      "options": [
+        "Porque quanto pior a audição, maior é a percepção do zumbido",
+        "Porque quanto pior a audição, menor é a percepção do zumbido",
+        "Porque quanto melhor a audição, maior é a percepção do zumbido",
+        "Porque audição e percepção do zumbido variam de modo independente"
+      ],
+      "correctIndex": 0,
+      "explanation": "Audição e percepção do zumbido variam em sentidos opostos: quando a audição cai, a percepção do zumbido aumenta, e quando a audição melhora, o zumbido recua. Amplificar devolve entrada sonora às vias e reduz o contraste que faz o zumbido se destacar. Por isso o aparelho de amplificação sonora individual é uma das pernas do tripé, ao lado do tratamento medicamentoso e da terapia de reeducação."
+    },
+    {
+      "question": "Em que princípio se apoia a terapia de reeducação do zumbido (TRT) e qual é seu resultado esperado?",
+      "options": [
+        "Usa a plasticidade do sistema a favor, com cerca de 82% de melhora",
+        "Usa a plasticidade do sistema a favor, com cerca de 20% de melhora",
+        "Usa o bloqueio cirúrgico da via auditiva, com 82% de melhora",
+        "Usa a supressão farmacológica do sinal, com 50% de melhora"
+      ],
+      "correctIndex": 0,
+      "explanation": "A tinnitus retraining therapy usa a plasticidade do sistema nervoso a favor do paciente, treinando a habituação ao sinal em vez de tentar silenciá-lo, e alcança cerca de 82% de melhora. Ela decorre diretamente do modelo neurofisiológico: o objetivo não é abolir o zumbido, mas fazer com que ele deixe de incomodar. Nenhum medicamento é específico para o zumbido, ainda que várias classes sejam empregadas."
+    },
+    {
+      "question": "Como os pacientes costumam descrever o caráter do zumbido durante a anamnese?",
+      "options": [
+        "Como cigarra, grilo, cachoeira, panela de pressão ou pulsação",
+        "Como voz humana, música instrumental, palavras ou frases curtas",
+        "Como estalido mastigatório, rangido dentário ou crepitação seca",
+        "Como dor latejante, pressão retro-ocular, ardência ou coceira"
+      ],
+      "correctIndex": 0,
+      "explanation": "O caráter do zumbido costuma ser descrito por analogias sonoras: abelha, cigarra, mosquito, panela de pressão, grilo, cachoeira, borboleta e pulsação. Caracterizar o som faz parte da anamnese e ajuda a orientar a investigação e o acompanhamento ao longo do tratamento. Percepção de vozes ou de música organizada não é zumbido e sugere alucinação auditiva."
+    },
+    {
+      "question": "O que diferencia as máculas do utrículo e do sáculo das cristas ampulares dos canais semicirculares?",
+      "options": [
+        "As máculas captam aceleração linear; as cristas, aceleração angular",
+        "As máculas captam aceleração angular; as cristas, aceleração linear",
+        "As máculas captam vibração sonora; as cristas, aceleração linear",
+        "As máculas captam pressão endolinfática; as cristas, som puro"
+      ],
+      "correctIndex": 0,
+      "explanation": "As máculas do utrículo e do sáculo contêm células ciliadas cobertas por membrana gelatinosa com otólitos, cristais de carbonato de cálcio, e detectam acelerações lineares e a orientação estática da cabeça em relação à gravidade. As cristas ampulares, dentro da ampola de cada canal semicircular, têm a cúpula deslocada pelo movimento da endolinfa e detectam acelerações angulares. Os canais são três — anterior, posterior e lateral — dispostos em planos perpendiculares."
+    },
+    {
+      "question": "Que conjunto de sintomas define a doença de Ménière?",
+      "options": [
+        "Vertigem, perda auditiva flutuante, zumbido e plenitude auricular",
+        "Vertigem, perda auditiva fixa, otorreia e plenitude auricular",
+        "Vertigem posicional, perda auditiva súbita, otalgia e zumbido",
+        "Desequilíbrio postural, zumbido pulsátil e paralisia facial"
+      ],
+      "correctIndex": 0,
+      "explanation": "A doença de Ménière é uma afecção da orelha interna com dois grupos de sintomas, vestibulares e auditivos: episódios recorrentes de vertigem, perda auditiva sensorioneural flutuante, zumbido e plenitude auricular. O diagnóstico é eminentemente clínico, apoiado por exames laboratoriais, de imagem, audiológicos e vestibulares. Há várias formas de apresentação, nem sempre com os quatro sintomas desde o início."
+    },
+    {
+      "question": "Que alteração da orelha interna sustenta a fisiopatologia da doença de Ménière?",
+      "options": [
+        "Hidropsia endolinfática, com distensão do compartimento endolinfático",
+        "Fibrose da janela redonda, com rigidez do compartimento coclear",
+        "Fístula perilinfática, com perda contínua de líquido pela cóclea",
+        "Otosclerose da platina, com fixação do estribo na janela oval"
+      ],
+      "correctIndex": 0,
+      "explanation": "A fisiopatologia da doença de Ménière é a hidropsia endolinfática: o compartimento endolinfático se distende e distorce a transmissão da informação sonora e do equilíbrio. Várias condições prévias podem levar a ela, como otite média crônica, otosclerose, trauma acústico ou físico, infecção viral e autoimunidade. Daí a leitura de causa anterior e manifestação atual."
+    },
+    {
+      "question": "Qual exame avalia especificamente a função do sáculo na investigação da vertigem?",
+      "options": [
+        "O potencial evocado miogênico vestibular, o chamado PEMV",
+        "A eletrococleografia, exame chamado também de EcoG",
+        "O teste de desidratação feito com glicerol por via oral",
+        "A ressonância magnética feita com contraste de gadolínio"
+      ],
+      "correctIndex": 0,
+      "explanation": "O potencial evocado miogênico vestibular (PEMV) avalia a função do sáculo. A eletrococleografia mede potenciais elétricos da cóclea e do nervo auditivo; o teste de desidratação com glicerol reduz temporariamente o volume de endolinfa e produz melhora transitória da audição; a ressonância magnética com gadolínio serve para excluir schwannoma vestibular e lesões centrais."
+    },
+    {
+      "question": "Como se escalona o tratamento da doença de Ménière?",
+      "options": [
+        "Dieta, diuréticos e supressores labirínticos antes das opções invasivas",
+        "Antibiótico venoso e corticoide antes da timpanoplastia exploradora",
+        "Manobras de reposicionamento antes da neurectomia vestibular ampla",
+        "Reabilitação vestibular isolada, sem medicação e sem procedimento"
+      ],
+      "correctIndex": 0,
+      "explanation": "O tratamento é empírico e começa pelas medidas conservadoras: dieta, diuréticos e supressores labirínticos. Só diante de falha se passa às opções invasivas — gentamicina intratimpânica, cirurgia de descompressão do saco endolinfático, labirintectomia e neurectomia vestibular. As manobras de reposicionamento tratam a vertigem por deslocamento de otocônias, não a hidropsia."
+    },
+    {
+      "question": "O que explica o mal-estar da cinetose durante uma viagem?",
+      "options": [
+        "Conflito entre as aferências visual, vestibular e proprioceptiva",
+        "Conflito entre as aferências auditiva, olfatória e gustativa",
+        "Lesão do cerebelo causada pelas acelerações repetidas da viagem",
+        "Bloqueio transitório do reflexo vestíbulo-ocular pelo movimento"
+      ],
+      "correctIndex": 0,
+      "explanation": "A cinetose é o mal-estar relacionado ao movimento e nasce de um conflito neurossensorial entre os sistemas visual, vestibular e proprioceptivo, que passam informações incompatíveis sobre o deslocamento do corpo. O cerebelo é a estrutura que detecta e tenta ajustar esse conflito. O quadro cursa com desbalanço de acetilcolina, histamina e serotonina e acomete sobretudo crianças e mulheres, dos 2 aos 50 anos."
+    },
+    {
+      "question": "Que estratégia no manejo da cinetose recruta a neuroplasticidade de forma ativa?",
+      "options": [
+        "A reabilitação vestibular, com treino dirigido e repetido",
+        "A adaptação passiva, pela exposição repetida ao movimento",
+        "A prevenção, evitando de antemão o conflito sensorial",
+        "O anti-histamínico tomado antes de cada deslocamento"
+      ],
+      "correctIndex": 0,
+      "explanation": "O manejo da cinetose tem três níveis: prevenção, que evita o conflito antes que ele ocorra; adaptação, passiva, por exposição repetida; e treinamento com reabilitação vestibular, ativo e dirigido, que é onde a neuroplasticidade é recrutada de propósito. O diagnóstico é clínico, e há associação com enxaqueca e com o metabolismo do açúcar."
+    },
+    {
+      "question": "Qual é o mecanismo da vertigem posicional paroxística benigna?",
+      "options": [
+        "Otocônias deslocadas do utrículo para os canais semicirculares",
+        "Otocônias deslocadas dos canais semicirculares para a cóclea",
+        "Acúmulo progressivo de endolinfa no utrículo e no sáculo",
+        "Inflamação viral aguda da porção vestibular do oitavo par"
+      ],
+      "correctIndex": 0,
+      "explanation": "A VPPB, a chamada doença dos cristais, resulta do deslocamento dos otólitos (otocônias) do complexo sáculo-utrículo para dentro dos canais semicirculares. Ali eles se movimentam a cada mudança de posição da cabeça e estimulam a cúpula de forma inadequada, gerando a crise de vertigem. O canal semicircular posterior é o mais frequentemente envolvido.",
+      "image": "pg49",
+      "imageCaption": "Otocônias deslocadas do complexo sáculo-utrículo para os canais semicirculares"
+    },
+    {
+      "question": "Mulher de 50 anos relata crises de vertigem rotatória de cerca de 30 segundos ao virar na cama, sem zumbido nem hipoacusia. Qual é o diagnóstico mais provável?",
+      "options": [
+        "Vertigem posicional paroxística benigna",
+        "Neurite vestibular na sua fase aguda",
+        "Doença de Ménière em crise inicial",
+        "Labirintite viral de origem hematogênica"
+      ],
+      "correctIndex": 0,
+      "explanation": "A VPPB cursa com vertigem rotatória súbita desencadeada por mudanças de posição — deitar, olhar para cima, virar na cama — com duração curta, de segundos a cerca de um minuto, alta recorrência e nistagmo presente. O que fecha o raciocínio é a ausência de perda auditiva e de zumbido. Sintomas neurovegetativos, náuseas e vômitos podem acompanhar as crises."
+    },
+    {
+      "question": "O que a manobra de Dix-Hallpike provoca quando é positiva?",
+      "options": [
+        "Vertigem e nistagmo torcional-vertical, batendo para o lado testado",
+        "Vertigem e nistagmo horizontal puro, batendo para o lado oposto",
+        "Desequilíbrio sem nistagmo, com queda imediata para o lado testado",
+        "Hipoacusia transitória com plenitude auricular do lado testado"
+      ],
+      "correctIndex": 0,
+      "explanation": "A manobra de Dix-Hallpike é o teste diagnóstico da VPPB de canal semicircular posterior: ao posicionar a cabeça, provoca vertigem e nistagmo torcional-vertical, com os olhos batendo para cima e girando para o lado testado. É um teste provocativo — reproduzir o sintoma é o achado. O tratamento se faz com manobras de reposicionamento canalicular, sendo a de Epley a mais usada.",
+      "image": "pg51",
+      "imageCaption": "Dix-Hallpike para o diagnóstico e Epley para o tratamento"
+    },
+    {
+      "question": "Qual é o objetivo da manobra de Epley?",
+      "options": [
+        "Devolver as otocônias ao utrículo, de onde se soltaram",
+        "Levar as otocônias ao canal lateral, bem menos sensível",
+        "Dissolver as otocônias com o uso de diurético osmótico",
+        "Fixar as otocônias à cúpula do canal posterior afetado"
+      ],
+      "correctIndex": 0,
+      "explanation": "A manobra de Epley é a manobra de reposicionamento canalicular mais usada e tem um objetivo mecânico claro: conduzir as otocônias de volta ao utrículo, de onde se desprenderam, retirando-as do canal semicircular. Resolvido o deslocamento, a vertigem posicional cessa. Não existe fármaco que dissolva otocônias."
+    },
+    {
+      "question": "O que define a neurite vestibular?",
+      "options": [
+        "Inflamação aguda do nervo vestibular, em geral de origem viral",
+        "Inflamação aguda do nervo coclear, em geral de origem bacteriana",
+        "Compressão crônica do nervo vestibular por tumor de crescimento lento",
+        "Isquemia aguda do labirinto por oclusão arterial de instalação súbita"
+      ],
+      "correctIndex": 0,
+      "explanation": "A neurite vestibular é a inflamação aguda do nervo vestibular, geralmente de origem viral, que produz disfunção unilateral do sistema vestibular sem comprometimento auditivo. A hipofunção unilateral cria assimetria tônica entre os dois labirintos, o que gera ilusão de movimento, e ativa o reflexo vestíbulo-ocular, produzindo nistagmo. A vertigem é súbita, intensa e contínua, durando de horas a dias."
+    },
+    {
+      "question": "Que achados de exame físico se esperam na fase aguda da neurite vestibular?",
+      "options": [
+        "Nistagmo unidirecional, head impulse positivo e Romberg com queda",
+        "Nistagmo bidirecional, head impulse normal e Romberg sem queda",
+        "Nistagmo vertical puro, head impulse positivo e marcha em tesoura",
+        "Nistagmo unidirecional, Rinne negativo e Weber lateralizado"
+      ],
+      "correctIndex": 0,
+      "explanation": "O exame mostra nistagmo horizontal ou rotatório unidirecional, Head Impulse Test positivo do lado afetado — a sacada corretiva aparece quando o reflexo vestíbulo-ocular falha — e teste de Romberg com queda para o lado lesado. Rinne e Weber avaliam a audição e não se alteram, justamente porque a neurite poupa a função auditiva.",
+      "image": "pg55",
+      "imageCaption": "Head Impulse Test: sacada corretiva quando o reflexo vestíbulo-ocular falha"
+    },
+    {
+      "question": "Como se conduz a fase aguda da neurite vestibular?",
+      "options": [
+        "Sintomáticos, corticoide, hidratação e reabilitação vestibular precoce",
+        "Antibiótico venoso, corticoide e repouso absoluto por tempo prolongado",
+        "Antivirais, diuréticos e manobra de reposicionamento canalicular imediata",
+        "Sintomáticos por tempo indefinido, adiando sempre a reabilitação vestibular"
+      ],
+      "correctIndex": 0,
+      "explanation": "Nos primeiros dias entram os sintomáticos: antieméticos como ondansetrona e metoclopramida e antivertiginosos como dimenidrinato e meclizina. Soma-se corticoide na fase aguda, com prednisona, e hidratação. A reabilitação vestibular precoce é peça central porque acelera a compensação central, e supressores labirínticos mantidos por tempo indefinido atrapalham essa compensação."
+    },
+    {
+      "question": "Paciente com vertigem intensa e contínua há dois dias. Que achado separa neurite vestibular de labirintite?",
+      "options": [
+        "A ausência de perda auditiva e de zumbido aponta para neurite",
+        "A ausência de náuseas e de vômitos aponta para labirintite",
+        "A presença de nistagmo espontâneo aponta para labirintite",
+        "A duração de apenas alguns segundos aponta para neurite"
+      ],
+      "correctIndex": 0,
+      "explanation": "As duas cursam com vertigem intensa, contínua, náuseas, vômitos e desequilíbrio importante. A diferença está na orelha: a labirintite acomete o labirinto membranoso e acrescenta perda auditiva e zumbido, enquanto a neurite poupa a audição. Na ausência de sintomas auditivos, pensa-se em neurite vestibular."
+    },
+    {
+      "question": "Por que vias uma labirintite pode se instalar na orelha interna?",
+      "options": [
+        "Timpanogênica, meningogênica ou hematogênica",
+        "Timpanogênica, odontogênica ou iatrogênica",
+        "Linfogênica, meningogênica ou traumática",
+        "Hematogênica, alérgica ou degenerativa"
+      ],
+      "correctIndex": 0,
+      "explanation": "A labirintite é um processo infeccioso ou inflamatório do labirinto membranoso e chega a ele por três vias: timpanogênica, a partir da orelha média; meningogênica, a partir das meninges; e hematogênica, como em sarampo, caxumba, tuberculose e sífilis. Entre as etiologias ainda figuram otosclerose, trauma, doença autoimune, leucemia, oclusão da artéria labiríntica e neoplasia do osso temporal. A conduta parte da identificação da causa, com terapia específica, sintomáticos e reabilitação vestibular, reservando a cirurgia aos casos graves."
+    }
+  ]
+}

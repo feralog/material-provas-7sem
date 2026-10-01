@@ -1,0 +1,392 @@
+{
+  "titulo": "Impulsividade e Compulsividade",
+  "eyebrow": "Psiquiatria · Transtornos do Impulso",
+  "subtitulo": "Do impulso ao hábito: o continuum impulsivo-compulsivo na clínica",
+  "intro": "Definições, neurocircuitos e critérios dos transtornos do controle dos impulsos — de cleptomania e piromania a dependências comportamentais, autolesão e parafilias.",
+  "questoes": [
+    {
+      "question": "O que define, no plano psicopatológico, um ato impulsivo?",
+      "options": [
+        "Agir sem premeditação, sem pesar as consequências do ato",
+        "Repetir um ato ritualizado para evitar um dano temido",
+        "Manter uma ideia fixa reconhecida como absurda pelo sujeito",
+        "Adiar a recompensa imediata em favor de um ganho maior"
+      ],
+      "correctIndex": 0,
+      "explanation": "A impulsividade é a reação rápida e não planejada, sem avaliação das consequências, com incapacidade de adiar a recompensa: o sujeito prefere o ganho imediato ao ganho mais vantajoso, porém retardado. Repetição ritualizada e ideia fixa egodistônica pertencem ao campo da compulsividade."
+    },
+    {
+      "question": "Qual conjunto de características define um comportamento compulsivo?",
+      "options": [
+        "Comportamento repetitivo, rígido e sem função adaptativa",
+        "Comportamento súbito, não planejado e de busca de prazer",
+        "Comportamento variável, flexível e guiado pelo contexto",
+        "Comportamento isolado, único e sem repercussão funcional"
+      ],
+      "correctIndex": 0,
+      "explanation": "A compulsividade é o desempenho de um comportamento manifesto ou encoberto, repetitivo, funcionalmente prejudicial e sem função adaptativa, executado de forma habitual ou estereotipada, seguindo regras rígidas ou servindo para evitar consequências negativas percebidas."
+    },
+    {
+      "question": "Do ponto de vista do controle da ação, o que distingue impulsividade de compulsividade?",
+      "options": [
+        "A impulsividade falha em interromper o início da ação",
+        "A impulsividade falha em encerrar a ação já em curso",
+        "A compulsividade falha em iniciar qualquer ação nova",
+        "A compulsividade falha em registrar o prazer da ação"
+      ],
+      "correctIndex": 0,
+      "explanation": "A impulsividade é a incapacidade de interromper o início das ações; a compulsividade é a incapacidade de encerrar ações já em andamento. Essa distinção é a chave do continuum: o mesmo ato pode começar impulsivo e, com o tempo, tornar-se compulsivo."
+    },
+    {
+      "question": "A figura destaca a alça neuronal associada à impulsividade e à recompensa. Que estruturas a compõem?",
+      "options": [
+        "Estriado ventral, com tálamo e córtex ventromedial",
+        "Estriado dorsal, com tálamo e córtex orbitofrontal",
+        "Hipocampo, com amígdala e córtex temporal medial",
+        "Cerebelo, com tálamo e córtex motor suplementar"
+      ],
+      "correctIndex": 0,
+      "explanation": "A impulsividade corresponde a uma alça entre estriado ventral, tálamo, córtex pré-frontal ventromedial e córtex cingulado anterior. O estriado ventral, que inclui o núcleo accumbens, é o elo com o sistema de recompensa.",
+      "image": "s20i1",
+      "imageCaption": "Alça ventral — impulsividade e recompensa"
+    },
+    {
+      "question": "A figura mostra a alça ligada à compulsividade e à inibição da resposta motora. Quais são seus componentes?",
+      "options": [
+        "Estriado dorsal, tálamo e córtex orbitofrontal",
+        "Estriado ventral, tálamo e córtex cingulado anterior",
+        "Amígdala, hipotálamo e córtex insular anterior",
+        "Hipocampo, tálamo e córtex parietal posterior"
+      ],
+      "correctIndex": 0,
+      "explanation": "A compulsividade depende do circuito entre estriado dorsal, tálamo e córtex orbitofrontal. O estriado dorsal é a sede do sistema de hábito, o que explica a automatização e a rigidez do comportamento compulsivo.",
+      "image": "s21i1",
+      "imageCaption": "Alça dorsal — compulsividade e inibição motora"
+    },
+    {
+      "question": "Uso de drogas, jogo e compulsão alimentar começam impulsivos e tendem a se tornar compulsivos. Qual mecanismo explica essa transição?",
+      "options": [
+        "Neuroplasticidade que desloca o ato para o sistema de hábito",
+        "Neurodegeneração que apaga o circuito de recompensa ventral",
+        "Hipersensibilidade do córtex pré-frontal ao reforço positivo",
+        "Redução da liberação de dopamina na área tegmentar ventral"
+      ],
+      "correctIndex": 0,
+      "explanation": "Alterações neuroplásticas recrutam o sistema de hábito do estriado dorsal, fazendo com que os impulsos migrem da alça ventral para a alça dorsal. O comportamento deixa de ser movido pela recompensa e passa a ser movido pelo hábito, o que o torna mais resistente à mudança."
+    },
+    {
+      "question": "Como se organiza o controle volitivo sobre impulsos e compulsões?",
+      "options": [
+        "Córtex pré-frontal exerce controle inibitório sobre o estriado",
+        "Estriado ventral exerce controle inibitório sobre o pré-frontal",
+        "Tálamo exerce controle inibitório direto sobre o córtex frontal",
+        "Cerebelo exerce controle inibitório sobre o cingulado anterior"
+      ],
+      "correctIndex": 0,
+      "explanation": "O controle inibitório é exercido de cima para baixo, por áreas do córtex pré-frontal que freiam atos involuntários ou condicionados. O sintoma surge por falha desse freio cortical ou por pressão excessiva de baixo para cima, vinda do estriado ventral na impulsividade e do dorsal na compulsividade."
+    },
+    {
+      "question": "Impulsividade e compulsividade são propostas como endofenótipos. O que essa proposta implica?",
+      "options": [
+        "São dimensões que atravessam transtornos psiquiátricos distintos",
+        "São sintomas exclusivos do transtorno obsessivo-compulsivo",
+        "São quadros restritos aos transtornos de personalidade",
+        "São achados presentes apenas nas dependências químicas"
+      ],
+      "correctIndex": 0,
+      "explanation": "Por serem observadas em ampla variedade de diagnósticos, impulsividade e compulsividade funcionam como endofenótipos transdiagnósticos — formas de inflexibilidade cognitiva ligadas a circuitos específicos, e não sintomas de uma única categoria nosológica."
+    },
+    {
+      "question": "Uma paciente descreve que só come compulsivamente quando está angustiada ou triste, para fazer o mal-estar passar. Que dimensão da impulsividade isso corresponde?",
+      "options": [
+        "Urgência negativa — agir para reduzir emoções desagradáveis",
+        "Urgência positiva — agir levado por emoções muito intensas",
+        "Busca de sensação — procurar experiência de risco e excitação",
+        "Falta de perseverança — não concluir as tarefas monótonas"
+      ],
+      "correctIndex": 0,
+      "explanation": "A urgência negativa é a tendência a agir precipitadamente para diminuir emoções negativas. A urgência positiva seria o equivalente diante de emoções positivas intensas; a busca de sensação envolve prazer no perigo; a falta de perseverança é dificuldade de manter foco em tarefas enfadonhas."
+    },
+    {
+      "question": "A impulsividade é heterogênea e se expressa de modo diferente em cada diagnóstico. Qual associação está correta?",
+      "options": [
+        "Transtorno de personalidade borderline — instabilidade afetiva",
+        "Transtorno de personalidade antissocial — déficit de atenção",
+        "Transtorno de déficit de atenção — redução da função empática",
+        "Transtorno do jogo — agressividade física incontida e difusa"
+      ],
+      "correctIndex": 0,
+      "explanation": "Cada quadro tem um motor distinto: borderline pela instabilidade afetiva, TDAH por deficiências cognitivas, personalidade antissocial pela redução da função empática, transtorno do jogo pelo desejo de ganho monetário e transtorno explosivo intermitente pela agressividade incontida."
+    },
+    {
+      "question": "Quais diagnósticos compõem a categoria F63 — transtornos dos hábitos e impulsos?",
+      "options": [
+        "Jogo patológico, piromania, cleptomania e tricotilomania",
+        "Jogo patológico, bulimia, cleptomania e transtorno bipolar",
+        "Piromania, tricotilomania, esquizofrenia e transtorno bipolar",
+        "Cleptomania, piromania, autismo e transtorno de somatização"
+      ],
+      "correctIndex": 0,
+      "explanation": "A categoria F63 reúne jogo patológico, piromania, roubo patológico (cleptomania), tricotilomania e outros transtornos dos hábitos e impulsos, como a oniomania. São comportamentos irracionais, repetitivos e descontrolados, com prejuízo significativo."
+    },
+    {
+      "question": "Na categoria DSM-5 dos Transtornos Disruptivos, do Controle de Impulsos e da Conduta, quais diagnósticos clássicos do impulso permaneceram?",
+      "options": [
+        "Piromania, cleptomania e transtorno explosivo intermitente",
+        "Tricotilomania, oniomania e transtorno dismórfico corporal",
+        "Jogo patológico, hipocondria e transtorno de somatização",
+        "Acumulação, escoriação da pele e dependência de internet"
+      ],
+      "correctIndex": 0,
+      "explanation": "Permaneceram piromania, cleptomania e transtorno explosivo intermitente, aos quais foram agregados transtorno de conduta, transtorno opositor desafiador e transtorno de personalidade antissocial. Tricotilomania e escoriação migraram para o espectro obsessivo-compulsivo."
+    },
+    {
+      "question": "O que caracteriza a relação do paciente com TOC diante das próprias ideias obsessivas?",
+      "options": [
+        "Reconhece as ideias como suas, mas estranhas à sua vontade",
+        "Reconhece as ideias como impostas por uma força externa",
+        "Acredita que as ideias são verdadeiras e desejadas por si",
+        "Sente prazer direto ao executar os atos que a ideia exige"
+      ],
+      "correctIndex": 0,
+      "explanation": "A crítica está preservada: o paciente reconhece os pensamentos como próprios, porém estranhos à sua vontade e em geral desprazerosos. Não há prazer direto na realização dos atos, que são percebidos como inúteis — é a marca da egodistonia."
+    },
+    {
+      "question": "Qual combinação define o transtorno de acumulação?",
+      "options": [
+        "Aquisição excessiva somada ao fracasso em descartar objetos",
+        "Aquisição excessiva somada ao descarte imediato dos objetos",
+        "Furto repetido de objetos sem valor somado a alívio da tensão",
+        "Compra repetida de objetos somada à devolução sistemática"
+      ],
+      "correctIndex": 0,
+      "explanation": "A acumulação combina aquisição de grande número de itens com fracasso em descartar objetos inúteis, resultando em espaços desordenados. Comorbidades frequentes incluem depressão, transtornos psicóticos, ansiedade generalizada, fobia social, TOC e transtorno bipolar."
+    },
+    {
+      "question": "O que diferencia a oniomania do comportamento de quem simplesmente consome muito por desejo e ostentação?",
+      "options": [
+        "O que alivia é o ato de comprar, e não o objeto comprado",
+        "O que alivia é o objeto adquirido, e não o ato de comprar",
+        "O que motiva é a ostentação social diante dos conhecidos",
+        "O que motiva é o lucro obtido na revenda dos objetos"
+      ],
+      "correctIndex": 0,
+      "explanation": "Na oniomania a compra em si gera o alívio e se torna a principal maneira de lidar com sentimentos e situações desconfortáveis; os produtos podem ser abandonados depois. Seguem-se arrependimento, culpa e prejuízo financeiro, mesmo com a pessoa sabendo que o ato será prejudicial."
+    },
+    {
+      "question": "Uma mulher é flagrada levando canetas e sabonetes de uma loja. Tem renda alta, não precisa dos itens e nem sabe explicar por que os pegou. Qual é o diagnóstico mais provável?",
+      "options": [
+        "Cleptomania",
+        "Oniomania",
+        "Piromania",
+        "Acumulação"
+      ],
+      "correctIndex": 0,
+      "explanation": "Na cleptomania o furto recai sobre objetos diversos, muitas vezes sem valor, sem necessidade e com certo grau de dissociação. O objetivo é o ato de furtar, não o objeto furtado — o que a separa do furto comum, motivado pelo ganho."
+    },
+    {
+      "question": "Qual é a sequência afetiva típica em torno do ato na cleptomania?",
+      "options": [
+        "Tensão crescente, depois alívio e, por fim, culpa",
+        "Alívio inicial, depois tensão e, por fim, euforia",
+        "Culpa inicial, depois tensão e, por fim, indiferença",
+        "Tensão crescente, depois medo e, por fim, euforia"
+      ],
+      "correctIndex": 0,
+      "explanation": "Antes do furto há tensão crescente; durante e logo após, gratificação imediata e alívio da tensão; em seguida vêm culpa, remorso, frustração e sintomas depressivos. Esse arco tensão-alívio-culpa é o padrão dos transtornos do controle dos impulsos de natureza hedônica."
+    },
+    {
+      "question": "A imagem mostra uma placa de rarefação capilar produzida pelo arrancamento repetido de fios. O que é correto sobre esse quadro?",
+      "options": [
+        "A tensão antecipatória ao ato é menos comum nele",
+        "A tensão antecipatória ao ato é obrigatória nele",
+        "O ato é sempre precedido de ideia obsessiva de contágio",
+        "O arrancamento ocorre apenas durante o sono profundo"
+      ],
+      "correctIndex": 0,
+      "explanation": "Na tricotilomania e nos demais comportamentos repetitivos focados no corpo — escoriação da pele, onicofagia grave — a tensão antecipatória é menos comum do que em cleptomania ou piromania. O ato frequentemente ocorre de forma automática, fora do foco de atenção.",
+      "image": "s32i1",
+      "imageCaption": "Placa de alopecia por arrancamento (tricotilomania)"
+    },
+    {
+      "question": "Qual crença central define o transtorno dismórfico corporal?",
+      "options": [
+        "Crença de falha na aparência que outros sequer percebem",
+        "Crença de ter doença grave apesar de exames normais",
+        "Crença de que precisa guardar tudo o que adquire",
+        "Crença de que o fogo o protege de perigos reais"
+      ],
+      "correctIndex": 0,
+      "explanation": "No transtorno dismórfico corporal há forte crença de uma falha na aparência que torna a pessoa feia ou deformada, embora os outros nem a percebam. Acompanham comportamentos repetitivos e demorados, como se olhar no espelho e esconder o defeito, além da busca de cirurgias plásticas."
+    },
+    {
+      "question": "Qual descrição corresponde à hipocondria, incluindo sua frequência populacional?",
+      "options": [
+        "Crença infundada de doença grave, com 1 a 5% da população",
+        "Crença infundada de deformidade física, em 1 a 5% do total",
+        "Medo de contaminação por germes, em 10 a 15% da população",
+        "Preocupação com simetria e ordem, em 20 a 25% do total"
+      ],
+      "correctIndex": 0,
+      "explanation": "A hipocondria atinge de 1 a 5% da população e consiste na crença infundada de padecer de doença grave, com medo irracional da morte, auto-observação constante do corpo e supervalorização de sintomas corriqueiros. O paciente não se conforma com exames normais e repete consultas e idas ao pronto-socorro."
+    },
+    {
+      "question": "O que separa o transtorno de compulsão alimentar da bulimia nervosa?",
+      "options": [
+        "Ausência de comportamentos compensatórios após o episódio",
+        "Presença de vômito autoinduzido após cada episódio de comer",
+        "Presença de exercício extenuante após cada episódio de comer",
+        "Ausência de perda de controle durante o episódio de comer"
+      ],
+      "correctIndex": 0,
+      "explanation": "Nos dois quadros há episódios de perda de controle sobre a alimentação, com grande sofrimento, culpa ou repulsa. O que define a compulsão alimentar é que esses episódios não são seguidos de comportamentos compensatórios inadequados, como vômito autoinduzido, laxantes, enemas ou exercício extenuante."
+    },
+    {
+      "question": "Quais dados epidemiológicos caracterizam a síndrome de Tourette?",
+      "options": [
+        "Início antes dos 21 anos, mais frequente entre meninos",
+        "Início após os 30 anos, mais frequente entre as meninas",
+        "Início antes dos 21 anos, igual entre meninos e meninas",
+        "Início após os 40 anos, mais frequente entre os meninos"
+      ],
+      "correctIndex": 0,
+      "explanation": "A síndrome de Tourette cursa com manifestações vocais e/ou físicas involuntárias repetitivas, prevalência em torno de 1 para 2.500, proporção de três meninos para cada menina e início antes dos 21 anos, em geral entre 3 e 9 anos. É doença crônica, que pode atenuar com a idade."
+    },
+    {
+      "question": "Dentro dos critérios de dependência de substâncias, o que caracteriza especificamente a tolerância?",
+      "options": [
+        "Necessidade de doses maiores para o mesmo efeito inicial",
+        "Necessidade de doses menores para o mesmo efeito inicial",
+        "Surgimento de sintomas físicos ao interromper o consumo",
+        "Perda do desejo de consumir depois de alguns meses de uso"
+      ],
+      "correctIndex": 0,
+      "explanation": "Tolerância é a exigência de doses crescentes da substância psicoativa para alcançar os efeitos obtidos no início do uso. O surgimento de sintomas físicos à interrupção descreve a síndrome de abstinência, critério distinto e independente dentro do quadro de dependência."
+    },
+    {
+      "question": "Que característica do ambiente digital dificulta especificamente que o usuário com dependência de internet reconheça o problema e imponha limites?",
+      "options": [
+        "Anonimato e ausência de controle por outras pessoas",
+        "Supervisão constante por familiares e por amigos",
+        "Custo financeiro elevado de cada sessão de jogo",
+        "Necessidade de sair de casa para acessar os jogos"
+      ],
+      "correctIndex": 0,
+      "explanation": "O anonimato e a ausência de controle externo reduzem as chances de o usuário se conscientizar do problema e estabelecer limites. Soma-se a isso a falta de resistência para interromper a atividade, com prejuízo direto no trabalho, nos estudos e na qualidade de vida."
+    },
+    {
+      "question": "Quais situações ficam EXCLUÍDAS do diagnóstico de piromania?",
+      "options": [
+        "Incêndio por lucro, por ideologia ou por explosão de raiva",
+        "Incêndio precedido de excitação e fascinação pelo fogo",
+        "Incêndio em adolescente com curiosidade pelas chamas",
+        "Incêndio repetido sem qualquer ganho material obtido"
+      ],
+      "correctIndex": 0,
+      "explanation": "A piromania exige excitação nos momentos que antecedem o ato e fascinação pelo fogo, excluindo incêndios por motivação monetária, político-ideológica ou como expressão de raiva. Em crianças, a conduta incendiária costuma associar-se a transtorno de conduta, transtorno de ajustamento ou TDAH."
+    },
+    {
+      "question": "Qual critério de frequência caracteriza a forma LEVE do transtorno explosivo intermitente?",
+      "options": [
+        "Agressão verbal ou sem lesão, duas vezes em três meses",
+        "Agressão verbal ou sem lesão, três vezes em doze meses",
+        "Agressão com lesão corporal, duas vezes em três meses",
+        "Agressão com dano patrimonial, cinco vezes em um mês"
+      ],
+      "correctIndex": 0,
+      "explanation": "A forma leve reúne ameaças, xingamentos, ofensas, gestos obscenos, ataque a objetos e agressões físicas sem lesão corporal, com frequência de duas vezes em três meses. A forma grave exige destruição de patrimônio ou agressão com lesão corporal, três vezes em um ano."
+    },
+    {
+      "question": "Qual critério de frequência caracteriza a forma GRAVE do transtorno explosivo intermitente?",
+      "options": [
+        "Destruição de patrimônio ou lesão, três vezes em um ano",
+        "Destruição de patrimônio ou lesão, duas vezes em três meses",
+        "Xingamentos e gestos obscenos, três vezes em um ano",
+        "Ameaças verbais sem agressão física, duas vezes por mês"
+      ],
+      "correctIndex": 0,
+      "explanation": "A forma grave exige destruição de propriedade ou ataques físicos com lesão corporal, três vezes em um ano. As explosões não têm objetivo instrumental — não visam dinheiro, poder ou intimidação — e causam sofrimento acentuado, prejuízo profissional ou interpessoal e consequências legais."
+    },
+    {
+      "question": "Como se estabelece o diagnóstico e o tratamento do transtorno de personalidade borderline?",
+      "options": [
+        "Diagnóstico clínico, com psicoterapia associada a fármacos",
+        "Diagnóstico por neuroimagem, com uso exclusivo de fármacos",
+        "Diagnóstico por exame genético, com psicoterapia exclusiva",
+        "Diagnóstico por eletroencefalograma, com internação longa"
+      ],
+      "correctIndex": 0,
+      "explanation": "O diagnóstico do transtorno de personalidade borderline é feito por critérios clínicos, e o tratamento combina psicoterapia e fármacos. O quadro é marcado por instabilidade e hipersensibilidade nos relacionamentos, instabilidade de autoimagem, flutuações extremas de humor e impulsividade."
+    },
+    {
+      "question": "Qual critério de frequência define o comportamento de autolesão não suicida?",
+      "options": [
+        "Cinco ou mais dias no último ano, sem intenção suicida",
+        "Cinco ou mais dias no último mês, com intenção suicida",
+        "Dois ou mais dias no último ano, com intenção suicida",
+        "Dez ou mais dias no último mês, sem intenção suicida"
+      ],
+      "correctIndex": 0,
+      "explanation": "O critério exige dano intencional autoinfligido à superfície do corpo em cinco ou mais dias no último ano — cortar, queimar, fincar, bater, esfregar excessivamente — com a expectativa de lesão de dano físico apenas menor ou moderado. A ausência de intenção suicida é o que separa esse comportamento da tentativa de suicídio."
+    },
+    {
+      "question": "Quais expectativas o paciente costuma associar ao ato de autolesão não suicida?",
+      "options": [
+        "Aliviar estado negativo, resolver conflito ou induzir prazer",
+        "Aliviar dor física, reduzir febre ou induzir sono profundo",
+        "Obter ganho financeiro, evitar trabalho ou chamar a polícia",
+        "Encerrar a própria vida, punir terceiros ou obter herança"
+      ],
+      "correctIndex": 0,
+      "explanation": "As expectativas descritas são obter alívio de um estado de sentimento ou cognição negativos, resolver uma dificuldade interpessoal ou induzir um estado de sentimento positivo. O alívio é experimentado durante ou logo após o ato, o que pode gerar um padrão de repetição com feição de dependência."
+    },
+    {
+      "question": "Qual afirmação sobre o transtorno de travestismo está correta?",
+      "options": [
+        "Excitação sexual por se travestir, sem relação com ser trans",
+        "Identidade de gênero diversa do sexo atribuído ao nascer",
+        "Excitação sexual por objetos inanimados específicos",
+        "Excitação sexual por observar pessoas sem consentimento"
+      ],
+      "correctIndex": 0,
+      "explanation": "O transtorno de travestismo consiste em excitação sexual intensa obtida pelo ato de se travestir, e não se confunde com identidade transgênero, que diz respeito à identidade de gênero e não a um interesse sexual. Excitação por objeto inanimado define fetichismo; por observar sem consentimento, voyeurismo."
+    },
+    {
+      "question": "A figura mostra as principais vias dopaminérgicas. Qual delas constitui o circuito de recompensa envolvido nas dependências?",
+      "options": [
+        "Área tegmentar ventral para o núcleo accumbens",
+        "Substância negra para o núcleo caudado e putame",
+        "Núcleo accumbens para o córtex motor primário",
+        "Hipotálamo para a hipófise e glândula adrenal"
+      ],
+      "correctIndex": 0,
+      "explanation": "O circuito de recompensa é a via mesolímbica, que parte da área tegmentar ventral para o núcleo accumbens. A projeção da substância negra para o estriado dorsal é a via nigroestriatal, motora, e a via infundibular é hormonal.",
+      "image": "s18i1",
+      "imageCaption": "Vias dopaminérgicas e circuito de recompensa"
+    },
+    {
+      "question": "Na organização dos endofenótipos impulsivo-compulsivos, onde se situam cleptomania, piromania e transtorno explosivo intermitente?",
+      "options": [
+        "No polo impulsivo, junto com mania e TDAH",
+        "No polo compulsivo, junto com TOC e Tourette",
+        "No polo compulsivo, junto com autismo e tiques",
+        "No polo impulsivo, junto com TOC e acumulação"
+      ],
+      "correctIndex": 0,
+      "explanation": "O polo impulsivo, ligado à alça ventral, reúne cleptomania, piromania, transtorno explosivo intermitente, violência impulsiva, borderline, comportamento antissocial, mania e TDAH. O polo compulsivo, da alça dorsal, concentra TOC, tricotilomania, escoriação, dismórfico corporal, Tourette e autismo.",
+      "image": "s23i1",
+      "imageCaption": "Endofenótipos: alça impulsiva e alça compulsiva"
+    },
+    {
+      "question": "Qual padrão de curso e de risco acompanha os quadros marcados por impulsividade?",
+      "options": [
+        "Começa na adolescência e se liga a tentativas de suicídio",
+        "Começa após os 60 anos e não se liga ao risco suicida",
+        "Começa na infância e desaparece sempre na vida adulta",
+        "Começa na velhice e se liga apenas à agressão a terceiros"
+      ],
+      "correctIndex": 0,
+      "explanation": "O início costuma ocorrer na adolescência ou no princípio da vida adulta, período de maior incapacitação, e as tentativas de suicídio estão correlacionadas a traços impulsivos. O repertório inclui comportamento autoagressivo, heteroagressivo e de risco."
+    }
+  ]
+}

@@ -1,0 +1,394 @@
+{
+  "titulo": "Endometriose e Algia Pélvica",
+  "eyebrow": "Ginecologia · Dor Pélvica Crônica",
+  "subtitulo": "Da dor pélvica crônica ao nódulo profundo: diagnóstico e conduta",
+  "intro": "Dor pélvica crônica e suas causas ginecológicas e não ginecológicas, teorias patogênicas da endometriose, as formas peritoneal, ovariana e profunda, classificações ASRM e AAGL, diagnóstico por imagem e tratamento clínico e cirúrgico.",
+  "questoes": [
+    {
+      "question": "Quais critérios definem a dor pélvica crônica?",
+      "options": [
+        "Dor em andar inferior do abdome, acíclica, com duração igual ou superior a seis meses",
+        "Dor em andar inferior do abdome, cíclica, com duração igual ou inferior a três meses",
+        "Dor em andar inferior do abdome, acíclica, desencadeada exclusivamente pelo coito",
+        "Dor em andar inferior do abdome, acíclica, sempre atribuível a uma gravidez atual"
+      ],
+      "correctIndex": 0,
+      "explanation": "A dor pélvica crônica é caracterizada por dor em andar inferior do abdome, acíclica, com duração igual ou superior a seis meses, não causada pela gravidez e sem associação exclusiva com o coito. A exigência dos seis meses é o que separa a dor crônica de quadros agudos ou subagudos."
+    },
+    {
+      "question": "Qual é a localização anatômica que delimita a dor pélvica crônica?",
+      "options": [
+        "Entre a pelve, a parede abdominal anterior e a coluna lombossacra ou nádegas",
+        "Entre o epigástrio, o hipocôndrio direito e a região escapular esquerda",
+        "Restrita à linha média do abdome, sempre acima da cicatriz umbilical",
+        "Restrita à região perineal e à face interna de ambas as coxas"
+      ],
+      "correctIndex": 0,
+      "explanation": "A dor se localiza entre a pelve, a parede anterior do abdome e a coluna lombossacra ou nádegas, na altura ou abaixo da cicatriz umbilical. Além da topografia, exige-se que seja intensa o bastante para impossibilitar atividades diárias e/ou obrigar a paciente a procurar tratamento médico."
+    },
+    {
+      "question": "Como se classifica a dor pélvica crônica de intensidade grave?",
+      "options": [
+        "Interfere nas atividades e não melhora mesmo com a medicação prescrita",
+        "Interfere nas atividades, porém melhora com a medicação prescrita",
+        "Incomoda a paciente, que segue realizando normalmente suas atividades",
+        "Impede as atividades apenas durante os dias de fluxo menstrual intenso"
+      ],
+      "correctIndex": 0,
+      "explanation": "A dor grave é incapacitante: interfere nas atividades e não melhora mesmo com a medicação prescrita. A moderada também interfere, mas responde ao analgésico; a leve apenas incomoda, sem impedir as atividades. A escala é funcional, não depende de exame nem de escore numérico."
+    },
+    {
+      "question": "Qual é a prevalência estimada da dor pélvica crônica e seu peso no consultório de ginecologia?",
+      "options": [
+        "Cerca de uma em cada sete mulheres, respondendo por 10% das consultas",
+        "Cerca de uma em cada setenta mulheres, respondendo por 1% das consultas",
+        "Cerca de uma em cada duas mulheres, respondendo por 50% das consultas",
+        "Cerca de uma em cada vinte mulheres, respondendo por 30% das consultas"
+      ],
+      "correctIndex": 0,
+      "explanation": "A dor pélvica crônica atinge aproximadamente uma em cada sete mulheres e responde por cerca de 10% das consultas ginecológicas. É um motivo de consulta frequente e com alto impacto funcional, o que justifica investigação sistematizada e não apenas sintomática."
+    },
+    {
+      "question": "O que se observa, de regra, quanto ao número de causas em uma paciente com dor pélvica crônica?",
+      "options": [
+        "É mais comum haver mais de uma condição causando dor do que apenas uma",
+        "É mais comum identificar uma única condição isolada causando toda a dor",
+        "A dor nunca se origina de órgãos fora do aparelho reprodutor feminino",
+        "Mulheres com mais de uma causa costumam referir dor de menor intensidade"
+      ],
+      "correctIndex": 0,
+      "explanation": "Na dor pélvica crônica é mais comum a paciente ter mais de uma condição do que apenas uma, com causas sobrepostas que contribuem em graus diferentes — endometriose e cistite intersticial no mesmo quadro, por exemplo. Mulheres com mais de uma causa costumam ter mais dor, e a origem pode estar fora do sistema reprodutor."
+    },
+    {
+      "question": "Quais são as três principais formas de apresentação da síndrome de dor pélvica crônica?",
+      "options": [
+        "Dismenorreia, dispareunia e dor acíclica sem relação com fluxo ou coito",
+        "Dismenorreia, sangramento intermenstrual e dor desencadeada pelo esforço",
+        "Dispareunia, corrimento vaginal recorrente e dor acíclica de forte intensidade",
+        "Dor acíclica, disúria isolada e dismenorreia restrita à adolescência"
+      ],
+      "correctIndex": 0,
+      "explanation": "As três formas de apresentação são dismenorreia, dispareunia e dor acíclica — esta última sem relação com o fluxo menstrual nem com o coito. Incluir a dor cíclica e a desencadeada pelo coito na definição de dor pélvica crônica é ponto controverso, defendido por autores que acrescentam dismenorreia e dispareunia à síndrome."
+    },
+    {
+      "question": "Quais condições representam causas musculoesqueléticas de dor pélvica crônica?",
+      "options": [
+        "Mialgia por tensão do assoalho pélvico e síndrome do piriforme",
+        "Cistite intersticial e síndrome da bexiga dolorosa de repetição",
+        "Síndrome do intestino irritável e doença inflamatória intestinal",
+        "Neuralgia do pudendo e infarto do nervo cutâneo abdominal"
+      ],
+      "correctIndex": 0,
+      "explanation": "As causas musculoesqueléticas incluem dor miofascial da parede abdominal, mialgia por tensão do assoalho pélvico, fibromialgia, coccigodinia, síndrome do piriforme e ciatalgia. Cistite intersticial é urológica, intestino irritável é gastrointestinal e neuralgia do pudendo é neurológica."
+    },
+    {
+      "question": "Qual condição é causa urológica clássica de dor pélvica crônica?",
+      "options": [
+        "Cistite intersticial, também chamada síndrome da bexiga dolorosa",
+        "Coccigodinia, também chamada síndrome da dor do assoalho pélvico",
+        "Doença celíaca, também chamada enteropatia sensível ao glúten",
+        "Congestão pélvica, também chamada síndrome varicosa vulvar"
+      ],
+      "correctIndex": 0,
+      "explanation": "A cistite intersticial, ou síndrome da bexiga dolorosa, é causa urológica de dor pélvica crônica, ao lado de cistite actínica, câncer de bexiga, síndrome uretral, cistite de repetição e urolitíase. Convive com frequência com a endometriose na mesma paciente, somando dor."
+    },
+    {
+      "question": "Quais fatores de origem psíquica figuram entre as causas de dor pélvica crônica?",
+      "options": [
+        "Depressão, somatização, uso de opiáceos e abuso sexual prévio",
+        "Depressão, hipotireoidismo, anemia ferropriva e tabagismo ativo",
+        "Somatização, dislipidemia, uso de diuréticos e sedentarismo",
+        "Abuso sexual prévio, hipertensão, obesidade e uso de estatinas"
+      ],
+      "correctIndex": 0,
+      "explanation": "Entre as causas de origem psíquica estão depressão, somatização, uso de opiáceos, abuso sexual e distúrbios do sono. São fatores que amplificam a percepção dolorosa e precisam entrar na anamnese, sob pena de o quadro ser tratado apenas com analgésico e não responder."
+    },
+    {
+      "question": "Quais diagnósticos compõem o grupo das causas ginecológicas de dor pélvica crônica?",
+      "options": [
+        "Adenomiose, leiomioma, sequelas de doença inflamatória pélvica e aderências",
+        "Cistite intersticial, urolitíase, síndrome uretral e câncer de bexiga",
+        "Doença celíaca, carcinoma colorretal, hérnias e intestino irritável",
+        "Fibromialgia, coccigodinia, ciatalgia e síndrome do músculo piriforme"
+      ],
+      "correctIndex": 0,
+      "explanation": "As causas ginecológicas incluem endometriose, leiomioma, adenomiose, cistos ovarianos, síndrome do ovário remanescente, sequelas de doença inflamatória pélvica, dor pós-ligadura tubária e doença adesiva pélvica. As demais alternativas listam, respectivamente, causas urológicas, gastrointestinais e musculoesqueléticas."
+    },
+    {
+      "question": "Qual é o conceito de endometriose?",
+      "options": [
+        "Tecido semelhante ao endométrio fora da cavidade uterina, hormônio-dependente",
+        "Tecido semelhante ao miométrio dentro da cavidade uterina, hormônio-dependente",
+        "Tecido endometrial invadindo o miométrio, sem qualquer hormônio-dependência",
+        "Tecido neoplásico derivado do endométrio, com potencial metastático elevado"
+      ],
+      "correctIndex": 0,
+      "explanation": "Endometriose é doença não neoplásica em que tecido semelhante ao endométrio é encontrado fora da cavidade uterina, mimetizando a estrutura histológica e a função do endométrio tópico. Guarda semelhança morfológica, imunológica e estrutural com a mucosa uterina, inclusive a hormônio-dependência."
+    },
+    {
+      "question": "Qual é a prevalência da endometriose na população feminina em idade reprodutiva e entre as mulheres inférteis?",
+      "options": [
+        "10 a 14% das mulheres em idade reprodutiva e 25 a 50% das inférteis",
+        "40 a 50% das mulheres em idade reprodutiva e 80 a 90% das inférteis",
+        "1 a 2% das mulheres em idade reprodutiva e 5 a 10% das inférteis",
+        "10 a 14% das mulheres após a menopausa e 25 a 50% das nulíparas"
+      ],
+      "correctIndex": 0,
+      "explanation": "A endometriose acomete 10 a 14% das mulheres na fase reprodutiva, dos 19 aos 44 anos, e chega a 25 a 50% entre as inférteis. No Brasil são estimados 3,5 a 5 milhões de casos, e cerca de 60 milhões no mundo."
+    },
+    {
+      "question": "Qual teoria patogênica propõe que células endometriais viáveis chegam à cavidade pélvica pelas tubas durante a menstruação?",
+      "options": [
+        "Regurgitação transtubária do sangue menstrual para a cavidade pélvica",
+        "Metaplasia celômica do peritônio em resposta a estímulo inflamatório",
+        "Disseminação linfática e hematogênica de células endometriais viáveis",
+        "Persistência de restos embrionários dos ductos de Müller no peritônio"
+      ],
+      "correctIndex": 0,
+      "explanation": "A teoria da regurgitação transtubária do sangue menstrual, proposta por Sampson em 1924, é a mais aceita para a endometriose peritoneal. O refluxo leva células endometriais viáveis à cavidade, onde aderem, proliferam e invadem o peritônio. As demais teorias coexistem para explicar focos que o refluxo não alcança."
+    },
+    {
+      "question": "Qual teoria patogênica explica o aparecimento de focos de endometriose em cicatriz de ato cirúrgico prévio?",
+      "options": [
+        "Teoria da disseminação iatrogênica, por implante durante ato cirúrgico",
+        "Teoria da metaplasia celômica, por transformação do epitélio pélvico",
+        "Teoria dos restos embrionários, por persistência de tecido mülleriano",
+        "Teoria neoplásica, por transformação maligna do endométrio tópico"
+      ],
+      "correctIndex": 0,
+      "explanation": "A teoria da disseminação iatrogênica atribui o implante ao transporte mecânico de tecido endometrial durante procedimentos. Compõe o conjunto de teorias que inclui regurgitação transtubária, metaplasia celômica, restos embrionários, disseminação linfática e hematogênica, extensão direta, mecanismo imunológico e teoria neoplásica."
+    },
+    {
+      "question": "Que tipo de dispareunia caracteriza o quadro clínico da endometriose?",
+      "options": [
+        "É de profundidade, referida durante a penetração profunda",
+        "É superficial, referida já na entrada do intróito vaginal",
+        "É de profundidade, restrita ao período após a menopausa",
+        "É superficial, melhorando progressivamente com o coito"
+      ],
+      "correctIndex": 0,
+      "explanation": "A dispareunia da endometriose é de profundidade, deflagrada pela penetração profunda que mobiliza ligamentos uterossacros, fundo de saco posterior e septo retovaginal comprometidos. Compõe o quadro clínico junto da dor pélvica crônica cíclica ou acíclica, da dismenorreia e da infertilidade."
+    },
+    {
+      "question": "Além da dismenorreia e da dor pélvica, o conjunto dos seis 'Ds' da endometriose inclui:",
+      "options": [
+        "Dispareunia, dificuldade para engravidar, dor ao urinar e dor ao evacuar",
+        "Dispareunia, dificuldade para engravidar, diarreia e distensão abdominal",
+        "Dispareunia, disfunção tireoidiana, dor ao urinar e desidratação",
+        "Dismetria, dificuldade para engravidar, dor ao urinar e disfagia"
+      ],
+      "correctIndex": 0,
+      "explanation": "Os seis 'Ds' são dismenorreia, dor pélvica, dispareunia, dificuldade para engravidar, dor ao urinar e dor ao evacuar. A dor miccional e a dor evacuatória apontam para acometimento de bexiga e de reto-sigmoide, ou seja, para formas profundas."
+    },
+    {
+      "question": "Qual perfil é classicamente descrito como grupo de risco para endometriose?",
+      "options": [
+        "Brancas, nulíparas, de nível social elevado e ansiosas",
+        "Negras, multíparas, de nível social baixo e tabagistas",
+        "Brancas, multíparas, de nível social baixo e obesas",
+        "Negras, nulíparas, de nível social elevado e diabéticas"
+      ],
+      "correctIndex": 0,
+      "explanation": "O perfil clássico descrito é o de mulheres brancas, nulíparas, de nível socioeconômico elevado e ansiosas. O viés de acesso ao diagnóstico explica parte desse perfil: quem procura e consegue investigação especializada é quem acaba sendo diagnosticada."
+    },
+    {
+      "question": "Qual mudança no padrão reprodutivo ajuda a explicar o aumento aparente da endometriose nas últimas décadas?",
+      "options": [
+        "A mulher atual acumula 400 a 450 ciclos, contra 40 a 50 no passado",
+        "A mulher atual acumula 40 a 50 ciclos, contra 400 a 450 no passado",
+        "A mulher atual acumula 100 a 150 ciclos, igual ao número do passado",
+        "A mulher atual acumula 400 a 450 ciclos, contra 800 a 900 no passado"
+      ],
+      "correctIndex": 0,
+      "explanation": "O número de ciclos menstruais ao longo da vida saltou de 40 a 50 para 400 a 450, com menarca mais precoce, menopausa mais tardia, poucas gestações e pouca amamentação. Mais ciclos significam mais episódios de refluxo menstrual. Somam-se melhora do diagnóstico, poluição, alimentação e menor esforço físico."
+    },
+    {
+      "question": "A figura mostra a sequência evolutiva dos implantes peritoneais. Qual é a ordem correta das lesões ao longo do tempo?",
+      "options": [
+        "Vermelha, precoce e vascularizada, evolui para negra e depois branca",
+        "Branca, precoce e fibrótica, evolui para negra e depois vermelha",
+        "Negra, precoce e inflamatória, evolui para branca e depois vermelha",
+        "Vermelha, tardia e fibrótica, evolui para branca e depois negra"
+      ],
+      "correctIndex": 0,
+      "explanation": "A lesão começa vermelha, ativa e neovascularizada, após a adesão e a proliferação do implante. A reação inflamatória e o depósito de hemossiderina a tornam negra, e a fibrose progressiva a transforma em lesão branca, cicatricial. As três formas podem coexistir na mesma pelve.",
+      "image": "pg35",
+      "imageCaption": "Patogênese: adesão, proliferação, invasão e neovascularização (vermelha), reação inflamatória e fibrose (negra e branca)"
+    },
+    {
+      "question": "O que a classificação da American Society for Reproductive Medicine (ASRM) pontua para estadiar a endometriose?",
+      "options": [
+        "Tamanho e profundidade dos implantes, aderências e obliteração do fundo de saco",
+        "Intensidade da dor, nível sérico de CA-125 e tempo de evolução dos sintomas",
+        "Idade da paciente, paridade prévia e resposta ao tratamento hormonal inicial",
+        "Volume uterino, espessura endometrial e contagem de folículos antrais basais"
+      ],
+      "correctIndex": 0,
+      "explanation": "A pontuação da ASRM soma tamanho e profundidade dos implantes peritoneais e ovarianos, presença, extensão e tipo das aderências, e o grau de obliteração do fundo de saco. É uma classificação anatômica, obtida na inspeção cirúrgica — não incorpora dor nem marcadores laboratoriais."
+    },
+    {
+      "question": "Qual estádio da ASRM corresponde a escore acima de 40, com endometriomas e aderências densas e firmes?",
+      "options": [
+        "Estágio IV, escore acima de 40, com endometriomas e aderências densas",
+        "Estágio III, escore acima de 40, com endometriomas e aderências densas",
+        "Estágio IV, escore de 16 a 40, com implantes isolados sem aderências",
+        "Estágio II, escore de 6 a 15, com endometriomas e aderências densas"
+      ],
+      "correctIndex": 0,
+      "explanation": "O estágio IV, endometriose grave, exige escore acima de 40, com múltiplos implantes superficiais e profundos, endometriomas e aderências densas e firmes. O estágio I (mínima) vai de 1 a 5, o II (leve) de 6 a 15 e o III (moderada) de 16 a 40."
+    },
+    {
+      "question": "A tabela mostra o escore total e o estádio correspondente na classificação da AAGL de 2021. Qual pontuação define o estágio 4?",
+      "options": [
+        "Escore total acima de 21 pontos",
+        "Escore total acima de 40 pontos",
+        "Escore total de 16 a 21 pontos",
+        "Escore total de 9 a 15 pontos"
+      ],
+      "correctIndex": 0,
+      "explanation": "Na classificação da AAGL de 2021 o estágio 1 corresponde a escore de até 8 pontos, o estágio 2 de 9 a 15, o estágio 3 de 16 a 21 e o estágio 4 acima de 21. Os pontos de corte são diferentes dos da ASRM, em que o estágio IV começa acima de 40.",
+      "image": "pg40",
+      "imageCaption": "Classificação da AAGL 2021: pontuação por sítio e escore total por estágio"
+    },
+    {
+      "question": "Qual é a relação entre a intensidade da dor e o estadiamento da endometriose?",
+      "options": [
+        "A intensidade da dor não guarda relação com o estádio da doença",
+        "A intensidade da dor cresce proporcionalmente ao estádio da doença",
+        "A intensidade da dor só aparece a partir do estádio III da doença",
+        "A intensidade da dor decresce à medida que o estádio progride"
+      ],
+      "correctIndex": 0,
+      "explanation": "A dor não acompanha o estadiamento: focos mínimos podem ser extremamente dolorosos e doença estádio IV pode cursar com pouca dor. Essa dissociação é uma das razões pelas quais a endometriose é difícil de estudar, ao lado da ausência de bom modelo animal, já que só primatas superiores menstruam."
+    },
+    {
+      "question": "A imagem laparoscópica mostra pequenas lesões escuras e vesiculares disseminadas sobre a superfície peritoneal. Que forma de endometriose está representada?",
+      "options": [
+        "Endometriose peritoneal superficial",
+        "Endometriose profunda infiltrativa",
+        "Endometrioma ovariano volumoso",
+        "Adenomiose uterina focal nodular"
+      ],
+      "correctIndex": 0,
+      "explanation": "Trata-se de endometriose peritoneal: lesões superficiais, em número variável, sobre o peritônio. É a forma cuja origem mais provável é a menstruação retrógrada. Não há cisto ovariano nem nódulo infiltrando além de 0,5 cm, o que afasta endometrioma e doença profunda.",
+      "image": "pg48",
+      "imageCaption": "Laparoscopia: implantes peritoneais superficiais"
+    },
+    {
+      "question": "Como se caracteriza o endometrioma?",
+      "options": [
+        "Cisto ovariano de conteúdo espesso achocolatado, com cápsula densa e fibrosa",
+        "Cisto ovariano de conteúdo seroso translúcido, com cápsula fina e elástica",
+        "Nódulo sólido ovariano de conteúdo gorduroso, com calcificações grosseiras",
+        "Cisto tubário de conteúdo purulento espesso, com paredes finas e aderidas"
+      ],
+      "correctIndex": 0,
+      "explanation": "O endometrioma é a lesão mais típica da endometriose: formação cística ovariana repleta de líquido espesso e achocolatado, rodeada por cápsula densa e fibrosa. O epitélio da cápsula apresenta áreas com estruturas semelhantes ao endométrio, o que confirma a natureza endometriótica."
+    },
+    {
+      "question": "A ultrassonografia do ovário esquerdo mostra formação cística de conteúdo homogêneo de baixa ecogenicidade, ao lado de folículos e de parênquima ovariano preservado. Qual é o diagnóstico mais provável?",
+      "options": [
+        "Endometrioma ovariano",
+        "Cisto dermoide maduro",
+        "Abscesso tubo-ovariano",
+        "Cistadenoma seroso simples"
+      ],
+      "correctIndex": 0,
+      "explanation": "O aspecto de cisto de conteúdo homogêneo e finamente ecogênico, em vidro fosco, dentro de ovário com folículos e parênquima identificáveis, é o padrão típico do endometrioma. O cisto dermoide tem componentes ecogênicos grosseiros, o abscesso cursa com febre e dor aguda, e o cistadenoma seroso é anecoico.",
+      "image": "pg53",
+      "imageCaption": "Ultrassonografia: endometrioma, folículos e parênquima do ovário esquerdo"
+    },
+    {
+      "question": "Qual é a origem mais provável do endometrioma ovariano?",
+      "options": [
+        "Mista: associação entre menstruação retrógrada e metaplasia celômica",
+        "Única: exclusivamente a metaplasia do epitélio celômico do ovário",
+        "Única: exclusivamente a disseminação hematogênica para a gônada",
+        "Mista: associação entre restos embrionários e extensão linfática"
+      ],
+      "correctIndex": 0,
+      "explanation": "A origem mais provável do endometrioma é mista: combina a deposição de sangue menstrual retrógrado na superfície ovariana, com internalização das células na gônada, e a metaplasia de células remanescentes do epitélio celômico. Uma terceira hipótese envolve cistos funcionais secundariamente invadidos pelo processo endometriótico."
+    },
+    {
+      "question": "Qual critério define a endometriose profunda, ou infiltrativa?",
+      "options": [
+        "Implantes que ultrapassam 0,5 cm de profundidade e envolvem outros órgãos",
+        "Implantes que ultrapassam 5,0 cm de diâmetro e envolvem outros órgãos",
+        "Implantes restritos ao peritônio, com menos de 0,5 cm de profundidade",
+        "Implantes que ultrapassam 0,5 cm e ficam confinados ao ovário acometido"
+      ],
+      "correctIndex": 0,
+      "explanation": "A endometriose profunda é definida por implantes que alcançam profundidade superior a 0,5 cm e envolvem outros órgãos. É a forma de sintomatologia mais agressiva, que mais compromete o bem-estar e a qualidade de vida da paciente."
+    },
+    {
+      "question": "Quais estruturas são tipicamente acometidas pela endometriose profunda?",
+      "options": [
+        "Ligamentos uterossacros, septo retovaginal, bexiga, ureteres e intestino",
+        "Ligamentos redondos, canal cervical, endométrio e miométrio superficial",
+        "Trompas, endocérvix, vulva, períneo e parede vaginal anterior apenas",
+        "Pulmão, pleura, diafragma, cicatriz umbilical e parede torácica apenas"
+      ],
+      "correctIndex": 0,
+      "explanation": "A endometriose profunda compromete ligamentos uterossacros e útero, bexiga e ureteres, septo retovaginal e intestinos, formando nódulos em reto, sigmoide, órgãos genitais, vagina e, por vezes, intestino grosso e íleo. O acometimento ureteral e intestinal é o que confere gravidade ao quadro."
+    },
+    {
+      "question": "Qual é o impacto da endometriose profunda sobre a fertilidade?",
+      "options": [
+        "Compromete a fertilidade mesmo com técnicas de reprodução assistida",
+        "Não compromete a fertilidade quando há reprodução assistida disponível",
+        "Compromete a fertilidade apenas enquanto houver dor pélvica associada",
+        "Preserva a fertilidade por não envolver tubas, ovários ou útero algum"
+      ],
+      "correctIndex": 0,
+      "explanation": "A endometriose profunda interfere na fertilidade mesmo quando se recorre a técnicas de reprodução assistida. O comprometimento ultrapassa o fator mecânico tubário e envolve ambiente peritoneal inflamatório, qualidade oocitária e receptividade endometrial."
+    },
+    {
+      "question": "A figura ilustra o toque bimanual em paciente com endometriose. Qual conjunto de achados é esperado nesse exame?",
+      "options": [
+        "Útero fixo e retrovertido, com nódulos palpáveis em ligamentos uterossacros",
+        "Útero móvel e anteverso, com nódulos palpáveis em ligamentos redondos",
+        "Útero aumentado e amolecido, com colo entreaberto e doloroso à mobilização",
+        "Útero fixo e anteverso, com massa anexial pulsátil e sopro à ausculta local"
+      ],
+      "correctIndex": 0,
+      "explanation": "O exame ginecológico na endometriose busca útero fixo e retrovertido pela retração cicatricial, espessamento e dor nos ligamentos uterossacros e nódulos palpáveis em fundo de saco posterior. A inspeção da vulva e o exame especular complementam, podendo revelar lesão azulada em fundo de saco vaginal.",
+      "image": "pg62",
+      "imageCaption": "Toque bimanual: implantes em fundo de saco posterior e uterossacros"
+    },
+    {
+      "question": "Qual é o papel da dosagem de CA-125 na investigação da endometriose?",
+      "options": [
+        "Não deve ser usada, pois não confirma nem afasta o diagnóstico",
+        "Deve ser usada como teste de rastreamento populacional da doença",
+        "Deve ser usada para confirmar o diagnóstico antes da cirurgia",
+        "Não deve ser usada, pois só se eleva na endometriose mínima"
+      ],
+      "correctIndex": 0,
+      "explanation": "O CA-125 não serve para diagnosticar endometriose: eleva-se em várias condições benignas e malignas e pode estar normal em doença extensa. A investigação complementar é de imagem — ultrassonografia transvaginal com preparo, ressonância de pelve, colonoscopia e ecocolonoscopia."
+    },
+    {
+      "question": "A ultrassonografia transvaginal com preparo mostra, posteriormente ao útero, imagem nodular hipoecogênica ocupando o fundo de saco e impedindo o deslizamento das estruturas. Esse achado corresponde a:",
+      "options": [
+        "Nódulo retrocervical com bloqueio do fundo de saco de Douglas",
+        "Endometrioma do ovário direito com conteúdo em vidro fosco",
+        "Mioma subseroso pediculado deslocando o fundo de saco",
+        "Coleção purulenta livre compatível com abscesso pélvico"
+      ],
+      "correctIndex": 0,
+      "explanation": "O nódulo hipoecogênico retrocervical com obliteração do fundo de saco de Douglas e perda do sinal de deslizamento é achado típico de endometriose profunda. O preparo intestinal é o que permite ver a parede do reto-sigmoide e medir a extensão do nódulo, orientando o planejamento cirúrgico.",
+      "image": "pg64",
+      "imageCaption": "Ultrassonografia com preparo: nódulo e bloqueio do fundo de saco de Douglas"
+    },
+    {
+      "question": "Quais são as opções de tratamento clínico e cirúrgico da endometriose?",
+      "options": [
+        "Clínico com progestágenos e análogo de GnRH; cirúrgico com exérese das lesões",
+        "Clínico com antibiótico de amplo espectro; cirúrgico com drenagem percutânea",
+        "Clínico com indutores de ovulação; cirúrgico com ligadura tubária bilateral",
+        "Clínico com estrogênio isolado em altas doses; cirúrgico com biópsia apenas"
+      ],
+      "correctIndex": 0,
+      "explanation": "O tratamento clínico reúne anti-inflamatórios e analgésicos, contraceptivos orais combinados, progestágenos, análogos de GnRH e inibidores da aromatase. O cirúrgico envolve exérese das lesões, reconstituição da anatomia e, em casos selecionados, histerectomia com ou sem ooforectomia. Indica-se tratar diante de dor, sintomas intestinais ou urinários e infertilidade."
+    }
+  ]
+}

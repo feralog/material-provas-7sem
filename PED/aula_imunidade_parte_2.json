@@ -1,0 +1,394 @@
+{
+  "titulo": "Imunidade Parte 2",
+  "eyebrow": "Pediatria · Imunologia",
+  "subtitulo": "Doenças imunomediadas: do intestino às imunodeficiências primárias",
+  "intro": "Doenças inflamatórias intestinais, autoinflamatórias monogênicas, artrite idiopática juvenil sistêmica, autoimunes e mistas, deficiência seletiva de IgA e imunodeficiências primárias. Foco no que separa cada grupo na clínica e no exame que confirma cada um.",
+  "questoes": [
+    {
+      "question": "Um adolescente de 14 anos tem dor abdominal há oito meses, com diarreia que o acorda à noite, perda de 6 kg, anemia e calprotectina fecal elevada. Esse conjunto de sinais de alerta aponta para qual grupo de doenças?",
+      "options": [
+        "Doença inflamatória intestinal",
+        "Síndrome do intestino irritável",
+        "Intolerância primária à lactose",
+        "Parasitose intestinal recorrente"
+      ],
+      "correctIndex": 0,
+      "explanation": "As red flags de doença inflamatória intestinal são curso crônico, diarreia noturna, perda ponderal, anemia, hipoalbuminemia, marcadores inflamatórios elevados, calprotectina fecal elevada, úlceras orais, artralgia ou artrite leves e lesões perianais. Diarreia que desperta o paciente e repercussão nutricional afastam causa funcional, como a síndrome do intestino irritável."
+    },
+    {
+      "question": "A figura compara a distribuição anatômica das duas principais doenças inflamatórias intestinais. Qual é o padrão da colite ulcerativa, mostrada à esquerda?",
+      "options": [
+        "Acometimento contínuo do cólon, iniciado no reto",
+        "Acometimento salteado do íleo, poupando o reto",
+        "Acometimento exclusivo do estômago e do duodeno",
+        "Acometimento apenas da região perianal e do ânus"
+      ],
+      "correctIndex": 0,
+      "explanation": "A retocolite ulcerativa compromete somente o cólon, em geral começando no reto, com inflamação contínua e sem áreas de mucosa poupada. A doença de Crohn pode atingir qualquer segmento da boca ao ânus, com lesões em salto, e tem predileção pelo íleo terminal.",
+      "image": "s10i1",
+      "imageCaption": "Colite ulcerativa (à esquerda) e doença de Crohn (à direita)"
+    },
+    {
+      "question": "As imagens de ileocolonoscopia abaixo mostram os achados procurados para confirmar a doença de Crohn. Que aspectos são esses?",
+      "options": [
+        "Lesões em salto e aspecto de calçada de paralelepípedo",
+        "Mucosa contínua e friável desde o reto, sem área sadia",
+        "Pseudomembranas amareladas aderidas à mucosa do cólon",
+        "Pólipos adenomatosos múltiplos por todo o cólon esquerdo"
+      ],
+      "correctIndex": 0,
+      "explanation": "A ileocolonoscopia com biópsias na doença de Crohn procura as lesões em salto, com segmentos doentes alternando com mucosa normal, e o aspecto de calçada de paralelepípedo, produzido por úlceras lineares profundas que cercam ilhas de mucosa edemaciada. Mucosa contínua e friável desde o reto corresponde à retocolite ulcerativa.",
+      "image": "s11i1",
+      "imageCaption": "Achados de ileocolonoscopia na doença de Crohn"
+    },
+    {
+      "question": "Estenoses, fístulas, abscessos e doença perianal complexa são complicações típicas da doença de Crohn. Que característica da inflamação explica esse perfil?",
+      "options": [
+        "É transmural e atinge toda a espessura da parede",
+        "É superficial e se restringe à mucosa e à submucosa",
+        "É limitada à camada muscular própria do intestino",
+        "É confinada à serosa, sem atingir a mucosa interna"
+      ],
+      "correctIndex": 0,
+      "explanation": "Na doença de Crohn a inflamação é transmural e pode atravessar toda a parede intestinal, o que permite trajetos fistulosos, abscessos e fibrose com estenose. Na retocolite ulcerativa a inflamação é superficial, restrita à mucosa e à submucosa, e por isso complica com megacólon tóxico, não com fístulas."
+    },
+    {
+      "question": "Qual conjunto de sintomas é o mais característico da retocolite ulcerativa em atividade?",
+      "options": [
+        "Diarreia com sangue, urgência evacuatória e tenesmo",
+        "Dor abdominal, perda ponderal e fístula perianal",
+        "Vômitos matinais, pirose e disfagia para sólidos",
+        "Constipação, distensão abdominal e dor em cólica"
+      ],
+      "correctIndex": 0,
+      "explanation": "A retocolite ulcerativa, por acometer o reto e o cólon de forma contínua e superficial, cursa com diarreia com sangue, urgência evacuatória e tenesmo. A doença de Crohn se apresenta mais com dor abdominal, perda ponderal e sintomas perianais, e a diarreia pode ser sem sangue."
+    },
+    {
+      "question": "Qual complicação é característica da retocolite ulcerativa, e não da doença de Crohn?",
+      "options": [
+        "Megacólon tóxico e câncer colorretal",
+        "Fístulas enterocutâneas e abscessos",
+        "Estenoses e doença perianal complexa",
+        "Colangite bacteriana e litíase biliar"
+      ],
+      "correctIndex": 0,
+      "explanation": "A retocolite ulcerativa complica com megacólon tóxico e, em colite extensa e de longa duração, com risco aumentado de câncer colorretal. Estenoses, fístulas, abscessos e doença perianal complexa são complicações da doença de Crohn, consequência da inflamação transmural."
+    },
+    {
+      "question": "A calprotectina fecal elevada em uma criança com diarreia crônica traduz qual processo?",
+      "options": [
+        "Inflamação da mucosa, com migração de neutrófilos",
+        "Má absorção de gorduras, com esteatorreia franca",
+        "Supercrescimento bacteriano do intestino delgado",
+        "Insuficiência pancreática exócrina já estabelecida"
+      ],
+      "correctIndex": 0,
+      "explanation": "A calprotectina é uma proteína liberada por neutrófilos e funciona como marcador de inflamação intestinal: sobe quando há migração de neutrófilos e inflamação da mucosa. Serve para separar diarreia inflamatória de diarreia funcional e integra as red flags de doença inflamatória intestinal."
+    },
+    {
+      "question": "Uma adolescente apresenta dor em fossa ilíaca direita, lesão perianal e comprometimento do estado nutricional. Qual é a hipótese diagnóstica mais provável?",
+      "options": [
+        "Doença de Crohn com acometimento ileal",
+        "Apendicite aguda em fase inicial branda",
+        "Retocolite ulcerativa em atividade leve",
+        "Linfadenite mesentérica pós-infecciosa"
+      ],
+      "correctIndex": 0,
+      "explanation": "A combinação de dor em fossa ilíaca direita, lesão perianal e comprometimento nutricional aponta para doença de Crohn com acometimento ileal. A retocolite ulcerativa não dá lesão perianal nem acomete o íleo, e a apendicite é um quadro agudo, sem repercussão nutricional crônica."
+    },
+    {
+      "question": "Confirmada a suspeita clínica de doença inflamatória intestinal em um adolescente, qual é o próximo passo esperado na investigação?",
+      "options": [
+        "Endoscopia digestiva alta e colonoscopia com biópsias",
+        "Trânsito intestinal contrastado e manometria anorretal",
+        "Teste respiratório com lactulose e pesquisa de rotavírus",
+        "Tomografia de abdome sem contraste e amilase sérica"
+      ],
+      "correctIndex": 0,
+      "explanation": "A investigação segue com encaminhamento ao especialista, endoscopia digestiva alta e colonoscopia com biópsias, além de avaliação nutricional. O diagnóstico é endoscópico e histológico: é a biópsia que define a extensão, a profundidade e o padrão da inflamação."
+    },
+    {
+      "question": "Uma criança com febres recorrentes, rash, serosite e provas de fase aguda elevadas não tem autoanticorpos detectáveis nem resposta de células T a autoantígenos. Que grupo de doenças essa combinação define?",
+      "options": [
+        "Autoinflamatórias, por desregulação da imunidade inata",
+        "Autoimunes, por resposta adaptativa a autoantígenos",
+        "Alérgicas, por produção de IgE contra antígeno externo",
+        "Imunodeficiências, por ausência de linfócitos maduros"
+      ],
+      "correctIndex": 0,
+      "explanation": "As doenças autoinflamatórias nascem da desregulação do sistema imune inato e produzem inflamação independente de antígeno. Cursam com febres recorrentes, rash, serosite, artrite, uveíte e organomegalias, com provas de fase aguda altas, mas sem autoanticorpos e sem resposta específica de células T a autoantígenos."
+    },
+    {
+      "question": "A febre familial do Mediterrâneo é a doença autoinflamatória monogênica mais prevalente. Qual é a sua base genética?",
+      "options": [
+        "Gene MEFV, com herança autossômica recessiva",
+        "Gene MEFV, com herança autossômica dominante",
+        "Gene NLRP3, com herança autossômica recessiva",
+        "Gene FOXP3, com herança ligada ao cromossomo X"
+      ],
+      "correctIndex": 0,
+      "explanation": "A febre familial do Mediterrâneo tem herança autossômica recessiva e decorre de alterações no gene MEFV, localizado no cromossomo 16. Variantes em NLRP3 causam as síndromes periódicas associadas à criopirina, e a perda de função de FOXP3 causa a síndrome IPEX."
+    },
+    {
+      "question": "O gene MEFV codifica a pirina. Qual é o papel dessa proteína dentro do sistema imune inato?",
+      "options": [
+        "Regula a síntese da interleucina 1 beta",
+        "Regula a síntese das interleucinas 4 e 5",
+        "Forma o receptor de membrana para o TNF",
+        "Catalisa uma etapa da via do mevalonato"
+      ],
+      "correctIndex": 0,
+      "explanation": "A pirina participa do sistema imune inato e regula a síntese de interleucina 1 beta; quando o gene MEFV está alterado, essa regulação se perde e a IL-1 beta é produzida em excesso, gerando as crises inflamatórias. O receptor do TNF é codificado por TNFRSF1A, e a via do mevalonato depende da mevalonato quinase."
+    },
+    {
+      "question": "Um adolescente de família turca tem, desde os 8 anos, crises breves de febre sem infecção identificada, acompanhadas do padrão de sinais mostrado na figura. Como se descreve esse quadro?",
+      "options": [
+        "Febre breve com dor abdominal, torácica e articular",
+        "Febre prolongada com uveíte e poliserosite extensa",
+        "Febre cotidiana alta com rash evanescente e artrite",
+        "Febre contínua com icterícia e hepatomegalia dolorosa"
+      ],
+      "correctIndex": 0,
+      "explanation": "A crise da febre familial do Mediterrâneo é breve e combina febre, dor abdominal por peritonite, dor torácica por pleurite ou inflamação subdiafragmática, cefaleia, artrite mono ou oligoarticular não erosiva de grandes articulações dos membros inferiores e rash em braços e pernas, sobretudo pés e tornozelos, sem infecção identificada.",
+      "image": "s17i1",
+      "imageCaption": "Sinais e sintomas da febre familial do Mediterrâneo"
+    },
+    {
+      "question": "Qual é o tratamento de escolha da febre familial do Mediterrâneo, e que complicação ele previne?",
+      "options": [
+        "Colchicina, que previne a amiloidose secundária",
+        "Prednisona, que previne a amiloidose secundária",
+        "Colchicina, que previne a estenose do intestino",
+        "Anti-TNF, que previne a perda auditiva precoce"
+      ],
+      "correctIndex": 0,
+      "explanation": "A colchicina tem boa resposta na febre familial do Mediterrâneo e, além de reduzir as crises, previne a amiloidose, que é a complicação temida da doença não tratada. A prednisona não cumpre esse papel preventivo nessa doença."
+    },
+    {
+      "question": "A síndrome periódica associada ao receptor do TNF é a segunda doença autoinflamatória monogênica mais prevalente. Qual é o seu gene e o seu padrão de herança?",
+      "options": [
+        "TNFRSF1A, com herança autossômica dominante",
+        "TNFRSF1A, com herança autossômica recessiva",
+        "MEFV, com herança autossômica dominante",
+        "NLRP3, com herança ligada ao cromossomo X"
+      ],
+      "correctIndex": 0,
+      "explanation": "A TRAPS tem herança autossômica dominante e decorre de variantes no gene TNFRSF1A, no cromossomo 16, que codifica o receptor do fator de necrose tumoral e participa da regulação da síntese de IL-1 beta. O diagnóstico é confirmado por teste genético."
+    },
+    {
+      "question": "Que particularidades separam as crises da síndrome periódica associada ao receptor do TNF das crises da febre familial do Mediterrâneo?",
+      "options": [
+        "Episódios mais longos, com inflamação ocular e poliserosite",
+        "Episódios mais curtos, com inflamação ocular e poliserosite",
+        "Episódios mais longos, com adenomegalia e aftas recorrentes",
+        "Episódios mais curtos, com urticária e perda auditiva precoce"
+      ],
+      "correctIndex": 0,
+      "explanation": "A TRAPS se parece com a febre familial do Mediterrâneo, mas tem episódios mais longos, inflamação ocular, poliserosite e manifestações cutâneas frequentes. Diferente da febre familial do Mediterrâneo, pode se manifestar em qualquer idade e não tem predileção racial."
+    },
+    {
+      "question": "Como se conduz o tratamento da síndrome periódica associada ao receptor do TNF?",
+      "options": [
+        "Prednisona nos casos brandos; anti-TNF ou anti-IL-1 nos graves",
+        "Colchicina nos casos brandos; anti-TNF ou anti-IL-1 nos graves",
+        "Prednisona nos casos brandos; anti-IL-6 ou rituximabe nos graves",
+        "Colchicina nos casos brandos; imunoglobulina venosa nos graves"
+      ],
+      "correctIndex": 0,
+      "explanation": "Na TRAPS, os casos brandos são tratados com prednisona na fase aguda, e os casos graves exigem bloqueio de citocina com anti-TNF ou anti-IL-1. A colchicina é o tratamento da febre familial do Mediterrâneo, não da TRAPS."
+    },
+    {
+      "question": "Um escolar tem febre cotidiana alta há três semanas, rash evanescente, artrite de grandes e pequenas articulações, PCR e ferritina muito elevadas, com FAN e fator reumatoide negativos. Qual é a hipótese principal?",
+      "options": [
+        "Artrite idiopática juvenil sistêmica",
+        "Lúpus eritematoso sistêmico juvenil",
+        "Febre familial do Mediterrâneo típica",
+        "Artrite séptica de grande articulação"
+      ],
+      "correctIndex": 0,
+      "explanation": "Febre cotidiana alta, rash evanescente, artrite e inflamação sistêmica exuberante com ferritina elevada formam o padrão da artrite idiopática juvenil sistêmica. A ausência de autoanticorpos, com FAN e fator reumatoide negativos, é regra nessa forma e ajuda a afastar lúpus."
+    },
+    {
+      "question": "Quais citocinas sustentam a inflamação da artrite idiopática juvenil sistêmica e servem de alvo terapêutico?",
+      "options": [
+        "Interleucina 1 e interleucina 6",
+        "Interleucina 4 e interleucina 5",
+        "Interleucina 2 e interleucina 12",
+        "Interleucina 10 e interleucina 13"
+      ],
+      "correctIndex": 0,
+      "explanation": "A artrite idiopática juvenil sistêmica é sustentada por IL-1 e IL-6, e é essa base que justifica a terapia alvo com anti-IL-1 ou anti-IL-6 nos casos mais graves. As interleucinas 4, 5 e 13 pertencem ao eixo alérgico, e a IL-10 tem perfil regulador."
+    },
+    {
+      "question": "Antes de firmar o diagnóstico de artrite idiopática juvenil sistêmica, quais condições precisam ser ativamente afastadas?",
+      "options": [
+        "Infecção bacteriana oculta e neoplasias como leucemia",
+        "Hipotireoidismo congênito e raquitismo carencial grave",
+        "Fibrose cística e doença do refluxo gastroesofágico",
+        "Anemia ferropriva e verminose intestinal maciça"
+      ],
+      "correctIndex": 0,
+      "explanation": "A artrite idiopática juvenil sistêmica é diagnóstico de exclusão: antes dele é obrigatório afastar infecção bacteriana oculta e sepse, neoplasias como leucemia e linfoma, Kawasaki atípico, lúpus e outras reumatológicas, além das síndromes febris autoinflamatórias. A investigação inclui história, exame, culturas e imagem."
+    },
+    {
+      "question": "Uma criança em tratamento de artrite idiopática juvenil sistêmica apresenta piora súbita, citopenias, transaminases altas e ferritina muito elevada. O que essa combinação indica?",
+      "options": [
+        "Síndrome de ativação macrofágica instalada",
+        "Sepse bacteriana de foco abdominal oculto",
+        "Toxicidade hepática por anti-inflamatório",
+        "Recidiva simples da atividade articular"
+      ],
+      "correctIndex": 0,
+      "explanation": "Piora súbita com citopenias, transaminases altas e ferritina muito elevada caracteriza a síndrome de ativação macrofágica, complicação grave da artrite idiopática juvenil sistêmica. Ela exige investigação e tratamento imediatos, porque a evolução é rápida."
+    },
+    {
+      "question": "A tabela relaciona cada categoria de doença imunomediada ao papel da imunodeficiência e a um exemplo. Na linha das doenças autoinflamatórias, qual é a combinação correta?",
+      "options": [
+        "Falha nos freios da imunidade inata; febres periódicas",
+        "Falha na seleção de células T e B; síndrome de Omenn",
+        "Defeito que atinge as duas vias; doença granulomatosa",
+        "Falha de barreira mucosa; doença inflamatória intestinal"
+      ],
+      "correctIndex": 0,
+      "explanation": "Nas doenças autoinflamatórias a imunodeficiência corresponde à falha dos freios da imunidade inata, e o exemplo clássico são as síndromes de febre periódica. A falha na seleção e no treinamento de células T e B caracteriza o eixo autoimune, exemplificado pela síndrome de Omenn, e o defeito que atinge as duas vias define o grupo misto.",
+      "image": "s07i1",
+      "imageCaption": "Categorias de doença imunomediada e o papel da imunodeficiência"
+    },
+    {
+      "question": "No continuum imunológico, algumas doenças ocupam posição intermediária, somando ativação inata e adaptativa. Quais são exemplos dessa categoria mista?",
+      "options": [
+        "Doença de Crohn, psoríase e algumas formas de artrite juvenil",
+        "Lúpus eritematoso sistêmico, doença celíaca e diabetes tipo 1",
+        "Febre do Mediterrâneo, TRAPS e deficiência de mevalonato quinase",
+        "Agamaglobulinemia ligada ao X e imunodeficiência combinada grave"
+      ],
+      "correctIndex": 0,
+      "explanation": "As doenças mistas somam características de autoinflamação e de autoimunidade, com ativação inata e adaptativa e sobreposição de biomarcadores: há autoanticorpos e, ao mesmo tempo, aumento de proteínas imunes inatas. Doença de Crohn, psoríase e algumas formas de artrite idiopática juvenil são os exemplos típicos."
+    },
+    {
+      "question": "Uma criança de 5 anos tem otites e sinusites de repetição, crescimento preservado e nenhuma infecção oportunista; o laboratório mostra IgA indetectável, com IgG, IgM e hemograma normais. Qual é o diagnóstico?",
+      "options": [
+        "Deficiência seletiva de imunoglobulina A",
+        "Imunodeficiência comum variável instalada",
+        "Agamaglobulinemia ligada ao cromossomo X",
+        "Imunodeficiência combinada grave do lactente"
+      ],
+      "correctIndex": 0,
+      "explanation": "A deficiência seletiva de IgA cursa com infecções recorrentes de mucosa, como otite e sinusite, com ou sem diarreia, crescimento preservado e sem infecções oportunistas. Na triagem, a IgA é muito baixa ou indetectável, enquanto IgG, IgM e hemograma costumam ser normais. Atopia e autoimunidade podem coexistir."
+    },
+    {
+      "question": "A partir de que idade a dosagem de IgA sérica muito baixa passa a ser válida para firmar o diagnóstico de deficiência seletiva de IgA?",
+      "options": [
+        "Depois dos 2 anos de idade completos",
+        "Depois dos 6 meses de vida completos",
+        "Depois dos 10 anos de idade completos",
+        "Logo ao nascimento, no teste do pezinho"
+      ],
+      "correctIndex": 0,
+      "explanation": "A dosagem de IgA só é interpretável como deficiência seletiva depois dos 2 anos de idade, porque antes disso o valor baixo pode refletir apenas atraso fisiológico de maturação da produção de IgA. Dosar antes desse limite leva a rótulo diagnóstico indevido."
+    },
+    {
+      "question": "Uma criança tem infecções de repetição por bactérias encapsuladas, como pneumococo e Haemophilus influenzae. Que compartimento imune deve ser investigado primeiro, e com que exame?",
+      "options": [
+        "Produção de anticorpos, com dosagem de imunoglobulinas",
+        "Função das células T, com imunofenotipagem de linfócitos",
+        "Sistema do complemento, com dosagem das frações C5 a C9",
+        "Função fagocítica, com contagem de neutrófilos no sangue"
+      ],
+      "correctIndex": 0,
+      "explanation": "Infecção de repetição por bactérias encapsuladas é a marca das deficiências predominantemente de anticorpos, que incluem a deficiência de subclasse de IgG, a deficiência específica de anticorpos e a imunodeficiência comum variável. O exame inicial é a dosagem de imunoglobulinas, buscando valores anormais."
+    },
+    {
+      "question": "Um adolescente apresenta o segundo episódio de doença meningocócica invasiva. Que defeito imune essa história sugere, e qual exame o confirma?",
+      "options": [
+        "Deficiência de complemento, com dosagem das frações C5 a C9",
+        "Deficiência de anticorpos, com dosagem de imunoglobulinas",
+        "Defeito de células T, com imunofenotipagem de linfócitos",
+        "Defeito fagocítico, com contagem de neutrófilos no sangue"
+      ],
+      "correctIndex": 0,
+      "explanation": "Infecção por Neisseria, sobretudo quando recorrente ou invasiva, aponta para deficiência do sistema do complemento, em especial dos componentes terminais C5 a C9, que formam o complexo de ataque à membrana. A investigação passa pela dosagem das proteínas do complemento."
+    },
+    {
+      "question": "Infecções oportunistas de repetição em um lactente apontam para qual defeito imune, e qual alteração laboratorial inicial costuma acompanhá-lo?",
+      "options": [
+        "Defeito de células T, acompanhado de linfocitopenia",
+        "Defeito de anticorpos, com hipogamaglobulinemia grave",
+        "Defeito fagocítico, com neutropenia franca e persistente",
+        "Defeito de complemento, com frações C5 a C9 reduzidas"
+      ],
+      "correctIndex": 0,
+      "explanation": "O tipo de infecção sugere o compartimento acometido: oportunistas apontam para defeitos de células T, cuja alteração laboratorial inicial é a linfocitopenia. Bactérias encapsuladas apontam para deficiência de anticorpos, e Neisseria para deficiência de complemento."
+    },
+    {
+      "question": "A doença granulomatosa crônica e as neutropenias pertencem ao grupo dos defeitos fagocíticos. Que alteração do hemograma orienta a suspeita inicial nesse grupo?",
+      "options": [
+        "Neutropenia encontrada no hemograma",
+        "Linfocitopenia vista no hemograma",
+        "Eosinofilia marcante no hemograma",
+        "Trombocitose isolada no hemograma"
+      ],
+      "correctIndex": 0,
+      "explanation": "Os defeitos fagocíticos se traduzem por neutropenia no hemograma, que é o exame de triagem inicial desse grupo. A linfocitopenia aponta para distúrbios das células T, e imunoglobulinas anormais apontam para deficiências predominantemente de anticorpos."
+    },
+    {
+      "question": "A triagem neonatal ampliada já detecta algumas imunodeficiências primárias. Que ensaio identifica precocemente a imunodeficiência combinada grave?",
+      "options": [
+        "Ensaio TREC, que detecta linfopenia de células T",
+        "Ensaio TREC, que detecta ausência de imunoglobulina",
+        "Dosagem de IgA sérica na gota de sangue do pezinho",
+        "Teste do suor com dosagem de cloro na gota de sangue"
+      ],
+      "correctIndex": 0,
+      "explanation": "A detecção precoce da imunodeficiência combinada grave é feita pela triagem neonatal para linfopenia de células T com o ensaio TREC, sigla de T cell receptor excision circle. O ensaio mede círculos de excisão gerados na formação do receptor de células T, que estão ausentes quando não há produção de linfócitos T."
+    },
+    {
+      "question": "Um lactente com imunodeficiência combinada grave abre o quadro com diarreia crônica, déficit de crescimento e infecções por oportunistas. Qual é a terapia definitiva?",
+      "options": [
+        "Transplante de células-tronco hematopoiéticas precoce",
+        "Reposição mensal de imunoglobulina humana isolada",
+        "Profilaxia antibiótica contínua por tempo indefinido",
+        "Corticoterapia sistêmica em dose imunossupressora"
+      ],
+      "correctIndex": 0,
+      "explanation": "A imunodeficiência combinada grave é urgência: há ausência total de imunidade específica e suscetibilidade extrema a toda a gama de patógenos, incluindo oportunistas. O suporte inclui antimicrobianos e reposição de IgG, mas a terapia definitiva é o transplante de células-tronco hematopoiéticas o mais rápido possível."
+    },
+    {
+      "question": "Entre as deficiências de anticorpos que cursam com número extremamente baixo de células B, qual forma responde por cerca de 85% dos casos?",
+      "options": [
+        "A forma ligada ao cromossomo X",
+        "A forma autossômica recessiva",
+        "A forma autossômica dominante",
+        "A forma adquirida pós-infecciosa"
+      ],
+      "correctIndex": 0,
+      "explanation": "A agamaglobulinemia tem duas formas, uma ligada ao cromossomo X e outra autossômica, ambas com número extremamente baixo de células B; a forma ligada ao X responde por cerca de 85% dos casos. O quadro é de infecções bacterianas recorrentes do trato respiratório superior e inferior, e o tratamento combina profilaxia antibiótica e reposição de IgG."
+    },
+    {
+      "question": "No esquema, a síndrome de DiGeorge e a APECED aparecem como defeitos de tolerância central, e a síndrome IPEX como defeito de tolerância periférica. Qual alteração explica a síndrome IPEX?",
+      "options": [
+        "Perda de função do gene FOXP3, que comanda as Tregs",
+        "Ausência de formação do timo durante a embriogênese",
+        "Alteração do gene AIRE, que comanda a seleção negativa",
+        "Defeito dos genes RAG, que fazem a recombinação V(D)J"
+      ],
+      "correctIndex": 0,
+      "explanation": "A síndrome IPEX decorre da perda de função do gene FOXP3, essencial para o desenvolvimento e o funcionamento das células T reguladoras, e por isso aparece como falha de tolerância periférica, com desregulação imune, poliendocrinopatia e enteropatia. A ausência de timo define a síndrome de DiGeorge, e a alteração de AIRE define a APECED.",
+      "image": "s04i1",
+      "imageCaption": "Defeitos de tolerância central e periférica e as síndromes correspondentes"
+    },
+    {
+      "question": "O esquema mostra o que acontece com os linfócitos B quando há linfopenia B com inflamação e elevação do BAFF. Qual é a consequência imunológica?",
+      "options": [
+        "Células B autorreativas sobrevivem e geram autoanticorpos",
+        "Células B autorreativas são eliminadas antes de amadurecer",
+        "Células B maduras deixam de produzir qualquer imunoglobulina",
+        "Células B transicionais se convertem em linfócitos T virgens"
+      ],
+      "correctIndex": 0,
+      "explanation": "Em níveis normais, o BAFF é fator limitante e só as células B úteis recebem sinal de sobrevivência suficiente. Com linfopenia B e inflamação, o BAFF sobe e passa a resgatar também as células B transicionais autorreativas, que amadurecem e produzem autoanticorpos.",
+      "image": "s05i1",
+      "imageCaption": "Linfopenia B, elevação do BAFF e sobrevivência de células B autorreativas"
+    }
+  ]
+}

@@ -1,0 +1,374 @@
+{
+  "titulo": "Doença Inflamatória Pélvica",
+  "eyebrow": "Ginecologia · Infecções do Trato Genital",
+  "subtitulo": "Da cervicite ao abscesso roto: critérios, Monif e antibiótico",
+  "intro": "Infecção ascendente do trato genital superior feminino: microbiologia, fatores de risco, critérios diagnósticos do Ministério da Saúde, estadiamento de Monif, decisão entre ambulatório e internação, esquemas antibióticos do PCDT 2020 e as sequelas reprodutivas.",
+  "questoes": [
+    {
+      "question": "A doença inflamatória pélvica é uma síndrome do trato genital superior. Quais estruturas podem ser acometidas?",
+      "options": [
+        "Endométrio, tubas, ovários, peritônio pélvico e cápsula hepática",
+        "Vulva, vagina, colo uterino, uretra e glândulas vestibulares",
+        "Bexiga, ureteres, rins, uretra e assoalho pélvico muscular",
+        "Vagina, colo uterino, canal anal, reto e septo retovaginal"
+      ],
+      "correctIndex": 0,
+      "explanation": "A DIP é uma síndrome inflamatória e infecciosa do trato genital superior. Além de endométrio, tubas, ovários e peritônio pélvico, pode alcançar a cápsula hepática, o que origina a peri-hepatite da síndrome de Fitz-Hugh-Curtis. Vulva, vagina e colo pertencem ao trato inferior e são a porta de entrada, não o alvo da DIP."
+    },
+    {
+      "question": "Qual é a via pela qual os microrganismos alcançam o trato genital superior na DIP?",
+      "options": [
+        "Ascensão canalicular de microrganismos da vagina e do colo uterino",
+        "Disseminação hematogênica a partir de foco infeccioso distante",
+        "Disseminação linfática a partir dos linfonodos inguinais profundos",
+        "Inoculação transperitoneal direta a partir do apêndice inflamado"
+      ],
+      "correctIndex": 0,
+      "explanation": "A DIP resulta da ascensão canalicular: os agentes sobem do colo e da vagina pelo canal cervical até o endométrio, as tubas e o peritônio. É um processo contíguo e progressivo, em geral polimicrobiano, e pode ser desencadeado por manipulação uterina."
+    },
+    {
+      "question": "Qual alteração do ecossistema vaginal representa o primeiro passo para a DIP?",
+      "options": [
+        "Perda da acidez vaginal, com redução dos lactobacilos protetores",
+        "Queda do pH vaginal, com proliferação dos lactobacilos protetores",
+        "Aumento da acidez vaginal, com espessamento do epitélio escamoso",
+        "Elevação do glicogênio vaginal, com aumento dos lactobacilos locais"
+      ],
+      "correctIndex": 0,
+      "explanation": "O equilíbrio saudável depende de pH ácido e de lactobacilos protetores. Quando a acidez cai, os lactobacilos diminuem e abrem espaço para supercrescimento patogênico, favorecido por contato com sêmen, duchas íntimas e alterações hormonais. Instalam-se então vaginite e cervicite, o degrau inicial da cascata."
+    },
+    {
+      "question": "Qual característica faz de Chlamydia trachomatis a chamada ameaça silenciosa na gênese da DIP?",
+      "options": [
+        "Cerca de 70% das infecções são assintomáticas e exigem PCR",
+        "Cerca de 70% das infecções cursam com exsudato francamente purulento",
+        "Cerca de 10% das infecções são assintomáticas e exigem PCR",
+        "Cerca de 70% das infecções são detectadas pela bacterioscopia"
+      ],
+      "correctIndex": 0,
+      "explanation": "A clamídia é bactéria intracelular obrigatória e cerca de 70% dos casos são assintomáticos, de modo que a infecção avança sem alertar a paciente. O diagnóstico exige teste molecular (PCR) da secreção cervical, já que a bacterioscopia não a identifica."
+    },
+    {
+      "question": "Qual a morfologia e o meio de cultura do agente de comportamento exuberante na DIP?",
+      "options": [
+        "Diplococo Gram-negativo cultivado em meio Thayer-Martin modificado",
+        "Bacilo Gram-negativo cultivado em meio Thayer-Martin modificado",
+        "Diplococo Gram-positivo cultivado em meio Sabouraud com dextrose",
+        "Bactéria intracelular cultivada em meio Thayer-Martin modificado"
+      ],
+      "correctIndex": 0,
+      "explanation": "Neisseria gonorrhoeae é um diplococo Gram-negativo e cresce em meio Thayer-Martin modificado. Diferente da clamídia, costuma ser altamente sintomática, com exsudato purulento visível e colo edemaciado e friável ao exame especular."
+    },
+    {
+      "question": "Qual é a sequência anatômica correta da infecção ascendente que caracteriza a DIP?",
+      "options": [
+        "Cervicite, endometrite, salpingite e abscesso tubo-ovariano",
+        "Endometrite, cervicite, salpingite e abscesso tubo-ovariano",
+        "Cervicite, salpingite, endometrite e abscesso tubo-ovariano",
+        "Salpingite, cervicite, endometrite e abscesso tubo-ovariano"
+      ],
+      "correctIndex": 0,
+      "explanation": "A cascata parte da cervicite, atravessa uma endometrite muitas vezes discreta e fugaz, atinge as tubas e os ovários (salpingite e ooforite, com conteúdo purulento e hidrossalpinge) e pode formar abscesso tubo-ovariano. O estágio final é a peritonite, eventualmente com peri-hepatite de Fitz-Hugh-Curtis.",
+      "image": "pg08",
+      "imageCaption": "Cascata fisiopatológica da ascensão da infecção"
+    },
+    {
+      "question": "Qual vaginite cursa com secreção rala acinzentada de odor fétido e eleva o risco de DIP e de parto prematuro?",
+      "options": [
+        "Vaginose bacteriana",
+        "Candidíase vaginal",
+        "Tricomoníase vaginal",
+        "Vaginite atrófica"
+      ],
+      "correctIndex": 0,
+      "explanation": "A vaginose bacteriana produz secreção rala e acinzentada com odor fétido que piora na menstruação e após o coito, e frequentemente é assintomática ou dá apenas irritação leve. Aumenta a chance de DIP e de parto prematuro e é tratada com metronidazol ou clindamicina."
+    },
+    {
+      "question": "O dispositivo intrauterino eleva em 3 a 5 vezes o risco de DIP. Em que circunstância esse aumento se aplica?",
+      "options": [
+        "Apenas quando há cervicite no momento da inserção do dispositivo",
+        "Apenas quando o dispositivo permanece por mais de cinco anos",
+        "Em qualquer inserção, independentemente do estado do colo uterino",
+        "Apenas quando o dispositivo é hormonal, por ação progestagênica"
+      ],
+      "correctIndex": 0,
+      "explanation": "O risco atribuído ao DIU se concentra no ato da inserção e só se justifica quando a paciente é portadora de cervicite naquele momento, pois o procedimento carreia o agente para a cavidade. Sem cervicite, o aumento de risco não se sustenta, e o dispositivo não precisa ser evitado por esse motivo.",
+      "image": "pg09",
+      "imageCaption": "Perfil de risco e gatilhos anatômicos da DIP"
+    },
+    {
+      "question": "Qual conjunto de achados caracteriza a apresentação subaguda ou silenciosa da DIP?",
+      "options": [
+        "Dor leve pós-menstrual, spotting, dispareunia profunda e disúria",
+        "Dor intensa, febre acima de 38,9 °C, vômitos e exsudato purulento",
+        "Choque hemorrágico, atraso menstrual e beta-hCG muito positivo",
+        "Dor migratória para a fossa ilíaca direita, febre precoce e vômito"
+      ],
+      "correctIndex": 0,
+      "explanation": "Abaixo da ponta do iceberg está a forma subaguda: dor abdominal leve a moderada, sobretudo logo após a menstruação, sangramento irregular em pequena quantidade, dispareunia profunda e disúria. É essa apresentação discreta que atrasa o diagnóstico e garante sequelas permanentes."
+    },
+    {
+      "question": "A tríade de critérios maiores para o diagnóstico de DIP exige a presença simultânea de quais achados?",
+      "options": [
+        "Dor no hipogástrio, dor anexial e dor à mobilização do colo",
+        "Dor no hipogástrio, febre acima de 37,5 °C e massa pélvica",
+        "Dor anexial, secreção cervical anormal e leucocitose no sangue",
+        "Dor à mobilização do colo, VHS elevada e mais de 5 leucócitos"
+      ],
+      "correctIndex": 0,
+      "explanation": "Os três critérios maiores são dor no hipogástrio, dor à palpação dos anexos e dor à mobilização do colo uterino, esta última conhecida como sinal de Chandelier. Os três precisam estar presentes. Febre, massa pélvica, leucocitose e VHS elevada pertencem à lista dos critérios menores.",
+      "image": "pg11",
+      "imageCaption": "Critérios maiores, menores e elaborados do Ministério da Saúde"
+    },
+    {
+      "question": "Qual combinação de critérios do Ministério da Saúde fecha o diagnóstico clínico de DIP?",
+      "options": [
+        "Os três critérios maiores somados a pelo menos um critério menor",
+        "Os três critérios maiores somados a pelo menos dois critérios menores",
+        "Dois critérios maiores somados a pelo menos um critério menor",
+        "Um critério maior somado a pelo menos três critérios menores"
+      ],
+      "correctIndex": 0,
+      "explanation": "A fórmula é 3 maiores + 1 menor. Os três critérios maiores são obrigatórios e basta um critério menor para confirmar. Essa aritmética clínica permite tratar sem esperar culturas, o que é decisivo porque o atraso terapêutico é o principal determinante de sequela tubária."
+    },
+    {
+      "question": "Qual é o limiar de temperatura que figura entre os critérios menores de DIP?",
+      "options": [
+        "Temperatura acima de 37,5 °C",
+        "Temperatura acima de 38,5 °C",
+        "Temperatura acima de 39,0 °C",
+        "Temperatura acima de 36,8 °C"
+      ],
+      "correctIndex": 0,
+      "explanation": "O ponto de corte entre os critérios menores é 37,5 °C, portanto febre baixa já conta. O valor de 38,5 °C aparece em outro contexto, como marcador de estado geral grave que indica internação, e não deve ser confundido com o limiar diagnóstico."
+    },
+    {
+      "question": "Qual achado confirma isoladamente a DIP, dispensando a soma de critérios maiores e menores?",
+      "options": [
+        "Endometrite comprovada em estudo histopatológico do endométrio",
+        "Secreção cervical anormal observada no exame com espéculo",
+        "Velocidade de hemossedimentação elevada em paciente febril",
+        "Mais de cinco leucócitos por campo na secreção endocervical"
+      ],
+      "correctIndex": 0,
+      "explanation": "Os critérios elaborados confirmam a DIP sozinhos: endometrite histopatológica, abscesso tubo-ovariano demonstrado em imagem e evidência laparoscópica. Secreção anormal, VHS elevada e mais de cinco leucócitos por campo são apenas critérios menores e não bastam isoladamente."
+    },
+    {
+      "question": "Qual exame é considerado o padrão-ouro visual para o diagnóstico de DIP?",
+      "options": [
+        "Laparoscopia, por permitir ver diretamente tubas e peritônio",
+        "Ultrassonografia transvaginal, por mostrar a trompa espessada",
+        "Culdocentese, por aspirar o conteúdo do fundo de saco de Douglas",
+        "Ressonância magnética de pelve, por caracterizar a coleção anexial"
+      ],
+      "correctIndex": 0,
+      "explanation": "A laparoscopia é o padrão-ouro visual porque mostra diretamente as tubas inflamadas, o exsudato purulento e as aderências. Na prática, porém, é pouco usada na rotina: o tratamento empírico é iniciado pelos critérios clínicos, sem aguardar confirmação cirúrgica."
+    },
+    {
+      "question": "Por que o beta-hCG é obrigatório na investigação inicial de toda suspeita de DIP?",
+      "options": [
+        "Para afastar gravidez ectópica, principal diferencial de urgência",
+        "Para estimar a gravidade da inflamação tubária já instalada",
+        "Para definir a dose do antibiótico parenteral a ser prescrito",
+        "Para confirmar a presença de abscesso tubo-ovariano íntegro"
+      ],
+      "correctIndex": 0,
+      "explanation": "Na DIP o beta-hCG é tipicamente negativo; na gravidez ectópica rota ele é obrigatoriamente positivo. Como as duas cursam com dor pélvica intensa, o teste separa um quadro infeccioso de uma emergência hemorrágica. O exame de urina compõe a mesma lógica, afastando infecção urinária."
+    },
+    {
+      "question": "Qual achado da ultrassonografia transvaginal sustenta a suspeita de DIP complicada?",
+      "options": [
+        "Camada líquida preenchendo a trompa ou abscesso tubo-ovariano",
+        "Endométrio espessado e heterogêneo sem qualquer coleção anexial",
+        "Folículo ovariano dominante com fluxo periférico aumentado",
+        "Miométrio heterogêneo com nódulos hipoecoicos bem delimitados"
+      ],
+      "correctIndex": 0,
+      "explanation": "A ultrassonografia transvaginal procura conteúdo líquido distendendo a trompa, que corresponde à piossalpinge ou hidrossalpinge, e a massa complexa do abscesso tubo-ovariano. Encontrar o abscesso em imagem é critério elaborado e confirma a DIP isoladamente."
+    },
+    {
+      "question": "Qual achado do exame físico ajuda a separar apendicite aguda de doença inflamatória pélvica?",
+      "options": [
+        "Na apendicite, a mobilização do colo uterino costuma ser indolor",
+        "Na apendicite, a mobilização do colo uterino é extremamente dolorosa",
+        "Na apendicite, o corrimento cervical purulento é achado frequente",
+        "Na apendicite, a dor é hipogástrica e bilateral desde o início"
+      ],
+      "correctIndex": 0,
+      "explanation": "Na apendicite a dor migra do umbigo para a fossa ilíaca direita e a mobilização do colo tipicamente não dói. Na DIP a dor é hipogástrica e bilateral, o corrimento purulento é comum e a mobilização cervical é extremamente dolorosa. O diferencial inclui ainda infecção urinária, endometrioma roto e torção ovariana.",
+      "image": "pg13",
+      "imageCaption": "Diagnóstico diferencial do abdome agudo em ginecologia"
+    },
+    {
+      "question": "Por que o antibiótico empírico deve ser iniciado antes do resultado de ultrassom, PCR ou culturas?",
+      "options": [
+        "Porque 48 horas de atraso triplicam o risco de infertilidade",
+        "Porque o resultado da cultura endocervical sai em menos de 2 horas",
+        "Porque o antibiótico interfere no resultado da ultrassonografia",
+        "Porque a cultura só tem valor depois de iniciado o antibiótico"
+      ],
+      "correctIndex": 0,
+      "explanation": "Enquanto se aguarda exame, a inflamação segue destruindo o epitélio ciliar tubário, e 48 horas de atraso já triplicam o risco de infertilidade. Por isso a conduta é tratar empiricamente diante da suspeita clínica, errando pelo excesso, e não esperar a paciente evoluir para choque."
+    },
+    {
+      "question": "Como se caracteriza e como se conduz o estágio I de Monif?",
+      "options": [
+        "Endometrite ou salpingite sem peritonite, com manejo ambulatorial",
+        "Endometrite ou salpingite com peritonite, com manejo ambulatorial",
+        "Endometrite ou salpingite sem peritonite, com internação obrigatória",
+        "Abscesso tubo-ovariano íntegro, com manejo ambulatorial vigiado"
+      ],
+      "correctIndex": 0,
+      "explanation": "Monif I é endometrite ou salpingite aguda sem peritonite, portanto quadro não complicado. Em paciente estável e sem critérios de internação, permite tratamento ambulatorial com seguimento precoce e reavaliação obrigatória em 72 horas.",
+      "image": "pg21",
+      "imageCaption": "Estadiamento de Monif: anatomia, marcador e conduta"
+    },
+    {
+      "question": "O estágio II de Monif difere do estágio I pela presença de qual achado?",
+      "options": [
+        "Peritonite pélvica associada à salpingite aguda em curso",
+        "Abscesso tubo-ovariano íntegro demonstrado em exame de imagem",
+        "Abscesso tubo-ovariano roto com quadro de choque séptico",
+        "Endometrite isolada sem qualquer comprometimento das tubas"
+      ],
+      "correctIndex": 0,
+      "explanation": "O divisor entre Monif I e II é a peritonite pélvica, que marca maior extensão inflamatória e habitualmente leva à internação. O abscesso íntegro define o estágio III e o abscesso roto, com peritonite difusa e sepse, define o estágio IV."
+    },
+    {
+      "question": "Qual é a conduta típica diante de abscesso tubo-ovariano íntegro?",
+      "options": [
+        "Internação com antibiótico intravenoso e avaliar drenagem",
+        "Ambulatório com antibiótico oral e reavaliação em 72 horas",
+        "Laparotomia imediata com salpingectomia bilateral de urgência",
+        "Observação domiciliar sem antibiótico até a cultura resultar"
+      ],
+      "correctIndex": 0,
+      "explanation": "Monif III corresponde a doença complicada com massa ou coleção anexial. A conduta padrão é internar e usar antibioticoterapia parenteral, reservando drenagem ou outra intervenção conforme a evolução. Cirurgia imediata fica reservada à rotura do abscesso."
+    },
+    {
+      "question": "Abscesso tubo-ovariano roto configura qual estágio de Monif e exige qual conduta?",
+      "options": [
+        "Monif IV, com antibiótico de amplo espectro e cirurgia imediata",
+        "Monif III, com antibiótico de amplo espectro e cirurgia imediata",
+        "Monif IV, com antibiótico oral ambulatorial e retorno em 72 horas",
+        "Monif II, com antibiótico intravenoso e drenagem percutânea"
+      ],
+      "correctIndex": 0,
+      "explanation": "A rotura do abscesso é emergência: há risco de peritonite difusa, sepse e choque. O manejo é antibiótico de amplo espectro por via parenteral associado a avaliação cirúrgica imediata. É o único estágio de Monif em que a cirurgia é parte obrigatória do tratamento inicial."
+    },
+    {
+      "question": "Qual situação, isoladamente, já indica internação hospitalar em paciente com DIP?",
+      "options": [
+        "Gestação confirmada em paciente com diagnóstico de DIP",
+        "Idade abaixo de 25 anos em paciente sexualmente ativa",
+        "Antecedente de episódio prévio de DIP há mais de um ano",
+        "Uso de dispositivo intrauterino há mais de seis meses"
+      ],
+      "correctIndex": 0,
+      "explanation": "A gestante com DIP interna sempre, pelo alto risco de abortamento, corioamnionite e parto prematuro, e recebe antibiótico parenteral. As demais indicações de internação são Monif II ou maior, intolerância oral, falha após 72 horas, estado geral grave e impossibilidade de excluir urgência cirúrgica.",
+      "image": "pg23",
+      "imageCaption": "As seis indicações de internação hospitalar na DIP"
+    },
+    {
+      "question": "Após quanto tempo a ausência de resposta ao esquema ambulatorial passa a indicar internação?",
+      "options": [
+        "72 horas do início do antibiótico, com falha ou piora clínica",
+        "24 horas do início do antibiótico, com falha ou piora clínica",
+        "14 dias do início do antibiótico, com falha ou piora clínica",
+        "7 dias do início do antibiótico, com falha ou piora clínica"
+      ],
+      "correctIndex": 0,
+      "explanation": "O retorno em 72 horas é obrigatório em todo tratamento ambulatorial de DIP. Se nesse prazo não houver melhora, ou se o quadro piorar, a paciente deve ser internada para antibioticoterapia parenteral e reavaliação do diagnóstico."
+    },
+    {
+      "question": "Qual é o esquema ambulatorial de primeira escolha do PCDT 2020 para a DIP?",
+      "options": [
+        "Ceftriaxona IM em dose única, doxiciclina e metronidazol por 14 dias",
+        "Ceftriaxona IM em dose única, azitromicina e fluconazol por 14 dias",
+        "Ceftriaxona IV diária por 14 dias, doxiciclina e metronidazol orais",
+        "Penicilina IM em dose única, doxiciclina e metronidazol por 7 dias"
+      ],
+      "correctIndex": 0,
+      "explanation": "O esquema ambulatorial é ceftriaxona 500 mg IM em dose única, doxiciclina 100 mg VO de 12 em 12 horas por 14 dias e metronidazol 500 mg VO de 12 em 12 horas por 14 dias, com reavaliação em 72 horas. A alternativa troca a ceftriaxona por cefotaxima 500 mg IM em dose única.",
+      "image": "pg24",
+      "imageCaption": "Esquemas ambulatorial e hospitalar do PCDT 2020"
+    },
+    {
+      "question": "Qual é o esquema hospitalar de primeira escolha para a DIP?",
+      "options": [
+        "Ceftriaxona IV, doxiciclina oral e metronidazol IV por 14 dias",
+        "Ceftriaxona IM em dose única, doxiciclina oral e metronidazol oral",
+        "Clindamicina IV, gentamicina IV e fluconazol oral por 14 dias",
+        "Ampicilina com sulbactam IV, azitromicina oral e nistatina oral"
+      ],
+      "correctIndex": 0,
+      "explanation": "O esquema hospitalar de primeira linha é ceftriaxona 1 g IV uma vez ao dia, doxiciclina 100 mg VO de 12 em 12 horas e metronidazol 400 mg IV de 12 em 12 horas, totalizando 14 dias. A transição para via oral é feita após 24 horas sem febre. As alternativas são clindamicina com gentamicina ou ampicilina-sulbactam com doxiciclina."
+    },
+    {
+      "question": "Quais agentes o esquema antibiótico da DIP precisa obrigatoriamente cobrir, e por quanto tempo?",
+      "options": [
+        "Clamídia, gonococo e anaeróbios, por quatorze dias de tratamento",
+        "Clamídia, gonococo e fungos, por quatorze dias de tratamento",
+        "Gonococo, anaeróbios e protozoários, por sete dias de tratamento",
+        "Clamídia, estafilococo e anaeróbios, por sete dias de tratamento"
+      ],
+      "correctIndex": 0,
+      "explanation": "A DIP é polimicrobiana, então o esquema precisa ser de amplo espectro e cobrir simultaneamente clamídia, gonococo e anaeróbios, por 14 dias. Essa é a razão de a tríade cefalosporina, doxiciclina e metronidazol aparecer tanto no esquema ambulatorial quanto no hospitalar."
+    },
+    {
+      "question": "Como devem ser tratadas as parcerias sexuais dos últimos 60 dias de uma paciente com DIP?",
+      "options": [
+        "Empiricamente, com ceftriaxona 500 mg IM e azitromicina 1 g VO",
+        "Apenas se sintomáticas, com ceftriaxona 500 mg IM em dose única",
+        "Empiricamente, com doxiciclina 100 mg VO por quatorze dias",
+        "Apenas após resultado de cultura, com azitromicina 1 g VO"
+      ],
+      "correctIndex": 0,
+      "explanation": "O tratamento das parcerias dos últimos 60 dias é mandatório, mesmo nas assintomáticas, com ceftriaxona 500 mg IM associada a azitromicina 1 g VO em dose única. Sem isso, a reinfecção imediata garante falha terapêutica, por melhor que seja o esquema prescrito à paciente."
+    },
+    {
+      "question": "Quais classes de antimicrobianos são contraindicadas no tratamento da DIP durante a gestação?",
+      "options": [
+        "Tetraciclinas, como a doxiciclina, e também as quinolonas",
+        "Cefalosporinas, como a ceftriaxona, e também os macrolídeos",
+        "Nitroimidazóis, como o metronidazol, e também as penicilinas",
+        "Aminoglicosídeos, como a gentamicina, e também os macrolídeos"
+      ],
+      "correctIndex": 0,
+      "explanation": "Doxiciclina (tetraciclina) e quinolonas são contraindicadas na gestação, o que obriga a reformular o esquema padrão. A gestante com DIP tem indicação de internação obrigatória e antibioticoterapia parenteral, pelo risco de abortamento, corioamnionite e prematuridade."
+    },
+    {
+      "question": "Qual é o risco de infertilidade por fator tubário após três episódios de DIP?",
+      "options": [
+        "Chega a cerca de 75%, subindo a cada novo episódio",
+        "Chega a cerca de 10%, subindo a cada novo episódio",
+        "Permanece em cerca de 3%, qualquer que seja o número",
+        "Chega a cerca de 29%, caindo a cada novo episódio"
+      ],
+      "correctIndex": 0,
+      "explanation": "A infertilidade por fator tubário ocorre em 10% a 50% das mulheres após DIP e o risco cresce exponencialmente a cada recidiva, chegando a cerca de 75% depois de três episódios. Aderências e bloqueio purulento destroem o epitélio ciliar e distorcem a trompa."
+    },
+    {
+      "question": "Em quanto a DIP prévia aumenta o risco de gravidez ectópica tubária?",
+      "options": [
+        "De 6 a 10 vezes, por lesão do epitélio ciliar e aderências",
+        "De 2 a 3 vezes, por lesão do epitélio ciliar e aderências",
+        "De 20 a 30 vezes, por obstrução completa das duas trompas",
+        "Não há aumento, pois a lesão tubária impede a fecundação"
+      ],
+      "correctIndex": 0,
+      "explanation": "As aderências e a destruição do epitélio ciliar prejudicam o transporte do ovo e elevam de 6 a 10 vezes a chance de implantação tubária. Junto com a infertilidade e a dor pélvica crônica, presente em 20% a 40% das pacientes, compõe a tríade de sequelas tardias da DIP."
+    },
+    {
+      "question": "Dor em quadrante superior direito com aderências em corda de violino na cápsula hepática define qual quadro?",
+      "options": [
+        "Síndrome de Fitz-Hugh-Curtis, peri-hepatite por clamídia ou gonococo",
+        "Síndrome de Asherman, com sinéquias intrauterinas pós-curetagem",
+        "Síndrome de Meigs, com ascite e derrame pleural por tumor ovariano",
+        "Síndrome de Mayer-Rokitansky, com agenesia uterina e vaginal"
+      ],
+      "correctIndex": 0,
+      "explanation": "A síndrome de Fitz-Hugh-Curtis é a peri-hepatite por disseminação de clamídia ou gonococo até a cápsula de Glisson. Manifesta-se por dor no quadrante superior direito do abdome e por aderências finas em corda de violino entre a cápsula hepática e a parede abdominal."
+    }
+  ]
+}

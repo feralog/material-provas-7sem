@@ -1,0 +1,374 @@
+{
+  "titulo": "Depressão no Idoso",
+  "eyebrow": "Geriatria · Saúde Mental",
+  "subtitulo": "O idoso deprimido que chega com dor, não com tristeza",
+  "intro": "Apresentação atípica e depressão mascarada, diferencial com demência e delirium, escalas de rastreio com seus pontos de corte e a escolha do antidepressivo no paciente polimedicado.",
+  "questoes": [
+    {
+      "question": "Homem de 73 anos relata dor abdominal difusa há três anos, sem relação com a alimentação. Hemograma, função hepática, renal e tireoidiana, endoscopia, colonoscopia, tomografia e angiotomografia de abdome vieram normais. Qual a hipótese mais provável?",
+      "options": [
+        "Depressão mascarada, com a queixa álgica no lugar do humor",
+        "Dispepsia funcional, com a dor explicada por gastrite de antro",
+        "Isquemia mesentérica crônica, com angiotomografia normal",
+        "Dor neuropática lombar, por alteração degenerativa de coluna"
+      ],
+      "correctIndex": 0,
+      "explanation": "Dor crônica sem causa orgânica após investigação laboratorial, endoscópica e de imagem exaustiva é o cenário clássico da depressão mascarada, diagnóstico de exclusão. Nesse perfil de paciente, a introdução de antidepressivo (desvenlafaxina, por exemplo) costuma aliviar a queixa álgica em cerca de cinco semanas, o que confirma retrospectivamente a hipótese."
+    },
+    {
+      "question": "O que define a depressão mascarada?",
+      "options": [
+        "Sintomas afetivos e cognitivos ocultados por queixas somáticas",
+        "Sintomas afetivos típicos acompanhados de delírios de culpa",
+        "Sintomas afetivos crônicos de intensidade leve e persistente",
+        "Sintomas afetivos alternados com episódios de mania ou hipomania"
+      ],
+      "correctIndex": 0,
+      "explanation": "Na depressão mascarada o núcleo afetivo e cognitivo existe, mas fica encoberto por sintomas físicos: cefaleia e parestesias, dor torácica e palpitação, dispneia, dor abdominal e náusea, cervicalgia e lombalgia, eczema. O diagnóstico é de exclusão e só se firma depois de afastada causa orgânica para a queixa somática."
+    },
+    {
+      "question": "Qual a prevalência estimada da forma mascarada entre os pacientes deprimidos?",
+      "options": [
+        "Cerca de 5%",
+        "Cerca de 25%",
+        "Cerca de 50%",
+        "Cerca de 75%"
+      ],
+      "correctIndex": 0,
+      "explanation": "A forma mascarada responde por aproximadamente 5% dos pacientes deprimidos. É uma fração pequena, mas desproporcionalmente cara: são os pacientes que percorrem vários especialistas e acumulam exames normais antes do diagnóstico."
+    },
+    {
+      "question": "A figura contrasta tristeza e depressão. Qual característica pertence à coluna da depressão?",
+      "options": [
+        "Não reage a estímulos positivos e piora com o tempo sem tratamento",
+        "Reage a estímulos positivos e tende a melhorar com o passar do tempo",
+        "Tem sempre um fator causal identificável, como a perda de alguém",
+        "Provoca prejuízo funcional limitado e é sentimento normal do humano"
+      ],
+      "correctIndex": 0,
+      "explanation": "A tristeza tem fator causal, reage a estímulos positivos, é menos intensa e menos duradoura e melhora espontaneamente. A depressão dispensa causa identificável, não reage a estímulos positivos, é mais intensa e duradoura, causa prejuízo funcional com lentificação motora e, sem tratamento, piora.",
+      "image": "pg07",
+      "imageCaption": "Tristeza × depressão: as colunas lado a lado"
+    },
+    {
+      "question": "Pelos critérios do DSM-5, qual achado é obrigatório para diagnosticar episódio depressivo maior?",
+      "options": [
+        "Humor deprimido ou perda de interesse por duas semanas",
+        "Ideação suicida recorrente por pelo menos duas semanas",
+        "Perda de peso não intencional no intervalo de um mês",
+        "Insônia terminal associada a culpa por duas semanas"
+      ],
+      "correctIndex": 0,
+      "explanation": "O critério obrigatório é humor deprimido ou perda de interesse e prazer, na maior parte do dia, quase todos os dias, por duas semanas. A esse núcleo somam-se ao menos quatro dos demais sintomas: alteração de apetite e peso, insônia ou hipersonia, culpa e inutilidade, baixa autoestima, agitação ou retardo psicomotor, ideação suicida e prejuízo de concentração."
+    },
+    {
+      "question": "O mapa traz a prevalência de transtorno depressivo em adultos na América Latina. O que ele mostra sobre o Brasil?",
+      "options": [
+        "Prevalência de 17,38%, a mais alta do continente",
+        "Prevalência de 4,17%, a mais baixa do continente",
+        "Prevalência de 8,53%, abaixo da média regional",
+        "Prevalência de 12,58%, igual à média regional"
+      ],
+      "correctIndex": 0,
+      "explanation": "O Brasil aparece com 17,38%, o maior valor da série, contra uma média latino-americana de 12,58%. Os dois números estão bem acima da estimativa da OMS de 5% dos adultos no mundo, o que posiciona a depressão como problema de saúde pública regional e não como queixa individual isolada.",
+      "image": "pg11",
+      "imageCaption": "Prevalência de depressão na América Latina"
+    },
+    {
+      "question": "Em quanto a depressão aumenta o risco de morte por suicídio em relação à população sem depressão?",
+      "options": [
+        "De 12 a 20 vezes",
+        "De 2 a 3 vezes",
+        "De 5 a 8 vezes",
+        "De 40 a 60 vezes"
+      ],
+      "correctIndex": 0,
+      "explanation": "A depressão multiplica por 12 a 20 o risco de morte por suicídio. O paciente deprimido fica incapacitado em média 35 dias por ano e, entre idosos com doença crônica, a depressão associa-se a pior evolução clínica e maior mortalidade — ou seja, o desfecho não se restringe ao suicídio."
+    },
+    {
+      "question": "Qual condição aumenta o risco de depressão no idoso?",
+      "options": [
+        "Falta de suporte familiar e isolamento social",
+        "Excesso de convívio comunitário e vida social ativa",
+        "Aumento de renda e ampliação do papel social",
+        "Hipertrofia cerebral e excesso de neurotransmissores"
+      ],
+      "correctIndex": 0,
+      "explanation": "Entre os fatores de risco estão isolamento social e falta de suporte familiar, luto, queda de renda com mudança do papel social, limitação física, doenças físicas dolorosas ou incapacitantes, alterações vasculares cerebrais, atrofia cerebral progressiva e perda neuronal com redução de neurotransmissores."
+    },
+    {
+      "question": "A tabela descreve apresentações da depressão no idoso. O que caracteriza a forma vascular?",
+      "options": [
+        "Associação a doença cerebrovascular, com perda de fluência verbal",
+        "Associação a alucinações, com delírios de culpa e persecutórios",
+        "Associação a imobilidade, com comprometimento grave da motricidade",
+        "Associação a episódios de mania, com aumento de energia e de libido"
+      ],
+      "correctIndex": 0,
+      "explanation": "A depressão vascular acompanha doença cerebrovascular e se distingue pelo maior comprometimento cognitivo, sobretudo de fluência verbal e nomeação de objetos. É a forma que mais se confunde com demência incipiente, porque o déficit cognitivo é parte do quadro e não apenas queixa subjetiva.",
+      "image": "pg14",
+      "imageCaption": "Apresentações da depressão no idoso"
+    },
+    {
+      "question": "Qual apresentação da depressão no idoso cursa com retardo psicomotor, redução do interesse em atividades e comprometimento das atividades de vida diária?",
+      "options": [
+        "Depressão com disfunção executiva",
+        "Depressão com estupor melancólico",
+        "Depressão distímica crônica",
+        "Depressão de perfil psicótico"
+      ],
+      "correctIndex": 0,
+      "explanation": "A depressão com disfunção executiva combina retardo psicomotor, queda do interesse e perda funcional nas atividades de vida diária. O estupor melancólico é mais grave e cursa com grau de imobilidade; a psicótica traz alucinações e delírios de culpa, doença ou morte."
+    },
+    {
+      "question": "Quadro depressivo tipicamente crônico, de intensidade inferior à do transtorno depressivo maior, recebe que nome?",
+      "options": [
+        "Depressão distímica",
+        "Depressão psicótica",
+        "Depressão vascular",
+        "Estupor melancólico"
+      ],
+      "correctIndex": 0,
+      "explanation": "A depressão distímica é crônica e de intensidade menor que a do transtorno depressivo maior. Justamente por ser arrastada e pouco intensa, costuma ser naturalizada como 'jeito de ser' do idoso e passar anos sem tratamento."
+    },
+    {
+      "question": "A figura mostra instrumentos de rastreio de depressão. Qual é o ponto de corte da GDS-15?",
+      "options": [
+        "5 ou mais pontos",
+        "3 ou mais pontos",
+        "7 ou mais pontos",
+        "10 ou mais pontos"
+      ],
+      "correctIndex": 0,
+      "explanation": "A Escala de Depressão Geriátrica de 15 itens tem ponto de corte em 5 ou mais pontos. São perguntas de sim ou não sobre satisfação com a vida, sensação de vazio, desamparo e energia, formato que evita itens somáticos confundidores em quem já tem doença crônica.",
+      "image": "pg17",
+      "imageCaption": "GDS-15, PHQ-2 e PHQ-9 com seus pontos de corte"
+    },
+    {
+      "question": "Quais são os pontos de corte do PHQ-2 e do PHQ-9 no rastreio de depressão?",
+      "options": [
+        "3 ou mais no PHQ-2 e 10 ou mais no PHQ-9",
+        "5 ou mais no PHQ-2 e 15 ou mais no PHQ-9",
+        "1 ou mais no PHQ-2 e 5 ou mais no PHQ-9",
+        "6 ou mais no PHQ-2 e 20 ou mais no PHQ-9"
+      ],
+      "correctIndex": 0,
+      "explanation": "O PHQ-2 tem corte em 3 e o PHQ-9 em 10. O PHQ-2 é a porta de entrada, com apenas duas perguntas sobre interesse e humor nas últimas duas semanas; o PHQ-9 amplia para nove itens e dá uma medida de gravidade além do rastreio."
+    },
+    {
+      "question": "Por que o idoso deprimido chega frequentemente ao consultório com dor de cabeça, queixa digestiva e dor no corpo em vez de tristeza?",
+      "options": [
+        "Porque os sintomas físicos podem substituir a queixa de humor",
+        "Porque os sintomas físicos surgem só na fase tardia do quadro",
+        "Porque os sintomas físicos afastam o diagnóstico de depressão",
+        "Porque os sintomas físicos indicam sempre doença orgânica séria"
+      ],
+      "correctIndex": 0,
+      "explanation": "Dor de cabeça, tensão cervical e de ombros, problemas digestivos, dores pelo corpo, fadiga, alteração de sono, mudança de apetite e peso e queda de imunidade compõem a face física da depressão. No idoso, essa face frequentemente vem sozinha, e o médico que exige tristeza verbalizada para pensar em depressão deixa o diagnóstico passar."
+    },
+    {
+      "question": "Idoso de 70 anos com infarto prévio, em uso de cinco medicamentos, recebe diagnóstico de depressão. Qual ISRS tem o melhor perfil nesse cenário?",
+      "options": [
+        "Sertralina, que não altera significativamente o intervalo QT",
+        "Fluvoxamina, que tem o maior potencial de eventos adversos",
+        "Paroxetina, que acrescenta ação colinérgica ao efeito ISRS",
+        "Citalopram, cuja fração R pode predispor a arritmia cardíaca"
+      ],
+      "correctIndex": 0,
+      "explanation": "A sertralina é o ISRS mais seguro no cardiopata e no pós-infarto, sem alteração significativa do intervalo QT, e tem baixa interação medicamentosa — o que importa muito no idoso polimedicado. É também a opção preferida no paciente que já tem QT prolongado por outra causa."
+    },
+    {
+      "question": "Qual é o esquema recomendado para iniciar sertralina em idoso ansioso, evitando o agravamento inicial da ansiedade?",
+      "options": [
+        "25 mg por 7 dias e depois 50 mg por dia",
+        "50 mg por 7 dias e depois 100 mg por dia",
+        "100 mg desde o primeiro dia, sem titulação",
+        "12,5 mg por 30 dias e depois 25 mg por dia"
+      ],
+      "correctIndex": 0,
+      "explanation": "Começar direto com 50 mg no paciente ansioso provoca uma descarga inicial de serotonina que piora a ansiedade, com taquicardia e tremor nos primeiros 7 a 10 dias (jitteriness) — e faz o paciente abandonar o tratamento. A titulação é 25 mg nos dias 1 a 7, 50 mg a partir do dia 8, e ajustes de 50 em 50 mg entre a quarta e a sexta semana, até o teto de 200 mg/dia."
+    },
+    {
+      "question": "Qual ISRS acumula ação colinérgica e por isso tende a causar boca seca, constipação e ganho de peso?",
+      "options": [
+        "Paroxetina",
+        "Sertralina",
+        "Escitalopram",
+        "Fluoxetina"
+      ],
+      "correctIndex": 0,
+      "explanation": "A paroxetina soma alta afinidade serotoninérgica a ação nos receptores colinérgicos, e daí vem o perfil de boca seca, constipação, ganho de peso e disfunção sexual. No idoso, em que a carga anticolinérgica já costuma estar alta pelos outros fármacos em uso, é o ISRS menos conveniente."
+    },
+    {
+      "question": "Acima dos 60 anos, qual antidepressivo tem a dose diária limitada a 20 mg, limite que também vale na insuficiência hepática e no uso de omeprazol?",
+      "options": [
+        "Citalopram",
+        "Sertralina",
+        "Mirtazapina",
+        "Venlafaxina"
+      ],
+      "correctIndex": 0,
+      "explanation": "O citalopram tem dose máxima de 20 mg/dia acima dos 60 anos, na insuficiência hepática e em uso de omeprazol ou cimetidina. A restrição decorre do R-citalopram, a fração em espelho que não contribui para o efeito terapêutico e parece ter potencial arritmogênico."
+    },
+    {
+      "question": "O que diferencia o escitalopram do citalopram?",
+      "options": [
+        "Contém apenas o S-citalopram, sem a fração R arritmogênica",
+        "Contém apenas o R-citalopram, sem a fração S arritmogênica",
+        "Contém as duas frações em proporção de dois para um",
+        "Contém a fração R em dose maior, ganhando mais potência"
+      ],
+      "correctIndex": 0,
+      "explanation": "O citalopram é mistura em partes iguais de R-citalopram e S-citalopram; só o S responde pelo efeito terapêutico, enquanto o R interfere negativamente na ação serotoninérgica. O escitalopram é o S isolado: é o ISRS mais seletivo, com menos eventos adversos e menos interações, sem perda de eficácia."
+    },
+    {
+      "question": "Qual é o mecanismo de ação da mirtazapina?",
+      "options": [
+        "Bloqueia receptores que freiam a liberação de monoaminas",
+        "Inibe a recaptação de serotonina na fenda sináptica",
+        "Inibe a monoaminoxidase no terminal pré-sináptico",
+        "Bloqueia canais de sódio no neurônio pós-sináptico"
+      ],
+      "correctIndex": 0,
+      "explanation": "A mirtazapina é um NaSSA, antidepressivo noradrenérgico e serotoninérgico específico. Ela não inibe a recaptação como fluoxetina e sertralina: bloqueia os autorreceptores que freiam a liberação, aumentando a quantidade de neurotransmissor liberado na fenda."
+    },
+    {
+      "question": "A figura compara duas faixas de dose da mirtazapina. O que acontece ao subir de 15 mg para 30 a 45 mg?",
+      "options": [
+        "A sedação diminui, porque a ação noradrenérgica compete com o sono",
+        "A sedação aumenta, porque o bloqueio de histamina fica mais intenso",
+        "A sedação não muda, porque o efeito sobre histamina é fixo",
+        "A sedação aumenta, porque a ação serotoninérgica se soma ao sono"
+      ],
+      "correctIndex": 0,
+      "explanation": "Em 15 mg predomina o bloqueio H1 e o efeito é sono pesado. Entre 30 e 45 mg a liberação de noradrenalina aumenta e compete com a sedação, de modo que o paciente fica menos sonolento e mais ativado. É contraintuitivo: subir a dose reduz a sedação em vez de aumentá-la.",
+      "image": "pg38",
+      "imageCaption": "Mirtazapina: o paradoxo da dose"
+    },
+    {
+      "question": "Em que paciente a mirtazapina deve ser evitada como primeira escolha?",
+      "options": [
+        "Idoso obeso com diabetes descompensado",
+        "Idoso frágil com insônia e perda de peso",
+        "Idoso com clearance de creatinina de 35",
+        "Idoso com insuficiência hepática leve"
+      ],
+      "correctIndex": 0,
+      "explanation": "O bloqueio combinado de H1 e 5HT2C produz fissura específica por doces e massas, com ganho de peso rápido — ruim no obeso e no diabético descompensado. Nos outros cenários listados ela é justamente a opção preferida: idoso frágil, insônia, perda de apetite, insuficiência hepática e renal com clearance abaixo de 40."
+    },
+    {
+      "question": "Paciente em uso de mirtazapina procura atendimento com febre e dor de garganta persistente. Qual exame é obrigatório?",
+      "options": [
+        "Hemograma, para investigar neutropenia",
+        "Eletrocardiograma, para medir o QT",
+        "Sódio sérico, para excluir hiponatremia",
+        "Função hepática, para excluir hepatite"
+      ],
+      "correctIndex": 0,
+      "explanation": "A mirtazapina pode causar neutropenia, efeito raríssimo mas grave. Por isso febre ou infecção de garganta persistente em quem usa a droga obriga a pedir hemograma, e não a tratar como virose banal."
+    },
+    {
+      "question": "Idoso frágil com clearance de creatinina de 30 e epilepsia controlada com fenitoína vai iniciar mirtazapina. Qual cuidado é necessário?",
+      "options": [
+        "Titular devagar até 30 mg à noite e vigiar a fenitoína",
+        "Iniciar direto com 45 mg à noite e manter a fenitoína",
+        "Titular devagar até 60 mg à noite e suspender a fenitoína",
+        "Iniciar com 30 mg pela manhã e dobrar a dose de fenitoína"
+      ],
+      "correctIndex": 0,
+      "explanation": "No idoso frágil e na insuficiência hepática ou renal com clearance abaixo de 40 mL/min, a mirtazapina é titulada lentamente até o máximo de 30 mg à noite. Ela pode elevar em cerca de 40% a concentração plasmática de fenitoína e de carbamazepina, o que exige vigilância clínica de intoxicação."
+    },
+    {
+      "question": "A tabela compara os antidepressivos duais. Qual deles é a escolha quando há dor associada à depressão?",
+      "options": [
+        "Duloxetina, que atua também na dor neuropática e na fibromialgia",
+        "Desvenlafaxina, que atua também nos sintomas vasomotores",
+        "Venlafaxina, que atua também no pânico e no quadro obsessivo",
+        "Fluvoxamina, que atua também nos sintomas obsessivo-compulsivos"
+      ],
+      "correctIndex": 0,
+      "explanation": "A duloxetina aumenta mais a noradrenalina que a venlafaxina, o que a torna a melhor dos duais para dor: tem indicação em dor neuropática, fibromialgia e incontinência urinária. A ressalva é renal e hepática — é contraindicada na insuficiência hepática e com clearance de creatinina abaixo de 30 mL/min.",
+      "image": "pg33",
+      "imageCaption": "Comparação entre os antidepressivos duais"
+    },
+    {
+      "question": "Quanto tempo se espera pela resposta à desvenlafaxina antes de considerar a troca?",
+      "options": [
+        "De 2 a 6 semanas, com suspensão se não houver melhora em 8",
+        "De 1 a 2 semanas, com suspensão se não houver melhora em 3",
+        "De 8 a 12 semanas, com suspensão se não houver melhora em 16",
+        "De 24 a 48 horas, com suspensão se não houver melhora em 72"
+      ],
+      "correctIndex": 0,
+      "explanation": "A desvenlafaxina age em 2 a 6 semanas e, se não houver melhora em 8 semanas, deve ser suspensa. Entre os duais, é a de menor interação medicamentosa, menos efeito sexual e menor elevação de pressão arterial, o que pesa a favor no idoso polimedicado."
+    },
+    {
+      "question": "A tabela cruza antidepressivos e sintomas-alvo. Qual fármaco cobre insônia, peso e humor ao mesmo tempo?",
+      "options": [
+        "Mirtazapina",
+        "Sertralina",
+        "Trazodona",
+        "Duloxetina"
+      ],
+      "correctIndex": 0,
+      "explanation": "A mirtazapina é a única que marca presença nas três colunas: insônia, peso e humor. A sertralina atua sobre humor, a trazodona sobre insônia e os duais sobre humor e dor — o que transforma a escolha do antidepressivo numa decisão guiada pelo sintoma que mais incomoda.",
+      "image": "pg44",
+      "imageCaption": "Antidepressivo × sintoma-alvo na prática"
+    },
+    {
+      "question": "Qual antidepressivo é a opção preferencial quando a depressão coexiste com tabagismo?",
+      "options": [
+        "Bupropiona, que atua sobre dopamina e noradrenalina",
+        "Trazodona, que atua sobre recaptação e antagoniza 5-HT",
+        "Agomelatina, que atua sobre receptores melatoninérgicos",
+        "Vortioxetina, que atua sobre vários receptores de serotonina"
+      ],
+      "correctIndex": 0,
+      "explanation": "A bupropiona é um dual dopamina-noradrenalina, iniciada com 150 mg/dia até o máximo de 450 mg/dia, e é a opção quando há tabagismo associado — trata as duas condições de uma vez. Agomelatina, mirtazapina e vortioxetina compõem o mesmo bloco de mecanismos alternativos, mas sem esse benefício específico."
+    },
+    {
+      "question": "Paciente com depressão grave e expectativa de vida estimada em duas semanas. Qual conduta é indicada?",
+      "options": [
+        "Metilfenidato, porque o antidepressivo não age a tempo",
+        "Sertralina isolada, porque o efeito aparece em três dias",
+        "Amitriptilina isolada, porque o efeito aparece em horas",
+        "Psicoterapia isolada, porque o efeito aparece em um dia"
+      ],
+      "correctIndex": 0,
+      "explanation": "Com expectativa de vida abaixo de 4 semanas, o antidepressivo convencional não tem tempo de agir e o psicoestimulante assume: metilfenidato 5 mg/dia pela manhã ou no almoço, até o máximo de 60 mg/dia. Acima de 4 semanas de sobrevida, escolhe-se o antidepressivo pelo sintoma associado — nortriptilina e duloxetina para dor, mirtazapina para insônia e inapetência."
+    },
+    {
+      "question": "Senhora de 78 anos apresenta queda cognitiva iniciada há dois meses, queixa-se ativamente da própria memória e responde 'não sei' à maior parte das perguntas do teste. O que esse padrão sugere?",
+      "options": [
+        "Pseudodemência depressiva, de início recente e bem datado",
+        "Doença de Alzheimer, de início insidioso e notada pelo familiar",
+        "Delirium hiperativo, com flutuação da atenção ao longo do dia",
+        "Demência vascular, com perdas súbitas e em degraus sucessivos"
+      ],
+      "correctIndex": 0,
+      "explanation": "Três pistas apontam para pseudodemência depressiva: início recente que a família consegue datar, queixa de memória vinda do próprio paciente e respostas de 'não sei' em vez de confabulação. Na demência degenerativa o início é insidioso, quem se queixa é o acompanhante e o paciente tende a minimizar o déficit e a inventar respostas."
+    },
+    {
+      "question": "Qual achado separa o delirium da depressão e da demência na avaliação inicial?",
+      "options": [
+        "Atenção flutuante, com instalação em horas ou poucos dias",
+        "Memória prejudicada, com instalação em meses ou em anos",
+        "Humor deprimido, com instalação em algumas poucas semanas",
+        "Afasia progressiva, com instalação em anos de evolução lenta"
+      ],
+      "correctIndex": 0,
+      "explanation": "O delirium se define pelo déficit de atenção que flutua ao longo do dia e se instala em horas a dias, quase sempre com um fator precipitante agudo. A demência tem curso de meses a anos com atenção preservada no início, e a depressão instala-se em semanas com atenção e memória relativamente íntegras, embora a concentração esteja prejudicada."
+    },
+    {
+      "question": "O que mostraram as revisões sobre probióticos e simbióticos em idosos aparentemente saudáveis?",
+      "options": [
+        "Elevaram citocina anti-inflamatória sem reduzir os sintomas",
+        "Elevaram citocina anti-inflamatória e reduziram os sintomas",
+        "Reduziram citocina anti-inflamatória e também os sintomas",
+        "Não alteraram a citocina nem modificaram os sintomas"
+      ],
+      "correctIndex": 0,
+      "explanation": "O uso de probióticos e simbióticos elevou a concentração de citocina anti-inflamatória, mas isso não foi suficiente para reduzir os sintomas depressivos em idosos aparentemente saudáveis. O eixo intestino-cérebro é plausível — cerca de 95% da serotonina do organismo é produzida no trato gastrointestinal sob modulação da flora —, mas plausibilidade biológica não equivale a benefício clínico demonstrado."
+    }
+  ]
+}

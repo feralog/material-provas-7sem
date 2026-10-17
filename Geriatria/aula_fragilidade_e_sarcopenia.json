@@ -1,0 +1,387 @@
+{
+  "titulo": "Fragilidade e Sarcopenia",
+  "eyebrow": "Geriatria · Síndromes Geriátricas",
+  "subtitulo": "Os critérios, os instrumentos e os pontos de corte que definem o idoso frágil",
+  "intro": "Conceito e incidência da fragilidade, escala FRAIL e Escala Clínica de Fragilidade, diagnóstico da sarcopenia em quatro etapas (encontrar, avaliar, confirmar, graduar) com os cortes de dinamometria, massa muscular e velocidade de marcha, e o tratamento: exercício resistido, aporte proteico e suplementação oral.",
+  "questoes": [
+    {
+      "question": "A síndrome de fragilidade no idoso é mais bem definida como:",
+      "options": [
+        "vulnerabilidade aumentada a estresses agudos, com massa e força musculares reduzidas",
+        "declínio cognitivo progressivo com perda da autonomia para decisões financeiras",
+        "limitação funcional decorrente exclusivamente de sequela de doença cerebrovascular",
+        "perda de peso involuntária causada por neoplasia oculta ainda em investigação"
+      ],
+      "correctIndex": 0,
+      "explanation": "Fragilidade é uma condição de origem genética e neuroendócrina que gera maior vulnerabilidade a doenças e a estresses agudos, caracterizada por massa e força muscular reduzidas e baixa energia para as atividades do dia a dia. Não é sinônimo de incapacidade nem de comorbidade: é a perda de reserva fisiológica que faz um estresse pequeno produzir um desfecho grande."
+    },
+    {
+      "question": "Qual é a relação entre sarcopenia e síndrome de fragilidade no idoso?",
+      "options": [
+        "A sarcopenia é um dos principais fatores que levam à fragilidade",
+        "A sarcopenia é consequência obrigatória de toda fragilidade instalada",
+        "A sarcopenia e a fragilidade são sinônimos, com os mesmos critérios",
+        "A sarcopenia exclui o diagnóstico de fragilidade quando confirmada"
+      ],
+      "correctIndex": 0,
+      "explanation": "A sarcopenia é reconhecida como um dos principais fatores de fragilidade entre os idosos: a perda de massa e de força muscular é o substrato da baixa energia, da lentidão da marcha e da intolerância ao esforço que compõem o quadro de fragilidade. São construtos distintos e sobrepostos, não sinônimos."
+    },
+    {
+      "question": "Coorte com 120.000 adultos de 28 países estimou a incidência de fragilidade e de pré-fragilidade. Quais foram os valores encontrados?",
+      "options": [
+        "43,4 por 1000 pessoas-ano para frágil e 150,6 por 1000 para pré-frágil",
+        "150,6 por 1000 pessoas-ano para frágil e 43,4 por 1000 para pré-frágil",
+        "43,4 por 1000 pessoas-ano para frágil e 12,8 por 1000 para pré-frágil",
+        "4,3 por 1000 pessoas-ano para frágil e 15,0 por 1000 para pré-frágil"
+      ],
+      "correctIndex": 0,
+      "explanation": "A incidência de fragilidade foi de 43,4 por 1000 pessoas-ano e a de pré-fragilidade, de 150,6 por 1000 pessoas-ano. A pré-fragilidade é cerca de três a quatro vezes mais incidente, o que faz dela a janela de intervenção mais produtiva: é o estágio em que exercício e nutrição ainda revertem o quadro."
+    },
+    {
+      "question": "A escala FRAIL rastreia fragilidade por cinco componentes. Qual conjunto corresponde às letras da sigla?",
+      "options": [
+        "Fadiga, resistência, deambulação, doenças crônicas e perda de peso",
+        "Fadiga, rigidez, deambulação, incontinência e perda de peso",
+        "Força, resistência, apetite, doenças crônicas e perda de peso",
+        "Fadiga, resistência, apetite, insônia e perda de massa óssea"
+      ],
+      "correctIndex": 0,
+      "explanation": "FRAIL é o acrônimo de Fatigue (fadiga autorreferida), Resistance (resistência física), Ambulation (atividade física), Illness (presença de doenças crônicas) e Loss of weight (perda de peso). É um rastreio de cinco perguntas, feito à beira do leito, sem necessidade de dinamômetro ou de cronômetro.",
+      "image": "pg07",
+      "imageCaption": "Os cinco componentes da escala FRAIL"
+    },
+    {
+      "question": "Na escala FRAIL, quantos itens positivos definem o idoso frágil, o pré-frágil e o robusto?",
+      "options": [
+        "Frágil 3 ou mais, pré-frágil 1 a 2 e robusto nenhum item",
+        "Frágil 4 ou mais, pré-frágil 2 a 3 e robusto até 1 item",
+        "Frágil 2 ou mais, pré-frágil 1 item e robusto nenhum item",
+        "Frágil os 5 itens, pré-frágil 3 a 4 e robusto até 2 itens"
+      ],
+      "correctIndex": 0,
+      "explanation": "Três ou mais itens positivos classificam o idoso como frágil; um ou dois, como pré-frágil; nenhum item, como robusto. O mesmo corte de três critérios é usado no fenótipo clássico de fragilidade, o que facilita a memorização."
+    },
+    {
+      "question": "O critério de perda de peso da escala FRAIL é considerado positivo a partir de qual magnitude no último ano?",
+      "options": [
+        "Mais de 4,5 kg ou mais de 5% do peso corporal",
+        "Mais de 10 kg ou mais de 15% do peso corporal",
+        "Mais de 2,0 kg ou mais de 2% do peso corporal",
+        "Mais de 6,5 kg ou mais de 20% do peso corporal"
+      ],
+      "correctIndex": 0,
+      "explanation": "A perda ponderal conta como critério quando é maior que 4,5 kg ou superior a 5% do peso corporal no último ano. O dado é autorreferido e não exige pesagem seriada documentada, o que mantém o instrumento aplicável em qualquer consulta."
+    },
+    {
+      "question": "Os itens de resistência e de deambulação da escala FRAIL são aferidos, respectivamente, pela dificuldade para:",
+      "options": [
+        "subir um lance de escadas e caminhar um quarteirão",
+        "levantar da cadeira e permanecer de pé dez minutos",
+        "carregar 5 kg e caminhar quatrocentos metros seguidos",
+        "erguer os braços e atravessar um cômodo da casa"
+      ],
+      "correctIndex": 0,
+      "explanation": "Resistance pergunta se o idoso sobe um lance de escadas sem dificuldade; Ambulation, se caminha um quarteirão sem dificuldade. São tarefas do cotidiano cuja perda marca o limiar funcional entre o robusto e o pré-frágil."
+    },
+    {
+      "question": "Entre os fatores de risco reconhecidos para a síndrome de fragilidade no idoso está o conjunto:",
+      "options": [
+        "polifarmácia, sedentarismo e baixo nível socioeconômico",
+        "hipertireoidismo, tabagismo e alto nível socioeconômico",
+        "obesidade mórbida, etilismo leve e moradia em zona rural",
+        "sexo masculino, excesso de exercício e dieta rica em sal"
+      ],
+      "correctIndex": 0,
+      "explanation": "Polifarmácia, sedentarismo e baixo nível socioeconômico são fatores de risco clássicos, ao lado de sexo feminino, idade avançada, diabetes, DPOC, osteoartrite, doença isquêmica cardíaca, AVE, fratura de quadril e depressão. Vários deles são modificáveis, o que torna a lista um roteiro de intervenção e não apenas de prognóstico."
+    },
+    {
+      "question": "A Escala Clínica de Fragilidade estratifica o idoso em quantos níveis, e qual é o extremo superior da escala?",
+      "options": [
+        "Nove níveis, indo do muito ativo ao doente terminal",
+        "Cinco níveis, indo do muito ativo ao severamente frágil",
+        "Sete níveis, indo do robusto ao moderadamente frágil",
+        "Doze níveis, indo do independente ao acamado crônico"
+      ],
+      "correctIndex": 0,
+      "explanation": "A escala tem nove níveis: 1 muito ativo, 2 ativo, 3 regular, 4 vulnerável, 5 levemente frágil, 6 moderadamente frágil, 7 muito frágil, 8 severamente frágil e 9 doente terminal. O nível 9 é reservado a quem tem expectativa de vida menor que seis meses, mesmo sem outra evidência de fragilidade.",
+      "image": "pg09",
+      "imageCaption": "Escala Clínica de Fragilidade, nove níveis"
+    },
+    {
+      "question": "A prevalência estimada de sarcopenia varia bastante com a idade. Qual combinação está correta?",
+      "options": [
+        "5% a 13% entre 60 e 70 anos e 11% a 50% nos octogenários",
+        "20% a 30% entre 60 e 70 anos e 35% a 40% nos octogenários",
+        "1% a 3% entre 60 e 70 anos e 5% a 10% nos octogenários",
+        "5% a 13% entre 60 e 70 anos e 60% a 80% nos octogenários"
+      ],
+      "correctIndex": 0,
+      "explanation": "Entre 60 e 70 anos a prevalência fica em 5% a 13%, subindo para 11% a 50% nos octogenários. O cenário também pesa: 9% a 11% entre idosos da comunidade contra 31% a 51% entre os institucionalizados."
+    },
+    {
+      "question": "Na tríade massa, força e função que define a sarcopenia, a velocidade de marcha ocupa qual posição?",
+      "options": [
+        "É o desfecho funcional, consequência da perda de massa e de força",
+        "É o primeiro achado, antecedendo a perda de massa e de força",
+        "É o critério de rastreio inicial, substituindo o questionário",
+        "É a medida de massa muscular, substituindo a densitometria"
+      ],
+      "correctIndex": 0,
+      "explanation": "A sequência fisiopatológica vai da perda de massa para a queda da força e desta para a perda de função: a redução da velocidade de marcha é o desfecho, não o ponto de partida. Por isso ela é usada para graduar a gravidade, e não para rastrear ou confirmar o diagnóstico."
+    },
+    {
+      "question": "O questionário SARC-F é composto por cinco itens. Quais são eles?",
+      "options": [
+        "Força, ajuda para caminhar, levantar da cadeira, subir escadas e quedas",
+        "Força, apetite, levantar da cadeira, subir escadas e perda ponderal",
+        "Fadiga, ajuda para caminhar, equilíbrio, subir escadas e quedas",
+        "Força, ajuda para caminhar, marcha, dor articular e fratura prévia"
+      ],
+      "correctIndex": 0,
+      "explanation": "Os cinco itens são força (dificuldade para levantar e carregar 5 kg), ajuda para caminhar (atravessar um cômodo), levantar da cama ou da cadeira, subir um lance de dez degraus e número de quedas no último ano. Cada item vale de 0 a 2 pontos.",
+      "image": "pg12",
+      "imageCaption": "Itens e pontuação do SARC-F"
+    },
+    {
+      "question": "Qual é a finalidade do questionário SARC-F na abordagem da sarcopenia?",
+      "options": [
+        "Identificar indivíduos com risco aumentado, sem firmar o diagnóstico",
+        "Firmar o diagnóstico definitivo e dispensar as demais etapas da avaliação",
+        "Quantificar a massa muscular apendicular de modo indireto e barato",
+        "Medir o desempenho físico e estabelecer a gravidade dos casos graves"
+      ],
+      "correctIndex": 0,
+      "explanation": "O SARC-F serve para encontrar casos, não para diagnosticar: um resultado positivo apenas indica risco aumentado e obriga a seguir para a avaliação da força muscular. Confundir rastreio com diagnóstico é o erro clássico nessa etapa."
+    },
+    {
+      "question": "O SARC-CalF acrescenta a circunferência da panturrilha ao rastreio. Quais são os pontos de corte e o escore sugestivo de sarcopenia?",
+      "options": [
+        "33 cm ou menos em mulheres e 34 cm ou menos em homens valem 10 pontos; total igual ou maior que 11 é sugestivo",
+        "31 cm ou menos em mulheres e 35 cm ou menos em homens valem 10 pontos; total igual ou maior que 15 é sugestivo",
+        "33 cm ou menos em mulheres e 34 cm ou menos em homens valem 5 pontos; total igual ou maior que 8 é sugestivo",
+        "27 cm ou menos em mulheres e 16 cm ou menos em homens valem 10 pontos; total igual ou maior que 11 é sugestivo"
+      ],
+      "correctIndex": 0,
+      "explanation": "A panturrilha é medida na perna direita, com o paciente em pé e os pés afastados 20 cm: valores iguais ou menores que 33 cm em mulheres e 34 cm em homens somam 10 pontos ao escore do SARC-F. Total igual ou maior que 11 pontos é sugestivo de sarcopenia e obriga a prosseguir com a investigação completa."
+    },
+    {
+      "question": "A abordagem diagnóstica atual da sarcopenia segue quatro etapas. Qual é a sequência correta?",
+      "options": [
+        "Encontrar casos, avaliar a força, confirmar a massa e estabelecer a gravidade",
+        "Avaliar a força, encontrar casos, estabelecer a gravidade e confirmar a massa",
+        "Confirmar a massa, avaliar a força, encontrar casos e estabelecer a gravidade",
+        "Estabelecer a gravidade, confirmar a massa, avaliar a força e encontrar casos"
+      ],
+      "correctIndex": 0,
+      "explanation": "A sequência é encontrar (SARC-CalF ou suspeita clínica), avaliar (força de preensão ou teste do sentar e levantar), confirmar (quantidade ou qualidade muscular por DEXA, bioimpedância, TC, RM ou equação de Lee) e estabelecer a gravidade (desempenho físico). Rastreio negativo encerra a investigação e o paciente é reavaliado na consulta seguinte.",
+      "image": "pg13",
+      "imageCaption": "Algoritmo: encontrar, avaliar, confirmar e graduar"
+    },
+    {
+      "question": "Em que momento do algoritmo diagnóstico já se firma a sarcopenia provável, suficiente para iniciar a intervenção?",
+      "options": [
+        "Quando a força muscular está baixa, antes mesmo de medir a massa muscular",
+        "Quando a massa muscular está baixa, antes mesmo de medir a força muscular",
+        "Quando o desempenho físico está baixo, antes mesmo de medir a força muscular",
+        "Quando o rastreio inicial é positivo, antes mesmo de medir a força muscular"
+      ],
+      "correctIndex": 0,
+      "explanation": "Rastreio positivo somado a força muscular baixa já caracteriza sarcopenia provável, e na prática clínica isso basta para investigar as causas e iniciar o tratamento. A medida de massa muscular confirma o diagnóstico, mas esperar por ela só atrasa o exercício e o aporte proteico."
+    },
+    {
+      "question": "Diante de força muscular baixa, outras causas devem ser consideradas antes de atribuí-la à sarcopenia. Quais são elas?",
+      "options": [
+        "Depressão, acidente vascular cerebral e doença vascular periférica",
+        "Depressão, hipotireoidismo subclínico e doença do refluxo esofágico",
+        "Ansiedade, acidente vascular cerebral e doença pulmonar intersticial",
+        "Delirium, doença de Parkinson inicial e insuficiência venosa crônica"
+      ],
+      "correctIndex": 0,
+      "explanation": "Depressão, AVC e doença vascular periférica reduzem a força de preensão ou o desempenho no teste da cadeira sem que haja perda real de massa muscular. Reconhecê-las evita rotular como sarcopenia um quadro cujo tratamento é inteiramente outro."
+    },
+    {
+      "question": "Na dinamometria de preensão palmar, a fraqueza muscular é definida por quais valores em homens e em mulheres?",
+      "options": [
+        "Menos de 27 kg em homens e menos de 16 kg em mulheres",
+        "Menos de 16 kg em homens e menos de 27 kg em mulheres",
+        "Menos de 30 kg em homens e menos de 20 kg em mulheres",
+        "Menos de 20 kg em homens e menos de 15 kg em mulheres"
+      ],
+      "correctIndex": 0,
+      "explanation": "Os cortes são força de preensão abaixo de 27 kg em homens e abaixo de 16 kg em mulheres. O teste é feito com o paciente sentado, costas apoiadas, cotovelo fletido a 90 graus e punho neutro, na mão dominante, considerando o maior valor entre três medidas.",
+      "image": "pg18",
+      "imageCaption": "Cortes de força de preensão palmar por sexo"
+    },
+    {
+      "question": "O teste de sentar e levantar da cadeira cinco vezes é a alternativa para avaliar a força. Que tempo indica força baixa?",
+      "options": [
+        "Acima de 15 segundos, com os braços cruzados sobre o tronco",
+        "Acima de 30 segundos, com os braços cruzados sobre o tronco",
+        "Acima de 8 segundos, com os braços apoiados sobre o assento",
+        "Acima de 20 segundos, com os braços apoiados sobre as coxas"
+      ],
+      "correctIndex": 0,
+      "explanation": "Cinco movimentos completos em mais de 15 segundos caracterizam força baixa. O paciente fica sentado, com as costas apoiadas e os braços cruzados sobre o tronco, executa o mais rápido possível e vale uma única tentativa, sem repetir para melhorar o tempo."
+    },
+    {
+      "question": "Por densitometria ou bioimpedância, quais valores de índice de massa muscular esquelética apendicular indicam massa baixa?",
+      "options": [
+        "Menos de 7 kg/m² em homens e menos de 5,5 kg/m² em mulheres",
+        "Menos de 5,5 kg/m² em homens e menos de 7 kg/m² em mulheres",
+        "Menos de 8,9 kg/m² em homens e menos de 6,4 kg/m² em mulheres",
+        "Menos de 10 kg/m² em homens e menos de 8,5 kg/m² em mulheres"
+      ],
+      "correctIndex": 0,
+      "explanation": "O índice de massa muscular esquelética apendicular é a massa apendicular dividida pela altura ao quadrado: abaixo de 7 kg/m² em homens e de 5,5 kg/m² em mulheres por densitometria ou bioimpedância. Em valores absolutos, a massa apendicular é considerada baixa abaixo de 20 kg em homens e de 15 kg em mulheres.",
+      "image": "pg20",
+      "imageCaption": "Cortes de massa e índice de massa muscular apendicular"
+    },
+    {
+      "question": "A equação de Lee, usada para estimar a massa muscular esquelética apendicular, tem qual restrição de uso?",
+      "options": [
+        "Só deve ser aplicada em pacientes com IMC abaixo de 30 kg/m²",
+        "Só deve ser aplicada em pacientes com IMC acima de 30 kg/m²",
+        "Só deve ser aplicada em pacientes com mais de 80 anos de idade",
+        "Só deve ser aplicada quando a densitometria já tiver sido feita"
+      ],
+      "correctIndex": 0,
+      "explanation": "A equação de Lee estima o índice de massa muscular apendicular a partir de peso, estatura, sexo, idade e raça, e só é válida para IMC abaixo de 30 kg/m². Por ela, os cortes mudam: abaixo de 8,9 kg/m² em homens e de 6,4 kg/m² em mulheres."
+    },
+    {
+      "question": "A lentidão da marcha, usada para estabelecer a gravidade da sarcopenia, é definida por qual velocidade?",
+      "options": [
+        "Igual ou menor que 0,8 m/s em percurso de 4 metros",
+        "Igual ou menor que 1,2 m/s em percurso de 4 metros",
+        "Igual ou menor que 0,4 m/s em percurso de 10 metros",
+        "Igual ou menor que 1,6 m/s em percurso de 6 metros"
+      ],
+      "correctIndex": 0,
+      "explanation": "Velocidade de marcha igual ou menor que 0,8 m/s, medida em um percurso de 4 metros, caracteriza lentidão. Em um paciente com sarcopenia já confirmada, esse achado define a sarcopenia grave.",
+      "image": "pg21",
+      "imageCaption": "Corte de velocidade de marcha em 4 metros"
+    },
+    {
+      "question": "Além da velocidade de marcha, quais pontos de corte de desempenho físico caracterizam a sarcopenia grave?",
+      "options": [
+        "SPPB abaixo de 10 pontos ou TUG de 20 segundos ou mais",
+        "SPPB abaixo de 4 pontos ou TUG de 10 segundos ou mais",
+        "SPPB abaixo de 12 pontos ou TUG de 30 segundos ou mais",
+        "SPPB abaixo de 8 pontos ou TUG de 14 segundos ou mais"
+      ],
+      "correctIndex": 0,
+      "explanation": "A Short Physical Performance Battery abaixo de 10 pontos e o Timed Up and Go igual ou maior que 20 segundos indicam desempenho físico baixo. O teste de caminhada de 400 metros também serve, com corte de 6 minutos ou mais para completar o percurso."
+    },
+    {
+      "question": "A atualização de 2025 do consenso asiático sobre sarcopenia trouxe qual mudança na faixa etária e no algoritmo?",
+      "options": [
+        "Ampliou a triagem de 64 para 50 anos e manteve só massa e força baixas",
+        "Restringiu a triagem de 50 para 64 anos e manteve só massa e força baixas",
+        "Ampliou a triagem de 64 para 50 anos e exigiu os três critérios reunidos",
+        "Manteve a triagem em 64 anos e tornou obrigatório o desempenho físico"
+      ],
+      "correctIndex": 0,
+      "explanation": "A faixa etária diagnóstica foi ampliada de 64 para 50 anos e o algoritmo foi simplificado: bastam massa muscular e força baixas, com o desempenho físico passando a medida de desfecho. O consenso também desloca o foco da sarcopenia para a saúde muscular, enfatizando a interação do músculo com cérebro, osso, tecido adiposo e sistema imune."
+    },
+    {
+      "question": "Quais são as intervenções de primeira linha na sarcopenia e na fragilidade do idoso?",
+      "options": [
+        "Atividade física, aporte proteico adequado e desprescrição de medicamentos",
+        "Testosterona em baixa dose, dieta hipocalórica e repouso relativo no leito",
+        "Hormônio de crescimento, dieta hiperlipídica e fisioterapia respiratória",
+        "Suplemento de cálcio isolado, dieta hipoproteica e exercício só aeróbio"
+      ],
+      "correctIndex": 0,
+      "explanation": "O tripé de primeira linha é atividade física, ingestão proteica adequada e desprescrição de medicamentos inapropriados, conduzido por fisioterapeuta, nutricionista e médico em conjunto. Nenhum fármaco ocupa esse lugar, e o repouso piora exatamente o que se quer tratar."
+    },
+    {
+      "question": "No treinamento resistido do idoso sarcopênico, qual é a prescrição de alta intensidade recomendada?",
+      "options": [
+        "80% de uma repetição máxima, 3 séries de 8 a 10 repetições",
+        "30% de uma repetição máxima, 3 séries de 8 a 10 repetições",
+        "80% de uma repetição máxima, 1 série de 20 a 30 repetições",
+        "50% de uma repetição máxima, 5 séries de 15 a 20 repetições"
+      ],
+      "correctIndex": 0,
+      "explanation": "A carga é definida pelo teste de uma repetição máxima, e os treinos de alta intensidade usam 80% desse valor, com dois exercícios para cada grande grupo muscular, três séries de 8 a 10 repetições por série. Intensidade baixa não produz o estímulo anabólico necessário para reverter a perda de massa."
+    },
+    {
+      "question": "Com que frequência mínima e em que ritmo de progressão de carga deve ocorrer o treinamento resistido?",
+      "options": [
+        "Duas a três vezes por semana, aumentando a carga a cada duas semanas",
+        "Uma vez por semana, aumentando a carga a cada seis meses de treino",
+        "Todos os dias da semana, aumentando a carga a cada dois dias de treino",
+        "Duas vezes por mês, aumentando a carga a cada três meses de treino"
+      ],
+      "correctIndex": 0,
+      "explanation": "O treinamento deve ocorrer no mínimo duas a três vezes por semana, com tentativa de aumento de carga a cada duas semanas. Sem progressão, o estímulo se torna insuficiente e o ganho de força estaciona rapidamente."
+    },
+    {
+      "question": "O programa Vivifrail organiza a prescrição de exercício para o idoso frágil em quais passos?",
+      "options": [
+        "Avaliar, classificar por nível funcional e prescrever plano compatível",
+        "Prescrever plano único, avaliar a adesão e repetir o mesmo circuito",
+        "Classificar por idade, prescrever plano aeróbio e reavaliar em um ano",
+        "Internar para condicionamento, avaliar a força e liberar para a casa"
+      ],
+      "correctIndex": 0,
+      "explanation": "O Vivifrail é um programa de exercício multicomponente para idosos frágeis ou em risco, que avalia, classifica o idoso por nível funcional e prescreve um circuito compatível com aquela capacidade. Os circuitos vão do A, para os mais limitados, ao D, e trabalham força, equilíbrio, marcha e redução de quedas."
+    },
+    {
+      "question": "Qual é a ingestão proteica diária recomendada para o idoso saudável e para o idoso com doença aguda ou crônica?",
+      "options": [
+        "1,0 a 1,2 g/kg/dia no saudável e 1,2 a 1,5 g/kg/dia no doente",
+        "0,8 a 1,0 g/kg/dia no saudável e 1,0 a 1,2 g/kg/dia no doente",
+        "1,2 a 1,5 g/kg/dia no saudável e 2,0 a 2,5 g/kg/dia no doente",
+        "0,6 a 0,8 g/kg/dia no saudável e 0,8 a 1,0 g/kg/dia no doente"
+      ],
+      "correctIndex": 0,
+      "explanation": "As recomendações do grupo PROT-AGE são de 1,0 a 1,2 g/kg/dia para o idoso saudável, de 1,2 g/kg/dia ou mais para quem é ativo ou pratica exercício e de 1,2 a 1,5 g/kg/dia nas doenças agudas ou crônicas. A ressalva é a nefropatia grave, para a qual esses valores não se aplicam."
+    },
+    {
+      "question": "Como deve ser distribuída a proteína ao longo do dia para otimizar a síntese muscular do idoso?",
+      "options": [
+        "25 a 30 gramas em cada uma das três refeições principais",
+        "10 a 15 gramas em cada uma das três refeições principais",
+        "Toda a cota proteica concentrada no jantar, em dose única",
+        "50 a 60 gramas no café da manhã e nada nas outras refeições"
+      ],
+      "correctIndex": 0,
+      "explanation": "A recomendação é de 25 a 30 gramas de proteína no café da manhã, no almoço e no jantar. A distribuição importa porque a síntese proteica do idoso responde menos a cada estímulo anabólico, e concentrar tudo em uma refeição desperdiça parte do aporte.",
+      "image": "pg36",
+      "imageCaption": "Distribuição de proteína e recomendação calórica"
+    },
+    {
+      "question": "Pelas diretrizes geriátricas da ESPEN, quando se deve iniciar um suplemento nutricional oral?",
+      "options": [
+        "Quando a ingestão alimentar for menor que 70% das necessidades diárias",
+        "Quando a ingestão alimentar for menor que 95% das necessidades diárias",
+        "Quando a ingestão alimentar for menor que 30% das necessidades diárias",
+        "Em todo idoso acima de 70 anos, qualquer que seja a ingestão habitual"
+      ],
+      "correctIndex": 0,
+      "explanation": "O suplemento nutricional oral é indicado quando a ingestão alimentar fica abaixo de 70% das necessidades diárias, de preferência com nutrientes específicos como ômega-3, antioxidantes, aminoácidos e seus metabólitos. Ele deve suplementar a dieta, não substituir refeições, e ser oferecido entre as refeições ou ao deitar."
+    },
+    {
+      "question": "O HMB, presente nos suplementos com alto teor proteico, é metabólito de qual aminoácido e com que efeito muscular?",
+      "options": [
+        "Da leucina, promovendo a síntese e reduzindo a degradação proteica",
+        "Da glutamina, promovendo a síntese e reduzindo a degradação proteica",
+        "Da arginina, promovendo a vasodilatação e reduzindo a inflamação",
+        "Da creatina, promovendo a hipertrofia e reduzindo a fadiga muscular"
+      ],
+      "correctIndex": 0,
+      "explanation": "O beta-hidroxi-beta-metilbutirato é o metabólito bioativo da leucina, encontrado naturalmente no organismo e em pequenas quantidades em alguns alimentos. Demonstrou-se que promove a síntese e reduz a degradação de proteínas musculares, razão pela qual compõe os suplementos indicados a idosos com sarcopenia, fragilidade ou desnutrição."
+    },
+    {
+      "question": "Qual é a posição atual sobre o tratamento medicamentoso de primeira linha da sarcopenia?",
+      "options": [
+        "As evidências são insuficientes para recomendar qualquer medicamento",
+        "A testosterona é o medicamento de escolha em homens e em mulheres",
+        "O hormônio do crescimento tem benefício comprovado e é recomendado",
+        "Os inibidores da miostatina já estão aprovados para o uso de rotina"
+      ],
+      "correctIndex": 0,
+      "explanation": "As evidências atuais são insuficientes para recomendar qualquer fármaco como tratamento de primeira linha; insulina, estrógeno, testosterona, DHEA, GH, IGF-1 e PTH têm resultados controversos. A reposição de vitamina D fica reservada a quem tem 25(OH)D abaixo de 20 ng/ml, conforme julgamento clínico, e inibidores da miostatina e SARMs permanecem como opções futuras."
+    }
+  ]
+}

@@ -1,0 +1,552 @@
+{
+  "titulo": "Síndromes Hipertensivas na Gestação",
+  "eyebrow": "Ginecologia e Obstetrícia · Gestação de Alto Risco",
+  "subtitulo": "A principal causa de morte materna no Brasil, com números fechados",
+  "intro": "Classificação das cinco formas clínicas, critérios de pré-eclâmpsia com e sem sinais de gravidade, síndrome HELLP, esquemas de sulfato de magnésio e seu antídoto, anti-hipertensivos da gestação e do puerpério, momento e via de parto, e prevenção com AAS.",
+  "questoes": [
+    {
+      "question": "Quais valores pressóricos definem hipertensão arterial na gestação?",
+      "options": [
+        "PAS ≥ 140 mmHg e/ou PAD ≥ 90 mmHg",
+        "PAS ≥ 130 mmHg e/ou PAD ≥ 85 mmHg",
+        "PAS ≥ 150 mmHg e/ou PAD ≥ 95 mmHg",
+        "PAS ≥ 160 mmHg e/ou PAD ≥ 110 mmHg"
+      ],
+      "correctIndex": 0,
+      "explanation": "Hipertensão na gravidez é definida por pressão sistólica igual ou maior que 140 mmHg e/ou diastólica igual ou maior que 90 mmHg, confirmadas em duas aferições com intervalo de pelo menos 4 horas. Os valores de 160 x 110 mmHg não definem hipertensão, e sim crise hipertensiva, um patamar de gravidade dentro dessa mesma doença."
+    },
+    {
+      "question": "A partir de quais níveis pressóricos se caracteriza crise hipertensiva na gestação, mesmo em paciente assintomática?",
+      "options": [
+        "PA ≥ 160 x 110 mmHg",
+        "PA ≥ 140 x 90 mmHg",
+        "PA ≥ 150 x 100 mmHg",
+        "PA ≥ 180 x 120 mmHg"
+      ],
+      "correctIndex": 0,
+      "explanation": "Crise hipertensiva na gestação é definida por PA igual ou maior que 160 x 110 mmHg, independentemente de sintomas. A ausência de cefaleia, escotomas ou epigastralgia não autoriza observação: o risco de acidente vascular cerebral materno já está instalado nesse patamar."
+    },
+    {
+      "question": "Diante de uma crise hipertensiva na gestação, qual é a conduta medicamentosa imediata?",
+      "options": [
+        "Hidralazina EV ou nifedipino VO, associados a sulfato de magnésio",
+        "Captopril VO ou enalapril VO, associados a sulfato de magnésio",
+        "Metildopa VO ou anlodipino VO, associados a sulfato de magnésio",
+        "Furosemida EV ou atenolol VO, associados a sulfato de magnésio"
+      ],
+      "correctIndex": 0,
+      "explanation": "A crise hipertensiva é tratada com hidralazina endovenosa ou nifedipino oral, sempre acompanhados de sulfato de magnésio para prevenir eclâmpsia. Metildopa e anlodipino servem à manutenção ambulatorial, não à emergência, e inibidores da enzima conversora não são usados durante a gestação."
+    },
+    {
+      "question": "No esquema que separa as formas clínicas pelo marco das 20 semanas, quais entidades ficam do lado anterior a esse limite?",
+      "options": [
+        "Hipertensão arterial crônica e hipertensão do jaleco branco",
+        "Hipertensão gestacional e pré-eclâmpsia sem gravidade",
+        "Pré-eclâmpsia, eclâmpsia e síndrome HELLP associada",
+        "Hipertensão gestacional e pré-eclâmpsia sobreposta"
+      ],
+      "correctIndex": 0,
+      "explanation": "Antes das 20 semanas ficam a hipertensão arterial crônica e a hipertensão do jaleco branco. Depois das 20 semanas aparecem a hipertensão gestacional e a pré-eclâmpsia, esta com seus desdobramentos de gravidade, eclâmpsia e síndrome HELLP. A forma sobreposta atravessa todo o eixo, começando crônica e virando pré-eclâmpsia.",
+      "image": "pg08",
+      "imageCaption": "Formas clínicas separadas pelo marco das 20 semanas"
+    },
+    {
+      "question": "Gestante previamente normotensa apresenta PA 145 x 95 mmHg com 28 semanas, sem proteinúria e sem disfunção de órgão-alvo. Qual é o diagnóstico?",
+      "options": [
+        "Hipertensão gestacional",
+        "Pré-eclâmpsia precoce",
+        "Hipertensão crônica",
+        "Eclâmpsia iminente"
+      ],
+      "correctIndex": 0,
+      "explanation": "Hipertensão que surge depois da 20ª semana em gestante antes normotensa, sem proteinúria e sem lesão de órgão-alvo, é hipertensão gestacional. Faltam os critérios de pré-eclâmpsia, e o surgimento tardio afasta a hipertensão crônica, que por definição precede as 20 semanas."
+    },
+    {
+      "question": "Em quanto tempo após o parto a hipertensão gestacional deve desaparecer para que o diagnóstico se confirme?",
+      "options": [
+        "Até 12 semanas pós-parto",
+        "Até 42 dias pós-parto",
+        "Até 6 semanas pós-parto",
+        "Até 24 semanas pós-parto"
+      ],
+      "correctIndex": 0,
+      "explanation": "A hipertensão gestacional deve desaparecer até 12 semanas após o parto. Pressão que persiste além desse prazo revela hipertensão arterial crônica que apenas foi desmascarada pela gestação, e o diagnóstico precisa ser revisto retrospectivamente."
+    },
+    {
+      "question": "Qual proporção das gestantes com hipertensão gestacional acaba desenvolvendo sinais ou sintomas de pré-eclâmpsia?",
+      "options": [
+        "Cerca de 25% dos casos",
+        "Cerca de 5% dos casos",
+        "Cerca de 50% dos casos",
+        "Cerca de 75% dos casos"
+      ],
+      "correctIndex": 0,
+      "explanation": "Até 25% das gestantes com hipertensão gestacional passam a apresentar sinais ou sintomas de pré-eclâmpsia, mudando de diagnóstico. É por isso que o rótulo de hipertensão gestacional nunca é definitivo antes do parto e exige vigilância laboratorial seriada."
+    },
+    {
+      "question": "Que achado define a hipertensão do jaleco branco na gestante?",
+      "options": [
+        "PA elevada só nas consultas, normal nas medidas domiciliares",
+        "PA elevada só à noite, normal durante todo o período diurno",
+        "PA elevada só no terceiro trimestre, normal antes disso",
+        "PA elevada em casa, normal nas aferições do consultório"
+      ],
+      "correctIndex": 0,
+      "explanation": "A síndrome do jaleco branco é a elevação da pressão apenas nas consultas de pré-natal em consultório, sem confirmação nas avaliações domiciliares. O padrão inverso, pressão alta em casa e normal no consultório, descreve a hipertensão mascarada, que é outra entidade."
+    },
+    {
+      "question": "Gestante com hipertensão arterial crônica apresenta, com 32 semanas, necessidade de aumentar a dose do anti-hipertensivo e proteinúria quatro vezes maior que a do primeiro trimestre. Qual é o diagnóstico?",
+      "options": [
+        "Pré-eclâmpsia sobreposta à hipertensão crônica",
+        "Hipertensão gestacional de início tardio",
+        "Hipertensão crônica de difícil controle",
+        "Síndrome do jaleco branco descompensada"
+      ],
+      "correctIndex": 0,
+      "explanation": "A pré-eclâmpsia sobreposta se estabelece quando a hipertensa crônica, após 20 semanas, passa a exigir aumento das doses iniciais ou associação de anti-hipertensivos, quando a proteinúria aparece ou piora, ou quando surge disfunção de órgão-alvo. Os dois primeiros critérios estão presentes neste caso."
+    },
+    {
+      "question": "Na pré-eclâmpsia sobreposta, qual aumento da proteinúria já detectada na primeira metade da gestação fecha o diagnóstico?",
+      "options": [
+        "Aumento de pelo menos três vezes o valor inicial",
+        "Aumento de pelo menos duas vezes o valor inicial",
+        "Aumento de pelo menos cinco vezes o valor inicial",
+        "Aumento de pelo menos dez vezes o valor inicial"
+      ],
+      "correctIndex": 0,
+      "explanation": "O critério é o aumento de pelo menos três vezes o valor de proteinúria encontrado na primeira metade da gestação, ou o aparecimento de proteinúria quando ela antes não existia. Flutuações menores são esperadas na nefropatia crônica e não autorizam o diagnóstico."
+    },
+    {
+      "question": "Quais valores caracterizam proteinúria significativa no diagnóstico de pré-eclâmpsia?",
+      "options": [
+        "≥ 300 mg/24h ou relação proteína/creatinina ≥ 0,3",
+        "≥ 150 mg/24h ou relação proteína/creatinina ≥ 0,1",
+        "≥ 500 mg/24h ou relação proteína/creatinina ≥ 0,5",
+        "≥ 1.000 mg/24h ou relação proteína/creatinina ≥ 1,0"
+      ],
+      "correctIndex": 0,
+      "explanation": "Proteinúria significativa é definida por 300 mg ou mais em urina de 24 horas, ou relação proteína/creatinina em amostra isolada igual ou maior que 0,3 mg/mg. A relação em amostra isolada dispensa a coleta de 24 horas e é a ferramenta prática do pronto-socorro."
+    },
+    {
+      "question": "Que contagem de plaquetas caracteriza comprometimento hematológico na pré-eclâmpsia?",
+      "options": [
+        "Menos de 100.000/mm³",
+        "Menos de 150.000/mm³",
+        "Menos de 50.000/mm³",
+        "Menos de 20.000/mm³"
+      ],
+      "correctIndex": 0,
+      "explanation": "Plaquetas abaixo de 100.000/mm³ configuram comprometimento hematológico e, junto de hemólise ou coagulação intravascular disseminada, fecham o critério de disfunção de órgão-alvo. Contagens de 50.000 ou 20.000 já representam quadros muito mais graves, não o limiar diagnóstico."
+    },
+    {
+      "question": "A partir de que valor de TGO ou TGP se considera disfunção hepática na pré-eclâmpsia?",
+      "options": [
+        "Acima de 70 U/L ou duas vezes o basal",
+        "Acima de 40 U/L ou duas vezes o basal",
+        "Acima de 120 U/L ou duas vezes o basal",
+        "Acima de 200 U/L ou duas vezes o basal"
+      ],
+      "correctIndex": 0,
+      "explanation": "Transaminases acima de 70 U/L, ou iguais ou maiores que duas vezes o valor de referência do laboratório, definem comprometimento hepático. Esse mesmo corte de 70 U/L é o componente de enzimas hepáticas elevadas da síndrome HELLP."
+    },
+    {
+      "question": "Que valor de creatinina sérica caracteriza disfunção renal na pré-eclâmpsia?",
+      "options": [
+        "Acima de 1,1 mg/dL ou duas vezes o basal",
+        "Acima de 0,6 mg/dL ou duas vezes o basal",
+        "Acima de 2,5 mg/dL ou duas vezes o basal",
+        "Acima de 4,0 mg/dL ou duas vezes o basal"
+      ],
+      "correctIndex": 0,
+      "explanation": "Creatinina acima de 1,1 mg/dL, ou o dobro do valor basal da própria paciente, caracteriza perda de função renal. O critério relativo é indispensável porque a gestante normal tem creatinina baixa, de modo que uma subida de 0,5 para 1,0 mg/dL já é significativa mesmo sem ultrapassar 1,1."
+    },
+    {
+      "question": "Gestante de 30 semanas, antes normotensa, tem PA 150 x 95 mmHg, proteinúria negativa e exames laboratoriais normais, mas o feto apresenta restrição de crescimento assimétrica com Doppler alterado. Qual é o diagnóstico?",
+      "options": [
+        "Pré-eclâmpsia por disfunção uteroplacentária",
+        "Hipertensão gestacional sem critérios adicionais",
+        "Hipertensão crônica de diagnóstico tardio",
+        "Hipertensão do jaleco branco com feto pequeno"
+      ],
+      "correctIndex": 0,
+      "explanation": "Hipertensão após 20 semanas somada a disfunção uteroplacentária, expressa por restrição de crescimento assimétrica ou alteração dopplervelocimétrica, basta para o diagnóstico de pré-eclâmpsia mesmo sem proteinúria e sem alteração laboratorial materna. A placenta é o órgão-alvo neste caso.",
+      "image": "pg35",
+      "imageCaption": "Critérios diagnósticos atuais da pré-eclâmpsia"
+    },
+    {
+      "question": "Qual critério diagnóstico de pré-eclâmpsia NÃO é considerado também critério de gravidade?",
+      "options": [
+        "A proteinúria, seja qual for seu valor",
+        "A plaquetopenia abaixo de 100.000/mm³",
+        "A creatinina sérica acima de 1,1 mg/dL",
+        "O edema agudo de pulmão materno"
+      ],
+      "correctIndex": 0,
+      "explanation": "Os critérios de gravidade são exatamente os mesmos critérios diagnósticos de disfunção de órgão-alvo, com uma única exceção: a proteinúria. Por mais alta que esteja, a proteinúria isolada não classifica a pré-eclâmpsia como grave nem antecipa o parto."
+    },
+    {
+      "question": "Além da disfunção de órgão-alvo, que achado pressórico define pré-eclâmpsia com sinais de gravidade?",
+      "options": [
+        "PAS ≥ 160 e/ou PAD ≥ 110 mmHg em duas medidas",
+        "PAS ≥ 140 e/ou PAD ≥ 90 mmHg em duas medidas",
+        "PAS ≥ 150 e/ou PAD ≥ 100 mmHg em duas medidas",
+        "PAS ≥ 180 e/ou PAD ≥ 120 mmHg em duas medidas"
+      ],
+      "correctIndex": 0,
+      "explanation": "A crise hipertensiva, definida por sistólica igual ou maior que 160 e/ou diastólica igual ou maior que 110 mmHg em duas medidas, é critério de gravidade por si só. Valores de 140 x 90 mmHg apenas estabelecem o diagnóstico de hipertensão, sem agregar gravidade."
+    },
+    {
+      "question": "Que tríade de sintomas caracteriza iminência de eclâmpsia?",
+      "options": [
+        "Cefaleia, escotomas e epigastralgia",
+        "Cefaleia, tosse seca e lombalgia",
+        "Náusea, pirose e dor pélvica baixa",
+        "Tontura, zumbido e dor torácica"
+      ],
+      "correctIndex": 0,
+      "explanation": "Cefaleia tipicamente occipital, escotomas cintilantes e epigastralgia ou dor no hipocôndrio direito são os sinais premonitórios de eclâmpsia. Eles podem ocorrer com ou sem hipertensão grave e com ou sem proteinúria, e exigem sulfato de magnésio imediato."
+    },
+    {
+      "question": "Quais são os três componentes da síndrome HELLP?",
+      "options": [
+        "Hemólise, enzimas hepáticas elevadas e plaquetopenia",
+        "Hemoconcentração, hipoglicemia e plaquetopenia grave",
+        "Hemólise, hipertensão grave e proteinúria maciça",
+        "Hiperuricemia, enzimas elevadas e leucopenia grave"
+      ],
+      "correctIndex": 0,
+      "explanation": "A sigla reúne hemólise, elevação de enzimas hepáticas e plaquetopenia. Nenhum dos três é hipertensão ou proteinúria: a síndrome pode se instalar sem eles, e esperar por eles para pensar no diagnóstico é um erro clássico.",
+      "image": "pg50",
+      "imageCaption": "Os três componentes da síndrome HELLP"
+    },
+    {
+      "question": "Que conjunto de valores laboratoriais fecha o diagnóstico de síndrome HELLP?",
+      "options": [
+        "DHL > 600 U/L, TGO/TGP > 70 U/L e plaquetas < 100.000",
+        "DHL > 300 U/L, TGO/TGP > 40 U/L e plaquetas < 150.000",
+        "DHL > 900 U/L, TGO/TGP > 150 U/L e plaquetas < 50.000",
+        "DHL > 450 U/L, TGO/TGP > 100 U/L e plaquetas < 70.000"
+      ],
+      "correctIndex": 0,
+      "explanation": "Os cortes são desidrogenase lática acima de 600 U/L como marcador de hemólise, transaminases acima de 70 U/L e plaquetas abaixo de 100.000/mm³. Bilirrubina total acima de 1,2 mg/dL e esquizócitos em sangue periférico também atestam a hemólise microangiopática."
+    },
+    {
+      "question": "Qual achado NÃO serve como marcador de hemólise na síndrome HELLP?",
+      "options": [
+        "Haptoglobina acima de 100 mg/dL",
+        "Bilirrubina indireta ≥ 1,2 mg/dL",
+        "Esquizócitos em sangue periférico",
+        "Hemoglobina igual ou menor que 8 g/dL"
+      ],
+      "correctIndex": 0,
+      "explanation": "Na hemólise a haptoglobina é consumida e cai, de modo que o marcador é a concentração abaixo de 25 mg/dL, nunca um valor elevado. Bilirrubina indireta a partir de 1,2 mg/dL, esquizócitos ou equinócitos e anemia grave com hemoglobina até 8 g/dL são os demais marcadores aceitos."
+    },
+    {
+      "question": "Que contagem mínima de plaquetas se procura manter para cesárea e para parto normal na síndrome HELLP?",
+      "options": [
+        "70.000/mm³ para cesárea e 20.000/mm³ para parto normal",
+        "50.000/mm³ para cesárea e 10.000/mm³ para parto normal",
+        "100.000/mm³ para cesárea e 50.000/mm³ para parto normal",
+        "20.000/mm³ para cesárea e 70.000/mm³ para parto normal"
+      ],
+      "correctIndex": 0,
+      "explanation": "Recomenda-se manter plaquetas acima de 70.000/mm³ para cesárea e acima de 20.000/mm³ para parto normal. A cesárea exige mais porque abre planos cirúrgicos sujeitos a hematoma; abaixo de 100.000 o parto já deve ser programado em local com reserva de hemoderivados."
+    },
+    {
+      "question": "Em quais pacientes com síndrome HELLP o sulfato de magnésio está indicado?",
+      "options": [
+        "Em todas, mesmo sem iminência de eclâmpsia",
+        "Apenas nas que já convulsionaram ao menos uma vez",
+        "Apenas nas que têm cefaleia ou escotomas visuais",
+        "Apenas nas que têm plaquetas abaixo de 50.000"
+      ],
+      "correctIndex": 0,
+      "explanation": "O sulfato de magnésio é administrado a todas as pacientes com síndrome HELLP, independentemente de haver clínica de iminência de eclâmpsia. A síndrome por si só já define risco convulsivo suficiente para a profilaxia."
+    },
+    {
+      "question": "Qual é a relação entre corticoterapia antenatal e o momento do parto na síndrome HELLP?",
+      "options": [
+        "O parto nunca é adiado por causa da corticoterapia",
+        "O parto é sempre adiado 48 horas pela corticoterapia",
+        "A corticoterapia substitui a indicação de parto imediato",
+        "A corticoterapia só é feita depois de realizado o parto"
+      ],
+      "correctIndex": 0,
+      "explanation": "Diante de situação materna grave o parto jamais é postergado para completar corticoide. Excepcionalmente, em paciente estável entre 23 e 34 semanas, admite-se retardar o parto por 48 horas para a corticoterapia antenatal, mas a estabilidade materna é a condição absoluta."
+    },
+    {
+      "question": "Na síndrome HELLP com plaquetas abaixo de 70.000/mm³, que tipo de anestesia é recomendado para a cesárea?",
+      "options": [
+        "Anestesia geral, pelo risco de hematoma",
+        "Raquianestesia, por ser mais rápida",
+        "Peridural contínua, por ser mais segura",
+        "Bloqueio local, por evitar a hipotensão"
+      ],
+      "correctIndex": 0,
+      "explanation": "Com plaquetas abaixo de 70.000/mm³ indica-se anestesia geral, porque o bloqueio de neuroeixo expõe ao hematoma peridural. Completam os cuidados avaliar coagulograma, repor plaquetas no ato cirúrgico, fazer hemostasia cuidadosa e deixar dreno sentinela."
+    },
+    {
+      "question": "Qual é o esquema de Zuspan para o sulfato de magnésio?",
+      "options": [
+        "Ataque de 4 g EV e manutenção de 1 a 2 g/h EV em bomba",
+        "Ataque de 6 g EV e manutenção de 2 a 3 g/h EV em bomba",
+        "Ataque de 4 g EV e manutenção de 5 g IM a cada 4 horas",
+        "Ataque de 8 g EV e manutenção de 4 a 5 g/h EV em bomba"
+      ],
+      "correctIndex": 0,
+      "explanation": "Zuspan é o esquema exclusivamente endovenoso: ataque de 4 g em cerca de 20 minutos e manutenção de 1 a 2 g por hora em bomba de infusão contínua. Manutenção intramuscular de 5 g a cada 4 horas pertence ao esquema de Pritchard, e 6 g de ataque ao de Sibai.",
+      "image": "pg102",
+      "imageCaption": "Esquemas de sulfato de magnésio: Zuspan, Pritchard e Sibai"
+    },
+    {
+      "question": "Qual é o esquema de Pritchard para o sulfato de magnésio?",
+      "options": [
+        "Ataque de 4 g EV mais 10 g IM e manutenção de 5 g IM a cada 4 h",
+        "Ataque de 4 g EV mais 6 g IM e manutenção de 2 g IM a cada 6 horas",
+        "Ataque de 6 g EV mais 10 g IM e manutenção de 5 g EV a cada 4 horas",
+        "Ataque de 10 g IM apenas e manutenção de 4 g EV a cada 4 horas"
+      ],
+      "correctIndex": 0,
+      "explanation": "Pritchard combina as duas vias: ataque de 4 g endovenosos lentos somados a 10 g intramusculares profundos, seguidos de manutenção de 5 g intramusculares a cada 4 horas. É o esquema que dispensa bomba de infusão e por isso serve a serviços sem recursos."
+    },
+    {
+      "question": "Quais parâmetros devem ser monitorizados durante a infusão de sulfato de magnésio?",
+      "options": [
+        "Diurese, frequência respiratória e reflexos patelares",
+        "Glicemia, frequência cardíaca e reflexo cutâneo plantar",
+        "Diurese, temperatura axilar e reflexo fotomotor pupilar",
+        "Saturação, pressão venosa central e reflexo aquileu"
+      ],
+      "correctIndex": 0,
+      "explanation": "A vigilância se faz por diurese, frequência respiratória, reflexos patelares e pressão arterial a cada 4 horas, com uma ampola de gluconato de cálcio a 10% sempre ao lado do leito. Esses três parâmetros são justamente os que se alteram em sequência na intoxicação."
+    },
+    {
+      "question": "Qual é o primeiro sinal de intoxicação pelo sulfato de magnésio a aparecer?",
+      "options": [
+        "Abolição do reflexo patelar",
+        "Depressão respiratória grave",
+        "Parada cardíaca em assistolia",
+        "Rebaixamento de consciência"
+      ],
+      "correctIndex": 0,
+      "explanation": "A toxicidade segue uma ordem fixa de magnesemia: a faixa terapêutica vai de 4,8 a 8,4 mg/dL, de 9,6 a 12 mg/dL há abolição dos reflexos, a partir de 14,4 mg/dL surge depressão ou parada respiratória, e acima de 25 mg/dL ocorre parada cardíaca. O reflexo patelar é, portanto, o alarme mais precoce.",
+      "image": "pg63",
+      "imageCaption": "Faixa terapêutica, níveis de toxicidade e antídoto"
+    },
+    {
+      "question": "Abaixo de que frequência respiratória o sulfato de magnésio deve ser suspenso e o antídoto administrado?",
+      "options": [
+        "16 incursões por minuto",
+        "12 incursões por minuto",
+        "20 incursões por minuto",
+        "8 incursões por minuto"
+      ],
+      "correctIndex": 0,
+      "explanation": "Frequência respiratória abaixo de 16 incursões por minuto, assim como reflexos patelares diminuídos ou abolidos, indica suspender a infusão e aplicar o antídoto. Esperar chegar a 12 ou 8 incursões significa esperar a parada respiratória se instalar."
+    },
+    {
+      "question": "Qual débito urinário é considerado fator de risco para intoxicação pelo sulfato de magnésio?",
+      "options": [
+        "Diurese abaixo de 25 mL/h",
+        "Diurese abaixo de 50 mL/h",
+        "Diurese abaixo de 75 mL/h",
+        "Diurese abaixo de 100 mL/h"
+      ],
+      "correctIndex": 0,
+      "explanation": "O magnésio é eliminado por via renal, de modo que diurese abaixo de 25 mL por hora é o fator de risco clássico para acúmulo e intoxicação. Por isso o controle de diurese entra na rotina de monitorização junto com reflexos e frequência respiratória."
+    },
+    {
+      "question": "Qual é o antídoto do sulfato de magnésio e como ele é administrado?",
+      "options": [
+        "Gluconato de cálcio 10%, uma ampola de 10 mL, EV lento",
+        "Cloreto de potássio 10%, uma ampola de 10 mL, EV lento",
+        "Bicarbonato de sódio 8,4%, uma ampola de 10 mL, EV lento",
+        "Sulfato de protamina 1%, uma ampola de 10 mL, EV lento"
+      ],
+      "correctIndex": 0,
+      "explanation": "O antídoto é o gluconato de cálcio a 10%, uma ampola de 10 mL por via endovenosa lenta. O cálcio desloca o magnésio da junção neuromuscular e reverte a depressão respiratória, razão pela qual a ampola fica permanentemente ao lado do leito."
+    },
+    {
+      "question": "Que ajuste se faz no sulfato de magnésio quando a creatinina da paciente está em 1,4 mg/dL?",
+      "options": [
+        "Reduzir a dose de manutenção pela metade",
+        "Dobrar a dose de manutenção habitual",
+        "Suspender definitivamente a medicação",
+        "Manter a dose e repetir a de ataque"
+      ],
+      "correctIndex": 0,
+      "explanation": "Com creatinina igual ou maior que 1,2 mg/dL a dose de manutenção é reduzida à metade, porque a excreção renal do magnésio está comprometida e o risco de acúmulo aumenta. A dose de ataque não muda: o que se ajusta é a manutenção."
+    },
+    {
+      "question": "Qual é o esquema do nifedipino no tratamento da crise hipertensiva?",
+      "options": [
+        "10 mg VO, repetir a cada 20 a 30 min, máximo de 30 mg",
+        "20 mg VO, repetir a cada 10 a 15 min, máximo de 80 mg",
+        "5 mg VO, repetir a cada 60 minutos, máximo de 20 mg",
+        "30 mg VO, repetir a cada 20 a 30 min, máximo de 90 mg"
+      ],
+      "correctIndex": 0,
+      "explanation": "O nifedipino é usado em comprimidos de 10 mg por via oral, repetidos a cada 20 a 30 minutos se necessário, até a dose máxima de 30 mg. Doses maiores ou intervalos menores arriscam hipotensão materna abrupta com queda do fluxo uteroplacentário.",
+      "image": "pg39",
+      "imageCaption": "Agentes para a crise hipertensiva: dose inicial, repetição e máximo"
+    },
+    {
+      "question": "Qual é o esquema da hidralazina endovenosa na crise hipertensiva?",
+      "options": [
+        "5 mg IV, repetir a cada 20 min, máximo de 30 mg",
+        "10 mg IV, repetir a cada 10 min, máximo de 60 mg",
+        "20 mg IV, repetir a cada 30 min, máximo de 80 mg",
+        "2 mg IV, repetir a cada 60 min, máximo de 10 mg"
+      ],
+      "correctIndex": 0,
+      "explanation": "A hidralazina é administrada em bolus de 5 mg endovenosos, repetíveis a cada 20 minutos até o máximo de 30 mg. A ampola de 1 mL contém 20 mg/mL e deve ser diluída em 19 mL de água destilada para obter a concentração de 1 mg/mL."
+    },
+    {
+      "question": "Qual é a faixa de infusão do nitroprussiato de sódio na crise hipertensiva refratária?",
+      "options": [
+        "0,5 a 10 µg/kg/min",
+        "5 a 50 µg/kg/min",
+        "0,1 a 1 µg/kg/min",
+        "10 a 100 µg/kg/min"
+      ],
+      "correctIndex": 0,
+      "explanation": "O nitroprussiato de sódio é infundido continuamente de 0,5 a 10 microgramas por quilo por minuto. A ampola de 2 mL contém 50 mg e é diluída em 248 mL de soro glicosado a 5%, resultando na concentração de 200 microgramas por mililitro."
+    },
+    {
+      "question": "Qual anti-hipertensivo é considerado a droga de escolha para o tratamento inicial da gestante hipertensa?",
+      "options": [
+        "Metildopa, 750 a 2.000 mg por dia",
+        "Captopril, 75 a 150 mg por dia",
+        "Atenolol, 50 a 150 mg por dia",
+        "Losartana, 50 a 100 mg por dia"
+      ],
+      "correctIndex": 0,
+      "explanation": "A alfametildopa, inibidor adrenérgico de ação central, é a droga considerada de tratamento inicial na hipertensão crônica e na gestacional, em doses de 750 mg a 2 g por dia divididas em duas a quatro tomadas. Captopril e losartana atuam no eixo renina-angiotensina e não têm lugar durante a gestação."
+    },
+    {
+      "question": "Qual classe de anti-hipertensivos consta no esquema do puerpério, mas não no esquema de uso durante a gestação?",
+      "options": [
+        "Inibidores da enzima conversora de angiotensina",
+        "Bloqueadores dos canais de cálcio de uso oral",
+        "Simpatolíticos de ação central alfa-2 agonistas",
+        "Vasodilatadores periféricos de administração oral"
+      ],
+      "correctIndex": 0,
+      "explanation": "Enalapril e captopril aparecem apenas no esquema do puerpério, assim como o atenolol. Metildopa, nifedipino, anlodipino, hidralazina, metoprolol e carvedilol atravessam os dois momentos, de modo que o que muda ao sair da gestação é justamente a liberação do bloqueio do eixo renina-angiotensina.",
+      "image": "pg40",
+      "imageCaption": "Anti-hipertensivos recomendados no puerpério"
+    },
+    {
+      "question": "Qual é a prescrição de ácido acetilsalicílico para prevenção da pré-eclâmpsia?",
+      "options": [
+        "100 mg/dia à noite, das 12 às 36 semanas",
+        "100 mg/dia pela manhã, das 20 às 40 semanas",
+        "300 mg/dia à noite, das 12 às 28 semanas",
+        "50 mg/dia pela manhã, das 24 às 36 semanas"
+      ],
+      "correctIndex": 0,
+      "explanation": "A profilaxia é feita com 100 mg por dia de ácido acetilsalicílico, tomados à noite, iniciados a partir de 12 semanas e mantidos até 36 semanas. O horário noturno e o início precoce são o que dá eficácia à medida, porque a janela de remodelamento das artérias espiraladas é o segundo trimestre inicial."
+    },
+    {
+      "question": "Qual é a janela ideal para iniciar o ácido acetilsalicílico na prevenção da pré-eclâmpsia?",
+      "options": [
+        "Entre 12 e 16 semanas",
+        "Entre 20 e 24 semanas",
+        "Entre 28 e 32 semanas",
+        "Entre 4 e 8 semanas"
+      ],
+      "correctIndex": 0,
+      "explanation": "A janela ideal de início é entre 12 e 16 semanas, antes do fim da segunda onda de invasão trofoblástica. Começar depois de 20 semanas perde o efeito preventivo, porque o defeito de placentação já está consolidado."
+    },
+    {
+      "question": "Quantos fatores de alto risco bastam para classificar a gestante como de alto risco para pré-eclâmpsia?",
+      "options": [
+        "Um único fator já basta",
+        "São necessários dois deles",
+        "São necessários três deles",
+        "São necessários quatro deles"
+      ],
+      "correctIndex": 0,
+      "explanation": "Um único fator de alto risco basta: história prévia de pré-eclâmpsia, gestação múltipla, obesidade com índice de massa corporal acima de 30, hipertensão crônica, diabetes tipo 1 ou 2, doença renal crônica, doenças autoimunes ou gestação por reprodução assistida. Já os fatores moderados exigem dois ou mais para a mesma classificação.",
+      "image": "pg25",
+      "imageCaption": "Fatores de risco clínicos usados na predição da pré-eclâmpsia"
+    },
+    {
+      "question": "Até que idade gestacional se admite conduta expectante na pré-eclâmpsia sem sinais de deterioração clínica ou laboratorial?",
+      "options": [
+        "Até a 37ª semana",
+        "Até a 34ª semana",
+        "Até a 40ª semana",
+        "Até a 32ª semana"
+      ],
+      "correctIndex": 0,
+      "explanation": "A conduta expectante é admitida somente até a 37ª semana. A partir daí, e sempre que a pré-eclâmpsia for diagnosticada no termo, indica-se a resolução da gestação, o que reduz riscos maternos sem alterar os resultados perinatais."
+    },
+    {
+      "question": "Quais são as metas de idade gestacional para o parto nas formas leve, moderada e grave da hipertensão arterial crônica?",
+      "options": [
+        "40, 38 e 37 semanas, respectivamente",
+        "39, 37 e 34 semanas, respectivamente",
+        "41, 39 e 38 semanas, respectivamente",
+        "38, 36 e 34 semanas, respectivamente"
+      ],
+      "correctIndex": 0,
+      "explanation": "Na hipertensão crônica leve, com diastólica de 90 a menos de 100 mmHg, a meta é 40 semanas; na moderada, de 100 a menos de 110 mmHg, é 38 semanas; e na grave, com diastólica igual ou maior que 110 mmHg, é 37 semanas. A via de parto permanece obstétrica em todas."
+    },
+    {
+      "question": "Qual é a meta de idade gestacional para o parto na pré-eclâmpsia com critério de gravidade?",
+      "options": [
+        "Parto com 34 semanas",
+        "Parto com 37 semanas",
+        "Parto com 39 semanas",
+        "Parto com 28 semanas"
+      ],
+      "correctIndex": 0,
+      "explanation": "A pré-eclâmpsia com critério de gravidade antecipa a meta de parto para 34 semanas, contra as 37 semanas da forma sem gravidade e as 38 a 39 semanas da hipertensão gestacional. Deterioração clínica ou laboratorial grave indica o parto em qualquer idade gestacional."
+    },
+    {
+      "question": "Indicada a resolução da gravidez, que situação direciona o caso para parto cesáreo?",
+      "options": [
+        "Comprometimento da vitalidade fetal ou instabilidade materna",
+        "Vitalidade fetal preservada com colo uterino desfavorável",
+        "Estabilidade materna clínica com apresentação cefálica",
+        "Proteinúria acima de 300 mg em urina de 24 horas"
+      ],
+      "correctIndex": 0,
+      "explanation": "Cesárea se indica diante de comprometimento da vitalidade fetal, instabilidade materna clínica ou laboratorial, sangramento espontâneo ou hipertensão de difícil controle. Com vitalidade preservada e mãe estável, prefere-se o parto vaginal, preparando o colo desfavorável com sonda de Foley ou misoprostol."
+    },
+    {
+      "question": "Que situação indica parto imediato, independentemente da idade gestacional?",
+      "options": [
+        "Eclâmpsia ou descolamento prematuro de placenta",
+        "Proteinúria de 24 horas acima de 300 miligramas",
+        "Pressão de 150x95 mmHg em duas medidas seguidas",
+        "Plaquetas de 140.000 com transaminases normais"
+      ],
+      "correctIndex": 0,
+      "explanation": "Eclâmpsia, descolamento prematuro de placenta, síndrome HELLP, edema pulmonar, insuficiência renal, coagulopatia, disfunção hepática progressiva, hipertensão refratária e grave por mais de 24 horas e sofrimento fetal indicam parto imediato. Proteinúria isolada, qualquer que seja o valor, não indica."
+    },
+    {
+      "question": "Imediatamente após uma crise eclâmptica surge bradicardia fetal. Qual é a conduta?",
+      "options": [
+        "Estabilizar a mãe, pois a bradicardia costuma ceder",
+        "Indicar cesárea de emergência em menos de dez min",
+        "Realizar amnioinfusão para melhorar o fluxo fetal",
+        "Iniciar tocólise imediata com nifedipino por via oral"
+      ],
+      "correctIndex": 0,
+      "explanation": "A bradicardia fetal que surge logo após a eclâmpsia dura de 3 a 5 minutos e tende a melhorar com a estabilização materna, não indicando cesárea de emergência. A sequência é sulfato de magnésio, estabilização e só então resolução da gestação."
+    },
+    {
+      "question": "Que evento fisiopatológico central origina a pré-eclâmpsia?",
+      "options": [
+        "Invasão trofoblástica inadequada das artérias espiraladas",
+        "Hiperplasia trofoblástica com invasão miometrial profunda",
+        "Obstrução mecânica do espaço interviloso por coágulos",
+        "Ruptura precoce das vilosidades coriais mais terminais"
+      ],
+      "correctIndex": 0,
+      "explanation": "A falha da segunda onda de invasão trofoblástica deixa as artérias espiraladas sem a remodelação que deveria ocorrer até as 20 semanas. O resultado é resistência vascular aumentada, fluxo sanguíneo reduzido e perfusão placentária diminuída, com disfunção endotelial, resposta inflamatória intensa e estado anti-angiogênico."
+    }
+  ]
+}

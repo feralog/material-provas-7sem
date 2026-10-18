@@ -209,8 +209,12 @@ def extrair_pptx(path: Path, com_imagens: bool, largura: int):
         saida, figuras = [], []
         anda(slide.shapes, saida, figuras)
         notas = ""
-        if slide.has_notes_slide and slide.notes_slide.notes_text_frame.text.strip():
-            notas = slide.notes_slide.notes_text_frame.text.strip()
+        # .ppt convertido para .pptx costuma trazer slide de notas SEM frame de
+        # texto: notes_text_frame vem None e o acesso direto a .text quebra
+        if slide.has_notes_slide:
+            quadro = slide.notes_slide.notes_text_frame
+            if quadro is not None and quadro.text.strip():
+                notas = quadro.text.strip()
         digests = []
         for blob in figuras:
             h = hashlib.md5(blob).hexdigest()

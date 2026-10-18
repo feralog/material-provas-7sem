@@ -38,6 +38,51 @@ NOMES = {
 }
 
 
+# Conteudo cobrado na AVC 2. A chave e o nome do arquivo em Quizzes/ porque o
+# titulo muda; o valor e o tema como ele aparece na lista da prova, que nem
+# sempre bate com o titulo do material (ex.: "Transtorno do impulso" virou
+# "Impulsividade e Compulsividade"). MFC esta fora: nao ha material da materia.
+AVC2 = {
+    # Ginecologia e Obstetricia
+    "quiz_distopia_genital.html": "Distopia genital e POP-Q",
+    "quiz_incontinencia_urinaria.html": "Incontinência urinária",
+    "quiz_diabetes_mellitus_gestacional.html": "DMG",
+    "quiz_endometriose_e_algia_pelvica.html": "Endometriose",
+    "quiz_doenca_inflamatoria_pelvica.html": "DIP",
+    "quiz_sindromes_hipertensivas_na_gestacao.html": "Síndromes hipertensivas na gestação",
+    # Psiquiatria
+    "quiz_impulsividade_e_compulsividade.html": "Transtorno do impulso",
+    "quiz_transtorno_depressivo.html": "Transtorno depressivo",
+    "quiz_transtorno_afetivo_bipolar.html": "Transtorno bipolar",
+    # Geriatria
+    "quiz_delirium.html": "Delirium",
+    "quiz_demencia.html": "Demência",
+    "quiz_depressao_no_idoso.html": "Depressão",
+    "quiz_fragilidade_e_sarcopenia.html": "Fragilidade e sarcopenia",
+    "quiz_sindrome_do_imobilismo.html": "Síndrome do imobilismo",
+    # Neurologia
+    "quiz_alzheimer_e_demencias.html": "Demência e Doença de Alzheimer",
+    "quiz_neuropatias_perifericas.html": "Doenças do SNP",
+    "quiz_miastenia_gravis_e_guillain_barre.html": "Doenças do SNP",
+    # Otorrinolaringologia
+    "quiz_otites.html": "Otites",
+    "quiz_disacusias.html": "Disacusias parte 2",
+    "quiz_zumbido_e_tontura.html": "Zumbidos e tontura",
+    "quiz_rinites_e_rinossinusites.html": "Rinites",
+    # Oftalmologia
+    "quiz_diagnostico_diferencial_do_olho_vermelho.html": "Olho vermelho",
+    "quiz_catarata.html": "Catarata",
+    "quiz_glaucoma.html": "Glaucoma",
+    "quiz_retinopatia_diabetica.html": "Retinopatia diabética",
+    "quiz_doencas_da_cornea.html": "Córnea",
+    # Pediatria
+    "quiz_saude_sexual_do_adolescente.html": "Saúde sexual do adolescente",
+    "quiz_imunidade_parte_2.html": "Doenças imunomediadas",
+    "quiz_imunodeficiencias.html": "Imunodeficiências",
+    "quiz_alergia_e_atopia.html": "Alergias",
+}
+
+
 def ler_meta(p: Path):
     src = p.read_text(encoding="utf-8")
     # so a cabeca do arquivo interessa para titulo/eyebrow
@@ -95,6 +140,16 @@ PAGINA = """<!DOCTYPE html>
   .card .tags{display:flex;gap:6px;flex-shrink:0;flex-wrap:wrap;justify-content:flex-end}
   .tag{font-family:'IBM Plex Mono',monospace;font-size:10.5px;color:#5b6478;background:#faf9f6;border:1px solid #e4e0d8;border-radius:99px;padding:4px 10px;white-space:nowrap}
   .empty{border:1px dashed #ddd8ce;border-radius:14px;padding:38px;text-align:center;color:#8a8578}
+  .avc2bar{display:flex;align-items:center;gap:13px;flex-wrap:wrap;margin:-16px 0 28px}
+  .avc2bar button{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.13em;text-transform:uppercase;font-weight:600;color:#2b57cc;background:#eef2fd;border:1px solid #c9d6f7;border-radius:99px;padding:9px 19px;cursor:pointer;transition:background .15s ease,border-color .15s ease,color .15s ease}
+  .avc2bar button:hover{border-color:#2b57cc}
+  body.avc2 .avc2bar button{background:#2b57cc;border-color:#2b57cc;color:#fff}
+  .avc2info{font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.05em;color:#8a8578}
+  .avc2falta{display:none;font-family:'IBM Plex Mono',monospace;font-size:11px;line-height:1.6;color:#8a5a1f;background:#fdf4e6;border:1px solid #f0dcbc;border-radius:11px;padding:11px 14px;margin:-14px 0 26px}
+  body.avc2 .avc2falta{display:block}
+  body.avc2 .card:not([data-avc2]){opacity:.28;filter:grayscale(1)}
+  body.avc2 .card:not([data-avc2]):hover{transform:none;border-color:#e4e0d8}
+  body.avc2 .card[data-avc2]{border-color:#2b57cc;box-shadow:0 0 0 2px rgba(43,87,204,.13),0 1px 2px rgba(18,26,43,.04)}
   .tutor{display:flex;gap:10px;align-items:flex-start;background:#eef2fd;border:1px solid #c9d6f7;border-radius:13px;padding:13px 15px;margin:-14px 0 30px}
   .tutor b{font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:#2b57cc;font-weight:600}
   .tutor p{margin:4px 0 0;font-size:13px;line-height:1.55;color:#39404f}
@@ -110,9 +165,27 @@ PAGINA = """<!DOCTYPE html>
   <p class="sub">__SUB__</p>
 __TUTOR__
   <div class="stats">__STATS__</div>
+__AVC2BAR__
 __CARDS__
   <div class="foot">Cada arquivo tem quiz e resumo, escolhidos na tela inicial. Gerado por _scripts/atualizar_indice.py</div>
 </div>
+<script>
+(function(){
+  var b = document.getElementById('btAvc2');
+  if (!b) return;
+  var discs = Array.prototype.slice.call(document.querySelectorAll('.disc'));
+  b.addEventListener('click', function(){
+    var on = !document.body.classList.contains('avc2');
+    document.body.classList.toggle('avc2', on);
+    // esconde a disciplina inteira quando nenhum material dela cai na prova
+    discs.forEach(function(d){
+      d.style.display = (on && !d.querySelector('.card[data-avc2]')) ? 'none' : '';
+    });
+    b.textContent = on ? 'Mostrar tudo' : 'AVC 2';
+    b.setAttribute('aria-pressed', on ? 'true' : 'false');
+  });
+})();
+</script>
 </body>
 </html>
 """
@@ -134,14 +207,15 @@ def main():
             linhas = []
             for m in itens:
                 n += 1
+                marca = ' data-avc2="1"' if m["arquivo"] in AVC2 else ""
                 linhas.append(
-                    '      <a class="card" href="Quizzes/{f}">'
+                    '      <a class="card"{a} href="Quizzes/{f}">'
                     '<span class="n">{i:02d}</span>'
                     '<span class="body"><span class="t">{t}</span><br><span class="e">{e}</span></span>'
                     '<span class="tags"><span class="tag">{q} questões</span>'
                     '<span class="tag">{s} seções</span>'
                     '<span class="tag">{g} imagens</span></span></a>'.format(
-                        f=H.escape(m["arquivo"]), i=n, t=H.escape(m["titulo"]),
+                        a=marca, f=H.escape(m["arquivo"]), i=n, t=H.escape(m["titulo"]),
                         e=H.escape(m["eyebrow"]), q=m["q"], s=m["sec"], g=m["img"]))
             tot_q = sum(x["q"] for x in itens)
             blocos.append(
@@ -156,7 +230,25 @@ def main():
                  cell(sum(m["q"] for m in metas), "Questões") +
                  cell(sum(m["img"] for m in metas), "Imagens"))
         sub = "Cada material abre com um seletor: fazer o quiz ou ler o resumo. Tudo offline, num arquivo só."
+
+        # botao AVC 2: destaca o que cai na prova e apaga o resto
+        existem = {m["arquivo"] for m in metas}
+        tem = [m for m in metas if m["arquivo"] in AVC2]
+        q_avc2 = sum(m["q"] for m in tem)
+        # conta TEMAS, nao arquivos: "Doencas do SNP" sao dois materiais
+        temas_ok = {AVC2[a] for a in AVC2 if a in existem}
+        faltam = sorted(set(AVC2.values()) - temas_ok)
+        aviso = ""
+        if faltam:
+            aviso = ('  <div class="avc2falta">Sem material ainda: '
+                     + H.escape(" · ".join(faltam)) + "</div>")
+        avc2bar = (
+            '  <div class="avc2bar">'
+            '<button id="btAvc2" type="button" aria-pressed="false">AVC 2</button>'
+            f'<span class="avc2info">{len(temas_ok)} de {len(set(AVC2.values()))} temas da prova '
+            f'· {len(tem)} materiais · {q_avc2} questões</span></div>\n' + aviso)
     else:
+        avc2bar = ""
         cards = ('  <div class="empty">Nenhum material ainda.<br>'
                  'Rode <code>_scripts/montar_quiz.py</code> para gerar o primeiro.</div>')
         stats = ""
@@ -170,7 +262,8 @@ def main():
 
     alvo.write_text(
         PAGINA.replace("__CARDS__", cards).replace("__SUB__", sub)
-              .replace("__STATS__", stats).replace("__TUTOR__", tutor),
+              .replace("__STATS__", stats).replace("__TUTOR__", tutor)
+              .replace("__AVC2BAR__", avc2bar),
         encoding="utf-8")
     print(f"OK  {len(metas)} material(is) -> {alvo}")
     for m in sorted(metas, key=lambda x: (x["disciplina"], x["titulo"])):

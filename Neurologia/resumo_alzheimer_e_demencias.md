@@ -148,6 +148,29 @@ Neuroimagem: atrofia frontal e temporal anterior na degeneração dos lobos fron
 
 Na **demência com inclusão dos corpos de Lewy** ocorrem **flutuações** dos déficits cognitivos — por vezes chegando a verdadeiros quadros de delirium —, **parkinsonismo** (síndromes rígido-acinéticas de distribuição **simétrica**) e **alucinações visuais**. Há sensibilidade exagerada aos efeitos extrapiramidais dos neurolépticos, que exigem muita cautela; em contrapartida, o acentuado déficit colinérgico faz com que respondam bem aos inibidores da acetilcolinesterase.
 
+#### Corpos de Lewy em detalhe
+
+Antes de tudo, o diagnóstico sindrômico: demência exige declínio adquirido em **dois ou mais domínios cognitivos**, com perda de autonomia. Um domínio isolado não fecha o quadro.
+
+Firmado isso, a classificação diagnóstica tem três degraus, e a distinção entre eles é cobrada com frequência: **possível** e **provável** são os únicos alcançáveis em vida, pela combinação de critérios clínicos; o diagnóstico **definitivo** só vem do **estudo do tecido cerebral**, que demonstra as inclusões de alfa-sinucleína. Nenhum exame de imagem ou de líquor fecha o caso.
+
+Quatro particularidades mudam a forma de examinar o paciente:
+
+- **A memória pode estar normal no início.** Esse é o ponto que mais derruba. Centrar a avaliação cognitiva na memória produz falso negativo; o domínio que denuncia o quadro cedo é o **visuoespacial**, que precisa ser testado de forma dirigida.
+- **A flutuação tem escala de dias a semanas** — o paciente tem dias francamente melhores e dias piores. Essa oscilação, relatada pelo acompanhante, é por si só sugestiva.
+- **A alucinação visual tem qualidade distinta.** No Alzheimer o paciente relata **vultos** mal definidos; aqui as imagens são **bem formadas e realistas**, descritas como pessoas efetivamente presentes no ambiente.
+- **O parkinsonismo é atípico** — parkinsonismo-plus —, com a **lentidão** dominando sobre o tremor de repouso, e com resposta apenas parcial à levodopa.
+
+O que organiza o diferencial, porém, é a **cronologia** entre o declínio cognitivo e o parkinsonismo:
+
+| Doença | O que vem primeiro | Intervalo até o segundo quadro |
+| --- | --- | --- |
+| **Alzheimer** | declínio cognitivo | poucos desenvolvem parkinsonismo, anos depois |
+| **Parkinson** | queixa motora | declínio cognitivo anos mais tarde, em cerca de 20% |
+| **Corpos de Lewy** | os dois praticamente juntos | dentro de aproximadamente um ano |
+
+> **A regra de um ano.** Demência e parkinsonismo que se instalam no mesmo intervalo de cerca de um ano apontam para corpos de Lewy. Se o motor precedeu a cognição por anos, o caso é doença de Parkinson com demência; se a cognição veio muito antes e o motor é discreto e tardio, pensa-se em Alzheimer.
+
 Cerca de **20%** dos pacientes com doença de **Parkinson** desenvolvem síndrome demencial, geralmente em fase avançada e de intensidade menor que nas demais degenerativas. Na **paralisia supranuclear progressiva** a demência é ainda mais frequente, com comprometimento intenso das funções executivas associado a alteração da **motricidade ocular extrínseca**. A doença de **Huntington** associa síndrome **coréica** a demência do tipo frontal, é autossômica dominante e incide na faixa pré-senil. As **ataxias espinocerebelares** somam síndrome piramidal e ataxia cerebelar, podendo cursar com demência.
 
 #### O diferencial em uma tabela

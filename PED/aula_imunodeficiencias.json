@@ -1,0 +1,346 @@
+{
+  "titulo": "Imunodeficiências",
+  "eyebrow": "Pediatria · Imunologia",
+  "subtitulo": "Do germe ao compartimento: reconhecer, investigar e tratar",
+  "intro": "Erros inatos da imunidade na criança: os sinais de alerta, a divisão por compartimento com o perfil de infecção de cada defeito, as entidades principais com o gene envolvido, a investigação em degraus, a triagem neonatal e o tratamento.",
+  "questoes": [
+    {
+      "question": "As imunodeficiências primárias, também chamadas erros inatos da imunidade, têm que frequência estimada entre nascidos vivos?",
+      "options": [
+        "Até 1 caso em cada 2.000 nascidos vivos",
+        "Até 1 caso em cada 200 nascidos vivos",
+        "Até 1 caso em cada 50.000 nascidos vivos",
+        "Até 1 caso em cada 500.000 nascidos vivos"
+      ],
+      "correctIndex": 0,
+      "explanation": "Os erros inatos da imunidade são distúrbios hereditários do sistema imunológico e acometem até 1 em cada 2.000 nascidos vivos. Não são raridade de serviço terciário: na prática de uma unidade de pediatria geral, o número torna obrigatório pensar no diagnóstico diante de infecção recorrente e grave."
+    },
+    {
+      "question": "Além das infecções graves e recorrentes, que outras consequências os erros inatos da imunidade produzem?",
+      "options": [
+        "Autoimunidade, inflamação aberrante e malignidade",
+        "Autoimunidade, hipertensão arterial e malignidade",
+        "Hipotireoidismo, inflamação aberrante e anemia",
+        "Autoimunidade, inflamação aberrante e surdez"
+      ],
+      "correctIndex": 0,
+      "explanation": "Os distúrbios hereditários do sistema imune predispõem a uma alta taxa de infecções graves, mas também a desregulação imune com doença autoimune, a respostas inflamatórias aberrantes e a malignidade. Quem procura só infecção perde metade dos casos: citopenia autoimune ou linfoproliferação crônica podem ser a primeira manifestação."
+    },
+    {
+      "question": "Os genes RAG permitem que linfócitos T e B montem receptores únicos. Que processo molecular eles viabilizam?",
+      "options": [
+        "A recombinação V(D)J dos segmentos do receptor",
+        "A hipermutação somática das regiões variáveis",
+        "A troca de classe da imunoglobulina secretada",
+        "A apresentação do antígeno pelo MHC de classe II"
+      ],
+      "correctIndex": 0,
+      "explanation": "RAG é a sigla de Recombination Activating Genes. Eles viabilizam a recombinação V(D)J, em que os segmentos variável, de diversidade e de junção se recombinam para gerar um receptor único em cada clone. Sem essa recombinação, o TCR do linfócito T e o BCR do linfócito B não funcionam adequadamente."
+    },
+    {
+      "question": "No esquema de tolerância imunológica, o defeito dos genes RAG aparece na origem de um grupo de doenças. Quais são elas?",
+      "options": [
+        "Síndrome de Omenn, SCID e imunodeficiência combinada",
+        "Síndrome de DiGeorge, APECED e síndrome IPEX",
+        "Síndrome de DiGeorge, ALPS e doença granulomatosa",
+        "Síndrome IPEX, ALPS e deficiência seletiva de IgA"
+      ],
+      "correctIndex": 0,
+      "explanation": "O defeito de RAG impede a montagem do repertório de receptores e está na origem da síndrome de Omenn, da imunodeficiência combinada grave (SCID) e da imunodeficiência combinada (CID). No mesmo esquema, DiGeorge e APECED aparecem como falhas de tolerância central por outros mecanismos, e IPEX como falha de tolerância periférica.",
+      "image": "s03i1",
+      "imageCaption": "Tolerância central e periférica: onde cada defeito atua"
+    },
+    {
+      "question": "A proteína AIRE, expressa no timo, comanda a seleção negativa dos linfócitos T autorreativos. Que doença resulta da sua alteração?",
+      "options": [
+        "APECED, por falha da tolerância central",
+        "IPEX, por falha da tolerância periférica",
+        "SCID, por falha da recombinação V(D)J",
+        "ALPS, por falha da apoptose linfocitária"
+      ],
+      "correctIndex": 0,
+      "explanation": "O AIRE media a seleção negativa dentro do timo e a conversão de clones em linfócitos T reguladores; sua alteração causa a APECED, doença de tolerância central. A perda de função de FOXP3 causa a síndrome IPEX, que é falha periférica, o defeito de RAG causa SCID e Omenn, e o defeito de FAS causa ALPS."
+    },
+    {
+      "question": "A síndrome de DiGeorge é classificada entre as imunodeficiências combinadas por qual motivo?",
+      "options": [
+        "O timo não se forma, e os linfócitos T não maturam",
+        "Os genes RAG faltam, e os receptores não se formam",
+        "A proteína FAS falta, e os linfócitos não morrem",
+        "As células B somem, e as imunoglobulinas não sobem"
+      ],
+      "correctIndex": 0,
+      "explanation": "Na síndrome de DiGeorge o timo não se forma, e sem o órgão onde o linfócito T amadurece e é selecionado falta o braço celular da imunidade; a repercussão sobre a produção de anticorpos, que depende da ajuda de células T, faz o defeito ser combinado. Por isso ela entra no mesmo grupo da imunodeficiência combinada grave."
+    },
+    {
+      "question": "O FOXP3 comanda o desenvolvimento das células T reguladoras. O que o excesso de atividade dessas células pode provocar?",
+      "options": [
+        "Supressão exagerada da resposta, com risco de câncer",
+        "Supressão exagerada da resposta, com doenças autoimunes",
+        "Supressão exagerada da resposta, com febres periódicas",
+        "Supressão exagerada da resposta, com infecções por fungos"
+      ],
+      "correctIndex": 0,
+      "explanation": "O eixo FOXP3 e célula T reguladora tem duas pontas. Quando falta FOXP3, perde-se o freio e surgem doenças autoimunes graves, como na síndrome IPEX. Quando as Tregs aumentam muito, a supressão exagerada derruba a vigilância contra células alteradas e abre espaço para o câncer."
+    },
+    {
+      "question": "A síndrome linfoproliferativa autoimune (ALPS) decorre de defeito em qual mecanismo?",
+      "options": [
+        "Apoptose dos linfócitos ativados, por alteração de FAS",
+        "Recombinação dos receptores, por alteração de RAG",
+        "Seleção negativa no timo, por alteração de AIRE",
+        "Função das células reguladoras, por alteração de FOXP3"
+      ],
+      "correctIndex": 0,
+      "explanation": "Na ALPS os linfócitos não morrem adequadamente depois de ativados, porque a via da apoptose está comprometida; as variantes mais clássicas envolvem o gene FAS, embora outros genes da mesma via também possam estar implicados. Ela pertence ao grupo dos distúrbios primários de regulação imunológica, ao lado da IPEX."
+    },
+    {
+      "question": "Em que se traduz clinicamente o defeito de apoptose linfocitária da síndrome linfoproliferativa autoimune?",
+      "options": [
+        "Linfoproliferação crônica não maligna e citopenias autoimunes",
+        "Linfopenia profunda e ausência total de imunidade celular",
+        "Neutropenia persistente e abscessos profundos de repetição",
+        "Hipogamaglobulinemia grave e infecções por encapsuladas"
+      ],
+      "correctIndex": 0,
+      "explanation": "Como os linfócitos ativados não são eliminados, eles se acumulam: o resultado é linfoproliferação crônica não maligna, com adenomegalia e esplenomegalia, somada a autoimunidade dirigida sobretudo contra as células do sangue. A criança chega com linfonodos aumentados e citopenia, não com o perfil infeccioso clássico."
+    },
+    {
+      "question": "A sigla IPEX reúne quais elementos do quadro clínico dessa síndrome?",
+      "options": [
+        "Desregulação imune, poliendocrinopatia e enteropatia, ligada ao X",
+        "Imunodeficiência, pancitopenia e esplenomegalia, ligada ao X",
+        "Inflamação, polisserosite e eritema nodoso, ligada ao X",
+        "Imunodeficiência, polineuropatia e exantema, ligada ao X"
+      ],
+      "correctIndex": 0,
+      "explanation": "IPEX significa immune dysregulation, polyendocrinopathy, enteropathy, X-linked: desregulação imune, poliendocrinopatia, enteropatia e herança ligada ao X. A própria sigla já entrega o quadro, que vem da perda de função do FOXP3 e da consequente falha das células T reguladoras."
+    },
+    {
+      "question": "A imunodeficiência comum variável, a deficiência de subclasse de IgG e a deficiência específica de anticorpos compõem qual grupo?",
+      "options": [
+        "Deficiências predominantemente de anticorpos",
+        "Imunodeficiências combinadas graves e leves",
+        "Distúrbios primários de regulação imunológica",
+        "Deficiências do sistema do complemento terminal"
+      ],
+      "correctIndex": 0,
+      "explanation": "As três entram nas deficiências predominantemente de anticorpos, ou humorais, o grupo mais comum entre as imunodeficiências primárias. O exame que abre a investigação desse grupo é a dosagem de imunoglobulinas, buscando valores anormais."
+    },
+    {
+      "question": "Na classificação das doenças imunomediadas, qual é o exemplo citado para a categoria mista, em que o defeito genético afeta as duas vias?",
+      "options": [
+        "Doença granulomatosa crônica, defeito de fagócitos",
+        "Síndromes de febre periódica, defeito inato puro",
+        "Síndrome de Omenn, defeito de seleção de linfócitos",
+        "Deficiência seletiva de IgA, defeito de mucosa"
+      ],
+      "correctIndex": 0,
+      "explanation": "A categoria mista corresponde ao defeito genético complexo que afeta as duas vias, inata e adaptativa, e tem a doença granulomatosa crônica como exemplo. A falha nos freios da imunidade inata caracteriza as autoinflamatórias, com as febres periódicas, e a falha na seleção e no treino de células T e B caracteriza o eixo autoimune, com a síndrome de Omenn.",
+      "image": "s05i1",
+      "imageCaption": "Categorias de doença imunomediada, papel da imunodeficiência e exemplo"
+    },
+    {
+      "question": "Um lactente de 4 meses tem diarreia crônica, déficit de crescimento, candidíase oral persistente e pneumonia por Pneumocystis. Qual é a hipótese principal?",
+      "options": [
+        "Imunodeficiência combinada grave, que é urgência médica",
+        "Deficiência seletiva de IgA, que é de curso benigno",
+        "Deficiência de complemento terminal, de curso arrastado",
+        "Deficiência de subclasse de IgG, de curso leve e tardio"
+      ],
+      "correctIndex": 0,
+      "explanation": "A apresentação inicial da imunodeficiência combinada grave é justamente diarreia crônica e déficit de desenvolvimento no primeiro semestre, somadas à suscetibilidade extrema a toda a gama de patógenos, oportunistas incluídos. Candidíase persistente e pneumonia por Pneumocystis traduzem ausência de imunidade celular e tornam o caso urgente."
+    },
+    {
+      "question": "Na imunodeficiência combinada grave, como pode se comportar a contagem de linfócitos no hemograma?",
+      "options": [
+        "Pode vir baixa ou alta, conforme o defeito molecular",
+        "Vem sempre baixa, qualquer que seja o defeito molecular",
+        "Vem sempre alta, qualquer que seja o defeito molecular",
+        "Vem sempre normal, qualquer que seja o defeito molecular"
+      ],
+      "correctIndex": 0,
+      "explanation": "As alterações laboratoriais dependem do defeito molecular específico: além da pan-hipogamaglobulinemia, encontra-se linfopenia em alguns casos e linfocitose em outros, como quando há expansão de clones não funcionantes. Contagem normal ou elevada não afasta o diagnóstico, e por isso é preciso testar a função, não só contar células."
+    },
+    {
+      "question": "Que exame demonstra a ausência de função imune celular na suspeita de imunodeficiência combinada?",
+      "options": [
+        "Teste de estimulação de linfócitos in vitro",
+        "Dosagem das proteínas do complemento sérico",
+        "Pesquisa de autoanticorpos antinucleares séricos",
+        "Contagem de neutrófilos no hemograma seriado"
+      ],
+      "correctIndex": 0,
+      "explanation": "A ausência de função imune celular é demonstrada por testes de estimulação de linfócitos in vitro, que medem se a célula responde ao estímulo em vez de apenas contá-la. É o exame que resolve o caso em que o número de linfócitos veio normal ou alto, mas a imunidade específica está ausente."
+    },
+    {
+      "question": "Enquanto se organiza o transplante de células-tronco na imunodeficiência combinada grave, que medidas compõem o suporte?",
+      "options": [
+        "Antimicrobianos e reposição de imunoglobulina G",
+        "Colchicina diária e reposição de imunoglobulina G",
+        "Antimicrobianos e bloqueio de interleucina 1",
+        "Corticoide em dose alta e plasmaférese seriada"
+      ],
+      "correctIndex": 0,
+      "explanation": "O tratamento da imunodeficiência combinada grave se divide em duas camadas. O suporte combina medidas gerais, antimicrobianos e substituição de IgG, que mantêm a criança viva e sem infecção enquanto se prepara a terapia definitiva: o transplante de células-tronco hematopoiéticas, feito o mais rápido possível."
+    },
+    {
+      "question": "Confirmada uma imunodeficiência combinada grave em um lactente, que cuidado vacinal é imediato?",
+      "options": [
+        "Suspender as vacinas de vírus e bactérias vivos",
+        "Suspender as vacinas inativadas e os toxoides",
+        "Antecipar a BCG e a vacina oral da poliomielite",
+        "Antecipar o rotavírus e a tríplice viral do bebê"
+      ],
+      "correctIndex": 0,
+      "explanation": "Sem imunidade celular não há como conter um agente atenuado, e a própria vacina pode causar doença disseminada: BCG, poliomielite oral, rotavírus, tríplice viral e varicela ficam contraindicadas em defeito celular ou combinado grave. Vacinas inativadas e toxoides não oferecem esse risco, ainda que possam não gerar resposta protetora."
+    },
+    {
+      "question": "As duas formas de agamaglobulinemia, a ligada ao cromossomo X e a autossômica, compartilham que achado laboratorial?",
+      "options": [
+        "Número extremamente baixo de células B circulantes",
+        "Número extremamente baixo de células T circulantes",
+        "Número extremamente baixo de neutrófilos no sangue",
+        "Número extremamente baixo de plaquetas no sangue"
+      ],
+      "correctIndex": 0,
+      "explanation": "Tanto a forma ligada ao cromossomo X quanto a autossômica cursam com número extremamente baixo de células B, e é essa ausência que explica as infecções bacterianas recorrentes do trato respiratório superior e inferior. A contagem de células T é preservada, o que separa o quadro das imunodeficiências combinadas."
+    },
+    {
+      "question": "Como o tratamento das deficiências de anticorpos se divide entre as formas graves e as mais leves?",
+      "options": [
+        "Graves recebem IgG, profilaxia ou ambas; leves, profilaxia",
+        "Graves recebem transplante de medula; leves, apenas IgG",
+        "Graves recebem corticoide diário; leves, apenas repouso",
+        "Graves recebem bloqueio de TNF; leves, apenas antivirais"
+      ],
+      "correctIndex": 0,
+      "explanation": "Na agamaglobulinemia e na imunodeficiência comum variável usa-se profilaxia antibiótica, substituição de IgG ou as duas coisas. Nas deficiências mais leves de anticorpos a base é a profilaxia antibiótica, e a terapia com IgG fica reservada a casos selecionados."
+    },
+    {
+      "question": "A dosagem de imunoglobulinas veio normal em uma criança com infecções bacterianas de repetição. Que exame investiga deficiência específica de anticorpos?",
+      "options": [
+        "Teste de resposta a vacinas, com títulos após a dose",
+        "Ensaio TREC em papel-filtro, com repetição da coleta",
+        "Dosagem das frações do complemento, com dois exames",
+        "Contagem de neutrófilos seriada, com três hemogramas"
+      ],
+      "correctIndex": 0,
+      "explanation": "A criança pode ter imunoglobulinas totais normais e ainda assim não montar resposta a antígenos específicos. O teste de resposta a vacinas mede os títulos de anticorpo antes e depois de uma dose e integra o segundo degrau da investigação, ao lado da citometria de fluxo e dos testes genéticos."
+    },
+    {
+      "question": "Qual exame avançado define os subtipos e a função dos linfócitos na investigação de imunodeficiência primária?",
+      "options": [
+        "Citometria de fluxo com imunofenotipagem de linfócitos",
+        "Eletroforese de proteínas com dosagem de albumina",
+        "Hemossedimentação com dosagem de proteína C reativa",
+        "Mielograma com pesquisa de blastos na medula óssea"
+      ],
+      "correctIndex": 0,
+      "explanation": "A citometria de fluxo com imunofenotipagem define os subtipos de linfócitos e avalia sua função, e é o exame avançado que vem depois da triagem com hemograma e imunoglobulinas. Ela entra junto com os testes de resposta a vacinas e com os testes genéticos no segundo degrau da investigação."
+    },
+    {
+      "question": "Por que o diagnóstico molecular deve ser buscado sempre que possível nas imunodeficiências primárias?",
+      "options": [
+        "Fecha o diagnóstico, orienta o aconselhamento e a terapia gênica",
+        "Dispensa a reposição de IgG e encurta a profilaxia antibiótica",
+        "Prevê a resposta vacinal e substitui a citometria de fluxo",
+        "Exclui autoimunidade e dispensa o transplante de medula óssea"
+      ],
+      "correctIndex": 0,
+      "explanation": "Os objetivos do diagnóstico molecular são estabelecer um diagnóstico inequívoco, permitir aconselhamento genético preciso, planejar gestações futuras, definir melhor as associações entre genótipo e fenótipo e identificar candidatos a terapias gênicas específicas. Ele não substitui nem dispensa o tratamento já indicado."
+    },
+    {
+      "question": "O teste do pezinho ampliado já identifica algumas imunodeficiências primárias. Que vantagem prática isso traz na imunodeficiência combinada grave?",
+      "options": [
+        "Permite tratar antes de a primeira infecção grave aparecer",
+        "Permite dispensar o transplante de células-tronco depois",
+        "Permite liberar as vacinas de vírus vivo com segurança",
+        "Permite confirmar o diagnóstico sem nenhum teste genético"
+      ],
+      "correctIndex": 0,
+      "explanation": "A detecção precoce da imunodeficiência combinada grave é feita pela triagem neonatal de linfopenia de células T com o ensaio TREC, antes de qualquer sintoma. Como a terapia definitiva é o transplante de células-tronco hematopoiéticas o mais rápido possível, identificar o recém-nascido ainda sem infecção muda o momento e a chance do tratamento."
+    },
+    {
+      "question": "Por que a falta de IgA leva justamente a otites, sinusites e episódios de diarreia?",
+      "options": [
+        "A IgA forma a barreira de anticorpos nas secreções de mucosa",
+        "A IgA ativa a via clássica do complemento dentro do plasma",
+        "A IgA opsoniza bactérias encapsuladas na corrente sanguínea",
+        "A IgA transporta antígenos até os linfonodos regionais do corpo"
+      ],
+      "correctIndex": 0,
+      "explanation": "A IgA é a imunoglobulina das secreções e forma a barreira de anticorpos que protege as mucosas. Sem ela, cai a defesa de superfície das vias aéreas e do trato gastrointestinal, e o resultado é o padrão de infecção de mucosa: otite, sinusite e diarreia prolongada, sem infecções oportunistas e com crescimento preservado."
+    },
+    {
+      "question": "Em uma criança com infecções recorrentes de mucosa, que achados indicam que o quadro ultrapassa a deficiência seletiva de IgA?",
+      "options": [
+        "Pneumonias de repetição, oportunistas e falha de crescimento",
+        "Rinite alérgica persistente, espirros e tosse pela manhã",
+        "Febre periódica breve, artrite e aftas orais recorrentes",
+        "Urticária ao exercício, prurido nasal e olhos lacrimejantes"
+      ],
+      "correctIndex": 0,
+      "explanation": "São sinais de alerta de que não se trata apenas de deficiência seletiva de IgA: pneumonias de repetição, internações frequentes ou infecções invasivas, infecções oportunistas como fungos e Pneumocystis, candidíase persistente e falha de crescimento com perda ponderal. Qualquer um deles aponta para defeito mais profundo e exige investigação ampliada."
+    },
+    {
+      "question": "Confirmada a deficiência seletiva de IgA, que comorbidades devem ser procuradas no seguimento?",
+      "options": [
+        "Asma e rinite, doença celíaca e doenças autoimunes",
+        "Fibrose cística, bronquiectasia e sinusite fúngica",
+        "Cardiopatia congênita, surdez e atraso de linguagem",
+        "Diabetes insípido, obesidade e esteatose hepática"
+      ],
+      "correctIndex": 0,
+      "explanation": "Atopia e autoimunidade coexistem com frequência na deficiência seletiva de IgA, e a investigação de comorbidades inclui asma e rinite, doença celíaca e doenças autoimunes. O seguimento também envolve tratar infecções precocemente, orientar higiene nasal e controlar a rinite."
+    },
+    {
+      "question": "Que triagem laboratorial simples sustenta a suspeita de deficiência seletiva de IgA?",
+      "options": [
+        "Dosar IgA, IgG e IgM: só a IgA vem muito baixa",
+        "Dosar IgA, IgG e IgM: as três vêm muito baixas",
+        "Dosar o hemograma: vem linfopenia muito marcante",
+        "Dosar o complemento: vêm C5 a C9 muito reduzidos"
+      ],
+      "correctIndex": 0,
+      "explanation": "A triagem é barata e direta: dosar IgA, IgG e IgM. Na deficiência seletiva de IgA a imunoglobulina A vem muito baixa ou indetectável enquanto IgG e IgM permanecem normais, e o hemograma costuma ser normal. As três classes baixas apontariam para pan-hipogamaglobulinemia, de outro grupo."
+    },
+    {
+      "question": "A tomografia compara seios paranasais normais, à esquerda, e sinusite crônica, à direita. Que alterações marcam o lado doente?",
+      "options": [
+        "Espessamento da mucosa e bloqueio completo do seio etmoidal",
+        "Erosão do osso frontal e alargamento completo da órbita",
+        "Desvio do septo nasal e hipoplasia completa do seio frontal",
+        "Calcificação da mucosa e ausência completa do seio maxilar"
+      ],
+      "correctIndex": 0,
+      "explanation": "No lado normal o ar aparece preto dentro de cada seio; no lado com sinusite crônica há espessamento da mucosa nos seios maxilares e bloqueio completo dos seios etmoidais, que ficam opacificados. É o achado esperado em quem repete infecção de mucosa por deficiência de anticorpos.",
+      "image": "s15i1",
+      "imageCaption": "Seios paranasais normais à esquerda e sinusite crônica à direita"
+    },
+    {
+      "question": "No esquema da maturação das células B, o defeito dos genes RAG bloqueia a edição de receptor. Qual é a consequência imediata?",
+      "options": [
+        "Seguem adiante células B imaturas ricas em autorreatividade",
+        "Seguem adiante apenas células B maduras já selecionadas",
+        "Seguem adiante somente plasmócitos secretores de IgA",
+        "Seguem adiante apenas células B de memória de vida longa"
+      ],
+      "correctIndex": 0,
+      "explanation": "A edição de receptor é a chance que a célula B imatura tem de refazer o BCR quando ele reconhece o próprio organismo. Com o defeito de RAG esse conserto não acontece, e seguem adiante células B imaturas ricas em autorreatividade, que depois, resgatadas pelo excesso de BAFF, amadurecem e produzem autoanticorpos.",
+      "image": "s04i1",
+      "imageCaption": "Maturação das células B: edição de receptor, BAFF e autorreatividade"
+    },
+    {
+      "question": "Por que um mesmo defeito dos genes RAG produz, ao mesmo tempo, imunodeficiência e autoimunidade?",
+      "options": [
+        "Faltam linfócitos úteis e falha a eliminação dos autorreativos",
+        "Faltam neutrófilos úteis e sobra produção de interleucina 1",
+        "Faltam frações do complemento e sobra ativação de mastócitos",
+        "Faltam células fagocíticas e sobra produção de imunoglobulina E"
+      ],
+      "correctIndex": 0,
+      "explanation": "A recombinação V(D)J gera o repertório, e é sobre esse repertório que a tolerância trabalha. Quando RAG falha, faltam linfócitos funcionantes, o que produz imunodeficiência, e ao mesmo tempo a seleção negativa e a edição de receptor não conseguem eliminar os clones autorreativos, o que produz autoimunidade. Síndrome de Omenn, SCID e CID ocupam esse cruzamento."
+    }
+  ]
+}

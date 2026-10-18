@@ -1,0 +1,404 @@
+{
+  "titulo": "Neuropatias Periféricas",
+  "eyebrow": "Neurologia · Sistema Nervoso Periférico",
+  "subtitulo": "Do padrão de acometimento ao diagnóstico das principais neuropatias",
+  "intro": "Classificação e semiologia do nervo periférico, polineuropatia diabética, hanseníase, Guillain-Barré e polirradiculoneurite crônica, neuropatias tóxico-carenciais, vasculíticas e as mononeuropatias de tronco.",
+  "questoes": [
+    {
+      "question": "Um paciente apresenta perda de força e hipoestesia simétricas, distais e bilaterais nos quatro membros. Que padrão de acometimento do sistema nervoso periférico esse quadro define?",
+      "options": [
+        "Polineuropatia — disfunção simétrica, distal e bilateral dos nervos",
+        "Mononeuropatia — lesão focal de um único nervo periférico",
+        "Mononeuropatia múltipla — lesão multifocal de nervos isolados",
+        "Plexopatia braquial — lesão dos troncos formados por C5 a T1"
+      ],
+      "correctIndex": 0,
+      "explanation": "Chama-se polineuropatia a doença que altera a função dos nervos periféricos de modo simétrico, distal e bilateral. Quando o processo envolve raízes espinais, isoladas ou junto com os troncos, usam-se os termos polirradiculopatia ou polirradiculoneuropatia. Lesão focal de um nervo é mononeuropatia; lesão multifocal, mononeuropatia múltipla."
+    },
+    {
+      "question": "Por que a recuperação funcional é mais rápida na desmielinização segmentar do que na degeneração axonal?",
+      "options": [
+        "O axônio permanece íntegro e basta a remielinização do segmento",
+        "O corpo celular do neurônio é poupado e refaz a bainha em dias",
+        "A fibra lesada é substituída por brotamento de fibras vizinhas",
+        "A condução é restabelecida pelo aumento do número de nódulos"
+      ],
+      "correctIndex": 0,
+      "explanation": "Na desmielinização segmentar há degeneração focal da bainha de mielina com preservação do axônio, de modo que a função volta assim que o segmento é remielinizado. Já nas degenerações walleriana e axonal o axônio precisa primeiro regenerar e reconectar-se ao músculo, e a recuperação leva meses ou anos."
+    },
+    {
+      "question": "Comparadas às axonais, como se comporta a atrofia muscular nas neuropatias desmielinizantes?",
+      "options": [
+        "É mais discreta e decorre do desuso da musculatura",
+        "É mais intensa e decorre da desnervação das fibras",
+        "É mais discreta e decorre do bloqueio do arco reflexo",
+        "É mais intensa e decorre da perda de fibras aferentes"
+      ],
+      "correctIndex": 0,
+      "explanation": "A atrofia por desnervação é o principal distúrbio trófico da interrupção do nervo motor e é intensa quando há lesão axonal. Nas neuropatias desmielinizantes o axônio está preservado, e a atrofia observada é discreta e consequente ao desuso. A hipotonia, por sua vez, decorre da interrupção do arco reflexo espinal."
+    },
+    {
+      "question": "Um paciente perdeu a sensibilidade térmica e dolorosa nos pés, mas mantém preservadas a tátil, a vibratória e a cineticopostural. Que fibras estão comprometidas?",
+      "options": [
+        "Axônios mielínicos finos e amielínicos",
+        "Axônios mielínicos grossos e amielínicos",
+        "Apenas os axônios mielínicos grossos",
+        "Apenas as fibras do fuso neuromuscular"
+      ],
+      "correctIndex": 0,
+      "explanation": "Esse é o padrão da dissociação pseudo-siringomiélica: hipoestesia térmica e dolorosa com preservação das modalidades tátil, vibratória e cineticopostural. Ele é frequente nas neuropatias que comprometem axônios mielínicos finos e amielínicos, justamente as fibras que conduzem dor e temperatura."
+    },
+    {
+      "question": "Que perda sensitiva caracteriza as neuropatias em que predomina o comprometimento das grandes fibras mielínicas?",
+      "options": [
+        "Perda da sensibilidade tátil, com térmica e dolorosa preservadas",
+        "Perda da sensibilidade térmica e dolorosa, com tátil preservada",
+        "Perda da sensibilidade dolorosa, com tátil e térmica preservadas",
+        "Perda global das modalidades, sem qualquer tipo preservado"
+      ],
+      "correctIndex": 0,
+      "explanation": "Quando o maior comprometimento recai sobre as grandes fibras mielínicas, perde-se a sensibilidade tátil enquanto a térmica e a dolorosa permanecem preservadas — o inverso do que ocorre na lesão de fibras finas. Na maioria das polineuropatias, porém, todas as modalidades acabam comprometidas, em padrão de bota e luva."
+    },
+    {
+      "question": "Com os braços estendidos e os olhos fechados, um paciente com força preservada apresenta movimentos pseudo-atetóticos dos dedos. O que esse achado indica?",
+      "options": [
+        "Deaferentação proprioceptiva por perda de fibras grossas",
+        "Deaferentação nociceptiva por perda de fibras finas",
+        "Lesão cerebelar com decomposição do movimento",
+        "Comprometimento autonômico das fibras amielínicas"
+      ],
+      "correctIndex": 0,
+      "explanation": "A ataxia sensitiva resulta de deaferentação proprioceptiva e aparece nos casos de perda de fibras grossas. Quando a deaferentação atinge os membros superiores e a força está preservada, observam-se movimentos pseudo-atetóticos dos dedos com os membros estendidos e os olhos fechados; fenômeno semelhante pode ocorrer nos membros inferiores."
+    },
+    {
+      "question": "Como se caracteriza a osteoartropatia neurogênica, também chamada de junta de Charcot?",
+      "options": [
+        "Grandes deformidades articulares indolores, de início súbito e rápidas",
+        "Grandes deformidades articulares dolorosas, de início lento e gradual",
+        "Pequenas deformidades articulares indolores, de evolução por décadas",
+        "Rigidez articular dolorosa sem deformidade, revertida com o repouso"
+      ],
+      "correctIndex": 0,
+      "explanation": "A osteoartropatia neurogênica caracteriza-se por enormes deformidades articulares, ausência de manifestações álgicas e, em geral, início súbito com desenvolvimento rápido. É uma das alterações tróficas das neuropatias crônicas, ao lado do mal perfurante plantar e da perda de falanges distais."
+    },
+    {
+      "question": "Por que a polineuropatia distal favorece o aparecimento de úlceras plantares e queimaduras nos pés?",
+      "options": [
+        "A analgesia das partes distais torna os pés suscetíveis a injúria repetida",
+        "A anidrose das partes distais torna a pele dos pés friável e infectada",
+        "A fraqueza dos músculos intrínsecos deforma o pé e expõe a pele ao atrito",
+        "A hipotensão ortostática reduz a perfusão cutânea das extremidades"
+      ],
+      "correctIndex": 0,
+      "explanation": "A analgesia das partes distais torna-as suscetíveis a queimaduras, escaras de decúbito e outras formas de injúria, e daí surgem as úlceras plantares, o chamado mal perfurante plantar, e a perda de falanges distais. A pele torna-se atrófica, adelgaçada, lisa e brilhante, e as unhas ficam curvas e rígidas."
+    },
+    {
+      "question": "Quais são as manifestações autonômicas mais frequentes das neuropatias periféricas?",
+      "options": [
+        "Anidrose e hipotensão ortostática",
+        "Hiperidrose e hipertensão sustentada",
+        "Midríase fixa e epífora persistente",
+        "Bradicardia e sialorreia abundante"
+      ],
+      "correctIndex": 0,
+      "explanation": "Anidrose e hipotensão ortostática são as manifestações autonômicas mais frequentes e muitas vezes dominam o quadro da neuropatia. Outras alterações possíveis são pupilas médias ou pequenas e arreativas, falta de lágrimas e saliva, impotência sexual, incontinência urinária e fecal e dilatação de esôfago e cólon."
+    },
+    {
+      "question": "Um paciente desenvolve lesão sucessiva e assimétrica de nervos isolados. Qual conjunto de causas deve encabeçar a investigação?",
+      "options": [
+        "Vasculites, diabetes melito, hanseníase, doença de Lyme e HIV",
+        "Deficiência de tiamina, de cobalamina, de piridoxina e etilismo",
+        "Uremia, hipotireoidismo, acromegalia e falência hepática crônica",
+        "Charcot-Marie-Tooth, Dejerine-Sottas e porfiria aguda intermitente"
+      ],
+      "correctIndex": 0,
+      "explanation": "Definir o padrão é o primeiro passo porque a mononeuropatia múltipla tem um leque etiológico bem menor que o das polineuropatias. As causas mais importantes são vasculites, diabetes melito, neuropatia multifocal motora, crioglobulinemia, mal de Hansen, doença de Lyme, infecção pelo HIV e sarcoidose."
+    },
+    {
+      "question": "Que conjunto de achados sugere neuropatia hereditária em um paciente com polineuropatia crônica?",
+      "options": [
+        "Evolução de anos, simetria desde o início, pés cavos e dedos em martelo",
+        "Evolução de meses, assimetria desde o início, dor intensa e febre baixa",
+        "Evolução de dias, déficit ascendente, arreflexia e infecção precedente",
+        "Evolução flutuante, mácula hipopigmentada e espessamento do nervo ulnar"
+      ],
+      "correctIndex": 0,
+      "explanation": "História de evolução de anos, simetria dos sintomas desde o início e presença de pés cavos e dedos em martelo ao exame apontam para neuropatia hereditária. História familiar negativa não exclui o diagnóstico, seja pelo caráter recessivo da doença, seja porque os sinais nos parentes são discretos e não percebidos por eles."
+    },
+    {
+      "question": "Que conjunto de achados eletroneuromiográficos define o padrão desmielinizante de uma neuropatia?",
+      "options": [
+        "Velocidade de condução reduzida, latência distal e onda F aumentadas",
+        "Amplitude do potencial muito reduzida e sinais claros de desnervação",
+        "Velocidade de condução normal e amplitude do potencial preservada",
+        "Latência distal reduzida e ausência de bloqueio de condução no trajeto"
+      ],
+      "correctIndex": 0,
+      "explanation": "No padrão desmielinizante observam-se diminuição da velocidade de condução nervosa, aumento da latência distal, presença de bloqueio de condução e aumento do tempo de latência da onda F. Na lesão axonal predomina a queda importante da amplitude do potencial associada a sinais de desnervação na eletromiografia."
+    },
+    {
+      "question": "Qual é o papel da biópsia de nervo na investigação de uma neuropatia periférica?",
+      "options": [
+        "É o último exame, feita no sural quando a investigação não definiu a causa",
+        "É o primeiro exame, feita no sural antes mesmo de qualquer dosagem sérica",
+        "É o exame de escolha no diabetes, por mostrar alteração axonal específica",
+        "É exame de triagem na polineuropatia simétrica distal de evolução lenta"
+      ],
+      "correctIndex": 0,
+      "explanation": "A biópsia de nervo, em geral do sural, é o último exame a ser pedido, quando a investigação sistêmica não evidenciou etiologia definida. Ela pode confirmar o diagnóstico em vasculites, neuropatia amiloide, mal de Hansen, infiltração neoplásica do nervo e algumas doenças hereditárias."
+    },
+    {
+      "question": "Na neuropatia da falência renal crônica, a partir de que ponto a velocidade de condução motora começa a diminuir?",
+      "options": [
+        "Quando o clearance de creatinina cai abaixo de 10% do normal",
+        "Quando o clearance de creatinina cai abaixo de 50% do normal",
+        "Quando a ureia sérica ultrapassa o dobro do valor de referência",
+        "Quando a diálise é iniciada, independentemente do clearance"
+      ],
+      "correctIndex": 0,
+      "explanation": "A velocidade de condução motora começa a cair junto com a função renal quando o clearance de creatinina desce abaixo de 10% do normal, embora os sintomas não guardem relação direta com esse valor. O quadro típico é polineuropatia sensitivo-motora simétrica e progressiva, com disestesias nos pés e déficit motor leve."
+    },
+    {
+      "question": "Um paciente séptico internado em terapia intensiva evolui com tetraparesia, arreflexia profunda e dificuldade de desmame ventilatório. Qual é o achado esperado na eletroneuromiografia?",
+      "options": [
+        "Envolvimento axonal, compatível com polineuropatia do doente crítico",
+        "Bloqueio de condução difuso, compatível com polirradiculoneurite aguda",
+        "Padrão miopático, com potenciais de curta duração e muito polifásicos",
+        "Lentificação difusa da condução com aumento da latência da onda F"
+      ],
+      "correctIndex": 0,
+      "explanation": "De 20% a 50% dos pacientes admitidos em terapia intensiva podem desenvolver polineuropatia do doente crítico, uma polineuropatia motora axonal consequente à síndrome de resposta inflamatória sistêmica por sepse, falência de múltiplos órgãos, pancreatite, trauma ou queimaduras. A eletroneuromiografia revela envolvimento axonal e permite avaliar nervo frênico e diafragma."
+    },
+    {
+      "question": "Como varia a prevalência da neuropatia periférica ao longo da evolução do diabetes melito?",
+      "options": [
+        "De 7,5% na descoberta do diabetes a 50% após 25 anos de doença",
+        "De 7,5% na descoberta do diabetes a 15% após 25 anos de doença",
+        "De 25% na descoberta do diabetes a 90% após 25 anos de doença",
+        "De 50% na descoberta do diabetes a 75% após 25 anos de doença"
+      ],
+      "correctIndex": 0,
+      "explanation": "A prevalência da neuropatia varia de 7,5% na época da descoberta do diabetes a 50% após 25 anos de doença. Cerca de 15% de todos os diabéticos têm sintomas e sinais de neuropatia periférica, e as crianças com diabetes raramente são acometidas, em torno de 2% dos casos."
+    },
+    {
+      "question": "Quais são os sinais mais precoces da polineuropatia sensitiva do diabetes, a forma mais frequente de neuropatia diabética?",
+      "options": [
+        "Perda do reflexo aquileu e hipopalestesia dos pés",
+        "Perda do reflexo patelar e hipopalestesia das mãos",
+        "Perda do reflexo bicipital e anestesia em bota",
+        "Perda do reflexo cutâneo-plantar e pé caído"
+      ],
+      "correctIndex": 0,
+      "explanation": "Os sinais mais precoces da polineuropatia sensitiva diabética são a perda do reflexo aquileu e a hipopalestesia dos pés, e o exame pode revelar anormalidades mesmo sem queixas. Quando há sintomas, são dormência e parestesias nos pés, com dor nos membros inferiores que piora à noite; as mãos são acometidas mais tarde."
+    },
+    {
+      "question": "Que conjunto de achados do diabetes recebe o nome de pseudotabes diabético?",
+      "options": [
+        "Ataxia, perda da sensibilidade profunda e atonia vesical com fraqueza leve",
+        "Ataxia, perda da sensibilidade térmica e dolorosa com fraqueza proximal",
+        "Oftalmoplegia, ataxia de marcha e arreflexia sem fraqueza muscular clara",
+        "Dor lombar, atrofia proximal assimétrica e reflexos patelares abolidos"
+      ],
+      "correctIndex": 0,
+      "explanation": "Quando a neuropatia sensitiva diabética é intensa, surgem ataxia sensitiva com marcha talonante, perda da sensibilidade profunda e atonia vesical, acompanhadas de fraqueza discreta dos membros. Esse conjunto lembra a tabes dorsalis, e daí a denominação pseudotabes diabético."
+    },
+    {
+      "question": "Um diabético apresenta dor noturna intensa, fraqueza e atrofia assimétricas de ileopsoas, quadríceps e adutores, reflexos patelares abolidos e sensibilidade quase normal. Qual é o diagnóstico?",
+      "options": [
+        "Neuropatia motora proximal, também chamada amiotrofia diabética",
+        "Polineuropatia sensitivo-motora simétrica e distal do diabetes",
+        "Mononeuropatia do tronco, ou neuropatia toracoabdominal",
+        "Polirradiculoneurite aguda com apresentação proximal atípica"
+      ],
+      "correctIndex": 0,
+      "explanation": "A amiotrofia diabética é uma neuropatia motora proximal com fraqueza e atrofia assimétricas nos membros inferiores, dor mais intensa à noite, reflexos patelares abolidos e alteração sensitiva ausente ou discreta. Atinge ileopsoas, quadríceps e adutores, poupando extensores da coxa e flexores da perna, e tende à recuperação espontânea."
+    },
+    {
+      "question": "Qual nervo craniano é mais frequentemente acometido de forma isolada no diabetes, e o que caracteriza essa lesão?",
+      "options": [
+        "O terceiro, de início abrupto e em geral poupando a inervação pupilar",
+        "O terceiro, de início insidioso e em geral com midríase paralítica fixa",
+        "O sexto, de início abrupto e acompanhado de perda sensitiva na face",
+        "O quarto, de início insidioso e com recuperação habitualmente ausente"
+      ],
+      "correctIndex": 0,
+      "explanation": "As neuropatias cranianas do diabetes ocorrem sobretudo em idosos, e a mais frequente é a lesão isolada do terceiro nervo; o sexto é afetado menos comumente e o quarto raramente de forma isolada. O início é abrupto, pode ser indolor ou vir com cefaleia, a inervação pupilar em geral é poupada e a recuperação é a regra."
+    },
+    {
+      "question": "Qual é o ponto principal do tratamento da neuropatia diabética?",
+      "options": [
+        "Manter a glicemia relativamente normal, pelo vínculo com o mau controle",
+        "Iniciar corticoide em dose alta, pelo componente inflamatório do nervo",
+        "Repor piridoxina em dose alta, pela perda urinária aumentada no diabetes",
+        "Indicar plasmaférese precoce, pelo mecanismo imune-mediado da lesão"
+      ],
+      "correctIndex": 0,
+      "explanation": "Como há relação entre a lesão dos nervos periféricos e o controle inadequado do diabetes, o ponto principal do tratamento é manter a glicemia relativamente normal. Para a dor são recomendadas fenitoína, carbamazepina, gabapentina, fenotiazinas e antidepressivos tricíclicos."
+    },
+    {
+      "question": "Qual é a relação entre a piridoxina, a vitamina B6, e a neuropatia periférica?",
+      "options": [
+        "Sua falta por uso de isoniazida causa neuropatia, e seu excesso causa ataxia",
+        "Sua falta por uso de isoniazida causa neuropatia, e seu excesso é inofensivo",
+        "Sua reposição é inútil na isoniazida, pois essa neuropatia é axonal pura",
+        "Sua falta causa beribéri, com falência cardíaca e polineuropatia distal"
+      ],
+      "correctIndex": 0,
+      "explanation": "A isoniazida aumenta a excreção de piridoxina e é a causa mais frequente de neuropatia por deficiência dessa vitamina, de modo que a reposição previne o quadro. O excesso é igualmente danoso: dose muito elevada de piridoxina causa uma neuropatia sensitiva atáxica. O beribéri, por sua vez, decorre da falta de tiamina."
+    },
+    {
+      "question": "Que quadro caracteriza a neuropatia por intoxicação pelo chumbo?",
+      "options": [
+        "Neuropatia motora axonal com predileção pelo radial, dor abdominal e anemia",
+        "Neuropatia sensitiva axonal com predileção pelo sural, diarreia e anemia",
+        "Neuropatia sensitivo-motora dolorosa, com alopecia duas a três semanas depois",
+        "Neuropatia sensitivo-motora com pancitopenia e hiperqueratose palmoplantar"
+      ],
+      "correctIndex": 0,
+      "explanation": "O chumbo causa dor abdominal, anemia e linha plúmbica na margem das gengivas, e sua neuropatia é predominantemente motora, axonal, com predileção pelo nervo radial. A alopecia tardia aponta para o tálio, e a pancitopenia com hiperqueratose palmoplantar, para o arsênico. O diagnóstico se faz pelo nível do metal em sangue, urina, cabelo ou unhas."
+    },
+    {
+      "question": "O que explica a distribuição da perda sensitiva na neuropatia do mal de Hansen?",
+      "options": [
+        "O bacilo acomete nervos cutâneos em áreas de temperatura corporal mais baixa",
+        "O bacilo acomete os nervos mais longos a partir de sua porção mais distal",
+        "O bacilo destrói o gânglio da raiz dorsal e desaferenta o dermátomo inteiro",
+        "O bacilo oblitera a vasa nervorum e isquemia os troncos nervosos maiores"
+      ],
+      "correctIndex": 0,
+      "explanation": "O Mycobacterium leprae acomete nervos cutâneos e mistos em partes do corpo de temperatura relativamente baixa, e o sintoma principal é a perda sensitiva, sobretudo à dor e à temperatura. A lesão inicial é uma pápula ou mácula hipopigmentada com diminuição da sensibilidade, resultado da invasão dos nervos cutâneos pelo bacilo."
+    },
+    {
+      "question": "Qual nervo é o mais acometido no mal de Hansen e com que classe de fármaco a doença é tratada?",
+      "options": [
+        "O nervo ulnar, tratado principalmente com sulfonas, como a dapsona",
+        "O nervo radial, tratado principalmente com sulfonas, como a dapsona",
+        "O nervo ulnar, tratado principalmente com quinolonas, como a ofloxacina",
+        "O nervo mediano, tratado com tetraciclinas, como a minociclina"
+      ],
+      "correctIndex": 0,
+      "explanation": "A perda sensitiva do mal de Hansen vem acompanhada de perda motora pela invasão de nervos próximos à pele, e o ulnar é o mais acometido. O diagnóstico é feito pela biópsia de pele ou de nervo, e o tratamento se faz principalmente com sulfonas, sendo a dapsona a mais utilizada."
+    },
+    {
+      "question": "O que distingue a forma tuberculoide da forma lepromatosa no mal de Hansen?",
+      "options": [
+        "A tuberculoide monta resposta celular com granuloma; a lepromatosa, resposta mínima",
+        "A tuberculoide monta resposta humoral com anticorpos; a lepromatosa, resposta celular",
+        "A tuberculoide dissemina o bacilo amplamente; a lepromatosa o contém no granuloma",
+        "A tuberculoide poupa os nervos cutâneos; a lepromatosa poupa a pele e as mucosas"
+      ],
+      "correctIndex": 0,
+      "explanation": "A manifestação clínica do mal de Hansen é determinada pela resposta imune do hospedeiro. A forma tuberculoide cursa com resposta celular, formação de granuloma e lesão tecidual; a lepromatosa cursa com resposta imunológica mínima, o que permite a proliferação e a disseminação do agente."
+    },
+    {
+      "question": "Que conjunto define o quadro clássico da polirradiculoneurite aguda, ou síndrome de Guillain-Barré?",
+      "options": [
+        "Déficit motor progressivo ascendente de instalação aguda, com arreflexia",
+        "Déficit motor progressivo descendente de instalação aguda, com hiper-reflexia",
+        "Déficit sensitivo puro de instalação aguda, com reflexos profundos normais",
+        "Déficit motor proximal de instalação crônica, com fasciculações difusas"
+      ],
+      "correctIndex": 0,
+      "explanation": "A polirradiculoneurite aguda caracteriza-se por déficit motor progressivo, geralmente ascendente, de instalação aguda e acompanhado de arreflexia, com ou sem alteração sensitiva. Os primeiros sintomas costumam ser parestesias; a fraqueza começa nos membros inferiores, sobe, é relativamente simétrica e pode atingir nervos cranianos e a respiração."
+    },
+    {
+      "question": "Em que proporção dos casos a polirradiculoneurite aguda é precedida por processo infeccioso, cirurgia ou vacina?",
+      "options": [
+        "Em cerca de dois terços",
+        "Em cerca de um terço",
+        "Em cerca de um décimo",
+        "Em praticamente todos"
+      ],
+      "correctIndex": 0,
+      "explanation": "Em aproximadamente dois terços dos casos a polirradiculoneurite aguda é antecedida por um processo infeccioso, viral ou bacteriano, ou ainda por procedimentos cirúrgicos e vacinas. A doença é imune-mediada, com alterações da imunidade celular e humoral, mas o antígeno desencadeante ainda não foi determinado."
+    },
+    {
+      "question": "O que é a dissociação proteíno-citológica encontrada no líquor da polirradiculoneurite aguda?",
+      "options": [
+        "Celularidade normal com proteinorraquia aumentada",
+        "Celularidade aumentada com proteinorraquia normal",
+        "Celularidade e proteinorraquia ambas aumentadas",
+        "Celularidade normal com glicorraquia reduzida"
+      ],
+      "correctIndex": 0,
+      "explanation": "A dissociação proteíno-citológica consiste em celularidade normal com aumento da proteinorraquia. Ela pode ser evidenciada após uma semana de evolução da doença e atinge o máximo entre a quarta e a sexta semanas, de modo que um líquor normal na primeira semana não afasta o diagnóstico."
+    },
+    {
+      "question": "Qual é a evolução temporal típica da polirradiculoneurite aguda?",
+      "options": [
+        "Pico do déficit em uma a quatro semanas, platô de duas a quatro e melhora em meses",
+        "Pico do déficit em uma a quatro horas, platô de dois dias e melhora em uma semana",
+        "Progressão por pelo menos dois meses, sem platô definido, com flutuações da força",
+        "Pico do déficit em seis meses, platô de cerca de um ano e melhora sempre parcial"
+      ],
+      "correctIndex": 0,
+      "explanation": "O grau máximo de incapacidade ocorre geralmente entre uma e quatro semanas. O ponto de maior déficit é sucedido por uma fase de platô de duas a quatro semanas e, depois, por recuperação em poucos meses. Progressão por pelo menos dois meses, com flutuações, caracteriza a forma crônica, não a aguda."
+    },
+    {
+      "question": "Quais tratamentos têm eficácia comprovada na polirradiculoneurite aguda?",
+      "options": [
+        "Plasmaférese, a primeira comprovada, e imunoglobulina endovenosa, igualmente eficaz",
+        "Corticosteroide em dose alta, o primeiro comprovado, e azatioprina como poupador",
+        "Ciclofosfamida isolada, comprovada em estudos, e ciclosporina como alternativa",
+        "Gabapentina e antidepressivo tricíclico, que encurtam a duração da fraqueza"
+      ],
+      "correctIndex": 0,
+      "explanation": "A plasmaférese foi o primeiro tratamento comprovadamente eficaz na polirradiculoneurite aguda, e estudos posteriores mostraram que a imunoglobulina endovenosa é igualmente eficaz. O corticosteroide não figura entre os tratamentos de eficácia estabelecida nessa forma aguda, ao contrário do que ocorre na forma crônica."
+    },
+    {
+      "question": "Que características separam a polirradiculoneurite crônica da forma aguda?",
+      "options": [
+        "Evolução de pelo menos dois meses e resposta eficaz ao corticosteroide",
+        "Evolução de pelo menos duas semanas e ausência de alteração sensitiva",
+        "Instalação em menos de uma semana e evolução para falência respiratória",
+        "Arreflexia ausente e predomínio de comprometimento puramente distal"
+      ],
+      "correctIndex": 0,
+      "explanation": "A polirradiculoneurite crônica é uma polineuropatia desmielinizante adquirida de instalação lentamente progressiva ou flutuante, que se estabelece como crônica com evolução de pelo menos dois meses. Os corticosteroides são preconizados e reconhecidos como tratamento eficaz nela, e a resposta ao imunossupressor é uma das melhores evidências de sua natureza imune."
+    },
+    {
+      "question": "Como é o déficit motor da polirradiculoneurite crônica?",
+      "options": [
+        "Simétrico, proximal e distal, iniciando nos membros inferiores",
+        "Assimétrico, apenas distal, iniciando nos membros superiores",
+        "Simétrico, apenas proximal, poupando sempre os membros inferiores",
+        "Assimétrico, de nervo em nervo, com confluência tardia dos déficits"
+      ],
+      "correctIndex": 0,
+      "explanation": "Na polirradiculoneurite crônica o déficit motor é geralmente simétrico e acomete tanto a musculatura proximal quanto a distal, iniciando em geral nos membros inferiores; raramente evolui para insuficiência respiratória. O envolvimento sensitivo é frequente, com hipoestesia distal em bota e luva, e há arreflexia generalizada."
+    },
+    {
+      "question": "O que caracteriza a síndrome de Miller-Fisher?",
+      "options": [
+        "Oftalmoplegia, ataxia e arreflexia, sem fraqueza muscular importante",
+        "Oftalmoplegia, ataxia e hiper-reflexia, com fraqueza muscular grave",
+        "Fraqueza ascendente, arreflexia e disautonomia, sem alteração ocular",
+        "Fraqueza motora pura de evolução benigna, com lesão axonal no exame"
+      ],
+      "correctIndex": 0,
+      "explanation": "A síndrome de Miller-Fisher é considerada uma variante da polirradiculoneurite aguda e se caracteriza pela tríade de oftalmoplegia, ataxia e arreflexia, na ausência de fraqueza muscular importante. A forma de comprometimento motor puro e evolução benigna é outra variante, a neuropatia axonal motora aguda."
+    },
+    {
+      "question": "Qual é a apresentação mais frequente da neuropatia vasculítica na época do diagnóstico?",
+      "options": [
+        "Mononeuropatia múltipla focal e assimétrica, que conflui com a evolução",
+        "Polineuropatia simétrica distal em bota e luva, de progressão muito lenta",
+        "Polirradiculoneurite ascendente aguda, com arreflexia generalizada",
+        "Neuropatia de nervos cranianos isolada, de início abrupto e indolor"
+      ],
+      "correctIndex": 0,
+      "explanation": "A vasculite dos vasos nutrientes do nervo tende a ser focal e assimétrica, com desenvolvimento de mononeuropatia múltipla que vai confluindo à medida que mais nervos são comprometidos. As manifestações sensitivas frequentemente inauguram o quadro, e o déficit motor aparece depois. O tratamento é prednisona em dose alta, associada ou não a ciclofosfamida."
+    },
+    {
+      "question": "Que déficit caracteriza a paralisia do nervo mediano?",
+      "options": [
+        "Não pronar o antebraço, não fletir os três primeiros dedos e perder a oponência",
+        "Não supinar o antebraço, não estender os três últimos dedos e perder a preensão",
+        "Não fletir nem aduzir o punho, com os dedos anular e mínimo em garra cubital",
+        "Não estender o punho nem os dedos, com a mão pendente em flexão permanente"
+      ],
+      "correctIndex": 0,
+      "explanation": "A paralisia do mediano impede pronar o antebraço, fletir os três primeiros dedos e fazer a oponência do polegar; a atrofia tenar e o polegar colocado ao lado do indicador dão à mão o aspecto simiesco. A hipoestesia ocorre no lado externo da face palmar. Causas: ferimentos do braço, torniquete, túnel do carpo e neurite leprosa."
+    }
+  ]
+}

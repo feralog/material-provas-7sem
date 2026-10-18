@@ -1,0 +1,418 @@
+{
+  "titulo": "Alergia e Atopia",
+  "eyebrow": "Pediatria · Imunologia",
+  "subtitulo": "Hipersensibilidade, marcha atópica, dermatites e anafilaxia",
+  "intro": "As quatro reações de Gell e Coombs com mecanismo, mediador e tempo; atopia e marcha atópica; sensibilização e IgE; os testes diagnósticos e o que cada um significa; alergia alimentar; dermatite atópica e seus diferenciais; e o reconhecimento e a conduta imediata na anafilaxia.",
+  "questoes": [
+    {
+      "question": "Uma criança tem eczema desde o primeiro ano, rinite e história familiar de asma. Que conceito descreve essa condição de base?",
+      "options": [
+        "Atopia: predisposição pessoal ou familiar a produzir IgE contra alérgenos",
+        "Autoimunidade: resposta imune dirigida contra antígenos do próprio corpo",
+        "Imunodeficiência: falha na produção de anticorpos contra agentes externos",
+        "Intolerância: reação adversa a alimento sem qualquer mecanismo imune"
+      ],
+      "correctIndex": 0,
+      "explanation": "Atopia é a predisposição pessoal ou familiar à produção de IgE contra alérgenos comuns, associada com frequência à tríade eczema, rinite e asma. É um traço de terreno, não um diagnóstico isolado: define quem tende a desenvolver as doenças atópicas ao longo da vida."
+    },
+    {
+      "question": "Qual é a relação correta entre os conceitos de hipersensibilidade e de alergia?",
+      "options": [
+        "Alergia é o subtipo de hipersensibilidade com mecanismo imune demonstrável",
+        "Alergia é a hipersensibilidade cujo mecanismo imune não é demonstrável",
+        "Alergia designa apenas as reações tardias mediadas por linfócitos T",
+        "Alergia e hipersensibilidade são sinônimos exatos, sem distinção alguma"
+      ],
+      "correctIndex": 0,
+      "explanation": "Hipersensibilidade é o conceito amplo: resposta reprodutível a um estímulo que pessoas normais toleram. Alergia é o subtipo em que se demonstra um mecanismo imunológico. Reação reprodutível sem mecanismo imune comprovado é hipersensibilidade não alérgica, como a intolerância à lactose."
+    },
+    {
+      "question": "Adolescente apresenta prurido, urticária difusa e chiado quinze minutos após ingerir um alimento. Qual mecanismo explica sintomas em vários órgãos tão rapidamente?",
+      "options": [
+        "IgE fixada ao receptor FcεRI dos mastócitos, que degranulam liberando histamina",
+        "IgG fixada à membrana da hemácia, que ativa complemento e provoca hemólise",
+        "Imunocomplexos circulantes que se depositam e ativam complemento no tecido",
+        "Linfócitos T CD4+ que recrutam macrófagos e organizam granuloma no local"
+      ],
+      "correctIndex": 0,
+      "explanation": "É hipersensibilidade tipo I: a IgE específica já está fixada aos mastócitos e basófilos pelo receptor de alta afinidade FcεRI. A ligação cruzada pelo alérgeno dispara degranulação em minutos, com histamina, leucotrienos e prostaglandinas agindo simultaneamente em pele, vias aéreas e vasos."
+    },
+    {
+      "question": "Anemia hemolítica autoimune e plaquetopenia induzida por droga pertencem a qual tipo de hipersensibilidade?",
+      "options": [
+        "Tipo II, por anticorpos IgG ou IgM contra antígenos de superfície celular",
+        "Tipo I, por IgE fixada em mastócitos que degranulam ao rever o alérgeno",
+        "Tipo III, por imunocomplexos que se depositam na parede dos pequenos vasos",
+        "Tipo IV, por linfócitos T citotóxicos que destroem a célula diretamente"
+      ],
+      "correctIndex": 0,
+      "explanation": "As citopenias imunes são reações citotóxicas mediadas por anticorpo (tipo IIa): IgG ou IgM reconhecem antígenos fixos na superfície da célula e, com participação frequente do complemento, levam à destruição por lise ou por fagocitose. O alvo é um antígeno fixo, e não um imunocomplexo circulante."
+    },
+    {
+      "question": "A doença de Graves é classificada como hipersensibilidade tipo IIb. O que caracteriza esse subtipo?",
+      "options": [
+        "O anticorpo estimula o receptor da célula-alvo e aumenta a função do órgão",
+        "O anticorpo destrói a célula-alvo por lise dependente do complemento",
+        "O anticorpo forma imunocomplexos que se depositam no interstício do órgão",
+        "O anticorpo recruta linfócitos T citotóxicos que invadem o parênquima"
+      ],
+      "correctIndex": 0,
+      "explanation": "No tipo IIb o anticorpo não destrói a célula: ele se liga a um receptor e altera sua função. Na doença de Graves o autoanticorpo estimula o receptor de TSH e produz hipertireoidismo. A urticária crônica idiopática com autoanticorpos contra o FcεRI entra na mesma categoria."
+    },
+    {
+      "question": "Jovem apresenta febre, exantema e artralgia uma semana após iniciar um medicamento. Qual mecanismo explica a inflamação simultânea de pele e articulações?",
+      "options": [
+        "Imunocomplexos antígeno-anticorpo que ativam complemento e inflamam tecidos",
+        "IgE preexistente que faz os mastócitos degranularem em poucos minutos",
+        "Anticorpo fixo contra antígeno de superfície de uma só linhagem celular",
+        "Linfócitos T de memória restritos ao local onde houve o contato cutâneo"
+      ],
+      "correctIndex": 0,
+      "explanation": "O quadro sugere doença do soro, protótipo da hipersensibilidade tipo III: imunocomplexos formados entre antígeno e anticorpo se depositam em pele, articulações, rins e vasos, ativando complemento e recrutando células inflamatórias. O intervalo de dias a uma semana reflete o tempo de formar e depositar os complexos."
+    },
+    {
+      "question": "Qual é o intervalo típico entre a exposição e o aparecimento da lesão nas reações de hipersensibilidade tipo IV?",
+      "options": [
+        "Vinte e quatro a quarenta e oito horas, porque o efetor é o linfócito T",
+        "Cinco a quinze minutos, porque o efetor é o mastócito já sensibilizado",
+        "Sete a dez dias, porque o efetor é o imunocomplexo recém-formado",
+        "Duas a três semanas, porque o efetor é o anticorpo IgM circulante"
+      ],
+      "correctIndex": 0,
+      "explanation": "O tipo IV é mediado por células, não por anticorpo: o linfócito T precisa reconhecer o antígeno, proliferar e recrutar efetores, o que leva horas a dias. O intervalo clássico é de vinte e quatro a quarenta e oito horas, como no teste tuberculínico e na dermatite de contato alérgica."
+    },
+    {
+      "question": "Na classificação ampliada, qual subtipo de hipersensibilidade tipo IV corresponde à inflamação eosinofílica mediada por linfócitos Th2?",
+      "options": [
+        "IVb, com exemplos como asma persistente e rinite alérgica",
+        "IVa, com exemplos como granuloma e teste tuberculínico",
+        "IVc, com exemplos como exantema bolhoso e Stevens-Johnson",
+        "IVd, com exemplos como doença de Behçet e psoríase"
+      ],
+      "correctIndex": 0,
+      "explanation": "O tipo IV foi subdividido conforme o efetor recrutado: IVa é Th1 com ativação de macrófago, IVb é Th2 com inflamação eosinofílica, IVc é CD8+ citotóxico e IVd é inflamação neutrofílica. A rinite alérgica e a asma persistente combinam componente tipo I com componente IVb."
+    },
+    {
+      "question": "A síndrome de Stevens-Johnson, em que há morte direta de queratinócitos, corresponde a qual subtipo de hipersensibilidade?",
+      "options": [
+        "IVc, mediado por linfócito T citotóxico CD8+",
+        "IVa, mediado por linfócito Th1 e macrófago",
+        "IVb, mediado por linfócito Th2 e eosinófilo",
+        "IVd, mediado por linfócito T e neutrófilo"
+      ],
+      "correctIndex": 0,
+      "explanation": "No subtipo IVc o linfócito T citotóxico CD8+ mata a célula-alvo diretamente, por perforina, granzima e via Fas. Esse é o mecanismo do exantema bolhoso e da síndrome de Stevens-Johnson, em que o descolamento cutâneo decorre da apoptose maciça de queratinócitos."
+    },
+    {
+      "question": "Paciente desenvolve urticária e hipotensão imediatamente após contraste iodado, sem IgE específica detectável. Como se classifica essa reação?",
+      "options": [
+        "Tipo I IgE-independente, por ativação direta do mastócito pela substância",
+        "Tipo I IgE-dependente, por ligação cruzada do alérgeno à IgE da membrana",
+        "Tipo II citotóxica, por anticorpo contra a membrana da célula endotelial",
+        "Tipo III, por imunocomplexos formados entre o contraste e anticorpo IgG"
+      ],
+      "correctIndex": 0,
+      "explanation": "A classificação atualizada divide o tipo I em IgE-dependente (anafilática) e IgE-independente, também chamada anafilactoide. Contrastes iodados e alguns biológicos ativam o mastócito diretamente, sem sensibilização prévia: o quadro clínico é idêntico, mas pode ocorrer já no primeiro contato."
+    },
+    {
+      "question": "Depois de produzida, a IgE específica se fixa à superfície do mastócito antes de qualquer novo contato com o alérgeno. Qual estrutura permite essa fixação?",
+      "options": [
+        "O receptor FcεRI, de alta afinidade pela porção Fc da IgE",
+        "O receptor CD23, de baixa afinidade expresso em linfócitos B",
+        "O receptor CR1 do complemento, que capta fragmentos de C3b",
+        "O MHC de classe II, que apresenta peptídeos a linfócitos CD4+"
+      ],
+      "correctIndex": 0,
+      "explanation": "O FcεRI é o receptor de alta afinidade para IgE expresso em mastócitos e basófilos. É ele que mantém a IgE ancorada por longos períodos, deixando a célula sensibilizada e pronta para degranular assim que o alérgeno fizer a ligação cruzada entre duas moléculas vizinhas de IgE."
+    },
+    {
+      "question": "A reação de hipersensibilidade tipo I é descrita como bifásica. O que caracteriza a fase tardia, que surge horas após o contato?",
+      "options": [
+        "Recrutamento de eosinófilos e inflamação tecidual sustentada",
+        "Degranulação imediata do mastócito com pico rápido de histamina",
+        "Produção inicial de IgE específica pelos plasmócitos recém-formados",
+        "Deposição de imunocomplexos na parede dos pequenos vasos da pele"
+      ],
+      "correctIndex": 0,
+      "explanation": "A fase precoce ocorre em minutos, com mediadores pré-formados do mastócito. A fase tardia, horas depois, decorre de citocinas que recrutam eosinófilos e outras células inflamatórias: é ela que explica a obstrução nasal sustentada, o eczema e a cronificação da asma."
+    },
+    {
+      "question": "O esquema separa os mediadores liberados pelo mastócito em pré-formados e sintetizados no momento da ativação. Qual divisão está correta?",
+      "options": [
+        "Pré-formados: histamina e triptase; sintetizados: prostaglandinas e leucotrienos",
+        "Pré-formados: prostaglandinas e leucotrienos; sintetizados: histamina e triptase",
+        "Pré-formados: histamina e leucotrienos; sintetizados: triptase e interleucina-5",
+        "Pré-formados: triptase e interleucina-4; sintetizados: histamina e prostaglandinas"
+      ],
+      "correctIndex": 0,
+      "explanation": "Histamina e triptase ficam estocadas nos grânulos e saem em segundos, o que explica o início imediato dos sintomas. Prostaglandinas e leucotrienos derivam do ácido araquidônico da membrana e precisam ser sintetizados, chegando um pouco depois e sustentando broncoconstrição e vasodilatação.",
+      "image": "s17i1",
+      "imageCaption": "Fase de sensibilização e fase efetora da reação alérgica"
+    },
+    {
+      "question": "Comparando as duas colunas do esquema, o que acontece exclusivamente na primeira exposição ao alérgeno?",
+      "options": [
+        "Produção de IgE específica e sua fixação nos mastócitos, sem sintomas",
+        "Ligação cruzada da IgE já fixada, com degranulação e sintomas agudos",
+        "Liberação de histamina pelo mastócito, com prurido, espirros e coriza",
+        "Broncoconstrição e vasodilatação causadas pelos mediadores liberados"
+      ],
+      "correctIndex": 0,
+      "explanation": "A primeira exposição é apenas sensibilizante e silenciosa: a célula dendrítica apresenta o alérgeno via MHC II, o Th2 libera IL-4, o linfócito B troca de classe e o plasmócito produz IgE, que se fixa ao FcεRI. Os sintomas só aparecem na reexposição, quando o alérgeno faz a ligação cruzada.",
+      "image": "s16i1",
+      "imageCaption": "Sensibilização alérgica versus reação na reexposição"
+    },
+    {
+      "question": "Na cascata representada, qual é o papel das interleucinas 4 e 5 liberadas pelo linfócito Th2?",
+      "options": [
+        "IL-4 induz o linfócito B a produzir IgE; IL-5 recruta os eosinófilos",
+        "IL-4 recruta os eosinófilos; IL-5 induz o linfócito B a produzir IgE",
+        "IL-4 ativa os macrófagos teciduais; IL-5 estimula a produção de IgG",
+        "IL-4 e IL-5 inibem a resposta Th2 e encerram a cascata alérgica"
+      ],
+      "correctIndex": 0,
+      "explanation": "A IL-4 é o sinal de troca de classe que leva o linfócito B a produzir IgE, e a IL-5 é o fator de recrutamento e sobrevida do eosinófilo. Essa divisão explica por que a reação aguda depende de IgE e mastócito, enquanto a reação crônica é dominada por eosinófilos e dano tecidual.",
+      "image": "s07i1",
+      "imageCaption": "Cascata alérgica: reação aguda e reação crônica"
+    },
+    {
+      "question": "A atopia atinge cerca de 40% das populações ocidentais. Qual perfil imunológico a caracteriza?",
+      "options": [
+        "Resposta dominante Th2 com produção aumentada de IgE específica",
+        "Resposta dominante Th1 com produção aumentada de interferon-gama",
+        "Deficiência de IgA secretora nas superfícies mucosas mais expostas",
+        "Ativação crônica da via alternativa do sistema complemento sérico"
+      ],
+      "correctIndex": 0,
+      "explanation": "O terreno atópico é definido pelo desvio da resposta para o padrão Th2, com IL-4 e IL-13 dirigindo a troca de classe para IgE. Há múltiplos loci de suscetibilidade, e variantes de ganho de função na subunidade alfa do receptor de IL-4 estão associadas à atopia."
+    },
+    {
+      "question": "Qual conjunto de condições perinatais e ambientais se associa a MENOR risco de atopia na infância?",
+      "options": [
+        "Parto vaginal a termo, amamentação e convívio com dois ou mais irmãos",
+        "Parto cesáreo prematuro, fórmula infantil e condição de filho único",
+        "Antibiótico no primeiro ano, vida urbana e alta renda familiar",
+        "Tabagismo materno no primeiro ano, baixo peso e creche precoce"
+      ],
+      "correctIndex": 0,
+      "explanation": "Parto vaginal a termo, aleitamento materno, ter dois ou mais irmãos, ambiente rural e exposição precoce a cães e gatos protegem por aumentar a diversidade microbiana e favorecer um microbioma intestinal rico em Bifidobacterium e Clostridiais. Cesárea, prematuridade e antibiótico precoce fazem o contrário."
+    },
+    {
+      "question": "O esquema reúne os fatores que convergem para a atopia. Qual grupo deles traduz especificamente a hipótese da higiene?",
+      "options": [
+        "Poucos irmãos, higiene excessiva e antibiótico nos dois primeiros anos",
+        "Polimorfismo do CD14 e alelos HLA que favorecem a apresentação",
+        "Infecções virais e fumaça de tabaco atuando como gatilhos da crise",
+        "Defeitos nos órgãos-alvo: epitélio brônquico, pele e intestino"
+      ],
+      "correctIndex": 0,
+      "explanation": "A hipótese da higiene propõe que a baixa exposição microbiana na primeira infância desvia o sistema imune para responder a alérgenos inofensivos. Ter poucos irmãos, higiene excessiva e uso precoce de antibióticos são os marcadores ambientais dessa baixa carga microbiana, e não fatores genéticos ou gatilhos agudos.",
+      "image": "s11i1",
+      "imageCaption": "Fatores genéticos, ambientais e gatilhos que convergem para a atopia"
+    },
+    {
+      "question": "Qual é a sequência habitual de manifestações na marcha atópica?",
+      "options": [
+        "Dermatite atópica, alergia alimentar, rinite alérgica e depois asma",
+        "Rinite alérgica, asma, dermatite atópica e depois alergia alimentar",
+        "Asma, rinite alérgica, alergia alimentar e depois dermatite atópica",
+        "Alergia alimentar, asma, dermatite atópica e depois rinite alérgica"
+      ],
+      "correctIndex": 0,
+      "explanation": "A marcha atópica começa pela dermatite atópica no lactente, segue com alergia alimentar na primeira infância, depois rinite alérgica e asma na infância e adolescência, e pode fechar com esofagite eosinofílica em momento variável. Reconhecer a ordem permite antecipar o próximo passo."
+    },
+    {
+      "question": "Por que a dermatite atópica costuma ser a primeira manifestação da marcha atópica?",
+      "options": [
+        "A falha da barreira epitelial permite sensibilização precoce pela pele",
+        "A pele é o único órgão capaz de produzir IgE específica no lactente",
+        "O eczema consome os mastócitos e adia as manifestações respiratórias",
+        "A barreira intestinal amadurece antes e protege contra os alimentos"
+      ],
+      "correctIndex": 0,
+      "explanation": "A disfunção da barreira epitelial cutânea é o evento inicial: queratinócitos e lipídios do estrato córneo falham, aumentam a perda de água e a entrada de alérgenos, e a sensibilização ocorre pela via transcutânea. A partir daí o terreno Th2 se estabelece e as demais manifestações aparecem."
+    },
+    {
+      "question": "Criança assintomática tem IgE específica positiva para amendoim e come o alimento regularmente sem qualquer reação. Como interpretar esse resultado?",
+      "options": [
+        "Há apenas sensibilização; sem reação clínica não se diagnostica alergia",
+        "Há alergia confirmada; a dieta de exclusão deve começar imediatamente",
+        "O exame é falso-positivo e precisa ser repetido com o dobro do antígeno",
+        "Há tolerância definitiva e nenhum novo teste precisará ser solicitado"
+      ],
+      "correctIndex": 0,
+      "explanation": "IgE específica e teste de puntura detectam sensibilização, ou seja, a presença de IgE contra aquele alérgeno, e não alergia. O diagnóstico exige que a sensibilização venha acompanhada de reação clínica reprodutível à exposição. Testar sem história dirigida gera dietas de exclusão desnecessárias."
+    },
+    {
+      "question": "Como se faz corretamente a leitura do teste cutâneo de puntura?",
+      "options": [
+        "Em quinze a vinte minutos, medindo a pápula e comparando com os controles",
+        "Em quarenta e oito a noventa e seis horas, avaliando o eczema no local",
+        "Em sete dias, dosando a IgE específica no soro colhido logo após o teste",
+        "Em duas horas, medindo apenas o eritema, sem considerar os controles"
+      ],
+      "correctIndex": 0,
+      "explanation": "O teste de puntura reproduz na pele a reação tipo I imediata, com leitura em quinze a vinte minutos. Considera-se positiva a pápula com pelo menos três milímetros a mais que o controle negativo, sempre comparada ao controle positivo com histamina. Anti-histamínicos devem ser suspensos antes."
+    },
+    {
+      "question": "Paciente teve placa pruriginosa no local de contato com um acessório metálico, dois dias depois do uso. Qual exame confirma o diagnóstico e em que prazo é lido?",
+      "options": [
+        "Teste de contato, com leitura entre quarenta e oito e noventa e seis horas",
+        "Teste de puntura, com leitura entre quinze e vinte minutos do contato",
+        "Dosagem de IgE específica, com resultado liberado em poucos dias",
+        "Hemograma com contagem de eosinófilos, colhido durante a fase aguda"
+      ],
+      "correctIndex": 0,
+      "explanation": "A dermatite de contato alérgica é hipersensibilidade tipo IV, mediada por linfócitos T, e o teste de contato é o exame padrão quando indicado. As substâncias ficam ocluídas no dorso por quarenta e oito horas e a leitura é feita entre quarenta e oito e noventa e seis horas, acompanhando a cinética celular."
+    },
+    {
+      "question": "Qual é o padrão-ouro para confirmar alergia alimentar quando a história clínica e os testes são discordantes?",
+      "options": [
+        "O teste de provocação oral, feito sob supervisão médica",
+        "A dosagem seriada de IgE total, repetida a cada três meses",
+        "A dieta de exclusão prolongada por no mínimo seis meses",
+        "O teste de puntura repetido com extrato mais concentrado"
+      ],
+      "correctIndex": 0,
+      "explanation": "O teste de provocação oral é o único exame capaz de demonstrar a relação causal entre o alimento e os sintomas, por isso é o padrão-ouro. Exige ambiente preparado para tratar anafilaxia. IgE total é inespecífica e a dieta de exclusão prolongada sem diagnóstico traz risco nutricional."
+    },
+    {
+      "question": "Quais alimentos respondem pela maior parte das alergias alimentares IgE-mediadas na infância?",
+      "options": [
+        "Leite de vaca, ovo, amendoim, castanhas, trigo, soja, peixe e crustáceos",
+        "Arroz, batata, banana, abóbora, cenoura, maçã, alface e carne bovina",
+        "Café, chá-mate, chocolate amargo, pimenta, canela, cravo e gengibre",
+        "Milho, mandioca, inhame, aveia, azeite, alho, cebola e folhas verdes"
+      ],
+      "correctIndex": 0,
+      "explanation": "Um pequeno grupo concentra a maioria dos casos: leite de vaca e ovo predominam no lactente e tendem a resolver com a idade, enquanto amendoim, castanhas, peixe e crustáceos costumam persistir na vida adulta. Conhecer essa lista orienta a anamnese e evita exclusões aleatórias."
+    },
+    {
+      "question": "Lactente apresenta vômitos repetidos duas horas após a fórmula, com palidez e prostração, sem urticária nem broncoespasmo. Qual é o mecanismo mais provável?",
+      "options": [
+        "Alergia não IgE-mediada, com sintomas digestivos tardios e testes negativos",
+        "Alergia IgE-mediada, com sintomas cutâneos imediatos e testes positivos",
+        "Anafilaxia IgE-mediada, com broncoespasmo e queda rápida da pressão",
+        "Intolerância à lactose, com diarreia osmótica e ausência de vômitos"
+      ],
+      "correctIndex": 0,
+      "explanation": "A alergia alimentar divide-se em IgE-mediada, com sintomas em minutos e testes cutâneos positivos, e não IgE-mediada, de mecanismo celular, com manifestações digestivas tardias e testes habitualmente negativos. Vômitos profusos uma a quatro horas após a proteína, com palidez e letargia, descrevem esse segundo grupo."
+    },
+    {
+      "question": "Qual afirmação descreve corretamente como se estabelece o diagnóstico de dermatite atópica?",
+      "options": [
+        "É clínico, guiado por prurido, curso recorrente, xerose e distribuição",
+        "Exige biópsia cutânea confirmatória em praticamente todos os casos",
+        "Exige IgE total elevada, sem a qual a hipótese deve ser descartada",
+        "Exige dieta de exclusão de prova antes de qualquer outro tratamento"
+      ],
+      "correctIndex": 0,
+      "explanation": "O diagnóstico é essencialmente clínico: prurido como sintoma guia, curso crônico ou recorrente, xerose frequente, distribuição típica que varia com a idade e história pessoal ou familiar de atopia. Não existe exame laboratorial isolado que feche o diagnóstico, e biópsia é desnecessária nos casos típicos."
+    },
+    {
+      "question": "A pele do dorso da mão mostra espessamento com acentuação das linhas cutâneas e hiperpigmentação. Como se chama esse achado e o que ele indica?",
+      "options": [
+        "Liquenificação, que indica coçadura crônica e eczema de longa duração",
+        "Eritrodermia, que indica acometimento de mais de 90% da superfície",
+        "Xerose, que indica apenas perda de água por barreira cutânea deficiente",
+        "Crosta melicérica, que indica infecção bacteriana secundária instalada"
+      ],
+      "correctIndex": 0,
+      "explanation": "Liquenificação é o espessamento da pele com acentuação do quadriculado cutâneo, resultado de atrito e coçadura mantidos. É a marca da fase crônica do eczema e ajuda a separar dermatite atópica, persistente e descamativa, da urticária, cujas lesões são fugazes e migratórias.",
+      "image": "s19i3",
+      "imageCaption": "Liquenificação no dorso da mão"
+    },
+    {
+      "question": "A lesão eczematosa exsudativa ocupa a fossa antecubital de uma criança com prurido intenso e xerose difusa. Qual é a hipótese principal?",
+      "options": [
+        "Dermatite atópica, cuja distribuição flexural é típica nessa faixa etária",
+        "Psoríase vulgar, cujas placas bem delimitadas predominam nos extensores",
+        "Escabiose, cujo prurido noturno predomina nos espaços interdigitais",
+        "Dermatite seborreica, cuja escama oleosa ocupa áreas ricas em sebo"
+      ],
+      "correctIndex": 0,
+      "explanation": "Eczema em flexuras, prurido como sintoma guia e xerose compõem o padrão clássico da dermatite atópica na criança maior e no adolescente. A distribuição é tão informativa quanto a morfologia: psoríase prefere extensores, escabiose prefere interdigitais e punhos, e a seborreica ocupa áreas sebáceas.",
+      "image": "s33i1",
+      "imageCaption": "Eczema flexural na fossa antecubital"
+    },
+    {
+      "question": "Placas eritematosas confluentes e migratórias cobrem o tronco de uma criança de nove anos. Qual característica evolutiva confirma urticária?",
+      "options": [
+        "Cada lesão individual desaparece em menos de vinte e quatro horas",
+        "Cada lesão individual persiste por semanas e termina descamando",
+        "As lesões respeitam estritamente os limites da área de contato",
+        "As lesões evoluem para liquenificação em poucos dias de curso"
+      ],
+      "correctIndex": 0,
+      "explanation": "A urticária é doença mediada por mastócito e sua lesão é fugaz: cada placa individual surge, migra e desaparece sem deixar marca em menos de vinte e quatro horas. Lesão fixa que persiste além desse prazo ou deixa pigmentação obriga a pensar em urticária vasculite e outros diagnósticos.",
+      "image": "s09i1",
+      "imageCaption": "Urticária em criança de nove anos"
+    },
+    {
+      "question": "O que distingue a dermatite de contato irritativa da dermatite de contato alérgica?",
+      "options": [
+        "A irritativa é dano direto e ocorre em qualquer pessoa exposta o bastante",
+        "A irritativa exige sensibilização prévia e só ocorre em quem já reagiu",
+        "A irritativa é tardia, mediada por linfócitos T de memória específicos",
+        "A irritativa é imediata, mediada por IgE fixada em mastócitos da derme"
+      ],
+      "correctIndex": 0,
+      "explanation": "A irritativa resulta de agressão direta à barreira e depende só da dose e do tempo de exposição: qualquer pessoa desenvolve, com ardor, fissuras e dor mais marcantes, sobretudo nas mãos. A alérgica é hipersensibilidade tardia tipo IV, exige sensibilização prévia e cursa com prurido mais intenso."
+    },
+    {
+      "question": "Quais achados tornam a escabiose mais provável que a dermatite atópica em uma criança com prurido?",
+      "options": [
+        "Prurido pior à noite, lesões interdigitais e contato domiciliar coçando",
+        "Prurido pior ao sol, lesões em flexuras e história familiar de asma",
+        "Escama oleosa no sulco nasolabial e couro cabeludo com prurido leve",
+        "Placas espessas em superfícies extensoras com acometimento ungueal"
+      ],
+      "correctIndex": 0,
+      "explanation": "Escabiose é o grande mimetizador do eczema: prurido muito intenso de predomínio noturno, túneis e lesões em espaços interdigitais, punhos, axilas e genitais, e sobretudo contatos domiciliares também coçando. A ausência desses três dados torna o diagnóstico improvável."
+    },
+    {
+      "question": "Qual é a base da conduta inicial em um surto de dermatite atópica sem sinais de infecção?",
+      "options": [
+        "Hidratar e restaurar a barreira, somando corticoide tópico durante a crise",
+        "Prescrever antibiótico oral de rotina, mesmo sem qualquer sinal infeccioso",
+        "Instituir dieta de exclusão ampla, retirando leite, ovo e trigo de imediato",
+        "Manter corticoide oral prolongado como primeira medida em todos os surtos"
+      ],
+      "correctIndex": 0,
+      "explanation": "O primeiro passo é restaurar a barreira com hidratação frequente e emolientes, suspender produtos irritantes ou perfumados e usar corticoide tópico com potência ajustada à área e à intensidade do surto. Antibiótico só com evidência clínica de infecção, e casos refratários vão para o especialista."
+    },
+    {
+      "question": "Em que situação se reconhece anafilaxia em um paciente que acabou de se expor a um possível alérgeno?",
+      "options": [
+        "Quando há acometimento agudo de dois ou mais sistemas, ou hipotensão",
+        "Somente quando há hipotensão com perda de consciência documentada",
+        "Somente quando a triptase sérica retorna elevada do laboratório",
+        "Quando há urticária isolada, mesmo sem outro sistema envolvido"
+      ],
+      "correctIndex": 0,
+      "explanation": "Anafilaxia é diagnóstico clínico e não pode esperar exame: reconhece-se pelo início agudo com envolvimento de dois ou mais sistemas, como pele mais respiratório, digestivo ou cardiovascular, ou por hipotensão após exposição a alérgeno conhecido. A triptase pode confirmar depois, mas nunca orienta a conduta."
+    },
+    {
+      "question": "Qual é o tratamento de primeira linha da anafilaxia e como deve ser administrado?",
+      "options": [
+        "Adrenalina intramuscular na face anterolateral da coxa, 0,01 mg/kg",
+        "Anti-histamínico intravenoso em dose plena, repetido a cada hora",
+        "Corticoide intravenoso em dose alta, antes de qualquer outra droga",
+        "Adrenalina subcutânea no deltoide, 0,1 mg/kg, repetida se preciso"
+      ],
+      "correctIndex": 0,
+      "explanation": "A adrenalina é a única droga que modifica o desfecho e deve ser dada imediatamente: 0,01 mg/kg da solução 1:1000, por via intramuscular no vasto lateral, máximo de 0,3 mg na criança e 0,5 mg no adulto. A via intramuscular na coxa atinge pico sérico mais rápido que a subcutânea ou o deltoide."
+    },
+    {
+      "question": "Qual conduta é inadequada diante de um quadro de anafilaxia em curso?",
+      "options": [
+        "Adiar a adrenalina para dar anti-histamínico e corticoide primeiro",
+        "Deitar o paciente com os membros inferiores elevados e ofertar oxigênio",
+        "Repetir a adrenalina em cinco minutos se a resposta for insuficiente",
+        "Manter observação prolongada pelo risco de reação bifásica tardia"
+      ],
+      "correctIndex": 0,
+      "explanation": "Anti-histamínico e corticoide são adjuvantes: não revertem broncoespasmo nem hipotensão e, usados primeiro, apenas atrasam a adrenalina, o que é a principal causa de óbito evitável. Também não se deve sentar ou levantar bruscamente o paciente hipotenso, pelo risco de colapso por esvaziamento do ventrículo."
+    }
+  ]
+}

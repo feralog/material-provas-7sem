@@ -1,0 +1,363 @@
+{
+  "titulo": "Miastenia Gravis e Guillain-Barré",
+  "eyebrow": "Neurologia · Junção Neuromuscular e Nervo Periférico",
+  "subtitulo": "Fadigabilidade na junção neuromuscular e fraqueza ascendente no nervo",
+  "intro": "Miastenia gravis do anticorpo anti-AChR à crise miastênica, e síndrome de Guillain-Barré das variantes axonais ao manejo das complicações.",
+  "questoes": [
+    {
+      "question": "Contra que estrutura são dirigidos os autoanticorpos na miastenia gravis?",
+      "options": [
+        "Receptores de acetilcolina da membrana pós-sináptica",
+        "Canais de cálcio da terminação pré-sináptica",
+        "Bainha de mielina dos nervos periféricos motores",
+        "Enzima acetilcolinesterase da fenda sináptica"
+      ],
+      "correctIndex": 0,
+      "explanation": "A miastenia gravis é uma doença autoimune da transmissão neuromuscular em que autoanticorpos se dirigem aos receptores de acetilcolina (AChR) da junção neuromuscular. O ataque é pós-sináptico: o nervo libera acetilcolina normalmente, mas o músculo não a reconhece."
+    },
+    {
+      "question": "O que acontece com os receptores de acetilcolina atacados pelos autoanticorpos na miastenia gravis?",
+      "options": [
+        "São bloqueados, degradados ou destruídos na junção neuromuscular",
+        "São hiperestimulados e dessensibilizados pelo excesso de mediador",
+        "São deslocados para a membrana pré-sináptica do terminal axônico",
+        "São preservados, e a falha está na liberação do neurotransmissor"
+      ],
+      "correctIndex": 0,
+      "explanation": "Os autoanticorpos bloqueiam, degradam ou destroem os receptores de acetilcolina. O resultado é o prejuízo da transmissão do sinal nervoso para o músculo, que se traduz clinicamente em fraqueza muscular e fadiga.",
+      "image": "pg02",
+      "imageCaption": "Junção neuromuscular normal e na miastenia gravis"
+    },
+    {
+      "question": "Que comportamento da fraqueza muscular é a marca registrada da miastenia gravis?",
+      "options": [
+        "Fraqueza flutuante, que piora com o uso e melhora com o repouso",
+        "Fraqueza constante, que não se altera com o uso nem com o repouso",
+        "Fraqueza matinal intensa, que desaparece ao longo do dia de trabalho",
+        "Fraqueza que piora no repouso e melhora com o exercício repetido"
+      ],
+      "correctIndex": 0,
+      "explanation": "A característica principal da miastenia gravis é a fraqueza muscular flutuante com fadigabilidade: o músculo falha progressivamente à medida que é usado e recupera força com o repouso. Daí a piora vespertina típica, que não aparece nas miopatias de fraqueza fixa."
+    },
+    {
+      "question": "Qual é a distribuição etária e por sexo típica da miastenia gravis?",
+      "options": [
+        "Mulheres jovens, de 20 a 30 anos, e homens idosos, de 60 a 70 anos",
+        "Homens jovens, de 20 a 30 anos, e mulheres idosas, de 60 a 70 anos",
+        "Mulheres e homens igualmente, com pico único entre 40 e 50 anos",
+        "Crianças de 5 a 10 anos e adultos de 30 a 40 anos, em ambos os sexos"
+      ],
+      "correctIndex": 0,
+      "explanation": "A miastenia gravis tem distribuição bimodal: acomete sobretudo mulheres jovens, na faixa de 20 a 30 anos, e homens idosos, na faixa de 60 a 70 anos. Reconhecer esses dois picos ajuda a levantar a hipótese diante de ptose e fadigabilidade."
+    },
+    {
+      "question": "Qual é a prevalência estimada da miastenia gravis na população?",
+      "options": [
+        "20 a 30 casos por 100.000 pessoas",
+        "1 a 2 casos por 100.000 pessoas",
+        "2 a 3 casos por 1.000.000 de pessoas",
+        "200 a 300 casos por 100.000 pessoas"
+      ],
+      "correctIndex": 0,
+      "explanation": "A prevalência da miastenia gravis é de 20 a 30 casos por 100.000 pessoas. É uma ordem de grandeza bem maior que a da síndrome de Guillain-Barré, cuja incidência é de 1 a 2 casos por 100.000 pessoas por ano."
+    },
+    {
+      "question": "Como se distribuem as formas clínicas ocular e generalizada da miastenia gravis?",
+      "options": [
+        "Ocular em 15% dos casos e generalizada em 85%",
+        "Ocular em 85% dos casos e generalizada em 15%",
+        "Ocular em 50% dos casos e generalizada em 50%",
+        "Ocular em 5% dos casos e generalizada em 95%"
+      ],
+      "correctIndex": 0,
+      "explanation": "A forma ocular, restrita aos músculos oculares com ptose palpebral e diplopia, responde por 15% dos casos. A forma generalizada, que acomete músculos oculares, faciais, bulbares e esqueléticos, responde por 85%.",
+      "image": "pg03",
+      "imageCaption": "Classificação clínica da miastenia gravis"
+    },
+    {
+      "question": "O que caracteriza a miastenia gravis neonatal?",
+      "options": [
+        "Anticorpos maternos transmitidos ao bebê, com resolução em semanas",
+        "Mutação do receptor no bebê, com quadro permanente desde o nascimento",
+        "Anticorpos produzidos pelo bebê, com evolução para a forma ocular",
+        "Timoma congênito do bebê, com necessidade de timectomia precoce"
+      ],
+      "correctIndex": 0,
+      "explanation": "A miastenia gravis neonatal ocorre em bebês de mães portadoras da doença, por transmissão passiva de anticorpos pela placenta. É temporária e se resolve em semanas, à medida que os anticorpos maternos são depurados da circulação do recém-nascido."
+    },
+    {
+      "question": "Quais são os dois sintomas que mais frequentemente abrem o quadro da miastenia gravis?",
+      "options": [
+        "Ptose palpebral e diplopia",
+        "Disfagia e voz nasalada",
+        "Mialgia e fraqueza distal",
+        "Parestesia e arreflexia"
+      ],
+      "correctIndex": 0,
+      "explanation": "A ptose palpebral, ou queda da pálpebra, e a diplopia, ou visão dupla, são os sintomas de estreia mais comuns. A fraqueza proximal e os sintomas bulbares costumam aparecer depois, na evolução para a forma generalizada."
+    },
+    {
+      "question": "Que conjunto define os sintomas bulbares da miastenia gravis?",
+      "options": [
+        "Dificuldade para mastigar, engolir e falar",
+        "Dificuldade para subir escadas e pentear-se",
+        "Queda da pálpebra e visão dupla à tarde",
+        "Dormência da face e perda do paladar"
+      ],
+      "correctIndex": 0,
+      "explanation": "Os sintomas bulbares da miastenia gravis são a dificuldade para mastigar, engolir ou falar, somada à voz nasalada. Subir escadas e levantar os braços traduzem fraqueza proximal, e a ptose com diplopia é o acometimento ocular."
+    },
+    {
+      "question": "Em que consiste o teste do gelo no diagnóstico da miastenia gravis?",
+      "options": [
+        "Aplicar gelo sobre a pálpebra e observar melhora da ptose",
+        "Aplicar gelo sobre a pálpebra e observar piora da ptose",
+        "Aplicar gelo sobre o antebraço e observar melhora da força",
+        "Aplicar gelo sobre a nuca e observar melhora da diplopia"
+      ],
+      "correctIndex": 0,
+      "explanation": "O teste do gelo consiste em aplicar gelo sobre a pálpebra caída e observar melhora da ptose. É uma manobra de consultório, rápida e sem risco, que reforça a suspeita antes da dosagem de anticorpos e da eletroneuromiografia."
+    },
+    {
+      "question": "Com que frequência a dosagem de anticorpos anti-AChR é positiva na miastenia gravis generalizada?",
+      "options": [
+        "Em cerca de 85% dos casos",
+        "Em cerca de 15% dos casos",
+        "Em cerca de 50% dos casos",
+        "Em praticamente 100% dos casos"
+      ],
+      "correctIndex": 0,
+      "explanation": "Os anticorpos anti-receptor de acetilcolina são positivos em aproximadamente 85% dos casos de miastenia gravis generalizada. A soronegatividade, portanto, não afasta o diagnóstico e obriga a prosseguir com outros exames."
+    },
+    {
+      "question": "Qual é o papel da pesquisa do anticorpo anti-MuSK na miastenia gravis?",
+      "options": [
+        "Identifica parte dos casos soronegativos para o anti-AChR",
+        "Confirma o diagnóstico apenas nos casos oculares puros",
+        "Substitui a estimulação repetitiva nos casos duvidosos",
+        "Prediz a resposta à timectomia nos casos com timoma"
+      ],
+      "correctIndex": 0,
+      "explanation": "O anticorpo anti-MuSK está presente em parte dos pacientes que são soronegativos para o anti-receptor de acetilcolina. Pesquisá-lo é o passo seguinte quando a suspeita clínica é forte e o anti-AChR veio negativo."
+    },
+    {
+      "question": "Que achado a estimulação nervosa repetitiva mostra na miastenia gravis?",
+      "options": [
+        "Decremento progressivo da amplitude da resposta muscular",
+        "Incremento progressivo da amplitude da resposta muscular",
+        "Redução da velocidade de condução nos nervos estimulados",
+        "Bloqueio completo da condução já no primeiro estímulo"
+      ],
+      "correctIndex": 0,
+      "explanation": "Na eletroneuromiografia, o teste de estimulação repetitiva revela decremento da resposta muscular: a amplitude cai estímulo após estímulo, tradução elétrica da fadigabilidade. A redução da velocidade de condução é achado de doença desmielinizante do nervo, não da junção."
+    },
+    {
+      "question": "Qual é o mecanismo do tratamento sintomático de primeira linha da miastenia gravis?",
+      "options": [
+        "Inibir a acetilcolinesterase e melhorar a transmissão neuromuscular",
+        "Inibir a colina-acetiltransferase e poupar o estoque de acetilcolina",
+        "Bloquear a produção de autoanticorpos pelos linfócitos B ativados",
+        "Remover os anticorpos circulantes por troca do plasma do paciente"
+      ],
+      "correctIndex": 0,
+      "explanation": "O tratamento sintomático se faz com inibidores da acetilcolinesterase, como a piridostigmina. Ao impedir a degradação da acetilcolina na fenda, o fármaco aumenta a chance de o mediador encontrar um receptor livre e melhora a transmissão neuromuscular. Não altera o processo autoimune."
+    },
+    {
+      "question": "Quais fármacos compõem a imunomodulação de manutenção na miastenia gravis?",
+      "options": [
+        "Prednisona, azatioprina e micofenolato",
+        "Piridostigmina, neostigmina e edrofônio",
+        "Imunoglobulina, plasma fresco e albumina",
+        "Gabapentina, carbamazepina e fenitoína"
+      ],
+      "correctIndex": 0,
+      "explanation": "A imunomodulação de manutenção se faz com corticosteroide, a prednisona, e com imunossupressores como azatioprina e micofenolato. Os anticolinesterásicos são apenas sintomáticos, e a imunoglobulina e a plasmaférese ficam reservadas como terapias de resgate.",
+      "image": "pg08",
+      "imageCaption": "Os quatro degraus do tratamento da miastenia gravis"
+    },
+    {
+      "question": "Em que situação a timectomia é especialmente indicada na miastenia gravis?",
+      "options": [
+        "Na presença de timoma ou de hiperplasia do timo",
+        "Na presença de anticorpo anti-MuSK isolado",
+        "Na forma ocular pura de evolução arrastada",
+        "Na crise com necessidade de ventilação mecânica"
+      ],
+      "correctIndex": 0,
+      "explanation": "A timectomia é o degrau cirúrgico do tratamento e está especialmente indicada nos pacientes com timoma ou hiperplasia do timo. A glândula participa da quebra de tolerância imunológica que sustenta a produção dos autoanticorpos."
+    },
+    {
+      "question": "O que define a crise miastênica?",
+      "options": [
+        "Piora aguda da fraqueza com insuficiência respiratória",
+        "Piora lenta da fraqueza com insuficiência renal aguda",
+        "Melhora súbita da fraqueza após dose alta de piridostigmina",
+        "Fraqueza restrita à musculatura ocular, sem outros sintomas"
+      ],
+      "correctIndex": 0,
+      "explanation": "A crise miastênica é a piora aguda da fraqueza muscular acompanhada de insuficiência respiratória. É emergência médica: o paciente pode precisar de intubação em questão de horas, e o atraso no reconhecimento custa vidas."
+    },
+    {
+      "question": "Que fatores desencadeiam a crise miastênica?",
+      "options": [
+        "Infecções, estresse e medicamentos como os aminoglicosídeos",
+        "Infecções, repouso prolongado e dieta pobre em potássio",
+        "Exercício leve, exposição ao frio e uso de piridostigmina",
+        "Vacinação, hidratação venosa e corticoide em dose baixa"
+      ],
+      "correctIndex": 0,
+      "explanation": "Os gatilhos clássicos da crise miastênica são infecções, estresse e medicamentos, com destaque para os aminoglicosídeos. Por isso a prescrição em um miastênico exige conferir se o antibiótico escolhido interfere na transmissão neuromuscular."
+    },
+    {
+      "question": "Qual é o manejo da crise miastênica?",
+      "options": [
+        "Suporte ventilatório, plasmaférese ou imunoglobulina intravenosa",
+        "Suporte ventilatório, antibiótico profilático e repouso no leito",
+        "Aumento isolado da piridostigmina até controle dos sintomas",
+        "Corticoide em dose alta como medida única, sem suporte na UTI"
+      ],
+      "correctIndex": 0,
+      "explanation": "O manejo da crise miastênica combina suporte ventilatório, com intubação se necessário, terapia de resgate com plasmaférese ou imunoglobulina intravenosa, e ajuste da medicação sintomática e imunossupressora. Nenhuma dessas medidas substitui as outras.",
+      "image": "pg09",
+      "imageCaption": "Crise miastênica: definição, causas e manejo"
+    },
+    {
+      "question": "O que diferencia a crise colinérgica da crise miastênica em um paciente em uso de piridostigmina?",
+      "options": [
+        "Miose, sialorreia e cólicas, por excesso do anticolinesterásico",
+        "Midríase, boca seca e constipação, por excesso do fármaco",
+        "Ptose e diplopia isoladas, por dose insuficiente do fármaco",
+        "Febre e rigidez muscular, por reação ao imunossupressor"
+      ],
+      "correctIndex": 0,
+      "explanation": "As duas crises cursam com fraqueza e podem levar à insuficiência respiratória, mas a colinérgica vem do excesso de anticolinesterásico e traz sinais muscarínicos: miose, sialorreia, lacrimejamento, cólicas e diarreia. A miastênica tem pupila normal e melhora com mais imunoterapia, não com menos piridostigmina."
+    },
+    {
+      "question": "Uma paciente de 26 anos conta que, ao fim do dia, a pálpebra cai, ela enxerga em dobro e não consegue subir escadas nem levantar os braços para pentear o cabelo. Pela manhã está bem. Qual é a hipótese?",
+      "options": [
+        "Miastenia gravis, pela fraqueza flutuante com piora vespertina",
+        "Guillain-Barré, pela fraqueza ascendente de instalação aguda",
+        "Polimiosite, pela fraqueza proximal fixa com dor muscular",
+        "Distrofia muscular, pela fraqueza proximal lenta e progressiva"
+      ],
+      "correctIndex": 0,
+      "explanation": "O conjunto é típico: mulher jovem, ptose e diplopia, fraqueza proximal para subir escadas e levantar os braços, e flutuação com piora ao fim do dia e melhora após o repouso noturno. Esse padrão de fadigabilidade aponta para a junção neuromuscular."
+    },
+    {
+      "question": "Que característica separa a instalação da miastenia gravis da do Guillain-Barré?",
+      "options": [
+        "A miastenia flutua no dia a dia; o Guillain-Barré progride em semanas",
+        "A miastenia progride em semanas; o Guillain-Barré flutua no dia a dia",
+        "Ambas flutuam ao longo do dia e estabilizam em poucas semanas",
+        "Ambas progridem sem flutuação até a insuficiência respiratória"
+      ],
+      "correctIndex": 0,
+      "explanation": "A miastenia gravis tem fraqueza flutuante, que varia dentro do mesmo dia conforme o uso e o repouso. A síndrome de Guillain-Barré piora de forma monofásica em dias a semanas, estabiliza em um platô e depois recupera. Essa diferença de curva temporal separa as duas na beira do leito."
+    },
+    {
+      "question": "Qual é a incidência anual estimada da síndrome de Guillain-Barré?",
+      "options": [
+        "1 a 2 casos por 100.000 pessoas por ano",
+        "1 a 2 casos por 1.000.000 de pessoas",
+        "20 a 30 casos por 100.000 pessoas por ano",
+        "10 a 15 casos por 100.000 pessoas por ano"
+      ],
+      "correctIndex": 0,
+      "explanation": "A incidência da síndrome de Guillain-Barré é de 1 a 2 casos por 100.000 pessoas por ano. Acomete todas as idades, com maior frequência em adultos jovens e idosos."
+    },
+    {
+      "question": "Que agentes infecciosos são classicamente apontados como gatilho da síndrome de Guillain-Barré?",
+      "options": [
+        "Campylobacter jejuni e citomegalovírus",
+        "Streptococcus pyogenes e vírus da rubéola",
+        "Mycobacterium leprae e vírus da hepatite B",
+        "Treponema pallidum e vírus do sarampo"
+      ],
+      "correctIndex": 0,
+      "explanation": "Campylobacter jejuni, agente de gastroenterite, e o citomegalovírus são os gatilhos infecciosos clássicos. Por isso a investigação complementar inclui a pesquisa de infecções recentes, e um antecedente de diarreia nas semanas anteriores reforça o diagnóstico."
+    },
+    {
+      "question": "Qual é o mecanismo pelo qual uma infecção prévia leva à síndrome de Guillain-Barré?",
+      "options": [
+        "Resposta imune cruzada que ataca mielina ou axônios periféricos",
+        "Invasão direta do nervo periférico pelo agente infeccioso",
+        "Isquemia dos vasos nutrientes do nervo durante a bacteremia",
+        "Toxina bacteriana que bloqueia a liberação de acetilcolina"
+      ],
+      "correctIndex": 0,
+      "explanation": "O mecanismo é uma resposta imune cruzada: anticorpos gerados contra o agente infeccioso reconhecem também a bainha de mielina ou os axônios dos nervos periféricos. O resultado é desmielinização ou dano axonal, com bloqueio da condução, fraqueza e perda de reflexos."
+    },
+    {
+      "question": "Qual variante responde pela maior parte dos casos de síndrome de Guillain-Barré, e em que proporção?",
+      "options": [
+        "A forma desmielinizante aguda, AIDP, em 90% dos casos",
+        "A neuropatia axonal motora aguda, AMAN, em 90% dos casos",
+        "A síndrome de Miller Fisher, SMF, em 60% dos casos",
+        "A forma axonal sensório-motora, AMSAN, em 45% dos casos"
+      ],
+      "correctIndex": 0,
+      "explanation": "A polirradiculoneuropatia desmielinizante inflamatória aguda, a AIDP, é a variante mais comum e responde por 90% dos casos. Nela o alvo é a mielina dos nervos periféricos, o que explica a lentificação da condução e os bloqueios na eletroneuromiografia.",
+      "image": "f2_pg05",
+      "imageCaption": "Variantes da síndrome de Guillain-Barré"
+    },
+    {
+      "question": "O que distingue a neuropatia axonal motora aguda da sensório-motora aguda?",
+      "options": [
+        "A primeira lesa só axônios motores; a segunda, motores e sensoriais",
+        "A primeira lesa só axônios sensoriais; a segunda, só os motores",
+        "A primeira lesa a mielina; a segunda, os axônios motores apenas",
+        "A primeira lesa as raízes; a segunda, os troncos nervosos distais"
+      ],
+      "correctIndex": 0,
+      "explanation": "A neuropatia axonal motora aguda, a AMAN, causa dano direto aos axônios motores. A neuropatia axonal sensório-motora aguda, a AMSAN, atinge axônios motores e sensoriais. Ambas são variantes axonais, distintas da AIDP, que é desmielinizante."
+    },
+    {
+      "question": "Qual anticorpo está associado à síndrome de Miller Fisher?",
+      "options": [
+        "Anti-GQ1b",
+        "Anti-GM1",
+        "Anti-MAG",
+        "Anti-MuSK"
+      ],
+      "correctIndex": 0,
+      "explanation": "A síndrome de Miller Fisher, variante que cursa com a tríade de oftalmoplegia, ataxia e arreflexia, está associada a anticorpos anti-GQ1b. O anti-MuSK, por contraste, pertence à miastenia gravis soronegativa para o anti-AChR."
+    },
+    {
+      "question": "Quais manifestações autonômicas podem complicar a síndrome de Guillain-Barré?",
+      "options": [
+        "Hipotensão ou hipertensão e arritmias cardíacas",
+        "Hipertermia maligna e rabdomiólise de esforço",
+        "Anidrose generalizada e retenção urinária isolada",
+        "Midríase fixa bilateral e crise hipertensiva isolada"
+      ],
+      "correctIndex": 0,
+      "explanation": "O envolvimento autonômico produz instabilidade da pressão arterial, com hipotensão ou hipertensão, e arritmias cardíacas. É o que torna a monitorização contínua obrigatória nos casos graves, mesmo quando a força ainda não exige ventilação.",
+      "image": "f2_pg07",
+      "imageCaption": "Sintomas iniciais, avançados e autonômicos"
+    },
+    {
+      "question": "Qual é o esquema de imunoglobulina intravenosa usado na síndrome de Guillain-Barré?",
+      "options": [
+        "2 g/kg distribuídos ao longo de 5 dias",
+        "2 mg/kg distribuídos ao longo de 5 dias",
+        "20 g/kg distribuídos ao longo de 5 dias",
+        "2 g/kg em dose única, por 1 dia apenas"
+      ],
+      "correctIndex": 0,
+      "explanation": "A imunoglobulina intravenosa é administrada na dose total de 2 g/kg, distribuída ao longo de 5 dias. A alternativa de mesma eficácia é a plasmaférese, que remove por troca plasmática os anticorpos circulantes.",
+      "image": "f2_pg09",
+      "imageCaption": "Tratamento da síndrome de Guillain-Barré"
+    },
+    {
+      "question": "O que é a síndrome pós-paralítica da síndrome de Guillain-Barré?",
+      "options": [
+        "Fadiga crônica e dor neuropática que persistem após o quadro",
+        "Recidiva da fraqueza ascendente semanas após a alta hospitalar",
+        "Perda auditiva e vestibular que surge depois da fase aguda",
+        "Paralisia definitiva dos nervos cranianos bulbares baixos"
+      ],
+      "correctIndex": 0,
+      "explanation": "A síndrome pós-paralítica é a persistência de fadiga crônica e dor neuropática depois que a fase aguda se resolveu. Soma-se às outras complicações: insuficiência respiratória, arritmias cardíacas e sequelas motoras e sensitivas residuais."
+    }
+  ]
+}

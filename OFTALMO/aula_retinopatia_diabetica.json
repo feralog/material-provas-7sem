@@ -1,0 +1,376 @@
+{
+  "titulo": "Retinopatia Diabética",
+  "eyebrow": "Oftalmologia · Retina",
+  "subtitulo": "Da perda de pericitos ao neovaso: reconhecer, classificar e tratar",
+  "intro": "Fisiopatologia da microangiopatia retiniana, os achados que definem cada estágio na retinografia, edema macular diabético, calendário de rastreamento e as indicações de laser, anti-VEGF e vitrectomia.",
+  "questoes": [
+    {
+      "question": "Em países de alta renda, qual é a principal causa de novos casos de cegueira na faixa etária de 20 a 74 anos?",
+      "options": [
+        "A retinopatia diabética, complicação microvascular do DM",
+        "A degeneração macular relacionada à idade avançada",
+        "O glaucoma primário de ângulo aberto não tratado",
+        "A catarata senil de evolução rápida e bilateral"
+      ],
+      "correctIndex": 0,
+      "explanation": "A retinopatia diabética é a causa mais frequente de novos casos de cegueira entre adultos de 20 a 74 anos em países de alta renda, justamente a faixa economicamente ativa. Cerca de um terço de todos os diabéticos apresenta algum grau de retinopatia. Degeneração macular e glaucoma pesam mais em faixas etárias superiores."
+    },
+    {
+      "question": "Após cerca de 19 anos de doença, qual proporção dos portadores de diabetes tipo 1 já apresenta retinopatia diabética?",
+      "options": [
+        "Aproximadamente 84%, o que torna o exame anual indispensável",
+        "Aproximadamente 34%, número estável ao longo das décadas",
+        "Aproximadamente 15%, concentrados nos piores controles",
+        "Aproximadamente 5%, quase sempre em formas muito leves"
+      ],
+      "correctIndex": 0,
+      "explanation": "Cerca de 84% dos portadores de diabetes tipo 1 desenvolvem retinopatia após 19 anos de doença. O tempo de duração do diabetes é o fator de risco não modificável de maior peso, e no tipo 1 praticamente todos acabam acometidos se viverem tempo suficiente com a doença."
+    },
+    {
+      "question": "Como evolui a frequência de retinopatia diabética proliferativa no diabetes tipo 2 ao longo do tempo de doença?",
+      "options": [
+        "Cerca de 2% antes de 5 anos de doença e 25% após 25 anos",
+        "Cerca de 25% antes de 5 anos de doença e 2% após 25 anos",
+        "Cerca de 2% antes de 5 anos e segue em 2% depois de 25 anos",
+        "Cerca de 40% antes de 5 anos de doença e 80% após 25 anos"
+      ],
+      "correctIndex": 0,
+      "explanation": "No diabetes tipo 2, aproximadamente 2% desenvolvem a forma proliferativa em menos de 5 anos de doença, proporção que sobe para cerca de 25% após 25 anos. A curva ascendente mostra que o risco é cumulativo: quanto maior o tempo de exposição à hiperglicemia, maior a chance de neovascularização."
+    },
+    {
+      "question": "Qual alteração da parede capilar retiniana inicia a cascata que leva à formação dos microaneurismas no diabetes?",
+      "options": [
+        "A perda de pericitos, que enfraquece a parede do capilar",
+        "A perda de fotorreceptores da camada externa da retina",
+        "A perda de células ganglionares da retina mais interna",
+        "A perda de melanócitos do epitélio pigmentar retiniano"
+      ],
+      "correctIndex": 0,
+      "explanation": "Os pericitos são células contráteis que envolvem o capilar e dão sustentação mecânica à sua parede. A hiperglicemia crônica provoca sua apoptose, e a parede desguarnecida se dilata focalmente, formando o microaneurisma — a primeira lesão clinicamente detectável da retinopatia diabética."
+    },
+    {
+      "question": "A hiperglicemia crônica desencadeia quais processos na microvasculatura da retina?",
+      "options": [
+        "Radicais livres, AGEs, inflamação e aumento do VEGF",
+        "Radicais livres, AGEs, inflamação e queda franca do VEGF",
+        "Queda de radicais livres, de AGEs e do estímulo ao VEGF",
+        "Apenas inflamação local, sem estresse oxidativo nem VEGF"
+      ],
+      "correctIndex": 0,
+      "explanation": "A hiperglicemia crônica aciona em paralelo a produção aumentada de radicais livres, a formação de produtos finais de glicação avançada (AGEs), a liberação de fatores inflamatórios e o aumento do fator de crescimento endotelial vascular (VEGF). É a convergência dessas quatro vias que produz o dano microvascular progressivo."
+    },
+    {
+      "question": "O esquema mostra uma proteína reagindo com um açúcar e formando sucessivamente base de Schiff e produto de Amadori. Que produto final essa via gera?",
+      "options": [
+        "Produtos finais de glicação avançada, que lesam o endotélio",
+        "Produtos finais de glicólise anaeróbia, que nutrem o endotélio",
+        "Produtos finais de betaoxidação lipídica, que poupam o endotélio",
+        "Produtos finais de proteólise lisossomal, que protegem o endotélio"
+      ],
+      "correctIndex": 0,
+      "explanation": "A reação não enzimática entre grupos amino de proteínas e açúcares gera a base de Schiff, que se rearranja no produto de Amadori e, ao fim, nos produtos finais de glicação avançada (AGEs). Os AGEs alteram proteínas estruturais, ativam receptores pró-inflamatórios e contribuem diretamente para a disfunção endotelial retiniana.",
+      "image": "s12i1",
+      "imageCaption": "Formação dos produtos finais de glicação avançada (AGEs)"
+    },
+    {
+      "question": "Por que a não-perfusão capilar extensa da retina leva ao surgimento de vasos neoformados?",
+      "options": [
+        "A hipóxia resultante aumenta a expressão de VEGF na retina",
+        "A hipóxia resultante reduz a expressão de VEGF na retina",
+        "O excesso de oxigênio estimula diretamente o endotélio capilar",
+        "A queda da pressão intraocular estira os vasos já existentes"
+      ],
+      "correctIndex": 0,
+      "explanation": "O fechamento progressivo dos capilares cria territórios de retina isquêmica. A hipóxia tecidual induz a expressão de VEGF, que é um potente fator angiogênico e também aumenta a permeabilidade vascular. O VEGF liberado estimula o brotamento de neovasos frágeis, marcando a passagem para a forma proliferativa."
+    },
+    {
+      "question": "Além do componente microvascular clássico, que alteração precoce vem sendo reconhecida na retinopatia diabética?",
+      "options": [
+        "Neurodegeneração retiniana, anterior às alterações vasculares",
+        "Neovascularização da coroide, anterior às alterações vasculares",
+        "Calcificação difusa da esclera, anterior às alterações vasculares",
+        "Opacificação do cristalino, anterior às alterações vasculares"
+      ],
+      "correctIndex": 0,
+      "explanation": "Durante décadas a retinopatia diabética foi entendida como doença puramente microvascular. Evidências mais recentes mostram neurodegeneração retiniana precoce, com apoptose de células ganglionares e afinamento das camadas internas, detectável antes mesmo de aparecerem microaneurismas no exame de fundo de olho."
+    },
+    {
+      "question": "A retinografia destaca pequenas dilatações saculares avermelhadas isoladas no polo posterior, sem hemorragias ou exsudatos. Como se classifica o quadro?",
+      "options": [
+        "Retinopatia não proliferativa leve, definida por microaneurismas",
+        "Retinopatia não proliferativa grave, definida por veias em rosário",
+        "Retinopatia proliferativa inicial, definida por neovasos no disco",
+        "Retinopatia hipertensiva leve, definida por estreitamento arteriolar"
+      ],
+      "correctIndex": 0,
+      "explanation": "A presença isolada de microaneurismas, sem hemorragias, exsudatos ou anormalidades venosas, define a retinopatia diabética não proliferativa leve. O microaneurisma é a primeira lesão clinicamente visível e corresponde à dilatação sacular de um capilar que perdeu seus pericitos de sustentação.",
+      "image": "s24i1",
+      "imageCaption": "Microaneurismas isolados na retinografia"
+    },
+    {
+      "question": "Quais achados caracterizam a retinopatia diabética não proliferativa moderada?",
+      "options": [
+        "Hemorragias intrarretinianas, manchas algodonosas e exsudatos duros",
+        "Neovasos no disco óptico, hemorragia vítrea e tração vitreorretiniana",
+        "Apenas microaneurismas esparsos, sem hemorragias ou qualquer exsudato",
+        "Descolamento tracional, membranas epirretinianas e rubeose de íris"
+      ],
+      "correctIndex": 0,
+      "explanation": "A forma moderada soma aos microaneurismas as hemorragias intrarretinianas, as manchas algodonosas (cotton wool spots) e os exsudatos duros. Ainda não há neovasos, mas já existe extravasamento e isquemia focal suficientes para justificar encaminhamento ao oftalmologista."
+    },
+    {
+      "question": "Uma retinografia mostra hemorragias intrarretinianas nos quatro quadrantes, veias em rosário em dois quadrantes e IRMA, sem qualquer neovaso. Como classificar?",
+      "options": [
+        "Não proliferativa grave, pela regra 4-2-1, sem neovascularização",
+        "Não proliferativa leve, pois ainda não há neovascularização visível",
+        "Proliferativa inicial, pois o IRMA já é um neovaso intrarretiniano",
+        "Proliferativa avançada, pela extensão das hemorragias nos quadrantes"
+      ],
+      "correctIndex": 0,
+      "explanation": "A forma não proliferativa grave, também dita pré-proliferativa, é definida pela regra 4-2-1: hemorragias intrarretinianas graves nos 4 quadrantes, ou veias em rosário em 2 ou mais quadrantes, ou IRMA em pelo menos 1 quadrante, sempre na ausência de neovasos. É o estágio com maior risco de progressão a curto prazo.",
+      "image": "s26i1",
+      "imageCaption": "Hemorragias, veias em rosário e IRMA na retinopatia grave"
+    },
+    {
+      "question": "Comparando as duas retinografias, o achado mostrado à direita é o que define a forma proliferativa da doença. Que achado é esse?",
+      "options": [
+        "Crescimento de vasos novos e anômalos sobre a superfície retiniana",
+        "Acúmulo de exsudatos duros amarelados na região macular central",
+        "Presença de microaneurismas dispersos pelo polo posterior do olho",
+        "Hemorragias puntiformes espalhadas pelos quatro quadrantes da retina"
+      ],
+      "correctIndex": 0,
+      "explanation": "O divisor de águas entre as formas não proliferativa e proliferativa é a neovascularização. Os vasos neoformados crescem na superfície da retina ou do disco óptico em resposta à isquemia grave, têm parede frágil e sangram com facilidade, sendo a origem da hemorragia vítrea e da tração fibrovascular.",
+      "image": "s20i1",
+      "imageCaption": "Retinopatia não proliferativa × proliferativa"
+    },
+    {
+      "question": "Entre os cinco achados ilustrados na faixa, qual é o único que já indica doença proliferativa?",
+      "options": [
+        "Os neovasos, vasos finos e tortuosos que brotam da retina",
+        "Os microaneurismas, pequenas dilatações vermelhas e redondas",
+        "Os exsudatos duros, depósitos amarelos de bordas bem nítidas",
+        "Os exsudatos algodonosos, manchas esbranquiçadas e felpudas"
+      ],
+      "correctIndex": 0,
+      "explanation": "Microaneurismas, micro-hemorragias, exsudatos duros e manchas algodonosas são todos achados da fase não proliferativa. Apenas os neovasos — tufos de vasos finos, tortuosos e desorganizados — caracterizam a retinopatia proliferativa e mudam radicalmente a conduta, indicando laser ou anti-VEGF.",
+      "image": "s25i1",
+      "imageCaption": "Principais achados da retinopatia diabética"
+    },
+    {
+      "question": "O que representam, do ponto de vista histopatológico, as manchas algodonosas encontradas na retina?",
+      "options": [
+        "Microinfartos da camada de fibras nervosas por oclusão arteriolar",
+        "Depósitos de lipoproteínas extravasadas na plexiforme externa",
+        "Dilatações saculares da parede capilar com perda de pericitos",
+        "Tufos de vasos novos brotando a partir das vênulas retinianas"
+      ],
+      "correctIndex": 0,
+      "explanation": "A mancha algodonosa (cotton wool spot) é um microinfarto da camada de fibras nervosas causado por oclusão de uma arteríola pré-capilar. A interrupção do transporte axoplasmático acumula material no axônio e produz a mancha esbranquiçada de bordas mal definidas. É marcador de isquemia, não de extravasamento."
+    },
+    {
+      "question": "Como se diferenciam, na retinografia, os exsudatos duros das manchas algodonosas?",
+      "options": [
+        "Exsudatos duros são amarelos e de bordas nítidas; algodonosas, esbranquiçadas e felpudas",
+        "Exsudatos duros são esbranquiçados e felpudos; algodonosas, amarelas e de bordas nítidas",
+        "Exsudatos duros são vermelhos e arredondados; algodonosas, amarelas e de bordas nítidas",
+        "Exsudatos duros são amarelos e de bordas nítidas; algodonosas, vermelhas e arredondadas"
+      ],
+      "correctIndex": 0,
+      "explanation": "O exsudato duro é um depósito lipoproteico extravasado de capilares incompetentes: amarelo, brilhante e de limites bem definidos, com frequência disposto em anel ao redor de um foco de extravasamento. A mancha algodonosa é isquêmica, acinzentada ou esbranquiçada, com bordas esgarçadas e aspecto felpudo."
+    },
+    {
+      "question": "O que são as anormalidades microvasculares intrarretinianas (IRMA) na retinopatia diabética?",
+      "options": [
+        "Capilares dilatados e tortuosos dentro da retina, junto a áreas isquêmicas",
+        "Vasos novos crescendo acima da superfície retiniana, rumo ao corpo vítreo",
+        "Depósitos lipídicos que se acumulam no interior da retina já isquêmica",
+        "Dilatações saculares da parede venosa que formam o aspecto em rosário"
+      ],
+      "correctIndex": 0,
+      "explanation": "IRMA são capilares preexistentes dilatados e tortuosos que funcionam como desvios (shunts) ao redor de territórios de não-perfusão. Permanecem dentro da espessura da retina, o que os distingue dos neovasos, que crescem acima da superfície retiniana. Sua presença indica isquemia avançada e alto risco de progressão."
+    },
+    {
+      "question": "A retinografia mostra exsudatos duros agrupados em torno da fóvea com espessamento retiniano. Qual a importância clínica desse achado?",
+      "options": [
+        "É o edema macular diabético, principal causa de perda visual moderada",
+        "É o edema macular diabético, exclusivo da retinopatia proliferativa",
+        "É o descolamento tracional, principal causa de perda visual moderada",
+        "É a hemorragia vítrea, achado inicial que precede os microaneurismas"
+      ],
+      "correctIndex": 0,
+      "explanation": "O edema macular diabético resulta do extravasamento de plasma por capilares com barreira hematorretiniana rompida e é a principal causa de perda visual moderada no diabético. Pode ocorrer em qualquer estágio, inclusive na forma não proliferativa leve, e por isso exige encaminhamento imediato quando identificado.",
+      "image": "s19i1",
+      "imageCaption": "Exsudatos duros perifoveais no edema macular diabético"
+    },
+    {
+      "question": "O corte tomográfico mostra espaços císticos e espessamento no centro da mácula. Que exame produz essa imagem e qual sua utilidade aqui?",
+      "options": [
+        "Tomografia de coerência óptica, que quantifica o edema macular",
+        "Retinografia colorida simples, que quantifica o edema macular",
+        "Ultrassonografia ocular modo B, que quantifica o edema macular",
+        "Campimetria computadorizada, que quantifica o edema macular"
+      ],
+      "correctIndex": 0,
+      "explanation": "A tomografia de coerência óptica (OCT) faz cortes de alta resolução da retina e mede a espessura macular em micrometros, revelando cistos intrarretinianos e líquido sub-retiniano. É o exame de escolha para diagnosticar, quantificar e acompanhar a resposta do edema macular diabético ao tratamento.",
+      "image": "s29i1",
+      "imageCaption": "Corte macular com espaços císticos intrarretinianos"
+    },
+    {
+      "question": "A foto do segmento anterior mostra vasos finos e tortuosos sobre a superfície da íris. Qual complicação deve ser temida?",
+      "options": [
+        "Glaucoma neovascular, por obstrução do ângulo de filtração",
+        "Catarata subcapsular posterior, por opacificação do cristalino",
+        "Ceratite bacteriana grave, por invasão vascular da córnea",
+        "Uveíte anterior crônica, por depósito de pigmento no ângulo"
+      ],
+      "correctIndex": 0,
+      "explanation": "Vasos neoformados sobre a íris configuram a rubeose iridiana e sinalizam isquemia retiniana grave. Quando a neovascularização alcança o ângulo de filtração, a membrana fibrovascular bloqueia o escoamento do humor aquoso e instala o glaucoma neovascular, de pressão muito elevada e prognóstico visual reservado.",
+      "image": "s28i1",
+      "imageCaption": "Neovasos na superfície da íris (rubeose iridiana)"
+    },
+    {
+      "question": "Diabético de longa data relata perda visual súbita e indolor acompanhada de moscas volantes densas. Qual complicação deve ser suspeitada?",
+      "options": [
+        "Hemorragia vítrea por sangramento de neovasos retinianos",
+        "Catarata diabética por embebição osmótica do cristalino",
+        "Edema macular diabético por extravasamento capilar focal",
+        "Neuropatia óptica isquêmica por oclusão das ciliares curtas"
+      ],
+      "correctIndex": 0,
+      "explanation": "Os neovasos da retinopatia proliferativa têm parede frágil e aderem ao vítreo; a tração vítrea os rompe e o sangue invade a cavidade vítrea. O quadro típico é perda visual súbita e indolor, precedida ou acompanhada de moscas volantes e sombras móveis. A catarata e o edema macular causam baixa visual lenta e progressiva."
+    },
+    {
+      "question": "Por que a retinopatia diabética proliferativa pode evoluir para descolamento de retina tracional?",
+      "options": [
+        "As membranas fibrovasculares se contraem e tracionam a retina",
+        "O acúmulo de exsudatos duros empurra a retina contra o vítreo",
+        "A hipotonia ocular grave suga a retina em direção à coroide",
+        "Os microaneurismas se rompem e descolam a retina por pressão"
+      ],
+      "correctIndex": 0,
+      "explanation": "Os neovasos vêm acompanhados de tecido fibroso que forma membranas epirretinianas e bandas vitreorretinianas. Com o tempo esse tecido se contrai e puxa a retina para dentro da cavidade vítrea, produzindo o descolamento tracional. Quando a tração atinge a mácula, há indicação de vitrectomia."
+    },
+    {
+      "question": "No diabetes, qual é o fator de risco não modificável de maior peso para o surgimento da retinopatia?",
+      "options": [
+        "O tempo de duração da doença desde o diagnóstico",
+        "A idade atual do paciente no momento da consulta",
+        "A história familiar de diabetes entre os parentes",
+        "O tipo de diabetes, se é tipo 1 ou se é tipo 2"
+      ],
+      "correctIndex": 0,
+      "explanation": "A duração do diabetes é o fator não modificável mais determinante: quanto mais tempo de exposição à hiperglicemia, maior a prevalência e a gravidade da retinopatia. Tipo de diabetes, idade jovem ao diagnóstico, puberdade e genética também contam, mas nenhum supera o tempo de doença."
+    },
+    {
+      "question": "Entre os fatores de risco modificáveis, qual é o mais importante para a progressão da retinopatia diabética?",
+      "options": [
+        "A hiperglicemia crônica, expressa pela HbA1c elevada",
+        "A hipertensão arterial sistêmica mal controlada",
+        "A dislipidemia com triglicérides muito elevados",
+        "O tabagismo mantido por mais de dez anos seguidos"
+      ],
+      "correctIndex": 0,
+      "explanation": "O controle glicêmico é o fator modificável de maior impacto: a HbA1c elevada acelera todas as vias de dano microvascular. Hipertensão, dislipidemia, nefropatia diabética, obesidade, sedentarismo e tabagismo são fatores adicionais reais, mas de peso menor do que a hiperglicemia crônica sustentada."
+    },
+    {
+      "question": "Que efeito a redução rápida e intensa da glicemia, como a obtida com agonistas de GLP-1, pode ter sobre a retina?",
+      "options": [
+        "Piora inicial da retinopatia, que exige vigilância oftalmológica",
+        "Melhora imediata da retinopatia, que dispensa controle periódico",
+        "Nenhum efeito sobre a retina, que depende apenas da pressão",
+        "Regressão completa dos neovasos, que torna o laser desnecessário"
+      ],
+      "correctIndex": 0,
+      "explanation": "A queda abrupta da glicemia pode provocar piora transitória da retinopatia, fenômeno descrito com semaglutida, liraglutida e dulaglutida. O benefício a longo prazo do bom controle permanece, mas o paciente com retinopatia já estabelecida deve ser avaliado antes e monitorado durante a intensificação do tratamento."
+    },
+    {
+      "question": "Quando deve ser feito o primeiro exame de fundo de olho em quem tem diabetes tipo 1?",
+      "options": [
+        "Cinco anos após o diagnóstico, a partir da puberdade",
+        "No próprio momento em que o diabetes tipo 1 é firmado",
+        "Dez anos após o diagnóstico, qualquer que seja a idade",
+        "Apenas quando surgir queixa visual referida pelo paciente"
+      ],
+      "correctIndex": 0,
+      "explanation": "No tipo 1 a retinopatia é rara nos primeiros anos, de modo que o primeiro exame é feito cerca de 5 anos após o diagnóstico, a partir da puberdade, e repetido anualmente. Esperar a queixa visual é inaceitável, porque a doença pode permanecer assintomática até estágios avançados."
+    },
+    {
+      "question": "Quando deve ser feito o primeiro exame de fundo de olho em quem recebe diagnóstico de diabetes tipo 2?",
+      "options": [
+        "No momento do diagnóstico, repetindo ao menos a cada ano",
+        "Cinco anos após o diagnóstico, repetindo a cada ano",
+        "Dez anos após o diagnóstico, repetindo a cada dois anos",
+        "Somente se houver queixa visual, repetindo a cada ano"
+      ],
+      "correctIndex": 0,
+      "explanation": "O diabetes tipo 2 costuma ser diagnosticado anos depois de instalado, e parte dos pacientes já tem retinopatia na primeira consulta. Por isso o exame de fundo de olho é feito já no diagnóstico e repetido pelo menos anualmente, com intervalos menores conforme a gravidade encontrada."
+    },
+    {
+      "question": "Como se conduz o rastreamento oftalmológico da gestante que já tinha diabetes antes de engravidar?",
+      "options": [
+        "Exame no primeiro trimestre e a cada trimestre até o parto",
+        "Exame apenas no terceiro trimestre, perto da data do parto",
+        "Exame apenas no puerpério, quando a retina já se estabilizou",
+        "Nenhum exame, pois a gestação não altera a retina diabética"
+      ],
+      "correctIndex": 0,
+      "explanation": "A gestação acelera a progressão da retinopatia em quem já era diabética, de modo que o exame deve ser feito no planejamento ou no primeiro trimestre e repetido a cada trimestre, estendendo-se ao primeiro ano pós-parto. O diabetes gestacional puro não exige esse rastreamento ocular."
+    },
+    {
+      "question": "Quais situações exigem encaminhamento imediato do paciente diabético ao oftalmologista?",
+      "options": [
+        "Qualquer grau de edema macular, não proliferativa moderada ou grave e proliferativa",
+        "Apenas a forma proliferativa já complicada por hemorragia dentro da cavidade vítrea",
+        "Apenas o edema macular que já tenha reduzido a acuidade visual abaixo de 20/40",
+        "Somente a não proliferativa leve, por ser a única fase ainda inteiramente reversível"
+      ],
+      "correctIndex": 0,
+      "explanation": "O encaminhamento é urgente diante de qualquer nível de edema macular diabético, de retinopatia não proliferativa moderada ou grave e de qualquer retinopatia proliferativa. Esperar a baixa visual instalada significa tratar tarde: boa parte do dano macular e isquêmico já é irreversível nesse ponto."
+    },
+    {
+      "question": "Qual é a principal indicação da fotocoagulação panretiniana a laser na retinopatia diabética?",
+      "options": [
+        "A forma proliferativa, para induzir regressão dos neovasos",
+        "A forma não proliferativa leve, para evitar microaneurismas",
+        "O edema macular central, para reduzir o espessamento foveal",
+        "A catarata associada, para clarear o eixo visual do paciente"
+      ],
+      "correctIndex": 0,
+      "explanation": "A panfotocoagulação queima a retina periférica isquêmica, reduzindo a massa de tecido que produz VEGF e levando os neovasos a regredir. A indicação clássica é a retinopatia proliferativa, e em casos selecionados a não proliferativa muito grave. Para o edema macular central o tratamento de escolha é o anti-VEGF."
+    },
+    {
+      "question": "Qual é o tratamento de primeira linha para o edema macular diabético com acometimento central?",
+      "options": [
+        "Injeção intravítrea de agente anti-VEGF, repetida conforme resposta",
+        "Fotocoagulação panretiniana completa, repetida conforme a resposta",
+        "Vitrectomia via pars plana precoce, repetida conforme a resposta",
+        "Colírio hipotensor de uso contínuo, ajustado conforme a resposta"
+      ],
+      "correctIndex": 0,
+      "explanation": "O anti-VEGF intravítreo bloqueia o mediador que aumenta a permeabilidade vascular e é o tratamento de primeira linha do edema macular diabético com envolvimento do centro da mácula, aplicado em séries com reavaliação por OCT. Corticosteroides intravítreos ficam como alternativa em casos refratários ou pseudofácicos."
+    },
+    {
+      "question": "Em que situação da retinopatia diabética a vitrectomia via pars plana está indicada?",
+      "options": [
+        "Hemorragia vítrea persistente ou descolamento tracional da mácula",
+        "Microaneurismas isolados ou exsudatos duros fora da área macular",
+        "Edema macular inicial que responde bem às injeções de anti-VEGF",
+        "Manchas algodonosas múltiplas sem qualquer sinal de neovasos novos"
+      ],
+      "correctIndex": 0,
+      "explanation": "A vitrectomia é cirurgia de resgate nas complicações estruturais da forma proliferativa: hemorragia vítrea que não se reabsorve, descolamento tracional que ameaça ou já envolve a mácula e membranas fibrovasculares extensas. Permite remover o sangue, cortar as trações e completar a fotocoagulação no mesmo tempo cirúrgico."
+    },
+    {
+      "question": "Por que o rastreamento periódico é essencial mesmo no paciente diabético sem qualquer queixa visual?",
+      "options": [
+        "A retinopatia pode ser assintomática até estágios avançados",
+        "A retinopatia sempre provoca dor ocular antes de baixar a visão",
+        "A retinopatia só aparece em quem já perdeu acuidade visual",
+        "A retinopatia começa pela periferia e logo causa visão em túnel"
+      ],
+      "correctIndex": 0,
+      "explanation": "A retinopatia diabética evolui silenciosamente e pode chegar à forma proliferativa sem nenhum sintoma, já que a mácula só é comprometida tardiamente em parte dos casos. Com rastreamento regular e tratamento precoce, até 98% da perda visual pode ser evitada; sem tratamento, cerca de metade dos pacientes evolui para perda visual grave."
+    }
+  ]
+}

@@ -67,3 +67,4 @@ __pycache__/
 
 # Videos gerados pelo NotebookLM a partir dos resumos (pesados, derivados)
 *.mp4
+Neurologia/conteudo_doencas_do_sistema_nervoso_periferico.md

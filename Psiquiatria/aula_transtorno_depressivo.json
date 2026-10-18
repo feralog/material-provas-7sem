@@ -1,0 +1,392 @@
+{
+  "titulo": "Transtorno Depressivo",
+  "eyebrow": "Psiquiatria · Transtornos do Humor",
+  "subtitulo": "Do episódio depressivo maior à remissão sustentada",
+  "intro": "Critérios do episódio depressivo maior, especificadores, transtorno depressivo persistente, o diferencial com bipolaridade e com o luto, as fases do tratamento e a avaliação do risco de suicídio.",
+  "questoes": [
+    {
+      "question": "Qual é o limiar de sintomas e a duração mínima exigidos para caracterizar um episódio depressivo maior?",
+      "options": [
+        "Cinco ou mais sintomas presentes por duas semanas",
+        "Três ou mais sintomas presentes por quatro semanas",
+        "Sete ou mais sintomas presentes por três semanas",
+        "Dois ou mais sintomas presentes por seis semanas"
+      ],
+      "correctIndex": 0,
+      "explanation": "O episódio depressivo maior exige cinco ou mais sintomas presentes no mesmo período de duas semanas, com mudança em relação ao funcionamento prévio. Abaixo de cinco sintomas, ou com menos de duas semanas de duração, não se fecha o episódio, por mais real que seja o sofrimento."
+    },
+    {
+      "question": "Entre os sintomas do episódio depressivo maior, quais são os dois cardinais, dos quais pelo menos um precisa estar presente?",
+      "options": [
+        "Humor deprimido e perda de interesse ou prazer",
+        "Insônia terminal e perda importante de peso",
+        "Fadiga constante e lentificação psicomotora",
+        "Culpa excessiva e pensamentos sobre a morte"
+      ],
+      "correctIndex": 0,
+      "explanation": "Humor deprimido na maior parte do dia e anedonia, a perda de interesse ou prazer por quase todas as atividades, são os dois sintomas cardinais, e pelo menos um deles tem de estar presente. Insônia, alteração de peso, fadiga, culpa, lentificação e ideação suicida completam os cinco, mas nenhum substitui os cardinais."
+    },
+    {
+      "question": "Um paciente preenche oito critérios sintomáticos de depressão, mas usa corticoide em dose alta há três semanas. Qual é a conduta diagnóstica correta?",
+      "options": [
+        "Considerar transtorno depressivo induzido por substância",
+        "Fechar transtorno depressivo maior de início precoce",
+        "Classificar o quadro como transtorno de ajustamento",
+        "Diagnosticar distimia com sintomas somáticos graves"
+      ],
+      "correctIndex": 0,
+      "explanation": "Um dos critérios do episódio depressivo maior é que os sintomas não se devam a condição clínica, substância psicoativa ou medicamento. Corticoides, reserpina, metildopa, propranolol, anticonvulsivantes e interferon estão entre os agentes capazes de desencadear o quadro, e revisar a prescrição vem antes de iniciar antidepressivo."
+    },
+    {
+      "question": "Quais sintomas depressivos têm maior poder discriminativo, por serem menos frequentes em outras doenças clínicas?",
+      "options": [
+        "Desesperança, culpa, inutilidade e ideação suicida",
+        "Insônia, fadiga, perda de apetite e dores difusas",
+        "Tontura, cefaleia, dor torácica e queixas sexuais",
+        "Taquicardia, tremor, sudorese e tensão muscular"
+      ],
+      "correctIndex": 0,
+      "explanation": "Desesperança, sentimento de inutilidade, culpa, perda de interesse e de prazer e ideação suicida são os sintomas mais específicos do quadro depressivo. Perda de energia, insônia, perda de apetite e dor são muito frequentes na depressão, mas aparecem em inúmeras doenças clínicas e por isso discriminam pouco."
+    },
+    {
+      "question": "Qual critério temporal define o transtorno depressivo persistente, antes chamado de distimia, no adulto?",
+      "options": [
+        "Humor deprimido na maioria dos dias por dois anos",
+        "Humor deprimido na maioria dos dias por seis meses",
+        "Humor deprimido na maioria dos dias por um mês",
+        "Humor deprimido na maioria dos dias por cinco anos"
+      ],
+      "correctIndex": 0,
+      "explanation": "O transtorno depressivo persistente exige humor deprimido na maior parte do dia, na maioria dos dias, por pelo menos dois anos no adulto, com no máximo dois meses seguidos livres de sintomas. A intensidade é menor que a do episódio maior, mas a cronicidade produz prejuízo funcional comparável e o paciente costuma se descrever como sempre tendo sido assim."
+    },
+    {
+      "question": "Qual conjunto de achados caracteriza o especificador com características melancólicas?",
+      "options": [
+        "Despertar precoce, piora matinal e anedonia completa",
+        "Hipersonia, hiperfagia e humor reativo a boas notícias",
+        "Delírios de ruína, alucinações auditivas e estupor",
+        "Início no outono, retraimento social e ganho de peso"
+      ],
+      "correctIndex": 0,
+      "explanation": "O padrão melancólico combina anedonia quase completa e perda de reatividade do humor com despertar precoce, piora dos sintomas pela manhã, lentificação ou agitação psicomotora marcada, anorexia com perda de peso e culpa excessiva. É a forma classicamente chamada de endógena e responde bem a antidepressivos e à eletroconvulsoterapia."
+    },
+    {
+      "question": "Quais achados definem o especificador com características atípicas do episódio depressivo?",
+      "options": [
+        "Hipersonia, hiperfagia e reatividade preservada do humor",
+        "Insônia terminal, anorexia e perda da reatividade do humor",
+        "Agitação psicomotora, culpa delirante e recusa alimentar",
+        "Catatonia, mutismo e negativismo com recusa de contato"
+      ],
+      "correctIndex": 0,
+      "explanation": "No padrão atípico o humor ainda melhora diante de acontecimentos positivos e acompanha-se de hipersonia, aumento de apetite e de peso, sensação de peso nos membros e sensibilidade exagerada à rejeição. É mais comum em mulheres jovens e levanta suspeita de bipolaridade subjacente."
+    },
+    {
+      "question": "Uma paciente gravemente deprimida afirma que seus órgãos apodreceram e que a família está arruinada por culpa dela. Qual é a abordagem indicada?",
+      "options": [
+        "Antidepressivo combinado a antipsicótico, ou eletroconvulsoterapia",
+        "Antidepressivo em monoterapia, com reavaliação em oito semanas",
+        "Benzodiazepínico isolado até a remissão do conteúdo delirante",
+        "Psicoterapia cognitiva isolada, por se tratar de culpa exagerada"
+      ],
+      "correctIndex": 0,
+      "explanation": "Delírios congruentes com o humor, como os de ruína, culpa e niilismo, caracterizam a depressão psicótica, que responde mal a antidepressivo isolado. O tratamento é a associação de antidepressivo com antipsicótico, e a eletroconvulsoterapia é a opção de maior eficácia quando há risco de vida, recusa alimentar ou intenção suicida ativa."
+    },
+    {
+      "question": "O que caracteriza o padrão sazonal do transtorno depressivo recorrente?",
+      "options": [
+        "Episódios que surgem e remitem em épocas fixas do ano",
+        "Episódios desencadeados por perdas afetivas repetidas",
+        "Episódios que alternam com fases de humor expansivo",
+        "Episódios que pioram sempre no período pré-menstrual"
+      ],
+      "correctIndex": 0,
+      "explanation": "O padrão sazonal exige relação temporal regular entre o início dos episódios e determinada época do ano, tipicamente outono e inverno, com remissão na primavera, repetida por pelo menos dois anos consecutivos. Hipersonia, hiperfagia e avidez por carboidratos são comuns nesse padrão, e a fototerapia é uma opção de tratamento."
+    },
+    {
+      "question": "Qual característica distingue o blues puerperal do episódio depressivo com início no periparto?",
+      "options": [
+        "O blues é autolimitado e não traz prejuízo funcional",
+        "O blues dura mais de seis meses e exige antidepressivo",
+        "O blues cursa com delírios e exige internação imediata",
+        "O blues aparece apenas após o sexto mês de puerpério"
+      ],
+      "correctIndex": 0,
+      "explanation": "O blues puerperal atinge boa parte das puérperas, começa nos primeiros dias após o parto, cursa com labilidade emocional e choro fácil e se resolve sozinho em até duas semanas, sem comprometer o cuidado com o bebê. A depressão periparto é mais duradoura e incapacitante, e o risco de episódio depressivo é maior nos seis meses seguintes ao parto."
+    },
+    {
+      "question": "Qual achado favorece episódio depressivo maior em vez de luto não complicado após a morte de um familiar?",
+      "options": [
+        "Sentimento persistente de inutilidade e desvalor pessoal",
+        "Tristeza que vem em ondas ao lembrar da pessoa morta",
+        "Saudade intensa com preservação da autoestima",
+        "Choro frequente nas primeiras semanas após a perda"
+      ],
+      "correctIndex": 0,
+      "explanation": "No luto a dor vem em ondas ligadas à lembrança do morto, a autoestima é preservada e o humor ainda oscila diante de estímulos positivos. Inutilidade persistente, autodepreciação generalizada, anedonia global, lentificação acentuada e ideação suicida sem relação com a ideia de reencontro apontam para episódio depressivo maior sobreposto ao luto."
+    },
+    {
+      "question": "Por que boa parte dos quadros depressivos chega primeiro ao médico generalista e não ao psiquiatra?",
+      "options": [
+        "A apresentação é dominada por queixas físicas e dores",
+        "O generalista prescreve antidepressivos em doses maiores",
+        "A depressão só pode ser tratada na atenção primária",
+        "O psiquiatra não atende queixas somáticas do paciente"
+      ],
+      "correctIndex": 0,
+      "explanation": "A atenção primária funciona como porta de entrada porque a depressão se manifesta com frequência por cefaleia, fadiga, dor difusa, queixas gastrointestinais e disfunção sexual, que levam o paciente ao clínico. Somam-se o estigma de procurar o psiquiatra e a investigação repetida de causas orgânicas, que atrasam o diagnóstico."
+    },
+    {
+      "question": "Quais dados da história de um paciente em episódio depressivo mais aumentam a suspeita de transtorno bipolar?",
+      "options": [
+        "Início precoce, vários episódios e familiar bipolar",
+        "Início tardio, episódio único e ausência de familiares",
+        "Insônia terminal, perda de peso e culpa persistente",
+        "Curso arrastado por anos e sintomas sempre discretos"
+      ],
+      "correctIndex": 0,
+      "explanation": "Primeiro episódio antes dos vinte e cinco anos, muitos episódios curtos e recorrentes, história familiar de transtorno bipolar, sintomas atípicos com hipersonia e hiperfagia, sintomas psicóticos, início no puerpério e resposta rápida mas instável a antidepressivos aumentam a chance de bipolaridade. Reconhecê-los muda o tratamento, que passa a exigir estabilizador do humor."
+    },
+    {
+      "question": "Um paciente em uso de sertralina há duas semanas evolui com euforia, insônia sem cansaço e gastos impulsivos. Qual é a conduta?",
+      "options": [
+        "Suspender o antidepressivo e iniciar estabilizador do humor",
+        "Aumentar a dose do antidepressivo para controlar a agitação",
+        "Associar benzodiazepínico e manter a dose do antidepressivo",
+        "Manter a conduta, pois reflete a remissão do quadro depressivo"
+      ],
+      "correctIndex": 0,
+      "explanation": "Euforia, redução da necessidade de sono, aceleração e impulsividade surgidas após a introdução de um antidepressivo configuram virada maníaca e revelam bipolaridade. A conduta é retirar o antidepressivo e iniciar estabilizador do humor, como lítio ou valproato, associando antipsicótico se houver agitação intensa ou sintomas psicóticos."
+    },
+    {
+      "question": "Qual é a principal razão para os inibidores seletivos da recaptação de serotonina serem a escolha inicial na depressão?",
+      "options": [
+        "Boa tolerabilidade e baixa letalidade em superdosagem",
+        "Início de ação em até quarenta e oito horas de uso",
+        "Ausência completa de efeitos adversos sexuais",
+        "Eficácia muito superior à das demais classes"
+      ],
+      "correctIndex": 0,
+      "explanation": "Os inibidores seletivos da recaptação de serotonina têm eficácia semelhante à das outras classes, mas perfil de efeitos adversos mais ameno e segurança muito maior em superdosagem, o que pesa num paciente com risco suicida. Disfunção sexual, náusea e ativação ansiosa nas primeiras semanas são as queixas mais comuns."
+    },
+    {
+      "question": "Qual limitação torna os antidepressivos tricíclicos uma opção de segunda linha apesar da eficácia comprovada?",
+      "options": [
+        "Cardiotoxicidade e alta letalidade em superdosagem",
+        "Latência de resposta bem maior que a das outras",
+        "Ineficácia nos quadros melancólicos e graves",
+        "Incompatibilidade com qualquer psicoterapia"
+      ],
+      "correctIndex": 0,
+      "explanation": "Os tricíclicos bloqueiam canais de sódio cardíacos e receptores muscarínicos, histaminérgicos e alfa-adrenérgicos, produzindo arritmias, boca seca, retenção urinária, constipação, sedação e hipotensão postural. A margem entre a dose terapêutica e a dose letal é estreita, o que os torna perigosos em paciente com ideação suicida."
+    },
+    {
+      "question": "Qual característica diferencia a bupropiona das demais opções antidepressivas de uso corrente?",
+      "options": [
+        "Não causa disfunção sexual, mas reduz o limiar convulsivo",
+        "Não causa insônia, mas provoca ganho de peso importante",
+        "Não exige titulação, mas eleva muito a pressão arterial",
+        "Não interage com álcool, mas causa sedação acentuada"
+      ],
+      "correctIndex": 0,
+      "explanation": "A bupropiona age sobre dopamina e noradrenalina, sem efeito serotonérgico relevante, e por isso praticamente não causa disfunção sexual nem ganho de peso, além de auxiliar na cessação do tabagismo. Em contrapartida reduz o limiar convulsivo, sendo contraindicada em epilepsia, bulimia e anorexia."
+    },
+    {
+      "question": "Quanto tempo de uso em dose adequada é necessário antes de considerar que um antidepressivo falhou?",
+      "options": [
+        "Entre quatro e oito semanas na dose plena tolerada",
+        "Entre três e cinco dias na dose inicial prescrita",
+        "Entre seis e nove meses na dose plena tolerada",
+        "Entre dez e quatorze dias na dose inicial prescrita"
+      ],
+      "correctIndex": 0,
+      "explanation": "A melhora começa a aparecer por volta da segunda à quarta semana, e a resposta plena exige de quatro a oito semanas em dose adequada. Trocar o fármaco antes disso é a causa mais comum de falso rótulo de refratariedade, e a fase aguda do tratamento costuma levar de seis a doze semanas até a remissão."
+    },
+    {
+      "question": "Qual é o objetivo que define o sucesso da fase aguda do tratamento antidepressivo?",
+      "options": [
+        "Remissão, com desaparecimento quase completo dos sintomas",
+        "Resposta parcial, com queda de metade dos sintomas iniciais",
+        "Alívio da insônia e da inapetência, mantendo o humor baixo",
+        "Retorno ao trabalho, independentemente dos sintomas restantes"
+      ],
+      "correctIndex": 0,
+      "explanation": "Responder não basta: a meta é a remissão, isto é, ficar praticamente assintomático e voltar ao funcionamento prévio. Sintomas residuais ao fim da fase aguda, que dura de seis a doze semanas, predizem recaída, cronificação, pior resposta aos tratamentos seguintes e maior risco de suicídio."
+    },
+    {
+      "question": "Depois de obtida a remissão, por quanto tempo o antidepressivo deve ser mantido na fase de continuação?",
+      "options": [
+        "De quatro a nove meses, para evitar recaída do episódio",
+        "De duas a quatro semanas, até a estabilização do humor",
+        "De cinco a sete anos, independentemente da evolução",
+        "Até a alta hospitalar, quando se suspende a medicação"
+      ],
+      "correctIndex": 0,
+      "explanation": "A fase de continuação mantém a mesma dose por quatro a nove meses após a remissão, porque o episódio ainda está biologicamente ativo e a retirada precoce traz de volta os mesmos sintomas. Recaída é o retorno do episódio em curso; recorrência é um episódio novo, prevenido pela fase seguinte, de manutenção."
+    },
+    {
+      "question": "Qual situação indica prolongar o antidepressivo por anos, na chamada fase de manutenção?",
+      "options": [
+        "Três ou mais episódios depressivos prévios no paciente",
+        "Primeiro episódio leve em paciente jovem sem comorbidade",
+        "Remissão rápida obtida já na terceira semana de uso",
+        "Episódio único desencadeado por perda afetiva recente"
+      ],
+      "correctIndex": 0,
+      "explanation": "A manutenção dura pelo menos um ano e frequentemente se estende por anos quando há episódios múltiplos, tentativa de suicídio prévia, sintomas psicóticos, episódios graves ou história familiar carregada. Seu objetivo é prevenir a recorrência, ou seja, um episódio novo depois de alcançada a remissão sustentada."
+    },
+    {
+      "question": "Um paciente não melhorou após oito semanas de um antidepressivo em dose plena e com boa adesão. Qual é o passo seguinte?",
+      "options": [
+        "Trocar de fármaco ou potencializar com lítio ou um atípico",
+        "Repetir o mesmo esquema por mais seis meses sem mudanças",
+        "Suspender todo tratamento medicamentoso por trinta dias",
+        "Reduzir a dose à metade para melhorar a tolerabilidade"
+      ],
+      "correctIndex": 0,
+      "explanation": "Diante de falha com dose e tempo adequados, as opções são trocar por fármaco de outra classe, associar um segundo antidepressivo de mecanismo complementar ou potencializar com lítio, hormônio tireoidiano ou antipsicótico atípico. Antes de qualquer mudança é preciso confirmar adesão e dose e revisar o diagnóstico, incluindo bipolaridade e causas clínicas."
+    },
+    {
+      "question": "Em qual situação a eletroconvulsoterapia é a primeira escolha no tratamento da depressão?",
+      "options": [
+        "Risco suicida iminente com recusa alimentar e catatonia",
+        "Primeiro episódio leve com insônia e queixas somáticas",
+        "Depressão persistente com boa resposta parcial a fármaco",
+        "Distimia de longa data sem prejuízo funcional evidente"
+      ],
+      "correctIndex": 0,
+      "explanation": "A eletroconvulsoterapia é indicada de entrada quando há risco de morte a curto prazo, como recusa alimentar, desidratação, catatonia, sintomas psicóticos graves ou intenção suicida ativa, e também na refratariedade a múltiplos esquemas e na gestação, em que evita a exposição medicamentosa. É o tratamento de maior taxa de resposta na depressão grave."
+    },
+    {
+      "question": "Qual proporção dos pacientes com depressão grave chega a apresentar condutas suicidas ao longo da doença?",
+      "options": [
+        "Entre quinze e vinte por cento desses pacientes",
+        "Entre um e dois por cento desses pacientes graves",
+        "Entre cinquenta e sessenta por cento desses pacientes",
+        "Menos de meio por cento desses pacientes graves"
+      ],
+      "correctIndex": 0,
+      "explanation": "Cerca de quinze a vinte por cento das pessoas com depressão grave apresentam condutas suicidas, e o suicídio é a complicação mais temida do transtorno. Perguntar diretamente sobre ideação, plano, meio disponível e tentativas anteriores não induz o ato e é a única forma de dimensionar o risco."
+    },
+    {
+      "question": "Por que o risco de suicídio pode aumentar nas primeiras semanas de tratamento antidepressivo?",
+      "options": [
+        "A iniciativa retorna antes da melhora do humor e da culpa",
+        "O fármaco produz alucinações auditivas de comando precoces",
+        "A dose inicial costuma ser alta demais para o paciente",
+        "A melhora do sono antecipa o retorno dos planos de morte"
+      ],
+      "correctIndex": 0,
+      "explanation": "A lentificação psicomotora e a falta de energia costumam melhorar antes do humor deprimido, da desesperança e da culpa, devolvendo ao paciente a capacidade de executar um plano que já existia. Por isso o acompanhamento deve ser próximo nas primeiras semanas, com restrição do acesso a meios letais e envolvimento da família."
+    },
+    {
+      "question": "Quais condições pioram o prognóstico de resposta ao tratamento de um quadro depressivo?",
+      "options": [
+        "Abuso de álcool, traços de personalidade e sintomas psicóticos",
+        "Idade entre vinte e trinta anos e bom suporte familiar",
+        "Episódio único, de início recente e sem comorbidade clínica",
+        "Boa adesão prévia e resposta rápida a tratamento anterior"
+      ],
+      "correctIndex": 0,
+      "explanation": "Comorbidade psiquiátrica, sobretudo ansiedade, abuso de álcool e de benzodiazepínicos e transtornos de personalidade, características psicóticas, preocupações hipocondríacas com sintomas somáticos exacerbados, comorbidades clínicas, tratamentos anteriores malsucedidos e abandono precoce da medicação são preditores negativos. Reconhecê-los antecipa a necessidade de esquemas mais intensivos."
+    },
+    {
+      "question": "Qual grupo de fármacos é classicamente lembrado como capaz de desencadear quadro depressivo?",
+      "options": [
+        "Reserpina, corticoides, metildopa e propranolol",
+        "Metformina, omeprazol, losartana e sinvastatina",
+        "Amoxicilina, dipirona, bromoprida e loratadina",
+        "Insulina, hidroclorotiazida, ferro e ácido fólico"
+      ],
+      "correctIndex": 0,
+      "explanation": "A reserpina, que depleta noradrenalina e serotonina, corticoides em dose alta, metildopa, propranolol, anticonvulsivantes, interferon e hormônios estão entre os agentes associados a depressão secundária. Foi justamente o efeito depressógeno da reserpina, somado ao efeito antidepressivo da isoniazida, que sustentou a teoria das aminas biogênicas."
+    },
+    {
+      "question": "O que o fenômeno de kindling descreve na evolução do transtorno depressivo recorrente?",
+      "options": [
+        "Episódios passam a ocorrer sem estressor que os desencadeie",
+        "Episódios passam a exigir estressores cada vez mais intensos",
+        "Episódios tornam-se mais curtos e espaçados com o tempo",
+        "Episódios deixam de responder a qualquer psicoterapia"
+      ],
+      "correctIndex": 0,
+      "explanation": "Nos primeiros episódios a associação com eventos estressantes de vida é forte, mas ela declina progressivamente à medida que os episódios se acumulam, estabilizando-se por volta do nono episódio. A doença torna-se autônoma em relação ao ambiente, o que justifica tratar cedo e investir na prevenção de novas recorrências."
+    },
+    {
+      "question": "Qual é o impacto da história de trauma na infância sobre o tratamento do transtorno depressivo maior?",
+      "options": [
+        "Associa-se a pior resposta aos antidepressivos usuais",
+        "Associa-se a resposta mais rápida aos antidepressivos",
+        "Não altera a resposta, apenas antecipa o primeiro episódio",
+        "Impede o diagnóstico de transtorno depressivo maior"
+      ],
+      "correctIndex": 0,
+      "explanation": "Adultos com transtorno depressivo maior relatam abuso emocional em cerca de quarenta e três por cento dos casos, contra nove por cento dos controles, e também mais abuso físico, abuso sexual e negligência. Esse antecedente marca um subgrupo com alterações neurobiológicas próprias e maior taxa de não resposta aos antidepressivos."
+    },
+    {
+      "question": "Na sinapse representada, qual é o destino predominante do neurotransmissor liberado na fenda?",
+      "options": [
+        "Recaptação pelo transportador pré-sináptico, cerca de 80%",
+        "Degradação enzimática na fenda sináptica, cerca de 80%",
+        "Ligação definitiva aos receptores pós-sinápticos, 80%",
+        "Difusão para a circulação sistêmica, cerca de 80%"
+      ],
+      "correctIndex": 0,
+      "explanation": "Cerca de oitenta por cento da noradrenalina ou da serotonina liberada volta ao neurônio pré-sináptico pelo transportador, e apenas vinte por cento segue para a degradação enzimática. É exatamente esse transportador que os antidepressivos inibidores de recaptação bloqueiam, elevando a concentração do neurotransmissor na fenda.",
+      "image": "s42i1",
+      "imageCaption": "Ciclo do neurotransmissor na sinapse"
+    },
+    {
+      "question": "Na figura, qual estrutura reúne regulação do humor e controle termorregulatório, recebendo vias noradrenérgicas e serotonérgicas?",
+      "options": [
+        "O hipotálamo, na base do diencéfalo",
+        "O cerebelo, na fossa posterior",
+        "O hipocampo, no lobo temporal",
+        "O putâmen, no núcleo lentiforme"
+      ],
+      "correctIndex": 0,
+      "explanation": "As vias noradrenérgicas e serotonérgicas projetam-se para o córtex pré-frontal e para o sistema límbico, ligados à regulação do humor, e também para o hipotálamo, que acumula regulação do humor e controle termorregulatório. Essa dupla função hipotalâmica ajuda a explicar a coexistência de sintomas afetivos e vasomotores em fases de flutuação estrogênica.",
+      "image": "s41i1",
+      "imageCaption": "Vias noradrenérgicas e serotonérgicas no encéfalo"
+    },
+    {
+      "question": "No esquema do eixo hormonal do estresse, qual zona adrenal produz o hormônio que antagoniza a insulina e favorece diabetes e obesidade?",
+      "options": [
+        "A zona fasciculada, que secreta cortisol",
+        "A zona glomerulosa, que secreta aldosterona",
+        "A zona reticular, que secreta androgênios",
+        "A medula adrenal, que secreta catecolaminas"
+      ],
+      "correctIndex": 0,
+      "explanation": "O CRH hipotalâmico estimula a liberação de ACTH, que age sobre a zona fasciculada do córtex adrenal e eleva o cortisol. O excesso de cortisol antagoniza a insulina e contribui para dislipidemia, diabetes, obesidade e supressão imunológica, enquanto as catecolaminas da medula se ligam a isquemia miocárdica, aterosclerose e hipertensão.",
+      "image": "s38i1",
+      "imageCaption": "Eixo hipotálamo-hipófise-adrenal e suas repercussões clínicas"
+    },
+    {
+      "question": "No esquema das consequências do estresse, o que diferencia a resposta adaptativa da carga alostática?",
+      "options": [
+        "A carga alostática traz alterações morfológicas e teciduais",
+        "A carga alostática ocorre apenas diante de estressor agudo",
+        "A resposta adaptativa reduz o volume cerebral do paciente",
+        "A resposta adaptativa dispensa secreção de glicocorticoide"
+      ],
+      "correctIndex": 0,
+      "explanation": "A resposta adaptativa, ou alostase, reúne alterações moleculares e celulares potencialmente reversíveis: aumento de glicocorticoide, excitotoxicidade do glutamato, queda de fatores neurotróficos, atrofia e remodelamento neuronal. Quando o estresse se cronifica instala-se a carga alostática, com alterações morfológicas e teciduais, redução do volume cerebral, piora da função glial e perda de conectividade.",
+      "image": "s37i1",
+      "imageCaption": "Do estresse agudo à carga alostática"
+    },
+    {
+      "question": "No circuito representado, por qual caminho o estresse crônico e a dieta pobre levam à depressão?",
+      "options": [
+        "Extravasamento intestinal, disbiose e inflamação sistêmica",
+        "Vasoconstrição cerebral direta com isquemia do hipocampo",
+        "Depleção hepática de triptofano por excesso de proteína",
+        "Bloqueio autoimune dos receptores de serotonina intestinais"
+      ],
+      "correctIndex": 0,
+      "explanation": "Estressores e traumas precoces ativam o eixo hipotálamo-hipófise-suprarrenal e, somados à dieta pobre em alimentos saudáveis, favorecem o extravasamento intestinal e a alteração do microbioma. O resultado é um estado inflamatório sistêmico com alterações de neurotransmissores que realimenta o circuito e sustenta o quadro depressivo.",
+      "image": "s36i1",
+      "imageCaption": "Estresse, eixo intestino-cérebro e depressão"
+    }
+  ]
+}

@@ -1,0 +1,1239 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Neuropatias Periféricas</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;450;500;600&display=swap" rel="stylesheet">
+<style>
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0}
+  body{background:#f5f3ef;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+  button{font:inherit;color:inherit;font-family:'IBM Plex Sans',system-ui,sans-serif}
+  a{color:#2b57cc;text-decoration:none}
+  a:hover{color:#1e3f9c;text-decoration:underline}
+  @keyframes qFade{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+  @keyframes qDrawer{from{opacity:0;transform:translateY(-4px)}to{opacity:1;transform:none}}
+
+  /* hovers — no canvas eram style-hover, aqui viram CSS de verdade */
+  .h-dark:hover{background:#2b57cc!important;transform:translateY(-1px)}
+  .h-darkflat:hover{background:#2b57cc!important}
+  .h-line:hover{border-color:#121a2b!important}
+  .h-ink:hover{color:#121a2b!important}
+  .h-opt:not(.locked):hover{border-color:var(--hbd)!important;transform:translateY(-1px)}
+  .h-card:hover{border-color:#121a2b!important;transform:translateY(-2px)}
+
+  /* tipografia do resumo */
+  .rsm{font-size:16.5px;line-height:1.72;color:#2a3141;max-width:64ch}
+  .rsm h2{font-family:'Newsreader',Georgia,serif;font-size:27px;font-weight:500;letter-spacing:-.02em;line-height:1.2;margin:42px 0 14px;padding-top:20px;border-top:1px solid #e4e0d8;text-wrap:pretty}
+  .rsm h2:first-child{margin-top:0;padding-top:0;border-top:0}
+  .rsm h3{font-family:'Newsreader',Georgia,serif;font-size:20px;font-weight:600;letter-spacing:-.01em;margin:28px 0 10px;text-wrap:pretty}
+  .rsm h4{font-family:'IBM Plex Mono',monospace;font-size:11px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:#2b57cc;margin:24px 0 8px}
+  .rsm p{margin:0 0 15px;text-wrap:pretty}
+  .rsm ul,.rsm ol{margin:0 0 15px;padding-left:22px}
+  .rsm li{margin-bottom:7px;text-wrap:pretty}
+  .rsm li>ul,.rsm li>ol{margin:7px 0 0}
+  .rsm strong{font-weight:600;color:#121a2b}
+  .rsm em{font-style:italic}
+  .rsm code{font-family:'IBM Plex Mono',monospace;font-size:.88em;background:#efece5;border:1px solid #e4e0d8;border-radius:5px;padding:1px 5px}
+  .rsm hr{border:0;border-top:1px solid #e4e0d8;margin:32px 0}
+  .rsm blockquote{margin:0 0 18px;padding:15px 18px;background:#f7f6f2;border-left:2.5px solid #2b57cc;border-radius:0 12px 12px 0;font-size:15px;line-height:1.65;color:#39404f}
+  .rsm blockquote p:last-child{margin-bottom:0}
+  .rsm .tbl{overflow-x:auto;margin:0 0 20px;border:1px solid #e4e0d8;border-radius:12px;background:#fff}
+  .rsm table{border-collapse:collapse;width:100%;font-size:14px;line-height:1.5}
+  .rsm th{text-align:left;font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.09em;text-transform:uppercase;color:#8a8578;font-weight:600;padding:11px 14px;background:#faf9f6;border-bottom:1px solid #e4e0d8;white-space:nowrap}
+  .rsm td{padding:11px 14px;border-bottom:1px solid #efece5;vertical-align:top;text-wrap:pretty}
+  .rsm tr:last-child td{border-bottom:0}
+  .rsm .key{background:#f2f6fb;border:1px solid #d6e2f4;border-radius:12px;padding:16px 18px;margin:0 0 18px}
+  .rsm .key>*:last-child{margin-bottom:0}
+
+  /* figuras — no resumo e na questao */
+  .fig{margin:0 0 20px;background:#fff;border:1px solid #e4e0d8;border-radius:14px;overflow:hidden}
+  .fig img{display:block;width:100%;height:auto;cursor:zoom-in}
+  .fig figcaption{font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.06em;color:#8a8578;padding:9px 13px;border-top:1px solid #efece5;background:#faf9f6;text-wrap:pretty}
+  .qfig{margin:0 0 20px}
+
+  /* lightbox */
+  #lb{position:fixed;inset:0;z-index:90;background:rgba(18,26,43,.86);display:none;align-items:center;justify-content:center;padding:24px;cursor:zoom-out}
+  #lb.on{display:flex;animation:qFade .16s ease}
+  #lb img{max-width:100%;max-height:100%;border-radius:10px;box-shadow:0 24px 60px rgba(0,0,0,.5)}
+
+  @media(max-width:560px){
+    .rsm{font-size:16px}
+    .rsm h2{font-size:24px}
+    .home-grid{grid-template-columns:1fr!important}
+  }
+</style>
+</head>
+<body>
+
+<div style="min-height:100vh;background:#f5f3ef;color:#121a2b;font-family:'IBM Plex Sans',system-ui,sans-serif">
+  <header style="position:sticky;top:0;z-index:30;background:rgba(245,243,239,.94);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid #e4e0d8">
+    <div style="max-width:720px;margin:0 auto;padding:12px 16px 10px" id="hdr"></div>
+  </header>
+  <main style="max-width:720px;margin:0 auto;padding:0 16px 80px" id="stage"></main>
+</div>
+<div id="lb"><img alt=""></div>
+
+<script type="text/html" id="resumoSrc"><h2>O sistema nervoso periférico: classificação, padrões e mecanismos de lesão</h2>
+<p>O sistema nervoso periférico é a parte do sistema nervoso em que os neurônios ou seus prolongamentos se relacionam com a célula satélite periférica, a <strong>célula de Schwann</strong>. Compreende todos os nervos cranianos <strong>com exceção do olfatório e do óptico</strong>, as raízes nervosas, os gânglios da raiz dorsal, os troncos nervosos periféricos com suas ramificações terminais e o sistema nervoso autônomo periférico.</p>
+<p>O número de etiologias é enorme, mas a expressão clínica é muito mais limitada — e é por isso que a classificação importa mais do que a lista de causas. Toda neuropatia periférica pode ser enquadrada em <strong>seis parâmetros</strong>:</p>
+<div class="tbl"><table><thead><tr><th>Parâmetro</th><th>Possibilidades</th></tr></thead><tbody><tr><td>Velocidade de instalação</td><td>aguda (&lt; 1 semana) · subaguda (&lt; 1 mês) · crônica (&gt; 1 mês)</td></tr><tr><td>Tipo de fibra</td><td>motora · sensitiva · autonômica · mista</td></tr><tr><td>Tamanho da fibra</td><td>grossa · fina · mista</td></tr><tr><td>Distribuição</td><td>proximal · distal · difusa</td></tr><tr><td>Padrão</td><td>mononeuropatia · mononeuropatia múltipla · polineuropatia</td></tr><tr><td>Patologia</td><td>degeneração axonal · desmielinização segmentar · mista</td></tr></tbody></table></div>
+<h3>O padrão é o primeiro divisor de águas</h3>
+<p>Diante de um paciente com neuropatia, a primeira pergunta é em que padrão ele se encaixa, porque disso depende todo o diagnóstico diferencial.</p>
+<div class="tbl"><table><thead><tr><th>Padrão</th><th>Distribuição</th><th>O que sugere</th></tr></thead><tbody><tr><td><strong>Polineuropatia</strong></td><td>simétrica, distal e bilateral</td><td>leque etiológico amplo: metabólicas, tóxico-carenciais, hereditárias</td></tr><tr><td><strong>Polirradiculo(neuro)patia</strong></td><td>raízes espinais, ou raízes e troncos</td><td>Guillain-Barré, forma crônica, radiculopatias infecciosas</td></tr><tr><td><strong>Mononeuropatia</strong></td><td>lesão focal de um nervo</td><td>compressão, trauma, túnel do carpo, neurite leprosa</td></tr><tr><td><strong>Mononeuropatia múltipla</strong></td><td>lesão multifocal, assimétrica</td><td>vasculites, diabetes, hanseníase, Lyme, HIV, sarcoidose</td></tr></tbody></table></div>
+<blockquote><p>Com a progressão, a mononeuropatia múltipla pode acabar envolvendo simetricamente todos os nervos e parecer uma polineuropatia. Mesmo aí o exame cuidadoso mostra <strong>graus diferentes de comprometimento por território nervoso</strong> — é esse detalhe que desmascara o padrão multifocal de origem.</p></blockquote>
+<p>Nos casos crônicos, além da causa adquirida, sempre se considera neuropatia hereditária: evolução de <strong>anos</strong>, simetria desde o início, <strong>pés cavos e dedos em martelo</strong>. História familiar negativa <strong>não exclui</strong> — a herança pode ser recessiva, ou os sinais nos parentes são discretos e passam despercebidos por eles.</p>
+<h3>Degeneração axonal × desmielinização: dois mecanismos, dois tempos</h3>
+<p>A mielina é o elemento mais suscetível da fibra nervosa e pode ser atingida primariamente ou de forma secundária a uma doença do axônio. Três processos se combinam em proporções variadas no mesmo paciente:</p>
+<ul><li><strong>Desmielinização segmentar</strong> — degeneração focal da bainha <strong>com o axônio preservado</strong>.</li><li><strong>Degeneração walleriana</strong> — consequência da interrupção focal do axônio.</li><li><strong>Degeneração axonal centrípeta</strong> — resulta de lesão metabólica do corpo do neurônio, com</li></ul>
+<p>queda da síntese proteica e falência de suprimento para as porções mais distais do axônio.</p>
+<p>Nas duas últimas há degeneração <strong>secundária</strong> da mielina.</p>
+<div class="tbl"><table><thead><tr><th></th><th>Desmielinização segmentar</th><th>Degeneração axonal / walleriana</th></tr></thead><tbody><tr><td>Axônio</td><td>íntegro</td><td>interrompido ou em sofrimento</td></tr><tr><td>Recuperação</td><td><strong>rápida</strong> — basta remielinizar</td><td><strong>lenta</strong>, meses a anos: o axônio precisa regenerar e reconectar-se ao músculo</td></tr><tr><td>Atrofia muscular</td><td>discreta, por <strong>desuso</strong></td><td>intensa, por <strong>desnervação</strong></td></tr><tr><td>Eletroneuromiografia</td><td>↓ velocidade de condução, ↑ latência distal, bloqueio de condução, ↑ latência da onda F</td><td>↓↓ amplitude do potencial + sinais de desnervação na agulha</td></tr></tbody></table></div>
+<p>A degeneração axonal centrípeta explica por que tantas polineuropatias — nutricionais, metabólicas e tóxicas — começam pelos <strong>pés e pernas</strong> e só mais tarde, e com menos intensidade, atingem mãos e antebraços: as alterações se iniciam na parte distal dos nervos mais calibrosos e mais longos e progridem em direção ao corpo celular.</p>
+<hr>
+<h2>Semiologia: o que cada fibra entrega quando é lesada</h2>
+<p>A fraqueza muscular é proporcional ao número de motoneurônios alfa afetados e pode vir de desmielinização segmentar, de interrupção axonal ou de destruição do neurônio motor. A hipotonia acompanha os quadros de comprometimento importante e decorre da <strong>interrupção do arco reflexo espinal</strong>. A perda dos reflexos profundos é comum e tem vários mecanismos: perda de fibras aferentes dos fusos, desnervação das fibras intrafusais e dispersão temporal da condução. <strong>Fasciculações e câimbras não são achado relevante</strong> na maioria das polineuropatias — aparecem em algumas crônicas e, ocasionalmente, em radiculopatias crônicas.</p>
+<p>A sensibilidade é mais comprometida nos segmentos distais, em padrão de <strong>bota e luva</strong>, e acomete mais os membros inferiores que os superiores. Com a progressão, surgem hipoestesia ou anestesia proximais e no tronco.</p>
+<div class="tbl"><table><thead><tr><th>Fibra lesada</th><th>O que ela conduz</th><th>Quadro resultante</th></tr></thead><tbody><tr><td><strong>Mielínicas finas e amielínicas</strong></td><td>dor e temperatura</td><td>hipoestesia térmica e dolorosa <strong>com tátil, vibratória e cineticopostural preservadas</strong> — dissociação <em>pseudo-siringomiélica</em></td></tr><tr><td><strong>Grandes fibras mielínicas</strong></td><td>tato, vibração, propriocepção</td><td>perda da sensibilidade <strong>tátil</strong>, com térmica e dolorosa preservadas; ataxia sensitiva</td></tr><tr><td><strong>Autonômicas</strong></td><td>sudorese, tônus vascular, vísceras</td><td>anidrose e hipotensão ortostática</td></tr></tbody></table></div>
+<p>Na maioria das polineuropatias <strong>todas</strong> as modalidades estão comprometidas, e a intensidade da hipoestesia costuma ser maior ou proporcional à fraqueza.</p>
+<h3>Fenômenos positivos e ataxia</h3>
+<ul><li><strong>Parestesia</strong> — queimação ou formigamento, em território de um nervo ou em bota e luva.</li><li><strong>Hiperestesia</strong> — sensibilidade aumentada; resposta desagradável a estímulo <strong>não</strong> nocivo.</li><li><strong>Hiperpatia</strong> — resposta dolorosa e desagradável a estímulo <strong>nocivo</strong>, sobretudo repetido.</li></ul>
+<p>Hiperestesia e hiperpatia surgem na lesão <strong>parcial</strong> do nervo ou durante a recuperação da injúria, e não se conseguiu correlacioná-las com um tipo específico de fibra.</p>
+<p>A <strong>ataxia sensitiva</strong> resulta de deaferentação proprioceptiva por perda de fibras grossas. Quando a força está preservada e os membros superiores são mantidos estendidos com os olhos fechados, aparecem <strong>movimentos pseudo-atetóticos</strong> dos dedos.</p>
+<h3>Alterações tróficas e autonômicas</h3>
+<p>A atrofia por desnervação é o principal distúrbio trófico. Deformidades de pés, mãos e coluna são frequentes nas polineuropatias crônicas, sobretudo nas de início na infância.</p>
+<blockquote><p><strong>O pé insensível é o pé que se destrói.</strong> A analgesia das partes distais torna os pés suscetíveis a queimaduras, escaras e injúria repetida: surgem úlceras plantares (<em>mal perfurante plantar</em>) e perda de falanges distais. A <strong>osteoartropatia neurogênica</strong>, ou junta de Charcot, traz enormes deformidades articulares, <strong>ausência de dor</strong>, início súbito e desenvolvimento rápido. A pele fica atrófica, lisa e brilhante; as unhas, curvas e rígidas.</p></blockquote>
+<p>As alterações autonômicas mais frequentes são <strong>anidrose</strong> e <strong>hipotensão ortostática</strong>, e muitas vezes constituem o quadro principal. Somam-se pupilas médias ou pequenas e arreativas, falta de lágrimas e saliva, impotência sexual, incontinência urinária e fecal, dilatação de esôfago e cólon.</p>
+<hr>
+<h2>Como investigar</h2>
+<p>A sequência começa pela história: <strong>ocupação</strong>, medicamentos em uso, doenças sistêmicas concomitantes e hábitos (alcoolismo, drogas). Exames iniciais: hemograma, glicemia, hemoglobina glicosilada, ureia e creatinina, hormônios tireoidianos, fator reumatoide, fator antinuclear, dosagem de vitamina B12, imunoeletroforese sérica e urinária, sorologias para hepatite e HIV.</p>
+<p>A <strong>eletroneuromiografia</strong> confirma a neuropatia e, mais importante, define o padrão — desmielinizante ou axonal, conforme a tabela acima. Na mononeuropatia múltipla ela identifica quais nervos estão acometidos e o grau do comprometimento.</p>
+<p>A <strong>biópsia de nervo</strong>, em geral do sural, é o <strong>último</strong> exame, pedido quando a investigação sistêmica não definiu etiologia. Pode fechar o diagnóstico de vasculite, neuropatia amiloide, mal de Hansen, infiltração neoplásica do nervo e algumas doenças hereditárias.</p>
+<blockquote><p>Mesmo com investigação clinicolaboratorial adequada, <strong>cerca de 24% dos pacientes permanecem sem etiologia determinada</strong>. Não é falha do método: é a estatística da doença.</p></blockquote>
+<p>Para as formas adquiridas, a abordagem inicial se organiza em <strong>quatro grupos</strong>: distúrbios metabólicos, tóxico-carenciais, infecciosos e imune-mediados.</p>
+<hr>
+<h2>Neuropatias metabólicas e a polineuropatia diabética</h2>
+<p>O <strong>diabetes melito</strong> é a causa mais frequente do grupo metabólico; seguem-se falência renal crônica, falência hepática, hipotireoidismo e acromegalia. Em geral são <strong>axonais</strong>, sensitivo-motoras, com predomínio dos sintomas sensitivos distais.</p>
+<p>Duas situações merecem registro à parte:</p>
+<ul><li><strong>Neuropatia urêmica</strong> — prevalência de 10% a 80%, ligada à duração e à gravidade da</li></ul>
+<p>falência renal. Quando o <strong>clearance de creatinina cai abaixo de 10%</strong> do normal, a velocidade de condução motora começa a diminuir, embora os sintomas não guardem relação direta com ela. Quadro: polineuropatia sensitivo-motora progressiva e simétrica, com <strong>disestesias nos pés</strong> e déficit motor leve; acometimento autonômico é raro. Atribui-se o dano a substâncias de peso molecular entre 300 e 2.000 (metilguanidina, mioinositol). Diálise e transplante têm efeito benéfico — até neuropatias graves melhoram meses após o transplante.</p>
+<ul><li><strong>Polineuropatia do doente crítico</strong> — ocorre em 20% a 50% dos admitidos em terapia</li></ul>
+<p>intensiva. É polineuropatia <strong>motora axonal</strong> consequente à síndrome de resposta inflamatória sistêmica (sepse, falência de múltiplos órgãos, pancreatite, trauma, queimadura). Clinicamente: tetraparesia, arreflexia profunda e <strong>insuficiência respiratória prolongada com dificuldade de desmame</strong>. Melhora se o paciente sobrevive à doença de base.</p>
+<h3>Neuropatia diabética: números e formas</h3>
+<p>Cerca de <strong>15%</strong> dos diabéticos têm sintomas e sinais de neuropatia. A prevalência vai de <strong>7,5% na descoberta do diabetes a 50% após 25 anos</strong>. Crianças raramente são acometidas (2%). Ocorre no tipo I, no tipo II e no diabetes associado a outras síndromes.</p>
+<h4>Classificação</h4>
+<ul><li><strong>Polineuropatias simétricas</strong> — sensitiva ou sensitivo-motora · motora aguda ou subaguda ·</li></ul>
+<p>autonômica</p>
+<ul><li><strong>Neuropatias focais e multifocais</strong> — de nervos cranianos · mononeuropatia de tronco e</li></ul>
+<p>membros · neuropatia motora proximal</p>
+<div class="tbl"><table><thead><tr><th>Forma</th><th>Marca registrada</th></tr></thead><tbody><tr><td><strong>Polineuropatia sensitiva</strong></td><td>a mais frequente; comum iniciar <strong>após</strong> o início da insulina ou do hipoglicemiante oral. Sinais precoces: <strong>perda do reflexo aquileu e hipopalestesia dos pés</strong>. Dor nos membros inferiores que <strong>piora à noite</strong></td></tr><tr><td>Forma sensitiva grave (<em>pseudotabes diabético</em>)</td><td>ataxia sensitiva com marcha talonante, perda da sensibilidade profunda, atonia vesical, fraqueza discreta; úlceras perfurantes e artropatia interfalangeana e metatarsofalangeana</td></tr><tr><td><strong>Neuropatia autonômica</strong></td><td>disfunção pupilar e lacrimal, hipotensão postural, atonia gastrintestinal e vesical, diarreia, ejaculação retrógrada, impotência — e <strong>hipoglicemia sem os sinais premonitórios</strong>, levando ao coma</td></tr><tr><td><strong>Nervos cranianos</strong></td><td>idosos; <strong>terceiro nervo</strong> é o mais atingido, início abrupto, <strong>pupila habitualmente poupada</strong>, recuperação é a regra. Fora dos oculares, o <strong>facial</strong> é o mais acometido</td></tr><tr><td><strong>Mononeuropatia de tronco e membros</strong></td><td>ulnar, mediano, radial, femoral, cutâneo lateral da coxa, peroneal; início abrupto, com dor, no mesmo local das paralisias compressivas</td></tr><tr><td><strong>Neuropatia motora proximal</strong> (<em>amiotrofia diabética</em>)</td><td>fraqueza e atrofia <strong>assimétricas</strong> proximais nos membros inferiores, dor pior à noite, <strong>reflexos patelares abolidos</strong>, sensibilidade ausente ou discretamente alterada; ileopsoas, quadríceps e adutores</td></tr></tbody></table></div>
+<p>A amiotrofia diabética tende à <strong>recuperação espontânea</strong>, podendo regredir de um lado e aparecer no outro; a lesão se situa provavelmente nas raízes ou nervos espinais.</p>
+<h4>Patologia, patogênese e tratamento</h4>
+<p>Há perda de axônios e desmielinização segmentar secundária, redução de fibras amielínicas, lesões vasculares obliterativas e <strong>membrana basal dos capilares intraneurais espessada e duplicada</strong>. Mais de um mecanismo opera: as <strong>mononeuropatias assimétricas</strong> parecem ter origem <strong>isquêmica</strong>, por doença da <em>vasa nervorum</em>; as formas difusas são atribuídas a alterações metabólicas — <strong>acúmulo de sorbitol na célula de Schwann</strong> e <strong>deficiência de mioinositol</strong> com redução da velocidade de condução.</p>
+<blockquote><p>Como a lesão do nervo se relaciona ao controle inadequado do diabetes, o ponto principal do tratamento é <strong>manter a glicemia relativamente normal</strong>. Para a dor: fenitoína, carbamazepina, gabapentina, fenotiazinas e antidepressivos tricíclicos.</p></blockquote>
+<hr>
+<h2>Neuropatias tóxico-carenciais</h2>
+<p>As neuropatias por drogas são em geral <strong>distais, simétricas, sensitivo-motoras</strong>, com predomínio sensitivo e dor frequente. Ao cessar a exposição o paciente ainda <strong>piora um pouco</strong> antes de começar a melhorar; a recuperação leva meses e costuma ser incompleta. Entre os fármacos implicados: amiodarona, cloranfenicol, cloroquina, colchicina, dapsona, disulfiram, isoniazida, metronidazol, nitrofurantoína, fenitoína, piridoxina, talidomida, sinvastatina e os dideoxinucleosídeos.</p>
+<div class="tbl"><table><thead><tr><th>Agente</th><th>Pista extraneurológica</th><th>Neuropatia</th></tr></thead><tbody><tr><td><strong>Arsênico</strong></td><td>pancitopenia, dor abdominal, vômitos, diarreia, <strong>hiperqueratose palmoplantar</strong>, melanose, alopecia, estrias transversas nas unhas</td><td>sensitivo-motora</td></tr><tr><td><strong>Chumbo</strong></td><td>dor abdominal, anemia, <strong>linha plúmbica gengival</strong></td><td>predominantemente <strong>motora</strong>, axonal, com predileção pelo <strong>nervo radial</strong></td></tr><tr><td><strong>Tálio</strong></td><td>sintomas gastrintestinais, <strong>alopecia 2 a 3 semanas após</strong> o início da neuropatia</td><td>sensitivo-motora, distal e dolorosa</td></tr><tr><td><strong>Álcool</strong></td><td>9% dos alcoolistas</td><td>membros inferiores, <strong>predominantemente sensitiva</strong>, hiperestesia nos pés, abolição dos aquileus</td></tr></tbody></table></div>
+<p>O diagnóstico das neuropatias por metais se faz pelo nível sérico elevado do metal no sangue, urina, cabelo ou unhas; o tratamento é cessar a exposição e usar quelantes. Na alcoólica, parar o álcool e manter nutrição adequada — a melhora é gradual, em meses, e pode ser incompleta.</p>
+<h3>Carências vitamínicas</h3>
+<div class="tbl"><table><thead><tr><th>Vitamina</th><th>Síndrome</th></tr></thead><tbody><tr><td><strong>B1 (tiamina)</strong></td><td>beribéri — falência cardíaca e polineuropatia distal axonal, de predomínio sensitivo</td></tr><tr><td><strong>B6 (piridoxina)</strong></td><td>neuropatia periférica, cuja causa mais comum é o aumento da excreção pela <strong>isoniazida</strong> — a reposição previne</td></tr><tr><td><strong>B12 (cobalamina)</strong></td><td>polineuropatia leve que <strong>não ocorre isolada</strong>: domina a mielopatia das colunas posterior e lateral (degeneração subaguda combinada)</td></tr><tr><td><strong>E</strong></td><td>síndrome espinocerebelar, arreflexia, ataxia, queda da sensibilidade vibratória e artrestesia; lesão nos processos <strong>centrais</strong> do gânglio da raiz dorsal</td></tr></tbody></table></div>
+<blockquote><p>Piridoxina é a vitamina de dois gumes: <strong>falta</strong> dela por uso de isoniazida causa neuropatia, e <strong>dose muito elevada</strong> causa uma neuropatia <strong>sensitiva atáxica</strong>. Repor sim, exagerar não.</p></blockquote>
+<hr>
+<h2>Neuropatias infecciosas — com destaque para a hanseníase</h2>
+<p>O <strong>mal de Hansen</strong> é uma doença infecciosa <strong>primária do sistema nervoso periférico</strong>, causada pelo <em>Mycobacterium leprae</em>. A lesão inicial é uma <strong>pápula ou mácula geralmente hipopigmentada, com diminuição da sensibilidade</strong>, pela invasão dos nervos cutâneos pelo bacilo. A manifestação clínica é determinada pela <strong>resposta imune do hospedeiro</strong>:</p>
+<div class="tbl"><table><thead><tr><th>Forma</th><th>Resposta imune</th><th>Consequência</th></tr></thead><tbody><tr><td><strong>Tuberculoide</strong></td><td>celular, com formação de <strong>granuloma</strong></td><td>lesão do tecido, poucos bacilos</td></tr><tr><td><strong>Lepromatosa</strong></td><td><strong>mínima</strong></td><td>proliferação e disseminação do agente</td></tr></tbody></table></div>
+<p>O sintoma principal é a perda sensitiva, <strong>principalmente à dor e à temperatura</strong>, acometendo nervos cutâneos e mistos em partes do corpo de <strong>temperatura relativamente baixa</strong> — é a topografia térmica, e não o comprimento do nervo, que define a distribuição. À perda sensitiva soma-se perda motora pela invasão de nervos próximos à pele, e o <strong>nervo ulnar é o mais acometido</strong>. Diagnóstico por <strong>biópsia de pele ou de nervo</strong>; tratamento principalmente com <strong>sulfonas</strong>, sendo a <strong>dapsona</strong> a mais utilizada.</p>
+<h3>Outras infecciosas</h3>
+<ul><li><strong>HIV</strong> — nos estágios tardios, o quadro mais comum é <strong>neuropatia distal dolorosa</strong>,</li></ul>
+<p>sobretudo nos pés, com alteração sensitiva importante e comprometimento motor menor; parte dos casos tem déficit de B12 ou uso de drogas neurotóxicas associado. Pacientes assintomáticos, muitas vezes na <strong>soroconversão</strong>, podem ter polirradiculoneurite aguda ou crônica semelhante à dos HIV-negativos, <strong>exceto pela pleocitose no líquor</strong>. O <strong>citomegalovírus</strong>, nos estágios avançados, causa mononeuropatia múltipla grave e polirradiculoneuropatia lombossacral aguda.</p>
+<ul><li><strong>Doença de Lyme</strong> — <em>Borrelia burgdorferi</em>, transmitida por carrapato, em três estágios</li></ul>
+<p>(erupção cutânea, disseminação precoce de 2 a 10 semanas, tardia após 1 ano). No envolvimento precoce, a <strong>neuropatia do nervo facial é a mais comum, com envolvimento contralateral em 50%</strong>, e há dor radicular com fraqueza assimétrica. Tratamento com penicilina ou ceftriaxona leva à recuperação. <strong>A neuropatia tardia não melhora se não for tratada.</strong></p>
+<ul><li><strong>Varicela-zóster</strong> — a reativação do vírus latente nos neurônios sensitivos do gânglio da</li></ul>
+<p>raiz dorsal causa ganglionite inflamatória e necrótica, com alteração sensitiva e dor no dermátomo. Se a inflamação se estende à raiz ventral, há fraqueza no miótomo correspondente em <strong>30%</strong> dos pacientes. A <strong>neuralgia pós-herpética</strong> tem incidência crescente com a idade.</p>
+<hr>
+<h2>Neuropatias imune-mediadas: Guillain-Barré e a forma crônica</h2>
+<p>A <strong>polirradiculoneurite aguda (PRNA)</strong>, ou síndrome de Guillain-Barré, caracteriza-se por <strong>déficit motor progressivo, geralmente ascendente, de instalação aguda, acompanhado de arreflexia</strong>, com ou sem alteração sensitiva. É imune-mediada, com alterações da imunidade celular e humoral; o antígeno desencadeante ainda não foi determinado. O achado patológico clássico é infiltrado de linfócitos e macrófagos com desmielinização nas raízes e nos segmentos proximais dos nervos, mas há duas variantes axonais descritas:</p>
+<ul><li><strong>Neuropatia axonal sensitivo-motora aguda</strong> — envolve fibras motoras e sensitivas, em</li></ul>
+<p>geral <strong>mais grave</strong>.</p>
+<ul><li><strong>Neuropatia axonal motora aguda</strong> — comprometimento <strong>motor puro</strong>, evolução mais benigna.</li><li><strong>Síndrome de Miller-Fisher</strong> — variante com <strong>oftalmoplegia, ataxia e arreflexia</strong>, na</li></ul>
+<p>ausência de fraqueza muscular importante.</p>
+<h3>A cronologia da PRNA</h3>
+<p>Em <strong>dois terços</strong> dos casos há antecedente de processo infeccioso viral ou bacteriano, ou de cirurgia e vacinas. Os primeiros sintomas são <strong>parestesias</strong>; depois vem fraqueza proximal e distal de caráter ascendente, começando nos membros inferiores, podendo chegar à insuficiência respiratória e aos nervos cranianos (mímica facial, mastigação, palato e, mais raramente, motricidade ocular extrínseca). A fraqueza é relativamente simétrica e a <strong>arreflexia é sinal precoce</strong>. Cerca de <strong>50% têm disfunção autonômica</strong>, com flutuação de pressão arterial e frequência cardíaca e retenção urinária transitória.</p>
+<p>O grau máximo de incapacidade ocorre entre <strong>1 e 4 semanas</strong>, seguido de <strong>platô de 2 a 4 semanas</strong> e recuperação em poucos meses.</p>
+<blockquote><p><strong>Dissociação proteíno-citológica</strong> = celularidade normal + proteinorraquia aumentada. Ela aparece <strong>após uma semana</strong> de evolução e atinge o máximo entre a <strong>quarta e a sexta semanas</strong> — ou seja, um líquor normal na fase inicial <strong>não afasta</strong> o diagnóstico.</p></blockquote>
+<p>Apesar da evolução dita benigna: a maior parte dos pacientes fica restrita ao leito, <strong>15% a 30% precisam de assistência ventilatória</strong>, <strong>15% evoluem com déficit funcional persistente</strong> e <strong>3% a 8% morrem</strong>. Falência respiratória e disautonomia justificam a terapia intensiva.</p>
+<blockquote><p><strong>Tratamento da PRNA:</strong> a <strong>plasmaférese</strong> foi o primeiro tratamento comprovadamente eficaz — seu obstáculo prático é o acesso venoso, muitas vezes exigindo cateter central, e a disautonomia pode dificultar as sessões. A <strong>imunoglobulina endovenosa</strong> mostrou-se <strong>igualmente eficaz</strong> e também é usada. <strong>O corticosteroide não está entre os tratamentos de eficácia estabelecida na forma aguda</strong> — reservá-lo é justamente o que separa a PRNA da forma crônica.</p></blockquote>
+<h3>Polirradiculoneurite crônica (PRNC)</h3>
+<p>Polineuropatia <strong>desmielinizante adquirida</strong>, provavelmente imunológica, de instalação lentamente progressiva ou com períodos de flutuação da fraqueza, estabelecendo-se como crônica com <strong>evolução de pelo menos dois meses</strong>.</p>
+<div class="tbl"><table><thead><tr><th></th><th><strong>PRNA (Guillain-Barré)</strong></th><th><strong>PRNC</strong></th></tr></thead><tbody><tr><td>Instalação</td><td>aguda</td><td>lentamente progressiva ou flutuante</td></tr><tr><td>Tempo até se definir</td><td>pico em 1 a 4 semanas</td><td><strong>pelo menos 2 meses</strong></td></tr><tr><td>Déficit motor</td><td>ascendente, proximal e distal, simétrico</td><td>simétrico, proximal e distal, começa nos inferiores</td></tr><tr><td>Insuficiência respiratória</td><td>15% a 30% precisam de ventilação</td><td><strong>rara</strong></td></tr><tr><td>Sensibilidade</td><td>alteração em geral discreta</td><td><strong>frequente</strong> — hipoestesia em bota e luva, perda profunda</td></tr><tr><td>Reflexos</td><td>arreflexia precoce</td><td>arreflexia generalizada</td></tr><tr><td>Líquor</td><td>dissociação proteíno-citológica</td><td>—</td></tr><tr><td><strong>Corticosteroide</strong></td><td><strong>não é tratamento estabelecido</strong></td><td><strong>preconizado e reconhecido como eficaz</strong></td></tr><tr><td>Outros tratamentos</td><td>plasmaférese e imunoglobulina</td><td>azatioprina, ciclofosfamida, ciclosporina; plasmaférese e imunoglobulina são consideradas primeira escolha por vários autores</td></tr></tbody></table></div>
+<p>A <strong>resposta positiva ao tratamento imunossupressor</strong> é uma das melhores evidências de que a PRNC é imunologicamente mediada. Muitos pacientes pioram quando a plasmaférese ou a imunoglobulina são espaçadas ou retiradas, exigindo associação com imunossupressores.</p>
+<hr>
+<h2>Vasculíticas, paraproteinêmicas, paraneoplásicas e hereditárias</h2>
+<p><strong>Neuropatias vasculíticas</strong> — o processo inflamatório atinge os vasos nutrientes do nervo e precisa ser relativamente extenso, dada a rica vascularização da região. A vasculite tende a ser <strong>focal e assimétrica</strong>, produzindo <strong>mononeuropatia múltipla</strong> que vai <strong>confluindo</strong> com a progressão; as manifestações sensitivas frequentemente inauguram o quadro e o déficit motor vem depois. As vasculites sistêmicas envolvidas incluem poliarterite nodosa (neuropatia em <strong>50% a 70%</strong>), vasculite reumatoide, síndrome de Sjögren, granulomatose de Wegener, síndrome de Churg-Strauss e lúpus. O diagnóstico definitivo é por <strong>biópsia de nervo</strong>: infiltrado perivascular ou intramural, focos de <strong>necrose fibrinoide</strong>, fibrose ou oclusão da luz — o vaso <strong>epineural</strong> é o mais acometido. Tratamento: <strong>prednisona em altas doses</strong>, associada ou não a ciclofosfamida. De 10% a 30% não têm vasculite sistêmica e evoluem de forma benigna.</p>
+<p><strong>Associadas a paraproteínas</strong> — grupo heterogêneo (axonais, desmielinizantes e mistas) com proteína monoclonal circulante (IgG, IgA ou IgM). A maioria se associa a gamopatia monoclonal de significado indeterminado (MGUS); outras a mieloma múltiplo, mieloma osteosclerótico (síndrome POEMS), amiloidose sistêmica, macroglobulinemia ou linfoma.</p>
+<p><strong>Paraneoplásicas</strong> — o sistema nervoso periférico expressa sobretudo manifestações sensitivas ou sensitivo-motoras, agudas ou subagudas, com parestesias, disestesias e <strong>ataxia por perda proprioceptiva</strong>. O líquor mostra pleocitose linfocítica e aumento de proteína. O anticorpo <strong>anti-Hu</strong>, contra antígeno nuclear neuronal de 37 kDa, é específico e sensível; anti-p23 se relaciona a polineuropatias secundárias a linfomas, anti-Trotter à polineuropatia paralinfomatosa de Hodgkin, anti-Yo ao envolvimento cerebelar.</p>
+<blockquote><p>O envolvimento do sistema nervoso periférico quase sempre <strong>precede o aparecimento do tumor</strong> — por isso o diagnóstico de neuropatia paraneoplásica obriga, em alguns casos, a caçar o tumor ainda não manifesto.</p></blockquote>
+<p><strong>Geneticamente determinadas</strong> — hereditárias, crônicas, simétricas. Dividem-se nas associadas a defeito metabólico específico (leucodistrofia metacromática, Krabbe, Refsum, Fabry, Tangier, amiloidótica hereditária, porfiria hepática) e naquelas de patogênese indefinida, estas subdivididas em neuronopatias motoras hereditárias, <strong>neuropatias hereditárias sensitivo-motoras (HMSN)</strong>, autonômicas e sensitivas, e grupos menores.</p>
+<div class="tbl"><table><thead><tr><th>Entidade</th><th>Marca</th></tr></thead><tbody><tr><td><strong>Amiloidose hereditária tipo I</strong></td><td>a mais comum em nosso meio, ascendência <strong>portuguesa</strong>, autossômica dominante, início entre 25 e 35 anos; mutação do gene da <strong>transtirretina</strong> (pré-albumina); polineuropatia sensitivo-motora de predomínio sensitivo + disautonomia marcada; evolução a caquexia e morte em 10 a 15 anos</td></tr><tr><td><strong>Porfiria aguda intermitente</strong></td><td>ataques com dor abdominal, náuseas, taquicardia e hipertensão, depois confusão e convulsões, e então neuropatia <strong>predominantemente motora de instalação aguda</strong> — diagnóstico diferencial da PRNA; na crise, ALA e porfobilinogênio na urina</td></tr><tr><td><strong>HMSN I (CMT1)</strong></td><td><strong>desmielinizante hipertrófica</strong>; fraqueza distal lentamente progressiva de peroneiros e tibiais anteriores, sintomática entre a 2ª e a 4ª décadas; deformidades dos pés, arreflexia, perda sensitiva distal; <strong>hipertrofia dos nervos em um terço</strong>; CMT1A no cromossomo 17</td></tr><tr><td><strong>HMSN II (CMT2)</strong></td><td>quadro semelhante, <strong>início mais tardio</strong> e lesão <strong>axonal</strong></td></tr><tr><td><strong>HMSN III (Dejerine-Sottas)</strong></td><td>autossômica <strong>recessiva</strong>, desmielinizante com hipomielinização, início antes dos 2 anos, quadro mais grave, velocidade de condução muito reduzida; mutação de PMP22 ou P0</td></tr></tbody></table></div>
+<hr>
+<h2>Plexos e troncos nervosos</h2>
+<p>O <strong>plexo braquial</strong> nasce dos ramos anteriores de C5 a T1: C5 e C6 formam o tronco superior, C7 continua como tronco médio e C8 com T1 formam o tronco inferior. Causas de lesão: arma branca ou de fogo, torções do membro, trauma de parto, compressão por costela cervical, fáscias ou tumores, lesão cirúrgica e pós-radioterapia.</p>
+<div class="tbl"><table><thead><tr><th>Síndrome</th><th>Raízes</th><th>Quadro</th></tr></thead><tbody><tr><td><strong>Paralisia braquial superior</strong> (a mais frequente)</td><td>C5-C6</td><td>déficit de deltoide, supra e infraespinhoso, bíceps e braquiorradial; não abduz nem roda externamente o braço, não flete nem supina o antebraço; <strong>reflexo bicipital abolido</strong>; alteração sensitiva leve sobre o deltoide</td></tr><tr><td>Síndrome radicular média (rara)</td><td>C7</td><td>fraqueza do tríceps <strong>com braquiorradial poupado</strong>, perda do reflexo tricipital, hipoestesia no dorso do antebraço, mão e 2º-3º dedos; também pronador redondo e flexor radial do carpo</td></tr><tr><td><strong>Paralisia braquial inferior</strong> (2ª mais comum)</td><td>C8-T1</td><td>paralisia, atrofia e hipotonia dos pequenos músculos da mão (tenar, hipotenar, interósseos, lumbricais); hipoestesia do mínimo, borda medial do anular, mão e antebraço; <strong>síndrome de Claude-Bernard-Horner se T1 for atingida</strong>. Causas: trauma penetrante, <strong>tumor do ápice pulmonar (Pancoast)</strong>, neurinoma, costela cervical</td></tr></tbody></table></div>
+<p>O <strong>plexo lombossacro</strong> vem dos ramos anteriores das cinco raízes lombares e das quatro sacrais; o acometimento simultâneo de ambos é menos frequente que o individual. Do plexo lombar saem o <strong>obturador</strong> (adutores da coxa) e o <strong>femoral</strong> (ileopsoas e quadríceps); o maior nervo do plexo lombossacral é o <strong>ciático</strong>, que se divide em fibular e tibial posterior. A lesão do plexo superior dá déficit de flexão e adução da coxa e extensão da perna, com alteração sensitiva na face anterior da coxa e da perna; a do plexo inferior atinge os músculos posteriores da coxa e da perna e os do pé. Causas: cirurgias pélvicas e abdominais (histerectomia, apendicectomia, herniorrafia), traumatismo obstétrico materno, aneurisma de aorta e tumores de próstata, útero, cólon e linfomas retroperitoneais.</p>
+<div class="tbl"><table><thead><tr><th>Nervo</th><th>Déficit motor</th><th>Território sensitivo</th><th>Causas típicas</th></tr></thead><tbody><tr><td><strong>Mediano</strong></td><td>não prona o antebraço, não flete os três primeiros dedos, perde a oponência do polegar; atrofia tenar → <strong>mão simiesca</strong></td><td>lado externo da face palmar da mão</td><td>ferimento perfurante do braço, torniquete, <strong>síndrome do túnel do carpo</strong>, neurite leprosa</td></tr><tr><td><strong>Ulnar</strong></td><td>não flete nem aduz o punho, não flete as primeiras falanges, não abduz nem aduz os dedos, não aduz o polegar → <strong>garra cubital</strong> (a mão em garra verdadeira só na lesão combinada com o mediano)</td><td>dedo mínimo e metade medial do anular</td><td>fraturas e artropatias crônicas do <strong>cotovelo</strong>, arma branca ou de fogo, neurite leprosa</td></tr><tr><td><strong>Radial</strong></td><td>déficit dos extensores do antebraço, mão e dedos, e do braquiorradial → <strong>mão caída</strong></td><td>dorso da 1ª falange do polegar e 1º espaço interósseo</td><td><strong>fratura do úmero</strong>, compressão ao dormir com o braço pendente, <strong>intoxicação por chumbo</strong></td></tr><tr><td><strong>Fibular comum</strong></td><td>paralisia da flexão dorsal, abdução do pé e extensão dos dedos</td><td>face lateral da perna e dorso do pé</td><td>trauma, fratura da fíbula, compressão sobre a <strong>cabeça da fíbula</strong> (pernas cruzadas, gesso)</td></tr><tr><td><strong>Tibial posterior</strong></td><td>déficit dos músculos da panturrilha e intrínsecos do pé</td><td>territórios sural e plantar</td><td>compressão na fossa poplítea por cisto ou aneurisma; <strong>síndrome do túnel do tarso</strong>, rara</td></tr></tbody></table></div></script>
+<!-- Tutor local: define window.DEEPSEEK_KEY. O arquivo NAO vai para o repositorio,
+     entao online ele da 404 e o chat simplesmente nao aparece. -->
+<script src="../deepseek_key.js"></script>
+<script>
+/* ─────────────────────────────────────────────────────────────────────────────
+   CONTRATO DE DADOS — para adaptar a outro tema, troque apenas QUIZ e o resumo.
+   Cada item: { question, options[2..6], correctIndex, explanation }
+   ──────────────────────────────────────────────────────────────────────────── */
+var TITLE      = "Neuropatias Periféricas";
+var EYEBROW    = "Neurologia · Sistema Nervoso Periférico";
+var DISCIPLINA = "Neurologia";   // pasta de origem (PED, GO...) — usada pelo índice
+var SUBTITLE = "Do padrão de acometimento ao diagnóstico das principais neuropatias";
+var INTRO    = "Classificação e semiologia do nervo periférico, polineuropatia diabética, hanseníase, Guillain-Barré e polirradiculoneurite crônica, neuropatias tóxico-carenciais, vasculíticas e as mononeuropatias de tronco.";
+
+var QUIZ = [
+  {
+    "question": "Um paciente apresenta perda de força e hipoestesia simétricas, distais e bilaterais nos quatro membros. Que padrão de acometimento do sistema nervoso periférico esse quadro define?",
+    "options": [
+      "Polineuropatia — disfunção simétrica, distal e bilateral dos nervos",
+      "Mononeuropatia — lesão focal de um único nervo periférico",
+      "Mononeuropatia múltipla — lesão multifocal de nervos isolados",
+      "Plexopatia braquial — lesão dos troncos formados por C5 a T1"
+    ],
+    "correctIndex": 0,
+    "explanation": "Chama-se polineuropatia a doença que altera a função dos nervos periféricos de modo simétrico, distal e bilateral. Quando o processo envolve raízes espinais, isoladas ou junto com os troncos, usam-se os termos polirradiculopatia ou polirradiculoneuropatia. Lesão focal de um nervo é mononeuropatia; lesão multifocal, mononeuropatia múltipla."
+  },
+  {
+    "question": "Por que a recuperação funcional é mais rápida na desmielinização segmentar do que na degeneração axonal?",
+    "options": [
+      "O axônio permanece íntegro e basta a remielinização do segmento",
+      "O corpo celular do neurônio é poupado e refaz a bainha em dias",
+      "A fibra lesada é substituída por brotamento de fibras vizinhas",
+      "A condução é restabelecida pelo aumento do número de nódulos"
+    ],
+    "correctIndex": 0,
+    "explanation": "Na desmielinização segmentar há degeneração focal da bainha de mielina com preservação do axônio, de modo que a função volta assim que o segmento é remielinizado. Já nas degenerações walleriana e axonal o axônio precisa primeiro regenerar e reconectar-se ao músculo, e a recuperação leva meses ou anos."
+  },
+  {
+    "question": "Comparadas às axonais, como se comporta a atrofia muscular nas neuropatias desmielinizantes?",
+    "options": [
+      "É mais discreta e decorre do desuso da musculatura",
+      "É mais intensa e decorre da desnervação das fibras",
+      "É mais discreta e decorre do bloqueio do arco reflexo",
+      "É mais intensa e decorre da perda de fibras aferentes"
+    ],
+    "correctIndex": 0,
+    "explanation": "A atrofia por desnervação é o principal distúrbio trófico da interrupção do nervo motor e é intensa quando há lesão axonal. Nas neuropatias desmielinizantes o axônio está preservado, e a atrofia observada é discreta e consequente ao desuso. A hipotonia, por sua vez, decorre da interrupção do arco reflexo espinal."
+  },
+  {
+    "question": "Um paciente perdeu a sensibilidade térmica e dolorosa nos pés, mas mantém preservadas a tátil, a vibratória e a cineticopostural. Que fibras estão comprometidas?",
+    "options": [
+      "Axônios mielínicos finos e amielínicos",
+      "Axônios mielínicos grossos e amielínicos",
+      "Apenas os axônios mielínicos grossos",
+      "Apenas as fibras do fuso neuromuscular"
+    ],
+    "correctIndex": 0,
+    "explanation": "Esse é o padrão da dissociação pseudo-siringomiélica: hipoestesia térmica e dolorosa com preservação das modalidades tátil, vibratória e cineticopostural. Ele é frequente nas neuropatias que comprometem axônios mielínicos finos e amielínicos, justamente as fibras que conduzem dor e temperatura."
+  },
+  {
+    "question": "Que perda sensitiva caracteriza as neuropatias em que predomina o comprometimento das grandes fibras mielínicas?",
+    "options": [
+      "Perda da sensibilidade tátil, com térmica e dolorosa preservadas",
+      "Perda da sensibilidade térmica e dolorosa, com tátil preservada",
+      "Perda da sensibilidade dolorosa, com tátil e térmica preservadas",
+      "Perda global das modalidades, sem qualquer tipo preservado"
+    ],
+    "correctIndex": 0,
+    "explanation": "Quando o maior comprometimento recai sobre as grandes fibras mielínicas, perde-se a sensibilidade tátil enquanto a térmica e a dolorosa permanecem preservadas — o inverso do que ocorre na lesão de fibras finas. Na maioria das polineuropatias, porém, todas as modalidades acabam comprometidas, em padrão de bota e luva."
+  },
+  {
+    "question": "Com os braços estendidos e os olhos fechados, um paciente com força preservada apresenta movimentos pseudo-atetóticos dos dedos. O que esse achado indica?",
+    "options": [
+      "Deaferentação proprioceptiva por perda de fibras grossas",
+      "Deaferentação nociceptiva por perda de fibras finas",
+      "Lesão cerebelar com decomposição do movimento",
+      "Comprometimento autonômico das fibras amielínicas"
+    ],
+    "correctIndex": 0,
+    "explanation": "A ataxia sensitiva resulta de deaferentação proprioceptiva e aparece nos casos de perda de fibras grossas. Quando a deaferentação atinge os membros superiores e a força está preservada, observam-se movimentos pseudo-atetóticos dos dedos com os membros estendidos e os olhos fechados; fenômeno semelhante pode ocorrer nos membros inferiores."
+  },
+  {
+    "question": "Como se caracteriza a osteoartropatia neurogênica, também chamada de junta de Charcot?",
+    "options": [
+      "Grandes deformidades articulares indolores, de início súbito e rápidas",
+      "Grandes deformidades articulares dolorosas, de início lento e gradual",
+      "Pequenas deformidades articulares indolores, de evolução por décadas",
+      "Rigidez articular dolorosa sem deformidade, revertida com o repouso"
+    ],
+    "correctIndex": 0,
+    "explanation": "A osteoartropatia neurogênica caracteriza-se por enormes deformidades articulares, ausência de manifestações álgicas e, em geral, início súbito com desenvolvimento rápido. É uma das alterações tróficas das neuropatias crônicas, ao lado do mal perfurante plantar e da perda de falanges distais."
+  },
+  {
+    "question": "Por que a polineuropatia distal favorece o aparecimento de úlceras plantares e queimaduras nos pés?",
+    "options": [
+      "A analgesia das partes distais torna os pés suscetíveis a injúria repetida",
+      "A anidrose das partes distais torna a pele dos pés friável e infectada",
+      "A fraqueza dos músculos intrínsecos deforma o pé e expõe a pele ao atrito",
+      "A hipotensão ortostática reduz a perfusão cutânea das extremidades"
+    ],
+    "correctIndex": 0,
+    "explanation": "A analgesia das partes distais torna-as suscetíveis a queimaduras, escaras de decúbito e outras formas de injúria, e daí surgem as úlceras plantares, o chamado mal perfurante plantar, e a perda de falanges distais. A pele torna-se atrófica, adelgaçada, lisa e brilhante, e as unhas ficam curvas e rígidas."
+  },
+  {
+    "question": "Quais são as manifestações autonômicas mais frequentes das neuropatias periféricas?",
+    "options": [
+      "Anidrose e hipotensão ortostática",
+      "Hiperidrose e hipertensão sustentada",
+      "Midríase fixa e epífora persistente",
+      "Bradicardia e sialorreia abundante"
+    ],
+    "correctIndex": 0,
+    "explanation": "Anidrose e hipotensão ortostática são as manifestações autonômicas mais frequentes e muitas vezes dominam o quadro da neuropatia. Outras alterações possíveis são pupilas médias ou pequenas e arreativas, falta de lágrimas e saliva, impotência sexual, incontinência urinária e fecal e dilatação de esôfago e cólon."
+  },
+  {
+    "question": "Um paciente desenvolve lesão sucessiva e assimétrica de nervos isolados. Qual conjunto de causas deve encabeçar a investigação?",
+    "options": [
+      "Vasculites, diabetes melito, hanseníase, doença de Lyme e HIV",
+      "Deficiência de tiamina, de cobalamina, de piridoxina e etilismo",
+      "Uremia, hipotireoidismo, acromegalia e falência hepática crônica",
+      "Charcot-Marie-Tooth, Dejerine-Sottas e porfiria aguda intermitente"
+    ],
+    "correctIndex": 0,
+    "explanation": "Definir o padrão é o primeiro passo porque a mononeuropatia múltipla tem um leque etiológico bem menor que o das polineuropatias. As causas mais importantes são vasculites, diabetes melito, neuropatia multifocal motora, crioglobulinemia, mal de Hansen, doença de Lyme, infecção pelo HIV e sarcoidose."
+  },
+  {
+    "question": "Que conjunto de achados sugere neuropatia hereditária em um paciente com polineuropatia crônica?",
+    "options": [
+      "Evolução de anos, simetria desde o início, pés cavos e dedos em martelo",
+      "Evolução de meses, assimetria desde o início, dor intensa e febre baixa",
+      "Evolução de dias, déficit ascendente, arreflexia e infecção precedente",
+      "Evolução flutuante, mácula hipopigmentada e espessamento do nervo ulnar"
+    ],
+    "correctIndex": 0,
+    "explanation": "História de evolução de anos, simetria dos sintomas desde o início e presença de pés cavos e dedos em martelo ao exame apontam para neuropatia hereditária. História familiar negativa não exclui o diagnóstico, seja pelo caráter recessivo da doença, seja porque os sinais nos parentes são discretos e não percebidos por eles."
+  },
+  {
+    "question": "Que conjunto de achados eletroneuromiográficos define o padrão desmielinizante de uma neuropatia?",
+    "options": [
+      "Velocidade de condução reduzida, latência distal e onda F aumentadas",
+      "Amplitude do potencial muito reduzida e sinais claros de desnervação",
+      "Velocidade de condução normal e amplitude do potencial preservada",
+      "Latência distal reduzida e ausência de bloqueio de condução no trajeto"
+    ],
+    "correctIndex": 0,
+    "explanation": "No padrão desmielinizante observam-se diminuição da velocidade de condução nervosa, aumento da latência distal, presença de bloqueio de condução e aumento do tempo de latência da onda F. Na lesão axonal predomina a queda importante da amplitude do potencial associada a sinais de desnervação na eletromiografia."
+  },
+  {
+    "question": "Qual é o papel da biópsia de nervo na investigação de uma neuropatia periférica?",
+    "options": [
+      "É o último exame, feita no sural quando a investigação não definiu a causa",
+      "É o primeiro exame, feita no sural antes mesmo de qualquer dosagem sérica",
+      "É o exame de escolha no diabetes, por mostrar alteração axonal específica",
+      "É exame de triagem na polineuropatia simétrica distal de evolução lenta"
+    ],
+    "correctIndex": 0,
+    "explanation": "A biópsia de nervo, em geral do sural, é o último exame a ser pedido, quando a investigação sistêmica não evidenciou etiologia definida. Ela pode confirmar o diagnóstico em vasculites, neuropatia amiloide, mal de Hansen, infiltração neoplásica do nervo e algumas doenças hereditárias."
+  },
+  {
+    "question": "Na neuropatia da falência renal crônica, a partir de que ponto a velocidade de condução motora começa a diminuir?",
+    "options": [
+      "Quando o clearance de creatinina cai abaixo de 10% do normal",
+      "Quando o clearance de creatinina cai abaixo de 50% do normal",
+      "Quando a ureia sérica ultrapassa o dobro do valor de referência",
+      "Quando a diálise é iniciada, independentemente do clearance"
+    ],
+    "correctIndex": 0,
+    "explanation": "A velocidade de condução motora começa a cair junto com a função renal quando o clearance de creatinina desce abaixo de 10% do normal, embora os sintomas não guardem relação direta com esse valor. O quadro típico é polineuropatia sensitivo-motora simétrica e progressiva, com disestesias nos pés e déficit motor leve."
+  },
+  {
+    "question": "Um paciente séptico internado em terapia intensiva evolui com tetraparesia, arreflexia profunda e dificuldade de desmame ventilatório. Qual é o achado esperado na eletroneuromiografia?",
+    "options": [
+      "Envolvimento axonal, compatível com polineuropatia do doente crítico",
+      "Bloqueio de condução difuso, compatível com polirradiculoneurite aguda",
+      "Padrão miopático, com potenciais de curta duração e muito polifásicos",
+      "Lentificação difusa da condução com aumento da latência da onda F"
+    ],
+    "correctIndex": 0,
+    "explanation": "De 20% a 50% dos pacientes admitidos em terapia intensiva podem desenvolver polineuropatia do doente crítico, uma polineuropatia motora axonal consequente à síndrome de resposta inflamatória sistêmica por sepse, falência de múltiplos órgãos, pancreatite, trauma ou queimaduras. A eletroneuromiografia revela envolvimento axonal e permite avaliar nervo frênico e diafragma."
+  },
+  {
+    "question": "Como varia a prevalência da neuropatia periférica ao longo da evolução do diabetes melito?",
+    "options": [
+      "De 7,5% na descoberta do diabetes a 50% após 25 anos de doença",
+      "De 7,5% na descoberta do diabetes a 15% após 25 anos de doença",
+      "De 25% na descoberta do diabetes a 90% após 25 anos de doença",
+      "De 50% na descoberta do diabetes a 75% após 25 anos de doença"
+    ],
+    "correctIndex": 0,
+    "explanation": "A prevalência da neuropatia varia de 7,5% na época da descoberta do diabetes a 50% após 25 anos de doença. Cerca de 15% de todos os diabéticos têm sintomas e sinais de neuropatia periférica, e as crianças com diabetes raramente são acometidas, em torno de 2% dos casos."
+  },
+  {
+    "question": "Quais são os sinais mais precoces da polineuropatia sensitiva do diabetes, a forma mais frequente de neuropatia diabética?",
+    "options": [
+      "Perda do reflexo aquileu e hipopalestesia dos pés",
+      "Perda do reflexo patelar e hipopalestesia das mãos",
+      "Perda do reflexo bicipital e anestesia em bota",
+      "Perda do reflexo cutâneo-plantar e pé caído"
+    ],
+    "correctIndex": 0,
+    "explanation": "Os sinais mais precoces da polineuropatia sensitiva diabética são a perda do reflexo aquileu e a hipopalestesia dos pés, e o exame pode revelar anormalidades mesmo sem queixas. Quando há sintomas, são dormência e parestesias nos pés, com dor nos membros inferiores que piora à noite; as mãos são acometidas mais tarde."
+  },
+  {
+    "question": "Que conjunto de achados do diabetes recebe o nome de pseudotabes diabético?",
+    "options": [
+      "Ataxia, perda da sensibilidade profunda e atonia vesical com fraqueza leve",
+      "Ataxia, perda da sensibilidade térmica e dolorosa com fraqueza proximal",
+      "Oftalmoplegia, ataxia de marcha e arreflexia sem fraqueza muscular clara",
+      "Dor lombar, atrofia proximal assimétrica e reflexos patelares abolidos"
+    ],
+    "correctIndex": 0,
+    "explanation": "Quando a neuropatia sensitiva diabética é intensa, surgem ataxia sensitiva com marcha talonante, perda da sensibilidade profunda e atonia vesical, acompanhadas de fraqueza discreta dos membros. Esse conjunto lembra a tabes dorsalis, e daí a denominação pseudotabes diabético."
+  },
+  {
+    "question": "Um diabético apresenta dor noturna intensa, fraqueza e atrofia assimétricas de ileopsoas, quadríceps e adutores, reflexos patelares abolidos e sensibilidade quase normal. Qual é o diagnóstico?",
+    "options": [
+      "Neuropatia motora proximal, também chamada amiotrofia diabética",
+      "Polineuropatia sensitivo-motora simétrica e distal do diabetes",
+      "Mononeuropatia do tronco, ou neuropatia toracoabdominal",
+      "Polirradiculoneurite aguda com apresentação proximal atípica"
+    ],
+    "correctIndex": 0,
+    "explanation": "A amiotrofia diabética é uma neuropatia motora proximal com fraqueza e atrofia assimétricas nos membros inferiores, dor mais intensa à noite, reflexos patelares abolidos e alteração sensitiva ausente ou discreta. Atinge ileopsoas, quadríceps e adutores, poupando extensores da coxa e flexores da perna, e tende à recuperação espontânea."
+  },
+  {
+    "question": "Qual nervo craniano é mais frequentemente acometido de forma isolada no diabetes, e o que caracteriza essa lesão?",
+    "options": [
+      "O terceiro, de início abrupto e em geral poupando a inervação pupilar",
+      "O terceiro, de início insidioso e em geral com midríase paralítica fixa",
+      "O sexto, de início abrupto e acompanhado de perda sensitiva na face",
+      "O quarto, de início insidioso e com recuperação habitualmente ausente"
+    ],
+    "correctIndex": 0,
+    "explanation": "As neuropatias cranianas do diabetes ocorrem sobretudo em idosos, e a mais frequente é a lesão isolada do terceiro nervo; o sexto é afetado menos comumente e o quarto raramente de forma isolada. O início é abrupto, pode ser indolor ou vir com cefaleia, a inervação pupilar em geral é poupada e a recuperação é a regra."
+  },
+  {
+    "question": "Qual é o ponto principal do tratamento da neuropatia diabética?",
+    "options": [
+      "Manter a glicemia relativamente normal, pelo vínculo com o mau controle",
+      "Iniciar corticoide em dose alta, pelo componente inflamatório do nervo",
+      "Repor piridoxina em dose alta, pela perda urinária aumentada no diabetes",
+      "Indicar plasmaférese precoce, pelo mecanismo imune-mediado da lesão"
+    ],
+    "correctIndex": 0,
+    "explanation": "Como há relação entre a lesão dos nervos periféricos e o controle inadequado do diabetes, o ponto principal do tratamento é manter a glicemia relativamente normal. Para a dor são recomendadas fenitoína, carbamazepina, gabapentina, fenotiazinas e antidepressivos tricíclicos."
+  },
+  {
+    "question": "Qual é a relação entre a piridoxina, a vitamina B6, e a neuropatia periférica?",
+    "options": [
+      "Sua falta por uso de isoniazida causa neuropatia, e seu excesso causa ataxia",
+      "Sua falta por uso de isoniazida causa neuropatia, e seu excesso é inofensivo",
+      "Sua reposição é inútil na isoniazida, pois essa neuropatia é axonal pura",
+      "Sua falta causa beribéri, com falência cardíaca e polineuropatia distal"
+    ],
+    "correctIndex": 0,
+    "explanation": "A isoniazida aumenta a excreção de piridoxina e é a causa mais frequente de neuropatia por deficiência dessa vitamina, de modo que a reposição previne o quadro. O excesso é igualmente danoso: dose muito elevada de piridoxina causa uma neuropatia sensitiva atáxica. O beribéri, por sua vez, decorre da falta de tiamina."
+  },
+  {
+    "question": "Que quadro caracteriza a neuropatia por intoxicação pelo chumbo?",
+    "options": [
+      "Neuropatia motora axonal com predileção pelo radial, dor abdominal e anemia",
+      "Neuropatia sensitiva axonal com predileção pelo sural, diarreia e anemia",
+      "Neuropatia sensitivo-motora dolorosa, com alopecia duas a três semanas depois",
+      "Neuropatia sensitivo-motora com pancitopenia e hiperqueratose palmoplantar"
+    ],
+    "correctIndex": 0,
+    "explanation": "O chumbo causa dor abdominal, anemia e linha plúmbica na margem das gengivas, e sua neuropatia é predominantemente motora, axonal, com predileção pelo nervo radial. A alopecia tardia aponta para o tálio, e a pancitopenia com hiperqueratose palmoplantar, para o arsênico. O diagnóstico se faz pelo nível do metal em sangue, urina, cabelo ou unhas."
+  },
+  {
+    "question": "O que explica a distribuição da perda sensitiva na neuropatia do mal de Hansen?",
+    "options": [
+      "O bacilo acomete nervos cutâneos em áreas de temperatura corporal mais baixa",
+      "O bacilo acomete os nervos mais longos a partir de sua porção mais distal",
+      "O bacilo destrói o gânglio da raiz dorsal e desaferenta o dermátomo inteiro",
+      "O bacilo oblitera a vasa nervorum e isquemia os troncos nervosos maiores"
+    ],
+    "correctIndex": 0,
+    "explanation": "O Mycobacterium leprae acomete nervos cutâneos e mistos em partes do corpo de temperatura relativamente baixa, e o sintoma principal é a perda sensitiva, sobretudo à dor e à temperatura. A lesão inicial é uma pápula ou mácula hipopigmentada com diminuição da sensibilidade, resultado da invasão dos nervos cutâneos pelo bacilo."
+  },
+  {
+    "question": "Qual nervo é o mais acometido no mal de Hansen e com que classe de fármaco a doença é tratada?",
+    "options": [
+      "O nervo ulnar, tratado principalmente com sulfonas, como a dapsona",
+      "O nervo radial, tratado principalmente com sulfonas, como a dapsona",
+      "O nervo ulnar, tratado principalmente com quinolonas, como a ofloxacina",
+      "O nervo mediano, tratado com tetraciclinas, como a minociclina"
+    ],
+    "correctIndex": 0,
+    "explanation": "A perda sensitiva do mal de Hansen vem acompanhada de perda motora pela invasão de nervos próximos à pele, e o ulnar é o mais acometido. O diagnóstico é feito pela biópsia de pele ou de nervo, e o tratamento se faz principalmente com sulfonas, sendo a dapsona a mais utilizada."
+  },
+  {
+    "question": "O que distingue a forma tuberculoide da forma lepromatosa no mal de Hansen?",
+    "options": [
+      "A tuberculoide monta resposta celular com granuloma; a lepromatosa, resposta mínima",
+      "A tuberculoide monta resposta humoral com anticorpos; a lepromatosa, resposta celular",
+      "A tuberculoide dissemina o bacilo amplamente; a lepromatosa o contém no granuloma",
+      "A tuberculoide poupa os nervos cutâneos; a lepromatosa poupa a pele e as mucosas"
+    ],
+    "correctIndex": 0,
+    "explanation": "A manifestação clínica do mal de Hansen é determinada pela resposta imune do hospedeiro. A forma tuberculoide cursa com resposta celular, formação de granuloma e lesão tecidual; a lepromatosa cursa com resposta imunológica mínima, o que permite a proliferação e a disseminação do agente."
+  },
+  {
+    "question": "Que conjunto define o quadro clássico da polirradiculoneurite aguda, ou síndrome de Guillain-Barré?",
+    "options": [
+      "Déficit motor progressivo ascendente de instalação aguda, com arreflexia",
+      "Déficit motor progressivo descendente de instalação aguda, com hiper-reflexia",
+      "Déficit sensitivo puro de instalação aguda, com reflexos profundos normais",
+      "Déficit motor proximal de instalação crônica, com fasciculações difusas"
+    ],
+    "correctIndex": 0,
+    "explanation": "A polirradiculoneurite aguda caracteriza-se por déficit motor progressivo, geralmente ascendente, de instalação aguda e acompanhado de arreflexia, com ou sem alteração sensitiva. Os primeiros sintomas costumam ser parestesias; a fraqueza começa nos membros inferiores, sobe, é relativamente simétrica e pode atingir nervos cranianos e a respiração."
+  },
+  {
+    "question": "Em que proporção dos casos a polirradiculoneurite aguda é precedida por processo infeccioso, cirurgia ou vacina?",
+    "options": [
+      "Em cerca de dois terços",
+      "Em cerca de um terço",
+      "Em cerca de um décimo",
+      "Em praticamente todos"
+    ],
+    "correctIndex": 0,
+    "explanation": "Em aproximadamente dois terços dos casos a polirradiculoneurite aguda é antecedida por um processo infeccioso, viral ou bacteriano, ou ainda por procedimentos cirúrgicos e vacinas. A doença é imune-mediada, com alterações da imunidade celular e humoral, mas o antígeno desencadeante ainda não foi determinado."
+  },
+  {
+    "question": "O que é a dissociação proteíno-citológica encontrada no líquor da polirradiculoneurite aguda?",
+    "options": [
+      "Celularidade normal com proteinorraquia aumentada",
+      "Celularidade aumentada com proteinorraquia normal",
+      "Celularidade e proteinorraquia ambas aumentadas",
+      "Celularidade normal com glicorraquia reduzida"
+    ],
+    "correctIndex": 0,
+    "explanation": "A dissociação proteíno-citológica consiste em celularidade normal com aumento da proteinorraquia. Ela pode ser evidenciada após uma semana de evolução da doença e atinge o máximo entre a quarta e a sexta semanas, de modo que um líquor normal na primeira semana não afasta o diagnóstico."
+  },
+  {
+    "question": "Qual é a evolução temporal típica da polirradiculoneurite aguda?",
+    "options": [
+      "Pico do déficit em uma a quatro semanas, platô de duas a quatro e melhora em meses",
+      "Pico do déficit em uma a quatro horas, platô de dois dias e melhora em uma semana",
+      "Progressão por pelo menos dois meses, sem platô definido, com flutuações da força",
+      "Pico do déficit em seis meses, platô de cerca de um ano e melhora sempre parcial"
+    ],
+    "correctIndex": 0,
+    "explanation": "O grau máximo de incapacidade ocorre geralmente entre uma e quatro semanas. O ponto de maior déficit é sucedido por uma fase de platô de duas a quatro semanas e, depois, por recuperação em poucos meses. Progressão por pelo menos dois meses, com flutuações, caracteriza a forma crônica, não a aguda."
+  },
+  {
+    "question": "Quais tratamentos têm eficácia comprovada na polirradiculoneurite aguda?",
+    "options": [
+      "Plasmaférese, a primeira comprovada, e imunoglobulina endovenosa, igualmente eficaz",
+      "Corticosteroide em dose alta, o primeiro comprovado, e azatioprina como poupador",
+      "Ciclofosfamida isolada, comprovada em estudos, e ciclosporina como alternativa",
+      "Gabapentina e antidepressivo tricíclico, que encurtam a duração da fraqueza"
+    ],
+    "correctIndex": 0,
+    "explanation": "A plasmaférese foi o primeiro tratamento comprovadamente eficaz na polirradiculoneurite aguda, e estudos posteriores mostraram que a imunoglobulina endovenosa é igualmente eficaz. O corticosteroide não figura entre os tratamentos de eficácia estabelecida nessa forma aguda, ao contrário do que ocorre na forma crônica."
+  },
+  {
+    "question": "Que características separam a polirradiculoneurite crônica da forma aguda?",
+    "options": [
+      "Evolução de pelo menos dois meses e resposta eficaz ao corticosteroide",
+      "Evolução de pelo menos duas semanas e ausência de alteração sensitiva",
+      "Instalação em menos de uma semana e evolução para falência respiratória",
+      "Arreflexia ausente e predomínio de comprometimento puramente distal"
+    ],
+    "correctIndex": 0,
+    "explanation": "A polirradiculoneurite crônica é uma polineuropatia desmielinizante adquirida de instalação lentamente progressiva ou flutuante, que se estabelece como crônica com evolução de pelo menos dois meses. Os corticosteroides são preconizados e reconhecidos como tratamento eficaz nela, e a resposta ao imunossupressor é uma das melhores evidências de sua natureza imune."
+  },
+  {
+    "question": "Como é o déficit motor da polirradiculoneurite crônica?",
+    "options": [
+      "Simétrico, proximal e distal, iniciando nos membros inferiores",
+      "Assimétrico, apenas distal, iniciando nos membros superiores",
+      "Simétrico, apenas proximal, poupando sempre os membros inferiores",
+      "Assimétrico, de nervo em nervo, com confluência tardia dos déficits"
+    ],
+    "correctIndex": 0,
+    "explanation": "Na polirradiculoneurite crônica o déficit motor é geralmente simétrico e acomete tanto a musculatura proximal quanto a distal, iniciando em geral nos membros inferiores; raramente evolui para insuficiência respiratória. O envolvimento sensitivo é frequente, com hipoestesia distal em bota e luva, e há arreflexia generalizada."
+  },
+  {
+    "question": "O que caracteriza a síndrome de Miller-Fisher?",
+    "options": [
+      "Oftalmoplegia, ataxia e arreflexia, sem fraqueza muscular importante",
+      "Oftalmoplegia, ataxia e hiper-reflexia, com fraqueza muscular grave",
+      "Fraqueza ascendente, arreflexia e disautonomia, sem alteração ocular",
+      "Fraqueza motora pura de evolução benigna, com lesão axonal no exame"
+    ],
+    "correctIndex": 0,
+    "explanation": "A síndrome de Miller-Fisher é considerada uma variante da polirradiculoneurite aguda e se caracteriza pela tríade de oftalmoplegia, ataxia e arreflexia, na ausência de fraqueza muscular importante. A forma de comprometimento motor puro e evolução benigna é outra variante, a neuropatia axonal motora aguda."
+  },
+  {
+    "question": "Qual é a apresentação mais frequente da neuropatia vasculítica na época do diagnóstico?",
+    "options": [
+      "Mononeuropatia múltipla focal e assimétrica, que conflui com a evolução",
+      "Polineuropatia simétrica distal em bota e luva, de progressão muito lenta",
+      "Polirradiculoneurite ascendente aguda, com arreflexia generalizada",
+      "Neuropatia de nervos cranianos isolada, de início abrupto e indolor"
+    ],
+    "correctIndex": 0,
+    "explanation": "A vasculite dos vasos nutrientes do nervo tende a ser focal e assimétrica, com desenvolvimento de mononeuropatia múltipla que vai confluindo à medida que mais nervos são comprometidos. As manifestações sensitivas frequentemente inauguram o quadro, e o déficit motor aparece depois. O tratamento é prednisona em dose alta, associada ou não a ciclofosfamida."
+  },
+  {
+    "question": "Que déficit caracteriza a paralisia do nervo mediano?",
+    "options": [
+      "Não pronar o antebraço, não fletir os três primeiros dedos e perder a oponência",
+      "Não supinar o antebraço, não estender os três últimos dedos e perder a preensão",
+      "Não fletir nem aduzir o punho, com os dedos anular e mínimo em garra cubital",
+      "Não estender o punho nem os dedos, com a mão pendente em flexão permanente"
+    ],
+    "correctIndex": 0,
+    "explanation": "A paralisia do mediano impede pronar o antebraço, fletir os três primeiros dedos e fazer a oponência do polegar; a atrofia tenar e o polegar colocado ao lado do indicador dão à mão o aspecto simiesco. A hipoestesia ocorre no lado externo da face palmar. Causas: ferimentos do braço, torniquete, túnel do carpo e neurite leprosa."
+  }
+];
+
+var LETTERS = ['A','B','C','D','E','F'];
+var SHUFFLE = true, LOCK = true;
+
+var S = { view:'home', started:false, finished:false, i:0, order:[], answers:[], open:{}, filter:'all', warn:false, chat:{} };
+
+function esc(s){ return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
+function pad(n){ return String(n).padStart(2,'0'); }
+
+function build(){
+  var qs = QUIZ.map(function(q,id){ return { question:q.question, options:q.options.slice(), correctIndex:q.correctIndex, explanation:q.explanation, image:q.image, imageCaption:q.imageCaption, id:id }; });
+  if (!SHUFFLE) return qs;
+  for (var i=qs.length-1;i>0;i--){ var j=Math.floor(Math.random()*(i+1)); var t=qs[i]; qs[i]=qs[j]; qs[j]=t; }
+  return qs.map(function(q){
+    var correct = q.options[q.correctIndex], o = q.options.slice();
+    for (var i=o.length-1;i>0;i--){ var j=Math.floor(Math.random()*(i+1)); var t=o[i]; o[i]=o[j]; o[j]=t; }
+    q.options = o; q.correctIndex = o.indexOf(correct); return q;
+  });
+}
+
+/* ── ações ─────────────────────────────────────────────────────────────────── */
+var A = {
+  home:      function(){ S.view='home'; S.started=false; S.finished=false; up(0); },
+  resumo:    function(){ S.view='resumo'; up(0); },
+  start:     function(){ var o=build(); S.view='quiz'; S.started=true; S.finished=false; S.i=0; S.order=o;
+                         S.answers=new Array(o.length).fill(null); S.open={}; S.filter='all'; S.warn=false; up(0); },
+  restart:   function(){ A.start(); },
+  sair:      function(){ S.view='home'; S.started=false; up(0); },   // guarda as respostas
+  retomar:   function(){ S.view='quiz'; S.started=true; S.finished=false; S.warn=false; up(0); },
+  go:        function(n){ if(n<0||n>S.order.length-1) return; S.i=n; S.warn=false; render(); },
+  jump:      function(n){ if(S.finished){ S.finished=false; S.i=n; S.warn=false; } else { if(n<0||n>S.order.length-1) return; S.i=n; S.warn=false; } up(0,'smooth'); },
+  pick:      function(n){ if(LOCK && S.answers[S.i]!==null) return; S.answers[S.i]=n; render(); },
+  prev:      function(){ A.go(S.i-1); },
+  next:      function(){ if(S.i<S.order.length-1) A.go(S.i+1); else A.finish(); },
+  finish:    function(){ var b=S.answers.filter(function(a){return a===null}).length;
+                         if(b>0 && !S.warn){ S.warn=true; render(); return; } S.finished=true; S.warn=false; up(0); },
+  force:     function(){ S.finished=true; S.warn=false; up(0); },
+  gotoBlank: function(){ var n=S.answers.findIndex(function(a){return a===null}); if(n>=0) A.go(n); },
+  back:      function(){ S.finished=false; S.warn=false; up(0); },
+  filter:    function(k){ S.filter=k; render(); },
+  toggle:    function(n){ S.open[n]=!S.open[n]; render(); },
+  toggleAll: function(){ var r=reviewList(), all=r.length>0 && r.every(function(x){return S.open[x.idx]});
+                         S.open={}; if(!all) r.forEach(function(x){ S.open[x.idx]=true; }); render(); }
+};
+function up(top, beh){ render(); window.scrollTo({ top: top||0, behavior: beh||'auto' }); }
+
+/* Aberto por duplo clique (file://) volta para o indice local; servido pela web,
+   volta para o publicado. Os dois listam os mesmos materiais. */
+function idxHref(){
+  var local = (typeof location !== 'undefined' && location.protocol === 'file:');
+  return local ? '../index_local.html' : '../index.html';
+}
+function emAndamento(){
+  return S.order.length > 0 && !S.finished &&
+         S.answers.some(function(a){ return a !== null; });
+}
+
+/* ── header ────────────────────────────────────────────────────────────────── */
+function renderHeader(){
+  var mono = "font-family:'IBM Plex Mono',monospace";
+  var left =
+    '<div style="min-width:0">' +
+      '<div style="display:flex;align-items:center;gap:8px;'+mono+';font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:#8a8578">' +
+        '<a href="'+idxHref()+'" class="h-ink" style="color:#2b57cc;text-decoration:none;white-space:nowrap">\u2190 Materiais</a>' +
+        '<span style="color:#d3cec4">/</span>' +
+        '<span style="overflow:hidden;text-overflow:ellipsis;white-space:nowrap">'+esc(EYEBROW)+'</span>' +
+      '</div>' +
+      '<h1 style="margin:1px 0 0;font-family:\'Newsreader\',Georgia,serif;font-size:20px;font-weight:500;letter-spacing:-.01em;line-height:1.15">'+esc(TITLE)+'</h1>' +
+    '</div>';
+
+  var right = '';
+  if (S.view === 'quiz' && S.started) {
+    var hit = counts().hit;
+    right = '<div style="display:flex;align-items:center;gap:10px;flex-shrink:0">' +
+              '<button type="button" data-act="sair" class="h-line" style="background:none;border:1px solid #ddd8ce;border-radius:9px;padding:6px 11px;'+mono+';font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;color:#5b6478;cursor:pointer;transition:border-color .15s ease">Sair</button>' +
+              '<div style="display:flex;align-items:center;gap:6px">' +
+                '<span style="'+mono+';font-size:15px;font-weight:600;letter-spacing:-.02em">'+hit+'</span>' +
+                '<span style="'+mono+';font-size:11px;color:#8a8578">/ '+S.order.length+'</span>' +
+              '</div></div>';
+  } else if (S.view !== 'home') {
+    right = '<button type="button" data-act="home" class="h-line" style="flex-shrink:0;background:none;border:1px solid #ddd8ce;border-radius:9px;padding:7px 13px;'+mono+';font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:#5b6478;cursor:pointer;transition:border-color .15s ease">← Início</button>';
+  }
+
+  var html = '<div style="display:flex;align-items:baseline;justify-content:space-between;gap:12px;margin-bottom:'+(S.view==='quiz'&&S.started?'10px':'2px')+'">'+left+right+'</div>';
+
+  if (S.view === 'quiz' && S.started) {
+    var c = counts();
+    var rail = S.order.map(function(q,n){
+      var a = S.answers[n], cur = n===S.i && !S.finished, bg = '#d3cec4';
+      if (a!==null) bg = (a===q.correctIndex) ? '#2e7d55' : '#c04437';
+      if (cur && a===null) bg = '#121a2b';
+      var st = a===null ? 'em branco' : (a===q.correctIndex ? 'correta' : 'incorreta');
+      return '<button type="button" data-act="jump" data-n="'+n+'" title="Questão '+(n+1)+' — '+st+'" aria-label="Questão '+(n+1)+' — '+st+'" style="flex:1 1 0;min-width:0;background:none;border:0;padding:13px 0;margin:0;cursor:pointer;display:flex;align-items:center;justify-content:center">' +
+             '<span style="display:block;width:100%;border-radius:99px;transition:height .18s ease,background .18s ease,box-shadow .18s ease;height:'+(cur?'17px':'9px')+';background:'+bg+';box-shadow:'+(cur?'0 0 0 3px rgba(18,26,43,.13)':'none')+'"></span></button>';
+    }).join('');
+    html += '<div><div style="display:flex;align-items:center;gap:3px">'+rail+'</div>' +
+            '<div style="display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:-2px">' +
+              '<div style="'+mono+';font-size:11px;letter-spacing:.04em;color:#5b6478">Questão '+pad(S.i+1)+' / '+S.order.length+'</div>' +
+              '<div style="display:flex;align-items:center;gap:12px;'+mono+';font-size:10.5px;color:#8a8578">' +
+                dot('#2e7d55',c.hit)+dot('#c04437',c.miss)+dot('#d3cec4',c.blank) +
+              '</div></div></div>';
+  }
+  document.getElementById('hdr').innerHTML = html;
+}
+function dot(color,n){ return '<span style="display:flex;align-items:center;gap:5px"><span style="width:7px;height:7px;border-radius:99px;background:'+color+';display:block"></span>'+n+'</span>'; }
+
+function counts(){
+  var hit=0, miss=0, blank=0;
+  S.answers.forEach(function(a,n){
+    if (a===null) blank++;
+    else if (S.order[n] && a===S.order[n].correctIndex) hit++;
+    else miss++;
+  });
+  return { hit:hit, miss:miss, blank:blank, total:S.order.length };
+}
+
+/* ── tela inicial ──────────────────────────────────────────────────────────── */
+function renderHome(){
+  var mono = "font-family:'IBM Plex Mono',monospace";
+  var secoes = (document.getElementById('resumoSrc').textContent.match(/<h2/g)||[]).length;
+  var cell = function(v,l){
+    return '<div style="background:#faf9f6;padding:16px 14px">' +
+      '<div style="'+mono+';font-size:22px;font-weight:500;letter-spacing:-.03em">'+v+'</div>' +
+      '<div style="'+mono+';font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:#8a8578;margin-top:3px">'+l+'</div></div>';
+  };
+  var card = function(act,tag,titulo,desc,cta){
+    return '<button type="button" data-act="'+act+'" class="h-card" style="display:flex;flex-direction:column;align-items:flex-start;gap:0;text-align:left;background:#fff;border:1px solid #e4e0d8;border-radius:18px;padding:24px 22px;cursor:pointer;transition:border-color .16s ease,transform .14s ease;box-shadow:0 1px 2px rgba(18,26,43,.04),0 12px 28px -20px rgba(18,26,43,.18)">' +
+      '<div style="'+mono+';font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:#2b57cc;margin-bottom:12px">'+tag+'</div>' +
+      '<div style="font-family:\'Newsreader\',Georgia,serif;font-size:26px;font-weight:500;letter-spacing:-.02em;line-height:1.15;margin-bottom:8px">'+titulo+'</div>' +
+      '<div style="font-size:14px;line-height:1.6;color:#5b6478;margin-bottom:18px;text-wrap:pretty">'+desc+'</div>' +
+      '<div style="'+mono+';font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:#121a2b">'+cta+'</div></button>';
+  };
+
+  document.getElementById('stage').innerHTML =
+    '<section style="padding:56px 0 0;animation:qFade .3s ease">' +
+      '<div style="'+mono+';font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:#2b57cc;margin-bottom:16px">Material de revisão</div>' +
+      '<h2 style="font-family:\'Newsreader\',Georgia,serif;font-size:40px;line-height:1.08;font-weight:400;letter-spacing:-.025em;margin:0 0 18px;text-wrap:pretty">'+esc(SUBTITLE)+'</h2>' +
+      '<p style="font-size:15.5px;line-height:1.65;color:#5b6478;margin:0 0 30px;max-width:52ch;text-wrap:pretty">'+esc(INTRO)+'</p>' +
+      '<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(108px,1fr));gap:1px;background:#e4e0d8;border:1px solid #e4e0d8;border-radius:14px;overflow:hidden;margin-bottom:32px">' +
+        cell(QUIZ.length,'Questões') + cell(secoes,'Seções') + cell('~'+Math.round(QUIZ.length*0.75),'Minutos') +
+      '</div>' +
+      '<div class="home-grid" style="display:grid;grid-template-columns:1fr 1fr;gap:12px">' +
+        (emAndamento()
+          ? card('retomar','Em andamento','Quiz',
+                 'Você parou na questão '+pad(S.i+1)+' de '+S.order.length+', com '+
+                 (S.order.length-counts().blank)+' respondida'+((S.order.length-counts().blank)===1?'':'s')+
+                 '. Suas respostas continuam guardadas.','Retomar →')
+          : card('start','Praticar','Quiz', QUIZ.length+' questões de múltipla escolha, com explicação assim que você responde e gabarito comentado no fim.','Começar →')) +
+        card('resumo','Estudar','Resumo','O conteúdo da aula em texto corrido, organizado em '+secoes+' seções para leitura antes da prova.','Ler →') +
+      '</div>' +
+      '<div style="margin-top:26px;display:flex;flex-wrap:wrap;align-items:center;gap:8px 18px;'+mono+';font-size:11px;color:#8a8578">' +
+        '<span>← →&nbsp; navegar</span><span>1–'+maxOpts()+'&nbsp; responder</span><span>Enter&nbsp; avançar</span>' +
+        (emAndamento() ? '<button type="button" data-act="start" class="h-ink" style="background:none;border:0;padding:0;'+mono+';font-size:11px;color:#8a8578;cursor:pointer;text-decoration:underline;text-underline-offset:3px">recomeçar do zero</button>' : '') +
+        '</div>' +
+    '</section>';
+}
+function maxOpts(){ return QUIZ.reduce(function(m,q){ return Math.max(m,q.options.length); },0); }
+
+/* ── resumo ────────────────────────────────────────────────────────────────── */
+function renderResumo(){
+  document.getElementById('stage').innerHTML =
+    '<section style="padding:34px 0 0;animation:qFade .3s ease">' +
+      '<div style="font-family:\'IBM Plex Mono\',monospace;font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:#2b57cc;margin-bottom:14px">Resumo</div>' +
+      '<div class="rsm">' + document.getElementById('resumoSrc').textContent + '</div>' +
+      '<div style="display:flex;flex-wrap:wrap;gap:9px;margin-top:38px;padding-top:24px;border-top:1px solid #e4e0d8">' +
+        '<button type="button" data-act="start" class="h-darkflat" style="background:#121a2b;color:#f5f3ef;border:0;border-radius:11px;padding:13px 24px;font-size:14px;font-weight:500;cursor:pointer;transition:background .16s ease">Fazer o quiz →</button>' +
+        '<button type="button" data-act="home" class="h-line" style="background:none;border:1px solid #ddd8ce;border-radius:11px;padding:13px 22px;font-size:14px;cursor:pointer;transition:border-color .15s ease">Voltar ao início</button>' +
+      '</div></section>';
+}
+
+/* imagem da questao — data URI ja resolvida pelo montar_quiz.py */
+function figura(q, cls){
+  if (!q.image) return '';
+  return '<figure class="fig'+(cls?' '+cls:'')+'"><img src="'+q.image+'" alt="'+esc(q.imageCaption||'Imagem da questão')+'">' +
+         (q.imageCaption ? '<figcaption>'+esc(q.imageCaption)+'</figcaption>' : '') + '</figure>';
+}
+
+/* ── questão ───────────────────────────────────────────────────────────────── */
+function renderQuestion(){
+  var mono = "font-family:'IBM Plex Mono',monospace";
+  var q = S.order[S.i], ans = S.answers[S.i], reveal = ans !== null;
+
+  var status = 'Não respondida', sColor = '#8a8578';
+  if (reveal) { var ok = ans===q.correctIndex; status = ok?'Você acertou':'Você errou'; sColor = ok?'#2e7d55':'#c04437'; }
+
+  var opts = q.options.map(function(text,n){
+    var isC = n===q.correctIndex, isMine = n===ans;
+    var bd='#e4e0d8', bg='#fff', fg='#121a2b', bBg='#f2efe9', bFg='#8a8578', mark='', mColor='', op='1', hbd='#2b57cc';
+    if (reveal) {
+      op = (isC||isMine) ? '1' : '.62';
+      if (isC)               { bd='#8fc7a7'; bg='#eef7f1'; fg='#1f5c3e'; bBg='#2e7d55'; bFg='#fff'; mark='✓'; mColor='#2e7d55'; }
+      if (isMine && !isC)    { bd='#e0a49a'; bg='#fdf0ee'; fg='#8f2f25'; bBg='#c04437'; bFg='#fff'; mark='✕'; mColor='#c04437'; }
+    } else if (isMine)       { bd='#121a2b'; bg='#f7f6f2'; bBg='#121a2b'; bFg='#f5f3ef'; }
+    var locked = reveal && LOCK;
+    return '<button type="button" data-act="pick" data-n="'+n+'" class="h-opt'+(locked?' locked':'')+'" style="--hbd:'+hbd+';display:flex;gap:13px;align-items:flex-start;width:100%;text-align:left;padding:14px 15px;border-radius:13px;font-size:15px;line-height:1.5;transition:border-color .15s ease,background .15s ease,transform .12s ease;border:1.5px solid '+bd+';background:'+bg+';color:'+fg+';cursor:'+(locked?'default':'pointer')+';opacity:'+op+'">' +
+      '<span style="flex-shrink:0;width:24px;height:24px;border-radius:7px;display:flex;align-items:center;justify-content:center;'+mono+';font-size:11.5px;font-weight:600;margin-top:1px;background:'+bBg+';color:'+bFg+'">'+LETTERS[n]+'</span>' +
+      '<span style="flex:1;min-width:0;text-wrap:pretty">'+esc(text)+'</span>' +
+      (mark ? '<span style="flex-shrink:0;'+mono+';font-size:14px;font-weight:600;margin-top:1px;color:'+mColor+'">'+mark+'</span>' : '') +
+      '</button>';
+  }).join('');
+
+  var expl = reveal ? '<div style="margin-top:20px;padding:16px 18px;background:#f7f6f2;border-left:2.5px solid #2b57cc;border-radius:0 12px 12px 0;animation:qFade .26s ease">' +
+      '<div style="'+mono+';font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:#2b57cc;margin-bottom:8px">Por quê</div>' +
+      '<p style="margin:0;font-size:14.5px;line-height:1.68;color:#39404f;text-wrap:pretty">'+esc(q.explanation)+'</p></div>' : '';
+
+  var blank = counts().blank;
+  var warn = S.warn ? '<div style="margin-top:14px;padding:15px 17px;background:#fdf7e9;border:1px solid #e8d5a3;border-radius:14px;animation:qFade .22s ease">' +
+      '<p style="margin:0 0 12px;font-size:14px;line-height:1.55;color:#6b5620">'+blank+(blank===1?' questão ainda está em branco.':' questões ainda estão em branco.')+' Você pode voltar nelas ou finalizar assim mesmo.</p>' +
+      '<div style="display:flex;flex-wrap:wrap;gap:8px">' +
+        '<button type="button" data-act="gotoBlank" style="background:#121a2b;color:#f5f3ef;border:0;border-radius:9px;padding:9px 16px;font-size:13px;font-weight:500;cursor:pointer">Ir para a 1ª em branco</button>' +
+        '<button type="button" data-act="force" style="background:none;color:#6b5620;border:1px solid #e8d5a3;border-radius:9px;padding:9px 16px;font-size:13px;cursor:pointer">Finalizar assim mesmo</button>' +
+      '</div></div>' : '';
+
+  var last = S.i === S.order.length-1;
+  var early = !last && (S.order.length - blank) > 0;
+
+  document.getElementById('stage').innerHTML =
+    '<section style="padding:26px 0 0">' +
+      '<article style="background:#fff;border:1px solid #e4e0d8;border-radius:18px;padding:26px 22px 24px;box-shadow:0 1px 2px rgba(18,26,43,.04),0 12px 28px -18px rgba(18,26,43,.18)">' +
+        '<div style="display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:14px">' +
+          '<div style="'+mono+';font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:#2b57cc">Questão '+pad(S.i+1)+'</div>' +
+          '<div style="'+mono+';font-size:10.5px;letter-spacing:.06em;color:'+sColor+'">'+status+'</div>' +
+        '</div>' +
+        '<h2 style="font-family:\'Newsreader\',Georgia,serif;font-size:22px;line-height:1.42;font-weight:400;letter-spacing:-.012em;margin:0 0 22px;text-wrap:pretty">'+esc(q.question)+'</h2>' +
+        figura(q, 'qfig') +
+        '<div style="display:flex;flex-direction:column;gap:9px">'+opts+'</div>' + expl +
+        (reveal ? chatBox(q, ans===q.correctIndex) : '') +
+      '</article>' + warn +
+      '<div style="display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:18px">' +
+        '<button type="button" data-act="prev" class="h-line" style="background:none;border:1px solid #ddd8ce;border-radius:11px;padding:12px 18px;font-size:14px;cursor:pointer;transition:border-color .15s ease,color .15s ease;color:'+(S.i===0?'#c4bfb4':'#121a2b')+';pointer-events:'+(S.i===0?'none':'auto')+'">← Anterior</button>' +
+        '<div style="display:flex;align-items:center;gap:8px">' +
+          (early ? '<button type="button" data-act="finish" class="h-ink" style="background:none;border:0;padding:12px 6px;'+mono+';font-size:11.5px;letter-spacing:.06em;text-transform:uppercase;color:#8a8578;cursor:pointer;text-decoration:underline;text-underline-offset:3px">Finalizar</button>' : '') +
+          '<button type="button" data-act="next" class="h-darkflat" style="background:#121a2b;color:#f5f3ef;border:0;border-radius:11px;padding:12px 22px;font-size:14px;font-weight:500;cursor:pointer;transition:background .16s ease">'+(last?'Finalizar':'Próxima →')+'</button>' +
+        '</div></div></section>';
+}
+
+/* ── resultado + gabarito comentado ────────────────────────────────────────── */
+function reviewList(){
+  return S.order.map(function(q,n){
+    var a = S.answers[n], ok = a!==null && a===q.correctIndex;
+    return { idx:n, ok:ok, blank:a===null, q:q, a:a };
+  }).filter(function(r){
+    return S.filter==='all' || (S.filter==='wrong'&&!r.ok&&!r.blank) || (S.filter==='right'&&r.ok) || (S.filter==='blank'&&r.blank);
+  });
+}
+
+function renderResult(){
+  var mono = "font-family:'IBM Plex Mono',monospace";
+  var c = counts(), pct = c.total ? Math.round(c.hit/c.total*100) : 0;
+
+  var title='Precisa revisar', msg='Releia o material com atenção e refaça o quiz — as explicações abaixo cobrem cada erro.';
+  if (pct>=90)      { title='Domínio sólido';   msg='Desempenho excelente. Confira as explicações das que escaparam e siga em frente.'; }
+  else if (pct>=70) { title='Bom desempenho';   msg='Base consistente. Revise os pontos errados abaixo para fechar as lacunas.'; }
+  else if (pct>=50) { title='Meio do caminho';  msg='Você acertou o essencial, mas há lacunas. Comece pelo filtro de erradas.'; }
+
+  var stat = function(v,l,color){
+    return '<div style="background:#faf9f6;padding:14px 10px">' +
+      '<div style="'+mono+';font-size:19px;font-weight:500;color:'+color+'">'+v+'</div>' +
+      '<div style="'+mono+';font-size:9.5px;letter-spacing:.09em;text-transform:uppercase;color:#8a8578;margin-top:2px">'+l+'</div></div>';
+  };
+
+  var fdefs = [['all','Todas',c.total],['wrong','Erradas',c.miss],['right','Certas',c.hit],['blank','Em branco',c.blank]];
+  var filters = fdefs.map(function(f){
+    var on = S.filter===f[0];
+    return '<button type="button" data-act="filter" data-k="'+f[0]+'" class="h-line" style="border-radius:99px;padding:8px 14px;font-size:13px;cursor:pointer;transition:all .15s ease;border:1px solid '+(on?'#121a2b':'#ddd8ce')+';background:'+(on?'#121a2b':'transparent')+';color:'+(on?'#f5f3ef':'#5b6478')+'">'+f[1]+' '+f[2]+'</button>';
+  }).join('');
+
+  var list = reviewList();
+  var allOpen = list.length>0 && list.every(function(r){ return S.open[r.idx]; });
+
+  var cards = list.map(function(r){
+    var numBg='#f0ede7', numFg='#8a8578';
+    if (!r.blank) { if (r.ok) { numBg='#e3f0e8'; numFg='#1f5c3e'; } else { numBg='#fbe6e2'; numFg='#8f2f25'; } }
+    var open = !!S.open[r.idx];
+    var body = '';
+    if (open) {
+      var opts = r.q.options.map(function(text,n){
+        var isC = n===r.q.correctIndex, isMine = n===r.a;
+        var bd='#eeebe4', bg='#fbfaf8', fg='#5b6478', bBg='#f0ede7', bFg='#8a8578', tag='', tBg='', tFg='';
+        if (isC)            { bd='#bcdcc9'; bg='#eef7f1'; fg='#1f5c3e'; bBg='#2e7d55'; bFg='#fff'; tag='Correta'; tBg='#d9ede1'; tFg='#1f5c3e'; }
+        if (isMine && !isC) { bd='#eec4bd'; bg='#fdf0ee'; fg='#8f2f25'; bBg='#c04437'; bFg='#fff'; tag='Sua resposta'; tBg='#f7ddd8'; tFg='#8f2f25'; }
+        if (isMine && isC)  { tag='Sua resposta ✓'; }
+        return '<div style="display:flex;gap:11px;align-items:flex-start;padding:11px 13px;border-radius:11px;font-size:14px;line-height:1.5;border:1px solid '+bd+';background:'+bg+';color:'+fg+'">' +
+          '<span style="flex-shrink:0;width:21px;height:21px;border-radius:6px;display:flex;align-items:center;justify-content:center;'+mono+';font-size:10.5px;font-weight:600;background:'+bBg+';color:'+bFg+'">'+LETTERS[n]+'</span>' +
+          '<span style="flex:1;min-width:0;text-wrap:pretty">'+esc(text)+'</span>' +
+          (tag ? '<span style="flex-shrink:0;'+mono+';font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;padding:3px 7px;border-radius:6px;margin-top:1px;background:'+tBg+';color:'+tFg+'">'+tag+'</span>' : '') +
+          '</div>';
+      }).join('');
+      body = '<div style="padding:2px 15px 18px;animation:qDrawer .2s ease">' +
+        '<div style="height:1px;background:#eeebe4;margin:0 0 16px"></div>' +
+        '<p style="font-family:\'Newsreader\',Georgia,serif;font-size:18px;line-height:1.5;margin:0 0 16px;text-wrap:pretty">'+esc(r.q.question)+'</p>' +
+        figura(r.q) +
+        '<div style="display:flex;flex-direction:column;gap:7px">'+opts+'</div>' +
+        '<div style="margin-top:16px;padding:14px 16px;background:#f7f6f2;border-left:2.5px solid #2b57cc;border-radius:0 11px 11px 0">' +
+          '<div style="'+mono+';font-size:9.5px;letter-spacing:.16em;text-transform:uppercase;color:#2b57cc;margin-bottom:7px">Por quê</div>' +
+          '<p style="margin:0;font-size:14px;line-height:1.65;color:#39404f;text-wrap:pretty">'+esc(r.q.explanation)+'</p></div>' +
+        '<button type="button" data-act="jump" data-n="'+r.idx+'" style="margin-top:14px;background:none;border:0;padding:0;'+mono+';font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:#2b57cc;cursor:pointer;text-decoration:underline;text-underline-offset:3px">Abrir no quiz →</button></div>';
+    }
+    return '<div style="background:#fff;border:1px solid '+(open?'#c9c3b6':'#e4e0d8')+';border-radius:14px;overflow:hidden;transition:border-color .15s ease">' +
+      '<button type="button" data-act="toggle" data-n="'+r.idx+'" style="display:flex;align-items:center;gap:12px;width:100%;text-align:left;background:none;border:0;padding:14px 15px;cursor:pointer">' +
+        '<span style="flex-shrink:0;width:28px;height:28px;border-radius:8px;display:flex;align-items:center;justify-content:center;'+mono+';font-size:12px;font-weight:600;background:'+numBg+';color:'+numFg+'">'+pad(r.idx+1)+'</span>' +
+        '<span style="flex:1;min-width:0;font-size:14px;line-height:1.45;color:#39404f;overflow:hidden;text-overflow:ellipsis;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical">'+esc(r.q.question)+'</span>' +
+        '<span style="flex-shrink:0;'+mono+';font-size:16px;color:#8a8578;width:16px;text-align:center">'+(open?'−':'+')+'</span>' +
+      '</button>' + body + '</div>';
+  }).join('');
+
+  document.getElementById('stage').innerHTML =
+    '<section style="padding:34px 0 0;animation:qFade .3s ease">' +
+      '<div style="'+mono+';font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:#2b57cc;margin-bottom:14px">Resultado</div>' +
+      '<h2 style="font-family:\'Newsreader\',Georgia,serif;font-size:36px;line-height:1.12;font-weight:400;letter-spacing:-.025em;margin:0 0 8px">'+title+'</h2>' +
+      '<p style="font-size:15px;line-height:1.6;color:#5b6478;margin:0 0 24px;max-width:48ch;text-wrap:pretty">'+msg+'</p>' +
+      '<div style="height:8px;border-radius:99px;background:#e4e0d8;overflow:hidden;margin-bottom:10px">' +
+        '<div style="height:100%;border-radius:99px;background:#121a2b;transition:width .7s cubic-bezier(.22,1,.36,1);width:'+pct+'%"></div></div>' +
+      '<div style="display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:#e4e0d8;border:1px solid #e4e0d8;border-radius:14px;overflow:hidden;margin-bottom:34px">' +
+        stat(c.hit,'Certas','#2e7d55')+stat(c.miss,'Erradas','#c04437')+stat(c.blank,'Branco','#8a8578')+stat(pct+'%','Aproveit.','#2b57cc') +
+      '</div>' +
+      '<div style="display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-bottom:14px">' +
+        '<h3 style="font-family:\'Newsreader\',Georgia,serif;font-size:22px;font-weight:500;letter-spacing:-.015em;margin:0">Gabarito comentado</h3>' +
+        '<button type="button" data-act="toggleAll" class="h-ink" style="background:none;border:0;padding:6px 0;'+mono+';font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:#5b6478;cursor:pointer;text-decoration:underline;text-underline-offset:3px">'+(allOpen?'Recolher tudo':'Expandir tudo')+'</button>' +
+      '</div>' +
+      '<div style="display:flex;gap:7px;flex-wrap:wrap;margin-bottom:16px">'+filters+'</div>' +
+      '<div style="display:flex;flex-direction:column;gap:8px">'+cards+'</div>' +
+      (list.length===0 ? '<div style="padding:38px 16px;text-align:center;color:#8a8578;font-size:14px;border:1px dashed #ddd8ce;border-radius:14px">Nenhuma questão neste filtro.</div>' : '') +
+      '<div style="display:flex;flex-wrap:wrap;gap:9px;margin-top:28px;padding-top:24px;border-top:1px solid #e4e0d8">' +
+        '<button type="button" data-act="restart" class="h-darkflat" style="background:#121a2b;color:#f5f3ef;border:0;border-radius:11px;padding:13px 24px;font-size:14px;font-weight:500;cursor:pointer;transition:background .16s ease">Refazer o quiz</button>' +
+        '<button type="button" data-act="back" class="h-line" style="background:none;border:1px solid #ddd8ce;border-radius:11px;padding:13px 22px;font-size:14px;cursor:pointer;transition:border-color .15s ease">Voltar às questões</button>' +
+        '<button type="button" data-act="resumo" class="h-line" style="background:none;border:1px solid #ddd8ce;border-radius:11px;padding:13px 22px;font-size:14px;cursor:pointer;transition:border-color .15s ease">Ler o resumo</button>' +
+      '</div></section>';
+}
+
+/* ── render + eventos ──────────────────────────────────────────────────────── */
+
+/* ─── Tutor DeepSeek — só local, só quando a questão foi errada ──────────────
+   A chave vem de ../deepseek_key.js, que não existe na versão publicada: online
+   o arquivo dá 404, dsOn() vira false e o chat simplesmente não é renderizado.
+   O histórico fica em S.chat[idDaQuestao] e sobrevive ao re-render do stage. */
+var DS_MODEL = 'deepseek-v4-flash';
+var DS_URL   = 'https://api.deepseek.com/chat/completions';
+var NLJS     = String.fromCharCode(10);
+var DS_MONO  = "font-family:'IBM Plex Mono',monospace";
+var DS_SANS  = "font-family:'IBM Plex Sans',system-ui,sans-serif";
+
+function dsOn(){ return typeof window.DEEPSEEK_KEY === 'string' && window.DEEPSEEK_KEY.length > 10; }
+
+
+/* ─── markdown do chat ───────────────────────────────────────────────────────
+   O modelo responde em markdown (**negrito**, listas, `codigo`, tabelas). O texto
+   vem de fora, entao a ordem importa: ESCAPA TUDO primeiro com esc() e so depois
+   aplica formatacao — assim nenhuma tag vinda da resposta vira HTML de verdade.
+   Como esc() ja trocou > por &gt;, a citacao casa com &gt; e nao com >.
+   Trechos de codigo saem de cena por um marcador NUL, que nao pode existir
+   no texto escapado, e voltam no fim — assim ` ` protege o que esta dentro. */
+function mdIn(t){
+  var Z = String.fromCharCode(0), codes = [];
+  t = t.replace(/`([^`]+)`/g, function(_, c){
+    codes.push(c);
+    return Z + 'c' + (codes.length - 1) + Z;
+  });
+  t = t.replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>');
+  t = t.replace(/__([^_]+)__/g, '<strong>$1</strong>');
+  t = t.replace(/(^|[\s(])\*([^*\n]+)\*/g, '$1<em>$2</em>');
+  t = t.replace(/(^|[\s(])_([^_\n]+)_/g, '$1<em>$2</em>');
+  t = t.replace(/\[([^\]]+)\]\((https?:\/\/[^)\s]+)\)/g,
+    '<a href="$2" target="_blank" rel="noopener" style="color:#2b57cc">$1</a>');
+  return t.replace(new RegExp(Z + 'c([0-9]+)' + Z, 'g'), function(_, i){
+    return '<code style="' + DS_MONO + ';font-size:12px;background:#f2efe9;' +
+           'border-radius:4px;padding:1px 5px">' + codes[i] + '</code>';
+  });
+}
+
+function mdChat(txt){
+  var Z = String.fromCharCode(0);
+  var t = esc(String(txt == null ? '' : txt));
+  var blocos = [];
+  t = t.replace(/```[a-zA-Z]*\n?([\s\S]*?)```/g, function(_, c){
+    blocos.push(c.replace(/\n+$/, ''));
+    return Z + 'b' + (blocos.length - 1) + Z;
+  });
+
+  var linhas = t.split('\n'), out = [], lista = null, par = [];
+  function fechaLista(){ if (lista) { out.push('</' + lista + '>'); lista = null; } }
+  function fechaPar(){
+    if (par.length) { out.push('<p style="margin:0 0 9px">' + mdIn(par.join(' ')) + '</p>'); par = []; }
+  }
+  function fecha(){ fechaPar(); fechaLista(); }
+
+  for (var i = 0; i < linhas.length; i++){
+    var l = linhas[i], t2 = l.trim();
+    if (!t2) { fecha(); continue; }
+
+    var bl = t2.match(new RegExp('^' + Z + 'b([0-9]+)' + Z + '$'));
+    if (bl) {
+      fecha();
+      out.push('<pre style="margin:0 0 9px;padding:9px 11px;background:#f7f6f2;border-radius:9px;' +
+               'overflow-x:auto;' + DS_MONO + ';font-size:12px;line-height:1.5">' + blocos[bl[1]] + '</pre>');
+      continue;
+    }
+
+    // tabela: linha com | ... | seguida da separadora | --- | --- |
+    if (t2.charAt(0) === '|' && i + 1 < linhas.length && /^\|[\s:|-]+\|$/.test(linhas[i+1].trim())) {
+      fecha();
+      var celulas = function(linha){
+        return linha.trim().replace(/^\||\|$/g, '').split('|').map(function(c){ return mdIn(c.trim()); });
+      };
+      var cab = celulas(t2), corpo = [];
+      i += 2;
+      while (i < linhas.length && linhas[i].trim().charAt(0) === '|') { corpo.push(celulas(linhas[i].trim())); i++; }
+      i--;
+      var cel = 'padding:5px 9px;border-bottom:1px solid #eae6de;text-align:left;vertical-align:top';
+      out.push('<div style="overflow-x:auto;margin:0 0 9px">' +
+        '<table style="border-collapse:collapse;font-size:12.5px;width:100%">' +
+        '<thead><tr>' + cab.map(function(c){ return '<th style="' + cel + ';font-weight:600">' + c + '</th>'; }).join('') + '</tr></thead>' +
+        '<tbody>' + corpo.map(function(r){
+          return '<tr>' + r.map(function(c){ return '<td style="' + cel + '">' + c + '</td>'; }).join('') + '</tr>';
+        }).join('') + '</tbody></table></div>');
+      continue;
+    }
+
+    var h = t2.match(/^#{1,6}\s+(.*)$/);
+    if (h) {
+      fecha();
+      out.push('<div style="font-weight:600;color:#121a2b;margin:11px 0 5px">' + mdIn(h[1]) + '</div>');
+      continue;
+    }
+
+    if (/^(---+|\*\*\*+)$/.test(t2)) {
+      fecha();
+      out.push('<hr style="border:0;border-top:1px solid #eae6de;margin:11px 0">');
+      continue;
+    }
+
+    var cit = t2.match(/^&gt;\s?(.*)$/);
+    if (cit) {
+      fecha();
+      out.push('<div style="margin:0 0 9px;padding:7px 11px;border-left:2.5px solid #c9d6f7;' +
+               'background:#f7f9fe;border-radius:0 7px 7px 0">' + mdIn(cit[1]) + '</div>');
+      continue;
+    }
+
+    var mUl = t2.match(/^[-*•]\s+(.*)$/);
+    var mOl = t2.match(/^\d+[.)]\s+(.*)$/);
+    if (mUl || mOl) {
+      var tipo = mUl ? 'ul' : 'ol';
+      fechaPar();
+      if (lista !== tipo) {
+        fechaLista();
+        out.push('<' + tipo + ' style="margin:0 0 9px;padding-left:19px">');
+        lista = tipo;
+      }
+      out.push('<li style="margin:3px 0">' + mdIn((mUl || mOl)[1]) + '</li>');
+      continue;
+    }
+
+    fechaLista();
+    par.push(t2);
+  }
+  fecha();
+  return out.join('');
+}
+
+function msgHTML(m){
+  if (m.role === 'user')
+    return '<div style="margin:0 0 10px;text-align:right">' +
+      '<span style="display:inline-block;max-width:88%;text-align:left;background:#f2efe9;' +
+      'border-radius:12px 12px 3px 12px;padding:9px 12px;font-size:13.5px;line-height:1.6;' +
+      'color:#39404f;text-wrap:pretty">' + esc(m.content) + '</span></div>';
+  return '<div style="margin:0 0 12px">' +
+    '<div style="' + DS_MONO + ';font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;' +
+    'color:#2b57cc;margin-bottom:4px">DeepSeek</div>' +
+    '<div style="font-size:13.5px;line-height:1.65;color:#39404f;text-wrap:pretty">' +
+    mdChat(m.content) + '</div></div>';
+}
+
+function chatBox(q, acertou){
+  if (!dsOn()) return '';
+  var chamada = acertou ? 'Quer ir mais fundo?' : 'Ainda com dúvida?';
+  var dica = acertou ? 'Por que as outras estão erradas?' : 'Por que a que eu marquei está errada?';
+  var hist = (S.chat[q.id] || []).map(msgHTML).join('');
+  return '<div id="ds" data-qid="' + q.id + '" style="margin-top:14px;border:1px solid #e4e0d8;' +
+      'border-radius:14px;background:#fff;overflow:hidden;animation:qFade .26s ease">' +
+      '<div style="display:flex;align-items:center;gap:8px;padding:11px 15px;' +
+        'border-bottom:1px solid #f0ede6;background:#faf9f6">' +
+        '<span style="' + DS_MONO + ';font-size:10px;letter-spacing:.16em;text-transform:uppercase;' +
+        'color:#2b57cc">' + chamada + '</span>' +
+        '<span style="font-size:12px;color:#8a8578">pergunte ao DeepSeek</span></div>' +
+      '<div id="dsLog" style="max-height:280px;overflow-y:auto;padding:' + (hist ? '12px 15px' : '0') + '">' +
+        hist + '</div>' +
+      '<div style="display:flex;gap:8px;padding:11px 12px;border-top:1px solid #f0ede6">' +
+        '<input id="dsIn" type="text" autocomplete="off" ' +
+          'placeholder="' + dica + '" ' +
+          'style="flex:1;min-width:0;border:1px solid #e4e0d8;border-radius:10px;padding:10px 12px;' +
+          'font-size:13.5px;' + DS_SANS + ';color:#121a2b;background:#fff;outline:none">' +
+        '<button type="button" data-act="dsSend" class="h-darkflat" style="flex-shrink:0;' +
+          'background:#121a2b;color:#f5f3ef;border:0;border-radius:10px;padding:10px 16px;' +
+          'font-size:13px;font-weight:500;cursor:pointer;transition:background .16s ease">Enviar</button>' +
+      '</div></div>';
+}
+
+function dsContexto(q, ans){
+  var alts = q.options.map(function(o, n){ return LETTERS[n] + ') ' + o; }).join(NLJS);
+  return 'Questao: ' + q.question + NLJS + alts + NLJS +
+    'Resposta correta: ' + LETTERS[q.correctIndex] + ') ' + q.options[q.correctIndex] + NLJS +
+    'O estudante marcou: ' + (ans === null ? 'nada' : LETTERS[ans] + ') ' + q.options[ans]) + NLJS +
+    'Explicacao que ele ja tem: ' + q.explanation;
+}
+
+A.dsSend = function(){
+  var box = document.getElementById('ds');
+  if (!box || !dsOn() || box.getAttribute('data-busy')) return;
+  var input = document.getElementById('dsIn'), log = document.getElementById('dsLog');
+  var texto = (input.value || '').trim();
+  if (!texto) return;
+
+  var qid = parseInt(box.getAttribute('data-qid'), 10), q = null, ans = null;
+  for (var i = 0; i < S.order.length; i++)
+    if (S.order[i].id === qid) { q = S.order[i]; ans = S.answers[i]; }
+  if (!q) return;
+
+  S.chat[qid] = S.chat[qid] || [];
+  S.chat[qid].push({ role:'user', content:texto });
+  input.value = '';
+  log.style.padding = '12px 15px';
+  log.insertAdjacentHTML('beforeend', msgHTML({ role:'user', content:texto }));
+  log.insertAdjacentHTML('beforeend',
+    '<div><div style="' + DS_MONO + ';font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;' +
+    'color:#2b57cc;margin-bottom:4px">DeepSeek</div>' +
+    '<div id="dsTxt" style="font-size:13.5px;line-height:1.65;color:#8a8578;' +
+    'text-wrap:pretty">pensando…</div></div>');
+  log.scrollTop = log.scrollHeight;
+  box.setAttribute('data-busy', '1');
+
+  var acertou = (ans === q.correctIndex);
+  var situacao = acertou
+    ? 'Voce e um tutor de medicina. O estudante do 7o semestre ACERTOU esta questao, mas ficou com uma duvida. '
+    : 'Voce e um tutor de medicina. O estudante do 7o semestre ERROU esta questao. ';
+  var msgs = [
+    { role:'system', content: situacao +
+      'Responda em portugues do Brasil, direto ao ponto, no maximo 150 palavras. ' +
+      'Traga o dado concreto (valor, criterio, mecanismo) em vez de generalidade. ' +
+      'Nao repita a explicacao que ele ja tem; foque na duvida que ele trouxe.' },
+    { role:'user', content: dsContexto(q, ans) }
+  ];
+  var h = S.chat[qid];
+  for (var j = 0; j < h.length; j++) msgs.push({ role:h[j].role, content:h[j].content });
+
+  dsStream(msgs, function(txt, fim, erro){
+    var el = document.getElementById('dsTxt');
+    if (!el) { box.removeAttribute('data-busy'); return; }
+    if (erro) { el.style.color = '#c04437'; el.textContent = erro; box.removeAttribute('data-busy'); return; }
+    el.style.color = '#39404f';
+    el.innerHTML = mdChat(txt);
+    var lg = document.getElementById('dsLog'); if (lg) lg.scrollTop = lg.scrollHeight;
+    if (fim) { el.removeAttribute('id'); S.chat[qid].push({ role:'assistant', content:txt }); box.removeAttribute('data-busy'); }
+  });
+};
+
+function dsStream(messages, cb){
+  var acc = '';
+  fetch(DS_URL, {
+    method: 'POST',
+    headers: { 'Content-Type':'application/json', 'Authorization':'Bearer ' + window.DEEPSEEK_KEY },
+    body: JSON.stringify({ model:DS_MODEL, messages:messages, stream:true, max_tokens:1200, temperature:0.3 })
+  }).then(function(r){
+    if (!r.ok) return r.text().then(function(t){
+      throw new Error(
+        r.status === 401 ? 'Chave recusada (401). Confira o deepseek_key.js.' :
+        r.status === 402 ? 'Sem saldo na conta DeepSeek (402).' :
+        r.status === 429 ? 'Limite de uso atingido (429). Tente daqui a pouco.' :
+        'Erro ' + r.status + ': ' + String(t).slice(0, 120));
+    });
+    var reader = r.body.getReader(), dec = new TextDecoder(), buf = '';
+    (function pump(){
+      return reader.read().then(function(res){
+        if (res.done) { cb(acc || '(resposta vazia)', true); return; }
+        buf += dec.decode(res.value, { stream:true });
+        var linhas = buf.split(NLJS);
+        buf = linhas.pop();
+        for (var i = 0; i < linhas.length; i++){
+          var l = linhas[i].trim();
+          if (l.indexOf('data:') !== 0) continue;
+          var carga = l.slice(5).trim();
+          if (carga === '[DONE]') continue;
+          try {
+            var d = JSON.parse(carga).choices[0].delta;
+            if (d && d.content) { acc += d.content; cb(acc, false); }
+          } catch (_){}
+        }
+        return pump();
+      });
+    })();
+  }).catch(function(e){
+    cb('', true, 'Nao consegui falar com o DeepSeek: ' + (e && e.message ? e.message : e));
+  });
+}
+
+function render(){
+  renderHeader();
+  if (S.view === 'home')        renderHome();
+  else if (S.view === 'resumo') renderResumo();
+  else if (S.finished)          renderResult();
+  else                          renderQuestion();
+}
+
+/* lightbox: clique em qualquer figura amplia */
+document.addEventListener('click', function(e){
+  var lb = document.getElementById('lb');
+  if (e.target.closest('#lb')) { lb.className = ''; return; }
+  var img = e.target.closest('.fig img');
+  if (img) { lb.firstElementChild.src = img.src; lb.className = 'on'; }
+});
+window.addEventListener('keydown', function(e){
+  if (e.key === 'Escape') document.getElementById('lb').className = '';
+});
+
+document.addEventListener('click', function(e){
+  var b = e.target.closest('[data-act]'); if (!b) return;
+  var act = b.getAttribute('data-act'), n = parseInt(b.getAttribute('data-n'),10), k = b.getAttribute('data-k');
+  if (act==='pick'||act==='jump'||act==='toggle') A[act](n);
+  else if (act==='filter') A.filter(k);
+  else if (A[act]) A[act]();
+});
+
+window.addEventListener('keydown', function(e){
+  if (S.view!=='quiz' || !S.started || S.finished) return;
+  var t = e.target, tag = t && t.tagName;
+  if (tag==='INPUT' || tag==='TEXTAREA' || (t && t.isContentEditable)) return;
+  if (e.metaKey||e.ctrlKey||e.altKey) return;
+  if (e.key==='ArrowRight')     { e.preventDefault(); A.go(S.i+1); }
+  else if (e.key==='ArrowLeft') { e.preventDefault(); A.go(S.i-1); }
+  else if (e.key==='Enter')     { e.preventDefault(); A.next(); }
+  else if (/^[1-6]$/.test(e.key)) {
+    var n = parseInt(e.key,10)-1;
+    if (n < S.order[S.i].options.length) A.pick(n);
+  }
+});
+
+render();
+</script>
+</body>
+</html>

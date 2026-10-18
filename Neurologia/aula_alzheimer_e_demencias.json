@@ -429,6 +429,72 @@
       ],
       "correctIndex": 0,
       "explanation": "Por ser secundária a acometimento cerebrovascular, a demência vascular é a forma passível de prevenção primária e secundária: controlar hipertensão arterial, diabete, dislipidemia, tabagismo e doença cardíaca, usar antiagregantes plaquetários e tratar vasculites pode bloquear a progressão e até produzir melhora apreciável. Há evidências de que os inibidores da acetilcolinesterase também sejam eficazes no tratamento sintomático. O diagnóstico precoce da doença cerebrovascular amplia essa janela de prevenção."
+    },
+    {
+      "question": "O diagnóstico sindrômico de demência exige comprometimento cognitivo adquirido em:",
+      "options": [
+        "dois ou mais domínios cognitivos, com perda de autonomia",
+        "um único domínio cognitivo, desde que ele seja progressivo",
+        "memória isoladamente, com os demais domínios preservados",
+        "três ou mais domínios, obrigatoriamente incluindo a memória"
+      ],
+      "correctIndex": 0,
+      "explanation": "Demência é síndrome, não sintoma: exige declínio adquirido em pelo menos dois domínios cognitivos, com repercussão sobre a autonomia. Comprometimento de um domínio isolado, sem perda funcional, caracteriza déficit cognitivo focal ou comprometimento cognitivo leve, não demência."
+    },
+    {
+      "question": "O diagnóstico definitivo de demência com corpos de Lewy depende de:",
+      "options": [
+        "exame do tecido cerebral; em vida só se firma possível ou provável",
+        "cintilografia cerebral; em vida já se firma o diagnóstico definitivo",
+        "dosagem liquórica de tau; em vida já se firma o quadro definitivo",
+        "resposta clínica à levodopa; em vida já se firma o definitivo"
+      ],
+      "correctIndex": 0,
+      "explanation": "A certeza diagnóstica vem do estudo histopatológico do tecido cerebral, que demonstra as inclusões de alfa-sinucleína. Em vida, a combinação de critérios clínicos permite classificar o caso apenas como possível ou provável — distinção que precisa ser feita explicitamente, porque nenhum exame complementar fecha o diagnóstico."
+    },
+    {
+      "question": "Na avaliação cognitiva de um paciente com suspeita de demência com corpos de Lewy, o domínio mais informativo tende a ser:",
+      "options": [
+        "o visuoespacial, porque a memória pode estar normal no início",
+        "o de memória episódica, comprometido desde a fase inicial",
+        "o de linguagem, por ser o primeiro a se deteriorar nessa forma",
+        "o de função executiva, único alterado nas fases iniciais"
+      ],
+      "correctIndex": 0,
+      "explanation": "Diferentemente do Alzheimer, a memória pode estar preservada no início da demência com corpos de Lewy. Concentrar a avaliação na memória leva a falsos negativos; o rendimento visuoespacial é o que mais cedo denuncia o quadro, e por isso deve ser testado de forma dirigida."
+    },
+    {
+      "question": "As alucinações visuais da demência com corpos de Lewy diferem das observadas na doença de Alzheimer porque:",
+      "options": [
+        "são bem formadas e realistas, de pessoas descritas como presentes",
+        "restringem-se a vultos percebidos apenas no período noturno",
+        "aparecem só em fases avançadas, após anos de declínio motor",
+        "ocorrem exclusivamente sob efeito de medicação dopaminérgica"
+      ],
+      "correctIndex": 0,
+      "explanation": "A qualidade da alucinação é um dado semiológico útil. No Alzheimer o paciente costuma relatar vultos mal definidos; na demência com corpos de Lewy as imagens são detalhadas e realistas, descritas como pessoas efetivamente presentes no ambiente, e aparecem precocemente."
+    },
+    {
+      "question": "Um paciente desenvolve declínio cognitivo e parkinsonismo no intervalo de um ano. A hipótese que melhor explica essa cronologia é:",
+      "options": [
+        "demência com corpos de Lewy, em que ambos surgem em paralelo",
+        "doença de Parkinson, em que o motor precede a cognição em anos",
+        "doença de Alzheimer, em que o parkinsonismo abre o quadro",
+        "demência vascular, em que ambos surgem após um único infarto"
+      ],
+      "correctIndex": 0,
+      "explanation": "A cronologia separa as três entidades. No Alzheimer o declínio cognitivo vem primeiro e poucos desenvolvem sinais parkinsonianos anos depois; na doença de Parkinson a queixa motora precede o declínio cognitivo por anos. Quando demência e parkinsonismo se instalam juntos, dentro de cerca de um ano, pensa-se em corpos de Lewy."
+    },
+    {
+      "question": "O parkinsonismo da demência com corpos de Lewy caracteriza-se por:",
+      "options": [
+        "ser atípico, com a lentidão predominando sobre o tremor de repouso",
+        "ser clássico, com tremor de repouso assimétrico predominante",
+        "surgir apenas em fases terminais, após anos de declínio cognitivo",
+        "responder plenamente à levodopa, como no parkinsonismo clássico"
+      ],
+      "correctIndex": 0,
+      "explanation": "Trata-se de um parkinsonismo atípico, ou parkinsonismo-plus, em que a bradicinesia e a rigidez dominam o quadro e o tremor de repouso é discreto ou ausente. A resposta à levodopa é parcial, e aumentá-la para tratar o motor costuma agravar as alucinações."
     }
   ]
 }

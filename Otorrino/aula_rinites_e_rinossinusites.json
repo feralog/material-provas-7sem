@@ -1,0 +1,376 @@
+{
+  "titulo": "Rinites e Rinossinusites",
+  "eyebrow": "Otorrinolaringologia · Nariz e Seios Paranasais",
+  "subtitulo": "Da rinite alérgica às rinossinusites: classificar, investigar e tratar",
+  "intro": "Classificação das rinites (ARIA, alérgica × não alérgica), fisiopatologia e diagnóstico da rinite alérgica, tratamento em degraus, rinites infecciosa, idiopática, gestacional e medicamentosa, e a abertura das rinossinusites: anatomia, epitélio e quadro clínico.",
+  "questoes": [
+    {
+      "question": "A rinite é definida pelo somatório de quatro sintomas nasais. Que conjunto é esse?",
+      "options": [
+        "Rinorreia, obstrução nasal, prurido e espirros",
+        "Rinorreia, obstrução nasal, epistaxe e tosse",
+        "Obstrução nasal, prurido, anosmia e cefaleia",
+        "Espirros, prurido, dor facial e febre alta"
+      ],
+      "correctIndex": 0,
+      "explanation": "A definição de rinite é sindrômica: exige o somatório de rinorreia, obstrução nasal, prurido e espirros. Anosmia, dor facial e febre não entram na definição — quando dominam o quadro, apontam para rinossinusite, não para rinite isolada."
+    },
+    {
+      "question": "A rinite alérgica é mediada por qual mecanismo de hipersensibilidade?",
+      "options": [
+        "Reação tipo I de Gell e Coombs, mediada por IgE específica",
+        "Reação tipo II de Gell e Coombs, mediada por IgG citotóxica",
+        "Reação tipo III de Gell e Coombs, mediada por imunocomplexos",
+        "Reação tipo IV de Gell e Coombs, mediada por linfócitos T"
+      ],
+      "correctIndex": 0,
+      "explanation": "A rinite alérgica é uma hipersensibilidade imediata, tipo I de Gell e Coombs, dependente de IgE específica fixada na superfície dos mastócitos. É por isso que a dosagem de IgE específica (RAST) e o teste cutâneo fazem sentido como exames confirmatórios."
+    },
+    {
+      "question": "Pela classificação ARIA, o que define a rinite alérgica como PERSISTENTE?",
+      "options": [
+        "Sintomas em 4 ou mais dias por semana E por 4 semanas ou mais",
+        "Sintomas em 4 ou mais dias por semana OU por 4 semanas ou mais",
+        "Sintomas em menos de 4 dias por semana E por menos de 4 semanas",
+        "Sintomas em 3 ou mais dias por semana E por 3 semanas ou mais"
+      ],
+      "correctIndex": 0,
+      "explanation": "A forma persistente exige os dois critérios simultaneamente: 4 ou mais dias por semana E duração de 4 semanas ou mais. A conjunção é o detalhe que separa persistente de intermitente — basta um dos dois não ser atingido para o quadro cair na forma intermitente.",
+      "image": "pg04",
+      "imageCaption": "Classificação ARIA: duração e gravidade"
+    },
+    {
+      "question": "Um paciente tem sintomas nasais em 2 dias por semana, de forma contínua, há 6 meses. Pela ARIA, quanto à duração, esse quadro é:",
+      "options": [
+        "Intermitente, pois ocorre em menos de 4 dias por semana",
+        "Persistente, pois os sintomas se mantêm por mais de 4 semanas",
+        "Persistente, pois ocorre em menos de 4 dias por semana",
+        "Intermitente, pois os sintomas duram menos de 4 semanas"
+      ],
+      "correctIndex": 0,
+      "explanation": "Apesar de durar meses, a frequência semanal é de apenas 2 dias. Como a forma persistente exige 4 ou mais dias por semana E 4 semanas ou mais, falhar em um dos critérios já classifica o quadro como intermitente. O tempo total de doença não decide sozinho."
+    },
+    {
+      "question": "Pela classificação ARIA, que conjunto de achados caracteriza a rinite alérgica moderada-grave?",
+      "options": [
+        "Sono alterado, prejuízo das atividades diárias e sintomas incômodos",
+        "Sono normal, prejuízo das atividades diárias e sintomas incômodos",
+        "Sono alterado, atividades diárias preservadas e sintomas incômodos",
+        "Sono alterado, prejuízo das atividades diárias e ausência de sintomas"
+      ],
+      "correctIndex": 0,
+      "explanation": "A gravidade na ARIA é medida pelo impacto, não pela contagem de espirros: sono alterado, comprometimento de atividades diárias (esporte, lazer), alteração na escola ou no trabalho e presença de sintomas incômodos definem a forma moderada-grave. A forma leve é o espelho disso, com todos os itens preservados."
+    },
+    {
+      "question": "Dentro do grupo das rinites alérgicas, quais são os subtipos reconhecidos?",
+      "options": [
+        "Sazonal, perene, circunstancial e ocupacional",
+        "Sazonal, perene, atrófica e ocupacional",
+        "Sazonal, idiopática, circunstancial e hormonal",
+        "Perene, circunstancial, emocional e por desuso"
+      ],
+      "correctIndex": 0,
+      "explanation": "As rinites alérgicas se dividem em sazonal, perene, circunstancial e ocupacional. Idiopática, hormonal, atrófica, emocional e por desuso pertencem ao grupo das \"outras\" rinites, que são não alérgicas e têm teste cutâneo negativo."
+    },
+    {
+      "question": "A rinite infecciosa se divide em aguda e crônica. Como cada uma dessas formas se subdivide?",
+      "options": [
+        "Aguda em viral e bacteriana; crônica em específica e inespecífica",
+        "Aguda em viral e fúngica; crônica em específica e inespecífica",
+        "Aguda em viral e bacteriana; crônica em alérgica e não alérgica",
+        "Aguda em bacteriana e fúngica; crônica em sazonal e perene"
+      ],
+      "correctIndex": 0,
+      "explanation": "A rinite infecciosa aguda se subdivide em viral e bacteriana; a crônica, em específica (com agente definido, como tuberculose ou hanseníase) e inespecífica. Sazonal e perene são subtipos de rinite alérgica, não de rinite infecciosa."
+    },
+    {
+      "question": "Como varia a participação da rinite alérgica no total de rinites entre adultos e crianças?",
+      "options": [
+        "Responde por cerca de 56% nos adultos e sobe para 66% nas crianças",
+        "Responde por cerca de 66% nos adultos e cai para 56% nas crianças",
+        "Responde por cerca de 56% nos adultos e cai para 20% nas crianças",
+        "Responde por cerca de 20% nos adultos e sobe para 56% nas crianças"
+      ],
+      "correctIndex": 0,
+      "explanation": "A rinite alérgica é a causa mais frequente nos dois grupos, mas pesa mais na infância: cerca de 56% dos casos no adulto e 66% na criança. A rinite idiopática fica em torno de 20% nos dois, e a rinite eosinofílica não alérgica cai de 13,5% no adulto para 8,5% na criança.",
+      "image": "pg06",
+      "imageCaption": "Distribuição das rinites em adultos e em crianças"
+    },
+    {
+      "question": "Em que consiste a hiperreatividade nasal, base fisiopatológica da rinite alérgica?",
+      "options": [
+        "Resposta exagerada a mediadores químicos, como a histamina",
+        "Resposta reduzida a mediadores químicos, como a histamina",
+        "Destruição do epitélio ciliado por mediadores como a histamina",
+        "Produção deficiente de mediadores químicos, como a histamina"
+      ],
+      "correctIndex": 0,
+      "explanation": "Hiperreatividade é responder de forma exagerada a um estímulo que seria inócuo, por ação de mediadores químicos como a histamina. É esse traço, e não o alérgeno em si, que explica por que o paciente também reage a cheiro forte, frio e poeira inespecífica."
+    },
+    {
+      "question": "Qual célula faz a captação e a apresentação inicial do antígeno na mucosa nasal?",
+      "options": [
+        "A célula de Langerhans, que atua como apresentadora de antígeno",
+        "O mastócito, que atua como apresentador inicial de antígeno",
+        "O eosinófilo, que atua como apresentador inicial de antígeno",
+        "O plasmócito, que atua como apresentador inicial de antígeno"
+      ],
+      "correctIndex": 0,
+      "explanation": "A célula de Langerhans processa o antígeno na mucosa e trafega pelo anel de Waldeyer e pelos linfonodos de drenagem locais para apresentá-lo aos linfócitos. O mastócito é efetor da fase imediata, o eosinófilo da fase tardia e o plasmócito produz a IgE."
+    },
+    {
+      "question": "Após a apresentação do antígeno, para que linhagem se diferencia o linfócito Th0 na rinite alérgica, e com que consequência?",
+      "options": [
+        "Para Th2, liberando IL-4, IL-5 e IL-13 e mantendo ambiente atópico",
+        "Para Th1, liberando IL-4, IL-5 e IL-13 e mantendo ambiente atópico",
+        "Para Th2, liberando apenas interferon-gama e suprimindo a atopia",
+        "Para Th17, liberando IL-17 e atraindo neutrófilos para a mucosa"
+      ],
+      "correctIndex": 0,
+      "explanation": "O desvio Th0 para Th2 é o ponto de virada da atopia. O perfil Th2 libera IL-3, IL-4, IL-5, IL-9, IL-10 e IL-13, além de GM-CSF, sustentando um ambiente que favorece a produção de IgE e o recrutamento de eosinófilos."
+    },
+    {
+      "question": "Que sintomas marcam a fase imediata da rinite alérgica e quanto tempo ela dura?",
+      "options": [
+        "Prurido, espirros, rinorreia e obstrução, com duração de até 1 hora",
+        "Prurido, espirros, rinorreia e obstrução, com duração de 4 a 48 horas",
+        "Obstrução nasal e hiposmia isoladas, com duração de até 1 hora",
+        "Obstrução nasal e hiposmia isoladas, com duração de 4 a 48 horas"
+      ],
+      "correctIndex": 0,
+      "explanation": "Na sensibilização o linfócito B, sob IL-4 e IL-13 do Th2, vira plasmócito e produz IgE, que se fixa no mastócito. Na reexposição o mastócito desgranula histamina, leucotrienos e interleucinas: o quadro completo surge em minutos e se esgota em até 1 hora. A janela de 4 a 48 horas pertence à fase tardia."
+    },
+    {
+      "question": "Qual célula domina a fase tardia da reação alérgica nasal e qual é a duração dessa fase?",
+      "options": [
+        "O eosinófilo, com duração de 4 a 48 horas após a exposição",
+        "O mastócito, com duração de 4 a 48 horas após a exposição",
+        "O eosinófilo, com duração de até 1 hora após a exposição",
+        "O neutrófilo, com duração de até 1 hora após a exposição"
+      ],
+      "correctIndex": 0,
+      "explanation": "A fase tardia é do eosinófilo e vai de 4 a 48 horas depois do contato. É nela que se instala a hiper-reatividade, com participação do sistema nervoso autônomo, e por isso o paciente segue obstruído muito depois de o alérgeno ter saído de cena.",
+      "image": "pg11",
+      "imageCaption": "Fase tardia da reação alérgica nasal"
+    },
+    {
+      "question": "Que consequências clínicas distinguem a rinorreia anterior da rinorreia posterior na rinite alérgica?",
+      "options": [
+        "A anterior gera espirros e limpeza frequente do nariz; a posterior, roncos",
+        "A anterior gera roncos; a posterior, espirros e limpeza frequente do nariz",
+        "A anterior gera epistaxe de repetição; a posterior, anosmia irreversível",
+        "A anterior gera dor facial intensa; a posterior, febre de padrão vespertino"
+      ],
+      "correctIndex": 0,
+      "explanation": "A rinorreia da rinite alérgica é tipicamente clara. Quando escorre pela frente, provoca espirros e a limpeza repetida do nariz; quando escorre para trás, produz gotejamento pós-nasal e roncos. Epistaxe, dor facial e febre não fazem parte do quadro."
+    },
+    {
+      "question": "Por que a obstrução nasal da rinite alérgica pode alternar de lado entre as fossas nasais?",
+      "options": [
+        "Pelo aumento do ciclo nasal fisiológico, que alterna as duas fossas",
+        "Por desvio septal obstrutivo adquirido ao longo das crises repetidas",
+        "Pela destruição progressiva do epitélio ciliado nas duas fossas nasais",
+        "Pela formação de pólipos que migram de uma fossa nasal para a outra"
+      ],
+      "correctIndex": 0,
+      "explanation": "O ciclo nasal é fisiológico: as conchas de um lado congestionam enquanto as do outro descongestionam. Na rinite alérgica esse ciclo fica exagerado, e a obstrução passa a ser percebida ora de um lado, ora do outro — ou bilateral."
+    },
+    {
+      "question": "A dupla prega na pálpebra inferior do paciente alérgico recebe que nome?",
+      "options": [
+        "Linhas de Dennie-Morgan",
+        "Saudação do alérgico",
+        "Cianose periorbitária",
+        "Prega em dorso nasal"
+      ],
+      "correctIndex": 0,
+      "explanation": "As linhas de Dennie-Morgan são a dupla linha na pálpebra inferior, achado facial clássico de atopia. Acompanham a cianose periorbitária e o edema palpebral; a prega no dorso nasal é um sinal diferente, consequência do gesto de empurrar o nariz.",
+      "image": "pg15",
+      "imageCaption": "Achados faciais do paciente alérgico"
+    },
+    {
+      "question": "À rinoscopia, como se apresenta a concha nasal do paciente alérgico em comparação com a normal?",
+      "options": [
+        "Mais pálida e edemaciada, estreitando o espaço da fossa nasal",
+        "Mais avermelhada e atrófica, ampliando o espaço da fossa nasal",
+        "Mais pálida e atrófica, ampliando bastante o espaço da fossa nasal",
+        "Recoberta de crostas escuras, sem alterar o espaço da fossa nasal"
+      ],
+      "correctIndex": 0,
+      "explanation": "A mucosa alérgica fica pálida e edemaciada, e a concha aumentada praticamente oblitera a fossa nasal — por isso a obstrução. A mucosa avermelhada sugere quadro infeccioso, e a mucosa atrófica com crostas aponta para rinite atrófica.",
+      "image": "pg16",
+      "imageCaption": "Rinoscopia: mucosa normal à esquerda, alérgica à direita"
+    },
+    {
+      "question": "Qual exame é a primeira escolha na investigação da rinite alérgica, e por quê?",
+      "options": [
+        "Teste cutâneo, por ser mais barato, mais rápido e muito sensível",
+        "RAST sérico, por ser mais barato, mais rápido e muito sensível",
+        "Teste cutâneo, por dispensar a correlação com o quadro clínico",
+        "Citológico nasal, por ser mais barato, mais rápido e específico"
+      ],
+      "correctIndex": 0,
+      "explanation": "O teste cutâneo de leitura imediata (prick test) é a primeira escolha por ser mais barato, mais rápido e ter alta sensibilidade. Mesmo positivo, só fecha o diagnóstico quando somado à clínica compatível; isolado, indica apenas sensibilização.",
+      "image": "pg18",
+      "imageCaption": "Exames complementares e seus resultados"
+    },
+    {
+      "question": "Que limitação importante tem a dosagem sérica de IgE específica (RAST) na rinite alérgica?",
+      "options": [
+        "Apresenta cerca de 20% de resultados falso-positivos",
+        "Apresenta cerca de 20% de resultados falso-negativos",
+        "Apresenta cerca de 50% de resultados falso-positivos",
+        "Só pode ser solicitado em pacientes acima de 20 anos"
+      ],
+      "correctIndex": 0,
+      "explanation": "O RAST tem em torno de 20% de falso-positivos, o que obriga a interpretá-lo sempre junto da clínica. É um exame útil quando o teste cutâneo não pode ser feito, mas não substitui a história nem autoriza diagnóstico por si só."
+    },
+    {
+      "question": "No citológico nasal, que célula predominante aponta para cada tipo de rinite?",
+      "options": [
+        "Eosinófilo na alérgica, neutrófilo na bacteriana, linfócito na viral",
+        "Eosinófilo na alérgica, linfócito na bacteriana, neutrófilo na viral",
+        "Neutrófilo na alérgica, eosinófilo na bacteriana, linfócito na viral",
+        "Linfócito na alérgica, neutrófilo na bacteriana, eosinófilo na viral"
+      ],
+      "correctIndex": 0,
+      "explanation": "O citológico nasal separa os três cenários pela célula dominante: eosinófilo na rinite alérgica, neutrófilo na infecciosa bacteriana e linfócito na infecciosa viral. É um exame simples e orienta a conduta quando a história é ambígua."
+    },
+    {
+      "question": "Qual é o papel da endoscopia nasal e dos exames de imagem na investigação da rinite alérgica?",
+      "options": [
+        "Servem apenas ao diagnóstico diferencial, e não para confirmá-la",
+        "Servem para confirmar o diagnóstico em todo paciente sintomático",
+        "Servem para medir a gravidade e definir a classificação pela ARIA",
+        "Servem para substituir o teste cutâneo sempre que ele não existir"
+      ],
+      "correctIndex": 0,
+      "explanation": "O diagnóstico de rinite alérgica é clínico, apoiado em teste cutâneo, RAST, hemograma e citológico nasal. Endoscopia nasal e tomografia entram só para afastar outras causas de obstrução, como polipose, tumor, corpo estranho ou desvio septal."
+    },
+    {
+      "question": "Que medidas formam a base do tratamento da rinite alérgica?",
+      "options": [
+        "Higiene ambiental, lavagem nasal, anti-histamínico e corticoide tópico",
+        "Higiene ambiental, lavagem nasal, antibiótico e corticoide sistêmico",
+        "Descongestionante tópico contínuo, antibiótico e corticoide sistêmico",
+        "Imunoterapia isolada, antileucotrieno e descongestionante sistêmico"
+      ],
+      "correctIndex": 0,
+      "explanation": "O tratamento começa pelo controle ambiental e pela lavagem nasal com soro fisiológico, aos quais se somam o anti-histamínico e o corticoide tópico nasal. Descongestionante sistêmico, corticoide oral, antileucotrieno e imunoterapia são degraus posteriores, não a base."
+    },
+    {
+      "question": "Em que situações a cirurgia entra no tratamento do paciente com rinite alérgica?",
+      "options": [
+        "Hipertrofia de conchas inferiores, polipose nasal e desvio septal",
+        "Primeira crise de espirros com rinorreia clara e prurido nasal",
+        "Teste cutâneo positivo para ácaro em paciente sem sintoma algum",
+        "Eosinofilia no citológico nasal sem nenhuma obstrução associada"
+      ],
+      "correctIndex": 0,
+      "explanation": "A cirurgia não trata a alergia: corrige o que obstrui mecanicamente ou o que já se cronificou. Entram aí a hipertrofia de conchas inferiores, a sinusite crônica, a polipose nasal e alterações associadas como desvio septal e hipertrofia de adenoide."
+    },
+    {
+      "question": "Qual agente responde pela maioria das rinites infecciosas virais, e por quanto tempo o quadro pode durar?",
+      "options": [
+        "Rinovírus, em cerca de 80% dos casos, com duração de até 3 semanas",
+        "Rinovírus, em cerca de 80% dos casos, com duração de até 3 dias",
+        "Influenza, em cerca de 80% dos casos, com duração de até 3 semanas",
+        "Adenovírus, em cerca de 20% dos casos, com duração de até 3 semanas"
+      ],
+      "correctIndex": 0,
+      "explanation": "O rinovírus responde por cerca de 80% dos resfriados, e o quadro pode se arrastar por até 3 semanas. A invasão viral aumenta a permeabilidade vascular e a secreção glandular, produzindo rinorreia, espirros e congestão — sem indicação de antibiótico."
+    },
+    {
+      "question": "Que achados definem a rinite idiopática, antes chamada de vasomotora?",
+      "options": [
+        "Hiperreatividade com testes alérgicos negativos e sem eosinofilia",
+        "Hiperreatividade com testes alérgicos positivos e com eosinofilia",
+        "Hiperreatividade com testes alérgicos negativos e com eosinofilia",
+        "Atrofia da mucosa com testes alérgicos negativos e sem eosinofilia"
+      ],
+      "correctIndex": 0,
+      "explanation": "A rinite idiopática é um diagnóstico de exclusão: o paciente tem hiperreatividade nasal, mas os testes alérgicos são negativos e o citológico nasal não mostra eosinofilia. Se houvesse eosinofilia com testes negativos, o quadro seria rinite eosinofílica não alérgica."
+    },
+    {
+      "question": "Como se define a rinite gestacional?",
+      "options": [
+        "Congestão nas últimas 6 semanas de gravidez que cessa 2 semanas após o parto",
+        "Congestão nas primeiras 6 semanas de gravidez que cessa 2 semanas após o parto",
+        "Congestão nas últimas 6 semanas de gravidez que persiste por 2 anos após o parto",
+        "Congestão em qualquer fase da gravidez que cessa apenas 6 meses após o parto"
+      ],
+      "correctIndex": 0,
+      "explanation": "A rinite gestacional é a congestão nasal que aparece nas últimas 6 semanas ou mais de gravidez, sem outra causa aparente, e desaparece até 2 semanas depois do parto. O mecanismo é multifatorial e pode agravar uma rinite alérgica já existente."
+    },
+    {
+      "question": "O uso crônico de que classe de medicamento tópico nasal provoca rinite medicamentosa?",
+      "options": [
+        "Descongestionantes tópicos, como nafazolina e oximetazolina",
+        "Corticoides tópicos, como budesonida e furoato de mometasona",
+        "Anti-histamínicos tópicos, como azelastina e levocabastina",
+        "Estabilizadores de mastócito, como o cromoglicato dissódico"
+      ],
+      "correctIndex": 0,
+      "explanation": "O vasoconstritor tópico (nafazolina, oximetazolina) alivia na hora, mas o uso crônico gera congestão de rebote e dependência — é a rinite medicamentosa. O tratamento passa por suspender a gota e cobrir o rebote com corticoide tópico nasal."
+    },
+    {
+      "question": "Além dos descongestionantes tópicos, que fármacos de uso sistêmico podem causar congestão nasal?",
+      "options": [
+        "Metildopa, bloqueadores de canal de cálcio e inibidores da ECA",
+        "Metildopa, broncodilatadores inalatórios e inibidores da ECA",
+        "Metformina, bloqueadores de canal de cálcio e anti-inflamatórios",
+        "Levotiroxina, bloqueadores de canal de cálcio e antibióticos orais"
+      ],
+      "correctIndex": 0,
+      "explanation": "Vários anti-hipertensivos causam congestão nasal: metildopa, bloqueadores de canal de cálcio e inibidores da ECA, além da reserpina. Completam a lista os antidepressivos tricíclicos, os contraceptivos orais, os estrógenos e o sildenafil e similares."
+    },
+    {
+      "question": "Que epitélio reveste os seios paranasais, e qual é a função de cada um de seus componentes?",
+      "options": [
+        "Cilíndrico ciliado, que transporta o muco produzido pelas caliciformes",
+        "Escamoso estratificado, que transporta o muco das células caliciformes",
+        "Cilíndrico ciliado, cujos cílios produzem o muco movido pelas caliciformes",
+        "Cúbico simples, que absorve o muco produzido pelas células caliciformes"
+      ],
+      "correctIndex": 0,
+      "explanation": "Os seios paranasais são revestidos por epitélio cilíndrico ciliado: as células ciliadas fazem o transporte mucociliar e as células caliciformes produzem o muco. Travar esse transporte, por inflamação ou obstrução do óstio, é o que inicia a rinossinusite."
+    },
+    {
+      "question": "Como mudam as cavidades paranasais e seus óstios ao longo do crescimento, do recém-nascido ao adolescente?",
+      "options": [
+        "As cavidades ficam mais amplas e os óstios, proporcionalmente menores",
+        "As cavidades ficam mais estreitas e os óstios, proporcionalmente maiores",
+        "As cavidades e os óstios crescem na mesma proporção até a vida adulta",
+        "As cavidades já nascem do tamanho adulto e apenas os óstios aumentam"
+      ],
+      "correctIndex": 0,
+      "explanation": "Com o crescimento, as cavidades sinusais se expandem muito mais que seus óstios de drenagem, que ficam proporcionalmente estreitos. Essa desproporção entre volume produzido e via de saída é um dos fatores que favorecem a retenção de secreção.",
+      "image": "pg29",
+      "imageCaption": "Pneumatização dos seios paranasais: RN, 10 e 15 anos"
+    },
+    {
+      "question": "No adulto, que quatro sintomas compõem o quadro clássico da rinossinusite?",
+      "options": [
+        "Rinorreia, obstrução nasal, dor e anosmia",
+        "Rinorreia, obstrução nasal, dor e tosse",
+        "Rinorreia, obstrução nasal, febre e epistaxe",
+        "Espirros, prurido nasal, dor e anosmia"
+      ],
+      "correctIndex": 0,
+      "explanation": "No adulto o quadro se resume em quatro sintomas: rinorreia, obstrução nasal, dor e anosmia — o mnemônico RODA. Espirros e prurido são mais típicos da rinite alérgica, e epistaxe não compõe o quadro habitual da rinossinusite.",
+      "image": "pg30",
+      "imageCaption": "Sintomas da rinossinusite no adulto"
+    },
+    {
+      "question": "O conjunto clássico de sintomas da rinossinusite difere entre adulto e criança em um item. Qual é a diferença?",
+      "options": [
+        "No adulto o quarto sintoma é a anosmia; na criança, a tosse",
+        "No adulto o quarto sintoma é a tosse; na criança, a anosmia",
+        "No adulto o quarto sintoma é a anosmia; na criança, a febre",
+        "No adulto o quarto sintoma é a epistaxe; na criança, a tosse"
+      ],
+      "correctIndex": 0,
+      "explanation": "Rinorreia, obstrução nasal e dor são comuns aos dois. O quarto item muda: anosmia no adulto (RODA) e tosse na criança (RODT), já que a criança deglute a secreção posterior e tosse, enquanto raramente relata perda de olfato de forma espontânea."
+    }
+  ]
+}

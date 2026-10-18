@@ -1,0 +1,432 @@
+{
+  "titulo": "Síndrome do Imobilismo",
+  "eyebrow": "Geriatria · Funcionalidade e Reabilitação",
+  "subtitulo": "O idoso acamado e o relógio das perdas que se instalam",
+  "intro": "Critérios diagnósticos, repercussões sistema por sistema com os prazos de cada perda, lesão por pressão e escala de Braden, prevenção e reabilitação do idoso imobilizado.",
+  "questoes": [
+    {
+      "question": "Na graduação temporal da OMS para o idoso restrito ao leito, um intervalo de 7 a 10 dias corresponde a qual situação?",
+      "options": [
+        "Período de repouso simples",
+        "Decúbito de longa duração",
+        "Imobilização já instalada",
+        "Síndrome do imobilismo",
+        "Acamamento irreversível"
+      ],
+      "correctIndex": 0,
+      "explanation": "A graduação temporal divide o tempo no leito em três faixas: 7 a 10 dias é apenas período de repouso, 12 a 15 dias já configura imobilização e, a partir de 15 dias, fala-se em decúbito de longa duração. O rótulo importa porque define a partir de quando as medidas preventivas deixam de ser opcionais."
+    },
+    {
+      "question": "A partir de quantos dias de restrição ao leito passa-se a falar em decúbito de longa duração?",
+      "options": [
+        "A partir de 15 dias",
+        "A partir de 30 dias",
+        "A partir de 10 dias",
+        "A partir de 21 dias",
+        "A partir de 45 dias"
+      ],
+      "correctIndex": 0,
+      "explanation": "A faixa de 12 a 15 dias é chamada de imobilização, e acima de 15 dias o quadro é classificado como decúbito de longa duração. Nesse ponto a perda muscular, a reabsorção óssea e o risco de lesão por pressão já estão plenamente instalados."
+    },
+    {
+      "question": "Qual a proporção de idosos acima de 75 anos que apresenta algum agravo na mobilidade?",
+      "options": [
+        "Um em cada cinco",
+        "Um em cada dois",
+        "Um em cada dez",
+        "Um em cada vinte",
+        "Um em cada trinta"
+      ],
+      "correctIndex": 0,
+      "explanation": "Cerca de 1/5 dos idosos com mais de 75 anos tem algum agravo de mobilidade. É uma prevalência alta o bastante para que a avaliação da mobilidade seja rotina na consulta geriátrica, e não um item reservado a quem já chega acamado."
+    },
+    {
+      "question": "A taxa de mortalidade associada à síndrome do imobilismo gira em torno de que valor?",
+      "options": [
+        "Cerca de 40%",
+        "Cerca de 10%",
+        "Cerca de 70%",
+        "Cerca de 25%",
+        "Cerca de 55%"
+      ],
+      "correctIndex": 0,
+      "explanation": "A mortalidade descrita é de 40%, número que coloca o imobilismo entre as condições geriátricas mais letais. O peso dessa cifra é o argumento central para tratar a prevenção como prioridade, já que o processo instalado é considerado irreversível."
+    },
+    {
+      "question": "Quais são as duas causas de óbito apontadas como responsáveis pela mortalidade do paciente imobilizado?",
+      "options": [
+        "Sepse e embolia pulmonar",
+        "Sepse e acidente vascular",
+        "Fratura e embolia pulmonar",
+        "Delirium e embolia pulmonar",
+        "Arritmia e embolia pulmonar"
+      ],
+      "correctIndex": 0,
+      "explanation": "A mortalidade de 40% decorre essencialmente de sepse e de embolia pulmonar. As duas vias se conectam ao imobilismo de forma direta: a sepse pela lesão por pressão infectada, pela pneumonia aspirativa e pela infecção urinária de repetição; a embolia pelo trajeto estase venosa, trombose e deslocamento do trombo."
+    },
+    {
+      "question": "Quais são as principais causas de agravo da mobilidade no idoso?",
+      "options": [
+        "Hospitalização prolongada, demência e depressão",
+        "Hospitalização prolongada, anemia e disfagia",
+        "Hipotireoidismo, catarata e perda auditiva",
+        "Incontinência urinária, obesidade e tabagismo",
+        "Hipertensão, dislipidemia e doença renal"
+      ],
+      "correctIndex": 0,
+      "explanation": "As causas principais são hospitalização prolongada, doenças neurológicas e demências, doenças osteoarticulares e depressão. Três delas são potencialmente modificáveis, o que torna a mobilização precoce no hospital e o tratamento da depressão intervenções diretas de prevenção do imobilismo."
+    },
+    {
+      "question": "Na classificação diagnóstica da síndrome do imobilismo, quais são os dois critérios maiores?",
+      "options": [
+        "Déficit cognitivo e contraturas",
+        "Disfagia e úlcera por pressão",
+        "Afasia e incontinência urinária",
+        "Contraturas e úlcera sacral",
+        "Déficit cognitivo e disfagia"
+      ],
+      "correctIndex": 0,
+      "explanation": "Os dois critérios maiores são o comprometimento cognitivo e as contraturas múltiplas; ambos precisam estar presentes. Os demais achados (afasia, disfagia, dupla incontinência e escara) entram como critérios menores e completam o diagnóstico.",
+      "image": "pg12",
+      "imageCaption": "Critérios maiores e menores da síndrome do imobilismo"
+    },
+    {
+      "question": "Entre os critérios menores da síndrome do imobilismo, qual conjunto está corretamente listado?",
+      "options": [
+        "Afasia, disfagia, incontinência e escara",
+        "Afasia, disfagia, contraturas e escara",
+        "Cognição, disfagia, incontinência e dor",
+        "Afasia, dispneia, incontinência e escara",
+        "Afasia, disfagia, incontinência e queda"
+      ],
+      "correctIndex": 0,
+      "explanation": "Os critérios menores são afasia, disfagia, incontinência urinária e fecal (dupla incontinência) e escara. Contraturas e déficit cognitivo não entram aqui porque são os critérios maiores, e trocá-los de categoria é o erro mais comum nessa questão."
+    },
+    {
+      "question": "No músculo imobilizado, que tipo de fibra é perdido preferencialmente?",
+      "options": [
+        "Fibras tipo II, de contração rápida",
+        "Fibras tipo I, de contração lenta",
+        "Fibras tipo IIa exclusivamente",
+        "Fibras tipo I e tipo IIb igualmente",
+        "Fibras intrafusais do fuso muscular"
+      ],
+      "correctIndex": 0,
+      "explanation": "A perda atinge primeiro as fibras de contração rápida (tipo II) e só em menor proporção as fibras tipo I. Como as fibras tipo II são as responsáveis pela geração rápida de força, o paciente perde antes a capacidade de reagir a um desequilíbrio do que a de sustentar postura — o que explica a queda precoce."
+    },
+    {
+      "question": "Após seis semanas de imobilização, qual é a queda aproximada de força nos membros inferiores e nos superiores?",
+      "options": [
+        "20% nos inferiores e 10% nos superiores",
+        "10% nos inferiores e 20% nos superiores",
+        "30% nos inferiores e 15% nos superiores",
+        "20% nos inferiores e 40% nos superiores",
+        "50% nos inferiores e 25% nos superiores"
+      ],
+      "correctIndex": 0,
+      "explanation": "Em seis semanas a força dos membros inferiores declina cerca de 20% e a dos superiores cerca de 10%. A assimetria tem lógica: os membros inferiores perdem mais porque é deles que se retira toda a carga antigravitária quando o paciente é posto no leito."
+    },
+    {
+      "question": "Qual a perda diária de massa muscular descrita no repouso no leito, e a perda semanal correspondente?",
+      "options": [
+        "Até 1,5% ao dia, cerca de 10% por semana",
+        "Até 0,5% ao dia, cerca de 3% por semana",
+        "Até 3% ao dia, cerca de 20% por semana",
+        "Até 5% ao dia, cerca de 30% por semana",
+        "Até 0,1% ao dia, cerca de 1% por semana"
+      ],
+      "correctIndex": 0,
+      "explanation": "Alguns estudos descrevem perda diária de até 1,5% da massa muscular total, o que equivale a cerca de 10% por semana. Esse é o número que torna indefensável a prescrição de repouso no leito sem data de término no idoso hospitalizado."
+    },
+    {
+      "question": "Qual mecanismo explica o encurtamento de músculos e tendões no segmento imobilizado?",
+      "options": [
+        "Fibras de colágeno reticulares se fundem e perdem elasticidade",
+        "Fibras de colágeno se rompem e são repostas por tecido ósseo",
+        "Fibras de colágeno são digeridas por osteoclastos ativados",
+        "Fibras de colágeno aumentam de calibre e ganham elasticidade",
+        "Fibras de colágeno são substituídas por tecido adiposo puro"
+      ],
+      "correctIndex": 0,
+      "explanation": "As fibras de colágeno de formato reticular se fundem e perdem a propriedade elástica, o que encurta músculos e tendões e termina em contratura das articulações. Em paralelo, a perda de unidades motoras excitáveis altera a disposição actina-miosina e agrava a contratura muscular."
+    },
+    {
+      "question": "Quando se inicia a perda de massa óssea por imobilização e quando ela atinge o pico?",
+      "options": [
+        "Começa no terceiro dia e atinge o pico na quinta semana",
+        "Começa na terceira semana e atinge o pico no sexto mês",
+        "Começa no terceiro dia e atinge o pico na décima semana",
+        "Começa no décimo dia e atinge o pico na quinta semana",
+        "Começa no primeiro mês e atinge o pico no terceiro mês"
+      ],
+      "correctIndex": 0,
+      "explanation": "A osteoporose de desuso começa já no terceiro dia de imobilização e tem seu pico na quinta semana. É o prazo mais curto entre todas as repercussões do imobilismo, e explica por que o risco de nova fratura cresce dentro da própria internação."
+    },
+    {
+      "question": "Qual alteração celular está na base da osteoporose de desuso do paciente imobilizado?",
+      "options": [
+        "Aumento da atividade osteoclástica com mais reabsorção óssea",
+        "Queda da atividade osteoclástica com menos reabsorção óssea",
+        "Aumento da atividade osteoblástica com mais formação óssea",
+        "Queda da atividade osteoblástica com mais mineralização óssea",
+        "Bloqueio da atividade osteocítica com mais rigidez da matriz"
+      ],
+      "correctIndex": 0,
+      "explanation": "A retirada da carga mecânica aumenta a atividade dos osteoclastos e, com ela, a reabsorção óssea. O cálcio liberado da matriz alimenta a hipercalciúria do imobilizado, fechando a ponte entre a perda óssea e a litíase renal."
+    },
+    {
+      "question": "Entre as alterações articulares do imobilismo, o que ocorre com o líquido sinovial e com a nutrição da cartilagem?",
+      "options": [
+        "Menor fluidez do líquido sinovial e menor absorção de nutrientes",
+        "Maior fluidez do líquido sinovial e maior absorção de nutrientes",
+        "Menor fluidez do líquido sinovial e maior absorção de nutrientes",
+        "Maior produção de líquido sinovial e menor atrito na cartilagem",
+        "Menor produção de líquido sinovial e maior aporte de nutrientes"
+      ],
+      "correctIndex": 0,
+      "explanation": "A articulação parada tem líquido sinovial menos fluido e absorve menos nutrientes, porque a cartilagem é avascular e depende do movimento para ser nutrida por embebição. A isso se somam a proliferação de tecido conectivo fibroso e gorduroso (pannus), a reabsorção óssea e os cistos subcondrais por falta de sobrecarga articular."
+    },
+    {
+      "question": "Qual o ritmo de aumento da frequência cardíaca de repouso durante o repouso prolongado no leito?",
+      "options": [
+        "1 bpm a cada 2 dias de repouso",
+        "5 bpm a cada 2 dias de repouso",
+        "1 bpm a cada 2 horas de repouso",
+        "1 bpm a cada 2 semanas de repouso",
+        "10 bpm a cada 2 dias de repouso"
+      ],
+      "correctIndex": 0,
+      "explanation": "A frequência cardíaca de repouso sobe cerca de 1 bpm a cada 2 dias de leito. O conjunto das alterações cardiovasculares pode reduzir em até 25% o desempenho cardiovascular, o que compromete a própria capacidade de reabilitar o paciente depois.",
+      "image": "pg09",
+      "imageCaption": "Cascata de alterações cardiovasculares do imobilismo"
+    },
+    {
+      "question": "Por que a pressão arterial sistólica tende a subir no paciente em repouso prolongado?",
+      "options": [
+        "Por aumento da resistência vascular periférica",
+        "Por aumento do volume sistólico do ventrículo",
+        "Por queda da resistência vascular periférica",
+        "Por retenção exclusiva de sódio pelo túbulo renal",
+        "Por elevação isolada do débito cardíaco basal"
+      ],
+      "correctIndex": 0,
+      "explanation": "A sistólica sobe por aumento da resistência vascular periférica. Convive, de forma apenas aparentemente paradoxal, com a hipotensão postural: a resistência está alta em repouso, mas o reflexo barorreceptor que deveria sustentar a pressão ao sentar ou levantar está deteriorado."
+    },
+    {
+      "question": "A estase, a hiperviscosidade e a lesão endotelial do imobilismo levam à trombose venosa profunda; a embolia pulmonar resultante responde por que fração dos óbitos?",
+      "options": [
+        "20% dos óbitos",
+        "40% dos óbitos",
+        "5% dos óbitos",
+        "60% dos óbitos",
+        "80% dos óbitos"
+      ],
+      "correctIndex": 0,
+      "explanation": "A embolia pulmonar responde por cerca de 20% dos óbitos do paciente imobilizado. A sequência é a tríade clássica aplicada ao leito: edema de membros inferiores por estase, hiperviscosidade e lesão endotelial culminam em trombose venosa profunda e, dela, no embolismo."
+    },
+    {
+      "question": "O que acontece com o volume corrente, a capacidade vital e o reflexo de tosse no paciente imobilizado?",
+      "options": [
+        "Todos diminuem, com alvéolos rasos e de menor superfície",
+        "Todos aumentam, com alvéolos cheios e de maior superfície",
+        "Só o reflexo de tosse cai, e os volumes se mantêm estáveis",
+        "Os volumes caem, mas o reflexo de tosse se intensifica",
+        "Os volumes sobem, e o reflexo de tosse fica preservado"
+      ],
+      "correctIndex": 0,
+      "explanation": "Tudo cai: volume corrente, volume-minuto, capacidade respiratória máxima, capacidade vital, reserva funcional, reflexo de tosse, movimento ciliar, elasticidade da parede torácica e movimento diafragmático. O resultado são alvéolos rasos, com menor superfície de troca, e secreção que não é eliminada.",
+      "image": "pg11",
+      "imageCaption": "O que cai e o que sobra no pulmão do paciente acamado"
+    },
+    {
+      "question": "Entre as alterações endócrino-metabólicas do imobilismo, o que ocorre com a tolerância à glicose?",
+      "options": [
+        "Há intolerância à glicose por resistência insulínica",
+        "Há hipoglicemia por hipersensibilidade insulínica",
+        "Há intolerância à glicose por falência pancreática",
+        "Há glicemia estável por queda do gasto energético",
+        "Há hipoglicemia por consumo muscular aumentado"
+      ],
+      "correctIndex": 0,
+      "explanation": "O imobilismo gera intolerância à glicose por resistência insulínica, e não por falha de produção de insulina. O músculo parado é o principal responsável: sem contração, cai a captação de glicose mediada por transportadores no tecido muscular, que é o maior destino periférico da glicose.",
+      "image": "pg10",
+      "imageCaption": "Alterações metabólicas e endócrinas do imobilismo"
+    },
+    {
+      "question": "O aumento da calciúria no paciente imobilizado leva diretamente a qual complicação?",
+      "options": [
+        "Litíase renal",
+        "Litíase biliar",
+        "Acidose tubular",
+        "Nefrite lúpica",
+        "Necrose papilar"
+      ],
+      "correctIndex": 0,
+      "explanation": "O cálcio mobilizado do osso em reabsorção é excretado na urina, e a hipercalciúria resultante precipita litíase renal. O quadro se agrava porque o mesmo paciente costuma estar desidratado e com estase urinária, duas condições que favorecem a formação do cálculo."
+    },
+    {
+      "question": "A retenção hídrica do paciente imobilizado pode culminar em qual quadro agudo?",
+      "options": [
+        "Edema agudo de pulmão",
+        "Edema agudo de glote",
+        "Tamponamento cardíaco",
+        "Pneumotórax hipertensivo",
+        "Hemorragia alveolar difusa"
+      ],
+      "correctIndex": 0,
+      "explanation": "A queda da excreção de sódio, potássio e fosfato e a retenção hídrica que a acompanha podem desembocar em edema agudo de pulmão. Esse é um dos motivos pelos quais a dispneia súbita do acamado nunca deve ser atribuída automaticamente à embolia pulmonar."
+    },
+    {
+      "question": "Que proporção dos casos de imobilismo cursa com alterações gastrointestinais?",
+      "options": [
+        "90% dos casos",
+        "50% dos casos",
+        "30% dos casos",
+        "10% dos casos",
+        "70% dos casos"
+      ],
+      "correctIndex": 0,
+      "explanation": "Cerca de 90% dos casos de imobilismo apresentam repercussão gastrointestinal, o que faz desse o sistema mais universalmente acometido. O eixo central é a desnutrição, alimentada por disfagia, gastroparesia, constipação com fecaloma e desidratação, e cujo desfecho é a caquexia.",
+      "image": "pg17",
+      "imageCaption": "O ciclo gastrointestinal que converge para a desnutrição"
+    },
+    {
+      "question": "Além da incontinência, que complicações urinárias são esperadas no paciente imobilizado?",
+      "options": [
+        "Retenção urinária, litíase e ITU de repetição",
+        "Retenção urinária, litíase e glomerulonefrite",
+        "Poliúria, hipocalciúria e ITU de repetição",
+        "Enurese noturna, litíase e bexiga hiperativa",
+        "Retenção urinária, hematúria e rim policístico"
+      ],
+      "correctIndex": 0,
+      "explanation": "O trato urinário do acamado acumula incontinência, retenção urinária, litíase e infecção urinária de repetição. A retenção merece atenção específica porque o bexigoma pode ser silencioso no idoso com déficit cognitivo, sendo achado de exame físico e não de queixa."
+    },
+    {
+      "question": "A disfagia do paciente imobilizado é definida como dificuldade de deglutir em que extensão do trajeto?",
+      "options": [
+        "Em qualquer etapa, da boca ao estômago",
+        "Apenas na fase oral da deglutição",
+        "Apenas na fase faríngea da deglutição",
+        "Apenas no esôfago distal e na cárdia",
+        "Apenas na transição entre boca e faringe"
+      ],
+      "correctIndex": 0,
+      "explanation": "Disfagia é a dificuldade para engolir alimentos, líquidos ou mesmo saliva em qualquer etapa do trajeto da boca ao estômago. Ela aumenta o risco de comprometimento nutricional e hídrico e é porta de entrada para a pneumonia aspirativa, uma das vias de sepse do imobilizado."
+    },
+    {
+      "question": "Além da lesão por pressão, que outras alterações de pele são esperadas no paciente imobilizado?",
+      "options": [
+        "Atrofia cutânea, escoriações, equimoses e micoses",
+        "Hiperqueratose, vitiligo, equimoses e micoses",
+        "Atrofia cutânea, melasma, psoríase e micoses",
+        "Esclerodermia, escoriações, equimoses e acne",
+        "Atrofia cutânea, alopecia, urticária e micoses"
+      ],
+      "correctIndex": 0,
+      "explanation": "O espectro tegumentar inclui lesões por pressão, atrofia da pele, escoriações, equimoses, micoses e dermatites. A umidade constante por incontinência e o atrito com a roupa de cama são os dois fatores que sustentam esse conjunto e que a prevenção tem de atacar."
+    },
+    {
+      "question": "Quais domínios a escala de Braden pontua de 1 a 4 para estimar o risco de lesão por pressão?",
+      "options": [
+        "Percepção sensorial, umidade, atividade, mobilidade e nutrição",
+        "Cognição, humor, marcha, continência e suporte social do idoso",
+        "Dor, sono, apetite, força de preensão e velocidade de marcha",
+        "Equilíbrio, visão, audição, continência e uso de polifarmácia",
+        "Peso, albumina, hemoglobina, creatinina e tempo de internação"
+      ],
+      "correctIndex": 0,
+      "explanation": "A escala pontua percepção sensorial, exposição à umidade, atividade, mobilidade, nutrição e risco de lesão cutânea por fricção e cisalhamento, cada item de 1 a 4. Quanto menor a soma, maior o risco — a lógica é inversa à da maioria das escalas de rastreio.",
+      "image": "pg21",
+      "imageCaption": "Escala de Braden: domínios, pontuação e faixas de risco"
+    },
+    {
+      "question": "Na escala de Braden, qual pontuação caracteriza risco alto de lesão por pressão?",
+      "options": [
+        "Menos de 12 pontos",
+        "Menos de 19 pontos",
+        "Entre 13 e 15 pontos",
+        "Entre 16 e 18 pontos",
+        "Mais de 19 pontos"
+      ],
+      "correctIndex": 0,
+      "explanation": "Pontuação abaixo de 12 indica risco alto. As demais faixas são: 13 a 15 risco médio, 16 a 18 risco baixo e acima de 19 sem risco. O acamado completamente imóvel, com nutrição muito pobre e pele constantemente úmida pontua o mínimo em vários domínios e cai direto na faixa de risco alto.",
+      "image": "pg21",
+      "imageCaption": "Faixas de risco da escala de Braden"
+    },
+    {
+      "question": "Os pontos de maior risco de lesão por pressão mudam conforme a posição; quais posições precisam ser mapeadas no acamado?",
+      "options": [
+        "Decúbito dorsal, decúbito lateral e sentado em cadeira",
+        "Decúbito ventral, decúbito lateral e posição ortostática",
+        "Apenas o decúbito dorsal e o decúbito ventral no leito",
+        "Apenas a posição sentada em cadeira de rodas comum",
+        "Apenas o decúbito lateral direito e o lateral esquerdo"
+      ],
+      "correctIndex": 0,
+      "explanation": "Os pontos de pressão precisam ser conferidos em decúbito dorsal, em decúbito lateral e na posição sentada em cadeira de rodas, porque cada postura transfere o peso para proeminências ósseas diferentes. Inspecionar apenas o sacro de um paciente que passa o dia sentado deixa passar a lesão isquiática.",
+      "image": "pg20",
+      "imageCaption": "Pontos de pressão conforme a posição adotada"
+    },
+    {
+      "question": "Que orientação nutricional compõe a prevenção da síndrome do imobilismo?",
+      "options": [
+        "Dieta hiperproteica com vitamina D e cálcio",
+        "Dieta hipoproteica com vitamina D e cálcio",
+        "Dieta hipercalórica com restrição de cálcio",
+        "Dieta normoproteica com restrição hídrica",
+        "Dieta hipossódica com restrição de proteínas"
+      ],
+      "correctIndex": 0,
+      "explanation": "A prevenção prevê dieta hiperproteica e calórica, com suplementação de vitamina D e cálcio quando indicada. A proteína contrapõe o catabolismo muscular e a dupla vitamina D e cálcio enfrenta a osteoporose de desuso que começa já no terceiro dia de leito."
+    },
+    {
+      "question": "Quais são as medidas farmacológica e não farmacológica de profilaxia do tromboembolismo no paciente imobilizado?",
+      "options": [
+        "Heparina de baixo peso e compressão pneumática",
+        "Heparina de baixo peso e repouso com perna elevada",
+        "Varfarina em dose plena e compressão pneumática",
+        "Ácido acetilsalicílico e deambulação assistida diária",
+        "Heparina de baixo peso e restrição hídrica controlada"
+      ],
+      "correctIndex": 0,
+      "explanation": "A profilaxia farmacológica é feita com heparina de baixo peso molecular, e a não farmacológica com compressão pneumática intermitente e meias elásticas. O peso dessa medida se mede pelo desfecho que ela evita: a embolia pulmonar responde por 20% dos óbitos do imobilizado."
+    },
+    {
+      "question": "Como se previne a contratura articular no paciente acamado?",
+      "options": [
+        "Amplitude de movimento, posicionamento e órteses",
+        "Imobilização em posição neutra com talas rígidas",
+        "Repouso articular absoluto e analgesia contínua",
+        "Alongamento único diário sob sedação profunda",
+        "Aplicação de calor local e massagem na articulação"
+      ],
+      "correctIndex": 0,
+      "explanation": "A prevenção da contratura combina exercícios de amplitude de movimento passiva e ativa, posicionamento adequado no leito e uso de órteses. Como a contratura é um dos dois critérios maiores da síndrome, essa é uma das poucas intervenções que atuam sobre o próprio diagnóstico, e não só sobre as complicações."
+    },
+    {
+      "question": "Homem de 82 anos com demência moderada, osteoporose e DPOC leve é operado de fratura de fêmur proximal e segue acamado por dor intensa, sem mobilização ativa. No 7º dia surgem taquipneia de 28 irpm, febre de 38,5 °C, leucocitose de 18.000/mm³ com 15% de bastões e PaO2 de 68 mmHg em ar ambiente; o doppler venoso de membros inferiores é negativo e a CPK está normal. Qual o efeito sistêmico mais grave e imediato?",
+      "options": [
+        "Insuficiência respiratória hipoxêmica por atelectasia",
+        "Insuficiência renal aguda por rabdomiólise instalada",
+        "Trombose venosa profunda com embolia pulmonar",
+        "Sarcopenia acelerada com perda proteica catabólica",
+        "Osteoporose acelerada com risco de refratura precoce"
+      ],
+      "correctIndex": 0,
+      "explanation": "Taquipneia, febre, leucocitose com desvio e PaO2 de 68 mmHg desenham insuficiência respiratória hipoxêmica por atelectasia basal, hipoventilação e pneumonia aspirativa — agravada pela DPOC e pela demência, que reduzem o clearance mucociliar e a proteção de via aérea. O doppler negativo afasta a trombose como foco e a CPK normal afasta a rabdomiólise; a sarcopenia e a osteoporose são processos de desfecho tardio. A conduta é mobilização precoce com suporte ventilatório."
+    },
+    {
+      "question": "Por que a prevenção é considerada a principal forma de tratamento da síndrome do imobilismo?",
+      "options": [
+        "Porque o processo instalado é irreversível",
+        "Porque o tratamento clínico é muito caro",
+        "Porque não existe equipe de reabilitação",
+        "Porque a síndrome é sempre assintomática",
+        "Porque o quadro regride de forma espontânea"
+      ],
+      "correctIndex": 0,
+      "explanation": "A síndrome instalada é tratada como processo irreversível: o que resta ao manejo é melhorar a qualidade de vida e atenuar complicações. Por isso o acompanhamento multiprofissional deve começar antes mesmo de qualquer patologia instalada, e não depois que o paciente já está acamado."
+    }
+  ]
+}

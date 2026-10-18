@@ -120,7 +120,7 @@ Mede a pressão intraocular. O método de referência é a **tonometria de aplan
 
 ![Miras semicirculares na tonometria de aplanação](img:s16i1)
 
-Alternativas: o **autotonômetro de sopro**, sem contato e sem anestésico, útil como triagem; e os portáteis — **Perkins**, **Pascal**, **Tonopen** e **Icare** — indispensáveis em paciente acamado, em criança sob sedação ou em centro cirúrgico, quando não se pode sentar o paciente à lâmpada de fenda.
+Alternativas: o **autotonômetro de sopro**, sem contato e sem anestésico, útil como triagem; e os portáteis — **Perkins**, **Tonopen** e **Icare** — indispensáveis em paciente acamado, em criança sob sedação ou em centro cirúrgico, quando não se pode sentar o paciente à lâmpada de fenda.
 
 ---
 

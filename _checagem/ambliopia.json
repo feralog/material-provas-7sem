@@ -1,0 +1,31 @@
+{
+  "achados": [
+    {
+      "tipo": "fonte_suspeita",
+      "onde": "quiz Q18 e Q19 (e resumo, seção 'Diagnóstico e graus')",
+      "gravidade": "baixa",
+      "o_que": "A fonte dá dois cortes que se sobrepõem: o critério diagnóstico é 'diferença maior que 2 linhas', mas a classificação leve é '2 a 3 linhas' — ou seja, uma diferença de exatamente 2 linhas seria simultaneamente ambliopia leve e não-ambliopia. Quiz e resumo reproduzem os dois números sem notar a tensão.",
+      "na_fonte": "'(diferença de AV entre AO maior que 2 linhas)' (slide 17) e 'Ambliopia leve: diferença de 2 a 3 linhas de visão' (slide 18)",
+      "sugestao": "Manter os dois dados, mas explicitar a leitura adotada (por exemplo: 'o corte é acima de 2 linhas; a faixa leve vai de pouco mais de 2 até 3 linhas') para que o aluno não fique com duas regras conflitantes."
+    },
+    {
+      "tipo": "possivelmente_na_imagem",
+      "onde": "quiz Q28",
+      "gravidade": "baixa",
+      "o_que": "O mecanismo atribuído ao nistagmo (oscilação impedindo fixação foveal estável) e a afirmação de que a perda é habitualmente bilateral não aparecem no texto; o slide 16 traz apenas o título, sem corpo de texto e sem marcador de imagem.",
+      "na_fonte": "'Ambliopia POR NISTAGMO' (slide 16, único conteúdo extraído)",
+      "sugestao": "Se a explicação veio de outra fonte, sinalizar; caso contrário, manter, pois é inferência clinicamente trivial a partir do próprio nome da forma — mas não é sustentada pelo material extraído."
+    },
+    {
+      "tipo": "fora_da_fonte",
+      "onde": "resumo, seção 'Por que a triagem precoce decide o desfecho'",
+      "gravidade": "baixa",
+      "o_que": "O resumo afirma que a ambliopia é 'a principal causa evitável de baixa visão monocular na infância' — dado epidemiológico que não aparece em nenhum ponto da fonte.",
+      "na_fonte": null,
+      "sugestao": "Retirar o superlativo ou reformular como 'uma das principais causas evitáveis', deixando claro que é acréscimo externo ao material."
+    }
+  ],
+  "veredito": "Material fiel e bem alinhado à fonte — nenhum erro factual, dose ou classificação divergente; os únicos pontos são a sobreposição numérica herdada da própria fonte (2 linhas) e duas afirmações de baixo risco que vão além do texto extraído.",
+  "tema": "ambliopia",
+  "disciplina": "OFTALMO"
+}

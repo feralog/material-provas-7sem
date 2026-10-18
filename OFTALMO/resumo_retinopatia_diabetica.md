@@ -78,7 +78,7 @@ A divisão fundamental é binária: **há neovasos ou não há**. A ausência de
 | Estágio | Achado na retinografia | Conduta |
 |---|---|---|
 | **RDNP leve** | Apenas microaneurismas | Controle metabólico; reavaliação anual |
-| **RDNP moderada** | Microaneurismas + hemorragias intrarretinianas + manchas algodonosas + exsudatos duros | **Encaminhamento ao oftalmologista**; reavaliação em 6 meses |
+| **RDNP moderada** | Microaneurismas + hemorragias intrarretinianas + manchas algodonosas + exsudatos duros | **Encaminhamento urgente ao oftalmologista** |
 | **RDNP grave** (pré-proliferativa) | Regra **4-2-1**: hemorragias graves nos **4** quadrantes, **ou** veias em rosário em **2** ou mais, **ou** IRMA em **1** ou mais — sem neovasos | **Encaminhamento urgente**; vigilância estreita, laser em casos selecionados |
 | **RDP** | Neovasos no disco (NVD), em outras áreas da retina (NVE), na íris ou no ângulo de filtração | **Panfotocoagulação a laser** e/ou anti-VEGF |
 | **Edema macular diabético** | Espessamento macular, exsudatos em anel perifoveal | **Encaminhamento urgente em qualquer estágio**; anti-VEGF se centro acometido |

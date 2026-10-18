@@ -141,7 +141,7 @@ Dois pontos de conduta que não são negociáveis:
 - **Tratamento das parcerias dos últimos 60 dias é mandatório**, mesmo nas assintomáticas. Tratar apenas a mulher garante reinfecção e falha terapêutica.
 - **Na gestação, doxiciclina e quinolonas são contraindicadas**, e a internação é obrigatória com antibiótico parenteral.
 
-Alta clínica e cura baseiam-se no desaparecimento total dos sintomas. O seguimento ambulatorial é feito na primeira semana, com **abstinência sexual** orientada e reforço do uso de preservativo.
+Alta clínica e cura baseiam-se no desaparecimento total dos sintomas. O seguimento ambulatorial é a reavaliação em 72 horas, com **abstinência sexual** orientada e reforço do uso de preservativo.
 
 > **Limiar baixo para tratar:** o antibiótico empírico deve ser iniciado **imediatamente diante da suspeita clínica**, sem aguardar ultrassom, PCR ou cultura. Quarenta e oito horas de atraso **triplicam** o risco de infertilidade. Errar pelo excesso custa um ciclo de antibiótico; errar pela demora custa a trompa.
 

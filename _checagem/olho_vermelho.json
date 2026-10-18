@@ -1,0 +1,31 @@
+{
+  "achados": [
+    {
+      "tipo": "divergencia",
+      "onde": "quiz Q30 (explicação) x resumo (tabela mestra)",
+      "gravidade": "baixa",
+      "o_que": "O quiz afirma que a hiperemia ciliar/pericorneana é típica do glaucoma agudo, mas a tabela mestra do resumo classifica a injeção conjuntival do glaucoma agudo como 'difusa', em contraste com a uveíte ('principalmente pericorneana').",
+      "na_fonte": "DIAGNÓTICO DIFERENCIAL DE OLHO VERMELHO (slide 40, sem texto além do título; padrão de injeção não descrito no texto extraído)",
+      "sugestao": "Uniformizar: indicar no resumo que o glaucoma agudo também cursa com hiperemia ciliar/pericorneana, ou retirar 'glaucoma agudo' da explicação do quiz sobre injeção pericorneana."
+    },
+    {
+      "tipo": "possivelmente_na_imagem",
+      "onde": "quiz Q31 e Q32; resumo (tabela mestra e caixa de sinais de alarme)",
+      "gravidade": "baixa",
+      "o_que": "Todo o bloco de glaucoma agudo (córnea embaçada, midríase média fixa, pressão intraocular elevada) não aparece em nenhum trecho do texto extraído da fonte, que não menciona glaucoma em nenhum slide.",
+      "na_fonte": null,
+      "sugestao": "Confirmar se a tabela de diferencial do olho vermelho existe como imagem (provavelmente no slide 40, que não traz marcador de imagem). Se não existir, sinalizar o glaucoma agudo como conteúdo complementar declarado."
+    },
+    {
+      "tipo": "fonte_suspeita",
+      "onde": "fonte, slide 25",
+      "gravidade": "baixa",
+      "o_que": "O slide da ceratoconjuntivite papilar gigante traz a anotação 'PAPILAS FINAS', contradizendo o próprio nome do quadro e o slide 24, que descreve papilas gigantes na forma vernal; parece erro de cópia do slide da ceratoconjuntivite atópica.",
+      "na_fonte": "CERATOCONJUNITITE PAPILAR GIGANTE ... PAPILAS FINAS",
+      "sugestao": "Corrigir a anotação na fonte. O quiz e o resumo não replicam o erro (o resumo diz apenas 'papilas na conjuntiva tarsal'), o que está adequado."
+    }
+  ],
+  "veredito": "Material fiel à fonte: doses, incubações, prazos, agentes e classificações conferem com o texto dos slides; os únicos pontos de atenção são uma inconsistência interna sobre o padrão de hiperemia no glaucoma agudo e conteúdos que só podem existir em figuras não extraídas.",
+  "tema": "olho_vermelho",
+  "disciplina": "OFTALMO"
+}

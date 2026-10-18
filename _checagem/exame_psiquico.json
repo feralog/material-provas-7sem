@@ -1,0 +1,15 @@
+{
+  "achados": [
+    {
+      "tipo": "fonte_suspeita",
+      "onde": "quiz Q17 (e fonte, seção 5 — Senso percepção)",
+      "gravidade": "baixa",
+      "o_que": "A fonte classifica a Síndrome de Ekbom como alucinação tátil, mas a descreve como crença ('passo a acreditar que tem múltiplos insetos caminhando sobre o meu corpo'), o que é classicamente descrito como delírio de parasitose; o quiz repete fielmente a classificação da fonte.",
+      "na_fonte": "alucinação tátil (como na Síndrome de Ekbom, que é quando eu passo a acreditar que tem múltiplos insetos caminhando sobre o meu corpo)",
+      "sugestao": "Manter a alternativa como está, por fidelidade à aula, mas vale conferir com o professor: se a prova seguir a literatura clássica, Ekbom é delírio (parasitose delirante), não alucinação tátil."
+    }
+  ],
+  "veredito": "Material bastante fiel à fonte: o quiz reproduz corretamente definições, escalas, classificações e exemplos da aula, e o resumo não diverge dele; o único ponto que merece conferência é a classificação da Síndrome de Ekbom, herdada da própria fonte.",
+  "tema": "exame_psiquico",
+  "disciplina": "Psiquiatria"
+}

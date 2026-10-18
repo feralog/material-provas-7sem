@@ -1,0 +1,31 @@
+{
+  "achados": [
+    {
+      "tipo": "fora_da_fonte",
+      "onde": "quiz Q25 a Q31 e resumo (seções 'Contracepção na adolescência' e 'Vacinação')",
+      "gravidade": "média",
+      "o_que": "Doses, esquemas, mecanismos e comparação de métodos (LARC como primeira linha, levonorgestrel 1,5 mg até 5 dias, DIU de cobre como CE mais eficaz, injetável trimestral e massa óssea, dupla proteção, esquema de HPV em dose única 9–14 anos) não constam do texto da fonte",
+      "na_fonte": "\"Contracepção (inclui emergência quando indicado)\" e \"Vacinas (HPV/Hep B)\" — não há no texto nenhum esquema, dose ou comparação de métodos",
+      "sugestao": "Sinalizar esse bloco como conteúdo complementar (a fonte só sustenta a existência da contracepção, inclusive de emergência, e das vacinas de HPV/Hep B) ou reduzi-lo ao que a fonte declara"
+    },
+    {
+      "tipo": "fora_da_fonte",
+      "onde": "quiz Q37 e resumo (seção 'Dever legal')",
+      "gravidade": "baixa",
+      "o_que": "A obrigação de comunicar o Conselho Tutelar e de notificar compulsoriamente à vigilância epidemiológica não aparece no texto; a fonte fala apenas em acionar a rede/fluxo de proteção",
+      "na_fonte": "\"Acionar a rede de proteção conforme fluxo local\" / \"Acionar rede/fluxo\"",
+      "sugestao": "Manter a conduta, mas ancorá-la na formulação genérica da fonte ou marcá-la como acréscimo ao material"
+    },
+    {
+      "tipo": "erro_factual",
+      "onde": "resumo — tabela de confidencialidade, linha 'Necessidade de internação hospitalar'",
+      "gravidade": "baixa",
+      "o_que": "A tabela classifica a internação como 'sigilo mantido, autorização necessária', mas a fonte condiciona a internação à autorização do responsável legal, o que implica necessariamente contato com a família",
+      "na_fonte": "\"Em casos de internação hospitalar, será necessária a autorização de pai-mãe-responsável legal, o que não impedirá qualquer conduta de emergência.\"",
+      "sugestao": "Reescrever a linha: a internação exige autorização do responsável (a família é necessariamente envolvida), preservando-se o sigilo sobre o conteúdo da consulta na medida do possível"
+    }
+  ],
+  "veredito": "O material é fiel à fonte nos eixos centrais (pilares da consulta, sigilo e suas exceções, HEADSSS/5 Ps, prevenção combinada, DIP, PrEP/PEP, violência e gestação); o que destoa é o bloco de contracepção detalhada e o detalhamento legal, que vão além do texto extraído e deveriam ser declarados como complementares.",
+  "tema": "saude_sexual_do_adolescente",
+  "disciplina": "PED"
+}

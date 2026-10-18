@@ -1,0 +1,23 @@
+{
+  "achados": [
+    {
+      "tipo": "fora_da_fonte",
+      "onde": "quiz Q40 a Q44 (e, no resumo, a seção \"Corpos de Lewy em detalhe\" e a tabela de cronologia)",
+      "gravidade": "baixa",
+      "o_que": "Bloco inteiro de critérios da demência com corpos de Lewy que o capítulo não traz: diagnóstico definitivo só por tecido cerebral com inclusões de alfa-sinucleína (possível/provável em vida), memória normal no início com rendimento visuoespacial como domínio mais informativo, alucinações bem formadas contrapostas aos \"vultos\" do Alzheimer, regra do intervalo de um ano entre cognição e parkinsonismo, parkinsonismo-plus com lentidão sobre tremor e resposta apenas parcial à levodopa.",
+      "na_fonte": "\"Na demência com inclusão dos corpos de Lewy ocorrem flutuações dos déficits cognitivos, por vezes chegando a verdadeiros quadros de delirium, além de parkinsonismo (usualmente, síndromes rígido-acinéticas de distribuição simétrica) e alucinações visuais. Os pacientes apresentam sensibilidade exagerada aos efeitos extrapiramidais dos neurolépticos... a resposta terapêutica a drogas inibidoras da acetilcolinesterase tem-se mostrado eficaz\"",
+      "sugestao": "O conteúdo é clinicamente correto, mas não é sustentado pela fonte e não corresponde a nenhuma figura do capítulo (as imagens são tabelas de prevalência/exames/drogas, o fluxograma de classificação e as neuroimagens). Ou reduzir essas cinco questões ao que o texto afirma (flutuação, parkinsonismo simétrico, alucinações visuais, hipersensibilidade a neurolépticos, resposta aos anticolinesterásicos), ou declarar explicitamente que o material foi ampliado além da fonte."
+    },
+    {
+      "tipo": "fora_da_fonte",
+      "onde": "resumo, seção \"Demência vascular\"",
+      "gravidade": "baixa",
+      "o_que": "O resumo afirma que a demência vascular é \"a única forma passível de prevenção primária e secundária\"; a fonte diz apenas que ela é uma forma passível de prevenção, sem excluir outras.",
+      "na_fonte": "\"Por ser condição secundária a acometimento cerebrovascular, a DV é forma de demência passível de prevenção, primária e secundária.\"",
+      "sugestao": "Retirar o \"única\" e escrever \"é forma de demência passível de prevenção primária e secundária\"."
+    }
+  ],
+  "veredito": "Material globalmente fiel ao texto da fonte no conceito, epidemiologia, rastreio, classificação, subtipos e tratamento; o desvio relevante é a ampliação sobre demência com corpos de Lewy (cinco questões e uma seção do resumo), clinicamente correta mas não verificável no capítulo.",
+  "tema": "alzheimer_e_demencias",
+  "disciplina": "Neurologia"
+}

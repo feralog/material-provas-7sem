@@ -1,0 +1,39 @@
+{
+  "achados": [
+    {
+      "tipo": "fonte_suspeita",
+      "onde": "fonte pg46 × quiz Q12 e Q13 × resumo (tabela de metas)",
+      "gravidade": "baixa",
+      "o_que": "A própria fonte traz três conjuntos distintos de metas glicêmicas (pg46: antes 70-90 e 1 h após 70-120; pg61: jejum <95, 1 h <140, 2 h <120; pg64: 70-95 e 90-140), e quiz e resumo usam dois deles sem deixar claro o contexto de cada um.",
+      "na_fonte": "\"Antes: 70 - 90\" / \"1 hora após: 70 - 120\" (pg46); \"METAS: PRE-REFEIÇÕES 70-95 MG/DL E 1H APÓS 90-140 MG/DL\" (pg64); \"meta glicêmica jejum < 95, 1hpp<140 ou 2hpp<120\" (pg61)",
+      "sugestao": "Explicitar em cada questão e no resumo qual conjunto corresponde ao ambulatório, qual à automonitorização e qual ao intraparto, ou padronizar um único conjunto."
+    },
+    {
+      "tipo": "possivelmente_na_imagem",
+      "onde": "quiz Q28",
+      "gravidade": "baixa",
+      "o_que": "O perfil de ação da insulina asparte (início 5-15 min, pico 0,5-2 h, duração 3-5 h) e os tempos da regular e da NPH não aparecem no texto extraído; vêm de tabela.",
+      "na_fonte": "\"Tipos de insulina e principal efeito sobre o controle glicêmico\" (pg50)",
+      "sugestao": "Confirmar os valores na figura da pg50 antes de publicar."
+    },
+    {
+      "tipo": "possivelmente_na_imagem",
+      "onde": "quiz Q25 e resumo (malformações)",
+      "gravidade": "baixa",
+      "o_que": "Síndrome de regressão caudal como marcadora, anencefalia e transposição das grandes artérias não constam do texto extraído.",
+      "na_fonte": "\"Malformações fetais associadas ao Diabetes / Incidência 3 vezes maior do que na população geral / Fator etiológico responsável : mau controle glicêmico entre 6-8 semanas\" (pg32)",
+      "sugestao": "Conferir a lista de malformações na figura da pg32."
+    },
+    {
+      "tipo": "possivelmente_na_imagem",
+      "onde": "quiz Q35 e resumo (tabela de reclassificação pós-parto)",
+      "gravidade": "baixa",
+      "o_que": "Os cortes usados para classificar o TOTG pós-parto (jejum 100-125 com 2 h <140 = glicemia de jejum alterada; 2 h 140-199 = intolerância) não estão no texto extraído.",
+      "na_fonte": "\"Repetir GTTO 75g 6-12 sem após o parto. Se GTTO normal – seguimento com retestagem glicêmica em 1-3 anos... Se alterado – tratamento/acompanhamento endocrinológico\" (pg62)",
+      "sugestao": "Confirmar os cortes nos fluxogramas das páginas 29 e 30."
+    }
+  ],
+  "veredito": "Material fiel ao texto da fonte, sem erros factuais relevantes; as ressalvas são conteúdos provavelmente sustentados pelas figuras e a coexistência de metas glicêmicas diferentes dentro da própria fonte.",
+  "tema": "diabetes_mellitus_gestacional",
+  "disciplina": "GO"
+}

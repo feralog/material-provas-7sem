@@ -71,7 +71,7 @@ São o mesmo processo em fases distintas: **otospongiose** designa a fase ativa 
 - **Herança autossômica dominante**, com penetrância e expressão variáveis.
 - **Mulheres** são mais acometidas, na proporção aproximada de 2:1, pela influência hormonal.
 - Início dos sintomas entre **20 e 30–40 anos** — não é doença de idoso.
-- **Bilateral em 70 a 85%** dos casos, geralmente iniciando por um lado.
+- **Bilateral em 70 a 85%** dos casos, e geralmente simétrica.
 - Cerca de 9% evoluem para perda neurossensorial profunda.
 
 O quadro é de **perda auditiva progressiva, lenta e gradual**, com sensação de plenitude auricular ("ouvido tapado") e **zumbido**. Vertigem aparece só em casos avançados. A história clássica é a de uma mulher jovem que percebe a perda durante a gestação e relata mãe e avó com perda auditiva precoce — **gravidez e contraceptivo oral pioram** o quadro. Outro achado sugestivo é a **paracusia de Willis**: o paciente ouve melhor a fala em ambiente ruidoso, porque o interlocutor eleva a voz e o ruído de fundo já vinha atenuado pela perda condutiva.

@@ -1,0 +1,31 @@
+{
+  "achados": [
+    {
+      "tipo": "divergencia",
+      "onde": "resumo — tabela da abertura (linha 'Otite média com efusão')",
+      "gravidade": "baixa",
+      "o_que": "A tabela resume a conduta como 'Observar 3 meses, depois tubo', como se o tubo fosse automático após 3 meses, enquanto o quiz (Q24) e o próprio texto do resumo condicionam a cirurgia a critérios",
+      "na_fonte": "OME ≥ 3 meses → Realizar avaliação auditiva, caso ainda não realizada. Considerar tratamento cirúrgico se: OME bilateral + perda auditiva; Sintomas atribuíveis à OME; Retração/atelectasia da MT; OMA recorrente: se houver efusão na avaliação entre episódios",
+      "sugestao": "Trocar a célula por 'Observar 3 meses; cirurgia se critérios' para não sugerir tubo indiscriminado"
+    },
+    {
+      "tipo": "possivelmente_na_imagem",
+      "onde": "quiz Q36",
+      "gravidade": "baixa",
+      "o_que": "O sinal descrito (pavilhão deslocado para frente e para fora, apagamento do sulco retroauricular) e a conduta afirmada (antibiótico endovenoso e avaliação cirúrgica imediata) não aparecem no texto extraído; a página traz apenas a palavra 'Mastoidite' ao lado de uma imagem",
+      "na_fonte": "Mastoidite\n2021\n<!-- IMG:pg58 -->",
+      "sugestao": "Conferir a figura pg58; se o sinal clínico e a conduta não estiverem nela, remover a explicação ou ancorar em outra referência"
+    },
+    {
+      "tipo": "possivelmente_na_imagem",
+      "onde": "resumo — seção 'Orelha externa: aguda, crônica e maligna'",
+      "gravidade": "baixa",
+      "o_que": "A menção a 'tecido de granulação no conduto' no quadro de otite externa maligna não consta do texto extraído",
+      "na_fonte": "Otalgia intensa / Otorréia purulenta / Obstrução do MAE / Paralisia dos pares cranianos? / TC orelhas: Osteomielite",
+      "sugestao": "Confirmar nas imagens de pg10/pg11 ou retirar o detalhe"
+    }
+  ],
+  "veredito": "Material muito fiel à fonte: doses, cortes temporais e critérios de antibiótico versus observação conferem integralmente; só há ajustes menores de compressão na tabela do resumo e de conteúdo provavelmente existente nas figuras.",
+  "tema": "otites",
+  "disciplina": "Otorrino"
+}

@@ -1,0 +1,31 @@
+{
+  "achados": [
+    {
+      "tipo": "possivelmente_na_imagem",
+      "onde": "quiz Q5 e Q6; resumo, seção \"Os três Ds\"",
+      "gravidade": "baixa",
+      "o_que": "o perfil clínico do delirium (início agudo, curso flutuante, desatenção cardinal, alteração do nível de consciência) e o padrão da depressão (\"queixa desproporcional ao déficit\", responder \"não sei\") não estão no texto extraído; a fonte só cita delirium como critério de exclusão e como item a revisar",
+      "na_fonte": "Este declínio não pode ser explicado por delirium ou transtorno psiquiátrico maior.",
+      "sugestao": "confirmar esses pontos contra a figura da página correspondente (provável slide de diferencial entre os três quadros); se não houver figura com esse conteúdo, reduzir as explicações ao que a fonte sustenta"
+    },
+    {
+      "tipo": "possivelmente_na_imagem",
+      "onde": "quiz Q27 e Q28; resumo, seção \"O protocolo do Ministério da Saúde\"",
+      "gravidade": "baixa",
+      "o_que": "critérios de inclusão do PCDT (início entre 40 e 90 anos, MEEM 8-21 para até 4 anos e 12-24 para 4 anos ou mais, CDR 1 ou 2) e o intervalo de 3 a 4 meses até a primeira reavaliação, com reavaliações a cada 6 meses, não constam do texto — o slide do protocolo é apenas fluxograma em imagem",
+      "na_fonte": "Fluxograma de tratamento da DA do Protocolo Clínico e Diretrizes Terapêuticas do Ministério da Saúde",
+      "sugestao": "manter, desde que os números tenham sido conferidos no fluxograma; caso contrário, retirar MEEM/CDR e prazos das alternativas e da explicação"
+    },
+    {
+      "tipo": "possivelmente_na_imagem",
+      "onde": "quiz Q33, Q34 e Q35; resumo, seções \"Comportamento, cuidador e prevenção\"",
+      "gravidade": "baixa",
+      "o_que": "a lista de BPSD que não respondem à medicação, o dado de até 50% de depressão entre cuidadores e a fração de 40% da prevalência atribuída a fatores modificáveis (com os pesos de 8% para perda auditiva e 7% para baixa escolaridade) não aparecem no texto extraído",
+      "na_fonte": "Sobrecarga do cuidador / Como prevenir? 2 cópias do alelo E4 da ApoE >> risco 8-10x maior de DA",
+      "sugestao": "confirmar os números nas figuras das páginas 44, 45 e 60; se a figura não trouxer o valor exato, substituir por alternativa qualitativa"
+    }
+  ],
+  "veredito": "Material globalmente fiel à fonte: doses, cortes do MoCA, prevalências, escala de Scheltens, critérios de demência/CCL/DCS e o manejo das demências não Alzheimer reproduzem o texto sem contradição; o que não é verificável vem quase todo de slides que existem apenas como figura.",
+  "tema": "demencia",
+  "disciplina": "Geriatria"
+}

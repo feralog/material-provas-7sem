@@ -1,0 +1,39 @@
+{
+  "achados": [
+    {
+      "tipo": "divergencia",
+      "onde": "resumo — abertura da seção Otospongiose e otosclerose",
+      "gravidade": "media",
+      "o_que": "O resumo separa os termos: otospongiose seria a fase inicial e otosclerose, a fase tardia compactada. O quiz (Q7) e a fonte tratam otosclerose como o nome da própria osteodistrofia em que o osso denso vira esponjoso.",
+      "na_fonte": "Otosclerose : doença focal primária da cápsula labiríntica (osteodistrofia) onde o osso denso (endocondral) é substituído por osso esponjoso",
+      "sugestao": "Apresentar otospongiose e otosclerose como sinônimos da doença e reservar 'espongiótica' e 'esclerótica' para as fases histológicas."
+    },
+    {
+      "tipo": "erro_factual",
+      "onde": "resumo — epidemiologia da otosclerose",
+      "gravidade": "media",
+      "o_que": "Afirma que a otosclerose é bilateral em 70-85% 'geralmente iniciando por um lado', quando a fonte diz que geralmente é simétrica.",
+      "na_fonte": "Bilateral em 70 a 85% dos casos • Geralmente é simétrica",
+      "sugestao": "Trocar por 'geralmente simétrica', como está na fonte e no restante do material."
+    },
+    {
+      "tipo": "fora_da_fonte",
+      "onde": "quiz Q26 (explicação) e resumo — sífilis congênita",
+      "gravidade": "baixa",
+      "o_que": "As idades de 5, 10 ou 12 anos para as manifestações tardias da sífilis congênita não constam da fonte, e a página correspondente não tem imagem associada.",
+      "na_fonte": "Sífilis congênita: • Tratamento: pelo menos até 30 dias antes do nascimento • Manifestações tardias",
+      "sugestao": "Remover as idades ou apresentá-las explicitamente como dado externo à aula."
+    },
+    {
+      "tipo": "possivelmente_na_imagem",
+      "onde": "quiz Q16",
+      "gravidade": "baixa",
+      "o_que": "A paracusia de Willis não aparece no texto extraído; é achado que caberia na figura do quadro clínico da otosclerose, que não é visível para o revisor.",
+      "na_fonte": null,
+      "sugestao": "Confirmar o fenômeno na imagem pg14; se não estiver lá, sinalizar como complemento externo à fonte."
+    }
+  ],
+  "veredito": "O quiz é bastante fiel à fonte e não apresenta erro que leve a conduta equivocada; os ajustes necessários concentram-se no resumo, na simetria da otosclerose e na nomenclatura otospongiose/otosclerose.",
+  "tema": "disacusias",
+  "disciplina": "Otorrino"
+}

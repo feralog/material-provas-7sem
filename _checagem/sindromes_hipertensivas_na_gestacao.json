@@ -1,0 +1,31 @@
+{
+  "achados": [
+    {
+      "tipo": "erro_factual",
+      "onde": "quiz Q24",
+      "gravidade": "media",
+      "o_que": "A alternativa correta afirma que o parto nunca é adiado pela corticoterapia, mas a fonte admite excepcionalmente retardar o parto em 48 h em paciente estável entre 23 e 34 semanas.",
+      "na_fonte": "Excepcionalmente retardar o parto em 48h, para corticoterapia antenatal, entre 23-34 semanas, em pacientes estáveis, pode ser recomendado",
+      "sugestao": "Reescrever a alternativa para refletir a exceção: a corticoterapia não posterga o parto em situação materna grave, mas pode adiar 48 h se a paciente estiver estável entre 23 e 34 semanas."
+    },
+    {
+      "tipo": "erro_factual",
+      "onde": "quiz Q7",
+      "gravidade": "baixa",
+      "o_que": "A alternativa correta diz 'cerca de 25%', enquanto a fonte diz 'até 25%', que é um limite superior e não uma estimativa central.",
+      "na_fonte": "até 25% dessas gestantes apresentarão sinais e/ou sintomas relacionados à pré-eclâmpsia",
+      "sugestao": "Trocar 'Cerca de 25%' por 'Até 25%'."
+    },
+    {
+      "tipo": "fonte_suspeita",
+      "onde": "fonte, páginas 35 e 89",
+      "gravidade": "media",
+      "o_que": "A fonte diverge sobre o critério de proteinúria por fita: em uma página exige 2+ e em outra aceita 1+ em amostra isolada; o resumo adota 2+ sem sinalizar a divergência.",
+      "na_fonte": "\"fita ≥ 2+ (se indisponível)\" (pg35) e \"≥ 1+ em amostra isolada\" (pg89)",
+      "sugestao": "Padronizar o critério na fonte e, no resumo, registrar a divergência ou indicar qual página prevalece."
+    }
+  ],
+  "veredito": "O material é majoritariamente fiel à fonte, mas o quiz tem uma contradição relevante sobre corticoterapia no HELLP e uma imprecisão numérica; a fonte ainda apresenta divergência interna no corte da fita de proteinúria.",
+  "tema": "sindromes_hipertensivas_na_gestacao",
+  "disciplina": "GO"
+}

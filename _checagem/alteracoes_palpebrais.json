@@ -1,0 +1,31 @@
+{
+  "achados": [
+    {
+      "tipo": "possivelmente_na_imagem",
+      "onde": "quiz Q4, Q5 e resumo (tabela de lamelas e de músculos)",
+      "gravidade": "baixa",
+      "o_que": "A divisão da pálpebra em lamela anterior (pele + orbicular) e posterior (tarso + conjuntiva tarsal) e o músculo de Müller (2 mm, inervação simpática) não aparecem no texto extraído; só podem vir dos esquemas dos slides 2 e 3.",
+      "na_fonte": null,
+      "sugestao": "Confirmar nas figuras s02i1/s02i2 e s03i1/s03i2 se lamela e Müller estão realmente representados; se não estiverem, suavizar a cobrança desses itens ou marcá-los como complemento."
+    },
+    {
+      "tipo": "possivelmente_na_imagem",
+      "onde": "quiz Q16 e resumo (ptose)",
+      "gravidade": "baixa",
+      "o_que": "A medida objetiva da ptose pela distância margem-reflexo (normal 4 a 5 mm) e a excursão do levantador não constam do texto extraído.",
+      "na_fonte": null,
+      "sugestao": "Verificar se a figura do slide 18 traz a técnica de medida; caso contrário, manter como complemento declarado."
+    },
+    {
+      "tipo": "fora_da_fonte",
+      "onde": "resumo — tumores benignos (verruga vulgar e xantelasma)",
+      "gravidade": "baixa",
+      "o_que": "O resumo atribui origem viral (HPV) à verruga vulgar e associação com dislipidemia ao xantelasma; a fonte apenas lista os diagnósticos, sem etiologia nem correlação sistêmica.",
+      "na_fonte": "Verruga vulgar / XANTELASMA",
+      "sugestao": "Manter as associações, mas apresentá-las como acréscimo didático, não como conteúdo da aula."
+    }
+  ],
+  "veredito": "Material globally fiel à fonte: não há contradição factual, número ou classificação divergente entre quiz, resumo e slides; os pontos apontados são conteúdo provavelmente contido nas figuras ou pequenas expansões didáticas de baixo risco.",
+  "tema": "alteracoes_palpebrais",
+  "disciplina": "OFTALMO"
+}

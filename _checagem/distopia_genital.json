@@ -1,0 +1,15 @@
+{
+  "achados": [
+    {
+      "tipo": "divergencia",
+      "onde": "quiz Q10",
+      "gravidade": "media",
+      "o_que": "A alternativa correta coloca as fáscias junto aos ligamentos como os \"cabos sob tensão\" (suspensão), enquanto a fonte e o próprio resumo classificam a fáscia endopélvica no aparelho de SUSTENTAÇÃO, junto ao elevador do ânus; só os ligamentos compõem a suspensão.",
+      "na_fonte": "Aparelho de sustentação - Músculo elevador do ânus - Fáscia endopélvica / Aparelho de suspensão - Ligamentos (slide 24). No resumo: \"Sustentação — os pilares ... A esse conjunto soma-se a fáscia endopélvica\" e \"Suspensão — os cabos: Os ligamentos...\"",
+      "sugestao": "Conferir a figura s22i1; se a analogia da figura não puser a fáscia entre os cabos, trocar a alternativa correta para \"Os ligamentos pélvicos\" (deixando a fáscia como distratora do lado da musculatura) e manter quiz e resumo com a mesma classificação."
+    }
+  ],
+  "veredito": "Material no geral fiel à fonte, com números, doses, cortes e classificações convergentes entre quiz e resumo; o único reparo relevante é a inclusão da fáscia endopélvica entre os \"cabos\" da suspensão em uma questão.",
+  "tema": "distopia_genital",
+  "disciplina": "GO"
+}

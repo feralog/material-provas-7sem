@@ -1,0 +1,23 @@
+{
+  "achados": [
+    {
+      "tipo": "fonte_suspeita",
+      "onde": "fonte slide 31 (e quiz Q29, que a reproduz)",
+      "gravidade": "media",
+      "o_que": "A fonte coloca a doença granulomatosa crônica como exemplo de defeito fagocítico cujo achado é neutropenia no hemograma; o quiz repete isso como resposta correta. A DGC é defeito qualitativo da explosão oxidativa, com número de neutrófilos normal — quem estuda por essa frase espera neutropenia em uma doença que não a tem.",
+      "na_fonte": "Defeitos fagocíticos ➜ Neutropenia (ex.: doença granulomatosa crônica, neutropenia).",
+      "sugestao": "Separar as duas entidades: neutropenia como defeito quantitativo e DGC como defeito qualitativo (diagnóstico por DHR/citometria, não por contagem). Se o quiz mantiver a pergunta, restringi-la às neutropenias congênitas."
+    },
+    {
+      "tipo": "possibly_na_imagem",
+      "onde": "resumo — tabela 'Tipo, clínica e exame inicial' (linha Defeitos fagocíticos)",
+      "gravidade": "baixa",
+      "o_que": "O resumo atribui aos defeitos fagocíticos a clínica de 'abscessos, infecções bacterianas e fúngicas'; o texto da fonte só traz 'doença granulomatosa crônica, neutropenia' e 'neutropenia no hemograma'.",
+      "na_fonte": "Defeitos fagocíticos - ex.: doença granulomatosa crônica, neutropenia",
+      "sugestao": "Conferir a figura s07i1; se a descrição clínica não estiver lá, remover a coluna ou limitá-la a 'infecções bacterianas e fúngicas de repetição'."
+    }
+  ],
+  "veredito": "Material fiel e bem alinhado ao texto dos slides, com resumo e quiz consistentes entre si; o único ponto relevante é a reprodução, pelo quiz, de uma associação provavelmente equivocada da própria fonte entre doença granulomatosa crônica e neutropenia.",
+  "tema": "imunidade_parte_2",
+  "disciplina": "PED"
+}

@@ -1,0 +1,23 @@
+{
+  "achados": [
+    {
+      "tipo": "fonte_suspeita",
+      "onde": "quiz Q35 e resumo (seção 'Erros de prescrição que se repetem') — erro herdado da fonte (exercicios_receituario, caso 2)",
+      "gravidade": "média",
+      "o_que": "A troca de levotiroxina de 50 mcg para 150 mcg é descrita como 'erro de dose dez vezes maior', mas 150/50 corresponde a 3 vezes, não a 10. O quiz usa esse número na alternativa correta e o resumo o repete.",
+      "na_fonte": "Erro não intencional de dose (10x maior), com risco de tireotoxicose.",
+      "sugestao": "Corrigir para 'erro de dose três vezes maior' no quiz e no resumo (e, se possível, apontar a inconsistência da fonte, já que 50 mcg e 150 mcg constam do mesmo caso)."
+    },
+    {
+      "tipo": "fonte_suspeita",
+      "onde": "fonte (slide 49, receita-modelo do Cenário 5) em contraste com slide 31 — repercute no quiz Q33",
+      "gravidade": "média",
+      "o_que": "A receita considerada correta no Cenário 5 mantém sinvastatina 40 mg/dia junto ao anlodipino 5 mg, contrariando a regra da própria aula de limitar a sinvastatina a 20 mg/dia nessa associação. O quiz Q33 adota corretamente o limite de 20 mg/dia, mas o aluno que estudar pela receita-modelo pode aprender o oposto.",
+      "na_fonte": "Anlodipino + Sinvastatina — ↑ risco de miopatia — Limitar sinvastatina a 20 mg/dia | Receita do Cenário 5: 'Sinvastatina 40mg _____________ Uso contínuo / Tomar 1 comprimido via oral, 1 vez ao dia, após o jantar.'",
+      "sugestao": "Manter no quiz e no resumo o limite de 20 mg/dia (sustentado pelo slide 31 e pelo caso 10 dos exercícios) e sinalizar que a receita-modelo do slide 49 está inconsistente com a tabela de interações."
+    }
+  ],
+  "veredito": "Material no geral fiel e bem ancorado na fonte, com questões e resumo coerentes entre si; os problemas encontrados são um erro aritmético herdado da fonte ('10x' em vez de 3x na dose de levotiroxina) e uma receita-modelo da aula que contraria a própria regra de interação anlodipino-sinvastatina.",
+  "tema": "prescricao_medica",
+  "disciplina": "Práticas"
+}

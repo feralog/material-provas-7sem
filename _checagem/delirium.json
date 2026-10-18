@@ -1,0 +1,31 @@
+{
+  "achados": [
+    {
+      "tipo": "erro_factual",
+      "onde": "quiz Q12",
+      "gravidade": "media",
+      "o_que": "A alternativa correta chama a ranitidina de anticolinérgica, mas a fonte atribui o risco pró-delirium dos antagonistas H2 ao bloqueio histaminérgico central (H1/H2), mecanismo distinto do anticolinérgico; a explicação repete o erro ao dizer que a ranitidina 'reduz a transmissão colinérgica'.",
+      "na_fonte": "Antagonistas centrais de H1 e H2 têm potencial pró-delirium.",
+      "sugestao": "Trocar o exemplo por um anticolinérgico clássico (a própria difenidramina citada no resumo) ou reescrever a alternativa como 'anticolinérgicos e antagonistas H2', separando os dois mecanismos."
+    },
+    {
+      "tipo": "ambigua",
+      "onde": "quiz Q16",
+      "gravidade": "media",
+      "o_que": "A alternativa B ('início agudo e desatenção, ambos somados a torpor') descreve a combinação 1+2+4, que também fecha o diagnóstico pelo CAM; ela só é 'menos correta' por não enunciar a regra completa. Um aluno que raciocine pelo algoritmo pode escolhê-la com lógica.",
+      "na_fonte": null,
+      "sugestao": "Reformular B para uma combinação realmente insuficiente, por exemplo 'desatenção e torpor, sem início agudo' ou 'início agudo e torpor, sem desatenção'."
+    },
+    {
+      "tipo": "fora_da_fonte",
+      "onde": "resumo, box da seção 'O que é delirium e por que ele importa'",
+      "gravidade": "baixa",
+      "o_que": "O resumo afirma letalidade 'comparável à do infarto agudo do miocárdio e da sepse' — comparação que a fonte não faz em nenhum ponto.",
+      "na_fonte": "Mortalidade 22-76% nos pacientes hospitalizados / Mortalidade após um ano: 35-40%",
+      "sugestao": "Retirar a comparação ou substituí-la pelos números absolutos que a fonte traz."
+    }
+  ],
+  "veredito": "Material no geral fiel à fonte, com boa correspondência de números e critérios; os problemas se limitam a uma classificação farmacológica imprecisa no quiz, uma alternativa do CAM que também estaria tecnicamente correta e uma comparação de letalidade acrescentada pelo resumo.",
+  "tema": "delirium",
+  "disciplina": "Geriatria"
+}

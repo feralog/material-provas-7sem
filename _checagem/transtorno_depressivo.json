@@ -1,0 +1,31 @@
+{
+  "achados": [
+    {
+      "tipo": "erro_factual",
+      "onde": "quiz Q2 (e resumo, seção \"Critérios do episódio depressivo maior\")",
+      "gravidade": "baixa",
+      "o_que": "O gabarito diz que \"pelo menos um\" dos dois sintomas cardinais precisa estar presente; a fonte afirma que os dois primeiros são obrigatórios.",
+      "na_fonte": "Cinco ou mais dos seguintes sintomas durante um mesmo período de 2 semanas (sendo os 2 primeiros obrigatórios): Humor deprimido na maior parte do dia... Perda do interesse ou prazer por todas ou quase todas as atividades",
+      "sugestao": "Alinhar a explicação de Q2 e a frase do resumo ao texto da fonte (\"os dois primeiros são obrigatórios\") ou registrar explicitamente que se adota o critério do DSM-5 (basta um dos dois), para que quiz e resumo não contradigam o slide."
+    },
+    {
+      "tipo": "fora_da_fonte",
+      "onde": "quiz Q15 a Q18, Q22, Q23, Q24 e tabela de antidepressivos do resumo",
+      "gravidade": "baixa",
+      "o_que": "Todo o bloco farmacológico (ISRS, IRSN, tricíclicos, IMAO, bupropiona, mirtazapina, latência de 4–8 semanas, esquema de troca/potencialização, indicações de ECT, manutenção por anos) não aparece no texto extraído da aula, que só lista classes de fármacos sem detalhá-las; não há marcador de imagem nos slides correspondentes.",
+      "na_fonte": "Psicofarmacoterapia - Antidepressivos - Estabilizadores do Humor - Benzodiazepínicos - Hormônios tireoideanos - Neurolépticos (?)",
+      "sugestao": "Manter o conteúdo (é clinicamente correto), mas sinalizar na introdução do quiz/resumo que esse trecho foi complementado com diretrizes externas, ou conferir se essas informações constam de slides/figuras não capturados."
+    },
+    {
+      "tipo": "possivelmente_na_imagem",
+      "onde": "quiz Q5 a Q10, Q13 e Q28; resumo, seção \"Formas clínicas e especificadores\"",
+      "gravidade": "baixa",
+      "o_que": "Critérios de transtorno depressivo persistente (dois anos), características melancólicas, atípicas, psicóticas, padrão sazonal, blues puerperal e sinais de bipolaridade não constam do texto extraído; os slides 6, 7, 8, 40 e 49 não têm marcador de imagem, então não é possível confirmar a origem.",
+      "na_fonte": "Possíveis Apresentações - Psicótica X neurótica - Endógena X Reativa - Primária X Secundária - Maior X Distimia - Unipolar X Bipolar",
+      "sugestao": "Confirmar esses trechos contra os slides originais; se vieram de fora da aula, declarar a fonte complementar."
+    }
+  ],
+  "veredito": "Material globalmente fiel à fonte no que ela traz em texto (prevalência, números de impacto, exame psíquico, fases do tratamento, kindling, trauma, suicídio); os pontos a ajustar são a divergência sobre os dois sintomas cardinais e o grande bloco farmacológico e de especificadores que a fonte textual não sustenta.",
+  "tema": "transtorno_depressivo",
+  "disciplina": "Psiquiatria"
+}

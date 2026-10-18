@@ -1,0 +1,23 @@
+{
+  "achados": [
+    {
+      "tipo": "divergencia",
+      "onde": "quiz Q6 (explicação) x resumo (seção Gell e Coombs)",
+      "gravidade": "baixa",
+      "o_que": "O quiz diz que o intervalo da hipersensibilidade tipo III é de 'dias a uma semana'; o resumo diz 'dias a semanas', com a doença do soro em 'cerca de 1 a 3 semanas'. São faixas diferentes para o mesmo quadro.",
+      "na_fonte": "Slide 5: 'III | Ag-Ac (IC) → Ativação do complemento e recruta células inflamatórias | Doença do soro...' (a fonte não define o intervalo)",
+      "sugestao": "Unificar a faixa nos dois materiais (por exemplo, 'dias a poucas semanas, tipicamente 1 a 2 semanas para a doença do soro') e usar o mesmo texto na explicação do quiz e na tabela do resumo."
+    },
+    {
+      "tipo": "divergencia",
+      "onde": "quiz Q36 (alternativa sobre repetição) x resumo (bloco de conduta na anafilaxia)",
+      "gravidade": "baixa",
+      "o_que": "O quiz apresenta a repetição da adrenalina 'em cinco minutos' como conduta adequada; o resumo orienta repetir 'a cada 5 a 15 minutos'. O aluno lê duas regras de repetição diferentes.",
+      "na_fonte": null,
+      "sugestao": "Padronizar a redação do intervalo (por exemplo, 'repetir a cada 5 minutos, podendo espaçar até 15 minutos enquanto houver resposta insuficiente') nos dois materiais."
+    }
+  ],
+  "veredito": "Material globalmente fiel à fonte: os tipos de Gell e Coombs, os subtipos IIa/IIb e IVa-IVd, os números de atopia e da marcha atópica, os fatores de risco/proteção e o diferencial das dermatites batem com o texto; os problemas encontrados são pequenas divergências de intervalo entre quiz e resumo, sem erro que leve a conduta errada.",
+  "tema": "alergia_e_atopia",
+  "disciplina": "PED"
+}

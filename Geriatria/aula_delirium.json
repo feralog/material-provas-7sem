@@ -132,13 +132,13 @@
     {
       "question": "Qual classe de fármacos mais se associa à precipitação de delirium no idoso?",
       "options": [
-        "Anticolinérgicos, como a amitriptilina e a ranitidina",
+        "Anticolinérgicos, como a amitriptilina e a difenidramina",
         "Betabloqueadores, como o metoprolol e o atenolol",
         "Estatinas, como a atorvastatina e a sinvastatina",
-        "Antiagregantes, como o AAS e o clopidogrel"
+        "Antiagregantes plaquetários, como AAS e clopidogrel"
       ],
       "correctIndex": 0,
-      "explanation": "A carga anticolinérgica é o mecanismo farmacológico central: antidepressivos tricíclicos como a amitriptilina e antagonistas H2 como a ranitidina reduzem a transmissão colinérgica, exatamente a via ligada a estimulação, atenção e memória. Rever a prescrição é parte do diagnóstico."
+      "explanation": "A carga anticolinérgica é o mecanismo farmacológico central: tricíclicos como a amitriptilina e anti-histamínicos de primeira geração como a difenidramina bloqueiam a transmissão colinérgica, exatamente a via ligada a atenção e memória. Os antagonistas H2 também são pró-delirium, mas por bloqueio histaminérgico central, mecanismo distinto. Rever a prescrição é parte do diagnóstico."
     },
     {
       "question": "Qual desequilíbrio de neurotransmissores constitui o eixo central da fisiopatologia do delirium?",

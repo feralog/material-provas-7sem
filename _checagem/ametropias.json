@@ -1,0 +1,47 @@
+{
+  "achados": [
+    {
+      "tipo": "fonte_suspeita",
+      "onde": "fonte, slide 19 (Astigmatismo — a favor da regra)",
+      "gravidade": "baixa",
+      "o_que": "O texto diz que, no astigmatismo a favor da regra, o eixo negativo fica a 180° 'ou próximo de 30°', o que se contradiz com a própria definição seguinte e com o padrão real (eixo próximo de 180°).",
+      "na_fonte": "A Favor da Regra - Quando o eixo negativo está a 180° ou próximo de 30°. Quando a curva vertical da córnea é mais acentuada do que a horizontal.",
+      "sugestao": "Tratar o '30°' como erro de digitação (o correto é próximo de 180°). Quiz e resumo já adotaram 180°, então nada precisa mudar neles; só vale não memorizar o '30°'."
+    },
+    {
+      "tipo": "fonte_suspeita",
+      "onde": "fonte, slide 2 (Óptica e o olho) x quiz Q5",
+      "gravidade": "baixa",
+      "o_que": "A fonte atribui as 40 dioptrias ao humor aquoso e descreve a córnea apenas como quem 'molda o humor aquoso'; o quiz atribui as 40 dioptrias à córnea. A leitura do quiz é a fisiologicamente correta, mas não é literalmente o que o slide escreve.",
+      "na_fonte": "Córnea: molda o humor aquoso / Humor Aquoso => 40di / Cristalino : índice de refração variável => 19di",
+      "sugestao": "Manter o quiz como está (a explicação já diz 'a córnea, com o humor aquoso que a acompanha'), mas registrar que o slide isola mal o valor; o texto extraído parece ter perdido a linha de ligação entre córnea e 40 di."
+    },
+    {
+      "tipo": "divergencia",
+      "onde": "resumo, seção 'As quatro ametropias lado a lado' x quiz Q2",
+      "gravidade": "baixa",
+      "o_que": "O resumo define ametropia como abrangendo apenas miopia, hipermetropia e astigmatismo (e diz que a presbiopia não é erro do comprimento do olho), mas depois intitula a tabela comparativa 'As quatro ametropias' incluindo a presbiopia — o quiz segue a definição de três.",
+      "na_fonte": "Ametropia: os raios de luz paralelos não chegam focados na retina. / ERROS DE REFRAÇÃO - Hipermetropia - Miopia - Astigmatismo - Presbiopia",
+      "sugestao": "Uniformizar: ou trocar o título da tabela para 'Os quatro erros de refração', ou acrescentar uma nota de que a presbiopia entra no rol didático da aula embora não seja ametropia no sentido estrito."
+    },
+    {
+      "tipo": "possivelmente_na_imagem",
+      "onde": "quiz Q12 (cicloplegia)",
+      "gravidade": "baixa",
+      "o_que": "Os fármacos ciclopentolato e tropicamida não aparecem em nenhum ponto do texto extraído; só o termo 'após dilatação' aparece, no exemplo do slide 11.",
+      "na_fonte": "Após dilatação: refração com +5,00 DE",
+      "sugestao": "Nenhuma mudança necessária se os nomes constarem de figura do slide 11; caso contrário, manter por ser conteúdo de rotina, mas ciente de que é expansão além do texto."
+    },
+    {
+      "tipo": "possivelmente_na_imagem",
+      "onde": "quiz Q25 e resumo (leitura da receita)",
+      "gravidade": "baixa",
+      "o_que": "O conceito de 'adição' (valor positivo somado ao grau de longe) e a categoria 'astigmatismo oblíquo' não estão no texto extraído: o slide 24 só lista DE, DC e os sinais, e o slide 18 lista apenas regular/irregular, simétrico/assimétrico e a favor/contra a regra.",
+      "na_fonte": "Receita: Dioptrias Esféricas (DE) / Dioptrias Cilíndricas (DC) / Miopia : - / Hipermetropia: + / Astigmatismo: - ou +  ||  Regular ou irregular / Simétrico ou assimétrico / A favor da regra ou contra a regra",
+      "sugestao": "Presumivelmente vêm das figuras s24i1 e s18i1/s18i2; se não vierem, marcar como acréscimo declarado do material, sem prejuízo ao estudo."
+    }
+  ],
+  "veredito": "Material fiel e bem alinhado à fonte: os erros de maior gravidade estão ausentes, restando um provável erro de digitação na própria fonte (eixo 'próximo de 30°'), uma atribuição imprecisa das 40 dioptrias no slide 2 e pequenos acréscimos que só podem vir das figuras.",
+  "tema": "ametropias",
+  "disciplina": "OFTALMO"
+}

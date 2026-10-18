@@ -1,0 +1,31 @@
+{
+  "achados": [
+    {
+      "tipo": "fonte_suspeita",
+      "onde": "fonte, slide 22 vs. slides 32 e 38 (e resumo, 1º parágrafo)",
+      "gravidade": "baixa",
+      "o_que": "A fonte cita o rol de transtornos como 'CID-10 e DSM-V', mas usa códigos da CID-11 (6B81, 6B8Y/6B82) nas páginas seguintes; o resumo adotou 'DSM-5 e CID-11' sem sinalizar a troca.",
+      "na_fonte": "\"CID – 10 e DSM-V: Anorexia Nervosa (AN), Bulimia Nervosa (BN), Transtorno de Compulsão Alimentar Periódica\" / \"CID 11 Bulimia nervosa 6B81\" / \"Transtorno da Compulsão Alimentar TCA ou Binge Eating 6B8Y ou 6B82\"",
+      "sugestao": "Padronizar a classificação (CID-11) em todo o material e confirmar com o professor qual versão a prova cobra."
+    },
+    {
+      "tipo": "fonte_suspeita",
+      "onde": "fonte, slide 18 (título vs. bullet) e resumo, seção de neurobiologia",
+      "gravidade": "baixa",
+      "o_que": "O ano da leptina aparece como 1990 no bullet e como 1994 no título do mesmo slide; o resumo fixa 1994 ('clonada em 1994').",
+      "na_fonte": "\"A descoberta do hormônio peptídico e do fator de saciedade Leptina em 1994\" / \"1990, Jeffrey Friedman e colegas da Universidade Rockefeller clonaram o gene que codifica a leptina\"",
+      "sugestao": "Escolher um único ano e corrigir o bullet do slide (o resumo já está coerente com o título)."
+    },
+    {
+      "tipo": "possivelmente_na_imagem",
+      "onde": "quiz Q12 e Q13",
+      "gravidade": "baixa",
+      "o_que": "'Olanzapina em dose baixa' e 'fluoxetina em doses de até 60 mg por dia' não constam do texto extraído; só o nome dos fármacos aparece.",
+      "na_fonte": "\"Tratamento Psicofarmacoterapia/psicoterapia: ISRS/ Olanzapina\" (slide 29) / \"Tratamento Psicofarmacoterapia/psicoterapia: ISRS - Fluoxetina\" (slide 35)",
+      "sugestao": "Conferir as figuras s29i1 e s31i1-4; se a dose não estiver nelas, retirar o valor numérico ou marcá-lo como acréscimo do autor."
+    }
+  ],
+  "veredito": "Material fiel à fonte, sem erro factual, ambiguidade ou divergência entre quiz e resumo; as únicas ressalvas são duas inconsistências internas da própria fonte (CID-10 vs. CID-11 e 1990 vs. 1994) e detalhes de dose que só podem ser confirmados nas figuras.",
+  "tema": "transtornos_alimentares",
+  "disciplina": "Psiquiatria"
+}

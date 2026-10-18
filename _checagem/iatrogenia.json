@@ -1,0 +1,23 @@
+{
+  "achados": [
+    {
+      "tipo": "ambigua",
+      "onde": "quiz Q20",
+      "gravidade": "media",
+      "o_que": "O distrator \"diabetes de longa data descompensado, ainda sem diagnóstico formal\" é defensável com os próprios dados do caso (HbGlic 11,7), mas a explicação o descarta apenas porque o paciente \"negava diabetes\" — negar não exclui, e a HbA1c elevada confirma diabetes não diagnosticada.",
+      "na_fonte": "HbGlic:11,7 (exames de 3/4/18); \"Negava: Etilismo / DM / Antecedente familiar de hipertrigliceridemia\"",
+      "sugestao": "Reescrever o distrator (por exemplo, \"diabetes já conhecida e em tratamento regular\") ou ajustar a explicação: admitir que a HbGlic 11,7 revela DM não diagnosticada, mas que ela não explica a magnitude de TG 12.468 nem a normalidade do exame do ano anterior."
+    },
+    {
+      "tipo": "divergencia",
+      "onde": "resumo — seção \"Os quatro tipos de iatrogenia\"",
+      "gravidade": "baixa",
+      "o_que": "O resumo afirma que a falha de comunicação é \"a mais comum\" entre os quatro tipos; o quiz (Q11) diz \"uma das causas mais comuns\", e a fonte também não a elege como a mais frequente.",
+      "na_fonte": "\"É uma das causas mais comuns e evitáveis de erros médicos.\" (slide \"Iatrogenia por falha no processo de comunicação\"); no material de origem consta apenas \"É a mais evitável\".",
+      "sugestao": "Trocar \"a mais comum\" por \"uma das mais comuns\", preservando \"a mais evitável\"."
+    }
+  ],
+  "veredito": "Material fiel à fonte e bem construído: as alternativas corretas reproduzem com precisão os números, classificações e casos da aula, sem erro factual relevante; restam apenas dois ajustes finos — um distrator defensável no caso clínico e um superlativo indevido no resumo.",
+  "tema": "iatrogenia",
+  "disciplina": "Geriatria"
+}

@@ -4,7 +4,7 @@ A córnea é a primeira lente do olho e responde pela maior parte do poder refra
 
 A primeira é a **estrutura uniforme**. As lamelas de colágeno do estroma são dispostas em paralelo, com espaçamento regular menor que o comprimento de onda da luz visível, o que faz a luz atravessar sem espalhamento. Qualquer desorganização dessa malha — cicatriz, edema, depósito — transforma a córnea em vidro fosco.
 
-A segunda é a **ausência de vascularização**. A córnea é o maior tecido avascular do corpo, nutrido pelo humor aquoso na face posterior, pelo filme lacrimal na face anterior e pelos vasos do limbo na periferia. Vaso dentro da córnea significa doença: neovascularização por hipóxia crônica de lente de contato, por inflamação ou por infecção prolongada.
+A segunda é a **ausência de vascularização**. A córnea é um tecido avascular, nutrido pelo humor aquoso na face posterior, pelo filme lacrimal na face anterior e pelos vasos do limbo na periferia. Vaso dentro da córnea significa doença: neovascularização por hipóxia crônica de lente de contato, por inflamação ou por infecção prolongada.
 
 A terceira é a **turgescência controlada**, isto é, um estado de semi-desidratação relativa. O estroma é rico em glicosaminoglicanos que puxam água avidamente; se nada se opusesse a isso, ele embeberia e opacificaria. Duas estruturas se opõem: as barreiras do epitélio e do endotélio, que limitam a entrada de líquido, e sobretudo a **bomba de bicarbonato do endotélio**, que retira água ativamente de volta para a câmara anterior.
 

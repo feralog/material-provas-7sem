@@ -1,0 +1,23 @@
+{
+  "achados": [
+    {
+      "tipo": "divergencia",
+      "onde": "quiz Q26",
+      "gravidade": "baixa",
+      "o_que": "A alternativa correta diz que as otocônias se deslocam \"do utrículo\" para os canais semicirculares, enquanto a fonte (e o próprio comentário da questão e o resumo) falam do complexo sáculo-utrículo.",
+      "na_fonte": "Tontura ocasionada pelo deslocamento dos otólitos (otocônias) do complexo sáculo-utrículo para os canais semicirculares",
+      "sugestao": "Trocar \"do utrículo\" por \"do complexo sáculo-utrículo\" na alternativa, alinhando-a ao comentário e ao resumo."
+    },
+    {
+      "tipo": "possivelmente_na_imagem",
+      "onde": "resumo, seção Período crítico",
+      "gravidade": "baixa",
+      "o_que": "O resumo detalha que o bezerro anda em poucas horas e o bebê leva um ano; o texto extraído da pg05 só traz \"Bezerro x bebê: mielinização\", sem esses detalhes.",
+      "na_fonte": "Bezerro x bebê: mielinização",
+      "sugestao": "Conferir a figura da pg05; se o detalhe não estiver lá, suavizar para \"comparação entre bezerro e bebê ilustra o grau de maturação ao nascer\"."
+    }
+  ],
+  "veredito": "Material globalmente fiel à fonte, sem erros factuais relevantes no quiz; as ressalvas são de baixa gravidade (uma imprecisão sobre a origem das otocônias no enunciado e detalhes ilustrativos do resumo não presentes no texto extraído), e a expansão semiológica do resumo final está explicitamente declarada.",
+  "tema": "zumbido_e_tontura",
+  "disciplina": "Otorrino"
+}

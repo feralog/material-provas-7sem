@@ -1,0 +1,23 @@
+{
+  "achados": [
+    {
+      "tipo": "fora_da_fonte",
+      "onde": "resumo — seção Distrofias corneanas, subitem Epiteliais",
+      "gravidade": "baixa",
+      "o_que": "Atribui à distrofia de Cogan o superlativo 'a mais comum' entre as distrofias epiteliais; a fonte lista apenas os nomes, sem qualquer dado de frequência.",
+      "na_fonte": "DISTROFIA DE COGAN (slide 18, sem informação de prevalência)",
+      "sugestao": "Retirar 'a mais comum' ou confirmar a informação em outra referência antes de mantê-la."
+    },
+    {
+      "tipo": "fora_da_fonte",
+      "onde": "resumo — abertura, 'A córnea normal e por que ela é transparente'",
+      "gravidade": "baixa",
+      "o_que": "Afirma que a córnea é 'o maior tecido avascular do corpo', hierarquia de tamanho que a fonte não estabelece.",
+      "na_fonte": "AUSÊNCIA DE VASCULARIZAÇÃO (slide 2)",
+      "sugestao": "Trocar por 'tecido avascular' sem o superlativo de tamanho."
+    }
+  ],
+  "veredito": "Material fiel: quiz e resumo coincidem entre si e com o texto dos slides, sem erros factuais ou ambiguidades relevantes; apenas dois pequenos acréscimos superlativos no resumo que a fonte não sustenta.",
+  "tema": "doencas_da_cornea",
+  "disciplina": "OFTALMO"
+}

@@ -1,0 +1,31 @@
+{
+  "achados": [
+    {
+      "tipo": "ambigua",
+      "onde": "quiz Q5",
+      "gravidade": "baixa",
+      "o_que": "A alternativa correta traz o conjunto completo da forma moderada-grave, mas a opção B ('sono normal, prejuízo das atividades diárias e sintomas incômodos') também preenche dois dos quatro critérios de gravidade — e, se a regra for 'qualquer item presente', ela igualmente classificaria o quadro como moderada-grave.",
+      "na_fonte": "LEVE MODERADA - GRAVE / - Sono alterado / - Comprometimento ativ. / diárias: esporte, lazer, etc. / - Alteração escola e/ou trabalho / - Com sintomas incômodos",
+      "sugestao": "Reescrever o enunciado como 'que conjunto completo de achados define a forma moderada-grave' ou trocar os distratores por inversões de um único item, evitando combinações parcialmente compatíveis."
+    },
+    {
+      "tipo": "possivelmente_na_imagem",
+      "onde": "resumo — Rinossinusites: anatomia",
+      "gravidade": "baixa",
+      "o_que": "O resumo afirma que os óstios desembocam 'em sua maioria, no meato médio, na região do processo uncinado e do hiato semilunar'; esse detalhe anatômico não aparece no texto extraído, apenas na figura da página.",
+      "na_fonte": "Nariz e seios paranasais / Corte coronal Corte sagital <!-- IMG:pg27 -->",
+      "sugestao": "Manter, se a figura pg27 realmente rotular o complexo ostiomeatal; caso contrário, retirar o detalhe."
+    },
+    {
+      "tipo": "fora_da_fonte",
+      "onde": "resumo — Tratamento",
+      "gravidade": "baixa",
+      "o_que": "O resumo hierarquiza o tratamento em degraus e atribui mecanismo a cada classe (anti-histamínico cobre a fase imediata; corticoide tópico nasal cobre a fase tardia e a obstrução; imunoterapia é 'a única que atua na sensibilização'), e propõe suspender o vasoconstritor e 'cobrir o rebote' com corticoide tópico — nada disso está na fonte, que apenas lista as opções terapêuticas.",
+      "na_fonte": "Tratamento: Higiene ambiental / Lavagem nasal com SF / Anti-histamínicos orais ou tópicos / Corticóides tópicos / Descongestionantes sistêmicos / Corticóides orais / Estabilizadores de membrana de mastócitos",
+      "sugestao": "Sinalizar essas passagens como extrapolação clínica do autor ou reduzir ao que a fonte lista, sem atribuir mecanismo nem conduta de retirada."
+    }
+  ],
+  "veredito": "Material globalmente fiel à fonte: o quiz reproduz corretamente definição, ARIA, fisiopatologia, exames, tratamento e rinossinusites, e o resumo acompanha o quiz; as ressalvas são pontuais e de baixa gravidade (uma ambiguidade no critério de gravidade da ARIA e duas expansões do resumo).",
+  "tema": "rinites_e_rinossinusites",
+  "disciplina": "Otorrino"
+}

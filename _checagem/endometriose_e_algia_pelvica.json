@@ -1,0 +1,31 @@
+{
+  "achados": [
+    {
+      "tipo": "divergencia",
+      "onde": "resumo — bloco \"Dor pélvica crônica: o que é, quanto dói e quanto pesa\" (frase final) × quiz Q3",
+      "gravidade": "media",
+      "o_que": "O resumo afirma que \"dor que incomoda mas não muda a vida da mulher não entra nessa definição\", mas o próprio quiz (Q3) trata essa dor como DPC leve, e a fonte a classifica como grau leve da síndrome.",
+      "na_fonte": "Leve: • Incomoda mas não deixa de fazer suas atividades",
+      "sugestao": "Reescrever: o critério de intensidade da definição admite a dor leve — a graduação leve/moderada/grave é feita por critério funcional, e a dor que só incomoda é DPC leve, não ausência de DPC."
+    },
+    {
+      "tipo": "possivelmente_na_imagem",
+      "onde": "quiz Q22 e resumo (seção \"Classificações: ASRM e AAGL 2021\")",
+      "gravidade": "baixa",
+      "o_que": "Os cortes da AAGL 2021 (estágio 1 até 8, 2 de 9–15, 3 de 16–21, 4 acima de 21) e a lista de sítios pontuados não aparecem no texto extraído; dependem inteiramente da figura pg40.",
+      "na_fonte": null,
+      "sugestao": "Conferir a tabela na imagem pg40; se ela não trouxer esses cortes, retirar a questão ou marcá-la como complemento externo à aula."
+    },
+    {
+      "tipo": "fora_da_fonte",
+      "onde": "resumo — tabela de tratamento (colunas \"Quando indicar\" e \"Ressalva\")",
+      "gravidade": "baixa",
+      "o_que": "Ressalvas como contraindicação do ACO por risco tromboembólico, sangramento de escape, hipoestrogenismo com perda de massa óssea, GnRH como preparo pré-operatório e risco de lesão ureteral/redução de reserva ovariana não constam da fonte, que apenas lista as opções.",
+      "na_fonte": "Clínico • Anti-inflamatório/Analgésicos • ACOH • Progesteronas • Análogo de GnRH • Anti-aromatase Cirúrgico • Exérese • Reconstituição da Anatomia • Histerectomia / Ooforectomia",
+      "sugestao": "Sinalizar essas colunas como complemento clínico (não da aula) ou reduzi-las ao que a fonte sustenta."
+    }
+  ],
+  "veredito": "Material globalmente fiel à fonte: definições, números, classificações ASRM e conduta batem com o texto; o ajuste necessário é a frase do resumo que exclui a dor leve da definição de dor pélvica crônica, além de sinalizar o que vem só de imagem (AAGL) e o que é expansão clínica (ressalvas terapêuticas).",
+  "tema": "endometriose_e_algia_pelvica",
+  "disciplina": "GO"
+}

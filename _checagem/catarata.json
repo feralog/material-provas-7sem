@@ -1,0 +1,31 @@
+{
+  "achados": [
+    {
+      "tipo": "divergencia",
+      "onde": "resumo, seção \"Cortical\" (e quiz Q5)",
+      "gravidade": "baixa",
+      "o_que": "o resumo ilustra a catarata cortical com a chave img:s02i1, que pertence ao slide 2 (anatomia do cristalino), enquanto o quiz atribui o mesmo achado (opacidades em cunha radiais) à chave s09i1; uma das duas referências está trocada",
+      "na_fonte": "### Slide 2\n\nCRISTALINO\n\n<!-- IMG:s02i1 -->",
+      "sugestao": "conferir no arquivo de imagens qual chave mostra as cunhas corticais e corrigir a legenda do resumo"
+    },
+    {
+      "tipo": "possivelmente_na_imagem",
+      "onde": "quiz Q28",
+      "gravidade": "baixa",
+      "o_que": "a questão e a explicação atribuem ao diabetes a via do sorbitol no cristalino, mas o texto da fonte não cita diabetes em nenhum ponto — a lista de causas sistêmicas nomeia apenas galactosemia, rubéola congênita e as trissomias",
+      "na_fonte": "CAUSAS:\n - ENVELHECIMENTO\n - TRAUMA\n - DOENÇAS SISTÊMICAS\n - (Galactosemia, rubéola congênita, sínd Down / Patau / Edwards / Turner)",
+      "sugestao": "se o diabetes e o mecanismo do sorbitol estiverem em figura da página 4, manter; caso contrário, sinalizar como conteúdo de outra fonte"
+    },
+    {
+      "tipo": "possivelmente_na_imagem",
+      "onde": "quiz Q7",
+      "gravidade": "baixa",
+      "o_que": "a forma morfológica induzida pelo corticoide (subcapsular posterior) não aparece no texto extraído; o slide apenas lista \"Corticoides\" entre os fármacos, sem dizer qual tipo de catarata produzem",
+      "na_fonte": "Principais remédios que podem causar a catarata medicamentosa\n- Corticoides",
+      "sugestao": "confirmar na figura da página 5 antes de manter a afirmação como se estivesse no texto"
+    }
+  ],
+  "veredito": "Material bastante fiel: nenhuma contradição factual com o texto da fonte, definição, prevalência, quadro clínico, tipos, conduta cirúrgica e complicações conferem; restam apenas duas ou três afirmações que provavelmente vêm das figuras e uma possível troca de chave de imagem no resumo.",
+  "tema": "catarata",
+  "disciplina": "OFTALMO"
+}

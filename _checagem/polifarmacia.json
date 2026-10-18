@@ -1,0 +1,31 @@
+{
+  "achados": [
+    {
+      "tipo": "ambigua",
+      "onde": "quiz Q5",
+      "gravidade": "media",
+      "o_que": "O enunciado pede fatores 'ligados ao próprio paciente', mas a alternativa C (hepatopatia, doença renal crônica, ILPI) reproduz literalmente o bloco 'vulnerabilidade pessoal' da fonte, que também é um fator ligado ao paciente; só o gabarito desfaz a confusão ao dizer que C pertence a outro bloco.",
+      "na_fonte": "Fatores contribuintes: paciente • Multimorbidades • Automedicação... • Fragmentação dos cuidados // Fatores contribuintes: vulnerabilidade pessoal • Idosos (> 65 anos)... • Renais crônicos • Hepatopatas • Internados em instituições de longa permanência (ILPI)",
+      "sugestao": "Reescrever o enunciado como 'Entre os fatores do bloco assistencial/paciente (e não os de vulnerabilidade pessoal)...' ou trocar a alternativa C por itens claramente alheios (ex.: prescrição eletrônica, cascata iatrogênica)."
+    },
+    {
+      "tipo": "erro_factual",
+      "onde": "quiz Q9 (explicação)",
+      "gravidade": "baixa",
+      "o_que": "A explicação afirma que a queda do fluxo esplâncnico 'reduz o efeito de primeira passagem, aumentando a biodisponibilidade', enquanto a fonte descreve o mesmo fenômeno como 'queda de absorção' de fármacos de primeira passagem; a direção do efeito está invertida entre os dois textos.",
+      "na_fonte": "queda de absorção de nutrientes lipossolúveis (vitaminas A, D, E e K) e de medicamentos dependentes da primeira passagem pelo fígado, como o propranolol, em razão da redução do fluxo sanguíneo esplênico",
+      "sugestao": "Alinhar a explicação à redação da fonte ('redução da absorção de fármacos de primeira passagem, como o propranolol') ou explicitar que a fonte trata o efeito como redução de absorção/biodisponibilidade."
+    },
+    {
+      "tipo": "possivelmente_na_imagem",
+      "onde": "resumo · tabela de considerações do envelhecimento (linha Renal)",
+      "gravidade": "baixa",
+      "o_que": "O resumo afirma 'perda de tecido renal após os 50 anos'; o texto extraído só diz 'diminuição dos rins e da capacidade de ampliar a concentração das urinas', sem marco etário.",
+      "na_fonte": null,
+      "sugestao": "Se a figura das considerações do envelhecimento não trouxer o corte de 50 anos, retirar a idade e manter apenas a perda de massa renal."
+    }
+  ],
+  "veredito": "Material fiel à fonte: a definição da OMS, os números (5/dia, 13-58-82%, 6,3 mL/min/década, 31,5%, 30-40%), as cinco listas de Beers, o MAI e o caso da Dona Esmeralda conferem com o texto; restam uma ambiguidade no quiz Q5, uma inversão de sentido na explicação do Q9 e um detalhe etário do resumo — apenas ajustar, sem retrabalho, a referência interna a 'o resumo' nos enunciados Q13 e Q17.",
+  "tema": "polifarmacia",
+  "disciplina": "Geriatria"
+}

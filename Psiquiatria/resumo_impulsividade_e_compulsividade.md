@@ -10,7 +10,7 @@ A impulsividade foi descrita já por Esquirol, Kraepelin e Bleuler, mas ficou me
 | --- | --- | --- |
 | Falha básica | não consegue **interromper o início** da ação | não consegue **encerrar a ação** em andamento |
 | Motivação | buscar prazer, ganho ou excitação | evitar dano temido, reduzir sofrimento |
-| Relação com o ato | egossintônico no momento: gratifica | egodistônico: não há prazer direto no ato |
+| Relação com o ato | egossintônico no momento: gratifica | egodistônico: sem prazer no TOC, alívio nos repetitivos |
 | Antes do ato | tensão crescente | ansiedade/urgência ligada ao dano temido |
 | Depois do ato | alívio e gratificação, depois culpa | alívio apenas temporário, realimenta o ciclo |
 | Neurocircuito | estriado **ventral** – tálamo – VMPFC/ACC | estriado **dorsal** – tálamo – OFC |

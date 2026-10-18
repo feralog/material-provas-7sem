@@ -1,0 +1,39 @@
+{
+  "achados": [
+    {
+      "tipo": "possivelmente_na_imagem",
+      "onde": "resumo — seção 'Crise aguda de ângulo fechado'",
+      "gravidade": "baixa",
+      "o_que": "Afirma que o tratamento clínico 'resolve cerca de 90% dos casos nas primeiras 12 a 24 horas' — percentual e janela temporal que não aparecem em nenhum texto da fonte.",
+      "na_fonte": "GLAUCOMA AGUDO: TRATAMENTO CLINICO (slide 10, sem texto — todo o conteúdo está na imagem)",
+      "sugestao": "Conferir o dado na imagem do slide 10; se não estiver lá, retirar o percentual e as horas."
+    },
+    {
+      "tipo": "possivelmente_na_imagem",
+      "onde": "resumo — tabela 'Achado no disco / Interpretação'",
+      "gravidade": "baixa",
+      "o_que": "Chanfradura (notching) do anel neural, hemorragia de borda do disco e fosseta adquirida são descritos com interpretação e prognóstico, mas nada disso consta do texto extraído.",
+      "na_fonte": "ESCAVAÇÃO FISIOLOGICA : 0,1 A 0,5",
+      "sugestao": "Confirmar nas imagens de disco/OCT (s06i1, s08i1, s09i1) antes de manter; se não estiverem lá, marcar como complemento externo."
+    },
+    {
+      "tipo": "divergencia",
+      "onde": "quiz Q3 vs. resumo (tabela do disco) e vs. o próprio comentário do Q3",
+      "gravidade": "baixa",
+      "o_que": "O Q3 define a relação escavação/disco fisiológica como '0,1 a 0,5, sem assimetria entre os dois olhos', mas o comentário da mesma questão e o resumo aceitam assimetria de até 0,2 como não patológica.",
+      "na_fonte": "ESCAVAÇÃO FISIOLOGICA : 0,1 A 0,5",
+      "sugestao": "Reescrever a alternativa para 'assimetria menor que 0,2 entre os olhos', alinhando-a ao critério usado no resto do material."
+    },
+    {
+      "tipo": "ambigua",
+      "onde": "quiz Q11",
+      "gravidade": "baixa",
+      "o_que": "A alternativa correta diz 'ilha central de visão preservada, com perda de todo o resto', mas o comentário da própria questão admite 'crescente temporal poupado' — ou seja, não se perde todo o resto.",
+      "na_fonte": "DEFEITO DE CAMPO VISUAL: CAMPO TUBULAR",
+      "sugestao": "Ajustar para 'perda de toda a periferia, podendo restar um crescente temporal'."
+    }
+  ],
+  "veredito": "Quiz e resumo são fiéis à fonte — nenhuma dose, corte, percentual ou classificação diverge do texto —, restando apenas pontos de baixa gravidade que dependem de conferir as figuras (sobretudo o esquema de tratamento da crise aguda e a tabela de achados do disco).",
+  "tema": "glaucoma",
+  "disciplina": "OFTALMO"
+}

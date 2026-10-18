@@ -1,0 +1,15 @@
+{
+  "achados": [
+    {
+      "tipo": "erro_factual",
+      "onde": "quiz Q5 (explicação) e resumo, seção \"A junção neuromuscular\"",
+      "gravidade": "baixa",
+      "o_que": "Compara a prevalência da miastenia (20–30/100.000) com a incidência anual do Guillain-Barré (1–2/100.000 por ano) como se fossem grandezas equivalentes, e conclui que a miastenia é \"dez a vinte vezes mais prevalente\"; são medidas diferentes (estoque vs. casos novos por ano) e a razão apresentada não tem esse sentido dimensional.",
+      "na_fonte": null,
+      "sugestao": "Explicitar que se trata de ordens de grandeza distintas (prevalência vs. incidência anual) ou comparar prevalência com prevalência; no resumo, trocar \"dez a vinte vezes mais prevalente\" por uma formulação que não misture as duas medidas."
+    }
+  ],
+  "veredito": "Quiz e resumo são internamente consistentes entre si e com os números repetidos (15/85%, 85% de anti-AChR, AIDP 90%, IVIG 2 g/kg em 5 dias), mas a fonte disponível é composta apenas de imagens sem texto, o que impede qualquer conferência factual contra os slides; o único reparo possível é a comparação conceitualmente imprecisa entre prevalência da miastenia e incidência do Guillain-Barré.",
+  "tema": "miastenia_gravis_e_guillain_barre",
+  "disciplina": "Neurologia"
+}

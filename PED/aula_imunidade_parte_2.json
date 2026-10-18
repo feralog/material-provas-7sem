@@ -321,7 +321,7 @@
       "explanation": "O tipo de infecção sugere o compartimento acometido: oportunistas apontam para defeitos de células T, cuja alteração laboratorial inicial é a linfocitopenia. Bactérias encapsuladas apontam para deficiência de anticorpos, e Neisseria para deficiência de complemento."
     },
     {
-      "question": "A doença granulomatosa crônica e as neutropenias pertencem ao grupo dos defeitos fagocíticos. Que alteração do hemograma orienta a suspeita inicial nesse grupo?",
+      "question": "Nas neutropenias congênitas, do grupo dos defeitos fagocíticos, que alteração do hemograma orienta a suspeita inicial?",
       "options": [
         "Neutropenia encontrada no hemograma",
         "Linfocitopenia vista no hemograma",
@@ -329,7 +329,7 @@
         "Trombocitose isolada no hemograma"
       ],
       "correctIndex": 0,
-      "explanation": "Os defeitos fagocíticos se traduzem por neutropenia no hemograma, que é o exame de triagem inicial desse grupo. A linfocitopenia aponta para distúrbios das células T, e imunoglobulinas anormais apontam para deficiências predominantemente de anticorpos."
+      "explanation": "As neutropenias congênitas se traduzem por neutropenia no hemograma, que é o exame de triagem desse grupo. A linfocitopenia aponta para distúrbios das células T e imunoglobulinas anormais, para deficiências de anticorpos. Atenção: a doença granulomatosa crônica também é defeito fagocítico, mas é qualitativa — a contagem de neutrófilos é normal e o diagnóstico se faz por DHR ou NBT, não pelo hemograma."
     },
     {
       "question": "A triagem neonatal ampliada já detecta algumas imunodeficiências primárias. Que ensaio identifica precocemente a imunodeficiência combinada grave?",

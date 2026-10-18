@@ -1,0 +1,39 @@
+{
+  "achados": [
+    {
+      "tipo": "fonte_suspeita",
+      "onde": "resumo — tabela do Katz (item uso do vaso sanitário) e quiz Q7 (explicação)",
+      "gravidade": "baixa",
+      "o_que": "O próprio protocolo do Katz se contradiz sobre comadre/papagaio: a alternativa de independência admite comadre ou urinol à noite, mas o texto de instrução diz que quem usa papagaio/comadre é dependente. Quiz e resumo adotam apenas a segunda leitura.",
+      "na_fonte": "\"...pode utilizar comadre ou urinol à noite, esvaziando por si mesmo pela manhã). (I)\" / \"Aqueles que utilizam 'papagaios' ou 'comadres' também são considerados dependentes.\"",
+      "sugestao": "Explicitar a ambiguidade do instrumento: quem usa urinol/comadre à noite mas o esvazia sozinho é classificado como independente na descrição do item, e dependente na instrução geral. Não afirmar categoricamente que comadre = dependente."
+    },
+    {
+      "tipo": "erro_factual",
+      "onde": "quiz Q19 (explicação) e resumo — tabela de instrumentos de humor",
+      "gravidade": "baixa",
+      "o_que": "Afirma que o PHQ-9 tem escore até 30 pontos; o PHQ-9 tem 9 itens de 0 a 3, portanto máximo de 27 pontos.",
+      "na_fonte": null,
+      "sugestao": "Corrigir para 'escore de 0 a 27' no resumo e na explicação do quiz."
+    },
+    {
+      "tipo": "erro_factual",
+      "onde": "resumo — seção comunicação (Teste de Snellen)",
+      "gravidade": "baixa",
+      "o_que": "Diz que o Snellen é aplicado a '5-6 metros', mas a fonte registra 6 metros.",
+      "na_fonte": "\"Teste de Snellen: distância de 6 metros. A acuidade visual normal é considerada 20/20 (linha 8).\"",
+      "sugestao": "Padronizar para 6 metros."
+    },
+    {
+      "tipo": "fora_da_fonte",
+      "onde": "resumo — tabela de humor, linha 'Critérios do DSM-5'",
+      "gravidade": "baixa",
+      "o_que": "Atribui aos critérios do DSM-5 um escore '0 a 9' e chama isso de 'diagnóstico formal'; a fonte apenas menciona que se pode usar também os critérios do DSM-5, sem escala numérica.",
+      "na_fonte": "\"Escala GDS é a mais usada para rastreio de depressão, mas pode usar critérios do DMS-5 também.\"",
+      "sugestao": "Retirar a coluna de escore dessa linha (ou descrever os critérios sem atribuir pontuação de 0 a 9)."
+    }
+  ],
+  "veredito": "Material globalmente fiel à fonte: todos os cortes e classificações conferíveis (Katz, Lawton, MEEM de Brucki, relógio, fluência verbal, GDS-15, Cornell, MNA, perda de peso, caidor crônico) batem com o texto, e quiz e resumo não divergem entre si; restam apenas deslizes menores e uma contradição interna do próprio protocolo do Katz sobre comadre/papagaio.",
+  "tema": "aga",
+  "disciplina": "Geriatria"
+}

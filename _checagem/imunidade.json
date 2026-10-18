@@ -1,0 +1,31 @@
+{
+  "achados": [
+    {
+      "tipo": "fora_da_fonte",
+      "onde": "quiz Q27 a Q32 e resumo (seção \"A imunidade do recém-nascido e do lactente\")",
+      "gravidade": "media",
+      "o_que": "Todo o bloco neonatal — IgG placentária via FcRn no 3º trimestre, IgM fetal nas infecções congênitas, IgA secretora do colostro, nadir de IgG entre 3 e 6 meses, imunidade passiva pós-exposição e vacinas conjugadas — não tem apoio no texto da fonte, que termina na tolerância central/periférica e só cita 'a classe do AC' de passagem. O subtítulo do quiz anuncia esse conteúdo como se fosse da aula.",
+      "na_fonte": null,
+      "sugestao": "Manter o bloco, mas sinalizar como complemento de outra fonte (ou como 'particularidades do lactente' fora do escopo da aula 1), para não dar a entender que foi cobrado na aula."
+    },
+    {
+      "tipo": "possivelmente_na_imagem",
+      "onde": "resumo (seção \"Sistema complemento\") e quiz Q10/Q11",
+      "gravidade": "baixa",
+      "o_que": "As três vias de ativação (clássica via C1q, das lectinas via MBL/MASP, alternativa), as convertases e os reguladores (fator H, CD55, CD46, CD59) não aparecem no texto; a fonte só descreve os produtos C3b, C3a/C5a e MAC. Caberia numa figura da cascata em s15i1, mas não é possível confirmar.",
+      "na_fonte": "C3b favorece a opsonização; C3a e C5a contribuem para inflamação; O complexo de ataque à membrana (MAC) causa lise celular",
+      "sugestao": "Se a figura s15i1 não trouxer as vias, marcar o trecho como complemento externo ou reduzi-lo ao que a fonte sustenta."
+    },
+    {
+      "tipo": "possivelmente_na_imagem",
+      "onde": "resumo (quadro do complemento) e quiz Q11 (explicação)",
+      "gravidade": "baixa",
+      "o_que": "A associação entre deficiência de C5–C9 e infecção invasiva de repetição por Neisseria é afirmada como 'dado de anamnese que muda a conduta', mas a fonte não menciona nenhum déficit de complemento nem Neisseria.",
+      "na_fonte": "O complexo de ataque à membrana (MAC) causa lise celular",
+      "sugestao": "Tratar como correlação clínica acrescentada, não como conteúdo da fonte; se quiser manter o destaque, indicar a origem."
+    }
+  ],
+  "veredito": "Quiz e resumo são internamente coerentes e sem erro factual relevante, com alternativas corretas claramente superiores; o problema é de escopo — o bloco neonatal (Q27–Q32 e a seção correspondente do resumo) e alguns detalhes de complemento e imunoglobulinas vão além do que a fonte textual sustenta.",
+  "tema": "imunidade",
+  "disciplina": "PED"
+}

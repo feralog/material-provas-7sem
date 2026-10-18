@@ -1,0 +1,31 @@
+{
+  "achados": [
+    {
+      "tipo": "erro_factual",
+      "onde": "quiz Q25 (explicação)",
+      "gravidade": "baixa",
+      "o_que": "A explicação afirma que 'a alternativa troca a ceftriaxona por cefotaxima 500 mg IM', mas nenhuma das alternativas traz cefotaxima: a errada (B) mantém a ceftriaxona e troca doxiciclina/metronidazol por azitromicina/fluconazol; a D troca por penicilina e encurta para 7 dias.",
+      "na_fonte": "AMBULATORIAL • Ceftriaxona 500 mg IM (dose única) MAIS Doxiciclina 100 mg VO de 12/12h (14 dias) MAIS Metronidazol 250 mg (2 comp = 500 mg) VO de 12/12h (14 dias) / SEGUNDA OPÇÃO: Cefotaxima 500 mg IM (dose única)",
+      "sugestao": "Corrigir a explicação para apontar o desvio real da alternativa errada (troca de doxiciclina/metronidazol por azitromicina/fluconazol) e reservar a cefotaxima para a menção à segunda opção do PCDT."
+    },
+    {
+      "tipo": "divergencia",
+      "onde": "resumo — seção Tratamento antimicrobiano (seguimento)",
+      "gravidade": "baixa",
+      "o_que": "O resumo manda reavaliar em 72 h, mas depois afirma que 'o seguimento ambulatorial é feito na primeira semana', prazo que o quiz e a fonte não sustentam.",
+      "na_fonte": "Reavalie pacientes ambulatoriais em 72h. Orienta-se abstinência sexual por 30 dias",
+      "sugestao": "Padronizar o prazo de reavaliação em 72 horas e retirar (ou qualificar) a menção a 'primeira semana'."
+    },
+    {
+      "tipo": "fonte_suspeita",
+      "onde": "fonte pg21 vs pg22 (Monif II)",
+      "gravidade": "baixa",
+      "o_que": "A própria fonte diverge sobre a conduta no estágio II: a tabela da pg21 diz 'Individualizar / frequentemente hospitalar', enquanto a pg22 crava 'INTERNAÇÃO HOSPITALAR'.",
+      "na_fonte": "II Endometrite/salpingite Com peritonite Individualizar / frequentemente hospitalar | ESTÁGIO II (MONIF II) Conduta Indicada: INTERNAÇÃO HOSPITALAR",
+      "sugestao": "Manter a redação do quiz/resumo como 'habitualmente hospitalar' (como já faz a explicação de Q20) e, se possível, sinalizar a divergência ao autor da fonte."
+    }
+  ],
+  "veredito": "Material globalmente fiel à fonte: doses, esquemas do PCDT 2020, estadiamento de Monif, critérios diagnósticos e números de sequelas conferem; os problemas são pontuais e de baixa gravidade (uma explicação de quiz mal redigida e um prazo de seguimento inconsistente no resumo).",
+  "tema": "doenca_inflamatoria_pelvica",
+  "disciplina": "GO"
+}

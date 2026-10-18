@@ -1,0 +1,15 @@
+{
+  "achados": [
+    {
+      "tipo": "fora_da_fonte",
+      "onde": "quiz Q23",
+      "gravidade": "baixa",
+      "o_que": "A alternativa correta acrescenta 'em geral unilateral' ao quadro da obstrução congênita da via lacrimal — dado de lateralidade que a fonte não traz (ela só marca unilateralidade para dacriocistite e canaliculite) e que pode induzir o aluno a excluir a forma bilateral.",
+      "na_fonte": "QC: epífora, secreção e crostas nos cílios",
+      "sugestao": "Retirar o qualificador de lateralidade da alternativa (ou trocá-lo por 'unilateral ou bilateral'), deixando a distinção recair sobre epífora/secreção/crostas com olho calmo."
+    }
+  ],
+  "veredito": "Material globalmente fiel à fonte: as 28 questões e o resumo reproduzem sem contradições os pontos da aula (agentes, quadro clínico, tratamento e cirurgia de cada nível de obstrução); o único reparo é a lateralidade atribuída à obstrução congênita, que a fonte não menciona.",
+  "tema": "inflamacoes_da_via_lacrimal",
+  "disciplina": "OFTALMO"
+}

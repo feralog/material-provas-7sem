@@ -1,0 +1,39 @@
+{
+  "achados": [
+    {
+      "tipo": "possivelmente_na_imagem",
+      "onde": "quiz Q26, Q27 e Q28; resumo (tabela \"Rastreamento e encaminhamento\")",
+      "gravidade": "baixa",
+      "o_que": "Todo o calendário de rastreamento (5 anos após diagnóstico no tipo 1 a partir da puberdade; no diagnóstico no tipo 2; trimestral na gestante com diabetes prévio) não aparece em nenhum trecho de texto da fonte — só a menção genérica de que rastreamento regular é essencial.",
+      "na_fonte": "Rastreamento regular é essencial, pois a doença pode ser assintomática mesmo em estágios avançados",
+      "sugestao": "Se o cronograma estiver em imagem (s35i1/s43i1), manter; caso contrário, sinalizar no material que esse ponto é complementar à aula."
+    },
+    {
+      "tipo": "possivelmente_na_imagem",
+      "onde": "quiz Q18, Q19, Q30 e Q31; resumo (seção \"Tratamento e prognóstico\")",
+      "gravidade": "baixa",
+      "o_que": "A fonte lista apenas as quatro modalidades terapêuticas, sem dizer que anti-VEGF é primeira linha no edema macular central, que corticosteroide fica para casos refratários/pseudofácicos nem que a OCT é o exame de escolha para quantificar o edema.",
+      "na_fonte": "OPÇÕES TERAPÊUTICAS - AGENTES ANTI-VEGF (Injeções Intravítreas) - FOTOCOAGULAÇÃO A LASER - CORTICOSTEROIDES INTRAVÍTREOS - VITRECTOMIA",
+      "sugestao": "Confirmar se as indicações por primeira linha estão nas figuras de tratamento/prognóstico; se não, marcar como conteúdo complementar."
+    },
+    {
+      "tipo": "possivelmente_na_imagem",
+      "onde": "quiz Q4, Q14 e Q15 (e subtítulo do quiz)",
+      "gravidade": "baixa",
+      "o_que": "Perda de pericitos como evento inicial, definição da mancha algodonosa como microinfarto da camada de fibras nervosas e do exsudato duro como depósito lipoproteico não estão no texto; a fonte só nomeia os achados.",
+      "na_fonte": "Dano microvascular / Formação de microaneurismas",
+      "sugestao": "Manter se sustentado pelas imagens de fisiopatologia e de fundo de olho; do contrário, assumir como extrapolação didática."
+    },
+    {
+      "tipo": "divergencia",
+      "onde": "resumo — tabela \"Classificação por estágios\", linha RDNP moderada",
+      "gravidade": "baixa",
+      "o_que": "O resumo coloca para a RDNP moderada \"encaminhamento ao oftalmologista; reavaliação em 6 meses\", enquanto o quiz e a própria fonte tratam a moderada como situação de encaminhamento urgente.",
+      "na_fonte": "ENCAMINHAMENTO URGENTE AO OFTALMOLOGISTA - Encaminhar prontamente pacientes com - Qualquer nível de edema macular diabético - RDNP moderada ou grave - Qualquer RD proliferativa",
+      "sugestao": "Alinhar a linha da tabela ao texto do próprio resumo (\"encaminhamento urgente\"), retirando o intervalo de 6 meses como conduta inicial."
+    }
+  ],
+  "veredito": "Material fiel e consistente nos pontos que o texto extraído cobre (epidemiologia, fisiopatologia, classificação, fatores de risco, encaminhamento e prognóstico); as eventuais extrapolações concentram-se em rastreamento e detalhes terapêuticos que provavelmente estão nas figuras, além de um pequeno desalinhamento de urgência na tabela do resumo.",
+  "tema": "retinopatia_diabetica",
+  "disciplina": "OFTALMO"
+}

@@ -69,7 +69,8 @@ DEPENDE_DA_AULA = re.compile(r"""(
  | \bn[oa]\s+material\b(?!\s+(?:gen[ée]tico|heredit[áa]rio|biol[óo]gico))
  | \bapresentad[oa]s?\s+n[ao]\s+aula\b
  | \bvist[oa]\s+em\s+aula\b
- | \bda\s+apresenta\w+\b
+ | \bnest[ae]\s+apresenta[çc][ãa]o\b
+ | \b(?:n?[oa]|d[ao])\s+resumo\b
  | \bo\s+professor\s+(?:afirma|destaca|define|explica|cita|ensina|aponta)
 )""", re.I | re.X)
 

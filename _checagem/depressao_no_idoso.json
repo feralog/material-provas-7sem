@@ -1,0 +1,31 @@
+{
+  "achados": [
+    {
+      "tipo": "erro_factual",
+      "onde": "quiz Q1 (enunciado)",
+      "gravidade": "media",
+      "o_que": "O enunciado afirma que endoscopia e tomografia 'vieram normais', mas a fonte descreve achados na EDA (hérnia de hiato, esofagite leve, gastrite de antro) e na TC (aumento prostático, degeneração lombossacra). Além disso, o distrator B cita 'gastrite de antro', que o próprio enunciado declarou inexistente — inconsistência interna da questão.",
+      "na_fonte": "EDA: hérnia de hiato, esofagite leve e gastrite enantemática leve de antro. / TC abdôme: discreto aumento prostático e alterações degenerativas de coluna lombossacra",
+      "sugestao": "Trocar 'vieram normais' por 'sem achado que explique a dor' e reformular o distrator B para que não remeta a um achado que o enunciado negou."
+    },
+    {
+      "tipo": "erro_factual",
+      "onde": "resumo (doses dos duais)",
+      "gravidade": "media",
+      "o_que": "O resumo fixa a desvenlafaxina em '50 mg/dia (máx. 100)', mas a tabela da fonte traz faixa e teto diferentes (50–400 mg, bula 200 mg). É a única dose do resumo que não fecha com o texto da fonte — pode ser leitura divergente do slide de primeira linha.",
+      "na_fonte": "Doses 50-400mg (bula 200mg)",
+      "sugestao": "Conferir o slide de primeira linha (pg25/pg33) e alinhar o teto da desvenlafaxina ao valor da fonte, ou explicitar que se trata de dose usual e não de teto de bula."
+    },
+    {
+      "tipo": "possivelmente_na_imagem",
+      "onde": "quiz Q28 (bupropiona no tabagismo)",
+      "gravidade": "baixa",
+      "o_que": "A indicação de bupropiona como preferência no tabagismo associado, com dose 150–450 mg/dia, não aparece em nenhum trecho de texto da fonte; pode estar no slide de classes ou de mecanismos alternativos, que são só imagem.",
+      "na_fonte": null,
+      "sugestao": "Se o slide de classes (pg41/pg34) não trouxer essa indicação, remover a questão ou marcá-la como conteúdo externo declarado."
+    }
+  ],
+  "veredito": "Material globalmente fiel à fonte, com boa correspondência entre quiz e resumo; os pontos a corrigir são o enunciado da Q1, que declara normais exames com achados descritos na fonte, e o teto de dose da desvenlafaxina no resumo.",
+  "tema": "depressao_no_idoso",
+  "disciplina": "Geriatria"
+}

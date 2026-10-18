@@ -1,0 +1,31 @@
+{
+  "achados": [
+    {
+      "tipo": "erro_factual",
+      "onde": "resumo — seção 'Neurofisiologia' (título 'Armazenamento — simpático' e tabela de nervos)",
+      "gravidade": "média",
+      "o_que": "O resumo situa a origem do simpático vesical em T10–L2, duas vezes; a fonte diz T11–L2 e, em outro slide, T12–L2. Nenhum trecho da fonte traz T10.",
+      "na_fonte": "ANATOMIA DA BEXIGA E URETRA PROXIMAL ⟳ ARMAZENAMENTO —SN SIMPÁTICO (T11–L2) … N. HIPOGÁSTRICO Simpático—T12–L2",
+      "sugestao": "Padronizar com a fonte (T11–L2) ou registrar explicitamente a variação T11–L2/T12–L2 apresentada nos dois slides; retirar T10–L2."
+    },
+    {
+      "tipo": "fonte_suspeita",
+      "onde": "fonte — páginas 7 e 8",
+      "gravidade": "baixa",
+      "o_que": "A própria fonte diverge sobre o nível de origem do simpático: T11–L2 na página 7 e T12–L2 na página 8.",
+      "na_fonte": "ARMAZENAMENTO —SN SIMPÁTICO (T11–L2) … N. HIPOGÁSTRICO Simpático—T12–L2",
+      "sugestao": "Adotar um dos valores de forma consistente nos materiais derivados e, se possível, conferir o slide original."
+    },
+    {
+      "tipo": "possivelmente_na_imagem",
+      "onde": "resumo — seção 'Controle central'",
+      "gravidade": "baixa",
+      "o_que": "Afirmações anatômicas específicas — centro pontino na 'substância reticular pontomesencefálica', aferências do sistema límbico e do cerebelo, córtex com 'corpo caloso' e a frase de que 'todos os estímulos aferentes e eferentes passam por ali' — não aparecem no texto extraído; se não estiverem nas figuras (pg05/pg09/pg24), devem ser revistas.",
+      "na_fonte": "Centro pontino coordena o reflexo miccional … SNC pode inibir ou iniciar voluntariamente … A região frontal direita exerce ação inibitória sobre o reflexo da micção",
+      "sugestao": "Conferir as figuras citadas e, na dúvida, reduzir a formulação ao que a fonte sustenta (centro pontino coordena o reflexo; córtex inibe ou inicia voluntariamente)."
+    }
+  ],
+  "veredito": "O quiz está fiel à fonte na quase totalidade dos itens (definições, números de cura, doses e classificações conferem); o problema real é o resumo, que troca para T10–L2 a origem do simpático que a fonte situa em T11–L2/T12–L2 — inconsistência que, aliás, já existe entre dois slides da própria fonte.",
+  "tema": "incontinencia_urinaria",
+  "disciplina": "GO"
+}

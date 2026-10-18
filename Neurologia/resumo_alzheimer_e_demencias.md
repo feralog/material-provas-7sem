@@ -130,7 +130,7 @@ O quadro clássico tem **início abrupto**, ligado a um acidente vascular cerebr
 
 Fatores de risco: hipertensão arterial, diabete melito, tabagismo, alcoolismo, doença cardíaca, aterosclerose, dislipidemia e obesidade; também lúpus eritematoso sistêmico e vasculites do SNC.
 
-> Por ser secundária a acometimento cerebrovascular, a demência vascular é a única forma **passível de prevenção primária e secundária**. Controlar a pressão, usar antiagregantes plaquetários e tratar vasculites pode bloquear a progressão e, em alguns casos, produzir melhora apreciável.
+> Por ser secundária a acometimento cerebrovascular, a demência vascular é forma **passível de prevenção primária e secundária**. Controlar a pressão, usar antiagregantes plaquetários e tratar vasculites pode bloquear a progressão e, em alguns casos, produzir melhora apreciável.
 
 ---
 

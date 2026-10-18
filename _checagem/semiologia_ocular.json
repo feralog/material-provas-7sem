@@ -1,0 +1,39 @@
+{
+  "achados": [
+    {
+      "tipo": "possivelmente_na_imagem",
+      "onde": "quiz Q16 e Q17; resumo (seção \"Buraco estenopeico\"); intro do quiz",
+      "gravidade": "baixa",
+      "o_que": "Todo o tópico do buraco estenopeico (melhora com estenopeico = causa refracional; redução do círculo de difusão) não aparece em nenhum trecho de texto da fonte, e rende duas questões mais um bloco do resumo.",
+      "na_fonte": null,
+      "sugestao": "Confirmar se há figura de oclusor estenopeico nas páginas de acuidade visual (slides 6 a 10, ricos em imagens). Se não houver, retirar as duas questões e o bloco do resumo, ou marcá-los como conteúdo complementar declarado."
+    },
+    {
+      "tipo": "possivelmente_na_imagem",
+      "onde": "quiz Q29 e Q30; resumo (seção \"Exame externo\", parágrafo sobre pupilas)",
+      "gravidade": "baixa",
+      "o_que": "Reflexo fotomotor direto e consensual, defeito pupilar aferente relativo e lanterna oscilante não são mencionados no texto extraído; a explicação ainda detalha a decussação parcial das fibras pupilares no quiasma e nos núcleos pré-tectais.",
+      "na_fonte": null,
+      "sugestao": "Verificar se os slides de motilidade ocular (18 e 19) trazem figura de reflexos pupilares/DPAR. Sem essa figura, reduzir a duas questões sobre um tema sem qualquer apoio na fonte é expansão não declarada — retirar ou sinalizar como complemento."
+    },
+    {
+      "tipo": "divergencia",
+      "onde": "quiz Q23 (explicação) x resumo (seção Tonometria)",
+      "gravidade": "baixa",
+      "o_que": "O quiz enumera como portáteis apenas Perkins, Tonopen e Icare; o resumo inclui o Pascal entre os portáteis. As duas peças tratam o mesmo instrumento de formas diferentes.",
+      "na_fonte": "PERKINS / PASCAL / TONOPEN / ICARE",
+      "sugestao": "Alinhar as duas peças: ou o Pascal entra na lista de portáteis nas duas, ou sai das duas."
+    },
+    {
+      "tipo": "fonte_suspeita",
+      "onde": "quiz Q26 (e tabela de fundoscopia do resumo) x slide 22",
+      "gravidade": "baixa",
+      "o_que": "Os blocos de características da fundoscopia no slide 22 não estão rotulados por coluna, e o item \"exame de toda a retina (até periferia)\" aparece no bloco com \"grande aumento de imagem / visão de detalhes\", que o material atribui à biomicroscopia de fundo — enquanto o quiz usa o alcance da periferia como vantagem da fundoscopia indireta.",
+      "na_fonte": "- GRANDE AUMENTO DE IMAGEM - BOA ESTEREOPSIA - VISAO DE DETALHES - EXAME DE TODA A RETINA ( ATÉ PERIFERIA)",
+      "sugestao": "Sustentar o gabarito da Q26 apenas pelo rótulo \"mapeamento de retina\" e por \"grande área examinada por vez\", sem atribuir à indireta o item de periferia como se fosse texto explícito do slide."
+    }
+  ],
+  "veredito": "Material globalmente fiel à fonte, com números, doses, escalas de acuidade e o caso clínico batendo com os slides; as ressalvas são dois blocos de conteúdo (buraco estenopeico e reflexos pupilares) sem âncora no texto extraído, provavelmente apoiados em figuras, e um pequeno desalinhamento entre quiz e resumo sobre o tonômetro de Pascal.",
+  "tema": "semiologia_ocular",
+  "disciplina": "OFTALMO"
+}

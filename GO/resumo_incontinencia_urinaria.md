@@ -25,7 +25,7 @@ A bexiga é um órgão muscular cuja parede é o **detrusor**; sua base, o **col
 
 ![Ciclo da função vesical normal: enchimento, primeira sensação, desejo miccional e micção](img:pg05)
 
-#### Armazenamento — simpático (T10–L2)
+#### Armazenamento — simpático (T11–L2)
 
 Pelo **nervo hipogástrico**, os receptores **beta-3 adrenérgicos** relaxam o detrusor, acomodando volume crescente a baixa pressão, enquanto os **alfa-adrenérgicos** contraem o colo vesical. Ao mesmo tempo, o **nervo pudendo** mantém o esfíncter uretral estriado contraído. O resultado aritmético é o que define a continência: **pressão uretral maior que a pressão vesical**.
 
@@ -39,7 +39,7 @@ O **centro pontino**, na substância reticular pontomesencefálica, coordena o r
 
 | Nervo | Sistema | Origem | Receptor / efeito |
 |---|---|---|---|
-| Hipogástrico | simpático | T10–L2 | beta-3 relaxa o detrusor; alfa-1 contrai o colo vesical — inibe a micção |
+| Hipogástrico | simpático | T11–L2 | beta-3 relaxa o detrusor; alfa-1 contrai o colo vesical — inibe a micção |
 | Pélvico | parassimpático | S2–S4 | M2 e M3 contraem o detrusor — produz a micção |
 | Pudendo | somático | S2–S4 (núcleo de Onuf) | contrai o esfíncter estriado e o assoalho pélvico |
 

@@ -1,0 +1,31 @@
+{
+  "achados": [
+    {
+      "tipo": "fonte_suspeita",
+      "onde": "quiz Q11 e resumo (tabela \"O relógio das perdas\", linha Muscular) frente a pg06 e pg29",
+      "gravidade": "baixa",
+      "o_que": "A fonte atribui a perda de 1,5% ao dia à FORÇA em pg06 (\"da total\", logo após a queda de 20% de força em 6 semanas), mas em pg29 chama o mesmo dado de perda de MASSA muscular (1-2%/dia). O quiz e o resumo fixam a segunda leitura, e as duas não fecham entre si: 1,5%/dia equivaleria a ~60% em 6 semanas, e não aos 20% de queda descritos para o mesmo prazo.",
+      "na_fonte": "Com 6 semanas a força dos MMII declina 20% e a dos MMSS 10%, alguns estudos mostram perda diária de até 1,5% da total, ou seja, 10% por semana / Sarcopenia catabólica (perda 1-2% massa muscular/dia)",
+      "sugestao": "Manter a cifra (é a que a fonte dá), mas apresentá-la como perda funcional de força/massa e deixar claro que os 10%/semana vêm de estudos isolados e não se somam linearmente até as 6 semanas — hoje o resumo e o quiz vendem 1,5%/dia como perda de massa estabelecida."
+    },
+    {
+      "tipo": "ambigua",
+      "onde": "quiz Q27 (domínios da escala de Braden)",
+      "gravidade": "baixa",
+      "o_que": "O enunciado pede os domínios pontuados \"de 1 a 4\" e a alternativa correta lista cinco; a explicação, porém, acrescenta fricção/cisalhamento e afirma que \"cada item\" vai de 1 a 4 — o que tornaria a própria alternativa correta incompleta.",
+      "na_fonte": null,
+      "sugestao": "Harmonizar enunciado, alternativa e explicação: ou retirar fricção/cisalhamento da explicação, ou dizer expressamente que esse é um item com pontuação própria, distinta dos demais."
+    },
+    {
+      "tipo": "possivelmente_na_imagem",
+      "onde": "quiz Q15, Q20, Q21, Q22, Q23, Q26, Q27, Q28, Q29 e trechos do resumo (bloco metabólico, 90% gastrointestinal, líquido sinovial/pannus, alterações de pele, Braden, pontos de pressão, tabela de estadiamento de LPP e mudança de decúbito 2/2h)",
+      "gravidade": "baixa",
+      "o_que": "Esses conteúdos não aparecem no texto extraído: vêm de slides cujo corpo está vazio ou reduzido a um título (pg08, pg10, pg17, pg19, pg20, pg21, pg22). São exatamente o tipo de material que costuma existir só na figura — critérios, faixas de pontuação, tabelas de estadiamento e números fechados.",
+      "na_fonte": null,
+      "sugestao": "Conferir cada uma dessas passagens contra as figuras originais antes da publicação; o que a figura não sustentar deve sair, sobretudo os números fechados (90% gastrointestinal, faixas <12/13-15/16-18/>19 da Braden, intervalo de 2/2h)."
+    }
+  ],
+  "veredito": "Quiz e resumo são fiéis ao texto extraído, sem contradição entre si nem número divergente da fonte; as ressalvas são de baixa gravidade e se concentram em conteúdo que só existe nas figuras (que não pude ver) e na forma como a cifra de 1,5%/dia é rotulada.",
+  "tema": "sindrome_do_imobilismo",
+  "disciplina": "Geriatria"
+}

@@ -1,0 +1,31 @@
+{
+  "achados": [
+    {
+      "tipo": "fora_da_fonte",
+      "onde": "quiz Q17 (e resumo, bloco \"Contraindicação absoluta de vacina de agente vivo\")",
+      "gravidade": "baixa",
+      "o_que": "A suspensão de vacinas de agentes vivos na SCID não é abordada na fonte: o slide de tratamento cita apenas suporte, antimicrobianos, IgG e transplante, e essa página não tem figura de onde o dado pudesse vir.",
+      "na_fonte": "Tratamento: Suporte, antimicrobianos e substituição de IgG. Terapia definitiva: Tx células-tronco hematopoiéticas (HSCT) mais rápido possível.",
+      "sugestao": "A conduta está clinicamente correta, mas é extrapolação: ou retirar a questão, ou sinalizar no material que esse ponto vai além do que foi dado em aula."
+    },
+    {
+      "tipo": "fora_da_fonte",
+      "onde": "resumo — tabela \"Os cinco compartimentos\"",
+      "gravidade": "baixa",
+      "o_que": "A tabela acrescenta idades de início (\"depois do 6º mês, quando a IgG materna se esgota\", \"escolar e adolescente\" no complemento, \"pré-escolar na ALPS\") e germes/achados específicos (fungos filamentosos, abscessos profundos e granulomas nos fagócitos) que não constam do texto extraído; essas páginas (8, 10, 14) não têm figura.",
+      "na_fonte": "Defeitos fagocíticos ➜ Neutropenia (ex.: doença granulomatosa crônica, neutropenia).",
+      "sugestao": "Manter como complemento, mas marcar que é acréscimo e não conteúdo da aula, para o leitor não cobrar de si esse detalhe."
+    },
+    {
+      "tipo": "possivelmente_na_imagem",
+      "onde": "quiz Q5",
+      "gravidade": "baixa",
+      "o_que": "O enunciado afirma que a AIRE comanda a seleção negativa no timo e a conversão de clones em Treg; o texto só diz que APECED é alteração de AIRE, sem descrever o mecanismo.",
+      "na_fonte": "APECED – alteração AIRE",
+      "sugestao": "Confirmar contra a figura s03i1; se o esquema não trouxer o mecanismo, reformular o enunciado para se apoiar apenas na associação AIRE–APECED."
+    }
+  ],
+  "veredito": "Material bastante fiel: o quiz reproduz com precisão números, classificações e condutas da fonte e não há divergência entre quiz e resumo; os únicos reparos são duas extrapolações (vacinas vivas na SCID e idades de início na tabela do resumo) e um mecanismo que depende de figura.",
+  "tema": "imunodeficiencias",
+  "disciplina": "PED"
+}

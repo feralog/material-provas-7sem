@@ -1,0 +1,31 @@
+{
+  "achados": [
+    {
+      "tipo": "erro_factual",
+      "onde": "resumo — tabela 'Membrana timpânica normal'",
+      "gravidade": "média",
+      "o_que": "Diz que a parte tensa é 'cerca de 90%' da membrana e, na linha seguinte, que a parte flácida é 'aproximadamente 1/5' (20%) — os dois números não fecham entre si nem com a fonte, que atribui 1/5 à parte flácida (logo, parte tensa ≈ 4/5).",
+      "na_fonte": "Parte tensa: maior parte da membrana / Parte flácida: 1/5 da membrana",
+      "sugestao": "Trocar 'cerca de 90%' por 'cerca de 80% (4/5)', deixando o par tensa/flácida coerente com a fonte."
+    },
+    {
+      "tipo": "ambigua",
+      "onde": "quiz Q26",
+      "gravidade": "média",
+      "o_que": "O critério dado ('cabo do martelo e cone de luz apontam para a frente do crânio') vale para as duas orelhas, porque em ambas essas estruturas apontam anteriormente; o que define a lateralidade é para que lado do campo visual elas apontam (direita ou esquerda do observador), informação que o enunciado não fornece. A explicação repete o mesmo salto lógico ('apontando para a frente, é a orelha esquerda').",
+      "na_fonte": null,
+      "sugestao": "Reformular o enunciado para informar a direção no campo visual (por exemplo, 'no campo visual, o cabo do martelo e o cone de luz apontam para a direita do examinador') e corrigir a explicação: anteriormente apontam sempre; o lado do campo é que define direita ou esquerda."
+    },
+    {
+      "tipo": "fonte_suspeita",
+      "onde": "quiz Q17 e resumo (contraindicação da lavagem para grão) / fonte páginas 15-17",
+      "gravidade": "baixa",
+      "o_que": "O quiz afirma que a lavagem é contraindicada para grão vegetal, mas a fonte traz, na sequência 'Lavagem' (pg15) → 'Lavagem de grão' (pg16) → 'Remoção de grão' (pg17), rótulos que sugerem justamente uma lavagem de grão. Como o texto é só legenda de imagem, não dá para saber se o material da aula ensina a lavar grão ou se o rótulo é apenas descritivo.",
+      "na_fonte": "Lavagem de grão (página 16) / Remoção de grão (página 17)",
+      "sugestao": "Conferir as imagens pg16-17; se a aula realmente mostra lavagem para grão, suavizar a contraindicação absoluta do quiz e do resumo (ou explicitar que a conduta depende do tipo/tamanho do grão)."
+    }
+  ],
+  "veredito": "Material no geral fiel e tecnicamente sólido; os pontos a corrigir são um número incoerente no resumo (parte tensa × parte flácida), a lógica furada da questão de lateralidade e a dúvida sobre lavagem de grão, que depende das figuras das páginas 16-17.",
+  "tema": "otoscopia",
+  "disciplina": "Otorrino"
+}

@@ -1,0 +1,31 @@
+{
+  "achados": [
+    {
+      "tipo": "possivelmente_na_imagem",
+      "onde": "quiz Q6",
+      "gravidade": "baixa",
+      "o_que": "O pseudoestrabismo por epicanto amplo com reflexos centrados e cover-test negativo não aparece no texto extraído; o raciocínio diagnóstico e a conduta de apenas acompanhar não estão na fonte textual.",
+      "na_fonte": null,
+      "sugestao": "Conferir se a figura da página de propedêutica (observação desarmada/identificação do paciente) traz o pseudoestrabismo; se não trouxer, manter como conteúdo complementar declarado."
+    },
+    {
+      "tipo": "possivelmente_na_imagem",
+      "onde": "quiz Q22",
+      "gravidade": "baixa",
+      "o_que": "A origem do nervo abducente na ponte, o trajeto intracraniano e a passagem pela fissura orbitária superior não constam do texto; só seriam sustentados por figura do trajeto do VI nervo.",
+      "na_fonte": null,
+      "sugestao": "Checar a figura do trajeto do VI nervo (s33i1/s35i*); se ela não mostrar a origem e o trajeto, reduzir a assertiva da explicação."
+    },
+    {
+      "tipo": "fonte_suspeita",
+      "onde": "fonte, slide 40 (repercutido no quiz Q26 e Q27)",
+      "gravidade": "baixa",
+      "o_que": "A fonte afirma ao mesmo tempo que a paralisia completa do III preserva o reto lateral e o oblíquo superior e que há 'ausência de movimentos verticais' — se o oblíquo superior funciona, algum movimento vertical (e a intorção) deveria existir.",
+      "na_fonte": "Completa => pior prognostico (preserva o RL e OS) ... Ausência de mov. verticais ... Intorção",
+      "sugestao": "Manter o quiz fiel à fonte, mas registrar na explicação que a motilidade vertical é mínima/gravemente reduzida, e não nula, para não gerar contradição interna."
+    }
+  ],
+  "veredito": "Material muito fiel à fonte: as definições, os números (6 meses, 35Δ, 30–35Δ, 1–3 anos, 2–4 anos, 5 anos, 6 meses/15 dias) e as classificações conferem com os slides, sem erro factual relevante; os poucos pontos sinalizados são de baixa gravidade e provavelmente sustentados por figuras não visíveis.",
+  "tema": "estrabismo",
+  "disciplina": "OFTALMO"
+}

@@ -155,7 +155,7 @@ Investigue tristeza, anedonia, ganho ou perda de peso, sonolência ou insônia, 
 | --- | --- | --- |
 | **GDS-15** (Escala de Depressão Geriátrica) | 0 a 15 | **> 5 = suspeita de depressão** |
 | GDS-5 (versão ultracurta) | 0 a 5 | Triagem rápida |
-| **PHQ-9** | 0 a 30 | **> 10 = chance de depressão** |
+| **PHQ-9** | 0 a 27 | **> 10 = chance de depressão** |
 | **Escala de Cornell** (depressão na demência) | 0 a 38 | < 6 sem sintomas · > 10 depressão maior provável · **> 12 corte clínico** · > 18 depressão maior definida |
 | Critérios do DSM-5 | 0 a 9 | Diagnóstico formal |
 
@@ -235,7 +235,7 @@ Perda involuntária aos esforços, urgência ou mista? Usa fraldas/absorventes p
 
 #### Comunicação: visão e audição
 
-- **Teste de Snellen** — aplicado a 5-6 metros; acuidade visual normal é **20/20 (linha 8)**.
+- **Teste de Snellen** — aplicado a 6 metros; acuidade visual normal é **20/20 (linha 8)**.
 - **Teste do sussurro** — o examinador pronuncia a 60 cm de cada ouvido uma combinação de números, letras ou pergunta simples ("Qual o seu nome?"); se o paciente repetir pelo menos metade da sequência (ex.: 3 de 6 caracteres), o teste é **positivo**, ou seja, audição normal para triagem. É só triagem: encaminhe ao otorrino para audiometria.
 - A **hipoacusia é fator de risco para demência** e deve ser tratada precocemente.
 - Avaliar também fala, voz e **deglutição** (disfagia na demência leva a broncoaspiração) e a saúde bucal — dentes malcuidados são fator de risco para endocardite.

@@ -1,0 +1,31 @@
+{
+  "achados": [
+    {
+      "tipo": "erro_factual",
+      "onde": "resumo — tabela impulsividade × compulsividade",
+      "gravidade": "baixa",
+      "o_que": "A tabela afirma que, na compulsividade, \"não há prazer direto no ato\", generalizando para todo comportamento compulsivo o que a fonte diz apenas do TOC; a própria fonte descreve comportamentos repetitivos focados no corpo com satisfação e recompensa.",
+      "na_fonte": "Não há prazer direto algum na realização destes atos inúteis (TOC) — mas, sobre a escoriação de pele: \"Sofrimento + satisfação, alívio e recompensa\"",
+      "sugestao": "Restringir a afirmação ao TOC/rituais e ressalvar que nos comportamentos repetitivos focados no corpo e na cleptomania o ato produz alívio e satisfação, ainda que seguidos de culpa."
+    },
+    {
+      "tipo": "divergencia",
+      "onde": "resumo — tabela, linha \"Direção do erro\" vs quiz Q6/Q7",
+      "gravidade": "baixa",
+      "o_que": "O resumo atribui a pressão \"de baixo para cima\" apenas à impulsividade, deixando para a compulsividade somente \"hábito automatizado, rigidez cognitiva\"; o quiz e a fonte dizem que a pressão excessiva vinda de baixo vale para as duas — do estriado ventral na impulsividade e do dorsal na compulsividade.",
+      "na_fonte": "falha nos sistemas de inibição de resposta – insuficiente controle cognitivo de cima para baixo – ou muita pressão vinda de baixo para cima do estriado ventral para impulsividade ou do estriado dorsal para compulsividade",
+      "sugestao": "Reescrever a célula da compulsividade incluindo também a hipótese de pressão excessiva de baixo para cima a partir do estriado dorsal, como faz a explicação do Q7."
+    },
+    {
+      "tipo": "fora_da_fonte",
+      "onde": "resumo — seção Sexualidade",
+      "gravidade": "baixa",
+      "o_que": "O resumo exemplifica a hipersexualidade como sintoma da mania; a fonte apenas diz que é sintoma presente em outras patologias, sem nomear a mania.",
+      "na_fonte": "Hipersexualidade — Sintoma presente em outras patologias / Ou uma manifestação de dependência",
+      "sugestao": "Retirar o exemplo \"mania\" ou marcá-lo como exemplo clínico do autor do resumo, não da aula."
+    }
+  ],
+  "veredito": "Material globalmente fiel à fonte: alternativas corretas, doses, cortes e classificações conferem com os slides, e os poucos problemas estão em generalizações da tabela comparativa do resumo, de baixa gravidade.",
+  "tema": "impulsividade_e_compulsividade",
+  "disciplina": "Psiquiatria"
+}

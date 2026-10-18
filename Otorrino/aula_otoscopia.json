@@ -290,15 +290,15 @@
       "explanation": "O triângulo luminoso depende da forma cônica preservada da membrana e da sua transparência, de modo que sua presença bem definida indica, na maioria das vezes, membrana e orelha média normais. Ele se apaga ou se deforma no abaulamento e na retração."
     },
     {
-      "question": "Em uma otoscopia, o cabo do martelo e o cone de luz apontam para a frente do crânio do paciente. A membrana examinada é a:",
+      "question": "Em uma otoscopia, o cabo do martelo e o cone de luz aparecem no lado esquerdo do campo visual do examinador. A membrana examinada é a:",
       "options": [
-        "esquerda, pois ambos apontam anteriormente",
-        "direita, pois ambos apontam anteriormente",
-        "esquerda, pois ambos apontam posteriormente",
-        "direita, pois ambos apontam posteriormente"
+        "esquerda, pois ambos apontam para a face anterior",
+        "direita, pois ambos apontam para a face anterior",
+        "esquerda, pois ambos apontam para a face posterior",
+        "direita, pois ambos apontam para a face posterior"
       ],
       "correctIndex": 0,
-      "explanation": "O eixo superior do cabo do martelo e o cone de luz apontam sempre para a face anterior do crânio. Localizando para que lado do campo eles apontam, deduz-se onde está o nariz do paciente e, com isso, a lateralidade: apontando para a frente, é a orelha esquerda."
+      "explanation": "O cabo do martelo e o cone de luz apontam sempre para a face anterior do crânio, nas duas orelhas — por isso 'apontar para a frente' não distingue lado nenhum. O que distingue é onde eles caem no campo visual: ao examinar a orelha esquerda, a face anterior do paciente fica à esquerda do campo; na direita, fica à direita. Daí o cone de luz às 7 horas na esquerda e às 5 horas na direita."
     },
     {
       "question": "A imagem inferior mostra uma membrana timpânica abaulada, hiperemiada e com conteúdo purulento por transparência. O quadro típico é:",

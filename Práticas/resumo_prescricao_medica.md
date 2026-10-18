@@ -98,7 +98,7 @@ Alguns erros de prescrição aparecem com tanta frequência na prática clínica
 
 > **Duplicação do bloqueio do sistema renina-angiotensina-aldosterona.** Manter um IECA (por exemplo, enalapril) e um BRA (por exemplo, losartana) simultaneamente após uma otimização terapêutica hospitalar é um erro real e recorrente: os dois fármacos atuam no mesmo eixo, e a soma eleva o risco de hipercalemia e lesão renal aguda. Antes da alta, um dos dois deve ser suspenso, com checagem de potássio e função renal.
 
-> **Erro de dígito na dose de levotiroxina.** Transcrever 50 mcg como 150 mcg — um erro de dose dez vezes maior — expõe o paciente a tireotoxicose. A prevenção está em conferir sistematicamente a dose de alta contra a lista de medicamentos em uso antes da internação, com dupla checagem em qualquer transcrição manual.
+> **Erro de dígito na dose de levotiroxina.** Transcrever 50 mcg como 150 mcg — um erro de dose três vezes maior (o gabarito da aula diz "10x", mas 150/50 = 3) — expõe o paciente a tireotoxicose. A prevenção está em conferir sistematicamente a dose de alta contra a lista de medicamentos em uso antes da internação, com dupla checagem em qualquer transcrição manual.
 
 > **Desmame de benzodiazepínico em idoso.** Interromper abruptamente um benzodiazepínico usado cronicamente para insônia expõe o paciente a convulsão e efeito rebote. A retirada segura reduz a dose gradualmente, entre 10% e 25% a cada 1 a 2 semanas, sem substituir por outro hipnótico-sedativo — e, enquanto durar, a prescrição continua exigindo notificação de receita azul.
 

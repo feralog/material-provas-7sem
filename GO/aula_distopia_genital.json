@@ -106,13 +106,13 @@
     {
       "question": "Na analogia dos dois pilares do suporte pélvico, o que corresponde aos cabos que trabalham sob tensão?",
       "options": [
-        "As fáscias e os ligamentos pélvicos",
+        "Os ligamentos uterossacros e transversos",
         "A musculatura do assoalho pélvico",
         "Os ossos e as articulações da pelve",
-        "A mucosa e a submucosa vaginal"
+        "A mucosa e a submucosa da vagina"
       ],
       "correctIndex": 0,
-      "explanation": "Fáscias e ligamentos funcionam como cabos sob tensão (suspensão), enquanto a musculatura ativa do assoalho pélvico funciona como pilares de apoio (sustentação). Quando os cabos falham, a carga recai sobre os pilares musculares, e a falha combinada dos dois sistemas produz o prolapso.",
+      "explanation": "Só os ligamentos formam o aparelho de suspensão, trabalhando como cabos sob tensão. A fáscia endopélvica pertence ao aparelho de sustentação, junto ao músculo elevador do ânus, que faz o papel dos pilares de apoio. Quando os cabos falham, a carga recai sobre os pilares, e a falha combinada produz o prolapso.",
       "image": "s22i1",
       "imageCaption": "Suspensão e sustentação como cabos e pilares"
     },

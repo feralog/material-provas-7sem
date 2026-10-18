@@ -203,7 +203,7 @@ acompanhando a queda da amplitude acomodativa.
 
 ---
 
-## As quatro ametropias lado a lado
+## Os quatro erros de refração lado a lado
 
 ![As três ametropias e o formato da lente que corrige cada uma](img:s20i1)
 

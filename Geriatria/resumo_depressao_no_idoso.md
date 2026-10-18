@@ -205,7 +205,7 @@ A sertralina é ainda o ISRS mais seguro no coração (estudo SADHART), sem alte
 
 ### Duais
 
-Desvenlafaxina 50 mg/dia (máx. 100) · duloxetina 60 mg/dia (máx. 120) · venlafaxina 75 mg/dia (máx. 225).
+Desvenlafaxina 50 mg/dia (faixa 50-400; bula 200) · duloxetina 60 mg/dia (máx. 120) · venlafaxina 75 mg/dia (máx. 225).
 
 | | Desvenlafaxina | Venlafaxina | Duloxetina |
 |---|---|---|---|

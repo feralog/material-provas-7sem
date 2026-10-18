@@ -1,0 +1,31 @@
+{
+  "achados": [
+    {
+      "tipo": "fonte_suspeita",
+      "onde": "fonte pg12 (SARC-F) / quiz Q14",
+      "gravidade": "baixa",
+      "o_que": "A fonte escreve \"Se >10\" logo abaixo do SARC-F, mas o escore do SARC-F vai de 0 a 10; o corte >10 (isto é, ≥11) só faz sentido para o SARC-CalF, que é justamente o valor usado no quiz.",
+      "na_fonte": "SARC-F Identificar (não diagnosticar) indivíduos risco com aumentado para Sarcopenia Se >10",
+      "sugestao": "Conferir as figuras pg12/pg14 e, se o corte >10 pertencer ao SARC-CalF, deixar isso explícito, para não sugerir que o SARC-F pode pontuar acima de 10."
+    },
+    {
+      "tipo": "possivelmente_na_imagem",
+      "onde": "quiz Q19 (sentar e levantar 5 vezes)",
+      "gravidade": "baixa",
+      "o_que": "O ponto de corte \"acima de 15 segundos\" não aparece no texto extraído; a pg19 descreve apenas a técnica e a tentativa única.",
+      "na_fonte": "Posição correta para o teste: Indivíduo sentado, com as costas apoiadas numa cadeira e os braços cruzados sobre o tronco... Considere uma única tentativa.",
+      "sugestao": "Confirmar o corte na figura da pg19; se a figura trouxer outro valor, corrigir alternativa e explicação."
+    },
+    {
+      "tipo": "possivelmente_na_imagem",
+      "onde": "quiz Q17 (outras causas de força baixa)",
+      "gravidade": "baixa",
+      "o_que": "A lista de diagnósticos diferenciais da força reduzida (depressão, AVC, doença vascular periférica) não está no texto extraído da aula.",
+      "na_fonte": null,
+      "sugestao": "Confirmar na figura da pg19/pg20 que esse diferencial é realmente apresentado na aula; caso contrário, retirar a questão."
+    }
+  ],
+  "veredito": "Quiz e resumo são fiéis à fonte nos conceitos, cortes, doses e classificações que o texto permite conferir, sem divergências entre si; as ressalvas são de verificação de figuras (SARC-CalF, teste da cadeira e diagnósticos diferenciais), não de conteúdo equivocado.",
+  "tema": "fragilidade_e_sarcopenia",
+  "disciplina": "Geriatria"
+}

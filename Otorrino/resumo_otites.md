@@ -6,7 +6,7 @@
 |---|---|---|---|
 | Otite externa aguda | Dor à palpação do trago | Eritema e edema do meato, otorreia | Limpeza e antibiótico tópico |
 | Otite média aguda | Otalgia espontânea, febre | Abaulamento e hiperemia da membrana | Observar 48-72 h ou amoxicilina |
-| Otite média com efusão | Hipoacusia, plenitude | Membrana sem brilho, nível líquido | Observar 3 meses, depois tubo |
+| Otite média com efusão | Hipoacusia, plenitude | Membrana sem brilho, nível líquido | Observar 3 meses; cirurgia se critérios |
 | Otite média crônica simples | Otorreia recorrente sem odor | Perfuração seca ou úmida | Tópico nas crises, timpanoplastia |
 | Otite média crônica colesteatomatosa | Otorreia fétida, hipoacusia | Retração atical, queratina perlácea | Mastoidectomia |
 

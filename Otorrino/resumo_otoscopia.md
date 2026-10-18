@@ -121,7 +121,7 @@ estruturas da orelha média por transparência.
 
 | Estrutura | O que é |
 |---|---|
-| **Parte tensa** | a maior parte da membrana, cerca de 90% |
+| **Parte tensa** | a maior parte da membrana, cerca de 4/5 |
 | **Parte flácida** | a porção superior, aproximadamente 1/5 da membrana |
 | **Cabo do martelo (manúbrio)** | relevo linear que atravessa a membrana |
 | **Processo lateral do martelo** | saliência curta no alto do cabo, mais proeminente em algumas pessoas |

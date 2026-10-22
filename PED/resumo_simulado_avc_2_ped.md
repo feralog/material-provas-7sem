@@ -1,32 +1,34 @@
 ## Como ler este simulado
 
-São 19 questões transcritas do formulário da AVC 2 de Pediatria, e elas se distribuem em três eixos muito desiguais. **Oito** tratam de violência sexual e aborto legal, **sete** de erros inatos da imunidade e **quatro** de alergia e dermatologia. Não é dispersão: é um recado sobre onde a prova concentra peso.
+O formulário da AVC 2 de Pediatria tem **20 questões objetivas e uma dissertativa**. As objetivas se distribuem em três eixos muito desiguais: **oito** tratam de violência sexual e aborto legal, **sete** de erros inatos da imunidade e **cinco** de alergia e dermatologia. Não é dispersão — é um recado sobre onde a prova concentra peso. Some a dissertativa, que também é de imunodeficiência, e metade da prova está nesses dois blocos.
 
-O gabarito das **questões 1 a 11 é oficial**, confirmado nas telas de correção do formulário. Da 12 em diante é reconstrução pelo conteúdo. Vale registrar que as onze oficiais confirmaram, uma a uma, o que a reconstrução já apontava — o que dá alguma confiança nas oito restantes, embora não seja garantia.
+**O gabarito das 20 objetivas é oficial**, conferido nas telas de correção. Só a resposta da dissertativa é reconstruída.
 
-| Q | Tema | Resposta | Fonte |
-| --- | --- | --- | --- |
-| 1 | Dermatite atópica impetiginizada | A | Oficial |
-| 2 | Profilaxias na violência sexual | D | Oficial |
-| 3 | Recusa de atendimento à vítima | A | Oficial |
-| 4 | Sinal de alerta de imunodeficiência | E | Oficial |
-| 5 | Aborto legal: o que é exigido | B | Oficial |
-| 6 | Dermatite atópica leve | A | Oficial |
-| 7 | Wiskott-Aldrich | A | Oficial |
-| 8 | Vacinas contraindicadas | B | Oficial |
-| 9 | Profilaxia e notificação | B | Oficial |
-| 10 | Diagnóstico de dermatite atópica | C | Oficial |
-| 11 | Gestação aos 13 anos, 23 semanas | B | Oficial |
-| 12 | Investigação laboratorial | B | Estimado |
-| 13 | Limite gestacional (julgamento) | Incorreto | Estimado |
-| 14 | Doença granulomatosa crônica | C | Estimado |
-| 15 | Frases de validação | D (II e III) | Estimado |
-| 16 | Hipogamaglobulinemia | B | Estimado |
-| 17 | Urticária aguda alimentar | A | Estimado |
-| 18 | SCID e triagem neonatal | A | Estimado |
-| 19 | Estupro de vulnerável: as três condutas | A | Estimado |
+| Q | Tema | Resposta |
+| --- | --- | --- |
+| 1 | Dermatite atópica impetiginizada | A |
+| 2 | Profilaxias na violência sexual | D |
+| 3 | Recusa de atendimento à vítima | A |
+| 4 | Sinal de alerta de imunodeficiência | E |
+| 5 | Aborto legal: o que é exigido | B |
+| 6 | Dermatite atópica leve | A |
+| 7 | Wiskott-Aldrich | A |
+| 8 | Vacinas contraindicadas | B |
+| 9 | Profilaxia e notificação | B |
+| 10 | Diagnóstico de dermatite atópica | C |
+| 11 | Gestação aos 13 anos, 23 semanas | B |
+| 12 | Investigação laboratorial | B |
+| 13 | Urticária aguda: conduta | B |
+| 14 | Limite gestacional (julgamento) | Incorreto |
+| 15 | Doença granulomatosa crônica | C |
+| 16 | Frases de validação | D (II e III) |
+| 17 | Hipogamaglobulinemia | B |
+| 18 | Urticária aguda: mecanismo | A |
+| 19 | SCID e triagem neonatal | A |
+| 20 | Estupro de vulnerável: as três condutas | A |
+| — | **Dissertativa:** caso de SCID | *resposta estimada, na última seção* |
 
-> **Duas questões foram adaptadas para caber no formato do quiz.** A questão 13 era de julgamento, com duas opções (Correto / Incorreto), e ganhou quatro alternativas com a justificativa dentro de cada uma — o conteúdo cobrado é o mesmo. E a alternativa D da questão 15 aparece no formulário escrita como "II e II", erro de digitação evidente; aqui está como "II e III". A grafia "Wisckott" da questão 7 foi mantida como no formulário; o epônimo correto é **Wiskott-Aldrich**.
+> **Duas questões foram adaptadas para caber no formato do quiz.** A questão 14 era de julgamento, com duas opções (Correto / Incorreto), e ganhou quatro alternativas com a justificativa dentro de cada uma — o conteúdo cobrado é o mesmo. E a alternativa D da questão 16, que é a correta no gabarito oficial, aparece escrita como "II e II"; aqui está como "II e III", que é o que ela quer dizer. A grafia "Wisckott" da questão 7 também foi mantida como no formulário — o epônimo correto é **Wiskott-Aldrich**.
 
 ---
 
@@ -177,7 +179,7 @@ A contraindicação na imunodeficiência recai sobre o **agente vivo atenuado**,
 
 ---
 
-## Dermatite atópica: a mesma doença, duas condutas
+## Alergia e dermatologia: as cinco questões
 
 Duas questões descreveram dermatite atópica e pediram condutas diferentes. A diferença não está no diagnóstico — está em **haver ou não infecção secundária**.
 
@@ -205,11 +207,23 @@ A **crosta melicérica** — amarelada, cor de mel — é a assinatura do impeti
 
 O que *não* entra em nenhuma das duas: corticoide sistêmico em doença leve, dieta de exclusão às cegas (dermatite atópica não se trata tirando leite da dieta), sabonete bactericida e banho prolongado (pioram a barreira, que já está doente), e inibidor de calcineurina — tacrolimo e pimecrolimo são poupadores de corticoide para áreas delicadas e manutenção, **não** para pele infectada.
 
----
+#### Urticária aguda: o mesmo caso, duas perguntas
 
-## Urticária aguda e os quatro tipos de hipersensibilidade
+A prova usa **a mesma vinheta duas vezes** — menina de 3 anos, urticária 30 minutos depois de comer ovo e camarão, sem sintoma respiratório e sem hipotensão — e pergunta coisas diferentes: numa quer o **mecanismo**, na outra a **conduta**.
 
-Urticária em minutos depois do alimento, na **segunda** exposição, sem sintoma respiratório e sem hipotensão: hipersensibilidade do **tipo I**. A primeira exposição sensibilizou, produzindo IgE específica que se fixou na superfície dos mastócitos; a reexposição fez a ponte entre duas moléculas de IgE e disparou a degranulação. A histamina liberada produz a pápula edematosa e o prurido.
+> **Atenção à diferença entre as duas versões:** uma diz que a criança comeu o alimento *pela primeira vez*, a outra *pela segunda vez*. É inconsistência do próprio formulário. Para o mecanismo, a segunda exposição é que faz sentido — sensibilização e reexposição são etapas distintas da via IgE.
+
+O **mecanismo** é hipersensibilidade do **tipo I**: a exposição anterior sensibilizou, produzindo IgE específica que se fixou na superfície dos mastócitos; a reexposição fez a ponte entre duas moléculas de IgE e disparou a degranulação. A histamina liberada produz a pápula edematosa e o prurido.
+
+A **conduta**, sem sinal de anafilaxia, é **anti-histamínico**. Vale fixar os dois níveis, porque a prova cobra um e a prática recomenda o outro:
+
+| | O que o gabarito marca | O que as diretrizes atuais preferem |
+| --- | --- | --- |
+| Urticária aguda sem anafilaxia | anti-H1 de **1ª geração, endovenoso** | anti-H1 de **2ª geração, via oral** — mesma eficácia, sem sedação |
+
+Corticoide sistêmico é adjuvante nos casos extensos ou refratários, não conduta inicial isolada; antibiótico não tem papel nenhum; e "observar por 24 horas" deixa a criança sintomática sem tratar. Adrenalina só entraria com comprometimento respiratório, hipotensão ou dois sistemas acometidos — não é o caso aqui, e nem foi oferecida.
+
+#### Os quatro tipos de hipersensibilidade
 
 | Tipo | Mediador | Tempo | Exemplo |
 | --- | --- | --- | --- |
@@ -219,3 +233,51 @@ Urticária em minutos depois do alimento, na **segunda** exposição, sem sintom
 | **IV** | linfócito T, celular | **48 a 72 h** | dermatite de contato, teste tuberculínico |
 
 > **O relógio resolve a questão.** Minutos é tipo I; 48 a 72 horas é tipo IV; dias com artralgia e febre é tipo III. Se a alternativa oferecer bradicinina, ela está descrevendo angioedema por inibidor da ECA, que não é mecanismo imunológico nem cursa com urticária.
+
+---
+
+## A dissertativa: um caso de SCID
+
+É a única questão discursiva, e cai exatamente sobre o compartimento que a prova mais cobrou. **Não há gabarito nas telas de correção** — o que vem abaixo é a resposta esperada reconstruída pelo caso.
+
+#### O caso
+
+Menino de 14 meses, gestação a termo, parto vaginal sem intercorrências, vacinação em dia. Desde os **4 meses** apresenta otites de repetição (já são seis), **duas pneumonias** (uma com internação e oxigenoterapia) e **diarreia crônica há 3 meses**, com queda do percentil de peso do 50º para o 10º. Sem consanguinidade; um **tio materno** morreu na infância por "infecções repetidas". Ao exame: desnutrido, **sem linfonodo palpável**, **sem amígdala visível**. Hemograma com **linfopenia de 900/mm³**, hemoglobina e plaquetas normais. Radiografia de tórax **sem sombra tímica**.
+
+#### a) Hipótese e bandeiras vermelhas
+
+**Imunodeficiência combinada grave (SCID)**, provavelmente a forma ligada ao X, por defeito da cadeia γ comum (gene *IL2RG*).
+
+| Bandeira vermelha | Por que conta |
+| --- | --- |
+| Início aos **4 meses** | é quando acabam os anticorpos maternos transferidos pela placenta |
+| 6 otites e 2 pneumonias | infecção de repetição acima de qualquer corte de normalidade |
+| **Diarreia crônica com perda de percentil** | falha de crescimento é marcador de gravidade, não detalhe |
+| Tio materno morto na infância | sugere **herança ligada ao X** |
+| **Ausência de linfonodo e de amígdala** | não há tecido linfoide porque não há linfócito para povoá-lo |
+| Linfopenia de **900/mm³** | em lactente o esperado passa de 3.000; abaixo de 2.500 já investiga |
+| **Ausência de timo** na radiografia | o órgão onde o linfócito T deveria amadurecer não se desenvolveu |
+
+> O achado mais fácil de perder é a **ausência de amígdalas**. Numa criança de 14 meses com infecções de repetição, amígdala invisível e linfonodo impalpável não são "exame normal" — são tecido linfoide que nunca se formou.
+
+#### b) Mecanismo e conduta
+
+A mutação no *IL2RG* compromete a **cadeia γ comum**, compartilhada pelos receptores de IL-2, IL-4, IL-7, IL-9, IL-15 e IL-21. O efeito se lê receptor a receptor:
+
+- sem sinalização de **IL-7**, o linfócito T não se desenvolve;
+- sem sinalização de **IL-15**, a célula NK não se desenvolve;
+- o linfócito **B existe, mas não funciona**, por falta de ajuda T e de sinalização de IL-21.
+
+O fenótipo resultante é **T− B+ NK−**, com falência simultânea da imunidade celular e da humoral — daí o nome "combinada".
+
+A conduta imediata:
+
+- **isolamento protetor**;
+- **reposição de imunoglobulina** endovenosa;
+- **profilaxia de *Pneumocystis jirovecii*** com sulfametoxazol-trimetoprima, mais antifúngico e antiviral conforme o caso;
+- tratamento agressivo das infecções e **suporte nutricional**;
+- hemoderivados apenas **irradiados, leucodepletados e CMV-negativos** — sangue não irradiado pode causar doença do enxerto contra o hospedeiro transfusional;
+- **encaminhamento urgente para transplante** de células-tronco hematopoiéticas, que é o tratamento curativo e tem resultado tanto melhor quanto mais precoce;
+- **aconselhamento genético** da família.
+
+> **A medida que NÃO se faz:** vacina de agente vivo atenuado — BCG, rotavírus, tríplice viral, varicela, febre amarela, pólio oral. E atenção à pegadinha do enunciado: "vacinação em dia" num lactente brasileiro significa que ele **já recebeu BCG e provavelmente rotavírus**, então é preciso investigar ativamente infecção vacinal disseminada, como a becegeíte.

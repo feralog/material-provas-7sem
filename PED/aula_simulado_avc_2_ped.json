@@ -1,8 +1,8 @@
 {
   "titulo": "Simulado AVC 2 PED",
   "eyebrow": "Pediatria · Simulado da prova",
-  "subtitulo": "As 19 questões do formulário, com a correta e o porquê",
-  "intro": "Transcrição do simulado da AVC 2 de Pediatria. Três eixos se repetem: violência sexual e aborto legal (8 questões), erros inatos da imunidade (7) e alergia e dermatologia (4). O gabarito das 11 primeiras é oficial, vindo das telas de correção do formulário; o das demais foi reconstruído pelo conteúdo. As alternativas são as do formulário original — só a ordem muda, porque o quiz embaralha a cada rodada.",
+  "subtitulo": "As 20 questões objetivas do formulário, com gabarito oficial",
+  "intro": "Transcrição do simulado da AVC 2 de Pediatria, com o gabarito oficial das 20 questões objetivas conferido nas telas de correção. Três eixos se repetem: violência sexual e aborto legal (8 questões), erros inatos da imunidade (7) e alergia e dermatologia (5). A questão dissertativa, sobre um caso de SCID, está no resumo. As alternativas são as do formulário — só a ordem muda, porque o quiz embaralha a cada rodada.",
   "questoes": [
     {
       "question": "Pré-escolar, sexo feminino, 3 anos de idade, apresenta lesões eczematosas pruriginosas desde os 6 meses de vida, que geralmente pioram na época do inverno. Nas últimas duas semanas, surgiram pápulas eritematosas exsudativas com crostas melicéricas em fossas cubitais e poplíteas. Mãe relata prurido intenso, que piora após banho quente. Ao exame clínico, apresenta áreas de liquenificação, escoriações e crostas amareladas em membros superiores e inferiores. Com base no diagnóstico mais provável, a conduta adequada é:",
@@ -137,6 +137,17 @@
       ],
       "correctIndex": 0,
       "explanation": "Letra B no formulário. Infecção sinopulmonar de repetição por bactéria encapsulada somada a giardíase recorrente é o retrato da deficiência de anticorpos, e a investigação começa por dosar as imunoglobulinas e testar a resposta a antígeno polissacarídeo, que é justamente o que falha. O enunciado ainda pede APENAS instrumentos laboratoriais: tomografia de seios da face é imagem e espirometria é função pulmonar, o que elimina duas alternativas antes mesmo do raciocínio imunológico. A IgE específica investiga atopia, não imunodeficiência."
+    },
+    {
+      "question": "Menina, 3 anos de idade, é levada ao Pronto Atendimento com história de manchas avermelhadas e pruriginosas pelo corpo, iniciadas 30 minutos após o almoço. A mãe relata que a criança comeu ovo mexido e camarão pela primeira vez. Ao exame físico, observam-se pápulas eritematosas e edematosas em tronco e membros, prurido intenso, sem sinais respiratórios ou hipotensão. Indique a conduta inicial mais apropriada para esse caso:",
+      "options": [
+        "Iniciar de imediato o uso de anti-histamínico intravenoso de primeira geração.",
+        "Evitar o alimento suspeito por 24 horas e observar a evolução.",
+        "Administrar corticosteroide sistêmico.",
+        "Fazer uso de antibiótico profilático."
+      ],
+      "correctIndex": 0,
+      "explanation": "Letra B no formulário. É urticária aguda SEM sinal de anafilaxia — não há comprometimento respiratório nem hipotensão —, e o tratamento de primeira linha é o anti-histamínico; adrenalina não entra aqui, nem é oferecida. Vale saber que as diretrizes atuais preferem anti-H1 de SEGUNDA geração por via oral nesse cenário, por igual eficácia sem sedação, mas a alternativa marcada como correta é a de primeira geração endovenosa. Corticoide sistêmico é adjuvante, não conduta inicial isolada, e antibiótico não tem papel nenhum numa reação alérgica."
     },
     {
       "question": "Clara, 16 anos, chega à UBS com dor hipogástrica e disúria há três dias, calafrios, sonolenta, febril, sudoreica, com livedo, mal perfundida e taquicárdica. Refere atraso menstrual, sem saber a data da última menstruação. Ao exame, há equimoses em diferentes estágios de evolução em tórax e abdome, e ela chora e pede para não falar sobre elas. Julgue a afirmação: \"uma vez confirmada a gravidez de Clara, mesmo que tenha sido resultado de violência sexual, ela não tem direito ao aborto legal devido à idade gestacional, que já ultrapassa as 12 semanas\". A afirmação é:",

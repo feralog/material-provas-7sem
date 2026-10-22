@@ -82,6 +82,13 @@ AVC2 = {
     "quiz_alergia_e_atopia.html": "Alergias",
 }
 
+# Entram no filtro da AVC 2 mas NAO sao tema da prova: sao simulado, e contar
+# um simulado como tema faria o contador dizer "30 de 30" sem que exista um
+# conteudo novo coberto.
+AVC2_EXTRA = {
+    "quiz_simulado_avc_2_ped.html",
+}
+
 
 def ler_meta(p: Path):
     src = p.read_text(encoding="utf-8")
@@ -207,7 +214,9 @@ def main():
             linhas = []
             for m in itens:
                 n += 1
-                marca = ' data-avc2="1"' if m["arquivo"] in AVC2 else ""
+                marca = (' data-avc2="1"'
+                         if m["arquivo"] in AVC2 or m["arquivo"] in AVC2_EXTRA
+                         else "")
                 linhas.append(
                     '      <a class="card"{a} href="Quizzes/{f}">'
                     '<span class="n">{i:02d}</span>'
@@ -233,7 +242,8 @@ def main():
 
         # botao AVC 2: destaca o que cai na prova e apaga o resto
         existem = {m["arquivo"] for m in metas}
-        tem = [m for m in metas if m["arquivo"] in AVC2]
+        tem = [m for m in metas
+               if m["arquivo"] in AVC2 or m["arquivo"] in AVC2_EXTRA]
         q_avc2 = sum(m["q"] for m in tem)
         # conta TEMAS, nao arquivos: "Doencas do SNP" sao dois materiais
         temas_ok = {AVC2[a] for a in AVC2 if a in existem}

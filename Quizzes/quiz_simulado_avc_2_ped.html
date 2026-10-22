@@ -1,0 +1,980 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Simulado AVC 2 PED</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;450;500;600&display=swap" rel="stylesheet">
+<style>
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0}
+  body{background:#f5f3ef;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+  button{font:inherit;color:inherit;font-family:'IBM Plex Sans',system-ui,sans-serif}
+  a{color:#2b57cc;text-decoration:none}
+  a:hover{color:#1e3f9c;text-decoration:underline}
+  @keyframes qFade{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+  @keyframes qDrawer{from{opacity:0;transform:translateY(-4px)}to{opacity:1;transform:none}}
+
+  /* hovers — no canvas eram style-hover, aqui viram CSS de verdade */
+  .h-dark:hover{background:#2b57cc!important;transform:translateY(-1px)}
+  .h-darkflat:hover{background:#2b57cc!important}
+  .h-line:hover{border-color:#121a2b!important}
+  .h-ink:hover{color:#121a2b!important}
+  .h-opt:not(.locked):hover{border-color:var(--hbd)!important;transform:translateY(-1px)}
+  .h-card:hover{border-color:#121a2b!important;transform:translateY(-2px)}
+
+  /* tipografia do resumo */
+  .rsm{font-size:16.5px;line-height:1.72;color:#2a3141;max-width:64ch}
+  .rsm h2{font-family:'Newsreader',Georgia,serif;font-size:27px;font-weight:500;letter-spacing:-.02em;line-height:1.2;margin:42px 0 14px;padding-top:20px;border-top:1px solid #e4e0d8;text-wrap:pretty}
+  .rsm h2:first-child{margin-top:0;padding-top:0;border-top:0}
+  .rsm h3{font-family:'Newsreader',Georgia,serif;font-size:20px;font-weight:600;letter-spacing:-.01em;margin:28px 0 10px;text-wrap:pretty}
+  .rsm h4{font-family:'IBM Plex Mono',monospace;font-size:11px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:#2b57cc;margin:24px 0 8px}
+  .rsm p{margin:0 0 15px;text-wrap:pretty}
+  .rsm ul,.rsm ol{margin:0 0 15px;padding-left:22px}
+  .rsm li{margin-bottom:7px;text-wrap:pretty}
+  .rsm li>ul,.rsm li>ol{margin:7px 0 0}
+  .rsm strong{font-weight:600;color:#121a2b}
+  .rsm em{font-style:italic}
+  .rsm code{font-family:'IBM Plex Mono',monospace;font-size:.88em;background:#efece5;border:1px solid #e4e0d8;border-radius:5px;padding:1px 5px}
+  .rsm hr{border:0;border-top:1px solid #e4e0d8;margin:32px 0}
+  .rsm blockquote{margin:0 0 18px;padding:15px 18px;background:#f7f6f2;border-left:2.5px solid #2b57cc;border-radius:0 12px 12px 0;font-size:15px;line-height:1.65;color:#39404f}
+  .rsm blockquote p:last-child{margin-bottom:0}
+  .rsm .tbl{overflow-x:auto;margin:0 0 20px;border:1px solid #e4e0d8;border-radius:12px;background:#fff}
+  .rsm table{border-collapse:collapse;width:100%;font-size:14px;line-height:1.5}
+  .rsm th{text-align:left;font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.09em;text-transform:uppercase;color:#8a8578;font-weight:600;padding:11px 14px;background:#faf9f6;border-bottom:1px solid #e4e0d8;white-space:nowrap}
+  .rsm td{padding:11px 14px;border-bottom:1px solid #efece5;vertical-align:top;text-wrap:pretty}
+  .rsm tr:last-child td{border-bottom:0}
+  .rsm .key{background:#f2f6fb;border:1px solid #d6e2f4;border-radius:12px;padding:16px 18px;margin:0 0 18px}
+  .rsm .key>*:last-child{margin-bottom:0}
+
+  /* figuras — no resumo e na questao */
+  .fig{margin:0 0 20px;background:#fff;border:1px solid #e4e0d8;border-radius:14px;overflow:hidden}
+  .fig img{display:block;width:100%;height:auto;cursor:zoom-in}
+  .fig figcaption{font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.06em;color:#8a8578;padding:9px 13px;border-top:1px solid #efece5;background:#faf9f6;text-wrap:pretty}
+  .qfig{margin:0 0 20px}
+
+  /* lightbox */
+  #lb{position:fixed;inset:0;z-index:90;background:rgba(18,26,43,.86);display:none;align-items:center;justify-content:center;padding:24px;cursor:zoom-out}
+  #lb.on{display:flex;animation:qFade .16s ease}
+  #lb img{max-width:100%;max-height:100%;border-radius:10px;box-shadow:0 24px 60px rgba(0,0,0,.5)}
+
+  @media(max-width:560px){
+    .rsm{font-size:16px}
+    .rsm h2{font-size:24px}
+    .home-grid{grid-template-columns:1fr!important}
+  }
+</style>
+</head>
+<body>
+
+<div style="min-height:100vh;background:#f5f3ef;color:#121a2b;font-family:'IBM Plex Sans',system-ui,sans-serif">
+  <header style="position:sticky;top:0;z-index:30;background:rgba(245,243,239,.94);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid #e4e0d8">
+    <div style="max-width:720px;margin:0 auto;padding:12px 16px 10px" id="hdr"></div>
+  </header>
+  <main style="max-width:720px;margin:0 auto;padding:0 16px 80px" id="stage"></main>
+</div>
+<div id="lb"><img alt=""></div>
+
+<script type="text/html" id="resumoSrc"><h2>Como ler este simulado</h2>
+<p>São 16 questões transcritas do formulário da AVC 2 de Pediatria, e elas se distribuem em três eixos muito desiguais. <strong>Sete</strong> tratam de violência sexual e aborto legal, <strong>seis</strong> de erros inatos da imunidade e <strong>três</strong> de alergia. Não é dispersão: é um recado sobre onde a prova concentra peso.</p>
+<p>O gabarito abaixo foi conferido questão a questão, mas <strong>não é oficial</strong> — ele foi reconstruído a partir do conteúdo, não fornecido pela disciplina. Onde há controvérsia real na literatura, o texto diz qual leitura foi adotada e por quê.</p>
+<div class="tbl"><table><thead><tr><th>Q</th><th>Tema</th><th>Resposta no formulário</th></tr></thead><tbody><tr><td>1</td><td>Dermatite atópica impetiginizada</td><td>A</td></tr><tr><td>2</td><td>Profilaxias na violência sexual</td><td>D</td></tr><tr><td>3</td><td>Sinal de alerta de imunodeficiência</td><td>E</td></tr><tr><td>4</td><td>Aborto legal: exigências</td><td>B</td></tr><tr><td>5</td><td>Dermatite atópica leve</td><td>A</td></tr><tr><td>6</td><td>Vacinas contraindicadas</td><td>B</td></tr><tr><td>7</td><td>Profilaxia e notificação</td><td>B</td></tr><tr><td>8</td><td>Gestação aos 13 anos, 23 semanas</td><td>B</td></tr><tr><td>9</td><td>Investigação laboratorial</td><td>B</td></tr><tr><td>10</td><td>Limite gestacional (julgamento)</td><td>Incorreto</td></tr><tr><td>11</td><td>Doença granulomatosa crônica</td><td>C</td></tr><tr><td>12</td><td>Frases de validação</td><td>D (II e III)</td></tr><tr><td>13</td><td>Hipogamaglobulinemia</td><td>B</td></tr><tr><td>14</td><td>Urticária aguda alimentar</td><td>A</td></tr><tr><td>15</td><td>SCID e triagem neonatal</td><td>A</td></tr><tr><td>16</td><td>Estupro de vulnerável: as três condutas</td><td>A</td></tr></tbody></table></div>
+<blockquote><p><strong>Duas questões foram adaptadas para caber no formato do quiz.</strong> A questão 10 era de julgamento, com duas opções (Correto / Incorreto), e ganhou quatro alternativas com a justificativa dentro de cada uma — o conteúdo cobrado é o mesmo. E a alternativa D da questão 12 aparece no formulário escrita como "II e II", erro de digitação evidente; aqui está como "II e III".</p></blockquote>
+<hr>
+<h2>Violência sexual: o que se faz nas primeiras horas</h2>
+<p>A lógica inteira do atendimento é uma só: <strong>nada espera confirmação</strong>. Não se aguarda sorologia, não se aguarda boletim de ocorrência, não se aguarda perícia. Cada profilaxia tem uma janela, e a janela fecha.</p>
+<h4>As profilaxias e seus prazos</h4>
+<div class="tbl"><table><thead><tr><th>O que</th><th>Esquema</th><th>Janela</th></tr></thead><tbody><tr><td><strong>HIV (PEP)</strong></td><td>tenofovir + lamivudina + dolutegravir, 28 dias</td><td><strong>até 72 h</strong> — quanto antes, melhor</td></tr><tr><td><strong>Sífilis</strong></td><td>penicilina <strong>benzatina</strong> 2,4 milhões UI IM, dose única</td><td>o quanto antes</td></tr><tr><td><strong>Gonorreia</strong></td><td>ceftriaxona 500 mg IM, dose única</td><td>o quanto antes</td></tr><tr><td><strong>Clamídia</strong></td><td>azitromicina 1 g VO, dose única</td><td>o quanto antes</td></tr><tr><td><strong>Tricomoníase</strong></td><td>metronidazol 2 g VO, dose única</td><td>o quanto antes</td></tr><tr><td><strong>Hepatite B</strong></td><td>vacina + imunoglobulina (IGHAHB) se esquema incompleto</td><td>até 14 dias</td></tr><tr><td><strong>Gravidez</strong></td><td>levonorgestrel <strong>1,5 mg</strong> VO, dose única</td><td>até 5 dias, ideal 72 h</td></tr></tbody></table></div>
+<p>Três armadilhas moram nessa tabela, e as três foram cobradas:</p>
+<ul><li><strong>"Após 72 horas" × "até 72 horas".</strong> A PEP se inicia dentro da janela; depois dela, não se inicia mais. Uma preposição trocada inverte a conduta.</li><li><strong>Penicilina benzatina, não cristalina.</strong> A cristalina é endovenosa e se reserva à neurossífilis; a dose de 2,4 milhões UI pertence à benzatina.</li><li><strong>Metronidazol 2 g é tricomoníase, não vaginose bacteriana.</strong> A dose está certa; o rótulo é que está errado.</li></ul>
+<p>E a contracepção de emergência pode vir como 1,5 mg em um comprimido ou <strong>dois comprimidos de 0,75 mg em dose única</strong> — a mesma coisa escrita de outro jeito, e foi assim que a prova escreveu. Não existe contraindicação por estar menstruada, nem risco tromboembólico que a impeça.</p>
+<blockquote><p><strong>Ponto-chave:</strong> se uma alternativa condiciona qualquer profilaxia a exame, laudo ou autorização, ela está errada antes mesmo de você ler o resto.</p></blockquote>
+<hr>
+<h2>Aborto legal: o que a lei pede e o que ela não pede</h2>
+<p>O artigo 128 do Código Penal autoriza a interrupção em duas situações — <strong>risco de vida da gestante</strong> e <strong>gravidez resultante de estupro</strong> —, às quais a jurisprudência somou a <strong>anencefalia</strong> (ADPF 54). É um texto curto, e o que ele <em>não</em> diz é o que mais cai.</p>
+<h4>O que NÃO é exigido</h4>
+<ul><li><strong>Boletim de ocorrência.</strong> A palavra da mulher basta.</li><li><strong>Autorização judicial ou alvará.</strong></li><li><strong>Laudo pericial do IML.</strong> A perícia é do interesse da investigação criminal, não condição do atendimento em saúde.</li><li><strong>Idade gestacional dentro de um limite legal.</strong> O artigo 128 <strong>não fixa prazo nenhum.</strong></li></ul>
+<p>Esse último ponto foi cobrado duas vezes, e vale fixar de onde vêm os números que circulam. Os cortes de <strong>20 a 22 semanas</strong> (ou 500 g) são de norma técnica e de limite de viabilidade fetal: critério assistencial, que orienta a técnica empregada e o serviço capaz de realizá-la. Não são impedimento previsto em lei. E as <strong>12 semanas</strong> não existem em lugar nenhum da legislação brasileira — são um número plausível, tirado de outros países, e é exatamente por parecer plausível que funciona tão bem como distrator.</p>
+<h4>O que é exigido</h4>
+<p>Consentimento da paciente (ou de representante legal, conforme a idade) e o <strong>procedimento de justificação e autorização</strong>, feito pela equipe multidisciplinar, que registra o relato e atesta a compatibilidade entre a idade gestacional e a data referida da violência.</p>
+<h4>Objeção de consciência tem limite</h4>
+<p>O médico pode se recusar, mas <strong>não</strong> em três situações: risco de morte da mulher, ausência de outro profissional que o faça, e qualquer circunstância em que a recusa cause dano ou agravo à saúde. E a objeção nunca dispensa o acolhimento, o atendimento das complicações nem o encaminhamento a quem possa assumir o caso.</p>
+<hr>
+<h2>Estupro de vulnerável, notificação e acolhimento</h2>
+<p><strong>Abaixo de 14 anos não existe consentimento válido.</strong> O artigo 217-A do Código Penal é objetivo: a relação sexual com menor de 14 anos é estupro de vulnerável, independentemente de ter sido desejada, de não ter havido violência física ou coação, e da idade do parceiro — inclusive quando o parceiro também é adolescente. Essa é a chave de duas questões do simulado, e é o ponto em que o enunciado tenta induzir ao erro justamente insistindo na palavra "consensual".</p>
+<p>A consequência prática se desdobra em três condutas, que foi como a prova cobrou:</p>
+<ol><li><strong>O aborto legal está previsto</strong>, porque juridicamente houve estupro.</li><li><strong>Encaminhar ao serviço de referência</strong> em violência sexual e aborto legal, que concentra a equipe multidisciplinar.</li><li><strong>Notificar no SINAN.</strong> A notificação de violência é <strong>compulsória e imediata</strong> (em até 24 horas), independe da autorização da vítima ou da família e independe de boletim de ocorrência. Em menor de 18 anos soma-se a comunicação ao <strong>Conselho Tutelar</strong>, por exigência do ECA.</li></ol>
+<h4>Validar o sofrimento é técnica, não gentileza</h4>
+<p>A prova cobrou reconhecer frases de acolhimento, e o critério é objetivo. Valida quem <strong>nomeia o sofrimento sem minimizá-lo</strong>, <strong>normaliza a reação</strong> ("sintomas perturbadores costumam ocorrer em pessoas que passam pelo que você passou"), <strong>oferece perspectiva</strong> sem prometer e <strong>indica onde buscar ajuda</strong>. Perguntar diretamente como a pessoa está se sentindo é o que abre a conversa — evitar a pergunta é o oposto de acolher.</p>
+<hr>
+<h2>Erros inatos da imunidade: o que faz suspeitar</h2>
+<p>Criança com infecção é o normal da pediatria; o que muda a conduta é o <strong>padrão</strong>. Os sinais de alerta existem justamente para separar o esperado do investigável.</p>
+<div class="tbl"><table><thead><tr><th>Esperado, não investiga</th><th>Sinal de alerta, investiga</th></tr></thead><tbody><tr><td>3 a 8 resfriados por ano no pré-escolar</td><td><strong>2 ou mais pneumonias</strong> no último ano</td></tr><tr><td>Uma diarreia aguda que resolve em dias</td><td><strong>Diarreia crônica</strong> ou giardíase de repetição</td></tr><tr><td>Uma pneumonia com boa resposta ao antibiótico</td><td><strong>4 ou mais otites</strong> no último ano</td></tr><tr><td>Rinite alérgica</td><td><strong>Abscessos de repetição</strong> ou ectima</td></tr><tr><td>Monilíase oral no lactente</td><td><strong>Candidíase oral por mais de 2 meses</strong> após o primeiro ano</td></tr><tr><td>—</td><td>Infecção sistêmica grave: meningite, osteoartrite, sepse</td></tr><tr><td>—</td><td>Efeito adverso ao BCG ou infecção por micobactéria</td></tr><tr><td>—</td><td>História familiar de imunodeficiência</td></tr></tbody></table></div>
+<p>Repare na estrutura das duas questões que exploraram isso: elas enchem o caso de achados banais — resfriados na média, uma diarreia resolvida, uma pneumonia bem tratada, rinite — e escondem <strong>um</strong> achado fora da curva. Na questão 3 era o abscesso de repetição; na questão 9, a giardíase recorrente somada às sinusites e otites.</p>
+<h4>Que compartimento o padrão aponta</h4>
+<div class="tbl"><table><thead><tr><th>Padrão clínico</th><th>Compartimento</th><th>Exame inicial</th></tr></thead><tbody><tr><td>Sinopulmonar por encapsulados, giardíase</td><td><strong>Anticorpos</strong> (o mais comum)</td><td>dosagem de imunoglobulinas, resposta a polissacarídeo</td></tr><tr><td>Oportunistas, início precoce, grave</td><td><strong>Combinada (T e B)</strong></td><td>linfócitos totais, subpopulações, TREC</td></tr><tr><td>Abscessos, adenite supurativa, fungos</td><td><strong>Fagócitos</strong></td><td>DHR ou NBT, hemograma</td></tr><tr><td>Neisseria invasiva de repetição</td><td><strong>Complemento</strong></td><td>CH50, AH50</td></tr></tbody></table></div>
+<blockquote><p><strong>Pegadinha recorrente:</strong> o enunciado pede "apenas instrumentos <strong>laboratoriais</strong>". Tomografia é imagem e espirometria é prova de função — as duas eliminam a alternativa inteira, antes de qualquer raciocínio imunológico.</p></blockquote>
+<hr>
+<h2>As quatro imunodeficiências do simulado</h2>
+<h4>Doença granulomatosa crônica (DGC)</h4>
+<p>Defeito do complexo <strong>NADPH oxidase</strong>: o fagócito engole o microrganismo e não consegue produzir superóxido para matá-lo. Por isso adoece por germes <strong>catalase-positivos</strong>, que degradam o pouco peróxido disponível — <em>Staphylococcus aureus</em>, <em>Serratia</em>, <em>Burkholderia</em>, <em>Nocardia</em> e <em>Aspergillus</em>. Clinicamente: abscessos cutâneos e hepáticos, adenite supurativa, pneumonia fúngica e formação de granulomas.</p>
+<p>É <strong>defeito qualitativo</strong>. A contagem de neutrófilos é <strong>normal</strong>, e o diagnóstico se faz pelo <strong>DHR</strong> (citometria com diidrorodamina) ou pelo <strong>NBT</strong>, que mostram ausência do burst oxidativo. Procurar neutropenia no hemograma de um paciente com DGC não leva a lugar nenhum.</p>
+<h4>Imunodeficiência combinada grave (SCID)</h4>
+<p>Emergência pediátrica. A triagem se faz pelo <strong>TREC</strong> no teste do pezinho: são círculos de DNA excisados quando o linfócito T rearranja seu receptor no timo, de modo que contá-los mede produção tímica recente e detecta linfopenia T <strong>antes da primeira infecção</strong>. O <strong>transplante de células-tronco é tanto melhor quanto mais precoce</strong> — idealmente antes dos 3,5 meses e antes de qualquer infecção grave. Adiar é o contrário do indicado. Vacina de agente vivo é <strong>contraindicação absoluta</strong>, e o BCG do berçário é o problema clássico, causando becegeíte disseminada.</p>
+<h4>Imunodeficiência comum variável (ICV)</h4>
+<p>Queda das <strong>três</strong> classes de imunoglobulina — IgG, IgA e IgM. Infecções sinopulmonares de repetição que, com o tempo, produzem <strong>bronquiectasias</strong>. Soma autoimunidade, doença granulomatosa e risco aumentado de linfoma. Tratamento com reposição de imunoglobulina.</p>
+<h4>Deficiência seletiva de IgA</h4>
+<p>A imunodeficiência primária <strong>mais comum de todas</strong>, e justamente por isso vira distrator: a maioria é assintomática ou leve. Não é SCID, não cursa com <em>Pneumocystis</em> nem candidíase sistêmica. O cuidado próprio dela é o risco de reação anafilática transfusional.</p>
+<hr>
+<h2>Vacinas de agente vivo: a lista que precisa estar de cor</h2>
+<p>A contraindicação na imunodeficiência recai sobre o <strong>agente vivo atenuado</strong>, que pode causar doença em quem não consegue contê-lo. Decorar a lista resolve a questão em segundos, porque a prova monta as alternativas erradas infiltrando <strong>um</strong> item inativado no meio.</p>
+<div class="tbl"><table><thead><tr><th>Vivas — contraindicadas</th><th>Inativadas — liberadas</th></tr></thead><tbody><tr><td>BCG</td><td>Pneumocócicas (10, 13, 23)</td></tr><tr><td>Poliomielite <strong>oral</strong> (VOP)</td><td>Poliomielite <strong>injetável</strong> (VIP)</td></tr><tr><td>Rotavírus</td><td>Haemophilus influenzae tipo b</td></tr><tr><td>Tríplice e tetra viral (sarampo, caxumba, rubéola, varicela)</td><td>Hepatites A e B</td></tr><tr><td>Varicela</td><td>Raiva</td></tr><tr><td>Febre amarela</td><td>Influenza injetável</td></tr><tr><td>Dengue</td><td>Coronavac e demais inativadas</td></tr></tbody></table></div>
+<blockquote><p><strong>Atalho de prova:</strong> varra a alternativa procurando um inativado. Hib, Pneumo 10, hepatite A, raiva e Coronavac foram os infiltrados nas alternativas erradas deste simulado.</p></blockquote>
+<hr>
+<h2>Dermatite atópica: a mesma doença, duas condutas</h2>
+<p>Duas questões descreveram dermatite atópica e pediram condutas diferentes. A diferença não está no diagnóstico — está em <strong>haver ou não infecção secundária</strong>.</p>
+<p>O diagnóstico se monta sempre pelos mesmos elementos: início precoce, prurido como sintoma dominante, distribuição em <strong>flexuras</strong> na criança maior (face e superfícies extensoras no lactente), piora no inverno e com banho quente, e <strong>liquenificação</strong> como marca da cronicidade.</p>
+<div class="tbl"><table><thead><tr><th></th><th>Sem infecção</th><th>Com infecção (impetiginizada)</th></tr></thead><tbody><tr><td>O que se vê</td><td>eritema, prurido, escoriação</td><td><strong>crosta melicérica</strong>, exsudato, pústula</td></tr><tr><td>Barreira</td><td>emoliente, banho curto e morno, sabonete suave</td><td>igual</td></tr><tr><td>Inflamação</td><td>corticoide tópico de <strong>baixa potência</strong> na lesão ativa</td><td>igual</td></tr><tr><td>Infecção</td><td>nada</td><td><strong>antibiótico</strong> — tópico se localizada, oral se extensa</td></tr></tbody></table></div>
+<p>A <strong>crosta melicérica</strong> — amarelada, cor de mel — é a assinatura do impetigo por <em>Staphylococcus aureus</em>, e é o único achado que acrescenta o antibiótico à prescrição.</p>
+<p>O que <em>não</em> entra em nenhuma das duas: corticoide sistêmico em doença leve, dieta de exclusão às cegas (dermatite atópica não se trata tirando leite da dieta), sabonete bactericida e banho prolongado (pioram a barreira, que já está doente), e inibidor de calcineurina — tacrolimo e pimecrolimo são poupadores de corticoide para áreas delicadas e manutenção, <strong>não</strong> para pele infectada.</p>
+<hr>
+<h2>Urticária aguda e os quatro tipos de hipersensibilidade</h2>
+<p>Urticária em minutos depois do alimento, na <strong>segunda</strong> exposição, sem sintoma respiratório e sem hipotensão: hipersensibilidade do <strong>tipo I</strong>. A primeira exposição sensibilizou, produzindo IgE específica que se fixou na superfície dos mastócitos; a reexposição fez a ponte entre duas moléculas de IgE e disparou a degranulação. A histamina liberada produz a pápula edematosa e o prurido.</p>
+<div class="tbl"><table><thead><tr><th>Tipo</th><th>Mediador</th><th>Tempo</th><th>Exemplo</th></tr></thead><tbody><tr><td><strong>I</strong></td><td>IgE, mastócito, histamina</td><td><strong>minutos</strong></td><td>urticária alimentar, anafilaxia, asma</td></tr><tr><td><strong>II</strong></td><td>IgG/IgM contra antígeno de superfície</td><td>horas a dias</td><td>anemia hemolítica autoimune</td></tr><tr><td><strong>III</strong></td><td>imunocomplexo, complemento</td><td><strong>dias</strong></td><td>doença do soro, vasculite</td></tr><tr><td><strong>IV</strong></td><td>linfócito T, celular</td><td><strong>48 a 72 h</strong></td><td>dermatite de contato, teste tuberculínico</td></tr></tbody></table></div>
+<blockquote><p><strong>O relógio resolve a questão.</strong> Minutos é tipo I; 48 a 72 horas é tipo IV; dias com artralgia e febre é tipo III. Se a alternativa oferecer bradicinina, ela está descrevendo angioedema por inibidor da ECA, que não é mecanismo imunológico nem cursa com urticária.</p></blockquote></script>
+<!-- Tutor local: define window.DEEPSEEK_KEY. O arquivo NAO vai para o repositorio,
+     entao online ele da 404 e o chat simplesmente nao aparece. -->
+<script src="../deepseek_key.js"></script>
+<script>
+/* ─────────────────────────────────────────────────────────────────────────────
+   CONTRATO DE DADOS — para adaptar a outro tema, troque apenas QUIZ e o resumo.
+   Cada item: { question, options[2..6], correctIndex, explanation }
+   ──────────────────────────────────────────────────────────────────────────── */
+var TITLE      = "Simulado AVC 2 PED";
+var EYEBROW    = "Pediatria · Simulado da prova";
+var DISCIPLINA = "PED";   // pasta de origem (PED, GO...) — usada pelo índice
+var SUBTITLE = "As 16 questões do formulário, com a correta e o porquê";
+var INTRO    = "Transcrição do simulado da AVC 2 de Pediatria. Três eixos se repetem: atendimento à vítima de violência sexual e aborto legal, erros inatos da imunidade e alergia na infância. As alternativas são as do formulário original; só a ordem muda, porque o quiz embaralha a cada rodada.";
+
+var QUIZ = [
+  {
+    "question": "Pré-escolar, sexo feminino, 3 anos de idade, apresenta lesões eczematosas pruriginosas desde os 6 meses de vida, que geralmente pioram na época do inverno. Nas últimas duas semanas, surgiram pápulas eritematosas exsudativas com crostas melicéricas em fossas cubitais e poplíteas. Mãe relata prurido intenso, que piora após banho quente. Ao exame clínico, apresenta áreas de liquenificação, escoriações e crostas amareladas em membros superiores e inferiores. Com base no diagnóstico mais provável, a conduta adequada é:",
+    "options": [
+      "intensificar hidratação da pele e iniciar antibiótico tópico associado a corticoide tópico de baixa potência.",
+      "excluir leite e derivados da dieta, iniciar corticoide oral e anti-histamínico oral por 7 dias.",
+      "usar antifúngico tópico e evitar hidratantes tópicos até regressão completa das lesões.",
+      "intensificar banhos com sabonete bactericida, iniciar tratamento com tacrolimo ou pimecrolimo tópicos."
+    ],
+    "correctIndex": 0,
+    "explanation": "Letra A no formulário. O quadro é dermatite atópica em flexuras, de início precoce e com liquenificação, agora impetiginizada: crosta melicérica é a assinatura da infecção secundária por Staphylococcus aureus. A conduta soma as três frentes — restaurar a barreira com hidratação, tratar a infecção e controlar a inflamação com corticoide de baixa potência, apropriado para pele fina de pré-escolar. Dieta de exclusão não trata dermatite atópica, sabonete bactericida piora a barreira e inibidor de calcineurina não é escolha para pele infectada."
+  },
+  {
+    "question": "Você está atendendo na UPA uma adolescente vítima de violência sexual por pessoa desconhecida. O Centro Médico de acolhimento a essas vítimas fica em uma distância de 5 horas da UPA em que você está com a paciente. Após acolhê-la, você explica as medidas a serem tomadas. As alternativas a seguir descrevem algumas medidas a serem tomadas no atendimento de pessoas vítimas de violência sexual. Das alternativas a seguir, qual descreve corretamente algumas dessas medidas, segundo o Protocolo do Ministério da Saúde?",
+    "options": [
+      "Anticoncepção de emergência com Levonorgestrel 0,75mg - 2 comprimidos em dose única e providências policiais e judiciais cabíveis.",
+      "Anamnese dirigida, Exame físico e PEP para HIV que deverá ser realizada com antirretrovirais após 72 horas da exposição.",
+      "Exame Físico e profilaxia para Vaginose Bacteriana com Metronidazol 400mg, 5 comprimidos via oral em dose única associado à Ceftriaxona 500mg Intramuscular em dose única.",
+      "Anamnese, Exame Geral e Ginecológico, Profilaxia para Sífilis com Penicilina G Cristalina 2,4milhões UI aplicados Intra-muscular.",
+      "Testagem rápida para Sífilis, HIV e Hepatites Virais B e C. Caso a vacinação da vítima seja incompleta, nenhuma medida deve ser tomada."
+    ],
+    "correctIndex": 0,
+    "explanation": "Letra D no formulário. Dois comprimidos de 0,75 mg somam os 1,5 mg de levonorgestrel em dose única da contracepção de emergência, que pode ser oferecida em até cinco dias. Cada erro das outras é de um detalhe só: a PEP para HIV se inicia o mais cedo possível e no máximo ATÉ 72 horas, não depois; os 2 g de metronidazol são profilaxia de tricomoníase, não de vaginose bacteriana; a sífilis é prevenida com penicilina BENZATINA, não cristalina; e vacinação incompleta contra hepatite B exige completar o esquema e avaliar imunoglobulina, nunca conduta nenhuma."
+  },
+  {
+    "question": "João, 6 anos de idade, foi a sua primeira consulta com o novo pediatra. Na anamnese, tinha como queixa principal prurido nasal com espirros principalmente pela manhã. Em seus antecedentes, cerca de 3-4 resfriados por ano, uma internação anterior devida diarreia aguda controlada 72 horas após a admissão, uma internação para tratar pneumonia bacteriana aos 4 anos (tratou em enfermaria, sem intercorrências, recebendo alta em 7 dias). Durante o exame físico, o pediatra observa diversas cicatrizes em região glútea e em coxas, as quais a mãe diz serem resultado de abscessos de repetição. Dentre os dados coletados nesta consulta, o que justifica uma investigação para erros inatos da imunidade, é:",
+    "options": [
+      "Abscessos de repetição.",
+      "Resfriados de repetição.",
+      "Pneumonia bacteriana.",
+      "Diarreia aguda.",
+      "Rinite alérgica."
+    ],
+    "correctIndex": 0,
+    "explanation": "Letra E no formulário. Abscesso cutâneo de repetição é sinal de alerta clássico de defeito de fagócito e é o único achado fora da curva aqui. Três a quatro resfriados por ano é normal para pré-escolar, um episódio isolado de pneumonia bacteriana com boa resposta não preenche critério, e uma diarreia aguda resolvida em 72 horas é banal. A rinite alérgica é atopia, não imunodeficiência — e justamente a pista que distrai."
+  },
+  {
+    "question": "O atendimento à mulher vítima de violência sexual no Brasil envolve aspectos éticos, legais e técnicos. Sobre o procedimento de interrupção da gestação decorrente de estupro (Abortamento Legal) previsto no Código Penal e regulamentado por normas técnicas do Ministério da Saúde, assinale a alternativa correta.",
+    "options": [
+      "Para a realização do abortamento legal em casos de gravidez resultante de estupro, não é exigida a apresentação de Boletim de Ocorrência policial ou autorização judicial, bastando o consentimento da vítima e o parecer da equipe de saúde multidisciplinar atestando a compatibilidade da idade gestacional com o relato da violência.",
+      "O médico pode invocar objeção de consciência para recusar o atendimento e a realização do aborto em qualquer situação, inclusive se for o único profissional disponível no serviço ou se houver risco iminente de morte materna, pois a liberdade de consciência é direito constitucional absoluto.",
+      "A coleta de material biológico (vestígios) no exame físico ginecológico é responsabilidade exclusiva do médico assistente da unidade de saúde, que deve armazenar as provas para futura requisição policial, substituindo a necessidade de perícia do Instituto Médico Legal (IML).",
+      "O limite gestacional para a realização do aborto legal em caso de estupro é fixado em 12 semanas pelo Código Penal Brasileiro; após esse período, a interrupção só é permitida mediante alvará judicial específico, independentemente do peso fetal."
+    ],
+    "correctIndex": 0,
+    "explanation": "Letra B no formulário. A palavra da vítima basta: nem boletim de ocorrência, nem autorização judicial, nem laudo pericial são exigidos, e o que se documenta é o consentimento e o procedimento de justificação feito pela equipe. A objeção de consciência tem três exceções em que não pode ser invocada — risco de morte, ausência de outro profissional e qualquer situação que possa causar dano à paciente. E o Código Penal não fixa idade gestacional nenhuma: os limites de 20 a 22 semanas vêm de norma técnica, não da lei."
+  },
+  {
+    "question": "Menina de 6 anos é levada para atendimento médico por prurido leve e presença de lesões eritematosas em pregas cubitais e poplíteas, sem sinais clínicos de infecção cutânea. Os pais relatam uso diário de sabonete perfumado e banhos prolongados. Qual é a conduta adequada?",
+    "options": [
+      "Hidratar intensamente a pele com emolientes neutros, limitar banhos curtos com sabonetes suaves e aplicar corticoide tópico de baixa potência nas lesões ativas.",
+      "Hidratar intensamente a pele com emolientes neutros, limitar banhos curtos com sabonetes suaves e introduzir corticoide sistêmico em dose baixa por sete dias.",
+      "Hidratar intensamente a pele com emolientes neutros e introduzir antibiótico tópico nas lesões de pele por dez dias.",
+      "Encaminhar para o dermatologista, para ponderar tratamento imunossupressor sistêmico por tempo determinado."
+    ],
+    "correctIndex": 0,
+    "explanation": "Letra A no formulário. É a mesma dermatite atópica da primeira questão, mas leve e SEM infecção — e a conduta muda só por isso. O tripé é retirar o irritante (sabonete perfumado e banho prolongado), restaurar a barreira com emoliente e tratar a inflamação ativa com corticoide tópico de baixa potência. Corticoide sistêmico não entra em doença leve, antibiótico não entra sem sinal de infecção e imunossupressor sistêmico é reservado ao refratário."
+  },
+  {
+    "question": "Criança com imunodeficiência primária não pode receber as vacinas:",
+    "options": [
+      "Tríplice viral, Rotavírus, BCG, Pólio Oral, Febre amarela e Varicela.",
+      "Rotavírus, Haemophilus influenza tipo b, BCG e Pólio oral.",
+      "Pneumo 10, Rotavírus, BCG, Hepatite A e Raiva.",
+      "Tríplice viral, Rotavírus, BCG, Pólio oral, Febre amarela e Coronavac."
+    ],
+    "correctIndex": 0,
+    "explanation": "Letra B no formulário. A contraindicação recai sobre vacinas de agente VIVO atenuado, que podem causar doença no imunodeficiente, e essa é a única lista em que todos os itens são vivos. As outras três se denunciam por um item inativado infiltrado: Haemophilus influenzae tipo b é conjugada, Pneumo 10, hepatite A e raiva são inativadas, e a Coronavac é de vírus inteiro inativado."
+  },
+  {
+    "question": "O atendimento à mulher em situação de violência sexual é uma emergência médica que exige uma abordagem multidisciplinar e o cumprimento de protocolos específicos para minimizar os danos físicos e psíquicos. Sobre as profilaxias e os aspectos legais deste atendimento, avalie as afirmações: I. A profilaxia para Infecções Sexualmente Transmissíveis (ISTs), como sífilis e hepatite B, deve ser iniciada apenas após a confirmação sorológica da infecção na vítima, para evitar o uso desnecessário de medicamentos. II. A contracepção de emergência é contraindicada caso a violência tenha ocorrido durante o período menstrual da vítima, devido à anulação de seu efeito e ao aumento do risco de eventos tromboembólicos. III. O atendimento à vítima de violência sexual implica a notificação compulsória do caso ao Sistema de Informação de Agravos de Notificação (SINAN), independentemente da autorização da vítima ou do registro de boletim de ocorrência policial. Dessa forma, é CORRETO afirmar:",
+    "options": [
+      "Apenas a opção III está correta.",
+      "Apenas a opção II está correta.",
+      "Apenas as opções I e II estão corretas.",
+      "Apenas as opções I e III estão corretas."
+    ],
+    "correctIndex": 0,
+    "explanation": "Letra B no formulário. A afirmação I inverte a lógica: a profilaxia é empírica e imediata, porque esperar sorologia significa perder a janela — a sorologia inicial serve para registrar o status prévio, não para autorizar a profilaxia. A II inventa uma contraindicação que não existe: o levonorgestrel não tem contraindicação absoluta e não se anula por estar menstruada. A III é correta e vale como regra geral: a notificação ao SINAN é compulsória, independe da vontade da vítima e não depende de boletim de ocorrência."
+  },
+  {
+    "question": "Menina, 13 anos de idade, procura atendimento em uma UBS, acompanhada de sua mãe. Relata estar com 23 semanas de gestação, decorrente de relação sexual consensual com seu namorado de 15 anos de idade. Mãe e filha expressam o desejo de interromper a gestação. Com base na legislação brasileira vigente, a interrupção da gestação:",
+    "options": [
+      "é permitida independentemente da idade gestacional.",
+      "não está autorizada, por ultrapassar 22 semanas de gestação.",
+      "dependerá de comprovação legal do estupro por meio de laudo pericial.",
+      "não está autorizada, pois não houve violência física e nem coação."
+    ],
+    "correctIndex": 0,
+    "explanation": "Letra B no formulário. Abaixo de 14 anos não existe consentimento válido: a relação configura estupro de vulnerável pelo artigo 217-A do Código Penal, ainda que tenha sido desejada e com parceiro adolescente. Como o artigo 128 não fixa idade gestacional, a permissão legal não caduca às 22 semanas — esse corte vem de norma técnica e de prática assistencial, não da lei. Laudo pericial também não é exigido."
+  },
+  {
+    "question": "J.P.G. é um menino de 10 anos que apresenta histórico de infecções respiratórias bacterianas frequentes desde os 3 anos de idade, incluindo sinusites, otites médias e dois episódios de pneumonia comunitária. Há cerca de 2 anos, mantém tratamento regular para asma e corticoide tópico nasal para os sintomas da rinite alérgica. Nos últimos 6 meses, apresentou episódios recorrentes de diarreia, com resultado positivo para o antígeno de Giardia lamblia. Ao exame físico, encontra-se no escore z de zero (IMC), sinais de infecção respiratória superior; à inspeção abdominal, leve distensão e aumento do ruído hidroaéreo, sem visceromegalias ou linfadenopatia visível. Carteira vacinal completa. Considerando as principais hipóteses etiológicas, assinale a alternativa que apresenta apenas instrumentos laboratoriais relevantes para a investigação.",
+    "options": [
+      "Dosagem de imunoglobulinas e sorologia para anticorpos polissacarídeos.",
+      "Sorologia para anticorpos proteicos, dosagem de IgE específica para aeroalérgenos.",
+      "Espirometria, painel genético para deficiência de fagócitos, subpopulações de linfócitos.",
+      "Hemograma, imunofenotipagem, tomografia de seios da face."
+    ],
+    "correctIndex": 0,
+    "explanation": "Letra B no formulário. Infecção sinopulmonar de repetição por bactéria encapsulada somada a giardíase recorrente é o retrato da deficiência de anticorpos, e a investigação começa por dosar as imunoglobulinas e testar a resposta a antígeno polissacarídeo, que é justamente o que falha. O enunciado ainda pede APENAS instrumentos laboratoriais: tomografia de seios da face é imagem e espirometria é função pulmonar, o que elimina duas alternativas antes mesmo do raciocínio imunológico. A IgE específica investiga atopia, não imunodeficiência."
+  },
+  {
+    "question": "Clara, 16 anos, chega à UBS com dor hipogástrica e disúria há três dias, calafrios, sonolenta, febril, sudoreica, com livedo, mal perfundida e taquicárdica. Refere atraso menstrual, sem saber a data da última menstruação. Ao exame, há equimoses em diferentes estágios de evolução em tórax e abdome, e ela chora e pede para não falar sobre elas. Julgue a afirmação: \"uma vez confirmada a gravidez de Clara, mesmo que tenha sido resultado de violência sexual, ela não tem direito ao aborto legal devido à idade gestacional, que já ultrapassa as 12 semanas\". A afirmação é:",
+    "options": [
+      "incorreta — a lei não fixa limite de idade gestacional",
+      "correta — o limite legal é de 12 semanas de gestação",
+      "correta — o limite legal é de 20 semanas de gestação",
+      "incorreta — o limite de 12 semanas só vale para adultas"
+    ],
+    "correctIndex": 0,
+    "explanation": "Letra B (Incorreto) no formulário. O artigo 128 do Código Penal autoriza a interrupção quando a gravidez resulta de estupro e não menciona idade gestacional nenhuma — as 12 semanas simplesmente não existem como marco legal, nem para adolescente nem para adulta. Os cortes de 20 a 22 semanas que circulam vêm de norma técnica do Ministério da Saúde e de limite de viabilidade, e são critério assistencial, não impedimento previsto em lei."
+  },
+  {
+    "question": "A Doença Granulomatosa Crônica (DGC) é uma imunodeficiência primária do fagócito. Um menino de 3 anos apresenta história de abscessos cutâneos recorrentes, adenite supurativa e pneumonia por Aspergillus. O Nitroblue Tetrazolium (NBT) ou a citometria de fluxo com diidrorodamina (DHR) mostram ausência de \"burst\" oxidativo. Considerando a fisiopatologia e as características clínicas da doença granulomatosa crônica, assinale a alternativa correta.",
+    "options": [
+      "A doença é causada por um defeito no complexo enzimático NADPH oxidase, impedindo a produção de superóxido e espécies reativas de oxigénio, essenciais para a morte intracelular de microrganismos catalase-positivos (como Staphylococcus aureus).",
+      "Trata-se da Síndrome de Chédiak-Higashi, caracterizada por albinismo parcial e grânulos gigantes nos leucócitos, que impedem a fusão do fagossomo com o lisossomo.",
+      "A doença decorre da deficiência de mieloperoxidase, uma enzima secundária dos grânulos azurófilos, resultando em infecções fúngicas disseminadas, mas preservando a capacidade de matar bactérias.",
+      "O defeito reside na falha de adesão dos leucócitos ao endotélio (Deficiência de Adesão Leucocitária - LAD), impedindo a formação de pus (abscessos frios) e causando onfalite tardia."
+    ],
+    "correctIndex": 0,
+    "explanation": "Letra C no formulário. A DGC é defeito da NADPH oxidase: o fagócito engole o microrganismo mas não consegue produzir superóxido para matá-lo, e por isso adoece justamente por germes catalase-positivos, que degradam o pouco peróxido disponível — Staphylococcus aureus, Serratia, Burkholderia, Nocardia e Aspergillus. É defeito QUALITATIVO: a contagem de neutrófilos é normal e o diagnóstico se faz pelo DHR ou NBT, nunca pelo hemograma. As outras alternativas descrevem corretamente outras doenças, mas nenhuma é a do caso."
+  },
+  {
+    "question": "Considerando o atendimento à mulher vítima de violência, bem como uma atitude empática do médico que valide o impacto da violência sobre a vida da vítima, analise as afirmativas. I. É fundamental evitar perguntar diretamente como a vítima está se sentindo, impedindo, assim, a abertura de um possível diálogo e suporte real, mesmo que se imagine que a vítima esteja se sentindo muito mal. II. É exemplo de frase que valida o sofrimento da mulher: \"Imagino que foi muito ruim o que aconteceu. Embora possa parecer impossível para você agora, aos poucos é possível superar e voltar a ter uma vida normal\". III. É exemplo de frase que valida o sofrimento da mulher: \"Sentimentos e sintomas muito perturbadores costumam ocorrer em pessoas que passam pelo que você passou, mas com o tempo eles devem diminuir, e as coisas começam a voltar ao normal. Não hesite em procurar ajuda de pessoas próximas e profissionais de saúde\". Assinale a alternativa correta.",
+    "options": [
+      "Apenas as afirmativas II e III estão corretas.",
+      "Apenas as afirmativas I e III estão corretas.",
+      "Apenas as afirmativas I e II estão corretas.",
+      "Todas as afirmativas estão corretas."
+    ],
+    "correctIndex": 0,
+    "explanation": "Letra D no formulário, que ali aparece escrita com erro de digitação como \"II e II\". A afirmativa I se desmente sozinha: ela diz que evitar a pergunta IMPEDE o diálogo e, mesmo assim, recomenda evitá-la. Perguntar como a vítima está se sentindo é o que abre o acolhimento. As frases de II e III são modelos de validação — nomeiam o sofrimento, não minimizam, oferecem perspectiva de melhora e indicam onde buscar ajuda."
+  },
+  {
+    "question": "Criança de 9 anos com histórico de infecções de repetição apresenta tosse crônica produtiva, bronquiectasias em tomografia e níveis séricos muito baixos de imunoglobulinas IgG, IgA e IgM. Qual é o diagnóstico mais provável?",
+    "options": [
+      "Imunodeficiência comum variável.",
+      "Síndrome de Kartagener.",
+      "Fibrose cística.",
+      "Asma grave."
+    ],
+    "correctIndex": 0,
+    "explanation": "Letra B no formulário. A chave é a queda das TRÊS classes de imunoglobulina ao mesmo tempo: isso é deficiência de produção de anticorpos, e a imunodeficiência comum variável é a forma sintomática mais frequente. As bronquiectasias são a consequência tardia das infecções sinopulmonares de repetição e marcam o dano já instalado. Kartagener cursa com discinesia ciliar e situs inversus, a fibrose cística tem teste do suor e insuficiência pancreática, e asma grave não derruba imunoglobulina."
+  },
+  {
+    "question": "Menina, 3 anos de idade, é levada ao Pronto Atendimento com história de manchas avermelhadas e pruriginosas pelo corpo, iniciadas 30 minutos após o almoço. A mãe relata que a criança comeu ovo mexido e camarão pela segunda vez. Ao exame físico, observam-se pápulas eritematosas e edematosas em tronco e membros, prurido intenso, sem sinais respiratórios ou hipotensão. Com base nos dados clínicos, indique o mecanismo fisiopatológico predominante, responsável pelo quadro descrito:",
+    "options": [
+      "Liberação de histamina mediada por IgE após ativação de mastócitos.",
+      "Formação de imunocomplexos e ativação do complemento.",
+      "Liberação de bradicinina em resposta a estímulo farmacológico.",
+      "Reação tardia mediada por linfócitos T CD4+."
+    ],
+    "correctIndex": 0,
+    "explanation": "Letra A no formulário. Três dados fecham a hipersensibilidade do tipo I: o intervalo de 30 minutos, a urticária como lesão e a SEGUNDA exposição ao alimento — a primeira sensibilizou, produzindo IgE específica que se fixou nos mastócitos, e a reexposição fez a ponte que desencadeia a degranulação. A histamina liberada produz a pápula edematosa e o prurido. Imunocomplexo é tipo III e leva dias, resposta por linfócito T é tipo IV e leva de 48 a 72 horas, e bradicinina explica o angioedema por inibidor da ECA, não urticária alimentar."
+  },
+  {
+    "question": "A Imunodeficiência Combinada Grave (SCID) é uma grave doença pediátrica. Assinale a alternativa correta sobre a triagem neonatal e cuidados imediatos.",
+    "options": [
+      "A quantificação dos Círculos de Excisão do Receptor de Células T (TRECs) no teste do pezinho é um método sensível para detectar linfopenia T, permitindo o diagnóstico de SCID antes do início das infecções graves.",
+      "O transplante de células-tronco hematopoiéticas (TMO) é curativo, mas deve ser adiado até após 1 ano de idade para permitir a maturação do sistema imune residual e reduzir a rejeição.",
+      "Crianças com suspeita de SCID podem receber vacinas de vírus vivos atenuados (BCG, Rotavírus, Tríplice Viral) desde que a contagem de neutrófilos esteja normal, pois o defeito é linfocitário.",
+      "A deficiência de IgA seletiva é a forma mais comum de SCID, apresentando-se com infecções oportunistas graves por Pneumocystis jirovecii e candidíase sistêmica."
+    ],
+    "correctIndex": 0,
+    "explanation": "Letra A no formulário. O TREC é um subproduto circular do DNA gerado quando o linfócito T rearranja seu receptor no timo, então contá-lo no papel-filtro mede produção tímica recente e acusa a linfopenia T antes de qualquer sintoma — é esse o sentido de rastrear no teste do pezinho. As demais invertem a conduta correta: o transplante é tanto melhor quanto mais precoce, idealmente antes dos 3,5 meses e antes da primeira infecção grave; vacina de agente vivo é contraindicação absoluta, e é exatamente o BCG que causa becegeíte disseminada nesses lactentes; e a deficiência seletiva de IgA é a imunodeficiência primária mais comum de todas, mas em geral é leve ou assintomática e não é SCID."
+  },
+  {
+    "question": "Paciente de 13 anos veio à UBS acompanhada da mãe por quadro de dor abdominal. A mãe suspeitava que a menina estivesse com vermes. Ao exame físico, observou-se aumento do volume abdominal, com fundo uterino palpável 2 cm abaixo da cicatriz umbilical. O teste rápido para gestação foi positivo. A paciente relatou que mantivera relações sexuais desprotegidas e consensuais com um colega da escola, fato desconhecido pela mãe. Durante o atendimento, a paciente e sua mãe questionaram sobre a possibilidade de realização de um aborto. Assinale a alternativa que preenche, correta e respectivamente, as lacunas: o aborto ......... ; a paciente deverá ......... ; e o profissional deverá ......... .",
+    "options": [
+      "É possível, por se tratar de estupro de vulnerável. — Ser orientada e encaminhada ao serviço de referência em atendimento de crianças vítimas de violência sexual e aborto legal. — Fazer a notificação de situação de violência no Sistema de Informação de Agravos de Notificação (Sinan).",
+      "É possível, desde que a paciente faça um boletim de ocorrência de estupro. — Ser encaminhada ao serviço de referência em atendimento de crianças vítimas de violência sexual e aborto legal. — Fazer a notificação de situação de violência no Sinan.",
+      "Não é possível, por se tratar de um relacionamento consensual. — Ser orientada sobre a possibilidade de encaminhamento da criança para adoção. — Encaminhar a paciente ao pré-natal de alto risco.",
+      "Não é possível, por não haver previsão de aborto legal. — Realizar os exames iniciais de pré-natal e agendar retorno breve à UBS. — Encaminhar paciente para acompanhamento no serviço de saúde mental devido à gestação não planejada."
+    ],
+    "correctIndex": 0,
+    "explanation": "Letra A no formulário. É o mesmo princípio da questão dos 13 anos com 23 semanas, agora cobrado nas três frentes: aos 13 anos não há consentimento válido, logo é estupro de vulnerável e o aborto legal está previsto; o encaminhamento é ao serviço de referência, que concentra a equipe multidisciplinar e o procedimento de justificação; e a notificação ao SINAN é compulsória. A única alternativa que também acerta o encaminhamento e a notificação erra ao exigir boletim de ocorrência, que nunca é condição para o atendimento."
+  }
+];
+
+var LETTERS = ['A','B','C','D','E','F'];
+var SHUFFLE = true, LOCK = true;
+
+var S = { view:'home', started:false, finished:false, i:0, order:[], answers:[], open:{}, filter:'all', warn:false, chat:{} };
+
+function esc(s){ return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
+function pad(n){ return String(n).padStart(2,'0'); }
+
+function build(){
+  var qs = QUIZ.map(function(q,id){ return { question:q.question, options:q.options.slice(), correctIndex:q.correctIndex, explanation:q.explanation, image:q.image, imageCaption:q.imageCaption, id:id }; });
+  if (!SHUFFLE) return qs;
+  for (var i=qs.length-1;i>0;i--){ var j=Math.floor(Math.random()*(i+1)); var t=qs[i]; qs[i]=qs[j]; qs[j]=t; }
+  return qs.map(function(q){
+    var correct = q.options[q.correctIndex], o = q.options.slice();
+    for (var i=o.length-1;i>0;i--){ var j=Math.floor(Math.random()*(i+1)); var t=o[i]; o[i]=o[j]; o[j]=t; }
+    q.options = o; q.correctIndex = o.indexOf(correct); return q;
+  });
+}
+
+/* ── ações ─────────────────────────────────────────────────────────────────── */
+var A = {
+  home:      function(){ S.view='home'; S.started=false; S.finished=false; up(0); },
+  resumo:    function(){ S.view='resumo'; up(0); },
+  start:     function(){ var o=build(); S.view='quiz'; S.started=true; S.finished=false; S.i=0; S.order=o;
+                         S.answers=new Array(o.length).fill(null); S.open={}; S.filter='all'; S.warn=false; up(0); },
+  restart:   function(){ A.start(); },
+  sair:      function(){ S.view='home'; S.started=false; up(0); },   // guarda as respostas
+  retomar:   function(){ S.view='quiz'; S.started=true; S.finished=false; S.warn=false; up(0); },
+  go:        function(n){ if(n<0||n>S.order.length-1) return; S.i=n; S.warn=false; render(); },
+  jump:      function(n){ if(S.finished){ S.finished=false; S.i=n; S.warn=false; } else { if(n<0||n>S.order.length-1) return; S.i=n; S.warn=false; } up(0,'smooth'); },
+  pick:      function(n){ if(LOCK && S.answers[S.i]!==null) return; S.answers[S.i]=n; render(); },
+  prev:      function(){ A.go(S.i-1); },
+  next:      function(){ if(S.i<S.order.length-1) A.go(S.i+1); else A.finish(); },
+  finish:    function(){ var b=S.answers.filter(function(a){return a===null}).length;
+                         if(b>0 && !S.warn){ S.warn=true; render(); return; } S.finished=true; S.warn=false; up(0); },
+  force:     function(){ S.finished=true; S.warn=false; up(0); },
+  gotoBlank: function(){ var n=S.answers.findIndex(function(a){return a===null}); if(n>=0) A.go(n); },
+  back:      function(){ S.finished=false; S.warn=false; up(0); },
+  filter:    function(k){ S.filter=k; render(); },
+  toggle:    function(n){ S.open[n]=!S.open[n]; render(); },
+  toggleAll: function(){ var r=reviewList(), all=r.length>0 && r.every(function(x){return S.open[x.idx]});
+                         S.open={}; if(!all) r.forEach(function(x){ S.open[x.idx]=true; }); render(); }
+};
+function up(top, beh){ render(); window.scrollTo({ top: top||0, behavior: beh||'auto' }); }
+
+/* Aberto por duplo clique (file://) volta para o indice local; servido pela web,
+   volta para o publicado. Os dois listam os mesmos materiais. */
+function idxHref(){
+  var local = (typeof location !== 'undefined' && location.protocol === 'file:');
+  return local ? '../index_local.html' : '../index.html';
+}
+function emAndamento(){
+  return S.order.length > 0 && !S.finished &&
+         S.answers.some(function(a){ return a !== null; });
+}
+
+/* ── header ────────────────────────────────────────────────────────────────── */
+function renderHeader(){
+  var mono = "font-family:'IBM Plex Mono',monospace";
+  var left =
+    '<div style="min-width:0">' +
+      '<div style="display:flex;align-items:center;gap:8px;'+mono+';font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:#8a8578">' +
+        '<a href="'+idxHref()+'" class="h-ink" style="color:#2b57cc;text-decoration:none;white-space:nowrap">\u2190 Materiais</a>' +
+        '<span style="color:#d3cec4">/</span>' +
+        '<span style="overflow:hidden;text-overflow:ellipsis;white-space:nowrap">'+esc(EYEBROW)+'</span>' +
+      '</div>' +
+      '<h1 style="margin:1px 0 0;font-family:\'Newsreader\',Georgia,serif;font-size:20px;font-weight:500;letter-spacing:-.01em;line-height:1.15">'+esc(TITLE)+'</h1>' +
+    '</div>';
+
+  var right = '';
+  if (S.view === 'quiz' && S.started) {
+    var hit = counts().hit;
+    right = '<div style="display:flex;align-items:center;gap:10px;flex-shrink:0">' +
+              '<button type="button" data-act="sair" class="h-line" style="background:none;border:1px solid #ddd8ce;border-radius:9px;padding:6px 11px;'+mono+';font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;color:#5b6478;cursor:pointer;transition:border-color .15s ease">Sair</button>' +
+              '<div style="display:flex;align-items:center;gap:6px">' +
+                '<span style="'+mono+';font-size:15px;font-weight:600;letter-spacing:-.02em">'+hit+'</span>' +
+                '<span style="'+mono+';font-size:11px;color:#8a8578">/ '+S.order.length+'</span>' +
+              '</div></div>';
+  } else if (S.view !== 'home') {
+    right = '<button type="button" data-act="home" class="h-line" style="flex-shrink:0;background:none;border:1px solid #ddd8ce;border-radius:9px;padding:7px 13px;'+mono+';font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:#5b6478;cursor:pointer;transition:border-color .15s ease">← Início</button>';
+  }
+
+  var html = '<div style="display:flex;align-items:baseline;justify-content:space-between;gap:12px;margin-bottom:'+(S.view==='quiz'&&S.started?'10px':'2px')+'">'+left+right+'</div>';
+
+  if (S.view === 'quiz' && S.started) {
+    var c = counts();
+    var rail = S.order.map(function(q,n){
+      var a = S.answers[n], cur = n===S.i && !S.finished, bg = '#d3cec4';
+      if (a!==null) bg = (a===q.correctIndex) ? '#2e7d55' : '#c04437';
+      if (cur && a===null) bg = '#121a2b';
+      var st = a===null ? 'em branco' : (a===q.correctIndex ? 'correta' : 'incorreta');
+      return '<button type="button" data-act="jump" data-n="'+n+'" title="Questão '+(n+1)+' — '+st+'" aria-label="Questão '+(n+1)+' — '+st+'" style="flex:1 1 0;min-width:0;background:none;border:0;padding:13px 0;margin:0;cursor:pointer;display:flex;align-items:center;justify-content:center">' +
+             '<span style="display:block;width:100%;border-radius:99px;transition:height .18s ease,background .18s ease,box-shadow .18s ease;height:'+(cur?'17px':'9px')+';background:'+bg+';box-shadow:'+(cur?'0 0 0 3px rgba(18,26,43,.13)':'none')+'"></span></button>';
+    }).join('');
+    html += '<div><div style="display:flex;align-items:center;gap:3px">'+rail+'</div>' +
+            '<div style="display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:-2px">' +
+              '<div style="'+mono+';font-size:11px;letter-spacing:.04em;color:#5b6478">Questão '+pad(S.i+1)+' / '+S.order.length+'</div>' +
+              '<div style="display:flex;align-items:center;gap:12px;'+mono+';font-size:10.5px;color:#8a8578">' +
+                dot('#2e7d55',c.hit)+dot('#c04437',c.miss)+dot('#d3cec4',c.blank) +
+              '</div></div></div>';
+  }
+  document.getElementById('hdr').innerHTML = html;
+}
+function dot(color,n){ return '<span style="display:flex;align-items:center;gap:5px"><span style="width:7px;height:7px;border-radius:99px;background:'+color+';display:block"></span>'+n+'</span>'; }
+
+function counts(){
+  var hit=0, miss=0, blank=0;
+  S.answers.forEach(function(a,n){
+    if (a===null) blank++;
+    else if (S.order[n] && a===S.order[n].correctIndex) hit++;
+    else miss++;
+  });
+  return { hit:hit, miss:miss, blank:blank, total:S.order.length };
+}
+
+/* ── tela inicial ──────────────────────────────────────────────────────────── */
+function renderHome(){
+  var mono = "font-family:'IBM Plex Mono',monospace";
+  var secoes = (document.getElementById('resumoSrc').textContent.match(/<h2/g)||[]).length;
+  var cell = function(v,l){
+    return '<div style="background:#faf9f6;padding:16px 14px">' +
+      '<div style="'+mono+';font-size:22px;font-weight:500;letter-spacing:-.03em">'+v+'</div>' +
+      '<div style="'+mono+';font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:#8a8578;margin-top:3px">'+l+'</div></div>';
+  };
+  var card = function(act,tag,titulo,desc,cta){
+    return '<button type="button" data-act="'+act+'" class="h-card" style="display:flex;flex-direction:column;align-items:flex-start;gap:0;text-align:left;background:#fff;border:1px solid #e4e0d8;border-radius:18px;padding:24px 22px;cursor:pointer;transition:border-color .16s ease,transform .14s ease;box-shadow:0 1px 2px rgba(18,26,43,.04),0 12px 28px -20px rgba(18,26,43,.18)">' +
+      '<div style="'+mono+';font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:#2b57cc;margin-bottom:12px">'+tag+'</div>' +
+      '<div style="font-family:\'Newsreader\',Georgia,serif;font-size:26px;font-weight:500;letter-spacing:-.02em;line-height:1.15;margin-bottom:8px">'+titulo+'</div>' +
+      '<div style="font-size:14px;line-height:1.6;color:#5b6478;margin-bottom:18px;text-wrap:pretty">'+desc+'</div>' +
+      '<div style="'+mono+';font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:#121a2b">'+cta+'</div></button>';
+  };
+
+  document.getElementById('stage').innerHTML =
+    '<section style="padding:56px 0 0;animation:qFade .3s ease">' +
+      '<div style="'+mono+';font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:#2b57cc;margin-bottom:16px">Material de revisão</div>' +
+      '<h2 style="font-family:\'Newsreader\',Georgia,serif;font-size:40px;line-height:1.08;font-weight:400;letter-spacing:-.025em;margin:0 0 18px;text-wrap:pretty">'+esc(SUBTITLE)+'</h2>' +
+      '<p style="font-size:15.5px;line-height:1.65;color:#5b6478;margin:0 0 30px;max-width:52ch;text-wrap:pretty">'+esc(INTRO)+'</p>' +
+      '<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(108px,1fr));gap:1px;background:#e4e0d8;border:1px solid #e4e0d8;border-radius:14px;overflow:hidden;margin-bottom:32px">' +
+        cell(QUIZ.length,'Questões') + cell(secoes,'Seções') + cell('~'+Math.round(QUIZ.length*0.75),'Minutos') +
+      '</div>' +
+      '<div class="home-grid" style="display:grid;grid-template-columns:1fr 1fr;gap:12px">' +
+        (emAndamento()
+          ? card('retomar','Em andamento','Quiz',
+                 'Você parou na questão '+pad(S.i+1)+' de '+S.order.length+', com '+
+                 (S.order.length-counts().blank)+' respondida'+((S.order.length-counts().blank)===1?'':'s')+
+                 '. Suas respostas continuam guardadas.','Retomar →')
+          : card('start','Praticar','Quiz', QUIZ.length+' questões de múltipla escolha, com explicação assim que você responde e gabarito comentado no fim.','Começar →')) +
+        card('resumo','Estudar','Resumo','O conteúdo da aula em texto corrido, organizado em '+secoes+' seções para leitura antes da prova.','Ler →') +
+      '</div>' +
+      '<div style="margin-top:26px;display:flex;flex-wrap:wrap;align-items:center;gap:8px 18px;'+mono+';font-size:11px;color:#8a8578">' +
+        '<span>← →&nbsp; navegar</span><span>1–'+maxOpts()+'&nbsp; responder</span><span>Enter&nbsp; avançar</span>' +
+        (emAndamento() ? '<button type="button" data-act="start" class="h-ink" style="background:none;border:0;padding:0;'+mono+';font-size:11px;color:#8a8578;cursor:pointer;text-decoration:underline;text-underline-offset:3px">recomeçar do zero</button>' : '') +
+        '</div>' +
+    '</section>';
+}
+function maxOpts(){ return QUIZ.reduce(function(m,q){ return Math.max(m,q.options.length); },0); }
+
+/* ── resumo ────────────────────────────────────────────────────────────────── */
+function renderResumo(){
+  document.getElementById('stage').innerHTML =
+    '<section style="padding:34px 0 0;animation:qFade .3s ease">' +
+      '<div style="font-family:\'IBM Plex Mono\',monospace;font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:#2b57cc;margin-bottom:14px">Resumo</div>' +
+      '<div class="rsm">' + document.getElementById('resumoSrc').textContent + '</div>' +
+      '<div style="display:flex;flex-wrap:wrap;gap:9px;margin-top:38px;padding-top:24px;border-top:1px solid #e4e0d8">' +
+        '<button type="button" data-act="start" class="h-darkflat" style="background:#121a2b;color:#f5f3ef;border:0;border-radius:11px;padding:13px 24px;font-size:14px;font-weight:500;cursor:pointer;transition:background .16s ease">Fazer o quiz →</button>' +
+        '<button type="button" data-act="home" class="h-line" style="background:none;border:1px solid #ddd8ce;border-radius:11px;padding:13px 22px;font-size:14px;cursor:pointer;transition:border-color .15s ease">Voltar ao início</button>' +
+      '</div></section>';
+}
+
+/* imagem da questao — data URI ja resolvida pelo montar_quiz.py */
+function figura(q, cls){
+  if (!q.image) return '';
+  return '<figure class="fig'+(cls?' '+cls:'')+'"><img src="'+q.image+'" alt="'+esc(q.imageCaption||'Imagem da questão')+'">' +
+         (q.imageCaption ? '<figcaption>'+esc(q.imageCaption)+'</figcaption>' : '') + '</figure>';
+}
+
+/* ── questão ───────────────────────────────────────────────────────────────── */
+function renderQuestion(){
+  var mono = "font-family:'IBM Plex Mono',monospace";
+  var q = S.order[S.i], ans = S.answers[S.i], reveal = ans !== null;
+
+  var status = 'Não respondida', sColor = '#8a8578';
+  if (reveal) { var ok = ans===q.correctIndex; status = ok?'Você acertou':'Você errou'; sColor = ok?'#2e7d55':'#c04437'; }
+
+  var opts = q.options.map(function(text,n){
+    var isC = n===q.correctIndex, isMine = n===ans;
+    var bd='#e4e0d8', bg='#fff', fg='#121a2b', bBg='#f2efe9', bFg='#8a8578', mark='', mColor='', op='1', hbd='#2b57cc';
+    if (reveal) {
+      op = (isC||isMine) ? '1' : '.62';
+      if (isC)               { bd='#8fc7a7'; bg='#eef7f1'; fg='#1f5c3e'; bBg='#2e7d55'; bFg='#fff'; mark='✓'; mColor='#2e7d55'; }
+      if (isMine && !isC)    { bd='#e0a49a'; bg='#fdf0ee'; fg='#8f2f25'; bBg='#c04437'; bFg='#fff'; mark='✕'; mColor='#c04437'; }
+    } else if (isMine)       { bd='#121a2b'; bg='#f7f6f2'; bBg='#121a2b'; bFg='#f5f3ef'; }
+    var locked = reveal && LOCK;
+    return '<button type="button" data-act="pick" data-n="'+n+'" class="h-opt'+(locked?' locked':'')+'" style="--hbd:'+hbd+';display:flex;gap:13px;align-items:flex-start;width:100%;text-align:left;padding:14px 15px;border-radius:13px;font-size:15px;line-height:1.5;transition:border-color .15s ease,background .15s ease,transform .12s ease;border:1.5px solid '+bd+';background:'+bg+';color:'+fg+';cursor:'+(locked?'default':'pointer')+';opacity:'+op+'">' +
+      '<span style="flex-shrink:0;width:24px;height:24px;border-radius:7px;display:flex;align-items:center;justify-content:center;'+mono+';font-size:11.5px;font-weight:600;margin-top:1px;background:'+bBg+';color:'+bFg+'">'+LETTERS[n]+'</span>' +
+      '<span style="flex:1;min-width:0;text-wrap:pretty">'+esc(text)+'</span>' +
+      (mark ? '<span style="flex-shrink:0;'+mono+';font-size:14px;font-weight:600;margin-top:1px;color:'+mColor+'">'+mark+'</span>' : '') +
+      '</button>';
+  }).join('');
+
+  var expl = reveal ? '<div style="margin-top:20px;padding:16px 18px;background:#f7f6f2;border-left:2.5px solid #2b57cc;border-radius:0 12px 12px 0;animation:qFade .26s ease">' +
+      '<div style="'+mono+';font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:#2b57cc;margin-bottom:8px">Por quê</div>' +
+      '<p style="margin:0;font-size:14.5px;line-height:1.68;color:#39404f;text-wrap:pretty">'+esc(q.explanation)+'</p></div>' : '';
+
+  var blank = counts().blank;
+  var warn = S.warn ? '<div style="margin-top:14px;padding:15px 17px;background:#fdf7e9;border:1px solid #e8d5a3;border-radius:14px;animation:qFade .22s ease">' +
+      '<p style="margin:0 0 12px;font-size:14px;line-height:1.55;color:#6b5620">'+blank+(blank===1?' questão ainda está em branco.':' questões ainda estão em branco.')+' Você pode voltar nelas ou finalizar assim mesmo.</p>' +
+      '<div style="display:flex;flex-wrap:wrap;gap:8px">' +
+        '<button type="button" data-act="gotoBlank" style="background:#121a2b;color:#f5f3ef;border:0;border-radius:9px;padding:9px 16px;font-size:13px;font-weight:500;cursor:pointer">Ir para a 1ª em branco</button>' +
+        '<button type="button" data-act="force" style="background:none;color:#6b5620;border:1px solid #e8d5a3;border-radius:9px;padding:9px 16px;font-size:13px;cursor:pointer">Finalizar assim mesmo</button>' +
+      '</div></div>' : '';
+
+  var last = S.i === S.order.length-1;
+  var early = !last && (S.order.length - blank) > 0;
+
+  document.getElementById('stage').innerHTML =
+    '<section style="padding:26px 0 0">' +
+      '<article style="background:#fff;border:1px solid #e4e0d8;border-radius:18px;padding:26px 22px 24px;box-shadow:0 1px 2px rgba(18,26,43,.04),0 12px 28px -18px rgba(18,26,43,.18)">' +
+        '<div style="display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:14px">' +
+          '<div style="'+mono+';font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:#2b57cc">Questão '+pad(S.i+1)+'</div>' +
+          '<div style="'+mono+';font-size:10.5px;letter-spacing:.06em;color:'+sColor+'">'+status+'</div>' +
+        '</div>' +
+        '<h2 style="font-family:\'Newsreader\',Georgia,serif;font-size:22px;line-height:1.42;font-weight:400;letter-spacing:-.012em;margin:0 0 22px;text-wrap:pretty">'+esc(q.question)+'</h2>' +
+        figura(q, 'qfig') +
+        '<div style="display:flex;flex-direction:column;gap:9px">'+opts+'</div>' + expl +
+        (reveal ? chatBox(q, ans===q.correctIndex) : '') +
+      '</article>' + warn +
+      '<div style="display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:18px">' +
+        '<button type="button" data-act="prev" class="h-line" style="background:none;border:1px solid #ddd8ce;border-radius:11px;padding:12px 18px;font-size:14px;cursor:pointer;transition:border-color .15s ease,color .15s ease;color:'+(S.i===0?'#c4bfb4':'#121a2b')+';pointer-events:'+(S.i===0?'none':'auto')+'">← Anterior</button>' +
+        '<div style="display:flex;align-items:center;gap:8px">' +
+          (early ? '<button type="button" data-act="finish" class="h-ink" style="background:none;border:0;padding:12px 6px;'+mono+';font-size:11.5px;letter-spacing:.06em;text-transform:uppercase;color:#8a8578;cursor:pointer;text-decoration:underline;text-underline-offset:3px">Finalizar</button>' : '') +
+          '<button type="button" data-act="next" class="h-darkflat" style="background:#121a2b;color:#f5f3ef;border:0;border-radius:11px;padding:12px 22px;font-size:14px;font-weight:500;cursor:pointer;transition:background .16s ease">'+(last?'Finalizar':'Próxima →')+'</button>' +
+        '</div></div></section>';
+}
+
+/* ── resultado + gabarito comentado ────────────────────────────────────────── */
+function reviewList(){
+  return S.order.map(function(q,n){
+    var a = S.answers[n], ok = a!==null && a===q.correctIndex;
+    return { idx:n, ok:ok, blank:a===null, q:q, a:a };
+  }).filter(function(r){
+    return S.filter==='all' || (S.filter==='wrong'&&!r.ok&&!r.blank) || (S.filter==='right'&&r.ok) || (S.filter==='blank'&&r.blank);
+  });
+}
+
+function renderResult(){
+  var mono = "font-family:'IBM Plex Mono',monospace";
+  var c = counts(), pct = c.total ? Math.round(c.hit/c.total*100) : 0;
+
+  var title='Precisa revisar', msg='Releia o material com atenção e refaça o quiz — as explicações abaixo cobrem cada erro.';
+  if (pct>=90)      { title='Domínio sólido';   msg='Desempenho excelente. Confira as explicações das que escaparam e siga em frente.'; }
+  else if (pct>=70) { title='Bom desempenho';   msg='Base consistente. Revise os pontos errados abaixo para fechar as lacunas.'; }
+  else if (pct>=50) { title='Meio do caminho';  msg='Você acertou o essencial, mas há lacunas. Comece pelo filtro de erradas.'; }
+
+  var stat = function(v,l,color){
+    return '<div style="background:#faf9f6;padding:14px 10px">' +
+      '<div style="'+mono+';font-size:19px;font-weight:500;color:'+color+'">'+v+'</div>' +
+      '<div style="'+mono+';font-size:9.5px;letter-spacing:.09em;text-transform:uppercase;color:#8a8578;margin-top:2px">'+l+'</div></div>';
+  };
+
+  var fdefs = [['all','Todas',c.total],['wrong','Erradas',c.miss],['right','Certas',c.hit],['blank','Em branco',c.blank]];
+  var filters = fdefs.map(function(f){
+    var on = S.filter===f[0];
+    return '<button type="button" data-act="filter" data-k="'+f[0]+'" class="h-line" style="border-radius:99px;padding:8px 14px;font-size:13px;cursor:pointer;transition:all .15s ease;border:1px solid '+(on?'#121a2b':'#ddd8ce')+';background:'+(on?'#121a2b':'transparent')+';color:'+(on?'#f5f3ef':'#5b6478')+'">'+f[1]+' '+f[2]+'</button>';
+  }).join('');
+
+  var list = reviewList();
+  var allOpen = list.length>0 && list.every(function(r){ return S.open[r.idx]; });
+
+  var cards = list.map(function(r){
+    var numBg='#f0ede7', numFg='#8a8578';
+    if (!r.blank) { if (r.ok) { numBg='#e3f0e8'; numFg='#1f5c3e'; } else { numBg='#fbe6e2'; numFg='#8f2f25'; } }
+    var open = !!S.open[r.idx];
+    var body = '';
+    if (open) {
+      var opts = r.q.options.map(function(text,n){
+        var isC = n===r.q.correctIndex, isMine = n===r.a;
+        var bd='#eeebe4', bg='#fbfaf8', fg='#5b6478', bBg='#f0ede7', bFg='#8a8578', tag='', tBg='', tFg='';
+        if (isC)            { bd='#bcdcc9'; bg='#eef7f1'; fg='#1f5c3e'; bBg='#2e7d55'; bFg='#fff'; tag='Correta'; tBg='#d9ede1'; tFg='#1f5c3e'; }
+        if (isMine && !isC) { bd='#eec4bd'; bg='#fdf0ee'; fg='#8f2f25'; bBg='#c04437'; bFg='#fff'; tag='Sua resposta'; tBg='#f7ddd8'; tFg='#8f2f25'; }
+        if (isMine && isC)  { tag='Sua resposta ✓'; }
+        return '<div style="display:flex;gap:11px;align-items:flex-start;padding:11px 13px;border-radius:11px;font-size:14px;line-height:1.5;border:1px solid '+bd+';background:'+bg+';color:'+fg+'">' +
+          '<span style="flex-shrink:0;width:21px;height:21px;border-radius:6px;display:flex;align-items:center;justify-content:center;'+mono+';font-size:10.5px;font-weight:600;background:'+bBg+';color:'+bFg+'">'+LETTERS[n]+'</span>' +
+          '<span style="flex:1;min-width:0;text-wrap:pretty">'+esc(text)+'</span>' +
+          (tag ? '<span style="flex-shrink:0;'+mono+';font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;padding:3px 7px;border-radius:6px;margin-top:1px;background:'+tBg+';color:'+tFg+'">'+tag+'</span>' : '') +
+          '</div>';
+      }).join('');
+      body = '<div style="padding:2px 15px 18px;animation:qDrawer .2s ease">' +
+        '<div style="height:1px;background:#eeebe4;margin:0 0 16px"></div>' +
+        '<p style="font-family:\'Newsreader\',Georgia,serif;font-size:18px;line-height:1.5;margin:0 0 16px;text-wrap:pretty">'+esc(r.q.question)+'</p>' +
+        figura(r.q) +
+        '<div style="display:flex;flex-direction:column;gap:7px">'+opts+'</div>' +
+        '<div style="margin-top:16px;padding:14px 16px;background:#f7f6f2;border-left:2.5px solid #2b57cc;border-radius:0 11px 11px 0">' +
+          '<div style="'+mono+';font-size:9.5px;letter-spacing:.16em;text-transform:uppercase;color:#2b57cc;margin-bottom:7px">Por quê</div>' +
+          '<p style="margin:0;font-size:14px;line-height:1.65;color:#39404f;text-wrap:pretty">'+esc(r.q.explanation)+'</p></div>' +
+        '<button type="button" data-act="jump" data-n="'+r.idx+'" style="margin-top:14px;background:none;border:0;padding:0;'+mono+';font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:#2b57cc;cursor:pointer;text-decoration:underline;text-underline-offset:3px">Abrir no quiz →</button></div>';
+    }
+    return '<div style="background:#fff;border:1px solid '+(open?'#c9c3b6':'#e4e0d8')+';border-radius:14px;overflow:hidden;transition:border-color .15s ease">' +
+      '<button type="button" data-act="toggle" data-n="'+r.idx+'" style="display:flex;align-items:center;gap:12px;width:100%;text-align:left;background:none;border:0;padding:14px 15px;cursor:pointer">' +
+        '<span style="flex-shrink:0;width:28px;height:28px;border-radius:8px;display:flex;align-items:center;justify-content:center;'+mono+';font-size:12px;font-weight:600;background:'+numBg+';color:'+numFg+'">'+pad(r.idx+1)+'</span>' +
+        '<span style="flex:1;min-width:0;font-size:14px;line-height:1.45;color:#39404f;overflow:hidden;text-overflow:ellipsis;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical">'+esc(r.q.question)+'</span>' +
+        '<span style="flex-shrink:0;'+mono+';font-size:16px;color:#8a8578;width:16px;text-align:center">'+(open?'−':'+')+'</span>' +
+      '</button>' + body + '</div>';
+  }).join('');
+
+  document.getElementById('stage').innerHTML =
+    '<section style="padding:34px 0 0;animation:qFade .3s ease">' +
+      '<div style="'+mono+';font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:#2b57cc;margin-bottom:14px">Resultado</div>' +
+      '<h2 style="font-family:\'Newsreader\',Georgia,serif;font-size:36px;line-height:1.12;font-weight:400;letter-spacing:-.025em;margin:0 0 8px">'+title+'</h2>' +
+      '<p style="font-size:15px;line-height:1.6;color:#5b6478;margin:0 0 24px;max-width:48ch;text-wrap:pretty">'+msg+'</p>' +
+      '<div style="height:8px;border-radius:99px;background:#e4e0d8;overflow:hidden;margin-bottom:10px">' +
+        '<div style="height:100%;border-radius:99px;background:#121a2b;transition:width .7s cubic-bezier(.22,1,.36,1);width:'+pct+'%"></div></div>' +
+      '<div style="display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:#e4e0d8;border:1px solid #e4e0d8;border-radius:14px;overflow:hidden;margin-bottom:34px">' +
+        stat(c.hit,'Certas','#2e7d55')+stat(c.miss,'Erradas','#c04437')+stat(c.blank,'Branco','#8a8578')+stat(pct+'%','Aproveit.','#2b57cc') +
+      '</div>' +
+      '<div style="display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-bottom:14px">' +
+        '<h3 style="font-family:\'Newsreader\',Georgia,serif;font-size:22px;font-weight:500;letter-spacing:-.015em;margin:0">Gabarito comentado</h3>' +
+        '<button type="button" data-act="toggleAll" class="h-ink" style="background:none;border:0;padding:6px 0;'+mono+';font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:#5b6478;cursor:pointer;text-decoration:underline;text-underline-offset:3px">'+(allOpen?'Recolher tudo':'Expandir tudo')+'</button>' +
+      '</div>' +
+      '<div style="display:flex;gap:7px;flex-wrap:wrap;margin-bottom:16px">'+filters+'</div>' +
+      '<div style="display:flex;flex-direction:column;gap:8px">'+cards+'</div>' +
+      (list.length===0 ? '<div style="padding:38px 16px;text-align:center;color:#8a8578;font-size:14px;border:1px dashed #ddd8ce;border-radius:14px">Nenhuma questão neste filtro.</div>' : '') +
+      '<div style="display:flex;flex-wrap:wrap;gap:9px;margin-top:28px;padding-top:24px;border-top:1px solid #e4e0d8">' +
+        '<button type="button" data-act="restart" class="h-darkflat" style="background:#121a2b;color:#f5f3ef;border:0;border-radius:11px;padding:13px 24px;font-size:14px;font-weight:500;cursor:pointer;transition:background .16s ease">Refazer o quiz</button>' +
+        '<button type="button" data-act="back" class="h-line" style="background:none;border:1px solid #ddd8ce;border-radius:11px;padding:13px 22px;font-size:14px;cursor:pointer;transition:border-color .15s ease">Voltar às questões</button>' +
+        '<button type="button" data-act="resumo" class="h-line" style="background:none;border:1px solid #ddd8ce;border-radius:11px;padding:13px 22px;font-size:14px;cursor:pointer;transition:border-color .15s ease">Ler o resumo</button>' +
+      '</div></section>';
+}
+
+/* ── render + eventos ──────────────────────────────────────────────────────── */
+
+/* ─── Tutor DeepSeek — só local, só quando a questão foi errada ──────────────
+   A chave vem de ../deepseek_key.js, que não existe na versão publicada: online
+   o arquivo dá 404, dsOn() vira false e o chat simplesmente não é renderizado.
+   O histórico fica em S.chat[idDaQuestao] e sobrevive ao re-render do stage. */
+var DS_MODEL = 'deepseek-v4-flash';
+var DS_URL   = 'https://api.deepseek.com/chat/completions';
+var NLJS     = String.fromCharCode(10);
+var DS_MONO  = "font-family:'IBM Plex Mono',monospace";
+var DS_SANS  = "font-family:'IBM Plex Sans',system-ui,sans-serif";
+
+function dsOn(){ return typeof window.DEEPSEEK_KEY === 'string' && window.DEEPSEEK_KEY.length > 10; }
+
+
+/* ─── markdown do chat ───────────────────────────────────────────────────────
+   O modelo responde em markdown (**negrito**, listas, `codigo`, tabelas). O texto
+   vem de fora, entao a ordem importa: ESCAPA TUDO primeiro com esc() e so depois
+   aplica formatacao — assim nenhuma tag vinda da resposta vira HTML de verdade.
+   Como esc() ja trocou > por &gt;, a citacao casa com &gt; e nao com >.
+   Trechos de codigo saem de cena por um marcador NUL, que nao pode existir
+   no texto escapado, e voltam no fim — assim ` ` protege o que esta dentro. */
+function mdIn(t){
+  var Z = String.fromCharCode(0), codes = [];
+  t = t.replace(/`([^`]+)`/g, function(_, c){
+    codes.push(c);
+    return Z + 'c' + (codes.length - 1) + Z;
+  });
+  t = t.replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>');
+  t = t.replace(/__([^_]+)__/g, '<strong>$1</strong>');
+  t = t.replace(/(^|[\s(])\*([^*\n]+)\*/g, '$1<em>$2</em>');
+  t = t.replace(/(^|[\s(])_([^_\n]+)_/g, '$1<em>$2</em>');
+  t = t.replace(/\[([^\]]+)\]\((https?:\/\/[^)\s]+)\)/g,
+    '<a href="$2" target="_blank" rel="noopener" style="color:#2b57cc">$1</a>');
+  return t.replace(new RegExp(Z + 'c([0-9]+)' + Z, 'g'), function(_, i){
+    return '<code style="' + DS_MONO + ';font-size:12px;background:#f2efe9;' +
+           'border-radius:4px;padding:1px 5px">' + codes[i] + '</code>';
+  });
+}
+
+function mdChat(txt){
+  var Z = String.fromCharCode(0);
+  var t = esc(String(txt == null ? '' : txt));
+  var blocos = [];
+  t = t.replace(/```[a-zA-Z]*\n?([\s\S]*?)```/g, function(_, c){
+    blocos.push(c.replace(/\n+$/, ''));
+    return Z + 'b' + (blocos.length - 1) + Z;
+  });
+
+  var linhas = t.split('\n'), out = [], lista = null, par = [];
+  function fechaLista(){ if (lista) { out.push('</' + lista + '>'); lista = null; } }
+  function fechaPar(){
+    if (par.length) { out.push('<p style="margin:0 0 9px">' + mdIn(par.join(' ')) + '</p>'); par = []; }
+  }
+  function fecha(){ fechaPar(); fechaLista(); }
+
+  for (var i = 0; i < linhas.length; i++){
+    var l = linhas[i], t2 = l.trim();
+    if (!t2) { fecha(); continue; }
+
+    var bl = t2.match(new RegExp('^' + Z + 'b([0-9]+)' + Z + '$'));
+    if (bl) {
+      fecha();
+      out.push('<pre style="margin:0 0 9px;padding:9px 11px;background:#f7f6f2;border-radius:9px;' +
+               'overflow-x:auto;' + DS_MONO + ';font-size:12px;line-height:1.5">' + blocos[bl[1]] + '</pre>');
+      continue;
+    }
+
+    // tabela: linha com | ... | seguida da separadora | --- | --- |
+    if (t2.charAt(0) === '|' && i + 1 < linhas.length && /^\|[\s:|-]+\|$/.test(linhas[i+1].trim())) {
+      fecha();
+      var celulas = function(linha){
+        return linha.trim().replace(/^\||\|$/g, '').split('|').map(function(c){ return mdIn(c.trim()); });
+      };
+      var cab = celulas(t2), corpo = [];
+      i += 2;
+      while (i < linhas.length && linhas[i].trim().charAt(0) === '|') { corpo.push(celulas(linhas[i].trim())); i++; }
+      i--;
+      var cel = 'padding:5px 9px;border-bottom:1px solid #eae6de;text-align:left;vertical-align:top';
+      out.push('<div style="overflow-x:auto;margin:0 0 9px">' +
+        '<table style="border-collapse:collapse;font-size:12.5px;width:100%">' +
+        '<thead><tr>' + cab.map(function(c){ return '<th style="' + cel + ';font-weight:600">' + c + '</th>'; }).join('') + '</tr></thead>' +
+        '<tbody>' + corpo.map(function(r){
+          return '<tr>' + r.map(function(c){ return '<td style="' + cel + '">' + c + '</td>'; }).join('') + '</tr>';
+        }).join('') + '</tbody></table></div>');
+      continue;
+    }
+
+    var h = t2.match(/^#{1,6}\s+(.*)$/);
+    if (h) {
+      fecha();
+      out.push('<div style="font-weight:600;color:#121a2b;margin:11px 0 5px">' + mdIn(h[1]) + '</div>');
+      continue;
+    }
+
+    if (/^(---+|\*\*\*+)$/.test(t2)) {
+      fecha();
+      out.push('<hr style="border:0;border-top:1px solid #eae6de;margin:11px 0">');
+      continue;
+    }
+
+    var cit = t2.match(/^&gt;\s?(.*)$/);
+    if (cit) {
+      fecha();
+      out.push('<div style="margin:0 0 9px;padding:7px 11px;border-left:2.5px solid #c9d6f7;' +
+               'background:#f7f9fe;border-radius:0 7px 7px 0">' + mdIn(cit[1]) + '</div>');
+      continue;
+    }
+
+    var mUl = t2.match(/^[-*•]\s+(.*)$/);
+    var mOl = t2.match(/^\d+[.)]\s+(.*)$/);
+    if (mUl || mOl) {
+      var tipo = mUl ? 'ul' : 'ol';
+      fechaPar();
+      if (lista !== tipo) {
+        fechaLista();
+        out.push('<' + tipo + ' style="margin:0 0 9px;padding-left:19px">');
+        lista = tipo;
+      }
+      out.push('<li style="margin:3px 0">' + mdIn((mUl || mOl)[1]) + '</li>');
+      continue;
+    }
+
+    fechaLista();
+    par.push(t2);
+  }
+  fecha();
+  return out.join('');
+}
+
+function msgHTML(m){
+  if (m.role === 'user')
+    return '<div style="margin:0 0 10px;text-align:right">' +
+      '<span style="display:inline-block;max-width:88%;text-align:left;background:#f2efe9;' +
+      'border-radius:12px 12px 3px 12px;padding:9px 12px;font-size:13.5px;line-height:1.6;' +
+      'color:#39404f;text-wrap:pretty">' + esc(m.content) + '</span></div>';
+  return '<div style="margin:0 0 12px">' +
+    '<div style="' + DS_MONO + ';font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;' +
+    'color:#2b57cc;margin-bottom:4px">DeepSeek</div>' +
+    '<div style="font-size:13.5px;line-height:1.65;color:#39404f;text-wrap:pretty">' +
+    mdChat(m.content) + '</div></div>';
+}
+
+function chatBox(q, acertou){
+  if (!dsOn()) return '';
+  var chamada = acertou ? 'Quer ir mais fundo?' : 'Ainda com dúvida?';
+  var dica = acertou ? 'Por que as outras estão erradas?' : 'Por que a que eu marquei está errada?';
+  var hist = (S.chat[q.id] || []).map(msgHTML).join('');
+  return '<div id="ds" data-qid="' + q.id + '" style="margin-top:14px;border:1px solid #e4e0d8;' +
+      'border-radius:14px;background:#fff;overflow:hidden;animation:qFade .26s ease">' +
+      '<div style="display:flex;align-items:center;gap:8px;padding:11px 15px;' +
+        'border-bottom:1px solid #f0ede6;background:#faf9f6">' +
+        '<span style="' + DS_MONO + ';font-size:10px;letter-spacing:.16em;text-transform:uppercase;' +
+        'color:#2b57cc">' + chamada + '</span>' +
+        '<span style="font-size:12px;color:#8a8578">pergunte ao DeepSeek</span></div>' +
+      '<div id="dsLog" style="max-height:280px;overflow-y:auto;padding:' + (hist ? '12px 15px' : '0') + '">' +
+        hist + '</div>' +
+      '<div style="display:flex;gap:8px;padding:11px 12px;border-top:1px solid #f0ede6">' +
+        '<input id="dsIn" type="text" autocomplete="off" ' +
+          'placeholder="' + dica + '" ' +
+          'style="flex:1;min-width:0;border:1px solid #e4e0d8;border-radius:10px;padding:10px 12px;' +
+          'font-size:13.5px;' + DS_SANS + ';color:#121a2b;background:#fff;outline:none">' +
+        '<button type="button" data-act="dsSend" class="h-darkflat" style="flex-shrink:0;' +
+          'background:#121a2b;color:#f5f3ef;border:0;border-radius:10px;padding:10px 16px;' +
+          'font-size:13px;font-weight:500;cursor:pointer;transition:background .16s ease">Enviar</button>' +
+      '</div></div>';
+}
+
+function dsContexto(q, ans){
+  var alts = q.options.map(function(o, n){ return LETTERS[n] + ') ' + o; }).join(NLJS);
+  return 'Questao: ' + q.question + NLJS + alts + NLJS +
+    'Resposta correta: ' + LETTERS[q.correctIndex] + ') ' + q.options[q.correctIndex] + NLJS +
+    'O estudante marcou: ' + (ans === null ? 'nada' : LETTERS[ans] + ') ' + q.options[ans]) + NLJS +
+    'Explicacao que ele ja tem: ' + q.explanation;
+}
+
+A.dsSend = function(){
+  var box = document.getElementById('ds');
+  if (!box || !dsOn() || box.getAttribute('data-busy')) return;
+  var input = document.getElementById('dsIn'), log = document.getElementById('dsLog');
+  var texto = (input.value || '').trim();
+  if (!texto) return;
+
+  var qid = parseInt(box.getAttribute('data-qid'), 10), q = null, ans = null;
+  for (var i = 0; i < S.order.length; i++)
+    if (S.order[i].id === qid) { q = S.order[i]; ans = S.answers[i]; }
+  if (!q) return;
+
+  S.chat[qid] = S.chat[qid] || [];
+  S.chat[qid].push({ role:'user', content:texto });
+  input.value = '';
+  log.style.padding = '12px 15px';
+  log.insertAdjacentHTML('beforeend', msgHTML({ role:'user', content:texto }));
+  log.insertAdjacentHTML('beforeend',
+    '<div><div style="' + DS_MONO + ';font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;' +
+    'color:#2b57cc;margin-bottom:4px">DeepSeek</div>' +
+    '<div id="dsTxt" style="font-size:13.5px;line-height:1.65;color:#8a8578;' +
+    'text-wrap:pretty">pensando…</div></div>');
+  log.scrollTop = log.scrollHeight;
+  box.setAttribute('data-busy', '1');
+
+  var acertou = (ans === q.correctIndex);
+  var situacao = acertou
+    ? 'Voce e um tutor de medicina. O estudante do 7o semestre ACERTOU esta questao, mas ficou com uma duvida. '
+    : 'Voce e um tutor de medicina. O estudante do 7o semestre ERROU esta questao. ';
+  var msgs = [
+    { role:'system', content: situacao +
+      'Responda em portugues do Brasil, direto ao ponto, no maximo 150 palavras. ' +
+      'Traga o dado concreto (valor, criterio, mecanismo) em vez de generalidade. ' +
+      'Nao repita a explicacao que ele ja tem; foque na duvida que ele trouxe.' },
+    { role:'user', content: dsContexto(q, ans) }
+  ];
+  var h = S.chat[qid];
+  for (var j = 0; j < h.length; j++) msgs.push({ role:h[j].role, content:h[j].content });
+
+  dsStream(msgs, function(txt, fim, erro){
+    var el = document.getElementById('dsTxt');
+    if (!el) { box.removeAttribute('data-busy'); return; }
+    if (erro) { el.style.color = '#c04437'; el.textContent = erro; box.removeAttribute('data-busy'); return; }
+    el.style.color = '#39404f';
+    el.innerHTML = mdChat(txt);
+    var lg = document.getElementById('dsLog'); if (lg) lg.scrollTop = lg.scrollHeight;
+    if (fim) { el.removeAttribute('id'); S.chat[qid].push({ role:'assistant', content:txt }); box.removeAttribute('data-busy'); }
+  });
+};
+
+function dsStream(messages, cb){
+  var acc = '';
+  fetch(DS_URL, {
+    method: 'POST',
+    headers: { 'Content-Type':'application/json', 'Authorization':'Bearer ' + window.DEEPSEEK_KEY },
+    body: JSON.stringify({ model:DS_MODEL, messages:messages, stream:true, max_tokens:1200, temperature:0.3 })
+  }).then(function(r){
+    if (!r.ok) return r.text().then(function(t){
+      throw new Error(
+        r.status === 401 ? 'Chave recusada (401). Confira o deepseek_key.js.' :
+        r.status === 402 ? 'Sem saldo na conta DeepSeek (402).' :
+        r.status === 429 ? 'Limite de uso atingido (429). Tente daqui a pouco.' :
+        'Erro ' + r.status + ': ' + String(t).slice(0, 120));
+    });
+    var reader = r.body.getReader(), dec = new TextDecoder(), buf = '';
+    (function pump(){
+      return reader.read().then(function(res){
+        if (res.done) { cb(acc || '(resposta vazia)', true); return; }
+        buf += dec.decode(res.value, { stream:true });
+        var linhas = buf.split(NLJS);
+        buf = linhas.pop();
+        for (var i = 0; i < linhas.length; i++){
+          var l = linhas[i].trim();
+          if (l.indexOf('data:') !== 0) continue;
+          var carga = l.slice(5).trim();
+          if (carga === '[DONE]') continue;
+          try {
+            var d = JSON.parse(carga).choices[0].delta;
+            if (d && d.content) { acc += d.content; cb(acc, false); }
+          } catch (_){}
+        }
+        return pump();
+      });
+    })();
+  }).catch(function(e){
+    cb('', true, 'Nao consegui falar com o DeepSeek: ' + (e && e.message ? e.message : e));
+  });
+}
+
+function render(){
+  renderHeader();
+  if (S.view === 'home')        renderHome();
+  else if (S.view === 'resumo') renderResumo();
+  else if (S.finished)          renderResult();
+  else                          renderQuestion();
+}
+
+/* lightbox: clique em qualquer figura amplia */
+document.addEventListener('click', function(e){
+  var lb = document.getElementById('lb');
+  if (e.target.closest('#lb')) { lb.className = ''; return; }
+  var img = e.target.closest('.fig img');
+  if (img) { lb.firstElementChild.src = img.src; lb.className = 'on'; }
+});
+window.addEventListener('keydown', function(e){
+  if (e.key === 'Escape') document.getElementById('lb').className = '';
+});
+
+document.addEventListener('click', function(e){
+  var b = e.target.closest('[data-act]'); if (!b) return;
+  var act = b.getAttribute('data-act'), n = parseInt(b.getAttribute('data-n'),10), k = b.getAttribute('data-k');
+  if (act==='pick'||act==='jump'||act==='toggle') A[act](n);
+  else if (act==='filter') A.filter(k);
+  else if (A[act]) A[act]();
+});
+
+window.addEventListener('keydown', function(e){
+  if (S.view!=='quiz' || !S.started || S.finished) return;
+  var t = e.target, tag = t && t.tagName;
+  if (tag==='INPUT' || tag==='TEXTAREA' || (t && t.isContentEditable)) return;
+  if (e.metaKey||e.ctrlKey||e.altKey) return;
+  if (e.key==='ArrowRight')     { e.preventDefault(); A.go(S.i+1); }
+  else if (e.key==='ArrowLeft') { e.preventDefault(); A.go(S.i-1); }
+  else if (e.key==='Enter')     { e.preventDefault(); A.next(); }
+  else if (/^[1-6]$/.test(e.key)) {
+    var n = parseInt(e.key,10)-1;
+    if (n < S.order[S.i].options.length) A.pick(n);
+  }
+});
+
+render();
+</script>
+</body>
+</html>

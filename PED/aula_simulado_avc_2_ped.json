@@ -1,8 +1,8 @@
 {
   "titulo": "Simulado AVC 2 PED",
   "eyebrow": "Pediatria · Simulado da prova",
-  "subtitulo": "As 16 questões do formulário, com a correta e o porquê",
-  "intro": "Transcrição do simulado da AVC 2 de Pediatria. Três eixos se repetem: atendimento à vítima de violência sexual e aborto legal, erros inatos da imunidade e alergia na infância. As alternativas são as do formulário original; só a ordem muda, porque o quiz embaralha a cada rodada.",
+  "subtitulo": "As 19 questões do formulário, com a correta e o porquê",
+  "intro": "Transcrição do simulado da AVC 2 de Pediatria. Três eixos se repetem: violência sexual e aborto legal (8 questões), erros inatos da imunidade (7) e alergia e dermatologia (4). O gabarito das 11 primeiras é oficial, vindo das telas de correção do formulário; o das demais foi reconstruído pelo conteúdo. As alternativas são as do formulário original — só a ordem muda, porque o quiz embaralha a cada rodada.",
   "questoes": [
     {
       "question": "Pré-escolar, sexo feminino, 3 anos de idade, apresenta lesões eczematosas pruriginosas desde os 6 meses de vida, que geralmente pioram na época do inverno. Nas últimas duas semanas, surgiram pápulas eritematosas exsudativas com crostas melicéricas em fossas cubitais e poplíteas. Mãe relata prurido intenso, que piora após banho quente. Ao exame clínico, apresenta áreas de liquenificação, escoriações e crostas amareladas em membros superiores e inferiores. Com base no diagnóstico mais provável, a conduta adequada é:",
@@ -26,6 +26,17 @@
       ],
       "correctIndex": 0,
       "explanation": "Letra D no formulário. Dois comprimidos de 0,75 mg somam os 1,5 mg de levonorgestrel em dose única da contracepção de emergência, que pode ser oferecida em até cinco dias. Cada erro das outras é de um detalhe só: a PEP para HIV se inicia o mais cedo possível e no máximo ATÉ 72 horas, não depois; os 2 g de metronidazol são profilaxia de tricomoníase, não de vaginose bacteriana; a sífilis é prevenida com penicilina BENZATINA, não cristalina; e vacinação incompleta contra hepatite B exige completar o esquema e avaliar imunoglobulina, nunca conduta nenhuma."
+    },
+    {
+      "question": "Durante um plantão hospitalar, um profissional de saúde não atende uma adolescente vítima de violência sexual alegando que ela não estava ferida e, por isso, deveria ir diretamente para a delegacia fazer boletim de ocorrência. Essa conduta será:",
+      "options": [
+        "Caracterizada como infração ética, legal e omissão de socorro.",
+        "Juridicamente respaldada, se houver justificativa registrada em prontuário.",
+        "Inadequada do ponto de vista ético, apesar de representar as leis em vigor.",
+        "Considerada adequada, já que a vítima foi orientada a procurar apoio policial."
+      ],
+      "correctIndex": 0,
+      "explanation": "Letra A no formulário. O atendimento à vítima de violência sexual é emergência médica e independe de lesão física, de boletim de ocorrência e de qualquer providência policial — mandar a adolescente à delegacia primeiro é negar assistência e perder as janelas de profilaxia. A recusa acumula três camadas: infração ética pelo Código de Ética Médica, descumprimento da norma do Ministério da Saúde e omissão de socorro, que é crime. Registrar justificativa em prontuário não torna a conduta legítima, e a lei em vigor é exatamente o que a condena."
     },
     {
       "question": "João, 6 anos de idade, foi a sua primeira consulta com o novo pediatra. Na anamnese, tinha como queixa principal prurido nasal com espirros principalmente pela manhã. Em seus antecedentes, cerca de 3-4 resfriados por ano, uma internação anterior devida diarreia aguda controlada 72 horas após a admissão, uma internação para tratar pneumonia bacteriana aos 4 anos (tratou em enfermaria, sem intercorrências, recebendo alta em 7 dias). Durante o exame físico, o pediatra observa diversas cicatrizes em região glútea e em coxas, as quais a mãe diz serem resultado de abscessos de repetição. Dentre os dados coletados nesta consulta, o que justifica uma investigação para erros inatos da imunidade, é:",
@@ -62,6 +73,17 @@
       "explanation": "Letra A no formulário. É a mesma dermatite atópica da primeira questão, mas leve e SEM infecção — e a conduta muda só por isso. O tripé é retirar o irritante (sabonete perfumado e banho prolongado), restaurar a barreira com emoliente e tratar a inflamação ativa com corticoide tópico de baixa potência. Corticoide sistêmico não entra em doença leve, antibiótico não entra sem sinal de infecção e imunossupressor sistêmico é reservado ao refratário."
     },
     {
+      "question": "Com relação às imunodeficiências combinadas, assinale a alternativa que corresponde à principal representante de defeitos combinados associados à trombocitopenia congênita, que cursa com infecções de repetição, eczema tipo atópico e trombocitopenia com plaquetas pequenas?",
+      "options": [
+        "Síndrome de Wisckott-Aldrich.",
+        "Síndrome de Chediak-Higashi.",
+        "Síndrome de diGeorge.",
+        "Síndrome de Bruton."
+      ],
+      "correctIndex": 0,
+      "explanation": "Letra A no formulário (a grafia correta do epônimo é Wiskott-Aldrich). A tríade é a assinatura: infecções de repetição, eczema parecido com dermatite atópica e trombocitopenia com plaquetas PEQUENAS — o volume plaquetário reduzido é o detalhe que separa de outras plaquetopenias. É ligada ao X, por mutação no gene WAS. Chédiak-Higashi dá albinismo parcial e grânulos gigantes, diGeorge é defeito tímico com hipocalcemia e cardiopatia conotruncal, e Bruton é deficiência de anticorpos pura, sem eczema nem plaquetopenia."
+    },
+    {
       "question": "Criança com imunodeficiência primária não pode receber as vacinas:",
       "options": [
         "Tríplice viral, Rotavírus, BCG, Pólio Oral, Febre amarela e Varicela.",
@@ -82,6 +104,17 @@
       ],
       "correctIndex": 0,
       "explanation": "Letra B no formulário. A afirmação I inverte a lógica: a profilaxia é empírica e imediata, porque esperar sorologia significa perder a janela — a sorologia inicial serve para registrar o status prévio, não para autorizar a profilaxia. A II inventa uma contraindicação que não existe: o levonorgestrel não tem contraindicação absoluta e não se anula por estar menstruada. A III é correta e vale como regra geral: a notificação ao SINAN é compulsória, independe da vontade da vítima e não depende de boletim de ocorrência."
+    },
+    {
+      "question": "Uma menina de 6 anos de idade é levada à consulta com história de lesões eritematosas e pruriginosas nas dobras internas do cotovelo e joelho, que pioram no inverno, além de pele xerótica. A mãe refere que a criança tem histórico de asma e rinite alérgica. Qual é o diagnóstico mais provável para este quadro clínico?",
+      "options": [
+        "Dermatite atópica.",
+        "Dermatite de contato.",
+        "Dermatite seborreica.",
+        "Psoríase."
+      ],
+      "correctIndex": 0,
+      "explanation": "Letra C no formulário. Quatro achados fecham o diagnóstico juntos: lesão pruriginosa em FLEXURAS (a topografia típica depois do segundo ano), xerose como pele de base, piora no inverno e atopia pessoal — a criança já tem asma e rinite, compondo a marcha atópica. Dermatite de contato segue a área exposta ao agente, não as dobras; a seborreica ocupa couro cabeludo e regiões ricas em sebo; e a psoríase faz placa eritematodescamativa prateada em superfícies extensoras, justamente o oposto da distribuição aqui."
     },
     {
       "question": "Menina, 13 anos de idade, procura atendimento em uma UBS, acompanhada de sua mãe. Relata estar com 23 semanas de gestação, decorrente de relação sexual consensual com seu namorado de 15 anos de idade. Mãe e filha expressam o desejo de interromper a gestação. Com base na legislação brasileira vigente, a interrupção da gestação:",

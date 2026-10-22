@@ -1,8 +1,8 @@
 # Questões — Transcrição
 
-> Transcrição de formulário (Google Forms), na ordem em que as telas foram capturadas (11:53 → 11:56). Todas as questões valem 50 pontos.
+> Transcrição de formulário (Google Forms), na ordem do formulário. Todas as questões valem 50 pontos.
+> As questões 3, 7 e 10 não apareciam nas primeiras capturas e foram incluídas a partir das telas de correção.
 > As letras (A, B, C…) foram adicionadas para referência no gabarito; o formulário original não as numera.
-
 ---
 
 ## Questão 1
@@ -30,6 +30,16 @@ Você está atendendo na UPA uma adolescente vítima de violência sexual por pe
 
 ## Questão 3
 
+Durante um plantão hospitalar, um profissional de saúde não atende uma adolescente vítima de violência sexual alegando que ela não estava ferida e, por isso, deveria ir diretamente para a delegacia fazer boletim de ocorrência. Essa conduta será:
+
+- **A)** Caracterizada como infração ética, legal e omissão de socorro.
+- **B)** Juridicamente respaldada, se houver justificativa registrada em prontuário.
+- **C)** Inadequada do ponto de vista ético, apesar de representar as leis em vigor.
+- **D)** Considerada adequada, já que a vítima foi orientada a procurar apoio policial.
+---
+
+## Questão 4
+
 João, 6 anos de idade, foi a sua primeira consulta com o novo pediatra. Na anamnese, tinha como queixa principal prurido nasal com espirros principalmente pela manhã. Em seus antecedentes, cerca de 3-4 resfriados por ano, uma internação anterior devida diarreia aguda controlada 72 horas após a admissão, uma internação para tratar pneumonia bacteriana aos 4 anos (tratou em enfermaria, sem intercorrências, recebendo alta em 7 dias). Durante o exame físico, o pediatra observa diversas cicatrizes em região glútea e em coxas, as quais a mãe diz serem resultado de abscessos de repetição. Dentre os dados coletados nesta consulta, o que justifica uma investigação para erros inatos da imunidade, é:
 
 - **A)** Rinite alérgica.
@@ -40,7 +50,7 @@ João, 6 anos de idade, foi a sua primeira consulta com o novo pediatra. Na anam
 
 ---
 
-## Questão 4
+## Questão 5
 
 O atendimento à mulher vítima de violência sexual no Brasil envolve aspectos éticos, legais e técnicos. Sobre o procedimento de interrupção da gestação decorrente de estupro (Abortamento Legal) previsto no Código Penal e regulamentado por normas técnicas do Ministério da Saúde, assinale a alternativa correta.
 
@@ -51,7 +61,7 @@ O atendimento à mulher vítima de violência sexual no Brasil envolve aspectos 
 
 ---
 
-## Questão 5
+## Questão 6
 
 Menina de 6 anos é levada para atendimento médico por prurido leve e presença de lesões eritematosas em pregas cubitais e poplíteas, sem sinais clínicos de infecção cutânea. Os pais relatam uso diário de sabonete perfumado e banhos prolongados. Qual é a conduta adequada?
 
@@ -62,7 +72,17 @@ Menina de 6 anos é levada para atendimento médico por prurido leve e presença
 
 ---
 
-## Questão 6
+## Questão 7
+
+Com relação às imunodeficiências combinadas, assinale a alternativa que corresponde à principal representante de defeitos combinados associados à trombocitopenia congênita, que cursa com infecções de repetição, eczema tipo atópico e trombocitopenia com plaquetas pequenas?
+
+- **A)** Síndrome de Wisckott-Aldrich.
+- **B)** Síndrome de Chediak-Higashi.
+- **C)** Síndrome de diGeorge.
+- **D)** Síndrome de Bruton.
+---
+
+## Questão 8
 
 Criança com imunodeficiência primária não pode receber as vacinas:
 
@@ -73,7 +93,7 @@ Criança com imunodeficiência primária não pode receber as vacinas:
 
 ---
 
-## Questão 7
+## Questão 9
 
 O atendimento à mulher em situação de violência sexual é uma emergência médica que exige uma abordagem multidisciplinar e o cumprimento de protocolos específicos para minimizar os danos físicos e psíquicos. Sobre as profilaxias e os aspectos legais deste atendimento, avalie as afirmações:
 
@@ -92,7 +112,17 @@ Dessa forma, é CORRETO afirmar:
 
 ---
 
-## Questão 8
+## Questão 10
+
+Uma menina de 6 anos de idade é levada à consulta com história de lesões eritematosas e pruriginosas nas dobras internas do cotovelo e joelho, que pioram no inverno, além de pele xerótica. A mãe refere que a criança tem histórico de asma e rinite alérgica. Qual é o diagnóstico mais provável para este quadro clínico?
+
+- **A)** Dermatite de contato.
+- **B)** Psoríase.
+- **C)** Dermatite atópica.
+- **D)** Dermatite seborreica.
+---
+
+## Questão 11
 
 Menina, 13 anos de idade, procura atendimento em uma UBS, acompanhada de sua mãe. Relata estar com 23 semanas de gestação, decorrente de relação sexual consensual com seu namorado de 15 anos de idade. Mãe e filha expressam o desejo de interromper a gestação. Com base na legislação brasileira vigente, a interrupção da gestação:
 
@@ -103,7 +133,7 @@ Menina, 13 anos de idade, procura atendimento em uma UBS, acompanhada de sua mã
 
 ---
 
-## Questão 9
+## Questão 12
 
 J.P.G. é um menino de 10 anos que apresenta histórico de infecções respiratórias bacterianas frequentes desde os 3 anos de idade, incluindo sinusites, otites médias e dois episódios de pneumonia comunitária. Há cerca de 2 anos, mantém tratamento regular para asma (corticoide inalatório em baixas doses associado a broncodilatador de longa duração) e corticoide tópico nasal para os sintomas da rinite alérgica. Nos últimos 6 meses, apresentou episódios recorrentes de diarreia, com resultado positivo para o antígeno de *Giardia lamblia*. Ao exame físico, encontra-se no escore z de zero (IMC), sinais de infecção respiratória superior; à inspeção abdominal, leve distensão e aumento do ruído hidroaéreo, sem visceromegalias ou linfadenopatia visível. Carteira vacinal completa. Considerando as principais hipóteses etiológicas que justifiquem os sintomas de J.P.G, assinale a alternativa que apresenta apenas instrumentos laboratoriais relevantes para a investigação.
 
@@ -114,7 +144,7 @@ J.P.G. é um menino de 10 anos que apresenta histórico de infecções respirat�
 
 ---
 
-## Questão 10
+## Questão 13
 
 Clara, uma adolescente de 16 anos, comparece à unidade básica de saúde (UBS) em busca de atendimento médico. Na recepção, o atendente responsável pelo acolhimento verifica o endereço de Clara, confirma que ela reside na área de abrangência da UBS e a encaminha para a sala da equipe de saúde da família de sua área. Lá, ela é atendida por uma enfermeira da equipe, que, após coletar informações sobre a queixa e sua duração, bem como aferir os sinais vitais, reconhece sinais de gravidade. Diante disso, a enfermeira aloca a paciente em uma maca na sala de medicação e chama imediatamente o médico da equipe, que a atende prontamente. Clara relata que está sentindo dor na região hipogástrica e disúria há cerca de três dias, com uma piora gradual. Ela teve calafrios durante a última noite, mas não percebeu que poderia estar com febre. A paciente está mais preocupada com as dores e com um atraso menstrual. Ela não consegue fornecer a data da última menstruação, mas acredita que tenha ocorrido antes do nascimento de seu irmão, que hoje tem três meses. Ao realizar o exame físico, a equipe de saúde observa que Clara está sonolenta, febril, eupneica, sudoreica, com livedo e mal perfundida. Os pulsos estão simétricos, as bulhas cardíacas são normofonéticas, mas a paciente apresenta taquicardia e um sopro sistólico. O exame abdominal revela dor à palpação na região hipogástrica. Além disso, foram identificadas equimoses em diferentes estágios de evolução em seu tórax e abdome. Quando questionada sobre as lesões equimóticas, Clara começa a chorar e pede para não abordar mais o assunto.
 
@@ -127,7 +157,7 @@ Tendo como base o caso acima, a política nacional de humanização, os atributo
 
 ---
 
-## Questão 11
+## Questão 14
 
 A Doença Granulomatosa Crônica (DGC) é uma imunodeficiência primária do fagócito. Um menino de 3 anos apresenta história de abscessos cutâneos recorrentes, adenite supurativa e pneumonia por *Aspergillus*. O Nitroblue Tetrazolium (NBT) ou a citometria de fluxo com diidrorodamina (DHR) mostram ausência de "burst" oxidativo. Considerando a fisiopatologia e as características clínicas da doença granulomatosa crônica, assinale a alternativa correta.
 
@@ -138,7 +168,7 @@ A Doença Granulomatosa Crônica (DGC) é uma imunodeficiência primária do fag
 
 ---
 
-## Questão 12
+## Questão 15
 
 Considerando o atendimento à mulher vítima de violência, bem como uma atitude empática do médico que valide o impacto da violência sobre a vida da vítima, analise as afirmativas e assinale a alternativa correta.
 
@@ -155,7 +185,7 @@ III. É exemplo de frase que valida o sofrimento da mulher: "Sentimentos e sinto
 
 ---
 
-## Questão 13
+## Questão 16
 
 Criança de 9 anos com histórico de infecções de repetição apresenta tosse crônica produtiva, bronquiectasias em TC e níveis séricos muito baixos de imunoglobulinas IgG, IgA e IgM. Qual é o diagnóstico mais provável?
 
@@ -166,7 +196,7 @@ Criança de 9 anos com histórico de infecções de repetição apresenta tosse 
 
 ---
 
-## Questão 14
+## Questão 17
 
 Menina, 3 anos de idade, è levada no Pronto Atendimento com história de manchas avermelhadas e pruriginosas pelo corpo, iniciadas 30 minutos após o almoço. A mãe relata que a criança comeu ovo mexido e camarão pela segunda vez. Ao exame físico, observam-se pápulas eritematosas e edematosas em tronco e membros, prurido intenso, sem sinais respiratórios ou hipotensão. Com base nos dados clínicos, indique o mecanismo fisiopatológico predominante, responsável pelo quadro descrito:
 
@@ -177,7 +207,7 @@ Menina, 3 anos de idade, è levada no Pronto Atendimento com história de mancha
 
 ---
 
-## Questão 15
+## Questão 18
 
 A Imunodeficiência Combinada Grave (SCID) é uma grave doença pediátrica. Assinale a alternativa correta sobre a triagem neonatal e cuidados imediatos.
 
@@ -188,7 +218,7 @@ A Imunodeficiência Combinada Grave (SCID) é uma grave doença pediátrica. Ass
 
 ---
 
-## Questão 16
+## Questão 19
 
 Assinale a alternativa que preenche, correta e respectivamente, as lacunas do parágrafo abaixo.
 
@@ -201,25 +231,29 @@ Paciente de 13 anos veio à UBS acompanhada da mãe por quadro de dor abdominal.
 
 ---
 
-# Gabarito estimado
+# Gabarito
 
-> Gabarito elaborado por mim, não oficial. Confira com o material de referência da disciplina.
+> **Oficial** = confirmado nas telas de correção do formulário (questões 1 a 11).
+> **Estimado** = elaborado por mim, sem confirmação oficial (questões 12 a 19).
 
-| Q | Resposta | Justificativa resumida |
-|---|---|---|
-| 1 | **A** | Dermatite atópica com impetiginização secundária (crostas melicéricas): hidratação + antibiótico tópico + corticoide tópico. |
-| 2 | **D** | LNG 1,5 mg (2 × 0,75 mg) em dose única está correto. A: PEP deve ser iniciada *até* 72 h. B: metronidazol 2 g é para tricomoníase, não vaginose. C: sífilis é com penicilina **benzatina**. E: vacinação incompleta exige conduta (vacina/IGHAHB). |
-| 3 | **E** | Abscessos de repetição são sinal de alerta para erro inato da imunidade (defeito de fagócito); os demais achados estão dentro do esperado. |
-| 4 | **B** | Não se exige BO nem autorização judicial; basta consentimento e o procedimento de justificação/parecer da equipe. Objeção de consciência não vale em urgência ou na ausência de outro profissional; o Código Penal não fixa limite de IG. |
-| 5 | **A** | Dermatite atópica leve sem infecção: emolientes, banhos curtos com sabonete suave e corticoide tópico de baixa potência. |
-| 6 | **B** | Todas são vacinas de agentes vivos atenuados. Hib, Pneumo 10, Hepatite A, Raiva e Coronavac são inativadas. |
-| 7 | **B** | I errada (profilaxia é empírica e imediata). II errada (não há essa contraindicação). III correta (notificação compulsória independe de autorização ou BO). |
-| 8 | **B** | Menor de 14 anos configura estupro de vulnerável (art. 217-A), e o art. 128 do CP não fixa limite de IG. Os limites de 20–22 semanas/500 g vêm de normas técnicas, não da lei. |
-| 9 | **B** | Infecções sinopulmonares por bactérias encapsuladas + giardíase sugerem deficiência de anticorpos (IgA, ICV, deficiência de anticorpos específicos). |
-| 10 | **Incorreto** | A lei não estabelece limite de 12 semanas (nem outro) para o aborto legal em caso de estupro. |
-| 11 | **C** | DGC é um defeito da NADPH oxidase, com ausência de burst oxidativo e suscetibilidade a catalase-positivos e *Aspergillus*. |
-| 12 | **D** (II e III) | I errada (deve-se perguntar como a vítima se sente). II e III são frases de validação (modelo OMS/MS). A alternativa tem erro de digitação ("II e II"). |
-| 13 | **B** | Pan-hipogamaglobulinemia com infecções e bronquiectasias aos 9 anos sugere ICV. Agamaglobulinemia de Bruton é possível, mas não está nas opções. |
-| 14 | **A** | Urticária aguda por alimento em minutos após reexposição: hipersensibilidade tipo I (IgE/mastócito/histamina). |
-| 15 | **A** | A dosagem de TREC no teste do pezinho detecta linfopenia T antes das infecções. O TMO deve ser precoce, vacinas vivas são contraindicadas e deficiência de IgA não é SCID. |
-| 16 | **A** | Menor de 14 anos configura estupro de vulnerável; deve-se encaminhar ao serviço de referência e notificar no Sinan. Não se exige BO. |
+| Q | Resposta | Fonte | Justificativa resumida |
+|---|---|---|---|
+| 1 | **A** | Oficial | Dermatite atópica com impetiginização secundária (crostas melicéricas): hidratação + antibiótico tópico + corticoide tópico. |
+| 2 | **D** | Oficial | LNG 1,5 mg (2 × 0,75 mg) em dose única. A: PEP deve ser iniciada *até* 72 h. B: metronidazol 2 g é para tricomoníase, não vaginose. C: sífilis é com penicilina **benzatina**. E: vacinação incompleta exige conduta. |
+| 3 | **A** | Oficial | Recusar atendimento à vítima de violência sexual é infração ética e legal e configura omissão de socorro; BO não é pré-requisito para o atendimento. |
+| 4 | **E** | Oficial | Abscessos de repetição são sinal de alerta para erro inato da imunidade (defeito de fagócito). |
+| 5 | **B** | Oficial | Não se exige BO nem autorização judicial; basta consentimento e o procedimento de justificação da equipe. |
+| 6 | **A** | Oficial | Dermatite atópica leve sem infecção: emolientes, banhos curtos com sabonete suave e corticoide tópico de baixa potência. |
+| 7 | **A** | Oficial | Wiskott-Aldrich: tríade de infecções, eczema e microtrombocitopenia (ligada ao X). |
+| 8 | **B** | Oficial | Todas são vacinas de agentes vivos atenuados. |
+| 9 | **B** | Oficial | I errada (profilaxia empírica imediata). II errada. III correta (notificação compulsória independe de autorização ou BO). |
+| 10 | **C** | Oficial | Lesões em flexuras, xerose, piora no inverno e atopia pessoal (asma e rinite) indicam dermatite atópica. |
+| 11 | **B** | Oficial | Menor de 14 anos configura estupro de vulnerável (art. 217-A), e o art. 128 do CP não fixa limite de idade gestacional. |
+| 12 | **B** | Estimado | Infecções sinopulmonares por bactérias encapsuladas + giardíase sugerem deficiência de anticorpos (IgA, ICV, deficiência de anticorpos específicos). |
+| 13 | **Incorreto** | Estimado | A lei não estabelece limite de 12 semanas para o aborto legal em caso de estupro (coerente com o gabarito oficial da Q11). |
+| 14 | **C** | Estimado | DGC é um defeito da NADPH oxidase, com ausência de burst oxidativo e suscetibilidade a catalase-positivos e *Aspergillus*. |
+| 15 | **D** (II e III) | Estimado | I errada (deve-se perguntar como a vítima se sente). II e III são frases de validação. A alternativa tem erro de digitação ("II e II"). |
+| 16 | **B** | Estimado | Pan-hipogamaglobulinemia com infecções e bronquiectasias aos 9 anos sugere ICV. |
+| 17 | **A** | Estimado | Urticária aguda por alimento em minutos: hipersensibilidade tipo I (IgE/mastócito/histamina). |
+| 18 | **A** | Estimado | A dosagem de TREC no teste do pezinho detecta linfopenia T antes das infecções. |
+| 19 | **A** | Estimado | Menor de 14 anos configura estupro de vulnerável; encaminhar ao serviço de referência e notificar no Sinan (coerente com Q5 e Q11). |

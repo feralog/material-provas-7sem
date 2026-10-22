@@ -1,29 +1,32 @@
 ## Como ler este simulado
 
-São 16 questões transcritas do formulário da AVC 2 de Pediatria, e elas se distribuem em três eixos muito desiguais. **Sete** tratam de violência sexual e aborto legal, **seis** de erros inatos da imunidade e **três** de alergia. Não é dispersão: é um recado sobre onde a prova concentra peso.
+São 19 questões transcritas do formulário da AVC 2 de Pediatria, e elas se distribuem em três eixos muito desiguais. **Oito** tratam de violência sexual e aborto legal, **sete** de erros inatos da imunidade e **quatro** de alergia e dermatologia. Não é dispersão: é um recado sobre onde a prova concentra peso.
 
-O gabarito abaixo foi conferido questão a questão, mas **não é oficial** — ele foi reconstruído a partir do conteúdo, não fornecido pela disciplina. Onde há controvérsia real na literatura, o texto diz qual leitura foi adotada e por quê.
+O gabarito das **questões 1 a 11 é oficial**, confirmado nas telas de correção do formulário. Da 12 em diante é reconstrução pelo conteúdo. Vale registrar que as onze oficiais confirmaram, uma a uma, o que a reconstrução já apontava — o que dá alguma confiança nas oito restantes, embora não seja garantia.
 
-| Q | Tema | Resposta no formulário |
-| --- | --- | --- |
-| 1 | Dermatite atópica impetiginizada | A |
-| 2 | Profilaxias na violência sexual | D |
-| 3 | Sinal de alerta de imunodeficiência | E |
-| 4 | Aborto legal: exigências | B |
-| 5 | Dermatite atópica leve | A |
-| 6 | Vacinas contraindicadas | B |
-| 7 | Profilaxia e notificação | B |
-| 8 | Gestação aos 13 anos, 23 semanas | B |
-| 9 | Investigação laboratorial | B |
-| 10 | Limite gestacional (julgamento) | Incorreto |
-| 11 | Doença granulomatosa crônica | C |
-| 12 | Frases de validação | D (II e III) |
-| 13 | Hipogamaglobulinemia | B |
-| 14 | Urticária aguda alimentar | A |
-| 15 | SCID e triagem neonatal | A |
-| 16 | Estupro de vulnerável: as três condutas | A |
+| Q | Tema | Resposta | Fonte |
+| --- | --- | --- | --- |
+| 1 | Dermatite atópica impetiginizada | A | Oficial |
+| 2 | Profilaxias na violência sexual | D | Oficial |
+| 3 | Recusa de atendimento à vítima | A | Oficial |
+| 4 | Sinal de alerta de imunodeficiência | E | Oficial |
+| 5 | Aborto legal: o que é exigido | B | Oficial |
+| 6 | Dermatite atópica leve | A | Oficial |
+| 7 | Wiskott-Aldrich | A | Oficial |
+| 8 | Vacinas contraindicadas | B | Oficial |
+| 9 | Profilaxia e notificação | B | Oficial |
+| 10 | Diagnóstico de dermatite atópica | C | Oficial |
+| 11 | Gestação aos 13 anos, 23 semanas | B | Oficial |
+| 12 | Investigação laboratorial | B | Estimado |
+| 13 | Limite gestacional (julgamento) | Incorreto | Estimado |
+| 14 | Doença granulomatosa crônica | C | Estimado |
+| 15 | Frases de validação | D (II e III) | Estimado |
+| 16 | Hipogamaglobulinemia | B | Estimado |
+| 17 | Urticária aguda alimentar | A | Estimado |
+| 18 | SCID e triagem neonatal | A | Estimado |
+| 19 | Estupro de vulnerável: as três condutas | A | Estimado |
 
-> **Duas questões foram adaptadas para caber no formato do quiz.** A questão 10 era de julgamento, com duas opções (Correto / Incorreto), e ganhou quatro alternativas com a justificativa dentro de cada uma — o conteúdo cobrado é o mesmo. E a alternativa D da questão 12 aparece no formulário escrita como "II e II", erro de digitação evidente; aqui está como "II e III".
+> **Duas questões foram adaptadas para caber no formato do quiz.** A questão 13 era de julgamento, com duas opções (Correto / Incorreto), e ganhou quatro alternativas com a justificativa dentro de cada uma — o conteúdo cobrado é o mesmo. E a alternativa D da questão 15 aparece no formulário escrita como "II e II", erro de digitação evidente; aqui está como "II e III". A grafia "Wisckott" da questão 7 foi mantida como no formulário; o epônimo correto é **Wiskott-Aldrich**.
 
 ---
 
@@ -52,6 +55,10 @@ Três armadilhas moram nessa tabela, e as três foram cobradas:
 E a contracepção de emergência pode vir como 1,5 mg em um comprimido ou **dois comprimidos de 0,75 mg em dose única** — a mesma coisa escrita de outro jeito, e foi assim que a prova escreveu. Não existe contraindicação por estar menstruada, nem risco tromboembólico que a impeça.
 
 > **Ponto-chave:** se uma alternativa condiciona qualquer profilaxia a exame, laudo ou autorização, ela está errada antes mesmo de você ler o resto.
+
+#### Recusar o atendimento não é opção
+
+O atendimento à vítima de violência sexual é **emergência médica** e independe de haver lesão física. Mandar a pessoa à delegacia antes de atendê-la soma três infrações de uma vez: ética, pelo Código de Ética Médica; administrativa, por descumprir a norma técnica do Ministério da Saúde; e criminal, como **omissão de socorro**. Registrar a justificativa em prontuário não legitima a recusa — apenas documenta quem a cometeu. E o custo não é só formal: cada hora perdida come a janela da PEP e da contracepção de emergência.
 
 ---
 
@@ -124,7 +131,7 @@ Repare na estrutura das duas questões que exploraram isso: elas enchem o caso d
 
 ---
 
-## As quatro imunodeficiências do simulado
+## As cinco imunodeficiências do simulado
 
 #### Doença granulomatosa crônica (DGC)
 
@@ -135,6 +142,12 @@ Defeito do complexo **NADPH oxidase**: o fagócito engole o microrganismo e não
 #### Imunodeficiência combinada grave (SCID)
 
 Emergência pediátrica. A triagem se faz pelo **TREC** no teste do pezinho: são círculos de DNA excisados quando o linfócito T rearranja seu receptor no timo, de modo que contá-los mede produção tímica recente e detecta linfopenia T **antes da primeira infecção**. O **transplante de células-tronco é tanto melhor quanto mais precoce** — idealmente antes dos 3,5 meses e antes de qualquer infecção grave. Adiar é o contrário do indicado. Vacina de agente vivo é **contraindicação absoluta**, e o BCG do berçário é o problema clássico, causando becegeíte disseminada.
+
+#### Síndrome de Wiskott-Aldrich
+
+Imunodeficiência **combinada** ligada ao X, por mutação no gene *WAS*. A tríade é o que se cobra: **infecções de repetição, eczema parecido com dermatite atópica e trombocitopenia com plaquetas pequenas**. O volume plaquetário reduzido é o detalhe discriminante — nas outras plaquetopenias da infância a plaqueta é normal ou grande, e aqui ela é microcítica. Soma risco aumentado de autoimunidade e de linfoma, e o tratamento definitivo é o transplante de células-tronco.
+
+As três que costumam aparecer ao lado dela como distrator se separam fácil: **Chédiak-Higashi** tem albinismo parcial e grânulos gigantes nos leucócitos; **diGeorge** é defeito do desenvolvimento tímico, com hipocalcemia neonatal e cardiopatia conotruncal; **Bruton** (agamaglobulinemia ligada ao X) é deficiência de anticorpos pura, sem eczema e sem plaquetopenia.
 
 #### Imunodeficiência comum variável (ICV)
 
@@ -168,7 +181,18 @@ A contraindicação na imunodeficiência recai sobre o **agente vivo atenuado**,
 
 Duas questões descreveram dermatite atópica e pediram condutas diferentes. A diferença não está no diagnóstico — está em **haver ou não infecção secundária**.
 
-O diagnóstico se monta sempre pelos mesmos elementos: início precoce, prurido como sintoma dominante, distribuição em **flexuras** na criança maior (face e superfícies extensoras no lactente), piora no inverno e com banho quente, e **liquenificação** como marca da cronicidade.
+O diagnóstico se monta sempre pelos mesmos elementos: início precoce, prurido como sintoma dominante, distribuição em **flexuras** na criança maior (face e superfícies extensoras no lactente), **xerose** como pele de base, piora no inverno e com banho quente, e **liquenificação** como marca da cronicidade. Soma-se a atopia pessoal ou familiar — asma e rinite alérgica compondo a marcha atópica —, que é o dado que o enunciado costuma plantar no fim, como se fosse detalhe.
+
+#### O diferencial se resolve pela topografia
+
+| Diagnóstico | Onde fica | O que denuncia |
+| --- | --- | --- |
+| **Dermatite atópica** | **flexuras** (cubital, poplítea) | xerose, prurido, marcha atópica, piora no inverno |
+| Dermatite de contato | área exposta ao agente | o desenho da lesão copia o contactante |
+| Dermatite seborreica | couro cabeludo, face, áreas sebáceas | escama gordurosa e amarelada |
+| Psoríase | superfícies **extensoras**, joelho e cotovelo | placa eritematodescamativa com escama prateada |
+
+Note que dermatite atópica e psoríase ocupam lados opostos da mesma articulação: a atópica na dobra, a psoríase na parte de fora. É o atalho mais rápido entre as duas.
 
 | | Sem infecção | Com infecção (impetiginizada) |
 | --- | --- | --- |

@@ -1,0 +1,1271 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cefaleias</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;450;500;600&display=swap" rel="stylesheet">
+<style>
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0}
+  body{background:#f5f3ef;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+  button{font:inherit;color:inherit;font-family:'IBM Plex Sans',system-ui,sans-serif}
+  a{color:#2b57cc;text-decoration:none}
+  a:hover{color:#1e3f9c;text-decoration:underline}
+  @keyframes qFade{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+  @keyframes qDrawer{from{opacity:0;transform:translateY(-4px)}to{opacity:1;transform:none}}
+
+  /* hovers — no canvas eram style-hover, aqui viram CSS de verdade */
+  .h-dark:hover{background:#2b57cc!important;transform:translateY(-1px)}
+  .h-darkflat:hover{background:#2b57cc!important}
+  .h-line:hover{border-color:#121a2b!important}
+  .h-ink:hover{color:#121a2b!important}
+  .h-opt:not(.locked):hover{border-color:var(--hbd)!important;transform:translateY(-1px)}
+  .h-card:hover{border-color:#121a2b!important;transform:translateY(-2px)}
+
+  /* tipografia do resumo */
+  .rsm{font-size:16.5px;line-height:1.72;color:#2a3141;max-width:64ch}
+  .rsm h2{font-family:'Newsreader',Georgia,serif;font-size:27px;font-weight:500;letter-spacing:-.02em;line-height:1.2;margin:42px 0 14px;padding-top:20px;border-top:1px solid #e4e0d8;text-wrap:pretty}
+  .rsm h2:first-child{margin-top:0;padding-top:0;border-top:0}
+  .rsm h3{font-family:'Newsreader',Georgia,serif;font-size:20px;font-weight:600;letter-spacing:-.01em;margin:28px 0 10px;text-wrap:pretty}
+  .rsm h4{font-family:'IBM Plex Mono',monospace;font-size:11px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:#2b57cc;margin:24px 0 8px}
+  .rsm p{margin:0 0 15px;text-wrap:pretty}
+  .rsm ul,.rsm ol{margin:0 0 15px;padding-left:22px}
+  .rsm li{margin-bottom:7px;text-wrap:pretty}
+  .rsm li>ul,.rsm li>ol{margin:7px 0 0}
+  .rsm strong{font-weight:600;color:#121a2b}
+  .rsm em{font-style:italic}
+  .rsm code{font-family:'IBM Plex Mono',monospace;font-size:.88em;background:#efece5;border:1px solid #e4e0d8;border-radius:5px;padding:1px 5px}
+  .rsm hr{border:0;border-top:1px solid #e4e0d8;margin:32px 0}
+  .rsm blockquote{margin:0 0 18px;padding:15px 18px;background:#f7f6f2;border-left:2.5px solid #2b57cc;border-radius:0 12px 12px 0;font-size:15px;line-height:1.65;color:#39404f}
+  .rsm blockquote p:last-child{margin-bottom:0}
+  .rsm .tbl{overflow-x:auto;margin:0 0 20px;border:1px solid #e4e0d8;border-radius:12px;background:#fff}
+  .rsm table{border-collapse:collapse;width:100%;font-size:14px;line-height:1.5}
+  .rsm th{text-align:left;font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.09em;text-transform:uppercase;color:#8a8578;font-weight:600;padding:11px 14px;background:#faf9f6;border-bottom:1px solid #e4e0d8;white-space:nowrap}
+  .rsm td{padding:11px 14px;border-bottom:1px solid #efece5;vertical-align:top;text-wrap:pretty}
+  .rsm tr:last-child td{border-bottom:0}
+  .rsm .key{background:#f2f6fb;border:1px solid #d6e2f4;border-radius:12px;padding:16px 18px;margin:0 0 18px}
+  .rsm .key>*:last-child{margin-bottom:0}
+
+  /* figuras — no resumo e na questao */
+  .fig{margin:0 0 20px;background:#fff;border:1px solid #e4e0d8;border-radius:14px;overflow:hidden}
+  .fig img{display:block;width:100%;height:auto;cursor:zoom-in}
+  .fig figcaption{font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.06em;color:#8a8578;padding:9px 13px;border-top:1px solid #efece5;background:#faf9f6;text-wrap:pretty}
+  .qfig{margin:0 0 20px}
+
+  /* lightbox */
+  #lb{position:fixed;inset:0;z-index:90;background:rgba(18,26,43,.86);display:none;align-items:center;justify-content:center;padding:24px;cursor:zoom-out}
+  #lb.on{display:flex;animation:qFade .16s ease}
+  #lb img{max-width:100%;max-height:100%;border-radius:10px;box-shadow:0 24px 60px rgba(0,0,0,.5)}
+
+  @media(max-width:560px){
+    .rsm{font-size:16px}
+    .rsm h2{font-size:24px}
+    .home-grid{grid-template-columns:1fr!important}
+  }
+</style>
+</head>
+<body>
+
+<div style="min-height:100vh;background:#f5f3ef;color:#121a2b;font-family:'IBM Plex Sans',system-ui,sans-serif">
+  <header style="position:sticky;top:0;z-index:30;background:rgba(245,243,239,.94);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid #e4e0d8">
+    <div style="max-width:720px;margin:0 auto;padding:12px 16px 10px" id="hdr"></div>
+  </header>
+  <main style="max-width:720px;margin:0 auto;padding:0 16px 80px" id="stage"></main>
+</div>
+<div id="lb"><img alt=""></div>
+
+<script type="text/html" id="resumoSrc"><h2>Bases: o que dói na cabeça e como se classificam as cefaleias</h2>
+<p>Cefaleia é todo processo doloroso referido no segmento cefálico, originado em qualquer estrutura facial ou craniana. É provavelmente o sintoma mais referido na prática clínica: em qualquer população, cerca de <strong>80% das pessoas</strong> têm ao menos um episódio de cefaleia por ano, e metade delas, mais de dois. Por isso o tema interessa a todo médico, independentemente da especialidade.</p>
+<p>A cabeça é o segmento mais rico em estruturas sensíveis à dor — e faz sentido: a dor é mecanismo de proteção, e ali estão o encéfalo e os órgãos dos sentidos especiais. Saber <strong>o que dói e o que não dói</strong> explica boa parte da semiologia das cefaleias.</p>
+<div class="tbl"><table><thead><tr><th>Sensíveis à dor</th><th>Insensíveis à dor</th></tr></thead><tbody><tr><td>Estruturas faciais superficiais e profundas</td><td>Ossos da calota craniana</td></tr><tr><td>Couro cabeludo e periósteo craniano</td><td>Leptomeninges</td></tr><tr><td>Vasos sanguíneos extracranianos</td><td>Maior parte da dura-máter</td></tr><tr><td>Artérias do polígono de Willis e porções proximais extracerebrais de seus ramos</td><td>Parênquima encefálico</td></tr><tr><td>Grandes seios venosos intracranianos e suas veias tributárias</td><td>Vasos no interior do parênquima</td></tr><tr><td>Parte basal da dura-máter e nervos sensitivos</td><td>—</td></tr></tbody></table></div>
+<p>Os mecanismos que produzem cefaleia são basicamente dois: <strong>(1)</strong> deslocamento, tração, distensão, irritação ou inflamação das estruturas sensíveis; <strong>(2)</strong> vasodilatação.</p>
+<blockquote><p>Uma lesão restrita ao parênquima pode crescer em silêncio: só passa a doer quando desloca, traciona ou inflama vasos, seios venosos, dura-máter da base ou nervos. Por isso a dor de um processo expansivo raramente vem sozinha — costuma trazer outros sinais.</p></blockquote>
+<h3>Primárias × secundárias</h3>
+<p>A Sociedade Internacional de Cefaleia (SIC) publicou em 1988 uma classificação com critérios diagnósticos para cada tipo, para uniformizar a nomenclatura mundial; ela foi revista desde então, e a versão vigente é a <strong>ICHD-3</strong>. A divisão em dois blocos se manteve:</p>
+<div class="tbl"><table><thead><tr><th>Bloco</th><th>Grupos</th><th>O que reúne</th></tr></thead><tbody><tr><td><strong>Primárias</strong></td><td>1 a 4</td><td>Sem anormalidade estrutural: enxaqueca (1), cefaleia tipo tensão (2), cefaleia em salvas e hemicrania paroxística crônica (3), miscelânea sem lesão estrutural — em pontadas, por compressão externa, por estímulo gelado, da tosse, do esforço, da atividade sexual (4)</td></tr><tr><td><strong>Secundárias</strong></td><td>5 a 12</td><td>Trauma craniano (5), distúrbios vasculares (6), outras anormalidades intracranianas (7), substâncias ou sua suspensão (8), infecções não cefálicas (9), distúrbios metabólicos (10), crânio, pescoço, olhos, ouvidos, nariz, seios, dentes e boca (11), nevralgias cranianas (12)</td></tr></tbody></table></div>
+<p>Quando a mesma cefaleia se repete, <strong>80%</strong> dos casos são enxaqueca, cefaleia tipo tensão ou a associação das duas. As primárias, embora muito desagradáveis, em geral não oferecem risco. As secundárias são numerosas e, na maioria das vezes, o tratamento é o da afecção causadora.</p>
+<p>O fator decisivo para chamar uma cefaleia de <strong>secundária</strong> é a <strong>associação temporal estreita</strong> com a doença orgânica. Se a cefaleia surge muito tempo depois da doença, não pode ser aceita como secundária — muitas vezes trata-se apenas da <strong>coexistência</strong> das duas afecções.</p>
+<blockquote><p>Algumas cefaleias do grupo 4 — <strong>da tosse, do esforço e da atividade sexual</strong> — ficam entre as primárias, mas exigem investigação antes de serem aceitas como tal: o mesmo quadro pode ser a manifestação de uma lesão estrutural.</p></blockquote>
+<hr>
+<h2>Sinais de alarme: quando a cefaleia pede investigação</h2>
+<p>As cefaleias de origem intracraniana — por processo expansivo, irritação meníngea ou hipertensão intracraniana — são bem menos frequentes que as demais, mas são as que mais preocupam o paciente e as que merecem mais atenção do médico, porque acompanham doenças graves. Muitas vezes, mais do que a dor, o que leva o paciente à consulta é o medo de ter "um tumor ou um aneurisma".</p>
+<p>O raciocínio central é simples: uma cefaleia <strong>crônica, de longa evolução, com longos períodos de acalmia</strong>, se dependesse de processo expansivo, já viria acompanhada de outros sinais e sintomas. A suspeita de causa intracraniana cresce diante de:</p>
+<ul><li>cefaleia que aparece <strong>"de novo"</strong>, em quem nunca a teve;</li><li>cefaleia que <strong>muda de caráter</strong> em quem conhece seu padrão habitual e identifica um tipo novo;</li><li>dor <strong>intensa e persistente</strong>;</li><li>dor que surge em <strong>determinados decúbitos</strong>;</li><li>cefaleia <strong>matinal</strong> ou que <strong>acorda o paciente</strong> no meio da noite;</li><li><strong>sinais de comprometimento parenquimatoso ou meníngeo</strong> ao exame neurológico — que tornam</li></ul>
+<p><strong>obrigatória</strong> a investigação completa e cuidadosa.</p>
+<blockquote><p>Não há relação direta entre <strong>intensidade da dor</strong> e <strong>gravidade da lesão</strong> intracraniana. Uma crise de enxaqueca pode ser lancinante e benigna; um tumor pode doer pouco. O que separa uma da outra é o padrão e o exame, não a nota da dor.</p></blockquote>
+<h4>Mnemônico de uso corrente: SNOOP</h4>
+<div class="tbl"><table><thead><tr><th>Letra</th><th>Sinal de alarme</th><th>Pensar em</th></tr></thead><tbody><tr><td><strong>S</strong></td><td>Sintomas sistêmicos (febre, perda de peso) ou doença de base (câncer, HIV, imunossupressão)</td><td>meningite, metástase, infecção oportunista</td></tr><tr><td><strong>N</strong></td><td>Sinais neurológicos: déficit focal, confusão, rebaixamento, convulsão</td><td>lesão estrutural, encefalite, AVC</td></tr><tr><td><strong>O</strong></td><td><em>Onset</em> — início súbito, "em trovoada", com pico em menos de 1 minuto</td><td>hemorragia subaracnóidea</td></tr><tr><td><strong>O</strong></td><td><em>Older</em> — primeira cefaleia após os 50 anos</td><td>arterite temporal, tumor</td></tr><tr><td><strong>P</strong></td><td>Padrão novo ou progressivo, posicional, precipitado por Valsalva, papiledema, gestação ou puerpério</td><td>hipertensão intracraniana, hipotensão liquórica, trombose venosa</td></tr></tbody></table></div>
+<h3>Cefaleias referidas e sistêmicas</h3>
+<p>As cefaleias do grupo 11, chamadas <strong>referidas</strong>, dependem de processos do crânio, pescoço, olhos, orelhas, nariz, seios da face, dentes e oro e rinofaringe. A dor <strong>começa na estrutura doente</strong> — a do glaucoma é ocular, a da otite é auricular, a do abscesso dentário é na arcada — e só com a intensidade do processo se irradia e acaba se generalizando, quando já não se distingue o local de início. Uma cefaleia <strong>generalizada desde o início</strong> dificilmente depende dessas causas. Na prática, é comum que pacientes com enxaqueca ou cefaleia tipo tensão típicas sejam investigados exaustiva e desnecessariamente para elas.</p>
+<p>As cefaleias secundárias a processos sistêmicos têm múltiplas causas: <strong>tóxicas</strong> (drogas vasodilatadoras, álcool, hipertermia, nitratos, glutamato, monóxido de carbono) e <strong>metabólicas</strong> (hipóxia, hipercapnia, hipoglicemia, diálise).</p>
+<hr>
+<h2>Enxaqueca: quem tem, como se apresenta e por quê</h2>
+<h3>Epidemiologia</h3>
+<p>A enxaqueca é a <strong>segunda cefaleia mais frequente na população</strong>, atrás apenas da cefaleia tipo tensão; nos consultórios e ambulatórios especializados, porém, é <strong>de longe a primeira</strong>, pela intensidade maior de seus sintomas. Frequência e intensidade são as duas características fundamentais da doença.</p>
+<ul><li>Prevalência estimada em <strong>15% a 25%</strong> nas maiores séries, com predomínio feminino de</li></ul>
+<p><strong>duas a três vezes</strong> (cerca de 17% das mulheres e 6% dos homens).</p>
+<ul><li>Em <strong>25%</strong> dos casos a primeira crise ocorre <strong>antes dos 10 anos</strong> e, na maioria, antes</li></ul>
+<p>dos 20 — mas pode surgir até nas décadas finais da vida.</p>
+<ul><li><strong>História familiar</strong> em cerca de <strong>dois terços</strong> dos casos.</li><li>É uma das principais causas de perda de dias de trabalho — nos EUA, mais de cinco</li></ul>
+<p>milhões de dias em um ano.</p>
+<p>A definição da Federação Mundial de Neurologia resume a doença: distúrbio <strong>familiar</strong>, com crises recorrentes de cefaleia muito variáveis em intensidade, frequência e duração, comumente <strong>unilaterais</strong>, geralmente associadas a anorexia, náuseas e vômitos, às vezes precedidas ou acompanhadas de perturbações neurológicas ou de humor — sem que todas essas características estejam presentes em cada crise ou em cada paciente.</p>
+<h3>A crise</h3>
+<p>A dor é <strong>pulsátil (latejante)</strong> na maioria dos casos e <strong>unilateral em cerca de dois terços</strong>, mas qualquer localização é possível — temporal, frontal, occipital, uni ou bilateral —, variando entre pacientes e no mesmo paciente. A periodicidade vai de poucas crises por ano a crises diárias, às vezes concentradas em períodos ligados ao ciclo menstrual; a duração, de poucas horas a dias. A intensidade é <strong>moderada ou forte</strong>, prejudicando ou impedindo as atividades, e a dor <strong>piora com o esforço físico e com os movimentos da cabeça</strong>.</p>
+<div class="tbl"><table><thead><tr><th>Fenômeno associado</th><th>Frequência</th></tr></thead><tbody><tr><td>Fotofobia</td><td>~80%</td></tr><tr><td>Intolerância a sons e odores</td><td>frequente</td></tr><tr><td>Náuseas</td><td>~2/3</td></tr><tr><td>Vômitos</td><td>~1/3</td></tr><tr><td>Palidez e sudorese</td><td>comuns</td></tr><tr><td>Congestão nasal e conjuntival</td><td>menos frequentes</td></tr><tr><td>Retenção hídrica e oligúria</td><td>durante a crise</td></tr></tbody></table></div>
+<p>Somados à dor, esses fenômenos obrigam o paciente a interromper o que faz e <strong>deitar em lugar calmo, escuro e silencioso</strong> — comportamento oposto ao da cefaleia em salvas.</p>
+<h3>Aura</h3>
+<p>A aura é um conjunto de sinais de <strong>disfunção neurológica focal</strong>, mais frequentemente sensoriais, mas que podem ser motores, psíquicos ou de funções simbólicas (linguagem). As mais comuns são <strong>visuais</strong>: surgem subitamente e crescem com fenômenos <strong>negativos</strong> (escotomas) ou <strong>positivos</strong> (luzes, cores, cintilações), duram <strong>poucos minutos</strong> e, quando desaparecem, começam a dor e os fenômenos associados.</p>
+<ul><li><strong>Enxaqueca com aura</strong> — antiga "enxaqueca clássica".</li><li><strong>Enxaqueca sem aura</strong> — antiga "enxaqueca comum"; é a forma <strong>mais frequente</strong>.</li><li>A aura pode <strong>preceder, suceder ou acompanhar</strong> a dor.</li><li><strong>Aura sem cefaleia</strong> (antigos "equivalentes enxaquecosos"): os fenômenos aparecem sem</li></ul>
+<p>dor e <strong>simulam ataque isquêmico transitório</strong>.</p>
+<ul><li><strong>Enxaqueca complicada</strong>: raramente o déficit da aura não cede com a cefaleia e se torna</li></ul>
+<p>persistente — hoje chamada <strong>infarto enxaquecoso</strong>, uma das complicações da enxaqueca, ao lado do <strong>estado de mal enxaquecoso</strong>.</p>
+<h3>Critérios diagnósticos atuais (ICHD-3)</h3>
+<p>O diagnóstico da enxaqueca, como o de toda cefaleia, é <strong>clínico</strong>, pela história; os exames complementares dependem das hipóteses levantadas e dos achados do exame neurológico.</p>
+<div class="tbl"><table><thead><tr><th>Enxaqueca sem aura</th><th>Critério</th></tr></thead><tbody><tr><td>A</td><td>Pelo menos <strong>5 crises</strong> que preencham B a D</td></tr><tr><td>B</td><td>Duração de <strong>4 a 72 horas</strong> (sem tratamento ou com tratamento ineficaz)</td></tr><tr><td>C</td><td>Pelo menos <strong>2 de 4</strong>: unilateral · pulsátil · intensidade moderada ou forte · piora com atividade física rotineira (ou leva a evitá-la)</td></tr><tr><td>D</td><td>Pelo menos <strong>1 de 2</strong>: náusea e/ou vômito · fotofobia <strong>e</strong> fonofobia</td></tr><tr><td>E</td><td>Não mais bem explicada por outro diagnóstico</td></tr></tbody></table></div>
+<p>Na <strong>enxaqueca com aura</strong> bastam <strong>2 crises</strong>, com aura totalmente reversível (visual, sensitiva, de fala ou linguagem, motora, de tronco encefálico ou retiniana) que tenha ao menos 3 de 6 características: espalha-se gradualmente em 5 minutos ou mais; dois ou mais sintomas em sucessão; cada sintoma dura de <strong>5 a 60 minutos</strong>; ao menos um é unilateral; ao menos um é positivo; e a cefaleia acompanha a aura ou a segue em até 60 minutos.</p>
+<ul><li><strong>Enxaqueca crônica</strong>: cefaleia em <strong>15 ou mais dias por mês, por mais de 3 meses</strong>, com</li></ul>
+<p>traços de enxaqueca em pelo menos 8 desses dias.</p>
+<ul><li><strong>Estado de mal enxaquecoso</strong>: crise debilitante que dura <strong>mais de 72 horas</strong>.</li></ul>
+<h3>Fisiopatologia</h3>
+<p>O mecanismo exato ainda é desconhecido. A fase dolorosa acompanha-se de <strong>vasodilatação</strong> de vasos extra e intracranianos — nas crises prolongadas, até edema cerebral —, com alterações algiogênicas junto aos vasos e alterações séricas, sobretudo da <strong>serotonina</strong>. Acredita-se que a vasodilatação resulte de uma <strong>inflamação neurogênica estéril perivascular</strong>, com liberação de neuropeptídeos na parede dos vasos (entre eles o CGRP, hoje alvo de medicamentos específicos), posta em marcha por um distúrbio central: a <strong>depressão alastrante de Leão</strong>.</p>
+<blockquote><p>A depressão alastrante é uma onda de <strong>supressão dos disparos neuronais</strong> que avança pelo córtex, acompanhada de <strong>hipoperfusão alastrante</strong> no mesmo território e de profundas alterações metabólicas e iônicas. É ela que determina a <strong>aura</strong> — e por isso a aura visual "caminha" pelo campo visual ao longo de minutos. Não se sabe ainda se esses fenômenos são primários ou secundários.</p></blockquote>
+<p>A falta de uma explicação completa reflete-se no tratamento: não há droga eficaz para a grande maioria dos pacientes, e uma série grande de recursos tem sido testada com resultados variáveis.</p>
+<hr>
+<h2>Enxaqueca: tratamento da crise</h2>
+<h3>O tratamento começa na consulta</h3>
+<p>O tratamento começa pela obtenção da história, segue pelo exame e muitas vezes termina nas explicações que precedem a prescrição. A história dá o diagnóstico e permite conhecer a estrutura psicológica do paciente; o exame físico e neurológico detalhado dá segurança ao diagnóstico diferencial e reforça a confiança. Quando se perguntou a 100 pacientes e 50 médicos o que o paciente com cefaleia quer do médico, a maioria dos médicos respondeu "alívio da dor" — mas <strong>dois terços dos pacientes buscavam uma explicação</strong> para a dor, muitas vezes por medo de tumor ou aneurisma.</p>
+<p>Fatores predisponentes ou desencadeantes, quando identificados e afastados, às vezes bastam para reduzir a frequência das crises:</p>
+<div class="tbl"><table><thead><tr><th>Grupo</th><th>Exemplos</th></tr></thead><tbody><tr><td>Hábitos</td><td>fumo, bebidas alcoólicas</td></tr><tr><td>Alimentos</td><td>chocolate · <strong>queijos curados (tiramina)</strong> · <strong>embutidos (nitritos e nitratos)</strong> · <strong>comida oriental (glutamato de sódio)</strong></td></tr><tr><td>Fármacos</td><td>drogas vasodilatadoras · <strong>anticoncepcionais</strong>, que geralmente pioram a enxaqueca e provavelmente aumentam o risco vascular</td></tr><tr><td>Ambiente</td><td>exposição prolongada ao sol, excesso de luz, recintos fechados e cheios (aumento do CO₂)</td></tr><tr><td>Emocionais e situacionais</td><td>estresse, medo, ansiedade, angústia · fadiga física ou mental · privação de sono · hipoglicemia</td></tr></tbody></table></div>
+<h3>Princípios</h3>
+<ul><li>Crises <strong>esparsas</strong> (até duas por mês): tratar <strong>apenas as crises</strong>.</li><li><strong>Rapidez</strong>: qualquer que seja a medicação, o efeito é sempre maior se tomada **no</li></ul>
+<p>início** da crise.</p>
+<ul><li>A escolha segue a <strong>intensidade</strong> da crise:</li></ul>
+<div class="tbl"><table><thead><tr><th>Crise</th><th>Conduta</th></tr></thead><tbody><tr><td><strong>Fraca</strong></td><td>analgésico comum (AAS, paracetamol, dipirona) ou AINH; metoclopramida ou domperidona se houver náusea — e até sem ela, 30 minutos antes, pelo efeito gastrocinético</td></tr><tr><td><strong>Moderada</strong></td><td>analgésicos e AINH, ou derivados ergóticos ou triptanos; antiemético ou gastrocinético sempre, <strong>exceto com triptanos</strong></td></tr><tr><td><strong>Forte</strong></td><td>triptanos ou clorpromazina; dexametasona ou haloperidol como alternativas</td></tr><tr><td><strong>Prolongada e refratária</strong> (estado de mal enxaquecoso)</td><td><strong>corticoide parenteral</strong> — dexametasona 16 mg ou metilprednisolona 80 mg — por 24 a 72 h; alguns associam ergotamina 0,5 mg IM de 8/8 h, por no máximo 3 dias</td></tr></tbody></table></div>
+<blockquote><p><strong>Ergóticos</strong> precisam ser usados <strong>o mais cedo possível</strong> — tardiamente não têm efeito. <strong>Triptanos</strong> funcionam <strong>em qualquer momento</strong> da crise (eficazes em mais de 65% dos casos mesmo quando tardios). Se a cefaleia <strong>recorre</strong> depois do triptano, associa-se <strong>AINH</strong>.</p></blockquote>
+<h3>Os medicamentos</h3>
+<p><strong>Analgésicos comuns</strong> — AAS, dipirona e paracetamol em doses habituais muitas vezes bastam nas crises esparsas e de início recente.</p>
+<p><strong>Anti-inflamatórios não hormonais (AINH)</strong> — naproxeno, ibuprofeno, cetoprofeno, ácidos tolfenâmico e mefenâmico, diclofenaco. São superiores ao placebo, com ação no mínimo comparável à da ergotamina; reduzem a sensibilização dos nociceptores periféricos e atuam no sistema trigeminal; início rápido, pico em 1 a 2 horas, e podem ser dados por via intramuscular nas crises fortes. São úteis na <strong>enxaqueca menstrual</strong> (inclusive como profilaxia) e na fase de <strong>suspensão de ergotamina e triptanos usados abusivamente</strong>. O problema principal é a <strong>tolerância gastrintestinal</strong> — hemorragia gástrica com o uso repetido — e as reações de hipersensibilidade. A <strong>indometacina</strong>, do mesmo grupo, tem pouca eficácia na crise de enxaqueca.</p>
+<p><strong>Ergotamina e di-hidroergotamina (DHE)</strong> — vasoconstritores, de preferência associados a analgésicos, quando os analgésicos comuns falham.</p>
+<ul><li>Ergotamina: <strong>2 mg</strong> de início, repetidos a cada 30 minutos se a dor não melhorar, até</li></ul>
+<p><strong>6 mg</strong> na crise. DHE: metade (1 mg de início, até 3 mg).</p>
+<ul><li>Úteis em crises prolongadas ou com recorrência importante; uso recomendado de no máximo</li></ul>
+<p>uma vez por semana.</p>
+<ul><li>Ambas podem provocar vômitos — aí outra via é preferível (a DHE tem formas parenteral e</li></ul>
+<p>nasal).</p>
+<ul><li><strong>Contraindicadas</strong> em idosos e em portadores de doença vascular grave, periférica,</li></ul>
+<p>cardiovascular ou cerebrovascular.</p>
+<ul><li>O uso crônico leva ao <strong>ergotismo</strong>: gangrena por oclusão de ramos arteriais distais dos</li></ul>
+<p>membros e, muitas vezes, amaurose. Teto semanal: <strong>12 mg de ergotamina</strong> e <strong>6 mg de DHE</strong>.</p>
+<p><strong>Isometepteno</strong> — vasoconstritor menos potente, com menos efeitos colaterais (presente em associação comercial com dipirona e cafeína). <strong>Cafeína</strong> — associada aos vasoconstritores para potencializar a ação.</p>
+<p><strong>Triptanos</strong> — agonistas dos receptores <strong>5-HT1B/1D</strong>, o avanço isolado de maior impacto no tratamento da crise nas últimas décadas.</p>
+<ul><li><strong>5-HT1B</strong>: contraem os vasos cranianos, sobretudo o leito carotídeo, e fecham shunts</li></ul>
+<p>arteriovenosos — é assim que redistribuem o fluxo craniano.</p>
+<ul><li><strong>5-HT1D</strong>: inibem as fibras aferentes trigeminais que inervam os vasos e a dura-máter</li></ul>
+<p>sensível à dor.</p>
+<ul><li>Não são analgésicos propriamente ditos. Indicados nas crises <strong>moderadas ou graves</strong>.</li><li>Efeitos colaterais em geral leves e transitórios: pressão na cabeça, calor, náuseas,</li></ul>
+<p>distúrbio do paladar, tontura, <strong>aperto no peito</strong>, dispneia, fraqueza.</p>
+<ul><li><strong>Contraindicações</strong>: coronariopatia (houve isquemia miocárdica em angina de Prinzmetal e</li></ul>
+<p>em coronariopatias sintomáticas e assintomáticas), doença vascular periférica e cerebral, hipertensão arterial grave.</p>
+<ul><li>O uso abusivo causa <strong>cefaleia rebote</strong>.</li></ul>
+<div class="tbl"><table><thead><tr><th>Triptano</th><th>Doses e vias</th><th>Particularidades</th></tr></thead><tbody><tr><td><strong>Sumatriptano</strong></td><td>VO 50 mg, repetível até 2 vezes em 24 h · SC <strong>6 mg</strong>, máximo <strong>12 mg em 24 h</strong> · spray nasal 20 mg</td><td>SC é mais eficaz que VO; meia-vida de 2 h, eliminação hepática; recorrência de 30–40% em 24 h; o spray age em 15 min</td></tr><tr><td><strong>Zolmitriptano</strong></td><td>2,5 e 5 mg</td><td>ação também central, no núcleo trigeminal caudal; meia-vida de 3 h; resposta de 65–75% em 2 h; metabolizado pelo citocromo P450 e pela MAO — no máximo 5 mg/dia com IMAO</td></tr><tr><td><strong>Naratriptano</strong></td><td>2,5 mg</td><td>meia-vida longa (6 h), excreção renal; <strong>eficácia menor</strong> (~48% em 2 h), mas <strong>recorrência menor</strong> (~25%, contra ~38% do sumatriptano); o único triptano não contraindicado com IMAO</td></tr><tr><td><strong>Rizatriptano</strong></td><td>10 mg, comprimido ou disco orodispersível</td><td>início de ação mais rápido; ausência de dor em 2 h em até 48% (contra 22% do sumatriptano); <strong>reduzir a dose à metade em quem usa propranolol</strong></td></tr></tbody></table></div>
+<p><strong>Antieméticos</strong> — metoclopramida, bromoprida, dimenidrinato: úteis nas formas com vômitos, dados logo no início, com analgésicos e vasoconstritores, por via oral ou parenteral. <strong>Ansiolíticos</strong> podem ajudar, mas não devem ser usados de rotina.</p>
+<hr>
+<h2>Enxaqueca: profilaxia</h2>
+<p>Indica-se tratamento preventivo quando o paciente tem <strong>duas ou mais crises fortes por mês</strong> e precisa usar medicação de crise com frequência; o objetivo é <strong>espaçar e atenuar</strong> as crises. Diretrizes atuais também consideram quatro ou mais dias de enxaqueca por mês, crises incapacitantes apesar do tratamento agudo e o risco de uso excessivo de analgésicos.</p>
+<p>Escolher a droga não é simples: muitas foram testadas, várias em estudos mal controlados, e o <strong>efeito placebo</strong> chega a responder por até <strong>50%</strong> da melhora observada com tratamentos novos. A escolha costuma seguir o perfil do paciente.</p>
+<h4>Primeiro grupo — os "antamínicos"</h4>
+<p>Drogas anti-histamínicas e antisserotonínicas razoavelmente eficazes, com poucos efeitos colaterais e sem necessidade de controle médico frequente. Muito usadas na enxaqueca <strong>de início recente</strong>, em <strong>crianças e jovens</strong>.</p>
+<ul><li><strong>Pizotifeno</strong> 0,5 a 1,5 mg/dia · <strong>ciproeptadina</strong> 8 a 16 mg/dia.</li><li>Efeitos: sedação, boca seca, <strong>aumento do apetite</strong> (e do peso).</li><li>Falta de eficácia ou efeitos colaterais importantes levam ao segundo grupo.</li></ul>
+<h4>Segundo grupo — eficazes, com controle médico mais próximo</h4>
+<div class="tbl"><table><thead><tr><th>Droga</th><th>Dose diária</th><th>Efeitos adversos</th><th>Contraindicações e notas</th></tr></thead><tbody><tr><td><strong>Propranolol</strong></td><td>60–160 mg (máx. 240 mg)</td><td>astenia, tontura, hipotensão postural, depressão</td><td><strong>asma</strong> e <strong>insuficiência cardíaca</strong>; avaliar arritmias; hipotensos toleram mal; <strong>escolha no hipertenso</strong></td></tr><tr><td>Outros betabloqueadores</td><td>timolol 10–20 mg · nadolol 40–120 mg · atenolol 50–200 mg</td><td>idem</td><td>controlar FC e PA periodicamente</td></tr><tr><td><strong>Verapamil</strong></td><td>160–240 mg</td><td>astenia, hipotensão postural, <strong>bradicardia</strong></td><td><strong>BAV de 2º e 3º graus</strong></td></tr><tr><td><strong>Flunarizina</strong></td><td>5–20 mg (jovens toleram bem 10 mg)</td><td>sonolência, <strong>parkinsonismo</strong> (sobretudo idosos), <strong>depressão</strong></td><td>poucos efeitos cardíacos; suspender após 3 meses (risco teórico de discinesia tardia)</td></tr><tr><td><strong>Amitriptilina</strong> e outros tricíclicos</td><td>25–75 mg</td><td>boca seca, obstipação, <strong>retenção urinária</strong>, taquicardia, sonolência, ganho de peso</td><td><strong>cardiopatia grave, glaucoma, adenoma de próstata</strong>; ideal com depressão ou ansiedade</td></tr><tr><td><strong>ISRS</strong></td><td>fluoxetina 20–80 mg</td><td>disfunção sexual</td><td>opção no <strong>obeso</strong> e quando o tricíclico é contraindicado; só a fluoxetina tem eficácia comprovada</td></tr><tr><td><strong>Valproato / divalproato</strong></td><td>500–2.000 mg</td><td>sedação, alopecia, tremor, confusão, náuseas; <strong>hepatotoxicidade</strong></td><td><strong>função hepática antes de iniciar</strong>; útil com <strong>epilepsia, transtorno bipolar</strong>, ansiedade, depressão e cefaleias muito frequentes; teratogênico</td></tr><tr><td><strong>Metisergida</strong> (derivado do ergot)</td><td>3–6 mg</td><td>gastrintestinais, insônia, irritabilidade; vasoconstrição periférica e coronariana; <strong>fibrose retroperitoneal, endocárdica e pulmonar</strong></td><td><strong>pausa de pelo menos 1 mês a cada 6 meses</strong>; reservada a casos graves refratários</td></tr></tbody></table></div>
+<p>Nifedipina e nimodipina <strong>não</strong> servem para profilaxia: podem, inclusive, causar cefaleia. O valproato é gabaérgico, anticonvulsivante e antineurálgico; a insuficiência hepática irreversível é muito rara em adultos com monoterapia, mas, por ser teratogênico, evita-se em mulheres em idade fértil.</p>
+<p>Há ainda uma miscelânea de opções: AAS, indometacina e outros AINH; antiagregantes (AAS, dipiridamol); clonidina; agonistas dopaminérgicos; outros anticonvulsivantes — <strong>gabapentina e topiramato</strong> —; lítio.</p>
+<blockquote><p>Hoje o <strong>topiramato</strong> é profilático de primeira linha, ao lado de propranolol, amitriptilina, flunarizina e valproato; tende a reduzir o peso, o que o torna interessante no obeso. Na enxaqueca crônica entram também os anticorpos monoclonais contra o CGRP e a toxina botulínica.</p></blockquote>
+<h4>Escolha pelo perfil do paciente</h4>
+<ul><li>Criança ou jovem, enxaqueca recente → antamínicos.</li><li>Hipertenso → propranolol (evitar na asma e na insuficiência cardíaca).</li><li>Depressão, ansiedade, insônia → amitriptilina (evitar em glaucoma, prostatismo e</li></ul>
+<p>cardiopatia grave); no obeso, ISRS.</p>
+<ul><li>Epilepsia ou transtorno bipolar → valproato.</li><li>Enxaqueca menstrual → AINH.</li><li>Casos graves e refratários → metisergida, com pausas.</li></ul>
+<hr>
+<h2>Cefaleia do tipo tensão</h2>
+<p>Também chamada <strong>cefaleia de contração muscular</strong>, é a <strong>cefaleia mais frequente</strong> na prática clínica: aparece em cerca de <strong>40% da população</strong>, em geral com incidência <strong>igual nos dois sexos</strong>, e predomina a partir da terceira década, quando pesam os problemas emocionais, familiares e profissionais.</p>
+<h3>Quadro clínico</h3>
+<ul><li>Dor em <strong>peso, pressão, aperto ou constrição</strong> — <strong>não latejante</strong>.</li><li>Frontal, temporal ou frontotemporal, geralmente <strong>bilateral</strong>, muitas vezes com</li></ul>
+<p>componente occipital.</p>
+<ul><li>Intensidade <strong>fraca a moderada</strong>: prejudica, mas raramente obriga a abandonar os afazeres.</li><li><strong>Não piora</strong> com esforço, subir escadas, atividade física ou movimentos da cabeça.</li><li><strong>Sem náuseas nem vômitos</strong>; admite <strong>fotofobia ou fonofobia, mas não as duas</strong>.</li></ul>
+<blockquote><p>O dado que mais separa a cefaleia tipo tensão da enxaqueca é a <strong>ausência de fenômenos associados</strong>: nada de náusea ou vômito, e no máximo uma das fobias.</p></blockquote>
+<h3>Episódica × crônica</h3>
+<div class="tbl"><table><thead><tr><th></th><th>Episódica</th><th>Crônica</th></tr></thead><tbody><tr><td>Frequência</td><td>menos de 15 dias por mês</td><td><strong>15 ou mais dias por mês</strong> — por pelo menos 6 meses na classificação de 1988; por mais de 3 meses (≥180 dias/ano) na ICHD-3</td></tr><tr><td>Desencadeante</td><td>agente específico, sobretudo <strong>emocional</strong>: dia de tensão, cefaleia de "fim de expediente"; também esforço físico, esforço visual, dirigir, contração muscular prolongada</td><td>geralmente é um dos sintomas de um <strong>estado depressivo</strong></td></tr><tr><td>Perfil</td><td>qualquer idade</td><td>após os 30 anos, <strong>predomínio feminino</strong>, difícil controle</td></tr><tr><td>Sintomas associados</td><td>fotofobia ou fonofobia, não as duas; sem náusea</td><td>no máximo um entre fotofobia, fonofobia e náusea; <strong>vômito nunca</strong></td></tr><tr><td>Padrão da dor</td><td>episódios</td><td>diária ou quase diária, às vezes contínua, com momentos de acalmia sem desaparecer</td></tr></tbody></table></div>
+<p>A ICHD-3 ainda divide a forma episódica em <strong>infrequente</strong> (menos de 1 dia por mês) e <strong>frequente</strong> (1 a 14 dias por mês), com crises de 30 minutos a 7 dias.</p>
+<p>Apesar do nome, o mecanismo não é bem conhecido; alguns autores afirmam que a contração muscular nem é o mecanismo primário. É frequente a <strong>associação com a enxaqueca</strong> — provavelmente a enxaqueca facilita o aparecimento da cefaleia tipo tensão. O diagnóstico é <strong>clínico</strong>, por anamnese correta; exames só quando sintomas ou achados sugerirem outra patologia.</p>
+<h3>Tratamento</h3>
+<ul><li><strong>Episódica</strong>: raramente motiva a consulta — costuma aparecer no interrogatório. Muitos</li></ul>
+<p>convivem com ela sem medicação; analgésicos comuns eventuais bastam, e retirar ou reduzir os fatores causais é eficaz.</p>
+<ul><li><strong>Crônica</strong>: muito resistente. Os analgésicos atuam pouco e são usados em excesso, como</li></ul>
+<p><strong>automedicação compulsiva</strong> — "a dor é apenas a ponta exposta de um iceberg depressivo". Os <strong>antidepressivos</strong> são a medida mais eficaz, e mesmo assim beneficiam cerca de <strong>metade</strong> dos pacientes: preferência pela <strong>amitriptilina 50 a 100 mg/dia</strong>, mas outros tricíclicos em doses correspondentes e os ISRS também servem. Apoio psicológico ou psiquiátrico muitas vezes é necessário; acupuntura e biofeedback ajudam uma pequena parcela, por tempo limitado.</p>
+<hr>
+<h2>Cefaleia em salvas</h2>
+<p>Do inglês <em>cluster headache</em>; em nosso meio também chamada <strong>cefaleia histamínica</strong> ou <strong>cefaleia de Horton</strong>. Reúne cefaleias <strong>intensas, unilaterais, de curta duração</strong>, associadas a congestão conjuntival, lacrimejamento e congestão nasal.</p>
+<h3>Quadro clínico</h3>
+<ul><li>Dor <strong>periorbitária</strong>, no fundo do olho e ao redor, <strong>sempre do mesmo lado</strong> em todos os</li></ul>
+<p>surtos.</p>
+<ul><li>Intensidade <strong>intolerável</strong>, muitas vezes <strong>lancinante</strong> — nem sempre latejante.</li><li>Do mesmo lado: <strong>congestão conjuntival intensa, lacrimejamento, obstrução nasal</strong>; em</li></ul>
+<p><strong>30%</strong>, <strong>miose e semiptose</strong> durante a crise (síndrome de Claude Bernard-Horner).</p>
+<ul><li>Nada alivia a dor e o paciente <strong>não consegue ficar parado</strong>: torna-se inquieto, muitas</li></ul>
+<p>vezes desesperado — ao contrário da enxaqueca, em que se deita no escuro.</p>
+<ul><li>Crises de início e fim <strong>abruptos</strong>, durando <strong>15 a 180 minutos</strong> (a grande maioria, 15</li></ul>
+<p>minutos a 2 horas).</p>
+<ul><li>De uma crise a cada dois dias até <strong>8 por dia</strong> (em média 1 a 3), **sempre no mesmo</li></ul>
+<p>horário<strong>, inclusive </strong>acordando o paciente de madrugada**.</p>
+<ul><li><strong>Predomínio masculino</strong> marcante (6:1 nas séries clássicas); primeiro surto em geral</li></ul>
+<p>entre os <strong>20 e 30 anos</strong>.</p>
+<ul><li>Durante o surto, o <strong>álcool</strong> costuma desencadear crises.</li></ul>
+<h3>Os surtos</h3>
+<p>A característica fundamental é a ocorrência das crises <strong>em surtos</strong> ("salvas", "cachos"), em geral de <strong>3 a 8 semanas</strong>, que desaparecem espontaneamente. As remissões variam de um paciente para outro, mais comumente com <strong>1 a 2 surtos por ano</strong>, e tendem a encurtar com o tempo; às vezes deixam de existir.</p>
+<div class="tbl"><table><thead><tr><th></th><th>Episódica (habitual)</th><th>Crônica</th></tr></thead><tbody><tr><td>Definição</td><td>surtos de 7 dias a 1 ano separados por períodos livres</td><td>crises por <strong>mais de 1 ano</strong> sem remissão ou com remissões curtas</td></tr><tr><td>Remissão</td><td>≥14 dias na classificação de 1988; <strong>≥3 meses</strong> na ICHD-3</td><td>&lt;14 dias (1988); &lt;3 meses (ICHD-3)</td></tr></tbody></table></div>
+<h3>Tratamento</h3>
+<p>É uma doença muito resistente. Os <strong>analgésicos têm pouco ou nenhum efeito</strong> — a crise é curta e intensa demais.</p>
+<h4>Crise</h4>
+<ul><li><strong>Sumatriptano subcutâneo 6 mg</strong> — o sintomático mais eficaz; alternativas:</li></ul>
+<p>sumatriptano spray nasal 20 mg e outros triptanos de início rápido, como o rizatriptano.</p>
+<ul><li><strong>Oxigênio puro</strong> sob máscara: esquemas antigos usavam 7 L/min por 15 minutos, com</li></ul>
+<p>resposta em cerca de metade dos casos; hoje se recomenda <strong>O₂ a 100% em alto fluxo, 12 a 15 L/min, com máscara não reinalante, por 15 a 20 minutos</strong>.</p>
+<ul><li>Ergóticos injetáveis: eficácia inconstante.</li></ul>
+<h4>Interromper o surto</h4>
+<ul><li>Corticoides, <strong>verapamil</strong>, derivados do ergot (metisergida) e ácido valproico — eficazes</li></ul>
+<p>sobretudo nos primeiros surtos; com o tempo, as crises ficam cada vez mais resistentes. Hoje o verapamil é o preventivo de primeira linha, e o corticoide serve de ponte enquanto ele faz efeito.</p>
+<h4>Forma crônica</h4>
+<ul><li><strong>Carbonato de lítio</strong>, com resultados satisfatórios ao menos nos primeiros meses;</li></ul>
+<p>também valproato, mirtazapina e topiramato.</p>
+<h3>Enxaqueca × tensão × salvas</h3>
+<div class="tbl"><table><thead><tr><th></th><th>Enxaqueca</th><th>Tipo tensão</th><th>Salvas</th></tr></thead><tbody><tr><td>Sexo</td><td>feminino, 2–3:1</td><td>igual</td><td><strong>masculino</strong></td></tr><tr><td>Localização</td><td>unilateral em 2/3, variável</td><td>bilateral, frontotemporal e occipital</td><td><strong>periorbitária, sempre do mesmo lado</strong></td></tr><tr><td>Caráter</td><td>pulsátil</td><td>peso, pressão, aperto</td><td>lancinante, intolerável</td></tr><tr><td>Intensidade</td><td>moderada a forte</td><td>fraca a moderada</td><td>muito forte</td></tr><tr><td>Duração</td><td>4 a 72 h</td><td>30 min a 7 dias</td><td><strong>15 a 180 min</strong></td></tr><tr><td>Associados</td><td>náusea, vômito, foto e fonofobia</td><td>no máximo foto <strong>ou</strong> fonofobia</td><td>lacrimejamento, congestão conjuntival e nasal, Horner</td></tr><tr><td>Esforço físico</td><td><strong>piora</strong></td><td>não piora</td><td>—</td></tr><tr><td>Comportamento</td><td>deita no escuro, quieto</td><td>mantém as atividades</td><td><strong>inquieto, anda, agitado</strong></td></tr></tbody></table></div>
+<hr>
+<h2>Arterite temporal</h2>
+<p>A arterite temporal — ou <strong>arterite de células gigantes</strong> — não é frequente, mas todo médico precisa pensar nela, porque o tratamento específico <strong>previne a perda visual</strong>, por vezes muito grave.</p>
+<h3>Quadro clínico</h3>
+<ul><li>Cefaleia de <strong>início tardio</strong>: após os <strong>50 anos</strong>, mais frequente após os 60, comum após</li></ul>
+<p>os 80.</p>
+<ul><li>Dor geralmente intensa, muitas vezes latejante, uni ou bilateral, predominando nas</li></ul>
+<p>regiões <strong>frontotemporais</strong>; pode ser contínua e limitar as atividades do idoso.</p>
+<ul><li>Pela localização temporal, piora com a mastigação e obriga a parar de comer —</li></ul>
+<p><strong>claudicação intermitente da mandíbula</strong>.</p>
+<ul><li><strong>Artérias temporais espessadas, tortuosas e dolorosas</strong>.</li><li>Processo inflamatório das artérias extracranianas, com <strong>células gigantes</strong> à biópsia,</li></ul>
+<p>que pode atingir outros territórios sistêmicos e o intracraniano — em especial ramos da <strong>artéria oftálmica</strong>, com graves sequelas visuais. Não raro, o idoso com semanas de cefaleia só tem o diagnóstico suspeitado no oftalmologista, já com <strong>isquemia retiniana</strong> grave.</p>
+<ul><li><strong>Polimialgia reumática</strong> associada: mal-estar, perda de peso, febre baixa persistente,</li></ul>
+<p>sudorese noturna, dores musculares paravertebrais e das cinturas. Sem cefaleia evidente, o diagnóstico no idoso pode ser muito difícil.</p>
+<h3>Diagnóstico</h3>
+<ul><li>Hemograma: leucocitose e neutrofilia.</li><li><strong>VHS</strong> é o exame que mais se altera: <strong>acima de 40 mm</strong> na grande maioria dos casos,</li></ul>
+<p>podendo passar de <strong>100 mm</strong>.</p>
+<ul><li><strong>Proteína C reativa elevada</strong>.</li><li>Diagnóstico de certeza: <strong>biópsia da artéria temporal</strong>.</li></ul>
+<h3>Tratamento</h3>
+<ul><li><strong>Prednisona 1 mg/kg/dia</strong>, reduzida progressivamente até manutenção de até 10 mg/dia.</li><li>A melhora costuma ser <strong>dramática, com desaparecimento da dor em 48 horas</strong> — a resposta</li></ul>
+<p>ao corticoide pode ser teste diagnóstico mais sensível que a VHS. VHS e quadro clínico guiam a redução da dose.</p>
+<ul><li>Perda visual em curso: <strong>pulsos de metilprednisolona 1 g/dia por 3 dias</strong>, ou pulso de</li></ul>
+<p>imunossupressor (ciclofosfamida 1 g).</p>
+<blockquote><p>A corticoterapia <strong>precoce</strong> previne o comprometimento visual na maioria dos casos. Diante da suspeita clínica, <strong>não se espera a biópsia</strong> para começar o corticoide — ela continua informativa nos primeiros dias de tratamento.</p></blockquote>
+<hr>
+<h2>Secundárias de urgência e outras formas de cefaleia</h2>
+<p>Fora a arterite temporal, há secundárias que não podem passar no pronto-socorro. Todas se anunciam por algum dos sinais de alarme.</p>
+<div class="tbl"><table><thead><tr><th>Condição</th><th>Pista clínica</th><th>Primeiro passo</th></tr></thead><tbody><tr><td><strong>Hemorragia subaracnóidea</strong></td><td>cefaleia <strong>súbita, "em trovoada"</strong>, pico em menos de 1 minuto, "a pior da vida", muitas vezes no esforço ou na atividade sexual; vômitos, rigidez de nuca, às vezes rebaixamento — mas o exame pode ser normal</td><td><strong>TC sem contraste</strong>; se normal e a suspeita persiste, <strong>punção lombar</strong></td></tr><tr><td><strong>Meningite</strong></td><td>febre, cefaleia, rigidez de nuca, alteração da consciência; Kernig e Brudzinski</td><td><strong>punção lombar</strong>; antibiótico empírico e dexametasona <strong>sem atrasar</strong> pela imagem</td></tr><tr><td><strong>Hipertensão intracraniana / processo expansivo</strong></td><td>cefaleia progressiva, <strong>pior ao acordar e ao deitar</strong>, que <strong>desperta o paciente</strong>, piora com tosse e Valsalva; <strong>vômitos</strong>, <strong>papiledema</strong>, paralisia do VI nervo</td><td><strong>neuroimagem</strong> antes de qualquer punção</td></tr><tr><td><strong>Trombose venosa cerebral</strong></td><td>cefaleia com convulsões, déficits focais e sinais de hipertensão intracraniana, em gestantes, puérperas e usuárias de anticoncepcional</td><td>ressonância com venografia</td></tr><tr><td><strong>Dissecção carotídea ou vertebral</strong></td><td>dor cervical ou facial com <strong>Horner ipsilateral</strong> (carótida) ou sinais de fossa posterior (vertebral), às vezes após trauma cervical leve</td><td>angiotomografia ou angiorressonância</td></tr><tr><td><strong>Glaucoma agudo</strong></td><td>dor que <strong>começa no olho</strong>, olho vermelho, midríase média, halos</td><td>avaliação oftalmológica imediata</td></tr><tr><td><strong>Monóxido de carbono</strong></td><td>cefaleia em várias pessoas da mesma casa, aquecedor em ambiente fechado</td><td>oxigênio e carboxi-hemoglobina</td></tr></tbody></table></div>
+<h3>Hemorragia subaracnóidea em detalhe</h3>
+<p>A causa não traumática mais comum é a ruptura de <strong>aneurisma sacular</strong>; às vezes uma "cefaleia sentinela" precede o sangramento maior. A TC sem contraste tem alta sensibilidade nas primeiras horas, que cai com o passar dos dias — daí a punção lombar quando a TC é normal, procurando <strong>hemácias que não clareiam</strong> e <strong>xantocromia</strong>. Confirmado o sangramento, segue-se a angiografia para localizar o aneurisma.</p>
+<blockquote><p>Cefaleia em trovoada com exame neurológico <strong>normal</strong> não descarta hemorragia subaracnóidea. A cefaleia benigna do esforço e a da atividade sexual só são aceitas depois de excluí-la.</p></blockquote>
+<h3>Meningite</h3>
+<p>Na suspeita de meningite bacteriana, colhem-se hemoculturas e inicia-se o antibiótico empírico com dexametasona imediatamente. A TC antes da punção só é necessária se houver déficit focal, papiledema, crise convulsiva, rebaixamento da consciência ou imunossupressão — e mesmo aí o antibiótico não espera a imagem.</p>
+<h3>Hipertensão e hipotensão liquórica</h3>
+<ul><li><strong>Hipertensão intracraniana idiopática</strong> (antiga "benigna"): mulher jovem e obesa, com</li></ul>
+<p>papiledema, neuroimagem normal e pressão de abertura liquórica elevada. Trata-se com acetazolamida e perda de peso. O risco é a <strong>perda visual</strong> — por isso o rótulo "benigna" caiu.</p>
+<ul><li><strong>Hipotensão liquórica</strong> (por exemplo, após punção lombar): cefaleia <strong>ortostática</strong>, que</li></ul>
+<p>piora em pé e alivia ao deitar.</p>
+<h3>Cefaleia por uso excessivo de medicação</h3>
+<p>O uso abusivo de analgésicos, ergotamina e triptanos — comum na cefaleia tipo tensão crônica, como automedicação compulsiva, e na enxaqueca — gera <strong>cefaleia rebote</strong> quase diária. Pelos critérios atuais: cefaleia em <strong>15 ou mais dias por mês</strong>, em quem já tinha cefaleia primária, com uso regular por mais de 3 meses de <strong>ergóticos, triptanos, opioides ou analgésicos combinados em 10 ou mais dias por mês</strong>, ou de <strong>analgésicos simples e AINH em 15 ou mais dias por mês</strong>. A conduta é <strong>suspender o abuso</strong> — os AINH ajudam na fase de retirada de ergotamina e triptanos — e <strong>iniciar profilaxia</strong>. A suspensão de cafeína, ergotamina e narcóticos também causa cefaleia de abstinência.</p>
+<h3>Outras formas primárias</h3>
+<p>Há cefaleias relacionadas ao esforço, à tosse, à altitude, à atividade sexual, ao estímulo gelado e à compressão externa, além da cefaleia idiopática em pontadas. A maioria é benigna, mas <strong>tosse, esforço e atividade sexual</strong> exigem a exclusão de causa estrutural ou vascular antes de se aceitar o diagnóstico de cefaleia primária.</p></script>
+<!-- Tutor local: define window.DEEPSEEK_KEY. O arquivo NAO vai para o repositorio,
+     entao online ele da 404 e o chat simplesmente nao aparece. -->
+<script src="../deepseek_key.js"></script>
+<script>
+/* ─────────────────────────────────────────────────────────────────────────────
+   CONTRATO DE DADOS — para adaptar a outro tema, troque apenas QUIZ e o resumo.
+   Cada item: { question, options[2..6], correctIndex, explanation }
+   ──────────────────────────────────────────────────────────────────────────── */
+var TITLE      = "Cefaleias";
+var EYEBROW    = "Neurologia · Cefaleias";
+var DISCIPLINA = "Neurologia";   // pasta de origem (PED, GO...) — usada pelo índice
+var SUBTITLE = "Das primárias às secundárias que não podem passar no pronto-socorro";
+var INTRO    = "Estruturas sensíveis à dor, primárias × secundárias e sinais de alarme; enxaqueca (critérios, crise e profilaxia), cefaleia tipo tensão, cefaleia em salvas, arterite temporal e as secundárias de urgência.";
+
+var QUIZ = [
+  {
+    "question": "Um tumor cresce no interior do parênquima cerebral sem deslocar vasos nem meninges. Por que ele pode permanecer indolor por muito tempo?",
+    "options": [
+      "O parênquima encefálico e seus vasos internos não são sensíveis à dor",
+      "A calota craniana absorve a pressão e bloqueia os nociceptores durais",
+      "As leptomeninges filtram o estímulo antes que ele chegue ao trigêmeo",
+      "Os seios venosos se adaptam à pressão e deixam de transmitir a dor"
+    ],
+    "correctIndex": 0,
+    "explanation": "São insensíveis à dor os ossos da calota, as leptomeninges, a maior parte da dura-máter, o parênquima encefálico e os vasos no seu interior. A dor só surge quando o processo desloca, traciona, distende ou inflama estruturas sensíveis — artérias do polígono de Willis e porções proximais de seus ramos, grandes seios venosos, dura-máter da base, nervos sensitivos, couro cabeludo, periósteo e vasos extracranianos — ou por vasodilatação."
+  },
+  {
+    "question": "Uma mulher tem enxaqueca desde os 15 anos e, aos 40, sofreu um traumatismo craniano leve; as crises seguem iguais. Qual é o fator decisivo para classificar uma cefaleia como secundária a uma doença orgânica?",
+    "options": [
+      "Associação temporal estreita entre o início da dor e a doença",
+      "Intensidade maior que a das crises de cefaleia primária prévias",
+      "Alteração em exame de imagem, ainda que sem relação de tempo",
+      "Resposta insatisfatória a analgésicos comuns e a triptanos"
+    ],
+    "correctIndex": 0,
+    "explanation": "Pela Sociedade Internacional de Cefaleia, a cefaleia é secundária quando ocorre em associação temporal estreita com a doença orgânica. Se a dor precede a doença, ou surge muito tempo depois dela, trata-se apenas de coexistência — como nesta paciente, cuja enxaqueca antecede o trauma em 25 anos. Intensidade e resposta a remédios não definem a classificação."
+  },
+  {
+    "question": "Qual destas cefaleias, embora classificada entre as primárias, exige investigação antes de ser aceita como primária?",
+    "options": [
+      "Cefaleia desencadeada pela tosse",
+      "Enxaqueca sem aura de padrão estável",
+      "Cefaleia tipo tensão episódica típica",
+      "Cefaleia em salvas episódica típica"
+    ],
+    "correctIndex": 0,
+    "explanation": "As cefaleias do grupo 4 (miscelânea sem lesão estrutural) incluem a da tosse, a do esforço e a da atividade sexual. Elas algumas vezes exigem investigação clínica antes de serem consideradas primárias, porque o mesmo quadro pode ser manifestação de lesão estrutural ou vascular — por exemplo, lesão de fossa posterior ou hemorragia subaracnóidea desencadeada por esforço."
+  },
+  {
+    "question": "Mulher de 42 anos, sem história prévia de cefaleia, há 6 semanas tem dor holocraniana progressiva, pior ao acordar, que a desperta de madrugada e vem com vômitos. O fundo de olho mostra papiledema bilateral. Qual a conduta?",
+    "options": [
+      "Neuroimagem já, pela suspeita de processo expansivo intracraniano",
+      "Analgésico comum e reavaliação após diário de cefaleia por 3 meses",
+      "Profilaxia com amitriptilina, por cefaleia tipo tensão crônica",
+      "Triptano nas crises, por enxaqueca sem aura de início tardio"
+    ],
+    "correctIndex": 0,
+    "explanation": "Cefaleia que aparece de novo, progressiva, matinal, que acorda a paciente e vem com vômitos e papiledema reúne sinais de hipertensão intracraniana. A presença de sinais ao exame neurológico obriga a investigação completa, começando pela neuroimagem (antes de qualquer punção lombar). Uma cefaleia primária de longa evolução não teria esse perfil."
+  },
+  {
+    "question": "No pronto-socorro, qual dado da história torna MENOS provável que uma cefaleia seja referida de olhos, ouvidos, seios da face ou dentes?",
+    "options": [
+      "Dor generalizada desde o primeiro momento",
+      "Dor que começa no olho e depois se espalha",
+      "Dor que começa na orelha e depois irradia",
+      "Dor iniciada na arcada dentária e difundida"
+    ],
+    "correctIndex": 0,
+    "explanation": "Nas cefaleias referidas, a dor começa na estrutura doente — a do glaucoma é ocular, a da otite é auricular, a do abscesso dentário é na arcada — e só com a intensidade do processo se irradia e se generaliza. Uma cefaleia que já se manifesta generalizada dificilmente depende dessas causas; na prática, pacientes com enxaqueca ou cefaleia tipo tensão típicas são muitas vezes investigados para elas sem necessidade."
+  },
+  {
+    "question": "Qual afirmação descreve corretamente a frequência relativa da enxaqueca e da cefaleia tipo tensão?",
+    "options": [
+      "Na população a tipo tensão lidera; no consultório lidera a enxaqueca",
+      "Na população e no consultório a enxaqueca é a primária mais comum",
+      "Na população a enxaqueca lidera; no consultório lidera a tipo tensão",
+      "Na população e no consultório a tipo tensão supera a enxaqueca"
+    ],
+    "correctIndex": 0,
+    "explanation": "A cefaleia tipo tensão é a mais frequente, presente em cerca de 40% da população e sem diferença entre os sexos. A enxaqueca é a segunda na população (15% a 25%, duas a três vezes mais comum nas mulheres), mas é de longe a primeira em consultórios e ambulatórios, porque seus sintomas são mais intensos e incapacitantes."
+  },
+  {
+    "question": "Durante uma crise de enxaqueca, qual conjunto de achados é o mais típico?",
+    "options": [
+      "Dor pulsátil que piora com esforço, fotofobia e náuseas",
+      "Dor em aperto bilateral, sem náuseas e sem piora ao esforço",
+      "Dor periorbitária lancinante com lacrimejamento e agitação",
+      "Dor em pontada de segundos, sem nenhum sintoma associado"
+    ],
+    "correctIndex": 0,
+    "explanation": "A dor da enxaqueca é pulsátil na maioria dos casos, unilateral em cerca de dois terços, moderada ou forte, e piora com esforço físico e movimentos da cabeça. Fotofobia ocorre em cerca de 80%, náuseas em dois terços e vômitos em um terço, e o paciente procura deitar em lugar escuro e silencioso. Dor em aperto sem náusea é cefaleia tipo tensão; dor periorbitária com lacrimejamento e agitação é cefaleia em salvas."
+  },
+  {
+    "question": "Pelos critérios diagnósticos atuais da Classificação Internacional das Cefaleias (ICHD-3), qual combinação define enxaqueca sem aura?",
+    "options": [
+      "≥5 crises de 4 a 72 h, 2 de 4 traços da dor e náusea ou foto + fonofobia",
+      "≥2 crises de 1 a 24 h, 1 de 4 traços da dor e vômito ou fotofobia isolada",
+      "≥5 crises de 30 min a 7 dias, dor bilateral em aperto e sem náuseas",
+      "≥5 crises de 15 a 180 min, dor orbitária e sinais autonômicos ipsilaterais"
+    ],
+    "correctIndex": 0,
+    "explanation": "ICHD-3: pelo menos 5 crises de 4 a 72 horas, com pelo menos 2 de 4 características da dor (unilateral, pulsátil, moderada ou forte, piora com atividade física rotineira) e pelo menos 1 de 2 sintomas (náusea e/ou vômito; fotofobia e fonofobia juntas). Crises de 30 min a 7 dias em aperto descrevem a cefaleia tipo tensão; crises de 15 a 180 min com sinais autonômicos, a cefaleia em salvas."
+  },
+  {
+    "question": "Qual descrição corresponde à aura enxaquecosa típica?",
+    "options": [
+      "Escotoma ou cintilação visual que se instala e cresce em minutos, seguido de dor",
+      "Perda visual súbita e indolor de um olho, que dura segundos e não se repete",
+      "Hemiparesia de início abrupto que persiste por dias após o fim da cefaleia",
+      "Ptose e miose ipsilaterais à dor, que surgem e somem a cada nova crise"
+    ],
+    "correctIndex": 0,
+    "explanation": "A aura é disfunção neurológica focal, mais frequentemente visual: aparece e cresce com fenômenos negativos (escotomas) ou positivos (luzes, cores, cintilações), dura poucos minutos (cada sintoma de 5 a 60 minutos) e, ao desaparecer, dá lugar à dor — a antiga enxaqueca clássica. Déficit que persiste após a cefaleia é complicação (enxaqueca complicada, hoje infarto enxaquecoso); ptose e miose ipsilaterais lembram cefaleia em salvas."
+  },
+  {
+    "question": "Qual fenômeno é apontado como o substrato da aura enxaquecosa?",
+    "options": [
+      "Depressão alastrante cortical, com supressão neuronal e hipoperfusão",
+      "Vasoconstrição carotídea mediada por receptores 5-HT1B na fase dolorosa",
+      "Descarga epileptiforme focal com hiperperfusão do córtex occipital",
+      "Contração prolongada da musculatura pericraniana e cervical posterior"
+    ],
+    "correctIndex": 0,
+    "explanation": "A depressão alastrante de Leão é uma onda de supressão dos disparos neuronais acompanhada de hipoperfusão alastrante no mesmo território e de alterações metabólicas e iônicas; ela determina a aura. Acredita-se que ponha em marcha uma inflamação neurogênica estéril perivascular, com liberação de neuropeptídeos, responsável pela vasodilatação da fase dolorosa."
+  },
+  {
+    "question": "Qual associação entre alimento e substância desencadeante de enxaqueca está correta?",
+    "options": [
+      "Queijos curados — tiramina",
+      "Embutidos — glutamato de sódio",
+      "Comida oriental — tiramina",
+      "Chocolate — nitritos e nitratos"
+    ],
+    "correctIndex": 0,
+    "explanation": "Queijos curados têm alto teor de tiramina; embutidos de carne contêm nitritos e nitratos; a comida oriental, glutamato de sódio. Também são desencadeantes o chocolate, fumo, álcool, drogas vasodilatadoras, sol prolongado, excesso de luz, recintos fechados (aumento do CO₂), estresse, fadiga, privação de sono e hipoglicemia. Anticoncepcionais geralmente pioram a enxaqueca e provavelmente aumentam o risco vascular."
+  },
+  {
+    "question": "Como os triptanos abortam a crise de enxaqueca?",
+    "options": [
+      "Agonismo 5-HT1B (vasoconstrição) e 5-HT1D (inibição trigeminal)",
+      "Antagonismo 5-HT2 central, com bloqueio da depressão alastrante",
+      "Inibição da ciclo-oxigenase e da síntese de prostaglandinas",
+      "Antagonismo dopaminérgico D2, com efeito antiemético e analgésico"
+    ],
+    "correctIndex": 0,
+    "explanation": "Os triptanos são agonistas 5-HT1B/1D. Pelos receptores 5-HT1B contraem os vasos cranianos, sobretudo o leito carotídeo, e fecham shunts arteriovenosos; pelos 5-HT1D inibem as fibras aferentes trigeminais que inervam os vasos e a dura-máter. Não são analgésicos propriamente ditos e funcionam em mais de 65% dos casos, mesmo quando tomados tardiamente."
+  },
+  {
+    "question": "Homem de 55 anos com enxaqueca e angina estável pede algo mais forte para as crises. Qual classe deve ser evitada?",
+    "options": [
+      "Triptanos e derivados do ergot, pelo efeito vasoconstritor",
+      "Anti-inflamatórios não hormonais, pelo risco de broncoespasmo",
+      "Antieméticos procinéticos, pelo risco de arritmia ventricular",
+      "Corticoides parenterais, pelo risco de instabilizar a angina"
+    ],
+    "correctIndex": 0,
+    "explanation": "Triptanos e ergóticos são vasoconstritores. Durante o uso de triptanos houve isquemia miocárdica em pacientes com angina de Prinzmetal e com coronariopatias sintomáticas e assintomáticas; por isso são contraindicados em coronariopatia, doença vascular periférica ou cerebral e hipertensão grave. Os ergóticos, além disso, não devem ser usados em idosos."
+  },
+  {
+    "question": "Qual é o esquema recomendado de sumatriptano subcutâneo na crise de enxaqueca?",
+    "options": [
+      "6 mg por dose, com máximo de 12 mg em 24 horas",
+      "6 mg por dose, com máximo de 24 mg em 24 horas",
+      "20 mg por dose, com máximo de 40 mg em 24 horas",
+      "2 mg por dose, com máximo de 6 mg em 24 horas"
+    ],
+    "correctIndex": 0,
+    "explanation": "Sumatriptano subcutâneo: 6 mg por dose, máximo de 12 mg em 24 horas — via mais eficaz que a oral. Por via oral, 50 mg, repetíveis até duas vezes em 24 horas; spray nasal, 20 mg, com início em 15 minutos. Meia-vida de 2 horas, eliminação hepática e recorrência de 30% a 40% em 24 horas. O esquema de 2 mg até 6 mg é o da ergotamina."
+  },
+  {
+    "question": "Na crise de enxaqueca, qual a diferença prática entre ergóticos e triptanos quanto ao momento de uso?",
+    "options": [
+      "Ergóticos só agem se tomados cedo; triptanos agem em qualquer fase",
+      "Triptanos só agem se tomados cedo; ergóticos agem em qualquer fase",
+      "Ambos só agem se tomados ainda durante a aura, antes da cefaleia",
+      "Ambos agem igualmente bem em qualquer fase da crise de enxaqueca"
+    ],
+    "correctIndex": 0,
+    "explanation": "O emprego de ergóticos deve ser o mais precoce possível, pois tardiamente não têm efeito. Os triptanos podem ser usados em qualquer momento da crise e são eficazes em mais de 65% dos casos mesmo quando tardios. Ainda assim, qualquer medicação rende mais se tomada no início, e a recorrência após o triptano pede a associação de AINH."
+  },
+  {
+    "question": "Paciente usa ergotamina quase todos os dias há meses e chega com dedos frios, pálidos e áreas de necrose. Qual é o quadro e como teria sido prevenido?",
+    "options": [
+      "Ergotismo; respeitar o teto semanal de 12 mg de ergotamina",
+      "Ergotismo; respeitar o teto semanal de 12 mg de sumatriptano",
+      "Raynaud primário; associar betabloqueador à ergotamina",
+      "Síndrome serotoninérgica; associar triptano para baixar a dose"
+    ],
+    "correctIndex": 0,
+    "explanation": "A administração crônica de derivados do ergot pode levar ao ergotismo, situação rara em que há gangrena por oclusão de ramos arteriais distais dos membros e, muitas vezes, amaurose. Para preveni-lo, recomendam-se doses semanais máximas de 12 mg de ergotamina e 6 mg de di-hidroergotamina; na crise, 2 mg de início, repetidos a cada 30 minutos, até 6 mg."
+  },
+  {
+    "question": "Paciente está em crise de enxaqueca há quatro dias, sem resposta a analgésicos e a triptano. Qual a melhor opção?",
+    "options": [
+      "Corticoide parenteral, como dexametasona 16 mg",
+      "Ergotamina 2 mg VO a cada 30 min, sem limite",
+      "Sumatriptano SC de hora em hora até a remissão",
+      "Propranolol oral em dose plena para abortar a dor"
+    ],
+    "correctIndex": 0,
+    "explanation": "Crise prolongada e refratária — estado de mal enxaquecoso, que pela ICHD-3 dura mais de 72 horas — responde melhor a corticoide parenteral: dexametasona 16 mg ou metilprednisolona 80 mg, por 24 a 72 horas; alguns associam ergotamina 0,5 mg IM de 8/8 h por no máximo três dias. O sumatriptano SC tem teto de 12 mg em 24 h, a ergotamina de 6 mg por crise, e o propranolol é profilático."
+  },
+  {
+    "question": "Quando está indicado o tratamento profilático da enxaqueca?",
+    "options": [
+      "Duas ou mais crises fortes por mês, com uso frequente de medicação",
+      "Qualquer paciente com aura, independentemente da frequência",
+      "Apenas após falha de três triptanos diferentes no tratamento da crise",
+      "Somente quando a cefaleia se torna diária por mais de seis meses"
+    ],
+    "correctIndex": 0,
+    "explanation": "A profilaxia é considerada quando há duas ou mais crises fortes por mês e o paciente precisa usar medicação de crise com frequência; o objetivo é espaçar e atenuar as crises. Crises esparsas, até duas por mês, pedem só o tratamento da crise. Diretrizes atuais também consideram quatro ou mais dias de enxaqueca por mês e crises incapacitantes apesar do tratamento agudo."
+  },
+  {
+    "question": "Paciente de 38 anos, hipertenso, tem enxaqueca frequente. Qual profilático é a escolha natural e qual comorbidade o contraindicaria?",
+    "options": [
+      "Propranolol; contraindicado em asma e insuficiência cardíaca",
+      "Propranolol; contraindicado em hipertensão e taquiarritmias",
+      "Flunarizina; contraindicada em asma e insuficiência cardíaca",
+      "Amitriptilina; contraindicada em hipertensão arterial leve"
+    ],
+    "correctIndex": 0,
+    "explanation": "O propranolol (60 a 160 mg/dia, máximo de 240 mg) é o profilático mais usado e estudado e a droga de escolha no hipertenso; pacientes hipotensos dificilmente o toleram. Efeitos: astenia, tontura, hipotensão postural e depressão; FC e PA devem ser controladas. É contraindicado na asma e na insuficiência cardíaca congestiva, e alterações do ritmo cardíaco devem ser bem avaliadas."
+  },
+  {
+    "question": "Uma idosa em uso de flunarizina para enxaqueca passa a apresentar bradicinesia, rigidez e humor deprimido. Qual a explicação mais provável?",
+    "options": [
+      "Impregnação parkinsoniana e depressão induzidas pela flunarizina",
+      "Doença de Parkinson idiopática revelada pela retirada do triptano",
+      "Efeito anticolinérgico da flunarizina sobre os núcleos da base",
+      "Hipotensão postural com hipoperfusão por bloqueio beta-adrenérgico"
+    ],
+    "correctIndex": 0,
+    "explanation": "A flunarizina (5 a 20 mg/dia; jovens toleram bem 10 mg) tem poucos efeitos cardiológicos, mas pode produzir sonolência e, em indivíduos sensíveis, sobretudo idosos, impregnação com quadro parkinsoniano; também pode precipitar depressão. Aconselha-se interromper após três meses, pela possibilidade teórica de discinesia tardia."
+  },
+  {
+    "question": "Homem de 68 anos com hiperplasia prostática e glaucoma precisa de profilaxia para enxaqueca. Qual droga deve ser evitada?",
+    "options": [
+      "Amitriptilina, pelos efeitos anticolinérgicos",
+      "Propranolol, pelo risco de retenção urinária",
+      "Valproato, pelo risco de crise de glaucoma",
+      "Flunarizina, pelo risco de retenção urinária"
+    ],
+    "correctIndex": 0,
+    "explanation": "Os antidepressivos tricíclicos (amitriptilina 25 a 75 mg/dia como profilático) causam boca seca, obstipação, retenção urinária, taquicardia, sonolência ou irritabilidade e ganho de peso. São contraindicados em cardiopatias graves, glaucoma e adenoma de próstata. São especialmente indicados quando há depressão ou ansiedade associadas."
+  },
+  {
+    "question": "Homem de 30 anos com enxaqueca muito frequente e epilepsia vai iniciar profilaxia. Qual droga aproveita a comorbidade e qual exame deve preceder o início?",
+    "options": [
+      "Valproato; função hepática antes de iniciar",
+      "Valproato; função renal e clearance de creatinina",
+      "Flunarizina; eletrocardiograma antes de iniciar",
+      "Metisergida; função tireoidiana antes de iniciar"
+    ],
+    "correctIndex": 0,
+    "explanation": "O ácido valproico e o divalproato (500 a 2.000 mg/dia) são gabaérgicos, anticonvulsivantes e antineurálgicos, especialmente úteis com epilepsia, transtorno bipolar, ansiedade, depressão e cefaleias muito frequentes. Efeitos: sedação, alopecia, tremor, confusão, náuseas; o mais grave é a hepatotoxicidade, por isso se verifica a função hepática antes. Por ser teratogênico, evita-se em mulheres em idade fértil."
+  },
+  {
+    "question": "Paciente com enxaqueca passou a ter cefaleia quase diária e há meses usa, em cerca de 20 dias por mês, um analgésico combinado com cafeína e ergotamina. Qual o diagnóstico mais provável e a conduta?",
+    "options": [
+      "Cefaleia por uso excessivo de medicação; suspender o abuso e iniciar profilaxia",
+      "Enxaqueca crônica refratária; aumentar a dose do analgésico combinado",
+      "Cefaleia tipo tensão crônica; trocar o analgésico por um triptano diário",
+      "Processo expansivo intracraniano; ressonância antes de qualquer conduta"
+    ],
+    "correctIndex": 0,
+    "explanation": "O uso abusivo de ergotamina, triptanos e analgésicos gera cefaleia rebote. Pela ICHD-3, a cefaleia por uso excessivo de medicação exige cefaleia em 15 ou mais dias por mês, em quem já tinha cefaleia, com uso regular por mais de 3 meses de ergóticos, triptanos, opioides ou analgésicos combinados em 10 ou mais dias por mês (ou analgésicos simples em 15 ou mais). A conduta é suspender o abuso — os AINH ajudam na retirada — e iniciar profilaxia."
+  },
+  {
+    "question": "Qual quadro caracteriza a cefaleia do tipo tensão episódica?",
+    "options": [
+      "Dor bilateral em pressão, leve a moderada, sem piora ao subir escadas",
+      "Dor unilateral pulsátil, moderada a forte, que piora ao subir escadas",
+      "Dor orbitária unilateral, muito forte, com lacrimejamento ipsilateral",
+      "Dor bilateral em pressão, forte, com vômitos e fotofobia associados"
+    ],
+    "correctIndex": 0,
+    "explanation": "A cefaleia tipo tensão é descrita como peso, pressão ou constrição, não latejante, frontal, temporal ou frontotemporal, geralmente bilateral, de intensidade fraca a moderada, sem piora com esforço ou movimentos da cabeça. Não há náuseas nem vômitos, e admite-se fotofobia ou fonofobia, mas não as duas. Os principais desencadeantes são emocionais."
+  },
+  {
+    "question": "Mulher de 40 anos tem cefaleia em aperto, bilateral, quase todos os dias há um ano, com humor deprimido e uso diário de analgésicos. Qual a medida terapêutica mais eficaz?",
+    "options": [
+      "Antidepressivo tricíclico, como amitriptilina 50 a 100 mg/dia",
+      "Analgésico comum diário em dose fixa, sem limite de dias",
+      "Triptano oral diário até o desaparecimento completo da dor",
+      "Ergotamina na dose semanal máxima, de forma contínua"
+    ],
+    "correctIndex": 0,
+    "explanation": "É cefaleia tipo tensão crônica (15 ou mais dias por mês), mais comum após os 30 anos, em mulheres, e muitas vezes sintoma de um estado depressivo — 'a ponta de um iceberg depressivo'. Analgésicos atuam pouco e são usados em excesso. Os antidepressivos são a medida mais eficaz, beneficiando cerca de metade dos pacientes, com preferência pela amitriptilina 50 a 100 mg/dia; outros tricíclicos e ISRS também servem."
+  },
+  {
+    "question": "Homem de 28 anos acorda de madrugada, quase sempre no mesmo horário, com dor excruciante atrás do olho direito, lacrimejamento, obstrução nasal e ptose do mesmo lado. Anda pelo quarto, inquieto, e a dor some em cerca de 45 minutos. Isso se repete há três semanas. Qual o diagnóstico?",
+    "options": [
+      "Cefaleia em salvas",
+      "Enxaqueca com aura",
+      "Neuralgia do trigêmeo",
+      "Arterite temporal"
+    ],
+    "correctIndex": 0,
+    "explanation": "A cefaleia em salvas é muito mais comum em homens, com primeiro surto entre 20 e 30 anos. A dor é periorbitária, sempre do mesmo lado, intolerável, dura 15 a 180 minutos, recorre no mesmo horário e acorda o paciente; vem com congestão conjuntival, lacrimejamento e obstrução nasal ipsilaterais, e em 30% com miose e semiptose (Horner). O paciente fica inquieto, ao contrário do enxaquecoso, e as crises se agrupam em surtos de 3 a 8 semanas."
+  },
+  {
+    "question": "Na crise de cefaleia em salvas, quais são as opções sintomáticas mais eficazes?",
+    "options": [
+      "Sumatriptano 6 mg subcutâneo e oxigênio a 100% sob máscara",
+      "Paracetamol oral e dipirona oral em dose plena e precoce",
+      "Propranolol oral e flunarizina oral no início da dor",
+      "Sumatriptano 50 mg oral e ergotamina oral em dose única"
+    ],
+    "correctIndex": 0,
+    "explanation": "Analgésicos têm pouco ou nenhum efeito, e a via oral é lenta demais para crises de 15 a 180 minutos. O sintomático mais eficaz é o sumatriptano subcutâneo 6 mg (alternativa: spray nasal 20 mg). O oxigênio inalado também aborta crises: esquemas antigos usavam 7 L/min, com resposta em cerca de metade dos casos; hoje se recomenda O₂ a 100% em alto fluxo (12 a 15 L/min), com máscara não reinalante, por 15 a 20 minutos."
+  },
+  {
+    "question": "Na cefaleia em salvas, qual opção serve para interromper o surto e qual é indicada na forma crônica?",
+    "options": [
+      "Verapamil ou corticoide no surto; carbonato de lítio na forma crônica",
+      "Propranolol ou pizotifeno no surto; amitriptilina na forma crônica",
+      "Sumatriptano oral contínuo no surto; ergotamina diária na crônica",
+      "Analgésico fixo no surto; fluoxetina em dose alta na forma crônica"
+    ],
+    "correctIndex": 0,
+    "explanation": "Para interromper o surto usam-se corticoides, verapamil, derivados do ergot (metisergida) e ácido valproico — eficazes sobretudo nos primeiros surtos; hoje o verapamil é o preventivo de primeira linha. Na forma crônica (crises por mais de um ano sem remissão, ou com remissões curtas), preconiza-se o carbonato de lítio; valproato, mirtazapina e topiramato também podem ser úteis."
+  },
+  {
+    "question": "Mulher de 72 anos tem cefaleia temporal há três semanas, dor ao mastigar, artéria temporal espessada e dolorosa e VHS de 95 mm. Qual a conduta imediata?",
+    "options": [
+      "Prednisona 1 mg/kg/dia já, sem esperar a biópsia da artéria",
+      "Biópsia da temporal e corticoide só após o resultado do exame",
+      "Triptano subcutâneo e reavaliação se a dor persistir em 48 h",
+      "AINE em dose plena e repetição da VHS em quatro semanas"
+    ],
+    "correctIndex": 0,
+    "explanation": "Cefaleia de início após os 50 anos, claudicação da mandíbula, artéria temporal espessada e VHS elevada (acima de 40 mm na maioria, podendo passar de 100) sugerem arterite temporal. A corticoterapia precoce previne a perda visual por acometimento de ramos da artéria oftálmica, por isso não se espera a biópsia. Prednisona 1 mg/kg/dia, reduzida até manutenção de até 10 mg; a dor costuma sumir em 48 horas. Na perda visual em curso, pulsos de metilprednisolona 1 g/dia por 3 dias."
+  },
+  {
+    "question": "Homem de 45 anos sente, durante esforço físico, uma cefaleia súbita que atinge a intensidade máxima em segundos — 'a pior dor da vida'. O exame neurológico é normal. Qual a sequência diagnóstica adequada?",
+    "options": [
+      "TC de crânio sem contraste; se normal, punção lombar",
+      "Punção lombar primeiro; se normal, TC com contraste",
+      "Analgesia e alta, já que o exame neurológico é normal",
+      "Ressonância eletiva ambulatorial em até 30 dias"
+    ],
+    "correctIndex": 0,
+    "explanation": "Cefaleia em trovoada (pico em menos de 1 minuto) é hemorragia subaracnóidea até prova em contrário, mesmo com exame neurológico normal; a causa não traumática mais comum é a ruptura de aneurisma sacular. A TC sem contraste tem alta sensibilidade nas primeiras horas; se normal, faz-se punção lombar em busca de hemácias e xantocromia, e, confirmado o sangramento, angiografia. A cefaleia benigna do esforço só é aceita depois dessa exclusão."
+  }
+];
+
+var LETTERS = ['A','B','C','D','E','F'];
+var SHUFFLE = true, LOCK = true;
+
+var S = { view:'home', started:false, finished:false, i:0, order:[], answers:[], open:{}, filter:'all', warn:false, chat:{} };
+
+function esc(s){ return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
+function pad(n){ return String(n).padStart(2,'0'); }
+
+function build(){
+  var qs = QUIZ.map(function(q,id){ return { question:q.question, options:q.options.slice(), correctIndex:q.correctIndex, explanation:q.explanation, image:q.image, imageCaption:q.imageCaption, id:id }; });
+  if (!SHUFFLE) return qs;
+  for (var i=qs.length-1;i>0;i--){ var j=Math.floor(Math.random()*(i+1)); var t=qs[i]; qs[i]=qs[j]; qs[j]=t; }
+  return qs.map(function(q){
+    var correct = q.options[q.correctIndex], o = q.options.slice();
+    for (var i=o.length-1;i>0;i--){ var j=Math.floor(Math.random()*(i+1)); var t=o[i]; o[i]=o[j]; o[j]=t; }
+    q.options = o; q.correctIndex = o.indexOf(correct); return q;
+  });
+}
+
+/* ── ações ─────────────────────────────────────────────────────────────────── */
+var A = {
+  home:      function(){ S.view='home'; S.started=false; S.finished=false; up(0); },
+  resumo:    function(){ S.view='resumo'; up(0); },
+  start:     function(){ var o=build(); S.view='quiz'; S.started=true; S.finished=false; S.i=0; S.order=o;
+                         S.answers=new Array(o.length).fill(null); S.open={}; S.filter='all'; S.warn=false; up(0); },
+  restart:   function(){ A.start(); },
+  sair:      function(){ S.view='home'; S.started=false; up(0); },   // guarda as respostas
+  retomar:   function(){ S.view='quiz'; S.started=true; S.finished=false; S.warn=false; up(0); },
+  go:        function(n){ if(n<0||n>S.order.length-1) return; S.i=n; S.warn=false; render(); },
+  jump:      function(n){ if(S.finished){ S.finished=false; S.i=n; S.warn=false; } else { if(n<0||n>S.order.length-1) return; S.i=n; S.warn=false; } up(0,'smooth'); },
+  pick:      function(n){ if(LOCK && S.answers[S.i]!==null) return; S.answers[S.i]=n; render(); },
+  prev:      function(){ A.go(S.i-1); },
+  next:      function(){ if(S.i<S.order.length-1) A.go(S.i+1); else A.finish(); },
+  finish:    function(){ var b=S.answers.filter(function(a){return a===null}).length;
+                         if(b>0 && !S.warn){ S.warn=true; render(); return; } S.finished=true; S.warn=false; up(0); },
+  force:     function(){ S.finished=true; S.warn=false; up(0); },
+  gotoBlank: function(){ var n=S.answers.findIndex(function(a){return a===null}); if(n>=0) A.go(n); },
+  back:      function(){ S.finished=false; S.warn=false; up(0); },
+  filter:    function(k){ S.filter=k; render(); },
+  toggle:    function(n){ S.open[n]=!S.open[n]; render(); },
+  toggleAll: function(){ var r=reviewList(), all=r.length>0 && r.every(function(x){return S.open[x.idx]});
+                         S.open={}; if(!all) r.forEach(function(x){ S.open[x.idx]=true; }); render(); }
+};
+function up(top, beh){ render(); window.scrollTo({ top: top||0, behavior: beh||'auto' }); }
+
+/* Aberto por duplo clique (file://) volta para o indice local; servido pela web,
+   volta para o publicado. Os dois listam os mesmos materiais. */
+function idxHref(){
+  var local = (typeof location !== 'undefined' && location.protocol === 'file:');
+  return local ? '../index_local.html' : '../index.html';
+}
+function emAndamento(){
+  return S.order.length > 0 && !S.finished &&
+         S.answers.some(function(a){ return a !== null; });
+}
+
+/* ── header ────────────────────────────────────────────────────────────────── */
+function renderHeader(){
+  var mono = "font-family:'IBM Plex Mono',monospace";
+  var left =
+    '<div style="min-width:0">' +
+      '<div style="display:flex;align-items:center;gap:8px;'+mono+';font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:#8a8578">' +
+        '<a href="'+idxHref()+'" class="h-ink" style="color:#2b57cc;text-decoration:none;white-space:nowrap">\u2190 Materiais</a>' +
+        '<span style="color:#d3cec4">/</span>' +
+        '<span style="overflow:hidden;text-overflow:ellipsis;white-space:nowrap">'+esc(EYEBROW)+'</span>' +
+      '</div>' +
+      '<h1 style="margin:1px 0 0;font-family:\'Newsreader\',Georgia,serif;font-size:20px;font-weight:500;letter-spacing:-.01em;line-height:1.15">'+esc(TITLE)+'</h1>' +
+    '</div>';
+
+  var right = '';
+  if (S.view === 'quiz' && S.started) {
+    var hit = counts().hit;
+    right = '<div style="display:flex;align-items:center;gap:10px;flex-shrink:0">' +
+              '<button type="button" data-act="sair" class="h-line" style="background:none;border:1px solid #ddd8ce;border-radius:9px;padding:6px 11px;'+mono+';font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;color:#5b6478;cursor:pointer;transition:border-color .15s ease">Sair</button>' +
+              '<div style="display:flex;align-items:center;gap:6px">' +
+                '<span style="'+mono+';font-size:15px;font-weight:600;letter-spacing:-.02em">'+hit+'</span>' +
+                '<span style="'+mono+';font-size:11px;color:#8a8578">/ '+S.order.length+'</span>' +
+              '</div></div>';
+  } else if (S.view !== 'home') {
+    right = '<button type="button" data-act="home" class="h-line" style="flex-shrink:0;background:none;border:1px solid #ddd8ce;border-radius:9px;padding:7px 13px;'+mono+';font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:#5b6478;cursor:pointer;transition:border-color .15s ease">← Início</button>';
+  }
+
+  var html = '<div style="display:flex;align-items:baseline;justify-content:space-between;gap:12px;margin-bottom:'+(S.view==='quiz'&&S.started?'10px':'2px')+'">'+left+right+'</div>';
+
+  if (S.view === 'quiz' && S.started) {
+    var c = counts();
+    var rail = S.order.map(function(q,n){
+      var a = S.answers[n], cur = n===S.i && !S.finished, bg = '#d3cec4';
+      if (a!==null) bg = (a===q.correctIndex) ? '#2e7d55' : '#c04437';
+      if (cur && a===null) bg = '#121a2b';
+      var st = a===null ? 'em branco' : (a===q.correctIndex ? 'correta' : 'incorreta');
+      return '<button type="button" data-act="jump" data-n="'+n+'" title="Questão '+(n+1)+' — '+st+'" aria-label="Questão '+(n+1)+' — '+st+'" style="flex:1 1 0;min-width:0;background:none;border:0;padding:13px 0;margin:0;cursor:pointer;display:flex;align-items:center;justify-content:center">' +
+             '<span style="display:block;width:100%;border-radius:99px;transition:height .18s ease,background .18s ease,box-shadow .18s ease;height:'+(cur?'17px':'9px')+';background:'+bg+';box-shadow:'+(cur?'0 0 0 3px rgba(18,26,43,.13)':'none')+'"></span></button>';
+    }).join('');
+    html += '<div><div style="display:flex;align-items:center;gap:3px">'+rail+'</div>' +
+            '<div style="display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:-2px">' +
+              '<div style="'+mono+';font-size:11px;letter-spacing:.04em;color:#5b6478">Questão '+pad(S.i+1)+' / '+S.order.length+'</div>' +
+              '<div style="display:flex;align-items:center;gap:12px;'+mono+';font-size:10.5px;color:#8a8578">' +
+                dot('#2e7d55',c.hit)+dot('#c04437',c.miss)+dot('#d3cec4',c.blank) +
+              '</div></div></div>';
+  }
+  document.getElementById('hdr').innerHTML = html;
+}
+function dot(color,n){ return '<span style="display:flex;align-items:center;gap:5px"><span style="width:7px;height:7px;border-radius:99px;background:'+color+';display:block"></span>'+n+'</span>'; }
+
+function counts(){
+  var hit=0, miss=0, blank=0;
+  S.answers.forEach(function(a,n){
+    if (a===null) blank++;
+    else if (S.order[n] && a===S.order[n].correctIndex) hit++;
+    else miss++;
+  });
+  return { hit:hit, miss:miss, blank:blank, total:S.order.length };
+}
+
+/* ── tela inicial ──────────────────────────────────────────────────────────── */
+function renderHome(){
+  var mono = "font-family:'IBM Plex Mono',monospace";
+  var secoes = (document.getElementById('resumoSrc').textContent.match(/<h2/g)||[]).length;
+  var cell = function(v,l){
+    return '<div style="background:#faf9f6;padding:16px 14px">' +
+      '<div style="'+mono+';font-size:22px;font-weight:500;letter-spacing:-.03em">'+v+'</div>' +
+      '<div style="'+mono+';font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:#8a8578;margin-top:3px">'+l+'</div></div>';
+  };
+  var card = function(act,tag,titulo,desc,cta){
+    return '<button type="button" data-act="'+act+'" class="h-card" style="display:flex;flex-direction:column;align-items:flex-start;gap:0;text-align:left;background:#fff;border:1px solid #e4e0d8;border-radius:18px;padding:24px 22px;cursor:pointer;transition:border-color .16s ease,transform .14s ease;box-shadow:0 1px 2px rgba(18,26,43,.04),0 12px 28px -20px rgba(18,26,43,.18)">' +
+      '<div style="'+mono+';font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:#2b57cc;margin-bottom:12px">'+tag+'</div>' +
+      '<div style="font-family:\'Newsreader\',Georgia,serif;font-size:26px;font-weight:500;letter-spacing:-.02em;line-height:1.15;margin-bottom:8px">'+titulo+'</div>' +
+      '<div style="font-size:14px;line-height:1.6;color:#5b6478;margin-bottom:18px;text-wrap:pretty">'+desc+'</div>' +
+      '<div style="'+mono+';font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:#121a2b">'+cta+'</div></button>';
+  };
+
+  document.getElementById('stage').innerHTML =
+    '<section style="padding:56px 0 0;animation:qFade .3s ease">' +
+      '<div style="'+mono+';font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:#2b57cc;margin-bottom:16px">Material de revisão</div>' +
+      '<h2 style="font-family:\'Newsreader\',Georgia,serif;font-size:40px;line-height:1.08;font-weight:400;letter-spacing:-.025em;margin:0 0 18px;text-wrap:pretty">'+esc(SUBTITLE)+'</h2>' +
+      '<p style="font-size:15.5px;line-height:1.65;color:#5b6478;margin:0 0 30px;max-width:52ch;text-wrap:pretty">'+esc(INTRO)+'</p>' +
+      '<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(108px,1fr));gap:1px;background:#e4e0d8;border:1px solid #e4e0d8;border-radius:14px;overflow:hidden;margin-bottom:32px">' +
+        cell(QUIZ.length,'Questões') + cell(secoes,'Seções') + cell('~'+Math.round(QUIZ.length*0.75),'Minutos') +
+      '</div>' +
+      '<div class="home-grid" style="display:grid;grid-template-columns:1fr 1fr;gap:12px">' +
+        (emAndamento()
+          ? card('retomar','Em andamento','Quiz',
+                 'Você parou na questão '+pad(S.i+1)+' de '+S.order.length+', com '+
+                 (S.order.length-counts().blank)+' respondida'+((S.order.length-counts().blank)===1?'':'s')+
+                 '. Suas respostas continuam guardadas.','Retomar →')
+          : card('start','Praticar','Quiz', QUIZ.length+' questões de múltipla escolha, com explicação assim que você responde e gabarito comentado no fim.','Começar →')) +
+        card('resumo','Estudar','Resumo','O conteúdo da aula em texto corrido, organizado em '+secoes+' seções para leitura antes da prova.','Ler →') +
+      '</div>' +
+      '<div style="margin-top:26px;display:flex;flex-wrap:wrap;align-items:center;gap:8px 18px;'+mono+';font-size:11px;color:#8a8578">' +
+        '<span>← →&nbsp; navegar</span><span>1–'+maxOpts()+'&nbsp; responder</span><span>Enter&nbsp; avançar</span>' +
+        (emAndamento() ? '<button type="button" data-act="start" class="h-ink" style="background:none;border:0;padding:0;'+mono+';font-size:11px;color:#8a8578;cursor:pointer;text-decoration:underline;text-underline-offset:3px">recomeçar do zero</button>' : '') +
+        '</div>' +
+    '</section>';
+}
+function maxOpts(){ return QUIZ.reduce(function(m,q){ return Math.max(m,q.options.length); },0); }
+
+/* ── resumo ────────────────────────────────────────────────────────────────── */
+function renderResumo(){
+  document.getElementById('stage').innerHTML =
+    '<section style="padding:34px 0 0;animation:qFade .3s ease">' +
+      '<div style="font-family:\'IBM Plex Mono\',monospace;font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:#2b57cc;margin-bottom:14px">Resumo</div>' +
+      '<div class="rsm">' + document.getElementById('resumoSrc').textContent + '</div>' +
+      '<div style="display:flex;flex-wrap:wrap;gap:9px;margin-top:38px;padding-top:24px;border-top:1px solid #e4e0d8">' +
+        '<button type="button" data-act="start" class="h-darkflat" style="background:#121a2b;color:#f5f3ef;border:0;border-radius:11px;padding:13px 24px;font-size:14px;font-weight:500;cursor:pointer;transition:background .16s ease">Fazer o quiz →</button>' +
+        '<button type="button" data-act="home" class="h-line" style="background:none;border:1px solid #ddd8ce;border-radius:11px;padding:13px 22px;font-size:14px;cursor:pointer;transition:border-color .15s ease">Voltar ao início</button>' +
+      '</div></section>';
+}
+
+/* imagem da questao — data URI ja resolvida pelo montar_quiz.py */
+function figura(q, cls){
+  if (!q.image) return '';
+  return '<figure class="fig'+(cls?' '+cls:'')+'"><img src="'+q.image+'" alt="'+esc(q.imageCaption||'Imagem da questão')+'">' +
+         (q.imageCaption ? '<figcaption>'+esc(q.imageCaption)+'</figcaption>' : '') + '</figure>';
+}
+
+/* ── questão ───────────────────────────────────────────────────────────────── */
+function renderQuestion(){
+  var mono = "font-family:'IBM Plex Mono',monospace";
+  var q = S.order[S.i], ans = S.answers[S.i], reveal = ans !== null;
+
+  var status = 'Não respondida', sColor = '#8a8578';
+  if (reveal) { var ok = ans===q.correctIndex; status = ok?'Você acertou':'Você errou'; sColor = ok?'#2e7d55':'#c04437'; }
+
+  var opts = q.options.map(function(text,n){
+    var isC = n===q.correctIndex, isMine = n===ans;
+    var bd='#e4e0d8', bg='#fff', fg='#121a2b', bBg='#f2efe9', bFg='#8a8578', mark='', mColor='', op='1', hbd='#2b57cc';
+    if (reveal) {
+      op = (isC||isMine) ? '1' : '.62';
+      if (isC)               { bd='#8fc7a7'; bg='#eef7f1'; fg='#1f5c3e'; bBg='#2e7d55'; bFg='#fff'; mark='✓'; mColor='#2e7d55'; }
+      if (isMine && !isC)    { bd='#e0a49a'; bg='#fdf0ee'; fg='#8f2f25'; bBg='#c04437'; bFg='#fff'; mark='✕'; mColor='#c04437'; }
+    } else if (isMine)       { bd='#121a2b'; bg='#f7f6f2'; bBg='#121a2b'; bFg='#f5f3ef'; }
+    var locked = reveal && LOCK;
+    return '<button type="button" data-act="pick" data-n="'+n+'" class="h-opt'+(locked?' locked':'')+'" style="--hbd:'+hbd+';display:flex;gap:13px;align-items:flex-start;width:100%;text-align:left;padding:14px 15px;border-radius:13px;font-size:15px;line-height:1.5;transition:border-color .15s ease,background .15s ease,transform .12s ease;border:1.5px solid '+bd+';background:'+bg+';color:'+fg+';cursor:'+(locked?'default':'pointer')+';opacity:'+op+'">' +
+      '<span style="flex-shrink:0;width:24px;height:24px;border-radius:7px;display:flex;align-items:center;justify-content:center;'+mono+';font-size:11.5px;font-weight:600;margin-top:1px;background:'+bBg+';color:'+bFg+'">'+LETTERS[n]+'</span>' +
+      '<span style="flex:1;min-width:0;text-wrap:pretty">'+esc(text)+'</span>' +
+      (mark ? '<span style="flex-shrink:0;'+mono+';font-size:14px;font-weight:600;margin-top:1px;color:'+mColor+'">'+mark+'</span>' : '') +
+      '</button>';
+  }).join('');
+
+  var expl = reveal ? '<div style="margin-top:20px;padding:16px 18px;background:#f7f6f2;border-left:2.5px solid #2b57cc;border-radius:0 12px 12px 0;animation:qFade .26s ease">' +
+      '<div style="'+mono+';font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:#2b57cc;margin-bottom:8px">Por quê</div>' +
+      '<p style="margin:0;font-size:14.5px;line-height:1.68;color:#39404f;text-wrap:pretty">'+esc(q.explanation)+'</p></div>' : '';
+
+  var blank = counts().blank;
+  var warn = S.warn ? '<div style="margin-top:14px;padding:15px 17px;background:#fdf7e9;border:1px solid #e8d5a3;border-radius:14px;animation:qFade .22s ease">' +
+      '<p style="margin:0 0 12px;font-size:14px;line-height:1.55;color:#6b5620">'+blank+(blank===1?' questão ainda está em branco.':' questões ainda estão em branco.')+' Você pode voltar nelas ou finalizar assim mesmo.</p>' +
+      '<div style="display:flex;flex-wrap:wrap;gap:8px">' +
+        '<button type="button" data-act="gotoBlank" style="background:#121a2b;color:#f5f3ef;border:0;border-radius:9px;padding:9px 16px;font-size:13px;font-weight:500;cursor:pointer">Ir para a 1ª em branco</button>' +
+        '<button type="button" data-act="force" style="background:none;color:#6b5620;border:1px solid #e8d5a3;border-radius:9px;padding:9px 16px;font-size:13px;cursor:pointer">Finalizar assim mesmo</button>' +
+      '</div></div>' : '';
+
+  var last = S.i === S.order.length-1;
+  var early = !last && (S.order.length - blank) > 0;
+
+  document.getElementById('stage').innerHTML =
+    '<section style="padding:26px 0 0">' +
+      '<article style="background:#fff;border:1px solid #e4e0d8;border-radius:18px;padding:26px 22px 24px;box-shadow:0 1px 2px rgba(18,26,43,.04),0 12px 28px -18px rgba(18,26,43,.18)">' +
+        '<div style="display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:14px">' +
+          '<div style="'+mono+';font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:#2b57cc">Questão '+pad(S.i+1)+'</div>' +
+          '<div style="'+mono+';font-size:10.5px;letter-spacing:.06em;color:'+sColor+'">'+status+'</div>' +
+        '</div>' +
+        '<h2 style="font-family:\'Newsreader\',Georgia,serif;font-size:22px;line-height:1.42;font-weight:400;letter-spacing:-.012em;margin:0 0 22px;text-wrap:pretty">'+esc(q.question)+'</h2>' +
+        figura(q, 'qfig') +
+        '<div style="display:flex;flex-direction:column;gap:9px">'+opts+'</div>' + expl +
+        (reveal ? chatBox(q, ans===q.correctIndex) : '') +
+      '</article>' + warn +
+      '<div style="display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:18px">' +
+        '<button type="button" data-act="prev" class="h-line" style="background:none;border:1px solid #ddd8ce;border-radius:11px;padding:12px 18px;font-size:14px;cursor:pointer;transition:border-color .15s ease,color .15s ease;color:'+(S.i===0?'#c4bfb4':'#121a2b')+';pointer-events:'+(S.i===0?'none':'auto')+'">← Anterior</button>' +
+        '<div style="display:flex;align-items:center;gap:8px">' +
+          (early ? '<button type="button" data-act="finish" class="h-ink" style="background:none;border:0;padding:12px 6px;'+mono+';font-size:11.5px;letter-spacing:.06em;text-transform:uppercase;color:#8a8578;cursor:pointer;text-decoration:underline;text-underline-offset:3px">Finalizar</button>' : '') +
+          '<button type="button" data-act="next" class="h-darkflat" style="background:#121a2b;color:#f5f3ef;border:0;border-radius:11px;padding:12px 22px;font-size:14px;font-weight:500;cursor:pointer;transition:background .16s ease">'+(last?'Finalizar':'Próxima →')+'</button>' +
+        '</div></div></section>';
+}
+
+/* ── resultado + gabarito comentado ────────────────────────────────────────── */
+function reviewList(){
+  return S.order.map(function(q,n){
+    var a = S.answers[n], ok = a!==null && a===q.correctIndex;
+    return { idx:n, ok:ok, blank:a===null, q:q, a:a };
+  }).filter(function(r){
+    return S.filter==='all' || (S.filter==='wrong'&&!r.ok&&!r.blank) || (S.filter==='right'&&r.ok) || (S.filter==='blank'&&r.blank);
+  });
+}
+
+function renderResult(){
+  var mono = "font-family:'IBM Plex Mono',monospace";
+  var c = counts(), pct = c.total ? Math.round(c.hit/c.total*100) : 0;
+
+  var title='Precisa revisar', msg='Releia o material com atenção e refaça o quiz — as explicações abaixo cobrem cada erro.';
+  if (pct>=90)      { title='Domínio sólido';   msg='Desempenho excelente. Confira as explicações das que escaparam e siga em frente.'; }
+  else if (pct>=70) { title='Bom desempenho';   msg='Base consistente. Revise os pontos errados abaixo para fechar as lacunas.'; }
+  else if (pct>=50) { title='Meio do caminho';  msg='Você acertou o essencial, mas há lacunas. Comece pelo filtro de erradas.'; }
+
+  var stat = function(v,l,color){
+    return '<div style="background:#faf9f6;padding:14px 10px">' +
+      '<div style="'+mono+';font-size:19px;font-weight:500;color:'+color+'">'+v+'</div>' +
+      '<div style="'+mono+';font-size:9.5px;letter-spacing:.09em;text-transform:uppercase;color:#8a8578;margin-top:2px">'+l+'</div></div>';
+  };
+
+  var fdefs = [['all','Todas',c.total],['wrong','Erradas',c.miss],['right','Certas',c.hit],['blank','Em branco',c.blank]];
+  var filters = fdefs.map(function(f){
+    var on = S.filter===f[0];
+    return '<button type="button" data-act="filter" data-k="'+f[0]+'" class="h-line" style="border-radius:99px;padding:8px 14px;font-size:13px;cursor:pointer;transition:all .15s ease;border:1px solid '+(on?'#121a2b':'#ddd8ce')+';background:'+(on?'#121a2b':'transparent')+';color:'+(on?'#f5f3ef':'#5b6478')+'">'+f[1]+' '+f[2]+'</button>';
+  }).join('');
+
+  var list = reviewList();
+  var allOpen = list.length>0 && list.every(function(r){ return S.open[r.idx]; });
+
+  var cards = list.map(function(r){
+    var numBg='#f0ede7', numFg='#8a8578';
+    if (!r.blank) { if (r.ok) { numBg='#e3f0e8'; numFg='#1f5c3e'; } else { numBg='#fbe6e2'; numFg='#8f2f25'; } }
+    var open = !!S.open[r.idx];
+    var body = '';
+    if (open) {
+      var opts = r.q.options.map(function(text,n){
+        var isC = n===r.q.correctIndex, isMine = n===r.a;
+        var bd='#eeebe4', bg='#fbfaf8', fg='#5b6478', bBg='#f0ede7', bFg='#8a8578', tag='', tBg='', tFg='';
+        if (isC)            { bd='#bcdcc9'; bg='#eef7f1'; fg='#1f5c3e'; bBg='#2e7d55'; bFg='#fff'; tag='Correta'; tBg='#d9ede1'; tFg='#1f5c3e'; }
+        if (isMine && !isC) { bd='#eec4bd'; bg='#fdf0ee'; fg='#8f2f25'; bBg='#c04437'; bFg='#fff'; tag='Sua resposta'; tBg='#f7ddd8'; tFg='#8f2f25'; }
+        if (isMine && isC)  { tag='Sua resposta ✓'; }
+        return '<div style="display:flex;gap:11px;align-items:flex-start;padding:11px 13px;border-radius:11px;font-size:14px;line-height:1.5;border:1px solid '+bd+';background:'+bg+';color:'+fg+'">' +
+          '<span style="flex-shrink:0;width:21px;height:21px;border-radius:6px;display:flex;align-items:center;justify-content:center;'+mono+';font-size:10.5px;font-weight:600;background:'+bBg+';color:'+bFg+'">'+LETTERS[n]+'</span>' +
+          '<span style="flex:1;min-width:0;text-wrap:pretty">'+esc(text)+'</span>' +
+          (tag ? '<span style="flex-shrink:0;'+mono+';font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;padding:3px 7px;border-radius:6px;margin-top:1px;background:'+tBg+';color:'+tFg+'">'+tag+'</span>' : '') +
+          '</div>';
+      }).join('');
+      body = '<div style="padding:2px 15px 18px;animation:qDrawer .2s ease">' +
+        '<div style="height:1px;background:#eeebe4;margin:0 0 16px"></div>' +
+        '<p style="font-family:\'Newsreader\',Georgia,serif;font-size:18px;line-height:1.5;margin:0 0 16px;text-wrap:pretty">'+esc(r.q.question)+'</p>' +
+        figura(r.q) +
+        '<div style="display:flex;flex-direction:column;gap:7px">'+opts+'</div>' +
+        '<div style="margin-top:16px;padding:14px 16px;background:#f7f6f2;border-left:2.5px solid #2b57cc;border-radius:0 11px 11px 0">' +
+          '<div style="'+mono+';font-size:9.5px;letter-spacing:.16em;text-transform:uppercase;color:#2b57cc;margin-bottom:7px">Por quê</div>' +
+          '<p style="margin:0;font-size:14px;line-height:1.65;color:#39404f;text-wrap:pretty">'+esc(r.q.explanation)+'</p></div>' +
+        '<button type="button" data-act="jump" data-n="'+r.idx+'" style="margin-top:14px;background:none;border:0;padding:0;'+mono+';font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:#2b57cc;cursor:pointer;text-decoration:underline;text-underline-offset:3px">Abrir no quiz →</button></div>';
+    }
+    return '<div style="background:#fff;border:1px solid '+(open?'#c9c3b6':'#e4e0d8')+';border-radius:14px;overflow:hidden;transition:border-color .15s ease">' +
+      '<button type="button" data-act="toggle" data-n="'+r.idx+'" style="display:flex;align-items:center;gap:12px;width:100%;text-align:left;background:none;border:0;padding:14px 15px;cursor:pointer">' +
+        '<span style="flex-shrink:0;width:28px;height:28px;border-radius:8px;display:flex;align-items:center;justify-content:center;'+mono+';font-size:12px;font-weight:600;background:'+numBg+';color:'+numFg+'">'+pad(r.idx+1)+'</span>' +
+        '<span style="flex:1;min-width:0;font-size:14px;line-height:1.45;color:#39404f;overflow:hidden;text-overflow:ellipsis;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical">'+esc(r.q.question)+'</span>' +
+        '<span style="flex-shrink:0;'+mono+';font-size:16px;color:#8a8578;width:16px;text-align:center">'+(open?'−':'+')+'</span>' +
+      '</button>' + body + '</div>';
+  }).join('');
+
+  document.getElementById('stage').innerHTML =
+    '<section style="padding:34px 0 0;animation:qFade .3s ease">' +
+      '<div style="'+mono+';font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:#2b57cc;margin-bottom:14px">Resultado</div>' +
+      '<h2 style="font-family:\'Newsreader\',Georgia,serif;font-size:36px;line-height:1.12;font-weight:400;letter-spacing:-.025em;margin:0 0 8px">'+title+'</h2>' +
+      '<p style="font-size:15px;line-height:1.6;color:#5b6478;margin:0 0 24px;max-width:48ch;text-wrap:pretty">'+msg+'</p>' +
+      '<div style="height:8px;border-radius:99px;background:#e4e0d8;overflow:hidden;margin-bottom:10px">' +
+        '<div style="height:100%;border-radius:99px;background:#121a2b;transition:width .7s cubic-bezier(.22,1,.36,1);width:'+pct+'%"></div></div>' +
+      '<div style="display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:#e4e0d8;border:1px solid #e4e0d8;border-radius:14px;overflow:hidden;margin-bottom:34px">' +
+        stat(c.hit,'Certas','#2e7d55')+stat(c.miss,'Erradas','#c04437')+stat(c.blank,'Branco','#8a8578')+stat(pct+'%','Aproveit.','#2b57cc') +
+      '</div>' +
+      '<div style="display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-bottom:14px">' +
+        '<h3 style="font-family:\'Newsreader\',Georgia,serif;font-size:22px;font-weight:500;letter-spacing:-.015em;margin:0">Gabarito comentado</h3>' +
+        '<button type="button" data-act="toggleAll" class="h-ink" style="background:none;border:0;padding:6px 0;'+mono+';font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:#5b6478;cursor:pointer;text-decoration:underline;text-underline-offset:3px">'+(allOpen?'Recolher tudo':'Expandir tudo')+'</button>' +
+      '</div>' +
+      '<div style="display:flex;gap:7px;flex-wrap:wrap;margin-bottom:16px">'+filters+'</div>' +
+      '<div style="display:flex;flex-direction:column;gap:8px">'+cards+'</div>' +
+      (list.length===0 ? '<div style="padding:38px 16px;text-align:center;color:#8a8578;font-size:14px;border:1px dashed #ddd8ce;border-radius:14px">Nenhuma questão neste filtro.</div>' : '') +
+      '<div style="display:flex;flex-wrap:wrap;gap:9px;margin-top:28px;padding-top:24px;border-top:1px solid #e4e0d8">' +
+        '<button type="button" data-act="restart" class="h-darkflat" style="background:#121a2b;color:#f5f3ef;border:0;border-radius:11px;padding:13px 24px;font-size:14px;font-weight:500;cursor:pointer;transition:background .16s ease">Refazer o quiz</button>' +
+        '<button type="button" data-act="back" class="h-line" style="background:none;border:1px solid #ddd8ce;border-radius:11px;padding:13px 22px;font-size:14px;cursor:pointer;transition:border-color .15s ease">Voltar às questões</button>' +
+        '<button type="button" data-act="resumo" class="h-line" style="background:none;border:1px solid #ddd8ce;border-radius:11px;padding:13px 22px;font-size:14px;cursor:pointer;transition:border-color .15s ease">Ler o resumo</button>' +
+      '</div></section>';
+}
+
+/* ── render + eventos ──────────────────────────────────────────────────────── */
+
+/* ─── Tutor DeepSeek — só local, só quando a questão foi errada ──────────────
+   A chave vem de ../deepseek_key.js, que não existe na versão publicada: online
+   o arquivo dá 404, dsOn() vira false e o chat simplesmente não é renderizado.
+   O histórico fica em S.chat[idDaQuestao] e sobrevive ao re-render do stage. */
+var DS_MODEL = 'deepseek-flash';
+var DS_URL   = 'https://api.deepseek.com/chat/completions';
+var NLJS     = String.fromCharCode(10);
+var DS_MONO  = "font-family:'IBM Plex Mono',monospace";
+var DS_SANS  = "font-family:'IBM Plex Sans',system-ui,sans-serif";
+
+function dsOn(){ return typeof window.DEEPSEEK_KEY === 'string' && window.DEEPSEEK_KEY.length > 10; }
+
+
+/* ─── markdown do chat ───────────────────────────────────────────────────────
+   O modelo responde em markdown (**negrito**, listas, `codigo`, tabelas). O texto
+   vem de fora, entao a ordem importa: ESCAPA TUDO primeiro com esc() e so depois
+   aplica formatacao — assim nenhuma tag vinda da resposta vira HTML de verdade.
+   Como esc() ja trocou > por &gt;, a citacao casa com &gt; e nao com >.
+   Trechos de codigo saem de cena por um marcador NUL, que nao pode existir
+   no texto escapado, e voltam no fim — assim ` ` protege o que esta dentro. */
+function mdIn(t){
+  var Z = String.fromCharCode(0), codes = [];
+  t = t.replace(/`([^`]+)`/g, function(_, c){
+    codes.push(c);
+    return Z + 'c' + (codes.length - 1) + Z;
+  });
+  t = t.replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>');
+  t = t.replace(/__([^_]+)__/g, '<strong>$1</strong>');
+  t = t.replace(/(^|[\s(])\*([^*\n]+)\*/g, '$1<em>$2</em>');
+  t = t.replace(/(^|[\s(])_([^_\n]+)_/g, '$1<em>$2</em>');
+  t = t.replace(/\[([^\]]+)\]\((https?:\/\/[^)\s]+)\)/g,
+    '<a href="$2" target="_blank" rel="noopener" style="color:#2b57cc">$1</a>');
+  return t.replace(new RegExp(Z + 'c([0-9]+)' + Z, 'g'), function(_, i){
+    return '<code style="' + DS_MONO + ';font-size:12px;background:#f2efe9;' +
+           'border-radius:4px;padding:1px 5px">' + codes[i] + '</code>';
+  });
+}
+
+function mdChat(txt){
+  var Z = String.fromCharCode(0);
+  var t = esc(String(txt == null ? '' : txt));
+  var blocos = [];
+  t = t.replace(/```[a-zA-Z]*\n?([\s\S]*?)```/g, function(_, c){
+    blocos.push(c.replace(/\n+$/, ''));
+    return Z + 'b' + (blocos.length - 1) + Z;
+  });
+
+  var linhas = t.split('\n'), out = [], lista = null, par = [];
+  function fechaLista(){ if (lista) { out.push('</' + lista + '>'); lista = null; } }
+  function fechaPar(){
+    if (par.length) { out.push('<p style="margin:0 0 9px">' + mdIn(par.join(' ')) + '</p>'); par = []; }
+  }
+  function fecha(){ fechaPar(); fechaLista(); }
+
+  for (var i = 0; i < linhas.length; i++){
+    var l = linhas[i], t2 = l.trim();
+    if (!t2) { fecha(); continue; }
+
+    var bl = t2.match(new RegExp('^' + Z + 'b([0-9]+)' + Z + '$'));
+    if (bl) {
+      fecha();
+      out.push('<pre style="margin:0 0 9px;padding:9px 11px;background:#f7f6f2;border-radius:9px;' +
+               'overflow-x:auto;' + DS_MONO + ';font-size:12px;line-height:1.5">' + blocos[bl[1]] + '</pre>');
+      continue;
+    }
+
+    // tabela: linha com | ... | seguida da separadora | --- | --- |
+    if (t2.charAt(0) === '|' && i + 1 < linhas.length && /^\|[\s:|-]+\|$/.test(linhas[i+1].trim())) {
+      fecha();
+      var celulas = function(linha){
+        return linha.trim().replace(/^\||\|$/g, '').split('|').map(function(c){ return mdIn(c.trim()); });
+      };
+      var cab = celulas(t2), corpo = [];
+      i += 2;
+      while (i < linhas.length && linhas[i].trim().charAt(0) === '|') { corpo.push(celulas(linhas[i].trim())); i++; }
+      i--;
+      var cel = 'padding:5px 9px;border-bottom:1px solid #eae6de;text-align:left;vertical-align:top';
+      out.push('<div style="overflow-x:auto;margin:0 0 9px">' +
+        '<table style="border-collapse:collapse;font-size:12.5px;width:100%">' +
+        '<thead><tr>' + cab.map(function(c){ return '<th style="' + cel + ';font-weight:600">' + c + '</th>'; }).join('') + '</tr></thead>' +
+        '<tbody>' + corpo.map(function(r){
+          return '<tr>' + r.map(function(c){ return '<td style="' + cel + '">' + c + '</td>'; }).join('') + '</tr>';
+        }).join('') + '</tbody></table></div>');
+      continue;
+    }
+
+    var h = t2.match(/^#{1,6}\s+(.*)$/);
+    if (h) {
+      fecha();
+      out.push('<div style="font-weight:600;color:#121a2b;margin:11px 0 5px">' + mdIn(h[1]) + '</div>');
+      continue;
+    }
+
+    if (/^(---+|\*\*\*+)$/.test(t2)) {
+      fecha();
+      out.push('<hr style="border:0;border-top:1px solid #eae6de;margin:11px 0">');
+      continue;
+    }
+
+    var cit = t2.match(/^&gt;\s?(.*)$/);
+    if (cit) {
+      fecha();
+      out.push('<div style="margin:0 0 9px;padding:7px 11px;border-left:2.5px solid #c9d6f7;' +
+               'background:#f7f9fe;border-radius:0 7px 7px 0">' + mdIn(cit[1]) + '</div>');
+      continue;
+    }
+
+    var mUl = t2.match(/^[-*•]\s+(.*)$/);
+    var mOl = t2.match(/^\d+[.)]\s+(.*)$/);
+    if (mUl || mOl) {
+      var tipo = mUl ? 'ul' : 'ol';
+      fechaPar();
+      if (lista !== tipo) {
+        fechaLista();
+        out.push('<' + tipo + ' style="margin:0 0 9px;padding-left:19px">');
+        lista = tipo;
+      }
+      out.push('<li style="margin:3px 0">' + mdIn((mUl || mOl)[1]) + '</li>');
+      continue;
+    }
+
+    fechaLista();
+    par.push(t2);
+  }
+  fecha();
+  return out.join('');
+}
+
+function msgHTML(m){
+  if (m.role === 'user')
+    return '<div style="margin:0 0 10px;text-align:right">' +
+      '<span style="display:inline-block;max-width:88%;text-align:left;background:#f2efe9;' +
+      'border-radius:12px 12px 3px 12px;padding:9px 12px;font-size:13.5px;line-height:1.6;' +
+      'color:#39404f;text-wrap:pretty">' + esc(m.content) + '</span></div>';
+  return '<div style="margin:0 0 12px">' +
+    '<div style="' + DS_MONO + ';font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;' +
+    'color:#2b57cc;margin-bottom:4px">DeepSeek</div>' +
+    '<div style="font-size:13.5px;line-height:1.65;color:#39404f;text-wrap:pretty">' +
+    mdChat(m.content) + '</div></div>';
+}
+
+function chatBox(q, acertou){
+  if (!dsOn()) return '';
+  var chamada = acertou ? 'Quer ir mais fundo?' : 'Ainda com dúvida?';
+  var dica = acertou ? 'Por que as outras estão erradas?' : 'Por que a que eu marquei está errada?';
+  var hist = (S.chat[q.id] || []).map(msgHTML).join('');
+  return '<div id="ds" data-qid="' + q.id + '" style="margin-top:14px;border:1px solid #e4e0d8;' +
+      'border-radius:14px;background:#fff;overflow:hidden;animation:qFade .26s ease">' +
+      '<div style="display:flex;align-items:center;gap:8px;padding:11px 15px;' +
+        'border-bottom:1px solid #f0ede6;background:#faf9f6">' +
+        '<span style="' + DS_MONO + ';font-size:10px;letter-spacing:.16em;text-transform:uppercase;' +
+        'color:#2b57cc">' + chamada + '</span>' +
+        '<span style="font-size:12px;color:#8a8578">pergunte ao DeepSeek</span></div>' +
+      '<div id="dsLog" style="max-height:280px;overflow-y:auto;padding:' + (hist ? '12px 15px' : '0') + '">' +
+        hist + '</div>' +
+      '<div style="display:flex;gap:8px;padding:11px 12px;border-top:1px solid #f0ede6">' +
+        '<input id="dsIn" type="text" autocomplete="off" ' +
+          'placeholder="' + dica + '" ' +
+          'style="flex:1;min-width:0;border:1px solid #e4e0d8;border-radius:10px;padding:10px 12px;' +
+          'font-size:13.5px;' + DS_SANS + ';color:#121a2b;background:#fff;outline:none">' +
+        '<button type="button" data-act="dsSend" class="h-darkflat" style="flex-shrink:0;' +
+          'background:#121a2b;color:#f5f3ef;border:0;border-radius:10px;padding:10px 16px;' +
+          'font-size:13px;font-weight:500;cursor:pointer;transition:background .16s ease">Enviar</button>' +
+      '</div></div>';
+}
+
+function dsContexto(q, ans){
+  var alts = q.options.map(function(o, n){ return LETTERS[n] + ') ' + o; }).join(NLJS);
+  return 'Questao: ' + q.question + NLJS + alts + NLJS +
+    'Resposta correta: ' + LETTERS[q.correctIndex] + ') ' + q.options[q.correctIndex] + NLJS +
+    'O estudante marcou: ' + (ans === null ? 'nada' : LETTERS[ans] + ') ' + q.options[ans]) + NLJS +
+    'Explicacao que ele ja tem: ' + q.explanation;
+}
+
+A.dsSend = function(){
+  var box = document.getElementById('ds');
+  if (!box || !dsOn() || box.getAttribute('data-busy')) return;
+  var input = document.getElementById('dsIn'), log = document.getElementById('dsLog');
+  var texto = (input.value || '').trim();
+  if (!texto) return;
+
+  var qid = parseInt(box.getAttribute('data-qid'), 10), q = null, ans = null;
+  for (var i = 0; i < S.order.length; i++)
+    if (S.order[i].id === qid) { q = S.order[i]; ans = S.answers[i]; }
+  if (!q) return;
+
+  S.chat[qid] = S.chat[qid] || [];
+  S.chat[qid].push({ role:'user', content:texto });
+  input.value = '';
+  log.style.padding = '12px 15px';
+  log.insertAdjacentHTML('beforeend', msgHTML({ role:'user', content:texto }));
+  log.insertAdjacentHTML('beforeend',
+    '<div><div style="' + DS_MONO + ';font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;' +
+    'color:#2b57cc;margin-bottom:4px">DeepSeek</div>' +
+    '<div id="dsTxt" style="font-size:13.5px;line-height:1.65;color:#8a8578;' +
+    'text-wrap:pretty">pensando…</div></div>');
+  log.scrollTop = log.scrollHeight;
+  box.setAttribute('data-busy', '1');
+
+  var acertou = (ans === q.correctIndex);
+  var situacao = acertou
+    ? 'Voce e um tutor de medicina. O estudante do 7o semestre ACERTOU esta questao, mas ficou com uma duvida. '
+    : 'Voce e um tutor de medicina. O estudante do 7o semestre ERROU esta questao. ';
+  var msgs = [
+    { role:'system', content: situacao +
+      'Responda em portugues do Brasil, direto ao ponto, no maximo 150 palavras. ' +
+      'Traga o dado concreto (valor, criterio, mecanismo) em vez de generalidade. ' +
+      'Nao repita a explicacao que ele ja tem; foque na duvida que ele trouxe.' },
+    { role:'user', content: dsContexto(q, ans) }
+  ];
+  var h = S.chat[qid];
+  for (var j = 0; j < h.length; j++) msgs.push({ role:h[j].role, content:h[j].content });
+
+  dsStream(msgs, function(txt, fim, erro){
+    var el = document.getElementById('dsTxt');
+    if (!el) { box.removeAttribute('data-busy'); return; }
+    if (erro) { el.style.color = '#c04437'; el.textContent = erro; box.removeAttribute('data-busy'); return; }
+    el.style.color = '#39404f';
+    el.innerHTML = mdChat(txt);
+    var lg = document.getElementById('dsLog'); if (lg) lg.scrollTop = lg.scrollHeight;
+    if (fim) { el.removeAttribute('id'); S.chat[qid].push({ role:'assistant', content:txt }); box.removeAttribute('data-busy'); }
+  });
+};
+
+function dsStream(messages, cb){
+  var acc = '';
+  fetch(DS_URL, {
+    method: 'POST',
+    headers: { 'Content-Type':'application/json', 'Authorization':'Bearer ' + window.DEEPSEEK_KEY },
+    body: JSON.stringify({ model:DS_MODEL, messages:messages, stream:true, max_tokens:1200, temperature:0.3 })
+  }).then(function(r){
+    if (!r.ok) return r.text().then(function(t){
+      throw new Error(
+        r.status === 401 ? 'Chave recusada (401). Confira o deepseek_key.js.' :
+        r.status === 402 ? 'Sem saldo na conta DeepSeek (402).' :
+        r.status === 429 ? 'Limite de uso atingido (429). Tente daqui a pouco.' :
+        'Erro ' + r.status + ': ' + String(t).slice(0, 120));
+    });
+    var reader = r.body.getReader(), dec = new TextDecoder(), buf = '';
+    (function pump(){
+      return reader.read().then(function(res){
+        if (res.done) { cb(acc || '(resposta vazia)', true); return; }
+        buf += dec.decode(res.value, { stream:true });
+        var linhas = buf.split(NLJS);
+        buf = linhas.pop();
+        for (var i = 0; i < linhas.length; i++){
+          var l = linhas[i].trim();
+          if (l.indexOf('data:') !== 0) continue;
+          var carga = l.slice(5).trim();
+          if (carga === '[DONE]') continue;
+          try {
+            var d = JSON.parse(carga).choices[0].delta;
+            if (d && d.content) { acc += d.content; cb(acc, false); }
+          } catch (_){}
+        }
+        return pump();
+      });
+    })();
+  }).catch(function(e){
+    cb('', true, 'Nao consegui falar com o DeepSeek: ' + (e && e.message ? e.message : e));
+  });
+}
+
+function render(){
+  renderHeader();
+  if (S.view === 'home')        renderHome();
+  else if (S.view === 'resumo') renderResumo();
+  else if (S.finished)          renderResult();
+  else                          renderQuestion();
+}
+
+/* lightbox: clique em qualquer figura amplia */
+document.addEventListener('click', function(e){
+  var lb = document.getElementById('lb');
+  if (e.target.closest('#lb')) { lb.className = ''; return; }
+  var img = e.target.closest('.fig img');
+  if (img) { lb.firstElementChild.src = img.src; lb.className = 'on'; }
+});
+window.addEventListener('keydown', function(e){
+  if (e.key === 'Escape') document.getElementById('lb').className = '';
+});
+
+document.addEventListener('click', function(e){
+  var b = e.target.closest('[data-act]'); if (!b) return;
+  var act = b.getAttribute('data-act'), n = parseInt(b.getAttribute('data-n'),10), k = b.getAttribute('data-k');
+  if (act==='pick'||act==='jump'||act==='toggle') A[act](n);
+  else if (act==='filter') A.filter(k);
+  else if (A[act]) A[act]();
+});
+
+window.addEventListener('keydown', function(e){
+  if (S.view!=='quiz' || !S.started || S.finished) return;
+  var t = e.target, tag = t && t.tagName;
+  if (tag==='INPUT' || tag==='TEXTAREA' || (t && t.isContentEditable)) return;
+  if (e.metaKey||e.ctrlKey||e.altKey) return;
+  if (e.key==='ArrowRight')     { e.preventDefault(); A.go(S.i+1); }
+  else if (e.key==='ArrowLeft') { e.preventDefault(); A.go(S.i-1); }
+  else if (e.key==='Enter')     { e.preventDefault(); A.next(); }
+  else if (/^[1-6]$/.test(e.key)) {
+    var n = parseInt(e.key,10)-1;
+    if (n < S.order[S.i].options.length) A.pick(n);
+  }
+});
+
+render();
+</script>
+</body>
+</html>

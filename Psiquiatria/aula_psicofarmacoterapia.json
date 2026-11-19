@@ -1,0 +1,338 @@
+{
+  "titulo": "Psicofarmacoterapia",
+  "eyebrow": "Psiquiatria · Psicofarmacologia",
+  "subtitulo": "Antipsicóticos, antidepressivos, estabilizadores do humor e benzodiazepínicos na prática",
+  "intro": "Da história dos psicofármacos e da eletroconvulsoterapia ao mecanismo e aos efeitos adversos de cada classe: as vias dopaminérgicas, típicos e atípicos, as classes de antidepressivos, lítio, carbamazepina, valproato e benzodiazepínicos — com o que o SUS oferece.",
+  "questoes": [
+    {
+      "question": "Mulher de 28 anos com esquizofrenia, em uso de risperidona, passa a apresentar galactorreia e amenorreia. O bloqueio dopaminérgico em qual via explica o quadro?",
+      "options": [
+        "Tuberoinfundibular, do hipotálamo à hipófise",
+        "Nigroestriatal, da substância negra ao estriado",
+        "Mesocortical, do tegmento ao córtex pré-frontal",
+        "Mesolímbica, do tegmento ao estriado ventral"
+      ],
+      "correctIndex": 0,
+      "explanation": "Na via tuberoinfundibular a dopamina é o fator que inibe a secreção de prolactina pela hipófise; bloqueá-la com antagonista D2 eleva a prolactina, com galactorreia, amenorreia, ginecomastia e disfunção sexual. Os atípicos em geral têm baixa propensão à hiperprolactinemia, mas a risperidona é a exceção clássica — eleva a prolactina tanto quanto os típicos de alta potência."
+    },
+    {
+      "question": "Paciente com esquizofrenia em uso de haloperidol tem melhora dos delírios, mas fica mais apático, com embotamento afetivo e pobreza do discurso, sem rigidez, tremor ou lentificação motora. O bloqueio D2 em qual via explica essa piora?",
+      "options": [
+        "Mesocortical, com piora de sintomas negativos",
+        "Mesolímbica, com piora de sintomas negativos",
+        "Nigroestriatal, com parkinsonismo medicamentoso",
+        "Tuberoinfundibular, com hiperprolactinemia"
+      ],
+      "correctIndex": 0,
+      "explanation": "A via mesocortical leva dopamina ao córtex pré-frontal, onde já há hipofunção dopaminérgica na esquizofrenia; o bloqueio D2 ali agrava apatia, embotamento afetivo e alogia — os sintomas negativos secundários. A via mesolímbica, cujo excesso de dopamina gera delírios e alucinações, é justamente onde o bloqueio traz o benefício antipsicótico. Parkinsonismo pode imitar sintomas negativos, mas viria com rigidez, tremor e bradicinesia."
+    },
+    {
+      "question": "Qual é a estimativa de risco de discinesia tardia com o uso prolongado de neurolépticos convencionais (de primeira geração)?",
+      "options": [
+        "Cerca de 20%, chegando a 50% em idosos",
+        "Cerca de 5%, chegando a 10% em idosos",
+        "Cerca de 50%, chegando a 90% em idosos",
+        "Cerca de 20%, sem diferença em idosos"
+      ],
+      "correctIndex": 0,
+      "explanation": "A discinesia tardia é um distúrbio de movimentos involuntários e repetitivos — sobretudo orofaciais, como mastigação, protrusão da língua e caretas — que surge após uso prolongado de antipsicótico. Com os convencionais o risco gira em torno de 20%, e chega a 50% em grupos de risco como idosos e pacientes clinicamente comprometidos. Fármacos que produzem poucos sintomas extrapiramidais também parecem causar pouca discinesia tardia."
+    },
+    {
+      "question": "Em comparação com os antipsicóticos típicos, qual é uma vantagem dos antipsicóticos atípicos (de segunda geração)?",
+      "options": [
+        "Melhor efeito sobre os sintomas negativos",
+        "Menor risco de ganho de peso e de diabetes",
+        "Ausência total de risco de discinesia tardia",
+        "Bloqueio D2 mais intenso e mais duradouro"
+      ],
+      "correctIndex": 0,
+      "explanation": "Os atípicos têm efeito antipsicótico com baixa propensão a sintomas extrapiramidais e a hiperprolactinemia, menos discinesia tardia (menos, não zero), melhor efeito sobre sintomas negativos, eficácia parcial em sintomas depressivos e melhora da função cognitiva. O preço é metabólico: clozapina e olanzapina lideram em ganho de peso, diabetes e dislipidemia. A diferença vem de um bloqueio D2 menos intenso ou mais transitório, somado ao antagonismo serotoninérgico 5-HT2A."
+    },
+    {
+      "question": "A clozapina, primeiro antipsicótico atípico, chegou a ter o uso restrito e hoje só é usada com monitorização rigorosa. Qual efeito adverso grave motivou essa restrição?",
+      "options": [
+        "Agranulocitose, com hemograma seriado",
+        "Hepatite fulminante, com transaminases",
+        "Insuficiência renal, com creatinina seriada",
+        "Pancreatite aguda, com amilase seriada"
+      ],
+      "correctIndex": 0,
+      "explanation": "Pouco depois de lançada, nos anos 1970, a clozapina foi associada a casos fatais de agranulocitose e teve o uso restrito; voltou no fim dos anos 1980 pela eficácia na esquizofrenia refratária — 15% a 30% dos pacientes não respondem aos típicos —, condicionada a hemograma seriado. Causa pouquíssimos sintomas extrapiramidais, mas lidera em hipotensão postural e em disfunção metabólica."
+    },
+    {
+      "question": "Paciente com esquizofrenia, obeso e pré-diabético, vai iniciar antipsicótico. Qual par deve ser evitado pelo maior risco de disfunção metabólica?",
+      "options": [
+        "Clozapina e olanzapina",
+        "Aripiprazol e lurasidona",
+        "Haloperidol e pimozida",
+        "Ziprasidona e aripiprazol"
+      ],
+      "correctIndex": 0,
+      "explanation": "Clozapina e olanzapina são os antipsicóticos com maior risco de ganho de peso, resistência insulínica, diabetes e dislipidemia. Aripiprazol, lurasidona e ziprasidona são os atípicos de menor impacto metabólico, e o haloperidol tem pouco efeito metabólico — seu problema são os sintomas extrapiramidais. Com qualquer antipsicótico, peso, circunferência abdominal, glicemia e lipídios entram no seguimento."
+    },
+    {
+      "question": "Paciente com intervalo QT prolongado no eletrocardiograma precisa de antipsicótico. Qual destes tem o maior risco cardiovascular e deve ser evitado?",
+      "options": [
+        "Tioridazina",
+        "Aripiprazol",
+        "Lurasidona",
+        "Olanzapina"
+      ],
+      "correctIndex": 0,
+      "explanation": "Tioridazina, ziprasidona e clozapina concentram o maior risco de alterações cardiovasculares entre os antipsicóticos; a tioridazina é a que mais prolonga o QT, com risco de torsades de pointes, e por isso deixou de ser comercializada em vários países. Aripiprazol, lurasidona e olanzapina têm efeito pequeno sobre o QT. A clozapina ainda soma hipotensão postural e risco de miocardite."
+    },
+    {
+      "question": "Os neurolépticos típicos são divididos em sedativos e incisivos. Comparado à clorpromazina, o que caracteriza o haloperidol?",
+      "options": [
+        "Incisivo: menos sedação e mais sintomas extrapiramidais",
+        "Sedativo: mais sedação e menos sintomas extrapiramidais",
+        "Incisivo: mais sedação e mais hipotensão postural",
+        "Atípico: pouca ação D2 e baixo risco extrapiramidal"
+      ],
+      "correctIndex": 0,
+      "explanation": "Os sedativos (clorpromazina, levomepromazina) são de baixa potência: exigem doses altas e bloqueiam também receptores histamínicos, muscarínicos e alfa-1, daí sedação, efeito anticolinérgico e hipotensão postural. O incisivo (haloperidol) é de alta potência, com bloqueio D2 intenso: pouca sedação e hipotensão, mas muito mais sintomas extrapiramidais — distonia aguda, acatisia e parkinsonismo."
+    },
+    {
+      "question": "Paciente com esquizofrenia abandona repetidamente o antipsicótico oral. Qual opção típica, disponível no SUS, permite aplicação intramuscular de depósito, com intervalo de semanas?",
+      "options": [
+        "Haloperidol decanoato",
+        "Clorpromazina injetável",
+        "Levomepromazina oral",
+        "Periciazina em gotas"
+      ],
+      "correctIndex": 0,
+      "explanation": "O haloperidol decanoato é a formulação de depósito do haloperidol, aplicada por via intramuscular em geral a cada quatro semanas — útil quando a adesão falha. A clorpromazina injetável é de ação curta, usada na fase aguda. A adesão é um problema central: sintomas extrapiramidais, cronicidade da doença, dificuldade de vínculo com o tratamento, custos diretos e esgotamento familiar estão entre as principais causas de abandono."
+    },
+    {
+      "question": "Qual destas condições é contraindicação à eletroconvulsoterapia?",
+      "options": [
+        "Pressão intracraniana elevada",
+        "Gestação no segundo trimestre",
+        "Idade acima de oitenta anos",
+        "Depressão com sintomas psicóticos"
+      ],
+      "correctIndex": 0,
+      "explanation": "A eletroconvulsoterapia é contraindicada diante de aumento da pressão intracraniana, arritmia cardíaca recente e trombose venosa profunda ou embolia; hoje se considera que não há contraindicação absoluta, e a hipertensão intracraniana é a mais relevante. Gestação e idade avançada são, ao contrário, situações em que a ECT é especialmente indicada na depressão grave, por poupar a carga de fármacos; a depressão psicótica com risco de suicídio é indicação clássica."
+    },
+    {
+      "question": "Qual fármaco, introduzido em 1952, marca o início do tratamento farmacológico moderno da esquizofrenia?",
+      "options": [
+        "Clorpromazina, uma fenotiazina",
+        "Haloperidol, uma butirofenona",
+        "Clozapina, um dibenzodiazepínico",
+        "Imipramina, um tricíclico"
+      ],
+      "correctIndex": 0,
+      "explanation": "A clorpromazina, uma fenotiazina, inaugurou em 1952 a primeira revolução farmacológica da psiquiatria; seguiram-se os tricíclicos (1958) e os benzodiazepínicos (1960). A segunda revolução, na década de 1980, trouxe a reintrodução da clozapina e abriu caminho para os atípicos dos anos 1990. Antes dos fármacos havia a malarioterapia (1917) e a eletroconvulsoterapia (década de 1930)."
+    },
+    {
+      "question": "Idoso em uso de amitriptilina apresenta boca seca, constipação, visão embaçada e retenção urinária. Qual mecanismo explica esses efeitos?",
+      "options": [
+        "Bloqueio de receptores muscarínicos",
+        "Bloqueio de receptores D2 estriatais",
+        "Estímulo de receptores alfa-2",
+        "Inibição da recaptação de dopamina"
+      ],
+      "correctIndex": 0,
+      "explanation": "Além de inibir intensamente a recaptação de serotonina e noradrenalina, os tricíclicos bloqueiam receptores muscarínicos (boca seca, constipação, visão embaçada, retenção urinária, confusão no idoso), histamínicos H1 (sedação, ganho de peso) e alfa-1 (hipotensão postural), além dos efeitos cardíacos e da dificuldade de ereção. É esse perfil que os torna menos tolerados que ISRS e duais."
+    },
+    {
+      "question": "Paciente com depressão, insônia e dor crônica difusa (fibromialgia). Qual antidepressivo tem perfil sedativo e ação analgésica que ajudam nas duas queixas?",
+      "options": [
+        "Amitriptilina",
+        "Escitalopram",
+        "Vortioxetina",
+        "Bupropiona"
+      ],
+      "correctIndex": 0,
+      "explanation": "A amitriptilina é um tricíclico sedativo (como a clomipramina), com ação analgésica útil em dor crônica e auxílio na insônia — por isso é usada em doses baixas na fibromialgia, na cefaleia crônica e na dor neuropática. Imipramina e nortriptilina são os tricíclicos menos sedativos. Escitalopram e vortioxetina não têm ação analgésica relevante nem perfil sedativo, e a bupropiona é ativadora e pode piorar a insônia."
+    },
+    {
+      "question": "Ao iniciar um inibidor seletivo da recaptação de serotonina (ISRS), quais efeitos adversos são os mais esperados nas primeiras semanas?",
+      "options": [
+        "Náusea, diarreia, desconforto gástrico e ansiedade",
+        "Boca seca, constipação, visão turva e retenção urinária",
+        "Sedação intensa, hipotensão postural e arritmias",
+        "Tremor fino, poliúria, polidipsia e ganho de peso"
+      ],
+      "correctIndex": 0,
+      "explanation": "Os ISRS (fluoxetina, fluvoxamina, paroxetina, sertralina, citalopram, escitalopram) impedem a recaptação da serotonina e têm efeitos adversos menores e menos sedação que os tricíclicos; os mais comuns são gastrointestinais — náusea, diarreia, desconforto gástrico — e ansiedade ou inquietação no início. Disfunção sexual é queixa frequente ao longo do uso. Boca seca e constipação apontam para tricíclico; poliúria e tremor, para lítio."
+    },
+    {
+      "question": "Qual destes antidepressivos é um inibidor da recaptação de serotonina e de noradrenalina (dual)?",
+      "options": [
+        "Duloxetina",
+        "Sertralina",
+        "Escitalopram",
+        "Fluvoxamina"
+      ],
+      "correctIndex": 0,
+      "explanation": "Os duais — venlafaxina, desvenlafaxina e duloxetina — inibem a recaptação de serotonina e de noradrenalina, com ação semelhante à dos tricíclicos e bem menos efeitos adversos, porque não bloqueiam receptores muscarínicos, histamínicos e alfa-1. Sertralina, escitalopram e fluvoxamina são ISRS. A bupropiona, às vezes agrupada entre os duais, age sobre dopamina e noradrenalina, sem efeito serotoninérgico."
+    },
+    {
+      "question": "Paciente tabagista com depressão marcada por fadiga, apatia e falta de motivação, sem ansiedade importante. Qual antidepressivo de ação dopaminérgica também é usado na cessação do tabagismo?",
+      "options": [
+        "Bupropiona",
+        "Paroxetina",
+        "Mirtazapina",
+        "Clomipramina"
+      ],
+      "correctIndex": 0,
+      "explanation": "A bupropiona inibe a recaptação de dopamina e noradrenalina, com intensa ação sobre energia e motivação — mas pode aumentar a ansiedade, por isso convém a quem não é ansioso. Reduz o apetite, não costuma causar disfunção sexual (pode até aumentar a libido) e é usada no tratamento do tabagismo. Deve-se evitar álcool, porque a combinação reduz o limiar convulsivo."
+    },
+    {
+      "question": "Paciente em uso de fluoxetina recebe tramadol e, em poucas horas, fica agitado, sudoreico, com diarreia, febre e tremor. Qual achado do exame favorece síndrome serotoninérgica em vez de síndrome neuroléptica maligna?",
+      "options": [
+        "Clônus e hiperreflexia, com instalação em horas",
+        "Rigidez em cano de chumbo, com instalação em dias",
+        "Bradicinesia intensa, com CPK muito elevada",
+        "Febre com hipotensão, sem alteração do tônus"
+      ],
+      "correctIndex": 0,
+      "explanation": "A síndrome serotoninérgica surge em horas após combinar ou aumentar serotoninérgicos (ISRS, IMAO, tramadol, linezolida, triptanos) e reúne alteração mental, hiperatividade autonômica e hiperatividade neuromuscular — clônus, mioclonias e hiperreflexia, mais nos membros inferiores, com diarreia e midríase. A síndrome neuroléptica maligna se instala em dias após antagonista dopaminérgico, com rigidez em cano de chumbo, bradicinesia e CPK muito elevada. Conduta: suspender o agente; ciproeptadina nos casos moderados."
+    },
+    {
+      "question": "Além do tratamento e da profilaxia do transtorno bipolar, qual efeito clínico do lítio é especialmente valorizado no seguimento de pacientes com transtornos do humor?",
+      "options": [
+        "Redução do risco de suicídio",
+        "Prevenção de crises epilépticas",
+        "Melhora rápida da insônia crônica",
+        "Controle de sintomas obsessivos"
+      ],
+      "correctIndex": 0,
+      "explanation": "O lítio é indicado no transtorno bipolar (mania, hipomania e depressão), na profilaxia da depressão recorrente, na depressão resistente, no transtorno esquizoafetivo, na agressividade e na impulsividade — e na prevenção do suicídio, efeito antissuicida que o distingue entre os estabilizadores. Não é anticonvulsivante; carbamazepina e valproato é que são."
+    },
+    {
+      "question": "Paciente bipolar, estável com lítio, inicia hidroclorotiazida para hipertensão. Duas semanas depois tem tremor grosseiro, ataxia, diarreia e confusão. Qual mecanismo explica o quadro?",
+      "options": [
+        "O tiazídico reduz a excreção renal e eleva a litemia",
+        "O tiazídico induz o metabolismo hepático do lítio",
+        "O tiazídico desloca o lítio da albumina plasmática",
+        "A hipopotassemia do tiazídico causa lesão cerebelar"
+      ],
+      "correctIndex": 0,
+      "explanation": "O lítio não é metabolizado nem se liga a proteínas: é eliminado pelo rim, que o trata como sódio. O tiazídico causa perda de sódio e o túbulo proximal passa a reabsorver mais sódio — e lítio junto —, elevando a litemia até a intoxicação: tremor grosseiro, ataxia, disartria, vômitos, diarreia e confusão. Anti-inflamatórios não esteroides e, em menor grau, IECA e BRA fazem o mesmo; a idade avançada também eleva a litemia, e a associação com carbamazepina aumenta a neurotoxicidade."
+    },
+    {
+      "question": "Paciente em uso de lítio há dois anos queixa-se de poliúria e muita sede. A urina é diluída e não se concentra após a administração de desmopressina. Qual é o diagnóstico?",
+      "options": [
+        "Diabetes insipidus nefrogênico pelo lítio",
+        "Diabetes insipidus central pelo lítio",
+        "Polidipsia primária da doença de base",
+        "Diabetes mellitus induzido pelo lítio"
+      ],
+      "correctIndex": 0,
+      "explanation": "Poliúria e polidipsia são efeitos frequentes do lítio; no extremo, ele torna o túbulo coletor resistente ao hormônio antidiurético — diabetes insipidus nefrogênico, que por definição não responde à desmopressina. Outros efeitos: tremor, diarreia, náusea, ganho de peso, indução de hipotireoidismo, alterações renais subclínicas, acne, alergias e alopecia. Por isso creatinina e TSH entram no seguimento."
+    },
+    {
+      "question": "Por que o lítio é evitado no primeiro trimestre da gestação?",
+      "options": [
+        "Risco de malformação cardíaca, a anomalia de Ebstein",
+        "Risco de defeito do tubo neural, como espinha bífida",
+        "Risco de fenda labiopalatina e de microcefalia",
+        "Risco de agenesia renal e de oligoidrâmnio"
+      ],
+      "correctIndex": 0,
+      "explanation": "A exposição ao lítio no primeiro trimestre associa-se a malformações cardíacas, classicamente a anomalia de Ebstein (implantação baixa da valva tricúspide); estudos recentes mostram risco absoluto menor do que se estimava, e a decisão é individualizada. Defeitos do tubo neural são a marca do valproato e da carbamazepina. As outras contraindicações do lítio são insuficiência renal aguda e infarto do miocárdio."
+    },
+    {
+      "question": "Mulher de 25 anos, em uso de anticoncepcional oral combinado, inicia carbamazepina para transtorno bipolar. Qual é a principal preocupação?",
+      "options": [
+        "Falha contraceptiva por indução de enzimas hepáticas",
+        "Trombose por inibição do metabolismo do estrogênio",
+        "Hepatite por soma da toxicidade dos dois fármacos",
+        "Sangramento por queda dos fatores de coagulação"
+      ],
+      "correctIndex": 0,
+      "explanation": "A carbamazepina é um potente indutor enzimático hepático e reduz o nível de vários fármacos: anticoncepcionais orais (risco de gravidez — e ela é teratogênica), neurolépticos, clonazepam, ácido valproico, outros anticonvulsivantes e anticoagulantes. Orienta-se método que não dependa do metabolismo hepático, como o DIU. Ela também induz o próprio metabolismo, o que pede reajuste de dose nas primeiras semanas."
+    },
+    {
+      "question": "Paciente em uso de carbamazepina há seis semanas apresenta febre, dor de garganta e petéquias. Qual é a conduta inicial?",
+      "options": [
+        "Hemograma urgente pelo risco de discrasia sanguínea",
+        "Antibiótico empírico mantendo a dose habitual",
+        "Dosar o nível sérico e aumentar a dose do fármaco",
+        "Tratar como virose e reavaliar em uma semana"
+      ],
+      "correctIndex": 0,
+      "explanation": "A carbamazepina pode causar leucopenia e discrasias sanguíneas graves (agranulocitose, anemia aplástica); sinais de infecção ou de sangramento exigem hemograma imediato e, se confirmada, suspensão. Outros efeitos: rash cutâneo (que pode evoluir para Stevens-Johnson), alteração de enzimas hepáticas, hiponatremia e, no aumento rápido de dose, tontura, ataxia, letargia e diplopia. É teratogênica e passa para o leite materno."
+    },
+    {
+      "question": "Jovem de 19 anos em uso de valproato para transtorno bipolar evolui com ganho de peso, hirsutismo, acne e ciclos menstruais irregulares. Qual efeito adverso deve ser considerado?",
+      "options": [
+        "Ovários policísticos associados ao valproato",
+        "Hipotireoidismo induzido pelo valproato",
+        "Hiperprolactinemia induzida pelo valproato",
+        "Síndrome de Cushing induzida pelo valproato"
+      ],
+      "correctIndex": 0,
+      "explanation": "O valproato associa-se a ovários policísticos e hiperandrogenismo, além de tremor, ganho de peso, epigastralgia e queda ou enfraquecimento do cabelo. É teratogênico — o maior risco entre os estabilizadores, com defeitos de tubo neural e prejuízo do neurodesenvolvimento —, o que pede cautela especial em mulheres em idade fértil. Pode ser usado na amamentação e tem baixa toxicidade em superdosagem comparado ao lítio. Hipotireoidismo é efeito do lítio; hiperprolactinemia, dos antipsicóticos."
+    },
+    {
+      "question": "Como os benzodiazepínicos produzem seus efeitos ansiolítico e anticonvulsivante?",
+      "options": [
+        "Modulam positivamente o receptor GABA-A",
+        "Atuam como agonistas do receptor GABA-B",
+        "Inibem a recaptação do GABA na sinapse",
+        "Bloqueiam o receptor glutamatérgico NMDA"
+      ],
+      "correctIndex": 0,
+      "explanation": "Os benzodiazepínicos ligam-se a um sítio próprio do receptor GABA-A e potencializam o GABA, aumentando a abertura do canal de cloreto e a inibição neuronal. Como o GABA-A modula alterações rápidas do humor — ansiedade, pânico, resposta ao estresse —, o resultado é efeito sedativo, ansiolítico, relaxante muscular, anticonvulsivante e amnéstico. O flumazenil é o antagonista desse sítio."
+    },
+    {
+      "question": "Para sedar um paciente por via intramuscular, qual benzodiazepínico tem absorção rápida e regular nessa via, além de meia-vida muito curta?",
+      "options": [
+        "Midazolam",
+        "Diazepam",
+        "Clonazepam",
+        "Alprazolam"
+      ],
+      "correctIndex": 0,
+      "explanation": "Midazolam e lorazepam são hidrossolúveis e bem absorvidos no músculo; o midazolam tem meia-vida muito curta e é o benzodiazepínico de perfil hipnótico. Diazepam e clordiazepóxido, por via intramuscular, têm absorção lenta e errática — cristalizam no local — e atingem picos menores que pela via oral. Diazepam, alprazolam, bromazepam e clonazepam são os mais usados como ansiolíticos; o clonazepam, também como anticonvulsivante."
+    },
+    {
+      "question": "Qual é o efeito agudo dos benzodiazepínicos sobre o sono?",
+      "options": [
+        "Reduzem latência e despertares e aumentam o tempo total",
+        "Aumentam latência e despertares e reduzem o tempo total",
+        "Reduzem latência, mas aumentam despertares e tempo total",
+        "Não alteram a latência e só reduzem os despertares noturnos"
+      ],
+      "correctIndex": 0,
+      "explanation": "Os benzodiazepínicos encurtam o tempo para adormecer, reduzem os despertares e aumentam o tempo total de sono. O preço é o prejuízo psicomotor, de atenção e de vigilância, proporcional à dose; com compostos de meia-vida longa tomados à noite, ele persiste na manhã seguinte. Os mais lipossolúveis, de início de ação rápido, são os preferidos como indutores do sono."
+    },
+    {
+      "question": "Paciente recebe benzodiazepínico antes de uma endoscopia. Depois, não se lembra do exame nem da conversa na sala de recuperação, mas recorda tudo o que ocorreu antes da dose. Como se classifica o efeito?",
+      "options": [
+        "Amnésia anterógrada, sem amnésia retrógrada",
+        "Amnésia retrógrada, sem amnésia anterógrada",
+        "Amnésia global, anterógrada e retrógrada",
+        "Amnésia semântica, com perda de conhecimentos"
+      ],
+      "correctIndex": 0,
+      "explanation": "Os benzodiazepínicos, por qualquer via, causam amnésia anterógrada: reduzem a lembrança do que ocorre enquanto o paciente está sob efeito, por falha na consolidação da memória episódica (de curto para longo prazo). Nenhum causa amnésia retrógrada. A memória semântica (conhecimento geral) e a de procedimento (habilidades) ficam preservadas. O efeito amnéstico independe da sedação, embora ela o intensifique."
+    },
+    {
+      "question": "Idoso de 78 anos usa diazepam todas as noites para dormir. Qual é o risco mais relevante desse uso?",
+      "options": [
+        "Sonolência residual, quedas e acidentes de trânsito",
+        "Insônia de rebote na madrugada, com taquicardia",
+        "Hipertensão matinal por efeito simpaticomimético",
+        "Hipoglicemia noturna por estímulo à secreção de insulina"
+      ],
+      "correctIndex": 0,
+      "explanation": "O diazepam tem meia-vida longa e metabólitos ativos que se acumulam no idoso: o prejuízo de atenção, de reflexos e de julgamento persiste na manhã seguinte, e o paciente não percebe a própria limitação. Isso se traduz em quedas, fratura de quadril e acidentes automobilísticos — risco maior em idosos com compostos de meia-vida longa em doses altas. A velocidade de desempenho cai e o tempo de reação se alonga."
+    },
+    {
+      "question": "Paciente usa clonazepam diariamente há anos e para por conta própria. Três dias depois tem insônia, irritabilidade, tremor, sudorese, palpitações e hipersensibilidade a luz e sons. Qual é o risco mais grave e a conduta?",
+      "options": [
+        "Convulsões; reintroduzir o BZD e retirar gradualmente",
+        "Psicose; iniciar antipsicótico e manter a suspensão",
+        "Hipertermia maligna; iniciar dantrolene endovenoso",
+        "Arritmia grave; iniciar betabloqueador e observar"
+      ],
+      "correctIndex": 0,
+      "explanation": "A abstinência de benzodiazepínico tem quadro pouco específico — irritabilidade, agitação, insônia, tremor, sudorese, palpitações, náusea, cefaleia, tensão muscular, hipersensibilidade a luz e sons, parestesias e cãibras — e pode chegar a convulsões. A conduta é reintroduzir o benzodiazepínico (ou trocar por um de meia-vida longa) e reduzir lentamente, ao longo de semanas a meses. Tolerância e dependência são o motivo de limitar o tempo de prescrição."
+    }
+  ]
+}

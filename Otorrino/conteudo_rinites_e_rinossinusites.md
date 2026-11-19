@@ -1,14 +1,14 @@
 ---
-source: D:\Arquivos\Documentos\Faculdade\OSEC\7sem\Material para provas\Otorrino\6. rinite e rinossinusite - Parte 1.pdf
-files_processed: ['6. rinite e rinossinusite - Parte 1.pdf']
-date_extracted: 2026-10-17
+source: D:\Arquivos\Documentos\Faculdade\OSEC\7sem\Material para provas\Otorrino\rinite e rinossinusite 2026-2.pdf
+files_processed: ['rinite e rinossinusite 2026-2.pdf']
+date_extracted: 2026-11-18
 subject: Rinites e Rinossinusites
-imagens: 31 (chaves pgNN — ver imagens_[tema].json)
+imagens: 55 (chaves pgNN — ver imagens_[tema].json)
 ---
 
 # Rinites e Rinossinusites
 
-## 6. rinite e rinossinusite - Parte 1
+## rinite e rinossinusite 2026-2
 
 ### Página 1
 
@@ -69,31 +69,31 @@ normais
 ### Página 5
 
 Classificação :
-▪ Alérgica Outras
-▪
-▪ Sazonal Idiopática
-▪
-▪ Perene Rinite eosinofílica não-alérgica
-▪
-▪ Circunstancial Hormonal
-▪
-▪ Ocupacional Induzida por drogas
-▪
+ Alérgica Outras
+
+ Sazonal Idiopática
+
+ Perene Rinite eosinofílica não-alérgica
+
+ Circunstancial Hormonal
+
+ Ocupacional Induzida por drogas
+
 Alimentar
-▪
+
 Infecciosa
 Emocional
-▪
-▪
+
+
 Aguda: viral e
 Atrófica
-▪
-▪
+
+
 bacteriana
 Por desuso
-▪
+
 Crônica: específica e
-▪
+
 inespecífica
 
 <!-- IMG:pg05 -->
@@ -125,35 +125,44 @@ químicos, como histamina
 ### Página 9
 
 • Antígenos inicialmente são processados pelas
+células de Langerhans – apresentadoras de Ag.
 Ag
 L
-células de Langerhans – apresentadoras de Ag.
-• Células trafegam pelo anel de Waldeyer e
-linfonodos de drenagem locais
+• Células migram para os tecidos linfóides das
+vias aéreas superiores ( anel linfático de
+Waldeyer) e linfonodos de drenagem locais
 • Antígeno apresentado aos linfócitos Th0, que
 se diferenciam em linfócitos Th2
-• Liberação de interleucinas (IL-3, IL-4, IL-5, IL-9,
-IL-10, IL-13) e GM-CSF, mantendo ambiente
-com características atópicas
+• A resposta Th2, principalmente IL-4, IL-5, e IL-
+13, promove produção de IgE e inflamação
+eosinofílica)
 
 <!-- IMG:pg09 -->
 
 ### Página 10
 
-FASE IMEDIATA
-Reexposição
+SENSIBILIZAÇÃO E FASE IMEDIATA
+Reexposição:
+desencadeia a
+fase imediata
+Citocinas
 Sensibilização
 Liberação mastocitária: Prurido, espirros, rinorreia, obstrução nasal
-Duração: até 1 hora
+Duração: início em minutos; predomina na primeira hora
 
 <!-- IMG:pg10 -->
 
 ### Página 11
 
 FASE TARDIA
+IL-5
 Eosinófilo
+Início: 4-8 horas após a exposição
+Inflamação
+Pode persistir 24-48 horas
+persistente da
+mucosa nasal
 Hiper-reatividade
-Duração: 4-48 horas
 
 <!-- IMG:pg11 -->
 
@@ -178,8 +187,8 @@ otites de repetição
 • Hábitos: tabagismo ativo ou passivo, atividades de lazer.
 Tratamentos já realizados
 • Ambiente: casa, vizinho, escola, trabalho
-• Qualidade de vida: sono, limitação
-de atividades
+• Consequências na qualidade de vida:
+Sono, limitação de atividades
 
 <!-- IMG:pg13 -->
 
@@ -226,9 +235,10 @@ Normal
 Exames complementares :
 • Hemograma (eosinofilia sérica)
 • Testes cutâneos (Prick test)
-• IgE específica (sangue) – RAST
+• IgE específica (sangue) – RAST(*)
 • Citologia nasal
 SÓ PARA DIFERENCIAL:
+(*)Cuidado: não é IgE total
 Endoscopia nasal
 Imagem
 
@@ -261,13 +271,15 @@ Linfócitos: rinite infecciosa viral
 ### Página 19
 
 Tratamento :
-Higiene ambiental
-Lavagem nasal com SF
-Anti-histamínicos orais ou tópicos
-Corticóides tópicos
-Descongestionantes sistêmicos
-Corticóides orais
-Estabilizadores de membrana de mastócitos
+• Higiene ambiental / redução da exposição
+• Lavagem nasal com SF
+• Corticoides intranasais
+• Anti-histamínicos (2ª geração) orais ou intranasais
+• Corticoides intranasais + Anti-histamínicos intranasais
+(sintomas intensos/controle insuficiente)
+• Descongestionantes sistêmicos (uso curto e selecionado)
+• Corticoides orais (uso curto em casos graves)
+• Estabilizadores de membrana de mastócitos
 
 <!-- IMG:pg19 -->
 
@@ -396,3 +408,313 @@ T
 O S S E
 
 <!-- IMG:pg31 -->
+
+### Página 32
+
+CRITÉRIOS SINTOMÁTICOS: *
+VIRAL?
+• 2 OU MAIS: Evidências objetivas da inflamação
+(rinossinusite crônica):
+• R
+inorreia
+- 1 ou mais (endoscopia)
+• O
+bstrução nasal
+• Secreção em meato médio
+• D • Edema obstrutivo
+or ou pressão facial
+ALÉRGICA?
+• Pólipos
+• A
+BACTERIANA? nosmia ou redução do olfato
+- alterações da mucosa dos
+T
+( osse: crianças) seios paranasais na TC
+Na rinossinusite aguda, o diagnóstico é predominantemente clínico. Na rinossinusite crônica, é necessária a confirmação objetiva da
+* EPOS - 2020
+inflamação nasossinusal.
+
+<!-- IMG:pg32 -->
+
+### Página 33
+
+FISIOPATOLOGIA
+:
+Obstrução do óstio de
+drenagem
+ pO  pH, Retenção de
+2,
+ pCO secreções
+ Movimento
+mucociliar
+Crescimento
+bacteriano
+Infecção
+
+<!-- IMG:pg33 -->
+
+### Página 34
+
+FATORES DE RISCO
+:
+OBSTRUÇÃO NASAL -  MOVIMENTO MUCOCILIAR –
+ALTERAÇÃO IMUNOLÓGICA
+LOCAIS:
+ IVAS  Atresia coanal
+ Hipertrofia de
+ Rinite alérgica adenóide  Pólipo nasal
+ Rinite hipertrófica e  Corpo estranho  Tumores
+atrófica
+ Desvio septal  Alterações anatômicas
+ Hipertrofia de
+ Infecção dentária  Fenda palatina
+adenóide
+ Trauma facial
+ Iatrogenia
+
+<!-- IMG:pg34 -->
+
+### Página 35
+
+SISTÊMICOS:
+• Fibrose cística
+• Imunodeficiências (SIDA, IgA secretora)
+• Discinesia ciliar (Sd. Kartagener)
+• Diabetes
+• Tuberculose (específico e raro)
+• Quimioterapia
+• Refluxo gastro-esofágico (ainda
+controverso)
+
+<!-- IMG:pg35 -->
+
+### Página 36
+
+FATORES AMBIENTAIS
+:
+• Fumaça de cigarro
+• Poluentes químicos (NO , SO )
+2 2
+• Temperatura e umidade
+–Baixa temperatura
+–Baixa umidade
+• Barotrauma (viagens aéreas, mergulho,
+câmara hiperbárica)
+
+<!-- IMG:pg36 -->
+
+### Página 37
+
+CLASSIFICAÇÃO:*
+• AGUDA – menos de 12 semanas
+• CRÔNICA – 12 ou mais semanas
+• RECORRENTE – ≥ 4 episódios/ano
+• “COMPLICADA”
+* EPOS - 2020
+
+<!-- IMG:pg37 -->
+
+### Página 38
+
+MICROBIOLOGIA
+SINUSITE AGUDA
+:
+• Streptococcus pneumoniae
+• Haemophilus influenza
+• Moraxella catarrhalis
+• Staphylococcus aureus
+• anaeróbios
+
+<!-- IMG:pg38 -->
+
+### Página 39
+
+SINTOMATOLOGIA
+:
+ Dor facial ou cefaleia  Dor de dente – arcada
+superior
+ Pressão facial
+ Fadiga, febre
+ Obstrução nasal
+ Tosse
+ Secreção nasal
+ Irritação na garganta
+ Diminuição do olfato
+ Disfonia
+
+<!-- IMG:pg39 -->
+
+### Página 40
+
+EXAMES COMPLEMENTARES
+:
+–Radiografia dos seios paranasais
+–Endoscopia nasal
+–Tomografia computadorizada dos seios
+paranasais
+–Ressonância magnética (só diferencial)
+
+<!-- IMG:pg40 -->
+
+### Página 41
+
+Nasofibroscopia
+:
+
+<!-- IMG:pg41 -->
+
+### Página 42
+
+Tomografia computadorizada
+:
+Normal Pansinusopatia
+
+<!-- IMG:pg42 -->
+
+### Página 43
+
+TRATAMENTO
+:
+Obstrução do óstio de
+drenagem
+ pO  pH,  Retenção de
+2,
+pCO secreções
+ Movimento
+mucociliar
+Crescimento
+bacteriano
+Infecção
+
+<!-- IMG:pg43 -->
+
+### Página 44
+
+Tratamento clínico
+:
+• Dor
+• Infecção
+• Edema de mucosa
+• Drenagem da secreção
+• Permitir aeração e drenagem do seio e
+permeabilidade do complexo óstio-meatal
+• Tratar fatores predisponentes (local, sistêmico
+e ambiental)
+
+<!-- IMG:pg44 -->
+
+### Página 45
+
+Intensidade dos Sintomas
+1 2 3 5 10
+Dias
+
+<!-- IMG:pg45 -->
+
+### Página 46
+
+Intensidade dos Sintomas
+1 2 3 5 10
+Dias
+
+<!-- IMG:pg46 -->
+
+### Página 47
+
+Intensidade dos Sintomas
+1 2 3 5 10
+Dias
+
+<!-- IMG:pg47 -->
+
+### Página 48
+
+Intensidade dos Sintomas
+10 dias: provável bacteriana*
+1 2 3 5 10
+Dias
+* ponto de corte estabelecido a partir da evolução clínica habitual das infecções virais
+
+<!-- IMG:pg48 -->
+
+### Página 49
+
+Tratamento clínico
+:
+• Antimicrobianos
+• Anti-histamínicos
+• Corticóides sistêmicos e/ou tópicos
+• Descongestionante nasal sistêmico e/ou tópico
+• Analgésicos
+• Solução salina
+• Mucolítico (??)
+
+<!-- IMG:pg49 -->
+
+### Página 50
+
+Antibacterianos
+:
+• AMOXICILINA
+• AMOXICILINA + ÁCIDO CLAVULÂMICO
+• MACROLIDIOS (Claritromicina)
+• Cefalosporinas 2a geração (cefprozila, cefixima,
+axetil cefuroxima)
+• Quinolonas (levofloxacina, moxifloxacina)
+• Clindamicina
+• Metronidazol (+ associação)
+• Cefalosporinas 3a geração (ceftriaxona)
+
+<!-- IMG:pg50 -->
+
+### Página 51
+
+COMPLICAÇÕES
+:
+• Orbitárias:
+• Celulite e abscesso palpebral
+• Celulite e abscesso subperiosteal
+• Celulite e abscesso orbitário
+• Cranianas:
+• Osteomielite frontal
+• Intracranianas:
+• Meningite
+• Abscesso extradural
+• Abscesso subdural
+• Abscesso cerebral
+• Tromboflebite do seio cavernoso
+
+<!-- IMG:pg51 -->
+
+### Página 52
+
+Celulite orbitária
+Osteomielite frontal
+
+<!-- IMG:pg52 -->
+
+### Página 53
+
+Abscesso epidural
+
+<!-- IMG:pg53 -->
+
+### Página 54
+
+Tratamento cirúrgico
+:
+–Insucesso do tratamento clínico
+–Rinossinusite complicada
+–Rinossinusite e polipose
+–Rinossinusite fúngica
+–Rinossinusites e fatores predisponentes
+VISA AERAÇÃO E DRENAGEM DO SEIO E PERMEABILIDADE
+DO COMPLEXO ÓSTIOMEATAL!
+
+<!-- IMG:pg54 -->
+
+### Página 55
+
+Boa semana a todos !
+
+<!-- IMG:pg55 -->

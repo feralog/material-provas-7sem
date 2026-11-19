@@ -1,0 +1,289 @@
+{
+  "titulo": "Prática de Síndromes Hipertensivas",
+  "eyebrow": "Ginecologia e Obstetrícia · Simulação de Eclâmpsia",
+  "subtitulo": "O passo a passo esperado diante de uma convulsão eclâmptica",
+  "intro": "Roteiro de simulação da eclâmpsia, na ordem em que é cobrado: reconhecer, chamar ajuda, posicionar, proteger a via aérea, oxigenar e monitorizar; sulfato de magnésio com seus sinais de intoxicação e antídoto; controle da crise hipertensiva; resolução da gestação, pós-parto e causas de óbito materno.",
+  "questoes": [
+    {
+      "question": "Gestante de 31 semanas, com PA de 170 x 112 mmHg e cefaleia desde a manhã, apresenta convulsão tônico-clônica generalizada no pronto-socorro obstétrico. Não tem antecedente de epilepsia. Qual é o diagnóstico a ser verbalizado de imediato?",
+      "options": [
+        "Eclâmpsia, emergência obstétrica",
+        "Epilepsia de início na gestação",
+        "Síndrome HELLP com encefalopatia",
+        "Acidente vascular cerebral isquêmico"
+      ],
+      "correctIndex": 0,
+      "explanation": "Convulsão tônico-clônica generalizada em gestante hipertensa após 20 semanas, sem outra causa, é eclâmpsia. Nomear a emergência em voz alta é o primeiro item esperado da equipe: é o que dispara a chamada de ajuda e o sulfato de magnésio. HELLP é diagnóstico laboratorial, e não se espera exame de imagem para começar o tratamento."
+    },
+    {
+      "question": "Reconhecida a eclâmpsia no leito de uma gestante de 34 semanas, qual é a ação seguinte esperada do médico, antes de qualquer medicação?",
+      "options": [
+        "Solicitar ajuda: enfermagem, outro obstetra e apoio",
+        "Aplicar diazepam EV para interromper a convulsão",
+        "Levar a paciente direto ao centro cirúrgico",
+        "Colher os exames da rotina de doença hipertensiva"
+      ],
+      "correctIndex": 0,
+      "explanation": "Logo depois de identificar a emergência, pede-se ajuda (equipe de enfermagem, outros obstetras, apoio): o que vem em seguida — posicionar, proteger a via aérea, ofertar oxigênio, monitorizar, puncionar acessos e preparar o sulfato — exige várias mãos ao mesmo tempo. Diazepam não é o anticonvulsivante da eclâmpsia, e o parto só vem depois da estabilização materna."
+    },
+    {
+      "question": "Durante e logo após a crise eclâmptica, em que posição a gestante deve ser colocada?",
+      "options": [
+        "Decúbito lateral esquerdo",
+        "Decúbito dorsal horizontal",
+        "Decúbito ventral com coxins",
+        "Semissentada, em Fowler"
+      ],
+      "correctIndex": 0,
+      "explanation": "O decúbito lateral esquerdo deixa secreções e vômito escorrerem para fora da boca, reduzindo o risco de broncoaspiração — uma das causas de óbito materno na eclâmpsia — e tira o peso do útero de cima da veia cava inferior, melhorando o retorno venoso e a perfusão placentária. O decúbito dorsal faz o contrário nas duas frentes."
+    },
+    {
+      "question": "Cessada a convulsão, a paciente permanece torporosa, com respiração ruidosa por queda da língua. Que dispositivo é usado para proteger a via aérea, se necessário?",
+      "options": [
+        "Cânula orofaríngea de Guedel",
+        "Intubação orotraqueal imediata",
+        "Máscara laríngea de rotina",
+        "Traqueostomia de urgência"
+      ],
+      "correctIndex": 0,
+      "explanation": "A proteção de vias aéreas inclui a cânula orofaríngea de Guedel quando necessária, que impede a queda da língua no período pós-ictal. A intubação fica reservada para falha de ventilação ou rebaixamento persistente da consciência, e não é rotina na eclâmpsia."
+    },
+    {
+      "question": "Após posicionar a paciente e proteger a via aérea, qual é a oferta de oxigênio esperada?",
+      "options": [
+        "8 L/min, reavaliando a resposta, até 10 L/min",
+        "2 L/min, reavaliando a resposta, até 4 L/min",
+        "4 L/min, reavaliando a resposta, até 6 L/min",
+        "1 L/min, reavaliando a resposta, até 3 L/min"
+      ],
+      "correctIndex": 0,
+      "explanation": "A oxigenioterapia começa com 8 L/min e é ajustada pela resposta, até 10 L/min. A convulsão consome oxigênio e a respiração pós-ictal é ineficiente, enquanto o feto depende diretamente da oxigenação materna; fluxos baixos de cateter nasal não dão conta dessa demanda."
+    },
+    {
+      "question": "Qual conjunto de parâmetros compõe a monitorização inicial da gestante em eclâmpsia?",
+      "options": [
+        "PA, FC, FR e saturação de oxigênio",
+        "PA, temperatura e glicemia capilar",
+        "FC, pressão venosa central e lactato",
+        "PA, FC e eletroencefalograma contínuo"
+      ],
+      "correctIndex": 0,
+      "explanation": "A monitorização inicial é de pressão arterial, frequência cardíaca, frequência respiratória e saturação de oxigênio. A frequência respiratória, em particular, continua vigiada durante todo o uso do sulfato de magnésio, porque a depressão respiratória é sinal de intoxicação pela droga."
+    },
+    {
+      "question": "Com a paciente posicionada, oxigenada e monitorizada, quais condutas adicionais completam o suporte inicial?",
+      "options": [
+        "Dois acessos venosos calibrosos, exames laboratoriais e sonda vesical",
+        "Um acesso venoso fino e exames laboratoriais só depois do parto",
+        "Dois acessos calibrosos e expansão rápida com dois litros de cristaloide",
+        "Acesso venoso central, gasometria arterial e tomografia de crânio"
+      ],
+      "correctIndex": 0,
+      "explanation": "As condutas adicionais são dois acessos venosos calibrosos, a coleta da rotina laboratorial da doença hipertensiva e a sondagem vesical de demora para medir a diurese horária. Expandir volume agressivamente é perigoso: a permeabilidade capilar está aumentada, e o líquido infundido extravasa para o terceiro espaço, inclusive para o pulmão."
+    },
+    {
+      "question": "Qual painel corresponde à rotina laboratorial da doença hipertensiva específica da gestação colhida na eclâmpsia?",
+      "options": [
+        "Hemograma com plaquetas, TGO, TGP, DHL, bilirrubinas, creatinina, ureia e coagulograma",
+        "Hemograma, glicemia, TSH, sódio, potássio, cálcio, magnésio, amilase e urina tipo 1",
+        "Hemograma, PCR, procalcitonina, hemocultura, lactato, gasometria e urocultura",
+        "Hemograma, troponina, CK-MB, BNP, D-dímero, gasometria, sódio e potássio"
+      ],
+      "correctIndex": 0,
+      "explanation": "A rotina busca lesão de órgão-alvo e síndrome HELLP: hemograma com plaquetas (plaquetopenia), TGO e TGP (lesão hepática), DHL e bilirrubinas totais e frações (hemólise), creatinina e ureia (função renal) e coagulograma (coagulopatia e CIVD)."
+    },
+    {
+      "question": "A lista abaixo resume a abordagem inicial esperada da equipe diante de uma convulsão eclâmptica. Qual é o tratamento específico, imediato, que completa essa abordagem?",
+      "options": [
+        "Sulfato de magnésio 4 g EV, em infusão lenta",
+        "Diazepam 10 mg EV, repetido até cessar a crise",
+        "Fenitoína 15 mg/kg EV, em infusão contínua",
+        "Cesárea de emergência, assim que houver sala"
+      ],
+      "correctIndex": 0,
+      "explanation": "O tratamento imediato da eclâmpsia é o sulfato de magnésio a 50%, superior a qualquer outro anticonvulsivante tanto na prevenção quanto no tratamento de novas crises. Benzodiazepínico e fenitoína não são a escolha, e a cesárea só entra depois da estabilização materna.",
+      "image": "pg03",
+      "imageCaption": "Expectativa da equipe na abordagem inicial da eclâmpsia"
+    },
+    {
+      "question": "Qual é a dose de ataque do sulfato de magnésio no esquema de Zuspan?",
+      "options": [
+        "4 g EV, em infusão lenta",
+        "6 g EV, em infusão lenta",
+        "2 g EV, em infusão lenta",
+        "4 g EV, em bolus rápido"
+      ],
+      "correctIndex": 0,
+      "explanation": "O ataque do Zuspan é de 4 g endovenosos, infundidos lentamente, em cerca de 10 a 20 minutos. Como a ampola a 50% tem 10 mL com 5 g, separam-se 8 mL (4 g) e diluem-se em 12 mL de água destilada, formando 20 mL. Os 6 g pertencem ao esquema de Sibai, e o bolus rápido expõe a paciente a pico tóxico de magnésio."
+    },
+    {
+      "question": "Feito o ataque e com bomba de infusão disponível, qual é a manutenção do esquema de Zuspan?",
+      "options": [
+        "1 a 2 g/h EV em bomba de infusão",
+        "2 a 3 g/h EV em bomba de infusão",
+        "0,5 g/h EV em bomba de infusão",
+        "4 g EV em bolus a cada 4 horas"
+      ],
+      "correctIndex": 0,
+      "explanation": "No Zuspan, a manutenção é de 1 a 2 g por hora em bomba de infusão contínua, depois do ataque de 4 g endovenosos. A faixa de 2 a 3 g/h pertence ao esquema de Sibai, cujo ataque é de 6 g."
+    },
+    {
+      "question": "Em um serviço sem bomba de infusão, qual manutenção do sulfato de magnésio pode ser usada?",
+      "options": [
+        "5 g IM profundo a cada 4 horas",
+        "5 g IM profundo a cada 12 horas",
+        "2 g IM profundo a cada 4 horas",
+        "10 g EV em bolus a cada 6 horas"
+      ],
+      "correctIndex": 0,
+      "explanation": "O esquema de Pritchard dispensa bomba de infusão: a manutenção é de 5 g intramusculares profundos a cada 4 horas. Pelo protocolo FEBRASGO, o ataque completo desse esquema é de 4 g endovenosos somados a 10 g intramusculares, 5 g em cada nádega."
+    },
+    {
+      "question": "Seis horas após iniciar o sulfato de magnésio, a gestante está sonolenta, com reflexo patelar abolido, frequência respiratória de 10 irpm e diurese de 15 mL/h. Qual é a conduta?",
+      "options": [
+        "Suspender o sulfato e aplicar gluconato de cálcio 10%, 10 mL EV lento",
+        "Reduzir a infusão pela metade e reavaliar os reflexos em uma hora",
+        "Manter o sulfato e fazer furosemida EV para recuperar a diurese",
+        "Suspender o sulfato e aplicar bicarbonato de sódio 8,4%, 10 mL EV"
+      ],
+      "correctIndex": 0,
+      "explanation": "Reflexo abolido, frequência respiratória abaixo de 12 irpm e diurese abaixo de 25 mL/h configuram intoxicação por magnésio. A conduta é suspender o sulfato e aplicar o antídoto, gluconato de cálcio a 10%, 10 mL endovenosos lentamente. Reduzir a manutenção pela metade é ajuste para creatinina elevada sem sinais de toxicidade, não para intoxicação instalada."
+    },
+    {
+      "question": "Durante a manutenção do sulfato de magnésio, qual débito urinário sinaliza risco de acúmulo da droga?",
+      "options": [
+        "Menor que 25 mL por hora",
+        "Menor que 100 mL por hora",
+        "Menor que 75 mL por hora",
+        "Menor que 150 mL por hora"
+      ],
+      "correctIndex": 0,
+      "explanation": "O magnésio é eliminado pelos rins, então diurese abaixo de 25 mL/h faz a droga acumular. Por isso a sondagem vesical de demora e o controle de diurese horária fazem parte da conduta: sem eles, a oligúria passa despercebida até surgirem arreflexia e depressão respiratória."
+    },
+    {
+      "question": "A gestante em uso de sulfato de magnésio é monitorizada pelos itens abaixo. Com o acúmulo progressivo de magnésio, qual parâmetro costuma se alterar primeiro?",
+      "options": [
+        "Os reflexos osteotendinosos",
+        "A saturação de oxigênio",
+        "A frequência cardíaca",
+        "A pressão arterial média"
+      ],
+      "correctIndex": 0,
+      "explanation": "A toxicidade segue uma escada de magnesemia: os reflexos são abolidos entre 9,6 e 12 mg/dL, a depressão respiratória surge a partir de 14,4 mg/dL e a parada cardíaca acima de 25 mg/dL. Por isso o reflexo patelar é o sinal de alerta mais precoce e deve ser testado a cada reavaliação, junto com a frequência respiratória e a diurese horária.",
+      "image": "pg10",
+      "imageCaption": "Itens da monitorização materna"
+    },
+    {
+      "question": "Após o ataque de sulfato de magnésio, a PA permanece em 172 x 114 mmHg. Qual esquema endovenoso controla a crise hipertensiva?",
+      "options": [
+        "Hidralazina 5 mg IV a cada 20 min, até 30 mg",
+        "Hidralazina 20 mg IV a cada 5 min, até 100 mg",
+        "Enalaprilato 1,25 mg IV a cada 6 h, até 5 mg",
+        "Furosemida 40 mg IV a cada 20 min, até 120 mg"
+      ],
+      "correctIndex": 0,
+      "explanation": "A hidralazina é feita em doses de 5 mg endovenosos a cada 20 minutos, com máximo de 30 mg; a ampola de 20 mg/mL é diluída em 19 mL de água destilada, ficando a 1 mg/mL. Inibidores da ECA são contraindicados na gestação, e diurético não trata a crise hipertensiva da pré-eclâmpsia, em que o volume intravascular já está reduzido."
+    },
+    {
+      "question": "Qual é a alternativa por via oral à hidralazina no controle da crise hipertensiva da gestante?",
+      "options": [
+        "Nifedipino 10 mg VO, repetido até o máximo de 30 mg",
+        "Captopril 25 mg VO, repetido até o máximo de 75 mg",
+        "Metildopa 500 mg VO, repetida até o máximo de 2 g",
+        "Atenolol 50 mg VO, repetido até o máximo de 150 mg"
+      ],
+      "correctIndex": 0,
+      "explanation": "O nifedipino de liberação imediata, 10 mg por via oral, é a alternativa à hidralazina e pode ser repetido até o máximo de 30 mg. O intervalo entre as doses varia entre protocolos (de 10 minutos a 20–30 minutos no FEBRASGO), mas dose e teto não mudam. Metildopa é droga de manutenção, lenta demais para a crise, e captopril é contraindicado na gestação."
+    },
+    {
+      "question": "Logo após a convulsão eclâmptica, com a mãe ainda em estabilização, a ausculta mostra BCF de 100 bpm. Qual é a conduta?",
+      "options": [
+        "Estabilizar a mãe e reavaliar o BCF, sem cesárea imediata",
+        "Cesárea de emergência pelo sofrimento fetal agudo",
+        "Parto instrumental com fórceps para abreviar o nascimento",
+        "Tocólise com nifedipino e corticoide antes do parto"
+      ],
+      "correctIndex": 0,
+      "explanation": "A bradicardia fetal logo após a crise reflete a hipóxia materna transitória, dura de 3 a 5 minutos e melhora com a estabilização da mãe. Não indica cesárea de emergência: a sequência é sulfato, estabilização e só então resolução. O feto segue vigiado com BCF, movimentos fetais e cardiotocografia, em busca de sinais de sofrimento que persistam."
+    },
+    {
+      "question": "Gestante de 30 semanas teve uma crise eclâmptica e já está estável, em uso de sulfato de magnésio e com PA controlada. Qual é a conduta obstétrica?",
+      "options": [
+        "Resolver a gestação agora, após a estabilização materna",
+        "Manter conduta expectante até 34 semanas com sulfato",
+        "Adiar o parto por 48 horas para completar o corticoide",
+        "Manter conduta expectante até 37 semanas se PA controlada"
+      ],
+      "correctIndex": 0,
+      "explanation": "Eclâmpsia é indicação de resolução imediata da gestação, em qualquer idade gestacional, assim que a mãe estiver estável. O corticoide antenatal pode ser iniciado, mas nunca é razão para adiar o parto diante de situação materna grave; conduta expectante é para pré-eclâmpsia sem deterioração, não para eclâmpsia."
+    },
+    {
+      "question": "Gestante de 36 semanas, estabilizada após eclâmpsia, com cardiotocografia normal, sem sangramento e colo favorável. Considerando os fatores abaixo, qual é a via de parto?",
+      "options": [
+        "Indução do parto vaginal com ocitocina",
+        "Cesárea, pois eclâmpsia exige via alta",
+        "Cesárea eletiva após 48 h de sulfato",
+        "Aguardar trabalho de parto espontâneo"
+      ],
+      "correctIndex": 0,
+      "explanation": "A via de parto na eclâmpsia é obstétrica: depende da condição materna, da vitalidade fetal e das condições obstétricas, e a eclâmpsia por si só não indica cesárea. Com mãe estável, feto bem e colo favorável, induz-se com ocitocina; colo desfavorável passaria antes por sonda de Foley ou misoprostol. Cesárea fica para vitalidade fetal comprometida, instabilidade materna, sangramento ou hipertensão de difícil controle.",
+      "image": "pg13",
+      "imageCaption": "Fatores que definem a via de parto"
+    },
+    {
+      "question": "A paciente teve parto vaginal duas horas após a eclâmpsia. Por quanto tempo o sulfato de magnésio deve ser mantido?",
+      "options": [
+        "Por 24 horas após o parto",
+        "Por 6 horas após o parto",
+        "Por 12 horas após o parto",
+        "Por 72 horas após o parto"
+      ],
+      "correctIndex": 0,
+      "explanation": "O sulfato de magnésio segue em dose de manutenção por 24 horas após o parto, porque o risco de convulsão persiste no puerpério imediato. Suspendê-lo no nascimento deixa a paciente desprotegida justamente na janela em que novas crises ainda podem ocorrer."
+    },
+    {
+      "question": "No pós-parto imediato de uma paciente com eclâmpsia, com que objetivo os exames laboratoriais são reavaliados?",
+      "options": [
+        "Rastrear lesão de órgão-alvo e HELLP com coagulopatia",
+        "Definir o momento de suspender o sulfato de magnésio",
+        "Liberar a amamentação, contraindicada após eclâmpsia",
+        "Confirmar a eclâmpsia, que depende de proteinúria"
+      ],
+      "correctIndex": 0,
+      "explanation": "A doença não termina com o nascimento: a reavaliação laboratorial pós-parto procura lesão de órgão-alvo e síndrome HELLP, inclusive com coagulopatia. A suspensão do sulfato segue o tempo (24 horas após o parto), a amamentação não é contraindicada e a proteinúria não é obrigatória para o diagnóstico."
+    },
+    {
+      "question": "Quais são as principais causas de óbito materno no cenário de eclâmpsia?",
+      "options": [
+        "Broncoaspiração, choque e parada cardiorrespiratória",
+        "Sepse puerperal, embolia amniótica e tromboembolismo",
+        "Rotura uterina, inversão uterina e acretismo placentário",
+        "Cetoacidose, tireotoxicose e insuficiência suprarrenal"
+      ],
+      "correctIndex": 0,
+      "explanation": "Na eclâmpsia, a mãe morre por broncoaspiração durante ou após a crise, por choque — distributivo ou hipovolêmico — e por parada cardiorrespiratória. É por isso que decúbito lateral, proteção da via aérea e monitorização vêm antes mesmo da medicação no atendimento."
+    },
+    {
+      "question": "Na eclâmpsia, qual mecanismo explica o choque distributivo como causa de óbito materno?",
+      "options": [
+        "Hipovolemia relativa por extravasamento para o terceiro espaço",
+        "Perda sanguínea aguda por descolamento prematuro de placenta",
+        "Vasodilatação anafilática desencadeada pelo sulfato de magnésio",
+        "Falência de bomba por miocardiopatia periparto descompensada"
+      ],
+      "correctIndex": 0,
+      "explanation": "No choque distributivo, a disfunção endotelial aumenta a permeabilidade capilar e o líquido extravasa para o terceiro espaço: o intravascular fica com hipovolemia relativa, mesmo sem perda de sangue. Já o choque hipovolêmico verdadeiro vem do descolamento prematuro de placenta, da coagulação intravascular disseminada e da hemorragia pós-parto."
+    },
+    {
+      "question": "Qual fator mais piora o prognóstico materno na eclâmpsia?",
+      "options": [
+        "Atraso no diagnóstico e na conduta",
+        "Idade materna acima de 35 anos",
+        "Nuliparidade com pré-natal regular",
+        "Ganho de peso acima do esperado"
+      ],
+      "correctIndex": 0,
+      "explanation": "O fator de piora do prognóstico é o atraso no diagnóstico e na conduta. Cada passo da sequência — reconhecer, chamar ajuda, proteger a via aérea, dar sulfato, controlar a pressão — reduz a chance de broncoaspiração, choque e parada; hesitar é o que transforma a crise em óbito."
+    }
+  ]
+}

@@ -1,0 +1,354 @@
+{
+  "titulo": "Faringotonsilites e SAOS",
+  "eyebrow": "Otorrinolaringologia · Faringe, Laringe e Sono",
+  "subtitulo": "Das amígdalas e adenoides à apneia obstrutiva do sono",
+  "intro": "Anel de Waldeyer, doenças da adenoide e das tonsilas palatinas, faringotonsilite viral × bacteriana, mononucleose e Plaut-Vincent, indicações de adenoamigdalectomia, laringites e a síndrome da apneia obstrutiva do sono — fisiopatologia, exame, polissonografia e tratamento.",
+  "questoes": [
+    {
+      "question": "Uma criança de 4 anos tem quadro de IVAS com febre, rinorreia, obstrução nasal e roncos noturnos que desaparecem por completo quando o processo infeccioso termina. Qual é o diagnóstico mais provável?",
+      "options": [
+        "Adenoidite aguda",
+        "Adenoidite crônica",
+        "Tonsilite caseosa",
+        "Hiperplasia tonsilar"
+      ],
+      "correctIndex": 0,
+      "explanation": "A adenoidite aguda se apresenta como uma IVAS: febre, rinorreia (purulenta ou não), obstrução nasal e ronco. O detalhe que a separa da hiperplasia adenoideana é que o ronco desaparece ao fim do processo; na hiperplasia, o ronco e a respiração bucal são persistentes."
+    },
+    {
+      "question": "Qual conjunto de achados compõe a fácies do respirador bucal por hiperplasia adenoideana?",
+      "options": [
+        "Face alongada, lábios entreabertos e palato ogival",
+        "Face arredondada, lábios selados e palato plano",
+        "Face alargada, macroglossia e prognatismo mandibular",
+        "Face curta, hipertelorismo e palato fendido"
+      ],
+      "correctIndex": 0,
+      "explanation": "O respirador bucal crônico desenvolve face alongada, lábios entreabertos, hiperplasia gengival inferior, palato ogival, voz anasalada e deformidade dentária. A mesma hiperplasia causa ronco, halitose, dificuldade alimentar e hipoacusia por otite serosa (a adenoide obstrui o óstio da tuba auditiva). Essas alterações de crescimento orofacial justificam a adenoidectomia mesmo sem apneia."
+    },
+    {
+      "question": "A radiografia lateral de cavum é um dos exames na suspeita de hiperplasia adenoideana. Comparando o exame normal com o hiperplásico, o que caracteriza a adenoide aumentada?",
+      "options": [
+        "Redução da coluna aérea da rinofaringe pela adenoide",
+        "Velamento difuso dos seios maxilares com nível hidroaéreo",
+        "Alargamento da coluna aérea da rinofaringe por atrofia",
+        "Espessamento da epiglote com o sinal do polegar"
+      ],
+      "correctIndex": 0,
+      "explanation": "No RX de cavum, a adenoide aparece como uma massa de partes moles na parede posterossuperior da rinofaringe; quando hiperplásica, ela estreita a coluna aérea entre a adenoide e o palato mole. A nasofibroscopia é a alternativa que mostra a adenoide diretamente obstruindo as coanas.",
+      "image": "pg11",
+      "imageCaption": "RX de cavum: normal × adenoide hiperplásica"
+    },
+    {
+      "question": "Qual é a proporção aproximada das faringotonsilites agudas de etiologia viral?",
+      "options": [
+        "Cerca de 70%",
+        "Cerca de 30%",
+        "Cerca de 10%",
+        "Cerca de 95%"
+      ],
+      "correctIndex": 0,
+      "explanation": "Cerca de 70% das faringotonsilites agudas são virais; os ~30% bacterianos têm como protagonista o Streptococcus pyogenes (EBHGA). A transmissão é por gotículas. É por isso que antibiótico de rotina em toda dor de garganta é erro."
+    },
+    {
+      "question": "Pelo quadro comparativo da imagem, qual combinação favorece faringotonsilite bacteriana por Streptococcus pyogenes em vez de viral?",
+      "options": [
+        "Início abrupto, febre acima de 38 °C e queda do estado geral",
+        "Início insidioso, coriza, rouquidão e febre abaixo de 38 °C",
+        "Tosse, obstrução nasal, estado geral preservado e febre baixa",
+        "Criança de 1 ano, coriza, tosse e linfonodos menores que 1 cm"
+      ],
+      "correctIndex": 0,
+      "explanation": "A bacteriana começa de forma abrupta (bem pela manhã, mal à tarde), derruba o estado geral e dá febre acima de 38 °C com picos que respondem mal ao antitérmico oral. Coriza, obstrução nasal, tosse e rouquidão falam a favor de vírus, e a estreptocócica é rara abaixo de 2 anos.",
+      "image": "f2_pg01",
+      "imageCaption": "Tonsilites virais × bacterianas: prevalência, idade, início, estado geral, febre e sintomas associados"
+    },
+    {
+      "question": "No exame de uma criança com faringotonsilite aguda, qual achado do quadro da imagem aponta para etiologia bacteriana?",
+      "options": [
+        "Petéquias no palato mole e linfonodos >1 cm, dolorosos e assimétricos",
+        "Linfadenopatia generalizada com linfonodos <1 cm e pouco dolorosos",
+        "Hemograma com linfocitose e presença de linfócitos atípicos",
+        "Placa esbranquiçada de remoção difícil, deixando leito sangrante"
+      ],
+      "correctIndex": 0,
+      "explanation": "Na bacteriana, os linfonodos são maiores que 1 cm, dolorosos e assimétricos, as petéquias no palato mole são muito comuns, o exsudato sai fácil sem sangrar e o hemograma mostra neutrofilia com granulações tóxicas. Placa de remoção difícil e sangrante e linfocitose atípica são da mononucleose.",
+      "image": "f2_pg02",
+      "imageCaption": "Diferenças bacterianas × virais: linfadenopatia, exsudato, petéquias e hemograma"
+    },
+    {
+      "question": "Uma criança de 8 anos com tonsilite, petéquias no palato e linfonodomegalia cervical recebeu amoxicilina empírica, sem cultura nem teste rápido para EBHGA. Qual é a conduta recomendada em seguida?",
+      "options": [
+        "Reavaliar o paciente em 48 a 72 horas",
+        "Reavaliar o paciente apenas após 10 dias",
+        "Indicar amigdalectomia após este episódio",
+        "Trocar por metronidazol de forma imediata"
+      ],
+      "correctIndex": 0,
+      "explanation": "O diagnóstico da tonsilite por EBHGA é clínico-epidemiológico, confirmado por cultura ou teste rápido. Quando se trata sem cultura, é obrigatório reavaliar em 48–72 h: a falta de resposta sugere etiologia viral, e a mononucleose entra como hipótese na falha do antibiótico."
+    },
+    {
+      "question": "Adolescente com odinofagia intensa, linfonodomegalia cervical, axilar e inguinal e esplenomegalia apresenta as tonsilas da imagem; a tentativa de remover a placa causa dor e sangramento. Qual é o agente mais provável?",
+      "options": [
+        "Vírus Epstein-Barr (EBV)",
+        "Streptococcus pyogenes",
+        "Herpes-vírus simples (HSV)",
+        "Fusobactéria + Borrelia"
+      ],
+      "correctIndex": 0,
+      "explanation": "É a mononucleose infecciosa: odinofagia intensa, edema do anel de Waldeyer, linfonodomegalia generalizada, hepatoesplenomegalia, linfocitose e exsudato tonsilar de remoção difícil e sangrante. A placa da estreptocócica, ao contrário, sai com facilidade e não deixa leito cruento.",
+      "image": "pg18",
+      "imageCaption": "Tonsilas com exsudato extenso"
+    },
+    {
+      "question": "Um adolescente com faringotonsilite exsudativa recebe amoxicilina e, poucos dias depois, surge exantema maculopapular difuso. Qual diagnóstico deve ser considerado?",
+      "options": [
+        "Mononucleose infecciosa",
+        "Escarlatina estreptocócica",
+        "Alergia isolada a penicilina",
+        "Herpangina por Coxsackie"
+      ],
+      "correctIndex": 0,
+      "explanation": "O uso de aminopenicilinas (amoxicilina, ampicilina) na mononucleose provoca exantema. A doença é pouco diagnosticada e deve ser lembrada justamente quando a 'amigdalite' não responde ao antibiótico ou quando ele desencadeia rash."
+    },
+    {
+      "question": "Mulher jovem, tabagista, desnutrida e com má higiene oral refere odinofagia e halitose muito fétida. A oroscopia mostra lesão úlcero-necrótica em uma única tonsila, como na imagem. Qual é o diagnóstico?",
+      "options": [
+        "Angina de Plaut-Vincent",
+        "Tonsilite estreptocócica",
+        "Mononucleose infecciosa",
+        "Tonsilite crônica caseosa"
+      ],
+      "correctIndex": 0,
+      "explanation": "A angina de Plaut-Vincent é uma simbiose entre fusobactéria e a espiroqueta Borrelia vincentii, típica de adultos jovens com desnutrição, má higiene e tabagismo. A marca é a lesão úlcero-necrótica unilateral com halitose muito fétida; o diagnóstico é clínico e bacteriológico. Lesão unilateral ulcerada também exige pensar em neoplasia.",
+      "image": "pg19",
+      "imageCaption": "Lesão úlcero-necrótica unilateral em tonsila"
+    },
+    {
+      "question": "Qual é o tratamento da angina de Plaut-Vincent?",
+      "options": [
+        "Penicilina benzatina ou amoxicilina, com metronidazol como opção",
+        "Aciclovir oral, associado a corticoide sistêmico por cinco dias",
+        "Fluconazol oral, associado a nistatina tópica por catorze dias",
+        "Soro antidiftérico, associado a eritromicina por catorze dias"
+      ],
+      "correctIndex": 0,
+      "explanation": "Por ser uma infecção fusoespiralar (fusobactéria anaeróbia + espiroqueta), trata-se com penicilina benzatina ou amoxicilina, e o metronidazol entra pela cobertura de anaeróbios. Aciclovir é para herpes, fluconazol para candidíase e soro antidiftérico para difteria."
+    },
+    {
+      "question": "Pelos critérios de Paradise, qual frequência de episódios caracteriza a tonsilite aguda recorrente?",
+      "options": [
+        "7 em 1 ano, 5/ano em 2 anos ou 3/ano em 3 anos",
+        "5 em 1 ano, 3/ano em 2 anos ou 2/ano em 3 anos",
+        "3 em 1 ano, 2/ano em 2 anos ou 1/ano em 3 anos",
+        "10 em 1 ano, 7/ano em 2 anos ou 5/ano em 3 anos"
+      ],
+      "correctIndex": 0,
+      "explanation": "Paradise: 7 episódios em 1 ano, 5 por ano em 2 anos consecutivos ou 3 por ano em 3 anos consecutivos. Cada episódio precisa de febre > 38 °C, adenopatia cervical dolorosa ou teste positivo para EBHGA, tratado com antibiótico que cubra estreptococo. Relato familiar sem documentação pode estar contando quadros virais."
+    },
+    {
+      "question": "Adulto refere halitose persistente e eliminação de pequenas massas amareladas da garganta, sem dor. A oroscopia mostra o aspecto da imagem. Qual é o diagnóstico?",
+      "options": [
+        "Tonsilite crônica caseosa",
+        "Angina de Plaut-Vincent",
+        "Tonsilite aguda bacteriana",
+        "Candidíase orofaríngea"
+      ],
+      "correctIndex": 0,
+      "explanation": "Restos alimentares e descamação do epitélio se depositam nas criptas e formam massas caseosas (caseum), que fermentam e geram odor fétido. O quadro é de halitose e infecção recorrente, SEM DOR. Halitose com retenção de caseum é indicação relativa de amigdalectomia.",
+      "image": "f2_pg06",
+      "imageCaption": "Caseum na cripta tonsilar"
+    },
+    {
+      "question": "Qual das situações abaixo é indicação ABSOLUTA de amigdalectomia?",
+      "options": [
+        "Cor pulmonale por obstrução crônica da via aérea",
+        "Halitose por retenção de caseum nas criptas",
+        "Abscesso periamigdaliano em um único episódio",
+        "Otite média com efusão recorrente na infância"
+      ],
+      "correctIndex": 0,
+      "explanation": "As absolutas são SAOS, cor pulmonale (obstrução crônica → hipóxia e retenção de CO2 → hipertensão pulmonar → sobrecarga do coração direito) e neoplasia. Halitose/caseum, abscesso periamigdaliano e otite média com efusão são relativas. Na adenoidectomia, as absolutas são apenas SAOS e neoplasias."
+    },
+    {
+      "question": "Qual achado na tonsila palatina levanta suspeita de neoplasia e indica amigdalectomia?",
+      "options": [
+        "Aumento unilateral, firme, acinzentado, com ulceração",
+        "Aumento bilateral simétrico, com criptas amplas e caseum",
+        "Hiperemia bilateral com petéquias no palato mole",
+        "Exsudato bilateral facilmente removível, sem sangramento"
+      ],
+      "correctIndex": 0,
+      "explanation": "Assimetria (aumento unilateral), cor acinzentada, consistência firme, ulcerações e linfadenomegalia sugerem neoplasia: linfoma na criança e carcinoma epidermoide no adulto. Crianças imunodeprimidas após transplante de medula óssea também entram nesse grupo de risco."
+    },
+    {
+      "question": "Qual das condições abaixo é contraindicação à adenoamigdalectomia?",
+      "options": [
+        "Fenda palatina submucosa",
+        "Otite média com efusão",
+        "Abscesso periamigdaliano",
+        "Valvulopatia reumática"
+      ],
+      "correctIndex": 0,
+      "explanation": "Contraindicações: anemia, fenda palatina (inclusive a submucosa, que deve ser procurada), coagulopatias e doenças sistêmicas graves. Na fenda submucosa, a retirada do tecido adenoideano deixa insuficiência velofaríngea definitiva. As outras três são indicações relativas."
+    },
+    {
+      "question": "Alguns dias após uma amigdalectomia, a mãe se preocupa com placas brancas nas lojas amigdalianas e mau hálito. A criança está afebril e a oroscopia tem o aspecto da imagem. Qual é a interpretação?",
+      "options": [
+        "Exsudato fibrinoso esperado; a halitose também é esperada",
+        "Infecção da loja amigdaliana; iniciar antibiótico venoso",
+        "Recidiva da tonsila; nova abordagem cirúrgica é indicada",
+        "Candidíase pós-operatória; iniciar antifúngico sistêmico"
+      ],
+      "correctIndex": 0,
+      "explanation": "As lojas amigdalianas se recobrem de exsudato fibrinoso esbranquiçado: é o aspecto normal do pós-operatório, e a halitose é esperada. Os sinais que pedem atenção na orientação pós-operatória são hemorragia, febre, vômitos, dor descontrolada e dificuldade de alimentação.",
+      "image": "f2_pg16",
+      "imageCaption": "Lojas amigdalianas no pós-operatório"
+    },
+    {
+      "question": "Sobre as consequências da adenoamigdalectomia, qual afirmação é correta?",
+      "options": [
+        "A alteração de voz por insuficiência velofaríngea é temporária",
+        "A retirada das tonsilas reduz a proteção imune do anel de Waldeyer",
+        "O paciente passa a ter mais faringites e laringites de repetição",
+        "A alteração de voz é definitiva mesmo sem fenda palatina submucosa"
+      ],
+      "correctIndex": 0,
+      "explanation": "A voz pode ficar alterada por insuficiência velofaríngea, mas de forma temporária — exceto quando há fenda palatina submucosa, que por isso é contraindicação. Não há diminuição da proteção imune do anel de Waldeyer nem aumento de faringites e laringites."
+    },
+    {
+      "question": "Qual das laringites abaixo é classificada como crônica de etiologia bacteriana?",
+      "options": [
+        "Laringite tuberculosa",
+        "Laringite por cândida",
+        "Laringite leishmaniótica",
+        "Laringite viral aguda"
+      ],
+      "correctIndex": 0,
+      "explanation": "As laringites agudas são inespecíficas, em geral virais. As crônicas se dividem em bacterianas (tuberculose, sífilis, hanseníase lepromatosa), fúngicas (cândida, histoplasmose, blastomicose, paracoccidioidomicose), por protozoário (leishmaniose) e por refluxo."
+    },
+    {
+      "question": "Qual é o perfil epidemiológico da SAOS no adulto?",
+      "options": [
+        "Predomínio masculino (3:1), pico na 4ª e 5ª décadas",
+        "Predomínio feminino (3:1), pico na 2ª e 3ª décadas",
+        "Sem diferença entre sexos, pico após a 8ª década",
+        "Predomínio masculino (10:1), pico na adolescência"
+      ],
+      "correctIndex": 0,
+      "explanation": "A SAOS afeta 3 homens para cada mulher, com pico na 4ª e 5ª décadas. Em São Paulo, o estudo de Tufik et al. (2010) encontrou prevalência de 32,9% — é uma doença comum, não uma curiosidade."
+    },
+    {
+      "question": "Em qual fase do sono há maior atonia muscular e, por isso, maior incidência de colapso da via aérea superior?",
+      "options": [
+        "Sono REM (dos sonhos)",
+        "Sono não-REM estágio I",
+        "Sono não-REM estágio II",
+        "Sono de ondas lentas"
+      ],
+      "correctIndex": 0,
+      "explanation": "O sono REM (movimento rápido dos olhos, fase dos sonhos; 20–25% da noite) é a fase de maior atonia muscular, com mais colapso da VAS e obstrução do fluxo aéreo. O sono reparador depende dos estágios III e IV (ondas lentas, sono profundo) e do REM — justamente os que a SAOS fragmenta."
+    },
+    {
+      "question": "Na cascata fisiopatológica da SAOS, qual mecanismo liga a dessaturação às complicações cardiovasculares (HAS, arritmias, IAM e AVC)?",
+      "options": [
+        "Estímulo simpático com alteração da PA e da FC",
+        "Fragmentação do sono com sonolência diurna",
+        "Hipotonia muscular com colapso da via aérea",
+        "Estímulo vagal com bradicardia e hipotensão"
+      ],
+      "correctIndex": 0,
+      "explanation": "Hipotonia/atonia → colapso da VAS → dessaturação → estímulo do sistema nervoso simpático. Daí saem dois braços: alteração da PA e da FC (HAS, arritmias, IAM, AVC) e microdespertares com fragmentação do sono (sonolência diurna e acidentes)."
+    },
+    {
+      "question": "Qual dos fatores abaixo é AGRAVANTE da SAOS, e não um fator predisponente anatômico?",
+      "options": [
+        "Uso noturno de benzodiazepínico",
+        "Retrognatia por mandíbula curta",
+        "Hipoplasia maxilar com palato ogival",
+        "Úvula e palato mole redundantes"
+      ],
+      "correctIndex": 0,
+      "explanation": "Os agravantes são o abuso de álcool e medicamentos como hipnóticos benzodiazepínicos, que aumentam a hipotonia da faringe. Predisponentes são a obesidade (o principal) e as alterações anatômicas: nasais, orofaríngeas (palato e úvula redundantes, amígdalas, língua volumosa) e esqueléticas (retrognatia, hipoplasia de maxila)."
+    },
+    {
+      "question": "Qual conjunto de queixas na anamnese é o mais sugestivo de SAOS?",
+      "options": [
+        "Ronco, pausas respiratórias testemunhadas e sonolência diurna",
+        "Insônia inicial, despertar precoce e humor deprimido ao acordar",
+        "Paralisia do sono, cataplexia e alucinações hipnagógicas",
+        "Movimentos periódicos de pernas, parestesia e urgência motora"
+      ],
+      "correctIndex": 0,
+      "explanation": "Ronco, pausas respiratórias relatadas por terceiros e sonolência diurna excessiva formam o núcleo da anamnese, somados a déficit cognitivo e a queixas secundárias como obstrução nasal e sintomas de rinite. Cataplexia aponta para narcolepsia; parestesia com urgência motora, para pernas inquietas."
+    },
+    {
+      "question": "Na classificação de Mallampati modificado (Friedman) da imagem, o grau IV corresponde a qual achado na oroscopia?",
+      "options": [
+        "Só o palato duro é visível; palato mole e úvula ficam ocultos",
+        "Úvula, pilares e tonsilas palatinas são vistos por completo",
+        "Úvula visível, mas tonsilas e pilares encobertos pela língua",
+        "Palato mole visível, mas úvula encoberta pela base da língua"
+      ],
+      "correctIndex": 0,
+      "explanation": "No Mallampati modificado, o grau I mostra úvula e tonsilas; o II, a úvula sem as tonsilas; o III, só o palato mole; e o IV, apenas o palato duro. Quanto maior o grau, mais a base da língua ocupa a orofaringe e maior o risco de obstrução. A graduação de Brodsky, na mesma figura, mede o volume das tonsilas palatinas.",
+      "image": "f2_pg35",
+      "imageCaption": "Graduação das tonsilas (Brodsky) e índice de Mallampati modificado"
+    },
+    {
+      "question": "Na polissonografia, como se diferencia apneia de hipopneia?",
+      "options": [
+        "Apneia: queda ≥90% do fluxo; hipopneia: queda de 50–90%",
+        "Apneia: queda ≥50% do fluxo; hipopneia: queda de 30–50%",
+        "Apneia: queda ≥90% do fluxo; hipopneia: queda de 10–30%",
+        "Apneia: queda ≥70% do fluxo; hipopneia: queda de 20–70%"
+      ],
+      "correctIndex": 0,
+      "explanation": "Apneia é a interrupção total ou de no mínimo 90% do fluxo aéreo basal; hipopneia, a redução de 50 a 90%. O índice de apneia e hipopneia (IAH) é o número desses eventos por hora de sono e define a gravidade."
+    },
+    {
+      "question": "A polissonografia de um homem de 48 anos com ronco mostra IAH de 22 eventos por hora. Como se classifica o exame?",
+      "options": [
+        "SAOS de grau moderado",
+        "SAOS de grau leve",
+        "SAOS de grau grave",
+        "Exame dentro do normal"
+      ],
+      "correctIndex": 0,
+      "explanation": "IAH até 5 é normal; de 5 a 15, SAOS leve; de 15 a 30, moderada; acima de 30, grave. Com 22 eventos por hora, o paciente tem SAOS moderada — candidato a aparelho intraoral ou a cirurgia se houver alteração anatômica corrigível."
+    },
+    {
+      "question": "Qual é o tratamento de escolha para a SAOS grave (IAH > 30)?",
+      "options": [
+        "CPAP com pressão titulada em polissonografia",
+        "Aparelho intraoral de avanço mandibular",
+        "Uvulopalatofaringoplastia como 1ª opção",
+        "Glossectomia parcial de base de língua"
+      ],
+      "correctIndex": 0,
+      "explanation": "O CPAP é o tratamento de escolha da SAOS grave. A pressão ideal é a que abole os eventos respiratórios e o ronco e corrige a saturação e os microdespertares, e é definida em nova polissonografia. Limites: nem todos se adaptam e o custo é alto."
+    },
+    {
+      "question": "Quais são as indicações do aparelho intraoral (retentor de língua ou avanço mandibular) na SAOS?",
+      "options": [
+        "SAOS leve e moderada, ou grave que não se adaptou ao CPAP",
+        "Apenas SAOS grave, como primeira linha no lugar do CPAP",
+        "Apenas ronco primário, contraindicado em qualquer SAOS",
+        "SAOS em crianças com hiperplasia adenotonsilar importante"
+      ],
+      "correctIndex": 0,
+      "explanation": "O aparelho intraoral (retentor de língua ou avanço maxilomandibular) é indicado na SAOS leve e moderada e na grave que não se adaptou ao CPAP. Na criança com hiperplasia adenotonsilar e SAOS, a conduta é cirúrgica (adenoamigdalectomia, indicação absoluta)."
+    },
+    {
+      "question": "Quais pacientes com SAOS costumam ter os melhores resultados com a cirurgia da via aérea?",
+      "options": [
+        "Jovens, não obesos e sem alterações esqueléticas",
+        "Idosos, obesos e com retrognatia importante",
+        "Obesos mórbidos com SAOS grave sem CPAP",
+        "Portadores de hipoplasia maxilar e IMC alto"
+      ],
+      "correctIndex": 0,
+      "explanation": "A cirurgia é indicada quando há alteração anatômica, na SAOS leve e moderada, e na grave para melhorar o uso do CPAP (como ao corrigir obstrução nasal). Os melhores resultados ocorrem em jovens, não obesos e sem alterações esqueléticas."
+    }
+  ]
+}

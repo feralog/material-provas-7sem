@@ -1,0 +1,338 @@
+{
+  "titulo": "Cefaleias",
+  "eyebrow": "Neurologia · Cefaleias",
+  "subtitulo": "Das primárias às secundárias que não podem passar no pronto-socorro",
+  "intro": "Estruturas sensíveis à dor, primárias × secundárias e sinais de alarme; enxaqueca (critérios, crise e profilaxia), cefaleia tipo tensão, cefaleia em salvas, arterite temporal e as secundárias de urgência.",
+  "questoes": [
+    {
+      "question": "Um tumor cresce no interior do parênquima cerebral sem deslocar vasos nem meninges. Por que ele pode permanecer indolor por muito tempo?",
+      "options": [
+        "O parênquima encefálico e seus vasos internos não são sensíveis à dor",
+        "A calota craniana absorve a pressão e bloqueia os nociceptores durais",
+        "As leptomeninges filtram o estímulo antes que ele chegue ao trigêmeo",
+        "Os seios venosos se adaptam à pressão e deixam de transmitir a dor"
+      ],
+      "correctIndex": 0,
+      "explanation": "São insensíveis à dor os ossos da calota, as leptomeninges, a maior parte da dura-máter, o parênquima encefálico e os vasos no seu interior. A dor só surge quando o processo desloca, traciona, distende ou inflama estruturas sensíveis — artérias do polígono de Willis e porções proximais de seus ramos, grandes seios venosos, dura-máter da base, nervos sensitivos, couro cabeludo, periósteo e vasos extracranianos — ou por vasodilatação."
+    },
+    {
+      "question": "Uma mulher tem enxaqueca desde os 15 anos e, aos 40, sofreu um traumatismo craniano leve; as crises seguem iguais. Qual é o fator decisivo para classificar uma cefaleia como secundária a uma doença orgânica?",
+      "options": [
+        "Associação temporal estreita entre o início da dor e a doença",
+        "Intensidade maior que a das crises de cefaleia primária prévias",
+        "Alteração em exame de imagem, ainda que sem relação de tempo",
+        "Resposta insatisfatória a analgésicos comuns e a triptanos"
+      ],
+      "correctIndex": 0,
+      "explanation": "Pela Sociedade Internacional de Cefaleia, a cefaleia é secundária quando ocorre em associação temporal estreita com a doença orgânica. Se a dor precede a doença, ou surge muito tempo depois dela, trata-se apenas de coexistência — como nesta paciente, cuja enxaqueca antecede o trauma em 25 anos. Intensidade e resposta a remédios não definem a classificação."
+    },
+    {
+      "question": "Qual destas cefaleias, embora classificada entre as primárias, exige investigação antes de ser aceita como primária?",
+      "options": [
+        "Cefaleia desencadeada pela tosse",
+        "Enxaqueca sem aura de padrão estável",
+        "Cefaleia tipo tensão episódica típica",
+        "Cefaleia em salvas episódica típica"
+      ],
+      "correctIndex": 0,
+      "explanation": "As cefaleias do grupo 4 (miscelânea sem lesão estrutural) incluem a da tosse, a do esforço e a da atividade sexual. Elas algumas vezes exigem investigação clínica antes de serem consideradas primárias, porque o mesmo quadro pode ser manifestação de lesão estrutural ou vascular — por exemplo, lesão de fossa posterior ou hemorragia subaracnóidea desencadeada por esforço."
+    },
+    {
+      "question": "Mulher de 42 anos, sem história prévia de cefaleia, há 6 semanas tem dor holocraniana progressiva, pior ao acordar, que a desperta de madrugada e vem com vômitos. O fundo de olho mostra papiledema bilateral. Qual a conduta?",
+      "options": [
+        "Neuroimagem já, pela suspeita de processo expansivo intracraniano",
+        "Analgésico comum e reavaliação após diário de cefaleia por 3 meses",
+        "Profilaxia com amitriptilina, por cefaleia tipo tensão crônica",
+        "Triptano nas crises, por enxaqueca sem aura de início tardio"
+      ],
+      "correctIndex": 0,
+      "explanation": "Cefaleia que aparece de novo, progressiva, matinal, que acorda a paciente e vem com vômitos e papiledema reúne sinais de hipertensão intracraniana. A presença de sinais ao exame neurológico obriga a investigação completa, começando pela neuroimagem (antes de qualquer punção lombar). Uma cefaleia primária de longa evolução não teria esse perfil."
+    },
+    {
+      "question": "No pronto-socorro, qual dado da história torna MENOS provável que uma cefaleia seja referida de olhos, ouvidos, seios da face ou dentes?",
+      "options": [
+        "Dor generalizada desde o primeiro momento",
+        "Dor que começa no olho e depois se espalha",
+        "Dor que começa na orelha e depois irradia",
+        "Dor iniciada na arcada dentária e difundida"
+      ],
+      "correctIndex": 0,
+      "explanation": "Nas cefaleias referidas, a dor começa na estrutura doente — a do glaucoma é ocular, a da otite é auricular, a do abscesso dentário é na arcada — e só com a intensidade do processo se irradia e se generaliza. Uma cefaleia que já se manifesta generalizada dificilmente depende dessas causas; na prática, pacientes com enxaqueca ou cefaleia tipo tensão típicas são muitas vezes investigados para elas sem necessidade."
+    },
+    {
+      "question": "Qual afirmação descreve corretamente a frequência relativa da enxaqueca e da cefaleia tipo tensão?",
+      "options": [
+        "Na população a tipo tensão lidera; no consultório lidera a enxaqueca",
+        "Na população e no consultório a enxaqueca é a primária mais comum",
+        "Na população a enxaqueca lidera; no consultório lidera a tipo tensão",
+        "Na população e no consultório a tipo tensão supera a enxaqueca"
+      ],
+      "correctIndex": 0,
+      "explanation": "A cefaleia tipo tensão é a mais frequente, presente em cerca de 40% da população e sem diferença entre os sexos. A enxaqueca é a segunda na população (15% a 25%, duas a três vezes mais comum nas mulheres), mas é de longe a primeira em consultórios e ambulatórios, porque seus sintomas são mais intensos e incapacitantes."
+    },
+    {
+      "question": "Durante uma crise de enxaqueca, qual conjunto de achados é o mais típico?",
+      "options": [
+        "Dor pulsátil que piora com esforço, fotofobia e náuseas",
+        "Dor em aperto bilateral, sem náuseas e sem piora ao esforço",
+        "Dor periorbitária lancinante com lacrimejamento e agitação",
+        "Dor em pontada de segundos, sem nenhum sintoma associado"
+      ],
+      "correctIndex": 0,
+      "explanation": "A dor da enxaqueca é pulsátil na maioria dos casos, unilateral em cerca de dois terços, moderada ou forte, e piora com esforço físico e movimentos da cabeça. Fotofobia ocorre em cerca de 80%, náuseas em dois terços e vômitos em um terço, e o paciente procura deitar em lugar escuro e silencioso. Dor em aperto sem náusea é cefaleia tipo tensão; dor periorbitária com lacrimejamento e agitação é cefaleia em salvas."
+    },
+    {
+      "question": "Pelos critérios diagnósticos atuais da Classificação Internacional das Cefaleias (ICHD-3), qual combinação define enxaqueca sem aura?",
+      "options": [
+        "≥5 crises de 4 a 72 h, 2 de 4 traços da dor e náusea ou foto + fonofobia",
+        "≥2 crises de 1 a 24 h, 1 de 4 traços da dor e vômito ou fotofobia isolada",
+        "≥5 crises de 30 min a 7 dias, dor bilateral em aperto e sem náuseas",
+        "≥5 crises de 15 a 180 min, dor orbitária e sinais autonômicos ipsilaterais"
+      ],
+      "correctIndex": 0,
+      "explanation": "ICHD-3: pelo menos 5 crises de 4 a 72 horas, com pelo menos 2 de 4 características da dor (unilateral, pulsátil, moderada ou forte, piora com atividade física rotineira) e pelo menos 1 de 2 sintomas (náusea e/ou vômito; fotofobia e fonofobia juntas). Crises de 30 min a 7 dias em aperto descrevem a cefaleia tipo tensão; crises de 15 a 180 min com sinais autonômicos, a cefaleia em salvas."
+    },
+    {
+      "question": "Qual descrição corresponde à aura enxaquecosa típica?",
+      "options": [
+        "Escotoma ou cintilação visual que se instala e cresce em minutos, seguido de dor",
+        "Perda visual súbita e indolor de um olho, que dura segundos e não se repete",
+        "Hemiparesia de início abrupto que persiste por dias após o fim da cefaleia",
+        "Ptose e miose ipsilaterais à dor, que surgem e somem a cada nova crise"
+      ],
+      "correctIndex": 0,
+      "explanation": "A aura é disfunção neurológica focal, mais frequentemente visual: aparece e cresce com fenômenos negativos (escotomas) ou positivos (luzes, cores, cintilações), dura poucos minutos (cada sintoma de 5 a 60 minutos) e, ao desaparecer, dá lugar à dor — a antiga enxaqueca clássica. Déficit que persiste após a cefaleia é complicação (enxaqueca complicada, hoje infarto enxaquecoso); ptose e miose ipsilaterais lembram cefaleia em salvas."
+    },
+    {
+      "question": "Qual fenômeno é apontado como o substrato da aura enxaquecosa?",
+      "options": [
+        "Depressão alastrante cortical, com supressão neuronal e hipoperfusão",
+        "Vasoconstrição carotídea mediada por receptores 5-HT1B na fase dolorosa",
+        "Descarga epileptiforme focal com hiperperfusão do córtex occipital",
+        "Contração prolongada da musculatura pericraniana e cervical posterior"
+      ],
+      "correctIndex": 0,
+      "explanation": "A depressão alastrante de Leão é uma onda de supressão dos disparos neuronais acompanhada de hipoperfusão alastrante no mesmo território e de alterações metabólicas e iônicas; ela determina a aura. Acredita-se que ponha em marcha uma inflamação neurogênica estéril perivascular, com liberação de neuropeptídeos, responsável pela vasodilatação da fase dolorosa."
+    },
+    {
+      "question": "Qual associação entre alimento e substância desencadeante de enxaqueca está correta?",
+      "options": [
+        "Queijos curados — tiramina",
+        "Embutidos — glutamato de sódio",
+        "Comida oriental — tiramina",
+        "Chocolate — nitritos e nitratos"
+      ],
+      "correctIndex": 0,
+      "explanation": "Queijos curados têm alto teor de tiramina; embutidos de carne contêm nitritos e nitratos; a comida oriental, glutamato de sódio. Também são desencadeantes o chocolate, fumo, álcool, drogas vasodilatadoras, sol prolongado, excesso de luz, recintos fechados (aumento do CO₂), estresse, fadiga, privação de sono e hipoglicemia. Anticoncepcionais geralmente pioram a enxaqueca e provavelmente aumentam o risco vascular."
+    },
+    {
+      "question": "Como os triptanos abortam a crise de enxaqueca?",
+      "options": [
+        "Agonismo 5-HT1B (vasoconstrição) e 5-HT1D (inibição trigeminal)",
+        "Antagonismo 5-HT2 central, com bloqueio da depressão alastrante",
+        "Inibição da ciclo-oxigenase e da síntese de prostaglandinas",
+        "Antagonismo dopaminérgico D2, com efeito antiemético e analgésico"
+      ],
+      "correctIndex": 0,
+      "explanation": "Os triptanos são agonistas 5-HT1B/1D. Pelos receptores 5-HT1B contraem os vasos cranianos, sobretudo o leito carotídeo, e fecham shunts arteriovenosos; pelos 5-HT1D inibem as fibras aferentes trigeminais que inervam os vasos e a dura-máter. Não são analgésicos propriamente ditos e funcionam em mais de 65% dos casos, mesmo quando tomados tardiamente."
+    },
+    {
+      "question": "Homem de 55 anos com enxaqueca e angina estável pede algo mais forte para as crises. Qual classe deve ser evitada?",
+      "options": [
+        "Triptanos e derivados do ergot, pelo efeito vasoconstritor",
+        "Anti-inflamatórios não hormonais, pelo risco de broncoespasmo",
+        "Antieméticos procinéticos, pelo risco de arritmia ventricular",
+        "Corticoides parenterais, pelo risco de instabilizar a angina"
+      ],
+      "correctIndex": 0,
+      "explanation": "Triptanos e ergóticos são vasoconstritores. Durante o uso de triptanos houve isquemia miocárdica em pacientes com angina de Prinzmetal e com coronariopatias sintomáticas e assintomáticas; por isso são contraindicados em coronariopatia, doença vascular periférica ou cerebral e hipertensão grave. Os ergóticos, além disso, não devem ser usados em idosos."
+    },
+    {
+      "question": "Qual é o esquema recomendado de sumatriptano subcutâneo na crise de enxaqueca?",
+      "options": [
+        "6 mg por dose, com máximo de 12 mg em 24 horas",
+        "6 mg por dose, com máximo de 24 mg em 24 horas",
+        "20 mg por dose, com máximo de 40 mg em 24 horas",
+        "2 mg por dose, com máximo de 6 mg em 24 horas"
+      ],
+      "correctIndex": 0,
+      "explanation": "Sumatriptano subcutâneo: 6 mg por dose, máximo de 12 mg em 24 horas — via mais eficaz que a oral. Por via oral, 50 mg, repetíveis até duas vezes em 24 horas; spray nasal, 20 mg, com início em 15 minutos. Meia-vida de 2 horas, eliminação hepática e recorrência de 30% a 40% em 24 horas. O esquema de 2 mg até 6 mg é o da ergotamina."
+    },
+    {
+      "question": "Na crise de enxaqueca, qual a diferença prática entre ergóticos e triptanos quanto ao momento de uso?",
+      "options": [
+        "Ergóticos só agem se tomados cedo; triptanos agem em qualquer fase",
+        "Triptanos só agem se tomados cedo; ergóticos agem em qualquer fase",
+        "Ambos só agem se tomados ainda durante a aura, antes da cefaleia",
+        "Ambos agem igualmente bem em qualquer fase da crise de enxaqueca"
+      ],
+      "correctIndex": 0,
+      "explanation": "O emprego de ergóticos deve ser o mais precoce possível, pois tardiamente não têm efeito. Os triptanos podem ser usados em qualquer momento da crise e são eficazes em mais de 65% dos casos mesmo quando tardios. Ainda assim, qualquer medicação rende mais se tomada no início, e a recorrência após o triptano pede a associação de AINH."
+    },
+    {
+      "question": "Paciente usa ergotamina quase todos os dias há meses e chega com dedos frios, pálidos e áreas de necrose. Qual é o quadro e como teria sido prevenido?",
+      "options": [
+        "Ergotismo; respeitar o teto semanal de 12 mg de ergotamina",
+        "Ergotismo; respeitar o teto semanal de 12 mg de sumatriptano",
+        "Raynaud primário; associar betabloqueador à ergotamina",
+        "Síndrome serotoninérgica; associar triptano para baixar a dose"
+      ],
+      "correctIndex": 0,
+      "explanation": "A administração crônica de derivados do ergot pode levar ao ergotismo, situação rara em que há gangrena por oclusão de ramos arteriais distais dos membros e, muitas vezes, amaurose. Para preveni-lo, recomendam-se doses semanais máximas de 12 mg de ergotamina e 6 mg de di-hidroergotamina; na crise, 2 mg de início, repetidos a cada 30 minutos, até 6 mg."
+    },
+    {
+      "question": "Paciente está em crise de enxaqueca há quatro dias, sem resposta a analgésicos e a triptano. Qual a melhor opção?",
+      "options": [
+        "Corticoide parenteral, como dexametasona 16 mg",
+        "Ergotamina 2 mg VO a cada 30 min, sem limite",
+        "Sumatriptano SC de hora em hora até a remissão",
+        "Propranolol oral em dose plena para abortar a dor"
+      ],
+      "correctIndex": 0,
+      "explanation": "Crise prolongada e refratária — estado de mal enxaquecoso, que pela ICHD-3 dura mais de 72 horas — responde melhor a corticoide parenteral: dexametasona 16 mg ou metilprednisolona 80 mg, por 24 a 72 horas; alguns associam ergotamina 0,5 mg IM de 8/8 h por no máximo três dias. O sumatriptano SC tem teto de 12 mg em 24 h, a ergotamina de 6 mg por crise, e o propranolol é profilático."
+    },
+    {
+      "question": "Quando está indicado o tratamento profilático da enxaqueca?",
+      "options": [
+        "Duas ou mais crises fortes por mês, com uso frequente de medicação",
+        "Qualquer paciente com aura, independentemente da frequência",
+        "Apenas após falha de três triptanos diferentes no tratamento da crise",
+        "Somente quando a cefaleia se torna diária por mais de seis meses"
+      ],
+      "correctIndex": 0,
+      "explanation": "A profilaxia é considerada quando há duas ou mais crises fortes por mês e o paciente precisa usar medicação de crise com frequência; o objetivo é espaçar e atenuar as crises. Crises esparsas, até duas por mês, pedem só o tratamento da crise. Diretrizes atuais também consideram quatro ou mais dias de enxaqueca por mês e crises incapacitantes apesar do tratamento agudo."
+    },
+    {
+      "question": "Paciente de 38 anos, hipertenso, tem enxaqueca frequente. Qual profilático é a escolha natural e qual comorbidade o contraindicaria?",
+      "options": [
+        "Propranolol; contraindicado em asma e insuficiência cardíaca",
+        "Propranolol; contraindicado em hipertensão e taquiarritmias",
+        "Flunarizina; contraindicada em asma e insuficiência cardíaca",
+        "Amitriptilina; contraindicada em hipertensão arterial leve"
+      ],
+      "correctIndex": 0,
+      "explanation": "O propranolol (60 a 160 mg/dia, máximo de 240 mg) é o profilático mais usado e estudado e a droga de escolha no hipertenso; pacientes hipotensos dificilmente o toleram. Efeitos: astenia, tontura, hipotensão postural e depressão; FC e PA devem ser controladas. É contraindicado na asma e na insuficiência cardíaca congestiva, e alterações do ritmo cardíaco devem ser bem avaliadas."
+    },
+    {
+      "question": "Uma idosa em uso de flunarizina para enxaqueca passa a apresentar bradicinesia, rigidez e humor deprimido. Qual a explicação mais provável?",
+      "options": [
+        "Impregnação parkinsoniana e depressão induzidas pela flunarizina",
+        "Doença de Parkinson idiopática revelada pela retirada do triptano",
+        "Efeito anticolinérgico da flunarizina sobre os núcleos da base",
+        "Hipotensão postural com hipoperfusão por bloqueio beta-adrenérgico"
+      ],
+      "correctIndex": 0,
+      "explanation": "A flunarizina (5 a 20 mg/dia; jovens toleram bem 10 mg) tem poucos efeitos cardiológicos, mas pode produzir sonolência e, em indivíduos sensíveis, sobretudo idosos, impregnação com quadro parkinsoniano; também pode precipitar depressão. Aconselha-se interromper após três meses, pela possibilidade teórica de discinesia tardia."
+    },
+    {
+      "question": "Homem de 68 anos com hiperplasia prostática e glaucoma precisa de profilaxia para enxaqueca. Qual droga deve ser evitada?",
+      "options": [
+        "Amitriptilina, pelos efeitos anticolinérgicos",
+        "Propranolol, pelo risco de retenção urinária",
+        "Valproato, pelo risco de crise de glaucoma",
+        "Flunarizina, pelo risco de retenção urinária"
+      ],
+      "correctIndex": 0,
+      "explanation": "Os antidepressivos tricíclicos (amitriptilina 25 a 75 mg/dia como profilático) causam boca seca, obstipação, retenção urinária, taquicardia, sonolência ou irritabilidade e ganho de peso. São contraindicados em cardiopatias graves, glaucoma e adenoma de próstata. São especialmente indicados quando há depressão ou ansiedade associadas."
+    },
+    {
+      "question": "Homem de 30 anos com enxaqueca muito frequente e epilepsia vai iniciar profilaxia. Qual droga aproveita a comorbidade e qual exame deve preceder o início?",
+      "options": [
+        "Valproato; função hepática antes de iniciar",
+        "Valproato; função renal e clearance de creatinina",
+        "Flunarizina; eletrocardiograma antes de iniciar",
+        "Metisergida; função tireoidiana antes de iniciar"
+      ],
+      "correctIndex": 0,
+      "explanation": "O ácido valproico e o divalproato (500 a 2.000 mg/dia) são gabaérgicos, anticonvulsivantes e antineurálgicos, especialmente úteis com epilepsia, transtorno bipolar, ansiedade, depressão e cefaleias muito frequentes. Efeitos: sedação, alopecia, tremor, confusão, náuseas; o mais grave é a hepatotoxicidade, por isso se verifica a função hepática antes. Por ser teratogênico, evita-se em mulheres em idade fértil."
+    },
+    {
+      "question": "Paciente com enxaqueca passou a ter cefaleia quase diária e há meses usa, em cerca de 20 dias por mês, um analgésico combinado com cafeína e ergotamina. Qual o diagnóstico mais provável e a conduta?",
+      "options": [
+        "Cefaleia por uso excessivo de medicação; suspender o abuso e iniciar profilaxia",
+        "Enxaqueca crônica refratária; aumentar a dose do analgésico combinado",
+        "Cefaleia tipo tensão crônica; trocar o analgésico por um triptano diário",
+        "Processo expansivo intracraniano; ressonância antes de qualquer conduta"
+      ],
+      "correctIndex": 0,
+      "explanation": "O uso abusivo de ergotamina, triptanos e analgésicos gera cefaleia rebote. Pela ICHD-3, a cefaleia por uso excessivo de medicação exige cefaleia em 15 ou mais dias por mês, em quem já tinha cefaleia, com uso regular por mais de 3 meses de ergóticos, triptanos, opioides ou analgésicos combinados em 10 ou mais dias por mês (ou analgésicos simples em 15 ou mais). A conduta é suspender o abuso — os AINH ajudam na retirada — e iniciar profilaxia."
+    },
+    {
+      "question": "Qual quadro caracteriza a cefaleia do tipo tensão episódica?",
+      "options": [
+        "Dor bilateral em pressão, leve a moderada, sem piora ao subir escadas",
+        "Dor unilateral pulsátil, moderada a forte, que piora ao subir escadas",
+        "Dor orbitária unilateral, muito forte, com lacrimejamento ipsilateral",
+        "Dor bilateral em pressão, forte, com vômitos e fotofobia associados"
+      ],
+      "correctIndex": 0,
+      "explanation": "A cefaleia tipo tensão é descrita como peso, pressão ou constrição, não latejante, frontal, temporal ou frontotemporal, geralmente bilateral, de intensidade fraca a moderada, sem piora com esforço ou movimentos da cabeça. Não há náuseas nem vômitos, e admite-se fotofobia ou fonofobia, mas não as duas. Os principais desencadeantes são emocionais."
+    },
+    {
+      "question": "Mulher de 40 anos tem cefaleia em aperto, bilateral, quase todos os dias há um ano, com humor deprimido e uso diário de analgésicos. Qual a medida terapêutica mais eficaz?",
+      "options": [
+        "Antidepressivo tricíclico, como amitriptilina 50 a 100 mg/dia",
+        "Analgésico comum diário em dose fixa, sem limite de dias",
+        "Triptano oral diário até o desaparecimento completo da dor",
+        "Ergotamina na dose semanal máxima, de forma contínua"
+      ],
+      "correctIndex": 0,
+      "explanation": "É cefaleia tipo tensão crônica (15 ou mais dias por mês), mais comum após os 30 anos, em mulheres, e muitas vezes sintoma de um estado depressivo — 'a ponta de um iceberg depressivo'. Analgésicos atuam pouco e são usados em excesso. Os antidepressivos são a medida mais eficaz, beneficiando cerca de metade dos pacientes, com preferência pela amitriptilina 50 a 100 mg/dia; outros tricíclicos e ISRS também servem."
+    },
+    {
+      "question": "Homem de 28 anos acorda de madrugada, quase sempre no mesmo horário, com dor excruciante atrás do olho direito, lacrimejamento, obstrução nasal e ptose do mesmo lado. Anda pelo quarto, inquieto, e a dor some em cerca de 45 minutos. Isso se repete há três semanas. Qual o diagnóstico?",
+      "options": [
+        "Cefaleia em salvas",
+        "Enxaqueca com aura",
+        "Neuralgia do trigêmeo",
+        "Arterite temporal"
+      ],
+      "correctIndex": 0,
+      "explanation": "A cefaleia em salvas é muito mais comum em homens, com primeiro surto entre 20 e 30 anos. A dor é periorbitária, sempre do mesmo lado, intolerável, dura 15 a 180 minutos, recorre no mesmo horário e acorda o paciente; vem com congestão conjuntival, lacrimejamento e obstrução nasal ipsilaterais, e em 30% com miose e semiptose (Horner). O paciente fica inquieto, ao contrário do enxaquecoso, e as crises se agrupam em surtos de 3 a 8 semanas."
+    },
+    {
+      "question": "Na crise de cefaleia em salvas, quais são as opções sintomáticas mais eficazes?",
+      "options": [
+        "Sumatriptano 6 mg subcutâneo e oxigênio a 100% sob máscara",
+        "Paracetamol oral e dipirona oral em dose plena e precoce",
+        "Propranolol oral e flunarizina oral no início da dor",
+        "Sumatriptano 50 mg oral e ergotamina oral em dose única"
+      ],
+      "correctIndex": 0,
+      "explanation": "Analgésicos têm pouco ou nenhum efeito, e a via oral é lenta demais para crises de 15 a 180 minutos. O sintomático mais eficaz é o sumatriptano subcutâneo 6 mg (alternativa: spray nasal 20 mg). O oxigênio inalado também aborta crises: esquemas antigos usavam 7 L/min, com resposta em cerca de metade dos casos; hoje se recomenda O₂ a 100% em alto fluxo (12 a 15 L/min), com máscara não reinalante, por 15 a 20 minutos."
+    },
+    {
+      "question": "Na cefaleia em salvas, qual opção serve para interromper o surto e qual é indicada na forma crônica?",
+      "options": [
+        "Verapamil ou corticoide no surto; carbonato de lítio na forma crônica",
+        "Propranolol ou pizotifeno no surto; amitriptilina na forma crônica",
+        "Sumatriptano oral contínuo no surto; ergotamina diária na crônica",
+        "Analgésico fixo no surto; fluoxetina em dose alta na forma crônica"
+      ],
+      "correctIndex": 0,
+      "explanation": "Para interromper o surto usam-se corticoides, verapamil, derivados do ergot (metisergida) e ácido valproico — eficazes sobretudo nos primeiros surtos; hoje o verapamil é o preventivo de primeira linha. Na forma crônica (crises por mais de um ano sem remissão, ou com remissões curtas), preconiza-se o carbonato de lítio; valproato, mirtazapina e topiramato também podem ser úteis."
+    },
+    {
+      "question": "Mulher de 72 anos tem cefaleia temporal há três semanas, dor ao mastigar, artéria temporal espessada e dolorosa e VHS de 95 mm. Qual a conduta imediata?",
+      "options": [
+        "Prednisona 1 mg/kg/dia já, sem esperar a biópsia da artéria",
+        "Biópsia da temporal e corticoide só após o resultado do exame",
+        "Triptano subcutâneo e reavaliação se a dor persistir em 48 h",
+        "AINE em dose plena e repetição da VHS em quatro semanas"
+      ],
+      "correctIndex": 0,
+      "explanation": "Cefaleia de início após os 50 anos, claudicação da mandíbula, artéria temporal espessada e VHS elevada (acima de 40 mm na maioria, podendo passar de 100) sugerem arterite temporal. A corticoterapia precoce previne a perda visual por acometimento de ramos da artéria oftálmica, por isso não se espera a biópsia. Prednisona 1 mg/kg/dia, reduzida até manutenção de até 10 mg; a dor costuma sumir em 48 horas. Na perda visual em curso, pulsos de metilprednisolona 1 g/dia por 3 dias."
+    },
+    {
+      "question": "Homem de 45 anos sente, durante esforço físico, uma cefaleia súbita que atinge a intensidade máxima em segundos — 'a pior dor da vida'. O exame neurológico é normal. Qual a sequência diagnóstica adequada?",
+      "options": [
+        "TC de crânio sem contraste; se normal, punção lombar",
+        "Punção lombar primeiro; se normal, TC com contraste",
+        "Analgesia e alta, já que o exame neurológico é normal",
+        "Ressonância eletiva ambulatorial em até 30 dias"
+      ],
+      "correctIndex": 0,
+      "explanation": "Cefaleia em trovoada (pico em menos de 1 minuto) é hemorragia subaracnóidea até prova em contrário, mesmo com exame neurológico normal; a causa não traumática mais comum é a ruptura de aneurisma sacular. A TC sem contraste tem alta sensibilidade nas primeiras horas; se normal, faz-se punção lombar em busca de hemácias e xantocromia, e, confirmado o sangramento, angiografia. A cefaleia benigna do esforço só é aceita depois dessa exclusão."
+    }
+  ]
+}

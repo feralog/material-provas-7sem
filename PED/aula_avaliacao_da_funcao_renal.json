@@ -1,0 +1,350 @@
+{
+  "titulo": "Avaliação da Função Renal",
+  "eyebrow": "Pediatria · Nefrologia",
+  "subtitulo": "Filtração glomerular, creatinina, Schwartz e exame de urina na criança",
+  "intro": "Das forças de Starling e das arteríolas à TFG medida e estimada: creatinina por idade, depuração de creatinina, Schwartz e CKiD U25, cistatina C, exame de urina, proteinúria, categorias KDIGO e lesão renal aguda — com cálculos resolvidos.",
+  "questoes": [
+    {
+      "question": "Menino de 12 anos, 1,50 m, sem vômitos, diarreia ou queda da diurese, com creatinina estável de 0,9 mg/dL; o laudo traz referência de adulto. Pela equação CKiD U25 (TFGe = κ × altura em metros ÷ creatinina em mg/dL, com κ = 39 para meninos de 12 anos), qual o resultado e a conduta?",
+      "options": [
+        "65 mL/min/1,73 m²: reduzida, confirmar e investigar",
+        "91 mL/min/1,73 m²: normal, dispensa investigação",
+        "117 mL/min/1,73 m²: sugere hiperfiltração glomerular",
+        "43 mL/min/1,73 m²: já define DRC na categoria G3b"
+      ],
+      "correctIndex": 0,
+      "explanation": "39 × 1,50 = 58,5; 58,5 ÷ 0,9 = 65 mL/min/1,73 m². Em crianças acima de 2 anos, TFGe abaixo de 90 é sinal de alerta: confirmar o resultado, a qualidade do ensaio e a história prévia. Com só 2 semanas de estabilidade não se rotula DRC, que exige alteração por pelo menos 3 meses. Comparar 0,9 mg/dL com a faixa de adulto daria falsa tranquilidade."
+    },
+    {
+      "question": "Após os 2 anos, a creatinina sérica esperada pode ser estimada por: meninos 0,35 + 0,025 × idade (anos); meninas 0,37 + 0,018 × idade (anos). Qual o valor esperado para um menino de 12 anos, e como fica uma creatinina de 0,9 mg/dL nele?",
+      "options": [
+        "≈ 0,65 mg/dL; 0,9 está acima do esperado para a idade",
+        "≈ 0,59 mg/dL; 0,9 está dentro da variação normal",
+        "≈ 0,90 mg/dL; 0,9 é exatamente o valor esperado",
+        "≈ 1,10 mg/dL; 0,9 está abaixo do esperado para a idade"
+      ],
+      "correctIndex": 0,
+      "explanation": "0,35 + 0,025 × 12 = 0,35 + 0,30 = 0,65 mg/dL. Um valor de 0,9 mg/dL fica quase 40% acima do esperado — coerente com a TFGe de 65 mL/min/1,73 m² pela CKiD U25. O valor 0,59 sai da fórmula feminina (0,37 + 0,018 × 12). A creatinina sobe com a idade porque acompanha o ganho de massa muscular."
+    },
+    {
+      "question": "Menina de 8 anos, 120 cm, creatinina de 0,6 mg/dL dosada pelo método colorimétrico (Jaffé). Pela fórmula de Schwartz original (TFG = k × estatura em cm ÷ creatinina em mg/dL), com o k adequado à idade e ao sexo, qual a TFG estimada?",
+      "options": [
+        "110 mL/min/1,73 m²",
+        "90 mL/min/1,73 m²",
+        "140 mL/min/1,73 m²",
+        "83 mL/min/1,73 m²"
+      ],
+      "correctIndex": 0,
+      "explanation": "Para crianças acima de 1 ano e adolescentes do sexo feminino, k = 0,55: 0,55 × 120 ÷ 0,6 = 110. Os distratores vêm do k errado: 0,45 (RN a termo) dá 90; 0,70 (adolescente masculino) dá 140; 0,413 (Schwartz 'bedside', feito para creatinina enzimática) dá 83. Os k do Schwartz original foram derivados com creatinina por Jaffé."
+    },
+    {
+      "question": "Coleta de urina de 24 horas em uma criança: volume de 864 mL, creatinina urinária de 50 mg/dL, creatinina plasmática de 0,5 mg/dL e superfície corporal de 1,0 m². Qual é a depuração de creatinina corrigida para 1,73 m²?",
+      "options": [
+        "≈ 104 mL/min/1,73 m²",
+        "≈ 60 mL/min/1,73 m²",
+        "≈ 35 mL/min/1,73 m²",
+        "≈ 173 mL/min/1,73 m²"
+      ],
+      "correctIndex": 0,
+      "explanation": "Fluxo urinário: 864 mL ÷ 1.440 min = 0,6 mL/min. Clcr = (Ucr × V) ÷ Pcr = (50 × 0,6) ÷ 0,5 = 60 mL/min, valor ainda não indexado. Corrigindo: 60 × 1,73 ÷ 1,0 ≈ 104 mL/min/1,73 m². Esquecer a correção dá 60; dividir por 1,73 em vez de multiplicar dá 35; supor fluxo de 1 mL/min dá 173."
+    },
+    {
+      "question": "Adolescente de 16 anos, 50 kg, com vômitos e diarreia há 2 dias, usou ibuprofeno; mucosas secas, FC 112 bpm, PA 90/55 mmHg. Creatinina de 0,6 mg/dL há 48 h e 1,2 mg/dL hoje; urinou 100 mL nas últimas 8 horas. Qual a diurese e o estágio KDIGO da lesão renal aguda?",
+      "options": [
+        "0,25 mL/kg/h; LRA estágio 2, pelo critério da creatinina",
+        "0,25 mL/kg/h; LRA estágio 3, pelo critério da diurese",
+        "2,0 mL/kg/h; sem LRA, pois a diurese está preservada",
+        "0,5 mL/kg/h; LRA estágio 1, pelo critério da creatinina"
+      ],
+      "correctIndex": 0,
+      "explanation": "Diurese = 100 ÷ (50 × 8) = 0,25 mL/kg/h. A creatinina dobrou em 48 h: há LRA e, pela razão de 2,0×, estágio 2. Oligúria < 0,5 mL/kg/h por 8 horas equivale ao estágio 1 (o estágio 3 pela diurese exige < 0,3 mL/kg/h por 24 h ou anúria por 12 h); classifica-se pelo critério mais grave. Hipoperfusão agravada pelo AINE é o mecanismo provável, mas não prova causa pré-renal exclusiva. Não se calcula TFGe: a creatinina está subindo, fora do equilíbrio."
+    },
+    {
+      "question": "Qual dos achados abaixo, isoladamente, é suficiente para definir lesão renal aguda pelos critérios KDIGO?",
+      "options": [
+        "Aumento da creatinina ≥ 0,3 mg/dL em até 48 horas",
+        "Aumento da creatinina ≥ 0,1 mg/dL em até 7 dias",
+        "Diurese < 1,0 mL/kg/h por pelo menos 2 horas",
+        "Creatinina acima da faixa de referência de adultos"
+      ],
+      "correctIndex": 0,
+      "explanation": "Qualquer um dos três critérios basta: aumento da creatinina ≥ 0,3 mg/dL em 48 horas; aumento para ≥ 1,5 vez o basal em até 7 dias; ou diurese < 0,5 mL/kg/h por pelo menos 6 horas. O valor basal e a cronologia fazem parte do diagnóstico — um valor isolado comparado à faixa de adulto não define LRA. Avaliar a diurese exige coleta confiável e peso."
+    },
+    {
+      "question": "Na hipovolemia, dois mediadores sustentam a pressão glomerular. Qual opção descreve corretamente esses mediadores e o efeito dos fármacos sobre eles?",
+      "options": [
+        "Prostaglandinas dilatam a aferente (AINE inibe); angiotensina II contrai a eferente (IECA/BRA reduzem)",
+        "Prostaglandinas contraem a eferente (AINE inibe); angiotensina II dilata a aferente (IECA/BRA reduzem)",
+        "Prostaglandinas dilatam a eferente (AINE potencializa); angiotensina II contrai a aferente (IECA/BRA ampliam)",
+        "Bradicinina contrai a aferente (AINE inibe); aldosterona dilata a eferente (IECA/BRA reduzem)"
+      ],
+      "correctIndex": 0,
+      "explanation": "Com menor volume circulante, as prostaglandinas mantêm a arteríola aferente dilatada e a angiotensina II mantém a eferente contraída — juntas preservam a pressão intraglomerular. O AINE inibe a síntese de prostaglandinas e o IECA/BRA reduz o efeito da angiotensina II; na hipovolemia, a combinação pode comprometer a filtração. IECA/BRA não são genericamente nefrotóxicos: o risco depende de perfusão, estenose e contexto."
+    },
+    {
+      "question": "Qual alteração arteriolar tende a ELEVAR a pressão no capilar glomerular?",
+      "options": [
+        "Constrição moderada da arteríola eferente",
+        "Constrição intensa da arteríola aferente",
+        "Dilatação acentuada da arteríola eferente",
+        "Queda da pressão de perfusão renal"
+      ],
+      "correctIndex": 0,
+      "explanation": "A eferente fica depois do glomérulo: contraí-la moderadamente represa o sangue e eleva a pressão glomerular, podendo manter ou aumentar a TFG mesmo com menor fluxo. Constrição aferente e dilatação eferente baixam a pressão glomerular; dilatação aferente a eleva. Constrição eferente intensa, porém, pode reduzir a TFG — o fluxo cai muito e a pressão oncótica no capilar sobe."
+    },
+    {
+      "question": "Num modelo ilustrativo, a pressão hidrostática do capilar glomerular é 55 mmHg, a do espaço de Bowman é 15 mmHg, a oncótica do plasma é 30 mmHg e a oncótica de Bowman é ≈ 0. Qual a pressão líquida de filtração, e o que ocorre se uma obstrução urinária elevar a pressão de Bowman para 25 mmHg?",
+      "options": [
+        "10 mmHg; cai para 0 mmHg com a obstrução",
+        "40 mmHg; cai para 30 mmHg com a obstrução",
+        "10 mmHg; sobe para 20 mmHg com a obstrução",
+        "25 mmHg; não se altera com a obstrução"
+      ],
+      "correctIndex": 0,
+      "explanation": "Pressão líquida = 55 − 15 − 30 = 10 mmHg: a hidrostática capilar favorece a filtração; a de Bowman e a oncótica plasmática se opõem. Com Bowman em 25 mmHg: 55 − 25 − 30 = 0, e a filtração cessa. Como TFG = Kf × pressão líquida, obstrução (↑ pressão de Bowman), hipoperfusão (↓ pressão capilar) e lesão glomerular (↓ área e Kf) reduzem a TFG."
+    },
+    {
+      "question": "Um adulto com TFG de 125 mL/min forma quanto ultrafiltrado por dia, e qual a implicação clínica disso?",
+      "options": [
+        "≈ 180 L/dia; diurese preservada não exclui queda da TFG",
+        "≈ 180 L/dia; diurese normal exclui lesão renal aguda",
+        "≈ 18 L/dia; a diurese reflete diretamente a TFG",
+        "≈ 1,8 L/dia; quase todo o filtrado vira urina final"
+      ],
+      "correctIndex": 0,
+      "explanation": "125 mL/min × 1.440 min ≈ 180 L/dia de filtrado, dos quais só 1 a 2 L viram urina — a maior parte é reabsorvida. Como a diurese depende da função tubular, da oferta de água e de hormônios, ela pode estar preservada com TFG reduzida: a lesão renal aguda pode ser não oligúrica."
+    },
+    {
+      "question": "O esquema mostra células da mácula densa captando NaCl pelo cotransportador NKCC2 e liberando ATP, convertido em adenosina, que age sobre a arteríola aferente. Quando a oferta distal de NaCl aumenta, que resposta esse mecanismo produz?",
+      "options": [
+        "Constrição da aferente, com queda da TFG",
+        "Dilatação da aferente, com aumento da TFG",
+        "Constrição da eferente, com aumento da TFG",
+        "Liberação de renina, com aumento da TFG"
+      ],
+      "correctIndex": 0,
+      "explanation": "É o feedback tubuloglomerular: mais NaCl na mácula densa → ATP/adenosina → constrição da aferente → pressão glomerular e TFG voltam para perto do nível inicial. Quando a oferta de NaCl cai, ocorre o oposto: dilatação aferente e liberação de renina; a angiotensina II preserva a pressão glomerular contraindo a eferente. O outro mecanismo de autorregulação, o miogênico, responde ao estiramento da própria aferente.",
+      "image": "s31i1",
+      "imageCaption": "Feedback tubuloglomerular: mácula densa, ATP/adenosina e arteríola aferente"
+    },
+    {
+      "question": "Criança em choque, com pressão de perfusão renal abaixo da faixa de autorregulação. Qual é essa faixa e o que se espera abaixo dela?",
+      "options": [
+        "80 a 180 mmHg; a TFG cai, pois a dilatação aferente não compensa",
+        "40 a 80 mmHg; a TFG se mantém, pois a eferente se dilata",
+        "80 a 180 mmHg; a TFG se mantém por constrição da aferente",
+        "120 a 220 mmHg; a TFG sobe por hiperfiltração compensatória"
+      ],
+      "correctIndex": 0,
+      "explanation": "A autorregulação mantém fluxo sanguíneo renal e TFG relativamente estáveis entre cerca de 80 e 180 mmHg de pressão de perfusão, sobretudo ajustando a resistência da arteríola aferente (resposta miogênica e feedback tubuloglomerular). Abaixo dessa faixa, a dilatação aferente já não compensa e a hipotensão compromete a filtração."
+    },
+    {
+      "question": "Qual característica faz da inulina (polifrutosano de ~5.000 Da) o marcador de referência para medir a TFG?",
+      "options": [
+        "É livremente filtrada, sem reabsorção nem secreção tubular",
+        "É livremente filtrada e totalmente secretada no túbulo proximal",
+        "É produzida em taxa constante pela musculatura esquelética",
+        "É filtrada e depois completamente reabsorvida pelo túbulo"
+      ],
+      "correctIndex": 0,
+      "explanation": "O marcador ideal atravessa livremente a barreira glomerular e não é secretado nem reabsorvido: tudo o que aparece na urina veio da filtração, e Cx = (Ux × V) ÷ Px iguala a TFG. A inulina cumpre isso, mas exige infusão contínua e coleta cronometrada de urina, e é pouco disponível no mundo — por isso não é usada na rotina."
+    },
+    {
+      "question": "Três formas de avaliar a filtração são TFG estimada, depuração de creatinina e TFG medida. Qual opção descreve a TFG MEDIDA?",
+      "options": [
+        "Depuração plasmática de marcador exógeno, como o iohexol",
+        "Equação com creatinina e/ou cistatina C e a estatura",
+        "Depuração de creatinina em urina de 24 horas cronometrada",
+        "Creatinina sérica comparada à faixa de referência da idade"
+      ],
+      "correctIndex": 0,
+      "explanation": "TFG medida usa marcador exógeno: o clearance plasmático de 51Cr-EDTA, iohexol e inulina é o mais acurado (revisão sistemática de Soveri, 2014); 99mTc-DTPA e iotalamato servem se feitos como clearance renal, com coleta de urina. O iohexol — contraste em baixa dose, não radioativo, com ligação proteica de ~2% — tem uso crescente e pode ser dosado até em sangue capilar. Reserva-se a decisões de alto impacto com estimativas pouco confiáveis."
+    },
+    {
+      "question": "Por que a depuração de creatinina tende a superestimar a TFG, sobretudo quando a TFG está muito reduzida?",
+      "options": [
+        "A secreção tubular de creatinina ganha peso quando a TFG cai",
+        "A reabsorção tubular de creatinina aumenta quando a TFG cai",
+        "A produção muscular de creatinina aumenta quando a TFG cai",
+        "A coleta de 24 horas fica incompleta quando a TFG cai"
+      ],
+      "correctIndex": 0,
+      "explanation": "Além de filtrada, a creatinina é secretada pelo túbulo — em condições normais, cerca de 10% da excreção urinária. Quando a TFG cai, essa fração secretada pesa proporcionalmente mais e o Clcr supera a TFG real (superestimativa marcada abaixo de ~20 mL/min/1,73 m²). Pela mesma via, fármacos que bloqueiam a secreção, como a trimetoprima, elevam a creatinina sem igual queda da TFG. Coleta incompleta também limita o método, mas tende a subestimar."
+    },
+    {
+      "question": "Em equilíbrio e com produção constante, a creatinina de uma criança passa de 0,5 para 1,0 mg/dL. O que se espera da TFG?",
+      "options": [
+        "Caiu para cerca de metade do valor anterior",
+        "Caiu para cerca de um quarto do valor anterior",
+        "Caiu cerca de 10%, dentro da variação diária",
+        "Ficou igual, pois os dois valores são normais"
+      ],
+      "correctIndex": 0,
+      "explanation": "Em equilíbrio, a TFG relativa é aproximadamente proporcional ao inverso da creatinina: 0,5 → 100%; 1,0 → 50%; 2,0 → 25%; 4,0 → 12,5%. Dobrar a creatinina corresponde a perder cerca de metade da filtração, mesmo que os dois números pareçam 'baixos'. É um modelo didático, não uma equação de TFGe; na LRA a creatinina se eleva com atraso."
+    },
+    {
+      "question": "O gráfico relaciona creatinina sérica e TFG medida em mais de 3 mil pacientes com comprometimento renal. O que ele mostra sobre uma creatinina de 1,5 mg/dL?",
+      "options": [
+        "Corresponde a TFG medida entre cerca de 30 e 90 mL/min",
+        "Corresponde sempre a TFG medida próxima de 60 mL/min",
+        "Corresponde a TFG medida abaixo de 15 mL/min",
+        "Corresponde a TFG medida acima de 120 mL/min"
+      ],
+      "correctIndex": 0,
+      "explanation": "A relação é hiperbólica e dispersa: na faixa de TFG alta e intermediária, grandes perdas de filtração mudam pouco a creatinina, e um mesmo valor de 1,5 mg/dL abrange TFG medida de cerca de 30 a 90 mL/min. A cistatina C tem dispersão semelhante (1,5 mg/L também corresponde a 30–90 mL/min) — nenhum marcador isolado resolve. Daí a recomendação de medir a TFG quando a decisão exige precisão.",
+      "image": "s41i1",
+      "imageCaption": "Creatinina sérica × TFG medida: relação hiperbólica e grande dispersão"
+    },
+    {
+      "question": "Três pessoas têm creatinina sérica de 0,9 mg/dL: uma criança de 12 anos com 1,50 m, um homem adulto muito musculoso e uma idosa com perda importante de massa muscular. Qual interpretação está correta?",
+      "options": [
+        "Na idosa, o valor pode mascarar uma TFG reduzida",
+        "No adulto musculoso, o valor indica TFG reduzida",
+        "Na criança, o valor é normal, pois é faixa de adulto",
+        "Nos três, o valor reflete a mesma TFG estimada"
+      ],
+      "correctIndex": 0,
+      "explanation": "A creatinina depende da produção muscular, além da eliminação renal. Com pouca massa muscular (idosa sarcopênica), produz-se pouca creatinina e um valor 'normal' pode esconder TFG baixa. No homem musculoso, 0,9 mg/dL provavelmente reflete boa função. Na criança de 12 anos e 1,50 m, o mesmo valor dá TFGe de ~65 mL/min/1,73 m². Para interpretar, faltam idade, sexo, estatura, massa muscular, método de dosagem e valores anteriores."
+    },
+    {
+      "question": "O gráfico mostra a creatinina plasmática de recém-nascidos a termo e prematuros (por faixa de peso) nas 3 primeiras semanas de vida. Qual leitura está correta?",
+      "options": [
+        "Começa alta e cai nas semanas seguintes; é maior nos prematuros",
+        "Começa baixa e sobe nas semanas seguintes, com o ganho de músculo",
+        "Começa alta e se mantém estável, igual em prematuros e a termo",
+        "Começa alta e cai nas semanas seguintes; é maior no RN a termo"
+      ],
+      "correctIndex": 0,
+      "explanation": "Ao nascer, a creatinina do RN reflete em grande parte a materna e cai nas semanas seguintes, à medida que o rim do bebê a elimina. Quanto menor o peso de nascimento (1.000–1.500 g), maior o valor inicial e mais lenta a queda; no RN a termo, ela começa mais baixa. Por isso a creatinina dos primeiros dias não mede a função renal do bebê. Entre 1 mês e 2 anos, fica em torno de 0,35–0,40 mg/dL.",
+      "image": "s35i1",
+      "imageCaption": "Creatinina plasmática nas 3 primeiras semanas: RN a termo e prematuros"
+    },
+    {
+      "question": "A curva mostra a faixa normal da TFG (corrigida para 1,73 m²) do nascimento aos 15 anos. Qual afirmação está correta?",
+      "options": [
+        "É baixa ao nascer e atinge valores de adulto por volta dos 2 anos",
+        "É igual à do adulto desde o nascimento no recém-nascido a termo",
+        "Só atinge valores de adulto após a puberdade, por volta dos 14 anos",
+        "É máxima ao nascer e cai progressivamente até os 2 anos de idade"
+      ],
+      "correctIndex": 0,
+      "explanation": "A TFG indexada é baixa no recém-nascido e sobe rapidamente no primeiro ano, chegando à faixa do adulto (≈ 90–140 mL/min/1,73 m²) por volta dos 2 anos, quando a curva se estabiliza. Por isso a TFG abaixo dos 2 anos precisa ser interpretada pela idade, e acima dos 2 anos uma TFGe < 90 já é sinal de alerta.",
+      "image": "s24i1",
+      "imageCaption": "Evolução da TFG do nascimento à adolescência (Brodehl, 1982)"
+    },
+    {
+      "question": "A cistatina C é uma proteína de baixo peso molecular (~13 kDa) produzida por todas as células nucleadas. Por que ela não serve para cálculo de depuração em urina de 24 horas?",
+      "options": [
+        "É filtrada, mas reabsorvida e catabolizada no túbulo proximal",
+        "Não atravessa a barreira glomerular por seu peso molecular",
+        "É filtrada e também secretada em grande parte no túbulo distal",
+        "É filtrada, mas degradada por bactérias da urina na bexiga"
+      ],
+      "correctIndex": 0,
+      "explanation": "A cistatina C é livremente filtrada e depois completamente reabsorvida e metabolizada pelas células tubulares — quase nada chega à urina final, então não há concentração urinária útil para calcular depuração. Seu uso é como marcador sérico, em equações de TFGe (por exemplo, CKiD: 70,69 × cistatina C elevada a −0,931). Ao nascer é alta (até ~2,8 mg/L) e cai rapidamente com a maturação renal."
+    },
+    {
+      "question": "Em comparação com a creatinina, a cistatina C sofre menos influência da massa muscular. Qual situação, porém, pode alterá-la independentemente da TFG?",
+      "options": [
+        "Uso de corticoide ou disfunção tireoidiana",
+        "Grande massa muscular de um atleta jovem",
+        "Dieta rica em carne vermelha na véspera",
+        "Uso de suplemento de creatina no esporte"
+      ],
+      "correctIndex": 0,
+      "explanation": "Corticoides e alterações da tireoide afetam a cistatina C por determinantes não ligados à TFG; ela também se eleva na obesidade mórbida, no DM2, na hipertensão e na síndrome metabólica. Massa muscular, carne, suplementos e exercício interferem na creatinina, não na cistatina C. Combinar os dois marcadores melhora muitas estimativas, mas não elimina todos os vieses."
+    },
+    {
+      "question": "Qual equação é a escolha adequada para estimar a TFG de um adolescente de 15 anos com doença renal crônica?",
+      "options": [
+        "CKiD U25, validada de 1 a 25 anos",
+        "CKD-EPI 2021, a mesma do adulto",
+        "CKD-EPI 2009, com coeficiente racial",
+        "Schwartz original, com k de RN a termo"
+      ],
+      "correctIndex": 0,
+      "explanation": "Crianças e jovens exigem equação validada para a idade, como a CKiD U25 (1 a 25 anos, validação central em DRC, κ por idade e sexo, altura em metros). A CKD-EPI 2021, sem coeficiente racial, é a equação de adultos e não deve ser usada abaixo dos 18 anos. O k de RN a termo (0,45) não se aplica a um adolescente."
+    },
+    {
+      "question": "Criança com TFGe de 60 mL/min/1,73 m² e superfície corporal de 0,865 m² vai receber um fármaco cuja bula pede ajuste pela TFG absoluta (mL/min). Qual valor usar?",
+      "options": [
+        "30 mL/min",
+        "60 mL/min",
+        "120 mL/min",
+        "52 mL/min"
+      ],
+      "correctIndex": 0,
+      "explanation": "A TFGe vem indexada para 1,73 m², o que serve para classificar. Para dose, desindexa-se: TFG absoluta = TFG indexada × SC ÷ 1,73 = 60 × 0,865 ÷ 1,73 = 30 mL/min. Usar o valor indexado numa criança pequena superestima a capacidade de eliminar o fármaco. Verifique na bula qual equação e unidade foram usadas."
+    },
+    {
+      "question": "Na microscopia de contraste de fase do sedimento urinário de uma criança com hematúria, encontra-se a estrutura da imagem: um cilindro repleto de hemácias. O que ela indica?",
+      "options": [
+        "Hematúria de origem glomerular",
+        "Hematúria de origem na bexiga",
+        "Contaminação menstrual da amostra",
+        "Cistite bacteriana não complicada"
+      ],
+      "correctIndex": 0,
+      "explanation": "Cilindros se moldam no lúmen tubular; hemácias presas num cilindro vieram do néfron — em geral atravessaram uma barreira glomerular lesada. Cilindro hemático e hemácias dismórficas (VPP ~90% para origem glomerular na microscopia de contraste de fase) apontam para glomerulopatia; hemácias eumórficas sugerem origem extraglomerular. Referência: até 5 hemácias/campo (400×).",
+      "image": "s12i2",
+      "imageCaption": "Sedimento urinário em microscopia de contraste de fase"
+    },
+    {
+      "question": "Urina fresca, em jejum, com pH de 5,2 medido em potenciômetro (pHmetro). O que esse valor indica?",
+      "options": [
+        "Integridade da acidificação distal",
+        "Falência da acidificação distal",
+        "Concentração urinária preservada",
+        "Excreção aumentada de bicarbonato"
+      ],
+      "correctIndex": 0,
+      "explanation": "O pH urinário avalia a capacidade de acidificação: pH < 5,5 indica integridade da acidificação distal; pH > 6,1 na primeira urina sugere falência de acidificação. Na alteração proximal, a urina fica < 5,5 durante a acidemia e sobe para > 6,0 com a correção. A medida confiável usa urina fresca, em jejum, por potenciometria (5–10 mL sob vaselina), e não fita reagente."
+    },
+    {
+      "question": "Qual valor caracteriza proteinúria em faixa nefrótica na criança?",
+      "options": [
+        "> 50 mg/kg/dia ou proteína/creatinina > 2,0",
+        "> 10 mg/kg/dia ou proteína/creatinina > 0,2",
+        "> 20 mg/kg/dia ou proteína/creatinina > 1,0",
+        "> 30 mg/g na relação albumina/creatinina"
+      ],
+      "correctIndex": 0,
+      "explanation": "Faixa nefrótica: > 50 mg/kg/dia, > 40 mg/m²/hora ou relação proteína/creatinina urinária > 2,0. Normal: proteína/creatinina < 0,2 ou < 10 mg/kg/dia. Albumina/creatinina de 30–300 mg/g (ou 20–200 µg/min, 30–300 mg/24 h) define microalbuminúria. A proteinúria aumenta por maior filtração de proteínas e/ou menor reabsorção tubular."
+    },
+    {
+      "question": "Em 76 crianças com micro-hematúria isolada submetidas a biópsia renal, qual achado se associou a glomerulopatia em 100% dos casos — principalmente nefropatia por IgA?",
+      "options": [
+        "Microalbuminúria positiva",
+        "Albuminúria dentro do normal",
+        "Hemácias eumórficas na urina",
+        "Densidade urinária reduzida"
+      ],
+      "correctIndex": 0,
+      "explanation": "No estudo de Assadi (2005), as 22 crianças (29%) com microalbuminúria tinham todas glomerulopatia: 20 (91%) nefropatia por IgA e 2 nefropatia da membrana basal fina. Entre as 54 com albuminúria normal, 38 (70%) tinham biópsia normal, 15 membrana basal fina e 1 IgA. Na micro-hematúria, a albuminúria ajuda a separar quem tem doença glomerular."
+    },
+    {
+      "question": "Mulher de 34 anos, diabetes tipo 1 há 18 anos, TFGe de 102 mL/min/1,73 m² e relação albumina/creatinina de 180 e 165 mg/g em duas amostras com 4 meses de intervalo, sem infecção, febre ou menstruação. Qual a classificação?",
+      "options": [
+        "DRC G1A2, pela albuminúria persistente por > 3 meses",
+        "Sem DRC, pois a TFG estimada está acima de 90",
+        "DRC G2A3, pela albuminúria acima de 150 mg/g",
+        "LRA estágio 1 com albuminúria transitória"
+      ],
+      "correctIndex": 0,
+      "explanation": "G1 = TFG ≥ 90; A2 = relação albumina/creatinina de 30–300 mg/g. Albuminúria persistente por mais de 3 meses é marcador de lesão e define DRC mesmo com TFG preservada — a creatinina isolada não excluiria essa lesão. G e A são eixos independentes. A causa precisa de avaliação clínica: diabetes é hipótese plausível, mas não dispensa avaliar pressão, sedimento e evolução."
+    },
+    {
+      "question": "Adolescente com TFGe de 75 mL/min/1,73 m², estável há 6 meses, sem albuminúria e com sedimento urinário e imagem normais. Pela classificação da figura, há doença renal crônica?",
+      "options": [
+        "Não: TFG de 60–89 sem marcador de lesão não define DRC",
+        "Sim: DRC estágio 2, pois a TFG está abaixo de 90",
+        "Sim: DRC estágio 3, pois a TFG está entre 60 e 89",
+        "Não: a DRC só é definida com TFG abaixo de 15"
+      ],
+      "correctIndex": 0,
+      "explanation": "DRC exige alteração persistente por pelo menos 3 meses: TFG < 60 mL/min/1,73 m² ou marcador de lesão (albuminúria, sedimento, imagem). Nos estágios G1 (≥ 90) e G2 (60–89), só há DRC se outros exames sugerirem dano — como indica a figura. Em crianças acima de 2 anos, porém, TFGe < 90 é sinal de alerta e merece acompanhamento.",
+      "image": "s45i1",
+      "imageCaption": "Faixas de TFG nos estágios da doença renal crônica"
+    }
+  ]
+}

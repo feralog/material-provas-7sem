@@ -1,0 +1,338 @@
+{
+  "titulo": "Coma e Estados Alterados de Consciência",
+  "eyebrow": "Neurologia · Emergência neurológica",
+  "subtitulo": "Do Glasgow às herniações: examinar, localizar e conduzir o coma",
+  "intro": "Nível e conteúdo da consciência, causas supratentoriais, infratentoriais e metabólicas, condutas imediatas, exame do comatoso (Glasgow, pupilas, respiração, motricidade ocular e motora), herniações, estado vegetativo, locked-in, delirium e morte encefálica.",
+  "questoes": [
+    {
+      "question": "Os dois componentes da consciência dependem de estruturas anatômicas diferentes. Qual associação está correta?",
+      "options": [
+        "Nível: FRAA e córtex como um todo; conteúdo: córtex cerebral",
+        "Nível: córtex cerebral isolado; conteúdo: FRAA e tálamo",
+        "Nível: cerebelo e bulbo; conteúdo: sistema límbico e FRAA",
+        "Nível: hipotálamo e bulbo; conteúdo: núcleos da base"
+      ],
+      "correctIndex": 0,
+      "explanation": "O nível de consciência (grau de alerta comportamental) depende da interação entre a formação reticular ativadora ascendente (FRAA), na região pontomesencefálica, e o córtex como um todo. O conteúdo (memória, crítica, linguagem, humor) depende do córtex: lesões corticais restritas causam afasia, apraxia ou agnosia sem rebaixar o nível. Em animais, a secção entre os colículos mesencefálicos rebaixa a consciência; a secção entre bulbo e medula não altera a vigília."
+    },
+    {
+      "question": "Um paciente com glioma frontal direito evolui com hemiparesia esquerda e, dias depois, entra em coma. Por que uma massa supratentorial unilateral chega a causar coma?",
+      "options": [
+        "Ao crescer, provoca herniação e comprime a formação reticular no tronco",
+        "Por destruir o córtex de um hemisfério, o que já basta para causar o coma",
+        "Por invadir o cerebelo e comprimir o quarto ventrículo de forma direta",
+        "Por desencadear crises convulsivas contínuas que bloqueiam o córtex"
+      ],
+      "correctIndex": 0,
+      "explanation": "Uma massa supratentorial não causa coma pela localização, pois afeta um só hemisfério e gera sinais focais (hemiparesia, afasia, hemianopsia). O coma surge quando a lesão ou o edema ao redor aumenta de volume e provoca herniação pelo forame da tenda do cerebelo, comprimindo a formação reticular bilateralmente. Para rebaixar o nível por lesão cortical seria preciso lesar a maior parte dos dois hemisférios."
+    },
+    {
+      "question": "Um paciente só abre os olhos e geme diante de estímulos dolorosos vigorosos e repetidos, voltando a não responder assim que o estímulo cessa. Como se classifica esse nível de consciência?",
+      "options": [
+        "Torpor — desperta só com estímulo intenso e repetido",
+        "Sonolência — desperta com estímulo verbal ou leve",
+        "Coma — não desperta nem mesmo com estímulo doloroso",
+        "Estado vegetativo — olhos abertos sem percepção"
+      ],
+      "correctIndex": 0,
+      "explanation": "No torpor (estupor) o paciente só desperta com estímulos vigorosos e repetidos, em geral dolorosos, com respostas pobres, e retorna ao estado anterior quando o estímulo cessa. Na sonolência (obnubilação) ele desperta com estímulo verbal ou leve e responde de modo adequado; no coma não desperta nem à dor e permanece de olhos fechados. Como esses rótulos variam entre examinadores, vale descrever o estímulo necessário e a resposta obtida e quantificar pela escala de Glasgow."
+    },
+    {
+      "question": "Um homem é trazido em coma, sem acompanhante e sem informações, com hálito etílico. Por que a tiamina deve ser dada antes ou junto da glicose hipertônica?",
+      "options": [
+        "A carga de glicose no deficiente pode precipitar a encefalopatia de Wernicke",
+        "A tiamina potencializa o efeito da glicose e corrige a hipoglicemia mais rápido",
+        "A tiamina reduz a pressão intracraniana elevada pela glicose hipertônica",
+        "A glicose isolada pode precipitar síndrome de abstinência e convulsões"
+      ],
+      "correctIndex": 0,
+      "explanation": "A tiamina (vitamina B1) é cofator de enzimas do metabolismo dos carboidratos; no indivíduo deficiente, uma carga de glicose pode precipitar a encefalopatia de Wernicke por deficiência aguda. Ela é obrigatória na suspeita de alcoolismo ou desnutrição, na falta de informações e no coma com ausência de movimentos oculares. A tríade clássica é confusão, ataxia e déficit de movimentos oculares, mas pode haver hipotensão, hipotermia e coma, com mortalidade de até 20%."
+    },
+    {
+      "question": "Sobre a infusão de 50 mL de glicose a 50% no paciente em coma de causa desconhecida, qual afirmação está correta?",
+      "options": [
+        "Pode ser dispensada se a glicemia capilar mostrar valor adequado",
+        "A melhora do nível de consciência após a infusão confirma hipoglicemia",
+        "A ausência de melhora após a infusão afasta a hipoglicemia como causa",
+        "Está contraindicada antes do resultado da glicemia sérica do laboratório"
+      ],
+      "correctIndex": 0,
+      "explanation": "Deixar de tratar uma hipoglicemia pode ser fatal, e o receio de piorar um coma hiperglicêmico é infundado. Mas a hiperglicemia piora o prognóstico da isquemia cerebral, então, se a glicemia capilar confirmar valor adequado, a infusão pode ser evitada. A ausência de melhora não afasta hipoglicemia (o paciente pode já ter lesão irreversível), e a melhora não a confirma, porque o soro hipertônico também reduz a pressão intracraniana."
+    },
+    {
+      "question": "Após trauma craniano, um paciente abre os olhos apenas à dor, fala palavras inapropriadas e leva a mão até o local do estímulo doloroso. Qual o escore na escala de coma de Glasgow?",
+      "options": [
+        "10 — ocular 2, verbal 3, motor 5",
+        "9 — ocular 2, verbal 2, motor 5",
+        "11 — ocular 3, verbal 3, motor 5",
+        "8 — ocular 2, verbal 3, motor 3"
+      ],
+      "correctIndex": 0,
+      "explanation": "Abertura ocular só à dor vale 2; palavras inapropriadas, 3; localizar o estímulo doloroso, 5 — total 10. Na resposta motora, retirada inespecífica vale 4, padrão flexor (decorticação) 3 e padrão extensor (descerebração) 2. O escore vai de 3 a 15, e o estímulo doloroso preferido é a compressão do leito ungueal, porque o supraorbitário pode provocar fechamento dos olhos."
+    },
+    {
+      "question": "Um paciente em coma tem pupilas pequenas, simétricas e com reflexo fotomotor presente, sem sinais motores focais. Como interpretar esse achado pupilar?",
+      "options": [
+        "Encefalopatia metabólica ou disfunção diencefálica bilateral",
+        "Lesão da porção ventral do mesencéfalo com via simpática lesada",
+        "Compressão do III nervo por herniação uncal em fase inicial",
+        "Lesão do tecto mesencefálico com flutuação do diâmetro pupilar"
+      ],
+      "correctIndex": 0,
+      "explanation": "Pupilas pequenas com fotomotor presente ocorrem na encefalopatia metabólica e na disfunção diencefálica bilateral, em que a hipofunção simpática deixa predominar o parassimpático — o exame pupilar sozinho não distingue as duas. O reflexo fotomotor é muito resistente a insultos metabólicos e se mantém até fases profundas do coma. Lesão mesencefálica ventral dá pupilas médias (4–5 mm) e fixas; a tectal, pupilas de 5–6 mm com hippus; a uncal, midríase unilateral fixa."
+    },
+    {
+      "question": "Um jovem é encontrado em coma, com respiração lenta e superficial e pupilas puntiformes que só mostram reação à luz com lente de aumento, sem sinais focais. Qual a hipótese principal e a conduta já no suporte inicial?",
+      "options": [
+        "Intoxicação por opiáceo; administrar naloxona",
+        "Intoxicação por atropina; administrar fisostigmina",
+        "Encefalopatia anóxica; induzir hipotermia",
+        "Herniação uncal; infundir manitol endovenoso"
+      ],
+      "correctIndex": 0,
+      "explanation": "Opiáceos produzem pupilas intensamente mióticas com reflexo fotomotor presente, muitas vezes visível só com lupa — uma das exceções em que uma causa tóxica altera a pupila. A naloxona entra já no suporte inicial do comatoso, junto com intubação, acesso venoso e monitorização. Atropina e anticolinérgicos dão pupilas midriáticas e fixas; a encefalopatia anóxica também; a herniação uncal, midríase unilateral."
+    },
+    {
+      "question": "Um paciente com hematoma subdural temporal esquerdo em expansão desenvolve midríase esquerda intensa, sem reação à luz. Qual estrutura foi comprimida?",
+      "options": [
+        "O nervo oculomotor esquerdo, pelo uncus contra a tenda",
+        "A via simpática esquerda, no hipotálamo e no tronco",
+        "O nervo óptico esquerdo, pelo edema ao redor do hematoma",
+        "O núcleo de Edinger-Westphal direito, no tecto do mesencéfalo"
+      ],
+      "correctIndex": 0,
+      "explanation": "Na herniação lateral (uncal), a porção medial do lobo temporal insinua-se entre a borda da tenda e o mesencéfalo e encontra como primeira estrutura o nervo oculomotor ipsilateral: midríase intensa e fixa, seguida de ptose e déficit de adução. Depois vem a compressão do mesencéfalo, com queda da consciência. Lesão simpática daria miose (Claude Bernard-Horner), não midríase; lesão do óptico aboliria os reflexos direto e consensual ao iluminar aquele olho, sem midríase isolada."
+    },
+    {
+      "question": "Um hipertenso grave entra em coma súbito com tetraparesia. As pupilas são puntiformes, com reflexo fotomotor visível apenas com lente de aumento. Qual a localização mais provável?",
+      "options": [
+        "Ponte, geralmente por hemorragia pontina",
+        "Porção ventral do mesencéfalo, por infarto",
+        "Tecto mesencefálico, por compressão pineal",
+        "Nervo oculomotor, por herniação uncal bilateral"
+      ],
+      "correctIndex": 0,
+      "explanation": "Pupilas pontinas são extremamente mióticas, quase um ponto, mas mantêm o reflexo fotomotor, que pode exigir lente de aumento para ser visto. Ocorrem em lesões da ponte, geralmente hemorragia pontina. Admite-se que sejam mais mióticas que as diencefálicas porque, além da lesão simpática, há irritação parassimpática ou perda da inibição sobre o núcleo de Edinger-Westphal. Lesão mesencefálica ventral dá pupilas médias e fixas; herniação uncal, midríase sem reflexo."
+    },
+    {
+      "question": "Qual correlação entre padrão respiratório e nível de disfunção está correta no paciente em coma?",
+      "options": [
+        "Cheyne-Stokes — disfunção diencefálica",
+        "Respiração atáxica — disfunção diencefálica",
+        "Respiração apnêustica — lesão mesencefálica",
+        "Hiperventilação central — lesão bulbar"
+      ],
+      "correctIndex": 0,
+      "explanation": "O ritmo de Cheyne-Stokes, com apneia alternando com hiperpneia de amplitude crescente e depois decrescente, indica habitualmente disfunção diencefálica (também ocorre na insuficiência cardíaca e no sono normal). A hiperventilação neurogênica central foi descrita para o mesencéfalo; a respiração apnêustica, com pausa em inspiração profunda, indica ponte baixa; a atáxica (Biot), completamente irregular, indica lesão do bulbo e é indicação de ventilação mecânica."
+    },
+    {
+      "question": "Em um paciente em coma, a cabeça é girada bruscamente para a direita e os dois olhos se desviam, de forma conjugada, para a esquerda. O que esse achado indica?",
+      "options": [
+        "Vias do tronco para a motricidade ocular íntegras",
+        "Lesão pontina bilateral com reflexo oculocefálico abolido",
+        "Coma psicogênico, pois o reflexo exige paciente consciente",
+        "Lesão do fascículo longitudinal medial à direita"
+      ],
+      "correctIndex": 0,
+      "explanation": "Na manobra dos olhos de boneca, com as vias intratronco íntegras, os olhos se desviam no sentido oposto ao do giro da cabeça, graças às conexões dos receptores proprioceptivos cervicais e labirínticos com os núcleos do III e do VI nervos. A resposta conjugada afasta lesão do fascículo longitudinal medial, que daria movimento desconjugado. A ausência de resposta, por outro lado, não prova lesão do tronco — a prova oculovestibular é mais fidedigna."
+    },
+    {
+      "question": "Na prova oculovestibular, injetam-se 50 mL de água gelada no conduto auditivo direito de um paciente em coma com tronco encefálico íntegro. Qual a resposta esperada?",
+      "options": [
+        "Desvio tônico conjugado dos dois olhos para a direita",
+        "Nistagmo com fase rápida batendo para a esquerda",
+        "Desvio tônico conjugado dos dois olhos para a esquerda",
+        "Desvio tônico conjugado dos dois olhos para cima"
+      ],
+      "correctIndex": 0,
+      "explanation": "No coma com vias intratronco intactas, a água gelada provoca desvio tônico dos olhos para o lado estimulado. No indivíduo consciente surge nistagmo com fase rápida para o lado oposto — encontrar nistagmo num paciente aparentemente em coma sugere distúrbio psicogênico, embora não seja patognomônico. Água gelada nos dois ouvidos desvia os olhos para baixo; água quente nos dois, para cima. Antes do teste faz-se otoscopia, com a cabeça 30° acima da horizontal."
+    },
+    {
+      "question": "Um paciente em coma apresenta hemiplegia esquerda e desvio conjugado dos olhos para a direita. Onde está a lesão mais provável?",
+      "options": [
+        "Hemisfério direito — supratentorial",
+        "Ponte direita — infratentorial",
+        "Ponte esquerda — infratentorial",
+        "Hemisfério esquerdo — supratentorial"
+      ],
+      "correctIndex": 0,
+      "explanation": "Desvio conjugado dos olhos para um lado com hemiplegia contralateral sugere lesão supratentorial do lado para onde os olhos olham — 'os olhos olham para a lesão'. Na lesão pontina o desvio é para o lado da hemiplegia — 'os olhos olham para a hemiplegia'. A exceção é a fase irritativa de hemorragias cerebrais profundas, que pode desviar os olhos para o lado oposto ao da lesão."
+    },
+    {
+      "question": "Um paciente em coma tem pupilas de tamanho normal com reflexo fotomotor presente, mas as manobras oculocefálica e oculovestibular não produzem resposta. Não há sinais motores focais. Qual a hipótese mais compatível?",
+      "options": [
+        "Intoxicação por hipnótico-sedativos, como barbitúricos",
+        "Infarto extenso do tronco encefálico com lesão estrutural",
+        "Herniação uncal com compressão do III nervo em curso",
+        "Retirada psíquica, com simulação do estado de coma"
+      ],
+      "correctIndex": 0,
+      "explanation": "O reflexo fotomotor resiste aos insultos tóxico-metabólicos, mas as drogas hipnótico-sedativas deprimem intensamente as vias polissinápticas do tronco responsáveis pela motricidade ocular, às vezes precocemente. Motricidade ocular abolida com pupilas reagentes é a assinatura do coma por sedativos. Lesão estrutural do tronco alteraria também as pupilas; na herniação uncal há midríase; na retirada psíquica a prova calórica produz nistagmo."
+    },
+    {
+      "question": "Ao estímulo doloroso, um paciente em coma aduz os braços, flete cotovelos, punhos e dedos e estende os membros inferiores com flexão plantar. Que nível de disfunção esse padrão sugere?",
+      "options": [
+        "Supratentorial — postura de decorticação",
+        "Tronco alto — postura de descerebração",
+        "Tegmento pontino — resposta extensora",
+        "Ponte baixa e bulbo — flacidez difusa"
+      ],
+      "correctIndex": 0,
+      "explanation": "O sinergismo postural flexor (decorticação) — adução e flexão de cotovelo, punho e dedos nos membros superiores, com hiperextensão, flexão plantar e rotação interna nos inferiores — aparece por disfunção supratentorial. A descerebração (extensão e hiperpronação dos membros superiores) sugere tronco alto; extensão dos membros superiores com flacidez nos inferiores, tegmento pontino; flacidez sem resposta, ponte baixa e bulbo. Na escala de Glasgow, decorticação vale 3 e descerebração 2."
+    },
+    {
+      "question": "Qual conjunto de achados favorece coma de causa metabólica em vez de lesão estrutural?",
+      "options": [
+        "Instalação gradual, asterixe e mioclonias, pupilas reagentes",
+        "Instalação súbita, hemiparesia e pupila midriática unilateral",
+        "Coma de olhos abertos, pupilas puntiformes e bobbing ocular",
+        "Desvio conjugado do olhar, afasia e reflexo de Babinski unilateral"
+      ],
+      "correctIndex": 0,
+      "explanation": "No coma difuso, multifocal ou metabólico a instalação costuma ser gradual, muitas vezes precedida de confusão e agitação; os sinais motores não são lateralizados e há fenômenos de disfunção difusa (mioclonias, tremores, asterixe). As pupilas costumam ser normais ou mióticas com reflexo presente, e a motricidade ocular é normal, salvo nos sedativos. Sinal motor focal sugere lesão estrutural, com raras exceções metabólicas: hipoglicemia, encefalopatia hepática e urêmica, que podem dar até hemiplegia."
+    },
+    {
+      "question": "Uma paciente com tumor no lobo frontal direito, sem déficit focal evidente, passa a ficar desatenta e cada vez mais sonolenta, com respiração de Cheyne-Stokes, pupilas pequenas e reagentes e motricidade ocular preservada. Qual a interpretação correta?",
+      "options": [
+        "Herniação central em fase diencefálica, ainda reversível",
+        "Encefalopatia metabólica difusa, sem relação com o tumor",
+        "Herniação central em fase mesencefálica, já irreversível",
+        "Herniação uncal com compressão inicial do III nervo"
+      ],
+      "correctIndex": 0,
+      "explanation": "Esse é o quadro da etapa diencefálica da herniação central: desatenção e sonolência progressivas, Cheyne-Stokes, pupilas pequenas e fotorreagentes, motricidade ocular preservada, às vezes paratonia e decorticação. É a fase que avisa que o processo ainda é reversível — e a mais negligenciada. Quando a massa está em área silenciosa, como o lobo frontal ou temporal direito, ela pode ser a primeira manifestação, e o paciente é rotulado erroneamente como encefalopatia difusa. Pupilas médias e fixas e postura extensora marcam a etapa mesencefálica."
+    },
+    {
+      "question": "Na herniação uncal causada por massa temporal direita, o paciente desenvolve hemiplegia também à direita. Qual o mecanismo desse falso sinal localizatório?",
+      "options": [
+        "Compressão do pedúnculo cerebral esquerdo contra a borda da tenda",
+        "Compressão direta do trato piramidal direito pela massa temporal",
+        "Isquemia do território da artéria cerebral anterior direita",
+        "Lesão do uncus direito, que conduz as fibras motoras descendentes"
+      ],
+      "correctIndex": 0,
+      "explanation": "À medida que o uncus comprime o mesencéfalo, o pedúnculo cerebral do lado oposto pode ser empurrado contra a borda livre da tenda do cerebelo, lesando o trato piramidal acima da decussação e produzindo hemiplegia ipsilateral à massa (fenômeno de Kernohan). Antes disso, a sequência típica é midríase ipsilateral intensa, ptose e déficit de adução, e depois queda da consciência. A etapa uncal pode demorar horas, mas a seguinte é fulminante."
+    },
+    {
+      "question": "Em paciente com massa supratentorial e sinais de herniação ainda incipiente, qual das condutas abaixo está contraindicada?",
+      "options": [
+        "Punção lombar para análise do líquor",
+        "Elevação da cabeceira a 30 a 45 graus",
+        "Manitol de 0,5 a 1 g/kg endovenoso",
+        "Tomografia computadorizada de crânio"
+      ],
+      "correctIndex": 0,
+      "explanation": "A punção liquórica em qualquer herniação, mesmo incipiente, pode desencadear progressão rápida do processo. O diagnóstico se faz pela tomografia, e para reduzir a pressão intracraniana e ganhar de 4 a 8 horas até o tratamento definitivo usam-se cabeceira elevada a 30–45°, manitol 0,5–1 g/kg EV em 10–20 minutos e hiperventilação assistida transitória."
+    },
+    {
+      "question": "Um hipertenso tem cefaleia occipital súbita, vômitos e vertigem. Horas depois, ainda pouco sonolento, surge paralisia do olhar conjugado para a esquerda com paresia do VI e do VII nervos à esquerda. Qual a hipótese?",
+      "options": [
+        "Lesão compressiva de fossa posterior, como hemorragia cerebelar",
+        "Hemorragia putaminal esquerda com desvio conjugado do olhar",
+        "Herniação central por massa supratentorial em fase pontina",
+        "Encefalopatia hipertensiva com sinais focais transitórios"
+      ],
+      "correctIndex": 0,
+      "explanation": "Lesões compressivas extratronco da fossa posterior se instalam mais lentamente, com sintomas premonitórios de cefaleia, náusea, vômitos e vertigem. Diferentemente da herniação supratentorial, não há deterioração rostrocaudal: sinais de compressão da ponte — paralisia do olhar conjugado para o lado da lesão e do VI e VII ipsilaterais, por dano ao centro pontino do olhar horizontal, ao núcleo do VI e ao joelho do facial no assoalho do IV ventrículo — aparecem antes do rebaixamento profundo da consciência."
+    },
+    {
+      "question": "Um paciente chega torporoso, com febre e rigidez de nuca, mas também com hemiparesia direita e papiledema. Antes de colher líquor, o que deve ser feito?",
+      "options": [
+        "Tomografia de crânio para afastar massa expansiva",
+        "Eletroencefalograma para afastar estado de mal",
+        "Nenhum exame: punção lombar imediata é prioridade",
+        "Ressonância magnética de crânio com espectroscopia"
+      ],
+      "correctIndex": 0,
+      "explanation": "Na suspeita de meningite o exame inicial é o líquor, mas a tomografia deve vir antes quando há dúvida no exame ou história de massa expansiva — sinal focal e papiledema sugerem lesão com efeito de massa, e a punção numa herniação incipiente pode precipitar sua progressão. A ressonância é útil, porém demorada demais para o paciente agudo e grave."
+    },
+    {
+      "question": "Três semanas após uma parada cardíaca, um paciente abre os olhos espontaneamente e tem ciclos de sono e vigília, mas não fixa o olhar, não segue objetos de modo consistente e não obedece a comandos. Qual o diagnóstico?",
+      "options": [
+        "Estado vegetativo",
+        "Consciência mínima",
+        "Mutismo acinético",
+        "Síndrome locked-in"
+      ],
+      "correctIndex": 0,
+      "explanation": "Duas a três semanas após o coma, salvo lesão bilateral do III nervo, o paciente pode abrir os olhos e recuperar o ciclo vigília-sono sem recuperar a percepção: é o estado vegetativo, vigília sem conhecimento do ambiente, com olhos que não se orientam ao estímulo (às vezes simulam seguimento). O diagnóstico é clínico; nenhum exame laboratorial, EEG ou de imagem o define. No mutismo acinético o paciente explora o ambiente com o olhar; no locked-in está consciente; no estado de consciência mínima há sinais reprodutíveis de percepção."
+    },
+    {
+      "question": "O que diferencia o estado minimamente consciente do estado vegetativo?",
+      "options": [
+        "Sinais reprodutíveis, ainda que inconsistentes, de percepção",
+        "Presença de ciclo vigília-sono com abertura ocular espontânea",
+        "Preservação dos reflexos de tronco e da respiração espontânea",
+        "Ausência de respostas motoras reflexas ao estímulo doloroso"
+      ],
+      "correctIndex": 0,
+      "explanation": "Os dois estados têm olhos abertos, ciclo vigília-sono e reflexos de tronco preservados. O que define o estado minimamente consciente é evidência mínima, mas definida e reprodutível, de percepção de si ou do ambiente: seguir um comando simples, responder sim ou não, verbalizar algo inteligível ou mostrar comportamento intencional, como seguimento visual sustentado ou choro e sorriso apropriados ao contexto. Seu prognóstico é melhor que o do estado vegetativo."
+    },
+    {
+      "question": "Após uma hidrocefalia subaguda, uma paciente fica alerta, com ciclo vigília-sono preservado e acompanhando com os olhos quem entra no quarto, mas não fala, não se move e não reage à dor com expressão facial; não há sinais piramidais evidentes. Qual o diagnóstico e qual tratamento pode ajudar?",
+      "options": [
+        "Mutismo acinético; agonista dopaminérgico como a bromocriptina",
+        "Estado vegetativo; estimulação sensorial multimodal intensiva",
+        "Síndrome locked-in; trombólise da artéria basilar ocluída",
+        "Retirada psíquica; psicoterapia e observação sem exames"
+      ],
+      "correctIndex": 0,
+      "explanation": "No mutismo acinético o paciente está alerta, com ciclo vigília-sono, explorando o campo visual com os olhos, mas não se move, não vocaliza e não reage à dor, sem grandes sinais de lesão piramidal. Ocorre em lesões frontais basais e mediais (córtex orbital, área septal, giro do cíngulo), em pequenas lesões da FRAA paramediana do diencéfalo posterior e mesencéfalo e na hidrocefalia subaguda. Admite-se lesão do trato mesencéfalo-frontal dopaminérgico, daí o uso de bromocriptina, às vezes com bons resultados."
+    },
+    {
+      "question": "Um paciente com infarto da porção ventral da ponte está tetraplégico, sem mover lábios nem língua, mas responde a perguntas piscando e movendo os olhos para cima e para baixo. Por que a consciência está preservada?",
+      "options": [
+        "A formação reticular, no tegmento dorsal da ponte, foi poupada",
+        "A lesão poupou as fibras corticoespinais que descem pela ponte",
+        "O tálamo assume a função da formação reticular lesada na ponte",
+        "A lesão é bulbar e fica abaixo dos centros que mantêm o alerta"
+      ],
+      "correctIndex": 0,
+      "explanation": "Na síndrome do encarceramento (locked-in), a lesão ventral da ponte interrompe as fibras motoras corticais para a medula e para os núcleos dos nervos cranianos, com déficit do olhar horizontal, restando só elevar e abaixar os olhos. A porção dorsal da ponte, onde está a FRAA, permanece íntegra, e o paciente está consciente — pode se comunicar por um código com o olhar. Por isso o locked-in simula coma ou morte encefálica, mas mantém os reflexos de tronco."
+    },
+    {
+      "question": "Um idoso internado por pneumonia passa a se distrair com qualquer ruído, tem pensamento incoerente e não consegue completar uma sequência simples de tarefas. Qual o déficit central desse estado confusional agudo?",
+      "options": [
+        "Atenção, com distração e perda da coerência do pensamento",
+        "Memória remota, com atenção e vigilância preservadas",
+        "Linguagem, com afasia fluente e compreensão alterada",
+        "Nível de consciência, com coma de instalação abrupta"
+      ],
+      "correctIndex": 0,
+      "explanation": "No estado confusional agudo (delirium) o déficit mais saliente é o da atenção. Os três aspectos fundamentais são distúrbio de vigilância com aumento da distração, incapacidade de manter a coerência do pensamento e incapacidade de executar uma série de movimentos com objetivo definido. Somam-se desorientação, ilusões e alucinações e déficit de memória. As encefalopatias tóxico-metabólicas são a causa mais comum; frente à demência, o critério de diferenciação é o tempo de evolução."
+    },
+    {
+      "question": "Uma paciente aparentemente em coma resiste à abertura das pálpebras, que caem rapidamente ao serem soltas, tem tono muscular normal e apresenta nistagmo na prova calórica. Qual exame melhor esclarece o quadro?",
+      "options": [
+        "Eletroencefalograma, que será normal",
+        "Tomografia de crânio sem contraste",
+        "Punção lombar com pressão de abertura",
+        "Potencial evocado somatossensitivo"
+      ],
+      "correctIndex": 0,
+      "explanation": "Esses são sinais de retirada psíquica: tono normal, resistência à abertura palpebral, olhos forçadamente fechados, queda rápida da pálpebra (no coma ela cai lentamente), respostas imprevisíveis às manobras oculocefálicas e nistagmo na prova calórica, que indica paciente consciente. Na dúvida, o eletroencefalograma é o melhor exame, pois será normal na alteração psiquiátrica."
+    },
+    {
+      "question": "Durante o protocolo de morte encefálica, um paciente sem reflexos de tronco apresenta flexão dos membros inferiores ao estímulo doloroso na planta do pé. Como esse achado deve ser interpretado?",
+      "options": [
+        "Resposta medular, que não exclui a morte encefálica",
+        "Resposta motora que exclui o diagnóstico de imediato",
+        "Sinal de atividade cortical, que exige EEG de controle",
+        "Postura de decorticação, indicando lesão supratentorial"
+      ],
+      "correctIndex": 0,
+      "explanation": "Nos critérios clínicos de morte encefálica exige-se Glasgow 3 e ausência de resposta motora à dor, desconsiderando as respostas medulares, que podem ocorrer porque a medula segue funcionante; o reflexo cutaneoplantar também é irrelevante. O que precisa estar ausente são os reflexos de tronco: fotomotor, corneano, oculocefálico, oculovestibular, mandibular e faríngeo."
+    },
+    {
+      "question": "No teste de apneia do protocolo de morte encefálica, a ausência de movimentos respiratórios espontâneos é avaliada após atingir qual estímulo?",
+      "options": [
+        "PaCO₂ de pelo menos 55 mmHg",
+        "PaCO₂ de pelo menos 40 mmHg",
+        "PaO₂ abaixo de 60 mmHg",
+        "pH arterial abaixo de 7,10"
+      ],
+      "correctIndex": 0,
+      "explanation": "O teste de apneia é obrigatório e feito com oxigenação (apneia oxigenada), para levar o centro respiratório ao estímulo máximo pela hipercapnia — paCO₂ de 55 a 60 mmHg — sem que surjam incursões respiratórias. A hipoxemia não é o estímulo buscado; o paciente é oxigenado justamente para evitá-la. A resolução brasileira vigente (CFM 2.173/2017) exige PaCO₂ acima de 55 mmHg."
+    }
+  ]
+}

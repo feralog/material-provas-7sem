@@ -1,0 +1,350 @@
+{
+  "titulo": "Déficits Sensoriais no Idoso",
+  "eyebrow": "Geriatria · Quedas e Instabilidade",
+  "subtitulo": "Como a visão e a propriocepção que falham empurram o idoso para a queda",
+  "intro": "A tríade do controle postural; presbiopia e o risco das lentes multifocais; catarata, glaucoma e DMRI com seus dados de queda; a perda somatossensorial do envelhecimento, as estratégias de tornozelo, quadril e passo, a neuropatia periférica e as intervenções — fechando com o caso da queda no escuro.",
+  "questoes": [
+    {
+      "question": "O controle postural do idoso depende da integração de três sistemas sensoriais. Quais são eles?",
+      "options": [
+        "Visão, sistema vestibular e somatossensorial (propriocepção)",
+        "Visão, audição e sistema somatossensorial (propriocepção)",
+        "Visão, sistema vestibular e audição de alta frequência",
+        "Audição, sistema vestibular e somatossensorial cutâneo"
+      ],
+      "correctIndex": 0,
+      "explanation": "O equilíbrio resulta da integração de visão, sistema vestibular e sistema somatossensorial (propriocepção); quando uma entrada falha, as outras compensam. No idoso frágil ou sarcopênico, cuja reserva funcional para reagir a um desequilíbrio já está reduzida, perder uma dessas entradas tira justamente a margem de correção. A audição não integra a tríade do controle postural."
+    },
+    {
+      "question": "Entre as funções visuais, qual se associa mais fortemente a quedas em idosos?",
+      "options": [
+        "Sensibilidade ao contraste",
+        "Acuidade visual para perto",
+        "Acuidade visual para longe",
+        "Visão de cores (discromatopsia)"
+      ],
+      "correctIndex": 0,
+      "explanation": "A sensibilidade ao contraste se associa a quedas mais fortemente do que a acuidade visual para perto ou para longe: é ela que distingue a borda de um degrau, a mudança de nível do piso e o obstáculo em ambiente mal iluminado. Percepção de profundidade (estereoacuidade) e campo visual completam as funções visuais relevantes para o risco."
+    },
+    {
+      "question": "Paciente de 46 anos passou a afastar o celular com o braço estendido para conseguir ler mensagens. Qual é o mecanismo do quadro?",
+      "options": [
+        "Perda da acomodação por enrijecimento do cristalino",
+        "Opacificação progressiva do cristalino com ofuscamento",
+        "Aumento da pressão intraocular com dano ao nervo óptico",
+        "Acúmulo de drusas sob a mácula com escotoma central"
+      ],
+      "correctIndex": 0,
+      "explanation": "É a presbiopia, perda relacionada à idade da capacidade de acomodação: o cristalino enrijece e o músculo ciliar perde eficiência para modulá-lo, e o foco para perto e distâncias intermediárias se perde. Começa por volta dos 40 anos, e o gesto de afastar o objeto deu a ela o apelido de síndrome do braço curto. Opacificação é catarata; pressão intraocular com dano ao nervo, glaucoma; drusas, DMRI."
+    },
+    {
+      "question": "A figura compara o olho normal com o olho com presbiopia. Onde se forma o ponto focal no olho présbita ao tentar focalizar um objeto próximo?",
+      "options": [
+        "Atrás da retina, porque o cristalino não aumenta a curvatura",
+        "Antes da retina, porque a córnea fica mais curva com a idade",
+        "Sobre a retina, mas com a imagem opacificada pelo cristalino",
+        "Antes da retina, porque o globo ocular se alonga com a idade"
+      ],
+      "correctIndex": 0,
+      "explanation": "Sem acomodação, o cristalino rígido não aumenta a curvatura para focalizar de perto e a imagem se forma depois da retina — a figura mostra o ponto focal ultrapassando a parede posterior do olho. Foco antes da retina por alongamento do globo é miopia; imagem opacificada pelo cristalino é catarata. A correção é com lentes corretivas ou cirurgia.",
+      "image": "s06i1",
+      "imageCaption": "Ponto focal no olho normal e no olho com presbiopia"
+    },
+    {
+      "question": "Idosa de 79 anos, ativa, que sai de casa todos os dias e já caiu numa escada, usa óculos progressivos o dia todo. Qual é a conduta óptica mais segura?",
+      "options": [
+        "Óculos monofocais para mobilidade e óculos de leitura à parte",
+        "Manter os progressivos, que corrigem perto e longe ao mesmo tempo",
+        "Trocar por lentes bifocais, que eliminam a distorção do campo inferior",
+        "Suspender os óculos fora de casa para treinar a adaptação visual"
+      ],
+      "correctIndex": 0,
+      "explanation": "Lentes multifocais (bifocais e progressivas) se associam a risco de quedas cerca de duas vezes maior que as monofocais, porque a zona de leitura na parte inferior da lente distorce o campo visual periférico inferior — onde estão degraus e obstáculos. Para o idoso ativo com risco de quedas, o mais seguro é óculos monofocais para mobilidade e atividades externas e óculos de leitura separados. Bifocais também são multifocais e carregam o mesmo problema."
+    },
+    {
+      "question": "Qual dos medicamentos abaixo, usado de forma crônica, está associado ao desenvolvimento de catarata?",
+      "options": [
+        "Corticoide de uso prolongado",
+        "Metformina de uso prolongado",
+        "Enalapril de uso prolongado",
+        "Levotiroxina de uso prolongado"
+      ],
+      "correctIndex": 0,
+      "explanation": "O corticoide de uso prolongado é causa clássica de catarata. Outros fármacos associados são os ISRS (fluoxetina, citalopram), a isotretinoína, a amiodarona e os antimaláricos; entre as doenças, diabetes e hipertensão. Trauma ocular e exposição excessiva à luz solar também contribuem, além do próprio envelhecimento (50+)."
+    },
+    {
+      "question": "Qual conjunto de sintomas é típico da catarata?",
+      "options": [
+        "Cores desbotadas e amareladas, com halos ao redor das luzes",
+        "Perda do campo periférico com a visão central preservada",
+        "Mancha escura central com distorção de linhas retas",
+        "Visão para longe nítida, com piora apenas para leitura"
+      ],
+      "correctIndex": 0,
+      "explanation": "A opacidade do cristalino filtra e espalha a luz: as cores ficam desbotadas, amareladas ou acastanhadas, luzes fortes geram ofuscamento e halos, a visão noturna piora e o embaçamento é progressivo, dificultando leitura e reconhecimento de rostos. Pode haver visão dupla em um só olho. Perda periférica é glaucoma; mancha central, DMRI; piora só para perto, presbiopia."
+    },
+    {
+      "question": "A figura compara a passagem da luz no olho normal e no olho doente, com a cena correspondente. Qual é o tratamento definitivo dessa condição?",
+      "options": [
+        "Remoção do cristalino opaco e implante de lente intraocular",
+        "Colírio hipotensor diário para reduzir o humor aquoso",
+        "Injeção intravítrea de anti-VEGF em intervalos regulares",
+        "Suplemento com vitaminas C e E, zinco e cobre por via oral"
+      ],
+      "correctIndex": 0,
+      "explanation": "A figura mostra o cristalino opacificado dispersando a luz antes da retina, com embaçamento difuso da cena: é a catarata. O único tratamento conhecido é cirúrgico — o cristalino opaco é removido (aspirado) e substituído por uma lente intraocular artificial. Colírio hipotensor é do glaucoma; anti-VEGF e complexo vitamínico, da DMRI.",
+      "image": "s13i1",
+      "imageCaption": "Olho normal e olho com catarata: trajeto da luz e cena vista"
+    },
+    {
+      "question": "Em ensaio clínico randomizado com idosas com catarata, qual foi o efeito da cirurgia do primeiro olho sobre as quedas em 12 meses?",
+      "options": [
+        "Reduziu a taxa de quedas em cerca de 34%",
+        "Reduziu a taxa de quedas em cerca de 80%",
+        "Não alterou a taxa de quedas no período",
+        "Aumentou as quedas pela adaptação à lente"
+      ],
+      "correctIndex": 0,
+      "explanation": "A cirurgia de catarata do primeiro olho reduziu a taxa de quedas em 34% em 12 meses, e as fraturas também foram menos frequentes no grupo operado. A catarata compromete percepção de profundidade e sensibilidade ao contraste e é fator de risco importante para quedas e fratura de quadril — por isso a cirurgia é também uma intervenção de prevenção de quedas."
+    },
+    {
+      "question": "A sequência de imagens simula a progressão de uma doença ocular. Qual padrão de perda visual e qual doença estão representados?",
+      "options": [
+        "Perda periférica progressiva, poupando o centro: glaucoma",
+        "Escotoma central com periferia preservada: degeneração macular",
+        "Embaçamento difuso com cores desbotadas: catarata senil",
+        "Perda de foco só para perto, com longe nítido: presbiopia"
+      ],
+      "correctIndex": 0,
+      "explanation": "O campo visual se fecha da periferia para o centro até a visão em túnel do estágio final: é o glaucoma, neuropatia óptica progressiva em geral associada a pressão intraocular elevada. É silencioso — o paciente não percebe a periferia sumindo — e pode levar à amaurose. A perda insidiosa do campo periférico compromete a detecção de obstáculos e mudanças no ambiente.",
+      "image": "s15i1",
+      "imageCaption": "Visão normal e glaucoma inicial, avançado e em estágio final"
+    },
+    {
+      "question": "Qual procedimento a laser é indicado no glaucoma de ângulo fechado para prevenir crises agudas?",
+      "options": [
+        "Iridotomia, criando um pequeno orifício na íris",
+        "Trabeculoplastia, melhorando o escoamento no trabeculado",
+        "Facoemulsificação, removendo o cristalino opacificado",
+        "Fotocoagulação panretiniana, tratando a neovascularização"
+      ],
+      "correctIndex": 0,
+      "explanation": "No ângulo fechado, a íris bloqueia fisicamente o ângulo e impede o humor aquoso de chegar ao trabeculado; a iridotomia a laser cria um pequeno furo na íris que libera a passagem do líquido e previne crises agudas. A trabeculoplastia é opção do ângulo aberto quando os colírios não bastam."
+    },
+    {
+      "question": "Como se diferenciam o glaucoma de ângulo aberto e o de ângulo fechado?",
+      "options": [
+        "No aberto, o trabeculado obstrui aos poucos e o curso é silencioso",
+        "No aberto, a íris bloqueia o ângulo e o curso é agudo e doloroso",
+        "No fechado, o trabeculado obstrui aos poucos e o curso é silencioso",
+        "No fechado, a pressão intraocular é normal e o dano é só vascular"
+      ],
+      "correctIndex": 0,
+      "explanation": "No ângulo aberto, o ângulo íris-córnea permanece aberto, mas o trabeculado se obstrui gradualmente — como um ralo que entope aos poucos — e o curso é silencioso; trata-se com colírios diários, trabeculoplastia ou cirurgia. No ângulo fechado, o ângulo é estreito ou bloqueado pela própria íris, a pressão sobe de forma aguda e o tratamento é a iridotomia."
+    },
+    {
+      "question": "Em estudo comparando portadores de glaucoma com controles, como a chance de quedas variou com a gravidade da doença?",
+      "options": [
+        "Avançado: chance quase 8 vezes maior; leve: só tendência",
+        "Avançado: chance quase 2 vezes maior; leve: igual a controles",
+        "Leve: chance quase 8 vezes maior; avançado: só tendência",
+        "Leve e avançado: chance cerca de 3 vezes maior, ambas"
+      ],
+      "correctIndex": 0,
+      "explanation": "No glaucoma avançado, a chance ajustada de queda foi quase 8 vezes maior que a de controles (OR 7,97; IC 95% 2,44–26,07; p = 0,001); no leve houve só tendência (OR 2,43; p = 0,059, sem significância estatística). No total, 36% dos pacientes com glaucoma relataram queda nos 12 meses anteriores, contra 20% dos controles, e o risco de fraturas aumenta em até 80%."
+    },
+    {
+      "question": "A figura mostra a mácula normal ao centro e as duas formas de degeneração macular. O que caracteriza a forma com depósitos amarelados?",
+      "options": [
+        "Forma seca: drusas que degeneram os fotorreceptores",
+        "Forma úmida: neovasos sob a mácula que extravasam",
+        "Forma seca: neovasos sob a mácula que extravasam",
+        "Forma úmida: drusas que degeneram os fotorreceptores"
+      ],
+      "correctIndex": 0,
+      "explanation": "Os depósitos amarelados são drusas — proteínas e gorduras do metabolismo que se acumulam sob a retina e degeneram os fotorreceptores: é a forma seca (atrófica), a mais comum e a menos grave. Na forma úmida (exsudativa), em vez de drusas surgem vasos sanguíneos sob a mácula, que podem vazar líquido ou sangue e distorcer a visão central.",
+      "image": "s21i1",
+      "imageCaption": "DMRI úmida, mácula normal e DMRI seca"
+    },
+    {
+      "question": "A imagem simula a visão de um paciente com doença ocular relacionada à idade. Qual consequência funcional decorre desse padrão de perda?",
+      "options": [
+        "Dificuldade de ler e reconhecer rostos, com detecção tardia de obstáculos",
+        "Tropeço em objetos laterais, com leitura e reconhecimento de rostos intactos",
+        "Dificuldade só para perto, corrigida com óculos de leitura simples",
+        "Visão dupla em um só olho, que some ao ocluir o olho afetado"
+      ],
+      "correctIndex": 0,
+      "explanation": "A mancha escura no centro do campo é o escotoma central da degeneração macular relacionada à idade. A mácula é a área da visão de detalhe: ler, dirigir e reconhecer rostos fica difícil, e obstáculos à frente são detectados tarde, gerando tropeços. A periferia, preservada aqui, é justamente o que se perde no glaucoma.",
+      "image": "s20i1",
+      "imageCaption": "Visão normal e visão com degeneração macular"
+    },
+    {
+      "question": "Qual intervenção pode retardar a progressão da degeneração macular relacionada à idade em casos selecionados?",
+      "options": [
+        "Complexo com vitaminas C e E, zinco e cobre",
+        "Complexo com vitaminas B1, B6, B12 e ácido fólico",
+        "Complexo com vitamina D, cálcio e magnésio",
+        "Complexo com ferro, selênio e vitamina K2"
+      ],
+      "correctIndex": 0,
+      "explanation": "A DMRI é incurável, mas complexos vitamínicos com vitaminas C e E, zinco e cobre podem conter ou retardar a progressão conforme o estágio, e há tratamento medicamentoso para a forma úmida (anti-VEGF intravítreo). A prevenção inclui não fumar, controlar peso, pressão arterial e colesterol, dieta com peixes, leguminosas e folhas verdes e uso de óculos de sol."
+    },
+    {
+      "question": "Em grande coorte com mais de 75 mil pessoas com degeneração macular relacionada à idade, quanto aumentaram os riscos de queda e de fratura em relação a controles pareados?",
+      "options": [
+        "Quedas cerca de 25% maior; fraturas cerca de 18% maior",
+        "Quedas cerca de 18% maior; fraturas cerca de 25% maior",
+        "Quedas cerca de 80% maior; fraturas cerca de 34% maior",
+        "Quedas cerca de 25% maior; fraturas sem aumento relevante"
+      ],
+      "correctIndex": 0,
+      "explanation": "Em 75.622 pessoas com DMRI, o risco de quedas foi 25% maior (HR ajustado 1,25; IC 95% 1,23–1,27) e o de fraturas, 18% maior (HR 1,18; IC 95% 1,15–1,21). O risco relativo é um pouco menor que o da catarata e do glaucoma na mesma coorte, mas a DMRI é a principal causa de perda visual irreversível acima dos 55 anos em países de alta renda, o que torna o impacto clínico grande."
+    },
+    {
+      "question": "Paciente com degeneração macular apresenta alterações compensatórias da marcha. Qual conjunto é esperado?",
+      "options": [
+        "Passo mais largo, passada mais curta e duplo apoio prolongado",
+        "Passo mais estreito, passada mais longa e duplo apoio reduzido",
+        "Passo mais largo, passada mais longa e velocidade aumentada",
+        "Passo mais estreito, passada mais curta e velocidade aumentada"
+      ],
+      "correctIndex": 0,
+      "explanation": "Com a visão central prejudicada, o paciente anda mais devagar, alarga o passo (base de sustentação mais ampla como estratégia compensatória), encurta a passada e passa mais tempo em duplo apoio, com os dois pés no chão. Também perde equilíbrio em tarefas duplas, como andar conversando, e oscila mais no sentido anteroposterior mesmo com DMRI unilateral."
+    },
+    {
+      "question": "Qual adaptação do domicílio é recomendada para o idoso com baixa visão e risco de quedas?",
+      "options": [
+        "Faixas contrastantes na borda dos degraus e corrimão dos dois lados",
+        "Tapetes soltos sobre o piso liso para amortecer eventuais quedas",
+        "Iluminação reduzida à noite para evitar ofuscamento ao acordar",
+        "Corrimão de um só lado, para manter a outra mão livre na escada"
+      ],
+      "correctIndex": 0,
+      "explanation": "A casa precisa ser legível para quem enxerga pouco: faixas contrastantes na borda dos degraus, corrimão dos dois lados, luz em corredores, escadas e banheiros, remoção de tapetes soltos, correção de pisos quebrados e barras de apoio no banheiro. Perigos domésticos potencializam o risco de queda de quem tem deficiência visual, e ensaio randomizado de 2021 na Nova Zelândia mostrou que essas modificações reduzem as lesões por quedas em casa."
+    },
+    {
+      "question": "Qual alteração das fibras nervosas periféricas é típica do envelhecimento e explica a perda de propriocepção e de vibração?",
+      "options": [
+        "Perda preferencial de fibras mielinizadas grossas e distais",
+        "Perda preferencial de fibras finas amielínicas e proximais",
+        "Hipermielinização das fibras grossas, que acelera a condução",
+        "Perda exclusiva de fibras motoras, com as sensitivas intactas"
+      ],
+      "correctIndex": 0,
+      "explanation": "O envelhecimento leva à perda preferencial das fibras sensoriais mielinizadas de grande calibre e distais — as que conduzem propriocepção, vibração e tato discriminativo —, além de desmielinização, que altera a temporização dos sinais, e redução do número total de fibras. Por isso a perda começa nos pés e sobe, e a sensibilidade vibratória (palestésica) é das primeiras a cair."
+    },
+    {
+      "question": "Qual estrutura sensorial periférica costuma permanecer sem alterações relevantes com o envelhecimento?",
+      "options": [
+        "Corpúsculos de Pacini, da vibração de alta frequência",
+        "Corpúsculos de Meissner, do tato leve e discriminativo",
+        "Células de Merkel, da pressão sustentada e da textura",
+        "Aferentes dos fusos musculares, do estiramento muscular"
+      ],
+      "correctIndex": 0,
+      "explanation": "Com a idade reduzem-se os corpúsculos de Meissner, as células de Merkel e a densidade de aferentes mecanorreceptivos, e os aferentes dos fusos musculares degeneram desde a meia-idade. Os corpúsculos de Pacini costumam não ter alterações relevantes — a perda da sensibilidade vibratória no idoso decorre sobretudo das fibras grossas que conduzem o sinal, não do receptor."
+    },
+    {
+      "question": "Idoso com perda da sensibilidade plantar passa a adotar estratégias compensatórias na marcha. Qual delas é esperada?",
+      "options": [
+        "Olhar voltado para o solo, usando a visão no lugar da propriocepção",
+        "Olhar fixo no horizonte, dispensando a informação vinda dos pés",
+        "Passos longos e base estreita, para ganhar velocidade e estabilidade",
+        "Predomínio da estratégia de tornozelo, com o tronco imóvel"
+      ],
+      "correctIndex": 0,
+      "explanation": "Sem informação confiável dos pés, o idoso usa a visão como substituto da propriocepção e anda olhando para o chão. Encurta os passos e alarga a base para ganhar estabilidade diante da incerteza sensorial e, como o tornozelo não sente o desequilíbrio a tempo, recorre à estratégia de quadril, com movimentos bruscos do tronco. Pior sensibilidade plantar se associa a maior instabilidade da marcha."
+    },
+    {
+      "question": "A figura organiza a resposta ao desequilíbrio em fases. Quando a perturbação supera o que as estratégias de tornozelo e quadril conseguem corrigir, qual é a resposta seguinte?",
+      "options": [
+        "Estratégia do passo, reposicionando a base de suporte",
+        "Reação de proteção dos braços, com a queda já em curso",
+        "Estratégia do tornozelo, com o corpo movido como um bloco",
+        "Ajuste postural antecipado, antes de qualquer perturbação"
+      ],
+      "correctIndex": 0,
+      "explanation": "Na Fase I atuam as estratégias de tornozelo e quadril; superadas, a Fase II é a estratégia do passo, em que o sistema nervoso reposiciona a base de suporte com um passo para frente, para trás ou para o lado. Próximo à queda vem a reação de resgate postural (Fase III) e, na queda, a reação de proteção dos braços (Fase IV).",
+      "image": "s37i1",
+      "imageCaption": "Fases da resposta postural, da perturbação à queda, e fatores de risco"
+    },
+    {
+      "question": "Por que a estratégia do tornozelo costuma falhar no idoso, levando-o a recorrer à estratégia do quadril?",
+      "options": [
+        "Por diminuição da força dos músculos estabilizadores do tornozelo",
+        "Por excesso de força do tríceps sural, que trava a articulação",
+        "Por hipersensibilidade plantar, que gera respostas exageradas",
+        "Por dependência visual, que inibe os músculos da perna"
+      ],
+      "correctIndex": 0,
+      "explanation": "Na estratégia do tornozelo o sistema nervoso recruta os músculos do tornozelo e move o corpo como um bloco. Com a idade, a força dos estabilizadores do tornozelo cai e o organismo passa à estratégia do quadril — tronco e quadril em sentidos opostos, como uma dobradiça —, que depende de abdominais e extensores das costas, também enfraquecidos, e pode deslocar o centro de gravidade para fora da base, exigindo um passo."
+    },
+    {
+      "question": "Qual é a causa mais comum de neuropatia periférica em idosos?",
+      "options": [
+        "Diabetes mellitus de longa duração",
+        "Deficiência de vitamina B12",
+        "Uremia da doença renal crônica",
+        "Toxicidade por quimioterápicos"
+      ],
+      "correctIndex": 0,
+      "explanation": "A neuropatia diabética é a forma mais comum de neuropatia periférica no idoso, com prevalência que cresce com a idade, o tempo de diabetes e o pior controle glicêmico. Outras causas são deficiência de B12, estenose de canal vertebral, uremia e toxicidade medicamentosa. Qualquer que seja a causa, a neuropatia periférica é fator de risco independente para quedas."
+    },
+    {
+      "question": "Uma prótese sensorial vestível (Walkasins) é usada em pacientes com neuropatia periférica e alto risco de quedas. Como ela funciona?",
+      "options": [
+        "Sensores na palmilha disparam vibrações acima do tornozelo",
+        "Eletrodos na panturrilha estimulam diretamente o nervo tibial",
+        "Uma órtese rígida trava o tornozelo e impede a oscilação",
+        "Sensores na palmilha emitem sinais sonoros a cada passo"
+      ],
+      "correctIndex": 0,
+      "explanation": "É uma neuroprótese de substituição sensorial: a palmilha com sensores detecta a pressão plantar e o balanço do corpo, e um módulo no tornozelo devolve estímulos vibrotáteis direcionais acima dele. Aumentou a velocidade da marcha e reduziu em 43% a taxa de quedas em 26 semanas de uso, comparado ao período anterior. Exige período de reaprendizado sensorial e ajuste da intensidade por profissional."
+    },
+    {
+      "question": "Por que a perda visual concomitante é particularmente devastadora para o equilíbrio do idoso com perda somatossensorial?",
+      "options": [
+        "Porque a visão passa a ser o principal substituto da propriocepção",
+        "Porque a perda visual acelera a degeneração dos nervos periféricos",
+        "Porque a propriocepção depende da retina para ser processada",
+        "Porque o sistema vestibular é inibido quando a visão diminui"
+      ],
+      "correctIndex": 0,
+      "explanation": "Idosos dependem mais da visão que jovens até para julgar a altura do próprio pé — uma mudança na integração multissensorial para compensar a propriocepção degenerada. Quando a visão também falha (catarata, glaucoma, DMRI) ou some (escuro), o idoso perde o último sistema compensatório e o equilíbrio desaba."
+    },
+    {
+      "question": "Homem de 78 anos, diabético e hipertenso de longa data, cai ao levantar no escuro para ir ao banheiro: sentiu-se flutuar e caiu após dois passos, sem perda de consciência ou palpitações. Tem vibração reduzida nos háluces, monofilamento alterado e Romberg positivo. Qual é o mecanismo da queda?",
+      "options": [
+        "Ataxia sensorial: sem propriocepção, a visão era a última âncora",
+        "Ataxia cerebelar: o Romberg positivo indica lesão do cerebelo",
+        "Síncope arrítmica: a queda decorre de baixo débito súbito",
+        "Hipoglicemia pela metformina, com neuroglicopenia noturna"
+      ],
+      "correctIndex": 0,
+      "explanation": "Vibração reduzida nos háluces, monofilamento de 10 g alterado e Romberg positivo apontam neuropatia diabética com ataxia sensorial: o cérebro ignorava os sinais falhos dos pés e dependia quase só da visão; no escuro, essa âncora desapareceu. O Romberg positivo aqui não indica lesão cerebelar, e sim déficit de propriocepção consciente. Não houve perda de consciência nem palpitações, e metformina isolada raramente causa hipoglicemia."
+    },
+    {
+      "question": "Homem de 78 anos com neuropatia diabética e ataxia sensorial caiu ao levantar no escuro para ir ao banheiro. Qual conjunto de intervenções é mais adequado?",
+      "options": [
+        "Luz noturna com sensor, revisão da visão e treino proprioceptivo",
+        "Imagem de crânio, anticoagulação e repouso relativo no leito",
+        "Sedativo noturno, contenção no leito e grades laterais elevadas",
+        "Bengala, suspensão da metformina e retorno em um ano"
+      ],
+      "correctIndex": 0,
+      "explanation": "O plano ataca cada falha: luzes de balizamento noturno com sensor de movimento repõem a visão no trajeto ao banheiro; avaliar a acuidade visual (catarata) garante a visão durante o dia; treino proprioceptivo em superfícies estáveis busca re-mapear o córtex sensorial, ao lado de exercícios de equilíbrio, marcha e fortalecimento cerca de 3 vezes por semana. Sedativos, contenção e repouso aumentam o risco de queda."
+    },
+    {
+      "question": "Idoso diabético de longa data, em uso crônico de metformina, tem neuropatia sensitiva e caiu. Além do controle glicêmico, qual dosagem investiga uma causa corrigível dessa neuropatia?",
+      "options": [
+        "Vitamina B12, cuja absorção a metformina reduz",
+        "Vitamina D, cuja síntese a metformina bloqueia",
+        "Ácido úrico, cuja excreção a metformina reduz",
+        "Potássio, cuja excreção a metformina aumenta"
+      ],
+      "correctIndex": 0,
+      "explanation": "A deficiência de vitamina B12 é causa de neuropatia periférica e pode se somar à neuropatia diabética. O uso prolongado de metformina reduz a absorção de B12, então dosá-la é parte da avaliação do diabético com neuropatia em uso do fármaco — é uma das poucas causas de neuropatia que se corrigem com reposição."
+    }
+  ]
+}

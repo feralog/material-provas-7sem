@@ -1,0 +1,1255 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Epilepsias</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;450;500;600&display=swap" rel="stylesheet">
+<style>
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0}
+  body{background:#f5f3ef;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+  button{font:inherit;color:inherit;font-family:'IBM Plex Sans',system-ui,sans-serif}
+  a{color:#2b57cc;text-decoration:none}
+  a:hover{color:#1e3f9c;text-decoration:underline}
+  @keyframes qFade{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+  @keyframes qDrawer{from{opacity:0;transform:translateY(-4px)}to{opacity:1;transform:none}}
+
+  /* hovers — no canvas eram style-hover, aqui viram CSS de verdade */
+  .h-dark:hover{background:#2b57cc!important;transform:translateY(-1px)}
+  .h-darkflat:hover{background:#2b57cc!important}
+  .h-line:hover{border-color:#121a2b!important}
+  .h-ink:hover{color:#121a2b!important}
+  .h-opt:not(.locked):hover{border-color:var(--hbd)!important;transform:translateY(-1px)}
+  .h-card:hover{border-color:#121a2b!important;transform:translateY(-2px)}
+
+  /* tipografia do resumo */
+  .rsm{font-size:16.5px;line-height:1.72;color:#2a3141;max-width:64ch}
+  .rsm h2{font-family:'Newsreader',Georgia,serif;font-size:27px;font-weight:500;letter-spacing:-.02em;line-height:1.2;margin:42px 0 14px;padding-top:20px;border-top:1px solid #e4e0d8;text-wrap:pretty}
+  .rsm h2:first-child{margin-top:0;padding-top:0;border-top:0}
+  .rsm h3{font-family:'Newsreader',Georgia,serif;font-size:20px;font-weight:600;letter-spacing:-.01em;margin:28px 0 10px;text-wrap:pretty}
+  .rsm h4{font-family:'IBM Plex Mono',monospace;font-size:11px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:#2b57cc;margin:24px 0 8px}
+  .rsm p{margin:0 0 15px;text-wrap:pretty}
+  .rsm ul,.rsm ol{margin:0 0 15px;padding-left:22px}
+  .rsm li{margin-bottom:7px;text-wrap:pretty}
+  .rsm li>ul,.rsm li>ol{margin:7px 0 0}
+  .rsm strong{font-weight:600;color:#121a2b}
+  .rsm em{font-style:italic}
+  .rsm code{font-family:'IBM Plex Mono',monospace;font-size:.88em;background:#efece5;border:1px solid #e4e0d8;border-radius:5px;padding:1px 5px}
+  .rsm hr{border:0;border-top:1px solid #e4e0d8;margin:32px 0}
+  .rsm blockquote{margin:0 0 18px;padding:15px 18px;background:#f7f6f2;border-left:2.5px solid #2b57cc;border-radius:0 12px 12px 0;font-size:15px;line-height:1.65;color:#39404f}
+  .rsm blockquote p:last-child{margin-bottom:0}
+  .rsm .tbl{overflow-x:auto;margin:0 0 20px;border:1px solid #e4e0d8;border-radius:12px;background:#fff}
+  .rsm table{border-collapse:collapse;width:100%;font-size:14px;line-height:1.5}
+  .rsm th{text-align:left;font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.09em;text-transform:uppercase;color:#8a8578;font-weight:600;padding:11px 14px;background:#faf9f6;border-bottom:1px solid #e4e0d8;white-space:nowrap}
+  .rsm td{padding:11px 14px;border-bottom:1px solid #efece5;vertical-align:top;text-wrap:pretty}
+  .rsm tr:last-child td{border-bottom:0}
+  .rsm .key{background:#f2f6fb;border:1px solid #d6e2f4;border-radius:12px;padding:16px 18px;margin:0 0 18px}
+  .rsm .key>*:last-child{margin-bottom:0}
+
+  /* figuras — no resumo e na questao */
+  .fig{margin:0 0 20px;background:#fff;border:1px solid #e4e0d8;border-radius:14px;overflow:hidden}
+  .fig img{display:block;width:100%;height:auto;cursor:zoom-in}
+  .fig figcaption{font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.06em;color:#8a8578;padding:9px 13px;border-top:1px solid #efece5;background:#faf9f6;text-wrap:pretty}
+  .qfig{margin:0 0 20px}
+
+  /* lightbox */
+  #lb{position:fixed;inset:0;z-index:90;background:rgba(18,26,43,.86);display:none;align-items:center;justify-content:center;padding:24px;cursor:zoom-out}
+  #lb.on{display:flex;animation:qFade .16s ease}
+  #lb img{max-width:100%;max-height:100%;border-radius:10px;box-shadow:0 24px 60px rgba(0,0,0,.5)}
+
+  @media(max-width:560px){
+    .rsm{font-size:16px}
+    .rsm h2{font-size:24px}
+    .home-grid{grid-template-columns:1fr!important}
+  }
+</style>
+</head>
+<body>
+
+<div style="min-height:100vh;background:#f5f3ef;color:#121a2b;font-family:'IBM Plex Sans',system-ui,sans-serif">
+  <header style="position:sticky;top:0;z-index:30;background:rgba(245,243,239,.94);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid #e4e0d8">
+    <div style="max-width:720px;margin:0 auto;padding:12px 16px 10px" id="hdr"></div>
+  </header>
+  <main style="max-width:720px;margin:0 auto;padding:0 16px 80px" id="stage"></main>
+</div>
+<div id="lb"><img alt=""></div>
+
+<script type="text/html" id="resumoSrc"><h2>Crise epiléptica, epilepsia e o que acontece no neurônio</h2>
+<p>Epilepsia é uma doença neurológica crônica — e, em muitos casos, progressiva quanto a distúrbios cognitivos, frequência e gravidade das crises — caracterizada por <strong>crises epilépticas recorrentes</strong>. Afeta cerca de <strong>1% da população mundial</strong>. A distinção que organiza todo o raciocínio é entre <em>crise</em> e <em>epilepsia</em>: a crise é o evento; a epilepsia é a tendência duradoura de gerá-lo. Por isso, crises desencadeadas por <strong>insulto agudo</strong> — febre, ingestão de álcool, intoxicação por drogas ou abstinência — <strong>não contam</strong> para o diagnóstico: são crises provocadas (sintomáticas agudas).</p>
+<p>O critério clássico exige <strong>duas ou mais crises nos últimos 12 meses</strong> sem evidência de insulto agudo.</p>
+<blockquote><p><strong>Complemento — definição prática da ILAE (2014):</strong> hoje se diagnostica epilepsia em qualquer uma de três situações: (1) <strong>duas crises não provocadas</strong> (ou reflexas) separadas por <strong>mais de 24 horas</strong>; (2) <strong>uma crise não provocada</strong> com probabilidade de nova crise de <strong>pelo menos 60% nos 10 anos seguintes</strong> — por exemplo, com lesão estrutural na imagem ou atividade epileptiforme no EEG; (3) diagnóstico de uma <strong>síndrome epiléptica</strong>. A epilepsia é considerada <em>resolvida</em> na síndrome idade-dependente que passou da idade, ou após 10 anos sem crises e 5 anos sem medicação.</p></blockquote>
+<h3>Epidemiologia</h3>
+<div class="tbl"><table><thead><tr><th>Indicador</th><th>Valor</th></tr></thead><tbody><tr><td>Incidência em países desenvolvidos (corrigida por idade)</td><td>20 a 70 / 100.000 pessoas/ano</td></tr><tr><td>Prevalência em países desenvolvidos</td><td>cerca de 0,5%</td></tr><tr><td>Prevalência na América Latina</td><td>1,5 a 2%</td></tr><tr><td>Ao menos uma crise ao longo da vida</td><td>5 a 7% da população</td></tr><tr><td>Epilepsia ativa em Porto Alegre</td><td>16,5 / 1.000 — mais de 3× a dos países desenvolvidos</td></tr><tr><td>Estimativa para o Brasil</td><td>cerca de 2.500.000 pessoas</td></tr></tbody></table></div>
+<p>A curva de incidência por idade muda conforme o país. Nos <strong>desenvolvidos</strong> ela predomina em <strong>crianças</strong> (distúrbios do desenvolvimento e epilepsias idiopáticas, de suscetibilidade genética) e em <strong>idosos</strong> (processos degenerativos e vasculares). Nos <strong>países em desenvolvimento</strong> o pico ocorre em <strong>adultos jovens</strong>, porque <strong>causas infecciosas e parasitárias</strong> e <strong>traumatismos cranioencefálicos</strong> respondem por fatia significativa dos casos.</p>
+<h3>Fisiopatogenia</h3>
+<p>A doença é um estado de <strong>hiperatividade</strong> de neurônios e circuitos cerebrais, capaz de gerar descargas elétricas <strong>síncronas e anormais</strong>. O desequilíbrio nasce do <strong>excesso de excitação</strong> — mediada principalmente pelo <strong>glutamato</strong>, o principal neurotransmissor excitatório — ou da <strong>falta de inibição</strong>, mediada pelo <strong>GABA</strong>. No nível celular, a descarga interictal corresponde a um <strong>desvio paroxístico de despolarização</strong> (PDS): um surto sincronizado de potenciais de ação numa população neuronal.</p>
+<p>O espectro vai de descargas interictais vistas só no EEG até crises isoladas e, no extremo, o <strong>estado de mal</strong> eletrográfico e/ou clínico — crise isolada prolongada ou crises repetidas a curtos intervalos. O EEG de escalpo só capta a descarga se a área sincronizada for acessível ao eletrodo e tiver <strong>6 cm² ou mais</strong>, um dos motivos pelos quais EEG normal não exclui epilepsia.</p>
+<ul><li><strong>Crises focais</strong> nascem em parte de um hemisfério, no nível <strong>cortical</strong>. Com a</li></ul>
+<p>propagação, podem se tornar <strong>secundariamente generalizadas</strong>.</p>
+<ul><li><strong>Crises generalizadas</strong> envolvem desde o início os dois hemisférios, por meio de</li></ul>
+<p><strong>circuitos talâmicos</strong> que geram descargas difusas, bilaterais e síncronas.</p>
+<p>A <strong>consciência</strong> se perde quando o processo atinge o <strong>sistema reticular ativador ascendente</strong> — na sua origem, no tronco encefálico, ou nas suas projeções difusas. Quando isso não ocorre, o paciente se mantém consciente durante toda a crise.</p>
+<blockquote><p>O dano celular das crises — sobretudo das generalizadas com fenômenos motores intensos e duradouros — decorre do <strong>influxo de cálcio</strong> na despolarização e da ativação de receptores de aminoácidos excitatórios: <strong>necrose aguda</strong> e <strong>morte apoptótica</strong> a longo prazo. É o <strong>dano excitotóxico</strong>, o mesmo mecanismo invocado para a esclerose mesial temporal.</p></blockquote>
+<h2>Classificação das crises: de 1981 à terminologia atual</h2>
+<h3>O vocabulário motor</h3>
+<p>O evento motor de uma crise é <strong>positivo</strong> (aumento da contração) ou <strong>negativo</strong> (diminuição).</p>
+<div class="tbl"><table><thead><tr><th>Fenômeno</th><th>Tipo</th><th>Definição</th></tr></thead><tbody><tr><td>Tônico</td><td>positivo</td><td>contração mantida, de poucos segundos a minutos</td></tr><tr><td>Clônico</td><td>positivo</td><td>cada contração seguida de relaxamento: abalos sucessivos</td></tr><tr><td>Mioclônico</td><td>positivo</td><td>contrações muito breves, semelhantes a choques</td></tr><tr><td>Mioclonia negativa</td><td>negativo</td><td>interrupção da contração tônica por <strong>menos de 500 ms</strong></td></tr><tr><td>Atonia (crise atônica)</td><td>negativo</td><td>perda ou diminuição abrupta do tono por <strong>2 s ou mais</strong></td></tr></tbody></table></div>
+<h3>Classificação de 1981</h3>
+<p>A Classificação Internacional das Crises Epilépticas de <strong>1981</strong> divide as crises em três grupos:</p>
+<ul><li><strong>Parciais (focais)</strong> — ativação de uma parte do cérebro, clínica e</li></ul>
+<p>eletroencefalograficamente. Subdividem-se em <strong>parciais simples</strong>, com <strong>consciência preservada</strong>, e <strong>parciais complexas</strong>, com <strong>consciência comprometida</strong>. Podem evoluir para <strong>secundariamente generalizadas</strong>.</p>
+<ul><li><strong>Generalizadas</strong> — envolvimento de amplas áreas dos dois hemisférios <strong>desde o início</strong>.</li><li><strong>Não classificáveis</strong> — as que não se enquadram nos dois grupos.</li></ul>
+<h3>Proposta de 2001</h3>
+<p>Depois de uma década de vídeo-EEG e de neuroimagem estrutural e funcional, a Liga Internacional contra a Epilepsia (ILAE) propôs em 2001 que a classificação virasse uma <strong>lista de tipos de crise</strong>, cada um uma entidade diagnóstica definida apenas pela <strong>semiologia</strong>, sem conotação anatômica ou fisiopatológica. São três subgrupos:</p>
+<ul><li><strong>Crises autolimitadas</strong> — generalizadas e focais.</li><li><strong>Crises contínuas</strong> — <em>status epilepticus</em> generalizado e focal.</li><li><strong>Estímulos precipitantes de crises reflexas</strong> — luz intermitente, padrões visuais,</li></ul>
+<p>pensamento, música, alimentação, praxia, leitura, água quente, sobressalto, estímulos proprioceptivos e sensitivo-sensoriais.</p>
+<h4>Complemento — terminologia ILAE 2017</h4>
+<p>A classificação usada hoje parte do <strong>início</strong> da crise (focal, generalizado ou desconhecido) e, nas focais, do <strong>nível de percepção</strong>. A equivalência com os termos antigos cai em prova:</p>
+<div class="tbl"><table><thead><tr><th>Termo antigo</th><th>Terminologia ILAE 2017</th></tr></thead><tbody><tr><td>Crise parcial simples</td><td>Crise focal <strong>perceptiva</strong> (percepção preservada)</td></tr><tr><td>Crise parcial complexa</td><td>Crise focal <strong>com comprometimento da percepção</strong> (disperceptiva)</td></tr><tr><td>Secundariamente generalizada</td><td>Crise focal <strong>evoluindo para tônico-clônica bilateral</strong></td></tr><tr><td>Grande mal</td><td>Crise tônico-clônica generalizada</td></tr><tr><td>Pequeno mal</td><td>Crise de ausência</td></tr><tr><td>Idiopática / sintomática / provavelmente sintomática (criptogênica)</td><td>Etiologia <strong>genética, estrutural, metabólica, imune, infecciosa ou desconhecida</strong></td></tr><tr><td>Epilepsia "benigna"</td><td>Epilepsia <strong>autolimitada</strong></td></tr><tr><td>Encefalopatia epiléptica</td><td><strong>Encefalopatia epiléptica e do desenvolvimento</strong></td></tr></tbody></table></div>
+<blockquote><p>Na ILAE 2017 as focais se dividem ainda em <strong>início motor</strong> (automatismos, atônica, clônica, espasmos, hipercinética, mioclônica, tônica) e <strong>início não motor</strong> (autonômica, parada comportamental, cognitiva, emocional, sensorial). As generalizadas se dividem em <strong>motoras</strong> e <strong>não motoras</strong> — estas são as ausências.</p></blockquote>
+<h2>Crises generalizadas: clínica e EEG de cada tipo</h2>
+<p>Não há evidência de início localizado: as manifestações indicam envolvimento dos dois hemisférios desde o início, e as descargas do EEG são bilaterais. Como o sistema reticular ativador é atingido precocemente, a <strong>consciência é sempre comprometida — exceto nas crises mioclônicas</strong>, eventos de poucos segundos em que ela é provavelmente preservada.</p>
+<div class="tbl"><table><thead><tr><th>Crise</th><th>Clínica</th><th>EEG</th></tr></thead><tbody><tr><td><strong>Tônico-clônica</strong> (grande mal)</td><td>perda abrupta da consciência; contração tônica e depois clônica dos quatro membros; apneia, liberação esfincteriana, sialorreia, mordedura de língua; cerca de 1 min; pós-ictal com confusão e sonolência</td><td>fase tônica: ritmo a <strong>10 Hz</strong> bilateral, síncrono e simétrico; fase clônica: <strong>polispícula-onda lenta</strong></td></tr><tr><td><strong>Clônica</strong></td><td>abalos clônicos repetitivos com comprometimento da consciência</td><td>ritmo a 10 Hz entremeado de ondas lentas: polispícula-onda irregular, migrando de região</td></tr><tr><td><strong>Tônica</strong></td><td>10 a 20 s; axial, das raízes dos membros ou global</td><td>atividade rápida de <strong>20 ± 5 Hz</strong>, ritmo a 10 Hz ou dessincronização</td></tr><tr><td><strong>Ausência típica</strong></td><td>breve perda de consciência com automatismos orais e manuais discretos, piscamento, sinais autonômicos; <strong>10 a 30 s</strong>; início e fim <strong>abruptos</strong>; várias vezes ao dia</td><td><strong>espícula-onda a 3/s</strong>, bilateral e síncrona, de início e fim abruptos</td></tr><tr><td><strong>Ausência atípica</strong></td><td>comprometimento menor da consciência; início e fim <strong>graduais</strong>; tono alterado; <strong>não</strong> desencadeada por hiperpneia</td><td><strong>ponta-onda lenta a 1,5–2,5/s</strong>, irregular, às vezes assimétrica</td></tr><tr><td><strong>Ausência mioclônica</strong></td><td>ausência com abalos mioclônicos de ombros, braços e pernas e elevação tônica dos membros superiores</td><td>descargas generalizadas</td></tr><tr><td><strong>Espasmos</strong></td><td>contração tônica rápida (1 a 15 s) de pescoço, tronco e membros, em flexão ou extensão, <strong>em salvas</strong>, ao despertar e na sonolência</td><td>interictal: <strong>hipsarritmia</strong>; durante o espasmo, padrão semelhante ao da crise tônica</td></tr><tr><td><strong>Mioclônica</strong></td><td>abalos súbitos tipo choque; após privação de sono, ao despertar ou ao adormecer</td><td><strong>polispícula-onda</strong> generalizada, frequentemente desencadeada por <strong>fotoestimulação</strong></td></tr><tr><td><strong>Mioclonias palpebrais</strong></td><td>piscamento rápido ao fechar os olhos, com desvio ocular para cima, com ou sem ausências breves</td><td>espícula-onda generalizada só em ambiente iluminado</td></tr><tr><td><strong>Mioclono-atônica</strong></td><td>na infância: abalos dos membros superiores em flexão seguidos de perda de tono, com queda da cabeça e flexão dos joelhos</td><td>polispícula-onda ou ponta-onda a 2–3/s, predomínio anterior</td></tr><tr><td><strong>Mioclonia negativa</strong></td><td>atonia de 30 a 40 ms</td><td>— (doença de Lafora, encefalopatias mitocondriais)</td></tr><tr><td><strong>Atônica</strong></td><td>perda do tono postural, com queda lenta se o paciente está em pé</td><td>espícula-onda ou, mais frequentemente, polispícula-onda generalizada</td></tr></tbody></table></div>
+<h3>Detalhes que viram questão</h3>
+<ul><li>O <strong>grito epiléptico</strong> da crise tônico-clônica é o ar expulso pela <strong>glote fechada</strong></li></ul>
+<p>durante a contração tônica.</p>
+<ul><li>A <strong>hiperventilação</strong> é ativador tão potente da ausência típica que **não observar a</li></ul>
+<p>crise em 3 a 5 minutos de hiperpneia** põe o diagnóstico em dúvida. As ausências podem vir só com perda de consciência ou com componentes clônicos, tônicos, atônicos, automatismos ou liberação esfincteriana (<em>ausências enuréticas</em>).</p>
+<ul><li>Os <strong>espasmos</strong> do lactente costumam vir com <strong>choro</strong> e, quando não presenciados pelo</li></ul>
+<p>médico, são confundidos com <strong>cólica</strong> — atraso que compromete o prognóstico. A <strong>hipsarritmia</strong> é o padrão interictal: ondas lentas de grande amplitude, espículas e ondas agudas sem organização espacial nem temporal.</p>
+<blockquote><p><strong>Ausência típica × atípica:</strong> a típica tem início e fim abruptos, é desencadeada pela hiperventilação e mostra <strong>espícula-onda a 3/s</strong>; a atípica tem início e fim graduais, alteração de tono, não responde à hiperpneia e mostra <strong>ponta-onda lenta abaixo de 2,5/s</strong>.</p></blockquote>
+<h2>Crises focais e a semiologia de cada lobo</h2>
+<p>Crises focais são as que indicam envolvimento de uma porção de um hemisfério. O EEG pode mostrar descargas focais, mas nem sempre. Os sinais subjetivos que antecedem a perda de consciência e que o paciente consegue descrever são a <strong>aura</strong> — ela já é a crise, uma manifestação subjetiva que o observador não detecta.</p>
+<h3>Tipos de crise focal</h3>
+<ul><li><strong>Sensitivo-sensoriais elementares</strong> — parestesias, dor, sensações viscerais, fenômenos</li></ul>
+<p>visuais, auditivos, olfatórios e gustativos.</p>
+<ul><li><strong>Experienciais</strong> — alucinações multissensoriais, afetivas e mnemônicas, reconhecidas como</li></ul>
+<p>fora do contexto real: <strong>déjà vu</strong>, estados de sonho, alucinações complexas.</p>
+<ul><li><strong>Motoras com sinais clônicos elementares</strong> — contrações regulares a intervalos menores</li></ul>
+<p>que 1 a 2 s, originadas quase sempre no <strong>córtex motor primário contralateral</strong>.</p>
+<ul><li><strong>Motoras tônicas assimétricas</strong> — posturas assimétricas por contração tônica de um membro,</li></ul>
+<p>de um hemicorpo ou dos quatro membros; <strong>10 a 40 s</strong>, início abrupto, às vezes com grito; <strong>consciência em geral preservada e sem confusão pós-crítica</strong>.</p>
+<ul><li><strong>Com automatismos típicos do lobo temporal</strong> — movimentos coordenados e repetitivos de</li></ul>
+<p>partes <strong>distais</strong>: dedos, mãos, língua e lábios (<strong>oroalimentares</strong>), em geral com comprometimento da consciência.</p>
+<ul><li><strong>Com automatismos hipercinéticos</strong> — movimentos <strong>proximais</strong>, amplos, que parecem</li></ul>
+<p>violentos: pedalar, impulsão pélvica, balanceio do corpo.</p>
+<ul><li><strong>Mioclonias negativas focais</strong> e <strong>crises motoras inibitórias</strong> (paresia ou afasia</li></ul>
+<p>ictais).</p>
+<ul><li><strong>Gelásticas</strong> — riso incomum, estereotipado e inapropriado; classicamente associadas ao</li></ul>
+<p><strong>hamartoma hipotalâmico</strong>, mas também vistas em epilepsias frontais e temporais.</p>
+<ul><li><strong>Hemiclônicas</strong> — características de tônico-clônica, mas restritas ou predominantes num</li></ul>
+<p>lado; se prolongadas, podem deixar dano hemisférico: <strong>síndrome hemiconvulsão-hemiplegia-epilepsia</strong>.</p>
+<ul><li><strong>Secundariamente generalizadas</strong> — tônico-clônicas em geral assimétricas, precedidas de</li></ul>
+<p><strong>versão da cabeça e dos olhos para o lado contralateral</strong> ao início.</p>
+<h3>Lobo temporal</h3>
+<p>As crises do lobo temporal resultam da ativação de estruturas arquicorticais como a amígdala e cursam com manifestações <strong>límbicas</strong> e fenômenos primitivos da esfera olfativo-alimentar. É a epilepsia focal <strong>mais frequente do adulto</strong>, cerca de <strong>60% das epilepsias focais</strong>. As crises tendem a seguir uma sequência relativamente fixa:</p>
+<ol><li><strong>Aura</strong> consciente, referida por cerca de <strong>90%</strong> dos pacientes em pelo menos algumas</li><li><strong>Reação de parada</strong> com fixação do olhar.</li><li><strong>Automatismos simples</strong> (oroalimentares, manuais) e alterações motoras contralaterais.</li><li><strong>Automatismos complexos</strong> ou generalização secundária.</li></ol>
+<p>Nas crises <strong>mesiais</strong> (amígdala e hipocampo), a manifestação mais frequente é a <strong>sensação epigástrica ascendente</strong> — mal-estar de difícil caracterização que sobe pela região retroesternal. Somam-se sintomas autonômicos (midríase, palidez, sudorese, taquicardia) e psíquicos: disfásicos, dismnésticos (<strong>déjà/jamais vu</strong>, estados de sonho) e afetivos (<strong>medo</strong>, irritabilidade, raiva).</p>
+<div class="tbl"><table><thead><tr><th>Alucinação ou ilusão</th><th>Região sugerida</th></tr></thead><tbody><tr><td>Olfatória</td><td>amígdala e <strong>uncus</strong> — crises uncinadas</td></tr><tr><td>Auditiva</td><td>giro temporal superior</td></tr><tr><td>Visual</td><td>transição têmporo-occipital</td></tr></tbody></table></div>
+<h4>Sinais lateralizatórios</h4>
+<ul><li><strong>Postura distônica</strong> — flexão do antebraço e postura não natural da mão, **sempre</li></ul>
+<p>contralateral** ao lobo epileptogênico, por propagação ao estriado e pálido límbicos. Costuma vir acompanhada de automatismos manuais no membro oposto ao distônico.</p>
+<ul><li><strong>Paresia crítica</strong> — imobilidade dos membros contralaterais.</li><li><strong>Emissão de palavras durante os automatismos</strong> sugere o hemisfério <strong>não dominante</strong>;</li></ul>
+<p><strong>disfasia pós-ictal</strong> implica o hemisfério <strong>dominante</strong>.</p>
+<ul><li><strong>Versão dos olhos e da cabeça</strong> aparece tardiamente, após a alteração postural, por</li></ul>
+<p>propagação suprassylviana ao campo ocular frontal.</p>
+<h3>Lobo frontal</h3>
+<p>É a principal epilepsia extratemporal, <strong>20 a 30% das epilepsias focais</strong>. O vídeo-EEG individualizou uma síndrome clínica com traços consistentes:</p>
+<ul><li>início e término <strong>abruptos</strong>, auras inespecíficas, <strong>curta duração</strong>;</li><li>crises <strong>frequentes</strong>, várias por dia ou por noite, com <strong>predomínio no sono</strong>;</li><li><strong>confusão pós-crítica breve</strong>;</li><li><strong>automatismos motores importantes</strong> — debater-se, atirar-se, balançar-se, pedalar,</li></ul>
+<p>chutar — com <strong>vocalização primitiva</strong> (grunhidos, gemidos) e, às vezes, automatismos sexuais com impulsão pélvica;</p>
+<ul><li><strong>generalização secundária frequente</strong>, ao contrário das temporais.</li></ul>
+<blockquote><p>Pelo comportamento bizarro, e porque o EEG de superfície pode ser <strong>normal</strong> ou tomado por artefato de movimento, a crise frontal é confundida com <strong>crise psicogênica</strong> e com distúrbios do sono (pesadelo, terror noturno, distonia paroxística noturna). O que a denuncia é a <strong>estereotipia</strong>: cada crise é igual à anterior.</p></blockquote>
+<p>As sete regiões frontais propostas pela ILAE:</p>
+<div class="tbl"><table><thead><tr><th>Região</th><th>Semiologia</th></tr></thead><tbody><tr><td>Motora primária</td><td>crises hemiclônicas <strong>jacksonianas</strong>, de início facial, braquial ou crural</td></tr><tr><td><strong>Área motora suplementar</strong></td><td>tônicas assimétricas, vocalização, bloqueio da fala, movimentos complexos, incontinência urinária; quase só <strong>noturnas</strong></td></tr><tr><td>Giro do cíngulo</td><td>atividade motora complexa e sinais autonômicos</td></tr><tr><td>Frontopolar</td><td>perda de contato, versão adversiva e depois contraversiva, queda, sintomas autonômicos, generalização frequente</td></tr><tr><td>Orbitofrontal</td><td>automatismos, alucinações olfatórias, sintomas vegetativos</td></tr><tr><td>Dorsolateral (pré-motora)</td><td>motoras focais simples, versão oculocefálica, afasia, automatismos</td></tr><tr><td>Opercular</td><td>mastigação, salivação, deglutição, alucinações gustativas, bloqueio afásico</td></tr></tbody></table></div>
+<p>A crise da <strong>área motora suplementar</strong> tem postura típica: <strong>flexão do cotovelo a cerca de 90°</strong>, abdução e rotação externa do ombro também a 90°, mão fechada ou aberta, e os olhos se desviam "<strong>olhando para a mão</strong>" — no membro contralateral à área epileptogênica e com a <strong>consciência preservada</strong>.</p>
+<p>Outros contrastes com a temporal: <strong>auras viscerais</strong> (epigástricas) são raras no frontal, que tem mais <strong>sensações cefálicas</strong> (opressão, constrição, choque na cabeça); automatismos oroalimentares são raríssimos e tardios, quando a descarga já chegou ao lobo temporal; bloqueio da fala e vocalização <strong>não lateralizam</strong>. Há ainda as <strong>pseudoausências</strong> e as <strong>crises de queda</strong>, importantes nas lesões da região central.</p>
+<h3>Lobos parietal e occipital</h3>
+<p>São bem mais raras: crises somatossensitivas respondem por cerca de <strong>1,4%</strong> e occipitais por cerca de <strong>8%</strong> das crises. Como esses lobos são sensoriais, a semiologia é subjetiva, mas forte o bastante para apontar o córtex posterior.</p>
+<ul><li><strong>Parietal</strong> — parestesias ou disestesias de face e braço, que podem fazer **marcha</li></ul>
+<p>jacksoniana** e ser seguidas de fenômenos motores; crises com fenomenologia sexual (lóbulo paracentral do hemisfério não dominante); distúrbios da imagem corporal.</p>
+<ul><li><strong>Occipital</strong> — <strong>alucinações elementares</strong> (luzes, cores) ou perda visual ictal,</li></ul>
+<p>frequentemente restritas a um <strong>hemicampo</strong> e em movimento através dele; alucinações complexas seguidas de versão lenta dos olhos; ilusões como micro e macropsia. Podem cursar com <strong>nistagmo epiléptico</strong>, cujo <strong>componente rápido é contralateral</strong> ao lobo epileptogênico.</p>
+<p>A rápida propagação pelas fibras occipitofrontais e occipitotemporais faz essas crises imitarem as temporais e frontais — a <strong>aura</strong> é o que entrega a origem posterior. Crises reflexas raras, desencadeadas por leitura, desenho ou cálculo, também envolvem o córtex posterior.</p>
+<h2>Síndromes epilépticas</h2>
+<p>Uma <strong>síndrome epiléptica</strong> é a associação de um ou vários tipos de crise com padrões de EEG intercríticos e críticos e com dados clínicos — idade de início, estado neurológico, aspectos genéticos e evolução.</p>
+<div class="tbl"><table><thead><tr><th>Categoria tradicional</th><th>Definição</th></tr></thead><tbody><tr><td><strong>Idiopáticas</strong> (genuínas, essenciais)</td><td>transmitidas geneticamente; <strong>idade-específicas e benignas</strong>, tendem a desaparecer após alguns anos sem deixar sequelas</td></tr><tr><td><strong>Sintomáticas</strong></td><td>etiologia determinável: malformações cerebrais ou vasculares, tumores, infecções e parasitoses, gliose após qualquer insulto</td></tr><tr><td><strong>Provavelmente sintomáticas</strong></td><td>presume-se base orgânica, mas não se esclarece a causa</td></tr></tbody></table></div>
+<blockquote><p><strong>Esclerose mesial temporal</strong> é o substrato típico das crises temporais que surgem <strong>anos depois de crises febris prolongadas</strong> na infância: despopulação neuronal e gliose do <strong>setor de Sommer</strong> do hipocampo, muito provavelmente por dano excitotóxico. É a epilepsia com melhor resultado cirúrgico.</p></blockquote>
+<h3>Encefalopatias epilépticas</h3>
+<p>Algumas crianças previamente normais desenvolvem, nos primeiros anos de vida, síndromes com crises <strong>refratárias</strong> e <strong>involução do desenvolvimento neuropsicomotor</strong>. Ocorrem tipicamente até os <strong>5 ou 6 anos</strong>, período crítico da plasticidade neuronal. A formação de circuitos aberrantes no hipocampo explicaria a impossibilidade de novas aquisições e o comportamento autístico. Controlar as crises, com medicação ou cirurgia, melhora o prognóstico cognitivo; estado de mal e crises recorrentes quase invariavelmente causam disfunção cognitiva.</p>
+<h4>Complemento — as síndromes que mais caem</h4>
+<p>Os tipos de crise descritos acima correspondem a síndromes clássicas, que esta tabela nomeia:</p>
+<div class="tbl"><table><thead><tr><th>Síndrome</th><th>Idade</th><th>Quadro</th><th>EEG</th><th>Tratamento</th></tr></thead><tbody><tr><td><strong>West</strong></td><td>lactente (3 a 12 meses)</td><td>tríade: <strong>espasmos em salvas + hipsarritmia + regressão</strong> do desenvolvimento; causa frequente: esclerose tuberosa</td><td>hipsarritmia</td><td><strong>vigabatrina</strong> (preferida na esclerose tuberosa) ou ACTH/corticoide</td></tr><tr><td><strong>Lennox-Gastaut</strong></td><td>1 a 8 anos</td><td>crises <strong>tônicas</strong> (noturnas), <strong>atônicas</strong> (quedas) e <strong>ausências atípicas</strong>; deficiência intelectual</td><td><strong>ponta-onda lenta abaixo de 2,5 Hz</strong>; ritmo rápido no sono</td><td>valproato, lamotrigina, clobazam, rufinamida; <strong>calosotomia</strong> para as quedas</td></tr><tr><td><strong>Ausência da infância</strong></td><td>4 a 10 anos</td><td>dezenas de ausências típicas por dia, provocadas por hiperventilação</td><td><strong>espícula-onda a 3 Hz</strong></td><td><strong>etosuximida</strong> ou valproato; remite na adolescência</td></tr><tr><td><strong>Mioclônica juvenil</strong> (Janz)</td><td>adolescência</td><td><strong>mioclonias ao despertar</strong> (deixa cair objetos), tônico-clônicas e às vezes ausências; piora com privação de sono e álcool; fotossensível</td><td>polispícula-onda generalizada</td><td><strong>valproato</strong>; carbamazepina e fenitoína <strong>pioram</strong>; tratamento prolongado</td></tr><tr><td><strong>Autolimitada com pontas centrotemporais</strong> (rolândica)</td><td>3 a 13 anos</td><td>crises focais hemifaciais noturnas, sialorreia, disartria, consciência preservada</td><td>pontas centrotemporais ativadas pelo sono</td><td>muitas vezes dispensa tratamento; remite na adolescência</td></tr><tr><td><strong>Temporal mesial com esclerose hipocampal</strong></td><td>adolescente ou adulto</td><td>aura epigástrica, parada, automatismos oroalimentares, distonia contralateral; antecedente de crise febril prolongada</td><td>descargas temporais anteriores</td><td>frequentemente refratária: <strong>cirurgia</strong></td></tr></tbody></table></div>
+<blockquote><p>A mioclônica juvenil explica por que a <strong>epilepsia generalizada iniciada na puberdade</strong> é fator de <strong>recidiva</strong> quando se retira a medicação.</p></blockquote>
+<h2>Investigação: EEG, vídeo-EEG e neuroimagem</h2>
+<h3>Eletroencefalograma</h3>
+<p>O EEG é <strong>essencial, mas não imprescindível</strong>: o diagnóstico de epilepsia é <strong>clínico</strong>. Cerca de <strong>30 a 40%</strong> das pessoas com epilepsia têm o <strong>primeiro EEG em vigília normal</strong>, mas <strong>mais de 90%</strong> mostram anormalidade quando se fazem <strong>vários traçados, em vigília e sono</strong>, com <strong>hiperventilação</strong> e <strong>fotoestimulação intermitente</strong>.</p>
+<p>À suspeita de crise, o registro deve incluir vigília, sonolência e sono, <strong>de preferência após privação de sono</strong>, com as manobras de ativação. Além do diagnóstico e da definição da síndrome, o EEG serve para <strong>monitorar o tratamento</strong> e a <strong>retirada</strong> dos fármacos. Na epilepsia ausência da infância, paroxismo no EEG e crise clínica andam juntos — a <strong>normalização do EEG</strong> indica bom prognóstico.</p>
+<h3>Vídeo-EEG</h3>
+<p>É o registro sincronizado de <strong>imagem e EEG por 24 horas ininterruptas durante vários dias</strong>. Capta não só as descargas interictais, mas as <strong>próprias crises</strong>, permitindo correlacionar semiologia e eletrografia e localizar a <strong>área epileptogênica</strong>. Pode usar eletrodos de escalpo ou <strong>invasivos</strong> — placas e estrias subdurais para o córtex acessível, <strong>eletrodos profundos</strong> para as estruturas mediais —, que também permitem <strong>mapeamento cortical funcional</strong>.</p>
+<h3>Neuroimagem estrutural</h3>
+<ul><li><strong>Tomografia</strong> — detecta malformações arteriovenosas, AVC, <strong>lesões calcificadas</strong> e</li></ul>
+<p>tumores; acha a lesão associada às crises em cerca de <strong>30%</strong> dos casos, mas pode perder tumores de crescimento muito lento — justamente os mais associados à epilepsia.</p>
+<ul><li><strong>Ressonância magnética</strong> — deve ser programada <strong>depois da correlação eletroclínica</strong>,</li></ul>
+<p>com protocolo extenso: <strong>T1</strong> para detalhes anatômicos e <strong>T2, densidade de prótons e FLAIR</strong> para alterações do conteúdo de água (gliose, desmielinização, edema).</p>
+<div class="tbl"><table><thead><tr><th>Lesão</th><th>Achado na RM</th></tr></thead><tbody><tr><td><strong>Esclerose mesial temporal</strong></td><td><strong>redução volumétrica</strong> e perda da estrutura interna do hipocampo e/ou amígdala em T1; <strong>hipersinal em T2/FLAIR</strong></td></tr><tr><td><strong>Displasia cortical focal</strong> (tipo Taylor)</td><td><strong>espessamento cortical</strong> e <strong>borramento da transição</strong> entre substância cinzenta e branca; exige sequências volumétricas em T1</td></tr></tbody></table></div>
+<p>Entre as epilepsias extratemporais, cerca de 30% dos pacientes têm algum grau de <strong>distúrbio do desenvolvimento cortical</strong>.</p>
+<h3>Neuroimagem funcional</h3>
+<div class="tbl"><table><thead><tr><th>Exame</th><th>O que mede</th><th>Achado na área epileptogênica</th></tr></thead><tbody><tr><td><strong>PET</strong></td><td>metabolismo da glicose</td><td><strong>hipometabolismo</strong> em 70 a 80% das crises focais, sobretudo temporais</td></tr><tr><td><strong>SPECT ictal</strong></td><td>fluxo sanguíneo</td><td><strong>hiperperfusão</strong>, com positividade próxima à do PET</td></tr><tr><td><strong>SPECT interictal</strong></td><td>fluxo sanguíneo</td><td>hipoperfusão em cerca de 50% na epilepsia temporal, com <strong>10 a 15% de falsa lateralização</strong>; útil para comparar com o ictal</td></tr><tr><td><strong>Espectroscopia por RM</strong></td><td>constituintes químicos</td><td><strong>redução do N-acetilaspartato</strong>, em área maior que a que origina as crises</td></tr><tr><td><strong>RM funcional</strong></td><td>contraste da desoxi-hemoglobina</td><td>localiza áreas ativadas pelas crises e áreas motora, visual, de linguagem e memória em relação à lesão</td></tr></tbody></table></div>
+<blockquote><p>Os métodos se somam: lesões invisíveis na RM estrutural podem aparecer no PET, no SPECT ou na espectroscopia. Localizar com precisão a área epileptogênica é o que torna possível a <strong>cirurgia</strong> na epilepsia refratária.</p></blockquote>
+<h2>Tratamento medicamentoso</h2>
+<h3>Quando começar</h3>
+<p>A medicação antiepiléptica é <strong>sintomática</strong>: impede a recorrência, não cura. Trata-se quem tem risco de nova crise sem tratamento.</p>
+<ul><li>Após uma <strong>primeira crise tônico-clônica espontânea</strong>, <strong>20 a 70%</strong> nunca terão outra — em</li></ul>
+<p>geral, <strong>não se trata</strong>.</p>
+<ul><li>Após a <strong>segunda crise espontânea</strong>, a recorrência passa de <strong>70%</strong> — <strong>trata-se</strong>.</li><li>A recorrência é mais provável com <strong>déficit neurológico focal</strong>, <strong>lesão cerebral</strong>,</li></ul>
+<p><strong>retardo mental</strong> e <strong>anormalidades epileptiformes no EEG</strong>.</p>
+<h3>Princípios</h3>
+<p>A escolha depende do <strong>tipo de crise</strong>, da eficácia e dos efeitos colaterais, e deve ser em <strong>monoterapia</strong> sempre que possível: não se demonstra superioridade de somar uma segunda droga quando a primeira falha, e a monoterapia evita interações, melhora a adesão e reduz o custo. O objetivo é o controle completo com <strong>uma droga, uma ou duas tomadas ao dia, sem efeitos colaterais</strong>.</p>
+<h3>Mecanismos</h3>
+<div class="tbl"><table><thead><tr><th>Fármaco</th><th>Mecanismo</th></tr></thead><tbody><tr><td>Fenitoína, carbamazepina, valproato</td><td>bloqueio <strong>"dependente do uso"</strong> dos canais de <strong>sódio</strong>: impedem só os surtos de potenciais de ação do neurônio epiléptico</td></tr><tr><td>Barbitúricos</td><td>receptor GABA-A: <strong>prolongam o tempo de abertura</strong> do canal de cloro</td></tr><tr><td>Benzodiazepínicos</td><td>receptor GABA-A: <strong>aumentam a frequência de abertura</strong> do canal de cloro</td></tr></tbody></table></div>
+<p>Os <strong>benzodiazepínicos</strong> (diazepam, clonazepam, nitrazepam, clobazam) são drogas <strong>adjuvantes</strong> no uso crônico, porque desenvolvem <strong>tolerância</strong> ao efeito antiepiléptico; mas são as drogas de <strong>eleição na crise aguda e no estado de mal</strong>. A primidona é metabolizada em fenobarbital e hoje é raramente prescrita.</p>
+<h3>Escolha por tipo de crise (esquema clássico)</h3>
+<div class="tbl"><table><thead><tr><th>Crise</th><th>1ª escolha</th><th>2ª escolha</th></tr></thead><tbody><tr><td>Focais</td><td>carbamazepina, fenitoína</td><td>valproato, fenobarbital</td></tr><tr><td>Tônico-clônicas</td><td>carbamazepina, fenitoína, valproato</td><td>fenobarbital</td></tr><tr><td>Ausências</td><td><strong>etosuximida, valproato</strong></td><td>clonazepam</td></tr><tr><td>Mioclônicas</td><td><strong>valproato</strong> (o esquema clássico lista também etosuximida)</td><td>clonazepam</td></tr><tr><td>Atônicas e tônicas</td><td><strong>valproato</strong> (idem)</td><td>clonazepam</td></tr></tbody></table></div>
+<ul><li>Nas focais, fenobarbital e primidona são tão eficazes quanto fenitoína e carbamazepina,</li></ul>
+<p>mas causam <strong>mais efeitos colaterais</strong>.</p>
+<ul><li>A <strong>carbamazepina supera o valproato nas crises do lobo temporal</strong> e tem menos efeitos</li></ul>
+<p>adversos a longo prazo; as duas se equivalem nas tônico-clônicas secundariamente generalizadas.</p>
+<ul><li>Crises <strong>tônicas e atônicas</strong> são frequentemente resistentes; o <strong>valproato</strong> parece o</li></ul>
+<p>mais eficaz.</p>
+<ul><li>Nas <strong>ausências</strong>, etosuximida e valproato se equivalem, e às vezes a associação dá melhor</li></ul>
+<p>controle pelo efeito aditivo.</p>
+<blockquote><p><strong>Complemento — o que mudou desde o esquema clássico:</strong> carbamazepina e fenitoína (assim como oxcarbazepina, gabapentina e vigabatrina) podem <strong>agravar ausências e mioclonias</strong>, e por isso não se usam nas epilepsias generalizadas genéticas; a etosuximida trata só ausências, sem efeito sobre mioclonias ou tônico-clônicas. <strong>Levetiracetam</strong> e <strong>lamotrigina</strong> passaram a primeira linha nas focais, e o levetiracetam também nas generalizadas. O <strong>valproato deve ser evitado em mulheres em idade fértil</strong>, pelo risco de malformações (defeitos do tubo neural) e de prejuízo cognitivo no feto — lamotrigina e levetiracetam são preferidos, com ácido fólico. Indutores enzimáticos (carbamazepina, fenitoína, fenobarbital) reduzem a eficácia de contraceptivos hormonais.</p></blockquote>
+<h3>Farmacocinética</h3>
+<p>Meia-vida é o tempo para eliminar metade do fármaco presente no plasma depois de suspensa a administração; o <strong>equilíbrio sérico</strong> só é atingido após <strong>pelo menos quatro meias-vidas</strong>.</p>
+<div class="tbl"><table><thead><tr><th>Fármaco</th><th>Meia-vida</th><th>Equilíbrio sérico</th><th>Tomadas ao dia</th></tr></thead><tbody><tr><td>Carbamazepina</td><td>12 h</td><td>3 dias</td><td>2 a 3 (liberação controlada: 2)</td></tr><tr><td>Valproato de sódio</td><td>12 h</td><td>3 dias</td><td>2 a 3</td></tr><tr><td>Fenitoína</td><td>24 h</td><td>5 dias</td><td>2</td></tr><tr><td>Etosuximida</td><td>2 dias</td><td>10 dias</td><td>2</td></tr><tr><td>Fenobarbital</td><td>4 dias</td><td><strong>3 semanas</strong></td><td><strong>dose única</strong></td></tr></tbody></table></div>
+<p>A <strong>dosagem sérica</strong> está indicada em duas situações: suspeita de <strong>uso irregular</strong> (crises voltando por nível abaixo do limite terapêutico) e suspeita de <strong>toxicidade</strong>, incluindo distúrbios comportamentais.</p>
+<h3>Efeitos colaterais</h3>
+<div class="tbl"><table><thead><tr><th>Dependentes da dose</th><th>Fármacos</th><th>Independentes da dose</th><th>Fármacos</th></tr></thead><tbody><tr><td>Ataxia</td><td>fenitoína, carbamazepina, fenobarbital</td><td>Ganho de peso</td><td>valproato, carbamazepina</td></tr><tr><td>Diplopia, borramento visual</td><td>carbamazepina, fenitoína</td><td>Queda de cabelos</td><td>valproato</td></tr><tr><td>Sedação</td><td>fenobarbital, fenitoína, carbamazepina, valproato</td><td><strong>Hirsutismo, hiperplasia gengival</strong></td><td><strong>fenitoína</strong></td></tr><tr><td>Náuseas e vômitos</td><td>valproato, carbamazepina, etosuximida, fenitoína</td><td><strong>Irritabilidade, hiperatividade</strong></td><td><strong>fenobarbital</strong></td></tr><tr><td>Tremor</td><td>valproato</td><td><strong>Hepatotoxicidade</strong></td><td><strong>valproato</strong> — risco concentrado em <strong>crianças com menos de 2 anos, com retardo mental, em politerapia</strong></td></tr></tbody></table></div>
+<h3>As "novas drogas" da época</h3>
+<p>Vigabatrina, lamotrigina, topiramato e gabapentina entraram como <strong>terapia de adição</strong>: cerca de <strong>30%</strong> de melhora no controle, mas <strong>menos de 5%</strong> dos refratários às drogas convencionais ficam livres de crises. Destaques: <strong>vigabatrina — primeira escolha para os espasmos</strong>; lamotrigina — alternativa nas crises generalizadas, isolada ou associada ao valproato; topiramato — múltiplos mecanismos, amplo espectro para focais e generalizadas.</p>
+<h3>Retirada</h3>
+<p>A suspensão completa após cerca de <strong>três anos sem crises</strong> leva à recidiva em <strong>50% dos adultos</strong> e <strong>25% das crianças</strong>.</p>
+<div class="tbl"><table><thead><tr><th>Favorecem ficar sem crises</th><th>Favorecem a recorrência</th></tr></thead><tbody><tr><td>epilepsia da infância</td><td>crises focais complexas</td></tr><tr><td>epilepsia idiopática</td><td>epilepsia sintomática</td></tr><tr><td>EEG normal</td><td>EEG anormal</td></tr><tr><td>exames de imagem normais</td><td>exames de imagem anormais</td></tr><tr><td>epilepsia de curta duração</td><td>longa duração da epilepsia</td></tr><tr><td>—</td><td>epilepsia generalizada iniciada na <strong>puberdade</strong></td></tr></tbody></table></div>
+<h3>Prognóstico</h3>
+<p>Com diagnóstico precoce e tratamento adequado, <strong>70 a 80%</strong> controlam as crises e <strong>50%</strong> podem suspender a medicação sem recidiva. Só <strong>20 a 30%</strong> evoluem para epilepsia crônica — sobretudo sintomática, com mais de um tipo de crise e comorbidade neurológica ou psiquiátrica —, e cerca de <strong>5%</strong> terão epilepsia intratável que impede a vida independente.</p>
+<h2>Estado de mal epiléptico e outras complicações</h2>
+<h3>Estado de mal epiléptico</h3>
+<p>É a crise isolada <strong>prolongada</strong> ou crises <strong>repetidas a curtos intervalos</strong>, sem recuperação entre elas. Mais de <strong>15%</strong> das pessoas com epilepsia têm ao menos um episódio, e ele também pode surgir em qualquer insulto agudo ao sistema nervoso.</p>
+<div class="tbl"><table><thead><tr><th>Desfecho</th><th>Frequência</th></tr></thead><tbody><tr><td>Mortalidade em adultos</td><td>15 a 20%</td></tr><tr><td>Mortalidade em crianças</td><td>3 a 15%</td></tr><tr><td>Desenvolvimento de epilepsia</td><td>20 a 40%</td></tr><tr><td>Encefalopatia</td><td>6 a 15%</td></tr><tr><td>Déficits neurológicos focais</td><td>9 a 12%</td></tr></tbody></table></div>
+<p>As formas seguem a lista de 2001. <strong>Generalizado</strong>: tônico-clônico, clônico, de ausência, tônico e mioclônico. <strong>Focal</strong>: <strong>epilepsia partialis continua de Kojevnikov</strong> (atividade motora contínua restrita a uma parte do corpo por horas ou dias), aura contínua, estado de mal límbico (psicomotor) e estado hemiconvulsivo com hemiparesia.</p>
+<h4>Complemento — definição operacional e tratamento</h4>
+<blockquote><p>A ILAE (2015) define dois marcos de tempo: <strong>t1</strong>, a partir do qual a crise dificilmente para sozinha e <strong>deve ser tratada</strong> — <strong>5 minutos</strong> na tônico-clônica; e <strong>t2</strong>, a partir do qual há risco de <strong>dano neuronal</strong> — <strong>30 minutos</strong>. Na prática: crise que passa de <strong>5 minutos</strong>, ou duas crises sem recuperação da consciência entre elas, já é estado de mal e se trata como tal.</p></blockquote>
+<div class="tbl"><table><thead><tr><th>Tempo</th><th>Conduta</th></tr></thead><tbody><tr><td>0 a 5 min</td><td>estabilizar: via aérea, oxigênio, monitorização, acesso venoso, <strong>glicemia capilar</strong>; <strong>tiamina 100 mg IV antes da glicose</strong> se etilismo ou desnutrição; glicose se houver hipoglicemia</td></tr><tr><td>5 a 20 min</td><td><strong>benzodiazepínico</strong>: diazepam 0,15–0,2 mg/kg IV (máximo 10 mg), pode repetir uma vez; sem acesso venoso, <strong>midazolam 10 mg IM</strong></td></tr><tr><td>20 a 40 min</td><td>segunda linha: <strong>fenitoína 20 mg/kg IV, até 50 mg/min, diluída em soro fisiológico</strong> (precipita em glicose; monitorar ECG e pressão) — ou valproato 40 mg/kg, levetiracetam 60 mg/kg, fenobarbital 15–20 mg/kg</td></tr><tr><td>Acima de 40 min (refratário)</td><td>intubação e <strong>anestesia contínua</strong> (midazolam, propofol ou tiopental) com <strong>EEG contínuo</strong></td></tr></tbody></table></div>
+<blockquote><p>No paciente que não recupera a consciência depois da crise, pense em <strong>estado de mal não convulsivo</strong> — só o EEG confirma.</p></blockquote>
+<h3>Morte súbita inexplicada (SUDEP)</h3>
+<p>Morte súbita, testemunhada ou não, em pessoa com epilepsia, sem trauma ou afogamento e sem fator tóxico ou anatômico na necropsia. Responde por <strong>2 a 17%</strong> das mortes de pessoas com epilepsia. O risco é de <strong>1/200</strong> na epilepsia grave, contra <strong>4,6/100.000</strong> na população geral.</p>
+<ul><li><strong>Perfil de risco:</strong> crises <strong>generalizadas</strong>, em geral não testemunhadas, durante o</li></ul>
+<p><strong>sono</strong>; epilepsia sintomática; crises graves ou frequentes; outros déficits neurológicos; uso de <strong>várias drogas</strong>.</p>
+<ul><li><strong>Sinais de que houve crise:</strong> mordedura de língua, secreção oral, liberação</li></ul>
+<p>esfincteriana, expressão facial contorcida, queda da cama.</p>
+<ul><li><strong>Mecanismos:</strong> depressão respiratória, arritmia cardíaca, apneia obstrutiva, disfunção</li></ul>
+<p>autonômica e excesso de inibição cortical no fim da crise.</p>
+<ul><li><strong>Prevenção:</strong> melhor controle das crises, <strong>evitar politerapia</strong>, travesseiros</li></ul>
+<p>antissufocantes, acompanhamento do sono e <strong>mobilização e estimulação do paciente no pós-ictal</strong>.</p>
+<h3>Comorbidade psiquiátrica e traumatismos</h3>
+<p>Transtornos psiquiátricos ocorrem em <strong>44 a 71%</strong> das pessoas com epilepsia de longa duração (contra cerca de 22% em outras doenças crônicas); os mais prevalentes são <strong>depressão maior</strong> e <strong>transtornos ansiosos</strong>. Na epilepsia do lobo temporal, o índice de <strong>suicídio chega a 25 vezes</strong> o da população geral.</p>
+<p>As crises causam traumatismos cranioencefálicos, fraturas de vértebras, luxações e afogamento. Para reduzir acidentes de trânsito, a permissão para dirigir exige as crises <strong>controladas por pelo menos 12 meses</strong>.</p>
+<h2>Epilepsia refratária e tratamento cirúrgico</h2>
+<p>Cerca de <strong>70 a 80%</strong> dos pacientes controlam as crises com medicação — aproximadamente <strong>80%</strong> com <strong>uma única droga</strong> e <strong>10 a 15%</strong> com a combinação de duas. Os <strong>20 a 30%</strong> restantes têm crises de difícil controle. Falta de adesão, interações e toxicidade a longo prazo crescem quando se usa mais de uma droga.</p>
+<p>Os termos <em>intratável</em>, <em>de difícil controle</em>, <em>fármaco-resistente</em> e <em>refratária</em> designam a persistência de crises apesar dos antiepilépticos. Para considerar uma epilepsia refratária pesam, além da frequência, a <strong>gravidade</strong> das crises, o <strong>padrão circadiano</strong> e o <strong>impacto na qualidade de vida</strong>.</p>
+<blockquote><p>Antes de rotular como refratária: <strong>rever o diagnóstico de epilepsia</strong> e a <strong>adesão</strong>, explorar a <strong>dose máxima tolerada</strong> de cada droga, suspender as que não ajudaram e procurar <strong>doença cerebral progressiva</strong> (tumor, distúrbio metabólico). Diário de crises e registro de efeitos colaterais guiam as decisões.</p></blockquote>
+<blockquote><p><strong>Complemento:</strong> pela ILAE (2010), epilepsia <strong>farmacorresistente</strong> é a falha de <strong>dois esquemas</strong> de antiepilépticos bem escolhidos, tolerados e em dose adequada — e é o momento de encaminhar a um centro de cirurgia de epilepsia.</p></blockquote>
+<h3>Tratamento cirúrgico</h3>
+<p>Há consenso de que a cirurgia deve ser considerada quando a epilepsia se mostra <strong>refratária</strong> ao tratamento clínico.</p>
+<div class="tbl"><table><thead><tr><th>Procedimento</th><th>Indicação</th><th>Resultado</th></tr></thead><tbody><tr><td><strong>Lobectomia temporal</strong> ou <strong>amigdalo-hipocampectomia seletiva</strong></td><td>epilepsia temporal por <strong>esclerose mesial</strong>, consequente à crise febril na infância</td><td>cerca de <strong>75%</strong> com controle completo</td></tr><tr><td>Ressecção em outras epilepsias focais</td><td>área epileptogênica bem localizada</td><td>cerca de <strong>50%</strong></td></tr><tr><td><strong>Calosotomia</strong> (paliativa)</td><td><strong>crises de queda</strong> em epilepsias generalizadas sintomáticas</td><td>reduz as quedas</td></tr><tr><td><strong>Transecção subpial múltipla</strong> (paliativa)</td><td>área epileptogênica sobre <strong>córtex eloquente</strong></td><td>desconecta sem ressecar</td></tr></tbody></table></div>
+<h3>Outras medidas</h3>
+<p>Regularizar os hábitos de <strong>sono</strong> e evitar os estímulos desencadeantes nas epilepsias reflexas. Nos casos de difícil controle: <strong>dieta cetogênica</strong> e <strong>estimulação vagal</strong>, com efeito comparável ao das novas drogas antiepilépticas.</p></script>
+<!-- Tutor local: define window.DEEPSEEK_KEY. O arquivo NAO vai para o repositorio,
+     entao online ele da 404 e o chat simplesmente nao aparece. -->
+<script src="../deepseek_key.js"></script>
+<script>
+/* ─────────────────────────────────────────────────────────────────────────────
+   CONTRATO DE DADOS — para adaptar a outro tema, troque apenas QUIZ e o resumo.
+   Cada item: { question, options[2..6], correctIndex, explanation }
+   ──────────────────────────────────────────────────────────────────────────── */
+var TITLE      = "Epilepsias";
+var EYEBROW    = "Neurologia · Epilepsia";
+var DISCIPLINA = "Neurologia";   // pasta de origem (PED, GO...) — usada pelo índice
+var SUBTITLE = "Da crise isolada ao estado de mal: classificar, investigar e tratar";
+var INTRO    = "Crise × epilepsia, classificação das crises (1981, 2001 e ILAE 2017), semiologia por lobo, síndromes, EEG e neuroimagem, escolha do antiepiléptico, estado de mal epiléptico, SUDEP e cirurgia da epilepsia refratária.";
+
+var QUIZ = [
+  {
+    "question": "Um homem de 45 anos, etilista, teve duas crises tônico-clônicas generalizadas no último ano, ambas nas primeiras 48 horas após interromper a ingestão de álcool. Exame neurológico e imagem são normais. Como classificar o quadro?",
+    "options": [
+      "Crises provocadas por abstinência, que não configuram epilepsia",
+      "Epilepsia, por somar duas crises em menos de doze meses",
+      "Epilepsia focal sintomática, por provável lesão alcoólica",
+      "Epilepsia generalizada idiopática de início tardio no adulto"
+    ],
+    "correctIndex": 0,
+    "explanation": "Crises desencadeadas por insulto agudo — febre, ingestão de álcool, intoxicação por drogas ou abstinência — são crises provocadas (sintomáticas agudas) e não entram na contagem para o diagnóstico de epilepsia. O critério clássico exige duas ou mais crises em 12 meses sem evidência de insulto agudo; a definição atual da ILAE fala em duas crises não provocadas separadas por mais de 24 horas."
+  },
+  {
+    "question": "Pela definição prática de epilepsia da ILAE (2014), em qual situação o diagnóstico pode ser feito já após uma única crise não provocada?",
+    "options": [
+      "Quando o risco de nova crise em dez anos é de pelo menos 60%",
+      "Quando a crise dura mais de cinco minutos sem recuperação",
+      "Quando a crise ocorre durante o sono, sem testemunhas",
+      "Quando há mordedura de língua e liberação esfincteriana"
+    ],
+    "correctIndex": 0,
+    "explanation": "A ILAE 2014 aceita três critérios: duas crises não provocadas (ou reflexas) separadas por mais de 24 horas; uma crise não provocada com probabilidade de recorrência de pelo menos 60% nos dez anos seguintes — por exemplo, com lesão estrutural na imagem ou atividade epileptiforme no EEG; ou o diagnóstico de uma síndrome epiléptica. Duração, horário e sinais da crise não substituem o risco de recorrência."
+  },
+  {
+    "question": "Nos países em desenvolvimento, a curva de incidência da epilepsia por idade difere da dos países desenvolvidos. Qual é o padrão e o que o explica?",
+    "options": [
+      "Pico em adultos jovens, por infecções, parasitoses e traumatismos cranianos",
+      "Pico em idosos, por doença cerebrovascular e processos degenerativos",
+      "Pico em lactentes, por distúrbios do desenvolvimento e causas genéticas",
+      "Pico em adolescentes, por epilepsias idiopáticas de suscetibilidade genética"
+    ],
+    "correctIndex": 0,
+    "explanation": "Nos países desenvolvidos a incidência predomina em crianças (distúrbios do desenvolvimento, epilepsias idiopáticas) e em idosos (processos degenerativos e vasculares). Nos países em desenvolvimento o pico se desloca para adultos jovens, porque causas infecciosas e parasitárias e os traumatismos cranioencefálicos respondem por porcentagem significativa dos casos."
+  },
+  {
+    "question": "Por que a consciência é comprometida nas crises generalizadas, mas pode permanecer preservada em crises focais?",
+    "options": [
+      "Nas generalizadas o sistema reticular ativador ascendente é atingido desde o início",
+      "Nas generalizadas a descarga se restringe ao córtex frontal dos dois hemisférios",
+      "Nas focais a descarga não ultrapassa 6 cm² e por isso não altera a vigília",
+      "Nas focais o glutamato é liberado em menor quantidade e não chega ao tálamo"
+    ],
+    "correctIndex": 0,
+    "explanation": "A consciência se perde quando o processo epiléptico atinge o sistema reticular ativador ascendente, na sua origem no tronco encefálico ou nas suas projeções difusas. As crises generalizadas envolvem circuitos talâmicos e acometem esse sistema precocemente; nas focais, se ele é poupado, o paciente se mantém consciente. A exceção entre as generalizadas são as mioclônicas, tão breves que a consciência é provavelmente preservada."
+  },
+  {
+    "question": "Na classificação de 1981, o que separa a crise parcial simples da parcial complexa, e como elas são chamadas na terminologia da ILAE de 2017?",
+    "options": [
+      "Preservação da consciência; hoje, focal perceptiva e focal disperceptiva",
+      "Presença de automatismos; hoje, focal motora e focal não motora",
+      "Propagação contralateral; hoje, focal e focal para bilateral",
+      "Presença de aura; hoje, focal sensorial e focal experiencial"
+    ],
+    "correctIndex": 0,
+    "explanation": "Na classificação de 1981, a crise parcial simples cursa com consciência preservada e a parcial complexa com consciência comprometida. A ILAE 2017 troca 'consciência' por 'percepção': crise focal perceptiva (antiga simples) e crise focal com comprometimento da percepção, ou disperceptiva (antiga complexa). A secundariamente generalizada passou a se chamar focal evoluindo para tônico-clônica bilateral."
+  },
+  {
+    "question": "Menina de 7 anos tem episódios de olhar parado com piscamento, de cerca de 10 segundos, com início e fim abruptos, várias vezes ao dia. Que manobra e que achado de EEG confirmam a principal hipótese?",
+    "options": [
+      "Hiperventilação provocando espícula-onda generalizada a 3/s",
+      "Fotoestimulação provocando ponta-onda lenta difusa a 2/s",
+      "Privação de sono revelando pontas centrotemporais isoladas",
+      "Hiperventilação provocando ritmo rápido generalizado a 20 Hz"
+    ],
+    "correctIndex": 0,
+    "explanation": "A ausência típica dura cerca de 10 a 30 segundos, com início e fim abruptos, automatismos discretos e várias crises por dia. A hiperventilação é ativador tão potente que não reproduzir a crise em 3 a 5 minutos de hiperpneia põe o diagnóstico em dúvida. O EEG ictal mostra complexos de espícula-onda a 3/s, bilaterais e síncronos. Ponta-onda lenta abaixo de 2,5/s é da ausência atípica; ritmo rápido de 20 Hz, da crise tônica."
+  },
+  {
+    "question": "Comparada à ausência típica, qual conjunto de características define a crise de ausência atípica?",
+    "options": [
+      "Início e fim graduais, tono alterado e ponta-onda lenta de 1,5 a 2,5/s",
+      "Início e fim abruptos, tono normal e espícula-onda ritmada a 3/s",
+      "Início abrupto, desencadeada por hiperpneia e polispícula-onda a 6/s",
+      "Início gradual, consciência preservada e ritmo de 10 Hz bilateral"
+    ],
+    "correctIndex": 0,
+    "explanation": "Na ausência atípica o comprometimento da consciência é menor, o início e o término são menos abruptos e o tono muscular costuma estar alterado. Ela não é desencadeada pela hiperpneia, e o EEG mostra complexos de ponta-onda lenta a 1,5–2,5/s, irregulares, às vezes assimétricos. É a ausência das encefalopatias epilépticas, como a síndrome de Lennox-Gastaut."
+  },
+  {
+    "question": "Lactente de 6 meses apresenta contrações rápidas em flexão de pescoço, tronco e membros, em salvas, ao despertar, seguidas de choro; a família achava que eram cólicas. Qual padrão interictal de EEG é esperado?",
+    "options": [
+      "Hipsarritmia, com ondas lentas amplas e espículas sem organização",
+      "Espícula-onda generalizada a 3/s, com início e fim abruptos",
+      "Pontas centrotemporais ativadas pelo sono, com ritmo de base normal",
+      "Polispícula-onda generalizada desencadeada por fotoestimulação"
+    ],
+    "correctIndex": 0,
+    "explanation": "São espasmos epilépticos: contração tônica rápida de 1 a 15 segundos, em flexão ou extensão, em salvas, sobretudo ao despertar e na sonolência. No lactente vêm com choro e, quando não presenciados pelo médico, são confundidos com cólica — atraso que compromete o prognóstico. O EEG interictal mostra hipsarritmia: ondas lentas de grande amplitude, espículas e ondas agudas sem organização espacial nem temporal. Espasmos, hipsarritmia e regressão do desenvolvimento formam a síndrome de West."
+  },
+  {
+    "question": "Entre os antiepilépticos introduzidos como terapia de adição (vigabatrina, lamotrigina, topiramato e gabapentina), qual é considerado a primeira escolha para o tratamento dos espasmos epilépticos?",
+    "options": [
+      "Vigabatrina",
+      "Gabapentina",
+      "Lamotrigina",
+      "Topiramato"
+    ],
+    "correctIndex": 0,
+    "explanation": "Essas drogas entraram como terapia de adição, mas algumas têm efeito em síndromes específicas: a vigabatrina é a primeira escolha para os espasmos — preferida sobretudo quando a causa é esclerose tuberosa, com ACTH ou corticoide como alternativa. A lamotrigina é alternativa nas crises generalizadas, isolada ou associada ao valproato, e o topiramato, por múltiplos mecanismos, tem amplo espectro."
+  },
+  {
+    "question": "Adolescente de 15 anos derruba objetos pela manhã por abalos súbitos dos braços, piores após noites mal dormidas, e teve uma crise tônico-clônica depois de uma festa. Que achado do EEG é esperado?",
+    "options": [
+      "Polispícula-onda generalizada, frequentemente desencadeada por fotoestimulação",
+      "Espícula-onda a 3/s restrita às regiões temporais, ativada pela hiperpneia",
+      "Ponta-onda lenta a 2/s com ritmo rápido paroxístico durante o sono",
+      "Atividade rítmica focal no eletrodo esfenoidal no início dos abalos"
+    ],
+    "correctIndex": 0,
+    "explanation": "Crises mioclônicas são abalos breves, tipo choque, que ocorrem após privação de sono, ao despertar ou ao adormecer; o EEG mostra surtos de polispícula-onda ou espícula-onda bilaterais e síncronos, frequentemente desencadeados pela fotoestimulação intermitente. O quadro — mioclonias matinais e tônico-clônica na adolescência — é a epilepsia mioclônica juvenil, tratada com valproato; carbamazepina e fenitoína podem agravar as mioclonias."
+  },
+  {
+    "question": "Durante uma crise tônico-clônica generalizada, o paciente emite um grito logo no início. Qual a origem desse grito epiléptico?",
+    "options": [
+      "Ar expulso pela glote fechada durante a contração tônica",
+      "Ativação da área motora suplementar com vocalização",
+      "Aura auditiva percebida antes da perda de consciência",
+      "Laringoespasmo reflexo durante a fase clônica tardia"
+    ],
+    "correctIndex": 0,
+    "explanation": "Na crise tônico-clônica (grande mal) há perda abrupta de consciência, contração tônica e depois clônica dos quatro membros, apneia, liberação esfincteriana, sialorreia e mordedura de língua, por cerca de um minuto. Na fase tônica o ar é expulso pela glote fechada — é o grito epiléptico. O EEG mostra ritmo a 10 Hz na fase tônica e polispícula-onda lenta na clônica; o pós-ictal tem confusão e sonolência."
+  },
+  {
+    "question": "Qual é a manifestação focal mais frequente das crises da porção mesial do lobo temporal (amígdala e hipocampo)?",
+    "options": [
+      "Sensação epigástrica ascendente pela região retroesternal",
+      "Parestesias da face e do braço com marcha jacksoniana",
+      "Alucinações visuais elementares, como luzes coloridas",
+      "Postura tônica assimétrica com o olhar voltado à mão"
+    ],
+    "correctIndex": 0,
+    "explanation": "Nas crises temporais mesiais, a sensação epigástrica ascendente — mal-estar de difícil caracterização que sobe pela região retroesternal — é a manifestação mais frequente. Somam-se sintomas autonômicos (midríase, palidez, sudorese, taquicardia) e psíquicos (déjà vu, jamais vu, estados de sonho, medo). Parestesias com marcha jacksoniana são parietais; luzes coloridas, occipitais; postura tônica olhando a mão, da área motora suplementar."
+  },
+  {
+    "question": "Um paciente descreve, no início das crises, um cheiro forte de borracha queimada que ninguém mais à sua volta sente. Que região está envolvida?",
+    "options": [
+      "Amígdala e uncus, configurando as crises uncinadas",
+      "Giro temporal superior, na área auditiva primária",
+      "Transição têmporo-occipital, no córtex visual associativo",
+      "Opérculo frontal, região das alucinações gustativas"
+    ],
+    "correctIndex": 0,
+    "explanation": "Alucinações e ilusões olfatórias se associam a descargas na região amigdaliana e no uncus — são as crises uncinadas. As auditivas sugerem o giro temporal superior, e as visuais, a transição têmporo-occipital. Alucinações gustativas, com mastigação e salivação, apontam para o opérculo frontal."
+  },
+  {
+    "question": "Durante uma crise temporal, o paciente apresenta postura distônica da mão direita e, após a crise, tem dificuldade para nomear objetos. Para onde esses sinais apontam?",
+    "options": [
+      "Lobo temporal esquerdo: distonia contralateral e disfasia do dominante",
+      "Lobo temporal direito: distonia ipsilateral e disfasia do não dominante",
+      "Lobo temporal direito: distonia contralateral e disfasia do não dominante",
+      "Lobo temporal esquerdo: distonia ipsilateral e disfasia do não dominante"
+    ],
+    "correctIndex": 0,
+    "explanation": "A postura distônica — flexão do antebraço e postura não natural da mão — é sempre contralateral ao lobo epileptogênico, por propagação das descargas ao estriado e pálido límbicos: mão direita aponta para o lobo esquerdo. A disfasia pós-ictal implica o hemisfério dominante (em geral, o esquerdo), enquanto emitir palavras durante os automatismos sugere o não dominante."
+  },
+  {
+    "question": "Homem de 25 anos tem várias crises por noite, de 20 a 30 segundos, com início e fim abruptos, pedalar, debater-se e grunhidos, e retoma o contato logo depois. O EEG de superfície é normal, e as crises são idênticas entre si. Qual a hipótese mais provável?",
+    "options": [
+      "Epilepsia do lobo frontal com crises hipercinéticas",
+      "Crises não epilépticas psicogênicas, pelo EEG normal",
+      "Epilepsia temporal mesial com automatismos complexos",
+      "Terror noturno, por ocorrer exclusivamente no sono"
+    ],
+    "correctIndex": 0,
+    "explanation": "Crises frontais têm início e término abruptos, curta duração, ocorrência frequente (várias por noite, com predomínio no sono), confusão pós-crítica breve e automatismos motores importantes — debater-se, pedalar, chutar — com vocalização primitiva. Pelo aspecto bizarro e pelo EEG de superfície normal ou tomado por artefato, são confundidas com crises psicogênicas e distúrbios do sono; a estereotipia das crises é o que ajuda a separá-las."
+  },
+  {
+    "question": "Durante o sono, uma paciente apresenta flexão do cotovelo esquerdo a 90°, abdução e rotação externa do ombro, com os olhos desviados como se olhasse para a mão, e responde ao chamado durante todo o episódio. Qual a origem mais provável?",
+    "options": [
+      "Área motora suplementar do lobo frontal direito",
+      "Córtex motor primário do lobo frontal esquerdo",
+      "Porção mesial do lobo temporal direito, no hipocampo",
+      "Lóbulo paracentral do hemisfério não dominante"
+    ],
+    "correctIndex": 0,
+    "explanation": "É a postura tônica assimétrica da área motora suplementar: flexão do cotovelo e abdução do ombro a cerca de 90° com rotação externa, enquanto os olhos se desviam 'para a mão' — no membro contralateral à área epileptogênica (membro esquerdo, AMS direita) e com consciência preservada. Essas crises são breves (10 a 40 s), sem confusão pós-crítica, e ocorrem predominantemente à noite."
+  },
+  {
+    "question": "Durante as crises, um paciente vê luzes coloridas que surgem no hemicampo visual esquerdo e se deslocam através dele, seguidas de nistagmo. Qual a origem e qual o sentido do componente rápido do nistagmo?",
+    "options": [
+      "Lobo occipital direito; componente rápido para a esquerda",
+      "Lobo occipital esquerdo; componente rápido para a esquerda",
+      "Lobo temporal direito; componente rápido para a direita",
+      "Lobo parietal esquerdo; componente rápido para a direita"
+    ],
+    "correctIndex": 0,
+    "explanation": "Crises occipitais se caracterizam por alucinações elementares — luzes, cores —, frequentemente limitadas a um hemicampo e em movimento através dele; o hemicampo esquerdo corresponde ao córtex occipital direito. O nistagmo epiléptico tem componente rápido contralateral ao lobo epileptogênico, portanto para a esquerda. Alucinações complexas e ilusões como micro e macropsia também podem ocorrer."
+  },
+  {
+    "question": "Criança com crises de riso imotivado, estereotipado e inapropriado. Qual lesão estrutural se associa classicamente a essas crises gelásticas?",
+    "options": [
+      "Hamartoma hipotalâmico",
+      "Esclerose mesial temporal",
+      "Displasia cortical occipital",
+      "Tumor da fossa posterior"
+    ],
+    "correctIndex": 0,
+    "explanation": "Nas crises gelásticas o riso, de caráter incomum, estereotipado e inapropriado, é o fenômeno mais importante das manifestações críticas. Classicamente se associam aos hamartomas hipotalâmicos, mas também podem ocorrer em epilepsias dos lobos frontal ou temporal."
+  },
+  {
+    "question": "Jovem com história típica de crise tônico-clônica tem um EEG de rotina em vigília normal. Qual a interpretação e a conduta adequadas?",
+    "options": [
+      "Não exclui epilepsia; repetir em vigília e sono, após privação, com ativação",
+      "Exclui epilepsia ativa; investigar síncope e crise psicogênica como causas",
+      "Não exclui epilepsia; o próximo passo obrigatório é o PET cerebral interictal",
+      "Exclui epilepsia generalizada; resta investigar apenas uma epilepsia focal"
+    ],
+    "correctIndex": 0,
+    "explanation": "O EEG é essencial, mas não imprescindível: o diagnóstico de epilepsia é clínico. Cerca de 30 a 40% das pessoas com epilepsia têm o primeiro EEG em vigília normal, mas mais de 90% mostram anormalidade quando se fazem vários traçados, em vigília, sonolência e sono, de preferência após privação de sono, com hiperventilação e fotoestimulação intermitente."
+  },
+  {
+    "question": "Na ressonância magnética de um paciente com epilepsia do lobo temporal refratária, qual achado caracteriza a esclerose mesial temporal?",
+    "options": [
+      "Redução volumétrica do hipocampo, com perda da estrutura interna e hipersinal em T2",
+      "Espessamento cortical, com borramento da transição entre substância cinzenta e branca",
+      "Aumento volumétrico do hipocampo, com hipossinal em T2 e realce após o gadolínio",
+      "Lesão calcificada no lobo temporal, com edema perilesional e efeito de massa"
+    ],
+    "correctIndex": 0,
+    "explanation": "A esclerose mesial temporal, lesão mais comum na epilepsia do lobo temporal, aparece como redução volumétrica e perda da estrutura interna do hipocampo e/ou amígdala em T1 e aumento de sinal em T2 e FLAIR. Espessamento cortical com borramento da transição cinzenta–branca é o padrão da displasia cortical focal. A RM deve ser programada após a correlação eletroclínica, com protocolo dirigido."
+  },
+  {
+    "question": "Na investigação pré-cirúrgica de epilepsia focal, qual padrão o SPECT realizado durante a crise (ictal) mostra na área epileptogênica?",
+    "options": [
+      "Hiperperfusão, com positividade próxima à do PET",
+      "Hipoperfusão, com 10 a 15% de falsa lateralização",
+      "Hipometabolismo de glicose em 70 a 80% dos casos",
+      "Redução do N-acetilaspartato em área mais extensa"
+    ],
+    "correctIndex": 0,
+    "explanation": "O SPECT mede fluxo sanguíneo e tem menor resolução anatômica; no período ictal mostra hiperperfusão da área epileptogênica, com índices de positividade que se aproximam dos do PET. No interictal mostra hipoperfusão em cerca de 50% das epilepsias temporais, com 10 a 15% de falsa lateralização. Hipometabolismo de glicose é achado do PET, e queda do N-acetilaspartato, da espectroscopia."
+  },
+  {
+    "question": "Após uma primeira crise tônico-clônica espontânea, qual achado aumenta a probabilidade de recorrência e pesa a favor de iniciar antiepiléptico?",
+    "options": [
+      "Atividade epileptiforme no eletroencefalograma",
+      "Mordedura de língua durante a crise relatada",
+      "Confusão mental no período pós-crítico imediato",
+      "Duração da crise de cerca de um minuto e meio"
+    ],
+    "correctIndex": 0,
+    "explanation": "Entre 20 e 70% das pessoas com uma primeira crise tônico-clônica espontânea nunca terão outra, e em geral não se trata. Após a segunda crise, a recorrência passa de 70% e o tratamento está indicado. A recorrência é mais provável com déficit neurológico focal, lesão cerebral, retardo mental e anormalidades epileptiformes no EEG. Mordedura de língua e confusão pós-ictal apenas confirmam que houve uma crise."
+  },
+  {
+    "question": "Quais são os fármacos de primeira escolha para crises de ausência típicas?",
+    "options": [
+      "Etosuximida ou valproato",
+      "Carbamazepina ou fenitoína",
+      "Fenobarbital ou primidona",
+      "Gabapentina ou vigabatrina"
+    ],
+    "correctIndex": 0,
+    "explanation": "Para crises de ausência, etosuximida e valproato têm resultados semelhantes, e às vezes a associação dá melhor controle pelo efeito aditivo; o clonazepam é segunda escolha. Carbamazepina e fenitoína — primeira escolha nas crises focais — não controlam ausências e podem agravá-las, assim como gabapentina e vigabatrina."
+  },
+  {
+    "question": "Qual a diferença entre barbitúricos e benzodiazepínicos na ação sobre o canal de cloro do receptor GABA-A?",
+    "options": [
+      "Barbitúricos prolongam a abertura; benzodiazepínicos aumentam a frequência",
+      "Barbitúricos aumentam a frequência; benzodiazepínicos prolongam a abertura",
+      "Barbitúricos bloqueiam o canal; benzodiazepínicos o abrem de forma direta",
+      "Ambos aumentam a frequência de abertura; diferem só na meia-vida"
+    ],
+    "correctIndex": 0,
+    "explanation": "Barbitúricos e benzodiazepínicos atuam no receptor GABAérgico: os barbitúricos prolongam o tempo de abertura do canal de cloro e os benzodiazepínicos aumentam a frequência de abertura, promovendo hiperpolarização da membrana. Já fenitoína, carbamazepina e valproato fazem bloqueio 'dependente do uso' dos canais de sódio, impedindo apenas os surtos de potenciais de ação do neurônio epiléptico."
+  },
+  {
+    "question": "Adolescente em uso crônico de antiepiléptico desenvolve hiperplasia gengival e hirsutismo. Qual fármaco é o responsável mais provável?",
+    "options": [
+      "Fenitoína",
+      "Valproato",
+      "Etosuximida",
+      "Clonazepam"
+    ],
+    "correctIndex": 0,
+    "explanation": "Hirsutismo e hiperplasia gengival são efeitos independentes da dose da fenitoína. O valproato causa ganho de peso, queda de cabelos, tremor e hepatotoxicidade (risco concentrado em crianças com menos de 2 anos, com retardo mental, em politerapia); o fenobarbital, irritabilidade e hiperatividade. Os efeitos dependentes da dose — ataxia, diplopia, sedação — são comuns à maioria das drogas antiepilépticas."
+  },
+  {
+    "question": "Paciente sem crises há três anos em uso de antiepiléptico. Qual perfil indica maior chance de permanecer sem crises após a retirada?",
+    "options": [
+      "Epilepsia idiopática da infância, de curta duração, com EEG e imagem normais",
+      "Epilepsia generalizada iniciada na puberdade, com EEG e imagem normais",
+      "Epilepsia sintomática de curta duração, com lesão estável na ressonância",
+      "Crises focais complexas de longa duração, com EEG interictal normal"
+    ],
+    "correctIndex": 0,
+    "explanation": "A suspensão completa após cerca de três anos de controle leva à recidiva em 50% dos adultos e 25% das crianças. Favorecem ficar sem crises: epilepsia da infância, idiopática, EEG e imagem normais e curta duração. Indicam maior recorrência: crises focais complexas, epilepsia sintomática, EEG ou imagem anormais, longa duração e epilepsias generalizadas iniciadas na puberdade — como a mioclônica juvenil."
+  },
+  {
+    "question": "Homem de 30 anos chega ao pronto-socorro em crise tônico-clônica que já dura 7 minutos. Após garantir a via aérea e checar a glicemia, qual é o tratamento inicial?",
+    "options": [
+      "Benzodiazepínico: diazepam IV ou, sem acesso venoso, midazolam IM",
+      "Fenitoína IV em dose de ataque de 20 mg/kg, infundida em bolus rápido",
+      "Fenobarbital por sonda nasogástrica, em dose única de manutenção",
+      "Aguardar 30 minutos, pois a maioria das crises cessa espontaneamente"
+    ],
+    "correctIndex": 0,
+    "explanation": "Benzodiazepínicos são as drogas de eleição no tratamento agudo das crises e no estado de mal. Pela definição operacional da ILAE (2015), a crise tônico-clônica que passa de 5 minutos dificilmente para sozinha e já deve ser tratada como estado de mal; a partir de 30 minutos há risco de dano neuronal. Usa-se diazepam 0,15–0,2 mg/kg IV (máximo 10 mg, pode repetir uma vez) ou midazolam 10 mg IM; a fenitoína é segunda linha e nunca vai em bolus rápido."
+  },
+  {
+    "question": "A crise persiste após duas doses de diazepam IV. Qual é a forma correta de administrar a fenitoína como segunda linha no estado de mal epiléptico?",
+    "options": [
+      "20 mg/kg IV, até 50 mg/min, diluída em soro fisiológico, com monitorização",
+      "20 mg/kg IV, em bolus rápido, diluída em soro glicosado a 5% para proteger",
+      "5 mg/kg IV, até 50 mg/min, diluída em soro glicosado, sem monitorização",
+      "20 mg/kg por via intramuscular, dividida em dois pontos de aplicação"
+    ],
+    "correctIndex": 0,
+    "explanation": "A dose de ataque da fenitoína é 20 mg/kg IV, com velocidade máxima de 50 mg/min, diluída em soro fisiológico — ela precipita em solução glicosada — e com monitorização de ECG e pressão arterial, pelo risco de arritmia e hipotensão. Valproato, levetiracetam e fenobarbital são alternativas de segunda linha. Se a crise persistir, o estado de mal é refratário: intubação e anestesia contínua (midazolam, propofol ou tiopental) com EEG contínuo."
+  },
+  {
+    "question": "Qual medida está indicada para reduzir o risco de morte súbita inexplicada em epilepsia (SUDEP)?",
+    "options": [
+      "Melhor controle das crises, evitando politerapia, e supervisão do sono",
+      "Associar sempre um segundo antiepiléptico para cobrir crises noturnas",
+      "Deixar o paciente repousar sem estímulos no período pós-ictal",
+      "Usar travesseiros macios e altos, que facilitam a respiração no sono"
+    ],
+    "correctIndex": 0,
+    "explanation": "A SUDEP responde por 2 a 17% das mortes de pessoas com epilepsia (risco de 1/200 na epilepsia grave, contra 4,6/100.000 na população geral). Associa-se a crises generalizadas não testemunhadas durante o sono, epilepsia sintomática, crises frequentes, déficits neurológicos e uso de várias drogas. A prevenção envolve melhor controle das crises, evitar politerapia, travesseiros antissufocantes, acompanhamento do sono e mobilizar e estimular o paciente no pós-ictal — o excesso de inibição cortical no fim da crise é um dos mecanismos implicados."
+  },
+  {
+    "question": "Paciente de 28 anos com epilepsia do lobo temporal refratária e antecedente de crise febril prolongada na infância; a RM mostra esclerose mesial temporal. Qual a melhor opção e o resultado esperado?",
+    "options": [
+      "Lobectomia temporal ou amigdalo-hipocampectomia, com cerca de 75% livres de crises",
+      "Calosotomia, com cerca de 75% de controle completo das crises focais temporais",
+      "Transecção subpial múltipla do hipocampo, com cerca de 50% livres de crises",
+      "Associar uma terceira droga, com cerca de 30% de chance de ficar sem crises"
+    ],
+    "correctIndex": 0,
+    "explanation": "A epilepsia temporal por esclerose mesial consequente à crise febril na infância tem bom prognóstico cirúrgico: lobectomia temporal ou amigdalo-hipocampectomia seletiva dão cerca de 75% de controle completo, contra perto de 50% em outras epilepsias focais. Calosotomia é paliativa, para crises de queda em epilepsias generalizadas sintomáticas; transecção subpial múltipla serve para área epileptogênica em córtex eloquente. Novas drogas em adição dão cerca de 30% de melhora, mas menos de 5% dos refratários ficam livres de crises."
+  }
+];
+
+var LETTERS = ['A','B','C','D','E','F'];
+var SHUFFLE = true, LOCK = true;
+
+var S = { view:'home', started:false, finished:false, i:0, order:[], answers:[], open:{}, filter:'all', warn:false, chat:{} };
+
+function esc(s){ return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
+function pad(n){ return String(n).padStart(2,'0'); }
+
+function build(){
+  var qs = QUIZ.map(function(q,id){ return { question:q.question, options:q.options.slice(), correctIndex:q.correctIndex, explanation:q.explanation, image:q.image, imageCaption:q.imageCaption, id:id }; });
+  if (!SHUFFLE) return qs;
+  for (var i=qs.length-1;i>0;i--){ var j=Math.floor(Math.random()*(i+1)); var t=qs[i]; qs[i]=qs[j]; qs[j]=t; }
+  return qs.map(function(q){
+    var correct = q.options[q.correctIndex], o = q.options.slice();
+    for (var i=o.length-1;i>0;i--){ var j=Math.floor(Math.random()*(i+1)); var t=o[i]; o[i]=o[j]; o[j]=t; }
+    q.options = o; q.correctIndex = o.indexOf(correct); return q;
+  });
+}
+
+/* ── ações ─────────────────────────────────────────────────────────────────── */
+var A = {
+  home:      function(){ S.view='home'; S.started=false; S.finished=false; up(0); },
+  resumo:    function(){ S.view='resumo'; up(0); },
+  start:     function(){ var o=build(); S.view='quiz'; S.started=true; S.finished=false; S.i=0; S.order=o;
+                         S.answers=new Array(o.length).fill(null); S.open={}; S.filter='all'; S.warn=false; up(0); },
+  restart:   function(){ A.start(); },
+  sair:      function(){ S.view='home'; S.started=false; up(0); },   // guarda as respostas
+  retomar:   function(){ S.view='quiz'; S.started=true; S.finished=false; S.warn=false; up(0); },
+  go:        function(n){ if(n<0||n>S.order.length-1) return; S.i=n; S.warn=false; render(); },
+  jump:      function(n){ if(S.finished){ S.finished=false; S.i=n; S.warn=false; } else { if(n<0||n>S.order.length-1) return; S.i=n; S.warn=false; } up(0,'smooth'); },
+  pick:      function(n){ if(LOCK && S.answers[S.i]!==null) return; S.answers[S.i]=n; render(); },
+  prev:      function(){ A.go(S.i-1); },
+  next:      function(){ if(S.i<S.order.length-1) A.go(S.i+1); else A.finish(); },
+  finish:    function(){ var b=S.answers.filter(function(a){return a===null}).length;
+                         if(b>0 && !S.warn){ S.warn=true; render(); return; } S.finished=true; S.warn=false; up(0); },
+  force:     function(){ S.finished=true; S.warn=false; up(0); },
+  gotoBlank: function(){ var n=S.answers.findIndex(function(a){return a===null}); if(n>=0) A.go(n); },
+  back:      function(){ S.finished=false; S.warn=false; up(0); },
+  filter:    function(k){ S.filter=k; render(); },
+  toggle:    function(n){ S.open[n]=!S.open[n]; render(); },
+  toggleAll: function(){ var r=reviewList(), all=r.length>0 && r.every(function(x){return S.open[x.idx]});
+                         S.open={}; if(!all) r.forEach(function(x){ S.open[x.idx]=true; }); render(); }
+};
+function up(top, beh){ render(); window.scrollTo({ top: top||0, behavior: beh||'auto' }); }
+
+/* Aberto por duplo clique (file://) volta para o indice local; servido pela web,
+   volta para o publicado. Os dois listam os mesmos materiais. */
+function idxHref(){
+  var local = (typeof location !== 'undefined' && location.protocol === 'file:');
+  return local ? '../index_local.html' : '../index.html';
+}
+function emAndamento(){
+  return S.order.length > 0 && !S.finished &&
+         S.answers.some(function(a){ return a !== null; });
+}
+
+/* ── header ────────────────────────────────────────────────────────────────── */
+function renderHeader(){
+  var mono = "font-family:'IBM Plex Mono',monospace";
+  var left =
+    '<div style="min-width:0">' +
+      '<div style="display:flex;align-items:center;gap:8px;'+mono+';font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:#8a8578">' +
+        '<a href="'+idxHref()+'" class="h-ink" style="color:#2b57cc;text-decoration:none;white-space:nowrap">\u2190 Materiais</a>' +
+        '<span style="color:#d3cec4">/</span>' +
+        '<span style="overflow:hidden;text-overflow:ellipsis;white-space:nowrap">'+esc(EYEBROW)+'</span>' +
+      '</div>' +
+      '<h1 style="margin:1px 0 0;font-family:\'Newsreader\',Georgia,serif;font-size:20px;font-weight:500;letter-spacing:-.01em;line-height:1.15">'+esc(TITLE)+'</h1>' +
+    '</div>';
+
+  var right = '';
+  if (S.view === 'quiz' && S.started) {
+    var hit = counts().hit;
+    right = '<div style="display:flex;align-items:center;gap:10px;flex-shrink:0">' +
+              '<button type="button" data-act="sair" class="h-line" style="background:none;border:1px solid #ddd8ce;border-radius:9px;padding:6px 11px;'+mono+';font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;color:#5b6478;cursor:pointer;transition:border-color .15s ease">Sair</button>' +
+              '<div style="display:flex;align-items:center;gap:6px">' +
+                '<span style="'+mono+';font-size:15px;font-weight:600;letter-spacing:-.02em">'+hit+'</span>' +
+                '<span style="'+mono+';font-size:11px;color:#8a8578">/ '+S.order.length+'</span>' +
+              '</div></div>';
+  } else if (S.view !== 'home') {
+    right = '<button type="button" data-act="home" class="h-line" style="flex-shrink:0;background:none;border:1px solid #ddd8ce;border-radius:9px;padding:7px 13px;'+mono+';font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:#5b6478;cursor:pointer;transition:border-color .15s ease">← Início</button>';
+  }
+
+  var html = '<div style="display:flex;align-items:baseline;justify-content:space-between;gap:12px;margin-bottom:'+(S.view==='quiz'&&S.started?'10px':'2px')+'">'+left+right+'</div>';
+
+  if (S.view === 'quiz' && S.started) {
+    var c = counts();
+    var rail = S.order.map(function(q,n){
+      var a = S.answers[n], cur = n===S.i && !S.finished, bg = '#d3cec4';
+      if (a!==null) bg = (a===q.correctIndex) ? '#2e7d55' : '#c04437';
+      if (cur && a===null) bg = '#121a2b';
+      var st = a===null ? 'em branco' : (a===q.correctIndex ? 'correta' : 'incorreta');
+      return '<button type="button" data-act="jump" data-n="'+n+'" title="Questão '+(n+1)+' — '+st+'" aria-label="Questão '+(n+1)+' — '+st+'" style="flex:1 1 0;min-width:0;background:none;border:0;padding:13px 0;margin:0;cursor:pointer;display:flex;align-items:center;justify-content:center">' +
+             '<span style="display:block;width:100%;border-radius:99px;transition:height .18s ease,background .18s ease,box-shadow .18s ease;height:'+(cur?'17px':'9px')+';background:'+bg+';box-shadow:'+(cur?'0 0 0 3px rgba(18,26,43,.13)':'none')+'"></span></button>';
+    }).join('');
+    html += '<div><div style="display:flex;align-items:center;gap:3px">'+rail+'</div>' +
+            '<div style="display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:-2px">' +
+              '<div style="'+mono+';font-size:11px;letter-spacing:.04em;color:#5b6478">Questão '+pad(S.i+1)+' / '+S.order.length+'</div>' +
+              '<div style="display:flex;align-items:center;gap:12px;'+mono+';font-size:10.5px;color:#8a8578">' +
+                dot('#2e7d55',c.hit)+dot('#c04437',c.miss)+dot('#d3cec4',c.blank) +
+              '</div></div></div>';
+  }
+  document.getElementById('hdr').innerHTML = html;
+}
+function dot(color,n){ return '<span style="display:flex;align-items:center;gap:5px"><span style="width:7px;height:7px;border-radius:99px;background:'+color+';display:block"></span>'+n+'</span>'; }
+
+function counts(){
+  var hit=0, miss=0, blank=0;
+  S.answers.forEach(function(a,n){
+    if (a===null) blank++;
+    else if (S.order[n] && a===S.order[n].correctIndex) hit++;
+    else miss++;
+  });
+  return { hit:hit, miss:miss, blank:blank, total:S.order.length };
+}
+
+/* ── tela inicial ──────────────────────────────────────────────────────────── */
+function renderHome(){
+  var mono = "font-family:'IBM Plex Mono',monospace";
+  var secoes = (document.getElementById('resumoSrc').textContent.match(/<h2/g)||[]).length;
+  var cell = function(v,l){
+    return '<div style="background:#faf9f6;padding:16px 14px">' +
+      '<div style="'+mono+';font-size:22px;font-weight:500;letter-spacing:-.03em">'+v+'</div>' +
+      '<div style="'+mono+';font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:#8a8578;margin-top:3px">'+l+'</div></div>';
+  };
+  var card = function(act,tag,titulo,desc,cta){
+    return '<button type="button" data-act="'+act+'" class="h-card" style="display:flex;flex-direction:column;align-items:flex-start;gap:0;text-align:left;background:#fff;border:1px solid #e4e0d8;border-radius:18px;padding:24px 22px;cursor:pointer;transition:border-color .16s ease,transform .14s ease;box-shadow:0 1px 2px rgba(18,26,43,.04),0 12px 28px -20px rgba(18,26,43,.18)">' +
+      '<div style="'+mono+';font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:#2b57cc;margin-bottom:12px">'+tag+'</div>' +
+      '<div style="font-family:\'Newsreader\',Georgia,serif;font-size:26px;font-weight:500;letter-spacing:-.02em;line-height:1.15;margin-bottom:8px">'+titulo+'</div>' +
+      '<div style="font-size:14px;line-height:1.6;color:#5b6478;margin-bottom:18px;text-wrap:pretty">'+desc+'</div>' +
+      '<div style="'+mono+';font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:#121a2b">'+cta+'</div></button>';
+  };
+
+  document.getElementById('stage').innerHTML =
+    '<section style="padding:56px 0 0;animation:qFade .3s ease">' +
+      '<div style="'+mono+';font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:#2b57cc;margin-bottom:16px">Material de revisão</div>' +
+      '<h2 style="font-family:\'Newsreader\',Georgia,serif;font-size:40px;line-height:1.08;font-weight:400;letter-spacing:-.025em;margin:0 0 18px;text-wrap:pretty">'+esc(SUBTITLE)+'</h2>' +
+      '<p style="font-size:15.5px;line-height:1.65;color:#5b6478;margin:0 0 30px;max-width:52ch;text-wrap:pretty">'+esc(INTRO)+'</p>' +
+      '<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(108px,1fr));gap:1px;background:#e4e0d8;border:1px solid #e4e0d8;border-radius:14px;overflow:hidden;margin-bottom:32px">' +
+        cell(QUIZ.length,'Questões') + cell(secoes,'Seções') + cell('~'+Math.round(QUIZ.length*0.75),'Minutos') +
+      '</div>' +
+      '<div class="home-grid" style="display:grid;grid-template-columns:1fr 1fr;gap:12px">' +
+        (emAndamento()
+          ? card('retomar','Em andamento','Quiz',
+                 'Você parou na questão '+pad(S.i+1)+' de '+S.order.length+', com '+
+                 (S.order.length-counts().blank)+' respondida'+((S.order.length-counts().blank)===1?'':'s')+
+                 '. Suas respostas continuam guardadas.','Retomar →')
+          : card('start','Praticar','Quiz', QUIZ.length+' questões de múltipla escolha, com explicação assim que você responde e gabarito comentado no fim.','Começar →')) +
+        card('resumo','Estudar','Resumo','O conteúdo da aula em texto corrido, organizado em '+secoes+' seções para leitura antes da prova.','Ler →') +
+      '</div>' +
+      '<div style="margin-top:26px;display:flex;flex-wrap:wrap;align-items:center;gap:8px 18px;'+mono+';font-size:11px;color:#8a8578">' +
+        '<span>← →&nbsp; navegar</span><span>1–'+maxOpts()+'&nbsp; responder</span><span>Enter&nbsp; avançar</span>' +
+        (emAndamento() ? '<button type="button" data-act="start" class="h-ink" style="background:none;border:0;padding:0;'+mono+';font-size:11px;color:#8a8578;cursor:pointer;text-decoration:underline;text-underline-offset:3px">recomeçar do zero</button>' : '') +
+        '</div>' +
+    '</section>';
+}
+function maxOpts(){ return QUIZ.reduce(function(m,q){ return Math.max(m,q.options.length); },0); }
+
+/* ── resumo ────────────────────────────────────────────────────────────────── */
+function renderResumo(){
+  document.getElementById('stage').innerHTML =
+    '<section style="padding:34px 0 0;animation:qFade .3s ease">' +
+      '<div style="font-family:\'IBM Plex Mono\',monospace;font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:#2b57cc;margin-bottom:14px">Resumo</div>' +
+      '<div class="rsm">' + document.getElementById('resumoSrc').textContent + '</div>' +
+      '<div style="display:flex;flex-wrap:wrap;gap:9px;margin-top:38px;padding-top:24px;border-top:1px solid #e4e0d8">' +
+        '<button type="button" data-act="start" class="h-darkflat" style="background:#121a2b;color:#f5f3ef;border:0;border-radius:11px;padding:13px 24px;font-size:14px;font-weight:500;cursor:pointer;transition:background .16s ease">Fazer o quiz →</button>' +
+        '<button type="button" data-act="home" class="h-line" style="background:none;border:1px solid #ddd8ce;border-radius:11px;padding:13px 22px;font-size:14px;cursor:pointer;transition:border-color .15s ease">Voltar ao início</button>' +
+      '</div></section>';
+}
+
+/* imagem da questao — data URI ja resolvida pelo montar_quiz.py */
+function figura(q, cls){
+  if (!q.image) return '';
+  return '<figure class="fig'+(cls?' '+cls:'')+'"><img src="'+q.image+'" alt="'+esc(q.imageCaption||'Imagem da questão')+'">' +
+         (q.imageCaption ? '<figcaption>'+esc(q.imageCaption)+'</figcaption>' : '') + '</figure>';
+}
+
+/* ── questão ───────────────────────────────────────────────────────────────── */
+function renderQuestion(){
+  var mono = "font-family:'IBM Plex Mono',monospace";
+  var q = S.order[S.i], ans = S.answers[S.i], reveal = ans !== null;
+
+  var status = 'Não respondida', sColor = '#8a8578';
+  if (reveal) { var ok = ans===q.correctIndex; status = ok?'Você acertou':'Você errou'; sColor = ok?'#2e7d55':'#c04437'; }
+
+  var opts = q.options.map(function(text,n){
+    var isC = n===q.correctIndex, isMine = n===ans;
+    var bd='#e4e0d8', bg='#fff', fg='#121a2b', bBg='#f2efe9', bFg='#8a8578', mark='', mColor='', op='1', hbd='#2b57cc';
+    if (reveal) {
+      op = (isC||isMine) ? '1' : '.62';
+      if (isC)               { bd='#8fc7a7'; bg='#eef7f1'; fg='#1f5c3e'; bBg='#2e7d55'; bFg='#fff'; mark='✓'; mColor='#2e7d55'; }
+      if (isMine && !isC)    { bd='#e0a49a'; bg='#fdf0ee'; fg='#8f2f25'; bBg='#c04437'; bFg='#fff'; mark='✕'; mColor='#c04437'; }
+    } else if (isMine)       { bd='#121a2b'; bg='#f7f6f2'; bBg='#121a2b'; bFg='#f5f3ef'; }
+    var locked = reveal && LOCK;
+    return '<button type="button" data-act="pick" data-n="'+n+'" class="h-opt'+(locked?' locked':'')+'" style="--hbd:'+hbd+';display:flex;gap:13px;align-items:flex-start;width:100%;text-align:left;padding:14px 15px;border-radius:13px;font-size:15px;line-height:1.5;transition:border-color .15s ease,background .15s ease,transform .12s ease;border:1.5px solid '+bd+';background:'+bg+';color:'+fg+';cursor:'+(locked?'default':'pointer')+';opacity:'+op+'">' +
+      '<span style="flex-shrink:0;width:24px;height:24px;border-radius:7px;display:flex;align-items:center;justify-content:center;'+mono+';font-size:11.5px;font-weight:600;margin-top:1px;background:'+bBg+';color:'+bFg+'">'+LETTERS[n]+'</span>' +
+      '<span style="flex:1;min-width:0;text-wrap:pretty">'+esc(text)+'</span>' +
+      (mark ? '<span style="flex-shrink:0;'+mono+';font-size:14px;font-weight:600;margin-top:1px;color:'+mColor+'">'+mark+'</span>' : '') +
+      '</button>';
+  }).join('');
+
+  var expl = reveal ? '<div style="margin-top:20px;padding:16px 18px;background:#f7f6f2;border-left:2.5px solid #2b57cc;border-radius:0 12px 12px 0;animation:qFade .26s ease">' +
+      '<div style="'+mono+';font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:#2b57cc;margin-bottom:8px">Por quê</div>' +
+      '<p style="margin:0;font-size:14.5px;line-height:1.68;color:#39404f;text-wrap:pretty">'+esc(q.explanation)+'</p></div>' : '';
+
+  var blank = counts().blank;
+  var warn = S.warn ? '<div style="margin-top:14px;padding:15px 17px;background:#fdf7e9;border:1px solid #e8d5a3;border-radius:14px;animation:qFade .22s ease">' +
+      '<p style="margin:0 0 12px;font-size:14px;line-height:1.55;color:#6b5620">'+blank+(blank===1?' questão ainda está em branco.':' questões ainda estão em branco.')+' Você pode voltar nelas ou finalizar assim mesmo.</p>' +
+      '<div style="display:flex;flex-wrap:wrap;gap:8px">' +
+        '<button type="button" data-act="gotoBlank" style="background:#121a2b;color:#f5f3ef;border:0;border-radius:9px;padding:9px 16px;font-size:13px;font-weight:500;cursor:pointer">Ir para a 1ª em branco</button>' +
+        '<button type="button" data-act="force" style="background:none;color:#6b5620;border:1px solid #e8d5a3;border-radius:9px;padding:9px 16px;font-size:13px;cursor:pointer">Finalizar assim mesmo</button>' +
+      '</div></div>' : '';
+
+  var last = S.i === S.order.length-1;
+  var early = !last && (S.order.length - blank) > 0;
+
+  document.getElementById('stage').innerHTML =
+    '<section style="padding:26px 0 0">' +
+      '<article style="background:#fff;border:1px solid #e4e0d8;border-radius:18px;padding:26px 22px 24px;box-shadow:0 1px 2px rgba(18,26,43,.04),0 12px 28px -18px rgba(18,26,43,.18)">' +
+        '<div style="display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:14px">' +
+          '<div style="'+mono+';font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:#2b57cc">Questão '+pad(S.i+1)+'</div>' +
+          '<div style="'+mono+';font-size:10.5px;letter-spacing:.06em;color:'+sColor+'">'+status+'</div>' +
+        '</div>' +
+        '<h2 style="font-family:\'Newsreader\',Georgia,serif;font-size:22px;line-height:1.42;font-weight:400;letter-spacing:-.012em;margin:0 0 22px;text-wrap:pretty">'+esc(q.question)+'</h2>' +
+        figura(q, 'qfig') +
+        '<div style="display:flex;flex-direction:column;gap:9px">'+opts+'</div>' + expl +
+        (reveal ? chatBox(q, ans===q.correctIndex) : '') +
+      '</article>' + warn +
+      '<div style="display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:18px">' +
+        '<button type="button" data-act="prev" class="h-line" style="background:none;border:1px solid #ddd8ce;border-radius:11px;padding:12px 18px;font-size:14px;cursor:pointer;transition:border-color .15s ease,color .15s ease;color:'+(S.i===0?'#c4bfb4':'#121a2b')+';pointer-events:'+(S.i===0?'none':'auto')+'">← Anterior</button>' +
+        '<div style="display:flex;align-items:center;gap:8px">' +
+          (early ? '<button type="button" data-act="finish" class="h-ink" style="background:none;border:0;padding:12px 6px;'+mono+';font-size:11.5px;letter-spacing:.06em;text-transform:uppercase;color:#8a8578;cursor:pointer;text-decoration:underline;text-underline-offset:3px">Finalizar</button>' : '') +
+          '<button type="button" data-act="next" class="h-darkflat" style="background:#121a2b;color:#f5f3ef;border:0;border-radius:11px;padding:12px 22px;font-size:14px;font-weight:500;cursor:pointer;transition:background .16s ease">'+(last?'Finalizar':'Próxima →')+'</button>' +
+        '</div></div></section>';
+}
+
+/* ── resultado + gabarito comentado ────────────────────────────────────────── */
+function reviewList(){
+  return S.order.map(function(q,n){
+    var a = S.answers[n], ok = a!==null && a===q.correctIndex;
+    return { idx:n, ok:ok, blank:a===null, q:q, a:a };
+  }).filter(function(r){
+    return S.filter==='all' || (S.filter==='wrong'&&!r.ok&&!r.blank) || (S.filter==='right'&&r.ok) || (S.filter==='blank'&&r.blank);
+  });
+}
+
+function renderResult(){
+  var mono = "font-family:'IBM Plex Mono',monospace";
+  var c = counts(), pct = c.total ? Math.round(c.hit/c.total*100) : 0;
+
+  var title='Precisa revisar', msg='Releia o material com atenção e refaça o quiz — as explicações abaixo cobrem cada erro.';
+  if (pct>=90)      { title='Domínio sólido';   msg='Desempenho excelente. Confira as explicações das que escaparam e siga em frente.'; }
+  else if (pct>=70) { title='Bom desempenho';   msg='Base consistente. Revise os pontos errados abaixo para fechar as lacunas.'; }
+  else if (pct>=50) { title='Meio do caminho';  msg='Você acertou o essencial, mas há lacunas. Comece pelo filtro de erradas.'; }
+
+  var stat = function(v,l,color){
+    return '<div style="background:#faf9f6;padding:14px 10px">' +
+      '<div style="'+mono+';font-size:19px;font-weight:500;color:'+color+'">'+v+'</div>' +
+      '<div style="'+mono+';font-size:9.5px;letter-spacing:.09em;text-transform:uppercase;color:#8a8578;margin-top:2px">'+l+'</div></div>';
+  };
+
+  var fdefs = [['all','Todas',c.total],['wrong','Erradas',c.miss],['right','Certas',c.hit],['blank','Em branco',c.blank]];
+  var filters = fdefs.map(function(f){
+    var on = S.filter===f[0];
+    return '<button type="button" data-act="filter" data-k="'+f[0]+'" class="h-line" style="border-radius:99px;padding:8px 14px;font-size:13px;cursor:pointer;transition:all .15s ease;border:1px solid '+(on?'#121a2b':'#ddd8ce')+';background:'+(on?'#121a2b':'transparent')+';color:'+(on?'#f5f3ef':'#5b6478')+'">'+f[1]+' '+f[2]+'</button>';
+  }).join('');
+
+  var list = reviewList();
+  var allOpen = list.length>0 && list.every(function(r){ return S.open[r.idx]; });
+
+  var cards = list.map(function(r){
+    var numBg='#f0ede7', numFg='#8a8578';
+    if (!r.blank) { if (r.ok) { numBg='#e3f0e8'; numFg='#1f5c3e'; } else { numBg='#fbe6e2'; numFg='#8f2f25'; } }
+    var open = !!S.open[r.idx];
+    var body = '';
+    if (open) {
+      var opts = r.q.options.map(function(text,n){
+        var isC = n===r.q.correctIndex, isMine = n===r.a;
+        var bd='#eeebe4', bg='#fbfaf8', fg='#5b6478', bBg='#f0ede7', bFg='#8a8578', tag='', tBg='', tFg='';
+        if (isC)            { bd='#bcdcc9'; bg='#eef7f1'; fg='#1f5c3e'; bBg='#2e7d55'; bFg='#fff'; tag='Correta'; tBg='#d9ede1'; tFg='#1f5c3e'; }
+        if (isMine && !isC) { bd='#eec4bd'; bg='#fdf0ee'; fg='#8f2f25'; bBg='#c04437'; bFg='#fff'; tag='Sua resposta'; tBg='#f7ddd8'; tFg='#8f2f25'; }
+        if (isMine && isC)  { tag='Sua resposta ✓'; }
+        return '<div style="display:flex;gap:11px;align-items:flex-start;padding:11px 13px;border-radius:11px;font-size:14px;line-height:1.5;border:1px solid '+bd+';background:'+bg+';color:'+fg+'">' +
+          '<span style="flex-shrink:0;width:21px;height:21px;border-radius:6px;display:flex;align-items:center;justify-content:center;'+mono+';font-size:10.5px;font-weight:600;background:'+bBg+';color:'+bFg+'">'+LETTERS[n]+'</span>' +
+          '<span style="flex:1;min-width:0;text-wrap:pretty">'+esc(text)+'</span>' +
+          (tag ? '<span style="flex-shrink:0;'+mono+';font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;padding:3px 7px;border-radius:6px;margin-top:1px;background:'+tBg+';color:'+tFg+'">'+tag+'</span>' : '') +
+          '</div>';
+      }).join('');
+      body = '<div style="padding:2px 15px 18px;animation:qDrawer .2s ease">' +
+        '<div style="height:1px;background:#eeebe4;margin:0 0 16px"></div>' +
+        '<p style="font-family:\'Newsreader\',Georgia,serif;font-size:18px;line-height:1.5;margin:0 0 16px;text-wrap:pretty">'+esc(r.q.question)+'</p>' +
+        figura(r.q) +
+        '<div style="display:flex;flex-direction:column;gap:7px">'+opts+'</div>' +
+        '<div style="margin-top:16px;padding:14px 16px;background:#f7f6f2;border-left:2.5px solid #2b57cc;border-radius:0 11px 11px 0">' +
+          '<div style="'+mono+';font-size:9.5px;letter-spacing:.16em;text-transform:uppercase;color:#2b57cc;margin-bottom:7px">Por quê</div>' +
+          '<p style="margin:0;font-size:14px;line-height:1.65;color:#39404f;text-wrap:pretty">'+esc(r.q.explanation)+'</p></div>' +
+        '<button type="button" data-act="jump" data-n="'+r.idx+'" style="margin-top:14px;background:none;border:0;padding:0;'+mono+';font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:#2b57cc;cursor:pointer;text-decoration:underline;text-underline-offset:3px">Abrir no quiz →</button></div>';
+    }
+    return '<div style="background:#fff;border:1px solid '+(open?'#c9c3b6':'#e4e0d8')+';border-radius:14px;overflow:hidden;transition:border-color .15s ease">' +
+      '<button type="button" data-act="toggle" data-n="'+r.idx+'" style="display:flex;align-items:center;gap:12px;width:100%;text-align:left;background:none;border:0;padding:14px 15px;cursor:pointer">' +
+        '<span style="flex-shrink:0;width:28px;height:28px;border-radius:8px;display:flex;align-items:center;justify-content:center;'+mono+';font-size:12px;font-weight:600;background:'+numBg+';color:'+numFg+'">'+pad(r.idx+1)+'</span>' +
+        '<span style="flex:1;min-width:0;font-size:14px;line-height:1.45;color:#39404f;overflow:hidden;text-overflow:ellipsis;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical">'+esc(r.q.question)+'</span>' +
+        '<span style="flex-shrink:0;'+mono+';font-size:16px;color:#8a8578;width:16px;text-align:center">'+(open?'−':'+')+'</span>' +
+      '</button>' + body + '</div>';
+  }).join('');
+
+  document.getElementById('stage').innerHTML =
+    '<section style="padding:34px 0 0;animation:qFade .3s ease">' +
+      '<div style="'+mono+';font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:#2b57cc;margin-bottom:14px">Resultado</div>' +
+      '<h2 style="font-family:\'Newsreader\',Georgia,serif;font-size:36px;line-height:1.12;font-weight:400;letter-spacing:-.025em;margin:0 0 8px">'+title+'</h2>' +
+      '<p style="font-size:15px;line-height:1.6;color:#5b6478;margin:0 0 24px;max-width:48ch;text-wrap:pretty">'+msg+'</p>' +
+      '<div style="height:8px;border-radius:99px;background:#e4e0d8;overflow:hidden;margin-bottom:10px">' +
+        '<div style="height:100%;border-radius:99px;background:#121a2b;transition:width .7s cubic-bezier(.22,1,.36,1);width:'+pct+'%"></div></div>' +
+      '<div style="display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:#e4e0d8;border:1px solid #e4e0d8;border-radius:14px;overflow:hidden;margin-bottom:34px">' +
+        stat(c.hit,'Certas','#2e7d55')+stat(c.miss,'Erradas','#c04437')+stat(c.blank,'Branco','#8a8578')+stat(pct+'%','Aproveit.','#2b57cc') +
+      '</div>' +
+      '<div style="display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-bottom:14px">' +
+        '<h3 style="font-family:\'Newsreader\',Georgia,serif;font-size:22px;font-weight:500;letter-spacing:-.015em;margin:0">Gabarito comentado</h3>' +
+        '<button type="button" data-act="toggleAll" class="h-ink" style="background:none;border:0;padding:6px 0;'+mono+';font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:#5b6478;cursor:pointer;text-decoration:underline;text-underline-offset:3px">'+(allOpen?'Recolher tudo':'Expandir tudo')+'</button>' +
+      '</div>' +
+      '<div style="display:flex;gap:7px;flex-wrap:wrap;margin-bottom:16px">'+filters+'</div>' +
+      '<div style="display:flex;flex-direction:column;gap:8px">'+cards+'</div>' +
+      (list.length===0 ? '<div style="padding:38px 16px;text-align:center;color:#8a8578;font-size:14px;border:1px dashed #ddd8ce;border-radius:14px">Nenhuma questão neste filtro.</div>' : '') +
+      '<div style="display:flex;flex-wrap:wrap;gap:9px;margin-top:28px;padding-top:24px;border-top:1px solid #e4e0d8">' +
+        '<button type="button" data-act="restart" class="h-darkflat" style="background:#121a2b;color:#f5f3ef;border:0;border-radius:11px;padding:13px 24px;font-size:14px;font-weight:500;cursor:pointer;transition:background .16s ease">Refazer o quiz</button>' +
+        '<button type="button" data-act="back" class="h-line" style="background:none;border:1px solid #ddd8ce;border-radius:11px;padding:13px 22px;font-size:14px;cursor:pointer;transition:border-color .15s ease">Voltar às questões</button>' +
+        '<button type="button" data-act="resumo" class="h-line" style="background:none;border:1px solid #ddd8ce;border-radius:11px;padding:13px 22px;font-size:14px;cursor:pointer;transition:border-color .15s ease">Ler o resumo</button>' +
+      '</div></section>';
+}
+
+/* ── render + eventos ──────────────────────────────────────────────────────── */
+
+/* ─── Tutor DeepSeek — só local, só quando a questão foi errada ──────────────
+   A chave vem de ../deepseek_key.js, que não existe na versão publicada: online
+   o arquivo dá 404, dsOn() vira false e o chat simplesmente não é renderizado.
+   O histórico fica em S.chat[idDaQuestao] e sobrevive ao re-render do stage. */
+var DS_MODEL = 'deepseek-flash';
+var DS_URL   = 'https://api.deepseek.com/chat/completions';
+var NLJS     = String.fromCharCode(10);
+var DS_MONO  = "font-family:'IBM Plex Mono',monospace";
+var DS_SANS  = "font-family:'IBM Plex Sans',system-ui,sans-serif";
+
+function dsOn(){ return typeof window.DEEPSEEK_KEY === 'string' && window.DEEPSEEK_KEY.length > 10; }
+
+
+/* ─── markdown do chat ───────────────────────────────────────────────────────
+   O modelo responde em markdown (**negrito**, listas, `codigo`, tabelas). O texto
+   vem de fora, entao a ordem importa: ESCAPA TUDO primeiro com esc() e so depois
+   aplica formatacao — assim nenhuma tag vinda da resposta vira HTML de verdade.
+   Como esc() ja trocou > por &gt;, a citacao casa com &gt; e nao com >.
+   Trechos de codigo saem de cena por um marcador NUL, que nao pode existir
+   no texto escapado, e voltam no fim — assim ` ` protege o que esta dentro. */
+function mdIn(t){
+  var Z = String.fromCharCode(0), codes = [];
+  t = t.replace(/`([^`]+)`/g, function(_, c){
+    codes.push(c);
+    return Z + 'c' + (codes.length - 1) + Z;
+  });
+  t = t.replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>');
+  t = t.replace(/__([^_]+)__/g, '<strong>$1</strong>');
+  t = t.replace(/(^|[\s(])\*([^*\n]+)\*/g, '$1<em>$2</em>');
+  t = t.replace(/(^|[\s(])_([^_\n]+)_/g, '$1<em>$2</em>');
+  t = t.replace(/\[([^\]]+)\]\((https?:\/\/[^)\s]+)\)/g,
+    '<a href="$2" target="_blank" rel="noopener" style="color:#2b57cc">$1</a>');
+  return t.replace(new RegExp(Z + 'c([0-9]+)' + Z, 'g'), function(_, i){
+    return '<code style="' + DS_MONO + ';font-size:12px;background:#f2efe9;' +
+           'border-radius:4px;padding:1px 5px">' + codes[i] + '</code>';
+  });
+}
+
+function mdChat(txt){
+  var Z = String.fromCharCode(0);
+  var t = esc(String(txt == null ? '' : txt));
+  var blocos = [];
+  t = t.replace(/```[a-zA-Z]*\n?([\s\S]*?)```/g, function(_, c){
+    blocos.push(c.replace(/\n+$/, ''));
+    return Z + 'b' + (blocos.length - 1) + Z;
+  });
+
+  var linhas = t.split('\n'), out = [], lista = null, par = [];
+  function fechaLista(){ if (lista) { out.push('</' + lista + '>'); lista = null; } }
+  function fechaPar(){
+    if (par.length) { out.push('<p style="margin:0 0 9px">' + mdIn(par.join(' ')) + '</p>'); par = []; }
+  }
+  function fecha(){ fechaPar(); fechaLista(); }
+
+  for (var i = 0; i < linhas.length; i++){
+    var l = linhas[i], t2 = l.trim();
+    if (!t2) { fecha(); continue; }
+
+    var bl = t2.match(new RegExp('^' + Z + 'b([0-9]+)' + Z + '$'));
+    if (bl) {
+      fecha();
+      out.push('<pre style="margin:0 0 9px;padding:9px 11px;background:#f7f6f2;border-radius:9px;' +
+               'overflow-x:auto;' + DS_MONO + ';font-size:12px;line-height:1.5">' + blocos[bl[1]] + '</pre>');
+      continue;
+    }
+
+    // tabela: linha com | ... | seguida da separadora | --- | --- |
+    if (t2.charAt(0) === '|' && i + 1 < linhas.length && /^\|[\s:|-]+\|$/.test(linhas[i+1].trim())) {
+      fecha();
+      var celulas = function(linha){
+        return linha.trim().replace(/^\||\|$/g, '').split('|').map(function(c){ return mdIn(c.trim()); });
+      };
+      var cab = celulas(t2), corpo = [];
+      i += 2;
+      while (i < linhas.length && linhas[i].trim().charAt(0) === '|') { corpo.push(celulas(linhas[i].trim())); i++; }
+      i--;
+      var cel = 'padding:5px 9px;border-bottom:1px solid #eae6de;text-align:left;vertical-align:top';
+      out.push('<div style="overflow-x:auto;margin:0 0 9px">' +
+        '<table style="border-collapse:collapse;font-size:12.5px;width:100%">' +
+        '<thead><tr>' + cab.map(function(c){ return '<th style="' + cel + ';font-weight:600">' + c + '</th>'; }).join('') + '</tr></thead>' +
+        '<tbody>' + corpo.map(function(r){
+          return '<tr>' + r.map(function(c){ return '<td style="' + cel + '">' + c + '</td>'; }).join('') + '</tr>';
+        }).join('') + '</tbody></table></div>');
+      continue;
+    }
+
+    var h = t2.match(/^#{1,6}\s+(.*)$/);
+    if (h) {
+      fecha();
+      out.push('<div style="font-weight:600;color:#121a2b;margin:11px 0 5px">' + mdIn(h[1]) + '</div>');
+      continue;
+    }
+
+    if (/^(---+|\*\*\*+)$/.test(t2)) {
+      fecha();
+      out.push('<hr style="border:0;border-top:1px solid #eae6de;margin:11px 0">');
+      continue;
+    }
+
+    var cit = t2.match(/^&gt;\s?(.*)$/);
+    if (cit) {
+      fecha();
+      out.push('<div style="margin:0 0 9px;padding:7px 11px;border-left:2.5px solid #c9d6f7;' +
+               'background:#f7f9fe;border-radius:0 7px 7px 0">' + mdIn(cit[1]) + '</div>');
+      continue;
+    }
+
+    var mUl = t2.match(/^[-*•]\s+(.*)$/);
+    var mOl = t2.match(/^\d+[.)]\s+(.*)$/);
+    if (mUl || mOl) {
+      var tipo = mUl ? 'ul' : 'ol';
+      fechaPar();
+      if (lista !== tipo) {
+        fechaLista();
+        out.push('<' + tipo + ' style="margin:0 0 9px;padding-left:19px">');
+        lista = tipo;
+      }
+      out.push('<li style="margin:3px 0">' + mdIn((mUl || mOl)[1]) + '</li>');
+      continue;
+    }
+
+    fechaLista();
+    par.push(t2);
+  }
+  fecha();
+  return out.join('');
+}
+
+function msgHTML(m){
+  if (m.role === 'user')
+    return '<div style="margin:0 0 10px;text-align:right">' +
+      '<span style="display:inline-block;max-width:88%;text-align:left;background:#f2efe9;' +
+      'border-radius:12px 12px 3px 12px;padding:9px 12px;font-size:13.5px;line-height:1.6;' +
+      'color:#39404f;text-wrap:pretty">' + esc(m.content) + '</span></div>';
+  return '<div style="margin:0 0 12px">' +
+    '<div style="' + DS_MONO + ';font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;' +
+    'color:#2b57cc;margin-bottom:4px">DeepSeek</div>' +
+    '<div style="font-size:13.5px;line-height:1.65;color:#39404f;text-wrap:pretty">' +
+    mdChat(m.content) + '</div></div>';
+}
+
+function chatBox(q, acertou){
+  if (!dsOn()) return '';
+  var chamada = acertou ? 'Quer ir mais fundo?' : 'Ainda com dúvida?';
+  var dica = acertou ? 'Por que as outras estão erradas?' : 'Por que a que eu marquei está errada?';
+  var hist = (S.chat[q.id] || []).map(msgHTML).join('');
+  return '<div id="ds" data-qid="' + q.id + '" style="margin-top:14px;border:1px solid #e4e0d8;' +
+      'border-radius:14px;background:#fff;overflow:hidden;animation:qFade .26s ease">' +
+      '<div style="display:flex;align-items:center;gap:8px;padding:11px 15px;' +
+        'border-bottom:1px solid #f0ede6;background:#faf9f6">' +
+        '<span style="' + DS_MONO + ';font-size:10px;letter-spacing:.16em;text-transform:uppercase;' +
+        'color:#2b57cc">' + chamada + '</span>' +
+        '<span style="font-size:12px;color:#8a8578">pergunte ao DeepSeek</span></div>' +
+      '<div id="dsLog" style="max-height:280px;overflow-y:auto;padding:' + (hist ? '12px 15px' : '0') + '">' +
+        hist + '</div>' +
+      '<div style="display:flex;gap:8px;padding:11px 12px;border-top:1px solid #f0ede6">' +
+        '<input id="dsIn" type="text" autocomplete="off" ' +
+          'placeholder="' + dica + '" ' +
+          'style="flex:1;min-width:0;border:1px solid #e4e0d8;border-radius:10px;padding:10px 12px;' +
+          'font-size:13.5px;' + DS_SANS + ';color:#121a2b;background:#fff;outline:none">' +
+        '<button type="button" data-act="dsSend" class="h-darkflat" style="flex-shrink:0;' +
+          'background:#121a2b;color:#f5f3ef;border:0;border-radius:10px;padding:10px 16px;' +
+          'font-size:13px;font-weight:500;cursor:pointer;transition:background .16s ease">Enviar</button>' +
+      '</div></div>';
+}
+
+function dsContexto(q, ans){
+  var alts = q.options.map(function(o, n){ return LETTERS[n] + ') ' + o; }).join(NLJS);
+  return 'Questao: ' + q.question + NLJS + alts + NLJS +
+    'Resposta correta: ' + LETTERS[q.correctIndex] + ') ' + q.options[q.correctIndex] + NLJS +
+    'O estudante marcou: ' + (ans === null ? 'nada' : LETTERS[ans] + ') ' + q.options[ans]) + NLJS +
+    'Explicacao que ele ja tem: ' + q.explanation;
+}
+
+A.dsSend = function(){
+  var box = document.getElementById('ds');
+  if (!box || !dsOn() || box.getAttribute('data-busy')) return;
+  var input = document.getElementById('dsIn'), log = document.getElementById('dsLog');
+  var texto = (input.value || '').trim();
+  if (!texto) return;
+
+  var qid = parseInt(box.getAttribute('data-qid'), 10), q = null, ans = null;
+  for (var i = 0; i < S.order.length; i++)
+    if (S.order[i].id === qid) { q = S.order[i]; ans = S.answers[i]; }
+  if (!q) return;
+
+  S.chat[qid] = S.chat[qid] || [];
+  S.chat[qid].push({ role:'user', content:texto });
+  input.value = '';
+  log.style.padding = '12px 15px';
+  log.insertAdjacentHTML('beforeend', msgHTML({ role:'user', content:texto }));
+  log.insertAdjacentHTML('beforeend',
+    '<div><div style="' + DS_MONO + ';font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;' +
+    'color:#2b57cc;margin-bottom:4px">DeepSeek</div>' +
+    '<div id="dsTxt" style="font-size:13.5px;line-height:1.65;color:#8a8578;' +
+    'text-wrap:pretty">pensando…</div></div>');
+  log.scrollTop = log.scrollHeight;
+  box.setAttribute('data-busy', '1');
+
+  var acertou = (ans === q.correctIndex);
+  var situacao = acertou
+    ? 'Voce e um tutor de medicina. O estudante do 7o semestre ACERTOU esta questao, mas ficou com uma duvida. '
+    : 'Voce e um tutor de medicina. O estudante do 7o semestre ERROU esta questao. ';
+  var msgs = [
+    { role:'system', content: situacao +
+      'Responda em portugues do Brasil, direto ao ponto, no maximo 150 palavras. ' +
+      'Traga o dado concreto (valor, criterio, mecanismo) em vez de generalidade. ' +
+      'Nao repita a explicacao que ele ja tem; foque na duvida que ele trouxe.' },
+    { role:'user', content: dsContexto(q, ans) }
+  ];
+  var h = S.chat[qid];
+  for (var j = 0; j < h.length; j++) msgs.push({ role:h[j].role, content:h[j].content });
+
+  dsStream(msgs, function(txt, fim, erro){
+    var el = document.getElementById('dsTxt');
+    if (!el) { box.removeAttribute('data-busy'); return; }
+    if (erro) { el.style.color = '#c04437'; el.textContent = erro; box.removeAttribute('data-busy'); return; }
+    el.style.color = '#39404f';
+    el.innerHTML = mdChat(txt);
+    var lg = document.getElementById('dsLog'); if (lg) lg.scrollTop = lg.scrollHeight;
+    if (fim) { el.removeAttribute('id'); S.chat[qid].push({ role:'assistant', content:txt }); box.removeAttribute('data-busy'); }
+  });
+};
+
+function dsStream(messages, cb){
+  var acc = '';
+  fetch(DS_URL, {
+    method: 'POST',
+    headers: { 'Content-Type':'application/json', 'Authorization':'Bearer ' + window.DEEPSEEK_KEY },
+    body: JSON.stringify({ model:DS_MODEL, messages:messages, stream:true, max_tokens:1200, temperature:0.3 })
+  }).then(function(r){
+    if (!r.ok) return r.text().then(function(t){
+      throw new Error(
+        r.status === 401 ? 'Chave recusada (401). Confira o deepseek_key.js.' :
+        r.status === 402 ? 'Sem saldo na conta DeepSeek (402).' :
+        r.status === 429 ? 'Limite de uso atingido (429). Tente daqui a pouco.' :
+        'Erro ' + r.status + ': ' + String(t).slice(0, 120));
+    });
+    var reader = r.body.getReader(), dec = new TextDecoder(), buf = '';
+    (function pump(){
+      return reader.read().then(function(res){
+        if (res.done) { cb(acc || '(resposta vazia)', true); return; }
+        buf += dec.decode(res.value, { stream:true });
+        var linhas = buf.split(NLJS);
+        buf = linhas.pop();
+        for (var i = 0; i < linhas.length; i++){
+          var l = linhas[i].trim();
+          if (l.indexOf('data:') !== 0) continue;
+          var carga = l.slice(5).trim();
+          if (carga === '[DONE]') continue;
+          try {
+            var d = JSON.parse(carga).choices[0].delta;
+            if (d && d.content) { acc += d.content; cb(acc, false); }
+          } catch (_){}
+        }
+        return pump();
+      });
+    })();
+  }).catch(function(e){
+    cb('', true, 'Nao consegui falar com o DeepSeek: ' + (e && e.message ? e.message : e));
+  });
+}
+
+function render(){
+  renderHeader();
+  if (S.view === 'home')        renderHome();
+  else if (S.view === 'resumo') renderResumo();
+  else if (S.finished)          renderResult();
+  else                          renderQuestion();
+}
+
+/* lightbox: clique em qualquer figura amplia */
+document.addEventListener('click', function(e){
+  var lb = document.getElementById('lb');
+  if (e.target.closest('#lb')) { lb.className = ''; return; }
+  var img = e.target.closest('.fig img');
+  if (img) { lb.firstElementChild.src = img.src; lb.className = 'on'; }
+});
+window.addEventListener('keydown', function(e){
+  if (e.key === 'Escape') document.getElementById('lb').className = '';
+});
+
+document.addEventListener('click', function(e){
+  var b = e.target.closest('[data-act]'); if (!b) return;
+  var act = b.getAttribute('data-act'), n = parseInt(b.getAttribute('data-n'),10), k = b.getAttribute('data-k');
+  if (act==='pick'||act==='jump'||act==='toggle') A[act](n);
+  else if (act==='filter') A.filter(k);
+  else if (A[act]) A[act]();
+});
+
+window.addEventListener('keydown', function(e){
+  if (S.view!=='quiz' || !S.started || S.finished) return;
+  var t = e.target, tag = t && t.tagName;
+  if (tag==='INPUT' || tag==='TEXTAREA' || (t && t.isContentEditable)) return;
+  if (e.metaKey||e.ctrlKey||e.altKey) return;
+  if (e.key==='ArrowRight')     { e.preventDefault(); A.go(S.i+1); }
+  else if (e.key==='ArrowLeft') { e.preventDefault(); A.go(S.i-1); }
+  else if (e.key==='Enter')     { e.preventDefault(); A.next(); }
+  else if (/^[1-6]$/.test(e.key)) {
+    var n = parseInt(e.key,10)-1;
+    if (n < S.order[S.i].options.length) A.pick(n);
+  }
+});
+
+render();
+</script>
+</body>
+</html>

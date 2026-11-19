@@ -1,0 +1,354 @@
+{
+  "titulo": "Massas Anexiais e Câncer de Ovário",
+  "eyebrow": "Ginecologia · Oncologia Ginecológica",
+  "subtitulo": "Do cisto funcional ao câncer de ovário: como investigar e quando operar",
+  "intro": "Etiologia das massas anexiais em cada fase da vida, fatores de risco, CA-125 e marcadores, ultrassonografia pelas regras IOTA e pelo O-RADS, fluxogramas de conduta (inclusive na gestação) e câncer de ovário: tipos, estadiamento FIGO, tratamento, síndrome de Meigs e tumor de Krukenberg.",
+  "questoes": [
+    {
+      "question": "Que proporção dos cânceres de ovário é diagnosticada ainda no estádio I?",
+      "options": [
+        "Cerca de 15% dos casos",
+        "Cerca de 45% dos casos",
+        "Cerca de 70% dos casos",
+        "Cerca de 90% dos casos"
+      ],
+      "correctIndex": 0,
+      "explanation": "Apenas cerca de 15% dos casos chegam ao diagnóstico no estádio I. Os sintomas são vagos (distensão, dor pélvica, saciedade precoce), não há rastreamento eficaz e a disseminação peritoneal é precoce — daí o apelido de 'silent killer'. O reflexo aparece na sobrevida em 5 anos, em torno de 45%, contra cerca de 89% no câncer de mama."
+    },
+    {
+      "question": "Mulher de 45 anos, assintomática e sem história familiar de câncer, pede exames para 'prevenir câncer de ovário'. Qual é a conduta adequada?",
+      "options": [
+        "Explicar que não há rastreamento eficaz e não pedir USTV nem CA-125 de rotina",
+        "Solicitar ultrassonografia transvaginal anual a partir dos 40 anos de idade",
+        "Solicitar dosagem anual de CA-125 associada ao exame pélvico bimanual",
+        "Solicitar CA-125 e ultrassonografia transvaginal a cada seis meses"
+      ],
+      "correctIndex": 0,
+      "explanation": "O câncer de ovário não tem rastreamento eficaz. Em mulheres assintomáticas, o exame pélvico bimanual e a USTV não têm acurácia significativa e não são recomendados como rotina (ACOG, 2014). O CA-125 também falha como rastreio: pode ser normal nos estádios iniciais e se eleva em várias condições benignas."
+    },
+    {
+      "question": "Qual é o tumor de ovário mais comum em crianças e adolescentes?",
+      "options": [
+        "Teratoma maduro, um tumor de células germinativas",
+        "Cistoadenoma seroso, um tumor epitelial benigno",
+        "Tumor de células da granulosa, um tumor estromal",
+        "Fibroma ovariano, um tumor do estroma gonadal"
+      ],
+      "correctIndex": 0,
+      "explanation": "Na infância e na adolescência predominam os tumores de células germinativas, e entre eles os teratomas. Os teratomas maduros (cisto dermoide) respondem por 55 a 70% dos tumores de ovário em crianças e são bilaterais em 10%. Cerca de 25% das lesões nessa faixa são malignas, com destaque para o disgerminoma; tecomas e fibromas somam só 1%, e os tumores da granulosa são raros."
+    },
+    {
+      "question": "Adolescente de 16 anos com amenorreia primária e cariótipo 46,XY (síndrome de Swyer) tem massa na gônada. Qual tumor se associa classicamente à disgenesia gonadal, e com que neoplasia maligna ele coexiste com frequência?",
+      "options": [
+        "Gonadoblastoma, coexistindo em até 60% com disgerminoma",
+        "Teratoma imaturo, coexistindo em até 60% com coriocarcinoma",
+        "Tecoma, coexistindo em até 60% com tumor da granulosa",
+        "Cistoadenoma mucinoso, coexistindo em até 60% com Krukenberg"
+      ],
+      "correctIndex": 0,
+      "explanation": "O gonadoblastoma é um tumor germinativo raro, tipicamente benigno, associado à disgenesia gonadal (síndrome de Turner e síndrome de Swyer). Em até 60% dos casos aparece junto de um tumor germinativo maligno, mais comumente o disgerminoma — que responde por cerca de 1% de todos os cânceres de ovário."
+    },
+    {
+      "question": "Menina de 13 anos com aumento do volume abdominal e massa ovariana sólida de crescimento rápido. Na suspeita de disgerminoma, quais marcadores séricos são mais úteis?",
+      "options": [
+        "Beta-hCG e desidrogenase lática (DHL)",
+        "CA-125 e antígeno carcinoembrionário",
+        "CA-19-9 e testosterona sérica total",
+        "Estradiol e CA-125 em dosagem seriada"
+      ],
+      "correctIndex": 0,
+      "explanation": "O disgerminoma eleva DHL e, quando há diferenciação trofoblástica (cerca de 5% dos casos), também beta-hCG. Na tabela de marcadores: AFP sugere tumor de saco vitelínico, teratoma imaturo ou Sertoli-Leydig; beta-hCG, disgerminoma ou coriocarcinoma; DHL, disgerminoma ou teratoma imaturo. CA-125, CEA e CA-19-9 são marcadores dos tumores epiteliais."
+    },
+    {
+      "question": "Mulher de 26 anos com amenorreia secundária, hirsutismo progressivo e clitoromegalia tem massa ovariana sólida unilateral. Qual é o tumor mais provável?",
+      "options": [
+        "Tumor de células de Sertoli-Leydig",
+        "Tumor de células da granulosa adulto",
+        "Cistoadenoma mucinoso borderline",
+        "Teratoma maduro (cisto dermoide)"
+      ],
+      "correctIndex": 0,
+      "explanation": "Os tumores de células de Sertoli-Leydig secretam andrógenos (testosterona), produzindo hirsutismo, clitoromegalia e amenorreia. O espelho é o tumor de células da granulosa, que produz estradiol e causa amenorreia e puberdade precoce. Virilização + massa ovariana sólida = pense em Sertoli-Leydig."
+    },
+    {
+      "question": "Gestante de 8 semanas tem cisto anexial de 4 cm achado no ultrassom de primeiro trimestre. Qual é o diagnóstico mais provável e a evolução esperada?",
+      "options": [
+        "Cisto folicular ou corpo-lúteo, com regressão espontânea na maioria",
+        "Teratoma maduro, com crescimento progressivo na maioria dos casos",
+        "Cistoadenoma seroso, persistindo após o parto na maioria dos casos",
+        "Carcinoma epitelial inicial, com indicação de cirurgia imediata"
+      ],
+      "correctIndex": 0,
+      "explanation": "Massas anexiais aparecem em 4,9 a 6,1% dos ultrassons de primeiro trimestre, regridem espontaneamente em 71 a 89% e são benignas na anatomia patológica em 95 a 99%. No primeiro trimestre predominam o cisto folicular (o mais comum) e o corpo-lúteo (13 a 17%); passado o primeiro trimestre, a lesão anexial mais comum é o teratoma maduro."
+    },
+    {
+      "question": "Gestante assintomática com massa anexial. No ultrassom de 18 a 20 semanas, os critérios de malignidade são duvidosos. Segundo o fluxograma da figura, qual é o próximo passo?",
+      "options": [
+        "Avaliar a massa por ressonância magnética",
+        "Indicar cirurgia de imediato, ainda no 2º trimestre",
+        "Reavaliar apenas no ultrassom de 32 a 36 semanas",
+        "Dosar CA-125 e decidir a conduta pelo seu valor"
+      ],
+      "correctIndex": 0,
+      "explanation": "Na gestação, massa anexial sintomática é cirúrgica. A assintomática é reavaliada no ultrassom de cada trimestre (inicial, 18 a 20 e 32 a 36 semanas) em busca de critérios de malignidade: presentes, cirurgia; duvidosos, ressonância magnética; ausentes, reavaliar no próximo ultrassom.",
+      "image": "s37i1",
+      "imageCaption": "Fluxograma do manejo dos tumores anexiais em gestantes"
+    },
+    {
+      "question": "Massa ovariana classificada como de alto risco é detectada no primeiro trimestre da gestação. Quando a cirurgia deve ser realizada?",
+      "options": [
+        "No segundo trimestre da gestação",
+        "De imediato, ainda no 1º trimestre",
+        "Somente após o parto, no puerpério",
+        "No terceiro trimestre, antes do parto"
+      ],
+      "correctIndex": 0,
+      "explanation": "No primeiro trimestre, massa de alto risco vai para cirurgia no segundo trimestre. A de risco baixo ou intermediário é seguida além de 14 semanas: se regride, ultrassom a cada 8 semanas até o parto; se progride ou não regride, também cirurgia no segundo trimestre. Detectada após 24 semanas e de baixo risco, a massa pode aguardar o parto — excisão na cesárea ou cirurgia pós-parto."
+    },
+    {
+      "question": "Na pós-menopausa, qual tipo de tumor predomina entre as massas ovarianas malignas?",
+      "options": [
+        "Tumor epitelial seroso",
+        "Tumor germinativo misto",
+        "Tumor estromal de Leydig",
+        "Tumor de seio endodérmico"
+      ],
+      "correctIndex": 0,
+      "explanation": "Os tumores epiteliais concentram-se acima dos 60 anos, e o seroso é o subtipo mais frequente (30 a 70% dos carcinomas epiteliais) — na forma maligna, cistoadenocarcinoma/carcinoma seroso. Entre as lesões benignas dessa fase destaca-se o teratoma maduro. Tumores germinativos predominam até os 25 anos; metástases (mama, trato gastrointestinal, útero, tubas) entram no diferencial de massa complexa."
+    },
+    {
+      "question": "Qual conjunto reúne apenas fatores de risco para câncer de ovário?",
+      "options": [
+        "BRCA1/2, síndrome de Lynch, endometriose e nuliparidade",
+        "BRCA1/2, multiparidade, amamentação e laqueadura tubária",
+        "Contraceptivo oral, síndrome de Lynch, gestação e tabagismo",
+        "Primeiro parto antes dos 25 anos, obesidade e endometriose"
+      ],
+      "correctIndex": 0,
+      "explanation": "São fatores de risco: história familiar de câncer de mama ou ovário, mutações BRCA1/BRCA2, síndrome de Lynch, endometriose (estado inflamatório crônico), infertilidade, obesidade, tabagismo, nuliparidade, terapia de reposição hormonal e idade (pico entre 60 e 70 anos). São protetores: contraceptivo oral, gestação, amamentação, laqueadura tubária e primeiro parto antes dos 25 anos."
+    },
+    {
+      "question": "Mulher de 30 anos com dispareunia e dismenorreia intensa tem massa anexial à USTV. Qual é a hipótese mais provável?",
+      "options": [
+        "Endometrioma ovariano",
+        "Leiomioma subseroso",
+        "Abscesso tubo-ovariano",
+        "Cisto folicular simples"
+      ],
+      "correctIndex": 0,
+      "explanation": "Dispareunia e dismenorreia severa sugerem endometrioma. Metrorragia com dismenorreia aponta para leiomioma; febre e dor à mobilização do colo, para abscesso tubo-ovariano/doença inflamatória pélvica; dor aguda, para gravidez ectópica ou torção ovariana."
+    },
+    {
+      "question": "Em mulher com massa anexial, qual característica dos sintomas deve levantar a suspeita de tumor maligno de ovário?",
+      "options": [
+        "Progressão rápida e grave, sobretudo com sintomas consumptivos",
+        "Dor pélvica aguda com febre, calafrios e vômitos persistentes",
+        "Dor pélvica cíclica que piora sempre no período menstrual",
+        "Dor aguda lateralizada associada a atraso menstrual recente"
+      ],
+      "correctIndex": 0,
+      "explanation": "Os sintomas de tumor ovariano são inespecíficos (sangramento genital, aumento do volume abdominal, dor abdominal e pélvica). Quando têm início súbito, são severos ou progridem rápido — principalmente com sintomas consumptivos —, a malignidade deve ser considerada. Febre, calafrios e vômitos sugerem infecção; dor aguda com atraso menstrual, gravidez ectópica."
+    },
+    {
+      "question": "Sobre o CA-125 na avaliação de massa anexial, qual afirmação está correta?",
+      "options": [
+        "Seu valor preditivo positivo é maior na pós-menopausa que na menacme",
+        "Está elevado em praticamente todos os carcinomas ovarianos em estádio I",
+        "Isoladamente, basta para diferenciar tumor benigno de tumor maligno",
+        "Não se eleva em doenças benignas como endometriose, miomas e DIP"
+      ],
+      "correctIndex": 0,
+      "explanation": "O CA-125 é o marcador mais relevante: está elevado em cerca de 80% das mulheres com câncer epitelial de ovário, mas pode ser normal nos estádios iniciais e sobe em endometriose, miomas, DIP, cirrose, tuberculose e outros cânceres (pulmão, mama). Na pós-menopausa seu valor preditivo positivo chega a 98%, contra 49% na menacme. Por isso não deve ser usado isoladamente para separar benigno de maligno (ACOG, 2016)."
+    },
+    {
+      "question": "Mulher de 34 anos com endometrioma de 5 cm de aspecto típico tem CA-125 de 90 U/mL. Como interpretar esse valor?",
+      "options": [
+        "Elevação esperada: endometriomas elevam o CA-125 em cerca de 67%",
+        "Elevação diagnóstica de carcinoma: indicar cirurgia oncológica",
+        "Erro laboratorial: o endometrioma não altera o CA-125 sérico",
+        "Elevação que exclui endometrioma e sugere tumor germinativo"
+      ],
+      "correctIndex": 0,
+      "explanation": "O valor de referência do CA-125 é 35 U/mL, e muitas condições benignas o ultrapassam: endometriomas e cirrose em 67%, DIP aguda em 30%, tumores epiteliais benignos em 29%, miomas em 26%, endometriose em 25% e cirrose com ascite em 100%. No câncer de ovário a elevação ocorre em 70 a 80%. Na menacme, o valor preditivo positivo do marcador é de apenas 49%."
+    },
+    {
+      "question": "Mulher de 31 anos com dismenorreia progressiva. A USGTV do ovário direito (figura) mostra cisto de paredes regulares, sem fluxo interno ao Doppler. Qual é o diagnóstico mais provável?",
+      "options": [
+        "Endometrioma ovariano",
+        "Cisto folicular simples",
+        "Cisto dermoide típico",
+        "Cistoadenoma mucinoso"
+      ],
+      "correctIndex": 0,
+      "explanation": "O conteúdo é homogêneo, com ecos finos de baixa intensidade em 'vidro fosco' — o padrão típico do endometrioma, que pode ter cápsula espessa e focos hiperecogênicos de permeio. O cisto folicular é anecoico (preto); o dermoide tem componente hiperecogênico com sombra acústica. Endometrioma típico com menos de 10 cm é O-RADS 2.",
+      "image": "s13i1",
+      "imageCaption": "USGTV do ovário direito"
+    },
+    {
+      "question": "A figura reúne aspectos ultrassonográficos de um mesmo tipo de lesão ovariana: componente hiperecogênico com sombra acústica, linhas e pontos hiperecogênicos e, em um caso, esferas ecogênicas flutuantes. Que lesão é essa?",
+      "options": [
+        "Teratoma maduro (cisto dermoide)",
+        "Cisto hemorrágico com coágulo",
+        "Endometrioma com focos murais",
+        "Cistoadenoma seroso papilífero"
+      ],
+      "correctIndex": 0,
+      "explanation": "São os achados do teratoma maduro: nódulo misto com área hiperecogênica e sombra acústica posterior, linhas e pontos hiperecogênicos (cabelos) e, raramente, esferas ecogênicas flutuantes — incomuns, mas patognomônicas. O dermoide típico com menos de 10 cm é O-RADS 2, é bilateral em 10% e tem risco de transformação maligna menor que 0,8%.",
+      "image": "s27i1",
+      "imageCaption": "Aspectos ultrassonográficos típicos de uma lesão ovariana"
+    },
+    {
+      "question": "Pelas regras simples da IOTA (figura), como se classifica um tumor sólido irregular acompanhado de ascite, sem nenhuma característica B?",
+      "options": [
+        "Maligno: há características M e nenhuma B",
+        "Benigno: a ascite isolada não tem valor",
+        "Inconclusivo: são exigidas três ou mais M",
+        "Benigno: tumor sólido costuma ser fibroma"
+      ],
+      "correctIndex": 0,
+      "explanation": "As regras simples listam cinco características benignas (B1 unilocular; B2 componente sólido < 7 mm; B3 sombra acústica; B4 multilocular liso < 100 mm; B5 sem fluxo) e cinco malignas (M1 tumor sólido irregular; M2 ascite; M3 ≥ 4 estruturas papilares; M4 multilocular-sólido irregular ≥ 100 mm; M5 fluxo muito intenso). Uma ou mais M sem nenhuma B classifica como maligno; o inverso, benigno; ambas ou nenhuma, inconclusivo. A calculadora SRRisk converte o achado em risco percentual.",
+      "image": "f2_s23i1",
+      "imageCaption": "Regras simples da IOTA: características B (verde) e M (vermelho)"
+    },
+    {
+      "question": "Segundo o O-RADS (figura), qual destas lesões anexiais é classificada como de alto risco (≥ 50% de malignidade)?",
+      "options": [
+        "Cisto unilocular com quatro ou mais projeções papilares",
+        "Cisto unilocular simples, anecoico, com 12 cm de diâmetro",
+        "Cisto multilocular de parede lisa < 10 cm, color score 2",
+        "Lesão sólida de contorno liso com color score 1 (sem fluxo)"
+      ],
+      "correctIndex": 0,
+      "explanation": "O-RADS 5 inclui cisto unilocular com ≥ 4 projeções papilares, cisto multilocular com componente sólido e color score 3–4, lesão sólida lisa com color score 4, lesão sólida irregular e ascite e/ou nódulos peritoneais. O cisto unilocular ≥ 10 cm, o multilocular liso < 10 cm com color score 1–3 e a lesão sólida lisa com color score 1 são O-RADS 3 (risco de 1 a < 10%).",
+      "image": "s31i1",
+      "imageCaption": "O-RADS 5 — alto risco"
+    },
+    {
+      "question": "Mulher de 52 anos tem massa anexial classificada como O-RADS 4 (risco intermediário, 10 a < 50%). Qual é a conduta recomendada?",
+      "options": [
+        "Encaminhar a centro de referência em oncologia ginecológica",
+        "Repetir o ultrassom em seis semanas e dar alta se regredir",
+        "Seguimento ultrassonográfico em 3, 6 e 12 meses, se assintomática",
+        "Cirurgia na unidade de ginecologia geral, sem encaminhamento"
+      ],
+      "correctIndex": 0,
+      "explanation": "Achados fisiológicos (O-RADS 1) permitem conduta conservadora — alta ou novo exame em 6 semanas. Achados não fisiológicos passam por avaliação de especialista ou pelo modelo IOTA ADNEX: O-RADS 2, se assintomática, segue em 3-6-12 meses; O-RADS 3 vai para cirurgia em unidade de ginecologia geral; O-RADS 4 e 5 são encaminhados a centro especializado em oncologia ginecológica."
+    },
+    {
+      "question": "Mulher de 35 anos, assintomática, tem cisto ovariano simples de 5 cm à USTV. Qual é a evolução mais provável?",
+      "options": [
+        "Resolução espontânea em até três meses em cerca de 70%",
+        "Persistência com transformação maligna em cerca de 10%",
+        "Crescimento progressivo, exigindo cirurgia em cerca de 50%",
+        "Torção anexial nas primeiras quatro semanas em cerca de 30%"
+      ],
+      "correctIndex": 0,
+      "explanation": "Cisto simples é imagem homogênea, circular e anecoica, que pode ter septos incompletos ou menores que 3 mm e ecos em suspensão. Num estudo com 15.106 mulheres com menos de 50 anos, 2.363 tinham cistos simples < 10 cm, e 70% se resolveram espontaneamente em até 3 meses. Dos 117 que persistiram, 52% eram cistoadenomas serosos e nenhum era câncer."
+    },
+    {
+      "question": "Mulher de 32 anos, teste de gravidez negativo, cisto ovariano de 6 cm sem achados suspeitos na USTV e sem sinais de abscesso. Pelo fluxograma da figura, qual é a conduta?",
+      "options": [
+        "Expectante, com AINE se preciso, e USTV a cada 4 semanas",
+        "Cirurgia imediata pelo tamanho superior a 5 centímetros",
+        "Dosar CA-125 e operar se o valor ultrapassar 35 U/mL",
+        "Alta definitiva, pois cisto sem achado suspeito não evolui"
+      ],
+      "correctIndex": 0,
+      "explanation": "Na pré-menopausa, o primeiro passo é o teste de gravidez (positivo: considerar ectópica). Com teste negativo, achado suspeito na USTV/RM leva a referenciar ao cirurgião ginecologista ou oncoginecologista, e afasta-se abscesso tubo-ovariano (hemograma, PCR). Sem suspeita e com massa ≤ 10 cm: conduta expectante (considerar AINE) e USTV a cada 4 semanas; se persistir além de 12 semanas, referenciar.",
+      "image": "s35i1",
+      "imageCaption": "Fluxograma do manejo na pré-menopausa"
+    },
+    {
+      "question": "Mulher de 63 anos com massa anexial de 6 cm, sem achados suspeitos na USTV, e CA-125 de 78 U/mL. Pelo fluxograma da figura, qual é a conduta?",
+      "options": [
+        "Referenciar ao cirurgião ginecologista ou oncoginecologista",
+        "Repetir a USTV a cada 4 semanas por mais 12 semanas",
+        "Repetir o CA-125 em seis meses, sem novo exame de imagem",
+        "Conduta expectante com anti-inflamatório não hormonal"
+      ],
+      "correctIndex": 0,
+      "explanation": "Na pós-menopausa há três portas para o especialista: massa > 10 cm, achado suspeito na USTV/RM ou CA-125 > 35 U/mL. Só quando as três são negativas faz-se USTV a cada 4 semanas, referenciando se a massa persistir além de 12 semanas. Aqui o CA-125 de 78 U/mL basta para encaminhar — e na pós-menopausa seu valor preditivo positivo é alto.",
+      "image": "s36i1",
+      "imageCaption": "Fluxograma do manejo na pós-menopausa"
+    },
+    {
+      "question": "Qual é uma indicação adequada de ressonância magnética da pelve na avaliação de massa anexial?",
+      "options": [
+        "Diferenciar coágulo de componente sólido visto à USTV",
+        "Rastrear câncer de ovário em mulher assintomática",
+        "Substituir a USTV como primeiro exame na menacme",
+        "Confirmar cisto simples anecoico típico de 3 cm"
+      ],
+      "correctIndex": 0,
+      "explanation": "A USTV é a primeira linha. A RM entra na dúvida diagnóstica e no preparo cirúrgico: teratomas com imagem atípica, coágulos que simulam massa sólida e massas sólidas como fibrotecomas e fibromas. É também a opção quando a via transvaginal não é adequada — adolescentes e mulheres sem penetração vaginal — e o recurso da gestante quando o ultrassom é duvidoso."
+    },
+    {
+      "question": "Em câncer de ovário nos estádios III e IV, qual fator prognóstico depende diretamente da qualidade da cirurgia?",
+      "options": [
+        "Volume de tumor residual após a citorredução",
+        "Nível sérico de CA-125 antes do diagnóstico",
+        "Lateralidade do tumor primário no abdome",
+        "Idade da menarca e número de gestações"
+      ],
+      "correctIndex": 0,
+      "explanation": "Nos estádios avançados, os fatores prognósticos são o tamanho do tumor residual após a cirurgia (≤ 1 cm vs > 1 cm), o estádio (III vs IV), o tipo histológico, a idade, o grau e o acometimento linfonodal — e o residual é o único que a equipe cirúrgica controla. Nos estádios precoces pesam o estádio (IA-IB vs IC vs II), a rotura da cápsula, o grau, a histologia, a idade e a citologia do líquido ascítico."
+    },
+    {
+      "question": "Mulher de 55 anos com massa anexial sólido-cística bilateral, ascite e derrame pleural direito com citologia positiva para células malignas; CA-125 de 250 U/mL. Pela figura, qual é o estádio FIGO?",
+      "options": [
+        "Estádio IVA — derrame pleural com citologia positiva",
+        "Estádio IC3 — células malignas no líquido ascítico",
+        "Estádio IIIC — implantes peritoneais acima de 2 cm",
+        "Estádio IIB — extensão a outros tecidos pélvicos"
+      ],
+      "correctIndex": 0,
+      "explanation": "Derrame pleural com citologia positiva é metástase à distância: estádio IVA. O IVB corresponde a metástases parenquimatosas e extra-abdominais (inclusive linfonodos inguinais). Células malignas no líquido ascítico ou lavado com tumor restrito aos ovários são IC3. Sem citologia positiva o derrame não estadia — e massa + ascite + derrame também é a tríade da síndrome de Meigs.",
+      "image": "s43i1",
+      "imageCaption": "Estadiamento FIGO do câncer de ovário"
+    },
+    {
+      "question": "Mulher de 58 anos com tumor ovariano sólido unilateral, ascite e derrame pleural à direita, citologia negativa e CA-125 elevado. Após a ooforectomia, ascite e derrame desaparecem; a histologia mostra fibroma. Qual é o diagnóstico?",
+      "options": [
+        "Síndrome de Meigs clássica",
+        "Síndrome de pseudo-Meigs",
+        "Tumor de Krukenberg bilateral",
+        "Síndrome de Gorlin-Goltz"
+      ],
+      "correctIndex": 0,
+      "explanation": "A síndrome de Meigs é a tríade tumor ovariano benigno (geralmente fibroma; também tecoma ou tumor de Brenner) + ascite + derrame pleural, em geral à direita, que regride após a retirada do tumor. Mimetiza câncer avançado e pode elevar o CA-125. Na pseudo-Meigs, ascite e derrame acompanham outros tumores, como malignos de ovário ou miomas."
+    },
+    {
+      "question": "Mulher de 48 anos com massas ovarianas sólidas bilaterais; a histologia mostra células produtoras de mucina em 'anel de sinete'. Qual é o sítio primário mais provável?",
+      "options": [
+        "Estômago, cerca de 70% dos casos",
+        "Cólon e reto, cerca de 70% dos casos",
+        "Mama, em cerca de 70% dos casos",
+        "Endométrio, cerca de 70% dos casos"
+      ],
+      "correctIndex": 0,
+      "explanation": "É o tumor de Krukenberg: adenocarcinoma ovariano raro, geralmente bilateral e metastático, com células em anel de sinete. O sítio primário é o trato gastrointestinal — câncer gástrico em cerca de 70% e colorretal em cerca de 20%. Diante de massa ovariana sólida bilateral com esse padrão, investigue o tubo digestivo."
+    },
+    {
+      "question": "Mulher de 27 anos, com desejo reprodutivo, tem carcinoma epitelial de ovário em estádio IA. Qual cirurgia permite preservar a fertilidade?",
+      "options": [
+        "Salpingo-ooforectomia unilateral, preservando útero e ovário contralateral",
+        "Histerectomia total abdominal com salpingo-ooforectomia bilateral",
+        "Quimioterapia neoadjuvante isolada, sem nenhuma abordagem cirúrgica",
+        "Ooforectomia bilateral com preservação apenas do útero e das tubas"
+      ],
+      "correctIndex": 0,
+      "explanation": "O tratamento padrão é laparotomia com histerectomia total abdominal e salpingo-ooforectomia bilateral, mas nos estádios IA a IC a salpingo-ooforectomia unilateral preserva a fertilidade. Depois: IA/IB grau 1, observar; grau 2, observar ou taxano-carboplatina por 3 a 6 ciclos; grau 3 e IC, taxano-carboplatina por 3 a 6 ciclos. Estádios II a IV: citorredução e taxano-carboplatina por 6 ciclos — ou QT neoadjuvante com citorredução de intervalo se não houver condição de cirurgia primária."
+    },
+    {
+      "question": "Qual achado ultrassonográfico aumenta a suspeita de malignidade em massa anexial?",
+      "options": [
+        "Projeções papilares envolvendo mais de 50% da parede interna",
+        "Conteúdo anecoico, homogêneo, com parede fina e lisa",
+        "Septo fino e incompleto, com menos de 3 mm de espessura",
+        "Sombra acústica posterior em nódulo hiperecogênico"
+      ],
+      "correctIndex": 0,
+      "explanation": "São suspeitos: componente sólido, multiloculação, cápsula espessa, diâmetro > 6 cm, septo grosseiro, projeções papilares, ascite e fluxo alterado ao Doppler. Projeções e septos finos isolados têm baixo risco — 39% dessas massas regridem em 12 meses —, mas mais de quatro projeções ou envolvimento de mais de 50% da parede interna elevam o risco. Sombra acústica com nódulo hiperecogênico é o dermoide."
+    }
+  ]
+}

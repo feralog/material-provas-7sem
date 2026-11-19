@@ -1,0 +1,1216 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Coma e Estados Alterados de Consciência</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;450;500;600&display=swap" rel="stylesheet">
+<style>
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0}
+  body{background:#f5f3ef;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+  button{font:inherit;color:inherit;font-family:'IBM Plex Sans',system-ui,sans-serif}
+  a{color:#2b57cc;text-decoration:none}
+  a:hover{color:#1e3f9c;text-decoration:underline}
+  @keyframes qFade{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+  @keyframes qDrawer{from{opacity:0;transform:translateY(-4px)}to{opacity:1;transform:none}}
+
+  /* hovers — no canvas eram style-hover, aqui viram CSS de verdade */
+  .h-dark:hover{background:#2b57cc!important;transform:translateY(-1px)}
+  .h-darkflat:hover{background:#2b57cc!important}
+  .h-line:hover{border-color:#121a2b!important}
+  .h-ink:hover{color:#121a2b!important}
+  .h-opt:not(.locked):hover{border-color:var(--hbd)!important;transform:translateY(-1px)}
+  .h-card:hover{border-color:#121a2b!important;transform:translateY(-2px)}
+
+  /* tipografia do resumo */
+  .rsm{font-size:16.5px;line-height:1.72;color:#2a3141;max-width:64ch}
+  .rsm h2{font-family:'Newsreader',Georgia,serif;font-size:27px;font-weight:500;letter-spacing:-.02em;line-height:1.2;margin:42px 0 14px;padding-top:20px;border-top:1px solid #e4e0d8;text-wrap:pretty}
+  .rsm h2:first-child{margin-top:0;padding-top:0;border-top:0}
+  .rsm h3{font-family:'Newsreader',Georgia,serif;font-size:20px;font-weight:600;letter-spacing:-.01em;margin:28px 0 10px;text-wrap:pretty}
+  .rsm h4{font-family:'IBM Plex Mono',monospace;font-size:11px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:#2b57cc;margin:24px 0 8px}
+  .rsm p{margin:0 0 15px;text-wrap:pretty}
+  .rsm ul,.rsm ol{margin:0 0 15px;padding-left:22px}
+  .rsm li{margin-bottom:7px;text-wrap:pretty}
+  .rsm li>ul,.rsm li>ol{margin:7px 0 0}
+  .rsm strong{font-weight:600;color:#121a2b}
+  .rsm em{font-style:italic}
+  .rsm code{font-family:'IBM Plex Mono',monospace;font-size:.88em;background:#efece5;border:1px solid #e4e0d8;border-radius:5px;padding:1px 5px}
+  .rsm hr{border:0;border-top:1px solid #e4e0d8;margin:32px 0}
+  .rsm blockquote{margin:0 0 18px;padding:15px 18px;background:#f7f6f2;border-left:2.5px solid #2b57cc;border-radius:0 12px 12px 0;font-size:15px;line-height:1.65;color:#39404f}
+  .rsm blockquote p:last-child{margin-bottom:0}
+  .rsm .tbl{overflow-x:auto;margin:0 0 20px;border:1px solid #e4e0d8;border-radius:12px;background:#fff}
+  .rsm table{border-collapse:collapse;width:100%;font-size:14px;line-height:1.5}
+  .rsm th{text-align:left;font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.09em;text-transform:uppercase;color:#8a8578;font-weight:600;padding:11px 14px;background:#faf9f6;border-bottom:1px solid #e4e0d8;white-space:nowrap}
+  .rsm td{padding:11px 14px;border-bottom:1px solid #efece5;vertical-align:top;text-wrap:pretty}
+  .rsm tr:last-child td{border-bottom:0}
+  .rsm .key{background:#f2f6fb;border:1px solid #d6e2f4;border-radius:12px;padding:16px 18px;margin:0 0 18px}
+  .rsm .key>*:last-child{margin-bottom:0}
+
+  /* figuras — no resumo e na questao */
+  .fig{margin:0 0 20px;background:#fff;border:1px solid #e4e0d8;border-radius:14px;overflow:hidden}
+  .fig img{display:block;width:100%;height:auto;cursor:zoom-in}
+  .fig figcaption{font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.06em;color:#8a8578;padding:9px 13px;border-top:1px solid #efece5;background:#faf9f6;text-wrap:pretty}
+  .qfig{margin:0 0 20px}
+
+  /* lightbox */
+  #lb{position:fixed;inset:0;z-index:90;background:rgba(18,26,43,.86);display:none;align-items:center;justify-content:center;padding:24px;cursor:zoom-out}
+  #lb.on{display:flex;animation:qFade .16s ease}
+  #lb img{max-width:100%;max-height:100%;border-radius:10px;box-shadow:0 24px 60px rgba(0,0,0,.5)}
+
+  @media(max-width:560px){
+    .rsm{font-size:16px}
+    .rsm h2{font-size:24px}
+    .home-grid{grid-template-columns:1fr!important}
+  }
+</style>
+</head>
+<body>
+
+<div style="min-height:100vh;background:#f5f3ef;color:#121a2b;font-family:'IBM Plex Sans',system-ui,sans-serif">
+  <header style="position:sticky;top:0;z-index:30;background:rgba(245,243,239,.94);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid #e4e0d8">
+    <div style="max-width:720px;margin:0 auto;padding:12px 16px 10px" id="hdr"></div>
+  </header>
+  <main style="max-width:720px;margin:0 auto;padding:0 16px 80px" id="stage"></main>
+</div>
+<div id="lb"><img alt=""></div>
+
+<script type="text/html" id="resumoSrc"><h2>Consciência e coma: conceitos e anatomia do alerta</h2>
+<p>Não existe uma definição filosófica satisfatória de consciência, e por isso se usa uma definição <strong>operacional</strong>: consciência é o estado de perfeito conhecimento de si próprio e do ambiente. Na beira do leito ela é decomposta em dois componentes, que dependem de estruturas anatômicas diferentes — e é essa separação que organiza todo o raciocínio do coma.</p>
+<div class="tbl"><table><thead><tr><th>Componente</th><th>O que é</th><th>Onde depende</th></tr></thead><tbody><tr><td><strong>Nível de consciência</strong></td><td>grau de alerta comportamental do indivíduo</td><td>interação entre a <strong>formação reticular ativadora ascendente (FRAA)</strong>, na região pontomesencefálica, e o <strong>córtex cerebral como um todo</strong></td></tr><tr><td><strong>Conteúdo de consciência</strong></td><td>soma das funções cognitivas e afetivas: memória, crítica, linguagem, humor</td><td><strong>córtex cerebral</strong></td></tr></tbody></table></div>
+<p>Lesões corticais restritas produzem distúrbios restritos do conteúdo — <strong>afasia, apraxia, agnosia</strong> — sem rebaixar o nível. Para haver rebaixamento por lesão cortical é preciso que a <strong>maior parte dos dois hemisférios</strong> esteja lesada.</p>
+<h3>A prova experimental</h3>
+<p>Em animais, a <strong>secção entre bulbo e medula espinal não altera a vigília</strong>; já a <strong>secção entre os colículos superior e inferior do mesencéfalo</strong> leva a diminuição do nível de consciência. Pequenas lesões mesencefálicas mediais também rebaixam o nível, e a estimulação elétrica da formação reticular pontina alta e mesencefálica desperta o animal. Conclusão: o segmento entre esses dois cortes — ponte alta e mesencéfalo — é o "interruptor" da ativação cortical.</p>
+<p>A <strong>formação reticular</strong> é um agrupamento de subnúcleos cujos neurônios recebem colaterais das vias ascendentes e descendentes e integram enorme quantidade de informação. Ela se projeta rostralmente (via tálamo) e mantém o córtex ativado. Lesões da FRAA <strong>ou de suas projeções rostrais</strong> rebaixam a consciência.</p>
+<h3>Definição de coma</h3>
+<blockquote><p><strong>Coma</strong> é o estado em que o indivíduo não demonstra conhecimento de si próprio nem do ambiente, com ausência ou extrema diminuição do alerta comportamental, permanecendo não responsivo a estímulos internos e externos e <strong>com os olhos fechados</strong>. A causa é lesão ou disfunção da <strong>FRAA</strong>, do <strong>córtex cerebral de forma difusa</strong>, ou de <strong>ambos</strong>.</p></blockquote>
+<p>Uma exceção à regra "um hemisfério só não dá coma" é a <strong>lateralização da consciência</strong>: lesões <strong>extensas do hemisfério dominante</strong> (esquerdo, na maioria) podem rebaixar o nível mesmo sendo unilaterais.</p>
+<h3>Do alerta ao coma: os estados intermediários</h3>
+<p>Entre a vigília (mecanismos de alerta ativos) e o coma (mecanismos inativos) há um contínuo de estados intermediários. A terminologia clínica corrente gradua esse contínuo assim:</p>
+<div class="tbl"><table><thead><tr><th>Estado</th><th>Como se apresenta</th></tr></thead><tbody><tr><td><strong>Vigília / alerta</strong></td><td>acordado, responde de modo adequado e imediato</td></tr><tr><td><strong>Sonolência (obnubilação)</strong></td><td>desperta com estímulo verbal ou leve, responde de modo razoavelmente adequado e volta a adormecer quando deixado sem estímulo</td></tr><tr><td><strong>Torpor (estupor)</strong></td><td>só desperta com estímulos <strong>vigorosos e repetidos</strong>, em geral dolorosos; respostas pobres (gemido, retirada) e retorno ao estado anterior assim que o estímulo cessa</td></tr><tr><td><strong>Coma</strong></td><td>não desperta nem com estímulo doloroso; nenhuma resposta com significado, olhos fechados</td></tr></tbody></table></div>
+<blockquote><p>Como esses rótulos variam de examinador para examinador, na prática o estado é <strong>descrito pelo estímulo necessário e pela resposta obtida</strong> — e quantificado pela escala de Glasgow.</p></blockquote>
+<h3>O coma aparece em três cenários</h3>
+<ul><li><strong>progressão esperada</strong> de doença conhecida (isquemia de tronco, herniação transtentorial);</li><li><strong>evento imprevisto</strong> em paciente com situação conhecida (hemorragia intracraniana no plaquetopênico; anoxia por parada no arrítmico);</li><li><strong>paciente totalmente desconhecido</strong> — o cenário de maior dificuldade diagnóstica.</li></ul>
+<p>Mesmo diante de uma causa previsível, a causa imprevisível tem de ser lembrada: um paciente com AVC isquêmico de tronco pode entrar em coma por uma <strong>hipoglicemia superveniente</strong>.</p>
+<p>O que torna o comatoso difícil é a soma de <strong>inúmeras causas potenciais</strong>, <strong>ausência de história</strong> na maioria das vezes e <strong>pouco tempo</strong> antes que o dano neurológico se torne irreversível.</p>
+<h2>Causas: supratentorial, infratentorial ou difusa</h2>
+<p>Usando a <strong>tenda do cerebelo</strong> como marco, o conteúdo intracraniano ocupa dois compartimentos: o <strong>supratentorial</strong> (diencéfalo e telencéfalo) e o <strong>infratentorial</strong> (tronco encefálico e cerebelo). Daí a classificação de Plum e Posner, que é o objetivo clínico da avaliação — chegar a <strong>um dos três tipos de coma</strong>, deixando a etiologia exata para os exames subsidiários.</p>
+<div class="tbl"><table><thead><tr><th>Tipo</th><th>Subgrupo</th><th>Exemplos</th></tr></thead><tbody><tr><td><strong>Supratentorial</strong></td><td>destrutivas subcorticais e rinencefálicas</td><td><strong>infarto ou hemorragia talâmica</strong> — raras como causa de coma</td></tr><tr><td></td><td>expansivas (massas)</td><td>hemorragias, infartos com edema, tumores, abscessos, trauma craniano</td></tr><tr><td><strong>Infratentorial</strong></td><td>isquêmicas ou destrutivas</td><td>hemorragia pontina, infarto de tronco, enxaqueca vertebrobasilar, desmielinização, tumores, abscessos e granulomas de tronco</td></tr><tr><td></td><td>compressivas</td><td>hemorragia, infarto, tumor e abscesso <strong>cerebelares</strong>; hematoma subdural ou extradural de fossa posterior; aneurisma basilar; tumores extratronco</td></tr><tr><td><strong>Difusa, multifocal e/ou metabólica</strong></td><td>falta de O₂, substrato ou cofatores</td><td>hipóxia, hipoglicemia, deficiência de tiamina</td></tr><tr><td></td><td>doenças de outros órgãos</td><td>insuficiência hepática, renal (urêmica), pulmonar (narcose por CO₂), encefalopatia pancreática; hipófise, tireoide, paratireoide, adrenal; diabetes, porfiria, septicemia</td></tr><tr><td></td><td>intoxicações exógenas</td><td>sedativos, psicotrópicos, ácidos ou precursores de ácidos; penicilina, anticonvulsivantes, esteroides, digitálicos, cimetidina, metais pesados, cianeto, salicilatos, organoclorados, organofosforados</td></tr><tr><td></td><td>hidreletrolíticos e acidobásicos</td><td>hipo e hipernatremia, acidose e alcalose, magnésio, cálcio, hipofosfatemia</td></tr><tr><td></td><td>temperatura</td><td>hipotermia, hipertermia</td></tr><tr><td></td><td>infecção e inflamação do SNC</td><td>meningite, encefalite, encefalomielite parainfecciosa, vasculite, hemorragia subaracnóidea</td></tr><tr><td></td><td>doenças gliais e neuronais</td><td>Creutzfeldt-Jakob, Marchiafava-Bignami, adrenoleucodistrofia, gliomatose, leucoencefalopatia multifocal progressiva</td></tr><tr><td></td><td>outras</td><td>crises e estado pós-ictal; estados delirantes (abstinência, pós-operatório, UTI)</td></tr></tbody></table></div>
+<h4>Por que a lesão destrutiva supratentorial quase nunca dá coma</h4>
+<p>Lesões destrutivas sem efeito de massa (giros do cíngulo, território da cerebral anterior, núcleos da base) excepcionalmente levam ao coma — e quando o fazem o quadro costuma lembrar <strong>mutismo acinético</strong>. A grande exceção é o <strong>tálamo</strong> (infarto ou hemorragia), porque ali se atinge a própria FRAA em nível talâmico.</p>
+<h4>Por que a massa supratentorial dá coma</h4>
+<p>Uma massa supratentorial <strong>não causa coma pela localização</strong> — afeta um só hemisfério e produz sinais focais (hemiparesia, afasia, hemianopsia). Ela leva ao coma quando cresce (pela própria lesão ou pelo edema) e provoca <strong>herniação</strong> do conteúdo supratentorial pelo forame da tenda, <strong>comprimindo a formação reticular bilateralmente</strong>.</p>
+<h2>Condutas imediatas: proteger o encéfalo antes de diagnosticar</h2>
+<p>A avaliação completa do comatoso demora, e o tecido nervoso depende de <strong>três substratos — oxigênio, glicose e cofatores</strong>. Por isso algumas medidas vêm antes do diagnóstico, de forma praticamente automática:</p>
+<ol><li>avaliar possibilidade de <strong>trauma</strong>, despir o paciente e verificar sinais vitais (pulso, PA, temperatura, respiração);</li><li>assegurar <strong>oxigenação</strong>;</li><li>verificar <strong>circulação</strong> e obter acesso venoso;</li><li>colher exames laboratoriais e fazer <strong>ECG</strong>;</li><li>dar <strong>tiamina</strong>;</li><li>dar <strong>glicose hipertônica</strong>;</li><li>considerar <strong>antídotos</strong> (a naloxona entra já no suporte inicial);</li><li>tratar <strong>convulsões</strong>;</li><li>proteger os olhos, reduzir a pressão intracraniana, tratar infecções, manter o equilíbrio acidobásico e hidreletrolítico;</li><li>controlar a agitação, considerar sondas vesical e nasogástrica, <strong>nunca deixar o paciente sozinho</strong> e prevenir as complicações da imobilidade.</li></ol>
+<h3>Tiamina antes da carga de glicose</h3>
+<p>A tiamina (vitamina B1) é cofator de enzimas do metabolismo dos carboidratos. No indivíduo deficiente, uma <strong>carga de glicose pode precipitar a encefalopatia de Wernicke</strong> por deficiência aguda. Dose clássica: <strong>50–100 mg IM ou EV</strong>, obrigatória:</p>
+<ul><li>na suspeita de <strong>alcoolismo ou desnutrição</strong>;</li><li>na <strong>ausência de informações</strong>;</li><li>no <strong>coma com ausência de movimentos oculares</strong>.</li></ul>
+<p>A tríade de Wernicke — <strong>confusão, ataxia e déficit de movimentos oculares</strong> — não é a única apresentação: pode haver hipotensão, hipotermia e até coma, com mortalidade de até 20%. Além do alcoolista, ocorre em nutrição parenteral prolongada, hiperêmese gravídica, anorexia nervosa, jejum prolongado e insuficiência renal crônica.</p>
+<blockquote><p><strong>Atualização:</strong> hoje se usam doses maiores — 100 mg ou mais de forma empírica e, na encefalopatia de Wernicke estabelecida, 200 a 500 mg EV três vezes ao dia.</p></blockquote>
+<h3>Glicose hipertônica</h3>
+<p>Infundem-se <strong>50 mL de SG 50%</strong> (1 mL/kg), o que corrige uma hipoglicemia e fornece substrato energético. O receio de piorar um coma hiperglicêmico é infundado — a glicemia sobe pouco e o quadro muda pouco —, enquanto <strong>deixar de tratar uma hipoglicemia pode ser fatal</strong>. Como a hiperglicemia piora o prognóstico da isquemia cerebral, <strong>se a glicemia capilar confirmar valor adequado, a infusão pode ser evitada</strong>.</p>
+<blockquote><p>Duas pegadinhas: a <strong>ausência de melhora não afasta</strong> hipoglicemia (o paciente pode estar há horas assim, com lesão irreversível), e a <strong>melhora não confirma</strong> hipoglicemia — o SG 50% é hipertônico e pode reduzir a pressão intracraniana.</p></blockquote>
+<p>Sintomas de hipoglicemia: <strong>neurogênicos (autonômicos)</strong> — tremor, palpitação, ansiedade, sudorese, fome, parestesias — e <strong>neuroglicopênicos</strong> — confusão, calor, fraqueza, fadiga, déficit cognitivo, crises e coma. Episódios recentes de hipoglicemia deslocam os limiares para baixo, e o paciente perde os sintomas de alerta (<strong>hipoglicemia não percebida</strong>), comum no diabético em insulina e no insulinoma.</p>
+<h3>Convulsões</h3>
+<p>As crises elevam a pressão intracraniana e o consumo energético cerebral, piorando o prognóstico. <strong>Diazepam 3–10 mg EV lento</strong> (risco de depressão respiratória), seguido de <strong>fenitoína 18 mg/kg EV a no máximo 50 mg/min</strong> (cuidado em cardiopatas e idosos) e manutenção de 3–5 mg/kg/dia (200–300 mg no adulto). O anticonvulsivante <strong>profilático é controverso</strong>; alguns o indicam na hemorragia intracraniana, encefalopatia anóxica e abscesso cerebral.</p>
+<p>A agitação só deve ser controlada após avaliação; muitas vezes basta ambiente calmo e iluminado, e quando preciso usa-se <strong>haloperidol</strong>, por ser pouco sedativo. E os acompanhantes <strong>não devem ser liberados</strong> antes de se obter o máximo de informação.</p>
+<h2>Exame do comatoso: Glasgow, pupilas e respiração</h2>
+<p>A avaliação neurológica tem <strong>cinco itens</strong>: nível de consciência, pupilas e fundo de olho, ritmo respiratório, movimentação ocular extrínseca e padrão de resposta motora.</p>
+<h3>Escala de coma de Glasgow</h3>
+<div class="tbl"><table><thead><tr><th>Parâmetro</th><th>Resposta</th><th>Pontos</th></tr></thead><tbody><tr><td>Abertura ocular</td><td>espontânea</td><td>4</td></tr><tr><td></td><td>ao estímulo verbal</td><td>3</td></tr><tr><td></td><td>ao estímulo doloroso</td><td>2</td></tr><tr><td></td><td>ausente</td><td>1</td></tr><tr><td>Melhor resposta verbal</td><td>orientado</td><td>5</td></tr><tr><td></td><td>confuso</td><td>4</td></tr><tr><td></td><td>palavras inapropriadas</td><td>3</td></tr><tr><td></td><td>sons ininteligíveis</td><td>2</td></tr><tr><td></td><td>ausente</td><td>1</td></tr><tr><td>Melhor resposta motora</td><td>obedece comandos</td><td>6</td></tr><tr><td></td><td>localiza o estímulo</td><td>5</td></tr><tr><td></td><td>retirada inespecífica</td><td>4</td></tr><tr><td></td><td>padrão flexor (decorticação)</td><td>3</td></tr><tr><td></td><td>padrão extensor (descerebração)</td><td>2</td></tr><tr><td></td><td>ausente</td><td>1</td></tr></tbody></table></div>
+<p>O escore vai de <strong>3 a 15</strong>. O estímulo doloroso preferido é a <strong>compressão do leito ungueal</strong> com lápis ou caneta; o estímulo <strong>supraorbitário pode provocar fechamento dos olhos</strong> e atrapalhar a avaliação da abertura ocular.</p>
+<blockquote><p><strong>Complemento (uso clínico corrente):</strong> Glasgow <strong>≤ 8</strong> define coma grave e indica proteger a via aérea. Desde 2018 existe o <strong>Glasgow-P</strong>: subtrai-se do total 1 ponto se uma pupila não reage à luz e 2 se nenhuma reage (escore de 1 a 15).</p></blockquote>
+<h3>Fundo de olho</h3>
+<p>Pode mostrar hemorragias, <strong>papiledema</strong>, retinopatia hipertensiva ou diabética. Mas é <strong>absolutamente contraindicado dilatar a pupila</strong> para fazê-lo: é a análise das pupilas que frequentemente denuncia o agravamento do coma. Se não der para examinar sem midriático, adia-se.</p>
+<h3>Pupilas</h3>
+<p>O diâmetro pupilar resulta do equilíbrio autonômico: o <strong>simpático dilata</strong>, o <strong>parassimpático contrai</strong>. Midríase e miose traduzem predomínio simpático e parassimpático. Como as duas vias têm trajeto longo pelo SNC, o tipo de pupila tem forte valor localizatório.</p>
+<blockquote><p>O <strong>reflexo fotomotor é extremamente resistente a insultos metabólicos e difusos</strong>. Nas encefalopatias metabólicas ele se mantém até fases profundas do coma — logo, <strong>pupila alterada é forte indício de lesão estrutural</strong>.</p></blockquote>
+<p>As exceções metabólicas/tóxicas que alteram a pupila precisam ser decoradas:</p>
+<div class="tbl"><table><thead><tr><th>Situação</th><th>Pupila</th></tr></thead><tbody><tr><td>Atropina / anticolinérgicos</td><td><strong>midriáticas e fixas</strong></td></tr><tr><td>Opiáceos (morfina)</td><td><strong>intensamente mióticas, com reflexo presente</strong> (às vezes só visível com lupa)</td></tr><tr><td>Hipotermia</td><td>podem ficar fixas</td></tr><tr><td>Barbitúrico em dose alta</td><td>fixas</td></tr><tr><td>Encefalopatia anóxica</td><td>midriáticas e fixas</td></tr><tr><td>Hipóxia</td><td>não reativas — em geral dilatadas, mas podem ser médias ou mióticas</td></tr><tr><td>Glutetimida</td><td>médias e fixas</td></tr></tbody></table></div>
+<p>Examina-se o <strong>diâmetro em mm</strong>, a <strong>simetria</strong> (iso ou anisocoria) e os reflexos <strong>direto e consensual</strong>.</p>
+<div class="tbl"><table><thead><tr><th>Tipo</th><th>Aspecto</th><th>Reflexo fotomotor</th><th>Significado</th></tr></thead><tbody><tr><td><strong>Diencefálica / metabólica</strong></td><td>pequenas, simétricas</td><td>presente</td><td>encefalopatia metabólica <strong>ou</strong> disfunção diencefálica bilateral (hipofunção simpática) — indistinguíveis só pela pupila; também no idoso e no sono</td></tr><tr><td><strong>Claude Bernard-Horner</strong></td><td>miose unilateral + semiptose</td><td>presente</td><td>lesão da via simpática <strong>ipsilateral à miose</strong> (do hipotálamo à medula cervical baixa, ou periférica)</td></tr><tr><td><strong>Mesencefálica (médias e fixas)</strong></td><td>4–5 mm</td><td>ausente</td><td>lesão da <strong>porção ventral do mesencéfalo</strong> (simpático e parassimpático)</td></tr><tr><td><strong>Tectal</strong></td><td>5–6 mm, com <strong>hippus</strong>; dilata à dor (reflexo ciliospinal)</td><td>ausente</td><td>lesão do <strong>tecto mesencefálico</strong></td></tr><tr><td><strong>Pontina</strong></td><td><strong>puntiformes</strong></td><td>presente (com lupa)</td><td>lesão da ponte, geralmente <strong>hemorragia pontina</strong></td></tr><tr><td><strong>Uncal (III nervo)</strong></td><td><strong>midríase unilateral intensa</strong></td><td>ausente do lado dilatado</td><td><strong>herniação uncal</strong> comprimindo o oculomotor</td></tr></tbody></table></div>
+<p>Pupilas dilatadas <strong>bilateralmente</strong> indicam herniação bilateral ou encefalopatia anóxica. Anisocoria com pupila fixa <strong>sem</strong> alteração motora nem de consciência obriga a pensar em <strong>colírio midriático</strong> ou doença ocular (uveíte). Anisocoria constitucional existe, mas sempre com reflexo presente — uma fotografia antiga ajuda.</p>
+<h4>Lesão do óptico × lesão do oculomotor</h4>
+<div class="tbl"><table><thead><tr><th>Lesão (olho direito)</th><th>Luz no olho direito</th><th>Luz no olho esquerdo</th></tr></thead><tbody><tr><td><strong>Nervo óptico</strong> (via aferente)</td><td>direto <strong>e</strong> consensual negativos</td><td>direto e consensual normais</td></tr><tr><td><strong>Nervo oculomotor</strong> (via eferente)</td><td>direto negativo; consensual (olho esquerdo) normal</td><td>direto normal; consensual (olho direito) negativo</td></tr></tbody></table></div>
+<h3>Ritmo respiratório</h3>
+<p>É parâmetro de <strong>valor relativo</strong>: o comatoso frequentemente tem doença pulmonar prévia ou complicações próprias do coma, e distúrbios hidreletrolíticos e acidobásicos mexem muito no ritmo. Ainda assim, certos padrões apontam um nível:</p>
+<div class="tbl"><table><thead><tr><th>Padrão</th><th>Como é</th><th>Nível sugerido</th></tr></thead><tbody><tr><td><strong>Apneia pós-hiperventilação</strong></td><td>após 5 respirações profundas, demora até 30 s para voltar a respirar</td><td>disfunção telencefálica difusa (paciente ainda não comatoso)</td></tr><tr><td><strong>Cheyne-Stokes</strong></td><td>apneia alternando com hiperpneia de amplitude <strong>crescente e depois decrescente</strong></td><td><strong>diencéfalo</strong> (também na insuficiência cardíaca e no sono normal)</td></tr><tr><td><strong>Hiperventilação neurogênica central</strong></td><td>hiperventilação mantida, pH alcalino, pCO₂ baixa e pO₂ alta</td><td>descrita para o <strong>mesencéfalo</strong>; hoje atribuída sobretudo a congestão pulmonar de causa cerebral</td></tr><tr><td><strong>Apnêustica</strong></td><td>inspiração rápida com <strong>pausa em inspiração profunda</strong></td><td><strong>ponte baixa</strong></td></tr><tr><td><strong>Periódica de ciclo curto</strong></td><td>1–2 respirações amplas, 2–4 rápidas, 1–2 decrescentes</td><td>hipertensão intracraniana, ponte baixa, fossa posterior</td></tr><tr><td><strong>Atáxica (Biot)</strong></td><td><strong>completamente irregular</strong>, apneias com respirações superficiais e profundas</td><td><strong>bulbo</strong> — não mantém ventilação: <strong>indica ventilação mecânica</strong></td></tr><tr><td><strong>Apneia</strong></td><td>—</td><td>falência bulbar: lesão estrutural grave do bulbo, sedativos, lesão cervical alta associada a TCE</td></tr></tbody></table></div>
+<blockquote><p>Hiperventilação no comatoso raramente é mesencefálica. Antes, procure <strong>edema pulmonar, acidose, intoxicação por AAS, sepse por Gram-negativos</strong> (sobretudo em idosos), <strong>hipóxia, encefalopatia hepática e tireotoxicose</strong>.</p></blockquote>
+<h2>Exame do comatoso: movimentos oculares e resposta motora</h2>
+<h3>Bases anatômicas</h3>
+<p>Os músculos extrínsecos do olho são inervados pelo <strong>III, IV e VI</strong> nervos; no comatoso estudam-se basicamente o <strong>III</strong> (núcleo no mesencéfalo) e o <strong>VI</strong> (núcleo na ponte), interligados pelo <strong>fascículo longitudinal medial (FLM)</strong>. No olhar lateral voluntário para a direita, fibras do <strong>lobo frontal esquerdo (área 8)</strong> descem, cruzam no mesencéfalo baixo e chegam à <strong>formação reticular pontina paramediana (FRPP) direita</strong>, que ativa o <strong>VI direito</strong> (abdução do olho direito) e, pelo FLM, o <strong>III esquerdo</strong> (adução do olho esquerdo). Os movimentos verticais dependem do <strong>tecto mesencefálico</strong>; os de seguimento, de áreas parieto-occipitais (nistagmo optocinético).</p>
+<p>A análise da movimentação ocular extrínseca (MOE) tem cinco etapas: movimentos espontâneos, manobra dos olhos de boneca, manobra oculovestibular, reflexo corneopalpebral e observação das pálpebras.</p>
+<h3>Olhos de boneca (oculocefálico)</h3>
+<p>Giram-se bruscamente a cabeça para os lados e depois em flexão e extensão. Com as vias do tronco íntegras, os olhos se desviam <strong>no sentido oposto ao do giro da cabeça</strong> (cabeça para a direita, olhos para a esquerda), graças às conexões proprioceptivas cervicais e labirínticas com os núcleos do III e VI. Detecta déficits isolados e de movimentos conjugados — mas <strong>a ausência de resposta não prova lesão</strong> do tronco; a prova seguinte é mais fidedigna.</p>
+<h3>Prova oculovestibular (calórica)</h3>
+<p>Faz-se <strong>otoscopia antes</strong> (afastar perfuração), coloca-se a cabeça <strong>30° acima da horizontal</strong> e injetam-se <strong>50–100 mL de água gelada</strong> lentamente num conduto auditivo; após 5 minutos, repete-se do outro lado.</p>
+<ul><li><strong>Consciente:</strong> nistagmo com fase rápida para o lado <strong>oposto</strong> ao estimulado.</li><li><strong>Coma com tronco íntegro:</strong> <strong>desvio tônico conjugado dos olhos para o lado estimulado</strong>.</li><li>Água gelada nos dois ouvidos: desvio para <strong>baixo</strong>; água a 44 °C nos dois: para <strong>cima</strong> (raramente usada).</li></ul>
+<div class="tbl"><table><thead><tr><th>Resposta</th><th>Interpretação</th></tr></thead><tbody><tr><td>conjugada tônica</td><td>ponte e mesencéfalo íntegros</td></tr><tr><td>abdução presente, <strong>adução ausente</strong></td><td>lesão do <strong>FLM</strong> ou do <strong>III nervo</strong></td></tr><tr><td><strong>abdução ausente</strong>, adução presente</td><td>lesão do <strong>VI nervo</strong></td></tr><tr><td>horizontal normal, vertical patológica</td><td>lesão mesodiencefálica</td></tr><tr><td>vertical normal, horizontal patológica</td><td>mesencéfalo íntegro, lesão pontina</td></tr><tr><td>ausente</td><td>lesão intensa do tronco — <strong>ou</strong> drogas vestibulossupressoras (barbitúricos, fenitoína, sedativos, bloqueadores neuromusculares) ou doença vestibular prévia</td></tr><tr><td><strong>nistagmo</strong></td><td>paciente provavelmente consciente — sugere distúrbio psicogênico (não patognomônico)</td></tr></tbody></table></div>
+<h3>Reflexo corneopalpebral e pálpebras</h3>
+<p>O estímulo da córnea provoca fechamento palpebral e desvio dos olhos para cima (<strong>fenômeno de Bell</strong>): testa o <strong>V</strong> (aferente), o <strong>VII</strong> (eferente) e a área tectal. No coma as pálpebras ficam fechadas; <strong>coma de olhos abertos sugere lesão aguda da ponte</strong>, geralmente vascular. Déficit de fechamento sugere lesão do VII; <strong>semiptose</strong>, lesão simpática; <strong>ptose completa</strong>, lesão do III.</p>
+<h3>Achados oculares com valor localizatório</h3>
+<div class="tbl"><table><thead><tr><th>Achado</th><th>Sugere</th></tr></thead><tbody><tr><td>movimentos <strong>erráticos</strong> lentos de um lado a outro</td><td>disfunção supratentorial difusa com <strong>tronco preservado</strong></td></tr><tr><td>desvio conjugado + hemiplegia <strong>contralateral</strong></td><td>lesão <strong>supratentorial</strong> do lado para onde olham — "os olhos olham para a lesão"</td></tr><tr><td>desvio conjugado + hemiplegia <strong>ipsilateral</strong></td><td>lesão <strong>pontina</strong> contralateral à hemiplegia — "os olhos olham para a hemiplegia" (exceção: fase irritativa de hemorragia cerebral profunda)</td></tr><tr><td>movimentos alternantes periódicos (<strong>ping-pong</strong>)</td><td>lesão do verme cerebelar ou supratentorial difusa</td></tr><tr><td>desvio conjugado <strong>para baixo</strong></td><td>hemorragia talâmica, hemorragia subaracnóidea difusa, encefalopatia anóxica ou metabólica</td></tr><tr><td>desvio conjugado <strong>para cima</strong></td><td>encefalopatia anóxica grave; atividade epileptiforme</td></tr><tr><td><strong>bobbing clássico</strong> (abalos para baixo, retorno lento, horizontais abolidos)</td><td>lesão <strong>pontina</strong></td></tr><tr><td>bobbing atípico (horizontais preservados)</td><td>encefalopatia difusa</td></tr><tr><td>bobbing reverso (para cima, retorno lento)</td><td>encefalopatia anóxica</td></tr><tr><td>desvio para baixo na calórica unilateral</td><td>intoxicação por hipnótico-sedativos</td></tr><tr><td>movimentos disjuntivos nas manobras</td><td>lesão de tronco</td></tr><tr><td><strong>síndrome um-e-meio</strong> (abolição horizontal de um olho + déficit de adução do outro)</td><td>lesão <strong>pontina</strong> unilateral de FRPP e FLM</td></tr></tbody></table></div>
+<h4>Dois tipos de coma pela MOE</h4>
+<ul><li><strong>MOE preservada:</strong> lesões estruturais <strong>supratentoriais</strong> (infarto, tumor, hemorragia, abscesso) e causas <strong>metabólicas</strong> (anoxia leve a moderada, hepática, uremia, narcose por CO₂, hipo e hiperglicemia, hiponatremia, hipo e hipercalcemia, pós-ictal, choque séptico) ou <strong>tóxicas</strong> que não deprimem o tronco (etanol, fenotiazínicos, opiáceos, tricíclicos, atropina).</li><li><strong>MOE ausente:</strong> lesões estruturais <strong>infratentoriais</strong> (primárias ou secundárias) e tóxicas por <strong>hipnótico-sedativos</strong>, curare, succinilcolina, anestesia geral, fenitoína, primidona — drogas que deprimem intensamente as vias polissinápticas do tronco.</li></ul>
+<blockquote><p><strong>MOE abolida com pupilas reagentes</strong> é a assinatura do coma por <strong>sedativos</strong>: o reflexo fotomotor resiste ao insulto tóxico-metabólico, as vias oculomotoras polissinápticas não.</p></blockquote>
+<h3>Resposta motora</h3>
+<p>A via motora corre do giro pré-central ao bulbo, onde decussa — por isso é frequentemente atingida nas lesões estruturais. <strong>Sinal motor focal sugere lesão estrutural</strong>, com raras exceções metabólicas: <strong>hipoglicemia, encefalopatia hepática e encefalopatia urêmica</strong>.</p>
+<p>Sistemática: movimentação espontânea; reflexos (presença, simetria, <strong>Babinski</strong>, <strong>grasp</strong>); tono (hipertonia, hipotonia, <strong>paratonia</strong> — resistência que lembra hipertonia plástica mas some ao mover o membro lentamente); resposta à dor no leito ungueal, região supraorbitária ou esterno.</p>
+<div class="tbl"><table><thead><tr><th>Padrão</th><th>Nível sugerido</th></tr></thead><tbody><tr><td>hemiparesia com comprometimento facial</td><td>hemisfério <strong>contralateral</strong></td></tr><tr><td>hemiparesia facial + <strong>paratonia</strong></td><td>hemisfério contralateral com herniação central incipiente, ou lesão frontal predominante</td></tr><tr><td><strong>decorticação</strong> — MS em adução e flexão de cotovelo, punho e dedos; MI em hiperextensão, flexão plantar e rotação interna</td><td>disfunção <strong>supratentorial</strong></td></tr><tr><td><strong>descerebração</strong> — MS em adução, extensão e hiperpronação; MI em extensão e flexão plantar; às vezes opistótono e trismo</td><td><strong>tronco alto</strong> (no animal, entre núcleo rubro e vestibulares; no homem, até diencéfalo)</td></tr><tr><td>extensão de MMSS com flacidez ou flexão fraca de MMII</td><td><strong>tegmento pontino</strong></td></tr><tr><td>flacidez sem resposta</td><td><strong>ponte baixa e bulbo</strong> — ou lesão periférica associada</td></tr></tbody></table></div>
+<h2>Herniações cerebrais e hipertensão intracraniana</h2>
+<p>As hérnias que importam na evolução de uma massa supratentorial são a <strong>central</strong> e a <strong>lateral (uncal)</strong>. Na <strong>central</strong>, o diencéfalo é empurrado para baixo através do forame da tenda. Na <strong>lateral</strong>, a porção medial e anterior do lobo temporal (<strong>uncus</strong>) se insinua entre a borda livre da tenda e o mesencéfalo, comprimindo primeiro o <strong>III nervo</strong> e depois o tronco. Em ambas o dano progride no sentido <strong>rostrocaudal</strong> — como se fossem feitas secções sucessivas: diencéfalo → mesencéfalo → ponte → bulbo.</p>
+<h3>Evolução da hérnia central</h3>
+<div class="tbl"><table><thead><tr><th>Etapa</th><th>Consciência e respiração</th><th>Pupilas</th><th>MOE</th><th>Motricidade</th></tr></thead><tbody><tr><td><strong>Diencefálica</strong></td><td>desatenção e sonolência progressivas; <strong>Cheyne-Stokes</strong></td><td><strong>pequenas e reagentes</strong></td><td><strong>preservada</strong></td><td>paratonia; flexor no MS e extensor no MI</td></tr><tr><td><strong>Mesencefálica</strong></td><td>coma</td><td><strong>médias e fixas</strong></td><td>déficit de adução</td><td><strong>extensora nos quatro membros</strong></td></tr><tr><td><strong>Pontina</strong></td><td>ritmo irregular</td><td>médias e fixas</td><td>abolida</td><td>extensor nos MMSS, ausente ou fracamente flexor nos MMII</td></tr><tr><td><strong>Bulbar</strong></td><td><strong>apneia</strong></td><td>médias e fixas</td><td>abolida</td><td>ausente</td></tr></tbody></table></div>
+<blockquote><p>A <strong>etapa diencefálica é o aviso de que o processo ainda é reversível</strong> — e é habitualmente negligenciada. Sinais mesencefálicos já podem indicar lesão irreversível. Se a massa estiver em <strong>área silenciosa</strong> (lobo frontal ou temporal direito), a fase diencefálica pode ser a primeira manifestação e o paciente é rotulado, erroneamente, como <strong>encefalopatia difusa</strong>.</p></blockquote>
+<h3>Evolução da hérnia lateral (uncal)</h3>
+<p>Massas no lobo temporal ou extra-axiais sobre ele comprimem o <strong>III nervo ipsilateral</strong>: <strong>midríase intensa</strong> primeiro, depois ptose e déficit de adução. Em seguida o mesencéfalo é comprimido e a consciência cai. Pode surgir <strong>hemiplegia ipsilateral à massa</strong>, porque o <strong>pedúnculo cerebral oposto é empurrado contra a borda da tenda</strong> (o chamado fenômeno de Kernohan — um falso sinal localizatório). Daí em diante a evolução é igual à central.</p>
+<blockquote><p>A etapa uncal pode ser <strong>lenta (horas)</strong>, mas atingida a fase seguinte a evolução é <strong>fulminante</strong>.</p></blockquote>
+<h3>Conduta</h3>
+<ul><li>Diagnóstico: <strong>tomografia de crânio</strong>; na falta, arteriografia.</li><li><strong>Punção lombar é contraindicada</strong> em qualquer herniação, mesmo incipiente — pode precipitar progressão rápida.</li><li>Medidas para reduzir a pressão intracraniana e ganhar <strong>4 a 8 horas</strong> até o tratamento definitivo (às vezes cirúrgico):</li><ul><li>hiperventilação assistida com <strong>pCO₂ de 25–30 mmHg</strong>;</li><li><strong>manitol 0,5–1 g/kg EV</strong> em 10–20 min, repetível se piorar (com controle hidreletrolítico);</li><li><strong>dexametasona 10 mg EV</strong>, depois 4 mg EV de 6/6 ou 4/4 h (furosemida 20–40 mg EV se houver aumento do volume hídrico);</li><li><strong>cabeceira elevada a 30–45°</strong>.</li></ul></ul>
+<blockquote><p><strong>Atualização:</strong> a hiperventilação hoje é usada só como ponte temporária, com alvo de <strong>pCO₂ 30–35 mmHg</strong> (abaixo disso há risco de isquemia por vasoconstrição). O corticoide serve ao <strong>edema vasogênico</strong> de tumor e abscesso, mas <strong>não</strong> deve ser usado no trauma craniano nem no AVC.</p></blockquote>
+<h2>Estrutural × metabólico: chegando ao diagnóstico</h2>
+<h3>Coma infratentorial</h3>
+<p>A FRAA é atingida por processo na fossa posterior, intrínseco ou extrínseco ao tronco.</p>
+<ul><li><strong>Lesões destrutivas</strong> (quase sempre vasculares — isquemia ou hemorragia): rebaixamento com <strong>alteração pupilar e da MOE já no início</strong>, sinais motores em geral <strong>bilaterais</strong> e ritmo respiratório de tronco. Tumores, abscessos e granulomas de tronco costumam dar coma só em fase terminal, já diagnosticados.</li><li><strong>Lesões compressivas</strong> (extratronco): instalação <strong>mais lenta</strong>, com sintomas premonitórios — <strong>cefaleia, náusea, vômitos, vertigem</strong> —, depois alteração respiratória, pupilas mióticas reagentes ou médias fixas, alteração dos movimentos horizontais e sinais motores bilaterais. <strong>Não há a deterioração rostrocaudal</strong> da hérnia supratentorial, e sinais de compressão pontina aparecem <strong>antes</strong> do rebaixamento profundo: <strong>paralisia do olhar conjugado para o lado da lesão e do VI e VII ipsilaterais</strong> (dano ao centro pontino do olhar horizontal, ao núcleo do VI e ao joelho do facial no assoalho do IV ventrículo). É o quadro típico da <strong>hemorragia cerebelar</strong>.</li><li><strong>Herniação transtentorial ascendente:</strong> estruturas da fossa posterior sobem pela tenda e comprimem o tecto mesencefálico — rebaixamento, <strong>olhos desviados para baixo e paralisia do olhar vertical para cima</strong>. Favorecida por <strong>derivação ventricular</strong> em massa de fossa posterior com hidrocefalia. A TC mostra <strong>obliteração das cisternas quadrigeminais</strong>.</li><li><strong>Herniação pelo forame magno:</strong> comprime o bulbo e causa <strong>colapso cardiorrespiratório</strong>, com coma por mecanismo anóxico.</li></ul>
+<p>Outros pontos: <strong>bobbing clássico</strong> sugere lesão infratentorial; quem chega em fase tardia de herniação supratentorial tem semiologia de tronco e é impossível distinguir lesão primária de secundária sem história; hemorragias e abscessos supratentoriais podem <strong>romper para o ventrículo</strong> e simular lesão pontina sem passar pela evolução rostrocaudal — a pista são os sinais iniciais supratentoriais (hemiparesia, afasia, hemianopsia).</p>
+<h3>Coma difuso, multifocal ou metabólico</h3>
+<p>Há depressão seletiva de funções em diferentes níveis, com funções do mesmo nível preservadas. O perfil é:</p>
+<ul><li>instalação <strong>gradual</strong>, muitas vezes precedida de <strong>confusão e agitação</strong>;</li><li><strong>sinais motores não lateralizados</strong> (exceções: hipoglicemia, encefalopatia hepática e urêmica, que podem dar até hemiplegia); posturas e Babinski, quando presentes, <strong>simétricos</strong>;</li><li>fenômenos motores de disfunção difusa: <strong>mioclonias, tremores, asterixe</strong>;</li><li><strong>pupilas normais</strong>, no máximo mióticas <strong>com reflexo presente</strong>;</li><li>respiração muito variável (Cheyne-Stokes, hiperventilação, irregular, apneia nas intoxicações);</li><li><strong>MOE normal</strong>, exceto nos hipnótico-sedativos.</li></ul>
+<p>Duas armadilhas: a <strong>fase diencefálica</strong> de uma massa em área silenciosa e as <strong>lesões talâmicas</strong> podem simular encefalopatia difusa.</p>
+<h4>Investigação</h4>
+<p>História cuidadosa, exame físico geral e exames: glicemia, hemograma, eletrólitos (Na, K, Cl, Ca, Mg, PO₄), ureia e creatinina, gasometria, toxicológico (sangue, urina, suco gástrico — muitas drogas não são dosáveis), provas hepáticas com <strong>amônia</strong>, coagulograma, tireoide e adrenal, culturas, sorologias, <strong>EEG</strong> e <strong>líquor</strong>.</p>
+<blockquote><p><strong>Osmolaridade calculada</strong> = 2 × Na + glicemia/18 + ureia/6 (normal 285–295 mOsm/kg). Medida bem acima da calculada (<strong>gap osmolar</strong>) sugere toxina de baixo peso molecular: <strong>metanol</strong>, acetona, isopropanol, etanol.</p></blockquote>
+<p>O <strong>EEG</strong> pode mostrar padrão de encefalopatia metabólica (hepática), encefalite (herpética), <strong>estado de mal epiléptico não convulsivo</strong> ou sofrimento hemisférico unilateral — e, se normal, aponta para quadro psiquiátrico.</p>
+<h3>Algoritmo de abordagem</h3>
+<ol><li><strong>Suporte de vida:</strong> intubação, acesso venoso, PA, pulso, temperatura, respiração, monitorização cardíaca, <strong>naloxona</strong>.</li><li><strong>História rápida.</strong></li><li><strong>Preservar o SNC:</strong> oxigênio, <strong>tiamina, glicose</strong>.</li><li>História completa, exame geral e neurológico — e então três trilhas:</li></ol>
+<div class="tbl"><table><thead><tr><th>Suspeita</th><th>Primeiro exame</th><th>Desdobramento</th></tr></thead><tbody><tr><td><strong>massa ou hemorragia</strong></td><td><strong>TC de crânio</strong></td><td>massa presente → neurologia, tratar HIC, considerar angiografia; massa ausente → <strong>líquor para afastar hemorragia</strong> (sangue → mesma conduta da massa; sem sangue → avaliação tóxico-metabólica)</td></tr><tr><td><strong>meningite</strong></td><td><strong>líquor</strong> — com <strong>TC antes</strong> se houver dúvida no exame ou história de massa</td><td>meningite → tratamento específico; outra infecção → avaliação tóxico-metabólica e considerar TC</td></tr><tr><td><strong>tóxico-metabólica ou hipotermia</strong></td><td>avaliação tóxico-metabólica</td><td>diagnóstico → tratamento; sem diagnóstico → <strong>TC ou líquor em 4 horas</strong></td></tr></tbody></table></div>
+<p>Sem diagnóstico ao fim das trilhas: história mais detalhada e consulta neurológica.</p>
+<h4>Lesões que a TC pode não mostrar</h4>
+<p>Quando a clínica sugere lesão estrutural e a TC é normal, lembrar: lesões de <strong>fossa posterior</strong> (infarto ou hemorragia de tronco, tumores, hemorragias cerebelares baixas), <strong>hematoma subdural crônico isodenso bilateral</strong>, <strong>encefalite herpética</strong> e <strong>AVC isquêmico extenso de cerebral média nas primeiras 8 horas</strong>. Avisar o radiologista ajuda; a RM ajuda, mas é demorada no paciente grave.</p>
+<h2>Estados que sucedem ou imitam o coma</h2>
+<div class="tbl"><table><thead><tr><th>Estado</th><th>Olhos abertos / ciclo sono-vigília</th><th>Percepção</th><th>Movimento</th><th>Lesão típica</th></tr></thead><tbody><tr><td><strong>Estado vegetativo</strong></td><td>sim / sim</td><td><strong>ausente</strong></td><td>reflexo apenas</td><td>cortical difusa com tronco funcionante</td></tr><tr><td><strong>Minimamente consciente</strong></td><td>sim / sim</td><td><strong>mínima, mas reprodutível</strong></td><td>intencional, inconsistente</td><td>variada, menos grave</td></tr><tr><td><strong>Mutismo acinético</strong></td><td>sim / sim; explora o ambiente com o olhar</td><td>parece presente</td><td><strong>não se move nem fala</strong></td><td>frontal medial, reticulocortical, hidrocefalia</td></tr><tr><td><strong>Locked-in</strong></td><td>sim / sim</td><td><strong>plena</strong></td><td>só <strong>olhos verticais</strong> e piscar</td><td><strong>ponte ventral</strong></td></tr><tr><td><strong>Retirada psíquica</strong></td><td>resiste à abertura</td><td>presente</td><td>tono normal, respostas imprevisíveis</td><td>nenhuma — EEG normal</td></tr><tr><td><strong>Morte encefálica</strong></td><td>não / não</td><td>ausente</td><td>só respostas medulares</td><td>perda de toda a função encefálica</td></tr></tbody></table></div>
+<h3>Estado vegetativo persistente (EVP)</h3>
+<p>Termo criado por <strong>Jennett e Plum (1972)</strong>. Seja qual for a causa do coma — salvo lesão bilateral do III nervo —, <strong>duas a três semanas</strong> depois o paciente começa a <strong>abrir os olhos e recupera o ciclo vigília-sono</strong>, mas os olhos <strong>não se orientam</strong> para o estímulo (podem simular seguimento). É <strong>vigília sem percepção</strong> do ambiente. A descerebração pode dar lugar a respostas flexoras lentas e distônicas; surgem <strong>grasp</strong> intenso, mastigação e deglutição; sons ininteligíveis à dor, nunca com significado, e a maioria não vocaliza.</p>
+<ul><li>O diagnóstico é <strong>clínico</strong> — nenhum exame laboratorial, EEG ou de imagem o define.</li><li>Quem recupera a percepção costuma <strong>emergir direto do coma</strong>; quem assume o quadro de EVP normalmente não se recupera, embora haja recuperação descrita após até <strong>8 semanas</strong>.</li><li>A <strong>ausência do potencial evocado somatossensitivo</strong> no córtex parietal contralateral parece correlacionar-se com mau prognóstico.</li></ul>
+<blockquote><p><strong>Complemento (terminologia atual):</strong> a força-tarefa americana de 1994 chamou de <em>persistente</em> o estado vegetativo com mais de <strong>1 mês</strong> e de <em>permanente</em> o que dura mais de <strong>3 meses</strong> após lesão não traumática ou <strong>12 meses</strong> após trauma. A diretriz de 2018 prefere "estado vegetativo <strong>crônico</strong>", porque há recuperações tardias, e muitos autores usam "<strong>síndrome da vigília não responsiva</strong>".</p></blockquote>
+<h3>Estado minimamente consciente</h3>
+<p>Conceito mais recente, definido pelo consenso de Aspen (2002). O paciente tem evidência <strong>mínima, mas definida e reprodutível</strong>, de percepção de si ou do ambiente: <strong>seguir um comando simples</strong>, responder sim/não (gesto ou fala, mesmo de modo pouco confiável), verbalizar algo inteligível, ou comportamento intencional como <strong>seguimento visual sustentado</strong>, sorriso ou choro apropriados ao contexto e alcançar objetos. A diferença para o estado vegetativo <strong>não é o ciclo vigília-sono nem os reflexos de tronco</strong> (ambos têm), e sim esses sinais de percepção. Sai-se dele quando volta a <strong>comunicação funcional</strong> ou o <strong>uso funcional de objetos</strong>. O prognóstico é melhor que o do vegetativo.</p>
+<h3>Mutismo acinético</h3>
+<p>Paciente <strong>alerta</strong>, com ciclo vigília-sono, <strong>explorando o campo visual com os olhos</strong>, mas incapaz de se mover, vocalizar ou ter reação faciovocal à dor — e <strong>sem grandes sinais de lesão piramidal</strong>. Decorre de lesão das vias reticulocorticais ou límbico-corticais:</p>
+<ul><li>lesões <strong>frontais basais e mediais</strong> (córtex orbital, área septal, giro do cíngulo);</li><li>lesões pequenas da FRAA paramediana do diencéfalo posterior e mesencéfalo adjacente;</li><li><strong>hidrocefalia subaguda</strong>.</li></ul>
+<p>Admite-se lesão do <strong>trato mesencéfalo-frontal dopaminérgico</strong>, daí o uso de <strong>agonistas dopaminérgicos (bromocriptina)</strong>, às vezes com bom resultado.</p>
+<h3>Estado confusional agudo (delirium)</h3>
+<p>Alteração do estado mental em que o <strong>déficit mais saliente é o da atenção</strong>. Em geral sem sinais focais motores ou sensitivos, exceto tremor, mioclonias e asterixe. Três aspectos fundamentais:</p>
+<ol><li>distúrbio de vigilância com <strong>aumento da distração</strong>;</li><li>incapacidade de manter a <strong>coerência do pensamento</strong>;</li><li>incapacidade de executar uma <strong>sequência de movimentos com objetivo</strong>.</li></ol>
+<p>Somam-se ilusões e alucinações, desorientação, déficit de memória, anomia discreta, disgrafia, discalculia, déficit construtivo e falha de julgamento; o paciente pode estar apático ou agitado. A atenção depende da <strong>FRAA</strong> (tônus global) e do <strong>neocórtex rostral</strong> (seletividade, atuando sobre o tálamo) — sobretudo pré-frontal e parietal posterior <strong>direitos</strong> e temporal ventral.</p>
+<p><strong>Causas:</strong> encefalopatias tóxico-metabólicas; doenças multifocais (meningite, encefalite, anoxia, vasculite, CIVD, embolia gordurosa, piora aguda de demência); trauma craniano; epilepsia (pós-ictal, crises parciais complexas); massas, sobretudo <strong>hematoma subdural crônico</strong>; lesões focais vasculares (parietal posterior direito, pré-frontal direito, giros para-hipocampal-fusiforme-lingual).</p>
+<p><strong>Diferenciais:</strong> psicose de Korsakoff, afasia de Wernicke, depressão, <strong>demência</strong> (o critério é o <strong>tempo de evolução</strong>; o demente tem mais predisposição a confusão aguda, reversível ao corrigir a causa) e <strong>psicose aguda</strong> (alucinações mais <strong>auditivas</strong> e <strong>EEG normal</strong>).</p>
+<blockquote><p>Termos como "psicose orgânica" e "síndrome cerebral orgânica aguda" caíram em desuso. Já <strong>delirium</strong> é hoje o termo <strong>preferido</strong> (DSM-5) — sinônimo de estado confusional agudo.</p></blockquote>
+<h3>Síndrome do encarceramento (locked-in, estado deeferentado)</h3>
+<p>Lesão — geralmente aguda — da <strong>porção ventral da ponte</strong> interrompe as fibras motoras corticais: o paciente fica <strong>tetraplégico</strong> e não move lábios nem língua (fibras para os núcleos dos nervos cranianos), com <strong>déficit do olhar horizontal</strong>, conseguindo apenas <strong>elevar e abaixar os olhos</strong>. Mas está <strong>consciente</strong>, porque a <strong>porção dorsal da ponte, onde está a FRAA, permanece íntegra</strong>. A comunicação é possível por código de letras com o olhar. Quadros parecidos ocorrem em lesões periféricas graves (miastenia, polirradiculoneurite).</p>
+<blockquote><p><strong>Complemento:</strong> a causa clássica é a <strong>trombose da artéria basilar</strong>, e o EEG é normal. O locked-in pode simular morte encefálica, mas os <strong>reflexos de tronco estão presentes</strong>.</p></blockquote>
+<h3>Retirada psíquica</h3>
+<p>Alterações psíquicas involuntárias ou voluntárias (simulação, em geral com ganho secundário) imitam o coma. Pistas: <strong>tono normal</strong>, posturas não usuais, mudança de postura quando sozinho, resistência à movimentação passiva, ausência de reflexos patológicos, <strong>resistência à abertura palpebral</strong>, olhos forçadamente fechados, <strong>queda rápida da pálpebra</strong> após abertura (no coma ela cai lentamente), respostas imprevisíveis às manobras oculocefálicas, <strong>nistagmo na prova calórica</strong>, pupilas normais ou dilatadas (cicloplégicos). Na dúvida, <strong>o EEG é o melhor exame — será normal</strong>.</p>
+<h3>Catatonia</h3>
+<p>Síndrome erroneamente tomada como sinônimo de doença psiquiátrica. Inclui distúrbios de postura (rigidez, às vezes <strong>cérea</strong>), retirada psicossocial (mutismo, negativismo), excitação e comportamento repetitivo (estereotipias, maneirismos, ecolalia, ecopraxia). Exige investigação clínica e de imagem, porque os diferenciais incluem doenças psiquiátricas (esquizofrenia, transtornos afetivos), neurológicas (núcleos da base, sistema límbico e lobos temporais — encefalite herpética —, diencéfalo), metabólicas (cetoacidose, hipoglicemia, porfiria aguda intermitente, encefalopatia hepática, homocistinúria, pelagra, hipercalcemia), tóxicas (etanol, mescalina, cocaína, fenciclidina, anfetamina) e farmacológicas (AAS, ACTH, neurolépticos).</p>
+<h2>Morte encefálica</h2>
+<p>O diagnóstico de morte encefálica é aceito como <strong>confirmação de morte</strong>: a função dos órgãos não se mantém por muito tempo, quaisquer que sejam as medidas. É diferente do estado vegetativo, em que as funções vegetativas seguem ativas e a sobrevida pode ser muito longa. O diagnóstico justifica suspender medicações e aparelhos e liberar para <strong>doação de órgãos</strong>.</p>
+<p>Duas vertentes conceituais:</p>
+<ul><li><strong>Americana</strong> (Harvard 1968 → NIH 1971 → Comissão Presidencial 1981): morte é a <strong>cessação irreversível de todas as funções do encéfalo, incluindo o tronco</strong>. Perder só a função cerebral superior não é morte — o encéfalo é o organizador de todas as funções do corpo.</li><li><strong>Britânica</strong> (Royal Colleges, 1976): <strong>cessação irreversível das funções do tronco</strong>, diagnosticada clinicamente, sem exame obrigatório.</li></ul>
+<p>Três princípios: <strong>irreversibilidade do coma</strong>, <strong>ausência de reflexos de tronco</strong> e <strong>ausência de atividade cortical</strong>.</p>
+<h3>Critérios clínicos (protocolo clássico)</h3>
+<ol><li>Diagnóstico da doença que causou o quadro.</li><li>Afastar situações que simulem morte encefálica.</li><li>Exame neurológico:</li><ul><li><strong>Glasgow 3</strong>, desconsiderando respostas medulares;</li><li><strong>pupilas médias ou midriáticas (4–5 mm), sem fotomotor</strong> — <strong>pupilas pequenas sugerem intoxicação</strong>;</li><li><strong>oculocefálico e oculovestibular negativos</strong>;</li><li><strong>sem resposta motora à dor</strong>, podendo haver <strong>respostas medulares</strong>;</li><li>reflexos <strong>corneano, mandibular, faríngeo</strong> e axiais da face ausentes; o cutaneoplantar é irrelevante;</li><li><strong>teste de apneia</strong> obrigatório, até <strong>paCO₂ de 55–60 mmHg</strong>, sem movimentos respiratórios.</li></ul><li>Tempo mínimo de observação: <strong>6 horas</strong>.</li></ol>
+<h3>O que simula ou atrapalha</h3>
+<div class="tbl"><table><thead><tr><th>Situação</th><th>Detalhe</th></tr></thead><tbody><tr><td>Intoxicações</td><td>sobretudo <strong>barbitúricos</strong> (&gt; 10 mg/dL) e <strong>bloqueadores neuromusculares</strong> — dosar na dúvida</td></tr><tr><td><strong>Hipotermia</strong></td><td>temperatura deve estar <strong>acima de 35 °C</strong></td></tr><tr><td>Choque</td><td>PA sistólica ≥ 95 mmHg</td></tr><tr><td>Encefalite de tronco</td><td>reflexos de tronco ausentes, mas há atividade cortical</td></tr><tr><td>Trauma facial múltiplo</td><td>dificulta o exame</td></tr><tr><td><strong>Locked-in</strong></td><td>parece coma, mas os <strong>reflexos de tronco estão presentes</strong></td></tr><tr><td>Alterações pupilares prévias</td><td>colírios, drogas, cirurgia, trauma</td></tr><tr><td>Distúrbio metabólico grave</td><td>—</td></tr><tr><td>Criança &lt; 4 anos</td><td>mais resistente ao trauma — observação maior e dois médicos</td></tr><tr><td>Vítima de homicídio</td><td>maiores problemas médico-legais</td></tr></tbody></table></div>
+<h3>Exames complementares</h3>
+<ul><li><strong>Ausência de atividade:</strong> EEG, potencial evocado, vasopressina.</li><li><strong>Ausência de fluxo:</strong> <strong>angiografia dos quatro vasos</strong> (carótidas e vertebrais) por cateterismo — <strong>o exame mais específico</strong>; angiografia isotópica, TC com contraste, SPECT, Doppler transcraniano.</li></ul>
+<blockquote><p><strong>Atualização — Brasil, Resolução CFM 2.173/2017</strong> (o protocolo clássico acima trata o exame complementar como apenas confirmatório): pré-requisitos de <strong>temperatura &gt; 35 °C</strong>, <strong>SatO₂ &gt; 94%</strong> e <strong>PAS ≥ 100 mmHg ou PAM ≥ 65 mmHg</strong> no adulto, após <strong>no mínimo 6 horas</strong> de tratamento e observação hospitalar (<strong>24 h</strong> se a causa for encefalopatia hipóxico-isquêmica); <strong>dois exames clínicos por médicos diferentes</strong>, com intervalo mínimo de <strong>1 hora</strong> acima de 2 anos de idade; <strong>um teste de apneia</strong> (PaCO₂ &gt; 55 mmHg); e <strong>exame complementar obrigatório</strong>.</p></blockquote></script>
+<!-- Tutor local: define window.DEEPSEEK_KEY. O arquivo NAO vai para o repositorio,
+     entao online ele da 404 e o chat simplesmente nao aparece. -->
+<script src="../deepseek_key.js"></script>
+<script>
+/* ─────────────────────────────────────────────────────────────────────────────
+   CONTRATO DE DADOS — para adaptar a outro tema, troque apenas QUIZ e o resumo.
+   Cada item: { question, options[2..6], correctIndex, explanation }
+   ──────────────────────────────────────────────────────────────────────────── */
+var TITLE      = "Coma e Estados Alterados de Consciência";
+var EYEBROW    = "Neurologia · Emergência neurológica";
+var DISCIPLINA = "Neurologia";   // pasta de origem (PED, GO...) — usada pelo índice
+var SUBTITLE = "Do Glasgow às herniações: examinar, localizar e conduzir o coma";
+var INTRO    = "Nível e conteúdo da consciência, causas supratentoriais, infratentoriais e metabólicas, condutas imediatas, exame do comatoso (Glasgow, pupilas, respiração, motricidade ocular e motora), herniações, estado vegetativo, locked-in, delirium e morte encefálica.";
+
+var QUIZ = [
+  {
+    "question": "Os dois componentes da consciência dependem de estruturas anatômicas diferentes. Qual associação está correta?",
+    "options": [
+      "Nível: FRAA e córtex como um todo; conteúdo: córtex cerebral",
+      "Nível: córtex cerebral isolado; conteúdo: FRAA e tálamo",
+      "Nível: cerebelo e bulbo; conteúdo: sistema límbico e FRAA",
+      "Nível: hipotálamo e bulbo; conteúdo: núcleos da base"
+    ],
+    "correctIndex": 0,
+    "explanation": "O nível de consciência (grau de alerta comportamental) depende da interação entre a formação reticular ativadora ascendente (FRAA), na região pontomesencefálica, e o córtex como um todo. O conteúdo (memória, crítica, linguagem, humor) depende do córtex: lesões corticais restritas causam afasia, apraxia ou agnosia sem rebaixar o nível. Em animais, a secção entre os colículos mesencefálicos rebaixa a consciência; a secção entre bulbo e medula não altera a vigília."
+  },
+  {
+    "question": "Um paciente com glioma frontal direito evolui com hemiparesia esquerda e, dias depois, entra em coma. Por que uma massa supratentorial unilateral chega a causar coma?",
+    "options": [
+      "Ao crescer, provoca herniação e comprime a formação reticular no tronco",
+      "Por destruir o córtex de um hemisfério, o que já basta para causar o coma",
+      "Por invadir o cerebelo e comprimir o quarto ventrículo de forma direta",
+      "Por desencadear crises convulsivas contínuas que bloqueiam o córtex"
+    ],
+    "correctIndex": 0,
+    "explanation": "Uma massa supratentorial não causa coma pela localização, pois afeta um só hemisfério e gera sinais focais (hemiparesia, afasia, hemianopsia). O coma surge quando a lesão ou o edema ao redor aumenta de volume e provoca herniação pelo forame da tenda do cerebelo, comprimindo a formação reticular bilateralmente. Para rebaixar o nível por lesão cortical seria preciso lesar a maior parte dos dois hemisférios."
+  },
+  {
+    "question": "Um paciente só abre os olhos e geme diante de estímulos dolorosos vigorosos e repetidos, voltando a não responder assim que o estímulo cessa. Como se classifica esse nível de consciência?",
+    "options": [
+      "Torpor — desperta só com estímulo intenso e repetido",
+      "Sonolência — desperta com estímulo verbal ou leve",
+      "Coma — não desperta nem mesmo com estímulo doloroso",
+      "Estado vegetativo — olhos abertos sem percepção"
+    ],
+    "correctIndex": 0,
+    "explanation": "No torpor (estupor) o paciente só desperta com estímulos vigorosos e repetidos, em geral dolorosos, com respostas pobres, e retorna ao estado anterior quando o estímulo cessa. Na sonolência (obnubilação) ele desperta com estímulo verbal ou leve e responde de modo adequado; no coma não desperta nem à dor e permanece de olhos fechados. Como esses rótulos variam entre examinadores, vale descrever o estímulo necessário e a resposta obtida e quantificar pela escala de Glasgow."
+  },
+  {
+    "question": "Um homem é trazido em coma, sem acompanhante e sem informações, com hálito etílico. Por que a tiamina deve ser dada antes ou junto da glicose hipertônica?",
+    "options": [
+      "A carga de glicose no deficiente pode precipitar a encefalopatia de Wernicke",
+      "A tiamina potencializa o efeito da glicose e corrige a hipoglicemia mais rápido",
+      "A tiamina reduz a pressão intracraniana elevada pela glicose hipertônica",
+      "A glicose isolada pode precipitar síndrome de abstinência e convulsões"
+    ],
+    "correctIndex": 0,
+    "explanation": "A tiamina (vitamina B1) é cofator de enzimas do metabolismo dos carboidratos; no indivíduo deficiente, uma carga de glicose pode precipitar a encefalopatia de Wernicke por deficiência aguda. Ela é obrigatória na suspeita de alcoolismo ou desnutrição, na falta de informações e no coma com ausência de movimentos oculares. A tríade clássica é confusão, ataxia e déficit de movimentos oculares, mas pode haver hipotensão, hipotermia e coma, com mortalidade de até 20%."
+  },
+  {
+    "question": "Sobre a infusão de 50 mL de glicose a 50% no paciente em coma de causa desconhecida, qual afirmação está correta?",
+    "options": [
+      "Pode ser dispensada se a glicemia capilar mostrar valor adequado",
+      "A melhora do nível de consciência após a infusão confirma hipoglicemia",
+      "A ausência de melhora após a infusão afasta a hipoglicemia como causa",
+      "Está contraindicada antes do resultado da glicemia sérica do laboratório"
+    ],
+    "correctIndex": 0,
+    "explanation": "Deixar de tratar uma hipoglicemia pode ser fatal, e o receio de piorar um coma hiperglicêmico é infundado. Mas a hiperglicemia piora o prognóstico da isquemia cerebral, então, se a glicemia capilar confirmar valor adequado, a infusão pode ser evitada. A ausência de melhora não afasta hipoglicemia (o paciente pode já ter lesão irreversível), e a melhora não a confirma, porque o soro hipertônico também reduz a pressão intracraniana."
+  },
+  {
+    "question": "Após trauma craniano, um paciente abre os olhos apenas à dor, fala palavras inapropriadas e leva a mão até o local do estímulo doloroso. Qual o escore na escala de coma de Glasgow?",
+    "options": [
+      "10 — ocular 2, verbal 3, motor 5",
+      "9 — ocular 2, verbal 2, motor 5",
+      "11 — ocular 3, verbal 3, motor 5",
+      "8 — ocular 2, verbal 3, motor 3"
+    ],
+    "correctIndex": 0,
+    "explanation": "Abertura ocular só à dor vale 2; palavras inapropriadas, 3; localizar o estímulo doloroso, 5 — total 10. Na resposta motora, retirada inespecífica vale 4, padrão flexor (decorticação) 3 e padrão extensor (descerebração) 2. O escore vai de 3 a 15, e o estímulo doloroso preferido é a compressão do leito ungueal, porque o supraorbitário pode provocar fechamento dos olhos."
+  },
+  {
+    "question": "Um paciente em coma tem pupilas pequenas, simétricas e com reflexo fotomotor presente, sem sinais motores focais. Como interpretar esse achado pupilar?",
+    "options": [
+      "Encefalopatia metabólica ou disfunção diencefálica bilateral",
+      "Lesão da porção ventral do mesencéfalo com via simpática lesada",
+      "Compressão do III nervo por herniação uncal em fase inicial",
+      "Lesão do tecto mesencefálico com flutuação do diâmetro pupilar"
+    ],
+    "correctIndex": 0,
+    "explanation": "Pupilas pequenas com fotomotor presente ocorrem na encefalopatia metabólica e na disfunção diencefálica bilateral, em que a hipofunção simpática deixa predominar o parassimpático — o exame pupilar sozinho não distingue as duas. O reflexo fotomotor é muito resistente a insultos metabólicos e se mantém até fases profundas do coma. Lesão mesencefálica ventral dá pupilas médias (4–5 mm) e fixas; a tectal, pupilas de 5–6 mm com hippus; a uncal, midríase unilateral fixa."
+  },
+  {
+    "question": "Um jovem é encontrado em coma, com respiração lenta e superficial e pupilas puntiformes que só mostram reação à luz com lente de aumento, sem sinais focais. Qual a hipótese principal e a conduta já no suporte inicial?",
+    "options": [
+      "Intoxicação por opiáceo; administrar naloxona",
+      "Intoxicação por atropina; administrar fisostigmina",
+      "Encefalopatia anóxica; induzir hipotermia",
+      "Herniação uncal; infundir manitol endovenoso"
+    ],
+    "correctIndex": 0,
+    "explanation": "Opiáceos produzem pupilas intensamente mióticas com reflexo fotomotor presente, muitas vezes visível só com lupa — uma das exceções em que uma causa tóxica altera a pupila. A naloxona entra já no suporte inicial do comatoso, junto com intubação, acesso venoso e monitorização. Atropina e anticolinérgicos dão pupilas midriáticas e fixas; a encefalopatia anóxica também; a herniação uncal, midríase unilateral."
+  },
+  {
+    "question": "Um paciente com hematoma subdural temporal esquerdo em expansão desenvolve midríase esquerda intensa, sem reação à luz. Qual estrutura foi comprimida?",
+    "options": [
+      "O nervo oculomotor esquerdo, pelo uncus contra a tenda",
+      "A via simpática esquerda, no hipotálamo e no tronco",
+      "O nervo óptico esquerdo, pelo edema ao redor do hematoma",
+      "O núcleo de Edinger-Westphal direito, no tecto do mesencéfalo"
+    ],
+    "correctIndex": 0,
+    "explanation": "Na herniação lateral (uncal), a porção medial do lobo temporal insinua-se entre a borda da tenda e o mesencéfalo e encontra como primeira estrutura o nervo oculomotor ipsilateral: midríase intensa e fixa, seguida de ptose e déficit de adução. Depois vem a compressão do mesencéfalo, com queda da consciência. Lesão simpática daria miose (Claude Bernard-Horner), não midríase; lesão do óptico aboliria os reflexos direto e consensual ao iluminar aquele olho, sem midríase isolada."
+  },
+  {
+    "question": "Um hipertenso grave entra em coma súbito com tetraparesia. As pupilas são puntiformes, com reflexo fotomotor visível apenas com lente de aumento. Qual a localização mais provável?",
+    "options": [
+      "Ponte, geralmente por hemorragia pontina",
+      "Porção ventral do mesencéfalo, por infarto",
+      "Tecto mesencefálico, por compressão pineal",
+      "Nervo oculomotor, por herniação uncal bilateral"
+    ],
+    "correctIndex": 0,
+    "explanation": "Pupilas pontinas são extremamente mióticas, quase um ponto, mas mantêm o reflexo fotomotor, que pode exigir lente de aumento para ser visto. Ocorrem em lesões da ponte, geralmente hemorragia pontina. Admite-se que sejam mais mióticas que as diencefálicas porque, além da lesão simpática, há irritação parassimpática ou perda da inibição sobre o núcleo de Edinger-Westphal. Lesão mesencefálica ventral dá pupilas médias e fixas; herniação uncal, midríase sem reflexo."
+  },
+  {
+    "question": "Qual correlação entre padrão respiratório e nível de disfunção está correta no paciente em coma?",
+    "options": [
+      "Cheyne-Stokes — disfunção diencefálica",
+      "Respiração atáxica — disfunção diencefálica",
+      "Respiração apnêustica — lesão mesencefálica",
+      "Hiperventilação central — lesão bulbar"
+    ],
+    "correctIndex": 0,
+    "explanation": "O ritmo de Cheyne-Stokes, com apneia alternando com hiperpneia de amplitude crescente e depois decrescente, indica habitualmente disfunção diencefálica (também ocorre na insuficiência cardíaca e no sono normal). A hiperventilação neurogênica central foi descrita para o mesencéfalo; a respiração apnêustica, com pausa em inspiração profunda, indica ponte baixa; a atáxica (Biot), completamente irregular, indica lesão do bulbo e é indicação de ventilação mecânica."
+  },
+  {
+    "question": "Em um paciente em coma, a cabeça é girada bruscamente para a direita e os dois olhos se desviam, de forma conjugada, para a esquerda. O que esse achado indica?",
+    "options": [
+      "Vias do tronco para a motricidade ocular íntegras",
+      "Lesão pontina bilateral com reflexo oculocefálico abolido",
+      "Coma psicogênico, pois o reflexo exige paciente consciente",
+      "Lesão do fascículo longitudinal medial à direita"
+    ],
+    "correctIndex": 0,
+    "explanation": "Na manobra dos olhos de boneca, com as vias intratronco íntegras, os olhos se desviam no sentido oposto ao do giro da cabeça, graças às conexões dos receptores proprioceptivos cervicais e labirínticos com os núcleos do III e do VI nervos. A resposta conjugada afasta lesão do fascículo longitudinal medial, que daria movimento desconjugado. A ausência de resposta, por outro lado, não prova lesão do tronco — a prova oculovestibular é mais fidedigna."
+  },
+  {
+    "question": "Na prova oculovestibular, injetam-se 50 mL de água gelada no conduto auditivo direito de um paciente em coma com tronco encefálico íntegro. Qual a resposta esperada?",
+    "options": [
+      "Desvio tônico conjugado dos dois olhos para a direita",
+      "Nistagmo com fase rápida batendo para a esquerda",
+      "Desvio tônico conjugado dos dois olhos para a esquerda",
+      "Desvio tônico conjugado dos dois olhos para cima"
+    ],
+    "correctIndex": 0,
+    "explanation": "No coma com vias intratronco intactas, a água gelada provoca desvio tônico dos olhos para o lado estimulado. No indivíduo consciente surge nistagmo com fase rápida para o lado oposto — encontrar nistagmo num paciente aparentemente em coma sugere distúrbio psicogênico, embora não seja patognomônico. Água gelada nos dois ouvidos desvia os olhos para baixo; água quente nos dois, para cima. Antes do teste faz-se otoscopia, com a cabeça 30° acima da horizontal."
+  },
+  {
+    "question": "Um paciente em coma apresenta hemiplegia esquerda e desvio conjugado dos olhos para a direita. Onde está a lesão mais provável?",
+    "options": [
+      "Hemisfério direito — supratentorial",
+      "Ponte direita — infratentorial",
+      "Ponte esquerda — infratentorial",
+      "Hemisfério esquerdo — supratentorial"
+    ],
+    "correctIndex": 0,
+    "explanation": "Desvio conjugado dos olhos para um lado com hemiplegia contralateral sugere lesão supratentorial do lado para onde os olhos olham — 'os olhos olham para a lesão'. Na lesão pontina o desvio é para o lado da hemiplegia — 'os olhos olham para a hemiplegia'. A exceção é a fase irritativa de hemorragias cerebrais profundas, que pode desviar os olhos para o lado oposto ao da lesão."
+  },
+  {
+    "question": "Um paciente em coma tem pupilas de tamanho normal com reflexo fotomotor presente, mas as manobras oculocefálica e oculovestibular não produzem resposta. Não há sinais motores focais. Qual a hipótese mais compatível?",
+    "options": [
+      "Intoxicação por hipnótico-sedativos, como barbitúricos",
+      "Infarto extenso do tronco encefálico com lesão estrutural",
+      "Herniação uncal com compressão do III nervo em curso",
+      "Retirada psíquica, com simulação do estado de coma"
+    ],
+    "correctIndex": 0,
+    "explanation": "O reflexo fotomotor resiste aos insultos tóxico-metabólicos, mas as drogas hipnótico-sedativas deprimem intensamente as vias polissinápticas do tronco responsáveis pela motricidade ocular, às vezes precocemente. Motricidade ocular abolida com pupilas reagentes é a assinatura do coma por sedativos. Lesão estrutural do tronco alteraria também as pupilas; na herniação uncal há midríase; na retirada psíquica a prova calórica produz nistagmo."
+  },
+  {
+    "question": "Ao estímulo doloroso, um paciente em coma aduz os braços, flete cotovelos, punhos e dedos e estende os membros inferiores com flexão plantar. Que nível de disfunção esse padrão sugere?",
+    "options": [
+      "Supratentorial — postura de decorticação",
+      "Tronco alto — postura de descerebração",
+      "Tegmento pontino — resposta extensora",
+      "Ponte baixa e bulbo — flacidez difusa"
+    ],
+    "correctIndex": 0,
+    "explanation": "O sinergismo postural flexor (decorticação) — adução e flexão de cotovelo, punho e dedos nos membros superiores, com hiperextensão, flexão plantar e rotação interna nos inferiores — aparece por disfunção supratentorial. A descerebração (extensão e hiperpronação dos membros superiores) sugere tronco alto; extensão dos membros superiores com flacidez nos inferiores, tegmento pontino; flacidez sem resposta, ponte baixa e bulbo. Na escala de Glasgow, decorticação vale 3 e descerebração 2."
+  },
+  {
+    "question": "Qual conjunto de achados favorece coma de causa metabólica em vez de lesão estrutural?",
+    "options": [
+      "Instalação gradual, asterixe e mioclonias, pupilas reagentes",
+      "Instalação súbita, hemiparesia e pupila midriática unilateral",
+      "Coma de olhos abertos, pupilas puntiformes e bobbing ocular",
+      "Desvio conjugado do olhar, afasia e reflexo de Babinski unilateral"
+    ],
+    "correctIndex": 0,
+    "explanation": "No coma difuso, multifocal ou metabólico a instalação costuma ser gradual, muitas vezes precedida de confusão e agitação; os sinais motores não são lateralizados e há fenômenos de disfunção difusa (mioclonias, tremores, asterixe). As pupilas costumam ser normais ou mióticas com reflexo presente, e a motricidade ocular é normal, salvo nos sedativos. Sinal motor focal sugere lesão estrutural, com raras exceções metabólicas: hipoglicemia, encefalopatia hepática e urêmica, que podem dar até hemiplegia."
+  },
+  {
+    "question": "Uma paciente com tumor no lobo frontal direito, sem déficit focal evidente, passa a ficar desatenta e cada vez mais sonolenta, com respiração de Cheyne-Stokes, pupilas pequenas e reagentes e motricidade ocular preservada. Qual a interpretação correta?",
+    "options": [
+      "Herniação central em fase diencefálica, ainda reversível",
+      "Encefalopatia metabólica difusa, sem relação com o tumor",
+      "Herniação central em fase mesencefálica, já irreversível",
+      "Herniação uncal com compressão inicial do III nervo"
+    ],
+    "correctIndex": 0,
+    "explanation": "Esse é o quadro da etapa diencefálica da herniação central: desatenção e sonolência progressivas, Cheyne-Stokes, pupilas pequenas e fotorreagentes, motricidade ocular preservada, às vezes paratonia e decorticação. É a fase que avisa que o processo ainda é reversível — e a mais negligenciada. Quando a massa está em área silenciosa, como o lobo frontal ou temporal direito, ela pode ser a primeira manifestação, e o paciente é rotulado erroneamente como encefalopatia difusa. Pupilas médias e fixas e postura extensora marcam a etapa mesencefálica."
+  },
+  {
+    "question": "Na herniação uncal causada por massa temporal direita, o paciente desenvolve hemiplegia também à direita. Qual o mecanismo desse falso sinal localizatório?",
+    "options": [
+      "Compressão do pedúnculo cerebral esquerdo contra a borda da tenda",
+      "Compressão direta do trato piramidal direito pela massa temporal",
+      "Isquemia do território da artéria cerebral anterior direita",
+      "Lesão do uncus direito, que conduz as fibras motoras descendentes"
+    ],
+    "correctIndex": 0,
+    "explanation": "À medida que o uncus comprime o mesencéfalo, o pedúnculo cerebral do lado oposto pode ser empurrado contra a borda livre da tenda do cerebelo, lesando o trato piramidal acima da decussação e produzindo hemiplegia ipsilateral à massa (fenômeno de Kernohan). Antes disso, a sequência típica é midríase ipsilateral intensa, ptose e déficit de adução, e depois queda da consciência. A etapa uncal pode demorar horas, mas a seguinte é fulminante."
+  },
+  {
+    "question": "Em paciente com massa supratentorial e sinais de herniação ainda incipiente, qual das condutas abaixo está contraindicada?",
+    "options": [
+      "Punção lombar para análise do líquor",
+      "Elevação da cabeceira a 30 a 45 graus",
+      "Manitol de 0,5 a 1 g/kg endovenoso",
+      "Tomografia computadorizada de crânio"
+    ],
+    "correctIndex": 0,
+    "explanation": "A punção liquórica em qualquer herniação, mesmo incipiente, pode desencadear progressão rápida do processo. O diagnóstico se faz pela tomografia, e para reduzir a pressão intracraniana e ganhar de 4 a 8 horas até o tratamento definitivo usam-se cabeceira elevada a 30–45°, manitol 0,5–1 g/kg EV em 10–20 minutos e hiperventilação assistida transitória."
+  },
+  {
+    "question": "Um hipertenso tem cefaleia occipital súbita, vômitos e vertigem. Horas depois, ainda pouco sonolento, surge paralisia do olhar conjugado para a esquerda com paresia do VI e do VII nervos à esquerda. Qual a hipótese?",
+    "options": [
+      "Lesão compressiva de fossa posterior, como hemorragia cerebelar",
+      "Hemorragia putaminal esquerda com desvio conjugado do olhar",
+      "Herniação central por massa supratentorial em fase pontina",
+      "Encefalopatia hipertensiva com sinais focais transitórios"
+    ],
+    "correctIndex": 0,
+    "explanation": "Lesões compressivas extratronco da fossa posterior se instalam mais lentamente, com sintomas premonitórios de cefaleia, náusea, vômitos e vertigem. Diferentemente da herniação supratentorial, não há deterioração rostrocaudal: sinais de compressão da ponte — paralisia do olhar conjugado para o lado da lesão e do VI e VII ipsilaterais, por dano ao centro pontino do olhar horizontal, ao núcleo do VI e ao joelho do facial no assoalho do IV ventrículo — aparecem antes do rebaixamento profundo da consciência."
+  },
+  {
+    "question": "Um paciente chega torporoso, com febre e rigidez de nuca, mas também com hemiparesia direita e papiledema. Antes de colher líquor, o que deve ser feito?",
+    "options": [
+      "Tomografia de crânio para afastar massa expansiva",
+      "Eletroencefalograma para afastar estado de mal",
+      "Nenhum exame: punção lombar imediata é prioridade",
+      "Ressonância magnética de crânio com espectroscopia"
+    ],
+    "correctIndex": 0,
+    "explanation": "Na suspeita de meningite o exame inicial é o líquor, mas a tomografia deve vir antes quando há dúvida no exame ou história de massa expansiva — sinal focal e papiledema sugerem lesão com efeito de massa, e a punção numa herniação incipiente pode precipitar sua progressão. A ressonância é útil, porém demorada demais para o paciente agudo e grave."
+  },
+  {
+    "question": "Três semanas após uma parada cardíaca, um paciente abre os olhos espontaneamente e tem ciclos de sono e vigília, mas não fixa o olhar, não segue objetos de modo consistente e não obedece a comandos. Qual o diagnóstico?",
+    "options": [
+      "Estado vegetativo",
+      "Consciência mínima",
+      "Mutismo acinético",
+      "Síndrome locked-in"
+    ],
+    "correctIndex": 0,
+    "explanation": "Duas a três semanas após o coma, salvo lesão bilateral do III nervo, o paciente pode abrir os olhos e recuperar o ciclo vigília-sono sem recuperar a percepção: é o estado vegetativo, vigília sem conhecimento do ambiente, com olhos que não se orientam ao estímulo (às vezes simulam seguimento). O diagnóstico é clínico; nenhum exame laboratorial, EEG ou de imagem o define. No mutismo acinético o paciente explora o ambiente com o olhar; no locked-in está consciente; no estado de consciência mínima há sinais reprodutíveis de percepção."
+  },
+  {
+    "question": "O que diferencia o estado minimamente consciente do estado vegetativo?",
+    "options": [
+      "Sinais reprodutíveis, ainda que inconsistentes, de percepção",
+      "Presença de ciclo vigília-sono com abertura ocular espontânea",
+      "Preservação dos reflexos de tronco e da respiração espontânea",
+      "Ausência de respostas motoras reflexas ao estímulo doloroso"
+    ],
+    "correctIndex": 0,
+    "explanation": "Os dois estados têm olhos abertos, ciclo vigília-sono e reflexos de tronco preservados. O que define o estado minimamente consciente é evidência mínima, mas definida e reprodutível, de percepção de si ou do ambiente: seguir um comando simples, responder sim ou não, verbalizar algo inteligível ou mostrar comportamento intencional, como seguimento visual sustentado ou choro e sorriso apropriados ao contexto. Seu prognóstico é melhor que o do estado vegetativo."
+  },
+  {
+    "question": "Após uma hidrocefalia subaguda, uma paciente fica alerta, com ciclo vigília-sono preservado e acompanhando com os olhos quem entra no quarto, mas não fala, não se move e não reage à dor com expressão facial; não há sinais piramidais evidentes. Qual o diagnóstico e qual tratamento pode ajudar?",
+    "options": [
+      "Mutismo acinético; agonista dopaminérgico como a bromocriptina",
+      "Estado vegetativo; estimulação sensorial multimodal intensiva",
+      "Síndrome locked-in; trombólise da artéria basilar ocluída",
+      "Retirada psíquica; psicoterapia e observação sem exames"
+    ],
+    "correctIndex": 0,
+    "explanation": "No mutismo acinético o paciente está alerta, com ciclo vigília-sono, explorando o campo visual com os olhos, mas não se move, não vocaliza e não reage à dor, sem grandes sinais de lesão piramidal. Ocorre em lesões frontais basais e mediais (córtex orbital, área septal, giro do cíngulo), em pequenas lesões da FRAA paramediana do diencéfalo posterior e mesencéfalo e na hidrocefalia subaguda. Admite-se lesão do trato mesencéfalo-frontal dopaminérgico, daí o uso de bromocriptina, às vezes com bons resultados."
+  },
+  {
+    "question": "Um paciente com infarto da porção ventral da ponte está tetraplégico, sem mover lábios nem língua, mas responde a perguntas piscando e movendo os olhos para cima e para baixo. Por que a consciência está preservada?",
+    "options": [
+      "A formação reticular, no tegmento dorsal da ponte, foi poupada",
+      "A lesão poupou as fibras corticoespinais que descem pela ponte",
+      "O tálamo assume a função da formação reticular lesada na ponte",
+      "A lesão é bulbar e fica abaixo dos centros que mantêm o alerta"
+    ],
+    "correctIndex": 0,
+    "explanation": "Na síndrome do encarceramento (locked-in), a lesão ventral da ponte interrompe as fibras motoras corticais para a medula e para os núcleos dos nervos cranianos, com déficit do olhar horizontal, restando só elevar e abaixar os olhos. A porção dorsal da ponte, onde está a FRAA, permanece íntegra, e o paciente está consciente — pode se comunicar por um código com o olhar. Por isso o locked-in simula coma ou morte encefálica, mas mantém os reflexos de tronco."
+  },
+  {
+    "question": "Um idoso internado por pneumonia passa a se distrair com qualquer ruído, tem pensamento incoerente e não consegue completar uma sequência simples de tarefas. Qual o déficit central desse estado confusional agudo?",
+    "options": [
+      "Atenção, com distração e perda da coerência do pensamento",
+      "Memória remota, com atenção e vigilância preservadas",
+      "Linguagem, com afasia fluente e compreensão alterada",
+      "Nível de consciência, com coma de instalação abrupta"
+    ],
+    "correctIndex": 0,
+    "explanation": "No estado confusional agudo (delirium) o déficit mais saliente é o da atenção. Os três aspectos fundamentais são distúrbio de vigilância com aumento da distração, incapacidade de manter a coerência do pensamento e incapacidade de executar uma série de movimentos com objetivo definido. Somam-se desorientação, ilusões e alucinações e déficit de memória. As encefalopatias tóxico-metabólicas são a causa mais comum; frente à demência, o critério de diferenciação é o tempo de evolução."
+  },
+  {
+    "question": "Uma paciente aparentemente em coma resiste à abertura das pálpebras, que caem rapidamente ao serem soltas, tem tono muscular normal e apresenta nistagmo na prova calórica. Qual exame melhor esclarece o quadro?",
+    "options": [
+      "Eletroencefalograma, que será normal",
+      "Tomografia de crânio sem contraste",
+      "Punção lombar com pressão de abertura",
+      "Potencial evocado somatossensitivo"
+    ],
+    "correctIndex": 0,
+    "explanation": "Esses são sinais de retirada psíquica: tono normal, resistência à abertura palpebral, olhos forçadamente fechados, queda rápida da pálpebra (no coma ela cai lentamente), respostas imprevisíveis às manobras oculocefálicas e nistagmo na prova calórica, que indica paciente consciente. Na dúvida, o eletroencefalograma é o melhor exame, pois será normal na alteração psiquiátrica."
+  },
+  {
+    "question": "Durante o protocolo de morte encefálica, um paciente sem reflexos de tronco apresenta flexão dos membros inferiores ao estímulo doloroso na planta do pé. Como esse achado deve ser interpretado?",
+    "options": [
+      "Resposta medular, que não exclui a morte encefálica",
+      "Resposta motora que exclui o diagnóstico de imediato",
+      "Sinal de atividade cortical, que exige EEG de controle",
+      "Postura de decorticação, indicando lesão supratentorial"
+    ],
+    "correctIndex": 0,
+    "explanation": "Nos critérios clínicos de morte encefálica exige-se Glasgow 3 e ausência de resposta motora à dor, desconsiderando as respostas medulares, que podem ocorrer porque a medula segue funcionante; o reflexo cutaneoplantar também é irrelevante. O que precisa estar ausente são os reflexos de tronco: fotomotor, corneano, oculocefálico, oculovestibular, mandibular e faríngeo."
+  },
+  {
+    "question": "No teste de apneia do protocolo de morte encefálica, a ausência de movimentos respiratórios espontâneos é avaliada após atingir qual estímulo?",
+    "options": [
+      "PaCO₂ de pelo menos 55 mmHg",
+      "PaCO₂ de pelo menos 40 mmHg",
+      "PaO₂ abaixo de 60 mmHg",
+      "pH arterial abaixo de 7,10"
+    ],
+    "correctIndex": 0,
+    "explanation": "O teste de apneia é obrigatório e feito com oxigenação (apneia oxigenada), para levar o centro respiratório ao estímulo máximo pela hipercapnia — paCO₂ de 55 a 60 mmHg — sem que surjam incursões respiratórias. A hipoxemia não é o estímulo buscado; o paciente é oxigenado justamente para evitá-la. A resolução brasileira vigente (CFM 2.173/2017) exige PaCO₂ acima de 55 mmHg."
+  }
+];
+
+var LETTERS = ['A','B','C','D','E','F'];
+var SHUFFLE = true, LOCK = true;
+
+var S = { view:'home', started:false, finished:false, i:0, order:[], answers:[], open:{}, filter:'all', warn:false, chat:{} };
+
+function esc(s){ return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
+function pad(n){ return String(n).padStart(2,'0'); }
+
+function build(){
+  var qs = QUIZ.map(function(q,id){ return { question:q.question, options:q.options.slice(), correctIndex:q.correctIndex, explanation:q.explanation, image:q.image, imageCaption:q.imageCaption, id:id }; });
+  if (!SHUFFLE) return qs;
+  for (var i=qs.length-1;i>0;i--){ var j=Math.floor(Math.random()*(i+1)); var t=qs[i]; qs[i]=qs[j]; qs[j]=t; }
+  return qs.map(function(q){
+    var correct = q.options[q.correctIndex], o = q.options.slice();
+    for (var i=o.length-1;i>0;i--){ var j=Math.floor(Math.random()*(i+1)); var t=o[i]; o[i]=o[j]; o[j]=t; }
+    q.options = o; q.correctIndex = o.indexOf(correct); return q;
+  });
+}
+
+/* ── ações ─────────────────────────────────────────────────────────────────── */
+var A = {
+  home:      function(){ S.view='home'; S.started=false; S.finished=false; up(0); },
+  resumo:    function(){ S.view='resumo'; up(0); },
+  start:     function(){ var o=build(); S.view='quiz'; S.started=true; S.finished=false; S.i=0; S.order=o;
+                         S.answers=new Array(o.length).fill(null); S.open={}; S.filter='all'; S.warn=false; up(0); },
+  restart:   function(){ A.start(); },
+  sair:      function(){ S.view='home'; S.started=false; up(0); },   // guarda as respostas
+  retomar:   function(){ S.view='quiz'; S.started=true; S.finished=false; S.warn=false; up(0); },
+  go:        function(n){ if(n<0||n>S.order.length-1) return; S.i=n; S.warn=false; render(); },
+  jump:      function(n){ if(S.finished){ S.finished=false; S.i=n; S.warn=false; } else { if(n<0||n>S.order.length-1) return; S.i=n; S.warn=false; } up(0,'smooth'); },
+  pick:      function(n){ if(LOCK && S.answers[S.i]!==null) return; S.answers[S.i]=n; render(); },
+  prev:      function(){ A.go(S.i-1); },
+  next:      function(){ if(S.i<S.order.length-1) A.go(S.i+1); else A.finish(); },
+  finish:    function(){ var b=S.answers.filter(function(a){return a===null}).length;
+                         if(b>0 && !S.warn){ S.warn=true; render(); return; } S.finished=true; S.warn=false; up(0); },
+  force:     function(){ S.finished=true; S.warn=false; up(0); },
+  gotoBlank: function(){ var n=S.answers.findIndex(function(a){return a===null}); if(n>=0) A.go(n); },
+  back:      function(){ S.finished=false; S.warn=false; up(0); },
+  filter:    function(k){ S.filter=k; render(); },
+  toggle:    function(n){ S.open[n]=!S.open[n]; render(); },
+  toggleAll: function(){ var r=reviewList(), all=r.length>0 && r.every(function(x){return S.open[x.idx]});
+                         S.open={}; if(!all) r.forEach(function(x){ S.open[x.idx]=true; }); render(); }
+};
+function up(top, beh){ render(); window.scrollTo({ top: top||0, behavior: beh||'auto' }); }
+
+/* Aberto por duplo clique (file://) volta para o indice local; servido pela web,
+   volta para o publicado. Os dois listam os mesmos materiais. */
+function idxHref(){
+  var local = (typeof location !== 'undefined' && location.protocol === 'file:');
+  return local ? '../index_local.html' : '../index.html';
+}
+function emAndamento(){
+  return S.order.length > 0 && !S.finished &&
+         S.answers.some(function(a){ return a !== null; });
+}
+
+/* ── header ────────────────────────────────────────────────────────────────── */
+function renderHeader(){
+  var mono = "font-family:'IBM Plex Mono',monospace";
+  var left =
+    '<div style="min-width:0">' +
+      '<div style="display:flex;align-items:center;gap:8px;'+mono+';font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:#8a8578">' +
+        '<a href="'+idxHref()+'" class="h-ink" style="color:#2b57cc;text-decoration:none;white-space:nowrap">\u2190 Materiais</a>' +
+        '<span style="color:#d3cec4">/</span>' +
+        '<span style="overflow:hidden;text-overflow:ellipsis;white-space:nowrap">'+esc(EYEBROW)+'</span>' +
+      '</div>' +
+      '<h1 style="margin:1px 0 0;font-family:\'Newsreader\',Georgia,serif;font-size:20px;font-weight:500;letter-spacing:-.01em;line-height:1.15">'+esc(TITLE)+'</h1>' +
+    '</div>';
+
+  var right = '';
+  if (S.view === 'quiz' && S.started) {
+    var hit = counts().hit;
+    right = '<div style="display:flex;align-items:center;gap:10px;flex-shrink:0">' +
+              '<button type="button" data-act="sair" class="h-line" style="background:none;border:1px solid #ddd8ce;border-radius:9px;padding:6px 11px;'+mono+';font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;color:#5b6478;cursor:pointer;transition:border-color .15s ease">Sair</button>' +
+              '<div style="display:flex;align-items:center;gap:6px">' +
+                '<span style="'+mono+';font-size:15px;font-weight:600;letter-spacing:-.02em">'+hit+'</span>' +
+                '<span style="'+mono+';font-size:11px;color:#8a8578">/ '+S.order.length+'</span>' +
+              '</div></div>';
+  } else if (S.view !== 'home') {
+    right = '<button type="button" data-act="home" class="h-line" style="flex-shrink:0;background:none;border:1px solid #ddd8ce;border-radius:9px;padding:7px 13px;'+mono+';font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:#5b6478;cursor:pointer;transition:border-color .15s ease">← Início</button>';
+  }
+
+  var html = '<div style="display:flex;align-items:baseline;justify-content:space-between;gap:12px;margin-bottom:'+(S.view==='quiz'&&S.started?'10px':'2px')+'">'+left+right+'</div>';
+
+  if (S.view === 'quiz' && S.started) {
+    var c = counts();
+    var rail = S.order.map(function(q,n){
+      var a = S.answers[n], cur = n===S.i && !S.finished, bg = '#d3cec4';
+      if (a!==null) bg = (a===q.correctIndex) ? '#2e7d55' : '#c04437';
+      if (cur && a===null) bg = '#121a2b';
+      var st = a===null ? 'em branco' : (a===q.correctIndex ? 'correta' : 'incorreta');
+      return '<button type="button" data-act="jump" data-n="'+n+'" title="Questão '+(n+1)+' — '+st+'" aria-label="Questão '+(n+1)+' — '+st+'" style="flex:1 1 0;min-width:0;background:none;border:0;padding:13px 0;margin:0;cursor:pointer;display:flex;align-items:center;justify-content:center">' +
+             '<span style="display:block;width:100%;border-radius:99px;transition:height .18s ease,background .18s ease,box-shadow .18s ease;height:'+(cur?'17px':'9px')+';background:'+bg+';box-shadow:'+(cur?'0 0 0 3px rgba(18,26,43,.13)':'none')+'"></span></button>';
+    }).join('');
+    html += '<div><div style="display:flex;align-items:center;gap:3px">'+rail+'</div>' +
+            '<div style="display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:-2px">' +
+              '<div style="'+mono+';font-size:11px;letter-spacing:.04em;color:#5b6478">Questão '+pad(S.i+1)+' / '+S.order.length+'</div>' +
+              '<div style="display:flex;align-items:center;gap:12px;'+mono+';font-size:10.5px;color:#8a8578">' +
+                dot('#2e7d55',c.hit)+dot('#c04437',c.miss)+dot('#d3cec4',c.blank) +
+              '</div></div></div>';
+  }
+  document.getElementById('hdr').innerHTML = html;
+}
+function dot(color,n){ return '<span style="display:flex;align-items:center;gap:5px"><span style="width:7px;height:7px;border-radius:99px;background:'+color+';display:block"></span>'+n+'</span>'; }
+
+function counts(){
+  var hit=0, miss=0, blank=0;
+  S.answers.forEach(function(a,n){
+    if (a===null) blank++;
+    else if (S.order[n] && a===S.order[n].correctIndex) hit++;
+    else miss++;
+  });
+  return { hit:hit, miss:miss, blank:blank, total:S.order.length };
+}
+
+/* ── tela inicial ──────────────────────────────────────────────────────────── */
+function renderHome(){
+  var mono = "font-family:'IBM Plex Mono',monospace";
+  var secoes = (document.getElementById('resumoSrc').textContent.match(/<h2/g)||[]).length;
+  var cell = function(v,l){
+    return '<div style="background:#faf9f6;padding:16px 14px">' +
+      '<div style="'+mono+';font-size:22px;font-weight:500;letter-spacing:-.03em">'+v+'</div>' +
+      '<div style="'+mono+';font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:#8a8578;margin-top:3px">'+l+'</div></div>';
+  };
+  var card = function(act,tag,titulo,desc,cta){
+    return '<button type="button" data-act="'+act+'" class="h-card" style="display:flex;flex-direction:column;align-items:flex-start;gap:0;text-align:left;background:#fff;border:1px solid #e4e0d8;border-radius:18px;padding:24px 22px;cursor:pointer;transition:border-color .16s ease,transform .14s ease;box-shadow:0 1px 2px rgba(18,26,43,.04),0 12px 28px -20px rgba(18,26,43,.18)">' +
+      '<div style="'+mono+';font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:#2b57cc;margin-bottom:12px">'+tag+'</div>' +
+      '<div style="font-family:\'Newsreader\',Georgia,serif;font-size:26px;font-weight:500;letter-spacing:-.02em;line-height:1.15;margin-bottom:8px">'+titulo+'</div>' +
+      '<div style="font-size:14px;line-height:1.6;color:#5b6478;margin-bottom:18px;text-wrap:pretty">'+desc+'</div>' +
+      '<div style="'+mono+';font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:#121a2b">'+cta+'</div></button>';
+  };
+
+  document.getElementById('stage').innerHTML =
+    '<section style="padding:56px 0 0;animation:qFade .3s ease">' +
+      '<div style="'+mono+';font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:#2b57cc;margin-bottom:16px">Material de revisão</div>' +
+      '<h2 style="font-family:\'Newsreader\',Georgia,serif;font-size:40px;line-height:1.08;font-weight:400;letter-spacing:-.025em;margin:0 0 18px;text-wrap:pretty">'+esc(SUBTITLE)+'</h2>' +
+      '<p style="font-size:15.5px;line-height:1.65;color:#5b6478;margin:0 0 30px;max-width:52ch;text-wrap:pretty">'+esc(INTRO)+'</p>' +
+      '<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(108px,1fr));gap:1px;background:#e4e0d8;border:1px solid #e4e0d8;border-radius:14px;overflow:hidden;margin-bottom:32px">' +
+        cell(QUIZ.length,'Questões') + cell(secoes,'Seções') + cell('~'+Math.round(QUIZ.length*0.75),'Minutos') +
+      '</div>' +
+      '<div class="home-grid" style="display:grid;grid-template-columns:1fr 1fr;gap:12px">' +
+        (emAndamento()
+          ? card('retomar','Em andamento','Quiz',
+                 'Você parou na questão '+pad(S.i+1)+' de '+S.order.length+', com '+
+                 (S.order.length-counts().blank)+' respondida'+((S.order.length-counts().blank)===1?'':'s')+
+                 '. Suas respostas continuam guardadas.','Retomar →')
+          : card('start','Praticar','Quiz', QUIZ.length+' questões de múltipla escolha, com explicação assim que você responde e gabarito comentado no fim.','Começar →')) +
+        card('resumo','Estudar','Resumo','O conteúdo da aula em texto corrido, organizado em '+secoes+' seções para leitura antes da prova.','Ler →') +
+      '</div>' +
+      '<div style="margin-top:26px;display:flex;flex-wrap:wrap;align-items:center;gap:8px 18px;'+mono+';font-size:11px;color:#8a8578">' +
+        '<span>← →&nbsp; navegar</span><span>1–'+maxOpts()+'&nbsp; responder</span><span>Enter&nbsp; avançar</span>' +
+        (emAndamento() ? '<button type="button" data-act="start" class="h-ink" style="background:none;border:0;padding:0;'+mono+';font-size:11px;color:#8a8578;cursor:pointer;text-decoration:underline;text-underline-offset:3px">recomeçar do zero</button>' : '') +
+        '</div>' +
+    '</section>';
+}
+function maxOpts(){ return QUIZ.reduce(function(m,q){ return Math.max(m,q.options.length); },0); }
+
+/* ── resumo ────────────────────────────────────────────────────────────────── */
+function renderResumo(){
+  document.getElementById('stage').innerHTML =
+    '<section style="padding:34px 0 0;animation:qFade .3s ease">' +
+      '<div style="font-family:\'IBM Plex Mono\',monospace;font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:#2b57cc;margin-bottom:14px">Resumo</div>' +
+      '<div class="rsm">' + document.getElementById('resumoSrc').textContent + '</div>' +
+      '<div style="display:flex;flex-wrap:wrap;gap:9px;margin-top:38px;padding-top:24px;border-top:1px solid #e4e0d8">' +
+        '<button type="button" data-act="start" class="h-darkflat" style="background:#121a2b;color:#f5f3ef;border:0;border-radius:11px;padding:13px 24px;font-size:14px;font-weight:500;cursor:pointer;transition:background .16s ease">Fazer o quiz →</button>' +
+        '<button type="button" data-act="home" class="h-line" style="background:none;border:1px solid #ddd8ce;border-radius:11px;padding:13px 22px;font-size:14px;cursor:pointer;transition:border-color .15s ease">Voltar ao início</button>' +
+      '</div></section>';
+}
+
+/* imagem da questao — data URI ja resolvida pelo montar_quiz.py */
+function figura(q, cls){
+  if (!q.image) return '';
+  return '<figure class="fig'+(cls?' '+cls:'')+'"><img src="'+q.image+'" alt="'+esc(q.imageCaption||'Imagem da questão')+'">' +
+         (q.imageCaption ? '<figcaption>'+esc(q.imageCaption)+'</figcaption>' : '') + '</figure>';
+}
+
+/* ── questão ───────────────────────────────────────────────────────────────── */
+function renderQuestion(){
+  var mono = "font-family:'IBM Plex Mono',monospace";
+  var q = S.order[S.i], ans = S.answers[S.i], reveal = ans !== null;
+
+  var status = 'Não respondida', sColor = '#8a8578';
+  if (reveal) { var ok = ans===q.correctIndex; status = ok?'Você acertou':'Você errou'; sColor = ok?'#2e7d55':'#c04437'; }
+
+  var opts = q.options.map(function(text,n){
+    var isC = n===q.correctIndex, isMine = n===ans;
+    var bd='#e4e0d8', bg='#fff', fg='#121a2b', bBg='#f2efe9', bFg='#8a8578', mark='', mColor='', op='1', hbd='#2b57cc';
+    if (reveal) {
+      op = (isC||isMine) ? '1' : '.62';
+      if (isC)               { bd='#8fc7a7'; bg='#eef7f1'; fg='#1f5c3e'; bBg='#2e7d55'; bFg='#fff'; mark='✓'; mColor='#2e7d55'; }
+      if (isMine && !isC)    { bd='#e0a49a'; bg='#fdf0ee'; fg='#8f2f25'; bBg='#c04437'; bFg='#fff'; mark='✕'; mColor='#c04437'; }
+    } else if (isMine)       { bd='#121a2b'; bg='#f7f6f2'; bBg='#121a2b'; bFg='#f5f3ef'; }
+    var locked = reveal && LOCK;
+    return '<button type="button" data-act="pick" data-n="'+n+'" class="h-opt'+(locked?' locked':'')+'" style="--hbd:'+hbd+';display:flex;gap:13px;align-items:flex-start;width:100%;text-align:left;padding:14px 15px;border-radius:13px;font-size:15px;line-height:1.5;transition:border-color .15s ease,background .15s ease,transform .12s ease;border:1.5px solid '+bd+';background:'+bg+';color:'+fg+';cursor:'+(locked?'default':'pointer')+';opacity:'+op+'">' +
+      '<span style="flex-shrink:0;width:24px;height:24px;border-radius:7px;display:flex;align-items:center;justify-content:center;'+mono+';font-size:11.5px;font-weight:600;margin-top:1px;background:'+bBg+';color:'+bFg+'">'+LETTERS[n]+'</span>' +
+      '<span style="flex:1;min-width:0;text-wrap:pretty">'+esc(text)+'</span>' +
+      (mark ? '<span style="flex-shrink:0;'+mono+';font-size:14px;font-weight:600;margin-top:1px;color:'+mColor+'">'+mark+'</span>' : '') +
+      '</button>';
+  }).join('');
+
+  var expl = reveal ? '<div style="margin-top:20px;padding:16px 18px;background:#f7f6f2;border-left:2.5px solid #2b57cc;border-radius:0 12px 12px 0;animation:qFade .26s ease">' +
+      '<div style="'+mono+';font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:#2b57cc;margin-bottom:8px">Por quê</div>' +
+      '<p style="margin:0;font-size:14.5px;line-height:1.68;color:#39404f;text-wrap:pretty">'+esc(q.explanation)+'</p></div>' : '';
+
+  var blank = counts().blank;
+  var warn = S.warn ? '<div style="margin-top:14px;padding:15px 17px;background:#fdf7e9;border:1px solid #e8d5a3;border-radius:14px;animation:qFade .22s ease">' +
+      '<p style="margin:0 0 12px;font-size:14px;line-height:1.55;color:#6b5620">'+blank+(blank===1?' questão ainda está em branco.':' questões ainda estão em branco.')+' Você pode voltar nelas ou finalizar assim mesmo.</p>' +
+      '<div style="display:flex;flex-wrap:wrap;gap:8px">' +
+        '<button type="button" data-act="gotoBlank" style="background:#121a2b;color:#f5f3ef;border:0;border-radius:9px;padding:9px 16px;font-size:13px;font-weight:500;cursor:pointer">Ir para a 1ª em branco</button>' +
+        '<button type="button" data-act="force" style="background:none;color:#6b5620;border:1px solid #e8d5a3;border-radius:9px;padding:9px 16px;font-size:13px;cursor:pointer">Finalizar assim mesmo</button>' +
+      '</div></div>' : '';
+
+  var last = S.i === S.order.length-1;
+  var early = !last && (S.order.length - blank) > 0;
+
+  document.getElementById('stage').innerHTML =
+    '<section style="padding:26px 0 0">' +
+      '<article style="background:#fff;border:1px solid #e4e0d8;border-radius:18px;padding:26px 22px 24px;box-shadow:0 1px 2px rgba(18,26,43,.04),0 12px 28px -18px rgba(18,26,43,.18)">' +
+        '<div style="display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:14px">' +
+          '<div style="'+mono+';font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:#2b57cc">Questão '+pad(S.i+1)+'</div>' +
+          '<div style="'+mono+';font-size:10.5px;letter-spacing:.06em;color:'+sColor+'">'+status+'</div>' +
+        '</div>' +
+        '<h2 style="font-family:\'Newsreader\',Georgia,serif;font-size:22px;line-height:1.42;font-weight:400;letter-spacing:-.012em;margin:0 0 22px;text-wrap:pretty">'+esc(q.question)+'</h2>' +
+        figura(q, 'qfig') +
+        '<div style="display:flex;flex-direction:column;gap:9px">'+opts+'</div>' + expl +
+        (reveal ? chatBox(q, ans===q.correctIndex) : '') +
+      '</article>' + warn +
+      '<div style="display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:18px">' +
+        '<button type="button" data-act="prev" class="h-line" style="background:none;border:1px solid #ddd8ce;border-radius:11px;padding:12px 18px;font-size:14px;cursor:pointer;transition:border-color .15s ease,color .15s ease;color:'+(S.i===0?'#c4bfb4':'#121a2b')+';pointer-events:'+(S.i===0?'none':'auto')+'">← Anterior</button>' +
+        '<div style="display:flex;align-items:center;gap:8px">' +
+          (early ? '<button type="button" data-act="finish" class="h-ink" style="background:none;border:0;padding:12px 6px;'+mono+';font-size:11.5px;letter-spacing:.06em;text-transform:uppercase;color:#8a8578;cursor:pointer;text-decoration:underline;text-underline-offset:3px">Finalizar</button>' : '') +
+          '<button type="button" data-act="next" class="h-darkflat" style="background:#121a2b;color:#f5f3ef;border:0;border-radius:11px;padding:12px 22px;font-size:14px;font-weight:500;cursor:pointer;transition:background .16s ease">'+(last?'Finalizar':'Próxima →')+'</button>' +
+        '</div></div></section>';
+}
+
+/* ── resultado + gabarito comentado ────────────────────────────────────────── */
+function reviewList(){
+  return S.order.map(function(q,n){
+    var a = S.answers[n], ok = a!==null && a===q.correctIndex;
+    return { idx:n, ok:ok, blank:a===null, q:q, a:a };
+  }).filter(function(r){
+    return S.filter==='all' || (S.filter==='wrong'&&!r.ok&&!r.blank) || (S.filter==='right'&&r.ok) || (S.filter==='blank'&&r.blank);
+  });
+}
+
+function renderResult(){
+  var mono = "font-family:'IBM Plex Mono',monospace";
+  var c = counts(), pct = c.total ? Math.round(c.hit/c.total*100) : 0;
+
+  var title='Precisa revisar', msg='Releia o material com atenção e refaça o quiz — as explicações abaixo cobrem cada erro.';
+  if (pct>=90)      { title='Domínio sólido';   msg='Desempenho excelente. Confira as explicações das que escaparam e siga em frente.'; }
+  else if (pct>=70) { title='Bom desempenho';   msg='Base consistente. Revise os pontos errados abaixo para fechar as lacunas.'; }
+  else if (pct>=50) { title='Meio do caminho';  msg='Você acertou o essencial, mas há lacunas. Comece pelo filtro de erradas.'; }
+
+  var stat = function(v,l,color){
+    return '<div style="background:#faf9f6;padding:14px 10px">' +
+      '<div style="'+mono+';font-size:19px;font-weight:500;color:'+color+'">'+v+'</div>' +
+      '<div style="'+mono+';font-size:9.5px;letter-spacing:.09em;text-transform:uppercase;color:#8a8578;margin-top:2px">'+l+'</div></div>';
+  };
+
+  var fdefs = [['all','Todas',c.total],['wrong','Erradas',c.miss],['right','Certas',c.hit],['blank','Em branco',c.blank]];
+  var filters = fdefs.map(function(f){
+    var on = S.filter===f[0];
+    return '<button type="button" data-act="filter" data-k="'+f[0]+'" class="h-line" style="border-radius:99px;padding:8px 14px;font-size:13px;cursor:pointer;transition:all .15s ease;border:1px solid '+(on?'#121a2b':'#ddd8ce')+';background:'+(on?'#121a2b':'transparent')+';color:'+(on?'#f5f3ef':'#5b6478')+'">'+f[1]+' '+f[2]+'</button>';
+  }).join('');
+
+  var list = reviewList();
+  var allOpen = list.length>0 && list.every(function(r){ return S.open[r.idx]; });
+
+  var cards = list.map(function(r){
+    var numBg='#f0ede7', numFg='#8a8578';
+    if (!r.blank) { if (r.ok) { numBg='#e3f0e8'; numFg='#1f5c3e'; } else { numBg='#fbe6e2'; numFg='#8f2f25'; } }
+    var open = !!S.open[r.idx];
+    var body = '';
+    if (open) {
+      var opts = r.q.options.map(function(text,n){
+        var isC = n===r.q.correctIndex, isMine = n===r.a;
+        var bd='#eeebe4', bg='#fbfaf8', fg='#5b6478', bBg='#f0ede7', bFg='#8a8578', tag='', tBg='', tFg='';
+        if (isC)            { bd='#bcdcc9'; bg='#eef7f1'; fg='#1f5c3e'; bBg='#2e7d55'; bFg='#fff'; tag='Correta'; tBg='#d9ede1'; tFg='#1f5c3e'; }
+        if (isMine && !isC) { bd='#eec4bd'; bg='#fdf0ee'; fg='#8f2f25'; bBg='#c04437'; bFg='#fff'; tag='Sua resposta'; tBg='#f7ddd8'; tFg='#8f2f25'; }
+        if (isMine && isC)  { tag='Sua resposta ✓'; }
+        return '<div style="display:flex;gap:11px;align-items:flex-start;padding:11px 13px;border-radius:11px;font-size:14px;line-height:1.5;border:1px solid '+bd+';background:'+bg+';color:'+fg+'">' +
+          '<span style="flex-shrink:0;width:21px;height:21px;border-radius:6px;display:flex;align-items:center;justify-content:center;'+mono+';font-size:10.5px;font-weight:600;background:'+bBg+';color:'+bFg+'">'+LETTERS[n]+'</span>' +
+          '<span style="flex:1;min-width:0;text-wrap:pretty">'+esc(text)+'</span>' +
+          (tag ? '<span style="flex-shrink:0;'+mono+';font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;padding:3px 7px;border-radius:6px;margin-top:1px;background:'+tBg+';color:'+tFg+'">'+tag+'</span>' : '') +
+          '</div>';
+      }).join('');
+      body = '<div style="padding:2px 15px 18px;animation:qDrawer .2s ease">' +
+        '<div style="height:1px;background:#eeebe4;margin:0 0 16px"></div>' +
+        '<p style="font-family:\'Newsreader\',Georgia,serif;font-size:18px;line-height:1.5;margin:0 0 16px;text-wrap:pretty">'+esc(r.q.question)+'</p>' +
+        figura(r.q) +
+        '<div style="display:flex;flex-direction:column;gap:7px">'+opts+'</div>' +
+        '<div style="margin-top:16px;padding:14px 16px;background:#f7f6f2;border-left:2.5px solid #2b57cc;border-radius:0 11px 11px 0">' +
+          '<div style="'+mono+';font-size:9.5px;letter-spacing:.16em;text-transform:uppercase;color:#2b57cc;margin-bottom:7px">Por quê</div>' +
+          '<p style="margin:0;font-size:14px;line-height:1.65;color:#39404f;text-wrap:pretty">'+esc(r.q.explanation)+'</p></div>' +
+        '<button type="button" data-act="jump" data-n="'+r.idx+'" style="margin-top:14px;background:none;border:0;padding:0;'+mono+';font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:#2b57cc;cursor:pointer;text-decoration:underline;text-underline-offset:3px">Abrir no quiz →</button></div>';
+    }
+    return '<div style="background:#fff;border:1px solid '+(open?'#c9c3b6':'#e4e0d8')+';border-radius:14px;overflow:hidden;transition:border-color .15s ease">' +
+      '<button type="button" data-act="toggle" data-n="'+r.idx+'" style="display:flex;align-items:center;gap:12px;width:100%;text-align:left;background:none;border:0;padding:14px 15px;cursor:pointer">' +
+        '<span style="flex-shrink:0;width:28px;height:28px;border-radius:8px;display:flex;align-items:center;justify-content:center;'+mono+';font-size:12px;font-weight:600;background:'+numBg+';color:'+numFg+'">'+pad(r.idx+1)+'</span>' +
+        '<span style="flex:1;min-width:0;font-size:14px;line-height:1.45;color:#39404f;overflow:hidden;text-overflow:ellipsis;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical">'+esc(r.q.question)+'</span>' +
+        '<span style="flex-shrink:0;'+mono+';font-size:16px;color:#8a8578;width:16px;text-align:center">'+(open?'−':'+')+'</span>' +
+      '</button>' + body + '</div>';
+  }).join('');
+
+  document.getElementById('stage').innerHTML =
+    '<section style="padding:34px 0 0;animation:qFade .3s ease">' +
+      '<div style="'+mono+';font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:#2b57cc;margin-bottom:14px">Resultado</div>' +
+      '<h2 style="font-family:\'Newsreader\',Georgia,serif;font-size:36px;line-height:1.12;font-weight:400;letter-spacing:-.025em;margin:0 0 8px">'+title+'</h2>' +
+      '<p style="font-size:15px;line-height:1.6;color:#5b6478;margin:0 0 24px;max-width:48ch;text-wrap:pretty">'+msg+'</p>' +
+      '<div style="height:8px;border-radius:99px;background:#e4e0d8;overflow:hidden;margin-bottom:10px">' +
+        '<div style="height:100%;border-radius:99px;background:#121a2b;transition:width .7s cubic-bezier(.22,1,.36,1);width:'+pct+'%"></div></div>' +
+      '<div style="display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:#e4e0d8;border:1px solid #e4e0d8;border-radius:14px;overflow:hidden;margin-bottom:34px">' +
+        stat(c.hit,'Certas','#2e7d55')+stat(c.miss,'Erradas','#c04437')+stat(c.blank,'Branco','#8a8578')+stat(pct+'%','Aproveit.','#2b57cc') +
+      '</div>' +
+      '<div style="display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-bottom:14px">' +
+        '<h3 style="font-family:\'Newsreader\',Georgia,serif;font-size:22px;font-weight:500;letter-spacing:-.015em;margin:0">Gabarito comentado</h3>' +
+        '<button type="button" data-act="toggleAll" class="h-ink" style="background:none;border:0;padding:6px 0;'+mono+';font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:#5b6478;cursor:pointer;text-decoration:underline;text-underline-offset:3px">'+(allOpen?'Recolher tudo':'Expandir tudo')+'</button>' +
+      '</div>' +
+      '<div style="display:flex;gap:7px;flex-wrap:wrap;margin-bottom:16px">'+filters+'</div>' +
+      '<div style="display:flex;flex-direction:column;gap:8px">'+cards+'</div>' +
+      (list.length===0 ? '<div style="padding:38px 16px;text-align:center;color:#8a8578;font-size:14px;border:1px dashed #ddd8ce;border-radius:14px">Nenhuma questão neste filtro.</div>' : '') +
+      '<div style="display:flex;flex-wrap:wrap;gap:9px;margin-top:28px;padding-top:24px;border-top:1px solid #e4e0d8">' +
+        '<button type="button" data-act="restart" class="h-darkflat" style="background:#121a2b;color:#f5f3ef;border:0;border-radius:11px;padding:13px 24px;font-size:14px;font-weight:500;cursor:pointer;transition:background .16s ease">Refazer o quiz</button>' +
+        '<button type="button" data-act="back" class="h-line" style="background:none;border:1px solid #ddd8ce;border-radius:11px;padding:13px 22px;font-size:14px;cursor:pointer;transition:border-color .15s ease">Voltar às questões</button>' +
+        '<button type="button" data-act="resumo" class="h-line" style="background:none;border:1px solid #ddd8ce;border-radius:11px;padding:13px 22px;font-size:14px;cursor:pointer;transition:border-color .15s ease">Ler o resumo</button>' +
+      '</div></section>';
+}
+
+/* ── render + eventos ──────────────────────────────────────────────────────── */
+
+/* ─── Tutor DeepSeek — só local, só quando a questão foi errada ──────────────
+   A chave vem de ../deepseek_key.js, que não existe na versão publicada: online
+   o arquivo dá 404, dsOn() vira false e o chat simplesmente não é renderizado.
+   O histórico fica em S.chat[idDaQuestao] e sobrevive ao re-render do stage. */
+var DS_MODEL = 'deepseek-flash';
+var DS_URL   = 'https://api.deepseek.com/chat/completions';
+var NLJS     = String.fromCharCode(10);
+var DS_MONO  = "font-family:'IBM Plex Mono',monospace";
+var DS_SANS  = "font-family:'IBM Plex Sans',system-ui,sans-serif";
+
+function dsOn(){ return typeof window.DEEPSEEK_KEY === 'string' && window.DEEPSEEK_KEY.length > 10; }
+
+
+/* ─── markdown do chat ───────────────────────────────────────────────────────
+   O modelo responde em markdown (**negrito**, listas, `codigo`, tabelas). O texto
+   vem de fora, entao a ordem importa: ESCAPA TUDO primeiro com esc() e so depois
+   aplica formatacao — assim nenhuma tag vinda da resposta vira HTML de verdade.
+   Como esc() ja trocou > por &gt;, a citacao casa com &gt; e nao com >.
+   Trechos de codigo saem de cena por um marcador NUL, que nao pode existir
+   no texto escapado, e voltam no fim — assim ` ` protege o que esta dentro. */
+function mdIn(t){
+  var Z = String.fromCharCode(0), codes = [];
+  t = t.replace(/`([^`]+)`/g, function(_, c){
+    codes.push(c);
+    return Z + 'c' + (codes.length - 1) + Z;
+  });
+  t = t.replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>');
+  t = t.replace(/__([^_]+)__/g, '<strong>$1</strong>');
+  t = t.replace(/(^|[\s(])\*([^*\n]+)\*/g, '$1<em>$2</em>');
+  t = t.replace(/(^|[\s(])_([^_\n]+)_/g, '$1<em>$2</em>');
+  t = t.replace(/\[([^\]]+)\]\((https?:\/\/[^)\s]+)\)/g,
+    '<a href="$2" target="_blank" rel="noopener" style="color:#2b57cc">$1</a>');
+  return t.replace(new RegExp(Z + 'c([0-9]+)' + Z, 'g'), function(_, i){
+    return '<code style="' + DS_MONO + ';font-size:12px;background:#f2efe9;' +
+           'border-radius:4px;padding:1px 5px">' + codes[i] + '</code>';
+  });
+}
+
+function mdChat(txt){
+  var Z = String.fromCharCode(0);
+  var t = esc(String(txt == null ? '' : txt));
+  var blocos = [];
+  t = t.replace(/```[a-zA-Z]*\n?([\s\S]*?)```/g, function(_, c){
+    blocos.push(c.replace(/\n+$/, ''));
+    return Z + 'b' + (blocos.length - 1) + Z;
+  });
+
+  var linhas = t.split('\n'), out = [], lista = null, par = [];
+  function fechaLista(){ if (lista) { out.push('</' + lista + '>'); lista = null; } }
+  function fechaPar(){
+    if (par.length) { out.push('<p style="margin:0 0 9px">' + mdIn(par.join(' ')) + '</p>'); par = []; }
+  }
+  function fecha(){ fechaPar(); fechaLista(); }
+
+  for (var i = 0; i < linhas.length; i++){
+    var l = linhas[i], t2 = l.trim();
+    if (!t2) { fecha(); continue; }
+
+    var bl = t2.match(new RegExp('^' + Z + 'b([0-9]+)' + Z + '$'));
+    if (bl) {
+      fecha();
+      out.push('<pre style="margin:0 0 9px;padding:9px 11px;background:#f7f6f2;border-radius:9px;' +
+               'overflow-x:auto;' + DS_MONO + ';font-size:12px;line-height:1.5">' + blocos[bl[1]] + '</pre>');
+      continue;
+    }
+
+    // tabela: linha com | ... | seguida da separadora | --- | --- |
+    if (t2.charAt(0) === '|' && i + 1 < linhas.length && /^\|[\s:|-]+\|$/.test(linhas[i+1].trim())) {
+      fecha();
+      var celulas = function(linha){
+        return linha.trim().replace(/^\||\|$/g, '').split('|').map(function(c){ return mdIn(c.trim()); });
+      };
+      var cab = celulas(t2), corpo = [];
+      i += 2;
+      while (i < linhas.length && linhas[i].trim().charAt(0) === '|') { corpo.push(celulas(linhas[i].trim())); i++; }
+      i--;
+      var cel = 'padding:5px 9px;border-bottom:1px solid #eae6de;text-align:left;vertical-align:top';
+      out.push('<div style="overflow-x:auto;margin:0 0 9px">' +
+        '<table style="border-collapse:collapse;font-size:12.5px;width:100%">' +
+        '<thead><tr>' + cab.map(function(c){ return '<th style="' + cel + ';font-weight:600">' + c + '</th>'; }).join('') + '</tr></thead>' +
+        '<tbody>' + corpo.map(function(r){
+          return '<tr>' + r.map(function(c){ return '<td style="' + cel + '">' + c + '</td>'; }).join('') + '</tr>';
+        }).join('') + '</tbody></table></div>');
+      continue;
+    }
+
+    var h = t2.match(/^#{1,6}\s+(.*)$/);
+    if (h) {
+      fecha();
+      out.push('<div style="font-weight:600;color:#121a2b;margin:11px 0 5px">' + mdIn(h[1]) + '</div>');
+      continue;
+    }
+
+    if (/^(---+|\*\*\*+)$/.test(t2)) {
+      fecha();
+      out.push('<hr style="border:0;border-top:1px solid #eae6de;margin:11px 0">');
+      continue;
+    }
+
+    var cit = t2.match(/^&gt;\s?(.*)$/);
+    if (cit) {
+      fecha();
+      out.push('<div style="margin:0 0 9px;padding:7px 11px;border-left:2.5px solid #c9d6f7;' +
+               'background:#f7f9fe;border-radius:0 7px 7px 0">' + mdIn(cit[1]) + '</div>');
+      continue;
+    }
+
+    var mUl = t2.match(/^[-*•]\s+(.*)$/);
+    var mOl = t2.match(/^\d+[.)]\s+(.*)$/);
+    if (mUl || mOl) {
+      var tipo = mUl ? 'ul' : 'ol';
+      fechaPar();
+      if (lista !== tipo) {
+        fechaLista();
+        out.push('<' + tipo + ' style="margin:0 0 9px;padding-left:19px">');
+        lista = tipo;
+      }
+      out.push('<li style="margin:3px 0">' + mdIn((mUl || mOl)[1]) + '</li>');
+      continue;
+    }
+
+    fechaLista();
+    par.push(t2);
+  }
+  fecha();
+  return out.join('');
+}
+
+function msgHTML(m){
+  if (m.role === 'user')
+    return '<div style="margin:0 0 10px;text-align:right">' +
+      '<span style="display:inline-block;max-width:88%;text-align:left;background:#f2efe9;' +
+      'border-radius:12px 12px 3px 12px;padding:9px 12px;font-size:13.5px;line-height:1.6;' +
+      'color:#39404f;text-wrap:pretty">' + esc(m.content) + '</span></div>';
+  return '<div style="margin:0 0 12px">' +
+    '<div style="' + DS_MONO + ';font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;' +
+    'color:#2b57cc;margin-bottom:4px">DeepSeek</div>' +
+    '<div style="font-size:13.5px;line-height:1.65;color:#39404f;text-wrap:pretty">' +
+    mdChat(m.content) + '</div></div>';
+}
+
+function chatBox(q, acertou){
+  if (!dsOn()) return '';
+  var chamada = acertou ? 'Quer ir mais fundo?' : 'Ainda com dúvida?';
+  var dica = acertou ? 'Por que as outras estão erradas?' : 'Por que a que eu marquei está errada?';
+  var hist = (S.chat[q.id] || []).map(msgHTML).join('');
+  return '<div id="ds" data-qid="' + q.id + '" style="margin-top:14px;border:1px solid #e4e0d8;' +
+      'border-radius:14px;background:#fff;overflow:hidden;animation:qFade .26s ease">' +
+      '<div style="display:flex;align-items:center;gap:8px;padding:11px 15px;' +
+        'border-bottom:1px solid #f0ede6;background:#faf9f6">' +
+        '<span style="' + DS_MONO + ';font-size:10px;letter-spacing:.16em;text-transform:uppercase;' +
+        'color:#2b57cc">' + chamada + '</span>' +
+        '<span style="font-size:12px;color:#8a8578">pergunte ao DeepSeek</span></div>' +
+      '<div id="dsLog" style="max-height:280px;overflow-y:auto;padding:' + (hist ? '12px 15px' : '0') + '">' +
+        hist + '</div>' +
+      '<div style="display:flex;gap:8px;padding:11px 12px;border-top:1px solid #f0ede6">' +
+        '<input id="dsIn" type="text" autocomplete="off" ' +
+          'placeholder="' + dica + '" ' +
+          'style="flex:1;min-width:0;border:1px solid #e4e0d8;border-radius:10px;padding:10px 12px;' +
+          'font-size:13.5px;' + DS_SANS + ';color:#121a2b;background:#fff;outline:none">' +
+        '<button type="button" data-act="dsSend" class="h-darkflat" style="flex-shrink:0;' +
+          'background:#121a2b;color:#f5f3ef;border:0;border-radius:10px;padding:10px 16px;' +
+          'font-size:13px;font-weight:500;cursor:pointer;transition:background .16s ease">Enviar</button>' +
+      '</div></div>';
+}
+
+function dsContexto(q, ans){
+  var alts = q.options.map(function(o, n){ return LETTERS[n] + ') ' + o; }).join(NLJS);
+  return 'Questao: ' + q.question + NLJS + alts + NLJS +
+    'Resposta correta: ' + LETTERS[q.correctIndex] + ') ' + q.options[q.correctIndex] + NLJS +
+    'O estudante marcou: ' + (ans === null ? 'nada' : LETTERS[ans] + ') ' + q.options[ans]) + NLJS +
+    'Explicacao que ele ja tem: ' + q.explanation;
+}
+
+A.dsSend = function(){
+  var box = document.getElementById('ds');
+  if (!box || !dsOn() || box.getAttribute('data-busy')) return;
+  var input = document.getElementById('dsIn'), log = document.getElementById('dsLog');
+  var texto = (input.value || '').trim();
+  if (!texto) return;
+
+  var qid = parseInt(box.getAttribute('data-qid'), 10), q = null, ans = null;
+  for (var i = 0; i < S.order.length; i++)
+    if (S.order[i].id === qid) { q = S.order[i]; ans = S.answers[i]; }
+  if (!q) return;
+
+  S.chat[qid] = S.chat[qid] || [];
+  S.chat[qid].push({ role:'user', content:texto });
+  input.value = '';
+  log.style.padding = '12px 15px';
+  log.insertAdjacentHTML('beforeend', msgHTML({ role:'user', content:texto }));
+  log.insertAdjacentHTML('beforeend',
+    '<div><div style="' + DS_MONO + ';font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;' +
+    'color:#2b57cc;margin-bottom:4px">DeepSeek</div>' +
+    '<div id="dsTxt" style="font-size:13.5px;line-height:1.65;color:#8a8578;' +
+    'text-wrap:pretty">pensando…</div></div>');
+  log.scrollTop = log.scrollHeight;
+  box.setAttribute('data-busy', '1');
+
+  var acertou = (ans === q.correctIndex);
+  var situacao = acertou
+    ? 'Voce e um tutor de medicina. O estudante do 7o semestre ACERTOU esta questao, mas ficou com uma duvida. '
+    : 'Voce e um tutor de medicina. O estudante do 7o semestre ERROU esta questao. ';
+  var msgs = [
+    { role:'system', content: situacao +
+      'Responda em portugues do Brasil, direto ao ponto, no maximo 150 palavras. ' +
+      'Traga o dado concreto (valor, criterio, mecanismo) em vez de generalidade. ' +
+      'Nao repita a explicacao que ele ja tem; foque na duvida que ele trouxe.' },
+    { role:'user', content: dsContexto(q, ans) }
+  ];
+  var h = S.chat[qid];
+  for (var j = 0; j < h.length; j++) msgs.push({ role:h[j].role, content:h[j].content });
+
+  dsStream(msgs, function(txt, fim, erro){
+    var el = document.getElementById('dsTxt');
+    if (!el) { box.removeAttribute('data-busy'); return; }
+    if (erro) { el.style.color = '#c04437'; el.textContent = erro; box.removeAttribute('data-busy'); return; }
+    el.style.color = '#39404f';
+    el.innerHTML = mdChat(txt);
+    var lg = document.getElementById('dsLog'); if (lg) lg.scrollTop = lg.scrollHeight;
+    if (fim) { el.removeAttribute('id'); S.chat[qid].push({ role:'assistant', content:txt }); box.removeAttribute('data-busy'); }
+  });
+};
+
+function dsStream(messages, cb){
+  var acc = '';
+  fetch(DS_URL, {
+    method: 'POST',
+    headers: { 'Content-Type':'application/json', 'Authorization':'Bearer ' + window.DEEPSEEK_KEY },
+    body: JSON.stringify({ model:DS_MODEL, messages:messages, stream:true, max_tokens:1200, temperature:0.3 })
+  }).then(function(r){
+    if (!r.ok) return r.text().then(function(t){
+      throw new Error(
+        r.status === 401 ? 'Chave recusada (401). Confira o deepseek_key.js.' :
+        r.status === 402 ? 'Sem saldo na conta DeepSeek (402).' :
+        r.status === 429 ? 'Limite de uso atingido (429). Tente daqui a pouco.' :
+        'Erro ' + r.status + ': ' + String(t).slice(0, 120));
+    });
+    var reader = r.body.getReader(), dec = new TextDecoder(), buf = '';
+    (function pump(){
+      return reader.read().then(function(res){
+        if (res.done) { cb(acc || '(resposta vazia)', true); return; }
+        buf += dec.decode(res.value, { stream:true });
+        var linhas = buf.split(NLJS);
+        buf = linhas.pop();
+        for (var i = 0; i < linhas.length; i++){
+          var l = linhas[i].trim();
+          if (l.indexOf('data:') !== 0) continue;
+          var carga = l.slice(5).trim();
+          if (carga === '[DONE]') continue;
+          try {
+            var d = JSON.parse(carga).choices[0].delta;
+            if (d && d.content) { acc += d.content; cb(acc, false); }
+          } catch (_){}
+        }
+        return pump();
+      });
+    })();
+  }).catch(function(e){
+    cb('', true, 'Nao consegui falar com o DeepSeek: ' + (e && e.message ? e.message : e));
+  });
+}
+
+function render(){
+  renderHeader();
+  if (S.view === 'home')        renderHome();
+  else if (S.view === 'resumo') renderResumo();
+  else if (S.finished)          renderResult();
+  else                          renderQuestion();
+}
+
+/* lightbox: clique em qualquer figura amplia */
+document.addEventListener('click', function(e){
+  var lb = document.getElementById('lb');
+  if (e.target.closest('#lb')) { lb.className = ''; return; }
+  var img = e.target.closest('.fig img');
+  if (img) { lb.firstElementChild.src = img.src; lb.className = 'on'; }
+});
+window.addEventListener('keydown', function(e){
+  if (e.key === 'Escape') document.getElementById('lb').className = '';
+});
+
+document.addEventListener('click', function(e){
+  var b = e.target.closest('[data-act]'); if (!b) return;
+  var act = b.getAttribute('data-act'), n = parseInt(b.getAttribute('data-n'),10), k = b.getAttribute('data-k');
+  if (act==='pick'||act==='jump'||act==='toggle') A[act](n);
+  else if (act==='filter') A.filter(k);
+  else if (A[act]) A[act]();
+});
+
+window.addEventListener('keydown', function(e){
+  if (S.view!=='quiz' || !S.started || S.finished) return;
+  var t = e.target, tag = t && t.tagName;
+  if (tag==='INPUT' || tag==='TEXTAREA' || (t && t.isContentEditable)) return;
+  if (e.metaKey||e.ctrlKey||e.altKey) return;
+  if (e.key==='ArrowRight')     { e.preventDefault(); A.go(S.i+1); }
+  else if (e.key==='ArrowLeft') { e.preventDefault(); A.go(S.i-1); }
+  else if (e.key==='Enter')     { e.preventDefault(); A.next(); }
+  else if (/^[1-6]$/.test(e.key)) {
+    var n = parseInt(e.key,10)-1;
+    if (n < S.order[S.i].options.length) A.pick(n);
+  }
+});
+
+render();
+</script>
+</body>
+</html>

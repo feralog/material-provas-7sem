@@ -1,0 +1,352 @@
+{
+  "titulo": "Arritmias",
+  "eyebrow": "Práticas · Urgência e Emergência",
+  "subtitulo": "Estável ou instável decide tudo: ritmo, droga, choque ou marca-passo.",
+  "intro": "Abordagem prática das arritmias na emergência: critérios de instabilidade, reconhecimento dos bloqueios e das taquicardias no ECG, atropina, drogas vasoativas e marca-passo transcutâneo, manobra vagal, adenosina, amiodarona e cardioversão elétrica sincronizada pelo protocolo OSASCO.",
+  "questoes": [
+    {
+      "question": "Paciente com taquicardia de 170 bpm e pulso presente. Qual achado, isoladamente, já o classifica como instável e indica cardioversão elétrica?",
+      "options": [
+        "PA sistólica de 82 mmHg com extremidades frias e pegajosas",
+        "Frequência respiratória de 22 irpm, sem uso de musculatura",
+        "Palpitação intensa iniciada há quarenta minutos, em repouso",
+        "Saturação de 95% em ar ambiente e pulso radial cheio e forte"
+      ],
+      "correctIndex": 0,
+      "explanation": "Os critérios de instabilidade são PA sistólica < 90 mmHg, rebaixamento do nível de consciência, sinais de choque (hipoperfusão), dor torácica e dispneia. Hipotensão com extremidades frias preenche dois deles de uma vez; palpitação, por mais intensa, é sintoma e não critério de instabilidade."
+    },
+    {
+      "question": "Paciente consciente chega com palpitação e FC de 180 bpm no oxímetro. Antes de decidir a conduta da arritmia, qual a sequência inicial correta?",
+      "options": [
+        "MOVE (monitor, O2 se hipoxêmico, veia, ECG), ABCDE e definir estabilidade",
+        "Adenosina 6 mg em bolus imediato, depois ECG de 12 derivações e ABCDE",
+        "Cardioversão sincronizada com 100 J e, após o choque, monitor e ABCDE",
+        "Massagem do seio carotídeo, depois acesso venoso e dosagem de eletrólitos"
+      ],
+      "correctIndex": 0,
+      "explanation": "Se o paciente se move (responde e tem pulso), a primeira etapa é o MOVE — monitorização, oxigênio se SatO2 < 94%, acesso venoso e ECG de 12 derivações — junto com o ABCDE. Só então se classifica estável × instável, que é o que define a conduta."
+    },
+    {
+      "question": "Em um paciente com bradiarritmia, qual achado eletrocardiográfico define o bloqueio atrioventricular de 1º grau?",
+      "options": [
+        "Intervalo PR acima de 200 ms, com toda onda P seguida de QRS",
+        "PR que se alarga progressivamente até uma onda P não conduzida",
+        "PR constante, com uma onda P bloqueada subitamente, sem aviso",
+        "Ondas P e QRS independentes, sem relação fixa entre si no traçado"
+      ],
+      "correctIndex": 0,
+      "explanation": "No BAV de 1º grau toda P conduz, só que devagar: PR > 0,20 s (mais de cinco quadradinhos). O alargamento progressivo até uma P bloqueada é Mobitz I; a P bloqueada de repente com PR fixo é Mobitz II; a dissociação completa é o BAVT."
+    },
+    {
+      "question": "Observe o traçado identificado como BAV de 2º grau Mobitz I na figura (marcações em vermelho). O que caracteriza esse bloqueio?",
+      "options": [
+        "Prolongamento progressivo do PR até uma onda P não ser conduzida",
+        "Intervalo PR fixo e prolongado, com todas as ondas P conduzidas",
+        "Bloqueio súbito de uma onda P, com intervalo PR constante antes",
+        "Dissociação completa entre as ondas P e os complexos QRS do ECG"
+      ],
+      "correctIndex": 0,
+      "explanation": "Mobitz I (fenômeno de Wenckebach) é o bloqueio que 'avisa': o PR cresce batimento a batimento até que uma P fica sem QRS, e o ciclo recomeça. Costuma ser nodal e benigno, ao contrário do Mobitz II, em que a P é bloqueada sem aviso, com PR constante.",
+      "image": "pg06",
+      "imageCaption": "Bradiarritmias: bradicardia sinusal, BAV de 1º, 2º (Mobitz I e II) e 3º grau"
+    },
+    {
+      "question": "Por que o BAV de 2º grau Mobitz II preocupa mais que o Mobitz I na sala de emergência?",
+      "options": [
+        "É infranodal, bloqueia sem aviso e pode evoluir para BAV total",
+        "É nodal, com PR crescente, e costuma não responder ao marca-passo",
+        "Causa sempre FC abaixo de 30 bpm e assistolia nas primeiras horas",
+        "É vagal e funcional, típico de atletas, e desaparece com o esforço"
+      ],
+      "correctIndex": 0,
+      "explanation": "No Mobitz II a P é bloqueada de repente, com PR constante: o bloqueio costuma estar abaixo do nó AV (sistema His-Purkinje), responde mal à atropina e pode progredir para BAVT. Por isso o destino é o marca-passo."
+    },
+    {
+      "question": "Paciente com BAV de 3º grau (dissociação AV completa, escape de QRS largo), PA 70/40 mmHg e sonolento. Qual a conduta mais efetiva?",
+      "options": [
+        "Marca-passo transcutâneo, pois a atropina costuma ser ineficaz",
+        "Atropina 1 mg repetida até 6 mg, pois o bloqueio é sempre nodal",
+        "Adenosina 6 mg em bolus para restabelecer a condução AV normal",
+        "Cardioversão sincronizada de 100 J para reorganizar o ritmo AV"
+      ],
+      "correctIndex": 0,
+      "explanation": "No BAVT nenhuma P conduz; com escape de QRS largo o bloqueio é infranodal e a atropina, que age pelo vago sobre os nós sinusal e AV, praticamente não funciona. A conduta para o BAVT instável é marca-passo; a dose máxima de atropina é 3 mg."
+    },
+    {
+      "question": "Bradicardia sinusal com FC de 38 bpm, PA 78/40 mmHg e confusão mental. Qual a primeira medida farmacológica?",
+      "options": [
+        "Atropina 1 mg EV, repetida a cada 3 a 5 minutos até 3 mg",
+        "Atropina 0,5 mg EV, repetida a cada 10 minutos até 1 mg",
+        "Adrenalina 1 mg EV em bolus, repetida a cada 3 a 5 minutos",
+        "Adenosina 6 mg EV em bolus rápido, seguida de 12 mg se falhar"
+      ],
+      "correctIndex": 0,
+      "explanation": "Bradicardia (FC < 50 bpm) com critérios de instabilidade pede atropina 1 mg EV, repetida a cada 3–5 minutos, até a dose máxima de 3 mg. Adrenalina 1 mg em bolus é dose de parada cardíaca, não de bradicardia com pulso."
+    },
+    {
+      "question": "Bradicardia instável sem resposta a 3 mg de atropina, enquanto o marca-passo é preparado. Qual infusão está indicada e em que dose?",
+      "options": [
+        "Adrenalina 2 a 10 mcg/min ou dopamina 5 a 20 mcg/kg/min",
+        "Adrenalina 1 mg em bolus ou dopamina 1 a 2 mcg/kg/min",
+        "Noradrenalina 0,5 mg/kg/h ou dobutamina 40 mcg/kg/min",
+        "Amiodarona 150 mg em 10 min ou adenosina 6 mg em bolus"
+      ],
+      "correctIndex": 0,
+      "explanation": "Sem resposta à atropina, as opções são droga vasoativa com efeito cronotrópico — adrenalina 2–10 mcg/min ou dopamina 5–20 mcg/kg/min — ou marca-passo transcutâneo. Dopamina a 1–2 mcg/kg/min é dose 'dopaminérgica', sem efeito útil sobre a frequência."
+    },
+    {
+      "question": "Na urgência, qual FC define bradiarritmia e o que justifica tratá-la de imediato?",
+      "options": [
+        "FC abaixo de 50 bpm associada a critérios de instabilidade",
+        "FC abaixo de 60 bpm, mesmo em paciente assintomático e estável",
+        "FC abaixo de 40 bpm, independentemente de haver sintomas",
+        "FC abaixo de 50 bpm associada a qualquer bloqueio no ECG"
+      ],
+      "correctIndex": 0,
+      "explanation": "No algoritmo de urgência, bradiarritmia é FC < 50 bpm, e o que define a conduta imediata é a instabilidade (choque/hipotensão, rebaixamento de consciência, dispneia, dor torácica). Bradicardia estável é monitorada e investigada."
+    },
+    {
+      "question": "Na figura, o painel do desfibrilador em modo marca-passo tem três controles. Depois de posicionar as pás e definir a FC, o que se aumenta progressivamente até haver captura?",
+      "options": [
+        "A corrente de estimulação em mA, partindo do menor valor",
+        "A frequência de estimulação, subindo de 10 em 10 bpm até 150",
+        "A carga em joules do seletor, iniciando em 100 J sincronizado",
+        "O ganho do ECG no monitor, até as espículas ficarem visíveis"
+      ],
+      "correctIndex": 0,
+      "explanation": "No marca-passo transcutâneo a FC é definida antes (em geral 60–80 bpm) e a energia — a taxa de estimulação em miliampères — sobe a partir do menor valor até cada espícula ser seguida de QRS (captura). Joule é unidade de choque, não de estimulação.",
+      "image": "pg11",
+      "imageCaption": "Painel do marca-passo: iniciar/parar, frequência (ppm) e corrente (mA)"
+    },
+    {
+      "question": "Após iniciar o marca-passo transcutâneo, o monitor mostra cada espícula seguida de um QRS largo. Qual o próximo passo?",
+      "options": [
+        "Palpar o pulso e reavaliar se o paciente ficou hemodinamicamente estável",
+        "Desligar a estimulação, pois a captura elétrica já reverteu o bloqueio",
+        "Reduzir a corrente até as espículas sumirem, para poupar o paciente",
+        "Sincronizar o aparelho e aplicar choque de 100 J para fixar o ritmo"
+      ],
+      "correctIndex": 0,
+      "explanation": "Espícula seguida de QRS é captura elétrica; ela só vale se houver captura mecânica — pulso palpável na frequência programada. Confirmado o pulso, reavalia-se a estabilidade hemodinâmica, mantendo a corrente um pouco acima do limiar de captura."
+    },
+    {
+      "question": "Paciente consciente em marca-passo transcutâneo, com corrente alta para manter a captura, refere dor intensa. Qual a conduta?",
+      "options": [
+        "Analgesia e sedação, como morfina, mantendo a corrente que captura",
+        "Reduzir a corrente abaixo do limiar, aceitando a perda de captura",
+        "Trocar para cardioversão sincronizada, que é bem menos dolorosa",
+        "Suspender a estimulação e repetir a atropina até a dose de 6 mg"
+      ],
+      "correctIndex": 0,
+      "explanation": "A estimulação transcutânea contrai a musculatura torácica e dói, tanto mais quanto maior a energia necessária para capturar. A conduta é analgesia e sedação (por exemplo, morfina), e não baixar a corrente abaixo do limiar, o que faria perder a captura."
+    },
+    {
+      "question": "Paciente febril e hipotenso após vômitos, com FC de 125 bpm em ritmo sinusal. Qual o raciocínio correto?",
+      "options": [
+        "Taquicardia provavelmente secundária; tratar a causa, sem cardioverter",
+        "Taquicardia instável; cardioversão sincronizada imediata com 100 J",
+        "Taquicardia de QRS estreito; manobra vagal e depois adenosina 6 mg",
+        "Taquicardia irregular; controlar a FC com betabloqueador endovenoso"
+      ],
+      "correctIndex": 0,
+      "explanation": "Com FC abaixo de 150 bpm é improvável que a taquicardia seja a causa da instabilidade; a taquicardia sinusal é resposta a febre, hipovolemia, dor ou sepse e se trata pela causa. Cardioverter ritmo sinusal não tem sentido."
+    },
+    {
+      "question": "Diante de uma taquicardia de QRS largo no monitor, qual a primeira pergunta a responder?",
+      "options": [
+        "Há pulso? Sem pulso, segue-se o protocolo de parada cardíaca",
+        "O QRS é monomórfico? Se for, inicia-se direto a amiodarona",
+        "A FC passa de 200 bpm? Abaixo disso, basta observar o ritmo",
+        "Há onda P visível? Se houver, a conduta é a manobra vagal"
+      ],
+      "correctIndex": 0,
+      "explanation": "A abordagem da taquiarritmia começa por determinar o pulso: TV sem pulso é parada cardíaca e segue o algoritmo de PCR, com desfibrilação. Com pulso, define-se estável × instável e só depois a morfologia do QRS."
+    },
+    {
+      "question": "Na taquiarritmia com pulso, quais duas perguntas sobre o ECG definem o ramo do algoritmo a seguir?",
+      "options": [
+        "Se o QRS é largo ou estreito e se o ritmo é regular ou irregular",
+        "Se há onda P e se cada onda P é seguida de um complexo QRS",
+        "Se o eixo está desviado e se há supradesnivelamento de ST",
+        "Se a onda T é apiculada e se o intervalo QT está aumentado"
+      ],
+      "correctIndex": 0,
+      "explanation": "Na taquiarritmia pergunta-se se o QRS é largo (≥ 120 ms) ou estreito e se o ritmo é regular ou irregular: isso separa TSV, flutter, FA e TV. Existência de onda P e sua condução são as perguntas da bradiarritmia, para classificar os bloqueios."
+    },
+    {
+      "question": "Pelo fluxograma da figura, o paciente estável com taquicardia regular de QRS estreito que persiste após a manobra vagal deve receber:",
+      "options": [
+        "Adenosina 6 mg em bolus rápido, seguida de 12 mg se não reverter",
+        "Amiodarona 150 mg EV, seguida de infusão de 1 mg/min por 6 horas",
+        "Cardioversão elétrica sincronizada com 100 J, após sedação prévia",
+        "Atropina 1 mg EV a cada 3 a 5 minutos até a dose máxima de 3 mg"
+      ],
+      "correctIndex": 0,
+      "explanation": "Taquicardia regular de QRS estreito e estável: manobra vagal; sem reversão, adenosina 6 mg em bolus rápido com flush de soro e, se preciso, 12 mg. Betabloqueador ou bloqueador de canal de cálcio são a alternativa; amiodarona é o ramo do QRS largo e a CVE é para o instável.",
+      "image": "pg16",
+      "imageCaption": "Fluxograma das taquicardias regulares: estáveis × instáveis"
+    },
+    {
+      "question": "Como deve ser administrada a adenosina na taquicardia supraventricular estável?",
+      "options": [
+        "Bolus rápido em veia calibrosa, seguido de flush de 20 mL de soro",
+        "Diluída em 100 mL de soro e infundida em 20 minutos na bomba",
+        "Bolus lento em 2 minutos, para evitar a assistolia transitória",
+        "Intramuscular no deltoide, repetida a cada 5 minutos se falhar"
+      ],
+      "correctIndex": 0,
+      "explanation": "A adenosina tem meia-vida de segundos e precisa chegar concentrada ao coração: bolus rápido em veia proximal calibrosa (antecubital), seguido de flush imediato de 20 mL de soro e elevação do membro. Pausa ou assistolia de poucos segundos é esperada e passageira."
+    },
+    {
+      "question": "Na TSV estável que não reverteu com a primeira dose de adenosina, qual a sequência correta de doses?",
+      "options": [
+        "6 mg, depois 12 mg, podendo repetir 12 mg mais uma vez",
+        "3 mg, depois 6 mg, podendo repetir 6 mg mais duas vezes",
+        "12 mg, depois 18 mg, podendo repetir 24 mg uma vez só",
+        "6 mg, depois 6 mg, podendo repetir 6 mg até cinco vezes"
+      ],
+      "correctIndex": 0,
+      "explanation": "A primeira dose é 6 mg em bolus rápido; sem reversão em 1–2 minutos, 12 mg, e muitos protocolos admitem mais uma dose de 12 mg (três doses no total). O algoritmo da AHA lista 6 mg e uma segunda dose de 12 mg."
+    },
+    {
+      "question": "A figura mostra a manobra de Valsalva modificada para taquicardia supraventricular estável. Qual a sequência correta?",
+      "options": [
+        "Soprar 15 s semissentado, deitar com pernas a 45° por 15 s e voltar",
+        "Massagem carotídea bilateral 15 s, deitar com pernas a 90° por 30 s",
+        "Prender o ar 60 s deitado e depois sentar com as pernas pendentes",
+        "Soprar 5 s em pé, agachar por 15 s e então deitar em decúbito lateral"
+      ],
+      "correctIndex": 0,
+      "explanation": "Semissentado, o paciente faz força expiratória (soprando numa seringa) por 15 s; em seguida é deitado e tem as pernas elevadas passivamente a 45° por 15 s, voltando à posição inicial antes de reavaliar o ritmo. A elevação das pernas aumenta o retorno venoso e reforça o reflexo vagal, elevando bastante a taxa de reversão em relação à Valsalva clássica.",
+      "image": "pg17",
+      "imageCaption": "Manobra de Valsalva modificada: 15 s + 15 s + 30 s"
+    },
+    {
+      "question": "Taquicardia regular de QRS largo e monomórfico, FC 180 bpm, PA 130/80 mmHg, sem dor ou dispneia. Qual o antiarrítmico e a dose?",
+      "options": [
+        "Amiodarona 150 mg EV em 10 minutos, depois 1 mg/min por 6 h",
+        "Amiodarona 300 mg EV em bolus, repetindo 150 mg em 5 minutos",
+        "Verapamil 5 mg EV em bolus, repetindo 10 mg após 15 minutos",
+        "Lidocaína 3 mg/kg EV em bolus, seguida de 4 mg/min por 24 h"
+      ],
+      "correctIndex": 0,
+      "explanation": "TV monomórfica estável: amiodarona 150 mg EV em 10 minutos, repetível se a TV recorrer, seguida de manutenção de 1 mg/min nas primeiras 6 horas, com apoio do especialista. 300 mg em bolus é dose de PCR; verapamil em taquicardia de QRS largo pode precipitar colapso hemodinâmico."
+    },
+    {
+      "question": "Taquicardia regular de QRS largo com pulso, FC 190 bpm, PA 70/40 mmHg e rebaixamento de consciência. Qual a conduta?",
+      "options": [
+        "Cardioversão elétrica sincronizada após sedação, iniciando com 100 J",
+        "Desfibrilação não sincronizada com 360 J monofásico, sem sedação",
+        "Amiodarona 150 mg EV em 10 minutos e reavaliação após a infusão",
+        "Manobra vagal seguida de adenosina 6 mg em bolus rápido endovenoso"
+      ],
+      "correctIndex": 0,
+      "explanation": "Taquicardia com pulso e instável vai direto para cardioversão elétrica sincronizada pelo protocolo OSASCO; na TV monomórfica a carga inicial é 100 J, com aumento progressivo se não reverter. Drogas e manobras são para o paciente estável."
+    },
+    {
+      "question": "Qual a diferença essencial entre cardioversão elétrica sincronizada e desfibrilação?",
+      "options": [
+        "A cardioversão dispara no pico da onda R, evitando a onda T vulnerável",
+        "A cardioversão usa mais energia e é a indicada no paciente sem pulso",
+        "A desfibrilação dispara na onda R; a cardioversão, em qualquer ponto",
+        "A desfibrilação só pode ser feita em aparelho monofásico de 360 J"
+      ],
+      "correctIndex": 0,
+      "explanation": "Na cardioversão o aparelho reconhece o QRS e libera o choque sobre a onda R, fugindo da repolarização (onda T) — choque nesse período vulnerável pode precipitar fibrilação ventricular. A desfibrilação é não sincronizada, usa mais energia (200 J bifásico/360 J monofásico) e é para ritmos sem pulso."
+    },
+    {
+      "question": "No protocolo OSASCO para a cardioversão elétrica, o que significa cada letra, em ordem?",
+      "options": [
+        "Orientar, sedar, ambusar, selecionar e sincronizar, cardioverter, observar",
+        "Oxigenar, sedar, auscultar, sincronizar, comprimir e observar o pulso",
+        "Orientar, suspender drogas, aspirar, sedar, cardioverter e oxigenar",
+        "Observar, sincronizar, anestesiar, selecionar a carga, chocar e orientar"
+      ],
+      "correctIndex": 0,
+      "explanation": "OSASCO: Orientar o paciente; Sedar (com analgesia); Ambusar — bolsa-válvula-máscara pronta, porque a sedação deprime a respiração; Selecionar a carga e Sincronizar; Cardioverter, afastando a equipe; Observar com as pás o ritmo e o pulso."
+    },
+    {
+      "question": "No desfibrilador da figura, por que o botão de sincronização deve ser acionado antes de cardioverter uma TSV instável?",
+      "options": [
+        "Para o choque cair sobre o QRS, e não na onda T, evitando induzir FV",
+        "Para o aparelho escolher sozinho a carga ideal conforme o ritmo atual",
+        "Para liberar o choque mais rápido, sem esperar pelo próximo complexo",
+        "Para converter o aparelho em modo DEA e deixá-lo analisar o ritmo"
+      ],
+      "correctIndex": 0,
+      "explanation": "O SINC faz o aparelho marcar cada onda R e liberar a descarga sobre o próximo QRS. Choque não sincronizado pode cair na onda T, período vulnerável, e precipitar FV. Em muitos aparelhos a sincronização se desliga após cada choque e precisa ser reativada antes do seguinte.",
+      "image": "pg20",
+      "imageCaption": "Desfibrilador: seletor de carga e botão de sincronização"
+    },
+    {
+      "question": "Após a cardioversão sincronizada, o monitor ainda mostra a mesma taquicardia e o paciente mantém pulso. Qual a conduta?",
+      "options": [
+        "Nova cardioversão sincronizada, com aumento da carga",
+        "Iniciar RCP imediatamente pelo protocolo de PCR",
+        "Aguardar 30 minutos e repetir com a mesma carga",
+        "Desfibrilar sem sincronismo, com a carga máxima"
+      ],
+      "correctIndex": 0,
+      "explanation": "Após a CVE palpa-se o pulso: ritmo sinusal com pulso → reavaliar a estabilidade; taquicardia persistente com pulso → nova CVE com carga maior (ressincronizando); sem pulso → protocolo de PCR."
+    },
+    {
+      "question": "Paciente estável com o ritmo do traçado superior da figura (fibrilação atrial, FC 140 bpm). Qual a conduta inicial?",
+      "options": [
+        "Controlar a FC com betabloqueador ou bloqueador de canal de cálcio",
+        "Manobra vagal seguida de adenosina 6 mg e 12 mg em bolus rápido",
+        "Cardioversão elétrica sincronizada imediata, dispensando sedação",
+        "Atropina 1 mg EV a cada 3 a 5 minutos para estabilizar o ritmo"
+      ],
+      "correctIndex": 0,
+      "explanation": "A FA é a taquicardia irregular: sem onda P, linha de base tremida e RR irregularmente irregular. Estável, controla-se a frequência com betabloqueador ou bloqueador de canal de cálcio não di-hidropiridínico (diltiazem, verapamil); instável, CVE. Adenosina não reverte FA.",
+      "image": "pg15",
+      "imageCaption": "Fibrilação atrial, flutter atrial e taquicardia supraventricular"
+    },
+    {
+      "question": "Fibrilação atrial com FC 170 bpm, PA 75/40 mmHg e confusão. Sobre a carga da cardioversão sincronizada, o correto é:",
+      "options": [
+        "Exige carga maior que a TSV; iniciar com 120 a 200 J bifásico",
+        "Exige a mesma carga da TSV; iniciar com 50 J e não aumentar",
+        "Dispensa a sincronização; desfibrilar com 360 J monofásico",
+        "Dispensa o choque; a atropina 1 mg reverte a FA instável"
+      ],
+      "correctIndex": 0,
+      "explanation": "A FA é o ritmo que mais resiste à cardioversão: a carga inicial é 120–200 J bifásico, e as diretrizes mais recentes favorecem já começar em 200 J. TSV e flutter costumam reverter com 50–100 J e a TV monomórfica com 100 J; 100 J como carga única de partida é simplificação que subdoseia a FA."
+    },
+    {
+      "question": "Taquicardia regular de QRS estreito, FC de 150 bpm, com ondas em 'dente de serra' entre os QRS nas derivações inferiores. Qual o diagnóstico?",
+      "options": [
+        "Flutter atrial, provavelmente com condução AV 2:1",
+        "Fibrilação atrial, com resposta ventricular alta",
+        "Taquicardia sinusal, com ondas P de alta amplitude",
+        "Taquicardia ventricular, com dissociação AV visível"
+      ],
+      "correctIndex": 0,
+      "explanation": "O flutter é uma macrorreentrada atrial com cerca de 300 despolarizações por minuto, que desenham as ondas F em dente de serra; com condução 2:1, a FC fica regular em torno de 150 bpm. A adenosina pode expor as ondas F ao lentificar a condução, mas raramente reverte o flutter: estável, controla-se a FC; instável, CVE com 50–100 J."
+    },
+    {
+      "question": "O traçado inferior da figura mostra QRS largos cuja amplitude cresce e diminui, torcendo em torno da linha de base. Com pulso e estabilidade, qual o tratamento específico?",
+      "options": [
+        "Torsades de pointes; sulfato de magnésio 1 a 2 g EV",
+        "Fibrilação atrial; betabloqueador EV para controle",
+        "TV monomórfica; adenosina 6 mg em bolus rápido EV",
+        "Flutter atrial; manobra vagal e depois adenosina"
+      ],
+      "correctIndex": 0,
+      "explanation": "Torsades de pointes é a TV polimórfica do QT longo. O tratamento específico é sulfato de magnésio 1–2 g EV, com correção de potássio e magnésio e suspensão das drogas que alongam o QT; a amiodarona, que alonga o QT, não é a escolha. Instável ou sem pulso: desfibrilação.",
+      "image": "pg14",
+      "imageCaption": "TV monomórfica, TV polimórfica e torsades de pointes"
+    },
+    {
+      "question": "Paciente com TV polimórfica, pulso fraco, PA 60/30 mmHg e torporoso. Por que se usa choque não sincronizado (desfibrilação) e não cardioversão sincronizada?",
+      "options": [
+        "O QRS de forma variável impede o aparelho de sincronizar com segurança",
+        "A cardioversão sincronizada é contraindicada em todo paciente torporoso",
+        "A desfibrilação usa menos energia e dispensa a sedação do paciente",
+        "A TV polimórfica responde melhor ao choque aplicado sobre a onda T"
+      ],
+      "correctIndex": 0,
+      "explanation": "Na TV polimórfica o QRS muda de forma e amplitude a cada batimento; o sensor não reconhece a onda R com segurança e pode atrasar ou nem liberar o choque. Por isso, instável, ela recebe energia de desfibrilação sem sincronismo; a sincronização fica para a TV monomórfica e as supraventriculares."
+    }
+  ]
+}

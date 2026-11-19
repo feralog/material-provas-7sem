@@ -1,0 +1,346 @@
+{
+  "titulo": "Protocolo ABCDE e Dispositivos",
+  "eyebrow": "Práticas · Urgência e Emergência",
+  "subtitulo": "Sequência da sala de emergência, do primeiro contato ao E.",
+  "intro": "Ordem de atendimento (responde ou não, PCR, MOVE e XABCDE), monitorização e carrinho de parada, dispositivos de oxigênio com fluxos e FiO₂, acesso venoso e glicemia capilar, e o que avaliar e quando intervir em cada letra do ABCDE — o roteiro de uma estação de simulação.",
+  "questoes": [
+    {
+      "question": "Um homem é encontrado caído no corredor do pronto-socorro e não responde ao chamado nem ao estímulo. Qual é a sequência inicial correta?",
+      "options": [
+        "Chamar ajuda, pedir carrinho/DEA e checar respiração e pulso carotídeo juntos em 5–10 s",
+        "Iniciar compressões de imediato, sem checar pulso, e só depois pedir ajuda e o DEA",
+        "Instalar o MOVE completo e só depois checar respiração e pulso carotídeo por 30 s",
+        "Abrir a via aérea, fazer duas ventilações e então checar o pulso radial por 10 s"
+      ],
+      "correctIndex": 0,
+      "explanation": "Diante de quem não responde, a primeira ação é acionar ajuda e o carrinho de parada/DEA e checar, ao mesmo tempo, respiração e pulso carotídeo, em 5 a 10 segundos. Só a ausência de pulso define PCR e leva à RCP (C-A-B); com pulso, segue-se MOVE + ABCDE. Gastar 30 s na checagem, ventilar antes de checar ou usar o pulso radial atrasa a decisão."
+    },
+    {
+      "question": "Paciente não responde ao chamado, mas tem pulso carotídeo palpável e respira espontaneamente. Qual a conduta?",
+      "options": [
+        "Seguir MOVE + ABCDE, pois inconsciência sozinha não define parada",
+        "Iniciar RCP 30:2, pois não responder ao chamado já define parada",
+        "Aplicar choque de 200 J antes de olhar o ritmo no monitor",
+        "Fazer adrenalina 1 mg EV e reavaliar o pulso em 2 minutos"
+      ],
+      "correctIndex": 0,
+      "explanation": "Inconsciente não é sinônimo de parada. Com pulso presente, o atendimento segue MOVE (monitorização, oxigênio, veia, ECG) em paralelo ao ABCDE. RCP, choque e adrenalina são condutas de PCR, ou seja, de paciente sem pulso."
+    },
+    {
+      "question": "Qual combinação descreve compressões torácicas de alta qualidade na RCP do adulto sem via aérea avançada?",
+      "options": [
+        "30:2, 100–120/min, profundidade de 5–6 cm e retorno total do tórax",
+        "15:2, 100–120/min, profundidade de 4–5 cm e retorno parcial do tórax",
+        "30:2, 80–100/min, profundidade de 3–4 cm e retorno total do tórax",
+        "30:2, 120–140/min, profundidade de 6–7 cm e retorno parcial do tórax"
+      ],
+      "correctIndex": 0,
+      "explanation": "RCP de alta qualidade no adulto: relação 30:2, frequência de 100 a 120 compressões por minuto, profundidade de 5 a 6 cm, retorno total do tórax entre as compressões e mínimo de interrupções. O retorno total permite que o coração se encha entre uma compressão e outra."
+    },
+    {
+      "question": "Paciente em PCR com fibrilação ventricular que persiste após os choques. Quais doses de adrenalina e de amiodarona são usadas?",
+      "options": [
+        "Adrenalina 1 mg EV/IO a cada 3–5 min; amiodarona 300 mg, depois 150 mg",
+        "Adrenalina 1 mg EV/IO a cada 10 min; amiodarona 150 mg, depois 300 mg",
+        "Adrenalina 3 mg EV/IO em dose única; amiodarona 300 mg, depois 300 mg",
+        "Adrenalina 0,5 mg EV/IO a cada 3–5 min; amiodarona 450 mg em bolus único"
+      ],
+      "correctIndex": 0,
+      "explanation": "FV e TV sem pulso são ritmos chocáveis: choque bifásico de 120 a 200 J, adrenalina 1 mg EV/IO a cada 3 a 5 minutos e, se o ritmo chocável for refratário, amiodarona 300 mg na primeira dose e 150 mg na segunda."
+    },
+    {
+      "question": "No mnemônico MOVE, usado em paralelo ao ABCDE no paciente que responde, o que significa a letra E?",
+      "options": [
+        "Eletrocardiograma de 12 derivações, em até 10 min na dor torácica",
+        "Exame físico completo, feito antes de qualquer monitorização",
+        "Exposição do paciente, com retirada das roupas e manta térmica",
+        "Escala de Glasgow, aplicada antes da punção do acesso venoso"
+      ],
+      "correctIndex": 0,
+      "explanation": "MOVE = Monitorização, Oxigênio, Veia e Eletrocardiograma de 12 derivações — este em até 10 minutos na dor torácica. O exame físico não é o E do MOVE: o exame físico é o próprio ABCDE, e a Exposição é o E do ABCDE."
+    },
+    {
+      "question": "Durante a avaliação, você instala oxigênio no B e segue para o C, quando o paciente piora subitamente. O que fazer?",
+      "options": [
+        "Reavaliar desde o A, recomeçando a sequência do ABCDE",
+        "Concluir o C, pois letra já avaliada não é revisitada",
+        "Terminar o D e o E e só então reavaliar o paciente",
+        "Aumentar o fluxo de O₂ e seguir direto para o D"
+      ],
+      "correctIndex": 0,
+      "explanation": "Após cada intervenção o paciente é reavaliado; se piorar, recomeça-se pelo A. Monitorização e intervenções acontecem em paralelo, mas a ordem de prioridade é fixa: uma via aérea que se perde mata antes de um problema circulatório."
+    },
+    {
+      "question": "Motociclista com sangramento em jato na coxa, falando normalmente. Pela lógica do XABCDE no trauma, qual a primeira ação?",
+      "options": [
+        "Controlar a hemorragia com compressão direta ou torniquete",
+        "Garantir via aérea definitiva antes de abordar o sangramento",
+        "Auscultar os pulmões e só então abordar o membro sangrante",
+        "Puncionar dois acessos calibrosos antes de comprimir a coxa"
+      ],
+      "correctIndex": 0,
+      "explanation": "No trauma, a sequência é XABCDE: o X é o controle da hemorragia externa grave (compressão direta, torniquete), feito antes da via aérea. Além disso, quem fala normalmente tem via aérea pérvia naquele momento, e não há indicação de IOT."
+    },
+    {
+      "question": "Quais funções as pás adesivas multifunção do monitor/desfibrilador desempenham?",
+      "options": [
+        "Monitorizam o ritmo, desfibrilam, cardiovertem e fazem marca-passo",
+        "Só desfibrilam; o ritmo precisa ser visto pelos cabos de 3 eletrodos",
+        "Monitorizam e desfibrilam, mas não cardiovertem nem fazem marca-passo",
+        "Monitorizam e fazem marca-passo, mas não desfibrilam ritmos chocáveis"
+      ],
+      "correctIndex": 0,
+      "explanation": "As pás adesivas multifunção monitorizam (o ritmo aparece na derivação “Pás”), desfibrilam, cardiovertem no modo sincronizado e fazem marca-passo transcutâneo. O ritmo pode ser lido tanto pelas pás quanto pelos cabos de 3 eletrodos."
+    },
+    {
+      "question": "Ao monitorizar o ritmo com cabos de 3 eletrodos no padrão IEC, qual a posição das cores e qual derivação selecionar?",
+      "options": [
+        "Vermelho sup. direito, amarelo sup. esquerdo, verde inf. esquerdo; DII",
+        "Vermelho sup. esquerdo, amarelo sup. direito, verde inf. direito; DII",
+        "Amarelo sup. direito, vermelho sup. esquerdo, verde inf. esquerdo; aVR",
+        "Verde sup. direito, amarelo sup. esquerdo, vermelho inf. esquerdo; DI"
+      ],
+      "correctIndex": 0,
+      "explanation": "Padrão IEC (o mais usado no Brasil): vermelho no superior direito (“sangue no coração do lado direito”), amarelo no superior esquerdo (“sol em cima”) e verde no inferior esquerdo (“grama embaixo”). A derivação é mudada para DII, a melhor para ver a onda P e identificar o ritmo. Alguns monitores seguem o padrão AHA: branco superior direito, preto superior esquerdo, vermelho inferior esquerdo."
+    },
+    {
+      "question": "Paciente com DPOC retentor de CO₂ chega com SpO₂ de 84%. Qual alvo de saturação guia a oferta de oxigênio?",
+      "options": [
+        "88–92%, evitando a hiperóxia",
+        "94–98%, como em todo paciente",
+        "100%, até estabilizar o quadro",
+        "80–84%, sem ofertar oxigênio"
+      ],
+      "correctIndex": 0,
+      "explanation": "O alvo geral de SpO₂ é 94–98%, com O₂ ofertado se a SpO₂ estiver abaixo de 94%. No DPOC retentor de CO₂ o alvo é 88–92%, e a hiperóxia deve ser evitada. Deixar sem oxigênio quem satura 84% também é erro: o objetivo é titular o O₂, não negá-lo."
+    },
+    {
+      "question": "Paciente recebe oxigênio por cateter nasal tipo óculos a 4 L/min. Usando a tabela, qual a FiO₂ aproximada?",
+      "options": [
+        "Cerca de 36%",
+        "Cerca de 44%",
+        "Cerca de 28%",
+        "Cerca de 60%"
+      ],
+      "correctIndex": 0,
+      "explanation": "O cateter nasal trabalha de 1 a 6 L/min, com FiO₂ de 24% a 44%: parte de cerca de 24% a 1 L/min e soma cerca de 4% a cada litro. A 4 L/min, 24 + 3 × 4 ≈ 36%. Os 44% são o teto, a 6 L/min; acima disso o fluxo só resseca a mucosa, sem ganho real de FiO₂.",
+      "image": "pg02",
+      "imageCaption": "Monitorização e dispositivos de oxigênio de baixo fluxo"
+    },
+    {
+      "question": "Por que a máscara simples exige fluxo mínimo de 5 L/min?",
+      "options": [
+        "Abaixo disso o paciente reinala o CO₂ que fica na máscara",
+        "Abaixo disso o reservatório não enche e a válvula não abre",
+        "Abaixo disso a FiO₂ passa de 90% e provoca hiperóxia",
+        "Abaixo disso o fluxômetro não marca e a esfera não sobe"
+      ],
+      "correctIndex": 0,
+      "explanation": "A máscara simples funciona entre 5 e 10 L/min, com FiO₂ de 35% a 55%. Com menos de 5 L/min, há reinalação do CO₂ expirado que se acumula na máscara. Ela não tem reservatório — reservatório existe nas máscaras parcialmente reinalante e não reinalante."
+    },
+    {
+      "question": "Paciente com pneumonia mantém SpO₂ de 82% com cateter nasal a 5 L/min. Considerando a tabela, qual o escalonamento adequado?",
+      "options": [
+        "Máscara não reinalante a 10–15 L/min, enchendo o reservatório antes",
+        "Máscara parcialmente reinalante a 4 L/min, com o reservatório vazio",
+        "Cateter nasal a 10 L/min, somando cerca de 4% de FiO₂ a cada litro",
+        "Máscara de Venturi no adaptador de 24%, com o fluxo nele indicado"
+      ],
+      "correctIndex": 0,
+      "explanation": "Se a saturação não melhora, escalona-se o dispositivo. A máscara não reinalante, a 10–15 L/min, entrega FiO₂ de cerca de 60–90%, a maior entre os dispositivos de máscara, e o reservatório deve estar cheio antes de colocá-la. Cateter nasal acima de 6 L/min não acrescenta FiO₂, e uma Venturi a 24% seria regredir.",
+      "image": "pg03",
+      "imageCaption": "Dispositivos de oxigênio de maior FiO₂"
+    },
+    {
+      "question": "Por que a máscara não reinalante entrega FiO₂ de 60–90%, e não de 100%?",
+      "options": [
+        "As válvulas laterais reduzem, mas não eliminam, a entrada de ar ambiente",
+        "O ar expirado volta ao reservatório e dilui o oxigênio armazenado no saco",
+        "O fluxômetro só chega a 6 L/min, o que é insuficiente para 100% de FiO₂",
+        "A válvula entre o saco e a máscara fica fechada durante toda a inspiração"
+      ],
+      "correctIndex": 0,
+      "explanation": "Na inspiração, a válvula entre o reservatório e a máscara abre e o paciente inspira o O₂ do saco; na expiração ela fecha, e o ar sai pelas válvulas laterais, que também reduzem a entrada de ar ambiente. Reduzir não é eliminar: algum ar ambiente ainda entra, e a FiO₂ real fica em 60–90%. Ar expirado voltando parcialmente ao reservatório é o que ocorre na máscara parcialmente reinalante."
+    },
+    {
+      "question": "Paciente com DPOC precisa de FiO₂ precisa e estável. Qual dispositivo usar e como ajustá-lo?",
+      "options": [
+        "Máscara de Venturi: o adaptador colorido define a FiO₂ e o fluxo a usar",
+        "Cateter nasal: cada litro soma 4% exatos e torna a FiO₂ fixa e precisa",
+        "Não reinalante: o reservatório fixa a FiO₂ em 60% com fluxo de 10 L/min",
+        "Máscara simples: o fluxo mínimo de 5 L/min fixa a FiO₂ em exatos 35%"
+      ],
+      "correctIndex": 0,
+      "explanation": "A máscara de Venturi entrega FiO₂ fixa entre 24% e 50%, por isso é a ideal no DPOC. Cada adaptador colorido define uma FiO₂ e exige o fluxo impresso nele; as cores mudam conforme o fabricante (em muitos kits, laranja = 50% com 15 L/min), então o adaptador deve sempre ser lido. Nos demais dispositivos a FiO₂ é apenas aproximada."
+    },
+    {
+      "question": "Na régua de gases da sala de emergência (padrão ABNT), qual saída corresponde a cada gás?",
+      "options": [
+        "Verde = oxigênio; amarelo = ar comprimido; cinza = vácuo",
+        "Amarelo = oxigênio; verde = ar comprimido; cinza = vácuo",
+        "Verde = oxigênio; cinza = ar comprimido; amarelo = vácuo",
+        "Cinza = oxigênio; amarelo = ar comprimido; verde = vácuo"
+      ],
+      "correctIndex": 0,
+      "explanation": "Padrão ABNT: verde é oxigênio, amarelo é ar comprimido medicinal e cinza é vácuo (aspiração). O cateter nasal ou a máscara se conectam, pelo extensor, ao fluxômetro da saída verde; ao abrir a válvula, a esfera do fluxômetro sobe e indica o fluxo em L/min."
+    },
+    {
+      "question": "Qual o acesso venoso inicial na sala de emergência e qual a alternativa se a punção falhar?",
+      "options": [
+        "Dois periféricos calibrosos (14–18G) antecubitais; se falhar, intraósseo",
+        "Um central de duplo lúmen como primeira escolha; se falhar, periférico 22G",
+        "Dois periféricos finos (22–24G) no dorso da mão; se falhar, flebotomia",
+        "Um periférico de 20G no antebraço; se falhar, aguardar o acesso central"
+      ],
+      "correctIndex": 0,
+      "explanation": "O padrão são 2 acessos periféricos calibrosos, de 14 a 18G, em fossa antecubital, aproveitando a punção para colher exames. Se a punção periférica falhar, usa-se o acesso intraósseo. O cateter de duplo lúmen é um cateter venoso central e não é a primeira escolha."
+    },
+    {
+      "question": "Etilista é trazido com rebaixamento de consciência; a glicemia capilar mostra “LO”. Considerando a tabela, qual a conduta?",
+      "options": [
+        "Glicose 50% EV (~25 g, 50 mL) com tiamina, reavaliando em minutos",
+        "Insulina regular EV e hidratação, com correção gradual da glicemia",
+        "Aguardar a glicemia sérica do laboratório antes de corrigir",
+        "Soro glicosado 5% lento, sem tiamina, reavaliando em 6 horas"
+      ],
+      "correctIndex": 0,
+      "explanation": "“LO” é leitura abaixo do limite do aparelho: hipoglicemia, assim como valores abaixo de 70 mg/dL. A conduta é glicose 50% EV, cerca de 25 g (50 mL), com resposta em minutos, e tiamina junto em etilistas e desnutridos. Hipoglicemia é causa reversível e rápida de coma e não tolera espera.",
+      "image": "pg04",
+      "imageCaption": "Glicemia capilar — leitura, significado e conduta"
+    },
+    {
+      "question": "A glicemia capilar de um paciente desidratado mostra “HI”. O que essa leitura significa e qual a conduta?",
+      "options": [
+        "Acima do limite do aparelho: hidratação e insulina, com correção gradual",
+        "Hipoglicemia grave: glicose 50% EV imediata e reavaliação em minutos",
+        "Acima do limite do aparelho: insulina em bolus para normalizar em 1 h",
+        "Erro de leitura: repetir o teste e só tratar se o valor for numérico"
+      ],
+      "correctIndex": 0,
+      "explanation": "“HI” significa glicemia acima do limite do aparelho (> ~500–600 mg/dL). A conduta é hidratação e insulina com correção gradual, investigando cetoacidose e estado hiperosmolar (gasometria, cetonas, eletrólitos) — nunca glicose hipertônica. Corrigir rápido demais aumenta o risco de hipoglicemia, hipocalemia e edema cerebral."
+    },
+    {
+      "question": "Paciente com via aérea obstruída por secreção e queda da língua. Qual a ordem correta das condutas?",
+      "options": [
+        "Aspirar → manobras → cânula oro ou nasofaríngea → via aérea definitiva",
+        "Manobras → via aérea definitiva → aspirar → cânula se a IOT falhar",
+        "Cânula orofaríngea → aspirar → manobras → via aérea definitiva",
+        "Via aérea definitiva → aspirar → manobras → cânula nasofaríngea"
+      ],
+      "correctIndex": 0,
+      "explanation": "No A, as condutas seguem uma ordem: aspirar secreções, sangue ou vômito; fazer as manobras (jaw thrust ou chin lift); inserir cânula (Guedel no inconsciente, nasofaríngea no semiconsciente); e, se houver indicação, via aérea definitiva (IOT). Começa-se pelo mais simples e sobe-se de degrau conforme a resposta."
+    },
+    {
+      "question": "Vítima de capotamento, inconsciente, com roncos. Após aspirar a orofaringe, qual manobra de abertura da via aérea é indicada?",
+      "options": [
+        "Anteriorização da mandíbula (jaw thrust), protegendo a coluna cervical",
+        "Inclinação da cabeça com elevação do queixo (chin lift) como primeira opção",
+        "Hiperextensão cervical com coxim sob os ombros para alinhar os eixos",
+        "Lateralização da cabeça e do pescoço para drenar a secreção restante"
+      ],
+      "correctIndex": 0,
+      "explanation": "No trauma, a via aérea é abordada com proteção da coluna cervical, e o jaw thrust (anteriorização da mandíbula) é a manobra de escolha. O chin lift (inclinação da cabeça + elevação do queixo) só é usado quando não há suspeita de lesão cervical. Roncos são sinal de obstrução, típico da queda da língua."
+    },
+    {
+      "question": "Paciente inconsciente, sem reflexo de vômito, precisa de cânula orofaríngea (Guedel). Como medir e inserir no adulto?",
+      "options": [
+        "Da comissura labial ao ângulo da mandíbula; concavidade para cima, girar 180°",
+        "Da narina ao lóbulo da orelha; concavidade para baixo, inserida direto",
+        "Da comissura labial ao lóbulo da orelha; inserida de frente, sem girar",
+        "Dos incisivos ao mento; concavidade para cima, girar 360° no palato"
+      ],
+      "correctIndex": 0,
+      "explanation": "A Guedel é medida da comissura labial ao ângulo da mandíbula. No adulto, é introduzida com a concavidade para cima e girada 180° ao atingir o palato (ou introduzida de lado e girada 90°). Inseri-la de frente empurra a língua e piora a obstrução; na criança, introduz-se direto, com abaixador de língua. No paciente consciente ela induz vômito e aspiração."
+    },
+    {
+      "question": "Após TCE, paciente semiconsciente, com reflexo de vômito, ronca e tem equimose periorbital bilateral. Qual cânula usar?",
+      "options": [
+        "Nenhuma: a Guedel induz vômito e a nasofaríngea é contraindicada",
+        "Nasofaríngea, pois é a cânula mais tolerada pelo semiconsciente",
+        "Guedel, introduzida de frente para não manipular a base do crânio",
+        "Guedel e nasofaríngea juntas, para manter a via aérea por duas vias"
+      ],
+      "correctIndex": 0,
+      "explanation": "A cânula nasofaríngea é a mais tolerada pelo semiconsciente, mas é contraindicada na suspeita de fratura de base de crânio — e o sinal do guaxinim (equimose periorbital) sugere essa fratura. A Guedel exige paciente inconsciente, sem reflexo de vômito. Restam aspiração e jaw thrust e, se o paciente não proteger a via aérea, via aérea definitiva."
+    },
+    {
+      "question": "Vítima de incêndio em ambiente fechado, Glasgow 14, com rouquidão progressiva e fuligem na orofaringe. Qual a conduta na via aérea?",
+      "options": [
+        "Via aérea definitiva precoce, pois a queimadura ameaça obstruí-la",
+        "Aguardar Glasgow ≤ 8, que é o único critério de intubação",
+        "Cânula de Guedel, pois o paciente ainda consegue proteger a via aérea",
+        "Cateter nasal a 3 L/min e reavaliação da via aérea em 24 horas"
+      ],
+      "correctIndex": 0,
+      "explanation": "A via aérea definitiva (IOT) é indicada por Glasgow ≤ 8, incapacidade de proteger a via aérea, falência respiratória ou obstrução iminente — como queimadura de via aérea ou hematoma cervical. Voz alterada é sinal de obstrução; esperar o Glasgow cair é esperar o edema fechar a via aérea. A Guedel, além disso, não seria tolerada com Glasgow 14."
+    },
+    {
+      "question": "Após trauma torácico: MV abolido à esquerda, hipertimpanismo, traqueia desviada, hipotensão e turgência jugular. Com base na tabela, qual a conduta?",
+      "options": [
+        "Descompressão imediata no 4º–5º EIC esquerdo, na linha axilar média",
+        "Radiografia de tórax para confirmar antes de qualquer descompressão",
+        "Punção no 4º–5º EIC direito, lado em que o murmúrio está presente",
+        "Drenagem eletiva do hemitórax esquerdo após a tomografia de tórax"
+      ],
+      "correctIndex": 0,
+      "explanation": "MV abolido de um lado com hipertimpanismo é pneumotórax; quando se somam desvio de traqueia, hipotensão e turgência jugular, é pneumotórax hipertensivo, e a conduta é descompressão imediata no 4º–5º espaço intercostal, linha axilar média, do lado acometido. O diagnóstico é clínico: esperar imagem atrasa o tratamento de uma causa de choque.",
+      "image": "pg05",
+      "imageCaption": "Achados do B e hipóteses diagnósticas"
+    },
+    {
+      "question": "Paciente acamado com dispneia súbita, taquicardia e SpO₂ de 86%, ausculta pulmonar normal e panturrilha esquerda edemaciada. Qual a hipótese?",
+      "options": [
+        "Tromboembolismo pulmonar",
+        "Pneumotórax hipertensivo",
+        "Edema agudo de pulmão",
+        "Derrame pleural volumoso"
+      ],
+      "correctIndex": 0,
+      "explanation": "Dispneia súbita, taquicardia e hipoxemia com ausculta normal sugerem TEP, sobretudo com edema assimétrico de membro inferior (TVP). No edema agudo de pulmão há estertores crepitantes bilaterais até o ápice; no pneumotórax e no derrame o murmúrio vesicular está abolido, com hipertimpanismo no primeiro e macicez no segundo."
+    },
+    {
+      "question": "No C, paciente com pele fria e pegajosa, enchimento capilar de 5 s, FC 128 bpm e PA 80/50 mmHg. Qual a conduta inicial?",
+      "options": [
+        "Cristaloide em bolus de 500–1000 mL, reavaliando; vasopressor se não responder",
+        "Vasopressor imediato como primeira medida, antes de qualquer volume",
+        "Cristaloide 4.000 mL em infusão rápida, sem reavaliar entre os bolus",
+        "Aguardar a diurese das próximas 6 horas antes de decidir sobre volume"
+      ],
+      "correctIndex": 0,
+      "explanation": "Pele fria e pegajosa, enchimento capilar acima de 2–3 s, taquicardia e hipotensão são sinais de choque. Na hipoperfusão, faz-se cristaloide em bolus de 500 a 1000 mL (30 mL/kg na sepse), reavaliando após cada bolus, e vasopressor se não houver resposta. No trauma, a hemorragia externa é controlada antes."
+    },
+    {
+      "question": "Ao fletir passivamente o pescoço do paciente, ocorre flexão involuntária de quadris e joelhos. Qual é o sinal e o que indica?",
+      "options": [
+        "Brudzinski; irritação meníngea, como na meningite ou na hemorragia subaracnoide",
+        "Kernig; hipertensão intracraniana com risco de herniação cerebral iminente",
+        "Brudzinski; hipertensão intracraniana, associado à tríade de Cushing",
+        "Lasègue; compressão de raiz nervosa lombar, sem relação com as meninges"
+      ],
+      "correctIndex": 0,
+      "explanation": "Brudzinski é a flexão involuntária de quadris e joelhos à flexão passiva do pescoço; Kernig é a dor ou resistência à extensão do joelho com o quadril fletido a 90°. Ambos, como a rigidez de nuca, indicam irritação meníngea (meningite, hemorragia subaracnoide), não hipertensão intracraniana, e não devem ser testados se houver suspeita de lesão cervical."
+    },
+    {
+      "question": "Qual conjunto de achados no D sugere hipertensão intracraniana?",
+      "options": [
+        "Hipertensão, bradicardia, respiração irregular e anisocoria",
+        "Hipotensão, taquicardia, respiração rápida e pupilas isocóricas",
+        "Rigidez de nuca, Kernig e Brudzinski positivos, sem anisocoria",
+        "Febre, taquicardia, taquipneia e pupilas mióticas fotorreagentes"
+      ],
+      "correctIndex": 0,
+      "explanation": "A tríade de Cushing — hipertensão, bradicardia e respiração irregular —, somada a anisocoria, queda do Glasgow e papiledema, sugere hipertensão intracraniana. Rigidez de nuca, Kernig e Brudzinski indicam irritação meníngea, que é outra coisa. Hipotensão com taquicardia aponta para choque."
+    },
+    {
+      "question": "No E, a dorsiflexão passiva do pé provoca dor na panturrilha. Qual é o sinal e o que ele sugere?",
+      "options": [
+        "Sinal de Homans, sugestivo de trombose venosa profunda",
+        "Sinal de Bancroft, sugestivo de fratura de base de crânio",
+        "Sinal de Godet, sugestivo de edema por insuficiência cardíaca",
+        "Sinal de Battle, sugestivo de trombose venosa profunda"
+      ],
+      "correctIndex": 0,
+      "explanation": "Homans é a dor na panturrilha à dorsiflexão do pé; Bancroft, a dor à compressão da panturrilha contra a tíbia; Bandeira, a menor mobilidade ou empastamento da panturrilha ao balanço — os três sugerem TVP. Battle (equimose retroauricular) e guaxinim (equimose periorbital) indicam fratura de base de crânio; Godet (cacifo) gradua o edema."
+    }
+  ]
+}

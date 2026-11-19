@@ -1,0 +1,1273 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hemorragias da Primeira e Segunda Metade da Gestação</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;450;500;600&display=swap" rel="stylesheet">
+<style>
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0}
+  body{background:#f5f3ef;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+  button{font:inherit;color:inherit;font-family:'IBM Plex Sans',system-ui,sans-serif}
+  a{color:#2b57cc;text-decoration:none}
+  a:hover{color:#1e3f9c;text-decoration:underline}
+  @keyframes qFade{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+  @keyframes qDrawer{from{opacity:0;transform:translateY(-4px)}to{opacity:1;transform:none}}
+
+  /* hovers — no canvas eram style-hover, aqui viram CSS de verdade */
+  .h-dark:hover{background:#2b57cc!important;transform:translateY(-1px)}
+  .h-darkflat:hover{background:#2b57cc!important}
+  .h-line:hover{border-color:#121a2b!important}
+  .h-ink:hover{color:#121a2b!important}
+  .h-opt:not(.locked):hover{border-color:var(--hbd)!important;transform:translateY(-1px)}
+  .h-card:hover{border-color:#121a2b!important;transform:translateY(-2px)}
+
+  /* tipografia do resumo */
+  .rsm{font-size:16.5px;line-height:1.72;color:#2a3141;max-width:64ch}
+  .rsm h2{font-family:'Newsreader',Georgia,serif;font-size:27px;font-weight:500;letter-spacing:-.02em;line-height:1.2;margin:42px 0 14px;padding-top:20px;border-top:1px solid #e4e0d8;text-wrap:pretty}
+  .rsm h2:first-child{margin-top:0;padding-top:0;border-top:0}
+  .rsm h3{font-family:'Newsreader',Georgia,serif;font-size:20px;font-weight:600;letter-spacing:-.01em;margin:28px 0 10px;text-wrap:pretty}
+  .rsm h4{font-family:'IBM Plex Mono',monospace;font-size:11px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:#2b57cc;margin:24px 0 8px}
+  .rsm p{margin:0 0 15px;text-wrap:pretty}
+  .rsm ul,.rsm ol{margin:0 0 15px;padding-left:22px}
+  .rsm li{margin-bottom:7px;text-wrap:pretty}
+  .rsm li>ul,.rsm li>ol{margin:7px 0 0}
+  .rsm strong{font-weight:600;color:#121a2b}
+  .rsm em{font-style:italic}
+  .rsm code{font-family:'IBM Plex Mono',monospace;font-size:.88em;background:#efece5;border:1px solid #e4e0d8;border-radius:5px;padding:1px 5px}
+  .rsm hr{border:0;border-top:1px solid #e4e0d8;margin:32px 0}
+  .rsm blockquote{margin:0 0 18px;padding:15px 18px;background:#f7f6f2;border-left:2.5px solid #2b57cc;border-radius:0 12px 12px 0;font-size:15px;line-height:1.65;color:#39404f}
+  .rsm blockquote p:last-child{margin-bottom:0}
+  .rsm .tbl{overflow-x:auto;margin:0 0 20px;border:1px solid #e4e0d8;border-radius:12px;background:#fff}
+  .rsm table{border-collapse:collapse;width:100%;font-size:14px;line-height:1.5}
+  .rsm th{text-align:left;font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.09em;text-transform:uppercase;color:#8a8578;font-weight:600;padding:11px 14px;background:#faf9f6;border-bottom:1px solid #e4e0d8;white-space:nowrap}
+  .rsm td{padding:11px 14px;border-bottom:1px solid #efece5;vertical-align:top;text-wrap:pretty}
+  .rsm tr:last-child td{border-bottom:0}
+  .rsm .key{background:#f2f6fb;border:1px solid #d6e2f4;border-radius:12px;padding:16px 18px;margin:0 0 18px}
+  .rsm .key>*:last-child{margin-bottom:0}
+
+  /* figuras — no resumo e na questao */
+  .fig{margin:0 0 20px;background:#fff;border:1px solid #e4e0d8;border-radius:14px;overflow:hidden}
+  .fig img{display:block;width:100%;height:auto;cursor:zoom-in}
+  .fig figcaption{font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.06em;color:#8a8578;padding:9px 13px;border-top:1px solid #efece5;background:#faf9f6;text-wrap:pretty}
+  .qfig{margin:0 0 20px}
+
+  /* lightbox */
+  #lb{position:fixed;inset:0;z-index:90;background:rgba(18,26,43,.86);display:none;align-items:center;justify-content:center;padding:24px;cursor:zoom-out}
+  #lb.on{display:flex;animation:qFade .16s ease}
+  #lb img{max-width:100%;max-height:100%;border-radius:10px;box-shadow:0 24px 60px rgba(0,0,0,.5)}
+
+  @media(max-width:560px){
+    .rsm{font-size:16px}
+    .rsm h2{font-size:24px}
+    .home-grid{grid-template-columns:1fr!important}
+  }
+</style>
+</head>
+<body>
+
+<div style="min-height:100vh;background:#f5f3ef;color:#121a2b;font-family:'IBM Plex Sans',system-ui,sans-serif">
+  <header style="position:sticky;top:0;z-index:30;background:rgba(245,243,239,.94);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid #e4e0d8">
+    <div style="max-width:720px;margin:0 auto;padding:12px 16px 10px" id="hdr"></div>
+  </header>
+  <main style="max-width:720px;margin:0 auto;padding:0 16px 80px" id="stage"></main>
+</div>
+<div id="lb"><img alt=""></div>
+
+<script type="text/html" id="resumoSrc"><h2>Raciocínio inicial: trimestre, padrão de sangramento e estabilidade</h2>
+<p>Sangramento na gestação se aborda com três perguntas, nesta ordem de importância: <strong>a paciente está estável?</strong>, <strong>em que metade da gestação estamos?</strong> e <strong>qual é o padrão do sangramento e da dor?</strong> A idade gestacional restringe o leque de diagnósticos antes de qualquer exame. Na <strong>primeira metade</strong> (até 20–22 semanas), três entidades concentram a casuística — <strong>abortamento</strong> nas suas formas clínicas, <strong>gestação ectópica</strong> e <strong>doença trofoblástica gestacional</strong>. Na <strong>segunda metade</strong>, quatro — <strong>descolamento prematuro de placenta (DPP)</strong>, <strong>placenta prévia</strong>, <strong>acretismo placentário</strong> e <strong>rotura uterina</strong>.</p>
+<div class="tbl"><table><thead><tr><th>Período</th><th>Hipóteses</th><th>O que mais separa à beira do leito</th></tr></thead><tbody><tr><td>Primeira metade</td><td>Abortamento, gestação ectópica, doença trofoblástica</td><td>Colo aberto ou fechado, β-hCG (comportamento) e ultrassonografia transvaginal (localização)</td></tr><tr><td>Segunda metade</td><td>DPP, placenta prévia, acretismo, rotura uterina</td><td>Padrão da dor, tônus uterino e vitalidade fetal — antes de qualquer exame</td></tr></tbody></table></div>
+<p>A estratificação de gravidade decide a via <strong>antes</strong> de o diagnóstico fechar. A <strong>paciente instável</strong> — hipotensão, taquicardia, palidez, sudorese, descompressão dolorosa, abaulamento do fundo de saco — vai para <strong>abordagem cirúrgica imediata</strong>: diagnóstico e estabilização caminham juntos, sem atraso para exame confirmatório. A <strong>paciente estável</strong> permite investigação escalonada, com β-hCG seriado, ultrassonografia e, quando cabível, tratamento medicamentoso.</p>
+<p>Na admissão de toda gestante que sangra, solicitam-se <strong>tipagem sanguínea com fator Rh</strong> e <strong>pesquisa de anticorpos irregulares</strong> (Coombs indireto). É o item que muda a conduta e o que mais se esquece.</p>
+<blockquote><p>As hemorragias seguem entre as principais causas de <strong>morte materna evitável</strong>. O que muda desfecho é reconhecimento precoce, acesso rápido a hemocomponentes e transporte oportuno — a hemorragia obstétrica ainda mata mulheres jovens por <strong>atraso de reconhecimento</strong>.</p></blockquote>
+<hr>
+<h2>β-hCG seriado e ultrassonografia: comportamento × localização</h2>
+<p>A regra que organiza toda a investigação da primeira metade é simples: <strong>o β-hCG descreve o comportamento da gestação; a ultrassonografia diz onde ela está</strong>. Nenhum dos dois decide sozinho — e a conduta se decide com os dois e com a paciente na frente.</p>
+<h3>O mito da duplicação</h3>
+<p>A regra clássica de que o β-hCG "dobra em 48 horas" superestima o incremento esperado. Numa gestação tópica evolutiva, o aumento mínimo aceitável é bem menor que 100% — da ordem de 35% a 50% em 48 horas — e <strong>varia conforme o valor inicial</strong>: quanto mais alto o ponto de partida, menor o aumento percentual esperado. Exigir que dobre rotula como anormais gestações viáveis.</p>
+<p>Uma <strong>curva de elevação inadequada</strong> (platô ou alta insuficiente) indica apenas <strong>gestação anormal</strong> — que pode ser <strong>ectópica</strong> ou <strong>intrauterina inviável</strong>. Ela não localiza nada.</p>
+<blockquote><p><strong>Pérola:</strong> β-hCG que não dobrou não é sinônimo de ectópica. Curva inadequada = gestação anormal; quem diz se ela está dentro ou fora do útero é a ultrassonografia.</p></blockquote>
+<h3>Zona discriminatória</h3>
+<p>É a <strong>faixa de β-hCG acima da qual se espera visualizar o saco gestacional intrauterino</strong> na ultrassonografia transvaginal — tradicionalmente entre 1.500 e 2.000 mUI/mL, com referências mais conservadoras usando 3.500 mUI/mL antes de declarar a gestação anormal. Funciona como <strong>faixa de referência, não como gatilho isolado de conduta</strong>:</p>
+<ul><li><strong>Acima da zona, com cavidade vazia:</strong> forte suspeita de gestação ectópica.</li><li><strong>Abaixo da zona, com cavidade vazia:</strong> o exame ainda <strong>não é conclusivo</strong> — trata-se de gestação de localização indefinida; repetir β-hCG em 48 horas e manter ultrassonografia seriada.</li></ul>
+<blockquote><p><strong>Armadilha de prova:</strong> decidir com um valor isolado, sem clínica e sem ultrassonografia seriada, é a principal fonte de erro — inclusive de esvaziamento ou metotrexato aplicados a uma <strong>gestação tópica desejada</strong>.</p></blockquote>
+<h3>Lendo curvas reais</h3>
+<div class="tbl"><table><thead><tr><th>Curva de β-hCG em 48 h</th><th>Ultrassonografia transvaginal</th><th>Interpretação</th></tr></thead><tbody><tr><td>1.100 → 1.750 mUI/mL (≈ +60%)</td><td>Saco gestacional intrauterino com vesícula vitelínica</td><td><strong>Gestação tópica em evolução</strong> — incremento adequado mesmo sem dobrar</td></tr><tr><td>2.900 → 3.050 mUI/mL (≈ +5%)</td><td>Cavidade vazia, massa anexial de 2 cm</td><td><strong>Gestação ectópica</strong> — curva inadequada, valor acima da zona, massa anexial</td></tr><tr><td>5.400 → 2.100 mUI/mL (queda)</td><td>Cavidade vazia, endométrio fino, sem massa anexial</td><td><strong>Gestação de localização indefinida em resolução / perda precoce</strong></td></tr><tr><td>310.000 mUI/mL em dosagem única</td><td>Massa intrauterina heterogênea com múltiplos espaços císticos</td><td><strong>Doença trofoblástica gestacional</strong></td></tr><tr><td>1.400 → 1.520 mUI/mL (≈ +9%)</td><td>Saco gestacional intrauterino de 26 mm, sem embrião</td><td><strong>Gestação intrauterina inviável (anembrionada)</strong></td></tr></tbody></table></div>
+<h3>O mapa de padrões</h3>
+<div class="tbl"><table><thead><tr><th>Padrão</th><th>β-hCG</th><th>Ultrassonografia</th></tr></thead><tbody><tr><td><strong>Tópica evolutiva</strong></td><td>Incremento adequado em 48 h</td><td>Saco gestacional intrauterino visível quando o valor ultrapassa a zona discriminatória</td></tr><tr><td><strong>Intrauterina inviável</strong></td><td>Curva inadequada ou em queda</td><td>Saco gestacional sem embrião ou embrião sem batimentos</td></tr><tr><td><strong>Gestação ectópica</strong></td><td>Curva inadequada</td><td>Cavidade vazia acima da zona discriminatória, massa anexial e eventual líquido livre</td></tr><tr><td><strong>Doença trofoblástica</strong></td><td>Desproporcionalmente elevado para a idade gestacional</td><td>Útero maior que o esperado, massa intrauterina com espaços císticos</td></tr></tbody></table></div>
+<hr>
+<h2>Formas clínicas do abortamento e condutas</h2>
+<p>Abortamento é a perda com idade gestacional <strong>inferior a 20–22 semanas</strong>. O <strong>colo uterino</strong> e a <strong>ultrassonografia</strong> separam as seis formas clínicas, e a conduta segue a forma clínica <strong>e a estabilidade da paciente</strong>.</p>
+<div class="tbl"><table><thead><tr><th>Forma clínica</th><th>Colo uterino</th><th>Ultrassonografia</th><th>Conduta</th></tr></thead><tbody><tr><td><strong>Ameaça</strong></td><td>Fechado</td><td>Embrião com batimentos presentes</td><td>Expectante, com orientação e retorno programado</td></tr><tr><td><strong>Inevitável</strong></td><td>Aberto</td><td>Produto ainda na cavidade</td><td>Esvaziamento, ou medicamentoso na paciente estável</td></tr><tr><td><strong>Incompleto</strong></td><td>Aberto</td><td>Restos ovulares na cavidade</td><td>Expectante, misoprostol ou aspiração manual intrauterina</td></tr><tr><td><strong>Completo</strong></td><td>Fechado</td><td>Cavidade vazia, endométrio fino</td><td>Expectante, com controle clínico</td></tr><tr><td><strong>Retido</strong></td><td>Fechado</td><td>Embrião sem batimentos ou saco anembrionado</td><td>Expectante, medicamentosa ou esvaziamento</td></tr><tr><td><strong>Infectado</strong></td><td>Aberto, com odor fétido</td><td>Restos, com ou sem coleção</td><td>Antibiótico de amplo espectro <strong>mais</strong> esvaziamento</td></tr></tbody></table></div>
+<p>Na prática, o colo é o primeiro filtro: <strong>colo fechado afasta o abortamento inevitável e o incompleto</strong> e mantém no páreo a ameaça, o retido, o completo — e a gestação ectópica, que também cursa com colo fechado.</p>
+<h3>Ameaça de abortamento</h3>
+<p>Colo fechado e embrião com batimentos definem uma gestação <strong>intrauterina e viável</strong>: qualquer esvaziamento seria a interrupção de uma gestação em evolução. A conduta é <strong>expectante</strong>, com orientação sobre sinais de alarme, suporte e retorno programado. <strong>Repouso absoluto e progesterona de rotina não têm indicação estabelecida</strong> nesse cenário.</p>
+<h3>Aspiração manual intrauterina × curetagem</h3>
+<p>No primeiro trimestre, quando se decide esvaziar, <strong>prefere-se a aspiração manual intrauterina (AMIU)</strong>: menor risco de perfuração e de sinéquias, dispensa dilatação cervical ampla, pode ser feita em ambiente ambulatorial, com menor custo e recuperação mais rápida. A <strong>curetagem</strong> fica reservada a situações específicas ou à indisponibilidade do método — e é o distrator preferido das bancas. Histerectomia é desproporcional, e ocitocina isolada não esvazia o útero nessa idade gestacional.</p>
+<h3>Quando o misoprostol não serve</h3>
+<p>Conduta expectante e medicamentosa aplicam-se à <strong>paciente estável, sem sinais de infecção e sem sangramento intenso</strong>. <strong>Instabilidade hemodinâmica e abortamento infectado exigem esvaziamento uterino.</strong></p>
+<h3>Abortamento infectado</h3>
+<p>Típico após tentativa de interrupção insegura: sangramento com <strong>odor fétido</strong>, dor pélvica intensa, febre, colo aberto e restos na cavidade. O material retido <strong>é o foco</strong> da infecção. A antibioticoterapia de amplo espectro é indispensável, mas <strong>acompanha o esvaziamento — nunca o substitui</strong> —, e o atraso na remoção do foco favorece a progressão para sepse.</p>
+<blockquote><p><strong>Distrator clássico:</strong> antibiótico isolado, "com reavaliação em 48 horas", no abortamento infectado. Trata a infecção sem remover o foco.</p></blockquote>
+<hr>
+<h2>Gestação ectópica: o caso em quatro tempos</h2>
+<p>O raciocínio da ectópica fica claro acompanhando uma paciente que muda de cenário diante do médico.</p>
+<h4>Tempo 1 — história</h4>
+<p>Mulher de 28 anos, com uma gestação a termo prévia, <strong>atraso menstrual de oito semanas</strong>, sangramento moderado há 12 horas e <strong>cólica em baixo ventre com predomínio à direita</strong>. Teste de farmácia positivo, sem pré-natal. Antecedentes: <strong>doença inflamatória pélvica tratada há três anos</strong> e <strong>tabagismo</strong>. As três hipóteses que o trimestre autoriza são abortamento, ectópica e doença trofoblástica; DIP prévia e tabagismo — ambos lesam cílios e motilidade tubária — elevam a probabilidade pré-teste de ectópica.</p>
+<h4>Tempo 2 — exame físico</h4>
+<p>PA 106/68 mmHg, FC 96 bpm, mucosas discretamente descoradas. Abdome doloroso à palpação profunda em fossa ilíaca direita, <strong>sem descompressão dolorosa</strong>. Especular com pequeno sangramento e <strong>colo fechado</strong>; toque com <strong>dor à mobilização do colo e massa anexial direita dolorosa</strong>. O colo fechado afasta abortamento inevitável e incompleto; dor à mobilização e massa anexial deslocam a <strong>ectópica para o topo</strong> da lista.</p>
+<h4>Tempo 3 — exames</h4>
+<p><strong>β-hCG de 4.200 mUI/mL</strong>, hemoglobina de 11,2 g/dL, tipagem <strong>O negativo com pesquisa de anticorpos irregulares negativa</strong>. Ultrassonografia transvaginal: útero normal, <strong>cavidade vazia</strong>, endométrio de 12 mm, <strong>imagem anexial direita de 2,8 cm</strong> sem embrião e sem batimentos, pequena quantidade de líquido livre em fundo de saco. β-hCG acima da zona discriminatória com cavidade vazia e massa anexial: <strong>gestação ectópica íntegra até prova em contrário</strong>. A tipagem O negativa é o dado que costuma passar despercebido.</p>
+<h4>Tempo 4 — o ponto de virada</h4>
+<p>Enquanto aguarda o β-hCG de controle, a paciente tem <strong>dor abdominal súbita e intensa</strong>, PA 82/50 mmHg, FC 128 bpm, palidez, sudorese, abdome distendido com <strong>descompressão dolorosa difusa</strong> e <strong>abaulamento doloroso do fundo de saco posterior</strong>. É <strong>ectópica rota com abdome agudo hemorrágico</strong>: a janela do metotrexato fechou.</p>
+<blockquote><p>Ectópica íntegra é um quadro que pode romper a qualquer momento. Por isso a orientação sobre sinais de alarme e o retorno garantido fazem parte da elegibilidade ao tratamento clínico, não de um detalhe da alta.</p></blockquote>
+<h3>Estratificação: instável × estável</h3>
+<div class="tbl"><table><thead><tr><th></th><th><strong>Paciente instável — abdome agudo hemorrágico</strong></th><th><strong>Paciente estável — ectópica íntegra</strong></th></tr></thead><tbody><tr><td>Sinais</td><td>Hipotensão, taquicardia, palidez, sudorese; descompressão dolorosa e abaulamento do fundo de saco</td><td>Estabilidade hemodinâmica, sem sinais de rotura</td></tr><tr><td>Investigação</td><td>Nenhum exame atrasa a decisão</td><td>Escalonada, com β-hCG seriado e ultrassonografia</td></tr><tr><td>Conduta</td><td><strong>Abordagem cirúrgica imediata</strong>, com dois acessos calibrosos, reposição volêmica e reserva de hemocomponentes</td><td>Elegibilidade ao metotrexato avaliada critério a critério; cirurgia conservadora ou radical conforme integridade tubária e desejo reprodutivo</td></tr></tbody></table></div>
+<p>Na paciente instável, oferecer metotrexato, aguardar nova dosagem de β-hCG ou pedir tomografia são condutas que retardam a intervenção em hemorragia ativa — exame de imagem adicional não muda a conduta quando o diagnóstico clínico já está estabelecido.</p>
+<hr>
+<h2>Metotrexato: critérios cumulativos e seguimento</h2>
+<p>Os critérios de elegibilidade são <strong>cumulativos</strong>: basta <strong>um</strong> item da coluna da direita para que a opção medicamentosa saia da mesa.</p>
+<div class="tbl"><table><thead><tr><th>Favorece o metotrexato</th><th>Afasta o metotrexato</th></tr></thead><tbody><tr><td>Paciente hemodinamicamente estável</td><td>Instabilidade hemodinâmica ou sinais de rotura</td></tr><tr><td>Gestação ectópica íntegra, sem sinais de rotura</td><td>Hemoperitônio significativo ou abdome agudo</td></tr><tr><td>Massa anexial de pequenas dimensões</td><td>Massa de maiores dimensões, conforme protocolo do serviço</td></tr><tr><td>Ausência de batimentos cardíacos embrionários</td><td><strong>Atividade cardíaca embrionária presente</strong></td></tr><tr><td>β-hCG dentro da faixa favorável do protocolo</td><td>β-hCG acima da faixa favorável</td></tr><tr><td>Seguimento ambulatorial garantido e paciente aderente</td><td>Impossibilidade de retorno para dosagens seriadas</td></tr><tr><td>Ausência de contraindicações ao fármaco</td><td>Hepatopatia, nefropatia, discrasia sanguínea, imunodeficiência, úlcera péptica ativa ou amamentação</td></tr></tbody></table></div>
+<p>Os valores de corte variam entre protocolos; as referências usuais são <strong>massa de até 3,5 cm</strong> e <strong>β-hCG de até 5.000 mUI/mL</strong>. A atividade cardíaca embrionária presente associa-se a maior falha do método. As contraindicações ao fármaco refletem sua toxicidade: é um antimetabólito, com efeito hepático, renal, medular e sobre mucosas.</p>
+<blockquote><p><strong>O que as bancas testam:</strong> o descumprimento de <strong>um único critério</strong> — quase sempre a <strong>instabilidade</strong> ou a <strong>ausência de seguimento garantido</strong>. Paciente que preenche tudo, mas não tem como voltar para as dosagens seriadas, não é candidata.</p></blockquote>
+<h4>Monitorização</h4>
+<p>Após a aplicação, o β-hCG é dosado em dias definidos pelo protocolo; <strong>queda insuficiente indica nova dose ou mudança para abordagem cirúrgica</strong>.</p>
+<h4>Cirurgia na paciente estável</h4>
+<p>Quando o metotrexato não é possível, a cirurgia é <strong>conservadora ou radical</strong> conforme a integridade da tuba e o desejo reprodutivo da paciente.</p>
+<hr>
+<h2>Doença trofoblástica gestacional: mola, esvaziamento e seguimento</h2>
+<p>A doença trofoblástica aparece no enunciado com uma assinatura reconhecível: <strong>útero maior que o esperado</strong>, <strong>aspecto ultrassonográfico em cachos de uva</strong> e <strong>β-hCG desproporcionalmente elevado</strong>. Um caso típico: mulher de 24 anos, 12 semanas de atraso, sangramento com <strong>eliminação de vesículas</strong>, <strong>hiperêmese</strong>, útero aumentado, PA 150/95 mmHg, β-hCG de 380.000 mUI/mL e massa intrauterina heterogênea com múltiplos espaços císticos — <strong>mola hidatiforme completa</strong>.</p>
+<div class="tbl"><table><thead><tr><th></th><th>Mola completa</th><th>Mola parcial</th></tr></thead><tbody><tr><td>Cariótipo</td><td>Diploide, de origem <strong>androgenética</strong></td><td><strong>Triploide</strong></td></tr><tr><td>Tecido fetal</td><td><strong>Ausente</strong></td><td><strong>Presente</strong></td></tr><tr><td>β-hCG</td><td>Desproporcionalmente elevado</td><td>Menos elevado, por vezes compatível com a idade gestacional</td></tr><tr><td>Ultrassonografia</td><td>Massa com múltiplos espaços císticos, em cachos de uva</td><td>Placenta com áreas císticas focais e feto, em geral malformado</td></tr><tr><td>Altura uterina</td><td>Maior que a esperada</td><td>Compatível ou menor que a esperada</td></tr><tr><td>Risco de neoplasia trofoblástica</td><td><strong>Maior — cerca de 20%</strong></td><td><strong>Menor — cerca de 5%</strong></td></tr></tbody></table></div>
+<blockquote><p><strong>Sinais que a banca planta:</strong> hiperêmese gravídica, sinais de tireotoxicose e <strong>hipertensão antes das 20 semanas</strong>. Pré-eclâmpsia precoce em gestante com útero aumentado deve levantar a hipótese de <strong>mola hidatiforme</strong> — não é coincidência, é achado esperado.</p></blockquote>
+<h3>Esvaziamento</h3>
+<p>A <strong>vácuo-aspiração</strong> é a via preferida. A <strong>histerectomia</strong> pode ser considerada em pacientes com <strong>prole constituída e fatores de risco</strong>, mas <strong>não dispensa o seguimento</strong> posterior: ela não elimina o risco de neoplasia trofoblástica.</p>
+<h3>Seguimento seriado do β-hCG</h3>
+<p>Dosagens seriadas até a negativação, seguidas de controle por período adicional, em serviço de referência. O esquema de referência (FIGO):</p>
+<ul><li><strong>Semanal</strong> até <strong>três dosagens negativas</strong> consecutivas.</li><li>Depois, <strong>mensal por seis meses</strong> negativos.</li></ul>
+<p><strong>Contracepção eficaz é obrigatória durante todo o seguimento.</strong> Uma nova gestação eleva o β-hCG e mascara exatamente o sinal que está sendo vigiado — a suspeita de neoplasia trofoblástica gestacional. A paciente só deve engravidar de novo <strong>após completar o seguimento</strong>.</p>
+<h3>Critérios de neoplasia trofoblástica gestacional</h3>
+<p><strong>Platô</strong> do β-hCG em dosagens sucessivas, <strong>elevação</strong> do β-hCG, <strong>persistência</strong> além do prazo esperado ou diagnóstico histológico de <strong>coriocarcinoma</strong>. Confirmada a neoplasia, encaminha-se para <strong>quimioterapia</strong> em serviço de referência.</p>
+<div class="tbl"><table><thead><tr><th>Achado no seguimento</th><th>Significado</th></tr></thead><tbody><tr><td>Queda progressiva e sustentada do β-hCG</td><td>Evolução favorável esperada</td></tr><tr><td>Platô ou elevação em dosagens sucessivas</td><td><strong>Neoplasia trofoblástica gestacional</strong></td></tr><tr><td>Sangramento discreto nos primeiros dias após o esvaziamento</td><td>Achado comum e inespecífico</td></tr><tr><td>Cistos tecaluteínicos em regressão</td><td>Regressão de achado ligado ao hCG alto, não progressão</td></tr></tbody></table></div>
+<p>A quimioterapia <strong>não é profilática</strong>: fica reservada a quem preencher os critérios de neoplasia. Alta sem seguimento, liberação de nova gestação quando o sangramento cessa e quimioterapia para todas são os três distratores clássicos da orientação pós-molar.</p>
+<hr>
+<h2>Imunoglobulina anti-D e o plano terapêutico completo</h2>
+<p>Na <strong>gestante Rh negativa não sensibilizada</strong> — isto é, com <strong>pesquisa de anticorpos irregulares negativa</strong> —, a imunoglobulina anti-D está indicada em <strong>abortamento de qualquer forma clínica</strong>, <strong>gestação ectópica</strong> e <strong>doença trofoblástica</strong>, <strong>o mais precocemente possível após o evento</strong> (classicamente em até 72 horas; a minidose de 150 mcg serve até 12 semanas, e a dose de 300 mcg, acima disso).</p>
+<ul><li>A indicação <strong>não depende da idade gestacional</strong> nem de ter havido <strong>instrumentação</strong> uterina.</li><li>O exame que decide é a <strong>pesquisa de anticorpos irregulares na gestante</strong>, não um Coombs direto no material do abortamento.</li><li>Pesquisa <strong>positiva</strong> significa <strong>sensibilização prévia</strong>: a profilaxia não se aplica, porque não há mais o que prevenir.</li><li>A administração deve constar no <strong>prontuário</strong> e no <strong>cartão da gestante</strong>.</li></ul>
+<blockquote><p>Gestante Rh negativa não sensibilizada com sangramento na gestação recebe imunoglobulina anti-D. É item de alto rendimento em prova e o mais esquecido nas condutas propostas.</p></blockquote>
+<h3>O que uma resposta completa precisa conter</h3>
+<p>Em questões abertas e estações práticas, a pontuação se perde nos itens que ninguém cita:</p>
+<ol><li><strong>Estabilização hemodinâmica</strong> — acessos calibrosos, reposição volêmica, monitorização e reserva de hemocomponentes na paciente instável.</li><li><strong>Definição da via</strong> — abordagem cirúrgica imediata na instabilidade; na paciente estável, via de esvaziamento escolhida pela idade gestacional e pela forma clínica.</li><li><strong>Imunoglobulina anti-D</strong> — na Rh negativa não sensibilizada, o mais cedo possível.</li><li><strong>Analgesia e suporte</strong> — controle da dor, prevenção de náuseas e acolhimento.</li><li><strong>Seguimento e planejamento reprodutivo</strong> — retorno, sinais de alarme, contracepção e intervalo até nova gestação. A oferta de método contraceptivo faz parte <strong>da alta</strong>, não de uma consulta futura.</li></ol>
+<hr>
+<h2>Segunda metade: DPP, placenta prévia, acretismo e rotura uterina</h2>
+<p>Na segunda metade, <strong>o padrão da dor, o tônus uterino e a vitalidade fetal</strong> separam os diagnósticos antes de qualquer exame.</p>
+<div class="tbl"><table><thead><tr><th></th><th>Descolamento prematuro de placenta</th><th>Placenta prévia</th><th>Acretismo placentário</th><th>Rotura uterina</th></tr></thead><tbody><tr><td>Dor</td><td>Intensa e súbita</td><td>Ausente</td><td>Ausente até o parto</td><td>Súbita e lancinante, com cessação das contrações</td></tr><tr><td>Sangramento</td><td>Escuro, podendo ser oculto</td><td>Vermelho vivo, recorrente</td><td>Maciço na dequitação</td><td>Variável, com hemoperitônio</td></tr><tr><td>Tônus uterino</td><td><strong>Hipertonia</strong></td><td>Normal</td><td>Normal</td><td>Útero mal delimitado, partes fetais palpáveis</td></tr><tr><td>Vitalidade fetal</td><td>Comprometida com frequência</td><td>Habitualmente preservada</td><td>Preservada</td><td>Bradicardia e subida da apresentação</td></tr><tr><td>Fator de risco típico</td><td>Doença hipertensiva, trauma, tabagismo</td><td>Cesárea prévia, multiparidade, idade avançada</td><td>Placenta prévia com cesárea prévia</td><td>Cicatriz uterina, uso inadequado de uterotônico</td></tr><tr><td>Conduta</td><td>Resolução imediata pela via mais rápida</td><td>Especular sim, toque não; cesárea se prévia total</td><td>Cesárea programada em centro de referência</td><td>Laparotomia imediata</td></tr></tbody></table></div>
+<blockquote><p><strong>Regra de segurança:</strong> sangramento na segunda metade <strong>sem ultrassonografia prévia que localize a placenta</strong> — exame especular pode, <strong>toque vaginal não</strong>.</p></blockquote>
+<h3>Descolamento prematuro de placenta</h3>
+<p>É a separação da placenta normalmente inserida antes do nascimento. O sangue se acumula entre a placenta e a parede uterina, formando <strong>hematoma retroplacentário</strong> — por isso o sangramento é <strong>escuro</strong> e pode ser <strong>oculto</strong>, e choque e sofrimento fetal aparecem <strong>desproporcionais à perda visível</strong>. O quadro é de <strong>dor intensa e súbita, hipertonia uterina</strong> e comprometimento frequente da vitalidade fetal; o fator de risco mais típico é a <strong>doença hipertensiva</strong>, seguida de trauma e tabagismo.</p>
+<p>O <strong>diagnóstico é clínico</strong>. A ultrassonografia pode ser <strong>normal</strong> (falso-negativa) e jamais deve atrasar a decisão. Diante de gestante de 34 semanas, hipertensa, com dor contínua, útero hipertônico, sangramento escuro e bradicardia fetal, a conduta é <strong>resolução imediata da gestação pela via mais rápida, com estabilização materna simultânea</strong>. Corticoide com expectativa mantém a gestação diante de hemorragia ativa, e a <strong>tocólise é formalmente contraindicada</strong>.</p>
+<blockquote><p>Dois desdobramentos clássicos do descolamento grave: <strong>coagulopatia de consumo</strong> (vigiar fibrinogênio e plaquetas) e <strong>útero de Couvelaire</strong> — infiltração hemorrágica do miométrio, que favorece a atonia pós-parto. Com <strong>feto morto e mãe estável</strong>, a via vaginal costuma ser preferida; com feto vivo, vale a via mais rápida.</p></blockquote>
+<h3>Placenta prévia</h3>
+<p>É a placenta implantada no segmento inferior, sobre o orifício interno do colo ou próxima a ele. A assinatura clínica é <strong>sangramento vermelho vivo, indolor, recorrente</strong>, com <strong>útero de tônus normal</strong> e <strong>vitalidade fetal preservada</strong>. Fatores de risco: <strong>cesárea prévia, multiparidade e idade materna avançada</strong>.</p>
+<p>Diante de sangramento sem ultrassonografia que localize a placenta, faz-se <strong>exame especular</strong> — que informa origem e intensidade da perda — e <strong>ultrassonografia</strong>, <strong>sem toque vaginal</strong>, proscrito pelo risco de agravar o sangramento. Toque vaginal é o distrator que a banca planta para testar essa regra; amniotomia e cesárea imediata antecipam decisões que dependem da localização placentária, da idade gestacional e da estabilidade materna e fetal. Na <strong>placenta prévia total</strong>, que recobre o orifício interno, o <strong>parto vaginal é contraindicado</strong> e a via é a cesárea.</p>
+<h3>Acretismo placentário</h3>
+<p>É a aderência anormal da placenta ao miométrio — num espectro de profundidade que vai da placenta <strong>acreta</strong> (adere ao miométrio) à <strong>increta</strong> (invade o miométrio) e à <strong>percreta</strong> (ultrapassa a serosa e pode atingir órgãos vizinhos). A combinação de maior risco é <strong>placenta prévia com cesárea prévia</strong>, e o risco cresce com o número de cesáreas.</p>
+<p>Sem diagnóstico prévio, a gestação transcorre <strong>sem dor e com vitalidade preservada</strong>, e a hemorragia é <strong>maciça na dequitação</strong>, quando a placenta não se desprende. Por isso o pré-natal é a única janela para planejar: em gestante de 28 semanas, com três cesáreas e placenta prévia total, assintomática, investiga-se acretismo com <strong>ultrassonografia com Doppler</strong>, complementada por <strong>ressonância magnética</strong> quando necessário, e programa-se <strong>cesárea eletiva em centro de referência</strong>, com equipe multiprofissional, reserva de hemocomponentes e <strong>histerectomia planejada</strong>, se indicada.</p>
+<h3>Rotura uterina</h3>
+<p>O cenário típico é gestante com <strong>cicatriz uterina</strong> em trabalho de parto, sobretudo com <strong>uso inadequado de uterotônico</strong>. A rotura consumada se anuncia por <strong>dor súbita e lancinante com cessação das contrações</strong>, sangramento vaginal variável com hemoperitônio, <strong>útero mal delimitado com partes fetais palpáveis sob a parede abdominal</strong>, <strong>subida da apresentação</strong> ao toque e <strong>bradicardia fetal</strong>. Antes da rotura, a distensão do segmento inferior pode se anunciar pela <strong>síndrome de Bandl-Frommel</strong> — anel de Bandl palpável entre corpo e segmento e ligamentos redondos retesados.</p>
+<p>A conduta é <strong>laparotomia imediata</strong>, com estabilização materna simultânea e reserva de hemocomponentes. Aumentar a ocitocina agrava a lesão; o fórcipe pressupõe apresentação insinuada, que deixa de existir após a rotura; tocólise e observação perdem o tempo que separa o desfecho favorável do óbito materno e fetal.</p>
+<hr>
+<h2>Saúde pública, ética e os distratores que mais derrubam</h2>
+<h3>Além da conduta clínica</h3>
+<ul><li><strong>Acolhimento humanizado:</strong> comunicação clara da perda gestacional, privacidade, apoio psicológico e respeito às decisões da mulher durante todo o atendimento.</li><li><strong>Violência sexual:</strong> o atendimento é <strong>obrigatório</strong> na rede de saúde, <strong>imediato e integral</strong>, com <strong>notificação compulsória</strong>. <strong>Não se exige boletim de ocorrência nem autorização judicial.</strong> Em criança ou adolescente, há ainda <strong>comunicação ao Conselho Tutelar</strong>. Exigir documentos revitimiza e retarda profilaxias cuja eficácia depende do tempo; notificação em saúde e registro policial são instrumentos distintos e não se substituem.</li><li><strong>Mortalidade materna:</strong> as hemorragias estão entre as principais causas de morte materna evitável.</li><li><strong>Planejamento reprodutivo:</strong> método contraceptivo eficaz e intervalo até nova gestação são oferecidos na alta.</li></ul>
+<h3>Os distratores clássicos</h3>
+<div class="tbl"><table><thead><tr><th>Distrator</th><th>Por que está errado</th></tr></thead><tbody><tr><td>Curetagem como primeira escolha no primeiro trimestre</td><td>A aspiração manual intrauterina é preferida: menos perfuração e sinéquias, possibilidade ambulatorial</td></tr><tr><td>Misoprostol para paciente instável ou infectada</td><td>Expectante e medicamentoso são para a paciente estável, sem infecção e sem sangramento intenso</td></tr><tr><td>Antibiótico isolado no abortamento infectado</td><td>O esvaziamento é parte do tratamento, não alternativa a ele</td></tr><tr><td>Presumir ectópica só porque o β-hCG não dobrou</td><td>Curva inadequada indica gestação anormal — ectópica ou intrauterina inviável</td></tr><tr><td>Esquecer a imunoglobulina anti-D</td><td>Vale para gestante Rh negativa não sensibilizada com qualquer sangramento da gestação</td></tr><tr><td>Liberar nova gestação antes de encerrar o seguimento da mola</td><td>A gestação eleva o β-hCG e mascara a suspeita de neoplasia trofoblástica</td></tr><tr><td>Toque vaginal no sangramento da segunda metade sem placenta localizada</td><td>Pode agravar o sangramento de uma placenta prévia</td></tr><tr><td>Aguardar ultrassonografia para confirmar descolamento</td><td>O diagnóstico é clínico, e o exame pode ser normal</td></tr></tbody></table></div>
+<h3>Para levar para a prova</h3>
+<ol><li>O β-hCG descreve comportamento; a ultrassonografia localiza. Nenhum dos dois decide sozinho.</li><li>Paciente instável com abdome agudo hemorrágico vai para abordagem cirúrgica imediata — exame nenhum atrasa essa decisão.</li><li>Os critérios do metotrexato são cumulativos: um item não preenchido tira a opção medicamentosa da mesa.</li><li>No abortamento infectado, o antibiótico acompanha o esvaziamento; jamais o substitui. E a aspiração manual vem antes da curetagem.</li><li>Gestante Rh negativa não sensibilizada com sangramento na gestação recebe imunoglobulina anti-D.</li><li>Na segunda metade, dor, tônus e vitalidade fetal separam DPP, placenta prévia, acretismo e rotura — e sem placenta localizada não se faz toque.</li></ol></script>
+<!-- Tutor local: define window.DEEPSEEK_KEY. O arquivo NAO vai para o repositorio,
+     entao online ele da 404 e o chat simplesmente nao aparece. -->
+<script src="../deepseek_key.js"></script>
+<script>
+/* ─────────────────────────────────────────────────────────────────────────────
+   CONTRATO DE DADOS — para adaptar a outro tema, troque apenas QUIZ e o resumo.
+   Cada item: { question, options[2..6], correctIndex, explanation }
+   ──────────────────────────────────────────────────────────────────────────── */
+var TITLE      = "Hemorragias da Primeira e Segunda Metade da Gestação";
+var EYEBROW    = "Ginecologia e Obstetrícia · Sangramento na Gestação";
+var DISCIPLINA = "GO";   // pasta de origem (PED, GO...) — usada pelo índice
+var SUBTITLE = "Do beta-hCG seriado à rotura uterina, decidindo pela estabilidade";
+var INTRO    = "Raciocínio por trimestre e padrão de sangramento: β-hCG seriado e zona discriminatória, formas do abortamento, ectópica e critérios do metotrexato, mola e seguimento, imunoglobulina anti-D e as quatro causas da segunda metade — DPP, placenta prévia, acretismo e rotura uterina.";
+
+var QUIZ = [
+  {
+    "question": "Uma curva de β-hCG com elevação inadequada em 48 horas, sem nenhum outro dado, permite concluir o quê?",
+    "options": [
+      "Gestação anormal, que pode ser ectópica ou tópica inviável",
+      "Gestação ectópica, que deve ser tratada com metotrexato",
+      "Gestação tópica viável, ainda abaixo da zona discriminatória",
+      "Doença trofoblástica, que exige esvaziamento por aspiração"
+    ],
+    "correctIndex": 0,
+    "explanation": "Curva de elevação inadequada indica apenas que a gestação é anormal — pode ser ectópica ou intrauterina inviável. O β-hCG descreve o comportamento da gestação, não onde ela está; quem localiza é a ultrassonografia transvaginal. Tratar como ectópica só porque o valor não dobrou é um dos distratores clássicos."
+  },
+  {
+    "question": "Por que exigir que o β-hCG dobre em 48 horas leva a erro na avaliação da gestação inicial?",
+    "options": [
+      "Superestima o incremento esperado e rotula como anormais gestações viáveis",
+      "Subestima o incremento esperado e deixa passar gestações ectópicas rotas",
+      "Só vale acima da zona discriminatória, quando o saco é sempre visível",
+      "Só vale na gestação múltipla, em que a produção de hCG é duplicada"
+    ],
+    "correctIndex": 0,
+    "explanation": "O incremento esperado em uma gestação tópica evolutiva é menor do que a duplicação e varia conforme o valor inicial — quanto mais alto o ponto de partida, menor o aumento percentual esperado. Exigir que o valor dobre rotula como anormais gestações intrauterinas viáveis e pode levar a tratar como ectópica uma gestação desejada."
+  },
+  {
+    "question": "Uma gestante tem β-hCG que sobe de 1.100 para 1.750 mUI/mL em 48 horas, sem dobrar, e a ultrassonografia transvaginal mostra saco gestacional intrauterino com vesícula vitelínica. Qual a interpretação?",
+    "options": [
+      "Gestação tópica em evolução, com incremento adequado",
+      "Gestação ectópica, pois o β-hCG não dobrou em 48 horas",
+      "Gestação intrauterina inviável, por curva insuficiente",
+      "Gestação heterotópica, até que a USTV seja repetida"
+    ],
+    "correctIndex": 0,
+    "explanation": "Uma alta de cerca de 60% em 48 horas é incremento adequado para uma gestação inicial, mesmo sem dobrar, e o saco gestacional com vesícula vitelínica localiza a gestação dentro do útero. É o padrão da gestação tópica evolutiva: curva adequada e gestação vista na cavidade."
+  },
+  {
+    "question": "O que é a zona discriminatória do β-hCG?",
+    "options": [
+      "Faixa acima da qual se espera ver o saco gestacional intrauterino na USTV",
+      "Valor acima do qual toda ectópica deve ser tratada com metotrexato",
+      "Valor abaixo do qual a gestação é considerada inviável com certeza",
+      "Faixa de queda do β-hCG que confirma o abortamento completo"
+    ],
+    "correctIndex": 0,
+    "explanation": "É a faixa de β-hCG acima da qual se espera visualizar o saco gestacional intrauterino na ultrassonografia transvaginal (tradicionalmente 1.500 a 2.000 mUI/mL; referências mais conservadoras usam 3.500 mUI/mL). Acima dela, cavidade vazia levanta forte suspeita de ectópica; abaixo, o exame ainda não é conclusivo. É referência, não gatilho isolado de conduta."
+  },
+  {
+    "question": "Mulher de 30 anos, com seis semanas de atraso menstrual, tem sangramento discreto e desconforto pélvico leve. Está estável e sem irritação peritoneal. O β-hCG é de 1.800 mUI/mL e a USTV não mostra saco gestacional intrauterino, massa anexial nem líquido livre. Qual a conduta inicial?",
+    "options": [
+      "Repetir o β-hCG em 48 horas e manter ultrassonografia seriada",
+      "Administrar metotrexato em dose única por ectópica presumida",
+      "Esvaziamento uterino para pesquisa de vilosidades coriônicas",
+      "Laparoscopia diagnóstica para localizar a gestação ectópica"
+    ],
+    "correctIndex": 0,
+    "explanation": "É gestação de localização indefinida em paciente estável, com β-hCG próximo ou abaixo da zona discriminatória: a ultrassonografia ainda não é conclusiva e a decisão exige seriação. Metotrexato ou esvaziamento sem confirmação podem interromper uma gestação tópica desejada, e cirurgia não se justifica sem diagnóstico e sem sinais de rotura."
+  },
+  {
+    "question": "O β-hCG de uma gestante passa de 2.900 para 3.050 mUI/mL em 48 horas, e a USTV mostra cavidade uterina vazia e massa anexial de 2 cm. Qual a interpretação?",
+    "options": [
+      "Gestação ectópica, com curva inadequada e massa anexial",
+      "Gestação tópica inicial, ainda abaixo da zona discriminatória",
+      "Abortamento completo, com cavidade vazia e β-hCG em platô",
+      "Mola hidatiforme parcial, com β-hCG desproporcional à idade"
+    ],
+    "correctIndex": 0,
+    "explanation": "Uma alta de apenas 5% em 48 horas é curva inadequada (gestação anormal). Com valor acima de 3.000 mUI/mL, uma gestação tópica já deveria ser vista; cavidade vazia somada a massa anexial configura gestação ectópica. Nenhum dado isolado decide — é a combinação de curva, valor e imagem."
+  },
+  {
+    "question": "O β-hCG de uma gestante cai de 5.400 para 2.100 mUI/mL em 48 horas, e a USTV mostra cavidade uterina vazia, endométrio fino e nenhuma massa anexial. Como interpretar?",
+    "options": [
+      "Gestação de localização indefinida em resolução, ou perda precoce",
+      "Gestação ectópica íntegra, com indicação de metotrexato imediato",
+      "Gestação tópica evolutiva, ainda abaixo da zona discriminatória",
+      "Doença trofoblástica em regressão após esvaziamento espontâneo"
+    ],
+    "correctIndex": 0,
+    "explanation": "Queda franca do β-hCG com cavidade vazia, endométrio fino e ausência de massa anexial indica gestação em resolução — perda precoce ou gestação de localização indefinida que está regredindo. A conduta é acompanhar a queda até negativar; tratar como ectópica ativa seria excesso."
+  },
+  {
+    "question": "O β-hCG de uma gestante passa de 1.400 para 1.520 mUI/mL em 48 horas, e a USTV mostra saco gestacional intrauterino de 26 mm, sem embrião. Qual o diagnóstico?",
+    "options": [
+      "Gestação intrauterina inviável, anembrionada",
+      "Gestação tópica em evolução, ainda muito inicial",
+      "Gestação ectópica com pseudossaco intrauterino",
+      "Mola hidatiforme parcial em fase inicial"
+    ],
+    "correctIndex": 0,
+    "explanation": "Curva inadequada com saco gestacional intrauterino sem embrião (ou embrião sem batimentos) define gestação intrauterina inviável — aqui anembrionada, já que um saco de 26 mm sem embrião ultrapassa o limite de 25 mm. A ultrassonografia localizou a gestação dentro do útero; o β-hCG mostrou que ela não evolui."
+  },
+  {
+    "question": "Mulher de 28 anos, com oito semanas de atraso menstrual, tem sangramento moderado e cólica em baixo ventre à direita. Teve uma gestação a termo, tratou doença inflamatória pélvica há três anos e é tabagista. Quais dados aumentam a probabilidade pré-teste de gestação ectópica?",
+    "options": [
+      "DIP tratada e tabagismo atual",
+      "Gestação a termo prévia e idade",
+      "Atraso de 8 semanas e cólica",
+      "Sangramento moderado e paridade"
+    ],
+    "correctIndex": 0,
+    "explanation": "Doença inflamatória pélvica prévia e tabagismo lesam os cílios e a motilidade tubária, atrasando o transporte do ovo — o mecanismo central da gestação ectópica. Atraso menstrual, sangramento e cólica compõem a queixa, mas não separam ectópica de abortamento; a gestação a termo prévia não aumenta o risco."
+  },
+  {
+    "question": "Na mesma paciente de 28 anos com suspeita de ectópica, o exame especular mostra pequeno sangramento pelo orifício externo e colo fechado. Que formas de abortamento esse achado afasta?",
+    "options": [
+      "Abortamento inevitável e abortamento incompleto",
+      "Ameaça de abortamento e abortamento retido",
+      "Abortamento completo e abortamento retido",
+      "Ameaça de abortamento e abortamento completo"
+    ],
+    "correctIndex": 0,
+    "explanation": "Inevitável e incompleto cursam com colo aberto — produto ainda na cavidade ou restos ovulares sendo eliminados. Colo fechado mantém no páreo a ameaça, o retido, o completo e a gestação ectópica, que sobe para o topo da lista quando há dor à mobilização do colo e massa anexial dolorosa."
+  },
+  {
+    "question": "Gestante estável, com dor em fossa ilíaca direita e colo fechado, tem β-hCG de 4.200 mUI/mL. A USTV mostra cavidade vazia, endométrio de 12 mm, imagem anexial direita de 2,8 cm sem embrião e pequena quantidade de líquido livre. Qual a interpretação?",
+    "options": [
+      "Gestação ectópica íntegra até prova em contrário",
+      "Gestação tópica inicial, repetir USTV em uma semana",
+      "Abortamento completo com corpo lúteo hemorrágico",
+      "Gestação de localização indefinida, inconclusiva"
+    ],
+    "correctIndex": 0,
+    "explanation": "Com β-hCG de 4.200 mUI/mL — acima da zona discriminatória —, uma gestação tópica já deveria ser visível. Cavidade vazia, massa anexial e líquido livre em pequena quantidade configuram ectópica íntegra até prova em contrário. Não é localização indefinida, porque o valor ultrapassa a faixa em que o exame ainda seria inconclusivo."
+  },
+  {
+    "question": "Gestante com ectópica íntegra, aguardando o β-hCG de controle, evolui com dor abdominal súbita e intensa, PA 82/50 mmHg, FC 128 bpm, palidez, sudorese, descompressão dolorosa difusa e abaulamento doloroso do fundo de saco posterior. Qual a conduta?",
+    "options": [
+      "Estabilizar e operar de imediato, sem aguardar exame confirmatório",
+      "Metotrexato em dose única, já que a massa media menos de 3 cm",
+      "Tomografia de abdome para confirmar o hemoperitônio antes de operar",
+      "Repetir β-hCG em 48 horas e reavaliar a massa por ultrassonografia"
+    ],
+    "correctIndex": 0,
+    "explanation": "É gestação ectópica rota com abdome agudo hemorrágico, e a janela do metotrexato fechou. Estabilização e cirurgia caminham juntas — dois acessos calibrosos, reposição volêmica, reserva de hemocomponentes e centro cirúrgico —, e nenhum exame complementar deve atrasar a intervenção quando o diagnóstico clínico está feito."
+  },
+  {
+    "question": "Gestante com sangramento de primeiro trimestre tem tipagem O negativo e pesquisa de anticorpos irregulares negativa. O que esse resultado permite concluir e indicar?",
+    "options": [
+      "Não está sensibilizada e tem indicação de imunoglobulina anti-D",
+      "Já está sensibilizada e não se beneficia da imunoglobulina anti-D",
+      "Só terá indicação de anti-D se for submetida a instrumentação",
+      "Dispensa a anti-D por se tratar de perda antes de 12 semanas"
+    ],
+    "correctIndex": 0,
+    "explanation": "Pesquisa de anticorpos irregulares (Coombs indireto) negativa significa que a gestante Rh negativa ainda não foi sensibilizada — exatamente quem se beneficia da profilaxia. A anti-D está indicada em abortamento de qualquer forma clínica, gestação ectópica e doença trofoblástica, independentemente da idade gestacional ou de instrumentação, o mais precocemente possível após o evento."
+  },
+  {
+    "question": "Se a pesquisa de anticorpos irregulares de uma gestante Rh negativa com abortamento viesse positiva para anti-D, o que isso significaria?",
+    "options": [
+      "Sensibilização prévia, situação em que a profilaxia não se aplica",
+      "Indicação de dose dobrada de imunoglobulina anti-D após o evento",
+      "Falso-positivo esperado nas perdas antes de 12 semanas de gestação",
+      "Necessidade de repetir a pesquisa em 72 horas para então decidir"
+    ],
+    "correctIndex": 0,
+    "explanation": "A imunoglobulina anti-D é profilaxia: serve para impedir que a mãe forme anticorpos contra o antígeno D. Se a pesquisa já é positiva, a sensibilização ocorreu e não há mais o que prevenir — por isso a indicação exige gestante Rh negativa não sensibilizada."
+  },
+  {
+    "question": "Paciente estável, com ectópica íntegra, massa anexial pequena, β-hCG na faixa favorável e seguimento garantido. Qual achado adicional, sozinho, tira o metotrexato da mesa?",
+    "options": [
+      "Batimentos cardíacos embrionários na massa anexial",
+      "Pequena quantidade de líquido livre restrito à pelve",
+      "Antecedente de doença inflamatória pélvica tratada",
+      "Endométrio de 12 mm sem saco gestacional na cavidade"
+    ],
+    "correctIndex": 0,
+    "explanation": "Os critérios do metotrexato são cumulativos: basta um item não preenchido para afastar o método. Atividade cardíaca embrionária presente associa-se a maior falha do tratamento clínico. Pequena quantidade de líquido livre restrito à pelve, DIP prévia e endométrio espessado sem saco gestacional não contraindicam o fármaco."
+  },
+  {
+    "question": "Qual condição clínica contraindica o metotrexato no tratamento da gestação ectópica?",
+    "options": [
+      "Úlcera péptica em atividade",
+      "Tabagismo de longa data",
+      "Cesárea anterior há 2 anos",
+      "Laqueadura tubária prévia"
+    ],
+    "correctIndex": 0,
+    "explanation": "Contraindicam o metotrexato: hepatopatia, nefropatia, discrasia sanguínea, imunodeficiência, úlcera péptica ativa e amamentação — o fármaco é um antimetabólito com toxicidade hepática, renal, medular e de mucosas. Tabagismo e laqueadura são fatores de risco para a ectópica, não contraindicações ao tratamento."
+  },
+  {
+    "question": "Uma ectópica íntegra preenche os critérios clínicos e ultrassonográficos para metotrexato, mas a paciente mora em zona rural e não tem como retornar para dosagens seriadas de β-hCG. Qual a conduta mais adequada?",
+    "options": [
+      "Abordagem cirúrgica, pois o seguimento não está garantido",
+      "Metotrexato em dose única, com retorno apenas se tiver dor",
+      "Metotrexato em dose dupla para dispensar as dosagens seriadas",
+      "Conduta expectante, com nova USTV no próximo pré-natal"
+    ],
+    "correctIndex": 0,
+    "explanation": "Seguimento ambulatorial garantido é critério de elegibilidade, não detalhe: a resposta ao metotrexato é monitorada pela queda do β-hCG em dias definidos, e queda insuficiente exige nova dose ou cirurgia. Sem retorno possível, a opção medicamentosa sai da mesa — as bancas costumam testar justamente a instabilidade ou a falta de seguimento."
+  },
+  {
+    "question": "Gestante de sete semanas, estável, tem sangramento discreto e indolor, colo fechado e embrião com batimentos cardíacos à USTV. Qual afirmação sobre a conduta é correta?",
+    "options": [
+      "Expectante, com orientação de sinais de alarme e retorno programado",
+      "Repouso absoluto e progesterona de rotina até completar 12 semanas",
+      "Misoprostol vaginal, pois o sangramento indica perda iminente",
+      "Aspiração manual intrauterina, pelo risco de evoluir para retido"
+    ],
+    "correctIndex": 0,
+    "explanation": "Colo fechado com embrião vivo define ameaça de abortamento: a gestação é intrauterina e viável, e qualquer esvaziamento interromperia uma gestação em evolução. A conduta é expectante, com orientação sobre sinais de alarme, suporte e retorno programado. Repouso absoluto e progesterona de rotina não têm indicação estabelecida nesse cenário."
+  },
+  {
+    "question": "Mulher de 24 anos, com nove semanas, estável e afebril, tem sangramento moderado, colo aberto e restos ovulares na USTV. Quais condutas são aceitáveis?",
+    "options": [
+      "Expectante, misoprostol ou aspiração manual intrauterina",
+      "Somente curetagem uterina sob anestesia geral imediata",
+      "Somente antibiótico de amplo espectro e reavaliação",
+      "Somente ocitocina em infusão contínua até a expulsão"
+    ],
+    "correctIndex": 0,
+    "explanation": "No abortamento incompleto em paciente estável, sem infecção e sem sangramento intenso, cabem conduta expectante, misoprostol ou aspiração manual intrauterina. Quando se opta pelo esvaziamento no primeiro trimestre, a aspiração manual é preferida à curetagem: menor risco de perfuração e de sinéquias, sem dilatação cervical ampla e com possibilidade de realização ambulatorial."
+  },
+  {
+    "question": "Qual paciente com abortamento incompleto exige esvaziamento uterino, em vez de misoprostol ou conduta expectante?",
+    "options": [
+      "Instável ou com sinais de infecção",
+      "Estável, com 8 semanas e afebril",
+      "Estável, primigesta e sem dor",
+      "Estável, com sangramento discreto"
+    ],
+    "correctIndex": 0,
+    "explanation": "Conduta expectante e medicamentosa servem à paciente estável, sem sinais de infecção e sem sangramento intenso. Instabilidade hemodinâmica e abortamento infectado exigem esvaziamento uterino — oferecer misoprostol a paciente instável ou infectada é um dos distratores que mais derrubam."
+  },
+  {
+    "question": "Paciente de 22 anos chega após tentativa de interrupção da gestação, com sangramento de odor fétido, dor pélvica intensa, temperatura de 38,8 °C, colo aberto e restos ovulares na USTV. Qual a conduta correta?",
+    "options": [
+      "Antibiótico de amplo espectro associado ao esvaziamento uterino",
+      "Antibiótico de amplo espectro isolado, com reavaliação em 48 horas",
+      "Misoprostol ambulatorial com antibiótico oral e retorno em 7 dias",
+      "Analgesia e observação clínica, aguardando a expulsão espontânea"
+    ],
+    "correctIndex": 0,
+    "explanation": "No abortamento infectado, o material retido é o próprio foco da infecção. A antibioticoterapia de amplo espectro é indispensável, mas acompanha o esvaziamento uterino — nunca o substitui —, e o atraso na remoção do foco favorece a progressão para sepse."
+  },
+  {
+    "question": "Mulher de 24 anos, com 12 semanas de atraso, tem sangramento com eliminação de vesículas, hiperêmese, útero maior que o esperado, PA 150/95 mmHg, β-hCG de 380.000 mUI/mL e massa intrauterina heterogênea com múltiplos espaços císticos, sem feto. Qual o diagnóstico mais provável?",
+    "options": [
+      "Mola hidatiforme completa",
+      "Mola hidatiforme parcial",
+      "Gemelar com pré-eclâmpsia",
+      "Coriocarcinoma gestacional"
+    ],
+    "correctIndex": 0,
+    "explanation": "Útero maior que o esperado, β-hCG desproporcionalmente elevado, eliminação de vesículas e massa com múltiplos espaços císticos sem feto são a assinatura da mola completa. Hiperêmese e hipertensão antes das 20 semanas reforçam a hipótese. A mola parcial cursa com feto, β-hCG menos elevado e útero compatível ou menor que o esperado."
+  },
+  {
+    "question": "Gestante de 15 semanas apresenta PA de 150/100 mmHg com proteinúria e útero maior que o esperado para a idade gestacional. Qual hipótese precisa ser investigada?",
+    "options": [
+      "Mola hidatiforme",
+      "Hipertensão crônica",
+      "Gestação gemelar",
+      "Lúpus com nefrite"
+    ],
+    "correctIndex": 0,
+    "explanation": "Pré-eclâmpsia antes das 20 semanas em gestante com útero aumentado deve levantar a hipótese de mola hidatiforme. Hiperêmese gravídica e sinais de tireotoxicose são os outros achados que as bancas plantam no enunciado para apontar doença trofoblástica."
+  },
+  {
+    "question": "Qual achado ultrassonográfico é típico da mola hidatiforme parcial?",
+    "options": [
+      "Placenta com áreas císticas focais e feto em geral malformado",
+      "Massa intrauterina em cachos de uva, sem qualquer tecido fetal",
+      "Útero vazio com massa anexial e anel de fogo ao Doppler",
+      "Saco gestacional de 26 mm sem embrião e com borda regular"
+    ],
+    "correctIndex": 0,
+    "explanation": "A mola parcial é triploide e contém tecido fetal: à ultrassonografia, placenta com áreas císticas focais e feto, em geral malformado. O β-hCG é menos elevado — por vezes compatível com a idade gestacional — e a altura uterina é compatível ou menor que a esperada. O aspecto em cachos de uva sem feto é da mola completa."
+  },
+  {
+    "question": "Mulher de 43 anos, com prole constituída, tem diagnóstico de mola hidatiforme completa. Sobre a histerectomia nesse caso, é correto afirmar:",
+    "options": [
+      "Pode ser considerada, mas não dispensa o seguimento com β-hCG",
+      "É a via de escolha em toda mola, por eliminar o risco de NTG",
+      "Está contraindicada, pois a vácuo-aspiração é a única opção",
+      "Dispensa o seguimento, pois remove todo o tecido trofoblástico"
+    ],
+    "correctIndex": 0,
+    "explanation": "A vácuo-aspiração é a via preferida de esvaziamento na mola. A histerectomia pode ser considerada em pacientes com prole constituída e fatores de risco, mas não elimina o risco de neoplasia trofoblástica gestacional — o seguimento seriado do β-hCG continua obrigatório."
+  },
+  {
+    "question": "Após o esvaziamento de uma mola completa, quando se indica quimioterapia?",
+    "options": [
+      "Apenas quando a curva do β-hCG preenche critério de NTG",
+      "Profilaticamente em todas, logo após o esvaziamento",
+      "Em todas com β-hCG inicial acima de 100.000 mUI/mL",
+      "Apenas se o sangramento persistir após a 1ª semana"
+    ],
+    "correctIndex": 0,
+    "explanation": "Quimioterapia não é profilática nem generalizada: é reservada às pacientes que preenchem critérios de neoplasia trofoblástica gestacional — platô ou elevação do β-hCG em dosagens sucessivas, persistência além do prazo esperado ou diagnóstico de coriocarcinoma. A alta vem com β-hCG seriado até a negativação e contracepção eficaz durante todo o seguimento."
+  },
+  {
+    "question": "Paciente em seguimento pós-molar tem queda progressiva do β-hCG e, à ultrassonografia, cistos tecaluteínicos ovarianos em regressão. Como interpretar?",
+    "options": [
+      "Evolução esperada, pois os cistos regridem com a queda do hCG",
+      "Sinal de neoplasia trofoblástica, com indicação de quimioterapia",
+      "Metástase ovariana que exige ooforectomia bilateral imediata",
+      "Nova gestação, que deve ser confirmada com β-hCG qualitativo"
+    ],
+    "correctIndex": 0,
+    "explanation": "Cistos tecaluteínicos decorrem da hiperestimulação ovariana pelo hCG elevado e regridem à medida que ele cai. O que define neoplasia trofoblástica é o comportamento da curva — platô ou elevação em dosagens sucessivas —, não cistos em regressão nem sangramento discreto nos primeiros dias após o esvaziamento."
+  },
+  {
+    "question": "Gestante de 34 semanas, hipertensa, chega com dor abdominal intensa e contínua, pequeno sangramento escuro, útero hipertônico, PA 160/105 mmHg e frequência cardíaca fetal de 90 bpm com desacelerações. Qual a conduta?",
+    "options": [
+      "Resolução imediata pela via mais rápida, com estabilização simultânea",
+      "Corticoide para maturação pulmonar e conduta expectante por 48 horas",
+      "Ultrassonografia obstétrica para confirmar o descolamento antes de agir",
+      "Tocólise para relaxar a hipertonia e recuperar a vitalidade fetal"
+    ],
+    "correctIndex": 0,
+    "explanation": "Dor intensa, hipertonia, sangramento escuro e sofrimento fetal em gestante hipertensa configuram descolamento prematuro de placenta. O diagnóstico é clínico, e a conduta é resolução imediata pela via mais rápida, com estabilização materna simultânea. Corticoide com expectativa mantém a gestação diante de hemorragia ativa, e a tocólise é contraindicada."
+  },
+  {
+    "question": "Qual é o papel da ultrassonografia na suspeita de descolamento prematuro de placenta com feto vivo e sofrimento fetal?",
+    "options": [
+      "Pode ser normal e não deve atrasar a decisão: o diagnóstico é clínico",
+      "É obrigatória antes da conduta, pois confirma o hematoma em quase todas",
+      "Define a via de parto, pois mede a extensão exata da área descolada",
+      "Substitui a cardiotocografia na avaliação da vitalidade fetal"
+    ],
+    "correctIndex": 0,
+    "explanation": "A ultrassonografia pode ser falso-negativa no descolamento e jamais deve atrasar a decisão. O diagnóstico é clínico — dor súbita e intensa, hipertonia, sangramento escuro (que pode ser oculto) e comprometimento da vitalidade fetal —, e a conduta é a resolução imediata."
+  },
+  {
+    "question": "Por que, no descolamento prematuro de placenta, o volume de sangue exteriorizado pode subestimar a perda real?",
+    "options": [
+      "O sangue pode ficar retido em hematoma atrás da placenta",
+      "O útero hipertônico reabsorve o sangue da cavidade amniótica",
+      "O sangramento é fetal e não altera a hemodinâmica materna",
+      "O colo fechado impede qualquer exteriorização de sangue"
+    ],
+    "correctIndex": 0,
+    "explanation": "No descolamento, o sangue se acumula entre a placenta e a parede uterina, formando hematoma retroplacentário; parte da perda — ou toda ela — pode ficar oculta. Por isso, sinais de choque e sofrimento fetal desproporcionais ao sangramento visível são típicos do quadro."
+  },
+  {
+    "question": "Gestante de 32 semanas, com duas cesáreas prévias, tem sangramento vaginal vermelho vivo, indolor e de início súbito. O útero tem tônus normal, a frequência cardíaca fetal é de 140 bpm, a paciente está estável e não há ultrassonografia recente. Qual a conduta inicial?",
+    "options": [
+      "Exame especular e ultrassonografia para localizar a placenta, sem toque",
+      "Toque vaginal para avaliar dilatação e apagamento do colo uterino",
+      "Amniotomia para acelerar o trabalho de parto e reduzir o sangramento",
+      "Cesárea de emergência imediata, antes de qualquer outra avaliação"
+    ],
+    "correctIndex": 0,
+    "explanation": "Sangramento vermelho vivo, indolor, com tônus normal e vitalidade fetal preservada é a assinatura da placenta prévia. Enquanto a placenta não for localizada por ultrassonografia, o toque vaginal é proscrito pelo risco de agravar o sangramento; o exame especular é permitido e informa origem e intensidade da perda. A indicação de cesárea depende da localização placentária, da idade gestacional e da estabilidade materna e fetal."
+  },
+  {
+    "question": "À beira do leito, antes de qualquer exame, qual par de achados mais ajuda a separar descolamento prematuro de placenta de placenta prévia?",
+    "options": [
+      "Dor e tônus uterino",
+      "Idade e paridade",
+      "Febre e leucocitose",
+      "Pressão e pulso"
+    ],
+    "correctIndex": 0,
+    "explanation": "O descolamento cursa com dor súbita e intensa e útero hipertônico; a placenta prévia, com sangramento indolor e útero de tônus normal. Junto com a vitalidade fetal — comprometida com frequência no descolamento, habitualmente preservada na prévia —, dor e tônus separam os dois diagnósticos antes de qualquer exame."
+  },
+  {
+    "question": "Qual conjunto de fatores de risco é típico da placenta prévia?",
+    "options": [
+      "Cesárea prévia, multiparidade e idade materna avançada",
+      "Doença hipertensiva, trauma abdominal e tabagismo",
+      "Nuliparidade, obesidade e diabetes mellitus gestacional",
+      "Polidrâmnio, gemelaridade e macrossomia fetal"
+    ],
+    "correctIndex": 0,
+    "explanation": "Cesárea prévia, multiparidade e idade materna avançada são os fatores clássicos da placenta prévia. Doença hipertensiva, trauma e tabagismo pertencem ao descolamento prematuro de placenta; cicatriz uterina com uso inadequado de uterotônico, à rotura uterina."
+  },
+  {
+    "question": "Gestante de 28 semanas, com três cesáreas prévias e placenta prévia total à ultrassonografia, está assintomática na consulta de pré-natal. Qual a conduta mais adequada?",
+    "options": [
+      "Investigar acretismo e programar o parto em centro de referência",
+      "Indicar cesárea de urgência no momento do diagnóstico",
+      "Liberar parto vaginal se não houver sangramento até o termo",
+      "Manter o pré-natal habitual, sem nenhum exame adicional"
+    ],
+    "correctIndex": 0,
+    "explanation": "Placenta prévia com cesáreas prévias é a combinação de maior risco para acretismo placentário. Investiga-se com ultrassonografia com Doppler, complementada por ressonância magnética quando necessário, e programa-se cesárea eletiva em centro de referência, com equipe multiprofissional, reserva de hemocomponentes e histerectomia planejada se indicada. Na prévia total, o parto vaginal é contraindicado."
+  },
+  {
+    "question": "Qual é a apresentação típica do acretismo placentário não diagnosticado no pré-natal?",
+    "options": [
+      "Hemorragia maciça na dequitação, sem dor nem sangramento antes",
+      "Dor súbita intensa com hipertonia e sangramento escuro no 3º trimestre",
+      "Sangramento vermelho vivo recorrente e indolor desde o 2º trimestre",
+      "Dor lancinante com parada das contrações e subida da apresentação"
+    ],
+    "correctIndex": 0,
+    "explanation": "No acretismo, a placenta adere anormalmente ao útero e não se desprende: a gestação transcorre sem dor, com vitalidade fetal preservada, e a hemorragia é maciça na dequitação. As demais alternativas descrevem, nessa ordem, descolamento prematuro de placenta, placenta prévia e rotura uterina."
+  },
+  {
+    "question": "Gestante de 39 semanas, com uma cesárea prévia, em indução com ocitocina, tem dor abdominal súbita e lancinante, parada das contrações, sangramento vaginal, subida da apresentação ao toque e bradicardia fetal mantida. Qual a conduta?",
+    "options": [
+      "Laparotomia imediata com estabilização simultânea",
+      "Aumentar a ocitocina para restabelecer a dinâmica",
+      "Fórcipe para abreviar o período expulsivo",
+      "Tocólise e reavaliação clínica em 30 minutos"
+    ],
+    "correctIndex": 0,
+    "explanation": "Dor súbita e lancinante com cessação das contrações, subida da apresentação e bradicardia em gestante com cicatriz uterina sob ocitocina é rotura uterina consumada. A conduta é laparotomia imediata, com estabilização materna simultânea e reserva de hemocomponentes. Aumentar a ocitocina agrava a lesão, e o fórcipe pressupõe apresentação insinuada — que deixa de existir após a rotura."
+  },
+  {
+    "question": "Qual achado ao exame abdominal é característico da rotura uterina consumada?",
+    "options": [
+      "Útero mal delimitado, com partes fetais palpáveis",
+      "Útero hipertônico, lenhoso e doloroso à palpação",
+      "Útero de tônus normal, indolor, com feto ativo",
+      "Útero maior que a idade gestacional e amolecido"
+    ],
+    "correctIndex": 0,
+    "explanation": "Na rotura consumada, o feto passa total ou parcialmente para a cavidade abdominal: o útero fica mal delimitado, as partes fetais são palpadas sob a parede abdominal, há subida da apresentação e bradicardia fetal. Útero hipertônico e doloroso é o do descolamento; tônus normal e indolor, o da placenta prévia."
+  },
+  {
+    "question": "Adolescente de 15 anos, acompanhada pela mãe, relata violência sexual ocorrida há 20 horas. Não registrou boletim de ocorrência e teme a exposição do caso. Qual a conduta da equipe?",
+    "options": [
+      "Atendimento imediato e integral, com notificação compulsória, sem exigir BO",
+      "Atendimento condicionado à apresentação do boletim de ocorrência policial",
+      "Encaminhamento prévio à delegacia, com retorno ao serviço após o registro",
+      "Atendimento somente após autorização judicial, por se tratar de menor"
+    ],
+    "correctIndex": 0,
+    "explanation": "O atendimento à pessoa em situação de violência sexual é obrigatório na rede de saúde e independe de boletim de ocorrência ou de autorização judicial. A notificação é compulsória e, em criança ou adolescente, há ainda comunicação ao Conselho Tutelar. Exigir documentos revitimiza e atrasa profilaxias cuja eficácia depende do tempo."
+  },
+  {
+    "question": "Além do diagnóstico e da via de esvaziamento, quais itens completam o plano terapêutico de uma perda gestacional precoce?",
+    "options": [
+      "Anti-D se Rh negativo, analgesia, acolhimento e contracepção",
+      "Antibiótico profilático, repouso absoluto e progesterona",
+      "Curetagem de revisão, ocitocina e retorno em seis meses",
+      "Cariótipo do casal, trombofilias e cerclagem na próxima"
+    ],
+    "correctIndex": 0,
+    "explanation": "Um plano completo inclui estabilização quando necessária, definição da via, imunoglobulina anti-D na Rh negativa não sensibilizada, analgesia e prevenção de náuseas, acolhimento, orientação de sinais de alarme e planejamento reprodutivo — contracepção e intervalo até nova gestação fazem parte da alta, não de uma consulta futura."
+  }
+];
+
+var LETTERS = ['A','B','C','D','E','F'];
+var SHUFFLE = true, LOCK = true;
+
+var S = { view:'home', started:false, finished:false, i:0, order:[], answers:[], open:{}, filter:'all', warn:false, chat:{} };
+
+function esc(s){ return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
+function pad(n){ return String(n).padStart(2,'0'); }
+
+function build(){
+  var qs = QUIZ.map(function(q,id){ return { question:q.question, options:q.options.slice(), correctIndex:q.correctIndex, explanation:q.explanation, image:q.image, imageCaption:q.imageCaption, id:id }; });
+  if (!SHUFFLE) return qs;
+  for (var i=qs.length-1;i>0;i--){ var j=Math.floor(Math.random()*(i+1)); var t=qs[i]; qs[i]=qs[j]; qs[j]=t; }
+  return qs.map(function(q){
+    var correct = q.options[q.correctIndex], o = q.options.slice();
+    for (var i=o.length-1;i>0;i--){ var j=Math.floor(Math.random()*(i+1)); var t=o[i]; o[i]=o[j]; o[j]=t; }
+    q.options = o; q.correctIndex = o.indexOf(correct); return q;
+  });
+}
+
+/* ── ações ─────────────────────────────────────────────────────────────────── */
+var A = {
+  home:      function(){ S.view='home'; S.started=false; S.finished=false; up(0); },
+  resumo:    function(){ S.view='resumo'; up(0); },
+  start:     function(){ var o=build(); S.view='quiz'; S.started=true; S.finished=false; S.i=0; S.order=o;
+                         S.answers=new Array(o.length).fill(null); S.open={}; S.filter='all'; S.warn=false; up(0); },
+  restart:   function(){ A.start(); },
+  sair:      function(){ S.view='home'; S.started=false; up(0); },   // guarda as respostas
+  retomar:   function(){ S.view='quiz'; S.started=true; S.finished=false; S.warn=false; up(0); },
+  go:        function(n){ if(n<0||n>S.order.length-1) return; S.i=n; S.warn=false; render(); },
+  jump:      function(n){ if(S.finished){ S.finished=false; S.i=n; S.warn=false; } else { if(n<0||n>S.order.length-1) return; S.i=n; S.warn=false; } up(0,'smooth'); },
+  pick:      function(n){ if(LOCK && S.answers[S.i]!==null) return; S.answers[S.i]=n; render(); },
+  prev:      function(){ A.go(S.i-1); },
+  next:      function(){ if(S.i<S.order.length-1) A.go(S.i+1); else A.finish(); },
+  finish:    function(){ var b=S.answers.filter(function(a){return a===null}).length;
+                         if(b>0 && !S.warn){ S.warn=true; render(); return; } S.finished=true; S.warn=false; up(0); },
+  force:     function(){ S.finished=true; S.warn=false; up(0); },
+  gotoBlank: function(){ var n=S.answers.findIndex(function(a){return a===null}); if(n>=0) A.go(n); },
+  back:      function(){ S.finished=false; S.warn=false; up(0); },
+  filter:    function(k){ S.filter=k; render(); },
+  toggle:    function(n){ S.open[n]=!S.open[n]; render(); },
+  toggleAll: function(){ var r=reviewList(), all=r.length>0 && r.every(function(x){return S.open[x.idx]});
+                         S.open={}; if(!all) r.forEach(function(x){ S.open[x.idx]=true; }); render(); }
+};
+function up(top, beh){ render(); window.scrollTo({ top: top||0, behavior: beh||'auto' }); }
+
+/* Aberto por duplo clique (file://) volta para o indice local; servido pela web,
+   volta para o publicado. Os dois listam os mesmos materiais. */
+function idxHref(){
+  var local = (typeof location !== 'undefined' && location.protocol === 'file:');
+  return local ? '../index_local.html' : '../index.html';
+}
+function emAndamento(){
+  return S.order.length > 0 && !S.finished &&
+         S.answers.some(function(a){ return a !== null; });
+}
+
+/* ── header ────────────────────────────────────────────────────────────────── */
+function renderHeader(){
+  var mono = "font-family:'IBM Plex Mono',monospace";
+  var left =
+    '<div style="min-width:0">' +
+      '<div style="display:flex;align-items:center;gap:8px;'+mono+';font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:#8a8578">' +
+        '<a href="'+idxHref()+'" class="h-ink" style="color:#2b57cc;text-decoration:none;white-space:nowrap">\u2190 Materiais</a>' +
+        '<span style="color:#d3cec4">/</span>' +
+        '<span style="overflow:hidden;text-overflow:ellipsis;white-space:nowrap">'+esc(EYEBROW)+'</span>' +
+      '</div>' +
+      '<h1 style="margin:1px 0 0;font-family:\'Newsreader\',Georgia,serif;font-size:20px;font-weight:500;letter-spacing:-.01em;line-height:1.15">'+esc(TITLE)+'</h1>' +
+    '</div>';
+
+  var right = '';
+  if (S.view === 'quiz' && S.started) {
+    var hit = counts().hit;
+    right = '<div style="display:flex;align-items:center;gap:10px;flex-shrink:0">' +
+              '<button type="button" data-act="sair" class="h-line" style="background:none;border:1px solid #ddd8ce;border-radius:9px;padding:6px 11px;'+mono+';font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;color:#5b6478;cursor:pointer;transition:border-color .15s ease">Sair</button>' +
+              '<div style="display:flex;align-items:center;gap:6px">' +
+                '<span style="'+mono+';font-size:15px;font-weight:600;letter-spacing:-.02em">'+hit+'</span>' +
+                '<span style="'+mono+';font-size:11px;color:#8a8578">/ '+S.order.length+'</span>' +
+              '</div></div>';
+  } else if (S.view !== 'home') {
+    right = '<button type="button" data-act="home" class="h-line" style="flex-shrink:0;background:none;border:1px solid #ddd8ce;border-radius:9px;padding:7px 13px;'+mono+';font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:#5b6478;cursor:pointer;transition:border-color .15s ease">← Início</button>';
+  }
+
+  var html = '<div style="display:flex;align-items:baseline;justify-content:space-between;gap:12px;margin-bottom:'+(S.view==='quiz'&&S.started?'10px':'2px')+'">'+left+right+'</div>';
+
+  if (S.view === 'quiz' && S.started) {
+    var c = counts();
+    var rail = S.order.map(function(q,n){
+      var a = S.answers[n], cur = n===S.i && !S.finished, bg = '#d3cec4';
+      if (a!==null) bg = (a===q.correctIndex) ? '#2e7d55' : '#c04437';
+      if (cur && a===null) bg = '#121a2b';
+      var st = a===null ? 'em branco' : (a===q.correctIndex ? 'correta' : 'incorreta');
+      return '<button type="button" data-act="jump" data-n="'+n+'" title="Questão '+(n+1)+' — '+st+'" aria-label="Questão '+(n+1)+' — '+st+'" style="flex:1 1 0;min-width:0;background:none;border:0;padding:13px 0;margin:0;cursor:pointer;display:flex;align-items:center;justify-content:center">' +
+             '<span style="display:block;width:100%;border-radius:99px;transition:height .18s ease,background .18s ease,box-shadow .18s ease;height:'+(cur?'17px':'9px')+';background:'+bg+';box-shadow:'+(cur?'0 0 0 3px rgba(18,26,43,.13)':'none')+'"></span></button>';
+    }).join('');
+    html += '<div><div style="display:flex;align-items:center;gap:3px">'+rail+'</div>' +
+            '<div style="display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:-2px">' +
+              '<div style="'+mono+';font-size:11px;letter-spacing:.04em;color:#5b6478">Questão '+pad(S.i+1)+' / '+S.order.length+'</div>' +
+              '<div style="display:flex;align-items:center;gap:12px;'+mono+';font-size:10.5px;color:#8a8578">' +
+                dot('#2e7d55',c.hit)+dot('#c04437',c.miss)+dot('#d3cec4',c.blank) +
+              '</div></div></div>';
+  }
+  document.getElementById('hdr').innerHTML = html;
+}
+function dot(color,n){ return '<span style="display:flex;align-items:center;gap:5px"><span style="width:7px;height:7px;border-radius:99px;background:'+color+';display:block"></span>'+n+'</span>'; }
+
+function counts(){
+  var hit=0, miss=0, blank=0;
+  S.answers.forEach(function(a,n){
+    if (a===null) blank++;
+    else if (S.order[n] && a===S.order[n].correctIndex) hit++;
+    else miss++;
+  });
+  return { hit:hit, miss:miss, blank:blank, total:S.order.length };
+}
+
+/* ── tela inicial ──────────────────────────────────────────────────────────── */
+function renderHome(){
+  var mono = "font-family:'IBM Plex Mono',monospace";
+  var secoes = (document.getElementById('resumoSrc').textContent.match(/<h2/g)||[]).length;
+  var cell = function(v,l){
+    return '<div style="background:#faf9f6;padding:16px 14px">' +
+      '<div style="'+mono+';font-size:22px;font-weight:500;letter-spacing:-.03em">'+v+'</div>' +
+      '<div style="'+mono+';font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:#8a8578;margin-top:3px">'+l+'</div></div>';
+  };
+  var card = function(act,tag,titulo,desc,cta){
+    return '<button type="button" data-act="'+act+'" class="h-card" style="display:flex;flex-direction:column;align-items:flex-start;gap:0;text-align:left;background:#fff;border:1px solid #e4e0d8;border-radius:18px;padding:24px 22px;cursor:pointer;transition:border-color .16s ease,transform .14s ease;box-shadow:0 1px 2px rgba(18,26,43,.04),0 12px 28px -20px rgba(18,26,43,.18)">' +
+      '<div style="'+mono+';font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:#2b57cc;margin-bottom:12px">'+tag+'</div>' +
+      '<div style="font-family:\'Newsreader\',Georgia,serif;font-size:26px;font-weight:500;letter-spacing:-.02em;line-height:1.15;margin-bottom:8px">'+titulo+'</div>' +
+      '<div style="font-size:14px;line-height:1.6;color:#5b6478;margin-bottom:18px;text-wrap:pretty">'+desc+'</div>' +
+      '<div style="'+mono+';font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:#121a2b">'+cta+'</div></button>';
+  };
+
+  document.getElementById('stage').innerHTML =
+    '<section style="padding:56px 0 0;animation:qFade .3s ease">' +
+      '<div style="'+mono+';font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:#2b57cc;margin-bottom:16px">Material de revisão</div>' +
+      '<h2 style="font-family:\'Newsreader\',Georgia,serif;font-size:40px;line-height:1.08;font-weight:400;letter-spacing:-.025em;margin:0 0 18px;text-wrap:pretty">'+esc(SUBTITLE)+'</h2>' +
+      '<p style="font-size:15.5px;line-height:1.65;color:#5b6478;margin:0 0 30px;max-width:52ch;text-wrap:pretty">'+esc(INTRO)+'</p>' +
+      '<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(108px,1fr));gap:1px;background:#e4e0d8;border:1px solid #e4e0d8;border-radius:14px;overflow:hidden;margin-bottom:32px">' +
+        cell(QUIZ.length,'Questões') + cell(secoes,'Seções') + cell('~'+Math.round(QUIZ.length*0.75),'Minutos') +
+      '</div>' +
+      '<div class="home-grid" style="display:grid;grid-template-columns:1fr 1fr;gap:12px">' +
+        (emAndamento()
+          ? card('retomar','Em andamento','Quiz',
+                 'Você parou na questão '+pad(S.i+1)+' de '+S.order.length+', com '+
+                 (S.order.length-counts().blank)+' respondida'+((S.order.length-counts().blank)===1?'':'s')+
+                 '. Suas respostas continuam guardadas.','Retomar →')
+          : card('start','Praticar','Quiz', QUIZ.length+' questões de múltipla escolha, com explicação assim que você responde e gabarito comentado no fim.','Começar →')) +
+        card('resumo','Estudar','Resumo','O conteúdo da aula em texto corrido, organizado em '+secoes+' seções para leitura antes da prova.','Ler →') +
+      '</div>' +
+      '<div style="margin-top:26px;display:flex;flex-wrap:wrap;align-items:center;gap:8px 18px;'+mono+';font-size:11px;color:#8a8578">' +
+        '<span>← →&nbsp; navegar</span><span>1–'+maxOpts()+'&nbsp; responder</span><span>Enter&nbsp; avançar</span>' +
+        (emAndamento() ? '<button type="button" data-act="start" class="h-ink" style="background:none;border:0;padding:0;'+mono+';font-size:11px;color:#8a8578;cursor:pointer;text-decoration:underline;text-underline-offset:3px">recomeçar do zero</button>' : '') +
+        '</div>' +
+    '</section>';
+}
+function maxOpts(){ return QUIZ.reduce(function(m,q){ return Math.max(m,q.options.length); },0); }
+
+/* ── resumo ────────────────────────────────────────────────────────────────── */
+function renderResumo(){
+  document.getElementById('stage').innerHTML =
+    '<section style="padding:34px 0 0;animation:qFade .3s ease">' +
+      '<div style="font-family:\'IBM Plex Mono\',monospace;font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:#2b57cc;margin-bottom:14px">Resumo</div>' +
+      '<div class="rsm">' + document.getElementById('resumoSrc').textContent + '</div>' +
+      '<div style="display:flex;flex-wrap:wrap;gap:9px;margin-top:38px;padding-top:24px;border-top:1px solid #e4e0d8">' +
+        '<button type="button" data-act="start" class="h-darkflat" style="background:#121a2b;color:#f5f3ef;border:0;border-radius:11px;padding:13px 24px;font-size:14px;font-weight:500;cursor:pointer;transition:background .16s ease">Fazer o quiz →</button>' +
+        '<button type="button" data-act="home" class="h-line" style="background:none;border:1px solid #ddd8ce;border-radius:11px;padding:13px 22px;font-size:14px;cursor:pointer;transition:border-color .15s ease">Voltar ao início</button>' +
+      '</div></section>';
+}
+
+/* imagem da questao — data URI ja resolvida pelo montar_quiz.py */
+function figura(q, cls){
+  if (!q.image) return '';
+  return '<figure class="fig'+(cls?' '+cls:'')+'"><img src="'+q.image+'" alt="'+esc(q.imageCaption||'Imagem da questão')+'">' +
+         (q.imageCaption ? '<figcaption>'+esc(q.imageCaption)+'</figcaption>' : '') + '</figure>';
+}
+
+/* ── questão ───────────────────────────────────────────────────────────────── */
+function renderQuestion(){
+  var mono = "font-family:'IBM Plex Mono',monospace";
+  var q = S.order[S.i], ans = S.answers[S.i], reveal = ans !== null;
+
+  var status = 'Não respondida', sColor = '#8a8578';
+  if (reveal) { var ok = ans===q.correctIndex; status = ok?'Você acertou':'Você errou'; sColor = ok?'#2e7d55':'#c04437'; }
+
+  var opts = q.options.map(function(text,n){
+    var isC = n===q.correctIndex, isMine = n===ans;
+    var bd='#e4e0d8', bg='#fff', fg='#121a2b', bBg='#f2efe9', bFg='#8a8578', mark='', mColor='', op='1', hbd='#2b57cc';
+    if (reveal) {
+      op = (isC||isMine) ? '1' : '.62';
+      if (isC)               { bd='#8fc7a7'; bg='#eef7f1'; fg='#1f5c3e'; bBg='#2e7d55'; bFg='#fff'; mark='✓'; mColor='#2e7d55'; }
+      if (isMine && !isC)    { bd='#e0a49a'; bg='#fdf0ee'; fg='#8f2f25'; bBg='#c04437'; bFg='#fff'; mark='✕'; mColor='#c04437'; }
+    } else if (isMine)       { bd='#121a2b'; bg='#f7f6f2'; bBg='#121a2b'; bFg='#f5f3ef'; }
+    var locked = reveal && LOCK;
+    return '<button type="button" data-act="pick" data-n="'+n+'" class="h-opt'+(locked?' locked':'')+'" style="--hbd:'+hbd+';display:flex;gap:13px;align-items:flex-start;width:100%;text-align:left;padding:14px 15px;border-radius:13px;font-size:15px;line-height:1.5;transition:border-color .15s ease,background .15s ease,transform .12s ease;border:1.5px solid '+bd+';background:'+bg+';color:'+fg+';cursor:'+(locked?'default':'pointer')+';opacity:'+op+'">' +
+      '<span style="flex-shrink:0;width:24px;height:24px;border-radius:7px;display:flex;align-items:center;justify-content:center;'+mono+';font-size:11.5px;font-weight:600;margin-top:1px;background:'+bBg+';color:'+bFg+'">'+LETTERS[n]+'</span>' +
+      '<span style="flex:1;min-width:0;text-wrap:pretty">'+esc(text)+'</span>' +
+      (mark ? '<span style="flex-shrink:0;'+mono+';font-size:14px;font-weight:600;margin-top:1px;color:'+mColor+'">'+mark+'</span>' : '') +
+      '</button>';
+  }).join('');
+
+  var expl = reveal ? '<div style="margin-top:20px;padding:16px 18px;background:#f7f6f2;border-left:2.5px solid #2b57cc;border-radius:0 12px 12px 0;animation:qFade .26s ease">' +
+      '<div style="'+mono+';font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:#2b57cc;margin-bottom:8px">Por quê</div>' +
+      '<p style="margin:0;font-size:14.5px;line-height:1.68;color:#39404f;text-wrap:pretty">'+esc(q.explanation)+'</p></div>' : '';
+
+  var blank = counts().blank;
+  var warn = S.warn ? '<div style="margin-top:14px;padding:15px 17px;background:#fdf7e9;border:1px solid #e8d5a3;border-radius:14px;animation:qFade .22s ease">' +
+      '<p style="margin:0 0 12px;font-size:14px;line-height:1.55;color:#6b5620">'+blank+(blank===1?' questão ainda está em branco.':' questões ainda estão em branco.')+' Você pode voltar nelas ou finalizar assim mesmo.</p>' +
+      '<div style="display:flex;flex-wrap:wrap;gap:8px">' +
+        '<button type="button" data-act="gotoBlank" style="background:#121a2b;color:#f5f3ef;border:0;border-radius:9px;padding:9px 16px;font-size:13px;font-weight:500;cursor:pointer">Ir para a 1ª em branco</button>' +
+        '<button type="button" data-act="force" style="background:none;color:#6b5620;border:1px solid #e8d5a3;border-radius:9px;padding:9px 16px;font-size:13px;cursor:pointer">Finalizar assim mesmo</button>' +
+      '</div></div>' : '';
+
+  var last = S.i === S.order.length-1;
+  var early = !last && (S.order.length - blank) > 0;
+
+  document.getElementById('stage').innerHTML =
+    '<section style="padding:26px 0 0">' +
+      '<article style="background:#fff;border:1px solid #e4e0d8;border-radius:18px;padding:26px 22px 24px;box-shadow:0 1px 2px rgba(18,26,43,.04),0 12px 28px -18px rgba(18,26,43,.18)">' +
+        '<div style="display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:14px">' +
+          '<div style="'+mono+';font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:#2b57cc">Questão '+pad(S.i+1)+'</div>' +
+          '<div style="'+mono+';font-size:10.5px;letter-spacing:.06em;color:'+sColor+'">'+status+'</div>' +
+        '</div>' +
+        '<h2 style="font-family:\'Newsreader\',Georgia,serif;font-size:22px;line-height:1.42;font-weight:400;letter-spacing:-.012em;margin:0 0 22px;text-wrap:pretty">'+esc(q.question)+'</h2>' +
+        figura(q, 'qfig') +
+        '<div style="display:flex;flex-direction:column;gap:9px">'+opts+'</div>' + expl +
+        (reveal ? chatBox(q, ans===q.correctIndex) : '') +
+      '</article>' + warn +
+      '<div style="display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:18px">' +
+        '<button type="button" data-act="prev" class="h-line" style="background:none;border:1px solid #ddd8ce;border-radius:11px;padding:12px 18px;font-size:14px;cursor:pointer;transition:border-color .15s ease,color .15s ease;color:'+(S.i===0?'#c4bfb4':'#121a2b')+';pointer-events:'+(S.i===0?'none':'auto')+'">← Anterior</button>' +
+        '<div style="display:flex;align-items:center;gap:8px">' +
+          (early ? '<button type="button" data-act="finish" class="h-ink" style="background:none;border:0;padding:12px 6px;'+mono+';font-size:11.5px;letter-spacing:.06em;text-transform:uppercase;color:#8a8578;cursor:pointer;text-decoration:underline;text-underline-offset:3px">Finalizar</button>' : '') +
+          '<button type="button" data-act="next" class="h-darkflat" style="background:#121a2b;color:#f5f3ef;border:0;border-radius:11px;padding:12px 22px;font-size:14px;font-weight:500;cursor:pointer;transition:background .16s ease">'+(last?'Finalizar':'Próxima →')+'</button>' +
+        '</div></div></section>';
+}
+
+/* ── resultado + gabarito comentado ────────────────────────────────────────── */
+function reviewList(){
+  return S.order.map(function(q,n){
+    var a = S.answers[n], ok = a!==null && a===q.correctIndex;
+    return { idx:n, ok:ok, blank:a===null, q:q, a:a };
+  }).filter(function(r){
+    return S.filter==='all' || (S.filter==='wrong'&&!r.ok&&!r.blank) || (S.filter==='right'&&r.ok) || (S.filter==='blank'&&r.blank);
+  });
+}
+
+function renderResult(){
+  var mono = "font-family:'IBM Plex Mono',monospace";
+  var c = counts(), pct = c.total ? Math.round(c.hit/c.total*100) : 0;
+
+  var title='Precisa revisar', msg='Releia o material com atenção e refaça o quiz — as explicações abaixo cobrem cada erro.';
+  if (pct>=90)      { title='Domínio sólido';   msg='Desempenho excelente. Confira as explicações das que escaparam e siga em frente.'; }
+  else if (pct>=70) { title='Bom desempenho';   msg='Base consistente. Revise os pontos errados abaixo para fechar as lacunas.'; }
+  else if (pct>=50) { title='Meio do caminho';  msg='Você acertou o essencial, mas há lacunas. Comece pelo filtro de erradas.'; }
+
+  var stat = function(v,l,color){
+    return '<div style="background:#faf9f6;padding:14px 10px">' +
+      '<div style="'+mono+';font-size:19px;font-weight:500;color:'+color+'">'+v+'</div>' +
+      '<div style="'+mono+';font-size:9.5px;letter-spacing:.09em;text-transform:uppercase;color:#8a8578;margin-top:2px">'+l+'</div></div>';
+  };
+
+  var fdefs = [['all','Todas',c.total],['wrong','Erradas',c.miss],['right','Certas',c.hit],['blank','Em branco',c.blank]];
+  var filters = fdefs.map(function(f){
+    var on = S.filter===f[0];
+    return '<button type="button" data-act="filter" data-k="'+f[0]+'" class="h-line" style="border-radius:99px;padding:8px 14px;font-size:13px;cursor:pointer;transition:all .15s ease;border:1px solid '+(on?'#121a2b':'#ddd8ce')+';background:'+(on?'#121a2b':'transparent')+';color:'+(on?'#f5f3ef':'#5b6478')+'">'+f[1]+' '+f[2]+'</button>';
+  }).join('');
+
+  var list = reviewList();
+  var allOpen = list.length>0 && list.every(function(r){ return S.open[r.idx]; });
+
+  var cards = list.map(function(r){
+    var numBg='#f0ede7', numFg='#8a8578';
+    if (!r.blank) { if (r.ok) { numBg='#e3f0e8'; numFg='#1f5c3e'; } else { numBg='#fbe6e2'; numFg='#8f2f25'; } }
+    var open = !!S.open[r.idx];
+    var body = '';
+    if (open) {
+      var opts = r.q.options.map(function(text,n){
+        var isC = n===r.q.correctIndex, isMine = n===r.a;
+        var bd='#eeebe4', bg='#fbfaf8', fg='#5b6478', bBg='#f0ede7', bFg='#8a8578', tag='', tBg='', tFg='';
+        if (isC)            { bd='#bcdcc9'; bg='#eef7f1'; fg='#1f5c3e'; bBg='#2e7d55'; bFg='#fff'; tag='Correta'; tBg='#d9ede1'; tFg='#1f5c3e'; }
+        if (isMine && !isC) { bd='#eec4bd'; bg='#fdf0ee'; fg='#8f2f25'; bBg='#c04437'; bFg='#fff'; tag='Sua resposta'; tBg='#f7ddd8'; tFg='#8f2f25'; }
+        if (isMine && isC)  { tag='Sua resposta ✓'; }
+        return '<div style="display:flex;gap:11px;align-items:flex-start;padding:11px 13px;border-radius:11px;font-size:14px;line-height:1.5;border:1px solid '+bd+';background:'+bg+';color:'+fg+'">' +
+          '<span style="flex-shrink:0;width:21px;height:21px;border-radius:6px;display:flex;align-items:center;justify-content:center;'+mono+';font-size:10.5px;font-weight:600;background:'+bBg+';color:'+bFg+'">'+LETTERS[n]+'</span>' +
+          '<span style="flex:1;min-width:0;text-wrap:pretty">'+esc(text)+'</span>' +
+          (tag ? '<span style="flex-shrink:0;'+mono+';font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;padding:3px 7px;border-radius:6px;margin-top:1px;background:'+tBg+';color:'+tFg+'">'+tag+'</span>' : '') +
+          '</div>';
+      }).join('');
+      body = '<div style="padding:2px 15px 18px;animation:qDrawer .2s ease">' +
+        '<div style="height:1px;background:#eeebe4;margin:0 0 16px"></div>' +
+        '<p style="font-family:\'Newsreader\',Georgia,serif;font-size:18px;line-height:1.5;margin:0 0 16px;text-wrap:pretty">'+esc(r.q.question)+'</p>' +
+        figura(r.q) +
+        '<div style="display:flex;flex-direction:column;gap:7px">'+opts+'</div>' +
+        '<div style="margin-top:16px;padding:14px 16px;background:#f7f6f2;border-left:2.5px solid #2b57cc;border-radius:0 11px 11px 0">' +
+          '<div style="'+mono+';font-size:9.5px;letter-spacing:.16em;text-transform:uppercase;color:#2b57cc;margin-bottom:7px">Por quê</div>' +
+          '<p style="margin:0;font-size:14px;line-height:1.65;color:#39404f;text-wrap:pretty">'+esc(r.q.explanation)+'</p></div>' +
+        '<button type="button" data-act="jump" data-n="'+r.idx+'" style="margin-top:14px;background:none;border:0;padding:0;'+mono+';font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:#2b57cc;cursor:pointer;text-decoration:underline;text-underline-offset:3px">Abrir no quiz →</button></div>';
+    }
+    return '<div style="background:#fff;border:1px solid '+(open?'#c9c3b6':'#e4e0d8')+';border-radius:14px;overflow:hidden;transition:border-color .15s ease">' +
+      '<button type="button" data-act="toggle" data-n="'+r.idx+'" style="display:flex;align-items:center;gap:12px;width:100%;text-align:left;background:none;border:0;padding:14px 15px;cursor:pointer">' +
+        '<span style="flex-shrink:0;width:28px;height:28px;border-radius:8px;display:flex;align-items:center;justify-content:center;'+mono+';font-size:12px;font-weight:600;background:'+numBg+';color:'+numFg+'">'+pad(r.idx+1)+'</span>' +
+        '<span style="flex:1;min-width:0;font-size:14px;line-height:1.45;color:#39404f;overflow:hidden;text-overflow:ellipsis;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical">'+esc(r.q.question)+'</span>' +
+        '<span style="flex-shrink:0;'+mono+';font-size:16px;color:#8a8578;width:16px;text-align:center">'+(open?'−':'+')+'</span>' +
+      '</button>' + body + '</div>';
+  }).join('');
+
+  document.getElementById('stage').innerHTML =
+    '<section style="padding:34px 0 0;animation:qFade .3s ease">' +
+      '<div style="'+mono+';font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:#2b57cc;margin-bottom:14px">Resultado</div>' +
+      '<h2 style="font-family:\'Newsreader\',Georgia,serif;font-size:36px;line-height:1.12;font-weight:400;letter-spacing:-.025em;margin:0 0 8px">'+title+'</h2>' +
+      '<p style="font-size:15px;line-height:1.6;color:#5b6478;margin:0 0 24px;max-width:48ch;text-wrap:pretty">'+msg+'</p>' +
+      '<div style="height:8px;border-radius:99px;background:#e4e0d8;overflow:hidden;margin-bottom:10px">' +
+        '<div style="height:100%;border-radius:99px;background:#121a2b;transition:width .7s cubic-bezier(.22,1,.36,1);width:'+pct+'%"></div></div>' +
+      '<div style="display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:#e4e0d8;border:1px solid #e4e0d8;border-radius:14px;overflow:hidden;margin-bottom:34px">' +
+        stat(c.hit,'Certas','#2e7d55')+stat(c.miss,'Erradas','#c04437')+stat(c.blank,'Branco','#8a8578')+stat(pct+'%','Aproveit.','#2b57cc') +
+      '</div>' +
+      '<div style="display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-bottom:14px">' +
+        '<h3 style="font-family:\'Newsreader\',Georgia,serif;font-size:22px;font-weight:500;letter-spacing:-.015em;margin:0">Gabarito comentado</h3>' +
+        '<button type="button" data-act="toggleAll" class="h-ink" style="background:none;border:0;padding:6px 0;'+mono+';font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:#5b6478;cursor:pointer;text-decoration:underline;text-underline-offset:3px">'+(allOpen?'Recolher tudo':'Expandir tudo')+'</button>' +
+      '</div>' +
+      '<div style="display:flex;gap:7px;flex-wrap:wrap;margin-bottom:16px">'+filters+'</div>' +
+      '<div style="display:flex;flex-direction:column;gap:8px">'+cards+'</div>' +
+      (list.length===0 ? '<div style="padding:38px 16px;text-align:center;color:#8a8578;font-size:14px;border:1px dashed #ddd8ce;border-radius:14px">Nenhuma questão neste filtro.</div>' : '') +
+      '<div style="display:flex;flex-wrap:wrap;gap:9px;margin-top:28px;padding-top:24px;border-top:1px solid #e4e0d8">' +
+        '<button type="button" data-act="restart" class="h-darkflat" style="background:#121a2b;color:#f5f3ef;border:0;border-radius:11px;padding:13px 24px;font-size:14px;font-weight:500;cursor:pointer;transition:background .16s ease">Refazer o quiz</button>' +
+        '<button type="button" data-act="back" class="h-line" style="background:none;border:1px solid #ddd8ce;border-radius:11px;padding:13px 22px;font-size:14px;cursor:pointer;transition:border-color .15s ease">Voltar às questões</button>' +
+        '<button type="button" data-act="resumo" class="h-line" style="background:none;border:1px solid #ddd8ce;border-radius:11px;padding:13px 22px;font-size:14px;cursor:pointer;transition:border-color .15s ease">Ler o resumo</button>' +
+      '</div></section>';
+}
+
+/* ── render + eventos ──────────────────────────────────────────────────────── */
+
+/* ─── Tutor DeepSeek — só local, só quando a questão foi errada ──────────────
+   A chave vem de ../deepseek_key.js, que não existe na versão publicada: online
+   o arquivo dá 404, dsOn() vira false e o chat simplesmente não é renderizado.
+   O histórico fica em S.chat[idDaQuestao] e sobrevive ao re-render do stage. */
+var DS_MODEL = 'deepseek-flash';
+var DS_URL   = 'https://api.deepseek.com/chat/completions';
+var NLJS     = String.fromCharCode(10);
+var DS_MONO  = "font-family:'IBM Plex Mono',monospace";
+var DS_SANS  = "font-family:'IBM Plex Sans',system-ui,sans-serif";
+
+function dsOn(){ return typeof window.DEEPSEEK_KEY === 'string' && window.DEEPSEEK_KEY.length > 10; }
+
+
+/* ─── markdown do chat ───────────────────────────────────────────────────────
+   O modelo responde em markdown (**negrito**, listas, `codigo`, tabelas). O texto
+   vem de fora, entao a ordem importa: ESCAPA TUDO primeiro com esc() e so depois
+   aplica formatacao — assim nenhuma tag vinda da resposta vira HTML de verdade.
+   Como esc() ja trocou > por &gt;, a citacao casa com &gt; e nao com >.
+   Trechos de codigo saem de cena por um marcador NUL, que nao pode existir
+   no texto escapado, e voltam no fim — assim ` ` protege o que esta dentro. */
+function mdIn(t){
+  var Z = String.fromCharCode(0), codes = [];
+  t = t.replace(/`([^`]+)`/g, function(_, c){
+    codes.push(c);
+    return Z + 'c' + (codes.length - 1) + Z;
+  });
+  t = t.replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>');
+  t = t.replace(/__([^_]+)__/g, '<strong>$1</strong>');
+  t = t.replace(/(^|[\s(])\*([^*\n]+)\*/g, '$1<em>$2</em>');
+  t = t.replace(/(^|[\s(])_([^_\n]+)_/g, '$1<em>$2</em>');
+  t = t.replace(/\[([^\]]+)\]\((https?:\/\/[^)\s]+)\)/g,
+    '<a href="$2" target="_blank" rel="noopener" style="color:#2b57cc">$1</a>');
+  return t.replace(new RegExp(Z + 'c([0-9]+)' + Z, 'g'), function(_, i){
+    return '<code style="' + DS_MONO + ';font-size:12px;background:#f2efe9;' +
+           'border-radius:4px;padding:1px 5px">' + codes[i] + '</code>';
+  });
+}
+
+function mdChat(txt){
+  var Z = String.fromCharCode(0);
+  var t = esc(String(txt == null ? '' : txt));
+  var blocos = [];
+  t = t.replace(/```[a-zA-Z]*\n?([\s\S]*?)```/g, function(_, c){
+    blocos.push(c.replace(/\n+$/, ''));
+    return Z + 'b' + (blocos.length - 1) + Z;
+  });
+
+  var linhas = t.split('\n'), out = [], lista = null, par = [];
+  function fechaLista(){ if (lista) { out.push('</' + lista + '>'); lista = null; } }
+  function fechaPar(){
+    if (par.length) { out.push('<p style="margin:0 0 9px">' + mdIn(par.join(' ')) + '</p>'); par = []; }
+  }
+  function fecha(){ fechaPar(); fechaLista(); }
+
+  for (var i = 0; i < linhas.length; i++){
+    var l = linhas[i], t2 = l.trim();
+    if (!t2) { fecha(); continue; }
+
+    var bl = t2.match(new RegExp('^' + Z + 'b([0-9]+)' + Z + '$'));
+    if (bl) {
+      fecha();
+      out.push('<pre style="margin:0 0 9px;padding:9px 11px;background:#f7f6f2;border-radius:9px;' +
+               'overflow-x:auto;' + DS_MONO + ';font-size:12px;line-height:1.5">' + blocos[bl[1]] + '</pre>');
+      continue;
+    }
+
+    // tabela: linha com | ... | seguida da separadora | --- | --- |
+    if (t2.charAt(0) === '|' && i + 1 < linhas.length && /^\|[\s:|-]+\|$/.test(linhas[i+1].trim())) {
+      fecha();
+      var celulas = function(linha){
+        return linha.trim().replace(/^\||\|$/g, '').split('|').map(function(c){ return mdIn(c.trim()); });
+      };
+      var cab = celulas(t2), corpo = [];
+      i += 2;
+      while (i < linhas.length && linhas[i].trim().charAt(0) === '|') { corpo.push(celulas(linhas[i].trim())); i++; }
+      i--;
+      var cel = 'padding:5px 9px;border-bottom:1px solid #eae6de;text-align:left;vertical-align:top';
+      out.push('<div style="overflow-x:auto;margin:0 0 9px">' +
+        '<table style="border-collapse:collapse;font-size:12.5px;width:100%">' +
+        '<thead><tr>' + cab.map(function(c){ return '<th style="' + cel + ';font-weight:600">' + c + '</th>'; }).join('') + '</tr></thead>' +
+        '<tbody>' + corpo.map(function(r){
+          return '<tr>' + r.map(function(c){ return '<td style="' + cel + '">' + c + '</td>'; }).join('') + '</tr>';
+        }).join('') + '</tbody></table></div>');
+      continue;
+    }
+
+    var h = t2.match(/^#{1,6}\s+(.*)$/);
+    if (h) {
+      fecha();
+      out.push('<div style="font-weight:600;color:#121a2b;margin:11px 0 5px">' + mdIn(h[1]) + '</div>');
+      continue;
+    }
+
+    if (/^(---+|\*\*\*+)$/.test(t2)) {
+      fecha();
+      out.push('<hr style="border:0;border-top:1px solid #eae6de;margin:11px 0">');
+      continue;
+    }
+
+    var cit = t2.match(/^&gt;\s?(.*)$/);
+    if (cit) {
+      fecha();
+      out.push('<div style="margin:0 0 9px;padding:7px 11px;border-left:2.5px solid #c9d6f7;' +
+               'background:#f7f9fe;border-radius:0 7px 7px 0">' + mdIn(cit[1]) + '</div>');
+      continue;
+    }
+
+    var mUl = t2.match(/^[-*•]\s+(.*)$/);
+    var mOl = t2.match(/^\d+[.)]\s+(.*)$/);
+    if (mUl || mOl) {
+      var tipo = mUl ? 'ul' : 'ol';
+      fechaPar();
+      if (lista !== tipo) {
+        fechaLista();
+        out.push('<' + tipo + ' style="margin:0 0 9px;padding-left:19px">');
+        lista = tipo;
+      }
+      out.push('<li style="margin:3px 0">' + mdIn((mUl || mOl)[1]) + '</li>');
+      continue;
+    }
+
+    fechaLista();
+    par.push(t2);
+  }
+  fecha();
+  return out.join('');
+}
+
+function msgHTML(m){
+  if (m.role === 'user')
+    return '<div style="margin:0 0 10px;text-align:right">' +
+      '<span style="display:inline-block;max-width:88%;text-align:left;background:#f2efe9;' +
+      'border-radius:12px 12px 3px 12px;padding:9px 12px;font-size:13.5px;line-height:1.6;' +
+      'color:#39404f;text-wrap:pretty">' + esc(m.content) + '</span></div>';
+  return '<div style="margin:0 0 12px">' +
+    '<div style="' + DS_MONO + ';font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;' +
+    'color:#2b57cc;margin-bottom:4px">DeepSeek</div>' +
+    '<div style="font-size:13.5px;line-height:1.65;color:#39404f;text-wrap:pretty">' +
+    mdChat(m.content) + '</div></div>';
+}
+
+function chatBox(q, acertou){
+  if (!dsOn()) return '';
+  var chamada = acertou ? 'Quer ir mais fundo?' : 'Ainda com dúvida?';
+  var dica = acertou ? 'Por que as outras estão erradas?' : 'Por que a que eu marquei está errada?';
+  var hist = (S.chat[q.id] || []).map(msgHTML).join('');
+  return '<div id="ds" data-qid="' + q.id + '" style="margin-top:14px;border:1px solid #e4e0d8;' +
+      'border-radius:14px;background:#fff;overflow:hidden;animation:qFade .26s ease">' +
+      '<div style="display:flex;align-items:center;gap:8px;padding:11px 15px;' +
+        'border-bottom:1px solid #f0ede6;background:#faf9f6">' +
+        '<span style="' + DS_MONO + ';font-size:10px;letter-spacing:.16em;text-transform:uppercase;' +
+        'color:#2b57cc">' + chamada + '</span>' +
+        '<span style="font-size:12px;color:#8a8578">pergunte ao DeepSeek</span></div>' +
+      '<div id="dsLog" style="max-height:280px;overflow-y:auto;padding:' + (hist ? '12px 15px' : '0') + '">' +
+        hist + '</div>' +
+      '<div style="display:flex;gap:8px;padding:11px 12px;border-top:1px solid #f0ede6">' +
+        '<input id="dsIn" type="text" autocomplete="off" ' +
+          'placeholder="' + dica + '" ' +
+          'style="flex:1;min-width:0;border:1px solid #e4e0d8;border-radius:10px;padding:10px 12px;' +
+          'font-size:13.5px;' + DS_SANS + ';color:#121a2b;background:#fff;outline:none">' +
+        '<button type="button" data-act="dsSend" class="h-darkflat" style="flex-shrink:0;' +
+          'background:#121a2b;color:#f5f3ef;border:0;border-radius:10px;padding:10px 16px;' +
+          'font-size:13px;font-weight:500;cursor:pointer;transition:background .16s ease">Enviar</button>' +
+      '</div></div>';
+}
+
+function dsContexto(q, ans){
+  var alts = q.options.map(function(o, n){ return LETTERS[n] + ') ' + o; }).join(NLJS);
+  return 'Questao: ' + q.question + NLJS + alts + NLJS +
+    'Resposta correta: ' + LETTERS[q.correctIndex] + ') ' + q.options[q.correctIndex] + NLJS +
+    'O estudante marcou: ' + (ans === null ? 'nada' : LETTERS[ans] + ') ' + q.options[ans]) + NLJS +
+    'Explicacao que ele ja tem: ' + q.explanation;
+}
+
+A.dsSend = function(){
+  var box = document.getElementById('ds');
+  if (!box || !dsOn() || box.getAttribute('data-busy')) return;
+  var input = document.getElementById('dsIn'), log = document.getElementById('dsLog');
+  var texto = (input.value || '').trim();
+  if (!texto) return;
+
+  var qid = parseInt(box.getAttribute('data-qid'), 10), q = null, ans = null;
+  for (var i = 0; i < S.order.length; i++)
+    if (S.order[i].id === qid) { q = S.order[i]; ans = S.answers[i]; }
+  if (!q) return;
+
+  S.chat[qid] = S.chat[qid] || [];
+  S.chat[qid].push({ role:'user', content:texto });
+  input.value = '';
+  log.style.padding = '12px 15px';
+  log.insertAdjacentHTML('beforeend', msgHTML({ role:'user', content:texto }));
+  log.insertAdjacentHTML('beforeend',
+    '<div><div style="' + DS_MONO + ';font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;' +
+    'color:#2b57cc;margin-bottom:4px">DeepSeek</div>' +
+    '<div id="dsTxt" style="font-size:13.5px;line-height:1.65;color:#8a8578;' +
+    'text-wrap:pretty">pensando…</div></div>');
+  log.scrollTop = log.scrollHeight;
+  box.setAttribute('data-busy', '1');
+
+  var acertou = (ans === q.correctIndex);
+  var situacao = acertou
+    ? 'Voce e um tutor de medicina. O estudante do 7o semestre ACERTOU esta questao, mas ficou com uma duvida. '
+    : 'Voce e um tutor de medicina. O estudante do 7o semestre ERROU esta questao. ';
+  var msgs = [
+    { role:'system', content: situacao +
+      'Responda em portugues do Brasil, direto ao ponto, no maximo 150 palavras. ' +
+      'Traga o dado concreto (valor, criterio, mecanismo) em vez de generalidade. ' +
+      'Nao repita a explicacao que ele ja tem; foque na duvida que ele trouxe.' },
+    { role:'user', content: dsContexto(q, ans) }
+  ];
+  var h = S.chat[qid];
+  for (var j = 0; j < h.length; j++) msgs.push({ role:h[j].role, content:h[j].content });
+
+  dsStream(msgs, function(txt, fim, erro){
+    var el = document.getElementById('dsTxt');
+    if (!el) { box.removeAttribute('data-busy'); return; }
+    if (erro) { el.style.color = '#c04437'; el.textContent = erro; box.removeAttribute('data-busy'); return; }
+    el.style.color = '#39404f';
+    el.innerHTML = mdChat(txt);
+    var lg = document.getElementById('dsLog'); if (lg) lg.scrollTop = lg.scrollHeight;
+    if (fim) { el.removeAttribute('id'); S.chat[qid].push({ role:'assistant', content:txt }); box.removeAttribute('data-busy'); }
+  });
+};
+
+function dsStream(messages, cb){
+  var acc = '';
+  fetch(DS_URL, {
+    method: 'POST',
+    headers: { 'Content-Type':'application/json', 'Authorization':'Bearer ' + window.DEEPSEEK_KEY },
+    body: JSON.stringify({ model:DS_MODEL, messages:messages, stream:true, max_tokens:1200, temperature:0.3 })
+  }).then(function(r){
+    if (!r.ok) return r.text().then(function(t){
+      throw new Error(
+        r.status === 401 ? 'Chave recusada (401). Confira o deepseek_key.js.' :
+        r.status === 402 ? 'Sem saldo na conta DeepSeek (402).' :
+        r.status === 429 ? 'Limite de uso atingido (429). Tente daqui a pouco.' :
+        'Erro ' + r.status + ': ' + String(t).slice(0, 120));
+    });
+    var reader = r.body.getReader(), dec = new TextDecoder(), buf = '';
+    (function pump(){
+      return reader.read().then(function(res){
+        if (res.done) { cb(acc || '(resposta vazia)', true); return; }
+        buf += dec.decode(res.value, { stream:true });
+        var linhas = buf.split(NLJS);
+        buf = linhas.pop();
+        for (var i = 0; i < linhas.length; i++){
+          var l = linhas[i].trim();
+          if (l.indexOf('data:') !== 0) continue;
+          var carga = l.slice(5).trim();
+          if (carga === '[DONE]') continue;
+          try {
+            var d = JSON.parse(carga).choices[0].delta;
+            if (d && d.content) { acc += d.content; cb(acc, false); }
+          } catch (_){}
+        }
+        return pump();
+      });
+    })();
+  }).catch(function(e){
+    cb('', true, 'Nao consegui falar com o DeepSeek: ' + (e && e.message ? e.message : e));
+  });
+}
+
+function render(){
+  renderHeader();
+  if (S.view === 'home')        renderHome();
+  else if (S.view === 'resumo') renderResumo();
+  else if (S.finished)          renderResult();
+  else                          renderQuestion();
+}
+
+/* lightbox: clique em qualquer figura amplia */
+document.addEventListener('click', function(e){
+  var lb = document.getElementById('lb');
+  if (e.target.closest('#lb')) { lb.className = ''; return; }
+  var img = e.target.closest('.fig img');
+  if (img) { lb.firstElementChild.src = img.src; lb.className = 'on'; }
+});
+window.addEventListener('keydown', function(e){
+  if (e.key === 'Escape') document.getElementById('lb').className = '';
+});
+
+document.addEventListener('click', function(e){
+  var b = e.target.closest('[data-act]'); if (!b) return;
+  var act = b.getAttribute('data-act'), n = parseInt(b.getAttribute('data-n'),10), k = b.getAttribute('data-k');
+  if (act==='pick'||act==='jump'||act==='toggle') A[act](n);
+  else if (act==='filter') A.filter(k);
+  else if (A[act]) A[act]();
+});
+
+window.addEventListener('keydown', function(e){
+  if (S.view!=='quiz' || !S.started || S.finished) return;
+  var t = e.target, tag = t && t.tagName;
+  if (tag==='INPUT' || tag==='TEXTAREA' || (t && t.isContentEditable)) return;
+  if (e.metaKey||e.ctrlKey||e.altKey) return;
+  if (e.key==='ArrowRight')     { e.preventDefault(); A.go(S.i+1); }
+  else if (e.key==='ArrowLeft') { e.preventDefault(); A.go(S.i-1); }
+  else if (e.key==='Enter')     { e.preventDefault(); A.next(); }
+  else if (/^[1-6]$/.test(e.key)) {
+    var n = parseInt(e.key,10)-1;
+    if (n < S.order[S.i].options.length) A.pick(n);
+  }
+});
+
+render();
+</script>
+</body>
+</html>

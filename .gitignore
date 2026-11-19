@@ -71,3 +71,30 @@ Neurologia/conteudo_doencas_do_sistema_nervoso_periferico.md
 
 # logs e dumps da checagem (o RELATORIO.md e os .json por tema ficam)
 _checagem/_*.txt
+
+# Pipeline de video (ETAPAS A-D). A prosa_*.md FICA versionada: e a fonte de
+# verdade pra regerar tudo, igual aos resumo_*.md. O resto e derivado e pesado.
+Videos/
+videos.html
+narracao_*.mp3
+tempos_*.json
+
+# audio do simulador de OSCE: regeneravel com narrar_osce.py, e ja vai
+# embutido no osce.html
+audio_osce_*.json
+
+# raiz servida na sessao compartilhada: so uma copia do osce.html
+_publico/
+
+# TLS do tunel: especifico desta maquina e deste dominio
+Caddyfile
+caddy.log
+
+# conteudo_* que e texto integral de capitulo de livro (Editora Atheneu).
+# O quiz e o resumo derivados vao; o texto do livro fica so na maquina.
+Neurologia/conteudo_cefaleias.md
+Neurologia/conteudo_coma_e_estados_alterados_de_consciencia.md
+Neurologia/conteudo_epilepsias.md
+
+# Anotacao de colega exportada do Notion (com o nome dela) - so referencia local
+Práticas/conteudo_protocolo_abcde_e_dispositivos.md

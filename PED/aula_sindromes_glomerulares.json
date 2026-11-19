@@ -1,0 +1,464 @@
+{
+  "titulo": "Síndromes Glomerulares",
+  "eyebrow": "Pediatria · Nefrologia",
+  "subtitulo": "Nefrótica ou nefrítica: reconhecer, investigar e conduzir na criança",
+  "intro": "Da barreira de filtração às duas grandes síndromes: definição, fisiopatologia do edema, critérios de proteinúria, lesões mínimas e corticoide (KDIGO 2025), complicações e sinais de alarme; hematúria glomerular, etiologias por idade e a glomerulonefrite pós-estreptocócica do diagnóstico à evolução.",
+  "questoes": [
+    {
+      "question": "Quais estruturas, de dentro do capilar para o espaço urinário, compõem a barreira de filtração glomerular?",
+      "options": [
+        "Endotélio fenestrado, membrana basal glomerular e podócitos",
+        "Células mesangiais, mácula densa e epitélio do túbulo proximal",
+        "Arteríola aferente, células justaglomerulares e mesângio",
+        "Epitélio parietal, cápsula de Bowman e túbulo contorcido distal"
+      ],
+      "correctIndex": 0,
+      "explanation": "A barreira tem três camadas: o endotélio fenestrado (fenestras de 80–100 nm, recobertas por glicocálice), a membrana basal glomerular (lamininas, colágeno IV α3/α4/α5, proteoglicanos) e os podócitos, cujos processos podais são unidos pelo diafragma da fenda (nefrina, podocina, CD2AP, TRPC6). Ela restringe a passagem por tamanho e por carga; ao perder seletividade, deixa passar albumina e IgG."
+    },
+    {
+      "question": "Qual conjunto de achados define a síndrome nefrótica?",
+      "options": [
+        "Proteinúria nefrótica, hipoalbuminemia, edema e hiperlipidemia",
+        "Hematúria glomerular, hipertensão arterial, edema e oligúria",
+        "Proteinúria nefrótica, hematúria, hipertensão e azotemia",
+        "Hipoalbuminemia, hematúria dismórfica, oligúria e C3 baixo"
+      ],
+      "correctIndex": 0,
+      "explanation": "A síndrome nefrótica reúne proteinúria importante (faixa nefrótica), albumina sérica baixa, edema e hiperlipidemia/lipidúria. Hematúria, hipertensão, oligúria e azotemia compõem a síndrome nefrítica. É uma síndrome clínico-laboratorial, não um diagnóstico etiológico: confirmada, é preciso definir se é primária (idiopática, a maioria em crianças) ou secundária."
+    },
+    {
+      "question": "Sobre a epidemiologia da síndrome nefrótica idiopática na infância, qual afirmação é correta?",
+      "options": [
+        "É mais frequente entre 1 e 6 anos, com razão masculino:feminino de 3:2",
+        "É mais frequente entre 6 e 12 anos, com razão feminino:masculino de 3:2",
+        "É mais frequente na adolescência, com razão masculino:feminino de 3:2",
+        "É mais frequente antes de 1 ano, sem diferença entre os sexos na infância"
+      ],
+      "correctIndex": 0,
+      "explanation": "A síndrome nefrótica idiopática é a doença glomerular mais comum da criança e, ainda assim, rara: cerca de 2,92 casos por 100.000 crianças/ano (meta-análise de 27 estudos), mais alta no sudeste da Ásia (6,1/100.000). Predomina entre 1 e 6 anos, com razão masculino:feminino de 3:2 — diferença que desaparece na adolescência."
+    },
+    {
+      "question": "No fluxograma da fisiopatologia da síndrome nefrótica, qual é o evento primário que desencadeia toda a cascata até o edema?",
+      "options": [
+        "Perda de proteínas pela barreira para o filtrado glomerular",
+        "Retenção primária de sódio e água pelo túbulo coletor",
+        "Redução primária da síntese hepática de albumina",
+        "Aumento primário da secreção de aldosterona pela suprarrenal"
+      ],
+      "correctIndex": 0,
+      "explanation": "O evento primário é a alteração da membrana glomerular, que aumenta a permeabilidade e deixa as proteínas passarem para o filtrado (proteinúria). A queda da pressão oncótica reduz o volume vascular e o fluxo sanguíneo renal, o que estimula a aldosterona e a retenção de sódio e água — mecanismo secundário que mantém e agrava o edema.",
+      "image": "pg23",
+      "imageCaption": "Fisiopatologia do edema na síndrome nefrótica"
+    },
+    {
+      "question": "Criança com síndrome nefrótica em anasarca está taquicárdica, com dor abdominal, vômitos e extremidades frias. Por que diurético em dose agressiva é perigoso nesse cenário?",
+      "options": [
+        "Agrava a hipovolemia intravascular e pode precipitar lesão renal aguda",
+        "Aumenta a perda urinária de albumina e piora a proteinúria nefrótica",
+        "Provoca hipercalemia grave por bloqueio direto da aldosterona",
+        "Desencadeia hipertensão de rebote por ativação do simpático"
+      ],
+      "correctIndex": 0,
+      "explanation": "Apesar do edema, o nefrótico pode estar hipovolêmico: a albumina baixa tira líquido do vaso para o interstício. Taquicardia, dor abdominal, vômitos e hipotensão sinalizam essa hipovolemia, que pode evoluir para choque e lesão renal aguda. Diurético sem critério retira ainda mais volume do intravascular; a regra é restrição de sal, diurético com cautela e albumina quando há hipovolemia ou edema grave."
+    },
+    {
+      "question": "Qual mecanismo explica a hipercoagulabilidade da síndrome nefrótica?",
+      "options": [
+        "Perda urinária de antitrombina III com aumento do fibrinogênio",
+        "Aumento da antitrombina III com queda do fibrinogênio sérico",
+        "Perda urinária de fibrinogênio e de fator VIII de origem hepática",
+        "Plaquetopenia de consumo com queda do fibrinogênio plasmático"
+      ],
+      "correctIndex": 0,
+      "explanation": "A antitrombina III, anticoagulante natural, é perdida na urina, enquanto o fígado, estimulado pela hipoalbuminemia, aumenta a síntese de fibrinogênio e de lipídios. O resultado é risco aumentado de tromboembolismo — por isso dor ou assimetria de membro é sinal de alerta e o risco trombótico deve ser avaliado em todo paciente."
+    },
+    {
+      "question": "Além da albumina, a perda urinária de proteínas de maior peso molecular na síndrome nefrótica explica quais outras alterações?",
+      "options": [
+        "Suscetibilidade a infecções, deficiência de vitamina D e de hormônio tireoidiano",
+        "Suscetibilidade a infecções, intoxicação por vitamina D e hipertireoidismo",
+        "Hipercalcemia, excesso de hormônio tireoidiano e policitemia secundária",
+        "Deficiência de vitamina K, hipoglicemia e insuficiência suprarrenal"
+      ],
+      "correctIndex": 0,
+      "explanation": "Quanto maior a lesão, maiores as proteínas perdidas. A perda de imunoglobulinas (IgG) favorece infecções; a de proteínas transportadoras leva a deficiência de vitamina D e de hormônio tireoidiano; a de antitrombina III favorece trombose. As consequências clássicas são edema, hipercoagulabilidade, suscetibilidade a infecções e dislipidemia."
+    },
+    {
+      "question": "Qual achado ultraestrutural caracteriza a doença de lesões mínimas e explica a proteinúria sem sedimento inflamatório?",
+      "options": [
+        "Fusão (simplificação) dos processos podais dos podócitos",
+        "Depósitos subepiteliais em corcova (humps) com C3 e IgG",
+        "Proliferação endocapilar com neutrófilos nos tufos capilares",
+        "Duplo contorno da membrana basal por interposição mesangial"
+      ],
+      "correctIndex": 0,
+      "explanation": "A síndrome nefrótica reflete injúria não inflamatória da parede capilar, centrada nas células epiteliais viscerais: os processos podais se fundem (simplificam) e a barreira perde seletividade. A falta de inflamação explica o sedimento pouco ativo e a função renal normal ou pouco alterada. Humps subepiteliais e proliferação com neutrófilos são da glomerulonefrite pós-estreptocócica."
+    },
+    {
+      "question": "Em criança com edema generalizado e proteinúria maciça, qual combinação sugere síndrome nefrótica típica, provavelmente por lesões mínimas?",
+      "options": [
+        "PA normal, sem hematúria importante e sedimento pouco ativo",
+        "Hipertensão sustentada, hematúria macroscópica e C3 baixo",
+        "Creatinina em ascensão progressiva e cilindros hemáticos",
+        "Artrite, rash malar e anticorpos antinucleares reagentes"
+      ],
+      "correctIndex": 0,
+      "explanation": "Edema + pressão arterial normal + ausência de hematúria importante sugere o quadro típico, que na criança acima de 1 ano corresponde, na maioria, à doença de lesões mínimas. Hipertensão importante, hematúria macroscópica ou sedimento muito ativo, creatinina subindo, complemento baixo, idade < 1 ano e sintomas sistêmicos tornam o caso atípico e mudam a investigação."
+    },
+    {
+      "question": "Pela tabela de avaliação da proteinúria, qual valor em criança caracteriza proteinúria em faixa nefrótica?",
+      "options": [
+        "Relação proteína/creatinina urinária ≥ 2,0",
+        "Relação proteína/creatinina urinária de 0,2 a 2,0",
+        "Excreção urinária de 10 a 50 mg/kg em 24 horas",
+        "Excreção urinária acima de 150 mg em 24 horas"
+      ],
+      "correctIndex": 0,
+      "explanation": "Em criança, a faixa nefrótica é relação proteína/creatinina urinária ≥ 2,0 (mg/mg, em amostra isolada) ou excreção ≥ 50 mg/kg/24 h (ou ≥ 40 mg/m²/hora). Entre 0,2 e 2,0, ou de 10 a 50 mg/kg/dia, a proteinúria é não nefrótica; abaixo de 0,2 ou de 10 mg/kg/dia, é normal. O corte de 150 mg/24 h é o limite normal do adulto, cuja faixa nefrótica é > 3.500 mg/24 h.",
+      "image": "pg33",
+      "imageCaption": "Faixas de proteinúria em crianças e adultos"
+    },
+    {
+      "question": "Quais critérios laboratoriais confirmam síndrome nefrótica em uma criança com edema?",
+      "options": [
+        "Proteína/creatinina urinária ≥ 2 g/g e albumina sérica < 3 g/dL",
+        "Proteína/creatinina urinária ≥ 0,2 g/g e albumina sérica < 4 g/dL",
+        "Proteína/creatinina urinária ≥ 2 g/g e albumina sérica < 4,5 g/dL",
+        "Proteína/creatinina urinária ≥ 0,2 g/g e albumina sérica < 3 g/dL"
+      ],
+      "correctIndex": 0,
+      "explanation": "O diagnóstico exige edema, proteinúria em faixa nefrótica (relação proteína/creatinina em amostra isolada ≥ 2 g/g ou > 50 mg/kg/24 h), hipoalbuminemia (albumina < 3 g/dL) e hipercolesterolemia — e, em seguida, afastar causas secundárias (C3/C4, FAN, anti-dsDNA, sorologias conforme a suspeita)."
+    },
+    {
+      "question": "As curvas mostram a frequência de cada etiologia da síndrome nefrótica idiopática conforme a idade. Qual delas tem pico por volta dos 5 anos e cai progressivamente depois?",
+      "options": [
+        "Doença de lesões mínimas",
+        "Nefropatia membranosa",
+        "Glomeruloesclerose focal",
+        "Glomerulopatia por C3"
+      ],
+      "correctIndex": 0,
+      "explanation": "A doença de lesões mínimas chega a cerca de 85% dos casos por volta dos 5 anos e cai para ~10% na idade adulta. A glomeruloesclerose segmentar e focal (GESF) mantém-se em 10–20% ao longo da vida, e a nefropatia membranosa cresce com a idade, passando de 40% por volta dos 50 anos — por isso é a principal causa de síndrome nefrótica primária no adulto.",
+      "image": "pg36",
+      "imageCaption": "Etiologia da síndrome nefrótica idiopática por faixa etária (> 1 ano)"
+    },
+    {
+      "question": "Em criança com síndrome nefrótica, qual achado torna o quadro atípico para lesões mínimas e muda a investigação?",
+      "options": [
+        "Hematúria macroscópica com complemento C3 baixo",
+        "Edema bipalpebral matinal que progride para anasarca",
+        "Colesterol total de 320 mg/dL com triglicérides altos",
+        "Urina espumosa com proteinúria de 4+ na fita reagente"
+      ],
+      "correctIndex": 0,
+      "explanation": "Edema que começa na face e generaliza, dislipidemia e urina espumosa com proteinúria maciça fazem parte do quadro típico. Hematúria macroscópica, C3 baixo, hipertensão sustentada, creatinina subindo sem hipovolemia, artrite ou rash e idade < 1 ano são atipias: pedem exames para causa secundária (C3/C4, FAN, anti-dsDNA, sorologias) e podem indicar biópsia."
+    },
+    {
+      "question": "Em qual situação a biópsia renal está indicada na síndrome nefrótica pediátrica?",
+      "options": [
+        "Criança corticorresistente ou com menos de 1 ano de idade",
+        "Criança de 4 anos com quadro típico, antes do corticoide",
+        "Toda criança no primeiro episódio, para confirmar lesões mínimas",
+        "Criança corticossensível que remite na segunda semana"
+      ],
+      "correctIndex": 0,
+      "explanation": "A biópsia (decisão do especialista) é reservada à corticorresistência e a fatores atípicos: hematúria macroscópica, C3 baixo, lesão renal aguda não explicada por hipovolemia, hipertensão sustentada, artrite ou rash e quadros sindrômicos. Também é indicada abaixo de 1 ano e na investigação de adolescentes, pela maior chance de GESF. A criança típica começa corticoide sem biópsia."
+    },
+    {
+      "question": "Menino de 5 anos com síndrome nefrótica típica tem ureia 78 mg/dL, creatinina 1,3 mg/dL e hematócrito 44%, com taquicardia, e melhora após correção da volemia. Esse aumento de creatinina indica biópsia?",
+      "options": [
+        "Não: lesão renal aguda por hipovolemia não é critério de biópsia",
+        "Sim: qualquer elevação de creatinina impõe biópsia imediata",
+        "Sim: a hemoconcentração sugere GESF e exige histologia",
+        "Não: a biópsia só se indica a partir da terceira recidiva"
+      ],
+      "correctIndex": 0,
+      "explanation": "Hematócrito alto (hemoconcentração), ureia muito elevada em relação à creatinina e taquicardia apontam para hipovolemia — complicação da própria síndrome nefrótica que pode causar lesão renal aguda. Entre as indicações de biópsia está a lesão renal aguda NÃO explicada por hipovolemia. A conduta é corrigir a volemia (albumina com monitorização, se indicada) e reavaliar a função renal."
+    },
+    {
+      "question": "Qual é o esquema inicial de prednisona recomendado pelo KDIGO 2025 para a síndrome nefrótica idiopática na criança?",
+      "options": [
+        "60 mg/m²/dia por 4 semanas, depois 40 mg/m² em dias alternados por 4 semanas",
+        "40 mg/m²/dia por 4 semanas, depois 60 mg/m² em dias alternados por 4 semanas",
+        "60 mg/m²/dia por 2 semanas, depois 20 mg/m² em dias alternados por 2 semanas",
+        "30 mg/m²/dia por 8 semanas, depois 15 mg/m² em dias alternados por 8 semanas"
+      ],
+      "correctIndex": 0,
+      "explanation": "Prednisona (ou prednisolona) oral 60 mg/m²/dia, máximo de 60 mg, por 4 semanas, seguida de 40 mg/m² em dias alternados por mais 4 semanas. A maioria das crianças com quadro idiopático típico responde ao glicocorticoide; na prática, segue-se o protocolo do serviço de nefrologia pediátrica."
+    },
+    {
+      "question": "Na síndrome nefrótica idiopática pediátrica, quais são as indicações de agentes poupadores de esteroides e de teste genético, respectivamente?",
+      "options": [
+        "Recidivas frequentes ou corticodependência; corticorresistência",
+        "Corticorresistência; recidivas frequentes ou corticodependência",
+        "Primeiro episódio típico; recidivas frequentes ou corticodependência",
+        "Recidivas frequentes ou corticodependência; primeiro episódio típico"
+      ],
+      "correctIndex": 0,
+      "explanation": "O KDIGO 2025 reserva os agentes poupadores de esteroides para recidivas frequentes ou comportamento corticodependente. O teste genético é indicado na síndrome nefrótica corticorresistente, em que se suspeita de alteração genética das proteínas do diafragma da fenda (como nefrina e podocina)."
+    },
+    {
+      "question": "O gráfico compara a probabilidade de remissão da doença de lesões mínimas sob corticoide em crianças (curvas A e B) e adultos (curvas C e D). O que ele mostra?",
+      "options": [
+        "A maioria das crianças remite em até 4 semanas; adultos podem levar meses",
+        "A maioria dos adultos remite em até 4 semanas; crianças podem levar meses",
+        "Crianças e adultos remitem no mesmo ritmo, em torno de 12 semanas",
+        "Menos da metade das crianças remite antes de 16 semanas de tratamento"
+      ],
+      "correctIndex": 0,
+      "explanation": "Nas crianças, a probabilidade de remissão passa de 90% antes de 4 semanas de corticoide; nos adultos, fica em torno de 50% entre 6 e 11 semanas e só se aproxima de 80–90% entre 12 e 24 semanas. Resposta rápida é a regra na criança — a falta de resposta ao fim da fase diária levanta corticorresistência e muda a investigação.",
+      "image": "pg45",
+      "imageCaption": "Tempo de resposta à prednisona: crianças × adultos"
+    },
+    {
+      "question": "Quando está indicada a infusão de albumina na síndrome nefrótica?",
+      "options": [
+        "Hipovolemia ou edema grave, com monitorização da volemia",
+        "Toda criança com albumina sérica abaixo de 2,5 g/dL",
+        "Rotina no primeiro dia, antes de iniciar o corticoide",
+        "Edema leve, para acelerar a resposta ao corticoide"
+      ],
+      "correctIndex": 0,
+      "explanation": "Albumina é reservada para hipovolemia ou edema grave e exige monitorização da volemia e do paciente, com atenção a sinais de edema pulmonar — a reexpansão pode sobrecarregar a circulação. Não é tratamento de rotina nem corrige a doença; o controle do edema se apoia em restrição de sal e diurético com cautela."
+    },
+    {
+      "question": "Qual achado em criança com síndrome nefrótica impõe encaminhamento ou urgência hospitalar?",
+      "options": [
+        "Oligúria com elevação rápida da creatinina",
+        "Edema bipalpebral matinal e urina espumosa",
+        "Colesterol de 320 mg/dL e triglicérides de 127",
+        "Proteinúria de 4+ com pressão arterial normal"
+      ],
+      "correctIndex": 0,
+      "explanation": "Sinais de alarme: oligúria/anúria, hipertensão grave, edema agudo de pulmão, elevação rápida da creatinina e suspeita de glomerulonefrite rapidamente progressiva. Também exigem atenção imediata febre, dor abdominal, dispneia, hipotensão e dor ou assimetria de membro — pistas de infecção, hipovolemia e trombose."
+    },
+    {
+      "question": "Os exames da imagem são de um menino de 5 anos com edema generalizado e urina espumosa. Qual resultado confirma proteinúria em faixa nefrótica?",
+      "options": [
+        "Relação proteína/creatinina urinária de 4,9",
+        "Proteína de 33,1 mg/dL na urina tipo 1",
+        "Cilindros hialinos ++ no sedimento urinário",
+        "Albumina sérica de 1,8 g/dL no sangue"
+      ],
+      "correctIndex": 0,
+      "explanation": "A faixa nefrótica é definida pela proteinúria quantificada: relação proteína/creatinina em amostra isolada ≥ 2 (aqui, 4,9). A concentração isolada na urina tipo 1 depende da diluição (densidade 1005) e não define faixa. Albumina de 1,8 g/dL e colesterol de 320 mg/dL completam a síndrome, mas não medem a proteinúria.",
+      "image": "pg16",
+      "imageCaption": "Exames do menino de 5 anos com edema generalizado"
+    },
+    {
+      "question": "Qual conjunto de achados caracteriza a síndrome nefrítica?",
+      "options": [
+        "Hematúria glomerular, hipertensão, edema e oligúria",
+        "Proteinúria maciça, hipoalbuminemia, edema e dislipidemia",
+        "Hematúria isomórfica, PA normal, poliúria e C3 normal",
+        "Proteinúria isolada, hipotensão, poliúria e lipidúria"
+      ],
+      "correctIndex": 0,
+      "explanation": "A síndrome nefrítica nasce de um processo inflamatório glomerular, que gera hematúria e reduz a filtração glomerular. Daí vêm azotemia, oligúria, hipervolemia, hipertensão e edema; a tríade clássica é hematúria, hipertensão arterial e oligúria. A proteinúria costuma ser subnefrótica."
+    },
+    {
+      "question": "Qual achado do sedimento urinário indica que a hematúria é de origem glomerular?",
+      "options": [
+        "Hemácias dismórficas e cilindros hemáticos",
+        "Hemácias isomórficas e coágulos na urina",
+        "Cristais de oxalato de cálcio e piúria",
+        "Cilindros hialinos e corpos graxos ovalados"
+      ],
+      "correctIndex": 0,
+      "explanation": "Hemácias dismórficas (deformadas ao atravessar a barreira glomerular) e cilindros hemáticos (moldados nos túbulos) localizam a hematúria no glomérulo. Pode haver leucocitúria pelo processo inflamatório intrarrenal. Corpos graxos ovalados e cilindros graxos são achados da síndrome nefrótica."
+    },
+    {
+      "question": "Por que a síndrome nefrítica cursa com edema e hipertensão arterial?",
+      "options": [
+        "A inflamação glomerular reduz a TFG e retém sódio e água (hipervolemia)",
+        "A perda de albumina reduz a pressão oncótica e causa hipovolemia",
+        "A lesão tubular primária causa perda de sódio e desidratação",
+        "A hipercoagulabilidade causa trombose de veia renal bilateral"
+      ],
+      "correctIndex": 0,
+      "explanation": "Na nefrítica, a proliferação celular obstrui os capilares glomerulares e reduz a filtração; o rim retém sódio e água e o paciente fica hipervolêmico — daí hipertensão, edema, oligúria e, nos casos graves, congestão pulmonar. Na nefrótica, o edema vem da queda da pressão oncótica, e o intravascular pode estar até contraído."
+    },
+    {
+      "question": "Menino de 10 anos com síndrome nefrítica tem PA de 132/86 mmHg. Pela tabela de classificação da pressão arterial pediátrica, como ela se classifica?",
+      "options": [
+        "Hipertensão estágio 1",
+        "Hipertensão estágio 2",
+        "Pressão arterial elevada",
+        "Pressão arterial normal"
+      ],
+      "correctIndex": 0,
+      "explanation": "Para crianças de 1 a < 13 anos, estágio 1 é ≥ P95 até < P95 + 12 mmHg ou 130/80 a 139/89 mmHg, o que for menor; estágio 2 é ≥ P95 + 12 mmHg ou ≥ 140/90 mmHg. A partir de 13 anos valem cortes fixos: elevada 120–129/< 80, estágio 1 130/80–139/89 e estágio 2 ≥ 140/90 mmHg.",
+      "image": "pg58",
+      "imageCaption": "Classificação da pressão arterial na criança e no adolescente"
+    },
+    {
+      "question": "A radiografia é de criança com síndrome nefrítica e estertores pulmonares. Quais achados estão marcados como 1, 2 e 3?",
+      "options": [
+        "Cefalização vascular, borramento peri-hilar e cardiomegalia",
+        "Consolidação lobar, broncograma aéreo e derrame pleural",
+        "Hiperinsuflação, retificação do diafragma e espessamento brônquico",
+        "Pneumotórax, desvio do mediastino e colapso do pulmão"
+      ],
+      "correctIndex": 0,
+      "explanation": "Congestão por hipervolemia: (1) cefalização — trama vascular aumentada nos ápices, onde normalmente flui menos sangue pela gravidade; (2) borramento peri-hilar — hilo sem contorno nítido, 'esfumaçado', pelo líquido saindo dos vasos; (3) cardiomegalia — área cardíaca > 50% do diâmetro horizontal do tórax. É o retrato radiológico da sobrecarga de volume.",
+      "image": "pg60",
+      "imageCaption": "Radiografia de tórax com congestão leve"
+    },
+    {
+      "question": "Qual é a causa mais frequente de síndrome nefrítica na criança?",
+      "options": [
+        "Glomerulonefrite pós-estreptocócica",
+        "Nefropatia por imunoglobulina A",
+        "Nefrite lúpica proliferativa",
+        "Glomerulonefrite associada a ANCA"
+      ],
+      "correctIndex": 0,
+      "explanation": "Na criança, a glomerulonefrite pós-infecciosa (sobretudo pós-estreptocócica) lidera, seguida de nefropatia por IgA, vasculite por IgA (púrpura de Henoch-Schönlein), nefrite lúpica e causas raras (GNMP, glomerulopatia por C3). No adulto predominam nefropatia por IgA, nefrite lúpica e GN rapidamente progressiva; o adolescente tem espectro semelhante ao da criança, com mais nefropatia por IgA e nefrite lúpica."
+    },
+    {
+      "question": "Quais etiologias devem ser consideradas diante de hipocomplementemia persistente com quadro misto nefrítico-nefrótico?",
+      "options": [
+        "GNMP por imunocomplexos e glomerulopatia por C3",
+        "Nefropatia por IgA e vasculite por IgA",
+        "Doença de lesões mínimas e nefropatia membranosa",
+        "Doença anti-MBG e vasculite associada a ANCA"
+      ],
+      "correctIndex": 0,
+      "explanation": "C3 baixo é esperado na GNPE, mas deve normalizar em 6–8 semanas. Hipocomplementemia persistente, sobretudo com características nefríticas e nefróticas juntas, aponta para GNMP por imunocomplexos ou glomerulopatia por C3 — e pede biópsia. Nefropatia por IgA, lesões mínimas, membranosa e vasculites ANCA/anti-MBG cursam, em regra, com complemento normal."
+    },
+    {
+      "question": "Adolescente tem episódios recorrentes de hematúria macroscópica, alguns logo após IVAS ou gastroenterocolite, com C3 normal entre as crises. Qual etiologia é a mais provável?",
+      "options": [
+        "Nefropatia por imunoglobulina A",
+        "Glomerulonefrite pós-estreptocócica",
+        "Glomerulopatia por depósito de C3",
+        "Doença de lesões mínimas recidivante"
+      ],
+      "correctIndex": 0,
+      "explanation": "A nefropatia (ou vasculite) por IgA se apresenta com episódios de hematúria, muitas vezes após infecções de mucosa como IVAS e gastroenterocolite, com complemento normal, e é mais prevalente no adolescente. Na GNPE há latência de 1 a 3 semanas após faringite e C3 baixo, e o quadro não costuma recorrer — recorrência frequente é justamente sinal de que não é GNPE."
+    },
+    {
+      "question": "Em que situação ANCA e anti-MBG devem ser solicitados na investigação de síndrome glomerular?",
+      "options": [
+        "Suspeita de glomerulonefrite rapidamente progressiva",
+        "Primeiro episódio de síndrome nefrótica típica aos 4 anos",
+        "Hematúria macroscópica duas semanas após faringite",
+        "Proteinúria ortostática em adolescente assintomático"
+      ],
+      "correctIndex": 0,
+      "explanation": "ANCA (anticorpo anticitoplasma de neutrófilo, marcador de algumas vasculites) e anti-MBG (anticorpo antimembrana basal glomerular) entram na investigação quando há suspeita de GNRP: declínio rápido da função renal, crescentes na biópsia ou síndrome pulmão-rim. Não fazem parte da rotina do quadro típico."
+    },
+    {
+      "question": "Qual é o período de latência entre a infecção estreptocócica e o início da glomerulonefrite pós-estreptocócica?",
+      "options": [
+        "1 a 3 semanas após faringite; 3 a 6 semanas após infecção de pele",
+        "1 a 3 dias após faringite; 1 a 3 semanas após infecção de pele",
+        "3 a 6 semanas após faringite; 1 a 3 semanas após infecção de pele",
+        "6 a 12 semanas após faringite ou após infecção de pele, igualmente"
+      ],
+      "correctIndex": 0,
+      "explanation": "As cepas nefritogênicas do estreptococo beta-hemolítico do grupo A causam GNPE após latência de 1 a 3 semanas depois da faringite/amigdalite e de 3 a 6 semanas depois de infecção cutânea (impetigo). Hematúria concomitante à infecção, em poucos dias, sugere outra causa, como a nefropatia por IgA."
+    },
+    {
+      "question": "Criança desenvolve glomerulonefrite pós-estreptocócica semanas após impetigo. Quais anticorpos documentam a infecção recente, já que a ASLO costuma não subir nesse caso?",
+      "options": [
+        "Anti-DNase B e anti-hialuronidase",
+        "Antiestreptolisina O (ASLO) isolada",
+        "Anti-dsDNA e fator antinuclear (FAN)",
+        "Anti-MBG e anticorpo anticitoplasma"
+      ],
+      "correctIndex": 0,
+      "explanation": "Após faringite sobem ASLO, anti-DNase B, anti-NADase e anti-hialuronidase (AHase). Após infecção de pele sobem anti-DNase B e AHase, mas não a ASLO. Culturas de orofaringe ou pele são positivas em só ~25% dos casos, porque a nefrite surge depois da infecção."
+    },
+    {
+      "question": "Como se comporta o complemento sérico na glomerulonefrite pós-estreptocócica?",
+      "options": [
+        "C3 e CH50 baixos, C4 normal, normalizando em até 6–8 semanas",
+        "C3 e C4 baixos, normalizando somente após 6 meses de evolução",
+        "C3 normal e C4 baixo, normalizando nas 2 primeiras semanas",
+        "C3 e CH50 elevados, como reagentes de fase aguda inflamatória"
+      ],
+      "correctIndex": 0,
+      "explanation": "C3 e CH50 estão baixos em cerca de 90% dos pacientes nas duas primeiras semanas (ativação do complemento pelos imunocomplexos), com C4 tipicamente normal, e o C3 normaliza em até 6–8 semanas. C3 baixo não é exclusivo de GNPE; se persistir além de 6–8 semanas, pense em GNMP, glomerulopatia por C3 ou nefrite lúpica."
+    },
+    {
+      "question": "No gráfico das etapas da glomerulonefrite pós-estreptocócica, quais manifestações se resolvem primeiro, por volta da 2ª semana da fase aguda?",
+      "options": [
+        "Edema e hipertensão arterial",
+        "Hematúria e título de ASLO",
+        "C3 sérico e título de ASLO",
+        "Proteinúria e hematúria"
+      ],
+      "correctIndex": 0,
+      "explanation": "Após a latência, a fase aguda traz hematúria, proteinúria, hipertensão e edema. Edema e hipertensão se resolvem em cerca de 2 semanas; a proteinúria cai ao longo de 4–6 semanas; o C3, consumido desde o início, volta ao normal por volta de 6–8 semanas; o título de ASLO sobe e permanece elevado, e a hematúria microscópica pode persistir por meses.",
+      "image": "pg83",
+      "imageCaption": "Etapas da GNPE: latência, fase aguda e resolução"
+    },
+    {
+      "question": "Qual é o tratamento específico da glomerulonefrite pós-estreptocócica?",
+      "options": [
+        "Não há: o manejo é de suporte, focado na sobrecarga de volume",
+        "Pulsoterapia com metilprednisolona por três dias seguidos",
+        "Penicilina por 10 dias, que reverte a inflamação glomerular",
+        "Imunoglobulina endovenosa associada a plasmaférese precoce"
+      ],
+      "correctIndex": 0,
+      "explanation": "Para a GNPE especificamente não existe tratamento: o manejo é de suporte, dirigido às manifestações da sobrecarga de volume — restrição de sódio e água, diurético de alça (furosemida) se necessário e anti-hipertensivo se a PA persistir alta. IECA exige cautela pelo risco de hipercalemia, e corticoide não é rotina na GNPE típica."
+    },
+    {
+      "question": "Qual situação indica diálise na fase aguda da glomerulonefrite pós-estreptocócica?",
+      "options": [
+        "Potássio > 6,5 mEq/L refratário ao tratamento clínico",
+        "Creatinina de 0,9 mg/dL em menino de 10 anos de idade",
+        "PA de 132/86 mmHg que cede com a restrição de sal",
+        "Hematúria macroscópica persistente por dez dias"
+      ],
+      "correctIndex": 0,
+      "explanation": "Alguns pacientes precisam de diálise no episódio agudo. As indicações são sobrecarga de fluidos significativa (edema pulmonar, insuficiência cardíaca, hipertensão) refratária às medicações, hipercalemia > 6,5 mEq/L sem resposta ao tratamento medicamentoso e uremia (ureia ou BUN elevados, com ou sem sinais de toxicidade)."
+    },
+    {
+      "question": "Por que se prescreve penicilina benzatina na glomerulonefrite pós-estreptocócica mesmo quando a faringite já se resolveu?",
+      "options": [
+        "Para erradicar a colonização e reduzir a transmissão da cepa",
+        "Para acelerar a normalização do C3 e da creatinina sérica",
+        "Para tratar a nefrite, que depende de infecção ainda ativa",
+        "Para prevenir a recidiva da glomerulonefrite no ano seguinte"
+      ],
+      "correctIndex": 0,
+      "explanation": "A erradicação do estreptococo — penicilina benzatina em dose única IM ou amoxicilina por 10 dias — visa eliminar a colonização e reduzir a transmissão, não tratar a nefrite, que é imunomediada e já está instalada. O antibiótico é obrigatório quando a infecção ainda está presente ou há evidência de infecção recorrente."
+    },
+    {
+      "question": "Qual é a evolução esperada da glomerulonefrite pós-estreptocócica típica após o início do suporte?",
+      "options": [
+        "PA normal em ~2 semanas, creatinina em 1–2 semanas e C3 em até 6–8 semanas",
+        "PA normal em ~6 semanas, creatinina em 3 meses e C3 nas primeiras 48 horas",
+        "PA normal em 48 horas, creatinina em 6 meses e C3 somente após 1 ano",
+        "PA normal em ~2 semanas, creatinina em 6 meses e C3 em 6–8 semanas"
+      ],
+      "correctIndex": 0,
+      "explanation": "Com restrição de sal e diurético, dispneia e estertores melhoram e a PA cai em 48–72 h; a diurese normaliza em 7 a 10 dias, a hipertensão resolve em cerca de 2 semanas, a creatinina normaliza em 1–2 semanas (às vezes ~1 mês), o C3 em até 6–8 semanas, e a hematúria microscópica pode persistir por meses. Só 2 a 5% não se recuperam completamente."
+    },
+    {
+      "question": "Em criança com suposta glomerulonefrite pós-estreptocócica, qual achado sugere outro diagnóstico e amplia a investigação?",
+      "options": [
+        "C3 ainda baixo após 8 semanas de evolução",
+        "C3 baixo na primeira semana do quadro",
+        "ASLO elevada três semanas após faringite",
+        "Hematúria microscópica ainda no terceiro mês"
+      ],
+      "correctIndex": 0,
+      "explanation": "Sinais de que não é GNPE: C3 baixo além de 6–8 semanas, proteinúria nefrótica persistente, declínio progressivo da função renal (crescentes, síndrome pulmão-rim), ausência de evidência de infecção estreptocócica e recorrência frequente ou curso atípico. C3 baixo no início, ASLO alta e hematúria microscópica por meses são esperados."
+    },
+    {
+      "question": "Menino de 10 anos, faringite há 10 dias, urina cor de coca-cola, edema, estertores, PA 132/86 mmHg, cilindros hemáticos, C3 baixo, C4 normal e ASLO elevada. Qual é a conduta inicial?",
+      "options": [
+        "Internar, restringir sal e água, furosemida e penicilina benzatina",
+        "Prednisona 60 mg/m²/dia e biópsia renal ainda na primeira semana",
+        "Alta com sintomáticos e retorno se a urina não clarear em 30 dias",
+        "Pulsoterapia com metilprednisolona e plasmaférese imediata"
+      ],
+      "correctIndex": 0,
+      "explanation": "É GNPE típica com hipervolemia: internação e monitorização (PA seriada, balanço hídrico, peso diário, diurese, potássio e creatinina), restrição de sal e, com oligúria/hipervolemia, de água, furosemida para edema e hipertensão, e erradicação do estreptococo (penicilina benzatina IM dose única ou amoxicilina 10 dias). Corticoide não é rotina e biópsia não é indicada na apresentação clássica."
+    }
+  ]
+}

@@ -1,0 +1,352 @@
+{
+  "titulo": "Disfonias",
+  "eyebrow": "Otorrinolaringologia · Laringologia",
+  "subtitulo": "Da anatomia da prega vocal às lesões que roubam a voz",
+  "intro": "Conceito de disfonia e qualidades vocais, anatomia e microestrutura da laringe, fisiologia da produção vocal, avaliação clínica com GRBAS e laringoscopia, e as principais lesões: nódulos, pólipos, edema de Reinke, cisto, papiloma, granuloma e carcinoma.",
+  "questoes": [
+    {
+      "question": "Qual definição descreve corretamente o termo disfonia?",
+      "options": [
+        "Alteração de uma ou mais características acústicas da voz: timbre, intensidade ou tom",
+        "Sinônimo de rouquidão, restrito à aspereza vocal causada por lesão da prega vocal",
+        "Perda total da voz, sempre secundária a uma lesão orgânica visível na laringe",
+        "Dor ao falar, típica dos processos inflamatórios agudos da mucosa da laringe"
+      ],
+      "correctIndex": 0,
+      "explanation": "Disfonia é qualquer alteração de uma ou mais características acústicas da voz: timbre (qualidade sonora), intensidade (força) e tom (frequência). Rouquidão é apenas uma das formas; afonia, tremor, espasmos ao falar, voz fraca, estridente ou infantilizada também são disfonias. As causas vão de um resfriado a uma neoplasia maligna."
+    },
+    {
+      "question": "Um paciente apresenta voz com escape audível de ar durante a fala, a chamada voz soprosa. Qual condição é o exemplo clássico desse padrão?",
+      "options": [
+        "Paralisia unilateral de prega vocal",
+        "Disfonia espasmódica do tipo adutora",
+        "Tremor vocal de origem essencial",
+        "Doença de Parkinson em fase inicial"
+      ],
+      "correctIndex": 0,
+      "explanation": "Na voz soprosa há escape aéreo audível porque a glote não fecha por completo, e o exemplo típico é a paralisia unilateral de prega vocal. A disfonia espasmódica adutora produz voz tensa ou estrangulada, o tremor essencial produz voz trêmula e o Parkinson, voz fraca (hipofônica) e monótona."
+    },
+    {
+      "question": "A diplofonia (voz bitonal) é a emissão de duas frequências vocais simultâneas ou alternadas. Qual mecanismo a explica?",
+      "options": [
+        "Lesão que impede a vibração uniforme das duas pregas vocais",
+        "Hipertonia dos músculos extrínsecos que elevam a laringe",
+        "Obstrução nasal que reduz a ressonância das cavidades",
+        "Fraqueza do diafragma e dos intercostais na expiração"
+      ],
+      "correctIndex": 0,
+      "explanation": "A diplofonia surge quando as pregas vocais não vibram de forma uniforme: cada uma passa a oscilar numa frequência própria. Os exemplos clássicos são pólipos, cistos e paralisias. Obstrução nasal altera a ressonância (hiponasalidade), mas não gera duas frequências."
+    },
+    {
+      "question": "Um homem de 70 anos com bradicinesia e rigidez se queixa de que ninguém o ouve. A voz é fraca e sem variação de tom. Como se classificam essas qualidades vocais?",
+      "options": [
+        "Voz hipofônica e monótona",
+        "Voz soprosa e diplofônica",
+        "Voz tensa e estrangulada",
+        "Voz rugosa e aveludada"
+      ],
+      "correctIndex": 0,
+      "explanation": "Voz fraca (hipofônica), de intensidade reduzida, e voz monótona, sem a variação normal de tom, são marcas da doença de Parkinson. A voz fraca também aparece no idoso por presbifonia; a monótona, em paralisias laríngeas e em algumas disfonias funcionais."
+    },
+    {
+      "question": "Do ponto de vista evolutivo, qual foi a função original da laringe, antes de ela se adaptar à produção da voz?",
+      "options": [
+        "Proteção da via aérea, atuando como esfíncter",
+        "Ressonância e amplificação do som emitido",
+        "Articulação dos sons em palavras e sílabas",
+        "Condução do alimento da faringe ao esôfago"
+      ],
+      "correctIndex": 0,
+      "explanation": "A laringe surgiu como esfíncter de proteção das vias respiratórias; só depois, na evolução, foi adaptada à produção de sons e de voz. Hoje acumula três funções: respiratória (conduz o ar até a traqueia), proteção da via aérea (fechamento na deglutição, junto com a epiglote, e arcabouço cartilaginoso contra traumas) e fonação."
+    },
+    {
+      "question": "Em que nível vertebral a laringe se situa no adulto, e por que ela é maior nos homens?",
+      "options": [
+        "Entre C4 e C6; cresce mais na puberdade por efeito hormonal",
+        "Entre C1 e C3; cresce mais na infância pela ação do GH",
+        "Entre C6 e T1; cresce mais na vida adulta pelo uso vocal",
+        "Entre C2 e C4; cresce mais na puberdade pelo uso vocal"
+      ],
+      "correctIndex": 0,
+      "explanation": "A laringe ocupa a região anterior e mediana do pescoço, da língua à traqueia, geralmente entre a quarta e a sexta vértebras cervicais. É maior nos homens porque cresce mais na puberdade, por influência hormonal, com projeção anterior da cartilagem tireoide: o pomo de Adão."
+    },
+    {
+      "question": "Qual cartilagem da laringe é par, tem formato de pirâmide, articula-se com a cricoide e faz movimentos de rotação sobre o próprio eixo?",
+      "options": [
+        "Cartilagem aritenoide",
+        "Cartilagem corniculada",
+        "Cartilagem cuneiforme",
+        "Cartilagem tireoide"
+      ],
+      "correctIndex": 0,
+      "explanation": "As aritenoides são pares, móveis, piramidais e articuladas à cricoide, podendo rodar sobre o próprio eixo. Nelas se inserem vários músculos da glote e o ligamento vocal (no processo vocal), por isso comandam abertura e fechamento das pregas. Corniculadas e cuneiformes são pares acessórios; epiglote, tireoide e cricoide são ímpares, num total de nove cartilagens."
+    },
+    {
+      "question": "Qual músculo intrínseco é responsável pela abertura (abdução) das pregas vocais durante a respiração?",
+      "options": [
+        "Cricoaritenoideo posterior",
+        "Cricoaritenoideo lateral",
+        "Aritenoideo transverso",
+        "Tireoaritenoideo (vocal)"
+      ],
+      "correctIndex": 0,
+      "explanation": "O cricoaritenoideo posterior é o músculo que abre as pregas vocais. O cricoaritenoideo lateral e o aritenoideo transverso as fecham (este último atua também na glote posterior), o cricotireoideo as tensiona e o tireoaritenoideo (músculo vocal) as relaxa."
+    },
+    {
+      "question": "Para emitir uma nota mais aguda é preciso alongar e tensionar a prega vocal. Qual músculo exerce essa ação?",
+      "options": [
+        "Cricotireoideo",
+        "Tireoaritenoideo",
+        "Tireo-hioideo",
+        "Esternotireoideo"
+      ],
+      "correctIndex": 0,
+      "explanation": "O cricotireoideo alonga e tensiona a prega vocal, sendo o músculo do agudo. O tireoaritenoideo (músculo vocal) faz o contrário: encurta e relaxa a prega. Tireo-hioideo e esternotireoideo são extrínsecos, inseridos fora da laringe, e movem a laringe como um todo (ela sobe no /i/ e desce no /u/), sem agir diretamente sobre a tensão da prega."
+    },
+    {
+      "question": "Na figura esquemática da prega vocal, a camada 2 é frouxa, gelatinosa e vibra intensamente durante a fonação. Que nome ela recebe?",
+      "options": [
+        "Espaço de Reinke",
+        "Ligamento vocal",
+        "Membrana basal",
+        "Músculo vocal"
+      ],
+      "correctIndex": 0,
+      "explanation": "A camada superficial da lâmina própria é o espaço de Reinke: pequena, solta, flexível e pobre em elementos, vibra intensamente e se separa nitidamente das camadas vizinhas. É onde se deposita o material gelatinoso do edema de Reinke. As camadas intermediária (fibras elásticas) e profunda (colágeno) formam juntas o ligamento vocal; abaixo fica o músculo tireoaritenoideo.",
+      "image": "s11i5",
+      "imageCaption": "Representação esquemática das camadas da prega vocal"
+    },
+    {
+      "question": "Na prega vocal, a cobertura é formada pelo epitélio e pela camada superficial da lâmina própria, e o corpo pelo músculo vocal. O que forma a camada de transição entre os dois?",
+      "options": [
+        "Camadas intermediária e profunda da lâmina própria: o ligamento vocal",
+        "Membrana basal e epitélio escamoso estratificado: a mucosa vocal",
+        "Camadas superficial e intermediária da lâmina própria: o espaço de Reinke",
+        "Fibras dos músculos tireoaritenoideo e cricotireoideo: o cone elástico"
+      ],
+      "correctIndex": 0,
+      "explanation": "Entre a cobertura (epitélio e camada superficial) e o corpo (músculo tireoaritenoideo) fica a camada de transição, formada pela camada intermediária, rica em fibras elásticas (como um elástico mole), e pela profunda, rica em colágeno (como um barbante). Juntas elas constituem o ligamento vocal. A cobertura, frouxa, é a que vibra livremente sobre esse ligamento."
+    },
+    {
+      "question": "Os harmônicos produzidos pela onda mucosa atravessam o trato vocal, e aqueles em sintonia com as dimensões desse tubo são reforçados. Como se chamam esses harmônicos reforçados?",
+      "options": [
+        "Formantes do trato vocal",
+        "Fonemas articulatórios",
+        "Frequências fundamentais",
+        "Harmônicos subglóticos"
+      ],
+      "correctIndex": 0,
+      "explanation": "Ressonância é a filtragem e amplificação do som laríngeo pelo trato vocal (cavidades faringolaríngea, oral e nasal). O som que sai da glote não soa como voz humana; ao passar pelo trato, os harmônicos cujo comprimento de onda é compatível com o tubo são reforçados e passam a se chamar formantes, e os demais são atenuados. Forma da faringe, posição da língua e da mandíbula e passagem de som pela nasofaringe controlam esse filtro."
+    },
+    {
+      "question": "No ciclo glótico, a pressão subglótica afasta as pregas vocais e o ar passa pela glote. O que provoca o novo fechamento da glote logo em seguida?",
+      "options": [
+        "Pressão negativa na glote (efeito Bernoulli) somada à força mioelástica das pregas",
+        "Contração ativa do cricoaritenoideo lateral a cada ciclo de vibração das pregas",
+        "Aumento da pressão subglótica, que empurra as pregas de volta para a linha média",
+        "Relaxamento do diafragma, que interrompe o fluxo aéreo a cada ciclo vibratório"
+      ],
+      "correctIndex": 0,
+      "explanation": "O ar acelerado na glote estreita gera pressão negativa (efeito Bernoulli: quando a velocidade do fluxo aumenta, a pressão cai para manter constante a energia total), que puxa as pregas de volta à linha média. Somada à força mioelástica das próprias pregas, ela fecha a glote e reinicia o ciclo. Não há uma contração muscular a cada vibração, e é por isso que o ciclo se repete centenas de vezes por segundo."
+    },
+    {
+      "question": "Qual afirmação distingue corretamente o ciclo glótico do movimento de adução e abdução das pregas vocais?",
+      "options": [
+        "O ciclo é a ondulação da mucosa de revestimento; a adução e a abdução são feitas por músculos",
+        "O ciclo depende de uma contração muscular por vibração; a adução e a abdução são passivas",
+        "O ciclo ocorre apenas na respiração; a adução e a abdução ocorrem apenas durante a fala",
+        "O ciclo é a abertura máxima da glote; a adução e a abdução são a ondulação da mucosa"
+      ],
+      "correctIndex": 0,
+      "explanation": "Adução e abdução são movimentos feitos por músculos que aproximam e afastam as pregas da linha média: abertas na respiração, fechadas na deglutição e na fonação. O ciclo glótico é outra coisa: o movimento ondulatório da mucosa de revestimento, que depende da elasticidade da cobertura, da atividade dos músculos intrínsecos e da energia do ar exalado."
+    },
+    {
+      "question": "Quais são as frequências fundamentais médias aproximadas da voz falada no homem e na mulher adultos?",
+      "options": [
+        "Homem cerca de 120 Hz; mulher cerca de 200 Hz",
+        "Homem cerca de 200 Hz; mulher cerca de 120 Hz",
+        "Homem cerca de 60 Hz; mulher cerca de 100 Hz",
+        "Homem cerca de 250 Hz; mulher cerca de 400 Hz"
+      ],
+      "correctIndex": 0,
+      "explanation": "O número de ciclos glóticos por segundo define a frequência fundamental: no homem, 80 a 150 ciclos por segundo (em torno de 120 Hz, voz grave); na mulher, 150 a 250 (em torno de 200 Hz, voz aguda). A frequência depende do comprimento, da tensão, da rigidez e da massa das pregas, por isso cai à medida que a criança cresce e as pregas ficam mais longas e pesadas."
+    },
+    {
+      "question": "Um paciente com paralisia unilateral de prega vocal sustenta a vogal /a/ por apenas 6 segundos. Como se interpreta esse tempo máximo de fonação?",
+      "options": [
+        "Reduzido, por escape de ar pelo fechamento glótico incompleto",
+        "Normal, pois o tempo máximo esperado no adulto é de 5 segundos",
+        "Reduzido, por excesso de tensão nas pregas, como na voz estrangulada",
+        "Aumentado, porque a prega paralisada reduz a saída de ar pela glote"
+      ],
+      "correctIndex": 0,
+      "explanation": "O tempo máximo de fonação mede quanto o paciente sustenta a vogal /a/ após inspiração profunda (repetir três vezes e registrar o maior valor). Referências aproximadas: homens 15 a 25 segundos, mulheres 14 a 20. Na paralisia unilateral o fechamento glótico é incompleto e o ar escapa, encurtando a emissão. O TMF isolado, porém, não fecha o diagnóstico de insuficiência glótica."
+    },
+    {
+      "question": "Na escala GRBAS, um paciente recebe a pontuação 2-0-3-1-0. Qual é a leitura correta desse resultado?",
+      "options": [
+        "Disfonia moderada, sem rugosidade, soprosidade intensa, astenia leve e sem tensão",
+        "Disfonia leve, rugosidade ausente, tensão intensa, astenia leve e sem soprosidade",
+        "Disfonia intensa, sem rugosidade, soprosidade leve, tensão moderada e sem astenia",
+        "Disfonia moderada, sem soprosidade, rugosidade intensa, astenia leve e sem tensão"
+      ],
+      "correctIndex": 0,
+      "explanation": "A GRBAS pontua de 0 (normal) a 3 (intensa) cinco parâmetros, nesta ordem: G (grade, grau global), R (roughness, rugosidade), B (breathiness, soprosidade), A (asthenia, astenia) e S (strain, tensão). O perfil 2-0-3-1-0, com soprosidade dominante, é típico da paralisia unilateral de prega vocal. A escala descreve e acompanha a qualidade vocal, mas não identifica a causa: isso exige ver a laringe."
+    },
+    {
+      "question": "Um adulto procura atendimento por rouquidão. A partir de quanto tempo de disfonia persistente a laringe deve obrigatoriamente ser examinada?",
+      "options": [
+        "Após 15 dias",
+        "Após 3 meses",
+        "Após 6 meses",
+        "Após 48 horas"
+      ],
+      "correctIndex": 0,
+      "explanation": "Todo paciente com disfonia que dura no mínimo 15 dias deve ter a laringe avaliada por laringoscopia (indireta com espelho, nasofibrolaringoscopia flexível ou telelaringoscopia rígida). A regra existe porque a mesma rouquidão vai de uma laringite viral a um carcinoma, e a avaliação perceptiva da voz não diferencia as causas. Em tabagista e etilista, a urgência é ainda maior."
+    },
+    {
+      "question": "Uma paciente refere rouquidão e pigarro que pioram ao acordar e melhoram ao longo do dia. Que fator a anamnese deve investigar primeiro?",
+      "options": [
+        "Refluxo gastroesofágico",
+        "Abuso vocal profissional",
+        "Nódulos por uso da voz",
+        "Presbifonia do idoso"
+      ],
+      "correctIndex": 0,
+      "explanation": "O padrão temporal orienta a hipótese: piora pela manhã sugere refluxo, que agride a laringe durante o decúbito noturno, enquanto piora ao fim do dia, depois do uso da voz, é típica de nódulos e de abuso vocal. Por isso a anamnese pergunta início, evolução e fatores de melhora ou piora, como a melhora com repouso vocal."
+    },
+    {
+      "question": "Nódulos e pólipos vocais começam com mau uso da voz e acabam produzindo lesão visível na prega. Em que grupo etiológico das disfonias eles se enquadram?",
+      "options": [
+        "Orgânico-funcionais",
+        "Funcionais sem lesão",
+        "Orgânicas neoplásicas",
+        "Orgânicas neurológicas"
+      ],
+      "correctIndex": 0,
+      "explanation": "Funcionais são as disfonias por uso irregular da voz sem lesão laríngea visível (gritos, uso ocupacional, alterações de outros sistemas, causas psicogênicas ou conversivas). Orgânicas decorrem de lesões sem relação com o mau uso: doenças mucosas benignas, neurológicas e neoplásicas. Quando a disfonia funcional evolui e cria lesão, passa a orgânico-funcional, e nódulos e pólipos são os exemplos clássicos."
+    },
+    {
+      "question": "Professora de 26 anos com rouquidão que piora ao fim de um dia inteiro lecionando. A laringoscopia está na imagem. Qual é o tratamento de escolha?",
+      "options": [
+        "Fonoterapia para reeducação vocal",
+        "Microcirurgia de laringe imediata",
+        "Corticoide inalatório contínuo",
+        "Biópsia excisional das duas lesões"
+      ],
+      "correctIndex": 0,
+      "explanation": "A imagem mostra espessamentos bilaterais e simétricos da borda livre, na junção do terço anterior com o terço médio das pregas vocais, o ponto de maior atrito: são nódulos vocais. Em adultos aparecem quase só em mulheres de 20 a 30 anos com uso intenso da voz, como professoras, e a disfonia piora ao longo do dia. O tratamento é fonoterapia.",
+      "image": "s26i1",
+      "imageCaption": "Laringoscopia da paciente (setas nas lesões)"
+    },
+    {
+      "question": "Qual é a principal causa de disfonia na infância e qual o perfil típico da criança acometida?",
+      "options": [
+        "Nódulos vocais, mais em meninos de 7 a 9 anos com uso vocal abusivo",
+        "Papilomatose laríngea, mais em meninas de 2 a 4 anos com estridor",
+        "Pólipo vocal, mais em meninos de 10 a 12 anos após um grito isolado",
+        "Cisto vocal, mais em meninas de 7 a 9 anos com refluxo não tratado"
+      ],
+      "correctIndex": 0,
+      "explanation": "Nódulos vocais são a principal causa de disfonia na infância, com pico em meninos de 7 a 9 anos (também em meninas mais agitadas), ligados ao comportamento vocal abusivo das brincadeiras. São bilaterais e geralmente simétricos. Atenção ao termo 'lesão nodular': ele é inespecífico e serve para qualquer lesão ainda sem diagnóstico, assim como 'tumoração' não significa neoplasia."
+    },
+    {
+      "question": "Homem de 35 anos ficou rouco de forma súbita após gritar num estádio, com piora progressiva. A laringoscopia está na imagem. Qual é a conduta padrão-ouro?",
+      "options": [
+        "Microcirurgia de laringe com fonoterapia antes e depois",
+        "Fonoterapia isolada até a regressão completa da lesão",
+        "Corticoide sistêmico e repouso vocal por duas semanas",
+        "Antiviral com cidofovir e revisão em seis meses"
+      ],
+      "correctIndex": 0,
+      "explanation": "Lesão unilateral, globosa, pediculada ou séssil, após trauma vocal agudo: é um pólipo vocal. A voz fica rouca ou soprosa conforme o tamanho, com sensação de esforço e piora após uso prolongado. Pode ser gelatinoso (translúcido), fibroso (esbranquiçado, com fibrina) ou angiomatoso (avermelhado, com vaso nutridor). O padrão-ouro é a microcirurgia de laringe, com fonoterapia pré e pós-operatória e controle do refluxo e do abuso vocal.",
+      "image": "s28i1",
+      "imageCaption": "Laringoscopia do paciente"
+    },
+    {
+      "question": "Mulher de 55 anos, tabagista de longa data, é confundida com homem ao telefone; a voz ficou grave e aveludada lentamente. A laringoscopia está na imagem. Qual é o diagnóstico?",
+      "options": [
+        "Edema de Reinke",
+        "Nódulos vocais",
+        "Cisto epidermoide",
+        "Pólipo fibroso"
+      ],
+      "correctIndex": 0,
+      "explanation": "O edema de Reinke é o acúmulo de material gelatinoso na camada superficial da lâmina própria (espaço de Reinke), num processo inflamatório crônico, lentamente progressivo, ligado ao tabagismo e ao uso intenso da voz. Costuma ser bilateral e assimétrico e deixa a voz grave e aveludada; a mulher procura mais o médico porque se incomoda de ser confundida com homem. Quando muito volumoso, pode causar dispneia.",
+      "image": "s30i1",
+      "imageCaption": "Laringoscopia da paciente"
+    },
+    {
+      "question": "Qual conjunto de medidas compõe o tratamento do edema de Reinke?",
+      "options": [
+        "Cessar o tabagismo, controlar o refluxo, microcirurgia e fonoterapia",
+        "Corticoide inalatório, antibiótico e repouso vocal absoluto por um mês",
+        "Fonoterapia isolada, já que a lesão regride com a reeducação vocal",
+        "Cidofovir adjuvante e ressecções seriadas com laser de CO2 a cada ano"
+      ],
+      "correctIndex": 0,
+      "explanation": "O tratamento do edema de Reinke ataca as causas e a lesão: parar de fumar é obrigatório, o refluxo deve ser controlado, a microcirurgia de laringe remove o material gelatinoso e a fonoterapia corrige o uso vocal. Cidofovir e ressecções seriadas pertencem ao manejo da papilomatose laríngea."
+    },
+    {
+      "question": "Uma lesão vocal benigna fechada, arredondada e lisa, situada na lâmina própria, permanece fixa durante a vibração na estroboscopia. Qual afirmação sobre ela é correta?",
+      "options": [
+        "É um cisto vocal, que não desaparece com fonoterapia isolada",
+        "É um nódulo vocal, que regride com a fonoterapia isolada",
+        "É um granuloma, que regride com o controle do refluxo",
+        "É um papiloma, que exige antiviral como tratamento único"
+      ],
+      "correctIndex": 0,
+      "explanation": "O cisto vocal é uma lesão fechada, geralmente unilateral, na lâmina própria, de conteúdo mucoso (de retenção) ou epidermoide (com queratina), associada a trauma vocal repetido. Na laringoscopia com estroboscopia aparece como massa arredondada, lisa e fixa na vibração. Diferente do nódulo, não some com fonoterapia isolada: o padrão-ouro é a microcirurgia, com fonoterapia pré e pós-operatória."
+    },
+    {
+      "question": "Lesões exofíticas e multilobuladas, em cacho de uva, recorrem repetidamente na laringe de um paciente, como na imagem. Qual é o agente etiológico?",
+      "options": [
+        "HPV tipos 6 e 11",
+        "HPV tipos 16 e 18",
+        "Vírus Epstein-Barr",
+        "Herpesvírus tipo 1"
+      ],
+      "correctIndex": 0,
+      "explanation": "O papiloma é o tumor benigno mais comum da laringe, causado pelo HPV tipos 6 e 11. Tem aspecto típico de cacho de uva, causa disfonia progressiva e rouquidão persistente e, em crianças, estridor e sinais de obstrução da via aérea. Trata-se com cirurgia (microdebridador ou laser de CO2) e antiviral adjuvante (cidofovir), mas a taxa de recorrência é alta.",
+      "image": "s33i1",
+      "imageCaption": "Laringoscopia do paciente"
+    },
+    {
+      "question": "Paciente com pigarro, sensação de corpo estranho e tosse irritativa, quase sem disfonia, tem a laringoscopia da imagem. Qual é a causa mais frequente dessa lesão?",
+      "options": [
+        "Refluxo laringofaríngeo",
+        "Intubação orotraqueal",
+        "Infecção pelo HPV 6",
+        "Tabagismo de longa data"
+      ],
+      "correctIndex": 0,
+      "explanation": "Lesões arredondadas, avermelhadas e lisas no processo vocal da aritenoide, na porção posterior da glote, são granulomas. A causa mais frequente é o refluxo laringofaríngeo; intubação orotraqueal prolongada e abuso vocal também os produzem. A disfonia é leve ou ausente, e o tratamento é controle do refluxo e fonoterapia, com cirurgia eventual. Sem controlar o refluxo, a lesão tende a recidivar.",
+      "image": "s34i1",
+      "imageCaption": "Laringoscopia do paciente"
+    },
+    {
+      "question": "Homem de 62 anos, tabagista e etilista, com rouquidão há dois meses. A laringoscopia mostra a lesão da imagem. Qual é o próximo passo obrigatório?",
+      "options": [
+        "Biópsia da lesão para confirmar o diagnóstico",
+        "Fonoterapia e reavaliação após três meses",
+        "Inibidor de bomba de prótons por oito semanas",
+        "Repouso vocal e nova laringoscopia em um ano"
+      ],
+      "correctIndex": 0,
+      "explanation": "Lesão irregular, esbranquiçada e exofítica numa prega vocal de tabagista e etilista com rouquidão persistente exige afastar carcinoma espinocelular, e só a biópsia faz o diagnóstico. Tabagismo e etilismo são os grandes fatores de risco; o CEC confirmado é tratado com cirurgia e/ou radioterapia. Adiar com fonoterapia ou com tratamento empírico de refluxo atrasa o diagnóstico de câncer.",
+      "image": "s35i1",
+      "imageCaption": "Laringoscopia do paciente"
+    },
+    {
+      "question": "Qual conjunto de medidas faz parte da profilaxia da saúde vocal?",
+      "options": [
+        "Hidratação, aquecimento e desaquecimento vocal e evitar competição sonora",
+        "Sussurrar nas crises de rouquidão, pastilhas mentoladas e café antes de falar",
+        "Falar mais alto em ambiente ruidoso, gargarejo com álcool e jejum prolongado",
+        "Pigarrear para limpar a voz, bebidas geladas e repouso vocal só após shows"
+      ],
+      "correctIndex": 0,
+      "explanation": "A higiene vocal reúne hidratação, aquecimento e desaquecimento da voz, evitar abuso vocal e competição sonora (falar por cima do ruído), não fumar, evitar abuso de álcool, prevenir e tratar o refluxo, além de sono satisfatório, alimentação regular e controle de tensão, ansiedade e estresse. Identificar alergias e os próprios limites vocais também faz parte."
+    }
+  ]
+}

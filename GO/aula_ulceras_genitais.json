@@ -1,0 +1,352 @@
+{
+  "titulo": "Úlceras Genitais",
+  "eyebrow": "Ginecologia · Infecções Sexualmente Transmissíveis",
+  "subtitulo": "Dor, número, fundo e linfonodo: o diferencial que decide o tratamento",
+  "intro": "Sífilis primária e secundária, herpes genital, cancro mole, linfogranuloma venéreo e donovanose: quadro clínico, aspecto da lesão, padrão da adenopatia, diagnóstico laboratorial, sorologia da sífilis, abordagem sindrômica e esquemas de tratamento do PCDT-IST.",
+  "questoes": [
+    {
+      "question": "Mulher de 23 anos, sem parceiro fixo, relata que há algumas semanas notou uma pequena pápula genital indolor que logo desapareceu. Agora apresenta linfonodomegalia inguinal esquerda dolorosa, com supuração e fistulização por múltiplos orifícios. Qual é o agente etiológico mais provável?",
+      "options": [
+        "Chlamydia trachomatis, sorovares L1 a L3",
+        "Haemophilus ducreyi, cocobacilo Gram-negativo",
+        "Klebsiella granulomatis, bacilo intracelular",
+        "Treponema pallidum, espiroqueta não cultivável"
+      ],
+      "correctIndex": 0,
+      "explanation": "Lesão de inoculação pequena, indolor e fugaz seguida, dias a semanas depois, por bubão inguinal doloroso que fistuliza por múltiplos orifícios ('bico de regador') é a evolução clássica do linfogranuloma venéreo, causado pelos sorovares L1, L2 e L3 de Chlamydia trachomatis. O bubão do cancro mole costuma fistulizar por orifício único; a sífilis dá linfonodos indolores que não supuram; a donovanose não tem adenite verdadeira."
+    },
+    {
+      "question": "O bubão inguinal pode supurar tanto no linfogranuloma venéreo quanto no cancro mole. Que característica da fistulização ajuda a diferenciá-los?",
+      "options": [
+        "No linfogranuloma, múltiplos orifícios; no cancro mole, orifício único",
+        "No linfogranuloma, orifício único; no cancro mole, múltiplos orifícios",
+        "Os dois fistulizam por múltiplos orifícios, sem valor diferencial",
+        "Só o cancro mole fistuliza; o bubão do linfogranuloma regride sozinho"
+      ],
+      "correctIndex": 0,
+      "explanation": "No LGV, os linfonodos aderem à pele eritematoedematosa, flutuam e se rompem por vários pontos — o padrão em 'bico de regador'. No cancro mole, o bubão (presente em cerca de 30 a 50% dos casos, geralmente unilateral) liquefaz e drena tipicamente por um orifício único. Na sífilis, a adenopatia é indolor e não supura."
+    },
+    {
+      "question": "Qual é o tratamento de primeira escolha do linfogranuloma venéreo em mulher não gestante?",
+      "options": [
+        "Doxiciclina 100 mg VO de 12/12 h por 21 dias",
+        "Azitromicina 1 g VO em dose única, sem repetir",
+        "Penicilina benzatina 2,4 milhões UI IM, dose única",
+        "Ciprofloxacino 500 mg VO de 12/12 h por 3 dias"
+      ],
+      "correctIndex": 0,
+      "explanation": "A doxiciclina 100 mg por via oral de 12 em 12 horas por 21 dias é a primeira escolha para o LGV. A alternativa, preferida na gestante, é azitromicina 1 g por via oral uma vez por semana durante 3 semanas — a dose única é insuficiente. Penicilina benzatina trata sífilis, e o ciprofloxacino por 3 dias é esquema de cancro mole."
+    },
+    {
+      "question": "Paciente com linfogranuloma venéreo em tratamento apresenta bubão inguinal flutuante, tenso e muito doloroso. Qual é a conduta local adequada?",
+      "options": [
+        "Punção aspirativa com agulha de grosso calibre",
+        "Incisão ampla com drenagem cirúrgica do bubão",
+        "Exérese cirúrgica de toda a cadeia inguinal",
+        "Observação até a fistulização espontânea do bubão"
+      ],
+      "correctIndex": 0,
+      "explanation": "Bubões flutuantes são aliviados por punção aspirativa com agulha calibrosa, junto com o antibiótico. A incisão com drenagem cirúrgica é contraindicada porque favorece fistulização crônica e retarda a cicatrização; a exérese da cadeia linfática agrava a obstrução linfática que leva à elefantíase genital."
+    },
+    {
+      "question": "Por que a mulher com linfogranuloma venéreo raramente refere a lesão genital inicial ao procurar atendimento?",
+      "options": [
+        "A lesão de inoculação é pequena, indolor e cicatriza em poucos dias",
+        "A lesão de inoculação é extensa, mas fica restrita ao colo do útero",
+        "A lesão de inoculação só surge depois que o bubão inguinal fistuliza",
+        "A lesão de inoculação é dolorosa, mas confundida com uma foliculite"
+      ],
+      "correctIndex": 0,
+      "explanation": "A fase primária do LGV é uma pápula, pústula ou erosão pequena, indolor e fugaz, que cicatriza espontaneamente e passa despercebida. O que leva a paciente ao serviço é a fase secundária — a intensa repercussão linfática regional, com bubões dolorosos, às vezes com febre, mal-estar e artralgia."
+    },
+    {
+      "question": "Gestante de 19 anos, com 22 semanas e sem episódios prévios, refere queimação vulvar há três dias, seguida de vesículas agrupadas como as da figura, que se romperam em úlceras rasas e muito dolorosas. Tem febre e mal-estar. Qual é o diagnóstico e a conduta?",
+      "options": [
+        "Primoinfecção herpética; aciclovir por via oral",
+        "Sífilis primária; penicilina benzatina intramuscular",
+        "Cancro mole; azitromicina oral em dose única",
+        "Condiloma plano; ácido tricloroacético a 90%"
+      ],
+      "correctIndex": 0,
+      "explanation": "Pródromo de ardor, vesículas agrupadas que se rompem em úlceras rasas, dolorosas e confluentes, com febre e mal-estar, num primeiro episódio, é a primoinfecção por herpes simples (o HSV-2 é o mais comum na região genital). O aciclovir oral é seguro na gestação e reduz a duração dos sintomas e da excreção viral. Sífilis primária dá úlcera única e indolor; cancro mole não começa por vesículas; condiloma plano é lesão papulosa da sífilis secundária.",
+      "image": "s22i2",
+      "imageCaption": "Vesículas agrupadas sobre base eritematosa"
+    },
+    {
+      "question": "Qual é o esquema de aciclovir recomendado para o primeiro episódio de herpes genital?",
+      "options": [
+        "400 mg VO de 8/8 h por 7 a 10 dias",
+        "400 mg VO de 8/8 h por apenas 5 dias",
+        "400 mg VO de 12/12 h por até 6 meses",
+        "800 mg VO em dose única, no pródromo"
+      ],
+      "correctIndex": 0,
+      "explanation": "No primeiro episódio, o aciclovir 200 mg, 2 comprimidos (400 mg) por via oral de 8 em 8 horas, é mantido por 7 a 10 dias. O mesmo esquema por 5 dias serve à recidiva, idealmente iniciado no pródromo; 400 mg de 12 em 12 horas por até 6 meses é a terapia supressiva, reservada a quem tem 6 ou mais recorrências por ano."
+    },
+    {
+      "question": "Mulher com herpes genital apresenta oito recorrências por ano. Qual é a conduta medicamentosa indicada?",
+      "options": [
+        "Aciclovir supressivo, 400 mg de 12/12 h, por até 6 meses",
+        "Aciclovir 400 mg de 8/8 h por 7 a 10 dias, só no surto",
+        "Penicilina benzatina 2,4 milhões UI a cada recorrência",
+        "Aciclovir tópico isolado, aplicado no início dos sintomas"
+      ],
+      "correctIndex": 0,
+      "explanation": "Seis ou mais episódios por ano indicam terapia supressiva: aciclovir 400 mg por via oral de 12 em 12 horas, por até 6 meses, podendo estender-se até 2 anos. A recorrência isolada é tratada com 400 mg de 8 em 8 horas por 5 dias, de preferência iniciada no pródromo. O aciclovir tópico tem benefício mínimo e não substitui o oral."
+    },
+    {
+      "question": "Como se faz, na maioria dos casos, o diagnóstico de herpes genital?",
+      "options": [
+        "Clinicamente, pelas vesículas agrupadas que ulceram",
+        "Pela IgM sérica, colhida no primeiro dia de lesão",
+        "Pelo Gram do fundo da úlcera, com cocos agrupados",
+        "Pela biópsia da borda, com granulomas caseosos"
+      ],
+      "correctIndex": 0,
+      "explanation": "O diagnóstico é clínico na maioria das vezes: pródromo, vesículas agrupadas de conteúdo citrino sobre base eritematosa que se rompem em úlceras dolorosas. Quando é preciso confirmar, usa-se PCR para HSV-1/HSV-2 ou cultura do material da vesícula ou da úlcera. A sorologia IgG/IgM só tem utilidade após cerca de 14 dias da primoinfecção — no primeiro dia ainda é negativa."
+    },
+    {
+      "question": "Gestante com antecedente de herpes genital entra em trabalho de parto com lesões vulvares ativas. Qual é a via de parto indicada?",
+      "options": [
+        "Cesariana, para reduzir a transmissão ao recém-nascido",
+        "Parto vaginal, com aciclovir intravenoso no trabalho",
+        "Parto vaginal, pois a recorrência não transmite ao feto",
+        "Fórceps de alívio, para encurtar o período expulsivo"
+      ],
+      "correctIndex": 0,
+      "explanation": "Lesão herpética ativa (ou pródromo) no início do trabalho de parto indica cesariana, porque a transmissão ocorre principalmente pelo contato com o canal de parto. O risco é muito maior na primoinfecção perto do termo do que na recorrência, mas a recorrência não é isenta de risco. Em quem tem recorrências, o aciclovir supressivo a partir de 36 semanas reduz a chance de lesão no parto."
+    },
+    {
+      "question": "Mulher de 26 anos refere, quatro dias após relação desprotegida, múltiplas úlceras vulvares muito dolorosas, de bordas irregulares, fundo purulento e odor fétido, como na figura. Qual é o diagnóstico mais provável?",
+      "options": [
+        "Cancro mole, por Haemophilus ducreyi",
+        "Donovanose, por Klebsiella granulomatis",
+        "Sífilis primária, por Treponema pallidum",
+        "Herpes genital recorrente, por HSV-2"
+      ],
+      "correctIndex": 0,
+      "explanation": "Úlceras múltiplas, dolorosas, de fundo sujo, purulento e fétido, com bordas irregulares e incubação curta (3 a 5 dias), formam o retrato do cancro mole (cancroide). Lesões em 'espelho' surgem por autoinoculação. A sífilis primária dá úlcera única, indolor e de fundo limpo; a donovanose é indolor e de evolução lenta; o herpes começa por vesículas e produz úlceras rasas.",
+      "image": "s15i1",
+      "imageCaption": "Úlceras vulvares múltiplas e confluentes"
+    },
+    {
+      "question": "O esfregaço do fundo de uma úlcera genital dolorosa e purulenta, corado pelo Gram, mostra cocobacilos Gram-negativos dispostos em cadeias paralelas, como na figura. Qual agente esse arranjo sugere?",
+      "options": [
+        "Haemophilus ducreyi",
+        "Klebsiella granulomatis",
+        "Treponema pallidum",
+        "Chlamydia trachomatis"
+      ],
+      "correctIndex": 0,
+      "explanation": "O arranjo em cadeias paralelas, descrito como 'cardume de peixes', 'trilho de trem' ou 'paliçada', é típico de Haemophilus ducreyi, agente do cancro mole; a cultura em meio específico tem sensibilidade inferior a 80%. Klebsiella granulomatis é vista como corpúsculos de Donovan dentro de macrófagos (Giemsa, Wright ou Leishman); o treponema não se cora pelo Gram e é procurado em campo escuro; a clamídia é intracelular obrigatória e se diagnostica por PCR.",
+      "image": "s17i1",
+      "imageCaption": "Esfregaço corado pelo Gram"
+    },
+    {
+      "question": "Qual é o tratamento de primeira escolha do cancro mole?",
+      "options": [
+        "Azitromicina 1 g VO em dose única",
+        "Doxiciclina 100 mg VO 12/12 h por 21 dias",
+        "Penicilina benzatina 2,4 milhões UI IM",
+        "Aciclovir 400 mg VO 8/8 h por 7 dias"
+      ],
+      "correctIndex": 0,
+      "explanation": "A azitromicina 1 g por via oral em dose única (dois comprimidos de 500 mg) é a primeira opção para o cancroide; a ceftriaxona 250 mg intramuscular em dose única é a alternativa, e o ciprofloxacino 500 mg de 12 em 12 horas por 3 dias também é eficaz, mas é contraindicado na gestação e na lactação. Doxiciclina por 21 dias é esquema de LGV; penicilina benzatina, de sífilis."
+    },
+    {
+      "question": "Por que o cancro mole costuma se apresentar com várias úlceras, inclusive em faces opostas da vulva?",
+      "options": [
+        "Por autoinoculação, gerando lesões em espelho",
+        "Por disseminação hematogênica a partir do bubão",
+        "Por reativação viral em gânglios sacrais",
+        "Por reação de hipersensibilidade ao bacilo"
+      ],
+      "correctIndex": 0,
+      "explanation": "O cancroide é altamente contagioso: o exsudato do fundo da úlcera inocula a pele em contato e cria novas lesões em posições simétricas — as lesões em 'espelho' ou em 'beijo'. Isso, somado à incubação curta, explica a apresentação com úlceras múltiplas e dolorosas. Reativação a partir de gânglios sensitivos é mecanismo do herpes, não de bactéria."
+    },
+    {
+      "question": "No diagnóstico diferencial das úlceras genitais, quais duas causas produzem úlcera tipicamente indolor?",
+      "options": [
+        "Sífilis primária e donovanose",
+        "Herpes genital e cancro mole",
+        "Cancro mole e donovanose",
+        "Herpes e sífilis primária"
+      ],
+      "correctIndex": 0,
+      "explanation": "O cancro duro da sífilis e a úlcera da donovanose são classicamente indolores — e a lesão de inoculação do LGV também, por isso passa despercebida. Herpes e cancro mole são as úlceras dolorosas. Dor é o primeiro eixo do diferencial, seguido por número de lesões, fundo, borda e padrão da adenopatia."
+    },
+    {
+      "question": "Mulher de 25 anos, com ferida vulvar indolor há 14 dias. Ao exame, lesão única de 2 cm em grande lábio direito, de base endurecida e fundo limpo, como na figura, e linfonodomegalia inguinal ipsilateral. Qual é o diagnóstico e o tratamento?",
+      "options": [
+        "Sífilis primária; penicilina benzatina 2,4 milhões UI IM",
+        "Sífilis primária; azitromicina 1 g VO em dose única",
+        "Cancro mole; penicilina benzatina 2,4 milhões UI IM",
+        "Cancro mole; azitromicina 1 g VO em dose única"
+      ],
+      "correctIndex": 0,
+      "explanation": "Úlcera única, indolor, de base endurecida, bordas bem definidas e fundo limpo, com adenopatia regional indolor, é o cancro duro da sífilis primária. O tratamento é penicilina G benzatina 2,4 milhões UI intramuscular em dose única (1,2 milhão UI em cada glúteo). Azitromicina não é opção para sífilis, pelo risco de falha terapêutica e resistência; o cancro mole seria doloroso e de fundo purulento.",
+      "image": "s12i1",
+      "imageCaption": "Úlcera única em grande lábio"
+    },
+    {
+      "question": "Como se apresenta a adenopatia regional que acompanha o cancro duro da sífilis primária?",
+      "options": [
+        "Múltipla, móvel, indolor e sem supuração",
+        "Única, aderida, dolorosa e com supuração",
+        "Dolorosa, fistulizada por múltiplos orifícios",
+        "Ausente, substituída por pseudobubões"
+      ],
+      "correctIndex": 0,
+      "explanation": "Na sífilis primária, os linfonodos regionais aumentam, mas permanecem móveis, indolores e não supuram — em geral vários, do mesmo lado da lesão. Bubão único que supura sugere cancro mole; fistulização por múltiplos orifícios, LGV; pseudobubões sem adenite verdadeira, donovanose."
+    },
+    {
+      "question": "Mulher com úlcera vulvar única, indolor e de fundo limpo, surgida há 5 dias, tem VDRL não reagente. Como interpretar esse resultado?",
+      "options": [
+        "A sorologia pode não ter positivado; a pesquisa direta ajuda",
+        "O VDRL não reagente afasta sífilis e dispensa novos testes",
+        "O resultado indica cicatriz sorológica de infecção antiga",
+        "O VDRL negativo confirma cancro mole e indica azitromicina"
+      ],
+      "correctIndex": 0,
+      "explanation": "No início do cancro duro, a sorologia ainda pode ser não reagente — os testes não treponêmicos (VDRL, RPR) costumam positivar de uma a três semanas após o surgimento da úlcera. Nessa janela, a pesquisa direta do treponema em campo escuro, no exsudato seroso da lesão, faz o diagnóstico, e o teste treponêmico deve ser feito e repetido se necessário. Na abordagem sindrômica, úlcera sem vesículas já é tratada para sífilis e cancro mole sem aguardar a sorologia."
+    },
+    {
+      "question": "Mulher de 30 anos com exantema indolor há três semanas, febre baixa, adinamia e linfonodomegalia generalizada. Há pápulas descamativas em palmas e plantas, como na figura, e relato de 'ferida' vulvar indolor há dois meses, que cicatrizou sozinha. Qual é o diagnóstico e a conduta?",
+      "options": [
+        "Sífilis secundária; penicilina benzatina 2,4 milhões UI IM",
+        "Pitiríase rósea; anti-histamínico e espera da remissão",
+        "Eritema multiforme; suspensão de drogas e corticoide",
+        "Hanseníase dimorfa; poliquimioterapia única (PQT-U)"
+      ],
+      "correctIndex": 0,
+      "explanation": "Cancro indolor que cicatriza sozinho e, semanas a meses depois, exantema com acometimento palmoplantar, sintomas sistêmicos e linfadenopatia generalizada é a sífilis secundária. Por ser sífilis recente (menos de um ano), trata-se com penicilina G benzatina 2,4 milhões UI intramuscular em dose única (1,2 milhão UI em cada glúteo). A pitiríase rósea poupa palmas e plantas; o eritema multiforme tem lesões em alvo; a hanseníase cursa com alteração de sensibilidade.",
+      "image": "s29i2",
+      "imageCaption": "Lesões palmares"
+    },
+    {
+      "question": "Mulher com pápulas palmoplantares descamativas apresenta também, na vulva e no períneo, pápulas e placas planas, úmidas e esbranquiçadas, como na figura. Qual é a lesão genital e o seu tratamento?",
+      "options": [
+        "Condiloma plano; penicilina benzatina intramuscular",
+        "Condiloma acuminado; ácido tricloroacético a 90%",
+        "Molusco contagioso; curetagem das lesões umbilicadas",
+        "Donovanose vegetante; azitromicina semanal"
+      ],
+      "correctIndex": 0,
+      "explanation": "O condiloma plano (condiloma lata) é manifestação da sífilis secundária: pápulas e placas planas e úmidas em áreas de dobra e atrito, muito ricas em treponemas e, portanto, muito contagiosas. Trata-se a sífilis, com penicilina benzatina, e não a lesão local. O ácido tricloroacético é tratamento do condiloma acuminado, causado pelo HPV, que tem aspecto verrucoso, em couve-flor.",
+      "image": "s29i1",
+      "imageCaption": "Lesões papulosas em vulva e períneo"
+    },
+    {
+      "question": "Qual teste deve ser usado para monitorar a resposta ao tratamento da sífilis?",
+      "options": [
+        "Teste não treponêmico quantitativo, como o VDRL",
+        "Teste treponêmico, como o teste rápido ou FTA-Abs",
+        "Pesquisa direta do treponema em campo escuro",
+        "PCR para Treponema pallidum em amostra de sangue"
+      ],
+      "correctIndex": 0,
+      "explanation": "Os testes não treponêmicos (VDRL, RPR) são quantitativos: a titulação cai com o tratamento e sobe na reinfecção, por isso servem ao seguimento — trimestral fora da gestação, mensal na gestante. Resposta adequada é a queda de duas diluições (por exemplo, de 1:32 para 1:8) em até 6 meses na sífilis recente. Os treponêmicos permanecem reagentes por toda a vida na maioria das pessoas e não distinguem infecção ativa de tratada."
+    },
+    {
+      "question": "Mulher tratada adequadamente para sífilis recente há dois anos teve queda do VDRL de 1:64 para 1:2, título que se mantém estável nos controles, sem nova exposição de risco. O teste treponêmico segue reagente. Qual é a interpretação?",
+      "options": [
+        "Cicatriz sorológica; não há indicação de novo tratamento",
+        "Reinfecção; repetir penicilina benzatina 2,4 milhões UI",
+        "Falha terapêutica; tratar como neurossífilis por 14 dias",
+        "Resultado falso-positivo; repetir só o teste treponêmico"
+      ],
+      "correctIndex": 0,
+      "explanation": "Após tratamento adequado, com queda documentada de pelo menos duas diluições, a persistência de títulos baixos e estáveis no teste não treponêmico, sem nova exposição, é a cicatriz sorológica — não exige retratamento. O teste treponêmico reagente é esperado, pois permanece positivo por toda a vida na maioria dos casos. Reinfecção ou falha se reconhecem pelo aumento de duas diluições ou mais (por exemplo, de 1:2 para 1:8)."
+    },
+    {
+      "question": "Mulher assintomática, sem lesões, tem teste treponêmico reagente e VDRL 1:8 em exame de rotina. Não há tratamento prévio nem data provável da infecção. Qual é o esquema indicado?",
+      "options": [
+        "Benzatina 2,4 milhões UI IM semanal por 3 semanas",
+        "Benzatina 2,4 milhões UI IM em dose única",
+        "Benzatina 1,2 milhão UI IM em dose única",
+        "Penicilina cristalina IV de 4/4 h por 14 dias"
+      ],
+      "correctIndex": 0,
+      "explanation": "Sem sinais clínicos e com sorologia reagente, trata-se de sífilis latente; quando não se sabe se a infecção tem menos de um ano, ela é tratada como latente tardia: penicilina G benzatina 2,4 milhões UI intramuscular uma vez por semana, por 3 semanas (7,2 milhões UI no total). A dose única de 2,4 milhões vale para a sífilis recente — primária, secundária e latente com menos de um ano. Penicilina cristalina intravenosa é reservada à neurossífilis."
+    },
+    {
+      "question": "Gestante com sífilis recente refere alergia à penicilina. Qual conduta garante tratamento adequado também para o feto?",
+      "options": [
+        "Dessensibilização e uso de penicilina benzatina",
+        "Azitromicina 1 g VO em dose única, sem penicilina",
+        "Doxiciclina 100 mg VO de 12/12 h por 15 dias",
+        "Ceftriaxona IM por 10 dias, sem penicilina"
+      ],
+      "correctIndex": 0,
+      "explanation": "Na gestação, só a penicilina benzatina é considerada tratamento adequado para prevenir a sífilis congênita, porque atravessa a placenta e trata o feto. Diante de alergia, a gestante é dessensibilizada em ambiente hospitalar e recebe a penicilina. A doxiciclina, alternativa para não gestantes, é contraindicada na gravidez, e os demais esquemas não contam como tratamento adequado."
+    },
+    {
+      "question": "Seis horas após receber penicilina benzatina para sífilis secundária, a paciente apresenta febre, calafrios, mialgia e piora transitória das lesões de pele. Qual é a interpretação e a conduta?",
+      "options": [
+        "Reação de Jarisch-Herxheimer; sintomáticos, sem suspender",
+        "Anafilaxia à penicilina; adrenalina e troca do antibiótico",
+        "Falha terapêutica; repetir benzatina no dia seguinte",
+        "Neurossífilis; iniciar penicilina cristalina intravenosa"
+      ],
+      "correctIndex": 0,
+      "explanation": "A reação de Jarisch-Herxheimer surge nas primeiras 24 horas após a primeira dose, pela liberação maciça de antígenos dos treponemas destruídos: febre, calafrios, mialgia, cefaleia e exacerbação das lesões. É autolimitada, mais comum na sífilis secundária, e se trata com antitérmico e analgésico — não é alergia e não justifica suspender a penicilina nem trocar o esquema."
+    },
+    {
+      "question": "Mulher com lesão vulvar indolor de evolução lenta, há vários meses, ulcerovegetante, de fundo granuloso vermelho-vivo que sangra com facilidade e sem adenite verdadeira, como na figura. Qual é o diagnóstico e o exame que o confirma?",
+      "options": [
+        "Donovanose; corpúsculos de Donovan em macrófagos",
+        "Cancro mole; cocobacilos em 'cardume de peixes'",
+        "Sífilis primária; espiroquetas em campo escuro",
+        "Linfogranuloma venéreo; PCR do aspirado do bubão"
+      ],
+      "correctIndex": 0,
+      "explanation": "Úlcera indolor, de crescimento lento, com fundo granulomatoso vermelho-vivo e sangramento fácil, evoluindo para lesão ulcerovegetante, é a donovanose (granuloma inguinal), por Klebsiella granulomatis. O diagnóstico é citológico ou histológico: corpúsculos de Donovan no interior de macrófagos, em material raspado ou biopsiado das áreas de granulação ativa, corado por Giemsa, Wright ou Leishman.",
+      "image": "s20i1",
+      "imageCaption": "Lesões ulcerovegetantes de fundo vermelho-vivo"
+    },
+    {
+      "question": "Na donovanose, pode surgir aumento de volume na região inguinal. O que ele representa?",
+      "options": [
+        "Pseudobubão: granulação subcutânea, sem adenite verdadeira",
+        "Bubão supurado, que fistuliza por múltiplos orifícios",
+        "Bubão supurado, que fistuliza por um orifício único",
+        "Adenopatia reacional móvel, indolor e não supurativa"
+      ],
+      "correctIndex": 0,
+      "explanation": "A donovanose não produz adenite verdadeira. O que aparece na virilha são granulações subcutâneas, geralmente unilaterais, por fenômenos obstrutivos linfáticos — os pseudobubões. Bubão com múltiplos orifícios é do LGV; com orifício único, do cancro mole; adenopatia móvel, indolor e não supurativa, da sífilis primária."
+    },
+    {
+      "question": "Qual é o tratamento de primeira escolha da donovanose e o critério para encerrá-lo?",
+      "options": [
+        "Azitromicina 1 g semanal, no mínimo 3 semanas e até cicatrizar",
+        "Azitromicina 1 g em dose única, sem controle de cicatrização",
+        "Penicilina benzatina 2,4 milhões UI semanal por 3 semanas",
+        "Aciclovir 400 mg de 8/8 h por 10 dias, até a formação de crosta"
+      ],
+      "correctIndex": 0,
+      "explanation": "A primeira escolha é azitromicina 1 g por via oral uma vez por semana, por no mínimo 3 semanas ou até a cicatrização completa das lesões; a alternativa é doxiciclina 100 mg de 12 em 12 horas por pelo menos 21 dias, também até cicatrizar. O critério de término é clínico — a lesão fechada —, e não um número fixo de doses."
+    },
+    {
+      "question": "Em unidade sem laboratório, mulher apresenta úlcera genital sem história nem evidência de vesículas. Pelo fluxograma de abordagem sindrômica do Ministério da Saúde, qual é a conduta?",
+      "options": [
+        "Tratar sífilis e cancro mole ao mesmo tempo",
+        "Tratar apenas herpes genital com aciclovir",
+        "Aguardar a sorologia antes de qualquer tratamento",
+        "Tratar apenas sífilis com penicilina benzatina"
+      ],
+      "correctIndex": 0,
+      "explanation": "Na abordagem sindrômica, a pergunta que separa os caminhos é a presença de vesículas. Com vesículas, na história ou no exame, trata-se herpes. Sem vesículas, tratam-se sífilis e cancro mole simultaneamente — penicilina benzatina 2,4 milhões UI IM mais azitromicina 1 g VO —, porque são causas prevalentes e podem coexistir. Oferecem-se também testes rápidos de HIV, sífilis e hepatites B e C."
+    },
+    {
+      "question": "Mulher com úlcera vulvar há seis semanas, já tratada para sífilis e cancro mole, sem melhora. Qual é o próximo passo?",
+      "options": [
+        "Biópsia da lesão e tratamento para donovanose",
+        "Repetir benzatina e azitromicina por mais 4 semanas",
+        "Aciclovir supressivo e reavaliar após 6 meses",
+        "Observação clínica, pois tende a regredir sozinha"
+      ],
+      "correctIndex": 0,
+      "explanation": "Úlcera com 4 semanas ou mais de evolução, ou que não responde ao tratamento sindrômico inicial, exige ampliar o diferencial: biópsia, que também afasta neoplasia, e tratamento para donovanose, doença crônica e indolor. O LGV também entra na lista. Repetir o mesmo esquema ou apenas observar atrasa o diagnóstico."
+    }
+  ]
+}

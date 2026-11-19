@@ -1,0 +1,343 @@
+{
+  "titulo": "Descolamento de Retina e Oclusões Vasculares",
+  "eyebrow": "Oftalmologia · Retina",
+  "subtitulo": "Retina que descola, vaso que entope: duas urgências do fundo de olho",
+  "intro": "Os três mecanismos de descolamento de retina, sintomas de alarme e tratamento cirúrgico; oclusões venosas e arteriais, centrais e de ramo — fundoscopia, fatores de risco, complicações neovasculares e conduta.",
+  "questoes": [
+    {
+      "question": "O descolamento de retina é definido como a separação entre quais estruturas?",
+      "options": [
+        "A retina neurossensorial e o epitélio pigmentar da retina",
+        "O epitélio pigmentar da retina e a membrana de Bruch",
+        "A hialoide posterior do vítreo e a limitante interna",
+        "A coroide e a esclera, com líquido no espaço supracoroide"
+      ],
+      "correctIndex": 0,
+      "explanation": "O descolamento de retina é a separação da retina neurossensorial do epitélio pigmentar da retina (EPR), com acúmulo de líquido no espaço sub-retiniano — um espaço apenas virtual no olho normal. A separação entre EPR e membrana de Bruch é o descolamento do EPR; a da hialoide posterior é o descolamento do vítreo posterior; a da coroide é o descolamento de coroide."
+    },
+    {
+      "question": "Paciente com descolamento de retina regmatogênico superior tem acuidade visual preservada e mácula ainda colada ao exame. Qual a conduta?",
+      "options": [
+        "Cirurgia de urgência, antes que o líquido alcance a fóvea",
+        "Observação e novo mapeamento de retina em trinta dias",
+        "Laser de barreira eletivo, agendado para algumas semanas",
+        "Repouso domiciliar, operando só se a visão central cair"
+      ],
+      "correctIndex": 0,
+      "explanation": "O descolamento de retina é urgência oftalmológica, e o que mais pesa no prognóstico visual é o estado da mácula no momento da cirurgia. Com a mácula colada, operar com urgência preserva a visão central; uma vez descolada a fóvea, os fotorreceptores sofrem por perder o suporte do EPR e da coriocapilar, e a recuperação costuma ser incompleta. Descolamentos superiores progridem mais rápido, por ação da gravidade."
+    },
+    {
+      "question": "Qual é o tipo mais comum de descolamento de retina e qual é o seu mecanismo?",
+      "options": [
+        "Regmatogênico: o vítreo liquefeito passa por uma rotura retiniana",
+        "Tracional: membranas vítreas contraem e puxam a retina sem rotura",
+        "Exsudativo: líquido da coroide extravasa sob a retina sem rotura",
+        "Hemorrágico: sangue de neovasos de coroide disseca a retina do EPR"
+      ],
+      "correctIndex": 0,
+      "explanation": "O regmatogênico (do grego rhegma, ruptura) é o tipo mais comum. Uma rotura de espessura total, geralmente provocada pela tração do vítreo durante o descolamento do vítreo posterior, permite que o vítreo liquefeito entre no espaço sub-retiniano e separe a retina do EPR. Tracional e exsudativo são os outros dois tipos clássicos e não dependem de rotura."
+    },
+    {
+      "question": "Paciente míope refere fotopsias e uma sombra no campo visual de um olho. Qual o diagnóstico sugerido pela retinografia ao lado?",
+      "options": [
+        "Descolamento regmatogênico, com retina ondulada e móvel",
+        "Descolamento tracional, com retina côncava e imóvel",
+        "Oclusão da veia central, com hemorragias difusas",
+        "Oclusão da artéria central, com mancha vermelho-cereja"
+      ],
+      "correctIndex": 0,
+      "explanation": "A retina descolada perde a transparência e fica acinzentada; no regmatogênico ela é convexa, ondulada (com pregas) e se movimenta com os movimentos oculares, e os vasos acompanham as dobras, como na imagem. O tracional tem superfície côncava, lisa e imóvel, presa a membranas. Miopia, fotopsias e sombra no campo completam o quadro de descolamento regmatogênico.",
+      "image": "s02i1",
+      "imageCaption": "Retina elevada, acinzentada e ondulada"
+    },
+    {
+      "question": "Paciente diabético de longa data tem a retinografia ao lado, com tecido esbranquiçado tracionando o polo posterior e múltiplas cicatrizes escuras arredondadas. Qual o diagnóstico?",
+      "options": [
+        "Descolamento tracional por retinopatia diabética proliferativa tratada com laser",
+        "Descolamento regmatogênico por miopia alta com degeneração em treliça periférica",
+        "Descolamento exsudativo por melanoma de coroide com dispersão de pigmento",
+        "Oclusão da veia central da retina com hemorragias nos quatro quadrantes"
+      ],
+      "correctIndex": 0,
+      "explanation": "Na retinopatia diabética proliferativa, os neovasos crescem acompanhados de tecido fibroso; quando essas membranas fibrovasculares se contraem, puxam a retina e causam o descolamento tracional, sem rotura. As manchas escuras arredondadas são cicatrizes de panfotocoagulação a laser, tratamento prévio da proliferação. Por isso a retinopatia diabética figura entre os fatores de risco de descolamento.",
+      "image": "s03i1",
+      "imageCaption": "Membranas fibrovasculares e cicatrizes de laser"
+    },
+    {
+      "question": "Qual é o tratamento de escolha para um descolamento tracional que ameaça a mácula em paciente com retinopatia diabética proliferativa?",
+      "options": [
+        "Vitrectomia via pars plana com remoção das membranas fibrovasculares",
+        "Retinopexia pneumática com bolha de gás e posicionamento da cabeça",
+        "Panfotocoagulação isolada, sem abordagem cirúrgica das membranas",
+        "Anti-VEGF intravítreo isolado, sem abordagem cirúrgica das membranas"
+      ],
+      "correctIndex": 0,
+      "explanation": "No descolamento tracional não há rotura para fechar: o problema é a força das membranas sobre a retina. A vitrectomia remove o vítreo e disseca as membranas, aliviando a tração. A retinopexia pneumática trata roturas superiores no regmatogênico, o laser isolado não desfaz a tração já instalada e o anti-VEGF sozinho pode até acelerar a contração fibrosa."
+    },
+    {
+      "question": "Gestante com pré-eclâmpsia grave refere embaçamento visual bilateral. O fundo de olho mostra descolamento de retina liso, sem roturas, com líquido que muda de posição conforme a postura. Qual a conduta?",
+      "options": [
+        "Tratar a doença de base; o descolamento exsudativo tende a regredir",
+        "Vitrectomia de urgência para drenar o líquido sub-retiniano bilateral",
+        "Crioterapia periférica para criar aderência entre a retina e o EPR",
+        "Panfotocoagulação para bloquear o líquido antes que atinja a mácula"
+      ],
+      "correctIndex": 0,
+      "explanation": "Descolamento sem rotura, de superfície lisa, com líquido que se desloca com a gravidade (shifting fluid), é exsudativo: o líquido vem da coroide por quebra da barreira hematorretiniana externa. Causas típicas são pré-eclâmpsia e eclâmpsia, hipertensão maligna, inflamações (Vogt-Koyanagi-Harada, esclerite posterior) e tumores de coroide. O tratamento é o da causa — controlada a pré-eclâmpsia, o descolamento costuma regredir sem cirurgia."
+    },
+    {
+      "question": "Qual dos pacientes abaixo tem o maior risco de desenvolver descolamento de retina regmatogênico?",
+      "options": [
+        "Míope de −9,00 dioptrias submetido a cirurgia de catarata",
+        "Hipermetrope de +2,00 dioptrias sem cirurgia ocular prévia",
+        "Emétrope de 30 anos com conjuntivite alérgica sazonal",
+        "Hipermetrope de +4,00 dioptrias com pterígio nasal"
+      ],
+      "correctIndex": 0,
+      "explanation": "Miopia alta e cirurgia ocular prévia (como a facectomia) estão entre os principais fatores de risco do descolamento regmatogênico: o olho míope é longo, com retina periférica fina e degenerações como a em treliça, e a cirurgia de catarata acelera a liquefação e o descolamento do vítreo. Trauma ocular e retinopatia diabética completam a lista de fatores de risco do descolamento em geral."
+    },
+    {
+      "question": "Paciente de 60 anos refere flashes de luz no canto do olho e o aparecimento súbito de muitos pontos pretos flutuantes. O que esses sintomas indicam?",
+      "options": [
+        "Tração vitreorretiniana, com risco de rotura e descolamento de retina",
+        "Isquemia aguda da artéria central, com risco de cegueira irreversível",
+        "Aura de enxaqueca, com resolução espontânea em menos de uma hora",
+        "Aumento agudo da pressão intraocular por fechamento do ângulo"
+      ],
+      "correctIndex": 0,
+      "explanation": "Fotopsias (flashes) traduzem estimulação mecânica da retina pelo vítreo que a traciona; moscas volantes de início súbito e em grande número indicam opacidades no vítreo — condensações, pigmento ou sangue liberado por uma rotura. Os dois juntos são sintomas de alarme de descolamento do vítreo posterior com possível rotura retiniana. A aura de enxaqueca é binocular, tem padrão em zigue-zague e dura minutos."
+    },
+    {
+      "question": "Diante de fotopsias e moscas volantes de início súbito, qual é a conduta adequada?",
+      "options": [
+        "Mapeamento de retina sob midríase com oftalmoscopia indireta, com urgência",
+        "Retorno eletivo em seis meses, já que os sintomas tendem a desaparecer",
+        "Colírio hipotensor ocular e reavaliação da pressão intraocular em um mês",
+        "Tomografia de crânio para excluir lesão occipital antes de examinar o olho"
+      ],
+      "correctIndex": 0,
+      "explanation": "O exame de escolha é o mapeamento de retina: fundo de olho sob dilatação pupilar com oftalmoscópio binocular indireto, idealmente com depressão escleral para examinar a periferia, onde ficam as roturas. Rotura encontrada antes do descolamento pode ser bloqueada com laser no consultório, evitando a cirurgia."
+    },
+    {
+      "question": "Paciente com sintomas de descolamento de retina tem hemorragia vítrea densa que impede ver o fundo de olho. Qual exame confirma o descolamento?",
+      "options": [
+        "Ultrassonografia ocular modo B",
+        "Angiofluoresceinografia da retina",
+        "Tomografia de coerência óptica",
+        "Campimetria visual computadorizada"
+      ],
+      "correctIndex": 0,
+      "explanation": "Quando os meios estão opacos (hemorragia vítrea, catarata densa), a luz não chega à retina e os exames ópticos — fundoscopia, OCT e angiofluoresceinografia — perdem o valor. A ultrassonografia modo B usa som, atravessa a opacidade e mostra a retina descolada como uma membrana ecogênica presa ao disco óptico."
+    },
+    {
+      "question": "Paciente refere uma sombra escura que começou na parte de cima do campo visual e vem descendo como uma cortina. Onde está o descolamento?",
+      "options": [
+        "Na retina inferior, porque o campo visual é invertido em relação à retina",
+        "Na retina superior, no mesmo lado em que a sombra começou a ser percebida",
+        "Na mácula, porque toda sombra de descolamento começa pelo centro da visão",
+        "No disco óptico, pelo líquido sub-retiniano comprimindo as fibras nervosas"
+      ],
+      "correctIndex": 0,
+      "explanation": "A imagem projetada na retina é invertida: a retina inferior enxerga o campo superior. Uma sombra que nasce em cima corresponde, portanto, a um descolamento inferior. Os descolamentos superiores tendem a progredir mais depressa, porque o líquido desce por gravidade e ameaça a mácula mais cedo."
+    },
+    {
+      "question": "Paciente com fotopsias tem uma rotura retiniana em ferradura na periferia, sem líquido sub-retiniano. Qual a conduta?",
+      "options": [
+        "Laser ou crioterapia ao redor da rotura, criando uma cicatriz aderente",
+        "Vitrectomia via pars plana imediata com tamponamento por silicone",
+        "Observação clínica com novo mapeamento de retina em seis meses",
+        "Injeção intravítrea de anti-VEGF para fechar as bordas da rotura"
+      ],
+      "correctIndex": 0,
+      "explanation": "Rotura sintomática sem descolamento é tratada com retinopexia profilática: laser ou crioterapia aplicados ao redor da rotura provocam uma cicatriz coriorretiniana que solda a retina ao EPR e impede o líquido de passar. É um procedimento ambulatorial que evita a cirurgia maior. Sem tratamento, a rotura em ferradura sintomática tem alto risco de evoluir para descolamento."
+    },
+    {
+      "question": "Em que consiste a retinopexia pneumática no tratamento do descolamento regmatogênico?",
+      "options": [
+        "Injeção de bolha de gás no vítreo que tampona a rotura, com crio ou laser",
+        "Faixa de silicone suturada na esclera que indenta a parede sob a rotura",
+        "Retirada do vítreo por instrumentos introduzidos pela pars plana",
+        "Aplicação de laser em toda a periferia retiniana sem tocar a rotura"
+      ],
+      "correctIndex": 0,
+      "explanation": "Na retinopexia pneumática, injeta-se uma bolha de gás expansível na cavidade vítrea; com o posicionamento da cabeça, a bolha flutua e tampona a rotura, enquanto crioterapia ou laser criam a aderência definitiva. Funciona melhor em roturas únicas e superiores. A faixa escleral é a introflexão escleral, e a retirada do vítreo é a vitrectomia."
+    },
+    {
+      "question": "Entre as doenças vasculares da retina, qual é a posição das oclusões venosas em frequência?",
+      "options": [
+        "Segunda mais frequente, atrás apenas da retinopatia diabética",
+        "Primeira mais frequente, à frente da retinopatia diabética",
+        "Terceira mais frequente, atrás da retinopatia falciforme",
+        "Quarta mais frequente, atrás da retinopatia da prematuridade"
+      ],
+      "correctIndex": 0,
+      "explanation": "A oclusão venosa da retina é a segunda doença vascular retiniana mais frequente, atrás apenas da retinopatia diabética, e uma causa comum de perda visual. As oclusões venosas predominam amplamente sobre as arteriais, e a oclusão de ramo venoso é mais comum que a de veia central."
+    },
+    {
+      "question": "Qual conjunto reúne os fatores de risco clássicos das oclusões vasculares da retina?",
+      "options": [
+        "Hipertensão arterial, diabetes, dislipidemia e glaucoma",
+        "Miopia alta, trauma ocular, cirurgia ocular prévia e diabetes",
+        "Hipotensão arterial, anemia, hipotireoidismo e catarata",
+        "Hipermetropia, olho seco, lente de contato e blefarite"
+      ],
+      "correctIndex": 0,
+      "explanation": "Hipertensão arterial, diabetes, dislipidemia e glaucoma são os fatores de risco clássicos: os três primeiros lesam a parede vascular pela aterosclerose, e o glaucoma, com pressão intraocular elevada, favorece a compressão da veia central na lâmina crivosa. A idade acima de 50 anos acompanha esses fatores. Miopia alta, trauma e cirurgia ocular prévia são fatores de risco de descolamento de retina."
+    },
+    {
+      "question": "Mulher de 32 anos, sem hipertensão, diabetes ou glaucoma, apresenta oclusão da veia central da retina. Qual investigação se impõe?",
+      "options": [
+        "Trombofilias, hiperviscosidade e uso de anticoncepcional oral",
+        "Miopia alta, degeneração em treliça e descolamento do vítreo",
+        "Ceratocone, astigmatismo irregular e uso de lente de contato",
+        "Catarata congênita, ambliopia e estrabismo não tratado"
+      ],
+      "correctIndex": 0,
+      "explanation": "Em adultos jovens a oclusão venosa raramente tem a causa aterosclerótica do idoso. Por isso se investigam estados de hipercoagulabilidade (trombofilias, síndrome antifosfolípide), hiperviscosidade (policitemia, mieloma, leucemias) e fatores como o anticoncepcional oral, além de vasculites."
+    },
+    {
+      "question": "Paciente hipertenso de 70 anos tem baixa visual súbita e indolor em um olho. Qual o diagnóstico sugerido pela retinografia ao lado?",
+      "options": [
+        "Oclusão da veia central da retina",
+        "Oclusão da artéria central da retina",
+        "Oclusão de ramo venoso temporal superior",
+        "Retinopatia diabética não proliferativa"
+      ],
+      "correctIndex": 0,
+      "explanation": "Hemorragias em chama de vela espalhadas pelos quatro quadrantes, veias dilatadas e tortuosas, manchas algodonosas e edema do disco óptico compõem o fundo de olho em 'tomate ketchup' (blood and thunder) da oclusão da veia central. A obstrução ocorre na altura da lâmina crivosa e congestiona todo o retorno venoso da retina. Na oclusão de ramo, as hemorragias ficam restritas a um setor.",
+      "image": "f2_s03i1",
+      "imageCaption": "Fundo de olho com hemorragias difusas"
+    },
+    {
+      "question": "Na retinografia ao lado, as hemorragias se concentram em um único setor da retina. Onde está, mais provavelmente, o ponto de obstrução?",
+      "options": [
+        "Num cruzamento arteriovenoso do ramo venoso temporal superior",
+        "Na lâmina crivosa, por onde a veia central deixa o globo ocular",
+        "Na artéria oftálmica, antes de sua entrada no nervo óptico",
+        "Nas veias vorticosas, na saída da coroide através da esclera"
+      ],
+      "correctIndex": 0,
+      "explanation": "Na oclusão de ramo venoso, a obstrução ocorre num cruzamento arteriovenoso: artéria e veia compartilham a mesma bainha adventicial, e a artéria espessada pela aterosclerose comprime a veia, gerando turbulência e trombose. O território drenado — mais frequentemente o temporal superior, como na imagem — fica com hemorragias em setor. A obstrução na lâmina crivosa é a da veia central.",
+      "image": "f2_s04i1",
+      "imageCaption": "Hemorragias restritas a um setor da retina"
+    },
+    {
+      "question": "Por que a oclusão de ramo venoso tem, em geral, prognóstico visual melhor que a oclusão da veia central?",
+      "options": [
+        "Acomete só um setor da retina, e a mácula pode ficar poupada",
+        "Não provoca edema macular, complicação exclusiva da forma central",
+        "As hemorragias de ramo se reabsorvem em dias, sem deixar sequela",
+        "O setor acometido recebe irrigação dupla, da retina e da coroide"
+      ],
+      "correctIndex": 0,
+      "explanation": "Na oclusão de ramo, só o território drenado por aquela veia sofre congestão; se a mácula não estiver nesse território, a visão central se mantém, e vasos colaterais costumam se formar. Ainda assim pode haver edema macular e, quando o setor isquêmico é grande, neovascularização — são as complicações a vigiar. É mais comum que a oclusão da veia central e acomete sobretudo idosos hipertensos."
+    },
+    {
+      "question": "Qual complicação grave é típica da forma isquêmica da oclusão da veia central, em geral nos primeiros três meses após o evento?",
+      "options": [
+        "Glaucoma neovascular, por neovasos na íris e no ângulo",
+        "Descolamento regmatogênico, por rotura retiniana periférica",
+        "Catarata subcapsular posterior, por isquemia do cristalino",
+        "Uveíte anterior granulomatosa, por necrose retiniana extensa"
+      ],
+      "correctIndex": 0,
+      "explanation": "A retina isquêmica produz VEGF em grande quantidade; o fator se difunde para o segmento anterior e induz neovasos na íris (rubeose) e no ângulo, que obstruem a drenagem do humor aquoso. O resultado é o glaucoma neovascular, apelidado de 'glaucoma dos 100 dias' (ou dos 90 dias) por surgir tipicamente nos primeiros três meses. A forma isquêmica é identificada por extensas áreas de não perfusão na angiofluoresceinografia."
+    },
+    {
+      "question": "Homem de 72 anos tem perda visual súbita, indolor e intensa em um olho, iniciada há uma hora. Qual o diagnóstico e o que explica o ponto avermelhado central na retinografia?",
+      "options": [
+        "Oclusão da artéria central; a fóvea fina deixa ver a coroide preservada",
+        "Oclusão da veia central; hemorragia macular por congestão venosa",
+        "Retinopatia diabética; microaneurisma isolado no centro da fóvea",
+        "Degeneração macular; neovascularização de coroide sob a fóvea"
+      ],
+      "correctIndex": 0,
+      "explanation": "Na oclusão da artéria central, as camadas internas da retina ficam isquêmicas, edemaciadas e opacas, dando o aspecto pálido e esbranquiçado difuso. A fóvea não tem camadas internas: ali a retina é fina e deixa ver a coroide, irrigada pela circulação ciliar e intacta, que aparece como a mancha vermelho-cereja em contraste com o branco ao redor. Cursa ainda com artérias afiladas e defeito pupilar aferente.",
+      "image": "f2_s05i1",
+      "imageCaption": "Retina pálida com ponto vermelho central"
+    },
+    {
+      "question": "Diante de oclusão da artéria central da retina instalada há duas horas, qual é a conduta adequada?",
+      "options": [
+        "Emergência: encaminhar já e investigar como equivalente de AVC",
+        "Consulta eletiva na semana seguinte, pois o dano já é definitivo",
+        "Anti-VEGF intravítreo eletivo para prevenir edema macular cistoide",
+        "Panfotocoagulação imediata para reperfundir a artéria obstruída"
+      ],
+      "correctIndex": 0,
+      "explanation": "A oclusão arterial é emergência oftalmológica: estudos experimentais clássicos mostram que a retina tolera apenas cerca de 90 a 100 minutos de isquemia total antes de lesão irreversível. Além disso, é considerada equivalente de acidente vascular cerebral — o paciente deve ser encaminhado imediatamente a um serviço capaz de avaliar trombólise e investigar a fonte embólica. Medidas clássicas como massagem ocular e paracentese de câmara anterior não têm benefício comprovado."
+    },
+    {
+      "question": "Mulher de 76 anos com oclusão da artéria central da retina refere cefaleia temporal, dor ao mastigar e tem VHS muito elevada. Qual a conduta prioritária?",
+      "options": [
+        "Corticoide sistêmico imediato pela suspeita de arterite de células gigantes",
+        "Anti-VEGF intravítreo para impedir neovascularização da íris no mesmo olho",
+        "Panfotocoagulação do olho afetado e observação clínica do olho contralateral",
+        "Doppler de carótidas eletivo e retorno ambulatorial em três meses, sem medicação"
+      ],
+      "correctIndex": 0,
+      "explanation": "Cefaleia temporal, claudicação de mandíbula e VHS/PCR elevadas num idoso com oclusão arterial apontam para arterite de células gigantes, causa não embólica que deve ser excluída em todo paciente acima de 50 anos. O corticoide em dose alta começa sem esperar a biópsia de artéria temporal, porque o risco é o acometimento do outro olho em dias, com cegueira bilateral."
+    },
+    {
+      "question": "Idoso com oclusão de ramo arterial da retina, sem sintomas de arterite. Qual exame é prioritário na investigação etiológica?",
+      "options": [
+        "Doppler de carótidas, em busca de placa ateromatosa emboligênica",
+        "Ressonância de órbitas, em busca de tumor comprimindo o nervo",
+        "Ultrassonografia ocular, em busca de descolamento de retina oculto",
+        "Tonometria seriada, em busca de picos noturnos de pressão ocular"
+      ],
+      "correctIndex": 0,
+      "explanation": "A oclusão de ramo arterial é geralmente embólica, e as fontes principais são as placas ateromatosas da carótida (êmbolos de colesterol, as placas de Hollenhorst, amarelados e brilhantes nas bifurcações) e o coração (valvopatias, fibrilação atrial). A investigação inclui Doppler de carótidas, ecocardiograma e eletrocardiograma, e o paciente tem risco aumentado de AVC."
+    },
+    {
+      "question": "Paciente refere perda súbita de uma parte do campo visual de um olho. Qual o diagnóstico sugerido pela retinografia ao lado?",
+      "options": [
+        "Oclusão de ramo arterial, com edema isquêmico em um setor",
+        "Oclusão de ramo venoso, com hemorragias em chama de vela",
+        "Oclusão da artéria central, com palidez de toda a retina",
+        "Descolamento exsudativo, com líquido sob o polo posterior"
+      ],
+      "correctIndex": 0,
+      "explanation": "O branqueamento localizado da retina, restrito ao território de um ramo arterial, é o edema isquêmico das camadas internas na oclusão de ramo arterial. Não há hemorragias (que indicariam oclusão venosa) nem palidez difusa da retina toda (oclusão central). O defeito de campo corresponde ao setor isquêmico, e o prognóstico é variável: bom se a fóvea é poupada.",
+      "image": "f2_s06i1",
+      "imageCaption": "Branqueamento retiniano localizado"
+    },
+    {
+      "question": "OCT macular de paciente com oclusão da veia central há um mês e acuidade visual de 20/200. Qual o achado e o tratamento de primeira linha?",
+      "options": [
+        "Edema macular cistoide; injeções intravítreas de anti-VEGF",
+        "Buraco macular de espessura total; vitrectomia com gás",
+        "Descolamento regmatogênico; retinopexia pneumática",
+        "Membrana epirretiniana isolada; observação clínica"
+      ],
+      "correctIndex": 0,
+      "explanation": "O OCT mostra a retina espessada com espaços cistoides hiporrefletivos — o edema macular, principal causa de baixa visual nas oclusões venosas. O tratamento de primeira linha são as injeções intravítreas de anti-VEGF (ranibizumabe, aflibercepte, bevacizumabe); o corticoide intravítreo (implante de dexametasona) é alternativa. O controle sistêmico dos fatores de risco acompanha qualquer tratamento ocular.",
+      "image": "f2_s09i2",
+      "imageCaption": "Corte de OCT da mácula"
+    },
+    {
+      "question": "A imagem mostra múltiplas cicatrizes arredondadas de fotocoagulação na retina de um paciente com oclusão venosa isquêmica. Qual o objetivo desse tratamento?",
+      "options": [
+        "Destruir retina isquêmica para reduzir o VEGF e regredir neovasos",
+        "Criar aderência ao redor de uma rotura para impedir descolamento",
+        "Destruir o corpo ciliar para reduzir a produção de humor aquoso",
+        "Dissolver o trombo e repermeabilizar a veia central obstruída"
+      ],
+      "correctIndex": 0,
+      "explanation": "A panfotocoagulação destrói áreas de retina isquêmica, que deixam de consumir oxigênio e de produzir VEGF; com menos VEGF, os neovasos regridem e o risco de hemorragia vítrea e glaucoma neovascular cai. Nas oclusões venosas o laser é indicado quando surge neovascularização, sob seguimento próximo. O laser não desfaz o trombo.",
+      "image": "f2_s10i1",
+      "imageCaption": "Cicatrizes de fotocoagulação a laser"
+    },
+    {
+      "question": "Na avaliação de uma oclusão venosa da retina, qual é o papel principal da angiofluoresceinografia?",
+      "options": [
+        "Mapear áreas de não perfusão capilar e detectar neovasos",
+        "Medir a espessura macular em cortes seccionais da retina",
+        "Mostrar a retina através de hemorragia vítrea muito densa",
+        "Medir a pressão intraocular e avaliar o ângulo camerular"
+      ],
+      "correctIndex": 0,
+      "explanation": "A angiofluoresceinografia, com contraste injetado na veia, mostra o fluxo nos vasos retinianos: revela áreas de não perfusão capilar — que definem a forma isquêmica —, extravasamento e neovasos. O OCT é o exame que quantifica o edema macular em cortes seccionais, e a ultrassonografia modo B é a que atravessa meios opacos. A fundoscopia completa o trio diagnóstico."
+    }
+  ]
+}

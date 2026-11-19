@@ -1,0 +1,350 @@
+{
+  "titulo": "Emergências Psiquiátricas",
+  "eyebrow": "Psiquiatria · Urgência e Emergência",
+  "subtitulo": "Do paciente agitado ao risco de suicídio no pronto-socorro",
+  "intro": "Emergência e urgência, ambiente e equipe, agitação psicomotora e heteroagressividade, manejo verbal e contenção física, tranquilização rápida e suas complicações, abstinência alcoólica e delirium tremens, avaliação do risco de suicídio e indicações de internação.",
+  "questoes": [
+    {
+      "question": "Na classificação de gravidade dos quadros psiquiátricos agudos, o que define uma emergência, diferenciando-a de uma urgência?",
+      "options": [
+        "Risco de vida ou social grave, com intervenção em minutos ou horas",
+        "Risco menor, com intervenção a curto prazo, em dias ou semanas",
+        "Sintoma psicótico, com intervenção obrigatória em até três dias",
+        "Indicação de internação, com intervenção em até sete dias úteis"
+      ],
+      "correctIndex": 0,
+      "explanation": "Emergência é o distúrbio de pensamento, sentimento ou ação que envolve risco de vida ou risco social grave e exige intervenção imediata e inadiável, com tempo medido em minutos ou horas: delirium tremens, comportamento violento, toxicidade por drogas, tentativa de suicídio. Na urgência os riscos são menores e a intervenção é de curto prazo, em dias ou semanas: comportamento bizarro, agitação aguda, embriaguez, avaliação de internação, atitudes suicidas, síndrome conversiva."
+    },
+    {
+      "question": "No pronto-socorro, diante de um paciente em primeiro surto com delírios e alucinações, como deve ser registrada a hipótese diagnóstica?",
+      "options": [
+        "Como diagnóstico sindrômico provisório, ex.: transtorno psicótico",
+        "Como diagnóstico nosológico definitivo, ex.: esquizofrenia paranoide",
+        "Como diagnóstico de personalidade, ex.: transtorno borderline grave",
+        "Como diagnóstico etiológico fechado, após neuroimagem e liquor"
+      ],
+      "correctIndex": 0,
+      "explanation": "A sala de emergência lida com intenso abalo emocional e informações incompletas, então os diagnósticos são provisórios e devem ser preferencialmente sindrômicos, como transtorno psicótico ou transtorno do humor. Rótulo nosológico definitivo no primeiro contato pesa sobre o paciente e a família, e por isso exige cuidado na orientação de ambos."
+    },
+    {
+      "question": "Qual característica física da sala de atendimento ao paciente agitado é recomendada para proteger a equipe e o próprio paciente?",
+      "options": [
+        "Duas saídas, com portas que abrem para ambos os lados",
+        "Saída única, trancada por fora durante toda a entrevista",
+        "Sala pequena, com o paciente posicionado junto à porta",
+        "Objetos e mobiliário leve ao alcance, para distrair o paciente"
+      ],
+      "correctIndex": 0,
+      "explanation": "A sala deve ter duas saídas e portas que abram para ambos os lados, ser ampla, sem vidro, objetos pontiagudos ou medicamentos ao alcance, e evitar ruído e superestimulação. O profissional nunca deve ficar numa sala fechada sem saída fácil, e a equipe precisa estar alerta, com medicação oral e parenteral de acesso rápido."
+    },
+    {
+      "question": "Qual conjunto de sinais indica heteroagressividade iminente em um paciente que aguarda atendimento no pronto-socorro?",
+      "options": [
+        "Corpo inclinado para frente, hipervigilância e voz alta",
+        "Corpo encurvado, olhar baixo e fala lenta e monótona",
+        "Sonolência, discurso pausado e pedido para ficar só",
+        "Choro fácil, queixas somáticas e busca de contato físico"
+      ],
+      "correctIndex": 0,
+      "explanation": "São sinais de heteroagressividade iminente: postura inclinada para a frente, hipervigilância, atividade motora irritável, voz alta ou gritos, comentários pejorativos, olhos arregalados e comportamento exigente e tenso. Reconhecê-los permite intervir antes do ato, porque as consequências da violência não contida são imprevisíveis e podem ser irreversíveis."
+    },
+    {
+      "question": "Qual perfil reúne os fatores de risco clássicos para agitação psicomotora e heteroagressividade?",
+      "options": [
+        "Homem de 15 a 24 anos, desempregado, vítima de violência na infância",
+        "Mulher de 45 a 60 anos, empregada, com ampla rede de apoio familiar",
+        "Homem acima de 65 anos, aposentado, sem antecedente de violência",
+        "Mulher de 25 a 35 anos, casada, com alta escolaridade e emprego fixo"
+      ],
+      "correctIndex": 0,
+      "explanation": "Os fatores sociodemográficos são sexo masculino, idade de 15 a 24 anos, baixo nível socioeducacional, desemprego e falta de suporte social. Na história prévia pesam atos violentos ou homicidas, assaltos e ter sido vítima de violência na infância — o melhor preditor de violência continua sendo violência anterior."
+    },
+    {
+      "question": "Homem de 58 anos, sem antecedente psiquiátrico, chega agitado com psicose iniciada há dois dias, alucinações visuais, febre e taquicardia. O que deve ser feito primeiro?",
+      "options": [
+        "Investigar causa orgânica, como infecção ou distúrbio metabólico",
+        "Tratar como primeiro surto de esquizofrenia de início tardio",
+        "Tratar como episódio maníaco com sintomas psicóticos graves",
+        "Tratar como quadro conversivo desencadeado por estresse agudo"
+      ],
+      "correctIndex": 0,
+      "explanation": "Sintomas agudos a partir dos 45 anos, sinais vitais alterados, alucinações visuais, psicose de início recente, rebaixamento de consciência, déficit focal, convulsão, trauma craniano e intoxicação ou abstinência são sinais de alerta para quadro orgânico. Entre 5% e 30% das doenças sistêmicas se apresentam com alteração do estado mental, e por isso excluir causa orgânica é um dos objetivos obrigatórios do atendimento."
+    },
+    {
+      "question": "Paciente chega ao pronto-socorro agitado, confuso, pálido, com sudorese fria e tremor. Qual exame à beira do leito deve ser feito de imediato?",
+      "options": [
+        "Glicemia capilar, porque a hipoglicemia causa agitação",
+        "Eletroencefalograma, porque a epilepsia causa agitação",
+        "Tomografia de crânio, porque um tumor causa agitação",
+        "TSH e T4 livre, porque o hipertireoidismo causa agitação"
+      ],
+      "correctIndex": 0,
+      "explanation": "A hipoglicemia está entre as causas sintomáticas e metabólicas de agitação, e sudorese, tremor e palidez são sinais de alerta para causa orgânica. A glicemia capilar é imediata, barata e muda a conduta na hora; epilepsia, processo expansivo e hipertireoidismo também causam agitação, mas a investigação é mais lenta e vem depois."
+    },
+    {
+      "question": "Em um paciente agitado por psicose funcional, como esquizofrenia ou mania, qual é a resposta esperada ao manejo verbal e o papel do psicofármaco?",
+      "options": [
+        "Manejo verbal usualmente ineficaz; psicofármaco é a escolha",
+        "Manejo verbal com boa resposta; psicofármaco só se necessário",
+        "Manejo verbal suficiente; psicofármaco contraindicado na crise",
+        "Manejo verbal ineficaz; tratar só a doença clínica subjacente"
+      ],
+      "correctIndex": 0,
+      "explanation": "Na psicose funcional o manejo verbal costuma ser ineficaz e o psicofármaco é o tratamento de escolha; a contenção mecânica entra, se necessária, só até o efeito químico. No transtorno mental orgânico o verbal também falha, mas o foco é tratar a condição médica de base. Nos quadros não psicóticos e não orgânicos — personalidade, conversivos, dissociativos — o manejo verbal tem boa resposta."
+    },
+    {
+      "question": "Paciente com transtorno de personalidade borderline, sem psicose e sem causa orgânica, está agitado após discussão com o parceiro. Qual abordagem tende a funcionar melhor?",
+      "options": [
+        "Manejo verbal, que costuma ter boa resposta nesse grupo",
+        "Contenção mecânica imediata, antes de qualquer conversa",
+        "Antipsicótico intravenoso, pela rapidez do efeito sedativo",
+        "Investigação neurológica completa antes de qualquer conversa"
+      ],
+      "correctIndex": 0,
+      "explanation": "Nos quadros não psicóticos e não orgânicos — transtornos de personalidade, sintomas conversivos e dissociativos — o manejo verbal tem boa resposta. A contenção mecânica é decidida pelo grau de impulsividade e o psicofármaco fica para quando for necessário. Antipsicótico intravenoso não é recomendado em nenhum grupo."
+    },
+    {
+      "question": "Qual atitude é recomendada na abordagem verbal de um paciente agitado?",
+      "options": [
+        "Apresentar-se, usar frases curtas e dizer que violência não será aceita",
+        "Aproximar-se pelas costas, para que o paciente não se sinta encarado",
+        "Confrontar as ideias delirantes, para restaurar o juízo de realidade",
+        "Manter contato físico próximo, para transmitir segurança e controle"
+      ],
+      "correctIndex": 0,
+      "explanation": "O profissional se apresenta, explica o que está fazendo com palavras fáceis e frases curtas, mantém distância sem invadir o espaço do paciente, nunca se aproxima pelas costas nem fica de costas para ele, não confronta, adota expressão neutra, voz baixa e postura relaxada, coloca limites dizendo que a violência não será permitida e estimula a expressão verbal de sentimentos e medos."
+    },
+    {
+      "question": "Quais condições legitimam a contenção física de um paciente agitado?",
+      "options": [
+        "Prevenir dano iminente, pelo tempo mínimo e com registro no prontuário",
+        "Punir a agressão, por tempo combinado e com registro no livro da equipe",
+        "Prevenir fuga, por até 24 horas e com autorização verbal da família",
+        "Facilitar exames, por tempo indefinido e sem necessidade de registro"
+      ],
+      "correctIndex": 0,
+      "explanation": "A contenção física é procedimento médico, indicado após falha da abordagem verbal, e deve ser acompanhada diretamente pela enfermagem durante todo o tempo. Só é legítima como meio mais disponível de prevenir dano imediato ou iminente ao paciente ou a outros, restrita ao período estritamente necessário, com razões, natureza e extensão registradas no prontuário e sob supervisão permanente. Celas-fortes e camisas de força são vedadas."
+    },
+    {
+      "question": "Qual princípio orienta a tranquilização rápida, a chamada contenção química, do paciente agitado?",
+      "options": [
+        "Preferir a via oral, evitar a intravenosa e monitorar antes e depois",
+        "Preferir a intravenosa, pela rapidez, e monitorar só após a dose",
+        "Medicar logo na chegada, antes de qualquer tentativa de diálogo",
+        "Associar sempre dois sedativos, para garantir sono profundo e rápido"
+      ],
+      "correctIndex": 0,
+      "explanation": "O tratamento farmacológico está indicado apenas quando outras abordagens falharam; a escolha é guiada pela causa da agitação, pelos efeitos colaterais e pelas contraindicações; a via oral é preferencial, a intramuscular é a alternativa quando o paciente não aceita, a intravenosa deve ser evitada e todos os pacientes são monitorados antes e depois da medicação."
+    },
+    {
+      "question": "Qual associação intramuscular tem uso bem estabelecido na tranquilização rápida do paciente psicótico agitado?",
+      "options": [
+        "Haloperidol 5 mg com prometazina, uma ampola",
+        "Haloperidol 5 mg com olanzapina 10 mg, juntos",
+        "Clorpromazina 25 mg com diazepam 10 mg, juntos",
+        "Droperidol 5 mg com midazolam 15 mg, por via IV"
+      ],
+      "correctIndex": 0,
+      "explanation": "O haloperidol 5 mg IM tem uso bem estabelecido, em monoterapia ou associado à prometazina — uma ampola, que contém 50 mg —, cujo efeito anti-histamínico e anticolinérgico soma sedação e reduz a síndrome extrapiramidal. Dois antipsicóticos juntos não são recomendados, a clorpromazina injetável e o droperidol não são recomendados, o diazepam IM tem absorção errática e o droperidol não deve ser associado a benzodiazepínico."
+    },
+    {
+      "question": "Por que a via intravenosa do haloperidol não é recomendada na tranquilização rápida?",
+      "options": [
+        "Amplifica a síndrome extrapiramidal e o risco de prolongar o QT",
+        "Reduz o efeito sedativo e exige o dobro da dose intramuscular",
+        "Causa depressão respiratória grave, semelhante à dos opioides",
+        "Provoca necrose tecidual local pela alta osmolaridade da solução"
+      ],
+      "correctIndex": 0,
+      "explanation": "A via intravenosa amplifica os efeitos colaterais do haloperidol, especialmente a síndrome extrapiramidal e a cardiotoxicidade, com prolongamento do intervalo QT. Se for inevitável, a dose deve ser limitada e o paciente precisa de monitorização cardíaca; na tranquilização rápida o haloperidol vai por via intramuscular."
+    },
+    {
+      "question": "Por que a clorpromazina injetável não é recomendada na contenção química do paciente agitado?",
+      "options": [
+        "Causa hipotensão grave e súbita e reduz o limiar convulsivo",
+        "Tem início de ação lento, superior a doze horas após a dose",
+        "Provoca distonia aguda em praticamente todos os pacientes",
+        "Exige ajuste pela função renal e dosagem do nível sérico"
+      ],
+      "correctIndex": 0,
+      "explanation": "A clorpromazina (25 mg, até 300 mg/dia) causa hipotensão grave e súbita, reduz o limiar convulsivo, podendo precipitar estado de mal epiléptico, e tem efeito quinidina-like das fenotiazinas, com risco de síncope cardíaca. Por isso o uso não é recomendado. Distonia é mais típica dos antipsicóticos de alta potência, como o haloperidol."
+    },
+    {
+      "question": "Segundo a tabela de medicações para agitação, qual é a dose máxima em 24 horas da ziprasidona intramuscular e como ela pode ser repetida?",
+      "options": [
+        "40 mg/dia, em 10 mg a cada 2 h ou 20 mg a cada 4 h",
+        "20 mg/dia, em 10 mg a cada 4 h ou 20 mg em dose única",
+        "30 mg/dia, em 10 mg a cada 6 h ou 15 mg a cada 8 h",
+        "80 mg/dia, em 20 mg a cada 2 h ou 40 mg a cada 6 h"
+      ],
+      "correctIndex": 0,
+      "explanation": "A ziprasidona IM é feita em 10 a 20 mg, com pico em cerca de 15 minutos, podendo repetir 10 mg a cada 2 horas ou 20 mg a cada 4 horas, até 40 mg por dia e por no máximo três dias consecutivos. Na mesma tabela, a olanzapina IM vai a 10 mg com máximo de 30 mg/dia e o haloperidol IM a 5 mg com máximo de 20 mg/dia.",
+      "image": "s35i1",
+      "imageCaption": "Medicações recomendadas no tratamento da agitação (AAEP, Projeto BETA)"
+    },
+    {
+      "question": "Um paciente embriagado, com hálito etílico e fala pastosa, está agitado no pronto-socorro. Por que se evita benzodiazepínico nesse momento?",
+      "options": [
+        "Soma-se ao álcool na depressão do SNC e da respiração",
+        "Precipita abstinência alcoólica grave em poucas horas",
+        "Tem absorção nula enquanto houver álcool no estômago",
+        "Provoca hipertermia e rigidez quando associado ao etanol"
+      ],
+      "correctIndex": 0,
+      "explanation": "Benzodiazepínicos não devem ser usados em quem usou depressores do sistema nervoso central, como o álcool, porque os efeitos se somam e o risco é depressão respiratória e parada cardiorrespiratória. O cenário oposto, a abstinência alcoólica, é justamente onde o benzodiazepínico é o tratamento de escolha — intoxicação e abstinência não se tratam da mesma forma."
+    },
+    {
+      "question": "Após doses repetidas de haloperidol IM, um paciente evolui com confusão, rigidez muscular generalizada, febre de 40 °C e pressão arterial instável. Qual é o diagnóstico?",
+      "options": [
+        "Síndrome neuroléptica maligna",
+        "Distonia aguda generalizada",
+        "Acatisia induzida por neuroléptico",
+        "Síndrome anticolinérgica central"
+      ],
+      "correctIndex": 0,
+      "explanation": "A síndrome neuroléptica maligna reúne estado mental alterado, rigidez muscular, hipertermia e hiperatividade autonômica, com quadro clínico semelhante à hipertermia maligna, e é emergência médica. Distonia e acatisia não dão febre alta nem instabilidade autonômica, e a síndrome anticolinérgica cursa com pele seca e midríase, sem rigidez em cano de chumbo."
+    },
+    {
+      "question": "Homem de 20 anos, horas após receber haloperidol IM, apresenta torcicolo doloroso e desvio dos olhos para cima. Qual é a conduta?",
+      "options": [
+        "Biperideno parenteral, um antiparkinsoniano anticolinérgico",
+        "Nova dose de haloperidol, para sedar e aliviar o espasmo",
+        "Dantroleno intravenoso e resfriamento corporal imediato",
+        "Clorpromazina intramuscular, para relaxar a musculatura"
+      ],
+      "correctIndex": 0,
+      "explanation": "É distonia aguda, que ocorre em 10% a 30% dos pacientes, geralmente nas primeiras 24 horas, e chega a cerca de 50% em homens jovens. O tratamento é o antiparkinsoniano anticolinérgico biperideno; mais antipsicótico agrava o quadro, e dantroleno com resfriamento é medida da síndrome neuroléptica maligna."
+    },
+    {
+      "question": "Depois de uma dose suplementar de neuroléptico, o paciente fica inquieto, não consegue permanecer sentado e anda de um lado para o outro. Qual efeito extrapiramidal explica o quadro?",
+      "options": [
+        "Acatisia, que pode ser confundida com piora da agitação",
+        "Discinesia tardia, que surge já nas primeiras horas",
+        "Parkinsonismo, que se manifesta por inquietação motora",
+        "Distonia aguda, que se manifesta como agitação motora"
+      ],
+      "correctIndex": 0,
+      "explanation": "A acatisia é a inquietação motora subjetiva e objetiva que pode aparecer com a dose suplementar de neuroléptico. O risco é interpretá-la como piora da agitação e repetir o antipsicótico, piorando o efeito; benzodiazepínico oral melhora a acatisia. Discinesia tardia é efeito de uso prolongado, e parkinsonismo cursa com rigidez e bradicinesia."
+    },
+    {
+      "question": "Qual conjunto de achados traduz a hiperatividade autonômica da síndrome de abstinência alcoólica?",
+      "options": [
+        "Taquicardia, hipertensão, sudorese, tremor e febre",
+        "Bradicardia, hipotensão, miose, pele seca e fria",
+        "Hipotermia, bradipneia, sonolência e hiporreflexia",
+        "Bradicardia, hipertensão, ptose e salivação intensa"
+      ],
+      "correctIndex": 0,
+      "explanation": "O excesso de atividade autonômica da abstinência alcoólica se manifesta por taquicardia, hipertensão, diaforese, tremores, febre e alcalose respiratória. Completam o quadro as perturbações do sono — insônia de latência, aumento do sono REM e redução do sono profundo — e os sintomas gastrintestinais: anorexia, náusea e vômitos."
+    },
+    {
+      "question": "Qual mecanismo neuroquímico explica a hiperexcitabilidade do sistema nervoso na abstinência alcoólica?",
+      "options": [
+        "Queda do tônus GABAérgico com glutamato hiperativo",
+        "Excesso de GABA com bloqueio do receptor de glutamato",
+        "Excesso de serotonina com depleção aguda de dopamina",
+        "Queda de acetilcolina com excesso de histamina central"
+      ],
+      "correctIndex": 0,
+      "explanation": "O álcool potencializa o GABA nos receptores GABA-A e inibe o glutamato; com o uso crônico o cérebro se adapta, reduzindo a resposta GABAérgica e aumentando a glutamatérgica. Na retirada abrupta sobra excitação sem freio, o que explica tremor, hiperatividade autonômica, convulsão e delirium — e por que o benzodiazepínico, agonista GABA-A, é o tratamento."
+    },
+    {
+      "question": "Paciente etilista internado para cirurgia apresenta, no terceiro dia sem beber, confusão, tremor, febre, agitação e alucinações visuais. Qual é o eixo do tratamento?",
+      "options": [
+        "Benzodiazepínico, como diazepam, com suporte em UTI",
+        "Haloperidol isolado, por se tratar de surto psicótico",
+        "Betabloqueador isolado, para tremor e taquicardia",
+        "Clonidina isolada, por ser só hiperatividade simpática"
+      ],
+      "correctIndex": 0,
+      "explanation": "É delirium tremens: delirium somado à síndrome de abstinência alcoólica, complicação tardia que surge após 48 horas de abstinência, com confusão, agitação, tremor, febre, ideação paranoide e alucinações visuais. O tratamento combina medidas gerais de delirium, UTI e benzodiazepínico (diazepam); haloperidol entra como adjuvante para alucinações, e betabloqueador e clonidina como adjuvantes para a hiperatividade simpática, nunca isolados.",
+      "image": "s39i1",
+      "imageCaption": "Delirium tremens: definição, sintomas e tratamento"
+    },
+    {
+      "question": "Entre os pacientes que desenvolvem síndrome de abstinência alcoólica, que fração evolui para delirium tremens?",
+      "options": [
+        "Cerca de 5% a 10%",
+        "Cerca de 40% a 50%",
+        "Cerca de 20% a 30%",
+        "Cerca de 0,1% a 1%"
+      ],
+      "correctIndex": 0,
+      "explanation": "Menos de 50% dos dependentes de álcool desenvolvem síndrome de abstinência, e 5% a 10% desses evoluem para delirium tremens. A mortalidade descrita chega a 5% a 25%, por disfunção respiratória e arritmias ligadas às alterações metabólicas — é emergência médica, com risco de vida e atendimento conjunto do clínico e do psiquiatra."
+    },
+    {
+      "question": "Como a tentativa de suicídio deve ser notificada no sistema de saúde brasileiro?",
+      "options": [
+        "Notificação compulsória imediata, em até 24 horas",
+        "Notificação compulsória semanal, só se houver óbito",
+        "Notificação facultativa, a critério da família",
+        "Notificação mensal, feita apenas pela psiquiatria"
+      ],
+      "correctIndex": 0,
+      "explanation": "Desde a Portaria nº 1.271, de 6 de junho de 2014, a tentativa de suicídio é agravo de notificação compulsória imediata, a ser comunicada em até 24 horas à vigilância municipal, por qualquer serviço que atenda o caso. A notificação não depende de óbito nem de autorização da família."
+    },
+    {
+      "question": "Pela escala de avaliação e conduta no risco de suicídio da OMS, qual é a conduta para o paciente com ideias de suicídio, transtorno mental, agitação e tentativa prévia?",
+      "options": [
+        "Hospitalizar, sem deixar o paciente sozinho",
+        "Ouvir com empatia e indagar sobre a ideação",
+        "Investigar as possibilidades de apoio social",
+        "Encaminhar para seguimento ambulatorial"
+      ],
+      "correctIndex": 0,
+      "explanation": "É o risco 6, o mais alto da escala: ideias de suicídio com transtorno mental ou estressor social grave, ou com agitação e tentativa prévia. A conduta é hospitalizar e não deixar o paciente sozinho, para impedir o acesso a meios. O risco 5 (ideias com transtorno mental ou estressor grave) pede investigar plano e método, firmar um contrato e encaminhar a cuidados psiquiátricos; os riscos 1 a 4 se manejam ouvindo com empatia e investigando ideação e intenção.",
+      "image": "s43i1",
+      "imageCaption": "Escala de avaliação e conduta no risco de suicídio (OMS)"
+    },
+    {
+      "question": "Pelo módulo de suicídio do M.I.N.I., paciente que no último mês desejou estar morto, quis fazer mal a si mesmo e pensou em suicídio, sem plano, sem tentativa e sem tentativa prévia na vida, tem qual risco e conduta?",
+      "options": [
+        "Moderado, 9 pontos: intervenção psiquiátrica e aviso à família",
+        "Baixo, 5 pontos: trabalhar os sentimentos suicidas na conversa",
+        "Alto, 12 pontos: internação psiquiátrica imediata obrigatória",
+        "Baixo, 3 pontos: alta com retorno ambulatorial em seis meses"
+      ],
+      "correctIndex": 0,
+      "explanation": "A pontuação é 1 (desejou estar morto) + 2 (quis fazer mal a si) + 6 (pensou em suicídio) = 9, risco moderado (6 a 9 pontos): indica-se intervenção psiquiátrica e comunicar a família. Baixo risco (1 a 5) pede trabalhar os sentimentos suicidas conversando; alto risco (10 ou mais) é emergência, com internação psiquiátrica imediata. Pensar numa maneira de se matar ou tentar no último mês valem 10 pontos cada; tentativa ao longo da vida vale 4.",
+      "image": "s44i1",
+      "imageCaption": "Módulo de risco de suicídio do M.I.N.I. e pontuação"
+    },
+    {
+      "question": "Ao investigar risco de suicídio, como as perguntas da entrevista devem ser encadeadas?",
+      "options": [
+        "Do sofrimento geral à ideia de morte, ao plano e às tentativas",
+        "Da tentativa prévia ao plano, e só no final ao sofrimento atual",
+        "Do método escolhido direto à data planejada para a tentativa",
+        "Só sobre o sofrimento, evitando citar a palavra suicídio"
+      ],
+      "correctIndex": 0,
+      "explanation": "O roteiro parte do geral para o específico: problemas enfrentados, perda de sentido da vida, pensar que seria melhor morrer, pensar em pôr fim à vida, pensar em como se mataria, tentativa ou preparativo, e por fim se há esperança de ser ajudado. Perguntar diretamente sobre suicídio não induz o ato; evitar o tema é o que deixa o risco sem avaliação.",
+      "image": "s41i1",
+      "imageCaption": "Roteiro de entrevista para risco de suicídio"
+    },
+    {
+      "question": "Qual paciente reúne mais fatores sociodemográficos de risco para suicídio?",
+      "options": [
+        "Homem de 78 anos, separado, aposentado e socialmente isolado",
+        "Mulher de 45 anos, casada, empregada e com boa rede de apoio",
+        "Mulher de 50 anos, casada, moradora de zona rural e ativa",
+        "Homem de 45 anos, casado, empregado e com filhos pequenos"
+      ],
+      "correctIndex": 0,
+      "explanation": "São fatores sociodemográficos de risco: sexo masculino, idade entre 15 e 35 anos ou acima de 75 anos, estratos econômicos extremos, residência urbana, desemprego (sobretudo perda recente), aposentadoria, isolamento social, estado de solteiro ou separado e migração. Somam-se fatores psicológicos, como perdas recentes e datas significativas, e condições clínicas incapacitantes, como dor crônica, epilepsia, trauma medular, neoplasia e AIDS."
+    },
+    {
+      "question": "Paciente atendido após tentativa de suicídio por ingestão de benzodiazepínicos com álcool, ainda sonolento, nega intenção suicida e pede alta. Qual é a conduta?",
+      "options": [
+        "Manter internado até a consciência permitir reavaliar o risco",
+        "Dar alta, pois a negativa da intenção encerra a avaliação",
+        "Dar alta com encaminhamento à unidade básica em trinta dias",
+        "Liberar com a família, mediante termo de responsabilidade"
+      ],
+      "correctIndex": 0,
+      "explanation": "Fator que interfere com o nível de consciência ou o juízo crítico, como intoxicação por álcool ou drogas ou delirium, impossibilita a avaliação na emergência e é indicação de internação. Também indicam internar: alto risco de suicídio, pouco suporte familiar, exaustão da família, tentativas progressivamente mais graves, recusa de planos futuros, incongruência entre o relato do paciente e o de fonte confiável e síndrome psicótica.",
+      "image": "s45i1",
+      "imageCaption": "Indicações de internação em ideação ou tentativa de suicídio"
+    }
+  ]
+}

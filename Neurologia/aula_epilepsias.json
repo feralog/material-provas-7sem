@@ -1,0 +1,338 @@
+{
+  "titulo": "Epilepsias",
+  "eyebrow": "Neurologia · Epilepsia",
+  "subtitulo": "Da crise isolada ao estado de mal: classificar, investigar e tratar",
+  "intro": "Crise × epilepsia, classificação das crises (1981, 2001 e ILAE 2017), semiologia por lobo, síndromes, EEG e neuroimagem, escolha do antiepiléptico, estado de mal epiléptico, SUDEP e cirurgia da epilepsia refratária.",
+  "questoes": [
+    {
+      "question": "Um homem de 45 anos, etilista, teve duas crises tônico-clônicas generalizadas no último ano, ambas nas primeiras 48 horas após interromper a ingestão de álcool. Exame neurológico e imagem são normais. Como classificar o quadro?",
+      "options": [
+        "Crises provocadas por abstinência, que não configuram epilepsia",
+        "Epilepsia, por somar duas crises em menos de doze meses",
+        "Epilepsia focal sintomática, por provável lesão alcoólica",
+        "Epilepsia generalizada idiopática de início tardio no adulto"
+      ],
+      "correctIndex": 0,
+      "explanation": "Crises desencadeadas por insulto agudo — febre, ingestão de álcool, intoxicação por drogas ou abstinência — são crises provocadas (sintomáticas agudas) e não entram na contagem para o diagnóstico de epilepsia. O critério clássico exige duas ou mais crises em 12 meses sem evidência de insulto agudo; a definição atual da ILAE fala em duas crises não provocadas separadas por mais de 24 horas."
+    },
+    {
+      "question": "Pela definição prática de epilepsia da ILAE (2014), em qual situação o diagnóstico pode ser feito já após uma única crise não provocada?",
+      "options": [
+        "Quando o risco de nova crise em dez anos é de pelo menos 60%",
+        "Quando a crise dura mais de cinco minutos sem recuperação",
+        "Quando a crise ocorre durante o sono, sem testemunhas",
+        "Quando há mordedura de língua e liberação esfincteriana"
+      ],
+      "correctIndex": 0,
+      "explanation": "A ILAE 2014 aceita três critérios: duas crises não provocadas (ou reflexas) separadas por mais de 24 horas; uma crise não provocada com probabilidade de recorrência de pelo menos 60% nos dez anos seguintes — por exemplo, com lesão estrutural na imagem ou atividade epileptiforme no EEG; ou o diagnóstico de uma síndrome epiléptica. Duração, horário e sinais da crise não substituem o risco de recorrência."
+    },
+    {
+      "question": "Nos países em desenvolvimento, a curva de incidência da epilepsia por idade difere da dos países desenvolvidos. Qual é o padrão e o que o explica?",
+      "options": [
+        "Pico em adultos jovens, por infecções, parasitoses e traumatismos cranianos",
+        "Pico em idosos, por doença cerebrovascular e processos degenerativos",
+        "Pico em lactentes, por distúrbios do desenvolvimento e causas genéticas",
+        "Pico em adolescentes, por epilepsias idiopáticas de suscetibilidade genética"
+      ],
+      "correctIndex": 0,
+      "explanation": "Nos países desenvolvidos a incidência predomina em crianças (distúrbios do desenvolvimento, epilepsias idiopáticas) e em idosos (processos degenerativos e vasculares). Nos países em desenvolvimento o pico se desloca para adultos jovens, porque causas infecciosas e parasitárias e os traumatismos cranioencefálicos respondem por porcentagem significativa dos casos."
+    },
+    {
+      "question": "Por que a consciência é comprometida nas crises generalizadas, mas pode permanecer preservada em crises focais?",
+      "options": [
+        "Nas generalizadas o sistema reticular ativador ascendente é atingido desde o início",
+        "Nas generalizadas a descarga se restringe ao córtex frontal dos dois hemisférios",
+        "Nas focais a descarga não ultrapassa 6 cm² e por isso não altera a vigília",
+        "Nas focais o glutamato é liberado em menor quantidade e não chega ao tálamo"
+      ],
+      "correctIndex": 0,
+      "explanation": "A consciência se perde quando o processo epiléptico atinge o sistema reticular ativador ascendente, na sua origem no tronco encefálico ou nas suas projeções difusas. As crises generalizadas envolvem circuitos talâmicos e acometem esse sistema precocemente; nas focais, se ele é poupado, o paciente se mantém consciente. A exceção entre as generalizadas são as mioclônicas, tão breves que a consciência é provavelmente preservada."
+    },
+    {
+      "question": "Na classificação de 1981, o que separa a crise parcial simples da parcial complexa, e como elas são chamadas na terminologia da ILAE de 2017?",
+      "options": [
+        "Preservação da consciência; hoje, focal perceptiva e focal disperceptiva",
+        "Presença de automatismos; hoje, focal motora e focal não motora",
+        "Propagação contralateral; hoje, focal e focal para bilateral",
+        "Presença de aura; hoje, focal sensorial e focal experiencial"
+      ],
+      "correctIndex": 0,
+      "explanation": "Na classificação de 1981, a crise parcial simples cursa com consciência preservada e a parcial complexa com consciência comprometida. A ILAE 2017 troca 'consciência' por 'percepção': crise focal perceptiva (antiga simples) e crise focal com comprometimento da percepção, ou disperceptiva (antiga complexa). A secundariamente generalizada passou a se chamar focal evoluindo para tônico-clônica bilateral."
+    },
+    {
+      "question": "Menina de 7 anos tem episódios de olhar parado com piscamento, de cerca de 10 segundos, com início e fim abruptos, várias vezes ao dia. Que manobra e que achado de EEG confirmam a principal hipótese?",
+      "options": [
+        "Hiperventilação provocando espícula-onda generalizada a 3/s",
+        "Fotoestimulação provocando ponta-onda lenta difusa a 2/s",
+        "Privação de sono revelando pontas centrotemporais isoladas",
+        "Hiperventilação provocando ritmo rápido generalizado a 20 Hz"
+      ],
+      "correctIndex": 0,
+      "explanation": "A ausência típica dura cerca de 10 a 30 segundos, com início e fim abruptos, automatismos discretos e várias crises por dia. A hiperventilação é ativador tão potente que não reproduzir a crise em 3 a 5 minutos de hiperpneia põe o diagnóstico em dúvida. O EEG ictal mostra complexos de espícula-onda a 3/s, bilaterais e síncronos. Ponta-onda lenta abaixo de 2,5/s é da ausência atípica; ritmo rápido de 20 Hz, da crise tônica."
+    },
+    {
+      "question": "Comparada à ausência típica, qual conjunto de características define a crise de ausência atípica?",
+      "options": [
+        "Início e fim graduais, tono alterado e ponta-onda lenta de 1,5 a 2,5/s",
+        "Início e fim abruptos, tono normal e espícula-onda ritmada a 3/s",
+        "Início abrupto, desencadeada por hiperpneia e polispícula-onda a 6/s",
+        "Início gradual, consciência preservada e ritmo de 10 Hz bilateral"
+      ],
+      "correctIndex": 0,
+      "explanation": "Na ausência atípica o comprometimento da consciência é menor, o início e o término são menos abruptos e o tono muscular costuma estar alterado. Ela não é desencadeada pela hiperpneia, e o EEG mostra complexos de ponta-onda lenta a 1,5–2,5/s, irregulares, às vezes assimétricos. É a ausência das encefalopatias epilépticas, como a síndrome de Lennox-Gastaut."
+    },
+    {
+      "question": "Lactente de 6 meses apresenta contrações rápidas em flexão de pescoço, tronco e membros, em salvas, ao despertar, seguidas de choro; a família achava que eram cólicas. Qual padrão interictal de EEG é esperado?",
+      "options": [
+        "Hipsarritmia, com ondas lentas amplas e espículas sem organização",
+        "Espícula-onda generalizada a 3/s, com início e fim abruptos",
+        "Pontas centrotemporais ativadas pelo sono, com ritmo de base normal",
+        "Polispícula-onda generalizada desencadeada por fotoestimulação"
+      ],
+      "correctIndex": 0,
+      "explanation": "São espasmos epilépticos: contração tônica rápida de 1 a 15 segundos, em flexão ou extensão, em salvas, sobretudo ao despertar e na sonolência. No lactente vêm com choro e, quando não presenciados pelo médico, são confundidos com cólica — atraso que compromete o prognóstico. O EEG interictal mostra hipsarritmia: ondas lentas de grande amplitude, espículas e ondas agudas sem organização espacial nem temporal. Espasmos, hipsarritmia e regressão do desenvolvimento formam a síndrome de West."
+    },
+    {
+      "question": "Entre os antiepilépticos introduzidos como terapia de adição (vigabatrina, lamotrigina, topiramato e gabapentina), qual é considerado a primeira escolha para o tratamento dos espasmos epilépticos?",
+      "options": [
+        "Vigabatrina",
+        "Gabapentina",
+        "Lamotrigina",
+        "Topiramato"
+      ],
+      "correctIndex": 0,
+      "explanation": "Essas drogas entraram como terapia de adição, mas algumas têm efeito em síndromes específicas: a vigabatrina é a primeira escolha para os espasmos — preferida sobretudo quando a causa é esclerose tuberosa, com ACTH ou corticoide como alternativa. A lamotrigina é alternativa nas crises generalizadas, isolada ou associada ao valproato, e o topiramato, por múltiplos mecanismos, tem amplo espectro."
+    },
+    {
+      "question": "Adolescente de 15 anos derruba objetos pela manhã por abalos súbitos dos braços, piores após noites mal dormidas, e teve uma crise tônico-clônica depois de uma festa. Que achado do EEG é esperado?",
+      "options": [
+        "Polispícula-onda generalizada, frequentemente desencadeada por fotoestimulação",
+        "Espícula-onda a 3/s restrita às regiões temporais, ativada pela hiperpneia",
+        "Ponta-onda lenta a 2/s com ritmo rápido paroxístico durante o sono",
+        "Atividade rítmica focal no eletrodo esfenoidal no início dos abalos"
+      ],
+      "correctIndex": 0,
+      "explanation": "Crises mioclônicas são abalos breves, tipo choque, que ocorrem após privação de sono, ao despertar ou ao adormecer; o EEG mostra surtos de polispícula-onda ou espícula-onda bilaterais e síncronos, frequentemente desencadeados pela fotoestimulação intermitente. O quadro — mioclonias matinais e tônico-clônica na adolescência — é a epilepsia mioclônica juvenil, tratada com valproato; carbamazepina e fenitoína podem agravar as mioclonias."
+    },
+    {
+      "question": "Durante uma crise tônico-clônica generalizada, o paciente emite um grito logo no início. Qual a origem desse grito epiléptico?",
+      "options": [
+        "Ar expulso pela glote fechada durante a contração tônica",
+        "Ativação da área motora suplementar com vocalização",
+        "Aura auditiva percebida antes da perda de consciência",
+        "Laringoespasmo reflexo durante a fase clônica tardia"
+      ],
+      "correctIndex": 0,
+      "explanation": "Na crise tônico-clônica (grande mal) há perda abrupta de consciência, contração tônica e depois clônica dos quatro membros, apneia, liberação esfincteriana, sialorreia e mordedura de língua, por cerca de um minuto. Na fase tônica o ar é expulso pela glote fechada — é o grito epiléptico. O EEG mostra ritmo a 10 Hz na fase tônica e polispícula-onda lenta na clônica; o pós-ictal tem confusão e sonolência."
+    },
+    {
+      "question": "Qual é a manifestação focal mais frequente das crises da porção mesial do lobo temporal (amígdala e hipocampo)?",
+      "options": [
+        "Sensação epigástrica ascendente pela região retroesternal",
+        "Parestesias da face e do braço com marcha jacksoniana",
+        "Alucinações visuais elementares, como luzes coloridas",
+        "Postura tônica assimétrica com o olhar voltado à mão"
+      ],
+      "correctIndex": 0,
+      "explanation": "Nas crises temporais mesiais, a sensação epigástrica ascendente — mal-estar de difícil caracterização que sobe pela região retroesternal — é a manifestação mais frequente. Somam-se sintomas autonômicos (midríase, palidez, sudorese, taquicardia) e psíquicos (déjà vu, jamais vu, estados de sonho, medo). Parestesias com marcha jacksoniana são parietais; luzes coloridas, occipitais; postura tônica olhando a mão, da área motora suplementar."
+    },
+    {
+      "question": "Um paciente descreve, no início das crises, um cheiro forte de borracha queimada que ninguém mais à sua volta sente. Que região está envolvida?",
+      "options": [
+        "Amígdala e uncus, configurando as crises uncinadas",
+        "Giro temporal superior, na área auditiva primária",
+        "Transição têmporo-occipital, no córtex visual associativo",
+        "Opérculo frontal, região das alucinações gustativas"
+      ],
+      "correctIndex": 0,
+      "explanation": "Alucinações e ilusões olfatórias se associam a descargas na região amigdaliana e no uncus — são as crises uncinadas. As auditivas sugerem o giro temporal superior, e as visuais, a transição têmporo-occipital. Alucinações gustativas, com mastigação e salivação, apontam para o opérculo frontal."
+    },
+    {
+      "question": "Durante uma crise temporal, o paciente apresenta postura distônica da mão direita e, após a crise, tem dificuldade para nomear objetos. Para onde esses sinais apontam?",
+      "options": [
+        "Lobo temporal esquerdo: distonia contralateral e disfasia do dominante",
+        "Lobo temporal direito: distonia ipsilateral e disfasia do não dominante",
+        "Lobo temporal direito: distonia contralateral e disfasia do não dominante",
+        "Lobo temporal esquerdo: distonia ipsilateral e disfasia do não dominante"
+      ],
+      "correctIndex": 0,
+      "explanation": "A postura distônica — flexão do antebraço e postura não natural da mão — é sempre contralateral ao lobo epileptogênico, por propagação das descargas ao estriado e pálido límbicos: mão direita aponta para o lobo esquerdo. A disfasia pós-ictal implica o hemisfério dominante (em geral, o esquerdo), enquanto emitir palavras durante os automatismos sugere o não dominante."
+    },
+    {
+      "question": "Homem de 25 anos tem várias crises por noite, de 20 a 30 segundos, com início e fim abruptos, pedalar, debater-se e grunhidos, e retoma o contato logo depois. O EEG de superfície é normal, e as crises são idênticas entre si. Qual a hipótese mais provável?",
+      "options": [
+        "Epilepsia do lobo frontal com crises hipercinéticas",
+        "Crises não epilépticas psicogênicas, pelo EEG normal",
+        "Epilepsia temporal mesial com automatismos complexos",
+        "Terror noturno, por ocorrer exclusivamente no sono"
+      ],
+      "correctIndex": 0,
+      "explanation": "Crises frontais têm início e término abruptos, curta duração, ocorrência frequente (várias por noite, com predomínio no sono), confusão pós-crítica breve e automatismos motores importantes — debater-se, pedalar, chutar — com vocalização primitiva. Pelo aspecto bizarro e pelo EEG de superfície normal ou tomado por artefato, são confundidas com crises psicogênicas e distúrbios do sono; a estereotipia das crises é o que ajuda a separá-las."
+    },
+    {
+      "question": "Durante o sono, uma paciente apresenta flexão do cotovelo esquerdo a 90°, abdução e rotação externa do ombro, com os olhos desviados como se olhasse para a mão, e responde ao chamado durante todo o episódio. Qual a origem mais provável?",
+      "options": [
+        "Área motora suplementar do lobo frontal direito",
+        "Córtex motor primário do lobo frontal esquerdo",
+        "Porção mesial do lobo temporal direito, no hipocampo",
+        "Lóbulo paracentral do hemisfério não dominante"
+      ],
+      "correctIndex": 0,
+      "explanation": "É a postura tônica assimétrica da área motora suplementar: flexão do cotovelo e abdução do ombro a cerca de 90° com rotação externa, enquanto os olhos se desviam 'para a mão' — no membro contralateral à área epileptogênica (membro esquerdo, AMS direita) e com consciência preservada. Essas crises são breves (10 a 40 s), sem confusão pós-crítica, e ocorrem predominantemente à noite."
+    },
+    {
+      "question": "Durante as crises, um paciente vê luzes coloridas que surgem no hemicampo visual esquerdo e se deslocam através dele, seguidas de nistagmo. Qual a origem e qual o sentido do componente rápido do nistagmo?",
+      "options": [
+        "Lobo occipital direito; componente rápido para a esquerda",
+        "Lobo occipital esquerdo; componente rápido para a esquerda",
+        "Lobo temporal direito; componente rápido para a direita",
+        "Lobo parietal esquerdo; componente rápido para a direita"
+      ],
+      "correctIndex": 0,
+      "explanation": "Crises occipitais se caracterizam por alucinações elementares — luzes, cores —, frequentemente limitadas a um hemicampo e em movimento através dele; o hemicampo esquerdo corresponde ao córtex occipital direito. O nistagmo epiléptico tem componente rápido contralateral ao lobo epileptogênico, portanto para a esquerda. Alucinações complexas e ilusões como micro e macropsia também podem ocorrer."
+    },
+    {
+      "question": "Criança com crises de riso imotivado, estereotipado e inapropriado. Qual lesão estrutural se associa classicamente a essas crises gelásticas?",
+      "options": [
+        "Hamartoma hipotalâmico",
+        "Esclerose mesial temporal",
+        "Displasia cortical occipital",
+        "Tumor da fossa posterior"
+      ],
+      "correctIndex": 0,
+      "explanation": "Nas crises gelásticas o riso, de caráter incomum, estereotipado e inapropriado, é o fenômeno mais importante das manifestações críticas. Classicamente se associam aos hamartomas hipotalâmicos, mas também podem ocorrer em epilepsias dos lobos frontal ou temporal."
+    },
+    {
+      "question": "Jovem com história típica de crise tônico-clônica tem um EEG de rotina em vigília normal. Qual a interpretação e a conduta adequadas?",
+      "options": [
+        "Não exclui epilepsia; repetir em vigília e sono, após privação, com ativação",
+        "Exclui epilepsia ativa; investigar síncope e crise psicogênica como causas",
+        "Não exclui epilepsia; o próximo passo obrigatório é o PET cerebral interictal",
+        "Exclui epilepsia generalizada; resta investigar apenas uma epilepsia focal"
+      ],
+      "correctIndex": 0,
+      "explanation": "O EEG é essencial, mas não imprescindível: o diagnóstico de epilepsia é clínico. Cerca de 30 a 40% das pessoas com epilepsia têm o primeiro EEG em vigília normal, mas mais de 90% mostram anormalidade quando se fazem vários traçados, em vigília, sonolência e sono, de preferência após privação de sono, com hiperventilação e fotoestimulação intermitente."
+    },
+    {
+      "question": "Na ressonância magnética de um paciente com epilepsia do lobo temporal refratária, qual achado caracteriza a esclerose mesial temporal?",
+      "options": [
+        "Redução volumétrica do hipocampo, com perda da estrutura interna e hipersinal em T2",
+        "Espessamento cortical, com borramento da transição entre substância cinzenta e branca",
+        "Aumento volumétrico do hipocampo, com hipossinal em T2 e realce após o gadolínio",
+        "Lesão calcificada no lobo temporal, com edema perilesional e efeito de massa"
+      ],
+      "correctIndex": 0,
+      "explanation": "A esclerose mesial temporal, lesão mais comum na epilepsia do lobo temporal, aparece como redução volumétrica e perda da estrutura interna do hipocampo e/ou amígdala em T1 e aumento de sinal em T2 e FLAIR. Espessamento cortical com borramento da transição cinzenta–branca é o padrão da displasia cortical focal. A RM deve ser programada após a correlação eletroclínica, com protocolo dirigido."
+    },
+    {
+      "question": "Na investigação pré-cirúrgica de epilepsia focal, qual padrão o SPECT realizado durante a crise (ictal) mostra na área epileptogênica?",
+      "options": [
+        "Hiperperfusão, com positividade próxima à do PET",
+        "Hipoperfusão, com 10 a 15% de falsa lateralização",
+        "Hipometabolismo de glicose em 70 a 80% dos casos",
+        "Redução do N-acetilaspartato em área mais extensa"
+      ],
+      "correctIndex": 0,
+      "explanation": "O SPECT mede fluxo sanguíneo e tem menor resolução anatômica; no período ictal mostra hiperperfusão da área epileptogênica, com índices de positividade que se aproximam dos do PET. No interictal mostra hipoperfusão em cerca de 50% das epilepsias temporais, com 10 a 15% de falsa lateralização. Hipometabolismo de glicose é achado do PET, e queda do N-acetilaspartato, da espectroscopia."
+    },
+    {
+      "question": "Após uma primeira crise tônico-clônica espontânea, qual achado aumenta a probabilidade de recorrência e pesa a favor de iniciar antiepiléptico?",
+      "options": [
+        "Atividade epileptiforme no eletroencefalograma",
+        "Mordedura de língua durante a crise relatada",
+        "Confusão mental no período pós-crítico imediato",
+        "Duração da crise de cerca de um minuto e meio"
+      ],
+      "correctIndex": 0,
+      "explanation": "Entre 20 e 70% das pessoas com uma primeira crise tônico-clônica espontânea nunca terão outra, e em geral não se trata. Após a segunda crise, a recorrência passa de 70% e o tratamento está indicado. A recorrência é mais provável com déficit neurológico focal, lesão cerebral, retardo mental e anormalidades epileptiformes no EEG. Mordedura de língua e confusão pós-ictal apenas confirmam que houve uma crise."
+    },
+    {
+      "question": "Quais são os fármacos de primeira escolha para crises de ausência típicas?",
+      "options": [
+        "Etosuximida ou valproato",
+        "Carbamazepina ou fenitoína",
+        "Fenobarbital ou primidona",
+        "Gabapentina ou vigabatrina"
+      ],
+      "correctIndex": 0,
+      "explanation": "Para crises de ausência, etosuximida e valproato têm resultados semelhantes, e às vezes a associação dá melhor controle pelo efeito aditivo; o clonazepam é segunda escolha. Carbamazepina e fenitoína — primeira escolha nas crises focais — não controlam ausências e podem agravá-las, assim como gabapentina e vigabatrina."
+    },
+    {
+      "question": "Qual a diferença entre barbitúricos e benzodiazepínicos na ação sobre o canal de cloro do receptor GABA-A?",
+      "options": [
+        "Barbitúricos prolongam a abertura; benzodiazepínicos aumentam a frequência",
+        "Barbitúricos aumentam a frequência; benzodiazepínicos prolongam a abertura",
+        "Barbitúricos bloqueiam o canal; benzodiazepínicos o abrem de forma direta",
+        "Ambos aumentam a frequência de abertura; diferem só na meia-vida"
+      ],
+      "correctIndex": 0,
+      "explanation": "Barbitúricos e benzodiazepínicos atuam no receptor GABAérgico: os barbitúricos prolongam o tempo de abertura do canal de cloro e os benzodiazepínicos aumentam a frequência de abertura, promovendo hiperpolarização da membrana. Já fenitoína, carbamazepina e valproato fazem bloqueio 'dependente do uso' dos canais de sódio, impedindo apenas os surtos de potenciais de ação do neurônio epiléptico."
+    },
+    {
+      "question": "Adolescente em uso crônico de antiepiléptico desenvolve hiperplasia gengival e hirsutismo. Qual fármaco é o responsável mais provável?",
+      "options": [
+        "Fenitoína",
+        "Valproato",
+        "Etosuximida",
+        "Clonazepam"
+      ],
+      "correctIndex": 0,
+      "explanation": "Hirsutismo e hiperplasia gengival são efeitos independentes da dose da fenitoína. O valproato causa ganho de peso, queda de cabelos, tremor e hepatotoxicidade (risco concentrado em crianças com menos de 2 anos, com retardo mental, em politerapia); o fenobarbital, irritabilidade e hiperatividade. Os efeitos dependentes da dose — ataxia, diplopia, sedação — são comuns à maioria das drogas antiepilépticas."
+    },
+    {
+      "question": "Paciente sem crises há três anos em uso de antiepiléptico. Qual perfil indica maior chance de permanecer sem crises após a retirada?",
+      "options": [
+        "Epilepsia idiopática da infância, de curta duração, com EEG e imagem normais",
+        "Epilepsia generalizada iniciada na puberdade, com EEG e imagem normais",
+        "Epilepsia sintomática de curta duração, com lesão estável na ressonância",
+        "Crises focais complexas de longa duração, com EEG interictal normal"
+      ],
+      "correctIndex": 0,
+      "explanation": "A suspensão completa após cerca de três anos de controle leva à recidiva em 50% dos adultos e 25% das crianças. Favorecem ficar sem crises: epilepsia da infância, idiopática, EEG e imagem normais e curta duração. Indicam maior recorrência: crises focais complexas, epilepsia sintomática, EEG ou imagem anormais, longa duração e epilepsias generalizadas iniciadas na puberdade — como a mioclônica juvenil."
+    },
+    {
+      "question": "Homem de 30 anos chega ao pronto-socorro em crise tônico-clônica que já dura 7 minutos. Após garantir a via aérea e checar a glicemia, qual é o tratamento inicial?",
+      "options": [
+        "Benzodiazepínico: diazepam IV ou, sem acesso venoso, midazolam IM",
+        "Fenitoína IV em dose de ataque de 20 mg/kg, infundida em bolus rápido",
+        "Fenobarbital por sonda nasogástrica, em dose única de manutenção",
+        "Aguardar 30 minutos, pois a maioria das crises cessa espontaneamente"
+      ],
+      "correctIndex": 0,
+      "explanation": "Benzodiazepínicos são as drogas de eleição no tratamento agudo das crises e no estado de mal. Pela definição operacional da ILAE (2015), a crise tônico-clônica que passa de 5 minutos dificilmente para sozinha e já deve ser tratada como estado de mal; a partir de 30 minutos há risco de dano neuronal. Usa-se diazepam 0,15–0,2 mg/kg IV (máximo 10 mg, pode repetir uma vez) ou midazolam 10 mg IM; a fenitoína é segunda linha e nunca vai em bolus rápido."
+    },
+    {
+      "question": "A crise persiste após duas doses de diazepam IV. Qual é a forma correta de administrar a fenitoína como segunda linha no estado de mal epiléptico?",
+      "options": [
+        "20 mg/kg IV, até 50 mg/min, diluída em soro fisiológico, com monitorização",
+        "20 mg/kg IV, em bolus rápido, diluída em soro glicosado a 5% para proteger",
+        "5 mg/kg IV, até 50 mg/min, diluída em soro glicosado, sem monitorização",
+        "20 mg/kg por via intramuscular, dividida em dois pontos de aplicação"
+      ],
+      "correctIndex": 0,
+      "explanation": "A dose de ataque da fenitoína é 20 mg/kg IV, com velocidade máxima de 50 mg/min, diluída em soro fisiológico — ela precipita em solução glicosada — e com monitorização de ECG e pressão arterial, pelo risco de arritmia e hipotensão. Valproato, levetiracetam e fenobarbital são alternativas de segunda linha. Se a crise persistir, o estado de mal é refratário: intubação e anestesia contínua (midazolam, propofol ou tiopental) com EEG contínuo."
+    },
+    {
+      "question": "Qual medida está indicada para reduzir o risco de morte súbita inexplicada em epilepsia (SUDEP)?",
+      "options": [
+        "Melhor controle das crises, evitando politerapia, e supervisão do sono",
+        "Associar sempre um segundo antiepiléptico para cobrir crises noturnas",
+        "Deixar o paciente repousar sem estímulos no período pós-ictal",
+        "Usar travesseiros macios e altos, que facilitam a respiração no sono"
+      ],
+      "correctIndex": 0,
+      "explanation": "A SUDEP responde por 2 a 17% das mortes de pessoas com epilepsia (risco de 1/200 na epilepsia grave, contra 4,6/100.000 na população geral). Associa-se a crises generalizadas não testemunhadas durante o sono, epilepsia sintomática, crises frequentes, déficits neurológicos e uso de várias drogas. A prevenção envolve melhor controle das crises, evitar politerapia, travesseiros antissufocantes, acompanhamento do sono e mobilizar e estimular o paciente no pós-ictal — o excesso de inibição cortical no fim da crise é um dos mecanismos implicados."
+    },
+    {
+      "question": "Paciente de 28 anos com epilepsia do lobo temporal refratária e antecedente de crise febril prolongada na infância; a RM mostra esclerose mesial temporal. Qual a melhor opção e o resultado esperado?",
+      "options": [
+        "Lobectomia temporal ou amigdalo-hipocampectomia, com cerca de 75% livres de crises",
+        "Calosotomia, com cerca de 75% de controle completo das crises focais temporais",
+        "Transecção subpial múltipla do hipocampo, com cerca de 50% livres de crises",
+        "Associar uma terceira droga, com cerca de 30% de chance de ficar sem crises"
+      ],
+      "correctIndex": 0,
+      "explanation": "A epilepsia temporal por esclerose mesial consequente à crise febril na infância tem bom prognóstico cirúrgico: lobectomia temporal ou amigdalo-hipocampectomia seletiva dão cerca de 75% de controle completo, contra perto de 50% em outras epilepsias focais. Calosotomia é paliativa, para crises de queda em epilepsias generalizadas sintomáticas; transecção subpial múltipla serve para área epileptogênica em córtex eloquente. Novas drogas em adição dão cerca de 30% de melhora, mas menos de 5% dos refratários ficam livres de crises."
+    }
+  ]
+}

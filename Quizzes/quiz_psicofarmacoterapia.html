@@ -1,0 +1,1176 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Psicofarmacoterapia</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;450;500;600&display=swap" rel="stylesheet">
+<style>
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0}
+  body{background:#f5f3ef;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+  button{font:inherit;color:inherit;font-family:'IBM Plex Sans',system-ui,sans-serif}
+  a{color:#2b57cc;text-decoration:none}
+  a:hover{color:#1e3f9c;text-decoration:underline}
+  @keyframes qFade{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+  @keyframes qDrawer{from{opacity:0;transform:translateY(-4px)}to{opacity:1;transform:none}}
+
+  /* hovers — no canvas eram style-hover, aqui viram CSS de verdade */
+  .h-dark:hover{background:#2b57cc!important;transform:translateY(-1px)}
+  .h-darkflat:hover{background:#2b57cc!important}
+  .h-line:hover{border-color:#121a2b!important}
+  .h-ink:hover{color:#121a2b!important}
+  .h-opt:not(.locked):hover{border-color:var(--hbd)!important;transform:translateY(-1px)}
+  .h-card:hover{border-color:#121a2b!important;transform:translateY(-2px)}
+
+  /* tipografia do resumo */
+  .rsm{font-size:16.5px;line-height:1.72;color:#2a3141;max-width:64ch}
+  .rsm h2{font-family:'Newsreader',Georgia,serif;font-size:27px;font-weight:500;letter-spacing:-.02em;line-height:1.2;margin:42px 0 14px;padding-top:20px;border-top:1px solid #e4e0d8;text-wrap:pretty}
+  .rsm h2:first-child{margin-top:0;padding-top:0;border-top:0}
+  .rsm h3{font-family:'Newsreader',Georgia,serif;font-size:20px;font-weight:600;letter-spacing:-.01em;margin:28px 0 10px;text-wrap:pretty}
+  .rsm h4{font-family:'IBM Plex Mono',monospace;font-size:11px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:#2b57cc;margin:24px 0 8px}
+  .rsm p{margin:0 0 15px;text-wrap:pretty}
+  .rsm ul,.rsm ol{margin:0 0 15px;padding-left:22px}
+  .rsm li{margin-bottom:7px;text-wrap:pretty}
+  .rsm li>ul,.rsm li>ol{margin:7px 0 0}
+  .rsm strong{font-weight:600;color:#121a2b}
+  .rsm em{font-style:italic}
+  .rsm code{font-family:'IBM Plex Mono',monospace;font-size:.88em;background:#efece5;border:1px solid #e4e0d8;border-radius:5px;padding:1px 5px}
+  .rsm hr{border:0;border-top:1px solid #e4e0d8;margin:32px 0}
+  .rsm blockquote{margin:0 0 18px;padding:15px 18px;background:#f7f6f2;border-left:2.5px solid #2b57cc;border-radius:0 12px 12px 0;font-size:15px;line-height:1.65;color:#39404f}
+  .rsm blockquote p:last-child{margin-bottom:0}
+  .rsm .tbl{overflow-x:auto;margin:0 0 20px;border:1px solid #e4e0d8;border-radius:12px;background:#fff}
+  .rsm table{border-collapse:collapse;width:100%;font-size:14px;line-height:1.5}
+  .rsm th{text-align:left;font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.09em;text-transform:uppercase;color:#8a8578;font-weight:600;padding:11px 14px;background:#faf9f6;border-bottom:1px solid #e4e0d8;white-space:nowrap}
+  .rsm td{padding:11px 14px;border-bottom:1px solid #efece5;vertical-align:top;text-wrap:pretty}
+  .rsm tr:last-child td{border-bottom:0}
+  .rsm .key{background:#f2f6fb;border:1px solid #d6e2f4;border-radius:12px;padding:16px 18px;margin:0 0 18px}
+  .rsm .key>*:last-child{margin-bottom:0}
+
+  /* figuras — no resumo e na questao */
+  .fig{margin:0 0 20px;background:#fff;border:1px solid #e4e0d8;border-radius:14px;overflow:hidden}
+  .fig img{display:block;width:100%;height:auto;cursor:zoom-in}
+  .fig figcaption{font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.06em;color:#8a8578;padding:9px 13px;border-top:1px solid #efece5;background:#faf9f6;text-wrap:pretty}
+  .qfig{margin:0 0 20px}
+
+  /* lightbox */
+  #lb{position:fixed;inset:0;z-index:90;background:rgba(18,26,43,.86);display:none;align-items:center;justify-content:center;padding:24px;cursor:zoom-out}
+  #lb.on{display:flex;animation:qFade .16s ease}
+  #lb img{max-width:100%;max-height:100%;border-radius:10px;box-shadow:0 24px 60px rgba(0,0,0,.5)}
+
+  @media(max-width:560px){
+    .rsm{font-size:16px}
+    .rsm h2{font-size:24px}
+    .home-grid{grid-template-columns:1fr!important}
+  }
+</style>
+</head>
+<body>
+
+<div style="min-height:100vh;background:#f5f3ef;color:#121a2b;font-family:'IBM Plex Sans',system-ui,sans-serif">
+  <header style="position:sticky;top:0;z-index:30;background:rgba(245,243,239,.94);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid #e4e0d8">
+    <div style="max-width:720px;margin:0 auto;padding:12px 16px 10px" id="hdr"></div>
+  </header>
+  <main style="max-width:720px;margin:0 auto;padding:0 16px 80px" id="stage"></main>
+</div>
+<div id="lb"><img alt=""></div>
+
+<script type="text/html" id="resumoSrc"><h2>Histórico: das terapias biológicas às duas revoluções farmacológicas</h2>
+<p>A psicofarmacologia moderna tem pouco mais de setenta anos. Antes dela, o tratamento das doenças mentais graves se apoiava em intervenções biológicas inespecíficas. A primeira foi a <strong>malarioterapia (1917)</strong> — a inoculação de malária para provocar febre alta, usada na paralisia geral da neurossífilis. Na <strong>década de 1930</strong> surgiu a <strong>eletroconvulsoterapia (ECT)</strong>, ainda hoje em uso, agora com técnica e indicações bem definidas.</p>
+<p>A virada veio na <strong>década de 1950, a I Revolução Farmacológica</strong>. Em <strong>1952</strong>, a <strong>clorpromazina</strong>, uma fenotiazina, mostrou efeito antipsicótico e inaugurou o tratamento farmacológico moderno da esquizofrenia. Em sequência vieram os <strong>antidepressivos tricíclicos (1958)</strong> e os <strong>benzodiazepínicos (1960)</strong>. A <strong>II Revolução Farmacológica</strong>, nos <strong>anos 1980</strong>, trouxe fármacos mais seletivos e mais bem tolerados: a reintrodução da clozapina, os inibidores seletivos da recaptação de serotonina e, nos anos 1990, os antipsicóticos atípicos.</p>
+<div class="tbl"><table><thead><tr><th>Período</th><th>Marco</th></tr></thead><tbody><tr><td>1917</td><td>Malarioterapia</td></tr><tr><td>Década de 1930</td><td>Eletroconvulsoterapia (Cerletti e Bini)</td></tr><tr><td>1952</td><td>Neurolépticos clássicos — clorpromazina</td></tr><tr><td>1958</td><td>Antidepressivos tricíclicos</td></tr><tr><td>1960</td><td>Benzodiazepínicos</td></tr><tr><td>Anos 1970</td><td>Clozapina, o primeiro atípico — logo restrita por agranulocitose</td></tr><tr><td>Fim dos anos 1980</td><td>II Revolução: clozapina reintroduzida com monitorização; ISRS</td></tr><tr><td>Anos 1990</td><td>Risperidona, olanzapina, quetiapina, ziprasidona</td></tr><tr><td>Anos 2000</td><td>"Nova geração": aripiprazol</td></tr></tbody></table></div>
+<p>Na linha do tempo dos antipsicóticos, depois da clorpromazina vieram outras classes de típicos — tioxantenos, butirofenonas como o <strong>haloperidol</strong>, benzamidas — que acrescentaram pouco à eficácia da primeira. Todas compartilhavam dois problemas: <strong>efeitos extrapiramidais</strong> marcantes, com risco de discinesia e distonia tardias irreversíveis, e efeito <strong>nulo ou fraco sobre sintomas negativos</strong>. Entre <strong>15% e 30%</strong> dos pacientes com esquizofrenia são ou se tornam resistentes aos típicos. Por muito tempo se acreditou que não haveria efeito antipsicótico sem efeito extrapiramidal — o "dogma da neurolepsia" —, e foi a clozapina que o derrubou.</p>
+<blockquote><p><strong>Para não confundir as datas.</strong> 1952 é clorpromazina (antipsicótico), 1958 são os tricíclicos (antidepressivo), 1960 os benzodiazepínicos. A década de 1950 é a I Revolução; a de 1980, a II.</p></blockquote>
+<hr>
+<h2>Eletroconvulsoterapia</h2>
+<p>A ECT foi desenvolvida por <strong>Cerletti e Bini, na década de 1930</strong>, a partir da observação de que estados psicóticos melhoravam em pacientes epilépticos após crises convulsivas. Nas décadas seguintes foi usada de forma abusiva — em praticamente <strong>todos os quadros mentais, sem exceção e sem padronização</strong> — e, em países que viveram regimes ditatoriais, acabou confundida com "choques de tortura", estigma que persiste. Hoje é feita <strong>sob anestesia geral e relaxamento muscular</strong>, com monitorização, e é um dos tratamentos mais eficazes da psiquiatria.</p>
+<div class="tbl"><table><thead><tr><th>Indicações</th><th>Contraindicações</th></tr></thead><tbody><tr><td>Depressão psicótica com risco de suicídio</td><td>Arritmia cardíaca recente</td></tr><tr><td>Depressão grave em idosos</td><td>Aumento da pressão intracraniana</td></tr><tr><td>Depressão grave em gestantes</td><td>Trombose venosa profunda e embolias</td></tr><tr><td>Falha terapêutica (refratariedade)</td><td></td></tr></tbody></table></div>
+<p>A lógica das indicações é a da <strong>rapidez e da segurança</strong>: quando o risco de morte é alto (suicídio, recusa alimentar), a ECT age mais depressa que o antidepressivo; em idosos e gestantes, poupa a carga de fármacos e as interações.</p>
+<blockquote><p><strong>Complemento clínico.</strong> A posição atual é que a ECT <strong>não tem contraindicação absoluta</strong>; a mais importante é a <strong>hipertensão intracraniana</strong> (lesão expansiva), seguida de infarto ou AVC recentes. Além da depressão, a ECT é tratamento de escolha na <strong>catatonia</strong> e opção na <strong>síndrome neuroléptica maligna</strong> e na mania refratária. O efeito adverso mais comum é cognitivo — confusão pós-ictal e amnésia transitória.</p></blockquote>
+<hr>
+<h2>Antipsicóticos: o bloqueio D2 e as quatro vias dopaminérgicas</h2>
+<p>A base da ação antipsicótica é a <strong>hipótese dopaminérgica da esquizofrenia</strong>: um <strong>excesso de dopamina em vias cerebrais</strong> produz os sintomas produtivos (positivos) — delírios e alucinações. Nos neurolépticos de primeira geração, a <strong>eficácia está diretamente relacionada ao bloqueio do receptor D2</strong>. O problema é que o fármaco não escolhe onde bloquear: o D2 é bloqueado em <strong>todas</strong> as vias dopaminérgicas, e cada uma responde de um jeito.</p>
+<div class="tbl"><table><thead><tr><th>Via</th><th>Trajeto</th><th>Efeito do bloqueio D2</th></tr></thead><tbody><tr><td><strong>Mesolímbica</strong></td><td>área tegmentar ventral → sistema límbico (núcleo accumbens)</td><td><strong>alívio dos sintomas positivos</strong> — o efeito terapêutico</td></tr><tr><td><strong>Mesocortical</strong></td><td>área tegmentar ventral → córtex pré-frontal</td><td><strong>aumento dos sintomas negativos secundários</strong> (apatia, embotamento, alogia)</td></tr><tr><td><strong>Nigroestriatal</strong></td><td>substância negra → estriado</td><td><strong>sintomas extrapiramidais</strong> (distonia, acatisia, parkinsonismo, discinesia tardia)</td></tr><tr><td><strong>Tuberoinfundibular</strong></td><td>hipotálamo → hipófise</td><td><strong>aumento da prolactina</strong> (galactorreia, amenorreia, ginecomastia, disfunção sexual)</td></tr></tbody></table></div>
+<blockquote><p><strong>A lógica que resolve as questões.</strong> Só uma das quatro vias é alvo terapêutico — a mesolímbica. As outras três explicam os efeitos adversos clássicos: piora dos negativos (mesocortical), extrapiramidais (nigroestriatal) e hiperprolactinemia (tuberoinfundibular). Na tuberoinfundibular a dopamina é o freio da prolactina; bloquear o freio libera a prolactina.</p></blockquote>
+<p>Os típicos têm <strong>extensa lista de efeitos adversos</strong> e cerca de <strong>30% dos pacientes não respondem</strong> a eles. Atenção a uma armadilha clínica: o parkinsonismo medicamentoso (hipomimia, lentificação) pode imitar sintomas negativos — a presença de rigidez, tremor e bradicinesia aponta para a via nigroestriatal.</p>
+<hr>
+<h2>Típicos e atípicos: perfis, efeitos adversos e o que o SUS oferece</h2>
+<h3>Os típicos: sedativos e incisivos</h3>
+<p>Os neurolépticos de primeira geração se dividem pela potência de bloqueio D2:</p>
+<div class="tbl"><table><thead><tr><th></th><th>Sedativos (baixa potência)</th><th>Incisivos (alta potência)</th></tr></thead><tbody><tr><td><strong>Exemplos</strong></td><td>clorpromazina, levomepromazina</td><td>haloperidol</td></tr><tr><td><strong>Dose</strong></td><td>alta</td><td>baixa</td></tr><tr><td><strong>Outros bloqueios</strong></td><td>histamínico H1, muscarínico, alfa-1</td><td>pouco além do D2</td></tr><tr><td><strong>Perfil adverso</strong></td><td>sedação, efeito anticolinérgico, hipotensão postural</td><td><strong>sintomas extrapiramidais</strong> marcantes</td></tr></tbody></table></div>
+<h4>Sintomas extrapiramidais (complemento clínico)</h4>
+<div class="tbl"><table><thead><tr><th>Quadro</th><th>Quando surge</th><th>Como se apresenta</th><th>Manejo</th></tr></thead><tbody><tr><td>Distonia aguda</td><td>horas a dias</td><td>torcicolo, crise oculógira, trismo</td><td>biperideno IM</td></tr><tr><td>Acatisia</td><td>dias a semanas</td><td>inquietação, incapacidade de ficar sentado</td><td>reduzir dose, propranolol ou BZD</td></tr><tr><td>Parkinsonismo</td><td>semanas</td><td>tremor, rigidez, bradicinesia, hipomimia</td><td>reduzir dose, biperideno</td></tr><tr><td>Discinesia tardia</td><td>meses a anos</td><td>movimentos orofaciais involuntários e repetitivos</td><td>trocar para clozapina; costuma ser irreversível</td></tr></tbody></table></div>
+<p>A <strong>discinesia tardia (DT)</strong> é um distúrbio do movimento involuntário e repetitivo. O risco com os neurolépticos convencionais é de cerca de <strong>20% dos pacientes</strong>, chegando a <strong>50% em grupos de risco</strong> como idosos e pacientes clinicamente comprometidos. <strong>Fármacos que produzem poucos sintomas extrapiramidais parecem causar pouca DT também.</strong></p>
+<h3>Os atípicos (segunda geração)</h3>
+<p>Os atípicos mantêm o <strong>efeito antipsicótico</strong> com:</p>
+<ul><li><strong>baixa propensão a sintomas extrapiramidais</strong> e <strong>menor risco de discinesia tardia</strong>;</li><li><strong>baixa propensão a hiperprolactinemia</strong>;</li><li><strong>melhor efeito sobre sintomas negativos</strong>;</li><li><strong>eficácia parcial em sintomas depressivos</strong> e <strong>melhora da função cognitiva</strong>;</li><li>utilidade em <strong>pacientes refratários</strong> (clozapina).</li></ul>
+<p>O mecanismo combina bloqueio D2 menos intenso ou mais transitório com <strong>antagonismo do receptor serotoninérgico 5-HT2A</strong>, que libera dopamina justamente nas vias mesocortical e nigroestriatal. O <strong>aripiprazol</strong> tem mecanismo próprio: é <strong>agonista parcial D2</strong> — reduz a dopamina onde ela sobra e a sustenta onde falta — e é usado também como <strong>potencializador</strong> de antidepressivos.</p>
+<blockquote><p><strong>Pegadinha: atípico não é sinônimo de seguro.</strong> "Menos" extrapiramidal não é "nenhum", e a risperidona em dose alta se comporta como típico. A <strong>risperidona</strong> é a exceção que <strong>eleva a prolactina</strong> tanto quanto o haloperidol. E o custo dos atípicos é <strong>metabólico</strong>.</p></blockquote>
+<h3>Outros efeitos adversos — quem tem maior risco</h3>
+<div class="tbl"><table><thead><tr><th>Efeito</th><th>Maior risco</th></tr></thead><tbody><tr><td>Hipotensão postural</td><td><strong>clozapina</strong></td></tr><tr><td>Alterações cardiovasculares (QT longo, arritmia)</td><td><strong>tioridazina, ziprasidona, clozapina</strong></td></tr><tr><td>Disfunção metabólica (peso, diabetes, dislipidemia)</td><td><strong>clozapina, olanzapina</strong></td></tr><tr><td>Agranulocitose</td><td><strong>clozapina</strong></td></tr></tbody></table></div>
+<p>A tioridazina é a que mais prolonga o QT, com risco de torsades de pointes — por isso deixou de ser comercializada em vários países.</p>
+<p>A <strong>clozapina</strong> é o caso à parte. Primeiro atípico, com baixíssimo risco extrapiramidal e eficácia sobre sintomas positivos e negativos, teve o uso restrito após <strong>casos fatais de agranulocitose</strong> e só voltou, no fim dos anos 1980, pela eficácia na <strong>esquizofrenia refratária</strong>, condicionada a <strong>hemograma seriado</strong> (complemento: semanal nas primeiras 18 semanas e mensal depois). Refratário, na prática, é quem não respondeu a dois antipsicóticos em dose e tempo adequados.</p>
+<blockquote><p><strong>Complemento clínico — síndrome neuroléptica maligna.</strong> Emergência rara de qualquer antagonista dopaminérgico, mais comum com típicos de alta potência e doses altas ou rápidas: <strong>febre, rigidez em cano de chumbo, alteração de consciência, instabilidade autonômica e CPK muito elevada</strong>, instalando-se em dias. Conduta: suspender o antipsicótico, suporte intensivo, e dantrolene ou bromocriptina nos casos graves.</p></blockquote>
+<h3>O que o SUS oferece</h3>
+<div class="tbl"><table><thead><tr><th>Componente</th><th>Fármacos</th></tr></thead><tbody><tr><td><strong>1ª geração</strong> (atenção básica)</td><td>haloperidol (VO e IM), <strong>haloperidol decanoato</strong> (IM, depósito), clorpromazina (VO e IM), pimozida, levomepromazina, tioridazina, periciazina VO</td></tr><tr><td><strong>2ª geração</strong> (Componente Especializado, mediante <strong>LME</strong>)</td><td>risperidona, quetiapina, clozapina, olanzapina, ziprasidona</td></tr></tbody></table></div>
+<p>LME é o laudo de solicitação do Componente Especializado da Assistência Farmacêutica: os atípicos não ficam na farmácia da unidade básica, dependem de laudo e de protocolo clínico. Aripiprazol (usado também como potencializador) e lurasidona completam a classe dos atípicos; a cobertura de cada um no SUS segue os protocolos clínicos vigentes. O <strong>haloperidol decanoato</strong> é a formulação de depósito, aplicada por via intramuscular em geral a cada quatro semanas — a saída para quem não adere ao oral.</p>
+<h3>Por que os pacientes abandonam o tratamento</h3>
+<ul><li><strong>sintomas extrapiramidais</strong>;</li><li><strong>cronicidade</strong> da doença;</li><li><strong>dificuldade de vincular-se</strong> ao tratamento;</li><li><strong>custos diretos</strong>;</li><li><strong>esgotamento familiar</strong>.</li></ul>
+<hr>
+<h2>Antidepressivos: classes e perfis</h2>
+<p>O modelo clássico que orienta a classe é a <strong>hipótese monoaminérgica</strong>: a depressão estaria associada a <strong>baixos níveis de neurotransmissores</strong> (serotonina, noradrenalina, dopamina), e os antidepressivos <strong>aumentam a quantidade de neurotransmissor na sinapse</strong>, sobretudo <strong>impedindo que ele seja recaptado</strong> pela célula que o liberou. É um modelo útil, mas simplificado: o bloqueio da recaptação acontece em horas, e a melhora clínica leva semanas — sinal de que a resposta depende de adaptações mais lentas, como a neuroplasticidade.</p>
+<div class="tbl"><table><thead><tr><th>Classe</th><th>Exemplos</th><th>Mecanismo</th><th>Perfil e efeitos adversos</th></tr></thead><tbody><tr><td><strong>Tricíclicos</strong></td><td>sedativos: amitriptilina, clomipramina; menos sedativos: imipramina, nortriptilina</td><td>inibem intensamente a recaptação de serotonina e noradrenalina; bloqueiam muscarínicos, H1 e alfa-1</td><td>visão embaçada, boca seca, constipação, efeitos cardíacos, disfunção erétil, sedação, hipotensão</td></tr><tr><td><strong>ISRS</strong></td><td>fluoxetina, fluvoxamina, paroxetina, sertralina, citalopram, escitalopram</td><td>inibem a recaptação da serotonina</td><td>menos efeitos e menos sedação que os tricíclicos; desconforto gástrico, diarreia, náusea, ansiedade inicial, disfunção sexual</td></tr><tr><td><strong>IMAO</strong></td><td>(tranilcipromina)</td><td>inibem a monoaminoxidase, que degrada as monoaminas</td><td>crise hipertensiva com tiramina; muitas interações</td></tr><tr><td><strong>Duais</strong></td><td>venlafaxina, desvenlafaxina, duloxetina</td><td>inibem a recaptação de serotonina e noradrenalina</td><td>ação semelhante à dos tricíclicos, com bem menos efeitos adversos</td></tr><tr><td><strong>Multimodal</strong></td><td>vortioxetina</td><td>modula e estimula o sistema serotoninérgico, com efeito em cascata sobre outros neurotransmissores</td><td>efeito <strong>pró-cognitivo</strong></td></tr><tr><td><strong>Dopaminérgico</strong></td><td>bupropiona</td><td>inibe a recaptação de dopamina e noradrenalina</td><td>energia e motivação; ansiedade, menos apetite, sem disfunção sexual</td></tr></tbody></table></div>
+<h3>Tricíclicos</h3>
+<p>Os tricíclicos atuam nos eixos de serotonina e noradrenalina <strong>de forma intensa</strong>, mas o que limita seu uso são os bloqueios "fora do alvo": <strong>muscarínicos</strong> (boca seca, constipação, visão embaçada, retenção urinária, confusão no idoso), <strong>histamínicos</strong> (sedação, ganho de peso) e <strong>alfa-1</strong> (hipotensão postural), além dos <strong>efeitos cardíacos</strong>. A <strong>amitriptilina</strong> tem <strong>ação analgésica</strong> e <strong>auxilia na insônia</strong> — por isso aparece em doses baixas na dor crônica, na fibromialgia e na profilaxia de cefaleia.</p>
+<blockquote><p><strong>Complemento clínico.</strong> Em superdosagem os tricíclicos são <strong>cardiotóxicos</strong> (alargamento do QRS, arritmias) e potencialmente letais — cuidado redobrado em paciente com risco de suicídio.</p></blockquote>
+<h3>Bupropiona</h3>
+<p>A bupropiona tem <strong>ação dopaminérgica</strong> (e noradrenérgica), com <strong>intensa ação sobre energia e motivação</strong>, porém com <strong>aumento dos sintomas de ansiedade</strong>. Entre os efeitos estão <strong>aumento da libido</strong> e <strong>diminuição do apetite</strong>. Há <strong>interação com álcool</strong> — a combinação reduz o limiar convulsivo — e ela é usada no <strong>tratamento do tabagismo</strong>. É escolha lógica no deprimido apático, cansado e não ansioso.</p>
+<blockquote><p><strong>Pegadinha de classificação.</strong> A bupropiona às vezes aparece agrupada entre os "duais", mas <strong>não tem ação serotoninérgica</strong>: é inibidora da recaptação de noradrenalina e dopamina. Os duais propriamente ditos — inibidores da recaptação de serotonina e noradrenalina — são venlafaxina, desvenlafaxina e duloxetina.</p></blockquote>
+<h3>Duas interações que caem em prova (complemento clínico)</h3>
+<ul><li><strong>IMAO + tiramina:</strong> alimentos ricos em tiramina (queijos curados, embutidos, vinho) em quem usa IMAO causam <strong>crise hipertensiva</strong>, porque a tiramina, que não é mais degradada, libera noradrenalina em massa.</li><li><strong>Síndrome serotoninérgica:</strong> combinar ou aumentar serotoninérgicos (ISRS, duais, IMAO, tramadol, linezolida, triptanos) pode causar, em <strong>horas</strong>, alteração mental, hiperatividade autonômica (febre, sudorese, taquicardia, diarreia, midríase) e hiperatividade neuromuscular — <strong>clônus, mioclonias e hiperreflexia</strong>, mais nos membros inferiores. Diferencia-se da síndrome neuroléptica maligna pelo <strong>início rápido</strong> e pelo <strong>clônus</strong>, contra a <strong>rigidez em cano de chumbo</strong> e a instalação em dias da SNM. Conduta: suspender o agente; ciproeptadina nos casos moderados.</li></ul>
+<h3>Por que os pacientes param o antidepressivo</h3>
+<p>As razões de descontinuação mais citadas pelos pacientes são: <strong>não toleraram os efeitos colaterais</strong>, <strong>acharam que não precisavam mais</strong>, <strong>sentiram-se melhor</strong>, <strong>a medicação não estava funcionando</strong> e <strong>acabou a medicação</strong>. Repare que duas delas são o próprio sucesso do tratamento — o paciente melhora e para, e é aí que mora a recaída. Orientar sobre tempo de tratamento faz parte da prescrição.</p>
+<hr>
+<h2>Estabilizadores do humor: lítio, carbamazepina e valproato</h2>
+<p>Estabilizadores do humor são medicamentos usados na <strong>prevenção e no tratamento dos transtornos do humor e do transtorno esquizoafetivo</strong>, com <strong>efeito antimaníaco e antidepressivo</strong>. Os três clássicos são o <strong>carbonato de lítio</strong>, a <strong>carbamazepina</strong> e o <strong>valproato de sódio</strong>.</p>
+<h3>Lítio</h3>
+<h4>Indicações</h4>
+<ul><li><strong>Transtorno afetivo bipolar</strong> — episódios de mania, hipomania e depressão.</li><li><strong>Depressão recorrente</strong> (profilaxia) e <strong>depressão resistente</strong>.</li><li><strong>Transtorno esquizoafetivo</strong>.</li><li><strong>Agressividade</strong> e <strong>impulsividade</strong>.</li><li><strong>Prevenção de suicídio</strong> — efeito antissuicida próprio do lítio.</li></ul>
+<h4>O que mexe na litemia</h4>
+<p>O lítio <strong>não é metabolizado nem se liga a proteínas</strong>: é filtrado e reabsorvido pelo rim como se fosse sódio. Tudo o que faz o rim reter sódio retém lítio.</p>
+<ul><li><strong>Idosos</strong> — filtração menor, litemia maior com a mesma dose.</li><li><strong>Diuréticos tiazídicos</strong> (hidroclorotiazida) e <strong>anti-inflamatórios não hormonais</strong> <strong>aumentam</strong> a litemia; ISRS em associação também pedem atenção.</li><li><strong>Associação com carbamazepina</strong> → <strong>neurotoxicidade aumentada</strong>, mesmo com litemia normal.</li></ul>
+<blockquote><p><strong>Complemento clínico — janela estreita.</strong> A litemia-alvo fica em torno de <strong>0,6 a 1,2 mEq/L</strong> (mais alta na mania aguda, mais baixa na manutenção). Acima de <strong>1,5 mEq/L</strong> aparece a intoxicação: <strong>tremor grosseiro, ataxia, disartria, vômitos, diarreia e confusão</strong>; acima de 2,5, convulsões e coma, com indicação de hemodiálise. IECA e BRA também elevam a litemia. O paciente que começa um tiazídico ou um anti-inflamatório e passa a tremer e cambalear está intoxicado até prova em contrário.</p></blockquote>
+<h4>Efeitos colaterais</h4>
+<div class="tbl"><table><thead><tr><th>Comuns</th><th>A vigiar no longo prazo</th></tr></thead><tbody><tr><td>Poliúria e polidipsia</td><td><strong>Diabetes insipidus nefrogênico</strong> (não responde à desmopressina)</td></tr><tr><td>Tremor</td><td>Alterações renais subclínicas</td></tr><tr><td>Diarreia e náuseas</td><td><strong>Indução de hipotireoidismo</strong></td></tr><tr><td>Aumento de peso</td><td>Acne, alergias, alopecia</td></tr></tbody></table></div>
+<p>Daí o seguimento com <strong>creatinina</strong> e <strong>TSH</strong>, além da litemia.</p>
+<h4>Contraindicações</h4>
+<ul><li><strong>Insuficiência renal aguda</strong>.</li><li><strong>Infarto do miocárdio</strong>.</li><li><strong>Primeiro trimestre da gravidez</strong> — risco de malformação cardíaca, classicamente a <strong>anomalia de Ebstein</strong> (complemento: o risco absoluto é menor do que se estimava, e hoje a decisão é individualizada).</li></ul>
+<h3>Carbamazepina</h3>
+<p>Anticonvulsivante com <strong>eficácia antimaníaca</strong> e <strong>pouca eficácia antidepressiva</strong>. Parece <strong>não ser tão eficaz quanto o lítio</strong>, mas parece ser <strong>mais eficaz em ciclagem rápida, mania disfórica, pacientes com lesão cerebral e depressão grave e episódica</strong>. A <strong>associação com lítio</strong> tem <strong>maior eficácia profilática</strong>.</p>
+<p>Efeitos colaterais: <strong>rash cutâneo</strong>, <strong>leucopenia</strong> e <strong>discrasias sanguíneas</strong> (cuidado com sangramentos ou sinais de infecção), <strong>alteração de exames hepáticos</strong>, <strong>hiponatremia</strong>; no <strong>aumento rápido de dose</strong>, tontura, ataxia, letargia e diplopia. É <strong>teratogênica</strong> e está <strong>presente no leite materno</strong>.</p>
+<blockquote><p><strong>A "narcisa" dos neurolépticos.</strong> A carbamazepina é um potente <strong>indutor enzimático hepático</strong> — "só pensa em si" e derruba o nível dos outros fármacos: <strong>anticoncepcionais orais</strong> (risco de gravidez numa droga teratogênica), <strong>neurolépticos</strong>, <strong>clonazepam</strong>, <strong>ácido valproico</strong>, outros <strong>anticonvulsivantes</strong> e <strong>anticoagulantes</strong>. Ela induz também o próprio metabolismo (autoindução), e a dose precisa ser reajustada nas primeiras semanas.</p></blockquote>
+<h3>Valproato</h3>
+<p>Anticonvulsivante <strong>antimaníaco e talvez antidepressivo</strong>, com <strong>melhor resultado na mania disfórica e na ciclagem rápida</strong> e <strong>ação profilática para mania</strong>. Tem <strong>melhor tolerabilidade e menos interações</strong> que lítio e carbamazepina.</p>
+<p>Efeitos colaterais: <strong>tremor</strong>, <strong>aumento de peso</strong>, <strong>epigastralgia</strong>, <strong>queda ou enfraquecimento do cabelo</strong> e <strong>ovários policísticos</strong>. É <strong>teratogênico</strong>, <strong>pode ser usado na amamentação</strong> e tem <strong>baixa toxicidade em superdosagem</strong>.</p>
+<blockquote><p><strong>Complemento clínico.</strong> Entre os estabilizadores, o valproato tem o <strong>maior risco teratogênico</strong> — defeitos do tubo neural e prejuízo do neurodesenvolvimento —, e as diretrizes atuais pedem que seja evitado em mulheres em idade fértil sem contracepção eficaz. Ele é <strong>inibidor</strong> enzimático (dobra o nível da lamotrigina), e pode causar hepatotoxicidade, pancreatite, plaquetopenia e hiperamonemia.</p></blockquote>
+<div class="tbl"><table><thead><tr><th></th><th>Lítio</th><th>Carbamazepina</th><th>Valproato</th></tr></thead><tbody><tr><td><strong>Destaque</strong></td><td>antissuicida; profilaxia de longo prazo</td><td>ciclagem rápida, mania disfórica, lesão cerebral</td><td>mania disfórica, ciclagem rápida; boa tolerabilidade</td></tr><tr><td><strong>Efeito-assinatura</strong></td><td>poliúria, tremor, hipotireoidismo, diabetes insipidus</td><td>rash, leucopenia, hiponatremia</td><td>peso, queda de cabelo, ovários policísticos</td></tr><tr><td><strong>Interação-chave</strong></td><td>tiazídicos e AINEs elevam o nível</td><td>indutor: reduz anticoncepcional e outros</td><td>inibidor enzimático</td></tr><tr><td><strong>Gestação</strong></td><td>Ebstein (1º trimestre)</td><td>teratogênica</td><td>teratogenicidade mais alta</td></tr></tbody></table></div>
+<h3>Psicotrópicos por fase do transtorno bipolar</h3>
+<div class="tbl"><table><thead><tr><th>Fase</th><th>Fase aguda (emergência, primeiros dias)</th><th>Manutenção e prevenção</th></tr></thead><tbody><tr><td><strong>Mania</strong></td><td>neurolépticos + benzodiazepínicos + estabilizador do humor</td><td>estabilizador: lítio ou anticonvulsivante</td></tr><tr><td><strong>Depressão</strong></td><td>antidepressivo + estabilizador do humor</td><td>estabilizador: lítio ou anticonvulsivante</td></tr></tbody></table></div>
+<blockquote><p><strong>Nunca antidepressivo sozinho no bipolar.</strong> Na depressão bipolar o antidepressivo só entra <strong>associado</strong> a estabilizador, pelo risco de virada maníaca. (Complemento: as diretrizes atuais colocam quetiapina, lurasidona, lítio e lamotrigina na primeira linha da depressão bipolar, e o antidepressivo como adjuvante.)</p></blockquote>
+<hr>
+<h2>Benzodiazepínicos</h2>
+<h3>Mecanismo e efeitos</h3>
+<p>Os receptores <strong>GABA-A</strong> modulam <strong>alterações rápidas e súbitas do humor</strong> — <strong>ansiedade, pânico e resposta ao estresse</strong>. Os benzodiazepínicos (BZD) agem nesses receptores, ligando-se a um sítio próprio e <strong>potencializando o GABA</strong>, o principal neurotransmissor inibitório (o canal de cloreto se abre mais, o neurônio fica menos excitável). Disso vêm cinco efeitos:</p>
+<ol><li><strong>sedativo</strong>;</li><li><strong>ansiolítico</strong>;</li><li><strong>relaxante muscular</strong>;</li><li><strong>anticonvulsivante</strong>;</li><li><strong>amnéstico</strong>.</li></ol>
+<p>O antagonista do sítio benzodiazepínico é o <strong>flumazenil</strong> (complemento).</p>
+<h3>Quem é usado para quê</h3>
+<div class="tbl"><table><thead><tr><th>Uso</th><th>Fármacos</th><th>Por quê</th></tr></thead><tbody><tr><td><strong>Ansiolíticos</strong></td><td>diazepam, alprazolam, bromazepam, clonazepam</td><td>pico mais lento e declínio gradual da concentração</td></tr><tr><td><strong>Hipnóticos</strong></td><td><strong>midazolam</strong> (meia-vida muito curta)</td><td>início rápido, maior lipossolubilidade</td></tr><tr><td><strong>Anticonvulsivante</strong></td><td>clonazepam</td><td>uso principal desse composto</td></tr></tbody></table></div>
+<h3>Farmacocinética</h3>
+<p>Os BZD são <strong>bem absorvidos pelo trato gastrointestinal</strong>. São compostos de <strong>alta lipossolubilidade</strong>, e isso explica quase tudo:</p>
+<ul><li><strong>atravessam mais rapidamente a barreira hematoencefálica</strong>, com <strong>início de ação mais rápido</strong>;</li><li><strong>ligam-se a depósitos de gordura</strong>, permanecendo mais tempo no organismo;</li><li>os de início mais rápido têm <strong>maior potencial de abuso</strong>;</li><li><strong>atravessam a barreira placentária</strong> (podem sedar o feto e associam-se a problemas neonatais) e <strong>passam para o leite materno</strong>, sedando o recém-nascido.</li></ul>
+<p>A ligação a proteínas é alta (mais de 90%), o que pede atenção em estados carenciais e hipoalbuminemia, quando a fração livre e o efeito aumentam.</p>
+<blockquote><p><strong>Via intramuscular — a pegadinha.</strong> <strong>Diazepam</strong> e <strong>clordiazepóxido</strong> por via intramuscular têm absorção <strong>lenta e errática</strong> (cristalizam no local) e picos menores que pela via oral. <strong>Lorazepam</strong> e <strong>midazolam</strong>, hidrossolúveis, são <strong>rapidamente absorvidos</strong> e bem tolerados no músculo. Precisa de BZD intramuscular? Midazolam.</p></blockquote>
+<h3>Efeitos sobre o sono, o desempenho e a memória</h3>
+<div class="tbl"><table><thead><tr><th>Domínio</th><th>Efeito</th></tr></thead><tbody><tr><td><strong>Sono</strong></td><td>↓ latência do sono · ↓ despertares · ↑ tempo total de sono</td></tr><tr><td><strong>Desempenho psicomotor</strong></td><td>↓ velocidade de desempenho · tempo de reação <strong>alongado</strong> (reflexos mais lentos) · cuidado com tarefas que exigem precisão de movimentos</td></tr><tr><td><strong>Memória</strong></td><td><strong>amnésia anterógrada</strong>; memória semântica e de procedimento preservadas</td></tr></tbody></table></div>
+<p>O prejuízo psicomotor, de atenção e de vigilância é <strong>proporcional à dose</strong> e dura conforme a meia-vida: com BZD de <strong>meia-vida longa</strong> tomado à noite, persiste na manhã seguinte. Pior, o julgamento também é afetado, e o paciente <strong>não percebe a própria limitação</strong>. O uso de BZD associa-se a <strong>acidentes automobilísticos</strong>, risco maior em <strong>idosos</strong> usando compostos de <strong>meia-vida longa em doses altas</strong> — e, no idoso, a quedas e fratura de quadril.</p>
+<p>Sobre a memória: os BZD, por qualquer via, induzem <strong>amnésia anterógrada</strong> — reduzem a lembrança do que acontece <strong>depois</strong> da dose, enquanto o paciente está sob efeito. <strong>Nenhum BZD causa amnésia retrógrada.</strong> O dano principal recai sobre a <strong>memória episódica de longo prazo</strong> (autobiográfica), por falha na <strong>consolidação</strong> — prejudicam a passagem da memória recente de curto para longo prazo. Ficam preservadas a memória de curto prazo/operacional, a <strong>memória semântica</strong> (conhecimento geral) e a <strong>memória de procedimento</strong> (habilidades). O efeito amnéstico <strong>independe da sedação</strong>, embora ela o intensifique.</p>
+<h3>Tolerância, dependência e abstinência</h3>
+<p>O uso prolongado leva a <strong>tolerância</strong> e <strong>dependência</strong>. O quadro de <strong>abstinência é pouco específico</strong>:</p>
+<ul><li><strong>irritabilidade, agitação, insônia</strong>;</li><li><strong>tremor, sudorese, palpitações, náusea, letargia, cefaleia, dor e tensão muscular</strong>;</li><li><strong>aumento da sensibilidade a luz e sons, parestesias, cãibras</strong>;</li><li><strong>convulsões</strong> — o risco mais grave.</li></ul>
+<blockquote><p><strong>Complemento clínico.</strong> Nunca suspender abruptamente um BZD usado por meses: reduz-se a dose de forma gradual, em semanas a meses, às vezes trocando antes por um de meia-vida longa. Diante de abstinência instalada, reintroduz-se o BZD e recomeça-se a retirada lenta.</p></blockquote>
+<p>O BZD é um dos medicamentos mais vendidos, e o tema da <strong>"farmacologização da vida"</strong> — tratar com comprimido o sofrimento cotidiano — é o pano de fundo do seu uso excessivo. Prescrição por tempo limitado, com plano de retirada desde o início, é a regra.</p>
+<hr>
+<h2>Escolha do psicofármaco, adesão e polifarmácia</h2>
+<p>A escolha do medicamento pesa um conjunto de aspectos, e nenhum deles sozinho decide:</p>
+<ul><li><strong>eficácia</strong> para aquele quadro;</li><li><strong>mecanismo de ação</strong>;</li><li><strong>características do medicamento</strong> — farmacocinética e farmacodinâmica;</li><li><strong>tolerabilidade</strong>;</li><li><strong>tempo para o início da ação</strong>;</li><li><strong>segurança</strong> (inclusive em superdosagem);</li><li><strong>custo</strong> — que, no SUS, se traduz em disponibilidade na atenção básica ou necessidade de LME.</li></ul>
+<p>O <strong>doente crônico</strong> frequentemente acumula medicamentos: diurético, anti-hipertensivo, remédio "do coração", antiulceroso, polivitamínico, benzodiazepínico e antidepressivo. A <strong>polifarmácia</strong> multiplica interações e efeitos adversos, e várias delas já apareceram nas seções anteriores:</p>
+<div class="tbl"><table><thead><tr><th>Combinação</th><th>Risco</th></tr></thead><tbody><tr><td>Lítio + tiazídico ou anti-inflamatório</td><td>elevação da litemia e intoxicação</td></tr><tr><td>Lítio + carbamazepina</td><td>neurotoxicidade</td></tr><tr><td>Carbamazepina + anticoncepcional, anticoagulante, neuroléptico</td><td>queda do nível do outro fármaco</td></tr><tr><td>ISRS + tramadol, IMAO ou triptano</td><td>síndrome serotoninérgica</td></tr><tr><td>BZD de meia-vida longa no idoso</td><td>sedação residual, quedas, acidentes</td></tr><tr><td>BZD + álcool</td><td>depressão do sistema nervoso central e respiratória</td></tr></tbody></table></div>
+<blockquote><p><strong>Síntese para a prova.</strong> Antipsicótico: pense em qual via o D2 foi bloqueado. Antidepressivo: pense em quais receptores além do alvo foram atingidos. Estabilizador: pense no rim (lítio), no fígado indutor (carbamazepina) e na gestação (valproato). Benzodiazepínico: pense em GABA-A, lipossolubilidade, amnésia anterógrada e abstinência com convulsão.</p></blockquote></script>
+<!-- Tutor local: define window.DEEPSEEK_KEY. O arquivo NAO vai para o repositorio,
+     entao online ele da 404 e o chat simplesmente nao aparece. -->
+<script src="../deepseek_key.js"></script>
+<script>
+/* ─────────────────────────────────────────────────────────────────────────────
+   CONTRATO DE DADOS — para adaptar a outro tema, troque apenas QUIZ e o resumo.
+   Cada item: { question, options[2..6], correctIndex, explanation }
+   ──────────────────────────────────────────────────────────────────────────── */
+var TITLE      = "Psicofarmacoterapia";
+var EYEBROW    = "Psiquiatria · Psicofarmacologia";
+var DISCIPLINA = "Psiquiatria";   // pasta de origem (PED, GO...) — usada pelo índice
+var SUBTITLE = "Antipsicóticos, antidepressivos, estabilizadores do humor e benzodiazepínicos na prática";
+var INTRO    = "Da história dos psicofármacos e da eletroconvulsoterapia ao mecanismo e aos efeitos adversos de cada classe: as vias dopaminérgicas, típicos e atípicos, as classes de antidepressivos, lítio, carbamazepina, valproato e benzodiazepínicos — com o que o SUS oferece.";
+
+var QUIZ = [
+  {
+    "question": "Mulher de 28 anos com esquizofrenia, em uso de risperidona, passa a apresentar galactorreia e amenorreia. O bloqueio dopaminérgico em qual via explica o quadro?",
+    "options": [
+      "Tuberoinfundibular, do hipotálamo à hipófise",
+      "Nigroestriatal, da substância negra ao estriado",
+      "Mesocortical, do tegmento ao córtex pré-frontal",
+      "Mesolímbica, do tegmento ao estriado ventral"
+    ],
+    "correctIndex": 0,
+    "explanation": "Na via tuberoinfundibular a dopamina é o fator que inibe a secreção de prolactina pela hipófise; bloqueá-la com antagonista D2 eleva a prolactina, com galactorreia, amenorreia, ginecomastia e disfunção sexual. Os atípicos em geral têm baixa propensão à hiperprolactinemia, mas a risperidona é a exceção clássica — eleva a prolactina tanto quanto os típicos de alta potência."
+  },
+  {
+    "question": "Paciente com esquizofrenia em uso de haloperidol tem melhora dos delírios, mas fica mais apático, com embotamento afetivo e pobreza do discurso, sem rigidez, tremor ou lentificação motora. O bloqueio D2 em qual via explica essa piora?",
+    "options": [
+      "Mesocortical, com piora de sintomas negativos",
+      "Mesolímbica, com piora de sintomas negativos",
+      "Nigroestriatal, com parkinsonismo medicamentoso",
+      "Tuberoinfundibular, com hiperprolactinemia"
+    ],
+    "correctIndex": 0,
+    "explanation": "A via mesocortical leva dopamina ao córtex pré-frontal, onde já há hipofunção dopaminérgica na esquizofrenia; o bloqueio D2 ali agrava apatia, embotamento afetivo e alogia — os sintomas negativos secundários. A via mesolímbica, cujo excesso de dopamina gera delírios e alucinações, é justamente onde o bloqueio traz o benefício antipsicótico. Parkinsonismo pode imitar sintomas negativos, mas viria com rigidez, tremor e bradicinesia."
+  },
+  {
+    "question": "Qual é a estimativa de risco de discinesia tardia com o uso prolongado de neurolépticos convencionais (de primeira geração)?",
+    "options": [
+      "Cerca de 20%, chegando a 50% em idosos",
+      "Cerca de 5%, chegando a 10% em idosos",
+      "Cerca de 50%, chegando a 90% em idosos",
+      "Cerca de 20%, sem diferença em idosos"
+    ],
+    "correctIndex": 0,
+    "explanation": "A discinesia tardia é um distúrbio de movimentos involuntários e repetitivos — sobretudo orofaciais, como mastigação, protrusão da língua e caretas — que surge após uso prolongado de antipsicótico. Com os convencionais o risco gira em torno de 20%, e chega a 50% em grupos de risco como idosos e pacientes clinicamente comprometidos. Fármacos que produzem poucos sintomas extrapiramidais também parecem causar pouca discinesia tardia."
+  },
+  {
+    "question": "Em comparação com os antipsicóticos típicos, qual é uma vantagem dos antipsicóticos atípicos (de segunda geração)?",
+    "options": [
+      "Melhor efeito sobre os sintomas negativos",
+      "Menor risco de ganho de peso e de diabetes",
+      "Ausência total de risco de discinesia tardia",
+      "Bloqueio D2 mais intenso e mais duradouro"
+    ],
+    "correctIndex": 0,
+    "explanation": "Os atípicos têm efeito antipsicótico com baixa propensão a sintomas extrapiramidais e a hiperprolactinemia, menos discinesia tardia (menos, não zero), melhor efeito sobre sintomas negativos, eficácia parcial em sintomas depressivos e melhora da função cognitiva. O preço é metabólico: clozapina e olanzapina lideram em ganho de peso, diabetes e dislipidemia. A diferença vem de um bloqueio D2 menos intenso ou mais transitório, somado ao antagonismo serotoninérgico 5-HT2A."
+  },
+  {
+    "question": "A clozapina, primeiro antipsicótico atípico, chegou a ter o uso restrito e hoje só é usada com monitorização rigorosa. Qual efeito adverso grave motivou essa restrição?",
+    "options": [
+      "Agranulocitose, com hemograma seriado",
+      "Hepatite fulminante, com transaminases",
+      "Insuficiência renal, com creatinina seriada",
+      "Pancreatite aguda, com amilase seriada"
+    ],
+    "correctIndex": 0,
+    "explanation": "Pouco depois de lançada, nos anos 1970, a clozapina foi associada a casos fatais de agranulocitose e teve o uso restrito; voltou no fim dos anos 1980 pela eficácia na esquizofrenia refratária — 15% a 30% dos pacientes não respondem aos típicos —, condicionada a hemograma seriado. Causa pouquíssimos sintomas extrapiramidais, mas lidera em hipotensão postural e em disfunção metabólica."
+  },
+  {
+    "question": "Paciente com esquizofrenia, obeso e pré-diabético, vai iniciar antipsicótico. Qual par deve ser evitado pelo maior risco de disfunção metabólica?",
+    "options": [
+      "Clozapina e olanzapina",
+      "Aripiprazol e lurasidona",
+      "Haloperidol e pimozida",
+      "Ziprasidona e aripiprazol"
+    ],
+    "correctIndex": 0,
+    "explanation": "Clozapina e olanzapina são os antipsicóticos com maior risco de ganho de peso, resistência insulínica, diabetes e dislipidemia. Aripiprazol, lurasidona e ziprasidona são os atípicos de menor impacto metabólico, e o haloperidol tem pouco efeito metabólico — seu problema são os sintomas extrapiramidais. Com qualquer antipsicótico, peso, circunferência abdominal, glicemia e lipídios entram no seguimento."
+  },
+  {
+    "question": "Paciente com intervalo QT prolongado no eletrocardiograma precisa de antipsicótico. Qual destes tem o maior risco cardiovascular e deve ser evitado?",
+    "options": [
+      "Tioridazina",
+      "Aripiprazol",
+      "Lurasidona",
+      "Olanzapina"
+    ],
+    "correctIndex": 0,
+    "explanation": "Tioridazina, ziprasidona e clozapina concentram o maior risco de alterações cardiovasculares entre os antipsicóticos; a tioridazina é a que mais prolonga o QT, com risco de torsades de pointes, e por isso deixou de ser comercializada em vários países. Aripiprazol, lurasidona e olanzapina têm efeito pequeno sobre o QT. A clozapina ainda soma hipotensão postural e risco de miocardite."
+  },
+  {
+    "question": "Os neurolépticos típicos são divididos em sedativos e incisivos. Comparado à clorpromazina, o que caracteriza o haloperidol?",
+    "options": [
+      "Incisivo: menos sedação e mais sintomas extrapiramidais",
+      "Sedativo: mais sedação e menos sintomas extrapiramidais",
+      "Incisivo: mais sedação e mais hipotensão postural",
+      "Atípico: pouca ação D2 e baixo risco extrapiramidal"
+    ],
+    "correctIndex": 0,
+    "explanation": "Os sedativos (clorpromazina, levomepromazina) são de baixa potência: exigem doses altas e bloqueiam também receptores histamínicos, muscarínicos e alfa-1, daí sedação, efeito anticolinérgico e hipotensão postural. O incisivo (haloperidol) é de alta potência, com bloqueio D2 intenso: pouca sedação e hipotensão, mas muito mais sintomas extrapiramidais — distonia aguda, acatisia e parkinsonismo."
+  },
+  {
+    "question": "Paciente com esquizofrenia abandona repetidamente o antipsicótico oral. Qual opção típica, disponível no SUS, permite aplicação intramuscular de depósito, com intervalo de semanas?",
+    "options": [
+      "Haloperidol decanoato",
+      "Clorpromazina injetável",
+      "Levomepromazina oral",
+      "Periciazina em gotas"
+    ],
+    "correctIndex": 0,
+    "explanation": "O haloperidol decanoato é a formulação de depósito do haloperidol, aplicada por via intramuscular em geral a cada quatro semanas — útil quando a adesão falha. A clorpromazina injetável é de ação curta, usada na fase aguda. A adesão é um problema central: sintomas extrapiramidais, cronicidade da doença, dificuldade de vínculo com o tratamento, custos diretos e esgotamento familiar estão entre as principais causas de abandono."
+  },
+  {
+    "question": "Qual destas condições é contraindicação à eletroconvulsoterapia?",
+    "options": [
+      "Pressão intracraniana elevada",
+      "Gestação no segundo trimestre",
+      "Idade acima de oitenta anos",
+      "Depressão com sintomas psicóticos"
+    ],
+    "correctIndex": 0,
+    "explanation": "A eletroconvulsoterapia é contraindicada diante de aumento da pressão intracraniana, arritmia cardíaca recente e trombose venosa profunda ou embolia; hoje se considera que não há contraindicação absoluta, e a hipertensão intracraniana é a mais relevante. Gestação e idade avançada são, ao contrário, situações em que a ECT é especialmente indicada na depressão grave, por poupar a carga de fármacos; a depressão psicótica com risco de suicídio é indicação clássica."
+  },
+  {
+    "question": "Qual fármaco, introduzido em 1952, marca o início do tratamento farmacológico moderno da esquizofrenia?",
+    "options": [
+      "Clorpromazina, uma fenotiazina",
+      "Haloperidol, uma butirofenona",
+      "Clozapina, um dibenzodiazepínico",
+      "Imipramina, um tricíclico"
+    ],
+    "correctIndex": 0,
+    "explanation": "A clorpromazina, uma fenotiazina, inaugurou em 1952 a primeira revolução farmacológica da psiquiatria; seguiram-se os tricíclicos (1958) e os benzodiazepínicos (1960). A segunda revolução, na década de 1980, trouxe a reintrodução da clozapina e abriu caminho para os atípicos dos anos 1990. Antes dos fármacos havia a malarioterapia (1917) e a eletroconvulsoterapia (década de 1930)."
+  },
+  {
+    "question": "Idoso em uso de amitriptilina apresenta boca seca, constipação, visão embaçada e retenção urinária. Qual mecanismo explica esses efeitos?",
+    "options": [
+      "Bloqueio de receptores muscarínicos",
+      "Bloqueio de receptores D2 estriatais",
+      "Estímulo de receptores alfa-2",
+      "Inibição da recaptação de dopamina"
+    ],
+    "correctIndex": 0,
+    "explanation": "Além de inibir intensamente a recaptação de serotonina e noradrenalina, os tricíclicos bloqueiam receptores muscarínicos (boca seca, constipação, visão embaçada, retenção urinária, confusão no idoso), histamínicos H1 (sedação, ganho de peso) e alfa-1 (hipotensão postural), além dos efeitos cardíacos e da dificuldade de ereção. É esse perfil que os torna menos tolerados que ISRS e duais."
+  },
+  {
+    "question": "Paciente com depressão, insônia e dor crônica difusa (fibromialgia). Qual antidepressivo tem perfil sedativo e ação analgésica que ajudam nas duas queixas?",
+    "options": [
+      "Amitriptilina",
+      "Escitalopram",
+      "Vortioxetina",
+      "Bupropiona"
+    ],
+    "correctIndex": 0,
+    "explanation": "A amitriptilina é um tricíclico sedativo (como a clomipramina), com ação analgésica útil em dor crônica e auxílio na insônia — por isso é usada em doses baixas na fibromialgia, na cefaleia crônica e na dor neuropática. Imipramina e nortriptilina são os tricíclicos menos sedativos. Escitalopram e vortioxetina não têm ação analgésica relevante nem perfil sedativo, e a bupropiona é ativadora e pode piorar a insônia."
+  },
+  {
+    "question": "Ao iniciar um inibidor seletivo da recaptação de serotonina (ISRS), quais efeitos adversos são os mais esperados nas primeiras semanas?",
+    "options": [
+      "Náusea, diarreia, desconforto gástrico e ansiedade",
+      "Boca seca, constipação, visão turva e retenção urinária",
+      "Sedação intensa, hipotensão postural e arritmias",
+      "Tremor fino, poliúria, polidipsia e ganho de peso"
+    ],
+    "correctIndex": 0,
+    "explanation": "Os ISRS (fluoxetina, fluvoxamina, paroxetina, sertralina, citalopram, escitalopram) impedem a recaptação da serotonina e têm efeitos adversos menores e menos sedação que os tricíclicos; os mais comuns são gastrointestinais — náusea, diarreia, desconforto gástrico — e ansiedade ou inquietação no início. Disfunção sexual é queixa frequente ao longo do uso. Boca seca e constipação apontam para tricíclico; poliúria e tremor, para lítio."
+  },
+  {
+    "question": "Qual destes antidepressivos é um inibidor da recaptação de serotonina e de noradrenalina (dual)?",
+    "options": [
+      "Duloxetina",
+      "Sertralina",
+      "Escitalopram",
+      "Fluvoxamina"
+    ],
+    "correctIndex": 0,
+    "explanation": "Os duais — venlafaxina, desvenlafaxina e duloxetina — inibem a recaptação de serotonina e de noradrenalina, com ação semelhante à dos tricíclicos e bem menos efeitos adversos, porque não bloqueiam receptores muscarínicos, histamínicos e alfa-1. Sertralina, escitalopram e fluvoxamina são ISRS. A bupropiona, às vezes agrupada entre os duais, age sobre dopamina e noradrenalina, sem efeito serotoninérgico."
+  },
+  {
+    "question": "Paciente tabagista com depressão marcada por fadiga, apatia e falta de motivação, sem ansiedade importante. Qual antidepressivo de ação dopaminérgica também é usado na cessação do tabagismo?",
+    "options": [
+      "Bupropiona",
+      "Paroxetina",
+      "Mirtazapina",
+      "Clomipramina"
+    ],
+    "correctIndex": 0,
+    "explanation": "A bupropiona inibe a recaptação de dopamina e noradrenalina, com intensa ação sobre energia e motivação — mas pode aumentar a ansiedade, por isso convém a quem não é ansioso. Reduz o apetite, não costuma causar disfunção sexual (pode até aumentar a libido) e é usada no tratamento do tabagismo. Deve-se evitar álcool, porque a combinação reduz o limiar convulsivo."
+  },
+  {
+    "question": "Paciente em uso de fluoxetina recebe tramadol e, em poucas horas, fica agitado, sudoreico, com diarreia, febre e tremor. Qual achado do exame favorece síndrome serotoninérgica em vez de síndrome neuroléptica maligna?",
+    "options": [
+      "Clônus e hiperreflexia, com instalação em horas",
+      "Rigidez em cano de chumbo, com instalação em dias",
+      "Bradicinesia intensa, com CPK muito elevada",
+      "Febre com hipotensão, sem alteração do tônus"
+    ],
+    "correctIndex": 0,
+    "explanation": "A síndrome serotoninérgica surge em horas após combinar ou aumentar serotoninérgicos (ISRS, IMAO, tramadol, linezolida, triptanos) e reúne alteração mental, hiperatividade autonômica e hiperatividade neuromuscular — clônus, mioclonias e hiperreflexia, mais nos membros inferiores, com diarreia e midríase. A síndrome neuroléptica maligna se instala em dias após antagonista dopaminérgico, com rigidez em cano de chumbo, bradicinesia e CPK muito elevada. Conduta: suspender o agente; ciproeptadina nos casos moderados."
+  },
+  {
+    "question": "Além do tratamento e da profilaxia do transtorno bipolar, qual efeito clínico do lítio é especialmente valorizado no seguimento de pacientes com transtornos do humor?",
+    "options": [
+      "Redução do risco de suicídio",
+      "Prevenção de crises epilépticas",
+      "Melhora rápida da insônia crônica",
+      "Controle de sintomas obsessivos"
+    ],
+    "correctIndex": 0,
+    "explanation": "O lítio é indicado no transtorno bipolar (mania, hipomania e depressão), na profilaxia da depressão recorrente, na depressão resistente, no transtorno esquizoafetivo, na agressividade e na impulsividade — e na prevenção do suicídio, efeito antissuicida que o distingue entre os estabilizadores. Não é anticonvulsivante; carbamazepina e valproato é que são."
+  },
+  {
+    "question": "Paciente bipolar, estável com lítio, inicia hidroclorotiazida para hipertensão. Duas semanas depois tem tremor grosseiro, ataxia, diarreia e confusão. Qual mecanismo explica o quadro?",
+    "options": [
+      "O tiazídico reduz a excreção renal e eleva a litemia",
+      "O tiazídico induz o metabolismo hepático do lítio",
+      "O tiazídico desloca o lítio da albumina plasmática",
+      "A hipopotassemia do tiazídico causa lesão cerebelar"
+    ],
+    "correctIndex": 0,
+    "explanation": "O lítio não é metabolizado nem se liga a proteínas: é eliminado pelo rim, que o trata como sódio. O tiazídico causa perda de sódio e o túbulo proximal passa a reabsorver mais sódio — e lítio junto —, elevando a litemia até a intoxicação: tremor grosseiro, ataxia, disartria, vômitos, diarreia e confusão. Anti-inflamatórios não esteroides e, em menor grau, IECA e BRA fazem o mesmo; a idade avançada também eleva a litemia, e a associação com carbamazepina aumenta a neurotoxicidade."
+  },
+  {
+    "question": "Paciente em uso de lítio há dois anos queixa-se de poliúria e muita sede. A urina é diluída e não se concentra após a administração de desmopressina. Qual é o diagnóstico?",
+    "options": [
+      "Diabetes insipidus nefrogênico pelo lítio",
+      "Diabetes insipidus central pelo lítio",
+      "Polidipsia primária da doença de base",
+      "Diabetes mellitus induzido pelo lítio"
+    ],
+    "correctIndex": 0,
+    "explanation": "Poliúria e polidipsia são efeitos frequentes do lítio; no extremo, ele torna o túbulo coletor resistente ao hormônio antidiurético — diabetes insipidus nefrogênico, que por definição não responde à desmopressina. Outros efeitos: tremor, diarreia, náusea, ganho de peso, indução de hipotireoidismo, alterações renais subclínicas, acne, alergias e alopecia. Por isso creatinina e TSH entram no seguimento."
+  },
+  {
+    "question": "Por que o lítio é evitado no primeiro trimestre da gestação?",
+    "options": [
+      "Risco de malformação cardíaca, a anomalia de Ebstein",
+      "Risco de defeito do tubo neural, como espinha bífida",
+      "Risco de fenda labiopalatina e de microcefalia",
+      "Risco de agenesia renal e de oligoidrâmnio"
+    ],
+    "correctIndex": 0,
+    "explanation": "A exposição ao lítio no primeiro trimestre associa-se a malformações cardíacas, classicamente a anomalia de Ebstein (implantação baixa da valva tricúspide); estudos recentes mostram risco absoluto menor do que se estimava, e a decisão é individualizada. Defeitos do tubo neural são a marca do valproato e da carbamazepina. As outras contraindicações do lítio são insuficiência renal aguda e infarto do miocárdio."
+  },
+  {
+    "question": "Mulher de 25 anos, em uso de anticoncepcional oral combinado, inicia carbamazepina para transtorno bipolar. Qual é a principal preocupação?",
+    "options": [
+      "Falha contraceptiva por indução de enzimas hepáticas",
+      "Trombose por inibição do metabolismo do estrogênio",
+      "Hepatite por soma da toxicidade dos dois fármacos",
+      "Sangramento por queda dos fatores de coagulação"
+    ],
+    "correctIndex": 0,
+    "explanation": "A carbamazepina é um potente indutor enzimático hepático e reduz o nível de vários fármacos: anticoncepcionais orais (risco de gravidez — e ela é teratogênica), neurolépticos, clonazepam, ácido valproico, outros anticonvulsivantes e anticoagulantes. Orienta-se método que não dependa do metabolismo hepático, como o DIU. Ela também induz o próprio metabolismo, o que pede reajuste de dose nas primeiras semanas."
+  },
+  {
+    "question": "Paciente em uso de carbamazepina há seis semanas apresenta febre, dor de garganta e petéquias. Qual é a conduta inicial?",
+    "options": [
+      "Hemograma urgente pelo risco de discrasia sanguínea",
+      "Antibiótico empírico mantendo a dose habitual",
+      "Dosar o nível sérico e aumentar a dose do fármaco",
+      "Tratar como virose e reavaliar em uma semana"
+    ],
+    "correctIndex": 0,
+    "explanation": "A carbamazepina pode causar leucopenia e discrasias sanguíneas graves (agranulocitose, anemia aplástica); sinais de infecção ou de sangramento exigem hemograma imediato e, se confirmada, suspensão. Outros efeitos: rash cutâneo (que pode evoluir para Stevens-Johnson), alteração de enzimas hepáticas, hiponatremia e, no aumento rápido de dose, tontura, ataxia, letargia e diplopia. É teratogênica e passa para o leite materno."
+  },
+  {
+    "question": "Jovem de 19 anos em uso de valproato para transtorno bipolar evolui com ganho de peso, hirsutismo, acne e ciclos menstruais irregulares. Qual efeito adverso deve ser considerado?",
+    "options": [
+      "Ovários policísticos associados ao valproato",
+      "Hipotireoidismo induzido pelo valproato",
+      "Hiperprolactinemia induzida pelo valproato",
+      "Síndrome de Cushing induzida pelo valproato"
+    ],
+    "correctIndex": 0,
+    "explanation": "O valproato associa-se a ovários policísticos e hiperandrogenismo, além de tremor, ganho de peso, epigastralgia e queda ou enfraquecimento do cabelo. É teratogênico — o maior risco entre os estabilizadores, com defeitos de tubo neural e prejuízo do neurodesenvolvimento —, o que pede cautela especial em mulheres em idade fértil. Pode ser usado na amamentação e tem baixa toxicidade em superdosagem comparado ao lítio. Hipotireoidismo é efeito do lítio; hiperprolactinemia, dos antipsicóticos."
+  },
+  {
+    "question": "Como os benzodiazepínicos produzem seus efeitos ansiolítico e anticonvulsivante?",
+    "options": [
+      "Modulam positivamente o receptor GABA-A",
+      "Atuam como agonistas do receptor GABA-B",
+      "Inibem a recaptação do GABA na sinapse",
+      "Bloqueiam o receptor glutamatérgico NMDA"
+    ],
+    "correctIndex": 0,
+    "explanation": "Os benzodiazepínicos ligam-se a um sítio próprio do receptor GABA-A e potencializam o GABA, aumentando a abertura do canal de cloreto e a inibição neuronal. Como o GABA-A modula alterações rápidas do humor — ansiedade, pânico, resposta ao estresse —, o resultado é efeito sedativo, ansiolítico, relaxante muscular, anticonvulsivante e amnéstico. O flumazenil é o antagonista desse sítio."
+  },
+  {
+    "question": "Para sedar um paciente por via intramuscular, qual benzodiazepínico tem absorção rápida e regular nessa via, além de meia-vida muito curta?",
+    "options": [
+      "Midazolam",
+      "Diazepam",
+      "Clonazepam",
+      "Alprazolam"
+    ],
+    "correctIndex": 0,
+    "explanation": "Midazolam e lorazepam são hidrossolúveis e bem absorvidos no músculo; o midazolam tem meia-vida muito curta e é o benzodiazepínico de perfil hipnótico. Diazepam e clordiazepóxido, por via intramuscular, têm absorção lenta e errática — cristalizam no local — e atingem picos menores que pela via oral. Diazepam, alprazolam, bromazepam e clonazepam são os mais usados como ansiolíticos; o clonazepam, também como anticonvulsivante."
+  },
+  {
+    "question": "Qual é o efeito agudo dos benzodiazepínicos sobre o sono?",
+    "options": [
+      "Reduzem latência e despertares e aumentam o tempo total",
+      "Aumentam latência e despertares e reduzem o tempo total",
+      "Reduzem latência, mas aumentam despertares e tempo total",
+      "Não alteram a latência e só reduzem os despertares noturnos"
+    ],
+    "correctIndex": 0,
+    "explanation": "Os benzodiazepínicos encurtam o tempo para adormecer, reduzem os despertares e aumentam o tempo total de sono. O preço é o prejuízo psicomotor, de atenção e de vigilância, proporcional à dose; com compostos de meia-vida longa tomados à noite, ele persiste na manhã seguinte. Os mais lipossolúveis, de início de ação rápido, são os preferidos como indutores do sono."
+  },
+  {
+    "question": "Paciente recebe benzodiazepínico antes de uma endoscopia. Depois, não se lembra do exame nem da conversa na sala de recuperação, mas recorda tudo o que ocorreu antes da dose. Como se classifica o efeito?",
+    "options": [
+      "Amnésia anterógrada, sem amnésia retrógrada",
+      "Amnésia retrógrada, sem amnésia anterógrada",
+      "Amnésia global, anterógrada e retrógrada",
+      "Amnésia semântica, com perda de conhecimentos"
+    ],
+    "correctIndex": 0,
+    "explanation": "Os benzodiazepínicos, por qualquer via, causam amnésia anterógrada: reduzem a lembrança do que ocorre enquanto o paciente está sob efeito, por falha na consolidação da memória episódica (de curto para longo prazo). Nenhum causa amnésia retrógrada. A memória semântica (conhecimento geral) e a de procedimento (habilidades) ficam preservadas. O efeito amnéstico independe da sedação, embora ela o intensifique."
+  },
+  {
+    "question": "Idoso de 78 anos usa diazepam todas as noites para dormir. Qual é o risco mais relevante desse uso?",
+    "options": [
+      "Sonolência residual, quedas e acidentes de trânsito",
+      "Insônia de rebote na madrugada, com taquicardia",
+      "Hipertensão matinal por efeito simpaticomimético",
+      "Hipoglicemia noturna por estímulo à secreção de insulina"
+    ],
+    "correctIndex": 0,
+    "explanation": "O diazepam tem meia-vida longa e metabólitos ativos que se acumulam no idoso: o prejuízo de atenção, de reflexos e de julgamento persiste na manhã seguinte, e o paciente não percebe a própria limitação. Isso se traduz em quedas, fratura de quadril e acidentes automobilísticos — risco maior em idosos com compostos de meia-vida longa em doses altas. A velocidade de desempenho cai e o tempo de reação se alonga."
+  },
+  {
+    "question": "Paciente usa clonazepam diariamente há anos e para por conta própria. Três dias depois tem insônia, irritabilidade, tremor, sudorese, palpitações e hipersensibilidade a luz e sons. Qual é o risco mais grave e a conduta?",
+    "options": [
+      "Convulsões; reintroduzir o BZD e retirar gradualmente",
+      "Psicose; iniciar antipsicótico e manter a suspensão",
+      "Hipertermia maligna; iniciar dantrolene endovenoso",
+      "Arritmia grave; iniciar betabloqueador e observar"
+    ],
+    "correctIndex": 0,
+    "explanation": "A abstinência de benzodiazepínico tem quadro pouco específico — irritabilidade, agitação, insônia, tremor, sudorese, palpitações, náusea, cefaleia, tensão muscular, hipersensibilidade a luz e sons, parestesias e cãibras — e pode chegar a convulsões. A conduta é reintroduzir o benzodiazepínico (ou trocar por um de meia-vida longa) e reduzir lentamente, ao longo de semanas a meses. Tolerância e dependência são o motivo de limitar o tempo de prescrição."
+  }
+];
+
+var LETTERS = ['A','B','C','D','E','F'];
+var SHUFFLE = true, LOCK = true;
+
+var S = { view:'home', started:false, finished:false, i:0, order:[], answers:[], open:{}, filter:'all', warn:false, chat:{} };
+
+function esc(s){ return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
+function pad(n){ return String(n).padStart(2,'0'); }
+
+function build(){
+  var qs = QUIZ.map(function(q,id){ return { question:q.question, options:q.options.slice(), correctIndex:q.correctIndex, explanation:q.explanation, image:q.image, imageCaption:q.imageCaption, id:id }; });
+  if (!SHUFFLE) return qs;
+  for (var i=qs.length-1;i>0;i--){ var j=Math.floor(Math.random()*(i+1)); var t=qs[i]; qs[i]=qs[j]; qs[j]=t; }
+  return qs.map(function(q){
+    var correct = q.options[q.correctIndex], o = q.options.slice();
+    for (var i=o.length-1;i>0;i--){ var j=Math.floor(Math.random()*(i+1)); var t=o[i]; o[i]=o[j]; o[j]=t; }
+    q.options = o; q.correctIndex = o.indexOf(correct); return q;
+  });
+}
+
+/* ── ações ─────────────────────────────────────────────────────────────────── */
+var A = {
+  home:      function(){ S.view='home'; S.started=false; S.finished=false; up(0); },
+  resumo:    function(){ S.view='resumo'; up(0); },
+  start:     function(){ var o=build(); S.view='quiz'; S.started=true; S.finished=false; S.i=0; S.order=o;
+                         S.answers=new Array(o.length).fill(null); S.open={}; S.filter='all'; S.warn=false; up(0); },
+  restart:   function(){ A.start(); },
+  sair:      function(){ S.view='home'; S.started=false; up(0); },   // guarda as respostas
+  retomar:   function(){ S.view='quiz'; S.started=true; S.finished=false; S.warn=false; up(0); },
+  go:        function(n){ if(n<0||n>S.order.length-1) return; S.i=n; S.warn=false; render(); },
+  jump:      function(n){ if(S.finished){ S.finished=false; S.i=n; S.warn=false; } else { if(n<0||n>S.order.length-1) return; S.i=n; S.warn=false; } up(0,'smooth'); },
+  pick:      function(n){ if(LOCK && S.answers[S.i]!==null) return; S.answers[S.i]=n; render(); },
+  prev:      function(){ A.go(S.i-1); },
+  next:      function(){ if(S.i<S.order.length-1) A.go(S.i+1); else A.finish(); },
+  finish:    function(){ var b=S.answers.filter(function(a){return a===null}).length;
+                         if(b>0 && !S.warn){ S.warn=true; render(); return; } S.finished=true; S.warn=false; up(0); },
+  force:     function(){ S.finished=true; S.warn=false; up(0); },
+  gotoBlank: function(){ var n=S.answers.findIndex(function(a){return a===null}); if(n>=0) A.go(n); },
+  back:      function(){ S.finished=false; S.warn=false; up(0); },
+  filter:    function(k){ S.filter=k; render(); },
+  toggle:    function(n){ S.open[n]=!S.open[n]; render(); },
+  toggleAll: function(){ var r=reviewList(), all=r.length>0 && r.every(function(x){return S.open[x.idx]});
+                         S.open={}; if(!all) r.forEach(function(x){ S.open[x.idx]=true; }); render(); }
+};
+function up(top, beh){ render(); window.scrollTo({ top: top||0, behavior: beh||'auto' }); }
+
+/* Aberto por duplo clique (file://) volta para o indice local; servido pela web,
+   volta para o publicado. Os dois listam os mesmos materiais. */
+function idxHref(){
+  var local = (typeof location !== 'undefined' && location.protocol === 'file:');
+  return local ? '../index_local.html' : '../index.html';
+}
+function emAndamento(){
+  return S.order.length > 0 && !S.finished &&
+         S.answers.some(function(a){ return a !== null; });
+}
+
+/* ── header ────────────────────────────────────────────────────────────────── */
+function renderHeader(){
+  var mono = "font-family:'IBM Plex Mono',monospace";
+  var left =
+    '<div style="min-width:0">' +
+      '<div style="display:flex;align-items:center;gap:8px;'+mono+';font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:#8a8578">' +
+        '<a href="'+idxHref()+'" class="h-ink" style="color:#2b57cc;text-decoration:none;white-space:nowrap">\u2190 Materiais</a>' +
+        '<span style="color:#d3cec4">/</span>' +
+        '<span style="overflow:hidden;text-overflow:ellipsis;white-space:nowrap">'+esc(EYEBROW)+'</span>' +
+      '</div>' +
+      '<h1 style="margin:1px 0 0;font-family:\'Newsreader\',Georgia,serif;font-size:20px;font-weight:500;letter-spacing:-.01em;line-height:1.15">'+esc(TITLE)+'</h1>' +
+    '</div>';
+
+  var right = '';
+  if (S.view === 'quiz' && S.started) {
+    var hit = counts().hit;
+    right = '<div style="display:flex;align-items:center;gap:10px;flex-shrink:0">' +
+              '<button type="button" data-act="sair" class="h-line" style="background:none;border:1px solid #ddd8ce;border-radius:9px;padding:6px 11px;'+mono+';font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;color:#5b6478;cursor:pointer;transition:border-color .15s ease">Sair</button>' +
+              '<div style="display:flex;align-items:center;gap:6px">' +
+                '<span style="'+mono+';font-size:15px;font-weight:600;letter-spacing:-.02em">'+hit+'</span>' +
+                '<span style="'+mono+';font-size:11px;color:#8a8578">/ '+S.order.length+'</span>' +
+              '</div></div>';
+  } else if (S.view !== 'home') {
+    right = '<button type="button" data-act="home" class="h-line" style="flex-shrink:0;background:none;border:1px solid #ddd8ce;border-radius:9px;padding:7px 13px;'+mono+';font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:#5b6478;cursor:pointer;transition:border-color .15s ease">← Início</button>';
+  }
+
+  var html = '<div style="display:flex;align-items:baseline;justify-content:space-between;gap:12px;margin-bottom:'+(S.view==='quiz'&&S.started?'10px':'2px')+'">'+left+right+'</div>';
+
+  if (S.view === 'quiz' && S.started) {
+    var c = counts();
+    var rail = S.order.map(function(q,n){
+      var a = S.answers[n], cur = n===S.i && !S.finished, bg = '#d3cec4';
+      if (a!==null) bg = (a===q.correctIndex) ? '#2e7d55' : '#c04437';
+      if (cur && a===null) bg = '#121a2b';
+      var st = a===null ? 'em branco' : (a===q.correctIndex ? 'correta' : 'incorreta');
+      return '<button type="button" data-act="jump" data-n="'+n+'" title="Questão '+(n+1)+' — '+st+'" aria-label="Questão '+(n+1)+' — '+st+'" style="flex:1 1 0;min-width:0;background:none;border:0;padding:13px 0;margin:0;cursor:pointer;display:flex;align-items:center;justify-content:center">' +
+             '<span style="display:block;width:100%;border-radius:99px;transition:height .18s ease,background .18s ease,box-shadow .18s ease;height:'+(cur?'17px':'9px')+';background:'+bg+';box-shadow:'+(cur?'0 0 0 3px rgba(18,26,43,.13)':'none')+'"></span></button>';
+    }).join('');
+    html += '<div><div style="display:flex;align-items:center;gap:3px">'+rail+'</div>' +
+            '<div style="display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:-2px">' +
+              '<div style="'+mono+';font-size:11px;letter-spacing:.04em;color:#5b6478">Questão '+pad(S.i+1)+' / '+S.order.length+'</div>' +
+              '<div style="display:flex;align-items:center;gap:12px;'+mono+';font-size:10.5px;color:#8a8578">' +
+                dot('#2e7d55',c.hit)+dot('#c04437',c.miss)+dot('#d3cec4',c.blank) +
+              '</div></div></div>';
+  }
+  document.getElementById('hdr').innerHTML = html;
+}
+function dot(color,n){ return '<span style="display:flex;align-items:center;gap:5px"><span style="width:7px;height:7px;border-radius:99px;background:'+color+';display:block"></span>'+n+'</span>'; }
+
+function counts(){
+  var hit=0, miss=0, blank=0;
+  S.answers.forEach(function(a,n){
+    if (a===null) blank++;
+    else if (S.order[n] && a===S.order[n].correctIndex) hit++;
+    else miss++;
+  });
+  return { hit:hit, miss:miss, blank:blank, total:S.order.length };
+}
+
+/* ── tela inicial ──────────────────────────────────────────────────────────── */
+function renderHome(){
+  var mono = "font-family:'IBM Plex Mono',monospace";
+  var secoes = (document.getElementById('resumoSrc').textContent.match(/<h2/g)||[]).length;
+  var cell = function(v,l){
+    return '<div style="background:#faf9f6;padding:16px 14px">' +
+      '<div style="'+mono+';font-size:22px;font-weight:500;letter-spacing:-.03em">'+v+'</div>' +
+      '<div style="'+mono+';font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:#8a8578;margin-top:3px">'+l+'</div></div>';
+  };
+  var card = function(act,tag,titulo,desc,cta){
+    return '<button type="button" data-act="'+act+'" class="h-card" style="display:flex;flex-direction:column;align-items:flex-start;gap:0;text-align:left;background:#fff;border:1px solid #e4e0d8;border-radius:18px;padding:24px 22px;cursor:pointer;transition:border-color .16s ease,transform .14s ease;box-shadow:0 1px 2px rgba(18,26,43,.04),0 12px 28px -20px rgba(18,26,43,.18)">' +
+      '<div style="'+mono+';font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:#2b57cc;margin-bottom:12px">'+tag+'</div>' +
+      '<div style="font-family:\'Newsreader\',Georgia,serif;font-size:26px;font-weight:500;letter-spacing:-.02em;line-height:1.15;margin-bottom:8px">'+titulo+'</div>' +
+      '<div style="font-size:14px;line-height:1.6;color:#5b6478;margin-bottom:18px;text-wrap:pretty">'+desc+'</div>' +
+      '<div style="'+mono+';font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:#121a2b">'+cta+'</div></button>';
+  };
+
+  document.getElementById('stage').innerHTML =
+    '<section style="padding:56px 0 0;animation:qFade .3s ease">' +
+      '<div style="'+mono+';font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:#2b57cc;margin-bottom:16px">Material de revisão</div>' +
+      '<h2 style="font-family:\'Newsreader\',Georgia,serif;font-size:40px;line-height:1.08;font-weight:400;letter-spacing:-.025em;margin:0 0 18px;text-wrap:pretty">'+esc(SUBTITLE)+'</h2>' +
+      '<p style="font-size:15.5px;line-height:1.65;color:#5b6478;margin:0 0 30px;max-width:52ch;text-wrap:pretty">'+esc(INTRO)+'</p>' +
+      '<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(108px,1fr));gap:1px;background:#e4e0d8;border:1px solid #e4e0d8;border-radius:14px;overflow:hidden;margin-bottom:32px">' +
+        cell(QUIZ.length,'Questões') + cell(secoes,'Seções') + cell('~'+Math.round(QUIZ.length*0.75),'Minutos') +
+      '</div>' +
+      '<div class="home-grid" style="display:grid;grid-template-columns:1fr 1fr;gap:12px">' +
+        (emAndamento()
+          ? card('retomar','Em andamento','Quiz',
+                 'Você parou na questão '+pad(S.i+1)+' de '+S.order.length+', com '+
+                 (S.order.length-counts().blank)+' respondida'+((S.order.length-counts().blank)===1?'':'s')+
+                 '. Suas respostas continuam guardadas.','Retomar →')
+          : card('start','Praticar','Quiz', QUIZ.length+' questões de múltipla escolha, com explicação assim que você responde e gabarito comentado no fim.','Começar →')) +
+        card('resumo','Estudar','Resumo','O conteúdo da aula em texto corrido, organizado em '+secoes+' seções para leitura antes da prova.','Ler →') +
+      '</div>' +
+      '<div style="margin-top:26px;display:flex;flex-wrap:wrap;align-items:center;gap:8px 18px;'+mono+';font-size:11px;color:#8a8578">' +
+        '<span>← →&nbsp; navegar</span><span>1–'+maxOpts()+'&nbsp; responder</span><span>Enter&nbsp; avançar</span>' +
+        (emAndamento() ? '<button type="button" data-act="start" class="h-ink" style="background:none;border:0;padding:0;'+mono+';font-size:11px;color:#8a8578;cursor:pointer;text-decoration:underline;text-underline-offset:3px">recomeçar do zero</button>' : '') +
+        '</div>' +
+    '</section>';
+}
+function maxOpts(){ return QUIZ.reduce(function(m,q){ return Math.max(m,q.options.length); },0); }
+
+/* ── resumo ────────────────────────────────────────────────────────────────── */
+function renderResumo(){
+  document.getElementById('stage').innerHTML =
+    '<section style="padding:34px 0 0;animation:qFade .3s ease">' +
+      '<div style="font-family:\'IBM Plex Mono\',monospace;font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:#2b57cc;margin-bottom:14px">Resumo</div>' +
+      '<div class="rsm">' + document.getElementById('resumoSrc').textContent + '</div>' +
+      '<div style="display:flex;flex-wrap:wrap;gap:9px;margin-top:38px;padding-top:24px;border-top:1px solid #e4e0d8">' +
+        '<button type="button" data-act="start" class="h-darkflat" style="background:#121a2b;color:#f5f3ef;border:0;border-radius:11px;padding:13px 24px;font-size:14px;font-weight:500;cursor:pointer;transition:background .16s ease">Fazer o quiz →</button>' +
+        '<button type="button" data-act="home" class="h-line" style="background:none;border:1px solid #ddd8ce;border-radius:11px;padding:13px 22px;font-size:14px;cursor:pointer;transition:border-color .15s ease">Voltar ao início</button>' +
+      '</div></section>';
+}
+
+/* imagem da questao — data URI ja resolvida pelo montar_quiz.py */
+function figura(q, cls){
+  if (!q.image) return '';
+  return '<figure class="fig'+(cls?' '+cls:'')+'"><img src="'+q.image+'" alt="'+esc(q.imageCaption||'Imagem da questão')+'">' +
+         (q.imageCaption ? '<figcaption>'+esc(q.imageCaption)+'</figcaption>' : '') + '</figure>';
+}
+
+/* ── questão ───────────────────────────────────────────────────────────────── */
+function renderQuestion(){
+  var mono = "font-family:'IBM Plex Mono',monospace";
+  var q = S.order[S.i], ans = S.answers[S.i], reveal = ans !== null;
+
+  var status = 'Não respondida', sColor = '#8a8578';
+  if (reveal) { var ok = ans===q.correctIndex; status = ok?'Você acertou':'Você errou'; sColor = ok?'#2e7d55':'#c04437'; }
+
+  var opts = q.options.map(function(text,n){
+    var isC = n===q.correctIndex, isMine = n===ans;
+    var bd='#e4e0d8', bg='#fff', fg='#121a2b', bBg='#f2efe9', bFg='#8a8578', mark='', mColor='', op='1', hbd='#2b57cc';
+    if (reveal) {
+      op = (isC||isMine) ? '1' : '.62';
+      if (isC)               { bd='#8fc7a7'; bg='#eef7f1'; fg='#1f5c3e'; bBg='#2e7d55'; bFg='#fff'; mark='✓'; mColor='#2e7d55'; }
+      if (isMine && !isC)    { bd='#e0a49a'; bg='#fdf0ee'; fg='#8f2f25'; bBg='#c04437'; bFg='#fff'; mark='✕'; mColor='#c04437'; }
+    } else if (isMine)       { bd='#121a2b'; bg='#f7f6f2'; bBg='#121a2b'; bFg='#f5f3ef'; }
+    var locked = reveal && LOCK;
+    return '<button type="button" data-act="pick" data-n="'+n+'" class="h-opt'+(locked?' locked':'')+'" style="--hbd:'+hbd+';display:flex;gap:13px;align-items:flex-start;width:100%;text-align:left;padding:14px 15px;border-radius:13px;font-size:15px;line-height:1.5;transition:border-color .15s ease,background .15s ease,transform .12s ease;border:1.5px solid '+bd+';background:'+bg+';color:'+fg+';cursor:'+(locked?'default':'pointer')+';opacity:'+op+'">' +
+      '<span style="flex-shrink:0;width:24px;height:24px;border-radius:7px;display:flex;align-items:center;justify-content:center;'+mono+';font-size:11.5px;font-weight:600;margin-top:1px;background:'+bBg+';color:'+bFg+'">'+LETTERS[n]+'</span>' +
+      '<span style="flex:1;min-width:0;text-wrap:pretty">'+esc(text)+'</span>' +
+      (mark ? '<span style="flex-shrink:0;'+mono+';font-size:14px;font-weight:600;margin-top:1px;color:'+mColor+'">'+mark+'</span>' : '') +
+      '</button>';
+  }).join('');
+
+  var expl = reveal ? '<div style="margin-top:20px;padding:16px 18px;background:#f7f6f2;border-left:2.5px solid #2b57cc;border-radius:0 12px 12px 0;animation:qFade .26s ease">' +
+      '<div style="'+mono+';font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:#2b57cc;margin-bottom:8px">Por quê</div>' +
+      '<p style="margin:0;font-size:14.5px;line-height:1.68;color:#39404f;text-wrap:pretty">'+esc(q.explanation)+'</p></div>' : '';
+
+  var blank = counts().blank;
+  var warn = S.warn ? '<div style="margin-top:14px;padding:15px 17px;background:#fdf7e9;border:1px solid #e8d5a3;border-radius:14px;animation:qFade .22s ease">' +
+      '<p style="margin:0 0 12px;font-size:14px;line-height:1.55;color:#6b5620">'+blank+(blank===1?' questão ainda está em branco.':' questões ainda estão em branco.')+' Você pode voltar nelas ou finalizar assim mesmo.</p>' +
+      '<div style="display:flex;flex-wrap:wrap;gap:8px">' +
+        '<button type="button" data-act="gotoBlank" style="background:#121a2b;color:#f5f3ef;border:0;border-radius:9px;padding:9px 16px;font-size:13px;font-weight:500;cursor:pointer">Ir para a 1ª em branco</button>' +
+        '<button type="button" data-act="force" style="background:none;color:#6b5620;border:1px solid #e8d5a3;border-radius:9px;padding:9px 16px;font-size:13px;cursor:pointer">Finalizar assim mesmo</button>' +
+      '</div></div>' : '';
+
+  var last = S.i === S.order.length-1;
+  var early = !last && (S.order.length - blank) > 0;
+
+  document.getElementById('stage').innerHTML =
+    '<section style="padding:26px 0 0">' +
+      '<article style="background:#fff;border:1px solid #e4e0d8;border-radius:18px;padding:26px 22px 24px;box-shadow:0 1px 2px rgba(18,26,43,.04),0 12px 28px -18px rgba(18,26,43,.18)">' +
+        '<div style="display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:14px">' +
+          '<div style="'+mono+';font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:#2b57cc">Questão '+pad(S.i+1)+'</div>' +
+          '<div style="'+mono+';font-size:10.5px;letter-spacing:.06em;color:'+sColor+'">'+status+'</div>' +
+        '</div>' +
+        '<h2 style="font-family:\'Newsreader\',Georgia,serif;font-size:22px;line-height:1.42;font-weight:400;letter-spacing:-.012em;margin:0 0 22px;text-wrap:pretty">'+esc(q.question)+'</h2>' +
+        figura(q, 'qfig') +
+        '<div style="display:flex;flex-direction:column;gap:9px">'+opts+'</div>' + expl +
+        (reveal ? chatBox(q, ans===q.correctIndex) : '') +
+      '</article>' + warn +
+      '<div style="display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:18px">' +
+        '<button type="button" data-act="prev" class="h-line" style="background:none;border:1px solid #ddd8ce;border-radius:11px;padding:12px 18px;font-size:14px;cursor:pointer;transition:border-color .15s ease,color .15s ease;color:'+(S.i===0?'#c4bfb4':'#121a2b')+';pointer-events:'+(S.i===0?'none':'auto')+'">← Anterior</button>' +
+        '<div style="display:flex;align-items:center;gap:8px">' +
+          (early ? '<button type="button" data-act="finish" class="h-ink" style="background:none;border:0;padding:12px 6px;'+mono+';font-size:11.5px;letter-spacing:.06em;text-transform:uppercase;color:#8a8578;cursor:pointer;text-decoration:underline;text-underline-offset:3px">Finalizar</button>' : '') +
+          '<button type="button" data-act="next" class="h-darkflat" style="background:#121a2b;color:#f5f3ef;border:0;border-radius:11px;padding:12px 22px;font-size:14px;font-weight:500;cursor:pointer;transition:background .16s ease">'+(last?'Finalizar':'Próxima →')+'</button>' +
+        '</div></div></section>';
+}
+
+/* ── resultado + gabarito comentado ────────────────────────────────────────── */
+function reviewList(){
+  return S.order.map(function(q,n){
+    var a = S.answers[n], ok = a!==null && a===q.correctIndex;
+    return { idx:n, ok:ok, blank:a===null, q:q, a:a };
+  }).filter(function(r){
+    return S.filter==='all' || (S.filter==='wrong'&&!r.ok&&!r.blank) || (S.filter==='right'&&r.ok) || (S.filter==='blank'&&r.blank);
+  });
+}
+
+function renderResult(){
+  var mono = "font-family:'IBM Plex Mono',monospace";
+  var c = counts(), pct = c.total ? Math.round(c.hit/c.total*100) : 0;
+
+  var title='Precisa revisar', msg='Releia o material com atenção e refaça o quiz — as explicações abaixo cobrem cada erro.';
+  if (pct>=90)      { title='Domínio sólido';   msg='Desempenho excelente. Confira as explicações das que escaparam e siga em frente.'; }
+  else if (pct>=70) { title='Bom desempenho';   msg='Base consistente. Revise os pontos errados abaixo para fechar as lacunas.'; }
+  else if (pct>=50) { title='Meio do caminho';  msg='Você acertou o essencial, mas há lacunas. Comece pelo filtro de erradas.'; }
+
+  var stat = function(v,l,color){
+    return '<div style="background:#faf9f6;padding:14px 10px">' +
+      '<div style="'+mono+';font-size:19px;font-weight:500;color:'+color+'">'+v+'</div>' +
+      '<div style="'+mono+';font-size:9.5px;letter-spacing:.09em;text-transform:uppercase;color:#8a8578;margin-top:2px">'+l+'</div></div>';
+  };
+
+  var fdefs = [['all','Todas',c.total],['wrong','Erradas',c.miss],['right','Certas',c.hit],['blank','Em branco',c.blank]];
+  var filters = fdefs.map(function(f){
+    var on = S.filter===f[0];
+    return '<button type="button" data-act="filter" data-k="'+f[0]+'" class="h-line" style="border-radius:99px;padding:8px 14px;font-size:13px;cursor:pointer;transition:all .15s ease;border:1px solid '+(on?'#121a2b':'#ddd8ce')+';background:'+(on?'#121a2b':'transparent')+';color:'+(on?'#f5f3ef':'#5b6478')+'">'+f[1]+' '+f[2]+'</button>';
+  }).join('');
+
+  var list = reviewList();
+  var allOpen = list.length>0 && list.every(function(r){ return S.open[r.idx]; });
+
+  var cards = list.map(function(r){
+    var numBg='#f0ede7', numFg='#8a8578';
+    if (!r.blank) { if (r.ok) { numBg='#e3f0e8'; numFg='#1f5c3e'; } else { numBg='#fbe6e2'; numFg='#8f2f25'; } }
+    var open = !!S.open[r.idx];
+    var body = '';
+    if (open) {
+      var opts = r.q.options.map(function(text,n){
+        var isC = n===r.q.correctIndex, isMine = n===r.a;
+        var bd='#eeebe4', bg='#fbfaf8', fg='#5b6478', bBg='#f0ede7', bFg='#8a8578', tag='', tBg='', tFg='';
+        if (isC)            { bd='#bcdcc9'; bg='#eef7f1'; fg='#1f5c3e'; bBg='#2e7d55'; bFg='#fff'; tag='Correta'; tBg='#d9ede1'; tFg='#1f5c3e'; }
+        if (isMine && !isC) { bd='#eec4bd'; bg='#fdf0ee'; fg='#8f2f25'; bBg='#c04437'; bFg='#fff'; tag='Sua resposta'; tBg='#f7ddd8'; tFg='#8f2f25'; }
+        if (isMine && isC)  { tag='Sua resposta ✓'; }
+        return '<div style="display:flex;gap:11px;align-items:flex-start;padding:11px 13px;border-radius:11px;font-size:14px;line-height:1.5;border:1px solid '+bd+';background:'+bg+';color:'+fg+'">' +
+          '<span style="flex-shrink:0;width:21px;height:21px;border-radius:6px;display:flex;align-items:center;justify-content:center;'+mono+';font-size:10.5px;font-weight:600;background:'+bBg+';color:'+bFg+'">'+LETTERS[n]+'</span>' +
+          '<span style="flex:1;min-width:0;text-wrap:pretty">'+esc(text)+'</span>' +
+          (tag ? '<span style="flex-shrink:0;'+mono+';font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;padding:3px 7px;border-radius:6px;margin-top:1px;background:'+tBg+';color:'+tFg+'">'+tag+'</span>' : '') +
+          '</div>';
+      }).join('');
+      body = '<div style="padding:2px 15px 18px;animation:qDrawer .2s ease">' +
+        '<div style="height:1px;background:#eeebe4;margin:0 0 16px"></div>' +
+        '<p style="font-family:\'Newsreader\',Georgia,serif;font-size:18px;line-height:1.5;margin:0 0 16px;text-wrap:pretty">'+esc(r.q.question)+'</p>' +
+        figura(r.q) +
+        '<div style="display:flex;flex-direction:column;gap:7px">'+opts+'</div>' +
+        '<div style="margin-top:16px;padding:14px 16px;background:#f7f6f2;border-left:2.5px solid #2b57cc;border-radius:0 11px 11px 0">' +
+          '<div style="'+mono+';font-size:9.5px;letter-spacing:.16em;text-transform:uppercase;color:#2b57cc;margin-bottom:7px">Por quê</div>' +
+          '<p style="margin:0;font-size:14px;line-height:1.65;color:#39404f;text-wrap:pretty">'+esc(r.q.explanation)+'</p></div>' +
+        '<button type="button" data-act="jump" data-n="'+r.idx+'" style="margin-top:14px;background:none;border:0;padding:0;'+mono+';font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:#2b57cc;cursor:pointer;text-decoration:underline;text-underline-offset:3px">Abrir no quiz →</button></div>';
+    }
+    return '<div style="background:#fff;border:1px solid '+(open?'#c9c3b6':'#e4e0d8')+';border-radius:14px;overflow:hidden;transition:border-color .15s ease">' +
+      '<button type="button" data-act="toggle" data-n="'+r.idx+'" style="display:flex;align-items:center;gap:12px;width:100%;text-align:left;background:none;border:0;padding:14px 15px;cursor:pointer">' +
+        '<span style="flex-shrink:0;width:28px;height:28px;border-radius:8px;display:flex;align-items:center;justify-content:center;'+mono+';font-size:12px;font-weight:600;background:'+numBg+';color:'+numFg+'">'+pad(r.idx+1)+'</span>' +
+        '<span style="flex:1;min-width:0;font-size:14px;line-height:1.45;color:#39404f;overflow:hidden;text-overflow:ellipsis;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical">'+esc(r.q.question)+'</span>' +
+        '<span style="flex-shrink:0;'+mono+';font-size:16px;color:#8a8578;width:16px;text-align:center">'+(open?'−':'+')+'</span>' +
+      '</button>' + body + '</div>';
+  }).join('');
+
+  document.getElementById('stage').innerHTML =
+    '<section style="padding:34px 0 0;animation:qFade .3s ease">' +
+      '<div style="'+mono+';font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:#2b57cc;margin-bottom:14px">Resultado</div>' +
+      '<h2 style="font-family:\'Newsreader\',Georgia,serif;font-size:36px;line-height:1.12;font-weight:400;letter-spacing:-.025em;margin:0 0 8px">'+title+'</h2>' +
+      '<p style="font-size:15px;line-height:1.6;color:#5b6478;margin:0 0 24px;max-width:48ch;text-wrap:pretty">'+msg+'</p>' +
+      '<div style="height:8px;border-radius:99px;background:#e4e0d8;overflow:hidden;margin-bottom:10px">' +
+        '<div style="height:100%;border-radius:99px;background:#121a2b;transition:width .7s cubic-bezier(.22,1,.36,1);width:'+pct+'%"></div></div>' +
+      '<div style="display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:#e4e0d8;border:1px solid #e4e0d8;border-radius:14px;overflow:hidden;margin-bottom:34px">' +
+        stat(c.hit,'Certas','#2e7d55')+stat(c.miss,'Erradas','#c04437')+stat(c.blank,'Branco','#8a8578')+stat(pct+'%','Aproveit.','#2b57cc') +
+      '</div>' +
+      '<div style="display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-bottom:14px">' +
+        '<h3 style="font-family:\'Newsreader\',Georgia,serif;font-size:22px;font-weight:500;letter-spacing:-.015em;margin:0">Gabarito comentado</h3>' +
+        '<button type="button" data-act="toggleAll" class="h-ink" style="background:none;border:0;padding:6px 0;'+mono+';font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:#5b6478;cursor:pointer;text-decoration:underline;text-underline-offset:3px">'+(allOpen?'Recolher tudo':'Expandir tudo')+'</button>' +
+      '</div>' +
+      '<div style="display:flex;gap:7px;flex-wrap:wrap;margin-bottom:16px">'+filters+'</div>' +
+      '<div style="display:flex;flex-direction:column;gap:8px">'+cards+'</div>' +
+      (list.length===0 ? '<div style="padding:38px 16px;text-align:center;color:#8a8578;font-size:14px;border:1px dashed #ddd8ce;border-radius:14px">Nenhuma questão neste filtro.</div>' : '') +
+      '<div style="display:flex;flex-wrap:wrap;gap:9px;margin-top:28px;padding-top:24px;border-top:1px solid #e4e0d8">' +
+        '<button type="button" data-act="restart" class="h-darkflat" style="background:#121a2b;color:#f5f3ef;border:0;border-radius:11px;padding:13px 24px;font-size:14px;font-weight:500;cursor:pointer;transition:background .16s ease">Refazer o quiz</button>' +
+        '<button type="button" data-act="back" class="h-line" style="background:none;border:1px solid #ddd8ce;border-radius:11px;padding:13px 22px;font-size:14px;cursor:pointer;transition:border-color .15s ease">Voltar às questões</button>' +
+        '<button type="button" data-act="resumo" class="h-line" style="background:none;border:1px solid #ddd8ce;border-radius:11px;padding:13px 22px;font-size:14px;cursor:pointer;transition:border-color .15s ease">Ler o resumo</button>' +
+      '</div></section>';
+}
+
+/* ── render + eventos ──────────────────────────────────────────────────────── */
+
+/* ─── Tutor DeepSeek — só local, só quando a questão foi errada ──────────────
+   A chave vem de ../deepseek_key.js, que não existe na versão publicada: online
+   o arquivo dá 404, dsOn() vira false e o chat simplesmente não é renderizado.
+   O histórico fica em S.chat[idDaQuestao] e sobrevive ao re-render do stage. */
+var DS_MODEL = 'deepseek-flash';
+var DS_URL   = 'https://api.deepseek.com/chat/completions';
+var NLJS     = String.fromCharCode(10);
+var DS_MONO  = "font-family:'IBM Plex Mono',monospace";
+var DS_SANS  = "font-family:'IBM Plex Sans',system-ui,sans-serif";
+
+function dsOn(){ return typeof window.DEEPSEEK_KEY === 'string' && window.DEEPSEEK_KEY.length > 10; }
+
+
+/* ─── markdown do chat ───────────────────────────────────────────────────────
+   O modelo responde em markdown (**negrito**, listas, `codigo`, tabelas). O texto
+   vem de fora, entao a ordem importa: ESCAPA TUDO primeiro com esc() e so depois
+   aplica formatacao — assim nenhuma tag vinda da resposta vira HTML de verdade.
+   Como esc() ja trocou > por &gt;, a citacao casa com &gt; e nao com >.
+   Trechos de codigo saem de cena por um marcador NUL, que nao pode existir
+   no texto escapado, e voltam no fim — assim ` ` protege o que esta dentro. */
+function mdIn(t){
+  var Z = String.fromCharCode(0), codes = [];
+  t = t.replace(/`([^`]+)`/g, function(_, c){
+    codes.push(c);
+    return Z + 'c' + (codes.length - 1) + Z;
+  });
+  t = t.replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>');
+  t = t.replace(/__([^_]+)__/g, '<strong>$1</strong>');
+  t = t.replace(/(^|[\s(])\*([^*\n]+)\*/g, '$1<em>$2</em>');
+  t = t.replace(/(^|[\s(])_([^_\n]+)_/g, '$1<em>$2</em>');
+  t = t.replace(/\[([^\]]+)\]\((https?:\/\/[^)\s]+)\)/g,
+    '<a href="$2" target="_blank" rel="noopener" style="color:#2b57cc">$1</a>');
+  return t.replace(new RegExp(Z + 'c([0-9]+)' + Z, 'g'), function(_, i){
+    return '<code style="' + DS_MONO + ';font-size:12px;background:#f2efe9;' +
+           'border-radius:4px;padding:1px 5px">' + codes[i] + '</code>';
+  });
+}
+
+function mdChat(txt){
+  var Z = String.fromCharCode(0);
+  var t = esc(String(txt == null ? '' : txt));
+  var blocos = [];
+  t = t.replace(/```[a-zA-Z]*\n?([\s\S]*?)```/g, function(_, c){
+    blocos.push(c.replace(/\n+$/, ''));
+    return Z + 'b' + (blocos.length - 1) + Z;
+  });
+
+  var linhas = t.split('\n'), out = [], lista = null, par = [];
+  function fechaLista(){ if (lista) { out.push('</' + lista + '>'); lista = null; } }
+  function fechaPar(){
+    if (par.length) { out.push('<p style="margin:0 0 9px">' + mdIn(par.join(' ')) + '</p>'); par = []; }
+  }
+  function fecha(){ fechaPar(); fechaLista(); }
+
+  for (var i = 0; i < linhas.length; i++){
+    var l = linhas[i], t2 = l.trim();
+    if (!t2) { fecha(); continue; }
+
+    var bl = t2.match(new RegExp('^' + Z + 'b([0-9]+)' + Z + '$'));
+    if (bl) {
+      fecha();
+      out.push('<pre style="margin:0 0 9px;padding:9px 11px;background:#f7f6f2;border-radius:9px;' +
+               'overflow-x:auto;' + DS_MONO + ';font-size:12px;line-height:1.5">' + blocos[bl[1]] + '</pre>');
+      continue;
+    }
+
+    // tabela: linha com | ... | seguida da separadora | --- | --- |
+    if (t2.charAt(0) === '|' && i + 1 < linhas.length && /^\|[\s:|-]+\|$/.test(linhas[i+1].trim())) {
+      fecha();
+      var celulas = function(linha){
+        return linha.trim().replace(/^\||\|$/g, '').split('|').map(function(c){ return mdIn(c.trim()); });
+      };
+      var cab = celulas(t2), corpo = [];
+      i += 2;
+      while (i < linhas.length && linhas[i].trim().charAt(0) === '|') { corpo.push(celulas(linhas[i].trim())); i++; }
+      i--;
+      var cel = 'padding:5px 9px;border-bottom:1px solid #eae6de;text-align:left;vertical-align:top';
+      out.push('<div style="overflow-x:auto;margin:0 0 9px">' +
+        '<table style="border-collapse:collapse;font-size:12.5px;width:100%">' +
+        '<thead><tr>' + cab.map(function(c){ return '<th style="' + cel + ';font-weight:600">' + c + '</th>'; }).join('') + '</tr></thead>' +
+        '<tbody>' + corpo.map(function(r){
+          return '<tr>' + r.map(function(c){ return '<td style="' + cel + '">' + c + '</td>'; }).join('') + '</tr>';
+        }).join('') + '</tbody></table></div>');
+      continue;
+    }
+
+    var h = t2.match(/^#{1,6}\s+(.*)$/);
+    if (h) {
+      fecha();
+      out.push('<div style="font-weight:600;color:#121a2b;margin:11px 0 5px">' + mdIn(h[1]) + '</div>');
+      continue;
+    }
+
+    if (/^(---+|\*\*\*+)$/.test(t2)) {
+      fecha();
+      out.push('<hr style="border:0;border-top:1px solid #eae6de;margin:11px 0">');
+      continue;
+    }
+
+    var cit = t2.match(/^&gt;\s?(.*)$/);
+    if (cit) {
+      fecha();
+      out.push('<div style="margin:0 0 9px;padding:7px 11px;border-left:2.5px solid #c9d6f7;' +
+               'background:#f7f9fe;border-radius:0 7px 7px 0">' + mdIn(cit[1]) + '</div>');
+      continue;
+    }
+
+    var mUl = t2.match(/^[-*•]\s+(.*)$/);
+    var mOl = t2.match(/^\d+[.)]\s+(.*)$/);
+    if (mUl || mOl) {
+      var tipo = mUl ? 'ul' : 'ol';
+      fechaPar();
+      if (lista !== tipo) {
+        fechaLista();
+        out.push('<' + tipo + ' style="margin:0 0 9px;padding-left:19px">');
+        lista = tipo;
+      }
+      out.push('<li style="margin:3px 0">' + mdIn((mUl || mOl)[1]) + '</li>');
+      continue;
+    }
+
+    fechaLista();
+    par.push(t2);
+  }
+  fecha();
+  return out.join('');
+}
+
+function msgHTML(m){
+  if (m.role === 'user')
+    return '<div style="margin:0 0 10px;text-align:right">' +
+      '<span style="display:inline-block;max-width:88%;text-align:left;background:#f2efe9;' +
+      'border-radius:12px 12px 3px 12px;padding:9px 12px;font-size:13.5px;line-height:1.6;' +
+      'color:#39404f;text-wrap:pretty">' + esc(m.content) + '</span></div>';
+  return '<div style="margin:0 0 12px">' +
+    '<div style="' + DS_MONO + ';font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;' +
+    'color:#2b57cc;margin-bottom:4px">DeepSeek</div>' +
+    '<div style="font-size:13.5px;line-height:1.65;color:#39404f;text-wrap:pretty">' +
+    mdChat(m.content) + '</div></div>';
+}
+
+function chatBox(q, acertou){
+  if (!dsOn()) return '';
+  var chamada = acertou ? 'Quer ir mais fundo?' : 'Ainda com dúvida?';
+  var dica = acertou ? 'Por que as outras estão erradas?' : 'Por que a que eu marquei está errada?';
+  var hist = (S.chat[q.id] || []).map(msgHTML).join('');
+  return '<div id="ds" data-qid="' + q.id + '" style="margin-top:14px;border:1px solid #e4e0d8;' +
+      'border-radius:14px;background:#fff;overflow:hidden;animation:qFade .26s ease">' +
+      '<div style="display:flex;align-items:center;gap:8px;padding:11px 15px;' +
+        'border-bottom:1px solid #f0ede6;background:#faf9f6">' +
+        '<span style="' + DS_MONO + ';font-size:10px;letter-spacing:.16em;text-transform:uppercase;' +
+        'color:#2b57cc">' + chamada + '</span>' +
+        '<span style="font-size:12px;color:#8a8578">pergunte ao DeepSeek</span></div>' +
+      '<div id="dsLog" style="max-height:280px;overflow-y:auto;padding:' + (hist ? '12px 15px' : '0') + '">' +
+        hist + '</div>' +
+      '<div style="display:flex;gap:8px;padding:11px 12px;border-top:1px solid #f0ede6">' +
+        '<input id="dsIn" type="text" autocomplete="off" ' +
+          'placeholder="' + dica + '" ' +
+          'style="flex:1;min-width:0;border:1px solid #e4e0d8;border-radius:10px;padding:10px 12px;' +
+          'font-size:13.5px;' + DS_SANS + ';color:#121a2b;background:#fff;outline:none">' +
+        '<button type="button" data-act="dsSend" class="h-darkflat" style="flex-shrink:0;' +
+          'background:#121a2b;color:#f5f3ef;border:0;border-radius:10px;padding:10px 16px;' +
+          'font-size:13px;font-weight:500;cursor:pointer;transition:background .16s ease">Enviar</button>' +
+      '</div></div>';
+}
+
+function dsContexto(q, ans){
+  var alts = q.options.map(function(o, n){ return LETTERS[n] + ') ' + o; }).join(NLJS);
+  return 'Questao: ' + q.question + NLJS + alts + NLJS +
+    'Resposta correta: ' + LETTERS[q.correctIndex] + ') ' + q.options[q.correctIndex] + NLJS +
+    'O estudante marcou: ' + (ans === null ? 'nada' : LETTERS[ans] + ') ' + q.options[ans]) + NLJS +
+    'Explicacao que ele ja tem: ' + q.explanation;
+}
+
+A.dsSend = function(){
+  var box = document.getElementById('ds');
+  if (!box || !dsOn() || box.getAttribute('data-busy')) return;
+  var input = document.getElementById('dsIn'), log = document.getElementById('dsLog');
+  var texto = (input.value || '').trim();
+  if (!texto) return;
+
+  var qid = parseInt(box.getAttribute('data-qid'), 10), q = null, ans = null;
+  for (var i = 0; i < S.order.length; i++)
+    if (S.order[i].id === qid) { q = S.order[i]; ans = S.answers[i]; }
+  if (!q) return;
+
+  S.chat[qid] = S.chat[qid] || [];
+  S.chat[qid].push({ role:'user', content:texto });
+  input.value = '';
+  log.style.padding = '12px 15px';
+  log.insertAdjacentHTML('beforeend', msgHTML({ role:'user', content:texto }));
+  log.insertAdjacentHTML('beforeend',
+    '<div><div style="' + DS_MONO + ';font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;' +
+    'color:#2b57cc;margin-bottom:4px">DeepSeek</div>' +
+    '<div id="dsTxt" style="font-size:13.5px;line-height:1.65;color:#8a8578;' +
+    'text-wrap:pretty">pensando…</div></div>');
+  log.scrollTop = log.scrollHeight;
+  box.setAttribute('data-busy', '1');
+
+  var acertou = (ans === q.correctIndex);
+  var situacao = acertou
+    ? 'Voce e um tutor de medicina. O estudante do 7o semestre ACERTOU esta questao, mas ficou com uma duvida. '
+    : 'Voce e um tutor de medicina. O estudante do 7o semestre ERROU esta questao. ';
+  var msgs = [
+    { role:'system', content: situacao +
+      'Responda em portugues do Brasil, direto ao ponto, no maximo 150 palavras. ' +
+      'Traga o dado concreto (valor, criterio, mecanismo) em vez de generalidade. ' +
+      'Nao repita a explicacao que ele ja tem; foque na duvida que ele trouxe.' },
+    { role:'user', content: dsContexto(q, ans) }
+  ];
+  var h = S.chat[qid];
+  for (var j = 0; j < h.length; j++) msgs.push({ role:h[j].role, content:h[j].content });
+
+  dsStream(msgs, function(txt, fim, erro){
+    var el = document.getElementById('dsTxt');
+    if (!el) { box.removeAttribute('data-busy'); return; }
+    if (erro) { el.style.color = '#c04437'; el.textContent = erro; box.removeAttribute('data-busy'); return; }
+    el.style.color = '#39404f';
+    el.innerHTML = mdChat(txt);
+    var lg = document.getElementById('dsLog'); if (lg) lg.scrollTop = lg.scrollHeight;
+    if (fim) { el.removeAttribute('id'); S.chat[qid].push({ role:'assistant', content:txt }); box.removeAttribute('data-busy'); }
+  });
+};
+
+function dsStream(messages, cb){
+  var acc = '';
+  fetch(DS_URL, {
+    method: 'POST',
+    headers: { 'Content-Type':'application/json', 'Authorization':'Bearer ' + window.DEEPSEEK_KEY },
+    body: JSON.stringify({ model:DS_MODEL, messages:messages, stream:true, max_tokens:1200, temperature:0.3 })
+  }).then(function(r){
+    if (!r.ok) return r.text().then(function(t){
+      throw new Error(
+        r.status === 401 ? 'Chave recusada (401). Confira o deepseek_key.js.' :
+        r.status === 402 ? 'Sem saldo na conta DeepSeek (402).' :
+        r.status === 429 ? 'Limite de uso atingido (429). Tente daqui a pouco.' :
+        'Erro ' + r.status + ': ' + String(t).slice(0, 120));
+    });
+    var reader = r.body.getReader(), dec = new TextDecoder(), buf = '';
+    (function pump(){
+      return reader.read().then(function(res){
+        if (res.done) { cb(acc || '(resposta vazia)', true); return; }
+        buf += dec.decode(res.value, { stream:true });
+        var linhas = buf.split(NLJS);
+        buf = linhas.pop();
+        for (var i = 0; i < linhas.length; i++){
+          var l = linhas[i].trim();
+          if (l.indexOf('data:') !== 0) continue;
+          var carga = l.slice(5).trim();
+          if (carga === '[DONE]') continue;
+          try {
+            var d = JSON.parse(carga).choices[0].delta;
+            if (d && d.content) { acc += d.content; cb(acc, false); }
+          } catch (_){}
+        }
+        return pump();
+      });
+    })();
+  }).catch(function(e){
+    cb('', true, 'Nao consegui falar com o DeepSeek: ' + (e && e.message ? e.message : e));
+  });
+}
+
+function render(){
+  renderHeader();
+  if (S.view === 'home')        renderHome();
+  else if (S.view === 'resumo') renderResumo();
+  else if (S.finished)          renderResult();
+  else                          renderQuestion();
+}
+
+/* lightbox: clique em qualquer figura amplia */
+document.addEventListener('click', function(e){
+  var lb = document.getElementById('lb');
+  if (e.target.closest('#lb')) { lb.className = ''; return; }
+  var img = e.target.closest('.fig img');
+  if (img) { lb.firstElementChild.src = img.src; lb.className = 'on'; }
+});
+window.addEventListener('keydown', function(e){
+  if (e.key === 'Escape') document.getElementById('lb').className = '';
+});
+
+document.addEventListener('click', function(e){
+  var b = e.target.closest('[data-act]'); if (!b) return;
+  var act = b.getAttribute('data-act'), n = parseInt(b.getAttribute('data-n'),10), k = b.getAttribute('data-k');
+  if (act==='pick'||act==='jump'||act==='toggle') A[act](n);
+  else if (act==='filter') A.filter(k);
+  else if (A[act]) A[act]();
+});
+
+window.addEventListener('keydown', function(e){
+  if (S.view!=='quiz' || !S.started || S.finished) return;
+  var t = e.target, tag = t && t.tagName;
+  if (tag==='INPUT' || tag==='TEXTAREA' || (t && t.isContentEditable)) return;
+  if (e.metaKey||e.ctrlKey||e.altKey) return;
+  if (e.key==='ArrowRight')     { e.preventDefault(); A.go(S.i+1); }
+  else if (e.key==='ArrowLeft') { e.preventDefault(); A.go(S.i-1); }
+  else if (e.key==='Enter')     { e.preventDefault(); A.next(); }
+  else if (/^[1-6]$/.test(e.key)) {
+    var n = parseInt(e.key,10)-1;
+    if (n < S.order[S.i].options.length) A.pick(n);
+  }
+});
+
+render();
+</script>
+</body>
+</html>

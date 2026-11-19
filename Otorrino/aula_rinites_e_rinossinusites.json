@@ -2,7 +2,7 @@
   "titulo": "Rinites e Rinossinusites",
   "eyebrow": "Otorrinolaringologia · Nariz e Seios Paranasais",
   "subtitulo": "Da rinite alérgica às rinossinusites: classificar, investigar e tratar",
-  "intro": "Classificação das rinites (ARIA, alérgica × não alérgica), fisiopatologia e diagnóstico da rinite alérgica, tratamento em degraus, rinites infecciosa, idiopática, gestacional e medicamentosa, e a abertura das rinossinusites: anatomia, epitélio e quadro clínico.",
+  "intro": "Rinites: classificação, ARIA, fisiopatologia, diagnóstico e tratamento da rinite alérgica e as rinites não alérgicas. Rinossinusites: critérios EPOS 2020, aguda × crônica, fisiopatologia, fatores de risco, viral × bacteriana, antibióticos, complicações e cirurgia.",
   "questoes": [
     {
       "question": "A rinite é definida pelo somatório de quatro sintomas nasais. Que conjunto é esse?",
@@ -73,17 +73,6 @@
       "explanation": "As rinites alérgicas se dividem em sazonal, perene, circunstancial e ocupacional. Idiopática, hormonal, atrófica, emocional e por desuso pertencem ao grupo das \"outras\" rinites, que são não alérgicas e têm teste cutâneo negativo."
     },
     {
-      "question": "A rinite infecciosa se divide em aguda e crônica. Como cada uma dessas formas se subdivide?",
-      "options": [
-        "Aguda em viral e bacteriana; crônica em específica e inespecífica",
-        "Aguda em viral e fúngica; crônica em específica e inespecífica",
-        "Aguda em viral e bacteriana; crônica em alérgica e não alérgica",
-        "Aguda em bacteriana e fúngica; crônica em sazonal e perene"
-      ],
-      "correctIndex": 0,
-      "explanation": "A rinite infecciosa aguda se subdivide em viral e bacteriana; a crônica, em específica (com agente definido, como tuberculose ou hanseníase) e inespecífica. Sazonal e perene são subtipos de rinite alérgica, não de rinite infecciosa."
-    },
-    {
       "question": "Como varia a participação da rinite alérgica no total de rinites entre adultos e crianças?",
       "options": [
         "Responde por cerca de 56% nos adultos e sobe para 66% nas crianças",
@@ -92,9 +81,7 @@
         "Responde por cerca de 20% nos adultos e sobe para 56% nas crianças"
       ],
       "correctIndex": 0,
-      "explanation": "A rinite alérgica é a causa mais frequente nos dois grupos, mas pesa mais na infância: cerca de 56% dos casos no adulto e 66% na criança. A rinite idiopática fica em torno de 20% nos dois, e a rinite eosinofílica não alérgica cai de 13,5% no adulto para 8,5% na criança.",
-      "image": "pg06",
-      "imageCaption": "Distribuição das rinites em adultos e em crianças"
+      "explanation": "A rinite alérgica é a causa mais frequente nos dois grupos, mas pesa mais na infância: cerca de 56% dos casos no adulto e 66% na criança. A rinite idiopática fica em torno de 20% nos dois, e a rinite eosinofílica não alérgica cai de 13,5% no adulto para 8,5% na criança."
     },
     {
       "question": "Em que consiste a hiperreatividade nasal, base fisiopatológica da rinite alérgica?",
@@ -105,7 +92,7 @@
         "Produção deficiente de mediadores químicos, como a histamina"
       ],
       "correctIndex": 0,
-      "explanation": "Hiperreatividade é responder de forma exagerada a um estímulo que seria inócuo, por ação de mediadores químicos como a histamina. É esse traço, e não o alérgeno em si, que explica por que o paciente também reage a cheiro forte, frio e poeira inespecífica."
+      "explanation": "Hiperreatividade é responder de forma exagerada a um estímulo que seria inócuo, por ação de mediadores químicos como a histamina, sobre um terreno de predisposição alérgica. É esse traço, e não o alérgeno em si, que explica por que o paciente também reage a cheiro forte, frio e poeira inespecífica."
     },
     {
       "question": "Qual célula faz a captação e a apresentação inicial do antígeno na mucosa nasal?",
@@ -116,42 +103,40 @@
         "O plasmócito, que atua como apresentador inicial de antígeno"
       ],
       "correctIndex": 0,
-      "explanation": "A célula de Langerhans processa o antígeno na mucosa e trafega pelo anel de Waldeyer e pelos linfonodos de drenagem locais para apresentá-lo aos linfócitos. O mastócito é efetor da fase imediata, o eosinófilo da fase tardia e o plasmócito produz a IgE."
+      "explanation": "A célula de Langerhans processa o antígeno na mucosa e migra para os tecidos linfoides das vias aéreas superiores (anel de Waldeyer) e para os linfonodos de drenagem locais, onde o apresenta aos linfócitos. O mastócito é efetor da fase imediata, o eosinófilo da fase tardia e o plasmócito produz a IgE."
     },
     {
       "question": "Após a apresentação do antígeno, para que linhagem se diferencia o linfócito Th0 na rinite alérgica, e com que consequência?",
       "options": [
-        "Para Th2, liberando IL-4, IL-5 e IL-13 e mantendo ambiente atópico",
-        "Para Th1, liberando IL-4, IL-5 e IL-13 e mantendo ambiente atópico",
-        "Para Th2, liberando apenas interferon-gama e suprimindo a atopia",
-        "Para Th17, liberando IL-17 e atraindo neutrófilos para a mucosa"
+        "Para Th2, cuja IL-4, IL-5 e IL-13 promovem IgE e inflamação eosinofílica",
+        "Para Th1, cuja IL-4, IL-5 e IL-13 promovem IgE e inflamação eosinofílica",
+        "Para Th2, cujo interferon-gama suprime a IgE e a inflamação eosinofílica",
+        "Para Th17, cuja IL-17 atrai neutrófilos e gera inflamação neutrofílica"
       ],
       "correctIndex": 0,
-      "explanation": "O desvio Th0 para Th2 é o ponto de virada da atopia. O perfil Th2 libera IL-3, IL-4, IL-5, IL-9, IL-10 e IL-13, além de GM-CSF, sustentando um ambiente que favorece a produção de IgE e o recrutamento de eosinófilos."
+      "explanation": "O desvio de Th0 para Th2 é o ponto de virada da atopia. A resposta Th2, principalmente IL-4, IL-5 e IL-13, promove a produção de IgE e a inflamação eosinofílica: IL-4 e IL-13 levam o linfócito B a virar plasmócito produtor de IgE, e a IL-5 recruta o eosinófilo da fase tardia."
     },
     {
-      "question": "Que sintomas marcam a fase imediata da rinite alérgica e quanto tempo ela dura?",
+      "question": "Que sintomas marcam a fase imediata da rinite alérgica e qual é o seu curso no tempo?",
       "options": [
-        "Prurido, espirros, rinorreia e obstrução, com duração de até 1 hora",
-        "Prurido, espirros, rinorreia e obstrução, com duração de 4 a 48 horas",
-        "Obstrução nasal e hiposmia isoladas, com duração de até 1 hora",
-        "Obstrução nasal e hiposmia isoladas, com duração de 4 a 48 horas"
+        "Prurido, espirros, rinorreia e obstrução, com início em minutos e pico na 1ª hora",
+        "Prurido, espirros, rinorreia e obstrução, com início 4 a 8 horas após o contato",
+        "Obstrução nasal e hiposmia isoladas, com início em minutos e pico na 1ª hora",
+        "Obstrução nasal e hiposmia isoladas, com início 4 a 8 horas após o contato"
       ],
       "correctIndex": 0,
-      "explanation": "Na sensibilização o linfócito B, sob IL-4 e IL-13 do Th2, vira plasmócito e produz IgE, que se fixa no mastócito. Na reexposição o mastócito desgranula histamina, leucotrienos e interleucinas: o quadro completo surge em minutos e se esgota em até 1 hora. A janela de 4 a 48 horas pertence à fase tardia."
+      "explanation": "Na sensibilização, o linfócito B, sob IL-4 e IL-13 do Th2, vira plasmócito e produz IgE, que se fixa no mastócito. Na reexposição o mastócito libera histamina, leucotrienos e citocinas: prurido, espirros, rinorreia e obstrução começam em minutos e predominam na primeira hora. O início 4 a 8 horas após o contato pertence à fase tardia."
     },
     {
-      "question": "Qual célula domina a fase tardia da reação alérgica nasal e qual é a duração dessa fase?",
+      "question": "Qual célula domina a fase tardia da reação alérgica nasal e em que janela de tempo ela se manifesta?",
       "options": [
-        "O eosinófilo, com duração de 4 a 48 horas após a exposição",
-        "O mastócito, com duração de 4 a 48 horas após a exposição",
-        "O eosinófilo, com duração de até 1 hora após a exposição",
-        "O neutrófilo, com duração de até 1 hora após a exposição"
+        "O eosinófilo, com início 4 a 8 horas após a exposição e duração de até 48 horas",
+        "O mastócito, com início 4 a 8 horas após a exposição e duração de até 48 horas",
+        "O eosinófilo, com início em minutos e predomínio na primeira hora após o contato",
+        "O neutrófilo, com início em minutos e predomínio na primeira hora após o contato"
       ],
       "correctIndex": 0,
-      "explanation": "A fase tardia é do eosinófilo e vai de 4 a 48 horas depois do contato. É nela que se instala a hiper-reatividade, com participação do sistema nervoso autônomo, e por isso o paciente segue obstruído muito depois de o alérgeno ter saído de cena.",
-      "image": "pg11",
-      "imageCaption": "Fase tardia da reação alérgica nasal"
+      "explanation": "A fase tardia é do eosinófilo, recrutado pela IL-5: começa 4 a 8 horas após a exposição e pode persistir por 24 a 48 horas. É nela que se instalam a inflamação persistente da mucosa e a hiper-reatividade, e por isso o paciente segue obstruído muito depois de o alérgeno ter saído de cena."
     },
     {
       "question": "Que consequências clínicas distinguem a rinorreia anterior da rinorreia posterior na rinite alérgica?",
@@ -162,7 +147,7 @@
         "A anterior gera dor facial intensa; a posterior, febre de padrão vespertino"
       ],
       "correctIndex": 0,
-      "explanation": "A rinorreia da rinite alérgica é tipicamente clara. Quando escorre pela frente, provoca espirros e a limpeza repetida do nariz; quando escorre para trás, produz gotejamento pós-nasal e roncos. Epistaxe, dor facial e febre não fazem parte do quadro."
+      "explanation": "A rinorreia da rinite alérgica é tipicamente clara. Quando escorre pela frente, provoca espirros e a limpeza repetida do nariz; quando escorre para trás, produz secreção pós-nasal e roncos. Epistaxe, dor facial e febre não fazem parte do quadro."
     },
     {
       "question": "Por que a obstrução nasal da rinite alérgica pode alternar de lado entre as fossas nasais?",
@@ -223,7 +208,7 @@
         "Só pode ser solicitado em pacientes acima de 20 anos"
       ],
       "correctIndex": 0,
-      "explanation": "O RAST tem em torno de 20% de falso-positivos, o que obriga a interpretá-lo sempre junto da clínica. É um exame útil quando o teste cutâneo não pode ser feito, mas não substitui a história nem autoriza diagnóstico por si só."
+      "explanation": "O RAST tem em torno de 20% de falso-positivos, o que obriga a interpretá-lo sempre junto da clínica. E o exame útil é a IgE específica contra o alérgeno, não a IgE total — confundir as duas é erro clássico de pedido. O RAST não substitui a história nem autoriza diagnóstico por si só."
     },
     {
       "question": "No citológico nasal, que célula predominante aponta para cada tipo de rinite?",
@@ -245,7 +230,7 @@
         "Servem para substituir o teste cutâneo sempre que ele não existir"
       ],
       "correctIndex": 0,
-      "explanation": "O diagnóstico de rinite alérgica é clínico, apoiado em teste cutâneo, RAST, hemograma e citológico nasal. Endoscopia nasal e tomografia entram só para afastar outras causas de obstrução, como polipose, tumor, corpo estranho ou desvio septal."
+      "explanation": "O diagnóstico de rinite alérgica é clínico, apoiado em teste cutâneo, IgE específica (RAST), hemograma e citologia nasal. Endoscopia nasal e exames de imagem entram só para o diagnóstico diferencial, afastando outras causas de obstrução como polipose, tumor, corpo estranho ou desvio septal."
     },
     {
       "question": "Que medidas formam a base do tratamento da rinite alérgica?",
@@ -256,7 +241,18 @@
         "Imunoterapia isolada, antileucotrieno e descongestionante sistêmico"
       ],
       "correctIndex": 0,
-      "explanation": "O tratamento começa pelo controle ambiental e pela lavagem nasal com soro fisiológico, aos quais se somam o anti-histamínico e o corticoide tópico nasal. Descongestionante sistêmico, corticoide oral, antileucotrieno e imunoterapia são degraus posteriores, não a base."
+      "explanation": "O tratamento começa pela higiene ambiental (redução da exposição) e pela lavagem nasal com soro fisiológico, aos quais se somam o corticoide intranasal e o anti-histamínico de 2ª geração, oral ou intranasal. Descongestionante sistêmico, corticoide oral, estabilizador de mastócito, antileucotrieno e imunoterapia não são a base."
+    },
+    {
+      "question": "Na rinite alérgica com sintomas intensos ou controle insuficiente com um único fármaco, que associação está indicada?",
+      "options": [
+        "Corticoide intranasal associado a anti-histamínico intranasal",
+        "Corticoide oral contínuo associado a descongestionante tópico",
+        "Descongestionante sistêmico contínuo e anti-histamínico oral",
+        "Antibiótico oral associado a corticoide intranasal de manutenção"
+      ],
+      "correctIndex": 0,
+      "explanation": "Quando os sintomas são intensos ou a monoterapia não controla, associa-se o corticoide intranasal ao anti-histamínico intranasal. O descongestionante sistêmico só tem lugar em uso curto e selecionado, e o corticoide oral só em uso curto nos casos graves — nenhum dos dois serve de manutenção, e antibiótico não trata alergia."
     },
     {
       "question": "Em que situações a cirurgia entra no tratamento do paciente com rinite alérgica?",
@@ -349,19 +345,6 @@
       "imageCaption": "Pneumatização dos seios paranasais: RN, 10 e 15 anos"
     },
     {
-      "question": "No adulto, que quatro sintomas compõem o quadro clássico da rinossinusite?",
-      "options": [
-        "Rinorreia, obstrução nasal, dor e anosmia",
-        "Rinorreia, obstrução nasal, dor e tosse",
-        "Rinorreia, obstrução nasal, febre e epistaxe",
-        "Espirros, prurido nasal, dor e anosmia"
-      ],
-      "correctIndex": 0,
-      "explanation": "No adulto o quadro se resume em quatro sintomas: rinorreia, obstrução nasal, dor e anosmia — o mnemônico RODA. Espirros e prurido são mais típicos da rinite alérgica, e epistaxe não compõe o quadro habitual da rinossinusite.",
-      "image": "pg30",
-      "imageCaption": "Sintomas da rinossinusite no adulto"
-    },
-    {
       "question": "O conjunto clássico de sintomas da rinossinusite difere entre adulto e criança em um item. Qual é a diferença?",
       "options": [
         "No adulto o quarto sintoma é a anosmia; na criança, a tosse",
@@ -370,7 +353,167 @@
         "No adulto o quarto sintoma é a epistaxe; na criança, a tosse"
       ],
       "correctIndex": 0,
-      "explanation": "Rinorreia, obstrução nasal e dor são comuns aos dois. O quarto item muda: anosmia no adulto (RODA) e tosse na criança (RODT), já que a criança deglute a secreção posterior e tosse, enquanto raramente relata perda de olfato de forma espontânea."
+      "explanation": "Rinorreia, obstrução nasal e dor são comuns aos dois. O quarto item muda: anosmia ou redução do olfato no adulto (RODA) e tosse na criança (RODT), já que a criança deglute a secreção posterior e tosse, enquanto raramente relata perda de olfato de forma espontânea."
+    },
+    {
+      "question": "Pelos critérios sintomáticos do EPOS 2020, o que é necessário para o diagnóstico clínico de rinossinusite?",
+      "options": [
+        "Dois ou mais sintomas, sendo um deles rinorreia ou obstrução nasal",
+        "Dois ou mais sintomas, sendo um deles dor facial ou anosmia",
+        "Um único sintoma, desde que seja dor ou pressão facial",
+        "Três ou mais sintomas, sendo obrigatória a febre acima de 38 °C"
+      ],
+      "correctIndex": 0,
+      "explanation": "O critério pede dois ou mais sintomas entre rinorreia, obstrução nasal, dor ou pressão facial e anosmia ou redução do olfato (tosse, na criança), e um deles precisa ser rinorreia ou obstrução nasal. Dor facial isolada não fecha rinossinusite, e febre não faz parte do critério sintomático.",
+      "image": "pg32",
+      "imageCaption": "Critérios sintomáticos e evidência objetiva (EPOS 2020)"
+    },
+    {
+      "question": "Qual é o ponto de corte de duração que separa a rinossinusite aguda da crônica?",
+      "options": [
+        "12 semanas: aguda abaixo disso, crônica a partir de 12 semanas",
+        "4 semanas: aguda abaixo disso, crônica a partir de 4 semanas",
+        "10 dias: aguda abaixo disso, crônica a partir de 10 dias",
+        "6 meses: aguda abaixo disso, crônica a partir de 6 meses"
+      ],
+      "correctIndex": 0,
+      "explanation": "Pelo EPOS 2020, a rinossinusite é aguda quando dura menos de 12 semanas e crônica quando chega a 12 semanas ou mais. O marco de 10 dias não separa aguda de crônica — ele separa, dentro da aguda, o quadro provavelmente viral do provavelmente bacteriano; e 4 semanas é o corte da ARIA para rinite alérgica."
+    },
+    {
+      "question": "Como se define a rinossinusite recorrente?",
+      "options": [
+        "Quatro ou mais episódios de rinossinusite aguda por ano",
+        "Dois ou mais episódios de rinossinusite aguda por ano",
+        "Sintomas contínuos por 12 semanas ou mais sem melhora",
+        "Quatro ou mais episódios de rinossinusite aguda por mês"
+      ],
+      "correctIndex": 0,
+      "explanation": "Recorrente é a rinossinusite com 4 ou mais episódios por ano. Não confundir com a crônica, que é um único quadro arrastado por 12 semanas ou mais. A classificação reconhece ainda a forma complicada, em que a infecção ultrapassa os seios e atinge órbita, osso do crânio ou espaço intracraniano."
+    },
+    {
+      "question": "Que exigência diagnóstica diferencia a rinossinusite crônica da aguda?",
+      "options": [
+        "A crônica exige confirmação objetiva por endoscopia ou tomografia",
+        "A crônica exige cultura positiva da secreção do meato médio",
+        "A aguda exige tomografia antes de qualquer diagnóstico clínico",
+        "A aguda exige radiografia simples dos seios para ser confirmada"
+      ],
+      "correctIndex": 0,
+      "explanation": "Na rinossinusite aguda o diagnóstico é predominantemente clínico. Na crônica, além dos sintomas, é necessária evidência objetiva de inflamação nasossinusal: à endoscopia, ao menos um entre secreção em meato médio, edema obstrutivo e pólipos; ou alterações da mucosa dos seios paranasais na tomografia."
+    },
+    {
+      "question": "Qual é o evento inicial do ciclo fisiopatológico da rinossinusite?",
+      "options": [
+        "Obstrução do óstio de drenagem, com retenção de secreção no seio",
+        "Crescimento bacteriano primário, que só depois obstrui o óstio",
+        "Hipersecreção de muco por excesso de células caliciformes",
+        "Aumento do movimento mucociliar, que esgota o epitélio ciliado"
+      ],
+      "correctIndex": 0,
+      "explanation": "Tudo começa com a obstrução do óstio de drenagem. No seio fechado caem a pO2 e o pH, sobe a pCO2 e a secreção fica retida; o movimento mucociliar diminui, as bactérias crescem e a infecção piora a obstrução, fechando um ciclo vicioso. O tratamento mira justamente romper esse ciclo no óstio e na infecção.",
+      "image": "pg33",
+      "imageCaption": "Ciclo fisiopatológico da rinossinusite"
+    },
+    {
+      "question": "Que conjunto reúne apenas fatores de risco SISTÊMICOS para rinossinusite?",
+      "options": [
+        "Fibrose cística, discinesia ciliar, diabetes e imunodeficiências",
+        "Desvio septal, hipertrofia de adenoide, pólipo nasal e tumores",
+        "Fumaça de cigarro, baixa umidade, poluentes e barotrauma",
+        "Infecção dentária, corpo estranho, fenda palatina e trauma facial"
+      ],
+      "correctIndex": 0,
+      "explanation": "São sistêmicos a fibrose cística, as imunodeficiências (SIDA, deficiência de IgA secretora), a discinesia ciliar (síndrome de Kartagener), o diabetes, a quimioterapia, a tuberculose (específica e rara) e o refluxo gastroesofágico, ainda controverso. Desvio septal, adenoide, pólipo, dente e corpo estranho são fatores locais; cigarro, poluentes, frio, ar seco e barotrauma são ambientais."
+    },
+    {
+      "question": "Quais são os três principais agentes bacterianos da rinossinusite aguda?",
+      "options": [
+        "S. pneumoniae, H. influenzae e Moraxella catarrhalis",
+        "S. aureus, Pseudomonas aeruginosa e anaeróbios",
+        "S. pyogenes, Klebsiella pneumoniae e S. aureus",
+        "S. pneumoniae, Pseudomonas aeruginosa e S. aureus"
+      ],
+      "correctIndex": 0,
+      "explanation": "A tríade da rinossinusite bacteriana aguda é Streptococcus pneumoniae, Haemophilus influenzae e Moraxella catarrhalis; Staphylococcus aureus e anaeróbios aparecem com menos frequência. É essa microbiologia que coloca a amoxicilina, isolada ou com clavulanato, à frente da lista de antibacterianos."
+    },
+    {
+      "question": "Na rinossinusite aguda, a partir de que tempo de evolução sem resolução o quadro passa a ser considerado provavelmente bacteriano?",
+      "options": [
+        "10 dias, corte baseado na evolução habitual das viroses",
+        "3 dias, corte baseado na evolução habitual das viroses",
+        "12 semanas, corte baseado na evolução habitual das viroses",
+        "5 dias, corte baseado no pico habitual da febre bacteriana"
+      ],
+      "correctIndex": 0,
+      "explanation": "O resfriado viral atinge o pico nos primeiros dias e tende a se resolver; o quadro que se mantém, ou que volta a piorar, e chega ao 10º dia sem resolução é provavelmente bacteriano. O corte de 10 dias vem da evolução clínica habitual das infecções virais, e não de um exame.",
+      "image": "pg48",
+      "imageCaption": "Evolução dos sintomas e o corte de 10 dias"
+    },
+    {
+      "question": "Um paciente com resfriado melhora até o 3º ou 4º dia, volta a piorar e mantém sintomas intensos no 10º dia. Como interpretar essa evolução?",
+      "options": [
+        "Provável rinossinusite bacteriana, pela piora após melhora inicial",
+        "Resfriado viral habitual, que costuma piorar de novo no 10º dia",
+        "Rinossinusite crônica, por ter ultrapassado o prazo de 10 dias",
+        "Rinite alérgica intermitente, por ter durado menos de 4 semanas"
+      ],
+      "correctIndex": 0,
+      "explanation": "A evolução bifásica — melhora inicial seguida de nova piora — com sintomas ainda intensos no 10º dia foge da curva do resfriado, que atinge o pico cedo e se resolve, e sugere infecção bacteriana. Não é crônica, porque a crônica exige 12 semanas ou mais de evolução."
+    },
+    {
+      "question": "Que papel tem a radiografia simples dos seios paranasais na investigação da rinossinusite?",
+      "options": [
+        "Não é indicada; endoscopia nasal e tomografia avaliam o quadro",
+        "É o exame de primeira escolha em todo paciente com suspeita clínica",
+        "É obrigatória antes de iniciar antibiótico na rinossinusite aguda",
+        "Substitui a tomografia na confirmação da rinossinusite crônica"
+      ],
+      "correctIndex": 0,
+      "explanation": "A radiografia simples dos seios paranasais não tem indicação. A avaliação se faz por endoscopia nasal (nasofibroscopia) e por tomografia computadorizada dos seios, que mostra desde a mucosa espessada até a pansinusopatia; a ressonância magnética fica restrita ao diagnóstico diferencial."
+    },
+    {
+      "question": "Qual é o objetivo central do tratamento da rinossinusite, seja ele clínico ou cirúrgico?",
+      "options": [
+        "Restabelecer aeração e drenagem do seio e a permeabilidade do complexo óstio-meatal",
+        "Esterilizar a secreção do seio, mesmo mantendo o óstio de drenagem obstruído",
+        "Reduzir a produção de muco até a completa secagem da mucosa do seio paranasal",
+        "Eliminar as células caliciformes para interromper a produção de muco no seio"
+      ],
+      "correctIndex": 0,
+      "explanation": "Com remédio ou com cirurgia, o alvo é o mesmo: permitir aeração e drenagem do seio e a permeabilidade do complexo óstio-meatal, rompendo o ciclo que começa na obstrução do óstio. O tratamento clínico ainda trata dor, infecção e edema de mucosa e corrige fatores predisponentes locais, sistêmicos e ambientais."
+    },
+    {
+      "question": "No tratamento clínico da rinossinusite, que trio de medidas tem papel central?",
+      "options": [
+        "Antimicrobiano, corticoide sistêmico ou tópico e solução salina",
+        "Anti-histamínico, mucolítico e descongestionante tópico contínuo",
+        "Mucolítico, analgésico e anti-histamínico de primeira geração",
+        "Antimicrobiano, mucolítico e descongestionante tópico contínuo"
+      ],
+      "correctIndex": 0,
+      "explanation": "Os pilares são o antimicrobiano (quando a etiologia é bacteriana), o corticoide sistêmico e/ou tópico e a solução salina. Anti-histamínico, descongestionante nasal sistêmico ou tópico e analgésico são adjuvantes, e o mucolítico tem benefício questionável."
+    },
+    {
+      "question": "Que complicação da rinossinusite é classificada como intracraniana?",
+      "options": [
+        "Tromboflebite do seio cavernoso",
+        "Abscesso subperiosteal orbitário",
+        "Osteomielite do osso frontal",
+        "Celulite e abscesso palpebral"
+      ],
+      "correctIndex": 0,
+      "explanation": "As intracranianas são meningite, abscesso extradural (epidural), abscesso subdural, abscesso cerebral e tromboflebite do seio cavernoso. Celulite e abscesso palpebral, subperiosteal e orbitário formam o grupo orbitário, de fora para dentro da órbita, e a osteomielite frontal é a complicação craniana."
+    },
+    {
+      "question": "Que situação indica tratamento cirúrgico na rinossinusite?",
+      "options": [
+        "Rinossinusite complicada ou com falha do tratamento clínico",
+        "Primeiro episódio de rinossinusite aguda viral sem complicação",
+        "Rinossinusite aguda com menos de 10 dias de evolução",
+        "Todo episódio de rinossinusite aguda bacteriana em adulto"
+      ],
+      "correctIndex": 0,
+      "explanation": "A cirurgia entra no insucesso do tratamento clínico, na rinossinusite complicada, na associada a polipose, na fúngica e quando há fatores predisponentes a corrigir. O objetivo é o mesmo do tratamento clínico: aeração e drenagem do seio e permeabilidade do complexo óstio-meatal."
     }
   ]
 }

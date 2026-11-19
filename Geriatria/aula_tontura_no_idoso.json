@@ -1,0 +1,380 @@
+{
+  "titulo": "Tontura no Idoso",
+  "eyebrow": "Geriatria · Síndromes Geriátricas",
+  "subtitulo": "Periférica ou central: tempo, gatilho e o exame que separa",
+  "intro": "Tipos de tontura, causas mais comuns no idoso, abordagem por tempo e gatilho, periférica × central com Dix-Hallpike e HINTS, vestibulopatias, antivertiginosos, hipotensão ortostática e dois casos clínicos.",
+  "questoes": [
+    {
+      "question": "Entre os tipos de tontura, o que define o desequilíbrio?",
+      "options": [
+        "Dificuldade de manter a postura, com instabilidade ao deambular",
+        "Sensação de que o próprio corpo ou o ambiente está girando",
+        "Sensação de quase desmaio, com turvação visual e fraqueza",
+        "Sensação vaga de cabeça oca, leveza ou flutuação na cabeça",
+        "Enjoo e mal-estar provocados por movimento passivo em veículo"
+      ],
+      "correctIndex": 0,
+      "explanation": "Desequilíbrio é a dificuldade de manter a postura, com instabilidade sobretudo ao andar. Vertigem é a ilusão de rotação ou balanço (de si ou do ambiente), pré-síncope é a sensação de quase desmaio com turvação visual e fraqueza, e tontura inespecífica é a \"cabeça oca\", leveza ou flutuação."
+    },
+    {
+      "question": "A figura compara o equilíbrio de idosos e crianças. O idoso fica estável de olhos abertos e cambaleia ao fechá-los. O que isso indica?",
+      "options": [
+        "Dependência visual compensatória por degeneração vestibular e proprioceptiva",
+        "Predomínio proprioceptivo, já que a visão do idoso é a entrada mais degenerada",
+        "Lesão cerebelar isolada, pois a instabilidade independe das entradas sensoriais",
+        "Ansiedade antecipatória de queda, sem relação com perda de entrada sensorial",
+        "Hipotensão ortostática, que piora sempre que o idoso fecha os olhos em pé"
+      ],
+      "correctIndex": 0,
+      "explanation": "O equilíbrio integra visão, propriocepção e aparelho vestibular, e o cérebro pondera essas entradas conforme idade, maturidade e degeneração. No idoso, a degeneração vestibular e proprioceptiva torna a visão compensatória: com os olhos abertos ela sustenta a postura; fechados, o déficit das outras duas entradas aparece.",
+      "image": "pg05",
+      "imageCaption": "Mecanismos do equilíbrio: idoso × criança"
+    },
+    {
+      "question": "Uma revisão sistemática agrupou as causas de tontura em idosos por subgrupo diagnóstico, como mostra o gráfico. Qual subgrupo é o mais frequente?",
+      "options": [
+        "Audiovestibular, com cerca de 28%",
+        "Cardiovascular, com cerca de 20%",
+        "Neurológico, com cerca de 15%",
+        "Psiquiátrico, com cerca de 9%",
+        "Oftalmológico, com cerca de 8%"
+      ],
+      "correctIndex": 0,
+      "explanation": "O subgrupo audiovestibular lidera (28,4%), seguido do cardiovascular (20,4%) e do neurológico (15,1%). Dentro do audiovestibular, a VPPB responde por 38,5% dos diagnósticos; dentro do cardiovascular, a hipertensão arterial vem em primeiro (34,9%), à frente da doença isquêmica (24,2%) e das arritmias (14,3%).",
+      "image": "pg06",
+      "imageCaption": "Subgrupos diagnósticos de tontura em idosos (Fancello, 2023)"
+    },
+    {
+      "question": "Qual o perfil epidemiológico típico e o mecanismo da vertigem posicional paroxística benigna (VPPB)?",
+      "options": [
+        "Mulheres de 50 a 70 anos; otólitos soltos nos canais semicirculares",
+        "Homens acima de 80 anos; isquemia de pequenos vasos no tronco cerebral",
+        "Mulheres de 20 a 40 anos; inflamação viral do nervo vestibular",
+        "Homens de 50 a 70 anos; acúmulo de endolinfa no labirinto membranoso",
+        "Mulheres acima de 80 anos; perda de células ciliadas da cóclea"
+      ],
+      "correctIndex": 0,
+      "explanation": "A VPPB predomina em mulheres de 50 a 70 anos e decorre de otólitos (cristais de carbonato de cálcio) que se soltam e migram para os canais semicirculares. Quando a cabeça muda de posição, eles se deslocam dentro do canal e disparam vertigem breve. É o diagnóstico audiovestibular mais frequente no idoso."
+    },
+    {
+      "question": "Qual é o critério diagnóstico de hipotensão ortostática?",
+      "options": [
+        "Queda sustentada de PAS ≥20 ou PAD ≥10 mmHg em até 3 min de pé",
+        "Queda sustentada de PAS ≥10 ou PAD ≥5 mmHg em até 3 min de pé",
+        "Queda sustentada de PAS ≥20 ou PAD ≥10 mmHg só após 10 min de pé",
+        "Queda sustentada de PAS ≥30 ou PAD ≥15 mmHg em até 1 min de pé",
+        "Queda sustentada de PAS ≥20 e PAD ≥10 mmHg, ambas, em 5 min de pé"
+      ],
+      "correctIndex": 0,
+      "explanation": "Hipotensão ortostática é a redução sustentada da pressão sistólica ≥20 mmHg ou da diastólica ≥10 mmHg dentro de 3 minutos após o paciente se levantar — basta um dos dois critérios. A medida deitado e em pé faz parte do exame físico essencial de todo idoso com tontura."
+    },
+    {
+      "question": "Diante de um idoso com tontura, quais diagnósticos não podem deixar de ser considerados, pela gravidade?",
+      "options": [
+        "AVC/AIT, síndrome coronariana aguda e arritmia",
+        "VPPB, neurite vestibular e doença de Menière",
+        "Presbivertigem, ansiedade e polifarmácia",
+        "Labirintite, otite média e cerume impactado",
+        "Hipoglicemia, anemia e hipotireoidismo"
+      ],
+      "correctIndex": 0,
+      "explanation": "AVC ou AIT, síndrome coronariana aguda e arritmia são os diagnósticos que não podem ser perdidos: são menos frequentes que as causas vestibulares periféricas, mas podem matar. Por isso o exame de todo idoso com tontura inclui exame cardíaco e neurológico completo, e não só a pesquisa de nistagmo."
+    },
+    {
+      "question": "Por que a investigação da tontura no idoso deve se organizar pelo tempo (timing) e pelos gatilhos dos sintomas?",
+      "options": [
+        "A descrição da qualidade da tontura pelo paciente é pouco confiável",
+        "O tempo e o gatilho dispensam o exame físico na maior parte dos casos",
+        "A neuroimagem só tem valor quando o sintoma dura mais de 48 horas",
+        "A qualidade da tontura só ajuda a separar as causas cardiovasculares",
+        "O idoso tende a relatar com precisão o tipo de tontura que sente"
+      ],
+      "correctIndex": 0,
+      "explanation": "A Academia Americana de Médicos de Família recomenda abordagem sistemática porque as descrições que os pacientes fazem da qualidade da tontura são pouco confiáveis para estabelecer o diagnóstico. Tempo (episódico × contínuo) e gatilho (posicional, ao levantar, espontâneo) são mais reprodutíveis e direcionam o exame físico."
+    },
+    {
+      "question": "Idosa com tontura intermitente, provocada ao deitar e ao virar na cama. Pela classificação da figura, em que síndrome ela se enquadra e qual exame fazer?",
+      "options": [
+        "Síndrome vestibular episódica desencadeada; manobra de Dix-Hallpike",
+        "Síndrome vestibular aguda espontânea; exame HINTS à beira do leito",
+        "Síndrome vestibular episódica espontânea; audiometria tonal liminar",
+        "Síndrome vestibular aguda desencadeada; tomografia de crânio",
+        "Síndrome vestibular episódica espontânea; teste do impulso cefálico"
+      ],
+      "correctIndex": 0,
+      "explanation": "Sintomas intermitentes definem a síndrome vestibular episódica; provocados por mudança de posição, ela é desencadeada e sugere VPPB, cujo exame é a manobra de Dix-Hallpike. O HINTS fica reservado à síndrome vestibular aguda (contínua) espontânea, para separar neurite vestibular de AVC ou AIT.",
+      "image": "pg10",
+      "imageCaption": "Síndrome vestibular episódica × aguda"
+    },
+    {
+      "question": "Na síndrome vestibular episódica espontânea, os sintomas associados orientam o diagnóstico. Qual associação está correta?",
+      "options": [
+        "Perda auditiva unilateral sugere doença de Menière",
+        "Enxaqueca associada sugere neurite vestibular",
+        "Sintomas psiquiátricos sugerem VPPB de canal posterior",
+        "Perda auditiva unilateral sugere enxaqueca vestibular",
+        "Enxaqueca associada sugere ataque de pânico"
+      ],
+      "correctIndex": 0,
+      "explanation": "Nas crises espontâneas e intermitentes, classifica-se pelos sintomas associados: perda auditiva unilateral aponta para doença de Menière, enxaqueca para enxaqueca vestibular e sintomas psiquiátricos para ataque de pânico. A neurite vestibular não entra aqui, porque produz vertigem contínua (síndrome vestibular aguda)."
+    },
+    {
+      "question": "Idoso com vertigem contínua há 24 horas, de início espontâneo, com náuseas e nistagmo. Qual exame à beira do leito separa neurite vestibular de AVC?",
+      "options": [
+        "Exame HINTS à beira do leito",
+        "Manobra diagnóstica de Dix-Hallpike",
+        "Manobra de reposição de Epley",
+        "Teste de Romberg sensibilizado",
+        "Medida da PA deitado e em pé"
+      ],
+      "correctIndex": 0,
+      "explanation": "Vertigem contínua e espontânea é síndrome vestibular aguda, e o exame indicado é o HINTS (Head Impulse, Nystagmus, Test of Skew), que distingue causa periférica (neurite vestibular) de central (AVC ou AIT). Dix-Hallpike serve à vertigem episódica desencadeada por posição; Epley é tratamento de VPPB, não exame diagnóstico."
+    },
+    {
+      "question": "No protocolo HINTS, o que sugere um teste do impulso cefálico NORMAL em paciente com vertigem aguda e contínua?",
+      "options": [
+        "Causa central, como AVC de tronco ou cerebelo",
+        "Causa periférica, como neurite vestibular",
+        "VPPB do canal semicircular posterior",
+        "Hipofunção vestibular bilateral por ototóxico",
+        "Doença de Menière em fase de remissão"
+      ],
+      "correctIndex": 0,
+      "explanation": "É o ponto que mais confunde: no paciente com vertigem aguda, o reflexo vestíbulo-ocular normal no impulso cefálico sugere causa central, porque o labirinto e o nervo estão íntegros. Na neurite vestibular o reflexo está alterado, e o olho precisa de uma sacada corretiva para voltar ao alvo."
+    },
+    {
+      "question": "No HINTS, que padrão de nistagmo sugere causa central?",
+      "options": [
+        "Puramente vertical ou que muda de direção com o olhar",
+        "Horizontal, unidirecional, que diminui com a fixação",
+        "Torsional-vertical transitório na manobra de Dix-Hallpike",
+        "Horizontal com componente torsional, sempre para um lado",
+        "Horizontal batendo para o lado oposto ao ouvido lesado"
+      ],
+      "correctIndex": 0,
+      "explanation": "Nistagmo puramente vertical, ou que muda de direção conforme o olhar, sugere lesão central. O nistagmo periférico é horizontal (ou horizontal-torsional) e unidirecional. O torsional-vertical transitório desencadeado pela posição é o da VPPB de canal posterior, que não se avalia pelo HINTS."
+    },
+    {
+      "question": "No HINTS, o que indica um desalinhamento vertical dos olhos ao cobrir e descobrir um deles (test of skew)?",
+      "options": [
+        "Forte indício de lesão no tronco encefálico",
+        "Hipofunção vestibular periférica unilateral",
+        "Estrabismo prévio, sem valor na tontura aguda",
+        "VPPB de canal horizontal em fase aguda",
+        "Paralisia isolada do sexto par craniano"
+      ],
+      "correctIndex": 0,
+      "explanation": "O desvio vertical (skew deviation) revelado no teste de cobertura alternada é forte indicativo de lesão no tronco encefálico. Junto com impulso cefálico normal e nistagmo vertical ou que muda de direção, completa o padrão central do HINTS."
+    },
+    {
+      "question": "Na manobra de Dix-Hallpike, qual achado sugere VPPB de canal posterior?",
+      "options": [
+        "Nistagmo transitório torsional-vertical",
+        "Nistagmo persistente puramente vertical",
+        "Nistagmo horizontal que muda de direção",
+        "Ausência de nistagmo com vertigem intensa",
+        "Nistagmo horizontal contínuo e espontâneo"
+      ],
+      "correctIndex": 0,
+      "explanation": "Nistagmo transitório, com componentes torsional e vertical, desencadeado pela manobra, é a assinatura da VPPB de canal posterior. Nistagmo persistente e puramente vertical, ou que muda de direção, é sinal de alarme para causa central."
+    },
+    {
+      "question": "Que proporção dos quadros de vertigem tem causa periférica, e que sintoma costuma acompanhá-los?",
+      "options": [
+        "Cerca de 85 a 90%, com náuseas intensas",
+        "Cerca de 10 a 15%, com náuseas intensas",
+        "Cerca de 85 a 90%, com diplopia e ataxia",
+        "Cerca de 50%, com cefaleia occipital súbita",
+        "Cerca de 60 a 70%, com disartria e paresia"
+      ],
+      "correctIndex": 0,
+      "explanation": "As causas periféricas (ouvido interno e nervo vestibular) respondem por cerca de 85 a 90% dos casos e costumam vir com náuseas intensas. As centrais (cérebro e tronco encefálico) são 10 a 15%, mas podem ser graves e fatais — e diplopia, ataxia, disartria e paresia são sinais delas."
+    },
+    {
+      "question": "Pela figura de diagnóstico diferencial, qual conjunto de achados aponta para tontura de origem central?",
+      "options": [
+        "Nistagmo vertical, ataxia grave de marcha e diplopia",
+        "Nistagmo horizontal unidirecional, zumbido e hipoacusia",
+        "Crises curtas de segundos, náuseas e vômitos intensos",
+        "Nistagmo horizontal transitório desencadeado pela posição",
+        "Perda auditiva flutuante, plenitude aural e zumbido"
+      ],
+      "correctIndex": 0,
+      "explanation": "A tontura central (AVC, enxaqueca vestibular, esclerose múltipla) tende a ser persistente, com nistagmo vertical ou rotatório puro, ataxia de marcha importante e sinais neurológicos como diplopia, disartria e fraqueza facial. Crises curtas, náuseas intensas, nistagmo horizontal unidirecional e zumbido com hipoacusia apontam para causa periférica.",
+      "image": "pg18",
+      "imageCaption": "Tontura periférica × central"
+    },
+    {
+      "question": "Idoso com vertigem aguda e suspeita de AVC de cerebelo ou tronco tem o exame de imagem inicial normal. Qual a conduta?",
+      "options": [
+        "Repetir o exame de imagem em 48 horas",
+        "Descartar AVC e tratar como neurite",
+        "Liberar com betaistina e retorno ambulatorial",
+        "Realizar a manobra de Epley e reavaliar",
+        "Solicitar Holter de 24 horas e liberar"
+      ],
+      "correctIndex": 0,
+      "explanation": "No AVC de cerebelo e tronco, o exame de imagem é essencial, mas deve ser repetido em 48 horas se vier normal — a imagem precoce da fossa posterior pode não mostrar o infarto. Também é preciso procurar déficits focais: fraqueza, afasia, perda de sensibilidade ou perda auditiva súbita associada."
+    },
+    {
+      "question": "Na neurite vestibular, qual o papel dos supressores vestibulares, como anti-histamínicos e benzodiazepínicos?",
+      "options": [
+        "Apenas alívio sintomático de curto prazo",
+        "Tratamento de manutenção por vários meses",
+        "Prevenção de recorrência após a fase aguda",
+        "Substituto da reabilitação vestibular",
+        "Primeira escolha no lugar do corticoide"
+      ],
+      "correctIndex": 0,
+      "explanation": "Supressores vestibulares servem só para interromper os sintomas por curto prazo. O que conduz a recuperação é a reabilitação vestibular, que é fundamental; corticosteroides podem ser considerados na fase aguda. Mantê-los por tempo prolongado atrasa a compensação central e, no idoso, aumenta o risco de queda."
+    },
+    {
+      "question": "O que diferencia a doença de Menière da neurite vestibular?",
+      "options": [
+        "Menière tem crises com hipoacusia e zumbido; a neurite poupa a audição",
+        "Menière é contínua por dias; a neurite vem em crises com zumbido",
+        "A neurite cursa com hipoacusia; Menière sempre preserva a audição",
+        "Menière é posicional e breve; a neurite é desencadeada por trauma",
+        "A neurite é bilateral e simétrica; Menière tem origem sempre central"
+      ],
+      "correctIndex": 0,
+      "explanation": "As duas causam vertigem intensa, mas na doença de Menière os episódios vêm com perda auditiva, zumbido e plenitude aural, ausentes na neurite. A vertigem da neurite é contínua nos primeiros dias e melhora progressivamente; a de Menière ocorre em episódios prolongados, com períodos de exacerbação e remissão."
+    },
+    {
+      "question": "Idoso com vertigem aguda, perda auditiva e sinais de otite média à otoscopia. Qual o diagnóstico mais provável?",
+      "options": [
+        "Labirintite, com acometimento coclear",
+        "Neurite vestibular de origem viral",
+        "VPPB de canal semicircular posterior",
+        "Doença de Menière em crise aguda",
+        "AVC de território vertebrobasilar"
+      ],
+      "correctIndex": 0,
+      "explanation": "A labirintite é a inflamação ou infecção do labirinto e da cóclea, por isso soma perda auditiva à vertigem; a neurite vestibular não compromete a audição. Sinais de otite à otoscopia tornam a labirintite o diagnóstico provável."
+    },
+    {
+      "question": "Qual o tratamento de primeira linha da VPPB no idoso?",
+      "options": [
+        "Manobras de reposicionamento canalicular",
+        "Betaistina contínua por pelo menos 3 meses",
+        "Clonazepam noturno para suprimir as crises",
+        "Corticoide oral na primeira semana de crise",
+        "Repouso no leito até o fim dos sintomas"
+      ],
+      "correctIndex": 0,
+      "explanation": "O tratamento da VPPB são as manobras de reposicionamento canalicular (como a de Epley), associadas à reabilitação vestibular; a recorrência anual é de 15 a 18%, e o paciente pode aprender o autotratamento. Benzodiazepínicos geralmente não são indicados no idoso, pelo risco de quedas, e a reposição de vitamina D em deficientes pode reduzir recorrências."
+    },
+    {
+      "question": "Os exercícios da figura — movimentos horizontais e circulares da cabeça, círculos com bola e marcha com giros de cabeça — fazem parte de qual intervenção?",
+      "options": [
+        "Reabilitação vestibular: substituição, habituação e adaptação",
+        "Manobra de Epley: reposição dos otólitos para o utrículo",
+        "Fisioterapia motora: ganho de força e de massa muscular",
+        "Terapia ocupacional: adaptação do domicílio contra quedas",
+        "Treino cognitivo: atenção dividida e memória de trabalho"
+      ],
+      "correctIndex": 0,
+      "explanation": "São exercícios de reabilitação vestibular, que age por substituição, habituação e adaptação e coordena equilíbrio, visão e movimentos musculares. É eficaz e segura em múltiplas etiologias, periféricas e centrais, e o programa personalizado é superior a exercícios domiciliares padronizados.",
+      "image": "pg23",
+      "imageCaption": "Exercícios de reabilitação vestibular"
+    },
+    {
+      "question": "Qual classe de fármaco usada em quadros de tontura tem efeito antiemético, mas não atua sobre a vertigem vestibular?",
+      "options": [
+        "Antagonistas dopaminérgicos",
+        "Bloqueadores de canais de cálcio",
+        "Anticolinérgicos muscarínicos",
+        "Benzodiazepínicos de ação longa",
+        "Anti-histamínicos H1 sedativos"
+      ],
+      "correctIndex": 0,
+      "explanation": "Os antagonistas dopaminérgicos agem na zona de gatilho quimiorreceptora: controlam náusea e vômito, mas não tratam a vertigem vestibular. No idoso, pesam os efeitos extrapiramidais — distonia, parkinsonismo e discinesia tardia. A ondansetrona, muitas vezes listada ao lado deles, é antagonista serotoninérgico 5-HT3, com o mesmo papel apenas antiemético."
+    },
+    {
+      "question": "Pela tabela de antivertiginosos, a que classe pertencem cinarizina e flunarizina, e qual efeito adverso preocupa no idoso?",
+      "options": [
+        "Bloqueadores de canal de cálcio; sintomas extrapiramidais",
+        "Anticolinérgicos; retenção urinária e glaucoma agudo",
+        "Benzodiazepínicos; dependência e depressão respiratória",
+        "Anti-histamínicos H3; hipertensão arterial de rebote",
+        "Antagonistas 5-HT3; prolongamento do intervalo QT"
+      ],
+      "correctIndex": 0,
+      "explanation": "Cinarizina (25 mg 3x/dia) e flunarizina (5 mg/dia) bloqueiam canais de cálcio e o receptor H1, inibindo a vasoconstrição — agem como sedativos vestibulares. Os efeitos adversos incluem sono, fadiga, cefaleia, ganho de peso, epigastralgia e sintomas extrapiramidais, especialmente relevantes no idoso.",
+      "image": "pg30",
+      "imageCaption": "Antivertiginosos: antagonistas dopaminérgicos e bloqueadores de cálcio"
+    },
+    {
+      "question": "Na hipotensão ortostática refratária às medidas iniciais, qual fármaco pode ser usado, e em que dose?",
+      "options": [
+        "Fludrocortisona, de 0,1 mg 3x/semana até 0,2 mg/dia",
+        "Furosemida, 40 mg pela manhã em dose única diária",
+        "Hidroclorotiazida, 25 mg/dia para reduzir o edema",
+        "Prednisona, 20 mg/dia por 5 dias consecutivos",
+        "Metildopa, 250 mg duas vezes ao dia antes de deitar"
+      ],
+      "correctIndex": 0,
+      "explanation": "Nos casos refratários usa-se um mineralocorticoide, a fludrocortisona, de 0,1 mg três vezes por semana até 0,2 mg/dia. Antes disso vêm ajustar os fármacos causadores (diuréticos, anticolinérgicos, metildopa), aumentar sal e líquidos, usar meia elástica de média compressão e levantar-se devagar."
+    },
+    {
+      "question": "Em hipertenso com hipotensão ortostática concomitante, qual classe anti-hipertensiva é considerada mais favorável, e por quê?",
+      "options": [
+        "IECA, por melhorar a sensibilidade dos barorreceptores",
+        "Diurético tiazídico, por reduzir a volemia de forma suave",
+        "Betabloqueador, por impedir a taquicardia compensatória",
+        "Alfabloqueador, por reduzir a resistência periférica",
+        "Hidralazina, por vasodilatar diretamente as arteríolas"
+      ],
+      "correctIndex": 0,
+      "explanation": "Cerca de 10% dos hipertensos têm hipotensão ortostática, que o tratamento anti-hipertensivo pode agravar. Os piores são diuréticos, hidralazina, alfa e betabloqueadores, metildopa e bloqueadores de cálcio não di-idropiridínicos; os IECA são os melhores, por melhorarem a sensibilidade dos barorreceptores. Os di-idropiridínicos não parecem causar hipotensão ortostática sintomática."
+    },
+    {
+      "question": "Mulher de 87 anos, com FA anticoagulada, hipertensa em uso de furosemida e diabética em uso de glimepirida, tem há 2 meses tontura rotatória diária ao virar na cama, ausente em pé ou sentada, sem náuseas ou sintomas auditivos. Exame neurológico, TC de crânio e PA ortostática normais. Diagnóstico e conduta?",
+      "options": [
+        "VPPB; confirmar com Dix-Hallpike e tratar com manobra de Epley",
+        "AVC de cerebelo; repetir a neuroimagem e ajustar anticoagulação",
+        "Hipotensão ortostática; suspender furosemida e losartana em uso",
+        "Hipoglicemia por sulfonilureia; suspender glimepirida de imediato",
+        "Doença de Menière; audiometria e betaistina 24 mg 3 vezes ao dia"
+      ],
+      "correctIndex": 0,
+      "explanation": "Vertigem rotatória desencadeada por virar na cama, ausente em pé ou sentada, sem sintomas auditivos e com exame neurológico normal, é síndrome vestibular episódica desencadeada: VPPB. A manobra de Dix-Hallpike vem positiva, audiometria e impedanciometria normais, e o manejo é manobra de Epley com reabilitação vestibular. Sem queda pressórica ao levantar, a hipótese de hipotensão ortostática cai."
+    },
+    {
+      "question": "Mulher de 87 anos tem tontura diária ao ficar em pé, sem vertigem com movimentos da cabeça. Usa hidroclorotiazida e insulina NPH e tem carcinoma broncogênico. PA 170/100 mmHg deitada e 140/80 mmHg em pé; sódio 125 mEq/L. Qual o diagnóstico?",
+      "options": [
+        "Hipotensão ortostática associada a hipertensão supina",
+        "VPPB de canal posterior com crise hipertensiva",
+        "Síndrome vestibular aguda por AVC de tronco",
+        "Hipoglicemia noturna por excesso de insulina NPH",
+        "Metástase cerebelar do carcinoma broncogênico"
+      ],
+      "correctIndex": 0,
+      "explanation": "Ao levantar, a sistólica cai 30 mmHg e a diastólica 20 mmHg — critério de hipotensão ortostática (≥20 ou ≥10 mmHg em até 3 minutos) — numa paciente hipertensa em decúbito. O quadro é hipertensão supina associada a hipotensão ortostática; a tontura é postural e não há vertigem com o movimento da cabeça."
+    },
+    {
+      "question": "Idosa com hipertensão supina e hipotensão ortostática, em uso de tiazídico, com carcinoma broncogênico e sódio de 125 mEq/L. Quais fatores de risco contribuem para o quadro?",
+      "options": [
+        "Diurético, síndrome paraneoplásica e hiponatremia",
+        "Insulina NPH, fração de ejeção alta e taquicardia",
+        "Betabloqueador, estenose aórtica e hipercalemia",
+        "Anticoagulante, fibrilação atrial e hipoglicemia",
+        "Estatina, hipotireoidismo e deficiência de B12"
+      ],
+      "correctIndex": 0,
+      "explanation": "Os fatores são o diurético, a síndrome paraneoplásica do carcinoma broncogênico e a hiponatremia (pelo diurético ou por SIADH). Suspender o diurético, ressecar o nódulo e corrigir o sódio não bastou para reduzir as quedas posturais; com IECA a pressão supina caiu para 130/70 mmHg, as quedas e os sintomas de hipoperfusão cerebral diminuíram e a paciente voltou às atividades prévias."
+    },
+    {
+      "question": "Na revisão de medicamentos do idoso com tontura, quais classes devem ter prioridade de redução?",
+      "options": [
+        "Sedativos, anticolinérgicos e os que causam hipotensão ortostática",
+        "Estatinas, antiagregantes e anticoagulantes orais de uso crônico",
+        "Inibidores de bomba de prótons, vitaminas e suplementos orais",
+        "Anti-hipertensivos de qualquer classe, inclusive os IECA",
+        "Hipoglicemiantes orais e insulina, mesmo com bom controle"
+      ],
+      "correctIndex": 0,
+      "explanation": "Revisam-se todos os medicamentos, prescritos e de venda livre, descontinuando os sem indicação clara ou cujo dano supera o benefício. A prioridade é reduzir sedativos, anticolinérgicos e fármacos que causam hipotensão ortostática — psicoativos, anticolinérgicos, cardiovasculares e analgésicos levam à tontura por sedação, queda pressórica e outros mecanismos."
+    }
+  ]
+}

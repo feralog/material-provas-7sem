@@ -1,0 +1,195 @@
+{
+  "titulo": "Saúde da População Negra",
+  "eyebrow": "Medicina de Família e Comunidade · Referência",
+  "subtitulo": "Racismo como determinante, equidade no SUS e os agravos que pesam mais",
+  "intro": "PNSIPN, racismo institucional e estrutural, quesito raça/cor, doença falciforme na APS, hipertensão, mortalidade materna, violência e quilombolas. Baseado na PNSIPN (2009) e em publicações do Ministério da Saúde — não há slide da aula deste tema.",
+  "questoes": [
+    {
+      "question": "A Política Nacional de Saúde Integral da População Negra (PNSIPN), instituída em 2009, tem como \"marca\" o reconhecimento de que:",
+      "options": [
+        "o racismo e as desigualdades étnico-raciais são determinantes sociais da saúde",
+        "as doenças da população negra são sobretudo de origem genética e hereditária",
+        "a população negra precisa de serviços de saúde separados e exclusivos no SUS",
+        "as diferenças de saúde entre grupos raciais decorrem só da diferença de renda"
+      ],
+      "correctIndex": 0,
+      "explanation": "A marca da PNSIPN (Portaria GM/MS nº 992/2009) é o reconhecimento do racismo, das desigualdades étnico-raciais e do racismo institucional como determinantes sociais das condições de saúde, com vistas à promoção da equidade. Ela não cria serviço paralelo: orienta os serviços que o SUS já tem."
+    },
+    {
+      "question": "Na recepção da UBS, a técnica preenche o campo raça/cor do cadastro de um usuário adulto e consciente a partir da aparência dele, sem perguntar. Qual a orientação correta?",
+      "options": [
+        "Perguntar ao usuário: a cor é autodeclarada, nas categorias do IBGE",
+        "Manter o registro: a cor é atribuída pelo profissional que o atende",
+        "Deixar o campo em branco, pois perguntar a cor constrange o usuário",
+        "Registrar só \"negro\" ou \"não negro\", que é a categoria usada no SUS"
+      ],
+      "correctIndex": 0,
+      "explanation": "O quesito raça/cor é de preenchimento obrigatório nos sistemas de informação do SUS (Portaria GM/MS nº 344/2017) e segue a autodeclaração, nas cinco categorias do IBGE: branca, preta, parda, amarela e indígena. Só quando a pessoa não pode se autodeclarar — recém-nascido, óbito, inconsciência — a informação vem de familiar ou responsável."
+    },
+    {
+      "question": "Pelas categorias do IBGE, a expressão \"população negra\", usada nas políticas de saúde, corresponde à soma das:",
+      "options": [
+        "pessoas que se autodeclaram pretas e pardas",
+        "pessoas que se autodeclaram pretas e indígenas",
+        "pessoas que se autodeclaram somente pretas",
+        "pessoas pretas, pardas, amarelas e indígenas"
+      ],
+      "correctIndex": 0,
+      "explanation": "População negra é a soma de pretos e pardos. No Censo 2022 os pardos passaram a ser o maior grupo (cerca de 45%) e, somados aos pretos (cerca de 10%), a população negra é mais da metade dos brasileiros."
+    },
+    {
+      "question": "Um serviço de urgência adota a mesma rotina para todos, mas uma auditoria mostra que pacientes negros com dor recebem menos analgesia e esperam mais pela avaliação, sem que nenhum profissional se declare preconceituoso. Esse fenômeno é mais bem descrito como:",
+      "options": [
+        "Racismo institucional",
+        "Racismo internalizado",
+        "Preconceito interpessoal",
+        "Viés de seleção amostral"
+      ],
+      "correctIndex": 0,
+      "explanation": "Racismo institucional é o fracasso de uma organização em prover serviço adequado às pessoas por causa de cor, cultura ou origem étnica; aparece em normas, rotinas e resultados, mesmo sem intenção individual. O subtratamento da dor em pessoas negras é o exemplo clássico — inclusive na crise álgica da doença falciforme."
+    },
+    {
+      "question": "A \"lei dos cuidados inversos\", formulada por Julian Tudor Hart em 1971, afirma que:",
+      "options": [
+        "a oferta de bom cuidado varia na razão inversa da necessidade da população",
+        "quanto mais especializado o serviço, menor a resolutividade para a população",
+        "a prevenção quaternária deve ser inversamente proporcional ao risco individual",
+        "a demanda por serviços cai à medida que a oferta de atenção primária aumenta"
+      ],
+      "correctIndex": 0,
+      "explanation": "Tudor Hart observou que a disponibilidade de boa atenção médica tende a variar inversamente à necessidade da população atendida: quem mais precisa recebe menos e pior. A população negra, sobre-representada entre os mais pobres, ilustra a lei, e a equidade é o princípio do SUS que responde a ela."
+    },
+    {
+      "question": "Na classificação usada pela PNSIPN para os agravos mais relevantes na população negra, a hipertensão arterial e o diabetes mellitus aparecem como doenças:",
+      "options": [
+        "de evolução agravada ou de tratamento dificultado",
+        "geneticamente determinadas, de herança autossômica",
+        "adquiridas em condições socioeconômicas desfavoráveis",
+        "exclusivas da população negra, por razão étnica"
+      ],
+      "correctIndex": 0,
+      "explanation": "Os agravos se agrupam em três blocos: geneticamente determinados (doença falciforme, deficiência de G6PD); adquiridos em condições desfavoráveis (tuberculose, desnutrição, mortes violentas, mortalidade infantil, sofrimento psíquico); e de evolução agravada ou tratamento dificultado (hipertensão, diabetes, coronariopatias, doença renal crônica, câncer, miomas)."
+    },
+    {
+      "question": "Recém-nascido tem no teste do pezinho o padrão de hemoglobina FAS. Os pais, assustados, perguntam se o filho tem anemia falciforme. A interpretação correta é:",
+      "options": [
+        "Traço falciforme: é portador, não doente, e não precisa de tratamento",
+        "Anemia falciforme: deve iniciar penicilina e ácido fólico desde já",
+        "Doença falciforme leve: precisa de doppler transcraniano anual",
+        "Resultado inconclusivo: repetir o exame só depois dos 2 anos de idade"
+      ],
+      "correctIndex": 0,
+      "explanation": "No padrão FAS, a hemoglobina fetal (F) aparece ao lado da A e da S: é o traço falciforme (heterozigoto AS), que não é doença. O padrão FS, sem hemoglobina A, indica doença falciforme. O traço pede orientação e aconselhamento genético da família, não tratamento."
+    },
+    {
+      "question": "Um casal em que os dois têm traço falciforme (HbAS) planeja ter filhos. Qual a chance, a cada gestação, de nascer uma criança com anemia falciforme (HbSS)?",
+      "options": [
+        "1 em 4 (25%)",
+        "1 em 2 (50%)",
+        "3 em 4 (75%)",
+        "1 em 8 (12,5%)"
+      ],
+      "correctIndex": 0,
+      "explanation": "Herança autossômica recessiva: cada genitor AS transmite o alelo S com 50% de chance, então a cada gestação há 25% de filho SS (doente), 50% de AS (traço) e 25% de AA. Por isso o achado de traço no teste do pezinho deve levar à orientação genética da família."
+    },
+    {
+      "question": "Criança de 2 anos com anemia falciforme, em uso regular de penicilina profilática, chega à UBS com febre de 39 °C há 3 horas, sem foco aparente e em bom estado geral. A conduta é:",
+      "options": [
+        "Encaminhar com urgência para avaliação, exames e antibiótico parenteral",
+        "Prescrever antitérmico e reavaliar em 48 horas, pois está em bom estado",
+        "Manter a penicilina oral e orientar retorno apenas se surgir algum foco",
+        "Solicitar hemograma ambulatorial e aguardar o resultado para decidir"
+      ],
+      "correctIndex": 0,
+      "explanation": "Na doença falciforme há asplenia funcional desde cedo, e a febre pode ser o primeiro sinal de sepse por germes encapsulados, sobretudo pneumococo, de evolução fulminante. Febre é urgência mesmo com bom estado geral e mesmo com penicilina profilática: avaliação imediata, hemocultura e antibiótico parenteral."
+    },
+    {
+      "question": "No acompanhamento de rotina da criança com doença falciforme na APS, qual medida faz parte do cuidado preconizado?",
+      "options": [
+        "Penicilina profilática até os 5 anos e vacinas especiais do CRIE",
+        "Transfusão mensal de hemácias para manter a hemoglobina normal",
+        "Suplementação de ferro contínua para corrigir a anemia hemolítica",
+        "Restringir a ingestão de líquidos para evitar a crise vaso-oclusiva"
+      ],
+      "correctIndex": 0,
+      "explanation": "A rotina inclui penicilina profilática dos primeiros meses de vida até os 5 anos, ácido fólico, calendário vacinal completo mais os imunobiológicos especiais do CRIE (como as pneumocócicas), hidratação abundante e ensino da família para reconhecer febre, palidez súbita e aumento do baço. Ferro de rotina não está indicado: a anemia é hemolítica, não ferropriva."
+    },
+    {
+      "question": "Qual exame é feito anualmente, dos 2 aos 16 anos, nas crianças com anemia falciforme, para identificar o risco de acidente vascular cerebral?",
+      "options": [
+        "Doppler transcraniano",
+        "Tomografia de crânio",
+        "Eletroencefalograma",
+        "Ultrassom de carótidas"
+      ],
+      "correctIndex": 0,
+      "explanation": "O AVC isquêmico é complicação grave da anemia falciforme na infância. O doppler transcraniano anual, dos 2 aos 16 anos, mede a velocidade do fluxo nas artérias cerebrais; velocidade alta indica alto risco e leva a programa de transfusão crônica ou hidroxiureia. É exame não invasivo e sem radiação."
+    },
+    {
+      "question": "Jovem de 19 anos com anemia falciforme chega com dor intensa nas pernas e na região lombar, nota 9 em 10, igual a crises anteriores. Um profissional comenta que ele \"deve estar atrás de remédio forte\". Qual a conduta adequada?",
+      "options": [
+        "Analgesia imediata e escalonada, com opioide se preciso, e hidratação",
+        "Analgésico simples e alta, pois dor sem sinal objetivo é de origem psíquica",
+        "Aguardar exames de imagem que comprovem a crise antes de medicar",
+        "Encaminhar ao CAPS AD pela suspeita de uso abusivo de opioides"
+      ],
+      "correctIndex": 0,
+      "explanation": "A crise vaso-oclusiva é a complicação mais comum da doença falciforme e não há exame que a confirme: o relato de dor basta. A conduta é analgesia rápida e escalonada (incluindo opioide), hidratação e busca de complicações como a síndrome torácica aguda. Desconfiar da dor do paciente negro e subtratá-la é expressão de racismo institucional."
+    },
+    {
+      "question": "Sobre a hipertensão arterial na população negra brasileira, é correto afirmar que ela:",
+      "options": [
+        "é mais frequente, surge mais cedo e causa mais lesão de órgão-alvo",
+        "é menos frequente, mas tem pior resposta aos diuréticos tiazídicos",
+        "tem prevalência igual à dos brancos, sem diferença de complicações",
+        "é explicada só pela genética, sem influência de fatores sociais"
+      ],
+      "correctIndex": 0,
+      "explanation": "A hipertensão é mais prevalente, mais precoce e mais grave na população negra, com mais AVC e doença renal. A Diretriz Brasileira de Hipertensão (2020) pondera que condições socioeconômicas e hábitos de vida pesam mais nessa diferença que a etnia em si. Em negros, tiazídicos e bloqueadores de canal de cálcio costumam responder melhor em monoterapia que IECA ou BRA."
+    },
+    {
+      "question": "Sobre a mortalidade materna no Brasil, os dados desagregados por raça/cor mostram que ela:",
+      "options": [
+        "é maior nas mulheres negras, com predomínio de causas evitáveis",
+        "é igual entre os grupos, pois o pré-natal no SUS é universal",
+        "é maior nas brancas, por terem mais cesarianas eletivas",
+        "é maior nas negras, mas só por causas genéticas como a falciforme"
+      ],
+      "correctIndex": 0,
+      "explanation": "A razão de mortalidade materna é persistentemente mais alta entre mulheres negras, sobretudo pretas, e a maior parte das mortes é evitável (síndromes hipertensivas, hemorragia, infecção, aborto inseguro). Nesse grupo há menos consultas de pré-natal, mais peregrinação em busca de vaga para o parto e menos analgesia — marcas de racismo institucional."
+    },
+    {
+      "question": "Sobre a violência letal no Brasil, os dados do Atlas da Violência mostram que:",
+      "options": [
+        "cerca de três em cada quatro vítimas de homicídio são pessoas negras",
+        "as vítimas de homicídio se distribuem igualmente entre os grupos raciais",
+        "a maior parte das vítimas de homicídio é de mulheres brancas idosas",
+        "os homicídios de pessoas negras caíram mais rápido que os de brancos"
+      ],
+      "correctIndex": 0,
+      "explanation": "Pessoas negras são cerca de três quartos das vítimas de homicídio no país, com destaque para homens jovens; o homicídio é a principal causa de morte da juventude negra. Na última década, a queda dos homicídios foi maior entre não negros, o que ampliou a desigualdade."
+    },
+    {
+      "question": "Uma comunidade rural do território da equipe se reconhece como remanescente de quilombo. Sobre essa população, é correto afirmar que:",
+      "options": [
+        "a identidade quilombola se baseia na autodefinição da própria comunidade",
+        "só é quilombola a comunidade com ascendência comprovada por exame genético",
+        "o reconhecimento depende de laudo antropológico emitido pela própria UBS",
+        "a comunidade deixa de ter direito à ESF ao ser titulada como quilombola"
+      ],
+      "correctIndex": 0,
+      "explanation": "Pelo Decreto nº 4.887/2003, os remanescentes de quilombo se caracterizam por autodefinição da própria comunidade, com certificação pela Fundação Cultural Palmares; a Constituição (art. 68 do ADCT) garante a propriedade das terras. O Censo 2022 contou os quilombolas pela primeira vez (cerca de 1,3 milhão)."
+    },
+    {
+      "question": "Destinar mais recursos e ações a grupos em pior situação de saúde, como prevê a PNSIPN, é a aplicação de qual princípio do SUS?",
+      "options": [
+        "Equidade, que trata desigualmente os desiguais",
+        "Universalidade, que garante acesso a todos",
+        "Integralidade, que articula prevenção e cura",
+        "Descentralização, com comando único por esfera"
+      ],
+      "correctIndex": 0,
+      "explanation": "Equidade é tratar desigualmente os desiguais, investindo mais onde a necessidade é maior para reduzir diferenças evitáveis e injustas. A PNSIPN é uma política de equidade: não cria um SUS à parte, mas orienta o sistema universal a enfrentar o racismo e as desigualdades étnico-raciais."
+    }
+  ]
+}

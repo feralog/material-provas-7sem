@@ -80,7 +80,7 @@ A **cannabis** age no receptor CB1. A intoxicação dá **hiperemia conjuntival*
 
 ## Tabaco e dependências comportamentais
 
-O tabagismo é a principal causa evitável de morte. A **dependência de nicotina** é medida pelo **teste de Fagerström**; fumar o primeiro cigarro nos primeiros minutos após acordar é o marcador isolado mais forte. A abstinência traz irritabilidade, ansiedade, dificuldade de concentração, insônia, inquietação e aumento do apetite e do peso. Na consulta, a abordagem breve do INCA segue o **PAAPA**: perguntar, avaliar, aconselhar, preparar e acompanhar.
+O tabagismo é a principal causa evitável de morte. A **dependência de nicotina** é medida pelo **teste de Fagerström**; fumar o primeiro cigarro nos primeiros minutos após acordar é o marcador isolado mais forte. A abstinência traz irritabilidade, ansiedade, dificuldade de concentração, insônia, inquietação e aumento do apetite e do peso. Na consulta, a abordagem breve (mínima) do INCA segue o **PAAP** — perguntar, avaliar, aconselhar e preparar, em cerca de 3 minutos; a abordagem básica acrescenta o **acompanhar** (**PAAPA**).
 
 O **PCDT do Tabagismo** combina **abordagem cognitivo-comportamental** com **reposição de nicotina** (adesivo, goma, pastilha) e **bupropiona**. Combinar o **adesivo** (nível basal) com goma ou pastilha (para a fissura) é mais eficaz que uma forma isolada, com redução gradual do adesivo. A **bupropiona** começa uma a duas semanas antes da data de parada e é **contraindicada em epilepsia, bulimia e anorexia**, com IMAO e na retirada abrupta de álcool ou BZD. A **vareniclina**, agonista parcial do receptor nicotínico α4β2, é a monoterapia mais eficaz nas diretrizes internacionais, mas não integra o elenco do protocolo do SUS.
 

@@ -1,0 +1,964 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Álcool e Outras Drogas na APS</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;450;500;600&display=swap" rel="stylesheet">
+<style>
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0}
+  body{background:#f5f3ef;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+  button{font:inherit;color:inherit;font-family:'IBM Plex Sans',system-ui,sans-serif}
+  a{color:#2b57cc;text-decoration:none}
+  a:hover{color:#1e3f9c;text-decoration:underline}
+  @keyframes qFade{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+  @keyframes qDrawer{from{opacity:0;transform:translateY(-4px)}to{opacity:1;transform:none}}
+
+  /* hovers — no canvas eram style-hover, aqui viram CSS de verdade */
+  .h-dark:hover{background:#2b57cc!important;transform:translateY(-1px)}
+  .h-darkflat:hover{background:#2b57cc!important}
+  .h-line:hover{border-color:#121a2b!important}
+  .h-ink:hover{color:#121a2b!important}
+  .h-opt:not(.locked):hover{border-color:var(--hbd)!important;transform:translateY(-1px)}
+  .h-card:hover{border-color:#121a2b!important;transform:translateY(-2px)}
+
+  /* tipografia do resumo */
+  .rsm{font-size:16.5px;line-height:1.72;color:#2a3141;max-width:64ch}
+  .rsm h2{font-family:'Newsreader',Georgia,serif;font-size:27px;font-weight:500;letter-spacing:-.02em;line-height:1.2;margin:42px 0 14px;padding-top:20px;border-top:1px solid #e4e0d8;text-wrap:pretty}
+  .rsm h2:first-child{margin-top:0;padding-top:0;border-top:0}
+  .rsm h3{font-family:'Newsreader',Georgia,serif;font-size:20px;font-weight:600;letter-spacing:-.01em;margin:28px 0 10px;text-wrap:pretty}
+  .rsm h4{font-family:'IBM Plex Mono',monospace;font-size:11px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:#2b57cc;margin:24px 0 8px}
+  .rsm p{margin:0 0 15px;text-wrap:pretty}
+  .rsm ul,.rsm ol{margin:0 0 15px;padding-left:22px}
+  .rsm li{margin-bottom:7px;text-wrap:pretty}
+  .rsm li>ul,.rsm li>ol{margin:7px 0 0}
+  .rsm strong{font-weight:600;color:#121a2b}
+  .rsm em{font-style:italic}
+  .rsm code{font-family:'IBM Plex Mono',monospace;font-size:.88em;background:#efece5;border:1px solid #e4e0d8;border-radius:5px;padding:1px 5px}
+  .rsm hr{border:0;border-top:1px solid #e4e0d8;margin:32px 0}
+  .rsm blockquote{margin:0 0 18px;padding:15px 18px;background:#f7f6f2;border-left:2.5px solid #2b57cc;border-radius:0 12px 12px 0;font-size:15px;line-height:1.65;color:#39404f}
+  .rsm blockquote p:last-child{margin-bottom:0}
+  .rsm .tbl{overflow-x:auto;margin:0 0 20px;border:1px solid #e4e0d8;border-radius:12px;background:#fff}
+  .rsm table{border-collapse:collapse;width:100%;font-size:14px;line-height:1.5}
+  .rsm th{text-align:left;font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.09em;text-transform:uppercase;color:#8a8578;font-weight:600;padding:11px 14px;background:#faf9f6;border-bottom:1px solid #e4e0d8;white-space:nowrap}
+  .rsm td{padding:11px 14px;border-bottom:1px solid #efece5;vertical-align:top;text-wrap:pretty}
+  .rsm tr:last-child td{border-bottom:0}
+  .rsm .key{background:#f2f6fb;border:1px solid #d6e2f4;border-radius:12px;padding:16px 18px;margin:0 0 18px}
+  .rsm .key>*:last-child{margin-bottom:0}
+
+  /* figuras — no resumo e na questao */
+  .fig{margin:0 0 20px;background:#fff;border:1px solid #e4e0d8;border-radius:14px;overflow:hidden}
+  .fig img{display:block;width:100%;height:auto;cursor:zoom-in}
+  .fig figcaption{font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.06em;color:#8a8578;padding:9px 13px;border-top:1px solid #efece5;background:#faf9f6;text-wrap:pretty}
+  .qfig{margin:0 0 20px}
+
+  /* lightbox */
+  #lb{position:fixed;inset:0;z-index:90;background:rgba(18,26,43,.86);display:none;align-items:center;justify-content:center;padding:24px;cursor:zoom-out}
+  #lb.on{display:flex;animation:qFade .16s ease}
+  #lb img{max-width:100%;max-height:100%;border-radius:10px;box-shadow:0 24px 60px rgba(0,0,0,.5)}
+
+  @media(max-width:560px){
+    .rsm{font-size:16px}
+    .rsm h2{font-size:24px}
+    .home-grid{grid-template-columns:1fr!important}
+  }
+</style>
+</head>
+<body>
+
+<div style="min-height:100vh;background:#f5f3ef;color:#121a2b;font-family:'IBM Plex Sans',system-ui,sans-serif">
+  <header style="position:sticky;top:0;z-index:30;background:rgba(245,243,239,.94);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid #e4e0d8">
+    <div style="max-width:720px;margin:0 auto;padding:12px 16px 10px" id="hdr"></div>
+  </header>
+  <main style="max-width:720px;margin:0 auto;padding:0 16px 80px" id="stage"></main>
+</div>
+<div id="lb"><img alt=""></div>
+
+<script type="text/html" id="resumoSrc"><blockquote><p>Material de referência: não há slide da aula deste tema. Baseado nos manuais da OMS (AUDIT, ASSIST e intervenção breve), no Caderno de Atenção Básica nº 34 (Saúde Mental), no PCDT do Tabagismo e no Caderno de Atenção Básica nº 40 (pessoa tabagista), do Ministério da Saúde.</p></blockquote>
+<h2>Padrões de uso e rastreio</h2>
+<p>Nem todo uso é doença, e a conduta muda com o padrão. <strong>Uso de baixo risco</strong> não pede intervenção além de orientação; <strong>uso de risco</strong> aumenta a chance de dano, embora ele ainda não tenha aparecido; <strong>uso nocivo</strong> já causou dano físico ou mental; <strong>dependência</strong> (no DSM-5-TR, transtorno por uso de substância) envolve perda de controle, fissura, tolerância, abstinência e uso apesar das consequências. A APS é o lugar ideal para pegar os dois primeiros, que são a maioria e respondem bem a intervenções curtas.</p>
+<p>O <strong>AUDIT</strong>, da OMS, tem <strong>10 perguntas</strong> (consumo, sinais de dependência e problemas), soma de 0 a 40, e cada faixa aponta uma conduta:</p>
+<div class="tbl"><table><thead><tr><th>AUDIT</th><th>Zona</th><th>Conduta</th></tr></thead><tbody><tr><td>0 a 7</td><td>I</td><td>educação em saúde; reforçar o baixo risco</td></tr><tr><td>8 a 15</td><td>II</td><td><strong>intervenção breve</strong> (orientação sobre o uso de risco)</td></tr><tr><td>16 a 19</td><td>III</td><td>intervenção breve, aconselhamento e <strong>monitoramento</strong></td></tr><tr><td>20 a 40</td><td>IV</td><td><strong>avaliação diagnóstica de dependência</strong> e tratamento especializado</td></tr></tbody></table></div>
+<p>O <strong>AUDIT-C</strong> são as três primeiras perguntas (só consumo): rastreio rápido que, positivo, leva ao AUDIT completo. O <strong>CAGE</strong> tem 4 perguntas (<em>Cut down</em>, <em>Annoyed</em>, <em>Guilty</em>, <em>Eye-opener</em>), e <strong>2 ou mais respostas positivas</strong> sugerem problema — mas ele mira a dependência e não pergunta quantidade, então <strong>deixa passar o uso de risco</strong> de quem bebe muito sem consequência ainda. O <strong>ASSIST</strong>, também da OMS, rastreia <strong>várias substâncias numa só aplicação</strong> (tabaco, álcool, maconha, cocaína, estimulantes, sedativos, inalantes, alucinógenos, opioides) e dá um escore de risco baixo, moderado ou alto <strong>por substância</strong>: baixo pede orientação, moderado pede intervenção breve, alto pede intervenção breve e encaminhamento para avaliação e tratamento.</p>
+<blockquote><p>Instrumento de rastreio estratifica risco e orienta a conduta; <strong>não fecha diagnóstico</strong>. Escore alto no AUDIT pede avaliação de dependência, não um rótulo.</p></blockquote>
+<h2>Intervenção breve: o FRAMES</h2>
+<p>A <strong>intervenção breve</strong> é uma conversa estruturada de poucos minutos, em uma ou poucas consultas, indicada sobretudo para o <strong>uso de risco e o uso nocivo</strong>. Na dependência ela é o começo, não o tratamento inteiro. Os elementos eficazes cabem no acrônimo <strong>FRAMES</strong>:</p>
+<ul><li><strong>F</strong>eedback — devolver o resultado do rastreio e os riscos, sem julgamento;</li><li><strong>R</strong>esponsabilidade — a decisão de mudar é do paciente;</li><li><strong>A</strong>conselhamento (<em>advice</em>) — recomendação clara de reduzir ou parar;</li><li><strong>M</strong>enu — oferecer opções de estratégia e de meta;</li><li><strong>E</strong>mpatia — postura acolhedora, sem confronto;</li><li><strong>S</strong>elf-efficacy (autoeficácia) — reforçar a confiança de que ele consegue.</li></ul>
+<p>A prática é pedir licença para falar do assunto, dar a devolutiva, negociar uma meta (reduzir ou parar) e marcar retorno.</p>
+<h2>Entrevista motivacional e estágios de mudança</h2>
+<p>A <strong>entrevista motivacional</strong> (Miller e Rollnick) parte de que a <strong>ambivalência</strong> — querer e não querer mudar ao mesmo tempo — é normal, e de que confrontar aumenta a resistência. Os princípios clássicos são <strong>expressar empatia</strong>, <strong>desenvolver discrepância</strong> entre o comportamento e os objetivos do próprio paciente, <strong>evitar argumentação</strong> ("fluir com a resistência") e <strong>apoiar a autoeficácia</strong>. As ferramentas: perguntas abertas, reforço positivo, escuta reflexiva e resumos. Quem deve verbalizar os motivos para mudar é o paciente, não o médico.</p>
+<p>O <strong>modelo transteórico</strong> de Prochaska e DiClemente diz em que momento o paciente está e o que fazer em cada um:</p>
+<div class="tbl"><table><thead><tr><th>Estágio</th><th>Como se apresenta</th><th>O que fazer</th></tr></thead><tbody><tr><td><strong>Pré-contemplação</strong></td><td>não vê problema, não pensa em mudar</td><td>informar, devolver riscos, manter o vínculo — sem confronto</td></tr><tr><td><strong>Contemplação</strong></td><td>reconhece o problema, mas está ambivalente</td><td>explorar a ambivalência (prós e contras, a "balança decisória")</td></tr><tr><td><strong>Preparação</strong></td><td>decidiu mudar em breve</td><td>montar plano, data e estratégias</td></tr><tr><td><strong>Ação</strong></td><td>mudou recentemente</td><td>apoiar, lidar com gatilhos e fissura</td></tr><tr><td><strong>Manutenção</strong></td><td>sustenta a mudança</td><td>prevenção de recaída</td></tr><tr><td><strong>Recaída</strong></td><td>voltou ao comportamento</td><td>acolher sem culpa, rever o que falhou, retomar</td></tr></tbody></table></div>
+<blockquote><p>A recaída faz parte do ciclo — o modelo é uma espiral, não uma escada. Tratar recaída como fracasso afasta o paciente do serviço.</p></blockquote>
+<h2>Redução de danos e a rede</h2>
+<p><strong>Redução de danos</strong> é estratégia de saúde pública adotada pelo SUS (regulamentada pela Portaria 1.028/2005 e assumida pela política do Ministério da Saúde para usuários de álcool e outras drogas): reduzir os prejuízos do uso <strong>sem exigir a abstinência como condição para o cuidado</strong>. Não é incentivo ao uso — é ir aonde a pessoa está, criar vínculo e abrir a porta para outras metas. Na prática: não compartilhar seringas, cachimbos e canudos, preservativo, evitar misturar depressores (álcool, benzodiazepínico, opioide), hidratação e alimentação, vacina contra hepatite B e testagem para HIV, sífilis e hepatites.</p>
+<p>Na RAPS, o ponto especializado é o <strong>CAPS AD</strong> (dias úteis) ou o <strong>CAPS AD III</strong> (24 horas, com acolhimento noturno), de porta aberta, com a UBS seguindo junto. A <strong>Unidade de Acolhimento</strong> oferece moradia <strong>transitória</strong>, articulada ao CAPS, para quem tem necessidades decorrentes de álcool e drogas e vulnerabilidade social.</p>
+<blockquote><p>A Lei 13.840/2019 regulamentou a <strong>internação involuntária do dependente de drogas</strong>: pedida pela família ou responsável legal, formalizada por médico, só pelo tempo da desintoxicação, <strong>no máximo 90 dias</strong>, e comunicada ao Ministério Público e à Defensoria em até 72 horas. É exceção, quando os recursos extra-hospitalares não bastam.</p></blockquote>
+<h2>Abstinência alcoólica: o que a APS maneja e quando encaminhar</h2>
+<p>A abstinência começa em geral <strong>6 a 24 horas</strong> após a última dose — tremor, sudorese, taquicardia, hipertensão, ansiedade, insônia, náusea. Convulsões tendem a ocorrer nas primeiras 48 horas, e o <strong>delirium tremens</strong>, depois disso. A escala <strong>CIWA-Ar</strong> estima a gravidade e guia o benzodiazepínico.</p>
+<p>A <strong>abstinência leve</strong> pode ser tratada <strong>ambulatorialmente na APS</strong> quando não há história de convulsão ou delirium tremens, não há comorbidade clínica ou psiquiátrica grave, o paciente aceita medicação oral e tem <strong>um acompanhante</strong> que fique com ele, com retorno frequente. A base é <strong>benzodiazepínico por via oral</strong> (diazepam; <strong>lorazepam</strong> na hepatopatia grave e no idoso) com redução progressiva ao longo de cerca de uma semana, <strong>tiamina</strong>, hidratação e alimentação. Betabloqueador ou antipsicótico <strong>isolados</strong> não tratam a abstinência.</p>
+<h4>Encaminhar para urgência ou internação quando houver</h4>
+<ul><li>abstinência moderada a grave, confusão, desorientação ou alucinações;</li><li>história de <strong>convulsão</strong> ou de <strong>delirium tremens</strong> em abstinência anterior;</li><li>suspeita de <strong>encefalopatia de Wernicke</strong> (confusão, ataxia, alteração ocular);</li><li>comorbidade clínica descompensada, gestação, risco de suicídio ou psicose;</li><li>uso associado de outras drogas, falta de suporte em casa ou falha do manejo ambulatorial.</li></ul>
+<p>Passada a desintoxicação, o objetivo é manter a abstinência ou reduzir o consumo, com acompanhamento psicossocial e, quando indicado, naltrexona, acamprosato ou dissulfiram.</p>
+<h2>Tabagismo na APS</h2>
+<p>Todo fumante deve ser abordado em toda consulta. A <strong>abordagem breve</strong> (ou mínima) segue o <strong>PAAP</strong> — <strong>perguntar</strong> se fuma, <strong>avaliar</strong> a dependência e a motivação, <strong>aconselhar</strong> a parar e <strong>preparar</strong> para a tentativa — em cerca de 3 minutos; a <strong>abordagem básica</strong> acrescenta o <strong>acompanhar</strong> (<strong>PAAPA</strong>). A <strong>abordagem intensiva</strong> é estruturada em sessões individuais ou em grupo, com base cognitivo-comportamental: marcar o <strong>dia D</strong>, reconhecer gatilhos, lidar com a fissura e prevenir recaída.</p>
+<p>O <strong>teste de Fagerström</strong> (0 a 10) mede a dependência de nicotina; o <strong>primeiro cigarro logo ao acordar</strong> é o marcador isolado mais forte. A farmacoterapia é considerada, associada à abordagem comportamental, em quem fuma <strong>20 ou mais cigarros por dia</strong>, fuma o primeiro cigarro <strong>até 30 minutos após acordar</strong> (com pelo menos 10 cigarros/dia), tem <strong>Fagerström de 5 ou mais</strong> ou já falhou por sintomas de abstinência — sem contraindicação.</p>
+<div class="tbl"><table><thead><tr><th>Tratamento (PCDT)</th><th>Como usar</th><th>Atenção</th></tr></thead><tbody><tr><td><strong>Adesivo de nicotina</strong></td><td>começa <strong>no dia D</strong>, com redução gradual das doses ao longo de semanas</td><td>irritação de pele; cautela no infarto recente e em arritmia grave</td></tr><tr><td><strong>Goma ou pastilha</strong></td><td>para a fissura, associada ao adesivo</td><td>a combinação é mais eficaz que uma forma isolada</td></tr><tr><td><strong>Bupropiona</strong></td><td>começa <strong>1 a 2 semanas antes do dia D</strong>: 150 mg pela manhã por 3 dias, depois 150 mg duas vezes ao dia</td><td><strong>contraindicada</strong> em epilepsia, bulimia e anorexia, com IMAO e na retirada abrupta de álcool ou benzodiazepínico</td></tr></tbody></table></div>
+<blockquote><p>A vareniclina é a monoterapia mais eficaz nas diretrizes internacionais, mas não integra o elenco do protocolo do SUS. E o cigarro eletrônico tem venda proibida pela Anvisa — não é tratamento.</p></blockquote></script>
+<!-- Tutor local: define window.DEEPSEEK_KEY. O arquivo NAO vai para o repositorio,
+     entao online ele da 404 e o chat simplesmente nao aparece. -->
+<script src="../deepseek_key.js"></script>
+<script>
+/* ─────────────────────────────────────────────────────────────────────────────
+   CONTRATO DE DADOS — para adaptar a outro tema, troque apenas QUIZ e o resumo.
+   Cada item: { question, options[2..6], correctIndex, explanation }
+   ──────────────────────────────────────────────────────────────────────────── */
+var TITLE      = "Álcool e Outras Drogas na APS";
+var EYEBROW    = "Medicina de Família e Comunidade · Referência";
+var DISCIPLINA = "MFC";   // pasta de origem (PED, GO...) — usada pelo índice
+var SUBTITLE = "Rastrear, intervir, reduzir danos e saber quando encaminhar";
+var INTRO    = "AUDIT, CAGE e ASSIST, intervenção breve (FRAMES), entrevista motivacional e estágios de mudança, redução de danos, abstinência alcoólica leve na APS e tabagismo. Baseado nos manuais da OMS e no PCDT do Tabagismo — não há slide da aula deste tema.";
+
+var QUIZ = [
+  {
+    "question": "Homem de 40 anos, em consulta de rotina na UBS, responde ao AUDIT e soma 12 pontos. Não tem sinais de dependência. Qual a conduta indicada?",
+    "options": [
+      "Intervenção breve sobre o uso de risco, com retorno combinado",
+      "Encaminhamento imediato ao CAPS AD para desintoxicação",
+      "Apenas reforço positivo, pois o escore indica baixo risco",
+      "Prescrição de naltrexona para reduzir a vontade de beber"
+    ],
+    "correctIndex": 0,
+    "explanation": "No AUDIT (10 perguntas, 0 a 40 pontos), 0 a 7 é baixo risco; 8 a 15, uso de risco que pede intervenção breve; 16 a 19, intervenção breve com aconselhamento e monitoramento; 20 ou mais, avaliação de dependência e tratamento especializado. Com 12 pontos, a conduta é a intervenção breve na própria APS."
+  },
+  {
+    "question": "Mulher de 52 anos soma 24 pontos no AUDIT. Qual o próximo passo?",
+    "options": [
+      "Avaliar dependência e planejar tratamento, com apoio do CAPS AD",
+      "Fazer só orientação geral, pois o AUDIT não avalia dependência",
+      "Repetir o AUDIT em um ano, já que o escore é apenas de rastreio",
+      "Internar de forma involuntária para a desintoxicação imediata"
+    ],
+    "correctIndex": 0,
+    "explanation": "AUDIT de 20 a 40 (zona IV) indica provável dependência e pede avaliação diagnóstica e tratamento mais intensivo, em geral compartilhado com o CAPS AD, com a UBS seguindo junto. O instrumento não fecha diagnóstico, mas não se adia a avaliação; internação involuntária é exceção, não conduta de rotina."
+  },
+  {
+    "question": "Homem de 28 anos bebe cerca de dez latas de cerveja todo sábado, sem prejuízo no trabalho ou na família. Responde 'não' às quatro perguntas do CAGE. Qual a interpretação correta?",
+    "options": [
+      "O CAGE não mede quantidade e deixa passar o uso de risco; vale aplicar o AUDIT",
+      "O CAGE negativo exclui problema com álcool e dispensa qualquer abordagem",
+      "O CAGE negativo confirma que o consumo é de baixo risco para a saúde dele",
+      "O CAGE só é válido com exames de GGT e VCM, que devem ser pedidos antes"
+    ],
+    "correctIndex": 0,
+    "explanation": "O CAGE (Cut down, Annoyed, Guilty, Eye-opener) sugere problema com 2 ou mais respostas positivas, mas é voltado à dependência e não pergunta quanto se bebe. O consumo pesado episódico é uso de risco mesmo sem consequências, e o AUDIT (ou o AUDIT-C, suas três perguntas de consumo) é o instrumento que o capta."
+  },
+  {
+    "question": "Na UBS, a equipe quer um instrumento da OMS que rastreie, numa só aplicação, o uso de tabaco, álcool, maconha, cocaína, sedativos, inalantes e opioides, com escore de risco por substância. Qual é ele?",
+    "options": [
+      "ASSIST",
+      "AUDIT-C",
+      "CIWA-Ar",
+      "SRQ-20"
+    ],
+    "correctIndex": 0,
+    "explanation": "O ASSIST rastreia várias substâncias e classifica o risco de cada uma em baixo (orientação), moderado (intervenção breve) ou alto (intervenção breve e encaminhamento para avaliação e tratamento). O AUDIT-C cobre só o álcool, a CIWA-Ar mede gravidade de abstinência alcoólica e o SRQ-20 rastreia transtorno mental comum."
+  },
+  {
+    "question": "Na intervenção breve para uso de risco de álcool, quais elementos compõem o acrônimo FRAMES?",
+    "options": [
+      "Feedback, responsabilidade, aconselhamento, menu de opções, empatia e autoeficácia",
+      "Frequência, risco, abstinência, medicação, encaminhamento e seguimento mensal",
+      "Fissura, recaída, avaliação, monitoramento, exames e suspensão gradual do uso",
+      "Feedback, repressão, advertência, multa, exclusão do grupo e sanção familiar"
+    ],
+    "correctIndex": 0,
+    "explanation": "FRAMES: Feedback (devolver o resultado e os riscos), Responsabilidade (a decisão é do paciente), Advice (conselho claro de reduzir ou parar), Menu (opções de estratégia e meta), Empatia e Self-efficacy (autoeficácia). É indicada sobretudo para uso de risco e uso nocivo; na dependência é só o começo do cuidado."
+  },
+  {
+    "question": "Paciente diz: 'Sei que estou bebendo demais e às vezes penso em parar, mas a bebida me ajuda a relaxar depois do trabalho. Não sei se é a hora.' Em qual estágio de mudança ele está e o que fazer?",
+    "options": [
+      "Contemplação: explorar a ambivalência, pesando prós e contras",
+      "Pré-contemplação: confrontar a negação até que ele a admita",
+      "Preparação: marcar logo a data de parada e prescrever remédio",
+      "Manutenção: focar só na prevenção de recaída e nos gatilhos"
+    ],
+    "correctIndex": 0,
+    "explanation": "Reconhecer o problema e estar dividido entre mudar e não mudar é a contemplação de Prochaska e DiClemente. A conduta é explorar a ambivalência com a balança decisória, deixando o paciente verbalizar seus motivos para mudar; empurrar para a ação antes da hora aumenta a resistência."
+  },
+  {
+    "question": "Homem de 45 anos com hipertensão e AUDIT de 14 diz: 'Não vejo problema nenhum, todo mundo bebe no fim de semana.' Qual a abordagem mais adequada?",
+    "options": [
+      "Devolver os riscos sem confronto e manter o vínculo para outra conversa",
+      "Afirmar que ele é alcoólatra e que precisa admitir isso para ser tratado",
+      "Encerrar o assunto e não voltar a ele até que o paciente peça ajuda",
+      "Condicionar a renovação da receita do anti-hipertensivo a parar de beber"
+    ],
+    "correctIndex": 0,
+    "explanation": "Quem não vê problema está na pré-contemplação: a tarefa é informar e devolver os riscos (inclusive para a pressão), sem rótulos nem confronto, e manter a porta aberta. Pela entrevista motivacional, argumentar e rotular aumentam a resistência, e condicionar o cuidado a parar afasta o paciente."
+  },
+  {
+    "question": "Fumante parou há quatro meses com acompanhamento na UBS. Voltou a fumar após uma festa e chega dizendo que 'fracassou'. Como entender e conduzir?",
+    "options": [
+      "Recaída faz parte do ciclo: acolher, rever os gatilhos e retomar o plano",
+      "Recaída indica falta de motivação: aguardar ele voltar a querer parar",
+      "Recaída anula o tratamento: o plano só recomeça após seis meses",
+      "Recaída mostra que a abordagem falhou: encaminhar para internação"
+    ],
+    "correctIndex": 0,
+    "explanation": "No modelo transteórico a recaída é parte esperada do processo, que funciona como espiral: cada tentativa ensina algo. A conduta é acolher sem culpa, identificar o que precipitou a volta e retomar o plano; tratar a recaída como fracasso afasta o paciente do serviço."
+  },
+  {
+    "question": "Qual atitude do médico está de acordo com os princípios da entrevista motivacional?",
+    "options": [
+      "Evitar argumentar e ajudar o paciente a ver a distância entre o uso e seus objetivos",
+      "Listar todos os danos do álcool até o paciente concordar em parar naquele dia",
+      "Usar o medo das complicações como principal estratégia para gerar a mudança",
+      "Assumir a decisão pelo paciente, já que a dependência compromete a autonomia"
+    ],
+    "correctIndex": 0,
+    "explanation": "A entrevista motivacional (Miller e Rollnick) se apoia em expressar empatia, desenvolver discrepância entre o comportamento e os objetivos do próprio paciente, evitar argumentação e apoiar a autoeficácia. Quem deve verbalizar as razões para mudar é o paciente; sermão e medo aumentam a resistência."
+  },
+  {
+    "question": "Homem de 33 anos, usuário de crack, vive na rua e diz que não quer parar de usar. Procura a equipe por causa de uma ferida no pé. Qual conduta segue a lógica da redução de danos?",
+    "options": [
+      "Tratar a ferida, orientar uso mais seguro, testar para IST e manter vínculo",
+      "Tratar a ferida só depois que ele aceitar a internação para desintoxicação",
+      "Recusar o atendimento até que ele compareça sem ter usado nenhuma droga",
+      "Encaminhar direto à comunidade terapêutica como condição para o curativo"
+    ],
+    "correctIndex": 0,
+    "explanation": "Redução de danos é reduzir os prejuízos do uso sem exigir abstinência como condição para o cuidado: tratar a demanda que ele trouxe, orientar não compartilhar cachimbo, oferecer preservativo e testagem para HIV, sífilis e hepatites e criar vínculo. Condicionar o atendimento à abstinência afasta justamente quem mais precisa."
+  },
+  {
+    "question": "Sobre a redução de danos no SUS, é correto afirmar que ela:",
+    "options": [
+      "É estratégia de saúde pública que não condiciona o cuidado à abstinência",
+      "É estratégia restrita ao CAPS AD, sem espaço na atenção primária à saúde",
+      "Estimula o consumo de drogas e foi abandonada pelo Ministério da Saúde",
+      "Tem como meta única e obrigatória a abstinência total desde o primeiro dia"
+    ],
+    "correctIndex": 0,
+    "explanation": "A redução de danos, regulamentada pela Portaria 1.028/2005 e adotada na política do Ministério da Saúde para usuários de álcool e outras drogas, busca diminuir prejuízos à saúde e sociais sem exigir abstinência. É praticada na APS, no Consultório na Rua e nos CAPS; a abstinência pode ser uma meta, mas não é condição de acesso."
+  },
+  {
+    "question": "Mulher de 30 anos, em tratamento no CAPS AD por uso de crack, perdeu a moradia e está em vulnerabilidade social. Qual ponto da RAPS oferece residência transitória articulada ao CAPS?",
+    "options": [
+      "Unidade de Acolhimento",
+      "Residência Terapêutica",
+      "Hospital psiquiátrico",
+      "Centro de Convivência"
+    ],
+    "correctIndex": 0,
+    "explanation": "A Unidade de Acolhimento, do componente de atenção residencial de caráter transitório da RAPS, oferece moradia temporária e cuidado articulado ao CAPS para quem tem necessidades decorrentes de álcool e drogas e vulnerabilidade social. O Serviço Residencial Terapêutico é moradia para egressos de longas internações psiquiátricas."
+  },
+  {
+    "question": "Homem de 48 anos, bebe diariamente há anos e parou há 14 horas. Tem tremor leve, sudorese e ansiedade, sem confusão nem alucinações. Nunca teve convulsão nem delirium tremens, não tem comorbidade grave e a esposa ficará com ele. Qual a conduta?",
+    "options": [
+      "Tratar na APS com benzodiazepínico oral, tiamina e retorno próximo",
+      "Encaminhar ao pronto-socorro, pois toda abstinência exige internação",
+      "Prescrever haloperidol oral isolado para controlar tremor e ansiedade",
+      "Orientar que volte a beber aos poucos até a abstinência desaparecer"
+    ],
+    "correctIndex": 0,
+    "explanation": "Abstinência leve, sem história de convulsão ou delirium tremens, sem comorbidade grave e com acompanhante pode ser manejada ambulatorialmente: benzodiazepínico oral (diazepam; lorazepam na hepatopatia grave ou no idoso) com redução em cerca de uma semana, tiamina, hidratação e reavaliação frequente. Antipsicótico isolado não trata abstinência."
+  },
+  {
+    "question": "Na avaliação de um paciente em abstinência alcoólica na UBS, qual dado indica encaminhamento para tratamento hospitalar?",
+    "options": [
+      "Convulsão em abstinência anterior",
+      "Tremor fino de extremidades leve",
+      "Insônia e ansiedade desde a véspera",
+      "Sudorese leve sem alteração mental"
+    ],
+    "correctIndex": 0,
+    "explanation": "História de convulsão ou de delirium tremens em abstinência anterior prediz quadro grave e indica tratamento hospitalar, assim como confusão, alucinações, suspeita de Wernicke, comorbidade descompensada, gestação, falta de suporte em casa ou falha do manejo ambulatorial. Tremor, sudorese, insônia e ansiedade isolados são a abstinência leve."
+  },
+  {
+    "question": "Hipertenso de 55 anos, fumante, vem à UBS para renovar a receita. Em cerca de 3 minutos, o médico pergunta se ele fuma, avalia a motivação e a dependência, aconselha a parar e o prepara para a tentativa. Que abordagem é essa?",
+    "options": [
+      "Abordagem breve ou mínima do fumante (PAAP)",
+      "Abordagem intensiva em grupo cognitivo-comportamental",
+      "Teste de Fagerström para indicar a internação",
+      "Entrevista diagnóstica estruturada para dependência"
+    ],
+    "correctIndex": 0,
+    "explanation": "A abordagem breve ou mínima (perguntar, avaliar, aconselhar e preparar — PAAP) cabe em qualquer consulta e deve ser feita com todo fumante; a abordagem básica acrescenta o acompanhar (PAAPA). A abordagem intensiva é estruturada em sessões individuais ou em grupo, e o Fagerström mede a dependência de nicotina."
+  },
+  {
+    "question": "Fumante de 46 anos quer parar. Fuma 25 cigarros por dia, acende o primeiro cinco minutos após acordar e tem Fagerström de 8, sem contraindicações clínicas. Qual a conduta?",
+    "options": [
+      "Abordagem cognitivo-comportamental associada a farmacoterapia",
+      "Abordagem cognitivo-comportamental isolada, sem farmacoterapia",
+      "Farmacoterapia isolada, sem necessidade de apoio comportamental",
+      "Redução para dez cigarros por dia antes de qualquer tratamento"
+    ],
+    "correctIndex": 0,
+    "explanation": "Fumar 20 ou mais cigarros por dia, acender o primeiro até 30 minutos após acordar e ter Fagerström de 5 ou mais indicam dependência elevada e farmacoterapia (reposição de nicotina ou bupropiona). O medicamento sempre se associa à abordagem cognitivo-comportamental, que é a base do tratamento no PCDT do Tabagismo."
+  },
+  {
+    "question": "Fumante vai iniciar bupropiona no programa de tabagismo da UBS. Quando o medicamento deve começar em relação à data de parada (dia D)?",
+    "options": [
+      "Uma a duas semanas antes da data do dia D",
+      "No próprio dia D, junto com o adesivo",
+      "Uma semana após o dia D, se houver fissura",
+      "Só após um mês sem fumar, para evitar recaída"
+    ],
+    "correctIndex": 0,
+    "explanation": "A bupropiona leva alguns dias para atingir efeito e começa 1 a 2 semanas antes do dia D: 150 mg pela manhã por 3 dias e depois 150 mg duas vezes ao dia. O adesivo de nicotina, ao contrário, começa no dia D; a bupropiona é contraindicada em epilepsia, bulimia, anorexia e com IMAO."
+  },
+  {
+    "question": "Pela Lei 13.840/2019, a internação involuntária de pessoa dependente de drogas:",
+    "options": [
+      "Dura só o tempo da desintoxicação, no máximo 90 dias, comunicada em 72 horas",
+      "Dura o tempo que a família decidir, sem prazo e sem comunicação a órgão algum",
+      "Pode ser pedida por policial e dura no mínimo seis meses em comunidade terapêutica",
+      "É proibida, pois a Reforma Psiquiátrica aboliu toda internação sem consentimento"
+    ],
+    "correctIndex": 0,
+    "explanation": "A Lei 13.840/2019 prevê internação involuntária a pedido de familiar ou responsável legal, formalizada por médico, apenas pelo tempo necessário à desintoxicação e no máximo 90 dias, com comunicação ao Ministério Público e à Defensoria em até 72 horas. Servidores da segurança pública não podem pedi-la, e ela é exceção, quando os recursos extra-hospitalares não bastam."
+  }
+];
+
+var LETTERS = ['A','B','C','D','E','F'];
+var SHUFFLE = true, LOCK = true;
+
+var S = { view:'home', started:false, finished:false, i:0, order:[], answers:[], open:{}, filter:'all', warn:false, chat:{} };
+
+function esc(s){ return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
+function pad(n){ return String(n).padStart(2,'0'); }
+
+function build(){
+  var qs = QUIZ.map(function(q,id){ return { question:q.question, options:q.options.slice(), correctIndex:q.correctIndex, explanation:q.explanation, image:q.image, imageCaption:q.imageCaption, id:id }; });
+  if (!SHUFFLE) return qs;
+  for (var i=qs.length-1;i>0;i--){ var j=Math.floor(Math.random()*(i+1)); var t=qs[i]; qs[i]=qs[j]; qs[j]=t; }
+  return qs.map(function(q){
+    var correct = q.options[q.correctIndex], o = q.options.slice();
+    for (var i=o.length-1;i>0;i--){ var j=Math.floor(Math.random()*(i+1)); var t=o[i]; o[i]=o[j]; o[j]=t; }
+    q.options = o; q.correctIndex = o.indexOf(correct); return q;
+  });
+}
+
+/* ── ações ─────────────────────────────────────────────────────────────────── */
+var A = {
+  home:      function(){ S.view='home'; S.started=false; S.finished=false; up(0); },
+  resumo:    function(){ S.view='resumo'; up(0); },
+  start:     function(){ var o=build(); S.view='quiz'; S.started=true; S.finished=false; S.i=0; S.order=o;
+                         S.answers=new Array(o.length).fill(null); S.open={}; S.filter='all'; S.warn=false; up(0); },
+  restart:   function(){ A.start(); },
+  sair:      function(){ S.view='home'; S.started=false; up(0); },   // guarda as respostas
+  retomar:   function(){ S.view='quiz'; S.started=true; S.finished=false; S.warn=false; up(0); },
+  go:        function(n){ if(n<0||n>S.order.length-1) return; S.i=n; S.warn=false; render(); },
+  jump:      function(n){ if(S.finished){ S.finished=false; S.i=n; S.warn=false; } else { if(n<0||n>S.order.length-1) return; S.i=n; S.warn=false; } up(0,'smooth'); },
+  pick:      function(n){ if(LOCK && S.answers[S.i]!==null) return; S.answers[S.i]=n; render(); },
+  prev:      function(){ A.go(S.i-1); },
+  next:      function(){ if(S.i<S.order.length-1) A.go(S.i+1); else A.finish(); },
+  finish:    function(){ var b=S.answers.filter(function(a){return a===null}).length;
+                         if(b>0 && !S.warn){ S.warn=true; render(); return; } S.finished=true; S.warn=false; up(0); },
+  force:     function(){ S.finished=true; S.warn=false; up(0); },
+  gotoBlank: function(){ var n=S.answers.findIndex(function(a){return a===null}); if(n>=0) A.go(n); },
+  back:      function(){ S.finished=false; S.warn=false; up(0); },
+  filter:    function(k){ S.filter=k; render(); },
+  toggle:    function(n){ S.open[n]=!S.open[n]; render(); },
+  toggleAll: function(){ var r=reviewList(), all=r.length>0 && r.every(function(x){return S.open[x.idx]});
+                         S.open={}; if(!all) r.forEach(function(x){ S.open[x.idx]=true; }); render(); }
+};
+function up(top, beh){ render(); window.scrollTo({ top: top||0, behavior: beh||'auto' }); }
+
+/* Aberto por duplo clique (file://) volta para o indice local; servido pela web,
+   volta para o publicado. Os dois listam os mesmos materiais. */
+function idxHref(){
+  var local = (typeof location !== 'undefined' && location.protocol === 'file:');
+  return local ? '../index_local.html' : '../index.html';
+}
+function emAndamento(){
+  return S.order.length > 0 && !S.finished &&
+         S.answers.some(function(a){ return a !== null; });
+}
+
+/* ── header ────────────────────────────────────────────────────────────────── */
+function renderHeader(){
+  var mono = "font-family:'IBM Plex Mono',monospace";
+  var left =
+    '<div style="min-width:0">' +
+      '<div style="display:flex;align-items:center;gap:8px;'+mono+';font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:#8a8578">' +
+        '<a href="'+idxHref()+'" class="h-ink" style="color:#2b57cc;text-decoration:none;white-space:nowrap">\u2190 Materiais</a>' +
+        '<span style="color:#d3cec4">/</span>' +
+        '<span style="overflow:hidden;text-overflow:ellipsis;white-space:nowrap">'+esc(EYEBROW)+'</span>' +
+      '</div>' +
+      '<h1 style="margin:1px 0 0;font-family:\'Newsreader\',Georgia,serif;font-size:20px;font-weight:500;letter-spacing:-.01em;line-height:1.15">'+esc(TITLE)+'</h1>' +
+    '</div>';
+
+  var right = '';
+  if (S.view === 'quiz' && S.started) {
+    var hit = counts().hit;
+    right = '<div style="display:flex;align-items:center;gap:10px;flex-shrink:0">' +
+              '<button type="button" data-act="sair" class="h-line" style="background:none;border:1px solid #ddd8ce;border-radius:9px;padding:6px 11px;'+mono+';font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;color:#5b6478;cursor:pointer;transition:border-color .15s ease">Sair</button>' +
+              '<div style="display:flex;align-items:center;gap:6px">' +
+                '<span style="'+mono+';font-size:15px;font-weight:600;letter-spacing:-.02em">'+hit+'</span>' +
+                '<span style="'+mono+';font-size:11px;color:#8a8578">/ '+S.order.length+'</span>' +
+              '</div></div>';
+  } else if (S.view !== 'home') {
+    right = '<button type="button" data-act="home" class="h-line" style="flex-shrink:0;background:none;border:1px solid #ddd8ce;border-radius:9px;padding:7px 13px;'+mono+';font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:#5b6478;cursor:pointer;transition:border-color .15s ease">← Início</button>';
+  }
+
+  var html = '<div style="display:flex;align-items:baseline;justify-content:space-between;gap:12px;margin-bottom:'+(S.view==='quiz'&&S.started?'10px':'2px')+'">'+left+right+'</div>';
+
+  if (S.view === 'quiz' && S.started) {
+    var c = counts();
+    var rail = S.order.map(function(q,n){
+      var a = S.answers[n], cur = n===S.i && !S.finished, bg = '#d3cec4';
+      if (a!==null) bg = (a===q.correctIndex) ? '#2e7d55' : '#c04437';
+      if (cur && a===null) bg = '#121a2b';
+      var st = a===null ? 'em branco' : (a===q.correctIndex ? 'correta' : 'incorreta');
+      return '<button type="button" data-act="jump" data-n="'+n+'" title="Questão '+(n+1)+' — '+st+'" aria-label="Questão '+(n+1)+' — '+st+'" style="flex:1 1 0;min-width:0;background:none;border:0;padding:13px 0;margin:0;cursor:pointer;display:flex;align-items:center;justify-content:center">' +
+             '<span style="display:block;width:100%;border-radius:99px;transition:height .18s ease,background .18s ease,box-shadow .18s ease;height:'+(cur?'17px':'9px')+';background:'+bg+';box-shadow:'+(cur?'0 0 0 3px rgba(18,26,43,.13)':'none')+'"></span></button>';
+    }).join('');
+    html += '<div><div style="display:flex;align-items:center;gap:3px">'+rail+'</div>' +
+            '<div style="display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:-2px">' +
+              '<div style="'+mono+';font-size:11px;letter-spacing:.04em;color:#5b6478">Questão '+pad(S.i+1)+' / '+S.order.length+'</div>' +
+              '<div style="display:flex;align-items:center;gap:12px;'+mono+';font-size:10.5px;color:#8a8578">' +
+                dot('#2e7d55',c.hit)+dot('#c04437',c.miss)+dot('#d3cec4',c.blank) +
+              '</div></div></div>';
+  }
+  document.getElementById('hdr').innerHTML = html;
+}
+function dot(color,n){ return '<span style="display:flex;align-items:center;gap:5px"><span style="width:7px;height:7px;border-radius:99px;background:'+color+';display:block"></span>'+n+'</span>'; }
+
+function counts(){
+  var hit=0, miss=0, blank=0;
+  S.answers.forEach(function(a,n){
+    if (a===null) blank++;
+    else if (S.order[n] && a===S.order[n].correctIndex) hit++;
+    else miss++;
+  });
+  return { hit:hit, miss:miss, blank:blank, total:S.order.length };
+}
+
+/* ── tela inicial ──────────────────────────────────────────────────────────── */
+function renderHome(){
+  var mono = "font-family:'IBM Plex Mono',monospace";
+  var secoes = (document.getElementById('resumoSrc').textContent.match(/<h2/g)||[]).length;
+  var cell = function(v,l){
+    return '<div style="background:#faf9f6;padding:16px 14px">' +
+      '<div style="'+mono+';font-size:22px;font-weight:500;letter-spacing:-.03em">'+v+'</div>' +
+      '<div style="'+mono+';font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:#8a8578;margin-top:3px">'+l+'</div></div>';
+  };
+  var card = function(act,tag,titulo,desc,cta){
+    return '<button type="button" data-act="'+act+'" class="h-card" style="display:flex;flex-direction:column;align-items:flex-start;gap:0;text-align:left;background:#fff;border:1px solid #e4e0d8;border-radius:18px;padding:24px 22px;cursor:pointer;transition:border-color .16s ease,transform .14s ease;box-shadow:0 1px 2px rgba(18,26,43,.04),0 12px 28px -20px rgba(18,26,43,.18)">' +
+      '<div style="'+mono+';font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:#2b57cc;margin-bottom:12px">'+tag+'</div>' +
+      '<div style="font-family:\'Newsreader\',Georgia,serif;font-size:26px;font-weight:500;letter-spacing:-.02em;line-height:1.15;margin-bottom:8px">'+titulo+'</div>' +
+      '<div style="font-size:14px;line-height:1.6;color:#5b6478;margin-bottom:18px;text-wrap:pretty">'+desc+'</div>' +
+      '<div style="'+mono+';font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:#121a2b">'+cta+'</div></button>';
+  };
+
+  document.getElementById('stage').innerHTML =
+    '<section style="padding:56px 0 0;animation:qFade .3s ease">' +
+      '<div style="'+mono+';font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:#2b57cc;margin-bottom:16px">Material de revisão</div>' +
+      '<h2 style="font-family:\'Newsreader\',Georgia,serif;font-size:40px;line-height:1.08;font-weight:400;letter-spacing:-.025em;margin:0 0 18px;text-wrap:pretty">'+esc(SUBTITLE)+'</h2>' +
+      '<p style="font-size:15.5px;line-height:1.65;color:#5b6478;margin:0 0 30px;max-width:52ch;text-wrap:pretty">'+esc(INTRO)+'</p>' +
+      '<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(108px,1fr));gap:1px;background:#e4e0d8;border:1px solid #e4e0d8;border-radius:14px;overflow:hidden;margin-bottom:32px">' +
+        cell(QUIZ.length,'Questões') + cell(secoes,'Seções') + cell('~'+Math.round(QUIZ.length*0.75),'Minutos') +
+      '</div>' +
+      '<div class="home-grid" style="display:grid;grid-template-columns:1fr 1fr;gap:12px">' +
+        (emAndamento()
+          ? card('retomar','Em andamento','Quiz',
+                 'Você parou na questão '+pad(S.i+1)+' de '+S.order.length+', com '+
+                 (S.order.length-counts().blank)+' respondida'+((S.order.length-counts().blank)===1?'':'s')+
+                 '. Suas respostas continuam guardadas.','Retomar →')
+          : card('start','Praticar','Quiz', QUIZ.length+' questões de múltipla escolha, com explicação assim que você responde e gabarito comentado no fim.','Começar →')) +
+        card('resumo','Estudar','Resumo','O conteúdo da aula em texto corrido, organizado em '+secoes+' seções para leitura antes da prova.','Ler →') +
+      '</div>' +
+      '<div style="margin-top:26px;display:flex;flex-wrap:wrap;align-items:center;gap:8px 18px;'+mono+';font-size:11px;color:#8a8578">' +
+        '<span>← →&nbsp; navegar</span><span>1–'+maxOpts()+'&nbsp; responder</span><span>Enter&nbsp; avançar</span>' +
+        (emAndamento() ? '<button type="button" data-act="start" class="h-ink" style="background:none;border:0;padding:0;'+mono+';font-size:11px;color:#8a8578;cursor:pointer;text-decoration:underline;text-underline-offset:3px">recomeçar do zero</button>' : '') +
+        '</div>' +
+    '</section>';
+}
+function maxOpts(){ return QUIZ.reduce(function(m,q){ return Math.max(m,q.options.length); },0); }
+
+/* ── resumo ────────────────────────────────────────────────────────────────── */
+function renderResumo(){
+  document.getElementById('stage').innerHTML =
+    '<section style="padding:34px 0 0;animation:qFade .3s ease">' +
+      '<div style="font-family:\'IBM Plex Mono\',monospace;font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:#2b57cc;margin-bottom:14px">Resumo</div>' +
+      '<div class="rsm">' + document.getElementById('resumoSrc').textContent + '</div>' +
+      '<div style="display:flex;flex-wrap:wrap;gap:9px;margin-top:38px;padding-top:24px;border-top:1px solid #e4e0d8">' +
+        '<button type="button" data-act="start" class="h-darkflat" style="background:#121a2b;color:#f5f3ef;border:0;border-radius:11px;padding:13px 24px;font-size:14px;font-weight:500;cursor:pointer;transition:background .16s ease">Fazer o quiz →</button>' +
+        '<button type="button" data-act="home" class="h-line" style="background:none;border:1px solid #ddd8ce;border-radius:11px;padding:13px 22px;font-size:14px;cursor:pointer;transition:border-color .15s ease">Voltar ao início</button>' +
+      '</div></section>';
+}
+
+/* imagem da questao — data URI ja resolvida pelo montar_quiz.py */
+function figura(q, cls){
+  if (!q.image) return '';
+  return '<figure class="fig'+(cls?' '+cls:'')+'"><img src="'+q.image+'" alt="'+esc(q.imageCaption||'Imagem da questão')+'">' +
+         (q.imageCaption ? '<figcaption>'+esc(q.imageCaption)+'</figcaption>' : '') + '</figure>';
+}
+
+/* ── questão ───────────────────────────────────────────────────────────────── */
+function renderQuestion(){
+  var mono = "font-family:'IBM Plex Mono',monospace";
+  var q = S.order[S.i], ans = S.answers[S.i], reveal = ans !== null;
+
+  var status = 'Não respondida', sColor = '#8a8578';
+  if (reveal) { var ok = ans===q.correctIndex; status = ok?'Você acertou':'Você errou'; sColor = ok?'#2e7d55':'#c04437'; }
+
+  var opts = q.options.map(function(text,n){
+    var isC = n===q.correctIndex, isMine = n===ans;
+    var bd='#e4e0d8', bg='#fff', fg='#121a2b', bBg='#f2efe9', bFg='#8a8578', mark='', mColor='', op='1', hbd='#2b57cc';
+    if (reveal) {
+      op = (isC||isMine) ? '1' : '.62';
+      if (isC)               { bd='#8fc7a7'; bg='#eef7f1'; fg='#1f5c3e'; bBg='#2e7d55'; bFg='#fff'; mark='✓'; mColor='#2e7d55'; }
+      if (isMine && !isC)    { bd='#e0a49a'; bg='#fdf0ee'; fg='#8f2f25'; bBg='#c04437'; bFg='#fff'; mark='✕'; mColor='#c04437'; }
+    } else if (isMine)       { bd='#121a2b'; bg='#f7f6f2'; bBg='#121a2b'; bFg='#f5f3ef'; }
+    var locked = reveal && LOCK;
+    return '<button type="button" data-act="pick" data-n="'+n+'" class="h-opt'+(locked?' locked':'')+'" style="--hbd:'+hbd+';display:flex;gap:13px;align-items:flex-start;width:100%;text-align:left;padding:14px 15px;border-radius:13px;font-size:15px;line-height:1.5;transition:border-color .15s ease,background .15s ease,transform .12s ease;border:1.5px solid '+bd+';background:'+bg+';color:'+fg+';cursor:'+(locked?'default':'pointer')+';opacity:'+op+'">' +
+      '<span style="flex-shrink:0;width:24px;height:24px;border-radius:7px;display:flex;align-items:center;justify-content:center;'+mono+';font-size:11.5px;font-weight:600;margin-top:1px;background:'+bBg+';color:'+bFg+'">'+LETTERS[n]+'</span>' +
+      '<span style="flex:1;min-width:0;text-wrap:pretty">'+esc(text)+'</span>' +
+      (mark ? '<span style="flex-shrink:0;'+mono+';font-size:14px;font-weight:600;margin-top:1px;color:'+mColor+'">'+mark+'</span>' : '') +
+      '</button>';
+  }).join('');
+
+  var expl = reveal ? '<div style="margin-top:20px;padding:16px 18px;background:#f7f6f2;border-left:2.5px solid #2b57cc;border-radius:0 12px 12px 0;animation:qFade .26s ease">' +
+      '<div style="'+mono+';font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:#2b57cc;margin-bottom:8px">Por quê</div>' +
+      '<p style="margin:0;font-size:14.5px;line-height:1.68;color:#39404f;text-wrap:pretty">'+esc(q.explanation)+'</p></div>' : '';
+
+  var blank = counts().blank;
+  var warn = S.warn ? '<div style="margin-top:14px;padding:15px 17px;background:#fdf7e9;border:1px solid #e8d5a3;border-radius:14px;animation:qFade .22s ease">' +
+      '<p style="margin:0 0 12px;font-size:14px;line-height:1.55;color:#6b5620">'+blank+(blank===1?' questão ainda está em branco.':' questões ainda estão em branco.')+' Você pode voltar nelas ou finalizar assim mesmo.</p>' +
+      '<div style="display:flex;flex-wrap:wrap;gap:8px">' +
+        '<button type="button" data-act="gotoBlank" style="background:#121a2b;color:#f5f3ef;border:0;border-radius:9px;padding:9px 16px;font-size:13px;font-weight:500;cursor:pointer">Ir para a 1ª em branco</button>' +
+        '<button type="button" data-act="force" style="background:none;color:#6b5620;border:1px solid #e8d5a3;border-radius:9px;padding:9px 16px;font-size:13px;cursor:pointer">Finalizar assim mesmo</button>' +
+      '</div></div>' : '';
+
+  var last = S.i === S.order.length-1;
+  var early = !last && (S.order.length - blank) > 0;
+
+  document.getElementById('stage').innerHTML =
+    '<section style="padding:26px 0 0">' +
+      '<article style="background:#fff;border:1px solid #e4e0d8;border-radius:18px;padding:26px 22px 24px;box-shadow:0 1px 2px rgba(18,26,43,.04),0 12px 28px -18px rgba(18,26,43,.18)">' +
+        '<div style="display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:14px">' +
+          '<div style="'+mono+';font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:#2b57cc">Questão '+pad(S.i+1)+'</div>' +
+          '<div style="'+mono+';font-size:10.5px;letter-spacing:.06em;color:'+sColor+'">'+status+'</div>' +
+        '</div>' +
+        '<h2 style="font-family:\'Newsreader\',Georgia,serif;font-size:22px;line-height:1.42;font-weight:400;letter-spacing:-.012em;margin:0 0 22px;text-wrap:pretty">'+esc(q.question)+'</h2>' +
+        figura(q, 'qfig') +
+        '<div style="display:flex;flex-direction:column;gap:9px">'+opts+'</div>' + expl +
+        (reveal ? chatBox(q, ans===q.correctIndex) : '') +
+      '</article>' + warn +
+      '<div style="display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:18px">' +
+        '<button type="button" data-act="prev" class="h-line" style="background:none;border:1px solid #ddd8ce;border-radius:11px;padding:12px 18px;font-size:14px;cursor:pointer;transition:border-color .15s ease,color .15s ease;color:'+(S.i===0?'#c4bfb4':'#121a2b')+';pointer-events:'+(S.i===0?'none':'auto')+'">← Anterior</button>' +
+        '<div style="display:flex;align-items:center;gap:8px">' +
+          (early ? '<button type="button" data-act="finish" class="h-ink" style="background:none;border:0;padding:12px 6px;'+mono+';font-size:11.5px;letter-spacing:.06em;text-transform:uppercase;color:#8a8578;cursor:pointer;text-decoration:underline;text-underline-offset:3px">Finalizar</button>' : '') +
+          '<button type="button" data-act="next" class="h-darkflat" style="background:#121a2b;color:#f5f3ef;border:0;border-radius:11px;padding:12px 22px;font-size:14px;font-weight:500;cursor:pointer;transition:background .16s ease">'+(last?'Finalizar':'Próxima →')+'</button>' +
+        '</div></div></section>';
+}
+
+/* ── resultado + gabarito comentado ────────────────────────────────────────── */
+function reviewList(){
+  return S.order.map(function(q,n){
+    var a = S.answers[n], ok = a!==null && a===q.correctIndex;
+    return { idx:n, ok:ok, blank:a===null, q:q, a:a };
+  }).filter(function(r){
+    return S.filter==='all' || (S.filter==='wrong'&&!r.ok&&!r.blank) || (S.filter==='right'&&r.ok) || (S.filter==='blank'&&r.blank);
+  });
+}
+
+function renderResult(){
+  var mono = "font-family:'IBM Plex Mono',monospace";
+  var c = counts(), pct = c.total ? Math.round(c.hit/c.total*100) : 0;
+
+  var title='Precisa revisar', msg='Releia o material com atenção e refaça o quiz — as explicações abaixo cobrem cada erro.';
+  if (pct>=90)      { title='Domínio sólido';   msg='Desempenho excelente. Confira as explicações das que escaparam e siga em frente.'; }
+  else if (pct>=70) { title='Bom desempenho';   msg='Base consistente. Revise os pontos errados abaixo para fechar as lacunas.'; }
+  else if (pct>=50) { title='Meio do caminho';  msg='Você acertou o essencial, mas há lacunas. Comece pelo filtro de erradas.'; }
+
+  var stat = function(v,l,color){
+    return '<div style="background:#faf9f6;padding:14px 10px">' +
+      '<div style="'+mono+';font-size:19px;font-weight:500;color:'+color+'">'+v+'</div>' +
+      '<div style="'+mono+';font-size:9.5px;letter-spacing:.09em;text-transform:uppercase;color:#8a8578;margin-top:2px">'+l+'</div></div>';
+  };
+
+  var fdefs = [['all','Todas',c.total],['wrong','Erradas',c.miss],['right','Certas',c.hit],['blank','Em branco',c.blank]];
+  var filters = fdefs.map(function(f){
+    var on = S.filter===f[0];
+    return '<button type="button" data-act="filter" data-k="'+f[0]+'" class="h-line" style="border-radius:99px;padding:8px 14px;font-size:13px;cursor:pointer;transition:all .15s ease;border:1px solid '+(on?'#121a2b':'#ddd8ce')+';background:'+(on?'#121a2b':'transparent')+';color:'+(on?'#f5f3ef':'#5b6478')+'">'+f[1]+' '+f[2]+'</button>';
+  }).join('');
+
+  var list = reviewList();
+  var allOpen = list.length>0 && list.every(function(r){ return S.open[r.idx]; });
+
+  var cards = list.map(function(r){
+    var numBg='#f0ede7', numFg='#8a8578';
+    if (!r.blank) { if (r.ok) { numBg='#e3f0e8'; numFg='#1f5c3e'; } else { numBg='#fbe6e2'; numFg='#8f2f25'; } }
+    var open = !!S.open[r.idx];
+    var body = '';
+    if (open) {
+      var opts = r.q.options.map(function(text,n){
+        var isC = n===r.q.correctIndex, isMine = n===r.a;
+        var bd='#eeebe4', bg='#fbfaf8', fg='#5b6478', bBg='#f0ede7', bFg='#8a8578', tag='', tBg='', tFg='';
+        if (isC)            { bd='#bcdcc9'; bg='#eef7f1'; fg='#1f5c3e'; bBg='#2e7d55'; bFg='#fff'; tag='Correta'; tBg='#d9ede1'; tFg='#1f5c3e'; }
+        if (isMine && !isC) { bd='#eec4bd'; bg='#fdf0ee'; fg='#8f2f25'; bBg='#c04437'; bFg='#fff'; tag='Sua resposta'; tBg='#f7ddd8'; tFg='#8f2f25'; }
+        if (isMine && isC)  { tag='Sua resposta ✓'; }
+        return '<div style="display:flex;gap:11px;align-items:flex-start;padding:11px 13px;border-radius:11px;font-size:14px;line-height:1.5;border:1px solid '+bd+';background:'+bg+';color:'+fg+'">' +
+          '<span style="flex-shrink:0;width:21px;height:21px;border-radius:6px;display:flex;align-items:center;justify-content:center;'+mono+';font-size:10.5px;font-weight:600;background:'+bBg+';color:'+bFg+'">'+LETTERS[n]+'</span>' +
+          '<span style="flex:1;min-width:0;text-wrap:pretty">'+esc(text)+'</span>' +
+          (tag ? '<span style="flex-shrink:0;'+mono+';font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;padding:3px 7px;border-radius:6px;margin-top:1px;background:'+tBg+';color:'+tFg+'">'+tag+'</span>' : '') +
+          '</div>';
+      }).join('');
+      body = '<div style="padding:2px 15px 18px;animation:qDrawer .2s ease">' +
+        '<div style="height:1px;background:#eeebe4;margin:0 0 16px"></div>' +
+        '<p style="font-family:\'Newsreader\',Georgia,serif;font-size:18px;line-height:1.5;margin:0 0 16px;text-wrap:pretty">'+esc(r.q.question)+'</p>' +
+        figura(r.q) +
+        '<div style="display:flex;flex-direction:column;gap:7px">'+opts+'</div>' +
+        '<div style="margin-top:16px;padding:14px 16px;background:#f7f6f2;border-left:2.5px solid #2b57cc;border-radius:0 11px 11px 0">' +
+          '<div style="'+mono+';font-size:9.5px;letter-spacing:.16em;text-transform:uppercase;color:#2b57cc;margin-bottom:7px">Por quê</div>' +
+          '<p style="margin:0;font-size:14px;line-height:1.65;color:#39404f;text-wrap:pretty">'+esc(r.q.explanation)+'</p></div>' +
+        '<button type="button" data-act="jump" data-n="'+r.idx+'" style="margin-top:14px;background:none;border:0;padding:0;'+mono+';font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:#2b57cc;cursor:pointer;text-decoration:underline;text-underline-offset:3px">Abrir no quiz →</button></div>';
+    }
+    return '<div style="background:#fff;border:1px solid '+(open?'#c9c3b6':'#e4e0d8')+';border-radius:14px;overflow:hidden;transition:border-color .15s ease">' +
+      '<button type="button" data-act="toggle" data-n="'+r.idx+'" style="display:flex;align-items:center;gap:12px;width:100%;text-align:left;background:none;border:0;padding:14px 15px;cursor:pointer">' +
+        '<span style="flex-shrink:0;width:28px;height:28px;border-radius:8px;display:flex;align-items:center;justify-content:center;'+mono+';font-size:12px;font-weight:600;background:'+numBg+';color:'+numFg+'">'+pad(r.idx+1)+'</span>' +
+        '<span style="flex:1;min-width:0;font-size:14px;line-height:1.45;color:#39404f;overflow:hidden;text-overflow:ellipsis;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical">'+esc(r.q.question)+'</span>' +
+        '<span style="flex-shrink:0;'+mono+';font-size:16px;color:#8a8578;width:16px;text-align:center">'+(open?'−':'+')+'</span>' +
+      '</button>' + body + '</div>';
+  }).join('');
+
+  document.getElementById('stage').innerHTML =
+    '<section style="padding:34px 0 0;animation:qFade .3s ease">' +
+      '<div style="'+mono+';font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:#2b57cc;margin-bottom:14px">Resultado</div>' +
+      '<h2 style="font-family:\'Newsreader\',Georgia,serif;font-size:36px;line-height:1.12;font-weight:400;letter-spacing:-.025em;margin:0 0 8px">'+title+'</h2>' +
+      '<p style="font-size:15px;line-height:1.6;color:#5b6478;margin:0 0 24px;max-width:48ch;text-wrap:pretty">'+msg+'</p>' +
+      '<div style="height:8px;border-radius:99px;background:#e4e0d8;overflow:hidden;margin-bottom:10px">' +
+        '<div style="height:100%;border-radius:99px;background:#121a2b;transition:width .7s cubic-bezier(.22,1,.36,1);width:'+pct+'%"></div></div>' +
+      '<div style="display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:#e4e0d8;border:1px solid #e4e0d8;border-radius:14px;overflow:hidden;margin-bottom:34px">' +
+        stat(c.hit,'Certas','#2e7d55')+stat(c.miss,'Erradas','#c04437')+stat(c.blank,'Branco','#8a8578')+stat(pct+'%','Aproveit.','#2b57cc') +
+      '</div>' +
+      '<div style="display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-bottom:14px">' +
+        '<h3 style="font-family:\'Newsreader\',Georgia,serif;font-size:22px;font-weight:500;letter-spacing:-.015em;margin:0">Gabarito comentado</h3>' +
+        '<button type="button" data-act="toggleAll" class="h-ink" style="background:none;border:0;padding:6px 0;'+mono+';font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:#5b6478;cursor:pointer;text-decoration:underline;text-underline-offset:3px">'+(allOpen?'Recolher tudo':'Expandir tudo')+'</button>' +
+      '</div>' +
+      '<div style="display:flex;gap:7px;flex-wrap:wrap;margin-bottom:16px">'+filters+'</div>' +
+      '<div style="display:flex;flex-direction:column;gap:8px">'+cards+'</div>' +
+      (list.length===0 ? '<div style="padding:38px 16px;text-align:center;color:#8a8578;font-size:14px;border:1px dashed #ddd8ce;border-radius:14px">Nenhuma questão neste filtro.</div>' : '') +
+      '<div style="display:flex;flex-wrap:wrap;gap:9px;margin-top:28px;padding-top:24px;border-top:1px solid #e4e0d8">' +
+        '<button type="button" data-act="restart" class="h-darkflat" style="background:#121a2b;color:#f5f3ef;border:0;border-radius:11px;padding:13px 24px;font-size:14px;font-weight:500;cursor:pointer;transition:background .16s ease">Refazer o quiz</button>' +
+        '<button type="button" data-act="back" class="h-line" style="background:none;border:1px solid #ddd8ce;border-radius:11px;padding:13px 22px;font-size:14px;cursor:pointer;transition:border-color .15s ease">Voltar às questões</button>' +
+        '<button type="button" data-act="resumo" class="h-line" style="background:none;border:1px solid #ddd8ce;border-radius:11px;padding:13px 22px;font-size:14px;cursor:pointer;transition:border-color .15s ease">Ler o resumo</button>' +
+      '</div></section>';
+}
+
+/* ── render + eventos ──────────────────────────────────────────────────────── */
+
+/* ─── Tutor DeepSeek — só local, só quando a questão foi errada ──────────────
+   A chave vem de ../deepseek_key.js, que não existe na versão publicada: online
+   o arquivo dá 404, dsOn() vira false e o chat simplesmente não é renderizado.
+   O histórico fica em S.chat[idDaQuestao] e sobrevive ao re-render do stage. */
+var DS_MODEL = 'deepseek-flash';
+var DS_URL   = 'https://api.deepseek.com/chat/completions';
+var NLJS     = String.fromCharCode(10);
+var DS_MONO  = "font-family:'IBM Plex Mono',monospace";
+var DS_SANS  = "font-family:'IBM Plex Sans',system-ui,sans-serif";
+
+function dsOn(){ return typeof window.DEEPSEEK_KEY === 'string' && window.DEEPSEEK_KEY.length > 10; }
+
+
+/* ─── markdown do chat ───────────────────────────────────────────────────────
+   O modelo responde em markdown (**negrito**, listas, `codigo`, tabelas). O texto
+   vem de fora, entao a ordem importa: ESCAPA TUDO primeiro com esc() e so depois
+   aplica formatacao — assim nenhuma tag vinda da resposta vira HTML de verdade.
+   Como esc() ja trocou > por &gt;, a citacao casa com &gt; e nao com >.
+   Trechos de codigo saem de cena por um marcador NUL, que nao pode existir
+   no texto escapado, e voltam no fim — assim ` ` protege o que esta dentro. */
+function mdIn(t){
+  var Z = String.fromCharCode(0), codes = [];
+  t = t.replace(/`([^`]+)`/g, function(_, c){
+    codes.push(c);
+    return Z + 'c' + (codes.length - 1) + Z;
+  });
+  t = t.replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>');
+  t = t.replace(/__([^_]+)__/g, '<strong>$1</strong>');
+  t = t.replace(/(^|[\s(])\*([^*\n]+)\*/g, '$1<em>$2</em>');
+  t = t.replace(/(^|[\s(])_([^_\n]+)_/g, '$1<em>$2</em>');
+  t = t.replace(/\[([^\]]+)\]\((https?:\/\/[^)\s]+)\)/g,
+    '<a href="$2" target="_blank" rel="noopener" style="color:#2b57cc">$1</a>');
+  return t.replace(new RegExp(Z + 'c([0-9]+)' + Z, 'g'), function(_, i){
+    return '<code style="' + DS_MONO + ';font-size:12px;background:#f2efe9;' +
+           'border-radius:4px;padding:1px 5px">' + codes[i] + '</code>';
+  });
+}
+
+function mdChat(txt){
+  var Z = String.fromCharCode(0);
+  var t = esc(String(txt == null ? '' : txt));
+  var blocos = [];
+  t = t.replace(/```[a-zA-Z]*\n?([\s\S]*?)```/g, function(_, c){
+    blocos.push(c.replace(/\n+$/, ''));
+    return Z + 'b' + (blocos.length - 1) + Z;
+  });
+
+  var linhas = t.split('\n'), out = [], lista = null, par = [];
+  function fechaLista(){ if (lista) { out.push('</' + lista + '>'); lista = null; } }
+  function fechaPar(){
+    if (par.length) { out.push('<p style="margin:0 0 9px">' + mdIn(par.join(' ')) + '</p>'); par = []; }
+  }
+  function fecha(){ fechaPar(); fechaLista(); }
+
+  for (var i = 0; i < linhas.length; i++){
+    var l = linhas[i], t2 = l.trim();
+    if (!t2) { fecha(); continue; }
+
+    var bl = t2.match(new RegExp('^' + Z + 'b([0-9]+)' + Z + '$'));
+    if (bl) {
+      fecha();
+      out.push('<pre style="margin:0 0 9px;padding:9px 11px;background:#f7f6f2;border-radius:9px;' +
+               'overflow-x:auto;' + DS_MONO + ';font-size:12px;line-height:1.5">' + blocos[bl[1]] + '</pre>');
+      continue;
+    }
+
+    // tabela: linha com | ... | seguida da separadora | --- | --- |
+    if (t2.charAt(0) === '|' && i + 1 < linhas.length && /^\|[\s:|-]+\|$/.test(linhas[i+1].trim())) {
+      fecha();
+      var celulas = function(linha){
+        return linha.trim().replace(/^\||\|$/g, '').split('|').map(function(c){ return mdIn(c.trim()); });
+      };
+      var cab = celulas(t2), corpo = [];
+      i += 2;
+      while (i < linhas.length && linhas[i].trim().charAt(0) === '|') { corpo.push(celulas(linhas[i].trim())); i++; }
+      i--;
+      var cel = 'padding:5px 9px;border-bottom:1px solid #eae6de;text-align:left;vertical-align:top';
+      out.push('<div style="overflow-x:auto;margin:0 0 9px">' +
+        '<table style="border-collapse:collapse;font-size:12.5px;width:100%">' +
+        '<thead><tr>' + cab.map(function(c){ return '<th style="' + cel + ';font-weight:600">' + c + '</th>'; }).join('') + '</tr></thead>' +
+        '<tbody>' + corpo.map(function(r){
+          return '<tr>' + r.map(function(c){ return '<td style="' + cel + '">' + c + '</td>'; }).join('') + '</tr>';
+        }).join('') + '</tbody></table></div>');
+      continue;
+    }
+
+    var h = t2.match(/^#{1,6}\s+(.*)$/);
+    if (h) {
+      fecha();
+      out.push('<div style="font-weight:600;color:#121a2b;margin:11px 0 5px">' + mdIn(h[1]) + '</div>');
+      continue;
+    }
+
+    if (/^(---+|\*\*\*+)$/.test(t2)) {
+      fecha();
+      out.push('<hr style="border:0;border-top:1px solid #eae6de;margin:11px 0">');
+      continue;
+    }
+
+    var cit = t2.match(/^&gt;\s?(.*)$/);
+    if (cit) {
+      fecha();
+      out.push('<div style="margin:0 0 9px;padding:7px 11px;border-left:2.5px solid #c9d6f7;' +
+               'background:#f7f9fe;border-radius:0 7px 7px 0">' + mdIn(cit[1]) + '</div>');
+      continue;
+    }
+
+    var mUl = t2.match(/^[-*•]\s+(.*)$/);
+    var mOl = t2.match(/^\d+[.)]\s+(.*)$/);
+    if (mUl || mOl) {
+      var tipo = mUl ? 'ul' : 'ol';
+      fechaPar();
+      if (lista !== tipo) {
+        fechaLista();
+        out.push('<' + tipo + ' style="margin:0 0 9px;padding-left:19px">');
+        lista = tipo;
+      }
+      out.push('<li style="margin:3px 0">' + mdIn((mUl || mOl)[1]) + '</li>');
+      continue;
+    }
+
+    fechaLista();
+    par.push(t2);
+  }
+  fecha();
+  return out.join('');
+}
+
+function msgHTML(m){
+  if (m.role === 'user')
+    return '<div style="margin:0 0 10px;text-align:right">' +
+      '<span style="display:inline-block;max-width:88%;text-align:left;background:#f2efe9;' +
+      'border-radius:12px 12px 3px 12px;padding:9px 12px;font-size:13.5px;line-height:1.6;' +
+      'color:#39404f;text-wrap:pretty">' + esc(m.content) + '</span></div>';
+  return '<div style="margin:0 0 12px">' +
+    '<div style="' + DS_MONO + ';font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;' +
+    'color:#2b57cc;margin-bottom:4px">DeepSeek</div>' +
+    '<div style="font-size:13.5px;line-height:1.65;color:#39404f;text-wrap:pretty">' +
+    mdChat(m.content) + '</div></div>';
+}
+
+function chatBox(q, acertou){
+  if (!dsOn()) return '';
+  var chamada = acertou ? 'Quer ir mais fundo?' : 'Ainda com dúvida?';
+  var dica = acertou ? 'Por que as outras estão erradas?' : 'Por que a que eu marquei está errada?';
+  var hist = (S.chat[q.id] || []).map(msgHTML).join('');
+  return '<div id="ds" data-qid="' + q.id + '" style="margin-top:14px;border:1px solid #e4e0d8;' +
+      'border-radius:14px;background:#fff;overflow:hidden;animation:qFade .26s ease">' +
+      '<div style="display:flex;align-items:center;gap:8px;padding:11px 15px;' +
+        'border-bottom:1px solid #f0ede6;background:#faf9f6">' +
+        '<span style="' + DS_MONO + ';font-size:10px;letter-spacing:.16em;text-transform:uppercase;' +
+        'color:#2b57cc">' + chamada + '</span>' +
+        '<span style="font-size:12px;color:#8a8578">pergunte ao DeepSeek</span></div>' +
+      '<div id="dsLog" style="max-height:280px;overflow-y:auto;padding:' + (hist ? '12px 15px' : '0') + '">' +
+        hist + '</div>' +
+      '<div style="display:flex;gap:8px;padding:11px 12px;border-top:1px solid #f0ede6">' +
+        '<input id="dsIn" type="text" autocomplete="off" ' +
+          'placeholder="' + dica + '" ' +
+          'style="flex:1;min-width:0;border:1px solid #e4e0d8;border-radius:10px;padding:10px 12px;' +
+          'font-size:13.5px;' + DS_SANS + ';color:#121a2b;background:#fff;outline:none">' +
+        '<button type="button" data-act="dsSend" class="h-darkflat" style="flex-shrink:0;' +
+          'background:#121a2b;color:#f5f3ef;border:0;border-radius:10px;padding:10px 16px;' +
+          'font-size:13px;font-weight:500;cursor:pointer;transition:background .16s ease">Enviar</button>' +
+      '</div></div>';
+}
+
+function dsContexto(q, ans){
+  var alts = q.options.map(function(o, n){ return LETTERS[n] + ') ' + o; }).join(NLJS);
+  return 'Questao: ' + q.question + NLJS + alts + NLJS +
+    'Resposta correta: ' + LETTERS[q.correctIndex] + ') ' + q.options[q.correctIndex] + NLJS +
+    'O estudante marcou: ' + (ans === null ? 'nada' : LETTERS[ans] + ') ' + q.options[ans]) + NLJS +
+    'Explicacao que ele ja tem: ' + q.explanation;
+}
+
+A.dsSend = function(){
+  var box = document.getElementById('ds');
+  if (!box || !dsOn() || box.getAttribute('data-busy')) return;
+  var input = document.getElementById('dsIn'), log = document.getElementById('dsLog');
+  var texto = (input.value || '').trim();
+  if (!texto) return;
+
+  var qid = parseInt(box.getAttribute('data-qid'), 10), q = null, ans = null;
+  for (var i = 0; i < S.order.length; i++)
+    if (S.order[i].id === qid) { q = S.order[i]; ans = S.answers[i]; }
+  if (!q) return;
+
+  S.chat[qid] = S.chat[qid] || [];
+  S.chat[qid].push({ role:'user', content:texto });
+  input.value = '';
+  log.style.padding = '12px 15px';
+  log.insertAdjacentHTML('beforeend', msgHTML({ role:'user', content:texto }));
+  log.insertAdjacentHTML('beforeend',
+    '<div><div style="' + DS_MONO + ';font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;' +
+    'color:#2b57cc;margin-bottom:4px">DeepSeek</div>' +
+    '<div id="dsTxt" style="font-size:13.5px;line-height:1.65;color:#8a8578;' +
+    'text-wrap:pretty">pensando…</div></div>');
+  log.scrollTop = log.scrollHeight;
+  box.setAttribute('data-busy', '1');
+
+  var acertou = (ans === q.correctIndex);
+  var situacao = acertou
+    ? 'Voce e um tutor de medicina. O estudante do 7o semestre ACERTOU esta questao, mas ficou com uma duvida. '
+    : 'Voce e um tutor de medicina. O estudante do 7o semestre ERROU esta questao. ';
+  var msgs = [
+    { role:'system', content: situacao +
+      'Responda em portugues do Brasil, direto ao ponto, no maximo 150 palavras. ' +
+      'Traga o dado concreto (valor, criterio, mecanismo) em vez de generalidade. ' +
+      'Nao repita a explicacao que ele ja tem; foque na duvida que ele trouxe.' },
+    { role:'user', content: dsContexto(q, ans) }
+  ];
+  var h = S.chat[qid];
+  for (var j = 0; j < h.length; j++) msgs.push({ role:h[j].role, content:h[j].content });
+
+  dsStream(msgs, function(txt, fim, erro){
+    var el = document.getElementById('dsTxt');
+    if (!el) { box.removeAttribute('data-busy'); return; }
+    if (erro) { el.style.color = '#c04437'; el.textContent = erro; box.removeAttribute('data-busy'); return; }
+    el.style.color = '#39404f';
+    el.innerHTML = mdChat(txt);
+    var lg = document.getElementById('dsLog'); if (lg) lg.scrollTop = lg.scrollHeight;
+    if (fim) { el.removeAttribute('id'); S.chat[qid].push({ role:'assistant', content:txt }); box.removeAttribute('data-busy'); }
+  });
+};
+
+function dsStream(messages, cb){
+  var acc = '';
+  fetch(DS_URL, {
+    method: 'POST',
+    headers: { 'Content-Type':'application/json', 'Authorization':'Bearer ' + window.DEEPSEEK_KEY },
+    body: JSON.stringify({ model:DS_MODEL, messages:messages, stream:true, max_tokens:1200, temperature:0.3 })
+  }).then(function(r){
+    if (!r.ok) return r.text().then(function(t){
+      throw new Error(
+        r.status === 401 ? 'Chave recusada (401). Confira o deepseek_key.js.' :
+        r.status === 402 ? 'Sem saldo na conta DeepSeek (402).' :
+        r.status === 429 ? 'Limite de uso atingido (429). Tente daqui a pouco.' :
+        'Erro ' + r.status + ': ' + String(t).slice(0, 120));
+    });
+    var reader = r.body.getReader(), dec = new TextDecoder(), buf = '';
+    (function pump(){
+      return reader.read().then(function(res){
+        if (res.done) { cb(acc || '(resposta vazia)', true); return; }
+        buf += dec.decode(res.value, { stream:true });
+        var linhas = buf.split(NLJS);
+        buf = linhas.pop();
+        for (var i = 0; i < linhas.length; i++){
+          var l = linhas[i].trim();
+          if (l.indexOf('data:') !== 0) continue;
+          var carga = l.slice(5).trim();
+          if (carga === '[DONE]') continue;
+          try {
+            var d = JSON.parse(carga).choices[0].delta;
+            if (d && d.content) { acc += d.content; cb(acc, false); }
+          } catch (_){}
+        }
+        return pump();
+      });
+    })();
+  }).catch(function(e){
+    cb('', true, 'Nao consegui falar com o DeepSeek: ' + (e && e.message ? e.message : e));
+  });
+}
+
+function render(){
+  renderHeader();
+  if (S.view === 'home')        renderHome();
+  else if (S.view === 'resumo') renderResumo();
+  else if (S.finished)          renderResult();
+  else                          renderQuestion();
+}
+
+/* lightbox: clique em qualquer figura amplia */
+document.addEventListener('click', function(e){
+  var lb = document.getElementById('lb');
+  if (e.target.closest('#lb')) { lb.className = ''; return; }
+  var img = e.target.closest('.fig img');
+  if (img) { lb.firstElementChild.src = img.src; lb.className = 'on'; }
+});
+window.addEventListener('keydown', function(e){
+  if (e.key === 'Escape') document.getElementById('lb').className = '';
+});
+
+document.addEventListener('click', function(e){
+  var b = e.target.closest('[data-act]'); if (!b) return;
+  var act = b.getAttribute('data-act'), n = parseInt(b.getAttribute('data-n'),10), k = b.getAttribute('data-k');
+  if (act==='pick'||act==='jump'||act==='toggle') A[act](n);
+  else if (act==='filter') A.filter(k);
+  else if (A[act]) A[act]();
+});
+
+window.addEventListener('keydown', function(e){
+  if (S.view!=='quiz' || !S.started || S.finished) return;
+  var t = e.target, tag = t && t.tagName;
+  if (tag==='INPUT' || tag==='TEXTAREA' || (t && t.isContentEditable)) return;
+  if (e.metaKey||e.ctrlKey||e.altKey) return;
+  if (e.key==='ArrowRight')     { e.preventDefault(); A.go(S.i+1); }
+  else if (e.key==='ArrowLeft') { e.preventDefault(); A.go(S.i-1); }
+  else if (e.key==='Enter')     { e.preventDefault(); A.next(); }
+  else if (/^[1-6]$/.test(e.key)) {
+    var n = parseInt(e.key,10)-1;
+    if (n < S.order[S.i].options.length) A.pick(n);
+  }
+});
+
+render();
+</script>
+</body>
+</html>

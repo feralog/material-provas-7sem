@@ -1,0 +1,206 @@
+{
+  "titulo": "Neuropsiquiatria",
+  "eyebrow": "Psiquiatria · Referência",
+  "subtitulo": "Quando o sintoma psiquiátrico nasce de uma doença do corpo",
+  "intro": "Sinais de alerta de causa orgânica, transtorno neurocognitivo maior e leve, sintomas psiquiátricos de doenças neurológicas, endócrinas e autoimunes, catatonia e investigação básica. Baseado no DSM-5-TR — não há slide da aula deste tema.",
+  "questoes": [
+    {
+      "question": "Diante de um primeiro episódio psicótico, qual achado mais sugere causa orgânica?",
+      "options": [
+        "Alucinações visuais com flutuação do nível de consciência",
+        "Alucinações auditivas de vozes que comentam os atos",
+        "Delírio persecutório sistematizado de longa duração",
+        "Início aos 20 anos, com pródromo de isolamento social"
+      ],
+      "correctIndex": 0,
+      "explanation": "São sinais de alerta de causa orgânica: início tardio sem história psiquiátrica, instalação abrupta, alteração de consciência, atenção ou orientação, flutuação, alucinações visuais, olfativas ou táteis, sinais focais, convulsões, sinais vitais alterados, uso de substâncias e doença clínica conhecida. Vozes que comentam, delírio sistematizado e pródromo no adulto jovem são típicos de psicose primária."
+    },
+    {
+      "question": "Homem de 62 anos, sem antecedentes psiquiátricos, apresenta há três semanas desinibição, delírio persecutório e cefaleia. Ao exame há hemiparesia discreta à esquerda. Qual a conduta?",
+      "options": [
+        "Neuroimagem do encéfalo antes de qualquer outra hipótese",
+        "Antipsicótico atípico e reavaliação ambulatorial em um mês",
+        "Encaminhamento ao CAPS como primeiro episódio de esquizofrenia",
+        "Eletroconvulsoterapia pela gravidade do quadro psicótico"
+      ],
+      "correctIndex": 0,
+      "explanation": "Psicose de início após os 60 anos, com cefaleia e déficit focal, é orgânica até prova em contrário: tumor (sobretudo frontal), AVC, hematoma subdural, abscesso. A neuroimagem, de preferência ressonância, vem antes; rotular como transtorno primário e apenas medicar atrasa o diagnóstico."
+    },
+    {
+      "question": "Mulher de 74 anos tem testes neuropsicológicos alterados em memória e função executiva, mas continua pagando as contas, controlando seus remédios e cozinhando sozinha, com mais esforço e ajuda de uma agenda. Pelo DSM-5-TR, qual o diagnóstico?",
+      "options": [
+        "Transtorno neurocognitivo leve",
+        "Transtorno neurocognitivo maior",
+        "Declínio cognitivo próprio da idade",
+        "Pseudodemência depressiva leve"
+      ],
+      "correctIndex": 0,
+      "explanation": "No transtorno neurocognitivo leve há declínio modesto em um ou mais domínios, documentado em testes, sem perda da independência nas atividades instrumentais, ainda que com mais esforço ou estratégias compensatórias. No maior, o declínio é substancial e compromete a independência (pagar contas, gerir remédios). A fronteira é a funcionalidade."
+    },
+    {
+      "question": "Pelo DSM-5-TR, o transtorno neurocognitivo maior exige comprometimento de quantos domínios cognitivos?",
+      "options": [
+        "Um ou mais domínios, com perda de independência",
+        "Dois ou mais domínios, sendo um deles a memória",
+        "Três ou mais domínios, incluindo linguagem e praxia",
+        "Apenas a memória, desde que haja perda funcional"
+      ],
+      "correctIndex": 0,
+      "explanation": "O DSM-5-TR aceita declínio substancial em um ou mais dos seis domínios (atenção complexa, função executiva, aprendizado e memória, linguagem, perceptomotor e cognição social) que comprometa a independência; a memória não é obrigatória, o que acomoda a demência frontotemporal. Os critérios clássicos de demência, como os do NIA-AA, pedem ao menos dois domínios."
+    },
+    {
+      "question": "Idoso com demência leve, em dois dias, fica sonolento, desatento e desorientado, com piora à noite e períodos de melhora durante o dia. Qual o diagnóstico?",
+      "options": [
+        "Delirium sobreposto à demência, a investigar causa",
+        "Progressão esperada da demência, sem investigar",
+        "Depressão com pseudodemência de início abrupto",
+        "Psicose tardia primária com sintomas cognitivos"
+      ],
+      "correctIndex": 0,
+      "explanation": "Instalação em horas a dias, desatenção, alteração de consciência e flutuação definem delirium, e a demência é seu maior fator de risco. Toda piora abrupta no idoso com demência é delirium até prova em contrário: procurar infecção, fármaco novo, desidratação, retenção urinária e dor."
+    },
+    {
+      "question": "Homem de 72 anos com doença de Parkinson, em uso de levodopa e pramipexol, passa a ver pessoas e animais dentro de casa. Os sintomas persistem após a redução do pramipexol. Se um antipsicótico for necessário, qual é o mais adequado?",
+      "options": [
+        "Quetiapina em dose baixa",
+        "Haloperidol em dose baixa",
+        "Risperidona em dose baixa",
+        "Olanzapina em dose baixa"
+      ],
+      "correctIndex": 0,
+      "explanation": "Na psicose da doença de Parkinson primeiro se reduzem ou retiram anticolinérgicos, amantadina e agonistas dopaminérgicos, deixando a levodopa por último. Se ainda for preciso, usa-se quetiapina ou clozapina, que pouco pioram o parkinsonismo; haloperidol, risperidona e olanzapina o agravam, e na demência com corpos de Lewy a sensibilidade a antipsicóticos pode ser grave."
+    },
+    {
+      "question": "Homem de 58 anos com doença de Parkinson passou a apostar compulsivamente e a fazer compras desnecessárias poucos meses após iniciar pramipexol. Qual a causa mais provável?",
+      "options": [
+        "Transtorno do controle de impulsos pelo agonista dopaminérgico",
+        "Episódio maníaco primário de início tardio, sem relação causal",
+        "Demência frontotemporal associada ao Parkinson idiopático",
+        "Efeito anticolinérgico da levodopa sobre o lobo frontal"
+      ],
+      "correctIndex": 0,
+      "explanation": "Agonistas dopaminérgicos (pramipexol, ropinirol) causam transtornos do controle de impulsos: jogo patológico, hipersexualidade, compras e compulsão alimentar. É preciso perguntar ativamente, porque o paciente raramente conta; a conduta é reduzir ou suspender o agonista."
+    },
+    {
+      "question": "Paciente com epilepsia do lobo temporal tem uma salva de crises. Após dois dias lúcido, desenvolve delírios e alucinações que duram uma semana. Qual o diagnóstico mais provável?",
+      "options": [
+        "Psicose pós-ictal, após intervalo lúcido",
+        "Esquizofrenia desencadeada pelas crises",
+        "Estado de mal epiléptico não convulsivo",
+        "Delirium por intoxicação por anticonvulsivante"
+      ],
+      "correctIndex": 0,
+      "explanation": "A psicose pós-ictal surge depois de uma salva de crises, após um intervalo lúcido de horas a poucos dias, e regride em dias a semanas; trata-se com controle das crises e, se preciso, benzodiazepínico ou antipsicótico por curto período. O estado de mal não convulsivo cursa com rebaixamento contínuo e pede EEG."
+    },
+    {
+      "question": "Mulher de 25 anos tem crises com olhos fechados, movimentos assíncronos dos membros e balanço lateral da cabeça, que duram cerca de dez minutos. Lembra-se de partes do episódio e não fica confusa depois. Qual o exame padrão-ouro?",
+      "options": [
+        "Videoeletroencefalograma com registro de uma crise",
+        "Dosagem de prolactina sérica uma semana após a crise",
+        "Ressonância magnética de crânio com contraste",
+        "Eletroencefalograma de rotina entre as crises"
+      ],
+      "correctIndex": 0,
+      "explanation": "Olhos fechados, movimentos assíncronos, balanço lateral da cabeça, longa duração e memória do episódio sugerem crise não epiléptica psicogênica (transtorno de sintomas neurológicos funcionais). O padrão-ouro é o vídeo-EEG registrando a crise típica sem atividade epileptiforme; EEG interictal normal não exclui epilepsia, e a prolactina só ajuda se colhida 10 a 20 minutos após a crise."
+    },
+    {
+      "question": "Mulher de 50 anos tem 'depressão refratária' a dois antidepressivos, com lentificação, ganho de peso, intolerância ao frio, pele seca, constipação e bradicardia. Qual o próximo passo?",
+      "options": [
+        "Dosar TSH e T4 livre antes de trocar o antidepressivo",
+        "Associar lítio ao antidepressivo atual para potencializar",
+        "Indicar eletroconvulsoterapia pela refratariedade",
+        "Trocar por tricíclico, mais eficaz na depressão grave"
+      ],
+      "correctIndex": 0,
+      "explanation": "Lentificação, ganho de peso, intolerância ao frio, pele seca, constipação e bradicardia apontam hipotireoidismo, que causa depressão, apatia e lentificação cognitiva e responde mal ao antidepressivo. Diante de 'depressão refratária', revisam-se causas clínicas (tireoide, anemia, B12, apneia do sono, fármacos) antes de escalar o tratamento."
+    },
+    {
+      "question": "Mulher de 35 anos com lúpus iniciou prednisona em dose alta há cinco dias e está eufórica, insone, falante e acelerada. Qual a causa mais provável?",
+      "options": [
+        "Sintomas maníacos induzidos pelo corticoide",
+        "Primeiro episódio de transtorno bipolar tipo I",
+        "Esquizofrenia de início tardio desencadeada",
+        "Transtorno de ansiedade generalizada agudo"
+      ],
+      "correctIndex": 0,
+      "explanation": "O corticoide em dose alta causa, de forma dose-dependente e em geral nas primeiras semanas, euforia, insônia, mania, depressão ou psicose. No lúpus o diferencial é com o lúpus neuropsiquiátrico; a conduta é reduzir a dose quando possível e tratar os sintomas."
+    },
+    {
+      "question": "Idoso vegetariano estrito, em uso de metformina há anos, apresenta apatia, déficit de memória, parestesias nos pés e perda da sensibilidade vibratória. O hemograma é normal. Qual exame é prioritário?",
+      "options": [
+        "Dosagem de vitamina B12 e de ácido metilmalônico",
+        "Dosagem de ácido fólico isolada no soro",
+        "Eletroneuromiografia como exame único",
+        "Dosagem de vitamina D e de cálcio iônico"
+      ],
+      "correctIndex": 0,
+      "explanation": "A deficiência de B12 causa depressão, déficit cognitivo, psicose e neuropatia com perda da sensibilidade vibratória e proprioceptiva, mesmo sem anemia. Metformina, dieta vegetariana estrita, gastrite atrófica e idade avançada são fatores de risco; o ácido metilmalônico elevado confirma os casos limítrofes."
+    },
+    {
+      "question": "Mulher de 23 anos teve quadro gripal e, em duas semanas, evoluiu com psicose, agitação, insônia, movimentos orofaciais involuntários, convulsão e instabilidade autonômica. Piorou com rigidez após haloperidol. Qual o diagnóstico e a investigação?",
+      "options": [
+        "Encefalite anti-NMDA; anticorpos no líquor e busca de teratoma",
+        "Esquizofrenia; aumentar o haloperidol e associar biperideno",
+        "Psicose breve; manter o antipsicótico e observar por um mês",
+        "Encefalite herpética; tomografia simples como exame único"
+      ],
+      "correctIndex": 0,
+      "explanation": "Mulher jovem com pródromo viral, psicose, agitação, discinesias, convulsões, rebaixamento e disautonomia sugere encefalite anti-receptor NMDA, que pode se associar a teratoma de ovário e tolera mal antipsicóticos. Pesquisam-se anticorpos no líquor (mais sensível que no soro), com RM, EEG e imagem pélvica; o tratamento é imunoterapia e retirada do tumor."
+    },
+    {
+      "question": "Paciente com depressão grave está há quatro dias imóvel e mudo, mantém posturas impostas pelo examinador, recusa alimentos e resiste a ser movido. Qual a conduta inicial?",
+      "options": [
+        "Lorazepam, que também serve de teste terapêutico",
+        "Haloperidol intramuscular em doses repetidas",
+        "Aguardar resolução espontânea com hidratação oral",
+        "Antidepressivo tricíclico em dose plena por via oral"
+      ],
+      "correctIndex": 0,
+      "explanation": "Estupor, mutismo, catalepsia e negativismo configuram catatonia, mais associada aos transtornos do humor. O lorazepam é a primeira linha e a resposta ao teste apoia o diagnóstico; sem resposta, ou na forma maligna, indica-se ECT. Antipsicótico de alta potência pode precipitar catatonia maligna ou síndrome neuroléptica maligna."
+    },
+    {
+      "question": "Pelo DSM-5-TR, quantos sinais a catatonia exige e a quais quadros ela pode se associar?",
+      "options": [
+        "Três de doze; humor, psicose e condições médicas",
+        "Dois de cinco; exclusivamente na esquizofrenia",
+        "Cinco de nove; apenas nos transtornos do humor",
+        "Quatro de oito; somente em doenças neurológicas"
+      ],
+      "correctIndex": 0,
+      "explanation": "A catatonia exige 3 ou mais de 12 sinais (estupor, catalepsia, flexibilidade cérea, mutismo, negativismo, postura, maneirismo, estereotipia, agitação sem propósito, caretas, ecolalia, ecopraxia). Desde o DSM-5 deixou de ser subtipo de esquizofrenia: é especificador de transtornos psicóticos, bipolares e depressivos, ou pode ser devida a outra condição médica."
+    },
+    {
+      "question": "Jovem de 19 anos apresenta mudança de comportamento, irritabilidade, sintomas depressivos, tremor e fala arrastada. As transaminases estão elevadas. Qual investigação é prioritária?",
+      "options": [
+        "Ceruloplasmina sérica e pesquisa de anel de Kayser-Fleischer",
+        "Ferritina sérica e saturação de transferrina em jejum",
+        "Pesquisa de anticorpo antinuclear e complemento sérico",
+        "Dosagem de vitamina B12 e de homocisteína no plasma"
+      ],
+      "correctIndex": 0,
+      "explanation": "Doença de Wilson: jovem com sintomas psiquiátricos (mudança de personalidade, depressão, psicose), distúrbio do movimento (tremor, disartria, distonia) e doença hepática. Ceruloplasmina baixa, cobre urinário elevado e anel de Kayser-Fleischer na lâmpada de fenda confirmam; é tratável com quelantes."
+    },
+    {
+      "question": "Homem de 55 anos está há um ano desinibido, faz piadas inadequadas, gasta sem controle, mostra apatia e come doces compulsivamente. A memória está relativamente preservada. Foi tratado como bipolar, sem resposta. Qual o diagnóstico mais provável?",
+      "options": [
+        "Demência frontotemporal, variante comportamental",
+        "Transtorno bipolar tipo I de início tardio típico",
+        "Doença de Alzheimer na forma amnéstica clássica",
+        "Transtorno de personalidade antissocial tardio"
+      ],
+      "correctIndex": 0,
+      "explanation": "Desinibição, apatia, perda de empatia, comportamentos compulsivos e hiperoralidade (preferência por doces), com memória relativamente preservada na meia-idade, sugerem demência frontotemporal variante comportamental, muitas vezes confundida com mania ou depressão. Atrofia frontal e temporal anterior na imagem apoia; transtorno de personalidade não começa na meia-idade."
+    },
+    {
+      "question": "Na investigação de um quadro psiquiátrico com suspeita de causa orgânica, qual conjunto de exames compõe a triagem básica?",
+      "options": [
+        "Hemograma, eletrólitos, glicemia, TSH, B12, sífilis e HIV",
+        "Cortisol, prolactina, testosterona e estradiol séricos",
+        "Painel genético e anticorpos antineuronais de rotina",
+        "PET cerebral e polissonografia de noite inteira"
+      ],
+      "correctIndex": 0,
+      "explanation": "A triagem básica inclui hemograma, eletrólitos (sódio, cálcio), glicemia, funções renal e hepática, TSH, B12, sífilis, HIV, exame de urina e toxicológico, com neuroimagem se houver sinais de alerta. EEG, líquor e anticorpos antineuronais entram por suspeita específica, como flutuação de consciência, encefalite ou crises."
+    }
+  ]
+}

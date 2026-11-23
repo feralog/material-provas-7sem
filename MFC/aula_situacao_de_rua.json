@@ -1,0 +1,184 @@
+{
+  "titulo": "Saúde da População em Situação de Rua",
+  "eyebrow": "Medicina de Família e Comunidade · Referência",
+  "subtitulo": "Direito ao SUS, Consultório na Rua, tuberculose e cuidado intersetorial",
+  "intro": "Política Nacional (Decreto 7.053/2009), Consultório na Rua, acesso sem comprovante de endereço, agravos prevalentes com destaque para a tuberculose, vínculo, redução de danos e Centro POP. Baseado nas políticas e manuais do Ministério da Saúde — não há slide da aula deste tema.",
+  "questoes": [
+    {
+      "question": "Pelo Decreto 7.053/2009, que institui a Política Nacional para a População em Situação de Rua, o que caracteriza esse grupo?",
+      "options": [
+        "Grupo heterogêneo com pobreza extrema, vínculos familiares fragilizados e sem moradia regular",
+        "Grupo homogêneo de usuários de drogas que vivem nas ruas por escolha própria e permanente",
+        "Pessoas com transtorno mental grave egressas de hospitais psiquiátricos sem família conhecida",
+        "Migrantes sem documentação que usam abrigos e não têm direito a benefícios assistenciais"
+      ],
+      "correctIndex": 0,
+      "explanation": "O decreto define a população em situação de rua como grupo heterogêneo que tem em comum a pobreza extrema, os vínculos familiares interrompidos ou fragilizados e a inexistência de moradia convencional regular, usando logradouros e áreas degradadas como moradia e sustento, de forma temporária ou permanente, além de unidades de acolhimento. Heterogêneo significa não presumir uso de drogas nem transtorno mental."
+    },
+    {
+      "question": "Homem de 50 anos em situação de rua procura a UBS com dor de dente e febre. A recepção recusa o atendimento porque ele não tem comprovante de residência nem documento. Qual a avaliação correta?",
+      "options": [
+        "A recusa é indevida: endereço e documento não podem barrar o atendimento no SUS",
+        "A recusa é correta: sem endereço não se define a UBS responsável pelo cuidado",
+        "A recusa é correta: ele deve ser atendido só pelo Consultório na Rua do município",
+        "A recusa é indevida só na urgência; consultas eletivas exigem comprovante"
+      ],
+      "correctIndex": 0,
+      "explanation": "O acesso ao SUS é universal, e a Portaria 940/2011, que regulamenta o Cartão SUS, dispensa expressamente os moradores de rua da exigência de endereço no cadastro. A falta de documento também não impede o atendimento; recusar na recepção é barreira de acesso."
+    },
+    {
+      "question": "Sobre o Consultório na Rua, qual afirmação é correta?",
+      "options": [
+        "É equipe multiprofissional e itinerante da atenção primária, com atenção integral",
+        "É serviço especializado do CAPS AD, restrito ao cuidado de usuários de drogas",
+        "É unidade fixa da assistência social que oferece banho, comida e documentação",
+        "É equipe do SAMU que recolhe pessoas da rua e as leva a abrigos municipais"
+      ],
+      "correctIndex": 0,
+      "explanation": "O Consultório na Rua, criado na PNAB de 2011, é equipe da APS, multiprofissional e itinerante, que vai até onde as pessoas estão e faz ações compartilhadas com as UBS, os CAPS e a assistência social. Oferece atenção integral; o antigo Consultório de Rua, da saúde mental, é que era voltado a usuários de drogas."
+    },
+    {
+      "question": "Um município vai implantar uma equipe de Consultório na Rua e quer que ela tenha médico obrigatoriamente na composição mínima. Qual modalidade deve escolher?",
+      "options": [
+        "Modalidade III, que é a II acrescida de médico",
+        "Modalidade I, com quatro profissionais e médico",
+        "Modalidade II, com seis profissionais e médico",
+        "Qualquer modalidade, pois todas exigem médico"
+      ],
+      "correctIndex": 0,
+      "explanation": "A modalidade I tem no mínimo 4 profissionais (2 de nível superior e 2 de nível médio), a II tem 6 (3 e 3), e a III é a modalidade II acrescida de médico. Enfermeiro, psicólogo, assistente social e terapeuta ocupacional são os profissionais de nível superior típicos."
+    },
+    {
+      "question": "A equipe de Consultório na Rua encontra um homem de 38 anos que vive na rua há dois anos e refere tosse há cinco dias. Qual a conduta em relação à tuberculose?",
+      "options": [
+        "Considerá-lo sintomático respiratório e colher escarro no mesmo encontro",
+        "Aguardar completar três semanas de tosse antes de investigar tuberculose",
+        "Pedir só radiografia de tórax e investigar se surgir febre e emagrecimento",
+        "Investigar apenas se ele aceitar antes ir morar num abrigo do município"
+      ],
+      "correctIndex": 0,
+      "explanation": "Na população geral, o sintomático respiratório tem tosse há 3 semanas ou mais; na população em situação de rua, tosse de qualquer duração já justifica investigar. O escarro é colhido no momento da identificação, para teste rápido molecular e cultura com teste de sensibilidade, porque talvez não haja um segundo encontro."
+    },
+    {
+      "question": "Mulher de 35 anos em situação de rua tem tuberculose pulmonar sensível confirmada. Qual estratégia aumenta a chance de completar o tratamento?",
+      "options": [
+        "Tratamento diretamente observado, com incentivos e apoio da assistência social",
+        "Entregar os seis meses de remédio de uma vez, para evitar idas à unidade",
+        "Internar até o fim do tratamento, pois a adesão na rua é sempre impossível",
+        "Adiar o início até que ela tenha comprovante de endereço e documento"
+      ],
+      "correctIndex": 0,
+      "explanation": "Na população em situação de rua, a incidência de tuberculose e o abandono de tratamento são muito maiores. O esquema básico (2RHZE/4RH) é dado com tratamento diretamente observado — na UBS, na eCR ou no abrigo —, com incentivos como alimentação e transporte, articulação com a assistência social e sem exigir endereço."
+    },
+    {
+      "question": "Para quem está em situação de rua com suspeita de tuberculose, qual exame o Ministério da Saúde recomenda além do teste rápido molecular ou da baciloscopia?",
+      "options": [
+        "Cultura de escarro com teste de sensibilidade",
+        "Prova tuberculínica para confirmar doença ativa",
+        "IGRA no sangue para confirmar doença ativa",
+        "Tomografia de tórax antes de qualquer outro exame"
+      ],
+      "correctIndex": 0,
+      "explanation": "Em populações vulneráveis, como a população em situação de rua, a cultura com identificação e teste de sensibilidade é indicada para todos os casos investigados, pelo maior risco de resistência e de abandono prévio. Prova tuberculínica e IGRA servem à investigação de infecção latente e não confirmam doença ativa."
+    },
+    {
+      "question": "Em atendimento do Consultório na Rua, mulher de 27 anos aceita fazer exames. Qual oferta é a mais adequada nesse contato?",
+      "options": [
+        "Testagem rápida de HIV, sífilis e hepatites B e C, com prevenção combinada",
+        "Somente o teste de HIV, deixando sífilis e hepatites para uma unidade fixa",
+        "Testagem só depois que ela tiver documento e um endereço para receber o laudo",
+        "Nenhuma testagem, pois sem endereço não há como fazer o seguimento depois"
+      ],
+      "correctIndex": 0,
+      "explanation": "Cada contato é oportunidade: testes rápidos de HIV, sífilis e hepatites B e C dão resultado na hora, e o reagente pede vinculação ao cuidado. Junto vêm preservativo, PrEP e PEP quando indicadas e vacina contra hepatite B; a sífilis se trata com penicilina benzatina, conforme o estágio."
+    },
+    {
+      "question": "Homem em situação de rua tem prurido intenso que piora à noite, com lesões escoriadas entre os dedos das mãos, nos punhos e na região genital. O companheiro que dorme com ele tem queixa igual. Qual o diagnóstico e o cuidado associado?",
+      "options": [
+        "Escabiose; tratar também o companheiro e lavar roupas e cobertores",
+        "Dermatite de contato; trocar o sabonete e usar corticoide tópico",
+        "Pediculose do corpo; raspar os pelos e evitar compartilhar o boné",
+        "Micose superficial; usar antifúngico só nas lesões das mãos"
+      ],
+      "correctIndex": 0,
+      "explanation": "Prurido noturno com lesões em espaços interdigitais, punhos e genitais, e contato com o mesmo quadro, é escabiose, muito frequente na rua pela aglomeração e pela falta de acesso a banho. O tratamento inclui os contatos ao mesmo tempo e medidas com roupas e cobertores, adaptadas ao que é possível na rua."
+    },
+    {
+      "question": "Usuário de crack em situação de rua procura a equipe por uma queimadura nos lábios causada pelo cachimbo. Diz que não quer parar de usar. Qual conduta segue a política de redução de danos?",
+      "options": [
+        "Tratar a lesão, orientar não compartilhar o cachimbo e manter o vínculo",
+        "Tratar a lesão só após o compromisso formal de parar de usar crack",
+        "Encaminhar para internação involuntária, pois ele recusa a abstinência",
+        "Negar o curativo para não reforçar o comportamento de uso da droga"
+      ],
+      "correctIndex": 0,
+      "explanation": "A redução de danos não condiciona o cuidado à abstinência: atende a demanda trazida, orienta reduzir riscos (não compartilhar cachimbo, que transmite hepatites e outras infecções pelas lesões de boca) e mantém o vínculo, que abre espaço para outras metas. Internação involuntária é exceção, não resposta a quem só recusa parar."
+    },
+    {
+      "question": "Diabético de 60 anos em situação de rua come de forma irregular, conforme consegue doação de comida, e não tem onde guardar remédios. Qual ajuste do plano é o mais adequado?",
+      "options": [
+        "Priorizar esquema simples e de baixo risco de hipoglicemia, com guarda na unidade",
+        "Iniciar insulina em várias doses diárias para controle glicêmico mais rigoroso",
+        "Manter sulfonilureia em dose alta, pois a alimentação irregular reduz a glicemia",
+        "Suspender todo o tratamento até que ele tenha moradia e alimentação regulares"
+      ],
+      "correctIndex": 0,
+      "explanation": "O plano precisa caber na rua: com insegurança alimentar, esquemas com alto risco de hipoglicemia, como sulfonilureia em dose alta e insulina em múltiplas doses, ficam perigosos. Esquema simples, de dose única quando possível, e guarda dos medicamentos na UBS, na eCR ou no Centro POP aumentam a segurança e a adesão."
+    },
+    {
+      "question": "Qual é a natureza do Centro POP (Centro de Referência Especializado para População em Situação de Rua)?",
+      "options": [
+        "Serviço da assistência social que oferece convivência, higiene e acesso a direitos",
+        "Serviço de saúde mental que substitui o CAPS para quem está em situação de rua",
+        "Unidade de saúde que faz consultas médicas e dispensa os remédios da população",
+        "Abrigo de longa permanência que oferece moradia definitiva a quem vive na rua"
+      ],
+      "correctIndex": 0,
+      "explanation": "O Centro POP é serviço do SUAS, não da saúde: oferece convivência, higiene, alimentação, guarda de pertences, encaminhamento para documentos e benefícios e pode servir de endereço de referência. Com a abordagem social e os serviços de acolhimento, forma a rede de proteção social que o cuidado em saúde precisa acionar."
+    },
+    {
+      "question": "Na primeira abordagem de uma pessoa em situação de rua que nunca procurou o serviço de saúde, qual postura favorece o vínculo?",
+      "options": [
+        "Apresentar-se, perguntar o que ela precisa e combinar o retorno",
+        "Exigir documento e banho antes de qualquer atendimento de saúde",
+        "Aplicar um questionário completo de saúde logo no primeiro contato",
+        "Insistir na ida ao abrigo como condição para voltar a encontrá-la"
+      ],
+      "correctIndex": 0,
+      "explanation": "O cuidado começa pelo vínculo: respeitar o espaço da pessoa, apresentar-se, partir da demanda dela (uma ferida, dor de dente, fome) e voltar com regularidade, em local e horário combinados. Impor condições como documento, banho, abstinência ou ida ao abrigo afasta quem mais precisa."
+    },
+    {
+      "question": "Mulher em situação de rua chega à UBS relatando violência sexual há 20 horas. Além do acolhimento, qual conduta é obrigatória?",
+      "options": [
+        "Profilaxias indicadas, contracepção de emergência e notificação",
+        "Encaminhar à delegacia, sem atendimento de saúde antes do boletim",
+        "Atender só se ela apresentar documento de identidade e endereço",
+        "Orientar retorno em 30 dias para testagem, sem medidas imediatas"
+      ],
+      "correctIndex": 0,
+      "explanation": "Violência sexual é urgência: dentro de 72 horas cabem PEP para HIV, profilaxia de IST e hepatite B e contracepção de emergência, que não dependem de boletim de ocorrência. A violência é de notificação compulsória, e mulheres em situação de rua são especialmente expostas à violência sexual."
+    },
+    {
+      "question": "Sobre a origem do Consultório na Rua, qual afirmação é correta?",
+      "options": [
+        "Sucedeu o Consultório de Rua da saúde mental e passou à APS com cuidado integral",
+        "Surgiu dentro da assistência social e só depois passou a contar com profissionais",
+        "Foi criado pelo SAMU para remoção de pessoas da rua aos hospitais psiquiátricos",
+        "Nasceu na atenção hospitalar como ambulatório itinerante de doenças infecciosas"
+      ],
+      "correctIndex": 0,
+      "explanation": "O Consultório de Rua nasceu em Salvador, no fim dos anos 1990, no campo da saúde mental, voltado a usuários de drogas. Com a PNAB de 2011, virou Consultório na Rua: equipe da atenção primária com atenção integral, que inclui uso de substâncias, mas também tuberculose, IST, feridas, doenças crônicas e saúde bucal."
+    },
+    {
+      "question": "Ao planejar ações para a população em situação de rua do território, a equipe parte de um pressuposto. Qual está correto?",
+      "options": [
+        "É população heterogênea: uso de drogas e transtorno mental não são regra",
+        "Todos usam drogas, e o foco do cuidado deve ser sempre a abstinência",
+        "Todos têm transtorno mental grave e devem ser encaminhados ao CAPS",
+        "Ninguém trabalha, e a renda vem exclusivamente de pedir dinheiro"
+      ],
+      "correctIndex": 0,
+      "explanation": "A política define essa população como heterogênea. Na pesquisa nacional, álcool e drogas, desemprego e conflitos familiares foram os motivos mais citados para a ida à rua, muitas vezes juntos, e a maior parte exercia alguma atividade remunerada, como a catação de recicláveis; presumir uso de drogas ou transtorno mental distorce o cuidado."
+    }
+  ]
+}

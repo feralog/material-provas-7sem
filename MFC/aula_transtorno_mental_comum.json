@@ -1,0 +1,206 @@
+{
+  "titulo": "Transtorno Mental Comum",
+  "eyebrow": "Medicina de Família e Comunidade · Referência",
+  "subtitulo": "Sofrimento psíquico na APS, Reforma Psiquiátrica e a RAPS",
+  "intro": "Conceito, rastreio (SRQ-20) e abordagem do TMC na APS, medicalização e prevenção quaternária, Lei 10.216/2001 e os pontos da RAPS. Baseado no Caderno de Atenção Básica 34 e na legislação do SUS — não há slide da aula deste tema.",
+  "questoes": [
+    {
+      "question": "Mulher de 42 anos, diarista, vai à UBS pela quinta vez em três meses com cefaleia, cansaço, insônia, 'nervoso' e dor no estômago. Os exames são normais e ela não preenche critérios para depressão maior nem para ansiedade generalizada. Qual a melhor caracterização do quadro?",
+      "options": [
+        "Transtorno mental comum, sofrimento real a ser cuidado na APS",
+        "Simulação para obter atestado, sem indicação de seguimento",
+        "Psicose em fase inicial, com indicação de encaminhar ao CAPS",
+        "Doença orgânica oculta, com indicação de repetir os exames"
+      ],
+      "correctIndex": 0,
+      "explanation": "Transtorno mental comum (Goldberg e Huxley) reúne sintomas ansiosos, depressivos e somáticos inespecíficos que muitas vezes não fecham diagnóstico, mas geram sofrimento e retornos frequentes. É o problema de saúde mental mais comum na APS e é cuidado ali, com escuta, vínculo e seguimento; repetir exames sem indicação reforça a crença de doença oculta."
+    },
+    {
+      "question": "Sobre o SRQ-20 no rastreio de transtorno mental comum, qual afirmação é correta?",
+      "options": [
+        "Rastreia sofrimento psíquico, mas o resultado positivo não fecha diagnóstico",
+        "Confirma depressão maior quando há oito ou mais respostas positivas",
+        "É escala de uso exclusivo do psiquiatra para graduar a gravidade da psicose",
+        "Mede o risco de suicídio e indica internação quando o escore é alto"
+      ],
+      "correctIndex": 0,
+      "explanation": "O SRQ-20, da OMS, tem 20 perguntas de sim ou não sobre os últimos 30 dias e pode ser aplicado por qualquer profissional ou autoaplicado. O corte clássico da validação brasileira é 7/8, variando conforme a população; o resultado positivo pede avaliação clínica, porque rastreio não é diagnóstico."
+    },
+    {
+      "question": "Homem de 35 anos tem dor torácica atípica recorrente, palpitação e insônia desde que foi demitido. ECG e exames estão normais. Qual abordagem segue o modelo de reatribuição?",
+      "options": [
+        "Fazê-lo se sentir compreendido, ampliar a agenda e ligar sintoma e contexto",
+        "Pedir novos exames a cada retorno até que ele aceite a origem emocional",
+        "Dizer que ele não tem nada físico e encaminhá-lo direto ao psiquiatra",
+        "Prescrever benzodiazepínico contínuo e reavaliar só se houver piora"
+      ],
+      "correctIndex": 0,
+      "explanation": "O modelo de reatribuição (Goldberg) tem três passos: o paciente se sentir compreendido (história, exame físico, crenças), ampliar a agenda (devolver o resultado reconhecendo que o sintoma é real) e fazer a ligação entre o sintoma e os problemas de vida. Repetir exames para tranquilizar e dizer que 'não é nada' reforçam a busca de doença oculta."
+    },
+    {
+      "question": "A equipe de Saúde da Família vai construir um Projeto Terapêutico Singular para um usuário com sofrimento psíquico e grande vulnerabilidade social. Quais são os momentos do PTS?",
+      "options": [
+        "Diagnóstico, definição de metas, divisão de responsabilidades e reavaliação",
+        "Triagem, encaminhamento ao CAPS, contrarreferência e alta definitiva da UBS",
+        "Diagnóstico psiquiátrico, prescrição, internação breve e reinserção social",
+        "Rastreio pelo SRQ-20, notificação compulsória, matriciamento e alta da equipe"
+      ],
+      "correctIndex": 0,
+      "explanation": "O PTS é um conjunto de condutas construído pela equipe com o usuário, em quatro momentos: diagnóstico (orgânico, psicológico e social, com riscos e potências), definição de metas, divisão de responsabilidades com um profissional de referência e reavaliação. É singular porque é feito para aquela pessoa, e não para a doença."
+    },
+    {
+      "question": "O psicólogo da eMulti e a médica de família atendem juntos um paciente com ansiedade e, depois, discutem outros casos da equipe. A responsabilidade pelo paciente continua com a equipe de Saúde da Família. Isso caracteriza:",
+      "options": [
+        "Matriciamento, com cuidado compartilhado entre as equipes",
+        "Encaminhamento, com o caso passando ao especialista",
+        "Supervisão, com o psicólogo avaliando a conduta médica",
+        "Triagem, que define quem entra na fila de espera do CAPS"
+      ],
+      "correctIndex": 0,
+      "explanation": "O apoio matricial tem dimensão assistencial (consulta e visita conjuntas) e técnico-pedagógica (discussão de casos, educação permanente), e a equipe de referência segue responsável pelo usuário: não é encaminhamento. As eMulti, criadas pela Portaria GM/MS 635/2023, sucederam o NASF nesse papel, ao lado dos CAPS."
+    },
+    {
+      "question": "Mulher de 68 anos usa clonazepam há dez anos 'para dormir', com receita renovada sem consulta. Vem tendo esquecimentos e caiu duas vezes neste ano. Qual a conduta mais adequada?",
+      "options": [
+        "Pactuar a retirada gradual do benzodiazepínico com seguimento próximo",
+        "Suspender o benzodiazepínico de uma vez para evitar novas quedas",
+        "Manter a receita, pois a dependência após tantos anos é irreversível",
+        "Trocar o clonazepam por diazepam em dose maior, de ação mais longa"
+      ],
+      "correctIndex": 0,
+      "explanation": "Benzodiazepínico crônico no idoso causa prejuízo de memória, sedação, quedas e fraturas, além de dependência — exemplo clássico de medicalização. A desprescrição é gradual e pactuada, porque a suspensão abrupta pode causar abstinência e até convulsões; a insônia é abordada com medidas não farmacológicas."
+    },
+    {
+      "question": "Qual alternativa define prevenção quaternária?",
+      "options": [
+        "Proteger a pessoa da sobremedicalização e de intervenções desnecessárias",
+        "Reabilitar o paciente com sequelas para reduzir as incapacidades crônicas",
+        "Detectar a doença na fase pré-clínica por meio de rastreamento ativo",
+        "Impedir o surgimento da doença com vacinação e promoção de hábitos"
+      ],
+      "correctIndex": 0,
+      "explanation": "Prevenção quaternária, conceito de Marc Jamoulle adotado pela WONCA, é identificar quem está em risco de sobremedicalização, protegê-lo de intervenções inúteis ou danosas e oferecer alternativas eticamente aceitáveis. No quadro de Jamoulle, corresponde a quem se sente doente sem doença identificável; reabilitação é prevenção terciária, rastreamento é secundária e vacinação é primária."
+    },
+    {
+      "question": "Mulher de 50 anos, viúva há três semanas, chora com frequência, dorme mal e pede 'um remédio para os nervos'. Mantém o autocuidado, tem apoio dos filhos e nega ideação suicida. Qual a conduta inicial mais adequada na APS?",
+      "options": [
+        "Acolher o luto, oferecer escuta e seguimento, sem prescrição de rotina",
+        "Iniciar benzodiazepínico contínuo para impedir que o luto se prolongue",
+        "Iniciar antidepressivo, pois tristeza após uma perda indica depressão",
+        "Encaminhar ao CAPS, pois o luto recente é sofrimento psíquico grave"
+      ],
+      "correctIndex": 0,
+      "explanation": "Tristeza, choro e insônia nas semanas seguintes a uma perda fazem parte do luto; medicar de rotina é medicalização, e o mhGAP desaconselha benzodiazepínico e antidepressivo nessa situação. A APS acolhe, acompanha e reavalia, atenta a sinais de depressão: anedonia persistente, menos-valia, ideação suicida e prejuízo funcional importante."
+    },
+    {
+      "question": "Antes de iniciar antidepressivo em paciente da APS com episódio depressivo moderado, o que é indispensável investigar?",
+      "options": [
+        "Episódios prévios de mania ou hipomania e o risco de suicídio",
+        "Dosagem sérica de serotonina e eletroencefalograma de base",
+        "Tomografia de crânio e avaliação neuropsicológica completa",
+        "Resposta a um teste terapêutico de duas semanas com diazepam"
+      ],
+      "correctIndex": 0,
+      "explanation": "Antidepressivo em transtorno bipolar não reconhecido pode virar o quadro para mania, por isso se pergunta sobre períodos de euforia, menor necessidade de sono e aceleração. O risco de suicídio é perguntado diretamente — perguntar não induz o ato. Nenhum exame laboratorial ou de imagem diagnostica depressão."
+    },
+    {
+      "question": "Mulher de 38 anos tem sintomas ansiosos e depressivos leves, insônia e queixas somáticas ligados à sobrecarga de trabalho, sem psicose e sem risco de suicídio. Onde ela deve ser cuidada prioritariamente?",
+      "options": [
+        "Na UBS, com escuta, grupos, seguimento e apoio matricial se preciso",
+        "No CAPS II, que é a referência para qualquer queixa de saúde mental",
+        "No ambulatório de psiquiatria, pois a APS não trata saúde mental",
+        "Na UPA, onde pode receber sedação sempre que os sintomas piorarem"
+      ],
+      "correctIndex": 0,
+      "explanation": "TMC e quadros leves a moderados são cuidados na APS, que tem vínculo e longitudinalidade; o matriciamento amplia a capacidade de resposta da equipe. O CAPS é para sofrimento intenso, transtornos graves e persistentes e crises, e a urgência, para risco iminente."
+    },
+    {
+      "question": "Qual intervenção psicossocial é adequada como primeira linha para transtorno mental comum na APS?",
+      "options": [
+        "Grupos terapêuticos e terapia comunitária integrativa no território",
+        "Internação breve em hospital geral para afastar dos estressores",
+        "Eletroconvulsoterapia ambulatorial como medida inicial do cuidado",
+        "Antipsicótico de depósito para controlar a ansiedade e a insônia"
+      ],
+      "correctIndex": 0,
+      "explanation": "Intervenções em grupo — terapêuticos, de convivência, terapia comunitária integrativa, atividade física e práticas integrativas — ampliam vínculo e rede de apoio e são primeira linha no TMC, junto com psicoterapias breves como a de resolução de problemas. Internação, eletroconvulsoterapia e antipsicótico não têm lugar no sofrimento psíquico comum."
+    },
+    {
+      "question": "Qual alternativa descreve corretamente a Lei 10.216/2001?",
+      "options": [
+        "Redireciona o modelo assistencial para serviços comunitários e restringe a internação",
+        "Amplia os leitos em hospitais psiquiátricos para garantir o acesso à internação",
+        "Cria os CAPS e define o número mínimo de profissionais em cada modalidade",
+        "Proíbe qualquer internação psiquiátrica que não tenha ordem judicial expressa"
+      ],
+      "correctIndex": 0,
+      "explanation": "A Lei 10.216/2001 (Lei Paulo Delgado) protege os direitos das pessoas com transtorno mental e redireciona o modelo para serviços comunitários. A internação só é indicada quando os recursos extra-hospitalares forem insuficientes, exige laudo médico circunstanciado e é vedada em instituições com características asilares; as modalidades de CAPS foram definidas por portarias."
+    },
+    {
+      "question": "Homem de 30 anos com esquizofrenia, em surto, ameaça a mãe com uma faca e recusa tratamento. A mãe pede a internação e o psiquiatra a autoriza. Pela Lei 10.216/2001, qual o tipo de internação e a exigência legal?",
+      "options": [
+        "Involuntária, comunicada ao Ministério Público em até 72 horas",
+        "Compulsória, comunicada ao Ministério Público em até 72 horas",
+        "Voluntária, pois a mãe assina o termo como responsável legal",
+        "Involuntária, que depende de autorização prévia do juiz"
+      ],
+      "correctIndex": 0,
+      "explanation": "Internação sem consentimento do paciente e a pedido de terceiro é involuntária: autorizada por médico com CRM do estado e comunicada ao Ministério Público Estadual pelo responsável técnico do estabelecimento em até 72 horas, o mesmo valendo para a alta. Compulsória é a determinada pela Justiça; voluntária exige o consentimento do próprio paciente."
+    },
+    {
+      "question": "Durante um processo criminal, o juiz determina a internação psiquiátrica de um homem com transtorno mental grave. Pela Lei 10.216/2001, essa internação é:",
+      "options": [
+        "Compulsória, determinada pela Justiça",
+        "Involuntária, determinada pelo médico",
+        "Voluntária, com anuência do defensor",
+        "Involuntária, requerida pelo promotor"
+      ],
+      "correctIndex": 0,
+      "explanation": "A internação compulsória é a determinada pela Justiça; o juiz leva em conta as condições de segurança do estabelecimento para o paciente, os demais internados e os funcionários. Involuntária é a pedida por terceiro sem consentimento do paciente, e voluntária, a consentida por ele."
+    },
+    {
+      "question": "Um município de 200 mil habitantes quer implantar o serviço da RAPS que funciona 24 horas, inclusive fins de semana e feriados, com acolhimento noturno, para adultos com transtornos mentais graves e persistentes. Qual é esse serviço?",
+      "options": [
+        "Centro de Atenção Psicossocial III",
+        "Centro de Atenção Psicossocial II",
+        "Centro de Atenção Psicossocial I",
+        "Centro de Atenção Psicossocial AD"
+      ],
+      "correctIndex": 0,
+      "explanation": "O CAPS III funciona 24 horas, todos os dias, com acolhimento noturno, e é previsto para municípios ou regiões acima de 150 mil habitantes (Portaria 3.088/2011). CAPS I (acima de 15 mil), CAPS II e CAPS AD (acima de 70 mil) funcionam de dia, em dias úteis; o equivalente 24 horas para álcool e drogas é o CAPS AD III."
+    },
+    {
+      "question": "Homem de 60 anos, internado há 25 anos num hospital psiquiátrico que será fechado, não tem vínculos familiares. Qual dispositivo da RAPS é destinado a ele?",
+      "options": [
+        "Serviço Residencial Terapêutico, com o auxílio De Volta para Casa",
+        "Unidade de Acolhimento, como moradia definitiva após a alta",
+        "Comunidade terapêutica em regime residencial sem prazo definido",
+        "Leito em hospital geral até surgir vaga em outro hospital psiquiátrico"
+      ],
+      "correctIndex": 0,
+      "explanation": "Os Serviços Residenciais Terapêuticos são moradias na comunidade para egressos de longas internações psiquiátricas sem suporte familiar; integram o componente de desinstitucionalização da RAPS com o Programa De Volta para Casa (Lei 10.708/2003), auxílio pago ao egresso. A Unidade de Acolhimento é transitória e voltada a quem tem necessidades decorrentes de álcool e drogas."
+    },
+    {
+      "question": "Na RAPS, qual o papel dos leitos de saúde mental em hospital geral?",
+      "options": [
+        "Internação breve na crise, até a estabilização, articulada à rede",
+        "Moradia permanente para egressos de longa internação psiquiátrica",
+        "Internação prolongada para afastar o paciente do convívio familiar",
+        "Porta de entrada obrigatória antes de qualquer atendimento no CAPS"
+      ],
+      "correctIndex": 0,
+      "explanation": "O componente hospitalar da RAPS prioriza leitos em hospital geral para internações curtas, na crise ou na comorbidade clínica, até a estabilização, com continuidade do cuidado no CAPS e na APS. É a lógica da Lei 10.216: a internação é recurso pontual, nunca moradia nem isolamento."
+    },
+    {
+      "question": "Sobre o acesso aos Centros de Atenção Psicossocial (CAPS), é correto afirmar que eles:",
+      "options": [
+        "Acolhem demanda espontânea, sem exigir encaminhamento prévio",
+        "Só atendem quem chega encaminhado pela UBS ou pelo hospital",
+        "Só atendem quem já esteve internado em hospital psiquiátrico",
+        "Só atendem com agendamento feito pela central de regulação"
+      ],
+      "correctIndex": 0,
+      "explanation": "CAPS são serviços de porta aberta: acolhem quem chega por demanda espontânea ou encaminhado pela APS, pela urgência ou por outros serviços. Atendem sofrimento psíquico intenso, transtornos graves e persistentes e necessidades decorrentes do uso de álcool e drogas, e a UBS continua acompanhando o usuário."
+    }
+  ]
+}

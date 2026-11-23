@@ -1,0 +1,151 @@
+{
+  "titulo": "Sexualidade Feminina",
+  "eyebrow": "Ginecologia e Obstetrícia · Referência",
+  "subtitulo": "Resposta sexual, anamnese e disfunções que o ginecologista resolve",
+  "intro": "Modelos de resposta sexual (Masters e Johnson, Kaplan, Basson), anamnese e PLISSIT, disfunções do DSM-5-TR, causas orgânicas e medicamentosas e síndrome geniturinária da menopausa. Material de referência (DSM-5-TR 2022, Febrasgo, NAMS) — não há slide da aula deste tema.",
+  "questoes": [
+    {
+      "question": "O modelo linear de resposta sexual de Masters e Johnson descreve quais fases, em ordem?",
+      "options": [
+        "Excitação, platô, orgasmo e resolução",
+        "Desejo, excitação, platô e orgasmo",
+        "Neutralidade, estímulo, excitação e desejo",
+        "Desejo, lubrificação, orgasmo e satisfação"
+      ],
+      "correctIndex": 0,
+      "explanation": "Masters e Johnson (1966) descreveram, a partir de observação laboratorial, um ciclo linear em quatro fases: excitação, platô, orgasmo e resolução. Kaplan (1979) acrescentou o desejo como fase inicial (desejo, excitação, orgasmo), e Basson propôs depois o modelo circular, que parte da neutralidade."
+    },
+    {
+      "question": "Mulher de 45 anos, em relacionamento estável há 20 anos, raramente sente vontade espontânea de sexo; quando o parceiro inicia com carinho, ela se excita, passa a sentir desejo e fica satisfeita. Ela não se sente incomodada com isso. Como interpretar o quadro?",
+      "options": [
+        "Modelo circular de Basson: desejo responsivo, sem disfunção",
+        "Modelo de Kaplan: falta a fase de desejo, logo há disfunção",
+        "Modelo de Masters e Johnson: sem platô, logo há disfunção",
+        "Modelo circular de Basson: transtorno do interesse sexual"
+      ],
+      "correctIndex": 0,
+      "explanation": "Basson (2000) mostrou que, sobretudo em relações longas, muitas mulheres partem da neutralidade sexual e, motivadas pela intimidade, respondem ao estímulo com excitação — o desejo surge depois dela (desejo responsivo). A satisfação emocional e física realimenta o ciclo. Desejo espontâneo raro, sem sofrimento, não é disfunção."
+    },
+    {
+      "question": "No modelo PLISSIT de abordagem das queixas sexuais, o que significam as etapas, em ordem?",
+      "options": [
+        "Permissão, informação limitada, sugestões específicas, terapia intensiva",
+        "Prevenção, investigação laboratorial, sintomas, terapia sexual",
+        "Permissão, intervenção, sugestões sistemáticas, terapia individual",
+        "Privacidade, informação legal, suporte social, terapia integrada"
+      ],
+      "correctIndex": 0,
+      "explanation": "PLISSIT (Annon, 1976): permissão para falar do tema e validar a experiência; informação limitada (anatomia, fisiologia, desfazer mitos); sugestões específicas para o problema; e terapia intensiva com especialista. A maioria das queixas se resolve nas primeiras etapas, ao alcance do generalista."
+    },
+    {
+      "question": "Qual é a melhor forma de incluir a sexualidade na consulta ginecológica?",
+      "options": [
+        "Perguntar de rotina, com linguagem aberta e sem pressupor",
+        "Abordar só se a paciente trouxer queixa sexual espontânea",
+        "Usar só termos técnicos para evitar constrangimento",
+        "Perguntar apenas na presença do parceiro, para confirmar"
+      ],
+      "correctIndex": 0,
+      "explanation": "A anamnese sexual faz parte da rotina: muitas mulheres não trazem a queixa espontaneamente, mas respondem quando o médico pergunta. Perguntas abertas, linguagem acessível, privacidade e não pressupor orientação sexual, parceria ou prática facilitam o relato."
+    },
+    {
+      "question": "Quais são as disfunções sexuais femininas específicas do DSM-5-TR?",
+      "options": [
+        "Interesse/excitação sexual, orgasmo e dor gênito-pélvica/penetração",
+        "Desejo hipoativo, excitação, orgasmo, dispareunia e vaginismo",
+        "Aversão sexual, excitação, anorgasmia e vulvodinia primária",
+        "Interesse sexual, lubrificação, orgasmo e vaginismo isolado"
+      ],
+      "correctIndex": 0,
+      "explanation": "O DSM-5 (mantido no DSM-5-TR, 2022) fundiu desejo e excitação no transtorno do interesse/excitação sexual feminino e fundiu dispareunia e vaginismo no transtorno da dor gênito-pélvica/penetração; o terceiro é o transtorno do orgasmo feminino. Há ainda a disfunção sexual induzida por substância ou medicamento. Dispareunia e vaginismo separados, e a aversão sexual, são do DSM-IV."
+    },
+    {
+      "question": "Para diagnosticar uma disfunção sexual feminina pelo DSM-5-TR, quais condições gerais precisam estar presentes?",
+      "options": [
+        "Duração de cerca de 6 meses e sofrimento clinicamente significativo",
+        "Duração mínima de 1 mês, mesmo sem sofrimento da paciente",
+        "Queixa do parceiro e ausência de orgasmo em qualquer relação",
+        "Dosagem hormonal alterada e duração mínima de 3 meses"
+      ],
+      "correctIndex": 0,
+      "explanation": "Os sintomas precisam durar cerca de 6 meses ou mais, causar sofrimento clinicamente significativo e não ser mais bem explicados por outro transtorno mental, por conflito grave no relacionamento (inclusive violência), por outros estressores, por substância ou medicamento ou por condição médica. Sem sofrimento, não há transtorno."
+    },
+    {
+      "question": "Mulher de 26 anos nunca conseguiu penetração vaginal: ao tentar, há contração involuntária intensa do assoalho pélvico, medo antecipatório de dor e ansiedade. O exame ginecológico não mostra lesão. Qual é o diagnóstico e a abordagem?",
+      "options": [
+        "Dor gênito-pélvica/penetração; fisioterapia pélvica e terapia sexual",
+        "Transtorno do orgasmo; reposição de testosterona transdérmica",
+        "Síndrome geniturinária; estrogênio vaginal de baixa dose contínuo",
+        "Transtorno do interesse; bupropiona e orientação ao parceiro"
+      ],
+      "correctIndex": 0,
+      "explanation": "Dificuldade de penetração, dor, medo antecipatório e contração involuntária do assoalho pélvico compõem o transtorno da dor gênito-pélvica/penetração, que inclui o antigo vaginismo. O tratamento combina fisioterapia do assoalho pélvico (com dilatadores progressivos), terapia sexual cognitivo-comportamental e educação, com o parceiro quando possível."
+    },
+    {
+      "question": "Mulher de 34 anos, em uso de sertralina há 4 meses para depressão já em remissão, passou a ter dificuldade importante para atingir o orgasmo, o que antes não ocorria. Qual é a melhor abordagem?",
+      "options": [
+        "Atribuir ao ISRS e discutir redução da dose ou troca do fármaco",
+        "Suspender a sertralina de imediato, sem retirada gradual",
+        "Atribuir à depressão e aumentar a dose da sertralina",
+        "Indicar testosterona, pois a causa é deficiência androgênica"
+      ],
+      "correctIndex": 0,
+      "explanation": "ISRS e IRSN são a causa medicamentosa mais comum de disfunção sexual: reduzem o desejo e retardam ou abolem o orgasmo. Com a depressão controlada, as opções são reduzir a dose, trocar por antidepressivo com menor efeito sexual (bupropiona, mirtazapina) ou associar bupropiona — nunca suspender abruptamente."
+    },
+    {
+      "question": "Por qual mecanismo o anticoncepcional hormonal combinado oral pode reduzir o desejo sexual em algumas usuárias?",
+      "options": [
+        "Aumento da SHBG, com queda da testosterona livre",
+        "Aumento da prolactina, por bloqueio dopaminérgico",
+        "Queda da SHBG, com excesso de testosterona livre",
+        "Bloqueio da serotonina, com retardo do orgasmo"
+      ],
+      "correctIndex": 0,
+      "explanation": "O etinilestradiol estimula a produção hepática de SHBG (globulina ligadora de hormônios sexuais), e a supressão ovariana reduz a produção de androgênios; o resultado é queda da testosterona livre, que pode reduzir o desejo em parte das usuárias. O efeito é individual e a evidência é heterogênea: a maioria das mulheres não piora."
+    },
+    {
+      "question": "Puérpera de 4 meses, em aleitamento exclusivo, refere ressecamento vaginal e dor à penetração desde o parto. Qual é o mecanismo principal?",
+      "options": [
+        "Hipoestrogenismo da lactação, com prolactina elevada",
+        "Excesso de estrogênio placentário residual no puerpério",
+        "Deficiência de ferro, com atrofia direta da mucosa vaginal",
+        "Lesão do nervo pudendo, sempre secundária à episiotomia"
+      ],
+      "correctIndex": 0,
+      "explanation": "Na lactação, a prolactina elevada suprime o eixo hipotálamo-hipófise-ovário e causa hipoestrogenismo, com mucosa vaginal fina e pouco lubrificada, dispareunia e menor desejo. Lubrificantes e hidratantes vaginais ajudam, e o quadro melhora com o retorno da função ovariana."
+    },
+    {
+      "question": "Mulher de 58 anos, na pós-menopausa há 6 anos e sem fogachos, refere ressecamento e ardor vaginal, dor na relação, urgência miccional e infecções urinárias de repetição. A mucosa vaginal é pálida, fina e sem pregas, com pH 6,5. Qual é o diagnóstico?",
+      "options": [
+        "Síndrome geniturinária da menopausa",
+        "Vaginose bacteriana de repetição",
+        "Cistite intersticial com vaginismo",
+        "Vulvodinia provocada localizada"
+      ],
+      "correctIndex": 0,
+      "explanation": "A síndrome geniturinária da menopausa (termo de 2014, que substituiu 'atrofia vulvovaginal') reúne sintomas genitais, sexuais e urinários do hipoestrogenismo, com mucosa pálida, fina, sem rugosidade e pH vaginal acima de 4,5. Ao contrário dos fogachos, é progressiva e não melhora sem tratamento."
+    },
+    {
+      "question": "Para essa paciente com síndrome geniturinária, sem contraindicações e sem sintomas vasomotores, qual é o tratamento de escolha se lubrificantes e hidratantes não bastarem?",
+      "options": [
+        "Estrogênio vaginal em baixa dose, sem progestagênio associado",
+        "Terapia hormonal sistêmica combinada por via oral contínua",
+        "Estrogênio vaginal sempre associado a progestagênio oral",
+        "Antibiótico profilático contínuo para as infecções urinárias"
+      ],
+      "correctIndex": 0,
+      "explanation": "Hidratantes (uso regular) e lubrificantes (na relação) são a primeira linha; se não bastam, o estrogênio vaginal em baixa dose (estriol, promestrieno, estrogênios conjugados) é o tratamento mais eficaz, inclusive para reduzir infecções urinárias. A absorção sistêmica é mínima e não exige progestagênio; a terapia sistêmica fica para quem também tem sintomas vasomotores."
+    },
+    {
+      "question": "Qual é a única indicação com evidência consistente para o uso de testosterona em mulheres?",
+      "options": [
+        "Desejo sexual hipoativo com sofrimento na pós-menopausa",
+        "Prevenção de osteoporose em toda mulher após a menopausa",
+        "Melhora de humor e energia em mulheres na pré-menopausa",
+        "Tratamento tópico vulvar da síndrome geniturinária"
+      ],
+      "correctIndex": 0,
+      "explanation": "O consenso global de 2019 sobre testosterona em mulheres reconhece uma única indicação com evidência: o transtorno do desejo sexual hipoativo na pós-menopausa, em dose fisiológica por via transdérmica, depois de avaliados os outros fatores. Não há evidência para osteoporose, humor, energia ou prevenção cardiovascular."
+    }
+  ]
+}

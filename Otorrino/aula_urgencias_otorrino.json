@@ -1,0 +1,228 @@
+{
+  "titulo": "Urgências em Otorrinolaringologia",
+  "eyebrow": "Otorrinolaringologia · Referência",
+  "subtitulo": "Sangramento, corpo estranho, via aérea, face e ouvido no pronto-socorro",
+  "intro": "Epistaxe, corpo estranho e bateria de botão, trauma nasal e hematoma de septo, abscesso periamigdaliano, epiglotite, angina de Ludwig, paralisia de Bell, surdez súbita, mastoidite e sangramento pós-amigdalectomia. Material de referência baseado nas diretrizes da AAO-HNS — não há slide da aula deste tema.",
+  "questoes": [
+    {
+      "question": "Menino de 9 anos chega com sangramento nasal pela narina direita há 10 minutos, após coçar o nariz. Está estável. Qual é a primeira medida?",
+      "options": [
+        "Sentar, inclinar a cabeça para a frente e comprimir as asas nasais",
+        "Deitar com a cabeça para trás e colocar gelo na base do nariz",
+        "Tamponamento anteroposterior com sonda de Foley imediatamente",
+        "Cauterizar o septo dos dois lados com nitrato de prata de uma vez"
+      ],
+      "correctIndex": 0,
+      "explanation": "A epistaxe anterior, do plexo de Kiesselbach, é a mais comum em crianças. Primeiro passo: sentado, cabeça para a frente e compressão contínua das asas nasais por 10 a 15 minutos. Cabeça para trás só faz o sangue ser engolido ou aspirado."
+    },
+    {
+      "question": "Após compressão adequada, a epistaxe de um adulto persiste. Na rinoscopia, após vasoconstritor tópico, identifica-se um vaso sangrante no septo anterior. Qual é a conduta?",
+      "options": [
+        "Cauterização química do ponto com nitrato de prata",
+        "Tamponamento anteroposterior e internação na UTI",
+        "Embolização da artéria esfenopalatina de urgência",
+        "Ligadura cirúrgica da artéria carótida externa"
+      ],
+      "correctIndex": 0,
+      "explanation": "Com ponto sangrante anterior visível, o próximo degrau é a cauterização química com nitrato de prata, um lado do septo por vez para não perfurá-lo. Se falhar, segue-se o tamponamento anterior."
+    },
+    {
+      "question": "Homem de 72 anos, hipertenso e em uso de varfarina, tem epistaxe volumosa que escorre para a orofaringe e persiste apesar de tamponamento anterior bem feito. Qual é o próximo passo?",
+      "options": [
+        "Tamponamento anteroposterior com internação e monitorização",
+        "Cauterização com nitrato de prata nos dois lados do septo",
+        "Alta com orientação de compressão digital por 30 minutos",
+        "Trocar o tampão anterior por outro maior e liberar o paciente"
+      ],
+      "correctIndex": 0,
+      "explanation": "Idoso, hipertenso e anticoagulado com sangramento para a orofaringe e falha do tampão anterior sugere epistaxe posterior, de ramos da esfenopalatina. Faz-se tamponamento anteroposterior com internação; se refratário, ligadura endoscópica da esfenopalatina ou embolização."
+    },
+    {
+      "question": "Adolescente de 15 anos, do sexo masculino, tem episódios repetidos de epistaxe pela narina esquerda e obstrução nasal progressiva do mesmo lado. Qual é a hipótese e a conduta?",
+      "options": [
+        "Nasoangiofibroma juvenil; imagem e não biopsiar",
+        "Pólipo antrocoanal; biópsia no consultório",
+        "Rinite alérgica; corticoide nasal contínuo",
+        "Desvio de septo; septoplastia eletiva"
+      ],
+      "correctIndex": 0,
+      "explanation": "Epistaxe unilateral recorrente com obstrução nasal em adolescente do sexo masculino é nasoangiofibroma juvenil até prova em contrário. É um tumor muito vascularizado: o diagnóstico é por imagem (TC/RM), e a biópsia é contraindicada pelo risco de hemorragia grave."
+    },
+    {
+      "question": "Criança de 3 anos tem há 10 dias secreção nasal purulenta e fétida só pela narina direita, sem febre. Qual é a principal hipótese?",
+      "options": [
+        "Corpo estranho nasal",
+        "Rinossinusite viral",
+        "Hipertrofia adenoideana",
+        "Rinite alérgica perene"
+      ],
+      "correctIndex": 0,
+      "explanation": "Rinorreia unilateral, purulenta e fétida em criança pequena é corpo estranho nasal até prova em contrário. A retirada é sob visão direta, com gancho ou pinça, ou por pressão positiva, sem empurrar o objeto para trás."
+    },
+    {
+      "question": "Criança de 4 anos introduziu uma bateria de botão na narina há 1 hora. Qual é a conduta?",
+      "options": [
+        "Retirada imediata, por risco de necrose em poucas horas",
+        "Lavagem nasal com soro e retirada eletiva no ambulatório",
+        "Aguardar a expulsão espontânea com o espirro da criança",
+        "Radiografia e retirada só se surgir sangramento nasal"
+      ],
+      "correctIndex": 0,
+      "explanation": "A bateria de botão gera corrente e libera álcali, causando necrose de liquefação e perfuração do septo em poucas horas. É emergência: retira-se imediatamente, sem lavagem prévia."
+    },
+    {
+      "question": "Adulto chega ao pronto-socorro com um inseto vivo dentro do conduto auditivo, com zumbido e dor intensos. Qual é a conduta antes da retirada?",
+      "options": [
+        "Matar o inseto com óleo mineral ou lidocaína no conduto",
+        "Irrigar com água gelada sob pressão para expulsar o inseto",
+        "Prescrever antibiótico oral e retirar o inseto em 48 horas",
+        "Tentar a retirada às cegas com cotonete, antes que ele fuja"
+      ],
+      "correctIndex": 0,
+      "explanation": "Inseto vivo é morto antes da retirada, com óleo mineral ou lidocaína instilados no conduto, o que alivia a dor e evita lesão da membrana timpânica durante a manipulação. Depois, retira-se sob visão direta."
+    },
+    {
+      "question": "Criança de 5 anos tem um grão de feijão no conduto auditivo externo, com membrana timpânica não visualizada. Qual método deve ser evitado?",
+      "options": [
+        "Irrigação do conduto com água morna",
+        "Retirada com gancho sob visão direta",
+        "Retirada sob microscopia otológica",
+        "Retirada sob sedação, se necessário"
+      ],
+      "correctIndex": 0,
+      "explanation": "Semente ou grão absorve água e incha, ficando ainda mais preso. A irrigação também é evitada com bateria e com perfuração timpânica. O caminho é a retirada instrumental sob visão direta, com sedação se a criança não colaborar."
+    },
+    {
+      "question": "Criança de 2 anos ingeriu há 2 horas uma bateria de botão, que a radiografia mostra parada no esôfago, com imagem em duplo contorno. Qual é a conduta?",
+      "options": [
+        "Endoscopia de urgência; mel em pequenas doses até o procedimento",
+        "Observar a eliminação nas fezes com radiografias a cada 3 dias",
+        "Induzir o vômito para expulsar a bateria e evitar a endoscopia",
+        "Endoscopia eletiva em uma semana, se houver dor para engolir"
+      ],
+      "correctIndex": 0,
+      "explanation": "Bateria parada no esôfago pode perfurá-lo e fistulizar para a aorta em poucas horas, por isso a endoscopia é de urgência. Em criança acima de 1 ano, com ingestão há menos de 12 horas, mel em doses repetidas reduz a lesão enquanto se aguarda."
+    },
+    {
+      "question": "Jovem de 19 anos levou um soco no nariz há 2 dias e refere obstrução nasal bilateral progressiva. Na rinoscopia, há abaulamento arroxeado e flutuante nos dois lados do septo. Qual é a conduta?",
+      "options": [
+        "Drenagem imediata do hematoma septal, tampão e antibiótico",
+        "Redução fechada da fratura nasal após 10 dias de observação",
+        "Corticoide nasal e descongestionante, com retorno em 1 semana",
+        "Radiografia de ossos nasais e analgesia, sem procedimento"
+      ],
+      "correctIndex": 0,
+      "explanation": "É hematoma septal: sangue entre a cartilagem e o pericôndrio, que nutre a cartilagem. Sem drenagem imediata, há necrose cartilaginosa, abscesso septal e nariz em sela. Por isso o septo deve ser inspecionado em todo trauma nasal."
+    },
+    {
+      "question": "Adulto com trauma nasal há 1 dia apresenta desvio da pirâmide nasal e edema importante, sem hematoma septal. Qual é a conduta?",
+      "options": [
+        "Diagnóstico clínico; redução fechada após o edema ceder",
+        "Radiografia obrigatória; redução só com fratura visível",
+        "Redução aberta imediata no centro cirúrgico, sob anestesia",
+        "Observação apenas, pois os ossos nasais se alinham sozinhos"
+      ],
+      "correctIndex": 0,
+      "explanation": "O diagnóstico da fratura nasal é clínico, e a radiografia não muda a conduta. Com desvio, a redução fechada é feita quando o edema cede e os ossos ainda estão móveis, em geral nos primeiros 10 dias no adulto."
+    },
+    {
+      "question": "Homem de 22 anos, com amigdalite há 5 dias, piora com dor de garganta intensa à esquerda, dificuldade para abrir a boca, voz abafada e salivação. Há abaulamento do palato à esquerda com úvula desviada para a direita. Qual é a conduta?",
+      "options": [
+        "Punção ou drenagem do abscesso e antibiótico",
+        "Amigdalectomia de urgência no mesmo dia",
+        "Troca do antibiótico oral, sem procedimento",
+        "Corticoide oral e reavaliação em 72 horas"
+      ],
+      "correctIndex": 0,
+      "explanation": "Odinofagia unilateral, trismo, voz em batata quente e úvula desviada para o lado oposto definem abscesso periamigdaliano. O tratamento é punção aspirativa ou incisão e drenagem com antibiótico (amoxicilina-clavulanato ou clindamicina). Abscesso recorrente indica amigdalectomia eletiva."
+    },
+    {
+      "question": "Criança de 4 anos, sem vacinação, tem febre alta há 6 horas, aspecto toxêmico, salivação intensa, voz abafada e estridor, sentada inclinada para a frente apoiada nas mãos. Qual é a conduta inicial?",
+      "options": [
+        "Manter a criança calma e garantir a via aérea no centro cirúrgico",
+        "Examinar a orofaringe com abaixador de língua para ver a epiglote",
+        "Deitar a criança para puncionar acesso venoso e colher exames",
+        "Fazer nebulização com adrenalina e dar alta após melhora"
+      ],
+      "correctIndex": 0,
+      "explanation": "O quadro é de epiglotite: início abrupto, toxemia, sialorreia, voz abafada e posição em tripé. Não se agita a criança — abaixador de língua, punção ou deitá-la podem precipitar obstrução total. A via aérea é garantida no centro cirúrgico; a radiografia lateral, se feita, mostra o sinal do polegar."
+    },
+    {
+      "question": "Homem de 45 anos com dor em molar inferior há uma semana evolui com edema submandibular bilateral, assoalho da boca endurecido, língua elevada, trismo e salivação. Qual é a prioridade?",
+      "options": [
+        "Garantir a via aérea e iniciar antibiótico endovenoso",
+        "Extração dentária imediata no consultório odontológico",
+        "Antibiótico oral e reavaliação ambulatorial em 48 horas",
+        "Punção aspirativa da região submentoniana à beira do leito"
+      ],
+      "correctIndex": 0,
+      "explanation": "É angina de Ludwig, celulite bilateral dos espaços submandibular, sublingual e submentoniano, quase sempre de origem dentária. O risco é obstrução da via aérea: prioridade é garanti-la, com antibiótico EV, drenagem cirúrgica e tratamento do foco dentário."
+    },
+    {
+      "question": "Mulher de 40 anos acorda com a boca torta e não consegue fechar o olho esquerdo. Ao exame, não franze a testa à esquerda nem eleva a sobrancelha. Qual achado indica lesão periférica?",
+      "options": [
+        "Acometimento da musculatura da testa",
+        "Preservação da musculatura da testa",
+        "Desvio da língua para o lado afetado",
+        "Hemiparesia do lado da paralisia facial"
+      ],
+      "correctIndex": 0,
+      "explanation": "Na paralisia periférica, toda a hemiface é acometida, inclusive a testa. A paralisia central (AVC) poupa a fronte, que tem inervação cortical bilateral, e costuma vir com outros déficits."
+    },
+    {
+      "question": "Paciente de 35 anos tem paralisia facial periférica completa há 24 horas, sem vesículas, com otoscopia normal. Qual é o tratamento?",
+      "options": [
+        "Corticoide oral nas primeiras 72 h e proteção ocular",
+        "Antiviral oral isolado por 7 dias e repouso relativo",
+        "Descompressão cirúrgica do nervo facial em 24 horas",
+        "Observação apenas, pois a recuperação é espontânea"
+      ],
+      "correctIndex": 0,
+      "explanation": "Na paralisia de Bell, o corticoide oral iniciado nas primeiras 72 horas aumenta a recuperação completa. A proteção ocular (lubrificante, pomada e oclusão noturna) evita ceratite de exposição. Antiviral isolado não é recomendado."
+    },
+    {
+      "question": "Na escala de House-Brackmann, qual grau corresponde a um paciente com assimetria evidente e fechamento ocular incompleto mesmo com esforço máximo?",
+      "options": [
+        "Grau IV",
+        "Grau II",
+        "Grau III",
+        "Grau VI"
+      ],
+      "correctIndex": 0,
+      "explanation": "A escala vai de I (normal) a VI (paralisia total). O divisor prático está entre III, em que o olho ainda fecha completamente com esforço, e IV, em que o fechamento ocular é incompleto."
+    },
+    {
+      "question": "Homem de 48 anos acordou com perda auditiva na orelha direita e zumbido. A otoscopia é normal e o teste de Weber lateraliza para a esquerda. Qual é a conduta?",
+      "options": [
+        "Surdez súbita neurossensorial; corticoide oral e audiometria",
+        "Perda condutiva; lavagem otológica e retorno em 1 mês",
+        "Otite média com efusão; descongestionante e observação",
+        "Surdez súbita; observar 2 semanas antes de qualquer remédio"
+      ],
+      "correctIndex": 0,
+      "explanation": "Na perda neurossensorial, o Weber lateraliza para a orelha sadia. Com otoscopia normal e instalação abrupta, é surdez súbita: urgência tratada com corticoide oral em dose alta o quanto antes, com audiometria e RM para afastar schwannoma vestibular."
+    },
+    {
+      "question": "Criança de 3 anos com otite média aguda há 1 semana evolui com febre, dor e edema retroauricular, com o pavilhão deslocado para frente e para fora. Qual é a conduta?",
+      "options": [
+        "Internação, antibiótico EV e TC de osso temporal",
+        "Amoxicilina oral em dose dobrada e retorno em 72 h",
+        "Gotas otológicas de antibiótico e analgésico oral",
+        "Drenagem retroauricular ambulatorial sem imagem"
+      ],
+      "correctIndex": 0,
+      "explanation": "É mastoidite aguda, complicação intratemporal da otite média. Interna-se para antibiótico EV e TC de osso temporal com contraste; abscesso subperiosteal ou falha clínica indicam miringotomia e mastoidectomia."
+    },
+    {
+      "question": "Criança de 6 anos no 7º dia após amigdalectomia chega com vômito com sangue e frequência cardíaca de 140 bpm. Qual é a interpretação e a conduta?",
+      "options": [
+        "Hemorragia secundária; avaliação de urgência e controle",
+        "Exsudato normal da loja; analgesia e alta para casa",
+        "Gastrite medicamentosa; omeprazol e retorno em 1 semana",
+        "Sangue deglutido sem importância; observação em casa"
+      ],
+      "correctIndex": 0,
+      "explanation": "O sangramento secundário ocorre tipicamente entre o 5º e o 10º dia, quando a crosta de fibrina se desprende. A criança engole o sangue e pode chegar com hematêmese e taquicardia: exige avaliação de urgência, reposição e controle local ou cirúrgico."
+    }
+  ]
+}

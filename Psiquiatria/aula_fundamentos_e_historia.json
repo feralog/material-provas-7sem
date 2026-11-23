@@ -1,0 +1,162 @@
+{
+  "titulo": "Fundamentos e História da Psiquiatria",
+  "eyebrow": "Psiquiatria · Referência",
+  "subtitulo": "De Pinel à RAPS: as ideias que formaram a psiquiatria",
+  "intro": "Pinel, Kraepelin, Bleuler, Jaspers, Freud e Schneider, a era dos psicofármacos, Basaglia e a reforma psiquiátrica brasileira, DSM e CID e o modelo biopsicossocial. Material de referência — não há slide da aula deste tema.",
+  "questoes": [
+    {
+      "question": "Qual nome é associado à retirada das correntes dos internos de Bicêtre, na Paris pós-Revolução, e à proposta do tratamento moral?",
+      "options": [
+        "Philippe Pinel",
+        "Emil Kraepelin",
+        "Franco Basaglia",
+        "Eugen Bleuler"
+      ],
+      "correctIndex": 0,
+      "explanation": "Philippe Pinel, em Bicêtre e depois na Salpêtrière, retirou as correntes dos internos (gesto que divide com o enfermeiro Jean-Baptiste Pussin) e propôs o tratamento moral: o alienado como doente, tratável num asilo organizado. É tido como fundador da psiquiatria como especialidade médica."
+    },
+    {
+      "question": "Emil Kraepelin separou a demência precoce da psicose maníaco-depressiva. Qual foi o critério central dessa separação?",
+      "options": [
+        "O curso e a evolução: deterioração contra episódios com remissão",
+        "A presença de alucinações, ausentes na psicose maníaco-depressiva",
+        "A causa orgânica, demonstrada em necropsia na demência precoce",
+        "A idade de início, sempre após os 40 anos na demência precoce"
+      ],
+      "correctIndex": 0,
+      "explanation": "Kraepelin classificou pelo curso e pelo desfecho: a demência precoce evoluía para deterioração, e a psicose maníaco-depressiva era episódica, com retorno ao funcionamento entre as crises. Essa dicotomia é a base da separação atual entre esquizofrenia e transtorno bipolar, e ele é considerado o pai da nosologia psiquiátrica moderna."
+    },
+    {
+      "question": "Eugen Bleuler criou o termo esquizofrenia e descreveu seus sintomas fundamentais, os '4 As'. Quais são eles?",
+      "options": [
+        "Associações frouxas, afeto alterado, ambivalência e autismo",
+        "Alucinações, agitação, alogia e anedonia de início agudo",
+        "Afeto embotado, apatia, abulia e alucinações auditivas",
+        "Amnésia, afasia, apraxia e agnosia de evolução crônica"
+      ],
+      "correctIndex": 0,
+      "explanation": "Bleuler cunhou o termo (1908, publicado em 1911) para designar a cisão das funções psíquicas, não personalidade múltipla. Os sintomas fundamentais são o afrouxamento das associações, a alteração do afeto, a ambivalência e o autismo; delírios e alucinações eram, para ele, acessórios. Amnésia, afasia, apraxia e agnosia são os 'As' das demências."
+    },
+    {
+      "question": "Para Karl Jaspers, o que caracteriza o delírio primário, ou verdadeiro?",
+      "options": [
+        "Ser incompreensível a partir da história e do afeto do paciente",
+        "Derivar compreensivelmente de um estado de humor deprimido",
+        "Ter conteúdo sempre bizarro, impossível e de tema religioso",
+        "Ceder diante de argumentos lógicos e de provas concretas"
+      ],
+      "correctIndex": 0,
+      "explanation": "O delírio primário é psicologicamente incompreensível: não deriva do humor nem da história de vida, ao contrário das ideias deliroides, compreensíveis a partir de um afeto. Jaspers descreveu o delírio como convicção de certeza extraordinária, irremovível por argumentos, de conteúdo falso."
+    },
+    {
+      "question": "Na Psicopatologia Geral (1913), Jaspers distinguiu 'compreender' de 'explicar'. O que significa explicar?",
+      "options": [
+        "Estabelecer relações causais objetivas, como na biologia",
+        "Captar empaticamente o sentido de uma vivência do paciente",
+        "Interpretar conteúdos inconscientes por associação livre",
+        "Classificar sintomas por critérios operacionais objetivos"
+      ],
+      "correctIndex": 0,
+      "explanation": "Explicar é buscar a causa, como nas ciências naturais (uma lesão cerebral que produz o sintoma); compreender é captar por empatia a ligação de sentido entre as vivências. A psicopatologia descritiva de Jaspers descreve as vivências como o paciente as experimenta, sem partir de teoria; interpretar o inconsciente é o método de Freud."
+    },
+    {
+      "question": "Qual contribuição é atribuída a Sigmund Freud?",
+      "options": [
+        "Psicanálise, com o inconsciente e a associação livre",
+        "Sintomas de primeira ordem para o diagnóstico de psicose",
+        "Separação entre demência precoce e psicose maníaca",
+        "Descoberta do efeito antimaníaco do carbonato de lítio"
+      ],
+      "correctIndex": 0,
+      "explanation": "Freud criou a psicanálise: o inconsciente dinâmico, a associação livre, a interpretação dos sonhos (1900), a transferência, os mecanismos de defesa e o modelo estrutural de id, ego e superego. Sintomas de primeira ordem são de Schneider; a dicotomia das psicoses, de Kraepelin; o lítio, de John Cade."
+    },
+    {
+      "question": "Com que finalidade Kurt Schneider propôs os sintomas de primeira ordem?",
+      "options": [
+        "Orientar o diagnóstico de esquizofrenia na ausência de causa orgânica",
+        "Definir a gravidade da psicose maníaco-depressiva em cada episódio",
+        "Substituir a observação do curso por exames de imagem cerebral",
+        "Provar a origem inconsciente dos sintomas psicóticos na infância"
+      ],
+      "correctIndex": 0,
+      "explanation": "Schneider listou vivências (sonorização e difusão do pensamento, vozes que comentam ou dialogam, influência corporal, inserção e roubo do pensamento, percepção delirante) que, sem doença orgânica, falam a favor de esquizofrenia. A finalidade era pragmática; não são patognomônicos, e o DSM-5 retirou o peso especial que tinham."
+    },
+    {
+      "question": "Qual associação entre fármaco e marco histórico está correta?",
+      "options": [
+        "Clorpromazina, 1952: primeiro antipsicótico",
+        "Imipramina, 1949: primeiro estabilizador de humor",
+        "Lítio, 1960: primeiro benzodiazepínico ansiolítico",
+        "Haloperidol, 1930: primeiro antidepressivo tricíclico"
+      ],
+      "correctIndex": 0,
+      "explanation": "A clorpromazina (Delay e Deniker, 1952) abriu a era dos psicofármacos como primeiro antipsicótico. O efeito antimaníaco do lítio foi descrito por John Cade em 1949; a imipramina inaugurou os tricíclicos no fim dos anos 1950; os benzodiazepínicos chegaram por volta de 1960; o haloperidol é de 1958."
+    },
+    {
+      "question": "Franco Basaglia é uma referência da saúde mental por qual motivo?",
+      "options": [
+        "Liderar a desinstitucionalização na Itália, com a Lei 180",
+        "Criar a eletroconvulsoterapia com Cerletti nos anos 1930",
+        "Descrever os sintomas fundamentais da esquizofrenia",
+        "Fundar a psicopatologia fenomenológica descritiva"
+      ],
+      "correctIndex": 0,
+      "explanation": "Basaglia transformou os manicômios de Gorizia e Trieste e inspirou a Lei 180 (1978), que determinou o fechamento progressivo dos hospitais psiquiátricos na Itália. Influenciou diretamente a reforma brasileira; em 1979 visitou o Hospital Colônia de Barbacena e o comparou a um campo de concentração."
+    },
+    {
+      "question": "Sobre a Lei 10.216/2001, marco da reforma psiquiátrica brasileira, é correto afirmar:",
+      "options": [
+        "Prioriza o cuidado extra-hospitalar e prevê três tipos de internação",
+        "Extinguiu todo tipo de internação psiquiátrica no território nacional",
+        "Permite internação involuntária sem comunicar o Ministério Público",
+        "Criou os hospitais psiquiátricos de longa permanência no SUS"
+      ],
+      "correctIndex": 0,
+      "explanation": "A Lei 10.216/2001 (Lei Paulo Delgado) garante direitos das pessoas com transtorno mental e redireciona o modelo para serviços comunitários: internação só quando os recursos extra-hospitalares forem insuficientes, vedada em instituições asilares. Prevê internação voluntária, involuntária (comunicada ao Ministério Público em até 72 horas) e compulsória (determinada pela Justiça)."
+    },
+    {
+      "question": "Paciente com esquizofrenia em crise, sem risco de vida imediato, precisa de acompanhamento intensivo diário perto de casa. Qual ponto da Rede de Atenção Psicossocial é o mais adequado?",
+      "options": [
+        "Centro de Atenção Psicossocial (CAPS)",
+        "Hospital psiquiátrico de longa permanência",
+        "Serviço Residencial Terapêutico da região",
+        "Unidade básica, com retorno em seis meses"
+      ],
+      "correctIndex": 0,
+      "explanation": "O CAPS é o serviço comunitário estratégico da RAPS (Portaria 3.088/2011) para transtornos mentais graves e persistentes, inclusive em crise, com cuidado intensivo, semi-intensivo ou não intensivo; CAPS III e CAPS AD III funcionam 24 horas, com acolhimento noturno. A residência terapêutica é moradia para egressos de longas internações."
+    },
+    {
+      "question": "O que caracteriza o DSM e a CID como sistemas diagnósticos categoriais?",
+      "options": [
+        "Diagnóstico por presença ou ausência de critérios definidos",
+        "Diagnóstico baseado na causa biológica de cada transtorno",
+        "Diagnóstico por interpretação psicodinâmica dos sintomas",
+        "Diagnóstico por biomarcadores laboratoriais obrigatórios"
+      ],
+      "correctIndex": 0,
+      "explanation": "DSM e CID classificam por categorias: o transtorno está presente ou ausente conforme critérios operacionais explícitos, adotados no DSM-III (1980) para dar confiabilidade, de forma ateórica quanto à causa. As limitações são comorbidade, heterogeneidade dentro de uma mesma categoria e limiares arbitrários; daí os especificadores de gravidade e as propostas dimensionais."
+    },
+    {
+      "question": "Qual afirmação sobre as classificações diagnósticas atuais está correta?",
+      "options": [
+        "A CID-11 vigora desde 2022, e o DSM-5-TR é de 2022",
+        "A CID-10 segue sendo a versão mais recente da OMS",
+        "O DSM-5-TR restaurou o sistema multiaxial do DSM-IV",
+        "A CID-11 eliminou o capítulo de transtornos mentais"
+      ],
+      "correctIndex": 0,
+      "explanation": "A CID-11, aprovada pela OMS em 2019, entrou em vigor em 1º de janeiro de 2022, com os transtornos mentais no capítulo 6; no Brasil a transição é gradual e a CID-10 ainda aparece em documentos. O DSM-5 (2013) aboliu o sistema multiaxial, e o DSM-5-TR (2022) revisou o texto e incluiu o transtorno de luto prolongado."
+    },
+    {
+      "question": "O modelo biopsicossocial, proposto por George Engel em 1977, defende qual ideia?",
+      "options": [
+        "Integrar fatores biológicos, psicológicos e sociais na doença",
+        "Explicar toda doença mental por alteração de neurotransmissor",
+        "Tratar o sofrimento psíquico só com intervenção psicoterápica",
+        "Substituir o diagnóstico médico pela avaliação social do caso"
+      ],
+      "correctIndex": 0,
+      "explanation": "Engel criticou o modelo biomédico reducionista e propôs que adoecimento e cuidado resultam da interação de fatores biológicos (genética, neuroquímica), psicológicos (personalidade, estresse) e sociais (família, trabalho, pobreza). É a base do modelo de vulnerabilidade e estresse e do tratamento que combina fármaco, psicoterapia e reabilitação."
+    }
+  ]
+}

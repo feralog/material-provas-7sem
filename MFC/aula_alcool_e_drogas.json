@@ -1,0 +1,206 @@
+{
+  "titulo": "Álcool e Outras Drogas na APS",
+  "eyebrow": "Medicina de Família e Comunidade · Referência",
+  "subtitulo": "Rastrear, intervir, reduzir danos e saber quando encaminhar",
+  "intro": "AUDIT, CAGE e ASSIST, intervenção breve (FRAMES), entrevista motivacional e estágios de mudança, redução de danos, abstinência alcoólica leve na APS e tabagismo. Baseado nos manuais da OMS e no PCDT do Tabagismo — não há slide da aula deste tema.",
+  "questoes": [
+    {
+      "question": "Homem de 40 anos, em consulta de rotina na UBS, responde ao AUDIT e soma 12 pontos. Não tem sinais de dependência. Qual a conduta indicada?",
+      "options": [
+        "Intervenção breve sobre o uso de risco, com retorno combinado",
+        "Encaminhamento imediato ao CAPS AD para desintoxicação",
+        "Apenas reforço positivo, pois o escore indica baixo risco",
+        "Prescrição de naltrexona para reduzir a vontade de beber"
+      ],
+      "correctIndex": 0,
+      "explanation": "No AUDIT (10 perguntas, 0 a 40 pontos), 0 a 7 é baixo risco; 8 a 15, uso de risco que pede intervenção breve; 16 a 19, intervenção breve com aconselhamento e monitoramento; 20 ou mais, avaliação de dependência e tratamento especializado. Com 12 pontos, a conduta é a intervenção breve na própria APS."
+    },
+    {
+      "question": "Mulher de 52 anos soma 24 pontos no AUDIT. Qual o próximo passo?",
+      "options": [
+        "Avaliar dependência e planejar tratamento, com apoio do CAPS AD",
+        "Fazer só orientação geral, pois o AUDIT não avalia dependência",
+        "Repetir o AUDIT em um ano, já que o escore é apenas de rastreio",
+        "Internar de forma involuntária para a desintoxicação imediata"
+      ],
+      "correctIndex": 0,
+      "explanation": "AUDIT de 20 a 40 (zona IV) indica provável dependência e pede avaliação diagnóstica e tratamento mais intensivo, em geral compartilhado com o CAPS AD, com a UBS seguindo junto. O instrumento não fecha diagnóstico, mas não se adia a avaliação; internação involuntária é exceção, não conduta de rotina."
+    },
+    {
+      "question": "Homem de 28 anos bebe cerca de dez latas de cerveja todo sábado, sem prejuízo no trabalho ou na família. Responde 'não' às quatro perguntas do CAGE. Qual a interpretação correta?",
+      "options": [
+        "O CAGE não mede quantidade e deixa passar o uso de risco; vale aplicar o AUDIT",
+        "O CAGE negativo exclui problema com álcool e dispensa qualquer abordagem",
+        "O CAGE negativo confirma que o consumo é de baixo risco para a saúde dele",
+        "O CAGE só é válido com exames de GGT e VCM, que devem ser pedidos antes"
+      ],
+      "correctIndex": 0,
+      "explanation": "O CAGE (Cut down, Annoyed, Guilty, Eye-opener) sugere problema com 2 ou mais respostas positivas, mas é voltado à dependência e não pergunta quanto se bebe. O consumo pesado episódico é uso de risco mesmo sem consequências, e o AUDIT (ou o AUDIT-C, suas três perguntas de consumo) é o instrumento que o capta."
+    },
+    {
+      "question": "Na UBS, a equipe quer um instrumento da OMS que rastreie, numa só aplicação, o uso de tabaco, álcool, maconha, cocaína, sedativos, inalantes e opioides, com escore de risco por substância. Qual é ele?",
+      "options": [
+        "ASSIST",
+        "AUDIT-C",
+        "CIWA-Ar",
+        "SRQ-20"
+      ],
+      "correctIndex": 0,
+      "explanation": "O ASSIST rastreia várias substâncias e classifica o risco de cada uma em baixo (orientação), moderado (intervenção breve) ou alto (intervenção breve e encaminhamento para avaliação e tratamento). O AUDIT-C cobre só o álcool, a CIWA-Ar mede gravidade de abstinência alcoólica e o SRQ-20 rastreia transtorno mental comum."
+    },
+    {
+      "question": "Na intervenção breve para uso de risco de álcool, quais elementos compõem o acrônimo FRAMES?",
+      "options": [
+        "Feedback, responsabilidade, aconselhamento, menu de opções, empatia e autoeficácia",
+        "Frequência, risco, abstinência, medicação, encaminhamento e seguimento mensal",
+        "Fissura, recaída, avaliação, monitoramento, exames e suspensão gradual do uso",
+        "Feedback, repressão, advertência, multa, exclusão do grupo e sanção familiar"
+      ],
+      "correctIndex": 0,
+      "explanation": "FRAMES: Feedback (devolver o resultado e os riscos), Responsabilidade (a decisão é do paciente), Advice (conselho claro de reduzir ou parar), Menu (opções de estratégia e meta), Empatia e Self-efficacy (autoeficácia). É indicada sobretudo para uso de risco e uso nocivo; na dependência é só o começo do cuidado."
+    },
+    {
+      "question": "Paciente diz: 'Sei que estou bebendo demais e às vezes penso em parar, mas a bebida me ajuda a relaxar depois do trabalho. Não sei se é a hora.' Em qual estágio de mudança ele está e o que fazer?",
+      "options": [
+        "Contemplação: explorar a ambivalência, pesando prós e contras",
+        "Pré-contemplação: confrontar a negação até que ele a admita",
+        "Preparação: marcar logo a data de parada e prescrever remédio",
+        "Manutenção: focar só na prevenção de recaída e nos gatilhos"
+      ],
+      "correctIndex": 0,
+      "explanation": "Reconhecer o problema e estar dividido entre mudar e não mudar é a contemplação de Prochaska e DiClemente. A conduta é explorar a ambivalência com a balança decisória, deixando o paciente verbalizar seus motivos para mudar; empurrar para a ação antes da hora aumenta a resistência."
+    },
+    {
+      "question": "Homem de 45 anos com hipertensão e AUDIT de 14 diz: 'Não vejo problema nenhum, todo mundo bebe no fim de semana.' Qual a abordagem mais adequada?",
+      "options": [
+        "Devolver os riscos sem confronto e manter o vínculo para outra conversa",
+        "Afirmar que ele é alcoólatra e que precisa admitir isso para ser tratado",
+        "Encerrar o assunto e não voltar a ele até que o paciente peça ajuda",
+        "Condicionar a renovação da receita do anti-hipertensivo a parar de beber"
+      ],
+      "correctIndex": 0,
+      "explanation": "Quem não vê problema está na pré-contemplação: a tarefa é informar e devolver os riscos (inclusive para a pressão), sem rótulos nem confronto, e manter a porta aberta. Pela entrevista motivacional, argumentar e rotular aumentam a resistência, e condicionar o cuidado a parar afasta o paciente."
+    },
+    {
+      "question": "Fumante parou há quatro meses com acompanhamento na UBS. Voltou a fumar após uma festa e chega dizendo que 'fracassou'. Como entender e conduzir?",
+      "options": [
+        "Recaída faz parte do ciclo: acolher, rever os gatilhos e retomar o plano",
+        "Recaída indica falta de motivação: aguardar ele voltar a querer parar",
+        "Recaída anula o tratamento: o plano só recomeça após seis meses",
+        "Recaída mostra que a abordagem falhou: encaminhar para internação"
+      ],
+      "correctIndex": 0,
+      "explanation": "No modelo transteórico a recaída é parte esperada do processo, que funciona como espiral: cada tentativa ensina algo. A conduta é acolher sem culpa, identificar o que precipitou a volta e retomar o plano; tratar a recaída como fracasso afasta o paciente do serviço."
+    },
+    {
+      "question": "Qual atitude do médico está de acordo com os princípios da entrevista motivacional?",
+      "options": [
+        "Evitar argumentar e ajudar o paciente a ver a distância entre o uso e seus objetivos",
+        "Listar todos os danos do álcool até o paciente concordar em parar naquele dia",
+        "Usar o medo das complicações como principal estratégia para gerar a mudança",
+        "Assumir a decisão pelo paciente, já que a dependência compromete a autonomia"
+      ],
+      "correctIndex": 0,
+      "explanation": "A entrevista motivacional (Miller e Rollnick) se apoia em expressar empatia, desenvolver discrepância entre o comportamento e os objetivos do próprio paciente, evitar argumentação e apoiar a autoeficácia. Quem deve verbalizar as razões para mudar é o paciente; sermão e medo aumentam a resistência."
+    },
+    {
+      "question": "Homem de 33 anos, usuário de crack, vive na rua e diz que não quer parar de usar. Procura a equipe por causa de uma ferida no pé. Qual conduta segue a lógica da redução de danos?",
+      "options": [
+        "Tratar a ferida, orientar uso mais seguro, testar para IST e manter vínculo",
+        "Tratar a ferida só depois que ele aceitar a internação para desintoxicação",
+        "Recusar o atendimento até que ele compareça sem ter usado nenhuma droga",
+        "Encaminhar direto à comunidade terapêutica como condição para o curativo"
+      ],
+      "correctIndex": 0,
+      "explanation": "Redução de danos é reduzir os prejuízos do uso sem exigir abstinência como condição para o cuidado: tratar a demanda que ele trouxe, orientar não compartilhar cachimbo, oferecer preservativo e testagem para HIV, sífilis e hepatites e criar vínculo. Condicionar o atendimento à abstinência afasta justamente quem mais precisa."
+    },
+    {
+      "question": "Sobre a redução de danos no SUS, é correto afirmar que ela:",
+      "options": [
+        "É estratégia de saúde pública que não condiciona o cuidado à abstinência",
+        "É estratégia restrita ao CAPS AD, sem espaço na atenção primária à saúde",
+        "Estimula o consumo de drogas e foi abandonada pelo Ministério da Saúde",
+        "Tem como meta única e obrigatória a abstinência total desde o primeiro dia"
+      ],
+      "correctIndex": 0,
+      "explanation": "A redução de danos, regulamentada pela Portaria 1.028/2005 e adotada na política do Ministério da Saúde para usuários de álcool e outras drogas, busca diminuir prejuízos à saúde e sociais sem exigir abstinência. É praticada na APS, no Consultório na Rua e nos CAPS; a abstinência pode ser uma meta, mas não é condição de acesso."
+    },
+    {
+      "question": "Mulher de 30 anos, em tratamento no CAPS AD por uso de crack, perdeu a moradia e está em vulnerabilidade social. Qual ponto da RAPS oferece residência transitória articulada ao CAPS?",
+      "options": [
+        "Unidade de Acolhimento",
+        "Residência Terapêutica",
+        "Hospital psiquiátrico",
+        "Centro de Convivência"
+      ],
+      "correctIndex": 0,
+      "explanation": "A Unidade de Acolhimento, do componente de atenção residencial de caráter transitório da RAPS, oferece moradia temporária e cuidado articulado ao CAPS para quem tem necessidades decorrentes de álcool e drogas e vulnerabilidade social. O Serviço Residencial Terapêutico é moradia para egressos de longas internações psiquiátricas."
+    },
+    {
+      "question": "Homem de 48 anos, bebe diariamente há anos e parou há 14 horas. Tem tremor leve, sudorese e ansiedade, sem confusão nem alucinações. Nunca teve convulsão nem delirium tremens, não tem comorbidade grave e a esposa ficará com ele. Qual a conduta?",
+      "options": [
+        "Tratar na APS com benzodiazepínico oral, tiamina e retorno próximo",
+        "Encaminhar ao pronto-socorro, pois toda abstinência exige internação",
+        "Prescrever haloperidol oral isolado para controlar tremor e ansiedade",
+        "Orientar que volte a beber aos poucos até a abstinência desaparecer"
+      ],
+      "correctIndex": 0,
+      "explanation": "Abstinência leve, sem história de convulsão ou delirium tremens, sem comorbidade grave e com acompanhante pode ser manejada ambulatorialmente: benzodiazepínico oral (diazepam; lorazepam na hepatopatia grave ou no idoso) com redução em cerca de uma semana, tiamina, hidratação e reavaliação frequente. Antipsicótico isolado não trata abstinência."
+    },
+    {
+      "question": "Na avaliação de um paciente em abstinência alcoólica na UBS, qual dado indica encaminhamento para tratamento hospitalar?",
+      "options": [
+        "Convulsão em abstinência anterior",
+        "Tremor fino de extremidades leve",
+        "Insônia e ansiedade desde a véspera",
+        "Sudorese leve sem alteração mental"
+      ],
+      "correctIndex": 0,
+      "explanation": "História de convulsão ou de delirium tremens em abstinência anterior prediz quadro grave e indica tratamento hospitalar, assim como confusão, alucinações, suspeita de Wernicke, comorbidade descompensada, gestação, falta de suporte em casa ou falha do manejo ambulatorial. Tremor, sudorese, insônia e ansiedade isolados são a abstinência leve."
+    },
+    {
+      "question": "Hipertenso de 55 anos, fumante, vem à UBS para renovar a receita. Em cerca de 3 minutos, o médico pergunta se ele fuma, avalia a motivação e a dependência, aconselha a parar e o prepara para a tentativa. Que abordagem é essa?",
+      "options": [
+        "Abordagem breve ou mínima do fumante (PAAP)",
+        "Abordagem intensiva em grupo cognitivo-comportamental",
+        "Teste de Fagerström para indicar a internação",
+        "Entrevista diagnóstica estruturada para dependência"
+      ],
+      "correctIndex": 0,
+      "explanation": "A abordagem breve ou mínima (perguntar, avaliar, aconselhar e preparar — PAAP) cabe em qualquer consulta e deve ser feita com todo fumante; a abordagem básica acrescenta o acompanhar (PAAPA). A abordagem intensiva é estruturada em sessões individuais ou em grupo, e o Fagerström mede a dependência de nicotina."
+    },
+    {
+      "question": "Fumante de 46 anos quer parar. Fuma 25 cigarros por dia, acende o primeiro cinco minutos após acordar e tem Fagerström de 8, sem contraindicações clínicas. Qual a conduta?",
+      "options": [
+        "Abordagem cognitivo-comportamental associada a farmacoterapia",
+        "Abordagem cognitivo-comportamental isolada, sem farmacoterapia",
+        "Farmacoterapia isolada, sem necessidade de apoio comportamental",
+        "Redução para dez cigarros por dia antes de qualquer tratamento"
+      ],
+      "correctIndex": 0,
+      "explanation": "Fumar 20 ou mais cigarros por dia, acender o primeiro até 30 minutos após acordar e ter Fagerström de 5 ou mais indicam dependência elevada e farmacoterapia (reposição de nicotina ou bupropiona). O medicamento sempre se associa à abordagem cognitivo-comportamental, que é a base do tratamento no PCDT do Tabagismo."
+    },
+    {
+      "question": "Fumante vai iniciar bupropiona no programa de tabagismo da UBS. Quando o medicamento deve começar em relação à data de parada (dia D)?",
+      "options": [
+        "Uma a duas semanas antes da data do dia D",
+        "No próprio dia D, junto com o adesivo",
+        "Uma semana após o dia D, se houver fissura",
+        "Só após um mês sem fumar, para evitar recaída"
+      ],
+      "correctIndex": 0,
+      "explanation": "A bupropiona leva alguns dias para atingir efeito e começa 1 a 2 semanas antes do dia D: 150 mg pela manhã por 3 dias e depois 150 mg duas vezes ao dia. O adesivo de nicotina, ao contrário, começa no dia D; a bupropiona é contraindicada em epilepsia, bulimia, anorexia e com IMAO."
+    },
+    {
+      "question": "Pela Lei 13.840/2019, a internação involuntária de pessoa dependente de drogas:",
+      "options": [
+        "Dura só o tempo da desintoxicação, no máximo 90 dias, comunicada em 72 horas",
+        "Dura o tempo que a família decidir, sem prazo e sem comunicação a órgão algum",
+        "Pode ser pedida por policial e dura no mínimo seis meses em comunidade terapêutica",
+        "É proibida, pois a Reforma Psiquiátrica aboliu toda internação sem consentimento"
+      ],
+      "correctIndex": 0,
+      "explanation": "A Lei 13.840/2019 prevê internação involuntária a pedido de familiar ou responsável legal, formalizada por médico, apenas pelo tempo necessário à desintoxicação e no máximo 90 dias, com comunicação ao Ministério Público e à Defensoria em até 72 horas. Servidores da segurança pública não podem pedi-la, e ela é exceção, quando os recursos extra-hospitalares não bastam."
+    }
+  ]
+}

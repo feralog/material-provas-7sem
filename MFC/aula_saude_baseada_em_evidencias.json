@@ -1,0 +1,206 @@
+{
+  "titulo": "Saúde Baseada em Evidências",
+  "eyebrow": "Medicina de Família e Comunidade · Referência",
+  "subtitulo": "Da pergunta clínica ao NNT e à decisão compartilhada",
+  "intro": "PICO, tipos de estudo, hierarquia de evidências e seus limites, níveis de Oxford e GRADE, RR, RRA, NNT, validade interna e aplicabilidade e decisão compartilhada. Baseado em Sackett, CEBM e GRADE — não há slide da aula deste tema.",
+  "questoes": [
+    {
+      "question": "Médico de família se pergunta: 'Em idosos com fibrilação atrial, a apixabana reduz AVC e sangramento quando comparada à varfarina?' No formato PICO, o que corresponde ao C?",
+      "options": [
+        "O anticoagulante varfarina",
+        "O anticoagulante apixabana",
+        "Os idosos com fibrilação atrial",
+        "Os desfechos AVC e sangramento"
+      ],
+      "correctIndex": 0,
+      "explanation": "No PICO, P é o paciente ou problema (idosos com fibrilação atrial), I a intervenção (apixabana), C a comparação (varfarina) e O o desfecho (AVC e sangramento). A pergunta estruturada define os termos da busca e o filtro do que serve: estudo com PICO diferente não responde à pergunta."
+    },
+    {
+      "question": "Qual definição traduz o tripé da medicina baseada em evidências, segundo Sackett?",
+      "options": [
+        "Melhor evidência, experiência clínica e valores e preferências do paciente",
+        "Melhor evidência, opinião do especialista e protocolo do serviço de saúde",
+        "Ensaios clínicos, metanálises e diretrizes da indústria farmacêutica",
+        "Experiência clínica, exames complementares e custo do tratamento"
+      ],
+      "correctIndex": 0,
+      "explanation": "Sackett definiu a medicina baseada em evidências como o uso consciente, explícito e criterioso da melhor evidência disponível na decisão sobre cada paciente, integrada à experiência clínica e aos valores e preferências do paciente. Evidência isolada não decide; ela informa a decisão."
+    },
+    {
+      "question": "Pesquisadores querem saber se um novo anti-hipertensivo reduz AVC em comparação ao tratamento padrão. Qual desenho de estudo responde melhor a essa pergunta?",
+      "options": [
+        "Ensaio clínico randomizado",
+        "Estudo de coorte prospectivo",
+        "Estudo de caso-controle",
+        "Estudo transversal de base"
+      ],
+      "correctIndex": 0,
+      "explanation": "Para perguntas de tratamento, o ensaio clínico randomizado é o melhor desenho primário: a randomização distribui entre os grupos os confundidores conhecidos e desconhecidos, o que permite inferir causa e efeito. A revisão sistemática de bons ensaios randomizados fica acima dele."
+    },
+    {
+      "question": "Uma equipe quer conhecer a evolução, em dez anos, de pacientes que tiveram o primeiro AVC: quantos voltam a ter AVC, quantos morrem e quantos ficam dependentes. Qual o desenho mais adequado?",
+      "options": [
+        "Estudo de coorte",
+        "Estudo transversal",
+        "Estudo caso-controle",
+        "Estudo ecológico"
+      ],
+      "correctIndex": 0,
+      "explanation": "Perguntas de prognóstico pedem coorte: acompanhar pessoas com a condição ao longo do tempo e medir a incidência dos desfechos. O transversal é um retrato num momento só, o caso-controle parte do desfecho para a exposição e o ecológico compara grupos populacionais, não indivíduos."
+    },
+    {
+      "question": "Pesquisadores querem investigar se o uso de um medicamento na gestação se associa a uma malformação muito rara. Qual desenho é o mais eficiente?",
+      "options": [
+        "Caso-controle",
+        "Ensaio clínico",
+        "Transversal",
+        "Série de casos"
+      ],
+      "correctIndex": 0,
+      "explanation": "Para desfecho raro ou de latência longa, o caso-controle é o desenho eficiente: parte de quem tem o desfecho (casos) e de quem não tem (controles) e compara a exposição prévia. Uma coorte precisaria de milhares de expostos para observar poucos casos, e expor gestantes a um possível dano num ensaio não seria ético."
+    },
+    {
+      "question": "Por que a relação entre tabagismo e câncer de pulmão foi estabelecida sobretudo por estudos observacionais, e não por ensaios randomizados?",
+      "options": [
+        "Porque designar pessoas para fumar ao acaso seria antiético",
+        "Porque ensaios randomizados não servem para doenças crônicas",
+        "Porque estudos observacionais não sofrem viés de confusão",
+        "Porque a randomização só funciona com amostras pequenas"
+      ],
+      "correctIndex": 0,
+      "explanation": "Quando a exposição é potencialmente nociva, não é ético randomizar pessoas para recebê-la; perguntas de etiologia e dano se respondem com coortes e caso-controle. Esses desenhos estão sujeitos a confundimento, por isso a força da associação, a consistência entre estudos e o gradiente dose-resposta pesam na inferência causal."
+    },
+    {
+      "question": "Uma metanálise reúne oito ensaios pequenos, todos sem sigilo de alocação, sem cegamento e com muitas perdas de seguimento. Como interpretar a sua conclusão?",
+      "options": [
+        "Com cautela: a síntese não corrige o viés dos estudos incluídos",
+        "Como evidência definitiva, por estar no topo da pirâmide",
+        "Como evidência nula, pois metanálise não inclui ensaios",
+        "Como equivalente a um ensaio grande e bem conduzido"
+      ],
+      "correctIndex": 0,
+      "explanation": "Revisão sistemática de estudos ruins é evidência ruim: a qualidade da síntese depende da qualidade dos estudos que ela junta. Por isso o GRADE avalia a certeza do conjunto da evidência (risco de viés, inconsistência, evidência indireta, imprecisão, viés de publicação), e não apenas o lugar do desenho na pirâmide."
+    },
+    {
+      "question": "Pelo sistema GRADE, um conjunto de estudos observacionais começa com certeza baixa. Qual situação pode elevar essa certeza?",
+      "options": [
+        "Efeito de grande magnitude, com gradiente dose-resposta",
+        "Intervalo de confiança largo, cruzando a linha de nulidade",
+        "Resultados muito diferentes entre os estudos analisados",
+        "População dos estudos diferente da população de interesse"
+      ],
+      "correctIndex": 0,
+      "explanation": "No GRADE, ensaios randomizados começam como alta e observacionais como baixa. Observacionais podem subir com grande magnitude de efeito, gradiente dose-resposta ou confundidores que reduziriam o efeito observado; a certeza cai por risco de viés, inconsistência, evidência indireta, imprecisão e viés de publicação."
+    },
+    {
+      "question": "Uma diretriz faz recomendação 'fraca' ou 'condicional' a favor de uma intervenção, pelo sistema GRADE. O que isso significa na prática?",
+      "options": [
+        "A escolha depende dos valores do paciente e pede decisão compartilhada",
+        "A intervenção é ineficaz e não deve ser oferecida a nenhum paciente",
+        "A evidência é sempre de certeza muito baixa e não deve ser usada",
+        "A intervenção é obrigatória, salvo contraindicação absoluta registrada"
+      ],
+      "correctIndex": 0,
+      "explanation": "A força da recomendação considera benefícios e danos, certeza da evidência, valores e preferências e custos. Recomendação forte é a que quase todas as pessoas bem informadas escolheriam; a fraca ou condicional indica que pessoas diferentes fariam escolhas diferentes, e por isso pede decisão compartilhada."
+    },
+    {
+      "question": "Na classificação clássica do CEBM de Oxford, uma recomendação de grau A se apoia em qual tipo de evidência, para perguntas de tratamento?",
+      "options": [
+        "Revisão sistemática de ensaios randomizados ou ensaio randomizado bom",
+        "Estudos de coorte e de caso-controle consistentes entre si",
+        "Séries de casos e estudos de coorte de menor qualidade",
+        "Opinião de especialistas baseada em fisiologia e experiência"
+      ],
+      "correctIndex": 0,
+      "explanation": "No esquema clássico de Oxford, o grau A vem de evidência de nível 1 (revisão sistemática de ensaios randomizados ou ensaio randomizado de boa qualidade); o B, dos níveis 2 e 3 (coortes e caso-controle); o C, do nível 4 (séries de casos); e o D, do nível 5 (opinião de especialistas sem avaliação crítica)."
+    },
+    {
+      "question": "Em um ensaio de 5 anos, o infarto ocorreu em 20% do grupo placebo e em 15% do grupo tratado. Quais são a redução absoluta do risco e o NNT?",
+      "options": [
+        "RRA de 5 pontos percentuais e NNT de 20",
+        "RRA de 25 pontos percentuais e NNT de 4",
+        "RRA de 15 pontos percentuais e NNT de 7",
+        "RRA de 5 pontos percentuais e NNT de 5"
+      ],
+      "correctIndex": 0,
+      "explanation": "RRA = risco no controle − risco no tratado = 20% − 15% = 5 pontos percentuais; NNT = 1 ÷ RRA = 1 ÷ 0,05 = 20 pessoas tratadas por 5 anos para evitar um infarto. O RR é 0,75 e a redução do risco relativo é de 25%, número que soa maior que a RRA."
+    },
+    {
+      "question": "Uma propaganda afirma que um remédio 'reduz pela metade o risco de fratura'. No estudo, o risco em 3 anos caiu de 2% para 1%. Qual a leitura correta?",
+      "options": [
+        "RRR de 50%, mas RRA de 1 ponto percentual e NNT de 100",
+        "RRR de 50%, RRA de 50 pontos percentuais e NNT de 2",
+        "RRR de 1%, RRA de 50 pontos percentuais e NNT de 50",
+        "RRR de 2%, RRA de 1 ponto percentual e NNT de 200"
+      ],
+      "correctIndex": 0,
+      "explanation": "A redução do risco relativo é de 50% (1 − 1/2), mas a redução absoluta é de apenas 1 ponto percentual (2% − 1%), e o NNT é 1 ÷ 0,01 = 100 pessoas tratadas por 3 anos para evitar uma fratura. A RRR impressiona mais; RRA e NNT, que dependem do risco basal, mostram o benefício real."
+    },
+    {
+      "question": "Um ensaio relata risco relativo de 0,85 para morte, com intervalo de confiança de 95% de 0,70 a 1,05. Como interpretar?",
+      "options": [
+        "Sem diferença estatisticamente significativa, pois o IC inclui o 1",
+        "Redução de mortalidade significativa, pois o RR é menor que 1",
+        "Aumento de mortalidade significativo, pois o IC passa de 1",
+        "Resultado inválido, pois o IC deveria ser menor que o RR"
+      ],
+      "correctIndex": 0,
+      "explanation": "Para medidas relativas (RR, odds ratio, hazard ratio), o valor 1 significa ausência de diferença; um intervalo de confiança de 95% que inclui o 1 indica que o resultado não tem significância estatística. O intervalo largo também sinaliza imprecisão, um dos motivos de rebaixamento no GRADE."
+    },
+    {
+      "question": "Um ensaio com homens de 45 a 60 anos, sem comorbidades, mostrou benefício claro de um fármaco. O médico avalia usá-lo numa mulher de 86 anos com insuficiência renal e mais seis medicamentos. Qual o problema principal?",
+      "options": [
+        "Validade externa: ela difere muito da população do estudo",
+        "Validade interna: o resultado do ensaio está comprometido",
+        "Viés de publicação: o ensaio deve ter sido mal divulgado",
+        "Erro aleatório: o tamanho da amostra deve ter sido pequeno"
+      ],
+      "correctIndex": 0,
+      "explanation": "Validade interna é a confiança de que o resultado é verdadeiro na população estudada; validade externa, ou aplicabilidade, é saber se ele vale para o paciente à frente. Um ensaio impecável pode ter pouca aplicabilidade a idosos multimórbidos, muitas vezes excluídos desses estudos."
+    },
+    {
+      "question": "Um novo antidiabético reduziu a HbA1c em ensaios clínicos, mas não houve redução de infarto, AVC nem mortalidade. Como classificar o desfecho HbA1c nesse contexto?",
+      "options": [
+        "Desfecho substituto, que nem sempre reflete benefício ao paciente",
+        "Desfecho duro, que por si só comprova benefício clínico relevante",
+        "Desfecho primário de segurança, voltado a efeitos adversos graves",
+        "Desfecho composto, que soma eventos cardiovasculares e renais"
+      ],
+      "correctIndex": 0,
+      "explanation": "HbA1c, LDL e densidade óssea são desfechos substitutos: marcadores que se espera que acompanhem desfechos clínicos, mas nem sempre acompanham. O que importa ao paciente é morte, infarto, AVC, fratura e qualidade de vida; melhorar o exame sem melhorar esses desfechos não basta para afirmar benefício."
+    },
+    {
+      "question": "No meio do atendimento, a médica de família precisa responder rapidamente a uma dúvida de tratamento com a melhor evidência disponível. Por onde é mais eficiente começar a busca?",
+      "options": [
+        "Por diretrizes baseadas em evidência e sumários clínicos atualizados",
+        "Por estudos individuais no PubMed, lendo os artigos mais recentes",
+        "Por relatos de caso publicados sobre pacientes parecidos com o dela",
+        "Pela opinião de colegas mais experientes, por ser a resposta mais rápida"
+      ],
+      "correctIndex": 0,
+      "explanation": "A busca eficiente começa pelo que já foi sintetizado e avaliado: diretrizes baseadas em evidência (PCDT e Conitec, NICE) e sumários clínicos, depois revisões sistemáticas (Biblioteca Cochrane) e, por fim, estudos individuais em bases como PubMed/MEDLINE e LILACS. O estudo isolado mais recente pode contrariar um conjunto inteiro de evidências."
+    },
+    {
+      "question": "Homem de 55 anos, assintomático, pede à médica de família 'o exame de próstata'. Qual conduta segue a decisão compartilhada e a posição do Ministério da Saúde e do INCA?",
+      "options": [
+        "Explicar benefícios e danos do PSA e decidir junto com ele",
+        "Pedir PSA e toque retal anuais, pois é o rastreamento padrão",
+        "Negar o exame, pois o rastreamento é proibido pelo SUS",
+        "Pedir PSA e biópsia já na primeira consulta, por segurança"
+      ],
+      "correctIndex": 0,
+      "explanation": "O Ministério da Saúde e o INCA não recomendam rastreamento populacional do câncer de próstata, pelo risco de falso-positivo, biópsias, sobrediagnóstico e sobretratamento (incontinência, disfunção erétil). Quando o homem pede, a conduta é apresentar benefícios e danos em números absolutos e decidir com ele, sem pedido automático."
+    },
+    {
+      "question": "Um ensaio controlado mostrou que um programa de exercícios reduz quedas em idosos. Aplicado na rede municipal, com adesão menor e pacientes mais variados, o efeito foi menor. Os dois resultados ilustram, respectivamente:",
+      "options": [
+        "Eficácia e efetividade",
+        "Efetividade e eficácia",
+        "Eficiência e eficácia",
+        "Efetividade e eficiência"
+      ],
+      "correctIndex": 0,
+      "explanation": "Eficácia é o efeito em condições ideais e controladas, como no ensaio clínico; efetividade é o efeito no mundo real, com adesão imperfeita e pacientes heterogêneos; eficiência relaciona o efeito ao custo. É comum que a efetividade seja menor que a eficácia."
+    }
+  ]
+}

@@ -1,0 +1,206 @@
+{
+  "titulo": "Tontura na Atenção Primária",
+  "eyebrow": "Medicina de Família e Comunidade · Referência",
+  "subtitulo": "Traduzir a queixa, resolver no consultório e reconhecer o AVC",
+  "intro": "Vertigem, pré-síncope, desequilíbrio e tontura inespecífica; VPPB com Dix-Hallpike e Epley, neurite, Ménière, HINTS, sinais de alarme e supressores vestibulares. Baseado em diretrizes (AAO-HNS 2017, Bárány Society) e livros-texto de MFC — não há slide da aula deste tema.",
+  "questoes": [
+    {
+      "question": "Mulher de 58 anos relata que, ao se levantar rapidamente da cama, sente a vista escurecer e a sensação de que vai desmaiar, sem sensação de giro; o quadro passa em segundos se ela se senta. Essa tontura é mais bem classificada como:",
+      "options": [
+        "Pré-síncope de provável causa ortostática",
+        "Vertigem posicional de origem labiríntica",
+        "Desequilíbrio por déficit proprioceptivo",
+        "Tontura inespecífica de origem ansiosa"
+      ],
+      "correctIndex": 0,
+      "explanation": "Pré-síncope é a sensação de desmaio iminente — escurecimento visual, fraqueza, cabeça leve — e aponta para hipoperfusão cerebral transitória, não para o labirinto. O gatilho postural sugere hipotensão ortostática; vertigem é ilusão de movimento, desequilíbrio é instabilidade na marcha e tontura inespecífica é a queixa vaga que não cabe nas demais."
+    },
+    {
+      "question": "Para confirmar hipotensão ortostática, mede-se a pressão arterial deitado e depois em pé. O critério diagnóstico é uma queda, em até 3 minutos de pé, de:",
+      "options": [
+        "20 mmHg ou mais na sistólica, ou 10 mmHg ou mais na diastólica",
+        "10 mmHg ou mais na sistólica, ou 5 mmHg ou mais na diastólica",
+        "30 mmHg ou mais na sistólica, ou 20 mmHg ou mais na diastólica",
+        "40 mmHg ou mais na sistólica, com aumento da frequência cardíaca"
+      ],
+      "correctIndex": 0,
+      "explanation": "Hipotensão ortostática é a queda de pelo menos 20 mmHg na sistólica ou 10 mmHg na diastólica até 3 minutos após ficar em pé. Na APS, as causas mais comuns são medicamentos (diuréticos, alfabloqueadores, vasodilatadores, tricíclicos), desidratação e disautonomia, como no diabetes e no Parkinson."
+    },
+    {
+      "question": "Mulher de 55 anos tem, há uma semana, crises de vertigem rotatória intensa que duram menos de um minuto, ao se deitar, virar na cama ou olhar para cima. Entre as crises fica bem; não há perda auditiva nem sintoma neurológico. Qual exame confirma a principal hipótese?",
+      "options": [
+        "Manobra de Dix-Hallpike",
+        "Tomografia de crânio",
+        "Audiometria tonal e vocal",
+        "Teste do impulso cefálico"
+      ],
+      "correctIndex": 0,
+      "explanation": "Crises de segundos, desencadeadas por mudança de posição da cabeça e sem sintoma auditivo ou neurológico, são a VPPB, a causa mais comum de vertigem. O diagnóstico é clínico, pela manobra de Dix-Hallpike; nos casos típicos, imagem e exames vestibulares não estão indicados (AAO-HNS 2017). O impulso cefálico faz parte do HINTS, que é para vertigem aguda contínua."
+    },
+    {
+      "question": "Na manobra de Dix-Hallpike para o lado direito, qual achado confirma VPPB do canal semicircular posterior direito?",
+      "options": [
+        "Nistagmo torcional e para cima, com latência e duração curta",
+        "Nistagmo horizontal persistente, sem latência e sem fadiga",
+        "Nistagmo vertical para baixo, que não diminui com a repetição",
+        "Ausência de nistagmo, com vertigem que dura mais de uma hora"
+      ],
+      "correctIndex": 0,
+      "explanation": "No canal posterior, após latência de alguns segundos surge nistagmo torcional, com o polo superior do olho batendo para a orelha de baixo, e componente vertical para cima; dura menos de 1 minuto e diminui com a repetição. Nistagmo sem latência, persistente, vertical para baixo ou que não fatiga deve levantar suspeita de causa central."
+    },
+    {
+      "question": "Confirmada VPPB do canal posterior direito, qual a conduta de primeira linha?",
+      "options": [
+        "Manobra de reposicionamento de Epley no próprio consultório",
+        "Betaistina por três meses e reavaliação ao fim do tratamento",
+        "Meclizina contínua até o desaparecimento completo das crises",
+        "Ressonância de crânio antes de qualquer tratamento específico"
+      ],
+      "correctIndex": 0,
+      "explanation": "A VPPB do canal posterior se trata com a manobra de reposicionamento canalicular de Epley, feita no consultório da APS, com alta taxa de resolução e possibilidade de repetição. A diretriz da AAO-HNS (2017) recomenda não usar supressores vestibulares de rotina: nenhum remédio devolve os otólitos ao utrículo, e o uso prolongado atrasa a compensação."
+    },
+    {
+      "question": "Homem de 40 anos, uma semana após um resfriado, tem vertigem intensa e contínua há 36 horas, com vômitos; anda com dificuldade, mas fica em pé sem apoio. Não há perda auditiva. Há nistagmo horizontal unidirecional e o teste do impulso cefálico mostra sacada corretiva para um dos lados. Qual o diagnóstico mais provável?",
+      "options": [
+        "Neurite vestibular",
+        "Labirintite viral",
+        "Doença de Ménière",
+        "AVC de cerebelo"
+      ],
+      "correctIndex": 0,
+      "explanation": "Síndrome vestibular aguda (vertigem contínua por horas a dias, com náusea e nistagmo), sem hipoacusia, após quadro viral, é neurite vestibular. O padrão periférico no HINTS — impulso cefálico alterado com sacada corretiva, nistagmo horizontal unidirecional e teste de skew sem desvio — tranquiliza; com perda auditiva, seria labirintite."
+    },
+    {
+      "question": "Na neurite vestibular, qual conduta favorece a recuperação?",
+      "options": [
+        "Sintomáticos por poucos dias e reabilitação vestibular precoce",
+        "Repouso absoluto no leito até o fim completo da vertigem",
+        "Cinarizina contínua por seis meses para prevenir recidivas",
+        "Antiviral sistêmico por dez dias, iniciado após a primeira semana"
+      ],
+      "correctIndex": 0,
+      "explanation": "Antieméticos e supressores vestibulares servem só nos primeiros dias, para náusea e vertigem intensas. A recuperação depende da compensação central, acelerada pela mobilização e pela reabilitação vestibular precoce; repouso prolongado e sedativos a atrasam. Corticoide nos primeiros dias pode ser considerado, com benefício clínico de longo prazo incerto."
+    },
+    {
+      "question": "Homem de 68 anos, hipertenso e diabético, tem vertigem contínua há 10 horas, com nistagmo. No HINTS, o impulso cefálico é normal, o nistagmo muda de direção conforme o olhar e há desvio vertical no teste de cobertura alternada. A interpretação e a conduta são:",
+      "options": [
+        "Padrão central: suspeitar de AVC de fossa posterior e enviar ao PS",
+        "Padrão periférico: neurite vestibular, tratar com sintomáticos",
+        "Impulso normal afasta lesão grave: indicar reabilitação vestibular",
+        "Exame inconclusivo: repetir o HINTS no ambulatório em uma semana"
+      ],
+      "correctIndex": 0,
+      "explanation": "Na síndrome vestibular aguda, qualquer achado central no HINTS — impulso cefálico normal, nistagmo que muda de direção ou vertical, desvio vertical no skew — sugere AVC de tronco ou cerebelo e exige emergência. O impulso normal é o achado paradoxal: labirinto e nervo íntegros significam que a vertigem vem do sistema nervoso central."
+    },
+    {
+      "question": "O exame HINTS ajuda a separar causa periférica de central em qual situação?",
+      "options": [
+        "Vertigem aguda contínua, com nistagmo, ainda presente no exame",
+        "Vertigem posicional de segundos, com o paciente sem sintomas",
+        "Pré-síncope recorrente ao levantar, sem nistagmo ao exame",
+        "Desequilíbrio crônico do idoso, com piora no escuro e sem giro"
+      ],
+      "correctIndex": 0,
+      "explanation": "O HINTS foi validado para a síndrome vestibular aguda: vertigem contínua há horas a dias, com nistagmo presente no momento do exame. Aplicado na VPPB, na pré-síncope ou no paciente assintomático, o impulso cefálico normal pode ser lido erroneamente como sinal central."
+    },
+    {
+      "question": "Qual destes achados, num paciente com tontura, indica encaminhamento imediato à emergência pela suspeita de causa central?",
+      "options": [
+        "Incapacidade de ficar em pé ou andar sem apoio, com disartria",
+        "Vertigem de segundos ao deitar, com nistagmo que fatiga",
+        "Zumbido e plenitude aural que acompanham as crises",
+        "Náuseas e vômitos intensos durante a crise de vertigem"
+      ],
+      "correctIndex": 0,
+      "explanation": "Ataxia de tronco grave (não fica em pé sem apoio), déficit neurológico focal (diplopia, disartria, disfagia, dismetria, fraqueza), cefaleia súbita ou cervicalgia intensa (dissecção vertebral) e nistagmo vertical ou que muda de direção apontam para AVC de fossa posterior. Náusea intensa é comum nas causas periféricas e não diferencia."
+    },
+    {
+      "question": "Mulher de 45 anos tem crises de vertigem espontânea que duram de 1 a 3 horas, com zumbido, plenitude e piora da audição no ouvido esquerdo, que melhora entre as crises. Qual a hipótese e a conduta inicial?",
+      "options": [
+        "Ménière: restrição de sal, audiometria e encaminhar ao otorrino",
+        "VPPB: manobra de Epley no consultório e reavaliar em 1 mês",
+        "Neurite: corticoide e reabilitação vestibular precoce",
+        "Enxaqueca vestibular: triptano na crise e profilaxia"
+      ],
+      "correctIndex": 0,
+      "explanation": "Doença de Ménière: crises espontâneas de vertigem de 20 minutos a 12 horas, com hipoacusia neurossensorial flutuante (em graves, no início), zumbido e plenitude no mesmo ouvido (Bárány Society, 2015). A base é hidropisia endolinfática; o manejo inicial inclui restrição de sódio, audiometria para documentar a perda e avaliação otorrinolaringológica."
+    },
+    {
+      "question": "O que separa, à beira do leito, a labirintite da neurite vestibular?",
+      "options": [
+        "A presença de perda auditiva e zumbido na labirintite",
+        "A presença de nistagmo horizontal apenas na neurite",
+        "A duração de segundos da vertigem na labirintite",
+        "O início sempre bilateral dos sintomas na neurite"
+      ],
+      "correctIndex": 0,
+      "explanation": "As duas causam vertigem aguda contínua com náusea e nistagmo periférico. A neurite poupa a cóclea; a labirintite compromete labirinto e cóclea e traz hipoacusia e zumbido. Vertigem aguda com perda auditiva súbita pede cautela: pode também ser AVC no território da artéria cerebelar anteroinferior."
+    },
+    {
+      "question": "Idosa de 78 anos usa flunarizina há dois anos \"para labirintite\", sem diagnóstico definido. Apresenta tremor, lentidão dos movimentos e humor deprimido. Qual a melhor conduta?",
+      "options": [
+        "Suspender a flunarizina e reavaliar a causa da tontura",
+        "Associar levodopa para tratar o parkinsonismo idiopático",
+        "Trocar por cinarizina, que não tem efeito extrapiramidal",
+        "Manter e associar antidepressivo para o humor deprimido"
+      ],
+      "correctIndex": 0,
+      "explanation": "Flunarizina e cinarizina, bloqueadores de canal de cálcio com ação antidopaminérgica, causam parkinsonismo e depressão, sobretudo em idosos — tratar o efeito adverso com outro remédio é cascata iatrogênica. Supressor vestibular é sintomático e de curto prazo; o uso crônico atrasa a compensação central e aumenta o risco de quedas."
+    },
+    {
+      "question": "Homem de 50 anos nota, ao acordar, perda auditiva importante no ouvido direito, com zumbido e leve tontura, sem outros sinais neurológicos; a otoscopia é normal. A conduta adequada é:",
+      "options": [
+        "Tratar como urgência: encaminhar no mesmo dia para avaliação e corticoide",
+        "Lavagem otológica e reavaliação em 30 dias, se não houver melhora",
+        "Prescrever betaistina e marcar audiometria eletiva pela regulação",
+        "Orientar que a audição volta sozinha e reavaliar só se piorar"
+      ],
+      "correctIndex": 0,
+      "explanation": "Perda auditiva neurossensorial súbita é urgência otorrinolaringológica: o corticoide tem mais chance de benefício quando iniciado cedo, idealmente nos primeiros dias. A otoscopia normal afasta cerume e otite; se a vertigem vier com sinais neurológicos, pensar em AVC da artéria cerebelar anteroinferior."
+    },
+    {
+      "question": "Mulher de 32 anos com enxaqueca tem crises recorrentes de vertigem espontânea, de minutos a horas, às vezes com fotofobia e cefaleia, e audição normal entre e durante as crises. Qual a hipótese mais provável?",
+      "options": [
+        "Enxaqueca vestibular",
+        "Doença de Ménière",
+        "Neurite vestibular",
+        "AIT vertebrobasilar"
+      ],
+      "correctIndex": 0,
+      "explanation": "Enxaqueca vestibular é uma das causas mais comuns de vertigem episódica espontânea: crises de 5 minutos a 72 horas em quem tem enxaqueca, com características migranosas (cefaleia, fotofobia, aura) em parte delas. Sem hipoacusia flutuante, Ménière fica menos provável; o tratamento segue o da enxaqueca, com controle de gatilhos e profilaxia quando frequente."
+    },
+    {
+      "question": "Mulher de 42 anos teve neurite vestibular há 6 meses. Desde então sente tontura não rotatória quase diária, que piora em pé, ao se movimentar e em supermercados cheios de estímulos visuais. Exames neurológico e vestibular normais. Qual o diagnóstico e o tratamento?",
+      "options": [
+        "Tontura postural-perceptual persistente: reabilitação, ISRS e TCC",
+        "Neurite vestibular recidivante: corticoide em altas doses por 1 mês",
+        "VPPB de canal lateral: manobra de reposicionamento no consultório",
+        "Insuficiência vertebrobasilar: antiagregante e doppler de vertebrais"
+      ],
+      "correctIndex": 0,
+      "explanation": "A tontura postural-perceptual persistente (Bárány Society, 2017) é tontura ou instabilidade não rotatória na maioria dos dias por 3 meses ou mais, piorada pela postura ereta, pelo movimento e por estímulos visuais complexos, em geral após um evento vestibular. É causa frequente de tontura crônica e se trata com reabilitação vestibular, ISRS e terapia cognitivo-comportamental."
+    },
+    {
+      "question": "Homem de 70 anos, diabético há 20 anos, queixa-se de \"tontura\" ao caminhar, pior à noite e em terreno irregular, sem giro. Tem Romberg positivo e sensibilidade vibratória abolida nos pés. O tipo de tontura e a causa provável são:",
+      "options": [
+        "Desequilíbrio por neuropatia periférica com déficit proprioceptivo",
+        "Vertigem central por AVC de cerebelo com ataxia de membros",
+        "Pré-síncope por hipotensão ortostática da disautonomia diabética",
+        "Tontura inespecífica por ansiedade com hiperventilação crônica"
+      ],
+      "correctIndex": 0,
+      "explanation": "Desequilíbrio é instabilidade na marcha sem sensação de giro, típico do idoso e multifatorial. Romberg positivo (piora ao fechar os olhos) e perda da sensibilidade vibratória indicam déficit proprioceptivo: o paciente depende da visão, por isso piora no escuro. A conduta inclui fisioterapia, ajuste do ambiente e prevenção de quedas."
+    },
+    {
+      "question": "Qual característica de um episódio de pré-síncope indica investigação cardiológica urgente?",
+      "options": [
+        "Ocorrer durante esforço físico ou vir precedido de palpitações",
+        "Ocorrer ao levantar rápido após longo período deitado",
+        "Vir precedido de calor, náusea e sudorese em ambiente quente",
+        "Acontecer ao ver sangue ou durante a coleta de exames"
+      ],
+      "correctIndex": 0,
+      "explanation": "Pré-síncope ou síncope ao esforço, precedida de palpitação, em decúbito, em quem tem cardiopatia estrutural ou com história familiar de morte súbita sugere arritmia ou obstrução ao fluxo (como estenose aórtica) e pede ECG e avaliação urgente. Pródromos de calor, náusea e sudorese, ou gatilho emocional, apontam para a causa reflexa (vasovagal), benigna."
+    }
+  ]
+}

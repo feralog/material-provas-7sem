@@ -1,0 +1,206 @@
+{
+  "titulo": "Medicina do Sono",
+  "eyebrow": "Psiquiatria · Referência",
+  "subtitulo": "Estágios do sono, insônia, sonolência, parassonias e o relógio biológico",
+  "intro": "Arquitetura do sono, insônia e TCC-I, apneia obstrutiva, narcolepsia, pernas inquietas, parassonias NREM e REM e transtornos do ritmo circadiano. Baseado no DSM-5-TR e na ICSD-3 — não há slide da aula deste tema.",
+  "questoes": [
+    {
+      "question": "No registro polissonográfico de um adulto saudável, fusos do sono e complexos K são característicos de qual estágio?",
+      "options": [
+        "Estágio N2 do sono NREM",
+        "Estágio N1 do sono NREM",
+        "Estágio N3 do sono NREM",
+        "Sono REM com atonia"
+      ],
+      "correctIndex": 0,
+      "explanation": "O N2 tem fusos do sono e complexos K e ocupa a maior fração da noite do adulto, cerca de metade. O N1 é a transição, com ondas teta; o N3 é o sono profundo, de ondas delta lentas; o REM tem EEG dessincronizado, movimentos oculares rápidos e atonia muscular."
+    },
+    {
+      "question": "Qual característica pertence ao sono REM?",
+      "options": [
+        "Atonia muscular e predomínio no último terço da noite",
+        "Ondas delta e predomínio no primeiro terço da noite",
+        "Sonambulismo e terror noturno com amnésia do episódio",
+        "Maior secreção de hormônio do crescimento da noite"
+      ],
+      "correctIndex": 0,
+      "explanation": "O REM tem EEG ativo, movimentos oculares rápidos, sonhos vívidos e atonia dos músculos esqueléticos (poupando diafragma e musculatura ocular), com períodos mais longos no fim da noite. O N3 predomina no primeiro terço, concentra a secreção de GH e é de onde surgem as parassonias NREM."
+    },
+    {
+      "question": "Qual alteração do sono é esperada no envelhecimento normal?",
+      "options": [
+        "Menos sono N3, mais despertares e avanço de fase",
+        "Mais sono N3, menos despertares e atraso de fase",
+        "Sono REM ausente e latência do sono muito curta",
+        "Aumento do tempo total de sono e da eficiência"
+      ],
+      "correctIndex": 0,
+      "explanation": "No idoso há redução do sono de ondas lentas (N3), sono mais fragmentado, mais despertares, menor eficiência e tendência ao avanço de fase, dormindo e acordando cedo. Queixa de insônia no idoso pede busca de causas (dor, noctúria, apneia, fármacos, depressão) antes de qualquer hipnótico."
+    },
+    {
+      "question": "Pelo modelo de dois processos da regulação do sono, por que a cafeína reduz a sonolência?",
+      "options": [
+        "Antagoniza a adenosina, que se acumula durante a vigília",
+        "Bloqueia a melatonina, que é secretada durante o dia",
+        "Estimula a orexina, que é produzida na glândula pineal",
+        "Inibe o GABA, que se acumula nas horas de sono profundo"
+      ],
+      "correctIndex": 0,
+      "explanation": "O processo homeostático (S) é a pressão de sono que sobe com a vigília pelo acúmulo de adenosina, e a cafeína bloqueia seus receptores. O processo circadiano (C) é comandado pelo núcleo supraquiasmático, com melatonina secretada pela pineal no escuro; a orexina (hipocretina) vem do hipotálamo lateral e estabiliza a vigília."
+    },
+    {
+      "question": "Mulher de 45 anos tem dificuldade para manter o sono quatro noites por semana há cinco meses, com cansaço e irritabilidade durante o dia. Tem tempo e ambiente adequados para dormir e não há outra doença. Qual o diagnóstico e o tratamento de primeira linha?",
+      "options": [
+        "Transtorno de insônia; terapia cognitivo-comportamental para insônia",
+        "Insônia aguda; zolpidem diário por tempo indeterminado",
+        "Transtorno de insônia; benzodiazepínico de meia-vida longa",
+        "Má higiene do sono; orientações de higiene como única medida"
+      ],
+      "correctIndex": 0,
+      "explanation": "Transtorno de insônia (DSM-5-TR): dificuldade de iniciar ou manter o sono, ou despertar precoce, 3 ou mais noites por semana por pelo menos 3 meses, apesar de oportunidade adequada, com prejuízo diurno. A TCC-I é a primeira linha: controle de estímulos, restrição do sono, reestruturação cognitiva, relaxamento e higiene do sono, que sozinha é insuficiente."
+    },
+    {
+      "question": "Qual orientação faz parte do controle de estímulos na terapia cognitivo-comportamental para insônia?",
+      "options": [
+        "Sair da cama se não adormecer e voltar só com sono",
+        "Ficar na cama acordado até o sono finalmente vir",
+        "Compensar a noite ruim com cochilos longos à tarde",
+        "Deitar mais cedo nos dias em que estiver cansado"
+      ],
+      "correctIndex": 0,
+      "explanation": "O controle de estímulos reassocia a cama ao sono: usá-la só para dormir, sair dela se não adormecer em cerca de 15 a 20 minutos, voltar só com sono, manter horário fixo de despertar e evitar cochilos. A restrição do sono limita o tempo na cama ao tempo de fato dormido, para aumentar a pressão de sono."
+    },
+    {
+      "question": "Idoso de 80 anos com insônia crônica pede 'um remédio para dormir'. Qual a conduta mais adequada?",
+      "options": [
+        "TCC-I e revisão de causas, evitando BZD e anti-histamínicos",
+        "Clonazepam em dose baixa, por ser seguro na terceira idade",
+        "Prometazina noturna, por não causar dependência química",
+        "Zolpidem contínuo, pois não causa quedas nem amnésia"
+      ],
+      "correctIndex": 0,
+      "explanation": "No idoso, benzodiazepínicos e drogas Z aumentam quedas, fraturas, confusão e comportamentos complexos durante o sono, e anti-histamínicos de primeira geração (prometazina, difenidramina) são anticolinérgicos; todos estão nos critérios de Beers. Primeiro se tratam as causas (dor, noctúria, apneia, depressão, fármacos) e se oferece TCC-I."
+    },
+    {
+      "question": "Homem de 52 anos, obeso, tem ronco alto, pausas respiratórias presenciadas pela esposa, sonolência diurna importante e hipertensão resistente. Qual exame confirma o diagnóstico mais provável?",
+      "options": [
+        "Polissonografia, que mede o índice de apneia-hipopneia",
+        "Teste de múltiplas latências do sono como exame inicial",
+        "Eletroencefalograma de rotina em vigília e em sono",
+        "Actigrafia de pulso por duas semanas consecutivas"
+      ],
+      "correctIndex": 0,
+      "explanation": "Ronco, apneias presenciadas, sonolência, obesidade e hipertensão resistente sugerem apneia obstrutiva do sono, confirmada pela polissonografia (ou estudo domiciliar em casos selecionados), que mede o IAH: 5 a 15 leve, 15 a 30 moderada, acima de 30 grave. O teste de múltiplas latências serve à narcolepsia; a actigrafia, aos transtornos do ritmo circadiano."
+    },
+    {
+      "question": "Paciente com apneia obstrutiva do sono grave, sonolento durante o dia, pergunta sobre o tratamento. Qual a conduta mais adequada?",
+      "options": [
+        "CPAP, com perda de peso e sem álcool e sedativos à noite",
+        "Benzodiazepínico noturno para melhorar a qualidade do sono",
+        "Oxigênio noturno isolado por cateter nasal de baixo fluxo",
+        "Modafinil isolado para tratar a sonolência do dia a dia"
+      ],
+      "correctIndex": 0,
+      "explanation": "O CPAP é o tratamento de escolha da apneia obstrutiva grave e sintomática, com medidas gerais: perda de peso, evitar álcool e sedativos, terapia posicional. O aparelho intraoral é opção nas formas leve e moderada ou na intolerância ao CPAP; o benzodiazepínico relaxa a via aérea e deprime o estímulo respiratório, piorando a apneia."
+    },
+    {
+      "question": "Jovem de 19 anos tem sonolência diurna incontrolável há um ano, com cochilos curtos e revigorantes. Quando ri muito, perde a força nos joelhos e quase cai, sem perder a consciência. Qual o diagnóstico?",
+      "options": [
+        "Narcolepsia tipo 1, com cataplexia",
+        "Crise epiléptica atônica generalizada",
+        "Síncope vasovagal desencadeada por riso",
+        "Hipersonia idiopática com paralisia"
+      ],
+      "correctIndex": 0,
+      "explanation": "Narcolepsia é sonolência diurna excessiva, com necessidade irresistível de dormir 3 ou mais vezes por semana por 3 meses, mais cataplexia, hipocretina baixa no líquor ou achados polissonográficos típicos. Cataplexia é a perda súbita e bilateral do tônus desencadeada por emoção (riso), com consciência preservada; alucinações hipnagógicas e paralisia do sono completam o quadro."
+    },
+    {
+      "question": "Qual achado confirma a narcolepsia tipo 1?",
+      "options": [
+        "Hipocretina-1 baixa no líquor cefalorraquidiano",
+        "Ferritina sérica baixa com saturação reduzida",
+        "Índice de apneia-hipopneia acima de trinta por hora",
+        "Ondas delta aumentadas no eletroencefalograma"
+      ],
+      "correctIndex": 0,
+      "explanation": "A narcolepsia tipo 1 decorre da perda de neurônios de hipocretina (orexina) do hipotálamo lateral e se define por cataplexia e/ou hipocretina-1 baixa no líquor. Sem esses dados, o teste de múltiplas latências mostra latência média de 8 minutos ou menos com 2 ou mais episódios de REM de início precoce."
+    },
+    {
+      "question": "Mulher de 60 anos relata necessidade irresistível de mexer as pernas ao deitar, com sensação desconfortável que alivia ao caminhar e piora à noite. Qual exame laboratorial é essencial?",
+      "options": [
+        "Ferritina e saturação de transferrina",
+        "Creatinofosfoquinase e aldolase séricas",
+        "Eletroneuromiografia dos quatro membros",
+        "Dosagem de vitamina D e paratormônio"
+      ],
+      "correctIndex": 0,
+      "explanation": "Na síndrome das pernas inquietas a urgência de mover as pernas começa ou piora no repouso, alivia com o movimento e piora ao entardecer e à noite. A deficiência de ferro é causa tratável: dosam-se ferritina e saturação de transferrina, e a diretriz da AASM de 2024 indica repor ferro com ferritina de até 75 ng/mL. Outras causas: doença renal crônica, gestação, neuropatia e fármacos."
+    },
+    {
+      "question": "Paciente com síndrome das pernas inquietas usa pramipexol há três anos. Os sintomas passaram a começar cada vez mais cedo, ficaram mais intensos e atingiram os braços. Qual a interpretação e a conduta?",
+      "options": [
+        "Aumentação pelo agonista dopaminérgico; trocar por gabapentinoide",
+        "Progressão natural da doença; dobrar a dose do pramipexol",
+        "Neuropatia periférica nova; associar vitamina B12 injetável",
+        "Tolerância ao fármaco; associar levodopa nas noites piores"
+      ],
+      "correctIndex": 0,
+      "explanation": "Aumentação é a piora induzida pelo agonista dopaminérgico: sintomas mais cedo, mais intensos e espalhados para os braços. A diretriz da AASM de 2024 coloca os ligantes alfa-2-delta (gabapentina, pregabalina) como primeira linha e desaconselha o uso padrão de agonistas dopaminérgicos; a levodopa é a que mais causa aumentação."
+    },
+    {
+      "question": "Menino de 6 anos, uma a duas horas após adormecer, senta na cama gritando apavorado, suado e taquicárdico, não responde aos pais, volta a dormir e não se lembra do episódio pela manhã. Qual o diagnóstico?",
+      "options": [
+        "Terror noturno, parassonia do sono NREM",
+        "Pesadelo, parassonia do sono REM",
+        "Crise epiléptica focal do lobo frontal",
+        "Transtorno comportamental do sono REM"
+      ],
+      "correctIndex": 0,
+      "explanation": "Terror noturno e sonambulismo são despertares incompletos do N3: primeiro terço da noite, difícil despertar, confusão e amnésia do episódio, comuns na infância e em geral autolimitados. O pesadelo é do REM, no fim da noite, e a criança acorda orientada e lembra o sonho. Conduta: tranquilizar, proteger o ambiente e evitar privação de sono."
+    },
+    {
+      "question": "Homem de 66 anos é trazido pela esposa, que conta que ele grita, soca e chuta durante sonhos de briga na segunda metade da noite; ao acordar, lembra do sonho. A polissonografia mostra sono REM sem atonia. Qual o significado desse achado?",
+      "options": [
+        "Marcador precoce de sinucleinopatia, como Parkinson",
+        "Variante benigna do sonambulismo do adulto idoso",
+        "Sinal precoce de doença de Alzheimer de início tardio",
+        "Manifestação típica de apneia obstrutiva grave"
+      ],
+      "correctIndex": 0,
+      "explanation": "O transtorno comportamental do sono REM é a perda da atonia do REM com encenação dos sonhos, típico de homens acima dos 50 anos. É marcador de sinucleinopatia: a maioria evolui, em 10 a 15 anos, para Parkinson, demência com corpos de Lewy ou atrofia de múltiplos sistemas. Trata-se com segurança do ambiente e melatonina ou clonazepam; antidepressivos podem induzi-lo."
+    },
+    {
+      "question": "Universitário de 20 anos não consegue adormecer antes das 3 h e tem enorme dificuldade de acordar às 7 h para ir à faculdade. Nas férias dorme das 3 h às 11 h, com sono reparador. Qual o diagnóstico e a conduta?",
+      "options": [
+        "Fase atrasada do sono; luz pela manhã e melatonina à noite",
+        "Insônia crônica; zolpidem ao deitar por tempo prolongado",
+        "Fase avançada do sono; luz forte no início da noite",
+        "Narcolepsia tipo 2; modafinil pela manhã nos dias úteis da semana"
+      ],
+      "correctIndex": 0,
+      "explanation": "Na fase atrasada do sono, comum em adolescentes e jovens de cronotipo vespertino, o sono é normal em duração e qualidade, apenas deslocado; o problema surge quando o horário social exige acordar cedo. Trata-se com luz forte ao acordar, melatonina em dose baixa algumas horas antes do horário desejado e horário fixo de despertar."
+    },
+    {
+      "question": "Idosa de 75 anos sente sono às 19 h, adormece logo e acorda às 3 h sem conseguir voltar a dormir. Dorme cerca de oito horas e não tem sintomas depressivos. Qual o diagnóstico e a conduta?",
+      "options": [
+        "Fase avançada do sono; luz forte no início da noite",
+        "Insônia terminal por depressão; iniciar sertralina",
+        "Fase atrasada do sono; luz forte logo pela manhã",
+        "Insônia crônica; benzodiazepínico ao acordar cedo"
+      ],
+      "correctIndex": 0,
+      "explanation": "Na fase avançada o sono e o despertar se antecipam, com duração total preservada; é mais comum no idoso. A luz forte no fim da tarde e no início da noite atrasa o relógio biológico, adiando aos poucos a hora de deitar. Despertar precoce sem outros sintomas não é depressão."
+    },
+    {
+      "question": "Enfermeira em plantões noturnos fixos tem insônia ao tentar dormir de dia e sonolência durante o plantão. Qual medida é adequada?",
+      "options": [
+        "Luz forte no plantão e quarto escuro para dormir de dia",
+        "Exposição ao sol na volta para casa pela manhã",
+        "Benzodiazepínico diário antes de cada plantão",
+        "Cafeína em doses altas ao fim do plantão noturno"
+      ],
+      "correctIndex": 0,
+      "explanation": "No transtorno do trabalho em turnos usa-se luz forte no início do plantão, óculos escuros na volta para casa, quarto escuro e silencioso, horário regular de sono, cochilo programado antes do turno e melatonina antes do sono diurno. Cafeína só no começo do plantão, para não roubar o sono depois."
+    }
+  ]
+}

@@ -1,0 +1,195 @@
+{
+  "titulo": "Migração, Refúgio e Apatridia",
+  "eyebrow": "Medicina de Família e Comunidade · Referência",
+  "subtitulo": "Quem é quem, que direitos garantem e como cuidar na APS",
+  "intro": "Definições (migrante, refugiado, solicitante, apátrida, deslocado interno), Lei do Refúgio e Lei de Migração, acesso universal ao SUS, barreiras, saúde mental, vacinação e doenças de importância. Baseado nas Leis 9.474/1997 e 13.445/2017 e em publicações do Ministério da Saúde e do ACNUR — não há slide da aula deste tema.",
+  "questoes": [
+    {
+      "question": "Uma mulher deixou seu país por ameaças de morte ligadas à sua religião, entrou no Brasil e registrou na Polícia Federal o pedido de reconhecimento da condição de refugiada; o CONARE ainda não decidiu. Ela é, tecnicamente:",
+      "options": [
+        "Solicitante de refúgio",
+        "Refugiada reconhecida",
+        "Imigrante econômica",
+        "Visitante temporária"
+      ],
+      "correctIndex": 0,
+      "explanation": "Solicitante de refúgio é quem pediu o reconhecimento e aguarda a decisão do CONARE. Nesse período recebe documento provisório que vale como identificação e permite tirar CPF e carteira de trabalho, e já está protegida contra a devolução ao país onde corre risco. O acesso ao SUS vale desde o primeiro dia."
+    },
+    {
+      "question": "Famílias que deixaram suas casas por conflito armado ou desastre, mas continuam dentro das fronteiras do próprio país, são chamadas de:",
+      "options": [
+        "Deslocados internos",
+        "Refugiados ambientais",
+        "Apátridas de fato",
+        "Solicitantes de asilo"
+      ],
+      "correctIndex": 0,
+      "explanation": "Deslocado interno é quem foi forçado a deixar o lugar onde vivia mas não cruzou fronteira internacional; por isso não é refugiado pela Convenção de 1951, e a proteção cabe ao próprio Estado. \"Refugiado ambiental\" é expressão de uso corrente, mas não é categoria jurídica da Convenção."
+    },
+    {
+      "question": "Pela Lei de Migração (Lei nº 13.445/2017), apátrida é a pessoa que:",
+      "options": [
+        "não é considerada nacional por nenhum Estado, segundo a lei de cada um",
+        "perdeu o documento de identidade e não consegue provar a nacionalidade",
+        "tem duas nacionalidades e precisa escolher uma ao entrar no Brasil",
+        "teve o pedido de refúgio negado e permanece no território sem visto"
+      ],
+      "correctIndex": 0,
+      "explanation": "Apátrida é quem não é considerado nacional por nenhum Estado, nos termos da Convenção de 1954. A Lei de Migração criou procedimento para reconhecer a apatridia e facilitar a naturalização. Como o Brasil adota o critério do solo, toda criança nascida aqui é brasileira, o que impede que ela nasça apátrida."
+    },
+    {
+      "question": "A Lei nº 9.474/1997 reconhece como refugiado quem foge de perseguição por raça, religião, nacionalidade, grupo social ou opinião política e acrescenta, de forma ampliada, quem deixa seu país em razão de:",
+      "options": [
+        "grave e generalizada violação de direitos humanos",
+        "busca de melhores condições de trabalho e renda",
+        "falta de vagas em universidades do país de origem",
+        "necessidade de tratamento médico não disponível"
+      ],
+      "correctIndex": 0,
+      "explanation": "Além das cinco causas de perseguição da Convenção de 1951, a lei brasileira inclui a grave e generalizada violação de direitos humanos, inspirada na Declaração de Cartagena (1984). Foi com base nela que o CONARE passou a reconhecer venezuelanos de forma facilitada. Quem migra por trabalho ou renda é migrante, não refugiado, e se regulariza por outras vias."
+    },
+    {
+      "question": "O princípio da não devolução (non-refoulement), central no direito dos refugiados, determina que:",
+      "options": [
+        "ninguém seja enviado a país onde sua vida ou liberdade estejam ameaçadas",
+        "o refugiado não possa voltar ao país de origem nem para visitar a família",
+        "o solicitante só seja aceito se vier direto do país onde foi perseguido",
+        "o país de acolhida não possa cobrar documentos de quem pede proteção"
+      ],
+      "correctIndex": 0,
+      "explanation": "A não devolução proíbe enviar a pessoa a território onde sua vida, liberdade ou integridade estejam ameaçadas, e vale desde o pedido de refúgio, antes de qualquer decisão. É a pedra angular da Convenção de 1951 e está na Lei nº 9.474/1997."
+    },
+    {
+      "question": "Um homem cruzou a fronteira por terra, sem passar pelo controle migratório, fugindo de perseguição política. Sobre o pedido de refúgio, é correto afirmar que:",
+      "options": [
+        "a entrada irregular não impede que ele solicite refúgio no Brasil",
+        "precisa sair do país e reentrar pelo posto oficial para fazer o pedido",
+        "o pedido só é aceito se feito em até 48 horas após cruzar a fronteira",
+        "a entrada irregular é crime e leva à deportação antes de qualquer análise"
+      ],
+      "correctIndex": 0,
+      "explanation": "A Lei nº 9.474/1997 é explícita: o ingresso irregular não impede a solicitação de refúgio, e a Lei de Migração (2017) adota a não criminalização da migração como princípio. O pedido é feito à Polícia Federal e, a partir dele, a pessoa fica protegida pela não devolução."
+    },
+    {
+      "question": "A Lei de Migração (Lei nº 13.445/2017), que substituiu o Estatuto do Estrangeiro de 1980, mudou a lógica da política migratória ao:",
+      "options": [
+        "tratar a migração como questão de direitos humanos, não de segurança",
+        "restringir o acesso de imigrantes irregulares aos serviços públicos",
+        "condicionar a residência a contrato de trabalho prévio no Brasil",
+        "criar a prisão administrativa para quem estiver sem visto válido"
+      ],
+      "correctIndex": 0,
+      "explanation": "O Estatuto do Estrangeiro, da ditadura, via o imigrante pela ótica da segurança nacional. A lei de 2017 tem como princípios a universalidade dos direitos humanos, o repúdio à xenofobia, a não criminalização da migração, a acolhida humanitária e o acesso igualitário a serviços públicos, incluindo saúde, sem discriminação pela nacionalidade ou pela condição migratória."
+    },
+    {
+      "question": "Um imigrante sem documento, em situação migratória irregular, procura a UBS com tosse há três semanas. A equipe deve:",
+      "options": [
+        "atendê-lo e cadastrá-lo, sem exigir documento ou regularização",
+        "encaminhá-lo à Polícia Federal antes de qualquer atendimento",
+        "atender só em caso de urgência até que ele regularize a situação",
+        "exigir passaporte para emitir o Cartão SUS e liberar a consulta"
+      ],
+      "correctIndex": 0,
+      "explanation": "A saúde é direito de todos (Constituição, art. 196) e a Lei de Migração garante acesso ao SUS sem discriminação pela condição migratória. A falta de documento não impede atendimento nem cadastro, e o Cartão Nacional de Saúde pode ser emitido. A equipe não faz fiscalização migratória — e aqui deve investigar tuberculose."
+    },
+    {
+      "question": "Família recém-chegada, que não fala português, vem à consulta com o filho de 10 anos, que fala um pouco da língua e se oferece para traduzir. A melhor conduta é:",
+      "options": [
+        "buscar intérprete adulto ou mediador cultural, evitando usar a criança",
+        "usar a criança como intérprete, pois ela já é o elo da família com o serviço",
+        "remarcar a consulta para quando a família já estiver falando português",
+        "conduzir a consulta só com gestos e entregar as orientações por escrito"
+      ],
+      "correctIndex": 0,
+      "explanation": "Crianças não devem servir de intérprete: invertem papéis familiares, ficam expostas a temas delicados (violência, sexualidade, prognóstico) e traduzem com erros. O ideal é intérprete profissional ou mediador cultural; na falta, outro adulto de confiança ou ferramenta de tradução, sempre conferindo a compreensão."
+    },
+    {
+      "question": "Refugiada de 30 anos, que testemunhou a morte de familiares na guerra, tem há quatro meses pesadelos, revivescências, evitação de lembranças e sobressalto constante. Qual a hipótese e a abordagem?",
+      "options": [
+        "TEPT: cuidado informado pelo trauma, vínculo e psicoterapia focada",
+        "Psicose breve: antipsicótico e encaminhamento para internação",
+        "Luto normal: orientar que melhora sozinho, sem acompanhamento",
+        "Simulação: investigar ganho secundário no processo de refúgio"
+      ],
+      "correctIndex": 0,
+      "explanation": "Revivescência, evitação, alterações negativas de humor e cognição e hiperexcitabilidade por mais de 1 mês após trauma configuram TEPT, mais frequente em refugiados, assim como depressão e ansiedade. A abordagem é informada pelo trauma: segurança, vínculo, não forçar o relato, psicoterapia focada no trauma e ISRS quando indicado, com apoio da rede (eMulti, CAPS)."
+    },
+    {
+      "question": "Criança de 4 anos recém-chegada de outro país não tem nenhum registro vacinal; os pais dizem que ela \"tomou todas as vacinas\". A conduta é:",
+      "options": [
+        "considerá-la não vacinada e atualizar o calendário conforme a idade",
+        "aceitar o relato dos pais e só aplicar as doses previstas para 5 anos",
+        "solicitar sorologias para todas as doenças antes de qualquer vacina",
+        "aguardar a regularização migratória para iniciar a vacinação"
+      ],
+      "correctIndex": 0,
+      "explanation": "Sem comprovante, a dose não é considerada válida: a criança é tratada como não vacinada e o esquema é iniciado ou completado conforme a idade e o calendário nacional. Vacinar a mais não traz risco relevante, e a vacinação não depende de documento nem de situação migratória."
+    },
+    {
+      "question": "O surto de sarampo de 2018, que começou em Roraima e no Amazonas com casos importados, num contexto de grande fluxo migratório, teve como consequência:",
+      "options": [
+        "a perda, em 2019, da certificação de país livre do sarampo",
+        "a proibição temporária da entrada de imigrantes não vacinados",
+        "a suspensão da vacina tríplice viral na rotina por falta de doses",
+        "a erradicação definitiva do vírus no país após vacinação em massa"
+      ],
+      "correctIndex": 0,
+      "explanation": "O vírus reintroduzido encontrou coberturas vacinais abaixo da meta e voltou a circular, e o Brasil perdeu em 2019 a certificação de eliminação do sarampo. A resposta de saúde pública é a cobertura vacinal da população inteira, migrantes e brasileiros, não o fechamento de fronteiras."
+    },
+    {
+      "question": "Gestante boliviana de 26 anos, que cresceu em zona rural do seu país e mora em São Paulo, inicia o pré-natal. Além dos exames de rotina, a história de origem justifica pedir:",
+      "options": [
+        "Sorologia para doença de Chagas",
+        "Sorologia para esquistossomose",
+        "Gota espessa para malária",
+        "Sorologia para leptospirose"
+      ],
+      "correctIndex": 0,
+      "explanation": "A Bolívia tem alta prevalência de doença de Chagas, e mulheres vindas de áreas endêmicas devem ser testadas: a transmissão vertical é a principal via de infecção nova onde não há vetor, e o recém-nascido infectado tratado cedo tem altas taxas de cura. Gota espessa só se houver febre e passagem recente por área de malária."
+    },
+    {
+      "question": "Homem de 25 anos chegou há 10 dias a Boa Vista vindo de área de garimpo no sul da Venezuela e procura a UBS com febre alta, calafrios e cefaleia há dois dias. Qual exame não pode deixar de ser feito no mesmo dia?",
+      "options": [
+        "Gota espessa para pesquisa de plasmódio",
+        "Sorologia IgM para dengue após 7 dias",
+        "Prova tuberculínica e raio X de tórax",
+        "Sorologia para hepatite A e leptospirose"
+      ],
+      "correctIndex": 0,
+      "explanation": "Febre em quem esteve recentemente em área de transmissão de malária exige gota espessa ou teste rápido no mesmo dia: a malária por falciparum pode se agravar em poucas horas. As áreas de garimpo do sul da Venezuela têm transmissão intensa; dengue e outras febres entram no diferencial, mas não adiam a pesquisa de plasmódio."
+    },
+    {
+      "question": "Imigrantes recém-chegados costumam ter saúde igual ou melhor que a da população local, vantagem que se perde com os anos de residência em condições precárias. Esse fenômeno é chamado de:",
+      "options": [
+        "Efeito do migrante saudável",
+        "Lei dos cuidados inversos",
+        "Transição epidemiológica",
+        "Viés do trabalhador sadio"
+      ],
+      "correctIndex": 0,
+      "explanation": "Quem consegue migrar costuma ser jovem e saudável; a piora vem depois, com moradia precária, trabalho informal e exaustivo, barreiras de acesso e discriminação. O dado desmonta o estereótipo do migrante como vetor de doença e desloca o foco para as condições de vida no país de acolhida."
+    },
+    {
+      "question": "Na visita domiciliar, a ACS encontra oito imigrantes que moram e trabalham na mesma oficina de costura, com jornadas de 14 horas, documentos retidos pelo dono e dívida com a viagem. Qual a conduta da equipe?",
+      "options": [
+        "Acolher, cuidar da saúde e acionar a rede de proteção contra trabalho escravo",
+        "Denunciar os trabalhadores à Polícia Federal por situação migratória irregular",
+        "Não intervir, pois é questão trabalhista e não de saúde, fora do papel da equipe",
+        "Orientar os trabalhadores a procurar sozinhos a Justiça do Trabalho no futuro"
+      ],
+      "correctIndex": 0,
+      "explanation": "Jornada exaustiva, retenção de documentos e servidão por dívida caracterizam trabalho análogo à escravidão, muitas vezes ligado ao tráfico de pessoas. A equipe cuida da saúde, mantém o vínculo, notifica a violência e aciona a rede (Ministério Público do Trabalho, fiscalização do trabalho, Disque 100, assistência social); a vítima é protegida, não tratada como infratora."
+    },
+    {
+      "question": "Uma família de outra cultura atribui a febre do filho a \"mau-olhado\" e já deu um chá tradicional. A abordagem culturalmente sensível consiste em:",
+      "options": [
+        "explorar o entendimento da família e negociar um plano compatível",
+        "explicar que a crença está errada e proibir o uso de qualquer chá",
+        "aceitar sem questionar e não prescrever tratamento convencional",
+        "encaminhar a família para atendimento em serviço de outra cultura"
+      ],
+      "correctIndex": 0,
+      "explanation": "A abordagem culturalmente sensível explora o modelo explicativo da família (o que acham que é, por que aconteceu, o que temem, o que já fizeram), respeita práticas que não fazem mal e negocia um plano comum, o que melhora a adesão. É o método clínico centrado na pessoa aplicado à diferença cultural, sem perder de vista sinais de gravidade."
+    }
+  ]
+}

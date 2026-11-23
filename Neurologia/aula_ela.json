@@ -1,0 +1,162 @@
+{
+  "titulo": "Esclerose Lateral Amiotrófica",
+  "eyebrow": "Neurologia · Referência",
+  "subtitulo": "Neurônio motor superior e inferior juntos, sem sensibilidade alterada",
+  "intro": "Sinais de neurônio motor superior e inferior, formas de início, ENMG, critérios de El Escorial e Gold Coast, diferencial, riluzol, VNI, gastrostomia e genética. Material de referência baseado nos critérios de Gold Coast (2020) — não há slide da aula deste tema.",
+  "questoes": [
+    {
+      "question": "Homem de 58 anos tem fraqueza progressiva na mão direita há 8 meses. Ao exame: atrofia da musculatura intrínseca da mão, fasciculações no braço, reflexos vivos nos quatro membros e Babinski bilateral. Sensibilidade normal. Qual é a principal hipótese?",
+      "options": [
+        "Esclerose lateral amiotrófica",
+        "Polineuropatia desmielinizante",
+        "Síndrome do túnel do carpo bilateral",
+        "Miastenia gravis generalizada"
+      ],
+      "correctIndex": 0,
+      "explanation": "Atrofia e fasciculações (neurônio motor inferior) com hiper-reflexia e Babinski (neurônio motor superior), sem alteração sensitiva e com progressão, é o quadro da ELA. Músculo atrofiado com reflexo vivo é o paradoxo que só a doença do neurônio motor explica."
+    },
+    {
+      "question": "Na ELA, quais funções costumam estar preservadas até fases avançadas?",
+      "options": [
+        "Sensibilidade, esfíncteres e movimentos oculares",
+        "Deglutição, fala e força da musculatura da língua",
+        "Força distal das mãos e reflexos tendíneos profundos",
+        "Função respiratória, deglutição e tônus muscular"
+      ],
+      "correctIndex": 0,
+      "explanation": "A ELA poupa sensibilidade, controle esfincteriano e motricidade ocular. Alteração sensitiva ou esfincteriana proeminente deve levar à busca de outro diagnóstico, como mielopatia cervical."
+    },
+    {
+      "question": "Qual é a forma de início mais frequente da ELA?",
+      "options": [
+        "Fraqueza apendicular assimétrica e distal",
+        "Disartria e disfagia de instalação bulbar",
+        "Insuficiência respiratória como primeiro sinal",
+        "Demência frontotemporal antes da fraqueza"
+      ],
+      "correctIndex": 0,
+      "explanation": "Cerca de dois terços começam com fraqueza apendicular assimétrica e distal, como dificuldade para abotoar a roupa ou pé caído. O início bulbar corresponde a cerca de um quarto a um terço dos casos."
+    },
+    {
+      "question": "Mulher de 68 anos tem fala arrastada e engasgos há 6 meses, sem ptose nem diplopia e sem piora ao longo do dia. Ao exame: língua atrófica com fasciculações e reflexo mandibular exaltado. Qual é a hipótese mais provável?",
+      "options": [
+        "ELA de início bulbar",
+        "Miastenia gravis bulbar",
+        "AVC lacunar de tronco",
+        "Guillain-Barré faríngeo"
+      ],
+      "correctIndex": 0,
+      "explanation": "Língua com atrofia e fasciculações (neurônio inferior) e reflexo mandibular exaltado (neurônio superior), progressivos, indicam ELA bulbar, mais comum em mulheres idosas e de pior prognóstico. A miastenia tem fatigabilidade, ptose e diplopia, sem atrofia nem fasciculação."
+    },
+    {
+      "question": "Qual padrão de eletroneuromiografia apoia o diagnóstico de ELA?",
+      "options": [
+        "Desnervação e reinervação em várias regiões, com sensitiva normal",
+        "Bloqueio de condução motor multifocal, com sensitiva normal",
+        "Redução da velocidade de condução motora e sensitiva difusa",
+        "Decremento à estimulação repetitiva, com condução normal"
+      ],
+      "correctIndex": 0,
+      "explanation": "Na ELA, a ENMG mostra desnervação ativa (fibrilações, ondas positivas, fasciculações) e reinervação crônica em várias regiões, com conduções sensitivas normais e sem bloqueio de condução. Decremento é da miastenia; bloqueio de condução, da neuropatia motora multifocal."
+    },
+    {
+      "question": "Pelos critérios de Gold Coast (2020), qual combinação permite o diagnóstico de ELA?",
+      "options": [
+        "Déficit motor progressivo com NMS e NMI em uma região, excluídas outras causas",
+        "Déficit motor estável com sinais de NMS em quatro regiões e ENMG normal",
+        "Déficit motor e sensitivo progressivo em duas regiões, com RM medular alterada",
+        "Fasciculações isoladas difusas, mesmo sem fraqueza e sem progressão clínica"
+      ],
+      "correctIndex": 0,
+      "explanation": "Gold Coast exige comprometimento motor progressivo, sinais de neurônio motor superior e inferior em pelo menos uma região (ou de neurônio inferior em pelo menos duas) e exclusão de outras doenças. Fasciculação isolada, sem fraqueza, é comum e geralmente benigna."
+    },
+    {
+      "question": "Homem de 64 anos tem fraqueza e atrofia nas mãos, espasticidade nas pernas e reflexos vivos. Refere também dor cervical, dormência nas mãos e urgência urinária, sem alteração bulbar. Qual exame é prioritário?",
+      "options": [
+        "RM de coluna cervical, pela suspeita de mielopatia",
+        "Anticorpo anti-receptor de acetilcolina no soro",
+        "Biópsia muscular do deltoide para afastar miosite",
+        "Teste genético para C9orf72 e para o gene SOD1"
+      ],
+      "correctIndex": 0,
+      "explanation": "Mielopatia cervical espondilótica imita a ELA (neurônio inferior no nível cervical e superior abaixo), mas tem dor cervical, alteração sensitiva e esfincteriana e poupa a musculatura bulbar. É tratável, por isso a RM cervical é obrigatória antes de diagnosticar ELA."
+    },
+    {
+      "question": "Homem de 42 anos tem fraqueza assimétrica de antebraço e mão há 2 anos, no território de nervos isolados, sem sinais de neurônio motor superior. A ENMG mostra bloqueio de condução motor e há anti-GM1 positivo. Qual é o diagnóstico e o tratamento?",
+      "options": [
+        "Neuropatia motora multifocal; imunoglobulina EV",
+        "ELA de início apendicular; riluzol contínuo",
+        "Atrofia muscular progressiva; gastrostomia precoce",
+        "Mielopatia cervical; descompressão cirúrgica urgente"
+      ],
+      "correctIndex": 0,
+      "explanation": "Fraqueza puramente de neurônio inferior, em território de nervos, com bloqueio de condução e anti-GM1, é neuropatia motora multifocal, diferencial tratável da ELA, que responde à imunoglobulina EV."
+    },
+    {
+      "question": "Qual é o mecanismo e o efeito esperado do riluzol na ELA?",
+      "options": [
+        "Reduz a ação do glutamato e prolonga a sobrevida em meses",
+        "Repõe a enzima SOD1 e interrompe a progressão da doença",
+        "Inibe a acetilcolinesterase e melhora a força muscular",
+        "Suprime a resposta autoimune e induz remissão sustentada"
+      ],
+      "correctIndex": 0,
+      "explanation": "O riluzol é antiglutamatérgico, usado na dose de 50 mg de 12 em 12 horas, e prolonga a sobrevida em alguns meses, sem recuperar a força. Está disponível no SUS e é indicado a todos os pacientes."
+    },
+    {
+      "question": "Paciente com ELA refere que precisa dormir com três travesseiros, acorda várias vezes à noite e tem cefaleia matinal. A capacidade vital forçada é de 45% do previsto. Qual é a conduta?",
+      "options": [
+        "Iniciar ventilação não invasiva, que aumenta a sobrevida",
+        "Indicar traqueostomia imediata com ventilação mecânica",
+        "Oxigênio por cateter nasal em alto fluxo durante o sono",
+        "Benzodiazepínico à noite para melhorar a qualidade do sono"
+      ],
+      "correctIndex": 0,
+      "explanation": "Ortopneia, hipoventilação noturna (cefaleia matinal, despertares) e CVF abaixo de 50% indicam VNI, que aumenta a sobrevida e melhora a qualidade de vida. Oxigênio isolado e sedativo podem piorar a retenção de CO2."
+    },
+    {
+      "question": "Paciente com ELA bulbar tem engasgos frequentes e perdeu 12% do peso em 4 meses. A função respiratória ainda está preservada. Qual é a conduta nutricional?",
+      "options": [
+        "Gastrostomia agora, antes da piora respiratória",
+        "Adiar a gastrostomia até a CVF cair abaixo de 30%",
+        "Sonda nasogástrica permanente como via definitiva",
+        "Manter dieta oral livre e suplemento hipercalórico"
+      ],
+      "correctIndex": 0,
+      "explanation": "Disfagia com perda de peso indica gastrostomia, de preferência enquanto a função respiratória ainda é boa, porque o procedimento fica mais arriscado com a CVF baixa. Adiar aumenta o risco de broncoaspiração e desnutrição."
+    },
+    {
+      "question": "Homem de 55 anos com ELA tem pai que morreu de demência frontotemporal. Qual alteração genética é a mais provável?",
+      "options": [
+        "Expansão de hexanucleotídeo no C9orf72",
+        "Expansão de trinucleotídeo CAG no HTT",
+        "Mutação no gene da proteína precursora",
+        "Deleção do gene SMN1 no cromossomo 5"
+      ],
+      "correctIndex": 0,
+      "explanation": "A expansão no C9orf72 é a causa genética mais comum de ELA e liga a doença à demência frontotemporal: a mesma mutação pode causar ELA, demência frontotemporal ou ambas na mesma família. HTT é da doença de Huntington; SMN1, da atrofia muscular espinal."
+    },
+    {
+      "question": "Sobre o gene SOD1 na esclerose lateral amiotrófica, qual afirmação é correta?",
+      "options": [
+        "Foi o primeiro gene descrito e é alvo do tofersen",
+        "É a causa mais comum de ELA esporádica no adulto",
+        "Causa ELA só em mulheres, com herança ligada ao X",
+        "Sua mutação define a forma bulbar de bom prognóstico"
+      ],
+      "correctIndex": 0,
+      "explanation": "O SOD1 (superóxido dismutase 1) foi o primeiro gene associado à ELA familiar. O tofersen, oligonucleotídeo antissenso, foi desenvolvido para a ELA ligada ao SOD1. A maioria dos casos de ELA é esporádica e sem mutação identificável."
+    },
+    {
+      "question": "Qual é a causa mais frequente de morte na esclerose lateral amiotrófica?",
+      "options": [
+        "Insuficiência respiratória",
+        "Arritmia cardíaca súbita",
+        "Hemorragia digestiva alta",
+        "Hipertensão intracraniana"
+      ],
+      "correctIndex": 0,
+      "explanation": "A morte costuma vir por insuficiência respiratória, pela fraqueza do diafragma e da musculatura respiratória, muitas vezes somada a broncoaspiração. A sobrevida mediana é de 3 a 5 anos desde os primeiros sintomas."
+    }
+  ]
+}

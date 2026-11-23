@@ -203,13 +203,13 @@ DIAS = [
         S(GO_GINE, 50, 55, 60, "go", "AVC 2 · distopia, incontinência, endometriose, DIP"),
         F(40, "go"),
     ]),
-    ("2026-12-07", "Fila de GO e começo de MFC", None, [
+    ("2026-12-07", "Fila de GO e começo de MFC: as aulas de agosto e a mais nova", None, [
         F(40, "go"),
         L("saude_da_populacao_negra", 25, "mfc"),
         L("migracao_refugio_e_apatridia", 25, "mfc"),
         L("saude_da_pessoa_com_deficiencia", 25, "mfc"),
-        L("saude_do_homem", 25, "mfc"),
         L("tontura_na_atencao_primaria", 25, "mfc"),
+        L("saude_baseada_em_evidencias", 25, "mfc"),
     ]),
     ("2026-12-08", "Manhã da prova: fila e pegadinhas de GO", "Prova de SM III às 13:30", [
         F(45, "go"),
@@ -218,13 +218,14 @@ DIAS = [
                                "massas_anexiais_e_cancer_de_ovario"], 20, 25, 25, "go", "GO misto", opcional=True),
     ]),
     ("2026-12-08", "Noite, depois da prova", None, [
-        L("transtorno_mental_comum", 25, "mfc", opcional=True),
+        T("saude_do_homem", 20, "mfc", opcional=True),
     ]),
-    ("2026-12-09", "MFC", None, [
-        L("transtorno_mental_comum", 25, "mfc", nota="se não fez ontem à noite"),
-        L("alcool_e_outras_drogas_na_aps", 25, "mfc"),
-        L("saude_da_populacao_em_situacao_de_rua", 25, "mfc"),
-        L("saude_baseada_em_evidencias", 25, "mfc"),
+    ("2026-12-09", "MFC: os temas da AVC 2, que você já revisou", None, [
+        T("saude_do_homem", 20, "mfc",
+          nota="seu Resumo_MFC_Prova.pdf (18/10, na pasta) cobre este e os três seguintes — releia junto"),
+        T("transtorno_mental_comum", 25, "mfc"),
+        T("alcool_e_outras_drogas_na_aps", 25, "mfc"),
+        T("saude_da_populacao_em_situacao_de_rua", 20, "mfc"),
         S(MFC_TODOS, 40, 45, 50, "mfc", "MFC · todos os temas"),
         F(30, "mfc"),
     ]),
@@ -254,6 +255,9 @@ PEGADINHAS = {
         "<b>Depressão</b> — o DSM-5 exige humor deprimido <b>ou</b> anedonia (o slide pedia os dois).",
         "<b>Fragilidade</b> — a aula usa a escala FRAIL, não o fenótipo de Fried; o SARC-F vai até 10 (o “&gt; 10” é do SARC-CalF).",
         "<b>Faringotonsilite</b> — hiperplasia de tonsila dá voz <b>abafada</b> (“batata quente”), não hipernasal.",
+        "<b>Demência</b> — as aulas de Geriatria e Neurologia exigem 2 ou mais domínios cognitivos; o transtorno neurocognitivo maior do DSM-5-TR exige 1 só (e memória não é obrigatória). Responda pelo critério que a questão citar.",
+        "<b>Surdez súbita</b> — a aula de disacusias trata com prednisona + pentoxifilina + valaciclovir; a diretriz AAO-HNS 2019 deixa só o corticoide (antiviral e vasoativo não são de rotina), idealmente nas 2 primeiras semanas.",
+        "<b>Osteoporose</b> — rastreio com DXA a partir dos 65 anos (mulher) e 70 (homem), antes se houver fator de risco; o intervalo de repetição é individual (a aula de AGA fala em “a cada 2 anos”).",
     ],
     "ped": [
         "<b>Schwartz</b> — a constante atual é 0,413 (CKiD bedside); o k antigo 0,55 superestima a TFG e esconde a perda de função.",
@@ -273,6 +277,10 @@ PEGADINHAS = {
     ],
     "mfc": [
         "Todo o material de MFC é de referência (políticas do SUS e diretrizes), sem slide da aula. Se a prova cobrar algo específico da aula, é lacuna conhecida.",
+        "<b>Fumante</b> — abordagem breve (mínima, ~3 min) é o <b>PAAP</b>: perguntar, avaliar, aconselhar, preparar. Com o <b>acompanhar</b> vira PAAPA, a abordagem básica.",
+        "<b>Internação involuntária</b> — comunicada ao Ministério Público em 72 h (Lei 10.216/2001); na dependência química (Lei 13.840/2019) dura no máximo 90 dias.",
+        "<b>Tiamina</b> no etilista — antes ou junto da glicose, sem atrasar a correção da hipoglicemia.",
+        "<b>Câncer de próstata</b> — o Ministério da Saúde e o INCA não recomendam rastreio populacional; é decisão compartilhada.",
     ],
 }
 

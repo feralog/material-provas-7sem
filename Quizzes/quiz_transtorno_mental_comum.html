@@ -1,0 +1,964 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Transtorno Mental Comum</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;450;500;600&display=swap" rel="stylesheet">
+<style>
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0}
+  body{background:#f5f3ef;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+  button{font:inherit;color:inherit;font-family:'IBM Plex Sans',system-ui,sans-serif}
+  a{color:#2b57cc;text-decoration:none}
+  a:hover{color:#1e3f9c;text-decoration:underline}
+  @keyframes qFade{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+  @keyframes qDrawer{from{opacity:0;transform:translateY(-4px)}to{opacity:1;transform:none}}
+
+  /* hovers — no canvas eram style-hover, aqui viram CSS de verdade */
+  .h-dark:hover{background:#2b57cc!important;transform:translateY(-1px)}
+  .h-darkflat:hover{background:#2b57cc!important}
+  .h-line:hover{border-color:#121a2b!important}
+  .h-ink:hover{color:#121a2b!important}
+  .h-opt:not(.locked):hover{border-color:var(--hbd)!important;transform:translateY(-1px)}
+  .h-card:hover{border-color:#121a2b!important;transform:translateY(-2px)}
+
+  /* tipografia do resumo */
+  .rsm{font-size:16.5px;line-height:1.72;color:#2a3141;max-width:64ch}
+  .rsm h2{font-family:'Newsreader',Georgia,serif;font-size:27px;font-weight:500;letter-spacing:-.02em;line-height:1.2;margin:42px 0 14px;padding-top:20px;border-top:1px solid #e4e0d8;text-wrap:pretty}
+  .rsm h2:first-child{margin-top:0;padding-top:0;border-top:0}
+  .rsm h3{font-family:'Newsreader',Georgia,serif;font-size:20px;font-weight:600;letter-spacing:-.01em;margin:28px 0 10px;text-wrap:pretty}
+  .rsm h4{font-family:'IBM Plex Mono',monospace;font-size:11px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:#2b57cc;margin:24px 0 8px}
+  .rsm p{margin:0 0 15px;text-wrap:pretty}
+  .rsm ul,.rsm ol{margin:0 0 15px;padding-left:22px}
+  .rsm li{margin-bottom:7px;text-wrap:pretty}
+  .rsm li>ul,.rsm li>ol{margin:7px 0 0}
+  .rsm strong{font-weight:600;color:#121a2b}
+  .rsm em{font-style:italic}
+  .rsm code{font-family:'IBM Plex Mono',monospace;font-size:.88em;background:#efece5;border:1px solid #e4e0d8;border-radius:5px;padding:1px 5px}
+  .rsm hr{border:0;border-top:1px solid #e4e0d8;margin:32px 0}
+  .rsm blockquote{margin:0 0 18px;padding:15px 18px;background:#f7f6f2;border-left:2.5px solid #2b57cc;border-radius:0 12px 12px 0;font-size:15px;line-height:1.65;color:#39404f}
+  .rsm blockquote p:last-child{margin-bottom:0}
+  .rsm .tbl{overflow-x:auto;margin:0 0 20px;border:1px solid #e4e0d8;border-radius:12px;background:#fff}
+  .rsm table{border-collapse:collapse;width:100%;font-size:14px;line-height:1.5}
+  .rsm th{text-align:left;font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.09em;text-transform:uppercase;color:#8a8578;font-weight:600;padding:11px 14px;background:#faf9f6;border-bottom:1px solid #e4e0d8;white-space:nowrap}
+  .rsm td{padding:11px 14px;border-bottom:1px solid #efece5;vertical-align:top;text-wrap:pretty}
+  .rsm tr:last-child td{border-bottom:0}
+  .rsm .key{background:#f2f6fb;border:1px solid #d6e2f4;border-radius:12px;padding:16px 18px;margin:0 0 18px}
+  .rsm .key>*:last-child{margin-bottom:0}
+
+  /* figuras — no resumo e na questao */
+  .fig{margin:0 0 20px;background:#fff;border:1px solid #e4e0d8;border-radius:14px;overflow:hidden}
+  .fig img{display:block;width:100%;height:auto;cursor:zoom-in}
+  .fig figcaption{font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.06em;color:#8a8578;padding:9px 13px;border-top:1px solid #efece5;background:#faf9f6;text-wrap:pretty}
+  .qfig{margin:0 0 20px}
+
+  /* lightbox */
+  #lb{position:fixed;inset:0;z-index:90;background:rgba(18,26,43,.86);display:none;align-items:center;justify-content:center;padding:24px;cursor:zoom-out}
+  #lb.on{display:flex;animation:qFade .16s ease}
+  #lb img{max-width:100%;max-height:100%;border-radius:10px;box-shadow:0 24px 60px rgba(0,0,0,.5)}
+
+  @media(max-width:560px){
+    .rsm{font-size:16px}
+    .rsm h2{font-size:24px}
+    .home-grid{grid-template-columns:1fr!important}
+  }
+</style>
+</head>
+<body>
+
+<div style="min-height:100vh;background:#f5f3ef;color:#121a2b;font-family:'IBM Plex Sans',system-ui,sans-serif">
+  <header style="position:sticky;top:0;z-index:30;background:rgba(245,243,239,.94);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid #e4e0d8">
+    <div style="max-width:720px;margin:0 auto;padding:12px 16px 10px" id="hdr"></div>
+  </header>
+  <main style="max-width:720px;margin:0 auto;padding:0 16px 80px" id="stage"></main>
+</div>
+<div id="lb"><img alt=""></div>
+
+<script type="text/html" id="resumoSrc"><blockquote><p>Material de referência: não há slide da aula deste tema. Baseado no Caderno de Atenção Básica nº 34 (Saúde Mental, Ministério da Saúde), no mhGAP da OMS, na Lei 10.216/2001 e na Portaria 3.088/2011 (RAPS).</p></blockquote>
+<h2>O que é transtorno mental comum</h2>
+<p><strong>Transtorno mental comum (TMC)</strong> é um conceito clínico-epidemiológico, proposto por Goldberg e Huxley, para o sofrimento psíquico <strong>não psicótico</strong> que chega todo dia à atenção primária: insônia, fadiga, irritabilidade, esquecimento, dificuldade de concentração, tristeza, "nervoso" e <strong>queixas somáticas inespecíficas</strong> (cefaleia, dor difusa, palpitação, aperto no peito, desconforto gástrico). Muitas vezes o quadro <strong>não fecha critério</strong> diagnóstico no DSM-5-TR ou na CID e, mesmo assim, gera sofrimento, faltas ao trabalho e retornos frequentes. TMC <strong>não é sinônimo de leve</strong>.</p>
+<p>É o problema de saúde mental <strong>mais frequente na APS</strong> — estudos brasileiros encontram TMC em algo entre um terço e mais da metade dos usuários das unidades básicas. Concentra-se em <strong>mulheres</strong>, pessoas de <strong>baixa renda e escolaridade</strong>, desempregados e quem vive <strong>violência</strong>, luto, isolamento ou doença crônica — o contexto de vida faz parte da avaliação.</p>
+<blockquote><p>O paciente "poliqueixoso", que volta com queixas que mudam e exames normais, é a apresentação típica do TMC na UBS. Dizer que ele "não tem nada" é erro clínico: o sofrimento é real, e o sintoma físico é a linguagem em que ele chega.</p></blockquote>
+<h2>Reconhecer e rastrear</h2>
+<p>O rastreio clássico é o <strong>SRQ-20</strong> (<em>Self-Reporting Questionnaire</em>), da OMS: <strong>20 perguntas de sim ou não</strong> sobre os <strong>últimos 30 dias</strong>, que exploram humor depressivo-ansioso, sintomas somáticos, decréscimo de energia vital e pensamentos depressivos. Na validação brasileira clássica (Mari e Williams, 1986), o ponto de corte foi <strong>7/8</strong> — positivo com 8 ou mais respostas "sim" —, mas o corte varia entre estudos e populações. O que cai em prova: <strong>SRQ-20 positivo indica sofrimento psíquico provável, não confirma diagnóstico</strong>. PHQ-9 (depressão) e GAD-7 (ansiedade) ajudam a identificar e acompanhar sintomas específicos.</p>
+<p>Na consulta, pergunte início, duração, prejuízo funcional, eventos de vida, violência, apoio social e uso de álcool e drogas — e examine: hipotireoidismo, anemia e efeito de medicamento também causam fadiga e desânimo. Três checagens mudam a conduta:</p>
+<ul><li><strong>critérios de um transtorno específico</strong> — episódio depressivo (humor deprimido ou anedonia por pelo menos 2 semanas, com prejuízo), ansiedade generalizada, pânico;</li><li><strong>mania ou hipomania prévia</strong>, antes de qualquer antidepressivo (risco de virada no bipolar);</li><li><strong>risco de suicídio</strong>, perguntado de forma direta — perguntar não induz o ato.</li></ul>
+<div class="tbl"><table><thead><tr><th>Situação</th><th>Onde é cuidada</th></tr></thead><tbody><tr><td>TMC, depressão e ansiedade leves a moderadas</td><td><strong>APS</strong>, com apoio matricial</td></tr><tr><td>Transtorno grave e persistente, psicose, crise, uso de drogas com sofrimento intenso</td><td><strong>CAPS</strong>, com a UBS acompanhando junto</td></tr><tr><td>Risco iminente de suicídio, agitação grave, intoxicação ou abstinência grave</td><td><strong>Urgência</strong> (SAMU, UPA, pronto-socorro)</td></tr></tbody></table></div>
+<h2>Abordagem na APS: escuta, PTS, matriciamento e grupos</h2>
+<p>A ferramenta principal é a <strong>escuta qualificada</strong>, dentro do <strong>vínculo</strong> e da <strong>longitudinalidade</strong>. Para as queixas somáticas, o <strong>modelo de reatribuição</strong> (Goldberg) tem três passos: fazer o paciente <strong>sentir-se compreendido</strong> (história dos sintomas, exame físico, contexto e crenças), <strong>ampliar a agenda</strong> (devolver o resultado do exame reconhecendo que o sintoma é real) e <strong>fazer a ligação</strong> entre o sintoma e a vida — por exemplo, a tensão muscular explicando a cefaleia. Pedir exame a cada retorno "para tranquilizar" reforça a crença de doença oculta.</p>
+<p>Casos complexos ganham um <strong>Projeto Terapêutico Singular (PTS)</strong>: condutas construídas pela equipe <strong>com o usuário</strong> (e a família, quando pertinente), em quatro momentos — <strong>diagnóstico</strong> (orgânico, psicológico e social, com vulnerabilidades e potências), <strong>definição de metas</strong>, <strong>divisão de responsabilidades</strong> (com um <strong>profissional de referência</strong>) e <strong>reavaliação</strong>. É singular porque é feito para aquela pessoa, não para a doença.</p>
+<p>O <strong>matriciamento</strong> (apoio matricial) é o cuidado <strong>compartilhado</strong> entre a equipe de Saúde da Família, que <strong>continua responsável</strong> pelo caso, e uma equipe de apoio especializado — hoje as <strong>eMulti</strong> (Portaria GM/MS 635/2023), que sucederam o NASF, e os profissionais do CAPS. Tem dimensão <strong>assistencial</strong> (consulta e visita domiciliar conjuntas) e <strong>técnico-pedagógica</strong> (discussão de casos, educação permanente). <strong>Não é encaminhamento</strong>: o caso não sai da UBS.</p>
+<p>Grupos são primeira linha, não fila de espera: terapêuticos e de convivência, <strong>terapia comunitária integrativa</strong>, atividade física e práticas integrativas, articulados à rede do território. Psicoterapias breves, como a <strong>terapia de resolução de problemas</strong>, cabem na APS.</p>
+<h2>Medicalização e prevenção quaternária</h2>
+<p><strong>Medicalização</strong> é transformar em problema médico o sofrimento que vem da vida — luto, desemprego, conflito familiar, pobreza — e tratá-lo só com remédio. O retrato clássico é o <strong>benzodiazepínico renovado por anos</strong> sem reavaliação: dependência, prejuízo de memória e <strong>quedas e fraturas no idoso</strong>, sem resolver a causa; a retirada é <strong>gradual e pactuada</strong>, porque a suspensão abrupta pode causar abstinência e convulsões. O antidepressivo — em geral um <strong>ISRS</strong> (fluoxetina, sertralina), com latência de semanas — fica para o episódio depressivo moderado a grave e o transtorno de ansiedade estabelecido, não para toda tristeza. Luto recente, com autocuidado preservado e sem ideação suicida, pede acolhimento e seguimento, não prescrição.</p>
+<p><strong>Prevenção quaternária</strong>, conceito de Marc Jamoulle adotado pela WONCA, é identificar a pessoa em risco de <strong>sobremedicalização</strong>, protegê-la de intervenções desnecessárias e propor alternativas eticamente aceitáveis. No quadro de Jamoulle, corresponde a quem <strong>se sente doente sem doença identificável</strong> — exatamente o terreno do TMC.</p>
+<div class="tbl"><table><thead><tr><th>Nível</th><th>Pessoa se sente doente?</th><th>Médico identifica doença?</th><th>Exemplo</th></tr></thead><tbody><tr><td>Primária</td><td>não</td><td>não</td><td>vacinação</td></tr><tr><td>Secundária</td><td>não</td><td>sim</td><td>rastreamento</td></tr><tr><td>Terciária</td><td>sim</td><td>sim</td><td>reabilitação</td></tr><tr><td><strong>Quaternária</strong></td><td><strong>sim</strong></td><td><strong>não</strong></td><td>evitar exames e remédios desnecessários</td></tr></tbody></table></div>
+<blockquote><p>Prevenção quaternária não é "não fazer nada": é escolher a intervenção que ajuda — escuta, explicação, grupo, seguimento — em vez da que só traz risco.</p></blockquote>
+<h2>Reforma Psiquiátrica e Lei 10.216/2001</h2>
+<p>A Reforma Psiquiátrica brasileira trocou o <strong>manicômio</strong> pelo <strong>cuidado no território</strong>. Nasceu no fim dos anos 1970 com o Movimento dos Trabalhadores em Saúde Mental, inspirada em Franco Basaglia (Itália), adotou o lema "<strong>por uma sociedade sem manicômios</strong>" em 1987 e chegou à lei pelo projeto do deputado Paulo Delgado, aprovado como <strong>Lei 10.216/2001</strong>.</p>
+<p>A lei garante à pessoa com transtorno mental tratamento com humanidade e respeito, sigilo, proteção contra abuso e tratamento <strong>pelos meios menos invasivos possíveis, preferencialmente em serviços comunitários</strong>. A <strong>internação só é indicada quando os recursos extra-hospitalares forem insuficientes</strong>, exige <strong>laudo médico circunstanciado</strong>, visa à reinserção social e é <strong>vedada em instituições com características asilares</strong>. Quem ficou longamente internado tem direito a alta planejada e reabilitação, com o auxílio do <strong>Programa De Volta para Casa</strong> (Lei 10.708/2003).</p>
+<div class="tbl"><table><thead><tr><th>Internação</th><th>Quem decide</th><th>O que a lei exige</th></tr></thead><tbody><tr><td><strong>Voluntária</strong></td><td>o próprio paciente consente</td><td>declaração assinada; termina a pedido escrito do paciente ou por decisão do médico</td></tr><tr><td><strong>Involuntária</strong></td><td><strong>sem consentimento</strong>, a pedido de <strong>terceiro</strong></td><td>autorização de médico com CRM do estado; <strong>comunicação ao Ministério Público Estadual em até 72 horas</strong>, também na alta; termina a pedido escrito do familiar ou responsável legal, ou por decisão do especialista</td></tr><tr><td><strong>Compulsória</strong></td><td><strong>determinada pela Justiça</strong></td><td>o juiz considera as condições de segurança do estabelecimento</td></tr></tbody></table></div>
+<blockquote><p>Na involuntária quem pede é um terceiro (em geral a família) e o médico autoriza; na compulsória quem determina é o juiz. A comunicação ao MP em 72 horas é exigência da <strong>involuntária</strong>.</p></blockquote>
+<h2>RAPS: a rede e seus pontos</h2>
+<p>A <strong>Rede de Atenção Psicossocial (RAPS)</strong> foi instituída pela <strong>Portaria 3.088/2011</strong> para pessoas com sofrimento ou transtorno mental e com necessidades decorrentes do uso de crack, álcool e outras drogas. São sete componentes:</p>
+<ol><li><strong>Atenção básica</strong>: UBS/ESF, eMulti, <strong>Consultório na Rua</strong>, centros de convivência.</li><li><strong>Atenção psicossocial especializada</strong>: os <strong>CAPS</strong>.</li><li><strong>Urgência e emergência</strong>: SAMU 192, sala de estabilização, UPA 24 h, pronto-socorro.</li><li><strong>Atenção residencial de caráter transitório</strong>: <strong>Unidade de Acolhimento</strong> e serviços em regime residencial (onde entram as comunidades terapêuticas).</li><li><strong>Atenção hospitalar</strong>: <strong>leitos de saúde mental em hospital geral</strong>, para internação breve.</li><li><strong>Desinstitucionalização</strong>: <strong>Serviços Residenciais Terapêuticos</strong> e Programa De Volta para Casa.</li><li><strong>Reabilitação psicossocial</strong>: trabalho e renda, cooperativas, economia solidária.</li></ol>
+<div class="tbl"><table><thead><tr><th>Serviço</th><th>Para quem</th><th>Funcionamento</th></tr></thead><tbody><tr><td><strong>CAPS I</strong></td><td>transtornos graves e persistentes e uso de drogas, todas as idades; municípios acima de 15 mil habitantes</td><td>diurno, dias úteis</td></tr><tr><td><strong>CAPS II</strong></td><td>transtornos graves e persistentes; acima de 70 mil</td><td>diurno, dias úteis</td></tr><tr><td><strong>CAPS III</strong></td><td>idem; acima de 150 mil</td><td><strong>24 horas</strong>, inclusive fins de semana e feriados, com acolhimento noturno</td></tr><tr><td><strong>CAPS AD</strong></td><td>álcool e outras drogas; acima de 70 mil</td><td>diurno, dias úteis</td></tr><tr><td><strong>CAPS AD III</strong></td><td>álcool e outras drogas; acima de 150 mil</td><td><strong>24 horas</strong>, com acolhimento noturno</td></tr><tr><td><strong>CAPSi</strong></td><td>crianças e adolescentes com sofrimento psíquico intenso; acima de 70 mil</td><td>diurno, dias úteis</td></tr></tbody></table></div>
+<p>O <strong>Serviço Residencial Terapêutico</strong> é moradia na comunidade para egressos de longas internações psiquiátricas sem suporte familiar; a <strong>Unidade de Acolhimento</strong> é residência <strong>transitória</strong>, ligada ao CAPS, para quem tem necessidades decorrentes de álcool e drogas e vulnerabilidade social.</p>
+<blockquote><p>O CAPS é <strong>porta aberta</strong>: acolhe demanda espontânea, sem exigir encaminhamento. E a RAPS é rede, não escada — a UBS segue acompanhando o usuário mesmo quando ele está no CAPS.</p></blockquote></script>
+<!-- Tutor local: define window.DEEPSEEK_KEY. O arquivo NAO vai para o repositorio,
+     entao online ele da 404 e o chat simplesmente nao aparece. -->
+<script src="../deepseek_key.js"></script>
+<script>
+/* ─────────────────────────────────────────────────────────────────────────────
+   CONTRATO DE DADOS — para adaptar a outro tema, troque apenas QUIZ e o resumo.
+   Cada item: { question, options[2..6], correctIndex, explanation }
+   ──────────────────────────────────────────────────────────────────────────── */
+var TITLE      = "Transtorno Mental Comum";
+var EYEBROW    = "Medicina de Família e Comunidade · Referência";
+var DISCIPLINA = "MFC";   // pasta de origem (PED, GO...) — usada pelo índice
+var SUBTITLE = "Sofrimento psíquico na APS, Reforma Psiquiátrica e a RAPS";
+var INTRO    = "Conceito, rastreio (SRQ-20) e abordagem do TMC na APS, medicalização e prevenção quaternária, Lei 10.216/2001 e os pontos da RAPS. Baseado no Caderno de Atenção Básica 34 e na legislação do SUS — não há slide da aula deste tema.";
+
+var QUIZ = [
+  {
+    "question": "Mulher de 42 anos, diarista, vai à UBS pela quinta vez em três meses com cefaleia, cansaço, insônia, 'nervoso' e dor no estômago. Os exames são normais e ela não preenche critérios para depressão maior nem para ansiedade generalizada. Qual a melhor caracterização do quadro?",
+    "options": [
+      "Transtorno mental comum, sofrimento real a ser cuidado na APS",
+      "Simulação para obter atestado, sem indicação de seguimento",
+      "Psicose em fase inicial, com indicação de encaminhar ao CAPS",
+      "Doença orgânica oculta, com indicação de repetir os exames"
+    ],
+    "correctIndex": 0,
+    "explanation": "Transtorno mental comum (Goldberg e Huxley) reúne sintomas ansiosos, depressivos e somáticos inespecíficos que muitas vezes não fecham diagnóstico, mas geram sofrimento e retornos frequentes. É o problema de saúde mental mais comum na APS e é cuidado ali, com escuta, vínculo e seguimento; repetir exames sem indicação reforça a crença de doença oculta."
+  },
+  {
+    "question": "Sobre o SRQ-20 no rastreio de transtorno mental comum, qual afirmação é correta?",
+    "options": [
+      "Rastreia sofrimento psíquico, mas o resultado positivo não fecha diagnóstico",
+      "Confirma depressão maior quando há oito ou mais respostas positivas",
+      "É escala de uso exclusivo do psiquiatra para graduar a gravidade da psicose",
+      "Mede o risco de suicídio e indica internação quando o escore é alto"
+    ],
+    "correctIndex": 0,
+    "explanation": "O SRQ-20, da OMS, tem 20 perguntas de sim ou não sobre os últimos 30 dias e pode ser aplicado por qualquer profissional ou autoaplicado. O corte clássico da validação brasileira é 7/8, variando conforme a população; o resultado positivo pede avaliação clínica, porque rastreio não é diagnóstico."
+  },
+  {
+    "question": "Homem de 35 anos tem dor torácica atípica recorrente, palpitação e insônia desde que foi demitido. ECG e exames estão normais. Qual abordagem segue o modelo de reatribuição?",
+    "options": [
+      "Fazê-lo se sentir compreendido, ampliar a agenda e ligar sintoma e contexto",
+      "Pedir novos exames a cada retorno até que ele aceite a origem emocional",
+      "Dizer que ele não tem nada físico e encaminhá-lo direto ao psiquiatra",
+      "Prescrever benzodiazepínico contínuo e reavaliar só se houver piora"
+    ],
+    "correctIndex": 0,
+    "explanation": "O modelo de reatribuição (Goldberg) tem três passos: o paciente se sentir compreendido (história, exame físico, crenças), ampliar a agenda (devolver o resultado reconhecendo que o sintoma é real) e fazer a ligação entre o sintoma e os problemas de vida. Repetir exames para tranquilizar e dizer que 'não é nada' reforçam a busca de doença oculta."
+  },
+  {
+    "question": "A equipe de Saúde da Família vai construir um Projeto Terapêutico Singular para um usuário com sofrimento psíquico e grande vulnerabilidade social. Quais são os momentos do PTS?",
+    "options": [
+      "Diagnóstico, definição de metas, divisão de responsabilidades e reavaliação",
+      "Triagem, encaminhamento ao CAPS, contrarreferência e alta definitiva da UBS",
+      "Diagnóstico psiquiátrico, prescrição, internação breve e reinserção social",
+      "Rastreio pelo SRQ-20, notificação compulsória, matriciamento e alta da equipe"
+    ],
+    "correctIndex": 0,
+    "explanation": "O PTS é um conjunto de condutas construído pela equipe com o usuário, em quatro momentos: diagnóstico (orgânico, psicológico e social, com riscos e potências), definição de metas, divisão de responsabilidades com um profissional de referência e reavaliação. É singular porque é feito para aquela pessoa, e não para a doença."
+  },
+  {
+    "question": "O psicólogo da eMulti e a médica de família atendem juntos um paciente com ansiedade e, depois, discutem outros casos da equipe. A responsabilidade pelo paciente continua com a equipe de Saúde da Família. Isso caracteriza:",
+    "options": [
+      "Matriciamento, com cuidado compartilhado entre as equipes",
+      "Encaminhamento, com o caso passando ao especialista",
+      "Supervisão, com o psicólogo avaliando a conduta médica",
+      "Triagem, que define quem entra na fila de espera do CAPS"
+    ],
+    "correctIndex": 0,
+    "explanation": "O apoio matricial tem dimensão assistencial (consulta e visita conjuntas) e técnico-pedagógica (discussão de casos, educação permanente), e a equipe de referência segue responsável pelo usuário: não é encaminhamento. As eMulti, criadas pela Portaria GM/MS 635/2023, sucederam o NASF nesse papel, ao lado dos CAPS."
+  },
+  {
+    "question": "Mulher de 68 anos usa clonazepam há dez anos 'para dormir', com receita renovada sem consulta. Vem tendo esquecimentos e caiu duas vezes neste ano. Qual a conduta mais adequada?",
+    "options": [
+      "Pactuar a retirada gradual do benzodiazepínico com seguimento próximo",
+      "Suspender o benzodiazepínico de uma vez para evitar novas quedas",
+      "Manter a receita, pois a dependência após tantos anos é irreversível",
+      "Trocar o clonazepam por diazepam em dose maior, de ação mais longa"
+    ],
+    "correctIndex": 0,
+    "explanation": "Benzodiazepínico crônico no idoso causa prejuízo de memória, sedação, quedas e fraturas, além de dependência — exemplo clássico de medicalização. A desprescrição é gradual e pactuada, porque a suspensão abrupta pode causar abstinência e até convulsões; a insônia é abordada com medidas não farmacológicas."
+  },
+  {
+    "question": "Qual alternativa define prevenção quaternária?",
+    "options": [
+      "Proteger a pessoa da sobremedicalização e de intervenções desnecessárias",
+      "Reabilitar o paciente com sequelas para reduzir as incapacidades crônicas",
+      "Detectar a doença na fase pré-clínica por meio de rastreamento ativo",
+      "Impedir o surgimento da doença com vacinação e promoção de hábitos"
+    ],
+    "correctIndex": 0,
+    "explanation": "Prevenção quaternária, conceito de Marc Jamoulle adotado pela WONCA, é identificar quem está em risco de sobremedicalização, protegê-lo de intervenções inúteis ou danosas e oferecer alternativas eticamente aceitáveis. No quadro de Jamoulle, corresponde a quem se sente doente sem doença identificável; reabilitação é prevenção terciária, rastreamento é secundária e vacinação é primária."
+  },
+  {
+    "question": "Mulher de 50 anos, viúva há três semanas, chora com frequência, dorme mal e pede 'um remédio para os nervos'. Mantém o autocuidado, tem apoio dos filhos e nega ideação suicida. Qual a conduta inicial mais adequada na APS?",
+    "options": [
+      "Acolher o luto, oferecer escuta e seguimento, sem prescrição de rotina",
+      "Iniciar benzodiazepínico contínuo para impedir que o luto se prolongue",
+      "Iniciar antidepressivo, pois tristeza após uma perda indica depressão",
+      "Encaminhar ao CAPS, pois o luto recente é sofrimento psíquico grave"
+    ],
+    "correctIndex": 0,
+    "explanation": "Tristeza, choro e insônia nas semanas seguintes a uma perda fazem parte do luto; medicar de rotina é medicalização, e o mhGAP desaconselha benzodiazepínico e antidepressivo nessa situação. A APS acolhe, acompanha e reavalia, atenta a sinais de depressão: anedonia persistente, menos-valia, ideação suicida e prejuízo funcional importante."
+  },
+  {
+    "question": "Antes de iniciar antidepressivo em paciente da APS com episódio depressivo moderado, o que é indispensável investigar?",
+    "options": [
+      "Episódios prévios de mania ou hipomania e o risco de suicídio",
+      "Dosagem sérica de serotonina e eletroencefalograma de base",
+      "Tomografia de crânio e avaliação neuropsicológica completa",
+      "Resposta a um teste terapêutico de duas semanas com diazepam"
+    ],
+    "correctIndex": 0,
+    "explanation": "Antidepressivo em transtorno bipolar não reconhecido pode virar o quadro para mania, por isso se pergunta sobre períodos de euforia, menor necessidade de sono e aceleração. O risco de suicídio é perguntado diretamente — perguntar não induz o ato. Nenhum exame laboratorial ou de imagem diagnostica depressão."
+  },
+  {
+    "question": "Mulher de 38 anos tem sintomas ansiosos e depressivos leves, insônia e queixas somáticas ligados à sobrecarga de trabalho, sem psicose e sem risco de suicídio. Onde ela deve ser cuidada prioritariamente?",
+    "options": [
+      "Na UBS, com escuta, grupos, seguimento e apoio matricial se preciso",
+      "No CAPS II, que é a referência para qualquer queixa de saúde mental",
+      "No ambulatório de psiquiatria, pois a APS não trata saúde mental",
+      "Na UPA, onde pode receber sedação sempre que os sintomas piorarem"
+    ],
+    "correctIndex": 0,
+    "explanation": "TMC e quadros leves a moderados são cuidados na APS, que tem vínculo e longitudinalidade; o matriciamento amplia a capacidade de resposta da equipe. O CAPS é para sofrimento intenso, transtornos graves e persistentes e crises, e a urgência, para risco iminente."
+  },
+  {
+    "question": "Qual intervenção psicossocial é adequada como primeira linha para transtorno mental comum na APS?",
+    "options": [
+      "Grupos terapêuticos e terapia comunitária integrativa no território",
+      "Internação breve em hospital geral para afastar dos estressores",
+      "Eletroconvulsoterapia ambulatorial como medida inicial do cuidado",
+      "Antipsicótico de depósito para controlar a ansiedade e a insônia"
+    ],
+    "correctIndex": 0,
+    "explanation": "Intervenções em grupo — terapêuticos, de convivência, terapia comunitária integrativa, atividade física e práticas integrativas — ampliam vínculo e rede de apoio e são primeira linha no TMC, junto com psicoterapias breves como a de resolução de problemas. Internação, eletroconvulsoterapia e antipsicótico não têm lugar no sofrimento psíquico comum."
+  },
+  {
+    "question": "Qual alternativa descreve corretamente a Lei 10.216/2001?",
+    "options": [
+      "Redireciona o modelo assistencial para serviços comunitários e restringe a internação",
+      "Amplia os leitos em hospitais psiquiátricos para garantir o acesso à internação",
+      "Cria os CAPS e define o número mínimo de profissionais em cada modalidade",
+      "Proíbe qualquer internação psiquiátrica que não tenha ordem judicial expressa"
+    ],
+    "correctIndex": 0,
+    "explanation": "A Lei 10.216/2001 (Lei Paulo Delgado) protege os direitos das pessoas com transtorno mental e redireciona o modelo para serviços comunitários. A internação só é indicada quando os recursos extra-hospitalares forem insuficientes, exige laudo médico circunstanciado e é vedada em instituições com características asilares; as modalidades de CAPS foram definidas por portarias."
+  },
+  {
+    "question": "Homem de 30 anos com esquizofrenia, em surto, ameaça a mãe com uma faca e recusa tratamento. A mãe pede a internação e o psiquiatra a autoriza. Pela Lei 10.216/2001, qual o tipo de internação e a exigência legal?",
+    "options": [
+      "Involuntária, comunicada ao Ministério Público em até 72 horas",
+      "Compulsória, comunicada ao Ministério Público em até 72 horas",
+      "Voluntária, pois a mãe assina o termo como responsável legal",
+      "Involuntária, que depende de autorização prévia do juiz"
+    ],
+    "correctIndex": 0,
+    "explanation": "Internação sem consentimento do paciente e a pedido de terceiro é involuntária: autorizada por médico com CRM do estado e comunicada ao Ministério Público Estadual pelo responsável técnico do estabelecimento em até 72 horas, o mesmo valendo para a alta. Compulsória é a determinada pela Justiça; voluntária exige o consentimento do próprio paciente."
+  },
+  {
+    "question": "Durante um processo criminal, o juiz determina a internação psiquiátrica de um homem com transtorno mental grave. Pela Lei 10.216/2001, essa internação é:",
+    "options": [
+      "Compulsória, determinada pela Justiça",
+      "Involuntária, determinada pelo médico",
+      "Voluntária, com anuência do defensor",
+      "Involuntária, requerida pelo promotor"
+    ],
+    "correctIndex": 0,
+    "explanation": "A internação compulsória é a determinada pela Justiça; o juiz leva em conta as condições de segurança do estabelecimento para o paciente, os demais internados e os funcionários. Involuntária é a pedida por terceiro sem consentimento do paciente, e voluntária, a consentida por ele."
+  },
+  {
+    "question": "Um município de 200 mil habitantes quer implantar o serviço da RAPS que funciona 24 horas, inclusive fins de semana e feriados, com acolhimento noturno, para adultos com transtornos mentais graves e persistentes. Qual é esse serviço?",
+    "options": [
+      "Centro de Atenção Psicossocial III",
+      "Centro de Atenção Psicossocial II",
+      "Centro de Atenção Psicossocial I",
+      "Centro de Atenção Psicossocial AD"
+    ],
+    "correctIndex": 0,
+    "explanation": "O CAPS III funciona 24 horas, todos os dias, com acolhimento noturno, e é previsto para municípios ou regiões acima de 150 mil habitantes (Portaria 3.088/2011). CAPS I (acima de 15 mil), CAPS II e CAPS AD (acima de 70 mil) funcionam de dia, em dias úteis; o equivalente 24 horas para álcool e drogas é o CAPS AD III."
+  },
+  {
+    "question": "Homem de 60 anos, internado há 25 anos num hospital psiquiátrico que será fechado, não tem vínculos familiares. Qual dispositivo da RAPS é destinado a ele?",
+    "options": [
+      "Serviço Residencial Terapêutico, com o auxílio De Volta para Casa",
+      "Unidade de Acolhimento, como moradia definitiva após a alta",
+      "Comunidade terapêutica em regime residencial sem prazo definido",
+      "Leito em hospital geral até surgir vaga em outro hospital psiquiátrico"
+    ],
+    "correctIndex": 0,
+    "explanation": "Os Serviços Residenciais Terapêuticos são moradias na comunidade para egressos de longas internações psiquiátricas sem suporte familiar; integram o componente de desinstitucionalização da RAPS com o Programa De Volta para Casa (Lei 10.708/2003), auxílio pago ao egresso. A Unidade de Acolhimento é transitória e voltada a quem tem necessidades decorrentes de álcool e drogas."
+  },
+  {
+    "question": "Na RAPS, qual o papel dos leitos de saúde mental em hospital geral?",
+    "options": [
+      "Internação breve na crise, até a estabilização, articulada à rede",
+      "Moradia permanente para egressos de longa internação psiquiátrica",
+      "Internação prolongada para afastar o paciente do convívio familiar",
+      "Porta de entrada obrigatória antes de qualquer atendimento no CAPS"
+    ],
+    "correctIndex": 0,
+    "explanation": "O componente hospitalar da RAPS prioriza leitos em hospital geral para internações curtas, na crise ou na comorbidade clínica, até a estabilização, com continuidade do cuidado no CAPS e na APS. É a lógica da Lei 10.216: a internação é recurso pontual, nunca moradia nem isolamento."
+  },
+  {
+    "question": "Sobre o acesso aos Centros de Atenção Psicossocial (CAPS), é correto afirmar que eles:",
+    "options": [
+      "Acolhem demanda espontânea, sem exigir encaminhamento prévio",
+      "Só atendem quem chega encaminhado pela UBS ou pelo hospital",
+      "Só atendem quem já esteve internado em hospital psiquiátrico",
+      "Só atendem com agendamento feito pela central de regulação"
+    ],
+    "correctIndex": 0,
+    "explanation": "CAPS são serviços de porta aberta: acolhem quem chega por demanda espontânea ou encaminhado pela APS, pela urgência ou por outros serviços. Atendem sofrimento psíquico intenso, transtornos graves e persistentes e necessidades decorrentes do uso de álcool e drogas, e a UBS continua acompanhando o usuário."
+  }
+];
+
+var LETTERS = ['A','B','C','D','E','F'];
+var SHUFFLE = true, LOCK = true;
+
+var S = { view:'home', started:false, finished:false, i:0, order:[], answers:[], open:{}, filter:'all', warn:false, chat:{} };
+
+function esc(s){ return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
+function pad(n){ return String(n).padStart(2,'0'); }
+
+function build(){
+  var qs = QUIZ.map(function(q,id){ return { question:q.question, options:q.options.slice(), correctIndex:q.correctIndex, explanation:q.explanation, image:q.image, imageCaption:q.imageCaption, id:id }; });
+  if (!SHUFFLE) return qs;
+  for (var i=qs.length-1;i>0;i--){ var j=Math.floor(Math.random()*(i+1)); var t=qs[i]; qs[i]=qs[j]; qs[j]=t; }
+  return qs.map(function(q){
+    var correct = q.options[q.correctIndex], o = q.options.slice();
+    for (var i=o.length-1;i>0;i--){ var j=Math.floor(Math.random()*(i+1)); var t=o[i]; o[i]=o[j]; o[j]=t; }
+    q.options = o; q.correctIndex = o.indexOf(correct); return q;
+  });
+}
+
+/* ── ações ─────────────────────────────────────────────────────────────────── */
+var A = {
+  home:      function(){ S.view='home'; S.started=false; S.finished=false; up(0); },
+  resumo:    function(){ S.view='resumo'; up(0); },
+  start:     function(){ var o=build(); S.view='quiz'; S.started=true; S.finished=false; S.i=0; S.order=o;
+                         S.answers=new Array(o.length).fill(null); S.open={}; S.filter='all'; S.warn=false; up(0); },
+  restart:   function(){ A.start(); },
+  sair:      function(){ S.view='home'; S.started=false; up(0); },   // guarda as respostas
+  retomar:   function(){ S.view='quiz'; S.started=true; S.finished=false; S.warn=false; up(0); },
+  go:        function(n){ if(n<0||n>S.order.length-1) return; S.i=n; S.warn=false; render(); },
+  jump:      function(n){ if(S.finished){ S.finished=false; S.i=n; S.warn=false; } else { if(n<0||n>S.order.length-1) return; S.i=n; S.warn=false; } up(0,'smooth'); },
+  pick:      function(n){ if(LOCK && S.answers[S.i]!==null) return; S.answers[S.i]=n; render(); },
+  prev:      function(){ A.go(S.i-1); },
+  next:      function(){ if(S.i<S.order.length-1) A.go(S.i+1); else A.finish(); },
+  finish:    function(){ var b=S.answers.filter(function(a){return a===null}).length;
+                         if(b>0 && !S.warn){ S.warn=true; render(); return; } S.finished=true; S.warn=false; up(0); },
+  force:     function(){ S.finished=true; S.warn=false; up(0); },
+  gotoBlank: function(){ var n=S.answers.findIndex(function(a){return a===null}); if(n>=0) A.go(n); },
+  back:      function(){ S.finished=false; S.warn=false; up(0); },
+  filter:    function(k){ S.filter=k; render(); },
+  toggle:    function(n){ S.open[n]=!S.open[n]; render(); },
+  toggleAll: function(){ var r=reviewList(), all=r.length>0 && r.every(function(x){return S.open[x.idx]});
+                         S.open={}; if(!all) r.forEach(function(x){ S.open[x.idx]=true; }); render(); }
+};
+function up(top, beh){ render(); window.scrollTo({ top: top||0, behavior: beh||'auto' }); }
+
+/* Aberto por duplo clique (file://) volta para o indice local; servido pela web,
+   volta para o publicado. Os dois listam os mesmos materiais. */
+function idxHref(){
+  var local = (typeof location !== 'undefined' && location.protocol === 'file:');
+  return local ? '../index_local.html' : '../index.html';
+}
+function emAndamento(){
+  return S.order.length > 0 && !S.finished &&
+         S.answers.some(function(a){ return a !== null; });
+}
+
+/* ── header ────────────────────────────────────────────────────────────────── */
+function renderHeader(){
+  var mono = "font-family:'IBM Plex Mono',monospace";
+  var left =
+    '<div style="min-width:0">' +
+      '<div style="display:flex;align-items:center;gap:8px;'+mono+';font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:#8a8578">' +
+        '<a href="'+idxHref()+'" class="h-ink" style="color:#2b57cc;text-decoration:none;white-space:nowrap">\u2190 Materiais</a>' +
+        '<span style="color:#d3cec4">/</span>' +
+        '<span style="overflow:hidden;text-overflow:ellipsis;white-space:nowrap">'+esc(EYEBROW)+'</span>' +
+      '</div>' +
+      '<h1 style="margin:1px 0 0;font-family:\'Newsreader\',Georgia,serif;font-size:20px;font-weight:500;letter-spacing:-.01em;line-height:1.15">'+esc(TITLE)+'</h1>' +
+    '</div>';
+
+  var right = '';
+  if (S.view === 'quiz' && S.started) {
+    var hit = counts().hit;
+    right = '<div style="display:flex;align-items:center;gap:10px;flex-shrink:0">' +
+              '<button type="button" data-act="sair" class="h-line" style="background:none;border:1px solid #ddd8ce;border-radius:9px;padding:6px 11px;'+mono+';font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;color:#5b6478;cursor:pointer;transition:border-color .15s ease">Sair</button>' +
+              '<div style="display:flex;align-items:center;gap:6px">' +
+                '<span style="'+mono+';font-size:15px;font-weight:600;letter-spacing:-.02em">'+hit+'</span>' +
+                '<span style="'+mono+';font-size:11px;color:#8a8578">/ '+S.order.length+'</span>' +
+              '</div></div>';
+  } else if (S.view !== 'home') {
+    right = '<button type="button" data-act="home" class="h-line" style="flex-shrink:0;background:none;border:1px solid #ddd8ce;border-radius:9px;padding:7px 13px;'+mono+';font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:#5b6478;cursor:pointer;transition:border-color .15s ease">← Início</button>';
+  }
+
+  var html = '<div style="display:flex;align-items:baseline;justify-content:space-between;gap:12px;margin-bottom:'+(S.view==='quiz'&&S.started?'10px':'2px')+'">'+left+right+'</div>';
+
+  if (S.view === 'quiz' && S.started) {
+    var c = counts();
+    var rail = S.order.map(function(q,n){
+      var a = S.answers[n], cur = n===S.i && !S.finished, bg = '#d3cec4';
+      if (a!==null) bg = (a===q.correctIndex) ? '#2e7d55' : '#c04437';
+      if (cur && a===null) bg = '#121a2b';
+      var st = a===null ? 'em branco' : (a===q.correctIndex ? 'correta' : 'incorreta');
+      return '<button type="button" data-act="jump" data-n="'+n+'" title="Questão '+(n+1)+' — '+st+'" aria-label="Questão '+(n+1)+' — '+st+'" style="flex:1 1 0;min-width:0;background:none;border:0;padding:13px 0;margin:0;cursor:pointer;display:flex;align-items:center;justify-content:center">' +
+             '<span style="display:block;width:100%;border-radius:99px;transition:height .18s ease,background .18s ease,box-shadow .18s ease;height:'+(cur?'17px':'9px')+';background:'+bg+';box-shadow:'+(cur?'0 0 0 3px rgba(18,26,43,.13)':'none')+'"></span></button>';
+    }).join('');
+    html += '<div><div style="display:flex;align-items:center;gap:3px">'+rail+'</div>' +
+            '<div style="display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:-2px">' +
+              '<div style="'+mono+';font-size:11px;letter-spacing:.04em;color:#5b6478">Questão '+pad(S.i+1)+' / '+S.order.length+'</div>' +
+              '<div style="display:flex;align-items:center;gap:12px;'+mono+';font-size:10.5px;color:#8a8578">' +
+                dot('#2e7d55',c.hit)+dot('#c04437',c.miss)+dot('#d3cec4',c.blank) +
+              '</div></div></div>';
+  }
+  document.getElementById('hdr').innerHTML = html;
+}
+function dot(color,n){ return '<span style="display:flex;align-items:center;gap:5px"><span style="width:7px;height:7px;border-radius:99px;background:'+color+';display:block"></span>'+n+'</span>'; }
+
+function counts(){
+  var hit=0, miss=0, blank=0;
+  S.answers.forEach(function(a,n){
+    if (a===null) blank++;
+    else if (S.order[n] && a===S.order[n].correctIndex) hit++;
+    else miss++;
+  });
+  return { hit:hit, miss:miss, blank:blank, total:S.order.length };
+}
+
+/* ── tela inicial ──────────────────────────────────────────────────────────── */
+function renderHome(){
+  var mono = "font-family:'IBM Plex Mono',monospace";
+  var secoes = (document.getElementById('resumoSrc').textContent.match(/<h2/g)||[]).length;
+  var cell = function(v,l){
+    return '<div style="background:#faf9f6;padding:16px 14px">' +
+      '<div style="'+mono+';font-size:22px;font-weight:500;letter-spacing:-.03em">'+v+'</div>' +
+      '<div style="'+mono+';font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:#8a8578;margin-top:3px">'+l+'</div></div>';
+  };
+  var card = function(act,tag,titulo,desc,cta){
+    return '<button type="button" data-act="'+act+'" class="h-card" style="display:flex;flex-direction:column;align-items:flex-start;gap:0;text-align:left;background:#fff;border:1px solid #e4e0d8;border-radius:18px;padding:24px 22px;cursor:pointer;transition:border-color .16s ease,transform .14s ease;box-shadow:0 1px 2px rgba(18,26,43,.04),0 12px 28px -20px rgba(18,26,43,.18)">' +
+      '<div style="'+mono+';font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:#2b57cc;margin-bottom:12px">'+tag+'</div>' +
+      '<div style="font-family:\'Newsreader\',Georgia,serif;font-size:26px;font-weight:500;letter-spacing:-.02em;line-height:1.15;margin-bottom:8px">'+titulo+'</div>' +
+      '<div style="font-size:14px;line-height:1.6;color:#5b6478;margin-bottom:18px;text-wrap:pretty">'+desc+'</div>' +
+      '<div style="'+mono+';font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:#121a2b">'+cta+'</div></button>';
+  };
+
+  document.getElementById('stage').innerHTML =
+    '<section style="padding:56px 0 0;animation:qFade .3s ease">' +
+      '<div style="'+mono+';font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:#2b57cc;margin-bottom:16px">Material de revisão</div>' +
+      '<h2 style="font-family:\'Newsreader\',Georgia,serif;font-size:40px;line-height:1.08;font-weight:400;letter-spacing:-.025em;margin:0 0 18px;text-wrap:pretty">'+esc(SUBTITLE)+'</h2>' +
+      '<p style="font-size:15.5px;line-height:1.65;color:#5b6478;margin:0 0 30px;max-width:52ch;text-wrap:pretty">'+esc(INTRO)+'</p>' +
+      '<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(108px,1fr));gap:1px;background:#e4e0d8;border:1px solid #e4e0d8;border-radius:14px;overflow:hidden;margin-bottom:32px">' +
+        cell(QUIZ.length,'Questões') + cell(secoes,'Seções') + cell('~'+Math.round(QUIZ.length*0.75),'Minutos') +
+      '</div>' +
+      '<div class="home-grid" style="display:grid;grid-template-columns:1fr 1fr;gap:12px">' +
+        (emAndamento()
+          ? card('retomar','Em andamento','Quiz',
+                 'Você parou na questão '+pad(S.i+1)+' de '+S.order.length+', com '+
+                 (S.order.length-counts().blank)+' respondida'+((S.order.length-counts().blank)===1?'':'s')+
+                 '. Suas respostas continuam guardadas.','Retomar →')
+          : card('start','Praticar','Quiz', QUIZ.length+' questões de múltipla escolha, com explicação assim que você responde e gabarito comentado no fim.','Começar →')) +
+        card('resumo','Estudar','Resumo','O conteúdo da aula em texto corrido, organizado em '+secoes+' seções para leitura antes da prova.','Ler →') +
+      '</div>' +
+      '<div style="margin-top:26px;display:flex;flex-wrap:wrap;align-items:center;gap:8px 18px;'+mono+';font-size:11px;color:#8a8578">' +
+        '<span>← →&nbsp; navegar</span><span>1–'+maxOpts()+'&nbsp; responder</span><span>Enter&nbsp; avançar</span>' +
+        (emAndamento() ? '<button type="button" data-act="start" class="h-ink" style="background:none;border:0;padding:0;'+mono+';font-size:11px;color:#8a8578;cursor:pointer;text-decoration:underline;text-underline-offset:3px">recomeçar do zero</button>' : '') +
+        '</div>' +
+    '</section>';
+}
+function maxOpts(){ return QUIZ.reduce(function(m,q){ return Math.max(m,q.options.length); },0); }
+
+/* ── resumo ────────────────────────────────────────────────────────────────── */
+function renderResumo(){
+  document.getElementById('stage').innerHTML =
+    '<section style="padding:34px 0 0;animation:qFade .3s ease">' +
+      '<div style="font-family:\'IBM Plex Mono\',monospace;font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:#2b57cc;margin-bottom:14px">Resumo</div>' +
+      '<div class="rsm">' + document.getElementById('resumoSrc').textContent + '</div>' +
+      '<div style="display:flex;flex-wrap:wrap;gap:9px;margin-top:38px;padding-top:24px;border-top:1px solid #e4e0d8">' +
+        '<button type="button" data-act="start" class="h-darkflat" style="background:#121a2b;color:#f5f3ef;border:0;border-radius:11px;padding:13px 24px;font-size:14px;font-weight:500;cursor:pointer;transition:background .16s ease">Fazer o quiz →</button>' +
+        '<button type="button" data-act="home" class="h-line" style="background:none;border:1px solid #ddd8ce;border-radius:11px;padding:13px 22px;font-size:14px;cursor:pointer;transition:border-color .15s ease">Voltar ao início</button>' +
+      '</div></section>';
+}
+
+/* imagem da questao — data URI ja resolvida pelo montar_quiz.py */
+function figura(q, cls){
+  if (!q.image) return '';
+  return '<figure class="fig'+(cls?' '+cls:'')+'"><img src="'+q.image+'" alt="'+esc(q.imageCaption||'Imagem da questão')+'">' +
+         (q.imageCaption ? '<figcaption>'+esc(q.imageCaption)+'</figcaption>' : '') + '</figure>';
+}
+
+/* ── questão ───────────────────────────────────────────────────────────────── */
+function renderQuestion(){
+  var mono = "font-family:'IBM Plex Mono',monospace";
+  var q = S.order[S.i], ans = S.answers[S.i], reveal = ans !== null;
+
+  var status = 'Não respondida', sColor = '#8a8578';
+  if (reveal) { var ok = ans===q.correctIndex; status = ok?'Você acertou':'Você errou'; sColor = ok?'#2e7d55':'#c04437'; }
+
+  var opts = q.options.map(function(text,n){
+    var isC = n===q.correctIndex, isMine = n===ans;
+    var bd='#e4e0d8', bg='#fff', fg='#121a2b', bBg='#f2efe9', bFg='#8a8578', mark='', mColor='', op='1', hbd='#2b57cc';
+    if (reveal) {
+      op = (isC||isMine) ? '1' : '.62';
+      if (isC)               { bd='#8fc7a7'; bg='#eef7f1'; fg='#1f5c3e'; bBg='#2e7d55'; bFg='#fff'; mark='✓'; mColor='#2e7d55'; }
+      if (isMine && !isC)    { bd='#e0a49a'; bg='#fdf0ee'; fg='#8f2f25'; bBg='#c04437'; bFg='#fff'; mark='✕'; mColor='#c04437'; }
+    } else if (isMine)       { bd='#121a2b'; bg='#f7f6f2'; bBg='#121a2b'; bFg='#f5f3ef'; }
+    var locked = reveal && LOCK;
+    return '<button type="button" data-act="pick" data-n="'+n+'" class="h-opt'+(locked?' locked':'')+'" style="--hbd:'+hbd+';display:flex;gap:13px;align-items:flex-start;width:100%;text-align:left;padding:14px 15px;border-radius:13px;font-size:15px;line-height:1.5;transition:border-color .15s ease,background .15s ease,transform .12s ease;border:1.5px solid '+bd+';background:'+bg+';color:'+fg+';cursor:'+(locked?'default':'pointer')+';opacity:'+op+'">' +
+      '<span style="flex-shrink:0;width:24px;height:24px;border-radius:7px;display:flex;align-items:center;justify-content:center;'+mono+';font-size:11.5px;font-weight:600;margin-top:1px;background:'+bBg+';color:'+bFg+'">'+LETTERS[n]+'</span>' +
+      '<span style="flex:1;min-width:0;text-wrap:pretty">'+esc(text)+'</span>' +
+      (mark ? '<span style="flex-shrink:0;'+mono+';font-size:14px;font-weight:600;margin-top:1px;color:'+mColor+'">'+mark+'</span>' : '') +
+      '</button>';
+  }).join('');
+
+  var expl = reveal ? '<div style="margin-top:20px;padding:16px 18px;background:#f7f6f2;border-left:2.5px solid #2b57cc;border-radius:0 12px 12px 0;animation:qFade .26s ease">' +
+      '<div style="'+mono+';font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:#2b57cc;margin-bottom:8px">Por quê</div>' +
+      '<p style="margin:0;font-size:14.5px;line-height:1.68;color:#39404f;text-wrap:pretty">'+esc(q.explanation)+'</p></div>' : '';
+
+  var blank = counts().blank;
+  var warn = S.warn ? '<div style="margin-top:14px;padding:15px 17px;background:#fdf7e9;border:1px solid #e8d5a3;border-radius:14px;animation:qFade .22s ease">' +
+      '<p style="margin:0 0 12px;font-size:14px;line-height:1.55;color:#6b5620">'+blank+(blank===1?' questão ainda está em branco.':' questões ainda estão em branco.')+' Você pode voltar nelas ou finalizar assim mesmo.</p>' +
+      '<div style="display:flex;flex-wrap:wrap;gap:8px">' +
+        '<button type="button" data-act="gotoBlank" style="background:#121a2b;color:#f5f3ef;border:0;border-radius:9px;padding:9px 16px;font-size:13px;font-weight:500;cursor:pointer">Ir para a 1ª em branco</button>' +
+        '<button type="button" data-act="force" style="background:none;color:#6b5620;border:1px solid #e8d5a3;border-radius:9px;padding:9px 16px;font-size:13px;cursor:pointer">Finalizar assim mesmo</button>' +
+      '</div></div>' : '';
+
+  var last = S.i === S.order.length-1;
+  var early = !last && (S.order.length - blank) > 0;
+
+  document.getElementById('stage').innerHTML =
+    '<section style="padding:26px 0 0">' +
+      '<article style="background:#fff;border:1px solid #e4e0d8;border-radius:18px;padding:26px 22px 24px;box-shadow:0 1px 2px rgba(18,26,43,.04),0 12px 28px -18px rgba(18,26,43,.18)">' +
+        '<div style="display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:14px">' +
+          '<div style="'+mono+';font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:#2b57cc">Questão '+pad(S.i+1)+'</div>' +
+          '<div style="'+mono+';font-size:10.5px;letter-spacing:.06em;color:'+sColor+'">'+status+'</div>' +
+        '</div>' +
+        '<h2 style="font-family:\'Newsreader\',Georgia,serif;font-size:22px;line-height:1.42;font-weight:400;letter-spacing:-.012em;margin:0 0 22px;text-wrap:pretty">'+esc(q.question)+'</h2>' +
+        figura(q, 'qfig') +
+        '<div style="display:flex;flex-direction:column;gap:9px">'+opts+'</div>' + expl +
+        (reveal ? chatBox(q, ans===q.correctIndex) : '') +
+      '</article>' + warn +
+      '<div style="display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:18px">' +
+        '<button type="button" data-act="prev" class="h-line" style="background:none;border:1px solid #ddd8ce;border-radius:11px;padding:12px 18px;font-size:14px;cursor:pointer;transition:border-color .15s ease,color .15s ease;color:'+(S.i===0?'#c4bfb4':'#121a2b')+';pointer-events:'+(S.i===0?'none':'auto')+'">← Anterior</button>' +
+        '<div style="display:flex;align-items:center;gap:8px">' +
+          (early ? '<button type="button" data-act="finish" class="h-ink" style="background:none;border:0;padding:12px 6px;'+mono+';font-size:11.5px;letter-spacing:.06em;text-transform:uppercase;color:#8a8578;cursor:pointer;text-decoration:underline;text-underline-offset:3px">Finalizar</button>' : '') +
+          '<button type="button" data-act="next" class="h-darkflat" style="background:#121a2b;color:#f5f3ef;border:0;border-radius:11px;padding:12px 22px;font-size:14px;font-weight:500;cursor:pointer;transition:background .16s ease">'+(last?'Finalizar':'Próxima →')+'</button>' +
+        '</div></div></section>';
+}
+
+/* ── resultado + gabarito comentado ────────────────────────────────────────── */
+function reviewList(){
+  return S.order.map(function(q,n){
+    var a = S.answers[n], ok = a!==null && a===q.correctIndex;
+    return { idx:n, ok:ok, blank:a===null, q:q, a:a };
+  }).filter(function(r){
+    return S.filter==='all' || (S.filter==='wrong'&&!r.ok&&!r.blank) || (S.filter==='right'&&r.ok) || (S.filter==='blank'&&r.blank);
+  });
+}
+
+function renderResult(){
+  var mono = "font-family:'IBM Plex Mono',monospace";
+  var c = counts(), pct = c.total ? Math.round(c.hit/c.total*100) : 0;
+
+  var title='Precisa revisar', msg='Releia o material com atenção e refaça o quiz — as explicações abaixo cobrem cada erro.';
+  if (pct>=90)      { title='Domínio sólido';   msg='Desempenho excelente. Confira as explicações das que escaparam e siga em frente.'; }
+  else if (pct>=70) { title='Bom desempenho';   msg='Base consistente. Revise os pontos errados abaixo para fechar as lacunas.'; }
+  else if (pct>=50) { title='Meio do caminho';  msg='Você acertou o essencial, mas há lacunas. Comece pelo filtro de erradas.'; }
+
+  var stat = function(v,l,color){
+    return '<div style="background:#faf9f6;padding:14px 10px">' +
+      '<div style="'+mono+';font-size:19px;font-weight:500;color:'+color+'">'+v+'</div>' +
+      '<div style="'+mono+';font-size:9.5px;letter-spacing:.09em;text-transform:uppercase;color:#8a8578;margin-top:2px">'+l+'</div></div>';
+  };
+
+  var fdefs = [['all','Todas',c.total],['wrong','Erradas',c.miss],['right','Certas',c.hit],['blank','Em branco',c.blank]];
+  var filters = fdefs.map(function(f){
+    var on = S.filter===f[0];
+    return '<button type="button" data-act="filter" data-k="'+f[0]+'" class="h-line" style="border-radius:99px;padding:8px 14px;font-size:13px;cursor:pointer;transition:all .15s ease;border:1px solid '+(on?'#121a2b':'#ddd8ce')+';background:'+(on?'#121a2b':'transparent')+';color:'+(on?'#f5f3ef':'#5b6478')+'">'+f[1]+' '+f[2]+'</button>';
+  }).join('');
+
+  var list = reviewList();
+  var allOpen = list.length>0 && list.every(function(r){ return S.open[r.idx]; });
+
+  var cards = list.map(function(r){
+    var numBg='#f0ede7', numFg='#8a8578';
+    if (!r.blank) { if (r.ok) { numBg='#e3f0e8'; numFg='#1f5c3e'; } else { numBg='#fbe6e2'; numFg='#8f2f25'; } }
+    var open = !!S.open[r.idx];
+    var body = '';
+    if (open) {
+      var opts = r.q.options.map(function(text,n){
+        var isC = n===r.q.correctIndex, isMine = n===r.a;
+        var bd='#eeebe4', bg='#fbfaf8', fg='#5b6478', bBg='#f0ede7', bFg='#8a8578', tag='', tBg='', tFg='';
+        if (isC)            { bd='#bcdcc9'; bg='#eef7f1'; fg='#1f5c3e'; bBg='#2e7d55'; bFg='#fff'; tag='Correta'; tBg='#d9ede1'; tFg='#1f5c3e'; }
+        if (isMine && !isC) { bd='#eec4bd'; bg='#fdf0ee'; fg='#8f2f25'; bBg='#c04437'; bFg='#fff'; tag='Sua resposta'; tBg='#f7ddd8'; tFg='#8f2f25'; }
+        if (isMine && isC)  { tag='Sua resposta ✓'; }
+        return '<div style="display:flex;gap:11px;align-items:flex-start;padding:11px 13px;border-radius:11px;font-size:14px;line-height:1.5;border:1px solid '+bd+';background:'+bg+';color:'+fg+'">' +
+          '<span style="flex-shrink:0;width:21px;height:21px;border-radius:6px;display:flex;align-items:center;justify-content:center;'+mono+';font-size:10.5px;font-weight:600;background:'+bBg+';color:'+bFg+'">'+LETTERS[n]+'</span>' +
+          '<span style="flex:1;min-width:0;text-wrap:pretty">'+esc(text)+'</span>' +
+          (tag ? '<span style="flex-shrink:0;'+mono+';font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;padding:3px 7px;border-radius:6px;margin-top:1px;background:'+tBg+';color:'+tFg+'">'+tag+'</span>' : '') +
+          '</div>';
+      }).join('');
+      body = '<div style="padding:2px 15px 18px;animation:qDrawer .2s ease">' +
+        '<div style="height:1px;background:#eeebe4;margin:0 0 16px"></div>' +
+        '<p style="font-family:\'Newsreader\',Georgia,serif;font-size:18px;line-height:1.5;margin:0 0 16px;text-wrap:pretty">'+esc(r.q.question)+'</p>' +
+        figura(r.q) +
+        '<div style="display:flex;flex-direction:column;gap:7px">'+opts+'</div>' +
+        '<div style="margin-top:16px;padding:14px 16px;background:#f7f6f2;border-left:2.5px solid #2b57cc;border-radius:0 11px 11px 0">' +
+          '<div style="'+mono+';font-size:9.5px;letter-spacing:.16em;text-transform:uppercase;color:#2b57cc;margin-bottom:7px">Por quê</div>' +
+          '<p style="margin:0;font-size:14px;line-height:1.65;color:#39404f;text-wrap:pretty">'+esc(r.q.explanation)+'</p></div>' +
+        '<button type="button" data-act="jump" data-n="'+r.idx+'" style="margin-top:14px;background:none;border:0;padding:0;'+mono+';font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:#2b57cc;cursor:pointer;text-decoration:underline;text-underline-offset:3px">Abrir no quiz →</button></div>';
+    }
+    return '<div style="background:#fff;border:1px solid '+(open?'#c9c3b6':'#e4e0d8')+';border-radius:14px;overflow:hidden;transition:border-color .15s ease">' +
+      '<button type="button" data-act="toggle" data-n="'+r.idx+'" style="display:flex;align-items:center;gap:12px;width:100%;text-align:left;background:none;border:0;padding:14px 15px;cursor:pointer">' +
+        '<span style="flex-shrink:0;width:28px;height:28px;border-radius:8px;display:flex;align-items:center;justify-content:center;'+mono+';font-size:12px;font-weight:600;background:'+numBg+';color:'+numFg+'">'+pad(r.idx+1)+'</span>' +
+        '<span style="flex:1;min-width:0;font-size:14px;line-height:1.45;color:#39404f;overflow:hidden;text-overflow:ellipsis;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical">'+esc(r.q.question)+'</span>' +
+        '<span style="flex-shrink:0;'+mono+';font-size:16px;color:#8a8578;width:16px;text-align:center">'+(open?'−':'+')+'</span>' +
+      '</button>' + body + '</div>';
+  }).join('');
+
+  document.getElementById('stage').innerHTML =
+    '<section style="padding:34px 0 0;animation:qFade .3s ease">' +
+      '<div style="'+mono+';font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:#2b57cc;margin-bottom:14px">Resultado</div>' +
+      '<h2 style="font-family:\'Newsreader\',Georgia,serif;font-size:36px;line-height:1.12;font-weight:400;letter-spacing:-.025em;margin:0 0 8px">'+title+'</h2>' +
+      '<p style="font-size:15px;line-height:1.6;color:#5b6478;margin:0 0 24px;max-width:48ch;text-wrap:pretty">'+msg+'</p>' +
+      '<div style="height:8px;border-radius:99px;background:#e4e0d8;overflow:hidden;margin-bottom:10px">' +
+        '<div style="height:100%;border-radius:99px;background:#121a2b;transition:width .7s cubic-bezier(.22,1,.36,1);width:'+pct+'%"></div></div>' +
+      '<div style="display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:#e4e0d8;border:1px solid #e4e0d8;border-radius:14px;overflow:hidden;margin-bottom:34px">' +
+        stat(c.hit,'Certas','#2e7d55')+stat(c.miss,'Erradas','#c04437')+stat(c.blank,'Branco','#8a8578')+stat(pct+'%','Aproveit.','#2b57cc') +
+      '</div>' +
+      '<div style="display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-bottom:14px">' +
+        '<h3 style="font-family:\'Newsreader\',Georgia,serif;font-size:22px;font-weight:500;letter-spacing:-.015em;margin:0">Gabarito comentado</h3>' +
+        '<button type="button" data-act="toggleAll" class="h-ink" style="background:none;border:0;padding:6px 0;'+mono+';font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:#5b6478;cursor:pointer;text-decoration:underline;text-underline-offset:3px">'+(allOpen?'Recolher tudo':'Expandir tudo')+'</button>' +
+      '</div>' +
+      '<div style="display:flex;gap:7px;flex-wrap:wrap;margin-bottom:16px">'+filters+'</div>' +
+      '<div style="display:flex;flex-direction:column;gap:8px">'+cards+'</div>' +
+      (list.length===0 ? '<div style="padding:38px 16px;text-align:center;color:#8a8578;font-size:14px;border:1px dashed #ddd8ce;border-radius:14px">Nenhuma questão neste filtro.</div>' : '') +
+      '<div style="display:flex;flex-wrap:wrap;gap:9px;margin-top:28px;padding-top:24px;border-top:1px solid #e4e0d8">' +
+        '<button type="button" data-act="restart" class="h-darkflat" style="background:#121a2b;color:#f5f3ef;border:0;border-radius:11px;padding:13px 24px;font-size:14px;font-weight:500;cursor:pointer;transition:background .16s ease">Refazer o quiz</button>' +
+        '<button type="button" data-act="back" class="h-line" style="background:none;border:1px solid #ddd8ce;border-radius:11px;padding:13px 22px;font-size:14px;cursor:pointer;transition:border-color .15s ease">Voltar às questões</button>' +
+        '<button type="button" data-act="resumo" class="h-line" style="background:none;border:1px solid #ddd8ce;border-radius:11px;padding:13px 22px;font-size:14px;cursor:pointer;transition:border-color .15s ease">Ler o resumo</button>' +
+      '</div></section>';
+}
+
+/* ── render + eventos ──────────────────────────────────────────────────────── */
+
+/* ─── Tutor DeepSeek — só local, só quando a questão foi errada ──────────────
+   A chave vem de ../deepseek_key.js, que não existe na versão publicada: online
+   o arquivo dá 404, dsOn() vira false e o chat simplesmente não é renderizado.
+   O histórico fica em S.chat[idDaQuestao] e sobrevive ao re-render do stage. */
+var DS_MODEL = 'deepseek-flash';
+var DS_URL   = 'https://api.deepseek.com/chat/completions';
+var NLJS     = String.fromCharCode(10);
+var DS_MONO  = "font-family:'IBM Plex Mono',monospace";
+var DS_SANS  = "font-family:'IBM Plex Sans',system-ui,sans-serif";
+
+function dsOn(){ return typeof window.DEEPSEEK_KEY === 'string' && window.DEEPSEEK_KEY.length > 10; }
+
+
+/* ─── markdown do chat ───────────────────────────────────────────────────────
+   O modelo responde em markdown (**negrito**, listas, `codigo`, tabelas). O texto
+   vem de fora, entao a ordem importa: ESCAPA TUDO primeiro com esc() e so depois
+   aplica formatacao — assim nenhuma tag vinda da resposta vira HTML de verdade.
+   Como esc() ja trocou > por &gt;, a citacao casa com &gt; e nao com >.
+   Trechos de codigo saem de cena por um marcador NUL, que nao pode existir
+   no texto escapado, e voltam no fim — assim ` ` protege o que esta dentro. */
+function mdIn(t){
+  var Z = String.fromCharCode(0), codes = [];
+  t = t.replace(/`([^`]+)`/g, function(_, c){
+    codes.push(c);
+    return Z + 'c' + (codes.length - 1) + Z;
+  });
+  t = t.replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>');
+  t = t.replace(/__([^_]+)__/g, '<strong>$1</strong>');
+  t = t.replace(/(^|[\s(])\*([^*\n]+)\*/g, '$1<em>$2</em>');
+  t = t.replace(/(^|[\s(])_([^_\n]+)_/g, '$1<em>$2</em>');
+  t = t.replace(/\[([^\]]+)\]\((https?:\/\/[^)\s]+)\)/g,
+    '<a href="$2" target="_blank" rel="noopener" style="color:#2b57cc">$1</a>');
+  return t.replace(new RegExp(Z + 'c([0-9]+)' + Z, 'g'), function(_, i){
+    return '<code style="' + DS_MONO + ';font-size:12px;background:#f2efe9;' +
+           'border-radius:4px;padding:1px 5px">' + codes[i] + '</code>';
+  });
+}
+
+function mdChat(txt){
+  var Z = String.fromCharCode(0);
+  var t = esc(String(txt == null ? '' : txt));
+  var blocos = [];
+  t = t.replace(/```[a-zA-Z]*\n?([\s\S]*?)```/g, function(_, c){
+    blocos.push(c.replace(/\n+$/, ''));
+    return Z + 'b' + (blocos.length - 1) + Z;
+  });
+
+  var linhas = t.split('\n'), out = [], lista = null, par = [];
+  function fechaLista(){ if (lista) { out.push('</' + lista + '>'); lista = null; } }
+  function fechaPar(){
+    if (par.length) { out.push('<p style="margin:0 0 9px">' + mdIn(par.join(' ')) + '</p>'); par = []; }
+  }
+  function fecha(){ fechaPar(); fechaLista(); }
+
+  for (var i = 0; i < linhas.length; i++){
+    var l = linhas[i], t2 = l.trim();
+    if (!t2) { fecha(); continue; }
+
+    var bl = t2.match(new RegExp('^' + Z + 'b([0-9]+)' + Z + '$'));
+    if (bl) {
+      fecha();
+      out.push('<pre style="margin:0 0 9px;padding:9px 11px;background:#f7f6f2;border-radius:9px;' +
+               'overflow-x:auto;' + DS_MONO + ';font-size:12px;line-height:1.5">' + blocos[bl[1]] + '</pre>');
+      continue;
+    }
+
+    // tabela: linha com | ... | seguida da separadora | --- | --- |
+    if (t2.charAt(0) === '|' && i + 1 < linhas.length && /^\|[\s:|-]+\|$/.test(linhas[i+1].trim())) {
+      fecha();
+      var celulas = function(linha){
+        return linha.trim().replace(/^\||\|$/g, '').split('|').map(function(c){ return mdIn(c.trim()); });
+      };
+      var cab = celulas(t2), corpo = [];
+      i += 2;
+      while (i < linhas.length && linhas[i].trim().charAt(0) === '|') { corpo.push(celulas(linhas[i].trim())); i++; }
+      i--;
+      var cel = 'padding:5px 9px;border-bottom:1px solid #eae6de;text-align:left;vertical-align:top';
+      out.push('<div style="overflow-x:auto;margin:0 0 9px">' +
+        '<table style="border-collapse:collapse;font-size:12.5px;width:100%">' +
+        '<thead><tr>' + cab.map(function(c){ return '<th style="' + cel + ';font-weight:600">' + c + '</th>'; }).join('') + '</tr></thead>' +
+        '<tbody>' + corpo.map(function(r){
+          return '<tr>' + r.map(function(c){ return '<td style="' + cel + '">' + c + '</td>'; }).join('') + '</tr>';
+        }).join('') + '</tbody></table></div>');
+      continue;
+    }
+
+    var h = t2.match(/^#{1,6}\s+(.*)$/);
+    if (h) {
+      fecha();
+      out.push('<div style="font-weight:600;color:#121a2b;margin:11px 0 5px">' + mdIn(h[1]) + '</div>');
+      continue;
+    }
+
+    if (/^(---+|\*\*\*+)$/.test(t2)) {
+      fecha();
+      out.push('<hr style="border:0;border-top:1px solid #eae6de;margin:11px 0">');
+      continue;
+    }
+
+    var cit = t2.match(/^&gt;\s?(.*)$/);
+    if (cit) {
+      fecha();
+      out.push('<div style="margin:0 0 9px;padding:7px 11px;border-left:2.5px solid #c9d6f7;' +
+               'background:#f7f9fe;border-radius:0 7px 7px 0">' + mdIn(cit[1]) + '</div>');
+      continue;
+    }
+
+    var mUl = t2.match(/^[-*•]\s+(.*)$/);
+    var mOl = t2.match(/^\d+[.)]\s+(.*)$/);
+    if (mUl || mOl) {
+      var tipo = mUl ? 'ul' : 'ol';
+      fechaPar();
+      if (lista !== tipo) {
+        fechaLista();
+        out.push('<' + tipo + ' style="margin:0 0 9px;padding-left:19px">');
+        lista = tipo;
+      }
+      out.push('<li style="margin:3px 0">' + mdIn((mUl || mOl)[1]) + '</li>');
+      continue;
+    }
+
+    fechaLista();
+    par.push(t2);
+  }
+  fecha();
+  return out.join('');
+}
+
+function msgHTML(m){
+  if (m.role === 'user')
+    return '<div style="margin:0 0 10px;text-align:right">' +
+      '<span style="display:inline-block;max-width:88%;text-align:left;background:#f2efe9;' +
+      'border-radius:12px 12px 3px 12px;padding:9px 12px;font-size:13.5px;line-height:1.6;' +
+      'color:#39404f;text-wrap:pretty">' + esc(m.content) + '</span></div>';
+  return '<div style="margin:0 0 12px">' +
+    '<div style="' + DS_MONO + ';font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;' +
+    'color:#2b57cc;margin-bottom:4px">DeepSeek</div>' +
+    '<div style="font-size:13.5px;line-height:1.65;color:#39404f;text-wrap:pretty">' +
+    mdChat(m.content) + '</div></div>';
+}
+
+function chatBox(q, acertou){
+  if (!dsOn()) return '';
+  var chamada = acertou ? 'Quer ir mais fundo?' : 'Ainda com dúvida?';
+  var dica = acertou ? 'Por que as outras estão erradas?' : 'Por que a que eu marquei está errada?';
+  var hist = (S.chat[q.id] || []).map(msgHTML).join('');
+  return '<div id="ds" data-qid="' + q.id + '" style="margin-top:14px;border:1px solid #e4e0d8;' +
+      'border-radius:14px;background:#fff;overflow:hidden;animation:qFade .26s ease">' +
+      '<div style="display:flex;align-items:center;gap:8px;padding:11px 15px;' +
+        'border-bottom:1px solid #f0ede6;background:#faf9f6">' +
+        '<span style="' + DS_MONO + ';font-size:10px;letter-spacing:.16em;text-transform:uppercase;' +
+        'color:#2b57cc">' + chamada + '</span>' +
+        '<span style="font-size:12px;color:#8a8578">pergunte ao DeepSeek</span></div>' +
+      '<div id="dsLog" style="max-height:280px;overflow-y:auto;padding:' + (hist ? '12px 15px' : '0') + '">' +
+        hist + '</div>' +
+      '<div style="display:flex;gap:8px;padding:11px 12px;border-top:1px solid #f0ede6">' +
+        '<input id="dsIn" type="text" autocomplete="off" ' +
+          'placeholder="' + dica + '" ' +
+          'style="flex:1;min-width:0;border:1px solid #e4e0d8;border-radius:10px;padding:10px 12px;' +
+          'font-size:13.5px;' + DS_SANS + ';color:#121a2b;background:#fff;outline:none">' +
+        '<button type="button" data-act="dsSend" class="h-darkflat" style="flex-shrink:0;' +
+          'background:#121a2b;color:#f5f3ef;border:0;border-radius:10px;padding:10px 16px;' +
+          'font-size:13px;font-weight:500;cursor:pointer;transition:background .16s ease">Enviar</button>' +
+      '</div></div>';
+}
+
+function dsContexto(q, ans){
+  var alts = q.options.map(function(o, n){ return LETTERS[n] + ') ' + o; }).join(NLJS);
+  return 'Questao: ' + q.question + NLJS + alts + NLJS +
+    'Resposta correta: ' + LETTERS[q.correctIndex] + ') ' + q.options[q.correctIndex] + NLJS +
+    'O estudante marcou: ' + (ans === null ? 'nada' : LETTERS[ans] + ') ' + q.options[ans]) + NLJS +
+    'Explicacao que ele ja tem: ' + q.explanation;
+}
+
+A.dsSend = function(){
+  var box = document.getElementById('ds');
+  if (!box || !dsOn() || box.getAttribute('data-busy')) return;
+  var input = document.getElementById('dsIn'), log = document.getElementById('dsLog');
+  var texto = (input.value || '').trim();
+  if (!texto) return;
+
+  var qid = parseInt(box.getAttribute('data-qid'), 10), q = null, ans = null;
+  for (var i = 0; i < S.order.length; i++)
+    if (S.order[i].id === qid) { q = S.order[i]; ans = S.answers[i]; }
+  if (!q) return;
+
+  S.chat[qid] = S.chat[qid] || [];
+  S.chat[qid].push({ role:'user', content:texto });
+  input.value = '';
+  log.style.padding = '12px 15px';
+  log.insertAdjacentHTML('beforeend', msgHTML({ role:'user', content:texto }));
+  log.insertAdjacentHTML('beforeend',
+    '<div><div style="' + DS_MONO + ';font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;' +
+    'color:#2b57cc;margin-bottom:4px">DeepSeek</div>' +
+    '<div id="dsTxt" style="font-size:13.5px;line-height:1.65;color:#8a8578;' +
+    'text-wrap:pretty">pensando…</div></div>');
+  log.scrollTop = log.scrollHeight;
+  box.setAttribute('data-busy', '1');
+
+  var acertou = (ans === q.correctIndex);
+  var situacao = acertou
+    ? 'Voce e um tutor de medicina. O estudante do 7o semestre ACERTOU esta questao, mas ficou com uma duvida. '
+    : 'Voce e um tutor de medicina. O estudante do 7o semestre ERROU esta questao. ';
+  var msgs = [
+    { role:'system', content: situacao +
+      'Responda em portugues do Brasil, direto ao ponto, no maximo 150 palavras. ' +
+      'Traga o dado concreto (valor, criterio, mecanismo) em vez de generalidade. ' +
+      'Nao repita a explicacao que ele ja tem; foque na duvida que ele trouxe.' },
+    { role:'user', content: dsContexto(q, ans) }
+  ];
+  var h = S.chat[qid];
+  for (var j = 0; j < h.length; j++) msgs.push({ role:h[j].role, content:h[j].content });
+
+  dsStream(msgs, function(txt, fim, erro){
+    var el = document.getElementById('dsTxt');
+    if (!el) { box.removeAttribute('data-busy'); return; }
+    if (erro) { el.style.color = '#c04437'; el.textContent = erro; box.removeAttribute('data-busy'); return; }
+    el.style.color = '#39404f';
+    el.innerHTML = mdChat(txt);
+    var lg = document.getElementById('dsLog'); if (lg) lg.scrollTop = lg.scrollHeight;
+    if (fim) { el.removeAttribute('id'); S.chat[qid].push({ role:'assistant', content:txt }); box.removeAttribute('data-busy'); }
+  });
+};
+
+function dsStream(messages, cb){
+  var acc = '';
+  fetch(DS_URL, {
+    method: 'POST',
+    headers: { 'Content-Type':'application/json', 'Authorization':'Bearer ' + window.DEEPSEEK_KEY },
+    body: JSON.stringify({ model:DS_MODEL, messages:messages, stream:true, max_tokens:1200, temperature:0.3 })
+  }).then(function(r){
+    if (!r.ok) return r.text().then(function(t){
+      throw new Error(
+        r.status === 401 ? 'Chave recusada (401). Confira o deepseek_key.js.' :
+        r.status === 402 ? 'Sem saldo na conta DeepSeek (402).' :
+        r.status === 429 ? 'Limite de uso atingido (429). Tente daqui a pouco.' :
+        'Erro ' + r.status + ': ' + String(t).slice(0, 120));
+    });
+    var reader = r.body.getReader(), dec = new TextDecoder(), buf = '';
+    (function pump(){
+      return reader.read().then(function(res){
+        if (res.done) { cb(acc || '(resposta vazia)', true); return; }
+        buf += dec.decode(res.value, { stream:true });
+        var linhas = buf.split(NLJS);
+        buf = linhas.pop();
+        for (var i = 0; i < linhas.length; i++){
+          var l = linhas[i].trim();
+          if (l.indexOf('data:') !== 0) continue;
+          var carga = l.slice(5).trim();
+          if (carga === '[DONE]') continue;
+          try {
+            var d = JSON.parse(carga).choices[0].delta;
+            if (d && d.content) { acc += d.content; cb(acc, false); }
+          } catch (_){}
+        }
+        return pump();
+      });
+    })();
+  }).catch(function(e){
+    cb('', true, 'Nao consegui falar com o DeepSeek: ' + (e && e.message ? e.message : e));
+  });
+}
+
+function render(){
+  renderHeader();
+  if (S.view === 'home')        renderHome();
+  else if (S.view === 'resumo') renderResumo();
+  else if (S.finished)          renderResult();
+  else                          renderQuestion();
+}
+
+/* lightbox: clique em qualquer figura amplia */
+document.addEventListener('click', function(e){
+  var lb = document.getElementById('lb');
+  if (e.target.closest('#lb')) { lb.className = ''; return; }
+  var img = e.target.closest('.fig img');
+  if (img) { lb.firstElementChild.src = img.src; lb.className = 'on'; }
+});
+window.addEventListener('keydown', function(e){
+  if (e.key === 'Escape') document.getElementById('lb').className = '';
+});
+
+document.addEventListener('click', function(e){
+  var b = e.target.closest('[data-act]'); if (!b) return;
+  var act = b.getAttribute('data-act'), n = parseInt(b.getAttribute('data-n'),10), k = b.getAttribute('data-k');
+  if (act==='pick'||act==='jump'||act==='toggle') A[act](n);
+  else if (act==='filter') A.filter(k);
+  else if (A[act]) A[act]();
+});
+
+window.addEventListener('keydown', function(e){
+  if (S.view!=='quiz' || !S.started || S.finished) return;
+  var t = e.target, tag = t && t.tagName;
+  if (tag==='INPUT' || tag==='TEXTAREA' || (t && t.isContentEditable)) return;
+  if (e.metaKey||e.ctrlKey||e.altKey) return;
+  if (e.key==='ArrowRight')     { e.preventDefault(); A.go(S.i+1); }
+  else if (e.key==='ArrowLeft') { e.preventDefault(); A.go(S.i-1); }
+  else if (e.key==='Enter')     { e.preventDefault(); A.next(); }
+  else if (/^[1-6]$/.test(e.key)) {
+    var n = parseInt(e.key,10)-1;
+    if (n < S.order[S.i].options.length) A.pick(n);
+  }
+});
+
+render();
+</script>
+</body>
+</html>

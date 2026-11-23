@@ -1,0 +1,195 @@
+{
+  "titulo": "Saúde do Homem",
+  "eyebrow": "Medicina de Família e Comunidade · Referência",
+  "subtitulo": "Muito além da próstata: acesso, masculinidades e rastreio com evidência",
+  "intro": "PNAISH e seus eixos, masculinidades e acesso, causas externas e suicídio, pré-natal do parceiro, rastreamentos com evidência, câncer de próstata e decisão compartilhada, saúde sexual e reprodutiva. Baseado na PNAISH (2009), no Caderno de Atenção Primária nº 29 e em publicações do INCA — não há slide da aula deste tema.",
+  "questoes": [
+    {
+      "question": "A Política Nacional de Atenção Integral à Saúde do Homem (PNAISH), de 2009, organiza suas ações em cinco eixos temáticos. Qual destes é um deles?",
+      "options": [
+        "Paternidade e cuidado",
+        "Rastreio de próstata",
+        "Saúde do trabalhador",
+        "Urologia preventiva"
+      ],
+      "correctIndex": 0,
+      "explanation": "Os cinco eixos da PNAISH são: acesso e acolhimento; saúde sexual e saúde reprodutiva; paternidade e cuidado; doenças prevalentes na população masculina; e prevenção de violências e acidentes. A política vai muito além da próstata — e o Ministério da Saúde não recomenda rastreamento populacional do câncer de próstata."
+    },
+    {
+      "question": "Por que os homens adultos usam menos a atenção primária e costumam chegar ao sistema de saúde pela urgência ou pela atenção especializada?",
+      "options": [
+        "Normas de masculinidade e horários que coincidem com o trabalho",
+        "Menor carga de doenças crônicas em relação à população feminina",
+        "Exclusão formal dos homens da carteira de serviços da APS",
+        "Preferência por planos privados em todas as classes sociais"
+      ],
+      "correctIndex": 0,
+      "explanation": "A masculinidade hegemônica associa o homem à força, à invulnerabilidade e ao papel de provedor; procurar cuidado soa como fraqueza, e a UBS é vista como espaço de mulheres e crianças. Somam-se horários de funcionamento que coincidem com o trabalho. Resultado: o homem chega tarde, pela urgência, com a doença avançada."
+    },
+    {
+      "question": "Entre homens jovens, de 20 a 39 anos, a principal causa de morte no Brasil é o grupo das:",
+      "options": [
+        "Causas externas, como homicídios e acidentes",
+        "Doenças do aparelho circulatório, como o IAM",
+        "Neoplasias, sobretudo o câncer de próstata",
+        "Doenças infecciosas, sobretudo a tuberculose"
+      ],
+      "correctIndex": 0,
+      "explanation": "Homicídios, acidentes de trânsito e suicídios lideram a mortalidade dos homens jovens; cerca de nove em cada dez vítimas de homicídio são homens. Com a idade, as doenças do aparelho circulatório passam à frente. O excesso de mortes evitáveis explica boa parte da expectativa de vida masculina cerca de sete anos menor que a feminina."
+    },
+    {
+      "question": "Sobre o suicídio no Brasil, é correto afirmar que:",
+      "options": [
+        "a taxa é cerca de três a quatro vezes maior em homens que em mulheres",
+        "as tentativas e as mortes por suicídio predominam no sexo masculino",
+        "a taxa é semelhante entre os sexos, pois os métodos são parecidos",
+        "a taxa é maior em mulheres, que procuram menos os serviços de saúde"
+      ],
+      "correctIndex": 0,
+      "explanation": "Homens morrem por suicídio cerca de três a quatro vezes mais que mulheres, por usarem métodos mais letais e procurarem menos ajuda; já as tentativas são mais frequentes entre mulheres. Perguntar diretamente sobre ideação suicida, uso de álcool e acesso a armas faz parte da consulta do homem."
+    },
+    {
+      "question": "Na estratégia Pré-Natal do Parceiro, além de acolher o homem nas consultas, a equipe deve oferecer a ele:",
+      "options": [
+        "testes rápidos de HIV, sífilis e hepatites, exames de rotina e vacinas",
+        "espermograma e dosagem de testosterona para avaliar a fertilidade",
+        "apenas orientações sobre o parto, pois a gestante é o foco do cuidado",
+        "PSA e toque retal, aproveitando a ida do homem à unidade de saúde"
+      ],
+      "correctIndex": 0,
+      "explanation": "O Guia do Pré-Natal do Parceiro (Ministério da Saúde, 2016) prevê testes rápidos para HIV, sífilis e hepatites B e C, tipagem sanguínea e fator Rh, hemograma, glicemia, lipidograma, eletroforese de hemoglobina, aferição de pressão e IMC, atualização vacinal e participação nas consultas, no parto e nos cuidados com o bebê. É porta de entrada do homem na APS."
+    },
+    {
+      "question": "Gestante com sífilis foi tratada adequadamente, mas o parceiro não compareceu à UBS. Qual o principal risco e a conduta?",
+      "options": [
+        "Reinfecção da gestante: convocar e tratar o parceiro sexual",
+        "Nenhum risco: o tratamento da gestante já protege o feto",
+        "Resistência à penicilina: trocar o esquema da gestante",
+        "Sífilis do parceiro é autolimitada: orientar só preservativo"
+      ],
+      "correctIndex": 0,
+      "explanation": "Parceiro não tratado reinfecta a gestante e mantém o risco de sífilis congênita. Ele deve ser testado e tratado; quando exposto nos últimos 90 dias, recebe tratamento mesmo com teste negativo (PCDT-IST 2022). O pré-natal do parceiro existe também por isso."
+    },
+    {
+      "question": "Homem de 58 anos, assintomático e sem história familiar, pede \"o exame da próstata\" porque viu uma campanha do Novembro Azul. Pelas recomendações do Ministério da Saúde e do INCA, a conduta é:",
+      "options": [
+        "Explicar benefícios e danos e decidir junto com ele se fará o PSA",
+        "Pedir PSA e toque retal anuais, que reduzem muito a mortalidade",
+        "Negar o exame, pois o PSA está proibido em homens assintomáticos",
+        "Pedir só o toque retal, que tem acurácia maior que a do PSA"
+      ],
+      "correctIndex": 0,
+      "explanation": "O Ministério da Saúde e o INCA não recomendam o rastreamento populacional do câncer de próstata: o benefício em mortalidade é pequeno e incerto, e os danos são frequentes. Quando o homem pede o exame, a conduta é a decisão compartilhada, explicando benefícios e riscos, sem pedido automático e sem recusa autoritária."
+    },
+    {
+      "question": "Qual é o principal dano do rastreamento do câncer de próstata com PSA?",
+      "options": [
+        "Sobrediagnóstico e sobretratamento de tumores indolentes",
+        "Exposição à radiação ionizante pela repetição dos exames",
+        "Reação alérgica ao contraste usado na coleta do exame",
+        "Atraso no diagnóstico de tumores agressivos sintomáticos"
+      ],
+      "correctIndex": 0,
+      "explanation": "Muitos tumores detectados pelo PSA nunca causariam sintomas nem morte: é o sobrediagnóstico. Tratá-los expõe o homem a incontinência urinária e disfunção erétil sem benefício. Somam-se falsos-positivos (o PSA sobe também na hiperplasia prostática e na prostatite) e biópsias com risco de sangramento e infecção."
+    },
+    {
+      "question": "Homem de 66 anos procura a UBS com jato urinário fraco, noctúria e um episódio de hematúria. Sobre a solicitação de PSA nesse caso, é correto afirmar que:",
+      "options": [
+        "é investigação diagnóstica de quem tem sintomas, não rastreamento",
+        "é rastreamento e, por isso, contraindicado pelo Ministério da Saúde",
+        "só se justifica após os 70 anos, idade do pico de incidência",
+        "é dispensável, pois os sintomas confirmam hiperplasia benigna"
+      ],
+      "correctIndex": 0,
+      "explanation": "Rastreamento é para assintomáticos. Sintomas urinários, hematúria ou toque retal alterado pedem investigação diagnóstica, que inclui PSA, toque retal e outros exames conforme o caso. Sintomas obstrutivos são mais frequentemente hiperplasia benigna, mas hematúria nunca deve ser atribuída a ela sem investigar."
+    },
+    {
+      "question": "Homem de 55 anos, assintomático e sem história familiar, vai à consulta de rotina. Qual rastreamento oncológico tem evidência de benefício e está indicado?",
+      "options": [
+        "Câncer colorretal, por sangue oculto nas fezes ou colonoscopia",
+        "Câncer de próstata, por PSA e toque retal anuais a partir dos 50",
+        "Câncer de testículo, por autoexame mensal ensinado na consulta",
+        "Câncer de pâncreas, por ultrassonografia de abdome a cada 2 anos"
+      ],
+      "correctIndex": 0,
+      "explanation": "O rastreamento do câncer colorretal reduz a mortalidade e é recomendado dos 50 aos 75 anos (Caderno de Atenção Primária nº 29), com pesquisa de sangue oculto nas fezes ou colonoscopia; a USPSTF (2021) antecipou o início para 45 anos. Próstata, testículo e pâncreas não têm rastreamento populacional recomendado."
+    },
+    {
+      "question": "Pelo Caderno de Atenção Primária nº 29 (Rastreamento), a dosagem de lipídios em homens assintomáticos, sem outro fator de risco cardiovascular, está indicada a partir dos:",
+      "options": [
+        "35 anos",
+        "20 anos",
+        "45 anos",
+        "60 anos"
+      ],
+      "correctIndex": 0,
+      "explanation": "O Caderno nº 29 recomenda rastrear dislipidemia em homens a partir dos 35 anos e em mulheres a partir dos 45; homens de 20 a 35 anos são rastreados se tiverem risco cardiovascular aumentado (tabagismo, hipertensão, diabetes, história familiar precoce). O perfil lipídico entra no cálculo do risco cardiovascular global."
+    },
+    {
+      "question": "Sobre o rastreamento de hipertensão arterial em homens adultos assintomáticos, é correto afirmar que:",
+      "options": [
+        "a aferição da PA está indicada para todos os adultos a partir dos 18 anos",
+        "a aferição da PA só está indicada após os 40 anos ou se houver sintomas",
+        "a MAPA de 24 horas é o exame de rastreamento inicial em toda a população",
+        "a PA só deve ser medida se houver história familiar de hipertensão"
+      ],
+      "correctIndex": 0,
+      "explanation": "O rastreamento de hipertensão em adultos a partir dos 18 anos tem forte evidência e é simples: aferir a PA, aproveitando qualquer contato do homem com o serviço. MAPA e MRPA servem para confirmar o diagnóstico e afastar o efeito do avental branco, não para rastrear."
+    },
+    {
+      "question": "Pelo Caderno de Atenção Básica nº 36 do Ministério da Saúde, qual destes homens assintomáticos tem indicação de rastreamento de diabetes tipo 2?",
+      "options": [
+        "Homem de 46 anos, sem outros fatores de risco",
+        "Homem de 30 anos, com IMC 23 e sem antecedentes",
+        "Homem de 25 anos, atleta e sem história familiar",
+        "Homem de 38 anos, com IMC 22 e pressão normal"
+      ],
+      "correctIndex": 0,
+      "explanation": "O rastreamento é indicado para quem tem 45 anos ou mais e, antes disso, para quem tem excesso de peso associado a outro fator de risco, como hipertensão, dislipidemia, história familiar de diabetes, sedentarismo ou doença cardiovascular. Usa-se glicemia de jejum, hemoglobina glicada ou teste oral de tolerância à glicose."
+    },
+    {
+      "question": "Homem de 52 anos, tabagista e sedentário, queixa-se de disfunção erétil progressiva há um ano. Qual a interpretação mais importante para o médico de família?",
+      "options": [
+        "Pode ser marcador precoce de doença cardiovascular e pede avaliação de risco",
+        "É consequência esperada do envelhecimento e não exige nenhuma investigação",
+        "É quase sempre psicogênica e deve ser tratada só com psicoterapia de casal",
+        "Indica deficiência de testosterona e a reposição hormonal deve começar já"
+      ],
+      "correctIndex": 0,
+      "explanation": "A disfunção erétil compartilha fisiopatologia com a aterosclerose e costuma preceder em alguns anos a doença coronariana: é ocasião para avaliar PA, glicemia, lipídios, tabagismo e risco cardiovascular, além de medicamentos e saúde mental. Os inibidores da fosfodiesterase-5 (sildenafila, tadalafila) são contraindicados com nitratos, pelo risco de hipotensão grave."
+    },
+    {
+      "question": "Homem de 23 anos, casado e sem filhos, deseja fazer vasectomia; a esposa não concorda. Pela Lei do Planejamento Familiar, atualizada em 2022, é correto afirmar que:",
+      "options": [
+        "ele pode fazer: tem mais de 21 anos e não precisa do aval da esposa",
+        "não pode fazer: a lei exige 25 anos e pelo menos dois filhos vivos",
+        "não pode fazer: a lei exige o consentimento expresso do cônjuge",
+        "ele pode fazer, mas só após 6 meses de acompanhamento psicológico"
+      ],
+      "correctIndex": 0,
+      "explanation": "A Lei nº 14.443/2022 alterou a Lei nº 9.263/1996: a esterilização voluntária é permitida a partir dos 21 anos ou com pelo menos dois filhos vivos, com prazo mínimo de 60 dias entre a manifestação da vontade e a cirurgia, e sem exigir consentimento do cônjuge. Nesse prazo, a equipe aconselha e informa que é preciso usar outro método até o espermograma confirmar azoospermia."
+    },
+    {
+      "question": "Sobre a vacina contra o HPV para meninos no calendário do SUS, é correto afirmar que:",
+      "options": [
+        "é oferecida a meninos e meninas de 9 a 14 anos, em dose única",
+        "é oferecida apenas a meninas, pois o HPV não causa câncer em homens",
+        "é oferecida a meninos somente após o início da vida sexual",
+        "é oferecida a homens de 30 a 45 anos com mais de um parceiro"
+      ],
+      "correctIndex": 0,
+      "explanation": "O SUS vacina meninos e meninas de 9 a 14 anos contra o HPV, em dose única desde 2024; grupos especiais, como pessoas vivendo com HIV e transplantados, têm esquema ampliado. No homem, o HPV causa verrugas anogenitais e cânceres de pênis, ânus e orofaringe, além de ser transmitido às parcerias."
+    },
+    {
+      "question": "Homem de 45 anos vem à UBS pela primeira vez em 10 anos, apenas para pegar um atestado depois de uma crise de lombalgia. Qual a melhor atitude da equipe?",
+      "options": [
+        "Atender a demanda e aproveitar o contato para cuidado preventivo",
+        "Fornecer só o atestado, pois o motivo da consulta deve ser respeitado",
+        "Recusar o atestado até que ele traga todos os exames de rotina",
+        "Repreendê-lo por não ir à unidade e agendar check-up completo"
+      ],
+      "correctIndex": 0,
+      "explanation": "O homem procura pouco a APS, então cada contato é oportunidade: resolver a demanda trazida e, sem culpabilizar, aferir a PA, perguntar sobre tabagismo, álcool, saúde mental e sexual, vacinas e combinar retorno. Horários estendidos e acolhimento sem julgamento facilitam o vínculo; check-up com bateria de exames sem indicação não é o objetivo."
+    }
+  ]
+}

@@ -1,0 +1,206 @@
+{
+  "titulo": "Saúde da Pessoa com Deficiência",
+  "eyebrow": "Medicina de Família e Comunidade · Referência",
+  "subtitulo": "Barreiras, autonomia e rede de cuidado: a deficiência pelo modelo social",
+  "intro": "Modelo biomédico e modelo social, Convenção da ONU, Lei Brasileira de Inclusão, capacitismo, decisão apoiada e curatela, RCPD e CER, papel da APS, triagens e estimulação precoce. Baseado na LBI (2015), na Convenção da ONU e em publicações do Ministério da Saúde — não há slide da aula deste tema.",
+  "questoes": [
+    {
+      "question": "Uma cadeirante não consegue fazer o preventivo na UBS porque a maca ginecológica é fixa e alta e o banheiro não comporta a cadeira. Pelo modelo social da deficiência, o problema central está:",
+      "options": [
+        "nas barreiras do serviço, que não se adaptou à usuária",
+        "na lesão medular da usuária, que precisa ser reabilitada",
+        "na falta de um acompanhante que a ajude a subir na maca",
+        "na escolha da usuária de não procurar serviço especializado"
+      ],
+      "correctIndex": 0,
+      "explanation": "O modelo biomédico localiza a deficiência no corpo, como lesão a ser curada ou corrigida. O modelo social, nascido do movimento das pessoas com deficiência, desloca o problema para as barreiras que a sociedade impõe — aqui, maca e banheiro inacessíveis. A Convenção da ONU e a LBI adotam essa visão, combinada no modelo biopsicossocial."
+    },
+    {
+      "question": "Pela Lei Brasileira de Inclusão (Lei nº 13.146/2015), pessoa com deficiência é aquela que tem impedimento de longo prazo, de natureza física, mental, intelectual ou sensorial, que:",
+      "options": [
+        "em interação com barreiras, pode obstruir sua participação plena na sociedade",
+        "seja comprovado por laudo médico com CID e grau de incapacidade para o trabalho",
+        "a torne incapaz para os atos da vida civil, exigindo curatela permanente",
+        "esteja presente desde o nascimento e seja considerado irreversível"
+      ],
+      "correctIndex": 0,
+      "explanation": "A definição da LBI, a mesma da Convenção da ONU, diz que a deficiência resulta da interação entre o impedimento de longo prazo e as barreiras, e não do impedimento sozinho. Por isso, quando necessária, a avaliação é biopsicossocial, por equipe multiprofissional, considerando funções do corpo, fatores ambientais e pessoais, atividades e participação."
+    },
+    {
+      "question": "A Convenção da ONU sobre os Direitos das Pessoas com Deficiência (2006) tem, no ordenamento jurídico brasileiro, status equivalente a:",
+      "options": [
+        "Emenda constitucional",
+        "Lei ordinária federal",
+        "Simples recomendação",
+        "Norma infralegal comum"
+      ],
+      "correctIndex": 0,
+      "explanation": "A Convenção e seu Protocolo Facultativo foram aprovados pelo rito do art. 5º, § 3º, da Constituição (Decreto Legislativo nº 186/2008, promulgados pelo Decreto nº 6.949/2009) e equivalem a emenda constitucional — o primeiro tratado de direitos humanos com esse status no Brasil."
+    },
+    {
+      "question": "Qual a terminologia adequada, adotada pela Convenção da ONU e pela LBI?",
+      "options": [
+        "Pessoa com deficiência",
+        "Portador de deficiência",
+        "Pessoa excepcional",
+        "Pessoa incapacitada"
+      ],
+      "correctIndex": 0,
+      "explanation": "\"Pessoa com deficiência\" põe a pessoa antes da condição e não sugere que a deficiência seja algo que se \"porta\" e se pode largar. \"Portador\", \"excepcional\", \"incapacitado\" e \"pessoa com necessidades especiais\" são termos superados."
+    },
+    {
+      "question": "Na consulta de um homem surdo que veio acompanhado da irmã, o médico dirige todas as perguntas à irmã e não olha para o paciente. Pela LBI, essa conduta é exemplo de:",
+      "options": [
+        "Barreira atitudinal",
+        "Barreira tecnológica",
+        "Barreira urbanística",
+        "Barreira arquitetônica"
+      ],
+      "correctIndex": 0,
+      "explanation": "A LBI lista seis tipos de barreira: urbanísticas, arquitetônicas, nos transportes, nas comunicações e na informação, atitudinais e tecnológicas. Atitudinal é o comportamento que impede ou prejudica a participação em igualdade — como tratar o paciente surdo como se não estivesse ali. Também falha a comunicação: ele tem direito a atendimento em Libras."
+    },
+    {
+      "question": "O profissional não pergunta sobre vida sexual e contracepção a uma mulher de 25 anos com paralisia cerebral, por presumir que ela não tem vida sexual. Essa atitude é um exemplo de:",
+      "options": [
+        "Capacitismo, que presume incapacidade pela deficiência",
+        "Prevenção quaternária, que evita intervenções desnecessárias",
+        "Respeito à privacidade, pois o tema não foi trazido por ela",
+        "Ofuscamento diagnóstico, que atribui tudo à deficiência"
+      ],
+      "correctIndex": 0,
+      "explanation": "Capacitismo é o preconceito que presume que a pessoa com deficiência é incapaz, inferior ou assexuada. A LBI garante que a deficiência não afeta a capacidade civil, inclusive para exercer direitos sexuais e reprodutivos e acessar planejamento familiar. Omitir saúde sexual nega cuidado e aumenta a vulnerabilidade a IST, gravidez não planejada e violência."
+    },
+    {
+      "question": "A mãe de uma jovem de 19 anos com deficiência intelectual leve pede à equipe que \"providencie a laqueadura\" da filha, que namora e diz querer ter filhos um dia. Qual a orientação correta?",
+      "options": [
+        "A decisão é da jovem: a lei veda a esterilização sem o seu consentimento",
+        "A mãe pode autorizar a laqueadura, pois responde legalmente pela filha",
+        "A laqueadura é indicada sempre que houver deficiência intelectual",
+        "Basta um laudo psiquiátrico para a mãe autorizar a laqueadura"
+      ],
+      "correctIndex": 0,
+      "explanation": "Pela LBI, a deficiência não afeta a plena capacidade civil, inclusive para decidir sobre o número de filhos e conservar a fertilidade, sendo vedada a esterilização compulsória. A equipe oferece à jovem informação acessível sobre contracepção e planejamento reprodutivo, com o apoio que ela escolher, e conversa com a família."
+    },
+    {
+      "question": "Homem de 35 anos com deficiência intelectual quer ajuda para decisões sobre tratamentos e finanças, sem perder o direito de decidir. Ele indica duas pessoas de sua confiança para apoiá-lo, com homologação judicial. Esse instrumento é a:",
+      "options": [
+        "Tomada de decisão apoiada",
+        "Curatela compartilhada",
+        "Interdição civil parcial",
+        "Mandato de representação"
+      ],
+      "correctIndex": 0,
+      "explanation": "Na tomada de decisão apoiada (Código Civil, art. 1.783-A, incluído pela LBI), a própria pessoa com deficiência escolhe pelo menos duas pessoas idôneas e de sua confiança para lhe dar informação e apoio em decisões da vida civil. Ela mantém a capacidade e a palavra final; os apoiadores não decidem por ela, ao contrário do curador."
+    },
+    {
+      "question": "Após a LBI, a curatela da pessoa com deficiência passou a ser medida extraordinária, proporcional e restrita a:",
+      "options": [
+        "atos de natureza patrimonial e negocial",
+        "decisões sobre o próprio corpo e a saúde",
+        "casamento, união estável e vida sexual",
+        "direito ao voto e participação política"
+      ],
+      "correctIndex": 0,
+      "explanation": "A curatela, quando necessária, afeta apenas atos patrimoniais e negociais e não alcança o direito ao próprio corpo, à sexualidade, ao matrimônio, à privacidade, à educação, à saúde, ao trabalho e ao voto. Com a LBI, a pessoa com deficiência deixou de ser considerada absolutamente incapaz."
+    },
+    {
+      "question": "Pela LBI, a pessoa com deficiência pode ser submetida a tratamento ou procedimento sem seu consentimento prévio, livre e esclarecido apenas quando:",
+      "options": [
+        "houver risco de morte ou emergência em saúde",
+        "a família autorizar por escrito o procedimento",
+        "a equipe julgar que ela não entende a explicação",
+        "estiver sob tomada de decisão apoiada vigente"
+      ],
+      "correctIndex": 0,
+      "explanation": "O consentimento prévio, livre e esclarecido é indispensável para tratamento, procedimento, hospitalização e pesquisa, com informação em formato acessível. A exceção é risco de morte ou emergência em saúde, resguardado o superior interesse da pessoa. Mesmo sob curatela, ela participa da decisão na maior medida possível."
+    },
+    {
+      "question": "Na Rede de Cuidados à Pessoa com Deficiência (RCPD), instituída em 2012, um Centro Especializado em Reabilitação tipo III (CER III) é aquele que:",
+      "options": [
+        "atende três das quatro modalidades de reabilitação",
+        "é o terceiro nível da rede, acima do hospital geral",
+        "atende pessoas com três ou mais deficiências associadas",
+        "funciona 24 horas, inclusive com leitos de internação"
+      ],
+      "correctIndex": 0,
+      "explanation": "Os CER se classificam pelo número de modalidades de reabilitação que oferecem, entre quatro — auditiva, física, intelectual e visual: CER II (duas), CER III (três) e CER IV (quatro). A RCPD (Portaria GM/MS nº 793/2012) articula atenção primária, atenção especializada em reabilitação (CER, oficinas ortopédicas, CEO) e atenção hospitalar e de urgência."
+    },
+    {
+      "question": "Sobre o papel da equipe de Saúde da Família no cuidado da pessoa com deficiência, é correto afirmar que ela:",
+      "options": [
+        "segue responsável pelo cuidado integral, mesmo com o CER acompanhando",
+        "deixa de acompanhar a pessoa depois que ela é vinculada a um CER",
+        "cuida apenas de demandas ligadas diretamente à deficiência",
+        "dispensa rastreamentos e vacinas, já feitos pela reabilitação"
+      ],
+      "correctIndex": 0,
+      "explanation": "A APS é porta de entrada e coordenadora do cuidado: identifica precocemente, acompanha de forma longitudinal, faz visita domiciliar, apoia o cuidador e articula com o CER e a eMulti. Pessoas com deficiência precisam de todo o cuidado habitual — rastreamentos, vacinas, pré-natal, saúde sexual —, que costuma ser negligenciado."
+    },
+    {
+      "question": "Homem de 40 anos com deficiência intelectual, que se comunica pouco verbalmente, passou a ficar agitado e a bater a mão no rosto há uma semana. O cuidador acha que \"é da deficiência\". O primeiro passo é:",
+      "options": [
+        "Investigar causa clínica, como dor dentária, otite ou constipação",
+        "Iniciar antipsicótico para controlar o comportamento agressivo",
+        "Encaminhar ao CAPS como transtorno de conduta associado",
+        "Orientar o cuidador de que é comportamento esperado na condição"
+      ],
+      "correctIndex": 0,
+      "explanation": "Atribuir um sintoma novo à deficiência sem investigar é o ofuscamento diagnóstico. Em quem tem dificuldade de comunicação, mudança de comportamento costuma ser a forma de expressar dor ou doença: dor dentária, otite, constipação, infecção urinária, efeito de medicamento. Antipsicótico para \"comportamento\" sem investigar é erro comum."
+    },
+    {
+      "question": "Sobre a triagem auditiva neonatal (teste da orelhinha), é correto afirmar que:",
+      "options": [
+        "é obrigatória por lei e deve ser feita de preferência antes da alta",
+        "só é indicada para recém-nascidos com fator de risco para surdez",
+        "deve ser feita aos 2 anos, quando a criança já fala as primeiras palavras",
+        "o resultado normal dispensa vigilância da audição e da linguagem"
+      ],
+      "correctIndex": 0,
+      "explanation": "A triagem auditiva neonatal é universal e obrigatória (Lei nº 12.303/2010), feita de preferência antes da alta e no primeiro mês de vida, com emissões otoacústicas ou PEATE automático (preferido quando há fator de risco). A meta é diagnosticar a perda até os 3 meses e intervir até os 6. Mesmo com teste normal, a vigilância da linguagem continua."
+    },
+    {
+      "question": "Lactente de 8 meses tem atraso no desenvolvimento motor identificado na consulta de puericultura. Sobre a estimulação precoce, é correto afirmar que:",
+      "options": [
+        "deve começar logo, aproveitando a maior plasticidade cerebral até os 3 anos",
+        "só deve começar após o diagnóstico etiológico definitivo do atraso",
+        "é indicada apenas para crianças com síndrome genética confirmada",
+        "deve esperar a idade escolar, quando a criança colabora com a terapia"
+      ],
+      "correctIndex": 0,
+      "explanation": "A estimulação precoce, de 0 a 3 anos, aproveita a janela de maior neuroplasticidade e não espera o diagnóstico etiológico: começa diante do atraso. O Ministério da Saúde publicou diretrizes de estimulação precoce em 2016, após a epidemia de Zika. A APS identifica pela vigilância do desenvolvimento na Caderneta da Criança, orienta a família e encaminha à reabilitação."
+    },
+    {
+      "question": "Sobre a detecção precoce do transtorno do espectro autista (TEA) no SUS, é correto afirmar que:",
+      "options": [
+        "é obrigatório aplicar instrumento de risco psíquico nos primeiros 18 meses",
+        "o rastreamento só deve ser feito a partir dos 6 anos, na idade escolar",
+        "o TEA não é considerado deficiência para nenhum efeito legal no Brasil",
+        "o diagnóstico exige ressonância de crânio e eletroencefalograma alterados"
+      ],
+      "correctIndex": 0,
+      "explanation": "A Lei nº 13.438/2017 tornou obrigatória, nos primeiros 18 meses, a aplicação de protocolo para detectar risco ao desenvolvimento psíquico; o M-CHAT-R/F é usado entre 16 e 30 meses. Pela Lei Berenice Piana (Lei nº 12.764/2012), a pessoa com TEA é considerada pessoa com deficiência para todos os efeitos legais. O diagnóstico é clínico."
+    },
+    {
+      "question": "Mulher de 28 anos com deficiência intelectual tem lesões suspeitas de violência sexual. Além do cuidado clínico, a LBI determina que o serviço de saúde:",
+      "options": [
+        "notifique compulsoriamente a suspeita ou confirmação de violência",
+        "notifique apenas se houver confirmação por exame de corpo de delito",
+        "aguarde autorização da família para comunicar o caso às autoridades",
+        "encaminhe o caso à justiça somente se a vítima for menor de idade"
+      ],
+      "correctIndex": 0,
+      "explanation": "Pela LBI (art. 26), a suspeita ou a confirmação de violência contra a pessoa com deficiência é de notificação compulsória pelos serviços de saúde públicos e privados, com comunicação à autoridade policial, ao Ministério Público e aos conselhos de direitos. Mulheres com deficiência, sobretudo intelectual, têm risco muito maior de violência sexual."
+    },
+    {
+      "question": "Uma usuária surda, que se comunica em Libras, procura a UBS. Sobre a comunicação no atendimento, é correto afirmar que:",
+      "options": [
+        "Libras é meio legal de comunicação e o SUS deve garantir o atendimento nela",
+        "a leitura labial resolve, pois toda pessoa surda é capaz de usá-la",
+        "a comunicação escrita em português basta, pois a Libras não tem gramática",
+        "a usuária deve trazer intérprete particular, pago por ela, à consulta"
+      ],
+      "correctIndex": 0,
+      "explanation": "A Lei nº 10.436/2002 reconheceu a Libras como meio legal de comunicação e expressão, e o Decreto nº 5.626/2005 determina que o SUS garanta atendimento por profissionais capacitados em Libras ou por intérpretes. Libras é língua com gramática própria; muitos surdos têm o português escrito como segunda língua, e a leitura labial é limitada."
+    }
+  ]
+}

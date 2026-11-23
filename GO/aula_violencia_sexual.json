@@ -1,0 +1,206 @@
+{
+  "titulo": "Violência Sexual",
+  "eyebrow": "Ginecologia e Obstetrícia · Referência",
+  "subtitulo": "Acolher, proteger, profilaxiar e garantir os direitos previstos em lei",
+  "intro": "Acolhimento, notificação, Conselho Tutelar, profilaxias (contracepção de emergência, PEP, IST, hepatite B), coleta de vestígios, estupro de vulnerável e aborto previsto em lei. Material de referência (Lei 12.845/2013, PCDT-IST 2022, PCDT-PEP, normas técnicas do MS) — não há slide da aula deste tema.",
+  "questoes": [
+    {
+      "question": "Mulher de 24 anos chega ao pronto-socorro 10 horas após estupro por desconhecido e diz que não quer registrar boletim de ocorrência. Qual é a conduta?",
+      "options": [
+        "Atender integralmente e oferecer as profilaxias sem exigir B.O.",
+        "Condicionar as profilaxias ao registro do boletim de ocorrência",
+        "Encaminhar ao IML antes de qualquer atendimento no hospital",
+        "Acionar a polícia e aguardar a chegada para iniciar o cuidado"
+      ],
+      "correctIndex": 0,
+      "explanation": "O atendimento à pessoa em situação de violência sexual é de emergência e não depende de boletim de ocorrência, exame de corpo de delito ou autorização judicial (Lei 12.845/2013 e normas do Ministério da Saúde). O serviço informa os direitos, facilita o registro se ela quiser e notifica a vigilância, mas a recusa ao B.O. não suspende nenhuma profilaxia."
+    },
+    {
+      "question": "O que a Lei 12.845/2013, conhecida como Lei do Minuto Seguinte, garante às vítimas de violência sexual nos hospitais do SUS?",
+      "options": [
+        "Atendimento emergencial, integral, multidisciplinar e imediato",
+        "Atendimento apenas após registro de ocorrência e laudo pericial",
+        "Atendimento restrito a serviços de referência com delegacia",
+        "Atendimento apenas quando houver lesão física comprovada"
+      ],
+      "correctIndex": 0,
+      "explanation": "A lei obriga todos os hospitais do SUS a oferecer atendimento emergencial, integral e multidisciplinar: tratamento das lesões, amparo psicológico, profilaxia da gravidez e das IST, coleta de material para exames, facilitação do registro de ocorrência e informação sobre direitos. Ela define violência sexual como qualquer forma de atividade sexual não consentida."
+    },
+    {
+      "question": "Sobre a notificação de um caso de violência sexual atendido em serviço de saúde, é correto afirmar que ela:",
+      "options": [
+        "É compulsória e imediata à vigilância municipal, em até 24 horas",
+        "Só é feita se a vítima autorizar e registrar boletim de ocorrência",
+        "É dispensada em adultos e obrigatória apenas em crianças",
+        "Substitui a comunicação ao Conselho Tutelar nos menores de idade"
+      ],
+      "correctIndex": 0,
+      "explanation": "Violência sexual é agravo de notificação compulsória imediata (até 24 horas) à Secretaria Municipal de Saúde, pela ficha do SINAN, em qualquer idade. A notificação é instrumento de vigilância epidemiológica, não denúncia policial; em criança e adolescente, soma-se a comunicação obrigatória ao Conselho Tutelar (ECA, art. 13)."
+    },
+    {
+      "question": "Adolescente de 13 anos relata relações sexuais com o namorado de 19 anos, que ela descreve como consentidas. Qual é o enquadramento e a conduta?",
+      "options": [
+        "Estupro de vulnerável: notificar e comunicar ao Conselho Tutelar",
+        "Relação consentida: manter sigilo, pois não há crime a comunicar",
+        "Relação consentida: comunicar apenas se houver gestação ou IST",
+        "Estupro de vulnerável apenas se os pais registrarem ocorrência"
+      ],
+      "correctIndex": 0,
+      "explanation": "Conjunção carnal ou outro ato libidinoso com menor de 14 anos é estupro de vulnerável (Código Penal, art. 217-A), independentemente de consentimento, de experiência sexual anterior ou de relacionamento. O caso é notificado e comunicado ao Conselho Tutelar, com a adolescente informada e acolhida, e as profilaxias indicadas são oferecidas."
+    },
+    {
+      "question": "Além dos menores de 14 anos, quem também é considerado vulnerável para fins do crime de estupro de vulnerável?",
+      "options": [
+        "Quem, por qualquer causa, não pode oferecer resistência",
+        "Toda mulher que tenha ingerido qualquer quantidade de álcool",
+        "Apenas adolescentes de 14 a 18 anos sob tutela judicial",
+        "Somente pessoas com deficiência intelectual sob curatela"
+      ],
+      "correctIndex": 0,
+      "explanation": "O art. 217-A do Código Penal também protege quem, por enfermidade ou deficiência mental, não tem o discernimento necessário para o ato e quem, por qualquer outra causa, não pode oferecer resistência — por exemplo, a vítima inconsciente ou intoxicada a ponto de não conseguir reagir."
+    },
+    {
+      "question": "Mulher de 27 anos, sem método contraceptivo, sofreu estupro com penetração vaginal há 40 horas. Qual contracepção de emergência está indicada?",
+      "options": [
+        "Levonorgestrel 1,5 mg via oral em dose única, o quanto antes",
+        "Levonorgestrel apenas se ela estiver no período fértil do ciclo",
+        "Nenhuma, pois após 24 horas a contracepção de emergência falha",
+        "Misoprostol via vaginal para impedir a implantação do embrião"
+      ],
+      "correctIndex": 0,
+      "explanation": "Levonorgestrel 1,5 mg em dose única (ou 0,75 mg em duas doses com 12 horas de intervalo) pode ser usado até 5 dias após a violência, com eficácia maior quanto mais cedo. Indica-se em qualquer fase do ciclo quando não há método de alta eficácia em uso; atua retardando ou impedindo a ovulação e não é abortivo."
+    },
+    {
+      "question": "Na profilaxia pós-exposição (PEP) ao HIV após violência sexual, qual é a janela para início e a duração?",
+      "options": [
+        "Até 72 horas, idealmente nas primeiras 2 horas, por 28 dias",
+        "Até 7 dias, idealmente nas primeiras 24 horas, por 14 dias",
+        "Até 24 horas, só com agressor HIV positivo, por 30 dias",
+        "Até 5 dias, junto com a contracepção, por 10 dias"
+      ],
+      "correctIndex": 0,
+      "explanation": "A PEP deve começar o quanto antes — idealmente nas primeiras 2 horas — e no máximo em 72 horas, durando 28 dias. Como o status sorológico do agressor em geral é desconhecido, a violência sexual com penetração desprotegida é indicação de PEP; depois de 72 horas não há benefício comprovado."
+    },
+    {
+      "question": "Qual é o esquema preferencial de PEP para HIV em adultos no protocolo do Ministério da Saúde?",
+      "options": [
+        "Tenofovir + lamivudina + dolutegravir",
+        "Zidovudina + lamivudina + nevirapina",
+        "Tenofovir + entricitabina isolados",
+        "Abacavir + lamivudina + efavirenz"
+      ],
+      "correctIndex": 0,
+      "explanation": "O esquema preferencial do PCDT de PEP é tenofovir 300 mg + lamivudina 300 mg (comprimido combinado) mais dolutegravir 50 mg, uma vez ao dia, por 28 dias. Tenofovir com entricitabina isolados é o esquema da PrEP, não da PEP. Faz-se teste rápido de HIV antes de iniciar, sem atrasar a primeira dose."
+    },
+    {
+      "question": "Na profilaxia das IST bacterianas após violência sexual em adulta não gestante, qual combinação segue o PCDT-IST do Ministério da Saúde?",
+      "options": [
+        "Ceftriaxona 500 mg IM, azitromicina 1 g VO e penicilina benzatina 2,4 milhões UI IM",
+        "Ceftriaxona 1 g IV, doxiciclina 100 mg 12/12 h por 21 dias e amoxicilina 2 g VO",
+        "Ciprofloxacino 500 mg VO, azitromicina 500 mg VO e penicilina cristalina IV",
+        "Azitromicina 1 g VO isolada, que cobre gonorreia, clamídia e também a sífilis"
+      ],
+      "correctIndex": 0,
+      "explanation": "O PCDT-IST (2022) recomenda, em dose única: ceftriaxona 500 mg IM (gonorreia), azitromicina 1 g VO (clamídia) e penicilina G benzatina 2,4 milhões UI IM (sífilis), mais metronidazol 2 g VO para tricomoníase, que pode ser adiado se houver intolerância ou uso simultâneo de contracepção de emergência e antirretrovirais. Azitromicina não trata sífilis."
+    },
+    {
+      "question": "Vítima de violência sexual nunca foi vacinada contra hepatite B, e o agressor é desconhecido. Qual é a conduta?",
+      "options": [
+        "Iniciar a vacina e aplicar imunoglobulina anti-hepatite B",
+        "Nada fazer, pois a hepatite B raramente é transmitida assim",
+        "Aguardar o HBsAg do agressor antes de qualquer medida",
+        "Aplicar só a imunoglobulina, sem iniciar o esquema vacinal"
+      ],
+      "correctIndex": 0,
+      "explanation": "Pessoa suscetível (não vacinada ou com esquema incompleto) recebe a vacina, iniciada ou completada, e a imunoglobulina humana anti-hepatite B (0,06 mL/kg IM), de preferência nas primeiras 48 horas e no máximo até 14 dias após a violência. Quem tem esquema vacinal completo não precisa de imunoglobulina."
+    },
+    {
+      "question": "Para qual destas infecções não existe profilaxia pós-exposição após violência sexual?",
+      "options": [
+        "Hepatite C, apenas com testagem e seguimento",
+        "Hepatite B, apenas com testagem e seguimento",
+        "Sífilis, apenas com testagem e seguimento",
+        "Gonorreia, apenas com testagem e seguimento"
+      ],
+      "correctIndex": 0,
+      "explanation": "Não há profilaxia pós-exposição para a hepatite C: colhe-se anti-HCV no atendimento inicial e repete-se no seguimento, tratando se houver soroconversão. HIV (PEP), hepatite B (vacina e imunoglobulina), sífilis, gonorreia, clamídia e tricomoníase têm profilaxia."
+    },
+    {
+      "question": "Quais exames compõem a avaliação laboratorial inicial de uma mulher em idade fértil atendida após violência sexual?",
+      "options": [
+        "Testes de HIV, sífilis, hepatites B e C e beta-hCG",
+        "Somente beta-hCG, pois sorologias só valem após 90 dias",
+        "Cultura vaginal para gonococo como único exame inicial",
+        "Hemograma e coagulograma, sem sorologias nesse momento"
+      ],
+      "correctIndex": 0,
+      "explanation": "Os exames iniciais estabelecem a linha de base: teste rápido de HIV (necessário antes da PEP), sífilis, hepatite B (HBsAg e, se possível, anti-HBs), anti-HCV e beta-hCG. Um resultado positivo no primeiro dia indica infecção prévia, não decorrente da violência; o seguimento repete as sorologias."
+    },
+    {
+      "question": "Qual atitude é adequada no acolhimento de uma mulher que acabou de sofrer violência sexual?",
+      "options": [
+        "Escuta sem julgamento, em privacidade, com relato colhido uma vez",
+        "Pedir que repita o relato a cada profissional para checar a versão",
+        "Perguntar por que ela não reagiu, para documentar a resistência",
+        "Examinar sem consentimento para não perder vestígios importantes"
+      ],
+      "correctIndex": 0,
+      "explanation": "O acolhimento evita a revitimização: ambiente privado, escuta sem julgamento, palavra da vítima tomada como verdadeira, relato registrado uma vez de forma detalhada no prontuário, e exame e coleta de vestígios somente com consentimento. Perguntas que culpabilizam e entrevistas repetidas agravam o trauma."
+    },
+    {
+      "question": "Sobre a coleta de vestígios em serviço de saúde após violência sexual, é correto afirmar que ela:",
+      "options": [
+        "Pode ser feita com consentimento, mesmo sem boletim de ocorrência",
+        "Só pode ser feita no IML, após requisição da autoridade policial",
+        "Deve vir antes do acolhimento e das profilaxias de urgência",
+        "Exige autorização judicial prévia quando a vítima é maior de idade"
+      ],
+      "correctIndex": 0,
+      "explanation": "O Decreto 7.958/2013 permite que profissionais do SUS colham e preservem vestígios (secreções em swab, roupas em saco de papel), com consentimento e cadeia de custódia, mesmo sem boletim de ocorrência; o material fica guardado para eventual uso pericial. A coleta nunca deve atrasar as profilaxias."
+    },
+    {
+      "question": "Mulher de 22 anos, com gestação de 10 semanas, relata que a gravidez resultou de estupro e não registrou boletim de ocorrência. Ela pede a interrupção. Qual é a conduta?",
+      "options": [
+        "Realizar pelo procedimento do SUS, sem exigir B.O. nem alvará",
+        "Exigir boletim de ocorrência e laudo do IML antes do procedimento",
+        "Solicitar autorização judicial, pois não há prova do estupro",
+        "Negar, pois o aborto legal por estupro vale só até 8 semanas"
+      ],
+      "correctIndex": 0,
+      "explanation": "O Código Penal (art. 128, II) não pune o aborto de gravidez resultante de estupro, com consentimento da gestante. Não se exige B.O., laudo do IML nem autorização judicial: a palavra da mulher tem presunção de veracidade, e a equipe multiprofissional documenta o relato e o consentimento em termos padronizados."
+    },
+    {
+      "question": "Em quais situações a interrupção da gestação é permitida no Brasil sem necessidade de autorização judicial?",
+      "options": [
+        "Risco de vida da gestante, estupro e anencefalia fetal",
+        "Estupro, malformação fetal grave e desejo até 12 semanas",
+        "Risco de vida, estupro e microcefalia fetal por zika",
+        "Apenas risco de vida materno e estupro de vulnerável"
+      ],
+      "correctIndex": 0,
+      "explanation": "O art. 128 do Código Penal prevê o aborto necessário (quando não há outro meio de salvar a vida da gestante) e o aborto de gravidez resultante de estupro; desde 2012 o STF (ADPF 54) admite a interrupção na anencefalia fetal. Outras malformações dependem de decisão judicial caso a caso."
+    },
+    {
+      "question": "Um médico invoca objeção de consciência para não realizar um aborto previsto em lei. Em qual situação ele não pode recusar?",
+      "options": [
+        "Quando houver risco de morte ou não existir outro médico",
+        "Quando a gestação resultar de estupro de mulher adulta",
+        "Quando a gestação tiver menos de doze semanas completas",
+        "Quando o hospital for público e a paciente pedir por escrito"
+      ],
+      "correctIndex": 0,
+      "explanation": "O Código de Ética Médica permite a objeção de consciência, mas ela não vale quando há risco de morte da mulher, quando não há outro profissional que possa fazer o procedimento ou quando a omissão pode causar dano à paciente. A instituição não tem direito a objeção: precisa garantir o procedimento por outro profissional."
+    },
+    {
+      "question": "Em qual destas situações a PEP para HIV não está indicada após violência sexual?",
+      "options": [
+        "Atendimento 5 dias após a violência, fora da janela de 72 h",
+        "Agressor desconhecido e penetração vaginal sem preservativo",
+        "Penetração anal desprotegida por agressor de status ignorado",
+        "Vítima que se recusa a registrar o boletim de ocorrência"
+      ],
+      "correctIndex": 0,
+      "explanation": "Após 72 horas a PEP não tem benefício comprovado; o cuidado passa a ser testagem para HIV, sífilis e hepatites, acolhimento e seguimento (a contracepção de emergência, porém, ainda cabe até o quinto dia). A recusa ao boletim de ocorrência nunca é motivo para negar profilaxia."
+    }
+  ]
+}

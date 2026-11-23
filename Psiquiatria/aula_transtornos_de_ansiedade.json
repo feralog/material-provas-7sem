@@ -1,0 +1,206 @@
+{
+  "titulo": "Transtornos de Ansiedade",
+  "eyebrow": "Psiquiatria · Referência",
+  "subtitulo": "Do medo útil ao transtorno: critérios, diferencial orgânico e tratamento",
+  "intro": "TAG, pânico, agorafobia, ansiedade social, fobia específica, ansiedade de separação e mutismo seletivo, com o diferencial orgânico e o tratamento. Baseado no DSM-5-TR — não há slide da aula deste tema.",
+  "questoes": [
+    {
+      "question": "Mulher de 34 anos relata que, há oito meses, vive preocupada com o trabalho, as finanças e a saúde dos filhos, sem conseguir controlar a preocupação. Refere tensão muscular, cansaço fácil, irritabilidade e sono ruim. Exame físico e exames laboratoriais normais. Qual o diagnóstico mais provável?",
+      "options": [
+        "Transtorno de ansiedade generalizada",
+        "Transtorno de ansiedade de doença",
+        "Transtorno depressivo persistente",
+        "Transtorno de ansiedade social"
+      ],
+      "correctIndex": 0,
+      "explanation": "Preocupação excessiva e difícil de controlar, sobre vários temas, na maioria dos dias por pelo menos 6 meses, com 3 ou mais dos 6 sintomas associados, define o TAG (DSM-5-TR). A ansiedade de doença se concentra na própria saúde, e a ansiedade social, no julgamento dos outros."
+    },
+    {
+      "question": "Pelo DSM-5-TR, quais são a duração mínima e o número de sintomas associados exigidos para o diagnóstico de transtorno de ansiedade generalizada no adulto?",
+      "options": [
+        "Seis meses e ao menos três de seis sintomas",
+        "Um mês e ao menos quatro de treze sintomas",
+        "Duas semanas e ao menos cinco de nove sintomas",
+        "Três meses e ao menos dois de seis sintomas"
+      ],
+      "correctIndex": 0,
+      "explanation": "O TAG exige preocupação excessiva na maioria dos dias por 6 meses ou mais e pelo menos 3 de 6 sintomas: inquietação, fadiga, dificuldade de concentração, irritabilidade, tensão muscular e alteração do sono (na criança basta 1). 'Quatro de treze' é a contagem do ataque de pânico, e 'cinco de nove em duas semanas', a do episódio depressivo maior."
+    },
+    {
+      "question": "Homem de 26 anos chega ao pronto-socorro com palpitação, falta de ar, formigamento nas mãos, tontura e medo de morrer, que começaram de repente e atingiram o pico em cerca de dez minutos. ECG, glicemia e exame físico são normais. Já teve três crises parecidas, sem gatilho. Que dado, se presente, permite fechar transtorno de pânico?",
+      "options": [
+        "Um mês de preocupação com novas crises ou mudança de comportamento",
+        "Dois ataques de pânico na mesma semana, com ou sem medo de novas crises",
+        "Ataques sempre desencadeados por situações sociais em que é observado",
+        "Persistência dos sintomas físicos por mais de duas horas após o início"
+      ],
+      "correctIndex": 0,
+      "explanation": "Transtorno de pânico exige ataques recorrentes e inesperados, com ao menos um deles seguido por 1 mês ou mais de preocupação persistente com novas crises ou suas consequências e/ou mudança desadaptativa de comportamento, como esquiva. O ataque atinge o pico em minutos, não dura horas; crise que só ocorre em situação social aponta para ansiedade social."
+    },
+    {
+      "question": "Mulher de 38 anos refere crises de ansiedade há dois meses. Perdeu 5 kg apesar do apetite aumentado e tem tremor fino, intolerância ao calor e taquicardia em repouso. Qual exame é prioritário antes de rotular o quadro como transtorno de ansiedade?",
+      "options": [
+        "Dosagem de TSH e de T4 livre",
+        "Eletroencefalograma em vigília",
+        "Tomografia de crânio simples",
+        "Dosagem de cortisol salivar"
+      ],
+      "correctIndex": 0,
+      "explanation": "Perda de peso com apetite aumentado, tremor fino, intolerância ao calor e taquicardia sugerem hipertireoidismo, causa clássica de ansiedade secundária; TSH suprimido com T4 livre elevado confirma. O DSM-5-TR só permite o diagnóstico de transtorno de ansiedade se o quadro não for atribuível a outra condição médica ou a substância."
+    },
+    {
+      "question": "Estudante de 22 anos, em semana de provas, refere palpitações, inquietação, insônia, tremor e aumento da diurese. Toma energéticos e cerca de cinco xícaras de café por dia. Exame físico sem outras alterações. Qual a conduta inicial mais adequada?",
+      "options": [
+        "Reduzir a cafeína e reavaliar os sintomas após a retirada",
+        "Iniciar sertralina e encaminhar para psicoterapia cognitiva",
+        "Prescrever clonazepam à noite durante o período de provas",
+        "Solicitar Holter de 24 horas e ecocardiograma transtorácico"
+      ],
+      "correctIndex": 0,
+      "explanation": "Cafeína em dose alta (o DSM-5-TR cita consumo em geral bem acima de 250 mg) causa inquietação, nervosismo, insônia, diurese, tremor e taquicardia: é intoxicação ou ansiedade induzida por substância. Antes de diagnosticar transtorno primário ou medicar, retira-se a substância e reavalia-se."
+    },
+    {
+      "question": "Mulher de 40 anos deixou de usar ônibus, de ir ao supermercado e ao cinema, e só sai de casa acompanhada, por medo de passar mal e não conseguir escapar ou ser socorrida. O quadro dura um ano, e ela nunca teve um ataque de pânico completo. Qual o diagnóstico?",
+      "options": [
+        "Agorafobia, mesmo sem transtorno de pânico associado",
+        "Fobia específica do tipo situacional, por transporte",
+        "Transtorno de ansiedade generalizada com esquiva",
+        "Transtorno de ansiedade social com esquiva de público"
+      ],
+      "correctIndex": 0,
+      "explanation": "Medo e esquiva de 2 ou mais de 5 situações (transporte público, espaços abertos, lugares fechados, filas ou multidões, estar fora de casa sozinho), pela ideia de que escapar seria difícil ou a ajuda indisponível, em geral por 6 meses ou mais, define agorafobia. Desde o DSM-5 ela é diagnóstico independente do pânico; na fobia específica situacional o medo se restringe a uma situação."
+    },
+    {
+      "question": "Jovem de 19 anos evita apresentar trabalhos, comer em público e conversar com desconhecidos por medo de ser avaliado negativamente e passar vergonha. O quadro dura dois anos e já causou reprovação. Qual o tratamento de primeira linha?",
+      "options": [
+        "ISRS ou venlafaxina, associados à terapia cognitivo-comportamental",
+        "Propranolol diário em dose fixa, como monoterapia de manutenção",
+        "Clonazepam contínuo, com retirada só após a formatura do curso",
+        "Buspirona isolada, por não causar dependência nem sedação"
+      ],
+      "correctIndex": 0,
+      "explanation": "Ansiedade social generalizada trata-se com ISRS (sertralina, escitalopram, paroxetina) ou venlafaxina, mais TCC com exposição. O propranolol só tem papel no especificador 'somente desempenho', em dose única antes da situação, e a buspirona não tem eficácia na ansiedade social."
+    },
+    {
+      "question": "Violinista de 30 anos tem tremor, taquicardia e boca seca apenas antes de apresentações solo, sem medo de outras situações sociais. Qual opção é adequada para uso pontual?",
+      "options": [
+        "Propranolol cerca de uma hora antes da apresentação",
+        "Sertralina em dose baixa iniciada na véspera do concerto",
+        "Alprazolam sublingual minutos antes de subir ao palco",
+        "Buspirona em dose única duas horas antes do concerto"
+      ],
+      "correctIndex": 0,
+      "explanation": "Na ansiedade social com especificador 'somente desempenho', o betabloqueador em dose única, 30 a 60 minutos antes, bloqueia os sintomas adrenérgicos (tremor, taquicardia) sem sedar. O benzodiazepínico prejudica coordenação fina e atenção; ISRS e buspirona levam semanas para agir."
+    },
+    {
+      "question": "Adolescente desmaia sempre que vê sangue ou recebe injeção. Monitorizado numa coleta, apresentou taquicardia inicial seguida de bradicardia e hipotensão. Qual subtipo de fobia específica tem essa resposta característica?",
+      "options": [
+        "Sangue-injeção-ferimentos, com resposta vasovagal",
+        "Situacional, com resposta de luta ou fuga mantida",
+        "Ambiente natural, com hiperventilação e alcalose",
+        "Animal, com taquicardia sustentada e hipertensão"
+      ],
+      "correctIndex": 0,
+      "explanation": "A fobia de sangue-injeção-ferimentos é a única com resposta bifásica: aceleração inicial seguida de queda vasovagal da frequência cardíaca e da pressão arterial, com desmaio. Nos demais subtipos predomina a ativação simpática sustentada."
+    },
+    {
+      "question": "Homem de 45 anos tem medo intenso de avião desde a juventude e recusou uma promoção que exigia viagens. Não tem outros sintomas psiquiátricos. Qual é o tratamento de escolha?",
+      "options": [
+        "Exposição gradual ao estímulo temido, dentro da TCC",
+        "ISRS em dose plena por pelo menos doze meses seguidos",
+        "Benzodiazepínico antes de cada exposição programada",
+        "Psicoterapia psicodinâmica breve com foco no medo"
+      ],
+      "correctIndex": 0,
+      "explanation": "A fobia específica responde à terapia de exposição (gradual ou intensiva, inclusive por realidade virtual), com altas taxas de melhora; medicação não é tratamento de escolha. O benzodiazepínico antes da exposição pode atrapalhar a habituação que a terapia busca."
+    },
+    {
+      "question": "Menino de 7 anos, há dois meses, chora e tem dor abdominal todas as manhãs antes da escola, recusa dormir fora de casa e teme que algo aconteça à mãe quando ela sai. Qual o diagnóstico e a duração mínima exigida nessa idade?",
+      "options": [
+        "Ansiedade de separação; exige ao menos quatro semanas",
+        "Ansiedade de separação; exige ao menos seis meses",
+        "Fobia escolar específica; exige ao menos seis meses",
+        "Ansiedade generalizada; exige ao menos quatro semanas"
+      ],
+      "correctIndex": 0,
+      "explanation": "Medo excessivo e inadequado para o desenvolvimento da separação das figuras de apego, com 3 ou mais de 8 sintomas (medo de perder a figura de apego, recusa escolar, recusa de dormir longe, pesadelos, queixas somáticas), por 4 semanas ou mais em crianças e adolescentes, define ansiedade de separação. Em adultos a duração típica é de 6 meses, e desde o DSM-5 o diagnóstico também é possível nessa idade."
+    },
+    {
+      "question": "Menina de 5 anos fala normalmente em casa com os pais e os irmãos, mas há quatro meses não diz uma palavra na escola, embora compreenda tudo e interaja por gestos. A avaliação de linguagem é normal. Qual o diagnóstico?",
+      "options": [
+        "Mutismo seletivo, um transtorno de ansiedade",
+        "Transtorno do espectro autista de nível um",
+        "Transtorno da linguagem expressiva da infância",
+        "Transtorno de oposição desafiante na escola"
+      ],
+      "correctIndex": 0,
+      "explanation": "Mutismo seletivo é o fracasso persistente em falar em situações sociais em que se espera fala, como a escola, apesar de falar em outras, por 1 mês ou mais (sem contar apenas o primeiro mês de escola) e sem déficit de linguagem que o explique. Está no capítulo dos transtornos de ansiedade do DSM-5-TR e se associa fortemente à ansiedade social."
+    },
+    {
+      "question": "Paciente com transtorno de pânico inicia sertralina. Sobre o uso de benzodiazepínico nesse caso, é correto afirmar:",
+      "options": [
+        "Pode servir de ponte nas primeiras semanas, por tempo limitado",
+        "É a primeira linha de manutenção, por agir mais depressa",
+        "Deve ser mantido junto ao ISRS por no mínimo dois anos",
+        "Trata também a depressão comórbida, dispensando o ISRS"
+      ],
+      "correctIndex": 0,
+      "explanation": "O benzodiazepínico age rápido e pode cobrir as primeiras semanas até o ISRS fazer efeito, com retirada programada. Não é primeira linha de manutenção pelo risco de tolerância, dependência, abstinência, prejuízo cognitivo e quedas, e não trata a depressão comórbida, frequente nesses pacientes."
+    },
+    {
+      "question": "Ao iniciar um ISRS em paciente com transtorno de pânico, qual cuidado reduz o abandono precoce do tratamento?",
+      "options": [
+        "Começar com metade da dose usual e aumentar gradualmente",
+        "Começar com dose alta para encurtar a latência de efeito",
+        "Trocar de ISRS se não houver melhora na primeira semana",
+        "Associar bupropiona desde o início para reduzir a sedação"
+      ],
+      "correctIndex": 0,
+      "explanation": "Pacientes com pânico são sensíveis à ativação inicial do ISRS (inquietação, piora transitória da ansiedade), por isso se começa com cerca de metade da dose habitual e se titula. A resposta só é avaliada após 4 a 6 semanas em dose adequada, e a bupropiona, ativadora, não é boa escolha na ansiedade."
+    },
+    {
+      "question": "Sobre a buspirona no tratamento dos transtornos de ansiedade, é correto afirmar:",
+      "options": [
+        "É eficaz no TAG, sem causar dependência, mas leva semanas",
+        "É eficaz no pânico e na fobia social, com efeito imediato",
+        "Substitui o BZD sem abstinência, pois há tolerância cruzada",
+        "É agonista do receptor GABA-A, com menos sedação que o BZD"
+      ],
+      "correctIndex": 0,
+      "explanation": "A buspirona, agonista parcial 5-HT1A, é eficaz no TAG, sem dependência nem sedação importante, mas com latência de semanas. Não funciona no pânico nem na ansiedade social e não tem tolerância cruzada com benzodiazepínicos: trocar diretamente de um para o outro não evita a abstinência do BZD."
+    },
+    {
+      "question": "Idosa de 78 anos usa clonazepam há anos para 'nervoso' e teve duas quedas no último semestre. Qual a conduta mais adequada?",
+      "options": [
+        "Retirar o BZD de forma gradual e tratar a ansiedade com ISRS e TCC",
+        "Suspender o BZD de imediato, pois o risco de queda supera o resto",
+        "Trocar por diazepam, de meia-vida longa, mais seguro no idoso",
+        "Manter o clonazepam e prescrever fisioterapia contra quedas"
+      ],
+      "correctIndex": 0,
+      "explanation": "No idoso o benzodiazepínico aumenta quedas, fraturas, prejuízo cognitivo e delirium (está nos critérios de Beers). A retirada é gradual, ao longo de semanas a meses, porque a suspensão abrupta provoca abstinência com risco de convulsão; a ansiedade de base é tratada com ISRS e psicoterapia. O diazepam se acumula no idoso."
+    },
+    {
+      "question": "Na terapia cognitivo-comportamental do transtorno de pânico, qual é o objetivo da exposição interoceptiva?",
+      "options": [
+        "Provocar as sensações corporais temidas até que percam o caráter ameaçador",
+        "Identificar os conflitos inconscientes que originaram o primeiro ataque",
+        "Ensinar a evitar exercício e café, que disparam as sensações cardíacas",
+        "Substituir a medicação por relaxamento muscular durante as crises"
+      ],
+      "correctIndex": 0,
+      "explanation": "O modelo cognitivo do pânico atribui as crises à interpretação catastrófica de sensações corporais normais (palpitação vira 'infarto'). A exposição interoceptiva provoca essas sensações de propósito, hiperventilando, girando ou correndo no lugar, para que o paciente aprenda que não são perigosas; evitar os gatilhos mantém o ciclo."
+    },
+    {
+      "question": "Qual destes quadros deixou o capítulo dos transtornos de ansiedade a partir do DSM-5 e passou a ter capítulo próprio?",
+      "options": [
+        "Transtorno obsessivo-compulsivo",
+        "Mutismo seletivo da infância",
+        "Transtorno de ansiedade social",
+        "Transtorno de ansiedade de separação"
+      ],
+      "correctIndex": 0,
+      "explanation": "No DSM-5 (2013), mantido no DSM-5-TR (2022), o TOC passou ao capítulo 'transtorno obsessivo-compulsivo e transtornos relacionados', e o TEPT ao dos transtornos relacionados a trauma e a estressores. No sentido inverso, ansiedade de separação e mutismo seletivo, antes na seção da infância, entraram no capítulo dos transtornos de ansiedade."
+    }
+  ]
+}

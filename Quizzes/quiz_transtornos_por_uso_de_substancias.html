@@ -1,0 +1,992 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Transtornos por Uso de Substâncias</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;450;500;600&display=swap" rel="stylesheet">
+<style>
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0}
+  body{background:#f5f3ef;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+  button{font:inherit;color:inherit;font-family:'IBM Plex Sans',system-ui,sans-serif}
+  a{color:#2b57cc;text-decoration:none}
+  a:hover{color:#1e3f9c;text-decoration:underline}
+  @keyframes qFade{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+  @keyframes qDrawer{from{opacity:0;transform:translateY(-4px)}to{opacity:1;transform:none}}
+
+  /* hovers — no canvas eram style-hover, aqui viram CSS de verdade */
+  .h-dark:hover{background:#2b57cc!important;transform:translateY(-1px)}
+  .h-darkflat:hover{background:#2b57cc!important}
+  .h-line:hover{border-color:#121a2b!important}
+  .h-ink:hover{color:#121a2b!important}
+  .h-opt:not(.locked):hover{border-color:var(--hbd)!important;transform:translateY(-1px)}
+  .h-card:hover{border-color:#121a2b!important;transform:translateY(-2px)}
+
+  /* tipografia do resumo */
+  .rsm{font-size:16.5px;line-height:1.72;color:#2a3141;max-width:64ch}
+  .rsm h2{font-family:'Newsreader',Georgia,serif;font-size:27px;font-weight:500;letter-spacing:-.02em;line-height:1.2;margin:42px 0 14px;padding-top:20px;border-top:1px solid #e4e0d8;text-wrap:pretty}
+  .rsm h2:first-child{margin-top:0;padding-top:0;border-top:0}
+  .rsm h3{font-family:'Newsreader',Georgia,serif;font-size:20px;font-weight:600;letter-spacing:-.01em;margin:28px 0 10px;text-wrap:pretty}
+  .rsm h4{font-family:'IBM Plex Mono',monospace;font-size:11px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:#2b57cc;margin:24px 0 8px}
+  .rsm p{margin:0 0 15px;text-wrap:pretty}
+  .rsm ul,.rsm ol{margin:0 0 15px;padding-left:22px}
+  .rsm li{margin-bottom:7px;text-wrap:pretty}
+  .rsm li>ul,.rsm li>ol{margin:7px 0 0}
+  .rsm strong{font-weight:600;color:#121a2b}
+  .rsm em{font-style:italic}
+  .rsm code{font-family:'IBM Plex Mono',monospace;font-size:.88em;background:#efece5;border:1px solid #e4e0d8;border-radius:5px;padding:1px 5px}
+  .rsm hr{border:0;border-top:1px solid #e4e0d8;margin:32px 0}
+  .rsm blockquote{margin:0 0 18px;padding:15px 18px;background:#f7f6f2;border-left:2.5px solid #2b57cc;border-radius:0 12px 12px 0;font-size:15px;line-height:1.65;color:#39404f}
+  .rsm blockquote p:last-child{margin-bottom:0}
+  .rsm .tbl{overflow-x:auto;margin:0 0 20px;border:1px solid #e4e0d8;border-radius:12px;background:#fff}
+  .rsm table{border-collapse:collapse;width:100%;font-size:14px;line-height:1.5}
+  .rsm th{text-align:left;font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.09em;text-transform:uppercase;color:#8a8578;font-weight:600;padding:11px 14px;background:#faf9f6;border-bottom:1px solid #e4e0d8;white-space:nowrap}
+  .rsm td{padding:11px 14px;border-bottom:1px solid #efece5;vertical-align:top;text-wrap:pretty}
+  .rsm tr:last-child td{border-bottom:0}
+  .rsm .key{background:#f2f6fb;border:1px solid #d6e2f4;border-radius:12px;padding:16px 18px;margin:0 0 18px}
+  .rsm .key>*:last-child{margin-bottom:0}
+
+  /* figuras — no resumo e na questao */
+  .fig{margin:0 0 20px;background:#fff;border:1px solid #e4e0d8;border-radius:14px;overflow:hidden}
+  .fig img{display:block;width:100%;height:auto;cursor:zoom-in}
+  .fig figcaption{font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.06em;color:#8a8578;padding:9px 13px;border-top:1px solid #efece5;background:#faf9f6;text-wrap:pretty}
+  .qfig{margin:0 0 20px}
+
+  /* lightbox */
+  #lb{position:fixed;inset:0;z-index:90;background:rgba(18,26,43,.86);display:none;align-items:center;justify-content:center;padding:24px;cursor:zoom-out}
+  #lb.on{display:flex;animation:qFade .16s ease}
+  #lb img{max-width:100%;max-height:100%;border-radius:10px;box-shadow:0 24px 60px rgba(0,0,0,.5)}
+
+  @media(max-width:560px){
+    .rsm{font-size:16px}
+    .rsm h2{font-size:24px}
+    .home-grid{grid-template-columns:1fr!important}
+  }
+</style>
+</head>
+<body>
+
+<div style="min-height:100vh;background:#f5f3ef;color:#121a2b;font-family:'IBM Plex Sans',system-ui,sans-serif">
+  <header style="position:sticky;top:0;z-index:30;background:rgba(245,243,239,.94);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid #e4e0d8">
+    <div style="max-width:720px;margin:0 auto;padding:12px 16px 10px" id="hdr"></div>
+  </header>
+  <main style="max-width:720px;margin:0 auto;padding:0 16px 80px" id="stage"></main>
+</div>
+<div id="lb"><img alt=""></div>
+
+<script type="text/html" id="resumoSrc"><blockquote><p>Material de referência: não há slide da aula deste tema. Baseado no DSM-5-TR (2022), no PCDT do Tabagismo do Ministério da Saúde e em livros-texto clássicos de psiquiatria e de clínica médica.</p></blockquote>
+<h2>Os 11 critérios e a gravidade</h2>
+<p>Toda substância de abuso ativa a <strong>via mesolímbica de recompensa</strong> (área tegmentar ventral → núcleo accumbens) com liberação de dopamina. O uso repetido desloca o comportamento do prazer para o hábito e a compulsão, e a fissura passa a dirigir a vida. O DSM-5, mantido no DSM-5-TR (2022), <strong>fundiu abuso e dependência</strong> num único "transtorno por uso de [substância]", <strong>acrescentou a fissura</strong> e <strong>retirou os problemas legais</strong>. O diagnóstico exige <strong>2 ou mais de 11 critérios em 12 meses</strong>.</p>
+<div class="tbl"><table><thead><tr><th>Grupo</th><th>Critérios</th></tr></thead><tbody><tr><td>Controle prejudicado</td><td>1. usar mais ou por mais tempo que o pretendido · 2. desejo persistente ou tentativas frustradas de reduzir · 3. muito tempo para obter, usar e se recuperar · 4. <strong>fissura</strong></td></tr><tr><td>Prejuízo social</td><td>5. fracasso em obrigações (trabalho, escola, casa) · 6. uso apesar de problemas interpessoais · 7. abandono de atividades importantes</td></tr><tr><td>Uso arriscado</td><td>8. uso em situações de risco físico (dirigir) · 9. uso apesar de saber do dano físico ou psicológico</td></tr><tr><td>Farmacológicos</td><td>10. <strong>tolerância</strong> · 11. <strong>abstinência</strong></td></tr></tbody></table></div>
+<p>A gravidade se conta nos dedos: <strong>leve, 2 a 3</strong> critérios; <strong>moderado, 4 a 5</strong>; <strong>grave, 6 ou mais</strong>.</p>
+<blockquote><p><strong>Pegadinha.</strong> Tolerância e abstinência <strong>não são obrigatórias</strong> e <strong>não contam</strong> quando surgem de medicação usada sob supervisão médica (opioide para dor, benzodiazepínico prescrito). Tolerância é precisar de mais para o mesmo efeito; abstinência é adoecer quando falta.</p></blockquote>
+<p>A abordagem respeita o momento do paciente: os <strong>estágios de mudança</strong> de Prochaska e DiClemente (pré-contemplação, contemplação, preparação, ação, manutenção, com a recaída como parte do processo) orientam a <strong>entrevista motivacional</strong> e a <strong>intervenção breve</strong>. No SUS, o cuidado se organiza no <strong>CAPS AD</strong> e segue a lógica da <strong>redução de danos</strong>.</p>
+<hr>
+<h2>Álcool: rastreio, intoxicação e abstinência</h2>
+<p>O rastreio cabe em qualquer consulta. O <strong>CAGE</strong> tem 4 perguntas — <em>Cut down</em> (sentiu que deveria diminuir?), <em>Annoyed</em> (as críticas o aborrecem?), <em>Guilty</em> (sente culpa?), <em>Eye-opener</em> (bebe ao acordar para aliviar?) — e <strong>2 ou mais respostas positivas</strong> sugerem problema. O <strong>AUDIT</strong>, da OMS, tem 10 itens e estratifica o risco: <strong>8 ou mais</strong> indica uso de risco, e 20 ou mais, provável dependência. GGT e volume corpuscular médio elevados reforçam a suspeita.</p>
+<p>A <strong>intoxicação</strong> dá fala arrastada, incoordenação, marcha instável, nistagmo, prejuízo de atenção e memória, até estupor e coma. O tratamento é suporte: via aérea, glicemia e tiamina.</p>
+<p>A <strong>abstinência</strong> é a do cérebro que se adaptou ao álcool — menos GABA, mais glutamato — e ficou sem freio quando ele saiu. A linha do tempo é cobrada em prova:</p>
+<div class="tbl"><table><thead><tr><th>Quadro</th><th>Quando surge após a última dose</th><th>Como se apresenta</th></tr></thead><tbody><tr><td>Abstinência inicial</td><td>6 a 24 horas</td><td>tremor, sudorese, taquicardia, hipertensão, insônia, ansiedade, náusea</td></tr><tr><td>Alucinose alcoólica</td><td>12 a 48 horas</td><td>alucinações, sobretudo auditivas, com <strong>consciência clara</strong></td></tr><tr><td>Convulsões</td><td>6 a 48 horas</td><td>tônico-clônicas generalizadas</td></tr><tr><td><strong>Delirium tremens</strong></td><td>48 a 96 horas</td><td>delirium + abstinência grave: desorientação, flutuação, <strong>alucinações visuais</strong>, febre, tremor intenso, instabilidade autonômica</td></tr></tbody></table></div>
+<p>O tratamento é <strong>benzodiazepínico</strong> — diazepam ou clordiazepóxido; <strong>lorazepam</strong> na hepatopatia grave e no idoso —, com dose guiada pela escala <strong>CIWA-Ar</strong>. O delirium tremens é emergência potencialmente fatal: BZD em dose alta, hidratação, correção eletrolítica e UTI nos graves. Betabloqueador e clonidina são só adjuvantes: sozinhos mascaram os sinais sem prevenir convulsão nem delirium.</p>
+<hr>
+<h2>Wernicke-Korsakoff e o tratamento do transtorno por uso de álcool</h2>
+<p>A <strong>encefalopatia de Wernicke</strong> vem da deficiência de <strong>tiamina (B1)</strong>: <strong>confusão, ataxia e alterações oculares</strong> (nistagmo, oftalmoparesia). A tríade completa aparece só numa minoria, por isso basta a suspeita no etilista desnutrido para tratar com <strong>tiamina parenteral em dose alta</strong>. Sem tratamento evolui para a <strong>síndrome de Korsakoff</strong>: amnésia anterógrada (e retrógrada) com <strong>confabulação</strong>, em geral irreversível.</p>
+<blockquote><p><strong>Tiamina antes da glicose.</strong> No etilista, glicose sem tiamina consome a pouca B1 que resta e pode precipitar ou agravar Wernicke. Dá-se a tiamina antes ou junto — nunca se atrasa a correção de uma hipoglicemia, mas a tiamina vai junto.</p></blockquote>
+<p>Passada a desintoxicação, o objetivo é manter a abstinência com abordagem psicossocial e, quando indicado, fármaco:</p>
+<div class="tbl"><table><thead><tr><th>Fármaco</th><th>Mecanismo</th><th>Cuidado</th></tr></thead><tbody><tr><td><strong>Naltrexona</strong></td><td>antagonista opioide; reduz o reforço e a fissura</td><td>contraindicada em quem usa opioide; evitar na insuficiência hepática grave</td></tr><tr><td><strong>Acamprosato</strong></td><td>modulador glutamatérgico; ajuda a manter abstinência</td><td>excreção renal: serve na hepatopatia, contraindicado na insuficiência renal grave</td></tr><tr><td><strong>Dissulfiram</strong></td><td>inibe a aldeído-desidrogenase; acúmulo de acetaldeído</td><td>reação aversiva (rubor, vômitos, taquicardia, hipotensão); exige consentimento e pelo menos 12 horas sem beber</td></tr></tbody></table></div>
+<p>Topiramato e baclofeno são alternativas fora de bula. Dar dissulfiram escondido "no café" é antiético e perigoso.</p>
+<hr>
+<h2>Opioides</h2>
+<p>A <strong>intoxicação</strong> tem uma tríade: <strong>miose puntiforme, depressão respiratória e rebaixamento de consciência</strong>. O tratamento é ventilação e <strong>naloxona</strong> (IV, IM ou intranasal). A naloxona dura menos que muitos opioides — sobretudo a metadona —, e o paciente pode voltar a deprimir: observação prolongada e, se preciso, nova dose ou infusão.</p>
+<p>A <strong>abstinência</strong> é o espelho da intoxicação: <strong>midríase, rinorreia, lacrimejamento, bocejos, piloereção</strong>, diarreia, cólicas, mialgia, insônia e ansiedade. Começa em horas com heroína e morfina e em um a três dias com a metadona. É muito desconfortável, mas <strong>raramente fatal</strong> no adulto saudável — ao contrário da abstinência de álcool e de benzodiazepínico.</p>
+<p>O tratamento de manutenção usa agonistas:</p>
+<ul><li><strong>Metadona</strong> — agonista pleno mu, meia-vida longa; risco de depressão respiratória e de <strong>QT longo</strong>.</li><li><strong>Buprenorfina</strong> — agonista parcial de alta afinidade, com <strong>efeito-teto</strong> na depressão respiratória. Dada com agonista pleno ainda no receptor, <strong>precipita abstinência</strong>: espera-se abstinência leve a moderada antes da primeira dose. Associada à naloxona na forma sublingual, para desestimular o uso injetado.</li><li><strong>Naltrexona</strong> — antagonista, só depois de completada a desintoxicação.</li></ul>
+<hr>
+<h2>Estimulantes e cannabis</h2>
+<p>A <strong>cocaína</strong> bloqueia a recaptação de dopamina, noradrenalina e serotonina. O <strong>crack</strong>, fumado, chega ao cérebro em segundos, dura minutos e gera compulsão mais intensa. A <strong>intoxicação</strong> é simpatomimética: euforia, agitação, paranoia, <strong>midríase</strong>, taquicardia, hipertensão, hipertermia e sudorese, com risco de <strong>síndrome coronariana por vasoespasmo</strong>, arritmia, AVC, convulsão e rabdomiólise. A primeira linha é o <strong>benzodiazepínico</strong>; classicamente se evita o <strong>betabloqueador</strong> na fase aguda (estímulo alfa sem oposição). A <strong>abstinência</strong> — o <em>crash</em> — traz disforia, fadiga, <strong>hipersonia, aumento do apetite</strong>, sonhos vívidos e fissura intensa, com risco de suicídio. Não há fármaco aprovado para o transtorno por uso de cocaína: o tratamento é psicossocial.</p>
+<p>A <strong>cannabis</strong> age no receptor CB1. A intoxicação dá <strong>hiperemia conjuntival</strong>, boca seca, taquicardia, <strong>aumento do apetite</strong>, euforia, alteração da percepção do tempo e prejuízo motor — e pode dar ansiedade, pânico e psicose. O uso na adolescência associa-se a prejuízo cognitivo e maior risco de esquizofrenia. A abstinência existe (irritabilidade, ansiedade, insônia, sonhos estranhos, perda do apetite). A <strong>síndrome de hiperêmese canabinoide</strong> são vômitos cíclicos no usuário crônico, com alívio característico em <strong>banhos quentes</strong>; o tratamento é parar o uso.</p>
+<hr>
+<h2>Tabaco e dependências comportamentais</h2>
+<p>O tabagismo é a principal causa evitável de morte. A <strong>dependência de nicotina</strong> é medida pelo <strong>teste de Fagerström</strong>; fumar o primeiro cigarro nos primeiros minutos após acordar é o marcador isolado mais forte. A abstinência traz irritabilidade, ansiedade, dificuldade de concentração, insônia, inquietação e aumento do apetite e do peso. Na consulta, a abordagem breve do INCA segue o <strong>PAAPA</strong>: perguntar, avaliar, aconselhar, preparar e acompanhar.</p>
+<p>O <strong>PCDT do Tabagismo</strong> combina <strong>abordagem cognitivo-comportamental</strong> com <strong>reposição de nicotina</strong> (adesivo, goma, pastilha) e <strong>bupropiona</strong>. Combinar o <strong>adesivo</strong> (nível basal) com goma ou pastilha (para a fissura) é mais eficaz que uma forma isolada, com redução gradual do adesivo. A <strong>bupropiona</strong> começa uma a duas semanas antes da data de parada e é <strong>contraindicada em epilepsia, bulimia e anorexia</strong>, com IMAO e na retirada abrupta de álcool ou BZD. A <strong>vareniclina</strong>, agonista parcial do receptor nicotínico α4β2, é a monoterapia mais eficaz nas diretrizes internacionais, mas não integra o elenco do protocolo do SUS.</p>
+<blockquote><p>O <strong>cigarro eletrônico</strong> tem fabricação, importação e venda proibidas pela Anvisa e <strong>não é tratamento</strong> do tabagismo.</p></blockquote>
+<p>O <strong>transtorno do jogo</strong> é a única dependência comportamental no capítulo de transtornos relacionados a substâncias e aditivos do DSM-5-TR (no DSM-IV ficava entre os do controle de impulsos). Exige <strong>4 ou mais de 9 critérios em 12 meses</strong>: necessidade de apostar valores crescentes, irritabilidade ao tentar parar, tentativas frustradas de controle, preocupação constante com o jogo, apostar para aliviar o mal-estar, <strong>"correr atrás do prejuízo"</strong>, mentir, prejuízo de relações ou trabalho e depender de outros para cobrir dívidas. As apostas esportivas online tornaram o quadro mais frequente. O tratamento é TCC, com atenção às comorbidades (depressão, uso de álcool) e ao risco de suicídio.</p></script>
+<!-- Tutor local: define window.DEEPSEEK_KEY. O arquivo NAO vai para o repositorio,
+     entao online ele da 404 e o chat simplesmente nao aparece. -->
+<script src="../deepseek_key.js"></script>
+<script>
+/* ─────────────────────────────────────────────────────────────────────────────
+   CONTRATO DE DADOS — para adaptar a outro tema, troque apenas QUIZ e o resumo.
+   Cada item: { question, options[2..6], correctIndex, explanation }
+   ──────────────────────────────────────────────────────────────────────────── */
+var TITLE      = "Transtornos por Uso de Substâncias";
+var EYEBROW    = "Psiquiatria · Referência";
+var DISCIPLINA = "Psiquiatria";   // pasta de origem (PED, GO...) — usada pelo índice
+var SUBTITLE = "Álcool, opioides, cocaína, cannabis, tabaco e jogo: do critério ao tratamento";
+var INTRO    = "Os 11 critérios e a gravidade, álcool (abstinência, delirium tremens, Wernicke-Korsakoff e tratamento), opioides, cocaína, cannabis, tabaco e transtorno do jogo. Baseado no DSM-5-TR e no PCDT do tabagismo — não há slide da aula deste tema.";
+
+var QUIZ = [
+  {
+    "question": "Homem de 45 anos, nos últimos 12 meses, bebe mais do que pretendia, já tentou parar sem conseguir, precisa de doses maiores para o mesmo efeito, tem tremor matinal que melhora com a bebida e vem faltando ao trabalho. Quantos critérios ele preenche e qual a gravidade pelo DSM-5-TR?",
+    "options": [
+      "Cinco critérios: transtorno por uso de álcool moderado",
+      "Cinco critérios: transtorno por uso de álcool grave",
+      "Quatro critérios: transtorno por uso de álcool leve",
+      "Três critérios: abuso de álcool, ainda sem dependência"
+    ],
+    "correctIndex": 0,
+    "explanation": "São 5 dos 11 critérios em 12 meses: uso maior que o pretendido, tentativas frustradas de parar, tolerância, abstinência e fracasso em obrigações. A gravidade no DSM-5-TR é leve com 2 a 3 critérios, moderada com 4 a 5 e grave com 6 ou mais; abuso e dependência deixaram de existir como categorias separadas."
+  },
+  {
+    "question": "Em relação ao DSM-IV, o que o DSM-5 mudou no diagnóstico dos transtornos por uso de substâncias?",
+    "options": [
+      "Fundiu abuso e dependência e incluiu a fissura como critério",
+      "Separou abuso de dependência e excluiu a tolerância da lista",
+      "Passou a exigir abstinência fisiológica para o diagnóstico",
+      "Incluiu problemas legais recorrentes como critério central"
+    ],
+    "correctIndex": 0,
+    "explanation": "O DSM-5, mantido no DSM-5-TR (2022), uniu abuso e dependência num único transtorno graduado por gravidade, acrescentou a fissura (craving) e retirou os problemas legais. Tolerância e abstinência não são obrigatórias e não contam quando surgem de medicação usada sob supervisão médica, como opioide para dor."
+  },
+  {
+    "question": "Homem de 50 anos, etilista, foi internado para colecistectomia. Cerca de 36 horas após o último gole apresenta tremor, sudorese, taquicardia, insônia e ansiedade, sem confusão mental. Qual o tratamento indicado?",
+    "options": [
+      "Benzodiazepínico guiado por escala de abstinência",
+      "Haloperidol em dose fixa como primeira escolha",
+      "Betabloqueador isolado para conter a taquicardia",
+      "Observação apenas, pois o quadro é autolimitado"
+    ],
+    "correctIndex": 0,
+    "explanation": "A abstinência alcoólica começa em geral 6 a 24 horas após a última dose, com hiperatividade autonômica, tremor, insônia e ansiedade; convulsões tendem a ocorrer nas primeiras 48 horas e o delirium tremens depois disso. O tratamento é benzodiazepínico (diazepam; lorazepam na hepatopatia grave ou no idoso), guiado pela CIWA-Ar; betabloqueador isolado mascara sinais sem prevenir convulsão nem delirium."
+  },
+  {
+    "question": "Etilista no terceiro dia de internação fica desorientado, com piora à noite, vê insetos andando pela parede e tem febre, tremor intenso e taquicardia. Qual o diagnóstico e a conduta?",
+    "options": [
+      "Delirium tremens, que pede BZD e cuidado intensivo",
+      "Alucinose alcoólica, que pede só antipsicótico oral",
+      "Encefalopatia de Wernicke, que pede só tiamina oral",
+      "Esquizofrenia de início tardio, que pede clozapina"
+    ],
+    "correctIndex": 0,
+    "explanation": "Delirium tremens é delirium (desatenção, desorientação, flutuação) somado a abstinência grave, com febre, tremor, taquicardia e alucinações visuais, em geral entre 48 e 96 horas após a última dose. É emergência: benzodiazepínico em dose alta, tiamina, suporte e, nos graves, UTI. Na alucinose alcoólica as alucinações, sobretudo auditivas, ocorrem com a consciência clara."
+  },
+  {
+    "question": "Etilista desnutrido chega ao pronto-socorro confuso, com marcha atáxica e nistagmo. A glicemia capilar está baixa. Qual a sequência correta?",
+    "options": [
+      "Tiamina parenteral antes ou junto da glicose",
+      "Glicose hipertônica antes e tiamina oral depois",
+      "Glicose isolada, adiando a tiamina para a alta",
+      "Haloperidol para a confusão e depois glicose"
+    ],
+    "correctIndex": 0,
+    "explanation": "Confusão, ataxia e alterações oculares (nistagmo, oftalmoparesia) formam a tríade de Wernicke, completa só numa minoria dos casos. Dá-se tiamina parenteral antes ou junto da glicose, porque a glicose consome tiamina e pode precipitar ou agravar o quadro. Sem tratamento evolui para Korsakoff: amnésia anterógrada com confabulação, em geral irreversível."
+  },
+  {
+    "question": "Na UBS, o médico pergunta a um paciente se já sentiu que deveria diminuir a bebida, se as críticas ao seu modo de beber o aborrecem, se sente culpa e se bebe pela manhã para aliviar o mal-estar. Há duas respostas positivas. Qual o instrumento e a interpretação?",
+    "options": [
+      "CAGE; duas respostas positivas sugerem problema com álcool",
+      "AUDIT; duas respostas positivas confirmam dependência grave",
+      "CIWA-Ar; duas respostas positivas indicam abstinência",
+      "Fagerström; duas respostas positivas indicam dependência"
+    ],
+    "correctIndex": 0,
+    "explanation": "O CAGE (Cut down, Annoyed, Guilty, Eye-opener) é rastreio rápido: 2 ou mais respostas positivas sugerem uso problemático e pedem avaliação. O AUDIT, da OMS, tem 10 itens e estratifica o risco (8 ou mais indica uso de risco); a CIWA-Ar mede a gravidade da abstinência, e o Fagerström, a dependência de nicotina."
+  },
+  {
+    "question": "Homem com transtorno por uso de álcool grave, abstinente há dez dias, tem cirrose descompensada (Child-Pugh C) e função renal normal. Qual fármaco é o mais adequado para ajudar a manter a abstinência?",
+    "options": [
+      "Acamprosato, de excreção renal",
+      "Naltrexona, de metabolismo hepático",
+      "Dissulfiram, por efeito aversivo",
+      "Diazepam contínuo, como prevenção"
+    ],
+    "correctIndex": 0,
+    "explanation": "O acamprosato, modulador glutamatérgico, é eliminado pelo rim sem metabolismo hepático, por isso serve na hepatopatia grave (e é contraindicado na insuficiência renal grave). A naltrexona é evitada na insuficiência hepática grave e o dissulfiram é hepatotóxico; benzodiazepínico contínuo troca uma dependência por outra."
+  },
+  {
+    "question": "Paciente em tratamento com metadona para transtorno por uso de opioide também tem transtorno por uso de álcool. Qual fármaco para o álcool está contraindicado?",
+    "options": [
+      "Naltrexona",
+      "Acamprosato",
+      "Topiramato",
+      "Baclofeno"
+    ],
+    "correctIndex": 0,
+    "explanation": "A naltrexona é antagonista opioide: precipita abstinência em quem usa opioide (metadona, morfina) e bloqueia a analgesia. No álcool ela reduz o reforço e a fissura; o acamprosato é a alternativa nesse paciente."
+  },
+  {
+    "question": "Paciente em uso de dissulfiram ingere bebida alcoólica e apresenta rubor facial, cefaleia pulsátil, náusea, vômitos, taquicardia e hipotensão. Qual o mecanismo?",
+    "options": [
+      "Acúmulo de acetaldeído por inibição da aldeído-desidrogenase",
+      "Bloqueio do receptor opioide mu, que impede a euforia do álcool",
+      "Modulação glutamatérgica, que reduz a fissura pelo álcool",
+      "Liberação de histamina por inibição da álcool-desidrogenase"
+    ],
+    "correctIndex": 0,
+    "explanation": "O dissulfiram inibe a aldeído-desidrogenase; o acetaldeído se acumula e provoca reação aversiva (rubor, náusea, vômitos, taquicardia, hipotensão), que pode ser grave. Só funciona com adesão, exige pelo menos 12 horas sem beber antes de começar e depende de consentimento: dar escondido ao paciente é antiético e perigoso."
+  },
+  {
+    "question": "Jovem é encontrado inconsciente, com frequência respiratória de 6 irpm, pupilas puntiformes e uma seringa ao lado. Qual a conduta e o cuidado essencial?",
+    "options": [
+      "Naloxona e observação, pois o efeito dela pode acabar antes",
+      "Flumazenil, pois reverte opioides e benzodiazepínicos",
+      "Naloxona e alta logo que o paciente despertar por completo",
+      "Bicarbonato de sódio para proteger contra arritmias"
+    ],
+    "correctIndex": 0,
+    "explanation": "Miose, depressão respiratória e rebaixamento de consciência formam a tríade da intoxicação por opioide: ventilação e naloxona (IV, IM ou intranasal). A naloxona dura menos que muitos opioides, sobretudo a metadona, e o paciente pode voltar a deprimir; por isso exige observação prolongada e, se preciso, nova dose ou infusão. O flumazenil só reverte benzodiazepínico."
+  },
+  {
+    "question": "Qual conjunto de achados é típico da abstinência de opioides?",
+    "options": [
+      "Midríase, rinorreia, lacrimejamento, bocejos e piloereção",
+      "Miose, bradipneia, sonolência e constipação intestinal",
+      "Tremor, alucinações visuais, febre e convulsões",
+      "Hipersonia, aumento do apetite e disforia intensa"
+    ],
+    "correctIndex": 0,
+    "explanation": "A abstinência de opioide é o espelho da intoxicação: midríase, rinorreia, lacrimejamento, bocejos, piloereção, diarreia, cólicas, mialgia e ansiedade. É muito desconfortável, mas raramente fatal no adulto saudável, ao contrário da abstinência de álcool e de benzodiazepínico, que causa convulsões. Hipersonia e aumento do apetite são da abstinência de cocaína."
+  },
+  {
+    "question": "Ao iniciar buprenorfina em paciente dependente de heroína, qual cuidado é necessário?",
+    "options": [
+      "Esperar sinais de abstinência para não precipitá-la",
+      "Iniciar logo após a última dose para evitar fissura",
+      "Associar naloxona venosa para potencializar o efeito",
+      "Iniciar em dose alta, pois não há teto de depressão"
+    ],
+    "correctIndex": 0,
+    "explanation": "A buprenorfina é agonista parcial mu de alta afinidade: dada com um agonista pleno ainda ocupando o receptor, desloca-o e precipita abstinência, por isso se espera abstinência leve a moderada antes da primeira dose. Tem efeito-teto na depressão respiratória e é mais segura que a metadona, agonista pleno de meia-vida longa que alonga o QT."
+  },
+  {
+    "question": "Homem de 28 anos chega com dor torácica uma hora após usar cocaína. Está agitado, com PA de 180/110 mmHg, FC de 130 bpm, midríase, sudorese e temperatura de 38,2 °C. Qual a primeira medida farmacológica?",
+    "options": [
+      "Benzodiazepínico por via intravenosa",
+      "Betabloqueador por via intravenosa",
+      "Haloperidol por via intramuscular",
+      "Naloxona por via intravenosa"
+    ],
+    "correctIndex": 0,
+    "explanation": "Na intoxicação por cocaína o benzodiazepínico é a primeira linha: reduz agitação, taquicardia, hipertensão e risco de convulsão. Classicamente se evita betabloqueador na fase aguda (estímulo alfa sem oposição, piora do vasoespasmo), e o haloperidol baixa o limiar convulsivo e piora a hipertermia. Investigar síndrome coronariana: a cocaína causa vasoespasmo e infarto mesmo em jovens."
+  },
+  {
+    "question": "Após três dias de uso compulsivo de crack, paciente dorme quase o dia todo, come muito, está disfórico, com fissura intensa e ideação suicida. Qual o quadro?",
+    "options": [
+      "Abstinência de cocaína, o chamado crash",
+      "Intoxicação tardia por cocaína e crack",
+      "Abstinência de opioide de início lento",
+      "Episódio depressivo maior com hipersonia"
+    ],
+    "correctIndex": 0,
+    "explanation": "A abstinência de estimulantes ('crash') traz disforia, fadiga, hipersonia, aumento do apetite, sonhos vívidos, lentificação e fissura intensa, com risco de suicídio. Não há tratamento farmacológico aprovado: suporte, proteção contra o risco de suicídio e abordagem psicossocial."
+  },
+  {
+    "question": "Adolescente chega à consulta com hiperemia conjuntival, boca seca, taquicardia e muita fome, rindo sem motivo e dizendo que o tempo 'passa devagar'. Qual a substância mais provável?",
+    "options": [
+      "Cannabis",
+      "Cocaína",
+      "Heroína",
+      "Ecstasy"
+    ],
+    "correctIndex": 0,
+    "explanation": "Hiperemia conjuntival, aumento do apetite, boca seca e taquicardia, com euforia, risos e alteração da percepção do tempo, são a intoxicação por cannabis. Pode haver ansiedade, pânico e psicose; o uso na adolescência associa-se a prejuízo cognitivo e maior risco de esquizofrenia."
+  },
+  {
+    "question": "Jovem que usa cannabis diariamente há anos tem crises recorrentes de náusea e vômitos incoercíveis, que melhoram com banhos quentes demorados. Qual o diagnóstico?",
+    "options": [
+      "Síndrome de hiperêmese canabinoide",
+      "Gastroparesia diabética de início precoce",
+      "Síndrome dos vômitos cíclicos idiopática",
+      "Intoxicação aguda por cannabis sintética"
+    ],
+    "correctIndex": 0,
+    "explanation": "A hiperêmese canabinoide é a síndrome de vômitos cíclicos do usuário crônico e pesado de cannabis, com alívio característico em banhos quentes. O tratamento definitivo é parar o uso; antieméticos comuns funcionam mal."
+  },
+  {
+    "question": "Mulher de 30 anos, fumante, quer parar de fumar. Tem epilepsia e história de bulimia nervosa. Qual opção está contraindicada?",
+    "options": [
+      "Bupropiona de liberação lenta",
+      "Vareniclina em dose plena",
+      "Adesivo de nicotina transdérmico",
+      "Pastilha ou goma de nicotina"
+    ],
+    "correctIndex": 0,
+    "explanation": "A bupropiona reduz o limiar convulsivo: é contraindicada na epilepsia, na bulimia e na anorexia, com IMAO e na retirada abrupta de álcool ou benzodiazepínico. Reposição de nicotina e vareniclina são opções nessa paciente."
+  },
+  {
+    "question": "No tratamento do tabagismo pelo SUS, conforme o protocolo clínico do Ministério da Saúde, o que é oferecido ao fumante?",
+    "options": [
+      "Abordagem cognitivo-comportamental, reposição de nicotina e bupropiona",
+      "Abordagem cognitivo-comportamental e cigarro eletrônico supervisionado",
+      "Reposição de nicotina e clonazepam para a ansiedade da abstinência",
+      "Nortriptilina e cigarro eletrônico com redução gradual de nicotina"
+    ],
+    "correctIndex": 0,
+    "explanation": "O PCDT do tabagismo combina abordagem cognitivo-comportamental com reposição de nicotina (adesivo, goma, pastilha) e bupropiona. A vareniclina é a monoterapia mais eficaz nas diretrizes internacionais, mas não está no elenco do protocolo; o cigarro eletrônico tem venda proibida pela Anvisa e não é tratamento."
+  },
+  {
+    "question": "Fumante de 40 cigarros por dia acende o primeiro cigarro cinco minutos depois de acordar e decide parar. Qual o melhor esquema de reposição de nicotina?",
+    "options": [
+      "Adesivo diário associado a goma ou pastilha nas fissuras",
+      "Goma de nicotina isolada, usada só quando houver fissura",
+      "Adesivo com retirada abrupta ao fim da primeira semana",
+      "Adesivo só nos dias em que fumar mais de dez cigarros"
+    ],
+    "correctIndex": 0,
+    "explanation": "Combinar o adesivo (nível basal) com uma forma de ação curta (goma ou pastilha) para a fissura é mais eficaz que qualquer forma isolada. Muitos cigarros por dia e o primeiro cigarro logo ao acordar indicam dependência alta no teste de Fagerström, e o adesivo é reduzido de forma gradual ao longo de semanas."
+  },
+  {
+    "question": "Homem de 38 anos faz apostas esportivas online cada vez mais altas, fica irritado quando tenta parar, mente para a família, volta a apostar no dia seguinte para recuperar o que perdeu e pede dinheiro emprestado para cobrir dívidas. Qual o diagnóstico e como o DSM-5-TR o classifica?",
+    "options": [
+      "Transtorno do jogo, no capítulo das dependências",
+      "Transtorno do controle de impulsos, como a cleptomania",
+      "Transtorno obsessivo-compulsivo com rituais de aposta",
+      "Episódio hipomaníaco com gastos excessivos isolados"
+    ],
+    "correctIndex": 0,
+    "explanation": "O transtorno do jogo é a única dependência comportamental no capítulo de transtornos relacionados a substâncias e aditivos do DSM-5-TR: 4 ou mais de 9 critérios em 12 meses, como tolerância, irritabilidade ao tentar parar, mentir, 'correr atrás do prejuízo' e pedir dinheiro para cobrir perdas. No DSM-IV ele ficava entre os transtornos do controle de impulsos."
+  }
+];
+
+var LETTERS = ['A','B','C','D','E','F'];
+var SHUFFLE = true, LOCK = true;
+
+var S = { view:'home', started:false, finished:false, i:0, order:[], answers:[], open:{}, filter:'all', warn:false, chat:{} };
+
+function esc(s){ return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
+function pad(n){ return String(n).padStart(2,'0'); }
+
+function build(){
+  var qs = QUIZ.map(function(q,id){ return { question:q.question, options:q.options.slice(), correctIndex:q.correctIndex, explanation:q.explanation, image:q.image, imageCaption:q.imageCaption, id:id }; });
+  if (!SHUFFLE) return qs;
+  for (var i=qs.length-1;i>0;i--){ var j=Math.floor(Math.random()*(i+1)); var t=qs[i]; qs[i]=qs[j]; qs[j]=t; }
+  return qs.map(function(q){
+    var correct = q.options[q.correctIndex], o = q.options.slice();
+    for (var i=o.length-1;i>0;i--){ var j=Math.floor(Math.random()*(i+1)); var t=o[i]; o[i]=o[j]; o[j]=t; }
+    q.options = o; q.correctIndex = o.indexOf(correct); return q;
+  });
+}
+
+/* ── ações ─────────────────────────────────────────────────────────────────── */
+var A = {
+  home:      function(){ S.view='home'; S.started=false; S.finished=false; up(0); },
+  resumo:    function(){ S.view='resumo'; up(0); },
+  start:     function(){ var o=build(); S.view='quiz'; S.started=true; S.finished=false; S.i=0; S.order=o;
+                         S.answers=new Array(o.length).fill(null); S.open={}; S.filter='all'; S.warn=false; up(0); },
+  restart:   function(){ A.start(); },
+  sair:      function(){ S.view='home'; S.started=false; up(0); },   // guarda as respostas
+  retomar:   function(){ S.view='quiz'; S.started=true; S.finished=false; S.warn=false; up(0); },
+  go:        function(n){ if(n<0||n>S.order.length-1) return; S.i=n; S.warn=false; render(); },
+  jump:      function(n){ if(S.finished){ S.finished=false; S.i=n; S.warn=false; } else { if(n<0||n>S.order.length-1) return; S.i=n; S.warn=false; } up(0,'smooth'); },
+  pick:      function(n){ if(LOCK && S.answers[S.i]!==null) return; S.answers[S.i]=n; render(); },
+  prev:      function(){ A.go(S.i-1); },
+  next:      function(){ if(S.i<S.order.length-1) A.go(S.i+1); else A.finish(); },
+  finish:    function(){ var b=S.answers.filter(function(a){return a===null}).length;
+                         if(b>0 && !S.warn){ S.warn=true; render(); return; } S.finished=true; S.warn=false; up(0); },
+  force:     function(){ S.finished=true; S.warn=false; up(0); },
+  gotoBlank: function(){ var n=S.answers.findIndex(function(a){return a===null}); if(n>=0) A.go(n); },
+  back:      function(){ S.finished=false; S.warn=false; up(0); },
+  filter:    function(k){ S.filter=k; render(); },
+  toggle:    function(n){ S.open[n]=!S.open[n]; render(); },
+  toggleAll: function(){ var r=reviewList(), all=r.length>0 && r.every(function(x){return S.open[x.idx]});
+                         S.open={}; if(!all) r.forEach(function(x){ S.open[x.idx]=true; }); render(); }
+};
+function up(top, beh){ render(); window.scrollTo({ top: top||0, behavior: beh||'auto' }); }
+
+/* Aberto por duplo clique (file://) volta para o indice local; servido pela web,
+   volta para o publicado. Os dois listam os mesmos materiais. */
+function idxHref(){
+  var local = (typeof location !== 'undefined' && location.protocol === 'file:');
+  return local ? '../index_local.html' : '../index.html';
+}
+function emAndamento(){
+  return S.order.length > 0 && !S.finished &&
+         S.answers.some(function(a){ return a !== null; });
+}
+
+/* ── header ────────────────────────────────────────────────────────────────── */
+function renderHeader(){
+  var mono = "font-family:'IBM Plex Mono',monospace";
+  var left =
+    '<div style="min-width:0">' +
+      '<div style="display:flex;align-items:center;gap:8px;'+mono+';font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:#8a8578">' +
+        '<a href="'+idxHref()+'" class="h-ink" style="color:#2b57cc;text-decoration:none;white-space:nowrap">\u2190 Materiais</a>' +
+        '<span style="color:#d3cec4">/</span>' +
+        '<span style="overflow:hidden;text-overflow:ellipsis;white-space:nowrap">'+esc(EYEBROW)+'</span>' +
+      '</div>' +
+      '<h1 style="margin:1px 0 0;font-family:\'Newsreader\',Georgia,serif;font-size:20px;font-weight:500;letter-spacing:-.01em;line-height:1.15">'+esc(TITLE)+'</h1>' +
+    '</div>';
+
+  var right = '';
+  if (S.view === 'quiz' && S.started) {
+    var hit = counts().hit;
+    right = '<div style="display:flex;align-items:center;gap:10px;flex-shrink:0">' +
+              '<button type="button" data-act="sair" class="h-line" style="background:none;border:1px solid #ddd8ce;border-radius:9px;padding:6px 11px;'+mono+';font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;color:#5b6478;cursor:pointer;transition:border-color .15s ease">Sair</button>' +
+              '<div style="display:flex;align-items:center;gap:6px">' +
+                '<span style="'+mono+';font-size:15px;font-weight:600;letter-spacing:-.02em">'+hit+'</span>' +
+                '<span style="'+mono+';font-size:11px;color:#8a8578">/ '+S.order.length+'</span>' +
+              '</div></div>';
+  } else if (S.view !== 'home') {
+    right = '<button type="button" data-act="home" class="h-line" style="flex-shrink:0;background:none;border:1px solid #ddd8ce;border-radius:9px;padding:7px 13px;'+mono+';font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:#5b6478;cursor:pointer;transition:border-color .15s ease">← Início</button>';
+  }
+
+  var html = '<div style="display:flex;align-items:baseline;justify-content:space-between;gap:12px;margin-bottom:'+(S.view==='quiz'&&S.started?'10px':'2px')+'">'+left+right+'</div>';
+
+  if (S.view === 'quiz' && S.started) {
+    var c = counts();
+    var rail = S.order.map(function(q,n){
+      var a = S.answers[n], cur = n===S.i && !S.finished, bg = '#d3cec4';
+      if (a!==null) bg = (a===q.correctIndex) ? '#2e7d55' : '#c04437';
+      if (cur && a===null) bg = '#121a2b';
+      var st = a===null ? 'em branco' : (a===q.correctIndex ? 'correta' : 'incorreta');
+      return '<button type="button" data-act="jump" data-n="'+n+'" title="Questão '+(n+1)+' — '+st+'" aria-label="Questão '+(n+1)+' — '+st+'" style="flex:1 1 0;min-width:0;background:none;border:0;padding:13px 0;margin:0;cursor:pointer;display:flex;align-items:center;justify-content:center">' +
+             '<span style="display:block;width:100%;border-radius:99px;transition:height .18s ease,background .18s ease,box-shadow .18s ease;height:'+(cur?'17px':'9px')+';background:'+bg+';box-shadow:'+(cur?'0 0 0 3px rgba(18,26,43,.13)':'none')+'"></span></button>';
+    }).join('');
+    html += '<div><div style="display:flex;align-items:center;gap:3px">'+rail+'</div>' +
+            '<div style="display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:-2px">' +
+              '<div style="'+mono+';font-size:11px;letter-spacing:.04em;color:#5b6478">Questão '+pad(S.i+1)+' / '+S.order.length+'</div>' +
+              '<div style="display:flex;align-items:center;gap:12px;'+mono+';font-size:10.5px;color:#8a8578">' +
+                dot('#2e7d55',c.hit)+dot('#c04437',c.miss)+dot('#d3cec4',c.blank) +
+              '</div></div></div>';
+  }
+  document.getElementById('hdr').innerHTML = html;
+}
+function dot(color,n){ return '<span style="display:flex;align-items:center;gap:5px"><span style="width:7px;height:7px;border-radius:99px;background:'+color+';display:block"></span>'+n+'</span>'; }
+
+function counts(){
+  var hit=0, miss=0, blank=0;
+  S.answers.forEach(function(a,n){
+    if (a===null) blank++;
+    else if (S.order[n] && a===S.order[n].correctIndex) hit++;
+    else miss++;
+  });
+  return { hit:hit, miss:miss, blank:blank, total:S.order.length };
+}
+
+/* ── tela inicial ──────────────────────────────────────────────────────────── */
+function renderHome(){
+  var mono = "font-family:'IBM Plex Mono',monospace";
+  var secoes = (document.getElementById('resumoSrc').textContent.match(/<h2/g)||[]).length;
+  var cell = function(v,l){
+    return '<div style="background:#faf9f6;padding:16px 14px">' +
+      '<div style="'+mono+';font-size:22px;font-weight:500;letter-spacing:-.03em">'+v+'</div>' +
+      '<div style="'+mono+';font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:#8a8578;margin-top:3px">'+l+'</div></div>';
+  };
+  var card = function(act,tag,titulo,desc,cta){
+    return '<button type="button" data-act="'+act+'" class="h-card" style="display:flex;flex-direction:column;align-items:flex-start;gap:0;text-align:left;background:#fff;border:1px solid #e4e0d8;border-radius:18px;padding:24px 22px;cursor:pointer;transition:border-color .16s ease,transform .14s ease;box-shadow:0 1px 2px rgba(18,26,43,.04),0 12px 28px -20px rgba(18,26,43,.18)">' +
+      '<div style="'+mono+';font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:#2b57cc;margin-bottom:12px">'+tag+'</div>' +
+      '<div style="font-family:\'Newsreader\',Georgia,serif;font-size:26px;font-weight:500;letter-spacing:-.02em;line-height:1.15;margin-bottom:8px">'+titulo+'</div>' +
+      '<div style="font-size:14px;line-height:1.6;color:#5b6478;margin-bottom:18px;text-wrap:pretty">'+desc+'</div>' +
+      '<div style="'+mono+';font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:#121a2b">'+cta+'</div></button>';
+  };
+
+  document.getElementById('stage').innerHTML =
+    '<section style="padding:56px 0 0;animation:qFade .3s ease">' +
+      '<div style="'+mono+';font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:#2b57cc;margin-bottom:16px">Material de revisão</div>' +
+      '<h2 style="font-family:\'Newsreader\',Georgia,serif;font-size:40px;line-height:1.08;font-weight:400;letter-spacing:-.025em;margin:0 0 18px;text-wrap:pretty">'+esc(SUBTITLE)+'</h2>' +
+      '<p style="font-size:15.5px;line-height:1.65;color:#5b6478;margin:0 0 30px;max-width:52ch;text-wrap:pretty">'+esc(INTRO)+'</p>' +
+      '<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(108px,1fr));gap:1px;background:#e4e0d8;border:1px solid #e4e0d8;border-radius:14px;overflow:hidden;margin-bottom:32px">' +
+        cell(QUIZ.length,'Questões') + cell(secoes,'Seções') + cell('~'+Math.round(QUIZ.length*0.75),'Minutos') +
+      '</div>' +
+      '<div class="home-grid" style="display:grid;grid-template-columns:1fr 1fr;gap:12px">' +
+        (emAndamento()
+          ? card('retomar','Em andamento','Quiz',
+                 'Você parou na questão '+pad(S.i+1)+' de '+S.order.length+', com '+
+                 (S.order.length-counts().blank)+' respondida'+((S.order.length-counts().blank)===1?'':'s')+
+                 '. Suas respostas continuam guardadas.','Retomar →')
+          : card('start','Praticar','Quiz', QUIZ.length+' questões de múltipla escolha, com explicação assim que você responde e gabarito comentado no fim.','Começar →')) +
+        card('resumo','Estudar','Resumo','O conteúdo da aula em texto corrido, organizado em '+secoes+' seções para leitura antes da prova.','Ler →') +
+      '</div>' +
+      '<div style="margin-top:26px;display:flex;flex-wrap:wrap;align-items:center;gap:8px 18px;'+mono+';font-size:11px;color:#8a8578">' +
+        '<span>← →&nbsp; navegar</span><span>1–'+maxOpts()+'&nbsp; responder</span><span>Enter&nbsp; avançar</span>' +
+        (emAndamento() ? '<button type="button" data-act="start" class="h-ink" style="background:none;border:0;padding:0;'+mono+';font-size:11px;color:#8a8578;cursor:pointer;text-decoration:underline;text-underline-offset:3px">recomeçar do zero</button>' : '') +
+        '</div>' +
+    '</section>';
+}
+function maxOpts(){ return QUIZ.reduce(function(m,q){ return Math.max(m,q.options.length); },0); }
+
+/* ── resumo ────────────────────────────────────────────────────────────────── */
+function renderResumo(){
+  document.getElementById('stage').innerHTML =
+    '<section style="padding:34px 0 0;animation:qFade .3s ease">' +
+      '<div style="font-family:\'IBM Plex Mono\',monospace;font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:#2b57cc;margin-bottom:14px">Resumo</div>' +
+      '<div class="rsm">' + document.getElementById('resumoSrc').textContent + '</div>' +
+      '<div style="display:flex;flex-wrap:wrap;gap:9px;margin-top:38px;padding-top:24px;border-top:1px solid #e4e0d8">' +
+        '<button type="button" data-act="start" class="h-darkflat" style="background:#121a2b;color:#f5f3ef;border:0;border-radius:11px;padding:13px 24px;font-size:14px;font-weight:500;cursor:pointer;transition:background .16s ease">Fazer o quiz →</button>' +
+        '<button type="button" data-act="home" class="h-line" style="background:none;border:1px solid #ddd8ce;border-radius:11px;padding:13px 22px;font-size:14px;cursor:pointer;transition:border-color .15s ease">Voltar ao início</button>' +
+      '</div></section>';
+}
+
+/* imagem da questao — data URI ja resolvida pelo montar_quiz.py */
+function figura(q, cls){
+  if (!q.image) return '';
+  return '<figure class="fig'+(cls?' '+cls:'')+'"><img src="'+q.image+'" alt="'+esc(q.imageCaption||'Imagem da questão')+'">' +
+         (q.imageCaption ? '<figcaption>'+esc(q.imageCaption)+'</figcaption>' : '') + '</figure>';
+}
+
+/* ── questão ───────────────────────────────────────────────────────────────── */
+function renderQuestion(){
+  var mono = "font-family:'IBM Plex Mono',monospace";
+  var q = S.order[S.i], ans = S.answers[S.i], reveal = ans !== null;
+
+  var status = 'Não respondida', sColor = '#8a8578';
+  if (reveal) { var ok = ans===q.correctIndex; status = ok?'Você acertou':'Você errou'; sColor = ok?'#2e7d55':'#c04437'; }
+
+  var opts = q.options.map(function(text,n){
+    var isC = n===q.correctIndex, isMine = n===ans;
+    var bd='#e4e0d8', bg='#fff', fg='#121a2b', bBg='#f2efe9', bFg='#8a8578', mark='', mColor='', op='1', hbd='#2b57cc';
+    if (reveal) {
+      op = (isC||isMine) ? '1' : '.62';
+      if (isC)               { bd='#8fc7a7'; bg='#eef7f1'; fg='#1f5c3e'; bBg='#2e7d55'; bFg='#fff'; mark='✓'; mColor='#2e7d55'; }
+      if (isMine && !isC)    { bd='#e0a49a'; bg='#fdf0ee'; fg='#8f2f25'; bBg='#c04437'; bFg='#fff'; mark='✕'; mColor='#c04437'; }
+    } else if (isMine)       { bd='#121a2b'; bg='#f7f6f2'; bBg='#121a2b'; bFg='#f5f3ef'; }
+    var locked = reveal && LOCK;
+    return '<button type="button" data-act="pick" data-n="'+n+'" class="h-opt'+(locked?' locked':'')+'" style="--hbd:'+hbd+';display:flex;gap:13px;align-items:flex-start;width:100%;text-align:left;padding:14px 15px;border-radius:13px;font-size:15px;line-height:1.5;transition:border-color .15s ease,background .15s ease,transform .12s ease;border:1.5px solid '+bd+';background:'+bg+';color:'+fg+';cursor:'+(locked?'default':'pointer')+';opacity:'+op+'">' +
+      '<span style="flex-shrink:0;width:24px;height:24px;border-radius:7px;display:flex;align-items:center;justify-content:center;'+mono+';font-size:11.5px;font-weight:600;margin-top:1px;background:'+bBg+';color:'+bFg+'">'+LETTERS[n]+'</span>' +
+      '<span style="flex:1;min-width:0;text-wrap:pretty">'+esc(text)+'</span>' +
+      (mark ? '<span style="flex-shrink:0;'+mono+';font-size:14px;font-weight:600;margin-top:1px;color:'+mColor+'">'+mark+'</span>' : '') +
+      '</button>';
+  }).join('');
+
+  var expl = reveal ? '<div style="margin-top:20px;padding:16px 18px;background:#f7f6f2;border-left:2.5px solid #2b57cc;border-radius:0 12px 12px 0;animation:qFade .26s ease">' +
+      '<div style="'+mono+';font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:#2b57cc;margin-bottom:8px">Por quê</div>' +
+      '<p style="margin:0;font-size:14.5px;line-height:1.68;color:#39404f;text-wrap:pretty">'+esc(q.explanation)+'</p></div>' : '';
+
+  var blank = counts().blank;
+  var warn = S.warn ? '<div style="margin-top:14px;padding:15px 17px;background:#fdf7e9;border:1px solid #e8d5a3;border-radius:14px;animation:qFade .22s ease">' +
+      '<p style="margin:0 0 12px;font-size:14px;line-height:1.55;color:#6b5620">'+blank+(blank===1?' questão ainda está em branco.':' questões ainda estão em branco.')+' Você pode voltar nelas ou finalizar assim mesmo.</p>' +
+      '<div style="display:flex;flex-wrap:wrap;gap:8px">' +
+        '<button type="button" data-act="gotoBlank" style="background:#121a2b;color:#f5f3ef;border:0;border-radius:9px;padding:9px 16px;font-size:13px;font-weight:500;cursor:pointer">Ir para a 1ª em branco</button>' +
+        '<button type="button" data-act="force" style="background:none;color:#6b5620;border:1px solid #e8d5a3;border-radius:9px;padding:9px 16px;font-size:13px;cursor:pointer">Finalizar assim mesmo</button>' +
+      '</div></div>' : '';
+
+  var last = S.i === S.order.length-1;
+  var early = !last && (S.order.length - blank) > 0;
+
+  document.getElementById('stage').innerHTML =
+    '<section style="padding:26px 0 0">' +
+      '<article style="background:#fff;border:1px solid #e4e0d8;border-radius:18px;padding:26px 22px 24px;box-shadow:0 1px 2px rgba(18,26,43,.04),0 12px 28px -18px rgba(18,26,43,.18)">' +
+        '<div style="display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:14px">' +
+          '<div style="'+mono+';font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:#2b57cc">Questão '+pad(S.i+1)+'</div>' +
+          '<div style="'+mono+';font-size:10.5px;letter-spacing:.06em;color:'+sColor+'">'+status+'</div>' +
+        '</div>' +
+        '<h2 style="font-family:\'Newsreader\',Georgia,serif;font-size:22px;line-height:1.42;font-weight:400;letter-spacing:-.012em;margin:0 0 22px;text-wrap:pretty">'+esc(q.question)+'</h2>' +
+        figura(q, 'qfig') +
+        '<div style="display:flex;flex-direction:column;gap:9px">'+opts+'</div>' + expl +
+        (reveal ? chatBox(q, ans===q.correctIndex) : '') +
+      '</article>' + warn +
+      '<div style="display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:18px">' +
+        '<button type="button" data-act="prev" class="h-line" style="background:none;border:1px solid #ddd8ce;border-radius:11px;padding:12px 18px;font-size:14px;cursor:pointer;transition:border-color .15s ease,color .15s ease;color:'+(S.i===0?'#c4bfb4':'#121a2b')+';pointer-events:'+(S.i===0?'none':'auto')+'">← Anterior</button>' +
+        '<div style="display:flex;align-items:center;gap:8px">' +
+          (early ? '<button type="button" data-act="finish" class="h-ink" style="background:none;border:0;padding:12px 6px;'+mono+';font-size:11.5px;letter-spacing:.06em;text-transform:uppercase;color:#8a8578;cursor:pointer;text-decoration:underline;text-underline-offset:3px">Finalizar</button>' : '') +
+          '<button type="button" data-act="next" class="h-darkflat" style="background:#121a2b;color:#f5f3ef;border:0;border-radius:11px;padding:12px 22px;font-size:14px;font-weight:500;cursor:pointer;transition:background .16s ease">'+(last?'Finalizar':'Próxima →')+'</button>' +
+        '</div></div></section>';
+}
+
+/* ── resultado + gabarito comentado ────────────────────────────────────────── */
+function reviewList(){
+  return S.order.map(function(q,n){
+    var a = S.answers[n], ok = a!==null && a===q.correctIndex;
+    return { idx:n, ok:ok, blank:a===null, q:q, a:a };
+  }).filter(function(r){
+    return S.filter==='all' || (S.filter==='wrong'&&!r.ok&&!r.blank) || (S.filter==='right'&&r.ok) || (S.filter==='blank'&&r.blank);
+  });
+}
+
+function renderResult(){
+  var mono = "font-family:'IBM Plex Mono',monospace";
+  var c = counts(), pct = c.total ? Math.round(c.hit/c.total*100) : 0;
+
+  var title='Precisa revisar', msg='Releia o material com atenção e refaça o quiz — as explicações abaixo cobrem cada erro.';
+  if (pct>=90)      { title='Domínio sólido';   msg='Desempenho excelente. Confira as explicações das que escaparam e siga em frente.'; }
+  else if (pct>=70) { title='Bom desempenho';   msg='Base consistente. Revise os pontos errados abaixo para fechar as lacunas.'; }
+  else if (pct>=50) { title='Meio do caminho';  msg='Você acertou o essencial, mas há lacunas. Comece pelo filtro de erradas.'; }
+
+  var stat = function(v,l,color){
+    return '<div style="background:#faf9f6;padding:14px 10px">' +
+      '<div style="'+mono+';font-size:19px;font-weight:500;color:'+color+'">'+v+'</div>' +
+      '<div style="'+mono+';font-size:9.5px;letter-spacing:.09em;text-transform:uppercase;color:#8a8578;margin-top:2px">'+l+'</div></div>';
+  };
+
+  var fdefs = [['all','Todas',c.total],['wrong','Erradas',c.miss],['right','Certas',c.hit],['blank','Em branco',c.blank]];
+  var filters = fdefs.map(function(f){
+    var on = S.filter===f[0];
+    return '<button type="button" data-act="filter" data-k="'+f[0]+'" class="h-line" style="border-radius:99px;padding:8px 14px;font-size:13px;cursor:pointer;transition:all .15s ease;border:1px solid '+(on?'#121a2b':'#ddd8ce')+';background:'+(on?'#121a2b':'transparent')+';color:'+(on?'#f5f3ef':'#5b6478')+'">'+f[1]+' '+f[2]+'</button>';
+  }).join('');
+
+  var list = reviewList();
+  var allOpen = list.length>0 && list.every(function(r){ return S.open[r.idx]; });
+
+  var cards = list.map(function(r){
+    var numBg='#f0ede7', numFg='#8a8578';
+    if (!r.blank) { if (r.ok) { numBg='#e3f0e8'; numFg='#1f5c3e'; } else { numBg='#fbe6e2'; numFg='#8f2f25'; } }
+    var open = !!S.open[r.idx];
+    var body = '';
+    if (open) {
+      var opts = r.q.options.map(function(text,n){
+        var isC = n===r.q.correctIndex, isMine = n===r.a;
+        var bd='#eeebe4', bg='#fbfaf8', fg='#5b6478', bBg='#f0ede7', bFg='#8a8578', tag='', tBg='', tFg='';
+        if (isC)            { bd='#bcdcc9'; bg='#eef7f1'; fg='#1f5c3e'; bBg='#2e7d55'; bFg='#fff'; tag='Correta'; tBg='#d9ede1'; tFg='#1f5c3e'; }
+        if (isMine && !isC) { bd='#eec4bd'; bg='#fdf0ee'; fg='#8f2f25'; bBg='#c04437'; bFg='#fff'; tag='Sua resposta'; tBg='#f7ddd8'; tFg='#8f2f25'; }
+        if (isMine && isC)  { tag='Sua resposta ✓'; }
+        return '<div style="display:flex;gap:11px;align-items:flex-start;padding:11px 13px;border-radius:11px;font-size:14px;line-height:1.5;border:1px solid '+bd+';background:'+bg+';color:'+fg+'">' +
+          '<span style="flex-shrink:0;width:21px;height:21px;border-radius:6px;display:flex;align-items:center;justify-content:center;'+mono+';font-size:10.5px;font-weight:600;background:'+bBg+';color:'+bFg+'">'+LETTERS[n]+'</span>' +
+          '<span style="flex:1;min-width:0;text-wrap:pretty">'+esc(text)+'</span>' +
+          (tag ? '<span style="flex-shrink:0;'+mono+';font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;padding:3px 7px;border-radius:6px;margin-top:1px;background:'+tBg+';color:'+tFg+'">'+tag+'</span>' : '') +
+          '</div>';
+      }).join('');
+      body = '<div style="padding:2px 15px 18px;animation:qDrawer .2s ease">' +
+        '<div style="height:1px;background:#eeebe4;margin:0 0 16px"></div>' +
+        '<p style="font-family:\'Newsreader\',Georgia,serif;font-size:18px;line-height:1.5;margin:0 0 16px;text-wrap:pretty">'+esc(r.q.question)+'</p>' +
+        figura(r.q) +
+        '<div style="display:flex;flex-direction:column;gap:7px">'+opts+'</div>' +
+        '<div style="margin-top:16px;padding:14px 16px;background:#f7f6f2;border-left:2.5px solid #2b57cc;border-radius:0 11px 11px 0">' +
+          '<div style="'+mono+';font-size:9.5px;letter-spacing:.16em;text-transform:uppercase;color:#2b57cc;margin-bottom:7px">Por quê</div>' +
+          '<p style="margin:0;font-size:14px;line-height:1.65;color:#39404f;text-wrap:pretty">'+esc(r.q.explanation)+'</p></div>' +
+        '<button type="button" data-act="jump" data-n="'+r.idx+'" style="margin-top:14px;background:none;border:0;padding:0;'+mono+';font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:#2b57cc;cursor:pointer;text-decoration:underline;text-underline-offset:3px">Abrir no quiz →</button></div>';
+    }
+    return '<div style="background:#fff;border:1px solid '+(open?'#c9c3b6':'#e4e0d8')+';border-radius:14px;overflow:hidden;transition:border-color .15s ease">' +
+      '<button type="button" data-act="toggle" data-n="'+r.idx+'" style="display:flex;align-items:center;gap:12px;width:100%;text-align:left;background:none;border:0;padding:14px 15px;cursor:pointer">' +
+        '<span style="flex-shrink:0;width:28px;height:28px;border-radius:8px;display:flex;align-items:center;justify-content:center;'+mono+';font-size:12px;font-weight:600;background:'+numBg+';color:'+numFg+'">'+pad(r.idx+1)+'</span>' +
+        '<span style="flex:1;min-width:0;font-size:14px;line-height:1.45;color:#39404f;overflow:hidden;text-overflow:ellipsis;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical">'+esc(r.q.question)+'</span>' +
+        '<span style="flex-shrink:0;'+mono+';font-size:16px;color:#8a8578;width:16px;text-align:center">'+(open?'−':'+')+'</span>' +
+      '</button>' + body + '</div>';
+  }).join('');
+
+  document.getElementById('stage').innerHTML =
+    '<section style="padding:34px 0 0;animation:qFade .3s ease">' +
+      '<div style="'+mono+';font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:#2b57cc;margin-bottom:14px">Resultado</div>' +
+      '<h2 style="font-family:\'Newsreader\',Georgia,serif;font-size:36px;line-height:1.12;font-weight:400;letter-spacing:-.025em;margin:0 0 8px">'+title+'</h2>' +
+      '<p style="font-size:15px;line-height:1.6;color:#5b6478;margin:0 0 24px;max-width:48ch;text-wrap:pretty">'+msg+'</p>' +
+      '<div style="height:8px;border-radius:99px;background:#e4e0d8;overflow:hidden;margin-bottom:10px">' +
+        '<div style="height:100%;border-radius:99px;background:#121a2b;transition:width .7s cubic-bezier(.22,1,.36,1);width:'+pct+'%"></div></div>' +
+      '<div style="display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:#e4e0d8;border:1px solid #e4e0d8;border-radius:14px;overflow:hidden;margin-bottom:34px">' +
+        stat(c.hit,'Certas','#2e7d55')+stat(c.miss,'Erradas','#c04437')+stat(c.blank,'Branco','#8a8578')+stat(pct+'%','Aproveit.','#2b57cc') +
+      '</div>' +
+      '<div style="display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-bottom:14px">' +
+        '<h3 style="font-family:\'Newsreader\',Georgia,serif;font-size:22px;font-weight:500;letter-spacing:-.015em;margin:0">Gabarito comentado</h3>' +
+        '<button type="button" data-act="toggleAll" class="h-ink" style="background:none;border:0;padding:6px 0;'+mono+';font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:#5b6478;cursor:pointer;text-decoration:underline;text-underline-offset:3px">'+(allOpen?'Recolher tudo':'Expandir tudo')+'</button>' +
+      '</div>' +
+      '<div style="display:flex;gap:7px;flex-wrap:wrap;margin-bottom:16px">'+filters+'</div>' +
+      '<div style="display:flex;flex-direction:column;gap:8px">'+cards+'</div>' +
+      (list.length===0 ? '<div style="padding:38px 16px;text-align:center;color:#8a8578;font-size:14px;border:1px dashed #ddd8ce;border-radius:14px">Nenhuma questão neste filtro.</div>' : '') +
+      '<div style="display:flex;flex-wrap:wrap;gap:9px;margin-top:28px;padding-top:24px;border-top:1px solid #e4e0d8">' +
+        '<button type="button" data-act="restart" class="h-darkflat" style="background:#121a2b;color:#f5f3ef;border:0;border-radius:11px;padding:13px 24px;font-size:14px;font-weight:500;cursor:pointer;transition:background .16s ease">Refazer o quiz</button>' +
+        '<button type="button" data-act="back" class="h-line" style="background:none;border:1px solid #ddd8ce;border-radius:11px;padding:13px 22px;font-size:14px;cursor:pointer;transition:border-color .15s ease">Voltar às questões</button>' +
+        '<button type="button" data-act="resumo" class="h-line" style="background:none;border:1px solid #ddd8ce;border-radius:11px;padding:13px 22px;font-size:14px;cursor:pointer;transition:border-color .15s ease">Ler o resumo</button>' +
+      '</div></section>';
+}
+
+/* ── render + eventos ──────────────────────────────────────────────────────── */
+
+/* ─── Tutor DeepSeek — só local, só quando a questão foi errada ──────────────
+   A chave vem de ../deepseek_key.js, que não existe na versão publicada: online
+   o arquivo dá 404, dsOn() vira false e o chat simplesmente não é renderizado.
+   O histórico fica em S.chat[idDaQuestao] e sobrevive ao re-render do stage. */
+var DS_MODEL = 'deepseek-flash';
+var DS_URL   = 'https://api.deepseek.com/chat/completions';
+var NLJS     = String.fromCharCode(10);
+var DS_MONO  = "font-family:'IBM Plex Mono',monospace";
+var DS_SANS  = "font-family:'IBM Plex Sans',system-ui,sans-serif";
+
+function dsOn(){ return typeof window.DEEPSEEK_KEY === 'string' && window.DEEPSEEK_KEY.length > 10; }
+
+
+/* ─── markdown do chat ───────────────────────────────────────────────────────
+   O modelo responde em markdown (**negrito**, listas, `codigo`, tabelas). O texto
+   vem de fora, entao a ordem importa: ESCAPA TUDO primeiro com esc() e so depois
+   aplica formatacao — assim nenhuma tag vinda da resposta vira HTML de verdade.
+   Como esc() ja trocou > por &gt;, a citacao casa com &gt; e nao com >.
+   Trechos de codigo saem de cena por um marcador NUL, que nao pode existir
+   no texto escapado, e voltam no fim — assim ` ` protege o que esta dentro. */
+function mdIn(t){
+  var Z = String.fromCharCode(0), codes = [];
+  t = t.replace(/`([^`]+)`/g, function(_, c){
+    codes.push(c);
+    return Z + 'c' + (codes.length - 1) + Z;
+  });
+  t = t.replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>');
+  t = t.replace(/__([^_]+)__/g, '<strong>$1</strong>');
+  t = t.replace(/(^|[\s(])\*([^*\n]+)\*/g, '$1<em>$2</em>');
+  t = t.replace(/(^|[\s(])_([^_\n]+)_/g, '$1<em>$2</em>');
+  t = t.replace(/\[([^\]]+)\]\((https?:\/\/[^)\s]+)\)/g,
+    '<a href="$2" target="_blank" rel="noopener" style="color:#2b57cc">$1</a>');
+  return t.replace(new RegExp(Z + 'c([0-9]+)' + Z, 'g'), function(_, i){
+    return '<code style="' + DS_MONO + ';font-size:12px;background:#f2efe9;' +
+           'border-radius:4px;padding:1px 5px">' + codes[i] + '</code>';
+  });
+}
+
+function mdChat(txt){
+  var Z = String.fromCharCode(0);
+  var t = esc(String(txt == null ? '' : txt));
+  var blocos = [];
+  t = t.replace(/```[a-zA-Z]*\n?([\s\S]*?)```/g, function(_, c){
+    blocos.push(c.replace(/\n+$/, ''));
+    return Z + 'b' + (blocos.length - 1) + Z;
+  });
+
+  var linhas = t.split('\n'), out = [], lista = null, par = [];
+  function fechaLista(){ if (lista) { out.push('</' + lista + '>'); lista = null; } }
+  function fechaPar(){
+    if (par.length) { out.push('<p style="margin:0 0 9px">' + mdIn(par.join(' ')) + '</p>'); par = []; }
+  }
+  function fecha(){ fechaPar(); fechaLista(); }
+
+  for (var i = 0; i < linhas.length; i++){
+    var l = linhas[i], t2 = l.trim();
+    if (!t2) { fecha(); continue; }
+
+    var bl = t2.match(new RegExp('^' + Z + 'b([0-9]+)' + Z + '$'));
+    if (bl) {
+      fecha();
+      out.push('<pre style="margin:0 0 9px;padding:9px 11px;background:#f7f6f2;border-radius:9px;' +
+               'overflow-x:auto;' + DS_MONO + ';font-size:12px;line-height:1.5">' + blocos[bl[1]] + '</pre>');
+      continue;
+    }
+
+    // tabela: linha com | ... | seguida da separadora | --- | --- |
+    if (t2.charAt(0) === '|' && i + 1 < linhas.length && /^\|[\s:|-]+\|$/.test(linhas[i+1].trim())) {
+      fecha();
+      var celulas = function(linha){
+        return linha.trim().replace(/^\||\|$/g, '').split('|').map(function(c){ return mdIn(c.trim()); });
+      };
+      var cab = celulas(t2), corpo = [];
+      i += 2;
+      while (i < linhas.length && linhas[i].trim().charAt(0) === '|') { corpo.push(celulas(linhas[i].trim())); i++; }
+      i--;
+      var cel = 'padding:5px 9px;border-bottom:1px solid #eae6de;text-align:left;vertical-align:top';
+      out.push('<div style="overflow-x:auto;margin:0 0 9px">' +
+        '<table style="border-collapse:collapse;font-size:12.5px;width:100%">' +
+        '<thead><tr>' + cab.map(function(c){ return '<th style="' + cel + ';font-weight:600">' + c + '</th>'; }).join('') + '</tr></thead>' +
+        '<tbody>' + corpo.map(function(r){
+          return '<tr>' + r.map(function(c){ return '<td style="' + cel + '">' + c + '</td>'; }).join('') + '</tr>';
+        }).join('') + '</tbody></table></div>');
+      continue;
+    }
+
+    var h = t2.match(/^#{1,6}\s+(.*)$/);
+    if (h) {
+      fecha();
+      out.push('<div style="font-weight:600;color:#121a2b;margin:11px 0 5px">' + mdIn(h[1]) + '</div>');
+      continue;
+    }
+
+    if (/^(---+|\*\*\*+)$/.test(t2)) {
+      fecha();
+      out.push('<hr style="border:0;border-top:1px solid #eae6de;margin:11px 0">');
+      continue;
+    }
+
+    var cit = t2.match(/^&gt;\s?(.*)$/);
+    if (cit) {
+      fecha();
+      out.push('<div style="margin:0 0 9px;padding:7px 11px;border-left:2.5px solid #c9d6f7;' +
+               'background:#f7f9fe;border-radius:0 7px 7px 0">' + mdIn(cit[1]) + '</div>');
+      continue;
+    }
+
+    var mUl = t2.match(/^[-*•]\s+(.*)$/);
+    var mOl = t2.match(/^\d+[.)]\s+(.*)$/);
+    if (mUl || mOl) {
+      var tipo = mUl ? 'ul' : 'ol';
+      fechaPar();
+      if (lista !== tipo) {
+        fechaLista();
+        out.push('<' + tipo + ' style="margin:0 0 9px;padding-left:19px">');
+        lista = tipo;
+      }
+      out.push('<li style="margin:3px 0">' + mdIn((mUl || mOl)[1]) + '</li>');
+      continue;
+    }
+
+    fechaLista();
+    par.push(t2);
+  }
+  fecha();
+  return out.join('');
+}
+
+function msgHTML(m){
+  if (m.role === 'user')
+    return '<div style="margin:0 0 10px;text-align:right">' +
+      '<span style="display:inline-block;max-width:88%;text-align:left;background:#f2efe9;' +
+      'border-radius:12px 12px 3px 12px;padding:9px 12px;font-size:13.5px;line-height:1.6;' +
+      'color:#39404f;text-wrap:pretty">' + esc(m.content) + '</span></div>';
+  return '<div style="margin:0 0 12px">' +
+    '<div style="' + DS_MONO + ';font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;' +
+    'color:#2b57cc;margin-bottom:4px">DeepSeek</div>' +
+    '<div style="font-size:13.5px;line-height:1.65;color:#39404f;text-wrap:pretty">' +
+    mdChat(m.content) + '</div></div>';
+}
+
+function chatBox(q, acertou){
+  if (!dsOn()) return '';
+  var chamada = acertou ? 'Quer ir mais fundo?' : 'Ainda com dúvida?';
+  var dica = acertou ? 'Por que as outras estão erradas?' : 'Por que a que eu marquei está errada?';
+  var hist = (S.chat[q.id] || []).map(msgHTML).join('');
+  return '<div id="ds" data-qid="' + q.id + '" style="margin-top:14px;border:1px solid #e4e0d8;' +
+      'border-radius:14px;background:#fff;overflow:hidden;animation:qFade .26s ease">' +
+      '<div style="display:flex;align-items:center;gap:8px;padding:11px 15px;' +
+        'border-bottom:1px solid #f0ede6;background:#faf9f6">' +
+        '<span style="' + DS_MONO + ';font-size:10px;letter-spacing:.16em;text-transform:uppercase;' +
+        'color:#2b57cc">' + chamada + '</span>' +
+        '<span style="font-size:12px;color:#8a8578">pergunte ao DeepSeek</span></div>' +
+      '<div id="dsLog" style="max-height:280px;overflow-y:auto;padding:' + (hist ? '12px 15px' : '0') + '">' +
+        hist + '</div>' +
+      '<div style="display:flex;gap:8px;padding:11px 12px;border-top:1px solid #f0ede6">' +
+        '<input id="dsIn" type="text" autocomplete="off" ' +
+          'placeholder="' + dica + '" ' +
+          'style="flex:1;min-width:0;border:1px solid #e4e0d8;border-radius:10px;padding:10px 12px;' +
+          'font-size:13.5px;' + DS_SANS + ';color:#121a2b;background:#fff;outline:none">' +
+        '<button type="button" data-act="dsSend" class="h-darkflat" style="flex-shrink:0;' +
+          'background:#121a2b;color:#f5f3ef;border:0;border-radius:10px;padding:10px 16px;' +
+          'font-size:13px;font-weight:500;cursor:pointer;transition:background .16s ease">Enviar</button>' +
+      '</div></div>';
+}
+
+function dsContexto(q, ans){
+  var alts = q.options.map(function(o, n){ return LETTERS[n] + ') ' + o; }).join(NLJS);
+  return 'Questao: ' + q.question + NLJS + alts + NLJS +
+    'Resposta correta: ' + LETTERS[q.correctIndex] + ') ' + q.options[q.correctIndex] + NLJS +
+    'O estudante marcou: ' + (ans === null ? 'nada' : LETTERS[ans] + ') ' + q.options[ans]) + NLJS +
+    'Explicacao que ele ja tem: ' + q.explanation;
+}
+
+A.dsSend = function(){
+  var box = document.getElementById('ds');
+  if (!box || !dsOn() || box.getAttribute('data-busy')) return;
+  var input = document.getElementById('dsIn'), log = document.getElementById('dsLog');
+  var texto = (input.value || '').trim();
+  if (!texto) return;
+
+  var qid = parseInt(box.getAttribute('data-qid'), 10), q = null, ans = null;
+  for (var i = 0; i < S.order.length; i++)
+    if (S.order[i].id === qid) { q = S.order[i]; ans = S.answers[i]; }
+  if (!q) return;
+
+  S.chat[qid] = S.chat[qid] || [];
+  S.chat[qid].push({ role:'user', content:texto });
+  input.value = '';
+  log.style.padding = '12px 15px';
+  log.insertAdjacentHTML('beforeend', msgHTML({ role:'user', content:texto }));
+  log.insertAdjacentHTML('beforeend',
+    '<div><div style="' + DS_MONO + ';font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;' +
+    'color:#2b57cc;margin-bottom:4px">DeepSeek</div>' +
+    '<div id="dsTxt" style="font-size:13.5px;line-height:1.65;color:#8a8578;' +
+    'text-wrap:pretty">pensando…</div></div>');
+  log.scrollTop = log.scrollHeight;
+  box.setAttribute('data-busy', '1');
+
+  var acertou = (ans === q.correctIndex);
+  var situacao = acertou
+    ? 'Voce e um tutor de medicina. O estudante do 7o semestre ACERTOU esta questao, mas ficou com uma duvida. '
+    : 'Voce e um tutor de medicina. O estudante do 7o semestre ERROU esta questao. ';
+  var msgs = [
+    { role:'system', content: situacao +
+      'Responda em portugues do Brasil, direto ao ponto, no maximo 150 palavras. ' +
+      'Traga o dado concreto (valor, criterio, mecanismo) em vez de generalidade. ' +
+      'Nao repita a explicacao que ele ja tem; foque na duvida que ele trouxe.' },
+    { role:'user', content: dsContexto(q, ans) }
+  ];
+  var h = S.chat[qid];
+  for (var j = 0; j < h.length; j++) msgs.push({ role:h[j].role, content:h[j].content });
+
+  dsStream(msgs, function(txt, fim, erro){
+    var el = document.getElementById('dsTxt');
+    if (!el) { box.removeAttribute('data-busy'); return; }
+    if (erro) { el.style.color = '#c04437'; el.textContent = erro; box.removeAttribute('data-busy'); return; }
+    el.style.color = '#39404f';
+    el.innerHTML = mdChat(txt);
+    var lg = document.getElementById('dsLog'); if (lg) lg.scrollTop = lg.scrollHeight;
+    if (fim) { el.removeAttribute('id'); S.chat[qid].push({ role:'assistant', content:txt }); box.removeAttribute('data-busy'); }
+  });
+};
+
+function dsStream(messages, cb){
+  var acc = '';
+  fetch(DS_URL, {
+    method: 'POST',
+    headers: { 'Content-Type':'application/json', 'Authorization':'Bearer ' + window.DEEPSEEK_KEY },
+    body: JSON.stringify({ model:DS_MODEL, messages:messages, stream:true, max_tokens:1200, temperature:0.3 })
+  }).then(function(r){
+    if (!r.ok) return r.text().then(function(t){
+      throw new Error(
+        r.status === 401 ? 'Chave recusada (401). Confira o deepseek_key.js.' :
+        r.status === 402 ? 'Sem saldo na conta DeepSeek (402).' :
+        r.status === 429 ? 'Limite de uso atingido (429). Tente daqui a pouco.' :
+        'Erro ' + r.status + ': ' + String(t).slice(0, 120));
+    });
+    var reader = r.body.getReader(), dec = new TextDecoder(), buf = '';
+    (function pump(){
+      return reader.read().then(function(res){
+        if (res.done) { cb(acc || '(resposta vazia)', true); return; }
+        buf += dec.decode(res.value, { stream:true });
+        var linhas = buf.split(NLJS);
+        buf = linhas.pop();
+        for (var i = 0; i < linhas.length; i++){
+          var l = linhas[i].trim();
+          if (l.indexOf('data:') !== 0) continue;
+          var carga = l.slice(5).trim();
+          if (carga === '[DONE]') continue;
+          try {
+            var d = JSON.parse(carga).choices[0].delta;
+            if (d && d.content) { acc += d.content; cb(acc, false); }
+          } catch (_){}
+        }
+        return pump();
+      });
+    })();
+  }).catch(function(e){
+    cb('', true, 'Nao consegui falar com o DeepSeek: ' + (e && e.message ? e.message : e));
+  });
+}
+
+function render(){
+  renderHeader();
+  if (S.view === 'home')        renderHome();
+  else if (S.view === 'resumo') renderResumo();
+  else if (S.finished)          renderResult();
+  else                          renderQuestion();
+}
+
+/* lightbox: clique em qualquer figura amplia */
+document.addEventListener('click', function(e){
+  var lb = document.getElementById('lb');
+  if (e.target.closest('#lb')) { lb.className = ''; return; }
+  var img = e.target.closest('.fig img');
+  if (img) { lb.firstElementChild.src = img.src; lb.className = 'on'; }
+});
+window.addEventListener('keydown', function(e){
+  if (e.key === 'Escape') document.getElementById('lb').className = '';
+});
+
+document.addEventListener('click', function(e){
+  var b = e.target.closest('[data-act]'); if (!b) return;
+  var act = b.getAttribute('data-act'), n = parseInt(b.getAttribute('data-n'),10), k = b.getAttribute('data-k');
+  if (act==='pick'||act==='jump'||act==='toggle') A[act](n);
+  else if (act==='filter') A.filter(k);
+  else if (A[act]) A[act]();
+});
+
+window.addEventListener('keydown', function(e){
+  if (S.view!=='quiz' || !S.started || S.finished) return;
+  var t = e.target, tag = t && t.tagName;
+  if (tag==='INPUT' || tag==='TEXTAREA' || (t && t.isContentEditable)) return;
+  if (e.metaKey||e.ctrlKey||e.altKey) return;
+  if (e.key==='ArrowRight')     { e.preventDefault(); A.go(S.i+1); }
+  else if (e.key==='ArrowLeft') { e.preventDefault(); A.go(S.i-1); }
+  else if (e.key==='Enter')     { e.preventDefault(); A.next(); }
+  else if (/^[1-6]$/.test(e.key)) {
+    var n = parseInt(e.key,10)-1;
+    if (n < S.order[S.i].options.length) A.pick(n);
+  }
+});
+
+render();
+</script>
+</body>
+</html>

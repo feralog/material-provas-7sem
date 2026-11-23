@@ -1,0 +1,348 @@
+{
+  "titulo": "Urgências Oftalmológicas",
+  "eyebrow": "Oftalmologia · Urgências",
+  "subtitulo": "Tempo é visão: o que o clínico reconhece, faz e encaminha",
+  "intro": "Emergência × urgência, sinais de alerta e o raciocínio da perda visual súbita: oclusões vasculares, descolamento de retina, neuropatias ópticas, papiledema, trauma, endoftalmite e uveítes posteriores — com a conduta inicial e o que não fazer.",
+  "questoes": [
+    {
+      "question": "Na classificação prática das urgências oftalmológicas, emergência é o quadro que exige ação em minutos a horas, e urgência, em horas a dias. Qual destes é uma emergência?",
+      "options": [
+        "Oclusão da artéria central da retina",
+        "Oclusão da veia central da retina",
+        "Neurite óptica com dor à movimentação",
+        "Comotio retinae após trauma contuso"
+      ],
+      "correctIndex": 0,
+      "explanation": "A oclusão da artéria central da retina (OACR) é o 'AVC da retina': o tempo de isquemia determina a chance de recuperação, e minutos contam. Oclusão venosa, neurite óptica e comotio retinae são urgências (horas a dias), com avaliação especializada em até 24 horas. Também são emergências: queimadura química, trauma penetrante, endoftalmite aguda, glaucoma agudo de ângulo fechado, celulite orbitária com comprometimento e descolamento de retina com mácula ameaçada."
+    },
+    {
+      "question": "Dois pacientes têm descolamento de retina regmatogênico: no primeiro a mácula ainda está colada, mas ameaçada; no segundo a mácula já descolou. Como cada quadro é classificado?",
+      "options": [
+        "Emergência no primeiro e urgência no segundo",
+        "Urgência no primeiro e emergência no segundo",
+        "Emergência nos dois, com cirurgia em minutos",
+        "Urgência nos dois, com cirurgia em semanas"
+      ],
+      "correctIndex": 0,
+      "explanation": "Com a mácula colada ainda há visão central a salvar, e cada hora em que o líquido avança em direção à fóvea pesa no prognóstico: é emergência, com cirurgia o mais rápido possível (idealmente em menos de 24 a 48 horas). Com a mácula já descolada, o dano central já aconteceu e o quadro passa a urgência (horas a dias) — continua cirúrgico, mas sem o mesmo relógio."
+    },
+    {
+      "question": "Homem de 58 anos, míope alto e operado de catarata há um ano, relata flashes de luz e muitos pontos escuros flutuantes há dois dias; hoje percebe uma sombra que avança como cortina sobre o campo visual do olho direito. O olho está calmo e indolor. Qual a hipótese e a conduta?",
+      "options": [
+        "Descolamento de retina; encaminhar já ao retinólogo",
+        "Descolamento do vítreo; reavaliar em trinta dias",
+        "Enxaqueca com aura; analgésico e observação",
+        "Oclusão de ramo venoso; anti-VEGF ambulatorial"
+      ],
+      "correctIndex": 0,
+      "explanation": "Fotopsias (flashes) e miodesopsias (floaters) somadas a sombra ou cortina no campo visual formam o quadro do descolamento de retina regmatogênico. Miopia alta e cirurgia de catarata são fatores de risco clássicos, ao lado de trauma, degeneração lattice e idade. Flashes + floaters + sombra = encaminhar imediatamente ao retinólogo; com a mácula ainda colada, a cirurgia é feita o mais rápido possível."
+    },
+    {
+      "question": "Paciente com perda visual progressiva e sensação de sombra no campo visual tem a fundoscopia mostrada na imagem. Qual a interpretação?",
+      "options": [
+        "Retina elevada e ondulada: descolamento de retina",
+        "Retina pálida com mancha cereja: oclusão arterial",
+        "Disco elevado e borrado: papiledema por HIC",
+        "Hemorragias em chama: oclusão da veia central"
+      ],
+      "correctIndex": 0,
+      "explanation": "A imagem mostra a retina elevada, de superfície ondulada e esbranquiçada, com vasos tortuosos subindo sobre a área descolada — o aspecto do descolamento de retina regmatogênico. Completam o quadro rotura em ferradura ou redonda, pigmento no vítreo ('tabaco de cachimbo') e PIO que pode estar baixa. Na oclusão arterial a retina é pálida mas plana, com mancha vermelho-cereja; no papiledema a alteração está no disco.",
+      "image": "s13i1",
+      "imageCaption": "Fundoscopia na queixa de sombra progressiva"
+    },
+    {
+      "question": "No descolamento de retina regmatogênico com a mácula ainda colada, qual é o prazo recomendado para a cirurgia?",
+      "options": [
+        "Em até 24 a 48 horas, antes de a fóvea descolar",
+        "Em até 30 dias, após controle do esforço físico",
+        "Após 1 semana de repouso, com novo mapeamento",
+        "Só quando a mácula descolar e a visão central cair"
+      ],
+      "correctIndex": 0,
+      "explanation": "Mácula ainda colada → cirurgia em menos de 24 a 48 horas, com encaminhamento imediato ao retinólogo; enquanto isso, o paciente evita esforço e faz repouso relativo. O estado da mácula é o que define o prognóstico: esperar que ela descole é justamente perder a visão central que ainda podia ser salva."
+    },
+    {
+      "question": "Paciente em crise de hipertensão maligna apresenta descolamento de retina sem nenhuma rotura e sem membranas de tração. Qual o tipo de descolamento e a conduta?",
+      "options": [
+        "Exsudativo; tratar a causa de base",
+        "Tracional; vitrectomia de urgência",
+        "Regmatogênico; retinopexia urgente",
+        "Combinado; panfotocoagulação isolada"
+      ],
+      "correctIndex": 0,
+      "explanation": "O descolamento exsudativo é acúmulo de fluido sob a retina sem rotura — por tumores, inflamação, coroidopatia serosa central grave ou hipertensão maligna — e trata-se a causa de base. O tracional resulta de membranas fibrovasculares (retinopatia diabética proliferativa, ROP) e evolui mais lentamente; o combinado mistura tração e rotura, comum em diabéticos após cirurgia ou em ROP avançada."
+    },
+    {
+      "question": "Homem de 70 anos, com fibrilação atrial, nota perda visual súbita, indolor e profunda no olho esquerdo há duas horas. Há DPAR, e a fundoscopia é a da imagem. Qual o diagnóstico?",
+      "options": [
+        "Oclusão da artéria central da retina",
+        "Oclusão da veia central da retina",
+        "Neuropatia óptica isquêmica anterior",
+        "Descolamento de retina regmatogênico"
+      ],
+      "correctIndex": 0,
+      "explanation": "Retina pálida (edema isquêmico) com a mácula em 'mancha vermelho-cereja', artérias afiladas e perda visual súbita, indolor, profunda e com DPAR: é a oclusão da artéria central da retina. As causas são embolia (a fibrilação atrial é fonte cardíaca), trombose, vasculite (arterite de células gigantes) e hipercoagulabilidade. Na oclusão venosa predominam hemorragias difusas; na NOIA, edema de disco; no descolamento, retina elevada.",
+      "image": "s08i1",
+      "imageCaption": "Fundo de olho na perda visual súbita e indolor"
+    },
+    {
+      "question": "Na oclusão da artéria central da retina, em que prazo a reperfusão idealmente deve ocorrer para haver chance de recuperação visual?",
+      "options": [
+        "Idealmente nas primeiras 4 a 6 horas",
+        "Idealmente nas primeiras 24 a 48 horas",
+        "Em até 7 dias, sem prejuízo da visão",
+        "Em até 72 horas, se houver DPAR"
+      ],
+      "correctIndex": 0,
+      "explanation": "O tempo de isquemia determina a chance de recuperação: quanto mais precoce a reperfusão, maior a chance — idealmente em menos de 4 a 6 horas. Por isso a OACR é emergência e o encaminhamento ao oftalmologista é imediato. Em isquemia total experimental, a retina tolera apenas cerca de 90 a 100 minutos: na prática, cada minuto conta."
+    },
+    {
+      "question": "Mulher de 74 anos com oclusão da artéria central da retina relata cefaleia temporal e dor na mandíbula ao mastigar nas últimas semanas. Qual exame deve ser pedido de imediato e com que objetivo?",
+      "options": [
+        "VHS e PCR, para afastar arterite de células gigantes",
+        "Lipidograma, para estratificar o risco aterosclerótico",
+        "Hemoglobina glicada, para rastrear diabetes oculto",
+        "Coagulograma, para liberar trombólise intravenosa"
+      ],
+      "correctIndex": 0,
+      "explanation": "Em todo paciente acima de 50 anos com OACR, pedem-se VHS e PCR para descartar arterite de células gigantes (GCA); cefaleia e claudicação mandibular reforçam a suspeita. Se a GCA é provável, a corticoterapia sistêmica é IMEDIATA, sem esperar a biópsia de artéria temporal, porque o olho contralateral pode ser perdido em dias."
+    },
+    {
+      "question": "Afastada a arterite de células gigantes, que investigação etiológica é indicada após uma oclusão da artéria central da retina?",
+      "options": [
+        "Doppler de carótidas e ecocardiograma",
+        "Ressonância de órbitas com contraste",
+        "Punção lombar com raquimanometria",
+        "Angiotomografia de seios venosos"
+      ],
+      "correctIndex": 0,
+      "explanation": "A principal causa de OACR é a embolia, vinda de placas carotídeas ou do coração; por isso pedem-se Doppler de carótidas e ecocardiograma. A lógica é a do AVC: a mesma fonte embólica que ocluiu a artéria da retina pode causar um evento cerebral."
+    },
+    {
+      "question": "Hipertenso e diabético de 66 anos relata baixa visual indolor no olho esquerdo há uma semana. A fundoscopia é a da imagem. Qual o diagnóstico?",
+      "options": [
+        "Oclusão da veia central da retina",
+        "Oclusão da artéria central da retina",
+        "Papiledema por hipertensão intracraniana",
+        "Neuropatia óptica isquêmica arterítica"
+      ],
+      "correctIndex": 0,
+      "explanation": "Veias tortuosas e dilatadas com hemorragias em chama de vela espalhadas pela retina (às vezes com edema de disco e manchas algodonosas) definem a oclusão da veia central da retina; HAS, DM e glaucoma são os fatores de risco. A oclusão arterial dá retina pálida com mancha vermelho-cereja, e o papiledema concentra as alterações no disco, em geral nos dois olhos.",
+      "image": "s10i1",
+      "imageCaption": "Fundo de olho na baixa visual indolor"
+    },
+    {
+      "question": "Na oclusão da veia central da retina, qual é a principal causa da baixa de acuidade visual e como ela é tratada?",
+      "options": [
+        "Edema macular, tratado com anti-VEGF ou corticoide",
+        "Atrofia do nervo óptico, tratada com corticoide oral",
+        "Hemorragia vítrea, tratada com massagem ocular",
+        "Descolamento seroso, tratado com acetazolamida"
+      ],
+      "correctIndex": 0,
+      "explanation": "O edema macular é a principal causa de baixa visual na OVCR, tratado com anti-VEGF ou corticoide, sempre junto com controle sistêmico rigoroso (pressão arterial, glicemia). A OVCR tem forma isquêmica e não isquêmica; a isquêmica tem pior prognóstico."
+    },
+    {
+      "question": "Sobre a oclusão de ramo venoso da retina, qual afirmação está correta?",
+      "options": [
+        "É mais comum que a central e se associa a cruzamentos AV anormais",
+        "É mais rara que a central e sempre poupa a região da mácula",
+        "Causa hemorragias difusas nos quatro quadrantes da retina",
+        "Dispensa controle pressórico, pois a causa é apenas local"
+      ],
+      "correctIndex": 0,
+      "explanation": "A oclusão de ramo venoso é mais comum que a central, tem hemorragias limitadas a um quadrante e é predisposta por cruzamentos arteriovenosos anormais. O controle da hipertensão é essencial, o edema macular é frequente (tratado com anti-VEGF) e o prognóstico é melhor que o da OVCR quando a fóvea é poupada."
+    },
+    {
+      "question": "Mulher de 27 anos refere perda visual no olho direito instalada ao longo de três dias, com dor ao movimentar o olho e cores 'desbotadas'. Há DPAR à direita e o disco óptico é normal à fundoscopia. Qual a principal hipótese?",
+      "options": [
+        "Neurite óptica retrobulbar",
+        "Oclusão da artéria central",
+        "Neuropatia óptica isquêmica",
+        "Descolamento de retina"
+      ],
+      "correctIndex": 0,
+      "explanation": "Perda visual subaguda (horas a dias), dor à movimentação ocular, DPAR e disromatopsia em adulto jovem é neurite óptica — com disco normal, forma retrobulbar; com disco edemaciado, papilite. A associação clássica é com esclerose múltipla. NOIA e OACR são súbitas e indolores; o descolamento de retina é indolor e altera o fundo de olho."
+    },
+    {
+      "question": "Confirmada a suspeita clínica de neurite óptica, qual é a conduta indicada?",
+      "options": [
+        "Ressonância magnética e metilprednisolona endovenosa",
+        "Ressonância magnética e prednisona oral isolada",
+        "Tomografia de órbitas e prednisona oral isolada",
+        "Doppler de carótidas e antiagregação plaquetária"
+      ],
+      "correctIndex": 0,
+      "explanation": "A conduta é RM — pela associação com esclerose múltipla — e corticoide endovenoso (metilprednisolona). Corticoide oral isolado não deve ser usado, pois pode piorar o prognóstico: no estudo clássico de tratamento da neurite óptica (ONTT), a prednisona oral em dose baixa, isolada, aumentou as recorrências, enquanto o pulso EV acelerou a recuperação sem mudar a acuidade final."
+    },
+    {
+      "question": "Homem de 62 anos, hipertenso, diabético e com apneia do sono, acorda com perda visual indolor no olho esquerdo. Há defeito altitudinal inferior, edema segmentar do disco, VHS e PCR normais e nenhuma cefaleia. Qual o diagnóstico e a conduta?",
+      "options": [
+        "NOIA não arterítica; controlar os fatores de risco",
+        "NOIA arterítica; corticoide sistêmico imediato",
+        "Neurite óptica; metilprednisolona endovenosa",
+        "Papiledema; punção lombar de alívio imediata"
+      ],
+      "correctIndex": 0,
+      "explanation": "A NOIA não arterítica é a forma mais frequente: perda visual súbita e indolor, edema de disco segmentar e defeito altitudinal de campo, em paciente com HAS, DM, apneia ou disco 'lotado'. Não tem tratamento específico comprovado — controlam-se os fatores de risco — e o olho contralateral é acometido em cerca de 15 a 20%. VHS e PCR normais, sem cefaleia nem claudicação mandibular, afastam a forma arterítica."
+    },
+    {
+      "question": "Mulher de 78 anos com cefaleia temporal, claudicação mandibular e VHS de 95 mm/h perde subitamente a visão do olho direito; o disco está pálido e edemaciado. Qual a conduta imediata?",
+      "options": [
+        "Corticoide sistêmico já, sem esperar a biópsia temporal",
+        "Biópsia da artéria temporal antes de qualquer corticoide",
+        "Controle dos fatores de risco e reavaliação em 30 dias",
+        "Acetazolamida e massagem ocular digital imediatas"
+      ],
+      "correctIndex": 0,
+      "explanation": "É NOIA arterítica por arterite de células gigantes — emergência, porque o outro olho pode ficar cego em dias. Corticoterapia sistêmica imediata, sem esperar a biópsia de artéria temporal, que é feita depois para confirmar. O objetivo central do corticoide é proteger o olho contralateral."
+    },
+    {
+      "question": "Mulher de 30 anos com cefaleia, náuseas, escurecimentos visuais transitórios e visão dupla tem, nos dois olhos, o aspecto de disco óptico da imagem. Qual a conduta?",
+      "options": [
+        "Neuroimagem urgente antes de qualquer punção lombar",
+        "Punção lombar imediata para medir a pressão liquórica",
+        "Metilprednisolona endovenosa por neurite óptica bilateral",
+        "Corticoide oral e reavaliação ambulatorial em um mês"
+      ],
+      "correctIndex": 0,
+      "explanation": "Disco hiperemiado e elevado, com margens borradas, é papiledema: edema de disco por pressão intracraniana alta até prova em contrário. Causas: tumor, trombose venosa, hipertensão intracraniana idiopática e meningite; a diplopia costuma ser por paresia do VI par. Conduta: neuroimagem urgente, e nada de punção lombar antes de excluir massa.",
+      "image": "s17i1",
+      "imageCaption": "Disco óptico na cefaleia com diplopia"
+    },
+    {
+      "question": "Adolescente levou uma bolada no olho ontem. A acuidade visual é boa e a fundoscopia mostra a área da imagem. Qual o diagnóstico e o cuidado obrigatório?",
+      "options": [
+        "Comotio retinae; procurar roturas com fundo dilatado",
+        "Oclusão arterial; massagem ocular e acetazolamida",
+        "Descolamento exsudativo; corticoide oral em alta dose",
+        "Toxoplasmose ocular; sulfadiazina e pirimetamina"
+      ],
+      "correctIndex": 0,
+      "explanation": "Opacificação retiniana cinza-esbranquiçada após trauma contuso é o comotio retinae (edema de Berlin): edema e desarranjo dos fotorreceptores. A maioria das lesões periféricas resolve sozinha, mas o comotio macular pode deixar sequela. O cuidado obrigatório é a avaliação completa com dilatação, procurando roturas e descolamento, hemorragia vítrea, hifema e luxação do cristalino.",
+      "image": "s18i1",
+      "imageCaption": "Fundo de olho um dia após trauma contuso"
+    },
+    {
+      "question": "Após trauma ocular contuso, a fundoscopia mostra linhas concêntricas amarelo-esbranquiçadas no polo posterior. Qual a lesão e o risco a vigiar?",
+      "options": [
+        "Ruptura de coroide; neovascularização tardia",
+        "Comotio retinae; resolução espontânea total",
+        "Buraco macular; descolamento exsudativo",
+        "Corpo estranho; endoftalmite fúngica tardia"
+      ],
+      "correctIndex": 0,
+      "explanation": "Linhas concêntricas amarelo-esbranquiçadas são a ruptura de coroide, cujo risco é a neovascularização tardia. O comotio é uma opacificação cinza difusa, não linear; o buraco macular traumático pode surgir na hora ou dias depois e tem avaliação cirúrgica."
+    },
+    {
+      "question": "Operário atingido no olho por fragmento metálico tem laceração da córnea e suspeita de ruptura do globo. Qual conduta inicial está correta?",
+      "options": [
+        "Cone protetor, antibiótico EV e jejum, sem comprimir",
+        "Curativo compressivo oclusivo e colírio antibiótico",
+        "Retirada do fragmento e lavagem com soro fisiológico",
+        "Tonometria para medir a pressão antes do encaminhamento"
+      ],
+      "correctIndex": 0,
+      "explanation": "Ruptura do globo é emergência cirúrgica: proteger com cone, nunca pressionar, antibiótico EV e jejum, já que a cirurgia é provável. Curativo compressivo, tonometria e manipulação comprimem um olho aberto. Em trauma com metal, sempre suspeitar de corpo estranho intraocular e pedir radiografia ou TC; a remoção é cirúrgica."
+    },
+    {
+      "question": "Quatro dias após cirurgia de catarata, paciente volta com dor ocular intensa, olho muito vermelho, baixa visual e nível de pus na câmara anterior. Qual a conduta?",
+      "options": [
+        "Encaminhar já para coleta e antibiótico intravítreo",
+        "Colírio antibiótico de amplo espectro e retorno em 48 h",
+        "Colírio de corticoide e anti-inflamatório por via oral",
+        "Antibiótico oral e compressas mornas por uma semana"
+      ],
+      "correctIndex": 0,
+      "explanation": "Dor intensa, hiperemia, baixa visual e hipópio após cirurgia de catarata é endoftalmite, emergência infecciosa que pode destruir o olho em horas a dias. Conduta: encaminhamento imediato, coleta de material e antibiótico intravítreo, com vitrectomia nos casos graves. Nunca tratar apenas com colírios. Na forma endógena (septicemia) soma-se antibiótico sistêmico; fungos predominam em usuários de drogas e imunossuprimidos."
+    },
+    {
+      "question": "Paciente com baixa visual tem, à fundoscopia, uma lesão focal branca envolta por vitreíte intensa, com aspecto de 'farol na neblina', próxima à mácula. Qual o diagnóstico e o tratamento?",
+      "options": [
+        "Toxoplasmose ocular; sulfadiazina e pirimetamina",
+        "Necrose retiniana aguda; aciclovir endovenoso",
+        "Doença de Behçet; colírio de corticoide isolado",
+        "Vogt-Koyanagi-Harada; antibiótico intravítreo"
+      ],
+      "correctIndex": 0,
+      "explanation": "O 'farol na neblina' — lesão focal branca com vitreíte — é a toxoplasmose ocular, urgente quando ameaça a mácula; trata-se com sulfadiazina + pirimetamina ou sulfametoxazol-trimetoprima. A necrose retiniana aguda é herpética (retinite necrosante periférica, antiviral EV urgente); o Behçet pede imunossupressão agressiva; o VKH, corticoide sistêmico em alta dose."
+    },
+    {
+      "question": "Mulher de 32 anos tem baixa visual bilateral, cefaleia, zumbido e manchas de vitiligo; a fundoscopia mostra descolamento de retina seroso nos dois olhos, sem roturas. Qual o diagnóstico e o tratamento?",
+      "options": [
+        "Vogt-Koyanagi-Harada; corticoide sistêmico em alta dose",
+        "Descolamento regmatogênico bilateral; retinopexia urgente",
+        "Necrose retiniana aguda; aciclovir endovenoso urgente",
+        "Toxoplasmose ocular; sulfametoxazol-trimetoprima oral"
+      ],
+      "correctIndex": 0,
+      "explanation": "Descolamento exsudativo bilateral com cefaleia, tinido e vitiligo é a síndrome de Vogt-Koyanagi-Harada, tratada com corticoide sistêmico em alta dose. Não há rotura, então não é regmatogênico nem se opera: como em todo descolamento exsudativo, trata-se a causa."
+    },
+    {
+      "question": "Diabético de longa data tem perda visual súbita e indolor; a fundoscopia não mostra a retina por causa de hemorragia vítrea densa. Qual exame está indicado?",
+      "options": [
+        "Ultrassonografia ocular modo B",
+        "Angiofluoresceinografia retiniana",
+        "Tomografia de coerência óptica",
+        "Campimetria visual computadorizada"
+      ],
+      "correctIndex": 0,
+      "explanation": "Hemorragia vítrea é a urgência típica do diabético: perda visual súbita. Com o fundo não visível, o ultrassom mostra o que há atrás do sangue, como um descolamento tracional. O tratamento envolve anti-VEGF e panfotocoagulação, controle glicêmico e pressórico rigoroso e encaminhamento ao retinólogo. OCT, angiografia e campimetria dependem de meios transparentes."
+    },
+    {
+      "question": "Quais recém-nascidos devem passar por triagem oftalmológica para retinopatia da prematuridade?",
+      "options": [
+        "Peso abaixo de 1.500 g ou idade gestacional abaixo de 32 semanas",
+        "Peso abaixo de 2.500 g ou idade gestacional abaixo de 37 semanas",
+        "Peso abaixo de 1.000 g e idade gestacional abaixo de 28 semanas",
+        "Apenas os que precisaram de oxigênio por mais de sete dias"
+      ],
+      "correctIndex": 0,
+      "explanation": "A ROP afeta prematuros de baixo peso — em geral abaixo de 1.500 g ou de 32 semanas — e a triagem é obrigatória conforme os protocolos nacionais; cabe ao pediatra ou neonatologista garantir o exame no tempo certo. Sem tratamento (laser ou anti-VEGF quando indicado, na doença tipo 1), pode evoluir para descolamento tracional e cegueira."
+    },
+    {
+      "question": "Paciente com perda visual súbita, sem dor ocular, tem fundoscopia claramente anormal. Qual grupo de diagnósticos deve ser considerado?",
+      "options": [
+        "Oclusão vascular, descolamento, hemorragia vítrea, NOIA",
+        "Glaucoma agudo, endoftalmite, celulite orbitária, uveíte",
+        "Amaurose fugaz, lesão de via óptica e quadro conversivo",
+        "Neurite óptica, uveíte anterior grave e glaucoma agudo"
+      ],
+      "correctIndex": 0,
+      "explanation": "Na perda visual súbita, duas perguntas organizam o raciocínio: há dor? Como está o fundo? Sem dor e fundo anormal: oclusão arterial ou venosa, descolamento de retina, hemorragia vítrea e NOIA. Com dor: glaucoma agudo, neurite óptica, endoftalmite, uveíte anterior grave e celulite orbitária. Sem dor e fundo normal: neurite retrobulbar, amaurose fugaz, lesão de via óptica e conversão — sempre reavaliando."
+    },
+    {
+      "question": "Durante a avaliação de uma perda visual aguda, o clínico detecta defeito pupilar aferente relativo (DPAR). O que esse achado indica?",
+      "options": [
+        "Lesão orgânica da retina ou do nervo óptico",
+        "Lesão do III par com midríase paralítica",
+        "Opacidade de meios, como catarata densa",
+        "Perda visual funcional ou conversiva"
+      ],
+      "correctIndex": 0,
+      "explanation": "O DPAR é sinal objetivo de lesão aferente, na retina ou no nervo óptico — presente, por exemplo, na OACR e na neurite óptica — e afasta perda visual funcional. A lesão do III par é eferente, e opacidade de meios como a catarata não produz DPAR."
+    },
+    {
+      "question": "Qual associação entre situação clínica e conduta a ser EVITADA está correta?",
+      "options": [
+        "Glaucoma agudo: não dilatar a pupila para fundoscopia",
+        "Neurite óptica: não usar corticoide por via endovenosa",
+        "Trauma penetrante: não colocar cone de proteção rígido",
+        "Papiledema: não pedir neuroimagem antes da punção"
+      ],
+      "correctIndex": 0,
+      "explanation": "Na suspeita de glaucoma agudo de ângulo fechado não se dilata a pupila. As outras estão invertidas: na neurite óptica o que se evita é o corticoide oral isolado (o EV é a conduta); em trauma penetrante usa-se o cone e nunca se pressiona o olho; no papiledema a neuroimagem vem antes de qualquer punção lombar."
+    },
+    {
+      "question": "No pronto-socorro, um paciente com olho vermelho ainda sem diagnóstico definido pede 'um colírio que resolva rápido'. Qual conduta deve ser evitada?",
+      "options": [
+        "Prescrever colírio de corticoide sem diagnóstico",
+        "Medir a acuidade visual, mesmo de forma grosseira",
+        "Avaliar as pupilas e pesquisar defeito aferente",
+        "Encaminhar ao oftalmologista em caso de dúvida"
+      ],
+      "correctIndex": 0,
+      "explanation": "Colírio de corticoide sem diagnóstico pode agravar infecções — é tratar olho vermelho às cegas. O que o clínico deve fazer: medir a acuidade (conta dedos, movimento de mãos e percepção luminosa valem), avaliar pupilas, fazer fundoscopia quando possível, levantar a história sistêmica e, na dúvida, encaminhar: melhor um encaminhamento a mais do que perda visual permanente."
+    }
+  ]
+}

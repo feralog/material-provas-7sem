@@ -72,12 +72,23 @@ Neurologia/conteudo_doencas_do_sistema_nervoso_periferico.md
 # logs e dumps da checagem (o RELATORIO.md e os .json por tema ficam)
 _checagem/_*.txt
 
-# Pipeline de video (ETAPAS A-D). A prosa_*.md FICA versionada: e a fonte de
-# verdade pra regerar tudo, igual aos resumo_*.md. O resto e derivado e pesado.
+# Pipeline de video (ETAPAS A-D): TUDO fica fora do repo, inclusive os
+# roteiros (prosa_*.md) e os scripts do pipeline - decisao do usuario em
+# 19/11/2026. Os videos so existem nesta maquina.
 Videos/
 videos.html
 narracao_*.mp3
 tempos_*.json
+tempos_*.json.adiado
+prosa_*.md
+*.prproj
+ProtocoloVideo.md
+SEM-VIDEO.md
+Servidor de Videos.bat
+_scripts/narrar.py
+_scripts/montar_video.py
+_scripts/indice_videos.py
+_scripts/conferir_narracao.py
 
 # audio do simulador de OSCE: regeneravel com narrar_osce.py, e ja vai
 # embutido no osce.html

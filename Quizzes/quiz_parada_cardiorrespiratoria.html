@@ -1,0 +1,973 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Parada Cardiorrespiratória</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;450;500;600&display=swap" rel="stylesheet">
+<style>
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0}
+  body{background:#f5f3ef;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+  button{font:inherit;color:inherit;font-family:'IBM Plex Sans',system-ui,sans-serif}
+  a{color:#2b57cc;text-decoration:none}
+  a:hover{color:#1e3f9c;text-decoration:underline}
+  @keyframes qFade{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+  @keyframes qDrawer{from{opacity:0;transform:translateY(-4px)}to{opacity:1;transform:none}}
+
+  /* hovers — no canvas eram style-hover, aqui viram CSS de verdade */
+  .h-dark:hover{background:#2b57cc!important;transform:translateY(-1px)}
+  .h-darkflat:hover{background:#2b57cc!important}
+  .h-line:hover{border-color:#121a2b!important}
+  .h-ink:hover{color:#121a2b!important}
+  .h-opt:not(.locked):hover{border-color:var(--hbd)!important;transform:translateY(-1px)}
+  .h-card:hover{border-color:#121a2b!important;transform:translateY(-2px)}
+
+  /* tipografia do resumo */
+  .rsm{font-size:16.5px;line-height:1.72;color:#2a3141;max-width:64ch}
+  .rsm h2{font-family:'Newsreader',Georgia,serif;font-size:27px;font-weight:500;letter-spacing:-.02em;line-height:1.2;margin:42px 0 14px;padding-top:20px;border-top:1px solid #e4e0d8;text-wrap:pretty}
+  .rsm h2:first-child{margin-top:0;padding-top:0;border-top:0}
+  .rsm h3{font-family:'Newsreader',Georgia,serif;font-size:20px;font-weight:600;letter-spacing:-.01em;margin:28px 0 10px;text-wrap:pretty}
+  .rsm h4{font-family:'IBM Plex Mono',monospace;font-size:11px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:#2b57cc;margin:24px 0 8px}
+  .rsm p{margin:0 0 15px;text-wrap:pretty}
+  .rsm ul,.rsm ol{margin:0 0 15px;padding-left:22px}
+  .rsm li{margin-bottom:7px;text-wrap:pretty}
+  .rsm li>ul,.rsm li>ol{margin:7px 0 0}
+  .rsm strong{font-weight:600;color:#121a2b}
+  .rsm em{font-style:italic}
+  .rsm code{font-family:'IBM Plex Mono',monospace;font-size:.88em;background:#efece5;border:1px solid #e4e0d8;border-radius:5px;padding:1px 5px}
+  .rsm hr{border:0;border-top:1px solid #e4e0d8;margin:32px 0}
+  .rsm blockquote{margin:0 0 18px;padding:15px 18px;background:#f7f6f2;border-left:2.5px solid #2b57cc;border-radius:0 12px 12px 0;font-size:15px;line-height:1.65;color:#39404f}
+  .rsm blockquote p:last-child{margin-bottom:0}
+  .rsm .tbl{overflow-x:auto;margin:0 0 20px;border:1px solid #e4e0d8;border-radius:12px;background:#fff}
+  .rsm table{border-collapse:collapse;width:100%;font-size:14px;line-height:1.5}
+  .rsm th{text-align:left;font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.09em;text-transform:uppercase;color:#8a8578;font-weight:600;padding:11px 14px;background:#faf9f6;border-bottom:1px solid #e4e0d8;white-space:nowrap}
+  .rsm td{padding:11px 14px;border-bottom:1px solid #efece5;vertical-align:top;text-wrap:pretty}
+  .rsm tr:last-child td{border-bottom:0}
+  .rsm .key{background:#f2f6fb;border:1px solid #d6e2f4;border-radius:12px;padding:16px 18px;margin:0 0 18px}
+  .rsm .key>*:last-child{margin-bottom:0}
+
+  /* figuras — no resumo e na questao */
+  .fig{margin:0 0 20px;background:#fff;border:1px solid #e4e0d8;border-radius:14px;overflow:hidden}
+  .fig img{display:block;width:100%;height:auto;cursor:zoom-in}
+  .fig figcaption{font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.06em;color:#8a8578;padding:9px 13px;border-top:1px solid #efece5;background:#faf9f6;text-wrap:pretty}
+  .qfig{margin:0 0 20px}
+
+  /* lightbox */
+  #lb{position:fixed;inset:0;z-index:90;background:rgba(18,26,43,.86);display:none;align-items:center;justify-content:center;padding:24px;cursor:zoom-out}
+  #lb.on{display:flex;animation:qFade .16s ease}
+  #lb img{max-width:100%;max-height:100%;border-radius:10px;box-shadow:0 24px 60px rgba(0,0,0,.5)}
+
+  @media(max-width:560px){
+    .rsm{font-size:16px}
+    .rsm h2{font-size:24px}
+    .home-grid{grid-template-columns:1fr!important}
+  }
+</style>
+</head>
+<body>
+
+<div style="min-height:100vh;background:#f5f3ef;color:#121a2b;font-family:'IBM Plex Sans',system-ui,sans-serif">
+  <header style="position:sticky;top:0;z-index:30;background:rgba(245,243,239,.94);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid #e4e0d8">
+    <div style="max-width:720px;margin:0 auto;padding:12px 16px 10px" id="hdr"></div>
+  </header>
+  <main style="max-width:720px;margin:0 auto;padding:0 16px 80px" id="stage"></main>
+</div>
+<div id="lb"><img alt=""></div>
+
+<script type="text/html" id="resumoSrc"><blockquote><p>Material de referência: não há slide da aula deste tema. Baseado nas diretrizes de RCP e ACLS da AHA (2020, com a atualização de 2025, que manteve os parâmetros abaixo) e na diretriz brasileira da SBC.</p></blockquote>
+<h2>Reconhecimento e acionamento</h2>
+<p>Parada cardiorrespiratória (PCR) é a cessação da atividade mecânica do coração, confirmada pela <strong>ausência de pulso central</strong> em paciente que <strong>não responde</strong> e <strong>não respira ou só tem respiração agônica (gasping)</strong>. O gasping é a armadilha clássica: são movimentos respiratórios ineficazes, frequentes nos primeiros minutos, e devem ser tratados como ausência de respiração.</p>
+<p>Diante de alguém que não responde, a sequência é: chamar ajuda e pedir o <strong>desfibrilador (DEA ou carrinho de parada)</strong>, checar <strong>respiração e pulso carotídeo ao mesmo tempo, em no máximo 10 segundos</strong>, e, sem pulso definido, <strong>iniciar compressões imediatamente</strong>. Na dúvida sobre o pulso, comprime-se: o dano de comprimir um coração que bate é muito menor que o de atrasar a RCP. A ordem é <strong>C-A-B</strong> — compressões antes da via aérea e da ventilação.</p>
+<blockquote><p>Inconsciente não é sinônimo de parada: paciente que não responde mas tem pulso e respira entra no MOVE + ABCDE, não na RCP.</p></blockquote>
+<h2>RCP de alta qualidade</h2>
+<p>O que mais muda o desfecho não é droga, e sim a qualidade das compressões e a desfibrilação precoce. Os parâmetros do adulto estão estáveis desde 2015 e seguem válidos em 2025:</p>
+<div class="tbl"><table><thead><tr><th>Parâmetro</th><th>Alvo</th></tr></thead><tbody><tr><td>Frequência</td><td><strong>100 a 120 compressões/min</strong></td></tr><tr><td>Profundidade</td><td><strong>pelo menos 5 cm, sem passar de 6 cm</strong></td></tr><tr><td>Retorno do tórax</td><td><strong>completo</strong> após cada compressão — sem apoiar o peso no tórax</td></tr><tr><td>Interrupções</td><td>mínimas: pausa <strong>&lt; 10 s</strong> para checar ritmo ou chocar; fração de compressão de pelo menos 60%, idealmente acima de 80%</td></tr><tr><td>Sem via aérea avançada</td><td><strong>30 compressões : 2 ventilações</strong></td></tr><tr><td>Com via aérea avançada</td><td>compressões <strong>contínuas</strong> + <strong>1 ventilação a cada 6 s</strong> (10/min)</td></tr><tr><td>Troca do compressor</td><td>a cada <strong>2 minutos</strong> (a cada ciclo), ou antes se cansar</td></tr></tbody></table></div>
+<p>As mãos ficam na <strong>metade inferior do esterno</strong>, com o paciente sobre superfície rígida. Cada ventilação dura cerca de 1 segundo e vai só até o tórax se elevar: <strong>hiperventilar é erro</strong>, porque aumenta a pressão intratorácica e reduz o retorno venoso justamente quando a compressão tenta gerar débito.</p>
+<p>A <strong>capnografia quantitativa em forma de onda</strong> é o melhor monitor da RCP no paciente intubado. Valores de ETCO₂ persistentemente baixos (classicamente <strong>&lt; 10 mmHg</strong>) indicam compressão ineficaz — corrigir técnica e trocar o compressor. Uma <strong>elevação abrupta e sustentada</strong> do ETCO₂ sugere <strong>retorno da circulação espontânea (RCE)</strong>. A capnografia também é o método mais confiável para <strong>confirmar a posição do tubo traqueal</strong>.</p>
+<h2>Ritmos chocáveis e não chocáveis</h2>
+<p>O monitor divide a PCR em dois trilhos, e a decisão é tomada a cada 2 minutos:</p>
+<div class="tbl"><table><thead><tr><th></th><th>Chocáveis</th><th>Não chocáveis</th></tr></thead><tbody><tr><td>Ritmos</td><td><strong>Fibrilação ventricular (FV)</strong> e <strong>taquicardia ventricular sem pulso (TVSP)</strong></td><td><strong>Atividade elétrica sem pulso (AESP)</strong> e <strong>assistolia</strong></td></tr><tr><td>Tratamento-chave</td><td><strong>desfibrilação</strong> o mais cedo possível</td><td>RCP + <strong>adrenalina assim que possível</strong> + causa reversível</td></tr><tr><td>Adrenalina</td><td>após o <strong>2º choque</strong></td><td>já no <strong>1º ciclo</strong></td></tr><tr><td>Antiarrítmico</td><td>amiodarona ou lidocaína após o <strong>3º choque</strong></td><td>não se usa</td></tr></tbody></table></div>
+<p>No ritmo chocável, a sequência é <strong>choque → RCP imediata por 2 minutos → checar ritmo</strong>. Depois do choque <strong>não se checa pulso</strong>: o coração recém-desfibrilado raramente gera débito nos primeiros segundos, e a RCP volta na hora. A energia é a recomendada pelo fabricante no <strong>bifásico (120 a 200 J)</strong> — se desconhecida, usa-se a máxima — ou <strong>360 J no monofásico</strong>. É desfibrilação, sem sincronismo.</p>
+<p>A <strong>assistolia</strong> é linha reta e <strong>não se choca</strong>. Antes de confirmá-la, aplica-se o <em>protocolo da linha reta</em>: conferir <strong>cabos</strong>, aumentar o <strong>ganho</strong> e trocar a <strong>derivação</strong> — uma FV fina pode se esconder atrás de um ganho baixo. A <strong>AESP</strong> é qualquer ritmo organizado no monitor sem pulso palpável; é o ritmo em que a busca pelas causas reversíveis mais rende.</p>
+<blockquote><p>Atropina saiu do algoritmo de AESP/assistolia desde 2010. Na PCR, ela não tem papel; é droga da bradicardia <strong>com pulso</strong>.</p></blockquote>
+<h2>Drogas e via aérea</h2>
+<p>A via de escolha é <strong>endovenosa ou intraóssea</strong> (EV/IO); a via traqueal é último recurso.</p>
+<ul><li><strong>Adrenalina 1 mg EV/IO a cada 3 a 5 minutos</strong>, em ambos os trilhos, sem dose máxima. No não chocável, quanto mais cedo, melhor; no chocável, entra depois que as primeiras desfibrilações falharam.</li><li><strong>Amiodarona 300 mg em bolus</strong> na FV/TVSP refratária (após o 3º choque); uma segunda dose de <strong>150 mg</strong> se persistir.</li><li><strong>Lidocaína</strong> é a alternativa à amiodarona: <strong>1 a 1,5 mg/kg</strong>, depois <strong>0,5 a 0,75 mg/kg</strong>.</li><li><strong>Não são rotina:</strong> vasopressina (retirada do algoritmo), bicarbonato de sódio e cálcio — reservados a situações específicas, como hipercalemia ou intoxicação por tricíclico.</li></ul>
+<p>Na via aérea, a <strong>bolsa-válvula-máscara</strong> bem feita é aceitável durante toda a RCP. A via aérea avançada (intubação ou dispositivo supraglótico) pode ser colocada por quem tem experiência, <strong>sem interromper as compressões por mais de alguns segundos</strong>, e sua posição é confirmada pela capnografia. Com ela, as compressões passam a ser contínuas.</p>
+<blockquote><p>Dose de PCR × dose com pulso: <strong>adrenalina 1 mg em bolus</strong> e <strong>amiodarona 300 mg em bolus</strong> são exclusivas da parada. Com pulso, a adrenalina vai em infusão (2–10 mcg/min) e a amiodarona é 150 mg em 10 minutos.</p></blockquote>
+<h2>As causas reversíveis: 5 Hs e 5 Ts</h2>
+<p>Toda PCR, e principalmente a AESP, obriga a procurar uma causa tratável enquanto a RCP continua.</p>
+<div class="tbl"><table><thead><tr><th>5 Hs</th><th>5 Ts</th></tr></thead><tbody><tr><td><strong>Hipovolemia</strong> → volume, controle do sangramento</td><td><strong>Tensão no tórax</strong> (pneumotórax hipertensivo) → descompressão</td></tr><tr><td><strong>Hipóxia</strong> → via aérea e oxigênio</td><td><strong>Tamponamento cardíaco</strong> → pericardiocentese</td></tr><tr><td><strong>H⁺ (acidose)</strong> → ventilação; bicarbonato em casos selecionados</td><td><strong>Toxinas</strong> → antídoto específico</td></tr><tr><td><strong>Hipo/hipercalemia</strong> → na hipercalemia, cálcio, bicarbonato, insulina com glicose</td><td><strong>Trombose pulmonar</strong> (TEP) → considerar trombólise</td></tr><tr><td><strong>Hipotermia</strong> → reaquecimento</td><td><strong>Trombose coronária</strong> (IAM) → reperfusão</td></tr></tbody></table></div>
+<p>A pista clínica direciona: turgência jugular com murmúrio vesicular abolido de um lado aponta pneumotórax hipertensivo; paciente renal crônico em diálise, hipercalemia; pós-operatório imobilizado, TEP. A ultrassonografia à beira do leito ajuda a ver tamponamento e pneumotórax, desde que não prolongue as pausas.</p>
+<h2>Retorno da circulação e cuidados pós-PCR</h2>
+<p>Sinais de RCE: pulso e pressão palpáveis, elevação abrupta do ETCO₂ e ondas de pressão arterial espontâneas. A partir daí, o objetivo é evitar a segunda lesão — hipóxia, hipotensão e febre.</p>
+<ul><li><strong>Oxigenação:</strong> <strong>SatO₂ entre 92 e 98%</strong> — evitar tanto hipóxia quanto hiperóxia.</li><li><strong>Ventilação:</strong> PaCO₂ na faixa normal (<strong>35 a 45 mmHg</strong>), sem hiperventilar.</li><li><strong>Hemodinâmica:</strong> evitar hipotensão — <strong>PAS ≥ 90 mmHg</strong> e <strong>PAM ≥ 65 mmHg</strong>, com volume e vasopressor.</li><li><strong>ECG de 12 derivações</strong> logo após o RCE: <strong>supradesnivelamento de ST → cateterismo de emergência</strong>; também se considera em choque cardiogênico ou suspeita forte de causa coronária.</li><li><strong>Controle direcionado de temperatura</strong> em todo adulto que <strong>não obedece a comandos</strong> após o RCE: temperatura-alvo mantida constante entre <strong>32 e 37,5 °C</strong>, com <strong>prevenção ativa de febre</strong> depois dessa fase.</li><li><strong>Prognóstico neurológico</strong> só a partir de <strong>72 horas após a normotermia</strong>, com exame e testes combinados — nunca um dado isolado.</li></ul>
+<blockquote><p>ETCO₂ &lt; 10 mmHg depois de 20 minutos de RCP em paciente intubado pesa contra a chance de RCE, mas nunca deve ser usado sozinho para encerrar a reanimação.</p></blockquote></script>
+<!-- Tutor local: define window.DEEPSEEK_KEY. O arquivo NAO vai para o repositorio,
+     entao online ele da 404 e o chat simplesmente nao aparece. -->
+<script src="../deepseek_key.js"></script>
+<script>
+/* ─────────────────────────────────────────────────────────────────────────────
+   CONTRATO DE DADOS — para adaptar a outro tema, troque apenas QUIZ e o resumo.
+   Cada item: { question, options[2..6], correctIndex, explanation }
+   ──────────────────────────────────────────────────────────────────────────── */
+var TITLE      = "Parada Cardiorrespiratória";
+var EYEBROW    = "Práticas · Referência";
+var DISCIPLINA = "Práticas";   // pasta de origem (PED, GO...) — usada pelo índice
+var SUBTITLE = "Do reconhecimento ao cuidado pós-PCR, no ritmo do ACLS";
+var INTRO    = "RCP de alta qualidade, ritmos chocáveis e não chocáveis, drogas, 5 Hs e 5 Ts e cuidados pós-PCR. Material de referência baseado no ACLS da AHA (2020/2025) — não há slide da aula deste tema.";
+
+var QUIZ = [
+  {
+    "question": "Homem de 58 anos cai no corredor do hospital. Não responde ao chamado e apresenta movimentos respiratórios irregulares e espaçados, tipo gasping. O pulso carotídeo não é palpável com certeza em 10 segundos. Qual é a conduta?",
+    "options": [
+      "Tratar como PCR: pedir o desfibrilador e iniciar compressões",
+      "Posicionar em decúbito lateral e reavaliar o pulso em 1 minuto",
+      "Ofertar oxigênio por máscara e aguardar o monitor para decidir",
+      "Fazer duas ventilações de resgate antes de iniciar compressões"
+    ],
+    "correctIndex": 0,
+    "explanation": "Gasping é respiração agônica e equivale a ausência de respiração. Quem não responde, não respira normalmente e não tem pulso definido em até 10 segundos está em PCR: pede-se o desfibrilador e começam as compressões, na sequência C-A-B."
+  },
+  {
+    "question": "Durante a RCP de um adulto, qual combinação de frequência e profundidade das compressões corresponde à recomendação da AHA?",
+    "options": [
+      "100 a 120 por minuto, com 5 a 6 cm de profundidade",
+      "80 a 100 por minuto, com 4 a 5 cm de profundidade",
+      "120 a 140 por minuto, com 6 a 7 cm de profundidade",
+      "100 a 120 por minuto, com 3 a 4 cm de profundidade"
+    ],
+    "correctIndex": 0,
+    "explanation": "Compressões de 100 a 120/min, com pelo menos 5 cm e no máximo 6 cm de profundidade no adulto, permitindo o retorno completo do tórax. Esses parâmetros foram mantidos na atualização AHA 2025."
+  },
+  {
+    "question": "Na avaliação de uma equipe em simulação, o compressor mantém frequência e profundidade adequadas, mas apoia o peso do corpo sobre o tórax entre as compressões. Qual é a consequência desse erro?",
+    "options": [
+      "Impede o retorno total do tórax e reduz o enchimento cardíaco",
+      "Aumenta a fração de compressão e melhora a perfusão coronária",
+      "Eleva a pressão de perfusão cerebral sem efeito sobre o débito",
+      "Não altera a eficácia, desde que a profundidade esteja correta"
+    ],
+    "correctIndex": 0,
+    "explanation": "O retorno completo do tórax gera a pressão intratorácica negativa que traz o sangue de volta ao coração. Apoiar-se no tórax impede esse retorno, reduz o enchimento e, com ele, o débito da compressão seguinte."
+  },
+  {
+    "question": "Paciente em PCR é intubado e a posição do tubo é confirmada. Como passam a ser feitas compressões e ventilações?",
+    "options": [
+      "Compressões contínuas e 1 ventilação a cada 6 segundos",
+      "Ciclos de 30 compressões para 2 ventilações, com pausa",
+      "Ciclos de 15 compressões para 2 ventilações, com pausa",
+      "Compressões contínuas e 1 ventilação a cada 2 segundos"
+    ],
+    "correctIndex": 0,
+    "explanation": "Sem via aérea avançada, a relação é 30:2 com pausa para ventilar. Com via aérea avançada, as compressões ficam contínuas e se ventila 1 vez a cada 6 segundos (10/min); ventilar mais que isso reduz o retorno venoso."
+  },
+  {
+    "question": "Ao monitorar um paciente em PCR, quais ritmos indicam desfibrilação?",
+    "options": [
+      "Fibrilação ventricular e taquicardia ventricular sem pulso",
+      "Assistolia e atividade elétrica sem pulso de QRS largo",
+      "Fibrilação ventricular e atividade elétrica sem pulso",
+      "Taquicardia ventricular sem pulso e assistolia fina"
+    ],
+    "correctIndex": 0,
+    "explanation": "Os ritmos chocáveis são a FV e a TV sem pulso. AESP e assistolia não são chocáveis: o tratamento é RCP de qualidade, adrenalina o mais cedo possível e busca das causas reversíveis."
+  },
+  {
+    "question": "Paciente em FV recebe o primeiro choque bifásico de 200 J. Qual é o passo seguinte?",
+    "options": [
+      "Retomar a RCP imediatamente por 2 minutos, sem checar pulso",
+      "Checar o pulso carotídeo por 10 segundos antes de prosseguir",
+      "Aplicar um segundo choque logo em seguida, com 360 J bifásico",
+      "Administrar amiodarona 300 mg antes de retomar as compressões"
+    ],
+    "correctIndex": 0,
+    "explanation": "Depois do choque, a RCP é retomada na hora por 2 minutos, e só então o ritmo é reavaliado. O coração recém-desfibrilado raramente gera débito nos primeiros segundos, e checar pulso apenas prolonga a pausa."
+  },
+  {
+    "question": "O monitor de um paciente em PCR mostra uma linha reta. Antes de confirmar assistolia, o que deve ser feito?",
+    "options": [
+      "Conferir cabos, aumentar o ganho e trocar a derivação",
+      "Aplicar um choque de 200 J para afastar uma FV oculta",
+      "Administrar atropina 1 mg e repetir a leitura do ritmo",
+      "Interromper a RCP por 30 segundos para observar o ritmo"
+    ],
+    "correctIndex": 0,
+    "explanation": "É o protocolo da linha reta: cabos, ganho e derivação, porque uma FV fina pode parecer assistolia com ganho baixo. Confirmada a assistolia, não se choca: RCP e adrenalina 1 mg o mais cedo possível. A atropina saiu do algoritmo de PCR em 2010."
+  },
+  {
+    "question": "Qual é a dose e o intervalo da adrenalina durante a reanimação de um adulto em PCR?",
+    "options": [
+      "1 mg EV ou IO a cada 3 a 5 minutos",
+      "1 mg EV ou IO a cada 10 minutos",
+      "0,1 mg EV ou IO a cada 3 a 5 minutos",
+      "3 mg EV ou IO em dose única inicial"
+    ],
+    "correctIndex": 0,
+    "explanation": "Adrenalina 1 mg EV/IO a cada 3 a 5 minutos, sem dose máxima, nos ritmos chocáveis e não chocáveis. No não chocável entra assim que possível; no chocável, depois que as primeiras desfibrilações falharam (no algoritmo, após o 2º choque)."
+  },
+  {
+    "question": "Paciente persiste em FV após o terceiro choque, com RCP de qualidade e adrenalina já feita. Qual antiarrítmico e dose estão indicados?",
+    "options": [
+      "Amiodarona 300 mg EV em bolus; se persistir, 150 mg",
+      "Amiodarona 150 mg EV em 10 minutos e 1 mg/min em seguida",
+      "Adenosina 6 mg EV em bolus rápido; se persistir, 12 mg",
+      "Sulfato de magnésio 2 g EV em bolus; se persistir, 4 g"
+    ],
+    "correctIndex": 0,
+    "explanation": "Na FV/TV sem pulso refratária, amiodarona 300 mg em bolus, com segunda dose de 150 mg. A amiodarona 150 mg em 10 minutos é o esquema da TV com pulso; magnésio fica para a torsades de pointes."
+  },
+  {
+    "question": "Durante uma PCR em FV refratária, a amiodarona não está disponível. Qual é a alternativa recomendada e a dose inicial?",
+    "options": [
+      "Lidocaína 1 a 1,5 mg/kg EV",
+      "Procainamida 20 mg/min EV",
+      "Atropina 1 mg EV em bolus",
+      "Vasopressina 40 U EV única"
+    ],
+    "correctIndex": 0,
+    "explanation": "A lidocaína é a alternativa à amiodarona na FV/TV sem pulso refratária: 1 a 1,5 mg/kg, seguida de 0,5 a 0,75 mg/kg. A vasopressina foi retirada do algoritmo, e a atropina não tem papel na PCR."
+  },
+  {
+    "question": "Mulher de 70 anos em PCR apresenta no monitor um ritmo sinusal de 70 bpm, mas sem pulso palpável. Qual é a conduta?",
+    "options": [
+      "RCP, adrenalina o quanto antes e busca de causas reversíveis",
+      "Desfibrilação com 200 J e RCP imediata por mais 2 minutos",
+      "Cardioversão sincronizada com 100 J e reavaliação do pulso",
+      "Atropina 1 mg e marca-passo transcutâneo, mantendo a RCP"
+    ],
+    "correctIndex": 0,
+    "explanation": "Ritmo organizado sem pulso é atividade elétrica sem pulso (AESP), ritmo não chocável. O tratamento é RCP de qualidade, adrenalina 1 mg assim que possível e procura ativa dos 5 Hs e 5 Ts."
+  },
+  {
+    "question": "Homem vítima de trauma torácico entra em PCR em AESP. Ao exame: turgência jugular, desvio da traqueia e murmúrio vesicular abolido à direita, com hipertimpanismo. Qual intervenção trata a causa?",
+    "options": [
+      "Descompressão torácica imediata no lado direito",
+      "Pericardiocentese guiada pela ultrassonografia",
+      "Trombólise endovenosa durante a reanimação",
+      "Bicarbonato de sódio e gluconato de cálcio"
+    ],
+    "correctIndex": 0,
+    "explanation": "O quadro é de pneumotórax hipertensivo, um dos 5 Ts (tensão no tórax). A descompressão imediata do lado acometido é o tratamento, sem esperar radiografia; no adulto, o local atual é o 4º–5º espaço intercostal na linha axilar média."
+  },
+  {
+    "question": "Paciente renal crônico em hemodiálise, que faltou às duas últimas sessões, entra em PCR. Qual causa reversível deve ser tratada prontamente e com qual medida?",
+    "options": [
+      "Hipercalemia, com cálcio EV, bicarbonato e insulina com glicose",
+      "Hipoglicemia, com glicose a 50% EV em bolus durante a RCP",
+      "Hipocalcemia, com reposição lenta de cálcio após a reanimação",
+      "Hipermagnesemia, com sulfato de magnésio EV em bolus imediato"
+    ],
+    "correctIndex": 0,
+    "explanation": "Paciente dialítico sem diálise é hipercalêmico até prova em contrário. Hipo/hipercalemia é um dos 5 Hs; na hipercalemia, o cálcio estabiliza a membrana miocárdica, e bicarbonato e insulina com glicose deslocam o potássio para dentro da célula."
+  },
+  {
+    "question": "Durante a RCP de um paciente intubado, o ETCO₂ se mantém em 8 mmHg há vários minutos. O que esse dado indica e qual é a conduta?",
+    "options": [
+      "Compressão ineficaz: corrigir a técnica e trocar o compressor",
+      "Retorno da circulação: suspender compressões e checar o pulso",
+      "Intubação esofágica: retirar o tubo e reintubar de imediato",
+      "Hiperventilação: reduzir para 1 ventilação a cada 12 segundos"
+    ],
+    "correctIndex": 0,
+    "explanation": "ETCO₂ persistentemente baixo (classicamente < 10 mmHg) indica débito gerado pelas compressões insuficiente. A conduta é melhorar a qualidade: profundidade, frequência, retorno do tórax e troca do compressor."
+  },
+  {
+    "question": "Na RCP de um paciente intubado, o ETCO₂ sobe de forma abrupta e sustentada de 15 para 42 mmHg. Qual é a interpretação mais provável?",
+    "options": [
+      "Retorno da circulação espontânea",
+      "Deslocamento do tubo para o esôfago",
+      "Piora da qualidade das compressões",
+      "Efeito esperado de cada adrenalina"
+    ],
+    "correctIndex": 0,
+    "explanation": "A elevação abrupta e sustentada do ETCO₂ é sinal precoce de RCE, porque o débito espontâneo leva muito mais CO₂ aos pulmões. Confirma-se com ritmo e pulso na checagem. Tubo no esôfago, ao contrário, faria o ETCO₂ cair a quase zero."
+  },
+  {
+    "question": "Qual é o método mais confiável para confirmar e monitorar a posição do tubo traqueal durante a PCR?",
+    "options": [
+      "Capnografia quantitativa em forma de onda",
+      "Ausculta do epigástrio e dos dois hemitórax",
+      "Observação de vapor condensado dentro do tubo",
+      "Radiografia de tórax feita durante a reanimação"
+    ],
+    "correctIndex": 0,
+    "explanation": "A capnografia em forma de onda confirma a posição do tubo e segue monitorando a RCP. Ausculta e condensação no tubo são enganosos, e a radiografia não é viável nem confiável durante a reanimação."
+  },
+  {
+    "question": "Após 12 minutos de RCP, um homem de 62 anos tem retorno da circulação espontânea. Quais alvos de oxigenação e pressão devem ser mantidos?",
+    "options": [
+      "SatO₂ de 92 a 98%, com PAS ≥ 90 mmHg e PAM ≥ 65 mmHg",
+      "SatO₂ de 100% contínua, com PAS ≥ 140 mmHg e PAM ≥ 90 mmHg",
+      "SatO₂ de 88 a 92%, com PAS ≥ 80 mmHg e PAM ≥ 55 mmHg",
+      "SatO₂ acima de 99%, com PAS ≥ 120 mmHg e PAM ≥ 80 mmHg"
+    ],
+    "correctIndex": 0,
+    "explanation": "No pós-PCR, evita-se tanto hipóxia quanto hiperóxia: SatO₂ entre 92 e 98%. Hipotensão piora a lesão cerebral e miocárdica, por isso os alvos são PAS ≥ 90 mmHg e PAM ≥ 65 mmHg, com volume e vasopressor."
+  },
+  {
+    "question": "Homem de 55 anos recupera a circulação após PCR em FV e o ECG de 12 derivações mostra supradesnivelamento de ST em parede anterior. Qual é a conduta?",
+    "options": [
+      "Cateterismo cardíaco de emergência para reperfusão",
+      "Cateterismo eletivo após a recuperação neurológica",
+      "Amiodarona contínua e ecocardiograma em 48 horas",
+      "Trombólise apenas se houver nova PCR nas 24 horas"
+    ],
+    "correctIndex": 0,
+    "explanation": "Supra de ST após o RCE indica cateterismo de emergência, independentemente do estado neurológico. A trombose coronária é um dos 5 Ts, e a reperfusão trata a causa e reduz o risco de nova parada."
+  },
+  {
+    "question": "Após o RCE, a paciente permanece comatosa e não obedece a comandos. Qual medida neuroprotetora está indicada?",
+    "options": [
+      "Controle direcionado de temperatura entre 32 e 37,5 °C, evitando febre",
+      "Resfriamento a 28 °C por 72 horas para reduzir o consumo cerebral",
+      "Antitérmico apenas se a temperatura passar de 39 °C nos primeiros dias",
+      "Reaquecimento ativo até 38,5 °C para melhorar a perfusão cerebral"
+    ],
+    "correctIndex": 0,
+    "explanation": "Todo adulto que não obedece a comandos após o RCE recebe controle direcionado de temperatura, mantendo uma temperatura constante entre 32 e 37,5 °C, com prevenção ativa de febre depois. O prognóstico neurológico só é definido a partir de 72 horas após a normotermia."
+  }
+];
+
+var LETTERS = ['A','B','C','D','E','F'];
+var SHUFFLE = true, LOCK = true;
+
+var S = { view:'home', started:false, finished:false, i:0, order:[], answers:[], open:{}, filter:'all', warn:false, chat:{} };
+
+function esc(s){ return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
+function pad(n){ return String(n).padStart(2,'0'); }
+
+function build(){
+  var qs = QUIZ.map(function(q,id){ return { question:q.question, options:q.options.slice(), correctIndex:q.correctIndex, explanation:q.explanation, image:q.image, imageCaption:q.imageCaption, id:id }; });
+  if (!SHUFFLE) return qs;
+  for (var i=qs.length-1;i>0;i--){ var j=Math.floor(Math.random()*(i+1)); var t=qs[i]; qs[i]=qs[j]; qs[j]=t; }
+  return qs.map(function(q){
+    var correct = q.options[q.correctIndex], o = q.options.slice();
+    for (var i=o.length-1;i>0;i--){ var j=Math.floor(Math.random()*(i+1)); var t=o[i]; o[i]=o[j]; o[j]=t; }
+    q.options = o; q.correctIndex = o.indexOf(correct); return q;
+  });
+}
+
+/* ── ações ─────────────────────────────────────────────────────────────────── */
+var A = {
+  home:      function(){ S.view='home'; S.started=false; S.finished=false; up(0); },
+  resumo:    function(){ S.view='resumo'; up(0); },
+  start:     function(){ var o=build(); S.view='quiz'; S.started=true; S.finished=false; S.i=0; S.order=o;
+                         S.answers=new Array(o.length).fill(null); S.open={}; S.filter='all'; S.warn=false; up(0); },
+  restart:   function(){ A.start(); },
+  sair:      function(){ S.view='home'; S.started=false; up(0); },   // guarda as respostas
+  retomar:   function(){ S.view='quiz'; S.started=true; S.finished=false; S.warn=false; up(0); },
+  go:        function(n){ if(n<0||n>S.order.length-1) return; S.i=n; S.warn=false; render(); },
+  jump:      function(n){ if(S.finished){ S.finished=false; S.i=n; S.warn=false; } else { if(n<0||n>S.order.length-1) return; S.i=n; S.warn=false; } up(0,'smooth'); },
+  pick:      function(n){ if(LOCK && S.answers[S.i]!==null) return; S.answers[S.i]=n; render(); },
+  prev:      function(){ A.go(S.i-1); },
+  next:      function(){ if(S.i<S.order.length-1) A.go(S.i+1); else A.finish(); },
+  finish:    function(){ var b=S.answers.filter(function(a){return a===null}).length;
+                         if(b>0 && !S.warn){ S.warn=true; render(); return; } S.finished=true; S.warn=false; up(0); },
+  force:     function(){ S.finished=true; S.warn=false; up(0); },
+  gotoBlank: function(){ var n=S.answers.findIndex(function(a){return a===null}); if(n>=0) A.go(n); },
+  back:      function(){ S.finished=false; S.warn=false; up(0); },
+  filter:    function(k){ S.filter=k; render(); },
+  toggle:    function(n){ S.open[n]=!S.open[n]; render(); },
+  toggleAll: function(){ var r=reviewList(), all=r.length>0 && r.every(function(x){return S.open[x.idx]});
+                         S.open={}; if(!all) r.forEach(function(x){ S.open[x.idx]=true; }); render(); }
+};
+function up(top, beh){ render(); window.scrollTo({ top: top||0, behavior: beh||'auto' }); }
+
+/* Aberto por duplo clique (file://) volta para o indice local; servido pela web,
+   volta para o publicado. Os dois listam os mesmos materiais. */
+function idxHref(){
+  var local = (typeof location !== 'undefined' && location.protocol === 'file:');
+  return local ? '../index_local.html' : '../index.html';
+}
+function emAndamento(){
+  return S.order.length > 0 && !S.finished &&
+         S.answers.some(function(a){ return a !== null; });
+}
+
+/* ── header ────────────────────────────────────────────────────────────────── */
+function renderHeader(){
+  var mono = "font-family:'IBM Plex Mono',monospace";
+  var left =
+    '<div style="min-width:0">' +
+      '<div style="display:flex;align-items:center;gap:8px;'+mono+';font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:#8a8578">' +
+        '<a href="'+idxHref()+'" class="h-ink" style="color:#2b57cc;text-decoration:none;white-space:nowrap">\u2190 Materiais</a>' +
+        '<span style="color:#d3cec4">/</span>' +
+        '<span style="overflow:hidden;text-overflow:ellipsis;white-space:nowrap">'+esc(EYEBROW)+'</span>' +
+      '</div>' +
+      '<h1 style="margin:1px 0 0;font-family:\'Newsreader\',Georgia,serif;font-size:20px;font-weight:500;letter-spacing:-.01em;line-height:1.15">'+esc(TITLE)+'</h1>' +
+    '</div>';
+
+  var right = '';
+  if (S.view === 'quiz' && S.started) {
+    var hit = counts().hit;
+    right = '<div style="display:flex;align-items:center;gap:10px;flex-shrink:0">' +
+              '<button type="button" data-act="sair" class="h-line" style="background:none;border:1px solid #ddd8ce;border-radius:9px;padding:6px 11px;'+mono+';font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;color:#5b6478;cursor:pointer;transition:border-color .15s ease">Sair</button>' +
+              '<div style="display:flex;align-items:center;gap:6px">' +
+                '<span style="'+mono+';font-size:15px;font-weight:600;letter-spacing:-.02em">'+hit+'</span>' +
+                '<span style="'+mono+';font-size:11px;color:#8a8578">/ '+S.order.length+'</span>' +
+              '</div></div>';
+  } else if (S.view !== 'home') {
+    right = '<button type="button" data-act="home" class="h-line" style="flex-shrink:0;background:none;border:1px solid #ddd8ce;border-radius:9px;padding:7px 13px;'+mono+';font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:#5b6478;cursor:pointer;transition:border-color .15s ease">← Início</button>';
+  }
+
+  var html = '<div style="display:flex;align-items:baseline;justify-content:space-between;gap:12px;margin-bottom:'+(S.view==='quiz'&&S.started?'10px':'2px')+'">'+left+right+'</div>';
+
+  if (S.view === 'quiz' && S.started) {
+    var c = counts();
+    var rail = S.order.map(function(q,n){
+      var a = S.answers[n], cur = n===S.i && !S.finished, bg = '#d3cec4';
+      if (a!==null) bg = (a===q.correctIndex) ? '#2e7d55' : '#c04437';
+      if (cur && a===null) bg = '#121a2b';
+      var st = a===null ? 'em branco' : (a===q.correctIndex ? 'correta' : 'incorreta');
+      return '<button type="button" data-act="jump" data-n="'+n+'" title="Questão '+(n+1)+' — '+st+'" aria-label="Questão '+(n+1)+' — '+st+'" style="flex:1 1 0;min-width:0;background:none;border:0;padding:13px 0;margin:0;cursor:pointer;display:flex;align-items:center;justify-content:center">' +
+             '<span style="display:block;width:100%;border-radius:99px;transition:height .18s ease,background .18s ease,box-shadow .18s ease;height:'+(cur?'17px':'9px')+';background:'+bg+';box-shadow:'+(cur?'0 0 0 3px rgba(18,26,43,.13)':'none')+'"></span></button>';
+    }).join('');
+    html += '<div><div style="display:flex;align-items:center;gap:3px">'+rail+'</div>' +
+            '<div style="display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:-2px">' +
+              '<div style="'+mono+';font-size:11px;letter-spacing:.04em;color:#5b6478">Questão '+pad(S.i+1)+' / '+S.order.length+'</div>' +
+              '<div style="display:flex;align-items:center;gap:12px;'+mono+';font-size:10.5px;color:#8a8578">' +
+                dot('#2e7d55',c.hit)+dot('#c04437',c.miss)+dot('#d3cec4',c.blank) +
+              '</div></div></div>';
+  }
+  document.getElementById('hdr').innerHTML = html;
+}
+function dot(color,n){ return '<span style="display:flex;align-items:center;gap:5px"><span style="width:7px;height:7px;border-radius:99px;background:'+color+';display:block"></span>'+n+'</span>'; }
+
+function counts(){
+  var hit=0, miss=0, blank=0;
+  S.answers.forEach(function(a,n){
+    if (a===null) blank++;
+    else if (S.order[n] && a===S.order[n].correctIndex) hit++;
+    else miss++;
+  });
+  return { hit:hit, miss:miss, blank:blank, total:S.order.length };
+}
+
+/* ── tela inicial ──────────────────────────────────────────────────────────── */
+function renderHome(){
+  var mono = "font-family:'IBM Plex Mono',monospace";
+  var secoes = (document.getElementById('resumoSrc').textContent.match(/<h2/g)||[]).length;
+  var cell = function(v,l){
+    return '<div style="background:#faf9f6;padding:16px 14px">' +
+      '<div style="'+mono+';font-size:22px;font-weight:500;letter-spacing:-.03em">'+v+'</div>' +
+      '<div style="'+mono+';font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:#8a8578;margin-top:3px">'+l+'</div></div>';
+  };
+  var card = function(act,tag,titulo,desc,cta){
+    return '<button type="button" data-act="'+act+'" class="h-card" style="display:flex;flex-direction:column;align-items:flex-start;gap:0;text-align:left;background:#fff;border:1px solid #e4e0d8;border-radius:18px;padding:24px 22px;cursor:pointer;transition:border-color .16s ease,transform .14s ease;box-shadow:0 1px 2px rgba(18,26,43,.04),0 12px 28px -20px rgba(18,26,43,.18)">' +
+      '<div style="'+mono+';font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:#2b57cc;margin-bottom:12px">'+tag+'</div>' +
+      '<div style="font-family:\'Newsreader\',Georgia,serif;font-size:26px;font-weight:500;letter-spacing:-.02em;line-height:1.15;margin-bottom:8px">'+titulo+'</div>' +
+      '<div style="font-size:14px;line-height:1.6;color:#5b6478;margin-bottom:18px;text-wrap:pretty">'+desc+'</div>' +
+      '<div style="'+mono+';font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:#121a2b">'+cta+'</div></button>';
+  };
+
+  document.getElementById('stage').innerHTML =
+    '<section style="padding:56px 0 0;animation:qFade .3s ease">' +
+      '<div style="'+mono+';font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:#2b57cc;margin-bottom:16px">Material de revisão</div>' +
+      '<h2 style="font-family:\'Newsreader\',Georgia,serif;font-size:40px;line-height:1.08;font-weight:400;letter-spacing:-.025em;margin:0 0 18px;text-wrap:pretty">'+esc(SUBTITLE)+'</h2>' +
+      '<p style="font-size:15.5px;line-height:1.65;color:#5b6478;margin:0 0 30px;max-width:52ch;text-wrap:pretty">'+esc(INTRO)+'</p>' +
+      '<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(108px,1fr));gap:1px;background:#e4e0d8;border:1px solid #e4e0d8;border-radius:14px;overflow:hidden;margin-bottom:32px">' +
+        cell(QUIZ.length,'Questões') + cell(secoes,'Seções') + cell('~'+Math.round(QUIZ.length*0.75),'Minutos') +
+      '</div>' +
+      '<div class="home-grid" style="display:grid;grid-template-columns:1fr 1fr;gap:12px">' +
+        (emAndamento()
+          ? card('retomar','Em andamento','Quiz',
+                 'Você parou na questão '+pad(S.i+1)+' de '+S.order.length+', com '+
+                 (S.order.length-counts().blank)+' respondida'+((S.order.length-counts().blank)===1?'':'s')+
+                 '. Suas respostas continuam guardadas.','Retomar →')
+          : card('start','Praticar','Quiz', QUIZ.length+' questões de múltipla escolha, com explicação assim que você responde e gabarito comentado no fim.','Começar →')) +
+        card('resumo','Estudar','Resumo','O conteúdo da aula em texto corrido, organizado em '+secoes+' seções para leitura antes da prova.','Ler →') +
+      '</div>' +
+      '<div style="margin-top:26px;display:flex;flex-wrap:wrap;align-items:center;gap:8px 18px;'+mono+';font-size:11px;color:#8a8578">' +
+        '<span>← →&nbsp; navegar</span><span>1–'+maxOpts()+'&nbsp; responder</span><span>Enter&nbsp; avançar</span>' +
+        (emAndamento() ? '<button type="button" data-act="start" class="h-ink" style="background:none;border:0;padding:0;'+mono+';font-size:11px;color:#8a8578;cursor:pointer;text-decoration:underline;text-underline-offset:3px">recomeçar do zero</button>' : '') +
+        '</div>' +
+    '</section>';
+}
+function maxOpts(){ return QUIZ.reduce(function(m,q){ return Math.max(m,q.options.length); },0); }
+
+/* ── resumo ────────────────────────────────────────────────────────────────── */
+function renderResumo(){
+  document.getElementById('stage').innerHTML =
+    '<section style="padding:34px 0 0;animation:qFade .3s ease">' +
+      '<div style="font-family:\'IBM Plex Mono\',monospace;font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:#2b57cc;margin-bottom:14px">Resumo</div>' +
+      '<div class="rsm">' + document.getElementById('resumoSrc').textContent + '</div>' +
+      '<div style="display:flex;flex-wrap:wrap;gap:9px;margin-top:38px;padding-top:24px;border-top:1px solid #e4e0d8">' +
+        '<button type="button" data-act="start" class="h-darkflat" style="background:#121a2b;color:#f5f3ef;border:0;border-radius:11px;padding:13px 24px;font-size:14px;font-weight:500;cursor:pointer;transition:background .16s ease">Fazer o quiz →</button>' +
+        '<button type="button" data-act="home" class="h-line" style="background:none;border:1px solid #ddd8ce;border-radius:11px;padding:13px 22px;font-size:14px;cursor:pointer;transition:border-color .15s ease">Voltar ao início</button>' +
+      '</div></section>';
+}
+
+/* imagem da questao — data URI ja resolvida pelo montar_quiz.py */
+function figura(q, cls){
+  if (!q.image) return '';
+  return '<figure class="fig'+(cls?' '+cls:'')+'"><img src="'+q.image+'" alt="'+esc(q.imageCaption||'Imagem da questão')+'">' +
+         (q.imageCaption ? '<figcaption>'+esc(q.imageCaption)+'</figcaption>' : '') + '</figure>';
+}
+
+/* ── questão ───────────────────────────────────────────────────────────────── */
+function renderQuestion(){
+  var mono = "font-family:'IBM Plex Mono',monospace";
+  var q = S.order[S.i], ans = S.answers[S.i], reveal = ans !== null;
+
+  var status = 'Não respondida', sColor = '#8a8578';
+  if (reveal) { var ok = ans===q.correctIndex; status = ok?'Você acertou':'Você errou'; sColor = ok?'#2e7d55':'#c04437'; }
+
+  var opts = q.options.map(function(text,n){
+    var isC = n===q.correctIndex, isMine = n===ans;
+    var bd='#e4e0d8', bg='#fff', fg='#121a2b', bBg='#f2efe9', bFg='#8a8578', mark='', mColor='', op='1', hbd='#2b57cc';
+    if (reveal) {
+      op = (isC||isMine) ? '1' : '.62';
+      if (isC)               { bd='#8fc7a7'; bg='#eef7f1'; fg='#1f5c3e'; bBg='#2e7d55'; bFg='#fff'; mark='✓'; mColor='#2e7d55'; }
+      if (isMine && !isC)    { bd='#e0a49a'; bg='#fdf0ee'; fg='#8f2f25'; bBg='#c04437'; bFg='#fff'; mark='✕'; mColor='#c04437'; }
+    } else if (isMine)       { bd='#121a2b'; bg='#f7f6f2'; bBg='#121a2b'; bFg='#f5f3ef'; }
+    var locked = reveal && LOCK;
+    return '<button type="button" data-act="pick" data-n="'+n+'" class="h-opt'+(locked?' locked':'')+'" style="--hbd:'+hbd+';display:flex;gap:13px;align-items:flex-start;width:100%;text-align:left;padding:14px 15px;border-radius:13px;font-size:15px;line-height:1.5;transition:border-color .15s ease,background .15s ease,transform .12s ease;border:1.5px solid '+bd+';background:'+bg+';color:'+fg+';cursor:'+(locked?'default':'pointer')+';opacity:'+op+'">' +
+      '<span style="flex-shrink:0;width:24px;height:24px;border-radius:7px;display:flex;align-items:center;justify-content:center;'+mono+';font-size:11.5px;font-weight:600;margin-top:1px;background:'+bBg+';color:'+bFg+'">'+LETTERS[n]+'</span>' +
+      '<span style="flex:1;min-width:0;text-wrap:pretty">'+esc(text)+'</span>' +
+      (mark ? '<span style="flex-shrink:0;'+mono+';font-size:14px;font-weight:600;margin-top:1px;color:'+mColor+'">'+mark+'</span>' : '') +
+      '</button>';
+  }).join('');
+
+  var expl = reveal ? '<div style="margin-top:20px;padding:16px 18px;background:#f7f6f2;border-left:2.5px solid #2b57cc;border-radius:0 12px 12px 0;animation:qFade .26s ease">' +
+      '<div style="'+mono+';font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:#2b57cc;margin-bottom:8px">Por quê</div>' +
+      '<p style="margin:0;font-size:14.5px;line-height:1.68;color:#39404f;text-wrap:pretty">'+esc(q.explanation)+'</p></div>' : '';
+
+  var blank = counts().blank;
+  var warn = S.warn ? '<div style="margin-top:14px;padding:15px 17px;background:#fdf7e9;border:1px solid #e8d5a3;border-radius:14px;animation:qFade .22s ease">' +
+      '<p style="margin:0 0 12px;font-size:14px;line-height:1.55;color:#6b5620">'+blank+(blank===1?' questão ainda está em branco.':' questões ainda estão em branco.')+' Você pode voltar nelas ou finalizar assim mesmo.</p>' +
+      '<div style="display:flex;flex-wrap:wrap;gap:8px">' +
+        '<button type="button" data-act="gotoBlank" style="background:#121a2b;color:#f5f3ef;border:0;border-radius:9px;padding:9px 16px;font-size:13px;font-weight:500;cursor:pointer">Ir para a 1ª em branco</button>' +
+        '<button type="button" data-act="force" style="background:none;color:#6b5620;border:1px solid #e8d5a3;border-radius:9px;padding:9px 16px;font-size:13px;cursor:pointer">Finalizar assim mesmo</button>' +
+      '</div></div>' : '';
+
+  var last = S.i === S.order.length-1;
+  var early = !last && (S.order.length - blank) > 0;
+
+  document.getElementById('stage').innerHTML =
+    '<section style="padding:26px 0 0">' +
+      '<article style="background:#fff;border:1px solid #e4e0d8;border-radius:18px;padding:26px 22px 24px;box-shadow:0 1px 2px rgba(18,26,43,.04),0 12px 28px -18px rgba(18,26,43,.18)">' +
+        '<div style="display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:14px">' +
+          '<div style="'+mono+';font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:#2b57cc">Questão '+pad(S.i+1)+'</div>' +
+          '<div style="'+mono+';font-size:10.5px;letter-spacing:.06em;color:'+sColor+'">'+status+'</div>' +
+        '</div>' +
+        '<h2 style="font-family:\'Newsreader\',Georgia,serif;font-size:22px;line-height:1.42;font-weight:400;letter-spacing:-.012em;margin:0 0 22px;text-wrap:pretty">'+esc(q.question)+'</h2>' +
+        figura(q, 'qfig') +
+        '<div style="display:flex;flex-direction:column;gap:9px">'+opts+'</div>' + expl +
+        (reveal ? chatBox(q, ans===q.correctIndex) : '') +
+      '</article>' + warn +
+      '<div style="display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:18px">' +
+        '<button type="button" data-act="prev" class="h-line" style="background:none;border:1px solid #ddd8ce;border-radius:11px;padding:12px 18px;font-size:14px;cursor:pointer;transition:border-color .15s ease,color .15s ease;color:'+(S.i===0?'#c4bfb4':'#121a2b')+';pointer-events:'+(S.i===0?'none':'auto')+'">← Anterior</button>' +
+        '<div style="display:flex;align-items:center;gap:8px">' +
+          (early ? '<button type="button" data-act="finish" class="h-ink" style="background:none;border:0;padding:12px 6px;'+mono+';font-size:11.5px;letter-spacing:.06em;text-transform:uppercase;color:#8a8578;cursor:pointer;text-decoration:underline;text-underline-offset:3px">Finalizar</button>' : '') +
+          '<button type="button" data-act="next" class="h-darkflat" style="background:#121a2b;color:#f5f3ef;border:0;border-radius:11px;padding:12px 22px;font-size:14px;font-weight:500;cursor:pointer;transition:background .16s ease">'+(last?'Finalizar':'Próxima →')+'</button>' +
+        '</div></div></section>';
+}
+
+/* ── resultado + gabarito comentado ────────────────────────────────────────── */
+function reviewList(){
+  return S.order.map(function(q,n){
+    var a = S.answers[n], ok = a!==null && a===q.correctIndex;
+    return { idx:n, ok:ok, blank:a===null, q:q, a:a };
+  }).filter(function(r){
+    return S.filter==='all' || (S.filter==='wrong'&&!r.ok&&!r.blank) || (S.filter==='right'&&r.ok) || (S.filter==='blank'&&r.blank);
+  });
+}
+
+function renderResult(){
+  var mono = "font-family:'IBM Plex Mono',monospace";
+  var c = counts(), pct = c.total ? Math.round(c.hit/c.total*100) : 0;
+
+  var title='Precisa revisar', msg='Releia o material com atenção e refaça o quiz — as explicações abaixo cobrem cada erro.';
+  if (pct>=90)      { title='Domínio sólido';   msg='Desempenho excelente. Confira as explicações das que escaparam e siga em frente.'; }
+  else if (pct>=70) { title='Bom desempenho';   msg='Base consistente. Revise os pontos errados abaixo para fechar as lacunas.'; }
+  else if (pct>=50) { title='Meio do caminho';  msg='Você acertou o essencial, mas há lacunas. Comece pelo filtro de erradas.'; }
+
+  var stat = function(v,l,color){
+    return '<div style="background:#faf9f6;padding:14px 10px">' +
+      '<div style="'+mono+';font-size:19px;font-weight:500;color:'+color+'">'+v+'</div>' +
+      '<div style="'+mono+';font-size:9.5px;letter-spacing:.09em;text-transform:uppercase;color:#8a8578;margin-top:2px">'+l+'</div></div>';
+  };
+
+  var fdefs = [['all','Todas',c.total],['wrong','Erradas',c.miss],['right','Certas',c.hit],['blank','Em branco',c.blank]];
+  var filters = fdefs.map(function(f){
+    var on = S.filter===f[0];
+    return '<button type="button" data-act="filter" data-k="'+f[0]+'" class="h-line" style="border-radius:99px;padding:8px 14px;font-size:13px;cursor:pointer;transition:all .15s ease;border:1px solid '+(on?'#121a2b':'#ddd8ce')+';background:'+(on?'#121a2b':'transparent')+';color:'+(on?'#f5f3ef':'#5b6478')+'">'+f[1]+' '+f[2]+'</button>';
+  }).join('');
+
+  var list = reviewList();
+  var allOpen = list.length>0 && list.every(function(r){ return S.open[r.idx]; });
+
+  var cards = list.map(function(r){
+    var numBg='#f0ede7', numFg='#8a8578';
+    if (!r.blank) { if (r.ok) { numBg='#e3f0e8'; numFg='#1f5c3e'; } else { numBg='#fbe6e2'; numFg='#8f2f25'; } }
+    var open = !!S.open[r.idx];
+    var body = '';
+    if (open) {
+      var opts = r.q.options.map(function(text,n){
+        var isC = n===r.q.correctIndex, isMine = n===r.a;
+        var bd='#eeebe4', bg='#fbfaf8', fg='#5b6478', bBg='#f0ede7', bFg='#8a8578', tag='', tBg='', tFg='';
+        if (isC)            { bd='#bcdcc9'; bg='#eef7f1'; fg='#1f5c3e'; bBg='#2e7d55'; bFg='#fff'; tag='Correta'; tBg='#d9ede1'; tFg='#1f5c3e'; }
+        if (isMine && !isC) { bd='#eec4bd'; bg='#fdf0ee'; fg='#8f2f25'; bBg='#c04437'; bFg='#fff'; tag='Sua resposta'; tBg='#f7ddd8'; tFg='#8f2f25'; }
+        if (isMine && isC)  { tag='Sua resposta ✓'; }
+        return '<div style="display:flex;gap:11px;align-items:flex-start;padding:11px 13px;border-radius:11px;font-size:14px;line-height:1.5;border:1px solid '+bd+';background:'+bg+';color:'+fg+'">' +
+          '<span style="flex-shrink:0;width:21px;height:21px;border-radius:6px;display:flex;align-items:center;justify-content:center;'+mono+';font-size:10.5px;font-weight:600;background:'+bBg+';color:'+bFg+'">'+LETTERS[n]+'</span>' +
+          '<span style="flex:1;min-width:0;text-wrap:pretty">'+esc(text)+'</span>' +
+          (tag ? '<span style="flex-shrink:0;'+mono+';font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;padding:3px 7px;border-radius:6px;margin-top:1px;background:'+tBg+';color:'+tFg+'">'+tag+'</span>' : '') +
+          '</div>';
+      }).join('');
+      body = '<div style="padding:2px 15px 18px;animation:qDrawer .2s ease">' +
+        '<div style="height:1px;background:#eeebe4;margin:0 0 16px"></div>' +
+        '<p style="font-family:\'Newsreader\',Georgia,serif;font-size:18px;line-height:1.5;margin:0 0 16px;text-wrap:pretty">'+esc(r.q.question)+'</p>' +
+        figura(r.q) +
+        '<div style="display:flex;flex-direction:column;gap:7px">'+opts+'</div>' +
+        '<div style="margin-top:16px;padding:14px 16px;background:#f7f6f2;border-left:2.5px solid #2b57cc;border-radius:0 11px 11px 0">' +
+          '<div style="'+mono+';font-size:9.5px;letter-spacing:.16em;text-transform:uppercase;color:#2b57cc;margin-bottom:7px">Por quê</div>' +
+          '<p style="margin:0;font-size:14px;line-height:1.65;color:#39404f;text-wrap:pretty">'+esc(r.q.explanation)+'</p></div>' +
+        '<button type="button" data-act="jump" data-n="'+r.idx+'" style="margin-top:14px;background:none;border:0;padding:0;'+mono+';font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:#2b57cc;cursor:pointer;text-decoration:underline;text-underline-offset:3px">Abrir no quiz →</button></div>';
+    }
+    return '<div style="background:#fff;border:1px solid '+(open?'#c9c3b6':'#e4e0d8')+';border-radius:14px;overflow:hidden;transition:border-color .15s ease">' +
+      '<button type="button" data-act="toggle" data-n="'+r.idx+'" style="display:flex;align-items:center;gap:12px;width:100%;text-align:left;background:none;border:0;padding:14px 15px;cursor:pointer">' +
+        '<span style="flex-shrink:0;width:28px;height:28px;border-radius:8px;display:flex;align-items:center;justify-content:center;'+mono+';font-size:12px;font-weight:600;background:'+numBg+';color:'+numFg+'">'+pad(r.idx+1)+'</span>' +
+        '<span style="flex:1;min-width:0;font-size:14px;line-height:1.45;color:#39404f;overflow:hidden;text-overflow:ellipsis;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical">'+esc(r.q.question)+'</span>' +
+        '<span style="flex-shrink:0;'+mono+';font-size:16px;color:#8a8578;width:16px;text-align:center">'+(open?'−':'+')+'</span>' +
+      '</button>' + body + '</div>';
+  }).join('');
+
+  document.getElementById('stage').innerHTML =
+    '<section style="padding:34px 0 0;animation:qFade .3s ease">' +
+      '<div style="'+mono+';font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:#2b57cc;margin-bottom:14px">Resultado</div>' +
+      '<h2 style="font-family:\'Newsreader\',Georgia,serif;font-size:36px;line-height:1.12;font-weight:400;letter-spacing:-.025em;margin:0 0 8px">'+title+'</h2>' +
+      '<p style="font-size:15px;line-height:1.6;color:#5b6478;margin:0 0 24px;max-width:48ch;text-wrap:pretty">'+msg+'</p>' +
+      '<div style="height:8px;border-radius:99px;background:#e4e0d8;overflow:hidden;margin-bottom:10px">' +
+        '<div style="height:100%;border-radius:99px;background:#121a2b;transition:width .7s cubic-bezier(.22,1,.36,1);width:'+pct+'%"></div></div>' +
+      '<div style="display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:#e4e0d8;border:1px solid #e4e0d8;border-radius:14px;overflow:hidden;margin-bottom:34px">' +
+        stat(c.hit,'Certas','#2e7d55')+stat(c.miss,'Erradas','#c04437')+stat(c.blank,'Branco','#8a8578')+stat(pct+'%','Aproveit.','#2b57cc') +
+      '</div>' +
+      '<div style="display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-bottom:14px">' +
+        '<h3 style="font-family:\'Newsreader\',Georgia,serif;font-size:22px;font-weight:500;letter-spacing:-.015em;margin:0">Gabarito comentado</h3>' +
+        '<button type="button" data-act="toggleAll" class="h-ink" style="background:none;border:0;padding:6px 0;'+mono+';font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:#5b6478;cursor:pointer;text-decoration:underline;text-underline-offset:3px">'+(allOpen?'Recolher tudo':'Expandir tudo')+'</button>' +
+      '</div>' +
+      '<div style="display:flex;gap:7px;flex-wrap:wrap;margin-bottom:16px">'+filters+'</div>' +
+      '<div style="display:flex;flex-direction:column;gap:8px">'+cards+'</div>' +
+      (list.length===0 ? '<div style="padding:38px 16px;text-align:center;color:#8a8578;font-size:14px;border:1px dashed #ddd8ce;border-radius:14px">Nenhuma questão neste filtro.</div>' : '') +
+      '<div style="display:flex;flex-wrap:wrap;gap:9px;margin-top:28px;padding-top:24px;border-top:1px solid #e4e0d8">' +
+        '<button type="button" data-act="restart" class="h-darkflat" style="background:#121a2b;color:#f5f3ef;border:0;border-radius:11px;padding:13px 24px;font-size:14px;font-weight:500;cursor:pointer;transition:background .16s ease">Refazer o quiz</button>' +
+        '<button type="button" data-act="back" class="h-line" style="background:none;border:1px solid #ddd8ce;border-radius:11px;padding:13px 22px;font-size:14px;cursor:pointer;transition:border-color .15s ease">Voltar às questões</button>' +
+        '<button type="button" data-act="resumo" class="h-line" style="background:none;border:1px solid #ddd8ce;border-radius:11px;padding:13px 22px;font-size:14px;cursor:pointer;transition:border-color .15s ease">Ler o resumo</button>' +
+      '</div></section>';
+}
+
+/* ── render + eventos ──────────────────────────────────────────────────────── */
+
+/* ─── Tutor DeepSeek — só local, só quando a questão foi errada ──────────────
+   A chave vem de ../deepseek_key.js, que não existe na versão publicada: online
+   o arquivo dá 404, dsOn() vira false e o chat simplesmente não é renderizado.
+   O histórico fica em S.chat[idDaQuestao] e sobrevive ao re-render do stage. */
+var DS_MODEL = 'deepseek-flash';
+var DS_URL   = 'https://api.deepseek.com/chat/completions';
+var NLJS     = String.fromCharCode(10);
+var DS_MONO  = "font-family:'IBM Plex Mono',monospace";
+var DS_SANS  = "font-family:'IBM Plex Sans',system-ui,sans-serif";
+
+function dsOn(){ return typeof window.DEEPSEEK_KEY === 'string' && window.DEEPSEEK_KEY.length > 10; }
+
+
+/* ─── markdown do chat ───────────────────────────────────────────────────────
+   O modelo responde em markdown (**negrito**, listas, `codigo`, tabelas). O texto
+   vem de fora, entao a ordem importa: ESCAPA TUDO primeiro com esc() e so depois
+   aplica formatacao — assim nenhuma tag vinda da resposta vira HTML de verdade.
+   Como esc() ja trocou > por &gt;, a citacao casa com &gt; e nao com >.
+   Trechos de codigo saem de cena por um marcador NUL, que nao pode existir
+   no texto escapado, e voltam no fim — assim ` ` protege o que esta dentro. */
+function mdIn(t){
+  var Z = String.fromCharCode(0), codes = [];
+  t = t.replace(/`([^`]+)`/g, function(_, c){
+    codes.push(c);
+    return Z + 'c' + (codes.length - 1) + Z;
+  });
+  t = t.replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>');
+  t = t.replace(/__([^_]+)__/g, '<strong>$1</strong>');
+  t = t.replace(/(^|[\s(])\*([^*\n]+)\*/g, '$1<em>$2</em>');
+  t = t.replace(/(^|[\s(])_([^_\n]+)_/g, '$1<em>$2</em>');
+  t = t.replace(/\[([^\]]+)\]\((https?:\/\/[^)\s]+)\)/g,
+    '<a href="$2" target="_blank" rel="noopener" style="color:#2b57cc">$1</a>');
+  return t.replace(new RegExp(Z + 'c([0-9]+)' + Z, 'g'), function(_, i){
+    return '<code style="' + DS_MONO + ';font-size:12px;background:#f2efe9;' +
+           'border-radius:4px;padding:1px 5px">' + codes[i] + '</code>';
+  });
+}
+
+function mdChat(txt){
+  var Z = String.fromCharCode(0);
+  var t = esc(String(txt == null ? '' : txt));
+  var blocos = [];
+  t = t.replace(/```[a-zA-Z]*\n?([\s\S]*?)```/g, function(_, c){
+    blocos.push(c.replace(/\n+$/, ''));
+    return Z + 'b' + (blocos.length - 1) + Z;
+  });
+
+  var linhas = t.split('\n'), out = [], lista = null, par = [];
+  function fechaLista(){ if (lista) { out.push('</' + lista + '>'); lista = null; } }
+  function fechaPar(){
+    if (par.length) { out.push('<p style="margin:0 0 9px">' + mdIn(par.join(' ')) + '</p>'); par = []; }
+  }
+  function fecha(){ fechaPar(); fechaLista(); }
+
+  for (var i = 0; i < linhas.length; i++){
+    var l = linhas[i], t2 = l.trim();
+    if (!t2) { fecha(); continue; }
+
+    var bl = t2.match(new RegExp('^' + Z + 'b([0-9]+)' + Z + '$'));
+    if (bl) {
+      fecha();
+      out.push('<pre style="margin:0 0 9px;padding:9px 11px;background:#f7f6f2;border-radius:9px;' +
+               'overflow-x:auto;' + DS_MONO + ';font-size:12px;line-height:1.5">' + blocos[bl[1]] + '</pre>');
+      continue;
+    }
+
+    // tabela: linha com | ... | seguida da separadora | --- | --- |
+    if (t2.charAt(0) === '|' && i + 1 < linhas.length && /^\|[\s:|-]+\|$/.test(linhas[i+1].trim())) {
+      fecha();
+      var celulas = function(linha){
+        return linha.trim().replace(/^\||\|$/g, '').split('|').map(function(c){ return mdIn(c.trim()); });
+      };
+      var cab = celulas(t2), corpo = [];
+      i += 2;
+      while (i < linhas.length && linhas[i].trim().charAt(0) === '|') { corpo.push(celulas(linhas[i].trim())); i++; }
+      i--;
+      var cel = 'padding:5px 9px;border-bottom:1px solid #eae6de;text-align:left;vertical-align:top';
+      out.push('<div style="overflow-x:auto;margin:0 0 9px">' +
+        '<table style="border-collapse:collapse;font-size:12.5px;width:100%">' +
+        '<thead><tr>' + cab.map(function(c){ return '<th style="' + cel + ';font-weight:600">' + c + '</th>'; }).join('') + '</tr></thead>' +
+        '<tbody>' + corpo.map(function(r){
+          return '<tr>' + r.map(function(c){ return '<td style="' + cel + '">' + c + '</td>'; }).join('') + '</tr>';
+        }).join('') + '</tbody></table></div>');
+      continue;
+    }
+
+    var h = t2.match(/^#{1,6}\s+(.*)$/);
+    if (h) {
+      fecha();
+      out.push('<div style="font-weight:600;color:#121a2b;margin:11px 0 5px">' + mdIn(h[1]) + '</div>');
+      continue;
+    }
+
+    if (/^(---+|\*\*\*+)$/.test(t2)) {
+      fecha();
+      out.push('<hr style="border:0;border-top:1px solid #eae6de;margin:11px 0">');
+      continue;
+    }
+
+    var cit = t2.match(/^&gt;\s?(.*)$/);
+    if (cit) {
+      fecha();
+      out.push('<div style="margin:0 0 9px;padding:7px 11px;border-left:2.5px solid #c9d6f7;' +
+               'background:#f7f9fe;border-radius:0 7px 7px 0">' + mdIn(cit[1]) + '</div>');
+      continue;
+    }
+
+    var mUl = t2.match(/^[-*•]\s+(.*)$/);
+    var mOl = t2.match(/^\d+[.)]\s+(.*)$/);
+    if (mUl || mOl) {
+      var tipo = mUl ? 'ul' : 'ol';
+      fechaPar();
+      if (lista !== tipo) {
+        fechaLista();
+        out.push('<' + tipo + ' style="margin:0 0 9px;padding-left:19px">');
+        lista = tipo;
+      }
+      out.push('<li style="margin:3px 0">' + mdIn((mUl || mOl)[1]) + '</li>');
+      continue;
+    }
+
+    fechaLista();
+    par.push(t2);
+  }
+  fecha();
+  return out.join('');
+}
+
+function msgHTML(m){
+  if (m.role === 'user')
+    return '<div style="margin:0 0 10px;text-align:right">' +
+      '<span style="display:inline-block;max-width:88%;text-align:left;background:#f2efe9;' +
+      'border-radius:12px 12px 3px 12px;padding:9px 12px;font-size:13.5px;line-height:1.6;' +
+      'color:#39404f;text-wrap:pretty">' + esc(m.content) + '</span></div>';
+  return '<div style="margin:0 0 12px">' +
+    '<div style="' + DS_MONO + ';font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;' +
+    'color:#2b57cc;margin-bottom:4px">DeepSeek</div>' +
+    '<div style="font-size:13.5px;line-height:1.65;color:#39404f;text-wrap:pretty">' +
+    mdChat(m.content) + '</div></div>';
+}
+
+function chatBox(q, acertou){
+  if (!dsOn()) return '';
+  var chamada = acertou ? 'Quer ir mais fundo?' : 'Ainda com dúvida?';
+  var dica = acertou ? 'Por que as outras estão erradas?' : 'Por que a que eu marquei está errada?';
+  var hist = (S.chat[q.id] || []).map(msgHTML).join('');
+  return '<div id="ds" data-qid="' + q.id + '" style="margin-top:14px;border:1px solid #e4e0d8;' +
+      'border-radius:14px;background:#fff;overflow:hidden;animation:qFade .26s ease">' +
+      '<div style="display:flex;align-items:center;gap:8px;padding:11px 15px;' +
+        'border-bottom:1px solid #f0ede6;background:#faf9f6">' +
+        '<span style="' + DS_MONO + ';font-size:10px;letter-spacing:.16em;text-transform:uppercase;' +
+        'color:#2b57cc">' + chamada + '</span>' +
+        '<span style="font-size:12px;color:#8a8578">pergunte ao DeepSeek</span></div>' +
+      '<div id="dsLog" style="max-height:280px;overflow-y:auto;padding:' + (hist ? '12px 15px' : '0') + '">' +
+        hist + '</div>' +
+      '<div style="display:flex;gap:8px;padding:11px 12px;border-top:1px solid #f0ede6">' +
+        '<input id="dsIn" type="text" autocomplete="off" ' +
+          'placeholder="' + dica + '" ' +
+          'style="flex:1;min-width:0;border:1px solid #e4e0d8;border-radius:10px;padding:10px 12px;' +
+          'font-size:13.5px;' + DS_SANS + ';color:#121a2b;background:#fff;outline:none">' +
+        '<button type="button" data-act="dsSend" class="h-darkflat" style="flex-shrink:0;' +
+          'background:#121a2b;color:#f5f3ef;border:0;border-radius:10px;padding:10px 16px;' +
+          'font-size:13px;font-weight:500;cursor:pointer;transition:background .16s ease">Enviar</button>' +
+      '</div></div>';
+}
+
+function dsContexto(q, ans){
+  var alts = q.options.map(function(o, n){ return LETTERS[n] + ') ' + o; }).join(NLJS);
+  return 'Questao: ' + q.question + NLJS + alts + NLJS +
+    'Resposta correta: ' + LETTERS[q.correctIndex] + ') ' + q.options[q.correctIndex] + NLJS +
+    'O estudante marcou: ' + (ans === null ? 'nada' : LETTERS[ans] + ') ' + q.options[ans]) + NLJS +
+    'Explicacao que ele ja tem: ' + q.explanation;
+}
+
+A.dsSend = function(){
+  var box = document.getElementById('ds');
+  if (!box || !dsOn() || box.getAttribute('data-busy')) return;
+  var input = document.getElementById('dsIn'), log = document.getElementById('dsLog');
+  var texto = (input.value || '').trim();
+  if (!texto) return;
+
+  var qid = parseInt(box.getAttribute('data-qid'), 10), q = null, ans = null;
+  for (var i = 0; i < S.order.length; i++)
+    if (S.order[i].id === qid) { q = S.order[i]; ans = S.answers[i]; }
+  if (!q) return;
+
+  S.chat[qid] = S.chat[qid] || [];
+  S.chat[qid].push({ role:'user', content:texto });
+  input.value = '';
+  log.style.padding = '12px 15px';
+  log.insertAdjacentHTML('beforeend', msgHTML({ role:'user', content:texto }));
+  log.insertAdjacentHTML('beforeend',
+    '<div><div style="' + DS_MONO + ';font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;' +
+    'color:#2b57cc;margin-bottom:4px">DeepSeek</div>' +
+    '<div id="dsTxt" style="font-size:13.5px;line-height:1.65;color:#8a8578;' +
+    'text-wrap:pretty">pensando…</div></div>');
+  log.scrollTop = log.scrollHeight;
+  box.setAttribute('data-busy', '1');
+
+  var acertou = (ans === q.correctIndex);
+  var situacao = acertou
+    ? 'Voce e um tutor de medicina. O estudante do 7o semestre ACERTOU esta questao, mas ficou com uma duvida. '
+    : 'Voce e um tutor de medicina. O estudante do 7o semestre ERROU esta questao. ';
+  var msgs = [
+    { role:'system', content: situacao +
+      'Responda em portugues do Brasil, direto ao ponto, no maximo 150 palavras. ' +
+      'Traga o dado concreto (valor, criterio, mecanismo) em vez de generalidade. ' +
+      'Nao repita a explicacao que ele ja tem; foque na duvida que ele trouxe.' },
+    { role:'user', content: dsContexto(q, ans) }
+  ];
+  var h = S.chat[qid];
+  for (var j = 0; j < h.length; j++) msgs.push({ role:h[j].role, content:h[j].content });
+
+  dsStream(msgs, function(txt, fim, erro){
+    var el = document.getElementById('dsTxt');
+    if (!el) { box.removeAttribute('data-busy'); return; }
+    if (erro) { el.style.color = '#c04437'; el.textContent = erro; box.removeAttribute('data-busy'); return; }
+    el.style.color = '#39404f';
+    el.innerHTML = mdChat(txt);
+    var lg = document.getElementById('dsLog'); if (lg) lg.scrollTop = lg.scrollHeight;
+    if (fim) { el.removeAttribute('id'); S.chat[qid].push({ role:'assistant', content:txt }); box.removeAttribute('data-busy'); }
+  });
+};
+
+function dsStream(messages, cb){
+  var acc = '';
+  fetch(DS_URL, {
+    method: 'POST',
+    headers: { 'Content-Type':'application/json', 'Authorization':'Bearer ' + window.DEEPSEEK_KEY },
+    body: JSON.stringify({ model:DS_MODEL, messages:messages, stream:true, max_tokens:1200, temperature:0.3 })
+  }).then(function(r){
+    if (!r.ok) return r.text().then(function(t){
+      throw new Error(
+        r.status === 401 ? 'Chave recusada (401). Confira o deepseek_key.js.' :
+        r.status === 402 ? 'Sem saldo na conta DeepSeek (402).' :
+        r.status === 429 ? 'Limite de uso atingido (429). Tente daqui a pouco.' :
+        'Erro ' + r.status + ': ' + String(t).slice(0, 120));
+    });
+    var reader = r.body.getReader(), dec = new TextDecoder(), buf = '';
+    (function pump(){
+      return reader.read().then(function(res){
+        if (res.done) { cb(acc || '(resposta vazia)', true); return; }
+        buf += dec.decode(res.value, { stream:true });
+        var linhas = buf.split(NLJS);
+        buf = linhas.pop();
+        for (var i = 0; i < linhas.length; i++){
+          var l = linhas[i].trim();
+          if (l.indexOf('data:') !== 0) continue;
+          var carga = l.slice(5).trim();
+          if (carga === '[DONE]') continue;
+          try {
+            var d = JSON.parse(carga).choices[0].delta;
+            if (d && d.content) { acc += d.content; cb(acc, false); }
+          } catch (_){}
+        }
+        return pump();
+      });
+    })();
+  }).catch(function(e){
+    cb('', true, 'Nao consegui falar com o DeepSeek: ' + (e && e.message ? e.message : e));
+  });
+}
+
+function render(){
+  renderHeader();
+  if (S.view === 'home')        renderHome();
+  else if (S.view === 'resumo') renderResumo();
+  else if (S.finished)          renderResult();
+  else                          renderQuestion();
+}
+
+/* lightbox: clique em qualquer figura amplia */
+document.addEventListener('click', function(e){
+  var lb = document.getElementById('lb');
+  if (e.target.closest('#lb')) { lb.className = ''; return; }
+  var img = e.target.closest('.fig img');
+  if (img) { lb.firstElementChild.src = img.src; lb.className = 'on'; }
+});
+window.addEventListener('keydown', function(e){
+  if (e.key === 'Escape') document.getElementById('lb').className = '';
+});
+
+document.addEventListener('click', function(e){
+  var b = e.target.closest('[data-act]'); if (!b) return;
+  var act = b.getAttribute('data-act'), n = parseInt(b.getAttribute('data-n'),10), k = b.getAttribute('data-k');
+  if (act==='pick'||act==='jump'||act==='toggle') A[act](n);
+  else if (act==='filter') A.filter(k);
+  else if (A[act]) A[act]();
+});
+
+window.addEventListener('keydown', function(e){
+  if (S.view!=='quiz' || !S.started || S.finished) return;
+  var t = e.target, tag = t && t.tagName;
+  if (tag==='INPUT' || tag==='TEXTAREA' || (t && t.isContentEditable)) return;
+  if (e.metaKey||e.ctrlKey||e.altKey) return;
+  if (e.key==='ArrowRight')     { e.preventDefault(); A.go(S.i+1); }
+  else if (e.key==='ArrowLeft') { e.preventDefault(); A.go(S.i-1); }
+  else if (e.key==='Enter')     { e.preventDefault(); A.next(); }
+  else if (/^[1-6]$/.test(e.key)) {
+    var n = parseInt(e.key,10)-1;
+    if (n < S.order[S.i].options.length) A.pick(n);
+  }
+});
+
+render();
+</script>
+</body>
+</html>

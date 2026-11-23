@@ -1,0 +1,217 @@
+{
+  "titulo": "Esquizofrenia e Outras Psicoses",
+  "eyebrow": "Psiquiatria · Referência",
+  "subtitulo": "Do critério A à clozapina: diagnosticar, diferenciar e tratar a psicose",
+  "intro": "Critérios e régua do tempo das psicoses, sintomas positivos, negativos e de Schneider, prognóstico e antipsicóticos com seus efeitos adversos. Baseado no DSM-5-TR — não há slide da aula deste tema.",
+  "questoes": [
+    {
+      "question": "Homem de 23 anos isolou-se dos amigos e abandonou a faculdade há oito meses. Há seis semanas passou a ouvir vozes que comentam seus atos, acredita que os vizinhos implantaram um chip em sua cabeça e tem discurso desorganizado. Toxicológico negativo e exames clínicos normais. Qual o diagnóstico?",
+      "options": [
+        "Esquizofrenia, pois a perturbação já dura mais de seis meses",
+        "Transtorno esquizofreniforme, pois a fase ativa durou seis semanas",
+        "Transtorno psicótico breve, pois os delírios começaram há pouco",
+        "Transtorno delirante, pois há delírio persecutório bem sistematizado"
+      ],
+      "correctIndex": 0,
+      "explanation": "Esquizofrenia exige 2 ou mais sintomas do critério A por 1 mês (fase ativa) e sinais contínuos por pelo menos 6 meses, somando pródromo e fase residual, com queda do funcionamento. Aqui há oito meses de pródromo mais seis semanas de fase ativa; no esquizofreniforme é a duração TOTAL que fica entre 1 e 6 meses."
+    },
+    {
+      "question": "Pelo DSM-5-TR, para preencher o critério A da esquizofrenia são necessários 2 ou mais sintomas entre 5. Dos sintomas presentes, ao menos um precisa ser:",
+      "options": [
+        "Delírio, alucinação ou discurso desorganizado",
+        "Sintoma negativo ou comportamento catatônico",
+        "Sintoma de primeira ordem de Kurt Schneider",
+        "Alucinação auditiva com vozes que comentam os atos"
+      ],
+      "correctIndex": 0,
+      "explanation": "O critério A pede 2 ou mais de 5 sintomas (delírio, alucinação, discurso desorganizado, comportamento grosseiramente desorganizado ou catatônico, sintomas negativos) por parte significativa de 1 mês, sendo ao menos um dos três primeiros. O DSM-5 retirou o peso especial que o DSM-IV dava ao delírio bizarro e às vozes que comentam."
+    },
+    {
+      "question": "Paciente apresenta delírios, alucinações e discurso desorganizado, com quadro que durou três meses no total e remissão completa com antipsicótico. Qual o diagnóstico?",
+      "options": [
+        "Transtorno esquizofreniforme",
+        "Transtorno psicótico breve",
+        "Esquizofrenia de início agudo",
+        "Transtorno esquizoafetivo"
+      ],
+      "correctIndex": 0,
+      "explanation": "A régua do tempo separa os três: psicótico breve dura de 1 dia a menos de 1 mês, com retorno pleno ao funcionamento prévio; esquizofreniforme, de 1 a menos de 6 meses (sem exigir queda funcional); esquizofrenia, 6 meses ou mais. O esquizoafetivo exige episódio de humor maior."
+    },
+    {
+      "question": "Mulher de 29 anos, dez dias após a morte súbita do marido, passa a acreditar que está sendo perseguida e a ouvir vozes ameaçadoras. Em duas semanas os sintomas desaparecem por completo e ela retoma o trabalho. Qual o diagnóstico?",
+      "options": [
+        "Transtorno psicótico breve, com estressor evidente",
+        "Transtorno esquizofreniforme de bom prognóstico",
+        "Transtorno de luto prolongado com psicose",
+        "Transtorno de estresse agudo com dissociação"
+      ],
+      "correctIndex": 0,
+      "explanation": "Psicótico breve é 1 ou mais sintomas psicóticos (com delírio, alucinação ou discurso desorganizado entre eles) por pelo menos 1 dia e menos de 1 mês, com retorno completo ao nível pré-mórbido; aqui cabe o especificador 'com estressor evidente'. Luto prolongado exige 12 meses após a perda no adulto."
+    },
+    {
+      "question": "Homem de 35 anos tem episódios maníacos e depressivos há dez anos. Mesmo nos períodos de humor normal, mantém por meses delírio persecutório e alucinações auditivas. Os sintomas de humor ocupam a maior parte do tempo da doença. Qual o diagnóstico?",
+      "options": [
+        "Transtorno esquizoafetivo do tipo bipolar",
+        "Transtorno bipolar tipo I com psicose",
+        "Esquizofrenia com depressão pós-psicótica",
+        "Transtorno delirante com episódios de humor"
+      ],
+      "correctIndex": 0,
+      "explanation": "Esquizoafetivo: episódio de humor maior concomitante ao critério A, delírios ou alucinações por 2 semanas ou mais SEM episódio de humor, e sintomas de humor presentes na maior parte da duração total. No bipolar com sintomas psicóticos, a psicose só aparece dentro dos episódios de humor."
+    },
+    {
+      "question": "Mulher de 52 anos está convicta há dois anos de que o marido a trai, apesar de não haver evidência. Vasculha o celular dele e o segue. Trabalha normalmente, não tem alucinações, o discurso é organizado e não há sintomas negativos. Qual o diagnóstico?",
+      "options": [
+        "Transtorno delirante do tipo ciúme",
+        "Esquizofrenia com delírio de ciúme",
+        "Transtorno de personalidade paranoide",
+        "Transtorno obsessivo-compulsivo"
+      ],
+      "correctIndex": 0,
+      "explanation": "Transtorno delirante: 1 ou mais delírios por pelo menos 1 mês, sem nunca preencher o critério A da esquizofrenia, com funcionamento preservado fora do tema delirante e comportamento não bizarro. Tipos: erotomaníaco, grandioso, ciúme, persecutório, somático e misto. Na personalidade paranoide há desconfiança difusa, não um delírio fixo."
+    },
+    {
+      "question": "Qual das manifestações abaixo é um sintoma de primeira ordem de Kurt Schneider?",
+      "options": [
+        "Sensação de que os pensamentos são retirados da mente",
+        "Alucinação visual de pequenos animais andando no quarto",
+        "Delírio de grandeza, com crença em poderes especiais",
+        "Afeto embotado com pobreza de conteúdo do discurso"
+      ],
+      "correctIndex": 0,
+      "explanation": "Os sintomas de primeira ordem são: sonorização do pensamento, vozes que dialogam ou discutem, vozes que comentam os atos, vivências de influência corporal, roubo, inserção e difusão do pensamento, vivências de influência na vontade, nos sentimentos e nos impulsos, e percepção delirante. Sugerem esquizofrenia, mas não são patognomônicos: aparecem na mania e em psicoses orgânicas."
+    },
+    {
+      "question": "Qual conjunto reúne apenas sintomas negativos da esquizofrenia?",
+      "options": [
+        "Avolição, alogia, anedonia e embotamento afetivo",
+        "Delírio, alucinação, avolição e embotamento afetivo",
+        "Discurso desorganizado, alogia, anedonia e catatonia",
+        "Déficit de memória operacional, alogia e alucinação"
+      ],
+      "correctIndex": 0,
+      "explanation": "Sintomas negativos são perdas: embotamento afetivo, avolição, alogia, anedonia e associalidade. Delírio, alucinação e desorganização são positivos; déficits de atenção, memória operacional e função executiva formam o domínio cognitivo, que melhor prediz o funcionamento e responde pouco aos antipsicóticos."
+    },
+    {
+      "question": "Qual fator se associa a melhor prognóstico na esquizofrenia?",
+      "options": [
+        "Início agudo, com estressor desencadeante claro",
+        "Início precoce e insidioso, ainda na adolescência",
+        "Predomínio de sintomas negativos e cognitivos",
+        "Longa duração da psicose antes do tratamento"
+      ],
+      "correctIndex": 0,
+      "explanation": "Bom prognóstico: início agudo e mais tardio, estressor evidente, bom funcionamento pré-mórbido, sintomas de humor, predomínio de positivos, sexo feminino, boa rede de apoio e tratamento precoce. Início precoce e insidioso, sintomas negativos, longa psicose não tratada, sexo masculino e uso de substâncias pioram."
+    },
+    {
+      "question": "Jovem de 19 anos, após uso intenso de canabinoide sintético, apresenta delírio persecutório e alucinações auditivas, com consciência e atenção preservadas. Em abstinência, os sintomas desaparecem em cinco dias. Qual o diagnóstico?",
+      "options": [
+        "Transtorno psicótico induzido por substância",
+        "Transtorno psicótico breve sem estressor",
+        "Primeiro surto de esquizofrenia de início agudo",
+        "Delirium por intoxicação por canabinoide"
+      ],
+      "correctIndex": 0,
+      "explanation": "Psicose que surge durante ou logo após intoxicação ou abstinência, por substância capaz de causá-la, e que regride com a abstinência é induzida por substância; delirium exigiria alteração de atenção e consciência. Como a cannabis na adolescência é fator de risco para esquizofrenia, o paciente precisa de seguimento."
+    },
+    {
+      "question": "Homem de 24 anos é atendido no primeiro episódio psicótico. Qual conduta faz parte da avaliação inicial?",
+      "options": [
+        "Excluir causas orgânicas e por substância com exames dirigidos",
+        "Iniciar clozapina, por ser o antipsicótico de maior eficácia",
+        "Dispensar exames se houver história familiar de esquizofrenia",
+        "Indicar eletroconvulsoterapia antes de qualquer antipsicótico"
+      ],
+      "correctIndex": 0,
+      "explanation": "No primeiro episódio exclui-se causa secundária: exame físico e neurológico, toxicológico, glicemia, eletrólitos, TSH, funções renal e hepática, sífilis e HIV, e neuroimagem ou EEG se houver sinais atípicos. A clozapina fica reservada à refratariedade."
+    },
+    {
+      "question": "Homem de 20 anos, dois dias após iniciar haloperidol, apresenta torcicolo, protrusão da língua e desvio do olhar para cima. Qual a conduta?",
+      "options": [
+        "Biperideno por via intramuscular",
+        "Dantrolene por via intravenosa",
+        "Aumentar a dose do haloperidol",
+        "Propranolol oral em dose baixa"
+      ],
+      "correctIndex": 0,
+      "explanation": "Distonia aguda (torcicolo, crise oculógira, protrusão de língua) surge em horas a dias após antipsicótico de alta potência, mais em homens jovens, e responde em minutos a anticolinérgico (biperideno IM) ou anti-histamínico. Propranolol é para acatisia; dantrolene, para síndrome neuroléptica maligna."
+    },
+    {
+      "question": "Paciente em uso de aripiprazol refere inquietação interna intensa, não consegue ficar sentado e marcha no mesmo lugar durante a consulta. Qual a interpretação e a conduta?",
+      "options": [
+        "Acatisia; reduzir a dose e considerar propranolol",
+        "Agitação psicótica; aumentar a dose do antipsicótico",
+        "Discinesia tardia; associar biperideno de manutenção",
+        "Síndrome serotoninérgica; suspender e dar ciproeptadina"
+      ],
+      "correctIndex": 0,
+      "explanation": "Acatisia é inquietação subjetiva e motora, comum com aripiprazol e típicos de alta potência. Confundi-la com agitação e subir a dose piora o quadro; maneja-se reduzindo ou trocando o fármaco, com propranolol ou benzodiazepínico."
+    },
+    {
+      "question": "Mulher de 65 anos, em uso de haloperidol há dez anos, desenvolve movimentos involuntários de mastigação, protrusão da língua e caretas. Qual afirmação é correta?",
+      "options": [
+        "Anticolinérgicos não ajudam e podem piorar o quadro",
+        "Responde bem a biperideno, como a distonia aguda",
+        "É sempre reversível com a suspensão do antipsicótico",
+        "Indica aumento da dose do haloperidol para controle"
+      ],
+      "correctIndex": 0,
+      "explanation": "Discinesia tardia surge após meses a anos de antagonista dopaminérgico, com movimentos orofaciais involuntários, mais em idosos e mulheres, e pode ser irreversível. Anticolinérgicos não tratam e podem piorar; reduz-se ou troca-se o fármaco, com clozapina como opção. Subir o típico mascara o quadro por um tempo, mas o agrava."
+    },
+    {
+      "question": "Homem de 30 anos recebeu várias doses de haloperidol intramuscular. No dia seguinte tem febre de 40 °C, rigidez em cano de chumbo, confusão, pressão arterial lábil e CPK de 15.000 U/L. Qual o diagnóstico e a primeira conduta?",
+      "options": [
+        "Síndrome neuroléptica maligna; suspender o antipsicótico",
+        "Síndrome serotoninérgica; associar ciproeptadina oral",
+        "Catatonia maligna; aumentar a dose do haloperidol",
+        "Meningoencefalite; manter haloperidol e dar antibiótico"
+      ],
+      "correctIndex": 0,
+      "explanation": "Febre, rigidez em cano de chumbo, alteração de consciência, instabilidade autonômica e CPK muito elevada após antagonista dopaminérgico definem SNM, mais comum com típicos de alta potência em doses altas ou rápidas. Conduta: suspender, suporte intensivo, benzodiazepínico, e dantrolene ou bromocriptina nos graves; ECT nos refratários."
+    },
+    {
+      "question": "Paciente com esquizofrenia não respondeu a risperidona nem a olanzapina, usadas em dose e tempo adequados, com boa adesão. Qual o próximo passo e a monitorização obrigatória?",
+      "options": [
+        "Clozapina, com hemograma seriado pelo risco de agranulocitose",
+        "Haloperidol decanoato, com dosagem seriada de prolactina",
+        "Clozapina, com dosagem seriada de enzimas hepáticas",
+        "Quetiapina, com eletrocardiograma seriado pelo QT longo"
+      ],
+      "correctIndex": 0,
+      "explanation": "Refratária é a esquizofrenia sem resposta a pelo menos dois antipsicóticos em dose e tempo adequados; a clozapina é a de eficácia comprovada nesse cenário e também reduz o comportamento suicida. Exige hemograma seriado (semanal nas primeiras 18 semanas, depois mensal) pela agranulocitose; outros riscos: convulsão, miocardite, sialorreia, constipação e ganho de peso."
+    },
+    {
+      "question": "Homem de 28 anos com esquizofrenia é obeso e tem glicemia de jejum alterada. Qual antipsicótico deve ser evitado por ter o maior risco metabólico?",
+      "options": [
+        "Olanzapina",
+        "Aripiprazol",
+        "Ziprasidona",
+        "Haloperidol"
+      ],
+      "correctIndex": 0,
+      "explanation": "Clozapina e olanzapina têm o maior risco metabólico (peso, diabetes, dislipidemia); aripiprazol e ziprasidona, o menor entre os atípicos, e o haloperidol pesa pouco no metabolismo. Todo paciente em antipsicótico precisa de controle de peso, circunferência abdominal, pressão, glicemia e lipídios."
+    },
+    {
+      "question": "Mulher de 25 anos em uso de risperidona desenvolve amenorreia e galactorreia. Qual o mecanismo?",
+      "options": [
+        "Bloqueio D2 na via tuberoinfundibular",
+        "Bloqueio D2 na via nigroestriatal",
+        "Bloqueio D2 na via mesocortical",
+        "Antagonismo 5-HT2A na via mesolímbica"
+      ],
+      "correctIndex": 0,
+      "explanation": "Na via tuberoinfundibular a dopamina inibe a prolactina; bloquear o D2 a libera, com galactorreia, amenorreia, ginecomastia e disfunção sexual. Entre os atípicos, a risperidona é a que mais eleva a prolactina; o aripiprazol, agonista parcial D2, tende a reduzi-la."
+    },
+    {
+      "question": "Paciente com esquizofrenia tem recaídas repetidas porque abandona o comprimido logo após a alta. Qual a estratégia farmacológica mais adequada?",
+      "options": [
+        "Antipsicótico injetável de depósito, de longa ação",
+        "Troca para clozapina oral, pela maior eficácia",
+        "Associação de dois antipsicóticos orais diários",
+        "Suspensão do fármaco e psicoterapia isolada"
+      ],
+      "correctIndex": 0,
+      "explanation": "A má adesão é a principal causa de recaída; o antipsicótico de depósito (haloperidol decanoato, palmitato de paliperidona, aripiprazol de longa ação) garante a dose e torna o abandono visível. Soma-se psicoeducação e intervenção familiar, que reduz a emoção expressa e as recaídas, com acompanhamento no CAPS."
+    }
+  ]
+}

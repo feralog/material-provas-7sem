@@ -1,0 +1,206 @@
+{
+  "titulo": "Tumores Sólidos de Tórax e Abdome",
+  "eyebrow": "Pediatria · Referência",
+  "subtitulo": "Neuroblastoma, Wilms, hepatoblastoma e as massas do mediastino",
+  "intro": "Massa abdominal na criança (neuroblastoma × Wilms, hepatoblastoma), massas mediastinais por compartimento e sinais de alerta para encaminhar. Material de referência (Nelson, INCA, SBP) — não há slide da aula deste tema.",
+  "questoes": [
+    {
+      "question": "Lactente de 14 meses, irritado e emagrecido, apresenta equimoses periorbitárias bilaterais sem história de trauma. Ao exame, massa abdominal endurecida, irregular, que ultrapassa a linha média. Qual é a hipótese mais provável?",
+      "options": [
+        "Neuroblastoma com metástase orbitária",
+        "Tumor de Wilms com hemorragia intratumoral",
+        "Hepatoblastoma com coagulopatia de consumo",
+        "Linfoma de Burkitt com infiltração orbitária"
+      ],
+      "correctIndex": 0,
+      "explanation": "Equimose periorbitária ('olhos de guaxinim') sem trauma, em lactente com massa abdominal irregular que cruza a linha média, é a apresentação clássica do neuroblastoma metastático: a infiltração dos ossos da órbita causa equimose e proptose. O Wilms costuma ser massa lisa, em criança em bom estado geral, que não cruza a linha média."
+    },
+    {
+      "question": "Menino de 3 anos, em bom estado geral, teve uma massa no flanco esquerdo percebida pela mãe durante o banho. A massa é lisa, firme e não cruza a linha média; a pressão arterial está elevada para a idade e a urina mostra hematúria microscópica. Qual é a hipótese principal?",
+      "options": [
+        "Tumor de Wilms (nefroblastoma)",
+        "Neuroblastoma de suprarrenal",
+        "Hepatoblastoma de lobo esquerdo",
+        "Rim multicístico displásico"
+      ],
+      "correctIndex": 0,
+      "explanation": "Massa renal lisa em criança de 2 a 5 anos, em bom estado geral, descoberta pelos pais no banho, com hipertensão (por produção de renina) e hematúria, é o quadro típico do tumor de Wilms. O neuroblastoma tende a ocorrer em criança mais nova e com aspecto doente; o rim multicístico displásico é massa do período neonatal."
+    },
+    {
+      "question": "Na tomografia de uma massa abdominal em criança de 2 anos, qual achado favorece neuroblastoma em vez de tumor de Wilms?",
+      "options": [
+        "Calcificações e englobamento dos grandes vasos",
+        "Sinal da garra a partir do parênquima renal",
+        "Trombo tumoral na veia renal e na cava inferior",
+        "Massa lisa, bem delimitada e de origem renal"
+      ],
+      "correctIndex": 0,
+      "explanation": "O neuroblastoma calcifica na maioria dos casos à tomografia e tende a envolver (englobar) a aorta, a cava e seus ramos. O Wilms nasce do rim (sinal da garra), raramente calcifica, desloca os vasos em vez de englobá-los e pode crescer por dentro da veia renal até a cava inferior."
+    },
+    {
+      "question": "Qual exame laboratorial reforça o diagnóstico de neuroblastoma?",
+      "options": [
+        "Ácido vanilmandélico e homovanílico urinários",
+        "Alfafetoproteína sérica muito elevada",
+        "Beta-hCG sérica e desidrogenase láctica",
+        "Renina plasmática e cortisol urinário"
+      ],
+      "correctIndex": 0,
+      "explanation": "Cerca de 90% dos neuroblastomas produzem catecolaminas, cujos metabólitos — ácido vanilmandélico (VMA) e homovanílico (HVA) — aparecem elevados na urina. A alfafetoproteína é o marcador do hepatoblastoma e dos tumores de saco vitelínico; a renina pode estar alta no Wilms, mas não é marcador diagnóstico."
+    },
+    {
+      "question": "Criança de 18 meses desenvolve, ao longo de semanas, movimentos oculares rápidos, caóticos e multidirecionais, abalos mioclônicos e ataxia. Qual investigação não pode faltar?",
+      "options": [
+        "Pesquisa de neuroblastoma oculto no tórax e abdome",
+        "Eletroencefalograma prolongado para síndrome epiléptica",
+        "Punção lombar com PCR para herpes simples no liquor",
+        "Dosagem de antiestreptolisina O para coreia de Sydenham"
+      ],
+      "correctIndex": 0,
+      "explanation": "Opsoclonia-mioclonia-ataxia ('olhos e pés dançantes') é síndrome paraneoplásica autoimune, e em torno de metade das crianças afetadas tem um neuroblastoma, muitas vezes pequeno e localizado — por isso se procura o tumor com imagem e catecolaminas. O tumor costuma ter bom prognóstico, mas as sequelas neurológicas e cognitivas são frequentes e podem persistir após a ressecção."
+    },
+    {
+      "question": "Menino de 2 anos tem aniridia bilateral, criptorquidia e atraso do desenvolvimento. Qual neoplasia exige vigilância ativa nessa criança?",
+      "options": [
+        "Tumor de Wilms, pela síndrome WAGR (deleção em 11p13)",
+        "Retinoblastoma, pela deleção do gene RB1 em 13q14",
+        "Neuroblastoma, por mutação germinativa em ALK",
+        "Hepatoblastoma, pela polipose adenomatosa familiar"
+      ],
+      "correctIndex": 0,
+      "explanation": "Wilms, Aniridia, anomalias Geniturinárias e Retardo (deficiência intelectual) formam a síndrome WAGR, por deleção em 11p13 que inclui os genes WT1 e PAX6. O risco de Wilms é muito alto, e a criança faz ultrassonografia abdominal periódica para detectar o tumor ainda pequeno."
+    },
+    {
+      "question": "Recém-nascido com macroglossia, onfalocele, hemi-hipertrofia corporal e hipoglicemia neonatal. Qual vigilância oncológica está indicada nos primeiros anos de vida?",
+      "options": [
+        "Ultrassonografia abdominal e alfafetoproteína seriadas",
+        "Radiografia de tórax e catecolaminas urinárias anuais",
+        "Fundoscopia sob midríase a cada consulta de puericultura",
+        "Tomografia de abdome e beta-hCG sérica semestrais"
+      ],
+      "correctIndex": 0,
+      "explanation": "A síndrome de Beckwith-Wiedemann (alteração em 11p15) predispõe a tumores embrionários, sobretudo Wilms e hepatoblastoma. A vigilância usual é ultrassonografia abdominal a cada 3 meses na primeira infância e alfafetoproteína seriada; tomografia repetida exporia a criança à radiação sem ganho."
+    },
+    {
+      "question": "Ao examinar uma criança com massa renal suspeita de tumor de Wilms, qual conduta é correta?",
+      "options": [
+        "Palpar com delicadeza e o mínimo possível, evitando ruptura",
+        "Palpar com firmeza para definir bordas e mobilidade da massa",
+        "Solicitar biópsia percutânea antes de encaminhar ao oncologista",
+        "Repetir a palpação em cada plantão para seguir o crescimento"
+      ],
+      "correctIndex": 0,
+      "explanation": "A cápsula do Wilms é frágil: palpação vigorosa ou repetida pode rompê-la e espalhar células tumorais na cavidade, o que eleva o estadiamento e a intensidade do tratamento. A criança deve ser encaminhada ao centro de oncologia pediátrica sem biópsia nem manipulação desnecessária."
+    },
+    {
+      "question": "Lactente de 15 meses, ex-prematuro de muito baixo peso, tem hepatomegalia dura e indolor à direita, bom estado geral e plaquetas elevadas. Qual exame mais apoia o diagnóstico provável?",
+      "options": [
+        "Alfafetoproteína sérica",
+        "Catecolaminas urinárias",
+        "Beta-hCG sérica isolada",
+        "Sorologia para hepatite B"
+      ],
+      "correctIndex": 0,
+      "explanation": "O hepatoblastoma é o tumor hepático maligno primário mais comum da criança, típico dos três primeiros anos e associado a prematuridade com muito baixo peso, Beckwith-Wiedemann e polipose adenomatosa familiar. A alfafetoproteína está muito elevada na grande maioria dos casos e serve também para o seguimento. Hepatite B se associa ao carcinoma hepatocelular, do escolar e do adolescente."
+    },
+    {
+      "question": "Ao interpretar a alfafetoproteína de um lactente de 2 meses com massa hepática, qual é o cuidado principal?",
+      "options": [
+        "Comparar com a referência da idade, pois ela é alta no neonato",
+        "Descartar o exame, pois a AFP não tem valor antes de 1 ano",
+        "Considerar qualquer valor detectável como prova de tumor",
+        "Substituir a AFP pelo VMA urinário nessa faixa de idade"
+      ],
+      "correctIndex": 0,
+      "explanation": "A alfafetoproteína é fisiologicamente muito alta no recém-nascido e cai progressivamente nos primeiros meses de vida, então só se interpreta pela faixa da idade e pela curva. No seguimento do hepatoblastoma, a queda mostra resposta ao tratamento e uma nova elevação sugere recidiva."
+    },
+    {
+      "question": "Escolar de 9 anos com tosse seca, dispneia ao deitar e edema de face. A radiografia mostra massa no mediastino anterior. Qual é a causa mais provável?",
+      "options": [
+        "Linfoma (linfoblástico T ou Hodgkin)",
+        "Neuroblastoma torácico paravertebral",
+        "Cisto broncogênico do mediastino médio",
+        "Ganglioneuroma do sulco costovertebral"
+      ],
+      "correctIndex": 0,
+      "explanation": "No mediastino anterior ficam os '4 T': timo, teratoma (e demais tumores de células germinativas), tireoide ectópica e o 'terrível linfoma' — na criança e no adolescente, o linfoma é a causa maligna mais frequente e a principal da síndrome da veia cava superior. Tumores neurogênicos (neuroblastoma, ganglioneuroma) ocupam o mediastino posterior; o cisto broncogênico, o médio."
+    },
+    {
+      "question": "Lactente de 10 meses tem, na radiografia de tórax, massa paravertebral no mediastino posterior com calcificações, além de ptose e miose à direita. Qual é a principal hipótese e o risco associado?",
+      "options": [
+        "Neuroblastoma, com risco de invasão do canal medular",
+        "Linfoma, com risco de síndrome da veia cava superior",
+        "Teratoma, com risco de ruptura para o pericárdio",
+        "Timo normal, sem risco, apenas variante anatômica"
+      ],
+      "correctIndex": 0,
+      "explanation": "Massa paravertebral posterior em lactente é tumor neurogênico até prova em contrário, e o neuroblastoma é o principal; o acometimento da cadeia simpática cervicotorácica explica a síndrome de Horner (ptose, miose, anidrose). Esses tumores crescem pelo forame intervertebral ('em haltere') e comprimem a medula: massa posterior faz compressão medular, não síndrome da veia cava."
+    },
+    {
+      "question": "Adolescente com massa volumosa no mediastino anterior e dispneia ao deitar precisa de diagnóstico histológico. Qual é a conduta mais segura?",
+      "options": [
+        "Buscar o diagnóstico pelo meio menos invasivo, sem sedar",
+        "Biopsiar a massa sob anestesia geral em decúbito dorsal",
+        "Fazer tomografia com sedação profunda antes de tudo",
+        "Iniciar corticoide e biopsiar a massa depois de reduzida"
+      ],
+      "correctIndex": 0,
+      "explanation": "Massa mediastinal anterior pode colapsar a via aérea na indução anestésica e no decúbito dorsal. O diagnóstico deve vir do sítio mais acessível — sangue periférico, derrame pleural, medula óssea, linfonodo periférico sob anestesia local — e de alfafetoproteína e beta-hCG para tumor de células germinativas. Corticoide antes da biópsia pode destruir as células do linfoma e impedir o diagnóstico."
+    },
+    {
+      "question": "Lactente de 4 meses com hepatomegalia volumosa, nódulos subcutâneos azulados ('blueberry muffin') e pequena massa suprarrenal, sem lesões ósseas. O que caracteriza esse estágio do neuroblastoma (4S)?",
+      "options": [
+        "Pode regredir espontaneamente, com bom prognóstico",
+        "É o estágio de pior prognóstico entre os neuroblastomas",
+        "Exige quimioterapia intensiva com transplante de medula",
+        "Indica tumor de Wilms bilateral com metástase cutânea"
+      ],
+      "correctIndex": 0,
+      "explanation": "O estágio 4S (especial) é restrito a menores de 1 ano com tumor primário pequeno e disseminação limitada a fígado, pele e medula óssea (com pouca infiltração). Tem alta taxa de regressão espontânea e bom prognóstico, e muitas vezes só se observa; o risco vem da hepatomegalia maciça, que pode comprometer a respiração."
+    },
+    {
+      "question": "Qual achado indica pior prognóstico no neuroblastoma?",
+      "options": [
+        "Amplificação do oncogene MYCN",
+        "Diagnóstico antes dos 12 meses",
+        "Opsoclonia-mioclonia associada",
+        "Tumor localizado e ressecável"
+      ],
+      "correctIndex": 0,
+      "explanation": "A amplificação de MYCN é o principal marcador biológico de alto risco no neuroblastoma, independentemente da idade. Idade abaixo de 18 meses, doença localizada e a forma associada à opsoclonia-mioclonia têm, em geral, prognóstico oncológico melhor."
+    },
+    {
+      "question": "Criança de 2 anos tem massa abdominal palpável recém-descoberta na consulta da UBS. Qual é o primeiro exame de imagem e a conduta?",
+      "options": [
+        "Ultrassonografia abdominal e encaminhamento urgente à oncologia",
+        "Tomografia com contraste e retorno em 30 dias com o resultado",
+        "Radiografia simples de abdome e observação por quatro semanas",
+        "Ressonância sob sedação antes de qualquer outro exame inicial"
+      ],
+      "correctIndex": 0,
+      "explanation": "A ultrassonografia é o exame inicial: não usa radiação, define se a massa é sólida ou cística e de qual órgão parte. Massa abdominal em criança é câncer até prova em contrário e exige encaminhamento urgente a centro de oncologia pediátrica, onde se completam tomografia ou ressonância, marcadores e estadiamento."
+    },
+    {
+      "question": "No tumor de Wilms, qual é o sítio mais comum de metástase à distância e o exame usado para avaliá-lo?",
+      "options": [
+        "Pulmão, avaliado por tomografia de tórax",
+        "Osso, avaliado por cintilografia com MIBG",
+        "Medula óssea, avaliada por mielograma",
+        "Cérebro, avaliado por ressonância de crânio"
+      ],
+      "correctIndex": 0,
+      "explanation": "O Wilms metastatiza sobretudo para os pulmões (e, em seguida, para o fígado), e o estadiamento inclui tomografia de tórax. Metástase para osso e medula óssea é típica do neuroblastoma, avaliada por cintilografia com MIBG e por aspirado e biópsia de medula."
+    },
+    {
+      "question": "Lactente de 15 meses com febre baixa, irritabilidade, recusa a andar e dor à mobilização dos membros; está pálido e tem hepatomegalia. O hemograma mostra anemia e plaquetopenia. Além da leucemia, qual tumor sólido deve ser lembrado?",
+      "options": [
+        "Neuroblastoma com infiltração da medula óssea",
+        "Tumor de Wilms com metástases pulmonares",
+        "Hepatoblastoma com trombocitose reativa",
+        "Teratoma sacrococcígeo com compressão"
+      ],
+      "correctIndex": 0,
+      "explanation": "Dor óssea, irritabilidade, recusa a andar e citopenias em lactente ou pré-escolar podem ser neuroblastoma metastático para osso e medula, que imita a leucemia. A investigação inclui catecolaminas urinárias, imagem do abdome e mielograma."
+    }
+  ]
+}

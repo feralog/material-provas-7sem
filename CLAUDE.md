@@ -49,6 +49,8 @@ Material para provas/
 ├── CLAUDE.md
 ├── index.html                    ← índice online   (gerado, versionado)
 ├── index_local.html              ← índice local    (gerado, NÃO versionado)
+├── plano.html                    ← plano das provas finais (gerado, versionado)
+├── Revisao/revisao_*.html        ← uma página de revisão por prova (gerado, versionado)
 ├── deepseek_key.js               ← chave do tutor  (NÃO versionado)
 ├── _template/
 │   ├── quiz.html                 ← template real, vanilla JS, standalone
@@ -314,6 +316,31 @@ por duplo clique em casa; `index.html` é o que vai para o GitHub Pages.
 
 ---
 
+## ETAPA 6 — Plano das provas e páginas de revisão por prova
+
+```bash
+PYTHONIOENCODING=utf-8 "$PY" _scripts/montar_plano.py --rever   # Revisao/revisao_*.html + plano.html
+PYTHONIOENCODING=utf-8 "$PY" _scripts/montar_plano.py           # só o plano.html
+```
+
+`plano.html` é a linha do tempo dia a dia até a última prova (feita em 23/11/2026 para a
+AVG 2026.2: SAI 30/11, PED 03/12, GO 08/12, MFC 10/12; 3 h por dia). O plano em si — dias,
+itens, tempos, pegadinhas — está escrito em `DIAS`, `SOBRAR` e `PEGADINHAS` dentro do
+script; mudou a prova ou chegou material, edite ali e rode de novo. O script avisa se
+algum material das pastas de uma prova ficou sem lugar no plano.
+
+`--rever` gera uma página de revisão por prova em `Revisao/` usando o
+`montar_fechamento.py` de `7sem/Nova pagina pra provas` (fora do repo), com `--chave`
+por prova (cada uma tem a própria fila de erros no navegador). Os itens do plano abrem
+essas páginas já no modo certo: `#treino=<slug>`, `#simulado=<slugs>&n=&min=`, `#revisao`.
+Rode `--rever` sempre que um `aula_*.json` mudar — senão a revisão fica com o banco velho.
+
+Material marcado **Referência** no eyebrow não tem slide de aula: foi escrito de
+referência padrão (DSM-5-TR, AHA, PCDT, políticas do SUS) a pedido do usuário, para aulas
+cujo arquivo ele não conseguiu. MFC inteira é assim.
+
+---
+
 ## O tutor DeepSeek — só na máquina, nunca no site
 
 Respondeu a questão? Abaixo da explicação aparece um chat para perguntar a um modelo —
@@ -402,6 +429,246 @@ Mudança de layout se faz **no template, uma vez**, e depois é só regerar os H
 `aula_*.json` e `resumo_*.md` ficam salvos justamente para isso.
 
 ---
+
+---
+
+## Pipeline de vídeo — o resumo vira aula narrada com legenda
+
+> **Desde 19/11/2026 o pipeline de vídeo mora FORA desta pasta, em `7sem/Videos/`**
+> (`D:/Arquivos/Documentos/Faculdade/OSEC/7sem/Videos`), e nada dele vai para o git:
+>
+> ```
+> 7sem/Videos/
+> ├── _scripts/   narrar.py · montar_video.py · conferir_narracao.py · indice_videos.py
+> │               servidor_videos.py  (servidor só dos vídeos, com Range)
+> ├── _fundos/    os .mp4 de gameplay sorteados como fundo
+> ├── [Matéria]/  prosa_*.md + narracao_*.mp3 + tempos_*.json + [tema].mp4 + [tema].json
+> ├── videos.html · Servidor de Videos.bat · ProtocoloVideo.md · SEM-VIDEO.md
+> ```
+>
+> Rode os comandos abaixo **de dentro de `7sem/Videos`**. A prosa nova é escrita em
+> `7sem/Videos/[Matéria]/prosa_[tema].md`, lendo o `resumo_[tema].md` daqui. O vídeo
+> renderizado cai na mesma pasta da matéria (não há mais subpasta `Videos/`). Os vídeos
+> do TCC ficam em `7sem/TCC/video/`, e o simulador de OSCE em `7sem/SimuladorProvasOSCE/`.
+
+Segundo produto da mesma matéria-prima. O `resumo_[tema].md` é reescrito em prosa
+corrida, narrado por TTS gratuito e montado sobre o gameplay de Minecraft, com a
+legenda aparecendo em blocos de 2–3 palavras, no ritmo da fala.
+
+```
+resumo_[tema].md
+    ├─▶ ETAPA A — agente reescreve  →  prosa_[tema].md   (cada '## ' vira capítulo)
+    ├─▶ ETAPA B — narrar.py         →  narracao_[tema].mp3 + tempos_[tema].json
+    ├─▶ ETAPA C — montar_video.py   →  Videos/[Matéria]/[tema].mp4 + .json
+    └─▶ ETAPA D — indice_videos.py  →  videos.html   ← ARQUIVO FINAL
+```
+
+Um vídeo por aula (na prática 19 a 45 min), com **capítulos clicáveis** no índice — não se picota
+em dezenas de arquivos. `videos.html` guarda onde você parou em cada vídeo.
+
+### O achado que sustenta tudo
+
+O `edge-tts` emite um evento `WordBoundary` com **o tempo e a duração de cada palavra**
+(só com `boundary="WordBoundary"`; o padrão é `SentenceBoundary` e não serve). Com isso
+a legenda sai do próprio TTS, já sincronizada — **sem Whisper, sem alinhamento forçado,
+sem transcrever nada**.
+
+### Infraestrutura adicional
+
+- **edge-tts** (`pip install edge-tts`) — vozes neurais pt-BR da Microsoft, **sem chave,
+  sem conta e sem custo**: `pt-BR-AntonioNeural` (padrão), `FranciscaNeural`,
+  `ThalitaMultilingualNeural`. Ritmo padrão `+10%` — validado como confortável para 15+ min.
+- **ffmpeg** 9.0.2 (`winget install Gyan.FFmpeg`) — os scripts localizam o binário
+  sozinhos, inclusive no caminho do WinGet quando não está no PATH.
+- **Fundo:** qualquer `.mp4` solto na raiz entra no sorteio (hoje três gameplays de
+  parkour, somando ~5 h). A cada render sorteia-se **o arquivo e o ponto de início**
+  dentro dele — os dois juntos, porque só um dos dois ainda deixaria os vídeos
+  parecidos. Prefere fundo que cubra a narração sem repetir; se nenhum cobrir, usa o
+  mais longo em loop. O par escolhido fica gravado no `.json` do vídeo. Para acrescentar
+  um fundo, basta copiar o arquivo para a raiz. O recorte 9:16 é calculado da resolução
+  real, então um 1080p entra sem ajuste.
+
+### ETAPA A — contrato da `prosa_[tema].md`
+
+```markdown
+# Título da Aula
+
+## Nome do capítulo
+Texto corrido, sem marcação nenhuma...
+```
+
+**A legenda na tela é exatamente o texto que o TTS recebe.** Então o que for escrito
+precisa, ao mesmo tempo, *ler* bem e *soar* bem. Daí as regras:
+
+- **Prosa corrida, nunca bullet.** É narração, não tópico. Tabela do resumo vira frase.
+- **Nada de markdown** — negrito, lista, tabela e imagem são removidos antes de narrar.
+- **Escreva por extenso o que o TTS erraria:** `IV` → "endovenosa", `VO` → "por via oral",
+  `12/12h` → "de doze em doze horas", `Monif IV` → "estágio quatro", `37,5 °C` →
+  "trinta e sete e meio". Número solto pode ficar como algarismo.
+- **Capítulos: mínimo 5, sem teto.** São marcadores clicáveis no player, então
+  capítulo extra é barato e ajuda a navegar. **Nunca funda dois assuntos para caber
+  num número** — um teto de 11 já virou restrição real e cinco materiais seguidos
+  pararam exatamente nele. Com o teto solto, os materiais passaram a sair com 13 a 19.
+- **Tom de storytelling**, com gancho no início de cada capítulo — mas o dado clínico
+  (dose, critério, número) entra inteiro. É material de prova, não entretenimento.
+- **Analogia e repetição são obrigatórias, não enfeite.** Mecanismo difícil (fisiopatologia,
+  ação de droga, critério que confunde) ganha uma comparação concreta — *"é como se..."*,
+  *"pense num..."*. E cada capítulo fecha retomando, em uma ou duas frases, o que não pode
+  ser esquecido dali. **Repetir é recurso didático aqui**, e vale alongar o vídeo por isso:
+  é a diferença entre ouvir e aprender. A analogia serve o dado, nunca o substitui.
+- **Não existe teto de palavras.** O tamanho é consequência do material, não meta: um
+  resumo denso em tabela gera prosa longa porque tabela vira frase, e frase é mais
+  comprida que célula. Pôr um teto faz o agente enxugar justamente a camada didática —
+  já aconteceu de um comprimir as retomadas e de outro **fundir dois capítulos** só para
+  caber. O piso útil é ~1,5× as palavras do resumo-fonte; acima disso, deixe correr.
+
+### ETAPAS B, C e D
+
+```bash
+cd "D:/Arquivos/Documentos/Faculdade/OSEC/7sem/Videos"
+PYTHONIOENCODING=utf-8 "$PY" _scripts/narrar.py "GO/prosa_dip.md"            # --voz, --rate
+PYTHONIOENCODING=utf-8 "$PY" _scripts/montar_video.py "GO/tempos_dip.json"   # --formato, --crf
+PYTHONIOENCODING=utf-8 "$PY" _scripts/conferir_narracao.py GO                # audita as narrações
+PYTHONIOENCODING=utf-8 "$PY" _scripts/indice_videos.py                       # sempre por último
+```
+
+**Rode o `conferir_narracao.py` antes de renderizar.** Ele compara, capítulo a capítulo,
+o que foi falado com o que foi mandado falar — é a única checagem que pega stream truncado,
+e renderizar 30 minutos de vídeo em cima de um áudio incompleto custa caro.
+
+O `narrar.py` imprime **`desvio tempos x audio`** ao final. Esse número é o controle de
+qualidade da sincronia: abaixo de 0,5 s está bom, acima disso a legenda desgarra da fala.
+
+`--formato vertical` (720×1280, padrão) ou `landscape` (1280×720). O vertical recorta o
+centro do gameplay; como o recorte tem só 405 px de largura, **não adianta subir para
+1080×1920** — não há detalhe para revelar, só arquivo maior.
+
+> **Atenção ao montar a fila:** o `tempos_*.json` leva o nome do **título** da prosa,
+> não o nome do arquivo `prosa_*.md`. Eles coincidem quase sempre, e é justamente por
+> isso que a exceção escapa: `OFTALMO/prosa_olho_vermelho.md` tem o título
+> `# Diagnóstico Diferencial do Olho Vermelho`, então o tempos é
+> `tempos_diagnostico_diferencial_do_olho_vermelho.json`. Montar a fila a partir do nome
+> da prosa faz o render morrer com `ERRO: nao encontrei` — e, numa fila de sete itens
+> com a saída filtrada, isso passa despercebido até alguém contar os vídeos. **Monte a
+> fila listando os `tempos_*.json` que existem**, nunca derivando do nome da prosa:
+>
+> ```bash
+> ls OFTALMO/tempos_*.json
+> ```
+
+### Os dois estilos de legenda — PERGUNTE ANTES DE RENDERIZAR
+
+Existem dois, e o usuário escolhe. **Nunca renderize uma leva sem perguntar qual ele
+quer** — refazer custa o encode inteiro de novo, e é a pergunta mais barata do pipeline.
+
+| | **Limpo** (padrão) | **Com caixa** (`--caixa`) |
+|---|---|---|
+| Fundo | gameplay nítido | gameplay **desfocado** (sigma 8) |
+| Atrás do texto | nada | retângulo arredondado claro, 50% de opacidade |
+| Legenda | branca, contorno preto | **branca, contorno preto — igual** |
+| Quando usa | o gameplay faz parte do apelo | quando a ênfase tem que estar no texto |
+
+```bash
+PYTHONIOENCODING=utf-8 "$PY" _scripts/montar_video.py "OFTALMO/tempos_glaucoma.json"
+PYTHONIOENCODING=utf-8 "$PY" _scripts/montar_video.py "OFTALMO/tempos_glaucoma.json" --caixa
+```
+
+O estilo usado fica gravado no `.json` ao lado do vídeo, no campo `estilo`
+(`"limpo"` ou `"caixa"`), então dá para saber depois o que cada vídeo recebeu e
+re-renderizar só o que destoa.
+
+**O texto continua branco nos dois.** Isso é contraintuitivo — caixa clara pede texto
+escuro, e foi o que eu sugeri. O usuário assistiu aos dois renders de teste e discordou:
+em movimento, o branco com contorno preto lê melhor sobre a caixa do que o texto escuro.
+Quadro parado engana; vídeo rodando é o teste que vale. **Não "corrija" isso.**
+
+A geometria da caixa está em `CAIXAS` no `montar_video.py` (640×190 raio 46 no vertical),
+e ela é FIXA no centro — não acompanha o tamanho do texto. Legenda curta deixa a caixa
+com folga nas laterais, e isso é esperado.
+
+### Cinco armadilhas que já custaram caro
+
+1. **`pont in ".!?;:"` é sempre verdadeiro quando `pont` é vazio** — string vazia é
+   substring de qualquer string. O efeito foi cada palavra virar um bloco de legenda
+   (64 palavras → 64 blocos). Tem que ser `pont and pont in "..."`.
+2. **Não emende MP3 com bytes zerados.** Zero não é quadro MP3 válido: a pausa de 0,55 s
+   saiu com ~1,9 s e a legenda desgarrou um pouco mais a cada capítulo. O jeito certo é
+   gerar silêncio real no mesmo formato (24 kHz mono) e emendar com o `concat` do ffmpeg,
+   calculando o offset de cada capítulo pela duração **medida** de cada trecho.
+3. **Esticar o recorte infla o arquivo sem ganhar nitidez.** Subir 405 px para 1080
+   triplicou o bitrate e dobrou o tamanho sem acrescentar um pixel de informação.
+4. **O `desvio` NÃO detecta capítulo truncado — e o stream do edge-tts trunca.**
+   Esta é a pior das cinco, porque falha em silêncio. Quando o stream corta no meio de
+   uma seção, o áudio **e** os tempos das palavras param juntos: a soma continua coerente,
+   o desvio fica em 0,33 s e o script imprime `ok`. Já saiu capítulo com **55% do texto**
+   passando por esse check — sumiram epidemiologia, uma controvérsia inteira e o recap,
+   e nada acusou. O desvio valida a *emenda* entre capítulos, não se o capítulo veio
+   inteiro. O `narrar.py` agora compara a **última palavra falada** com a última palavra
+   da seção e refaz a seção até 4 vezes, abortando se não conseguir; e o
+   `conferir_narracao.py` audita narrações já feitas.
+   Dois detalhes que custaram falso positivo: **não use contagem de palavras como
+   critério** (o edge-tts agrupa número e sigla de outro jeito, e capítulo intacto
+   aparece com 91%), e **compare por sufixo**, porque ele emite `"3 centímetros"` como
+   um token só enquanto a prosa separa em duas palavras.
+5. **Nunca indexe um render em andamento.** O `.mp4` existe desde o primeiro quadro, mas
+   só vira arquivo válido no fim (o `+faststart` reescreve tudo, e sem o átomo `moov` o
+   vídeo nem abre). Se houver um `.json` de um render anterior ao lado, o índice publica
+   um vídeo truncado com **capítulos de outra versão** — e o erro é silencioso, porque
+   a página carrega normalmente. O `indice_videos.py` agora pula a entrada quando o
+   `.ass` ainda existe (o `montar_video.py` só o apaga ao terminar bem) ou quando o
+   `.mp4` é mais novo que o `.json`. Pelo mesmo motivo, **não conclua que um render
+   terminou só porque o `.mp4` está lá**: confira o `.ass` ou o `.json`.
+
+### Assistir no celular — servidor da rede local
+
+Duplo clique em **`Servidor de Videos.bat`**. Ele mostra o endereço; abra no navegador do
+celular, no mesmo wi-fi. Fechar a janela (ou Ctrl+C) encerra.
+
+```bash
+cd "D:/Arquivos/Documentos/Faculdade/OSEC/7sem/Videos"
+PYTHONIOENCODING=utf-8 "$PY" _scripts/servidor_videos.py              # porta 8000
+PYTHONIOENCODING=utf-8 "$PY" _scripts/servidor_videos.py --porta 8080
+```
+
+**Não troque por `python -m http.server`.** O servidor embutido do Python não implementa
+**Range requests**, e sem Range o navegador não consegue pular no meio do vídeo: clicar
+num capítulo de um arquivo de 300 MB obriga a baixar tudo antes de tocar. Como capítulo
+clicável é justamente o ponto do `videos.html`, o `servidor_videos.py` implementa Range
+(responde `206` com a fatia pedida) e anuncia `Accept-Ranges: bytes`.
+
+Ele serve **só a pasta `7sem/Videos`**: os quizzes, o TCC e o `deepseek_key.js` não estão
+embaixo da raiz servida. Até 19/11 o mesmo `servidor.py` servia vídeos e simulador de OSCE,
+e a trava do OSCE (visitante de fora só alcança o simulador) barrava o `videos.html` no
+celular — por isso foram separados. O servidor do OSCE está em
+`7sem/SimuladorProvasOSCE/_scripts/servidor.py`.
+
+Na primeira execução o Windows pergunta sobre o firewall: permita em **redes privadas**.
+
+### Espaço em disco
+
+Um vídeo sai com ~11 MB por minuto no `--crf 32` padrão — um de 40 min dá ~450 MB (era 286 MB no crf 26; o gameplay de parkour é movimento rápido em tela cheia, o pior caso para compressão — e a legenda, por ser alto contraste, não sofre com CRF alto). Os 71 resumos, se todos virarem vídeo, passam
+de 10 GB — por isso `Videos/`, `videos.html`, `narracao_*.mp3` e `tempos_*.json` estão
+no `.gitignore`. **Tudo do pipeline de vídeo fica fora do repo** — inclusive as
+`prosa_[tema].md`, os scripts (`narrar.py`, `montar_video.py`, `indice_videos.py`,
+`conferir_narracao.py`), o `Servidor de Videos.bat` e os runbooks. Decisão do usuário
+(19/11/2026): os vídeos existem só nesta máquina. Nunca faça commit de nada disso.
+
+### Briefing do agente de prosa (reutilizar)
+
+> Você vai transformar UM resumo em prosa narrada. Não altere `_template/` nem `_scripts/`.
+> Shell: sempre Bash. Python: `PYTHONIOENCODING=utf-8 "$PY" ...`
+>
+> **Passo 1** — leia o `resumo_[tema].md` INTEIRO. Ele é a fonte; não invente conteúdo e
+> não busque nada fora dele.
+> **Passo 2** — escreva `prosa_[tema].md` seguindo o contrato acima. Mantenha todo dado
+> clínico (dose, critério, número, nome de agente); o que muda é a forma, não o conteúdo.
+> Tabela vira frase; bullet vira oração. Lembre que a legenda na tela é o seu texto.
+> Use analogia onde o mecanismo for difícil e feche cada capítulo retomando o essencial.
+> **Não enxugue para caber em tamanho nenhum** — não há teto, e cortar aqui corta didática.
+> **Passo 3** — rode `narrar.py` e confira o `desvio` no fim. Acima de 0,5 s, reporte.
+> **Passo 4** — rode `montar_video.py` e confirme que o `.mp4` e o `.json` foram criados.
+> **Passo 5** — reporte: capítulos, palavras, duração, desvio, tamanho do arquivo e
+> qualquer trecho do resumo que você não conseguiu converter sem perder informação.
 
 ## Notas
 

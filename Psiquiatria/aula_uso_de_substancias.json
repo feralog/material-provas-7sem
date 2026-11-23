@@ -1,0 +1,228 @@
+{
+  "titulo": "Transtornos por Uso de Substâncias",
+  "eyebrow": "Psiquiatria · Referência",
+  "subtitulo": "Álcool, opioides, cocaína, cannabis, tabaco e jogo: do critério ao tratamento",
+  "intro": "Os 11 critérios e a gravidade, álcool (abstinência, delirium tremens, Wernicke-Korsakoff e tratamento), opioides, cocaína, cannabis, tabaco e transtorno do jogo. Baseado no DSM-5-TR e no PCDT do tabagismo — não há slide da aula deste tema.",
+  "questoes": [
+    {
+      "question": "Homem de 45 anos, nos últimos 12 meses, bebe mais do que pretendia, já tentou parar sem conseguir, precisa de doses maiores para o mesmo efeito, tem tremor matinal que melhora com a bebida e vem faltando ao trabalho. Quantos critérios ele preenche e qual a gravidade pelo DSM-5-TR?",
+      "options": [
+        "Cinco critérios: transtorno por uso de álcool moderado",
+        "Cinco critérios: transtorno por uso de álcool grave",
+        "Quatro critérios: transtorno por uso de álcool leve",
+        "Três critérios: abuso de álcool, ainda sem dependência"
+      ],
+      "correctIndex": 0,
+      "explanation": "São 5 dos 11 critérios em 12 meses: uso maior que o pretendido, tentativas frustradas de parar, tolerância, abstinência e fracasso em obrigações. A gravidade no DSM-5-TR é leve com 2 a 3 critérios, moderada com 4 a 5 e grave com 6 ou mais; abuso e dependência deixaram de existir como categorias separadas."
+    },
+    {
+      "question": "Em relação ao DSM-IV, o que o DSM-5 mudou no diagnóstico dos transtornos por uso de substâncias?",
+      "options": [
+        "Fundiu abuso e dependência e incluiu a fissura como critério",
+        "Separou abuso de dependência e excluiu a tolerância da lista",
+        "Passou a exigir abstinência fisiológica para o diagnóstico",
+        "Incluiu problemas legais recorrentes como critério central"
+      ],
+      "correctIndex": 0,
+      "explanation": "O DSM-5, mantido no DSM-5-TR (2022), uniu abuso e dependência num único transtorno graduado por gravidade, acrescentou a fissura (craving) e retirou os problemas legais. Tolerância e abstinência não são obrigatórias e não contam quando surgem de medicação usada sob supervisão médica, como opioide para dor."
+    },
+    {
+      "question": "Homem de 50 anos, etilista, foi internado para colecistectomia. Cerca de 36 horas após o último gole apresenta tremor, sudorese, taquicardia, insônia e ansiedade, sem confusão mental. Qual o tratamento indicado?",
+      "options": [
+        "Benzodiazepínico guiado por escala de abstinência",
+        "Haloperidol em dose fixa como primeira escolha",
+        "Betabloqueador isolado para conter a taquicardia",
+        "Observação apenas, pois o quadro é autolimitado"
+      ],
+      "correctIndex": 0,
+      "explanation": "A abstinência alcoólica começa em geral 6 a 24 horas após a última dose, com hiperatividade autonômica, tremor, insônia e ansiedade; convulsões tendem a ocorrer nas primeiras 48 horas e o delirium tremens depois disso. O tratamento é benzodiazepínico (diazepam; lorazepam na hepatopatia grave ou no idoso), guiado pela CIWA-Ar; betabloqueador isolado mascara sinais sem prevenir convulsão nem delirium."
+    },
+    {
+      "question": "Etilista no terceiro dia de internação fica desorientado, com piora à noite, vê insetos andando pela parede e tem febre, tremor intenso e taquicardia. Qual o diagnóstico e a conduta?",
+      "options": [
+        "Delirium tremens, que pede BZD e cuidado intensivo",
+        "Alucinose alcoólica, que pede só antipsicótico oral",
+        "Encefalopatia de Wernicke, que pede só tiamina oral",
+        "Esquizofrenia de início tardio, que pede clozapina"
+      ],
+      "correctIndex": 0,
+      "explanation": "Delirium tremens é delirium (desatenção, desorientação, flutuação) somado a abstinência grave, com febre, tremor, taquicardia e alucinações visuais, em geral entre 48 e 96 horas após a última dose. É emergência: benzodiazepínico em dose alta, tiamina, suporte e, nos graves, UTI. Na alucinose alcoólica as alucinações, sobretudo auditivas, ocorrem com a consciência clara."
+    },
+    {
+      "question": "Etilista desnutrido chega ao pronto-socorro confuso, com marcha atáxica e nistagmo. A glicemia capilar está baixa. Qual a sequência correta?",
+      "options": [
+        "Tiamina parenteral antes ou junto da glicose",
+        "Glicose hipertônica antes e tiamina oral depois",
+        "Glicose isolada, adiando a tiamina para a alta",
+        "Haloperidol para a confusão e depois glicose"
+      ],
+      "correctIndex": 0,
+      "explanation": "Confusão, ataxia e alterações oculares (nistagmo, oftalmoparesia) formam a tríade de Wernicke, completa só numa minoria dos casos. Dá-se tiamina parenteral antes ou junto da glicose, porque a glicose consome tiamina e pode precipitar ou agravar o quadro. Sem tratamento evolui para Korsakoff: amnésia anterógrada com confabulação, em geral irreversível."
+    },
+    {
+      "question": "Na UBS, o médico pergunta a um paciente se já sentiu que deveria diminuir a bebida, se as críticas ao seu modo de beber o aborrecem, se sente culpa e se bebe pela manhã para aliviar o mal-estar. Há duas respostas positivas. Qual o instrumento e a interpretação?",
+      "options": [
+        "CAGE; duas respostas positivas sugerem problema com álcool",
+        "AUDIT; duas respostas positivas confirmam dependência grave",
+        "CIWA-Ar; duas respostas positivas indicam abstinência",
+        "Fagerström; duas respostas positivas indicam dependência"
+      ],
+      "correctIndex": 0,
+      "explanation": "O CAGE (Cut down, Annoyed, Guilty, Eye-opener) é rastreio rápido: 2 ou mais respostas positivas sugerem uso problemático e pedem avaliação. O AUDIT, da OMS, tem 10 itens e estratifica o risco (8 ou mais indica uso de risco); a CIWA-Ar mede a gravidade da abstinência, e o Fagerström, a dependência de nicotina."
+    },
+    {
+      "question": "Homem com transtorno por uso de álcool grave, abstinente há dez dias, tem cirrose descompensada (Child-Pugh C) e função renal normal. Qual fármaco é o mais adequado para ajudar a manter a abstinência?",
+      "options": [
+        "Acamprosato, de excreção renal",
+        "Naltrexona, de metabolismo hepático",
+        "Dissulfiram, por efeito aversivo",
+        "Diazepam contínuo, como prevenção"
+      ],
+      "correctIndex": 0,
+      "explanation": "O acamprosato, modulador glutamatérgico, é eliminado pelo rim sem metabolismo hepático, por isso serve na hepatopatia grave (e é contraindicado na insuficiência renal grave). A naltrexona é evitada na insuficiência hepática grave e o dissulfiram é hepatotóxico; benzodiazepínico contínuo troca uma dependência por outra."
+    },
+    {
+      "question": "Paciente em tratamento com metadona para transtorno por uso de opioide também tem transtorno por uso de álcool. Qual fármaco para o álcool está contraindicado?",
+      "options": [
+        "Naltrexona",
+        "Acamprosato",
+        "Topiramato",
+        "Baclofeno"
+      ],
+      "correctIndex": 0,
+      "explanation": "A naltrexona é antagonista opioide: precipita abstinência em quem usa opioide (metadona, morfina) e bloqueia a analgesia. No álcool ela reduz o reforço e a fissura; o acamprosato é a alternativa nesse paciente."
+    },
+    {
+      "question": "Paciente em uso de dissulfiram ingere bebida alcoólica e apresenta rubor facial, cefaleia pulsátil, náusea, vômitos, taquicardia e hipotensão. Qual o mecanismo?",
+      "options": [
+        "Acúmulo de acetaldeído por inibição da aldeído-desidrogenase",
+        "Bloqueio do receptor opioide mu, que impede a euforia do álcool",
+        "Modulação glutamatérgica, que reduz a fissura pelo álcool",
+        "Liberação de histamina por inibição da álcool-desidrogenase"
+      ],
+      "correctIndex": 0,
+      "explanation": "O dissulfiram inibe a aldeído-desidrogenase; o acetaldeído se acumula e provoca reação aversiva (rubor, náusea, vômitos, taquicardia, hipotensão), que pode ser grave. Só funciona com adesão, exige pelo menos 12 horas sem beber antes de começar e depende de consentimento: dar escondido ao paciente é antiético e perigoso."
+    },
+    {
+      "question": "Jovem é encontrado inconsciente, com frequência respiratória de 6 irpm, pupilas puntiformes e uma seringa ao lado. Qual a conduta e o cuidado essencial?",
+      "options": [
+        "Naloxona e observação, pois o efeito dela pode acabar antes",
+        "Flumazenil, pois reverte opioides e benzodiazepínicos",
+        "Naloxona e alta logo que o paciente despertar por completo",
+        "Bicarbonato de sódio para proteger contra arritmias"
+      ],
+      "correctIndex": 0,
+      "explanation": "Miose, depressão respiratória e rebaixamento de consciência formam a tríade da intoxicação por opioide: ventilação e naloxona (IV, IM ou intranasal). A naloxona dura menos que muitos opioides, sobretudo a metadona, e o paciente pode voltar a deprimir; por isso exige observação prolongada e, se preciso, nova dose ou infusão. O flumazenil só reverte benzodiazepínico."
+    },
+    {
+      "question": "Qual conjunto de achados é típico da abstinência de opioides?",
+      "options": [
+        "Midríase, rinorreia, lacrimejamento, bocejos e piloereção",
+        "Miose, bradipneia, sonolência e constipação intestinal",
+        "Tremor, alucinações visuais, febre e convulsões",
+        "Hipersonia, aumento do apetite e disforia intensa"
+      ],
+      "correctIndex": 0,
+      "explanation": "A abstinência de opioide é o espelho da intoxicação: midríase, rinorreia, lacrimejamento, bocejos, piloereção, diarreia, cólicas, mialgia e ansiedade. É muito desconfortável, mas raramente fatal no adulto saudável, ao contrário da abstinência de álcool e de benzodiazepínico, que causa convulsões. Hipersonia e aumento do apetite são da abstinência de cocaína."
+    },
+    {
+      "question": "Ao iniciar buprenorfina em paciente dependente de heroína, qual cuidado é necessário?",
+      "options": [
+        "Esperar sinais de abstinência para não precipitá-la",
+        "Iniciar logo após a última dose para evitar fissura",
+        "Associar naloxona venosa para potencializar o efeito",
+        "Iniciar em dose alta, pois não há teto de depressão"
+      ],
+      "correctIndex": 0,
+      "explanation": "A buprenorfina é agonista parcial mu de alta afinidade: dada com um agonista pleno ainda ocupando o receptor, desloca-o e precipita abstinência, por isso se espera abstinência leve a moderada antes da primeira dose. Tem efeito-teto na depressão respiratória e é mais segura que a metadona, agonista pleno de meia-vida longa que alonga o QT."
+    },
+    {
+      "question": "Homem de 28 anos chega com dor torácica uma hora após usar cocaína. Está agitado, com PA de 180/110 mmHg, FC de 130 bpm, midríase, sudorese e temperatura de 38,2 °C. Qual a primeira medida farmacológica?",
+      "options": [
+        "Benzodiazepínico por via intravenosa",
+        "Betabloqueador por via intravenosa",
+        "Haloperidol por via intramuscular",
+        "Naloxona por via intravenosa"
+      ],
+      "correctIndex": 0,
+      "explanation": "Na intoxicação por cocaína o benzodiazepínico é a primeira linha: reduz agitação, taquicardia, hipertensão e risco de convulsão. Classicamente se evita betabloqueador na fase aguda (estímulo alfa sem oposição, piora do vasoespasmo), e o haloperidol baixa o limiar convulsivo e piora a hipertermia. Investigar síndrome coronariana: a cocaína causa vasoespasmo e infarto mesmo em jovens."
+    },
+    {
+      "question": "Após três dias de uso compulsivo de crack, paciente dorme quase o dia todo, come muito, está disfórico, com fissura intensa e ideação suicida. Qual o quadro?",
+      "options": [
+        "Abstinência de cocaína, o chamado crash",
+        "Intoxicação tardia por cocaína e crack",
+        "Abstinência de opioide de início lento",
+        "Episódio depressivo maior com hipersonia"
+      ],
+      "correctIndex": 0,
+      "explanation": "A abstinência de estimulantes ('crash') traz disforia, fadiga, hipersonia, aumento do apetite, sonhos vívidos, lentificação e fissura intensa, com risco de suicídio. Não há tratamento farmacológico aprovado: suporte, proteção contra o risco de suicídio e abordagem psicossocial."
+    },
+    {
+      "question": "Adolescente chega à consulta com hiperemia conjuntival, boca seca, taquicardia e muita fome, rindo sem motivo e dizendo que o tempo 'passa devagar'. Qual a substância mais provável?",
+      "options": [
+        "Cannabis",
+        "Cocaína",
+        "Heroína",
+        "Ecstasy"
+      ],
+      "correctIndex": 0,
+      "explanation": "Hiperemia conjuntival, aumento do apetite, boca seca e taquicardia, com euforia, risos e alteração da percepção do tempo, são a intoxicação por cannabis. Pode haver ansiedade, pânico e psicose; o uso na adolescência associa-se a prejuízo cognitivo e maior risco de esquizofrenia."
+    },
+    {
+      "question": "Jovem que usa cannabis diariamente há anos tem crises recorrentes de náusea e vômitos incoercíveis, que melhoram com banhos quentes demorados. Qual o diagnóstico?",
+      "options": [
+        "Síndrome de hiperêmese canabinoide",
+        "Gastroparesia diabética de início precoce",
+        "Síndrome dos vômitos cíclicos idiopática",
+        "Intoxicação aguda por cannabis sintética"
+      ],
+      "correctIndex": 0,
+      "explanation": "A hiperêmese canabinoide é a síndrome de vômitos cíclicos do usuário crônico e pesado de cannabis, com alívio característico em banhos quentes. O tratamento definitivo é parar o uso; antieméticos comuns funcionam mal."
+    },
+    {
+      "question": "Mulher de 30 anos, fumante, quer parar de fumar. Tem epilepsia e história de bulimia nervosa. Qual opção está contraindicada?",
+      "options": [
+        "Bupropiona de liberação lenta",
+        "Vareniclina em dose plena",
+        "Adesivo de nicotina transdérmico",
+        "Pastilha ou goma de nicotina"
+      ],
+      "correctIndex": 0,
+      "explanation": "A bupropiona reduz o limiar convulsivo: é contraindicada na epilepsia, na bulimia e na anorexia, com IMAO e na retirada abrupta de álcool ou benzodiazepínico. Reposição de nicotina e vareniclina são opções nessa paciente."
+    },
+    {
+      "question": "No tratamento do tabagismo pelo SUS, conforme o protocolo clínico do Ministério da Saúde, o que é oferecido ao fumante?",
+      "options": [
+        "Abordagem cognitivo-comportamental, reposição de nicotina e bupropiona",
+        "Abordagem cognitivo-comportamental e cigarro eletrônico supervisionado",
+        "Reposição de nicotina e clonazepam para a ansiedade da abstinência",
+        "Nortriptilina e cigarro eletrônico com redução gradual de nicotina"
+      ],
+      "correctIndex": 0,
+      "explanation": "O PCDT do tabagismo combina abordagem cognitivo-comportamental com reposição de nicotina (adesivo, goma, pastilha) e bupropiona. A vareniclina é a monoterapia mais eficaz nas diretrizes internacionais, mas não está no elenco do protocolo; o cigarro eletrônico tem venda proibida pela Anvisa e não é tratamento."
+    },
+    {
+      "question": "Fumante de 40 cigarros por dia acende o primeiro cigarro cinco minutos depois de acordar e decide parar. Qual o melhor esquema de reposição de nicotina?",
+      "options": [
+        "Adesivo diário associado a goma ou pastilha nas fissuras",
+        "Goma de nicotina isolada, usada só quando houver fissura",
+        "Adesivo com retirada abrupta ao fim da primeira semana",
+        "Adesivo só nos dias em que fumar mais de dez cigarros"
+      ],
+      "correctIndex": 0,
+      "explanation": "Combinar o adesivo (nível basal) com uma forma de ação curta (goma ou pastilha) para a fissura é mais eficaz que qualquer forma isolada. Muitos cigarros por dia e o primeiro cigarro logo ao acordar indicam dependência alta no teste de Fagerström, e o adesivo é reduzido de forma gradual ao longo de semanas."
+    },
+    {
+      "question": "Homem de 38 anos faz apostas esportivas online cada vez mais altas, fica irritado quando tenta parar, mente para a família, volta a apostar no dia seguinte para recuperar o que perdeu e pede dinheiro emprestado para cobrir dívidas. Qual o diagnóstico e como o DSM-5-TR o classifica?",
+      "options": [
+        "Transtorno do jogo, no capítulo das dependências",
+        "Transtorno do controle de impulsos, como a cleptomania",
+        "Transtorno obsessivo-compulsivo com rituais de aposta",
+        "Episódio hipomaníaco com gastos excessivos isolados"
+      ],
+      "correctIndex": 0,
+      "explanation": "O transtorno do jogo é a única dependência comportamental no capítulo de transtornos relacionados a substâncias e aditivos do DSM-5-TR: 4 ou mais de 9 critérios em 12 meses, como tolerância, irritabilidade ao tentar parar, mentir, 'correr atrás do prejuízo' e pedir dinheiro para cobrir perdas. No DSM-IV ele ficava entre os transtornos do controle de impulsos."
+    }
+  ]
+}

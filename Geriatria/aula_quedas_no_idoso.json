@@ -1,0 +1,206 @@
+{
+  "titulo": "Quedas no Idoso",
+  "eyebrow": "Geriatria · Referência",
+  "subtitulo": "Por que o idoso cai, como avaliar e o que realmente previne",
+  "intro": "Epidemiologia e consequências, fatores intrínsecos e extrínsecos, medicamentos de risco, avaliação (TUG, PA ortostática, visão, pés) e intervenção multifatorial. Material de referência baseado nas Diretrizes Mundiais de Prevenção de Quedas (2022) — não há slide da aula deste tema.",
+  "questoes": [
+    {
+      "question": "Na avaliação do risco de queda de um idoso da comunidade, qual dado da história é o preditor isolado mais forte de uma nova queda?",
+      "options": [
+        "Ter sofrido uma queda anterior",
+        "Ter hipertensão arterial tratada",
+        "Ter mais de dez anos de diabetes",
+        "Morar sozinho em casa térrea"
+      ],
+      "correctIndex": 0,
+      "explanation": "A queda prévia é o preditor mais forte de nova queda. Por isso todo idoso deve ser perguntado, pelo menos uma vez por ano, se caiu — e quem caiu entra em avaliação dirigida."
+    },
+    {
+      "question": "Qual proporção de idosos com 65 anos ou mais, vivendo na comunidade, sofre pelo menos uma queda por ano?",
+      "options": [
+        "Cerca de 30%",
+        "Cerca de 5%",
+        "Cerca de 70%",
+        "Cerca de 90%"
+      ],
+      "correctIndex": 0,
+      "explanation": "Cerca de 30% dos idosos com 65 anos ou mais caem ao menos uma vez por ano, e a proporção aumenta com a idade e em instituições de longa permanência."
+    },
+    {
+      "question": "Mulher de 79 anos caiu há dois meses, sem fratura. Desde então, deixou de sair de casa e de ir à igreja, anda segurando nos móveis e diz ter pavor de cair de novo. Qual é o quadro e seu principal risco?",
+      "options": [
+        "Síndrome pós-queda, que gera descondicionamento e novas quedas",
+        "Depressão maior, cujo risco principal é a ideação suicida grave",
+        "Fobia simples, que costuma regredir sem intervenção em semanas",
+        "Demência inicial, revelada pela restrição das atividades sociais"
+      ],
+      "correctIndex": 0,
+      "explanation": "O medo de cair após uma queda leva à restrição de atividades, perda de força e de equilíbrio e, com isso, a mais quedas — um ciclo vicioso. Pode surgir mesmo após queda sem lesão e é tratado com reabilitação e exercício, não com repouso."
+    },
+    {
+      "question": "Idoso de 84 anos, que mora sozinho, é encontrado no chão do quarto após cerca de 12 horas, sem conseguir se levantar. Qual complicação deve ser investigada pela permanência prolongada no chão?",
+      "options": [
+        "Rabdomiólise, com dosagem de CPK e função renal",
+        "Hipercalcemia, com dosagem de cálcio e de PTH",
+        "Hipertireoidismo, com dosagem de TSH e T4 livre",
+        "Policitemia, com hemograma e dosagem de ferritina"
+      ],
+      "correctIndex": 0,
+      "explanation": "Permanecer muito tempo no chão causa rabdomiólise, com risco de lesão renal aguda, além de desidratação, lesão por pressão, pneumonia e hipotermia. Por isso se ensina o idoso a levantar do chão e se oferece um meio de pedir ajuda."
+    },
+    {
+      "question": "Qual dos itens abaixo é um fator de risco extrínseco para quedas?",
+      "options": [
+        "Tapete solto no corredor",
+        "Hipotensão ortostática",
+        "Neuropatia periférica",
+        "Catarata não operada"
+      ],
+      "correctIndex": 0,
+      "explanation": "Fatores extrínsecos vêm do ambiente: tapete solto, iluminação ruim, piso escorregadio, falta de barras de apoio, calçado inadequado. Hipotensão ortostática, neuropatia e catarata são intrínsecos, do próprio paciente."
+    },
+    {
+      "question": "Mulher de 81 anos usa clonazepam há 10 anos para dormir e teve duas quedas noturnas no último semestre. Qual é a conduta mais adequada em relação ao medicamento?",
+      "options": [
+        "Retirada gradual do benzodiazepínico, com medidas para o sono",
+        "Suspensão imediata do clonazepam e troca por diazepam à noite",
+        "Manutenção da dose, já que o uso é crônico e está bem tolerado",
+        "Troca por prometazina, que é mais segura para idosos com quedas"
+      ],
+      "correctIndex": 0,
+      "explanation": "Benzodiazepínicos são inapropriados no idoso com quedas (Beers 2023). Em uso crônico, a retirada é gradual para evitar abstinência e rebote. Diazepam tem meia-vida ainda mais longa, e a prometazina, anti-histamínico de 1ª geração, também seda e aumenta quedas."
+    },
+    {
+      "question": "Homem de 76 anos começou doxazosina para hiperplasia prostática e passou a ter tontura e quase quedas ao se levantar da cama. Qual mecanismo explica o quadro?",
+      "options": [
+        "Hipotensão ortostática pelo bloqueio alfa-adrenérgico",
+        "Bradicardia sinusal pelo bloqueio beta-adrenérgico",
+        "Hiponatremia por secreção inapropriada de ADH",
+        "Hipoglicemia por aumento da secreção de insulina"
+      ],
+      "correctIndex": 0,
+      "explanation": "Alfabloqueadores como doxazosina e prazosina causam vasodilatação e hipotensão ortostática, sobretudo nas primeiras doses e ao levantar. A conduta é medir a PA deitado e em pé e rever o fármaco."
+    },
+    {
+      "question": "Na medida da PA deitado e em pé, qual achado define hipotensão ortostática?",
+      "options": [
+        "Queda da PAS ≥ 20 mmHg ou da PAD ≥ 10 mmHg em até 3 minutos",
+        "Queda da PAS ≥ 10 mmHg ou da PAD ≥ 5 mmHg em até 1 minuto",
+        "Queda da PAS ≥ 30 mmHg e da PAD ≥ 20 mmHg em até 10 minutos",
+        "Aumento da FC ≥ 30 bpm sem queda da PA em até 10 minutos"
+      ],
+      "correctIndex": 0,
+      "explanation": "Hipotensão ortostática é a queda sustentada da PAS ≥ 20 mmHg ou da PAD ≥ 10 mmHg em até 3 minutos após ficar de pé. Aumento isolado da FC sem queda da PA descreve a síndrome postural taquicardizante, quadro de jovens."
+    },
+    {
+      "question": "Como é realizado o teste Timed Up and Go (TUG)?",
+      "options": [
+        "Levantar da cadeira, andar 3 metros, girar, voltar e sentar",
+        "Ficar em pé com os pés juntos e de olhos fechados por 30 s",
+        "Levantar e sentar da cadeira cinco vezes, sem usar os braços",
+        "Caminhar 6 minutos em corredor plano, no ritmo mais rápido"
+      ],
+      "correctIndex": 0,
+      "explanation": "O TUG cronometra o tempo para levantar de uma cadeira, andar 3 metros, girar, voltar e sentar, no passo habitual. No STEADI (CDC), 12 segundos ou mais indicam risco aumentado de queda."
+    },
+    {
+      "question": "Para um idoso da comunidade com risco aumentado de quedas, qual intervenção isolada tem a maior evidência de redução da taxa de quedas?",
+      "options": [
+        "Exercício com treino de equilíbrio e de força",
+        "Suplementação de vitamina D em dose elevada",
+        "Uso contínuo de protetor de quadril em casa",
+        "Repouso relativo até a melhora do equilíbrio"
+      ],
+      "correctIndex": 0,
+      "explanation": "Programas de exercício com treino de equilíbrio e funcional, com ou sem resistência, reduzem a taxa de quedas em cerca de um quarto; o tai chi também é eficaz. Repouso faz o contrário: acelera a perda de força e equilíbrio."
+    },
+    {
+      "question": "Idosa de 72 anos, ativa, sem quedas recentes e com vitamina D normal, pergunta se deve tomar vitamina D para não cair. Qual é a orientação?",
+      "options": [
+        "Não está indicada para prevenir quedas sem deficiência",
+        "Está indicada em dose alta anual para todos os idosos",
+        "Está indicada apenas associada a cálcio em dose alta",
+        "Está indicada sempre que houver medo de nova queda"
+      ],
+      "correctIndex": 0,
+      "explanation": "No idoso da comunidade sem deficiência, a vitamina D não reduz quedas, e a USPSTF (2024) recomenda contra o uso com esse fim. Ela é reposta quando há deficiência e faz parte do tratamento da osteoporose."
+    },
+    {
+      "question": "Qual calçado é o mais indicado para reduzir o risco de quedas em idosos?",
+      "options": [
+        "Fechado no calcanhar, salto baixo e sola fina antiderrapante",
+        "Chinelo aberto e leve, para não pesar nem apertar os dedos",
+        "Tênis de solado alto e macio, que amortece melhor o passo",
+        "Sapato de salto médio, para projetar o corpo para a frente"
+      ],
+      "correctIndex": 0,
+      "explanation": "O calçado seguro é fechado no calcanhar, de salto baixo e com sola fina, firme e antiderrapante, o que preserva a sensibilidade plantar e a estabilidade. Chinelo escapa do pé, e solado alto e macio reduz a percepção do solo."
+    },
+    {
+      "question": "Ao orientar a adaptação da casa de uma idosa que caiu ao ir ao banheiro de madrugada, qual conjunto de medidas é mais adequado?",
+      "options": [
+        "Luz noturna no trajeto, barras no banheiro e sem tapetes soltos",
+        "Tapete felpudo ao lado da cama e piso encerado para não acumular pó",
+        "Trancar o banheiro à noite e usar sedativo para dormir sem acordar",
+        "Mudar o quarto para o andar de cima, longe do barulho da cozinha"
+      ],
+      "correctIndex": 0,
+      "explanation": "Iluminação noturna no caminho até o banheiro, barras de apoio no box e junto ao vaso e retirada de tapetes soltos atacam os fatores extrínsecos da queda noturna. A adaptação funciona melhor em quem tem alto risco, de preferência orientada por terapeuta ocupacional."
+    },
+    {
+      "question": "Idoso de 77 anos, ativo, usa óculos multifocais para tudo e caiu ao descer o meio-fio. Qual orientação reduz o risco de quedas sem abrir mão da correção para perto?",
+      "options": [
+        "Lentes monofocais para caminhar e óculos separados para ler",
+        "Manter o multifocal, olhando para baixo ao descer degraus",
+        "Retirar os óculos ao sair de casa, para ampliar o campo visual",
+        "Trocar por lente bifocal, que distorce menos a visão inferior"
+      ],
+      "correctIndex": 0,
+      "explanation": "Bifocais e progressivas distorcem a parte inferior do campo visual, justamente onde estão degraus e meio-fio. Para o idoso ativo, monofocais nas atividades externas e óculos separados para leitura reduzem quedas."
+    },
+    {
+      "question": "Idosa de 80 anos com catarata bilateral densa sofreu três quedas no último ano. Qual intervenção sobre a visão tem efeito comprovado na redução de quedas?",
+      "options": [
+        "Cirurgia de catarata do primeiro olho",
+        "Colírio lubrificante de uso contínuo",
+        "Lente multifocal de grau mais forte",
+        "Suplemento de luteína e zeaxantina"
+      ],
+      "correctIndex": 0,
+      "explanation": "A catarata reduz a sensibilidade ao contraste e a percepção de profundidade. Em ensaio clínico com idosas, a cirurgia do primeiro olho reduziu a taxa de quedas em cerca de um terço em 12 meses."
+    },
+    {
+      "question": "Homem de 74 anos conta que caiu na sala depois de uma sensação de escurecimento visual, e a esposa diz que ele ficou alguns segundos sem responder. Qual é a prioridade da investigação?",
+      "options": [
+        "Investigar síncope de causa cardiovascular, com ECG",
+        "Investigar vertigem posicional, com Dix-Hallpike",
+        "Investigar epilepsia, com eletroencefalograma",
+        "Investigar sarcopenia, com dinamometria manual"
+      ],
+      "correctIndex": 0,
+      "explanation": "Queda com perda transitória de consciência é síncope até prova em contrário. A investigação começa pela causa cardiovascular — ECG, arritmias, estenose aórtica, hipotensão ortostática —, que é a de maior risco de morte."
+    },
+    {
+      "question": "Idosa de 83 anos, em uso de varfarina por fibrilação atrial, caiu da própria altura e bateu a cabeça. Está lúcida e sem déficit focal. Qual é a conduta?",
+      "options": [
+        "Solicitar tomografia de crânio pelo risco de hematoma",
+        "Observar em casa e voltar só se surgir déficit focal",
+        "Suspender a varfarina por um mês e reavaliar depois",
+        "Pedir radiografia de crânio para afastar uma fratura"
+      ],
+      "correctIndex": 0,
+      "explanation": "Idoso anticoagulado com trauma craniano tem alto risco de hematoma, inclusive subdural, que pode evoluir de forma silenciosa. A tomografia de crânio está indicada mesmo com exame neurológico normal."
+    },
+    {
+      "question": "Mulher de 78 anos fratura o colo do fêmur após tropeçar dentro de casa. Além da correção cirúrgica, o que essa fratura implica?",
+      "options": [
+        "Diagnóstico clínico de osteoporose, com indicação de tratar",
+        "Apenas trauma mecânico, sem necessidade de investigar o osso",
+        "Investigação óssea só se a densitometria der T-score ≤ −3,5",
+        "Indicação isolada de cálcio, sem necessidade de antirreabsortivo"
+      ],
+      "correctIndex": 0,
+      "explanation": "Fratura de fêmur por queda da própria altura é fratura por fragilidade e define osteoporose clinicamente, independentemente da densitometria. O tratamento da osteoporose e a prevenção de novas quedas fazem parte do cuidado."
+    }
+  ]
+}

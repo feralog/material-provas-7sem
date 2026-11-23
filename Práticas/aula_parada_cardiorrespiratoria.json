@@ -1,0 +1,217 @@
+{
+  "titulo": "Parada Cardiorrespiratória",
+  "eyebrow": "Práticas · Referência",
+  "subtitulo": "Do reconhecimento ao cuidado pós-PCR, no ritmo do ACLS",
+  "intro": "RCP de alta qualidade, ritmos chocáveis e não chocáveis, drogas, 5 Hs e 5 Ts e cuidados pós-PCR. Material de referência baseado no ACLS da AHA (2020/2025) — não há slide da aula deste tema.",
+  "questoes": [
+    {
+      "question": "Homem de 58 anos cai no corredor do hospital. Não responde ao chamado e apresenta movimentos respiratórios irregulares e espaçados, tipo gasping. O pulso carotídeo não é palpável com certeza em 10 segundos. Qual é a conduta?",
+      "options": [
+        "Tratar como PCR: pedir o desfibrilador e iniciar compressões",
+        "Posicionar em decúbito lateral e reavaliar o pulso em 1 minuto",
+        "Ofertar oxigênio por máscara e aguardar o monitor para decidir",
+        "Fazer duas ventilações de resgate antes de iniciar compressões"
+      ],
+      "correctIndex": 0,
+      "explanation": "Gasping é respiração agônica e equivale a ausência de respiração. Quem não responde, não respira normalmente e não tem pulso definido em até 10 segundos está em PCR: pede-se o desfibrilador e começam as compressões, na sequência C-A-B."
+    },
+    {
+      "question": "Durante a RCP de um adulto, qual combinação de frequência e profundidade das compressões corresponde à recomendação da AHA?",
+      "options": [
+        "100 a 120 por minuto, com 5 a 6 cm de profundidade",
+        "80 a 100 por minuto, com 4 a 5 cm de profundidade",
+        "120 a 140 por minuto, com 6 a 7 cm de profundidade",
+        "100 a 120 por minuto, com 3 a 4 cm de profundidade"
+      ],
+      "correctIndex": 0,
+      "explanation": "Compressões de 100 a 120/min, com pelo menos 5 cm e no máximo 6 cm de profundidade no adulto, permitindo o retorno completo do tórax. Esses parâmetros foram mantidos na atualização AHA 2025."
+    },
+    {
+      "question": "Na avaliação de uma equipe em simulação, o compressor mantém frequência e profundidade adequadas, mas apoia o peso do corpo sobre o tórax entre as compressões. Qual é a consequência desse erro?",
+      "options": [
+        "Impede o retorno total do tórax e reduz o enchimento cardíaco",
+        "Aumenta a fração de compressão e melhora a perfusão coronária",
+        "Eleva a pressão de perfusão cerebral sem efeito sobre o débito",
+        "Não altera a eficácia, desde que a profundidade esteja correta"
+      ],
+      "correctIndex": 0,
+      "explanation": "O retorno completo do tórax gera a pressão intratorácica negativa que traz o sangue de volta ao coração. Apoiar-se no tórax impede esse retorno, reduz o enchimento e, com ele, o débito da compressão seguinte."
+    },
+    {
+      "question": "Paciente em PCR é intubado e a posição do tubo é confirmada. Como passam a ser feitas compressões e ventilações?",
+      "options": [
+        "Compressões contínuas e 1 ventilação a cada 6 segundos",
+        "Ciclos de 30 compressões para 2 ventilações, com pausa",
+        "Ciclos de 15 compressões para 2 ventilações, com pausa",
+        "Compressões contínuas e 1 ventilação a cada 2 segundos"
+      ],
+      "correctIndex": 0,
+      "explanation": "Sem via aérea avançada, a relação é 30:2 com pausa para ventilar. Com via aérea avançada, as compressões ficam contínuas e se ventila 1 vez a cada 6 segundos (10/min); ventilar mais que isso reduz o retorno venoso."
+    },
+    {
+      "question": "Ao monitorar um paciente em PCR, quais ritmos indicam desfibrilação?",
+      "options": [
+        "Fibrilação ventricular e taquicardia ventricular sem pulso",
+        "Assistolia e atividade elétrica sem pulso de QRS largo",
+        "Fibrilação ventricular e atividade elétrica sem pulso",
+        "Taquicardia ventricular sem pulso e assistolia fina"
+      ],
+      "correctIndex": 0,
+      "explanation": "Os ritmos chocáveis são a FV e a TV sem pulso. AESP e assistolia não são chocáveis: o tratamento é RCP de qualidade, adrenalina o mais cedo possível e busca das causas reversíveis."
+    },
+    {
+      "question": "Paciente em FV recebe o primeiro choque bifásico de 200 J. Qual é o passo seguinte?",
+      "options": [
+        "Retomar a RCP imediatamente por 2 minutos, sem checar pulso",
+        "Checar o pulso carotídeo por 10 segundos antes de prosseguir",
+        "Aplicar um segundo choque logo em seguida, com 360 J bifásico",
+        "Administrar amiodarona 300 mg antes de retomar as compressões"
+      ],
+      "correctIndex": 0,
+      "explanation": "Depois do choque, a RCP é retomada na hora por 2 minutos, e só então o ritmo é reavaliado. O coração recém-desfibrilado raramente gera débito nos primeiros segundos, e checar pulso apenas prolonga a pausa."
+    },
+    {
+      "question": "O monitor de um paciente em PCR mostra uma linha reta. Antes de confirmar assistolia, o que deve ser feito?",
+      "options": [
+        "Conferir cabos, aumentar o ganho e trocar a derivação",
+        "Aplicar um choque de 200 J para afastar uma FV oculta",
+        "Administrar atropina 1 mg e repetir a leitura do ritmo",
+        "Interromper a RCP por 30 segundos para observar o ritmo"
+      ],
+      "correctIndex": 0,
+      "explanation": "É o protocolo da linha reta: cabos, ganho e derivação, porque uma FV fina pode parecer assistolia com ganho baixo. Confirmada a assistolia, não se choca: RCP e adrenalina 1 mg o mais cedo possível. A atropina saiu do algoritmo de PCR em 2010."
+    },
+    {
+      "question": "Qual é a dose e o intervalo da adrenalina durante a reanimação de um adulto em PCR?",
+      "options": [
+        "1 mg EV ou IO a cada 3 a 5 minutos",
+        "1 mg EV ou IO a cada 10 minutos",
+        "0,1 mg EV ou IO a cada 3 a 5 minutos",
+        "3 mg EV ou IO em dose única inicial"
+      ],
+      "correctIndex": 0,
+      "explanation": "Adrenalina 1 mg EV/IO a cada 3 a 5 minutos, sem dose máxima, nos ritmos chocáveis e não chocáveis. No não chocável entra assim que possível; no chocável, depois que as primeiras desfibrilações falharam (no algoritmo, após o 2º choque)."
+    },
+    {
+      "question": "Paciente persiste em FV após o terceiro choque, com RCP de qualidade e adrenalina já feita. Qual antiarrítmico e dose estão indicados?",
+      "options": [
+        "Amiodarona 300 mg EV em bolus; se persistir, 150 mg",
+        "Amiodarona 150 mg EV em 10 minutos e 1 mg/min em seguida",
+        "Adenosina 6 mg EV em bolus rápido; se persistir, 12 mg",
+        "Sulfato de magnésio 2 g EV em bolus; se persistir, 4 g"
+      ],
+      "correctIndex": 0,
+      "explanation": "Na FV/TV sem pulso refratária, amiodarona 300 mg em bolus, com segunda dose de 150 mg. A amiodarona 150 mg em 10 minutos é o esquema da TV com pulso; magnésio fica para a torsades de pointes."
+    },
+    {
+      "question": "Durante uma PCR em FV refratária, a amiodarona não está disponível. Qual é a alternativa recomendada e a dose inicial?",
+      "options": [
+        "Lidocaína 1 a 1,5 mg/kg EV",
+        "Procainamida 20 mg/min EV",
+        "Atropina 1 mg EV em bolus",
+        "Vasopressina 40 U EV única"
+      ],
+      "correctIndex": 0,
+      "explanation": "A lidocaína é a alternativa à amiodarona na FV/TV sem pulso refratária: 1 a 1,5 mg/kg, seguida de 0,5 a 0,75 mg/kg. A vasopressina foi retirada do algoritmo, e a atropina não tem papel na PCR."
+    },
+    {
+      "question": "Mulher de 70 anos em PCR apresenta no monitor um ritmo sinusal de 70 bpm, mas sem pulso palpável. Qual é a conduta?",
+      "options": [
+        "RCP, adrenalina o quanto antes e busca de causas reversíveis",
+        "Desfibrilação com 200 J e RCP imediata por mais 2 minutos",
+        "Cardioversão sincronizada com 100 J e reavaliação do pulso",
+        "Atropina 1 mg e marca-passo transcutâneo, mantendo a RCP"
+      ],
+      "correctIndex": 0,
+      "explanation": "Ritmo organizado sem pulso é atividade elétrica sem pulso (AESP), ritmo não chocável. O tratamento é RCP de qualidade, adrenalina 1 mg assim que possível e procura ativa dos 5 Hs e 5 Ts."
+    },
+    {
+      "question": "Homem vítima de trauma torácico entra em PCR em AESP. Ao exame: turgência jugular, desvio da traqueia e murmúrio vesicular abolido à direita, com hipertimpanismo. Qual intervenção trata a causa?",
+      "options": [
+        "Descompressão torácica imediata no lado direito",
+        "Pericardiocentese guiada pela ultrassonografia",
+        "Trombólise endovenosa durante a reanimação",
+        "Bicarbonato de sódio e gluconato de cálcio"
+      ],
+      "correctIndex": 0,
+      "explanation": "O quadro é de pneumotórax hipertensivo, um dos 5 Ts (tensão no tórax). A descompressão imediata do lado acometido é o tratamento, sem esperar radiografia; no adulto, o local atual é o 4º–5º espaço intercostal na linha axilar média."
+    },
+    {
+      "question": "Paciente renal crônico em hemodiálise, que faltou às duas últimas sessões, entra em PCR. Qual causa reversível deve ser tratada prontamente e com qual medida?",
+      "options": [
+        "Hipercalemia, com cálcio EV, bicarbonato e insulina com glicose",
+        "Hipoglicemia, com glicose a 50% EV em bolus durante a RCP",
+        "Hipocalcemia, com reposição lenta de cálcio após a reanimação",
+        "Hipermagnesemia, com sulfato de magnésio EV em bolus imediato"
+      ],
+      "correctIndex": 0,
+      "explanation": "Paciente dialítico sem diálise é hipercalêmico até prova em contrário. Hipo/hipercalemia é um dos 5 Hs; na hipercalemia, o cálcio estabiliza a membrana miocárdica, e bicarbonato e insulina com glicose deslocam o potássio para dentro da célula."
+    },
+    {
+      "question": "Durante a RCP de um paciente intubado, o ETCO₂ se mantém em 8 mmHg há vários minutos. O que esse dado indica e qual é a conduta?",
+      "options": [
+        "Compressão ineficaz: corrigir a técnica e trocar o compressor",
+        "Retorno da circulação: suspender compressões e checar o pulso",
+        "Intubação esofágica: retirar o tubo e reintubar de imediato",
+        "Hiperventilação: reduzir para 1 ventilação a cada 12 segundos"
+      ],
+      "correctIndex": 0,
+      "explanation": "ETCO₂ persistentemente baixo (classicamente < 10 mmHg) indica débito gerado pelas compressões insuficiente. A conduta é melhorar a qualidade: profundidade, frequência, retorno do tórax e troca do compressor."
+    },
+    {
+      "question": "Na RCP de um paciente intubado, o ETCO₂ sobe de forma abrupta e sustentada de 15 para 42 mmHg. Qual é a interpretação mais provável?",
+      "options": [
+        "Retorno da circulação espontânea",
+        "Deslocamento do tubo para o esôfago",
+        "Piora da qualidade das compressões",
+        "Efeito esperado de cada adrenalina"
+      ],
+      "correctIndex": 0,
+      "explanation": "A elevação abrupta e sustentada do ETCO₂ é sinal precoce de RCE, porque o débito espontâneo leva muito mais CO₂ aos pulmões. Confirma-se com ritmo e pulso na checagem. Tubo no esôfago, ao contrário, faria o ETCO₂ cair a quase zero."
+    },
+    {
+      "question": "Qual é o método mais confiável para confirmar e monitorar a posição do tubo traqueal durante a PCR?",
+      "options": [
+        "Capnografia quantitativa em forma de onda",
+        "Ausculta do epigástrio e dos dois hemitórax",
+        "Observação de vapor condensado dentro do tubo",
+        "Radiografia de tórax feita durante a reanimação"
+      ],
+      "correctIndex": 0,
+      "explanation": "A capnografia em forma de onda confirma a posição do tubo e segue monitorando a RCP. Ausculta e condensação no tubo são enganosos, e a radiografia não é viável nem confiável durante a reanimação."
+    },
+    {
+      "question": "Após 12 minutos de RCP, um homem de 62 anos tem retorno da circulação espontânea. Quais alvos de oxigenação e pressão devem ser mantidos?",
+      "options": [
+        "SatO₂ de 92 a 98%, com PAS ≥ 90 mmHg e PAM ≥ 65 mmHg",
+        "SatO₂ de 100% contínua, com PAS ≥ 140 mmHg e PAM ≥ 90 mmHg",
+        "SatO₂ de 88 a 92%, com PAS ≥ 80 mmHg e PAM ≥ 55 mmHg",
+        "SatO₂ acima de 99%, com PAS ≥ 120 mmHg e PAM ≥ 80 mmHg"
+      ],
+      "correctIndex": 0,
+      "explanation": "No pós-PCR, evita-se tanto hipóxia quanto hiperóxia: SatO₂ entre 92 e 98%. Hipotensão piora a lesão cerebral e miocárdica, por isso os alvos são PAS ≥ 90 mmHg e PAM ≥ 65 mmHg, com volume e vasopressor."
+    },
+    {
+      "question": "Homem de 55 anos recupera a circulação após PCR em FV e o ECG de 12 derivações mostra supradesnivelamento de ST em parede anterior. Qual é a conduta?",
+      "options": [
+        "Cateterismo cardíaco de emergência para reperfusão",
+        "Cateterismo eletivo após a recuperação neurológica",
+        "Amiodarona contínua e ecocardiograma em 48 horas",
+        "Trombólise apenas se houver nova PCR nas 24 horas"
+      ],
+      "correctIndex": 0,
+      "explanation": "Supra de ST após o RCE indica cateterismo de emergência, independentemente do estado neurológico. A trombose coronária é um dos 5 Ts, e a reperfusão trata a causa e reduz o risco de nova parada."
+    },
+    {
+      "question": "Após o RCE, a paciente permanece comatosa e não obedece a comandos. Qual medida neuroprotetora está indicada?",
+      "options": [
+        "Controle direcionado de temperatura entre 32 e 37,5 °C, evitando febre",
+        "Resfriamento a 28 °C por 72 horas para reduzir o consumo cerebral",
+        "Antitérmico apenas se a temperatura passar de 39 °C nos primeiros dias",
+        "Reaquecimento ativo até 38,5 °C para melhorar a perfusão cerebral"
+      ],
+      "correctIndex": 0,
+      "explanation": "Todo adulto que não obedece a comandos após o RCE recebe controle direcionado de temperatura, mantendo uma temperatura constante entre 32 e 37,5 °C, com prevenção ativa de febre depois. O prognóstico neurológico só é definido a partir de 72 horas após a normotermia."
+    }
+  ]
+}

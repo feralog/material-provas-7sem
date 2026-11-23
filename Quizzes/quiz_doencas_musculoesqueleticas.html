@@ -1,0 +1,987 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Doenças Musculoesqueléticas</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;450;500;600&display=swap" rel="stylesheet">
+<style>
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0}
+  body{background:#f5f3ef;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+  button{font:inherit;color:inherit;font-family:'IBM Plex Sans',system-ui,sans-serif}
+  a{color:#2b57cc;text-decoration:none}
+  a:hover{color:#1e3f9c;text-decoration:underline}
+  @keyframes qFade{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+  @keyframes qDrawer{from{opacity:0;transform:translateY(-4px)}to{opacity:1;transform:none}}
+
+  /* hovers — no canvas eram style-hover, aqui viram CSS de verdade */
+  .h-dark:hover{background:#2b57cc!important;transform:translateY(-1px)}
+  .h-darkflat:hover{background:#2b57cc!important}
+  .h-line:hover{border-color:#121a2b!important}
+  .h-ink:hover{color:#121a2b!important}
+  .h-opt:not(.locked):hover{border-color:var(--hbd)!important;transform:translateY(-1px)}
+  .h-card:hover{border-color:#121a2b!important;transform:translateY(-2px)}
+
+  /* tipografia do resumo */
+  .rsm{font-size:16.5px;line-height:1.72;color:#2a3141;max-width:64ch}
+  .rsm h2{font-family:'Newsreader',Georgia,serif;font-size:27px;font-weight:500;letter-spacing:-.02em;line-height:1.2;margin:42px 0 14px;padding-top:20px;border-top:1px solid #e4e0d8;text-wrap:pretty}
+  .rsm h2:first-child{margin-top:0;padding-top:0;border-top:0}
+  .rsm h3{font-family:'Newsreader',Georgia,serif;font-size:20px;font-weight:600;letter-spacing:-.01em;margin:28px 0 10px;text-wrap:pretty}
+  .rsm h4{font-family:'IBM Plex Mono',monospace;font-size:11px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:#2b57cc;margin:24px 0 8px}
+  .rsm p{margin:0 0 15px;text-wrap:pretty}
+  .rsm ul,.rsm ol{margin:0 0 15px;padding-left:22px}
+  .rsm li{margin-bottom:7px;text-wrap:pretty}
+  .rsm li>ul,.rsm li>ol{margin:7px 0 0}
+  .rsm strong{font-weight:600;color:#121a2b}
+  .rsm em{font-style:italic}
+  .rsm code{font-family:'IBM Plex Mono',monospace;font-size:.88em;background:#efece5;border:1px solid #e4e0d8;border-radius:5px;padding:1px 5px}
+  .rsm hr{border:0;border-top:1px solid #e4e0d8;margin:32px 0}
+  .rsm blockquote{margin:0 0 18px;padding:15px 18px;background:#f7f6f2;border-left:2.5px solid #2b57cc;border-radius:0 12px 12px 0;font-size:15px;line-height:1.65;color:#39404f}
+  .rsm blockquote p:last-child{margin-bottom:0}
+  .rsm .tbl{overflow-x:auto;margin:0 0 20px;border:1px solid #e4e0d8;border-radius:12px;background:#fff}
+  .rsm table{border-collapse:collapse;width:100%;font-size:14px;line-height:1.5}
+  .rsm th{text-align:left;font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.09em;text-transform:uppercase;color:#8a8578;font-weight:600;padding:11px 14px;background:#faf9f6;border-bottom:1px solid #e4e0d8;white-space:nowrap}
+  .rsm td{padding:11px 14px;border-bottom:1px solid #efece5;vertical-align:top;text-wrap:pretty}
+  .rsm tr:last-child td{border-bottom:0}
+  .rsm .key{background:#f2f6fb;border:1px solid #d6e2f4;border-radius:12px;padding:16px 18px;margin:0 0 18px}
+  .rsm .key>*:last-child{margin-bottom:0}
+
+  /* figuras — no resumo e na questao */
+  .fig{margin:0 0 20px;background:#fff;border:1px solid #e4e0d8;border-radius:14px;overflow:hidden}
+  .fig img{display:block;width:100%;height:auto;cursor:zoom-in}
+  .fig figcaption{font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.06em;color:#8a8578;padding:9px 13px;border-top:1px solid #efece5;background:#faf9f6;text-wrap:pretty}
+  .qfig{margin:0 0 20px}
+
+  /* lightbox */
+  #lb{position:fixed;inset:0;z-index:90;background:rgba(18,26,43,.86);display:none;align-items:center;justify-content:center;padding:24px;cursor:zoom-out}
+  #lb.on{display:flex;animation:qFade .16s ease}
+  #lb img{max-width:100%;max-height:100%;border-radius:10px;box-shadow:0 24px 60px rgba(0,0,0,.5)}
+
+  @media(max-width:560px){
+    .rsm{font-size:16px}
+    .rsm h2{font-size:24px}
+    .home-grid{grid-template-columns:1fr!important}
+  }
+</style>
+</head>
+<body>
+
+<div style="min-height:100vh;background:#f5f3ef;color:#121a2b;font-family:'IBM Plex Sans',system-ui,sans-serif">
+  <header style="position:sticky;top:0;z-index:30;background:rgba(245,243,239,.94);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid #e4e0d8">
+    <div style="max-width:720px;margin:0 auto;padding:12px 16px 10px" id="hdr"></div>
+  </header>
+  <main style="max-width:720px;margin:0 auto;padding:0 16px 80px" id="stage"></main>
+</div>
+<div id="lb"><img alt=""></div>
+
+<script type="text/html" id="resumoSrc"><blockquote><p>Material de referência: não há slide da aula deste tema. Baseado no Nelson Textbook of Pediatrics, nos documentos da SBP e da Sociedade Brasileira de Reumatologia, nos critérios de Jones revisados (AHA 2015) e nas Diretrizes Brasileiras de Febre Reumática (SBC).</p></blockquote>
+<h2>Dor no joelho do esportista: as apofisites</h2>
+<p>Apófise é um centro de ossificação onde se insere um tendão. No estirão, o osso cresce mais rápido do que a unidade músculo-tendão se alonga, e a tração repetida do esporte inflama a apófise. O quadro comum a todas: <strong>dor mecânica</strong>, que piora com a atividade e melhora com o repouso, <strong>dor localizada à palpação</strong> do ponto de inserção, sem febre, sem derrame e sem sintomas sistêmicos. O diagnóstico é clínico, e o tratamento é <strong>conservador</strong> — redução relativa da carga, gelo, analgésico, alongamento —, com cura no fechamento da placa de crescimento.</p>
+<div class="tbl"><table><thead><tr><th>Apofisite</th><th>Onde dói</th><th>Quem</th></tr></thead><tbody><tr><td><strong>Osgood-Schlatter</strong></td><td>Tuberosidade anterior da tíbia (inserção do tendão patelar), com proeminência</td><td>Adolescente em estirão, salto e corrida</td></tr><tr><td><strong>Sinding-Larsen-Johansson</strong></td><td>Polo inferior da patela</td><td>Pré-adolescente e adolescente que salta</td></tr><tr><td><strong>Sever</strong></td><td>Calcâneo (inserção do tendão calcâneo); compressão látero-lateral positiva</td><td>Escolar ativo — causa mais comum de dor no calcanhar nessa idade</td></tr></tbody></table></div>
+<blockquote><p>Apofisite não dá dor noturna que acorda, febre, massa nem derrame. Se aparecer qualquer um deles, a hipótese deixa de ser sobrecarga.</p></blockquote>
+<h2>Quadril que dói, joelho que engana: epifisiólise e Perthes</h2>
+<p>A dor do quadril é <strong>referida à coxa e ao joelho</strong> pelo nervo obturatório. Criança que manca e se queixa do joelho, com exame do joelho normal, precisa ter o <strong>quadril examinado</strong> — esse é o erro clássico.</p>
+<p>A <strong>epifisiólise proximal do fêmur</strong> é o escorregamento da epífise sobre o colo femoral pela placa de crescimento. Acomete o <strong>adolescente</strong> (10 a 16 anos), mais o menino, e o principal fator de risco é a <strong>obesidade</strong>. Fora dessa idade, ou em criança magra, procura-se causa endócrina (hipotireoidismo, deficiência de hormônio de crescimento, osteodistrofia renal). Ao exame, a perda da <strong>rotação interna</strong> e o <strong>sinal de Drehmann</strong> — o quadril roda externamente quando é fletido. A radiografia inclui <strong>AP e incidência em rã (Lauenstein) dos dois quadris</strong>, porque pode ser bilateral. É urgência: <strong>suspender a carga e fixar in situ</strong> com parafuso; não se tenta reduzir por manipulação, pelo risco de <strong>necrose avascular</strong>.</p>
+<p>A <strong>doença de Legg-Calvé-Perthes</strong> é a necrose avascular idiopática da cabeça femoral, típica do <strong>menino de 4 a 8 anos</strong>, muitas vezes baixo e com idade óssea atrasada. A claudicação é insidiosa e pouco dolorosa, com limitação de abdução e de rotação interna. A radiografia pode ser normal no início e evolui com esclerose, fratura subcondral (sinal do crescente), fragmentação e reossificação; a ressonância detecta antes. <strong>Quanto mais nova a criança no início, melhor o prognóstico</strong>. O tratamento busca manter a cabeça contida no acetábulo e o arco de movimento.</p>
+<h2>Quadril agudo e infecção osteoarticular</h2>
+<p>A <strong>sinovite transitória</strong> é a causa mais comum de dor aguda no quadril entre <strong>3 e 10 anos</strong>, muitas vezes dias após uma infecção de vias aéreas: criança em bom estado, <strong>afebril ou com febre baixa, que apoia o membro</strong>, com exames normais e pequeno derrame no ultrassom. Melhora em dias com anti-inflamatório e repouso, mas exige reavaliação.</p>
+<p>A <strong>artrite séptica</strong> é emergência: febre, <strong>recusa a apoiar</strong>, quadril mantido em flexão, abdução e rotação externa. Os <strong>critérios de Kocher</strong> (1999) separam as duas:</p>
+<div class="tbl"><table><thead><tr><th>Critério de Kocher</th><th>Corte</th></tr></thead><tbody><tr><td>Febre</td><td>&gt; 38,5 °C</td></tr><tr><td>Apoio</td><td>Incapacidade de apoiar o membro</td></tr><tr><td>VHS</td><td>&gt; 40 mm/h</td></tr><tr><td>Leucócitos</td><td>&gt; 12.000/mm³</td></tr></tbody></table></div>
+<p>Na derivação original, a probabilidade de artrite séptica foi de cerca de 3% com um critério, 40% com dois, 93% com três e 99% com quatro; a <strong>PCR &gt; 2 mg/dL</strong> foi acrescentada depois como quinto preditor. A conduta é <strong>artrocentese guiada por ultrassom</strong> (líquido purulento, em geral acima de 50.000 leucócitos/mm³ com predomínio de neutrófilos), hemocultura, <strong>drenagem cirúrgica</strong> e antibiótico venoso.</p>
+<p>A <strong>osteomielite hematogênica aguda</strong> prefere a <strong>metáfise dos ossos longos</strong>, onde o fluxo é lento. Febre, dor localizada intensa e recusa a usar o membro, com PCR e VHS elevadas. A <strong>radiografia é normal no início</strong> — reação periosteal e lise aparecem por volta de 10 a 14 dias —, e a <strong>ressonância</strong> é o exame de escolha precoce.</p>
+<div class="tbl"><table><thead><tr><th>Agente</th><th>Quando lembrar</th></tr></thead><tbody><tr><td><strong><em>Staphylococcus aureus</strong></em></td><td>O mais comum em todas as idades</td></tr><tr><td><em>Kingella kingae</em></td><td>6 meses a 4 anos; cresce mal em cultura (PCR)</td></tr><tr><td>Estreptococo do grupo B, gram-negativos</td><td>Recém-nascido</td></tr><tr><td><em>Salmonella</em></td><td>Anemia falciforme</td></tr><tr><td><em>Neisseria gonorrhoeae</em></td><td>Adolescente sexualmente ativo</td></tr></tbody></table></div>
+<h2>Artrite idiopática juvenil</h2>
+<p>AIJ (classificação ILAR) é <strong>artrite de causa desconhecida, com início antes dos 16 anos e duração de pelo menos 6 semanas</strong>, depois de excluídas infecção, leucemia, febre reumática e lúpus. É diagnóstico clínico e de exclusão: <strong>FAN e fator reumatoide não fazem o diagnóstico</strong>, apenas classificam e estimam risco.</p>
+<ul><li><strong>Oligoarticular</strong> (até 4 articulações nos 6 primeiros meses) — a forma <strong>mais comum</strong>; menina pequena, joelho à frente, assimétrica. O <strong>FAN positivo</strong> marca alto risco de <strong>uveíte anterior crônica</strong>, assintomática ("olho branco"), que pode levar a catarata, glaucoma e cegueira: <strong>lâmpada de fenda periódica</strong>, a cada 3 meses nos de maior risco.</li><li><strong>Poliarticular</strong> (5 ou mais) — a forma <strong>fator reumatoide positivo</strong> é da adolescente, simétrica, de pequenas articulações, erosiva, parecida com a artrite reumatoide do adulto.</li><li><strong>Sistêmica</strong> (doença de Still) — <strong>febre cotidiana</strong> com picos diários por ao menos 2 semanas, <strong>exantema salmão evanescente</strong> que acompanha a febre, hepatoesplenomegalia, linfonodomegalia e serosite; a artrite pode vir depois. Leucocitose, plaquetose e ferritina alta.</li><li><strong>Relacionada à entesite</strong> — menino maior, HLA-B27, entesite e sacroiliíte; a uveíte aqui é aguda, <strong>dolorosa e com olho vermelho</strong>.</li></ul>
+<blockquote><p>A complicação temida da AIJ sistêmica é a <strong>síndrome de ativação macrofágica</strong>: plaquetas e VHS <strong>caem</strong> enquanto a ferritina <strong>dispara</strong>. Na doença ativa comum, plaquetas e VHS sobem.</p></blockquote>
+<p>O tratamento combina anti-inflamatório, <strong>corticoide intra-articular</strong> na oligoarticular, <strong>metotrexato</strong> como droga modificadora de base e imunobiológicos (anti-TNF; anti-IL-1 e anti-IL-6 na sistêmica), com fisioterapia.</p>
+<h2>Febre reumática: critérios de Jones (AHA 2015)</h2>
+<p>Complicação tardia, não supurativa, da faringoamigdalite pelo estreptococo beta-hemolítico do grupo A, cerca de 2 a 4 semanas depois, típica dos 5 aos 15 anos. O diagnóstico exige <strong>evidência de infecção estreptocócica prévia</strong> (ASLO elevada ou em ascensão, cultura ou teste rápido) e, no primeiro surto, <strong>2 maiores ou 1 maior + 2 menores</strong>. As exceções são a <strong>coreia de Sydenham</strong> e a <strong>cardite indolente</strong>, que bastam sozinhas. O Brasil é população de <strong>risco moderado a alto</strong>.</p>
+<div class="tbl"><table><thead><tr><th></th><th>Baixo risco</th><th>Risco moderado/alto (Brasil)</th></tr></thead><tbody><tr><td>Maior articular</td><td>Poliartrite</td><td>Monoartrite, poliartrite ou <strong>poliartralgia</strong></td></tr><tr><td>Demais maiores</td><td>Cardite clínica ou <strong>subclínica</strong>, coreia, eritema marginado, nódulos subcutâneos</td><td>Iguais</td></tr><tr><td>Menor articular</td><td>Poliartralgia</td><td>Monoartralgia</td></tr><tr><td>Febre</td><td>≥ 38,5 °C</td><td>≥ 38 °C</td></tr><tr><td>VHS e/ou PCR</td><td>VHS ≥ 60 mm/h e/ou PCR ≥ 3 mg/dL</td><td>VHS ≥ 30 mm/h e/ou PCR ≥ 3 mg/dL</td></tr><tr><td>Eletrocardiograma</td><td>PR alargado</td><td>PR alargado</td></tr></tbody></table></div>
+<p><strong>Cardite subclínica</strong> é valvulite (regurgitação mitral patológica) vista só ao Doppler ecocardiograma, e desde 2015 conta como critério maior — todo caso suspeito faz ecocardiograma. A artrite é <strong>migratória, de grandes articulações, muito dolorosa, com resposta dramática ao anti-inflamatório e sem sequela</strong>; a cardite é o que deixa dano permanente.</p>
+<p>A <strong>profilaxia secundária</strong> é penicilina G benzatina <strong>a cada 21 dias</strong> (600.000 UI abaixo de 20 kg; 1.200.000 UI a partir de 20 kg). Sem cardite, até 21 anos ou 5 anos após o último surto; com cardite que regrediu ou lesão residual leve, até 25 anos ou 10 anos após o surto; com lesão valvar moderada a grave, até 40 anos ou por toda a vida. Vale sempre o critério que cobrir o período maior.</p>
+<h2>Dor do crescimento × sinais de alarme</h2>
+<p>A <strong>dor do crescimento</strong> é benigna e comum entre 3 e 12 anos: <strong>bilateral</strong>, nas pernas (coxas, panturrilhas, região poplítea) e <strong>não nas articulações</strong>, no fim do dia ou à noite — pode acordar a criança —, com <strong>melhora pela manhã</strong>, sem claudicação, <strong>exame físico normal</strong> e sem sintomas sistêmicos. Responde a massagem e analgésico. O diagnóstico é clínico e não exige exames de rotina.</p>
+<p>Sinais de alarme que obrigam a investigar:</p>
+<ul><li>dor <strong>unilateral</strong>, <strong>articular</strong>, com edema ou claudicação, ou que persiste de manhã;</li><li>dor que <strong>acorda repetidamente</strong>, desproporcional ao exame;</li><li>febre, emagrecimento, sudorese noturna, palidez, equimoses, hepatoesplenomegalia, linfonodomegalia;</li><li>dor óssea localizada, massa, citopenias, VHS ou desidrogenase láctica elevadas.</li></ul>
+<blockquote><p>A <strong>leucemia linfoblástica aguda</strong> é a neoplasia que mais imita AIJ: dor óssea ou articular noturna, citopenias (às vezes discretas) e VHS alto com <strong>plaquetas baixas ou normais</strong> — na AIJ ativa, as plaquetas sobem. <strong>Hemograma com esfregaço, e mielograma se houver dúvida, antes de qualquer corticoide.</strong></p></blockquote>
+<p>Entre os tumores ósseos, o <strong>osteossarcoma</strong> é o maligno mais comum do adolescente, na <strong>metáfise ao redor do joelho</strong>, com dor persistente e noturna muitas vezes atribuída a trauma esportivo, reação periosteal em <strong>raios de sol</strong> e <strong>triângulo de Codman</strong>. O <strong>sarcoma de Ewing</strong> prefere diáfise e ossos planos, com reação em <strong>casca de cebola</strong> e, às vezes, febre. O <strong>osteoma osteoide</strong>, benigno, causa dor noturna que melhora de forma marcante com anti-inflamatório.</p></script>
+<!-- Tutor local: define window.DEEPSEEK_KEY. O arquivo NAO vai para o repositorio,
+     entao online ele da 404 e o chat simplesmente nao aparece. -->
+<script src="../deepseek_key.js"></script>
+<script>
+/* ─────────────────────────────────────────────────────────────────────────────
+   CONTRATO DE DADOS — para adaptar a outro tema, troque apenas QUIZ e o resumo.
+   Cada item: { question, options[2..6], correctIndex, explanation }
+   ──────────────────────────────────────────────────────────────────────────── */
+var TITLE      = "Doenças Musculoesqueléticas";
+var EYEBROW    = "Pediatria · Referência";
+var DISCIPLINA = "PED";   // pasta de origem (PED, GO...) — usada pelo índice
+var SUBTITLE = "Do joelho do atleta à artrite que não pode passar despercebida";
+var INTRO    = "Apofisites, epifisiólise, Perthes, sinovite transitória × artrite séptica, osteomielite, AIJ, febre reumática (Jones 2015) e dor do crescimento × sinais de alarme. Material de referência (Nelson, SBP, AHA 2015, SBC) — não há slide da aula deste tema.";
+
+var QUIZ = [
+  {
+    "question": "Menino de 13 anos, jogador de futebol e de vôlei, tem dor na face anterior do joelho direito há 2 meses, que piora ao correr, saltar e ajoelhar. Há proeminência dolorosa na tuberosidade anterior da tíbia. Qual é o diagnóstico?",
+    "options": [
+      "Apofisite da tuberosidade da tíbia (Osgood-Schlatter)",
+      "Apofisite do polo inferior da patela (Sinding-Larsen)",
+      "Osteossarcoma da metáfise proximal da tíbia",
+      "Condromalácia patelar por mau alinhamento"
+    ],
+    "correctIndex": 0,
+    "explanation": "Osgood-Schlatter é apofisite de tração na inserção do tendão patelar, típica do adolescente em estirão que pratica esporte com salto e corrida; o diagnóstico é clínico. O tratamento é conservador (redução relativa da atividade, gelo, analgésico, alongamento de quadríceps e isquiotibiais) e o quadro se resolve com o fechamento da placa de crescimento. Sinding-Larsen-Johansson acomete o polo inferior da patela."
+  },
+  {
+    "question": "Menina de 10 anos, ginasta, tem dor nos dois calcanhares que piora após os treinos. A compressão látero-lateral do calcâneo reproduz a dor; não há edema nem febre. Qual é o diagnóstico?",
+    "options": [
+      "Apofisite do calcâneo (doença de Sever)",
+      "Fascite plantar por sobrecarga crônica",
+      "Fratura por estresse do segundo metatarso",
+      "Osteomielite subaguda do calcâneo"
+    ],
+    "correctIndex": 0,
+    "explanation": "A doença de Sever é a apofisite do calcâneo na inserção do tendão calcâneo e a causa mais comum de dor no calcanhar na criança em idade escolar ativa; o teste de compressão do calcâneo é positivo e muitas vezes é bilateral. Trata-se com ajuste da atividade, gelo, alongamento do tríceps sural e calcanheira."
+  },
+  {
+    "question": "Adolescente de 12 anos, obeso, refere dor no joelho esquerdo há 3 semanas e passou a mancar. O exame do joelho é normal; ao fletir o quadril esquerdo, a coxa roda externamente e a rotação interna está limitada. Qual é a conduta?",
+    "options": [
+      "Radiografia dos dois quadris em AP e em posição de rã",
+      "Ressonância do joelho esquerdo para lesão meniscal",
+      "Fisioterapia para síndrome patelofemoral do obeso",
+      "Repouso relativo e reavaliação do joelho em 4 semanas"
+    ],
+    "correctIndex": 0,
+    "explanation": "Dor no joelho com exame do joelho normal, em adolescente obeso que manca, é epifisiólise proximal do fêmur até prova em contrário: a dor do quadril é referida à coxa e ao joelho pelo nervo obturatório. A rotação externa ao fletir o quadril (sinal de Drehmann) e a perda da rotação interna apontam o quadril; a radiografia inclui AP e incidência em rã (Lauenstein) dos dois lados, porque o acometimento pode ser bilateral."
+  },
+  {
+    "question": "Confirmada a epifisiólise proximal do fêmur em um adolescente, qual é a conduta?",
+    "options": [
+      "Suspender a carga e encaminhar para fixação in situ",
+      "Redução fechada por manipulação e gesso pelvipodálico",
+      "Tração cutânea e fisioterapia com carga conforme a dor",
+      "Anti-inflamatório e retorno ambulatorial em 30 dias"
+    ],
+    "correctIndex": 0,
+    "explanation": "É urgência ortopédica: suspender a carga (muletas ou cadeira de rodas) e fixar a epífise in situ, em geral com parafuso canulado, para impedir que o escorregamento progrida. Tentar reduzir por manipulação aumenta o risco de necrose avascular da cabeça femoral, a complicação mais temida junto com a condrólise."
+  },
+  {
+    "question": "Menino de 6 anos, baixo e muito ativo, manca há 2 meses com dor leve e intermitente na coxa e no joelho, sem febre. Há limitação da abdução e da rotação interna do quadril direito, e a radiografia mostra cabeça femoral achatada, esclerótica e fragmentada. Qual é o diagnóstico?",
+    "options": [
+      "Doença de Legg-Calvé-Perthes",
+      "Epifisiólise proximal do fêmur",
+      "Sinovite transitória do quadril",
+      "Artrite séptica crônica do quadril"
+    ],
+    "correctIndex": 0,
+    "explanation": "Legg-Calvé-Perthes é a necrose avascular idiopática da cabeça femoral, mais comum em meninos de 4 a 8 anos, muitas vezes baixos e com idade óssea atrasada. A claudicação é insidiosa e pouco dolorosa, e a radiografia evolui com esclerose, fratura subcondral (sinal do crescente), fragmentação e reossificação. Quanto mais nova a criança no início, melhor o prognóstico."
+  },
+  {
+    "question": "Menino de 5 anos, resfriado há poucos dias, acordou mancando e com dor no quadril direito. Está afebril, em bom estado geral e apoia o membro; hemograma, VHS e PCR são normais, e o ultrassom mostra pequeno derrame. Qual é a conduta?",
+    "options": [
+      "Anti-inflamatório, repouso relativo e reavaliação próxima",
+      "Artrocentese de urgência e oxacilina venosa empírica",
+      "Drenagem cirúrgica do quadril ainda no mesmo dia",
+      "Ressonância sob sedação e biópsia da sinóvia"
+    ],
+    "correctIndex": 0,
+    "explanation": "Sinovite transitória é a causa mais comum de dor aguda no quadril entre 3 e 10 anos, muitas vezes após infecção de vias aéreas: criança afebril, que apoia o membro, com exames inflamatórios normais. Melhora em dias com anti-inflamatório e repouso; a reavaliação é obrigatória, porque febre, recusa de apoio ou piora apontam para artrite séptica."
+  },
+  {
+    "question": "Quais são os quatro critérios de Kocher para diferenciar artrite séptica de sinovite transitória do quadril?",
+    "options": [
+      "Febre > 38,5 °C, recusa de apoio, VHS > 40 mm/h e leucócitos > 12.000",
+      "Febre > 37,8 °C, dor noturna, PCR > 1 mg/dL e plaquetas > 450.000",
+      "Febre > 39 °C, derrame ao ultrassom, VHS > 20 mm/h e PCR elevada",
+      "Rigidez matinal, derrame articular, FAN positivo e VHS > 60 mm/h"
+    ],
+    "correctIndex": 0,
+    "explanation": "Kocher (1999): febre acima de 38,5 °C, incapacidade de apoiar o membro, VHS acima de 40 mm/h e leucócitos acima de 12.000/mm³. Na derivação original, a probabilidade de artrite séptica foi de cerca de 3% com um critério, 40% com dois, 93% com três e 99% com quatro; depois, a PCR acima de 2 mg/dL foi acrescentada como quinto preditor (Caird)."
+  },
+  {
+    "question": "Menina de 4 anos com febre de 39 °C recusa-se a apoiar a perna e mantém o quadril fletido, abduzido e em rotação externa; leucócitos 17.000/mm³ e VHS 65 mm/h. Qual é a conduta?",
+    "options": [
+      "Punção articular guiada por ultrassom e drenagem cirúrgica",
+      "Anti-inflamatório e reavaliação ambulatorial em 48 horas",
+      "Radiografia simples e, se normal, alta com analgésico",
+      "Antibiótico oral e retorno se a febre persistir"
+    ],
+    "correctIndex": 0,
+    "explanation": "Quatro critérios de Kocher dão probabilidade altíssima de artrite séptica, uma emergência: o pus destrói a cartilagem e, no quadril, a pressão intra-articular compromete a irrigação da cabeça femoral. Faz-se artrocentese (Gram, cultura, celularidade, em geral acima de 50.000 leucócitos/mm³ com predomínio de neutrófilos), hemocultura, drenagem cirúrgica e antibiótico venoso que cubra S. aureus."
+  },
+  {
+    "question": "Qual é o agente mais comum de osteomielite hematogênica aguda e de artrite séptica na criança, e qual agente ganha importância entre 6 meses e 4 anos?",
+    "options": [
+      "Staphylococcus aureus; Kingella kingae",
+      "Streptococcus pneumoniae; Salmonella",
+      "Haemophilus influenzae b; Pseudomonas",
+      "Streptococcus agalactiae; Neisseria"
+    ],
+    "correctIndex": 0,
+    "explanation": "S. aureus é o agente mais frequente em todas as idades. Kingella kingae, bacilo gram-negativo da orofaringe, é causa importante entre 6 meses e 4 anos e cresce mal em cultura, por isso o diagnóstico costuma exigir PCR. Salmonella lembra anemia falciforme; estreptococo do grupo B, o neonato; gonococo, o adolescente sexualmente ativo."
+  },
+  {
+    "question": "Escolar de 8 anos tem febre há 3 dias, dor intensa e localizada na metáfise distal do fêmur e recusa a andar; a PCR está elevada e a radiografia é normal. Qual é o próximo exame mais indicado?",
+    "options": [
+      "Ressonância magnética do fêmur",
+      "Nenhum, a radiografia normal afasta",
+      "Densitometria óssea do fêmur",
+      "Ultrassom com Doppler venoso"
+    ],
+    "correctIndex": 0,
+    "explanation": "Na osteomielite aguda a radiografia é normal no início: reação periosteal e lise óssea só aparecem por volta de 10 a 14 dias. A ressonância é o exame mais sensível e específico na fase inicial e mostra abscesso subperiosteal que precise de drenagem. A osteomielite hematogênica prefere a metáfise dos ossos longos, onde o fluxo sanguíneo é lento."
+  },
+  {
+    "question": "Pela classificação da ILAR, qual é a definição de artrite idiopática juvenil?",
+    "options": [
+      "Artrite sem causa definida, início antes dos 16 anos, por 6 semanas ou mais",
+      "Artrite com FAN positivo, início antes dos 18 anos, por 3 meses ou mais",
+      "Artralgia simétrica, início antes dos 16 anos, por 6 semanas ou mais",
+      "Artrite com fator reumatoide, início antes dos 12 anos, por 6 meses ou mais"
+    ],
+    "correctIndex": 0,
+    "explanation": "AIJ é artrite de causa desconhecida, iniciada antes dos 16 anos e persistente por pelo menos 6 semanas, depois de excluídas outras causas — infecção, leucemia, febre reumática, lúpus. FAN e fator reumatoide não fazem o diagnóstico: ajudam a classificar o subtipo e a estimar riscos, como o de uveíte."
+  },
+  {
+    "question": "Menina de 3 anos tem edema do joelho direito há 2 meses, sem dor importante e sem febre; o FAN é positivo. Além do tratamento articular, qual conduta é obrigatória?",
+    "options": [
+      "Exame oftalmológico com lâmpada de fenda periódico",
+      "Ecocardiograma para pesquisar cardite reumática",
+      "Audiometria pelo risco de perda auditiva autoimune",
+      "Ressonância de crânio para vasculite do SNC"
+    ],
+    "correctIndex": 0,
+    "explanation": "A AIJ oligoarticular (até 4 articulações nos 6 primeiros meses) é o subtipo mais comum, típico de meninas pequenas, com grandes articulações dos membros inferiores. Com FAN positivo, o risco de uveíte anterior crônica é alto: ela é assintomática ('olho branco') e pode causar catarata, glaucoma e cegueira, por isso o rastreio periódico com lâmpada de fenda, a cada 3 meses nos de maior risco."
+  },
+  {
+    "question": "Menino de 4 anos tem febre há 3 semanas, com picos de 39,5 °C uma ou duas vezes ao dia e temperatura normal entre eles, exantema róseo evanescente que aparece com a febre, hepatoesplenomegalia e artrite de joelhos. Há leucocitose, plaquetose e ferritina elevada. Excluídas infecção e neoplasia, qual é o diagnóstico?",
+    "options": [
+      "AIJ sistêmica (doença de Still)",
+      "Febre reumática com cardite",
+      "Lúpus eritematoso sistêmico",
+      "Doença de Kawasaki incompleta"
+    ],
+    "correctIndex": 0,
+    "explanation": "Febre cotidiana com picos diários por ao menos 2 semanas, exantema salmão evanescente que acompanha a febre, linfonodomegalia, hepatoesplenomegalia e serosite definem a AIJ sistêmica; FAN e fator reumatoide costumam ser negativos e a artrite pode surgir depois. A complicação grave é a síndrome de ativação macrofágica, sugerida por queda de plaquetas e de VHS com ferritina em ascensão."
+  },
+  {
+    "question": "Escolar de 9 anos tem, há 5 dias, artrite muito dolorosa que migra do tornozelo para o joelho e depois para o punho; teve faringite há 3 semanas e melhorou de forma dramática com anti-inflamatório. Qual característica é típica dessa artrite?",
+    "options": [
+      "É migratória, de grandes articulações, e não deixa sequela",
+      "É aditiva, de pequenas articulações, e evolui com erosão",
+      "É monoarticular, crônica, e acompanha uveíte assintomática",
+      "É simétrica, das mãos, e cursa com nódulos de Heberden"
+    ],
+    "correctIndex": 0,
+    "explanation": "A artrite da febre reumática é migratória, assimétrica, de grandes articulações, muito dolorosa, responde de forma dramática a salicilato ou anti-inflamatório e cura sem sequela. É a manifestação maior mais frequente; a cardite é a que deixa dano permanente."
+  },
+  {
+    "question": "Pelos critérios de Jones revisados (AHA 2015), o que muda em populações de risco moderado a alto, como a brasileira, em relação às de baixo risco?",
+    "options": [
+      "Monoartrite e poliartralgia podem contar como critério maior",
+      "A cardite deixa de exigir ecocardiograma para ser confirmada",
+      "A evidência de infecção estreptocócica passa a ser dispensável",
+      "A coreia de Sydenham passa a contar apenas como critério menor"
+    ],
+    "correctIndex": 0,
+    "explanation": "Em risco moderado a alto, o critério maior articular inclui monoartrite, poliartrite ou poliartralgia, e os menores passam a ser monoartralgia, febre ≥ 38 °C e VHS ≥ 30 mm/h e/ou PCR ≥ 3 mg/dL, além do PR alargado (no baixo risco: febre ≥ 38,5 °C e VHS ≥ 60 mm/h). Em qualquer população a evidência de estreptococo continua exigida, exceto na coreia e na cardite indolente."
+  },
+  {
+    "question": "Criança de 10 anos com febre de 38,5 °C, poliartrite migratória e ASLO elevada; o ecocardiograma mostra regurgitação mitral patológica, sem sopro audível. Pelos critérios de Jones (AHA 2015), o quadro:",
+    "options": [
+      "Fecha o diagnóstico, com dois critérios maiores e estreptococo",
+      "Não fecha, pois cardite sem sopro audível não é critério maior",
+      "Não fecha, pois exige cultura de orofaringe com estreptococo",
+      "Fecha apenas se houver também PR alargado no eletrocardiograma"
+    ],
+    "correctIndex": 0,
+    "explanation": "No primeiro surto bastam 2 critérios maiores, ou 1 maior e 2 menores, com evidência de infecção estreptocócica prévia (ASLO elevada ou em ascensão, cultura ou teste rápido). Desde 2015, a cardite subclínica — valvulite vista só ao Doppler ecocardiograma — conta como critério maior, então poliartrite, cardite e ASLO fecham o diagnóstico."
+  },
+  {
+    "question": "Adolescente de 14 anos teve febre reumática com cardite leve, que regrediu totalmente. Qual profilaxia secundária está indicada pelas diretrizes brasileiras?",
+    "options": [
+      "Penicilina benzatina 21/21 dias até 25 anos ou 10 anos do surto",
+      "Penicilina benzatina 21/21 dias até 21 anos ou 5 anos do surto",
+      "Penicilina benzatina 21/21 dias por toda a vida, sem exceção",
+      "Amoxicilina apenas antes de procedimentos dentários invasivos"
+    ],
+    "correctIndex": 0,
+    "explanation": "A penicilina G benzatina a cada 21 dias dura conforme o acometimento cardíaco: sem cardite, até 21 anos ou 5 anos após o último surto; cardite prévia com lesão residual leve ou que regrediu, até 25 anos ou 10 anos após o surto; lesão valvar moderada a grave, até 40 anos ou por toda a vida — vale o critério que cobrir o período maior (Diretrizes Brasileiras de Febre Reumática, SBC)."
+  },
+  {
+    "question": "Menina de 6 anos acorda algumas noites chorando com dor nas duas pernas (panturrilhas e coxas), que melhora com massagem; de manhã brinca normalmente. O exame físico é normal e não há claudicação. Qual é a conduta?",
+    "options": [
+      "Tranquilizar, orientar massagem e analgesia quando preciso",
+      "Hemograma, VHS e radiografia dos membros a cada episódio",
+      "Encaminhar à reumatologia para investigar AIJ poliarticular",
+      "Restringir atividade física até a dor desaparecer por completo"
+    ],
+    "correctIndex": 0,
+    "explanation": "Dor do crescimento é bilateral, nas pernas e não nas articulações, no fim do dia ou à noite, some pela manhã e vem com exame físico normal e sem sintomas sistêmicos. O diagnóstico é clínico, sem exames de rotina: tranquilizar a família, massagem e analgésico se necessário, reavaliando se surgir algum sinal de alarme."
+  },
+  {
+    "question": "Menino de 5 anos tem dor em joelhos e tornozelos há 4 semanas, que o acorda à noite, com febre baixa, palidez e equimoses. VHS elevado, hemoglobina 9 g/dL e plaquetas 110.000/mm³. O que deve ser feito antes de qualquer corticoide?",
+    "options": [
+      "Esfregaço de sangue periférico e mielograma",
+      "Iniciar prednisona pela hipótese de AIJ",
+      "Tranquilizar: são dores do crescimento",
+      "Antibiótico venoso para artrite séptica"
+    ],
+    "correctIndex": 0,
+    "explanation": "Dor que acorda a criança, desproporcional ao exame, com febre, palidez, equimoses, citopenias e VHS alto é leucemia até prova em contrário — a leucemia linfoblástica aguda é a neoplasia que mais imita AIJ. Corticoide antes do mielograma pode mascarar o diagnóstico; na AIJ ativa, ao contrário, as plaquetas costumam estar altas."
+  },
+  {
+    "question": "Adolescente de 15 anos, jogador de basquete, tem dor no joelho há 2 meses atribuída a trauma no treino, que piora à noite e não melhora com repouso, e massa endurecida na metáfise distal do fêmur. A radiografia mostra reação periosteal em 'raios de sol' e triângulo de Codman. Qual é a hipótese?",
+    "options": [
+      "Osteossarcoma da metáfise distal do fêmur",
+      "Sarcoma de Ewing da diáfise do fêmur",
+      "Osteoma osteoide da cortical do fêmur",
+      "Osteocondrite dissecante do côndilo"
+    ],
+    "correctIndex": 0,
+    "explanation": "O osteossarcoma é o tumor ósseo maligno mais comum do adolescente, na metáfise ao redor do joelho (fêmur distal, tíbia proximal), com dor persistente e noturna muitas vezes atribuída a trauma esportivo; a radiografia mostra reação periosteal em raios de sol e triângulo de Codman. O Ewing prefere diáfise e ossos planos, com reação em 'casca de cebola' e, às vezes, febre."
+  }
+];
+
+var LETTERS = ['A','B','C','D','E','F'];
+var SHUFFLE = true, LOCK = true;
+
+var S = { view:'home', started:false, finished:false, i:0, order:[], answers:[], open:{}, filter:'all', warn:false, chat:{} };
+
+function esc(s){ return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
+function pad(n){ return String(n).padStart(2,'0'); }
+
+function build(){
+  var qs = QUIZ.map(function(q,id){ return { question:q.question, options:q.options.slice(), correctIndex:q.correctIndex, explanation:q.explanation, image:q.image, imageCaption:q.imageCaption, id:id }; });
+  if (!SHUFFLE) return qs;
+  for (var i=qs.length-1;i>0;i--){ var j=Math.floor(Math.random()*(i+1)); var t=qs[i]; qs[i]=qs[j]; qs[j]=t; }
+  return qs.map(function(q){
+    var correct = q.options[q.correctIndex], o = q.options.slice();
+    for (var i=o.length-1;i>0;i--){ var j=Math.floor(Math.random()*(i+1)); var t=o[i]; o[i]=o[j]; o[j]=t; }
+    q.options = o; q.correctIndex = o.indexOf(correct); return q;
+  });
+}
+
+/* ── ações ─────────────────────────────────────────────────────────────────── */
+var A = {
+  home:      function(){ S.view='home'; S.started=false; S.finished=false; up(0); },
+  resumo:    function(){ S.view='resumo'; up(0); },
+  start:     function(){ var o=build(); S.view='quiz'; S.started=true; S.finished=false; S.i=0; S.order=o;
+                         S.answers=new Array(o.length).fill(null); S.open={}; S.filter='all'; S.warn=false; up(0); },
+  restart:   function(){ A.start(); },
+  sair:      function(){ S.view='home'; S.started=false; up(0); },   // guarda as respostas
+  retomar:   function(){ S.view='quiz'; S.started=true; S.finished=false; S.warn=false; up(0); },
+  go:        function(n){ if(n<0||n>S.order.length-1) return; S.i=n; S.warn=false; render(); },
+  jump:      function(n){ if(S.finished){ S.finished=false; S.i=n; S.warn=false; } else { if(n<0||n>S.order.length-1) return; S.i=n; S.warn=false; } up(0,'smooth'); },
+  pick:      function(n){ if(LOCK && S.answers[S.i]!==null) return; S.answers[S.i]=n; render(); },
+  prev:      function(){ A.go(S.i-1); },
+  next:      function(){ if(S.i<S.order.length-1) A.go(S.i+1); else A.finish(); },
+  finish:    function(){ var b=S.answers.filter(function(a){return a===null}).length;
+                         if(b>0 && !S.warn){ S.warn=true; render(); return; } S.finished=true; S.warn=false; up(0); },
+  force:     function(){ S.finished=true; S.warn=false; up(0); },
+  gotoBlank: function(){ var n=S.answers.findIndex(function(a){return a===null}); if(n>=0) A.go(n); },
+  back:      function(){ S.finished=false; S.warn=false; up(0); },
+  filter:    function(k){ S.filter=k; render(); },
+  toggle:    function(n){ S.open[n]=!S.open[n]; render(); },
+  toggleAll: function(){ var r=reviewList(), all=r.length>0 && r.every(function(x){return S.open[x.idx]});
+                         S.open={}; if(!all) r.forEach(function(x){ S.open[x.idx]=true; }); render(); }
+};
+function up(top, beh){ render(); window.scrollTo({ top: top||0, behavior: beh||'auto' }); }
+
+/* Aberto por duplo clique (file://) volta para o indice local; servido pela web,
+   volta para o publicado. Os dois listam os mesmos materiais. */
+function idxHref(){
+  var local = (typeof location !== 'undefined' && location.protocol === 'file:');
+  return local ? '../index_local.html' : '../index.html';
+}
+function emAndamento(){
+  return S.order.length > 0 && !S.finished &&
+         S.answers.some(function(a){ return a !== null; });
+}
+
+/* ── header ────────────────────────────────────────────────────────────────── */
+function renderHeader(){
+  var mono = "font-family:'IBM Plex Mono',monospace";
+  var left =
+    '<div style="min-width:0">' +
+      '<div style="display:flex;align-items:center;gap:8px;'+mono+';font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:#8a8578">' +
+        '<a href="'+idxHref()+'" class="h-ink" style="color:#2b57cc;text-decoration:none;white-space:nowrap">\u2190 Materiais</a>' +
+        '<span style="color:#d3cec4">/</span>' +
+        '<span style="overflow:hidden;text-overflow:ellipsis;white-space:nowrap">'+esc(EYEBROW)+'</span>' +
+      '</div>' +
+      '<h1 style="margin:1px 0 0;font-family:\'Newsreader\',Georgia,serif;font-size:20px;font-weight:500;letter-spacing:-.01em;line-height:1.15">'+esc(TITLE)+'</h1>' +
+    '</div>';
+
+  var right = '';
+  if (S.view === 'quiz' && S.started) {
+    var hit = counts().hit;
+    right = '<div style="display:flex;align-items:center;gap:10px;flex-shrink:0">' +
+              '<button type="button" data-act="sair" class="h-line" style="background:none;border:1px solid #ddd8ce;border-radius:9px;padding:6px 11px;'+mono+';font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;color:#5b6478;cursor:pointer;transition:border-color .15s ease">Sair</button>' +
+              '<div style="display:flex;align-items:center;gap:6px">' +
+                '<span style="'+mono+';font-size:15px;font-weight:600;letter-spacing:-.02em">'+hit+'</span>' +
+                '<span style="'+mono+';font-size:11px;color:#8a8578">/ '+S.order.length+'</span>' +
+              '</div></div>';
+  } else if (S.view !== 'home') {
+    right = '<button type="button" data-act="home" class="h-line" style="flex-shrink:0;background:none;border:1px solid #ddd8ce;border-radius:9px;padding:7px 13px;'+mono+';font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:#5b6478;cursor:pointer;transition:border-color .15s ease">← Início</button>';
+  }
+
+  var html = '<div style="display:flex;align-items:baseline;justify-content:space-between;gap:12px;margin-bottom:'+(S.view==='quiz'&&S.started?'10px':'2px')+'">'+left+right+'</div>';
+
+  if (S.view === 'quiz' && S.started) {
+    var c = counts();
+    var rail = S.order.map(function(q,n){
+      var a = S.answers[n], cur = n===S.i && !S.finished, bg = '#d3cec4';
+      if (a!==null) bg = (a===q.correctIndex) ? '#2e7d55' : '#c04437';
+      if (cur && a===null) bg = '#121a2b';
+      var st = a===null ? 'em branco' : (a===q.correctIndex ? 'correta' : 'incorreta');
+      return '<button type="button" data-act="jump" data-n="'+n+'" title="Questão '+(n+1)+' — '+st+'" aria-label="Questão '+(n+1)+' — '+st+'" style="flex:1 1 0;min-width:0;background:none;border:0;padding:13px 0;margin:0;cursor:pointer;display:flex;align-items:center;justify-content:center">' +
+             '<span style="display:block;width:100%;border-radius:99px;transition:height .18s ease,background .18s ease,box-shadow .18s ease;height:'+(cur?'17px':'9px')+';background:'+bg+';box-shadow:'+(cur?'0 0 0 3px rgba(18,26,43,.13)':'none')+'"></span></button>';
+    }).join('');
+    html += '<div><div style="display:flex;align-items:center;gap:3px">'+rail+'</div>' +
+            '<div style="display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:-2px">' +
+              '<div style="'+mono+';font-size:11px;letter-spacing:.04em;color:#5b6478">Questão '+pad(S.i+1)+' / '+S.order.length+'</div>' +
+              '<div style="display:flex;align-items:center;gap:12px;'+mono+';font-size:10.5px;color:#8a8578">' +
+                dot('#2e7d55',c.hit)+dot('#c04437',c.miss)+dot('#d3cec4',c.blank) +
+              '</div></div></div>';
+  }
+  document.getElementById('hdr').innerHTML = html;
+}
+function dot(color,n){ return '<span style="display:flex;align-items:center;gap:5px"><span style="width:7px;height:7px;border-radius:99px;background:'+color+';display:block"></span>'+n+'</span>'; }
+
+function counts(){
+  var hit=0, miss=0, blank=0;
+  S.answers.forEach(function(a,n){
+    if (a===null) blank++;
+    else if (S.order[n] && a===S.order[n].correctIndex) hit++;
+    else miss++;
+  });
+  return { hit:hit, miss:miss, blank:blank, total:S.order.length };
+}
+
+/* ── tela inicial ──────────────────────────────────────────────────────────── */
+function renderHome(){
+  var mono = "font-family:'IBM Plex Mono',monospace";
+  var secoes = (document.getElementById('resumoSrc').textContent.match(/<h2/g)||[]).length;
+  var cell = function(v,l){
+    return '<div style="background:#faf9f6;padding:16px 14px">' +
+      '<div style="'+mono+';font-size:22px;font-weight:500;letter-spacing:-.03em">'+v+'</div>' +
+      '<div style="'+mono+';font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:#8a8578;margin-top:3px">'+l+'</div></div>';
+  };
+  var card = function(act,tag,titulo,desc,cta){
+    return '<button type="button" data-act="'+act+'" class="h-card" style="display:flex;flex-direction:column;align-items:flex-start;gap:0;text-align:left;background:#fff;border:1px solid #e4e0d8;border-radius:18px;padding:24px 22px;cursor:pointer;transition:border-color .16s ease,transform .14s ease;box-shadow:0 1px 2px rgba(18,26,43,.04),0 12px 28px -20px rgba(18,26,43,.18)">' +
+      '<div style="'+mono+';font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:#2b57cc;margin-bottom:12px">'+tag+'</div>' +
+      '<div style="font-family:\'Newsreader\',Georgia,serif;font-size:26px;font-weight:500;letter-spacing:-.02em;line-height:1.15;margin-bottom:8px">'+titulo+'</div>' +
+      '<div style="font-size:14px;line-height:1.6;color:#5b6478;margin-bottom:18px;text-wrap:pretty">'+desc+'</div>' +
+      '<div style="'+mono+';font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:#121a2b">'+cta+'</div></button>';
+  };
+
+  document.getElementById('stage').innerHTML =
+    '<section style="padding:56px 0 0;animation:qFade .3s ease">' +
+      '<div style="'+mono+';font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:#2b57cc;margin-bottom:16px">Material de revisão</div>' +
+      '<h2 style="font-family:\'Newsreader\',Georgia,serif;font-size:40px;line-height:1.08;font-weight:400;letter-spacing:-.025em;margin:0 0 18px;text-wrap:pretty">'+esc(SUBTITLE)+'</h2>' +
+      '<p style="font-size:15.5px;line-height:1.65;color:#5b6478;margin:0 0 30px;max-width:52ch;text-wrap:pretty">'+esc(INTRO)+'</p>' +
+      '<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(108px,1fr));gap:1px;background:#e4e0d8;border:1px solid #e4e0d8;border-radius:14px;overflow:hidden;margin-bottom:32px">' +
+        cell(QUIZ.length,'Questões') + cell(secoes,'Seções') + cell('~'+Math.round(QUIZ.length*0.75),'Minutos') +
+      '</div>' +
+      '<div class="home-grid" style="display:grid;grid-template-columns:1fr 1fr;gap:12px">' +
+        (emAndamento()
+          ? card('retomar','Em andamento','Quiz',
+                 'Você parou na questão '+pad(S.i+1)+' de '+S.order.length+', com '+
+                 (S.order.length-counts().blank)+' respondida'+((S.order.length-counts().blank)===1?'':'s')+
+                 '. Suas respostas continuam guardadas.','Retomar →')
+          : card('start','Praticar','Quiz', QUIZ.length+' questões de múltipla escolha, com explicação assim que você responde e gabarito comentado no fim.','Começar →')) +
+        card('resumo','Estudar','Resumo','O conteúdo da aula em texto corrido, organizado em '+secoes+' seções para leitura antes da prova.','Ler →') +
+      '</div>' +
+      '<div style="margin-top:26px;display:flex;flex-wrap:wrap;align-items:center;gap:8px 18px;'+mono+';font-size:11px;color:#8a8578">' +
+        '<span>← →&nbsp; navegar</span><span>1–'+maxOpts()+'&nbsp; responder</span><span>Enter&nbsp; avançar</span>' +
+        (emAndamento() ? '<button type="button" data-act="start" class="h-ink" style="background:none;border:0;padding:0;'+mono+';font-size:11px;color:#8a8578;cursor:pointer;text-decoration:underline;text-underline-offset:3px">recomeçar do zero</button>' : '') +
+        '</div>' +
+    '</section>';
+}
+function maxOpts(){ return QUIZ.reduce(function(m,q){ return Math.max(m,q.options.length); },0); }
+
+/* ── resumo ────────────────────────────────────────────────────────────────── */
+function renderResumo(){
+  document.getElementById('stage').innerHTML =
+    '<section style="padding:34px 0 0;animation:qFade .3s ease">' +
+      '<div style="font-family:\'IBM Plex Mono\',monospace;font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:#2b57cc;margin-bottom:14px">Resumo</div>' +
+      '<div class="rsm">' + document.getElementById('resumoSrc').textContent + '</div>' +
+      '<div style="display:flex;flex-wrap:wrap;gap:9px;margin-top:38px;padding-top:24px;border-top:1px solid #e4e0d8">' +
+        '<button type="button" data-act="start" class="h-darkflat" style="background:#121a2b;color:#f5f3ef;border:0;border-radius:11px;padding:13px 24px;font-size:14px;font-weight:500;cursor:pointer;transition:background .16s ease">Fazer o quiz →</button>' +
+        '<button type="button" data-act="home" class="h-line" style="background:none;border:1px solid #ddd8ce;border-radius:11px;padding:13px 22px;font-size:14px;cursor:pointer;transition:border-color .15s ease">Voltar ao início</button>' +
+      '</div></section>';
+}
+
+/* imagem da questao — data URI ja resolvida pelo montar_quiz.py */
+function figura(q, cls){
+  if (!q.image) return '';
+  return '<figure class="fig'+(cls?' '+cls:'')+'"><img src="'+q.image+'" alt="'+esc(q.imageCaption||'Imagem da questão')+'">' +
+         (q.imageCaption ? '<figcaption>'+esc(q.imageCaption)+'</figcaption>' : '') + '</figure>';
+}
+
+/* ── questão ───────────────────────────────────────────────────────────────── */
+function renderQuestion(){
+  var mono = "font-family:'IBM Plex Mono',monospace";
+  var q = S.order[S.i], ans = S.answers[S.i], reveal = ans !== null;
+
+  var status = 'Não respondida', sColor = '#8a8578';
+  if (reveal) { var ok = ans===q.correctIndex; status = ok?'Você acertou':'Você errou'; sColor = ok?'#2e7d55':'#c04437'; }
+
+  var opts = q.options.map(function(text,n){
+    var isC = n===q.correctIndex, isMine = n===ans;
+    var bd='#e4e0d8', bg='#fff', fg='#121a2b', bBg='#f2efe9', bFg='#8a8578', mark='', mColor='', op='1', hbd='#2b57cc';
+    if (reveal) {
+      op = (isC||isMine) ? '1' : '.62';
+      if (isC)               { bd='#8fc7a7'; bg='#eef7f1'; fg='#1f5c3e'; bBg='#2e7d55'; bFg='#fff'; mark='✓'; mColor='#2e7d55'; }
+      if (isMine && !isC)    { bd='#e0a49a'; bg='#fdf0ee'; fg='#8f2f25'; bBg='#c04437'; bFg='#fff'; mark='✕'; mColor='#c04437'; }
+    } else if (isMine)       { bd='#121a2b'; bg='#f7f6f2'; bBg='#121a2b'; bFg='#f5f3ef'; }
+    var locked = reveal && LOCK;
+    return '<button type="button" data-act="pick" data-n="'+n+'" class="h-opt'+(locked?' locked':'')+'" style="--hbd:'+hbd+';display:flex;gap:13px;align-items:flex-start;width:100%;text-align:left;padding:14px 15px;border-radius:13px;font-size:15px;line-height:1.5;transition:border-color .15s ease,background .15s ease,transform .12s ease;border:1.5px solid '+bd+';background:'+bg+';color:'+fg+';cursor:'+(locked?'default':'pointer')+';opacity:'+op+'">' +
+      '<span style="flex-shrink:0;width:24px;height:24px;border-radius:7px;display:flex;align-items:center;justify-content:center;'+mono+';font-size:11.5px;font-weight:600;margin-top:1px;background:'+bBg+';color:'+bFg+'">'+LETTERS[n]+'</span>' +
+      '<span style="flex:1;min-width:0;text-wrap:pretty">'+esc(text)+'</span>' +
+      (mark ? '<span style="flex-shrink:0;'+mono+';font-size:14px;font-weight:600;margin-top:1px;color:'+mColor+'">'+mark+'</span>' : '') +
+      '</button>';
+  }).join('');
+
+  var expl = reveal ? '<div style="margin-top:20px;padding:16px 18px;background:#f7f6f2;border-left:2.5px solid #2b57cc;border-radius:0 12px 12px 0;animation:qFade .26s ease">' +
+      '<div style="'+mono+';font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:#2b57cc;margin-bottom:8px">Por quê</div>' +
+      '<p style="margin:0;font-size:14.5px;line-height:1.68;color:#39404f;text-wrap:pretty">'+esc(q.explanation)+'</p></div>' : '';
+
+  var blank = counts().blank;
+  var warn = S.warn ? '<div style="margin-top:14px;padding:15px 17px;background:#fdf7e9;border:1px solid #e8d5a3;border-radius:14px;animation:qFade .22s ease">' +
+      '<p style="margin:0 0 12px;font-size:14px;line-height:1.55;color:#6b5620">'+blank+(blank===1?' questão ainda está em branco.':' questões ainda estão em branco.')+' Você pode voltar nelas ou finalizar assim mesmo.</p>' +
+      '<div style="display:flex;flex-wrap:wrap;gap:8px">' +
+        '<button type="button" data-act="gotoBlank" style="background:#121a2b;color:#f5f3ef;border:0;border-radius:9px;padding:9px 16px;font-size:13px;font-weight:500;cursor:pointer">Ir para a 1ª em branco</button>' +
+        '<button type="button" data-act="force" style="background:none;color:#6b5620;border:1px solid #e8d5a3;border-radius:9px;padding:9px 16px;font-size:13px;cursor:pointer">Finalizar assim mesmo</button>' +
+      '</div></div>' : '';
+
+  var last = S.i === S.order.length-1;
+  var early = !last && (S.order.length - blank) > 0;
+
+  document.getElementById('stage').innerHTML =
+    '<section style="padding:26px 0 0">' +
+      '<article style="background:#fff;border:1px solid #e4e0d8;border-radius:18px;padding:26px 22px 24px;box-shadow:0 1px 2px rgba(18,26,43,.04),0 12px 28px -18px rgba(18,26,43,.18)">' +
+        '<div style="display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:14px">' +
+          '<div style="'+mono+';font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:#2b57cc">Questão '+pad(S.i+1)+'</div>' +
+          '<div style="'+mono+';font-size:10.5px;letter-spacing:.06em;color:'+sColor+'">'+status+'</div>' +
+        '</div>' +
+        '<h2 style="font-family:\'Newsreader\',Georgia,serif;font-size:22px;line-height:1.42;font-weight:400;letter-spacing:-.012em;margin:0 0 22px;text-wrap:pretty">'+esc(q.question)+'</h2>' +
+        figura(q, 'qfig') +
+        '<div style="display:flex;flex-direction:column;gap:9px">'+opts+'</div>' + expl +
+        (reveal ? chatBox(q, ans===q.correctIndex) : '') +
+      '</article>' + warn +
+      '<div style="display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:18px">' +
+        '<button type="button" data-act="prev" class="h-line" style="background:none;border:1px solid #ddd8ce;border-radius:11px;padding:12px 18px;font-size:14px;cursor:pointer;transition:border-color .15s ease,color .15s ease;color:'+(S.i===0?'#c4bfb4':'#121a2b')+';pointer-events:'+(S.i===0?'none':'auto')+'">← Anterior</button>' +
+        '<div style="display:flex;align-items:center;gap:8px">' +
+          (early ? '<button type="button" data-act="finish" class="h-ink" style="background:none;border:0;padding:12px 6px;'+mono+';font-size:11.5px;letter-spacing:.06em;text-transform:uppercase;color:#8a8578;cursor:pointer;text-decoration:underline;text-underline-offset:3px">Finalizar</button>' : '') +
+          '<button type="button" data-act="next" class="h-darkflat" style="background:#121a2b;color:#f5f3ef;border:0;border-radius:11px;padding:12px 22px;font-size:14px;font-weight:500;cursor:pointer;transition:background .16s ease">'+(last?'Finalizar':'Próxima →')+'</button>' +
+        '</div></div></section>';
+}
+
+/* ── resultado + gabarito comentado ────────────────────────────────────────── */
+function reviewList(){
+  return S.order.map(function(q,n){
+    var a = S.answers[n], ok = a!==null && a===q.correctIndex;
+    return { idx:n, ok:ok, blank:a===null, q:q, a:a };
+  }).filter(function(r){
+    return S.filter==='all' || (S.filter==='wrong'&&!r.ok&&!r.blank) || (S.filter==='right'&&r.ok) || (S.filter==='blank'&&r.blank);
+  });
+}
+
+function renderResult(){
+  var mono = "font-family:'IBM Plex Mono',monospace";
+  var c = counts(), pct = c.total ? Math.round(c.hit/c.total*100) : 0;
+
+  var title='Precisa revisar', msg='Releia o material com atenção e refaça o quiz — as explicações abaixo cobrem cada erro.';
+  if (pct>=90)      { title='Domínio sólido';   msg='Desempenho excelente. Confira as explicações das que escaparam e siga em frente.'; }
+  else if (pct>=70) { title='Bom desempenho';   msg='Base consistente. Revise os pontos errados abaixo para fechar as lacunas.'; }
+  else if (pct>=50) { title='Meio do caminho';  msg='Você acertou o essencial, mas há lacunas. Comece pelo filtro de erradas.'; }
+
+  var stat = function(v,l,color){
+    return '<div style="background:#faf9f6;padding:14px 10px">' +
+      '<div style="'+mono+';font-size:19px;font-weight:500;color:'+color+'">'+v+'</div>' +
+      '<div style="'+mono+';font-size:9.5px;letter-spacing:.09em;text-transform:uppercase;color:#8a8578;margin-top:2px">'+l+'</div></div>';
+  };
+
+  var fdefs = [['all','Todas',c.total],['wrong','Erradas',c.miss],['right','Certas',c.hit],['blank','Em branco',c.blank]];
+  var filters = fdefs.map(function(f){
+    var on = S.filter===f[0];
+    return '<button type="button" data-act="filter" data-k="'+f[0]+'" class="h-line" style="border-radius:99px;padding:8px 14px;font-size:13px;cursor:pointer;transition:all .15s ease;border:1px solid '+(on?'#121a2b':'#ddd8ce')+';background:'+(on?'#121a2b':'transparent')+';color:'+(on?'#f5f3ef':'#5b6478')+'">'+f[1]+' '+f[2]+'</button>';
+  }).join('');
+
+  var list = reviewList();
+  var allOpen = list.length>0 && list.every(function(r){ return S.open[r.idx]; });
+
+  var cards = list.map(function(r){
+    var numBg='#f0ede7', numFg='#8a8578';
+    if (!r.blank) { if (r.ok) { numBg='#e3f0e8'; numFg='#1f5c3e'; } else { numBg='#fbe6e2'; numFg='#8f2f25'; } }
+    var open = !!S.open[r.idx];
+    var body = '';
+    if (open) {
+      var opts = r.q.options.map(function(text,n){
+        var isC = n===r.q.correctIndex, isMine = n===r.a;
+        var bd='#eeebe4', bg='#fbfaf8', fg='#5b6478', bBg='#f0ede7', bFg='#8a8578', tag='', tBg='', tFg='';
+        if (isC)            { bd='#bcdcc9'; bg='#eef7f1'; fg='#1f5c3e'; bBg='#2e7d55'; bFg='#fff'; tag='Correta'; tBg='#d9ede1'; tFg='#1f5c3e'; }
+        if (isMine && !isC) { bd='#eec4bd'; bg='#fdf0ee'; fg='#8f2f25'; bBg='#c04437'; bFg='#fff'; tag='Sua resposta'; tBg='#f7ddd8'; tFg='#8f2f25'; }
+        if (isMine && isC)  { tag='Sua resposta ✓'; }
+        return '<div style="display:flex;gap:11px;align-items:flex-start;padding:11px 13px;border-radius:11px;font-size:14px;line-height:1.5;border:1px solid '+bd+';background:'+bg+';color:'+fg+'">' +
+          '<span style="flex-shrink:0;width:21px;height:21px;border-radius:6px;display:flex;align-items:center;justify-content:center;'+mono+';font-size:10.5px;font-weight:600;background:'+bBg+';color:'+bFg+'">'+LETTERS[n]+'</span>' +
+          '<span style="flex:1;min-width:0;text-wrap:pretty">'+esc(text)+'</span>' +
+          (tag ? '<span style="flex-shrink:0;'+mono+';font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;padding:3px 7px;border-radius:6px;margin-top:1px;background:'+tBg+';color:'+tFg+'">'+tag+'</span>' : '') +
+          '</div>';
+      }).join('');
+      body = '<div style="padding:2px 15px 18px;animation:qDrawer .2s ease">' +
+        '<div style="height:1px;background:#eeebe4;margin:0 0 16px"></div>' +
+        '<p style="font-family:\'Newsreader\',Georgia,serif;font-size:18px;line-height:1.5;margin:0 0 16px;text-wrap:pretty">'+esc(r.q.question)+'</p>' +
+        figura(r.q) +
+        '<div style="display:flex;flex-direction:column;gap:7px">'+opts+'</div>' +
+        '<div style="margin-top:16px;padding:14px 16px;background:#f7f6f2;border-left:2.5px solid #2b57cc;border-radius:0 11px 11px 0">' +
+          '<div style="'+mono+';font-size:9.5px;letter-spacing:.16em;text-transform:uppercase;color:#2b57cc;margin-bottom:7px">Por quê</div>' +
+          '<p style="margin:0;font-size:14px;line-height:1.65;color:#39404f;text-wrap:pretty">'+esc(r.q.explanation)+'</p></div>' +
+        '<button type="button" data-act="jump" data-n="'+r.idx+'" style="margin-top:14px;background:none;border:0;padding:0;'+mono+';font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:#2b57cc;cursor:pointer;text-decoration:underline;text-underline-offset:3px">Abrir no quiz →</button></div>';
+    }
+    return '<div style="background:#fff;border:1px solid '+(open?'#c9c3b6':'#e4e0d8')+';border-radius:14px;overflow:hidden;transition:border-color .15s ease">' +
+      '<button type="button" data-act="toggle" data-n="'+r.idx+'" style="display:flex;align-items:center;gap:12px;width:100%;text-align:left;background:none;border:0;padding:14px 15px;cursor:pointer">' +
+        '<span style="flex-shrink:0;width:28px;height:28px;border-radius:8px;display:flex;align-items:center;justify-content:center;'+mono+';font-size:12px;font-weight:600;background:'+numBg+';color:'+numFg+'">'+pad(r.idx+1)+'</span>' +
+        '<span style="flex:1;min-width:0;font-size:14px;line-height:1.45;color:#39404f;overflow:hidden;text-overflow:ellipsis;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical">'+esc(r.q.question)+'</span>' +
+        '<span style="flex-shrink:0;'+mono+';font-size:16px;color:#8a8578;width:16px;text-align:center">'+(open?'−':'+')+'</span>' +
+      '</button>' + body + '</div>';
+  }).join('');
+
+  document.getElementById('stage').innerHTML =
+    '<section style="padding:34px 0 0;animation:qFade .3s ease">' +
+      '<div style="'+mono+';font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:#2b57cc;margin-bottom:14px">Resultado</div>' +
+      '<h2 style="font-family:\'Newsreader\',Georgia,serif;font-size:36px;line-height:1.12;font-weight:400;letter-spacing:-.025em;margin:0 0 8px">'+title+'</h2>' +
+      '<p style="font-size:15px;line-height:1.6;color:#5b6478;margin:0 0 24px;max-width:48ch;text-wrap:pretty">'+msg+'</p>' +
+      '<div style="height:8px;border-radius:99px;background:#e4e0d8;overflow:hidden;margin-bottom:10px">' +
+        '<div style="height:100%;border-radius:99px;background:#121a2b;transition:width .7s cubic-bezier(.22,1,.36,1);width:'+pct+'%"></div></div>' +
+      '<div style="display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:#e4e0d8;border:1px solid #e4e0d8;border-radius:14px;overflow:hidden;margin-bottom:34px">' +
+        stat(c.hit,'Certas','#2e7d55')+stat(c.miss,'Erradas','#c04437')+stat(c.blank,'Branco','#8a8578')+stat(pct+'%','Aproveit.','#2b57cc') +
+      '</div>' +
+      '<div style="display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-bottom:14px">' +
+        '<h3 style="font-family:\'Newsreader\',Georgia,serif;font-size:22px;font-weight:500;letter-spacing:-.015em;margin:0">Gabarito comentado</h3>' +
+        '<button type="button" data-act="toggleAll" class="h-ink" style="background:none;border:0;padding:6px 0;'+mono+';font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:#5b6478;cursor:pointer;text-decoration:underline;text-underline-offset:3px">'+(allOpen?'Recolher tudo':'Expandir tudo')+'</button>' +
+      '</div>' +
+      '<div style="display:flex;gap:7px;flex-wrap:wrap;margin-bottom:16px">'+filters+'</div>' +
+      '<div style="display:flex;flex-direction:column;gap:8px">'+cards+'</div>' +
+      (list.length===0 ? '<div style="padding:38px 16px;text-align:center;color:#8a8578;font-size:14px;border:1px dashed #ddd8ce;border-radius:14px">Nenhuma questão neste filtro.</div>' : '') +
+      '<div style="display:flex;flex-wrap:wrap;gap:9px;margin-top:28px;padding-top:24px;border-top:1px solid #e4e0d8">' +
+        '<button type="button" data-act="restart" class="h-darkflat" style="background:#121a2b;color:#f5f3ef;border:0;border-radius:11px;padding:13px 24px;font-size:14px;font-weight:500;cursor:pointer;transition:background .16s ease">Refazer o quiz</button>' +
+        '<button type="button" data-act="back" class="h-line" style="background:none;border:1px solid #ddd8ce;border-radius:11px;padding:13px 22px;font-size:14px;cursor:pointer;transition:border-color .15s ease">Voltar às questões</button>' +
+        '<button type="button" data-act="resumo" class="h-line" style="background:none;border:1px solid #ddd8ce;border-radius:11px;padding:13px 22px;font-size:14px;cursor:pointer;transition:border-color .15s ease">Ler o resumo</button>' +
+      '</div></section>';
+}
+
+/* ── render + eventos ──────────────────────────────────────────────────────── */
+
+/* ─── Tutor DeepSeek — só local, só quando a questão foi errada ──────────────
+   A chave vem de ../deepseek_key.js, que não existe na versão publicada: online
+   o arquivo dá 404, dsOn() vira false e o chat simplesmente não é renderizado.
+   O histórico fica em S.chat[idDaQuestao] e sobrevive ao re-render do stage. */
+var DS_MODEL = 'deepseek-flash';
+var DS_URL   = 'https://api.deepseek.com/chat/completions';
+var NLJS     = String.fromCharCode(10);
+var DS_MONO  = "font-family:'IBM Plex Mono',monospace";
+var DS_SANS  = "font-family:'IBM Plex Sans',system-ui,sans-serif";
+
+function dsOn(){ return typeof window.DEEPSEEK_KEY === 'string' && window.DEEPSEEK_KEY.length > 10; }
+
+
+/* ─── markdown do chat ───────────────────────────────────────────────────────
+   O modelo responde em markdown (**negrito**, listas, `codigo`, tabelas). O texto
+   vem de fora, entao a ordem importa: ESCAPA TUDO primeiro com esc() e so depois
+   aplica formatacao — assim nenhuma tag vinda da resposta vira HTML de verdade.
+   Como esc() ja trocou > por &gt;, a citacao casa com &gt; e nao com >.
+   Trechos de codigo saem de cena por um marcador NUL, que nao pode existir
+   no texto escapado, e voltam no fim — assim ` ` protege o que esta dentro. */
+function mdIn(t){
+  var Z = String.fromCharCode(0), codes = [];
+  t = t.replace(/`([^`]+)`/g, function(_, c){
+    codes.push(c);
+    return Z + 'c' + (codes.length - 1) + Z;
+  });
+  t = t.replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>');
+  t = t.replace(/__([^_]+)__/g, '<strong>$1</strong>');
+  t = t.replace(/(^|[\s(])\*([^*\n]+)\*/g, '$1<em>$2</em>');
+  t = t.replace(/(^|[\s(])_([^_\n]+)_/g, '$1<em>$2</em>');
+  t = t.replace(/\[([^\]]+)\]\((https?:\/\/[^)\s]+)\)/g,
+    '<a href="$2" target="_blank" rel="noopener" style="color:#2b57cc">$1</a>');
+  return t.replace(new RegExp(Z + 'c([0-9]+)' + Z, 'g'), function(_, i){
+    return '<code style="' + DS_MONO + ';font-size:12px;background:#f2efe9;' +
+           'border-radius:4px;padding:1px 5px">' + codes[i] + '</code>';
+  });
+}
+
+function mdChat(txt){
+  var Z = String.fromCharCode(0);
+  var t = esc(String(txt == null ? '' : txt));
+  var blocos = [];
+  t = t.replace(/```[a-zA-Z]*\n?([\s\S]*?)```/g, function(_, c){
+    blocos.push(c.replace(/\n+$/, ''));
+    return Z + 'b' + (blocos.length - 1) + Z;
+  });
+
+  var linhas = t.split('\n'), out = [], lista = null, par = [];
+  function fechaLista(){ if (lista) { out.push('</' + lista + '>'); lista = null; } }
+  function fechaPar(){
+    if (par.length) { out.push('<p style="margin:0 0 9px">' + mdIn(par.join(' ')) + '</p>'); par = []; }
+  }
+  function fecha(){ fechaPar(); fechaLista(); }
+
+  for (var i = 0; i < linhas.length; i++){
+    var l = linhas[i], t2 = l.trim();
+    if (!t2) { fecha(); continue; }
+
+    var bl = t2.match(new RegExp('^' + Z + 'b([0-9]+)' + Z + '$'));
+    if (bl) {
+      fecha();
+      out.push('<pre style="margin:0 0 9px;padding:9px 11px;background:#f7f6f2;border-radius:9px;' +
+               'overflow-x:auto;' + DS_MONO + ';font-size:12px;line-height:1.5">' + blocos[bl[1]] + '</pre>');
+      continue;
+    }
+
+    // tabela: linha com | ... | seguida da separadora | --- | --- |
+    if (t2.charAt(0) === '|' && i + 1 < linhas.length && /^\|[\s:|-]+\|$/.test(linhas[i+1].trim())) {
+      fecha();
+      var celulas = function(linha){
+        return linha.trim().replace(/^\||\|$/g, '').split('|').map(function(c){ return mdIn(c.trim()); });
+      };
+      var cab = celulas(t2), corpo = [];
+      i += 2;
+      while (i < linhas.length && linhas[i].trim().charAt(0) === '|') { corpo.push(celulas(linhas[i].trim())); i++; }
+      i--;
+      var cel = 'padding:5px 9px;border-bottom:1px solid #eae6de;text-align:left;vertical-align:top';
+      out.push('<div style="overflow-x:auto;margin:0 0 9px">' +
+        '<table style="border-collapse:collapse;font-size:12.5px;width:100%">' +
+        '<thead><tr>' + cab.map(function(c){ return '<th style="' + cel + ';font-weight:600">' + c + '</th>'; }).join('') + '</tr></thead>' +
+        '<tbody>' + corpo.map(function(r){
+          return '<tr>' + r.map(function(c){ return '<td style="' + cel + '">' + c + '</td>'; }).join('') + '</tr>';
+        }).join('') + '</tbody></table></div>');
+      continue;
+    }
+
+    var h = t2.match(/^#{1,6}\s+(.*)$/);
+    if (h) {
+      fecha();
+      out.push('<div style="font-weight:600;color:#121a2b;margin:11px 0 5px">' + mdIn(h[1]) + '</div>');
+      continue;
+    }
+
+    if (/^(---+|\*\*\*+)$/.test(t2)) {
+      fecha();
+      out.push('<hr style="border:0;border-top:1px solid #eae6de;margin:11px 0">');
+      continue;
+    }
+
+    var cit = t2.match(/^&gt;\s?(.*)$/);
+    if (cit) {
+      fecha();
+      out.push('<div style="margin:0 0 9px;padding:7px 11px;border-left:2.5px solid #c9d6f7;' +
+               'background:#f7f9fe;border-radius:0 7px 7px 0">' + mdIn(cit[1]) + '</div>');
+      continue;
+    }
+
+    var mUl = t2.match(/^[-*•]\s+(.*)$/);
+    var mOl = t2.match(/^\d+[.)]\s+(.*)$/);
+    if (mUl || mOl) {
+      var tipo = mUl ? 'ul' : 'ol';
+      fechaPar();
+      if (lista !== tipo) {
+        fechaLista();
+        out.push('<' + tipo + ' style="margin:0 0 9px;padding-left:19px">');
+        lista = tipo;
+      }
+      out.push('<li style="margin:3px 0">' + mdIn((mUl || mOl)[1]) + '</li>');
+      continue;
+    }
+
+    fechaLista();
+    par.push(t2);
+  }
+  fecha();
+  return out.join('');
+}
+
+function msgHTML(m){
+  if (m.role === 'user')
+    return '<div style="margin:0 0 10px;text-align:right">' +
+      '<span style="display:inline-block;max-width:88%;text-align:left;background:#f2efe9;' +
+      'border-radius:12px 12px 3px 12px;padding:9px 12px;font-size:13.5px;line-height:1.6;' +
+      'color:#39404f;text-wrap:pretty">' + esc(m.content) + '</span></div>';
+  return '<div style="margin:0 0 12px">' +
+    '<div style="' + DS_MONO + ';font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;' +
+    'color:#2b57cc;margin-bottom:4px">DeepSeek</div>' +
+    '<div style="font-size:13.5px;line-height:1.65;color:#39404f;text-wrap:pretty">' +
+    mdChat(m.content) + '</div></div>';
+}
+
+function chatBox(q, acertou){
+  if (!dsOn()) return '';
+  var chamada = acertou ? 'Quer ir mais fundo?' : 'Ainda com dúvida?';
+  var dica = acertou ? 'Por que as outras estão erradas?' : 'Por que a que eu marquei está errada?';
+  var hist = (S.chat[q.id] || []).map(msgHTML).join('');
+  return '<div id="ds" data-qid="' + q.id + '" style="margin-top:14px;border:1px solid #e4e0d8;' +
+      'border-radius:14px;background:#fff;overflow:hidden;animation:qFade .26s ease">' +
+      '<div style="display:flex;align-items:center;gap:8px;padding:11px 15px;' +
+        'border-bottom:1px solid #f0ede6;background:#faf9f6">' +
+        '<span style="' + DS_MONO + ';font-size:10px;letter-spacing:.16em;text-transform:uppercase;' +
+        'color:#2b57cc">' + chamada + '</span>' +
+        '<span style="font-size:12px;color:#8a8578">pergunte ao DeepSeek</span></div>' +
+      '<div id="dsLog" style="max-height:280px;overflow-y:auto;padding:' + (hist ? '12px 15px' : '0') + '">' +
+        hist + '</div>' +
+      '<div style="display:flex;gap:8px;padding:11px 12px;border-top:1px solid #f0ede6">' +
+        '<input id="dsIn" type="text" autocomplete="off" ' +
+          'placeholder="' + dica + '" ' +
+          'style="flex:1;min-width:0;border:1px solid #e4e0d8;border-radius:10px;padding:10px 12px;' +
+          'font-size:13.5px;' + DS_SANS + ';color:#121a2b;background:#fff;outline:none">' +
+        '<button type="button" data-act="dsSend" class="h-darkflat" style="flex-shrink:0;' +
+          'background:#121a2b;color:#f5f3ef;border:0;border-radius:10px;padding:10px 16px;' +
+          'font-size:13px;font-weight:500;cursor:pointer;transition:background .16s ease">Enviar</button>' +
+      '</div></div>';
+}
+
+function dsContexto(q, ans){
+  var alts = q.options.map(function(o, n){ return LETTERS[n] + ') ' + o; }).join(NLJS);
+  return 'Questao: ' + q.question + NLJS + alts + NLJS +
+    'Resposta correta: ' + LETTERS[q.correctIndex] + ') ' + q.options[q.correctIndex] + NLJS +
+    'O estudante marcou: ' + (ans === null ? 'nada' : LETTERS[ans] + ') ' + q.options[ans]) + NLJS +
+    'Explicacao que ele ja tem: ' + q.explanation;
+}
+
+A.dsSend = function(){
+  var box = document.getElementById('ds');
+  if (!box || !dsOn() || box.getAttribute('data-busy')) return;
+  var input = document.getElementById('dsIn'), log = document.getElementById('dsLog');
+  var texto = (input.value || '').trim();
+  if (!texto) return;
+
+  var qid = parseInt(box.getAttribute('data-qid'), 10), q = null, ans = null;
+  for (var i = 0; i < S.order.length; i++)
+    if (S.order[i].id === qid) { q = S.order[i]; ans = S.answers[i]; }
+  if (!q) return;
+
+  S.chat[qid] = S.chat[qid] || [];
+  S.chat[qid].push({ role:'user', content:texto });
+  input.value = '';
+  log.style.padding = '12px 15px';
+  log.insertAdjacentHTML('beforeend', msgHTML({ role:'user', content:texto }));
+  log.insertAdjacentHTML('beforeend',
+    '<div><div style="' + DS_MONO + ';font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;' +
+    'color:#2b57cc;margin-bottom:4px">DeepSeek</div>' +
+    '<div id="dsTxt" style="font-size:13.5px;line-height:1.65;color:#8a8578;' +
+    'text-wrap:pretty">pensando…</div></div>');
+  log.scrollTop = log.scrollHeight;
+  box.setAttribute('data-busy', '1');
+
+  var acertou = (ans === q.correctIndex);
+  var situacao = acertou
+    ? 'Voce e um tutor de medicina. O estudante do 7o semestre ACERTOU esta questao, mas ficou com uma duvida. '
+    : 'Voce e um tutor de medicina. O estudante do 7o semestre ERROU esta questao. ';
+  var msgs = [
+    { role:'system', content: situacao +
+      'Responda em portugues do Brasil, direto ao ponto, no maximo 150 palavras. ' +
+      'Traga o dado concreto (valor, criterio, mecanismo) em vez de generalidade. ' +
+      'Nao repita a explicacao que ele ja tem; foque na duvida que ele trouxe.' },
+    { role:'user', content: dsContexto(q, ans) }
+  ];
+  var h = S.chat[qid];
+  for (var j = 0; j < h.length; j++) msgs.push({ role:h[j].role, content:h[j].content });
+
+  dsStream(msgs, function(txt, fim, erro){
+    var el = document.getElementById('dsTxt');
+    if (!el) { box.removeAttribute('data-busy'); return; }
+    if (erro) { el.style.color = '#c04437'; el.textContent = erro; box.removeAttribute('data-busy'); return; }
+    el.style.color = '#39404f';
+    el.innerHTML = mdChat(txt);
+    var lg = document.getElementById('dsLog'); if (lg) lg.scrollTop = lg.scrollHeight;
+    if (fim) { el.removeAttribute('id'); S.chat[qid].push({ role:'assistant', content:txt }); box.removeAttribute('data-busy'); }
+  });
+};
+
+function dsStream(messages, cb){
+  var acc = '';
+  fetch(DS_URL, {
+    method: 'POST',
+    headers: { 'Content-Type':'application/json', 'Authorization':'Bearer ' + window.DEEPSEEK_KEY },
+    body: JSON.stringify({ model:DS_MODEL, messages:messages, stream:true, max_tokens:1200, temperature:0.3 })
+  }).then(function(r){
+    if (!r.ok) return r.text().then(function(t){
+      throw new Error(
+        r.status === 401 ? 'Chave recusada (401). Confira o deepseek_key.js.' :
+        r.status === 402 ? 'Sem saldo na conta DeepSeek (402).' :
+        r.status === 429 ? 'Limite de uso atingido (429). Tente daqui a pouco.' :
+        'Erro ' + r.status + ': ' + String(t).slice(0, 120));
+    });
+    var reader = r.body.getReader(), dec = new TextDecoder(), buf = '';
+    (function pump(){
+      return reader.read().then(function(res){
+        if (res.done) { cb(acc || '(resposta vazia)', true); return; }
+        buf += dec.decode(res.value, { stream:true });
+        var linhas = buf.split(NLJS);
+        buf = linhas.pop();
+        for (var i = 0; i < linhas.length; i++){
+          var l = linhas[i].trim();
+          if (l.indexOf('data:') !== 0) continue;
+          var carga = l.slice(5).trim();
+          if (carga === '[DONE]') continue;
+          try {
+            var d = JSON.parse(carga).choices[0].delta;
+            if (d && d.content) { acc += d.content; cb(acc, false); }
+          } catch (_){}
+        }
+        return pump();
+      });
+    })();
+  }).catch(function(e){
+    cb('', true, 'Nao consegui falar com o DeepSeek: ' + (e && e.message ? e.message : e));
+  });
+}
+
+function render(){
+  renderHeader();
+  if (S.view === 'home')        renderHome();
+  else if (S.view === 'resumo') renderResumo();
+  else if (S.finished)          renderResult();
+  else                          renderQuestion();
+}
+
+/* lightbox: clique em qualquer figura amplia */
+document.addEventListener('click', function(e){
+  var lb = document.getElementById('lb');
+  if (e.target.closest('#lb')) { lb.className = ''; return; }
+  var img = e.target.closest('.fig img');
+  if (img) { lb.firstElementChild.src = img.src; lb.className = 'on'; }
+});
+window.addEventListener('keydown', function(e){
+  if (e.key === 'Escape') document.getElementById('lb').className = '';
+});
+
+document.addEventListener('click', function(e){
+  var b = e.target.closest('[data-act]'); if (!b) return;
+  var act = b.getAttribute('data-act'), n = parseInt(b.getAttribute('data-n'),10), k = b.getAttribute('data-k');
+  if (act==='pick'||act==='jump'||act==='toggle') A[act](n);
+  else if (act==='filter') A.filter(k);
+  else if (A[act]) A[act]();
+});
+
+window.addEventListener('keydown', function(e){
+  if (S.view!=='quiz' || !S.started || S.finished) return;
+  var t = e.target, tag = t && t.tagName;
+  if (tag==='INPUT' || tag==='TEXTAREA' || (t && t.isContentEditable)) return;
+  if (e.metaKey||e.ctrlKey||e.altKey) return;
+  if (e.key==='ArrowRight')     { e.preventDefault(); A.go(S.i+1); }
+  else if (e.key==='ArrowLeft') { e.preventDefault(); A.go(S.i-1); }
+  else if (e.key==='Enter')     { e.preventDefault(); A.next(); }
+  else if (/^[1-6]$/.test(e.key)) {
+    var n = parseInt(e.key,10)-1;
+    if (n < S.order[S.i].options.length) A.pick(n);
+  }
+});
+
+render();
+</script>
+</body>
+</html>

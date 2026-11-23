@@ -161,6 +161,9 @@ PAGINA = """<!DOCTYPE html>
   .tutor b{font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:#2b57cc;font-weight:600}
   .tutor p{margin:4px 0 0;font-size:13px;line-height:1.55;color:#39404f}
   .tutor code{font-family:'IBM Plex Mono',monospace;font-size:11.5px;background:#fff;border:1px solid #c9d6f7;border-radius:5px;padding:1px 5px}
+  .plano{display:flex;align-items:center;justify-content:space-between;gap:12px;background:#121a2b;color:#fff;border-radius:14px;padding:15px 18px;margin:-10px 0 26px}
+  .plano b{font-family:'Newsreader',Georgia,serif;font-size:20px;font-weight:500}
+  .plano span{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.06em;color:#c9d6f7}
   .foot{margin-top:34px;padding-top:22px;border-top:1px solid #e4e0d8;font-family:'IBM Plex Mono',monospace;font-size:11px;color:#8a8578}
   @media(max-width:560px){.card{flex-wrap:wrap}.card .tags{justify-content:flex-start;width:100%}}
 </style>
@@ -171,6 +174,7 @@ PAGINA = """<!DOCTYPE html>
   <h1>7º semestre</h1>
   <p class="sub">__SUB__</p>
 __TUTOR__
+__PLANO__
   <div class="stats">__STATS__</div>
 __AVC2BAR__
 __CARDS__
@@ -273,7 +277,10 @@ def main():
     alvo.write_text(
         PAGINA.replace("__CARDS__", cards).replace("__SUB__", sub)
               .replace("__STATS__", stats).replace("__TUTOR__", tutor)
-              .replace("__AVC2BAR__", avc2bar),
+              .replace("__AVC2BAR__", avc2bar)
+              .replace("__PLANO__", ('  <a class="plano" href="plano.html"><b>Plano das provas finais</b>'
+                                     '<span>dia a dia, com treino e simulado por prova →</span></a>')
+                       if (RAIZ / "plano.html").exists() else ""),
         encoding="utf-8")
     print(f"OK  {len(metas)} material(is) -> {alvo}")
     for m in sorted(metas, key=lambda x: (x["disciplina"], x["titulo"])):

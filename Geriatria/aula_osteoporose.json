@@ -1,0 +1,206 @@
+{
+  "titulo": "Osteoporose",
+  "eyebrow": "Geriatria · Referência",
+  "subtitulo": "Do T-score à escolha do remédio certo para cada risco",
+  "intro": "Diagnóstico densitométrico e clínico, rastreio com DXA, FRAX, causas secundárias, cálcio e vitamina D, bisfosfonatos, denosumabe e anabólicos. Material de referência baseado nos critérios da OMS e nas recomendações da ABRASSO — não há slide da aula deste tema.",
+  "questoes": [
+    {
+      "question": "Mulher de 67 anos, na pós-menopausa, sem fraturas, realiza densitometria com T-score de −2,7 no colo do fêmur. Qual é a classificação?",
+      "options": [
+        "Osteoporose densitométrica",
+        "Baixa massa óssea (osteopenia)",
+        "Massa óssea normal para a idade",
+        "Osteoporose estabelecida (grave)"
+      ],
+      "correctIndex": 0,
+      "explanation": "Pelos critérios da OMS, T-score ≤ −2,5 em coluna lombar, colo do fêmur ou fêmur total define osteoporose. Entre −1,0 e −2,5 é baixa massa óssea (osteopenia); com fratura por fragilidade associada, osteoporose estabelecida."
+    },
+    {
+      "question": "Mulher de 62 anos tem T-score de −1,9 na coluna lombar, sem fraturas. Qual ferramenta ajuda a decidir se ela deve receber tratamento farmacológico?",
+      "options": [
+        "FRAX, que estima o risco de fratura em 10 anos",
+        "Z-score, que compara com mulheres da mesma idade",
+        "Marcadores de remodelação óssea, como o CTX sérico",
+        "Nova densitometria em 6 meses para ver a tendência"
+      ],
+      "correctIndex": 0,
+      "explanation": "Na osteopenia, o FRAX estima a probabilidade em 10 anos de fratura de quadril e de fratura osteoporótica maior e orienta quem tratar. Na referência norte-americana clássica, trata-se com risco de quadril ≥ 3% ou de fratura maior ≥ 20%; no Brasil, os limiares variam com a idade."
+    },
+    {
+      "question": "Mulher de 38 anos, com ciclos regulares, faz densitometria por anorexia nervosa prévia. Qual índice deve ser usado para interpretar o exame?",
+      "options": [
+        "Z-score, considerando ≤ −2,0 abaixo do esperado",
+        "T-score, considerando ≤ −2,5 como osteoporose",
+        "T-score, considerando ≤ −1,0 como osteopenia",
+        "Z-score, considerando ≤ −1,0 como osteoporose"
+      ],
+      "correctIndex": 0,
+      "explanation": "Em mulheres antes da menopausa e homens com menos de 50 anos usa-se o Z-score, que compara com pessoas da mesma idade. Z ≤ −2,0 indica massa óssea abaixo do esperado para a idade e motiva a busca de causa secundária."
+    },
+    {
+      "question": "Idosa de 74 anos tem fratura vertebral por compressão após se abaixar para pegar um objeto. A densitometria mostra T-score de −1,8. Qual é o diagnóstico e a conduta?",
+      "options": [
+        "Osteoporose clínica, com indicação de tratamento",
+        "Osteopenia, com indicação apenas de cálcio e vitamina D",
+        "Osteopenia, com nova densitometria em dois anos",
+        "Fratura traumática, sem relação com doença óssea"
+      ],
+      "correctIndex": 0,
+      "explanation": "Fratura por fragilidade de vértebra ou quadril define osteoporose independentemente do T-score. A paciente deve receber tratamento farmacológico, além da base de cálcio, vitamina D e prevenção de quedas."
+    },
+    {
+      "question": "Em quem a densitometria óssea (DXA) é indicada como rastreio, mesmo sem nenhum fator de risco?",
+      "options": [
+        "Mulheres com 65 anos ou mais e homens com 70 anos ou mais",
+        "Mulheres com 50 anos ou mais e homens com 60 anos ou mais",
+        "Todas as mulheres a partir da menopausa e homens aos 65 anos",
+        "Mulheres com 70 anos ou mais e homens com 80 anos ou mais"
+      ],
+      "correctIndex": 0,
+      "explanation": "O rastreio universal é feito em mulheres com 65 anos ou mais e homens com 70 anos ou mais. Antes dessas idades, a DXA é indicada na pós-menopausa e em homens de 50 a 69 anos com fatores de risco, e em qualquer adulto com fratura por fragilidade."
+    },
+    {
+      "question": "Mulher de 54 anos, na pós-menopausa, usa prednisona 10 mg/dia há 5 meses por artrite reumatoide. Qual é a conduta quanto à saúde óssea?",
+      "options": [
+        "Solicitar densitometria agora, sem esperar os 65 anos",
+        "Aguardar os 65 anos para iniciar o rastreio com DXA",
+        "Solicitar densitometria só se surgir fratura vertebral",
+        "Dispensar avaliação, pois o corticoide é por tempo curto"
+      ],
+      "correctIndex": 0,
+      "explanation": "Glicocorticoide em dose equivalente a prednisona ≥ 5 mg/dia por 3 meses ou mais é a causa secundária mais importante de osteoporose e indica avaliação imediata com DXA e FRAX. A artrite reumatoide é, por si só, outro fator de risco."
+    },
+    {
+      "question": "Homem de 52 anos tem fratura vertebral por fragilidade e T-score de −3,0. Antes de tratar, qual é a conduta?",
+      "options": [
+        "Investigar causas secundárias, incluindo testosterona e mieloma",
+        "Iniciar bisfosfonato sem exames, pois a densitometria basta",
+        "Repetir a densitometria em 1 ano para confirmar o achado",
+        "Indicar teriparatida direto, sem necessidade de exames"
+      ],
+      "correctIndex": 0,
+      "explanation": "Osteoporose em homem jovem exige busca de causa secundária: hipogonadismo, mieloma, hiperparatireoidismo, hipertireoidismo, doença celíaca, glicocorticoide, álcool. Exames básicos: cálcio, fósforo, fosfatase alcalina, creatinina, vitamina D, PTH, TSH, testosterona e eletroforese de proteínas."
+    },
+    {
+      "question": "Qual é a recomendação de cálcio e vitamina D para uma idosa com osteoporose?",
+      "options": [
+        "Cálcio de 1.000 a 1.200 mg/dia, priorizando a dieta, e vitamina D de 800 a 1.000 UI/dia",
+        "Cálcio de 3.000 mg/dia em suplemento e vitamina D de 50.000 UI/dia por tempo indefinido",
+        "Cálcio de 400 mg/dia em suplemento e vitamina D apenas se houver fratura de quadril",
+        "Cálcio só pela dieta, sem meta definida, e vitamina D apenas no inverno, em dose única"
+      ],
+      "correctIndex": 0,
+      "explanation": "A base do tratamento é cálcio de 1.000 a 1.200 mg/dia, de preferência pela dieta, completando com suplemento, e vitamina D de manutenção de 800 a 1.000 UI/dia no idoso. Essa base sozinha não trata osteoporose estabelecida."
+    },
+    {
+      "question": "Mulher de 70 anos com osteoporose densitométrica, função renal normal e sem doença esofágica. Qual é o tratamento farmacológico de primeira linha?",
+      "options": [
+        "Alendronato 70 mg por via oral uma vez por semana",
+        "Teriparatida subcutânea diária por 24 meses seguidos",
+        "Calcitonina nasal diária como tratamento de manutenção",
+        "Terapia hormonal combinada contínua por tempo indefinido"
+      ],
+      "correctIndex": 0,
+      "explanation": "Bisfosfonatos orais, como o alendronato 70 mg semanal, são a primeira linha: reduzem fraturas vertebrais e de quadril, são baratos e disponíveis no SUS. Anabólicos ficam para o risco muito alto, e a terapia hormonal não é indicada só para osteoporose."
+    },
+    {
+      "question": "Como a paciente deve ser orientada a tomar o alendronato?",
+      "options": [
+        "Em jejum, com copo cheio de água, sem deitar nem comer por 30 minutos",
+        "Após o café da manhã, com leite, para proteger a mucosa do estômago",
+        "À noite, ao deitar, junto com o cálcio para aumentar a absorção óssea",
+        "Em jejum, com suco de laranja, e deitar logo depois por 30 minutos"
+      ],
+      "correctIndex": 0,
+      "explanation": "A absorção do bisfosfonato oral é mínima e cai com alimento, cálcio ou café. Toma-se em jejum, com um copo cheio de água, permanecendo sentado ou em pé por pelo menos 30 minutos para evitar esofagite."
+    },
+    {
+      "question": "Idosa de 80 anos com osteoporose tem depuração de creatinina de 25 mL/min. Qual opção de tratamento é mais adequada?",
+      "options": [
+        "Denosumabe, que não depende da função renal",
+        "Alendronato, em dose dobrada de 140 mg semanal",
+        "Ácido zoledrônico, em infusão anual mais rápida",
+        "Risedronato, por ser eliminado pelo fígado"
+      ],
+      "correctIndex": 0,
+      "explanation": "Bisfosfonatos são contraindicados com depuração de creatinina abaixo de 30 a 35 mL/min. O denosumabe não é eliminado pelo rim e é a opção usual, com atenção à hipocalcemia, que é mais frequente na doença renal."
+    },
+    {
+      "question": "Antes de iniciar bisfosfonato, uma paciente pergunta sobre a osteonecrose de mandíbula. Qual é a orientação correta?",
+      "options": [
+        "É rara nas doses de osteoporose; fazer avaliação dentária antes",
+        "É frequente; a extração dentária deve ser evitada por toda a vida",
+        "É comum e contraindica bisfosfonato em quem usa prótese dentária",
+        "Só ocorre com bisfosfonato oral e não acontece com zoledronato"
+      ],
+      "correctIndex": 0,
+      "explanation": "A osteonecrose de mandíbula é muito rara nas doses de osteoporose e mais associada às doses oncológicas e a procedimentos dentários invasivos. Recomenda-se avaliação odontológica e resolução dos problemas dentários antes de iniciar o tratamento."
+    },
+    {
+      "question": "Mulher de 76 anos usa alendronato há 8 anos e refere dor na coxa direita há um mês, sem trauma. Qual é a principal hipótese e a conduta?",
+      "options": [
+        "Fratura atípica de fêmur; radiografar os dois fêmures",
+        "Osteonecrose da cabeça femoral; aumentar o alendronato",
+        "Fratura de colo por estresse; manter o alendronato",
+        "Dor muscular por estatina; suspender só a estatina"
+      ],
+      "correctIndex": 0,
+      "explanation": "A fratura atípica de fêmur, subtrocantérica ou diafisária, é complicação rara do uso prolongado de bisfosfonato e costuma ser precedida de dor na coxa, às vezes bilateral. Radiografam-se os dois fêmures e suspende-se o bisfosfonato se confirmada."
+    },
+    {
+      "question": "Mulher de 68 anos completou 5 anos de alendronato, não teve fraturas e o T-score atual é −2,0. Qual é a conduta?",
+      "options": [
+        "Pausa terapêutica, com reavaliação periódica do risco",
+        "Manter o alendronato por tempo indefinido, sem pausa",
+        "Trocar por denosumabe para manter o ganho de massa",
+        "Associar teriparatida ao alendronato pelo resto da vida"
+      ],
+      "correctIndex": 0,
+      "explanation": "O bisfosfonato fica depositado no osso e mantém efeito após a suspensão. Após 5 anos de uso oral (ou 3 de zoledronato), sem fratura e com T-score acima de −2,5, indica-se a pausa; com risco ainda alto, mantém-se por até 10 anos."
+    },
+    {
+      "question": "Paciente em uso de denosumabe há 4 anos decide parar por conta própria. Qual é o risco e a conduta?",
+      "options": [
+        "Efeito rebote com fraturas vertebrais; transicionar para bisfosfonato",
+        "Nenhum risco, pois o efeito do denosumabe persiste por anos no osso",
+        "Hipercalcemia grave; suspender também o cálcio e a vitamina D",
+        "Osteonecrose de mandíbula imediata; iniciar antibiótico profilático"
+      ],
+      "correctIndex": 0,
+      "explanation": "Ao suspender o denosumabe, a reabsorção óssea dispara, a massa ganha se perde rapidamente e podem ocorrer múltiplas fraturas vertebrais. Diferente do bisfosfonato, ele não deixa efeito residual: a suspensão exige transição para bisfosfonato."
+    },
+    {
+      "question": "Mulher de 72 anos tem três fraturas vertebrais recentes e T-score de −3,6. Qual estratégia é a mais indicada para esse risco muito alto?",
+      "options": [
+        "Anabólico, como teriparatida, seguido de antirreabsortivo",
+        "Apenas cálcio e vitamina D, por haver múltiplas fraturas",
+        "Raloxifeno isolado, pela proteção das fraturas vertebrais",
+        "Alendronato por 2 anos e depois suspensão definitiva"
+      ],
+      "correctIndex": 0,
+      "explanation": "No risco muito alto — fratura recente, múltiplas fraturas vertebrais, T-score muito baixo —, os anabólicos (teriparatida ou romosozumabe) formam osso novo e reduzem fraturas mais rápido. Ao final, o ganho é consolidado com antirreabsortivo."
+    },
+    {
+      "question": "Em qual paciente com osteoporose grave o romosozumabe deve ser evitado?",
+      "options": [
+        "Mulher que teve infarto do miocárdio há 6 meses",
+        "Mulher com depuração de creatinina de 50 mL/min",
+        "Mulher que já usou alendronato por 3 anos antes",
+        "Mulher com fratura vertebral há menos de 1 ano"
+      ],
+      "correctIndex": 0,
+      "explanation": "O romosozumabe, anticorpo anti-esclerostina, mostrou sinal de aumento de eventos cardiovasculares e é evitado em quem teve infarto ou AVC no último ano. Fratura recente é justamente indicação de anabólico."
+    },
+    {
+      "question": "Mulher de 60 anos com osteoporose vertebral e história familiar de câncer de mama pergunta sobre o raloxifeno. O que é correto afirmar?",
+      "options": [
+        "Reduz fraturas vertebrais e câncer de mama, mas aumenta TEV",
+        "Reduz fraturas de quadril e vertebrais, sem risco de trombose",
+        "Aumenta o câncer de mama, mas protege o quadril e a vértebra",
+        "É anabólico e substitui a teriparatida no risco muito alto"
+      ],
+      "correctIndex": 0,
+      "explanation": "O raloxifeno é um modulador seletivo do receptor de estrogênio: reduz fraturas vertebrais (não as de quadril) e o risco de câncer de mama invasivo, mas aumenta tromboembolismo venoso e fogachos."
+    }
+  ]
+}

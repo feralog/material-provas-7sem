@@ -1,0 +1,980 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Esquizofrenia e Outras Psicoses</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;450;500;600&display=swap" rel="stylesheet">
+<style>
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0}
+  body{background:#f5f3ef;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+  button{font:inherit;color:inherit;font-family:'IBM Plex Sans',system-ui,sans-serif}
+  a{color:#2b57cc;text-decoration:none}
+  a:hover{color:#1e3f9c;text-decoration:underline}
+  @keyframes qFade{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+  @keyframes qDrawer{from{opacity:0;transform:translateY(-4px)}to{opacity:1;transform:none}}
+
+  /* hovers — no canvas eram style-hover, aqui viram CSS de verdade */
+  .h-dark:hover{background:#2b57cc!important;transform:translateY(-1px)}
+  .h-darkflat:hover{background:#2b57cc!important}
+  .h-line:hover{border-color:#121a2b!important}
+  .h-ink:hover{color:#121a2b!important}
+  .h-opt:not(.locked):hover{border-color:var(--hbd)!important;transform:translateY(-1px)}
+  .h-card:hover{border-color:#121a2b!important;transform:translateY(-2px)}
+
+  /* tipografia do resumo */
+  .rsm{font-size:16.5px;line-height:1.72;color:#2a3141;max-width:64ch}
+  .rsm h2{font-family:'Newsreader',Georgia,serif;font-size:27px;font-weight:500;letter-spacing:-.02em;line-height:1.2;margin:42px 0 14px;padding-top:20px;border-top:1px solid #e4e0d8;text-wrap:pretty}
+  .rsm h2:first-child{margin-top:0;padding-top:0;border-top:0}
+  .rsm h3{font-family:'Newsreader',Georgia,serif;font-size:20px;font-weight:600;letter-spacing:-.01em;margin:28px 0 10px;text-wrap:pretty}
+  .rsm h4{font-family:'IBM Plex Mono',monospace;font-size:11px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:#2b57cc;margin:24px 0 8px}
+  .rsm p{margin:0 0 15px;text-wrap:pretty}
+  .rsm ul,.rsm ol{margin:0 0 15px;padding-left:22px}
+  .rsm li{margin-bottom:7px;text-wrap:pretty}
+  .rsm li>ul,.rsm li>ol{margin:7px 0 0}
+  .rsm strong{font-weight:600;color:#121a2b}
+  .rsm em{font-style:italic}
+  .rsm code{font-family:'IBM Plex Mono',monospace;font-size:.88em;background:#efece5;border:1px solid #e4e0d8;border-radius:5px;padding:1px 5px}
+  .rsm hr{border:0;border-top:1px solid #e4e0d8;margin:32px 0}
+  .rsm blockquote{margin:0 0 18px;padding:15px 18px;background:#f7f6f2;border-left:2.5px solid #2b57cc;border-radius:0 12px 12px 0;font-size:15px;line-height:1.65;color:#39404f}
+  .rsm blockquote p:last-child{margin-bottom:0}
+  .rsm .tbl{overflow-x:auto;margin:0 0 20px;border:1px solid #e4e0d8;border-radius:12px;background:#fff}
+  .rsm table{border-collapse:collapse;width:100%;font-size:14px;line-height:1.5}
+  .rsm th{text-align:left;font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.09em;text-transform:uppercase;color:#8a8578;font-weight:600;padding:11px 14px;background:#faf9f6;border-bottom:1px solid #e4e0d8;white-space:nowrap}
+  .rsm td{padding:11px 14px;border-bottom:1px solid #efece5;vertical-align:top;text-wrap:pretty}
+  .rsm tr:last-child td{border-bottom:0}
+  .rsm .key{background:#f2f6fb;border:1px solid #d6e2f4;border-radius:12px;padding:16px 18px;margin:0 0 18px}
+  .rsm .key>*:last-child{margin-bottom:0}
+
+  /* figuras — no resumo e na questao */
+  .fig{margin:0 0 20px;background:#fff;border:1px solid #e4e0d8;border-radius:14px;overflow:hidden}
+  .fig img{display:block;width:100%;height:auto;cursor:zoom-in}
+  .fig figcaption{font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.06em;color:#8a8578;padding:9px 13px;border-top:1px solid #efece5;background:#faf9f6;text-wrap:pretty}
+  .qfig{margin:0 0 20px}
+
+  /* lightbox */
+  #lb{position:fixed;inset:0;z-index:90;background:rgba(18,26,43,.86);display:none;align-items:center;justify-content:center;padding:24px;cursor:zoom-out}
+  #lb.on{display:flex;animation:qFade .16s ease}
+  #lb img{max-width:100%;max-height:100%;border-radius:10px;box-shadow:0 24px 60px rgba(0,0,0,.5)}
+
+  @media(max-width:560px){
+    .rsm{font-size:16px}
+    .rsm h2{font-size:24px}
+    .home-grid{grid-template-columns:1fr!important}
+  }
+</style>
+</head>
+<body>
+
+<div style="min-height:100vh;background:#f5f3ef;color:#121a2b;font-family:'IBM Plex Sans',system-ui,sans-serif">
+  <header style="position:sticky;top:0;z-index:30;background:rgba(245,243,239,.94);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid #e4e0d8">
+    <div style="max-width:720px;margin:0 auto;padding:12px 16px 10px" id="hdr"></div>
+  </header>
+  <main style="max-width:720px;margin:0 auto;padding:0 16px 80px" id="stage"></main>
+</div>
+<div id="lb"><img alt=""></div>
+
+<script type="text/html" id="resumoSrc"><blockquote><p>Material de referência: não há slide da aula deste tema. Baseado no DSM-5-TR (2022), no PCDT de Esquizofrenia do Ministério da Saúde e em livros-texto clássicos de psiquiatria.</p></blockquote>
+<h2>Psicose e o espectro da esquizofrenia</h2>
+<p><strong>Psicose</strong> é a perda do juízo de realidade: delírios, alucinações, desorganização do pensamento e do comportamento. É uma síndrome, não um diagnóstico — aparece na esquizofrenia, mas também na mania, na depressão grave, no delirium, nas demências, na epilepsia e no uso de substâncias.</p>
+<p>A esquizofrenia tem prevalência ao longo da vida de cerca de <strong>0,3% a 0,7%</strong> (o clássico "1%" superestima um pouco). Começa no fim da adolescência e início da vida adulta, <strong>mais cedo nos homens</strong> (por volta dos 20 e poucos anos) que nas mulheres, que têm um segundo pico perto da menopausa. Cerca de <strong>5% a 6%</strong> morrem por suicídio, e a expectativa de vida é reduzida, sobretudo por doença cardiovascular — para a qual os próprios antipsicóticos contribuem.</p>
+<p>A causa é multifatorial: forte <strong>carga genética</strong> (o risco sobe muito com parente de primeiro grau afetado), complicações obstétricas, <strong>uso de cannabis na adolescência</strong>, urbanicidade, migração e idade paterna avançada. Duas hipóteses neuroquímicas se completam. A <strong>dopaminérgica</strong>: excesso de dopamina na via <strong>mesolímbica</strong> gera os sintomas positivos, e falta na <strong>mesocortical</strong>, os negativos e cognitivos. A <strong>glutamatérgica</strong>: hipofunção do receptor <strong>NMDA</strong> — fenciclidina e cetamina, antagonistas NMDA, reproduzem sintomas positivos e negativos.</p>
+<hr>
+<h2>Sintomas: positivos, negativos, cognitivos e os de Schneider</h2>
+<p>Os sintomas se organizam em domínios, e cada um tem peso clínico diferente.</p>
+<ul><li><strong>Positivos</strong> (o que "sobra"): delírios (persecutório é o mais comum), alucinações (auditivas, sobretudo vozes), discurso desorganizado e comportamento desorganizado ou catatônico.</li><li><strong>Negativos</strong> (o que "falta"): <strong>embotamento afetivo</strong>, <strong>avolição</strong>, <strong>alogia</strong>, <strong>anedonia</strong> e <strong>associalidade</strong>.</li><li><strong>Cognitivos</strong>: atenção, memória operacional e função executiva. São o <strong>melhor preditor do funcionamento</strong> e respondem pouco aos antipsicóticos.</li></ul>
+<p>Kurt Schneider descreveu os <strong>sintomas de primeira ordem</strong>: sonorização do pensamento, vozes que dialogam ou discutem, vozes que comentam os atos do paciente, vivências de influência corporal, <strong>roubo, inserção e difusão do pensamento</strong>, vivências de influência na vontade, nos sentimentos e nos impulsos, e <strong>percepção delirante</strong>.</p>
+<blockquote><p><strong>Pegadinha.</strong> Sintoma de primeira ordem <strong>sugere</strong>, mas <strong>não é patognomônico</strong>: aparece na mania e em psicoses orgânicas. E o DSM-5 retirou o peso especial que o DSM-IV dava ao delírio bizarro e às vozes que comentam — hoje elas contam como qualquer outro sintoma do critério A.</p></blockquote>
+<p>Outra armadilha clínica: o parkinsonismo e a sedação do antipsicótico, e a depressão, podem imitar sintomas negativos. São os chamados <strong>negativos secundários</strong>.</p>
+<hr>
+<h2>Critérios do DSM-5-TR e a régua do tempo</h2>
+<p>A esquizofrenia exige:</p>
+<ol><li><strong>Critério A</strong> — 2 ou mais de 5 sintomas (delírio, alucinação, discurso desorganizado, comportamento grosseiramente desorganizado ou catatônico, sintomas negativos) por parte significativa de <strong>1 mês</strong>, sendo <strong>ao menos um entre delírio, alucinação ou discurso desorganizado</strong>.</li><li><strong>Queda do funcionamento</strong> no trabalho, nas relações ou no autocuidado.</li><li><strong>Duração total de 6 meses</strong> ou mais, com pelo menos 1 mês de fase ativa; o restante pode ser pródromo ou fase residual.</li><li>Exclusão de transtorno esquizoafetivo e de transtorno do humor com sintomas psicóticos, e de substância ou condição médica.</li></ol>
+<p>O diferencial entre as psicoses primárias é, em grande parte, uma questão de <strong>tempo</strong> e de <strong>humor</strong>.</p>
+<div class="tbl"><table><thead><tr><th>Quadro</th><th>O que define</th><th>Duração</th></tr></thead><tbody><tr><td>Psicótico breve</td><td>1 ou mais sintomas psicóticos, retorno pleno ao basal</td><td>1 dia a menos de 1 mês</td></tr><tr><td>Esquizofreniforme</td><td>Critério A completo; queda funcional não exigida</td><td>1 a menos de 6 meses</td></tr><tr><td>Esquizofrenia</td><td>Critério A + queda funcional</td><td>6 meses ou mais</td></tr><tr><td>Esquizoafetivo</td><td>Episódio de humor maior junto ao critério A; psicose por 2 semanas <strong>sem</strong> humor; humor na maior parte da doença</td><td>—</td></tr><tr><td>Humor com psicose</td><td>Psicose <strong>só dentro</strong> dos episódios de humor</td><td>—</td></tr><tr><td>Delirante</td><td>1 ou mais delírios, sem critério A; funcionamento preservado</td><td>1 mês ou mais</td></tr><tr><td>Induzido por substância</td><td>Surge na intoxicação ou abstinência e regride com ela</td><td>variável</td></tr></tbody></table></div>
+<p>O psicótico breve tem especificadores: <strong>com estressor evidente</strong>, sem estressor e <strong>com início no periparto</strong> (na gestação ou até 4 semanas após o parto). O transtorno delirante tem os tipos erotomaníaco, grandioso, <strong>ciúme</strong>, persecutório, somático e misto. Na psicose induzida, as substâncias clássicas são cannabis, cocaína, anfetaminas, alucinógenos, álcool, corticoide e levodopa.</p>
+<hr>
+<h2>Primeiro episódio: investigação e prognóstico</h2>
+<p>Todo primeiro episódio psicótico pede exclusão de causa secundária: <strong>exame físico e neurológico</strong>, <strong>toxicológico</strong>, glicemia, eletrólitos, <strong>TSH</strong>, funções renal e hepática, <strong>sífilis e HIV</strong>, e neuroimagem ou EEG quando houver sinais atípicos — início tardio, alteração de consciência, alucinação visual proeminente, sinais focais, convulsão. Tratar cedo importa: quanto mais longa a <strong>psicose não tratada</strong>, pior a evolução.</p>
+<div class="tbl"><table><thead><tr><th>Melhor prognóstico</th><th>Pior prognóstico</th></tr></thead><tbody><tr><td>Início agudo e mais tardio</td><td>Início precoce e insidioso</td></tr><tr><td>Estressor desencadeante claro</td><td>Sem desencadeante</td></tr><tr><td>Bom funcionamento pré-mórbido</td><td>Funcionamento pré-mórbido pobre</td></tr><tr><td>Sintomas de humor, predomínio de positivos</td><td>Predomínio de negativos e cognitivos</td></tr><tr><td>Sexo feminino, boa rede de apoio</td><td>Sexo masculino, isolamento</td></tr><tr><td>Tratamento precoce</td><td>Longa psicose não tratada, uso de substâncias</td></tr></tbody></table></div>
+<hr>
+<h2>Antipsicóticos: típicos, atípicos e seus efeitos adversos</h2>
+<p>Todos bloqueiam o receptor <strong>D2</strong>; o efeito terapêutico vem da via mesolímbica, e os adversos clássicos das outras vias — <strong>nigroestriatal</strong> (extrapiramidais), <strong>tuberoinfundibular</strong> (prolactina) e <strong>mesocortical</strong> (piora de negativos). Os <strong>típicos</strong> dividem-se em alta potência (<strong>haloperidol</strong>: muitos extrapiramidais) e baixa potência (<strong>clorpromazina</strong>: sedação, efeito anticolinérgico, hipotensão). Os <strong>atípicos</strong> somam antagonismo <strong>5-HT2A</strong>, com menos extrapiramidais, mas cobram o preço <strong>metabólico</strong>.</p>
+<div class="tbl"><table><thead><tr><th>Fármaco</th><th>Efeito que marca</th></tr></thead><tbody><tr><td>Haloperidol</td><td>Extrapiramidais, hiperprolactinemia</td></tr><tr><td>Risperidona</td><td><strong>Mais eleva a prolactina</strong> entre os atípicos; extrapiramidal em dose alta</td></tr><tr><td>Olanzapina</td><td><strong>Ganho de peso, diabetes, dislipidemia</strong></td></tr><tr><td>Quetiapina</td><td>Sedação, hipotensão; pouco extrapiramidal</td></tr><tr><td>Ziprasidona</td><td>Alonga o QT; baixo risco metabólico</td></tr><tr><td>Aripiprazol</td><td>Agonista parcial D2; <strong>acatisia</strong>; baixo risco metabólico, reduz prolactina</td></tr><tr><td>Clozapina</td><td><strong>Agranulocitose</strong>, convulsão, miocardite, sialorreia, constipação, peso</td></tr></tbody></table></div>
+<p>Os <strong>extrapiramidais</strong> seguem uma linha do tempo: <strong>distonia aguda</strong> em horas a dias (torcicolo, crise oculógira; <strong>biperideno IM</strong>), <strong>acatisia</strong> em dias a semanas (inquietação, não consegue ficar parado; reduzir dose, <strong>propranolol</strong> ou benzodiazepínico), <strong>parkinsonismo</strong> em semanas (reduzir dose, biperideno) e <strong>discinesia tardia</strong> em meses a anos (movimentos orofaciais involuntários, muitas vezes irreversíveis).</p>
+<blockquote><p><strong>Discinesia tardia não se trata com anticolinérgico</strong> — ele pode piorá-la. Reduz-se ou troca-se o antipsicótico, com clozapina como opção. E acatisia confundida com agitação, com aumento de dose, é erro clássico.</p></blockquote>
+<p>Todo paciente em antipsicótico precisa de controle de <strong>peso, circunferência abdominal, pressão, glicemia e lipídios</strong> no início e ao longo do tratamento.</p>
+<hr>
+<h2>Refratariedade, síndrome neuroléptica maligna e manutenção</h2>
+<p><strong>Esquizofrenia refratária</strong> é a que não responde a pelo menos <strong>dois antipsicóticos em dose e tempo adequados</strong>, com adesão confirmada. A <strong>clozapina</strong> é o único antipsicótico com eficácia comprovada nesse cenário e também <strong>reduz o comportamento suicida</strong>. Exige <strong>hemograma seriado</strong> pelo risco de <strong>agranulocitose</strong> — semanal nas primeiras 18 semanas e mensal depois.</p>
+<p>A <strong>síndrome neuroléptica maligna</strong> é a emergência do tratamento: <strong>febre, rigidez em cano de chumbo, alteração de consciência, instabilidade autonômica e CPK muito elevada</strong>, instalando-se em dias, mais com típicos de alta potência em doses altas ou rápidas. Conduta: <strong>suspender o antipsicótico</strong>, suporte intensivo (hidratação, resfriamento), benzodiazepínico, e <strong>dantrolene ou bromocriptina</strong> nos graves; ECT nos refratários.</p>
+<blockquote><p>SNM × síndrome serotoninérgica: a SNM vem do antagonista dopaminérgico, instala-se em <strong>dias</strong> e tem <strong>rigidez em cano de chumbo</strong>; a serotoninérgica vem de serotoninérgicos, instala-se em <strong>horas</strong> e tem <strong>clônus e hiperreflexia</strong>.</p></blockquote>
+<p>A <strong>má adesão</strong> é a principal causa de recaída. Para quem abandona o comprimido, o <strong>antipsicótico injetável de depósito</strong> (haloperidol decanoato, palmitato de paliperidona, aripiprazol de longa ação) garante a dose. O tratamento não é só farmacológico: <strong>psicoeducação</strong>, <strong>intervenção familiar</strong> (reduzir a emoção expressa — crítica e hostilidade — reduz recaídas), treino de habilidades sociais, TCC para psicose e reabilitação psicossocial no <strong>CAPS</strong>, dentro da Rede de Atenção Psicossocial.</p></script>
+<!-- Tutor local: define window.DEEPSEEK_KEY. O arquivo NAO vai para o repositorio,
+     entao online ele da 404 e o chat simplesmente nao aparece. -->
+<script src="../deepseek_key.js"></script>
+<script>
+/* ─────────────────────────────────────────────────────────────────────────────
+   CONTRATO DE DADOS — para adaptar a outro tema, troque apenas QUIZ e o resumo.
+   Cada item: { question, options[2..6], correctIndex, explanation }
+   ──────────────────────────────────────────────────────────────────────────── */
+var TITLE      = "Esquizofrenia e Outras Psicoses";
+var EYEBROW    = "Psiquiatria · Referência";
+var DISCIPLINA = "Psiquiatria";   // pasta de origem (PED, GO...) — usada pelo índice
+var SUBTITLE = "Do critério A à clozapina: diagnosticar, diferenciar e tratar a psicose";
+var INTRO    = "Critérios e régua do tempo das psicoses, sintomas positivos, negativos e de Schneider, prognóstico e antipsicóticos com seus efeitos adversos. Baseado no DSM-5-TR — não há slide da aula deste tema.";
+
+var QUIZ = [
+  {
+    "question": "Homem de 23 anos isolou-se dos amigos e abandonou a faculdade há oito meses. Há seis semanas passou a ouvir vozes que comentam seus atos, acredita que os vizinhos implantaram um chip em sua cabeça e tem discurso desorganizado. Toxicológico negativo e exames clínicos normais. Qual o diagnóstico?",
+    "options": [
+      "Esquizofrenia, pois a perturbação já dura mais de seis meses",
+      "Transtorno esquizofreniforme, pois a fase ativa durou seis semanas",
+      "Transtorno psicótico breve, pois os delírios começaram há pouco",
+      "Transtorno delirante, pois há delírio persecutório bem sistematizado"
+    ],
+    "correctIndex": 0,
+    "explanation": "Esquizofrenia exige 2 ou mais sintomas do critério A por 1 mês (fase ativa) e sinais contínuos por pelo menos 6 meses, somando pródromo e fase residual, com queda do funcionamento. Aqui há oito meses de pródromo mais seis semanas de fase ativa; no esquizofreniforme é a duração TOTAL que fica entre 1 e 6 meses."
+  },
+  {
+    "question": "Pelo DSM-5-TR, para preencher o critério A da esquizofrenia são necessários 2 ou mais sintomas entre 5. Dos sintomas presentes, ao menos um precisa ser:",
+    "options": [
+      "Delírio, alucinação ou discurso desorganizado",
+      "Sintoma negativo ou comportamento catatônico",
+      "Sintoma de primeira ordem de Kurt Schneider",
+      "Alucinação auditiva com vozes que comentam os atos"
+    ],
+    "correctIndex": 0,
+    "explanation": "O critério A pede 2 ou mais de 5 sintomas (delírio, alucinação, discurso desorganizado, comportamento grosseiramente desorganizado ou catatônico, sintomas negativos) por parte significativa de 1 mês, sendo ao menos um dos três primeiros. O DSM-5 retirou o peso especial que o DSM-IV dava ao delírio bizarro e às vozes que comentam."
+  },
+  {
+    "question": "Paciente apresenta delírios, alucinações e discurso desorganizado, com quadro que durou três meses no total e remissão completa com antipsicótico. Qual o diagnóstico?",
+    "options": [
+      "Transtorno esquizofreniforme",
+      "Transtorno psicótico breve",
+      "Esquizofrenia de início agudo",
+      "Transtorno esquizoafetivo"
+    ],
+    "correctIndex": 0,
+    "explanation": "A régua do tempo separa os três: psicótico breve dura de 1 dia a menos de 1 mês, com retorno pleno ao funcionamento prévio; esquizofreniforme, de 1 a menos de 6 meses (sem exigir queda funcional); esquizofrenia, 6 meses ou mais. O esquizoafetivo exige episódio de humor maior."
+  },
+  {
+    "question": "Mulher de 29 anos, dez dias após a morte súbita do marido, passa a acreditar que está sendo perseguida e a ouvir vozes ameaçadoras. Em duas semanas os sintomas desaparecem por completo e ela retoma o trabalho. Qual o diagnóstico?",
+    "options": [
+      "Transtorno psicótico breve, com estressor evidente",
+      "Transtorno esquizofreniforme de bom prognóstico",
+      "Transtorno de luto prolongado com psicose",
+      "Transtorno de estresse agudo com dissociação"
+    ],
+    "correctIndex": 0,
+    "explanation": "Psicótico breve é 1 ou mais sintomas psicóticos (com delírio, alucinação ou discurso desorganizado entre eles) por pelo menos 1 dia e menos de 1 mês, com retorno completo ao nível pré-mórbido; aqui cabe o especificador 'com estressor evidente'. Luto prolongado exige 12 meses após a perda no adulto."
+  },
+  {
+    "question": "Homem de 35 anos tem episódios maníacos e depressivos há dez anos. Mesmo nos períodos de humor normal, mantém por meses delírio persecutório e alucinações auditivas. Os sintomas de humor ocupam a maior parte do tempo da doença. Qual o diagnóstico?",
+    "options": [
+      "Transtorno esquizoafetivo do tipo bipolar",
+      "Transtorno bipolar tipo I com psicose",
+      "Esquizofrenia com depressão pós-psicótica",
+      "Transtorno delirante com episódios de humor"
+    ],
+    "correctIndex": 0,
+    "explanation": "Esquizoafetivo: episódio de humor maior concomitante ao critério A, delírios ou alucinações por 2 semanas ou mais SEM episódio de humor, e sintomas de humor presentes na maior parte da duração total. No bipolar com sintomas psicóticos, a psicose só aparece dentro dos episódios de humor."
+  },
+  {
+    "question": "Mulher de 52 anos está convicta há dois anos de que o marido a trai, apesar de não haver evidência. Vasculha o celular dele e o segue. Trabalha normalmente, não tem alucinações, o discurso é organizado e não há sintomas negativos. Qual o diagnóstico?",
+    "options": [
+      "Transtorno delirante do tipo ciúme",
+      "Esquizofrenia com delírio de ciúme",
+      "Transtorno de personalidade paranoide",
+      "Transtorno obsessivo-compulsivo"
+    ],
+    "correctIndex": 0,
+    "explanation": "Transtorno delirante: 1 ou mais delírios por pelo menos 1 mês, sem nunca preencher o critério A da esquizofrenia, com funcionamento preservado fora do tema delirante e comportamento não bizarro. Tipos: erotomaníaco, grandioso, ciúme, persecutório, somático e misto. Na personalidade paranoide há desconfiança difusa, não um delírio fixo."
+  },
+  {
+    "question": "Qual das manifestações abaixo é um sintoma de primeira ordem de Kurt Schneider?",
+    "options": [
+      "Sensação de que os pensamentos são retirados da mente",
+      "Alucinação visual de pequenos animais andando no quarto",
+      "Delírio de grandeza, com crença em poderes especiais",
+      "Afeto embotado com pobreza de conteúdo do discurso"
+    ],
+    "correctIndex": 0,
+    "explanation": "Os sintomas de primeira ordem são: sonorização do pensamento, vozes que dialogam ou discutem, vozes que comentam os atos, vivências de influência corporal, roubo, inserção e difusão do pensamento, vivências de influência na vontade, nos sentimentos e nos impulsos, e percepção delirante. Sugerem esquizofrenia, mas não são patognomônicos: aparecem na mania e em psicoses orgânicas."
+  },
+  {
+    "question": "Qual conjunto reúne apenas sintomas negativos da esquizofrenia?",
+    "options": [
+      "Avolição, alogia, anedonia e embotamento afetivo",
+      "Delírio, alucinação, avolição e embotamento afetivo",
+      "Discurso desorganizado, alogia, anedonia e catatonia",
+      "Déficit de memória operacional, alogia e alucinação"
+    ],
+    "correctIndex": 0,
+    "explanation": "Sintomas negativos são perdas: embotamento afetivo, avolição, alogia, anedonia e associalidade. Delírio, alucinação e desorganização são positivos; déficits de atenção, memória operacional e função executiva formam o domínio cognitivo, que melhor prediz o funcionamento e responde pouco aos antipsicóticos."
+  },
+  {
+    "question": "Qual fator se associa a melhor prognóstico na esquizofrenia?",
+    "options": [
+      "Início agudo, com estressor desencadeante claro",
+      "Início precoce e insidioso, ainda na adolescência",
+      "Predomínio de sintomas negativos e cognitivos",
+      "Longa duração da psicose antes do tratamento"
+    ],
+    "correctIndex": 0,
+    "explanation": "Bom prognóstico: início agudo e mais tardio, estressor evidente, bom funcionamento pré-mórbido, sintomas de humor, predomínio de positivos, sexo feminino, boa rede de apoio e tratamento precoce. Início precoce e insidioso, sintomas negativos, longa psicose não tratada, sexo masculino e uso de substâncias pioram."
+  },
+  {
+    "question": "Jovem de 19 anos, após uso intenso de canabinoide sintético, apresenta delírio persecutório e alucinações auditivas, com consciência e atenção preservadas. Em abstinência, os sintomas desaparecem em cinco dias. Qual o diagnóstico?",
+    "options": [
+      "Transtorno psicótico induzido por substância",
+      "Transtorno psicótico breve sem estressor",
+      "Primeiro surto de esquizofrenia de início agudo",
+      "Delirium por intoxicação por canabinoide"
+    ],
+    "correctIndex": 0,
+    "explanation": "Psicose que surge durante ou logo após intoxicação ou abstinência, por substância capaz de causá-la, e que regride com a abstinência é induzida por substância; delirium exigiria alteração de atenção e consciência. Como a cannabis na adolescência é fator de risco para esquizofrenia, o paciente precisa de seguimento."
+  },
+  {
+    "question": "Homem de 24 anos é atendido no primeiro episódio psicótico. Qual conduta faz parte da avaliação inicial?",
+    "options": [
+      "Excluir causas orgânicas e por substância com exames dirigidos",
+      "Iniciar clozapina, por ser o antipsicótico de maior eficácia",
+      "Dispensar exames se houver história familiar de esquizofrenia",
+      "Indicar eletroconvulsoterapia antes de qualquer antipsicótico"
+    ],
+    "correctIndex": 0,
+    "explanation": "No primeiro episódio exclui-se causa secundária: exame físico e neurológico, toxicológico, glicemia, eletrólitos, TSH, funções renal e hepática, sífilis e HIV, e neuroimagem ou EEG se houver sinais atípicos. A clozapina fica reservada à refratariedade."
+  },
+  {
+    "question": "Homem de 20 anos, dois dias após iniciar haloperidol, apresenta torcicolo, protrusão da língua e desvio do olhar para cima. Qual a conduta?",
+    "options": [
+      "Biperideno por via intramuscular",
+      "Dantrolene por via intravenosa",
+      "Aumentar a dose do haloperidol",
+      "Propranolol oral em dose baixa"
+    ],
+    "correctIndex": 0,
+    "explanation": "Distonia aguda (torcicolo, crise oculógira, protrusão de língua) surge em horas a dias após antipsicótico de alta potência, mais em homens jovens, e responde em minutos a anticolinérgico (biperideno IM) ou anti-histamínico. Propranolol é para acatisia; dantrolene, para síndrome neuroléptica maligna."
+  },
+  {
+    "question": "Paciente em uso de aripiprazol refere inquietação interna intensa, não consegue ficar sentado e marcha no mesmo lugar durante a consulta. Qual a interpretação e a conduta?",
+    "options": [
+      "Acatisia; reduzir a dose e considerar propranolol",
+      "Agitação psicótica; aumentar a dose do antipsicótico",
+      "Discinesia tardia; associar biperideno de manutenção",
+      "Síndrome serotoninérgica; suspender e dar ciproeptadina"
+    ],
+    "correctIndex": 0,
+    "explanation": "Acatisia é inquietação subjetiva e motora, comum com aripiprazol e típicos de alta potência. Confundi-la com agitação e subir a dose piora o quadro; maneja-se reduzindo ou trocando o fármaco, com propranolol ou benzodiazepínico."
+  },
+  {
+    "question": "Mulher de 65 anos, em uso de haloperidol há dez anos, desenvolve movimentos involuntários de mastigação, protrusão da língua e caretas. Qual afirmação é correta?",
+    "options": [
+      "Anticolinérgicos não ajudam e podem piorar o quadro",
+      "Responde bem a biperideno, como a distonia aguda",
+      "É sempre reversível com a suspensão do antipsicótico",
+      "Indica aumento da dose do haloperidol para controle"
+    ],
+    "correctIndex": 0,
+    "explanation": "Discinesia tardia surge após meses a anos de antagonista dopaminérgico, com movimentos orofaciais involuntários, mais em idosos e mulheres, e pode ser irreversível. Anticolinérgicos não tratam e podem piorar; reduz-se ou troca-se o fármaco, com clozapina como opção. Subir o típico mascara o quadro por um tempo, mas o agrava."
+  },
+  {
+    "question": "Homem de 30 anos recebeu várias doses de haloperidol intramuscular. No dia seguinte tem febre de 40 °C, rigidez em cano de chumbo, confusão, pressão arterial lábil e CPK de 15.000 U/L. Qual o diagnóstico e a primeira conduta?",
+    "options": [
+      "Síndrome neuroléptica maligna; suspender o antipsicótico",
+      "Síndrome serotoninérgica; associar ciproeptadina oral",
+      "Catatonia maligna; aumentar a dose do haloperidol",
+      "Meningoencefalite; manter haloperidol e dar antibiótico"
+    ],
+    "correctIndex": 0,
+    "explanation": "Febre, rigidez em cano de chumbo, alteração de consciência, instabilidade autonômica e CPK muito elevada após antagonista dopaminérgico definem SNM, mais comum com típicos de alta potência em doses altas ou rápidas. Conduta: suspender, suporte intensivo, benzodiazepínico, e dantrolene ou bromocriptina nos graves; ECT nos refratários."
+  },
+  {
+    "question": "Paciente com esquizofrenia não respondeu a risperidona nem a olanzapina, usadas em dose e tempo adequados, com boa adesão. Qual o próximo passo e a monitorização obrigatória?",
+    "options": [
+      "Clozapina, com hemograma seriado pelo risco de agranulocitose",
+      "Haloperidol decanoato, com dosagem seriada de prolactina",
+      "Clozapina, com dosagem seriada de enzimas hepáticas",
+      "Quetiapina, com eletrocardiograma seriado pelo QT longo"
+    ],
+    "correctIndex": 0,
+    "explanation": "Refratária é a esquizofrenia sem resposta a pelo menos dois antipsicóticos em dose e tempo adequados; a clozapina é a de eficácia comprovada nesse cenário e também reduz o comportamento suicida. Exige hemograma seriado (semanal nas primeiras 18 semanas, depois mensal) pela agranulocitose; outros riscos: convulsão, miocardite, sialorreia, constipação e ganho de peso."
+  },
+  {
+    "question": "Homem de 28 anos com esquizofrenia é obeso e tem glicemia de jejum alterada. Qual antipsicótico deve ser evitado por ter o maior risco metabólico?",
+    "options": [
+      "Olanzapina",
+      "Aripiprazol",
+      "Ziprasidona",
+      "Haloperidol"
+    ],
+    "correctIndex": 0,
+    "explanation": "Clozapina e olanzapina têm o maior risco metabólico (peso, diabetes, dislipidemia); aripiprazol e ziprasidona, o menor entre os atípicos, e o haloperidol pesa pouco no metabolismo. Todo paciente em antipsicótico precisa de controle de peso, circunferência abdominal, pressão, glicemia e lipídios."
+  },
+  {
+    "question": "Mulher de 25 anos em uso de risperidona desenvolve amenorreia e galactorreia. Qual o mecanismo?",
+    "options": [
+      "Bloqueio D2 na via tuberoinfundibular",
+      "Bloqueio D2 na via nigroestriatal",
+      "Bloqueio D2 na via mesocortical",
+      "Antagonismo 5-HT2A na via mesolímbica"
+    ],
+    "correctIndex": 0,
+    "explanation": "Na via tuberoinfundibular a dopamina inibe a prolactina; bloquear o D2 a libera, com galactorreia, amenorreia, ginecomastia e disfunção sexual. Entre os atípicos, a risperidona é a que mais eleva a prolactina; o aripiprazol, agonista parcial D2, tende a reduzi-la."
+  },
+  {
+    "question": "Paciente com esquizofrenia tem recaídas repetidas porque abandona o comprimido logo após a alta. Qual a estratégia farmacológica mais adequada?",
+    "options": [
+      "Antipsicótico injetável de depósito, de longa ação",
+      "Troca para clozapina oral, pela maior eficácia",
+      "Associação de dois antipsicóticos orais diários",
+      "Suspensão do fármaco e psicoterapia isolada"
+    ],
+    "correctIndex": 0,
+    "explanation": "A má adesão é a principal causa de recaída; o antipsicótico de depósito (haloperidol decanoato, palmitato de paliperidona, aripiprazol de longa ação) garante a dose e torna o abandono visível. Soma-se psicoeducação e intervenção familiar, que reduz a emoção expressa e as recaídas, com acompanhamento no CAPS."
+  }
+];
+
+var LETTERS = ['A','B','C','D','E','F'];
+var SHUFFLE = true, LOCK = true;
+
+var S = { view:'home', started:false, finished:false, i:0, order:[], answers:[], open:{}, filter:'all', warn:false, chat:{} };
+
+function esc(s){ return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
+function pad(n){ return String(n).padStart(2,'0'); }
+
+function build(){
+  var qs = QUIZ.map(function(q,id){ return { question:q.question, options:q.options.slice(), correctIndex:q.correctIndex, explanation:q.explanation, image:q.image, imageCaption:q.imageCaption, id:id }; });
+  if (!SHUFFLE) return qs;
+  for (var i=qs.length-1;i>0;i--){ var j=Math.floor(Math.random()*(i+1)); var t=qs[i]; qs[i]=qs[j]; qs[j]=t; }
+  return qs.map(function(q){
+    var correct = q.options[q.correctIndex], o = q.options.slice();
+    for (var i=o.length-1;i>0;i--){ var j=Math.floor(Math.random()*(i+1)); var t=o[i]; o[i]=o[j]; o[j]=t; }
+    q.options = o; q.correctIndex = o.indexOf(correct); return q;
+  });
+}
+
+/* ── ações ─────────────────────────────────────────────────────────────────── */
+var A = {
+  home:      function(){ S.view='home'; S.started=false; S.finished=false; up(0); },
+  resumo:    function(){ S.view='resumo'; up(0); },
+  start:     function(){ var o=build(); S.view='quiz'; S.started=true; S.finished=false; S.i=0; S.order=o;
+                         S.answers=new Array(o.length).fill(null); S.open={}; S.filter='all'; S.warn=false; up(0); },
+  restart:   function(){ A.start(); },
+  sair:      function(){ S.view='home'; S.started=false; up(0); },   // guarda as respostas
+  retomar:   function(){ S.view='quiz'; S.started=true; S.finished=false; S.warn=false; up(0); },
+  go:        function(n){ if(n<0||n>S.order.length-1) return; S.i=n; S.warn=false; render(); },
+  jump:      function(n){ if(S.finished){ S.finished=false; S.i=n; S.warn=false; } else { if(n<0||n>S.order.length-1) return; S.i=n; S.warn=false; } up(0,'smooth'); },
+  pick:      function(n){ if(LOCK && S.answers[S.i]!==null) return; S.answers[S.i]=n; render(); },
+  prev:      function(){ A.go(S.i-1); },
+  next:      function(){ if(S.i<S.order.length-1) A.go(S.i+1); else A.finish(); },
+  finish:    function(){ var b=S.answers.filter(function(a){return a===null}).length;
+                         if(b>0 && !S.warn){ S.warn=true; render(); return; } S.finished=true; S.warn=false; up(0); },
+  force:     function(){ S.finished=true; S.warn=false; up(0); },
+  gotoBlank: function(){ var n=S.answers.findIndex(function(a){return a===null}); if(n>=0) A.go(n); },
+  back:      function(){ S.finished=false; S.warn=false; up(0); },
+  filter:    function(k){ S.filter=k; render(); },
+  toggle:    function(n){ S.open[n]=!S.open[n]; render(); },
+  toggleAll: function(){ var r=reviewList(), all=r.length>0 && r.every(function(x){return S.open[x.idx]});
+                         S.open={}; if(!all) r.forEach(function(x){ S.open[x.idx]=true; }); render(); }
+};
+function up(top, beh){ render(); window.scrollTo({ top: top||0, behavior: beh||'auto' }); }
+
+/* Aberto por duplo clique (file://) volta para o indice local; servido pela web,
+   volta para o publicado. Os dois listam os mesmos materiais. */
+function idxHref(){
+  var local = (typeof location !== 'undefined' && location.protocol === 'file:');
+  return local ? '../index_local.html' : '../index.html';
+}
+function emAndamento(){
+  return S.order.length > 0 && !S.finished &&
+         S.answers.some(function(a){ return a !== null; });
+}
+
+/* ── header ────────────────────────────────────────────────────────────────── */
+function renderHeader(){
+  var mono = "font-family:'IBM Plex Mono',monospace";
+  var left =
+    '<div style="min-width:0">' +
+      '<div style="display:flex;align-items:center;gap:8px;'+mono+';font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:#8a8578">' +
+        '<a href="'+idxHref()+'" class="h-ink" style="color:#2b57cc;text-decoration:none;white-space:nowrap">\u2190 Materiais</a>' +
+        '<span style="color:#d3cec4">/</span>' +
+        '<span style="overflow:hidden;text-overflow:ellipsis;white-space:nowrap">'+esc(EYEBROW)+'</span>' +
+      '</div>' +
+      '<h1 style="margin:1px 0 0;font-family:\'Newsreader\',Georgia,serif;font-size:20px;font-weight:500;letter-spacing:-.01em;line-height:1.15">'+esc(TITLE)+'</h1>' +
+    '</div>';
+
+  var right = '';
+  if (S.view === 'quiz' && S.started) {
+    var hit = counts().hit;
+    right = '<div style="display:flex;align-items:center;gap:10px;flex-shrink:0">' +
+              '<button type="button" data-act="sair" class="h-line" style="background:none;border:1px solid #ddd8ce;border-radius:9px;padding:6px 11px;'+mono+';font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;color:#5b6478;cursor:pointer;transition:border-color .15s ease">Sair</button>' +
+              '<div style="display:flex;align-items:center;gap:6px">' +
+                '<span style="'+mono+';font-size:15px;font-weight:600;letter-spacing:-.02em">'+hit+'</span>' +
+                '<span style="'+mono+';font-size:11px;color:#8a8578">/ '+S.order.length+'</span>' +
+              '</div></div>';
+  } else if (S.view !== 'home') {
+    right = '<button type="button" data-act="home" class="h-line" style="flex-shrink:0;background:none;border:1px solid #ddd8ce;border-radius:9px;padding:7px 13px;'+mono+';font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:#5b6478;cursor:pointer;transition:border-color .15s ease">← Início</button>';
+  }
+
+  var html = '<div style="display:flex;align-items:baseline;justify-content:space-between;gap:12px;margin-bottom:'+(S.view==='quiz'&&S.started?'10px':'2px')+'">'+left+right+'</div>';
+
+  if (S.view === 'quiz' && S.started) {
+    var c = counts();
+    var rail = S.order.map(function(q,n){
+      var a = S.answers[n], cur = n===S.i && !S.finished, bg = '#d3cec4';
+      if (a!==null) bg = (a===q.correctIndex) ? '#2e7d55' : '#c04437';
+      if (cur && a===null) bg = '#121a2b';
+      var st = a===null ? 'em branco' : (a===q.correctIndex ? 'correta' : 'incorreta');
+      return '<button type="button" data-act="jump" data-n="'+n+'" title="Questão '+(n+1)+' — '+st+'" aria-label="Questão '+(n+1)+' — '+st+'" style="flex:1 1 0;min-width:0;background:none;border:0;padding:13px 0;margin:0;cursor:pointer;display:flex;align-items:center;justify-content:center">' +
+             '<span style="display:block;width:100%;border-radius:99px;transition:height .18s ease,background .18s ease,box-shadow .18s ease;height:'+(cur?'17px':'9px')+';background:'+bg+';box-shadow:'+(cur?'0 0 0 3px rgba(18,26,43,.13)':'none')+'"></span></button>';
+    }).join('');
+    html += '<div><div style="display:flex;align-items:center;gap:3px">'+rail+'</div>' +
+            '<div style="display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:-2px">' +
+              '<div style="'+mono+';font-size:11px;letter-spacing:.04em;color:#5b6478">Questão '+pad(S.i+1)+' / '+S.order.length+'</div>' +
+              '<div style="display:flex;align-items:center;gap:12px;'+mono+';font-size:10.5px;color:#8a8578">' +
+                dot('#2e7d55',c.hit)+dot('#c04437',c.miss)+dot('#d3cec4',c.blank) +
+              '</div></div></div>';
+  }
+  document.getElementById('hdr').innerHTML = html;
+}
+function dot(color,n){ return '<span style="display:flex;align-items:center;gap:5px"><span style="width:7px;height:7px;border-radius:99px;background:'+color+';display:block"></span>'+n+'</span>'; }
+
+function counts(){
+  var hit=0, miss=0, blank=0;
+  S.answers.forEach(function(a,n){
+    if (a===null) blank++;
+    else if (S.order[n] && a===S.order[n].correctIndex) hit++;
+    else miss++;
+  });
+  return { hit:hit, miss:miss, blank:blank, total:S.order.length };
+}
+
+/* ── tela inicial ──────────────────────────────────────────────────────────── */
+function renderHome(){
+  var mono = "font-family:'IBM Plex Mono',monospace";
+  var secoes = (document.getElementById('resumoSrc').textContent.match(/<h2/g)||[]).length;
+  var cell = function(v,l){
+    return '<div style="background:#faf9f6;padding:16px 14px">' +
+      '<div style="'+mono+';font-size:22px;font-weight:500;letter-spacing:-.03em">'+v+'</div>' +
+      '<div style="'+mono+';font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:#8a8578;margin-top:3px">'+l+'</div></div>';
+  };
+  var card = function(act,tag,titulo,desc,cta){
+    return '<button type="button" data-act="'+act+'" class="h-card" style="display:flex;flex-direction:column;align-items:flex-start;gap:0;text-align:left;background:#fff;border:1px solid #e4e0d8;border-radius:18px;padding:24px 22px;cursor:pointer;transition:border-color .16s ease,transform .14s ease;box-shadow:0 1px 2px rgba(18,26,43,.04),0 12px 28px -20px rgba(18,26,43,.18)">' +
+      '<div style="'+mono+';font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:#2b57cc;margin-bottom:12px">'+tag+'</div>' +
+      '<div style="font-family:\'Newsreader\',Georgia,serif;font-size:26px;font-weight:500;letter-spacing:-.02em;line-height:1.15;margin-bottom:8px">'+titulo+'</div>' +
+      '<div style="font-size:14px;line-height:1.6;color:#5b6478;margin-bottom:18px;text-wrap:pretty">'+desc+'</div>' +
+      '<div style="'+mono+';font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:#121a2b">'+cta+'</div></button>';
+  };
+
+  document.getElementById('stage').innerHTML =
+    '<section style="padding:56px 0 0;animation:qFade .3s ease">' +
+      '<div style="'+mono+';font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:#2b57cc;margin-bottom:16px">Material de revisão</div>' +
+      '<h2 style="font-family:\'Newsreader\',Georgia,serif;font-size:40px;line-height:1.08;font-weight:400;letter-spacing:-.025em;margin:0 0 18px;text-wrap:pretty">'+esc(SUBTITLE)+'</h2>' +
+      '<p style="font-size:15.5px;line-height:1.65;color:#5b6478;margin:0 0 30px;max-width:52ch;text-wrap:pretty">'+esc(INTRO)+'</p>' +
+      '<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(108px,1fr));gap:1px;background:#e4e0d8;border:1px solid #e4e0d8;border-radius:14px;overflow:hidden;margin-bottom:32px">' +
+        cell(QUIZ.length,'Questões') + cell(secoes,'Seções') + cell('~'+Math.round(QUIZ.length*0.75),'Minutos') +
+      '</div>' +
+      '<div class="home-grid" style="display:grid;grid-template-columns:1fr 1fr;gap:12px">' +
+        (emAndamento()
+          ? card('retomar','Em andamento','Quiz',
+                 'Você parou na questão '+pad(S.i+1)+' de '+S.order.length+', com '+
+                 (S.order.length-counts().blank)+' respondida'+((S.order.length-counts().blank)===1?'':'s')+
+                 '. Suas respostas continuam guardadas.','Retomar →')
+          : card('start','Praticar','Quiz', QUIZ.length+' questões de múltipla escolha, com explicação assim que você responde e gabarito comentado no fim.','Começar →')) +
+        card('resumo','Estudar','Resumo','O conteúdo da aula em texto corrido, organizado em '+secoes+' seções para leitura antes da prova.','Ler →') +
+      '</div>' +
+      '<div style="margin-top:26px;display:flex;flex-wrap:wrap;align-items:center;gap:8px 18px;'+mono+';font-size:11px;color:#8a8578">' +
+        '<span>← →&nbsp; navegar</span><span>1–'+maxOpts()+'&nbsp; responder</span><span>Enter&nbsp; avançar</span>' +
+        (emAndamento() ? '<button type="button" data-act="start" class="h-ink" style="background:none;border:0;padding:0;'+mono+';font-size:11px;color:#8a8578;cursor:pointer;text-decoration:underline;text-underline-offset:3px">recomeçar do zero</button>' : '') +
+        '</div>' +
+    '</section>';
+}
+function maxOpts(){ return QUIZ.reduce(function(m,q){ return Math.max(m,q.options.length); },0); }
+
+/* ── resumo ────────────────────────────────────────────────────────────────── */
+function renderResumo(){
+  document.getElementById('stage').innerHTML =
+    '<section style="padding:34px 0 0;animation:qFade .3s ease">' +
+      '<div style="font-family:\'IBM Plex Mono\',monospace;font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:#2b57cc;margin-bottom:14px">Resumo</div>' +
+      '<div class="rsm">' + document.getElementById('resumoSrc').textContent + '</div>' +
+      '<div style="display:flex;flex-wrap:wrap;gap:9px;margin-top:38px;padding-top:24px;border-top:1px solid #e4e0d8">' +
+        '<button type="button" data-act="start" class="h-darkflat" style="background:#121a2b;color:#f5f3ef;border:0;border-radius:11px;padding:13px 24px;font-size:14px;font-weight:500;cursor:pointer;transition:background .16s ease">Fazer o quiz →</button>' +
+        '<button type="button" data-act="home" class="h-line" style="background:none;border:1px solid #ddd8ce;border-radius:11px;padding:13px 22px;font-size:14px;cursor:pointer;transition:border-color .15s ease">Voltar ao início</button>' +
+      '</div></section>';
+}
+
+/* imagem da questao — data URI ja resolvida pelo montar_quiz.py */
+function figura(q, cls){
+  if (!q.image) return '';
+  return '<figure class="fig'+(cls?' '+cls:'')+'"><img src="'+q.image+'" alt="'+esc(q.imageCaption||'Imagem da questão')+'">' +
+         (q.imageCaption ? '<figcaption>'+esc(q.imageCaption)+'</figcaption>' : '') + '</figure>';
+}
+
+/* ── questão ───────────────────────────────────────────────────────────────── */
+function renderQuestion(){
+  var mono = "font-family:'IBM Plex Mono',monospace";
+  var q = S.order[S.i], ans = S.answers[S.i], reveal = ans !== null;
+
+  var status = 'Não respondida', sColor = '#8a8578';
+  if (reveal) { var ok = ans===q.correctIndex; status = ok?'Você acertou':'Você errou'; sColor = ok?'#2e7d55':'#c04437'; }
+
+  var opts = q.options.map(function(text,n){
+    var isC = n===q.correctIndex, isMine = n===ans;
+    var bd='#e4e0d8', bg='#fff', fg='#121a2b', bBg='#f2efe9', bFg='#8a8578', mark='', mColor='', op='1', hbd='#2b57cc';
+    if (reveal) {
+      op = (isC||isMine) ? '1' : '.62';
+      if (isC)               { bd='#8fc7a7'; bg='#eef7f1'; fg='#1f5c3e'; bBg='#2e7d55'; bFg='#fff'; mark='✓'; mColor='#2e7d55'; }
+      if (isMine && !isC)    { bd='#e0a49a'; bg='#fdf0ee'; fg='#8f2f25'; bBg='#c04437'; bFg='#fff'; mark='✕'; mColor='#c04437'; }
+    } else if (isMine)       { bd='#121a2b'; bg='#f7f6f2'; bBg='#121a2b'; bFg='#f5f3ef'; }
+    var locked = reveal && LOCK;
+    return '<button type="button" data-act="pick" data-n="'+n+'" class="h-opt'+(locked?' locked':'')+'" style="--hbd:'+hbd+';display:flex;gap:13px;align-items:flex-start;width:100%;text-align:left;padding:14px 15px;border-radius:13px;font-size:15px;line-height:1.5;transition:border-color .15s ease,background .15s ease,transform .12s ease;border:1.5px solid '+bd+';background:'+bg+';color:'+fg+';cursor:'+(locked?'default':'pointer')+';opacity:'+op+'">' +
+      '<span style="flex-shrink:0;width:24px;height:24px;border-radius:7px;display:flex;align-items:center;justify-content:center;'+mono+';font-size:11.5px;font-weight:600;margin-top:1px;background:'+bBg+';color:'+bFg+'">'+LETTERS[n]+'</span>' +
+      '<span style="flex:1;min-width:0;text-wrap:pretty">'+esc(text)+'</span>' +
+      (mark ? '<span style="flex-shrink:0;'+mono+';font-size:14px;font-weight:600;margin-top:1px;color:'+mColor+'">'+mark+'</span>' : '') +
+      '</button>';
+  }).join('');
+
+  var expl = reveal ? '<div style="margin-top:20px;padding:16px 18px;background:#f7f6f2;border-left:2.5px solid #2b57cc;border-radius:0 12px 12px 0;animation:qFade .26s ease">' +
+      '<div style="'+mono+';font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:#2b57cc;margin-bottom:8px">Por quê</div>' +
+      '<p style="margin:0;font-size:14.5px;line-height:1.68;color:#39404f;text-wrap:pretty">'+esc(q.explanation)+'</p></div>' : '';
+
+  var blank = counts().blank;
+  var warn = S.warn ? '<div style="margin-top:14px;padding:15px 17px;background:#fdf7e9;border:1px solid #e8d5a3;border-radius:14px;animation:qFade .22s ease">' +
+      '<p style="margin:0 0 12px;font-size:14px;line-height:1.55;color:#6b5620">'+blank+(blank===1?' questão ainda está em branco.':' questões ainda estão em branco.')+' Você pode voltar nelas ou finalizar assim mesmo.</p>' +
+      '<div style="display:flex;flex-wrap:wrap;gap:8px">' +
+        '<button type="button" data-act="gotoBlank" style="background:#121a2b;color:#f5f3ef;border:0;border-radius:9px;padding:9px 16px;font-size:13px;font-weight:500;cursor:pointer">Ir para a 1ª em branco</button>' +
+        '<button type="button" data-act="force" style="background:none;color:#6b5620;border:1px solid #e8d5a3;border-radius:9px;padding:9px 16px;font-size:13px;cursor:pointer">Finalizar assim mesmo</button>' +
+      '</div></div>' : '';
+
+  var last = S.i === S.order.length-1;
+  var early = !last && (S.order.length - blank) > 0;
+
+  document.getElementById('stage').innerHTML =
+    '<section style="padding:26px 0 0">' +
+      '<article style="background:#fff;border:1px solid #e4e0d8;border-radius:18px;padding:26px 22px 24px;box-shadow:0 1px 2px rgba(18,26,43,.04),0 12px 28px -18px rgba(18,26,43,.18)">' +
+        '<div style="display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:14px">' +
+          '<div style="'+mono+';font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:#2b57cc">Questão '+pad(S.i+1)+'</div>' +
+          '<div style="'+mono+';font-size:10.5px;letter-spacing:.06em;color:'+sColor+'">'+status+'</div>' +
+        '</div>' +
+        '<h2 style="font-family:\'Newsreader\',Georgia,serif;font-size:22px;line-height:1.42;font-weight:400;letter-spacing:-.012em;margin:0 0 22px;text-wrap:pretty">'+esc(q.question)+'</h2>' +
+        figura(q, 'qfig') +
+        '<div style="display:flex;flex-direction:column;gap:9px">'+opts+'</div>' + expl +
+        (reveal ? chatBox(q, ans===q.correctIndex) : '') +
+      '</article>' + warn +
+      '<div style="display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:18px">' +
+        '<button type="button" data-act="prev" class="h-line" style="background:none;border:1px solid #ddd8ce;border-radius:11px;padding:12px 18px;font-size:14px;cursor:pointer;transition:border-color .15s ease,color .15s ease;color:'+(S.i===0?'#c4bfb4':'#121a2b')+';pointer-events:'+(S.i===0?'none':'auto')+'">← Anterior</button>' +
+        '<div style="display:flex;align-items:center;gap:8px">' +
+          (early ? '<button type="button" data-act="finish" class="h-ink" style="background:none;border:0;padding:12px 6px;'+mono+';font-size:11.5px;letter-spacing:.06em;text-transform:uppercase;color:#8a8578;cursor:pointer;text-decoration:underline;text-underline-offset:3px">Finalizar</button>' : '') +
+          '<button type="button" data-act="next" class="h-darkflat" style="background:#121a2b;color:#f5f3ef;border:0;border-radius:11px;padding:12px 22px;font-size:14px;font-weight:500;cursor:pointer;transition:background .16s ease">'+(last?'Finalizar':'Próxima →')+'</button>' +
+        '</div></div></section>';
+}
+
+/* ── resultado + gabarito comentado ────────────────────────────────────────── */
+function reviewList(){
+  return S.order.map(function(q,n){
+    var a = S.answers[n], ok = a!==null && a===q.correctIndex;
+    return { idx:n, ok:ok, blank:a===null, q:q, a:a };
+  }).filter(function(r){
+    return S.filter==='all' || (S.filter==='wrong'&&!r.ok&&!r.blank) || (S.filter==='right'&&r.ok) || (S.filter==='blank'&&r.blank);
+  });
+}
+
+function renderResult(){
+  var mono = "font-family:'IBM Plex Mono',monospace";
+  var c = counts(), pct = c.total ? Math.round(c.hit/c.total*100) : 0;
+
+  var title='Precisa revisar', msg='Releia o material com atenção e refaça o quiz — as explicações abaixo cobrem cada erro.';
+  if (pct>=90)      { title='Domínio sólido';   msg='Desempenho excelente. Confira as explicações das que escaparam e siga em frente.'; }
+  else if (pct>=70) { title='Bom desempenho';   msg='Base consistente. Revise os pontos errados abaixo para fechar as lacunas.'; }
+  else if (pct>=50) { title='Meio do caminho';  msg='Você acertou o essencial, mas há lacunas. Comece pelo filtro de erradas.'; }
+
+  var stat = function(v,l,color){
+    return '<div style="background:#faf9f6;padding:14px 10px">' +
+      '<div style="'+mono+';font-size:19px;font-weight:500;color:'+color+'">'+v+'</div>' +
+      '<div style="'+mono+';font-size:9.5px;letter-spacing:.09em;text-transform:uppercase;color:#8a8578;margin-top:2px">'+l+'</div></div>';
+  };
+
+  var fdefs = [['all','Todas',c.total],['wrong','Erradas',c.miss],['right','Certas',c.hit],['blank','Em branco',c.blank]];
+  var filters = fdefs.map(function(f){
+    var on = S.filter===f[0];
+    return '<button type="button" data-act="filter" data-k="'+f[0]+'" class="h-line" style="border-radius:99px;padding:8px 14px;font-size:13px;cursor:pointer;transition:all .15s ease;border:1px solid '+(on?'#121a2b':'#ddd8ce')+';background:'+(on?'#121a2b':'transparent')+';color:'+(on?'#f5f3ef':'#5b6478')+'">'+f[1]+' '+f[2]+'</button>';
+  }).join('');
+
+  var list = reviewList();
+  var allOpen = list.length>0 && list.every(function(r){ return S.open[r.idx]; });
+
+  var cards = list.map(function(r){
+    var numBg='#f0ede7', numFg='#8a8578';
+    if (!r.blank) { if (r.ok) { numBg='#e3f0e8'; numFg='#1f5c3e'; } else { numBg='#fbe6e2'; numFg='#8f2f25'; } }
+    var open = !!S.open[r.idx];
+    var body = '';
+    if (open) {
+      var opts = r.q.options.map(function(text,n){
+        var isC = n===r.q.correctIndex, isMine = n===r.a;
+        var bd='#eeebe4', bg='#fbfaf8', fg='#5b6478', bBg='#f0ede7', bFg='#8a8578', tag='', tBg='', tFg='';
+        if (isC)            { bd='#bcdcc9'; bg='#eef7f1'; fg='#1f5c3e'; bBg='#2e7d55'; bFg='#fff'; tag='Correta'; tBg='#d9ede1'; tFg='#1f5c3e'; }
+        if (isMine && !isC) { bd='#eec4bd'; bg='#fdf0ee'; fg='#8f2f25'; bBg='#c04437'; bFg='#fff'; tag='Sua resposta'; tBg='#f7ddd8'; tFg='#8f2f25'; }
+        if (isMine && isC)  { tag='Sua resposta ✓'; }
+        return '<div style="display:flex;gap:11px;align-items:flex-start;padding:11px 13px;border-radius:11px;font-size:14px;line-height:1.5;border:1px solid '+bd+';background:'+bg+';color:'+fg+'">' +
+          '<span style="flex-shrink:0;width:21px;height:21px;border-radius:6px;display:flex;align-items:center;justify-content:center;'+mono+';font-size:10.5px;font-weight:600;background:'+bBg+';color:'+bFg+'">'+LETTERS[n]+'</span>' +
+          '<span style="flex:1;min-width:0;text-wrap:pretty">'+esc(text)+'</span>' +
+          (tag ? '<span style="flex-shrink:0;'+mono+';font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;padding:3px 7px;border-radius:6px;margin-top:1px;background:'+tBg+';color:'+tFg+'">'+tag+'</span>' : '') +
+          '</div>';
+      }).join('');
+      body = '<div style="padding:2px 15px 18px;animation:qDrawer .2s ease">' +
+        '<div style="height:1px;background:#eeebe4;margin:0 0 16px"></div>' +
+        '<p style="font-family:\'Newsreader\',Georgia,serif;font-size:18px;line-height:1.5;margin:0 0 16px;text-wrap:pretty">'+esc(r.q.question)+'</p>' +
+        figura(r.q) +
+        '<div style="display:flex;flex-direction:column;gap:7px">'+opts+'</div>' +
+        '<div style="margin-top:16px;padding:14px 16px;background:#f7f6f2;border-left:2.5px solid #2b57cc;border-radius:0 11px 11px 0">' +
+          '<div style="'+mono+';font-size:9.5px;letter-spacing:.16em;text-transform:uppercase;color:#2b57cc;margin-bottom:7px">Por quê</div>' +
+          '<p style="margin:0;font-size:14px;line-height:1.65;color:#39404f;text-wrap:pretty">'+esc(r.q.explanation)+'</p></div>' +
+        '<button type="button" data-act="jump" data-n="'+r.idx+'" style="margin-top:14px;background:none;border:0;padding:0;'+mono+';font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:#2b57cc;cursor:pointer;text-decoration:underline;text-underline-offset:3px">Abrir no quiz →</button></div>';
+    }
+    return '<div style="background:#fff;border:1px solid '+(open?'#c9c3b6':'#e4e0d8')+';border-radius:14px;overflow:hidden;transition:border-color .15s ease">' +
+      '<button type="button" data-act="toggle" data-n="'+r.idx+'" style="display:flex;align-items:center;gap:12px;width:100%;text-align:left;background:none;border:0;padding:14px 15px;cursor:pointer">' +
+        '<span style="flex-shrink:0;width:28px;height:28px;border-radius:8px;display:flex;align-items:center;justify-content:center;'+mono+';font-size:12px;font-weight:600;background:'+numBg+';color:'+numFg+'">'+pad(r.idx+1)+'</span>' +
+        '<span style="flex:1;min-width:0;font-size:14px;line-height:1.45;color:#39404f;overflow:hidden;text-overflow:ellipsis;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical">'+esc(r.q.question)+'</span>' +
+        '<span style="flex-shrink:0;'+mono+';font-size:16px;color:#8a8578;width:16px;text-align:center">'+(open?'−':'+')+'</span>' +
+      '</button>' + body + '</div>';
+  }).join('');
+
+  document.getElementById('stage').innerHTML =
+    '<section style="padding:34px 0 0;animation:qFade .3s ease">' +
+      '<div style="'+mono+';font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:#2b57cc;margin-bottom:14px">Resultado</div>' +
+      '<h2 style="font-family:\'Newsreader\',Georgia,serif;font-size:36px;line-height:1.12;font-weight:400;letter-spacing:-.025em;margin:0 0 8px">'+title+'</h2>' +
+      '<p style="font-size:15px;line-height:1.6;color:#5b6478;margin:0 0 24px;max-width:48ch;text-wrap:pretty">'+msg+'</p>' +
+      '<div style="height:8px;border-radius:99px;background:#e4e0d8;overflow:hidden;margin-bottom:10px">' +
+        '<div style="height:100%;border-radius:99px;background:#121a2b;transition:width .7s cubic-bezier(.22,1,.36,1);width:'+pct+'%"></div></div>' +
+      '<div style="display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:#e4e0d8;border:1px solid #e4e0d8;border-radius:14px;overflow:hidden;margin-bottom:34px">' +
+        stat(c.hit,'Certas','#2e7d55')+stat(c.miss,'Erradas','#c04437')+stat(c.blank,'Branco','#8a8578')+stat(pct+'%','Aproveit.','#2b57cc') +
+      '</div>' +
+      '<div style="display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-bottom:14px">' +
+        '<h3 style="font-family:\'Newsreader\',Georgia,serif;font-size:22px;font-weight:500;letter-spacing:-.015em;margin:0">Gabarito comentado</h3>' +
+        '<button type="button" data-act="toggleAll" class="h-ink" style="background:none;border:0;padding:6px 0;'+mono+';font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:#5b6478;cursor:pointer;text-decoration:underline;text-underline-offset:3px">'+(allOpen?'Recolher tudo':'Expandir tudo')+'</button>' +
+      '</div>' +
+      '<div style="display:flex;gap:7px;flex-wrap:wrap;margin-bottom:16px">'+filters+'</div>' +
+      '<div style="display:flex;flex-direction:column;gap:8px">'+cards+'</div>' +
+      (list.length===0 ? '<div style="padding:38px 16px;text-align:center;color:#8a8578;font-size:14px;border:1px dashed #ddd8ce;border-radius:14px">Nenhuma questão neste filtro.</div>' : '') +
+      '<div style="display:flex;flex-wrap:wrap;gap:9px;margin-top:28px;padding-top:24px;border-top:1px solid #e4e0d8">' +
+        '<button type="button" data-act="restart" class="h-darkflat" style="background:#121a2b;color:#f5f3ef;border:0;border-radius:11px;padding:13px 24px;font-size:14px;font-weight:500;cursor:pointer;transition:background .16s ease">Refazer o quiz</button>' +
+        '<button type="button" data-act="back" class="h-line" style="background:none;border:1px solid #ddd8ce;border-radius:11px;padding:13px 22px;font-size:14px;cursor:pointer;transition:border-color .15s ease">Voltar às questões</button>' +
+        '<button type="button" data-act="resumo" class="h-line" style="background:none;border:1px solid #ddd8ce;border-radius:11px;padding:13px 22px;font-size:14px;cursor:pointer;transition:border-color .15s ease">Ler o resumo</button>' +
+      '</div></section>';
+}
+
+/* ── render + eventos ──────────────────────────────────────────────────────── */
+
+/* ─── Tutor DeepSeek — só local, só quando a questão foi errada ──────────────
+   A chave vem de ../deepseek_key.js, que não existe na versão publicada: online
+   o arquivo dá 404, dsOn() vira false e o chat simplesmente não é renderizado.
+   O histórico fica em S.chat[idDaQuestao] e sobrevive ao re-render do stage. */
+var DS_MODEL = 'deepseek-flash';
+var DS_URL   = 'https://api.deepseek.com/chat/completions';
+var NLJS     = String.fromCharCode(10);
+var DS_MONO  = "font-family:'IBM Plex Mono',monospace";
+var DS_SANS  = "font-family:'IBM Plex Sans',system-ui,sans-serif";
+
+function dsOn(){ return typeof window.DEEPSEEK_KEY === 'string' && window.DEEPSEEK_KEY.length > 10; }
+
+
+/* ─── markdown do chat ───────────────────────────────────────────────────────
+   O modelo responde em markdown (**negrito**, listas, `codigo`, tabelas). O texto
+   vem de fora, entao a ordem importa: ESCAPA TUDO primeiro com esc() e so depois
+   aplica formatacao — assim nenhuma tag vinda da resposta vira HTML de verdade.
+   Como esc() ja trocou > por &gt;, a citacao casa com &gt; e nao com >.
+   Trechos de codigo saem de cena por um marcador NUL, que nao pode existir
+   no texto escapado, e voltam no fim — assim ` ` protege o que esta dentro. */
+function mdIn(t){
+  var Z = String.fromCharCode(0), codes = [];
+  t = t.replace(/`([^`]+)`/g, function(_, c){
+    codes.push(c);
+    return Z + 'c' + (codes.length - 1) + Z;
+  });
+  t = t.replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>');
+  t = t.replace(/__([^_]+)__/g, '<strong>$1</strong>');
+  t = t.replace(/(^|[\s(])\*([^*\n]+)\*/g, '$1<em>$2</em>');
+  t = t.replace(/(^|[\s(])_([^_\n]+)_/g, '$1<em>$2</em>');
+  t = t.replace(/\[([^\]]+)\]\((https?:\/\/[^)\s]+)\)/g,
+    '<a href="$2" target="_blank" rel="noopener" style="color:#2b57cc">$1</a>');
+  return t.replace(new RegExp(Z + 'c([0-9]+)' + Z, 'g'), function(_, i){
+    return '<code style="' + DS_MONO + ';font-size:12px;background:#f2efe9;' +
+           'border-radius:4px;padding:1px 5px">' + codes[i] + '</code>';
+  });
+}
+
+function mdChat(txt){
+  var Z = String.fromCharCode(0);
+  var t = esc(String(txt == null ? '' : txt));
+  var blocos = [];
+  t = t.replace(/```[a-zA-Z]*\n?([\s\S]*?)```/g, function(_, c){
+    blocos.push(c.replace(/\n+$/, ''));
+    return Z + 'b' + (blocos.length - 1) + Z;
+  });
+
+  var linhas = t.split('\n'), out = [], lista = null, par = [];
+  function fechaLista(){ if (lista) { out.push('</' + lista + '>'); lista = null; } }
+  function fechaPar(){
+    if (par.length) { out.push('<p style="margin:0 0 9px">' + mdIn(par.join(' ')) + '</p>'); par = []; }
+  }
+  function fecha(){ fechaPar(); fechaLista(); }
+
+  for (var i = 0; i < linhas.length; i++){
+    var l = linhas[i], t2 = l.trim();
+    if (!t2) { fecha(); continue; }
+
+    var bl = t2.match(new RegExp('^' + Z + 'b([0-9]+)' + Z + '$'));
+    if (bl) {
+      fecha();
+      out.push('<pre style="margin:0 0 9px;padding:9px 11px;background:#f7f6f2;border-radius:9px;' +
+               'overflow-x:auto;' + DS_MONO + ';font-size:12px;line-height:1.5">' + blocos[bl[1]] + '</pre>');
+      continue;
+    }
+
+    // tabela: linha com | ... | seguida da separadora | --- | --- |
+    if (t2.charAt(0) === '|' && i + 1 < linhas.length && /^\|[\s:|-]+\|$/.test(linhas[i+1].trim())) {
+      fecha();
+      var celulas = function(linha){
+        return linha.trim().replace(/^\||\|$/g, '').split('|').map(function(c){ return mdIn(c.trim()); });
+      };
+      var cab = celulas(t2), corpo = [];
+      i += 2;
+      while (i < linhas.length && linhas[i].trim().charAt(0) === '|') { corpo.push(celulas(linhas[i].trim())); i++; }
+      i--;
+      var cel = 'padding:5px 9px;border-bottom:1px solid #eae6de;text-align:left;vertical-align:top';
+      out.push('<div style="overflow-x:auto;margin:0 0 9px">' +
+        '<table style="border-collapse:collapse;font-size:12.5px;width:100%">' +
+        '<thead><tr>' + cab.map(function(c){ return '<th style="' + cel + ';font-weight:600">' + c + '</th>'; }).join('') + '</tr></thead>' +
+        '<tbody>' + corpo.map(function(r){
+          return '<tr>' + r.map(function(c){ return '<td style="' + cel + '">' + c + '</td>'; }).join('') + '</tr>';
+        }).join('') + '</tbody></table></div>');
+      continue;
+    }
+
+    var h = t2.match(/^#{1,6}\s+(.*)$/);
+    if (h) {
+      fecha();
+      out.push('<div style="font-weight:600;color:#121a2b;margin:11px 0 5px">' + mdIn(h[1]) + '</div>');
+      continue;
+    }
+
+    if (/^(---+|\*\*\*+)$/.test(t2)) {
+      fecha();
+      out.push('<hr style="border:0;border-top:1px solid #eae6de;margin:11px 0">');
+      continue;
+    }
+
+    var cit = t2.match(/^&gt;\s?(.*)$/);
+    if (cit) {
+      fecha();
+      out.push('<div style="margin:0 0 9px;padding:7px 11px;border-left:2.5px solid #c9d6f7;' +
+               'background:#f7f9fe;border-radius:0 7px 7px 0">' + mdIn(cit[1]) + '</div>');
+      continue;
+    }
+
+    var mUl = t2.match(/^[-*•]\s+(.*)$/);
+    var mOl = t2.match(/^\d+[.)]\s+(.*)$/);
+    if (mUl || mOl) {
+      var tipo = mUl ? 'ul' : 'ol';
+      fechaPar();
+      if (lista !== tipo) {
+        fechaLista();
+        out.push('<' + tipo + ' style="margin:0 0 9px;padding-left:19px">');
+        lista = tipo;
+      }
+      out.push('<li style="margin:3px 0">' + mdIn((mUl || mOl)[1]) + '</li>');
+      continue;
+    }
+
+    fechaLista();
+    par.push(t2);
+  }
+  fecha();
+  return out.join('');
+}
+
+function msgHTML(m){
+  if (m.role === 'user')
+    return '<div style="margin:0 0 10px;text-align:right">' +
+      '<span style="display:inline-block;max-width:88%;text-align:left;background:#f2efe9;' +
+      'border-radius:12px 12px 3px 12px;padding:9px 12px;font-size:13.5px;line-height:1.6;' +
+      'color:#39404f;text-wrap:pretty">' + esc(m.content) + '</span></div>';
+  return '<div style="margin:0 0 12px">' +
+    '<div style="' + DS_MONO + ';font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;' +
+    'color:#2b57cc;margin-bottom:4px">DeepSeek</div>' +
+    '<div style="font-size:13.5px;line-height:1.65;color:#39404f;text-wrap:pretty">' +
+    mdChat(m.content) + '</div></div>';
+}
+
+function chatBox(q, acertou){
+  if (!dsOn()) return '';
+  var chamada = acertou ? 'Quer ir mais fundo?' : 'Ainda com dúvida?';
+  var dica = acertou ? 'Por que as outras estão erradas?' : 'Por que a que eu marquei está errada?';
+  var hist = (S.chat[q.id] || []).map(msgHTML).join('');
+  return '<div id="ds" data-qid="' + q.id + '" style="margin-top:14px;border:1px solid #e4e0d8;' +
+      'border-radius:14px;background:#fff;overflow:hidden;animation:qFade .26s ease">' +
+      '<div style="display:flex;align-items:center;gap:8px;padding:11px 15px;' +
+        'border-bottom:1px solid #f0ede6;background:#faf9f6">' +
+        '<span style="' + DS_MONO + ';font-size:10px;letter-spacing:.16em;text-transform:uppercase;' +
+        'color:#2b57cc">' + chamada + '</span>' +
+        '<span style="font-size:12px;color:#8a8578">pergunte ao DeepSeek</span></div>' +
+      '<div id="dsLog" style="max-height:280px;overflow-y:auto;padding:' + (hist ? '12px 15px' : '0') + '">' +
+        hist + '</div>' +
+      '<div style="display:flex;gap:8px;padding:11px 12px;border-top:1px solid #f0ede6">' +
+        '<input id="dsIn" type="text" autocomplete="off" ' +
+          'placeholder="' + dica + '" ' +
+          'style="flex:1;min-width:0;border:1px solid #e4e0d8;border-radius:10px;padding:10px 12px;' +
+          'font-size:13.5px;' + DS_SANS + ';color:#121a2b;background:#fff;outline:none">' +
+        '<button type="button" data-act="dsSend" class="h-darkflat" style="flex-shrink:0;' +
+          'background:#121a2b;color:#f5f3ef;border:0;border-radius:10px;padding:10px 16px;' +
+          'font-size:13px;font-weight:500;cursor:pointer;transition:background .16s ease">Enviar</button>' +
+      '</div></div>';
+}
+
+function dsContexto(q, ans){
+  var alts = q.options.map(function(o, n){ return LETTERS[n] + ') ' + o; }).join(NLJS);
+  return 'Questao: ' + q.question + NLJS + alts + NLJS +
+    'Resposta correta: ' + LETTERS[q.correctIndex] + ') ' + q.options[q.correctIndex] + NLJS +
+    'O estudante marcou: ' + (ans === null ? 'nada' : LETTERS[ans] + ') ' + q.options[ans]) + NLJS +
+    'Explicacao que ele ja tem: ' + q.explanation;
+}
+
+A.dsSend = function(){
+  var box = document.getElementById('ds');
+  if (!box || !dsOn() || box.getAttribute('data-busy')) return;
+  var input = document.getElementById('dsIn'), log = document.getElementById('dsLog');
+  var texto = (input.value || '').trim();
+  if (!texto) return;
+
+  var qid = parseInt(box.getAttribute('data-qid'), 10), q = null, ans = null;
+  for (var i = 0; i < S.order.length; i++)
+    if (S.order[i].id === qid) { q = S.order[i]; ans = S.answers[i]; }
+  if (!q) return;
+
+  S.chat[qid] = S.chat[qid] || [];
+  S.chat[qid].push({ role:'user', content:texto });
+  input.value = '';
+  log.style.padding = '12px 15px';
+  log.insertAdjacentHTML('beforeend', msgHTML({ role:'user', content:texto }));
+  log.insertAdjacentHTML('beforeend',
+    '<div><div style="' + DS_MONO + ';font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;' +
+    'color:#2b57cc;margin-bottom:4px">DeepSeek</div>' +
+    '<div id="dsTxt" style="font-size:13.5px;line-height:1.65;color:#8a8578;' +
+    'text-wrap:pretty">pensando…</div></div>');
+  log.scrollTop = log.scrollHeight;
+  box.setAttribute('data-busy', '1');
+
+  var acertou = (ans === q.correctIndex);
+  var situacao = acertou
+    ? 'Voce e um tutor de medicina. O estudante do 7o semestre ACERTOU esta questao, mas ficou com uma duvida. '
+    : 'Voce e um tutor de medicina. O estudante do 7o semestre ERROU esta questao. ';
+  var msgs = [
+    { role:'system', content: situacao +
+      'Responda em portugues do Brasil, direto ao ponto, no maximo 150 palavras. ' +
+      'Traga o dado concreto (valor, criterio, mecanismo) em vez de generalidade. ' +
+      'Nao repita a explicacao que ele ja tem; foque na duvida que ele trouxe.' },
+    { role:'user', content: dsContexto(q, ans) }
+  ];
+  var h = S.chat[qid];
+  for (var j = 0; j < h.length; j++) msgs.push({ role:h[j].role, content:h[j].content });
+
+  dsStream(msgs, function(txt, fim, erro){
+    var el = document.getElementById('dsTxt');
+    if (!el) { box.removeAttribute('data-busy'); return; }
+    if (erro) { el.style.color = '#c04437'; el.textContent = erro; box.removeAttribute('data-busy'); return; }
+    el.style.color = '#39404f';
+    el.innerHTML = mdChat(txt);
+    var lg = document.getElementById('dsLog'); if (lg) lg.scrollTop = lg.scrollHeight;
+    if (fim) { el.removeAttribute('id'); S.chat[qid].push({ role:'assistant', content:txt }); box.removeAttribute('data-busy'); }
+  });
+};
+
+function dsStream(messages, cb){
+  var acc = '';
+  fetch(DS_URL, {
+    method: 'POST',
+    headers: { 'Content-Type':'application/json', 'Authorization':'Bearer ' + window.DEEPSEEK_KEY },
+    body: JSON.stringify({ model:DS_MODEL, messages:messages, stream:true, max_tokens:1200, temperature:0.3 })
+  }).then(function(r){
+    if (!r.ok) return r.text().then(function(t){
+      throw new Error(
+        r.status === 401 ? 'Chave recusada (401). Confira o deepseek_key.js.' :
+        r.status === 402 ? 'Sem saldo na conta DeepSeek (402).' :
+        r.status === 429 ? 'Limite de uso atingido (429). Tente daqui a pouco.' :
+        'Erro ' + r.status + ': ' + String(t).slice(0, 120));
+    });
+    var reader = r.body.getReader(), dec = new TextDecoder(), buf = '';
+    (function pump(){
+      return reader.read().then(function(res){
+        if (res.done) { cb(acc || '(resposta vazia)', true); return; }
+        buf += dec.decode(res.value, { stream:true });
+        var linhas = buf.split(NLJS);
+        buf = linhas.pop();
+        for (var i = 0; i < linhas.length; i++){
+          var l = linhas[i].trim();
+          if (l.indexOf('data:') !== 0) continue;
+          var carga = l.slice(5).trim();
+          if (carga === '[DONE]') continue;
+          try {
+            var d = JSON.parse(carga).choices[0].delta;
+            if (d && d.content) { acc += d.content; cb(acc, false); }
+          } catch (_){}
+        }
+        return pump();
+      });
+    })();
+  }).catch(function(e){
+    cb('', true, 'Nao consegui falar com o DeepSeek: ' + (e && e.message ? e.message : e));
+  });
+}
+
+function render(){
+  renderHeader();
+  if (S.view === 'home')        renderHome();
+  else if (S.view === 'resumo') renderResumo();
+  else if (S.finished)          renderResult();
+  else                          renderQuestion();
+}
+
+/* lightbox: clique em qualquer figura amplia */
+document.addEventListener('click', function(e){
+  var lb = document.getElementById('lb');
+  if (e.target.closest('#lb')) { lb.className = ''; return; }
+  var img = e.target.closest('.fig img');
+  if (img) { lb.firstElementChild.src = img.src; lb.className = 'on'; }
+});
+window.addEventListener('keydown', function(e){
+  if (e.key === 'Escape') document.getElementById('lb').className = '';
+});
+
+document.addEventListener('click', function(e){
+  var b = e.target.closest('[data-act]'); if (!b) return;
+  var act = b.getAttribute('data-act'), n = parseInt(b.getAttribute('data-n'),10), k = b.getAttribute('data-k');
+  if (act==='pick'||act==='jump'||act==='toggle') A[act](n);
+  else if (act==='filter') A.filter(k);
+  else if (A[act]) A[act]();
+});
+
+window.addEventListener('keydown', function(e){
+  if (S.view!=='quiz' || !S.started || S.finished) return;
+  var t = e.target, tag = t && t.tagName;
+  if (tag==='INPUT' || tag==='TEXTAREA' || (t && t.isContentEditable)) return;
+  if (e.metaKey||e.ctrlKey||e.altKey) return;
+  if (e.key==='ArrowRight')     { e.preventDefault(); A.go(S.i+1); }
+  else if (e.key==='ArrowLeft') { e.preventDefault(); A.go(S.i-1); }
+  else if (e.key==='Enter')     { e.preventDefault(); A.next(); }
+  else if (/^[1-6]$/.test(e.key)) {
+    var n = parseInt(e.key,10)-1;
+    if (n < S.order[S.i].options.length) A.pick(n);
+  }
+});
+
+render();
+</script>
+</body>
+</html>

@@ -1,0 +1,228 @@
+{
+  "titulo": "Doenças Musculoesqueléticas",
+  "eyebrow": "Pediatria · Referência",
+  "subtitulo": "Do joelho do atleta à artrite que não pode passar despercebida",
+  "intro": "Apofisites, epifisiólise, Perthes, sinovite transitória × artrite séptica, osteomielite, AIJ, febre reumática (Jones 2015) e dor do crescimento × sinais de alarme. Material de referência (Nelson, SBP, AHA 2015, SBC) — não há slide da aula deste tema.",
+  "questoes": [
+    {
+      "question": "Menino de 13 anos, jogador de futebol e de vôlei, tem dor na face anterior do joelho direito há 2 meses, que piora ao correr, saltar e ajoelhar. Há proeminência dolorosa na tuberosidade anterior da tíbia. Qual é o diagnóstico?",
+      "options": [
+        "Apofisite da tuberosidade da tíbia (Osgood-Schlatter)",
+        "Apofisite do polo inferior da patela (Sinding-Larsen)",
+        "Osteossarcoma da metáfise proximal da tíbia",
+        "Condromalácia patelar por mau alinhamento"
+      ],
+      "correctIndex": 0,
+      "explanation": "Osgood-Schlatter é apofisite de tração na inserção do tendão patelar, típica do adolescente em estirão que pratica esporte com salto e corrida; o diagnóstico é clínico. O tratamento é conservador (redução relativa da atividade, gelo, analgésico, alongamento de quadríceps e isquiotibiais) e o quadro se resolve com o fechamento da placa de crescimento. Sinding-Larsen-Johansson acomete o polo inferior da patela."
+    },
+    {
+      "question": "Menina de 10 anos, ginasta, tem dor nos dois calcanhares que piora após os treinos. A compressão látero-lateral do calcâneo reproduz a dor; não há edema nem febre. Qual é o diagnóstico?",
+      "options": [
+        "Apofisite do calcâneo (doença de Sever)",
+        "Fascite plantar por sobrecarga crônica",
+        "Fratura por estresse do segundo metatarso",
+        "Osteomielite subaguda do calcâneo"
+      ],
+      "correctIndex": 0,
+      "explanation": "A doença de Sever é a apofisite do calcâneo na inserção do tendão calcâneo e a causa mais comum de dor no calcanhar na criança em idade escolar ativa; o teste de compressão do calcâneo é positivo e muitas vezes é bilateral. Trata-se com ajuste da atividade, gelo, alongamento do tríceps sural e calcanheira."
+    },
+    {
+      "question": "Adolescente de 12 anos, obeso, refere dor no joelho esquerdo há 3 semanas e passou a mancar. O exame do joelho é normal; ao fletir o quadril esquerdo, a coxa roda externamente e a rotação interna está limitada. Qual é a conduta?",
+      "options": [
+        "Radiografia dos dois quadris em AP e em posição de rã",
+        "Ressonância do joelho esquerdo para lesão meniscal",
+        "Fisioterapia para síndrome patelofemoral do obeso",
+        "Repouso relativo e reavaliação do joelho em 4 semanas"
+      ],
+      "correctIndex": 0,
+      "explanation": "Dor no joelho com exame do joelho normal, em adolescente obeso que manca, é epifisiólise proximal do fêmur até prova em contrário: a dor do quadril é referida à coxa e ao joelho pelo nervo obturatório. A rotação externa ao fletir o quadril (sinal de Drehmann) e a perda da rotação interna apontam o quadril; a radiografia inclui AP e incidência em rã (Lauenstein) dos dois lados, porque o acometimento pode ser bilateral."
+    },
+    {
+      "question": "Confirmada a epifisiólise proximal do fêmur em um adolescente, qual é a conduta?",
+      "options": [
+        "Suspender a carga e encaminhar para fixação in situ",
+        "Redução fechada por manipulação e gesso pelvipodálico",
+        "Tração cutânea e fisioterapia com carga conforme a dor",
+        "Anti-inflamatório e retorno ambulatorial em 30 dias"
+      ],
+      "correctIndex": 0,
+      "explanation": "É urgência ortopédica: suspender a carga (muletas ou cadeira de rodas) e fixar a epífise in situ, em geral com parafuso canulado, para impedir que o escorregamento progrida. Tentar reduzir por manipulação aumenta o risco de necrose avascular da cabeça femoral, a complicação mais temida junto com a condrólise."
+    },
+    {
+      "question": "Menino de 6 anos, baixo e muito ativo, manca há 2 meses com dor leve e intermitente na coxa e no joelho, sem febre. Há limitação da abdução e da rotação interna do quadril direito, e a radiografia mostra cabeça femoral achatada, esclerótica e fragmentada. Qual é o diagnóstico?",
+      "options": [
+        "Doença de Legg-Calvé-Perthes",
+        "Epifisiólise proximal do fêmur",
+        "Sinovite transitória do quadril",
+        "Artrite séptica crônica do quadril"
+      ],
+      "correctIndex": 0,
+      "explanation": "Legg-Calvé-Perthes é a necrose avascular idiopática da cabeça femoral, mais comum em meninos de 4 a 8 anos, muitas vezes baixos e com idade óssea atrasada. A claudicação é insidiosa e pouco dolorosa, e a radiografia evolui com esclerose, fratura subcondral (sinal do crescente), fragmentação e reossificação. Quanto mais nova a criança no início, melhor o prognóstico."
+    },
+    {
+      "question": "Menino de 5 anos, resfriado há poucos dias, acordou mancando e com dor no quadril direito. Está afebril, em bom estado geral e apoia o membro; hemograma, VHS e PCR são normais, e o ultrassom mostra pequeno derrame. Qual é a conduta?",
+      "options": [
+        "Anti-inflamatório, repouso relativo e reavaliação próxima",
+        "Artrocentese de urgência e oxacilina venosa empírica",
+        "Drenagem cirúrgica do quadril ainda no mesmo dia",
+        "Ressonância sob sedação e biópsia da sinóvia"
+      ],
+      "correctIndex": 0,
+      "explanation": "Sinovite transitória é a causa mais comum de dor aguda no quadril entre 3 e 10 anos, muitas vezes após infecção de vias aéreas: criança afebril, que apoia o membro, com exames inflamatórios normais. Melhora em dias com anti-inflamatório e repouso; a reavaliação é obrigatória, porque febre, recusa de apoio ou piora apontam para artrite séptica."
+    },
+    {
+      "question": "Quais são os quatro critérios de Kocher para diferenciar artrite séptica de sinovite transitória do quadril?",
+      "options": [
+        "Febre > 38,5 °C, recusa de apoio, VHS > 40 mm/h e leucócitos > 12.000",
+        "Febre > 37,8 °C, dor noturna, PCR > 1 mg/dL e plaquetas > 450.000",
+        "Febre > 39 °C, derrame ao ultrassom, VHS > 20 mm/h e PCR elevada",
+        "Rigidez matinal, derrame articular, FAN positivo e VHS > 60 mm/h"
+      ],
+      "correctIndex": 0,
+      "explanation": "Kocher (1999): febre acima de 38,5 °C, incapacidade de apoiar o membro, VHS acima de 40 mm/h e leucócitos acima de 12.000/mm³. Na derivação original, a probabilidade de artrite séptica foi de cerca de 3% com um critério, 40% com dois, 93% com três e 99% com quatro; depois, a PCR acima de 2 mg/dL foi acrescentada como quinto preditor (Caird)."
+    },
+    {
+      "question": "Menina de 4 anos com febre de 39 °C recusa-se a apoiar a perna e mantém o quadril fletido, abduzido e em rotação externa; leucócitos 17.000/mm³ e VHS 65 mm/h. Qual é a conduta?",
+      "options": [
+        "Punção articular guiada por ultrassom e drenagem cirúrgica",
+        "Anti-inflamatório e reavaliação ambulatorial em 48 horas",
+        "Radiografia simples e, se normal, alta com analgésico",
+        "Antibiótico oral e retorno se a febre persistir"
+      ],
+      "correctIndex": 0,
+      "explanation": "Quatro critérios de Kocher dão probabilidade altíssima de artrite séptica, uma emergência: o pus destrói a cartilagem e, no quadril, a pressão intra-articular compromete a irrigação da cabeça femoral. Faz-se artrocentese (Gram, cultura, celularidade, em geral acima de 50.000 leucócitos/mm³ com predomínio de neutrófilos), hemocultura, drenagem cirúrgica e antibiótico venoso que cubra S. aureus."
+    },
+    {
+      "question": "Qual é o agente mais comum de osteomielite hematogênica aguda e de artrite séptica na criança, e qual agente ganha importância entre 6 meses e 4 anos?",
+      "options": [
+        "Staphylococcus aureus; Kingella kingae",
+        "Streptococcus pneumoniae; Salmonella",
+        "Haemophilus influenzae b; Pseudomonas",
+        "Streptococcus agalactiae; Neisseria"
+      ],
+      "correctIndex": 0,
+      "explanation": "S. aureus é o agente mais frequente em todas as idades. Kingella kingae, bacilo gram-negativo da orofaringe, é causa importante entre 6 meses e 4 anos e cresce mal em cultura, por isso o diagnóstico costuma exigir PCR. Salmonella lembra anemia falciforme; estreptococo do grupo B, o neonato; gonococo, o adolescente sexualmente ativo."
+    },
+    {
+      "question": "Escolar de 8 anos tem febre há 3 dias, dor intensa e localizada na metáfise distal do fêmur e recusa a andar; a PCR está elevada e a radiografia é normal. Qual é o próximo exame mais indicado?",
+      "options": [
+        "Ressonância magnética do fêmur",
+        "Nenhum, a radiografia normal afasta",
+        "Densitometria óssea do fêmur",
+        "Ultrassom com Doppler venoso"
+      ],
+      "correctIndex": 0,
+      "explanation": "Na osteomielite aguda a radiografia é normal no início: reação periosteal e lise óssea só aparecem por volta de 10 a 14 dias. A ressonância é o exame mais sensível e específico na fase inicial e mostra abscesso subperiosteal que precise de drenagem. A osteomielite hematogênica prefere a metáfise dos ossos longos, onde o fluxo sanguíneo é lento."
+    },
+    {
+      "question": "Pela classificação da ILAR, qual é a definição de artrite idiopática juvenil?",
+      "options": [
+        "Artrite sem causa definida, início antes dos 16 anos, por 6 semanas ou mais",
+        "Artrite com FAN positivo, início antes dos 18 anos, por 3 meses ou mais",
+        "Artralgia simétrica, início antes dos 16 anos, por 6 semanas ou mais",
+        "Artrite com fator reumatoide, início antes dos 12 anos, por 6 meses ou mais"
+      ],
+      "correctIndex": 0,
+      "explanation": "AIJ é artrite de causa desconhecida, iniciada antes dos 16 anos e persistente por pelo menos 6 semanas, depois de excluídas outras causas — infecção, leucemia, febre reumática, lúpus. FAN e fator reumatoide não fazem o diagnóstico: ajudam a classificar o subtipo e a estimar riscos, como o de uveíte."
+    },
+    {
+      "question": "Menina de 3 anos tem edema do joelho direito há 2 meses, sem dor importante e sem febre; o FAN é positivo. Além do tratamento articular, qual conduta é obrigatória?",
+      "options": [
+        "Exame oftalmológico com lâmpada de fenda periódico",
+        "Ecocardiograma para pesquisar cardite reumática",
+        "Audiometria pelo risco de perda auditiva autoimune",
+        "Ressonância de crânio para vasculite do SNC"
+      ],
+      "correctIndex": 0,
+      "explanation": "A AIJ oligoarticular (até 4 articulações nos 6 primeiros meses) é o subtipo mais comum, típico de meninas pequenas, com grandes articulações dos membros inferiores. Com FAN positivo, o risco de uveíte anterior crônica é alto: ela é assintomática ('olho branco') e pode causar catarata, glaucoma e cegueira, por isso o rastreio periódico com lâmpada de fenda, a cada 3 meses nos de maior risco."
+    },
+    {
+      "question": "Menino de 4 anos tem febre há 3 semanas, com picos de 39,5 °C uma ou duas vezes ao dia e temperatura normal entre eles, exantema róseo evanescente que aparece com a febre, hepatoesplenomegalia e artrite de joelhos. Há leucocitose, plaquetose e ferritina elevada. Excluídas infecção e neoplasia, qual é o diagnóstico?",
+      "options": [
+        "AIJ sistêmica (doença de Still)",
+        "Febre reumática com cardite",
+        "Lúpus eritematoso sistêmico",
+        "Doença de Kawasaki incompleta"
+      ],
+      "correctIndex": 0,
+      "explanation": "Febre cotidiana com picos diários por ao menos 2 semanas, exantema salmão evanescente que acompanha a febre, linfonodomegalia, hepatoesplenomegalia e serosite definem a AIJ sistêmica; FAN e fator reumatoide costumam ser negativos e a artrite pode surgir depois. A complicação grave é a síndrome de ativação macrofágica, sugerida por queda de plaquetas e de VHS com ferritina em ascensão."
+    },
+    {
+      "question": "Escolar de 9 anos tem, há 5 dias, artrite muito dolorosa que migra do tornozelo para o joelho e depois para o punho; teve faringite há 3 semanas e melhorou de forma dramática com anti-inflamatório. Qual característica é típica dessa artrite?",
+      "options": [
+        "É migratória, de grandes articulações, e não deixa sequela",
+        "É aditiva, de pequenas articulações, e evolui com erosão",
+        "É monoarticular, crônica, e acompanha uveíte assintomática",
+        "É simétrica, das mãos, e cursa com nódulos de Heberden"
+      ],
+      "correctIndex": 0,
+      "explanation": "A artrite da febre reumática é migratória, assimétrica, de grandes articulações, muito dolorosa, responde de forma dramática a salicilato ou anti-inflamatório e cura sem sequela. É a manifestação maior mais frequente; a cardite é a que deixa dano permanente."
+    },
+    {
+      "question": "Pelos critérios de Jones revisados (AHA 2015), o que muda em populações de risco moderado a alto, como a brasileira, em relação às de baixo risco?",
+      "options": [
+        "Monoartrite e poliartralgia podem contar como critério maior",
+        "A cardite deixa de exigir ecocardiograma para ser confirmada",
+        "A evidência de infecção estreptocócica passa a ser dispensável",
+        "A coreia de Sydenham passa a contar apenas como critério menor"
+      ],
+      "correctIndex": 0,
+      "explanation": "Em risco moderado a alto, o critério maior articular inclui monoartrite, poliartrite ou poliartralgia, e os menores passam a ser monoartralgia, febre ≥ 38 °C e VHS ≥ 30 mm/h e/ou PCR ≥ 3 mg/dL, além do PR alargado (no baixo risco: febre ≥ 38,5 °C e VHS ≥ 60 mm/h). Em qualquer população a evidência de estreptococo continua exigida, exceto na coreia e na cardite indolente."
+    },
+    {
+      "question": "Criança de 10 anos com febre de 38,5 °C, poliartrite migratória e ASLO elevada; o ecocardiograma mostra regurgitação mitral patológica, sem sopro audível. Pelos critérios de Jones (AHA 2015), o quadro:",
+      "options": [
+        "Fecha o diagnóstico, com dois critérios maiores e estreptococo",
+        "Não fecha, pois cardite sem sopro audível não é critério maior",
+        "Não fecha, pois exige cultura de orofaringe com estreptococo",
+        "Fecha apenas se houver também PR alargado no eletrocardiograma"
+      ],
+      "correctIndex": 0,
+      "explanation": "No primeiro surto bastam 2 critérios maiores, ou 1 maior e 2 menores, com evidência de infecção estreptocócica prévia (ASLO elevada ou em ascensão, cultura ou teste rápido). Desde 2015, a cardite subclínica — valvulite vista só ao Doppler ecocardiograma — conta como critério maior, então poliartrite, cardite e ASLO fecham o diagnóstico."
+    },
+    {
+      "question": "Adolescente de 14 anos teve febre reumática com cardite leve, que regrediu totalmente. Qual profilaxia secundária está indicada pelas diretrizes brasileiras?",
+      "options": [
+        "Penicilina benzatina 21/21 dias até 25 anos ou 10 anos do surto",
+        "Penicilina benzatina 21/21 dias até 21 anos ou 5 anos do surto",
+        "Penicilina benzatina 21/21 dias por toda a vida, sem exceção",
+        "Amoxicilina apenas antes de procedimentos dentários invasivos"
+      ],
+      "correctIndex": 0,
+      "explanation": "A penicilina G benzatina a cada 21 dias dura conforme o acometimento cardíaco: sem cardite, até 21 anos ou 5 anos após o último surto; cardite prévia com lesão residual leve ou que regrediu, até 25 anos ou 10 anos após o surto; lesão valvar moderada a grave, até 40 anos ou por toda a vida — vale o critério que cobrir o período maior (Diretrizes Brasileiras de Febre Reumática, SBC)."
+    },
+    {
+      "question": "Menina de 6 anos acorda algumas noites chorando com dor nas duas pernas (panturrilhas e coxas), que melhora com massagem; de manhã brinca normalmente. O exame físico é normal e não há claudicação. Qual é a conduta?",
+      "options": [
+        "Tranquilizar, orientar massagem e analgesia quando preciso",
+        "Hemograma, VHS e radiografia dos membros a cada episódio",
+        "Encaminhar à reumatologia para investigar AIJ poliarticular",
+        "Restringir atividade física até a dor desaparecer por completo"
+      ],
+      "correctIndex": 0,
+      "explanation": "Dor do crescimento é bilateral, nas pernas e não nas articulações, no fim do dia ou à noite, some pela manhã e vem com exame físico normal e sem sintomas sistêmicos. O diagnóstico é clínico, sem exames de rotina: tranquilizar a família, massagem e analgésico se necessário, reavaliando se surgir algum sinal de alarme."
+    },
+    {
+      "question": "Menino de 5 anos tem dor em joelhos e tornozelos há 4 semanas, que o acorda à noite, com febre baixa, palidez e equimoses. VHS elevado, hemoglobina 9 g/dL e plaquetas 110.000/mm³. O que deve ser feito antes de qualquer corticoide?",
+      "options": [
+        "Esfregaço de sangue periférico e mielograma",
+        "Iniciar prednisona pela hipótese de AIJ",
+        "Tranquilizar: são dores do crescimento",
+        "Antibiótico venoso para artrite séptica"
+      ],
+      "correctIndex": 0,
+      "explanation": "Dor que acorda a criança, desproporcional ao exame, com febre, palidez, equimoses, citopenias e VHS alto é leucemia até prova em contrário — a leucemia linfoblástica aguda é a neoplasia que mais imita AIJ. Corticoide antes do mielograma pode mascarar o diagnóstico; na AIJ ativa, ao contrário, as plaquetas costumam estar altas."
+    },
+    {
+      "question": "Adolescente de 15 anos, jogador de basquete, tem dor no joelho há 2 meses atribuída a trauma no treino, que piora à noite e não melhora com repouso, e massa endurecida na metáfise distal do fêmur. A radiografia mostra reação periosteal em 'raios de sol' e triângulo de Codman. Qual é a hipótese?",
+      "options": [
+        "Osteossarcoma da metáfise distal do fêmur",
+        "Sarcoma de Ewing da diáfise do fêmur",
+        "Osteoma osteoide da cortical do fêmur",
+        "Osteocondrite dissecante do côndilo"
+      ],
+      "correctIndex": 0,
+      "explanation": "O osteossarcoma é o tumor ósseo maligno mais comum do adolescente, na metáfise ao redor do joelho (fêmur distal, tíbia proximal), com dor persistente e noturna muitas vezes atribuída a trauma esportivo; a radiografia mostra reação periosteal em raios de sol e triângulo de Codman. O Ewing prefere diáfise e ossos planos, com reação em 'casca de cebola' e, às vezes, febre."
+    }
+  ]
+}

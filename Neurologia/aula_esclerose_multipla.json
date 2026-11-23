@@ -1,0 +1,217 @@
+{
+  "titulo": "Esclerose Múltipla",
+  "eyebrow": "Neurologia · Referência",
+  "subtitulo": "Placas no tempo e no espaço: do primeiro surto ao tratamento",
+  "intro": "Fisiopatologia, apresentações típicas, formas clínicas, critérios de McDonald, RM e líquor, diferencial com NMOSD e MOGAD, surto e terapias modificadoras. Material de referência baseado em McDonald 2017 e no PCDT de Esclerose Múltipla — não há slide da aula deste tema.",
+  "questoes": [
+    {
+      "question": "Qual paciente tem o perfil epidemiológico mais típico de esclerose múltipla?",
+      "options": [
+        "Mulher de 28 anos, tabagista, com infecção prévia por Epstein-Barr",
+        "Homem de 68 anos, diabético, com hipertensão de longa data",
+        "Menino de 6 anos com infecção viral de vias aéreas há duas semanas",
+        "Homem de 55 anos, etilista crônico, com desnutrição importante"
+      ],
+      "correctIndex": 0,
+      "explanation": "A EM começa tipicamente entre 20 e 40 anos e é duas a três vezes mais frequente em mulheres. Infecção prévia por Epstein-Barr, baixa vitamina D e tabagismo são os fatores de risco ambientais mais consistentes."
+    },
+    {
+      "question": "Qual alternativa descreve corretamente a fisiopatologia da esclerose múltipla?",
+      "options": [
+        "Desmielinização autoimune do SNC, com perda axonal acumulada",
+        "Desmielinização autoimune dos nervos periféricos e das raízes",
+        "Degeneração primária dos neurônios motores superior e inferior",
+        "Bloqueio autoimune dos receptores de acetilcolina na placa motora"
+      ],
+      "correctIndex": 0,
+      "explanation": "A EM é inflamatória e desmielinizante do sistema nervoso central (encéfalo, medula e nervos ópticos). No início o axônio é relativamente poupado e há recuperação; a perda axonal acumulada explica a incapacidade progressiva. Nervo periférico é território de Guillain-Barré e PIDC."
+    },
+    {
+      "question": "Mulher de 26 anos refere perda visual no olho direito há 4 dias, com dor ao mover o olho e cores \"desbotadas\". Há defeito pupilar aferente relativo à direita e o fundo de olho é normal. Qual é o diagnóstico mais provável?",
+      "options": [
+        "Neurite óptica retrobulbar",
+        "Oclusão da artéria central",
+        "Glaucoma agudo de ângulo fechado",
+        "Neuropatia óptica isquêmica"
+      ],
+      "correctIndex": 0,
+      "explanation": "Perda visual unilateral subaguda em mulher jovem, com dor à movimentação ocular, discromatopsia e DPAR, é neurite óptica. Em cerca de dois terços dos casos ela é retrobulbar, com fundo de olho normal, e é uma das apresentações clássicas da EM."
+    },
+    {
+      "question": "Para a mesma paciente com neurite óptica, qual é a conduta mais adequada?",
+      "options": [
+        "RM de crânio e órbitas e pulso de metilprednisolona EV",
+        "Prednisona oral em dose baixa isolada por duas semanas",
+        "Observação apenas, com reavaliação oftalmológica em 6 meses",
+        "Acetazolamida oral e colírio de timolol por quatro semanas"
+      ],
+      "correctIndex": 0,
+      "explanation": "A RM avalia o nervo óptico e mostra se há lesões desmielinizantes no encéfalo, principal preditor de evolução para EM. No ONTT, a metilprednisolona EV acelerou a recuperação sem mudar a acuidade final, e a prednisona oral em dose baixa isolada aumentou as recorrências."
+    },
+    {
+      "question": "Paciente de 32 anos relata sensação de choque elétrico que desce pela coluna e pelas pernas sempre que flete o pescoço. Qual é o nome do sinal e onde está a lesão?",
+      "options": [
+        "Sinal de Lhermitte, por lesão da medula cervical posterior",
+        "Sinal de Babinski, por lesão do trato corticoespinal lombar",
+        "Fenômeno de Uhthoff, por lesão do nervo óptico ao fletir",
+        "Sinal de Romberg, por lesão do cerebelo e das vias vestibulares"
+      ],
+      "correctIndex": 0,
+      "explanation": "O sinal de Lhermitte é o choque elétrico descendente à flexão do pescoço, por lesão na coluna posterior da medula cervical. É muito sugestivo de doença desmielinizante, embora possa ocorrer em outras mielopatias cervicais."
+    },
+    {
+      "question": "Paciente com EM remitente-recorrente percebe piora da fraqueza nas pernas e da visão após banho quente, com melhora completa em uma hora. Qual é a interpretação?",
+      "options": [
+        "Fenômeno de Uhthoff, que não caracteriza um novo surto",
+        "Novo surto da doença, com indicação de pulso de corticoide",
+        "Progressão secundária, com indicação de trocar a terapia",
+        "Crise epiléptica focal, com indicação de anticonvulsivante"
+      ],
+      "correctIndex": 0,
+      "explanation": "O fenômeno de Uhthoff é a piora transitória com calor (banho, exercício, febre), porque a fibra desmielinizada conduz pior em temperatura alta. Melhora ao esfriar e não é surto: não se faz pulso nem se troca a terapia."
+    },
+    {
+      "question": "Mulher de 30 anos com diplopia apresenta, ao olhar para os lados, déficit de adução do olho que deveria aduzir e nistagmo no olho que abduz, de forma bilateral. Qual é a lesão e a doença mais sugerida?",
+      "options": [
+        "Fascículo longitudinal medial; esclerose múltipla",
+        "Nervo oculomotor; aneurisma de comunicante posterior",
+        "Nervo abducente; hipertensão intracraniana idiopática",
+        "Junção neuromuscular; miastenia gravis ocular pura"
+      ],
+      "correctIndex": 0,
+      "explanation": "É a oftalmoplegia internuclear, por lesão do fascículo longitudinal medial no tronco. Bilateral em adulto jovem, é altamente sugestiva de esclerose múltipla; em idosos, a causa mais comum é vascular."
+    },
+    {
+      "question": "Paciente com EM refere piora da fraqueza nas pernas há 2 dias, junto com febre, disúria e urina turva. Qual é a conduta?",
+      "options": [
+        "Tratar a infecção urinária, pois é provável pseudossurto",
+        "Pulso de metilprednisolona imediato, por ser novo surto",
+        "Plasmaférese de urgência, por piora motora em 48 horas",
+        "Trocar a terapia modificadora, por falha do tratamento"
+      ],
+      "correctIndex": 0,
+      "explanation": "Surto exige sintoma novo ou piora por pelo menos 24 horas sem febre ou infecção. Piora durante infecção é pseudossurto: trata-se a causa, e o quadro tende a voltar ao basal. Pulso de corticoide nesse contexto pode agravar a infecção."
+    },
+    {
+      "question": "Qual é a forma clínica mais frequente da esclerose múltipla no momento do diagnóstico?",
+      "options": [
+        "Forma remitente-recorrente",
+        "Forma primariamente progressiva",
+        "Forma secundariamente progressiva",
+        "Forma progressiva com surtos"
+      ],
+      "correctIndex": 0,
+      "explanation": "Cerca de 85% dos pacientes começam com a forma remitente-recorrente, com surtos e recuperação. Parte deles evolui depois para a forma secundariamente progressiva; a primariamente progressiva corresponde a 10 a 15%."
+    },
+    {
+      "question": "Homem de 50 anos apresenta há 3 anos piora lenta e contínua da marcha, com paraparesia espástica e urgência urinária, sem nenhum surto. A RM mostra lesões desmielinizantes medulares e encefálicas. Qual é a forma da doença?",
+      "options": [
+        "Primariamente progressiva",
+        "Remitente-recorrente ativa",
+        "Síndrome clínica isolada",
+        "Síndrome radiológica isolada"
+      ],
+      "correctIndex": 0,
+      "explanation": "Progressão desde o início, sem surtos, define a forma primariamente progressiva, que começa mais tarde, tem proporção entre sexos mais equilibrada e costuma se apresentar como mielopatia progressiva. O ocrelizumabe é a terapia com benefício demonstrado nessa forma."
+    },
+    {
+      "question": "Pelos critérios de McDonald 2017, quais são as quatro áreas do SNC usadas para demonstrar disseminação no espaço?",
+      "options": [
+        "Periventricular, justacortical/cortical, infratentorial e medula",
+        "Periventricular, núcleos da base, tálamo e substância cinzenta",
+        "Lobo frontal, lobo temporal, lobo occipital e cerebelo",
+        "Nervo óptico, quiasma óptico, hipotálamo e área postrema"
+      ],
+      "correctIndex": 0,
+      "explanation": "A disseminação no espaço exige lesão em T2 em pelo menos 2 das 4 áreas: periventricular, cortical/justacortical, infratentorial e medula espinal. A revisão de 2024 acrescentou o nervo óptico como quinta topografia."
+    },
+    {
+      "question": "Paciente com síndrome clínica isolada tem disseminação no espaço na RM, mas todas as lesões são da mesma idade. Pelos critérios de McDonald 2017, qual achado permite confirmar EM sem esperar nova RM ou novo surto?",
+      "options": [
+        "Bandas oligoclonais de IgG presentes apenas no líquor",
+        "Proteína liquórica elevada com celularidade normal",
+        "Potencial evocado visual com latência aumentada",
+        "Anticorpo anti-aquaporina-4 positivo no soro"
+      ],
+      "correctIndex": 0,
+      "explanation": "Desde 2017, bandas oligoclonais restritas ao líquor (síntese intratecal de IgG) podem substituir a disseminação no tempo. Sem elas, a disseminação no tempo vem de lesões que captam e que não captam gadolínio na mesma RM, de lesão nova no seguimento ou de novo surto."
+    },
+    {
+      "question": "Qual padrão de RM é mais característico da esclerose múltipla?",
+      "options": [
+        "Lesões ovoides periventriculares perpendiculares aos ventrículos",
+        "Lesão medular contínua que se estende por seis segmentos",
+        "Lesões simétricas e confluentes nos núcleos da base",
+        "Hiperintensidade restrita ao córtex do lobo temporal"
+      ],
+      "correctIndex": 0,
+      "explanation": "As lesões típicas são ovoides, hiperintensas em T2/FLAIR, periventriculares e perpendiculares aos ventrículos (dedos de Dawson), além de justacorticais, infratentoriais e medulares curtas. Lesão medular extensa, de três ou mais segmentos, aponta para NMOSD."
+    },
+    {
+      "question": "Mulher de 35 anos tem mielite com lesão contínua de C2 a T3 e, há um mês, teve soluços e vômitos incoercíveis por uma semana. Qual exame confirma a principal hipótese?",
+      "options": [
+        "Anticorpo anti-aquaporina-4 no soro",
+        "Bandas oligoclonais no líquor e no soro",
+        "Potencial evocado somatossensitivo",
+        "Dosagem sérica de vitamina B12"
+      ],
+      "correctIndex": 0,
+      "explanation": "Mielite longitudinalmente extensa (três ou mais segmentos) e síndrome da área postrema são típicas do espectro da neuromielite óptica (NMOSD). O diagnóstico se apoia no anti-aquaporina-4 sérico; as bandas oligoclonais costumam ser negativas."
+    },
+    {
+      "question": "Por que é urgente distinguir NMOSD de esclerose múltipla antes de iniciar o tratamento de manutenção?",
+      "options": [
+        "Algumas terapias da EM podem piorar a NMOSD",
+        "A NMOSD não responde a nenhum tipo de corticoide",
+        "A EM exige plasmaférese mensal de manutenção",
+        "A NMOSD é sempre monofásica e não se trata"
+      ],
+      "correctIndex": 0,
+      "explanation": "Interferon beta, natalizumabe e fingolimode podem agravar a NMOSD, que tem surtos graves e acumula incapacidade a cada ataque. A NMOSD é tratada com imunossupressão própria, como rituximabe ou azatioprina."
+    },
+    {
+      "question": "Adolescente de 16 anos tem neurite óptica bilateral com edema de disco acentuado e boa recuperação após corticoide. Anti-aquaporina-4 negativo. Qual anticorpo deve ser pesquisado?",
+      "options": [
+        "Anti-MOG",
+        "Anti-AChR",
+        "Anti-GQ1b",
+        "Anti-NMDA"
+      ],
+      "correctIndex": 0,
+      "explanation": "Neurite óptica bilateral com edema de disco importante e boa recuperação sugere doença associada ao anti-MOG (MOGAD), que também causa ADEM em crianças e mielite extensa. Anti-AChR é da miastenia, anti-GQ1b da síndrome de Miller Fisher."
+    },
+    {
+      "question": "Paciente com EM tem surto com paraparesia que limita a marcha há 5 dias, sem infecção. Qual é o tratamento do surto?",
+      "options": [
+        "Metilprednisolona 1 g/dia EV por 3 a 5 dias",
+        "Imunoglobulina EV 2 g/kg em dose única inicial",
+        "Prednisona 20 mg/dia por via oral por 1 mês",
+        "Interferon beta em dose dobrada por 2 semanas"
+      ],
+      "correctIndex": 0,
+      "explanation": "O surto incapacitante é tratado com pulso de metilprednisolona 1 g/dia EV por 3 a 5 dias, que acelera a recuperação sem mudar a incapacidade a longo prazo. Surto grave refratário ao corticoide tem como segunda linha a plasmaférese."
+    },
+    {
+      "question": "Paciente com EM em uso de natalizumabe há 3 anos, com sorologia positiva para o vírus JC, desenvolve alteração cognitiva e hemiparesia progressivas, sem surto típico. Qual complicação deve ser suspeitada?",
+      "options": [
+        "Leucoencefalopatia multifocal progressiva",
+        "Encefalite herpética por reativação viral",
+        "Hemorragia intracerebral por plaquetopenia",
+        "Linfoma primário do SNC por imunossupressão"
+      ],
+      "correctIndex": 0,
+      "explanation": "O natalizumabe, terapia de alta eficácia, aumenta o risco de leucoencefalopatia multifocal progressiva pelo vírus JC, sobretudo com anticorpo anti-JC positivo, uso prolongado e imunossupressão prévia. A sorologia para JC é monitorada durante o tratamento."
+    },
+    {
+      "question": "Mulher de 29 anos com EM remitente-recorrente quer engravidar. Como a gestação costuma influenciar a atividade da doença?",
+      "options": [
+        "Surtos diminuem na gestação e aumentam no pós-parto",
+        "Surtos aumentam na gestação e diminuem no pós-parto",
+        "Gestação acelera a conversão para forma progressiva",
+        "Gestação não altera a frequência de surtos da doença"
+      ],
+      "correctIndex": 0,
+      "explanation": "A taxa de surtos cai durante a gestação, sobretudo no terceiro trimestre, e aumenta nos primeiros meses após o parto. A gestação não piora o prognóstico a longo prazo, mas a terapia modificadora deve ser planejada antes de engravidar."
+    }
+  ]
+}

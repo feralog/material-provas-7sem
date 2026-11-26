@@ -1,0 +1,668 @@
+{
+  "titulo": "Simulado SAI III · 1",
+  "eyebrow": "Simulado · Saúde do Adulto e do Idoso III",
+  "subtitulo": "Sessenta questões inéditas para medir o que você sabe",
+  "intro": "60 questões objetivas misturando Geriatria, Psiquiatria, Neurologia, Otorrino, Oftalmo e Práticas de emergência, quase todas em caso clínico. Tempo sugerido: 90 minutos, sem consulta. A explicação de cada questão começa pela área e pelo tema.",
+  "questoes": [
+    {
+      "question": "Homem de 81 anos, internado há dois dias por pneumonia, tem episódios de confusão à noite, segundo a filha. Na avaliação pelo CAM pela manhã, há início agudo com curso flutuante e ele erra repetidamente a tarefa de atenção, mas está alerta e responde às perguntas de modo lógico e organizado. Como interpretar o CAM nesse momento?",
+      "options": [
+        "Negativo: falta pensamento desorganizado ou consciência alterada",
+        "Positivo: início agudo e desatenção bastam para o diagnóstico",
+        "Positivo: a flutuação isolada já confirma o quadro de delirium",
+        "Inconclusivo: o CAM só pode ser aplicado com RASS de -4 ou -5"
+      ],
+      "correctIndex": 0,
+      "explanation": "(Geriatria · Delirium) Pelo CAM, delirium = 1 + 2 + (3 ou 4): início agudo com curso flutuante e desatenção são obrigatórios, mas é preciso somar pensamento desorganizado OU nível alterado de consciência. Sem nenhum dos dois, o algoritmo é negativo naquele momento — e, como o quadro flutua, deve ser reaplicado. RASS de -4 ou -5 é justamente quando o CAM não pode ser aplicado."
+    },
+    {
+      "question": "Homem de 69 anos, hipertenso e diabético, acorda com fraqueza proporcionada de face, braço e perna à direita, sem afasia, sem alteração visual ou sensitiva e com consciência preservada. A ressonância mostra infarto de 11 mm na cápsula interna esquerda. Qual o subtipo etiológico mais provável?",
+      "options": [
+        "Lacunar, por doença de pequenas artérias",
+        "Cardioembólico, por fonte cardíaca oculta",
+        "Aterotrombótico de grande artéria cortical",
+        "Indeterminado, por falta de lesão cortical"
+      ],
+      "correctIndex": 0,
+      "explanation": "(Neurologia · AVC) Lesão menor que 15 mm em território de perfurante (cápsula interna), sem comprometimento cortical, com síndrome motora pura proporcionada em hipertenso, define o AVC lacunar (doença de pequenas artérias). Afasia, alteração de campo visual e déficit desproporcionado apontariam para lesão cortical, típica da embolia cardíaca ou da aterosclerose de grandes artérias."
+    },
+    {
+      "question": "Mulher de 38 anos, no primeiro episódio depressivo maior, atingiu remissão completa após 10 semanas de sertralina 100 mg/dia. Sente-se bem e pergunta se já pode parar o remédio. Qual a orientação?",
+      "options": [
+        "Manter 100 mg por mais 4 a 9 meses para evitar recaída",
+        "Reduzir para 50 mg e manter por mais 4 a 9 meses",
+        "Suspender agora, pois a remissão já foi alcançada",
+        "Manter 100 mg por toda a vida, pelo risco de recorrência"
+      ],
+      "correctIndex": 0,
+      "explanation": "(Psiquiatria · Transtorno depressivo) Após a remissão vem a fase de continuação, de 4 a 9 meses, na MESMA dose que produziu a remissão, para evitar a recaída de um episódio ainda biologicamente ativo. Manutenção por anos fica para quem tem três ou mais episódios, tentativa de suicídio, psicose, episódios graves ou história familiar carregada."
+    },
+    {
+      "question": "Técnica de enfermagem de 30 anos tem olhos vermelhos há três dias, começando no direito e passando ao esquerdo, com lacrimejamento aquoso abundante, sensação de areia e linfonodo pré-auricular palpável. Visão normal, córnea clara e sem dor importante. Qual a conduta?",
+      "options": [
+        "Conjuntivite viral: lubrificantes e higiene",
+        "Conjuntivite bacteriana: colírio antibiótico",
+        "Conjuntivite alérgica: anti-histamínico tópico",
+        "Uveíte anterior: colírio de corticoide e retorno"
+      ],
+      "correctIndex": 0,
+      "explanation": "(Oftalmo · Olho vermelho) Lacrimejamento aquoso com linfonodo pré-auricular aponta vírus (adenovírus), e o tratamento é com lubrificantes e medidas de higiene, pela alta transmissibilidade. Secreção purulenta abundante apontaria bactéria e prurido apontaria alergia; corticoide sem diagnóstico pode agravar infecções."
+    },
+    {
+      "question": "Diabético de 71 anos tem otalgia intensa há três semanas, desproporcional ao exame, com otorreia purulenta e tecido de granulação no meato acústico externo. Hoje surgiu paralisia facial periférica do mesmo lado. Qual a conduta?",
+      "options": [
+        "Internar para antibiótico endovenoso e debridamento",
+        "Ciprofloxacino tópico com retorno em uma semana",
+        "Prednisolona e antiviral por via oral por sete dias",
+        "Amoxicilina oral por dez dias com analgesia simples"
+      ],
+      "correctIndex": 0,
+      "explanation": "(Otorrino · Otites) Otite externa em diabético com dor desproporcional, granulação no conduto e paralisia de par craniano é otite externa maligna (necrotizante) por Pseudomonas, com osteomielite da base do crânio à tomografia. É emergência — antibiótico endovenoso, debridamento e cuidados intensivos —, com mortalidade de 20 a 25%; corticoide com antiviral seria a conduta da síndrome de Ramsay Hunt."
+    },
+    {
+      "question": "Homem de 74 anos tem FC de 38 bpm, PA 78/46 mmHg e está sonolento. O ECG mostra PR constante com ondas P bloqueadas de repente, sem aviso, e QRS de escape largo. Qual a conduta prioritária?",
+      "options": [
+        "Marca-passo transcutâneo, sem insistir na atropina",
+        "Atropina 1 mg a cada 3 minutos até reverter",
+        "Adrenalina 1 mg em bolus e reavaliar o pulso",
+        "Observar, pois o bloqueio costuma ser benigno"
+      ],
+      "correctIndex": 0,
+      "explanation": "(Práticas · Arritmias) PR fixo com bloqueio súbito é Mobitz II, bloqueio infranodal de alto grau; com instabilidade (hipotensão, sonolência), a conduta é marca-passo transcutâneo — a atropina age no nó e tende a falhar abaixo dele. A atropina tem dose máxima de 3 mg, e adrenalina 1 mg em bolus é dose de PCR; na bradicardia com pulso ela vai em infusão de 2 a 10 mcg/min."
+    },
+    {
+      "question": "Mulher de 79 anos, hipertensa e com déficit auditivo, começou a tomar difenidramina para dormir há quatro dias. A família a traz por sonolência diurna, desatenção e confusão que pioram à noite, iniciadas há três dias. Exame neurológico sem sinais focais e sem história de queda. Qual a conduta inicial mais adequada?",
+      "options": [
+        "Suspender a difenidramina e buscar outras causas associadas",
+        "Pedir tomografia de crânio antes de qualquer outra medida",
+        "Iniciar haloperidol à noite para regularizar o ciclo de sono",
+        "Aplicar o MEEM para estadiar uma provável demência inicial"
+      ],
+      "correctIndex": 0,
+      "explanation": "(Geriatria · Delirium) Quadro agudo e flutuante com desatenção é delirium, e o anti-histamínico de 1ª geração, anticolinérgico, é precipitante clássico: retirá-lo e procurar causas concomitantes (infecção, eletrólitos, retenção, dor) trata a origem. A neuroimagem é dirigida — sinal focal, trauma ou causa não encontrada — e o MEEM não distingue delirium de demência num paciente desatento."
+    },
+    {
+      "question": "Mulher de 44 anos apresenta cefaleia súbita e intensa, 'a pior da vida', iniciada durante esforço físico, sem trauma, com vômitos. Está alerta e sem déficit focal. A tomografia de crânio sem contraste, feita 10 horas depois, é normal. Qual o próximo passo?",
+      "options": [
+        "Exame do líquor para procurar sangue",
+        "Alta com analgésico e retorno se piorar",
+        "Ressonância eletiva em regime ambulatorial",
+        "Iniciar heparina pela suspeita de trombose"
+      ],
+      "correctIndex": 0,
+      "explanation": "(Neurologia · AVC) Cefaleia abrupta e não traumática é hemorragia subaracnóidea até prova em contrário. A tomografia pode falhar na hemorragia meníngea pura (só identifica sangue com hematócrito no líquor ≥ 16%), enquanto o líquor a olho nu o detecta a partir de 1% — por isso TC normal não encerra a investigação; confirmado o sangramento, a angiografia estuda o aneurisma."
+    },
+    {
+      "question": "Puérpera de 26 anos, no 4º dia após o parto, chora com facilidade e alterna irritação e alegria ao longo do dia. Amamenta e cuida bem do bebê, dorme quando ele dorme e não tem ideação de morte. Qual a conduta?",
+      "options": [
+        "Tranquilizar e acompanhar: o quadro remite em até duas semanas",
+        "Iniciar ISRS, pois se trata de depressão com início no periparto",
+        "Internar, pelo risco de psicose puerperal com início precoce",
+        "Iniciar estabilizador do humor pela labilidade emocional"
+      ],
+      "correctIndex": 0,
+      "explanation": "(Psiquiatria · Transtorno depressivo) É o blues puerperal: começa nos primeiros dias após o parto, cursa com labilidade e choro fácil, não compromete o cuidado com o bebê e se resolve sozinho em até duas semanas. A depressão periparto é mais duradoura, incapacitante e interfere no vínculo — o acompanhamento serve para detectar a persistência dos sintomas."
+    },
+    {
+      "question": "Homem de 35 anos tem dor ocular moderada, fotofobia e visão levemente turva no olho direito há dois dias. A hiperemia se concentra ao redor do limbo, sem secreção; a pupila direita está pequena e irregular, com reflexo fotomotor fraco. Qual o diagnóstico mais provável?",
+      "options": [
+        "Uveíte anterior aguda não granulomatosa",
+        "Crise aguda de glaucoma de ângulo fechado",
+        "Conjuntivite bacteriana aguda unilateral",
+        "Episclerite nodular simples e autolimitada"
+      ],
+      "correctIndex": 0,
+      "explanation": "(Oftalmo · Olho vermelho) Hiperemia ciliar (pericorneana), dor, fotofobia, ausência de secreção e pupila pequena e irregular (sinéquias) com reflexo fraco caracterizam a uveíte anterior; o início agudo com dor marcada favorece a forma não granulomatosa. No glaucoma agudo a pupila fica em midríase média fixa, a córnea embaça e a pressão sobe."
+    },
+    {
+      "question": "Criança de 3 anos, previamente hígida, tem otalgia leve há 24 horas e febre de 38,2 °C. A otoscopia mostra abaulamento e hiperemia da membrana timpânica direita, sem otorreia. Não usou antibiótico recentemente. Qual a conduta?",
+      "options": [
+        "Analgesia e observação por 48 a 72 horas",
+        "Amoxicilina oral por dez dias de imediato",
+        "Amoxicilina com clavulanato de imediato",
+        "Ceftriaxona intramuscular em dose única"
+      ],
+      "correctIndex": 0,
+      "explanation": "(Otorrino · Otites) Com 2 anos ou mais, sem otorreia e sem sinais de gravidade (otalgia intensa ou acima de 48 h, febre ≥ 39 °C, toxemia), a otite média aguda, uni ou bilateral, permite observar 48 a 72 horas com analgesia. Se for preciso tratar, a primeira escolha é amoxicilina; o clavulanato entra com uso de amoxicilina nos últimos 30 dias, conjuntivite purulenta ou recorrência sem resposta."
+    },
+    {
+      "question": "Mulher de 40 anos tem taquicardia regular de QRS estreito a 200 bpm, sem P visível, com dor torácica, PA 78/50 mmHg e extremidades frias. Tem pulso. Qual a conduta?",
+      "options": [
+        "Cardioversão elétrica sincronizada, 50 a 100 J",
+        "Manobra de Valsalva modificada e reavaliação",
+        "Adenosina 6 mg em bolus, seguida de 12 mg",
+        "Desfibrilação não sincronizada com 200 J"
+      ],
+      "correctIndex": 0,
+      "explanation": "(Práticas · Arritmias) Taquicardia com pulso e critério de instabilidade (hipotensão, dor torácica, sinais de choque) recebe terapia elétrica: cardioversão sincronizada pelo protocolo OSASCO, com 50 a 100 J na TSV. Manobra vagal e adenosina são para a TSV estável, e o choque não sincronizado é para ritmos sem pulso e para a TV polimórfica instável."
+    },
+    {
+      "question": "Idosa de 84 anos, com demência leve, está no 2º dia pós-operatório de fratura de fêmur, em delirium hiperativo: arrancou o acesso venoso, tenta sair do leito e agride a equipe. Reorientação, presença da filha e retirada de dispositivos não bastaram, e a causa de base já está sendo tratada. Qual a conduta farmacológica?",
+      "options": [
+        "Haloperidol em dose baixa, pelo menor tempo possível",
+        "Lorazepam em doses repetidas até sedação profunda",
+        "Diazepam em dose fixa diária como sedação de manutenção",
+        "Prometazina noturna, aproveitando o efeito sedativo"
+      ],
+      "correctIndex": 0,
+      "explanation": "(Geriatria · Delirium) Antipsicótico é reservado ao delirium hiperativo com risco imediato à segurança, depois das medidas não farmacológicas, e o haloperidol é o representante clássico, na menor dose eficaz e pelo menor tempo. Benzodiazepínico precipita e prolonga o delirium (a exceção é a abstinência de álcool ou sedativos), e a prometazina, anti-histamínica e anticolinérgica, piora o quadro."
+    },
+    {
+      "question": "Mulher de 74 anos, com fibrilação atrial sem anticoagulação, apresenta de forma súbita afasia e hemiparesia direita de predomínio braquiofacial, com déficit máximo já no início. A tomografia não mostra sangramento. Pela classificação TOAST, qual o mecanismo mais provável?",
+      "options": [
+        "Cardioembólico, com fonte na fibrilação atrial",
+        "Causa pouco frequente, como dissecção arterial",
+        "Doença de pequenas artérias da cápsula interna",
+        "Aterosclerose de grandes artérias vertebrais"
+      ],
+      "correctIndex": 0,
+      "explanation": "(Neurologia · AVC) Início súbito com déficit máximo, quadro cortical (afasia, predomínio braquiofacial) no território da cerebral média e fibrilação atrial apontam para embolia cardíaca. A afasia afasta lacuna, que não compromete o córtex, e o território vertebrobasilar não explicaria afasia com hemiparesia braquiofacial; o ECG, obrigatório em todo AVC isquêmico, é o que flagra a FA."
+    },
+    {
+      "question": "Homem de 32 anos, com episódio depressivo moderado, refere pensamentos de que seria melhor morrer, sem plano. Mora com a esposa, que vai acompanhá-lo de perto. Qual antidepressivo é a escolha inicial mais adequada?",
+      "options": [
+        "Sertralina, pela segurança em caso de superdosagem",
+        "Amitriptilina, pela maior eficácia em casos graves",
+        "Tranilcipromina, por agir mais rápido na ideação",
+        "Imipramina, pelo efeito sedativo sobre a ansiedade"
+      ],
+      "correctIndex": 0,
+      "explanation": "(Psiquiatria · Transtorno depressivo) As classes têm eficácia comparável; o ISRS é a primeira escolha pela tolerabilidade e, sobretudo, pela baixa letalidade em superdosagem — o que pesa em quem tem ideação suicida. Tricíclicos (amitriptilina, imipramina) são cardiotóxicos e letais em overdose, e o IMAO fica para depressão atípica ou refratária. Nas primeiras semanas o seguimento deve ser próximo, porque a energia volta antes do humor."
+    },
+    {
+      "question": "Mulher de 56 anos com artrite reumatoide tem olho vermelho com dor intensa e profunda, que a acorda à noite. O exame mostra congestão episcleral profunda com área de afinamento escleral. Qual a conduta?",
+      "options": [
+        "Esclerite: AINH e corticoide por via oral",
+        "Episclerite: apenas lágrima artificial",
+        "Conjuntivite: colírio antibiótico tópico",
+        "Hiposfagma: avaliação da coagulação"
+      ],
+      "correctIndex": 0,
+      "explanation": "(Oftalmo · Olho vermelho) Hiperemia com dor intensa e afinamento escleral, em mulher na 5ª–6ª década com doença autoimune, é esclerite — que exige tratamento sistêmico com AINH e corticoide oral. A episclerite tem só leve desconforto, sem afinamento, e é autolimitada em 1 a 2 semanas."
+    },
+    {
+      "question": "Qual o tratamento da síndrome de Ramsay Hunt (herpes-zóster ótico com paralisia facial periférica)?",
+      "options": [
+        "Prednisolona, antiviral oral e proteção do olho",
+        "Antibiótico tópico e analgesia, sem corticoide",
+        "Antiviral oral isolado, evitando o corticoide",
+        "Drenagem do pavilhão e curativo compressivo"
+      ],
+      "correctIndex": 0,
+      "explanation": "(Otorrino · Otites) A síndrome de Ramsay Hunt é a reativação do varicela-zóster no gânglio geniculado: vesículas no pavilhão, otalgia e paralisia facial periférica. O tratamento tem três frentes: proteger o olho contra ceratite de exposição, corticoide oral (prednisolona 60 mg/dia por 7 dias) e antiviral por 7 dias. Drenagem com curativo compressivo é a conduta do oto-hematoma."
+    },
+    {
+      "question": "Homem de 70 anos, em uso de atenolol, tem FC de 46 bpm em ritmo sinusal num exame de rotina. Está assintomático, com PA 128/76 mmHg, lúcido e sem dispneia. Qual a conduta?",
+      "options": [
+        "Monitorar e rever a dose do betabloqueador",
+        "Atropina 1 mg EV em bolus imediatamente",
+        "Marca-passo transcutâneo de forma profilática",
+        "Dopamina em infusão contínua de 5 mcg/kg/min"
+      ],
+      "correctIndex": 0,
+      "explanation": "(Práticas · Arritmias) Bradicardia só exige tratamento imediato quando há FC abaixo de 50 bpm COM critérios de instabilidade. Sem eles, monitora-se e procura-se a causa — betabloqueador, bloqueador de canal de cálcio, digital, hipercalemia, hipotireoidismo, infarto inferior."
+    },
+    {
+      "question": "Idosa de 83 anos, desnutrida (albumina de 2,3 g/dL), usa fenitoína há anos. Passou a apresentar nistagmo, ataxia e sonolência, mas o nível sérico total de fenitoína veio dentro da faixa terapêutica. Qual a explicação mais provável?",
+      "options": [
+        "Fração livre aumentada pela queda da albumina",
+        "Nível subterapêutico por indução enzimática",
+        "Crises não convulsivas por dose insuficiente",
+        "Efeito de retirada por uso irregular da droga"
+      ],
+      "correctIndex": 0,
+      "explanation": "(Geriatria · Polifarmácia) Só a fração livre do fármaco é ativa; com menos albumina, sobra mais fenitoína livre e o paciente se intoxica com um nível total classificado como terapêutico. Nistagmo, ataxia e sonolência são sinais de toxicidade, não de dose insuficiente — aumentar a dose seria o erro."
+    },
+    {
+      "question": "Mulher de 23 anos, com epilepsia mioclônica juvenil, planeja engravidar no próximo ano. Hoje está sem tratamento. Qual a melhor escolha de antiepiléptico?",
+      "options": [
+        "Levetiracetam ou lamotrigina, com ácido fólico",
+        "Valproato, por ser o mais eficaz nas mioclonias",
+        "Carbamazepina, por ser a mais segura na gestação",
+        "Fenitoína, pela comodidade de duas tomadas ao dia"
+      ],
+      "correctIndex": 0,
+      "explanation": "(Neurologia · Epilepsias) O valproato é eficaz na mioclônica juvenil, mas deve ser evitado em mulheres em idade fértil pelo risco de defeitos do tubo neural e de prejuízo cognitivo no feto; lamotrigina e levetiracetam são preferidos, com ácido fólico. Carbamazepina e fenitoína podem agravar mioclonias e ausências e não se usam nas epilepsias generalizadas genéticas."
+    },
+    {
+      "question": "Quando sintomas psicóticos ocorrem exclusivamente durante os episódios de humor e desaparecem por completo entre eles, qual é o diagnóstico?",
+      "options": [
+        "Transtorno depressivo com características psicóticas",
+        "Transtorno esquizoafetivo, tipo depressivo",
+        "Esquizofrenia com sintomas depressivos associados",
+        "Transtorno delirante do tipo persecutório crônico"
+      ],
+      "correctIndex": 0,
+      "explanation": "(Psiquiatria · Esquizofrenia) Psicose que ocorre SÓ dentro dos episódios de humor é transtorno do humor com sintomas psicóticos — na depressão, tipicamente delírios congruentes de ruína e culpa. O esquizoafetivo exige pelo menos duas semanas de psicose sem episódio de humor, e a esquizofrenia exige sintomas psicóticos fora dos episódios."
+    },
+    {
+      "question": "Homem negro de 61 anos, assintomático, faz exame de rotina: acuidade visual 20/20 nos dois olhos, PIO de 25 mmHg no direito e 18 mmHg no esquerdo, escavação/disco de 0,7 no direito e 0,4 no esquerdo, e campo visual com degrau nasal no olho direito. Qual o diagnóstico?",
+      "options": [
+        "Glaucoma primário de ângulo aberto no olho direito",
+        "Hipertensão ocular, pois a acuidade visual é normal",
+        "Escavação fisiológica, sem significado patológico",
+        "Glaucoma agudo de ângulo fechado em fase inicial"
+      ],
+      "correctIndex": 0,
+      "explanation": "(Oftalmo · Glaucoma) Escavação acima de 0,5 com assimetria maior que 0,2 é disco suspeito, e campo visual alterado — o degrau nasal é o defeito mais precoce — confirma glaucoma; no negro, o risco do ângulo aberto é cerca de quatro vezes maior. Hipertensão ocular exige disco e campo normais, e acuidade normal não exclui glaucoma: a visão central é a última a cair."
+    },
+    {
+      "question": "Menino de 5 anos tem hipoacusia bilateral há quatro meses, sem dor nem febre, e a professora relata dificuldade escolar. A otoscopia mostra membranas sem brilho com nível líquido, a audiometria indica perda condutiva bilateral e a timpanometria é tipo B. Qual a conduta?",
+      "options": [
+        "Miringotomia com tubo de ventilação",
+        "Amoxicilina oral por quatorze dias",
+        "Corticoide oral e anti-histamínico",
+        "Nova observação por mais seis meses"
+      ],
+      "correctIndex": 0,
+      "explanation": "(Otorrino · Otites) Otite média com efusão crônica (3 meses ou mais), bilateral, com perda auditiva e repercussão escolar tem indicação cirúrgica: miringotomia com tubo de ventilação, após avaliação audiológica. Antibiótico, corticoide e anti-histamínico não se usam de rotina, e o período de observação de 3 meses já foi cumprido."
+    },
+    {
+      "question": "Diante de taquicardia regular de QRS largo com pulso, por que não se deve usar verapamil?",
+      "options": [
+        "Pode ser TV, e o verapamil pode precipitar colapso",
+        "O verapamil só age em ritmos irregulares de QRS largo",
+        "O verapamil é reservado à bradicardia com instabilidade",
+        "O verapamil alonga o QT e causa torsades de imediato"
+      ],
+      "correctIndex": 0,
+      "explanation": "(Práticas · Arritmias) Taquicardia de QRS largo é TV até prova em contrário; tratá-la como supraventricular com verapamil pode precipitar colapso hemodinâmico. Na TV monomórfica estável o antiarrítmico é a amiodarona 150 mg em 10 minutos (depois 1 mg/min por 6 h), e na instável, cardioversão sincronizada."
+    },
+    {
+      "question": "Homem de 76 anos, hipertenso bem controlado com losartana e hidroclorotiazida, passou a tomar dipirona de horário por lombalgia há três semanas. Desde então a pressão está elevada em medidas repetidas no consultório e em casa. Qual a explicação mais provável?",
+      "options": [
+        "Interação: a dipirona reduz o efeito anti-hipertensivo",
+        "Interação: a dipirona potencializa a hidroclorotiazida",
+        "Hipertensão do avental branco desencadeada pela dor",
+        "Resistência à losartana pelo envelhecimento renal"
+      ],
+      "correctIndex": 0,
+      "explanation": "(Geriatria · Polifarmácia) Dipirona associada a losartana, diurético ou propranolol diminui o efeito anti-hipertensivo. O descontrole novo, com relação temporal com o fármaco e medidas domiciliares também altas, pede revisão da receita antes de acrescentar outro anti-hipertensivo — que daria início a uma cascata de prescrições."
+    },
+    {
+      "question": "Homem de 30 anos teve a primeira crise tônico-clônica generalizada da vida, sem febre, álcool, droga ou privação de sono. Exame neurológico normal, EEG em vigília e sono normal e ressonância normal. Qual a conduta?",
+      "options": [
+        "Não iniciar antiepiléptico; orientar e acompanhar",
+        "Iniciar valproato e manter por pelo menos dois anos",
+        "Iniciar fenitoína e manter por pelo menos um ano",
+        "Iniciar clonazepam contínuo como profilaxia"
+      ],
+      "correctIndex": 0,
+      "explanation": "(Neurologia · Epilepsias) Após uma primeira crise tônico-clônica espontânea, 20 a 70% nunca terão outra, e em geral não se trata; após a segunda crise espontânea a recorrência passa de 70% e o tratamento se impõe. Déficit focal, lesão cerebral ou atividade epileptiforme no EEG aumentariam o risco — todos ausentes aqui. Benzodiazepínico não serve para uso crônico, pela tolerância."
+    },
+    {
+      "question": "Qual conjunto de achados diferencia a síndrome serotoninérgica da síndrome neuroléptica maligna?",
+      "options": [
+        "Instalação em horas, com clônus e hiperreflexia",
+        "Instalação em dias, com rigidez em cano de chumbo",
+        "Febre alta com instabilidade autonômica marcada",
+        "CPK muito elevada com rebaixamento da consciência"
+      ],
+      "correctIndex": 0,
+      "explanation": "(Psiquiatria · Esquizofrenia) A síndrome serotoninérgica vem de serotoninérgicos e se instala em horas, com clônus e hiperreflexia. A neuroléptica maligna vem de antagonista dopaminérgico, instala-se em dias, com rigidez em cano de chumbo e CPK muito elevada; febre e disautonomia aparecem nas duas e não discriminam."
+    },
+    {
+      "question": "Mulher de 67 anos, hipermetrope, chega ao pronto-socorro após sair do cinema com cefaleia frontal intensa, náuseas e vômitos. O olho direito está vermelho, com córnea embaçada e pupila em midríase média que não reage à luz. Qual o passo seguinte?",
+      "options": [
+        "Medir a pressão intraocular e tratar a crise",
+        "Tomografia de crânio para afastar hemorragia",
+        "Dilatar a pupila para examinar o fundo de olho",
+        "Colírio antibiótico para conjuntivite aguda"
+      ],
+      "correctIndex": 0,
+      "explanation": "(Oftalmo · Glaucoma) Olho vermelho com dor, náuseas, córnea embaçada e pupila em midríase média fixa, em hipermetrope após a penumbra do cinema, é crise aguda de ângulo fechado: mede-se a pressão e trata-se como emergência, com iridotomia depois da crise. Dilatar a pupila agrava o fechamento do ângulo, e vômitos com cefaleia costumam desviar o raciocínio para causas neurológicas ou abdominais."
+    },
+    {
+      "question": "Homem de 35 anos usa nafazolina nasal várias vezes ao dia há oito meses; diz que 'só respira com a gotinha' e que o alívio dura cada vez menos. A rinoscopia mostra mucosa congesta. Qual a conduta?",
+      "options": [
+        "Suspender a nafazolina e usar corticoide tópico nasal",
+        "Trocar a nafazolina por oximetazolina de longa ação",
+        "Manter a nafazolina e associar anti-histamínico oral",
+        "Indicar turbinectomia pela hipertrofia das conchas"
+      ],
+      "correctIndex": 0,
+      "explanation": "(Otorrino · Rinites) É rinite medicamentosa: o uso crônico de descongestionante tópico produz congestão de rebote e dependência. A saída é suspender o vasoconstritor tópico e cobrir o rebote com corticoide tópico nasal; trocar por outro vasoconstritor, como a oximetazolina, mantém o problema."
+    },
+    {
+      "question": "Paciente de 58 anos é encontrado irresponsivo, sem respiração normal e sem pulso; o monitor mostra fibrilação ventricular. Qual a conduta imediata?",
+      "options": [
+        "RCP e desfibrilação com 200 J bifásico",
+        "Cardioversão sincronizada com 100 J",
+        "Amiodarona 150 mg EV em 10 minutos",
+        "Atropina 1 mg EV e reavaliar o ritmo"
+      ],
+      "correctIndex": 0,
+      "explanation": "(Práticas · Arritmias) Sem pulso não se trata arritmia com pulso, e sim PCR: RCP e desfibrilação no ritmo chocável (FV ou TV sem pulso), com 200 J bifásico ou 360 J monofásico, sem sincronismo. Cardioversão sincronizada é para taquicardias com pulso, e amiodarona 150 mg em 10 minutos é a dose da TV estável — na PCR são 300 mg."
+    },
+    {
+      "question": "Entre as trocas recomendadas para reduzir medicamentos potencialmente inapropriados no idoso, qual é a adequada para a insônia, quando um fármaco é realmente necessário?",
+      "options": [
+        "Benzodiazepínico por trazodona",
+        "Benzodiazepínico por amitriptilina",
+        "Benzodiazepínico por difenidramina",
+        "Benzodiazepínico por prometazina"
+      ],
+      "correctIndex": 0,
+      "explanation": "(Geriatria · Polifarmácia) Trocar benzodiazepínico por trazodona para insônia evita a sonolência diurna e é a alternativa mais segura entre os PIM. Amitriptilina, difenidramina e prometazina têm carga anticolinérgica e estão entre os fármacos a evitar no idoso pelos Critérios de Beers — e as medidas não farmacológicas vêm antes de qualquer hipnótico."
+    },
+    {
+      "question": "Homem de 58 anos recebeu diazepam e fenitoína por estado de mal tônico-clônico. Os abalos cessaram há 40 minutos, mas ele continua sem abrir os olhos e sem responder, com sinais vitais estáveis. Qual a conduta mais importante agora?",
+      "options": [
+        "EEG para afastar estado de mal não convulsivo",
+        "Aguardar o pós-ictal por 24 horas sem exames",
+        "Punção lombar antes de qualquer outro exame",
+        "Suspender a fenitoína pela sedação excessiva"
+      ],
+      "correctIndex": 0,
+      "explanation": "(Neurologia · Epilepsias) O paciente que não recupera a consciência depois da crise deve levantar a suspeita de estado de mal não convulsivo, que só o EEG confirma. Atribuir tudo a um pós-ictal prolongado atrasa o tratamento de uma crise que continua, com risco de dano neuronal a partir de 30 minutos."
+    },
+    {
+      "question": "Homem de 27 anos com esquizofrenia chega agitado e ameaçador, mas, após abordagem verbal, aceita conversar e concorda em tomar medicação por via oral. Não há sinais de causa orgânica. Qual a opção mais adequada?",
+      "options": [
+        "Risperidona 2 mg por via oral",
+        "Haloperidol 5 mg por via intravenosa",
+        "Clorpromazina 25 mg intramuscular",
+        "Diazepam 10 mg por via intramuscular"
+      ],
+      "correctIndex": 0,
+      "explanation": "(Psiquiatria · Emergências) Na tranquilização rápida a via oral é preferencial quando o paciente aceita, e a risperidona 2 mg VO (isolada ou com benzodiazepínico oral) é opção efetiva. O haloperidol IV amplifica extrapiramidais e o risco de QT longo, a clorpromazina causa hipotensão grave e reduz o limiar convulsivo, e o diazepam IM tem absorção errática."
+    },
+    {
+      "question": "Hipertenso de 64 anos, com pressão mal controlada, nota baixa visual indolor no olho esquerdo há quatro dias. A fundoscopia mostra hemorragias em chama de vela restritas ao quadrante temporal superior, com cruzamento arteriovenoso anormal nesse setor. Qual o diagnóstico e a conduta?",
+      "options": [
+        "Oclusão de ramo venoso; controle da HAS e anti-VEGF",
+        "Oclusão da artéria central; massagem ocular imediata",
+        "Descolamento de retina; cirurgia em até 48 horas",
+        "Retinopatia diabética; panfotocoagulação imediata"
+      ],
+      "correctIndex": 0,
+      "explanation": "(Oftalmo · Urgências) Hemorragias limitadas a um quadrante, no setor drenado pela veia ocluída, com cruzamento arteriovenoso anormal, definem a oclusão de ramo venoso — mais comum que a central. É urgência: controle da hipertensão (essencial) e anti-VEGF para o edema macular. A oclusão arterial daria retina pálida com mancha vermelho-cereja e perda súbita e profunda."
+    },
+    {
+      "question": "Na rinite alérgica, qual fármaco atua sobre a obstrução nasal, sintoma ligado à inflamação eosinofílica da fase tardia?",
+      "options": [
+        "Corticoide intranasal, de primeira linha",
+        "Anti-histamínico oral de segunda geração",
+        "Descongestionante tópico em uso contínuo",
+        "Corticoide oral de manutenção prolongada"
+      ],
+      "correctIndex": 0,
+      "explanation": "(Otorrino · Rinites) O anti-histamínico cobre a fase imediata (histamina: prurido, espirros, rinorreia); a obstrução depende da fase tardia, eosinofílica, que responde ao corticoide intranasal, primeira linha ao lado do anti-histamínico de 2ª geração. Descongestionante tópico contínuo causa rinite medicamentosa, e corticoide oral é só de uso curto em casos graves."
+    },
+    {
+      "question": "No marca-passo transcutâneo, o monitor mostra espículas regulares que não são seguidas de QRS. O que isso significa e qual o ajuste?",
+      "options": [
+        "Falta de captura; aumentar a corrente em mA",
+        "Captura elétrica; confirmar o pulso femoral",
+        "Falta de captura; reduzir a frequência em ppm",
+        "Captura mecânica; reduzir a corrente pela dor"
+      ],
+      "correctIndex": 0,
+      "explanation": "(Práticas · Arritmias) Espícula sem QRS depois dela é estímulo sem captura: aumenta-se a corrente (mA) até cada espícula ser seguida de QRS largo, e então se confirma a captura mecânica pelo pulso femoral. A dor da estimulação se trata com analgesia e sedação, nunca baixando a corrente abaixo do limiar."
+    },
+    {
+      "question": "No teste Timed Up and Go, usado para estimar o risco de quedas do idoso da comunidade, qual tempo indica risco aumentado pelo STEADI?",
+      "options": [
+        "12 segundos ou mais para completar o percurso",
+        "20 segundos ou mais para completar o percurso",
+        "30 segundos ou mais para completar o percurso",
+        "8 segundos ou mais para completar o percurso"
+      ],
+      "correctIndex": 0,
+      "explanation": "(Geriatria · Quedas) No TUG o idoso levanta da cadeira, anda 3 metros, gira, volta e senta; pelo STEADI (CDC), 12 segundos ou mais indicam risco aumentado de queda. O corte de 20 segundos pertence a outro contexto — a graduação da sarcopenia grave —, e confundir os dois é erro frequente."
+    },
+    {
+      "question": "Mulher de 73 anos usa metoclopramida há quatro meses para dispepsia e desenvolveu bradicinesia e rigidez simétricas, com pouco tremor. Qual a conduta inicial?",
+      "options": [
+        "Suspender a metoclopramida e reavaliar",
+        "Iniciar levodopa associada à carbidopa",
+        "Iniciar biperideno e manter a medicação",
+        "Solicitar PET para confirmar o Parkinson"
+      ],
+      "correctIndex": 0,
+      "explanation": "(Neurologia · Parkinsonismo) Parkinsonismo simétrico em quem usa bloqueador dopaminérgico (metoclopramida, neurolépticos, cinarizina, flunarizina) é induzido por droga até prova em contrário e se controla com a retirada do fármaco. A anamnese medicamentosa vem antes de qualquer exame; o PET é instrumento de pesquisa, e anticolinérgico no idoso traz confusão e alucinações."
+    },
+    {
+      "question": "Mulher de 45 anos, avaliada pelo módulo de suicídio do M.I.N.I., relata que no último mês pensou em suicídio e chegou a pensar em como fazê-lo, mas não tentou e nunca tentou antes. Qual o risco e a conduta?",
+      "options": [
+        "Alto risco: internação psiquiátrica imediata",
+        "Risco moderado: encaminhar e avisar a família",
+        "Baixo risco: trabalhar os sentimentos na consulta",
+        "Risco moderado: contrato e retorno em uma semana"
+      ],
+      "correctIndex": 0,
+      "explanation": "(Psiquiatria · Emergências) No M.I.N.I., pensar em suicídio vale 6 pontos e pensar numa maneira de se matar vale 10 — esse item sozinho já leva ao alto risco (10 ou mais), que é emergência com internação psiquiátrica imediata. O risco moderado (6 a 9) pede intervenção psiquiátrica e comunicação à família."
+    },
+    {
+      "question": "Na classificação das urgências oftalmológicas pelo tempo, qual dos quadros abaixo é urgência (avaliação em até 24 horas), e não emergência?",
+      "options": [
+        "Neuropatia óptica isquêmica não arterítica",
+        "Neuropatia óptica isquêmica arterítica",
+        "Oclusão da artéria central da retina",
+        "Queimadura química da superfície ocular"
+      ],
+      "correctIndex": 0,
+      "explanation": "(Oftalmo · Urgências) A NOIA não arterítica é urgência; a forma arterítica (arterite de células gigantes) é emergência, pelo risco de perder o olho contralateral em dias, e pede corticoide imediato. Oclusão da artéria central da retina e queimadura química também são emergências — minutos contam."
+    },
+    {
+      "question": "Nas complicações orbitárias da rinossinusite, qual é a sequência de progressão?",
+      "options": [
+        "Pálpebra, espaço subperiosteal e órbita",
+        "Órbita, espaço subperiosteal e pálpebra",
+        "Seio cavernoso, órbita e pálpebra",
+        "Espaço subperiosteal, pálpebra e órbita"
+      ],
+      "correctIndex": 0,
+      "explanation": "(Otorrino · Rinossinusites) As complicações orbitárias progridem de fora para dentro: celulite e abscesso palpebral, subperiosteal e orbitário. Por isso edema e hiperemia palpebral em quem tem rinossinusite são lidos como complicação, e a rinossinusite complicada está entre as indicações cirúrgicas; a tromboflebite do seio cavernoso é complicação intracraniana."
+    },
+    {
+      "question": "Paciente com câncer metastático vai usar morfina oral para dor e clonazepam para ansiedade. Como o médico deve emitir as receitas desses dois fármacos?",
+      "options": [
+        "Notificação amarela para a morfina e azul para o clonazepam",
+        "Uma única notificação amarela contendo os dois fármacos",
+        "Uma única notificação azul contendo os dois fármacos",
+        "Receita de controle especial em duas vias com ambos"
+      ],
+      "correctIndex": 0,
+      "explanation": "(Práticas · Prescrição) Morfina é entorpecente da lista A (notificação amarela) e clonazepam é psicotrópico da lista B (notificação azul). Cada notificação amarela ou azul só pode conter um único produto, então são duas receitas separadas, cada uma com sua numeração; o laxante para a constipação do opioide vai em receita simples."
+    },
+    {
+      "question": "Homem de 80 anos, em uso de doxazosina, relata tontura ao se levantar. A PA deitado é de 148/84 mmHg e, após 3 minutos em pé, de 136/72 mmHg. Como interpretar a medida?",
+      "options": [
+        "Hipotensão ortostática, pela queda diastólica de 12 mmHg",
+        "Normal, pois a sistólica caiu menos de 20 mmHg",
+        "Normal, pois a medida em pé exige 10 minutos",
+        "Só é ortostática se houver síncope associada"
+      ],
+      "correctIndex": 0,
+      "explanation": "(Geriatria · Quedas) Hipotensão ortostática é a queda da PAS ≥ 20 mmHg OU da PAD ≥ 10 mmHg em até 3 minutos em pé — basta um dos critérios. A queda diastólica de 12 mmHg fecha o diagnóstico, e o alfabloqueador é o suspeito: reduzir ou retirar o fármaco faz parte da prevenção de quedas."
+    },
+    {
+      "question": "Na doença de Parkinson em paciente acima de 70 anos, com bradicinesia que já compromete as atividades diárias, qual droga costuma ser a primeira opção?",
+      "options": [
+        "Levodopa associada a inibidor da dopadescarboxilase",
+        "Biperideno, pela boa ação no tremor e na rigidez",
+        "Pramipexol isolado, para postergar a levodopa",
+        "Amantadina isolada, pelo efeito duradouro na acinesia"
+      ],
+      "correctIndex": 0,
+      "explanation": "(Neurologia · Parkinsonismo) Acima dos 70 anos, a menor perspectiva de duração da doença, os efeitos centrais dos anticolinérgicos e a baixa tolerância aos agonistas colocam a levodopa (com carbidopa ou benserazida) como primeira opção; postergá-la é estratégia para jovens com quadro leve. A amantadina tem potência baixa e costuma perder o efeito em 6 a 12 meses."
+    },
+    {
+      "question": "No paciente etilista que vai receber soro glicosado no pronto-socorro, qual cuidado previne a encefalopatia de Wernicke?",
+      "options": [
+        "Administrar tiamina antes da glicose",
+        "Administrar glicose antes da tiamina",
+        "Dar diazepam antes de qualquer soro",
+        "Evitar soro até corrigir o magnésio"
+      ],
+      "correctIndex": 0,
+      "explanation": "(Psiquiatria · Emergências) No etilista, a tiamina vem antes da glicose: glicose sem tiamina pode precipitar a encefalopatia de Wernicke. O benzodiazepínico é o eixo do tratamento da abstinência, mas não é pré-requisito para hidratar."
+    },
+    {
+      "question": "Serralheiro de 40 anos martelava uma peça de metal sem óculos de proteção quando sentiu algo atingir o olho direito. Há pequena laceração corneana e leve baixa visual. Qual o exame mais adequado para investigar o que ocorreu?",
+      "options": [
+        "Tomografia de órbitas para corpo estranho intraocular",
+        "Ressonância magnética de órbitas com urgência",
+        "Fundoscopia sob dilatação após compressão ocular",
+        "Nenhum exame; colírio antibiótico e retorno em 48 h"
+      ],
+      "correctIndex": 0,
+      "explanation": "(Oftalmo · Urgências) Em todo trauma com metal deve-se suspeitar de corpo estranho intraocular, investigado por radiografia ou tomografia, com remoção. O olho com possível perfuração não deve ser pressionado — protege-se com cone —, e a ressonância não é o exame diante de possível fragmento metálico."
+    },
+    {
+      "question": "Homem de 58 anos, tabagista de 40 maços-ano e etilista, está rouco há quatro semanas. Já usou antibiótico e pastilhas, sem melhora. Qual a conduta?",
+      "options": [
+        "Avaliar a laringe por nasofibrolaringoscopia",
+        "Fonoterapia e reavaliação em três meses",
+        "Inibidor de bomba por oito semanas e reavaliar",
+        "Repouso vocal e novo curso de antibiótico"
+      ],
+      "correctIndex": 0,
+      "explanation": "(Otorrino · Disfonias) Todo paciente com disfonia por no mínimo 15 dias deve ter a laringe avaliada, e no tabagista e etilista a hipótese de carcinoma espinocelular torna isso prioritário — lesão suspeita pede biópsia. Fonoterapia ou tratamento empírico de refluxo não substituem a visualização da laringe."
+    },
+    {
+      "question": "Qual a validade e a abrangência territorial da notificação de receita azul (lista B)?",
+      "options": [
+        "30 dias, válida apenas no estado emissor",
+        "30 dias, válida em todo o território nacional",
+        "60 dias, válida apenas no estado emissor",
+        "10 dias, válida em todo o território nacional"
+      ],
+      "correctIndex": 0,
+      "explanation": "(Práticas · Prescrição) A notificação azul (lista B) vale 30 dias, mas apenas no estado que a emitiu; é a amarela (lista A) que vale em todo o território nacional. Os 60 dias são a quantidade máxima de tratamento da B1, não a validade, e os 10 dias são a validade da receita de antimicrobiano."
+    },
+    {
+      "question": "Mulher de 77 anos refere cansaço na maior parte do tempo e dificuldade para subir um lance de escadas, mas anda um quarteirão sem dificuldade. Não tem doença crônica diagnosticada e perdeu 1,5 kg (pesava 62 kg) no último ano. Pela escala FRAIL, como ela se classifica?",
+      "options": [
+        "Pré-frágil, com dois itens positivos",
+        "Frágil, com três itens positivos",
+        "Robusta, sem nenhum item positivo",
+        "Frágil, pois a fadiga isolada basta"
+      ],
+      "correctIndex": 0,
+      "explanation": "(Geriatria · Fragilidade) Contam fadiga e resistência (subir um lance de escadas); deambulação, doença crônica e perda de peso são negativas — 1,5 kg está abaixo de 4,5 kg e de 5% do peso. Com 1 a 2 itens ela é pré-frágil, a fase em que exercício, proteína e desprescrição ainda mudam a trajetória; frágil exige 3 ou mais."
+    },
+    {
+      "question": "Homem de 31 anos, duas semanas após quadro diarreico, evolui em cinco dias com fraqueza ascendente dos membros inferiores para os superiores, parestesias distais e arreflexia. O líquor colhido no 3º dia tem células e proteínas normais. Qual a conduta?",
+      "options": [
+        "Imunoglobulina endovenosa ou plasmaférese",
+        "Pulsoterapia com metilprednisolona",
+        "Aguardar o líquor alterado para tratar",
+        "Prednisona oral em dose alta por dois meses"
+      ],
+      "correctIndex": 0,
+      "explanation": "(Neurologia · Neuropatias) É polirradiculoneurite aguda (Guillain-Barré): a dissociação proteíno-citológica só aparece após a primeira semana, então o líquor normal no 3º dia não afasta o diagnóstico. Plasmaférese e imunoglobulina EV têm eficácia comprovada; o corticosteroide não é tratamento estabelecido na forma aguda — ele é usado na forma crônica."
+    },
+    {
+      "question": "Universitário de 20 anos gasta cerca de três horas por dia verificando portas, fogão e torneiras, com intensa angústia e prejuízo nos estudos. A Y-BOCS é de 28 pontos. Qual o tratamento indicado?",
+      "options": [
+        "ISRS em dose alta associado a TCC com exposição",
+        "TCC com exposição isolada, sem medicação",
+        "Benzodiazepínico contínuo associado à TCC",
+        "Antipsicótico em dose baixa como monoterapia"
+      ],
+      "correctIndex": 0,
+      "explanation": "(Psiquiatria · TOC) Com Y-BOCS a partir de 24 o TOC é grave, e farmacoterapia e psicoterapia são obrigatoriamente associadas: ISRS em dose alta (resposta avaliada em até 12 semanas) mais TCC com exposição e prevenção de resposta. TCC isolada é para Y-BOCS até 23, e o antipsicótico em dose baixa entra como potencializador na resposta parcial, não em monoterapia."
+    },
+    {
+      "question": "Diabético de 52 anos, com glicemias acima de 350 mg/dL há um mês, queixa-se de piora recente da visão de longe. A refração mostra −1,50 DE nos dois olhos; até então não usava óculos. Qual a conduta?",
+      "options": [
+        "Adiar os óculos até controlar a glicemia",
+        "Prescrever lente negativa definitiva já",
+        "Prescrever adição positiva para perto",
+        "Refração sob cicloplegia para latente"
+      ],
+      "correctIndex": 0,
+      "explanation": "(Oftalmo · Ametropias) Na hiperglicemia o cristalino absorve água, ganha poder refrativo e desloca o foco para antes da retina: um desvio miópico transitório. Ao normalizar a glicemia a refração volta, por isso não se prescrevem óculos definitivos durante a descompensação."
+    },
+    {
+      "question": "Menina de 4 anos tem rouquidão progressiva há meses e, recentemente, ruído inspiratório e cansaço ao brincar. A nasofibrolaringoscopia mostra múltiplas lesões exofíticas em cacho de uva nas pregas vocais. Qual o diagnóstico?",
+      "options": [
+        "Papilomatose laríngea pelo HPV 6 e 11",
+        "Nódulos vocais por abuso vocal infantil",
+        "Laringomalácia com colapso supraglótico",
+        "Cisto vocal epidermoide bilateral"
+      ],
+      "correctIndex": 0,
+      "explanation": "(Otorrino · Disfonias) Lesões exofíticas multilobuladas em cacho de uva são o papiloma laríngeo, tumor benigno mais comum da laringe, causado pelo HPV 6 e 11; na criança cursa com estridor e obstrução, e recorre muito. Nódulos são espessamentos simétricos da borda livre, e a laringomalácia é flacidez supraglótica do lactente, sem lesão de massa nas pregas."
+    },
+    {
+      "question": "Na estrutura de uma prescrição, o que corresponde à inscrição?",
+      "options": [
+        "Nome do fármaco, forma farmacêutica e concentração",
+        "Quantidade total a fornecer, em número e por extenso",
+        "Nome, endereço e idade do paciente a ser tratado",
+        "Orientações de uso ao paciente: dose, via e duração"
+      ],
+      "correctIndex": 0,
+      "explanation": "(Práticas · Prescrição) A inscrição traz o fármaco, a forma farmacêutica e a concentração. A superinscrição identifica o paciente, a subinscrição indica a quantidade total (em algarismos e por extenso nos controlados) e a adscrição orienta o uso — posologia, via e duração."
+    },
+    {
+      "question": "Homem de 82 anos tem SARC-CalF de 13 pontos, preensão palmar de 22 kg (maior de três medidas) e leva 17 segundos no teste de sentar e levantar cinco vezes. A densitometria ainda não foi feita. Qual a conduta?",
+      "options": [
+        "Sarcopenia provável: iniciar exercício resistido e proteína",
+        "Sem diagnóstico: aguardar a DEXA antes de qualquer intervenção",
+        "Sarcopenia confirmada: iniciar reposição de testosterona",
+        "Sarcopenia grave: prescrever vitamina D em dose elevada"
+      ],
+      "correctIndex": 0,
+      "explanation": "(Geriatria · Sarcopenia) Rastreio positivo com força baixa (preensão < 27 kg no homem; cadeira > 15 s) já define sarcopenia provável, suficiente para buscar causas e iniciar a intervenção — esperar a medida de massa só atrasa o tratamento. A primeira linha é exercício resistido e proteína; nenhum medicamento tem evidência suficiente, e vitamina D só se repõe quando está baixa."
+    },
+    {
+      "question": "Qual quadro caracteriza a lesão do nervo fibular comum, e onde ela costuma ocorrer?",
+      "options": [
+        "Pé caído e hipoestesia lateral da perna; cabeça da fíbula",
+        "Mão caída e hipoestesia no dorso do polegar; úmero",
+        "Fraqueza da panturrilha e da planta; túnel do tarso",
+        "Fraqueza do quadríceps e da coxa; ligamento inguinal"
+      ],
+      "correctIndex": 0,
+      "explanation": "(Neurologia · Neuropatias) O fibular comum faz a dorsiflexão, a abdução do pé e a extensão dos dedos e dá sensibilidade à face lateral da perna e ao dorso do pé; a compressão na cabeça da fíbula (pernas cruzadas, gesso) produz o pé caído. Mão caída é do radial (fratura do úmero, chumbo), e panturrilha e planta são do tibial posterior."
+    },
+    {
+      "question": "Mulher de 29 anos foi assaltada à mão armada há 12 dias. Desde então tem pesadelos, revive a cena quando ouve motos, evita a rua do assalto, assusta-se com facilidade e dorme mal. Qual o diagnóstico?",
+      "options": [
+        "Reação aguda ao estresse, por ter menos de 1 mês",
+        "TEPT, pela presença de intrusão, evitação e alerta",
+        "TEPT com início tardio, pela gravidade do trauma",
+        "Transtorno de pânico, pelos sustos e pela insônia"
+      ],
+      "correctIndex": 0,
+      "explanation": "(Psiquiatria · TEPT) Os sintomas cobrem intrusão, evitação e hiperreatividade, mas o TEPT exige pelo menos 1 mês de duração; no primeiro mês após o trauma, o diagnóstico é reação aguda ao estresse. 'Início tardio' é para sintomas que surgem 6 meses ou mais após o evento — e nessa fase não se prescreve benzodiazepínico, que aumenta o risco de TEPT."
+    },
+    {
+      "question": "Jovem de 19 anos levou uma bolada no olho esquerdo. Tem diplopia vertical que piora ao olhar para cima, enoftalmia e hipoestesia da bochecha e do lábio superior à esquerda; o rebordo orbitário está íntegro à palpação. Qual o diagnóstico e o exame de escolha?",
+      "options": [
+        "Fratura blow-out do assoalho; TC coronal",
+        "Fratura da parede lateral; radiografia",
+        "Paralisia do IV par; ressonância de crânio",
+        "Fratura do teto da órbita; TC axial"
+      ],
+      "correctIndex": 0,
+      "explanation": "(Oftalmo · Anatomia ocular) Objeto rombo maior que a rima orbitária eleva a pressão na órbita e rompe o assoalho, mantendo o rebordo íntegro: fratura blow-out. O encarceramento do reto inferior dá diplopia ao olhar para cima, a perda de conteúdo para o seio maxilar dá enoftalmia e a lesão do nervo infraorbitário (V2) dá a hipoestesia; a TC coronal mostra o sinal da gota pendente."
+    },
+    {
+      "question": "Diabético de 68 anos acorda com dor periorbitária, ptose à direita e olho direito desviado para baixo e para fora. As pupilas são simétricas e reagem normalmente à luz. Qual a hipótese mais provável?",
+      "options": [
+        "Mononeuropatia diabética do III nervo, com pupila poupada",
+        "Aneurisma da comunicante posterior comprimindo o III nervo",
+        "Paralisia do VI nervo por hipertensão intracraniana",
+        "Miastenia ocular de início tardio em diabético"
+      ],
+      "correctIndex": 0,
+      "explanation": "(Neurologia · Neuropatias) No diabético idoso, o III nervo é o par craniano mais atingido, de início abrupto, com pupila habitualmente poupada e recuperação como regra — a isquemia microvascular atinge o centro do nervo. Midríase associada sugeriria compressão (aneurisma de comunicante posterior), porque as fibras pupilares correm na periferia; o VI par daria só limitação da abdução."
+    },
+    {
+      "question": "No exame psíquico, como se descreve o pensamento que inclui detalhes dispensáveis à resposta, mas acaba chegando ao objetivo da pergunta?",
+      "options": [
+        "Prolixo, pois inclui detalhes mas chega ao alvo",
+        "Tangencial, pois não responde ao que foi perguntado",
+        "Arborizado, por perder de vez a temática central",
+        "Em sopa de palavras, por fragmentar o discurso"
+      ],
+      "correctIndex": 0,
+      "explanation": "(Psiquiatria · Exame psíquico) O pensamento prolixo inclui detalhes dispensáveis, mas chega à resposta. O tangencial parece que vai responder e não responde; o arborizado se desprende totalmente do tema (típico da mania); a sopa de palavras é a fragmentação grave da forma, sem construção de frase."
+    }
+  ]
+}

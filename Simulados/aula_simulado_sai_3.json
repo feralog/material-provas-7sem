@@ -1,0 +1,668 @@
+{
+  "titulo": "Simulado SAI III · 3",
+  "eyebrow": "Simulado · Saúde do Adulto e do Idoso III",
+  "subtitulo": "Sessenta questões inéditas para medir se o conteúdo ficou",
+  "intro": "60 questões objetivas inéditas misturando Geriatria, Psiquiatria, Neurologia, Otorrino, Oftalmo e Práticas de emergência, no estilo da prova. Faça de uma vez, em 90 minutos, sem consulta — e use o mapa do simulado para revisar depois.",
+  "questoes": [
+    {
+      "question": "Homem de 76 anos, com cirrose hepática compensada e clearance de creatinina de 25 mL/min, tem depressão maior e dor neuropática diabética nos pés. Qual antidepressivo deve ser evitado nesse paciente?",
+      "options": [
+        "Duloxetina, contraindicada na hepatopatia e com clearance abaixo de 30",
+        "Mirtazapina, contraindicada na insuficiência renal e hepática",
+        "Sertralina, pela forte inibição do citocromo P450 no idoso",
+        "Desvenlafaxina, pelo maior número de interações da classe"
+      ],
+      "correctIndex": 0,
+      "explanation": "(Geriatria · Depressão no idoso) A duloxetina é o dual menos indicado no idoso pelas interações e é contraindicada na insuficiência hepática e com clearance abaixo de 30 mL/min — exatamente o perfil do caso, apesar de ser boa para dor. A mirtazapina, ao contrário, é opção justamente no idoso frágil com insuficiência hepática ou renal, titulada devagar; sertralina e desvenlafaxina têm baixa interação."
+    },
+    {
+      "question": "Homem de 28 anos com esquizofrenia recebeu doses altas e repetidas de haloperidol intramuscular nos últimos três dias. Agora tem febre de 40 °C, rigidez em cano de chumbo, confusão, pressão arterial lábil e CPK de 18.000 U/L. Qual o diagnóstico e a conduta?",
+      "options": [
+        "Síndrome neuroléptica maligna; suspender o antipsicótico",
+        "Síndrome serotoninérgica; iniciar ciproeptadina oral",
+        "Distonia aguda; biperideno intramuscular imediato",
+        "Catatonia psicótica; aumentar a dose do haloperidol"
+      ],
+      "correctIndex": 0,
+      "explanation": "(Psiquiatria · Psicofarmacoterapia) Febre, rigidez em cano de chumbo, alteração de consciência, instabilidade autonômica e CPK muito alta, instalados em dias após antipsicótico de alta potência, definem a síndrome neuroléptica maligna: suspende-se o antipsicótico, faz-se suporte intensivo e, nos casos graves, dantrolene ou bromocriptina. A síndrome serotoninérgica se instala em horas e cursa com clônus, não com rigidez plástica."
+    },
+    {
+      "question": "Homem de 34 anos teve diarreia há três semanas. Há cinco dias apresenta fraqueza que começou nas pernas e subiu para os braços, com formigamento nas mãos e nos pés. Os reflexos profundos estão abolidos. O líquor mostra proteína de 160 mg/dL com 3 células/mm³. Qual o diagnóstico e o tratamento?",
+      "options": [
+        "Guillain-Barré; imunoglobulina EV ou plasmaférese",
+        "Miastenia gravis; piridostigmina e prednisona",
+        "Guillain-Barré; pulso de metilprednisolona EV",
+        "Mielite transversa; antibiótico e corticoide"
+      ],
+      "correctIndex": 0,
+      "explanation": "(Neurologia · Miastenia gravis e Guillain-Barré) Fraqueza simétrica e ascendente após gastroenterite, com arreflexia e dissociação proteico-citológica, é Guillain-Barré; a imunoterapia é IVIG 2 g/kg em 5 dias ou plasmaférese, com monitorização pelo risco respiratório e autonômico. O pulso de corticoide não faz parte das frentes de tratamento da síndrome."
+    },
+    {
+      "question": "Mulher de 45 anos tem crises de vertigem rotatória que duram de duas a três horas, com zumbido, sensação de ouvido tampado e piora da audição à esquerda, que volta a melhorar entre as crises. Qual o diagnóstico e a primeira linha de tratamento?",
+      "options": [
+        "Doença de Ménière; dieta, diuréticos e supressores",
+        "VPPB; manobra de reposicionamento de Epley",
+        "Neurite vestibular; corticoide e reabilitação",
+        "Doença de Ménière; labirintectomia imediata"
+      ],
+      "correctIndex": 0,
+      "explanation": "(Otorrino · Zumbido e tontura) Vertigem em crises recorrentes com perda auditiva neurossensorial flutuante, zumbido e plenitude aural é a tétrade da doença de Ménière, cujo tratamento é escalonado: conservador primeiro (dieta, diuréticos, supressores labirínticos), invasivo só se refratária. VPPB e neurite vestibular não têm sintomas auditivos."
+    },
+    {
+      "question": "Usuário de lente de contato tem úlcera de córnea bacteriana central. Na emergência, um colega quer ocluir o olho com curativo e prescrever colírio anestésico para uso em casa. Qual a avaliação correta?",
+      "options": [
+        "Ambas as condutas são erradas e pioram a evolução",
+        "Ambas são corretas para aliviar a dor até a consulta",
+        "Só a oclusão é correta, pois protege a córnea lesada",
+        "Só o anestésico é correto, se usado por até sete dias"
+      ],
+      "correctIndex": 0,
+      "explanation": "(Oftalmo · Doenças da córnea) Ocluir cria câmara úmida e quente que favorece o crescimento bacteriano, e o anestésico de uso domiciliar retarda a reepitelização, mascara a piora e leva a ceratopatia tóxica. A conduta é raspado para cultura e antibiótico tópico fortificado horário, com reavaliação diária."
+    },
+    {
+      "question": "Paciente com pulso carotídeo palpável respira de forma agônica, com a SpO₂ caindo. Você inicia ventilação com bolsa-válvula-máscara. Qual a frequência e o volume adequados?",
+      "options": [
+        "1 ventilação a cada 6 s, até o tórax se elevar",
+        "2 ventilações a cada 30 compressões torácicas",
+        "1 ventilação a cada 2 s, com volume máximo",
+        "1 ventilação a cada 15 s, só se dessaturar"
+      ],
+      "correctIndex": 0,
+      "explanation": "(Práticas · Protocolo ABCDE) No paciente com pulso que não respira adequadamente, ventila-se uma vez a cada 6 segundos, cada insuflação só até o tórax se elevar, sem hiperventilar. A relação 30:2 é da PCR sem via aérea avançada."
+    },
+    {
+      "question": "Homem de 79 anos é trazido pela filha, que relata esquecimento progressivo há três anos: repete perguntas, perdeu-se no próprio bairro e não consegue mais pagar as contas. Ele nega qualquer problema e, no teste cognitivo, tenta responder e erra com respostas inventadas. Qual a hipótese mais provável?",
+      "options": [
+        "Demência degenerativa, com queixa trazida pelo acompanhante",
+        "Pseudodemência depressiva, pelo déficit de memória real",
+        "Delirium, pela desorientação espacial no próprio bairro",
+        "Depressão mascarada, com déficit cognitivo no lugar do humor"
+      ],
+      "correctIndex": 0,
+      "explanation": "(Geriatria · Depressão no idoso) Início insidioso de anos, curso progressivo, queixa trazida pelo acompanhante e confabulação no teste são o perfil da demência. Na pseudodemência depressiva é o próprio paciente quem se queixa, o início é recente e datável e a resposta típica é 'não sei', sem tentativa; o delirium se instala em horas a dias, com atenção flutuante."
+    },
+    {
+      "question": "Mulher de 41 anos com transtorno bipolar, estável com lítio há quatro anos e litemia na faixa terapêutica, passa a ter ganho de peso, cansaço, intolerância ao frio e pele seca. Qual exame deve ser pedido primeiro?",
+      "options": [
+        "TSH, pela indução de hipotireoidismo pelo lítio",
+        "Desmopressina, para testar diabetes insipidus",
+        "Hemograma, pelo risco de agranulocitose do lítio",
+        "Prolactina, pelo bloqueio dopaminérgico do lítio"
+      ],
+      "correctIndex": 0,
+      "explanation": "(Psiquiatria · Psicofarmacoterapia) O lítio induz hipotireoidismo no longo prazo, e por isso o seguimento inclui TSH e creatinina, além da litemia. O diabetes insipidus nefrogênico daria poliúria e polidipsia; agranulocitose é risco da clozapina, e o lítio não bloqueia receptor dopaminérgico."
+    },
+    {
+      "question": "Mulher de 38 anos com miastenia gravis dobrou por conta própria a dose de piridostigmina por estar mais fraca. Chega com piora da fraqueza, pupilas mióticas, salivação abundante, cólicas e diarreia. Qual a conduta?",
+      "options": [
+        "Suspender o anticolinesterásico e dar suporte ventilatório",
+        "Dobrar de novo a piridostigmina e iniciar prednisona",
+        "Iniciar aminoglicosídeo para a infecção intestinal",
+        "Indicar timectomia de urgência pela crise refratária"
+      ],
+      "correctIndex": 0,
+      "explanation": "(Neurologia · Miastenia gravis e Guillain-Barré) Fraqueza com miose, sialorreia, cólicas e diarreia após aumento do anticolinesterásico é crise colinérgica: suspende-se a piridostigmina e garante-se a ventilação. Na crise miastênica a pupila é normal e as secreções não aumentam — e aminoglicosídeo pioraria a miastenia."
+    },
+    {
+      "question": "Homem de 68 anos, hipertenso e diabético, tem vertigem contínua há seis horas. O nistagmo muda de direção conforme o olhar, o head impulse test é normal e há fala arrastada. Qual a conduta?",
+      "options": [
+        "Neuroimagem urgente pela suspeita de causa central",
+        "Manobra de Epley, pelo provável quadro de VPPB",
+        "Corticoide oral, pela provável neurite vestibular",
+        "Dieta hipossódica, pela provável doença de Ménière"
+      ],
+      "correctIndex": 0,
+      "explanation": "(Otorrino · Zumbido e tontura) Nistagmo que muda de direção, disartria e head impulse test normal numa vertigem aguda contínua apontam para tronco ou cerebelo, e não para o labirinto — sinais de alarme que exigem investigação de causa central. Na neurite vestibular o nistagmo é unidirecional e o head impulse test é positivo do lado lesado."
+    },
+    {
+      "question": "Mulher de 66 anos refere que a visão é pior ao acordar e melhora ao longo do dia, nos dois olhos. A biomicroscopia mostra guttata na membrana de Descemet e edema corneano. Qual o diagnóstico?",
+      "options": [
+        "Distrofia endotelial de Fuchs",
+        "Ceratocone com hidropsia aguda",
+        "Córnea verticilata por amiodarona",
+        "Distrofia estromal granular"
+      ],
+      "correctIndex": 0,
+      "explanation": "(Oftalmo · Doenças da córnea) Na distrofia de Fuchs as células endoteliais degeneram, surgem guttata e a bomba endotelial falha: o líquido acumulado à noite piora a visão ao acordar, e a evaporação a melhora ao longo do dia. A hidropsia do ceratocone é súbita, por ruptura da Descemet."
+    },
+    {
+      "question": "Paciente em período pós-convulsivo, semiconsciente, ronca e tem reflexo de vômito presente; não há trauma craniano nem equimoses na face. Após aspirar e abrir a via aérea com manobras, qual dispositivo usar e como medi-lo?",
+      "options": [
+        "Cânula nasofaríngea, da narina ao lóbulo da orelha",
+        "Cânula de Guedel, da comissura ao ângulo da mandíbula",
+        "Cânula nasofaríngea, da comissura ao ângulo da mandíbula",
+        "Cânula de Guedel, da narina ao lóbulo da orelha"
+      ],
+      "correctIndex": 0,
+      "explanation": "(Práticas · Protocolo ABCDE) O semiconsciente, com reflexo de vômito, tolera melhor a cânula nasofaríngea, medida da narina ao lóbulo da orelha; sem suspeita de fratura de base de crânio, ela não está contraindicada. A Guedel, medida da comissura labial ao ângulo da mandíbula, é só para o inconsciente sem reflexo, pois induz vômito."
+    },
+    {
+      "question": "Mulher de 80 anos com insuficiência cardíaca e DPOC refere insônia, cansaço e perda de peso, mas não se diz triste. Para rastrear depressão sem inflar falsos positivos por esses sintomas somáticos, qual instrumento é o mais adequado?",
+      "options": [
+        "GDS-15, com perguntas de sim ou não e sem itens somáticos",
+        "PHQ-9, por medir também a gravidade dos sintomas físicos",
+        "Escala de Cornell, criada para idosos com doença crônica",
+        "MEEM, já que a perda de peso sugere declínio cognitivo"
+      ],
+      "correctIndex": 0,
+      "explanation": "(Geriatria · Depressão no idoso) A GDS-15 foi pensada para o idoso e evita deliberadamente itens somáticos: insônia, fadiga e perda de peso pontuariam como depressão em qualquer portador de doença crônica. A Escala de Cornell é para quem já tem demência, e o MEEM rastreia cognição, não humor."
+    },
+    {
+      "question": "Por que, na fase depressiva do transtorno bipolar, o antidepressivo não deve ser prescrito isoladamente?",
+      "options": [
+        "Risco de virada maníaca sem estabilizador do humor associado",
+        "A sertralina e os demais ISRS não têm eficácia em depressão",
+        "Risco de síndrome neuroléptica maligna com o ISRS isolado",
+        "Antidepressivo é contraindicado em qualquer fase do bipolar"
+      ],
+      "correctIndex": 0,
+      "explanation": "(Psiquiatria · Psicofarmacoterapia) Na depressão bipolar o antidepressivo só entra associado a estabilizador do humor, pelo risco de virada maníaca. Isso não o proíbe no bipolar: na fase depressiva aguda, antidepressivo mais estabilizador é o esquema clássico, e a manutenção fica com lítio ou anticonvulsivante."
+    },
+    {
+      "question": "Mulher de 27 anos tem ptose e visão dupla que pioram no fim do dia e melhoram com repouso, além de cansaço ao mastigar. A dosagem de anticorpo antirreceptor de acetilcolina veio negativa. Qual o próximo passo?",
+      "options": [
+        "Pesquisar anti-MuSK e fazer estimulação repetitiva",
+        "Afastar miastenia, pois o anticorpo foi negativo",
+        "Puncionar o líquor em busca de bandas oligoclonais",
+        "Pedir anti-GQ1b para confirmar Miller Fisher"
+      ],
+      "correctIndex": 0,
+      "explanation": "(Neurologia · Miastenia gravis e Guillain-Barré) O anti-AChR é positivo em cerca de 85% das formas generalizadas; soronegatividade não afasta a doença, e nesses casos pesquisa-se o anti-MuSK e documenta-se o decremento à estimulação repetitiva. Miller Fisher cursa com oftalmoplegia, ataxia e arreflexia, sem fadigabilidade."
+    },
+    {
+      "question": "Qual a orientação diante de um zumbido descrito como pulsação sincronizada com os batimentos cardíacos?",
+      "options": [
+        "Investigar causa vascular ou de alto débito dirigidamente",
+        "Indicar terapia sonora, pois é zumbido coclear típico",
+        "Tranquilizar, pois o zumbido pulsátil é sempre benigno",
+        "Tratar como alucinação auditiva e encaminhar à psiquiatria"
+      ],
+      "correctIndex": 0,
+      "explanation": "(Otorrino · Zumbido e tontura) Zumbido pulsátil, sincronizado com o pulso, sai do terreno da disfunção coclear e exige investigação dirigida de causas vasculares e de alto débito, e não terapia sonora. Alucinação auditiva é a percepção de vozes ou de música organizada, não de pulsação."
+    },
+    {
+      "question": "Adolescente de 15 anos com dermatite atópica coça os olhos com frequência e troca de óculos quase todo ano. A topografia mostra ectasia com piora documentada entre dois exames. Qual conduta busca travar a progressão?",
+      "options": [
+        "Crosslinking corneano com riboflavina e luz UVA",
+        "Transplante de córnea penetrante imediato",
+        "Óculos novos a cada piora do astigmatismo",
+        "Colírio de corticoide contínuo para a alergia"
+      ],
+      "correctIndex": 0,
+      "explanation": "(Oftalmo · Doenças da córnea) O crosslinking cria ligações entre as fibras de colágeno e fortalece a córnea; não devolve a visão perdida, mas trava a progressão, e por isso é indicado assim que a piora é documentada. Parar de coçar os olhos faz parte do tratamento; o transplante fica para cicatriz central ou intolerância definitiva à lente."
+    },
+    {
+      "question": "Criança de 20 kg chega sonolenta, com glicemia capilar de 38 mg/dL. Usando glicose na dose de 0,5 a 1 g/kg sob a forma de soro glicosado a 10%, qual volume deve ser infundido?",
+      "options": [
+        "100 a 200 mL de SG10%",
+        "10 a 20 mL de SG10%",
+        "50 a 100 mL de SG10%",
+        "200 a 400 mL de SG10%"
+      ],
+      "correctIndex": 0,
+      "explanation": "(Práticas · Protocolo ABCDE) A dose de 0,5 a 1 g/kg equivale a 5 a 10 mL/kg de SG10%, que tem 0,1 g por mL; em 20 kg, são 10 a 20 g de glicose, ou 100 a 200 mL. Hipoglicemia é causa reversível de rebaixamento e não tolera espera."
+    },
+    {
+      "question": "Idosa de 86 anos, acamada há três meses após AVC, tem déficit cognitivo, disfagia, incontinência urinária e fecal e lesão por pressão sacral. As articulações têm amplitude preservada, sem contraturas. Em relação à síndrome do imobilismo, como interpretar o quadro?",
+      "options": [
+        "Não fecha o diagnóstico: falta um critério maior, as contraturas",
+        "Fecha o diagnóstico: um critério maior e três menores bastam",
+        "Fecha o diagnóstico: quatro critérios de qualquer tipo bastam",
+        "Não fecha o diagnóstico: falta a afasia, que é critério maior"
+      ],
+      "correctIndex": 0,
+      "explanation": "(Geriatria · Síndrome do imobilismo) Os dois critérios maiores — déficit cognitivo e contraturas múltiplas — precisam estar presentes; disfagia, dupla incontinência e escara são critérios menores. A afasia também é menor, e somar menores não substitui um maior ausente."
+    },
+    {
+      "question": "Jovem de 19 anos, em primeiro surto psicótico, iniciou haloperidol há 24 horas. É trazido com o pescoço torcido para um lado, os olhos fixos para cima e dificuldade para abrir a boca. Qual a conduta?",
+      "options": [
+        "Biperideno intramuscular para a distonia aguda",
+        "Propranolol oral para a acatisia induzida",
+        "Dantrolene endovenoso para a hipertermia maligna",
+        "Trocar por clozapina pela discinesia tardia"
+      ],
+      "correctIndex": 0,
+      "explanation": "(Psiquiatria · Psicofarmacoterapia) Torcicolo, crise oculógira e trismo em horas a dias após antipsicótico de alta potência configuram distonia aguda, tratada com biperideno intramuscular. A discinesia tardia surge após meses a anos de uso, e a acatisia é inquietação motora, não postura fixa."
+    },
+    {
+      "question": "Homem de 45 anos, dez dias após um quadro gripal, desenvolve visão dupla com limitação dos movimentos oculares nos dois olhos, marcha cambaleante e reflexos profundos abolidos, com força muscular preservada. Qual o diagnóstico mais provável?",
+      "options": [
+        "Síndrome de Miller Fisher, variante do Guillain-Barré",
+        "Miastenia gravis ocular, de início pós-infeccioso",
+        "Esclerose múltipla com oftalmoplegia internuclear",
+        "Neuropatia axonal motora aguda, a forma AMAN"
+      ],
+      "correctIndex": 0,
+      "explanation": "(Neurologia · Miastenia gravis e Guillain-Barré) A tríade oftalmoplegia, ataxia e arreflexia após infecção define a síndrome de Miller Fisher, associada ao anti-GQ1b. A miastenia preserva os reflexos profundos, e a AMAN lesa axônios motores, com fraqueza."
+    },
+    {
+      "question": "Pelo modelo neurofisiológico de Jastreboff, qual é o objetivo da terapia de retreinamento (TRT) no zumbido crônico?",
+      "options": [
+        "Fazer o zumbido deixar de incomodar, por habituação",
+        "Silenciar a cóclea, com abolição do som na maioria",
+        "Regenerar as células ciliadas externas lesadas",
+        "Suprimir o córtex auditivo com anticonvulsivante"
+      ],
+      "correctIndex": 0,
+      "explanation": "(Otorrino · Zumbido e tontura) O modelo de Jastreboff não busca abolir o zumbido, mas desfazer seu recrutamento pelos sistemas límbico e autonômico, para que ele deixe de incomodar — a TRT usa a plasticidade a favor do paciente e melhora cerca de 82% dos casos. Células ciliadas humanas não se regeneram."
+    },
+    {
+      "question": "Na triagem escolar, um menino de 5 anos lê 20/20 com o olho direito e 20/60 com o esquerdo. Não há desvio ocular nem opacidade, e a refração mostra +5,00 no olho esquerdo e plano no direito. Qual a conduta inicial?",
+      "options": [
+        "Prescrever a correção óptica e reavaliar a acuidade",
+        "Ocluir o olho direito em tempo integral desde já",
+        "Penalizar o olho esquerdo com atropina a 1%",
+        "Aguardar, pois a criança não se queixa de nada"
+      ],
+      "correctIndex": 0,
+      "explanation": "(Oftalmo · Ambliopia) Diferença de várias linhas com olho externamente normal e grande diferença de grau é ambliopia anisometrópica, e o primeiro passo é corrigir a óptica — parte dos casos melhora só com os óculos, e ocluir antes disso gasta período crítico. A penalização se faz no olho bom, nunca no amblíope."
+    },
+    {
+      "question": "Vítima de trauma torácico fechado tem murmúrio vesicular abolido na base direita, com macicez à percussão, taquicardia e hipotensão; a traqueia está centrada e não há turgência jugular. Qual a principal hipótese?",
+      "options": [
+        "Hemotórax, pelo murmúrio abolido com macicez",
+        "Pneumotórax hipertensivo, pelo murmúrio abolido",
+        "Tamponamento cardíaco, pela hipotensão no trauma",
+        "Broncoespasmo, pela redução do murmúrio vesicular"
+      ],
+      "correctIndex": 0,
+      "explanation": "(Práticas · Protocolo ABCDE) Com o murmúrio abolido, a percussão separa ar de líquido: macicez indica derrame ou hemotórax — no trauma com hipotensão, sangue. O pneumotórax daria hipertimpanismo, e o hipertensivo viria com desvio de traqueia e turgência jugular."
+    },
+    {
+      "question": "Paciente de 81 anos, acamado, apresenta lesão sacral com o leito inteiramente coberto por escara negra e endurecida, sem que se veja a profundidade. Como classificar e conduzir a lesão?",
+      "options": [
+        "Não estadiável; desbridar para então estadiar a lesão",
+        "Estágio IV; avaliação cirúrgica e pesquisa de osteomielite",
+        "Estágio I; alívio de pressão e proteção de barreira",
+        "Estágio II; curativo que mantenha o leito úmido"
+      ],
+      "correctIndex": 0,
+      "explanation": "(Geriatria · Síndrome do imobilismo) Leito coberto por esfacelo ou escara impede ver a profundidade, e a lesão é classificada como não estadiável; o desbridamento é o que permite estadiar. Chamar de estágio IV presume exposição de osso, tendão ou músculo que ainda não foi vista."
+    },
+    {
+      "question": "Adolescente de 16 anos tem cortes superficiais nos antebraços, feitos em mais de cinco dias diferentes ao longo do último ano. Conta que se corta quando está muito angustiada e que sente alívio logo depois; nega desejo de morrer. Qual a interpretação mais adequada?",
+      "options": [
+        "Autolesão não suicida, mantendo a avaliação de risco suicida",
+        "Tentativa de suicídio, com indicação de internação imediata",
+        "Comportamento para chamar atenção, sem valor diagnóstico",
+        "Tricotilomania, pelo ato repetitivo focado no próprio corpo"
+      ],
+      "correctIndex": 0,
+      "explanation": "(Psiquiatria · Impulsividade e compulsividade) Dano autoinfligido em cinco ou mais dias no último ano, sem intenção suicida e com alívio de estado afetivo negativo, define autolesão não suicida. Não é tentativa de suicídio nem 'chamar atenção', mas a avaliação de risco suicida continua obrigatória, porque traços impulsivos se correlacionam a tentativas."
+    },
+    {
+      "question": "Paciente em crise miastênica mantém SpO₂ de 97% em ar ambiente, mas fala em frases curtas, tem tosse fraca e engasga com a própria saliva. Qual a conduta em relação à via aérea?",
+      "options": [
+        "Indicar suporte ventilatório já, sem esperar a dessaturação",
+        "Observar, pois a saturação normal afasta a falência",
+        "Aguardar gasometria com hipercapnia para intubar",
+        "Oferecer oxigênio por cateter e reavaliar em 24 horas"
+      ],
+      "correctIndex": 0,
+      "explanation": "(Neurologia · Miastenia gravis e Guillain-Barré) Nas doenças neuromusculares a oximetria cai tarde; a indicação de suporte ventilatório é clínica — fraqueza respiratória instalada ou iminente, sinais bulbares com risco de broncoaspiração e fadiga da musculatura respiratória. Esperar a dessaturação é esperar a falência."
+    },
+    {
+      "question": "Na audiometria da orelha direita, a via óssea está em torno de 30 dB e a via aérea em torno de 60 dB nas frequências de 500 Hz a 4 kHz. Como se classifica a perda?",
+      "options": [
+        "Mista, de grau moderadamente severo",
+        "Condutiva, de grau moderadamente severo",
+        "Neurossensorial, de grau moderado",
+        "Mista, de grau leve pela via óssea"
+      ],
+      "correctIndex": 0,
+      "explanation": "(Otorrino · Introdução à audiologia) Via óssea acima de 15 dB com gap aéreo-ósseo de 30 dB define perda mista; o grau sai da média quadritonal da via aérea, 60 dB, na faixa de 50 a menos de 65 dB — moderadamente severo. Na condutiva a via óssea estaria normal, até 15 dB, e o grau nunca se calcula pela via óssea."
+    },
+    {
+      "question": "Lactente de 2 meses tem pupila esbranquiçada no olho direito, notada pela mãe em fotos. O exame confirma catarata congênita densa unilateral. Qual a conduta?",
+      "options": [
+        "Cirurgia precoce para desobstruir o eixo visual",
+        "Aguardar até os 7 anos para operar com segurança",
+        "Ocluir o olho esquerdo antes de qualquer cirurgia",
+        "Prescrever óculos e repetir o exame com 1 ano"
+      ],
+      "correctIndex": 0,
+      "explanation": "(Oftalmo · Ambliopia) A catarata congênita causa ambliopia por privação, a forma mais grave, porque bloqueia a imagem desde o início do período crítico; desobstruir o eixo visual é urgente. Esperar até os 7 anos é deixar a janela de plasticidade se fechar."
+    },
+    {
+      "question": "Homem de 66 anos, diabético em uso de insulina, é encontrado com fala arrastada e fraqueza no braço direito há 40 minutos. Antes de atribuir o quadro a um AVC, qual exame à beira do leito é obrigatório no D do ABCDE?",
+      "options": [
+        "Glicemia capilar, que integra o D e exclui hipoglicemia",
+        "Pesquisa de sinais meníngeos, para afastar meningite",
+        "Sinal de Homans, para afastar embolia paradoxal",
+        "Eletrocardiograma, para afastar infarto silencioso"
+      ],
+      "correctIndex": 0,
+      "explanation": "(Práticas · Protocolo ABCDE) A glicemia capilar faz parte do D, junto com Glasgow, pupilas, déficit focal e sinais meníngeos; hipoglicemia é causa reversível e rápida de alteração neurológica e precisa ser excluída antes de fechar AVC. Mantida a suspeita, aplicam-se Cincinnati ou NIHSS e registra-se o horário de início."
+    },
+    {
+      "question": "Idosa de 82 anos toma banho sozinha, mas precisa que a filha lave suas costas e suas pernas; veste-se sozinha, pedindo ajuda só para amarrar os tênis; vai ao banheiro sozinha com andador; deita e levanta sem ajuda; é continente e come sozinha. Qual o escore no Índice de Katz e sua interpretação?",
+      "options": [
+        "1 ponto, só no banho; classificada como independente",
+        "2 pontos, banho e vestir; classificada como independente",
+        "3 pontos, banho, vestir e banheiro; parcialmente dependente",
+        "0 ponto; independente nas seis funções avaliadas"
+      ],
+      "correctIndex": 0,
+      "explanation": "(Geriatria · AGA) Ajuda em mais de uma parte do corpo no banho pontua dependência (1 ponto); ajuda só para amarrar os sapatos e o uso de andador não retiram a independência. Escore de 0 a 2 classifica o idoso como independente."
+    },
+    {
+      "question": "Homem de 35 anos tem, há um ano, explosões de raiva desproporcionais a pequenas contrariedades: xinga, ameaça e soca a parede, cerca de duas vezes por mês, sem ferir ninguém. Depois sente vergonha. Não usa álcool ou drogas e não tem outro transtorno mental. Qual o diagnóstico mais provável?",
+      "options": [
+        "Transtorno explosivo intermitente, forma leve",
+        "Transtorno de personalidade antissocial",
+        "Transtorno explosivo intermitente, forma grave",
+        "Transtorno de personalidade borderline"
+      ],
+      "correctIndex": 0,
+      "explanation": "(Psiquiatria · Impulsividade e compulsividade) Agressão verbal ou física sem lesão, ao menos duas vezes em três meses, desproporcional, sem objetivo e seguida de arrependimento, é a forma leve do transtorno explosivo intermitente. A forma grave exige destruição de patrimônio ou lesão corporal três vezes em um ano."
+    },
+    {
+      "question": "Mulher de 27 anos tem neurite óptica à esquerda. A ressonância mostra lesões ovoides periventriculares e justacorticais; uma delas capta gadolínio e as outras não. Pelos critérios de McDonald 2017, qual a conclusão?",
+      "options": [
+        "Esclerose múltipla: disseminação no espaço e no tempo",
+        "Síndrome clínica isolada: falta a disseminação no tempo",
+        "NMOSD, pela neurite óptica com lesões encefálicas",
+        "Esclerose múltipla só após um segundo surto clínico"
+      ],
+      "correctIndex": 0,
+      "explanation": "(Neurologia · Esclerose múltipla) Lesões em duas das quatro áreas (periventricular e justacortical) cumprem a disseminação no espaço, e a presença simultânea de lesão que capta e de lesão que não capta gadolínio cumpre a disseminação no tempo. Não é preciso esperar um segundo surto para fechar o diagnóstico."
+    },
+    {
+      "question": "Mulher de 50 anos tem perda neurossensorial leve só à esquerda, com zumbido unilateral. O índice percentual de reconhecimento de fala (IPRF) dessa orelha é de 40%, muito pior do que o grau tonal faria esperar. Qual o próximo passo?",
+      "options": [
+        "Investigar lesão retrococlear, com PEATE",
+        "Atribuir à lesão coclear leve e indicar AASI",
+        "Repetir com volume mais alto, que normaliza",
+        "Pedir timpanometria para afastar efusão"
+      ],
+      "correctIndex": 0,
+      "explanation": "(Otorrino · Introdução à audiologia) IPRF desproporcionalmente ruim para o grau tonal é bandeira vermelha para lesão retrococlear e indica PEATE. Subir o volume normaliza o índice na perda condutiva, que apenas atenua o sinal, mas não quando o problema é neural."
+    },
+    {
+      "question": "Homem de 55 anos com paralisia facial periférica há três semanas apresenta a pálpebra inferior evertida, lacrimejamento e dificuldade para fechar o olho. Qual a alteração e a conduta inicial?",
+      "options": [
+        "Ectrópio paralítico; lubrificação ocular intensa",
+        "Entrópio involucional; reinserção dos retratores",
+        "Ectrópio cicatricial; enxerto de pele na pálpebra",
+        "Ptose neurogênica; reinserção da aponeurose"
+      ],
+      "correctIndex": 0,
+      "explanation": "(Oftalmo · Alterações palpebrais) A perda do tônus do orbicular na paralisia do facial produz ectrópio paralítico com lagoftalmo, e a prioridade é proteger a córnea com lubrificação intensa enquanto se aguarda a recuperação. O VII par não causa ptose: causa a pálpebra que não fecha."
+    },
+    {
+      "question": "Durante a RCP de um adulto sem pulso, o monitor das pás adesivas mostra fibrilação ventricular. Qual a conduta imediata?",
+      "options": [
+        "Choque bifásico de 120 a 200 J e retomar a RCP",
+        "Atropina 1 mg EV antes de qualquer choque",
+        "Cardioversão sincronizada e checar o pulso",
+        "Adrenalina 1 mg EV e manter só compressões"
+      ],
+      "correctIndex": 0,
+      "explanation": "(Práticas · Protocolo ABCDE) FV e TV sem pulso são ritmos chocáveis: desfibrilação com choque bifásico de 120 a 200 J e retorno às compressões, com adrenalina 1 mg a cada 3 a 5 minutos e amiodarona no ritmo refratário. A cardioversão sincronizada é para taquiarritmia com pulso."
+    },
+    {
+      "question": "Mulher de 74 anos, com três anos de escolaridade, faz 23 pontos no Mini Exame do Estado Mental. Usando os pontos de corte de Brucki por escolaridade, como interpretar o resultado?",
+      "options": [
+        "Abaixo do corte de 25 para 1 a 4 anos de estudo: investigar",
+        "Normal, pois o corte para baixa escolaridade é de 20 pontos",
+        "Normal, pois o MEEM só se altera abaixo de 18 pontos",
+        "Abaixo do corte de 29, que vale para qualquer escolaridade"
+      ],
+      "correctIndex": 0,
+      "explanation": "(Geriatria · AGA) Pelos cortes de Brucki, 1 a 4 anos de estudo pedem 25 pontos; 23 está abaixo e justifica avaliação cognitiva — lembrando que o teste é triagem e o diagnóstico de demência é clínico. O corte de 20 vale só para analfabetos, e o de 29 para mais de 11 anos de estudo."
+    },
+    {
+      "question": "Mulher de 58 anos com síndrome das pernas inquietas tem ferritina de 50 ng/mL e saturação de transferrina de 20%, sem anemia. Qual a conduta mais adequada em relação ao ferro?",
+      "options": [
+        "Repor ferro, pois a ferritina está abaixo de 75 ng/mL",
+        "Não repor, pois a ferritina está dentro da faixa normal",
+        "Repor ferro só se surgir anemia no hemograma de controle",
+        "Não repor e iniciar pramipexol como primeira linha"
+      ],
+      "correctIndex": 0,
+      "explanation": "(Psiquiatria · Medicina do sono) Na síndrome das pernas inquietas a reposição de ferro está indicada com ferritina de até 75 ng/mL e saturação abaixo de 45%, mesmo sem anemia. Os agonistas dopaminérgicos deixaram de ser primeira linha pelo risco de aumentação; a preferência é pelos ligantes alfa-2-delta."
+    },
+    {
+      "question": "No Optic Neuritis Treatment Trial, que efeito teve a prednisona oral em dose baixa, usada isoladamente na neurite óptica?",
+      "options": [
+        "Aumentou as recorrências e por isso não é usada",
+        "Equivaleu ao pulso EV e virou a escolha ambulatorial",
+        "Melhorou a acuidade visual final em relação ao placebo",
+        "Reduziu a conversão para esclerose múltipla"
+      ],
+      "correctIndex": 0,
+      "explanation": "(Neurologia · Esclerose múltipla) No ONTT a prednisona oral em dose baixa, isolada, aumentou as recorrências e por isso não é usada. A metilprednisolona EV acelera a recuperação, mas nem ela muda a acuidade visual final."
+    },
+    {
+      "question": "Num recém-nascido egresso de UTI neonatal, emissões otoacústicas presentes com PEATE alterado sugerem qual condição?",
+      "options": [
+        "Neuropatia auditiva, com células ciliadas externas íntegras",
+        "Audição normal, pois a EOA presente afasta qualquer perda",
+        "Lesão coclear das células ciliadas externas, com nervo normal",
+        "Efusão na orelha média, bloqueando o estímulo e a resposta"
+      ],
+      "correctIndex": 0,
+      "explanation": "(Otorrino · Introdução à audiologia) A emissão otoacústica testa as células ciliadas externas, não o nervo; presente com PEATE alterado, sugere neuropatia auditiva. Efusão ou lesão das células externas tenderiam a abolir as emissões, e é por isso que neonatos com indicador de risco fazem PEATE na triagem."
+    },
+    {
+      "question": "O que caracteriza a triquíase, diferenciando-a do entrópio e da distiquíase?",
+      "options": [
+        "Cílio mal direcionado, com a margem em posição normal",
+        "Margem palpebral inteira invertida em direção ao globo",
+        "Fileira acessória de cílios saindo das glândulas de Meibômio",
+        "Prega de pele que cavalga a margem e verticaliza os cílios"
+      ],
+      "correctIndex": 0,
+      "explanation": "(Oftalmo · Alterações palpebrais) Triquíase é o cílio mal direcionado com a margem palpebral em posição normal. A margem inteira invertida é o entrópio, a fileira acessória que emerge dos orifícios das glândulas de Meibômio é a distiquíase, e a prega cutânea que verticaliza os cílios é o epiblefaro."
+    },
+    {
+      "question": "Pesquisadores querem saber se a exposição a um pesticida se associa a um tipo raro de linfoma, que surge décadas após a exposição. Qual delineamento é o mais eficiente?",
+      "options": [
+        "Caso-controle, partindo do desfecho para a exposição",
+        "Coorte prospectiva, acompanhando expostos por décadas",
+        "Estudo transversal, medindo a prevalência do linfoma",
+        "Ensaio clínico randomizado expondo ao pesticida"
+      ],
+      "correctIndex": 0,
+      "explanation": "(Práticas · Análise crítica de artigos) O caso-controle parte de quem já tem o desfecho e busca a exposição prévia, o que o torna eficiente para doenças raras ou de longa latência. A coorte serviria, mas exigiria acompanhar enorme número de expostos por décadas; e randomizar uma exposição nociva é eticamente inviável."
+    },
+    {
+      "question": "Idoso de 78 anos pesava 70 kg e, sem fazer dieta, chegou a 65 kg em cinco meses. A circunferência da panturrilha mede 29 cm. Qual a interpretação correta?",
+      "options": [
+        "Perda significativa e panturrilha baixa: critério de fragilidade",
+        "Perda esperada da senescência, sem necessidade de investigar",
+        "Perda abaixo de 10% ao ano, ainda sem significado clínico",
+        "Panturrilha normal, que afasta sarcopenia apesar da perda"
+      ],
+      "correctIndex": 0,
+      "explanation": "(Geriatria · AGA) Perder 5 kg de 70 kg em cinco meses é cerca de 7%, acima do limite de 5% em seis meses — perda clinicamente significativa, que deve ser investigada e é critério de fragilidade. A panturrilha abaixo de 31 cm fala a favor de sarcopenia; o limite de 10% vale para o intervalo de um ano."
+    },
+    {
+      "question": "Homem de 47 anos, com sobrepeso, ronca e tem sonolência diurna leve. A polissonografia mostra índice de apneia-hipopneia de 12 eventos por hora. Tentou usar o CPAP e não o tolerou. Qual a melhor opção?",
+      "options": [
+        "Aparelho intraoral, somado à perda de peso",
+        "Benzodiazepínico à noite para melhorar o sono",
+        "Insistir no CPAP, única opção na forma leve",
+        "Modafinil isolado, sem tratar a via aérea"
+      ],
+      "correctIndex": 0,
+      "explanation": "(Psiquiatria · Medicina do sono) IAH entre 5 e 15 é apneia leve; o aparelho intraoral serve às formas leve e moderada e a quem não tolera o CPAP, junto com perda de peso e evitar álcool e sedativos à noite. O benzodiazepínico é justamente um dos sedativos a evitar na apneia."
+    },
+    {
+      "question": "Qual terapia modificadora de doença tem benefício demonstrado na forma primariamente progressiva da esclerose múltipla?",
+      "options": [
+        "Ocrelizumabe, anticorpo anti-CD20",
+        "Interferon beta, terapia de plataforma",
+        "Pulsos mensais de metilprednisolona",
+        "Natalizumabe, de alta eficácia"
+      ],
+      "correctIndex": 0,
+      "explanation": "(Neurologia · Esclerose múltipla) O ocrelizumabe é a terapia com benefício demonstrado na forma primariamente progressiva. Interferon e natalizumabe reduzem surtos na forma remitente-recorrente, e o pulso de corticoide trata surto — que essa forma, por definição, não tem."
+    },
+    {
+      "question": "Criança de 4 anos, em tratamento de otite média aguda, evolui com febre, dor e abaulamento atrás da orelha, que empurra o pavilhão auricular para a frente e para fora. Qual a principal hipótese?",
+      "options": [
+        "Mastoidite, por extensão às células mastóideas",
+        "Pericondrite, por infecção da cartilagem",
+        "Otite externa difusa, por infecção do conduto",
+        "Síndrome de Ramsay Hunt, por herpes-zóster ótico"
+      ],
+      "correctIndex": 0,
+      "explanation": "(Otorrino · Otoscopia) As células da mastoide são cavidades aéreas em continuidade com a orelha média, e a otite média pode se estender a elas: o abaulamento retroauricular que desloca o pavilhão é o sinal da mastoidite. A pericondrite acomete a área cartilaginosa do pavilhão e poupa o lóbulo."
+    },
+    {
+      "question": "Qual das condições abaixo NÃO produz defeito pupilar aferente relativo, mesmo com baixa visual intensa?",
+      "options": [
+        "Catarata densa, por ser opacidade de meios",
+        "Neurite óptica, por lesão do nervo óptico",
+        "Descolamento de retina extenso e macular",
+        "Neuropatia óptica unilateral por compressão"
+      ],
+      "correctIndex": 0,
+      "explanation": "(Oftalmo · Semiologia ocular) O defeito pupilar aferente relativo, pesquisado com a lanterna oscilante, aponta comprometimento da via aferente — nervo óptico ou retina extensa. Opacidade de meios, como a catarata, não o produz, mesmo quando a visão cai muito."
+    },
+    {
+      "question": "Uma metanálise reúne ensaios cujos resultados apontam em direções opostas, com heterogeneidade alta (I² de 80%). Qual domínio do GRADE fica comprometido?",
+      "options": [
+        "Consistência dos resultados entre os estudos",
+        "Precisão, pela largura do intervalo de confiança",
+        "Evidência direta, pela população diferente",
+        "Viés de publicação, pela omissão de negativos"
+      ],
+      "correctIndex": 0,
+      "explanation": "(Práticas · Análise crítica de artigos) A consistência avalia se os resultados se repetem entre estudos ou subgrupos; I² abaixo de 25% indica consistência, e resultados em direções opostas com I² alto a comprometem. Precisão diz respeito ao tamanho da amostra e à largura do intervalo de confiança."
+    },
+    {
+      "question": "Homem de 74 anos lê o jornal sem dificuldade, mas vem esbarrando em batentes de porta e não percebe pessoas que se aproximam pelos lados; caiu duas vezes no último ano. Qual doença ocular explica melhor esse padrão de quedas?",
+      "options": [
+        "Glaucoma avançado, com perda do campo visual periférico",
+        "DMRI, com escotoma central que apaga o que se olha",
+        "Catarata, com embaçamento global e ofuscamento",
+        "Presbiopia, com perda da acomodação para perto"
+      ],
+      "correctIndex": 0,
+      "explanation": "(Geriatria · Déficits sensoriais no idoso) O glaucoma apaga a periferia e poupa o centro: o paciente lê, mas não vê o obstáculo que vem do lado — e o risco de queda cresce com a gravidade, com chance quase 8 vezes maior no glaucoma avançado. A DMRI faz o oposto, apagando a visão central e dificultando a leitura."
+    },
+    {
+      "question": "Homem de 63 anos evolui, em quatro meses, de esquecimentos leves para demência grave, com abalos musculares súbitos e repetidos nos membros. Qual o diagnóstico mais provável?",
+      "options": [
+        "Doença de Creutzfeldt-Jakob, por príon",
+        "Doença de Alzheimer de início tardio",
+        "Demência frontotemporal comportamental",
+        "Doença de Huntington, por coreia"
+      ],
+      "correctIndex": 0,
+      "explanation": "(Psiquiatria · Neuropsiquiatria) Demência rapidamente progressiva, em meses, com mioclonias é o quadro da doença de Creutzfeldt-Jakob, e o EEG entra na investigação quando se suspeita de príon. O Alzheimer progride em anos, e o Huntington se apresenta com coreia e herança autossômica dominante."
+    },
+    {
+      "question": "Homem de 40 anos acorda sem conseguir fechar o olho esquerdo nem enrugar a testa à esquerda; o sulco nasolabial esquerdo está apagado e o sabor dos alimentos mudou. Onde está a lesão?",
+      "options": [
+        "Nervo facial esquerdo, paralisia periférica",
+        "Córtex motor direito, paralisia central",
+        "Nervo trigêmeo esquerdo, ramo oftálmico",
+        "Córtex motor esquerdo, paralisia central"
+      ],
+      "correctIndex": 0,
+      "explanation": "(Neurologia · Semiologia) A paralisia facial periférica compromete toda a hemiface do mesmo lado, inclusive a fronte, e pode alterar a gustação dos dois terços anteriores da língua. A central, supranuclear, poupa a fronte e atinge só a metade inferior da face contralateral."
+    },
+    {
+      "question": "Adulto com dor de ouvido há dois dias refere dor intensa ao toque do trago e à tração do pavilhão auricular. Onde está o acometimento?",
+      "options": [
+        "Na orelha externa e no conduto auditivo",
+        "Na orelha média, por efusão atrás do tímpano",
+        "Na orelha interna, por labirintite aguda",
+        "Na tuba auditiva, por disfunção tubária"
+      ],
+      "correctIndex": 0,
+      "explanation": "(Otorrino · Anátomo-fisiologia auditiva) A dor à palpação do trago aponta para acometimento do conduto e da orelha externa, e não da orelha média — região muito sensível, inervada pelo nervo auriculotemporal e pelo ramo auricular do vago. É um dado semiológico de separação, útil à beira do leito."
+    },
+    {
+      "question": "Mulher de 58 anos nota flashes de luz e, desde a manhã, uma sombra como uma cortina subindo no campo visual de um olho. Qual exame do fundo de olho é obrigatório?",
+      "options": [
+        "Oftalmoscopia indireta, que alcança a periferia",
+        "Oftalmoscopia direta, pelo aumento de 15 vezes",
+        "Tonometria de aplanação, para medir a pressão",
+        "Teste de Ishihara, para avaliar visão de cores"
+      ],
+      "correctIndex": 0,
+      "explanation": "(Oftalmo · Semiologia ocular) Baixa visual aguda com flashes e sombra em cortina sugere rotura ou descolamento de retina, e o mapeamento de retina por oftalmoscopia indireta é o método obrigatório, porque vê toda a retina até a periferia. A direta amplia bem o polo posterior, mas não chega à periferia."
+    },
+    {
+      "question": "Em um ensaio clínico randomizado, 25% dos pacientes abandonaram o estudo, e os autores analisaram apenas os que completaram o tratamento. Qual limitação metodológica isso representa?",
+      "options": [
+        "Seguimento incompleto, sem análise por intenção de tratar",
+        "Ausência de sigilo da alocação dos participantes",
+        "Relato seletivo, omitindo desfechos desfavoráveis",
+        "Ausência de mascaramento dos avaliadores do desfecho"
+      ],
+      "correctIndex": 0,
+      "explanation": "(Práticas · Análise crítica de artigos) Perder pacientes randomizados e analisar só quem completou é seguimento incompleto sem análise por intenção de tratar, uma das falhas clássicas dos ensaios de superioridade. O sigilo da alocação diz respeito a prever o grupo antes da inclusão, não ao que acontece depois dela."
+    },
+    {
+      "question": "Mulher de 77 anos nota, em poucas semanas, distorção das linhas retas e uma mancha no centro da visão do olho direito. O fundo de olho mostra neovascularização com líquido e sangue sob a mácula. Qual o diagnóstico e o tratamento indicado?",
+      "options": [
+        "DMRI úmida; anti-VEGF intravítreo",
+        "DMRI seca; vitaminas C e E, zinco e cobre",
+        "Glaucoma agudo; iridotomia a laser",
+        "Catarata; facectomia com lente intraocular"
+      ],
+      "correctIndex": 0,
+      "explanation": "(Geriatria · Déficits sensoriais no idoso) Vasos sob a mácula que vazam líquido ou sangue definem a forma úmida (exsudativa) da DMRI, tratada com anti-VEGF intravítreo. O complexo vitamínico é estratégia para retardar a forma seca, com drusas, e não trata a neovascularização."
+    },
+    {
+      "question": "Paciente com depressão grave e catatonia recebe lorazepam por vários dias, sem melhora. Evolui com febre, rigidez e instabilidade autonômica. Qual a conduta indicada?",
+      "options": [
+        "Eletroconvulsoterapia, escolha na catatonia refratária",
+        "Haloperidol intramuscular para controlar a agitação",
+        "Suspender o lorazepam e aguardar a resolução espontânea",
+        "Associar ISRS em dose alta e reavaliar em quatro semanas"
+      ],
+      "correctIndex": 0,
+      "explanation": "(Psiquiatria · Neuropsiquiatria) Catatonia sem resposta ao lorazepam e, sobretudo, a catatonia maligna, com febre, rigidez e disautonomia, têm indicação de eletroconvulsoterapia. Antipsicótico de alta potência nessa fase pode precipitar ou agravar o quadro maligno, que se sobrepõe à síndrome neuroléptica maligna."
+    },
+    {
+      "question": "Na lesão nuclear ou infranuclear do nervo hipoglosso direito, o que se observa à protrusão da língua?",
+      "options": [
+        "Desvio para a direita, com atrofia e fasciculações à direita",
+        "Desvio para a esquerda, com atrofia e fasciculações à direita",
+        "Desvio para a esquerda, sem atrofia e sem fasciculações",
+        "Língua centrada, com queda do palato do lado direito"
+      ],
+      "correctIndex": 0,
+      "explanation": "(Neurologia · Semiologia) À protrusão, a língua desvia para o lado do hipoglosso lesado, e a lesão nuclear ou infranuclear acrescenta atrofia e fasciculações na hemilíngua afetada. A elevação assimétrica do palato é sinal de lesão do vago, não do hipoglosso."
+    },
+    {
+      "question": "Na campimetria, a perda das duas metades temporais do campo visual (hemianopsia bitemporal) localiza a lesão em qual ponto da via visual?",
+      "options": [
+        "No quiasma óptico, onde cruzam as fibras nasais",
+        "No nervo óptico direito, antes do quiasma",
+        "No trato óptico esquerdo, após o quiasma",
+        "No córtex occipital, nas áreas 17 e 18"
+      ],
+      "correctIndex": 0,
+      "explanation": "(Oftalmo · Anatomia e fisiologia ocular II) As fibras nasais de cada retina, que enxergam o campo temporal, cruzam no quiasma; sua lesão produz hemianopsia bitemporal. Lesão pré-quiasmática dá perda monocular, e a retroquiasmática dá hemianopsia ou quadrantanopsia homônima contralateral."
+    },
+    {
+      "question": "Homem de 30 anos em surto psicótico, com risco de agressão, é internado em leito de hospital geral a pedido da mãe, sem o consentimento dele e sem ordem judicial. Pela Lei 10.216/2001, como se classifica essa internação e qual obrigação ela gera?",
+      "options": [
+        "Involuntária; comunicar ao Ministério Público em até 72 horas",
+        "Compulsória; pedir autorização do juiz em até 72 horas",
+        "Voluntária; registrar o termo de consentimento da mãe",
+        "Involuntária; dispensa qualquer comunicação externa"
+      ],
+      "correctIndex": 0,
+      "explanation": "(Psiquiatria · Fundamentos e história) Internação a pedido de terceiro, sem consentimento do paciente, é involuntária e deve ser comunicada ao Ministério Público em até 72 horas. A compulsória é a determinada pela Justiça, e a voluntária depende do consentimento do próprio paciente."
+    },
+    {
+      "question": "Na pesquisa do nível sensitivo de uma lesão medular, qual dermátomo corresponde à cicatriz umbilical?",
+      "options": [
+        "T10, o dermátomo do umbigo",
+        "T4, o dermátomo dos mamilos",
+        "L1, o dermátomo inguinal",
+        "C6, o dermátomo do polegar"
+      ],
+      "correctIndex": 0,
+      "explanation": "(Neurologia · Semiologia) O umbigo marca o dermátomo T10, e na lesão medular o nível sensitivo é o limite superior da perda. T4 corresponde à linha dos mamilos, L1 à região inguinal e C6 ao polegar."
+    }
+  ]
+}

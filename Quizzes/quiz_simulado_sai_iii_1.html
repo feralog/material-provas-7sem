@@ -1,0 +1,1415 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Simulado SAI III · 1</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;450;500;600&display=swap" rel="stylesheet">
+<style>
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0}
+  body{background:#f5f3ef;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+  button{font:inherit;color:inherit;font-family:'IBM Plex Sans',system-ui,sans-serif}
+  a{color:#2b57cc;text-decoration:none}
+  a:hover{color:#1e3f9c;text-decoration:underline}
+  @keyframes qFade{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+  @keyframes qDrawer{from{opacity:0;transform:translateY(-4px)}to{opacity:1;transform:none}}
+
+  /* hovers — no canvas eram style-hover, aqui viram CSS de verdade */
+  .h-dark:hover{background:#2b57cc!important;transform:translateY(-1px)}
+  .h-darkflat:hover{background:#2b57cc!important}
+  .h-line:hover{border-color:#121a2b!important}
+  .h-ink:hover{color:#121a2b!important}
+  .h-opt:not(.locked):hover{border-color:var(--hbd)!important;transform:translateY(-1px)}
+  .h-card:hover{border-color:#121a2b!important;transform:translateY(-2px)}
+
+  /* tipografia do resumo */
+  .rsm{font-size:16.5px;line-height:1.72;color:#2a3141;max-width:64ch}
+  .rsm h2{font-family:'Newsreader',Georgia,serif;font-size:27px;font-weight:500;letter-spacing:-.02em;line-height:1.2;margin:42px 0 14px;padding-top:20px;border-top:1px solid #e4e0d8;text-wrap:pretty}
+  .rsm h2:first-child{margin-top:0;padding-top:0;border-top:0}
+  .rsm h3{font-family:'Newsreader',Georgia,serif;font-size:20px;font-weight:600;letter-spacing:-.01em;margin:28px 0 10px;text-wrap:pretty}
+  .rsm h4{font-family:'IBM Plex Mono',monospace;font-size:11px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:#2b57cc;margin:24px 0 8px}
+  .rsm p{margin:0 0 15px;text-wrap:pretty}
+  .rsm ul,.rsm ol{margin:0 0 15px;padding-left:22px}
+  .rsm li{margin-bottom:7px;text-wrap:pretty}
+  .rsm li>ul,.rsm li>ol{margin:7px 0 0}
+  .rsm strong{font-weight:600;color:#121a2b}
+  .rsm em{font-style:italic}
+  .rsm code{font-family:'IBM Plex Mono',monospace;font-size:.88em;background:#efece5;border:1px solid #e4e0d8;border-radius:5px;padding:1px 5px}
+  .rsm hr{border:0;border-top:1px solid #e4e0d8;margin:32px 0}
+  .rsm blockquote{margin:0 0 18px;padding:15px 18px;background:#f7f6f2;border-left:2.5px solid #2b57cc;border-radius:0 12px 12px 0;font-size:15px;line-height:1.65;color:#39404f}
+  .rsm blockquote p:last-child{margin-bottom:0}
+  .rsm .tbl{overflow-x:auto;margin:0 0 20px;border:1px solid #e4e0d8;border-radius:12px;background:#fff}
+  .rsm table{border-collapse:collapse;width:100%;font-size:14px;line-height:1.5}
+  .rsm th{text-align:left;font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.09em;text-transform:uppercase;color:#8a8578;font-weight:600;padding:11px 14px;background:#faf9f6;border-bottom:1px solid #e4e0d8;white-space:nowrap}
+  .rsm td{padding:11px 14px;border-bottom:1px solid #efece5;vertical-align:top;text-wrap:pretty}
+  .rsm tr:last-child td{border-bottom:0}
+  .rsm .key{background:#f2f6fb;border:1px solid #d6e2f4;border-radius:12px;padding:16px 18px;margin:0 0 18px}
+  .rsm .key>*:last-child{margin-bottom:0}
+
+  /* figuras — no resumo e na questao */
+  .fig{margin:0 0 20px;background:#fff;border:1px solid #e4e0d8;border-radius:14px;overflow:hidden}
+  .fig img{display:block;width:100%;height:auto;cursor:zoom-in}
+  .fig figcaption{font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.06em;color:#8a8578;padding:9px 13px;border-top:1px solid #efece5;background:#faf9f6;text-wrap:pretty}
+  .qfig{margin:0 0 20px}
+
+  /* lightbox */
+  #lb{position:fixed;inset:0;z-index:90;background:rgba(18,26,43,.86);display:none;align-items:center;justify-content:center;padding:24px;cursor:zoom-out}
+  #lb.on{display:flex;animation:qFade .16s ease}
+  #lb img{max-width:100%;max-height:100%;border-radius:10px;box-shadow:0 24px 60px rgba(0,0,0,.5)}
+
+  @media(max-width:560px){
+    .rsm{font-size:16px}
+    .rsm h2{font-size:24px}
+    .home-grid{grid-template-columns:1fr!important}
+  }
+</style>
+</head>
+<body>
+
+<div style="min-height:100vh;background:#f5f3ef;color:#121a2b;font-family:'IBM Plex Sans',system-ui,sans-serif">
+  <header style="position:sticky;top:0;z-index:30;background:rgba(245,243,239,.94);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid #e4e0d8">
+    <div style="max-width:720px;margin:0 auto;padding:12px 16px 10px" id="hdr"></div>
+  </header>
+  <main style="max-width:720px;margin:0 auto;padding:0 16px 80px" id="stage"></main>
+</div>
+<div id="lb"><img alt=""></div>
+
+<script type="text/html" id="resumoSrc"><p>Faça o simulado antes de abrir esta página. Depois, use cada tabela para localizar os temas em que errou — a explicação de cada questão começa com a área e o tema — e volte ao material daquela aula. As tabelas dizem o que foi cobrado, não a resposta.</p>
+<div class="tbl"><table><thead><tr><th>Área</th><th>Questões</th><th>Casos clínicos</th></tr></thead><tbody><tr><td>Geriatria</td><td>10</td><td>8</td></tr><tr><td>Psiquiatria</td><td>11</td><td>7</td></tr><tr><td>Neurologia</td><td>11</td><td>9</td></tr><tr><td>Otorrinolaringologia</td><td>9</td><td>6</td></tr><tr><td>Oftalmologia</td><td>10</td><td>9</td></tr><tr><td>Práticas de emergência</td><td>9</td><td>5</td></tr><tr><td><strong>Total</strong></td><td><strong>60</strong></td><td><strong>44</strong></td></tr></tbody></table></div>
+<h2>Geriatria</h2>
+<div class="tbl"><table><thead><tr><th>Tema</th><th>O que foi cobrado</th></tr></thead><tbody><tr><td>Delirium</td><td>CAM: aplicar o algoritmo 1 + 2 + (3 ou 4) a um caso real</td></tr><tr><td>Delirium</td><td>Idosa confusa após iniciar difenidramina: primeira conduta</td></tr><tr><td>Delirium</td><td>Delirium hiperativo com risco à segurança: fármaco indicado</td></tr><tr><td>Polifarmácia</td><td>Fenitoína com nível 'terapêutico' e sinais de toxicidade: hipoalbuminemia</td></tr><tr><td>Polifarmácia</td><td>Descontrole pressórico após dipirona de horário: interação</td></tr><tr><td>Polifarmácia</td><td>Alternativa mais segura ao benzodiazepínico para insônia (PIM)</td></tr><tr><td>Quedas</td><td>Ponto de corte do Timed Up and Go</td></tr><tr><td>Quedas</td><td>Hipotensão ortostática pelo critério diastólico</td></tr><tr><td>Fragilidade e sarcopenia</td><td>Escala FRAIL: contar os itens de um caso</td></tr><tr><td>Fragilidade e sarcopenia</td><td>Sarcopenia provável: tratar sem esperar a DEXA</td></tr></tbody></table></div>
+<blockquote><p>No delirium, o diagnóstico é atenção + curso agudo e flutuante, não agitação — e o CAM exige 1 + 2 + (3 ou 4). Em polifarmácia, o sintoma novo do idoso pede primeiro a receita: nível 'terapêutico' de fenitoína com albumina baixa ainda intoxica.</p></blockquote>
+<h2>Psiquiatria</h2>
+<div class="tbl"><table><thead><tr><th>Tema</th><th>O que foi cobrado</th></tr></thead><tbody><tr><td>Transtorno depressivo</td><td>Remissão no 1º episódio: fase de continuação na mesma dose</td></tr><tr><td>Transtorno depressivo</td><td>Blues puerperal × depressão periparto</td></tr><tr><td>Transtorno depressivo</td><td>Escolha do antidepressivo com ideação suicida</td></tr><tr><td>Esquizofrenia e psicoses</td><td>Psicose só dentro dos episódios de humor</td></tr><tr><td>Esquizofrenia e psicoses</td><td>Síndrome serotoninérgica × síndrome neuroléptica maligna</td></tr><tr><td>Emergências psiquiátricas</td><td>Tranquilização rápida: paciente aceita via oral</td></tr><tr><td>Emergências psiquiátricas</td><td>M.I.N.I.: pensar em como se matar = alto risco</td></tr><tr><td>Emergências psiquiátricas</td><td>Etilista e soro glicosado: tiamina antes da glicose</td></tr><tr><td>TOC e TEPT</td><td>TOC grave (Y-BOCS ≥ 24): ISRS em dose alta + TCC</td></tr><tr><td>TOC e TEPT</td><td>Sintomas de TEPT há menos de 1 mês: reação aguda ao estresse</td></tr><tr><td>Exame psíquico</td><td>Pensamento prolixo × tangencial × arborizado</td></tr></tbody></table></div>
+<blockquote><p>A régua do tempo derruba: TEPT só depois de 1 mês, continuação do antidepressivo por 4 a 9 meses na mesma dose, e psicose restrita aos episódios de humor não é esquizoafetivo. No M.I.N.I., pensar em como se matar sozinho já é alto risco.</p></blockquote>
+<h2>Neurologia</h2>
+<div class="tbl"><table><thead><tr><th>Tema</th><th>O que foi cobrado</th></tr></thead><tbody><tr><td>AVC</td><td>Síndrome motora pura com lesão &lt; 15 mm na cápsula: lacunar</td></tr><tr><td>AVC</td><td>Cefaleia súbita com TC normal: exame do líquor</td></tr><tr><td>AVC</td><td>FA + déficit cortical súbito: AVC cardioembólico (TOAST)</td></tr><tr><td>Epilepsias</td><td>Epilepsia generalizada em mulher que quer engravidar: evitar valproato</td></tr><tr><td>Epilepsias</td><td>Primeira crise espontânea com investigação normal: não tratar</td></tr><tr><td>Epilepsias</td><td>Não recupera a consciência após estado de mal: EEG</td></tr><tr><td>Parkinsonismo</td><td>Parkinsonismo por metoclopramida: retirar a droga</td></tr><tr><td>Parkinsonismo</td><td>Parkinson acima dos 70 anos: levodopa como primeira opção</td></tr><tr><td>Neuropatias periféricas</td><td>Guillain-Barré com líquor normal no 3º dia: IgIV ou plasmaférese</td></tr><tr><td>Neuropatias periféricas</td><td>Lesão do fibular comum: pé caído, cabeça da fíbula</td></tr><tr><td>Neuropatias periféricas</td><td>III par no diabético com pupila poupada</td></tr></tbody></table></div>
+<blockquote><p>Exame normal não encerra a investigação: TC normal não afasta hemorragia subaracnóidea, líquor normal no 3º dia não afasta Guillain-Barré e o paciente que não acorda após o estado de mal pede EEG. Corticoide não é tratamento da forma aguda de Guillain-Barré.</p></blockquote>
+<h2>Otorrinolaringologia</h2>
+<div class="tbl"><table><thead><tr><th>Tema</th><th>O que foi cobrado</th></tr></thead><tbody><tr><td>Otites</td><td>Otite externa maligna no diabético: internar</td></tr><tr><td>Otites</td><td>OMA em maior de 2 anos sem gravidade: observar 48–72 h</td></tr><tr><td>Otites</td><td>Tratamento da síndrome de Ramsay Hunt</td></tr><tr><td>Otites</td><td>Otite média com efusão crônica com perda auditiva: tubo de ventilação</td></tr><tr><td>Rinites e rinossinusites</td><td>Rinite medicamentosa por nafazolina</td></tr><tr><td>Rinites e rinossinusites</td><td>Obstrução nasal da rinite alérgica: corticoide intranasal</td></tr><tr><td>Rinites e rinossinusites</td><td>Sequência das complicações orbitárias da rinossinusite</td></tr><tr><td>Disfonias</td><td>Rouquidão &gt; 15 dias em tabagista e etilista: ver a laringe</td></tr><tr><td>Disfonias</td><td>Criança com disfonia e estridor, lesões em cacho de uva: papiloma</td></tr></tbody></table></div>
+<blockquote><p>Saber quando NÃO tratar: OMA acima de 2 anos sem gravidade se observa 48–72 h, e a efusão só vai para tubo após 3 meses com repercussão. Diabético com otite externa arrastada e granulação é otite externa maligna até prova em contrário.</p></blockquote>
+<h2>Oftalmologia</h2>
+<div class="tbl"><table><thead><tr><th>Tema</th><th>O que foi cobrado</th></tr></thead><tbody><tr><td>Olho vermelho</td><td>Conjuntivite viral: lacrimejamento + linfonodo pré-auricular</td></tr><tr><td>Olho vermelho</td><td>Hiperemia ciliar + pupila pequena e irregular: uveíte anterior</td></tr><tr><td>Olho vermelho</td><td>Esclerite em artrite reumatoide: tratamento sistêmico</td></tr><tr><td>Glaucoma</td><td>Disco suspeito + degrau nasal: glaucoma de ângulo aberto</td></tr><tr><td>Glaucoma</td><td>Vômitos, cefaleia e olho vermelho em hipermetrope: medir a PIO</td></tr><tr><td>Urgências oftalmológicas</td><td>Hemorragias em um quadrante em hipertenso: oclusão de ramo venoso</td></tr><tr><td>Urgências oftalmológicas</td><td>Urgência × emergência: NOIA não arterítica</td></tr><tr><td>Urgências oftalmológicas</td><td>Trauma com metal: investigar corpo estranho intraocular</td></tr><tr><td>Ametropias</td><td>Miopia nova em diabético descompensado: adiar os óculos</td></tr><tr><td>Anatomia e fisiologia ocular</td><td>Fratura blow-out do assoalho da órbita</td></tr></tbody></table></div>
+<blockquote><p>A pupila e a dor separam os olhos vermelhos graves: miose irregular na uveíte, midríase média fixa no glaucoma agudo. Acuidade 20/20 não exclui glaucoma, e NOIA arterítica é emergência enquanto a não arterítica é urgência.</p></blockquote>
+<h2>Práticas de emergência</h2>
+<div class="tbl"><table><thead><tr><th>Tema</th><th>O que foi cobrado</th></tr></thead><tbody><tr><td>Arritmias</td><td>Mobitz II instável: marca-passo transcutâneo</td></tr><tr><td>Arritmias</td><td>TSV instável: cardioversão sincronizada 50–100 J</td></tr><tr><td>Arritmias</td><td>Bradicardia sinusal estável por betabloqueador: monitorar</td></tr><tr><td>Arritmias</td><td>QRS largo com pulso: por que não usar verapamil</td></tr><tr><td>Arritmias</td><td>FV sem pulso: RCP e desfibrilação</td></tr><tr><td>Arritmias</td><td>Marca-passo: espícula sem QRS = sem captura</td></tr><tr><td>Prescrição médica</td><td>Morfina + clonazepam: duas notificações separadas</td></tr><tr><td>Prescrição médica</td><td>Notificação azul: 30 dias, só no estado emissor</td></tr><tr><td>Prescrição médica</td><td>Partes da receita: o que é a inscrição</td></tr></tbody></table></div>
+<blockquote><p>Estável ou instável decide tudo: instável recebe eletricidade (marca-passo, cardioversão sincronizada), sem pulso recebe desfibrilação, estável recebe tempo e droga. Atropina falha abaixo do nó (Mobitz II, BAVT), e notificação azul vale só no estado emissor.</p></blockquote></script>
+<!-- Tutor local: define window.DEEPSEEK_KEY. O arquivo NAO vai para o repositorio,
+     entao online ele da 404 e o chat simplesmente nao aparece. -->
+<script src="../deepseek_key.js"></script>
+<script>
+/* ─────────────────────────────────────────────────────────────────────────────
+   CONTRATO DE DADOS — para adaptar a outro tema, troque apenas QUIZ e o resumo.
+   Cada item: { question, options[2..6], correctIndex, explanation }
+   ──────────────────────────────────────────────────────────────────────────── */
+var TITLE      = "Simulado SAI III · 1";
+var EYEBROW    = "Simulado · Saúde do Adulto e do Idoso III";
+var DISCIPLINA = "Simulados";   // pasta de origem (PED, GO...) — usada pelo índice
+var SUBTITLE = "Sessenta questões inéditas para medir o que você sabe";
+var INTRO    = "60 questões objetivas misturando Geriatria, Psiquiatria, Neurologia, Otorrino, Oftalmo e Práticas de emergência, quase todas em caso clínico. Tempo sugerido: 90 minutos, sem consulta. A explicação de cada questão começa pela área e pelo tema.";
+
+var QUIZ = [
+  {
+    "question": "Homem de 81 anos, internado há dois dias por pneumonia, tem episódios de confusão à noite, segundo a filha. Na avaliação pelo CAM pela manhã, há início agudo com curso flutuante e ele erra repetidamente a tarefa de atenção, mas está alerta e responde às perguntas de modo lógico e organizado. Como interpretar o CAM nesse momento?",
+    "options": [
+      "Negativo: falta pensamento desorganizado ou consciência alterada",
+      "Positivo: início agudo e desatenção bastam para o diagnóstico",
+      "Positivo: a flutuação isolada já confirma o quadro de delirium",
+      "Inconclusivo: o CAM só pode ser aplicado com RASS de -4 ou -5"
+    ],
+    "correctIndex": 0,
+    "explanation": "(Geriatria · Delirium) Pelo CAM, delirium = 1 + 2 + (3 ou 4): início agudo com curso flutuante e desatenção são obrigatórios, mas é preciso somar pensamento desorganizado OU nível alterado de consciência. Sem nenhum dos dois, o algoritmo é negativo naquele momento — e, como o quadro flutua, deve ser reaplicado. RASS de -4 ou -5 é justamente quando o CAM não pode ser aplicado."
+  },
+  {
+    "question": "Homem de 69 anos, hipertenso e diabético, acorda com fraqueza proporcionada de face, braço e perna à direita, sem afasia, sem alteração visual ou sensitiva e com consciência preservada. A ressonância mostra infarto de 11 mm na cápsula interna esquerda. Qual o subtipo etiológico mais provável?",
+    "options": [
+      "Lacunar, por doença de pequenas artérias",
+      "Cardioembólico, por fonte cardíaca oculta",
+      "Aterotrombótico de grande artéria cortical",
+      "Indeterminado, por falta de lesão cortical"
+    ],
+    "correctIndex": 0,
+    "explanation": "(Neurologia · AVC) Lesão menor que 15 mm em território de perfurante (cápsula interna), sem comprometimento cortical, com síndrome motora pura proporcionada em hipertenso, define o AVC lacunar (doença de pequenas artérias). Afasia, alteração de campo visual e déficit desproporcionado apontariam para lesão cortical, típica da embolia cardíaca ou da aterosclerose de grandes artérias."
+  },
+  {
+    "question": "Mulher de 38 anos, no primeiro episódio depressivo maior, atingiu remissão completa após 10 semanas de sertralina 100 mg/dia. Sente-se bem e pergunta se já pode parar o remédio. Qual a orientação?",
+    "options": [
+      "Manter 100 mg por mais 4 a 9 meses para evitar recaída",
+      "Reduzir para 50 mg e manter por mais 4 a 9 meses",
+      "Suspender agora, pois a remissão já foi alcançada",
+      "Manter 100 mg por toda a vida, pelo risco de recorrência"
+    ],
+    "correctIndex": 0,
+    "explanation": "(Psiquiatria · Transtorno depressivo) Após a remissão vem a fase de continuação, de 4 a 9 meses, na MESMA dose que produziu a remissão, para evitar a recaída de um episódio ainda biologicamente ativo. Manutenção por anos fica para quem tem três ou mais episódios, tentativa de suicídio, psicose, episódios graves ou história familiar carregada."
+  },
+  {
+    "question": "Técnica de enfermagem de 30 anos tem olhos vermelhos há três dias, começando no direito e passando ao esquerdo, com lacrimejamento aquoso abundante, sensação de areia e linfonodo pré-auricular palpável. Visão normal, córnea clara e sem dor importante. Qual a conduta?",
+    "options": [
+      "Conjuntivite viral: lubrificantes e higiene",
+      "Conjuntivite bacteriana: colírio antibiótico",
+      "Conjuntivite alérgica: anti-histamínico tópico",
+      "Uveíte anterior: colírio de corticoide e retorno"
+    ],
+    "correctIndex": 0,
+    "explanation": "(Oftalmo · Olho vermelho) Lacrimejamento aquoso com linfonodo pré-auricular aponta vírus (adenovírus), e o tratamento é com lubrificantes e medidas de higiene, pela alta transmissibilidade. Secreção purulenta abundante apontaria bactéria e prurido apontaria alergia; corticoide sem diagnóstico pode agravar infecções."
+  },
+  {
+    "question": "Diabético de 71 anos tem otalgia intensa há três semanas, desproporcional ao exame, com otorreia purulenta e tecido de granulação no meato acústico externo. Hoje surgiu paralisia facial periférica do mesmo lado. Qual a conduta?",
+    "options": [
+      "Internar para antibiótico endovenoso e debridamento",
+      "Ciprofloxacino tópico com retorno em uma semana",
+      "Prednisolona e antiviral por via oral por sete dias",
+      "Amoxicilina oral por dez dias com analgesia simples"
+    ],
+    "correctIndex": 0,
+    "explanation": "(Otorrino · Otites) Otite externa em diabético com dor desproporcional, granulação no conduto e paralisia de par craniano é otite externa maligna (necrotizante) por Pseudomonas, com osteomielite da base do crânio à tomografia. É emergência — antibiótico endovenoso, debridamento e cuidados intensivos —, com mortalidade de 20 a 25%; corticoide com antiviral seria a conduta da síndrome de Ramsay Hunt."
+  },
+  {
+    "question": "Homem de 74 anos tem FC de 38 bpm, PA 78/46 mmHg e está sonolento. O ECG mostra PR constante com ondas P bloqueadas de repente, sem aviso, e QRS de escape largo. Qual a conduta prioritária?",
+    "options": [
+      "Marca-passo transcutâneo, sem insistir na atropina",
+      "Atropina 1 mg a cada 3 minutos até reverter",
+      "Adrenalina 1 mg em bolus e reavaliar o pulso",
+      "Observar, pois o bloqueio costuma ser benigno"
+    ],
+    "correctIndex": 0,
+    "explanation": "(Práticas · Arritmias) PR fixo com bloqueio súbito é Mobitz II, bloqueio infranodal de alto grau; com instabilidade (hipotensão, sonolência), a conduta é marca-passo transcutâneo — a atropina age no nó e tende a falhar abaixo dele. A atropina tem dose máxima de 3 mg, e adrenalina 1 mg em bolus é dose de PCR; na bradicardia com pulso ela vai em infusão de 2 a 10 mcg/min."
+  },
+  {
+    "question": "Mulher de 79 anos, hipertensa e com déficit auditivo, começou a tomar difenidramina para dormir há quatro dias. A família a traz por sonolência diurna, desatenção e confusão que pioram à noite, iniciadas há três dias. Exame neurológico sem sinais focais e sem história de queda. Qual a conduta inicial mais adequada?",
+    "options": [
+      "Suspender a difenidramina e buscar outras causas associadas",
+      "Pedir tomografia de crânio antes de qualquer outra medida",
+      "Iniciar haloperidol à noite para regularizar o ciclo de sono",
+      "Aplicar o MEEM para estadiar uma provável demência inicial"
+    ],
+    "correctIndex": 0,
+    "explanation": "(Geriatria · Delirium) Quadro agudo e flutuante com desatenção é delirium, e o anti-histamínico de 1ª geração, anticolinérgico, é precipitante clássico: retirá-lo e procurar causas concomitantes (infecção, eletrólitos, retenção, dor) trata a origem. A neuroimagem é dirigida — sinal focal, trauma ou causa não encontrada — e o MEEM não distingue delirium de demência num paciente desatento."
+  },
+  {
+    "question": "Mulher de 44 anos apresenta cefaleia súbita e intensa, 'a pior da vida', iniciada durante esforço físico, sem trauma, com vômitos. Está alerta e sem déficit focal. A tomografia de crânio sem contraste, feita 10 horas depois, é normal. Qual o próximo passo?",
+    "options": [
+      "Exame do líquor para procurar sangue",
+      "Alta com analgésico e retorno se piorar",
+      "Ressonância eletiva em regime ambulatorial",
+      "Iniciar heparina pela suspeita de trombose"
+    ],
+    "correctIndex": 0,
+    "explanation": "(Neurologia · AVC) Cefaleia abrupta e não traumática é hemorragia subaracnóidea até prova em contrário. A tomografia pode falhar na hemorragia meníngea pura (só identifica sangue com hematócrito no líquor ≥ 16%), enquanto o líquor a olho nu o detecta a partir de 1% — por isso TC normal não encerra a investigação; confirmado o sangramento, a angiografia estuda o aneurisma."
+  },
+  {
+    "question": "Puérpera de 26 anos, no 4º dia após o parto, chora com facilidade e alterna irritação e alegria ao longo do dia. Amamenta e cuida bem do bebê, dorme quando ele dorme e não tem ideação de morte. Qual a conduta?",
+    "options": [
+      "Tranquilizar e acompanhar: o quadro remite em até duas semanas",
+      "Iniciar ISRS, pois se trata de depressão com início no periparto",
+      "Internar, pelo risco de psicose puerperal com início precoce",
+      "Iniciar estabilizador do humor pela labilidade emocional"
+    ],
+    "correctIndex": 0,
+    "explanation": "(Psiquiatria · Transtorno depressivo) É o blues puerperal: começa nos primeiros dias após o parto, cursa com labilidade e choro fácil, não compromete o cuidado com o bebê e se resolve sozinho em até duas semanas. A depressão periparto é mais duradoura, incapacitante e interfere no vínculo — o acompanhamento serve para detectar a persistência dos sintomas."
+  },
+  {
+    "question": "Homem de 35 anos tem dor ocular moderada, fotofobia e visão levemente turva no olho direito há dois dias. A hiperemia se concentra ao redor do limbo, sem secreção; a pupila direita está pequena e irregular, com reflexo fotomotor fraco. Qual o diagnóstico mais provável?",
+    "options": [
+      "Uveíte anterior aguda não granulomatosa",
+      "Crise aguda de glaucoma de ângulo fechado",
+      "Conjuntivite bacteriana aguda unilateral",
+      "Episclerite nodular simples e autolimitada"
+    ],
+    "correctIndex": 0,
+    "explanation": "(Oftalmo · Olho vermelho) Hiperemia ciliar (pericorneana), dor, fotofobia, ausência de secreção e pupila pequena e irregular (sinéquias) com reflexo fraco caracterizam a uveíte anterior; o início agudo com dor marcada favorece a forma não granulomatosa. No glaucoma agudo a pupila fica em midríase média fixa, a córnea embaça e a pressão sobe."
+  },
+  {
+    "question": "Criança de 3 anos, previamente hígida, tem otalgia leve há 24 horas e febre de 38,2 °C. A otoscopia mostra abaulamento e hiperemia da membrana timpânica direita, sem otorreia. Não usou antibiótico recentemente. Qual a conduta?",
+    "options": [
+      "Analgesia e observação por 48 a 72 horas",
+      "Amoxicilina oral por dez dias de imediato",
+      "Amoxicilina com clavulanato de imediato",
+      "Ceftriaxona intramuscular em dose única"
+    ],
+    "correctIndex": 0,
+    "explanation": "(Otorrino · Otites) Com 2 anos ou mais, sem otorreia e sem sinais de gravidade (otalgia intensa ou acima de 48 h, febre ≥ 39 °C, toxemia), a otite média aguda, uni ou bilateral, permite observar 48 a 72 horas com analgesia. Se for preciso tratar, a primeira escolha é amoxicilina; o clavulanato entra com uso de amoxicilina nos últimos 30 dias, conjuntivite purulenta ou recorrência sem resposta."
+  },
+  {
+    "question": "Mulher de 40 anos tem taquicardia regular de QRS estreito a 200 bpm, sem P visível, com dor torácica, PA 78/50 mmHg e extremidades frias. Tem pulso. Qual a conduta?",
+    "options": [
+      "Cardioversão elétrica sincronizada, 50 a 100 J",
+      "Manobra de Valsalva modificada e reavaliação",
+      "Adenosina 6 mg em bolus, seguida de 12 mg",
+      "Desfibrilação não sincronizada com 200 J"
+    ],
+    "correctIndex": 0,
+    "explanation": "(Práticas · Arritmias) Taquicardia com pulso e critério de instabilidade (hipotensão, dor torácica, sinais de choque) recebe terapia elétrica: cardioversão sincronizada pelo protocolo OSASCO, com 50 a 100 J na TSV. Manobra vagal e adenosina são para a TSV estável, e o choque não sincronizado é para ritmos sem pulso e para a TV polimórfica instável."
+  },
+  {
+    "question": "Idosa de 84 anos, com demência leve, está no 2º dia pós-operatório de fratura de fêmur, em delirium hiperativo: arrancou o acesso venoso, tenta sair do leito e agride a equipe. Reorientação, presença da filha e retirada de dispositivos não bastaram, e a causa de base já está sendo tratada. Qual a conduta farmacológica?",
+    "options": [
+      "Haloperidol em dose baixa, pelo menor tempo possível",
+      "Lorazepam em doses repetidas até sedação profunda",
+      "Diazepam em dose fixa diária como sedação de manutenção",
+      "Prometazina noturna, aproveitando o efeito sedativo"
+    ],
+    "correctIndex": 0,
+    "explanation": "(Geriatria · Delirium) Antipsicótico é reservado ao delirium hiperativo com risco imediato à segurança, depois das medidas não farmacológicas, e o haloperidol é o representante clássico, na menor dose eficaz e pelo menor tempo. Benzodiazepínico precipita e prolonga o delirium (a exceção é a abstinência de álcool ou sedativos), e a prometazina, anti-histamínica e anticolinérgica, piora o quadro."
+  },
+  {
+    "question": "Mulher de 74 anos, com fibrilação atrial sem anticoagulação, apresenta de forma súbita afasia e hemiparesia direita de predomínio braquiofacial, com déficit máximo já no início. A tomografia não mostra sangramento. Pela classificação TOAST, qual o mecanismo mais provável?",
+    "options": [
+      "Cardioembólico, com fonte na fibrilação atrial",
+      "Causa pouco frequente, como dissecção arterial",
+      "Doença de pequenas artérias da cápsula interna",
+      "Aterosclerose de grandes artérias vertebrais"
+    ],
+    "correctIndex": 0,
+    "explanation": "(Neurologia · AVC) Início súbito com déficit máximo, quadro cortical (afasia, predomínio braquiofacial) no território da cerebral média e fibrilação atrial apontam para embolia cardíaca. A afasia afasta lacuna, que não compromete o córtex, e o território vertebrobasilar não explicaria afasia com hemiparesia braquiofacial; o ECG, obrigatório em todo AVC isquêmico, é o que flagra a FA."
+  },
+  {
+    "question": "Homem de 32 anos, com episódio depressivo moderado, refere pensamentos de que seria melhor morrer, sem plano. Mora com a esposa, que vai acompanhá-lo de perto. Qual antidepressivo é a escolha inicial mais adequada?",
+    "options": [
+      "Sertralina, pela segurança em caso de superdosagem",
+      "Amitriptilina, pela maior eficácia em casos graves",
+      "Tranilcipromina, por agir mais rápido na ideação",
+      "Imipramina, pelo efeito sedativo sobre a ansiedade"
+    ],
+    "correctIndex": 0,
+    "explanation": "(Psiquiatria · Transtorno depressivo) As classes têm eficácia comparável; o ISRS é a primeira escolha pela tolerabilidade e, sobretudo, pela baixa letalidade em superdosagem — o que pesa em quem tem ideação suicida. Tricíclicos (amitriptilina, imipramina) são cardiotóxicos e letais em overdose, e o IMAO fica para depressão atípica ou refratária. Nas primeiras semanas o seguimento deve ser próximo, porque a energia volta antes do humor."
+  },
+  {
+    "question": "Mulher de 56 anos com artrite reumatoide tem olho vermelho com dor intensa e profunda, que a acorda à noite. O exame mostra congestão episcleral profunda com área de afinamento escleral. Qual a conduta?",
+    "options": [
+      "Esclerite: AINH e corticoide por via oral",
+      "Episclerite: apenas lágrima artificial",
+      "Conjuntivite: colírio antibiótico tópico",
+      "Hiposfagma: avaliação da coagulação"
+    ],
+    "correctIndex": 0,
+    "explanation": "(Oftalmo · Olho vermelho) Hiperemia com dor intensa e afinamento escleral, em mulher na 5ª–6ª década com doença autoimune, é esclerite — que exige tratamento sistêmico com AINH e corticoide oral. A episclerite tem só leve desconforto, sem afinamento, e é autolimitada em 1 a 2 semanas."
+  },
+  {
+    "question": "Qual o tratamento da síndrome de Ramsay Hunt (herpes-zóster ótico com paralisia facial periférica)?",
+    "options": [
+      "Prednisolona, antiviral oral e proteção do olho",
+      "Antibiótico tópico e analgesia, sem corticoide",
+      "Antiviral oral isolado, evitando o corticoide",
+      "Drenagem do pavilhão e curativo compressivo"
+    ],
+    "correctIndex": 0,
+    "explanation": "(Otorrino · Otites) A síndrome de Ramsay Hunt é a reativação do varicela-zóster no gânglio geniculado: vesículas no pavilhão, otalgia e paralisia facial periférica. O tratamento tem três frentes: proteger o olho contra ceratite de exposição, corticoide oral (prednisolona 60 mg/dia por 7 dias) e antiviral por 7 dias. Drenagem com curativo compressivo é a conduta do oto-hematoma."
+  },
+  {
+    "question": "Homem de 70 anos, em uso de atenolol, tem FC de 46 bpm em ritmo sinusal num exame de rotina. Está assintomático, com PA 128/76 mmHg, lúcido e sem dispneia. Qual a conduta?",
+    "options": [
+      "Monitorar e rever a dose do betabloqueador",
+      "Atropina 1 mg EV em bolus imediatamente",
+      "Marca-passo transcutâneo de forma profilática",
+      "Dopamina em infusão contínua de 5 mcg/kg/min"
+    ],
+    "correctIndex": 0,
+    "explanation": "(Práticas · Arritmias) Bradicardia só exige tratamento imediato quando há FC abaixo de 50 bpm COM critérios de instabilidade. Sem eles, monitora-se e procura-se a causa — betabloqueador, bloqueador de canal de cálcio, digital, hipercalemia, hipotireoidismo, infarto inferior."
+  },
+  {
+    "question": "Idosa de 83 anos, desnutrida (albumina de 2,3 g/dL), usa fenitoína há anos. Passou a apresentar nistagmo, ataxia e sonolência, mas o nível sérico total de fenitoína veio dentro da faixa terapêutica. Qual a explicação mais provável?",
+    "options": [
+      "Fração livre aumentada pela queda da albumina",
+      "Nível subterapêutico por indução enzimática",
+      "Crises não convulsivas por dose insuficiente",
+      "Efeito de retirada por uso irregular da droga"
+    ],
+    "correctIndex": 0,
+    "explanation": "(Geriatria · Polifarmácia) Só a fração livre do fármaco é ativa; com menos albumina, sobra mais fenitoína livre e o paciente se intoxica com um nível total classificado como terapêutico. Nistagmo, ataxia e sonolência são sinais de toxicidade, não de dose insuficiente — aumentar a dose seria o erro."
+  },
+  {
+    "question": "Mulher de 23 anos, com epilepsia mioclônica juvenil, planeja engravidar no próximo ano. Hoje está sem tratamento. Qual a melhor escolha de antiepiléptico?",
+    "options": [
+      "Levetiracetam ou lamotrigina, com ácido fólico",
+      "Valproato, por ser o mais eficaz nas mioclonias",
+      "Carbamazepina, por ser a mais segura na gestação",
+      "Fenitoína, pela comodidade de duas tomadas ao dia"
+    ],
+    "correctIndex": 0,
+    "explanation": "(Neurologia · Epilepsias) O valproato é eficaz na mioclônica juvenil, mas deve ser evitado em mulheres em idade fértil pelo risco de defeitos do tubo neural e de prejuízo cognitivo no feto; lamotrigina e levetiracetam são preferidos, com ácido fólico. Carbamazepina e fenitoína podem agravar mioclonias e ausências e não se usam nas epilepsias generalizadas genéticas."
+  },
+  {
+    "question": "Quando sintomas psicóticos ocorrem exclusivamente durante os episódios de humor e desaparecem por completo entre eles, qual é o diagnóstico?",
+    "options": [
+      "Transtorno depressivo com características psicóticas",
+      "Transtorno esquizoafetivo, tipo depressivo",
+      "Esquizofrenia com sintomas depressivos associados",
+      "Transtorno delirante do tipo persecutório crônico"
+    ],
+    "correctIndex": 0,
+    "explanation": "(Psiquiatria · Esquizofrenia) Psicose que ocorre SÓ dentro dos episódios de humor é transtorno do humor com sintomas psicóticos — na depressão, tipicamente delírios congruentes de ruína e culpa. O esquizoafetivo exige pelo menos duas semanas de psicose sem episódio de humor, e a esquizofrenia exige sintomas psicóticos fora dos episódios."
+  },
+  {
+    "question": "Homem negro de 61 anos, assintomático, faz exame de rotina: acuidade visual 20/20 nos dois olhos, PIO de 25 mmHg no direito e 18 mmHg no esquerdo, escavação/disco de 0,7 no direito e 0,4 no esquerdo, e campo visual com degrau nasal no olho direito. Qual o diagnóstico?",
+    "options": [
+      "Glaucoma primário de ângulo aberto no olho direito",
+      "Hipertensão ocular, pois a acuidade visual é normal",
+      "Escavação fisiológica, sem significado patológico",
+      "Glaucoma agudo de ângulo fechado em fase inicial"
+    ],
+    "correctIndex": 0,
+    "explanation": "(Oftalmo · Glaucoma) Escavação acima de 0,5 com assimetria maior que 0,2 é disco suspeito, e campo visual alterado — o degrau nasal é o defeito mais precoce — confirma glaucoma; no negro, o risco do ângulo aberto é cerca de quatro vezes maior. Hipertensão ocular exige disco e campo normais, e acuidade normal não exclui glaucoma: a visão central é a última a cair."
+  },
+  {
+    "question": "Menino de 5 anos tem hipoacusia bilateral há quatro meses, sem dor nem febre, e a professora relata dificuldade escolar. A otoscopia mostra membranas sem brilho com nível líquido, a audiometria indica perda condutiva bilateral e a timpanometria é tipo B. Qual a conduta?",
+    "options": [
+      "Miringotomia com tubo de ventilação",
+      "Amoxicilina oral por quatorze dias",
+      "Corticoide oral e anti-histamínico",
+      "Nova observação por mais seis meses"
+    ],
+    "correctIndex": 0,
+    "explanation": "(Otorrino · Otites) Otite média com efusão crônica (3 meses ou mais), bilateral, com perda auditiva e repercussão escolar tem indicação cirúrgica: miringotomia com tubo de ventilação, após avaliação audiológica. Antibiótico, corticoide e anti-histamínico não se usam de rotina, e o período de observação de 3 meses já foi cumprido."
+  },
+  {
+    "question": "Diante de taquicardia regular de QRS largo com pulso, por que não se deve usar verapamil?",
+    "options": [
+      "Pode ser TV, e o verapamil pode precipitar colapso",
+      "O verapamil só age em ritmos irregulares de QRS largo",
+      "O verapamil é reservado à bradicardia com instabilidade",
+      "O verapamil alonga o QT e causa torsades de imediato"
+    ],
+    "correctIndex": 0,
+    "explanation": "(Práticas · Arritmias) Taquicardia de QRS largo é TV até prova em contrário; tratá-la como supraventricular com verapamil pode precipitar colapso hemodinâmico. Na TV monomórfica estável o antiarrítmico é a amiodarona 150 mg em 10 minutos (depois 1 mg/min por 6 h), e na instável, cardioversão sincronizada."
+  },
+  {
+    "question": "Homem de 76 anos, hipertenso bem controlado com losartana e hidroclorotiazida, passou a tomar dipirona de horário por lombalgia há três semanas. Desde então a pressão está elevada em medidas repetidas no consultório e em casa. Qual a explicação mais provável?",
+    "options": [
+      "Interação: a dipirona reduz o efeito anti-hipertensivo",
+      "Interação: a dipirona potencializa a hidroclorotiazida",
+      "Hipertensão do avental branco desencadeada pela dor",
+      "Resistência à losartana pelo envelhecimento renal"
+    ],
+    "correctIndex": 0,
+    "explanation": "(Geriatria · Polifarmácia) Dipirona associada a losartana, diurético ou propranolol diminui o efeito anti-hipertensivo. O descontrole novo, com relação temporal com o fármaco e medidas domiciliares também altas, pede revisão da receita antes de acrescentar outro anti-hipertensivo — que daria início a uma cascata de prescrições."
+  },
+  {
+    "question": "Homem de 30 anos teve a primeira crise tônico-clônica generalizada da vida, sem febre, álcool, droga ou privação de sono. Exame neurológico normal, EEG em vigília e sono normal e ressonância normal. Qual a conduta?",
+    "options": [
+      "Não iniciar antiepiléptico; orientar e acompanhar",
+      "Iniciar valproato e manter por pelo menos dois anos",
+      "Iniciar fenitoína e manter por pelo menos um ano",
+      "Iniciar clonazepam contínuo como profilaxia"
+    ],
+    "correctIndex": 0,
+    "explanation": "(Neurologia · Epilepsias) Após uma primeira crise tônico-clônica espontânea, 20 a 70% nunca terão outra, e em geral não se trata; após a segunda crise espontânea a recorrência passa de 70% e o tratamento se impõe. Déficit focal, lesão cerebral ou atividade epileptiforme no EEG aumentariam o risco — todos ausentes aqui. Benzodiazepínico não serve para uso crônico, pela tolerância."
+  },
+  {
+    "question": "Qual conjunto de achados diferencia a síndrome serotoninérgica da síndrome neuroléptica maligna?",
+    "options": [
+      "Instalação em horas, com clônus e hiperreflexia",
+      "Instalação em dias, com rigidez em cano de chumbo",
+      "Febre alta com instabilidade autonômica marcada",
+      "CPK muito elevada com rebaixamento da consciência"
+    ],
+    "correctIndex": 0,
+    "explanation": "(Psiquiatria · Esquizofrenia) A síndrome serotoninérgica vem de serotoninérgicos e se instala em horas, com clônus e hiperreflexia. A neuroléptica maligna vem de antagonista dopaminérgico, instala-se em dias, com rigidez em cano de chumbo e CPK muito elevada; febre e disautonomia aparecem nas duas e não discriminam."
+  },
+  {
+    "question": "Mulher de 67 anos, hipermetrope, chega ao pronto-socorro após sair do cinema com cefaleia frontal intensa, náuseas e vômitos. O olho direito está vermelho, com córnea embaçada e pupila em midríase média que não reage à luz. Qual o passo seguinte?",
+    "options": [
+      "Medir a pressão intraocular e tratar a crise",
+      "Tomografia de crânio para afastar hemorragia",
+      "Dilatar a pupila para examinar o fundo de olho",
+      "Colírio antibiótico para conjuntivite aguda"
+    ],
+    "correctIndex": 0,
+    "explanation": "(Oftalmo · Glaucoma) Olho vermelho com dor, náuseas, córnea embaçada e pupila em midríase média fixa, em hipermetrope após a penumbra do cinema, é crise aguda de ângulo fechado: mede-se a pressão e trata-se como emergência, com iridotomia depois da crise. Dilatar a pupila agrava o fechamento do ângulo, e vômitos com cefaleia costumam desviar o raciocínio para causas neurológicas ou abdominais."
+  },
+  {
+    "question": "Homem de 35 anos usa nafazolina nasal várias vezes ao dia há oito meses; diz que 'só respira com a gotinha' e que o alívio dura cada vez menos. A rinoscopia mostra mucosa congesta. Qual a conduta?",
+    "options": [
+      "Suspender a nafazolina e usar corticoide tópico nasal",
+      "Trocar a nafazolina por oximetazolina de longa ação",
+      "Manter a nafazolina e associar anti-histamínico oral",
+      "Indicar turbinectomia pela hipertrofia das conchas"
+    ],
+    "correctIndex": 0,
+    "explanation": "(Otorrino · Rinites) É rinite medicamentosa: o uso crônico de descongestionante tópico produz congestão de rebote e dependência. A saída é suspender o vasoconstritor tópico e cobrir o rebote com corticoide tópico nasal; trocar por outro vasoconstritor, como a oximetazolina, mantém o problema."
+  },
+  {
+    "question": "Paciente de 58 anos é encontrado irresponsivo, sem respiração normal e sem pulso; o monitor mostra fibrilação ventricular. Qual a conduta imediata?",
+    "options": [
+      "RCP e desfibrilação com 200 J bifásico",
+      "Cardioversão sincronizada com 100 J",
+      "Amiodarona 150 mg EV em 10 minutos",
+      "Atropina 1 mg EV e reavaliar o ritmo"
+    ],
+    "correctIndex": 0,
+    "explanation": "(Práticas · Arritmias) Sem pulso não se trata arritmia com pulso, e sim PCR: RCP e desfibrilação no ritmo chocável (FV ou TV sem pulso), com 200 J bifásico ou 360 J monofásico, sem sincronismo. Cardioversão sincronizada é para taquicardias com pulso, e amiodarona 150 mg em 10 minutos é a dose da TV estável — na PCR são 300 mg."
+  },
+  {
+    "question": "Entre as trocas recomendadas para reduzir medicamentos potencialmente inapropriados no idoso, qual é a adequada para a insônia, quando um fármaco é realmente necessário?",
+    "options": [
+      "Benzodiazepínico por trazodona",
+      "Benzodiazepínico por amitriptilina",
+      "Benzodiazepínico por difenidramina",
+      "Benzodiazepínico por prometazina"
+    ],
+    "correctIndex": 0,
+    "explanation": "(Geriatria · Polifarmácia) Trocar benzodiazepínico por trazodona para insônia evita a sonolência diurna e é a alternativa mais segura entre os PIM. Amitriptilina, difenidramina e prometazina têm carga anticolinérgica e estão entre os fármacos a evitar no idoso pelos Critérios de Beers — e as medidas não farmacológicas vêm antes de qualquer hipnótico."
+  },
+  {
+    "question": "Homem de 58 anos recebeu diazepam e fenitoína por estado de mal tônico-clônico. Os abalos cessaram há 40 minutos, mas ele continua sem abrir os olhos e sem responder, com sinais vitais estáveis. Qual a conduta mais importante agora?",
+    "options": [
+      "EEG para afastar estado de mal não convulsivo",
+      "Aguardar o pós-ictal por 24 horas sem exames",
+      "Punção lombar antes de qualquer outro exame",
+      "Suspender a fenitoína pela sedação excessiva"
+    ],
+    "correctIndex": 0,
+    "explanation": "(Neurologia · Epilepsias) O paciente que não recupera a consciência depois da crise deve levantar a suspeita de estado de mal não convulsivo, que só o EEG confirma. Atribuir tudo a um pós-ictal prolongado atrasa o tratamento de uma crise que continua, com risco de dano neuronal a partir de 30 minutos."
+  },
+  {
+    "question": "Homem de 27 anos com esquizofrenia chega agitado e ameaçador, mas, após abordagem verbal, aceita conversar e concorda em tomar medicação por via oral. Não há sinais de causa orgânica. Qual a opção mais adequada?",
+    "options": [
+      "Risperidona 2 mg por via oral",
+      "Haloperidol 5 mg por via intravenosa",
+      "Clorpromazina 25 mg intramuscular",
+      "Diazepam 10 mg por via intramuscular"
+    ],
+    "correctIndex": 0,
+    "explanation": "(Psiquiatria · Emergências) Na tranquilização rápida a via oral é preferencial quando o paciente aceita, e a risperidona 2 mg VO (isolada ou com benzodiazepínico oral) é opção efetiva. O haloperidol IV amplifica extrapiramidais e o risco de QT longo, a clorpromazina causa hipotensão grave e reduz o limiar convulsivo, e o diazepam IM tem absorção errática."
+  },
+  {
+    "question": "Hipertenso de 64 anos, com pressão mal controlada, nota baixa visual indolor no olho esquerdo há quatro dias. A fundoscopia mostra hemorragias em chama de vela restritas ao quadrante temporal superior, com cruzamento arteriovenoso anormal nesse setor. Qual o diagnóstico e a conduta?",
+    "options": [
+      "Oclusão de ramo venoso; controle da HAS e anti-VEGF",
+      "Oclusão da artéria central; massagem ocular imediata",
+      "Descolamento de retina; cirurgia em até 48 horas",
+      "Retinopatia diabética; panfotocoagulação imediata"
+    ],
+    "correctIndex": 0,
+    "explanation": "(Oftalmo · Urgências) Hemorragias limitadas a um quadrante, no setor drenado pela veia ocluída, com cruzamento arteriovenoso anormal, definem a oclusão de ramo venoso — mais comum que a central. É urgência: controle da hipertensão (essencial) e anti-VEGF para o edema macular. A oclusão arterial daria retina pálida com mancha vermelho-cereja e perda súbita e profunda."
+  },
+  {
+    "question": "Na rinite alérgica, qual fármaco atua sobre a obstrução nasal, sintoma ligado à inflamação eosinofílica da fase tardia?",
+    "options": [
+      "Corticoide intranasal, de primeira linha",
+      "Anti-histamínico oral de segunda geração",
+      "Descongestionante tópico em uso contínuo",
+      "Corticoide oral de manutenção prolongada"
+    ],
+    "correctIndex": 0,
+    "explanation": "(Otorrino · Rinites) O anti-histamínico cobre a fase imediata (histamina: prurido, espirros, rinorreia); a obstrução depende da fase tardia, eosinofílica, que responde ao corticoide intranasal, primeira linha ao lado do anti-histamínico de 2ª geração. Descongestionante tópico contínuo causa rinite medicamentosa, e corticoide oral é só de uso curto em casos graves."
+  },
+  {
+    "question": "No marca-passo transcutâneo, o monitor mostra espículas regulares que não são seguidas de QRS. O que isso significa e qual o ajuste?",
+    "options": [
+      "Falta de captura; aumentar a corrente em mA",
+      "Captura elétrica; confirmar o pulso femoral",
+      "Falta de captura; reduzir a frequência em ppm",
+      "Captura mecânica; reduzir a corrente pela dor"
+    ],
+    "correctIndex": 0,
+    "explanation": "(Práticas · Arritmias) Espícula sem QRS depois dela é estímulo sem captura: aumenta-se a corrente (mA) até cada espícula ser seguida de QRS largo, e então se confirma a captura mecânica pelo pulso femoral. A dor da estimulação se trata com analgesia e sedação, nunca baixando a corrente abaixo do limiar."
+  },
+  {
+    "question": "No teste Timed Up and Go, usado para estimar o risco de quedas do idoso da comunidade, qual tempo indica risco aumentado pelo STEADI?",
+    "options": [
+      "12 segundos ou mais para completar o percurso",
+      "20 segundos ou mais para completar o percurso",
+      "30 segundos ou mais para completar o percurso",
+      "8 segundos ou mais para completar o percurso"
+    ],
+    "correctIndex": 0,
+    "explanation": "(Geriatria · Quedas) No TUG o idoso levanta da cadeira, anda 3 metros, gira, volta e senta; pelo STEADI (CDC), 12 segundos ou mais indicam risco aumentado de queda. O corte de 20 segundos pertence a outro contexto — a graduação da sarcopenia grave —, e confundir os dois é erro frequente."
+  },
+  {
+    "question": "Mulher de 73 anos usa metoclopramida há quatro meses para dispepsia e desenvolveu bradicinesia e rigidez simétricas, com pouco tremor. Qual a conduta inicial?",
+    "options": [
+      "Suspender a metoclopramida e reavaliar",
+      "Iniciar levodopa associada à carbidopa",
+      "Iniciar biperideno e manter a medicação",
+      "Solicitar PET para confirmar o Parkinson"
+    ],
+    "correctIndex": 0,
+    "explanation": "(Neurologia · Parkinsonismo) Parkinsonismo simétrico em quem usa bloqueador dopaminérgico (metoclopramida, neurolépticos, cinarizina, flunarizina) é induzido por droga até prova em contrário e se controla com a retirada do fármaco. A anamnese medicamentosa vem antes de qualquer exame; o PET é instrumento de pesquisa, e anticolinérgico no idoso traz confusão e alucinações."
+  },
+  {
+    "question": "Mulher de 45 anos, avaliada pelo módulo de suicídio do M.I.N.I., relata que no último mês pensou em suicídio e chegou a pensar em como fazê-lo, mas não tentou e nunca tentou antes. Qual o risco e a conduta?",
+    "options": [
+      "Alto risco: internação psiquiátrica imediata",
+      "Risco moderado: encaminhar e avisar a família",
+      "Baixo risco: trabalhar os sentimentos na consulta",
+      "Risco moderado: contrato e retorno em uma semana"
+    ],
+    "correctIndex": 0,
+    "explanation": "(Psiquiatria · Emergências) No M.I.N.I., pensar em suicídio vale 6 pontos e pensar numa maneira de se matar vale 10 — esse item sozinho já leva ao alto risco (10 ou mais), que é emergência com internação psiquiátrica imediata. O risco moderado (6 a 9) pede intervenção psiquiátrica e comunicação à família."
+  },
+  {
+    "question": "Na classificação das urgências oftalmológicas pelo tempo, qual dos quadros abaixo é urgência (avaliação em até 24 horas), e não emergência?",
+    "options": [
+      "Neuropatia óptica isquêmica não arterítica",
+      "Neuropatia óptica isquêmica arterítica",
+      "Oclusão da artéria central da retina",
+      "Queimadura química da superfície ocular"
+    ],
+    "correctIndex": 0,
+    "explanation": "(Oftalmo · Urgências) A NOIA não arterítica é urgência; a forma arterítica (arterite de células gigantes) é emergência, pelo risco de perder o olho contralateral em dias, e pede corticoide imediato. Oclusão da artéria central da retina e queimadura química também são emergências — minutos contam."
+  },
+  {
+    "question": "Nas complicações orbitárias da rinossinusite, qual é a sequência de progressão?",
+    "options": [
+      "Pálpebra, espaço subperiosteal e órbita",
+      "Órbita, espaço subperiosteal e pálpebra",
+      "Seio cavernoso, órbita e pálpebra",
+      "Espaço subperiosteal, pálpebra e órbita"
+    ],
+    "correctIndex": 0,
+    "explanation": "(Otorrino · Rinossinusites) As complicações orbitárias progridem de fora para dentro: celulite e abscesso palpebral, subperiosteal e orbitário. Por isso edema e hiperemia palpebral em quem tem rinossinusite são lidos como complicação, e a rinossinusite complicada está entre as indicações cirúrgicas; a tromboflebite do seio cavernoso é complicação intracraniana."
+  },
+  {
+    "question": "Paciente com câncer metastático vai usar morfina oral para dor e clonazepam para ansiedade. Como o médico deve emitir as receitas desses dois fármacos?",
+    "options": [
+      "Notificação amarela para a morfina e azul para o clonazepam",
+      "Uma única notificação amarela contendo os dois fármacos",
+      "Uma única notificação azul contendo os dois fármacos",
+      "Receita de controle especial em duas vias com ambos"
+    ],
+    "correctIndex": 0,
+    "explanation": "(Práticas · Prescrição) Morfina é entorpecente da lista A (notificação amarela) e clonazepam é psicotrópico da lista B (notificação azul). Cada notificação amarela ou azul só pode conter um único produto, então são duas receitas separadas, cada uma com sua numeração; o laxante para a constipação do opioide vai em receita simples."
+  },
+  {
+    "question": "Homem de 80 anos, em uso de doxazosina, relata tontura ao se levantar. A PA deitado é de 148/84 mmHg e, após 3 minutos em pé, de 136/72 mmHg. Como interpretar a medida?",
+    "options": [
+      "Hipotensão ortostática, pela queda diastólica de 12 mmHg",
+      "Normal, pois a sistólica caiu menos de 20 mmHg",
+      "Normal, pois a medida em pé exige 10 minutos",
+      "Só é ortostática se houver síncope associada"
+    ],
+    "correctIndex": 0,
+    "explanation": "(Geriatria · Quedas) Hipotensão ortostática é a queda da PAS ≥ 20 mmHg OU da PAD ≥ 10 mmHg em até 3 minutos em pé — basta um dos critérios. A queda diastólica de 12 mmHg fecha o diagnóstico, e o alfabloqueador é o suspeito: reduzir ou retirar o fármaco faz parte da prevenção de quedas."
+  },
+  {
+    "question": "Na doença de Parkinson em paciente acima de 70 anos, com bradicinesia que já compromete as atividades diárias, qual droga costuma ser a primeira opção?",
+    "options": [
+      "Levodopa associada a inibidor da dopadescarboxilase",
+      "Biperideno, pela boa ação no tremor e na rigidez",
+      "Pramipexol isolado, para postergar a levodopa",
+      "Amantadina isolada, pelo efeito duradouro na acinesia"
+    ],
+    "correctIndex": 0,
+    "explanation": "(Neurologia · Parkinsonismo) Acima dos 70 anos, a menor perspectiva de duração da doença, os efeitos centrais dos anticolinérgicos e a baixa tolerância aos agonistas colocam a levodopa (com carbidopa ou benserazida) como primeira opção; postergá-la é estratégia para jovens com quadro leve. A amantadina tem potência baixa e costuma perder o efeito em 6 a 12 meses."
+  },
+  {
+    "question": "No paciente etilista que vai receber soro glicosado no pronto-socorro, qual cuidado previne a encefalopatia de Wernicke?",
+    "options": [
+      "Administrar tiamina antes da glicose",
+      "Administrar glicose antes da tiamina",
+      "Dar diazepam antes de qualquer soro",
+      "Evitar soro até corrigir o magnésio"
+    ],
+    "correctIndex": 0,
+    "explanation": "(Psiquiatria · Emergências) No etilista, a tiamina vem antes da glicose: glicose sem tiamina pode precipitar a encefalopatia de Wernicke. O benzodiazepínico é o eixo do tratamento da abstinência, mas não é pré-requisito para hidratar."
+  },
+  {
+    "question": "Serralheiro de 40 anos martelava uma peça de metal sem óculos de proteção quando sentiu algo atingir o olho direito. Há pequena laceração corneana e leve baixa visual. Qual o exame mais adequado para investigar o que ocorreu?",
+    "options": [
+      "Tomografia de órbitas para corpo estranho intraocular",
+      "Ressonância magnética de órbitas com urgência",
+      "Fundoscopia sob dilatação após compressão ocular",
+      "Nenhum exame; colírio antibiótico e retorno em 48 h"
+    ],
+    "correctIndex": 0,
+    "explanation": "(Oftalmo · Urgências) Em todo trauma com metal deve-se suspeitar de corpo estranho intraocular, investigado por radiografia ou tomografia, com remoção. O olho com possível perfuração não deve ser pressionado — protege-se com cone —, e a ressonância não é o exame diante de possível fragmento metálico."
+  },
+  {
+    "question": "Homem de 58 anos, tabagista de 40 maços-ano e etilista, está rouco há quatro semanas. Já usou antibiótico e pastilhas, sem melhora. Qual a conduta?",
+    "options": [
+      "Avaliar a laringe por nasofibrolaringoscopia",
+      "Fonoterapia e reavaliação em três meses",
+      "Inibidor de bomba por oito semanas e reavaliar",
+      "Repouso vocal e novo curso de antibiótico"
+    ],
+    "correctIndex": 0,
+    "explanation": "(Otorrino · Disfonias) Todo paciente com disfonia por no mínimo 15 dias deve ter a laringe avaliada, e no tabagista e etilista a hipótese de carcinoma espinocelular torna isso prioritário — lesão suspeita pede biópsia. Fonoterapia ou tratamento empírico de refluxo não substituem a visualização da laringe."
+  },
+  {
+    "question": "Qual a validade e a abrangência territorial da notificação de receita azul (lista B)?",
+    "options": [
+      "30 dias, válida apenas no estado emissor",
+      "30 dias, válida em todo o território nacional",
+      "60 dias, válida apenas no estado emissor",
+      "10 dias, válida em todo o território nacional"
+    ],
+    "correctIndex": 0,
+    "explanation": "(Práticas · Prescrição) A notificação azul (lista B) vale 30 dias, mas apenas no estado que a emitiu; é a amarela (lista A) que vale em todo o território nacional. Os 60 dias são a quantidade máxima de tratamento da B1, não a validade, e os 10 dias são a validade da receita de antimicrobiano."
+  },
+  {
+    "question": "Mulher de 77 anos refere cansaço na maior parte do tempo e dificuldade para subir um lance de escadas, mas anda um quarteirão sem dificuldade. Não tem doença crônica diagnosticada e perdeu 1,5 kg (pesava 62 kg) no último ano. Pela escala FRAIL, como ela se classifica?",
+    "options": [
+      "Pré-frágil, com dois itens positivos",
+      "Frágil, com três itens positivos",
+      "Robusta, sem nenhum item positivo",
+      "Frágil, pois a fadiga isolada basta"
+    ],
+    "correctIndex": 0,
+    "explanation": "(Geriatria · Fragilidade) Contam fadiga e resistência (subir um lance de escadas); deambulação, doença crônica e perda de peso são negativas — 1,5 kg está abaixo de 4,5 kg e de 5% do peso. Com 1 a 2 itens ela é pré-frágil, a fase em que exercício, proteína e desprescrição ainda mudam a trajetória; frágil exige 3 ou mais."
+  },
+  {
+    "question": "Homem de 31 anos, duas semanas após quadro diarreico, evolui em cinco dias com fraqueza ascendente dos membros inferiores para os superiores, parestesias distais e arreflexia. O líquor colhido no 3º dia tem células e proteínas normais. Qual a conduta?",
+    "options": [
+      "Imunoglobulina endovenosa ou plasmaférese",
+      "Pulsoterapia com metilprednisolona",
+      "Aguardar o líquor alterado para tratar",
+      "Prednisona oral em dose alta por dois meses"
+    ],
+    "correctIndex": 0,
+    "explanation": "(Neurologia · Neuropatias) É polirradiculoneurite aguda (Guillain-Barré): a dissociação proteíno-citológica só aparece após a primeira semana, então o líquor normal no 3º dia não afasta o diagnóstico. Plasmaférese e imunoglobulina EV têm eficácia comprovada; o corticosteroide não é tratamento estabelecido na forma aguda — ele é usado na forma crônica."
+  },
+  {
+    "question": "Universitário de 20 anos gasta cerca de três horas por dia verificando portas, fogão e torneiras, com intensa angústia e prejuízo nos estudos. A Y-BOCS é de 28 pontos. Qual o tratamento indicado?",
+    "options": [
+      "ISRS em dose alta associado a TCC com exposição",
+      "TCC com exposição isolada, sem medicação",
+      "Benzodiazepínico contínuo associado à TCC",
+      "Antipsicótico em dose baixa como monoterapia"
+    ],
+    "correctIndex": 0,
+    "explanation": "(Psiquiatria · TOC) Com Y-BOCS a partir de 24 o TOC é grave, e farmacoterapia e psicoterapia são obrigatoriamente associadas: ISRS em dose alta (resposta avaliada em até 12 semanas) mais TCC com exposição e prevenção de resposta. TCC isolada é para Y-BOCS até 23, e o antipsicótico em dose baixa entra como potencializador na resposta parcial, não em monoterapia."
+  },
+  {
+    "question": "Diabético de 52 anos, com glicemias acima de 350 mg/dL há um mês, queixa-se de piora recente da visão de longe. A refração mostra −1,50 DE nos dois olhos; até então não usava óculos. Qual a conduta?",
+    "options": [
+      "Adiar os óculos até controlar a glicemia",
+      "Prescrever lente negativa definitiva já",
+      "Prescrever adição positiva para perto",
+      "Refração sob cicloplegia para latente"
+    ],
+    "correctIndex": 0,
+    "explanation": "(Oftalmo · Ametropias) Na hiperglicemia o cristalino absorve água, ganha poder refrativo e desloca o foco para antes da retina: um desvio miópico transitório. Ao normalizar a glicemia a refração volta, por isso não se prescrevem óculos definitivos durante a descompensação."
+  },
+  {
+    "question": "Menina de 4 anos tem rouquidão progressiva há meses e, recentemente, ruído inspiratório e cansaço ao brincar. A nasofibrolaringoscopia mostra múltiplas lesões exofíticas em cacho de uva nas pregas vocais. Qual o diagnóstico?",
+    "options": [
+      "Papilomatose laríngea pelo HPV 6 e 11",
+      "Nódulos vocais por abuso vocal infantil",
+      "Laringomalácia com colapso supraglótico",
+      "Cisto vocal epidermoide bilateral"
+    ],
+    "correctIndex": 0,
+    "explanation": "(Otorrino · Disfonias) Lesões exofíticas multilobuladas em cacho de uva são o papiloma laríngeo, tumor benigno mais comum da laringe, causado pelo HPV 6 e 11; na criança cursa com estridor e obstrução, e recorre muito. Nódulos são espessamentos simétricos da borda livre, e a laringomalácia é flacidez supraglótica do lactente, sem lesão de massa nas pregas."
+  },
+  {
+    "question": "Na estrutura de uma prescrição, o que corresponde à inscrição?",
+    "options": [
+      "Nome do fármaco, forma farmacêutica e concentração",
+      "Quantidade total a fornecer, em número e por extenso",
+      "Nome, endereço e idade do paciente a ser tratado",
+      "Orientações de uso ao paciente: dose, via e duração"
+    ],
+    "correctIndex": 0,
+    "explanation": "(Práticas · Prescrição) A inscrição traz o fármaco, a forma farmacêutica e a concentração. A superinscrição identifica o paciente, a subinscrição indica a quantidade total (em algarismos e por extenso nos controlados) e a adscrição orienta o uso — posologia, via e duração."
+  },
+  {
+    "question": "Homem de 82 anos tem SARC-CalF de 13 pontos, preensão palmar de 22 kg (maior de três medidas) e leva 17 segundos no teste de sentar e levantar cinco vezes. A densitometria ainda não foi feita. Qual a conduta?",
+    "options": [
+      "Sarcopenia provável: iniciar exercício resistido e proteína",
+      "Sem diagnóstico: aguardar a DEXA antes de qualquer intervenção",
+      "Sarcopenia confirmada: iniciar reposição de testosterona",
+      "Sarcopenia grave: prescrever vitamina D em dose elevada"
+    ],
+    "correctIndex": 0,
+    "explanation": "(Geriatria · Sarcopenia) Rastreio positivo com força baixa (preensão < 27 kg no homem; cadeira > 15 s) já define sarcopenia provável, suficiente para buscar causas e iniciar a intervenção — esperar a medida de massa só atrasa o tratamento. A primeira linha é exercício resistido e proteína; nenhum medicamento tem evidência suficiente, e vitamina D só se repõe quando está baixa."
+  },
+  {
+    "question": "Qual quadro caracteriza a lesão do nervo fibular comum, e onde ela costuma ocorrer?",
+    "options": [
+      "Pé caído e hipoestesia lateral da perna; cabeça da fíbula",
+      "Mão caída e hipoestesia no dorso do polegar; úmero",
+      "Fraqueza da panturrilha e da planta; túnel do tarso",
+      "Fraqueza do quadríceps e da coxa; ligamento inguinal"
+    ],
+    "correctIndex": 0,
+    "explanation": "(Neurologia · Neuropatias) O fibular comum faz a dorsiflexão, a abdução do pé e a extensão dos dedos e dá sensibilidade à face lateral da perna e ao dorso do pé; a compressão na cabeça da fíbula (pernas cruzadas, gesso) produz o pé caído. Mão caída é do radial (fratura do úmero, chumbo), e panturrilha e planta são do tibial posterior."
+  },
+  {
+    "question": "Mulher de 29 anos foi assaltada à mão armada há 12 dias. Desde então tem pesadelos, revive a cena quando ouve motos, evita a rua do assalto, assusta-se com facilidade e dorme mal. Qual o diagnóstico?",
+    "options": [
+      "Reação aguda ao estresse, por ter menos de 1 mês",
+      "TEPT, pela presença de intrusão, evitação e alerta",
+      "TEPT com início tardio, pela gravidade do trauma",
+      "Transtorno de pânico, pelos sustos e pela insônia"
+    ],
+    "correctIndex": 0,
+    "explanation": "(Psiquiatria · TEPT) Os sintomas cobrem intrusão, evitação e hiperreatividade, mas o TEPT exige pelo menos 1 mês de duração; no primeiro mês após o trauma, o diagnóstico é reação aguda ao estresse. 'Início tardio' é para sintomas que surgem 6 meses ou mais após o evento — e nessa fase não se prescreve benzodiazepínico, que aumenta o risco de TEPT."
+  },
+  {
+    "question": "Jovem de 19 anos levou uma bolada no olho esquerdo. Tem diplopia vertical que piora ao olhar para cima, enoftalmia e hipoestesia da bochecha e do lábio superior à esquerda; o rebordo orbitário está íntegro à palpação. Qual o diagnóstico e o exame de escolha?",
+    "options": [
+      "Fratura blow-out do assoalho; TC coronal",
+      "Fratura da parede lateral; radiografia",
+      "Paralisia do IV par; ressonância de crânio",
+      "Fratura do teto da órbita; TC axial"
+    ],
+    "correctIndex": 0,
+    "explanation": "(Oftalmo · Anatomia ocular) Objeto rombo maior que a rima orbitária eleva a pressão na órbita e rompe o assoalho, mantendo o rebordo íntegro: fratura blow-out. O encarceramento do reto inferior dá diplopia ao olhar para cima, a perda de conteúdo para o seio maxilar dá enoftalmia e a lesão do nervo infraorbitário (V2) dá a hipoestesia; a TC coronal mostra o sinal da gota pendente."
+  },
+  {
+    "question": "Diabético de 68 anos acorda com dor periorbitária, ptose à direita e olho direito desviado para baixo e para fora. As pupilas são simétricas e reagem normalmente à luz. Qual a hipótese mais provável?",
+    "options": [
+      "Mononeuropatia diabética do III nervo, com pupila poupada",
+      "Aneurisma da comunicante posterior comprimindo o III nervo",
+      "Paralisia do VI nervo por hipertensão intracraniana",
+      "Miastenia ocular de início tardio em diabético"
+    ],
+    "correctIndex": 0,
+    "explanation": "(Neurologia · Neuropatias) No diabético idoso, o III nervo é o par craniano mais atingido, de início abrupto, com pupila habitualmente poupada e recuperação como regra — a isquemia microvascular atinge o centro do nervo. Midríase associada sugeriria compressão (aneurisma de comunicante posterior), porque as fibras pupilares correm na periferia; o VI par daria só limitação da abdução."
+  },
+  {
+    "question": "No exame psíquico, como se descreve o pensamento que inclui detalhes dispensáveis à resposta, mas acaba chegando ao objetivo da pergunta?",
+    "options": [
+      "Prolixo, pois inclui detalhes mas chega ao alvo",
+      "Tangencial, pois não responde ao que foi perguntado",
+      "Arborizado, por perder de vez a temática central",
+      "Em sopa de palavras, por fragmentar o discurso"
+    ],
+    "correctIndex": 0,
+    "explanation": "(Psiquiatria · Exame psíquico) O pensamento prolixo inclui detalhes dispensáveis, mas chega à resposta. O tangencial parece que vai responder e não responde; o arborizado se desprende totalmente do tema (típico da mania); a sopa de palavras é a fragmentação grave da forma, sem construção de frase."
+  }
+];
+
+var LETTERS = ['A','B','C','D','E','F'];
+var SHUFFLE = true, LOCK = true;
+
+var S = { view:'home', started:false, finished:false, i:0, order:[], answers:[], open:{}, filter:'all', warn:false, chat:{} };
+
+function esc(s){ return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
+function pad(n){ return String(n).padStart(2,'0'); }
+
+function build(){
+  var qs = QUIZ.map(function(q,id){ return { question:q.question, options:q.options.slice(), correctIndex:q.correctIndex, explanation:q.explanation, image:q.image, imageCaption:q.imageCaption, id:id }; });
+  if (!SHUFFLE) return qs;
+  for (var i=qs.length-1;i>0;i--){ var j=Math.floor(Math.random()*(i+1)); var t=qs[i]; qs[i]=qs[j]; qs[j]=t; }
+  return qs.map(function(q){
+    var correct = q.options[q.correctIndex], o = q.options.slice();
+    for (var i=o.length-1;i>0;i--){ var j=Math.floor(Math.random()*(i+1)); var t=o[i]; o[i]=o[j]; o[j]=t; }
+    q.options = o; q.correctIndex = o.indexOf(correct); return q;
+  });
+}
+
+/* ── ações ─────────────────────────────────────────────────────────────────── */
+var A = {
+  home:      function(){ S.view='home'; S.started=false; S.finished=false; up(0); },
+  resumo:    function(){ S.view='resumo'; up(0); },
+  start:     function(){ var o=build(); S.view='quiz'; S.started=true; S.finished=false; S.i=0; S.order=o;
+                         S.answers=new Array(o.length).fill(null); S.open={}; S.filter='all'; S.warn=false; up(0); },
+  restart:   function(){ A.start(); },
+  sair:      function(){ S.view='home'; S.started=false; up(0); },   // guarda as respostas
+  retomar:   function(){ S.view='quiz'; S.started=true; S.finished=false; S.warn=false; up(0); },
+  go:        function(n){ if(n<0||n>S.order.length-1) return; S.i=n; S.warn=false; render(); },
+  jump:      function(n){ if(S.finished){ S.finished=false; S.i=n; S.warn=false; } else { if(n<0||n>S.order.length-1) return; S.i=n; S.warn=false; } up(0,'smooth'); },
+  pick:      function(n){ if(LOCK && S.answers[S.i]!==null) return; S.answers[S.i]=n; render(); },
+  prev:      function(){ A.go(S.i-1); },
+  next:      function(){ if(S.i<S.order.length-1) A.go(S.i+1); else A.finish(); },
+  finish:    function(){ var b=S.answers.filter(function(a){return a===null}).length;
+                         if(b>0 && !S.warn){ S.warn=true; render(); return; } S.finished=true; S.warn=false; up(0); },
+  force:     function(){ S.finished=true; S.warn=false; up(0); },
+  gotoBlank: function(){ var n=S.answers.findIndex(function(a){return a===null}); if(n>=0) A.go(n); },
+  back:      function(){ S.finished=false; S.warn=false; up(0); },
+  filter:    function(k){ S.filter=k; render(); },
+  toggle:    function(n){ S.open[n]=!S.open[n]; render(); },
+  toggleAll: function(){ var r=reviewList(), all=r.length>0 && r.every(function(x){return S.open[x.idx]});
+                         S.open={}; if(!all) r.forEach(function(x){ S.open[x.idx]=true; }); render(); }
+};
+function up(top, beh){ render(); window.scrollTo({ top: top||0, behavior: beh||'auto' }); }
+
+/* Aberto por duplo clique (file://) volta para o indice local; servido pela web,
+   volta para o publicado. Os dois listam os mesmos materiais. */
+function idxHref(){
+  var local = (typeof location !== 'undefined' && location.protocol === 'file:');
+  return local ? '../index_local.html' : '../index.html';
+}
+function emAndamento(){
+  return S.order.length > 0 && !S.finished &&
+         S.answers.some(function(a){ return a !== null; });
+}
+
+/* ── header ────────────────────────────────────────────────────────────────── */
+function renderHeader(){
+  var mono = "font-family:'IBM Plex Mono',monospace";
+  var left =
+    '<div style="min-width:0">' +
+      '<div style="display:flex;align-items:center;gap:8px;'+mono+';font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:#8a8578">' +
+        '<a href="'+idxHref()+'" class="h-ink" style="color:#2b57cc;text-decoration:none;white-space:nowrap">\u2190 Materiais</a>' +
+        '<span style="color:#d3cec4">/</span>' +
+        '<span style="overflow:hidden;text-overflow:ellipsis;white-space:nowrap">'+esc(EYEBROW)+'</span>' +
+      '</div>' +
+      '<h1 style="margin:1px 0 0;font-family:\'Newsreader\',Georgia,serif;font-size:20px;font-weight:500;letter-spacing:-.01em;line-height:1.15">'+esc(TITLE)+'</h1>' +
+    '</div>';
+
+  var right = '';
+  if (S.view === 'quiz' && S.started) {
+    var hit = counts().hit;
+    right = '<div style="display:flex;align-items:center;gap:10px;flex-shrink:0">' +
+              '<button type="button" data-act="sair" class="h-line" style="background:none;border:1px solid #ddd8ce;border-radius:9px;padding:6px 11px;'+mono+';font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;color:#5b6478;cursor:pointer;transition:border-color .15s ease">Sair</button>' +
+              '<div style="display:flex;align-items:center;gap:6px">' +
+                '<span style="'+mono+';font-size:15px;font-weight:600;letter-spacing:-.02em">'+hit+'</span>' +
+                '<span style="'+mono+';font-size:11px;color:#8a8578">/ '+S.order.length+'</span>' +
+              '</div></div>';
+  } else if (S.view !== 'home') {
+    right = '<button type="button" data-act="home" class="h-line" style="flex-shrink:0;background:none;border:1px solid #ddd8ce;border-radius:9px;padding:7px 13px;'+mono+';font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:#5b6478;cursor:pointer;transition:border-color .15s ease">← Início</button>';
+  }
+
+  var html = '<div style="display:flex;align-items:baseline;justify-content:space-between;gap:12px;margin-bottom:'+(S.view==='quiz'&&S.started?'10px':'2px')+'">'+left+right+'</div>';
+
+  if (S.view === 'quiz' && S.started) {
+    var c = counts();
+    var rail = S.order.map(function(q,n){
+      var a = S.answers[n], cur = n===S.i && !S.finished, bg = '#d3cec4';
+      if (a!==null) bg = (a===q.correctIndex) ? '#2e7d55' : '#c04437';
+      if (cur && a===null) bg = '#121a2b';
+      var st = a===null ? 'em branco' : (a===q.correctIndex ? 'correta' : 'incorreta');
+      return '<button type="button" data-act="jump" data-n="'+n+'" title="Questão '+(n+1)+' — '+st+'" aria-label="Questão '+(n+1)+' — '+st+'" style="flex:1 1 0;min-width:0;background:none;border:0;padding:13px 0;margin:0;cursor:pointer;display:flex;align-items:center;justify-content:center">' +
+             '<span style="display:block;width:100%;border-radius:99px;transition:height .18s ease,background .18s ease,box-shadow .18s ease;height:'+(cur?'17px':'9px')+';background:'+bg+';box-shadow:'+(cur?'0 0 0 3px rgba(18,26,43,.13)':'none')+'"></span></button>';
+    }).join('');
+    html += '<div><div style="display:flex;align-items:center;gap:3px">'+rail+'</div>' +
+            '<div style="display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:-2px">' +
+              '<div style="'+mono+';font-size:11px;letter-spacing:.04em;color:#5b6478">Questão '+pad(S.i+1)+' / '+S.order.length+'</div>' +
+              '<div style="display:flex;align-items:center;gap:12px;'+mono+';font-size:10.5px;color:#8a8578">' +
+                dot('#2e7d55',c.hit)+dot('#c04437',c.miss)+dot('#d3cec4',c.blank) +
+              '</div></div></div>';
+  }
+  document.getElementById('hdr').innerHTML = html;
+}
+function dot(color,n){ return '<span style="display:flex;align-items:center;gap:5px"><span style="width:7px;height:7px;border-radius:99px;background:'+color+';display:block"></span>'+n+'</span>'; }
+
+function counts(){
+  var hit=0, miss=0, blank=0;
+  S.answers.forEach(function(a,n){
+    if (a===null) blank++;
+    else if (S.order[n] && a===S.order[n].correctIndex) hit++;
+    else miss++;
+  });
+  return { hit:hit, miss:miss, blank:blank, total:S.order.length };
+}
+
+/* ── tela inicial ──────────────────────────────────────────────────────────── */
+function renderHome(){
+  var mono = "font-family:'IBM Plex Mono',monospace";
+  var secoes = (document.getElementById('resumoSrc').textContent.match(/<h2/g)||[]).length;
+  var cell = function(v,l){
+    return '<div style="background:#faf9f6;padding:16px 14px">' +
+      '<div style="'+mono+';font-size:22px;font-weight:500;letter-spacing:-.03em">'+v+'</div>' +
+      '<div style="'+mono+';font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:#8a8578;margin-top:3px">'+l+'</div></div>';
+  };
+  var card = function(act,tag,titulo,desc,cta){
+    return '<button type="button" data-act="'+act+'" class="h-card" style="display:flex;flex-direction:column;align-items:flex-start;gap:0;text-align:left;background:#fff;border:1px solid #e4e0d8;border-radius:18px;padding:24px 22px;cursor:pointer;transition:border-color .16s ease,transform .14s ease;box-shadow:0 1px 2px rgba(18,26,43,.04),0 12px 28px -20px rgba(18,26,43,.18)">' +
+      '<div style="'+mono+';font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:#2b57cc;margin-bottom:12px">'+tag+'</div>' +
+      '<div style="font-family:\'Newsreader\',Georgia,serif;font-size:26px;font-weight:500;letter-spacing:-.02em;line-height:1.15;margin-bottom:8px">'+titulo+'</div>' +
+      '<div style="font-size:14px;line-height:1.6;color:#5b6478;margin-bottom:18px;text-wrap:pretty">'+desc+'</div>' +
+      '<div style="'+mono+';font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:#121a2b">'+cta+'</div></button>';
+  };
+
+  document.getElementById('stage').innerHTML =
+    '<section style="padding:56px 0 0;animation:qFade .3s ease">' +
+      '<div style="'+mono+';font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:#2b57cc;margin-bottom:16px">Material de revisão</div>' +
+      '<h2 style="font-family:\'Newsreader\',Georgia,serif;font-size:40px;line-height:1.08;font-weight:400;letter-spacing:-.025em;margin:0 0 18px;text-wrap:pretty">'+esc(SUBTITLE)+'</h2>' +
+      '<p style="font-size:15.5px;line-height:1.65;color:#5b6478;margin:0 0 30px;max-width:52ch;text-wrap:pretty">'+esc(INTRO)+'</p>' +
+      '<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(108px,1fr));gap:1px;background:#e4e0d8;border:1px solid #e4e0d8;border-radius:14px;overflow:hidden;margin-bottom:32px">' +
+        cell(QUIZ.length,'Questões') + cell(secoes,'Seções') + cell('~'+Math.round(QUIZ.length*0.75),'Minutos') +
+      '</div>' +
+      '<div class="home-grid" style="display:grid;grid-template-columns:1fr 1fr;gap:12px">' +
+        (emAndamento()
+          ? card('retomar','Em andamento','Quiz',
+                 'Você parou na questão '+pad(S.i+1)+' de '+S.order.length+', com '+
+                 (S.order.length-counts().blank)+' respondida'+((S.order.length-counts().blank)===1?'':'s')+
+                 '. Suas respostas continuam guardadas.','Retomar →')
+          : card('start','Praticar','Quiz', QUIZ.length+' questões de múltipla escolha, com explicação assim que você responde e gabarito comentado no fim.','Começar →')) +
+        card('resumo','Estudar','Resumo','O conteúdo da aula em texto corrido, organizado em '+secoes+' seções para leitura antes da prova.','Ler →') +
+      '</div>' +
+      '<div style="margin-top:26px;display:flex;flex-wrap:wrap;align-items:center;gap:8px 18px;'+mono+';font-size:11px;color:#8a8578">' +
+        '<span>← →&nbsp; navegar</span><span>1–'+maxOpts()+'&nbsp; responder</span><span>Enter&nbsp; avançar</span>' +
+        (emAndamento() ? '<button type="button" data-act="start" class="h-ink" style="background:none;border:0;padding:0;'+mono+';font-size:11px;color:#8a8578;cursor:pointer;text-decoration:underline;text-underline-offset:3px">recomeçar do zero</button>' : '') +
+        '</div>' +
+    '</section>';
+}
+function maxOpts(){ return QUIZ.reduce(function(m,q){ return Math.max(m,q.options.length); },0); }
+
+/* ── resumo ────────────────────────────────────────────────────────────────── */
+function renderResumo(){
+  document.getElementById('stage').innerHTML =
+    '<section style="padding:34px 0 0;animation:qFade .3s ease">' +
+      '<div style="font-family:\'IBM Plex Mono\',monospace;font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:#2b57cc;margin-bottom:14px">Resumo</div>' +
+      '<div class="rsm">' + document.getElementById('resumoSrc').textContent + '</div>' +
+      '<div style="display:flex;flex-wrap:wrap;gap:9px;margin-top:38px;padding-top:24px;border-top:1px solid #e4e0d8">' +
+        '<button type="button" data-act="start" class="h-darkflat" style="background:#121a2b;color:#f5f3ef;border:0;border-radius:11px;padding:13px 24px;font-size:14px;font-weight:500;cursor:pointer;transition:background .16s ease">Fazer o quiz →</button>' +
+        '<button type="button" data-act="home" class="h-line" style="background:none;border:1px solid #ddd8ce;border-radius:11px;padding:13px 22px;font-size:14px;cursor:pointer;transition:border-color .15s ease">Voltar ao início</button>' +
+      '</div></section>';
+}
+
+/* imagem da questao — data URI ja resolvida pelo montar_quiz.py */
+function figura(q, cls){
+  if (!q.image) return '';
+  return '<figure class="fig'+(cls?' '+cls:'')+'"><img src="'+q.image+'" alt="'+esc(q.imageCaption||'Imagem da questão')+'">' +
+         (q.imageCaption ? '<figcaption>'+esc(q.imageCaption)+'</figcaption>' : '') + '</figure>';
+}
+
+/* ── questão ───────────────────────────────────────────────────────────────── */
+function renderQuestion(){
+  var mono = "font-family:'IBM Plex Mono',monospace";
+  var q = S.order[S.i], ans = S.answers[S.i], reveal = ans !== null;
+
+  var status = 'Não respondida', sColor = '#8a8578';
+  if (reveal) { var ok = ans===q.correctIndex; status = ok?'Você acertou':'Você errou'; sColor = ok?'#2e7d55':'#c04437'; }
+
+  var opts = q.options.map(function(text,n){
+    var isC = n===q.correctIndex, isMine = n===ans;
+    var bd='#e4e0d8', bg='#fff', fg='#121a2b', bBg='#f2efe9', bFg='#8a8578', mark='', mColor='', op='1', hbd='#2b57cc';
+    if (reveal) {
+      op = (isC||isMine) ? '1' : '.62';
+      if (isC)               { bd='#8fc7a7'; bg='#eef7f1'; fg='#1f5c3e'; bBg='#2e7d55'; bFg='#fff'; mark='✓'; mColor='#2e7d55'; }
+      if (isMine && !isC)    { bd='#e0a49a'; bg='#fdf0ee'; fg='#8f2f25'; bBg='#c04437'; bFg='#fff'; mark='✕'; mColor='#c04437'; }
+    } else if (isMine)       { bd='#121a2b'; bg='#f7f6f2'; bBg='#121a2b'; bFg='#f5f3ef'; }
+    var locked = reveal && LOCK;
+    return '<button type="button" data-act="pick" data-n="'+n+'" class="h-opt'+(locked?' locked':'')+'" style="--hbd:'+hbd+';display:flex;gap:13px;align-items:flex-start;width:100%;text-align:left;padding:14px 15px;border-radius:13px;font-size:15px;line-height:1.5;transition:border-color .15s ease,background .15s ease,transform .12s ease;border:1.5px solid '+bd+';background:'+bg+';color:'+fg+';cursor:'+(locked?'default':'pointer')+';opacity:'+op+'">' +
+      '<span style="flex-shrink:0;width:24px;height:24px;border-radius:7px;display:flex;align-items:center;justify-content:center;'+mono+';font-size:11.5px;font-weight:600;margin-top:1px;background:'+bBg+';color:'+bFg+'">'+LETTERS[n]+'</span>' +
+      '<span style="flex:1;min-width:0;text-wrap:pretty">'+esc(text)+'</span>' +
+      (mark ? '<span style="flex-shrink:0;'+mono+';font-size:14px;font-weight:600;margin-top:1px;color:'+mColor+'">'+mark+'</span>' : '') +
+      '</button>';
+  }).join('');
+
+  var expl = reveal ? '<div style="margin-top:20px;padding:16px 18px;background:#f7f6f2;border-left:2.5px solid #2b57cc;border-radius:0 12px 12px 0;animation:qFade .26s ease">' +
+      '<div style="'+mono+';font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:#2b57cc;margin-bottom:8px">Por quê</div>' +
+      '<p style="margin:0;font-size:14.5px;line-height:1.68;color:#39404f;text-wrap:pretty">'+esc(q.explanation)+'</p></div>' : '';
+
+  var blank = counts().blank;
+  var warn = S.warn ? '<div style="margin-top:14px;padding:15px 17px;background:#fdf7e9;border:1px solid #e8d5a3;border-radius:14px;animation:qFade .22s ease">' +
+      '<p style="margin:0 0 12px;font-size:14px;line-height:1.55;color:#6b5620">'+blank+(blank===1?' questão ainda está em branco.':' questões ainda estão em branco.')+' Você pode voltar nelas ou finalizar assim mesmo.</p>' +
+      '<div style="display:flex;flex-wrap:wrap;gap:8px">' +
+        '<button type="button" data-act="gotoBlank" style="background:#121a2b;color:#f5f3ef;border:0;border-radius:9px;padding:9px 16px;font-size:13px;font-weight:500;cursor:pointer">Ir para a 1ª em branco</button>' +
+        '<button type="button" data-act="force" style="background:none;color:#6b5620;border:1px solid #e8d5a3;border-radius:9px;padding:9px 16px;font-size:13px;cursor:pointer">Finalizar assim mesmo</button>' +
+      '</div></div>' : '';
+
+  var last = S.i === S.order.length-1;
+  var early = !last && (S.order.length - blank) > 0;
+
+  document.getElementById('stage').innerHTML =
+    '<section style="padding:26px 0 0">' +
+      '<article style="background:#fff;border:1px solid #e4e0d8;border-radius:18px;padding:26px 22px 24px;box-shadow:0 1px 2px rgba(18,26,43,.04),0 12px 28px -18px rgba(18,26,43,.18)">' +
+        '<div style="display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:14px">' +
+          '<div style="'+mono+';font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:#2b57cc">Questão '+pad(S.i+1)+'</div>' +
+          '<div style="'+mono+';font-size:10.5px;letter-spacing:.06em;color:'+sColor+'">'+status+'</div>' +
+        '</div>' +
+        '<h2 style="font-family:\'Newsreader\',Georgia,serif;font-size:22px;line-height:1.42;font-weight:400;letter-spacing:-.012em;margin:0 0 22px;text-wrap:pretty">'+esc(q.question)+'</h2>' +
+        figura(q, 'qfig') +
+        '<div style="display:flex;flex-direction:column;gap:9px">'+opts+'</div>' + expl +
+        (reveal ? chatBox(q, ans===q.correctIndex) : '') +
+      '</article>' + warn +
+      '<div style="display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:18px">' +
+        '<button type="button" data-act="prev" class="h-line" style="background:none;border:1px solid #ddd8ce;border-radius:11px;padding:12px 18px;font-size:14px;cursor:pointer;transition:border-color .15s ease,color .15s ease;color:'+(S.i===0?'#c4bfb4':'#121a2b')+';pointer-events:'+(S.i===0?'none':'auto')+'">← Anterior</button>' +
+        '<div style="display:flex;align-items:center;gap:8px">' +
+          (early ? '<button type="button" data-act="finish" class="h-ink" style="background:none;border:0;padding:12px 6px;'+mono+';font-size:11.5px;letter-spacing:.06em;text-transform:uppercase;color:#8a8578;cursor:pointer;text-decoration:underline;text-underline-offset:3px">Finalizar</button>' : '') +
+          '<button type="button" data-act="next" class="h-darkflat" style="background:#121a2b;color:#f5f3ef;border:0;border-radius:11px;padding:12px 22px;font-size:14px;font-weight:500;cursor:pointer;transition:background .16s ease">'+(last?'Finalizar':'Próxima →')+'</button>' +
+        '</div></div></section>';
+}
+
+/* ── resultado + gabarito comentado ────────────────────────────────────────── */
+function reviewList(){
+  return S.order.map(function(q,n){
+    var a = S.answers[n], ok = a!==null && a===q.correctIndex;
+    return { idx:n, ok:ok, blank:a===null, q:q, a:a };
+  }).filter(function(r){
+    return S.filter==='all' || (S.filter==='wrong'&&!r.ok&&!r.blank) || (S.filter==='right'&&r.ok) || (S.filter==='blank'&&r.blank);
+  });
+}
+
+function renderResult(){
+  var mono = "font-family:'IBM Plex Mono',monospace";
+  var c = counts(), pct = c.total ? Math.round(c.hit/c.total*100) : 0;
+
+  var title='Precisa revisar', msg='Releia o material com atenção e refaça o quiz — as explicações abaixo cobrem cada erro.';
+  if (pct>=90)      { title='Domínio sólido';   msg='Desempenho excelente. Confira as explicações das que escaparam e siga em frente.'; }
+  else if (pct>=70) { title='Bom desempenho';   msg='Base consistente. Revise os pontos errados abaixo para fechar as lacunas.'; }
+  else if (pct>=50) { title='Meio do caminho';  msg='Você acertou o essencial, mas há lacunas. Comece pelo filtro de erradas.'; }
+
+  var stat = function(v,l,color){
+    return '<div style="background:#faf9f6;padding:14px 10px">' +
+      '<div style="'+mono+';font-size:19px;font-weight:500;color:'+color+'">'+v+'</div>' +
+      '<div style="'+mono+';font-size:9.5px;letter-spacing:.09em;text-transform:uppercase;color:#8a8578;margin-top:2px">'+l+'</div></div>';
+  };
+
+  var fdefs = [['all','Todas',c.total],['wrong','Erradas',c.miss],['right','Certas',c.hit],['blank','Em branco',c.blank]];
+  var filters = fdefs.map(function(f){
+    var on = S.filter===f[0];
+    return '<button type="button" data-act="filter" data-k="'+f[0]+'" class="h-line" style="border-radius:99px;padding:8px 14px;font-size:13px;cursor:pointer;transition:all .15s ease;border:1px solid '+(on?'#121a2b':'#ddd8ce')+';background:'+(on?'#121a2b':'transparent')+';color:'+(on?'#f5f3ef':'#5b6478')+'">'+f[1]+' '+f[2]+'</button>';
+  }).join('');
+
+  var list = reviewList();
+  var allOpen = list.length>0 && list.every(function(r){ return S.open[r.idx]; });
+
+  var cards = list.map(function(r){
+    var numBg='#f0ede7', numFg='#8a8578';
+    if (!r.blank) { if (r.ok) { numBg='#e3f0e8'; numFg='#1f5c3e'; } else { numBg='#fbe6e2'; numFg='#8f2f25'; } }
+    var open = !!S.open[r.idx];
+    var body = '';
+    if (open) {
+      var opts = r.q.options.map(function(text,n){
+        var isC = n===r.q.correctIndex, isMine = n===r.a;
+        var bd='#eeebe4', bg='#fbfaf8', fg='#5b6478', bBg='#f0ede7', bFg='#8a8578', tag='', tBg='', tFg='';
+        if (isC)            { bd='#bcdcc9'; bg='#eef7f1'; fg='#1f5c3e'; bBg='#2e7d55'; bFg='#fff'; tag='Correta'; tBg='#d9ede1'; tFg='#1f5c3e'; }
+        if (isMine && !isC) { bd='#eec4bd'; bg='#fdf0ee'; fg='#8f2f25'; bBg='#c04437'; bFg='#fff'; tag='Sua resposta'; tBg='#f7ddd8'; tFg='#8f2f25'; }
+        if (isMine && isC)  { tag='Sua resposta ✓'; }
+        return '<div style="display:flex;gap:11px;align-items:flex-start;padding:11px 13px;border-radius:11px;font-size:14px;line-height:1.5;border:1px solid '+bd+';background:'+bg+';color:'+fg+'">' +
+          '<span style="flex-shrink:0;width:21px;height:21px;border-radius:6px;display:flex;align-items:center;justify-content:center;'+mono+';font-size:10.5px;font-weight:600;background:'+bBg+';color:'+bFg+'">'+LETTERS[n]+'</span>' +
+          '<span style="flex:1;min-width:0;text-wrap:pretty">'+esc(text)+'</span>' +
+          (tag ? '<span style="flex-shrink:0;'+mono+';font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;padding:3px 7px;border-radius:6px;margin-top:1px;background:'+tBg+';color:'+tFg+'">'+tag+'</span>' : '') +
+          '</div>';
+      }).join('');
+      body = '<div style="padding:2px 15px 18px;animation:qDrawer .2s ease">' +
+        '<div style="height:1px;background:#eeebe4;margin:0 0 16px"></div>' +
+        '<p style="font-family:\'Newsreader\',Georgia,serif;font-size:18px;line-height:1.5;margin:0 0 16px;text-wrap:pretty">'+esc(r.q.question)+'</p>' +
+        figura(r.q) +
+        '<div style="display:flex;flex-direction:column;gap:7px">'+opts+'</div>' +
+        '<div style="margin-top:16px;padding:14px 16px;background:#f7f6f2;border-left:2.5px solid #2b57cc;border-radius:0 11px 11px 0">' +
+          '<div style="'+mono+';font-size:9.5px;letter-spacing:.16em;text-transform:uppercase;color:#2b57cc;margin-bottom:7px">Por quê</div>' +
+          '<p style="margin:0;font-size:14px;line-height:1.65;color:#39404f;text-wrap:pretty">'+esc(r.q.explanation)+'</p></div>' +
+        '<button type="button" data-act="jump" data-n="'+r.idx+'" style="margin-top:14px;background:none;border:0;padding:0;'+mono+';font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:#2b57cc;cursor:pointer;text-decoration:underline;text-underline-offset:3px">Abrir no quiz →</button></div>';
+    }
+    return '<div style="background:#fff;border:1px solid '+(open?'#c9c3b6':'#e4e0d8')+';border-radius:14px;overflow:hidden;transition:border-color .15s ease">' +
+      '<button type="button" data-act="toggle" data-n="'+r.idx+'" style="display:flex;align-items:center;gap:12px;width:100%;text-align:left;background:none;border:0;padding:14px 15px;cursor:pointer">' +
+        '<span style="flex-shrink:0;width:28px;height:28px;border-radius:8px;display:flex;align-items:center;justify-content:center;'+mono+';font-size:12px;font-weight:600;background:'+numBg+';color:'+numFg+'">'+pad(r.idx+1)+'</span>' +
+        '<span style="flex:1;min-width:0;font-size:14px;line-height:1.45;color:#39404f;overflow:hidden;text-overflow:ellipsis;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical">'+esc(r.q.question)+'</span>' +
+        '<span style="flex-shrink:0;'+mono+';font-size:16px;color:#8a8578;width:16px;text-align:center">'+(open?'−':'+')+'</span>' +
+      '</button>' + body + '</div>';
+  }).join('');
+
+  document.getElementById('stage').innerHTML =
+    '<section style="padding:34px 0 0;animation:qFade .3s ease">' +
+      '<div style="'+mono+';font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:#2b57cc;margin-bottom:14px">Resultado</div>' +
+      '<h2 style="font-family:\'Newsreader\',Georgia,serif;font-size:36px;line-height:1.12;font-weight:400;letter-spacing:-.025em;margin:0 0 8px">'+title+'</h2>' +
+      '<p style="font-size:15px;line-height:1.6;color:#5b6478;margin:0 0 24px;max-width:48ch;text-wrap:pretty">'+msg+'</p>' +
+      '<div style="height:8px;border-radius:99px;background:#e4e0d8;overflow:hidden;margin-bottom:10px">' +
+        '<div style="height:100%;border-radius:99px;background:#121a2b;transition:width .7s cubic-bezier(.22,1,.36,1);width:'+pct+'%"></div></div>' +
+      '<div style="display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:#e4e0d8;border:1px solid #e4e0d8;border-radius:14px;overflow:hidden;margin-bottom:34px">' +
+        stat(c.hit,'Certas','#2e7d55')+stat(c.miss,'Erradas','#c04437')+stat(c.blank,'Branco','#8a8578')+stat(pct+'%','Aproveit.','#2b57cc') +
+      '</div>' +
+      '<div style="display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-bottom:14px">' +
+        '<h3 style="font-family:\'Newsreader\',Georgia,serif;font-size:22px;font-weight:500;letter-spacing:-.015em;margin:0">Gabarito comentado</h3>' +
+        '<button type="button" data-act="toggleAll" class="h-ink" style="background:none;border:0;padding:6px 0;'+mono+';font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:#5b6478;cursor:pointer;text-decoration:underline;text-underline-offset:3px">'+(allOpen?'Recolher tudo':'Expandir tudo')+'</button>' +
+      '</div>' +
+      '<div style="display:flex;gap:7px;flex-wrap:wrap;margin-bottom:16px">'+filters+'</div>' +
+      '<div style="display:flex;flex-direction:column;gap:8px">'+cards+'</div>' +
+      (list.length===0 ? '<div style="padding:38px 16px;text-align:center;color:#8a8578;font-size:14px;border:1px dashed #ddd8ce;border-radius:14px">Nenhuma questão neste filtro.</div>' : '') +
+      '<div style="display:flex;flex-wrap:wrap;gap:9px;margin-top:28px;padding-top:24px;border-top:1px solid #e4e0d8">' +
+        '<button type="button" data-act="restart" class="h-darkflat" style="background:#121a2b;color:#f5f3ef;border:0;border-radius:11px;padding:13px 24px;font-size:14px;font-weight:500;cursor:pointer;transition:background .16s ease">Refazer o quiz</button>' +
+        '<button type="button" data-act="back" class="h-line" style="background:none;border:1px solid #ddd8ce;border-radius:11px;padding:13px 22px;font-size:14px;cursor:pointer;transition:border-color .15s ease">Voltar às questões</button>' +
+        '<button type="button" data-act="resumo" class="h-line" style="background:none;border:1px solid #ddd8ce;border-radius:11px;padding:13px 22px;font-size:14px;cursor:pointer;transition:border-color .15s ease">Ler o resumo</button>' +
+      '</div></section>';
+}
+
+/* ── render + eventos ──────────────────────────────────────────────────────── */
+
+/* ─── Tutor DeepSeek — só local, só quando a questão foi errada ──────────────
+   A chave vem de ../deepseek_key.js, que não existe na versão publicada: online
+   o arquivo dá 404, dsOn() vira false e o chat simplesmente não é renderizado.
+   O histórico fica em S.chat[idDaQuestao] e sobrevive ao re-render do stage. */
+var DS_MODEL = 'deepseek-flash';
+var DS_URL   = 'https://api.deepseek.com/chat/completions';
+var NLJS     = String.fromCharCode(10);
+var DS_MONO  = "font-family:'IBM Plex Mono',monospace";
+var DS_SANS  = "font-family:'IBM Plex Sans',system-ui,sans-serif";
+
+function dsOn(){ return typeof window.DEEPSEEK_KEY === 'string' && window.DEEPSEEK_KEY.length > 10; }
+
+
+/* ─── markdown do chat ───────────────────────────────────────────────────────
+   O modelo responde em markdown (**negrito**, listas, `codigo`, tabelas). O texto
+   vem de fora, entao a ordem importa: ESCAPA TUDO primeiro com esc() e so depois
+   aplica formatacao — assim nenhuma tag vinda da resposta vira HTML de verdade.
+   Como esc() ja trocou > por &gt;, a citacao casa com &gt; e nao com >.
+   Trechos de codigo saem de cena por um marcador NUL, que nao pode existir
+   no texto escapado, e voltam no fim — assim ` ` protege o que esta dentro. */
+function mdIn(t){
+  var Z = String.fromCharCode(0), codes = [];
+  t = t.replace(/`([^`]+)`/g, function(_, c){
+    codes.push(c);
+    return Z + 'c' + (codes.length - 1) + Z;
+  });
+  t = t.replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>');
+  t = t.replace(/__([^_]+)__/g, '<strong>$1</strong>');
+  t = t.replace(/(^|[\s(])\*([^*\n]+)\*/g, '$1<em>$2</em>');
+  t = t.replace(/(^|[\s(])_([^_\n]+)_/g, '$1<em>$2</em>');
+  t = t.replace(/\[([^\]]+)\]\((https?:\/\/[^)\s]+)\)/g,
+    '<a href="$2" target="_blank" rel="noopener" style="color:#2b57cc">$1</a>');
+  return t.replace(new RegExp(Z + 'c([0-9]+)' + Z, 'g'), function(_, i){
+    return '<code style="' + DS_MONO + ';font-size:12px;background:#f2efe9;' +
+           'border-radius:4px;padding:1px 5px">' + codes[i] + '</code>';
+  });
+}
+
+function mdChat(txt){
+  var Z = String.fromCharCode(0);
+  var t = esc(String(txt == null ? '' : txt));
+  var blocos = [];
+  t = t.replace(/```[a-zA-Z]*\n?([\s\S]*?)```/g, function(_, c){
+    blocos.push(c.replace(/\n+$/, ''));
+    return Z + 'b' + (blocos.length - 1) + Z;
+  });
+
+  var linhas = t.split('\n'), out = [], lista = null, par = [];
+  function fechaLista(){ if (lista) { out.push('</' + lista + '>'); lista = null; } }
+  function fechaPar(){
+    if (par.length) { out.push('<p style="margin:0 0 9px">' + mdIn(par.join(' ')) + '</p>'); par = []; }
+  }
+  function fecha(){ fechaPar(); fechaLista(); }
+
+  for (var i = 0; i < linhas.length; i++){
+    var l = linhas[i], t2 = l.trim();
+    if (!t2) { fecha(); continue; }
+
+    var bl = t2.match(new RegExp('^' + Z + 'b([0-9]+)' + Z + '$'));
+    if (bl) {
+      fecha();
+      out.push('<pre style="margin:0 0 9px;padding:9px 11px;background:#f7f6f2;border-radius:9px;' +
+               'overflow-x:auto;' + DS_MONO + ';font-size:12px;line-height:1.5">' + blocos[bl[1]] + '</pre>');
+      continue;
+    }
+
+    // tabela: linha com | ... | seguida da separadora | --- | --- |
+    if (t2.charAt(0) === '|' && i + 1 < linhas.length && /^\|[\s:|-]+\|$/.test(linhas[i+1].trim())) {
+      fecha();
+      var celulas = function(linha){
+        return linha.trim().replace(/^\||\|$/g, '').split('|').map(function(c){ return mdIn(c.trim()); });
+      };
+      var cab = celulas(t2), corpo = [];
+      i += 2;
+      while (i < linhas.length && linhas[i].trim().charAt(0) === '|') { corpo.push(celulas(linhas[i].trim())); i++; }
+      i--;
+      var cel = 'padding:5px 9px;border-bottom:1px solid #eae6de;text-align:left;vertical-align:top';
+      out.push('<div style="overflow-x:auto;margin:0 0 9px">' +
+        '<table style="border-collapse:collapse;font-size:12.5px;width:100%">' +
+        '<thead><tr>' + cab.map(function(c){ return '<th style="' + cel + ';font-weight:600">' + c + '</th>'; }).join('') + '</tr></thead>' +
+        '<tbody>' + corpo.map(function(r){
+          return '<tr>' + r.map(function(c){ return '<td style="' + cel + '">' + c + '</td>'; }).join('') + '</tr>';
+        }).join('') + '</tbody></table></div>');
+      continue;
+    }
+
+    var h = t2.match(/^#{1,6}\s+(.*)$/);
+    if (h) {
+      fecha();
+      out.push('<div style="font-weight:600;color:#121a2b;margin:11px 0 5px">' + mdIn(h[1]) + '</div>');
+      continue;
+    }
+
+    if (/^(---+|\*\*\*+)$/.test(t2)) {
+      fecha();
+      out.push('<hr style="border:0;border-top:1px solid #eae6de;margin:11px 0">');
+      continue;
+    }
+
+    var cit = t2.match(/^&gt;\s?(.*)$/);
+    if (cit) {
+      fecha();
+      out.push('<div style="margin:0 0 9px;padding:7px 11px;border-left:2.5px solid #c9d6f7;' +
+               'background:#f7f9fe;border-radius:0 7px 7px 0">' + mdIn(cit[1]) + '</div>');
+      continue;
+    }
+
+    var mUl = t2.match(/^[-*•]\s+(.*)$/);
+    var mOl = t2.match(/^\d+[.)]\s+(.*)$/);
+    if (mUl || mOl) {
+      var tipo = mUl ? 'ul' : 'ol';
+      fechaPar();
+      if (lista !== tipo) {
+        fechaLista();
+        out.push('<' + tipo + ' style="margin:0 0 9px;padding-left:19px">');
+        lista = tipo;
+      }
+      out.push('<li style="margin:3px 0">' + mdIn((mUl || mOl)[1]) + '</li>');
+      continue;
+    }
+
+    fechaLista();
+    par.push(t2);
+  }
+  fecha();
+  return out.join('');
+}
+
+function msgHTML(m){
+  if (m.role === 'user')
+    return '<div style="margin:0 0 10px;text-align:right">' +
+      '<span style="display:inline-block;max-width:88%;text-align:left;background:#f2efe9;' +
+      'border-radius:12px 12px 3px 12px;padding:9px 12px;font-size:13.5px;line-height:1.6;' +
+      'color:#39404f;text-wrap:pretty">' + esc(m.content) + '</span></div>';
+  return '<div style="margin:0 0 12px">' +
+    '<div style="' + DS_MONO + ';font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;' +
+    'color:#2b57cc;margin-bottom:4px">DeepSeek</div>' +
+    '<div style="font-size:13.5px;line-height:1.65;color:#39404f;text-wrap:pretty">' +
+    mdChat(m.content) + '</div></div>';
+}
+
+function chatBox(q, acertou){
+  if (!dsOn()) return '';
+  var chamada = acertou ? 'Quer ir mais fundo?' : 'Ainda com dúvida?';
+  var dica = acertou ? 'Por que as outras estão erradas?' : 'Por que a que eu marquei está errada?';
+  var hist = (S.chat[q.id] || []).map(msgHTML).join('');
+  return '<div id="ds" data-qid="' + q.id + '" style="margin-top:14px;border:1px solid #e4e0d8;' +
+      'border-radius:14px;background:#fff;overflow:hidden;animation:qFade .26s ease">' +
+      '<div style="display:flex;align-items:center;gap:8px;padding:11px 15px;' +
+        'border-bottom:1px solid #f0ede6;background:#faf9f6">' +
+        '<span style="' + DS_MONO + ';font-size:10px;letter-spacing:.16em;text-transform:uppercase;' +
+        'color:#2b57cc">' + chamada + '</span>' +
+        '<span style="font-size:12px;color:#8a8578">pergunte ao DeepSeek</span></div>' +
+      '<div id="dsLog" style="max-height:280px;overflow-y:auto;padding:' + (hist ? '12px 15px' : '0') + '">' +
+        hist + '</div>' +
+      '<div style="display:flex;gap:8px;padding:11px 12px;border-top:1px solid #f0ede6">' +
+        '<input id="dsIn" type="text" autocomplete="off" ' +
+          'placeholder="' + dica + '" ' +
+          'style="flex:1;min-width:0;border:1px solid #e4e0d8;border-radius:10px;padding:10px 12px;' +
+          'font-size:13.5px;' + DS_SANS + ';color:#121a2b;background:#fff;outline:none">' +
+        '<button type="button" data-act="dsSend" class="h-darkflat" style="flex-shrink:0;' +
+          'background:#121a2b;color:#f5f3ef;border:0;border-radius:10px;padding:10px 16px;' +
+          'font-size:13px;font-weight:500;cursor:pointer;transition:background .16s ease">Enviar</button>' +
+      '</div></div>';
+}
+
+function dsContexto(q, ans){
+  var alts = q.options.map(function(o, n){ return LETTERS[n] + ') ' + o; }).join(NLJS);
+  return 'Questao: ' + q.question + NLJS + alts + NLJS +
+    'Resposta correta: ' + LETTERS[q.correctIndex] + ') ' + q.options[q.correctIndex] + NLJS +
+    'O estudante marcou: ' + (ans === null ? 'nada' : LETTERS[ans] + ') ' + q.options[ans]) + NLJS +
+    'Explicacao que ele ja tem: ' + q.explanation;
+}
+
+A.dsSend = function(){
+  var box = document.getElementById('ds');
+  if (!box || !dsOn() || box.getAttribute('data-busy')) return;
+  var input = document.getElementById('dsIn'), log = document.getElementById('dsLog');
+  var texto = (input.value || '').trim();
+  if (!texto) return;
+
+  var qid = parseInt(box.getAttribute('data-qid'), 10), q = null, ans = null;
+  for (var i = 0; i < S.order.length; i++)
+    if (S.order[i].id === qid) { q = S.order[i]; ans = S.answers[i]; }
+  if (!q) return;
+
+  S.chat[qid] = S.chat[qid] || [];
+  S.chat[qid].push({ role:'user', content:texto });
+  input.value = '';
+  log.style.padding = '12px 15px';
+  log.insertAdjacentHTML('beforeend', msgHTML({ role:'user', content:texto }));
+  log.insertAdjacentHTML('beforeend',
+    '<div><div style="' + DS_MONO + ';font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;' +
+    'color:#2b57cc;margin-bottom:4px">DeepSeek</div>' +
+    '<div id="dsTxt" style="font-size:13.5px;line-height:1.65;color:#8a8578;' +
+    'text-wrap:pretty">pensando…</div></div>');
+  log.scrollTop = log.scrollHeight;
+  box.setAttribute('data-busy', '1');
+
+  var acertou = (ans === q.correctIndex);
+  var situacao = acertou
+    ? 'Voce e um tutor de medicina. O estudante do 7o semestre ACERTOU esta questao, mas ficou com uma duvida. '
+    : 'Voce e um tutor de medicina. O estudante do 7o semestre ERROU esta questao. ';
+  var msgs = [
+    { role:'system', content: situacao +
+      'Responda em portugues do Brasil, direto ao ponto, no maximo 150 palavras. ' +
+      'Traga o dado concreto (valor, criterio, mecanismo) em vez de generalidade. ' +
+      'Nao repita a explicacao que ele ja tem; foque na duvida que ele trouxe.' },
+    { role:'user', content: dsContexto(q, ans) }
+  ];
+  var h = S.chat[qid];
+  for (var j = 0; j < h.length; j++) msgs.push({ role:h[j].role, content:h[j].content });
+
+  dsStream(msgs, function(txt, fim, erro){
+    var el = document.getElementById('dsTxt');
+    if (!el) { box.removeAttribute('data-busy'); return; }
+    if (erro) { el.style.color = '#c04437'; el.textContent = erro; box.removeAttribute('data-busy'); return; }
+    el.style.color = '#39404f';
+    el.innerHTML = mdChat(txt);
+    var lg = document.getElementById('dsLog'); if (lg) lg.scrollTop = lg.scrollHeight;
+    if (fim) { el.removeAttribute('id'); S.chat[qid].push({ role:'assistant', content:txt }); box.removeAttribute('data-busy'); }
+  });
+};
+
+function dsStream(messages, cb){
+  var acc = '';
+  fetch(DS_URL, {
+    method: 'POST',
+    headers: { 'Content-Type':'application/json', 'Authorization':'Bearer ' + window.DEEPSEEK_KEY },
+    body: JSON.stringify({ model:DS_MODEL, messages:messages, stream:true, max_tokens:1200, temperature:0.3 })
+  }).then(function(r){
+    if (!r.ok) return r.text().then(function(t){
+      throw new Error(
+        r.status === 401 ? 'Chave recusada (401). Confira o deepseek_key.js.' :
+        r.status === 402 ? 'Sem saldo na conta DeepSeek (402).' :
+        r.status === 429 ? 'Limite de uso atingido (429). Tente daqui a pouco.' :
+        'Erro ' + r.status + ': ' + String(t).slice(0, 120));
+    });
+    var reader = r.body.getReader(), dec = new TextDecoder(), buf = '';
+    (function pump(){
+      return reader.read().then(function(res){
+        if (res.done) { cb(acc || '(resposta vazia)', true); return; }
+        buf += dec.decode(res.value, { stream:true });
+        var linhas = buf.split(NLJS);
+        buf = linhas.pop();
+        for (var i = 0; i < linhas.length; i++){
+          var l = linhas[i].trim();
+          if (l.indexOf('data:') !== 0) continue;
+          var carga = l.slice(5).trim();
+          if (carga === '[DONE]') continue;
+          try {
+            var d = JSON.parse(carga).choices[0].delta;
+            if (d && d.content) { acc += d.content; cb(acc, false); }
+          } catch (_){}
+        }
+        return pump();
+      });
+    })();
+  }).catch(function(e){
+    cb('', true, 'Nao consegui falar com o DeepSeek: ' + (e && e.message ? e.message : e));
+  });
+}
+
+function render(){
+  renderHeader();
+  if (S.view === 'home')        renderHome();
+  else if (S.view === 'resumo') renderResumo();
+  else if (S.finished)          renderResult();
+  else                          renderQuestion();
+}
+
+/* lightbox: clique em qualquer figura amplia */
+document.addEventListener('click', function(e){
+  var lb = document.getElementById('lb');
+  if (e.target.closest('#lb')) { lb.className = ''; return; }
+  var img = e.target.closest('.fig img');
+  if (img) { lb.firstElementChild.src = img.src; lb.className = 'on'; }
+});
+window.addEventListener('keydown', function(e){
+  if (e.key === 'Escape') document.getElementById('lb').className = '';
+});
+
+document.addEventListener('click', function(e){
+  var b = e.target.closest('[data-act]'); if (!b) return;
+  var act = b.getAttribute('data-act'), n = parseInt(b.getAttribute('data-n'),10), k = b.getAttribute('data-k');
+  if (act==='pick'||act==='jump'||act==='toggle') A[act](n);
+  else if (act==='filter') A.filter(k);
+  else if (A[act]) A[act]();
+});
+
+window.addEventListener('keydown', function(e){
+  if (S.view!=='quiz' || !S.started || S.finished) return;
+  var t = e.target, tag = t && t.tagName;
+  if (tag==='INPUT' || tag==='TEXTAREA' || (t && t.isContentEditable)) return;
+  if (e.metaKey||e.ctrlKey||e.altKey) return;
+  if (e.key==='ArrowRight')     { e.preventDefault(); A.go(S.i+1); }
+  else if (e.key==='ArrowLeft') { e.preventDefault(); A.go(S.i-1); }
+  else if (e.key==='Enter')     { e.preventDefault(); A.next(); }
+  else if (/^[1-6]$/.test(e.key)) {
+    var n = parseInt(e.key,10)-1;
+    if (n < S.order[S.i].options.length) A.pick(n);
+  }
+});
+
+render();
+</script>
+</body>
+</html>

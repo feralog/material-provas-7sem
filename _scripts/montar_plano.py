@@ -45,6 +45,7 @@ MODOS = {
 PROVAS = {
     "sai": {"sigla": "SAI III", "nome": "Saúde do Adulto e do Idoso III", "data": "2026-11-30",
             "pastas": ["Geriatria", "Psiquiatria", "Neurologia", "Otorrino", "OFTALMO", "Práticas"],
+            "simulados": "Simulados/aula_simulado_sai_*.json",
             "detalhe": "Geriatria · Psiquiatria · Neurologia · Otorrino · Oftalmo · Práticas — ~120 questões"},
     "ped": {"sigla": "SCA III", "nome": "Saúde da Criança e do Adolescente III", "data": "2026-12-03",
             "pastas": ["PED"], "detalhe": "Pediatria"},
@@ -133,27 +134,25 @@ DIAS = [
         T("descolamento_de_retina_e_oclusoes_vasculares", 20, "sai"),
         T("alteracoes_palpebrais", 20, "sai"),
     ]),
-    ("2026-11-28", "Oftalmo de base, sono, neuropsiquiatria, EM e o que sobrou", None, [
-        T("inflamacoes_da_via_lacrimal", 15, "sai"),
-        T("ametropias", 20, "sai"),
-        T("estrabismo", 20, "sai"),
-        T("ambliopia", 15, "sai"),
+    ("2026-11-28", "Sono, neuropsiquiatria, EM e o 1º simulado de prova", None, [
         T("medicina_do_sono", 20, "sai"),
         T("neuropsiquiatria", 20, "sai"),
         T("esclerose_multipla", 20, "sai"),
-        T("avaliacao_geriatrica_ampla", 25, "sai"),
-        T("prescricao_medica", 25, "sai"),
+        S(["simulado_sai_iii_1"], 60, 90, 105, "sai", "Simulado SAI III · 1 — 60 questões novas",
+          nota="como na prova: 90 min, sem consulta; depois leia a explicação de cada erro (+15 min)"),
     ]),
-    ("2026-11-29", "AVC 2: simulados mistos (você estudou isso há um mês)", None, [
-        S(AVC2_GERPSI, 40, 45, 50, "sai", "AVC 2 · Geriatria e Psiquiatria"),
-        S(AVC2_NEUOTO, 40, 45, 50, "sai", "AVC 2 · Neurologia e Otorrino"),
-        S(AVC2_OFT, 30, 35, 40, "sai", "AVC 2 · Oftalmologia"),
-        F(40, "sai"),
+    ("2026-11-29", "2º simulado de prova e AVC 2", None, [
+        S(["simulado_sai_iii_2"], 60, 90, 105, "sai", "Simulado SAI III · 2 — 60 questões novas",
+          nota="90 min sem consulta, depois os erros"),
+        S(AVC2_GERPSI + AVC2_NEUOTO + AVC2_OFT, 40, 45, 50, "sai", "AVC 2 · todas as áreas",
+          nota="você estudou há um mês; os simulados também cobram estes temas"),
+        F(30, "sai"),
     ]),
-    ("2026-11-30", "Manhã da prova: só fila e pegadinhas", "Prova de SAI III às 13:30", [
-        F(45, "sai"),
+    ("2026-11-30", "Manhã da prova: 3º simulado e pegadinhas", "Prova de SAI III às 13:30", [
+        S(["simulado_sai_iii_3"], 60, 90, 105, "sai", "Simulado SAI III · 3 — 60 questões novas",
+          nota="comece cedo; se o tempo apertar, faça 40 em 60 min"),
         P(20, "sai"),
-        S(SAI_BASE, 30, 30, 30, "sai", "Base (anatomia, semiologia, exame psíquico…)", opcional=True),
+        F(30, "sai", opcional=True),
     ]),
     ("2026-11-30", "Noite, depois da prova", None, [
         T("revisao_global_de_pediatria", 30, "ped", n=30, opcional=True,
@@ -236,7 +235,8 @@ DIAS = [
 ]
 
 SOBRAR = {
-    "sai": SAI_BASE,
+    "sai": SAI_BASE + ["inflamacoes_da_via_lacrimal", "ametropias", "estrabismo", "ambliopia",
+                       "avaliacao_geriatrica_ampla", "prescricao_medica"],
     "ped": ["simulado", "revisao_global_de_pediatria"],
     "go": [],
     "mfc": [],
@@ -255,6 +255,7 @@ PEGADINHAS = {
         "<b>Depressão</b> — o DSM-5 exige humor deprimido <b>ou</b> anedonia (o slide pedia os dois).",
         "<b>Fragilidade</b> — a aula usa a escala FRAIL, não o fenótipo de Fried; o SARC-F vai até 10 (o “&gt; 10” é do SARC-CalF).",
         "<b>Faringotonsilite</b> — hiperplasia de tonsila dá voz <b>abafada</b> (“batata quente”), não hipernasal.",
+        "<b>AVC isquêmico</b> — o material de AVC tem trechos antigos: hoje a trombólise EV vai até <b>4,5 h</b> (não 3 h); sem trombólise, tolera-se PA até 220/120; para trombolisar, PA &lt; 185/110 (AHA/ASA 2019).",
         "<b>Demência</b> — as aulas de Geriatria e Neurologia exigem 2 ou mais domínios cognitivos; o transtorno neurocognitivo maior do DSM-5-TR exige 1 só (e memória não é obrigatória). Responda pelo critério que a questão citar.",
         "<b>Surdez súbita</b> — a aula de disacusias trata com prednisona + pentoxifilina + valaciclovir; a diretriz AAO-HNS 2019 deixa só o corticoide (antiviral e vasoativo não são de rotina), idealmente nas 2 primeiras semanas.",
         "<b>Osteoporose</b> — rastreio com DXA a partir dos 65 anos (mulher) e 70 (homem), antes se houver fator de risco; o intervalo de repetição é individual (a aula de AGA fala em “a cada 2 anos”).",
@@ -319,8 +320,11 @@ def rever():
     for pid, pv in PROVAS.items():
         # so banco com quiz montado: aula_*.json pela metade (agente trabalhando) fica de fora
         aulas = []
-        for x in pv["pastas"]:
-            for a in sorted((RAIZ / x).glob("aula_*.json")):
+        globs = ["%s/aula_*.json" % x for x in pv["pastas"]]
+        if pv.get("simulados"):
+            globs.append(pv["simulados"])      # simulados de prova entram como tema da revisao
+        for g in globs:
+            for a in sorted(RAIZ.glob(g)):
                 t = json.loads(a.read_text(encoding="utf-8")).get("titulo", "")
                 if (QUIZZES / ("quiz_%s.html" % snake(t))).exists():
                     aulas.append(str(a))

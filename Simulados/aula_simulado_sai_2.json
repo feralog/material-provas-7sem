@@ -1,0 +1,668 @@
+{
+  "titulo": "Simulado SAI III · 2",
+  "eyebrow": "Simulado · Saúde do Adulto e do Idoso III",
+  "subtitulo": "Sessenta questões novas no formato da prova final",
+  "intro": "60 questões objetivas de Geriatria, Psiquiatria, Neurologia, Otorrino, Oftalmo e Práticas de emergência, no estilo de prova de graduação. Tempo sugerido: 90 minutos, sem consulta. Depois, use o mapa do simulado para revisar por área.",
+  "questoes": [
+    {
+      "question": "Homem de 76 anos, engenheiro aposentado com 16 anos de estudo, é trazido pela esposa porque passou a esquecer recados e a ter dificuldade para encontrar palavras. Continua dirigindo, pagando as contas e organizando os próprios remédios sem ajuda. A avaliação neuropsicológica mostra déficit objetivo de memória episódica e de linguagem. Qual o diagnóstico mais provável?",
+      "options": [
+        "Comprometimento cognitivo leve amnéstico de múltiplos domínios",
+        "Demência leve, pelo acometimento de dois domínios cognitivos",
+        "Declínio cognitivo subjetivo, por manter a independência funcional",
+        "Envelhecimento cognitivo normal para a idade e a escolaridade"
+      ],
+      "correctIndex": 0,
+      "explanation": "(Geriatria · Demência) Há queixa, déficit objetivo em dois domínios e autonomia preservada: é comprometimento cognitivo leve amnéstico de múltiplos domínios. A demência também exige dois domínios, mas o que a define é a interferência significativa nas atividades de vida diária — o número de domínios sozinho não fecha o diagnóstico. Declínio cognitivo subjetivo pressupõe testes normais."
+    },
+    {
+      "question": "Idosa de 84 anos, com doença de Alzheimer moderada e estável há meses, passa a ficar sonolenta durante o dia e agitada à noite, sem conseguir manter a atenção numa conversa. A filha relata que a piora começou há dois dias e que o quadro muda várias vezes ao longo do dia. Qual a conduta mais adequada?",
+      "options": [
+        "Tratar como delirium e buscar infecção, fármaco novo ou retenção urinária",
+        "Aumentar a donepezila, pois a piora reflete progressão da doença de base",
+        "Reestadiar pelo CDR, já que a queda abrupta indica fase grave da demência",
+        "Iniciar antipsicótico contínuo e reavaliar a cognição em três meses"
+      ],
+      "correctIndex": 0,
+      "explanation": "(Geriatria · Delirium na demência) Início em dias, curso flutuante e desatenção marcam delirium sobreposto — e a demência é o maior fator de risco para ele. Todo idoso com piora cognitiva abrupta tem delirium até prova em contrário: procure infecção, fármaco novo, desidratação, retenção urinária e dor. Atribuir a piora à progressão da doença, ajustando o anticolinesterásico ou reestadiando, deixa a causa aguda sem tratamento."
+    },
+    {
+      "question": "Homem de 80 anos com doença de Alzheimer leve, em uso de donepezila 10 mg, tinha MEEM de 22 há seis meses e hoje pontua 15. Há quatro meses o urologista iniciou oxibutinina para urgência miccional. Não há sinais de infecção nem mudança abrupta do comportamento. Qual a conduta mais adequada?",
+      "options": [
+        "Suspender a oxibutinina e reavaliar, pois a queda excede o esperado",
+        "Trocar a donepezila por rivastigmina, por falha terapêutica do esquema",
+        "Manter o esquema, pois a perda é compatível com a evolução natural",
+        "Associar memantina, já que a queda indica progressão para fase grave"
+      ],
+      "correctIndex": 0,
+      "explanation": "(Geriatria · Demência) Na doença de Alzheimer a perda média no MEEM é de 2 a 3 pontos por ano; sete pontos em seis meses obrigam a procurar fator agravante, e anticolinérgicos como a oxibutinina estão entre os mais comuns. Trocar de anticolinesterásico não resolve: pelo protocolo do Ministério da Saúde, a intolerância permite trocar de representante, mas a falha terapêutica não justifica a troca."
+    },
+    {
+      "question": "Qual atitude exemplifica a prevenção quaternária na prática clínica?",
+      "options": [
+        "Não pedir exames de rastreio sem indicação a quem os solicita",
+        "Vacinar idosos contra influenza e pneumococo todos os anos",
+        "Rastrear diabetes e hipertensão em adultos assintomáticos",
+        "Tratar a neuropatia diabética para evitar amputações"
+      ],
+      "correctIndex": 0,
+      "explanation": "(Geriatria · Iatrogenia) A prevenção quaternária (P4) identifica o risco de supermedicalização e protege o paciente de exames e tratamentos desnecessários — porta de entrada da iatrogenia diagnóstica, com falso-positivos que encadeiam investigações invasivas. Vacinar é prevenção primária, rastrear doença em assintomático com indicação é secundária e tratar complicação de doença instalada é terciária."
+    },
+    {
+      "question": "Homem de 79 anos usa amitriptilina 50 mg à noite para insônia há seis meses. Evoluiu com constipação, para a qual recebeu laxante, e com jato urinário fraco, para o qual recebeu tansulosina; agora a esposa o acha mais confuso. Qual a melhor interpretação e conduta?",
+      "options": [
+        "Cascata iatrogênica; retirar gradualmente a amitriptilina e rever o resto",
+        "Hiperplasia prostática progressiva; manter a tansulosina e pedir PSA",
+        "Demência inicial; iniciar donepezila e manter as demais medicações",
+        "Constipação funcional do idoso; trocar o laxante por um osmótico"
+      ],
+      "correctIndex": 0,
+      "explanation": "(Geriatria · Iatrogenia) A amitriptilina é anticolinérgica e está entre os medicamentos potencialmente inapropriados para idosos: constipação, retenção urinária e confusão são efeitos esperados. Tratar cada efeito adverso com um fármaco novo é a definição de cascata iatrogênica; a conduta é rever a causa, não acrescentar remédio. Rotular demência ou doença prostática sem retirar o anticolinérgico perpetua o dano."
+    },
+    {
+      "question": "Mulher de 66 anos tem vertigem rotatória contínua há dois dias, iniciada uma semana após um resfriado, com náuseas intensas e audição normal. O impulso cefálico mostra sacada corretiva para a direita, o nistagmo é horizontal e unidirecional e não há desvio no teste de skew. Qual a conduta mais adequada?",
+      "options": [
+        "Supressor vestibular por poucos dias e reabilitação vestibular precoce",
+        "Manobra de Epley, pois o quadro é de vertigem posicional benigna",
+        "Benzodiazepínico contínuo até o desaparecimento completo da tontura",
+        "Ressonância de urgência, pois o impulso cefálico alterado indica AVC"
+      ],
+      "correctIndex": 0,
+      "explanation": "(Geriatria · Tontura) Vertigem aguda contínua, pós-viral, com audição preservada e HINTS de padrão periférico — impulso cefálico alterado com sacada corretiva, nistagmo horizontal unidirecional e skew negativo — é neurite vestibular. Supressores vestibulares servem só para alívio de curto prazo, a reabilitação vestibular é fundamental e o corticoide pode ser considerado na fase aguda. O impulso cefálico alterado tranquiliza: o sinal de alarme seria o impulso normal."
+    },
+    {
+      "question": "Homem de 78 anos, em uso de hidroclorotiazida para hipertensão e doxazosina para hiperplasia prostática, refere tontura e escurecimento visual sempre que se levanta da cama. A PA é de 150/86 mmHg deitado e de 126/78 mmHg após 2 minutos em pé. Não há vertigem com o movimento da cabeça. Qual a conduta inicial?",
+      "options": [
+        "Rever o alfabloqueador e o diurético e orientar levantar-se devagar",
+        "Iniciar fludrocortisona, pois a queda pressórica já é sintomática",
+        "Prescrever betaistina, por se tratar de presbivertigem do idoso",
+        "Realizar a manobra de Dix-Hallpike para confirmar VPPB posterior"
+      ],
+      "correctIndex": 0,
+      "explanation": "(Geriatria · Tontura) A queda sustentada de 24 mmHg na PAS em até 3 minutos fecha hipotensão ortostática. O primeiro passo é identificar e ajustar os fármacos causadores — diuréticos e alfabloqueadores estão entre os piores —, aumentar sal e líquidos, usar meia elástica e levantar devagar. A fludrocortisona fica reservada aos casos refratários às medidas iniciais."
+    },
+    {
+      "question": "Homem de 74 anos, diabético e hipertenso, apresenta há 6 horas vertigem contínua, vômitos e perda auditiva súbita na orelha esquerda. Ao exame, tem disartria, ataxia de marcha e dismetria à esquerda. Qual o diagnóstico mais provável?",
+      "options": [
+        "AVC de fossa posterior, apesar da perda auditiva associada",
+        "Labirintite viral, pela perda auditiva unilateral súbita",
+        "Doença de Menière, pela associação de vertigem e hipoacusia",
+        "Neurite vestibular, pelo início súbito e vertigem contínua"
+      ],
+      "correctIndex": 0,
+      "explanation": "(Geriatria · Tontura) Disartria, ataxia de marcha e dismetria são déficits focais de fossa posterior. A perda auditiva costuma apontar para causa periférica, mas perda auditiva súbita com déficit focal pode ser AVC de cerebelo ou tronco: a regra de que a causa central poupa a audição é tendência, não lei. Labirintite e Menière não explicam os sinais cerebelares."
+    },
+    {
+      "question": "Mulher de 73 anos tem osteoporose densitométrica (T-score de −3,0 no colo femoral), função renal e cálcio sérico normais. Tem acalasia em acompanhamento e, por sequela de AVC, não consegue permanecer sentada por mais de alguns minutos após acordar. Qual a melhor opção de tratamento farmacológico?",
+      "options": [
+        "Ácido zoledrônico 5 mg endovenoso uma vez por ano",
+        "Alendronato 70 mg por via oral uma vez por semana",
+        "Risedronato 35 mg por via oral uma vez por semana",
+        "Apenas cálcio e vitamina D, sem fármaco específico"
+      ],
+      "correctIndex": 0,
+      "explanation": "(Geriatria · Osteoporose) O bisfosfonato oral exige ficar 30 minutos sentado ou em pé e é contraindicado em doença esofágica que atrase o esvaziamento, como a acalasia — vale para alendronato e risedronato. O ácido zoledrônico 5 mg EV anual contorna o esôfago e mantém a eficácia antifratura; o efeito a orientar é a reação de fase aguda (febre e mialgia) após a primeira infusão. Cálcio e vitamina D sozinhos não tratam osteoporose estabelecida."
+    },
+    {
+      "question": "Na mulher na pós-menopausa, em que situação a densitometria óssea está indicada antes dos 65 anos?",
+      "options": [
+        "Quando há fator de risco, como baixo peso ou tabagismo",
+        "Sempre a partir dos 50 anos, repetindo a cada dois anos",
+        "Apenas após a primeira fratura de punho ou de vértebra",
+        "Somente se houver dor lombar crônica de origem mecânica"
+      ],
+      "correctIndex": 0,
+      "explanation": "(Geriatria · Osteoporose) Sem fator de risco, o rastreio por DXA começa aos 65 anos na mulher (70 no homem); antes disso, na pós-menopausa, indica-se quando há fator de risco — baixo peso, fratura prévia, pai ou mãe com fratura de quadril, tabagismo, álcool em excesso, menopausa precoce ou glicocorticoide. Esperar a fratura é perder a chance de prevenção, e o intervalo de repetição é individualizado, não fixo em dois anos."
+    },
+    {
+      "question": "Mulher de 23 anos procura atendimento por tristeza, anedonia, hipersonia e aumento do apetite há três semanas. Há dois anos teve cinco dias em que dormiu pouco, ficou falante e expansiva e gastou mais que o habitual, sem prejuízo no trabalho e sem internação. A mãe tem transtorno bipolar. Qual o tratamento de primeira linha para o episódio atual?",
+      "options": [
+        "Quetiapina, opção de primeira linha na depressão do tipo II",
+        "Sertralina em monoterapia, pelo perfil de depressão atípica",
+        "Bupropiona isolada, por ter menor risco de ganho de peso",
+        "Carbamazepina, primeira escolha na fase depressiva aguda"
+      ],
+      "correctIndex": 0,
+      "explanation": "(Psiquiatria · Transtorno bipolar) Hipomania prévia (cinco dias, sem prejuízo marcante) somada ao episódio depressivo atual define transtorno bipolar tipo II, e na depressão do tipo II a quetiapina é a única opção de primeira linha. Depressão atípica, precoce e com história familiar positiva acende o alerta de bipolaridade antes de qualquer antidepressivo: sertralina e bupropiona ficam, no máximo, na segunda linha."
+    },
+    {
+      "question": "Homem de 29 anos, sem antecedentes e sem uso de substâncias, está há três dias sem dormir, eufórico, falando sem parar e afirmando ter sido escolhido para salvar o país, com ideias de perseguição contra quem duvida dele. Como classificar o episódio?",
+      "options": [
+        "Episódio maníaco, pois a psicose o define mesmo com três dias",
+        "Episódio hipomaníaco, pois a duração não alcança sete dias",
+        "Transtorno ciclotímico, por sintomas que não fecham critérios",
+        "Episódio misto, pois a psicose exige sintomas depressivos"
+      ],
+      "correctIndex": 0,
+      "explanation": "(Psiquiatria · Transtorno bipolar) Não é a intensidade nem só a duração que separa mania de hipomania: sintomas psicóticos excluem hipomania por definição, e psicose, internação ou prejuízo funcional marcante convertem o episódio em mania — e o paciente em tipo I — mesmo com três dias. O erro tentador é classificar como hipomania pelo critério de tempo isolado."
+    },
+    {
+      "question": "Em paciente com transtorno bipolar estável em uso de lítio, qual situação obriga a nova dosagem da litemia?",
+      "options": [
+        "Início de IECA, diurético ou anti-inflamatório não hormonal",
+        "Início de inibidor de bomba de prótons por dispepsia",
+        "Troca do antipsicótico associado por outro atípico",
+        "Uso de paracetamol para cefaleia tensional ocasional"
+      ],
+      "correctIndex": 0,
+      "explanation": "(Psiquiatria · Transtorno bipolar) O lítio tem janela terapêutica estreita (litemia de referência em torno de 0,6 a 1,2 mEq/L) e excreção renal: a litemia deve ser repetida a cada mudança de dose, desidratação ou introdução de diurético, AINE ou IECA, que reduzem sua depuração e podem levar à intoxicação. Lembre que hemograma seriado é monitorização da clozapina, não do lítio."
+    },
+    {
+      "question": "Homem de 52 anos, sem antecedente psiquiátrico, tem há três meses crises de cefaleia intensa, sudorese profusa e palpitação, com PA de 210/120 mmHg medida numa delas. Entre as crises, a PA é normal. Antes de diagnosticar transtorno de pânico, qual exame se impõe?",
+      "options": [
+        "Dosagem de metanefrinas, pela suspeita de feocromocitoma",
+        "Eletroencefalograma, pela suspeita de epilepsia temporal",
+        "Teste ergométrico, pela suspeita de síndrome coronariana",
+        "Nenhum, pois crises paroxísticas com medo já bastam"
+      ],
+      "correctIndex": 0,
+      "explanation": "(Psiquiatria · Ansiedade) Transtorno de ansiedade só se diagnostica se o quadro não for atribuível a substância ou a outra condição médica. Início tardio sem história prévia e crises de cefaleia, sudorese e palpitação com hipertensão paroxística apontam feocromocitoma, investigado pelas metanefrinas. Fechar o diagnóstico de pânico pelo padrão das crises, sem investigar, é o erro."
+    },
+    {
+      "question": "No transtorno de ansiedade generalizada de um paciente com história de dependência de álcool, qual é a estratégia farmacológica mais adequada?",
+      "options": [
+        "ISRS ou IRSN associado à TCC, evitando benzodiazepínico",
+        "Clonazepam em dose fixa, pela rapidez de ação ansiolítica",
+        "Propranolol diário, por controlar os sintomas somáticos",
+        "Alprazolam se necessário, por ter meia-vida mais curta"
+      ],
+      "correctIndex": 0,
+      "explanation": "(Psiquiatria · Ansiedade) A primeira linha do TAG é ISRS ou IRSN associado à TCC. O benzodiazepínico age rápido, mas causa tolerância e dependência e soma depressão respiratória com álcool — deve ser evitado em quem tem história de uso de substâncias, seja em dose fixa ou 'se necessário'. O propranolol serve apenas à ansiedade de desempenho."
+    },
+    {
+      "question": "Homem de 48 anos, etilista pesado, internado para herniorrafia, passa a ouvir vozes que o insultam cerca de 30 horas após a última dose de álcool. Está orientado no tempo e no espaço, atento, sem febre e com sinais vitais estáveis. Qual o diagnóstico mais provável?",
+      "options": [
+        "Alucinose alcoólica, com consciência clara e alucinação auditiva",
+        "Delirium tremens, pela presença de alucinações na abstinência",
+        "Esquizofrenia de início tardio, desmascarada pela abstinência",
+        "Encefalopatia de Wernicke, pelas alterações da sensopercepção"
+      ],
+      "correctIndex": 0,
+      "explanation": "(Psiquiatria · Uso de substâncias) A alucinose alcoólica surge entre 12 e 48 horas após a última dose, com alucinações sobretudo auditivas e consciência clara. O delirium tremens também tem alucinações, mas é mais tardio (48 a 96 horas) e traz desorientação, flutuação, alucinações visuais, febre e instabilidade autonômica — tudo ausente aqui."
+    },
+    {
+      "question": "Ao contar os critérios de transtorno por uso de substância, como devem ser consideradas a tolerância e a abstinência surgidas com opioide usado corretamente sob prescrição médica?",
+      "options": [
+        "Não contam, pois surgem do uso sob supervisão médica",
+        "Contam como dois critérios e já fecham o diagnóstico",
+        "Contam apenas se o paciente referir fissura associada",
+        "Valem em dobro, por serem critérios farmacológicos"
+      ],
+      "correctIndex": 0,
+      "explanation": "(Psiquiatria · Uso de substâncias) Tolerância e abstinência não são obrigatórias para o diagnóstico e não contam quando decorrem de medicação usada sob supervisão médica, como opioide para dor ou benzodiazepínico prescrito. O diagnóstico exige 2 ou mais dos 11 critérios em 12 meses — controle prejudicado, prejuízo social, uso arriscado —, não apenas adaptação farmacológica."
+    },
+    {
+      "question": "Homem de 70 anos, etilista com cirrose descompensada (Child-Pugh C), internado por hemorragia digestiva, apresenta 18 horas após a última dose tremor, sudorese, taquicardia, hipertensão, insônia e ansiedade. Qual o tratamento mais adequado da abstinência?",
+      "options": [
+        "Lorazepam, guiado por escala de abstinência como a CIWA-Ar",
+        "Diazepam em dose alta, por ter meia-vida longa e metabólitos",
+        "Clonidina isolada, para evitar o acúmulo de benzodiazepínico",
+        "Haloperidol, para controlar a agitação sem sedar o paciente"
+      ],
+      "correctIndex": 0,
+      "explanation": "(Psiquiatria · Uso de substâncias) A abstinência alcoólica trata-se com benzodiazepínico, com dose guiada pela CIWA-Ar; na hepatopatia grave e no idoso prefere-se o lorazepam. Clonidina e betabloqueador são apenas adjuvantes: sozinhos mascaram os sinais sem prevenir convulsão nem delirium. O diazepam, de metabólitos ativos e longa duração, acumula no cirrótico."
+    },
+    {
+      "question": "Qual distúrbio eletrolítico e ácido-básico é esperado no abuso crônico de laxantes como método purgativo?",
+      "options": [
+        "Hipocalemia com acidose metabólica por perda de bicarbonato",
+        "Hipocalemia com alcalose metabólica hipoclorêmica",
+        "Hipercalemia com acidose metabólica de ânion gap aumentado",
+        "Hiponatremia isolada, sem distúrbio do equilíbrio ácido-básico"
+      ],
+      "correctIndex": 0,
+      "explanation": "(Psiquiatria · Transtornos alimentares) O laxante faz perder bicarbonato e potássio pelas fezes: hipocalemia com acidose metabólica. É o vômito autoinduzido que produz hipocalemia com alcalose metabólica hipoclorêmica, pela perda de ácido clorídrico — a troca entre os dois métodos purgativos é a pegadinha clássica."
+    },
+    {
+      "question": "Qual é a abordagem terapêutica recomendada no transtorno de compulsão alimentar periódica?",
+      "options": [
+        "TCC e lisdexanfetamina, evitando dieta muito restritiva",
+        "Dieta de 800 kcal para perda de peso rápida e sustentada",
+        "Fluoxetina em dose alta, como na bulimia nervosa",
+        "Bupropiona, pelo efeito sobre a impulsividade e o peso"
+      ],
+      "correctIndex": 0,
+      "explanation": "(Psiquiatria · Transtornos alimentares) No TCAP o alvo é a impulsividade: TCC e lisdexanfetamina, único fármaco aprovado especificamente, com topiramato como alternativa. Dieta muito restritiva intensifica o ciclo restrição-compulsão, e ISRS no TCAP puro aumenta a busca por carboidratos sem controlar a perda de controle — fluoxetina em dose alta é escolha da bulimia."
+    },
+    {
+      "question": "Mulher de 40 anos, recém-divorciada, mora sozinha em outra cidade, longe da família, e é trazida pelo SAMU após ingerir 40 comprimidos de amitriptilina; é a sua segunda tentativa de suicídio no ano. Estabilizada clinicamente, qual o nível de cuidado indicado?",
+      "options": [
+        "Internação, pela letalidade, reiteração e ausência de rede de apoio",
+        "Ambulatório, já que a paciente sobreviveu sem sequelas clínicas",
+        "Alta com retorno na UBS, pois a tentativa foi impulsiva e reativa",
+        "Psicoterapia isolada, pois a medicação foi o meio da tentativa"
+      ],
+      "correctIndex": 0,
+      "explanation": "(Psiquiatria · Investigação) A avaliação de risco define o nível de cuidado — internação, CAPS ou ambulatório — e pesa a letalidade do método, a reiteração da tentativa e a rede de apoio. Método de alta letalidade, segunda tentativa e isolamento configuram risco elevado, que indica internação. Ter sobrevivido sem sequela clínica não reduz o risco psiquiátrico."
+    },
+    {
+      "question": "Mulher de 27 anos, com IMC de 38 kg/m², refere cefaleia holocraniana diária há dois meses e episódios de escurecimento visual transitório. O fundo de olho mostra papiledema bilateral. A ressonância com venografia é normal, e a punção lombar tem pressão de abertura elevada com líquor de composição normal. Qual o diagnóstico e a conduta?",
+      "options": [
+        "Hipertensão intracraniana idiopática; acetazolamida e perda de peso",
+        "Enxaqueca crônica; profilaxia com topiramato e reavaliação",
+        "Trombose venosa cerebral; anticoagulação plena imediata",
+        "Cefaleia tipo tensão crônica; amitriptilina em dose baixa"
+      ],
+      "correctIndex": 0,
+      "explanation": "(Neurologia · Cefaleias) Mulher jovem e obesa com papiledema, neuroimagem normal e pressão liquórica elevada tem hipertensão intracraniana idiopática, tratada com acetazolamida e perda de peso. O rótulo 'benigna' caiu porque o risco é a perda visual. A venografia normal afasta a trombose venosa cerebral, o principal diferencial."
+    },
+    {
+      "question": "Mulher de 34 anos, com IMC de 33 kg/m² e asma em tratamento, tem enxaqueca com quatro crises fortes por mês e usa analgésicos com frequência. Deseja perder peso e não planeja engravidar. Qual profilático é o mais adequado?",
+      "options": [
+        "Topiramato, que tende a reduzir o peso corporal",
+        "Propranolol, profilático de escolha nas crises fortes",
+        "Amitriptilina, pela eficácia comprovada na enxaqueca",
+        "Pizotifeno, por ter poucos efeitos e não exigir controle"
+      ],
+      "correctIndex": 0,
+      "explanation": "(Neurologia · Cefaleias) Duas ou mais crises fortes por mês com uso frequente de medicação de crise indicam profilaxia. O topiramato é profilático de primeira linha e tende a reduzir o peso, o que o torna interessante no obeso. O propranolol, escolha natural no hipertenso, é contraindicado na asma; amitriptilina e pizotifeno aumentam o apetite e o peso."
+    },
+    {
+      "question": "Mulher de 31 anos, dois dias após cesariana sob raquianestesia, refere cefaleia frontoccipital intensa que surge minutos depois de ficar em pé e alivia ao deitar. Está afebril, sem rigidez de nuca, sem déficits e com PA normal. Qual a hipótese mais provável?",
+      "options": [
+        "Hipotensão liquórica, por cefaleia que alivia ao deitar",
+        "Hipertensão intracraniana, por cefaleia de início recente",
+        "Trombose venosa cerebral, pelo contexto de puerpério",
+        "Hemorragia subaracnóidea, pela relação com o procedimento"
+      ],
+      "correctIndex": 0,
+      "explanation": "(Neurologia · Cefaleias) Cefaleia ortostática — piora em pé e alivia ao deitar — após punção dural é hipotensão liquórica. A hipertensão intracraniana faz o oposto: piora ao deitar e ao acordar. O puerpério é sinal de alarme para trombose venosa cerebral, mas ela não tem esse padrão postural e costuma trazer convulsões, déficits focais ou papiledema."
+    },
+    {
+      "question": "Na enxaqueca, quando a dor volta horas depois de uma boa resposta inicial ao triptano, qual a conduta recomendada?",
+      "options": [
+        "Associar um anti-inflamatório não hormonal ao triptano",
+        "Ergotamina, que tem maior efeito quando usada tardiamente",
+        "Dexametasona parenteral, por se tratar de estado de mal",
+        "Iniciar profilaxia com valproato a partir desta crise"
+      ],
+      "correctIndex": 0,
+      "explanation": "(Neurologia · Cefaleias) A recorrência após o triptano é comum — 30 a 40% em 24 horas com o sumatriptano — e a conduta é associar um AINH. Os ergóticos só funcionam se tomados cedo; tardiamente não têm efeito. Corticoide parenteral é reservado ao estado de mal enxaquecoso, crise com mais de 72 horas."
+    },
+    {
+      "question": "Vítima de queda de escada chega ao pronto-socorro abrindo os olhos quando chamada em voz alta, emitindo apenas sons incompreensíveis e, ao estímulo doloroso no leito ungueal, aduz e flete os braços, com flexão de punhos e dedos e extensão das pernas. Qual o escore de Glasgow e sua implicação?",
+      "options": [
+        "8, indicando coma grave e necessidade de proteger a via aérea",
+        "9, por somar abertura ao chamado com retirada ao estímulo",
+        "6, pois a postura em flexão anormal vale apenas um ponto",
+        "7, pois sons incompreensíveis valem apenas um ponto verbal"
+      ],
+      "correctIndex": 0,
+      "explanation": "(Neurologia · Coma) Abertura ocular ao estímulo verbal vale 3, sons ininteligíveis valem 2 e decorticação (padrão flexor anormal) vale 3: total 8. Glasgow igual ou menor que 8 define coma grave e indica proteger a via aérea. Retirada inespecífica vale 4, mas não descreve a postura em flexão anormal deste paciente."
+    },
+    {
+      "question": "Mulher de 35 anos, lúcida e sem déficit motor, nota no espelho a pupila direita muito dilatada e sem reação à luz, sem cefaleia, sem ptose e com motilidade ocular normal. Usa adesivo retroauricular de escopolamina para enjoo em viagens. Qual a hipótese mais provável?",
+      "options": [
+        "Midríase farmacológica por contato do anticolinérgico com o olho",
+        "Herniação uncal com compressão do III nervo à direita",
+        "Aneurisma de comunicante posterior comprimindo o oculomotor",
+        "Lesão mesencefálica ventral com pupila média e fixa"
+      ],
+      "correctIndex": 0,
+      "explanation": "(Neurologia · Coma) Anisocoria com pupila fixa em paciente lúcido, sem ptose, sem alteração da motilidade ocular e sem déficit motor obriga a pensar em colírio midriático ou contato com anticolinérgico — atropina e anticolinérgicos deixam a pupila midriática e fixa. A herniação uncal vem com rebaixamento da consciência, e a compressão do III nervo por aneurisma costuma trazer ptose e déficit de adução."
+    },
+    {
+      "question": "No paciente em coma, o desvio conjugado dos olhos para o mesmo lado da hemiplegia sugere lesão em qual local?",
+      "options": [
+        "Ponte, do lado oposto ao da hemiplegia",
+        "Hemisfério do mesmo lado da hemiplegia",
+        "Hemisfério do lado oposto ao da hemiplegia",
+        "Tálamo, do mesmo lado do desvio do olhar"
+      ],
+      "correctIndex": 0,
+      "explanation": "(Neurologia · Coma) Na lesão pontina, o centro do olhar horizontal do lado lesado falha e os olhos desviam para o lado oposto, onde está a hemiplegia, porque o trato corticoespinal ainda não decussou: 'os olhos olham para a hemiplegia'. Na lesão supratentorial, os olhos olham para a lesão e a hemiplegia é contralateral — ou seja, os olhos fogem da hemiplegia."
+    },
+    {
+      "question": "Homem de 25 anos com traumatismo cranioencefálico grave está em Glasgow 3, sem reflexos de tronco, há 8 horas sob tratamento hospitalar. Tem temperatura de 34,2 °C, PAM de 72 mmHg e SatO₂ de 97%, sem sedativos nas últimas 48 horas. Qual o próximo passo antes de iniciar o protocolo de morte encefálica?",
+      "options": [
+        "Reaquecer o paciente até temperatura acima de 35 °C",
+        "Fazer já o teste de apneia, com os requisitos atingidos",
+        "Elevar a PAM acima de 90 mmHg com um vasopressor",
+        "Aguardar 24 horas, o tempo mínimo exigido no trauma"
+      ],
+      "correctIndex": 0,
+      "explanation": "(Neurologia · Coma) Pela Resolução CFM 2.173/2017, o protocolo exige temperatura acima de 35 °C, SatO₂ acima de 94% e PAS ≥ 100 mmHg ou PAM ≥ 65 mmHg, após no mínimo 6 horas de tratamento — 24 horas só na encefalopatia hipóxico-isquêmica. Aqui apenas a hipotermia impede o início, e ela pode simular a ausência de reflexos de tronco."
+    },
+    {
+      "question": "Mulher de 72 anos, analfabeta, é trazida pela filha por esquecimentos ocasionais. Faz 19 pontos no Miniexame do Estado Mental e, no Questionário de Pfeffer respondido pela filha, soma 2 pontos, mantendo compras, finanças e remédios por conta própria. Como interpretar a avaliação?",
+      "options": [
+        "Não fecha demência: MEEM acima do corte e Pfeffer normal",
+        "Demência leve, pois o MEEM está abaixo de 24 pontos",
+        "Demência moderada, pelo Pfeffer alterado acima de 1 ponto",
+        "Demência confirmada, pois o MEEM independe da escolaridade"
+      ],
+      "correctIndex": 0,
+      "explanation": "(Neurologia · Demências) No Miniexame, maior é melhor e o corte para analfabetos é 18: 19 está acima. No Pfeffer, maior é pior, o corte é 5 e a escolaridade não interfere: 2 é normal. Sem comprovação objetiva de déficit e de repercussão funcional, não se fecha demência — segue-se em acompanhamento. Aplicar o corte de 24 a quem nunca estudou produz falso-positivo."
+    },
+    {
+      "question": "Homem de 74 anos tem doença de Parkinson há nove anos, com tremor de repouso e boa resposta à levodopa. Há um ano passou a ter lentidão do raciocínio e dificuldade para planejar tarefas, com perda progressiva de autonomia. Qual o diagnóstico mais provável do quadro cognitivo?",
+      "options": [
+        "Demência da doença de Parkinson, pelo motor anos antes",
+        "Demência com corpos de Lewy, pelo parkinsonismo associado",
+        "Doença de Alzheimer com parkinsonismo tardio e discreto",
+        "Paralisia supranuclear progressiva, pela demência executiva"
+      ],
+      "correctIndex": 0,
+      "explanation": "(Neurologia · Demências) A cronologia organiza o diferencial: quando a queixa motora precede a cognição por anos, trata-se de demência da doença de Parkinson, que surge em cerca de 20% dos pacientes, em geral na fase avançada. Na demência com corpos de Lewy, declínio cognitivo e parkinsonismo se instalam juntos, dentro de cerca de um ano, e a resposta à levodopa é apenas parcial."
+    },
+    {
+      "question": "Mulher de 55 anos refere há quatro meses fala anasalada e engasgos que pioram ao fim do dia e após conversas longas, além de pálpebras caídas à noite. Ao exame, não há atrofia nem fasciculações de língua, e os reflexos são normais. Qual o diagnóstico mais provável?",
+      "options": [
+        "Miastenia gravis, pela fatigabilidade com ptose e reflexos normais",
+        "ELA de início bulbar, pela disfagia e disartria progressivas",
+        "Mielopatia cervical espondilótica com acometimento bulbar",
+        "Doença de Kennedy, pela fraqueza bulbar de evolução lenta"
+      ],
+      "correctIndex": 0,
+      "explanation": "(Neurologia · ELA) Fatigabilidade com piora ao longo do dia, ptose e ausência de atrofia, fasciculação e alteração de reflexos apontam miastenia gravis. A ELA bulbar também causa disartria e disfagia, mas com língua atrófica e fasciculando, sem flutuação diária e com motricidade ocular poupada. A mielopatia cervical, por sua vez, poupa a musculatura bulbar."
+    },
+    {
+      "question": "Na perda auditiva induzida por ruído já instalada, o que se espera da audição quando a exposição ao ruído é interrompida?",
+      "options": [
+        "Não regride, mas deixa de progredir se cessar a exposição",
+        "Regride em semanas após o afastamento da fonte de ruído",
+        "Continua progredindo no mesmo ritmo, mesmo sem exposição",
+        "Melhora com corticoide sistêmico, se iniciado logo"
+      ],
+      "correctIndex": 0,
+      "explanation": "(Otorrino · Disacusias) A PAIR instalada é mudança permanente de limiar (PTS): as células ciliadas mortas não se recuperam, então a perda não regride, mas para de progredir quando cessa o estímulo. A recuperação com repouso acústico é própria da mudança temporária de limiar (TTS), após exposição pontual como um show."
+    },
+    {
+      "question": "Homem de 45 anos em tratamento de tuberculose multirresistente com amicacina há seis semanas passa a referir zumbido bilateral. A audiometria mostra perda neurossensorial bilateral e simétrica de 35 dB em 6 e 8 kHz. Qual a conduta mais adequada?",
+      "options": [
+        "Discutir risco-benefício com a infectologia e monitorar a audição",
+        "Suspender toda medicação de imediato, pois a lesão é reversível",
+        "Manter a droga sem monitorizar, pois a perda é só de agudos",
+        "Indicar implante coclear, pela perda neurossensorial instalada"
+      ],
+      "correctIndex": 0,
+      "explanation": "(Otorrino · Disacusias) Perda neurossensorial acima de 25 dB em frequências entre 250 e 8000 Hz, bilateral e simétrica, durante aminoglicosídeo, é ototoxicidade — e a amicacina é a mais cocleotóxica. Ototoxicidade é decisão de risco-benefício, não contraindicação absoluta: diante de infecção grave a vida prevalece, e a audição é monitorada. A perda de célula ciliada é em geral irreversível."
+    },
+    {
+      "question": "Menino de 8 anos com perda auditiva neurossensorial moderada bilateral usa AASI bilateral bem adaptado e entende bem em casa, mas a professora relata que ele perde boa parte das explicações em classe, num ambiente ruidoso. Qual recurso é o mais indicado?",
+      "options": [
+        "Sistema FM, que melhora a relação sinal/ruído na escola",
+        "Implante coclear, por falha do aparelho de amplificação",
+        "Trocar o AASI bilateral por adaptação apenas unilateral",
+        "Estapedotomia, para reduzir o componente condutivo"
+      ],
+      "correctIndex": 0,
+      "explanation": "(Otorrino · Disacusias) O sistema FM leva a voz do professor por rádio direto ao receptor acoplado ao aparelho, melhorando a relação sinal/ruído e a compreensão — é instrumento de inclusão escolar, não substituto do AASI. O implante coclear é para perdas profundas sem benefício da amplificação, e a adaptação do AASI costuma ser bilateral."
+    },
+    {
+      "question": "Mãe de menina de 7 anos pede amigdalectomia: conta umas oito amigdalites no último ano, tratadas em casa com xarope, sem consulta, febre medida ou exame. Ao exame, tonsilas grau II, sem roncos nem pausas respiratórias. Qual a conduta?",
+      "options": [
+        "Documentar os próximos episódios antes de indicar cirurgia",
+        "Indicar amigdalectomia, pelos sete ou mais episódios no ano",
+        "Indicar adenoamigdalectomia, pela hiperplasia tonsilar",
+        "Prescrever penicilina benzatina mensal como profilaxia"
+      ],
+      "correctIndex": 0,
+      "explanation": "(Otorrino · Faringotonsilites) Os critérios de Paradise — 7 episódios em 1 ano, 5 por ano em 2 anos ou 3 por ano em 3 anos — só contam episódios documentados com febre acima de 38 °C, adenopatia cervical dolorosa ou teste positivo para estreptococo, tratados com antibiótico. A 'amigdalite' relatada pela família sem registro pode ser faringite viral e não entra na conta."
+    },
+    {
+      "question": "Homem de 52 anos, IMC de 33 kg/m², tem ronco alto, pausas respiratórias testemunhadas e cochila dirigindo. Toma clonazepam toda noite para dormir e bebe cerveja diariamente. A polissonografia mostra índice de apneia-hipopneia de 38 eventos por hora, com dessaturações. Qual a conduta mais adequada?",
+      "options": [
+        "CPAP titulado, perda de peso e suspensão do benzodiazepínico",
+        "Uvulopalatofaringoplastia como tratamento inicial definitivo",
+        "Aparelho intraoral de avanço mandibular como primeira escolha",
+        "Manter o benzodiazepínico para melhorar a qualidade do sono"
+      ],
+      "correctIndex": 0,
+      "explanation": "(Otorrino · SAOS) IAH acima de 30 é SAOS grave, cujo tratamento de escolha é o CPAP com pressão titulada em nova polissonografia, somado a medidas gerais: perda de peso e suspensão do álcool e do benzodiazepínico, agravantes que aumentam a hipotonia da faringe. A cirurgia rende mais em jovens não obesos, e o aparelho intraoral é para SAOS leve a moderada ou para quem não se adapta ao CPAP."
+    },
+    {
+      "question": "Qual alteração de voz é esperada após a adenoamigdalectomia e qual o seu curso habitual?",
+      "options": [
+        "Voz hipernasal por insuficiência velofaríngea, em geral temporária",
+        "Voz hiponasal por hiperplasia residual da adenoide, definitiva",
+        "Voz abafada em batata quente, por edema persistente das lojas",
+        "Rouquidão por lesão do nervo laríngeo recorrente, definitiva"
+      ],
+      "correctIndex": 0,
+      "explanation": "(Otorrino · Faringotonsilites) Após a cirurgia, o escape de ar pelo nariz produz voz hipernasal por insuficiência velofaríngea, que é temporária — exceto na fenda palatina submucosa, que por isso é contraindicação e precisa ser procurada antes. Voz hiponasal é a da adenoide que obstrui a rinofaringe; voz em batata quente é a das tonsilas volumosas ou do abscesso periamigdaliano."
+    },
+    {
+      "question": "Homem de 68 anos, hipertenso, nota há duas horas desvio da comissura labial para a esquerda e dificuldade para falar. Ao exame, franze a testa e fecha os olhos normalmente dos dois lados, com apagamento do sulco nasolabial direito e força reduzida no braço direito. Qual a conduta?",
+      "options": [
+        "Tratar como AVC: paralisia central, que poupa a musculatura frontal",
+        "Paralisia de Bell: corticoide oral e proteção ocular à direita",
+        "Síndrome de Ramsay Hunt: antiviral e corticoide em dose alta",
+        "Paralisia periférica: eletroneuromiografia em 72 horas"
+      ],
+      "correctIndex": 0,
+      "explanation": "(Otorrino · Urgências) A paralisia facial central poupa a fronte, que tem inervação cortical bilateral; somada a fraqueza no braço e alteração da fala, de instalação súbita num hipertenso, é AVC e segue o protocolo de AVC. A paralisia periférica, como a de Bell, acomete toda a hemiface, inclusive a testa, e Ramsay Hunt se reconhece pelas vesículas no pavilhão."
+    },
+    {
+      "question": "Homem de 30 anos, cinco dias após acidente de moto com trauma de face e crânio, refere gotejamento de líquido claro e aquoso pela narina esquerda, que piora ao inclinar a cabeça para a frente. Qual a hipótese e o exame que a confirma?",
+      "options": [
+        "Fístula liquórica; dosagem de beta-2-transferrina no líquido",
+        "Rinite vasomotora pós-traumática; prova com anti-histamínico",
+        "Hematoma septal infectado; drenagem e cultura da secreção",
+        "Sinusite maxilar aguda; tomografia dos seios da face"
+      ],
+      "correctIndex": 0,
+      "explanation": "(Otorrino · Urgências) Rinorreia clara e aquosa após trauma de face ou crânio é fístula liquórica até prova em contrário, e a confirmação vem da dosagem de beta-2-transferrina no líquido coletado. O hematoma septal se apresenta como abaulamento arroxeado e obstrução nasal, não como gotejamento claro."
+    },
+    {
+      "question": "Homem de 70 anos internado com tamponamento anteroposterior por epistaxe posterior volta a sangrar volumosamente pela orofaringe após 48 horas, apesar de PA controlada e coagulação normal. Qual o próximo passo?",
+      "options": [
+        "Ligadura ou cauterização endoscópica da artéria esfenopalatina",
+        "Cauterização química bilateral do septo com nitrato de prata",
+        "Retirar o tampão e manter compressão digital por 15 minutos",
+        "Trocar por tamponamento anterior com gaze vaselinada"
+      ],
+      "correctIndex": 0,
+      "explanation": "(Otorrino · Urgências) A epistaxe posterior vem de ramos da artéria esfenopalatina; refratária ao tamponamento anteroposterior, o passo seguinte é a cauterização ou ligadura endoscópica da esfenopalatina, ou a embolização. Nitrato de prata e tamponamento anterior são etapas iniciais do sangramento anterior visível — e cauterizar os dois lados do septo ao mesmo tempo arrisca perfurá-lo."
+    },
+    {
+      "question": "Homem de 50 anos com diabetes recém-descompensado (glicemia de 380 mg/dL) refere visão de longe embaçada há duas semanas. A refração mostra miopia nova nos dois olhos, o cristalino está transparente à lâmpada de fenda e o fundo de olho não tem retinopatia. Qual a conduta mais adequada?",
+      "options": [
+        "Miopização transitória pela hiperglicemia; controlar a glicemia",
+        "Catarata nuclear incipiente; indicar facoemulsificação",
+        "Catarata subcapsular posterior; trocar os óculos agora",
+        "Edema macular diabético; anti-VEGF intravítreo imediato"
+      ],
+      "correctIndex": 0,
+      "explanation": "(Oftalmo · Catarata) O pico glicêmico muda transitoriamente o grau: o diabético descompensado pode chegar míope sem ter catarata nova, e a refração só se estabiliza com o controle glicêmico. Com cristalino transparente não há catarata a operar, e prescrever óculos agora daria um grau que muda de novo. O diabetes causa, sim, catarata subcapsular posterior precoce, mas ela seria visível à biomicroscopia."
+    },
+    {
+      "question": "Qual é o critério para indicar a cirurgia de catarata no adulto?",
+      "options": [
+        "Perda visual que não atende às necessidades do paciente",
+        "Acuidade visual abaixo de 20/200 no olho acometido",
+        "Catarata madura, para facilitar a retirada do núcleo",
+        "Qualquer opacidade visível no teste do reflexo vermelho"
+      ],
+      "correctIndex": 0,
+      "explanation": "(Oftalmo · Catarata) Nenhum colírio ou óculos reverte a opacidade, e a indicação da extração com implante de LIO é funcional: opera-se quando a visão deixa de atender às necessidades do paciente, não a partir de um valor fixo de acuidade. Esperar amadurecer é contraproducente — a catarata hipermadura arrisca glaucoma facolítico, e o núcleo duro exige mais energia de ultrassom."
+    },
+    {
+      "question": "Mulher de 58 anos, diabética tipo 2, tem acuidade visual de 20/30. A retinografia mostra poucos microaneurismas e um anel de exsudatos duros ao redor da fóvea, com espessamento macular; não há neovasos. Qual a conduta?",
+      "options": [
+        "Encaminhar com urgência e fazer OCT, por edema macular",
+        "Reavaliar em um ano, pois se trata de retinopatia leve",
+        "Panfotocoagulação imediata, pela forma proliferativa",
+        "Apenas otimizar a glicemia, já que a acuidade é boa"
+      ],
+      "correctIndex": 0,
+      "explanation": "(Oftalmo · Retinopatia diabética) Exsudatos duros em anel perifoveal com espessamento macular são edema macular diabético, que pode ocorrer em qualquer estágio, inclusive com retinopatia leve, e exige encaminhamento urgente. A OCT é o exame de escolha para confirmar e quantificar e, com o centro acometido, o tratamento inicial é anti-VEGF. Esperar a acuidade cair é tratar com dano já irreversível."
+    },
+    {
+      "question": "Na retinopatia diabética, o que a regra 4-2-1 exige para classificar a forma não proliferativa como grave?",
+      "options": [
+        "Qualquer um dos três critérios, isolado, sem neovasos",
+        "Os três critérios presentes ao mesmo tempo, sem neovasos",
+        "Dois dos três critérios, com ao menos um neovaso",
+        "IRMA em quatro quadrantes e veias em rosário em dois"
+      ],
+      "correctIndex": 0,
+      "explanation": "(Oftalmo · Retinopatia diabética) A regra 4-2-1 — hemorragias graves nos 4 quadrantes, veias em rosário em 2 ou mais, ou IRMA em 1 ou mais — classifica a forma não proliferativa grave com qualquer um dos critérios isolado, na ausência de neovasos. IRMA é remodelamento dentro da retina; o neovaso cresce sobre a superfície e define a forma proliferativa."
+    },
+    {
+      "question": "Homem de 63 anos, míope, viu flashes de luz há três dias no olho direito e hoje nota uma sombra escura que sobe a partir da parte de baixo do campo visual desse olho. A acuidade visual é de 20/25. Qual a interpretação e a conduta?",
+      "options": [
+        "Descolamento superior com mácula colada; cirurgia de urgência",
+        "Descolamento inferior, de evolução lenta; cirurgia eletiva",
+        "Descolamento do vítreo posterior isolado; observar e reavaliar",
+        "Oclusão de ramo arterial superior; investigar como AVC"
+      ],
+      "correctIndex": 0,
+      "explanation": "(Oftalmo · Descolamento de retina) O campo visual é invertido em relação à retina: sombra que vem de baixo corresponde a descolamento superior, que progride mais rápido porque o líquido desce por gravidade em direção à mácula. A acuidade preservada indica mácula colada — ainda há visão central a salvar, e a cirurgia é de urgência."
+    },
+    {
+      "question": "Homem de 70 anos, hipertenso, teve oclusão da veia central da retina do olho esquerdo, forma isquêmica, há três meses. Volta com dor ocular intensa, olho vermelho e pressão intraocular de 46 mmHg; a biomicroscopia mostra vasos finos e tortuosos sobre a íris. Qual o diagnóstico e o tratamento dirigido à causa?",
+      "options": [
+        "Glaucoma neovascular; anti-VEGF e panfotocoagulação da retina",
+        "Glaucoma agudo de ângulo fechado primário; iridotomia a laser",
+        "Uveíte anterior hipertensiva; corticoide tópico isolado",
+        "Endoftalmite endógena; antibiótico intravítreo imediato"
+      ],
+      "correctIndex": 0,
+      "explanation": "(Oftalmo · Oclusões vasculares) A retina isquêmica produz VEGF, que induz neovasos na íris e no ângulo e bloqueia a drenagem: é o glaucoma neovascular, o 'glaucoma dos 100 dias' da oclusão central isquêmica. Além de baixar a pressão, trata-se a causa com anti-VEGF, que regride os neovasos, e com panfotocoagulação, que destrói a retina isquêmica produtora de VEGF."
+    },
+    {
+      "question": "Na oclusão de ramo venoso da retina sem acometimento macular inicial, quais complicações orientam o seguimento?",
+      "options": [
+        "Edema macular e neovasos, com controle sistêmico da pressão",
+        "Nenhuma, pois a oclusão de ramo não tem complicações tardias",
+        "Glaucoma neovascular dos 100 dias, típico da oclusão de ramo",
+        "Descolamento exsudativo, que exige vitrectomia precoce"
+      ],
+      "correctIndex": 0,
+      "explanation": "(Oftalmo · Oclusões vasculares) A oclusão de ramo tem prognóstico melhor que a central porque atinge só um setor e formam-se colaterais, mas exige vigiar edema macular e, quando o setor isquêmico é grande, neovascularização retiniana com hemorragia vítrea. O controle de hipertensão, diabetes e dislipidemia protege o outro olho. O glaucoma dos 100 dias é marca da oclusão central isquêmica."
+    },
+    {
+      "question": "Homem de 40 anos, após traumatismo craniano em acidente de moto, refere visão dupla vertical e passou a manter a cabeça inclinada para o ombro esquerdo. Há hipertropia do olho direito, que aumenta quando a cabeça é inclinada para a direita. Qual o diagnóstico?",
+      "options": [
+        "Paralisia do IV nervo direito, com torcicolo compensatório",
+        "Paralisia do III nervo direito, pela hipertropia associada",
+        "Paralisia do VI nervo esquerdo, pela inclinação da cabeça",
+        "Exotropia intermitente descompensada após o trauma"
+      ],
+      "correctIndex": 0,
+      "explanation": "(Oftalmo · Estrabismo) Hipertropia do olho acometido, diplopia vertical e torcicolo para o ombro oposto compõem a paralisia do IV nervo (oblíquo superior); o aumento do desvio ao inclinar a cabeça para o lado do olho parético é a manobra de Bielschowsky positiva. O torcicolo não é vício postural: é a estratégia que mantém a fusão. O trauma craniano é a causa adquirida clássica."
+    },
+    {
+      "question": "Homem de 55 anos refere cefaleia intensa e visão dupla iniciadas há um dia. Ao exame, o olho direito tem ptose completa, está desviado para fora e levemente para baixo, e a pupila desse lado está dilatada e pouco reativa. Qual a conduta mais adequada?",
+      "options": [
+        "Neuroimagem vascular urgente para afastar aneurisma",
+        "Observar por 6 meses, como nas formas microvasculares",
+        "Toxina botulínica no reto lateral para alinhar o olho",
+        "Prescrever prisma vertical e reavaliar em 15 dias"
+      ],
+      "correctIndex": 0,
+      "explanation": "(Oftalmo · Estrabismo) Exotropia com hipotropia discreta, ptose e midríase compõem a paralisia do III nervo, e a associação de midríase obriga a afastar aneurisma comprimindo o nervo — investigação de urgência, sem esperar. A observação por até 6 meses vale para as formas vasculares sem essa suspeita, e o prisma vertical é recurso da paralisia discreta do IV nervo."
+    },
+    {
+      "question": "Mulher de 62 anos tem o terceiro episódio de dacriocistite aguda no mesmo olho. Após o controle da infecção com antibiótico, a dacriocistografia mostra o saco lacrimal cheio de contraste, sem passagem para a cavidade nasal. Qual o tratamento definitivo?",
+      "options": [
+        "Dacriocistorrinostomia, por obstrução baixa do ducto",
+        "Conjuntivodacriocistorrinostomia com tubo de Jones",
+        "Massagem de Crigler, por ser o primeiro tratamento",
+        "Antibiótico tópico contínuo, sem abordagem cirúrgica"
+      ],
+      "correctIndex": 0,
+      "explanation": "(Oftalmo · Via lacrimal) Dacriocistite de repetição denuncia obstrução de base; o saco que enche e não esvazia para o nariz indica obstrução baixa, no ducto nasolacrimal, com canalículos pérvios. Basta ligar o saco ao nariz: dacriocistorrinostomia. O tubo de Jones é para a obstrução alta, canalicular, e a massagem de Crigler trata a obstrução congênita do lactente."
+    },
+    {
+      "question": "No algoritmo da parada cardiorrespiratória em ritmo chocável, em que momento entram a adrenalina e a amiodarona?",
+      "options": [
+        "Adrenalina após o 2º choque; amiodarona após o 3º",
+        "Adrenalina já no 1º ciclo; amiodarona após o 2º",
+        "Amiodarona antes do 1º choque; adrenalina após o 3º",
+        "Ambas juntas, logo após a confirmação da FV"
+      ],
+      "correctIndex": 0,
+      "explanation": "(Práticas · PCR) No trilho chocável a prioridade é desfibrilar: a adrenalina 1 mg entra após o segundo choque e se repete a cada 3 a 5 minutos, e a amiodarona 300 mg em bolus entra após o terceiro, com segunda dose de 150 mg se a FV persistir. Adrenalina já no primeiro ciclo é regra do trilho não chocável."
+    },
+    {
+      "question": "Mulher de 67 anos em PCR tem linha reta no monitor; a equipe confere os cabos, aumenta o ganho e troca a derivação, confirmando assistolia. Um colega sugere atropina e desfibrilação com carga máxima. Qual a conduta correta?",
+      "options": [
+        "RCP e adrenalina o quanto antes, sem choque e sem atropina",
+        "Atropina 1 mg a cada 3 minutos até o máximo de 3 mg",
+        "Desfibrilação com energia máxima, pela chance de FV fina",
+        "Amiodarona 300 mg em bolus e reavaliação do ritmo"
+      ],
+      "correctIndex": 0,
+      "explanation": "(Práticas · PCR) Assistolia é ritmo não chocável: RCP de alta qualidade, adrenalina 1 mg o quanto antes e busca de causas reversíveis. A atropina saiu do algoritmo de AESP/assistolia desde 2010, e o protocolo da linha reta já afastou a FV fina — chocar assistolia não tem benefício. Amiodarona é exclusiva da FV/TVSP refratária."
+    },
+    {
+      "question": "Mulher de 64 anos, no quinto dia de pós-operatório de artroplastia de quadril e acamada, tem dispneia súbita e entra em PCR em AESP. A ultrassonografia à beira do leito mostra ventrículo direito muito dilatado, sem derrame pericárdico. Além da RCP e da adrenalina, o que considerar?",
+      "options": [
+        "Trombólise, pela suspeita de tromboembolismo pulmonar maciço",
+        "Pericardiocentese de alívio, pela suspeita de tamponamento",
+        "Descompressão torácica bilateral, por pneumotórax hipertensivo",
+        "Atropina em bolus, pela bradicardia comum na AESP"
+      ],
+      "correctIndex": 0,
+      "explanation": "(Práticas · PCR) Na AESP, a busca pelos 5 Hs e 5 Ts é o que mais rende. Pós-operatório ortopédico, imobilização, dispneia súbita e ventrículo direito dilatado sem derrame apontam tromboembolismo pulmonar, para o qual se considera trombólise durante a RCP. Sem derrame pericárdico não há tamponamento, e a atropina não tem papel na parada."
+    },
+    {
+      "question": "Durante a RCP de um adulto sem via aérea avançada, o residente ventila com bolsa-válvula-máscara de forma vigorosa e prolongada a cada 10 compressões, para combater a acidose. Como avaliar essa conduta?",
+      "options": [
+        "Erro: hiperventilar reduz o retorno venoso; fazer 30:2 com 1 s cada",
+        "Correto: mais ventilação compensa a acidose da parada cardíaca",
+        "Erro: sem via aérea avançada, deve-se fazer 15:2 no adulto",
+        "Correto: com bolsa-válvula-máscara não há limite de ventilação"
+      ],
+      "correctIndex": 0,
+      "explanation": "(Práticas · PCR) Sem via aérea avançada, a relação no adulto é de 30 compressões para 2 ventilações, cada uma com cerca de 1 segundo e só até elevar o tórax. Hiperventilar é erro: aumenta a pressão intratorácica e reduz o retorno venoso justamente quando a compressão tenta gerar débito, além de multiplicar as interrupções."
+    },
+    {
+      "question": "Após o retorno da circulação espontânea, quando deve ser feita a avaliação do prognóstico neurológico do adulto que permanece comatoso?",
+      "options": [
+        "Só após 72 horas da normotermia, combinando exame e testes",
+        "Já nas primeiras 24 horas, pela ausência de resposta motora",
+        "Pelo valor isolado do ETCO₂ registrado durante a reanimação",
+        "Pela tomografia de crânio feita na primeira hora após o RCE"
+      ],
+      "correctIndex": 0,
+      "explanation": "(Práticas · PCR) O prognóstico neurológico só se avalia a partir de 72 horas após a normotermia, combinando exame e testes — nunca um dado isolado. Antes disso, sedação, controle de temperatura e lesão em evolução tornam o exame pouco confiável. Até o ETCO₂ baixo durante a RCP pesa contra a chance de RCE, mas não decide nada sozinho."
+    },
+    {
+      "question": "Homem de 80 anos, acompanhado pela equipe de Saúde da Família por insuficiência cardíaca avançada, é encontrado morto pela esposa em casa, pela manhã. Não há sinais de violência, e a evolução era compatível com a doença. A médica da equipe vai ao domicílio. Qual a conduta quanto à Declaração de Óbito?",
+      "options": [
+        "A médica da equipe, após examinar o corpo, emite a DO",
+        "Encaminhar ao IML, pois o óbito ocorreu fora do hospital",
+        "Encaminhar ao SVO, pois não havia médico presente na hora",
+        "Emitir a DO por telefone, com base no prontuário da equipe"
+      ],
+      "correctIndex": 0,
+      "explanation": "(Práticas · Declaração de óbito) Morte natural de paciente com assistência médica: a DO cabe ao médico assistente ou, na sua falta, ao designado pela instituição, inclusive de programa como o Saúde da Família — sempre após examinar o corpo e constatar a morte pessoalmente. Morrer em casa não torna o óbito suspeito: o SVO é para causa desconhecida e o IML, para causa externa."
+    },
+    {
+      "question": "Homem de 65 anos, diabético tipo 2 há 20 anos, evoluiu com nefropatia diabética e doença renal crônica em hemodiálise. Faltou a duas sessões, chegou ao pronto-socorro com potássio de 8,2 mEq/L e morreu em assistolia refratária. Qual é a causa básica a registrar na Declaração de Óbito?",
+      "options": [
+        "Diabetes mellitus tipo 2, que iniciou a cadeia de eventos",
+        "Parada cardiorrespiratória, evento que encerrou o quadro",
+        "Hipercalemia, por ser a afecção mais próxima da morte",
+        "Doença renal crônica, por exigir diálise regular"
+      ],
+      "correctIndex": 0,
+      "explanation": "(Práticas · Declaração de óbito) A causa básica é a doença que iniciou toda a cadeia — o diabetes —, registrada na última linha preenchida da Parte I. A hipercalemia, afecção mais próxima da morte, é a causa imediata (linha a), com doença renal crônica e nefropatia diabética como intermediárias. Parada cardiorrespiratória é termo vago e nunca deve constar como causa."
+    },
+    {
+      "question": "Gestante com 19 semanas entra em trabalho de parto prematuro. O feto nasce com batimentos cardíacos e movimentos respiratórios, pesando 380 g e medindo 22 cm, e morre 15 minutos depois. Qual a conduta quanto à Declaração de Óbito?",
+      "options": [
+        "Emitir DO, pois nasceu vivo, independente de peso e idade",
+        "Não emitir DO, pois o feto tem menos de 500 gramas",
+        "Não emitir DO, pois a gestação tem menos de 20 semanas",
+        "Emitir DO só se a estatura do feto passar de 25 cm"
+      ],
+      "correctIndex": 0,
+      "explanation": "(Práticas · Declaração de óbito) Houve nascimento com vida, então a DO é obrigatória independentemente da duração da gestação, do peso e do tempo de sobrevida. Os critérios de 20 semanas, 500 g ou 25 cm só se aplicam ao óbito fetal, quando não há nascimento com vida — e aí basta um deles para exigir a DO."
+    },
+    {
+      "question": "Homem de 70 anos, com cirrose hepática alcoólica confirmada e diabetes tipo 2 controlado há dez anos, é internado com peritonite bacteriana espontânea e morre em choque séptico três dias depois. Como registrar essas condições na Declaração de Óbito?",
+      "options": [
+        "Cirrose como causa básica e diabetes na Parte II",
+        "Diabetes como causa básica e cirrose na Parte II",
+        "Choque séptico como causa básica e cirrose na Parte II",
+        "Cirrose e diabetes juntos na mesma linha da Parte I"
+      ],
+      "correctIndex": 0,
+      "explanation": "(Práticas · Declaração de óbito) A Parte I traz a cadeia causal, com um diagnóstico por linha: choque séptico (imediata), devido a peritonite bacteriana espontânea, devida a cirrose hepática alcoólica — a causa básica. O diabetes pode ter agravado o estado geral, mas não é elo da cadeia: vai para a Parte II. Choque séptico é a causa imediata, nunca a básica."
+    }
+  ]
+}

@@ -1,0 +1,1195 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Simulado SCA III</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;450;500;600&display=swap" rel="stylesheet">
+<style>
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0}
+  body{background:#f5f3ef;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+  button{font:inherit;color:inherit;font-family:'IBM Plex Sans',system-ui,sans-serif}
+  a{color:#2b57cc;text-decoration:none}
+  a:hover{color:#1e3f9c;text-decoration:underline}
+  @keyframes qFade{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+  @keyframes qDrawer{from{opacity:0;transform:translateY(-4px)}to{opacity:1;transform:none}}
+
+  /* hovers — no canvas eram style-hover, aqui viram CSS de verdade */
+  .h-dark:hover{background:#2b57cc!important;transform:translateY(-1px)}
+  .h-darkflat:hover{background:#2b57cc!important}
+  .h-line:hover{border-color:#121a2b!important}
+  .h-ink:hover{color:#121a2b!important}
+  .h-opt:not(.locked):hover{border-color:var(--hbd)!important;transform:translateY(-1px)}
+  .h-card:hover{border-color:#121a2b!important;transform:translateY(-2px)}
+
+  /* tipografia do resumo */
+  .rsm{font-size:16.5px;line-height:1.72;color:#2a3141;max-width:64ch}
+  .rsm h2{font-family:'Newsreader',Georgia,serif;font-size:27px;font-weight:500;letter-spacing:-.02em;line-height:1.2;margin:42px 0 14px;padding-top:20px;border-top:1px solid #e4e0d8;text-wrap:pretty}
+  .rsm h2:first-child{margin-top:0;padding-top:0;border-top:0}
+  .rsm h3{font-family:'Newsreader',Georgia,serif;font-size:20px;font-weight:600;letter-spacing:-.01em;margin:28px 0 10px;text-wrap:pretty}
+  .rsm h4{font-family:'IBM Plex Mono',monospace;font-size:11px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:#2b57cc;margin:24px 0 8px}
+  .rsm p{margin:0 0 15px;text-wrap:pretty}
+  .rsm ul,.rsm ol{margin:0 0 15px;padding-left:22px}
+  .rsm li{margin-bottom:7px;text-wrap:pretty}
+  .rsm li>ul,.rsm li>ol{margin:7px 0 0}
+  .rsm strong{font-weight:600;color:#121a2b}
+  .rsm em{font-style:italic}
+  .rsm code{font-family:'IBM Plex Mono',monospace;font-size:.88em;background:#efece5;border:1px solid #e4e0d8;border-radius:5px;padding:1px 5px}
+  .rsm hr{border:0;border-top:1px solid #e4e0d8;margin:32px 0}
+  .rsm blockquote{margin:0 0 18px;padding:15px 18px;background:#f7f6f2;border-left:2.5px solid #2b57cc;border-radius:0 12px 12px 0;font-size:15px;line-height:1.65;color:#39404f}
+  .rsm blockquote p:last-child{margin-bottom:0}
+  .rsm .tbl{overflow-x:auto;margin:0 0 20px;border:1px solid #e4e0d8;border-radius:12px;background:#fff}
+  .rsm table{border-collapse:collapse;width:100%;font-size:14px;line-height:1.5}
+  .rsm th{text-align:left;font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.09em;text-transform:uppercase;color:#8a8578;font-weight:600;padding:11px 14px;background:#faf9f6;border-bottom:1px solid #e4e0d8;white-space:nowrap}
+  .rsm td{padding:11px 14px;border-bottom:1px solid #efece5;vertical-align:top;text-wrap:pretty}
+  .rsm tr:last-child td{border-bottom:0}
+  .rsm .key{background:#f2f6fb;border:1px solid #d6e2f4;border-radius:12px;padding:16px 18px;margin:0 0 18px}
+  .rsm .key>*:last-child{margin-bottom:0}
+
+  /* figuras — no resumo e na questao */
+  .fig{margin:0 0 20px;background:#fff;border:1px solid #e4e0d8;border-radius:14px;overflow:hidden}
+  .fig img{display:block;width:100%;height:auto;cursor:zoom-in}
+  .fig figcaption{font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.06em;color:#8a8578;padding:9px 13px;border-top:1px solid #efece5;background:#faf9f6;text-wrap:pretty}
+  .qfig{margin:0 0 20px}
+
+  /* lightbox */
+  #lb{position:fixed;inset:0;z-index:90;background:rgba(18,26,43,.86);display:none;align-items:center;justify-content:center;padding:24px;cursor:zoom-out}
+  #lb.on{display:flex;animation:qFade .16s ease}
+  #lb img{max-width:100%;max-height:100%;border-radius:10px;box-shadow:0 24px 60px rgba(0,0,0,.5)}
+
+  @media(max-width:560px){
+    .rsm{font-size:16px}
+    .rsm h2{font-size:24px}
+    .home-grid{grid-template-columns:1fr!important}
+  }
+</style>
+</head>
+<body>
+
+<div style="min-height:100vh;background:#f5f3ef;color:#121a2b;font-family:'IBM Plex Sans',system-ui,sans-serif">
+  <header style="position:sticky;top:0;z-index:30;background:rgba(245,243,239,.94);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid #e4e0d8">
+    <div style="max-width:720px;margin:0 auto;padding:12px 16px 10px" id="hdr"></div>
+  </header>
+  <main style="max-width:720px;margin:0 auto;padding:0 16px 80px" id="stage"></main>
+</div>
+<div id="lb"><img alt=""></div>
+
+<script type="text/html" id="resumoSrc"><p>Faça o simulado antes de abrir esta página. Depois, use cada tabela para localizar os temas em que errou — a explicação de cada questão começa com a área e o tema — e volte ao material daquela aula. As tabelas dizem o que foi cobrado, não a resposta.</p>
+<div class="tbl"><table><thead><tr><th>Área</th><th>Questões</th><th>Casos clínicos</th></tr></thead><tbody><tr><td>Endocrinologia</td><td>10</td><td>8</td></tr><tr><td>Oncologia</td><td>7</td><td>4</td></tr><tr><td>Imunologia e alergia</td><td>7</td><td>5</td></tr><tr><td>Nefrologia</td><td>5</td><td>4</td></tr><tr><td>Adolescência e saúde mental</td><td>9</td><td>8</td></tr><tr><td>Ortopedia</td><td>2</td><td>2</td></tr><tr><td><strong>Total</strong></td><td><strong>40</strong></td><td><strong>31</strong></td></tr></tbody></table></div>
+<h2>Endocrinologia</h2>
+<div class="tbl"><table><thead><tr><th>Tema</th><th>O que foi cobrado</th></tr></thead><tbody><tr><td>Tireoide</td><td>Graves com T4 livre normalizado e TSH ainda suprimido: ajuste do metimazol</td></tr><tr><td>Tireoide</td><td>Nódulo tireoidiano com TSH suprimido: próximo exame</td></tr><tr><td>Tireoide</td><td>Hipotireoidismo congênito com cardiopatia: dose inicial de levotiroxina</td></tr><tr><td>Diabetes</td><td>DM1 em dia de doença com insulina suspensa e cetonemia moderada</td></tr><tr><td>Diabetes</td><td>DM2 fora da meta após 4 semanas de metformina: próximo passo</td></tr><tr><td>Diabetes</td><td>Pré-escolar com DM1 e hipoglicemias frequentes: indicação de bomba</td></tr><tr><td>Puberdade</td><td>Atleta sem telarca com LH e FSH baixos: forma funcional</td></tr><tr><td>Puberdade</td><td>Puberdade precoce com LH suprimido: papel do análogo de GnRH</td></tr><tr><td>Síndrome metabólica</td><td>Adolescente de 17 anos: critérios de adulto da IDF</td></tr><tr><td>Síndrome metabólica</td><td>Obesidade classe 2 sem comorbidade: cirurgia bariátrica</td></tr></tbody></table></div>
+<blockquote><p>O TSH engana nos dois sentidos: no Graves em tratamento ele fica suprimido por meses e não serve para subir a dose; num nódulo, TSH suprimido pede cintilografia antes de PAAF. E em dia de doença a insulina sobe, nunca se suspende.</p></blockquote>
+<h2>Oncologia</h2>
+<div class="tbl"><table><thead><tr><th>Tema</th><th>O que foi cobrado</th></tr></thead><tbody><tr><td>Câncer na infância</td><td>Massa testicular isolada sem sinais sistêmicos: exame de imagem inicial</td></tr><tr><td>Câncer na infância</td><td>Localização de linfonodo sempre suspeita</td></tr><tr><td>Emergências oncológicas</td><td>Neutropênico com dor em fossa ilíaca direita e ceco espessado: conduta</td></tr><tr><td>Emergências oncológicas</td><td>Lise tumoral refratária no Burkitt: modalidade de diálise</td></tr><tr><td>Tumores sólidos</td><td>Lactente com Horner e massa paravertebral apical</td></tr><tr><td>Tumores sólidos</td><td>Massa abdominal no recém-nascido: natureza mais provável</td></tr><tr><td>Tumores sólidos</td><td>Mecanismo da hipertensão no tumor de Wilms</td></tr></tbody></table></div>
+<blockquote><p>Tiflite é tratamento clínico, não laparotomia; hemodiálise, não peritoneal, quando há massa abdominal. Testículo aumentado isolado vai para ultrassonografia, mas com febre, palidez ou adenomegalia o primeiro exame é o hemograma.</p></blockquote>
+<h2>Imunologia e alergia</h2>
+<div class="tbl"><table><thead><tr><th>Tema</th><th>O que foi cobrado</th></tr></thead><tbody><tr><td>Imunidade</td><td>IgG específica no recém-nascido: como interpretar</td></tr><tr><td>Imunidade</td><td>Perfil T CD4+ ligado à candidíase mucocutânea</td></tr><tr><td>Imunidade</td><td>Dor abdominal sem sinais de alarme e calprotectina normal</td></tr><tr><td>Imunodeficiências</td><td>Lactente com encapsuladas após os 6 meses e linfócitos B ausentes</td></tr><tr><td>Imunodeficiências</td><td>Linfoproliferação crônica com citopenias autoimunes</td></tr><tr><td>Alergia e atopia</td><td>Anafilaxia em criança de 20 kg: droga, dose e via</td></tr><tr><td>Alergia e atopia</td><td>Fissuras e ardor nas mãos por exposição a água e detergente</td></tr></tbody></table></div>
+<blockquote><p>IgG no recém-nascido pode ser da mãe — quem prova infecção fetal é a IgM ou a curva da IgG. Na anafilaxia, 0,01 mL/kg da adrenalina 1:1000 na coxa, antes de qualquer anti-histamínico.</p></blockquote>
+<h2>Nefrologia</h2>
+<div class="tbl"><table><thead><tr><th>Tema</th><th>O que foi cobrado</th></tr></thead><tbody><tr><td>Função renal</td><td>Fórmula de Schwartz com creatinina subindo: por que não vale</td></tr><tr><td>Função renal</td><td>Trimetoprima e creatinina: mecanismo</td></tr><tr><td>Síndromes glomerulares</td><td>Nefrítica com FAN positivo e C3 e C4 baixos</td></tr><tr><td>Síndromes glomerulares</td><td>Nefrótico com ascite, febre e dor abdominal</td></tr><tr><td>Síndromes glomerulares</td><td>Anti-hipertensivo na GNPE com potássio alto</td></tr></tbody></table></div>
+<blockquote><p>C4 baixo junto com C3 tira a GNPE da frente e coloca o lúpus. E nenhuma TFG estimada vale fora do equilíbrio: na lesão renal aguda, compare a creatinina com o basal.</p></blockquote>
+<h2>Adolescência e saúde mental</h2>
+<div class="tbl"><table><thead><tr><th>Tema</th><th>O que foi cobrado</th></tr></thead><tbody><tr><td>Adolescência</td><td>Nódulo subareolar bilateral no menino em Tanner 3</td></tr><tr><td>Adolescência</td><td>Recusa do exame físico na primeira consulta sem risco</td></tr><tr><td>Saúde sexual</td><td>Exposição sexual ao HIV há 30 horas: profilaxia</td></tr><tr><td>Saúde sexual</td><td>Contracepção na enxaqueca com aura</td></tr><tr><td>Transtornos alimentares</td><td>Purgação com peso normal e exames normais</td></tr><tr><td>Transtornos alimentares</td><td>Cálculo do %IMC e critério de internação</td></tr><tr><td>Saúde mental</td><td>TDAH refratário com fases de euforia</td></tr><tr><td>Saúde mental</td><td>Depressão leve: conduta inicial</td></tr><tr><td>Saúde mental</td><td>Autolesão sem intenção suicida: sigilo e notificação</td></tr></tbody></table></div>
+<blockquote><p>Autolesão sem intenção de morrer ainda quebra o sigilo (com a adolescente avisada) e é notificada ao SINAN em 24 horas. PEP vai até 72 horas, não 24; e exame normal não afasta bulimia.</p></blockquote>
+<h2>Ortopedia</h2>
+<div class="tbl"><table><thead><tr><th>Tema</th><th>O que foi cobrado</th></tr></thead><tbody><tr><td>Doenças musculoesqueléticas</td><td>Critérios de Kocher aplicados a um caso: probabilidade e conduta</td></tr><tr><td>Doenças musculoesqueléticas</td><td>Coreia isolada e os critérios de Jones</td></tr></tbody></table></div>
+<blockquote><p>Quatro critérios de Kocher são cerca de 99% de artrite séptica: drenagem, não observação. Coreia de Sydenham basta sozinha para febre reumática.</p></blockquote></script>
+<!-- Tutor local: define window.DEEPSEEK_KEY. O arquivo NAO vai para o repositorio,
+     entao online ele da 404 e o chat simplesmente nao aparece. -->
+<script src="../deepseek_key.js"></script>
+<script>
+/* ─────────────────────────────────────────────────────────────────────────────
+   CONTRATO DE DADOS — para adaptar a outro tema, troque apenas QUIZ e o resumo.
+   Cada item: { question, options[2..6], correctIndex, explanation }
+   ──────────────────────────────────────────────────────────────────────────── */
+var TITLE      = "Simulado SCA III";
+var EYEBROW    = "Simulado · Saúde da Criança e do Adolescente III";
+var DISCIPLINA = "Simulados";   // pasta de origem (PED, GO...) — usada pelo índice
+var SUBTITLE = "Quarenta questões inéditas para medir o que você sabe";
+var INTRO    = "40 questões objetivas misturando Endocrinologia, Oncologia, Imunologia e alergia, Nefrologia, Adolescência e saúde mental e Ortopedia pediátricas, quase todas em caso clínico. Tempo sugerido: 60 minutos, sem consulta. A explicação de cada questão começa pela área e pelo tema.";
+
+var QUIZ = [
+  {
+    "question": "Lactente de 10 meses tem ptose palpebral e miose à direita, com menos suor na hemiface do mesmo lado. A radiografia de tórax mostra massa paravertebral no ápice do hemitórax direito. Qual o diagnóstico mais provável?",
+    "options": [
+      "Neuroblastoma cervicotorácico",
+      "Linfoma de Hodgkin mediastinal",
+      "Teratoma do mediastino anterior",
+      "Timo hiperplásico do lactente"
+    ],
+    "correctIndex": 0,
+    "explanation": "(Oncologia · Tumores sólidos) Ptose, miose e anidrose compõem a síndrome de Horner, que no lactente com massa paravertebral apical aponta para neuroblastoma cervicotorácico, tumor da cadeia simpática. Massa de mediastino posterior em lactente é tumor neurogênico até prova em contrário; linfoma, teratoma e timo ocupam o mediastino anterior e não lesam a cadeia simpática dessa forma."
+  },
+  {
+    "question": "Adolescente de 13 anos com DM1, em esquema basal-bolus, está com gastroenterite e come pouco; há um dia a mãe suspendeu toda a insulina “para não dar hipoglicemia”. Glicemia de 310 mg/dL e β-hidroxibutirato capilar de 1,8 mmol/L; está consciente, sem vômitos persistentes, sem taquipneia e bebendo líquidos. Qual a orientação?",
+    "options": [
+      "Retomar a insulina, com doses extras e checagem de cetonas",
+      "Manter a insulina suspensa enquanto ele não voltar a comer",
+      "Suspender só a prandial e manter a basal na dose habitual",
+      "Trocar a insulina por metformina até a gastroenterite passar"
+    ],
+    "correctIndex": 0,
+    "explanation": "(Endocrinologia · Diabetes) Em dia de doença a necessidade de insulina SOBE para 1,2 a 1,5 U/kg/dia; suspender a insulina porque a criança come pouco é o erro clássico que precipita cetoacidose. Com glicemia acima de 300 mg/dL e cetonemia moderada, mas sem sinal de alarme, retoma-se a insulina com doses mais frequentes, hidratação oral e monitorização de cetonas. Manter só a basal habitual subtrata uma necessidade que aumentou."
+  },
+  {
+    "question": "Adolescente de 15 anos, sexo feminino, tem edema, hematúria com cilindros hemáticos e PA elevada, além de artralgias, úlceras orais e eritema malar. C3 e C4 estão baixos e o FAN é positivo; não houve faringite nem impetigo recentes. Qual a hipótese mais provável?",
+    "options": [
+      "Nefrite lúpica no lúpus eritematoso sistêmico",
+      "Glomerulonefrite pós-estreptocócica típica",
+      "Nefropatia por IgA com hematúria recorrente",
+      "Doença de lesões mínimas com quadro atípico"
+    ],
+    "correctIndex": 0,
+    "explanation": "(Nefrologia · Síndromes glomerulares) Síndrome nefrítica com sintomas sistêmicos (artralgia, úlceras orais, eritema malar), FAN positivo e consumo de C3 e C4 aponta para nefrite lúpica, mais prevalente na adolescente do que na criança pequena. Na GNPE o C3 cai, mas o C4 é normal e há infecção estreptocócica prévia; a nefropatia por IgA cursa com complemento normal; lesões mínimas é nefrótica, sem cilindros hemáticos."
+  },
+  {
+    "question": "Adolescente de 15 anos, tratado há 1 ano como “TDAH grave” sem resposta ao metilfenidato, tem fases de dias com euforia, fala acelerada, quase sem dormir e com planos grandiosos, que se alternam com períodos de tristeza e desânimo. Qual hipótese deve ser considerada?",
+    "options": [
+      "Transtorno bipolar, cuja desatenção imita o TDAH",
+      "TDAH refratário, que pede dose maior de estimulante",
+      "Transtorno de ansiedade generalizada com insônia",
+      "Transtorno de ajustamento com perturbação mista"
+    ],
+    "correctIndex": 0,
+    "explanation": "(Adolescência e saúde mental · Saúde mental) Euforia, pensamento e fala acelerados, pouca necessidade de sono e grandiosidade, alternando com fases depressivas, configuram transtorno bipolar. A desatenção extrema da elevação do humor é justamente o que leva ao rótulo de TDAH grave com má resposta ao tratamento: diante de TDAH refratário, pense em transtorno de humor. Aumentar o estimulante não trata a causa."
+  },
+  {
+    "question": "No recém-nascido, como se interpreta uma IgG específica positiva contra um agente de infecção congênita, como o toxoplasma?",
+    "options": [
+      "Pode ser materna: seguir a curva, que deve cair",
+      "Confirma infecção, pois a IgG foi feita pelo feto",
+      "Exclui infecção, por ser anticorpo protetor",
+      "Indica imunidade ativa duradoura do recém-nascido"
+    ],
+    "correctIndex": 0,
+    "explanation": "(Imunologia e alergia · Imunidade) A IgG é a única imunoglobulina que atravessa a placenta (via FcRn, sobretudo no 3º trimestre), então a IgG específica do recém-nascido pode ser só a da mãe. Ela se interpreta por curva: títulos que caem acompanham o catabolismo do anticorpo materno; títulos que sobem ou persistem indicam produção própria e infecção. Quem prova produção fetal é a IgM, que não cruza a placenta."
+  },
+  {
+    "question": "Adolescente de 14 anos com doença de Graves usa metimazol 0,5 mg/kg/dia. Após 5 semanas está sem sintomas, com T4 livre e T3 normais, mas o TSH continua suprimido. Qual a conduta?",
+    "options": [
+      "Reduzir a dose do metimazol em 30 a 50%",
+      "Aumentar a dose até normalizar o TSH suprimido",
+      "Trocar o metimazol por propiltiouracil",
+      "Indicar radioiodo pela falta de resposta do TSH"
+    ],
+    "correctIndex": 0,
+    "explanation": "(Endocrinologia · Tireoide) Normalizados T4 livre e T3, a dose do metimazol é reduzida em 30 a 50%. O TSH costuma ficar suprimido nos primeiros meses e não deve ser usado para aumentar a dose — fazê-lo leva ao hipotireoidismo iatrogênico. O propiltiouracil é contraindicado em crianças pela hepatotoxicidade, e o tratamento definitivo fica para efeito adverso grave, recidiva após tratamento prolongado ou má adesão."
+  },
+  {
+    "question": "Menina de 6 anos tem febre de 39 °C, não apoia a perna direita, VHS de 55 mm/h e leucócitos de 15.800/mm³. Pelos critérios de Kocher, qual a probabilidade de artrite séptica do quadril e a conduta?",
+    "options": [
+      "Cerca de 99%: artrocentese guiada por ultrassom e drenagem",
+      "Cerca de 40%: anti-inflamatório e reavaliação em 48 horas",
+      "Cerca de 3%: sinovite transitória, repouso e observação",
+      "Cerca de 93%: antibiótico oral e alta com retorno breve"
+    ],
+    "correctIndex": 0,
+    "explanation": "(Ortopedia · Doenças musculoesqueléticas) Os quatro critérios de Kocher estão presentes: febre acima de 38,5 °C, incapacidade de apoiar, VHS acima de 40 mm/h e leucócitos acima de 12.000/mm³ — probabilidade de cerca de 99% de artrite séptica (93% com três critérios, 40% com dois). É emergência: artrocentese guiada por ultrassom, hemocultura, drenagem cirúrgica e antibiótico venoso. Tratar como sinovite transitória atrasa a drenagem e ameaça a articulação."
+  },
+  {
+    "question": "Adolescente de 16 anos teve, há 30 horas, relação sem preservativo com parceiro que vive com HIV e abandonou o tratamento. O teste rápido dela para HIV é negativo. Qual a conduta em relação ao HIV?",
+    "options": [
+      "Iniciar PEP agora e mantê-la por 28 dias completos",
+      "Iniciar PrEP contínua, sem necessidade de PEP",
+      "Não há indicação: já se passaram mais de 24 horas",
+      "Repetir o teste em 30 dias antes de qualquer profilaxia"
+    ],
+    "correctIndex": 0,
+    "explanation": "(Adolescência e saúde mental · Saúde sexual) Relação sem preservativo com parceria HIV positiva sem supressão viral, dentro de 72 horas, é indicação de PEP: iniciar o quanto antes e manter por 28 dias, com testagem antes e seguimento depois. A PrEP é para risco continuado e não substitui a PEP numa exposição já ocorrida; a janela é de até 72 horas, não 24, e esperar 30 dias para testar a perde."
+  },
+  {
+    "question": "Menino de 8 anos com leucemia, no 10º dia após quimioterapia e com 200 neutrófilos/mm³, tem febre, distensão e dor em fossa ilíaca direita. A tomografia mostra parede do ceco espessada (7 mm), sem pneumoperitônio nem sangramento. Qual a conduta?",
+    "options": [
+      "Repouso intestinal, antibiótico com cobertura anaeróbia e suporte",
+      "Apendicectomia de urgência pela dor em fossa ilíaca direita",
+      "Colectomia direita imediata pelo espessamento cecal visto",
+      "Antibiótico só para gram-positivos e manter a quimioterapia"
+    ],
+    "correctIndex": 0,
+    "explanation": "(Oncologia · Emergências oncológicas) É tiflite (enterocolite neutropênica): neutropenia, dor em fossa ilíaca direita e parede cecal espessada acima de 4 mm. O manejo é conservador — repouso intestinal, sonda nasogástrica se houver íleo, hidratação, antibiótico de amplo espectro com cobertura para anaeróbios, correção de plaquetas e coagulação e suspensão da quimioterapia. Cirurgia só em perfuração, hemorragia incontrolável ou piora apesar do tratamento clínico."
+  },
+  {
+    "question": "Adolescente de 17 anos, sexo feminino, já com estatura final: cintura de 84 cm, triglicerídeos de 162 mg/dL, HDL-c de 46 mg/dL, PA de 118/76 mmHg e glicemia de jejum de 91 mg/dL. Pelos critérios da IDF, qual a conclusão?",
+    "options": [
+      "Tem: cintura, triglicerídeos e HDL estão todos alterados",
+      "Não tem: o HDL só é critério se abaixo de 40 mg/dL",
+      "Não tem: exige também pressão ou glicemia alteradas",
+      "Não tem: a cintura feminina só conta a partir de 90 cm"
+    ],
+    "correctIndex": 0,
+    "explanation": "(Endocrinologia · Síndrome metabólica) A partir dos 16 anos valem os critérios de adulto da IDF: cintura de 80 cm ou mais na mulher (obrigatória) e HDL abaixo de 50 mg/dL no sexo feminino. Ela tem cintura de 84 cm, triglicerídeos acima de 150 e HDL de 46 — obesidade central mais dois critérios, o que fecha síndrome metabólica. O corte de HDL < 40 vale para a faixa de 10 a menos de 16 anos e para o homem adulto; 90 cm é a cintura masculina."
+  },
+  {
+    "question": "Menino de 9 meses, sem intercorrências até os 6 meses, teve desde então duas pneumonias pneumocócicas e otites de repetição. IgG, IgA e IgM estão muito baixas; os linfócitos T são normais e os linfócitos B, praticamente ausentes. Qual o diagnóstico e o tratamento?",
+    "options": [
+      "Agamaglobulinemia; reposição de IgG e profilaxia",
+      "SCID; transplante de células-tronco de urgência",
+      "Deficiência seletiva de IgA; só tratar as infecções",
+      "Nadir fisiológico; reavaliar após os 2 anos de idade"
+    ],
+    "correctIndex": 0,
+    "explanation": "(Imunologia e alergia · Imunodeficiências) Infecções por encapsuladas que começam quando a IgG materna se esgota, com pan-hipogamaglobulinemia e linfócitos B praticamente ausentes, definem agamaglobulinemia — a forma ligada ao X responde por cerca de 85% e é típica do menino. Trata-se com reposição de IgG, profilaxia antibiótica ou ambas. Na SCID haveria oportunistas e falha da imunidade celular; o nadir fisiológico não zera os linfócitos B."
+  },
+  {
+    "question": "Criança de 6 anos em choque séptico tinha creatinina de 0,4 mg/dL ontem e tem 0,9 mg/dL hoje, ainda em ascensão. O residente aplica a fórmula de Schwartz para descrever a TFG atual. Qual o problema dessa conduta?",
+    "options": [
+      "A TFGe só vale com a creatinina em equilíbrio",
+      "A fórmula de Schwartz só vale acima dos 12 anos",
+      "Na sepse, a creatinina superestima a TFG real",
+      "A estatura não entra no cálculo em criança grave"
+    ],
+    "correctIndex": 0,
+    "explanation": "(Nefrologia · Função renal) Toda equação de TFG estimada pressupõe creatinina em equilíbrio; na lesão renal aguda a creatinina sobe com atraso e a TFGe perde validade. O raciocínio certo aqui é o do KDIGO: a creatinina mais que dobrou em 24 horas, o que define lesão renal aguda e permite estadiá-la pelo múltiplo do basal. A fórmula de Schwartz é pediátrica e usa justamente a estatura."
+  },
+  {
+    "question": "Adolescente de 16 anos, com peso normal e preocupação intensa com a forma do corpo, revela vômitos autoinduzidos após episódios de compulsão, 3 vezes por semana há 5 meses. Hemograma, eletrólitos e ECG vieram normais, e os pais concluem que “não é nada”. Qual a interpretação?",
+    "options": [
+      "Bulimia nervosa: exames normais não afastam o transtorno",
+      "Não é transtorno alimentar, pois o peso está normal",
+      "Transtorno de compulsão alimentar, por haver compulsão",
+      "Transtorno de purgação, por haver vômitos recorrentes"
+    ],
+    "correctIndex": 0,
+    "explanation": "(Adolescência e saúde mental · Transtornos alimentares) Compulsão seguida de comportamento compensatório, em média 1 vez por semana ou mais por 3 meses, com autoavaliação dominada pelo corpo, é bulimia nervosa — e o peso normal é a regra, o que explica o atraso diagnóstico. O laboratório pode vir inteiramente normal com transtorno ativo e não afasta a doença. No transtorno de compulsão alimentar não há purgação; no transtorno de purgação não há compulsão."
+  },
+  {
+    "question": "Adolescente de 16 anos percebeu há 1 mês um nódulo endurecido e indolor no testículo esquerdo, que vem crescendo. Está em bom estado geral, sem febre, palidez ou adenomegalias, e a transiluminação é negativa. Qual o exame de imagem inicial?",
+    "options": [
+      "Ultrassonografia da bolsa escrotal",
+      "Tomografia de abdome e da pelve",
+      "Ressonância magnética da pelve",
+      "Cintilografia testicular com tecnécio"
+    ],
+    "correctIndex": 0,
+    "explanation": "(Oncologia · Câncer na infância) Massa testicular endurecida, indolor e progressiva, sem sinais sistêmicos e com transiluminação negativa, sugere tumor de células germinativas; diante de aumento testicular isolado, o exame de imagem inicial é a ultrassonografia da bolsa escrotal. Alfafetoproteína e beta-hCG são colhidas antes da orquiectomia, como linha de base. Com febre, palidez ou adenomegalia, o hemograma passaria à frente, pela hipótese de infiltração leucêmica."
+  },
+  {
+    "question": "Menina de 14 anos, ginasta de alto rendimento, treina 5 horas por dia e tem IMC baixo. Ainda não iniciou a telarca. LH e FSH estão baixos, o olfato é normal, a ressonância de sela é normal e os pais tiveram puberdade na idade habitual. Qual a hipótese mais provável?",
+    "options": [
+      "Hipogonadismo hipogonadotrófico funcional pelo treino intenso",
+      "Síndrome de Kallmann por falha de migração dos neurônios",
+      "Hipogonadismo hipergonadotrófico por falência ovariana",
+      "Síndrome de Turner com falência gonadal primária"
+    ],
+    "correctIndex": 0,
+    "explanation": "(Endocrinologia · Puberdade) Sem telarca aos 13 anos há atraso puberal; LH e FSH baixos indicam hipogonadismo hipogonadotrófico. Com treinamento físico intenso e baixo peso, a forma funcional é a mais provável: o eixo está íntegro e a puberdade se instala quando o fator causal é corrigido. Kallmann teria anosmia; Turner e falência ovariana cursam com LH e FSH elevados."
+  },
+  {
+    "question": "Menino de 6 anos, 20 kg, tem urticária generalizada, chiado e hipotensão poucos minutos após comer amendoim. Qual a primeira medicação, com dose e via?",
+    "options": [
+      "Adrenalina 1:1000, 0,2 mL IM na face lateral da coxa",
+      "Adrenalina 1:1000, 0,2 mL subcutânea no deltoide",
+      "Adrenalina 1:1000, 2 mL IM na face lateral da coxa",
+      "Prometazina IM e hidrocortisona IV, depois adrenalina"
+    ],
+    "correctIndex": 0,
+    "explanation": "(Imunologia e alergia · Alergia e atopia) Pele, respiratório e cardiovascular acometidos após alérgeno é anafilaxia, e a primeira medida é adrenalina 1:1000 a 0,01 mL/kg — 0,2 mL (0,2 mg) para 20 kg, abaixo do máximo de 0,3 mg na criança —, intramuscular na face anterolateral da coxa, repetível a cada 5 a 15 minutos. Subcutânea e deltoide atingem pico mais lento; anti-histamínico e corticoide são adjuvantes e nunca vêm antes."
+  },
+  {
+    "question": "Menino de 4 anos com síndrome nefrótica em anasarca e ascite volumosa, ainda sem remissão, apresenta febre de 38,8 °C e dor abdominal difusa com defesa à palpação. Qual complicação deve ser suspeitada primeiro?",
+    "options": [
+      "Peritonite bacteriana espontânea",
+      "Recidiva simples da proteinúria",
+      "Trombose da veia renal esquerda",
+      "Efeito colateral do corticoide"
+    ],
+    "correctIndex": 0,
+    "explanation": "(Nefrologia · Síndromes glomerulares) Febre com dor abdominal em criança nefrótica com ascite deve levantar peritonite bacteriana espontânea: a perda urinária de IgG torna a infecção uma das quatro complicações a não perder, ao lado de trombose, hipovolemia e lesão renal aguda. A trombose se denuncia mais por dor ou assimetria de membro, e recidiva da proteinúria não explica febre com defesa abdominal."
+  },
+  {
+    "question": "Menino de 13 anos, com pelos pubianos em Tanner 3 e volume testicular de 8 mL, notou há 4 meses um nódulo de 2 cm, discretamente doloroso, sob as duas aréolas. O restante do exame é normal. Qual a conduta?",
+    "options": [
+      "Tranquilizar e acompanhar: tende a regredir em até 2 anos",
+      "Dosar estradiol, testosterona e hCG antes de qualquer conduta",
+      "Indicar mamografia pelo risco de neoplasia mamária",
+      "Iniciar tamoxifeno para evitar que a ginecomastia persista"
+    ],
+    "correctIndex": 0,
+    "explanation": "(Adolescência e saúde mental · Adolescência) A ginecomastia puberal é frequente, benigna e transitória: começa por volta dos 10 a 12 anos, tem pico aos 13 a 14, em geral com pelos em Tanner 3 e testículos de 8 a 10 mL, e regride em 6 a 24 meses. Com o restante do exame normal, a conduta é explicar a benignidade e acompanhar, sem exames de rotina nem tratamento medicamentoso."
+  },
+  {
+    "question": "Qual a natureza mais provável de uma massa abdominal palpável descoberta no exame de um recém-nascido em bom estado geral?",
+    "options": [
+      "Renal e benigna, como hidronefrose ou rim multicístico",
+      "Neuroblastoma suprarrenal, o tumor sólido mais comum",
+      "Tumor de Wilms, que tem pico no período neonatal",
+      "Linfoma de Burkitt com massa retroperitoneal"
+    ],
+    "correctIndex": 0,
+    "explanation": "(Oncologia · Tumores sólidos) No recém-nascido, a maioria das massas abdominais é renal e benigna — hidronefrose e rim multicístico displásico —, e a ultrassonografia é o primeiro exame. O neuroblastoma predomina no lactente (mediana de 18 meses), o tumor de Wilms tem pico entre 2 e 5 anos e o linfoma de Burkitt é do escolar."
+  },
+  {
+    "question": "No DM2 do adolescente, sem cetose nem acidose, se a meta de HbA1c abaixo de 7% não for atingida após 4 semanas de metformina em monoterapia, qual o próximo passo?",
+    "options": [
+      "Associar insulina basal, mantendo a metformina",
+      "Trocar a metformina por insulina prandial isolada",
+      "Manter só a metformina e reavaliar em seis meses",
+      "Associar insulina prandial antes de tentar a basal"
+    ],
+    "correctIndex": 0,
+    "explanation": "(Endocrinologia · Diabetes) Se a HbA1c abaixo de 7% não é alcançada em 4 semanas de metformina em monoterapia, associa-se insulina basal, mantendo a metformina; persistindo fora do alvo, entra a insulina prandial. Abandonar a metformina ou começar pela prandial inverte a sequência, e esperar 6 meses é inércia terapêutica num DM2 juvenil, cuja falência de célula beta é mais rápida que a do adulto."
+  },
+  {
+    "question": "Adolescente de 14 anos tem há 6 semanas tristeza, desânimo e queda do rendimento escolar, mas mantém a rotina, sem ideação suicida nem sintomas psicóticos; o quadro é classificado como depressão leve. A mãe pede “um remédio”. Qual a conduta inicial?",
+    "options": [
+      "Psicoterapia, psicoeducação e orientação familiar",
+      "Iniciar ISRS de imediato, associado à psicoterapia",
+      "Carbonato de lítio como estabilizador do humor",
+      "Internação para garantir a segurança do paciente"
+    ],
+    "correctIndex": 0,
+    "explanation": "(Adolescência e saúde mental · Saúde mental) Na depressão leve a moderada a conduta é psicoterapia, psicoeducação e orientação familiar, com redução dos estressores e apoio da escola. O ISRS é associado na depressão grave, a internação serve para garantir segurança quando há risco e o lítio é a droga do transtorno bipolar. Reavaliar e rastrear ideação suicida faz parte do seguimento."
+  },
+  {
+    "question": "Menina de 12 anos tem dor abdominal periumbilical intermitente há 6 meses, que não a acorda à noite, sem diarreia, sem perda de peso e com crescimento normal. Hemograma, albumina, PCR e calprotectina fecal são normais. Qual a interpretação mais adequada?",
+    "options": [
+      "Sem sinais de alarme: favorece dor funcional, não DII",
+      "Calprotectina normal não altera a chance de DII",
+      "Indica colonoscopia com biópsias de imediato",
+      "Sugere doença de Crohn de forma ainda silenciosa"
+    ],
+    "correctIndex": 0,
+    "explanation": "(Imunologia e alergia · Imunidade) Sem sinais de alarme de DII — curso com diarreia noturna, dor que acorda, perda de peso, anemia, hipoalbuminemia, marcadores inflamatórios altos, lesão perianal — e com calprotectina fecal normal, o quadro favorece dor abdominal funcional. A calprotectina sobe quando há migração de neutrófilos para a mucosa e é o marcador que separa diarreia inflamatória de funcional; a colonoscopia com biópsias é para quem tem suspeita de DII."
+  },
+  {
+    "question": "Menina de 12 anos tem nódulo tireoidiano sólido de 1,5 cm, de crescimento lento e sem adenopatia cervical. O TSH está suprimido, com T4 livre no limite superior. Qual o próximo passo mais adequado?",
+    "options": [
+      "Cintilografia, pela suspeita de nódulo autônomo",
+      "Tireoidectomia total, pelo alto risco na infância",
+      "Calcitonina sérica, pela suspeita de carcinoma medular",
+      "Dosar TRAb e iniciar metimazol como na doença de Graves"
+    ],
+    "correctIndex": 0,
+    "explanation": "(Endocrinologia · Tireoide) TSH suprimido diante de nódulo sugere nódulo autônomo, de baixo risco de malignidade, a ser confirmado por cintilografia (nódulo hipercaptante). Tireoidectomia total é conduta para Bethesda V/VI, e a calcitonina é dosada quando há história familiar, sinais de NEM 2 ou citologia suspeita. Sem TSH suprimido, o nódulo sólido de 1 cm ou mais seguiria para ultrassonografia e PAAF."
+  },
+  {
+    "question": "Menino de 7 anos com linfoma de Burkitt e massa abdominal volumosa mantém, apesar de hidratação vigorosa e rasburicase, oligúria, potássio de 7,1 mEq/L e sobrecarga de volume. Indicada a diálise, qual a modalidade preferida?",
+    "options": [
+      "Hemodiálise, que corrige eletrólitos e remove o ácido úrico",
+      "Diálise peritoneal, menos invasiva e bem tolerada na criança",
+      "Diálise peritoneal, pois a massa abdominal não interfere nela",
+      "Nenhuma: a diálise é proibida na síndrome de lise tumoral"
+    ],
+    "correctIndex": 0,
+    "explanation": "(Oncologia · Emergências oncológicas) Quando a farmacologia falha e persistem oligúria, hipercalemia ou hipervolemia, indica-se diálise, e a preferida é a hemodiálise: corrige eletrólitos mais rápido e remove ácido úrico, o que a peritoneal não faz. Além disso, a diálise peritoneal é contraindicada quando há massa abdominal ou pélvica — cenário comum no Burkitt."
+  },
+  {
+    "question": "Menino de 9 anos com glomerulonefrite pós-estreptocócica está internado com restrição de sal e água e furosemida. A PA segue em 138/90 mmHg e o potássio é 5,9 mEq/L. Qual anti-hipertensivo é o mais adequado?",
+    "options": [
+      "Anlodipina, evitando o IECA pela hipercalemia",
+      "Captopril, pela proteção renal que oferece",
+      "Espironolactona, para potencializar a diurese",
+      "Propranolol, para controlar a frequência"
+    ],
+    "correctIndex": 0,
+    "explanation": "(Nefrologia · Síndromes glomerulares) Persistindo a hipertensão apesar de restrição de sal e água e diurético de alça, associa-se anti-hipertensivo como anlodipina ou hidralazina. O IECA entra com cautela na GNPE pelo risco de hipercalemia — e aqui o potássio já está em 5,9 mEq/L; a espironolactona retém potássio pelo mesmo motivo. Hipercalemia acima de 6,5 mEq/L refratária é uma das indicações de diálise."
+  },
+  {
+    "question": "Menina de 9 anos desenvolve, há 3 semanas, movimentos involuntários e desajeitados das mãos e da face, labilidade emocional e piora da letra. Não tem febre nem artrite, e o exame cardíaco é normal. Qual a interpretação pelos critérios de Jones?",
+    "options": [
+      "Coreia de Sydenham: basta sozinha para febre reumática",
+      "Não é febre reumática: falta um segundo critério maior",
+      "Tique transitório da infância, sem relação reumática",
+      "Precisa de dois critérios menores para fechar Jones"
+    ],
+    "correctIndex": 0,
+    "explanation": "(Ortopedia · Doenças musculoesqueléticas) Movimentos involuntários, labilidade emocional e piora da escrita descrevem a coreia de Sydenham, critério maior que, ao lado da cardite indolente, basta sozinho para o diagnóstico de febre reumática. Todo caso suspeito faz ecocardiograma, porque a cardite subclínica conta como critério maior, e inicia profilaxia secundária com penicilina benzatina a cada 21 dias."
+  },
+  {
+    "question": "Menina de 5 anos tem linfonodomegalias generalizadas e esplenomegalia há mais de um ano, com anemia hemolítica autoimune e plaquetopenia imune, sem infecções graves. A biópsia de linfonodo não mostra malignidade. Qual o diagnóstico mais provável?",
+    "options": [
+      "Síndrome linfoproliferativa autoimune (ALPS)",
+      "Síndrome IPEX por perda de função do FOXP3",
+      "Imunodeficiência combinada grave (SCID)",
+      "Agamaglobulinemia ligada ao cromossomo X"
+    ],
+    "correctIndex": 0,
+    "explanation": "(Imunologia e alergia · Imunodeficiências) Linfoproliferação crônica não maligna (adenomegalia e esplenomegalia) com autoimunidade contra células do sangue, sem infecções, é o retrato da ALPS: defeito da apoptose linfocitária, classicamente pelo gene FAS. A IPEX é do lactente do sexo masculino, com enteropatia e endocrinopatias; SCID e agamaglobulinemia se apresentam por infecções."
+  },
+  {
+    "question": "Em adolescente com enxaqueca com aura que deseja contracepção, qual método está contraindicado?",
+    "options": [
+      "Pílula combinada de estrogênio e progestágeno",
+      "Implante subdérmico liberador de etonogestrel",
+      "Dispositivo intrauterino de cobre, sem hormônio",
+      "Sistema intrauterino liberador de levonorgestrel"
+    ],
+    "correctIndex": 0,
+    "explanation": "(Adolescência e saúde mental · Saúde sexual) A pílula combinada é contraindicada na enxaqueca com aura e em outros riscos vasculares, pelo componente estrogênico. Implante, DIU de cobre e SIU de levonorgestrel não têm estrogênio e são métodos de longa duração, preferidos na adolescência por não dependerem da adesão diária — sempre somados ao preservativo, na dupla proteção."
+  },
+  {
+    "question": "Na avaliação de linfonodomegalia periférica na criança e no adolescente, qual localização torna o linfonodo suspeito de malignidade em qualquer idade, mesmo quando pequeno?",
+    "options": [
+      "Fossa supraclavicular",
+      "Cadeia submandibular",
+      "Cervical anterior alta",
+      "Inguinal superficial"
+    ],
+    "correctIndex": 0,
+    "explanation": "(Oncologia · Câncer na infância) Linfonodo supraclavicular é sempre suspeito, em qualquer idade. Também levantam suspeita o linfonodo maior que 2,5 cm, endurecido, aderido a planos profundos, que cresce progressivamente ou que persiste por mais de 4 a 6 semanas sem explicação. Linfonodos cervicais, submandibulares e inguinais pequenos e móveis costumam ser reacionais."
+  },
+  {
+    "question": "Adolescente de 15 anos tem IMC de 36 kg/m² (122% do P95), sem nenhuma comorbidade, após um ano de terapia comportamental adequada e sem transtorno alimentar. A família pergunta sobre cirurgia bariátrica. Qual a resposta?",
+    "options": [
+      "Ainda não: na classe 2 a cirurgia exige comorbidade",
+      "Sim: IMC acima de 35 já basta em qualquer situação",
+      "Não: a cirurgia só é permitida após os 18 anos",
+      "Sim: a classe 2 dispensa comorbidade após os 13 anos"
+    ],
+    "correctIndex": 0,
+    "explanation": "(Endocrinologia · Síndrome metabólica) IMC de 35 ou mais, ou 120% do P95, é obesidade classe 2, e nessa classe a bariátrica no adolescente de 13 anos ou mais exige comorbidade clinicamente significativa. Só na classe 3 (IMC de 40 ou mais, ou 140% do P95) a comorbidade é dispensada. Não há exigência de 18 anos; mantém-se a terapia comportamental intensiva e reavalia-se."
+  },
+  {
+    "question": "Adolescente de 14 anos com anorexia nervosa tem IMC de 14,4 kg/m²; o IMC do percentil 50 para idade e sexo é 19,2 kg/m². Está estável, sem distúrbio eletrolítico nem alteração cardíaca. O que esse dado indica?",
+    "options": [
+      "75% do esperado: já é critério de internação",
+      "75% do esperado: seguir em ambulatório",
+      "85% do esperado: desnutrição apenas leve",
+      "65% do esperado: desnutrição já grave"
+    ],
+    "correctIndex": 0,
+    "explanation": "(Adolescência e saúde mental · Transtornos alimentares) O %IMC é o IMC do paciente dividido pelo IMC do percentil 50, vezes 100: 14,4 ÷ 19,2 × 100 = 75%. IMC igual ou abaixo de 75% do esperado já é critério de internação, mesmo sem distúrbio eletrolítico ou cardíaco. Pelo DSM-5, 70 a 79% corresponde a gravidade moderada — a internação decorre do critério de %IMC, não só do rótulo de gravidade."
+  },
+  {
+    "question": "Por que a trimetoprima pode elevar a creatinina sérica sem uma queda equivalente da taxa de filtração glomerular?",
+    "options": [
+      "Reduz a secreção tubular da creatinina",
+      "Aumenta a produção muscular de creatinina",
+      "Causa vasoconstrição da arteríola aferente",
+      "Interfere na leitura do método enzimático"
+    ],
+    "correctIndex": 0,
+    "explanation": "(Nefrologia · Função renal) A creatinina é eliminada por filtração e por uma pequena secreção tubular. Fármacos que reduzem essa secreção, como a trimetoprima, elevam a creatinina sem queda real equivalente da filtração. É um dos motivos pelos quais a creatinina isolada engana — ao lado da massa muscular, que muda a produção, e do método de dosagem."
+  },
+  {
+    "question": "A falha de qual perfil de linfócito T CD4+ se manifesta clinicamente como candidíase mucocutânea crônica e infecções de pele e intestino?",
+    "options": [
+      "Th17, defensor das barreiras epiteliais",
+      "Th2, ligado à troca de classe para IgE",
+      "Th1, que ativa macrófagos por interferon-gama",
+      "Treg, responsável por encerrar a resposta"
+    ],
+    "correctIndex": 0,
+    "explanation": "(Imunologia e alergia · Imunidade) O Th17, por meio da IL-17, defende as barreiras epiteliais; sua falha se traduz em candidíase mucocutânea e infecções de pele e intestino. O Th1, via interferon-gama, ativa macrófagos contra intracelulares como micobactérias; o Th2 dirige a resposta a helmintos e a troca para IgE; a Treg freia e encerra a resposta."
+  },
+  {
+    "question": "Qual o mecanismo habitual da hipertensão arterial que pode acompanhar o tumor de Wilms?",
+    "options": [
+      "Produção de renina pelo tumor renal",
+      "Liberação de catecolaminas pelo tumor",
+      "Compressão da veia cava inferior",
+      "Hiperaldosteronismo de origem adrenal"
+    ],
+    "correctIndex": 0,
+    "explanation": "(Oncologia · Tumores sólidos) O tumor de Wilms pode cursar com hipertensão arterial por produção de renina, além de hematúria e dor abdominal, em criança tipicamente em bom estado geral. Catecolaminas são a marca do neuroblastoma (VMA e HVA urinários), tumor de origem simpática que cruza a linha média; a invasão da veia renal até a cava ocorre no Wilms, mas não é o que eleva a pressão."
+  },
+  {
+    "question": "Menino de 4 anos com DM1, em múltiplas doses diárias e com família aderente, tem grande variabilidade glicêmica e hipoglicemias nível 2 frequentes. Qual opção terapêutica está indicada?",
+    "options": [
+      "Sistema de infusão contínua com análogo de ação rápida",
+      "Sistema de infusão contínua com insulina NPH humana",
+      "Glargina U-300 uma vez ao dia como insulina basal",
+      "Suspender a insulina prandial e manter só a basal"
+    ],
+    "correctIndex": 0,
+    "explanation": "(Endocrinologia · Diabetes) Idade abaixo de 6 anos, grande variabilidade glicêmica e hipoglicemias nível 2 frequentes estão entre as indicações do sistema de infusão contínua (bomba), que usa somente análogo de ação rápida ou ultrarrápida, como basal programada e bolus. NPH não é usada na bomba, e a glargina U-300 só é aprovada acima de 18 anos."
+  },
+  {
+    "question": "Adolescente de 13 anos é atendida no pronto-socorro após cortes superficiais no antebraço que ela mesma fez. Nega intenção de morrer e pede que nada seja contado aos pais. Qual a conduta quanto ao sigilo e à notificação?",
+    "options": [
+      "Quebrar o sigilo avisando-a e notificar ao SINAN em 24 h",
+      "Manter o sigilo, pois não houve intenção suicida",
+      "Contar aos pais sem avisá-la, para evitar resistência",
+      "Manter o sigilo e notificar apenas se houver reincidência"
+    ],
+    "correctIndex": 0,
+    "explanation": "(Adolescência e saúde mental · Saúde mental) Autoagressão está entre as situações que justificam quebrar o sigilo para proteger a adolescente — e a quebra é feita com o conhecimento dela, explicando os motivos. Autoagressão e tentativa de suicídio são de notificação compulsória ao SINAN em até 24 horas (Lei 13.819/2019). A ausência de intenção suicida não torna o achado benigno: autolesão repetida é fator de risco para tentativa."
+  },
+  {
+    "question": "Adolescente de 16 anos começou a trabalhar lavando louça num restaurante. Há 3 semanas tem ardor, ressecamento e fissuras dolorosas nas mãos, com pouco prurido. Nunca teve eczema. Qual a hipótese e o que a define?",
+    "options": [
+      "Contato irritativa: agressão direta, sem sensibilização",
+      "Contato alérgica: tipo IV, que exige teste de contato",
+      "Dermatite atópica: falha de barreira de padrão flexural",
+      "Escabiose: lesões interdigitais com prurido noturno"
+    ],
+    "correctIndex": 0,
+    "explanation": "(Imunologia e alergia · Alergia e atopia) Ardor, fissuras e dor nas mãos expostas a água e detergente, com pouco prurido, é dermatite de contato irritativa: agressão direta à barreira, sem imunidade específica, que acomete qualquer pessoa com dose e tempo suficientes. A alérgica é hipersensibilidade tipo IV, exige sensibilização prévia, tem prurido predominante e se confirma pelo teste de contato."
+  },
+  {
+    "question": "No recém-nascido com hipotireoidismo congênito e cardiopatia congênita com risco de insuficiência cardíaca, como deve ser iniciada a levotiroxina?",
+    "options": [
+      "Metade da dose habitual de 10-15 mcg/kg/dia, por via oral",
+      "Dose plena de 10-15 mcg/kg/dia, sem ajuste pela cardiopatia",
+      "Adiar a reposição até a correção cirúrgica da cardiopatia",
+      "Dose de adulto, 1,7 mcg/kg/dia, para poupar o coração"
+    ],
+    "correctIndex": 0,
+    "explanation": "(Endocrinologia · Tireoide) A levotiroxina no hipotireoidismo congênito é de 10 a 15 mcg/kg/dia, de preferência nos primeiros 10 dias de vida, mas na cardiopatia congênita com risco de insuficiência cardíaca a dose inicial é reduzida pela metade. Adiar a reposição sacrifica o cérebro, cuja lesão não se corrige depois; 1,7 mcg/kg/dia é a dose acima dos 16 anos."
+  },
+  {
+    "question": "Adolescente de 14 anos, na primeira consulta e sem nenhuma situação de risco, conversa bem a sós, mas fica constrangida e recusa despir-se para o exame físico. Qual a conduta adequada?",
+    "options": [
+      "Respeitar: examinar por partes ou adiar para outra consulta",
+      "Exigir o exame completo, pois a primeira consulta o requer",
+      "Chamar a mãe para convencê-la a se despir na hora",
+      "Encerrar a consulta e encaminhá-la direto à ginecologia"
+    ],
+    "correctIndex": 0,
+    "explanation": "(Adolescência e saúde mental · Adolescência) O exame físico do adolescente é feito com privacidade, craniocaudal e por partes, mantendo vestimentas, e ele decide quem estará presente. Sem situação de risco, não precisa ocorrer na primeira consulta. Forçar o exame ou usar a mãe para convencê-la rompe o vínculo, que é o que sustenta o seguimento."
+  },
+  {
+    "question": "Menina de 5 anos tem telarca progressiva e aceleração do crescimento. O LH basal é suprimido e não sobe após estímulo com GnRH, e o estradiol está elevado. A família pergunta sobre a leuprorrelina. Qual a orientação?",
+    "options": [
+      "Não indicar: é periférica, e a origem provável é gonadal",
+      "Indicar: o análogo bloqueia a secreção ovariana direta",
+      "Indicar após a RM de encéfalo confirmar a origem central",
+      "Não indicar: é telarca precoce isolada, que só se acompanha"
+    ],
+    "correctIndex": 0,
+    "explanation": "(Endocrinologia · Puberdade) LH suprimido que não responde ao estímulo, com estradiol elevado, define puberdade precoce periférica (GnRH-independente) de origem gonadal — cisto ou tumor ovariano, por exemplo. O análogo de GnRH age dessensibilizando a hipófise e não tem efeito quando o esteroide é produzido de forma autônoma. Telarca precoce isolada não cursa com aceleração do crescimento nem estradiol elevado."
+  }
+];
+
+var LETTERS = ['A','B','C','D','E','F'];
+var SHUFFLE = true, LOCK = true;
+
+var S = { view:'home', started:false, finished:false, i:0, order:[], answers:[], open:{}, filter:'all', warn:false, chat:{} };
+
+function esc(s){ return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
+function pad(n){ return String(n).padStart(2,'0'); }
+
+function build(){
+  var qs = QUIZ.map(function(q,id){ return { question:q.question, options:q.options.slice(), correctIndex:q.correctIndex, explanation:q.explanation, image:q.image, imageCaption:q.imageCaption, id:id }; });
+  if (!SHUFFLE) return qs;
+  for (var i=qs.length-1;i>0;i--){ var j=Math.floor(Math.random()*(i+1)); var t=qs[i]; qs[i]=qs[j]; qs[j]=t; }
+  return qs.map(function(q){
+    var correct = q.options[q.correctIndex], o = q.options.slice();
+    for (var i=o.length-1;i>0;i--){ var j=Math.floor(Math.random()*(i+1)); var t=o[i]; o[i]=o[j]; o[j]=t; }
+    q.options = o; q.correctIndex = o.indexOf(correct); return q;
+  });
+}
+
+/* ── ações ─────────────────────────────────────────────────────────────────── */
+var A = {
+  home:      function(){ S.view='home'; S.started=false; S.finished=false; up(0); },
+  resumo:    function(){ S.view='resumo'; up(0); },
+  start:     function(){ var o=build(); S.view='quiz'; S.started=true; S.finished=false; S.i=0; S.order=o;
+                         S.answers=new Array(o.length).fill(null); S.open={}; S.filter='all'; S.warn=false; up(0); },
+  restart:   function(){ A.start(); },
+  sair:      function(){ S.view='home'; S.started=false; up(0); },   // guarda as respostas
+  retomar:   function(){ S.view='quiz'; S.started=true; S.finished=false; S.warn=false; up(0); },
+  go:        function(n){ if(n<0||n>S.order.length-1) return; S.i=n; S.warn=false; render(); },
+  jump:      function(n){ if(S.finished){ S.finished=false; S.i=n; S.warn=false; } else { if(n<0||n>S.order.length-1) return; S.i=n; S.warn=false; } up(0,'smooth'); },
+  pick:      function(n){ if(LOCK && S.answers[S.i]!==null) return; S.answers[S.i]=n; render(); },
+  prev:      function(){ A.go(S.i-1); },
+  next:      function(){ if(S.i<S.order.length-1) A.go(S.i+1); else A.finish(); },
+  finish:    function(){ var b=S.answers.filter(function(a){return a===null}).length;
+                         if(b>0 && !S.warn){ S.warn=true; render(); return; } S.finished=true; S.warn=false; up(0); },
+  force:     function(){ S.finished=true; S.warn=false; up(0); },
+  gotoBlank: function(){ var n=S.answers.findIndex(function(a){return a===null}); if(n>=0) A.go(n); },
+  back:      function(){ S.finished=false; S.warn=false; up(0); },
+  filter:    function(k){ S.filter=k; render(); },
+  toggle:    function(n){ S.open[n]=!S.open[n]; render(); },
+  toggleAll: function(){ var r=reviewList(), all=r.length>0 && r.every(function(x){return S.open[x.idx]});
+                         S.open={}; if(!all) r.forEach(function(x){ S.open[x.idx]=true; }); render(); }
+};
+function up(top, beh){ render(); window.scrollTo({ top: top||0, behavior: beh||'auto' }); }
+
+/* Aberto por duplo clique (file://) volta para o indice local; servido pela web,
+   volta para o publicado. Os dois listam os mesmos materiais. */
+function idxHref(){
+  var local = (typeof location !== 'undefined' && location.protocol === 'file:');
+  return local ? '../index_local.html' : '../index.html';
+}
+function emAndamento(){
+  return S.order.length > 0 && !S.finished &&
+         S.answers.some(function(a){ return a !== null; });
+}
+
+/* ── header ────────────────────────────────────────────────────────────────── */
+function renderHeader(){
+  var mono = "font-family:'IBM Plex Mono',monospace";
+  var left =
+    '<div style="min-width:0">' +
+      '<div style="display:flex;align-items:center;gap:8px;'+mono+';font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:#8a8578">' +
+        '<a href="'+idxHref()+'" class="h-ink" style="color:#2b57cc;text-decoration:none;white-space:nowrap">\u2190 Materiais</a>' +
+        '<span style="color:#d3cec4">/</span>' +
+        '<span style="overflow:hidden;text-overflow:ellipsis;white-space:nowrap">'+esc(EYEBROW)+'</span>' +
+      '</div>' +
+      '<h1 style="margin:1px 0 0;font-family:\'Newsreader\',Georgia,serif;font-size:20px;font-weight:500;letter-spacing:-.01em;line-height:1.15">'+esc(TITLE)+'</h1>' +
+    '</div>';
+
+  var right = '';
+  if (S.view === 'quiz' && S.started) {
+    var hit = counts().hit;
+    right = '<div style="display:flex;align-items:center;gap:10px;flex-shrink:0">' +
+              '<button type="button" data-act="sair" class="h-line" style="background:none;border:1px solid #ddd8ce;border-radius:9px;padding:6px 11px;'+mono+';font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;color:#5b6478;cursor:pointer;transition:border-color .15s ease">Sair</button>' +
+              '<div style="display:flex;align-items:center;gap:6px">' +
+                '<span style="'+mono+';font-size:15px;font-weight:600;letter-spacing:-.02em">'+hit+'</span>' +
+                '<span style="'+mono+';font-size:11px;color:#8a8578">/ '+S.order.length+'</span>' +
+              '</div></div>';
+  } else if (S.view !== 'home') {
+    right = '<button type="button" data-act="home" class="h-line" style="flex-shrink:0;background:none;border:1px solid #ddd8ce;border-radius:9px;padding:7px 13px;'+mono+';font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:#5b6478;cursor:pointer;transition:border-color .15s ease">← Início</button>';
+  }
+
+  var html = '<div style="display:flex;align-items:baseline;justify-content:space-between;gap:12px;margin-bottom:'+(S.view==='quiz'&&S.started?'10px':'2px')+'">'+left+right+'</div>';
+
+  if (S.view === 'quiz' && S.started) {
+    var c = counts();
+    var rail = S.order.map(function(q,n){
+      var a = S.answers[n], cur = n===S.i && !S.finished, bg = '#d3cec4';
+      if (a!==null) bg = (a===q.correctIndex) ? '#2e7d55' : '#c04437';
+      if (cur && a===null) bg = '#121a2b';
+      var st = a===null ? 'em branco' : (a===q.correctIndex ? 'correta' : 'incorreta');
+      return '<button type="button" data-act="jump" data-n="'+n+'" title="Questão '+(n+1)+' — '+st+'" aria-label="Questão '+(n+1)+' — '+st+'" style="flex:1 1 0;min-width:0;background:none;border:0;padding:13px 0;margin:0;cursor:pointer;display:flex;align-items:center;justify-content:center">' +
+             '<span style="display:block;width:100%;border-radius:99px;transition:height .18s ease,background .18s ease,box-shadow .18s ease;height:'+(cur?'17px':'9px')+';background:'+bg+';box-shadow:'+(cur?'0 0 0 3px rgba(18,26,43,.13)':'none')+'"></span></button>';
+    }).join('');
+    html += '<div><div style="display:flex;align-items:center;gap:3px">'+rail+'</div>' +
+            '<div style="display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:-2px">' +
+              '<div style="'+mono+';font-size:11px;letter-spacing:.04em;color:#5b6478">Questão '+pad(S.i+1)+' / '+S.order.length+'</div>' +
+              '<div style="display:flex;align-items:center;gap:12px;'+mono+';font-size:10.5px;color:#8a8578">' +
+                dot('#2e7d55',c.hit)+dot('#c04437',c.miss)+dot('#d3cec4',c.blank) +
+              '</div></div></div>';
+  }
+  document.getElementById('hdr').innerHTML = html;
+}
+function dot(color,n){ return '<span style="display:flex;align-items:center;gap:5px"><span style="width:7px;height:7px;border-radius:99px;background:'+color+';display:block"></span>'+n+'</span>'; }
+
+function counts(){
+  var hit=0, miss=0, blank=0;
+  S.answers.forEach(function(a,n){
+    if (a===null) blank++;
+    else if (S.order[n] && a===S.order[n].correctIndex) hit++;
+    else miss++;
+  });
+  return { hit:hit, miss:miss, blank:blank, total:S.order.length };
+}
+
+/* ── tela inicial ──────────────────────────────────────────────────────────── */
+function renderHome(){
+  var mono = "font-family:'IBM Plex Mono',monospace";
+  var secoes = (document.getElementById('resumoSrc').textContent.match(/<h2/g)||[]).length;
+  var cell = function(v,l){
+    return '<div style="background:#faf9f6;padding:16px 14px">' +
+      '<div style="'+mono+';font-size:22px;font-weight:500;letter-spacing:-.03em">'+v+'</div>' +
+      '<div style="'+mono+';font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:#8a8578;margin-top:3px">'+l+'</div></div>';
+  };
+  var card = function(act,tag,titulo,desc,cta){
+    return '<button type="button" data-act="'+act+'" class="h-card" style="display:flex;flex-direction:column;align-items:flex-start;gap:0;text-align:left;background:#fff;border:1px solid #e4e0d8;border-radius:18px;padding:24px 22px;cursor:pointer;transition:border-color .16s ease,transform .14s ease;box-shadow:0 1px 2px rgba(18,26,43,.04),0 12px 28px -20px rgba(18,26,43,.18)">' +
+      '<div style="'+mono+';font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:#2b57cc;margin-bottom:12px">'+tag+'</div>' +
+      '<div style="font-family:\'Newsreader\',Georgia,serif;font-size:26px;font-weight:500;letter-spacing:-.02em;line-height:1.15;margin-bottom:8px">'+titulo+'</div>' +
+      '<div style="font-size:14px;line-height:1.6;color:#5b6478;margin-bottom:18px;text-wrap:pretty">'+desc+'</div>' +
+      '<div style="'+mono+';font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:#121a2b">'+cta+'</div></button>';
+  };
+
+  document.getElementById('stage').innerHTML =
+    '<section style="padding:56px 0 0;animation:qFade .3s ease">' +
+      '<div style="'+mono+';font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:#2b57cc;margin-bottom:16px">Material de revisão</div>' +
+      '<h2 style="font-family:\'Newsreader\',Georgia,serif;font-size:40px;line-height:1.08;font-weight:400;letter-spacing:-.025em;margin:0 0 18px;text-wrap:pretty">'+esc(SUBTITLE)+'</h2>' +
+      '<p style="font-size:15.5px;line-height:1.65;color:#5b6478;margin:0 0 30px;max-width:52ch;text-wrap:pretty">'+esc(INTRO)+'</p>' +
+      '<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(108px,1fr));gap:1px;background:#e4e0d8;border:1px solid #e4e0d8;border-radius:14px;overflow:hidden;margin-bottom:32px">' +
+        cell(QUIZ.length,'Questões') + cell(secoes,'Seções') + cell('~'+Math.round(QUIZ.length*0.75),'Minutos') +
+      '</div>' +
+      '<div class="home-grid" style="display:grid;grid-template-columns:1fr 1fr;gap:12px">' +
+        (emAndamento()
+          ? card('retomar','Em andamento','Quiz',
+                 'Você parou na questão '+pad(S.i+1)+' de '+S.order.length+', com '+
+                 (S.order.length-counts().blank)+' respondida'+((S.order.length-counts().blank)===1?'':'s')+
+                 '. Suas respostas continuam guardadas.','Retomar →')
+          : card('start','Praticar','Quiz', QUIZ.length+' questões de múltipla escolha, com explicação assim que você responde e gabarito comentado no fim.','Começar →')) +
+        card('resumo','Estudar','Resumo','O conteúdo da aula em texto corrido, organizado em '+secoes+' seções para leitura antes da prova.','Ler →') +
+      '</div>' +
+      '<div style="margin-top:26px;display:flex;flex-wrap:wrap;align-items:center;gap:8px 18px;'+mono+';font-size:11px;color:#8a8578">' +
+        '<span>← →&nbsp; navegar</span><span>1–'+maxOpts()+'&nbsp; responder</span><span>Enter&nbsp; avançar</span>' +
+        (emAndamento() ? '<button type="button" data-act="start" class="h-ink" style="background:none;border:0;padding:0;'+mono+';font-size:11px;color:#8a8578;cursor:pointer;text-decoration:underline;text-underline-offset:3px">recomeçar do zero</button>' : '') +
+        '</div>' +
+    '</section>';
+}
+function maxOpts(){ return QUIZ.reduce(function(m,q){ return Math.max(m,q.options.length); },0); }
+
+/* ── resumo ────────────────────────────────────────────────────────────────── */
+function renderResumo(){
+  document.getElementById('stage').innerHTML =
+    '<section style="padding:34px 0 0;animation:qFade .3s ease">' +
+      '<div style="font-family:\'IBM Plex Mono\',monospace;font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:#2b57cc;margin-bottom:14px">Resumo</div>' +
+      '<div class="rsm">' + document.getElementById('resumoSrc').textContent + '</div>' +
+      '<div style="display:flex;flex-wrap:wrap;gap:9px;margin-top:38px;padding-top:24px;border-top:1px solid #e4e0d8">' +
+        '<button type="button" data-act="start" class="h-darkflat" style="background:#121a2b;color:#f5f3ef;border:0;border-radius:11px;padding:13px 24px;font-size:14px;font-weight:500;cursor:pointer;transition:background .16s ease">Fazer o quiz →</button>' +
+        '<button type="button" data-act="home" class="h-line" style="background:none;border:1px solid #ddd8ce;border-radius:11px;padding:13px 22px;font-size:14px;cursor:pointer;transition:border-color .15s ease">Voltar ao início</button>' +
+      '</div></section>';
+}
+
+/* imagem da questao — data URI ja resolvida pelo montar_quiz.py */
+function figura(q, cls){
+  if (!q.image) return '';
+  return '<figure class="fig'+(cls?' '+cls:'')+'"><img src="'+q.image+'" alt="'+esc(q.imageCaption||'Imagem da questão')+'">' +
+         (q.imageCaption ? '<figcaption>'+esc(q.imageCaption)+'</figcaption>' : '') + '</figure>';
+}
+
+/* ── questão ───────────────────────────────────────────────────────────────── */
+function renderQuestion(){
+  var mono = "font-family:'IBM Plex Mono',monospace";
+  var q = S.order[S.i], ans = S.answers[S.i], reveal = ans !== null;
+
+  var status = 'Não respondida', sColor = '#8a8578';
+  if (reveal) { var ok = ans===q.correctIndex; status = ok?'Você acertou':'Você errou'; sColor = ok?'#2e7d55':'#c04437'; }
+
+  var opts = q.options.map(function(text,n){
+    var isC = n===q.correctIndex, isMine = n===ans;
+    var bd='#e4e0d8', bg='#fff', fg='#121a2b', bBg='#f2efe9', bFg='#8a8578', mark='', mColor='', op='1', hbd='#2b57cc';
+    if (reveal) {
+      op = (isC||isMine) ? '1' : '.62';
+      if (isC)               { bd='#8fc7a7'; bg='#eef7f1'; fg='#1f5c3e'; bBg='#2e7d55'; bFg='#fff'; mark='✓'; mColor='#2e7d55'; }
+      if (isMine && !isC)    { bd='#e0a49a'; bg='#fdf0ee'; fg='#8f2f25'; bBg='#c04437'; bFg='#fff'; mark='✕'; mColor='#c04437'; }
+    } else if (isMine)       { bd='#121a2b'; bg='#f7f6f2'; bBg='#121a2b'; bFg='#f5f3ef'; }
+    var locked = reveal && LOCK;
+    return '<button type="button" data-act="pick" data-n="'+n+'" class="h-opt'+(locked?' locked':'')+'" style="--hbd:'+hbd+';display:flex;gap:13px;align-items:flex-start;width:100%;text-align:left;padding:14px 15px;border-radius:13px;font-size:15px;line-height:1.5;transition:border-color .15s ease,background .15s ease,transform .12s ease;border:1.5px solid '+bd+';background:'+bg+';color:'+fg+';cursor:'+(locked?'default':'pointer')+';opacity:'+op+'">' +
+      '<span style="flex-shrink:0;width:24px;height:24px;border-radius:7px;display:flex;align-items:center;justify-content:center;'+mono+';font-size:11.5px;font-weight:600;margin-top:1px;background:'+bBg+';color:'+bFg+'">'+LETTERS[n]+'</span>' +
+      '<span style="flex:1;min-width:0;text-wrap:pretty">'+esc(text)+'</span>' +
+      (mark ? '<span style="flex-shrink:0;'+mono+';font-size:14px;font-weight:600;margin-top:1px;color:'+mColor+'">'+mark+'</span>' : '') +
+      '</button>';
+  }).join('');
+
+  var expl = reveal ? '<div style="margin-top:20px;padding:16px 18px;background:#f7f6f2;border-left:2.5px solid #2b57cc;border-radius:0 12px 12px 0;animation:qFade .26s ease">' +
+      '<div style="'+mono+';font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:#2b57cc;margin-bottom:8px">Por quê</div>' +
+      '<p style="margin:0;font-size:14.5px;line-height:1.68;color:#39404f;text-wrap:pretty">'+esc(q.explanation)+'</p></div>' : '';
+
+  var blank = counts().blank;
+  var warn = S.warn ? '<div style="margin-top:14px;padding:15px 17px;background:#fdf7e9;border:1px solid #e8d5a3;border-radius:14px;animation:qFade .22s ease">' +
+      '<p style="margin:0 0 12px;font-size:14px;line-height:1.55;color:#6b5620">'+blank+(blank===1?' questão ainda está em branco.':' questões ainda estão em branco.')+' Você pode voltar nelas ou finalizar assim mesmo.</p>' +
+      '<div style="display:flex;flex-wrap:wrap;gap:8px">' +
+        '<button type="button" data-act="gotoBlank" style="background:#121a2b;color:#f5f3ef;border:0;border-radius:9px;padding:9px 16px;font-size:13px;font-weight:500;cursor:pointer">Ir para a 1ª em branco</button>' +
+        '<button type="button" data-act="force" style="background:none;color:#6b5620;border:1px solid #e8d5a3;border-radius:9px;padding:9px 16px;font-size:13px;cursor:pointer">Finalizar assim mesmo</button>' +
+      '</div></div>' : '';
+
+  var last = S.i === S.order.length-1;
+  var early = !last && (S.order.length - blank) > 0;
+
+  document.getElementById('stage').innerHTML =
+    '<section style="padding:26px 0 0">' +
+      '<article style="background:#fff;border:1px solid #e4e0d8;border-radius:18px;padding:26px 22px 24px;box-shadow:0 1px 2px rgba(18,26,43,.04),0 12px 28px -18px rgba(18,26,43,.18)">' +
+        '<div style="display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:14px">' +
+          '<div style="'+mono+';font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:#2b57cc">Questão '+pad(S.i+1)+'</div>' +
+          '<div style="'+mono+';font-size:10.5px;letter-spacing:.06em;color:'+sColor+'">'+status+'</div>' +
+        '</div>' +
+        '<h2 style="font-family:\'Newsreader\',Georgia,serif;font-size:22px;line-height:1.42;font-weight:400;letter-spacing:-.012em;margin:0 0 22px;text-wrap:pretty">'+esc(q.question)+'</h2>' +
+        figura(q, 'qfig') +
+        '<div style="display:flex;flex-direction:column;gap:9px">'+opts+'</div>' + expl +
+        (reveal ? chatBox(q, ans===q.correctIndex) : '') +
+      '</article>' + warn +
+      '<div style="display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:18px">' +
+        '<button type="button" data-act="prev" class="h-line" style="background:none;border:1px solid #ddd8ce;border-radius:11px;padding:12px 18px;font-size:14px;cursor:pointer;transition:border-color .15s ease,color .15s ease;color:'+(S.i===0?'#c4bfb4':'#121a2b')+';pointer-events:'+(S.i===0?'none':'auto')+'">← Anterior</button>' +
+        '<div style="display:flex;align-items:center;gap:8px">' +
+          (early ? '<button type="button" data-act="finish" class="h-ink" style="background:none;border:0;padding:12px 6px;'+mono+';font-size:11.5px;letter-spacing:.06em;text-transform:uppercase;color:#8a8578;cursor:pointer;text-decoration:underline;text-underline-offset:3px">Finalizar</button>' : '') +
+          '<button type="button" data-act="next" class="h-darkflat" style="background:#121a2b;color:#f5f3ef;border:0;border-radius:11px;padding:12px 22px;font-size:14px;font-weight:500;cursor:pointer;transition:background .16s ease">'+(last?'Finalizar':'Próxima →')+'</button>' +
+        '</div></div></section>';
+}
+
+/* ── resultado + gabarito comentado ────────────────────────────────────────── */
+function reviewList(){
+  return S.order.map(function(q,n){
+    var a = S.answers[n], ok = a!==null && a===q.correctIndex;
+    return { idx:n, ok:ok, blank:a===null, q:q, a:a };
+  }).filter(function(r){
+    return S.filter==='all' || (S.filter==='wrong'&&!r.ok&&!r.blank) || (S.filter==='right'&&r.ok) || (S.filter==='blank'&&r.blank);
+  });
+}
+
+function renderResult(){
+  var mono = "font-family:'IBM Plex Mono',monospace";
+  var c = counts(), pct = c.total ? Math.round(c.hit/c.total*100) : 0;
+
+  var title='Precisa revisar', msg='Releia o material com atenção e refaça o quiz — as explicações abaixo cobrem cada erro.';
+  if (pct>=90)      { title='Domínio sólido';   msg='Desempenho excelente. Confira as explicações das que escaparam e siga em frente.'; }
+  else if (pct>=70) { title='Bom desempenho';   msg='Base consistente. Revise os pontos errados abaixo para fechar as lacunas.'; }
+  else if (pct>=50) { title='Meio do caminho';  msg='Você acertou o essencial, mas há lacunas. Comece pelo filtro de erradas.'; }
+
+  var stat = function(v,l,color){
+    return '<div style="background:#faf9f6;padding:14px 10px">' +
+      '<div style="'+mono+';font-size:19px;font-weight:500;color:'+color+'">'+v+'</div>' +
+      '<div style="'+mono+';font-size:9.5px;letter-spacing:.09em;text-transform:uppercase;color:#8a8578;margin-top:2px">'+l+'</div></div>';
+  };
+
+  var fdefs = [['all','Todas',c.total],['wrong','Erradas',c.miss],['right','Certas',c.hit],['blank','Em branco',c.blank]];
+  var filters = fdefs.map(function(f){
+    var on = S.filter===f[0];
+    return '<button type="button" data-act="filter" data-k="'+f[0]+'" class="h-line" style="border-radius:99px;padding:8px 14px;font-size:13px;cursor:pointer;transition:all .15s ease;border:1px solid '+(on?'#121a2b':'#ddd8ce')+';background:'+(on?'#121a2b':'transparent')+';color:'+(on?'#f5f3ef':'#5b6478')+'">'+f[1]+' '+f[2]+'</button>';
+  }).join('');
+
+  var list = reviewList();
+  var allOpen = list.length>0 && list.every(function(r){ return S.open[r.idx]; });
+
+  var cards = list.map(function(r){
+    var numBg='#f0ede7', numFg='#8a8578';
+    if (!r.blank) { if (r.ok) { numBg='#e3f0e8'; numFg='#1f5c3e'; } else { numBg='#fbe6e2'; numFg='#8f2f25'; } }
+    var open = !!S.open[r.idx];
+    var body = '';
+    if (open) {
+      var opts = r.q.options.map(function(text,n){
+        var isC = n===r.q.correctIndex, isMine = n===r.a;
+        var bd='#eeebe4', bg='#fbfaf8', fg='#5b6478', bBg='#f0ede7', bFg='#8a8578', tag='', tBg='', tFg='';
+        if (isC)            { bd='#bcdcc9'; bg='#eef7f1'; fg='#1f5c3e'; bBg='#2e7d55'; bFg='#fff'; tag='Correta'; tBg='#d9ede1'; tFg='#1f5c3e'; }
+        if (isMine && !isC) { bd='#eec4bd'; bg='#fdf0ee'; fg='#8f2f25'; bBg='#c04437'; bFg='#fff'; tag='Sua resposta'; tBg='#f7ddd8'; tFg='#8f2f25'; }
+        if (isMine && isC)  { tag='Sua resposta ✓'; }
+        return '<div style="display:flex;gap:11px;align-items:flex-start;padding:11px 13px;border-radius:11px;font-size:14px;line-height:1.5;border:1px solid '+bd+';background:'+bg+';color:'+fg+'">' +
+          '<span style="flex-shrink:0;width:21px;height:21px;border-radius:6px;display:flex;align-items:center;justify-content:center;'+mono+';font-size:10.5px;font-weight:600;background:'+bBg+';color:'+bFg+'">'+LETTERS[n]+'</span>' +
+          '<span style="flex:1;min-width:0;text-wrap:pretty">'+esc(text)+'</span>' +
+          (tag ? '<span style="flex-shrink:0;'+mono+';font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;padding:3px 7px;border-radius:6px;margin-top:1px;background:'+tBg+';color:'+tFg+'">'+tag+'</span>' : '') +
+          '</div>';
+      }).join('');
+      body = '<div style="padding:2px 15px 18px;animation:qDrawer .2s ease">' +
+        '<div style="height:1px;background:#eeebe4;margin:0 0 16px"></div>' +
+        '<p style="font-family:\'Newsreader\',Georgia,serif;font-size:18px;line-height:1.5;margin:0 0 16px;text-wrap:pretty">'+esc(r.q.question)+'</p>' +
+        figura(r.q) +
+        '<div style="display:flex;flex-direction:column;gap:7px">'+opts+'</div>' +
+        '<div style="margin-top:16px;padding:14px 16px;background:#f7f6f2;border-left:2.5px solid #2b57cc;border-radius:0 11px 11px 0">' +
+          '<div style="'+mono+';font-size:9.5px;letter-spacing:.16em;text-transform:uppercase;color:#2b57cc;margin-bottom:7px">Por quê</div>' +
+          '<p style="margin:0;font-size:14px;line-height:1.65;color:#39404f;text-wrap:pretty">'+esc(r.q.explanation)+'</p></div>' +
+        '<button type="button" data-act="jump" data-n="'+r.idx+'" style="margin-top:14px;background:none;border:0;padding:0;'+mono+';font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:#2b57cc;cursor:pointer;text-decoration:underline;text-underline-offset:3px">Abrir no quiz →</button></div>';
+    }
+    return '<div style="background:#fff;border:1px solid '+(open?'#c9c3b6':'#e4e0d8')+';border-radius:14px;overflow:hidden;transition:border-color .15s ease">' +
+      '<button type="button" data-act="toggle" data-n="'+r.idx+'" style="display:flex;align-items:center;gap:12px;width:100%;text-align:left;background:none;border:0;padding:14px 15px;cursor:pointer">' +
+        '<span style="flex-shrink:0;width:28px;height:28px;border-radius:8px;display:flex;align-items:center;justify-content:center;'+mono+';font-size:12px;font-weight:600;background:'+numBg+';color:'+numFg+'">'+pad(r.idx+1)+'</span>' +
+        '<span style="flex:1;min-width:0;font-size:14px;line-height:1.45;color:#39404f;overflow:hidden;text-overflow:ellipsis;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical">'+esc(r.q.question)+'</span>' +
+        '<span style="flex-shrink:0;'+mono+';font-size:16px;color:#8a8578;width:16px;text-align:center">'+(open?'−':'+')+'</span>' +
+      '</button>' + body + '</div>';
+  }).join('');
+
+  document.getElementById('stage').innerHTML =
+    '<section style="padding:34px 0 0;animation:qFade .3s ease">' +
+      '<div style="'+mono+';font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:#2b57cc;margin-bottom:14px">Resultado</div>' +
+      '<h2 style="font-family:\'Newsreader\',Georgia,serif;font-size:36px;line-height:1.12;font-weight:400;letter-spacing:-.025em;margin:0 0 8px">'+title+'</h2>' +
+      '<p style="font-size:15px;line-height:1.6;color:#5b6478;margin:0 0 24px;max-width:48ch;text-wrap:pretty">'+msg+'</p>' +
+      '<div style="height:8px;border-radius:99px;background:#e4e0d8;overflow:hidden;margin-bottom:10px">' +
+        '<div style="height:100%;border-radius:99px;background:#121a2b;transition:width .7s cubic-bezier(.22,1,.36,1);width:'+pct+'%"></div></div>' +
+      '<div style="display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:#e4e0d8;border:1px solid #e4e0d8;border-radius:14px;overflow:hidden;margin-bottom:34px">' +
+        stat(c.hit,'Certas','#2e7d55')+stat(c.miss,'Erradas','#c04437')+stat(c.blank,'Branco','#8a8578')+stat(pct+'%','Aproveit.','#2b57cc') +
+      '</div>' +
+      '<div style="display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-bottom:14px">' +
+        '<h3 style="font-family:\'Newsreader\',Georgia,serif;font-size:22px;font-weight:500;letter-spacing:-.015em;margin:0">Gabarito comentado</h3>' +
+        '<button type="button" data-act="toggleAll" class="h-ink" style="background:none;border:0;padding:6px 0;'+mono+';font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:#5b6478;cursor:pointer;text-decoration:underline;text-underline-offset:3px">'+(allOpen?'Recolher tudo':'Expandir tudo')+'</button>' +
+      '</div>' +
+      '<div style="display:flex;gap:7px;flex-wrap:wrap;margin-bottom:16px">'+filters+'</div>' +
+      '<div style="display:flex;flex-direction:column;gap:8px">'+cards+'</div>' +
+      (list.length===0 ? '<div style="padding:38px 16px;text-align:center;color:#8a8578;font-size:14px;border:1px dashed #ddd8ce;border-radius:14px">Nenhuma questão neste filtro.</div>' : '') +
+      '<div style="display:flex;flex-wrap:wrap;gap:9px;margin-top:28px;padding-top:24px;border-top:1px solid #e4e0d8">' +
+        '<button type="button" data-act="restart" class="h-darkflat" style="background:#121a2b;color:#f5f3ef;border:0;border-radius:11px;padding:13px 24px;font-size:14px;font-weight:500;cursor:pointer;transition:background .16s ease">Refazer o quiz</button>' +
+        '<button type="button" data-act="back" class="h-line" style="background:none;border:1px solid #ddd8ce;border-radius:11px;padding:13px 22px;font-size:14px;cursor:pointer;transition:border-color .15s ease">Voltar às questões</button>' +
+        '<button type="button" data-act="resumo" class="h-line" style="background:none;border:1px solid #ddd8ce;border-radius:11px;padding:13px 22px;font-size:14px;cursor:pointer;transition:border-color .15s ease">Ler o resumo</button>' +
+      '</div></section>';
+}
+
+/* ── render + eventos ──────────────────────────────────────────────────────── */
+
+/* ─── Tutor DeepSeek — só local, só quando a questão foi errada ──────────────
+   A chave vem de ../deepseek_key.js, que não existe na versão publicada: online
+   o arquivo dá 404, dsOn() vira false e o chat simplesmente não é renderizado.
+   O histórico fica em S.chat[idDaQuestao] e sobrevive ao re-render do stage. */
+var DS_MODEL = 'deepseek-flash';
+var DS_URL   = 'https://api.deepseek.com/chat/completions';
+var NLJS     = String.fromCharCode(10);
+var DS_MONO  = "font-family:'IBM Plex Mono',monospace";
+var DS_SANS  = "font-family:'IBM Plex Sans',system-ui,sans-serif";
+
+function dsOn(){ return typeof window.DEEPSEEK_KEY === 'string' && window.DEEPSEEK_KEY.length > 10; }
+
+
+/* ─── markdown do chat ───────────────────────────────────────────────────────
+   O modelo responde em markdown (**negrito**, listas, `codigo`, tabelas). O texto
+   vem de fora, entao a ordem importa: ESCAPA TUDO primeiro com esc() e so depois
+   aplica formatacao — assim nenhuma tag vinda da resposta vira HTML de verdade.
+   Como esc() ja trocou > por &gt;, a citacao casa com &gt; e nao com >.
+   Trechos de codigo saem de cena por um marcador NUL, que nao pode existir
+   no texto escapado, e voltam no fim — assim ` ` protege o que esta dentro. */
+function mdIn(t){
+  var Z = String.fromCharCode(0), codes = [];
+  t = t.replace(/`([^`]+)`/g, function(_, c){
+    codes.push(c);
+    return Z + 'c' + (codes.length - 1) + Z;
+  });
+  t = t.replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>');
+  t = t.replace(/__([^_]+)__/g, '<strong>$1</strong>');
+  t = t.replace(/(^|[\s(])\*([^*\n]+)\*/g, '$1<em>$2</em>');
+  t = t.replace(/(^|[\s(])_([^_\n]+)_/g, '$1<em>$2</em>');
+  t = t.replace(/\[([^\]]+)\]\((https?:\/\/[^)\s]+)\)/g,
+    '<a href="$2" target="_blank" rel="noopener" style="color:#2b57cc">$1</a>');
+  return t.replace(new RegExp(Z + 'c([0-9]+)' + Z, 'g'), function(_, i){
+    return '<code style="' + DS_MONO + ';font-size:12px;background:#f2efe9;' +
+           'border-radius:4px;padding:1px 5px">' + codes[i] + '</code>';
+  });
+}
+
+function mdChat(txt){
+  var Z = String.fromCharCode(0);
+  var t = esc(String(txt == null ? '' : txt));
+  var blocos = [];
+  t = t.replace(/```[a-zA-Z]*\n?([\s\S]*?)```/g, function(_, c){
+    blocos.push(c.replace(/\n+$/, ''));
+    return Z + 'b' + (blocos.length - 1) + Z;
+  });
+
+  var linhas = t.split('\n'), out = [], lista = null, par = [];
+  function fechaLista(){ if (lista) { out.push('</' + lista + '>'); lista = null; } }
+  function fechaPar(){
+    if (par.length) { out.push('<p style="margin:0 0 9px">' + mdIn(par.join(' ')) + '</p>'); par = []; }
+  }
+  function fecha(){ fechaPar(); fechaLista(); }
+
+  for (var i = 0; i < linhas.length; i++){
+    var l = linhas[i], t2 = l.trim();
+    if (!t2) { fecha(); continue; }
+
+    var bl = t2.match(new RegExp('^' + Z + 'b([0-9]+)' + Z + '$'));
+    if (bl) {
+      fecha();
+      out.push('<pre style="margin:0 0 9px;padding:9px 11px;background:#f7f6f2;border-radius:9px;' +
+               'overflow-x:auto;' + DS_MONO + ';font-size:12px;line-height:1.5">' + blocos[bl[1]] + '</pre>');
+      continue;
+    }
+
+    // tabela: linha com | ... | seguida da separadora | --- | --- |
+    if (t2.charAt(0) === '|' && i + 1 < linhas.length && /^\|[\s:|-]+\|$/.test(linhas[i+1].trim())) {
+      fecha();
+      var celulas = function(linha){
+        return linha.trim().replace(/^\||\|$/g, '').split('|').map(function(c){ return mdIn(c.trim()); });
+      };
+      var cab = celulas(t2), corpo = [];
+      i += 2;
+      while (i < linhas.length && linhas[i].trim().charAt(0) === '|') { corpo.push(celulas(linhas[i].trim())); i++; }
+      i--;
+      var cel = 'padding:5px 9px;border-bottom:1px solid #eae6de;text-align:left;vertical-align:top';
+      out.push('<div style="overflow-x:auto;margin:0 0 9px">' +
+        '<table style="border-collapse:collapse;font-size:12.5px;width:100%">' +
+        '<thead><tr>' + cab.map(function(c){ return '<th style="' + cel + ';font-weight:600">' + c + '</th>'; }).join('') + '</tr></thead>' +
+        '<tbody>' + corpo.map(function(r){
+          return '<tr>' + r.map(function(c){ return '<td style="' + cel + '">' + c + '</td>'; }).join('') + '</tr>';
+        }).join('') + '</tbody></table></div>');
+      continue;
+    }
+
+    var h = t2.match(/^#{1,6}\s+(.*)$/);
+    if (h) {
+      fecha();
+      out.push('<div style="font-weight:600;color:#121a2b;margin:11px 0 5px">' + mdIn(h[1]) + '</div>');
+      continue;
+    }
+
+    if (/^(---+|\*\*\*+)$/.test(t2)) {
+      fecha();
+      out.push('<hr style="border:0;border-top:1px solid #eae6de;margin:11px 0">');
+      continue;
+    }
+
+    var cit = t2.match(/^&gt;\s?(.*)$/);
+    if (cit) {
+      fecha();
+      out.push('<div style="margin:0 0 9px;padding:7px 11px;border-left:2.5px solid #c9d6f7;' +
+               'background:#f7f9fe;border-radius:0 7px 7px 0">' + mdIn(cit[1]) + '</div>');
+      continue;
+    }
+
+    var mUl = t2.match(/^[-*•]\s+(.*)$/);
+    var mOl = t2.match(/^\d+[.)]\s+(.*)$/);
+    if (mUl || mOl) {
+      var tipo = mUl ? 'ul' : 'ol';
+      fechaPar();
+      if (lista !== tipo) {
+        fechaLista();
+        out.push('<' + tipo + ' style="margin:0 0 9px;padding-left:19px">');
+        lista = tipo;
+      }
+      out.push('<li style="margin:3px 0">' + mdIn((mUl || mOl)[1]) + '</li>');
+      continue;
+    }
+
+    fechaLista();
+    par.push(t2);
+  }
+  fecha();
+  return out.join('');
+}
+
+function msgHTML(m){
+  if (m.role === 'user')
+    return '<div style="margin:0 0 10px;text-align:right">' +
+      '<span style="display:inline-block;max-width:88%;text-align:left;background:#f2efe9;' +
+      'border-radius:12px 12px 3px 12px;padding:9px 12px;font-size:13.5px;line-height:1.6;' +
+      'color:#39404f;text-wrap:pretty">' + esc(m.content) + '</span></div>';
+  return '<div style="margin:0 0 12px">' +
+    '<div style="' + DS_MONO + ';font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;' +
+    'color:#2b57cc;margin-bottom:4px">DeepSeek</div>' +
+    '<div style="font-size:13.5px;line-height:1.65;color:#39404f;text-wrap:pretty">' +
+    mdChat(m.content) + '</div></div>';
+}
+
+function chatBox(q, acertou){
+  if (!dsOn()) return '';
+  var chamada = acertou ? 'Quer ir mais fundo?' : 'Ainda com dúvida?';
+  var dica = acertou ? 'Por que as outras estão erradas?' : 'Por que a que eu marquei está errada?';
+  var hist = (S.chat[q.id] || []).map(msgHTML).join('');
+  return '<div id="ds" data-qid="' + q.id + '" style="margin-top:14px;border:1px solid #e4e0d8;' +
+      'border-radius:14px;background:#fff;overflow:hidden;animation:qFade .26s ease">' +
+      '<div style="display:flex;align-items:center;gap:8px;padding:11px 15px;' +
+        'border-bottom:1px solid #f0ede6;background:#faf9f6">' +
+        '<span style="' + DS_MONO + ';font-size:10px;letter-spacing:.16em;text-transform:uppercase;' +
+        'color:#2b57cc">' + chamada + '</span>' +
+        '<span style="font-size:12px;color:#8a8578">pergunte ao DeepSeek</span></div>' +
+      '<div id="dsLog" style="max-height:280px;overflow-y:auto;padding:' + (hist ? '12px 15px' : '0') + '">' +
+        hist + '</div>' +
+      '<div style="display:flex;gap:8px;padding:11px 12px;border-top:1px solid #f0ede6">' +
+        '<input id="dsIn" type="text" autocomplete="off" ' +
+          'placeholder="' + dica + '" ' +
+          'style="flex:1;min-width:0;border:1px solid #e4e0d8;border-radius:10px;padding:10px 12px;' +
+          'font-size:13.5px;' + DS_SANS + ';color:#121a2b;background:#fff;outline:none">' +
+        '<button type="button" data-act="dsSend" class="h-darkflat" style="flex-shrink:0;' +
+          'background:#121a2b;color:#f5f3ef;border:0;border-radius:10px;padding:10px 16px;' +
+          'font-size:13px;font-weight:500;cursor:pointer;transition:background .16s ease">Enviar</button>' +
+      '</div></div>';
+}
+
+function dsContexto(q, ans){
+  var alts = q.options.map(function(o, n){ return LETTERS[n] + ') ' + o; }).join(NLJS);
+  return 'Questao: ' + q.question + NLJS + alts + NLJS +
+    'Resposta correta: ' + LETTERS[q.correctIndex] + ') ' + q.options[q.correctIndex] + NLJS +
+    'O estudante marcou: ' + (ans === null ? 'nada' : LETTERS[ans] + ') ' + q.options[ans]) + NLJS +
+    'Explicacao que ele ja tem: ' + q.explanation;
+}
+
+A.dsSend = function(){
+  var box = document.getElementById('ds');
+  if (!box || !dsOn() || box.getAttribute('data-busy')) return;
+  var input = document.getElementById('dsIn'), log = document.getElementById('dsLog');
+  var texto = (input.value || '').trim();
+  if (!texto) return;
+
+  var qid = parseInt(box.getAttribute('data-qid'), 10), q = null, ans = null;
+  for (var i = 0; i < S.order.length; i++)
+    if (S.order[i].id === qid) { q = S.order[i]; ans = S.answers[i]; }
+  if (!q) return;
+
+  S.chat[qid] = S.chat[qid] || [];
+  S.chat[qid].push({ role:'user', content:texto });
+  input.value = '';
+  log.style.padding = '12px 15px';
+  log.insertAdjacentHTML('beforeend', msgHTML({ role:'user', content:texto }));
+  log.insertAdjacentHTML('beforeend',
+    '<div><div style="' + DS_MONO + ';font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;' +
+    'color:#2b57cc;margin-bottom:4px">DeepSeek</div>' +
+    '<div id="dsTxt" style="font-size:13.5px;line-height:1.65;color:#8a8578;' +
+    'text-wrap:pretty">pensando…</div></div>');
+  log.scrollTop = log.scrollHeight;
+  box.setAttribute('data-busy', '1');
+
+  var acertou = (ans === q.correctIndex);
+  var situacao = acertou
+    ? 'Voce e um tutor de medicina. O estudante do 7o semestre ACERTOU esta questao, mas ficou com uma duvida. '
+    : 'Voce e um tutor de medicina. O estudante do 7o semestre ERROU esta questao. ';
+  var msgs = [
+    { role:'system', content: situacao +
+      'Responda em portugues do Brasil, direto ao ponto, no maximo 150 palavras. ' +
+      'Traga o dado concreto (valor, criterio, mecanismo) em vez de generalidade. ' +
+      'Nao repita a explicacao que ele ja tem; foque na duvida que ele trouxe.' },
+    { role:'user', content: dsContexto(q, ans) }
+  ];
+  var h = S.chat[qid];
+  for (var j = 0; j < h.length; j++) msgs.push({ role:h[j].role, content:h[j].content });
+
+  dsStream(msgs, function(txt, fim, erro){
+    var el = document.getElementById('dsTxt');
+    if (!el) { box.removeAttribute('data-busy'); return; }
+    if (erro) { el.style.color = '#c04437'; el.textContent = erro; box.removeAttribute('data-busy'); return; }
+    el.style.color = '#39404f';
+    el.innerHTML = mdChat(txt);
+    var lg = document.getElementById('dsLog'); if (lg) lg.scrollTop = lg.scrollHeight;
+    if (fim) { el.removeAttribute('id'); S.chat[qid].push({ role:'assistant', content:txt }); box.removeAttribute('data-busy'); }
+  });
+};
+
+function dsStream(messages, cb){
+  var acc = '';
+  fetch(DS_URL, {
+    method: 'POST',
+    headers: { 'Content-Type':'application/json', 'Authorization':'Bearer ' + window.DEEPSEEK_KEY },
+    body: JSON.stringify({ model:DS_MODEL, messages:messages, stream:true, max_tokens:1200, temperature:0.3 })
+  }).then(function(r){
+    if (!r.ok) return r.text().then(function(t){
+      throw new Error(
+        r.status === 401 ? 'Chave recusada (401). Confira o deepseek_key.js.' :
+        r.status === 402 ? 'Sem saldo na conta DeepSeek (402).' :
+        r.status === 429 ? 'Limite de uso atingido (429). Tente daqui a pouco.' :
+        'Erro ' + r.status + ': ' + String(t).slice(0, 120));
+    });
+    var reader = r.body.getReader(), dec = new TextDecoder(), buf = '';
+    (function pump(){
+      return reader.read().then(function(res){
+        if (res.done) { cb(acc || '(resposta vazia)', true); return; }
+        buf += dec.decode(res.value, { stream:true });
+        var linhas = buf.split(NLJS);
+        buf = linhas.pop();
+        for (var i = 0; i < linhas.length; i++){
+          var l = linhas[i].trim();
+          if (l.indexOf('data:') !== 0) continue;
+          var carga = l.slice(5).trim();
+          if (carga === '[DONE]') continue;
+          try {
+            var d = JSON.parse(carga).choices[0].delta;
+            if (d && d.content) { acc += d.content; cb(acc, false); }
+          } catch (_){}
+        }
+        return pump();
+      });
+    })();
+  }).catch(function(e){
+    cb('', true, 'Nao consegui falar com o DeepSeek: ' + (e && e.message ? e.message : e));
+  });
+}
+
+function render(){
+  renderHeader();
+  if (S.view === 'home')        renderHome();
+  else if (S.view === 'resumo') renderResumo();
+  else if (S.finished)          renderResult();
+  else                          renderQuestion();
+}
+
+/* lightbox: clique em qualquer figura amplia */
+document.addEventListener('click', function(e){
+  var lb = document.getElementById('lb');
+  if (e.target.closest('#lb')) { lb.className = ''; return; }
+  var img = e.target.closest('.fig img');
+  if (img) { lb.firstElementChild.src = img.src; lb.className = 'on'; }
+});
+window.addEventListener('keydown', function(e){
+  if (e.key === 'Escape') document.getElementById('lb').className = '';
+});
+
+document.addEventListener('click', function(e){
+  var b = e.target.closest('[data-act]'); if (!b) return;
+  var act = b.getAttribute('data-act'), n = parseInt(b.getAttribute('data-n'),10), k = b.getAttribute('data-k');
+  if (act==='pick'||act==='jump'||act==='toggle') A[act](n);
+  else if (act==='filter') A.filter(k);
+  else if (A[act]) A[act]();
+});
+
+window.addEventListener('keydown', function(e){
+  if (S.view!=='quiz' || !S.started || S.finished) return;
+  var t = e.target, tag = t && t.tagName;
+  if (tag==='INPUT' || tag==='TEXTAREA' || (t && t.isContentEditable)) return;
+  if (e.metaKey||e.ctrlKey||e.altKey) return;
+  if (e.key==='ArrowRight')     { e.preventDefault(); A.go(S.i+1); }
+  else if (e.key==='ArrowLeft') { e.preventDefault(); A.go(S.i-1); }
+  else if (e.key==='Enter')     { e.preventDefault(); A.next(); }
+  else if (/^[1-6]$/.test(e.key)) {
+    var n = parseInt(e.key,10)-1;
+    if (n < S.order[S.i].options.length) A.pick(n);
+  }
+});
+
+render();
+</script>
+</body>
+</html>

@@ -48,11 +48,11 @@ PROVAS = {
             "simulados": "Simulados/aula_simulado_sai_*.json",
             "detalhe": "Geriatria · Psiquiatria · Neurologia · Otorrino · Oftalmo · Práticas — ~120 questões"},
     "ped": {"sigla": "SCA III", "nome": "Saúde da Criança e do Adolescente III", "data": "2026-12-03",
-            "pastas": ["PED"], "detalhe": "Pediatria"},
+            "pastas": ["PED"], "simulados": "Simulados/aula_simulado_ped.json", "detalhe": "Pediatria"},
     "go": {"sigla": "SM III", "nome": "Saúde da Mulher III", "data": "2026-12-08",
-           "pastas": ["GO"], "detalhe": "Ginecologia e Obstetrícia"},
+           "pastas": ["GO"], "simulados": "Simulados/aula_simulado_go.json", "detalhe": "Ginecologia e Obstetrícia"},
     "mfc": {"sigla": "MC VII", "nome": "Medicina e Comunidade VII", "data": "2026-12-10",
-            "pastas": ["MFC"], "detalhe": "Medicina de Família e Comunidade — todo o material é de referência"},
+            "pastas": ["MFC"], "simulados": "Simulados/aula_simulado_mfc.json", "detalhe": "Medicina de Família e Comunidade — todo o material é de referência"},
 }
 
 # Temas que vieram DEPOIS da AVC 2 (aula dada, nunca cobrada em prova)
@@ -176,10 +176,13 @@ DIAS = [
         T("particularidades_da_adolescencia", 22, "ped", n=20),
         T("imunidade", 20, "ped", n=20),
     ]),
-    ("2026-12-03", "Manhã da prova: AVC 2 e fila", "Prova de SCA III às 13:30", [
-        S(AVC2_PED, 40, 45, 50, "ped", "AVC 2 · Pediatria"),
+    ("2026-12-03", "Manhã da prova: simulado e fila", "Prova de SCA III às 13:30", [
+        S(["simulado_sca_iii"], 40, 60, 70, "ped", "Simulado SCA III — 40 questões novas",
+          nota="como na prova: 60 min, sem consulta; depois leia a explicação de cada erro"),
         F(30, "ped"),
         P(10, "ped"),
+        S(AVC2_PED, 25, 30, 35, "ped", "AVC 2 · Pediatria", opcional=True,
+          nota="o simulado já cobra estes temas; faça se sobrar tempo"),
     ]),
     ("2026-12-04", "GO: hemorragias e as práticas novas", None, [
         L("hemorragias_da_primeira_e_segunda_metade_da_gestacao", 40, "go"),
@@ -210,11 +213,11 @@ DIAS = [
         L("tontura_na_atencao_primaria", 25, "mfc"),
         L("saude_baseada_em_evidencias", 25, "mfc"),
     ]),
-    ("2026-12-08", "Manhã da prova: fila e pegadinhas de GO", "Prova de SM III às 13:30", [
-        F(45, "go"),
+    ("2026-12-08", "Manhã da prova: simulado, fila e pegadinhas de GO", "Prova de SM III às 13:30", [
+        S(["simulado_sm_iii"], 40, 60, 70, "go", "Simulado SM III — 40 questões novas",
+          nota="como na prova: 60 min, sem consulta; depois leia a explicação de cada erro"),
+        F(35, "go"),
         P(20, "go"),
-        S(GO_OBST + GO_GINE + ["hemorragias_da_primeira_e_segunda_metade_da_gestacao", "ulceras_genitais",
-                               "massas_anexiais_e_cancer_de_ovario"], 20, 25, 25, "go", "GO misto", opcional=True),
     ]),
     ("2026-12-08", "Noite, depois da prova", None, [
         T("saude_do_homem", 20, "mfc", opcional=True),
@@ -228,9 +231,10 @@ DIAS = [
         S(MFC_TODOS, 40, 45, 50, "mfc", "MFC · todos os temas"),
         F(30, "mfc"),
     ]),
-    ("2026-12-10", "Manhã da prova: fila de MFC", "Prova de MC VII às 13:30", [
+    ("2026-12-10", "Manhã da prova: simulado e fila de MFC", "Prova de MC VII às 13:30", [
+        S(["simulado_mc_vii"], 40, 60, 70, "mfc", "Simulado MC VII — 40 questões novas",
+          nota="como na prova: 60 min, sem consulta; depois leia a explicação de cada erro"),
         F(30, "mfc"),
-        S(MFC_TODOS, 30, 30, 35, "mfc", "MFC · segundo bloco"),
     ]),
 ]
 

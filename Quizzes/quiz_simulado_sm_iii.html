@@ -1,0 +1,1195 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Simulado SM III</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;450;500;600&display=swap" rel="stylesheet">
+<style>
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0}
+  body{background:#f5f3ef;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+  button{font:inherit;color:inherit;font-family:'IBM Plex Sans',system-ui,sans-serif}
+  a{color:#2b57cc;text-decoration:none}
+  a:hover{color:#1e3f9c;text-decoration:underline}
+  @keyframes qFade{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+  @keyframes qDrawer{from{opacity:0;transform:translateY(-4px)}to{opacity:1;transform:none}}
+
+  /* hovers — no canvas eram style-hover, aqui viram CSS de verdade */
+  .h-dark:hover{background:#2b57cc!important;transform:translateY(-1px)}
+  .h-darkflat:hover{background:#2b57cc!important}
+  .h-line:hover{border-color:#121a2b!important}
+  .h-ink:hover{color:#121a2b!important}
+  .h-opt:not(.locked):hover{border-color:var(--hbd)!important;transform:translateY(-1px)}
+  .h-card:hover{border-color:#121a2b!important;transform:translateY(-2px)}
+
+  /* tipografia do resumo */
+  .rsm{font-size:16.5px;line-height:1.72;color:#2a3141;max-width:64ch}
+  .rsm h2{font-family:'Newsreader',Georgia,serif;font-size:27px;font-weight:500;letter-spacing:-.02em;line-height:1.2;margin:42px 0 14px;padding-top:20px;border-top:1px solid #e4e0d8;text-wrap:pretty}
+  .rsm h2:first-child{margin-top:0;padding-top:0;border-top:0}
+  .rsm h3{font-family:'Newsreader',Georgia,serif;font-size:20px;font-weight:600;letter-spacing:-.01em;margin:28px 0 10px;text-wrap:pretty}
+  .rsm h4{font-family:'IBM Plex Mono',monospace;font-size:11px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:#2b57cc;margin:24px 0 8px}
+  .rsm p{margin:0 0 15px;text-wrap:pretty}
+  .rsm ul,.rsm ol{margin:0 0 15px;padding-left:22px}
+  .rsm li{margin-bottom:7px;text-wrap:pretty}
+  .rsm li>ul,.rsm li>ol{margin:7px 0 0}
+  .rsm strong{font-weight:600;color:#121a2b}
+  .rsm em{font-style:italic}
+  .rsm code{font-family:'IBM Plex Mono',monospace;font-size:.88em;background:#efece5;border:1px solid #e4e0d8;border-radius:5px;padding:1px 5px}
+  .rsm hr{border:0;border-top:1px solid #e4e0d8;margin:32px 0}
+  .rsm blockquote{margin:0 0 18px;padding:15px 18px;background:#f7f6f2;border-left:2.5px solid #2b57cc;border-radius:0 12px 12px 0;font-size:15px;line-height:1.65;color:#39404f}
+  .rsm blockquote p:last-child{margin-bottom:0}
+  .rsm .tbl{overflow-x:auto;margin:0 0 20px;border:1px solid #e4e0d8;border-radius:12px;background:#fff}
+  .rsm table{border-collapse:collapse;width:100%;font-size:14px;line-height:1.5}
+  .rsm th{text-align:left;font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.09em;text-transform:uppercase;color:#8a8578;font-weight:600;padding:11px 14px;background:#faf9f6;border-bottom:1px solid #e4e0d8;white-space:nowrap}
+  .rsm td{padding:11px 14px;border-bottom:1px solid #efece5;vertical-align:top;text-wrap:pretty}
+  .rsm tr:last-child td{border-bottom:0}
+  .rsm .key{background:#f2f6fb;border:1px solid #d6e2f4;border-radius:12px;padding:16px 18px;margin:0 0 18px}
+  .rsm .key>*:last-child{margin-bottom:0}
+
+  /* figuras — no resumo e na questao */
+  .fig{margin:0 0 20px;background:#fff;border:1px solid #e4e0d8;border-radius:14px;overflow:hidden}
+  .fig img{display:block;width:100%;height:auto;cursor:zoom-in}
+  .fig figcaption{font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.06em;color:#8a8578;padding:9px 13px;border-top:1px solid #efece5;background:#faf9f6;text-wrap:pretty}
+  .qfig{margin:0 0 20px}
+
+  /* lightbox */
+  #lb{position:fixed;inset:0;z-index:90;background:rgba(18,26,43,.86);display:none;align-items:center;justify-content:center;padding:24px;cursor:zoom-out}
+  #lb.on{display:flex;animation:qFade .16s ease}
+  #lb img{max-width:100%;max-height:100%;border-radius:10px;box-shadow:0 24px 60px rgba(0,0,0,.5)}
+
+  @media(max-width:560px){
+    .rsm{font-size:16px}
+    .rsm h2{font-size:24px}
+    .home-grid{grid-template-columns:1fr!important}
+  }
+</style>
+</head>
+<body>
+
+<div style="min-height:100vh;background:#f5f3ef;color:#121a2b;font-family:'IBM Plex Sans',system-ui,sans-serif">
+  <header style="position:sticky;top:0;z-index:30;background:rgba(245,243,239,.94);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid #e4e0d8">
+    <div style="max-width:720px;margin:0 auto;padding:12px 16px 10px" id="hdr"></div>
+  </header>
+  <main style="max-width:720px;margin:0 auto;padding:0 16px 80px" id="stage"></main>
+</div>
+<div id="lb"><img alt=""></div>
+
+<script type="text/html" id="resumoSrc"><p>Faça o simulado antes de abrir esta página. Depois, use cada tabela para localizar os temas em que errou — a explicação de cada questão começa com a área e o tema — e volte ao material daquela aula. As tabelas dizem o que foi cobrado, não a resposta.</p>
+<div class="tbl"><table><thead><tr><th>Área</th><th>Questões</th><th>Casos clínicos</th></tr></thead><tbody><tr><td>Obstetrícia</td><td>11</td><td>9</td></tr><tr><td>Ginecologia</td><td>25</td><td>17</td></tr><tr><td>Mastologia</td><td>4</td><td>3</td></tr><tr><td><strong>Total</strong></td><td><strong>40</strong></td><td><strong>29</strong></td></tr></tbody></table></div>
+<h2>Obstetrícia</h2>
+<div class="tbl"><table><thead><tr><th>Tema</th><th>O que foi cobrado</th></tr></thead><tbody><tr><td>Diabetes gestacional</td><td>TOTG 75 g com um único valor alterado (1ª hora)</td></tr><tr><td>Diabetes gestacional</td><td>DMG em insulina com bom controle: momento e via do parto</td></tr><tr><td>Diabetes gestacional</td><td>Pós-parto do DMG: o que suspender e como reclassificar</td></tr><tr><td>Síndromes hipertensivas</td><td>Pré-eclâmpsia sem proteinúria: creatinina que dobrou do basal</td></tr><tr><td>Síndromes hipertensivas</td><td>Profilaxia com AAS: somar fatores de risco moderado</td></tr><tr><td>Síndromes hipertensivas</td><td>HELLP em gestante normotensa: conduta</td></tr><tr><td>Síndromes hipertensivas</td><td>Hipertensa crônica em uso de IECA que engravidou</td></tr><tr><td>Hemorragias da gestação</td><td>Ectópica em regressão: critérios da conduta expectante</td></tr><tr><td>Hemorragias da gestação</td><td>Abortamento retido acima de 12 semanas: método de esvaziamento</td></tr><tr><td>Hemorragias da gestação</td><td>NTG com metástase pulmonar e escore baixo: tratamento</td></tr><tr><td>Hemorragias da gestação</td><td>DPP com feto morto e mãe estável: via de parto</td></tr></tbody></table></div>
+<blockquote><p>Os critérios diagnósticos não esperam o quadro completo: HELLP dispensa hipertensão, pré-eclâmpsia dispensa proteinúria e um único valor do TOTG já fecha DMG. Na hemorragia, a via e o método mudam com o detalhe — feto morto no DPP, 12 semanas no abortamento retido.</p></blockquote>
+<h2>Uroginecologia</h2>
+<div class="tbl"><table><thead><tr><th>Tema</th><th>O que foi cobrado</th></tr></thead><tbody><tr><td>Distopia genital</td><td>Prolapso com colo alongado e desejo de preservar o útero</td></tr><tr><td>Distopia genital</td><td>Ler o POP-Q: qual compartimento e qual nível de suporte</td></tr><tr><td>Incontinência urinária</td><td>Avaliação inicial da IUE que vai para fisioterapia</td></tr><tr><td>Incontinência urinária</td><td>Bexiga hiperativa em idosa com glaucoma: escolha do fármaco</td></tr><tr><td>Incontinência urinária</td><td>Bexiga hiperativa refratária em portadora de marca-passo</td></tr></tbody></table></div>
+<blockquote><p>Antes de prescrever na bexiga hiperativa, cheque as contraindicações: glaucoma de ângulo fechado e idade avançada afastam o antimuscarínico, hipertensão não controlada afasta a mirabegrona e marca-passo afasta a estimulação tibial. A urodinâmica não entra na avaliação inicial de quem fará tratamento clínico.</p></blockquote>
+<h2>Infecções e úlceras genitais</h2>
+<div class="tbl"><table><thead><tr><th>Tema</th><th>O que foi cobrado</th></tr></thead><tbody><tr><td>Doença inflamatória pélvica</td><td>Aplicar os critérios e escolher o esquema do Monif I</td></tr><tr><td>Doença inflamatória pélvica</td><td>Dor em hipocôndrio direito associada à DIP</td></tr><tr><td>Doença inflamatória pélvica</td><td>Esquema hospitalar: transição para via oral e duração</td></tr><tr><td>Úlceras genitais</td><td>VDRL que volta a subir após o tratamento</td></tr><tr><td>Úlceras genitais</td><td>Gestante com teste rápido reagente: quando tratar</td></tr><tr><td>Úlceras genitais</td><td>Bubão com múltiplos orifícios na gestante: tratamento</td></tr></tbody></table></div>
+<blockquote><p>Na gestante o tratamento muda: doxiciclina sai, a penicilina benzatina entra já com o teste rápido, e o linfogranuloma vai para azitromicina semanal. No seguimento da sífilis, subir duas diluições é retratar; título baixo e estável é cicatriz.</p></blockquote>
+<h2>Dor pélvica, anexos e infertilidade</h2>
+<div class="tbl"><table><thead><tr><th>Tema</th><th>O que foi cobrado</th></tr></thead><tbody><tr><td>Endometriose e dor pélvica</td><td>Exame de primeira linha para endometriose profunda</td></tr><tr><td>Endometriose e dor pélvica</td><td>Tratamento hormonal com contraindicação ao estrogênio</td></tr><tr><td>Endometriose e dor pélvica</td><td>Endometrioma pequeno achado em paciente assintomática</td></tr><tr><td>Massas anexiais e câncer de ovário</td><td>Puberdade precoce com massa ovariana sólida</td></tr><tr><td>Massas anexiais e câncer de ovário</td><td>Regras simples da IOTA com achados B e M juntos</td></tr><tr><td>Massas anexiais e câncer de ovário</td><td>Estadiamento com lavado peritoneal positivo</td></tr><tr><td>Infertilidade</td><td>Obstrução tubária bilateral com sêmen normal: técnica</td></tr><tr><td>Infertilidade</td><td>Parceiro que já tem filho: investigar ou não</td></tr></tbody></table></div>
+<blockquote><p>Na IOTA não existe placar: B e M juntos tornam a lesão inconclusiva. Na endometriose, trata-se sintoma e infertilidade, não achado de imagem — e o CA-125 não decide nada. Na infertilidade, o casal é a unidade investigada.</p></blockquote>
+<h2>Mama</h2>
+<div class="tbl"><table><thead><tr><th>Tema</th><th>O que foi cobrado</th></tr></thead><tbody><tr><td>Imagem da mama</td><td>Assimetria focal persistente em primeira mamografia</td></tr><tr><td>Imagem da mama</td><td>Calcificações lineares grossas, difusas e bilaterais</td></tr><tr><td>Doenças benignas da mama</td><td>Nódulo volumoso de crescimento rápido: diagnóstico e cirurgia</td></tr><tr><td>Doenças benignas da mama</td><td>Secreção papilar sanguinolenta uniductal com mamografia normal</td></tr></tbody></table></div>
+<blockquote><p>Assimetria focal estável em primeiro exame é categoria 3; nova ou em crescimento é 4. Calcificação grossa e difusa orientada para a papila é benigna — a fina, ramificada e segmentar é a do CDIS.</p></blockquote>
+<h2>Sexualidade, violência e diferenciação sexual</h2>
+<div class="tbl"><table><thead><tr><th>Tema</th><th>O que foi cobrado</th></tr></thead><tbody><tr><td>Sexualidade feminina</td><td>Etapa do PLISSIT ao orientar lubrificante</td></tr><tr><td>Sexualidade feminina</td><td>Síndrome geniturinária em sobrevivente de câncer de mama</td></tr><tr><td>Violência sexual</td><td>Atendimento com 96 horas: quais profilaxias ainda valem</td></tr><tr><td>Violência sexual</td><td>Hepatite B na vítima com vacinação completa</td></tr><tr><td>Diferenciação sexual</td><td>Útero septado × bicorno na ultrassonografia 3D</td></tr><tr><td>Diferenciação sexual</td><td>Amenorreia primária sem útero e sem dor cíclica</td></tr></tbody></table></div>
+<blockquote><p>As janelas da violência sexual são diferentes: 72 horas para a PEP do HIV e 5 dias para o levonorgestrel. Toda anomalia mülleriana pede ultrassom de vias urinárias, e o contorno externo do fundo é o que separa septado de bicorno.</p></blockquote></script>
+<!-- Tutor local: define window.DEEPSEEK_KEY. O arquivo NAO vai para o repositorio,
+     entao online ele da 404 e o chat simplesmente nao aparece. -->
+<script src="../deepseek_key.js"></script>
+<script>
+/* ─────────────────────────────────────────────────────────────────────────────
+   CONTRATO DE DADOS — para adaptar a outro tema, troque apenas QUIZ e o resumo.
+   Cada item: { question, options[2..6], correctIndex, explanation }
+   ──────────────────────────────────────────────────────────────────────────── */
+var TITLE      = "Simulado SM III";
+var EYEBROW    = "Simulado · Saúde da Mulher III";
+var DISCIPLINA = "Simulados";   // pasta de origem (PED, GO...) — usada pelo índice
+var SUBTITLE = "Quarenta questões inéditas para medir o que você sabe";
+var INTRO    = "40 questões objetivas misturando Obstetrícia (diabetes gestacional, síndromes hipertensivas, hemorragias), Ginecologia (diferenciação sexual, distopia, DIP, endometriose, incontinência urinária, infertilidade, massas anexiais, sexualidade, úlceras genitais, violência sexual) e Mastologia (doenças benignas e imagem da mama), a maioria em caso clínico. Tempo sugerido: 60 minutos, sem consulta. A explicação de cada questão começa pela área e pelo tema.";
+
+var QUIZ = [
+  {
+    "question": "Gestante de 31 semanas, normotensa até então, tem PA de 146 x 94 mmHg em duas medidas com 4 horas de intervalo, relação proteína/creatinina de 0,2 mg/mg e plaquetas e transaminases normais. A creatinina, que era de 0,5 mg/dL no primeiro trimestre, agora é de 1,0 mg/dL. Qual o diagnóstico?",
+    "options": [
+      "Pré-eclâmpsia, por disfunção renal (creatinina dobrou)",
+      "Hipertensão gestacional, pois a proteinúria é negativa",
+      "Hipertensão gestacional, pois a creatinina está < 1,1",
+      "Pré-eclâmpsia sobreposta à hipertensão arterial crônica"
+    ],
+    "correctIndex": 0,
+    "explanation": "(Obstetrícia · Síndromes hipertensivas) A disfunção renal da pré-eclâmpsia é creatinina > 1,1 mg/dL ou duas vezes o valor basal; como a gestante normal tem creatinina baixa, subir de 0,5 para 1,0 mg/dL já é lesão de órgão-alvo — e a proteinúria não é obrigatória para o diagnóstico. Não é sobreposta porque a hipertensão surgiu após 20 semanas em mulher antes normotensa."
+  },
+  {
+    "question": "Mulher de 22 anos tem dor em hipogástrio há 3 dias. Ao exame, dor à palpação dos anexos, dor à mobilização do colo e temperatura de 37,8 °C, sem sinais de peritonite. β-hCG negativo, ultrassonografia sem abscesso, e ela tolera medicação oral. Qual a conduta?",
+    "options": [
+      "Ceftriaxona IM, doxiciclina e metronidazol por 14 dias, com retorno em 72 h",
+      "Internação com ceftriaxona IV, doxiciclina e metronidazol IV por 14 dias",
+      "Aguardar PCR para clamídia e cultura antes de iniciar o antibiótico oral",
+      "Azitromicina 1 g em dose única e metronidazol por 7 dias, com retorno"
+    ],
+    "correctIndex": 0,
+    "explanation": "(Ginecologia · Doença inflamatória pélvica) Três critérios maiores (dor hipogástrica, anexial e à mobilização do colo) mais um menor (temperatura > 37,5 °C) fecham DIP; sem peritonite nem abscesso é Monif I, tratável em ambulatório com ceftriaxona 500 mg IM em dose única, doxiciclina e metronidazol por 14 dias, reavaliando em 72 horas. Esperar culturas atrasa o tratamento — 48 horas de atraso triplicam o risco de infertilidade."
+  },
+  {
+    "question": "Mulher de 47 anos faz sua primeira mamografia, que mostra assimetria focal no quadrante superolateral esquerdo. Após compressão localizada, a assimetria persiste, sem nódulo, e a ultrassonografia não mostra correlato. Não há exames anteriores para comparação. Qual a categoria e a conduta?",
+    "options": [
+      "BI-RADS 3; controle em 6 meses do lado alterado",
+      "BI-RADS 4; biópsia percutânea guiada por imagem",
+      "BI-RADS 0; repetir a mesma mamografia em 1 ano",
+      "BI-RADS 2; mamografia de rotina anual para a idade"
+    ],
+    "correctIndex": 0,
+    "explanation": "(Mastologia · Imagem da mama) Assimetria focal em primeira mamografia, sem exames anteriores, que persiste após complementação e não tem correlato no ultrassom é BI-RADS 3 — provavelmente benigna, risco ≤ 2% —, com controle aos 6 meses do lado alterado e depois aos 12 e 24 meses. Só a assimetria focal nova ou em crescimento é categoria 4 (VPP em torno de 27%)."
+  },
+  {
+    "question": "Gestante de 25 semanas, com glicemia de jejum de 84 mg/dL na primeira consulta, faz o TOTG com 75 g: jejum 88 mg/dL, 1ª hora 186 mg/dL e 2ª hora 140 mg/dL. Como interpretar o exame?",
+    "options": [
+      "Diabetes gestacional, pelo valor isolado da 1ª hora",
+      "Normal, pois o jejum e a 2ª hora estão adequados",
+      "Inconclusivo: exige dois valores e deve ser repetido",
+      "Diabetes franco, pela 1ª hora acima de 180 mg/dL"
+    ],
+    "correctIndex": 0,
+    "explanation": "(Obstetrícia · Diabetes gestacional) No TOTG de 75 g basta um valor alterado — jejum de 92 a 125, 1ª hora ≥ 180 ou 2ª hora de 153 a 199 mg/dL — para fechar diabetes gestacional; a 1ª hora de 186 mg/dL resolve sozinha. A exigência de dois valores pertencia aos critérios antigos com sobrecarga de 100 g, e diabetes franco exigiria jejum ≥ 126 ou 2ª hora ≥ 200 mg/dL."
+  },
+  {
+    "question": "Mulher de 28 anos, tratada para sífilis secundária com penicilina benzatina 2,4 milhões UI, teve queda do VDRL de 1:64 para 1:4 em 6 meses. No controle seguinte, três meses depois, o VDRL está em 1:16. Qual a interpretação e a conduta?",
+    "options": [
+      "Reinfecção ou falha: retratar e avaliar parcerias",
+      "Cicatriz sorológica: manter só o seguimento",
+      "Flutuação do exame: repetir o VDRL em 6 meses",
+      "Resultado esperado: pedir teste treponêmico"
+    ],
+    "correctIndex": 0,
+    "explanation": "(Ginecologia · Úlceras genitais) Aumento de duas diluições no teste não treponêmico (de 1:4 para 1:16) depois de resposta inicial adequada indica reinfecção ou falha terapêutica e pede retratamento, com avaliação das parcerias. Cicatriz sorológica é título baixo e estável após queda documentada; o teste treponêmico não ajuda, porque permanece reagente por toda a vida."
+  },
+  {
+    "question": "Qual exame é a primeira linha na investigação da endometriose profunda, permitindo mapear nódulo retrocervical, acometimento do reto-sigmoide e bloqueio do fundo de saco de Douglas?",
+    "options": [
+      "Ultrassonografia transvaginal com preparo intestinal",
+      "Dosagem de CA-125 para confirmar o diagnóstico",
+      "Laparoscopia diagnóstica antes de qualquer imagem",
+      "Tomografia de abdome e pelve com contraste venoso"
+    ],
+    "correctIndex": 0,
+    "explanation": "(Ginecologia · Endometriose e dor pélvica) A ultrassonografia transvaginal com preparo intestinal é o exame de primeira linha: o preparo permite avaliar a parede do reto-sigmoide, medir nódulos retrocervicais e pesquisar a perda do deslizamento no fundo de saco de Douglas. O CA-125 não confirma nem afasta a doença, e a ressonância complementa o mapeamento quando necessário."
+  },
+  {
+    "question": "Mulher de 30 anos, com 7 semanas de atraso menstrual, tem sangramento escuro discreto e dor leve, e está hemodinamicamente estável. O β-hCG caiu de 1.400 para 900 mUI/mL em 48 horas; a USTV mostra cavidade uterina vazia e massa anexial de 1,8 cm sem batimentos, sem líquido livre. Ela mora perto e pode retornar. Qual a conduta?",
+    "options": [
+      "Conduta expectante, com β-hCG seriado até negativar",
+      "Metotrexato 50 mg/m² IM em dose única, com β-hCG D4 e D7",
+      "Salpingectomia laparoscópica, pela massa anexial visível",
+      "Esvaziamento uterino por AMIU, para excluir restos ovulares"
+    ],
+    "correctIndex": 0,
+    "explanation": "(Obstetrícia · Hemorragias da gestação) Ectópica íntegra em regressão espontânea — paciente estável e pouco sintomática, β-hCG < 2.000 mUI/mL e em queda, massa < 3 cm, sem BCF nem sinais de rotura, com seguimento garantido — preenche todos os critérios da conduta expectante, com β-hCG seriado até negativar. Se a curva não cair como esperado, migra-se para o metotrexato ou para a cirurgia."
+  },
+  {
+    "question": "Mulher de 45 anos, sexualmente ativa e com desejo explícito de preservar o útero, tem prolapso uterino sintomático. A histerometria do canal cervical mede 7 cm. Qual cirurgia contempla o caso?",
+    "options": [
+      "Cirurgia de Manchester, com amputação do colo",
+      "Histerectomia vaginal com cirurgia reparadora",
+      "Colpocleise de Le Fort, por ser menos mórbida",
+      "Colporrafia anterior com plicatura da fáscia"
+    ],
+    "correctIndex": 0,
+    "explanation": "(Ginecologia · Distopia genital) Histerometria cervical maior que 5 cm caracteriza alongamento hipertrófico do colo, e a cirurgia de Manchester (Donald-Fothergill) — amputação do colo com encurtamento dos cardinais — corrige o prolapso preservando o útero. A histerectomia contraria o desejo da paciente, e a colpocleise é obliterativa, reservada a quem não tem atividade sexual."
+  },
+  {
+    "question": "Casal tenta engravidar há 2 anos. A mulher, de 31 anos, tem ciclos regulares, progesterona de 14 ng/mL no 21º dia e histerossalpingografia com obstrução tubária bilateral. O espermograma do parceiro é normal em duas amostras. Qual a técnica de reprodução indicada?",
+    "options": [
+      "Fertilização in vitro convencional",
+      "Inseminação intrauterina estimulada",
+      "Coito programado com indução ovulatória",
+      "ICSI, pela obstrução tubária bilateral"
+    ],
+    "correctIndex": 0,
+    "explanation": "(Ginecologia · Infertilidade) Ovulação confirmada (progesterona > 10 ng/mL) e sêmen normal deixam o fator tubário como causa; com as tubas obstruídas a fertilização in vivo é impossível, o que descarta inseminação e coito programado. A FIV é a indicação clássica do fator tubário; a ICSI fica para o fator masculino grave ou para a falha de fertilização na FIV."
+  },
+  {
+    "question": "Menina de 7 anos apresenta desenvolvimento mamário, aceleração do crescimento e um episódio de sangramento vaginal. A ultrassonografia mostra massa ovariana sólida unilateral, e o estradiol sérico está muito elevado. Qual o tumor mais provável?",
+    "options": [
+      "Tumor de células da granulosa",
+      "Tumor de células de Sertoli-Leydig",
+      "Disgerminoma secretor de beta-hCG",
+      "Teratoma maduro (cisto dermoide)"
+    ],
+    "correctIndex": 0,
+    "explanation": "(Ginecologia · Massas anexiais e câncer de ovário) O tumor de células da granulosa, do cordão sexual, produz estradiol e pode se manifestar por puberdade precoce ou amenorreia. O Sertoli-Leydig secreta andrógenos e causaria virilização (hirsutismo, clitoromegalia); o disgerminoma eleva beta-hCG e DHL, e o teratoma maduro não é funcionante."
+  },
+  {
+    "question": "Primigesta de 37 anos, autodeclarada preta, sem comorbidades e com IMC de 26 kg/m², está com 11 semanas na primeira consulta de pré-natal. Qual a conduta para prevenção da pré-eclâmpsia?",
+    "options": [
+      "AAS 100 mg à noite das 12 às 36 semanas, por três fatores moderados",
+      "Nenhuma profilaxia, por não ter fator de alto risco isolado",
+      "Cálcio 1 a 2 g/dia como única profilaxia, pela idade materna",
+      "AAS 100 mg só após 20 semanas, se surgir hipertensão arterial"
+    ],
+    "correctIndex": 0,
+    "explanation": "(Obstetrícia · Síndromes hipertensivas) Nuliparidade, idade ≥ 35 anos e raça/cor preta são fatores de risco moderado; dois ou mais deles indicam profilaxia, assim como um único fator de alto risco. O AAS 100 mg à noite deve começar entre 12 e 16 semanas e seguir até 36 — iniciá-lo após 20 semanas perde a janela da segunda onda de invasão trofoblástica —, e o cálcio deixou de ser recomendado para essa finalidade."
+  },
+  {
+    "question": "Mulher de 74 anos com bexiga hiperativa não melhorou após três meses de treinamento vesical e restrição de cafeína. Tem glaucoma de ângulo fechado e déficit cognitivo leve; a pressão arterial está controlada. Qual o fármaco mais adequado?",
+    "options": [
+      "Mirabegrona 50 mg/dia",
+      "Oxibutinina 5 mg 8/8 h",
+      "Tolterodina 4 mg/dia",
+      "Solifenacina 5 mg/dia"
+    ],
+    "correctIndex": 0,
+    "explanation": "(Ginecologia · Incontinência urinária) Glaucoma de ângulo fechado é contraindicação absoluta aos antimuscarínicos, e o uso crônico de anticolinérgicos acima de 65 anos se associa a demência — dois motivos para evitá-los aqui. A mirabegrona, agonista beta-3, é tão eficaz quanto eles e só é contraindicada de forma absoluta na hipertensão não controlada, ausente nesta paciente."
+  },
+  {
+    "question": "Mulher de 30 anos, sem método contraceptivo, procura o serviço 4 dias (96 horas) após estupro com penetração vaginal por agressor desconhecido. Quanto às profilaxias de gravidez e de HIV, qual a conduta?",
+    "options": [
+      "Levonorgestrel sim; PEP do HIV não, fora da janela",
+      "Levonorgestrel e PEP do HIV, ambos ainda indicados",
+      "Nenhuma das duas, pois passaram mais de 72 horas",
+      "PEP do HIV sim; levonorgestrel não, fora da janela"
+    ],
+    "correctIndex": 0,
+    "explanation": "(Ginecologia · Violência sexual) A contracepção de emergência pode ser feita até 5 dias após a exposição (quanto antes, melhor), enquanto a PEP do HIV só é indicada até 72 horas. Com 96 horas oferece-se levonorgestrel 1,5 mg, mas não a PEP; o atendimento segue integral, com testagem, profilaxia das IST bacterianas, avaliação da hepatite B, acolhimento e notificação."
+  },
+  {
+    "question": "Mulher de 41 anos percebeu nódulo na mama direita que cresceu rapidamente em três meses, hoje com 9 cm, indolor, móvel e bem delimitado. A biópsia por agulha grossa mostra hipercelularidade estromal. Qual o diagnóstico e o tratamento?",
+    "options": [
+      "Tumor filoides; excisão ampla com margem de 1 a 2 cm",
+      "Fibroadenoma gigante; seguimento clínico semestral",
+      "Tumor filoides; enucleação do nódulo sem margem",
+      "Fibroadenoma complexo; enucleação simples do nódulo"
+    ],
+    "correctIndex": 0,
+    "explanation": "(Mastologia · Doenças benignas da mama) Crescimento rápido e indolor de massa volumosa e bem delimitada, com estroma hipercelular na core biopsy, é a assinatura do tumor filoides, de origem no tecido conjuntivo extraductal. Por ter variante maligna e recidiva local frequente, exige excisão ampla com margem de 1 a 2 cm — a enucleação sem margem favorece a recidiva."
+  },
+  {
+    "question": "Gestante de 15 semanas, estável e afebril, sem sangramento, faz ultrassonografia que mostra feto sem batimentos cardíacos, com biometria compatível com 14 semanas. O colo está fechado. Qual a conduta?",
+    "options": [
+      "Misoprostol e, após a expulsão do feto, curetagem",
+      "Aspiração manual intrauterina imediata, sem preparo",
+      "Conduta expectante por até quatro semanas",
+      "Antibiótico de amplo espectro seguido de curetagem"
+    ],
+    "correctIndex": 0,
+    "explanation": "(Obstetrícia · Hemorragias da gestação) No abortamento retido acima de 12 semanas, o esvaziamento começa com misoprostol (200 mcg por via vaginal a cada 4 a 6 horas no segundo trimestre), e a curetagem vem após a expulsão do feto. A AMIU é a técnica de escolha até 12 semanas, e a conduta expectante por até 4 semanas vale para o retido abaixo de 12 semanas."
+  },
+  {
+    "question": "Útero septado e útero bicorno têm, ambos, duas cavidades endometriais. O que os diferencia na ultrassonografia 3D, e qual deles se trata por via histeroscópica?",
+    "options": [
+      "Septado tem fundo externo normal e é o tratável por histeroscopia",
+      "Bicorno tem fundo externo normal e é o tratável por histeroscopia",
+      "Septado tem fundo externo entalhado e é o tratável por histeroscopia",
+      "Bicorno tem fundo externo entalhado e é o tratável por histeroscopia"
+    ],
+    "correctIndex": 0,
+    "explanation": "(Ginecologia · Diferenciação sexual) No útero septado (falha de reabsorção do septo, classe U2) o contorno fúndico externo é normal; no bicorno (falha de fusão medial, U3) o fundo é entalhado. O septado é a malformação com maior perda gestacional recorrente e o único candidato à ressecção histeroscópica do septo, que restaura os desfechos obstétricos."
+  },
+  {
+    "question": "Gestante de 34 semanas com diabetes gestacional diagnosticado com 26 semanas não atingiu as metas com dieta e iniciou insulina NPH; desde então mantém todas as glicemias na meta, com feto de peso adequado e líquido amniótico normal. Qual o planejamento do parto?",
+    "options": [
+      "Programar entre 39 e 39 semanas e 6 dias, via obstétrica",
+      "Cesárea eletiva com 38 semanas, pelo uso de insulina",
+      "Programar entre 37 e 38 semanas, por usar insulina",
+      "Aguardar trabalho de parto espontâneo até 41 semanas"
+    ],
+    "correctIndex": 0,
+    "explanation": "(Obstetrícia · Diabetes gestacional) No DMG com bom controle glicêmico, o tratamento farmacológico programa o parto para 39 a 39 semanas e 6 dias (sem medicação, 39 a 40 semanas e 6 dias); 37 a 38 semanas é para controle ruim. O diabetes define o momento, não a via: a cesárea depende de indicação obstétrica."
+  },
+  {
+    "question": "Mulher de 24 anos com corrimento cervical purulento, dor anexial e dor à mobilização do colo tem, há dois dias, dor intensa em quadrante superior direito que piora com a inspiração. Transaminases normais e ultrassonografia de vesícula sem alterações. Qual a hipótese mais provável?",
+    "options": [
+      "Peri-hepatite por clamídia ou gonococo (Fitz-Hugh-Curtis)",
+      "Colecistite aguda alitiásica associada à cervicite",
+      "Hepatite viral aguda adquirida por via sexual",
+      "Abscesso tubo-ovariano roto com peritonite difusa"
+    ],
+    "correctIndex": 0,
+    "explanation": "(Ginecologia · Doença inflamatória pélvica) Dor em quadrante superior direito em paciente com sinais de DIP sugere síndrome de Fitz-Hugh-Curtis: peri-hepatite por disseminação de clamídia ou gonococo, com aderências em corda de violino na cápsula de Glisson. Transaminases normais e vesícula sem alterações afastam hepatite e colecistite; o abscesso roto (Monif IV) daria peritonite difusa e risco de choque."
+  },
+  {
+    "question": "No modelo PLISSIT, a que etapa corresponde orientar lubrificante à base de água e mais tempo de preliminares a uma mulher com dispareunia por pouca lubrificação?",
+    "options": [
+      "Sugestões específicas, terceira etapa",
+      "Informação limitada, segunda etapa",
+      "Permissão para falar, primeira etapa",
+      "Terapia intensiva, quarta etapa"
+    ],
+    "correctIndex": 0,
+    "explanation": "(Ginecologia · Sexualidade feminina) No PLISSIT, explicar a fisiologia da resposta sexual é informação limitada (LI), e orientar uma medida dirigida ao problema — lubrificante, foco sensorial, ajuste de medicamento — é sugestão específica (SS), a terceira etapa. A maioria das queixas se resolve até aqui, sem a terapia intensiva (IT), que é o encaminhamento ao especialista."
+  },
+  {
+    "question": "Pelas regras simples da IOTA, como se classifica uma massa anexial que é um cisto unilocular sem fluxo ao Doppler (color score 1), mas acompanhado de ascite?",
+    "options": [
+      "Inconclusiva: há características B e M ao mesmo tempo",
+      "Benigna: predominam as características B sobre as M",
+      "Maligna: a ascite sozinha basta, mesmo com achados B",
+      "Benigna: cisto unilocular sem fluxo dispensa avaliação"
+    ],
+    "correctIndex": 0,
+    "explanation": "(Ginecologia · Massas anexiais e câncer de ovário) Cisto unilocular (B1) e ausência de fluxo (B5) são características benignas; a ascite (M2) é maligna. As regras simples só classificam como benigna ou maligna quando há características de um único grupo — B e M juntas tornam a lesão inconclusiva, a ser avaliada por examinador experiente ou por outro método, como o modelo ADNEX. Não existe placar entre B e M."
+  },
+  {
+    "question": "Gestante de 35 semanas procura o pronto-socorro com náuseas e dor em hipocôndrio direito. PA 136 x 86 mmHg, proteinúria de fita negativa. Exames: plaquetas 78.000/mm³, TGO 190 U/L, DHL 820 U/L e bilirrubina indireta 1,5 mg/dL. Qual a conduta?",
+    "options": [
+      "Sulfato de magnésio e resolução da gestação",
+      "Repetir exames em 24 horas, pois não há hipertensão",
+      "Corticoide e parto somente após completar 48 horas",
+      "Transfundir plaquetas e manter conduta expectante"
+    ],
+    "correctIndex": 0,
+    "explanation": "(Obstetrícia · Síndromes hipertensivas) Hemólise (DHL > 600 U/L, bilirrubina indireta ≥ 1,2 mg/dL), transaminases > 70 U/L e plaquetas < 100.000/mm³ fecham síndrome HELLP, que dispensa hipertensão e proteinúria. HELLP indica sulfato de magnésio para todas e parto em qualquer idade gestacional; a corticoterapia jamais é razão para aguardar o parto — e, com 35 semanas, já nem está indicada."
+  },
+  {
+    "question": "Gestante de 20 semanas, sem lesões genitais e sem tratamento prévio de sífilis, tem teste rápido treponêmico reagente na consulta de pré-natal. O VDRL foi colhido e o resultado sai em uma semana. Qual a conduta imediata?",
+    "options": [
+      "Iniciar penicilina benzatina já, sem esperar o VDRL",
+      "Aguardar o VDRL para confirmar antes de tratar",
+      "Tratar com azitromicina oral, segura na gestação",
+      "Doxiciclina por 30 dias, por duração ignorada"
+    ],
+    "correctIndex": 0,
+    "explanation": "(Ginecologia · Úlceras genitais) Na gestante, um teste rápido reagente já autoriza a primeira dose de penicilina benzatina, sem esperar o confirmatório — o atraso expõe o feto à sífilis congênita. Sem lesão e sem data provável da infecção, trata-se como latente de duração ignorada (2,4 milhões UI semanais por 3 semanas). Azitromicina não trata sífilis, e doxiciclina é contraindicada na gravidez."
+  },
+  {
+    "question": "Mulher de 26 anos, sem desejo de gestar no momento, tem dismenorreia e dor pélvica por provável endometriose e teve trombose venosa profunda há dois anos. Os anti-inflamatórios não controlam a dor. Qual o tratamento hormonal de primeira linha?",
+    "options": [
+      "Progestágeno isolado, pela contraindicação ao estrogênio",
+      "Contraceptivo oral combinado contínuo, de baixa dosagem",
+      "Análogo de GnRH como primeira escolha, por seis meses",
+      "Inibidor da aromatase isolado, como primeira escolha"
+    ],
+    "correctIndex": 0,
+    "explanation": "(Ginecologia · Endometriose e dor pélvica) Contraceptivo combinado e progestágenos são a primeira linha hormonal para a dor da endometriose, mas o combinado é contraindicado quando há risco tromboembólico — e a trombose prévia é exatamente isso. O progestágeno isolado é a alternativa; análogo de GnRH e inibidor da aromatase são segunda linha, para dor refratária."
+  },
+  {
+    "question": "Mulher de 49 anos, com dois partos vaginais, perde urina apenas ao tossir e ao correr, sem urgência miccional. O exame reproduz a perda à tosse, sem prolapso. Ela prefere começar pela fisioterapia. Além de urina tipo I e urocultura, o que a avaliação inicial deve incluir?",
+    "options": [
+      "Resíduo pós-miccional por ultrassom, sem urodinâmica",
+      "Estudo urodinâmico completo antes da fisioterapia",
+      "Uretrocistoscopia para excluir corpo estranho vesical",
+      "Ressonância de pelve para avaliar o assoalho pélvico"
+    ],
+    "correctIndex": 0,
+    "explanation": "(Ginecologia · Incontinência urinária) Urina tipo I, urocultura e resíduo pós-miccional, de preferência por ultrassom, são os exames indispensáveis em toda paciente. A urodinâmica não faz parte da avaliação inicial quando o tratamento será clínico: pedi-la para confirmar incontinência de esforço evidente que vai para fisioterapia não muda conduta. Ela fica para o planejamento cirúrgico, a bexiga hiperativa neurogênica e a refratariedade."
+  },
+  {
+    "question": "Neoplasia trofoblástica gestacional pós-molar, diagnosticada por platô do β-hCG, com metástase pulmonar isolada e escore de risco OMS/FIGO de 5 pontos. Qual o tratamento?",
+    "options": [
+      "Monoquimioterapia com metotrexato isolado",
+      "Poliquimioterapia EMA-CO, pela metástase",
+      "Histerectomia total, seguida de observação",
+      "Novo esvaziamento uterino e repetir o β-hCG"
+    ],
+    "correctIndex": 0,
+    "explanation": "(Obstetrícia · Hemorragias da gestação) Metástase pulmonar é estádio FIGO III, e com escore ≤ 6 nos estádios I a III a NTG é de baixo risco, tratada com monoquimioterapia (metotrexato). EMA-CO é para escore ≥ 7 ou estádio IV — no escore, o pulmão pontua zero, então a metástase pulmonar sozinha não muda o grupo."
+  },
+  {
+    "question": "Como se interpretam calcificações mamográficas lineares, grossas (maiores que 1 mm), difusas, bilaterais e orientadas em direção à papila?",
+    "options": [
+      "Grandes bastonetes de ectasia ductal: BI-RADS 2",
+      "Lineares finas ramificadas de CDIS: BI-RADS 4C",
+      "Pleomórficas finas segmentares: BI-RADS 4B",
+      "Heterogêneas grosseiras agrupadas: BI-RADS 4A"
+    ],
+    "correctIndex": 0,
+    "explanation": "(Mastologia · Imagem da mama) Calcificações em grandes bastonetes são grossas (> 1 mm), lineares, orientadas para a papila, difusas e bilaterais — típicas de ectasia ductal e benignas, BI-RADS 2. As lineares finas ramificadas do carcinoma ductal in situ medem menos de 0,5 mm e se distribuem de forma agrupada ou segmentar: nomes parecidos, condutas opostas."
+  },
+  {
+    "question": "Ao POP-Q, os pontos Aa, Ba, Ap e Bp estão em −3 cm e o ponto C está em +3 cm. Que defeito isso indica e qual nível de suporte falhou?",
+    "options": [
+      "Prolapso apical, por falha do nível I (uterossacros)",
+      "Cistocele, por falha do nível II (arco tendíneo)",
+      "Retocele, por falha do nível II (septo retovaginal)",
+      "Insuficiência perineal, por falha do nível III"
+    ],
+    "correctIndex": 0,
+    "explanation": "(Ginecologia · Distopia genital) Aa, Ba, Ap e Bp em −3 cm são a posição normal das paredes anterior e posterior; só o ponto C, que marca o colo, ultrapassa o hímen (valor positivo). É prolapso apical, por falha do nível I — ligamentos uterossacros e cardinais. Cistocele e retocele (nível II) deslocariam os pontos B das paredes vaginais."
+  },
+  {
+    "question": "Na vítima de violência sexual com esquema completo de vacinação contra hepatite B documentado, qual a conduta em relação a essa infecção?",
+    "options": [
+      "Nenhuma profilaxia adicional para hepatite B",
+      "Imunoglobulina anti-hepatite B e dose de reforço",
+      "Imunoglobulina anti-hepatite B isolada, em 48 h",
+      "Repetir o esquema vacinal completo de três doses"
+    ],
+    "correctIndex": 0,
+    "explanation": "(Ginecologia · Violência sexual) A imunoglobulina anti-hepatite B (0,06 mL/kg IM, idealmente em 48 horas e até 14 dias) é para quem não é vacinada ou tem esquema incompleto, sempre junto com o início ou a complementação da vacina. Com esquema completo, não há profilaxia adicional para hepatite B; as demais profilaxias e a testagem basal seguem normalmente."
+  },
+  {
+    "question": "Como deve ser conduzida, quanto ao tratamento e à reavaliação glicêmica, a mulher que teve diabetes gestacional controlado com insulina até o parto?",
+    "options": [
+      "Suspender a insulina e fazer TOTG de 75 g em 6 a 12 semanas",
+      "Manter metade da dose de insulina até o TOTG pós-parto",
+      "Suspender a insulina e dosar glicada em 6 a 12 semanas",
+      "Manter a insulina e dosar glicemia de jejum em 6 meses"
+    ],
+    "correctIndex": 0,
+    "explanation": "(Obstetrícia · Diabetes gestacional) No pós-parto do DMG suspendem-se insulina e controle glicêmico e libera-se a dieta; a reclassificação é feita com TOTG de 75 g entre 6 e 12 semanas, dosando jejum e 2ª hora. A hemoglobina glicada não serve nesse período: a renovação eritrocitária da gestação e a perda sanguínea do parto a reduzem falsamente."
+  },
+  {
+    "question": "Mulher de 33 anos tenta engravidar há 14 meses e tem ciclos de 45 a 60 dias, acne e hirsutismo. O parceiro, de 35 anos, já tem um filho de outro relacionamento e acha desnecessário fazer exames. Qual a conduta adequada?",
+    "options": [
+      "Investigar o casal, incluindo espermograma do parceiro",
+      "Dispensar o espermograma, pois o parceiro já tem filho",
+      "Induzir a ovulação já, sem outros exames do casal",
+      "Laparoscopia diagnóstica como primeiro exame feminino"
+    ],
+    "correctIndex": 0,
+    "explanation": "(Ginecologia · Infertilidade) O casal é uma unidade funcional: o homem participa de cerca de dois terços das causas (30% como fator isolado e 35% nos fatores mistos), e um filho anterior não garante a qualidade seminal atual, que reflete os últimos 3 meses. Mesmo com forte suspeita de SOP, o espermograma entra desde o início; a laparoscopia não é exame de rotina da investigação."
+  },
+  {
+    "question": "Mulher de 33 anos, hipertensa crônica bem controlada com enalapril 20 mg/dia, descobre gestação de 7 semanas. PA de 126 x 80 mmHg. Qual a conduta anti-hipertensiva?",
+    "options": [
+      "Suspender o enalapril e iniciar metildopa",
+      "Manter o enalapril até completar 20 semanas",
+      "Trocar o enalapril por captopril em três doses",
+      "Suspender o enalapril sem iniciar outra droga"
+    ],
+    "correctIndex": 0,
+    "explanation": "(Obstetrícia · Síndromes hipertensivas) Inibidores da ECA (enalapril, captopril) só entram no esquema do puerpério: na gestação, bloquear o eixo renina-angiotensina está fora de questão, e a metildopa é a droga do tratamento inicial na hipertensão crônica. Trocar por captopril mantém a mesma classe, e suspender sem substituto deixa sem tratamento uma hipertensa crônica que precisava de droga para ficar controlada."
+  },
+  {
+    "question": "Mulher de 46 anos refere saída espontânea de secreção sanguinolenta por um único ducto da mama esquerda há um mês. Não há nódulo palpável, e a mamografia é normal. Qual a conduta?",
+    "options": [
+      "Investigar a fundo; suspeitar de papiloma e ressecar o ducto",
+      "Tranquilizar e acompanhar, pois a mamografia está normal",
+      "Antibiótico oral e reavaliar a secreção em duas semanas",
+      "Tratar como alteração funcional, com analgésico e orientação"
+    ],
+    "correctIndex": 0,
+    "explanation": "(Mastologia · Doenças benignas da mama) Secreção papilar sanguinolenta, unilateral, espontânea e uniductal é sinal de alerta e impõe investigação completa, mesmo com mamografia normal. A causa benigna típica é o papiloma intraductal, tratado com ressecção do ducto acometido; acompanhamento simples é a conduta da descarga fisiológica, não deste padrão."
+  },
+  {
+    "question": "Gestante de 26 semanas tem linfonodos inguinais dolorosos, aderidos à pele eritematosa, que se romperam e drenam por vários orifícios. Refere uma ferida genital pequena e indolor que sumiu há semanas. Qual o tratamento?",
+    "options": [
+      "Azitromicina 1 g VO por semana, durante 3 semanas",
+      "Doxiciclina 100 mg VO de 12/12 h por 21 dias",
+      "Penicilina benzatina 2,4 milhões UI IM, dose única",
+      "Ceftriaxona 250 mg IM e drenagem cirúrgica do bubão"
+    ],
+    "correctIndex": 0,
+    "explanation": "(Ginecologia · Úlceras genitais) Lesão inicial indolor e fugaz seguida de bubão que fistuliza por múltiplos orifícios é linfogranuloma venéreo (Chlamydia trachomatis L1–L3). A primeira opção fora da gestação é doxiciclina por 21 dias, contraindicada na gravidez; na gestante prefere-se azitromicina 1 g semanal por 3 semanas. Incisão e drenagem do bubão são contraindicadas, porque perpetuam a fistulização."
+  },
+  {
+    "question": "Adolescente de 16 anos com amenorreia primária tem mamas e pelos pubianos desenvolvidos e nega dor pélvica cíclica. Ao exame, vagina curta em fundo cego; a ultrassonografia mostra ovários normais e ausência de útero. Qual o diagnóstico mais provável e que exame deve complementar a investigação?",
+    "options": [
+      "Síndrome de MRKH; ultrassonografia das vias urinárias",
+      "Insensibilidade androgênica; dosagem de testosterona",
+      "Hímen imperfurado; ultrassonografia para hematocolpo",
+      "Septo vaginal transverso; ressonância de pelve"
+    ],
+    "correctIndex": 0,
+    "explanation": "(Ginecologia · Diferenciação sexual) Caracteres sexuais normais (ovários funcionantes), ausência de útero e vagina em fundo cego, sem dor cíclica, apontam agenesia mülleriana — síndrome de Mayer-Rokitansky-Küster-Hauser, 46,XX. Como os ductos de Müller se formam paralelos ao sistema urinário, toda anomalia mülleriana pede ultrassom de vias urinárias. Hímen imperfurado e septo transverso cursam com dor cíclica, e na insensibilidade androgênica as gônadas são testículos."
+  },
+  {
+    "question": "Gestante de 36 semanas, hipertensa, chega com dor abdominal súbita e contínua, útero hipertônico e sangramento escuro. Não há batimentos cardíacos fetais à ultrassonografia. Está estável, com PA de 150 x 95 mmHg, fibrinogênio e plaquetas normais. Qual a conduta obstétrica?",
+    "options": [
+      "Parto por via vaginal, vigiando fibrinogênio e plaquetas",
+      "Cesárea imediata, pois é a via mais rápida no descolamento",
+      "Tocólise e conduta expectante até o trabalho de parto",
+      "Aguardar ressonância para confirmar o descolamento"
+    ],
+    "correctIndex": 0,
+    "explanation": "(Obstetrícia · Hemorragias da gestação) No descolamento prematuro de placenta com feto morto e mãe estável, a via vaginal costuma ser preferida, sob vigilância da coagulopatia de consumo (fibrinogênio e plaquetas). A via mais rápida é a regra quando o feto está vivo; a tocólise é formalmente contraindicada, e o diagnóstico é clínico — exame de imagem não deve atrasar a decisão."
+  },
+  {
+    "question": "Qual o estadiamento FIGO do câncer de ovário restrito a um único ovário, com cápsula íntegra e superfície livre, mas com células malignas no lavado peritoneal?",
+    "options": [
+      "IC3, pela citologia peritoneal positiva",
+      "IA, pois o tumor está restrito a um ovário",
+      "IIIA2, pelo envolvimento peritoneal",
+      "IVA, por células malignas fora do ovário"
+    ],
+    "correctIndex": 0,
+    "explanation": "(Ginecologia · Massas anexiais e câncer de ovário) Tumor restrito ao ovário com células malignas na ascite ou no lavado peritoneal é estádio IC3; seria IA apenas com citologia negativa. IIIA2 exige envolvimento peritoneal extrapélvico microscópico, e IVA é derrame pleural com citologia positiva. No estádio IC, a adjuvância é taxano-carboplatina por 3 a 6 ciclos, qualquer que seja o grau."
+  },
+  {
+    "question": "No tratamento hospitalar da doença inflamatória pélvica, quando se faz a transição do antibiótico para a via oral e por quanto tempo se trata no total?",
+    "options": [
+      "Após 24 horas afebril, completando 14 dias no total",
+      "Só ao fim dos 14 dias, que devem ser todos parenterais",
+      "Após 72 horas afebril, completando 7 dias no total",
+      "Na alta, com azitromicina oral por mais 5 dias"
+    ],
+    "correctIndex": 0,
+    "explanation": "(Ginecologia · Doença inflamatória pélvica) No esquema hospitalar (Monif II a IV), a transição para via oral é feita após 24 horas afebril, completando 14 dias de tratamento que cubra clamídia, gonococo e anaeróbios. Manter a via parenteral até o fim prolonga a internação sem ganho, e encurtar o curso expõe a paciente à sequela tubária."
+  },
+  {
+    "question": "Mulher de 33 anos, assintomática e sem desejo gestacional no momento, tem endometrioma típico de 3 cm descoberto em ultrassonografia de rotina. O exame ginecológico é normal. Qual a conduta?",
+    "options": [
+      "Seguimento clínico e ultrassonográfico, sem cirurgia",
+      "Cistectomia laparoscópica para evitar a progressão",
+      "Análogo de GnRH por seis meses para reduzir o cisto",
+      "Dosar CA-125 e operar se o valor passar de 35 U/mL"
+    ],
+    "correctIndex": 0,
+    "explanation": "(Ginecologia · Endometriose e dor pélvica) Trata-se a endometriose diante de dor, sintoma urinário ou intestinal ou infertilidade — não o achado incidental assintomático. O endometrioma típico tem risco de transformação maligna menor que 0,8% e é acompanhado por ultrassonografia; operar sem indicação expõe a risco cirúrgico e pode reduzir a reserva ovariana. O CA-125 sobe em cerca de dois terços dos endometriomas e não define conduta."
+  },
+  {
+    "question": "Mulher de 66 anos, portadora de marca-passo cardíaco, tem bexiga hiperativa com urgeincontinência refratária a medidas comportamentais, fisioterapia, antimuscarínico e mirabegrona. Qual a próxima opção terapêutica?",
+    "options": [
+      "Toxina onabotulínica A injetada no detrusor",
+      "Estimulação percutânea do nervo tibial posterior",
+      "Ampliação vesical com segmento de íleo",
+      "Sling transobturatório de uretra média"
+    ],
+    "correctIndex": 0,
+    "explanation": "(Ginecologia · Incontinência urinária) Esgotadas as linhas conservadora e farmacológica, a terceira linha é minimamente invasiva: toxina onabotulínica A intradetrusora, neuromodulação sacral ou estimulação do nervo tibial. A estimulação tibial é contraindicada em portadora de marca-passo; a ampliação vesical é quarta linha, de exceção, e o sling trata incontinência de esforço, não urgência."
+  },
+  {
+    "question": "Mulher de 56 anos, em uso de inibidor da aromatase após câncer de mama, refere ressecamento vaginal, ardor e dor na relação. Ao exame, mucosa pálida, fina e sem pregas, com pH vaginal de 6. Qual a primeira linha de tratamento?",
+    "options": [
+      "Hidratante vaginal regular e lubrificante na relação",
+      "Estrogênio vaginal em baixa dose, sem progestagênio",
+      "Terapia hormonal sistêmica estroprogestativa",
+      "Testosterona transdérmica em dose fisiológica"
+    ],
+    "correctIndex": 0,
+    "explanation": "(Ginecologia · Sexualidade feminina) O quadro é síndrome geniturinária da menopausa, agravada pelo bloqueio estrogênico do inibidor da aromatase. Em sobrevivente de câncer de mama a primeira linha é não hormonal — hidratante de uso regular e lubrificante na relação —, e o estrogênio vaginal, que seria a escolha mais eficaz em outra paciente, só se discute com o oncologista. A testosterona tem indicação apenas no desejo hipoativo da pós-menopausa."
+  }
+];
+
+var LETTERS = ['A','B','C','D','E','F'];
+var SHUFFLE = true, LOCK = true;
+
+var S = { view:'home', started:false, finished:false, i:0, order:[], answers:[], open:{}, filter:'all', warn:false, chat:{} };
+
+function esc(s){ return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
+function pad(n){ return String(n).padStart(2,'0'); }
+
+function build(){
+  var qs = QUIZ.map(function(q,id){ return { question:q.question, options:q.options.slice(), correctIndex:q.correctIndex, explanation:q.explanation, image:q.image, imageCaption:q.imageCaption, id:id }; });
+  if (!SHUFFLE) return qs;
+  for (var i=qs.length-1;i>0;i--){ var j=Math.floor(Math.random()*(i+1)); var t=qs[i]; qs[i]=qs[j]; qs[j]=t; }
+  return qs.map(function(q){
+    var correct = q.options[q.correctIndex], o = q.options.slice();
+    for (var i=o.length-1;i>0;i--){ var j=Math.floor(Math.random()*(i+1)); var t=o[i]; o[i]=o[j]; o[j]=t; }
+    q.options = o; q.correctIndex = o.indexOf(correct); return q;
+  });
+}
+
+/* ── ações ─────────────────────────────────────────────────────────────────── */
+var A = {
+  home:      function(){ S.view='home'; S.started=false; S.finished=false; up(0); },
+  resumo:    function(){ S.view='resumo'; up(0); },
+  start:     function(){ var o=build(); S.view='quiz'; S.started=true; S.finished=false; S.i=0; S.order=o;
+                         S.answers=new Array(o.length).fill(null); S.open={}; S.filter='all'; S.warn=false; up(0); },
+  restart:   function(){ A.start(); },
+  sair:      function(){ S.view='home'; S.started=false; up(0); },   // guarda as respostas
+  retomar:   function(){ S.view='quiz'; S.started=true; S.finished=false; S.warn=false; up(0); },
+  go:        function(n){ if(n<0||n>S.order.length-1) return; S.i=n; S.warn=false; render(); },
+  jump:      function(n){ if(S.finished){ S.finished=false; S.i=n; S.warn=false; } else { if(n<0||n>S.order.length-1) return; S.i=n; S.warn=false; } up(0,'smooth'); },
+  pick:      function(n){ if(LOCK && S.answers[S.i]!==null) return; S.answers[S.i]=n; render(); },
+  prev:      function(){ A.go(S.i-1); },
+  next:      function(){ if(S.i<S.order.length-1) A.go(S.i+1); else A.finish(); },
+  finish:    function(){ var b=S.answers.filter(function(a){return a===null}).length;
+                         if(b>0 && !S.warn){ S.warn=true; render(); return; } S.finished=true; S.warn=false; up(0); },
+  force:     function(){ S.finished=true; S.warn=false; up(0); },
+  gotoBlank: function(){ var n=S.answers.findIndex(function(a){return a===null}); if(n>=0) A.go(n); },
+  back:      function(){ S.finished=false; S.warn=false; up(0); },
+  filter:    function(k){ S.filter=k; render(); },
+  toggle:    function(n){ S.open[n]=!S.open[n]; render(); },
+  toggleAll: function(){ var r=reviewList(), all=r.length>0 && r.every(function(x){return S.open[x.idx]});
+                         S.open={}; if(!all) r.forEach(function(x){ S.open[x.idx]=true; }); render(); }
+};
+function up(top, beh){ render(); window.scrollTo({ top: top||0, behavior: beh||'auto' }); }
+
+/* Aberto por duplo clique (file://) volta para o indice local; servido pela web,
+   volta para o publicado. Os dois listam os mesmos materiais. */
+function idxHref(){
+  var local = (typeof location !== 'undefined' && location.protocol === 'file:');
+  return local ? '../index_local.html' : '../index.html';
+}
+function emAndamento(){
+  return S.order.length > 0 && !S.finished &&
+         S.answers.some(function(a){ return a !== null; });
+}
+
+/* ── header ────────────────────────────────────────────────────────────────── */
+function renderHeader(){
+  var mono = "font-family:'IBM Plex Mono',monospace";
+  var left =
+    '<div style="min-width:0">' +
+      '<div style="display:flex;align-items:center;gap:8px;'+mono+';font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:#8a8578">' +
+        '<a href="'+idxHref()+'" class="h-ink" style="color:#2b57cc;text-decoration:none;white-space:nowrap">\u2190 Materiais</a>' +
+        '<span style="color:#d3cec4">/</span>' +
+        '<span style="overflow:hidden;text-overflow:ellipsis;white-space:nowrap">'+esc(EYEBROW)+'</span>' +
+      '</div>' +
+      '<h1 style="margin:1px 0 0;font-family:\'Newsreader\',Georgia,serif;font-size:20px;font-weight:500;letter-spacing:-.01em;line-height:1.15">'+esc(TITLE)+'</h1>' +
+    '</div>';
+
+  var right = '';
+  if (S.view === 'quiz' && S.started) {
+    var hit = counts().hit;
+    right = '<div style="display:flex;align-items:center;gap:10px;flex-shrink:0">' +
+              '<button type="button" data-act="sair" class="h-line" style="background:none;border:1px solid #ddd8ce;border-radius:9px;padding:6px 11px;'+mono+';font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;color:#5b6478;cursor:pointer;transition:border-color .15s ease">Sair</button>' +
+              '<div style="display:flex;align-items:center;gap:6px">' +
+                '<span style="'+mono+';font-size:15px;font-weight:600;letter-spacing:-.02em">'+hit+'</span>' +
+                '<span style="'+mono+';font-size:11px;color:#8a8578">/ '+S.order.length+'</span>' +
+              '</div></div>';
+  } else if (S.view !== 'home') {
+    right = '<button type="button" data-act="home" class="h-line" style="flex-shrink:0;background:none;border:1px solid #ddd8ce;border-radius:9px;padding:7px 13px;'+mono+';font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:#5b6478;cursor:pointer;transition:border-color .15s ease">← Início</button>';
+  }
+
+  var html = '<div style="display:flex;align-items:baseline;justify-content:space-between;gap:12px;margin-bottom:'+(S.view==='quiz'&&S.started?'10px':'2px')+'">'+left+right+'</div>';
+
+  if (S.view === 'quiz' && S.started) {
+    var c = counts();
+    var rail = S.order.map(function(q,n){
+      var a = S.answers[n], cur = n===S.i && !S.finished, bg = '#d3cec4';
+      if (a!==null) bg = (a===q.correctIndex) ? '#2e7d55' : '#c04437';
+      if (cur && a===null) bg = '#121a2b';
+      var st = a===null ? 'em branco' : (a===q.correctIndex ? 'correta' : 'incorreta');
+      return '<button type="button" data-act="jump" data-n="'+n+'" title="Questão '+(n+1)+' — '+st+'" aria-label="Questão '+(n+1)+' — '+st+'" style="flex:1 1 0;min-width:0;background:none;border:0;padding:13px 0;margin:0;cursor:pointer;display:flex;align-items:center;justify-content:center">' +
+             '<span style="display:block;width:100%;border-radius:99px;transition:height .18s ease,background .18s ease,box-shadow .18s ease;height:'+(cur?'17px':'9px')+';background:'+bg+';box-shadow:'+(cur?'0 0 0 3px rgba(18,26,43,.13)':'none')+'"></span></button>';
+    }).join('');
+    html += '<div><div style="display:flex;align-items:center;gap:3px">'+rail+'</div>' +
+            '<div style="display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:-2px">' +
+              '<div style="'+mono+';font-size:11px;letter-spacing:.04em;color:#5b6478">Questão '+pad(S.i+1)+' / '+S.order.length+'</div>' +
+              '<div style="display:flex;align-items:center;gap:12px;'+mono+';font-size:10.5px;color:#8a8578">' +
+                dot('#2e7d55',c.hit)+dot('#c04437',c.miss)+dot('#d3cec4',c.blank) +
+              '</div></div></div>';
+  }
+  document.getElementById('hdr').innerHTML = html;
+}
+function dot(color,n){ return '<span style="display:flex;align-items:center;gap:5px"><span style="width:7px;height:7px;border-radius:99px;background:'+color+';display:block"></span>'+n+'</span>'; }
+
+function counts(){
+  var hit=0, miss=0, blank=0;
+  S.answers.forEach(function(a,n){
+    if (a===null) blank++;
+    else if (S.order[n] && a===S.order[n].correctIndex) hit++;
+    else miss++;
+  });
+  return { hit:hit, miss:miss, blank:blank, total:S.order.length };
+}
+
+/* ── tela inicial ──────────────────────────────────────────────────────────── */
+function renderHome(){
+  var mono = "font-family:'IBM Plex Mono',monospace";
+  var secoes = (document.getElementById('resumoSrc').textContent.match(/<h2/g)||[]).length;
+  var cell = function(v,l){
+    return '<div style="background:#faf9f6;padding:16px 14px">' +
+      '<div style="'+mono+';font-size:22px;font-weight:500;letter-spacing:-.03em">'+v+'</div>' +
+      '<div style="'+mono+';font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:#8a8578;margin-top:3px">'+l+'</div></div>';
+  };
+  var card = function(act,tag,titulo,desc,cta){
+    return '<button type="button" data-act="'+act+'" class="h-card" style="display:flex;flex-direction:column;align-items:flex-start;gap:0;text-align:left;background:#fff;border:1px solid #e4e0d8;border-radius:18px;padding:24px 22px;cursor:pointer;transition:border-color .16s ease,transform .14s ease;box-shadow:0 1px 2px rgba(18,26,43,.04),0 12px 28px -20px rgba(18,26,43,.18)">' +
+      '<div style="'+mono+';font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:#2b57cc;margin-bottom:12px">'+tag+'</div>' +
+      '<div style="font-family:\'Newsreader\',Georgia,serif;font-size:26px;font-weight:500;letter-spacing:-.02em;line-height:1.15;margin-bottom:8px">'+titulo+'</div>' +
+      '<div style="font-size:14px;line-height:1.6;color:#5b6478;margin-bottom:18px;text-wrap:pretty">'+desc+'</div>' +
+      '<div style="'+mono+';font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:#121a2b">'+cta+'</div></button>';
+  };
+
+  document.getElementById('stage').innerHTML =
+    '<section style="padding:56px 0 0;animation:qFade .3s ease">' +
+      '<div style="'+mono+';font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:#2b57cc;margin-bottom:16px">Material de revisão</div>' +
+      '<h2 style="font-family:\'Newsreader\',Georgia,serif;font-size:40px;line-height:1.08;font-weight:400;letter-spacing:-.025em;margin:0 0 18px;text-wrap:pretty">'+esc(SUBTITLE)+'</h2>' +
+      '<p style="font-size:15.5px;line-height:1.65;color:#5b6478;margin:0 0 30px;max-width:52ch;text-wrap:pretty">'+esc(INTRO)+'</p>' +
+      '<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(108px,1fr));gap:1px;background:#e4e0d8;border:1px solid #e4e0d8;border-radius:14px;overflow:hidden;margin-bottom:32px">' +
+        cell(QUIZ.length,'Questões') + cell(secoes,'Seções') + cell('~'+Math.round(QUIZ.length*0.75),'Minutos') +
+      '</div>' +
+      '<div class="home-grid" style="display:grid;grid-template-columns:1fr 1fr;gap:12px">' +
+        (emAndamento()
+          ? card('retomar','Em andamento','Quiz',
+                 'Você parou na questão '+pad(S.i+1)+' de '+S.order.length+', com '+
+                 (S.order.length-counts().blank)+' respondida'+((S.order.length-counts().blank)===1?'':'s')+
+                 '. Suas respostas continuam guardadas.','Retomar →')
+          : card('start','Praticar','Quiz', QUIZ.length+' questões de múltipla escolha, com explicação assim que você responde e gabarito comentado no fim.','Começar →')) +
+        card('resumo','Estudar','Resumo','O conteúdo da aula em texto corrido, organizado em '+secoes+' seções para leitura antes da prova.','Ler →') +
+      '</div>' +
+      '<div style="margin-top:26px;display:flex;flex-wrap:wrap;align-items:center;gap:8px 18px;'+mono+';font-size:11px;color:#8a8578">' +
+        '<span>← →&nbsp; navegar</span><span>1–'+maxOpts()+'&nbsp; responder</span><span>Enter&nbsp; avançar</span>' +
+        (emAndamento() ? '<button type="button" data-act="start" class="h-ink" style="background:none;border:0;padding:0;'+mono+';font-size:11px;color:#8a8578;cursor:pointer;text-decoration:underline;text-underline-offset:3px">recomeçar do zero</button>' : '') +
+        '</div>' +
+    '</section>';
+}
+function maxOpts(){ return QUIZ.reduce(function(m,q){ return Math.max(m,q.options.length); },0); }
+
+/* ── resumo ────────────────────────────────────────────────────────────────── */
+function renderResumo(){
+  document.getElementById('stage').innerHTML =
+    '<section style="padding:34px 0 0;animation:qFade .3s ease">' +
+      '<div style="font-family:\'IBM Plex Mono\',monospace;font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:#2b57cc;margin-bottom:14px">Resumo</div>' +
+      '<div class="rsm">' + document.getElementById('resumoSrc').textContent + '</div>' +
+      '<div style="display:flex;flex-wrap:wrap;gap:9px;margin-top:38px;padding-top:24px;border-top:1px solid #e4e0d8">' +
+        '<button type="button" data-act="start" class="h-darkflat" style="background:#121a2b;color:#f5f3ef;border:0;border-radius:11px;padding:13px 24px;font-size:14px;font-weight:500;cursor:pointer;transition:background .16s ease">Fazer o quiz →</button>' +
+        '<button type="button" data-act="home" class="h-line" style="background:none;border:1px solid #ddd8ce;border-radius:11px;padding:13px 22px;font-size:14px;cursor:pointer;transition:border-color .15s ease">Voltar ao início</button>' +
+      '</div></section>';
+}
+
+/* imagem da questao — data URI ja resolvida pelo montar_quiz.py */
+function figura(q, cls){
+  if (!q.image) return '';
+  return '<figure class="fig'+(cls?' '+cls:'')+'"><img src="'+q.image+'" alt="'+esc(q.imageCaption||'Imagem da questão')+'">' +
+         (q.imageCaption ? '<figcaption>'+esc(q.imageCaption)+'</figcaption>' : '') + '</figure>';
+}
+
+/* ── questão ───────────────────────────────────────────────────────────────── */
+function renderQuestion(){
+  var mono = "font-family:'IBM Plex Mono',monospace";
+  var q = S.order[S.i], ans = S.answers[S.i], reveal = ans !== null;
+
+  var status = 'Não respondida', sColor = '#8a8578';
+  if (reveal) { var ok = ans===q.correctIndex; status = ok?'Você acertou':'Você errou'; sColor = ok?'#2e7d55':'#c04437'; }
+
+  var opts = q.options.map(function(text,n){
+    var isC = n===q.correctIndex, isMine = n===ans;
+    var bd='#e4e0d8', bg='#fff', fg='#121a2b', bBg='#f2efe9', bFg='#8a8578', mark='', mColor='', op='1', hbd='#2b57cc';
+    if (reveal) {
+      op = (isC||isMine) ? '1' : '.62';
+      if (isC)               { bd='#8fc7a7'; bg='#eef7f1'; fg='#1f5c3e'; bBg='#2e7d55'; bFg='#fff'; mark='✓'; mColor='#2e7d55'; }
+      if (isMine && !isC)    { bd='#e0a49a'; bg='#fdf0ee'; fg='#8f2f25'; bBg='#c04437'; bFg='#fff'; mark='✕'; mColor='#c04437'; }
+    } else if (isMine)       { bd='#121a2b'; bg='#f7f6f2'; bBg='#121a2b'; bFg='#f5f3ef'; }
+    var locked = reveal && LOCK;
+    return '<button type="button" data-act="pick" data-n="'+n+'" class="h-opt'+(locked?' locked':'')+'" style="--hbd:'+hbd+';display:flex;gap:13px;align-items:flex-start;width:100%;text-align:left;padding:14px 15px;border-radius:13px;font-size:15px;line-height:1.5;transition:border-color .15s ease,background .15s ease,transform .12s ease;border:1.5px solid '+bd+';background:'+bg+';color:'+fg+';cursor:'+(locked?'default':'pointer')+';opacity:'+op+'">' +
+      '<span style="flex-shrink:0;width:24px;height:24px;border-radius:7px;display:flex;align-items:center;justify-content:center;'+mono+';font-size:11.5px;font-weight:600;margin-top:1px;background:'+bBg+';color:'+bFg+'">'+LETTERS[n]+'</span>' +
+      '<span style="flex:1;min-width:0;text-wrap:pretty">'+esc(text)+'</span>' +
+      (mark ? '<span style="flex-shrink:0;'+mono+';font-size:14px;font-weight:600;margin-top:1px;color:'+mColor+'">'+mark+'</span>' : '') +
+      '</button>';
+  }).join('');
+
+  var expl = reveal ? '<div style="margin-top:20px;padding:16px 18px;background:#f7f6f2;border-left:2.5px solid #2b57cc;border-radius:0 12px 12px 0;animation:qFade .26s ease">' +
+      '<div style="'+mono+';font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:#2b57cc;margin-bottom:8px">Por quê</div>' +
+      '<p style="margin:0;font-size:14.5px;line-height:1.68;color:#39404f;text-wrap:pretty">'+esc(q.explanation)+'</p></div>' : '';
+
+  var blank = counts().blank;
+  var warn = S.warn ? '<div style="margin-top:14px;padding:15px 17px;background:#fdf7e9;border:1px solid #e8d5a3;border-radius:14px;animation:qFade .22s ease">' +
+      '<p style="margin:0 0 12px;font-size:14px;line-height:1.55;color:#6b5620">'+blank+(blank===1?' questão ainda está em branco.':' questões ainda estão em branco.')+' Você pode voltar nelas ou finalizar assim mesmo.</p>' +
+      '<div style="display:flex;flex-wrap:wrap;gap:8px">' +
+        '<button type="button" data-act="gotoBlank" style="background:#121a2b;color:#f5f3ef;border:0;border-radius:9px;padding:9px 16px;font-size:13px;font-weight:500;cursor:pointer">Ir para a 1ª em branco</button>' +
+        '<button type="button" data-act="force" style="background:none;color:#6b5620;border:1px solid #e8d5a3;border-radius:9px;padding:9px 16px;font-size:13px;cursor:pointer">Finalizar assim mesmo</button>' +
+      '</div></div>' : '';
+
+  var last = S.i === S.order.length-1;
+  var early = !last && (S.order.length - blank) > 0;
+
+  document.getElementById('stage').innerHTML =
+    '<section style="padding:26px 0 0">' +
+      '<article style="background:#fff;border:1px solid #e4e0d8;border-radius:18px;padding:26px 22px 24px;box-shadow:0 1px 2px rgba(18,26,43,.04),0 12px 28px -18px rgba(18,26,43,.18)">' +
+        '<div style="display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:14px">' +
+          '<div style="'+mono+';font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:#2b57cc">Questão '+pad(S.i+1)+'</div>' +
+          '<div style="'+mono+';font-size:10.5px;letter-spacing:.06em;color:'+sColor+'">'+status+'</div>' +
+        '</div>' +
+        '<h2 style="font-family:\'Newsreader\',Georgia,serif;font-size:22px;line-height:1.42;font-weight:400;letter-spacing:-.012em;margin:0 0 22px;text-wrap:pretty">'+esc(q.question)+'</h2>' +
+        figura(q, 'qfig') +
+        '<div style="display:flex;flex-direction:column;gap:9px">'+opts+'</div>' + expl +
+        (reveal ? chatBox(q, ans===q.correctIndex) : '') +
+      '</article>' + warn +
+      '<div style="display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:18px">' +
+        '<button type="button" data-act="prev" class="h-line" style="background:none;border:1px solid #ddd8ce;border-radius:11px;padding:12px 18px;font-size:14px;cursor:pointer;transition:border-color .15s ease,color .15s ease;color:'+(S.i===0?'#c4bfb4':'#121a2b')+';pointer-events:'+(S.i===0?'none':'auto')+'">← Anterior</button>' +
+        '<div style="display:flex;align-items:center;gap:8px">' +
+          (early ? '<button type="button" data-act="finish" class="h-ink" style="background:none;border:0;padding:12px 6px;'+mono+';font-size:11.5px;letter-spacing:.06em;text-transform:uppercase;color:#8a8578;cursor:pointer;text-decoration:underline;text-underline-offset:3px">Finalizar</button>' : '') +
+          '<button type="button" data-act="next" class="h-darkflat" style="background:#121a2b;color:#f5f3ef;border:0;border-radius:11px;padding:12px 22px;font-size:14px;font-weight:500;cursor:pointer;transition:background .16s ease">'+(last?'Finalizar':'Próxima →')+'</button>' +
+        '</div></div></section>';
+}
+
+/* ── resultado + gabarito comentado ────────────────────────────────────────── */
+function reviewList(){
+  return S.order.map(function(q,n){
+    var a = S.answers[n], ok = a!==null && a===q.correctIndex;
+    return { idx:n, ok:ok, blank:a===null, q:q, a:a };
+  }).filter(function(r){
+    return S.filter==='all' || (S.filter==='wrong'&&!r.ok&&!r.blank) || (S.filter==='right'&&r.ok) || (S.filter==='blank'&&r.blank);
+  });
+}
+
+function renderResult(){
+  var mono = "font-family:'IBM Plex Mono',monospace";
+  var c = counts(), pct = c.total ? Math.round(c.hit/c.total*100) : 0;
+
+  var title='Precisa revisar', msg='Releia o material com atenção e refaça o quiz — as explicações abaixo cobrem cada erro.';
+  if (pct>=90)      { title='Domínio sólido';   msg='Desempenho excelente. Confira as explicações das que escaparam e siga em frente.'; }
+  else if (pct>=70) { title='Bom desempenho';   msg='Base consistente. Revise os pontos errados abaixo para fechar as lacunas.'; }
+  else if (pct>=50) { title='Meio do caminho';  msg='Você acertou o essencial, mas há lacunas. Comece pelo filtro de erradas.'; }
+
+  var stat = function(v,l,color){
+    return '<div style="background:#faf9f6;padding:14px 10px">' +
+      '<div style="'+mono+';font-size:19px;font-weight:500;color:'+color+'">'+v+'</div>' +
+      '<div style="'+mono+';font-size:9.5px;letter-spacing:.09em;text-transform:uppercase;color:#8a8578;margin-top:2px">'+l+'</div></div>';
+  };
+
+  var fdefs = [['all','Todas',c.total],['wrong','Erradas',c.miss],['right','Certas',c.hit],['blank','Em branco',c.blank]];
+  var filters = fdefs.map(function(f){
+    var on = S.filter===f[0];
+    return '<button type="button" data-act="filter" data-k="'+f[0]+'" class="h-line" style="border-radius:99px;padding:8px 14px;font-size:13px;cursor:pointer;transition:all .15s ease;border:1px solid '+(on?'#121a2b':'#ddd8ce')+';background:'+(on?'#121a2b':'transparent')+';color:'+(on?'#f5f3ef':'#5b6478')+'">'+f[1]+' '+f[2]+'</button>';
+  }).join('');
+
+  var list = reviewList();
+  var allOpen = list.length>0 && list.every(function(r){ return S.open[r.idx]; });
+
+  var cards = list.map(function(r){
+    var numBg='#f0ede7', numFg='#8a8578';
+    if (!r.blank) { if (r.ok) { numBg='#e3f0e8'; numFg='#1f5c3e'; } else { numBg='#fbe6e2'; numFg='#8f2f25'; } }
+    var open = !!S.open[r.idx];
+    var body = '';
+    if (open) {
+      var opts = r.q.options.map(function(text,n){
+        var isC = n===r.q.correctIndex, isMine = n===r.a;
+        var bd='#eeebe4', bg='#fbfaf8', fg='#5b6478', bBg='#f0ede7', bFg='#8a8578', tag='', tBg='', tFg='';
+        if (isC)            { bd='#bcdcc9'; bg='#eef7f1'; fg='#1f5c3e'; bBg='#2e7d55'; bFg='#fff'; tag='Correta'; tBg='#d9ede1'; tFg='#1f5c3e'; }
+        if (isMine && !isC) { bd='#eec4bd'; bg='#fdf0ee'; fg='#8f2f25'; bBg='#c04437'; bFg='#fff'; tag='Sua resposta'; tBg='#f7ddd8'; tFg='#8f2f25'; }
+        if (isMine && isC)  { tag='Sua resposta ✓'; }
+        return '<div style="display:flex;gap:11px;align-items:flex-start;padding:11px 13px;border-radius:11px;font-size:14px;line-height:1.5;border:1px solid '+bd+';background:'+bg+';color:'+fg+'">' +
+          '<span style="flex-shrink:0;width:21px;height:21px;border-radius:6px;display:flex;align-items:center;justify-content:center;'+mono+';font-size:10.5px;font-weight:600;background:'+bBg+';color:'+bFg+'">'+LETTERS[n]+'</span>' +
+          '<span style="flex:1;min-width:0;text-wrap:pretty">'+esc(text)+'</span>' +
+          (tag ? '<span style="flex-shrink:0;'+mono+';font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;padding:3px 7px;border-radius:6px;margin-top:1px;background:'+tBg+';color:'+tFg+'">'+tag+'</span>' : '') +
+          '</div>';
+      }).join('');
+      body = '<div style="padding:2px 15px 18px;animation:qDrawer .2s ease">' +
+        '<div style="height:1px;background:#eeebe4;margin:0 0 16px"></div>' +
+        '<p style="font-family:\'Newsreader\',Georgia,serif;font-size:18px;line-height:1.5;margin:0 0 16px;text-wrap:pretty">'+esc(r.q.question)+'</p>' +
+        figura(r.q) +
+        '<div style="display:flex;flex-direction:column;gap:7px">'+opts+'</div>' +
+        '<div style="margin-top:16px;padding:14px 16px;background:#f7f6f2;border-left:2.5px solid #2b57cc;border-radius:0 11px 11px 0">' +
+          '<div style="'+mono+';font-size:9.5px;letter-spacing:.16em;text-transform:uppercase;color:#2b57cc;margin-bottom:7px">Por quê</div>' +
+          '<p style="margin:0;font-size:14px;line-height:1.65;color:#39404f;text-wrap:pretty">'+esc(r.q.explanation)+'</p></div>' +
+        '<button type="button" data-act="jump" data-n="'+r.idx+'" style="margin-top:14px;background:none;border:0;padding:0;'+mono+';font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:#2b57cc;cursor:pointer;text-decoration:underline;text-underline-offset:3px">Abrir no quiz →</button></div>';
+    }
+    return '<div style="background:#fff;border:1px solid '+(open?'#c9c3b6':'#e4e0d8')+';border-radius:14px;overflow:hidden;transition:border-color .15s ease">' +
+      '<button type="button" data-act="toggle" data-n="'+r.idx+'" style="display:flex;align-items:center;gap:12px;width:100%;text-align:left;background:none;border:0;padding:14px 15px;cursor:pointer">' +
+        '<span style="flex-shrink:0;width:28px;height:28px;border-radius:8px;display:flex;align-items:center;justify-content:center;'+mono+';font-size:12px;font-weight:600;background:'+numBg+';color:'+numFg+'">'+pad(r.idx+1)+'</span>' +
+        '<span style="flex:1;min-width:0;font-size:14px;line-height:1.45;color:#39404f;overflow:hidden;text-overflow:ellipsis;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical">'+esc(r.q.question)+'</span>' +
+        '<span style="flex-shrink:0;'+mono+';font-size:16px;color:#8a8578;width:16px;text-align:center">'+(open?'−':'+')+'</span>' +
+      '</button>' + body + '</div>';
+  }).join('');
+
+  document.getElementById('stage').innerHTML =
+    '<section style="padding:34px 0 0;animation:qFade .3s ease">' +
+      '<div style="'+mono+';font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:#2b57cc;margin-bottom:14px">Resultado</div>' +
+      '<h2 style="font-family:\'Newsreader\',Georgia,serif;font-size:36px;line-height:1.12;font-weight:400;letter-spacing:-.025em;margin:0 0 8px">'+title+'</h2>' +
+      '<p style="font-size:15px;line-height:1.6;color:#5b6478;margin:0 0 24px;max-width:48ch;text-wrap:pretty">'+msg+'</p>' +
+      '<div style="height:8px;border-radius:99px;background:#e4e0d8;overflow:hidden;margin-bottom:10px">' +
+        '<div style="height:100%;border-radius:99px;background:#121a2b;transition:width .7s cubic-bezier(.22,1,.36,1);width:'+pct+'%"></div></div>' +
+      '<div style="display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:#e4e0d8;border:1px solid #e4e0d8;border-radius:14px;overflow:hidden;margin-bottom:34px">' +
+        stat(c.hit,'Certas','#2e7d55')+stat(c.miss,'Erradas','#c04437')+stat(c.blank,'Branco','#8a8578')+stat(pct+'%','Aproveit.','#2b57cc') +
+      '</div>' +
+      '<div style="display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-bottom:14px">' +
+        '<h3 style="font-family:\'Newsreader\',Georgia,serif;font-size:22px;font-weight:500;letter-spacing:-.015em;margin:0">Gabarito comentado</h3>' +
+        '<button type="button" data-act="toggleAll" class="h-ink" style="background:none;border:0;padding:6px 0;'+mono+';font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:#5b6478;cursor:pointer;text-decoration:underline;text-underline-offset:3px">'+(allOpen?'Recolher tudo':'Expandir tudo')+'</button>' +
+      '</div>' +
+      '<div style="display:flex;gap:7px;flex-wrap:wrap;margin-bottom:16px">'+filters+'</div>' +
+      '<div style="display:flex;flex-direction:column;gap:8px">'+cards+'</div>' +
+      (list.length===0 ? '<div style="padding:38px 16px;text-align:center;color:#8a8578;font-size:14px;border:1px dashed #ddd8ce;border-radius:14px">Nenhuma questão neste filtro.</div>' : '') +
+      '<div style="display:flex;flex-wrap:wrap;gap:9px;margin-top:28px;padding-top:24px;border-top:1px solid #e4e0d8">' +
+        '<button type="button" data-act="restart" class="h-darkflat" style="background:#121a2b;color:#f5f3ef;border:0;border-radius:11px;padding:13px 24px;font-size:14px;font-weight:500;cursor:pointer;transition:background .16s ease">Refazer o quiz</button>' +
+        '<button type="button" data-act="back" class="h-line" style="background:none;border:1px solid #ddd8ce;border-radius:11px;padding:13px 22px;font-size:14px;cursor:pointer;transition:border-color .15s ease">Voltar às questões</button>' +
+        '<button type="button" data-act="resumo" class="h-line" style="background:none;border:1px solid #ddd8ce;border-radius:11px;padding:13px 22px;font-size:14px;cursor:pointer;transition:border-color .15s ease">Ler o resumo</button>' +
+      '</div></section>';
+}
+
+/* ── render + eventos ──────────────────────────────────────────────────────── */
+
+/* ─── Tutor DeepSeek — só local, só quando a questão foi errada ──────────────
+   A chave vem de ../deepseek_key.js, que não existe na versão publicada: online
+   o arquivo dá 404, dsOn() vira false e o chat simplesmente não é renderizado.
+   O histórico fica em S.chat[idDaQuestao] e sobrevive ao re-render do stage. */
+var DS_MODEL = 'deepseek-flash';
+var DS_URL   = 'https://api.deepseek.com/chat/completions';
+var NLJS     = String.fromCharCode(10);
+var DS_MONO  = "font-family:'IBM Plex Mono',monospace";
+var DS_SANS  = "font-family:'IBM Plex Sans',system-ui,sans-serif";
+
+function dsOn(){ return typeof window.DEEPSEEK_KEY === 'string' && window.DEEPSEEK_KEY.length > 10; }
+
+
+/* ─── markdown do chat ───────────────────────────────────────────────────────
+   O modelo responde em markdown (**negrito**, listas, `codigo`, tabelas). O texto
+   vem de fora, entao a ordem importa: ESCAPA TUDO primeiro com esc() e so depois
+   aplica formatacao — assim nenhuma tag vinda da resposta vira HTML de verdade.
+   Como esc() ja trocou > por &gt;, a citacao casa com &gt; e nao com >.
+   Trechos de codigo saem de cena por um marcador NUL, que nao pode existir
+   no texto escapado, e voltam no fim — assim ` ` protege o que esta dentro. */
+function mdIn(t){
+  var Z = String.fromCharCode(0), codes = [];
+  t = t.replace(/`([^`]+)`/g, function(_, c){
+    codes.push(c);
+    return Z + 'c' + (codes.length - 1) + Z;
+  });
+  t = t.replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>');
+  t = t.replace(/__([^_]+)__/g, '<strong>$1</strong>');
+  t = t.replace(/(^|[\s(])\*([^*\n]+)\*/g, '$1<em>$2</em>');
+  t = t.replace(/(^|[\s(])_([^_\n]+)_/g, '$1<em>$2</em>');
+  t = t.replace(/\[([^\]]+)\]\((https?:\/\/[^)\s]+)\)/g,
+    '<a href="$2" target="_blank" rel="noopener" style="color:#2b57cc">$1</a>');
+  return t.replace(new RegExp(Z + 'c([0-9]+)' + Z, 'g'), function(_, i){
+    return '<code style="' + DS_MONO + ';font-size:12px;background:#f2efe9;' +
+           'border-radius:4px;padding:1px 5px">' + codes[i] + '</code>';
+  });
+}
+
+function mdChat(txt){
+  var Z = String.fromCharCode(0);
+  var t = esc(String(txt == null ? '' : txt));
+  var blocos = [];
+  t = t.replace(/```[a-zA-Z]*\n?([\s\S]*?)```/g, function(_, c){
+    blocos.push(c.replace(/\n+$/, ''));
+    return Z + 'b' + (blocos.length - 1) + Z;
+  });
+
+  var linhas = t.split('\n'), out = [], lista = null, par = [];
+  function fechaLista(){ if (lista) { out.push('</' + lista + '>'); lista = null; } }
+  function fechaPar(){
+    if (par.length) { out.push('<p style="margin:0 0 9px">' + mdIn(par.join(' ')) + '</p>'); par = []; }
+  }
+  function fecha(){ fechaPar(); fechaLista(); }
+
+  for (var i = 0; i < linhas.length; i++){
+    var l = linhas[i], t2 = l.trim();
+    if (!t2) { fecha(); continue; }
+
+    var bl = t2.match(new RegExp('^' + Z + 'b([0-9]+)' + Z + '$'));
+    if (bl) {
+      fecha();
+      out.push('<pre style="margin:0 0 9px;padding:9px 11px;background:#f7f6f2;border-radius:9px;' +
+               'overflow-x:auto;' + DS_MONO + ';font-size:12px;line-height:1.5">' + blocos[bl[1]] + '</pre>');
+      continue;
+    }
+
+    // tabela: linha com | ... | seguida da separadora | --- | --- |
+    if (t2.charAt(0) === '|' && i + 1 < linhas.length && /^\|[\s:|-]+\|$/.test(linhas[i+1].trim())) {
+      fecha();
+      var celulas = function(linha){
+        return linha.trim().replace(/^\||\|$/g, '').split('|').map(function(c){ return mdIn(c.trim()); });
+      };
+      var cab = celulas(t2), corpo = [];
+      i += 2;
+      while (i < linhas.length && linhas[i].trim().charAt(0) === '|') { corpo.push(celulas(linhas[i].trim())); i++; }
+      i--;
+      var cel = 'padding:5px 9px;border-bottom:1px solid #eae6de;text-align:left;vertical-align:top';
+      out.push('<div style="overflow-x:auto;margin:0 0 9px">' +
+        '<table style="border-collapse:collapse;font-size:12.5px;width:100%">' +
+        '<thead><tr>' + cab.map(function(c){ return '<th style="' + cel + ';font-weight:600">' + c + '</th>'; }).join('') + '</tr></thead>' +
+        '<tbody>' + corpo.map(function(r){
+          return '<tr>' + r.map(function(c){ return '<td style="' + cel + '">' + c + '</td>'; }).join('') + '</tr>';
+        }).join('') + '</tbody></table></div>');
+      continue;
+    }
+
+    var h = t2.match(/^#{1,6}\s+(.*)$/);
+    if (h) {
+      fecha();
+      out.push('<div style="font-weight:600;color:#121a2b;margin:11px 0 5px">' + mdIn(h[1]) + '</div>');
+      continue;
+    }
+
+    if (/^(---+|\*\*\*+)$/.test(t2)) {
+      fecha();
+      out.push('<hr style="border:0;border-top:1px solid #eae6de;margin:11px 0">');
+      continue;
+    }
+
+    var cit = t2.match(/^&gt;\s?(.*)$/);
+    if (cit) {
+      fecha();
+      out.push('<div style="margin:0 0 9px;padding:7px 11px;border-left:2.5px solid #c9d6f7;' +
+               'background:#f7f9fe;border-radius:0 7px 7px 0">' + mdIn(cit[1]) + '</div>');
+      continue;
+    }
+
+    var mUl = t2.match(/^[-*•]\s+(.*)$/);
+    var mOl = t2.match(/^\d+[.)]\s+(.*)$/);
+    if (mUl || mOl) {
+      var tipo = mUl ? 'ul' : 'ol';
+      fechaPar();
+      if (lista !== tipo) {
+        fechaLista();
+        out.push('<' + tipo + ' style="margin:0 0 9px;padding-left:19px">');
+        lista = tipo;
+      }
+      out.push('<li style="margin:3px 0">' + mdIn((mUl || mOl)[1]) + '</li>');
+      continue;
+    }
+
+    fechaLista();
+    par.push(t2);
+  }
+  fecha();
+  return out.join('');
+}
+
+function msgHTML(m){
+  if (m.role === 'user')
+    return '<div style="margin:0 0 10px;text-align:right">' +
+      '<span style="display:inline-block;max-width:88%;text-align:left;background:#f2efe9;' +
+      'border-radius:12px 12px 3px 12px;padding:9px 12px;font-size:13.5px;line-height:1.6;' +
+      'color:#39404f;text-wrap:pretty">' + esc(m.content) + '</span></div>';
+  return '<div style="margin:0 0 12px">' +
+    '<div style="' + DS_MONO + ';font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;' +
+    'color:#2b57cc;margin-bottom:4px">DeepSeek</div>' +
+    '<div style="font-size:13.5px;line-height:1.65;color:#39404f;text-wrap:pretty">' +
+    mdChat(m.content) + '</div></div>';
+}
+
+function chatBox(q, acertou){
+  if (!dsOn()) return '';
+  var chamada = acertou ? 'Quer ir mais fundo?' : 'Ainda com dúvida?';
+  var dica = acertou ? 'Por que as outras estão erradas?' : 'Por que a que eu marquei está errada?';
+  var hist = (S.chat[q.id] || []).map(msgHTML).join('');
+  return '<div id="ds" data-qid="' + q.id + '" style="margin-top:14px;border:1px solid #e4e0d8;' +
+      'border-radius:14px;background:#fff;overflow:hidden;animation:qFade .26s ease">' +
+      '<div style="display:flex;align-items:center;gap:8px;padding:11px 15px;' +
+        'border-bottom:1px solid #f0ede6;background:#faf9f6">' +
+        '<span style="' + DS_MONO + ';font-size:10px;letter-spacing:.16em;text-transform:uppercase;' +
+        'color:#2b57cc">' + chamada + '</span>' +
+        '<span style="font-size:12px;color:#8a8578">pergunte ao DeepSeek</span></div>' +
+      '<div id="dsLog" style="max-height:280px;overflow-y:auto;padding:' + (hist ? '12px 15px' : '0') + '">' +
+        hist + '</div>' +
+      '<div style="display:flex;gap:8px;padding:11px 12px;border-top:1px solid #f0ede6">' +
+        '<input id="dsIn" type="text" autocomplete="off" ' +
+          'placeholder="' + dica + '" ' +
+          'style="flex:1;min-width:0;border:1px solid #e4e0d8;border-radius:10px;padding:10px 12px;' +
+          'font-size:13.5px;' + DS_SANS + ';color:#121a2b;background:#fff;outline:none">' +
+        '<button type="button" data-act="dsSend" class="h-darkflat" style="flex-shrink:0;' +
+          'background:#121a2b;color:#f5f3ef;border:0;border-radius:10px;padding:10px 16px;' +
+          'font-size:13px;font-weight:500;cursor:pointer;transition:background .16s ease">Enviar</button>' +
+      '</div></div>';
+}
+
+function dsContexto(q, ans){
+  var alts = q.options.map(function(o, n){ return LETTERS[n] + ') ' + o; }).join(NLJS);
+  return 'Questao: ' + q.question + NLJS + alts + NLJS +
+    'Resposta correta: ' + LETTERS[q.correctIndex] + ') ' + q.options[q.correctIndex] + NLJS +
+    'O estudante marcou: ' + (ans === null ? 'nada' : LETTERS[ans] + ') ' + q.options[ans]) + NLJS +
+    'Explicacao que ele ja tem: ' + q.explanation;
+}
+
+A.dsSend = function(){
+  var box = document.getElementById('ds');
+  if (!box || !dsOn() || box.getAttribute('data-busy')) return;
+  var input = document.getElementById('dsIn'), log = document.getElementById('dsLog');
+  var texto = (input.value || '').trim();
+  if (!texto) return;
+
+  var qid = parseInt(box.getAttribute('data-qid'), 10), q = null, ans = null;
+  for (var i = 0; i < S.order.length; i++)
+    if (S.order[i].id === qid) { q = S.order[i]; ans = S.answers[i]; }
+  if (!q) return;
+
+  S.chat[qid] = S.chat[qid] || [];
+  S.chat[qid].push({ role:'user', content:texto });
+  input.value = '';
+  log.style.padding = '12px 15px';
+  log.insertAdjacentHTML('beforeend', msgHTML({ role:'user', content:texto }));
+  log.insertAdjacentHTML('beforeend',
+    '<div><div style="' + DS_MONO + ';font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;' +
+    'color:#2b57cc;margin-bottom:4px">DeepSeek</div>' +
+    '<div id="dsTxt" style="font-size:13.5px;line-height:1.65;color:#8a8578;' +
+    'text-wrap:pretty">pensando…</div></div>');
+  log.scrollTop = log.scrollHeight;
+  box.setAttribute('data-busy', '1');
+
+  var acertou = (ans === q.correctIndex);
+  var situacao = acertou
+    ? 'Voce e um tutor de medicina. O estudante do 7o semestre ACERTOU esta questao, mas ficou com uma duvida. '
+    : 'Voce e um tutor de medicina. O estudante do 7o semestre ERROU esta questao. ';
+  var msgs = [
+    { role:'system', content: situacao +
+      'Responda em portugues do Brasil, direto ao ponto, no maximo 150 palavras. ' +
+      'Traga o dado concreto (valor, criterio, mecanismo) em vez de generalidade. ' +
+      'Nao repita a explicacao que ele ja tem; foque na duvida que ele trouxe.' },
+    { role:'user', content: dsContexto(q, ans) }
+  ];
+  var h = S.chat[qid];
+  for (var j = 0; j < h.length; j++) msgs.push({ role:h[j].role, content:h[j].content });
+
+  dsStream(msgs, function(txt, fim, erro){
+    var el = document.getElementById('dsTxt');
+    if (!el) { box.removeAttribute('data-busy'); return; }
+    if (erro) { el.style.color = '#c04437'; el.textContent = erro; box.removeAttribute('data-busy'); return; }
+    el.style.color = '#39404f';
+    el.innerHTML = mdChat(txt);
+    var lg = document.getElementById('dsLog'); if (lg) lg.scrollTop = lg.scrollHeight;
+    if (fim) { el.removeAttribute('id'); S.chat[qid].push({ role:'assistant', content:txt }); box.removeAttribute('data-busy'); }
+  });
+};
+
+function dsStream(messages, cb){
+  var acc = '';
+  fetch(DS_URL, {
+    method: 'POST',
+    headers: { 'Content-Type':'application/json', 'Authorization':'Bearer ' + window.DEEPSEEK_KEY },
+    body: JSON.stringify({ model:DS_MODEL, messages:messages, stream:true, max_tokens:1200, temperature:0.3 })
+  }).then(function(r){
+    if (!r.ok) return r.text().then(function(t){
+      throw new Error(
+        r.status === 401 ? 'Chave recusada (401). Confira o deepseek_key.js.' :
+        r.status === 402 ? 'Sem saldo na conta DeepSeek (402).' :
+        r.status === 429 ? 'Limite de uso atingido (429). Tente daqui a pouco.' :
+        'Erro ' + r.status + ': ' + String(t).slice(0, 120));
+    });
+    var reader = r.body.getReader(), dec = new TextDecoder(), buf = '';
+    (function pump(){
+      return reader.read().then(function(res){
+        if (res.done) { cb(acc || '(resposta vazia)', true); return; }
+        buf += dec.decode(res.value, { stream:true });
+        var linhas = buf.split(NLJS);
+        buf = linhas.pop();
+        for (var i = 0; i < linhas.length; i++){
+          var l = linhas[i].trim();
+          if (l.indexOf('data:') !== 0) continue;
+          var carga = l.slice(5).trim();
+          if (carga === '[DONE]') continue;
+          try {
+            var d = JSON.parse(carga).choices[0].delta;
+            if (d && d.content) { acc += d.content; cb(acc, false); }
+          } catch (_){}
+        }
+        return pump();
+      });
+    })();
+  }).catch(function(e){
+    cb('', true, 'Nao consegui falar com o DeepSeek: ' + (e && e.message ? e.message : e));
+  });
+}
+
+function render(){
+  renderHeader();
+  if (S.view === 'home')        renderHome();
+  else if (S.view === 'resumo') renderResumo();
+  else if (S.finished)          renderResult();
+  else                          renderQuestion();
+}
+
+/* lightbox: clique em qualquer figura amplia */
+document.addEventListener('click', function(e){
+  var lb = document.getElementById('lb');
+  if (e.target.closest('#lb')) { lb.className = ''; return; }
+  var img = e.target.closest('.fig img');
+  if (img) { lb.firstElementChild.src = img.src; lb.className = 'on'; }
+});
+window.addEventListener('keydown', function(e){
+  if (e.key === 'Escape') document.getElementById('lb').className = '';
+});
+
+document.addEventListener('click', function(e){
+  var b = e.target.closest('[data-act]'); if (!b) return;
+  var act = b.getAttribute('data-act'), n = parseInt(b.getAttribute('data-n'),10), k = b.getAttribute('data-k');
+  if (act==='pick'||act==='jump'||act==='toggle') A[act](n);
+  else if (act==='filter') A.filter(k);
+  else if (A[act]) A[act]();
+});
+
+window.addEventListener('keydown', function(e){
+  if (S.view!=='quiz' || !S.started || S.finished) return;
+  var t = e.target, tag = t && t.tagName;
+  if (tag==='INPUT' || tag==='TEXTAREA' || (t && t.isContentEditable)) return;
+  if (e.metaKey||e.ctrlKey||e.altKey) return;
+  if (e.key==='ArrowRight')     { e.preventDefault(); A.go(S.i+1); }
+  else if (e.key==='ArrowLeft') { e.preventDefault(); A.go(S.i-1); }
+  else if (e.key==='Enter')     { e.preventDefault(); A.next(); }
+  else if (/^[1-6]$/.test(e.key)) {
+    var n = parseInt(e.key,10)-1;
+    if (n < S.order[S.i].options.length) A.pick(n);
+  }
+});
+
+render();
+</script>
+</body>
+</html>

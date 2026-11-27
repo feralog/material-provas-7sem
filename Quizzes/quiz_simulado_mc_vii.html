@@ -1,0 +1,1195 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Simulado MC VII</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;450;500;600&display=swap" rel="stylesheet">
+<style>
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0}
+  body{background:#f5f3ef;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+  button{font:inherit;color:inherit;font-family:'IBM Plex Sans',system-ui,sans-serif}
+  a{color:#2b57cc;text-decoration:none}
+  a:hover{color:#1e3f9c;text-decoration:underline}
+  @keyframes qFade{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+  @keyframes qDrawer{from{opacity:0;transform:translateY(-4px)}to{opacity:1;transform:none}}
+
+  /* hovers — no canvas eram style-hover, aqui viram CSS de verdade */
+  .h-dark:hover{background:#2b57cc!important;transform:translateY(-1px)}
+  .h-darkflat:hover{background:#2b57cc!important}
+  .h-line:hover{border-color:#121a2b!important}
+  .h-ink:hover{color:#121a2b!important}
+  .h-opt:not(.locked):hover{border-color:var(--hbd)!important;transform:translateY(-1px)}
+  .h-card:hover{border-color:#121a2b!important;transform:translateY(-2px)}
+
+  /* tipografia do resumo */
+  .rsm{font-size:16.5px;line-height:1.72;color:#2a3141;max-width:64ch}
+  .rsm h2{font-family:'Newsreader',Georgia,serif;font-size:27px;font-weight:500;letter-spacing:-.02em;line-height:1.2;margin:42px 0 14px;padding-top:20px;border-top:1px solid #e4e0d8;text-wrap:pretty}
+  .rsm h2:first-child{margin-top:0;padding-top:0;border-top:0}
+  .rsm h3{font-family:'Newsreader',Georgia,serif;font-size:20px;font-weight:600;letter-spacing:-.01em;margin:28px 0 10px;text-wrap:pretty}
+  .rsm h4{font-family:'IBM Plex Mono',monospace;font-size:11px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:#2b57cc;margin:24px 0 8px}
+  .rsm p{margin:0 0 15px;text-wrap:pretty}
+  .rsm ul,.rsm ol{margin:0 0 15px;padding-left:22px}
+  .rsm li{margin-bottom:7px;text-wrap:pretty}
+  .rsm li>ul,.rsm li>ol{margin:7px 0 0}
+  .rsm strong{font-weight:600;color:#121a2b}
+  .rsm em{font-style:italic}
+  .rsm code{font-family:'IBM Plex Mono',monospace;font-size:.88em;background:#efece5;border:1px solid #e4e0d8;border-radius:5px;padding:1px 5px}
+  .rsm hr{border:0;border-top:1px solid #e4e0d8;margin:32px 0}
+  .rsm blockquote{margin:0 0 18px;padding:15px 18px;background:#f7f6f2;border-left:2.5px solid #2b57cc;border-radius:0 12px 12px 0;font-size:15px;line-height:1.65;color:#39404f}
+  .rsm blockquote p:last-child{margin-bottom:0}
+  .rsm .tbl{overflow-x:auto;margin:0 0 20px;border:1px solid #e4e0d8;border-radius:12px;background:#fff}
+  .rsm table{border-collapse:collapse;width:100%;font-size:14px;line-height:1.5}
+  .rsm th{text-align:left;font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.09em;text-transform:uppercase;color:#8a8578;font-weight:600;padding:11px 14px;background:#faf9f6;border-bottom:1px solid #e4e0d8;white-space:nowrap}
+  .rsm td{padding:11px 14px;border-bottom:1px solid #efece5;vertical-align:top;text-wrap:pretty}
+  .rsm tr:last-child td{border-bottom:0}
+  .rsm .key{background:#f2f6fb;border:1px solid #d6e2f4;border-radius:12px;padding:16px 18px;margin:0 0 18px}
+  .rsm .key>*:last-child{margin-bottom:0}
+
+  /* figuras — no resumo e na questao */
+  .fig{margin:0 0 20px;background:#fff;border:1px solid #e4e0d8;border-radius:14px;overflow:hidden}
+  .fig img{display:block;width:100%;height:auto;cursor:zoom-in}
+  .fig figcaption{font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.06em;color:#8a8578;padding:9px 13px;border-top:1px solid #efece5;background:#faf9f6;text-wrap:pretty}
+  .qfig{margin:0 0 20px}
+
+  /* lightbox */
+  #lb{position:fixed;inset:0;z-index:90;background:rgba(18,26,43,.86);display:none;align-items:center;justify-content:center;padding:24px;cursor:zoom-out}
+  #lb.on{display:flex;animation:qFade .16s ease}
+  #lb img{max-width:100%;max-height:100%;border-radius:10px;box-shadow:0 24px 60px rgba(0,0,0,.5)}
+
+  @media(max-width:560px){
+    .rsm{font-size:16px}
+    .rsm h2{font-size:24px}
+    .home-grid{grid-template-columns:1fr!important}
+  }
+</style>
+</head>
+<body>
+
+<div style="min-height:100vh;background:#f5f3ef;color:#121a2b;font-family:'IBM Plex Sans',system-ui,sans-serif">
+  <header style="position:sticky;top:0;z-index:30;background:rgba(245,243,239,.94);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid #e4e0d8">
+    <div style="max-width:720px;margin:0 auto;padding:12px 16px 10px" id="hdr"></div>
+  </header>
+  <main style="max-width:720px;margin:0 auto;padding:0 16px 80px" id="stage"></main>
+</div>
+<div id="lb"><img alt=""></div>
+
+<script type="text/html" id="resumoSrc"><p>Faça o simulado antes de abrir esta página. Depois, use cada tabela para localizar os temas em que errou — a explicação de cada questão começa com o tema — e volte ao material daquele tema. As tabelas dizem o que foi cobrado, não a resposta.</p>
+<div class="tbl"><table><thead><tr><th>Bloco</th><th>Questões</th><th>Casos clínicos</th></tr></thead><tbody><tr><td>Saúde mental e uso de substâncias</td><td>10</td><td>9</td></tr><tr><td>Queixas na APS: tontura</td><td>5</td><td>5</td></tr><tr><td>Saúde baseada em evidências</td><td>5</td><td>0</td></tr><tr><td>Saúde do homem</td><td>4</td><td>4</td></tr><tr><td>Populações vulneráveis I — rua e migração</td><td>8</td><td>7</td></tr><tr><td>Populações vulneráveis II — negra e PCD</td><td>8</td><td>8</td></tr><tr><td><strong>Total</strong></td><td><strong>40</strong></td><td><strong>33</strong></td></tr></tbody></table></div>
+<h2>Saúde mental e uso de substâncias</h2>
+<div class="tbl"><table><thead><tr><th>Tema</th><th>O que foi cobrado</th></tr></thead><tbody><tr><td>Transtorno mental comum</td><td>SRQ-20 com 11 respostas "sim": interpretar e próximo passo</td></tr><tr><td>Transtorno mental comum</td><td>Fadiga e desânimo após separação, com sinais de hipotireoidismo</td></tr><tr><td>Transtorno mental comum</td><td>Qual conduta é prevenção quaternária (quadro de Jamoulle)</td></tr><tr><td>Transtorno mental comum</td><td>Internação involuntária: exigência legal na alta</td></tr><tr><td>Transtorno mental comum</td><td>Primeiro episódio psicótico sem risco iminente: onde cuidar</td></tr><tr><td>Álcool e drogas</td><td>Estágio de mudança de quem já marcou a data para parar</td></tr><tr><td>Álcool e drogas</td><td>AUDIT de 17 pontos: zona e conduta</td></tr><tr><td>Álcool e drogas</td><td>ASSIST com risco moderado para uma substância</td></tr><tr><td>Álcool e drogas</td><td>Confusão, ataxia e alteração ocular dois dias após parar de beber</td></tr><tr><td>Álcool e drogas</td><td>Tabagista com epilepsia: farmacoterapia do protocolo do SUS</td></tr></tbody></table></div>
+<blockquote><p>Instrumento de rastreio (SRQ-20, AUDIT, ASSIST) estratifica e orienta a conduta — não fecha diagnóstico. Na internação involuntária, o Ministério Público é comunicado em 72 horas na entrada <strong>e na alta</strong>; confusão na abstinência tira o caso da APS.</p></blockquote>
+<h2>Queixas na APS: tontura</h2>
+<div class="tbl"><table><thead><tr><th>Tema</th><th>O que foi cobrado</th></tr></thead><tbody><tr><td>Tontura</td><td>Pré-síncope ao levantar após iniciar alfabloqueador</td></tr><tr><td>Tontura</td><td>Dix-Hallpike com nistagmo vertical, sem latência e que não fatiga</td></tr><tr><td>Tontura</td><td>HINTS com um único componente central em idoso vascular</td></tr><tr><td>Tontura</td><td>Supressor vestibular prolongado após neurite, com queda</td></tr><tr><td>Tontura</td><td>Desequilíbrio com Romberg negativo e sensibilidade preservada</td></tr></tbody></table></div>
+<blockquote><p>Na vertigem aguda contínua, <strong>impulso cefálico normal é alarme</strong> de causa central, e vômito intenso não separa periférico de central. Supressor vestibular é para poucos dias: prolongado, atrasa a compensação e derruba o idoso.</p></blockquote>
+<h2>Saúde baseada em evidências</h2>
+<div class="tbl"><table><thead><tr><th>Tema</th><th>O que foi cobrado</th></tr></thead><tbody><tr><td>Saúde baseada em evidências</td><td>Calcular RRR e NNT a partir de 10% × 6%</td></tr><tr><td>Saúde baseada em evidências</td><td>Calcular o NNH de um efeito adverso (3% × 1%)</td></tr><tr><td>Saúde baseada em evidências</td><td>Mesmo RR, riscos basais diferentes: NNT de cada paciente</td></tr><tr><td>Saúde baseada em evidências</td><td>GRADE: ponto de partida e motivo de rebaixamento</td></tr><tr><td>Saúde baseada em evidências</td><td>Desenho de estudo para prevalência no território</td></tr></tbody></table></div>
+<blockquote><p>RRR = 1 − RR; RRA = risco do controle − risco do tratado; NNT = 1 ÷ RRA. O RR é constante, mas <strong>a RRA e o NNT mudam com o risco basal</strong> — não confunda o RR com a RRR nem a RRA com a RRR.</p></blockquote>
+<h2>Saúde do homem</h2>
+<div class="tbl"><table><thead><tr><th>Tema</th><th>O que foi cobrado</th></tr></thead><tbody><tr><td>Saúde do homem</td><td>Sildenafila em coronariopata que usa nitrato</td></tr><tr><td>Saúde do homem</td><td>"Check-up" de homem de 40 anos hipertenso e obeso</td></tr><tr><td>Saúde do homem</td><td>Vasectomia: prazo legal e contracepção após a cirurgia</td></tr><tr><td>Saúde do homem</td><td>Parceiro de gestante com sífilis e teste não reagente</td></tr></tbody></table></div>
+<blockquote><p>Rastreamento segue idade e fator de risco (diabetes antes dos 45 se excesso de peso + outro fator; lipídios a partir dos 35) — PSA e testículo não entram. Parceiro exposto nos últimos 90 dias é tratado <strong>mesmo com teste negativo</strong>.</p></blockquote>
+<h2>Populações vulneráveis I — rua e migração</h2>
+<div class="tbl"><table><thead><tr><th>Tema</th><th>O que foi cobrado</th></tr></thead><tbody><tr><td>Situação de rua</td><td>Município sem Consultório na Rua: de quem é o cuidado</td></tr><tr><td>Situação de rua</td><td>Documentos, CadÚnico, banho e guarda de pertences: qual serviço</td></tr><tr><td>Situação de rua</td><td>Gestante usuária de crack abordada pelo Consultório na Rua</td></tr><tr><td>Situação de rua</td><td>Tuberculose confirmada: o que acompanha o TDO</td></tr><tr><td>Migração e refúgio</td><td>Saída do país por desemprego, sem perseguição: classificação</td></tr><tr><td>Migração e refúgio</td><td>Parasitose a lembrar antes de corticoide em dose alta</td></tr><tr><td>Migração e refúgio</td><td>Família sem documentos e a sugestão de avisar a Polícia Federal</td></tr><tr><td>Migração e refúgio</td><td>Nacionalidade do filho de apátridas nascido no Brasil</td></tr></tbody></table></div>
+<blockquote><p>Centro POP é <strong>assistência social</strong>, não saúde; Consultório na Rua dá <strong>atenção integral</strong>, não só cuidado com drogas. Migrante econômico não é refugiado, e a equipe de saúde <strong>não faz fiscalização migratória</strong>.</p></blockquote>
+<h2>Populações vulneráveis II — negra e PCD</h2>
+<div class="tbl"><table><thead><tr><th>Tema</th><th>O que foi cobrado</th></tr></thead><tbody><tr><td>Saúde da população negra</td><td>Monoterapia anti-hipertensiva de melhor resposta em negros</td></tr><tr><td>Saúde da população negra</td><td>Criança falciforme pálida com baço aumentado</td></tr><tr><td>Saúde da população negra</td><td>Proposta de sulfato ferroso na anemia falciforme</td></tr><tr><td>Saúde da população negra</td><td>Dimensão do racismo na fala de uma adolescente</td></tr><tr><td>Pessoa com deficiência</td><td>Curadora que quer impedir a escolha contraceptiva da curatelada</td></tr><tr><td>Pessoa com deficiência</td><td>Amputado: onde a prótese e a cadeira são fornecidas na RCPD</td></tr><tr><td>Pessoa com deficiência</td><td>Leucocoria aos 5 meses com teste da maternidade normal</td></tr><tr><td>Pessoa com deficiência</td><td>Sinais de risco de TEA aos 20 meses: instrumento de triagem</td></tr></tbody></table></div>
+<blockquote><p>Na doença falciforme, palidez súbita com baço grande é <strong>sequestro esplênico</strong> (urgência), e ferro de rotina não se dá — a anemia é hemolítica. A curatela só alcança <strong>atos patrimoniais e negociais</strong>: saúde, corpo e sexualidade continuam decisão da pessoa.</p></blockquote></script>
+<!-- Tutor local: define window.DEEPSEEK_KEY. O arquivo NAO vai para o repositorio,
+     entao online ele da 404 e o chat simplesmente nao aparece. -->
+<script src="../deepseek_key.js"></script>
+<script>
+/* ─────────────────────────────────────────────────────────────────────────────
+   CONTRATO DE DADOS — para adaptar a outro tema, troque apenas QUIZ e o resumo.
+   Cada item: { question, options[2..6], correctIndex, explanation }
+   ──────────────────────────────────────────────────────────────────────────── */
+var TITLE      = "Simulado MC VII";
+var EYEBROW    = "Simulado · Medicina e Comunidade VII";
+var DISCIPLINA = "Simulados";   // pasta de origem (PED, GO...) — usada pelo índice
+var SUBTITLE = "Quarenta questões inéditas para medir o que você sabe";
+var INTRO    = "40 questões objetivas sobre transtorno mental comum, álcool e drogas, tontura, saúde baseada em evidências, saúde do homem e populações vulneráveis (situação de rua, população negra, migrantes e refugiados, pessoa com deficiência), quase todas em caso na UBS. Tempo sugerido: 60 minutos, sem consulta. A explicação de cada questão começa pelo tema.";
+
+var QUIZ = [
+  {
+    "question": "Na visita domiciliar, a agente comunitária aplica o SRQ-20 em uma mulher de 34 anos, cuidadora da mãe acamada: ela responde \"sim\" a 11 das 20 perguntas sobre os últimos 30 dias. Na consulta, qual a interpretação e o passo seguinte?",
+    "options": [
+      "Sofrimento psíquico provável: avaliar o quadro e o contexto na consulta",
+      "Depressão maior confirmada: iniciar ISRS ainda na mesma consulta",
+      "Resultado negativo, pois o ponto de corte habitual é de 15 respostas",
+      "Transtorno grave confirmado: encaminhar direto ao CAPS da região"
+    ],
+    "correctIndex": 0,
+    "explanation": "(MFC · Transtorno mental comum) No SRQ-20, 8 ou mais respostas \"sim\" (corte 7/8 na validação brasileira) indicam sofrimento psíquico provável — é rastreio, não diagnóstico. O passo seguinte é a avaliação clínica: duração, prejuízo, critérios de transtorno específico, risco de suicídio e o contexto de sobrecarga. Iniciar antidepressivo só pelo escore pula essa avaliação."
+  },
+  {
+    "question": "Homem de 74 anos começou doxazosina para hiperplasia prostática há três semanas. Desde então, ao se levantar, tem a vista escura e a sensação de que vai desmaiar, sem giro; já quase caiu duas vezes. Qual a conduta inicial?",
+    "options": [
+      "Medir a PA deitado e em pé e rever a doxazosina como causa provável",
+      "Prescrever meclizina contínua e pedir ressonância de crânio",
+      "Fazer a manobra de Dix-Hallpike e, se positiva, a de Epley",
+      "Pedir audiometria e encaminhar ao otorrino por labirintite"
+    ],
+    "correctIndex": 0,
+    "explanation": "(MFC · Tontura) Vista escura e desmaio iminente ao levantar, sem giro, é pré-síncope, e o alfabloqueador recém-iniciado é a causa mais provável de hipotensão ortostática — confirmada por queda de 20 mmHg ou mais na sistólica, ou de 10 mmHg ou mais na diastólica, em até 3 minutos de pé. Revisar a lista de remédios resolve muitos casos; Dix-Hallpike é para vertigem posicional, não para pré-síncope."
+  },
+  {
+    "question": "Num ensaio clínico de 3 anos, o AVC ocorreu em 10% do grupo placebo e em 6% do grupo tratado. Quais são a redução do risco relativo (RRR) e o número necessário para tratar (NNT)?",
+    "options": [
+      "RRR de 40% e NNT de 25 pacientes em 3 anos",
+      "RRR de 4% e NNT de 40 pacientes em 3 anos",
+      "RRR de 60% e NNT de 25 pacientes em 3 anos",
+      "RRR de 40% e NNT de 4 pacientes em 3 anos"
+    ],
+    "correctIndex": 0,
+    "explanation": "(MFC · Saúde baseada em evidências) RR = 6 ÷ 10 = 0,6, logo RRR = 1 − 0,6 = 40%. A RRA é 10% − 6% = 4 pontos percentuais, e NNT = 1 ÷ 0,04 = 25: é preciso tratar 25 pessoas por 3 anos para evitar um AVC. Confundir o RR (0,6) com a RRR leva aos 60%; confundir a RRA com a RRR leva aos 4%."
+  },
+  {
+    "question": "Num município sem equipe de Consultório na Rua, um homem de 47 anos dorme há meses na praça em frente à UBS e tem tosse, feridas nos pés e hipertensão sem acompanhamento. A quem cabe o cuidado dele?",
+    "options": [
+      "À equipe da UBS do território, articulada com o restante da rede",
+      "Ao Centro POP, serviço de saúde específico para a população de rua",
+      "Ao CAPS AD, que é a referência de cuidado para quem vive na rua",
+      "A ninguém na APS até que ele tenha endereço no território da UBS"
+    ],
+    "correctIndex": 0,
+    "explanation": "(MFC · Situação de rua) Onde não há Consultório na Rua, o cuidado é responsabilidade da UBS do território — e de toda a rede. O Centro POP é serviço da assistência social, não da saúde, e o CAPS AD só entra se houver uso problemático de drogas; a falta de endereço nunca barra o atendimento no SUS."
+  },
+  {
+    "question": "Homem de 39 anos, que bebe diariamente, chega dizendo: \"Decidi que vou parar de beber no começo do mês que vem e quero saber como fazer.\" Em qual estágio de mudança ele está e qual a conduta?",
+    "options": [
+      "Preparação: montar o plano, com data e estratégias para os gatilhos",
+      "Contemplação: explorar a ambivalência entre os prós e os contras",
+      "Pré-contemplação: devolver os riscos e manter o vínculo, sem confronto",
+      "Manutenção: focar na prevenção de recaída e no que já deu certo"
+    ],
+    "correctIndex": 0,
+    "explanation": "(MFC · Álcool e drogas) Quem já decidiu mudar em breve está na preparação, e a tarefa é concreta: plano, data e estratégias. Explorar a ambivalência é a conduta da contemplação, em que o paciente reconhece o problema mas ainda não decidiu; insistir nisso agora atrasa quem já está pronto."
+  },
+  {
+    "question": "Menina de 18 meses com doença falciforme é trazida porque, desde a manhã, está muito pálida, prostrada e com a barriga mais volumosa; o baço está bem maior do que na consulta anterior. Qual a hipótese e a conduta?",
+    "options": [
+      "Sequestro esplênico agudo: encaminhar com urgência",
+      "Crise vaso-oclusiva: analgesia oral e retorno em 48 h",
+      "Anemia ferropriva: iniciar sulfato ferroso e reavaliar",
+      "Esplenomegalia esperada: só orientar e reavaliar depois"
+    ],
+    "correctIndex": 0,
+    "explanation": "(MFC · Saúde da população negra) Palidez súbita com aumento do baço na criança com doença falciforme é sequestro esplênico, emergência que exige avaliação imediata — a família aprende a palpar o baço justamente por isso. Ferro não está indicado (a anemia é hemolítica, não ferropriva), e a crise vaso-oclusiva se manifesta por dor, não por palidez com esplenomegalia."
+  },
+  {
+    "question": "Homem de 40 anos, assintomático, hipertenso, com IMC de 32, vem pedir \"um check-up completo\". Pelos Cadernos de Atenção Primária nº 29 e nº 36, quais rastreamentos estão indicados?",
+    "options": [
+      "Glicemia, perfil lipídico e abordagem breve de tabaco e álcool",
+      "PSA, toque retal e ultrassom dos testículos, pela idade dele",
+      "Colonoscopia, PSA e glicemia de jejum, pela idade de 40 anos",
+      "Nenhum por enquanto, pois o rastreio só começa aos 45 anos"
+    ],
+    "correctIndex": 0,
+    "explanation": "(MFC · Saúde do homem) Diabetes se rastreia a partir dos 45 anos ou antes, se houver excesso de peso com outro fator de risco (aqui, hipertensão); dislipidemia, em homens a partir dos 35; tabaco e álcool, em todos os adultos. PSA, toque retal e ultrassom de testículo não têm rastreamento populacional recomendado, e o rastreio colorretal começa aos 50."
+  },
+  {
+    "question": "Homem de 29 anos deixou seu país porque perdeu o emprego e não conseguia sustentar a família; não sofreu ameaça nem perseguição. Chegou ao Brasil e quer se regularizar. Como ele se classifica?",
+    "options": [
+      "Migrante econômico, que se regulariza por outras vias que não o refúgio",
+      "Refugiado, pela definição ampliada da Lei 9.474/1997 e de Cartagena",
+      "Deslocado interno, protegido pelas regras da Convenção de 1951",
+      "Apátrida, por ter perdido o vínculo de trabalho com o país de origem"
+    ],
+    "correctIndex": 0,
+    "explanation": "(MFC · Migração e refúgio) Quem sai em busca de trabalho e renda, sem perseguição nem fuga de grave e generalizada violação de direitos humanos, é migrante econômico — e se regulariza por outras vias, como a autorização de residência ou o visto humanitário. Deslocado interno não cruzou fronteira, e apátrida é quem não é considerado nacional por nenhum Estado."
+  },
+  {
+    "question": "Mulher de 26 anos com deficiência intelectual leve está sob curatela da mãe, nomeada para administrar o benefício e os contratos dela. A jovem pede para colocar DIU; a mãe se opõe e diz que \"quem decide é a curadora\". Qual a orientação?",
+    "options": [
+      "A decisão é da usuária: a curatela não alcança o direito à saúde",
+      "A decisão é da curadora, que responde pelos atos da curatelada",
+      "É preciso autorização judicial específica para inserir o DIU",
+      "O DIU só pode ser inserido se mãe e filha estiverem de acordo"
+    ],
+    "correctIndex": 0,
+    "explanation": "(MFC · Pessoa com deficiência) Pela LBI, a deficiência não afeta a plena capacidade civil, inclusive para exercer direitos sexuais e reprodutivos; a curatela é extraordinária, proporcional e restrita a atos patrimoniais e negociais — não alcança o corpo, a sexualidade nem a saúde. O que se exige é o consentimento livre e esclarecido da própria usuária, com informação em formato acessível."
+  },
+  {
+    "question": "Mulher de 46 anos vai à UBS com cansaço, desânimo, sonolência, constipação, ganho de peso e pele seca há quatro meses, iniciados na época em que se separou. É a primeira consulta pelo quadro. Qual a conduta mais adequada?",
+    "options": [
+      "Examinar e pedir TSH antes de atribuir o quadro só ao sofrimento",
+      "Diagnosticar transtorno mental comum e incluí-la em grupo terapêutico",
+      "Prescrever ISRS, pois a separação explica os sintomas descritos",
+      "Orientar que é luto pela separação e marcar retorno em seis meses"
+    ],
+    "correctIndex": 0,
+    "explanation": "(MFC · Transtorno mental comum) Fadiga e desânimo também vêm de doença orgânica: constipação, ganho de peso, pele seca e sonolência apontam para hipotireoidismo, que precisa ser afastado com exame físico e TSH. O contexto de vida faz parte da avaliação, mas não dispensa examinar — o que não se deve é repetir exames a cada retorno quando a investigação inicial já foi feita."
+  },
+  {
+    "question": "Mulher de 66 anos, hipertensa, tem tontura ao deitar. Na manobra de Dix-Hallpike surge, sem latência, nistagmo vertical para baixo, que persiste enquanto a cabeça fica na posição e não diminui ao repetir. Qual a interpretação?",
+    "options": [
+      "Achado atípico para VPPB: pensar em causa central e encaminhar",
+      "VPPB de canal posterior: fazer a manobra de Epley no consultório",
+      "VPPB de canal lateral: repetir a manobra com giro em decúbito",
+      "Neurite vestibular: sintomáticos e reabilitação vestibular precoce"
+    ],
+    "correctIndex": 0,
+    "explanation": "(MFC · Tontura) Na VPPB de canal posterior, o nistagmo é torcional e para cima, surge após latência, dura pouco e fatiga com a repetição. Nistagmo vertical, sem latência, persistente e que não fatiga foge desse padrão: nistagmo vertical é sinal de alarme de causa central, e o caso não deve ser tratado como VPPB."
+  },
+  {
+    "question": "Num ensaio de 2 anos com um anticoagulante, sangramento maior ocorreu em 3% dos tratados e em 1% do grupo placebo. Qual o número necessário para causar dano (NNH)?",
+    "options": [
+      "50: a cada 50 tratados por 2 anos, um sangramento a mais",
+      "33: a cada 33 tratados por 2 anos, um sangramento a mais",
+      "3: a cada 3 tratados por 2 anos, um sangramento a mais",
+      "100: a cada 100 tratados por 2 anos, um sangramento a mais"
+    ],
+    "correctIndex": 0,
+    "explanation": "(MFC · Saúde baseada em evidências) O NNH é a mesma conta do NNT aplicada ao efeito adverso: aumento absoluto do risco = 3% − 1% = 2 pontos percentuais, e NNH = 1 ÷ 0,02 = 50. O 33 sai de usar só o risco do grupo tratado (1 ÷ 0,03), e o 3 é o risco relativo (3% ÷ 1%), que não é número de pacientes."
+  },
+  {
+    "question": "Mulher de 41 anos responde ao AUDIT numa consulta de rotina e soma 17 pontos. Em qual zona de risco ela está e qual a conduta?",
+    "options": [
+      "Zona III: intervenção breve, aconselhamento e monitoramento",
+      "Zona II: intervenção breve isolada, sem monitoramento",
+      "Zona IV: avaliação diagnóstica de dependência e tratamento",
+      "Zona I: educação em saúde e reforço do consumo de baixo risco"
+    ],
+    "correctIndex": 0,
+    "explanation": "(MFC · Álcool e drogas) O AUDIT (0 a 40) se divide em zonas: 0–7 educação em saúde, 8–15 intervenção breve, 16–19 intervenção breve com aconselhamento e monitoramento, e 20 ou mais avaliação diagnóstica de dependência. Com 17 pontos ela está na zona III — ainda não é a faixa que pede avaliação de dependência."
+  },
+  {
+    "question": "Homem de 39 anos em situação de rua, acompanhado pela equipe de saúde, quer tirar segunda via dos documentos, inscrever-se no CadÚnico e ter onde guardar os pertences e tomar banho. Qual serviço a equipe deve acionar?",
+    "options": [
+      "Centro POP, da assistência social, que serve de endereço de referência",
+      "CAPS AD III, que oferece acolhimento noturno e guarda de documentos",
+      "Unidade de Acolhimento, moradia transitória ligada à atenção básica",
+      "Serviço Residencial Terapêutico, para quem não tem moradia própria"
+    ],
+    "correctIndex": 0,
+    "explanation": "(MFC · Situação de rua) O Centro POP é serviço do SUAS: oferece convivência, higiene, alimentação, guarda de pertences, encaminhamento para documentos e benefícios (CadÚnico, Bolsa Família) e pode servir de endereço de referência. Unidade de Acolhimento e Residencial Terapêutico são pontos da RAPS com indicações próprias (uso de drogas com vulnerabilidade social; egressos de longas internações psiquiátricas)."
+  },
+  {
+    "question": "Homem de 48 anos, autodeclarado preto, tem hipertensão estágio 1 confirmada, sem diabetes, doença renal ou outra comorbidade. Vai iniciar monoterapia. Qual classe tende a responder melhor?",
+    "options": [
+      "Diurético tiazídico ou bloqueador dos canais de cálcio",
+      "Inibidor da ECA ou bloqueador do receptor de angiotensina",
+      "Betabloqueador ou alfabloqueador como primeira escolha",
+      "Diurético de alça ou espironolactona em dose plena"
+    ],
+    "correctIndex": 0,
+    "explanation": "(MFC · Saúde da população negra) Em pessoas negras, tiazídicos e bloqueadores dos canais de cálcio costumam responder melhor em monoterapia do que IECA ou BRA. A hipertensão nesse grupo é mais frequente, precoce e grave, com mais AVC e lesão renal — e a diretriz brasileira pondera que condições socioeconômicas e hábitos pesam nessa diferença mais que a etnia em si."
+  },
+  {
+    "question": "Homem de 64 anos, com angina estável em uso de mononitrato de isossorbida, pede receita de sildenafila por disfunção erétil. Qual a orientação correta?",
+    "options": [
+      "Não prescrever: com nitrato, a sildenafila causa hipotensão grave",
+      "Prescrever a dose mínima, que é segura em uso conjunto com nitrato",
+      "Prescrever e orientar tomar o nitrato só depois da relação sexual",
+      "Trocar por tadalafila, que não interage com os nitratos orais"
+    ],
+    "correctIndex": 0,
+    "explanation": "(MFC · Saúde do homem) Os inibidores da fosfodiesterase-5 (sildenafila, tadalafila) são contraindicados com nitratos, pelo risco de hipotensão grave — a contraindicação vale para a classe, então trocar por tadalafila não resolve. A disfunção erétil, aliás, é marcador de risco cardiovascular e ocasião para rever PA, glicemia, lipídios, tabagismo e medicamentos."
+  },
+  {
+    "question": "Imigrante de 38 anos, que viveu até o ano passado em zona rural tropical com saneamento precário, está em crise grave de asma e vai iniciar prednisona em dose alta por vários dias. Qual parasitose deve ser lembrada antes do corticoide?",
+    "options": [
+      "Estrongiloidíase, que pode evoluir para hiperinfecção",
+      "Giardíase, que pode evoluir para má absorção grave",
+      "Ascaridíase, que pode evoluir para obstrução biliar",
+      "Amebíase, que pode evoluir para abscesso hepático"
+    ],
+    "correctIndex": 0,
+    "explanation": "(MFC · Migração e refúgio) Quem vem de área com saneamento precário pode ter estrongiloidíase crônica assintomática, e o corticoide pode desencadear hiperinfecção e disseminação, potencialmente fatais — por isso ela é lembrada antes de corticoide ou imunossupressão. As outras parasitoses não têm essa relação com o corticoide."
+  },
+  {
+    "question": "Homem de 58 anos, diabético, teve amputação transtibial e recebeu alta. Precisa de prótese, cadeira de rodas provisória e reabilitação física. Na Rede de Cuidados à Pessoa com Deficiência, onde a prótese e a cadeira são confeccionadas e dispensadas?",
+    "options": [
+      "Na oficina ortopédica, do componente especializado",
+      "Na UBS, que dispensa órteses pela farmácia básica",
+      "No CAPS, que coordena a reabilitação psicossocial",
+      "No hospital da cirurgia, que as fornece na alta"
+    ],
+    "correctIndex": 0,
+    "explanation": "(MFC · Pessoa com deficiência) A RCPD (Portaria 793/2012) tem três componentes: atenção primária; atenção especializada em reabilitação — CER, oficinas ortopédicas (órteses, próteses e meios auxiliares de locomoção) e CEO —; e atenção hospitalar e de urgência. A equipe de Saúde da Família segue como coordenadora do cuidado, articulando com o CER e a oficina, sem deixar de ser responsável."
+  },
+  {
+    "question": "Homem de 27 anos foi internado em surto psicótico, sem consentimento, a pedido da irmã; o Ministério Público foi comunicado na admissão. Três semanas depois, estabilizado, recebe alta. Pela Lei 10.216/2001, qual exigência se aplica à alta?",
+    "options": [
+      "Comunicar a alta ao Ministério Público Estadual em até 72 horas",
+      "Obter autorização judicial prévia para liberar o paciente da unidade",
+      "Colher declaração do paciente concordando por escrito com a alta",
+      "Nenhuma: só a entrada involuntária precisa ser comunicada ao MP"
+    ],
+    "correctIndex": 0,
+    "explanation": "(MFC · Transtorno mental comum) Na internação involuntária — sem consentimento, a pedido de terceiro, autorizada por médico com CRM do estado — a comunicação ao Ministério Público Estadual em até 72 horas vale para a admissão e também para a alta. Autorização judicial é característica da internação compulsória, determinada pelo juiz."
+  },
+  {
+    "question": "Homem de 71 anos, diabético e hipertenso, tem vertigem contínua há 8 horas, com vômitos intensos. O nistagmo é horizontal e bate sempre para o mesmo lado, o teste de cobertura alternada não mostra desvio e o impulso cefálico é normal para os dois lados. Qual a interpretação?",
+    "options": [
+      "Impulso cefálico normal na vertigem aguda sugere AVC: enviar ao PS",
+      "Padrão periférico, porque o nistagmo é horizontal e unidirecional",
+      "Neurite vestibular, porque vômitos intensos indicam origem periférica",
+      "Exame tranquilizador, pois o impulso normal afasta lesão do labirinto"
+    ],
+    "correctIndex": 0,
+    "explanation": "(MFC · Tontura) Na síndrome vestibular aguda, impulso cefálico normal é sinal de alarme: labirinto e nervo íntegros significam que a vertigem vem do sistema nervoso central — um único componente central no HINTS basta para suspeitar de AVC de fossa posterior, ainda mais em idoso com fatores de risco vascular. Náusea e vômitos intensos não diferenciam periférico de central."
+  },
+  {
+    "question": "Um hipolipemiante tem risco relativo de 0,75 para infarto em 10 anos, igual em todos os subgrupos. O paciente A tem risco basal de 40% em 10 anos; o paciente B, de 4%. Qual o NNT para cada um?",
+    "options": [
+      "NNT de 10 para A e NNT de 100 para B",
+      "NNT de 25 para A e NNT de 25 para B",
+      "NNT de 100 para A e NNT de 10 para B",
+      "NNT de 4 para A e NNT de 4 para B"
+    ],
+    "correctIndex": 0,
+    "explanation": "(MFC · Saúde baseada em evidências) Com RR de 0,75 a RRR é de 25% para os dois, mas a RRA depende do risco basal: em A, 25% de 40% = 10 pontos percentuais (NNT = 1 ÷ 0,10 = 10); em B, 25% de 4% = 1 ponto percentual (NNT = 1 ÷ 0,01 = 100). O mesmo remédio rende muito benefício a quem tem risco alto e quase nenhum a quem tem risco baixo — por isso a decisão compartilhada usa números absolutos."
+  },
+  {
+    "question": "Homem de 52 anos, que bebia diariamente, parou há dois dias. A esposa o traz à UBS porque está confuso, anda cambaleando e tem movimentos oculares anormais; está desnutrido. Qual a conduta?",
+    "options": [
+      "Suspeitar de encefalopatia de Wernicke: tiamina e urgência",
+      "Abstinência leve: diazepam oral em casa e retorno em uma semana",
+      "Intoxicação residual: observar em casa e reavaliar em 24 horas",
+      "Delirium tremens tardio: haloperidol isolado e alta para casa"
+    ],
+    "correctIndex": 0,
+    "explanation": "(MFC · Álcool e drogas) Confusão, ataxia e alteração ocular em quem bebe muito e está desnutrido compõem a suspeita de encefalopatia de Wernicke, que exige tiamina e encaminhamento à urgência — confusão, por si só, já exclui o manejo ambulatorial da abstinência. Antipsicótico isolado não trata a abstinência."
+  },
+  {
+    "question": "A equipe de Consultório na Rua aborda uma mulher de 26 anos, em situação de rua, com gestação de cerca de 20 semanas e nenhuma consulta de pré-natal. Ela usa crack de forma intermitente. Qual a conduta da equipe?",
+    "options": [
+      "Iniciar o pré-natal e vinculá-la à UBS, sem exigir abstinência",
+      "Encaminhá-la ao CAPS AD, já que drogas são o foco da equipe",
+      "Exigir documento e endereço antes de abrir o cartão da gestante",
+      "Orientar que procure a maternidade apenas no fim da gestação"
+    ],
+    "correctIndex": 0,
+    "explanation": "(MFC · Situação de rua) O Consultório na Rua é equipe da atenção primária que oferece atenção integral — não só cuidado ao uso de drogas — e faz ações compartilhadas com a UBS; o cuidado segue a redução de danos, sem condicionar nada à abstinência. Documento e endereço não podem ser exigidos, e cada contato deve ser aproveitado (testagem rápida, vacinas), porque talvez não haja outro."
+  },
+  {
+    "question": "Menino de 4 anos com anemia falciforme, acompanhado pela equipe e pelo hemocentro, tem hemoglobina basal de 8 g/dL, sem sinal de sangramento. Um profissional sugere iniciar sulfato ferroso. Qual a orientação correta?",
+    "options": [
+      "Não dar ferro de rotina: a anemia é hemolítica; manter ácido fólico",
+      "Iniciar ferro oral por três meses, pois hemoglobina de 8 é ferropenia",
+      "Suspender a penicilina profilática e iniciar ferro por via venosa",
+      "Transfundir todo mês para manter a hemoglobina acima de 11 g/dL"
+    ],
+    "correctIndex": 0,
+    "explanation": "(MFC · Saúde da população negra) Na doença falciforme a anemia é hemolítica crônica, e ferro de rotina não está indicado; a rotina inclui ácido fólico, penicilina profilática até os 5 anos, vacinas do CRIE e Doppler transcraniano anual dos 2 aos 16 anos. Suspender a penicilina antes dos 5 anos tira a proteção contra a sepse pneumocócica da asplenia funcional."
+  },
+  {
+    "question": "Homem de 31 anos, com dois filhos, decide hoje fazer vasectomia; a esposa concorda. Ele quer operar na semana seguinte e abandonar o preservativo logo após a cirurgia. Qual a orientação?",
+    "options": [
+      "Aguardar 60 dias da decisão e usar outro método até o espermograma",
+      "Operar já, pois tem mais de 21 anos e a esposa assinou a concordância",
+      "Aguardar 60 dias e liberar o sexo sem proteção logo após a cirurgia",
+      "Só operar aos 35 anos, idade mínima para a esterilização voluntária"
+    ],
+    "correctIndex": 0,
+    "explanation": "(MFC · Saúde do homem) A Lei 14.443/2022 exige prazo mínimo de 60 dias entre a manifestação da vontade e a cirurgia (com 21 anos ou dois filhos vivos, sem exigir aval do cônjuge). Depois da vasectomia, outro método deve ser usado até o espermograma confirmar azoospermia."
+  },
+  {
+    "question": "Família venezuelana, sem documentos regularizados, mora no território e procura a UBS para vacinar os filhos. A recepcionista sugere \"avisar a Polícia Federal\" antes de cadastrar. Qual a orientação correta à equipe?",
+    "options": [
+      "Cadastrar e atender: a equipe não faz fiscalização migratória",
+      "Atender só a urgência até a família regularizar a situação",
+      "Avisar a Polícia Federal, mas vacinar as crianças no mesmo dia",
+      "Exigir o protocolo de refúgio antes de emitir o Cartão SUS"
+    ],
+    "correctIndex": 0,
+    "explanation": "(MFC · Migração e refúgio) A universalidade do SUS não depende de nacionalidade nem de situação migratória: a falta de documento não impede atendimento, cadastro nem Cartão Nacional de Saúde, e a Lei de Migração garante acesso a serviços sem discriminação. A equipe não fiscaliza migração — denunciar rompe o vínculo, e o medo de deportação já é uma das principais barreiras de acesso."
+  },
+  {
+    "question": "Na consulta de puericultura de um lactente de 5 meses, o teste do reflexo vermelho mostra reflexo branco (leucocoria) no olho esquerdo; o teste feito na maternidade tinha sido normal. Qual a conduta?",
+    "options": [
+      "Encaminhar com prioridade ao oftalmologista: retinoblastoma ou catarata",
+      "Tranquilizar, pois o teste normal na maternidade já afasta doença ocular",
+      "Repetir o teste só na consulta dos 12 meses, quando o olho amadurece",
+      "Pedir ultrassom de crânio por suspeita de síndrome congênita do Zika"
+    ],
+    "correctIndex": 0,
+    "explanation": "(MFC · Pessoa com deficiência) O teste do olhinho (reflexo vermelho) rastreia catarata congênita, retinoblastoma e glaucoma, e por isso é repetido nas consultas — um exame normal na maternidade não afasta alteração que aparece depois. Leucocoria é reflexo anormal e pede avaliação oftalmológica com prioridade."
+  },
+  {
+    "question": "Pelo quadro de Jamoulle, a prevenção quaternária se dirige à pessoa que se sente doente sem que o médico identifique doença. Qual destas condutas é um exemplo dela?",
+    "options": [
+      "Não pedir tomografia na cefaleia tensional típica, explicando o motivo",
+      "Vacinar o idoso saudável contra a influenza na campanha de outono",
+      "Pedir mamografia de rastreio para mulher assintomática de 55 anos",
+      "Indicar reabilitação motora a quem tem sequela de AVC isquêmico"
+    ],
+    "correctIndex": 0,
+    "explanation": "(MFC · Transtorno mental comum) Prevenção quaternária protege da sobremedicalização quem se sente doente sem doença identificável — e não é \"não fazer nada\": explicação, escuta e seguimento substituem o exame que só traria risco. Vacinação é prevenção primária, mamografia de rastreio é secundária e reabilitação é terciária."
+  },
+  {
+    "question": "Mulher de 76 anos teve neurite vestibular há cinco semanas e desde então toma dimenidrinato três vezes ao dia. A vertigem intensa passou, mas ela segue instável, sonolenta e caiu no banheiro. Qual a conduta?",
+    "options": [
+      "Suspender o supressor vestibular e indicar reabilitação vestibular",
+      "Trocar o dimenidrinato por flunarizina para uso contínuo prolongado",
+      "Manter o dimenidrinato até a tontura desaparecer por completo",
+      "Associar benzodiazepínico à noite para reduzir a instabilidade"
+    ],
+    "correctIndex": 0,
+    "explanation": "(MFC · Tontura) Supressores vestibulares servem só para alívio por poucos dias na crise; o uso prolongado atrasa a compensação central, seda e aumenta quedas e confusão no idoso. Na neurite, a recuperação depende da compensação central, acelerada pela mobilização e pela reabilitação vestibular. Flunarizina e benzodiazepínico também são supressores — trocar um por outro mantém o problema."
+  },
+  {
+    "question": "A equipe de Saúde da Família quer saber quantos dos hipertensos cadastrados no território estão com a pressão controlada neste momento, revisando os prontuários num único corte de tempo. Que desenho de estudo é esse?",
+    "options": [
+      "Estudo transversal, que mede a prevalência num momento",
+      "Estudo de coorte, que acompanha do fator até o desfecho",
+      "Estudo de caso-controle, que parte de quem tem o desfecho",
+      "Ensaio clínico, que compara grupos alocados ao acaso"
+    ],
+    "correctIndex": 0,
+    "explanation": "(MFC · Saúde baseada em evidências) Quantos têm uma condição num dado momento é pergunta de prevalência, respondida pelo estudo transversal — um retrato único, que não estabelece sequência temporal. A coorte acompanha pessoas no tempo e mede incidência (prognóstico, etiologia); o caso-controle parte do desfecho e serve para doença rara ou de latência longa."
+  },
+  {
+    "question": "Universitário de 21 anos responde ao ASSIST na UBS: o escore é de risco moderado para maconha e de risco baixo para álcool e tabaco. Qual a conduta indicada?",
+    "options": [
+      "Intervenção breve para a maconha e orientação para álcool e tabaco",
+      "Encaminhar ao CAPS AD para tratar a dependência da maconha",
+      "Só orientação geral, pois nenhuma substância teve risco alto",
+      "Intervenção breve igual para as três, já que o escore é global"
+    ],
+    "correctIndex": 0,
+    "explanation": "(MFC · Álcool e drogas) O ASSIST dá um escore por substância, e cada faixa tem sua conduta: risco baixo pede orientação, moderado pede intervenção breve e alto pede intervenção breve com encaminhamento para avaliação e tratamento. Risco moderado não é dependência — não há motivo para encaminhar ao CAPS AD agora."
+  },
+  {
+    "question": "Homem de 44 anos em situação de rua tem tuberculose pulmonar confirmada pelo teste rápido molecular, sensível à rifampicina. Além de iniciar o esquema básico com tratamento diretamente observado, qual medida é indicada?",
+    "options": [
+      "Notificar o caso e oferecer testagem rápida para HIV",
+      "Internar até negativar o escarro, pelo risco de abandono",
+      "Exigir endereço fixo antes de notificar e dar o remédio",
+      "Aguardar o resultado da cultura para começar o esquema"
+    ],
+    "correctIndex": 0,
+    "explanation": "(MFC · Situação de rua) Diante da tuberculose confirmada, a rede notifica o caso, oferece testagem para HIV e avalia os contatos possíveis; a cultura com teste de sensibilidade é colhida, mas não atrasa o início do 2RHZE/4RH com TDO. A adesão vem do TDO onde for possível (UBS, eCR, abrigo), dos incentivos e da assistência social — sem exigir endereço."
+  },
+  {
+    "question": "Adolescente negra de 15 anos, em consulta por acne, conta que alisa o cabelo desde os 8 anos porque \"cabelo crespo é cabelo ruim\" e que se acha \"feia por ser escura\". Que dimensão do racismo essa fala mais bem ilustra?",
+    "options": [
+      "Racismo internalizado",
+      "Racismo institucional",
+      "Racismo interpessoal",
+      "Racismo estrutural"
+    ],
+    "correctIndex": 0,
+    "explanation": "(MFC · Saúde da população negra) Racismo internalizado é a incorporação, pela própria pessoa discriminada, dos estigmas sobre o seu grupo. O institucional aparece em normas, rotinas e resultados de uma organização; o interpessoal, no preconceito no contato direto; o estrutural, na organização econômica e histórica que produz desigualdade sem agressor identificável. O racismo vivido também é fonte de sofrimento psíquico e merece escuta."
+  },
+  {
+    "question": "Gestante de 24 semanas tem sífilis diagnosticada no pré-natal. O parceiro, que teve relação com ela há um mês, vem à UBS assintomático e tem teste rápido para sífilis não reagente. Qual a conduta para ele?",
+    "options": [
+      "Tratar com penicilina benzatina mesmo com o teste não reagente",
+      "Dispensar o tratamento, pois o teste rápido veio não reagente",
+      "Repetir o teste em 90 dias e tratar só se ficar reagente",
+      "Tratar apenas se ele tiver lesão genital ao exame físico"
+    ],
+    "correctIndex": 0,
+    "explanation": "(MFC · Saúde do homem) Parceiro exposto nos últimos 90 dias recebe tratamento mesmo com teste negativo; tratar o parceiro evita a reinfecção da gestante e a sífilis congênita. É o eixo paternidade e cuidado da PNAISH na prática, pelo Pré-Natal do Parceiro."
+  },
+  {
+    "question": "Um casal de apátridas, que vive no Brasil há três anos, tem um filho nascido numa maternidade de Manaus. Qual a nacionalidade da criança?",
+    "options": [
+      "Brasileira, pelo critério do solo adotado no Brasil",
+      "Apátrida, pois herda a condição jurídica dos pais",
+      "A do país de origem dos avós, pelo critério do sangue",
+      "Indefinida até que o CONARE decida sobre o caso"
+    ],
+    "correctIndex": 0,
+    "explanation": "(MFC · Migração e refúgio) O Brasil adota o critério do solo: toda criança nascida no país é brasileira, ainda que filha de estrangeiros ou de apátridas — ela não nasce apátrida. A Lei de Migração também criou procedimento para reconhecer a apatridia dos pais e facilitar a naturalização deles."
+  },
+  {
+    "question": "Menino de 20 meses, na consulta de puericultura: a mãe conta que ele não aponta para mostrar objetos, raramente atende quando chamado pelo nome e não imita gestos. Qual instrumento de triagem é indicado nessa idade?",
+    "options": [
+      "M-CHAT-R/F, que rastreia risco de TEA de 16 a 30 meses",
+      "PHQ-9, que rastreia sintomas depressivos na criança",
+      "Teste do pezinho ampliado, que inclui triagem do autismo",
+      "Nenhum: triagem de TEA só se indica após os 3 anos"
+    ],
+    "correctIndex": 0,
+    "explanation": "(MFC · Pessoa com deficiência) Não apontar, não atender pelo nome e não imitar são sinais de risco para TEA; o M-CHAT-R/F é usado entre 16 e 30 meses, e a Lei 13.438/2017 obriga aplicar instrumento de risco ao desenvolvimento psíquico nos primeiros 18 meses. A estimulação precoce não espera o diagnóstico fechado, e a pessoa com TEA é pessoa com deficiência para todos os efeitos legais (Lei 12.764/2012)."
+  },
+  {
+    "question": "Jovem de 23 anos é trazido pela mãe à UBS: há dois meses ouve vozes que o ameaçam, isolou-se e parou de trabalhar. Não há agitação, intoxicação nem risco iminente. O município tem CAPS II. Onde e como ele deve ser cuidado?",
+    "options": [
+      "No CAPS, de porta aberta, com a UBS seguindo junto no cuidado",
+      "Só na UBS, com antipsicótico e retorno agendado em seis meses",
+      "Em hospital psiquiátrico, por se tratar do primeiro surto psicótico",
+      "No ambulatório de psiquiatria, com alta da equipe de Saúde da Família"
+    ],
+    "correctIndex": 0,
+    "explanation": "(MFC · Transtorno mental comum) Psicose é transtorno grave, cuidado no CAPS — porta aberta, sem exigir encaminhamento —, enquanto a UBS segue acompanhando, porque a RAPS é rede, não escada. Sem risco iminente, não há indicação de urgência nem de internação, que pela Lei 10.216 só cabe quando os recursos extra-hospitalares forem insuficientes."
+  },
+  {
+    "question": "Homem de 63 anos, etilista há 30 anos, queixa-se de \"tontura\" ao caminhar, sem giro. Anda com base alargada e já é instável de olhos abertos, com Romberg negativo e sensibilidade preservada nos pés. O tipo de tontura e a origem provável são:",
+    "options": [
+      "Desequilíbrio de origem cerebelar, a ser avaliado pela neurologia",
+      "Desequilíbrio proprioceptivo, típico da neuropatia periférica",
+      "Vertigem periférica por VPPB, a tratar com manobra de reposição",
+      "Pré-síncope por hipotensão ortostática ligada ao uso de álcool"
+    ],
+    "correctIndex": 0,
+    "explanation": "(MFC · Tontura) Instabilidade sem giro é desequilíbrio. Quando ela já existe de olhos abertos e não piora ao fechá-los (Romberg negativo), com sensibilidade preservada, a origem provável é cerebelar — e desequilíbrio com sinais cerebelares é caso para a neurologia. Romberg positivo, ao contrário, indica déficit proprioceptivo, como na neuropatia diabética."
+  },
+  {
+    "question": "Uma revisão sistemática reúne cinco ensaios randomizados bem conduzidos sobre o mesmo tratamento: dois mostram grande benefício, dois mostram dano e um é neutro, com alta heterogeneidade. Pelo GRADE, qual o ponto de partida da certeza e o motivo para rebaixá-la?",
+    "options": [
+      "Começa alta e é rebaixada por inconsistência entre os estudos",
+      "Começa baixa e é rebaixada por inconsistência entre os estudos",
+      "Começa alta e é rebaixada por evidência indireta da população",
+      "Começa moderada e é rebaixada por viés de publicação"
+    ],
+    "correctIndex": 0,
+    "explanation": "(MFC · Saúde baseada em evidências) No GRADE, ensaios randomizados começam com certeza alta e observacionais com certeza baixa. Resultados discordantes entre os estudos, com alta heterogeneidade, são inconsistência — um dos cinco motivos de rebaixamento, ao lado de risco de viés, evidência indireta, imprecisão e viés de publicação. Nada sugere população diferente da que interessa, o que seria evidência indireta."
+  },
+  {
+    "question": "Homem de 44 anos com epilepsia em uso de carbamazepina fuma 30 cigarros por dia, acende o primeiro logo ao acordar e tem Fagerström de 8. Decidiu parar. Pelo protocolo do SUS, qual farmacoterapia associar à abordagem comportamental?",
+    "options": [
+      "Adesivo de nicotina a partir do dia D, combinado à goma ou pastilha",
+      "Bupropiona iniciada de uma a duas semanas antes da data do dia D",
+      "Vareniclina em monoterapia, por ser o fármaco do elenco do SUS",
+      "Cigarro eletrônico com redução gradual da concentração de nicotina"
+    ],
+    "correctIndex": 0,
+    "explanation": "(MFC · Álcool e drogas) Ele tem indicação de farmacoterapia (20 ou mais cigarros por dia, Fagerström de 5 ou mais), mas a bupropiona é contraindicada na epilepsia. Resta a reposição de nicotina: adesivo a partir do dia D, e a combinação com goma ou pastilha é mais eficaz que uma forma isolada. A vareniclina não integra o elenco do protocolo do SUS, e o cigarro eletrônico tem venda proibida e não é tratamento."
+  }
+];
+
+var LETTERS = ['A','B','C','D','E','F'];
+var SHUFFLE = true, LOCK = true;
+
+var S = { view:'home', started:false, finished:false, i:0, order:[], answers:[], open:{}, filter:'all', warn:false, chat:{} };
+
+function esc(s){ return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
+function pad(n){ return String(n).padStart(2,'0'); }
+
+function build(){
+  var qs = QUIZ.map(function(q,id){ return { question:q.question, options:q.options.slice(), correctIndex:q.correctIndex, explanation:q.explanation, image:q.image, imageCaption:q.imageCaption, id:id }; });
+  if (!SHUFFLE) return qs;
+  for (var i=qs.length-1;i>0;i--){ var j=Math.floor(Math.random()*(i+1)); var t=qs[i]; qs[i]=qs[j]; qs[j]=t; }
+  return qs.map(function(q){
+    var correct = q.options[q.correctIndex], o = q.options.slice();
+    for (var i=o.length-1;i>0;i--){ var j=Math.floor(Math.random()*(i+1)); var t=o[i]; o[i]=o[j]; o[j]=t; }
+    q.options = o; q.correctIndex = o.indexOf(correct); return q;
+  });
+}
+
+/* ── ações ─────────────────────────────────────────────────────────────────── */
+var A = {
+  home:      function(){ S.view='home'; S.started=false; S.finished=false; up(0); },
+  resumo:    function(){ S.view='resumo'; up(0); },
+  start:     function(){ var o=build(); S.view='quiz'; S.started=true; S.finished=false; S.i=0; S.order=o;
+                         S.answers=new Array(o.length).fill(null); S.open={}; S.filter='all'; S.warn=false; up(0); },
+  restart:   function(){ A.start(); },
+  sair:      function(){ S.view='home'; S.started=false; up(0); },   // guarda as respostas
+  retomar:   function(){ S.view='quiz'; S.started=true; S.finished=false; S.warn=false; up(0); },
+  go:        function(n){ if(n<0||n>S.order.length-1) return; S.i=n; S.warn=false; render(); },
+  jump:      function(n){ if(S.finished){ S.finished=false; S.i=n; S.warn=false; } else { if(n<0||n>S.order.length-1) return; S.i=n; S.warn=false; } up(0,'smooth'); },
+  pick:      function(n){ if(LOCK && S.answers[S.i]!==null) return; S.answers[S.i]=n; render(); },
+  prev:      function(){ A.go(S.i-1); },
+  next:      function(){ if(S.i<S.order.length-1) A.go(S.i+1); else A.finish(); },
+  finish:    function(){ var b=S.answers.filter(function(a){return a===null}).length;
+                         if(b>0 && !S.warn){ S.warn=true; render(); return; } S.finished=true; S.warn=false; up(0); },
+  force:     function(){ S.finished=true; S.warn=false; up(0); },
+  gotoBlank: function(){ var n=S.answers.findIndex(function(a){return a===null}); if(n>=0) A.go(n); },
+  back:      function(){ S.finished=false; S.warn=false; up(0); },
+  filter:    function(k){ S.filter=k; render(); },
+  toggle:    function(n){ S.open[n]=!S.open[n]; render(); },
+  toggleAll: function(){ var r=reviewList(), all=r.length>0 && r.every(function(x){return S.open[x.idx]});
+                         S.open={}; if(!all) r.forEach(function(x){ S.open[x.idx]=true; }); render(); }
+};
+function up(top, beh){ render(); window.scrollTo({ top: top||0, behavior: beh||'auto' }); }
+
+/* Aberto por duplo clique (file://) volta para o indice local; servido pela web,
+   volta para o publicado. Os dois listam os mesmos materiais. */
+function idxHref(){
+  var local = (typeof location !== 'undefined' && location.protocol === 'file:');
+  return local ? '../index_local.html' : '../index.html';
+}
+function emAndamento(){
+  return S.order.length > 0 && !S.finished &&
+         S.answers.some(function(a){ return a !== null; });
+}
+
+/* ── header ────────────────────────────────────────────────────────────────── */
+function renderHeader(){
+  var mono = "font-family:'IBM Plex Mono',monospace";
+  var left =
+    '<div style="min-width:0">' +
+      '<div style="display:flex;align-items:center;gap:8px;'+mono+';font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:#8a8578">' +
+        '<a href="'+idxHref()+'" class="h-ink" style="color:#2b57cc;text-decoration:none;white-space:nowrap">\u2190 Materiais</a>' +
+        '<span style="color:#d3cec4">/</span>' +
+        '<span style="overflow:hidden;text-overflow:ellipsis;white-space:nowrap">'+esc(EYEBROW)+'</span>' +
+      '</div>' +
+      '<h1 style="margin:1px 0 0;font-family:\'Newsreader\',Georgia,serif;font-size:20px;font-weight:500;letter-spacing:-.01em;line-height:1.15">'+esc(TITLE)+'</h1>' +
+    '</div>';
+
+  var right = '';
+  if (S.view === 'quiz' && S.started) {
+    var hit = counts().hit;
+    right = '<div style="display:flex;align-items:center;gap:10px;flex-shrink:0">' +
+              '<button type="button" data-act="sair" class="h-line" style="background:none;border:1px solid #ddd8ce;border-radius:9px;padding:6px 11px;'+mono+';font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;color:#5b6478;cursor:pointer;transition:border-color .15s ease">Sair</button>' +
+              '<div style="display:flex;align-items:center;gap:6px">' +
+                '<span style="'+mono+';font-size:15px;font-weight:600;letter-spacing:-.02em">'+hit+'</span>' +
+                '<span style="'+mono+';font-size:11px;color:#8a8578">/ '+S.order.length+'</span>' +
+              '</div></div>';
+  } else if (S.view !== 'home') {
+    right = '<button type="button" data-act="home" class="h-line" style="flex-shrink:0;background:none;border:1px solid #ddd8ce;border-radius:9px;padding:7px 13px;'+mono+';font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:#5b6478;cursor:pointer;transition:border-color .15s ease">← Início</button>';
+  }
+
+  var html = '<div style="display:flex;align-items:baseline;justify-content:space-between;gap:12px;margin-bottom:'+(S.view==='quiz'&&S.started?'10px':'2px')+'">'+left+right+'</div>';
+
+  if (S.view === 'quiz' && S.started) {
+    var c = counts();
+    var rail = S.order.map(function(q,n){
+      var a = S.answers[n], cur = n===S.i && !S.finished, bg = '#d3cec4';
+      if (a!==null) bg = (a===q.correctIndex) ? '#2e7d55' : '#c04437';
+      if (cur && a===null) bg = '#121a2b';
+      var st = a===null ? 'em branco' : (a===q.correctIndex ? 'correta' : 'incorreta');
+      return '<button type="button" data-act="jump" data-n="'+n+'" title="Questão '+(n+1)+' — '+st+'" aria-label="Questão '+(n+1)+' — '+st+'" style="flex:1 1 0;min-width:0;background:none;border:0;padding:13px 0;margin:0;cursor:pointer;display:flex;align-items:center;justify-content:center">' +
+             '<span style="display:block;width:100%;border-radius:99px;transition:height .18s ease,background .18s ease,box-shadow .18s ease;height:'+(cur?'17px':'9px')+';background:'+bg+';box-shadow:'+(cur?'0 0 0 3px rgba(18,26,43,.13)':'none')+'"></span></button>';
+    }).join('');
+    html += '<div><div style="display:flex;align-items:center;gap:3px">'+rail+'</div>' +
+            '<div style="display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:-2px">' +
+              '<div style="'+mono+';font-size:11px;letter-spacing:.04em;color:#5b6478">Questão '+pad(S.i+1)+' / '+S.order.length+'</div>' +
+              '<div style="display:flex;align-items:center;gap:12px;'+mono+';font-size:10.5px;color:#8a8578">' +
+                dot('#2e7d55',c.hit)+dot('#c04437',c.miss)+dot('#d3cec4',c.blank) +
+              '</div></div></div>';
+  }
+  document.getElementById('hdr').innerHTML = html;
+}
+function dot(color,n){ return '<span style="display:flex;align-items:center;gap:5px"><span style="width:7px;height:7px;border-radius:99px;background:'+color+';display:block"></span>'+n+'</span>'; }
+
+function counts(){
+  var hit=0, miss=0, blank=0;
+  S.answers.forEach(function(a,n){
+    if (a===null) blank++;
+    else if (S.order[n] && a===S.order[n].correctIndex) hit++;
+    else miss++;
+  });
+  return { hit:hit, miss:miss, blank:blank, total:S.order.length };
+}
+
+/* ── tela inicial ──────────────────────────────────────────────────────────── */
+function renderHome(){
+  var mono = "font-family:'IBM Plex Mono',monospace";
+  var secoes = (document.getElementById('resumoSrc').textContent.match(/<h2/g)||[]).length;
+  var cell = function(v,l){
+    return '<div style="background:#faf9f6;padding:16px 14px">' +
+      '<div style="'+mono+';font-size:22px;font-weight:500;letter-spacing:-.03em">'+v+'</div>' +
+      '<div style="'+mono+';font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:#8a8578;margin-top:3px">'+l+'</div></div>';
+  };
+  var card = function(act,tag,titulo,desc,cta){
+    return '<button type="button" data-act="'+act+'" class="h-card" style="display:flex;flex-direction:column;align-items:flex-start;gap:0;text-align:left;background:#fff;border:1px solid #e4e0d8;border-radius:18px;padding:24px 22px;cursor:pointer;transition:border-color .16s ease,transform .14s ease;box-shadow:0 1px 2px rgba(18,26,43,.04),0 12px 28px -20px rgba(18,26,43,.18)">' +
+      '<div style="'+mono+';font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:#2b57cc;margin-bottom:12px">'+tag+'</div>' +
+      '<div style="font-family:\'Newsreader\',Georgia,serif;font-size:26px;font-weight:500;letter-spacing:-.02em;line-height:1.15;margin-bottom:8px">'+titulo+'</div>' +
+      '<div style="font-size:14px;line-height:1.6;color:#5b6478;margin-bottom:18px;text-wrap:pretty">'+desc+'</div>' +
+      '<div style="'+mono+';font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:#121a2b">'+cta+'</div></button>';
+  };
+
+  document.getElementById('stage').innerHTML =
+    '<section style="padding:56px 0 0;animation:qFade .3s ease">' +
+      '<div style="'+mono+';font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:#2b57cc;margin-bottom:16px">Material de revisão</div>' +
+      '<h2 style="font-family:\'Newsreader\',Georgia,serif;font-size:40px;line-height:1.08;font-weight:400;letter-spacing:-.025em;margin:0 0 18px;text-wrap:pretty">'+esc(SUBTITLE)+'</h2>' +
+      '<p style="font-size:15.5px;line-height:1.65;color:#5b6478;margin:0 0 30px;max-width:52ch;text-wrap:pretty">'+esc(INTRO)+'</p>' +
+      '<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(108px,1fr));gap:1px;background:#e4e0d8;border:1px solid #e4e0d8;border-radius:14px;overflow:hidden;margin-bottom:32px">' +
+        cell(QUIZ.length,'Questões') + cell(secoes,'Seções') + cell('~'+Math.round(QUIZ.length*0.75),'Minutos') +
+      '</div>' +
+      '<div class="home-grid" style="display:grid;grid-template-columns:1fr 1fr;gap:12px">' +
+        (emAndamento()
+          ? card('retomar','Em andamento','Quiz',
+                 'Você parou na questão '+pad(S.i+1)+' de '+S.order.length+', com '+
+                 (S.order.length-counts().blank)+' respondida'+((S.order.length-counts().blank)===1?'':'s')+
+                 '. Suas respostas continuam guardadas.','Retomar →')
+          : card('start','Praticar','Quiz', QUIZ.length+' questões de múltipla escolha, com explicação assim que você responde e gabarito comentado no fim.','Começar →')) +
+        card('resumo','Estudar','Resumo','O conteúdo da aula em texto corrido, organizado em '+secoes+' seções para leitura antes da prova.','Ler →') +
+      '</div>' +
+      '<div style="margin-top:26px;display:flex;flex-wrap:wrap;align-items:center;gap:8px 18px;'+mono+';font-size:11px;color:#8a8578">' +
+        '<span>← →&nbsp; navegar</span><span>1–'+maxOpts()+'&nbsp; responder</span><span>Enter&nbsp; avançar</span>' +
+        (emAndamento() ? '<button type="button" data-act="start" class="h-ink" style="background:none;border:0;padding:0;'+mono+';font-size:11px;color:#8a8578;cursor:pointer;text-decoration:underline;text-underline-offset:3px">recomeçar do zero</button>' : '') +
+        '</div>' +
+    '</section>';
+}
+function maxOpts(){ return QUIZ.reduce(function(m,q){ return Math.max(m,q.options.length); },0); }
+
+/* ── resumo ────────────────────────────────────────────────────────────────── */
+function renderResumo(){
+  document.getElementById('stage').innerHTML =
+    '<section style="padding:34px 0 0;animation:qFade .3s ease">' +
+      '<div style="font-family:\'IBM Plex Mono\',monospace;font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:#2b57cc;margin-bottom:14px">Resumo</div>' +
+      '<div class="rsm">' + document.getElementById('resumoSrc').textContent + '</div>' +
+      '<div style="display:flex;flex-wrap:wrap;gap:9px;margin-top:38px;padding-top:24px;border-top:1px solid #e4e0d8">' +
+        '<button type="button" data-act="start" class="h-darkflat" style="background:#121a2b;color:#f5f3ef;border:0;border-radius:11px;padding:13px 24px;font-size:14px;font-weight:500;cursor:pointer;transition:background .16s ease">Fazer o quiz →</button>' +
+        '<button type="button" data-act="home" class="h-line" style="background:none;border:1px solid #ddd8ce;border-radius:11px;padding:13px 22px;font-size:14px;cursor:pointer;transition:border-color .15s ease">Voltar ao início</button>' +
+      '</div></section>';
+}
+
+/* imagem da questao — data URI ja resolvida pelo montar_quiz.py */
+function figura(q, cls){
+  if (!q.image) return '';
+  return '<figure class="fig'+(cls?' '+cls:'')+'"><img src="'+q.image+'" alt="'+esc(q.imageCaption||'Imagem da questão')+'">' +
+         (q.imageCaption ? '<figcaption>'+esc(q.imageCaption)+'</figcaption>' : '') + '</figure>';
+}
+
+/* ── questão ───────────────────────────────────────────────────────────────── */
+function renderQuestion(){
+  var mono = "font-family:'IBM Plex Mono',monospace";
+  var q = S.order[S.i], ans = S.answers[S.i], reveal = ans !== null;
+
+  var status = 'Não respondida', sColor = '#8a8578';
+  if (reveal) { var ok = ans===q.correctIndex; status = ok?'Você acertou':'Você errou'; sColor = ok?'#2e7d55':'#c04437'; }
+
+  var opts = q.options.map(function(text,n){
+    var isC = n===q.correctIndex, isMine = n===ans;
+    var bd='#e4e0d8', bg='#fff', fg='#121a2b', bBg='#f2efe9', bFg='#8a8578', mark='', mColor='', op='1', hbd='#2b57cc';
+    if (reveal) {
+      op = (isC||isMine) ? '1' : '.62';
+      if (isC)               { bd='#8fc7a7'; bg='#eef7f1'; fg='#1f5c3e'; bBg='#2e7d55'; bFg='#fff'; mark='✓'; mColor='#2e7d55'; }
+      if (isMine && !isC)    { bd='#e0a49a'; bg='#fdf0ee'; fg='#8f2f25'; bBg='#c04437'; bFg='#fff'; mark='✕'; mColor='#c04437'; }
+    } else if (isMine)       { bd='#121a2b'; bg='#f7f6f2'; bBg='#121a2b'; bFg='#f5f3ef'; }
+    var locked = reveal && LOCK;
+    return '<button type="button" data-act="pick" data-n="'+n+'" class="h-opt'+(locked?' locked':'')+'" style="--hbd:'+hbd+';display:flex;gap:13px;align-items:flex-start;width:100%;text-align:left;padding:14px 15px;border-radius:13px;font-size:15px;line-height:1.5;transition:border-color .15s ease,background .15s ease,transform .12s ease;border:1.5px solid '+bd+';background:'+bg+';color:'+fg+';cursor:'+(locked?'default':'pointer')+';opacity:'+op+'">' +
+      '<span style="flex-shrink:0;width:24px;height:24px;border-radius:7px;display:flex;align-items:center;justify-content:center;'+mono+';font-size:11.5px;font-weight:600;margin-top:1px;background:'+bBg+';color:'+bFg+'">'+LETTERS[n]+'</span>' +
+      '<span style="flex:1;min-width:0;text-wrap:pretty">'+esc(text)+'</span>' +
+      (mark ? '<span style="flex-shrink:0;'+mono+';font-size:14px;font-weight:600;margin-top:1px;color:'+mColor+'">'+mark+'</span>' : '') +
+      '</button>';
+  }).join('');
+
+  var expl = reveal ? '<div style="margin-top:20px;padding:16px 18px;background:#f7f6f2;border-left:2.5px solid #2b57cc;border-radius:0 12px 12px 0;animation:qFade .26s ease">' +
+      '<div style="'+mono+';font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:#2b57cc;margin-bottom:8px">Por quê</div>' +
+      '<p style="margin:0;font-size:14.5px;line-height:1.68;color:#39404f;text-wrap:pretty">'+esc(q.explanation)+'</p></div>' : '';
+
+  var blank = counts().blank;
+  var warn = S.warn ? '<div style="margin-top:14px;padding:15px 17px;background:#fdf7e9;border:1px solid #e8d5a3;border-radius:14px;animation:qFade .22s ease">' +
+      '<p style="margin:0 0 12px;font-size:14px;line-height:1.55;color:#6b5620">'+blank+(blank===1?' questão ainda está em branco.':' questões ainda estão em branco.')+' Você pode voltar nelas ou finalizar assim mesmo.</p>' +
+      '<div style="display:flex;flex-wrap:wrap;gap:8px">' +
+        '<button type="button" data-act="gotoBlank" style="background:#121a2b;color:#f5f3ef;border:0;border-radius:9px;padding:9px 16px;font-size:13px;font-weight:500;cursor:pointer">Ir para a 1ª em branco</button>' +
+        '<button type="button" data-act="force" style="background:none;color:#6b5620;border:1px solid #e8d5a3;border-radius:9px;padding:9px 16px;font-size:13px;cursor:pointer">Finalizar assim mesmo</button>' +
+      '</div></div>' : '';
+
+  var last = S.i === S.order.length-1;
+  var early = !last && (S.order.length - blank) > 0;
+
+  document.getElementById('stage').innerHTML =
+    '<section style="padding:26px 0 0">' +
+      '<article style="background:#fff;border:1px solid #e4e0d8;border-radius:18px;padding:26px 22px 24px;box-shadow:0 1px 2px rgba(18,26,43,.04),0 12px 28px -18px rgba(18,26,43,.18)">' +
+        '<div style="display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:14px">' +
+          '<div style="'+mono+';font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:#2b57cc">Questão '+pad(S.i+1)+'</div>' +
+          '<div style="'+mono+';font-size:10.5px;letter-spacing:.06em;color:'+sColor+'">'+status+'</div>' +
+        '</div>' +
+        '<h2 style="font-family:\'Newsreader\',Georgia,serif;font-size:22px;line-height:1.42;font-weight:400;letter-spacing:-.012em;margin:0 0 22px;text-wrap:pretty">'+esc(q.question)+'</h2>' +
+        figura(q, 'qfig') +
+        '<div style="display:flex;flex-direction:column;gap:9px">'+opts+'</div>' + expl +
+        (reveal ? chatBox(q, ans===q.correctIndex) : '') +
+      '</article>' + warn +
+      '<div style="display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:18px">' +
+        '<button type="button" data-act="prev" class="h-line" style="background:none;border:1px solid #ddd8ce;border-radius:11px;padding:12px 18px;font-size:14px;cursor:pointer;transition:border-color .15s ease,color .15s ease;color:'+(S.i===0?'#c4bfb4':'#121a2b')+';pointer-events:'+(S.i===0?'none':'auto')+'">← Anterior</button>' +
+        '<div style="display:flex;align-items:center;gap:8px">' +
+          (early ? '<button type="button" data-act="finish" class="h-ink" style="background:none;border:0;padding:12px 6px;'+mono+';font-size:11.5px;letter-spacing:.06em;text-transform:uppercase;color:#8a8578;cursor:pointer;text-decoration:underline;text-underline-offset:3px">Finalizar</button>' : '') +
+          '<button type="button" data-act="next" class="h-darkflat" style="background:#121a2b;color:#f5f3ef;border:0;border-radius:11px;padding:12px 22px;font-size:14px;font-weight:500;cursor:pointer;transition:background .16s ease">'+(last?'Finalizar':'Próxima →')+'</button>' +
+        '</div></div></section>';
+}
+
+/* ── resultado + gabarito comentado ────────────────────────────────────────── */
+function reviewList(){
+  return S.order.map(function(q,n){
+    var a = S.answers[n], ok = a!==null && a===q.correctIndex;
+    return { idx:n, ok:ok, blank:a===null, q:q, a:a };
+  }).filter(function(r){
+    return S.filter==='all' || (S.filter==='wrong'&&!r.ok&&!r.blank) || (S.filter==='right'&&r.ok) || (S.filter==='blank'&&r.blank);
+  });
+}
+
+function renderResult(){
+  var mono = "font-family:'IBM Plex Mono',monospace";
+  var c = counts(), pct = c.total ? Math.round(c.hit/c.total*100) : 0;
+
+  var title='Precisa revisar', msg='Releia o material com atenção e refaça o quiz — as explicações abaixo cobrem cada erro.';
+  if (pct>=90)      { title='Domínio sólido';   msg='Desempenho excelente. Confira as explicações das que escaparam e siga em frente.'; }
+  else if (pct>=70) { title='Bom desempenho';   msg='Base consistente. Revise os pontos errados abaixo para fechar as lacunas.'; }
+  else if (pct>=50) { title='Meio do caminho';  msg='Você acertou o essencial, mas há lacunas. Comece pelo filtro de erradas.'; }
+
+  var stat = function(v,l,color){
+    return '<div style="background:#faf9f6;padding:14px 10px">' +
+      '<div style="'+mono+';font-size:19px;font-weight:500;color:'+color+'">'+v+'</div>' +
+      '<div style="'+mono+';font-size:9.5px;letter-spacing:.09em;text-transform:uppercase;color:#8a8578;margin-top:2px">'+l+'</div></div>';
+  };
+
+  var fdefs = [['all','Todas',c.total],['wrong','Erradas',c.miss],['right','Certas',c.hit],['blank','Em branco',c.blank]];
+  var filters = fdefs.map(function(f){
+    var on = S.filter===f[0];
+    return '<button type="button" data-act="filter" data-k="'+f[0]+'" class="h-line" style="border-radius:99px;padding:8px 14px;font-size:13px;cursor:pointer;transition:all .15s ease;border:1px solid '+(on?'#121a2b':'#ddd8ce')+';background:'+(on?'#121a2b':'transparent')+';color:'+(on?'#f5f3ef':'#5b6478')+'">'+f[1]+' '+f[2]+'</button>';
+  }).join('');
+
+  var list = reviewList();
+  var allOpen = list.length>0 && list.every(function(r){ return S.open[r.idx]; });
+
+  var cards = list.map(function(r){
+    var numBg='#f0ede7', numFg='#8a8578';
+    if (!r.blank) { if (r.ok) { numBg='#e3f0e8'; numFg='#1f5c3e'; } else { numBg='#fbe6e2'; numFg='#8f2f25'; } }
+    var open = !!S.open[r.idx];
+    var body = '';
+    if (open) {
+      var opts = r.q.options.map(function(text,n){
+        var isC = n===r.q.correctIndex, isMine = n===r.a;
+        var bd='#eeebe4', bg='#fbfaf8', fg='#5b6478', bBg='#f0ede7', bFg='#8a8578', tag='', tBg='', tFg='';
+        if (isC)            { bd='#bcdcc9'; bg='#eef7f1'; fg='#1f5c3e'; bBg='#2e7d55'; bFg='#fff'; tag='Correta'; tBg='#d9ede1'; tFg='#1f5c3e'; }
+        if (isMine && !isC) { bd='#eec4bd'; bg='#fdf0ee'; fg='#8f2f25'; bBg='#c04437'; bFg='#fff'; tag='Sua resposta'; tBg='#f7ddd8'; tFg='#8f2f25'; }
+        if (isMine && isC)  { tag='Sua resposta ✓'; }
+        return '<div style="display:flex;gap:11px;align-items:flex-start;padding:11px 13px;border-radius:11px;font-size:14px;line-height:1.5;border:1px solid '+bd+';background:'+bg+';color:'+fg+'">' +
+          '<span style="flex-shrink:0;width:21px;height:21px;border-radius:6px;display:flex;align-items:center;justify-content:center;'+mono+';font-size:10.5px;font-weight:600;background:'+bBg+';color:'+bFg+'">'+LETTERS[n]+'</span>' +
+          '<span style="flex:1;min-width:0;text-wrap:pretty">'+esc(text)+'</span>' +
+          (tag ? '<span style="flex-shrink:0;'+mono+';font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;padding:3px 7px;border-radius:6px;margin-top:1px;background:'+tBg+';color:'+tFg+'">'+tag+'</span>' : '') +
+          '</div>';
+      }).join('');
+      body = '<div style="padding:2px 15px 18px;animation:qDrawer .2s ease">' +
+        '<div style="height:1px;background:#eeebe4;margin:0 0 16px"></div>' +
+        '<p style="font-family:\'Newsreader\',Georgia,serif;font-size:18px;line-height:1.5;margin:0 0 16px;text-wrap:pretty">'+esc(r.q.question)+'</p>' +
+        figura(r.q) +
+        '<div style="display:flex;flex-direction:column;gap:7px">'+opts+'</div>' +
+        '<div style="margin-top:16px;padding:14px 16px;background:#f7f6f2;border-left:2.5px solid #2b57cc;border-radius:0 11px 11px 0">' +
+          '<div style="'+mono+';font-size:9.5px;letter-spacing:.16em;text-transform:uppercase;color:#2b57cc;margin-bottom:7px">Por quê</div>' +
+          '<p style="margin:0;font-size:14px;line-height:1.65;color:#39404f;text-wrap:pretty">'+esc(r.q.explanation)+'</p></div>' +
+        '<button type="button" data-act="jump" data-n="'+r.idx+'" style="margin-top:14px;background:none;border:0;padding:0;'+mono+';font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:#2b57cc;cursor:pointer;text-decoration:underline;text-underline-offset:3px">Abrir no quiz →</button></div>';
+    }
+    return '<div style="background:#fff;border:1px solid '+(open?'#c9c3b6':'#e4e0d8')+';border-radius:14px;overflow:hidden;transition:border-color .15s ease">' +
+      '<button type="button" data-act="toggle" data-n="'+r.idx+'" style="display:flex;align-items:center;gap:12px;width:100%;text-align:left;background:none;border:0;padding:14px 15px;cursor:pointer">' +
+        '<span style="flex-shrink:0;width:28px;height:28px;border-radius:8px;display:flex;align-items:center;justify-content:center;'+mono+';font-size:12px;font-weight:600;background:'+numBg+';color:'+numFg+'">'+pad(r.idx+1)+'</span>' +
+        '<span style="flex:1;min-width:0;font-size:14px;line-height:1.45;color:#39404f;overflow:hidden;text-overflow:ellipsis;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical">'+esc(r.q.question)+'</span>' +
+        '<span style="flex-shrink:0;'+mono+';font-size:16px;color:#8a8578;width:16px;text-align:center">'+(open?'−':'+')+'</span>' +
+      '</button>' + body + '</div>';
+  }).join('');
+
+  document.getElementById('stage').innerHTML =
+    '<section style="padding:34px 0 0;animation:qFade .3s ease">' +
+      '<div style="'+mono+';font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:#2b57cc;margin-bottom:14px">Resultado</div>' +
+      '<h2 style="font-family:\'Newsreader\',Georgia,serif;font-size:36px;line-height:1.12;font-weight:400;letter-spacing:-.025em;margin:0 0 8px">'+title+'</h2>' +
+      '<p style="font-size:15px;line-height:1.6;color:#5b6478;margin:0 0 24px;max-width:48ch;text-wrap:pretty">'+msg+'</p>' +
+      '<div style="height:8px;border-radius:99px;background:#e4e0d8;overflow:hidden;margin-bottom:10px">' +
+        '<div style="height:100%;border-radius:99px;background:#121a2b;transition:width .7s cubic-bezier(.22,1,.36,1);width:'+pct+'%"></div></div>' +
+      '<div style="display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:#e4e0d8;border:1px solid #e4e0d8;border-radius:14px;overflow:hidden;margin-bottom:34px">' +
+        stat(c.hit,'Certas','#2e7d55')+stat(c.miss,'Erradas','#c04437')+stat(c.blank,'Branco','#8a8578')+stat(pct+'%','Aproveit.','#2b57cc') +
+      '</div>' +
+      '<div style="display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-bottom:14px">' +
+        '<h3 style="font-family:\'Newsreader\',Georgia,serif;font-size:22px;font-weight:500;letter-spacing:-.015em;margin:0">Gabarito comentado</h3>' +
+        '<button type="button" data-act="toggleAll" class="h-ink" style="background:none;border:0;padding:6px 0;'+mono+';font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:#5b6478;cursor:pointer;text-decoration:underline;text-underline-offset:3px">'+(allOpen?'Recolher tudo':'Expandir tudo')+'</button>' +
+      '</div>' +
+      '<div style="display:flex;gap:7px;flex-wrap:wrap;margin-bottom:16px">'+filters+'</div>' +
+      '<div style="display:flex;flex-direction:column;gap:8px">'+cards+'</div>' +
+      (list.length===0 ? '<div style="padding:38px 16px;text-align:center;color:#8a8578;font-size:14px;border:1px dashed #ddd8ce;border-radius:14px">Nenhuma questão neste filtro.</div>' : '') +
+      '<div style="display:flex;flex-wrap:wrap;gap:9px;margin-top:28px;padding-top:24px;border-top:1px solid #e4e0d8">' +
+        '<button type="button" data-act="restart" class="h-darkflat" style="background:#121a2b;color:#f5f3ef;border:0;border-radius:11px;padding:13px 24px;font-size:14px;font-weight:500;cursor:pointer;transition:background .16s ease">Refazer o quiz</button>' +
+        '<button type="button" data-act="back" class="h-line" style="background:none;border:1px solid #ddd8ce;border-radius:11px;padding:13px 22px;font-size:14px;cursor:pointer;transition:border-color .15s ease">Voltar às questões</button>' +
+        '<button type="button" data-act="resumo" class="h-line" style="background:none;border:1px solid #ddd8ce;border-radius:11px;padding:13px 22px;font-size:14px;cursor:pointer;transition:border-color .15s ease">Ler o resumo</button>' +
+      '</div></section>';
+}
+
+/* ── render + eventos ──────────────────────────────────────────────────────── */
+
+/* ─── Tutor DeepSeek — só local, só quando a questão foi errada ──────────────
+   A chave vem de ../deepseek_key.js, que não existe na versão publicada: online
+   o arquivo dá 404, dsOn() vira false e o chat simplesmente não é renderizado.
+   O histórico fica em S.chat[idDaQuestao] e sobrevive ao re-render do stage. */
+var DS_MODEL = 'deepseek-flash';
+var DS_URL   = 'https://api.deepseek.com/chat/completions';
+var NLJS     = String.fromCharCode(10);
+var DS_MONO  = "font-family:'IBM Plex Mono',monospace";
+var DS_SANS  = "font-family:'IBM Plex Sans',system-ui,sans-serif";
+
+function dsOn(){ return typeof window.DEEPSEEK_KEY === 'string' && window.DEEPSEEK_KEY.length > 10; }
+
+
+/* ─── markdown do chat ───────────────────────────────────────────────────────
+   O modelo responde em markdown (**negrito**, listas, `codigo`, tabelas). O texto
+   vem de fora, entao a ordem importa: ESCAPA TUDO primeiro com esc() e so depois
+   aplica formatacao — assim nenhuma tag vinda da resposta vira HTML de verdade.
+   Como esc() ja trocou > por &gt;, a citacao casa com &gt; e nao com >.
+   Trechos de codigo saem de cena por um marcador NUL, que nao pode existir
+   no texto escapado, e voltam no fim — assim ` ` protege o que esta dentro. */
+function mdIn(t){
+  var Z = String.fromCharCode(0), codes = [];
+  t = t.replace(/`([^`]+)`/g, function(_, c){
+    codes.push(c);
+    return Z + 'c' + (codes.length - 1) + Z;
+  });
+  t = t.replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>');
+  t = t.replace(/__([^_]+)__/g, '<strong>$1</strong>');
+  t = t.replace(/(^|[\s(])\*([^*\n]+)\*/g, '$1<em>$2</em>');
+  t = t.replace(/(^|[\s(])_([^_\n]+)_/g, '$1<em>$2</em>');
+  t = t.replace(/\[([^\]]+)\]\((https?:\/\/[^)\s]+)\)/g,
+    '<a href="$2" target="_blank" rel="noopener" style="color:#2b57cc">$1</a>');
+  return t.replace(new RegExp(Z + 'c([0-9]+)' + Z, 'g'), function(_, i){
+    return '<code style="' + DS_MONO + ';font-size:12px;background:#f2efe9;' +
+           'border-radius:4px;padding:1px 5px">' + codes[i] + '</code>';
+  });
+}
+
+function mdChat(txt){
+  var Z = String.fromCharCode(0);
+  var t = esc(String(txt == null ? '' : txt));
+  var blocos = [];
+  t = t.replace(/```[a-zA-Z]*\n?([\s\S]*?)```/g, function(_, c){
+    blocos.push(c.replace(/\n+$/, ''));
+    return Z + 'b' + (blocos.length - 1) + Z;
+  });
+
+  var linhas = t.split('\n'), out = [], lista = null, par = [];
+  function fechaLista(){ if (lista) { out.push('</' + lista + '>'); lista = null; } }
+  function fechaPar(){
+    if (par.length) { out.push('<p style="margin:0 0 9px">' + mdIn(par.join(' ')) + '</p>'); par = []; }
+  }
+  function fecha(){ fechaPar(); fechaLista(); }
+
+  for (var i = 0; i < linhas.length; i++){
+    var l = linhas[i], t2 = l.trim();
+    if (!t2) { fecha(); continue; }
+
+    var bl = t2.match(new RegExp('^' + Z + 'b([0-9]+)' + Z + '$'));
+    if (bl) {
+      fecha();
+      out.push('<pre style="margin:0 0 9px;padding:9px 11px;background:#f7f6f2;border-radius:9px;' +
+               'overflow-x:auto;' + DS_MONO + ';font-size:12px;line-height:1.5">' + blocos[bl[1]] + '</pre>');
+      continue;
+    }
+
+    // tabela: linha com | ... | seguida da separadora | --- | --- |
+    if (t2.charAt(0) === '|' && i + 1 < linhas.length && /^\|[\s:|-]+\|$/.test(linhas[i+1].trim())) {
+      fecha();
+      var celulas = function(linha){
+        return linha.trim().replace(/^\||\|$/g, '').split('|').map(function(c){ return mdIn(c.trim()); });
+      };
+      var cab = celulas(t2), corpo = [];
+      i += 2;
+      while (i < linhas.length && linhas[i].trim().charAt(0) === '|') { corpo.push(celulas(linhas[i].trim())); i++; }
+      i--;
+      var cel = 'padding:5px 9px;border-bottom:1px solid #eae6de;text-align:left;vertical-align:top';
+      out.push('<div style="overflow-x:auto;margin:0 0 9px">' +
+        '<table style="border-collapse:collapse;font-size:12.5px;width:100%">' +
+        '<thead><tr>' + cab.map(function(c){ return '<th style="' + cel + ';font-weight:600">' + c + '</th>'; }).join('') + '</tr></thead>' +
+        '<tbody>' + corpo.map(function(r){
+          return '<tr>' + r.map(function(c){ return '<td style="' + cel + '">' + c + '</td>'; }).join('') + '</tr>';
+        }).join('') + '</tbody></table></div>');
+      continue;
+    }
+
+    var h = t2.match(/^#{1,6}\s+(.*)$/);
+    if (h) {
+      fecha();
+      out.push('<div style="font-weight:600;color:#121a2b;margin:11px 0 5px">' + mdIn(h[1]) + '</div>');
+      continue;
+    }
+
+    if (/^(---+|\*\*\*+)$/.test(t2)) {
+      fecha();
+      out.push('<hr style="border:0;border-top:1px solid #eae6de;margin:11px 0">');
+      continue;
+    }
+
+    var cit = t2.match(/^&gt;\s?(.*)$/);
+    if (cit) {
+      fecha();
+      out.push('<div style="margin:0 0 9px;padding:7px 11px;border-left:2.5px solid #c9d6f7;' +
+               'background:#f7f9fe;border-radius:0 7px 7px 0">' + mdIn(cit[1]) + '</div>');
+      continue;
+    }
+
+    var mUl = t2.match(/^[-*•]\s+(.*)$/);
+    var mOl = t2.match(/^\d+[.)]\s+(.*)$/);
+    if (mUl || mOl) {
+      var tipo = mUl ? 'ul' : 'ol';
+      fechaPar();
+      if (lista !== tipo) {
+        fechaLista();
+        out.push('<' + tipo + ' style="margin:0 0 9px;padding-left:19px">');
+        lista = tipo;
+      }
+      out.push('<li style="margin:3px 0">' + mdIn((mUl || mOl)[1]) + '</li>');
+      continue;
+    }
+
+    fechaLista();
+    par.push(t2);
+  }
+  fecha();
+  return out.join('');
+}
+
+function msgHTML(m){
+  if (m.role === 'user')
+    return '<div style="margin:0 0 10px;text-align:right">' +
+      '<span style="display:inline-block;max-width:88%;text-align:left;background:#f2efe9;' +
+      'border-radius:12px 12px 3px 12px;padding:9px 12px;font-size:13.5px;line-height:1.6;' +
+      'color:#39404f;text-wrap:pretty">' + esc(m.content) + '</span></div>';
+  return '<div style="margin:0 0 12px">' +
+    '<div style="' + DS_MONO + ';font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;' +
+    'color:#2b57cc;margin-bottom:4px">DeepSeek</div>' +
+    '<div style="font-size:13.5px;line-height:1.65;color:#39404f;text-wrap:pretty">' +
+    mdChat(m.content) + '</div></div>';
+}
+
+function chatBox(q, acertou){
+  if (!dsOn()) return '';
+  var chamada = acertou ? 'Quer ir mais fundo?' : 'Ainda com dúvida?';
+  var dica = acertou ? 'Por que as outras estão erradas?' : 'Por que a que eu marquei está errada?';
+  var hist = (S.chat[q.id] || []).map(msgHTML).join('');
+  return '<div id="ds" data-qid="' + q.id + '" style="margin-top:14px;border:1px solid #e4e0d8;' +
+      'border-radius:14px;background:#fff;overflow:hidden;animation:qFade .26s ease">' +
+      '<div style="display:flex;align-items:center;gap:8px;padding:11px 15px;' +
+        'border-bottom:1px solid #f0ede6;background:#faf9f6">' +
+        '<span style="' + DS_MONO + ';font-size:10px;letter-spacing:.16em;text-transform:uppercase;' +
+        'color:#2b57cc">' + chamada + '</span>' +
+        '<span style="font-size:12px;color:#8a8578">pergunte ao DeepSeek</span></div>' +
+      '<div id="dsLog" style="max-height:280px;overflow-y:auto;padding:' + (hist ? '12px 15px' : '0') + '">' +
+        hist + '</div>' +
+      '<div style="display:flex;gap:8px;padding:11px 12px;border-top:1px solid #f0ede6">' +
+        '<input id="dsIn" type="text" autocomplete="off" ' +
+          'placeholder="' + dica + '" ' +
+          'style="flex:1;min-width:0;border:1px solid #e4e0d8;border-radius:10px;padding:10px 12px;' +
+          'font-size:13.5px;' + DS_SANS + ';color:#121a2b;background:#fff;outline:none">' +
+        '<button type="button" data-act="dsSend" class="h-darkflat" style="flex-shrink:0;' +
+          'background:#121a2b;color:#f5f3ef;border:0;border-radius:10px;padding:10px 16px;' +
+          'font-size:13px;font-weight:500;cursor:pointer;transition:background .16s ease">Enviar</button>' +
+      '</div></div>';
+}
+
+function dsContexto(q, ans){
+  var alts = q.options.map(function(o, n){ return LETTERS[n] + ') ' + o; }).join(NLJS);
+  return 'Questao: ' + q.question + NLJS + alts + NLJS +
+    'Resposta correta: ' + LETTERS[q.correctIndex] + ') ' + q.options[q.correctIndex] + NLJS +
+    'O estudante marcou: ' + (ans === null ? 'nada' : LETTERS[ans] + ') ' + q.options[ans]) + NLJS +
+    'Explicacao que ele ja tem: ' + q.explanation;
+}
+
+A.dsSend = function(){
+  var box = document.getElementById('ds');
+  if (!box || !dsOn() || box.getAttribute('data-busy')) return;
+  var input = document.getElementById('dsIn'), log = document.getElementById('dsLog');
+  var texto = (input.value || '').trim();
+  if (!texto) return;
+
+  var qid = parseInt(box.getAttribute('data-qid'), 10), q = null, ans = null;
+  for (var i = 0; i < S.order.length; i++)
+    if (S.order[i].id === qid) { q = S.order[i]; ans = S.answers[i]; }
+  if (!q) return;
+
+  S.chat[qid] = S.chat[qid] || [];
+  S.chat[qid].push({ role:'user', content:texto });
+  input.value = '';
+  log.style.padding = '12px 15px';
+  log.insertAdjacentHTML('beforeend', msgHTML({ role:'user', content:texto }));
+  log.insertAdjacentHTML('beforeend',
+    '<div><div style="' + DS_MONO + ';font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;' +
+    'color:#2b57cc;margin-bottom:4px">DeepSeek</div>' +
+    '<div id="dsTxt" style="font-size:13.5px;line-height:1.65;color:#8a8578;' +
+    'text-wrap:pretty">pensando…</div></div>');
+  log.scrollTop = log.scrollHeight;
+  box.setAttribute('data-busy', '1');
+
+  var acertou = (ans === q.correctIndex);
+  var situacao = acertou
+    ? 'Voce e um tutor de medicina. O estudante do 7o semestre ACERTOU esta questao, mas ficou com uma duvida. '
+    : 'Voce e um tutor de medicina. O estudante do 7o semestre ERROU esta questao. ';
+  var msgs = [
+    { role:'system', content: situacao +
+      'Responda em portugues do Brasil, direto ao ponto, no maximo 150 palavras. ' +
+      'Traga o dado concreto (valor, criterio, mecanismo) em vez de generalidade. ' +
+      'Nao repita a explicacao que ele ja tem; foque na duvida que ele trouxe.' },
+    { role:'user', content: dsContexto(q, ans) }
+  ];
+  var h = S.chat[qid];
+  for (var j = 0; j < h.length; j++) msgs.push({ role:h[j].role, content:h[j].content });
+
+  dsStream(msgs, function(txt, fim, erro){
+    var el = document.getElementById('dsTxt');
+    if (!el) { box.removeAttribute('data-busy'); return; }
+    if (erro) { el.style.color = '#c04437'; el.textContent = erro; box.removeAttribute('data-busy'); return; }
+    el.style.color = '#39404f';
+    el.innerHTML = mdChat(txt);
+    var lg = document.getElementById('dsLog'); if (lg) lg.scrollTop = lg.scrollHeight;
+    if (fim) { el.removeAttribute('id'); S.chat[qid].push({ role:'assistant', content:txt }); box.removeAttribute('data-busy'); }
+  });
+};
+
+function dsStream(messages, cb){
+  var acc = '';
+  fetch(DS_URL, {
+    method: 'POST',
+    headers: { 'Content-Type':'application/json', 'Authorization':'Bearer ' + window.DEEPSEEK_KEY },
+    body: JSON.stringify({ model:DS_MODEL, messages:messages, stream:true, max_tokens:1200, temperature:0.3 })
+  }).then(function(r){
+    if (!r.ok) return r.text().then(function(t){
+      throw new Error(
+        r.status === 401 ? 'Chave recusada (401). Confira o deepseek_key.js.' :
+        r.status === 402 ? 'Sem saldo na conta DeepSeek (402).' :
+        r.status === 429 ? 'Limite de uso atingido (429). Tente daqui a pouco.' :
+        'Erro ' + r.status + ': ' + String(t).slice(0, 120));
+    });
+    var reader = r.body.getReader(), dec = new TextDecoder(), buf = '';
+    (function pump(){
+      return reader.read().then(function(res){
+        if (res.done) { cb(acc || '(resposta vazia)', true); return; }
+        buf += dec.decode(res.value, { stream:true });
+        var linhas = buf.split(NLJS);
+        buf = linhas.pop();
+        for (var i = 0; i < linhas.length; i++){
+          var l = linhas[i].trim();
+          if (l.indexOf('data:') !== 0) continue;
+          var carga = l.slice(5).trim();
+          if (carga === '[DONE]') continue;
+          try {
+            var d = JSON.parse(carga).choices[0].delta;
+            if (d && d.content) { acc += d.content; cb(acc, false); }
+          } catch (_){}
+        }
+        return pump();
+      });
+    })();
+  }).catch(function(e){
+    cb('', true, 'Nao consegui falar com o DeepSeek: ' + (e && e.message ? e.message : e));
+  });
+}
+
+function render(){
+  renderHeader();
+  if (S.view === 'home')        renderHome();
+  else if (S.view === 'resumo') renderResumo();
+  else if (S.finished)          renderResult();
+  else                          renderQuestion();
+}
+
+/* lightbox: clique em qualquer figura amplia */
+document.addEventListener('click', function(e){
+  var lb = document.getElementById('lb');
+  if (e.target.closest('#lb')) { lb.className = ''; return; }
+  var img = e.target.closest('.fig img');
+  if (img) { lb.firstElementChild.src = img.src; lb.className = 'on'; }
+});
+window.addEventListener('keydown', function(e){
+  if (e.key === 'Escape') document.getElementById('lb').className = '';
+});
+
+document.addEventListener('click', function(e){
+  var b = e.target.closest('[data-act]'); if (!b) return;
+  var act = b.getAttribute('data-act'), n = parseInt(b.getAttribute('data-n'),10), k = b.getAttribute('data-k');
+  if (act==='pick'||act==='jump'||act==='toggle') A[act](n);
+  else if (act==='filter') A.filter(k);
+  else if (A[act]) A[act]();
+});
+
+window.addEventListener('keydown', function(e){
+  if (S.view!=='quiz' || !S.started || S.finished) return;
+  var t = e.target, tag = t && t.tagName;
+  if (tag==='INPUT' || tag==='TEXTAREA' || (t && t.isContentEditable)) return;
+  if (e.metaKey||e.ctrlKey||e.altKey) return;
+  if (e.key==='ArrowRight')     { e.preventDefault(); A.go(S.i+1); }
+  else if (e.key==='ArrowLeft') { e.preventDefault(); A.go(S.i-1); }
+  else if (e.key==='Enter')     { e.preventDefault(); A.next(); }
+  else if (/^[1-6]$/.test(e.key)) {
+    var n = parseInt(e.key,10)-1;
+    if (n < S.order[S.i].options.length) A.pick(n);
+  }
+});
+
+render();
+</script>
+</body>
+</html>

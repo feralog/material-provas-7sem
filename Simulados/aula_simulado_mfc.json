@@ -1,0 +1,448 @@
+{
+  "titulo": "Simulado MC VII",
+  "eyebrow": "Simulado · Medicina e Comunidade VII",
+  "subtitulo": "Quarenta questões inéditas para medir o que você sabe",
+  "intro": "40 questões objetivas sobre transtorno mental comum, álcool e drogas, tontura, saúde baseada em evidências, saúde do homem e populações vulneráveis (situação de rua, população negra, migrantes e refugiados, pessoa com deficiência), quase todas em caso na UBS. Tempo sugerido: 60 minutos, sem consulta. A explicação de cada questão começa pelo tema.",
+  "questoes": [
+    {
+      "question": "Na visita domiciliar, a agente comunitária aplica o SRQ-20 em uma mulher de 34 anos, cuidadora da mãe acamada: ela responde \"sim\" a 11 das 20 perguntas sobre os últimos 30 dias. Na consulta, qual a interpretação e o passo seguinte?",
+      "options": [
+        "Sofrimento psíquico provável: avaliar o quadro e o contexto na consulta",
+        "Depressão maior confirmada: iniciar ISRS ainda na mesma consulta",
+        "Resultado negativo, pois o ponto de corte habitual é de 15 respostas",
+        "Transtorno grave confirmado: encaminhar direto ao CAPS da região"
+      ],
+      "correctIndex": 0,
+      "explanation": "(MFC · Transtorno mental comum) No SRQ-20, 8 ou mais respostas \"sim\" (corte 7/8 na validação brasileira) indicam sofrimento psíquico provável — é rastreio, não diagnóstico. O passo seguinte é a avaliação clínica: duração, prejuízo, critérios de transtorno específico, risco de suicídio e o contexto de sobrecarga. Iniciar antidepressivo só pelo escore pula essa avaliação."
+    },
+    {
+      "question": "Homem de 74 anos começou doxazosina para hiperplasia prostática há três semanas. Desde então, ao se levantar, tem a vista escura e a sensação de que vai desmaiar, sem giro; já quase caiu duas vezes. Qual a conduta inicial?",
+      "options": [
+        "Medir a PA deitado e em pé e rever a doxazosina como causa provável",
+        "Prescrever meclizina contínua e pedir ressonância de crânio",
+        "Fazer a manobra de Dix-Hallpike e, se positiva, a de Epley",
+        "Pedir audiometria e encaminhar ao otorrino por labirintite"
+      ],
+      "correctIndex": 0,
+      "explanation": "(MFC · Tontura) Vista escura e desmaio iminente ao levantar, sem giro, é pré-síncope, e o alfabloqueador recém-iniciado é a causa mais provável de hipotensão ortostática — confirmada por queda de 20 mmHg ou mais na sistólica, ou de 10 mmHg ou mais na diastólica, em até 3 minutos de pé. Revisar a lista de remédios resolve muitos casos; Dix-Hallpike é para vertigem posicional, não para pré-síncope."
+    },
+    {
+      "question": "Num ensaio clínico de 3 anos, o AVC ocorreu em 10% do grupo placebo e em 6% do grupo tratado. Quais são a redução do risco relativo (RRR) e o número necessário para tratar (NNT)?",
+      "options": [
+        "RRR de 40% e NNT de 25 pacientes em 3 anos",
+        "RRR de 4% e NNT de 40 pacientes em 3 anos",
+        "RRR de 60% e NNT de 25 pacientes em 3 anos",
+        "RRR de 40% e NNT de 4 pacientes em 3 anos"
+      ],
+      "correctIndex": 0,
+      "explanation": "(MFC · Saúde baseada em evidências) RR = 6 ÷ 10 = 0,6, logo RRR = 1 − 0,6 = 40%. A RRA é 10% − 6% = 4 pontos percentuais, e NNT = 1 ÷ 0,04 = 25: é preciso tratar 25 pessoas por 3 anos para evitar um AVC. Confundir o RR (0,6) com a RRR leva aos 60%; confundir a RRA com a RRR leva aos 4%."
+    },
+    {
+      "question": "Num município sem equipe de Consultório na Rua, um homem de 47 anos dorme há meses na praça em frente à UBS e tem tosse, feridas nos pés e hipertensão sem acompanhamento. A quem cabe o cuidado dele?",
+      "options": [
+        "À equipe da UBS do território, articulada com o restante da rede",
+        "Ao Centro POP, serviço de saúde específico para a população de rua",
+        "Ao CAPS AD, que é a referência de cuidado para quem vive na rua",
+        "A ninguém na APS até que ele tenha endereço no território da UBS"
+      ],
+      "correctIndex": 0,
+      "explanation": "(MFC · Situação de rua) Onde não há Consultório na Rua, o cuidado é responsabilidade da UBS do território — e de toda a rede. O Centro POP é serviço da assistência social, não da saúde, e o CAPS AD só entra se houver uso problemático de drogas; a falta de endereço nunca barra o atendimento no SUS."
+    },
+    {
+      "question": "Homem de 39 anos, que bebe diariamente, chega dizendo: \"Decidi que vou parar de beber no começo do mês que vem e quero saber como fazer.\" Em qual estágio de mudança ele está e qual a conduta?",
+      "options": [
+        "Preparação: montar o plano, com data e estratégias para os gatilhos",
+        "Contemplação: explorar a ambivalência entre os prós e os contras",
+        "Pré-contemplação: devolver os riscos e manter o vínculo, sem confronto",
+        "Manutenção: focar na prevenção de recaída e no que já deu certo"
+      ],
+      "correctIndex": 0,
+      "explanation": "(MFC · Álcool e drogas) Quem já decidiu mudar em breve está na preparação, e a tarefa é concreta: plano, data e estratégias. Explorar a ambivalência é a conduta da contemplação, em que o paciente reconhece o problema mas ainda não decidiu; insistir nisso agora atrasa quem já está pronto."
+    },
+    {
+      "question": "Menina de 18 meses com doença falciforme é trazida porque, desde a manhã, está muito pálida, prostrada e com a barriga mais volumosa; o baço está bem maior do que na consulta anterior. Qual a hipótese e a conduta?",
+      "options": [
+        "Sequestro esplênico agudo: encaminhar com urgência",
+        "Crise vaso-oclusiva: analgesia oral e retorno em 48 h",
+        "Anemia ferropriva: iniciar sulfato ferroso e reavaliar",
+        "Esplenomegalia esperada: só orientar e reavaliar depois"
+      ],
+      "correctIndex": 0,
+      "explanation": "(MFC · Saúde da população negra) Palidez súbita com aumento do baço na criança com doença falciforme é sequestro esplênico, emergência que exige avaliação imediata — a família aprende a palpar o baço justamente por isso. Ferro não está indicado (a anemia é hemolítica, não ferropriva), e a crise vaso-oclusiva se manifesta por dor, não por palidez com esplenomegalia."
+    },
+    {
+      "question": "Homem de 40 anos, assintomático, hipertenso, com IMC de 32, vem pedir \"um check-up completo\". Pelos Cadernos de Atenção Primária nº 29 e nº 36, quais rastreamentos estão indicados?",
+      "options": [
+        "Glicemia, perfil lipídico e abordagem breve de tabaco e álcool",
+        "PSA, toque retal e ultrassom dos testículos, pela idade dele",
+        "Colonoscopia, PSA e glicemia de jejum, pela idade de 40 anos",
+        "Nenhum por enquanto, pois o rastreio só começa aos 45 anos"
+      ],
+      "correctIndex": 0,
+      "explanation": "(MFC · Saúde do homem) Diabetes se rastreia a partir dos 45 anos ou antes, se houver excesso de peso com outro fator de risco (aqui, hipertensão); dislipidemia, em homens a partir dos 35; tabaco e álcool, em todos os adultos. PSA, toque retal e ultrassom de testículo não têm rastreamento populacional recomendado, e o rastreio colorretal começa aos 50."
+    },
+    {
+      "question": "Homem de 29 anos deixou seu país porque perdeu o emprego e não conseguia sustentar a família; não sofreu ameaça nem perseguição. Chegou ao Brasil e quer se regularizar. Como ele se classifica?",
+      "options": [
+        "Migrante econômico, que se regulariza por outras vias que não o refúgio",
+        "Refugiado, pela definição ampliada da Lei 9.474/1997 e de Cartagena",
+        "Deslocado interno, protegido pelas regras da Convenção de 1951",
+        "Apátrida, por ter perdido o vínculo de trabalho com o país de origem"
+      ],
+      "correctIndex": 0,
+      "explanation": "(MFC · Migração e refúgio) Quem sai em busca de trabalho e renda, sem perseguição nem fuga de grave e generalizada violação de direitos humanos, é migrante econômico — e se regulariza por outras vias, como a autorização de residência ou o visto humanitário. Deslocado interno não cruzou fronteira, e apátrida é quem não é considerado nacional por nenhum Estado."
+    },
+    {
+      "question": "Mulher de 26 anos com deficiência intelectual leve está sob curatela da mãe, nomeada para administrar o benefício e os contratos dela. A jovem pede para colocar DIU; a mãe se opõe e diz que \"quem decide é a curadora\". Qual a orientação?",
+      "options": [
+        "A decisão é da usuária: a curatela não alcança o direito à saúde",
+        "A decisão é da curadora, que responde pelos atos da curatelada",
+        "É preciso autorização judicial específica para inserir o DIU",
+        "O DIU só pode ser inserido se mãe e filha estiverem de acordo"
+      ],
+      "correctIndex": 0,
+      "explanation": "(MFC · Pessoa com deficiência) Pela LBI, a deficiência não afeta a plena capacidade civil, inclusive para exercer direitos sexuais e reprodutivos; a curatela é extraordinária, proporcional e restrita a atos patrimoniais e negociais — não alcança o corpo, a sexualidade nem a saúde. O que se exige é o consentimento livre e esclarecido da própria usuária, com informação em formato acessível."
+    },
+    {
+      "question": "Mulher de 46 anos vai à UBS com cansaço, desânimo, sonolência, constipação, ganho de peso e pele seca há quatro meses, iniciados na época em que se separou. É a primeira consulta pelo quadro. Qual a conduta mais adequada?",
+      "options": [
+        "Examinar e pedir TSH antes de atribuir o quadro só ao sofrimento",
+        "Diagnosticar transtorno mental comum e incluí-la em grupo terapêutico",
+        "Prescrever ISRS, pois a separação explica os sintomas descritos",
+        "Orientar que é luto pela separação e marcar retorno em seis meses"
+      ],
+      "correctIndex": 0,
+      "explanation": "(MFC · Transtorno mental comum) Fadiga e desânimo também vêm de doença orgânica: constipação, ganho de peso, pele seca e sonolência apontam para hipotireoidismo, que precisa ser afastado com exame físico e TSH. O contexto de vida faz parte da avaliação, mas não dispensa examinar — o que não se deve é repetir exames a cada retorno quando a investigação inicial já foi feita."
+    },
+    {
+      "question": "Mulher de 66 anos, hipertensa, tem tontura ao deitar. Na manobra de Dix-Hallpike surge, sem latência, nistagmo vertical para baixo, que persiste enquanto a cabeça fica na posição e não diminui ao repetir. Qual a interpretação?",
+      "options": [
+        "Achado atípico para VPPB: pensar em causa central e encaminhar",
+        "VPPB de canal posterior: fazer a manobra de Epley no consultório",
+        "VPPB de canal lateral: repetir a manobra com giro em decúbito",
+        "Neurite vestibular: sintomáticos e reabilitação vestibular precoce"
+      ],
+      "correctIndex": 0,
+      "explanation": "(MFC · Tontura) Na VPPB de canal posterior, o nistagmo é torcional e para cima, surge após latência, dura pouco e fatiga com a repetição. Nistagmo vertical, sem latência, persistente e que não fatiga foge desse padrão: nistagmo vertical é sinal de alarme de causa central, e o caso não deve ser tratado como VPPB."
+    },
+    {
+      "question": "Num ensaio de 2 anos com um anticoagulante, sangramento maior ocorreu em 3% dos tratados e em 1% do grupo placebo. Qual o número necessário para causar dano (NNH)?",
+      "options": [
+        "50: a cada 50 tratados por 2 anos, um sangramento a mais",
+        "33: a cada 33 tratados por 2 anos, um sangramento a mais",
+        "3: a cada 3 tratados por 2 anos, um sangramento a mais",
+        "100: a cada 100 tratados por 2 anos, um sangramento a mais"
+      ],
+      "correctIndex": 0,
+      "explanation": "(MFC · Saúde baseada em evidências) O NNH é a mesma conta do NNT aplicada ao efeito adverso: aumento absoluto do risco = 3% − 1% = 2 pontos percentuais, e NNH = 1 ÷ 0,02 = 50. O 33 sai de usar só o risco do grupo tratado (1 ÷ 0,03), e o 3 é o risco relativo (3% ÷ 1%), que não é número de pacientes."
+    },
+    {
+      "question": "Mulher de 41 anos responde ao AUDIT numa consulta de rotina e soma 17 pontos. Em qual zona de risco ela está e qual a conduta?",
+      "options": [
+        "Zona III: intervenção breve, aconselhamento e monitoramento",
+        "Zona II: intervenção breve isolada, sem monitoramento",
+        "Zona IV: avaliação diagnóstica de dependência e tratamento",
+        "Zona I: educação em saúde e reforço do consumo de baixo risco"
+      ],
+      "correctIndex": 0,
+      "explanation": "(MFC · Álcool e drogas) O AUDIT (0 a 40) se divide em zonas: 0–7 educação em saúde, 8–15 intervenção breve, 16–19 intervenção breve com aconselhamento e monitoramento, e 20 ou mais avaliação diagnóstica de dependência. Com 17 pontos ela está na zona III — ainda não é a faixa que pede avaliação de dependência."
+    },
+    {
+      "question": "Homem de 39 anos em situação de rua, acompanhado pela equipe de saúde, quer tirar segunda via dos documentos, inscrever-se no CadÚnico e ter onde guardar os pertences e tomar banho. Qual serviço a equipe deve acionar?",
+      "options": [
+        "Centro POP, da assistência social, que serve de endereço de referência",
+        "CAPS AD III, que oferece acolhimento noturno e guarda de documentos",
+        "Unidade de Acolhimento, moradia transitória ligada à atenção básica",
+        "Serviço Residencial Terapêutico, para quem não tem moradia própria"
+      ],
+      "correctIndex": 0,
+      "explanation": "(MFC · Situação de rua) O Centro POP é serviço do SUAS: oferece convivência, higiene, alimentação, guarda de pertences, encaminhamento para documentos e benefícios (CadÚnico, Bolsa Família) e pode servir de endereço de referência. Unidade de Acolhimento e Residencial Terapêutico são pontos da RAPS com indicações próprias (uso de drogas com vulnerabilidade social; egressos de longas internações psiquiátricas)."
+    },
+    {
+      "question": "Homem de 48 anos, autodeclarado preto, tem hipertensão estágio 1 confirmada, sem diabetes, doença renal ou outra comorbidade. Vai iniciar monoterapia. Qual classe tende a responder melhor?",
+      "options": [
+        "Diurético tiazídico ou bloqueador dos canais de cálcio",
+        "Inibidor da ECA ou bloqueador do receptor de angiotensina",
+        "Betabloqueador ou alfabloqueador como primeira escolha",
+        "Diurético de alça ou espironolactona em dose plena"
+      ],
+      "correctIndex": 0,
+      "explanation": "(MFC · Saúde da população negra) Em pessoas negras, tiazídicos e bloqueadores dos canais de cálcio costumam responder melhor em monoterapia do que IECA ou BRA. A hipertensão nesse grupo é mais frequente, precoce e grave, com mais AVC e lesão renal — e a diretriz brasileira pondera que condições socioeconômicas e hábitos pesam nessa diferença mais que a etnia em si."
+    },
+    {
+      "question": "Homem de 64 anos, com angina estável em uso de mononitrato de isossorbida, pede receita de sildenafila por disfunção erétil. Qual a orientação correta?",
+      "options": [
+        "Não prescrever: com nitrato, a sildenafila causa hipotensão grave",
+        "Prescrever a dose mínima, que é segura em uso conjunto com nitrato",
+        "Prescrever e orientar tomar o nitrato só depois da relação sexual",
+        "Trocar por tadalafila, que não interage com os nitratos orais"
+      ],
+      "correctIndex": 0,
+      "explanation": "(MFC · Saúde do homem) Os inibidores da fosfodiesterase-5 (sildenafila, tadalafila) são contraindicados com nitratos, pelo risco de hipotensão grave — a contraindicação vale para a classe, então trocar por tadalafila não resolve. A disfunção erétil, aliás, é marcador de risco cardiovascular e ocasião para rever PA, glicemia, lipídios, tabagismo e medicamentos."
+    },
+    {
+      "question": "Imigrante de 38 anos, que viveu até o ano passado em zona rural tropical com saneamento precário, está em crise grave de asma e vai iniciar prednisona em dose alta por vários dias. Qual parasitose deve ser lembrada antes do corticoide?",
+      "options": [
+        "Estrongiloidíase, que pode evoluir para hiperinfecção",
+        "Giardíase, que pode evoluir para má absorção grave",
+        "Ascaridíase, que pode evoluir para obstrução biliar",
+        "Amebíase, que pode evoluir para abscesso hepático"
+      ],
+      "correctIndex": 0,
+      "explanation": "(MFC · Migração e refúgio) Quem vem de área com saneamento precário pode ter estrongiloidíase crônica assintomática, e o corticoide pode desencadear hiperinfecção e disseminação, potencialmente fatais — por isso ela é lembrada antes de corticoide ou imunossupressão. As outras parasitoses não têm essa relação com o corticoide."
+    },
+    {
+      "question": "Homem de 58 anos, diabético, teve amputação transtibial e recebeu alta. Precisa de prótese, cadeira de rodas provisória e reabilitação física. Na Rede de Cuidados à Pessoa com Deficiência, onde a prótese e a cadeira são confeccionadas e dispensadas?",
+      "options": [
+        "Na oficina ortopédica, do componente especializado",
+        "Na UBS, que dispensa órteses pela farmácia básica",
+        "No CAPS, que coordena a reabilitação psicossocial",
+        "No hospital da cirurgia, que as fornece na alta"
+      ],
+      "correctIndex": 0,
+      "explanation": "(MFC · Pessoa com deficiência) A RCPD (Portaria 793/2012) tem três componentes: atenção primária; atenção especializada em reabilitação — CER, oficinas ortopédicas (órteses, próteses e meios auxiliares de locomoção) e CEO —; e atenção hospitalar e de urgência. A equipe de Saúde da Família segue como coordenadora do cuidado, articulando com o CER e a oficina, sem deixar de ser responsável."
+    },
+    {
+      "question": "Homem de 27 anos foi internado em surto psicótico, sem consentimento, a pedido da irmã; o Ministério Público foi comunicado na admissão. Três semanas depois, estabilizado, recebe alta. Pela Lei 10.216/2001, qual exigência se aplica à alta?",
+      "options": [
+        "Comunicar a alta ao Ministério Público Estadual em até 72 horas",
+        "Obter autorização judicial prévia para liberar o paciente da unidade",
+        "Colher declaração do paciente concordando por escrito com a alta",
+        "Nenhuma: só a entrada involuntária precisa ser comunicada ao MP"
+      ],
+      "correctIndex": 0,
+      "explanation": "(MFC · Transtorno mental comum) Na internação involuntária — sem consentimento, a pedido de terceiro, autorizada por médico com CRM do estado — a comunicação ao Ministério Público Estadual em até 72 horas vale para a admissão e também para a alta. Autorização judicial é característica da internação compulsória, determinada pelo juiz."
+    },
+    {
+      "question": "Homem de 71 anos, diabético e hipertenso, tem vertigem contínua há 8 horas, com vômitos intensos. O nistagmo é horizontal e bate sempre para o mesmo lado, o teste de cobertura alternada não mostra desvio e o impulso cefálico é normal para os dois lados. Qual a interpretação?",
+      "options": [
+        "Impulso cefálico normal na vertigem aguda sugere AVC: enviar ao PS",
+        "Padrão periférico, porque o nistagmo é horizontal e unidirecional",
+        "Neurite vestibular, porque vômitos intensos indicam origem periférica",
+        "Exame tranquilizador, pois o impulso normal afasta lesão do labirinto"
+      ],
+      "correctIndex": 0,
+      "explanation": "(MFC · Tontura) Na síndrome vestibular aguda, impulso cefálico normal é sinal de alarme: labirinto e nervo íntegros significam que a vertigem vem do sistema nervoso central — um único componente central no HINTS basta para suspeitar de AVC de fossa posterior, ainda mais em idoso com fatores de risco vascular. Náusea e vômitos intensos não diferenciam periférico de central."
+    },
+    {
+      "question": "Um hipolipemiante tem risco relativo de 0,75 para infarto em 10 anos, igual em todos os subgrupos. O paciente A tem risco basal de 40% em 10 anos; o paciente B, de 4%. Qual o NNT para cada um?",
+      "options": [
+        "NNT de 10 para A e NNT de 100 para B",
+        "NNT de 25 para A e NNT de 25 para B",
+        "NNT de 100 para A e NNT de 10 para B",
+        "NNT de 4 para A e NNT de 4 para B"
+      ],
+      "correctIndex": 0,
+      "explanation": "(MFC · Saúde baseada em evidências) Com RR de 0,75 a RRR é de 25% para os dois, mas a RRA depende do risco basal: em A, 25% de 40% = 10 pontos percentuais (NNT = 1 ÷ 0,10 = 10); em B, 25% de 4% = 1 ponto percentual (NNT = 1 ÷ 0,01 = 100). O mesmo remédio rende muito benefício a quem tem risco alto e quase nenhum a quem tem risco baixo — por isso a decisão compartilhada usa números absolutos."
+    },
+    {
+      "question": "Homem de 52 anos, que bebia diariamente, parou há dois dias. A esposa o traz à UBS porque está confuso, anda cambaleando e tem movimentos oculares anormais; está desnutrido. Qual a conduta?",
+      "options": [
+        "Suspeitar de encefalopatia de Wernicke: tiamina e urgência",
+        "Abstinência leve: diazepam oral em casa e retorno em uma semana",
+        "Intoxicação residual: observar em casa e reavaliar em 24 horas",
+        "Delirium tremens tardio: haloperidol isolado e alta para casa"
+      ],
+      "correctIndex": 0,
+      "explanation": "(MFC · Álcool e drogas) Confusão, ataxia e alteração ocular em quem bebe muito e está desnutrido compõem a suspeita de encefalopatia de Wernicke, que exige tiamina e encaminhamento à urgência — confusão, por si só, já exclui o manejo ambulatorial da abstinência. Antipsicótico isolado não trata a abstinência."
+    },
+    {
+      "question": "A equipe de Consultório na Rua aborda uma mulher de 26 anos, em situação de rua, com gestação de cerca de 20 semanas e nenhuma consulta de pré-natal. Ela usa crack de forma intermitente. Qual a conduta da equipe?",
+      "options": [
+        "Iniciar o pré-natal e vinculá-la à UBS, sem exigir abstinência",
+        "Encaminhá-la ao CAPS AD, já que drogas são o foco da equipe",
+        "Exigir documento e endereço antes de abrir o cartão da gestante",
+        "Orientar que procure a maternidade apenas no fim da gestação"
+      ],
+      "correctIndex": 0,
+      "explanation": "(MFC · Situação de rua) O Consultório na Rua é equipe da atenção primária que oferece atenção integral — não só cuidado ao uso de drogas — e faz ações compartilhadas com a UBS; o cuidado segue a redução de danos, sem condicionar nada à abstinência. Documento e endereço não podem ser exigidos, e cada contato deve ser aproveitado (testagem rápida, vacinas), porque talvez não haja outro."
+    },
+    {
+      "question": "Menino de 4 anos com anemia falciforme, acompanhado pela equipe e pelo hemocentro, tem hemoglobina basal de 8 g/dL, sem sinal de sangramento. Um profissional sugere iniciar sulfato ferroso. Qual a orientação correta?",
+      "options": [
+        "Não dar ferro de rotina: a anemia é hemolítica; manter ácido fólico",
+        "Iniciar ferro oral por três meses, pois hemoglobina de 8 é ferropenia",
+        "Suspender a penicilina profilática e iniciar ferro por via venosa",
+        "Transfundir todo mês para manter a hemoglobina acima de 11 g/dL"
+      ],
+      "correctIndex": 0,
+      "explanation": "(MFC · Saúde da população negra) Na doença falciforme a anemia é hemolítica crônica, e ferro de rotina não está indicado; a rotina inclui ácido fólico, penicilina profilática até os 5 anos, vacinas do CRIE e Doppler transcraniano anual dos 2 aos 16 anos. Suspender a penicilina antes dos 5 anos tira a proteção contra a sepse pneumocócica da asplenia funcional."
+    },
+    {
+      "question": "Homem de 31 anos, com dois filhos, decide hoje fazer vasectomia; a esposa concorda. Ele quer operar na semana seguinte e abandonar o preservativo logo após a cirurgia. Qual a orientação?",
+      "options": [
+        "Aguardar 60 dias da decisão e usar outro método até o espermograma",
+        "Operar já, pois tem mais de 21 anos e a esposa assinou a concordância",
+        "Aguardar 60 dias e liberar o sexo sem proteção logo após a cirurgia",
+        "Só operar aos 35 anos, idade mínima para a esterilização voluntária"
+      ],
+      "correctIndex": 0,
+      "explanation": "(MFC · Saúde do homem) A Lei 14.443/2022 exige prazo mínimo de 60 dias entre a manifestação da vontade e a cirurgia (com 21 anos ou dois filhos vivos, sem exigir aval do cônjuge). Depois da vasectomia, outro método deve ser usado até o espermograma confirmar azoospermia."
+    },
+    {
+      "question": "Família venezuelana, sem documentos regularizados, mora no território e procura a UBS para vacinar os filhos. A recepcionista sugere \"avisar a Polícia Federal\" antes de cadastrar. Qual a orientação correta à equipe?",
+      "options": [
+        "Cadastrar e atender: a equipe não faz fiscalização migratória",
+        "Atender só a urgência até a família regularizar a situação",
+        "Avisar a Polícia Federal, mas vacinar as crianças no mesmo dia",
+        "Exigir o protocolo de refúgio antes de emitir o Cartão SUS"
+      ],
+      "correctIndex": 0,
+      "explanation": "(MFC · Migração e refúgio) A universalidade do SUS não depende de nacionalidade nem de situação migratória: a falta de documento não impede atendimento, cadastro nem Cartão Nacional de Saúde, e a Lei de Migração garante acesso a serviços sem discriminação. A equipe não fiscaliza migração — denunciar rompe o vínculo, e o medo de deportação já é uma das principais barreiras de acesso."
+    },
+    {
+      "question": "Na consulta de puericultura de um lactente de 5 meses, o teste do reflexo vermelho mostra reflexo branco (leucocoria) no olho esquerdo; o teste feito na maternidade tinha sido normal. Qual a conduta?",
+      "options": [
+        "Encaminhar com prioridade ao oftalmologista: retinoblastoma ou catarata",
+        "Tranquilizar, pois o teste normal na maternidade já afasta doença ocular",
+        "Repetir o teste só na consulta dos 12 meses, quando o olho amadurece",
+        "Pedir ultrassom de crânio por suspeita de síndrome congênita do Zika"
+      ],
+      "correctIndex": 0,
+      "explanation": "(MFC · Pessoa com deficiência) O teste do olhinho (reflexo vermelho) rastreia catarata congênita, retinoblastoma e glaucoma, e por isso é repetido nas consultas — um exame normal na maternidade não afasta alteração que aparece depois. Leucocoria é reflexo anormal e pede avaliação oftalmológica com prioridade."
+    },
+    {
+      "question": "Pelo quadro de Jamoulle, a prevenção quaternária se dirige à pessoa que se sente doente sem que o médico identifique doença. Qual destas condutas é um exemplo dela?",
+      "options": [
+        "Não pedir tomografia na cefaleia tensional típica, explicando o motivo",
+        "Vacinar o idoso saudável contra a influenza na campanha de outono",
+        "Pedir mamografia de rastreio para mulher assintomática de 55 anos",
+        "Indicar reabilitação motora a quem tem sequela de AVC isquêmico"
+      ],
+      "correctIndex": 0,
+      "explanation": "(MFC · Transtorno mental comum) Prevenção quaternária protege da sobremedicalização quem se sente doente sem doença identificável — e não é \"não fazer nada\": explicação, escuta e seguimento substituem o exame que só traria risco. Vacinação é prevenção primária, mamografia de rastreio é secundária e reabilitação é terciária."
+    },
+    {
+      "question": "Mulher de 76 anos teve neurite vestibular há cinco semanas e desde então toma dimenidrinato três vezes ao dia. A vertigem intensa passou, mas ela segue instável, sonolenta e caiu no banheiro. Qual a conduta?",
+      "options": [
+        "Suspender o supressor vestibular e indicar reabilitação vestibular",
+        "Trocar o dimenidrinato por flunarizina para uso contínuo prolongado",
+        "Manter o dimenidrinato até a tontura desaparecer por completo",
+        "Associar benzodiazepínico à noite para reduzir a instabilidade"
+      ],
+      "correctIndex": 0,
+      "explanation": "(MFC · Tontura) Supressores vestibulares servem só para alívio por poucos dias na crise; o uso prolongado atrasa a compensação central, seda e aumenta quedas e confusão no idoso. Na neurite, a recuperação depende da compensação central, acelerada pela mobilização e pela reabilitação vestibular. Flunarizina e benzodiazepínico também são supressores — trocar um por outro mantém o problema."
+    },
+    {
+      "question": "A equipe de Saúde da Família quer saber quantos dos hipertensos cadastrados no território estão com a pressão controlada neste momento, revisando os prontuários num único corte de tempo. Que desenho de estudo é esse?",
+      "options": [
+        "Estudo transversal, que mede a prevalência num momento",
+        "Estudo de coorte, que acompanha do fator até o desfecho",
+        "Estudo de caso-controle, que parte de quem tem o desfecho",
+        "Ensaio clínico, que compara grupos alocados ao acaso"
+      ],
+      "correctIndex": 0,
+      "explanation": "(MFC · Saúde baseada em evidências) Quantos têm uma condição num dado momento é pergunta de prevalência, respondida pelo estudo transversal — um retrato único, que não estabelece sequência temporal. A coorte acompanha pessoas no tempo e mede incidência (prognóstico, etiologia); o caso-controle parte do desfecho e serve para doença rara ou de latência longa."
+    },
+    {
+      "question": "Universitário de 21 anos responde ao ASSIST na UBS: o escore é de risco moderado para maconha e de risco baixo para álcool e tabaco. Qual a conduta indicada?",
+      "options": [
+        "Intervenção breve para a maconha e orientação para álcool e tabaco",
+        "Encaminhar ao CAPS AD para tratar a dependência da maconha",
+        "Só orientação geral, pois nenhuma substância teve risco alto",
+        "Intervenção breve igual para as três, já que o escore é global"
+      ],
+      "correctIndex": 0,
+      "explanation": "(MFC · Álcool e drogas) O ASSIST dá um escore por substância, e cada faixa tem sua conduta: risco baixo pede orientação, moderado pede intervenção breve e alto pede intervenção breve com encaminhamento para avaliação e tratamento. Risco moderado não é dependência — não há motivo para encaminhar ao CAPS AD agora."
+    },
+    {
+      "question": "Homem de 44 anos em situação de rua tem tuberculose pulmonar confirmada pelo teste rápido molecular, sensível à rifampicina. Além de iniciar o esquema básico com tratamento diretamente observado, qual medida é indicada?",
+      "options": [
+        "Notificar o caso e oferecer testagem rápida para HIV",
+        "Internar até negativar o escarro, pelo risco de abandono",
+        "Exigir endereço fixo antes de notificar e dar o remédio",
+        "Aguardar o resultado da cultura para começar o esquema"
+      ],
+      "correctIndex": 0,
+      "explanation": "(MFC · Situação de rua) Diante da tuberculose confirmada, a rede notifica o caso, oferece testagem para HIV e avalia os contatos possíveis; a cultura com teste de sensibilidade é colhida, mas não atrasa o início do 2RHZE/4RH com TDO. A adesão vem do TDO onde for possível (UBS, eCR, abrigo), dos incentivos e da assistência social — sem exigir endereço."
+    },
+    {
+      "question": "Adolescente negra de 15 anos, em consulta por acne, conta que alisa o cabelo desde os 8 anos porque \"cabelo crespo é cabelo ruim\" e que se acha \"feia por ser escura\". Que dimensão do racismo essa fala mais bem ilustra?",
+      "options": [
+        "Racismo internalizado",
+        "Racismo institucional",
+        "Racismo interpessoal",
+        "Racismo estrutural"
+      ],
+      "correctIndex": 0,
+      "explanation": "(MFC · Saúde da população negra) Racismo internalizado é a incorporação, pela própria pessoa discriminada, dos estigmas sobre o seu grupo. O institucional aparece em normas, rotinas e resultados de uma organização; o interpessoal, no preconceito no contato direto; o estrutural, na organização econômica e histórica que produz desigualdade sem agressor identificável. O racismo vivido também é fonte de sofrimento psíquico e merece escuta."
+    },
+    {
+      "question": "Gestante de 24 semanas tem sífilis diagnosticada no pré-natal. O parceiro, que teve relação com ela há um mês, vem à UBS assintomático e tem teste rápido para sífilis não reagente. Qual a conduta para ele?",
+      "options": [
+        "Tratar com penicilina benzatina mesmo com o teste não reagente",
+        "Dispensar o tratamento, pois o teste rápido veio não reagente",
+        "Repetir o teste em 90 dias e tratar só se ficar reagente",
+        "Tratar apenas se ele tiver lesão genital ao exame físico"
+      ],
+      "correctIndex": 0,
+      "explanation": "(MFC · Saúde do homem) Parceiro exposto nos últimos 90 dias recebe tratamento mesmo com teste negativo; tratar o parceiro evita a reinfecção da gestante e a sífilis congênita. É o eixo paternidade e cuidado da PNAISH na prática, pelo Pré-Natal do Parceiro."
+    },
+    {
+      "question": "Um casal de apátridas, que vive no Brasil há três anos, tem um filho nascido numa maternidade de Manaus. Qual a nacionalidade da criança?",
+      "options": [
+        "Brasileira, pelo critério do solo adotado no Brasil",
+        "Apátrida, pois herda a condição jurídica dos pais",
+        "A do país de origem dos avós, pelo critério do sangue",
+        "Indefinida até que o CONARE decida sobre o caso"
+      ],
+      "correctIndex": 0,
+      "explanation": "(MFC · Migração e refúgio) O Brasil adota o critério do solo: toda criança nascida no país é brasileira, ainda que filha de estrangeiros ou de apátridas — ela não nasce apátrida. A Lei de Migração também criou procedimento para reconhecer a apatridia dos pais e facilitar a naturalização deles."
+    },
+    {
+      "question": "Menino de 20 meses, na consulta de puericultura: a mãe conta que ele não aponta para mostrar objetos, raramente atende quando chamado pelo nome e não imita gestos. Qual instrumento de triagem é indicado nessa idade?",
+      "options": [
+        "M-CHAT-R/F, que rastreia risco de TEA de 16 a 30 meses",
+        "PHQ-9, que rastreia sintomas depressivos na criança",
+        "Teste do pezinho ampliado, que inclui triagem do autismo",
+        "Nenhum: triagem de TEA só se indica após os 3 anos"
+      ],
+      "correctIndex": 0,
+      "explanation": "(MFC · Pessoa com deficiência) Não apontar, não atender pelo nome e não imitar são sinais de risco para TEA; o M-CHAT-R/F é usado entre 16 e 30 meses, e a Lei 13.438/2017 obriga aplicar instrumento de risco ao desenvolvimento psíquico nos primeiros 18 meses. A estimulação precoce não espera o diagnóstico fechado, e a pessoa com TEA é pessoa com deficiência para todos os efeitos legais (Lei 12.764/2012)."
+    },
+    {
+      "question": "Jovem de 23 anos é trazido pela mãe à UBS: há dois meses ouve vozes que o ameaçam, isolou-se e parou de trabalhar. Não há agitação, intoxicação nem risco iminente. O município tem CAPS II. Onde e como ele deve ser cuidado?",
+      "options": [
+        "No CAPS, de porta aberta, com a UBS seguindo junto no cuidado",
+        "Só na UBS, com antipsicótico e retorno agendado em seis meses",
+        "Em hospital psiquiátrico, por se tratar do primeiro surto psicótico",
+        "No ambulatório de psiquiatria, com alta da equipe de Saúde da Família"
+      ],
+      "correctIndex": 0,
+      "explanation": "(MFC · Transtorno mental comum) Psicose é transtorno grave, cuidado no CAPS — porta aberta, sem exigir encaminhamento —, enquanto a UBS segue acompanhando, porque a RAPS é rede, não escada. Sem risco iminente, não há indicação de urgência nem de internação, que pela Lei 10.216 só cabe quando os recursos extra-hospitalares forem insuficientes."
+    },
+    {
+      "question": "Homem de 63 anos, etilista há 30 anos, queixa-se de \"tontura\" ao caminhar, sem giro. Anda com base alargada e já é instável de olhos abertos, com Romberg negativo e sensibilidade preservada nos pés. O tipo de tontura e a origem provável são:",
+      "options": [
+        "Desequilíbrio de origem cerebelar, a ser avaliado pela neurologia",
+        "Desequilíbrio proprioceptivo, típico da neuropatia periférica",
+        "Vertigem periférica por VPPB, a tratar com manobra de reposição",
+        "Pré-síncope por hipotensão ortostática ligada ao uso de álcool"
+      ],
+      "correctIndex": 0,
+      "explanation": "(MFC · Tontura) Instabilidade sem giro é desequilíbrio. Quando ela já existe de olhos abertos e não piora ao fechá-los (Romberg negativo), com sensibilidade preservada, a origem provável é cerebelar — e desequilíbrio com sinais cerebelares é caso para a neurologia. Romberg positivo, ao contrário, indica déficit proprioceptivo, como na neuropatia diabética."
+    },
+    {
+      "question": "Uma revisão sistemática reúne cinco ensaios randomizados bem conduzidos sobre o mesmo tratamento: dois mostram grande benefício, dois mostram dano e um é neutro, com alta heterogeneidade. Pelo GRADE, qual o ponto de partida da certeza e o motivo para rebaixá-la?",
+      "options": [
+        "Começa alta e é rebaixada por inconsistência entre os estudos",
+        "Começa baixa e é rebaixada por inconsistência entre os estudos",
+        "Começa alta e é rebaixada por evidência indireta da população",
+        "Começa moderada e é rebaixada por viés de publicação"
+      ],
+      "correctIndex": 0,
+      "explanation": "(MFC · Saúde baseada em evidências) No GRADE, ensaios randomizados começam com certeza alta e observacionais com certeza baixa. Resultados discordantes entre os estudos, com alta heterogeneidade, são inconsistência — um dos cinco motivos de rebaixamento, ao lado de risco de viés, evidência indireta, imprecisão e viés de publicação. Nada sugere população diferente da que interessa, o que seria evidência indireta."
+    },
+    {
+      "question": "Homem de 44 anos com epilepsia em uso de carbamazepina fuma 30 cigarros por dia, acende o primeiro logo ao acordar e tem Fagerström de 8. Decidiu parar. Pelo protocolo do SUS, qual farmacoterapia associar à abordagem comportamental?",
+      "options": [
+        "Adesivo de nicotina a partir do dia D, combinado à goma ou pastilha",
+        "Bupropiona iniciada de uma a duas semanas antes da data do dia D",
+        "Vareniclina em monoterapia, por ser o fármaco do elenco do SUS",
+        "Cigarro eletrônico com redução gradual da concentração de nicotina"
+      ],
+      "correctIndex": 0,
+      "explanation": "(MFC · Álcool e drogas) Ele tem indicação de farmacoterapia (20 ou mais cigarros por dia, Fagerström de 5 ou mais), mas a bupropiona é contraindicada na epilepsia. Resta a reposição de nicotina: adesivo a partir do dia D, e a combinação com goma ou pastilha é mais eficaz que uma forma isolada. A vareniclina não integra o elenco do protocolo do SUS, e o cigarro eletrônico tem venda proibida e não é tratamento."
+    }
+  ]
+}

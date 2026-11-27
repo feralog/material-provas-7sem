@@ -1,0 +1,448 @@
+{
+  "titulo": "Simulado SCA III",
+  "eyebrow": "Simulado · Saúde da Criança e do Adolescente III",
+  "subtitulo": "Quarenta questões inéditas para medir o que você sabe",
+  "intro": "40 questões objetivas misturando Endocrinologia, Oncologia, Imunologia e alergia, Nefrologia, Adolescência e saúde mental e Ortopedia pediátricas, quase todas em caso clínico. Tempo sugerido: 60 minutos, sem consulta. A explicação de cada questão começa pela área e pelo tema.",
+  "questoes": [
+    {
+      "question": "Lactente de 10 meses tem ptose palpebral e miose à direita, com menos suor na hemiface do mesmo lado. A radiografia de tórax mostra massa paravertebral no ápice do hemitórax direito. Qual o diagnóstico mais provável?",
+      "options": [
+        "Neuroblastoma cervicotorácico",
+        "Linfoma de Hodgkin mediastinal",
+        "Teratoma do mediastino anterior",
+        "Timo hiperplásico do lactente"
+      ],
+      "correctIndex": 0,
+      "explanation": "(Oncologia · Tumores sólidos) Ptose, miose e anidrose compõem a síndrome de Horner, que no lactente com massa paravertebral apical aponta para neuroblastoma cervicotorácico, tumor da cadeia simpática. Massa de mediastino posterior em lactente é tumor neurogênico até prova em contrário; linfoma, teratoma e timo ocupam o mediastino anterior e não lesam a cadeia simpática dessa forma."
+    },
+    {
+      "question": "Adolescente de 13 anos com DM1, em esquema basal-bolus, está com gastroenterite e come pouco; há um dia a mãe suspendeu toda a insulina “para não dar hipoglicemia”. Glicemia de 310 mg/dL e β-hidroxibutirato capilar de 1,8 mmol/L; está consciente, sem vômitos persistentes, sem taquipneia e bebendo líquidos. Qual a orientação?",
+      "options": [
+        "Retomar a insulina, com doses extras e checagem de cetonas",
+        "Manter a insulina suspensa enquanto ele não voltar a comer",
+        "Suspender só a prandial e manter a basal na dose habitual",
+        "Trocar a insulina por metformina até a gastroenterite passar"
+      ],
+      "correctIndex": 0,
+      "explanation": "(Endocrinologia · Diabetes) Em dia de doença a necessidade de insulina SOBE para 1,2 a 1,5 U/kg/dia; suspender a insulina porque a criança come pouco é o erro clássico que precipita cetoacidose. Com glicemia acima de 300 mg/dL e cetonemia moderada, mas sem sinal de alarme, retoma-se a insulina com doses mais frequentes, hidratação oral e monitorização de cetonas. Manter só a basal habitual subtrata uma necessidade que aumentou."
+    },
+    {
+      "question": "Adolescente de 15 anos, sexo feminino, tem edema, hematúria com cilindros hemáticos e PA elevada, além de artralgias, úlceras orais e eritema malar. C3 e C4 estão baixos e o FAN é positivo; não houve faringite nem impetigo recentes. Qual a hipótese mais provável?",
+      "options": [
+        "Nefrite lúpica no lúpus eritematoso sistêmico",
+        "Glomerulonefrite pós-estreptocócica típica",
+        "Nefropatia por IgA com hematúria recorrente",
+        "Doença de lesões mínimas com quadro atípico"
+      ],
+      "correctIndex": 0,
+      "explanation": "(Nefrologia · Síndromes glomerulares) Síndrome nefrítica com sintomas sistêmicos (artralgia, úlceras orais, eritema malar), FAN positivo e consumo de C3 e C4 aponta para nefrite lúpica, mais prevalente na adolescente do que na criança pequena. Na GNPE o C3 cai, mas o C4 é normal e há infecção estreptocócica prévia; a nefropatia por IgA cursa com complemento normal; lesões mínimas é nefrótica, sem cilindros hemáticos."
+    },
+    {
+      "question": "Adolescente de 15 anos, tratado há 1 ano como “TDAH grave” sem resposta ao metilfenidato, tem fases de dias com euforia, fala acelerada, quase sem dormir e com planos grandiosos, que se alternam com períodos de tristeza e desânimo. Qual hipótese deve ser considerada?",
+      "options": [
+        "Transtorno bipolar, cuja desatenção imita o TDAH",
+        "TDAH refratário, que pede dose maior de estimulante",
+        "Transtorno de ansiedade generalizada com insônia",
+        "Transtorno de ajustamento com perturbação mista"
+      ],
+      "correctIndex": 0,
+      "explanation": "(Adolescência e saúde mental · Saúde mental) Euforia, pensamento e fala acelerados, pouca necessidade de sono e grandiosidade, alternando com fases depressivas, configuram transtorno bipolar. A desatenção extrema da elevação do humor é justamente o que leva ao rótulo de TDAH grave com má resposta ao tratamento: diante de TDAH refratário, pense em transtorno de humor. Aumentar o estimulante não trata a causa."
+    },
+    {
+      "question": "No recém-nascido, como se interpreta uma IgG específica positiva contra um agente de infecção congênita, como o toxoplasma?",
+      "options": [
+        "Pode ser materna: seguir a curva, que deve cair",
+        "Confirma infecção, pois a IgG foi feita pelo feto",
+        "Exclui infecção, por ser anticorpo protetor",
+        "Indica imunidade ativa duradoura do recém-nascido"
+      ],
+      "correctIndex": 0,
+      "explanation": "(Imunologia e alergia · Imunidade) A IgG é a única imunoglobulina que atravessa a placenta (via FcRn, sobretudo no 3º trimestre), então a IgG específica do recém-nascido pode ser só a da mãe. Ela se interpreta por curva: títulos que caem acompanham o catabolismo do anticorpo materno; títulos que sobem ou persistem indicam produção própria e infecção. Quem prova produção fetal é a IgM, que não cruza a placenta."
+    },
+    {
+      "question": "Adolescente de 14 anos com doença de Graves usa metimazol 0,5 mg/kg/dia. Após 5 semanas está sem sintomas, com T4 livre e T3 normais, mas o TSH continua suprimido. Qual a conduta?",
+      "options": [
+        "Reduzir a dose do metimazol em 30 a 50%",
+        "Aumentar a dose até normalizar o TSH suprimido",
+        "Trocar o metimazol por propiltiouracil",
+        "Indicar radioiodo pela falta de resposta do TSH"
+      ],
+      "correctIndex": 0,
+      "explanation": "(Endocrinologia · Tireoide) Normalizados T4 livre e T3, a dose do metimazol é reduzida em 30 a 50%. O TSH costuma ficar suprimido nos primeiros meses e não deve ser usado para aumentar a dose — fazê-lo leva ao hipotireoidismo iatrogênico. O propiltiouracil é contraindicado em crianças pela hepatotoxicidade, e o tratamento definitivo fica para efeito adverso grave, recidiva após tratamento prolongado ou má adesão."
+    },
+    {
+      "question": "Menina de 6 anos tem febre de 39 °C, não apoia a perna direita, VHS de 55 mm/h e leucócitos de 15.800/mm³. Pelos critérios de Kocher, qual a probabilidade de artrite séptica do quadril e a conduta?",
+      "options": [
+        "Cerca de 99%: artrocentese guiada por ultrassom e drenagem",
+        "Cerca de 40%: anti-inflamatório e reavaliação em 48 horas",
+        "Cerca de 3%: sinovite transitória, repouso e observação",
+        "Cerca de 93%: antibiótico oral e alta com retorno breve"
+      ],
+      "correctIndex": 0,
+      "explanation": "(Ortopedia · Doenças musculoesqueléticas) Os quatro critérios de Kocher estão presentes: febre acima de 38,5 °C, incapacidade de apoiar, VHS acima de 40 mm/h e leucócitos acima de 12.000/mm³ — probabilidade de cerca de 99% de artrite séptica (93% com três critérios, 40% com dois). É emergência: artrocentese guiada por ultrassom, hemocultura, drenagem cirúrgica e antibiótico venoso. Tratar como sinovite transitória atrasa a drenagem e ameaça a articulação."
+    },
+    {
+      "question": "Adolescente de 16 anos teve, há 30 horas, relação sem preservativo com parceiro que vive com HIV e abandonou o tratamento. O teste rápido dela para HIV é negativo. Qual a conduta em relação ao HIV?",
+      "options": [
+        "Iniciar PEP agora e mantê-la por 28 dias completos",
+        "Iniciar PrEP contínua, sem necessidade de PEP",
+        "Não há indicação: já se passaram mais de 24 horas",
+        "Repetir o teste em 30 dias antes de qualquer profilaxia"
+      ],
+      "correctIndex": 0,
+      "explanation": "(Adolescência e saúde mental · Saúde sexual) Relação sem preservativo com parceria HIV positiva sem supressão viral, dentro de 72 horas, é indicação de PEP: iniciar o quanto antes e manter por 28 dias, com testagem antes e seguimento depois. A PrEP é para risco continuado e não substitui a PEP numa exposição já ocorrida; a janela é de até 72 horas, não 24, e esperar 30 dias para testar a perde."
+    },
+    {
+      "question": "Menino de 8 anos com leucemia, no 10º dia após quimioterapia e com 200 neutrófilos/mm³, tem febre, distensão e dor em fossa ilíaca direita. A tomografia mostra parede do ceco espessada (7 mm), sem pneumoperitônio nem sangramento. Qual a conduta?",
+      "options": [
+        "Repouso intestinal, antibiótico com cobertura anaeróbia e suporte",
+        "Apendicectomia de urgência pela dor em fossa ilíaca direita",
+        "Colectomia direita imediata pelo espessamento cecal visto",
+        "Antibiótico só para gram-positivos e manter a quimioterapia"
+      ],
+      "correctIndex": 0,
+      "explanation": "(Oncologia · Emergências oncológicas) É tiflite (enterocolite neutropênica): neutropenia, dor em fossa ilíaca direita e parede cecal espessada acima de 4 mm. O manejo é conservador — repouso intestinal, sonda nasogástrica se houver íleo, hidratação, antibiótico de amplo espectro com cobertura para anaeróbios, correção de plaquetas e coagulação e suspensão da quimioterapia. Cirurgia só em perfuração, hemorragia incontrolável ou piora apesar do tratamento clínico."
+    },
+    {
+      "question": "Adolescente de 17 anos, sexo feminino, já com estatura final: cintura de 84 cm, triglicerídeos de 162 mg/dL, HDL-c de 46 mg/dL, PA de 118/76 mmHg e glicemia de jejum de 91 mg/dL. Pelos critérios da IDF, qual a conclusão?",
+      "options": [
+        "Tem: cintura, triglicerídeos e HDL estão todos alterados",
+        "Não tem: o HDL só é critério se abaixo de 40 mg/dL",
+        "Não tem: exige também pressão ou glicemia alteradas",
+        "Não tem: a cintura feminina só conta a partir de 90 cm"
+      ],
+      "correctIndex": 0,
+      "explanation": "(Endocrinologia · Síndrome metabólica) A partir dos 16 anos valem os critérios de adulto da IDF: cintura de 80 cm ou mais na mulher (obrigatória) e HDL abaixo de 50 mg/dL no sexo feminino. Ela tem cintura de 84 cm, triglicerídeos acima de 150 e HDL de 46 — obesidade central mais dois critérios, o que fecha síndrome metabólica. O corte de HDL < 40 vale para a faixa de 10 a menos de 16 anos e para o homem adulto; 90 cm é a cintura masculina."
+    },
+    {
+      "question": "Menino de 9 meses, sem intercorrências até os 6 meses, teve desde então duas pneumonias pneumocócicas e otites de repetição. IgG, IgA e IgM estão muito baixas; os linfócitos T são normais e os linfócitos B, praticamente ausentes. Qual o diagnóstico e o tratamento?",
+      "options": [
+        "Agamaglobulinemia; reposição de IgG e profilaxia",
+        "SCID; transplante de células-tronco de urgência",
+        "Deficiência seletiva de IgA; só tratar as infecções",
+        "Nadir fisiológico; reavaliar após os 2 anos de idade"
+      ],
+      "correctIndex": 0,
+      "explanation": "(Imunologia e alergia · Imunodeficiências) Infecções por encapsuladas que começam quando a IgG materna se esgota, com pan-hipogamaglobulinemia e linfócitos B praticamente ausentes, definem agamaglobulinemia — a forma ligada ao X responde por cerca de 85% e é típica do menino. Trata-se com reposição de IgG, profilaxia antibiótica ou ambas. Na SCID haveria oportunistas e falha da imunidade celular; o nadir fisiológico não zera os linfócitos B."
+    },
+    {
+      "question": "Criança de 6 anos em choque séptico tinha creatinina de 0,4 mg/dL ontem e tem 0,9 mg/dL hoje, ainda em ascensão. O residente aplica a fórmula de Schwartz para descrever a TFG atual. Qual o problema dessa conduta?",
+      "options": [
+        "A TFGe só vale com a creatinina em equilíbrio",
+        "A fórmula de Schwartz só vale acima dos 12 anos",
+        "Na sepse, a creatinina superestima a TFG real",
+        "A estatura não entra no cálculo em criança grave"
+      ],
+      "correctIndex": 0,
+      "explanation": "(Nefrologia · Função renal) Toda equação de TFG estimada pressupõe creatinina em equilíbrio; na lesão renal aguda a creatinina sobe com atraso e a TFGe perde validade. O raciocínio certo aqui é o do KDIGO: a creatinina mais que dobrou em 24 horas, o que define lesão renal aguda e permite estadiá-la pelo múltiplo do basal. A fórmula de Schwartz é pediátrica e usa justamente a estatura."
+    },
+    {
+      "question": "Adolescente de 16 anos, com peso normal e preocupação intensa com a forma do corpo, revela vômitos autoinduzidos após episódios de compulsão, 3 vezes por semana há 5 meses. Hemograma, eletrólitos e ECG vieram normais, e os pais concluem que “não é nada”. Qual a interpretação?",
+      "options": [
+        "Bulimia nervosa: exames normais não afastam o transtorno",
+        "Não é transtorno alimentar, pois o peso está normal",
+        "Transtorno de compulsão alimentar, por haver compulsão",
+        "Transtorno de purgação, por haver vômitos recorrentes"
+      ],
+      "correctIndex": 0,
+      "explanation": "(Adolescência e saúde mental · Transtornos alimentares) Compulsão seguida de comportamento compensatório, em média 1 vez por semana ou mais por 3 meses, com autoavaliação dominada pelo corpo, é bulimia nervosa — e o peso normal é a regra, o que explica o atraso diagnóstico. O laboratório pode vir inteiramente normal com transtorno ativo e não afasta a doença. No transtorno de compulsão alimentar não há purgação; no transtorno de purgação não há compulsão."
+    },
+    {
+      "question": "Adolescente de 16 anos percebeu há 1 mês um nódulo endurecido e indolor no testículo esquerdo, que vem crescendo. Está em bom estado geral, sem febre, palidez ou adenomegalias, e a transiluminação é negativa. Qual o exame de imagem inicial?",
+      "options": [
+        "Ultrassonografia da bolsa escrotal",
+        "Tomografia de abdome e da pelve",
+        "Ressonância magnética da pelve",
+        "Cintilografia testicular com tecnécio"
+      ],
+      "correctIndex": 0,
+      "explanation": "(Oncologia · Câncer na infância) Massa testicular endurecida, indolor e progressiva, sem sinais sistêmicos e com transiluminação negativa, sugere tumor de células germinativas; diante de aumento testicular isolado, o exame de imagem inicial é a ultrassonografia da bolsa escrotal. Alfafetoproteína e beta-hCG são colhidas antes da orquiectomia, como linha de base. Com febre, palidez ou adenomegalia, o hemograma passaria à frente, pela hipótese de infiltração leucêmica."
+    },
+    {
+      "question": "Menina de 14 anos, ginasta de alto rendimento, treina 5 horas por dia e tem IMC baixo. Ainda não iniciou a telarca. LH e FSH estão baixos, o olfato é normal, a ressonância de sela é normal e os pais tiveram puberdade na idade habitual. Qual a hipótese mais provável?",
+      "options": [
+        "Hipogonadismo hipogonadotrófico funcional pelo treino intenso",
+        "Síndrome de Kallmann por falha de migração dos neurônios",
+        "Hipogonadismo hipergonadotrófico por falência ovariana",
+        "Síndrome de Turner com falência gonadal primária"
+      ],
+      "correctIndex": 0,
+      "explanation": "(Endocrinologia · Puberdade) Sem telarca aos 13 anos há atraso puberal; LH e FSH baixos indicam hipogonadismo hipogonadotrófico. Com treinamento físico intenso e baixo peso, a forma funcional é a mais provável: o eixo está íntegro e a puberdade se instala quando o fator causal é corrigido. Kallmann teria anosmia; Turner e falência ovariana cursam com LH e FSH elevados."
+    },
+    {
+      "question": "Menino de 6 anos, 20 kg, tem urticária generalizada, chiado e hipotensão poucos minutos após comer amendoim. Qual a primeira medicação, com dose e via?",
+      "options": [
+        "Adrenalina 1:1000, 0,2 mL IM na face lateral da coxa",
+        "Adrenalina 1:1000, 0,2 mL subcutânea no deltoide",
+        "Adrenalina 1:1000, 2 mL IM na face lateral da coxa",
+        "Prometazina IM e hidrocortisona IV, depois adrenalina"
+      ],
+      "correctIndex": 0,
+      "explanation": "(Imunologia e alergia · Alergia e atopia) Pele, respiratório e cardiovascular acometidos após alérgeno é anafilaxia, e a primeira medida é adrenalina 1:1000 a 0,01 mL/kg — 0,2 mL (0,2 mg) para 20 kg, abaixo do máximo de 0,3 mg na criança —, intramuscular na face anterolateral da coxa, repetível a cada 5 a 15 minutos. Subcutânea e deltoide atingem pico mais lento; anti-histamínico e corticoide são adjuvantes e nunca vêm antes."
+    },
+    {
+      "question": "Menino de 4 anos com síndrome nefrótica em anasarca e ascite volumosa, ainda sem remissão, apresenta febre de 38,8 °C e dor abdominal difusa com defesa à palpação. Qual complicação deve ser suspeitada primeiro?",
+      "options": [
+        "Peritonite bacteriana espontânea",
+        "Recidiva simples da proteinúria",
+        "Trombose da veia renal esquerda",
+        "Efeito colateral do corticoide"
+      ],
+      "correctIndex": 0,
+      "explanation": "(Nefrologia · Síndromes glomerulares) Febre com dor abdominal em criança nefrótica com ascite deve levantar peritonite bacteriana espontânea: a perda urinária de IgG torna a infecção uma das quatro complicações a não perder, ao lado de trombose, hipovolemia e lesão renal aguda. A trombose se denuncia mais por dor ou assimetria de membro, e recidiva da proteinúria não explica febre com defesa abdominal."
+    },
+    {
+      "question": "Menino de 13 anos, com pelos pubianos em Tanner 3 e volume testicular de 8 mL, notou há 4 meses um nódulo de 2 cm, discretamente doloroso, sob as duas aréolas. O restante do exame é normal. Qual a conduta?",
+      "options": [
+        "Tranquilizar e acompanhar: tende a regredir em até 2 anos",
+        "Dosar estradiol, testosterona e hCG antes de qualquer conduta",
+        "Indicar mamografia pelo risco de neoplasia mamária",
+        "Iniciar tamoxifeno para evitar que a ginecomastia persista"
+      ],
+      "correctIndex": 0,
+      "explanation": "(Adolescência e saúde mental · Adolescência) A ginecomastia puberal é frequente, benigna e transitória: começa por volta dos 10 a 12 anos, tem pico aos 13 a 14, em geral com pelos em Tanner 3 e testículos de 8 a 10 mL, e regride em 6 a 24 meses. Com o restante do exame normal, a conduta é explicar a benignidade e acompanhar, sem exames de rotina nem tratamento medicamentoso."
+    },
+    {
+      "question": "Qual a natureza mais provável de uma massa abdominal palpável descoberta no exame de um recém-nascido em bom estado geral?",
+      "options": [
+        "Renal e benigna, como hidronefrose ou rim multicístico",
+        "Neuroblastoma suprarrenal, o tumor sólido mais comum",
+        "Tumor de Wilms, que tem pico no período neonatal",
+        "Linfoma de Burkitt com massa retroperitoneal"
+      ],
+      "correctIndex": 0,
+      "explanation": "(Oncologia · Tumores sólidos) No recém-nascido, a maioria das massas abdominais é renal e benigna — hidronefrose e rim multicístico displásico —, e a ultrassonografia é o primeiro exame. O neuroblastoma predomina no lactente (mediana de 18 meses), o tumor de Wilms tem pico entre 2 e 5 anos e o linfoma de Burkitt é do escolar."
+    },
+    {
+      "question": "No DM2 do adolescente, sem cetose nem acidose, se a meta de HbA1c abaixo de 7% não for atingida após 4 semanas de metformina em monoterapia, qual o próximo passo?",
+      "options": [
+        "Associar insulina basal, mantendo a metformina",
+        "Trocar a metformina por insulina prandial isolada",
+        "Manter só a metformina e reavaliar em seis meses",
+        "Associar insulina prandial antes de tentar a basal"
+      ],
+      "correctIndex": 0,
+      "explanation": "(Endocrinologia · Diabetes) Se a HbA1c abaixo de 7% não é alcançada em 4 semanas de metformina em monoterapia, associa-se insulina basal, mantendo a metformina; persistindo fora do alvo, entra a insulina prandial. Abandonar a metformina ou começar pela prandial inverte a sequência, e esperar 6 meses é inércia terapêutica num DM2 juvenil, cuja falência de célula beta é mais rápida que a do adulto."
+    },
+    {
+      "question": "Adolescente de 14 anos tem há 6 semanas tristeza, desânimo e queda do rendimento escolar, mas mantém a rotina, sem ideação suicida nem sintomas psicóticos; o quadro é classificado como depressão leve. A mãe pede “um remédio”. Qual a conduta inicial?",
+      "options": [
+        "Psicoterapia, psicoeducação e orientação familiar",
+        "Iniciar ISRS de imediato, associado à psicoterapia",
+        "Carbonato de lítio como estabilizador do humor",
+        "Internação para garantir a segurança do paciente"
+      ],
+      "correctIndex": 0,
+      "explanation": "(Adolescência e saúde mental · Saúde mental) Na depressão leve a moderada a conduta é psicoterapia, psicoeducação e orientação familiar, com redução dos estressores e apoio da escola. O ISRS é associado na depressão grave, a internação serve para garantir segurança quando há risco e o lítio é a droga do transtorno bipolar. Reavaliar e rastrear ideação suicida faz parte do seguimento."
+    },
+    {
+      "question": "Menina de 12 anos tem dor abdominal periumbilical intermitente há 6 meses, que não a acorda à noite, sem diarreia, sem perda de peso e com crescimento normal. Hemograma, albumina, PCR e calprotectina fecal são normais. Qual a interpretação mais adequada?",
+      "options": [
+        "Sem sinais de alarme: favorece dor funcional, não DII",
+        "Calprotectina normal não altera a chance de DII",
+        "Indica colonoscopia com biópsias de imediato",
+        "Sugere doença de Crohn de forma ainda silenciosa"
+      ],
+      "correctIndex": 0,
+      "explanation": "(Imunologia e alergia · Imunidade) Sem sinais de alarme de DII — curso com diarreia noturna, dor que acorda, perda de peso, anemia, hipoalbuminemia, marcadores inflamatórios altos, lesão perianal — e com calprotectina fecal normal, o quadro favorece dor abdominal funcional. A calprotectina sobe quando há migração de neutrófilos para a mucosa e é o marcador que separa diarreia inflamatória de funcional; a colonoscopia com biópsias é para quem tem suspeita de DII."
+    },
+    {
+      "question": "Menina de 12 anos tem nódulo tireoidiano sólido de 1,5 cm, de crescimento lento e sem adenopatia cervical. O TSH está suprimido, com T4 livre no limite superior. Qual o próximo passo mais adequado?",
+      "options": [
+        "Cintilografia, pela suspeita de nódulo autônomo",
+        "Tireoidectomia total, pelo alto risco na infância",
+        "Calcitonina sérica, pela suspeita de carcinoma medular",
+        "Dosar TRAb e iniciar metimazol como na doença de Graves"
+      ],
+      "correctIndex": 0,
+      "explanation": "(Endocrinologia · Tireoide) TSH suprimido diante de nódulo sugere nódulo autônomo, de baixo risco de malignidade, a ser confirmado por cintilografia (nódulo hipercaptante). Tireoidectomia total é conduta para Bethesda V/VI, e a calcitonina é dosada quando há história familiar, sinais de NEM 2 ou citologia suspeita. Sem TSH suprimido, o nódulo sólido de 1 cm ou mais seguiria para ultrassonografia e PAAF."
+    },
+    {
+      "question": "Menino de 7 anos com linfoma de Burkitt e massa abdominal volumosa mantém, apesar de hidratação vigorosa e rasburicase, oligúria, potássio de 7,1 mEq/L e sobrecarga de volume. Indicada a diálise, qual a modalidade preferida?",
+      "options": [
+        "Hemodiálise, que corrige eletrólitos e remove o ácido úrico",
+        "Diálise peritoneal, menos invasiva e bem tolerada na criança",
+        "Diálise peritoneal, pois a massa abdominal não interfere nela",
+        "Nenhuma: a diálise é proibida na síndrome de lise tumoral"
+      ],
+      "correctIndex": 0,
+      "explanation": "(Oncologia · Emergências oncológicas) Quando a farmacologia falha e persistem oligúria, hipercalemia ou hipervolemia, indica-se diálise, e a preferida é a hemodiálise: corrige eletrólitos mais rápido e remove ácido úrico, o que a peritoneal não faz. Além disso, a diálise peritoneal é contraindicada quando há massa abdominal ou pélvica — cenário comum no Burkitt."
+    },
+    {
+      "question": "Menino de 9 anos com glomerulonefrite pós-estreptocócica está internado com restrição de sal e água e furosemida. A PA segue em 138/90 mmHg e o potássio é 5,9 mEq/L. Qual anti-hipertensivo é o mais adequado?",
+      "options": [
+        "Anlodipina, evitando o IECA pela hipercalemia",
+        "Captopril, pela proteção renal que oferece",
+        "Espironolactona, para potencializar a diurese",
+        "Propranolol, para controlar a frequência"
+      ],
+      "correctIndex": 0,
+      "explanation": "(Nefrologia · Síndromes glomerulares) Persistindo a hipertensão apesar de restrição de sal e água e diurético de alça, associa-se anti-hipertensivo como anlodipina ou hidralazina. O IECA entra com cautela na GNPE pelo risco de hipercalemia — e aqui o potássio já está em 5,9 mEq/L; a espironolactona retém potássio pelo mesmo motivo. Hipercalemia acima de 6,5 mEq/L refratária é uma das indicações de diálise."
+    },
+    {
+      "question": "Menina de 9 anos desenvolve, há 3 semanas, movimentos involuntários e desajeitados das mãos e da face, labilidade emocional e piora da letra. Não tem febre nem artrite, e o exame cardíaco é normal. Qual a interpretação pelos critérios de Jones?",
+      "options": [
+        "Coreia de Sydenham: basta sozinha para febre reumática",
+        "Não é febre reumática: falta um segundo critério maior",
+        "Tique transitório da infância, sem relação reumática",
+        "Precisa de dois critérios menores para fechar Jones"
+      ],
+      "correctIndex": 0,
+      "explanation": "(Ortopedia · Doenças musculoesqueléticas) Movimentos involuntários, labilidade emocional e piora da escrita descrevem a coreia de Sydenham, critério maior que, ao lado da cardite indolente, basta sozinho para o diagnóstico de febre reumática. Todo caso suspeito faz ecocardiograma, porque a cardite subclínica conta como critério maior, e inicia profilaxia secundária com penicilina benzatina a cada 21 dias."
+    },
+    {
+      "question": "Menina de 5 anos tem linfonodomegalias generalizadas e esplenomegalia há mais de um ano, com anemia hemolítica autoimune e plaquetopenia imune, sem infecções graves. A biópsia de linfonodo não mostra malignidade. Qual o diagnóstico mais provável?",
+      "options": [
+        "Síndrome linfoproliferativa autoimune (ALPS)",
+        "Síndrome IPEX por perda de função do FOXP3",
+        "Imunodeficiência combinada grave (SCID)",
+        "Agamaglobulinemia ligada ao cromossomo X"
+      ],
+      "correctIndex": 0,
+      "explanation": "(Imunologia e alergia · Imunodeficiências) Linfoproliferação crônica não maligna (adenomegalia e esplenomegalia) com autoimunidade contra células do sangue, sem infecções, é o retrato da ALPS: defeito da apoptose linfocitária, classicamente pelo gene FAS. A IPEX é do lactente do sexo masculino, com enteropatia e endocrinopatias; SCID e agamaglobulinemia se apresentam por infecções."
+    },
+    {
+      "question": "Em adolescente com enxaqueca com aura que deseja contracepção, qual método está contraindicado?",
+      "options": [
+        "Pílula combinada de estrogênio e progestágeno",
+        "Implante subdérmico liberador de etonogestrel",
+        "Dispositivo intrauterino de cobre, sem hormônio",
+        "Sistema intrauterino liberador de levonorgestrel"
+      ],
+      "correctIndex": 0,
+      "explanation": "(Adolescência e saúde mental · Saúde sexual) A pílula combinada é contraindicada na enxaqueca com aura e em outros riscos vasculares, pelo componente estrogênico. Implante, DIU de cobre e SIU de levonorgestrel não têm estrogênio e são métodos de longa duração, preferidos na adolescência por não dependerem da adesão diária — sempre somados ao preservativo, na dupla proteção."
+    },
+    {
+      "question": "Na avaliação de linfonodomegalia periférica na criança e no adolescente, qual localização torna o linfonodo suspeito de malignidade em qualquer idade, mesmo quando pequeno?",
+      "options": [
+        "Fossa supraclavicular",
+        "Cadeia submandibular",
+        "Cervical anterior alta",
+        "Inguinal superficial"
+      ],
+      "correctIndex": 0,
+      "explanation": "(Oncologia · Câncer na infância) Linfonodo supraclavicular é sempre suspeito, em qualquer idade. Também levantam suspeita o linfonodo maior que 2,5 cm, endurecido, aderido a planos profundos, que cresce progressivamente ou que persiste por mais de 4 a 6 semanas sem explicação. Linfonodos cervicais, submandibulares e inguinais pequenos e móveis costumam ser reacionais."
+    },
+    {
+      "question": "Adolescente de 15 anos tem IMC de 36 kg/m² (122% do P95), sem nenhuma comorbidade, após um ano de terapia comportamental adequada e sem transtorno alimentar. A família pergunta sobre cirurgia bariátrica. Qual a resposta?",
+      "options": [
+        "Ainda não: na classe 2 a cirurgia exige comorbidade",
+        "Sim: IMC acima de 35 já basta em qualquer situação",
+        "Não: a cirurgia só é permitida após os 18 anos",
+        "Sim: a classe 2 dispensa comorbidade após os 13 anos"
+      ],
+      "correctIndex": 0,
+      "explanation": "(Endocrinologia · Síndrome metabólica) IMC de 35 ou mais, ou 120% do P95, é obesidade classe 2, e nessa classe a bariátrica no adolescente de 13 anos ou mais exige comorbidade clinicamente significativa. Só na classe 3 (IMC de 40 ou mais, ou 140% do P95) a comorbidade é dispensada. Não há exigência de 18 anos; mantém-se a terapia comportamental intensiva e reavalia-se."
+    },
+    {
+      "question": "Adolescente de 14 anos com anorexia nervosa tem IMC de 14,4 kg/m²; o IMC do percentil 50 para idade e sexo é 19,2 kg/m². Está estável, sem distúrbio eletrolítico nem alteração cardíaca. O que esse dado indica?",
+      "options": [
+        "75% do esperado: já é critério de internação",
+        "75% do esperado: seguir em ambulatório",
+        "85% do esperado: desnutrição apenas leve",
+        "65% do esperado: desnutrição já grave"
+      ],
+      "correctIndex": 0,
+      "explanation": "(Adolescência e saúde mental · Transtornos alimentares) O %IMC é o IMC do paciente dividido pelo IMC do percentil 50, vezes 100: 14,4 ÷ 19,2 × 100 = 75%. IMC igual ou abaixo de 75% do esperado já é critério de internação, mesmo sem distúrbio eletrolítico ou cardíaco. Pelo DSM-5, 70 a 79% corresponde a gravidade moderada — a internação decorre do critério de %IMC, não só do rótulo de gravidade."
+    },
+    {
+      "question": "Por que a trimetoprima pode elevar a creatinina sérica sem uma queda equivalente da taxa de filtração glomerular?",
+      "options": [
+        "Reduz a secreção tubular da creatinina",
+        "Aumenta a produção muscular de creatinina",
+        "Causa vasoconstrição da arteríola aferente",
+        "Interfere na leitura do método enzimático"
+      ],
+      "correctIndex": 0,
+      "explanation": "(Nefrologia · Função renal) A creatinina é eliminada por filtração e por uma pequena secreção tubular. Fármacos que reduzem essa secreção, como a trimetoprima, elevam a creatinina sem queda real equivalente da filtração. É um dos motivos pelos quais a creatinina isolada engana — ao lado da massa muscular, que muda a produção, e do método de dosagem."
+    },
+    {
+      "question": "A falha de qual perfil de linfócito T CD4+ se manifesta clinicamente como candidíase mucocutânea crônica e infecções de pele e intestino?",
+      "options": [
+        "Th17, defensor das barreiras epiteliais",
+        "Th2, ligado à troca de classe para IgE",
+        "Th1, que ativa macrófagos por interferon-gama",
+        "Treg, responsável por encerrar a resposta"
+      ],
+      "correctIndex": 0,
+      "explanation": "(Imunologia e alergia · Imunidade) O Th17, por meio da IL-17, defende as barreiras epiteliais; sua falha se traduz em candidíase mucocutânea e infecções de pele e intestino. O Th1, via interferon-gama, ativa macrófagos contra intracelulares como micobactérias; o Th2 dirige a resposta a helmintos e a troca para IgE; a Treg freia e encerra a resposta."
+    },
+    {
+      "question": "Qual o mecanismo habitual da hipertensão arterial que pode acompanhar o tumor de Wilms?",
+      "options": [
+        "Produção de renina pelo tumor renal",
+        "Liberação de catecolaminas pelo tumor",
+        "Compressão da veia cava inferior",
+        "Hiperaldosteronismo de origem adrenal"
+      ],
+      "correctIndex": 0,
+      "explanation": "(Oncologia · Tumores sólidos) O tumor de Wilms pode cursar com hipertensão arterial por produção de renina, além de hematúria e dor abdominal, em criança tipicamente em bom estado geral. Catecolaminas são a marca do neuroblastoma (VMA e HVA urinários), tumor de origem simpática que cruza a linha média; a invasão da veia renal até a cava ocorre no Wilms, mas não é o que eleva a pressão."
+    },
+    {
+      "question": "Menino de 4 anos com DM1, em múltiplas doses diárias e com família aderente, tem grande variabilidade glicêmica e hipoglicemias nível 2 frequentes. Qual opção terapêutica está indicada?",
+      "options": [
+        "Sistema de infusão contínua com análogo de ação rápida",
+        "Sistema de infusão contínua com insulina NPH humana",
+        "Glargina U-300 uma vez ao dia como insulina basal",
+        "Suspender a insulina prandial e manter só a basal"
+      ],
+      "correctIndex": 0,
+      "explanation": "(Endocrinologia · Diabetes) Idade abaixo de 6 anos, grande variabilidade glicêmica e hipoglicemias nível 2 frequentes estão entre as indicações do sistema de infusão contínua (bomba), que usa somente análogo de ação rápida ou ultrarrápida, como basal programada e bolus. NPH não é usada na bomba, e a glargina U-300 só é aprovada acima de 18 anos."
+    },
+    {
+      "question": "Adolescente de 13 anos é atendida no pronto-socorro após cortes superficiais no antebraço que ela mesma fez. Nega intenção de morrer e pede que nada seja contado aos pais. Qual a conduta quanto ao sigilo e à notificação?",
+      "options": [
+        "Quebrar o sigilo avisando-a e notificar ao SINAN em 24 h",
+        "Manter o sigilo, pois não houve intenção suicida",
+        "Contar aos pais sem avisá-la, para evitar resistência",
+        "Manter o sigilo e notificar apenas se houver reincidência"
+      ],
+      "correctIndex": 0,
+      "explanation": "(Adolescência e saúde mental · Saúde mental) Autoagressão está entre as situações que justificam quebrar o sigilo para proteger a adolescente — e a quebra é feita com o conhecimento dela, explicando os motivos. Autoagressão e tentativa de suicídio são de notificação compulsória ao SINAN em até 24 horas (Lei 13.819/2019). A ausência de intenção suicida não torna o achado benigno: autolesão repetida é fator de risco para tentativa."
+    },
+    {
+      "question": "Adolescente de 16 anos começou a trabalhar lavando louça num restaurante. Há 3 semanas tem ardor, ressecamento e fissuras dolorosas nas mãos, com pouco prurido. Nunca teve eczema. Qual a hipótese e o que a define?",
+      "options": [
+        "Contato irritativa: agressão direta, sem sensibilização",
+        "Contato alérgica: tipo IV, que exige teste de contato",
+        "Dermatite atópica: falha de barreira de padrão flexural",
+        "Escabiose: lesões interdigitais com prurido noturno"
+      ],
+      "correctIndex": 0,
+      "explanation": "(Imunologia e alergia · Alergia e atopia) Ardor, fissuras e dor nas mãos expostas a água e detergente, com pouco prurido, é dermatite de contato irritativa: agressão direta à barreira, sem imunidade específica, que acomete qualquer pessoa com dose e tempo suficientes. A alérgica é hipersensibilidade tipo IV, exige sensibilização prévia, tem prurido predominante e se confirma pelo teste de contato."
+    },
+    {
+      "question": "No recém-nascido com hipotireoidismo congênito e cardiopatia congênita com risco de insuficiência cardíaca, como deve ser iniciada a levotiroxina?",
+      "options": [
+        "Metade da dose habitual de 10-15 mcg/kg/dia, por via oral",
+        "Dose plena de 10-15 mcg/kg/dia, sem ajuste pela cardiopatia",
+        "Adiar a reposição até a correção cirúrgica da cardiopatia",
+        "Dose de adulto, 1,7 mcg/kg/dia, para poupar o coração"
+      ],
+      "correctIndex": 0,
+      "explanation": "(Endocrinologia · Tireoide) A levotiroxina no hipotireoidismo congênito é de 10 a 15 mcg/kg/dia, de preferência nos primeiros 10 dias de vida, mas na cardiopatia congênita com risco de insuficiência cardíaca a dose inicial é reduzida pela metade. Adiar a reposição sacrifica o cérebro, cuja lesão não se corrige depois; 1,7 mcg/kg/dia é a dose acima dos 16 anos."
+    },
+    {
+      "question": "Adolescente de 14 anos, na primeira consulta e sem nenhuma situação de risco, conversa bem a sós, mas fica constrangida e recusa despir-se para o exame físico. Qual a conduta adequada?",
+      "options": [
+        "Respeitar: examinar por partes ou adiar para outra consulta",
+        "Exigir o exame completo, pois a primeira consulta o requer",
+        "Chamar a mãe para convencê-la a se despir na hora",
+        "Encerrar a consulta e encaminhá-la direto à ginecologia"
+      ],
+      "correctIndex": 0,
+      "explanation": "(Adolescência e saúde mental · Adolescência) O exame físico do adolescente é feito com privacidade, craniocaudal e por partes, mantendo vestimentas, e ele decide quem estará presente. Sem situação de risco, não precisa ocorrer na primeira consulta. Forçar o exame ou usar a mãe para convencê-la rompe o vínculo, que é o que sustenta o seguimento."
+    },
+    {
+      "question": "Menina de 5 anos tem telarca progressiva e aceleração do crescimento. O LH basal é suprimido e não sobe após estímulo com GnRH, e o estradiol está elevado. A família pergunta sobre a leuprorrelina. Qual a orientação?",
+      "options": [
+        "Não indicar: é periférica, e a origem provável é gonadal",
+        "Indicar: o análogo bloqueia a secreção ovariana direta",
+        "Indicar após a RM de encéfalo confirmar a origem central",
+        "Não indicar: é telarca precoce isolada, que só se acompanha"
+      ],
+      "correctIndex": 0,
+      "explanation": "(Endocrinologia · Puberdade) LH suprimido que não responde ao estímulo, com estradiol elevado, define puberdade precoce periférica (GnRH-independente) de origem gonadal — cisto ou tumor ovariano, por exemplo. O análogo de GnRH age dessensibilizando a hipófise e não tem efeito quando o esteroide é produzido de forma autônoma. Telarca precoce isolada não cursa com aceleração do crescimento nem estradiol elevado."
+    }
+  ]
+}

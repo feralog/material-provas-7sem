@@ -384,7 +384,21 @@ h1{font-family:'Newsreader',Georgia,serif;font-size:38px;line-height:1.08;font-w
 .pv .bar{height:5px;background:#eee9df;border-radius:9px;margin-top:9px;overflow:hidden}
 .pv .bar i{display:block;height:100%;background:#2b57cc;width:0}
 .pv.past{opacity:.5}
-details.como{background:#eef2fd;border:1px solid #c9d6f7;border-radius:13px;padding:12px 15px;margin-bottom:30px}
+details.como{background:#eef2fd;border:1px solid #c9d6f7;border-radius:13px;padding:12px 15px;margin-bottom:14px}
+.atalhos{background:#fff;border:1px solid #e4e0d8;border-radius:14px;padding:13px 15px 12px;margin-bottom:30px}
+.at-h{font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:#2b57cc;font-weight:600;margin-bottom:8px}
+.at-pv{padding:9px 0;border-top:1px solid #efebe4}
+.at-h+.at-pv{border-top:0;padding-top:2px}
+.at-s{font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;color:#8a8578;margin-bottom:6px}
+.at-ls{display:flex;flex-wrap:wrap;gap:7px}
+a.at{display:flex;flex-direction:column;text-decoration:none;color:#121a2b;border:1px solid #c9d6f7;background:#eef2fd;border-radius:10px;padding:6px 11px}
+a.at:hover{border-color:#2b57cc}
+a.at b{font-size:13.5px;font-weight:600;color:#2b57cc}
+a.at span{font-family:'IBM Plex Mono',monospace;font-size:10.5px;color:#6b7385}
+a.at.ok{background:#faf9f6;border-color:#e4e0d8}
+a.at.ok b{color:#8a8578}
+a.at.ok b::after{content:' ✓';color:#1b7a4b}
+.at-nota{font-size:12px;color:#8a8578;margin-top:6px}
 details.como summary{cursor:pointer;font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:#2b57cc;font-weight:600}
 details.como ul{margin:10px 0 2px;padding-left:18px}details.como li{margin:5px 0;color:#39404f;font-size:13.5px}
 .dia{margin:0 0 22px;scroll-margin-top:16px}
@@ -447,6 +461,9 @@ JS = r"""
       el.querySelector('.bar i').style.width = pct + '%';
       el.querySelector('.f').textContent = pct + '% feito';
     });
+    Array.prototype.forEach.call(document.querySelectorAll('a.at[data-ref]'), function(a){
+      a.classList.toggle('ok', !!feitos[a.getAttribute('data-ref')]);
+    });
   }
   Array.prototype.forEach.call(boxes, function(b){
     var it = b.closest('.it'), id = it.getAttribute('data-id');
@@ -477,6 +494,7 @@ def montar(bc):
     corpo = []
     total = {pid: 0 for pid in PROVAS}
     prova_fechada = set()
+    atalhos = []
 
     def rev(pid):
         return "Revisao/revisao_%s.html" % pid
@@ -534,6 +552,11 @@ def montar(bc):
             if ok and tem_rev(pid):
                 href = "%s#simulado=%s&n=%d&min=%d" % (rev(pid), ",".join(b["slug"] for b in ok), i["n"], i["tempo"])
                 acts.append('<a class="pri" href="%s">Abrir simulado</a>' % e(href))
+                # simulado de prova (questoes novas): vai para a caixa de atalhos do topo
+                if all(q.startswith("simulado_") for q in i["temas"]):
+                    atalhos.append(dict(pid=pid, dia=dia, rot=i["rotulo"].split(" — ")[0], href=href,
+                                        n=i["n"], tempo=i["tempo"],
+                                        ref="%s-%s-%s" % (dia, pid, snake(i["rotulo"]))))
             else:
                 acts.append('<span class="off">em preparo</span>')
         elif modo == "F":
@@ -614,6 +637,22 @@ def montar(bc):
 <li><b>Atrasou?</b> Não empurre o dia seguinte. Pule um “Treinar” e mantenha os “Ler + treinar”; o que ficou para trás aparece na fila e nos simulados.</li>
 <li>O progresso fica salvo neste navegador: o do celular e o do computador são separados.</li>
 </ul></details>"""
+
+    # caixa de atalhos: todos os simulados de prova, agrupados por prova
+    linhas = []
+    for pid, pv in PROVAS.items():
+        dele = [a for a in atalhos if a["pid"] == pid]
+        if not dele:
+            continue
+        links = "".join(
+            '<a class="at" href="%s" data-ref="%s"><b>%s</b><span>%s · %d questões · %d min</span></a>'
+            % (e(a["href"]), e(a["ref"]), e(a["rot"]), fmt_dia(a["dia"]), a["n"], a["tempo"]) for a in dele)
+        linhas.append('<div class="at-pv"><div class="at-s">%s · prova %s</div><div class="at-ls">%s</div></div>'
+                      % (e(pv["sigla"]), fmt_dia(pv["data"]), links))
+    if linhas:
+        como += ('\n<div class="atalhos"><div class="at-h">Atalhos · simulados de prova</div>%s'
+                 '<div class="at-nota">Questões novas, sem consulta e com cronômetro. O ✓ aparece quando você '
+                 'marca o simulado como feito no dia dele.</div></div>' % "".join(linhas))
 
     hoje = date.today()
     pagina = """<!DOCTYPE html>

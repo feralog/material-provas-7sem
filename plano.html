@@ -25,7 +25,21 @@ h1{font-family:'Newsreader',Georgia,serif;font-size:38px;line-height:1.08;font-w
 .pv .bar{height:5px;background:#eee9df;border-radius:9px;margin-top:9px;overflow:hidden}
 .pv .bar i{display:block;height:100%;background:#2b57cc;width:0}
 .pv.past{opacity:.5}
-details.como{background:#eef2fd;border:1px solid #c9d6f7;border-radius:13px;padding:12px 15px;margin-bottom:30px}
+details.como{background:#eef2fd;border:1px solid #c9d6f7;border-radius:13px;padding:12px 15px;margin-bottom:14px}
+.atalhos{background:#fff;border:1px solid #e4e0d8;border-radius:14px;padding:13px 15px 12px;margin-bottom:30px}
+.at-h{font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:#2b57cc;font-weight:600;margin-bottom:8px}
+.at-pv{padding:9px 0;border-top:1px solid #efebe4}
+.at-h+.at-pv{border-top:0;padding-top:2px}
+.at-s{font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;color:#8a8578;margin-bottom:6px}
+.at-ls{display:flex;flex-wrap:wrap;gap:7px}
+a.at{display:flex;flex-direction:column;text-decoration:none;color:#121a2b;border:1px solid #c9d6f7;background:#eef2fd;border-radius:10px;padding:6px 11px}
+a.at:hover{border-color:#2b57cc}
+a.at b{font-size:13.5px;font-weight:600;color:#2b57cc}
+a.at span{font-family:'IBM Plex Mono',monospace;font-size:10.5px;color:#6b7385}
+a.at.ok{background:#faf9f6;border-color:#e4e0d8}
+a.at.ok b{color:#8a8578}
+a.at.ok b::after{content:' ✓';color:#1b7a4b}
+.at-nota{font-size:12px;color:#8a8578;margin-top:6px}
 details.como summary{cursor:pointer;font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:#2b57cc;font-weight:600}
 details.como ul{margin:10px 0 2px;padding-left:18px}details.como li{margin:5px 0;color:#39404f;font-size:13.5px}
 .dia{margin:0 0 22px;scroll-margin-top:16px}
@@ -83,6 +97,7 @@ details.peg ul{padding-left:18px;margin:8px 0 2px}
 <li><b>Atrasou?</b> Não empurre o dia seguinte. Pule um “Treinar” e mantenha os “Ler + treinar”; o que ficou para trás aparece na fila e nos simulados.</li>
 <li>O progresso fica salvo neste navegador: o do celular e o do computador são separados.</li>
 </ul></details>
+<div class="atalhos"><div class="at-h">Atalhos · simulados de prova</div><div class="at-pv"><div class="at-s">SAI III · prova seg 30/11</div><div class="at-ls"><a class="at" href="Revisao/revisao_sai.html#simulado=simulado-sai-1&amp;n=60&amp;min=90" data-ref="2026-11-28-sai-simulado_sai_iii_1_60_questoes_novas"><b>Simulado SAI III · 1</b><span>sáb 28/11 · 60 questões · 90 min</span></a><a class="at" href="Revisao/revisao_sai.html#simulado=simulado-sai-2&amp;n=60&amp;min=90" data-ref="2026-11-29-sai-simulado_sai_iii_2_60_questoes_novas"><b>Simulado SAI III · 2</b><span>dom 29/11 · 60 questões · 90 min</span></a><a class="at" href="Revisao/revisao_sai.html#simulado=simulado-sai-3&amp;n=60&amp;min=90" data-ref="2026-11-30-sai-simulado_sai_iii_3_60_questoes_novas"><b>Simulado SAI III · 3</b><span>seg 30/11 · 60 questões · 90 min</span></a></div></div><div class="at-pv"><div class="at-s">SCA III · prova qui 03/12</div><div class="at-ls"><a class="at" href="Revisao/revisao_ped.html#simulado=simulado-ped&amp;n=40&amp;min=60" data-ref="2026-12-03-ped-simulado_sca_iii_40_questoes_novas"><b>Simulado SCA III</b><span>qui 03/12 · 40 questões · 60 min</span></a></div></div><div class="at-pv"><div class="at-s">SM III · prova ter 08/12</div><div class="at-ls"><a class="at" href="Revisao/revisao_go.html#simulado=simulado-go&amp;n=40&amp;min=60" data-ref="2026-12-08-go-simulado_sm_iii_40_questoes_novas"><b>Simulado SM III</b><span>ter 08/12 · 40 questões · 60 min</span></a></div></div><div class="at-pv"><div class="at-s">MC VII · prova qui 10/12</div><div class="at-ls"><a class="at" href="Revisao/revisao_mfc.html#simulado=simulado-mfc&amp;n=40&amp;min=60" data-ref="2026-12-10-mfc-simulado_mc_vii_40_questoes_novas"><b>Simulado MC VII</b><span>qui 10/12 · 40 questões · 60 min</span></a></div></div><div class="at-nota">Questões novas, sem consulta e com cronômetro. O ✓ aparece quando você marca o simulado como feito no dia dele.</div></div>
 <section class="dia" data-dia="2026-11-23">
 <h2><span class="dt">seg 23/11</span>Neurologia: o antigo e o que veio depois da AVC 2</h2>
 <div class="meta">180 min</div>
@@ -307,6 +322,9 @@ if (location.protocol === 'file:') document.getElementById('voltaIdx').href = 'i
       var pct = Math.round((ok[p] || 0) / tot[p] * 100);
       el.querySelector('.bar i').style.width = pct + '%';
       el.querySelector('.f').textContent = pct + '% feito';
+    });
+    Array.prototype.forEach.call(document.querySelectorAll('a.at[data-ref]'), function(a){
+      a.classList.toggle('ok', !!feitos[a.getAttribute('data-ref')]);
     });
   }
   Array.prototype.forEach.call(boxes, function(b){
